@@ -1,0 +1,73 @@
+---
+title: 'Administrar entornos: servicio en la nube'
+description: 'Administrar entornos: servicio en la nube'
+translation-type: tm+mt
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+
+---
+
+
+# Administración de entornos {#manage-environments}
+
+En la sección siguiente se describen los tipos de entorno que puede crear un usuario y cómo puede crearlo.
+
+## Tipos de entorno {#environment-types}
+
+Un usuario con los permisos necesarios puede crear los siguientes tipos de entorno (dentro de los límites de lo que está disponible para el inquilino específico).
+
+* **Entorno** de producción y etapa:La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.
+
+* **Desarrollo**: Se puede crear un entorno de desarrollo con fines de desarrollo y ensayo y sólo se asociará con tuberías que no sean de producción.
+
+   >[!NOTE]
+   >Se configurará un entorno de desarrollo que se crea automáticamente en un programa de Simulador para pruebas para incluir las soluciones Sitios y Recursos.
+
+   La siguiente tabla resume los tipos de entorno y sus atributos:
+
+   | Nombre | Nivel de autor | Publicar nivel | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con el entorno |
+   |--- |--- |--- |--- |---|---|
+   | Producción | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
+   | Escenario | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
+   | Desarrollo | Sí | Sí si los sitios están incluidos | Sí | Sí | Canalización sin producción |
+
+   >[!NOTE]
+   >La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.  El usuario no podrá crear solo el entorno de fase o de producción.
+
+## Adición de un entorno {#adding-environments}
+
+
+1. El usuario hace clic en el botón **Agregar entorno** para agregar un entorno.
+
+   ![](assets/add-environment.png)
+
+1. Aparece el cuadro de diálogo **Agregar entorno** .El usuario debe enviar detalles como Tipo **de** entorno y Nombre **de** entorno y Descripción **de** entorno (según el objetivo del usuario de crear el entorno dentro de los límites de lo que está disponible para el inquilino específico).
+
+   ![](assets/add-environment2.png)
+
+   >[!NOTE]
+   >Al crear un entorno, se crean una o más *integraciones* en Adobe I/O. Son visibles para los usuarios clientes que tienen acceso a la consola de Adobe I/O y no deben eliminarse. Esto se rechaza en la descripción de la consola de Adobe I/O.
+
+   ![](assets/add-environment-image1.png)
+
+1. Haga clic en **Guardar** para agregar un entorno con los criterios rellenados.  Ahora, la pantalla *Información general* muestra la tarjeta desde la que puede configurar la canalización.
+
+   >[!NOTE]
+   >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
+
+
+## Actualización del entorno {#updating-dev-environment}
+
+Adobe administra automáticamente las actualizaciones de los entornos de fase y producción.
+
+Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible para el público, el estado de la tarjeta de entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
+
+![](assets/manage-environments2.png)
+)
+
+Cuando se muestra este estado, la opción **Actualizar** estará disponible en el menú desplegable, tanto en la Tarjeta de entorno como en el menú **Administrar** si hace clic en **Detalles** en la tarjeta **ENTORNOS** .
+
+![](assets/add-environment4.png)
+
+Si selecciona esta opción en el menú desplegable, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la última versión y, a continuación, ejecutar la canalización.
+
+Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la canalización.
