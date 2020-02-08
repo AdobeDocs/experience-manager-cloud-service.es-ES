@@ -1,0 +1,68 @@
+---
+title: Administrar registros - Servicio de nube
+description: Administrar registros - Servicio de nube
+translation-type: tm+mt
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+
+---
+
+
+# Acceso y administración de registros {#manage-logs}
+
+Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
+
+Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** .
+
+![](assets/manage-logs1.png)
+
+O bien, la página **Entornos** :
+
+![](assets/manage-logs2.png)
+
+>[!Note]
+>Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
+
+![](assets/manage-logs3.png)
+
+
+## Registros a través de API {#logs-thorugh-api}
+
+Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
+
+Por ejemplo, para descargar los archivos de registro de un entorno específico, el comando sería algo más que las líneas de
+
+```java
+$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
+```
+
+El siguiente comando permite el ajuste de registros:
+
+```java
+$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
+```
+
+Para obtener la ID del entorno (1884 en este caso) y las opciones de nombre de registro o servicio disponibles, puede utilizar:
+
+```java
+$ aio cloudmanager:list-environments
+Environment Id Name                     Type  Description                          
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
+ 
+ 
+$ aio cloudmanager:list-available-log-options 1884
+Environment Id Service    Name         
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
+```
+
+>[!Note]
+>Mientras que las descargas **** de registro estarán disponibles a través de la interfaz de usuario y la API, **Log Tailing** es solo API/CLI.
