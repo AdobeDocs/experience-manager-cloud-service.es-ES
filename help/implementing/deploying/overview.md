@@ -1,0 +1,394 @@
+---
+title: Implementación en AEM como un servicio en la nube
+description: 'Implementación en AEM como un servicio en la nube '
+translation-type: tm+mt
+source-git-commit: de23de0b79e6b897a69bd18035d2e7fcd07104c5
+
+---
+
+
+# Implementación en AEM como un servicio en la nube {#deploying-to-aem-as-a-cloud-service}
+
+## Introducción {#introduction}
+
+Los aspectos fundamentales del desarrollo de código son similares en AEM como un servicio en la nube en comparación con las soluciones de AEM On Premise y Managed Services. Los desarrolladores escriben código y lo prueban localmente, que luego se envía a AEM remoto como un entorno de servicio en la nube. Cloud Manager, que era una herramienta opcional de entrega de contenido para los servicios gestionados, es obligatorio. Este es ahora el único mecanismo para implementar código en AEM como entornos de servicio de nube.
+
+La actualización de la versión de AEM siempre es un evento de implementación independiente de la inserción de código personalizado. Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que eso es lo que se implementará por encima de. Las actualizaciones de la versión de AEM posteriores, que serán frecuentes en comparación con los servicios gestionados de hoy, se aplican automáticamente. Están pensados para que sean compatibles con el código de cliente ya implementado.
+
+El resto de este documento describe cómo los desarrolladores deben adaptar sus prácticas para que funcionen con AEM como actualizaciones de versiones de un servicio de nube y actualizaciones de clientes.
+
+>[!NOTE]
+>Se recomienda que los clientes con bases de código existentes realicen el proceso de reestructuración del repositorio descrito en la documentación [de](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)AEM.
+
+
+## Actualizaciones de la versión de AEM {#version-updates}
+
+Es fundamental comprender que AEM se actualizará con frecuencia, y posiblemente con la misma frecuencia que una vez al día, y se centrará en las correcciones de errores y las mejoras de rendimiento. La actualización se realizará de manera transparente y sin causar downtime. La actualización está pensada para ser compatible con versiones anteriores, lo que significa que no debe modificar el código personalizado. De hecho, las actualizaciones de AEM son eventos independientes de las implementaciones de código de cliente. La actualización de AEM se implementa sobre la última inserción de código correcta, lo que implica que no se implementarán los cambios realizados desde la última inserción en producción.
+
+>[!NOTE]
+>
+> Si el código personalizado se insertó en el entorno de ensayo y luego fue rechazado por usted, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta de git de la última versión de cliente en producción correcta.
+
+Con frecuencia regular, se lanzará una versión de funciones que se centrará en las adiciones y mejoras de funciones que tendrán un impacto más considerable en la experiencia del usuario en comparación con las versiones diarias. La versión de una función no se activa por la implementación de un conjunto de cambios grande, sino por la activación de un cambio de versión, que activa el código que se ha ido acumulando durante días o semanas a través de las actualizaciones diarias.
+
+Los controles de estado se utilizan para supervisar el estado de la aplicación. Si estas comprobaciones fallan durante una actualización de AEM como servicio de nube, la versión no continuará para ese entorno y Adobe investigará por qué la actualización provocó este comportamiento inesperado.
+
+### Almacenamiento de nodos compuesto {#composite-node-store}
+
+Como se mencionó anteriormente, las actualizaciones en la mayoría de los casos no producirán ningún tiempo de inactividad, incluso para el autor, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a la función &quot;almacén de nodos compuestos&quot; (compositor node store) en Oak. Esta función permite que AEM haga referencia a varios repositorios simultáneamente. En una implementación móvil, la nueva versión de AEM Verde contiene su propio `/libs` (el repositorio inmutable basado en TarMK), distinto de la versión anterior de AEM Azul, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content`, `/conf`, `/etc` etc. Dado que tanto el Azul como el Verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, ambos tomando tráfico hasta que el azul sea completamente reemplazado por el verde.
+
+## Versiones de clientes {#customer-releases}
+
+### Codificación con la versión correcta de AEM {#coding-against-the-right-aem-version}
+
+En el caso de las soluciones AEM anteriores, la versión más reciente de AEM cambió con poca frecuencia (aproximadamente anualmente con Service Packs trimestrales) y los clientes actualizarían las instancias de producción a la última versión de inicio rápido a su propio tiempo, haciendo referencia a la API Jar. Sin embargo, las aplicaciones de AEM como servicio de nube se actualizan automáticamente a la versión más reciente de AEM con más frecuencia, por lo que el código personalizado para las versiones internas debe crearse en comparación con las nuevas interfaces de AEM.
+
+Al igual que en las versiones de AEM existentes que no son de nube, se admitirá un desarrollo local sin conexión basado en un inicio rápido específico y se espera que sea la herramienta de elección para la depuración en la mayoría de los casos.
+
+> [!NOTA}
+>Existen diferencias operativas sutiles entre el comportamiento de la aplicación en un equipo local y el de Adobe Cloud. Estas diferencias arquitectónicas deben respetarse durante el desarrollo local y podrían conducir a un comportamiento diferente al implementarlas en la infraestructura de nube. Debido a estas diferencias, es importante realizar pruebas exhaustivas en entornos de desarrollo y etapa antes de implementar un nuevo código personalizado en producción.
+
+A continuación se muestra el proceso para que un desarrollador acceda a la versión relevante de los artefactos de AEM, a los que se referirá como AEM como un SDK de servicio de nube, necesario para desarrollar código personalizado para una versión interna. Encontrará información sobre el despachante [en esta página](/help/implementing/dispatcher/overview.md).
+
+## AEM como SDK de servicio de nube {#aem-as-a-cloud-service-sdk}
+
+El SDK de AEM como servicio de nube está compuesto por los siguientes artefactos:
+
+* **Jar** de inicio rápido: tiempo de ejecución de AEM utilizado para el desarrollo local
+* **Java API Jar** : la dependencia Java Jar/Maven que expone todas las API de Java permitidas que se pueden usar para desarrollarse con AEM como servicio de nube. Anteriormente denominado Uberjar
+* **Javadoc Jar** - Los javadocs para Java API Jar
+* **Herramientas** de despachante: conjunto de herramientas utilizadas para desarrollar con Dispatcher localmente. Objetos independientes para unix y ventanas
+
+Además, algunos clientes que se implementaron previamente con AEM 6.5 o versiones anteriores utilizarán los artefactos siguientes. Si la compilación local no funciona con el tarro de inicio rápido y sospecha que se debe a interfaces que se han eliminado de AEM implementadas como servicio de nube, póngase en contacto con el servicio de asistencia al cliente para determinar si necesita acceso. Esto requerirá cambios en el servidor.
+
+* **6.5 Java API Jar** , un conjunto adicional de interfaces que se han eliminado desde AEM 6.5
+* **6.5 Javadoc Jar** desaprobado: los javadocs para el conjunto adicional de interfaces
+
+## Acceso a AEM como SDK de servicio de nube {#accessing-the-aem-as-a-cloud-service-sdk}
+
+* Puede consultar el icono **Acerca de Adobe Experience Manager** de AEM Admin Console para conocer la versión de AEM que está ejecutando en producción.
+* El archivo jar y Dispatcher Tools de inicio rápido se pueden descargar como archivo zip desde el portal [de distribución de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos de servicio de nube.
+* El Jar de la API de Java y Javadoc Jar se pueden descargar mediante herramientas muevas, ya sea con la línea de comandos o con su IDE preferido.
+* Las páginas de proyecto principales deben hacer referencia al siguiente paquete de Jar de API. Esta dependencia también se debe hacer referencia a ella en cualquier página de subpaquete.
+
+```
+<dependency>
+  <groupId>com.adobe.aem</groupId>
+  <artifactId>aem-sdk-api</artifactId>
+  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <scope>provided</scope>
+</dependency>
+```
+
+> [!NOTE] La entrada de versión del SDK debe coincidir con la versión de AEM como un servicio de nube. Para ver qué versión utiliza, inicie sesión en AEM y, a continuación, vaya al signo de interrogación en la esquina superior derecha de la pantalla y seleccione **[!UICONTROL Acerca de Adobe Experience Manager]**
+
+* La coordenada remota del repositorio principal en el que se aloja el paquete debe incluirse en el archivo pom.
+
+```
+<repository>
+    <id>adobe-aem-releases</id>
+    <name>Adobe AEM Repository</name>
+    <url>https://downloads.experiencecloud.adobe.com/content/maven/public</url>
+    <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+    </releases>
+    <snapshots>
+        <enabled>false</enabled>
+    </snapshots>
+</repository>
+```
+
+## Actualización de un proyecto local con una nueva versión del SDK {#refreshing-a-local-prokect-with-a-new-skd-version}
+
+¿Cuándo se recomienda actualizar el proyecto local con un nuevo SDK?
+
+Se *recomienda* actualizarla al menos después de una versión de mantenimiento mensual.
+
+Es *opcional* actualizarla después de cualquier revisión de mantenimiento diaria. Se informará a los clientes cuando su instancia de producción se haya actualizado correctamente a una nueva versión de AEM. Para las versiones de mantenimiento diarias, no se espera que el nuevo SDK haya cambiado significativamente, si es que ha cambiado. Sin embargo, se recomienda actualizar ocasionalmente el entorno de desarrollador de AEM local con el SDK más reciente y, a continuación, volver a compilar y probar la aplicación personalizada. La versión de mantenimiento mensual generalmente incluye cambios más impactantes y, por lo tanto, los desarrolladores deben actualizar, reconstruir y probar inmediatamente.
+
+A continuación se muestra el procedimiento recomendado para actualizar un entorno local:
+
+1. Asegúrese de que cualquier contenido útil esté comprometido con el proyecto en el control de código fuente o disponible en un paquete de contenido mutable para su posterior importación
+1. El contenido de la prueba de desarrollo local debe almacenarse por separado para que no se implemente como parte de la compilación del flujo de Cloud Manager. Esto se debe a que sólo se debe usar para el desarrollo local
+1. Detener el inicio rápido que se está ejecutando
+1. Mover la `crx-quickstart` carpeta a otra carpeta para protegerla
+1. Tenga en cuenta la nueva versión de AEM, que se indica en Cloud Manager (esto se utilizará para identificar la nueva versión de Jar de QuickStart para seguir descargándola)
+1. Descargue el JAR de inicio rápido cuya versión coincida con la versión de AEM de producción desde el portal de distribución de software
+1. Cree una nueva carpeta y coloque la nueva barra de inicio rápido dentro
+1. Inicie el nuevo inicio rápido con los modos de ejecución deseados (ya sea cambiando el nombre del archivo o pasando los modos de ejecución a través de `-r`).
+   * Asegúrese de que no quede nada del inicio rápido anterior en la carpeta.
+1. Cree su aplicación de AEM
+1. Implementar la aplicación de AEM en AEM local mediante PackageManager
+1. Instale los paquetes de contenido mutable necesarios para las pruebas del entorno local mediante PackageManager
+1. Continúe con el desarrollo e implemente los cambios según sea necesario
+
+Si hay contenido que debe instalarse con cada nueva versión de inicio rápido de AEM, inclúyalo en un paquete de contenido y en el control de código fuente del proyecto. A continuación, instálela cada vez.
+
+La recomendación es actualizar el SDK con frecuencia (por ejemplo, cada dos semanas) y disponer de un estado local completo todos los días para no depender accidentalmente de los datos de estado de la aplicación.
+
+En caso de que dependa de CryptoSupport ([ya sea configurando las credenciales de Cloudservices o el servicio de correo SMTP en AEM o utilizando la API de CryptoSupport en la aplicación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente en el primer inicio de un entorno AEM. Aunque la configuración de nube se encarga de reutilizar automáticamente la CryptoKey específica del entorno, es necesario inyectar la criptoclave en el entorno de desarrollo local.
+
+De forma predeterminada, AEM está configurado para almacenar los datos clave en la carpeta de datos de una carpeta, pero para facilitar su reutilización en el desarrollo, el proceso de AEM se puede inicializar al iniciar por primera vez con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Esto generará los datos de cifrado en &quot;`/etc/key`&quot;.
+
+Para poder reutilizar paquetes de contenido que contengan los valores cifrados, debe seguir estos pasos:
+
+* Cuando inicialmente inicie el archivo local quickstart.jar, asegúrese de agregar el parámetro siguiente: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Se recomienda, pero es opcional, agregarla siempre.
+* La primera vez que inició una instancia, cree un paquete que contenga un filtro para la raíz &quot;`/etc/key`&quot;. Esto mantendrá el secreto para que se vuelva a utilizar en todos los entornos para los que desea que se reutilicen
+* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para agregarlo al paquete que se reutilizará en las instalaciones
+* Siempre que gire una instancia nueva (ya sea para reemplazarla con una nueva versión o cuando varios entornos de desarrollo deban compartir las credenciales para la prueba), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la criptoclave está sincronizada.
+
+## Implementación de paquetes de contenido mediante Cloud Manager y Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
+
+### Implementaciones mediante Cloud Manager {#deployments-via-cloud-manager}
+
+Los clientes implementan código personalizado en entornos de nube mediante Cloud Manager. Debe tenerse en cuenta que Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto conforme al Modelo de funciones de Sling, que es la forma en que se describe un AEM como una aplicación de servicio de nube al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en el Administrador de paquetes en entornos de nube, el nombre incluirá &quot;cp2fm&quot; y los paquetes transformados eliminarán todos los metadatos. No se pueden interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Encontrará documentación detallada sobre el convertidor [aquí](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+
+Los paquetes de contenido escritos para AEM como aplicaciones de servicios en la nube deben tener una separación clara entre el contenido inmutable y el mutable, y Cloud Manager lo aplicará fallando en la compilación, generando un mensaje como:
+
+`Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
+
+El resto de esta sección describirá la composición y las implicaciones de los paquetes inmutables y mutables.
+
+### Paquetes de contenido inmutables {#immutabe-content-packages}
+
+Todo el contenido y el código que permanece en el repositorio inmutable se deben registrar en git e implementar mediante Cloud Manager. En otras palabras, a diferencia de las soluciones actuales de AEM, el código nunca se implementa directamente en una instancia de AEM en ejecución. Esto garantiza que el código que se ejecuta para una versión determinada en cualquier entorno de nube sea idéntico, lo que elimina el riesgo de variación no intencionada del código en la producción. Por ejemplo, la configuración OSGI debe asignarse al control de código fuente en lugar de gestionarse en tiempo de ejecución mediante el administrador de configuración de la consola web de AEM.
+
+Dado que los cambios de la aplicación debidos al patrón de implementación Blue-Green están activados por un conmutador, no pueden depender de los cambios en el repositorio mutable con excepción de los usuarios de servicio, sus ACL, los tipos de nodos y los cambios de definición de índice.
+
+Para los clientes con bases de código existentes, es fundamental pasar por el proceso de reestructuración del repositorio descrito en la documentación de AEM para garantizar que el contenido que anteriormente se encontraba en /etc se mueva a la ubicación correcta.
+
+## Configuración de OSGI {#osgi-configuration}
+
+Como se mencionó anteriormente, la configuración OSGI debe estar asignada al control de código fuente en lugar de hacerlo a través de la consola web. Las técnicas para hacerlo incluyen:
+
+* Realización de los cambios necesarios en el entorno AEM local del desarrollador con el administrador de configuración de la consola web de AEM y, a continuación, exportación de los resultados al proyecto AEM en el sistema de archivos local
+* Crear la configuración OSGI manualmente en el proyecto de AEM en el sistema de archivos local, haciendo referencia al administrador de configuración de la consola de AEM para los nombres de propiedad.
+
+## Contenido mutable {#mutable-content}
+
+En algunos casos, puede resultar útil preparar cambios de contenido en el control de código fuente para que Cloud Manager pueda implementarlo cada vez que se actualice un entorno. Por ejemplo, puede que sea razonable crear ciertas estructuras de carpetas raíz o alinear los cambios en plantillas editables para habilitar las directivas en las de los componentes que la implementación de la aplicación ha actualizado.
+
+Existen dos estrategias para describir el contenido que Cloud Manager implementará en el repositorio mutable, los paquetes de contenido mutable y las sentencias de informe.
+
+### Paquetes de contenido mutable {#mutable-content-packages}
+
+El contenido, como las jerarquías de rutas de carpetas, los usuarios de servicios y los controles de acceso (ACL), se suelen asignar a un proyecto de AEM basado en arquetipos determinado. Las técnicas incluyen exportar desde AEM o escribir directamente como XML. Durante el proceso de compilación e implementación, Cloud Manager empaqueta el paquete de contenido mutable resultante. El contenido mutable se instala en 3 momentos diferentes durante la fase de implementación de la canalización:
+
+Antes del inicio de la nueva versión de la aplicación:
+
+* definiciones de índice (agregar, modificar, eliminar)
+
+Durante el inicio de la nueva versión de la aplicación, pero antes del cambio:
+
+* Usuarios de servicio (agregar)
+* ACL de usuario de servicio (agregar)
+* tipos de nodo (agregar)
+
+Después de cambiar a la nueva versión de la aplicación:
+
+* Todos los demás contenidos definibles mediante bóveda jackrabbit. Por ejemplo:
+   * Carpetas (agregar, modificar, quitar)
+   * Plantillas editables (agregar, modificar, eliminar)
+   * Configuración según el contexto (cualquier elemento debajo `/conf`) (agregar, modificar, eliminar)
+   * Secuencias de comandos (los paquetes pueden activar los enlaces de instalación en varias etapas del proceso de instalación del paquete)
+
+Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. Encontrará más detalles en la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) AEM sobre la reestructuración de proyectos recomendada.
+
+>[!NOTE] Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se ha establecido para garantizar la opción de una serie de pruebas de ejecución automatizada. El contenido específico de un entorno requiere la instalación manual mediante el Administrador de paquetes.
+
+Además, no hay ningún mecanismo para revertir los cambios del paquete de contenido mutable después de que se hayan aplicado. Si los clientes detectan un problema, pueden optar por corregirlo en su próxima versión de código o como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
+
+Todos los paquetes de terceros incluidos deben validarse como compatibles con AEM como servicio de nube; de lo contrario, su inclusión provocará un error de implementación.
+
+Como se ha mencionado anteriormente, los clientes con bases de código existentes deben ajustarse al proceso de reestructuración del repositorio descrito en la documentación [de](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)AEM.
+
+## Informe {#repoinit}
+
+En los siguientes casos, es preferible utilizar el método de codificación manual de las sentencias de creación de contenido explícito en las configuraciones de fábrica de OSGI: `repoinit`
+
+* Crear/eliminar/deshabilitar usuarios de servicios
+* Crear/eliminar grupos
+* Crear/eliminar usuarios
+* Agregar ACL
+   > [!NOTE] La definición de ACL requiere que las estructuras de nodos ya estén presentes. Por lo tanto, puede que sea necesario crear las sentencias de ruta anteriores.
+* Agregar ruta (por ejemplo, para estructuras de carpetas raíz)
+* Agregar CND (definiciones de tipo de nodo)
+
+Es preferible un informe para estos casos de uso de modificación de contenido compatible debido a las siguientes ventajas:
+
+* El informe crea recursos al inicio para que la lógica pueda dar por sentada la existencia de esos recursos. En el enfoque de paquete de contenido mutable, los recursos se crean después del inicio, por lo que el código de la aplicación que se basa en ellos puede fallar.
+* El informe es un conjunto de instrucciones relativamente seguro, ya que controla explícitamente la acción que se va a realizar. Además, las únicas operaciones admitidas son aditivas, a excepción de algunos casos relacionados con la seguridad que permiten la eliminación de usuarios, usuarios de servicios y grupos. Por el contrario, la eliminación de algo en el enfoque del paquete de contenido mutable es explícita;  al definir un filtro, se eliminará todo lo que esté cubierto por un filtro. Sin embargo, se debe tener precaución ya que con cualquier contenido hay escenarios en los que la presencia de contenido nuevo puede alterar el comportamiento de la aplicación.
+* El informe realiza operaciones atómicas y rápidas. Por el contrario, los paquetes de contenido mutable pueden depender en gran medida del rendimiento según las estructuras cubiertas por un filtro. Incluso si se actualiza un solo nodo, se puede crear una instantánea de un árbol grande.
+* Es posible validar las sentencias de informe en un entorno de desarrollo local durante la ejecución, ya que se ejecutarán cuando se registre la configuración de OSGi.
+* Las instrucciones de informe son atómicas y explícitas y se omitirán si el estado ya coincide.
+
+Cuando Cloud Manager implementa la aplicación, ejecuta estas sentencias, independientemente de la instalación de cualquier paquete de contenido.
+
+Para crear sentencias de informe, siga el procedimiento siguiente:
+
+1. Agregue la configuración OSGi para PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` en una carpeta de configuración del proyecto
+1. Agregue sentencias de informe a la propiedad script de la configuración. La sintaxis y las opciones se documentan en la documentación [de](https://sling.apache.org/documentation/bundles/repository-initialization.html)Sling. Tenga en cuenta que debe haber una creación explícita de una carpeta principal antes que sus carpetas secundarias. Por ejemplo, una creación explícita de `/content` before `/content/myfolder`, before `/content/myfolder/mysubfolder`. Para que las ACL se establezcan en estructuras de bajo nivel, se recomienda establecerlas en un nivel superior y trabajar con una `rep:glob` restricción.  Por ejemplo `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. Validar en el entorno de desarrollo local durante la ejecución.
+
+<!-- last statement in step 2 to be clarified with Brian -->
+
+>[!WARNING]
+>
+>Para las ACL definidas para nodos debajo `/apps` o `/libs` la ejecución del informe comenzará en un repositorio en blanco. Los paquetes se instalan después de la notificación, por lo tanto las sentencias no pueden basarse en nada definido en los paquetes, sino que deben definir las condiciones previas como las estructuras principales debajo.
+
+>[!TIP]
+>
+>Para las ACL, la creación de estructuras profundas puede ser complicada, por lo tanto es más razonable definir una ACL en un nivel superior y restringir donde se supone que debe actuar a través de una restricción rep:glob.
+
+Encontrará más información sobre los informes en la documentación de [Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+
+<!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
+
+above appears to be internal, to confirm with Brian -->
+
+### Administrador de paquetes &quot;one offs&quot; para paquetes de contenido mutable {#package-manager-oneoffs-for-mutable-content-packages}
+
+Hay casos de uso en los que un paquete de contenido debe instalarse como &quot;uno de descuento&quot;. Por ejemplo, importar contenido específico de la producción a ensayo para depurar un problema de producción. En estos casos, el Administrador de paquetes se puede usar en AEM como un entorno de servicio en la nube.
+
+Dado que Package Manager es un concepto de tiempo de ejecución, no es posible instalar contenido o código en el repositorio inmutable, por lo que estos paquetes de contenido solo deben constar de contenido mutable (principalmente `/content` o `/conf`). Si el paquete de contenido incluye contenido mixto (tanto mutable como inmutable), solo se instalará el contenido mutable.
+
+Todos los paquetes de contenido instalados a través de Cloud Manager (tanto mutables como inmutables) aparecerán en estado de congelación en la interfaz de usuario del administrador de paquetes AEM. Estos paquetes no se pueden volver a instalar, reconstruir o incluso descargar, y se mostrarán con un sufijo **&quot;cp2fm&quot;** , que indica que la instalación ha sido administrada por Cloud Manager.
+
+### Inclusión de paquetes de terceros {#including-third-party}
+
+Es común que los clientes incluyan paquetes precompilados de fuentes de terceros, como proveedores de software como los socios de traducción de Adobe. La recomendación es alojar estos paquetes en un repositorio remoto y hacer referencia a ellos en el `pom.xml`. Esto sólo es posible para repositorios públicos.
+
+Si no es posible almacenar el paquete en un repositorio remoto, los clientes pueden colocarlo en un repositorio Maven local basado en file systems, que se ha comprometido con SCM como parte del proyecto y al que se hace referencia por cualquier elemento que dependa de él. El repositorio se declararía en los pomas del proyecto que se ilustran a continuación:
+
+
+```
+<repository>
+    <id>project.local</id>
+    <name>project</name>
+    <url>file:${maven.multiModuleProjectDirectory}/repository</url>
+</repository>
+```
+
+<!-- formatting appears broken in the code sample above, check how it appears on AEM -->
+
+Todos los paquetes de terceros incluidos deben cumplir con AEM como una codificación de servicio de nube y las directrices de empaquetado descritas en este artículo. De lo contrario, su inclusión provocará un error de implementación.
+
+El siguiente fragmento Maven POM XML muestra cómo los paquetes de terceros pueden incrustarse en el paquete &quot;Container&quot; del proyecto, normalmente denominado **&#39;all&#39;**, a través de la configuración del complemento **filevault-package-maven-plugin** Maven.
+
+```
+...
+<plugin>
+  <groupId>org.apache.jackrabbit</groupId>
+  <artifactId>filevault-package-maven-plugin</artifactId>
+  <extensions>true</extensions>
+  <configuration>
+      ...
+      <subPackages>
+           
+          <!-- Include the application's ui.apps and ui.content packages -->
+          ...
+ 
+          <!-- Include any other extra packages such as AEM WCM Core Components -->
+          <!-- Set the version for all dependencies, including 3rd party packages, in the project's Reactor POM -->
+          <subPackage>
+              <groupId>com.adobe.cq</groupId>
+              <artifactId>core.wcm.components.all</artifactId>
+              <filter>true</filter>
+          </subPackage>
+ 
+ 
+          <subPackage>
+              <groupId>com.3rdparty.groupId</groupId>
+              <artifactId>core.3rdparty.artifactId</artifactId>
+              <filter>true</filter>
+          </subPackage>
+      <subPackages>
+  </configuration>
+</plugin>
+...
+```
+
+## Cómo funcionan las implementaciones móviles {#how-rolling-deployments-work}
+
+Al igual que las actualizaciones de AEM, las versiones de los clientes se implementan mediante una estrategia de implementación móvil para eliminar el tiempo de inactividad del clúster de creación en las circunstancias correctas. La secuencia general de eventos es la que se describe a continuación, donde **Blue** es la versión antigua del código del cliente y **Green** es la nueva versión. Tanto Blue como Green ejecutan la misma versión de código AEM.
+
+* La versión azul está activa y un candidato para la versión verde está compilado y disponible
+* Si hay definiciones de índice nuevas o actualizadas, se procesan los índices correspondientes. Tenga en cuenta que la implementación azul siempre usará los índices antiguos, mientras que el verde siempre usará los nuevos índices.
+* El verde empieza mientras que el azul sigue sirviendo
+* El azul funciona y sirve mientras se comprueba si Green está listo a través de controles de salud
+* Los nodos verdes que están listos aceptan tráfico y reemplazan a los nodos azules, que se reducen
+* Con el tiempo, los nodos azules se reemplazan por nodos verdes hasta que solo permanece verde, completando así la implementación
+* Se implementa cualquier contenido mutable nuevo o modificado
+
+## Índices {#indexes}
+
+Los índices nuevos o modificados provocarán un paso adicional de indexación o reindexación antes de que la nueva versión (verde) pueda asumir el tráfico. En [este artículo](/help/operations/indexing.md)se pueden encontrar detalles sobre la administración de índices en Skyline. Puede comprobar el estado del trabajo de indexación en la página de compilación del Administrador de nube y recibirá una notificación cuando la nueva versión esté lista para recibir tráfico.
+
+>[!NOTE]
+>
+>El tiempo necesario para una implementación móvil variará según el tamaño del índice, ya que la versión verde no puede aceptar tráfico hasta que se haya generado el nuevo índice.
+
+En este momento, Skyline no funciona con herramientas de gestión de índices como ACS Commons Asegúrese de la herramienta Índice de Robos.
+
+## Replicación {#replication}
+
+El mecanismo de publicación es compatible con las API [Java de replicación de](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html)AEM.
+
+Para desarrollar y probar con la replicación con el inicio rápido de AEM listo para la nube, las capacidades de replicación clásicas deben usarse con una configuración de creación/publicación. En el caso de que el punto de entrada de la interfaz de usuario de AEM Author se haya eliminado para la nube, los usuarios irán a `http://localhost:4502/etc/replication` para configurarlo.
+
+## Código compatible con versiones anteriores para implementaciones móviles {#backwards-compatible-code-for-rolling-deployments}
+
+Como se ha indicado anteriormente, la estrategia de implementación móvil de AEM como servicio de nube implica que las versiones antigua y nueva pueden funcionar al mismo tiempo. Por lo tanto, tenga cuidado con los cambios de código que no son compatibles con la versión anterior de AEM que aún está en funcionamiento.
+
+Además, la versión anterior debe comprobarse si es compatible con cualquier estructura de contenido mutable nueva que la nueva versión aplique en caso de revertir, ya que no se elimina el contenido mutable.
+
+### Usuarios de servicio y cambios de ACL {#service-users-and-acl-changes}
+
+Cambiar los usuarios de servicios o las ACL necesarias para acceder al contenido o al código podría provocar errores en las versiones anteriores de AEM, lo que daría como resultado el acceso a dicho contenido o código con usuarios de servicios obsoletos. Para solucionar este comportamiento, una recomendación es que los cambios se extiendan al menos en 2 versiones, y que la primera versión actúe como puente antes de limpiarla en la versión siguiente.
+
+### Cambios de índice {#index-changes}
+
+Si se realizan cambios en los índices, es importante que la versión azul siga utilizando sus índices hasta que se termine, mientras que la versión verde utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de gestión de índices descritas [en este artículo](/help/operations/indexing.md).
+
+### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
+
+Si se notifica o detecta un error después de la implementación, es posible que se requiera una reversión a la versión azul. Sería aconsejable garantizar que el código azul sea compatible con cualquier estructura nueva creada por la versión verde, ya que las nuevas estructuras (cualquier contenido mutable) no se revertirán. Si el código antiguo no es compatible, las correcciones deberán aplicarse en versiones posteriores de clientes.
+
+## Modos de ejecución {#runmodes}
+
+En las soluciones AEM existentes, los clientes tienen la opción de ejecutar instancias con modos de ejecución arbitrarios y aplicar la configuración OSGI o instalar paquetes OSGI a dichas instancias específicas. Los modos de ejecución que se definen normalmente incluyen el *servicio* (autor y publicación) y el entorno (dev, stage, prod).
+
+Por otra parte, AEM como servicio de nube tiene más opiniones sobre los modos de ejecución disponibles y sobre cómo se les pueden asignar los paquetes OSGI y la configuración OSGI:
+
+* Los modos de ejecución de la configuración OSGI deben hacer referencia a dev, stage, prod para el entorno o autor, publicar para el servicio. Se `<service>.<environment_type>` admite una combinación de estos elementos, mientras que estos deben usarse en este orden concreto (por ejemplo, author.dev o publish.prod). Se debe hacer referencia a los tokens OSGI directamente desde el código en lugar de utilizar el `getRunModes` método, que ya no incluirá los tokens `environment_type` en tiempo de ejecución.
+* Los modos de ejecución de paquetes OSGI están limitados al servicio (autor, publicación). Los paquetes OSGI en modo por ejecución deben instalarse en el paquete de contenido en `install/author` o `install/publish`.
+
+Al igual que las soluciones de AEM existentes, no hay forma de utilizar los modos de ejecución para instalar solo contenido para entornos o servicios específicos. Si se desea crear un entorno de desarrollo con datos o HTML que no se encuentra en el escenario o en la producción, se puede utilizar el administrador de paquetes.
+
+Las configuraciones de modo de ejecución admitidas son:
+
+* **config** (*el valor predeterminado se aplica a todos los servicios* AEM)
+* **config.author** (*se aplica a todos los servicios* de AEM Author)
+* **config.author.dev** (*se aplica al servicio* AEM Dev Author)
+* **config.author.stage** (*se aplica al servicio* AEM Staging Author)
+* **config.author.prod** (*se aplica al servicio* AEM Production Author)
+* **config.publish** (*se aplica al servicio* AEM Publish)
+* **config.publish.dev** (*se aplica al servicio* AEM Dev Publish)
+* **config.publish.stage** (*se aplica al servicio* AEM Staging Publish)
+* **config.publish.prod** (*se aplica al servicio* AEM Production Publish)
+* **config.dev** (*Se aplica a los servicios de AEM Dev)
+* **config.stage** (*Se aplica a los servicios de ensayo de AEM)
+* **config.prod** (*Se aplica a los servicios de AEM Production)
+
+Se utiliza la configuración OSGI que tiene los modos de ejecución más coincidentes.
+
+Cuando se desarrolla localmente, se puede pasar un parámetro de inicio runmode para dictar qué configuración OSGI de modo de ejecución se utilizará.
+
+<!-- ### Performance Monitoring {#performance-monitoring}
+
+Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
+
+## Configuración de tareas de mantenimiento en el control de código fuente {#maintenance-tasks-configuration-in-source-control}
+
+Las configuraciones de tareas de mantenimiento deben mantenerse en el control de código fuente, ya que la pantalla **Herramientas > Operaciones** ya no estará disponible en los entornos de nube. Esto tiene la ventaja de garantizar que los cambios se mantengan intencionalmente en lugar de aplicarse de manera reactiva y tal vez olvidarse. Consulte el artículo [Tarea de](/help/operations/maintenance.md) mantenimiento para obtener información adicional.
