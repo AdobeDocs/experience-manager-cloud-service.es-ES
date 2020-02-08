@@ -1,0 +1,36 @@
+---
+title: Resolución de problemas de AEM durante la creación
+description: Algunos problemas que pueden producirse al utilizar AEM
+translation-type: tm+mt
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+
+---
+
+
+# Resolución de problemas de AEM durante la creación {#troubleshooting-aem-when-authoring}
+
+La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
+
+## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
+
+* **Problema**:
+   * You have made changes to a page and published the page to the publish site, but the *old* version of the page is still being shown on the publish site.
+* **Motivo**:
+   * Puede haber varios motivos. Normalmente es la caché (su navegador local o Dispatcher), aunque a veces puede haber un problema con la cola de replicación.
+* **Soluciones**:
+   * Hay varias posibilidades:
+   * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
+   * Borre la caché del navegador local y vuelva a acceder a la página.
+   * Add `?` to the end of the page URL. For example:
+      * `http://<host>:<port>/sites.html/content?`
+      * Esta acción solicitará la página directamente desde AEM y omitirá el despachante. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
+   * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
+
+## Acciones aplicables a los componentes no visibles en la barra de herramientas {#component-actions-not-visible-on-toolbar}
+
+* **Problema**:
+   * La gama completa de acciones aplicables a los componentes no aparece visible al editar una página de contenido en el entorno de creación. 
+* **Motivo**:
+   * En casos excepcionales, una acción anterior podría afectar a la barra de herramientas.
+* **Solución**:
+   * Actualice la página.
