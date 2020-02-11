@@ -2,7 +2,7 @@
 title: Compatibilidad con IMS para Adobe Experience Manager como servicio de nube
 description: 'Compatibilidad con IMS para Adobe Experience Manager como servicio de nube '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ AEM como servicio de nube ofrece compatibilidad con la autenticación IMS solo p
 
 ## Arquitectura {#architecture}
 
-La autenticación IMS funciona mediante el protocolo OAuth entre AEM y el extremo IMS de Adobe. Una vez que un usuario se ha agregado a IMS y tiene una identidad de Adobe, puede iniciar sesión en las instancias de AEM Managed Services con las credenciales de IMS.
+La autenticación IMS funciona mediante el protocolo OAuth entre AEM y el extremo IMS de Adobe. Una vez que un usuario se ha agregado a IMS y tiene una identidad de Adobe, puede iniciar sesión en el servicio de creación de AEM con las credenciales de IMS.
 
 El flujo de inicio de sesión del usuario se muestra a continuación; el usuario será redirigido a IMS y, opcionalmente, al cliente IDP para SSO y, a continuación, redirigido a AEM.
 
