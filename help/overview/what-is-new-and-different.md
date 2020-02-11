@@ -2,7 +2,7 @@
 title: 'Novedades y diferencias: Adobe Experience Manager como servicio de nube'
 description: 'Qué es diferente y qué es lo nuevo: Adobe Experience Manager (AEM) como servicio de nube. '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ Adobe se encarga de actualizar de forma proactiva todas las instancias operativa
 
 >[!NOTE]
 >
->Esto se logra con el Administrador de [nube](#cloud-manager).
+>Para obtener más información, consulte Arquitectura [de implementación](/help/core-concepts/architecture.md#deployment-architecture).
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->Para obtener más información, consulte Arquitectura [de implementación](/help/core-concepts/architecture.md#deployment-architecture).
-
-### Versiones anteriores {#previous-versions-cloud-manager}
-
-Cloud Manager se ha utilizado como herramienta de implementación para instancias de servicios gestionados de AEM.
-
-Las diferencias clave entre Cloud Manager para AMS y Cloud Services es que cuando se crea un inquilino, se rellenará con créditos basados en los SKU que haya adquirido el cliente.
-
->[!NOTE]
->Aunque es fundamental desde una perspectiva operativa, el concepto de *créditos* no aparece directamente en la interfaz de usuario del Administrador de nube.
-
-Crear un programa normal no consume ningún crédito, pero debe existir un crédito básico para poder crearlo.
-Para obtener información detallada sobre cómo se crean los diferentes programas, consulte [Crear un programa](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md).
-
-### AEM como servicio de nube {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Manager es esencial para el enfoque de actualización continua de AEM como servicio de nube, ya que controla todas las actualizaciones de las instancias. Esto es obligatorio.
 
