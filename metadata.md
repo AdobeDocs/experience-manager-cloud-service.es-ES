@@ -5,11 +5,11 @@ index: y
 solution-title: Adobe Experience Manager como servicio de nube
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
 getting-started-title: Introducción
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html
+getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html
 tutorials-title: Tutoriales
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 98988a1f8f436e836a8023c2a4087560dd37aef2
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
