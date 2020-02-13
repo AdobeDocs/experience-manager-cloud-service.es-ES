@@ -2,7 +2,7 @@
 title: 'Comprender los resultados de la prueba: servicios de nube'
 description: 'Comprender los resultados de la prueba: servicios de nube'
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se va
 
 Por ejemplo, se ejecutaría una clase denominada `com.myco.tests.aem.ExampleIT` , pero no una clase denominada `com.myco.tests.aem.ExampleTest` .
 
-Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de pruebas aem-testing-customers. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas.
+Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de pruebas aem-testing-customers. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obtener más detalles.
 
 ## Prueba funcional personalizada {#custom-functional-test}
 
@@ -126,7 +126,7 @@ El paso de prueba funcional personalizada de la canalización siempre está pres
 Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Este paso se realiza inmediatamente después de la implementación de la etapa.
 
 > Nota:
->El botón **Descargar registro** permite acceder a un archivo ZIP que contiene los registros del formulario detallado de ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución real de AEM; se puede acceder a ellos mediante la funcionalidad de los registros de descargas o de cola habituales descrita anteriormente.
+>El botón **Descargar registro** permite acceder a un archivo ZIP que contiene los registros del formulario detallado de ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución real de AEM; se puede acceder a ellos mediante la funcionalidad de registro de descargas o de cola habitual. Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más detalles.
 
 ## Ejecución de pruebas locales {#local-test-execution}
 
