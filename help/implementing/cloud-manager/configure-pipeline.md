@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CD/CI: servicios de nube'
 description: 'Configuración de la canalización de CD/CI: servicios de nube'
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
    Además, también puede configurar Activador de implementación y Comportamiento de error importante desde Opciones de tubería.
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta en la pantalla de inicio con tres acciones, como se muestra a continuación:
 
@@ -97,8 +97,6 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
    * **Editar** : permite editar la configuración de la canalización
    * **Generar** : se desplaza a la página de ejecución, desde donde se puede ejecutar la canalización
    * **Administrar Git** : permite al usuario obtener la información necesaria para acceder al repositorio Git de Cloud Manager
-
-
 
 ## Pasos siguientes {#the-next-steps}
 
