@@ -2,7 +2,7 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -806,9 +806,9 @@ Ya no se admitirá el `invalidate.cache` método, ya que solo se dirige a un nod
 AEM como servicio de nube funciona a nivel de servicio, no a nivel de nodo individual, por lo que las instrucciones de invalidación de la documentación de la Ayuda [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher ya no son precisas.
 En su lugar, se debe utilizar el agente de vaciado de replicación. Esto se puede hacer con la API de replicación. La documentación de la API de replicación está disponible [aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la página [de ejemplo de la](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API específicamente el `CustomStep` ejemplo de cómo emitir una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar pero está preconfigurado para que apunte al despachante, junto con el servicio de publicación que ejecuta el agente de vaciado. El agente de vaciado generalmente se puede activar mediante eventos o flujos de trabajo de OSGi.
 
-<!--The diagram below illustrates this.
+El diagrama siguiente ilustra esto.
 
-![CDN](assets/cdn.png "CDN")-->
+![](assets/cdnb.png "CDNCDN")
 
 Si existe la preocupación de que la caché del despachante no esté borrando, póngase en contacto con el servicio de asistencia al cliente, el cual puede vaciar la caché del despachante si es necesario.
 
