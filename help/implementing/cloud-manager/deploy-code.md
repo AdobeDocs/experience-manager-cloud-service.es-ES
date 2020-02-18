@@ -2,7 +2,7 @@
 title: Implementar el código - Servicios de nube
 description: Implementar el código - Servicios de nube
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
    * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Creación de un proyecto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) de aplicación de AEM para obtener más información sobre el entorno de compilación.
-   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados](understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para generar imágenes. Este proceso es responsable de transformar el contenido y los paquetes de despachante producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
    * Implementar en etapa
 
       ![](assets/stage-deployment.png)
    La prueba **de** fase incluye los siguientes pasos:
 
-   * Prueba funcional del producto: Las ejecuciones de canalizaciones de Cloud Manager admitirán la ejecución de pruebas que se ejecuten en el entorno de ensayo. Consulte [Explicación de los resultados](understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
-   * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Consulte [Explicación de los resultados](understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba funcional del producto: Las ejecuciones de canalizaciones de Cloud Manager admitirán la ejecución de pruebas que se ejecuten en el entorno de ensayo. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
 
       ![](assets/stage-testing.png)
 
