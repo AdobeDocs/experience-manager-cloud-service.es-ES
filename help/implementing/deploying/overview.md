@@ -1,13 +1,13 @@
 ---
-title: Implementación en AEM como un servicio en la nube
-description: 'Implementación en AEM como un servicio en la nube '
+title: Implementación en AEM como Cloud Service
+description: 'Implementación en AEM como Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
+source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 
 ---
 
 
-# Implementación en AEM como un servicio en la nube {#deploying-to-aem-as-a-cloud-service}
+# Implementación en AEM como un Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Introducción {#introduction}
 
@@ -48,7 +48,7 @@ Al igual que en las versiones de AEM existentes que no son de nube, se admitirá
 > [!NOTA}
 >Existen diferencias operativas sutiles entre el comportamiento de la aplicación en un equipo local y el de Adobe Cloud. Estas diferencias arquitectónicas deben respetarse durante el desarrollo local y podrían conducir a un comportamiento diferente al implementarlas en la infraestructura de nube. Debido a estas diferencias, es importante realizar pruebas exhaustivas en entornos de desarrollo y etapa antes de implementar un nuevo código personalizado en producción.
 
-Para desarrollar código personalizado para una versión interna, se debe descargar e instalar la versión relevante de [AEM como SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) de servicio de nube. Para obtener información adicional sobre el uso de como herramientas de distribución de servicios en la nube, consulte [esta página](/help/implementing/dispatcher/overview.md).
+Para desarrollar código personalizado para una versión interna, se debe descargar e instalar la versión relevante de [AEM como SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) de servicio de nube. Para obtener información adicional sobre el uso de AEM como herramientas de distribución de servicios en la nube, consulte [esta página](/help/implementing/dispatcher/overview.md).
 
 ## Implementación de paquetes de contenido mediante Cloud Manager y Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
