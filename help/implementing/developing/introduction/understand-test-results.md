@@ -2,7 +2,7 @@
 title: 'Comprender los resultados de la prueba: servicios de nube'
 description: 'Comprender los resultados de la prueba: servicios de nube'
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ El paso de prueba funcional personalizada de la canalización siempre está pres
 
 Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Este paso se realiza inmediatamente después de la implementación de la etapa.
 
-> Nota:
+>[!NOTE]
 >El botón **Descargar registro** permite acceder a un archivo ZIP que contiene los registros del formulario detallado de ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución real de AEM; se puede acceder a ellos mediante la funcionalidad de registro de descargas o de cola habitual. Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más detalles.
 
 ## Ejecución de pruebas locales {#local-test-execution}
