@@ -2,7 +2,7 @@
 title: Implementación en AEM como Cloud Service
 description: 'Implementación en AEM como Cloud Service '
 translation-type: tm+mt
-source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
+source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
 
@@ -14,6 +14,10 @@ source-git-commit: 5e12f1a0a39b1c60ced583f248aff49bdffc24e5
 Los aspectos fundamentales del desarrollo de código son similares en AEM como un servicio en la nube en comparación con las soluciones de AEM On Premise y Managed Services. Los desarrolladores escriben código y lo prueban localmente, que luego se envía a AEM remoto como un entorno de servicio en la nube. Cloud Manager, que era una herramienta opcional de entrega de contenido para los servicios gestionados, es obligatorio. Este es ahora el único mecanismo para implementar código en AEM como entornos de servicio de nube.
 
 La actualización de la versión de AEM siempre es un evento de implementación independiente de la inserción de código personalizado. Visto de otra manera, las versiones de código personalizado deben probarse con la versión de AEM que está en producción, ya que eso es lo que se implementará por encima de. Las actualizaciones de la versión de AEM posteriores, que serán frecuentes en comparación con los servicios gestionados de hoy, se aplican automáticamente. Están pensados para que sean compatibles con el código de cliente ya implementado.
+
+El siguiente vídeo proporciona información general de alto nivel sobre cómo implementar código en AEM como un servicio de nube:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 El resto de este documento describe cómo los desarrolladores deben adaptar sus prácticas para que funcionen con AEM como actualizaciones de versiones de un servicio de nube y actualizaciones de clientes.
 
@@ -45,7 +49,7 @@ En el caso de las soluciones AEM anteriores, la versión más reciente de AEM ca
 
 Al igual que en las versiones de AEM existentes que no son de nube, se admitirá un desarrollo local sin conexión basado en un inicio rápido específico y se espera que sea la herramienta de elección para la depuración en la mayoría de los casos.
 
-> [!NOTA}
+>[!NOTE]
 >Existen diferencias operativas sutiles entre el comportamiento de la aplicación en un equipo local y el de Adobe Cloud. Estas diferencias arquitectónicas deben respetarse durante el desarrollo local y podrían conducir a un comportamiento diferente al implementarlas en la infraestructura de nube. Debido a estas diferencias, es importante realizar pruebas exhaustivas en entornos de desarrollo y etapa antes de implementar un nuevo código personalizado en producción.
 
 Para desarrollar código personalizado para una versión interna, se debe descargar e instalar la versión relevante de [AEM como SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) de servicio de nube. Para obtener información adicional sobre el uso de AEM como herramientas de distribución de servicios en la nube, consulte [esta página](/help/implementing/dispatcher/overview.md).
@@ -107,7 +111,8 @@ Después de cambiar a la nueva versión de la aplicación:
 
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. Encontrará más detalles en la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) AEM sobre la reestructuración de proyectos recomendada.
 
->[!NOTE] Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se ha establecido para garantizar la opción de una serie de pruebas de ejecución automatizada. El contenido específico de un entorno requiere la instalación manual mediante el Administrador de paquetes.
+>[!NOTE]
+> Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se ha establecido para garantizar la opción de una serie de pruebas de ejecución automatizada. El contenido específico de un entorno requiere la instalación manual mediante el Administrador de paquetes.
 
 Además, no hay ningún mecanismo para revertir los cambios del paquete de contenido mutable después de que se hayan aplicado. Si los clientes detectan un problema, pueden optar por corregirlo en su próxima versión de código o como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
 
@@ -123,7 +128,8 @@ En los siguientes casos, es preferible utilizar el método de codificación manu
 * Crear/eliminar grupos
 * Crear/eliminar usuarios
 * Agregar ACL
-   > [!NOTE] La definición de ACL requiere que las estructuras de nodos ya estén presentes. Por lo tanto, puede que sea necesario crear las sentencias de ruta anteriores.
+   > [!NOTE]
+   > La definición de ACL requiere que las estructuras de nodos ya estén presentes. Por lo tanto, puede que sea necesario crear las sentencias de ruta anteriores.
 * Agregar ruta (por ejemplo, para estructuras de carpetas raíz)
 * Agregar CND (definiciones de tipo de nodo)
 
