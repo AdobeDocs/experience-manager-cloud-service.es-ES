@@ -1,14 +1,14 @@
 ---
-title: Descargar recursos de AEM
+title: Descarga de recursos de AEM
 description: Obtenga información sobre cómo descargar recursos de AEM y activar o desactivar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Descargar recursos de AEM {#download-assets-from-aem}
+# Descarga de recursos de AEM {#download-assets-from-aem}
 
 Puede descargar recursos, incluidas las representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde Recursos AEM. Los recursos descargados se incluyen en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 recursos totales por trabajo de exportación.
 
@@ -26,7 +26,7 @@ Las siguientes son las opciones de exportación y descarga. Las representaciones
 
 | Opciones de exportación o descarga | Descripciones |
 |---|---|
-| [!UICONTROL Recursos] | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación. |
+| [!UICONTROL Assets] | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación. |
 | [!UICONTROL Representaciones] | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
 | [!UICONTROL Representaciones dinámicas] | Una representación dinámica genera otras representaciones sobre la marcha. Cuando selecciona esta opción, también selecciona las representaciones que desea crear dinámicamente seleccionando una de la lista de ajustes preestablecidos de imagen. Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen (por ejemplo, para invertir la imagen) |
 | [!UICONTROL Correo electrónico] | Se envía una notificación por correo electrónico al usuario. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Las plantillas que personalice durante la implementación deben estar presentes en estas ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en estas ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
@@ -61,8 +61,6 @@ El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish act
 1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtro.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. Puede deshabilitar manualmente el componente OSGi en una instancia de Publish, navegando a la consola OSGi en `<aem-host>/system/console/components`. Busque `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` y haga clic en **[!UICONTROL Deshabilitar]**.
 
 >[!MORELIKETHIS]
 >
