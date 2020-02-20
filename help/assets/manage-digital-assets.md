@@ -4,12 +4,12 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 En este artículo se describe cómo administrar y editar recursos en Recursos Adobe Experience Manager (AEM). Para administrar fragmentos de contenido, consulte Recursos de fragmentos [de contenido](content-fragments/content-fragments.md) .
 
@@ -32,32 +32,7 @@ No se admiten los siguientes caracteres (lista de caracteres separados por espac
 
 ## Upload assets {#uploading-assets}
 
-Consulte [Adición de recursos digitales a Experience Manager](add-assets.md).
-
-### Cargas por flujo {#streamed-uploads}
-
-Si carga muchos recursos en AEM, las solicitudes de E/S al servidor aumentan drásticamente, lo que reduce la eficacia de la carga e incluso puede hacer que se agote el tiempo de espera de alguna tarea de carga. Recursos AEM admite la carga de recursos por flujo. La carga de flujo continuo reduce la E/S de disco durante la operación de carga, ya que evita el almacenamiento de recursos en una carpeta temporal del servidor antes de copiarlo en el repositorio. En su lugar, los datos se transfieren directamente al repositorio. De este modo, se reduce el tiempo de carga de recursos de gran tamaño y la posibilidad de tiempos de espera. La carga de flujo está activada de forma predeterminada en Recursos AEM.
-
->[!NOTE]
->
->La carga de flujo está deshabilitada para AEM que se ejecuta en el servidor JEE con versión servlet-api inferior a 3.1.
-
-### Extraer archivo ZIP que contiene recursos {#extractzip}
-
-Puede cargar archivos ZIP como cualquier otro recurso admitido. Las mismas reglas de nombre de archivo se aplican a los archivos ZIP. AEM le permite extraer un archivo ZIP en una ubicación DAM. Si los archivos de archivo no contienen ZIP como extensión, habilite la detección de tipo de archivo con contenido.
-
-Seleccione un archivo ZIP a la vez, haga clic en **[!UICONTROL Extraer archivo]** y seleccione una carpeta de destino. Seleccione una opción para controlar los conflictos, si los hay. Si los recursos del archivo ZIP ya existen en la carpeta de destino, puede seleccionar una de estas opciones: omita la extracción, reemplace los archivos existentes, mantenga ambos recursos cambiando el nombre o cree una nueva versión.
-
-Una vez finalizada la extracción, AEM le notifica en el área de notificación. Mientras AEM extrae el ZIP, puede volver a su trabajo sin interrumpir la extracción.
-
-![Notificación de extracción de archivos comprimidos](assets/zip_extract_notification.png)
-
-Algunas limitaciones de la función son:
-
-* Si existe una carpeta con el mismo nombre en el destino, los recursos del archivo ZIP se extraen en la carpeta existente.
-* Si cancela la extracción, los recursos ya extraídos no se eliminarán.
-* No puede seleccionar dos archivos ZIP al mismo tiempo y extraerlos. Sólo puede extraer un archivo ZIP a la vez.
-* Al cargar un archivo ZIP, si el cuadro de diálogo de carga muestra un error de servidor de 500, vuelva a intentarlo después de instalar el Service Pack más reciente.
+Consulte [Adición de recursos digitales a Experience Manager](add-assets.md)para obtener información detallada.
 
 ## Vista previa de recursos {#previewing-assets}
 
@@ -94,19 +69,13 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse Intro. La nueva etiqueta se guarda en AEM.
+1. En el campo **[!UICONTROL Etiquetas]** , seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse la tecla Intro. La nueva etiqueta se guarda en AEM.
 
    YouTube requiere que las etiquetas publiquen y tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
 
    >[!NOTE]
    >
-   >Para crear etiquetas, se requiere permiso de escritura para `/content/cq:tags/default` en el repositorio de CRX.
-
-1. Para proporcionar una clasificación al recurso, toque o haga clic en la ficha **[!UICONTROL Avanzado]** y, a continuación, toque o haga clic en la estrella en la posición adecuada para asignar la clasificación deseada.
-
-   ![clasificaciones](assets/ratings.png)
-
-   La puntuación de clasificación que asigne al recurso se muestra en **[!UICONTROL Sus clasificaciones]**. La puntuación media de clasificación que el recurso recibió de los usuarios que clasificaron el recurso se muestra en **[!UICONTROL Clasificación]**. Además, el desglose de las puntuaciones de clasificación que contribuyen a la puntuación de clasificación promedio se muestra en Desglose de **[!UICONTROL clasificación]**. Puede buscar recursos en función de las puntuaciones de clasificación promedio.
+   >Para crear etiquetas, debe tener permiso de escritura en la ruta de acceso `/content/cq:tags/default` del repositorio de CRX.
 
 1. Para ver las estadísticas de uso del recurso, toque o haga clic en la ficha **[!UICONTROL Perspectivas]** .
 
@@ -118,7 +87,8 @@ Para obtener una vista previa de un recurso, siga estos pasos.
    Para obtener más información, consulte Perspectivas [de recursos](assets-insights.md).
 
 1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
-1. Vaya a la interfaz de usuario de Recursos. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta del recurso en la vista de tarjeta y en las columnas relevantes de la vista de lista.
+
+1. Vaya a la interfaz de usuario de Recursos. Las propiedades de metadatos editadas, incluido el título, la descripción y las etiquetas, se muestran en la tarjeta del recurso en la vista de tarjeta y en las columnas relevantes de la vista de lista.
 
 ## Copiar recursos {#copying-assets}
 
@@ -239,28 +209,6 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo.
 
-### View subassets {#viewing-subassets}
-
-En AEM, los subrecursos se pueden generar para recursos con formatos de varias páginas compatibles, como PDF, AI, Powerpoint/Apple Keynote e InDesign. Estos subrecursos son como recursos normales, pero están vinculados a su recurso principal y facilitan la visualización de varias páginas en la IU táctil.
-
-La generación de subconjuntos está deshabilitada de forma predeterminada. Para habilitar la generación de subrecursos, agregue el paso **[!UICONTROL Crear subrecurso]** al flujo de trabajo de actualización de recursos DAM.
-
-En el caso de documentos de Word, el flujo de trabajo Analizar documentos de Word de DAM genera un `cq:Page` componente a partir del contenido del documento de Word. Se hace referencia a las imágenes extraídas del documento desde el `cq:Page` componente. Estas imágenes se extraen aunque la generación de subrecursos esté desactivada.
-
-1. Para ver los subrecursos, desplácese hasta la ubicación del recurso y abra su página de recursos.
-
-1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Subrecursos]** en la lista
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >La opción **Subrecursos** solo se muestra si los subrecursos están disponibles o se han generado para el recurso.
-
-   Al seleccionar **Subrecursos** en la lista, la página **de subrecursos** muestra los subrecursos vinculados al recurso principal.
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
-
 ## Delete assets {#delete-assets}
 
 Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso.
@@ -293,7 +241,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
 ## Descargar recursos {#download-assets}
 
-Consulte [Descargar recursos de AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publish-assets}
 
@@ -365,7 +313,7 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
 1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
 
-## Search assets {#search-assets}
+## Búsqueda de recursos {#search-assets}
 
 La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM.
 
@@ -564,43 +512,11 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >Si el recurso tiene subrecursos, puede imprimir todos los subrecursos junto con sus anotaciones específicas por página.
-
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la configuración **[!UICONTROL de PDF de]** anotación desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
-
-Si un recurso incluye anotaciones en idiomas extranjeros (especialmente en idiomas no latinos), primero debe configurar el servicio CQ-DAM-Handler-Gibson Font Manager en el servidor AEM para poder imprimir estas anotaciones. Al configurar el servicio CQ-DAM-Handler-Gibson Font Manager, proporcione la ruta donde se encuentran las fuentes para los idiomas deseados.
-
-1. Abra la página de configuración del servicio CQ-DAM-Handler-Gibson Font Manager desde la dirección URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. Para configurar el servicio CQ-DAM-Handler-Gibson Font Manager, realice una de las siguientes acciones:
-
-   * En la opción de directorio Fuentes del sistema, especifique la ruta completa al directorio de fuentes del sistema. Por ejemplo, si es un usuario de Mac, puede especificar la ruta como */Biblioteca/Fuentes* en la opción de directorio Fuentes del sistema. AEM obtiene las fuentes de este directorio.
-   * Cree un directorio denominado `fonts` dentro de la ``crx-quickstart`` carpeta. CQ-DAM-Handler-Gibson Font Manager Service obtiene automáticamente las fuentes en la ubicación `crx-quickstart/fonts`. Puede anular esta ruta predeterminada desde la opción de directorio de fuentes de Adobe Server.
-
-   * Cree una nueva carpeta para las fuentes del sistema y almacene las fuentes deseadas en la carpeta. A continuación, especifique la ruta completa de esa carpeta en la opción de directorio Fuentes del cliente.
-
-1. Acceda a la configuración del PDF de anotación desde la URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. Configure el PDF de anotación con el conjunto correcto de familia de fuentes de la siguiente manera:
-
-   * Incluya la cadena `<font_family_name_of_custom_font, sans-serif>` dentro de la opción font-family. Por ejemplo, si desea imprimir anotaciones en CJK (chino, japonés y coreano), incluya la cadena `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` en la opción font-family. Si desea imprimir anotaciones en hindi, descargue la fuente adecuada y configure la familia de fuentes como Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
-
-1. Reinicie la instancia de AEM.
-
-A continuación se muestra un ejemplo de cómo configurar AEM para que imprima anotaciones en CJK (chino, japonés y coreano):
-
-1. Descargue las fuentes CJK de Google Noto de los siguientes vínculos y guárdelas en el directorio de fuentes configurado en el servicio Font Manager.
-
-   * Todas en una fuente Super CJK: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (para idiomas europeos): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * No hay fuentes para un idioma de su elección: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configure el archivo PDF de anotación estableciendo el parámetro font-family en `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Esta configuración está disponible de forma predeterminada y funciona para todos los idiomas europeos y CJK.
-1. Si el idioma de su elección es distinto de los idiomas mencionados en el paso 2, anexe una entrada adecuada (separada por comas) a la familia de fuentes predeterminada.
 
 ## Creación de versiones de recursos {#asset-versioning}
 
