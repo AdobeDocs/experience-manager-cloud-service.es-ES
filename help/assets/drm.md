@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos de Adobe Experience Man
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ Puede ver el estado de caducidad de un recurso en los siguientes lugares:
 
 Puede buscar recursos caducados, incluidos los subrecursos caducados, en el panel Buscar.
 
-1. En la consola Recursos, haga clic en el icono Buscar en la barra de herramientas para mostrar el cuadro de búsqueda Omni.
+1. En la consola Recursos, haga clic en el icono Buscar en la barra de herramientas para mostrar el campo Omniture Search.
 
-1. Con el cursor en el cuadro Búsqueda Omni, pulse la tecla Retorno para mostrar la página Resultados de la búsqueda.
+1. Con el cursor en el cuadro Omniture Search, presione la tecla Intro para mostrar la página de resultados de la búsqueda.
 
 1. Haga clic en el icono de GlobalNav para mostrar el panel Buscar.
 
@@ -42,13 +42,13 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 1. Seleccione **[!UICONTROL Caducado]**. Los recursos caducados se muestran en los resultados de la búsqueda.
 
-Al elegir la opción **Caducado** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el programador.
+Al elegir la opción **[!UICONTROL Caducado]** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el programador.
 
 Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo del programador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado en consecuencia.
 
 Además, si un fallo o error impide que el programador detecte los recursos caducados en el ciclo actual, el programador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado caducado.
 
-Para permitir que la consola Recursos muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de notificación **de caducidad de** Adobe CQ DAM en AEM Configuration Manager.
+Para permitir que la consola Recursos muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de notificación **[!UICONTROL de caducidad de]** Adobe CQ DAM en AEM Configuration Manager.
 
 1. Abra AEM Configuration Manager.
 1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado Programador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
@@ -90,7 +90,7 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 
 1. Para buscar recursos en función de su estado, toque o haga clic en el icono **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
 
-1. Pulse la tecla Retorno y, a continuación, toque o haga clic en el icono **[!UICONTROL GlobalNav]** para mostrar el panel Buscar.
+1. Pulse la tecla Intro y, a continuación, toque o haga clic en el icono de AEM para mostrar el panel Buscar.
 1. En el panel Buscar, toque o haga clic en Estado **[!UICONTROL de]** publicación y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en Recursos AEM.
 
 1. Toque o haga clic en Estado **[!UICONTROL de]** aprobación y haga clic en la opción correspondiente para buscar recursos aprobados o rechazados.
