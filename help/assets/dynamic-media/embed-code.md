@@ -2,12 +2,12 @@
 title: Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web
 description: Obtenga información sobre cómo incrustar vídeos o imágenes de Dynamic Media en una página web
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilice la función **[!UICONTROL Código]** incrustado cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código]** incrustado.
 
@@ -15,7 +15,7 @@ Las direcciones URL se incrustan solo si _no está_ usando AEM como WCM. Si est�
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
-Consulte [Envío de imágenes optimizadas para un sitio interactivo.](responsive-site.md)
+See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 >[!NOTE]
 >
@@ -49,4 +49,4 @@ Consulte [Envío de imágenes optimizadas para un sitio interactivo.](responsive
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona mejores tiempos de respuesta y carga.
 
-Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
+Consulte Envío de contenido [](http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
