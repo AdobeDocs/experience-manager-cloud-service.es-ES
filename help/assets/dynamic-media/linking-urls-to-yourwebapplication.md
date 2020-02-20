@@ -2,7 +2,7 @@
 title: Vinculación de URL en la aplicación web
 description: Cómo vincular direcciones URL a la aplicación web en medios dinámicos
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -19,11 +19,11 @@ Para colocar estas cadenas URL en las páginas web y las aplicaciones, cópielas
 >
 >Las cadenas URL solo están disponibles para las representaciones dinámicas de recursos. Actualmente no están disponibles para recursos estáticos que residen en DAM y no en el servidor de medios dinámicos. El botón URL no aparece en las representaciones estáticas.
 
-Consulte también [Incrustación del visor de imágenes o vídeos en una página web.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
 
 See also [Linking YouTube URLs to your Web Application.](video.md)
 
-Consulte también [Envío de imágenes optimizadas para un sitio interactivo.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
 
@@ -205,4 +205,4 @@ Dynamic Media admite la entrega de recursos estáticos, que son recursos adicion
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona mejores tiempos de respuesta y carga.
 
-Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
+Consulte Envío de contenido [](http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
