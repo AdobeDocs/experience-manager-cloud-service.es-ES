@@ -2,7 +2,7 @@
 title: Adición de recursos de Dynamic Media a las páginas
 description: Cómo agregar componentes de Dynamic Media a una página en AEM
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -15,7 +15,7 @@ Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM
 
 >[!NOTE]
 >
->Debe publicar recursos antes de agregarlos a páginas en AEM. Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)de Dynamic Media.
+>Debe publicar recursos antes de agregarlos a páginas en AEM. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -301,7 +301,7 @@ Si el ajuste preestablecido de visor que está buscando no está visible, asegú
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona mejores tiempos de respuesta y carga.
 
-Consulte Envío de contenido [](/help/assets/dynamic-media/http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
+Consulte Envío de contenido [](/help/assets/dynamic-media/http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
 
 >[!MORELIKETHIS]
 >
