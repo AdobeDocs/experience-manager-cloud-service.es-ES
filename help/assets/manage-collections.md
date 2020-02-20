@@ -4,12 +4,12 @@ description: Comprenda el concepto de colección en Recursos AEM. Aprenda a reco
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage collections {#manage-collections}
+# Administrar colecciones {#manage-collections}
 
 Una colección es un conjunto de recursos de Recursos Adobe Experience Manager (AEM). Utilice colecciones para compartir recursos entre usuarios.
 
@@ -102,7 +102,7 @@ Puede agregar recursos a una colección que contenga una lista de recursos o car
 Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la búsqueda [](#saved-searches)guardada.
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en el icono **[!UICONTROL Buscar]** de la barra de herramientas.
-1. Con el cursor en el cuadro Omniture search, presione la tecla Retorno.
+1. Con el cursor en el cuadro Omniture search, presione la tecla Intro.
 1. Toque o haga clic en el icono de GlobalNav para mostrar el panel Filtros.
 1. En la lista Búsquedas **** guardadas, seleccione la colección inteligente que desee modificar. El panel Buscar muestra los filtros configurados para la búsqueda guardada.
 1. En la lista **[!UICONTROL Archivos y carpetas]** , seleccione **[!UICONTROL Archivos]**.
@@ -133,7 +133,7 @@ Puede editar los metadatos de varias colecciones simultáneamente. Esta funciona
    >
    >El modo Anexar solo funciona para campos que pueden contener varios valores. Para los campos que pueden contener un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **** Anexar.
 
-## Búsqueda {#searching}
+## Buscar {#searching}
 
 La función de búsqueda dentro de las colecciones admite tanto la [búsqueda de colecciones](#search-collections) como la [búsqueda de recursos dentro de una colección](#search-within-collections).
 
@@ -225,7 +225,7 @@ Puede agregar una colección a otra colección, creando así una colección anid
 
 En la interfaz de usuario de Recursos, puede buscar o filtrar recursos en función de determinadas reglas, criterios de búsqueda o facetas de búsqueda personalizadas. Si los guarda como Búsquedas **** guardadas, puede acceder a ellos más adelante desde la lista Búsquedas **** guardadas del panel Filtro. Al crear una búsqueda guardada también se crea una colección inteligente.
 
-Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista Búsquedas **** guardadas. La consulta Búsquedas guardadas para la colección se guarda en la `dam:query` propiedad en CRXDE en la ubicación relativa `/content/dam/collections/`.
+Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista Búsquedas **** guardadas. La consulta Búsquedas guardadas para la colección se guarda en la `dam:query` propiedad en CRX en la ubicación relativa `/content/dam/collections/`.
 
 >[!NOTE]
 >
