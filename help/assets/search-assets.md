@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -15,7 +15,7 @@ Puede lograr una mayor velocidad de contenido mediante las opciones de detecció
 
 AEM admite los siguientes casos de uso y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
 
-| Buscar recursos | Configuración y administración | Trabajar con resultados de búsqueda |
+| Búsqueda de recursos | Configuración y administración | Trabajar con resultados de búsqueda |
 |--- |--- |--- |
 | [Búsquedas básicas](#searchbasics) | [Índice de búsqueda](#searchindex) | [Ordenar resultados](#sort) |
 | [Comprender la IU de búsqueda](#searchui) |  | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
@@ -221,7 +221,7 @@ La función de búsqueda de AEM admite la búsqueda de colecciones y la búsqued
 
 El selector de recursos le permite buscar, filtrar y examinar los recursos DAM de forma especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos seleccionados mediante el selector de recursos. Puede iniciarla con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selecciones únicas o múltiples). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda en particular y se mantienen intactos durante toda la selección.
 
-El selector de recursos utiliza el mensaje Window.postMessage de HTML5 para enviar datos del recurso seleccionado al destinatario. El selector de recursos se basa en el vocabulario del selector de base de Granite. De forma predeterminada, el selector de recursos funciona en el modo Examinar.
+El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. El selector de recursos se basa en el vocabulario del selector de base de Granite. De forma predeterminada, el selector de recursos funciona en el modo Examinar.
 
 Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el selector de recursos en un contexto concreto:
 
