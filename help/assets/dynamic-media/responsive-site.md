@@ -2,12 +2,12 @@
 title: Envío de imágenes optimizadas para un sitio interactivo
 description: Cómo utilizar la función de código interactivo para distribuir imágenes optimizadas
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Distribución de imágenes optimizadas para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilice la función de código adaptable cuando desee compartir el código para la prestación de servicios interactivos con el desarrollador web. Copie el código interactivo (**[!UICONTROL RESS]**) en el portapapeles para poder compartirlo con el desarrollador web.
 
@@ -15,7 +15,7 @@ Esta función tiene sentido si el sitio web está en un WCM de terceros. Sin emb
 
 Consulte también [Incrustación del visor de vídeos en una página web.](embed-code.md)
 
-Consulte también [Vinculación de direcciones URL a la aplicación Web.](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 **Para distribuir imágenes optimizadas para un sitio** interactivo:
 
@@ -44,4 +44,4 @@ Consulte también [Vinculación de direcciones URL a la aplicación Web.](linkin
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media se admite mediante HTTP/2, que proporciona mejores tiempos de carga y respuesta.
 
-Consulte Envío de contenido [](http2.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
+Consulte Envío de contenido [](http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
