@@ -3,7 +3,7 @@ title: Consideraciones sobre la red de recursos
 description: Analiza las consideraciones de red al diseñar una implementación de Recursos AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ Estos son algunos de los temas a considerar:
 
 * Lectura y reescritura de metadatos XMP
 * Activación y replicación automáticas
-* Marcas de agua
 * Extracción de páginas/ingestión de subconjuntos
 * Flujos de trabajo superpuestos.
 
 Este es un ejemplo de cliente para la definición de un flujo de trabajo de recursos.
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
