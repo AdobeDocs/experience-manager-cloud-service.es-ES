@@ -3,14 +3,14 @@ title: Aplicación de flujos de trabajo a recursos
 description: Obtenga información sobre cómo aplicar flujos de trabajo a recursos, carpetas y colecciones en Recursos Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # Aplicación de flujos de trabajo a recursos {#applying-workflows-to-assets}
 
-Los flujos de trabajo en recursos digitales se utilizan para activar el recurso o crear marcas de agua. Algunos de los flujos de trabajo de los recursos están configurados para ejecutarse automáticamente en función de determinadas condiciones. Por ejemplo, el flujo de trabajo que crea automáticamente una representación se ejecuta automáticamente después de editar una imagen.
+Los flujos de trabajo en recursos digitales se utilizan para activar el recurso. Algunos de los flujos de trabajo de los recursos están configurados para ejecutarse automáticamente en función de determinadas condiciones. Por ejemplo, el flujo de trabajo que crea automáticamente una representación se ejecuta automáticamente después de editar una imagen.
 
 ## Aplicación de un flujo de trabajo a un recurso de AEM {#apply-a-workflow-to-an-aem-asset}
 
