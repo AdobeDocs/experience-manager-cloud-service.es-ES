@@ -2,7 +2,7 @@
 title: Adición de recursos de Dynamic Media a las páginas
 description: Cómo agregar componentes de Dynamic Media a una página en AEM
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL Habilitar coincidencia]** de relación de aspecto: coincide con la proporción de aspecto de la imagen original al seleccionar una representación de recorte inteligente.
 
 * **[!UICONTROL Título]**: cambie el título de la imagen de recorte inteligente.
 
