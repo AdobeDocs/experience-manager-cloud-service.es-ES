@@ -2,7 +2,7 @@
 title: Explicación de los tipos de programas y programas
 description: 'Explicación de los tipos de programas y programas: servicios en la nube'
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # Explicación de programas y tipos de programas {#understanding-programs}
 
 En Cloud Manager tiene la entidad Inquilina en la parte superior, que puede tener varios programas dentro de ella.  Cada programa no puede contener más de un entorno de producción y varios entornos sin producción.
+
+El diagrama siguiente muestra la jerarquía de entidades en Cloud Manager.
+
+![image](assets/program-types1.png)
 
 ## Tipos de programas {#program-types}
 
