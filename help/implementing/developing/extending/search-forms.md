@@ -2,18 +2,32 @@
 title: Configuración de formularios de búsqueda
 description: Configuración de formularios de búsqueda para Adobe Experience Manager como un servicio de nube.
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # Configuración de formularios de búsqueda {#configuring-search-forms}
 
-Utilice los formularios **de** búsqueda para personalizar las facetas de búsqueda y los filtros disponibles en los distintos paneles de búsqueda dentro del entorno de creación. La personalización de estos paneles hace que la funcionalidad de búsqueda sea versátil según sus necesidades específicas.
+Adobe Experience Manager como servicio de nube incluye un potente mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
 
-Hay una [variedad de](#predicates-and-their-settings)predicados disponibles de forma predeterminada.
+En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar el contenido. Éstas contienen facetas predefinidas como Fecha **de** modificación, Estado **de** publicación o Estado **de** Live Copy para ayudarle a explorar rápidamente los recursos que necesita.
 
-Puede [configurar los formularios](#configuring-your-search-forms) de búsqueda que se utilizan en varias consolas y en el navegador de recursos (al editar páginas). Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) mediante:
+![buscar y filtrar el uso](assets/csf-usage.png)
+
+Juntos, estos objetivos le ayudan a localizar su contenido de forma rápida y sencilla desde:
+
+* [Búsqueda y filtro](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Selector de raíl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* el [navegador](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) de recursos (al editar páginas)
+
+>[!NOTE]
+>
+>Puede configurar el servicio de indexación [y búsqueda de](/help/operations/indexing.md) contenido subyacente.
+
+Mediante **Buscar formularios**, puede personalizar y ampliar estos paneles según sus necesidades específicas.
+
+Los formularios **de** búsqueda proporcionan una selección lista para usar de [predicados](#predicates-and-their-settings) que se pueden combinar y definir. Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) mediante:
 
 * **Herramientas**
 
@@ -21,73 +35,48 @@ Puede [configurar los formularios](#configuring-your-search-forms) de búsqueda 
 
       * **Formularios de búsqueda**
 
-Cuando accede por primera vez a esta consola, puede ver que todas las configuraciones tienen un símbolo de cerrojo. Esto indica que la configuración adecuada es la configuración predeterminada (lista para usar) y no se puede eliminar. Una vez que haya personalizado la configuración, el bloqueo desaparecerá, a menos que [elimine la configuración](#deleting-a-configuration-to-reinstate-the-default)personalizada, en cuyo caso se restablecerá la configuración predeterminada (y el indicador de cerrojo).
+## Formularios predeterminados {#default-forms}
+
+Cuando accede por primera vez a la consola **Buscar formularios** , puede ver que todas las configuraciones tienen un símbolo de cerrojo. Esto indica que la configuración correspondiente es la configuración predeterminada (lista para usar) y no se puede eliminar. Una vez que haya personalizado y guardado, desaparecerá una configuración del bloqueo. Volverá a aparecer cuando [elimine la configuración](#deleting-a-configuration-to-reinstate-the-default)personalizada, en cuyo caso se restablecerá la configuración predeterminada (y el indicador de cerrojo).
 
 ![configuración general de formularios de búsqueda](assets/csf-overview.png)
-
-## Configuraciones {#configurations}
 
 Las configuraciones predeterminadas (enumeradas alfabéticamente) disponibles son:
 
 * **Carril de búsqueda de administración de recursos:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar la consola Recursos.
-
 * **Editor de páginas (búsqueda de documentos):**
-
-   Esta configuración define las opciones disponibles al buscar documentos en el navegador de recursos (al editar una página).
 
 * **Editor de página (búsqueda de fragmentos de experiencias):**
 
-   Esta configuración define las opciones disponibles al buscar fragmentos de experiencia en el navegador de recursos (al editar una página).
-
 * **Editor de páginas (búsqueda de imágenes):**
-
-   Esta configuración define las opciones disponibles al buscar imágenes en el navegador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de manuscritos):**
 
-   Esta configuración define las opciones disponibles al buscar manuscritos en el navegador de recursos (al editar una página).
-
 * **Editor de páginas (búsqueda de páginas):**
-
-   Esta configuración define las opciones disponibles al buscar páginas en el navegador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de párrafos):**
 
-   Esta configuración define las opciones disponibles al buscar párrafos en el navegador de recursos (al editar una página).
-
 * **Editor de páginas (búsqueda de productos):**
-
-   Esta configuración define las opciones disponibles al buscar productos en el navegador de recursos (al editar una página).
 
 * **Editor de páginas (búsqueda de Scene7)**:
 
-   Esta configuración define las opciones disponibles al buscar recursos de Scene7 en el navegador de recursos (al editar una página).
-
 * **Editor de páginas (búsqueda de vídeos)**:
-
-   Esta configuración define las opciones disponibles al buscar vídeos en el navegador de recursos (al editar una página).
 
 * **Carril de búsqueda de administración de proyecto:**
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar proyectos.
-
 * **Carril de búsqueda de traducción del proyecto:**
-
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar traducciones de proyectos.
 
 * **Carril de búsqueda de administración de sitios**:
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al utilizar el carril de búsqueda de la consola Sitios.
-
 * **Carril de búsqueda de administración de fragmentos de código**:
-
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar fragmentos.
 
 * **Carril de búsqueda de administración de Stock**:
 
-   Esta configuración define las opciones de búsqueda disponibles para el usuario al buscar existencias.
+>[!NOTE]
+>
+> Para obtener más información sobre los formularios de búsqueda relacionados con recursos, consulte [Recursos: Facetas de búsqueda](/help/assets/search-facets.md)
+
 
 ## Predicados y su configuración {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Intervalo de fechas</td>
-   <td>Buscar recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td>
+   <td>Busque recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -181,7 +170,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Estado de caducidad</td>
-   <td>Buscar recursos según el estado de caducidad.</td>
+   <td>Buscar recursos en función del estado de caducidad.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -191,7 +180,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Tamaño del archivo</td>
-   <td>Busque recursos según su tamaño.</td>
+   <td>Filtre los recursos en función de su tamaño.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -205,7 +194,7 @@ Los siguientes predicados están disponibles, según la configuración:
    <td>Busque recursos en función del tipo de archivo o de MIME.</td>
    <td>
     <ul>
-     <li>Etiqueta de campo</li>
+     <li>Etiqueta de campo</li> 
      <li>Nombre de propiedad*</li>
      <li>Ruta de tipo MIME</li>
      <li>Descripción</li>
@@ -214,7 +203,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Texto completo</td>
-   <td>Busque predicado para búsquedas de texto completo.</td>
+   <td>Busque predicado para búsquedas de texto completo. Se asigna con el operador 'jcr:contains'.</td>
    <td>
     <ul>
      <li>Marcador de posición</li>
@@ -304,7 +293,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>página Estado</td>
-   <td>Buscar páginas según su estado.</td>
+   <td>Filtre las páginas según su estado.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -315,7 +304,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Ruta</td>
-   <td>Buscar recursos ubicados bajo una ruta específica.</td>
+   <td>Filtre según la ruta específica. Puede especificar varias rutas como opciones.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -325,7 +314,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Navegador de rutas</td>
-   <td>Proporcione un explorador de rutas para buscar.</td>
+   <td>Proporcione un navegador de rutas para buscar en una ruta raíz predefinida.</td>
    <td>
     <ul>
      <li>Marcador de posición</li>
@@ -360,7 +349,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Estado de publicación</td>
-   <td>Buscar recursos en función de su estado de publicación</td>
+   <td>Filtre los recursos en función de su estado de publicación.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -380,7 +369,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Clasificación</td>
-   <td>Buscar recursos según su clasificación.<br /> </td>
+   <td>Busque recursos según su clasificación promedio.<br /> </td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -391,7 +380,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Fecha relativa</td>
-   <td>Buscar recursos en función de la fecha relativa de su creación<br /> </td>
+   <td>Filtre los recursos en función de la fecha relativa de su creación. Por ejemplo, hace una semana, hace un mes.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -497,23 +486,24 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* Los predicados de búsqueda comunes se definen en:
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+Esta información es sólo de referencia, no debe realizar cambios en `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### Configuración de predicado {#predicate-settings}
 
-Según el predicado, hay una selección de opciones disponibles para la configuración:
+Según el predicado, hay una selección de opciones disponibles para la configuración, entre las que se incluyen:
 
 * **Etiqueta de campo**
 
@@ -659,22 +649,19 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    * `jcr:title` - la etiqueta de campo que se mostrará en el carril de búsqueda
    * `value` - el valor de propiedad en el que se buscará
+   ![Definición de predicado](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->No ***debe*** cambiar nada en la `/libs` ruta.
->
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
->
->El método recomendado para la configuración y otros cambios es:
->
->1. Volver a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso, de:
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Realice los cambios en `/apps.`
+   >[!NOTE]
+   >
+   >No ***debe*** cambiar nada en la `/libs` ruta.
+   >
+   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+   >
+   >El método recomendado para la configuración y otros cambios es:
+   >
+   >1. Volver a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso, de:
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Realice los cambios en `/apps.`
 
 
 1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda.
@@ -695,16 +682,13 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
       Seleccione la ruta donde se guardan las opciones. Por ejemplo:
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![Predicados de opciones](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda:
+1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## Permisos de usuario {#user-permissions}
@@ -715,7 +699,7 @@ En la tabla siguiente se muestran los permisos necesarios para realizar acciones
  <tbody>
   <tr>
    <td><strong>Acción</strong></td>
-   <td><strong>Permisos</strong></td>
+   <td><strong>Permisos </strong></td>
   </tr>
   <tr>
    <td>Editar </td>
