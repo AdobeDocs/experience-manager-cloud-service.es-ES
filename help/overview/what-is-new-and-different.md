@@ -2,7 +2,7 @@
 title: 'Novedades y diferencias: Adobe Experience Manager como servicio de nube'
 description: 'Qué es diferente y qué es lo nuevo: Adobe Experience Manager (AEM) como servicio de nube. '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
@@ -42,7 +42,7 @@ Existen diferencias intrínsecas entre estos enfoques anteriores y AEM como serv
 >
 >Para obtener más información, consulte [Arquitectura](/help/core-concepts/architecture.md).
 
-AEM como servicio de nube ahora tiene:
+AEM como Cloud Service ahora tiene:
 
 * Arquitectura dinámica con un número variable de imágenes de AEM.
 
@@ -50,17 +50,17 @@ AEM como servicio de nube ahora tiene:
 
 Esta arquitectura:
 
-* Se escala en función del tráfico *real* y la actividad *real* .
+* Se adapta en función del tráfico *real* y la actividad *real*.
 
 * Tiene instancias individuales que solo se ejecutan cuando es necesario.
 
 * Utiliza aplicaciones modulares.
 
-* Tiene un clúster de creación como predeterminado; esto evita el tiempo de inactividad para tareas de mantenimiento.
+* Tiene un clúster de creación predeterminado, lo que elimina el tiempo de inactividad durante las tareas de mantenimiento.
 
-Esto permite escalar automáticamente en distintos patrones de uso:
+Esto permite adaptarse automáticamente a distintos patrones de uso:
 
-![Escala automática para](assets/introduction-04.png "patrones de uso variablesEscala automática para patrones de uso variables")
+![Adaptación automática para patrones de uso variables](assets/introduction-04.png "Adaptación automática para patrones de uso variables")
 
 
 ## Actualizaciones {#upgrades}
@@ -179,6 +179,10 @@ Este proceso se conoce comúnmente como desarrollo primerizado en la nube. Dado 
 
 La consola web, en la que se administran los paquetes OSGI y su configuración asociada, y que anteriormente formaba parte de AEM QuickStart, ya no es accesible directamente para los usuarios de AEM como entorno de servicio en la nube. Se puede acceder a esta interfaz en modo de solo lectura mediante una nueva consola para desarrolladores. Con esta consola, los desarrolladores pueden seleccionar e iniciar sesión directamente en cualquier nodo concreto de un autor o servicio de publicación y, a continuación, acceder a las áreas bloqueadas de forma predeterminada.
 
+>[!NOTE]
+>
+>Consulte también Configuración de [OSGi](/help/implementing/deploying/overview.md#osgi-configuration)
+
 Otro requisito común para los desarrolladores es el acceso rápido a los archivos de registro de los distintos entornos. Con AEM como servicio de nube, los archivos de registro de los diferentes nodos de los nodos de creación y publicación están disponibles mediante el Administrador de nube, ya sea en forma de archivos que se pueden descargar o mediante API.
 
 Debido a la clara separación de código y contenido, los desarrolladores pueden utilizar un proceso particular para actualizar el contenido como parte de una implementación. Los casos de uso típicos del contenido mutable son:
@@ -207,7 +211,7 @@ Para permitir el desarrollo y las iteraciones rápidas, también es posible desa
 
 >[!NOTE]
 >
->Para obtener más información, comience con [Copia de seguridad](/help/operations/backup.md), [Indexación](/help/operations/indexing.md)y [otras tareas](/help/operations/maintenance.md)de mantenimiento.
+>Para obtener más información, comience con [Copia de seguridad](/help/operations/backup.md), [Indexación](/help/operations/indexing.md) y [Otras tareas de mantenimiento](/help/operations/maintenance.md).
 
 Con AEM como servicio de nube, estas operaciones se automatizan para que ya no sea necesaria ninguna interrupción del servicio.
 
