@@ -2,12 +2,12 @@
 title: 'Agregar usuarios y funciones: lo que se necesita'
 description: 'Agregar usuarios y funciones: lo que se necesita'
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# Agregar usuarios y funciones: lo que se necesita {#add-users-roles}
+# Agregar usuarios y funciones {#add-users-roles}
 
 
 Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos para funcionar. Por ejemplo, solo algunos usuarios pueden establecer los Indicadores de rendimiento clave (KPI) para un programa. Estos permisos se agrupan lógicamente en funciones.
