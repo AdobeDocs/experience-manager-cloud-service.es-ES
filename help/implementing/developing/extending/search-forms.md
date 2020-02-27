@@ -664,9 +664,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
    >1. Realice los cambios en `/apps.`
 
 
-1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda.
-
-   A continuación, toque o haga clic en el icono **Editar formularios** de búsqueda.
+1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda. A continuación, seleccione **Editar**.
 
 1. En función de la configuración, agregue una propiedad **Options** o **Options** a la configuración.
 1. Actualice los campos, en particular:
@@ -685,11 +683,10 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
    ![Predicados de opciones](assets/csf-options-predicate-02.png)
 
 1. Select **Done** to save your configuration.
-1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
+1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar - Filtros** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![opciones utilizadas](assets/csf-options-usage.png)
+
 
 ## Permisos de usuario {#user-permissions}
 
