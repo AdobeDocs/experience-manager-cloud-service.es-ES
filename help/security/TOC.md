@@ -9,5 +9,5 @@ source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
 
 # Seguridad {#security}
 
-+ [Seguridad para AEM como Cloud Service](/help/security/home.md)
-+ [Compatibilidad con IMS para AEM como Cloud Service](ims-support.md)
++ [Seguridad para AEM as a Cloud Service](/help/security/home.md)
++ [Compatibilidad con IMS para AEM as a Cloud Service](ims-support.md)
