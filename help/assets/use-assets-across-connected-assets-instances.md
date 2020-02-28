@@ -3,7 +3,7 @@ title: Uso de recursos conectados para compartir recursos DAM en el flujo de tra
 description: Utilice los recursos disponibles en una implementación remota de Recursos Adobe Experience Manager al crear sus páginas web en otra implementación de sitio de Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,9 +27,9 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 * Los usuarios forman parte de los grupos de usuarios correspondientes en cada implementación.
 * Para los tipos de implementación de Adobe Experience Manager, se cumple uno de los criterios admitidos.
 
-   |  | AEM Sites como servicio de nube | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
+   |  | AEM Sites como Cloud Service | Sitios de AEM 6.5 en AMS | Sitios AEM 6.5 in situ |
    |---|---|---|---|
-   | **AEM Assets como servicio de nube** | Admitido | Admitido | Admitido |
+   | **AEM Assets as a Cloud Service** | Admitido | Admitido | Admitido |
    | **AEM 6.5 Assets en AMS** | No admitido | Admitido | Admitido |
    | **Recursos AEM 6.5 in situ** | No admitido | No admitido | No admitido |
 
@@ -37,14 +37,10 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 Los autores pueden buscar imágenes y los siguientes tipos de documentos en Content Finder y utilizar los recursos buscados en el Editor de páginas. Se pueden añadir documentos al componente y `Download` imágenes al `Image` componente. Los autores también pueden añadir recursos remotos en cualquier componente personalizado de AEM que extienda los componentes predeterminados `Download` o `Image` .
 
-* Microsoft Word (DOC y DOCX)
-* Microsoft Excel (XLS y XLSX)
-* Microsoft PowerPoint (PPT y PPTX)
-* Adobe PDF (PDF)
-* Texto OpenDocument (ODT)
-* Formato de texto enriquecido (RTF)
-* Texto sin formato (TXT)
-* Páginas Web (HTML)
+La lista de formatos admitidos es:
+
+* **Formatos** de imagen: Se admiten los formatos de imagen admitidos por el componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Imagen. Los componentes de Dynamic Media no son compatibles.
+* **Formatos** de documento: Consulte Formatos [de documento compatibles con Recursos](file-format-support.md#supported-document-formats)conectados.
 
 ### Users and groups involved {#users-and-groups-involved}
 
@@ -159,7 +155,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, excepto que los metadatos asociados no se pueden editar.
 
-## Restricciones {#limitations}
+## Restricciones  {#limitations}
 
 **Permisos y administración de recursos**
 
