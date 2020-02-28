@@ -3,26 +3,18 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
 
 # Formatos de archivo compatibles con los recursos {#supported-file-formats}
 
-Adobe Experience Manager como servicio de nube admite funciones básicas de administración de contenido (almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. Además, para los formatos de archivo más utilizados, como imagen, propiedad de Adobe, documento y vídeo, proporciona una mayor compatibilidad para generar vistas previas y representaciones y extraer metadatos y texto para indexar texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
+Adobe Experience Manager como servicio de nube admite funciones básicas de administración de contenido: almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Recursos Adobe Experience Manager admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
 
-Algunos aspectos destacados de los formatos de archivo con compatibilidad ampliada son:
+Además, Experience Manager Assets ofrece una compatibilidad ampliada para generar vistas previas y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
 
-* Formatos [de archivo clave de](#adobe-formats) Adobe producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, InDesign, Illustrator, XD, Dimension y Acrobat/PDF.
-* Formatos de archivo de [imágenes clave](#image-formats)
-* [Formatos](#camera-raw-formats) de archivo RAW de cámara para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw)
-* Formatos [comunes de](#document-formats)documento, incluidos los formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) y [Open Document](#opendocument-formats)
-* Amplia gama de formatos de [vídeo](#video-formats) y [audio](#audio-formats)
-
-## Leyenda para obtener información detallada sobre asistencia {#legend-for-detailed-support-information}
-
-La leyenda siguiente describe el nivel de compatibilidad con una función:
+La leyenda siguiente describe el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
 | ------------------------------------------------------------ | --------------------------- |
@@ -30,7 +22,17 @@ La leyenda siguiente describe el nivel de compatibilidad con una función:
 | * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
 
-Las columnas de las tablas de soporte proporcionan la siguiente información:
+## Conversión de recursos mediante microservicios de recursos {#asset-microservices-supported-formats}
+
+Los aspectos más destacados incluyen:
+
+* Formatos [de archivo clave de](#adobe-formats) Adobe producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, InDesign, Illustrator, XD, Dimension y Acrobat/PDF.
+* Formatos [de archivo de](#image-formats)imágenes clave.
+* [Formatos](#camera-raw-formats) de archivo de Camera Raw para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
+* Formatos [comunes de](#document-formats)documento, incluidos los formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) y [Abrir documento](#opendocument-formats) .
+* Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
+
+Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 | Columna | Descripción |
 | ------------ | --------------------------------------------------------------- |
@@ -42,11 +44,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | TXT | Extracción de texto del documento para indexar |
 | Anchura/Altura | Compatibilidad para definir la anchura y la altura de una representación (píxeles) |
 
-<!-- Adding this checkmark icon ✓ does not look good in table. The icon's shade and size has to be toned down for good readability and less clutter.
-@gklebus: I suggest using a checkmark character, either U+2713 ✓ CHECK MARK or U+2714 ✔ HEAVY CHECK MARK
--->
-
-## Formatos de Adobe {#adobe-formats}
+### Formatos de Adobe {#adobe-formats}
 
 | Formato de archivo | GIF | JPEG | PNG | TXT | XMP | Anchura/Altura |
 | ----------- | --- | ---- | --- | --- | --- | ------------ |
@@ -64,7 +62,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 
 \* Para INDD (archivos de InDesign), el tamaño de la representación viene determinado por la vista previa incrustada en el archivo INDD. Configure las preferencias en InDesign (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, Tamaño]** de vista previa) para incrustar una representación más grande.
 
-## Formatos de imagen {#image-formats}
+### Formatos de imagen {#image-formats}
 
 | Formato de archivo | GIF | JPEG | PNG | XMP | Anchura/Altura |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -76,8 +74,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | SVG | - | - | - | ✓ | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-
-## Formatos RAW de cámara {#camera-raw-formats}
+### Formatos RAW de cámara {#camera-raw-formats}
 
 | Formato de archivo | GIF | JPEG | PNG | XMP | Anchura/Altura |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -109,7 +106,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos de documento {#document-formats}
+### Formatos de documento {#document-formats}
 
 | Formato de archivo | TXT | XMP |
 | ----------- | --- | --- |
@@ -120,7 +117,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | TEXTO | ✓ | - |
 | XML | ✓ | - |
 
-## Formatos de Microsoft Office {#microsoft-office-formats}
+### Formatos de Microsoft Office {#microsoft-office-formats}
 
 | Formato de archivo | GIF | JPEG | PNG | TEXTO | Anchura/Altura |
 | ----------- | --- | ---- | --- | ---- | ------------ |
@@ -128,7 +125,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos OpenDocument {#opendocument-formats}
+### Formatos OpenDocument {#opendocument-formats}
 
 | Formato de archivo | GIF | JPEG | PNG | TEXTO | Altura |
 | ----------- | --- | ---- | --- | ---- | ------ |
@@ -139,7 +136,7 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos de vídeo {#video-formats}
+### Formatos de vídeo {#video-formats}
 
 | Formato de archivo | GIF | JPEG | PNG | XMP | Anchura/Altura |
 | ----------- | --- | ---- | --- | --- | ------------ |
@@ -166,15 +163,27 @@ Las columnas de las tablas de soporte proporcionan la siguiente información:
 | WEBM | ✓ | ✓ | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Formatos de audio {#audio-formats}
+### Formatos de audio {#audio-formats}
 
 Assets as a Cloud Service ofrece compatibilidad con XMP para estos formatos de audio: AIF, ASF, M4A, MP3, WAV y WMA.
 
-<!-- TBD: Some items from https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedinputvideoformatsforDynamicMediatranscoding may be applicable.
+## Formatos de documento admitidos {#doc-formats}
 
-Bring more parity with https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#SupportedMIMEtypes.
-https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-formats.html#Supportedmultimediaformats
--->
+Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
+
+| Formato de archivo | [Recursos de red](use-assets-across-connected-assets-instances.md) |
+|---|---|
+| DOC | ✓ |
+| DOCX | ✓ |
+| ODT | ✓ |
+| PDF | ✓ |
+| HTML | ✓ |
+| RTF | ✓ |
+| TXT | ✓ |
+| XLS | ✓ |
+| XLSX | ✓ |
+| PPT | ✓ |
+| PPTX | ✓ |
 
 >[!MORELIKETHIS]
 >
