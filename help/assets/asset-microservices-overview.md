@@ -3,7 +3,7 @@ title: Conozca cómo los microservicios de recursos pueden procesar sus recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 ---
 
@@ -26,7 +26,7 @@ Los microservicios de recursos proporcionan un procesamiento escalable y flexibl
 * Se ha mejorado la resiliencia del procesamiento de recursos. Los posibles problemas al gestionar archivos atípicos, como archivos dañados o archivos extremadamente grandes, ya no afectan al rendimiento de la implementación.
 * Configuración simplificada del procesamiento de recursos para los administradores.
 * Adobe administra y mantiene la configuración de procesamiento de recursos para proporcionar la configuración más conocida para gestionar representaciones, metadatos y extracción de texto para distintos tipos de archivos
-* Los servicios nativos de procesamiento de archivos de Adobe se utilizan cuando procede, lo que proporciona una salida de alta fidelidad y una gestión eficaz de los formatos propios de Adobe.
+* Los servicios nativos de procesamiento de archivos de Adobe se utilizan cuando procede, lo que proporciona una salida de alta fidelidad y una gestión [eficaz de los formatos](file-format-support.md)propiedad de Adobe.
 * Capacidad de configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
 
 Los microservicios de recursos ayudan a evitar la necesidad de herramientas de procesamiento de terceros (como ImageMagick) y a simplificar la configuración del sistema, al tiempo que proporcionan una funcionalidad lista para usar para tipos de archivos comunes.
