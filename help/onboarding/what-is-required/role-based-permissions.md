@@ -2,7 +2,7 @@
 title: Permisos basados en roles
 description: Permisos basados en roles
 translation-type: tm+mt
-source-git-commit: e59fe55c255d5239a561a9fb878faa81d17b4b48
+source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
 
 ---
 
@@ -17,19 +17,29 @@ Cada función tiene permisos específicos, tareas preconfiguradas o permisos aso
 
 | Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programas | Desarrollador |
 |--- |--- |--- |--- |--- |--- |
-| Agregar programa | Agregar nuevo programa. | x | x | x | x |
-| Leer aplicación | Leer KPI de programa. | x | x | x | x |
-| Escribir aplicación | Configuración o edición del programa. | x |  |  |  |  |
-| Entorno de lectura | Consulte Detalles del entorno. | x | x | x | x |
-| Crear ejecución | Iniciar canalización. | x | x | x |  |
-| Leer ejecución | Consulte el estado de la ejecución. | x | x | x | x |
-| Reanudar ejecución | Puede reanudar la ejecución cuando esté en pausa. | x | x | x |  | x |
-| Ejecución Aprobar implementación en producción | Proporcione la aprobación de GoLive. | x | x | x |  |  |
-| Implementación de programación de ejecución en producción | Programar la implementación de producción. | x | x | x |
-| Cancelación de ejecución | Cancelar la ejecución actual. | x | x | x |  |
-| Errores de control de calidad de anulación de ejecución | Aprobar Errores Importantes De Puerta De Calidad. | x | x | x |  |
-| Creación de tubería | Configurar / Editar tubería. |  | x |  |  |
-| Lectura de tubería | Consulte Detalles de canalización. | x | x | x | x |
-| Escritura de tubería | Configurar / Editar tubería. |  | x |  |  |
-| Aprobación de modificación de tubería | Permite editar la opción Propietario de la empresa. |  | x |  |  |
-| Lectura del paso | Consulte los resultados de las métricas de calidad de los pasos. | x | x | x | x |
+| Crear inquilino | Crear un nuevo inquilino. |  |  |  |  |
+| Actualizar inquilino | Actualizar inquilino. |  |  |  |  |
+| Agregar programa | Agregar un nuevo programa. | x |  |  |  |
+| Crear entorno | Cree Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
+| Configurar variables de entorno | Configurar variables de entorno y secretos. |  | x |  | x |
+| Agregar o quitar el nombre de dominio personalizado, cargar o actualizar el certificado SSL | Agregar o quitar el nombre de dominio personalizado, cargar o actualizar el certificado SSL. | x | x |  |  |
+| Entorno de actualización | Actualice Los Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
+| Eliminar entorno | Elimine Entornos No Prod, Dev Y Playground. | x | x |  |  |
+| Eliminar entorno | Eliminar Entorno Prod+Stage. |  |  |  |  |
+| Entorno de hibernación | Hibernar Entornos No Prod, Dev, Playground. | x | x |  |  |
+| Configuración del programa | Configurar el programa (incluidos los KPI). | x |  |  |  |
+| Configuración del programa | Configurar directivas de escala (General: configurar el número máximo de niveles y la escala horizontal a petición: Inclusión). | x |  |  |  |
+| Configuración del programa | Obtener acceso de confirmación. |  | x |  | x |
+| Configuración de tubería | Configurar o editar tubería. |  | x |  |  |
+| Ejecución de canalización | Inicie la canalización. | x | x |  |  |
+| Ejecución de canalización | Rechazar o aprobar errores importantes de tres niveles. | x | x | x |  |
+| Ejecución de canalización | Proporcione la aprobación de GoLive. | x | x | x |  |
+| Ejecución de canalización | Programar la implementación de producción. | x | x | x |  |
+| Ejecución de canalización | Reanudar tubería de producción. |  |  |  |  |
+| Inclusión (o desactivación) en Provisioning | Inclusión en aprovisionamiento horizontal bajo demanda desde la pantalla de configuración del programa. Configure el máximo de segmentos P-D &#39;permitidos&#39; que se pueden escalar horizontalmente en entornos de PROD y de no PROD. | x |  |  |  |
+| Administrar entorno | Agregue el segmento Publish-Dispatcher desde la pantalla Administrar entorno. | x | x |  |  |  |
+| Actualización de producto | La tarjeta de actualización de AEM está visible y lleva al usuario al Asistente de actualización. | x | x | x | x |
+| Actualización de producto | El Asistente para la actualización de productos puede activarse. | x | x |  |  |
+| Actualización push | Iniciar la canalización de actualización push. |  |  |  |  |
+| Generar token de acceso personal | Generar token de acceso personal. |  | x |  | x |
+
