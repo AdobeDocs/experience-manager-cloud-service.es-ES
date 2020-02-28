@@ -4,7 +4,7 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
@@ -61,7 +61,7 @@ Para obtener una vista previa de un recurso, siga estos pasos.
    >
    >El diseño de la página [!UICONTROL Propiedades] y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. Para obtener información sobre cómo modificar el diseño de la página [!UICONTROL Propiedades] , consulte Esquemas [de metadatos](/help/assets/metadata-schemas.md).
 
-1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo]** de activación.
+1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -96,7 +96,7 @@ Al copiar un recurso o una carpeta, se copia todo el recurso o la carpeta, junto
 
 Algunos atributos que son exclusivos de una copia concreta de un activo no se arrastran. Algunos ejemplos son:
 
-* Ruta relativa, ID del recurso, fecha y hora de creación, e historial de versiones y versiones. Algunas de estas propiedades están indicadas por las propiedades `dam:relativePath`, `jcr:uuid`, `jcr:created`y `cq:name`.
+* ID del recurso, fecha y hora de creación, y versiones e historial de versiones. Algunas de estas propiedades están indicadas por las propiedades `jcr:uuid`, `jcr:created`y `cq:name`.
 
 * El tiempo de creación y las rutas a las que se hace referencia son únicos para cada recurso y cada una de sus representaciones.
 
@@ -187,17 +187,17 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    **Carga de una nueva representación**
 
-   Vaya a la página de detalles del recurso y toque o haga clic en el icono **[!UICONTROL Agregar representación]** de la barra de herramientas para cargar una nueva representación para el recurso.
+   Vaya a la página de detalles del recurso y pulse o haga clic en el icono **[!UICONTROL Agregar representación]** de la barra de herramientas para cargar una nueva representación para el recurso.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
 
    >[!NOTE]
    >
-   >Si selecciona una representación en el panel **[!UICONTROL Representaciones]** , la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono Cargar representación, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
+   >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono Cargar representación, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
 
    Puede configurar las dimensiones de la representación que desee mostrar en la página de detalles de un recurso de vídeo o imagen. En función de las dimensiones que especifique, Recursos AEM muestra la representación con las dimensiones exactas o más cercanas.
 
-   Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad width. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar del ancho para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. Para la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el original.
+   Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el del original.
 
    Del mismo modo, puede personalizar la imagen de la página Anotación superponiendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -253,7 +253,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Vaya a la ubicación de los recursos o la carpeta que desee publicar.
 
-1. Seleccione la acción rápida **[!UICONTROL Publicar]** en la tarjeta de recursos o seleccione el recurso y toque o haga clic en el icono Publicación **** rápida de la barra de herramientas.
+1. Seleccione la acción rápida **[!UICONTROL Publicar]** en la tarjeta de recursos o seleccione el recurso y pulse o haga clic en el icono **[!UICONTROL Publicación rápida]** de la barra de herramientas.
 1. Si el recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que no se han publicado o que se han modificado desde la última vez que se publicaron o no. Elija las referencias que desee publicar.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -345,7 +345,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción Mano **libre** permite recortar la imagen sin restricciones de proporción de aspecto.
+1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -411,7 +411,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
-1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la línea de tiempo. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]** .
+1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -442,7 +442,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   Especifique el color que desee en el cuadro Color **[!UICONTROL de]** anotación y toque o haga clic en **[!UICONTROL Aceptar]**.
+   Especifique el color que desee en el cuadro **[!UICONTROL Color de anotación]** y pulse o haga clic en **[!UICONTROL Aceptar]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -458,7 +458,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. En la lista **[!UICONTROL Mostrar todo]** de la línea de tiempo, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
+1. En la lista **[!UICONTROL Mostrar todo]** de la cronología, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -498,13 +498,13 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   Puede elegir otros ajustes en función de la posición en la que desea que aparezcan las anotaciones o el estado en el PDF impreso. Si desea que las anotaciones o el estado aparezcan en una página independiente del recurso impreso, elija **[!UICONTROL Página]** siguiente.
+   Puede elegir otros ajustes en función de la posición en la que desea que aparezcan las anotaciones o el estado en el PDF impreso. Si desea que las anotaciones o el estado aparezcan en una página independiente del recurso impreso, elija **[!UICONTROL Página siguiente]**.
 
    >[!NOTE]
    >
    >Es posible que las anotaciones largas no se representen correctamente en el archivo PDF. Para una representación óptima, Adobe recomienda limitar las anotaciones a 50 palabras.
 
-1. Toque o haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda** , la salida generada se parece al archivo PDF que se muestra aquí.
+1. Pulse o haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda**, la salida generada se parece al archivo PDF que se muestra aquí.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -554,7 +554,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Para ver la nueva versión, abra la lista **[!UICONTROL Mostrar todo]** en la línea de tiempo de la página de detalles de recursos o de la interfaz de usuario de recursos y elija **[!UICONTROL Versiones]**. Todas las versiones creadas para un recurso se muestran en la ficha Escala de tiempo. Puede filtrar la lista para mostrar Versiones, haciendo clic en la flecha de colocación y seleccionando **[!UICONTROL Versiones]** en la lista.
+1. Para ver la nueva versión, abra la lista **[!UICONTROL Mostrar todo]** en la cronología de la página de detalles de recursos o de la interfaz de usuario de recursos y elija **[!UICONTROL Versiones]**. Todas las versiones creadas para un recurso se muestran en la pestaña de cronología. Puede filtrar la lista para mostrar Versiones, haciendo clic en la flecha de colocación y seleccionando **[!UICONTROL Versiones]** en la lista.
 
    ![versions_option](assets/versions_option.png)
 
@@ -566,7 +566,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![save_version](assets/save_version.png)
 
-1. Para generar una vista previa de la versión, toque o haga clic en **[!UICONTROL Vista previa de la versión]**.
+1. Para generar una vista previa de la versión, pulse o haga clic en **[!UICONTROL Vista previa de la versión]**.
 1. Para mostrar esta versión en la interfaz de usuario de Recursos, seleccione **[!UICONTROL Revertir a esta versión]**.
 1. Para comparar dos versiones, vaya a la página de recursos del recurso y toque o haga clic en la versión que se va a comparar con la versión actual.
 
@@ -591,7 +591,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Iniciar flujo de trabajo]** , seleccione un modelo de flujo de trabajo de la lista.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -599,7 +599,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Toque o haga clic en **[!UICONTROL Iniciar]** y, a continuación, toque o haga clic en **[!UICONTROL Continuar]** en el cuadro de diálogo para confirmar. Cada paso del flujo de trabajo se muestra en la línea de tiempo como un evento.
+1. Pulse o haga clic en **[!UICONTROL Iniciar]** y, a continuación, pulse o haga clic en **[!UICONTROL Continuar]** en el cuadro de diálogo para confirmar. Cada paso del flujo de trabajo se muestra en la cronología como un evento.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
