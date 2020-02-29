@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -97,9 +97,9 @@ Un valor vacío significa que el procesamiento de recursos asume la dimensión d
 
 #### Reglas de inclusión de tipo MIME {#mime-type-inclusion-rules}
 
-Cuando se procesa un recurso con un tipo de MIME específico, el tipo de MIME se compara en primer lugar con el valor de tipos de MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (&quot;lista negra&quot;).
+Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (&quot;lista negra&quot;).
 
-De lo contrario, el tipo de MIME se compara con el tipo de MIME incluido y, si coincide con la lista, se genera la representación (&quot;lista blanca&quot;).
+De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (&quot;lista blanca&quot;).
 
 #### Representación especial de FPO {#special-fpo-rendition}
 
@@ -114,7 +114,7 @@ Una vez creados los perfiles de procesamiento adicionales, deben aplicarse a car
 Existen dos formas de aplicar perfiles de procesamiento a las carpetas:
 
 * Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Herramientas > Recursos > Perfiles]** de procesamiento y utilizar la acción **[!UICONTROL Aplicar perfil a carpetas]** . Abre un navegador de contenido que le permite desplazarse a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
-* Los usuarios pueden seleccionar una carpeta en la interfaz de usuario Recursos, utilizar la acción **[!UICONTROL Propiedades]** para abrir la pantalla Propiedades de la carpeta, hacer clic en la ficha Perfiles **[!UICONTROL de]** procesamiento y, en la lista desplegable, seleccionar el perfil de procesamiento correcto para esa carpeta. La opción se guardará tras la acción **[!UICONTROL Guardar y cerrar]** .
+* Los usuarios pueden seleccionar una carpeta en la interfaz de usuario de Assets, utilizar la acción **[!UICONTROL Propiedades]** para abrir la pantalla Propiedades de la carpeta, hacer clic en la pestaña **[!UICONTROL Perfiles de procesamiento]** y, en la lista desplegable, seleccionar el perfil de procesamiento correcto para esa carpeta. La opción se guardará tras la acción **[!UICONTROL Guardar y cerrar]**.
 
 >[!NOTE]
 >
