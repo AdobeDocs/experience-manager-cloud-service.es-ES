@@ -1,14 +1,14 @@
 ---
-title: Introducción a Recursos como servicio de nube
+title: Introducción a Assets as a Cloud Service
 description: Novedades de Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# Introducción a los recursos como un servicio de nube {#assets-cloud-service-introduction}
+# Introducción a Assets como Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ La ingestión simultánea de un gran número de recursos o recursos complejos re
 
 Las empresas necesitan soporte para una amplia variedad de formatos de archivo y resoluciones de contenido para casos de uso multilingüe, multidispositivo y geografía. Los requerimientos de procesamiento y almacenamiento de recursos requieren recursos y capacidades que pueden sobrecargar una solución tradicional. A veces, las limitaciones técnicas del procesamiento de activos no producen los resultados deseados y, en otros momentos, el costo del almacenamiento es un impedimento para los márgenes de ganancia.
 
-Para empezar, comprenda los [beneficios de una oferta](#solution-benefits)nativa de nube. Consulte los notables [cambios realizados en AEM como servicio](/help/release-notes/aem-cloud-changes.md) de nube que también afectan a Assets y que han seguido los notables [cambios en Assets](/help/assets/assets-cloud-changes.md).
+Para empezar, comprenda los [beneficios de una oferta](#solution-benefits)nativa de nube. Consulte los notables [cambios realizados en AEM como servicio](/help/release-notes/aem-cloud-changes.md) de nube que también afectan a Experience Manager Assets y que han seguido los notables [cambios en Assets](/help/assets/assets-cloud-changes.md).
 
 Siga leyendo para conocer los [detalles de las nuevas capacidades](#whats-new-assets) de Recursos y los problemas [](/help/release-notes/known-issues.md)conocidos. Consulte una lista de funciones [](/help/release-notes/deprecated-removed-features.md) obsoletas o eliminadas para saber qué se elimina en esta versión y consulte esta [lista de funciones](/help/release-notes/known-issues.md#upcoming-assets-capabilities) futuras para saber qué se avecina en un futuro próximo. Por último, comprenda los términos de AEM con la ayuda de este [glosario](/help/overview/terminology.md).
 
@@ -37,5 +37,5 @@ Las siguientes son las ventajas clave de Recursos como servicio de nube. Para ob
 
 Las nuevas y significativas capacidades son:
 
-* [Microservicios de activos](/help/assets/asset-microservices-overview.md)
+* [Microservicios de recursos](/help/assets/asset-microservices-overview.md)
 * [Métodos de carga de recursos](/help/assets/add-assets.md)
