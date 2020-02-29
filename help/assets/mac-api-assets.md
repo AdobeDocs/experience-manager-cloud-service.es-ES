@@ -1,14 +1,14 @@
 ---
-title: API HTTP de recursos
+title: API de HTTP de Assets
 description: Obtenga información sobre la implementación, el modelo de datos y las características de la API HTTP de Assets. Utilice la API HTTP de Assets para realizar varias tareas en torno a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3db5a1d668ad88e340a1580900d222c370b8d3e8
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# API HTTP de recursos {#assets-http-api}
+# API de HTTP de Assets {#assets-http-api}
 
 ## Información general {#overview}
 
@@ -19,7 +19,7 @@ Para acceder a la API:
 1. Abra el documento del servicio API en `https://[hostname]:[port]/api.json`.
 1. Siga el vínculo del servicio Recursos que lleva a `https://[hostname]:[server]/api/assets.json`.
 
-La respuesta de API es un archivo JSON para algunos tipos de MIME y un código de respuesta para todos los tipos de MIME. La respuesta JSON es opcional y puede que no esté disponible, por ejemplo, para archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
+La respuesta de API es un archivo JSON para algunos tipos MIME y un código de respuesta para todos los tipos MIME. La respuesta JSON es opcional y puede que no esté disponible, por ejemplo, para archivos PDF. Confíe en el código de respuesta para realizar más análisis o acciones.
 
 Después del tiempo de [!UICONTROL inactividad], un recurso y sus representaciones no están disponibles ni a través de la interfaz web de Recursos ni a través de la API HTTP. La API devuelve un mensaje de error 404 si [!UICONTROL Tiempo] de activación está en el futuro o Tiempo de [!UICONTROL desactivación] está en el pasado.
 
@@ -58,7 +58,7 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 * `parent`:: Vínculo a la carpeta principal
 * `thumbnail`:: (Opcional) vínculo a una imagen en miniatura de la carpeta
 
-### Recursos {#assets}
+### Assets {#assets}
 
 En AEM, los recursos contienen los siguientes elementos:
 
