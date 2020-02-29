@@ -3,7 +3,7 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ---
 
@@ -171,19 +171,19 @@ Assets as a Cloud Service ofrece compatibilidad con XMP para estos formatos de a
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
 
-| Formato de archivo | [Recursos de red](use-assets-across-connected-assets-instances.md) |
-|---|---|
-| DOC | ✓ |
-| DOCX | ✓ |
-| ODT | ✓ |
-| PDF | ✓ |
-| HTML | ✓ |
-| RTF | ✓ |
-| TXT | ✓ |
-| XLS | ✓ |
-| XLSX | ✓ |
-| PPT | ✓ |
-| PPTX | ✓ |
+| Formato de archivo | Almacenamiento | Gestión de metadatos | [Recursos de red](use-assets-across-connected-assets-instances.md) |
+|---|---|---|---|
+| DOC | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ |
+| ODT | ✓ | ✓ | ✓ |
+| PDF | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |
+| RTF | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | ✓ |
+| XLS | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ |
+| PPT | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ |
 
 >[!MORELIKETHIS]
 >
