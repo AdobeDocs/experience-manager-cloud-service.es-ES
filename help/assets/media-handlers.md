@@ -3,7 +3,7 @@ title: Procesar recursos con controladores de medios y flujos de trabajo
 description: Obtenga información sobre los distintos controladores de medios y cómo utilizarlos en flujos de trabajo para realizar tareas en los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ AEM tiene algunos flujos de trabajo predeterminados para procesar recursos. Para
 
 Los flujos de trabajo existentes se pueden ampliar y se pueden crear nuevos para procesar recursos según requisitos específicos.
 
-En el siguiente ejemplo se muestra cómo mejorar el flujo de trabajo de sincronización **[!UICONTROL de recursos de]** AEM para que se generen subrecursos para todos los recursos, excepto para los documentos PDF.
+En el siguiente ejemplo se muestra cómo mejorar el flujo de trabajo de **[!UICONTROL sincronización de recursos de AEM]** para que se generen subrecursos para todos los recursos, excepto para los documentos PDF.
 
 ### Desactivación/activación de un controlador de medios {#disabling-enabling-a-media-handler}
 
@@ -151,10 +151,10 @@ Esta es un ejemplo de plantilla:
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos de MIME específicos. Para implementar esta interfaz es necesario agregar un nuevo tipo de MIME. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. La adición de un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` clase:
-   * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
+* Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
+   * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente, además de otra funcionalidad utilizada comúnmente para la extracción de subrecursos.
    * La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
    * Esta clase ya proporciona un descriptor de servicio abstracto. Si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador inherit en true.
 
@@ -162,7 +162,7 @@ Es necesario implementar los siguientes métodos:
 
 * `extractMetadata()`:: este método extrae todos los metadatos disponibles.
 * `getThumbnailImage()`:: este método crea una imagen en miniatura a partir del recurso pasado.
-* `getMimeTypes()`:: este método devuelve los tipos de MIME de los recursos.
+* `getMimeTypes()`:: este método devuelve los tipos MIME de recurso.
 
 Esta es un ejemplo de plantilla:
 
@@ -170,7 +170,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos de MIME específicos. Para implementar esta interfaz es necesario agregar un nuevo tipo de MIME. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. La adición de un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
 
@@ -391,7 +391,7 @@ Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en R
 
 El `CommandLineProcess` proceso realiza las siguientes operaciones en el orden en que aparecen:
 
-* Filtra el archivo según tipos de MIME específicos, si se especifica.
+* Filtra el archivo según tipos MIME específicos, si se especifica.
 * Crea un directorio temporal en el disco que aloja el servidor AEM.
 * Transmite el archivo original al directorio temporal.
 * Ejecuta el comando definido por los argumentos del paso. El comando se está ejecutando en el directorio temporal con los permisos del usuario que ejecuta AEM.
@@ -421,7 +421,7 @@ Primera instalación de ImageMagick en el disco que aloja el servidor AEM:
 
    Se agrega una imagen volteada al directorio.
 
-A continuación, agregue el paso del proceso de la línea de comandos al flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM:
+A continuación, agregue el paso del proceso de la línea de comandos al flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**:
 
 1. Vaya a la consola **[!UICONTROL Flujo de trabajo]** .
 1. En la ficha **[!UICONTROL Modelos]** , edite el modelo **[!UICONTROL DAM Update Asset]** .
@@ -441,7 +441,7 @@ Para probar el flujo de trabajo modificado, agregue un recurso a `/content/dam`.
 
 #### Configuración del paso del proceso CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-En esta sección se describe cómo establecer los argumentos **de** proceso de **CommandLineProcess**.
+En esta sección se describe cómo establecer los **argumentos de proceso** de **CommandLineProcess**.
 
 Los valores de los argumentos **de** proceso deben separarse con una coma y no deben comenzar con un espacio en blanco.
 
@@ -461,7 +461,7 @@ Los valores de los argumentos **de** proceso deben separarse con una coma y no d
   </tr>
   <tr>
    <td> cmd: &lt;comando&gt;</td>
-   <td><p>Define el comando que se ejecutará. La sintaxis depende de la herramienta de línea de comandos.</p> <p>Sólo se puede definir un comando.</p> <p>Se pueden utilizar las siguientes variables para crear el comando:<br/></p> <p><code>${filename}</code>:: nombre del archivo de entrada, p. ej. original.jpg<br/><code>${file}</code>: nombre completo de ruta del archivo de entrada, por ejemplo: /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directorio del archivo de entrada, p. ej. /tmp/cqdam0816.tmp.<br/> <code>${basename}</code>: nombre del archivo de entrada sin su extensión, p. ej. original<br/> <code>${extension}</code>: extensión del archivo de entrada, p. ej. jpg<br/></p></td>
+   <td><p>Define el comando que se ejecutará. La sintaxis depende de la herramienta de línea de comandos.</p> <p>Sólo se puede definir un comando.</p> <p>Se pueden utilizar las siguientes variables para crear el comando:<br/></p> <p><code>${filename}</code>:: nombre del archivo de entrada, por ejemplo `original.jpg`<br/><code>${file}</code>: nombre completo de ruta del archivo de entrada, por ejemplo, `/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: directorio del archivo de entrada, por ejemplo "/tmp/cqdam0816.tmp".<br/> <code>${basename}</code>: nombre del archivo de entrada sin su extensión, p. ej. original<br/> <code>${extension}</code>: extensión del archivo de entrada, por ejemplo, JPG<br/></p></td>
   </tr>
  </tbody>
 </table>
