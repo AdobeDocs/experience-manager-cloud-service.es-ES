@@ -2,7 +2,7 @@
 title: Permisos basados en roles
 description: Permisos basados en roles
 translation-type: tm+mt
-source-git-commit: 6cae9b2b719dab687f601a0596d37f99afded9ab
+source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
 
 ---
 
@@ -26,9 +26,7 @@ Cada función tiene permisos específicos, tareas preconfiguradas o permisos aso
 | Entorno de actualización | Actualice Los Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
 | Eliminar entorno | Elimine Entornos No Prod, Dev Y Playground. | x | x |  |  |
 | Eliminar entorno | Eliminar Entorno Prod+Stage. |  |  |  |  |
-| Entorno de hibernación | Hibernar Entornos No Prod, Dev, Playground. | x | x |  |  |
 | Configuración del programa | Configurar el programa (incluidos los KPI). | x |  |  |  |
-| Configuración del programa | Configurar directivas de escala (General: configurar el número máximo de niveles y la escala horizontal a petición: Inclusión). | x |  |  |  |
 | Configuración del programa | Obtener acceso de confirmación. |  | x |  | x |
 | Configuración de tubería | Configurar o editar tubería. |  | x |  |  |
 | Ejecución de canalización | Inicie la canalización. | x | x |  |  |
@@ -36,10 +34,7 @@ Cada función tiene permisos específicos, tareas preconfiguradas o permisos aso
 | Ejecución de canalización | Proporcione la aprobación de GoLive. | x | x | x |  |
 | Ejecución de canalización | Programar la implementación de producción. | x | x | x |  |
 | Ejecución de canalización | Reanudar tubería de producción. |  |  |  |  |
-| Inclusión (o desactivación) en Provisioning | Inclusión en aprovisionamiento horizontal bajo demanda desde la pantalla de configuración del programa. Configure el máximo de segmentos P-D &#39;permitidos&#39; que se pueden escalar horizontalmente en entornos de PROD y de no PROD. | x |  |  |  |
 | Administrar entorno | Agregue el segmento Publish-Dispatcher desde la pantalla Administrar entorno. | x | x |  |  |  |
-| Actualización de producto | La tarjeta de actualización de AEM está visible y lleva al usuario al Asistente de actualización. | x | x | x | x |
-| Actualización de producto | El Asistente para la actualización de productos puede activarse. | x | x |  |  |
 | Actualización push | Iniciar la canalización de actualización push. |  |  |  |  |
 | Generar token de acceso personal | Generar token de acceso personal. |  | x |  | x |
 
