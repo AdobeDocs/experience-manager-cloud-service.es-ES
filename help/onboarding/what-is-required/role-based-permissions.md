@@ -2,7 +2,7 @@
 title: Permisos basados en roles
 description: Permisos basados en roles
 translation-type: tm+mt
-source-git-commit: 645c1e72adeafe437851930a68c9cf905ef0539f
+source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
 
 ---
 
@@ -17,12 +17,8 @@ Cada función tiene permisos específicos, tareas preconfiguradas o permisos aso
 
 | Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programas | Desarrollador |
 |--- |--- |--- |--- |--- |--- |
-| Crear inquilino | Crear un nuevo inquilino. |  |  |  |  |
-| Actualizar inquilino | Actualizar inquilino. |  |  |  |  |
 | Agregar programa | Agregar un nuevo programa. | x |  |  |  |
 | Crear entorno | Cree Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
-| Configurar variables de entorno | Configurar variables de entorno y secretos. |  | x |  | x |
-| Agregar o quitar el nombre de dominio personalizado, cargar o actualizar el certificado SSL | Agregar o quitar el nombre de dominio personalizado, cargar o actualizar el certificado SSL. | x | x |  |  |
 | Entorno de actualización | Actualice Los Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
 | Eliminar entorno | Elimine Entornos No Prod, Dev Y Playground. | x | x |  |  |
 | Eliminar entorno | Eliminar Entorno Prod+Stage. |  |  |  |  |
