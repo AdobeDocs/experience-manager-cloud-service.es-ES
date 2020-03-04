@@ -2,7 +2,7 @@
 title: Permisos basados en roles
 description: Permisos basados en roles
 translation-type: tm+mt
-source-git-commit: 1765cc81bcd6b3404642efbd3ddde27047583f85
+source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
 
 ---
 
@@ -32,5 +32,5 @@ Cada función tiene permisos específicos, tareas preconfiguradas o permisos aso
 | Ejecución de canalización | Reanudar tubería de producción. |  |  |  |  |
 | Administrar entorno | Agregue el segmento Publish-Dispatcher desde la pantalla Administrar entorno. | x | x |  |  |  |
 | Actualización push | Iniciar la canalización de actualización push. |  |  |  |  |
-| Generar token de acceso personal | Generar token de acceso personal. |  | x |  | x |
+| Generar token de acceso personal | Acceso a Git. |  | x |  | x |
 
