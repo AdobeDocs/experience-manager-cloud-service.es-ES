@@ -26,7 +26,7 @@ Consulte los siguientes temas adicionales:
 
 * [Administración de proyectos](/help/sites-cloud/authoring/projects/managing.md)
 * [Uso de tareas](/help/sites-cloud/authoring/projects/tasks.md)
-* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
+* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## Consola Proyectos {#projects-console}
 
