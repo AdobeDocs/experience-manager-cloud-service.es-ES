@@ -2,7 +2,7 @@
 title: Configuración del servicio Dynamic Media Cloud
 description: Información sobre cómo configurar Dynamic Media en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
 
 ---
 
@@ -50,8 +50,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 Para configurar los servicios de nube de medios dinámicos:
 
 1. En AEM, toque el logotipo de AEM para acceder a la consola de navegación global.
-1. En el lado izquierdo de la consola, bajo el encabezado **[!UICONTROL Herramientas]** , toque Servicios de **[!UICONTROL nube > Configuración]** de Dynamic Media.
-1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, toque **[!UICONTROL global]** (no toque ni seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**) y, a continuación, toque **[!UICONTROL Crear]**.
+1. En el lado izquierdo de la consola, bajo el encabezado **[!UICONTROL Herramientas]**, pulse **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
+1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]** (no pulse ni seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**) y, a continuación, pulse **[!UICONTROL Crear]**.
 1. En la página Crear configuración de Dynamic Media, escriba un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña y, a continuación, seleccione su región. Adobe se lo proporciona en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de soporte técnico si no recibió esto.
 1. Click **[!UICONTROL Connect to Dynamic Media]**.
 
@@ -59,7 +59,7 @@ Para configurar los servicios de nube de medios dinámicos:
    >
    >Después de recibir el correo electrónico de aprovisionamiento con las credenciales de Dynamic Media, [inicie sesión](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) en Dynamic Media Classic para cambiar la contraseña. La contraseña que se proporciona en el correo electrónico de aprovisionamiento es generada por el sistema y está pensada para ser una contraseña temporal solamente. Es importante que actualice la contraseña para que el servicio de nube de Dynamic Media esté configurado con las credenciales correctas.
 
-1. Cuando la conexión se realice correctamente, establezca lo siguiente:
+1. Cuando la conexión se realiza correctamente, puede establecer lo siguiente:
 
    * **[!UICONTROL Empresa]** : nombre de la cuenta de Dynamic Media. Es posible que tenga varias cuentas de Dynamic Media para distintas submarcas, divisiones o entornos de ensayo y producción.
 
@@ -75,7 +75,7 @@ A menos que tenga un acuerdo especial para utilizar el servidor de su propia emp
    * **[!UICONTROL Modo de sincronización de medios dinámicos]**
       * **[!UICONTROL Habilitado de forma predeterminada]** : la configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específica para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]** : la configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
-Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, abra la página Propiedades de la carpeta de recursos. Puntee en la ficha **[!UICONTROL Detalles]** y, a continuación, en la lista desplegable Modo **[!UICONTROL de sincronización de medios]** dinámicos, elija una de las tres opciones siguientes y, a continuación, guarde el botón **[!UICONTROL Guardar]**.
+Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, abra la página Propiedades de la carpeta de recursos. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL Heredado]** : no hay ningún valor de sincronización explícito en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.
          * **[!UICONTROL Habilitar para subcarpetas]** : Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.
          * **[!UICONTROL Deshabilitado para subcarpetas]** : excluya todo lo que hay en este subárbol de la sincronización con Dynamic Media.
@@ -168,7 +168,7 @@ Para abrir la página Configuración general de la aplicación, en la barra de n
 
 >[!NOTE]
 >
->De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visor al seleccionar **[!UICONTROL Visores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumento o disminución del número de ajustes preestablecidos de imagen que muestran](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento o disminución del número de ajustes preestablecidos de visor que se muestran](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumento o disminución del número de ajustes preestablecidos de imagen que se muestran](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento o disminución del número de ajustes preestablecidos de visualizador que se muestran](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
 #### Configuración de la administración de color {#configuring-color-management}
@@ -178,7 +178,7 @@ La administración dinámica de color de los medios le permite colorear los recu
 Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:
 
 1. [Inicie sesión en Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) con las credenciales proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Ajustes > Ajustes]** de aplicación.
-1. Expanda el área Ajustes **[!UICONTROL de]** publicación y seleccione Servidor **[!UICONTROL de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en Servicio **[!UICONTROL de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
+1. Expanda el área **[!UICONTROL Ajustes de publicación]** y seleccione **[!UICONTROL Servidor de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en **[!UICONTROL Servicio de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
 1. Desplácese a la propiedad que necesite cambiar, por ejemplo, una propiedad en el área Atributos **[!UICONTROL de administración de]** color.
 
    Puede establecer las siguientes propiedades de corrección de color:
@@ -186,11 +186,11 @@ Para configurar las propiedades de color predeterminadas para habilitar la corre
    * **[!UICONTROL Espacio]** de color predeterminado CMYK: nombre del perfil de color predeterminado CMYK
    * **[!UICONTROL Espacio]** de color predeterminado de escala de grises: nombre del perfil de color gris predeterminado
    * **[!UICONTROL Espacio]** de color predeterminado RGB: nombre del perfil de color RGB predeterminado
-   * **[!UICONTROL Calidad]** de representación de conversión de color: especifica la interpretación. Los valores aceptables son: **[!UICONTROL perceptual]**, **[!UICONTROL relativo colométrico]**, **[!UICONTROL saturación]**, **[!UICONTROL absoluto colométrico]**. Adobe recomienda **[!UICONTROL relativo]]**como opción predeterminada.
+   * **[!UICONTROL Calidad]** de representación de conversión de color: especifica la interpretación. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]]**as the default.
 
 1. Toque **[!UICONTROL Guardar]**.
 
-Por ejemplo, puede establecer el espacio **[!UICONTROL de color predeterminado]** RGB en *sRGB* y el espacio **[!UICONTROL de color predeterminado]** CMYK en *WebCoated*.
+Por ejemplo, puede establecer el **[!UICONTROL espacio de color predeterminado RGB]** en *sRGB* y el **[!UICONTROL espacio de color predeterminado CMYK]** en *WebCoated*.
 
 Al hacerlo, se haría lo siguiente:
 
@@ -236,11 +236,11 @@ Consulte [Carga de recursos](/help/assets/add-assets.md).
 
 #### Adición de tipos MIME personalizados para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
 
-Puede agregar tipos MIME personalizados para formatos no admitidos en Recursos AEM. Para asegurarse de que AEM no elimina ningún nodo nuevo que agregue a CRXDE Lite, debe asegurarse de mover antes el tipo MIME `image_` y de que su valor activado se establezca en **[!UICONTROL false]**.
+Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets. Para garantizar que AEM no elimina ningún nodo nuevo que agregue a CRXDE Lite, debe asegurarse de mover el tipo MIME antes de `image_` y de que su valor activado se establezca en **[!UICONTROL falso]**.
 
 **Adición de tipos MIME personalizados para formatos no admitidos**
 
-1. En AEM, toque **[!UICONTROL Herramientas > Operaciones > Consola]** web.
+1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -248,7 +248,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en Recursos A
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. En la página, desplácese hacia abajo hasta el nombre Servicio *MIME de tipo de recurso de* Adobe CQ Scene7 como se muestra en la siguiente captura de pantalla. A la derecha del nombre, toque la opción **[!UICONTROL Editar los valores]** de configuración (icono de lápiz).
+1. En la página, desplácese hacia abajo hasta el nombre *Servicio MIME de tipo de recurso de Adobe CQ Scene7* como se muestra en la siguiente captura de pantalla. A la derecha del nombre, pulse la opción **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
@@ -267,7 +267,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en Recursos A
    En este punto, puede cerrar la ficha del explorador que tiene la página de configuración de la consola web de Adobe Experience Manager abierta.
 
 1. Vuelva a la ficha del navegador que tiene la consola AEM abierta.
-1. En AEM, toque **[!UICONTROL Herramientas > General > CRXDE Lite]**.
+1. From AEM, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -279,7 +279,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en Recursos A
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. Con el tipo de MIME `image_vnd.dwg` aún seleccionado, en la ficha **[!UICONTROL Propiedades]** , en la fila **[!UICONTROL habilitada]** , debajo del encabezado de la columna **[!UICONTROL Valor]** , haga doble clic en el valor para abrir la lista desplegable **[!UICONTROL Valor]** .
+1. Con el tipo de MIME `image_vnd.dwg` aún seleccionado, en la pestaña **[!UICONTROL Propiedades]**, en la fila **[!UICONTROL habilitada]**, dentro del encabezado de la columna **[!UICONTROL Valor]**, haga doble clic para abrir la lista desplegable **[!UICONTROL Valor]**.
 1. Escriba `false` el campo (o seleccione **[!UICONTROL false]** en la lista desplegable).
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -294,7 +294,7 @@ En primer lugar, defina la convención de nombre para la forma en que los recurs
 
 Al cargar archivos, Dynamic Media crea automáticamente un conjunto con todos los archivos que coinciden con la convención de nombre definida en los ajustes preestablecidos activos.
 
-**Configuración de la nomenclatura predeterminada**
+**Configuración de la asignación de nombres predeterminada**
 
 Cree una convención de nombre predeterminada que se utilice en cualquier fórmula de ajuste preestablecido de conjunto de lotes. La convención de nombre predeterminada seleccionada en la definición del ajuste preestablecido de conjunto de lotes puede ser todo lo que su empresa necesita para generar conjuntos por lotes. Se crea un ajuste preestablecido de conjunto de lotes para utilizar la convención de nombre predeterminada que defina. Puede crear tantos ajustes preestablecidos de conjunto de lotes como desee con convenciones de nombre personalizadas alternativas necesarias para un conjunto concreto de contenido en casos en los que exista una excepción a la nominación predeterminada definida por la empresa.
 
@@ -353,9 +353,9 @@ Puede utilizar el método de campo de formulario para definir un ajuste preestab
 1. En el menú desplegable Tipo de conjunto de lotes, seleccione un tipo de ajuste preestablecido.
 1. Realice una de las acciones siguientes:
 
-   * Si está utilizando una convención de nombres predeterminada que ha configurado anteriormente en Ajustes de **[!UICONTROL aplicación > Valores preestablecidos de conjuntos de lotes > Nombre]** predeterminado, expanda Convenciones **[!UICONTROL de nombres de]** recursos y, a continuación, en la lista desplegable Nombres de archivos, toque **[!UICONTROL Predeterminado]**.
+   * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Default]**.
 
-   * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, expanda Convenciones **[!UICONTROL de nombres de]** recursos y, a continuación, en la lista desplegable Nombres de archivos, haga clic en **[!UICONTROL Personalizado]**.
+   * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, click **[!UICONTROL Custom]**.
 
 1. Para el orden de secuencia, defina el orden en que se muestran las imágenes después de que el conjunto se agrupe en Dynamic Media.
 
@@ -390,9 +390,9 @@ Con esta información, la fórmula de tipo de conjunto de lotes podría crearse 
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-La agrupación de la parte del nombre de recurso compartido del conjunto de giros se agrega al campo **Coincidencia** (como resaltado). La parte variable del nombre del recurso que contiene la fila y la columna se agrega a los campos **Fila** y **Columna** , respectivamente.
+La agrupación de la parte del nombre de recurso compartido del conjunto de giros se agrega al campo **Coincidencia** (como resaltado). La parte variable del nombre del recurso que contiene la fila y la columna se agrega a los campos **Fila** y **Columna**, respectivamente.
 
-Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmula de conjunto de giros 2D que aparece en Ajustes preestablecidos **de conjunto de** lotes en el cuadro de diálogo Opciones **de trabajo de** carga.
+Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmula de conjunto de giros 2D que aparece en **Ajustes preestablecidos de conjunto de lotes** en el cuadro de diálogo **Opciones de carga de trabajo**.
 
 **Creación de un ajuste preestablecido de conjunto de lotes para la generación automática de un conjunto de giros 2D**
 
@@ -406,10 +406,10 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
 1. En el panel Lista de ajustes preestablecidos, haga clic en **[!UICONTROL Agregar]** para activar los campos de definición en el panel Detalles del lado derecho de la pantalla.
 1. En el panel Detalles, en el campo Nombre de ajuste preestablecido, escriba un nombre para el ajuste preestablecido.
-1. En el menú desplegable Tipo de conjunto de lotes, seleccione Conjunto **[!UICONTROL de recursos]**.
+1. En el menú desplegable Tipo de conjunto de lotes, seleccione **[!UICONTROL Conjunto de recursos]**.
 1. En la lista desplegable Subtipo, seleccione Conjunto de giros de **[!UICONTROL varios ejes]**.
 1. Expanda Convenciones **[!UICONTROL de nombres de]** recursos y, a continuación, en la lista desplegable Nombres de archivos, haga clic en **[!UICONTROL Personalizado]**.
-1. Utilice los atributos **[!UICONTROL Coincidencia]** y, opcionalmente, Nombre **** base para definir una expresión regular para la asignación de nombres a los recursos de imagen que conforman la agrupación.
+1. Utilice los atributos **[!UICONTROL Coincidencia]** y, opcionalmente, **[!UICONTROL Nombre base]** para establecer una expresión regular para la asignación de nombres a los recursos de imagen que conforman la agrupación.
 
    Por ejemplo, la expresión regular de coincidencia literal puede tener el siguiente aspecto:
 
@@ -474,7 +474,7 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 1. En el campo **[!UICONTROL Número máximo de trabajos]** paralelos, cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número mayor que 1 asignará el número de subprocesos de trabajo).
+   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número bueno que no sea 1 asignará el número de subprocesos de trabajo).
 
    Adobe recomienda configurar 32 trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media Classic (Scene7).
 
@@ -496,7 +496,7 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 
 1. En el campo **[!UICONTROL Número máximo de trabajos]** paralelos, cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número mayor que 1 asignará el número de subprocesos de trabajo).
+   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número bueno que no sea 1 asignará el número de subprocesos de trabajo).
 
    En la mayoría de los casos de uso, la configuración predeterminada de 0,5 es suficiente.
 
