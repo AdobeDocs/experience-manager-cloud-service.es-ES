@@ -48,7 +48,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Uso de proyectos](authoring/projects/overview.md)
       + [Administración de proyectos](authoring/projects/managing.md)
       + [Uso de tareas](authoring/projects/tasks.md)
-      + [Uso de flujos de trabajo de proyecto](authoring/projects/workflows.md).
+      + [Uso de flujos de trabajo de proyecto](authoring/projects/workflows.md)
    + Lanzamientos {#launches}
       + [Uso de lanzamientos](authoring/launches/overview.md)
       + [Creación de lanzamientos](authoring/launches/creating.md)
