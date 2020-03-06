@@ -1,8 +1,8 @@
 ---
 sub-product: Release Notes for AEM as a Cloud Service
 user-guide-title: Release Notes for AEM as a Cloud Service
-translation-type: ht
-source-git-commit: a3c8d4eed20c21eddf1a4a46f8ad342427af804c
+translation-type: tm+mt
+source-git-commit: bcbb50f467a0e3b3047e2bb872a8fe39a9f02a1a
 
 ---
 
@@ -11,6 +11,7 @@ source-git-commit: a3c8d4eed20c21eddf1a4a46f8ad342427af804c
 
 + [Información de la versión](/help/release-notes/home.md)
 + Notas de la versión {#release-notes}
+   + [Notas de la versión actuales (2020.3.0)](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + [Notas de la versión 2020.2.0](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
 + [¿Cuáles son las novedades?](what-is-new.md)
 + [Cambios importantes en AEM Cloud Service](aem-cloud-changes.md)
