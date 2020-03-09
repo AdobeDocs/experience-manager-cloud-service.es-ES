@@ -1,7 +1,7 @@
 ---
 title: Adición de anotaciones de página
 description: Muchos componentes directamente relacionados con contenido le permiten añadir una anotación
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 La adición de contenido a las páginas de un sitio web suele someterse a análisis antes de publicarse. Para ayudarle, muchos componentes directamente relacionados con el contenido (en vez de, por ejemplo, el diseño) permiten añadir anotaciones.
 
-Una anotación coloca un boceto de color o una nota adhesiva en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
+Una anotación coloca un boceto o una nota adhesiva de colores en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ Se utiliza un modo [especial](/help/sites-cloud/authoring/fundamentals/environme
 
 >[!CAUTION]
 >
->Al eliminar un recurso (por ejemplo, un componente), se eliminan todas las anotaciones y bocetos adjuntos a ese recurso, independientemente de su posición en la página en general.
+>Al eliminar un recurso (p. ej. un componente), se eliminan todas las anotaciones y bocetos relacionados con ese recurso (independientemente de su posición en la página en general).
 
 >[!NOTE]
 >
->Según sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando se agregan, actualicen o eliminen anotaciones.
+>En función de sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando estas se añadan, actualicen o eliminen.
 
 ### Anotación de un componente {#annotating-a-component}
 
@@ -58,9 +58,9 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
    * Especificar el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
-      ![Botón Esbozo de anotación](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+      ![Botón Boceto de anotación](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. La línea del boceto refleja el color de la anotación y puede ser una flecha, un círculo o un óvalo.
+      El cursor cambia a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
 
    * Elegir o cambiar el color:
 
@@ -90,21 +90,21 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
 >[!NOTE]
 >
->Las anotaciones no se pueden agregar a una página que haya sido bloqueada por otro usuario.
+>Las anotaciones no se pueden agregar a una página que otro usuario haya bloqueado.
 
 >[!NOTE]
 >
 >La definición de un tipo de componente individual determina si se puede añadir una anotación o no en instancias de dicho componente.
 
-## Indicador de anotación {#annotation-indicator}
+## Indicador de anotaciones {#annotation-indicator}
 
 Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
 
-![Indicador de anotación](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+![Indicador de anotaciones](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
 ## Anotación de otros recursos {#annotating-other-resources}
 
-Además de los componentes, puede anotar una gran variedad de recursos:
+Además de en los componentes, puede realizar anotaciones en distintos recursos:
 
 * Anotación de recursos [Anotación de recursos](/help/assets/manage-digital-assets.md#annotating)
 * Anotación de recursos de vídeo [Anotación de recursos de vídeo](/help/assets/manage-video-assets.md#annotate-video-assets)
