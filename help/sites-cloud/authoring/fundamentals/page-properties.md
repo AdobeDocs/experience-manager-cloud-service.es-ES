@@ -1,25 +1,25 @@
 ---
 title: Edición de las propiedades de página
 description: Permite definir las propiedades de una página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Edición de las propiedades de página {#editing-page-properties}
+# Edición de las propiedades de página   {#editing-page-properties}
 
 Puede definir las propiedades para una página. Estas pueden variar en función de la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 
 ## Propiedades de página {#page-properties}
 
-Las propiedades se distribuyen entre varias fichas.
+Las propiedades se distribuyen entre varias pestañas.
 
 ### Básico {#basic}
 
 * **Título**
 
-   * El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la ficha **Sitios web** y las vistas de lista o tarjeta **Sitios**.
+   * El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
    * Es un campo obligatorio.
 
 * **Etiquetas**
@@ -61,12 +61,12 @@ Las propiedades se distribuyen entre varias fichas.
 * **Tiempo de inactividad**
 
    * La hora a la que se desactivará la página publicada.
-   * Deje vacíos estos campos para realizar una acción inmediata.
+   * Deje estos campos vacíos para una acción inmediata.
 
 * **URL de vanidad**
 
    * Permite introducir una URL de vanidad para esta página, que le permitirá disponer de una URL más corta y/o descriptiva.
-   * Por ejemplo, si la URL de vanidad se establece en `welcome` la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` será la URL de vanidad de `http://example.com/content/v1.0/startpage`
+   * Por ejemplo, si la URL de vanidad se establece como `welcome` en la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` es la URL de vanidad de `http://example.com/content/v1.0/startpage`.
    >[!CAUTION]
    >
    >URL de vanidad:
@@ -80,7 +80,7 @@ Las propiedades se distribuyen entre varias fichas.
 
    * Indica si desea que la página use la URL de vanidad.
 
-### Avanzado {#advanced}
+### Avanzado   {#advanced}
 
 * **Idioma**
 
@@ -99,11 +99,11 @@ Las propiedades se distribuyen entre varias fichas.
    * Especifique un alias para usar con esta página.
    >[!NOTE]
    >
-   >Alias establece la `sling:alias` propiedad para definir un nombre de alias para el recurso (esto solo afecta al recurso, no a la ruta).
+   >Alias establece la propiedad `sling:alias` para definir un nombre de alias para el recurso (esto solo afecta al recurso, no a la ruta).
    >
-   >Por ejemplo: si define un alias de `latin-lang` para el nodo `/content/we-retail/spanish` nodo, se puede acceder a esta página mediante `/content/we-retail/latin-language`
+   >Por ejemplo: si define un alias de `latin-lang` para el nodo `/content/we-retail/spanish`, se puede acceder a esta página mediante `/content/we-retail/latin-language`.
    >
-   >Para obtener más información, consulte Nombres de páginas localizados en Optimizaciones para la administración de direcciones URL y SEO.
+   >Para obtener más información, consulte Nombres de páginas localizados en Procedimientos recomendados para la administración de direcciones URL y SEO.
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -125,7 +125,7 @@ Las propiedades se distribuyen entre varias fichas.
    * Habilite (o deshabilite) el uso de la autenticación para acceder a la página.
    >[!NOTE]
    >
-   >Los grupos de usuarios cerrados para la página se definen en la ficha **[Permisos](#permissions)**.
+   >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
 
 * **Página de inicio de sesión**
 
@@ -135,7 +135,7 @@ Las propiedades se distribuyen entre varias fichas.
 
    * Especificar una configuración de exportación.
 
-### Miniatura {#thumbnail}
+### Miniatura   {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -159,18 +159,18 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir al usuario que comparta en Facebook**
    * **Permitir al usuario que comparta en Pinterest**
    * **Variación de XF preferida**
-      * Definición de la variación de fragmento de experiencia utilizada para generar metadatos para la página
+      * Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página.
 
-### Servicios de nube {#cloud-services}
+### Cloud Services{#cloud-services}
 
-* **Servicios de nube**
+* **Cloud Services**
 
-   * Defina propiedades para servicios de nube. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * Defina propiedades para Cloud Services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
 ### Personalización {#personalization}
 
@@ -182,7 +182,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
    * Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
-### Permisos {#permissions}
+### Permisos   {#permissions}
 
 * **Permisos**
 
@@ -197,14 +197,14 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    * Defina propiedades para una página de modelo en un entorno de administración de varios sitios. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las cuales se propagarán las modificaciones a Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy   {#live-copy}
 
 * **Live Copy**
 
    * Defina propiedades para una página Live Copy en un entorno de administración de varios sitios. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio {#site-structure}
+### Estructura del sitio   {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
@@ -212,21 +212,21 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * Desde la consola **Sitios:**
    * [Creando una página nueva](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
-   * Clicking or tapping **Properties**
+   * Pulsando o haciendo clic en **Propiedades**
       * Para una sola página
       * Para varias páginas (solo se pueden editar en masa un subconjunto de las propiedades)
 * Desde el editor de páginas:
-   * Using **Page Information** (then **Open Properties**)
+   * Utilizando **Información de página** (a continuación, **Abrir propiedades**)
 
 ### Desde la consola Sitios: página individual {#from-the-sites-console-single-page}
 
 Tocando o haciendo clic en **Propiedades** para definir las propiedades de la página:
 
-1. Mediante la consola **Sitios**, desplácese a la ubicación de la página para la que desee ver y editar las propiedades.
-1. Select the **Properties** option for the required page using either:
+1. Mediante la consola **Sitios**, desplácese hasta la ubicación de la página para la que desee ver y editar las propiedades.
+1. Seleccione la opción **Propiedades** de la página requerida mediante:
    * [Acciones rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [Modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
-   * Las propiedades de página se mostrarán mediante las fichas adecuadas.
+   * Las propiedades de página se mostrarán mediante las pestañas adecuadas.
 1. Visualice o edite las propiedades según sea oportuno. 
 1. A continuación, utilice **Guardar** para guardar las actualizaciones, seguido de **Cerrar** para volver a la consola.
 
@@ -236,7 +236,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
 1. Abra la página para la que desee editar las propiedades.
 1. Seleccione el icono **Información de página** para abrir el menú de selección:
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. También están disponibles los botones siguientes en la parte derecha de la barra de herramientas:
+1. Seleccione **Abrir propiedades** para abrir un cuadro de diálogo que le permite editar las propiedades, ordenadas por la pestaña adecuada. También están disponibles los botones siguientes en la parte derecha de la barra de herramientas:
    * **Cancelar**
    * **Guardar y cerrar**
 1. Utilice el botón **Guardar y cerrar** para guardar los cambios. 
@@ -261,9 +261,9 @@ Puede seleccionar varias páginas para editarlas por lotes utilizando distintos 
 * Mientras se desplaza por la consola **Sitios**
 * Después de utilizar la opción **Buscar** para localizar un conjunto de páginas
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Después de seleccionar las páginas y hacer clic o pulsar en la opción **Propiedades**, se muestran las propiedades por lotes:
 
-![Propiedades de la página de edición masiva](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
+![Propiedades de la página de edición masivas](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
 Solo se pueden editar por lotes las páginas que:
 
@@ -278,7 +278,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
    * Una lista de las páginas afectadas
       * Si lo desea, puede seleccionarlas o deseleccionarlas.
       * Pestañas
-         * Las propiedades se ordenan en fichas, al igual que cuando se visualizan las propiedades de una página.
+         * Las propiedades se ordenan en pestañas, al igual que cuando se visualizan las propiedades de una página.
    * Un subconjunto de propiedades
       * Se pueden ver las propiedades que están disponibles en todas las páginas seleccionadas (deben haberse marcado específicamente como disponibles para la edición por lotes).
       * Si reduce la selección de páginas a una sola página, se verán todas las propiedades.
@@ -292,7 +292,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
    * Puede actualizar los valores en los campos disponibles.
       * Los nuevos valores se aplicarán a todas las páginas seleccionadas al activar **Listo**.
       * Si el campo admite varios valores (por ejemplo, Etiquetas), puede agregar un valor nuevo o eliminar un valor común.
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Se debe tener cuidado al editar estos campos para evitar la pérdida de datos.
+   * Los campos que son comunes en las páginas, pero que tienen diferentes valores, se señalizarán con un valor especial; por ejemplo, el texto `<Mixed Entries>`. Se debe tener cuidado al editar estos campos para evitar la pérdida de datos.
 
 >[!NOTE]
 >
