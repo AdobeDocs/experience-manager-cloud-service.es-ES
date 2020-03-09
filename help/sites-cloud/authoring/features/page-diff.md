@@ -1,13 +1,13 @@
 ---
 title: Diferencias de página
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Diferencias de página {#page-diff}
+# Diferencias de página   {#page-diff}
 
 ## Introducción {#introduction}
 
@@ -17,7 +17,7 @@ La función Diferencias de página permite realizar una cómoda comparación en 
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>El usuario debe tener el permiso para **Modificar/Crear/Eliminar** en el nodo `/content/versionhistory` para poder utilizar la función.
 >
 >Consulte Desarrollo y diferencia de página para obtener más información técnica sobre esta función. <!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
 
@@ -25,14 +25,14 @@ La función Diferencias de página permite realizar una cómoda comparación en 
 
 La comparación de diferencias en paralelo permite comparar lo siguiente:
 
-* [Versiones](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) : versión anterior de una página con su estado actual
-* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
-* [Lanzamientos](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) : Iniciar con su origen
-* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [Versiones](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page): versión anterior de una página con el estado actual.
+* Live Copies: Live Copy con su modelo.<!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [Lanzamientos](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page): lanzamiento con su origen.
+* Copias de idioma: una página antes y después de la traducción.<!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
 Consulte los temas correspondientes sobre cómo iniciar la comparación de diferencias en esos contextos.
 
-### Presentación de diferencias {#presentation-of-differences}
+### Presentación de diferencias   {#presentation-of-differences}
 
 Independientemente del contenido que se va a comparar, la presentación de las diferencias sigue siendo la misma.
 
@@ -65,11 +65,11 @@ Tenga en cuenta que los colores de componente modificado y movido son los mismos
 >
 >Al comparar copias de idioma, el resaltado está desactivado, ya que en una traducción cambia todo y el resaltado no proporcionará ninguna ventaja.
 
-### Pantalla completa y salida {#fullscreen-and-exiting}
+### Pantalla completa y salida   {#fullscreen-and-exiting}
 
 Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
 
-![Botón de pantalla completa](/help/sites-cloud/authoring/assets/versions-full-screen.png)
+![Botón Pantalla completa](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
 El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la parte superior para que pueda cambiar entre las dos páginas.
 
@@ -77,7 +77,7 @@ El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la 
 
 >[!NOTE]
 >
->Si el ancho del explorador no puede incluir ambos nombres de página en la vista de pantalla completa, solo se mostrará el nombre de la página que se muestra y el otro estará disponible tras la elipsis.
+>Si el ancho del explorador no puede incluir ambos nombres de página en la vista de pantalla completa, solo se muestra el nombre de la página que aparece y el otro está disponible tras acceder al menú en los puntos suspensivos.
 
 También puede cerrar la vista de pantalla completa haciendo clic en el icono para salir del modo de pantalla completa.
 
@@ -85,13 +85,13 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
 
-## Restricciones {#limitations}
+## Restricciones   {#limitations}
 
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
 * Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
 * Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
-* Si se realiza algún cambio en una imagen, como modificar los atributos alt, title o src, se resaltará en azul como cambiado. Sin embargo, en algunos casos la imagen tiene una representación Base64 del atributo src e incluso si ambas imágenes tienen el mismo aspecto, la diferencia las marcará como diferentes debido a los diferentes atributos src.
+* Si se realizan cambios en una imagen, como la modificación de los atributos alt, title o src, estos se resaltan en azul como modificados. Sin embargo, en algunos casos, la imagen tiene una representación Base64 del atributo src y ambas imágenes tienen el mismo aspecto. La comparación diferencia una de otra debido a los atributos src dispares.
 * La comparación de diferencias no puede detectar la rotación de la imagen.
 * Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
    * Si tiene problemas con una diferencia, compruebe la [línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ver si la página se ha movido.
