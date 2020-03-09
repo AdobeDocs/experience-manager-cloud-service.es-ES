@@ -1,7 +1,7 @@
 ---
 title: La consola Componentes
-description: La consola Componentes permite examinar todos los componentes definidos para la instancia
-translation-type: tm+mt
+description: La consola Componentes permite examinar todos los componentes definidos para una instancia.
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,15 +9,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # La consola Componentes {#components-console}
 
-La consola Componentes permite examinar todos los componentes definidos para la instancia y ver la información clave de cada componente.
+La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
 
-It can be accessed from **Tools ->** **General ->** **Components**. Como no hay una estructura de árbol para los componentes, solo está disponible la vista de lista.
+Se puede acceder a ella desde **Herramientas ->** **General ->** **Componentes**. Como no hay una estructura de árbol para componentes, solo está disponible la vista en lista.
 
-![Consola Componentes](/help/sites-cloud/authoring/assets/components-console.png)
+![La consola Componentes](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->La consola Componentes muestra todos los componentes del sistema. El [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) muestra los componentes disponibles para los autores y oculta cualquier grupo de componentes que comience con un punto ( `.`).
+>La consola Componentes muestra todos los componentes en el sistema. El [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) muestra los componentes disponibles para los autores y oculta cualquier grupo de componentes que comience con un punto ( `.`).
 
 ## Búsqueda {#search-field}
 
@@ -42,11 +42,11 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
       * Si hace clic en el supertipo de recurso, se le dirigirá a dicho componente.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
 
 * **Políticas**
 
-   ![Directivas de la consola de componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
+   ![Políticas de la consola Componentes](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Uso de Live**
 
@@ -60,4 +60,4 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
    Si el desarrollador ha proporcionado documentación del componente, esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**<!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![Documentación de componentes](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+   ![Documentación de los componentes](/help/sites-cloud/authoring/assets/components-console-documentation.png)
