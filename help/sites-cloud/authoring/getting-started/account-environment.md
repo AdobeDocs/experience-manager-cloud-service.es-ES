@@ -1,28 +1,28 @@
 ---
 title: Configuración del entorno de la cuenta
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Configuración del entorno de la cuenta {#configuring-your-account-environment}
+# Configuración del entorno de la cuenta   {#configuring-your-account-environment}
 
 AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
 Mediante la opción [Usuario](#user-settings) del [encabezado](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header) y el cuadro de diálogo [Mis preferencias](#my-preferences) asociado, puede modificar las opciones de usuario.
 
-Begin by accessing the [User](#user-settings) option in the header.
+Para comenzar, acceda a la opción [Usuario](#user-settings) en el encabezado.
 
 ## Configuración de usuario {#user-settings}
 
 El cuadro de diálogo **Configuración de usuario** le permite acceder a lo siguiente:
 
 * Suplantar como
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+   * Con la función Suplantar como, un usuario puede trabajar en nombre de otro usuario. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * Perfil
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * Ofrece un práctico vínculo a la configuración de usuario<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->.
 * [Mis preferencias](#my-preferences)
    * Especifique las distintas preferencias exclusivas al usuario 
 
@@ -80,7 +80,7 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
    AEM admite varios métodos abreviados del teclado para mejorar la eficiencia de la creación de contenido.
 
-   * [Métodos abreviados del teclado al editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+   * [Métodos abreviados del teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
    Esta opción habilita los métodos abreviados del teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
 
