@@ -1,17 +1,17 @@
 ---
-title: Diseño interactivo
+title: Diseño adaptable
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Diseño interactivo {#responsive-layout}
+# Diseño adaptable  {#responsive-layout}
 
 AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente **Contenedor de diseño**.
 
-Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. The component is used in conjunction with the [**Layout **mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), which allows you to create and edit your responsive layout dependent on device.
+Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. Este componente se utiliza en combinación con el modo [**Diseño **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), que le permite crear y editar el diseño interactivo en función del dispositivo.
 
 El contenedor de diseños:
 
@@ -24,13 +24,13 @@ El usuario puede utilizar el emulador para ver cómo se representará el conteni
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
-* [**Contenedor **](#adding-a-layout-container-and-its-content-edit-mode)de diseño, componente
+* Componente [**Contenedor de diseño **](#adding-a-layout-container-and-its-content-edit-mode)
 
-   This component is available in the [component browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. También se puede establecer como sistema de párrafos predeterminado en la página.
+   Este componente está disponible en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
 
 * [**Modo de diseño **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
+   Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
 * [**Emulador **](#selecting-a-device-to-emulate)Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
@@ -42,15 +42,15 @@ Estos mecanismos de cuadrícula interactiva le permiten:
 * Ocultar componentes de diseños de dispositivo específicos.
 * Realizar el control de columnas.
 
-Según el proyecto, el contenedor de diseños se puede usar como sistema de párrafos predeterminado para las páginas o como componente disponible para agregarse a la página a través del navegador de componentes (o ambos).
+En función del proyecto, el contenedor de diseño se puede utilizar como sistema de párrafos predeterminado para las páginas o como componente disponible para añadirse a su página mediante el explorador de componentes (o ambos).
 
 >[!TIP]
 >
->Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example when creating static HTML mock-ups for a future AEM site.
+>Adobe proporciona [documentación de GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) del diseño interactivo como referencia que se puede entregar a los desarrolladores de interfaces de usuario, lo cual les permite usar la cuadrícula de AEM fuera de AEM como, por ejemplo, para crear maquetas HTML estáticas para un sitio de AEM futuro.
 
 >[!NOTE]
 >
->El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. See Configuring Responsive Layout for further information. <!-- Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.-->
+>El uso de los mecanismos anteriores se habilita en la configuración de la plantilla. Consulte Configuración de un diseño interactivo para obtener más información. <!-- Use of the above mechanisms is enabled by configuration on the template. See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.-->
 
 ## Definiciones de diseños, emulación de dispositivos y puntos de interrupción {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -58,7 +58,7 @@ Al crear el contenido de su sitio web desea asegurarse de que el contenido se mu
 
 AEM le permite definir diseños en función de la anchura del dispositivo:
 
-* El emulador le permite emular estos diseños en una serie de dispositivos. In addition to the device type, the orientation, selected by the **Rotate device** option, can impact the breakpoint selected as the width changes.
+* El emulador le permite emular estos diseños en una serie de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.
    * Definen efectivamente la anchura máxima (en píxeles) de cualquier dispositivo que utilice un diseño específico.
    * Normalmente, los puntos de interrupción son válidos para una selección de dispositivos, en función del ancho de sus pantallas.
@@ -89,13 +89,13 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
 1. Se abrirá la barra de herramientas del emulador.
 
-   ![Emulador, barra de herramientas](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
+   ![Barra de herramientas del emulador](/help/sites-cloud/authoring/assets/responsive-layout-emulator-toolbar.png)
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Girar dispositivo** : Permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
-   ![Botón Girar el entorno del dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
-   ![Botón Girar vertical del dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
+   * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
+   ![Botón Girar el dispositivo a horizontal](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
+   ![Botón Girar el dispositivo a vertical](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
 
    * **Seleccionar dispositivo**: le permite definir un dispositivo específico para emular de una lista (consulte el paso siguiente para obtener detalles)
    ![Botón Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
@@ -104,13 +104,13 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    * Utilizar el icono Seleccionar dispositivo y seleccionarlo de un selector desplegable.
    * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
-   ![Lista desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+   ![Menú desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
 1. Una vez que haya seleccionado un dispositivo específico, puede:
 
-   * See the active marker for the selected device, such as **iPad.**
-   * See the active marker for the appropriate [breakpoint](#layout-definitions-device-emulation-and-breakpoints) such as **Tablet.**
-   * The blue dotted line represents the *fold* for the selected device (here an **iPhone 6 Plus** in landscape).
+   * Ver el marcador activo del dispositivo seleccionado; por ejemplo, **iPad.**
+   * Ver el marcador activo del [punto de interrupción](#layout-definitions-device-emulation-and-breakpoints) adecuado; por ejemplo, **Tableta.**
+   * La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (en este caso, un **iPhone 6 Plus** en orientación vertical).
    ![El pliegue](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
    * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de efectuar el desplazamiento.
@@ -128,7 +128,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si no está disponible, el contenedor **de** diseño debe activarse explícitamente para un sistema de párrafos o una página. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
+>Si no está disponible, el **contenedor de diseño** debe activarse explícitamente para un sistema de párrafos o una página. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
 1. El **contenedor de diseños**[ está disponible como componente estándar en el navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Puede arrastrarlo desde aquí hasta la ubicación deseada de la página. Después verá el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor de diseño. Estos componentes albergarán el contenido real:
@@ -147,19 +147,19 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
    ![Agregar al contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
-   You need to select the **Parent** option.
+   Debe seleccionar la opción **Principal**.
 
-   ![Botón principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+   ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
 1. Si el componente de diseño se encuentra anidado, la selección de la opción **Principal** presenta una lista desplegable de opciones que le permite seleccionar el contenedor de diseños anidado o sus elementos principales.
 
    Cuando pase el ratón sobre los nombres de contenedor de la lista desplegable, los contornos se mostrarán en la página.
 
-   * El contenedor de diseño anidado más bajo se delineará en azul.
-   * Cada contenedor sucesivo estará en un tono más claro de azul.
+   * El contenedor de diseños anidado en la parte inferior se muestra en color azul.
+   * Cada contenedor sucesivo aparece en un tono más claro de azul.
    ![Contenedores anidados](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. De esta forma se resaltará toda la cuadrícula con su contenido. The action toolbar will be shown, from where you can select an action such as **Delete.**
+1. De esta forma se resaltará toda la cuadrícula con su contenido. Se muestra la barra de herramientas de acciones, desde donde puede seleccionar una acción, como, por ejemplo, **Eliminar.**
 
 ## Definición de diseños (modo de diseño) {#defining-layouts-layout-mode}
 
@@ -167,13 +167,13 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 >
 >Puede definir un diseño distinto para cada [punto de interrupción](#layout-definitions-device-emulation-and-breakpoints) (tal y como determinan el tipo y la orientación del dispositivo emulado).
 
-To configure the layout of a responsive grid implemented with the Layout Container you need to use the **Layout** mode.
+Para configurar el diseño de una cuadrícula interactiva implementada con el contenedor de diseño, debe usar el modo **Diseño**.
 
 El modo **Diseño** puede iniciarse de dos formas.
 
-* By using the [mode menu in the toolbar](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) and choosing **Layout** mode
-   * Select the **Layout** mode just as you would switch to **Edit** mode or **Targeting** mode.
-   * **El modo Diseño** permanece y no sale del modo **Presentación** hasta que se selecciona otro modo mediante el selector de modo.
+* Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) y seleccionando el modo **Diseño**.
+   * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
+   * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
 * Al [editar un componente individual.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
    * Mediante la opción **Diseño** del menú de acciones rápidas del componente, puede cambiar al modo **Diseño**.
    * El modo **Diseño** se mantiene durante la edición del componente, y se vuelve a acceder al modo **Editar** en cuanto el enfoque cambia a otro componente.
@@ -189,32 +189,32 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
    >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
 * Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:
-   * **Principal** : Permite seleccionar todo el componente de contenedor de diseño para realizar acciones en todo el conjunto.
-   * **Flotar a una nueva línea** : el componente se moverá a una nueva línea, según el espacio disponible en la cuadrícula.
-   * **Ocultar componente** : el componente se volverá invisible (se puede restaurar desde la barra de herramientas del contenedor de diseño).
+   * **Principal**: le permite seleccionar todos los componentes del contenedor de diseños para efectuar acciones en conjunto.
+   * **Flotar a una línea nueva**: se mueve el componente a una línea nueva, según el espacio disponible en la cuadrícula.
+   * **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
    ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* In **Layout** mode you can tap/click on the **Drag components here** to select the entire component. Esto hará que se muestre la barra de herramientas de este modo.
+* En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Esto hará que se muestre la barra de herramientas de este modo.
 
    La barra de herramientas mostrará distintas opciones en función del estado del componente del diseño y de los componentes que pertenecen a él. Por ejemplo:
 
-   * **Principal** : seleccione el componente principal.
+   * **Principal**: seleccione el componente principal.
 
-      ![Botón principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+      ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * **Mostrar componentes** ocultos: muestra todos o algunos componentes. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+   * **Mostrar componentes ocultos**: permite mostrar todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos existen en ese momento. El contador muestra cuántos componentes hay ocultos.
 
       ![Botón Mostrar componentes ocultos](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **Revertir diseño** de punto de interrupción: vuelva al diseño predeterminado. Esto significa que no se impondrá ningún diseño personalizado.
+   * **Revertir diseño del punto de interrupción**: permite recuperar el diseño predeterminado. Es decir, no se aplicará ningún diseño personalizado.
 
       ![Botón Revertir diseño de punto de interrupción](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
-   * **Flotar a una nueva línea** : Mueva el componente hacia arriba en una posición si el espaciado lo permite.
+   * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
 
-      ![Flotar a un botón de línea nuevo](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+      ![Botón Flotar a una línea nueva](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
-   * **Ocultar componente** : permite ocultar el componente actual.
+   * **Ocultar componente**: oculte el componente actual.
 
       ![Ocultar botón de componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
    >[!NOTE]
