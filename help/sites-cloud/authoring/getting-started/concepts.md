@@ -1,29 +1,29 @@
 ---
 title: Conceptos de creación
 description: Conceptos sobre la creación de contenido en AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Creación Conceptos {#authoring-concepts}
+# Creación   Conceptos {#authoring-concepts}
 
 Una instalación de AEM generalmente consta de al menos dos entornos:
 
 * Creación
 * Publicación
 
-Interactúan para permitirle que el contenido esté disponible en el sitio web para que los visitantes puedan acceder a él.
+Interactúan para permitirle ofrecer contenido en su sitio web para que los visitantes puedan acceder a él.
 
-El entorno de creación proporciona los mecanismos para crear, actualizar y revisar este contenido antes de publicarlo:
+El entorno de creación ofrece mecanismos para crear, actualizar y revisar el contenido antes de publicarlo:
 
-* Un autor crea y revisa el contenido. El contenido puede ser de muchos tipos diferentes, como páginas, recursos, publicaciones, etc.
-* Este contenido se publicará en algún momento en su sitio web.
+* Un creador se encarga de crear y revisar el contenido. El contenido puede ser de muchos tipos diferentes, como páginas, recursos, publicaciones, etc.
+* Este, en algún momento, se publica en su sitio web.
 
-![Diagrama del autor, editor y expedidores](/help/sites-cloud/authoring/assets/author-publish.png)
+![Diagrama del creador, el editor y los distribuidores](/help/sites-cloud/authoring/assets/author-publish.png)
 
-En el entorno de creación, la funcionalidad de AEM está disponible a través de la interfaz de usuario de creación de AEM. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
+En el entorno de creación, las funciones de AEM están disponibles mediante la IU de creación de AEM. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ En el entorno de creación, la funcionalidad de AEM está disponible a través d
 
 ## Entorno de creación {#author-environment}
 
-El autor trabaja en lo que se conoce como entorno **de** creación. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o UI) para crear el contenido. Requiere que el autor inicie sesión con una cuenta a la que se le hayan asignado los derechos de acceso correspondientes.
+El creador trabaja en lo que se conoce como **entorno de creación**. Esto proporciona una interfaz fácil de usar (interfaz gráfica de usuario (GUI o IU)) para crear el contenido. Requiere que el creador inicie sesión con una cuenta a la que se le hayan asignado los derechos de acceso correspondientes.
 
 >[!NOTE]
 >
@@ -39,16 +39,16 @@ El autor trabaja en lo que se conoce como entorno **de** creación. Esto proporc
 
 Según la configuración de su instancia y sus derechos personales de acceso, puede realizar muchas tareas en el contenido, como (entre otras):
 
-* Generación de contenido nuevo o edición de contenido existente en una página
-* Uso de plantillas predefinidas para crear nuevas páginas de contenido
-* Creación, edición y gestión de recursos y colecciones
+* Generar contenido nuevo o editar contenido existente en una página.
+* Utilizar plantillas predefinidas para crear páginas de contenido nuevo.
+* Crear, editar y gestionar recursos y colecciones.
 * Mover, copiar y eliminar páginas de contenido, recursos, etc.
-* Publicación (o cancelación de la publicación) de páginas, recursos, etc.
+* Publicar (o cancelar la publicación) de páginas, recursos, etc.
 
 Asimismo, hay tareas administrativas que le ayudan a administrar su contenido:
 
-* Flujos de trabajo que controlan cómo se administran los cambios, como la aplicación de una revisión antes de la publicación
-* Proyectos que coordinan tareas individuales
+* Flujos de trabajo que controlan la administración de cambios, como implementar una revisión antes de la publicación.
+* Proyectos que coordinan tareas individuales.
 
 >[!NOTE]
 >
@@ -56,10 +56,10 @@ Asimismo, hay tareas administrativas que le ayudan a administrar su contenido:
 
 ## Entorno de publicación {#publish-environment}
 
-When ready, your site&#39;s content is published to the **publish environment**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
+Cuando esté listo, el contenido del sitio de AEM se publica en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
 
 Para obtener más información sobre la publicación y cancelación de publicaciones de páginas, consulte el documento [Publicación de páginas.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
 ## Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](/help/implementing/dispatcher/overview.md)**implements load balancing and caching.
+A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](/help/implementing/dispatcher/overview.md)**implementa almacenamiento en caché y equilibrio de carga.
