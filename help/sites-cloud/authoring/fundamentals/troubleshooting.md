@@ -1,7 +1,7 @@
 ---
 title: Resolución de problemas de AEM durante la creación
 description: Algunos problemas que pueden producirse al utilizar AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -14,16 +14,16 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
-   * You have made changes to a page and published the page to the publish site, but the *old* version of the page is still being shown on the publish site.
+   * Ha realizado cambios en una página y publicado la página en el sitio de publicación, pero la versión *antigua* de la página todavía se muestra en el sitio de publicación.
 * **Motivo**:
    * Puede haber varios motivos. Normalmente es la caché (su navegador local o Dispatcher), aunque a veces puede haber un problema con la cola de replicación.
 * **Soluciones**:
    * Hay varias posibilidades:
    * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
-   * Add `?` to the end of the page URL. For example:
+   * Añada `?` al final de la URL de la página. Por ejemplo:
       * `http://<host>:<port>/sites.html/content?`
-      * Esta acción solicitará la página directamente desde AEM y omitirá el despachante. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
+      * Esta acción solicitará la página directamente desde AEM y omitirá a Dispatcher. Si recibe la página actualizada quiere decir que debe borrar la caché de Dispatcher.
    * Póngase en contacto con el administrador del sistema si hay problemas con las colas de replicación.
 
 ## Acciones aplicables a los componentes no visibles en la barra de herramientas {#component-actions-not-visible-on-toolbar}
