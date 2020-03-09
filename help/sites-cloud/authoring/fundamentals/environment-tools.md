@@ -1,7 +1,7 @@
 ---
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,11 +9,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # Herramientas y entorno de creación {#authoring-the-environment-and-tools}
 
-El entorno de creación de AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde las distintas consolas y editores de página.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
 
 ## Administración del sitio {#managing-your-site}
 
-The **Sites** console allows you to navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs, and, when selected, secondary rails (for example, timeline and references).
+La consola **Sitios** le permite desplazarse por su sitio web y administrarlo mediante la barra de encabezado, la barra de herramientas, los iconos de acción (aplicables al recurso seleccionado), las rutas de exploración y, si se seleccionan, los carriles secundarios (por ejemplo, referencias y cronología).
 
 Por ejemplo, la vista de columna:
 
@@ -33,26 +33,26 @@ Puede editar una página con el editor. Por ejemplo:
 >
 >Si lo desea, puede omitir la visita y repetirla cuando le convenga seleccionando una opción del menú **Información de página**.
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
-* The [**Page Information **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)selector which shows the introductory slides (as shown the first time you access the editor)
-* The [configuration](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) dialog for specific components (using the ? en la barra de herramientas del cuadro de diálogo), que muestra ayuda contextual
+* El selector [**Información de página **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)muestra las diapositivas introductorias (tal y como se muestran la primera vez que se accede al editor).
+* El cuadro de diálogo [Configuración](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) de componentes específicos (utilizando el icono ? en la barra de herramientas del cuadro de diálogo), que ofrece ayuda contextual.
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
 
-## Navegador de componentes {#components-browser}
+## Navegador de componentes   {#components-browser}
 
-Los componentes son los componentes básicos del contenido de AEM. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido con AEM.
+Los componentes son la base del contenido de AEM. Puede colocar varios componentes en una página y configurar sus opciones para crear la página de contenido con AEM.
 
 El navegador de componentes muestra todos los componentes que se pueden utilizar en la página actual. Se pueden arrastrar a la ubicación apropiada y editarse para añadir contenido.
 
-The components browser is a tab within the side panel (together with the [assets browser](#assets-browser) and [content tree](#content-tree)). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
+El navegador de componentes es una pestaña del panel lateral (junto con el [explorador de recursos](#assets-browser) y el [árbol de contenido](#content-tree)). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
-![Alternador del panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+![Alternar panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha (seleccione la ficha **Componentes** si es necesario). Cuando se abra, podrá navegar por todos los componentes disponibles para su página.
+Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha (seleccione la pestaña **Componentes** si es necesario). Cuando se abra, podrá navegar por todos los componentes disponibles para su página.
 
 El aspecto y el control dependerán del tipo de dispositivo que esté utilizando:
 
@@ -62,7 +62,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
    Para añadir un componente a la página mantenga pulsado el componente requerido y muévalo a la derecha; el navegador de componentes se cerrará para volver a mostrar la página, donde puede colocar el componente.
 
-   ![Navegador de componentes en móvil](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+   ![Navegador de componentes en dispositivos móviles](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Dispositivo de escritorio**
 
@@ -70,7 +70,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
    Para añadir un componente a la página, haga clic en el componente requerido y arrástrelo a la ubicación que desee.
 
-   ![Navegador de componentes en escritorio](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+   ![Navegador de componentes en dispositivos de escritorio](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
    Los componentes se representan mediante los siguientes elementos:
 
@@ -78,32 +78,32 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
    * Grupo de componentes (en gris)
    * Icono o abreviatura
       * Los iconos de componentes estándar son monocromo.
-      * Las abreviaturas son siempre los dos primeros caracteres del nombre del componente.
+      * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
    Desde la barra de herramientas superior del explorador de **componentes**, puede realizar las siguientes acciones:
 
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
-   Para obtener una descripción más detallada del componente, puede tocar o hacer clic en el icono de información situado junto al componente en el explorador de **componentes** (si está disponible). Por ejemplo, para el fragmento **de contenido**:
+   Para obtener una descripción más detallada del componente, puede tocar o hacer clic en el icono de información situado junto al componente en el explorador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
-   ![Información del navegador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
+   ![Información del explorador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
    Para obtener más información sobre los componentes disponibles, consulte la [Consola de componentes](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
->Se detectará un dispositivo móvil si la anchura es inferior a 1024 px. Esto puede ser también una ventana de escritorio pequeña.
+>Se detectará un dispositivo móvil si la anchura es inferior a 1024 píxeles. Esto puede ser también una ventana de escritorio pequeña.
 
 ## Navegador de recursos {#assets-browser}
 
 El navegador de recursos muestra todos los recursos que se pueden utilizar directamente en la página actual. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
 
-The assets browser is a tab within the side panel along with the [components browser](#components-browser) and [content tree](#content-tree). Para abrir o cerrar el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
+El explorador de recursos es una pestaña del panel lateral que está situada junto al [explorador de componentes](#components-browser) y al [árbol de contenido](#content-tree). Para abrir o cerrar el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
-![Alternador del panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+![Alternar panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione la ficha **Recursos** si es necesario.
+Cuando abra el panel lateral, se deslizará para abrirse de izquierda a derecha. Seleccione la pestaña **Recursos** si es necesario.
 
-![Botón Navegador de recursos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
+![Botón Explorador de recursos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
 Cuando el navegador de recursos esté abierto, podrá explorar todos los recursos disponibles para la página. Si es necesario, puede utilizarse el desplazamiento indefinido para ampliar la lista.
 
@@ -114,7 +114,7 @@ Para añadir un recurso a la página, selecciónelo y arrástrelo a la ubicació
 * Un componente existente del tipo adecuado.
    * Por ejemplo, puede arrastrar un recurso de tipo imagen hacia un componente de imagen.
 * Un [marcador de posición](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) en el sistema de párrafos para crear un componente nuevo del tipo correspondiente.
-   * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente Imagen.
+   * Por ejemplo, puede arrastrar un recurso de tipo imagen al sistema de párrafos para crear un componente de imagen.
 
 >[!NOTE]
 >
@@ -124,8 +124,8 @@ Desde la barra de herramientas superior del navegador de recursos puede filtrar 
 
 * Nombre
 * Ruta
-* Tipo de recurso como imágenes, vídeos, documentos, párrafos, fragmentos de contenido y fragmentos de experiencia
-* Características del recurso, como orientación y estilo
+* Tipos de recursos como imágenes, vídeos, documentos, párrafos, fragmentos de contenido y fragmentos de experiencias.
+* Características del recurso como orientación y estilo.
    * Disponible solo para determinados tipos de recursos
 
 El aspecto y el control dependerán del tipo de dispositivo que esté utilizando:
@@ -136,7 +136,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
    Para añadir un recurso a la página mantenga pulsado el recurso requerido y muévalo a la derecha; el navegador de recursos se cerrará para volver a mostrar la página, donde puede agregar el recurso al componente deseado.
 
-   ![Navegador de recursos en móvil](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+   ![Explorador de recursos en dispositivos móviles](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Dispositivo de escritorio**
 
@@ -144,7 +144,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
    Para añadir un recurso a la página, haga clic en el recurso en cuestión y arrástrelo al componente o a la ubicación correspondiente.
 
-   ![Navegador de recursos en escritorio](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+   ![Explorador de recursos en dispositivos de escritorio](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -152,21 +152,21 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
 Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el editor de recursos directamente desde el explorador de recursos haciendo clic en el icono de edición que se muestra al lado del nombre del recurso. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
 
-![Botón de edición de recursos](/help/sites-cloud/authoring/assets/asset-edit-button.png)
+![Botón Editar recursos](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
 ## Árbol de contenido {#content-tree}
 
 El **árbol de contenido** proporciona información general de todos los componentes de la página formando una jerarquía para que pueda ver a simple vista cómo está compuesta la página.
 
-El árbol de contenido es una ficha del panel lateral (junto con el navegador de recursos y componentes). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
+El árbol de contenido es una pestaña del panel lateral (junto con el explorador de recursos y componentes). Para abrir (o cerrar) el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
 ![Botón Árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Select the **Content Tree** tab if necessary. Cuando la abra, podrá ver una representación en forma de árbol de la página o la plantilla, para que resulte más fácil de entender cómo está estructurado jerárquicamente su contenido. Además, en una página compleja, hace que sea más fácil saltar de un componente de página a otro.
+Cuando abra el panel lateral, se deslizará para abrirse (de izquierda a derecha). Seleccione la pestaña **Árbol de contenido** si es necesario. Cuando la abra, podrá ver una representación en forma de árbol de la página o la plantilla, para que resulte más fácil de entender cómo está estructurado jerárquicamente su contenido. Además, en una página compleja, hace que sea más fácil saltar de un componente de página a otro.
 
 ![Árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
-Una página puede fácilmente estar compuesta por muchos del mismo tipo de componentes, por lo que el árbol de contenido (componente) muestra texto descriptivo (en gris) después del nombre del tipo de componente (en negro). El texto descriptivo viene de las propiedades comunes del componente, como el título o el texto.
+Una página puede estar compuesta fácilmente por muchos componentes del mismo tipo, por lo que el árbol de contenido (componentes) muestra un texto descriptivo (en gris) después del nombre del tipo de componente (en negro). El texto descriptivo viene de las propiedades comunes del componente, como el título o el texto.
 
 Los tipos de componente se mostrarán en el idioma del usuario, mientras que el texto con la descripción del componente se muestra en el idioma de la página.
 
@@ -180,17 +180,17 @@ Si hace clic en el componente, se resalta en el editor de páginas. Las acciones
 
    ![Árbol de contenido resaltado](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   Los componentes de una página básica tendrán las opciones habituales.
+   Los componentes de una página básica tienen las opciones habituales.
 
    Si el componente en el que se hace clic en el árbol es editable, aparecerá un icono de una llave inglesa a la derecha del nombre. Al hacer clic en este icono, se iniciará directamente el cuadro de diálogo Editar del componente.
 
-   ![Botón de edición del árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+   ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Una página que forma parte de una Live Copy, donde los componentes se heredan de otra página, tendrá una selección reducida de opciones, incluidas las opciones de herencia. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* Una página que forma parte de una Live Copy, donde los componentes se heredan de otra página, cuenta con una selección reducida de opciones, incluidas las opciones de herencia. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
 
 >[!NOTE]
 >
->El árbol de contenido no está disponible si está editando una página en un dispositivo móvil (si la anchura del explorador es inferior a 1024 píxeles).
+>Si edita una página en un dispositivo móvil, el árbol de contenido no está disponible (si el valor de la anchura del explorador es inferior a 1024 píxeles).
 
 ## Fragmentos: navegador de contenido asociado {#fragments-associated-content-browser}
 
@@ -207,7 +207,7 @@ Si la página contiene fragmentos de contenido, también podrá acceder al [nave
 * Vínculos entrantes
 * Utilización del componente de referencia: contenido prestado
 
-Open the required console, then navigate to the required resource and open **References** using:
+Abra la consola en cuestión, desplácese hasta el recurso y abra **Referencias** con el procedimiento siguiente:
 
 ![Opción Referencias](/help/sites-cloud/authoring/assets/references.png)
 
@@ -219,28 +219,28 @@ Seleccione el tipo de referencia apropiado para obtener más información. En de
 
 * La opción **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como un acceso directo a la opción **Editar** de una de esas páginas, al seleccionar un vínculo específico
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
-* [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md), proporciona acceso a lanzamientos relacionados
-* Live Copies displays the paths of all live copies that are based on the selected resource. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Blueprint provides details and various actions <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Languages Copies provides details and various actions <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md), que proporciona acceso a lanzamientos relacionados.
+* Live Copies muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
+* Modelo proporciona detalles y diversas acciones. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
+* Copias de idiomas proporciona detalles y diversas acciones. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
 
 ## Eventos: línea de tiempo {#events-timeline}
 
-Para obtener los recursos adecuados (p. ej. páginas de la consola **Sitios** o recursos de la consola **Recursos**) se puede utilizar la [línea de tiempo para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Para obtener los recursos adecuados (p. ej. páginas de la consola **Sitios** o recursos de la consola **Recursos**) se puede utilizar la [cronología para mostrar la actividad reciente de cualquier elemento seleccionado](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
-Open the required console, then navigate to the required resource and open **Timeline**, using:
+Abra la consola en cuestión, desplácese hasta el recurso y abra **Cronología** con el procedimiento siguiente:
 
-![Opción Línea de tiempo](/help/sites-cloud/authoring/assets/timeline.png)
+![Opción cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
 [Seleccione el recurso en cuestión](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) mediante **Mostrar todo** o **Actividades** para enumerar las acciones recientes en los recursos seleccionados:
 
-![Detalles de la línea de tiempo](/help/sites-cloud/authoring/assets/timeline-detail.png)
+![Detalles de la cronología](/help/sites-cloud/authoring/assets/timeline-detail.png)
 
 ## Información de la página {#page-information}
 
-La Información de página (icono de ecualizador) abre un menú que también proporciona detalles sobre la última edición y la última publicación. En función de las características de la página, del sitio y de su instancia, habrá más o menos opciones disponibles:
+La Información de página (icono de ecualizador) abre un menú que también muestra detalles de la última edición y la última publicación. En función de las características de la página, del sitio y de su instancia, habrá más o menos opciones disponibles:
 
-![Información de página, opción](/help/sites-cloud/authoring/assets/page-information.png)
+![Opción Información de página](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Abrir propiedades](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * Desplegar página <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
@@ -252,17 +252,17 @@ La Información de página (icono de ecualizador) abre un menú que también pro
 * [Ver tal y como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [Ver en administración](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Ayuda](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
-* [Promocionar lanzamiento](/help/sites-cloud/authoring/launches/promoting.md) (solo si la página es un lanzamiento)
+* [Promocionar lanzamiento](/help/sites-cloud/authoring/launches/promoting.md) (solo si la página es nueva)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
-## Modos de página {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página, existen modos que permiten acciones diferentes:
 
 * [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md): el modo que se debe emplear al editar el contenido de la página.
-* [Diseño](/help/sites-cloud/authoring/features/responsive-layout.md) : permite crear y editar el diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseño).
-* [Targeting:](/help/sites-cloud/authoring/personalization/targeted-content.md) aumente la relevancia del contenido mediante el targeting y efectuando mediciones en todos los canales.
+* [Diseño](/help/sites-cloud/authoring/features/responsive-layout.md): permite crear y editar su diseño interactivo en función del dispositivo (si la página está basada en un contenedor de diseños).
+* [Segmentación:](/help/sites-cloud/authoring/personalization/targeted-content.md) aumente la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
 * [Deformación de tiempo](/help/sites-cloud/authoring/features/page-versions.md#timewarp): le permite ver el estado de las páginas en un punto específico en el tiempo.
 * [Estado de Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): le permite echar un vistazo al estado de la Live Copy y ver los componentes que se han heredado o no.
 * [Vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): se utiliza para ver la página tal como se mostrará en el entorno de publicación; o para navegar mediante vínculos en el contenido. 
@@ -277,7 +277,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* En función de las características de la página, es posible que algunos modos no estén disponibles.
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
->* There is a [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (e.g. **Edit**, **Layout**, etc).
+>* Existe un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
 >
 
 
@@ -286,11 +286,11 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 
 A menudo, durante la creación, es necesario seleccionar otro recurso, como cuando se define un vínculo a otra página o recurso o bien cuando se selecciona una imagen. Para poder seleccionar una ruta con facilidad, los [campos de rutas](#path-fields) ofrecen la opción de completado automático y el [navegador de rutas](#path-browser) permite una selección más sólida.
 
-### Campos de rutas {#path-fields}
+### Campos de rutas   {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-cloud/authoring/fundamentals/components.md).
 
-Los campos de ruta tienen ahora la funcionalidad de autocompletar y mirar hacia delante para facilitar la localización de un recurso.
+Los campos de rutas de acceso disponen de las funciones de completado automático y de predicción de texto para que la localización de recursos resulte más sencilla.
 
 Al hacer clic en el botón **Abrir cuadro de diálogo de selección**, en el campo de rutas de acceso se abrirá el cuadro de diálogo del [navegador de rutas de acceso](#path-browser), en el que dispondrá de opciones de selección más detalladas.
 
@@ -302,7 +302,7 @@ También puede empezar a escribir en el campo de rutas, y AEM le ofrecerá rutas
 
 ### Navegador de rutas {#path-browser}
 
-El navegador de rutas está organizado como la [vista de columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) de la consola de sitios, lo que permite efectuar una selección más detallada de los recursos.
+El navegador de rutas está organizado como la [vista de columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) de la consola Sitios, lo que permite efectuar una selección más detallada de los recursos.
 
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 
@@ -312,7 +312,7 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 * El campo de búsqueda situado en la parte superior del cuadro de diálogo se puede usar en cualquier momento. Haga clic en la **X** que aparece en el campo de búsqueda para borrar la búsqueda.
 * Para limitar la búsqueda, puede mostrar las opciones de filtro y filtrar los resultados en función de una ruta determinada.
 
-   ![Filtros, opción](/help/sites-cloud/authoring/assets/filters-option.png)
+   ![Opción Filtros](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## Métodos abreviados del teclado {#keyboard-shortcuts}
 
