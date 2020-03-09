@@ -1,15 +1,15 @@
 ---
 title: Métodos abreviados del teclado para las consolas
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Métodos abreviados del teclado para las consolas {#keyboard-shortcuts-for-consoles}
+# Métodos abreviados del teclado para las consolas   {#keyboard-shortcuts-for-consoles}
 
-Los siguientes accesos directos están disponibles para las consolas Sitios, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencia.
+Los siguientes métodos abreviados están disponibles para las consolas Sitios, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
 
 | Ubicación | Método abreviado | Descripción |
 |---|---|---|
@@ -22,7 +22,7 @@ Los siguientes accesos directos están disponibles para las consolas Sitios, Rec
 |  | `Esc` | Mover hacia arriba una lista de páginas en el mismo nivel |
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-cloud/authoring/getting-started/search.md) |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) se debe ver |
 |  | ` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
@@ -36,7 +36,7 @@ Las combinaciones de teclas se muestran con las [teclas modificadoras](#os-speci
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 
-Las teclas modificadoras utilizadas para los métodos abreviados de teclado varían según el sistema operativo que utilice el cliente.
+Las teclas modificadoras utilizadas para los atajos de teclado varían en función del sistema operativo que utilice el cliente.
 
 | Windows/Linux | macOS |
 |---|---|
@@ -76,6 +76,6 @@ Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 >
 >Las teclas de método abreviado de navegación para la vista de columnas y el árbol de contenido siempre están activas.
 
-## Métodos abreviados de teclado para el Editor de páginas {#keyboard-shortcuts-for-the-page-editor}
+## Atajos de teclado para el editor de páginas {#keyboard-shortcuts-for-the-page-editor}
 
 Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la [edición de páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
