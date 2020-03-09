@@ -1,13 +1,13 @@
 ---
 title: Búsqueda
 description: Encuentre contenido más rápidamente con una búsqueda detallada
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# Búsqueda {#search-feature}
+# Búsqueda   {#search-feature}
 
 El entorno de creación AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 
@@ -19,28 +19,28 @@ La función de búsqueda está disponible en la barra de herramientas superior:
 
 Con el carril de búsqueda puede:
 
-* Buscar una palabra clave, ruta o etiqueta específica
+* Busque una palabra clave concreta, una ruta o una etiqueta.
 * Filtre según criterios específicos de recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
 * Defina y utilice una [búsqueda guardada](#saved-searches) según los criterios anteriores
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>También se puede iniciar una búsqueda con la tecla de función `/` (barra diagonal) cuando el carril de búsqueda sea visible.
 
 ## Búsqueda y filtro {#search-and-filter}
 
 Para buscar y filtrar sus recursos: 
 
-1. Abra **Búsqueda** (con la lupa de la barra de herramientas) e introduzca el término de búsqueda. Se mostrarán sugerencias seleccionables:
+1. Abra **Búsqueda** (con la lupa de la barra de herramientas) e introduzca el término de búsqueda. Se muestran sugerencias que puede seleccionar:
 
    ![Término de búsqueda](/help/sites-cloud/authoring/assets/search-term.png)
 
    De forma predeterminada, los resultados de la búsqueda estarán limitados a su ubicación actual (es decir, la consola y el tipo de recurso relacionado): 
 
-   ![Ubicación de búsqueda](/help/sites-cloud/authoring/assets/search-term-location.png)
+   ![Ubicación de la búsqueda](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que se desea eliminar) para buscar en todas las consolas/tipos de recurso.
-1. Los resultados se mostrarán agrupados según la consola y el tipo de recurso relacionado.
+1. Los resultados se muestran agrupados según la consola y el tipo de recurso relacionado.
 
    Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo **Ver todos los sitios**: 
 
@@ -48,16 +48,16 @@ Para buscar y filtrar sus recursos:
 
 1. Si desea explorar más en profundidad, seleccione el símbolo de carril (parte superior izquierda) para abrir el panel lateral **Filtros y opciones**.
 
-   ![Botón Raíl](/help/sites-cloud/authoring/assets/rail-button.png)
+   ![Botón carril](/help/sites-cloud/authoring/assets/rail-button.png)
 
-   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda/filtro.
+   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda o de filtro.
 
    El panel lateral le permite seleccionar:
 
    * Búsquedas guardadas
    * Directorio de búsqueda
    * Etiquetas
-   * Criterios de búsqueda, por ejemplo Fechas modificadas, Estado de publicación, Estado de LiveCopy
+   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de Live Copy.
    >[!NOTE]
    >
    >Los criterios de búsqueda pueden variar:
