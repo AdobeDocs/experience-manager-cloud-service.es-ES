@@ -1,9 +1,9 @@
 ---
-title: Informes de recursos
+title: Informes del recurso
 description: En este artículo se describen varios informes sobre los recursos en Recursos AEM y cómo generar informes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -18,7 +18,7 @@ El marco de informes de AEM Assets aprovecha los trabajos de Sling para procesar
 
 La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y ver los estados de ejecución de los informes (exitosos, fallidos y en cola).
 
-Cuando se genera un informe, se le notifica mediante un mensaje de correo electrónico (opcional) y una notificación de bandeja de entrada. Puede ver, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
+Cuando se genera un informe, se le notifica mediante <!-- through an email (optional) and --> una notificación de bandeja de entrada. Puede ver, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
 
 ## Generar informes {#generate-reports}
 
@@ -36,7 +36,7 @@ Recursos AEM genera los siguientes informes estándar:
 
 Los administradores de AEM pueden generar y personalizar fácilmente estos informes para su implementación. Un administrador puede seguir estos pasos para generar un informe:
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 
    ![navegación](assets/navigation.png)
 
@@ -47,7 +47,7 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    >[!NOTE]
    >
-   >Antes de generar un informe de descarga **[!UICONTROL de]** recursos, asegúrese de que el servicio de descarga de recursos está habilitado. En la consola web (`https://[aem_server]:[port]/system/console/configMgr`), abra la configuración del grabador **[!UICONTROL de eventos de CQ DAM]** de **[!UICONTROL día y seleccione la opción]** Recurso descargado (DESCARGADO)en Tipos de eventos si no está seleccionada.
+   >Antes de generar un informe de **[!UICONTROL descarga de recursos]**, compruebe que el servicio de descarga de recursos está habilitado. En la consola web (`https://[aem_server]:[port]/system/console/configMgr`), abra la configuración del **[!UICONTROL grabador de eventos de CQ DAM de día]** y seleccione la opción **[!UICONTROL Recurso descargado (DESCARGADO)]** en Tipos de eventos si no está seleccionada.
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    >[!NOTE]
    >
-   >El informe Uso del **[!UICONTROL disco]** no incluye campos de intervalo de fechas porque sólo indica el uso actual del espacio en disco.
+   >El informe **[!UICONTROL Uso del disco]** no incluye campos de intervalo de fechas porque solo indica el uso actual del espacio en disco.
 
    ![disk_usage_configuration](assets/disk_usage_configuration.png)
 
@@ -79,9 +79,9 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    ![files_report](assets/files_report.png)
 
-   El informe Compartir **** vínculos muestra las direcciones URL de los recursos que se comparten con usuarios externos desde Recursos AEM. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
+   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Las columnas no se pueden personalizar.
 
-   El informe Compartir **** vínculos no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en */var/dam/share*.
+   El informe **[!UICONTROL Compartir vínculos]** no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en */var/dam/share*.
 
    ![link_share](assets/link_share.png)
 
@@ -95,7 +95,7 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    ![custom_columns](assets/custom_columns.png)
 
-1. Toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Tap/click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 1. En la página Informes de recursos, el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo, Éxito, Fallido, En cola o Programado. El mismo estado aparece en la bandeja de entrada de notificaciones.
 
    Para ver la página del informe, toque o haga clic en el vínculo del informe. Como alternativa, seleccione el informe y toque o haga clic en el icono Ver en la barra de herramientas.
@@ -116,13 +116,13 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 * Publicación de Brand Portal
 * Archivos
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Informes]**.
 1. En la página Informes de recursos, toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
 
 1. En la página **[!UICONTROL Crear informe]** , elija el informe que desee crear y toque o haga clic en **[!UICONTROL Siguiente]**.
 1. Configure los detalles del informe, como título, descripción, miniatura, ruta de carpeta, intervalo de fechas, etc., según corresponda.
 
-1. Para mostrar una columna personalizada, especifique el nombre de la columna en debajo de Columnas **** personalizadas.
+1. Para mostrar una columna personalizada, especifique el nombre de la columna debajo de **[!UICONTROL Columnas personalizadas]**.
 
    ![custom_columns-1](assets/custom_columns-1.png)
 
@@ -130,14 +130,13 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 
    ![property_picker](assets/property_picker.png)
 
-   
-También puede escribir la ruta en el campo de ruta de la propiedad.
+   También puede escribir la ruta en el campo de ruta de la propiedad.
 
    ![property_path](assets/property_path.png)
 
    Para agregar más columnas personalizadas, toque o haga clic en **[!UICONTROL Agregar]** y repita los pasos 5 y 6.
 
-1. Toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
+1. Tap/click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 
 ## Configurar el servicio de depuración {#configure-purging-service}
 
