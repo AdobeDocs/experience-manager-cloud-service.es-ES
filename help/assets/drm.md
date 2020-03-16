@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos de Adobe Experience Man
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -38,7 +38,7 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 1. Haga clic en el icono de GlobalNav para mostrar el panel Buscar.
 
-1. Toque o haga clic en la opción Estado de **[!UICONTROL caducidad]** para expandirla.
+1. Pulse o haga clic en la opción **[!UICONTROL Estado de caducidad]** para expandirla.
 
 1. Seleccione **[!UICONTROL Caducado]**. Los recursos caducados se muestran en los resultados de la búsqueda.
 
@@ -48,17 +48,19 @@ Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior a
 
 Además, si un fallo o error impide que el programador detecte los recursos caducados en el ciclo actual, el programador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado caducado.
 
-Para permitir que la consola Recursos muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de notificación **[!UICONTROL de caducidad de]** Adobe CQ DAM en AEM Configuration Manager.
+Para permitir que la consola de Assets muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de **[!UICONTROL notificación de caducidad de Adobe CQ DAM]** en AEM Configuration Manager.
 
 1. Abra AEM Configuration Manager.
 1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado Programador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
 
-1. Para ejecutar el trabajo periódicamente, desactive el campo Regla **[!UICONTROL de programador basado en]** tiempo y modifique el tiempo en segundos en el campo Programador **** periódico. Por ejemplo, la expresión de ejemplo &#39;0 0 &amp;ast; &amp;ast; ?&#39; activa el trabajo a las 00 horas.
-1. Seleccione **[!UICONTROL enviar correo electrónico]** para recibir correos electrónicos cuando caduque un recurso.
+1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; activa el trabajo a las 00 horas.
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >Solo el creador de recursos (la persona que carga un recurso concreto en Recursos AEM) recibe un correo electrónico cuando caduca el recurso. Consulte cómo configurar las notificaciones por correo electrónico para obtener más información sobre la configuración de las notificaciones por correo electrónico en todo el nivel de AEM.
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. En el campo Notificación **[!UICONTROL previa en segundos]** , especifique el tiempo en segundos antes de que caduque un recurso cuando desee recibir una notificación con respecto a la caducidad. Si es un administrador o el creador de recursos, recibirá un mensaje antes de que caduque el recurso, en el que se le notificará que el recurso está a punto de caducar después de la hora especificada.
 
@@ -72,7 +74,7 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 
 1. En la interfaz de usuario de Recursos, seleccione un recurso.
 
-1. Tap/click the **[!UICONTROL Publish]** icon from the toolbar. Si no puede ver el icono **Publicar** en la barra de herramientas, toque o haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque el icono **[!UICONTROL Publicar]** .
+1. Pulse o haga clic en el icono **[!UICONTROL Publicar]** de la barra de herramientas. Si no puede ver el icono **Publicar** en la barra de herramientas, pulse o haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque el icono **[!UICONTROL Publicar]**.
 
 1. Elija **[!UICONTROL Publicar]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora en que se publicó el recurso.
@@ -91,11 +93,11 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 1. Para buscar recursos en función de su estado, toque o haga clic en el icono **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
 
 1. Pulse la tecla Intro y, a continuación, toque o haga clic en el icono de AEM para mostrar el panel Buscar.
-1. En el panel Buscar, toque o haga clic en Estado **[!UICONTROL de]** publicación y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en Recursos AEM.
+1. En el panel Buscar, pulse o haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en AEM Assets.
 
-1. Toque o haga clic en Estado **[!UICONTROL de]** aprobación y haga clic en la opción correspondiente para buscar recursos aprobados o rechazados.
+1. Pulse o haga clic en **[!UICONTROL Estado de aprobación]** y haga clic en la opción correspondiente para buscar recursos aprobados o rechazados.
 
-1. Para buscar recursos en función de su estado de caducidad, seleccione Estado **[!UICONTROL de]** caducidad en el panel Buscar y elija la opción adecuada.
+1. Para buscar recursos en función de su estado de caducidad, seleccione **[!UICONTROL Estado de caducidad]** en el panel Buscar y elija la opción adecuada.
 
 1. También puede buscar recursos en función de una combinación de estados en varias facetas de búsqueda. Por ejemplo, puede buscar recursos publicados que hayan sido aprobados en una tarea de revisión y que aún no hayan caducado seleccionando las opciones correspondientes en las facetas de búsqueda.
 
@@ -121,11 +123,11 @@ Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 ### Descargar recursos DRM {#downloading-drm-assets}
 
 1. En la vista de tarjeta, seleccione los recursos que desea descargar y haga clic en el icono **[!UICONTROL Descargar]** .
-1. En la página Administración **[!UICONTROL de]** derechos de autor, seleccione el recurso que desee descargar de la lista.
+1. En la página **[!UICONTROL Administración de derechos de autor]**, seleccione el recurso que desee descargar de la lista.
 1. En el panel Licencia, elija **[!UICONTROL Aceptar]**. Aparece una marca de graduación junto al recurso para el que acepta el contrato de licencia. Toque o haga clic en el botón **[!UICONTROL Descargar]** .
 
    >[!NOTE]
    >
-   >El botón **[!UICONTROL Descargar]** solo se activa cuando se decide aceptar el contrato de licencia de un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo los recursos protegidos aparecen en el panel izquierdo y el botón **[!UICONTROL Descargar]** está habilitado para descargar los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
+   >El botón **[!UICONTROL Descargar]** solo se activa cuando se decide aceptar el contrato de licencia de un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo los recursos protegidos aparecen en el panel izquierdo; el botón **[!UICONTROL Descargar]** se habilitará para obtener los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
 
 1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Descargar]** para descargar el recurso o sus representaciones.
