@@ -3,7 +3,7 @@ title: Operaciones asincrónicas
 description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que requieren muchos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,11 +29,11 @@ Puede ver el estado de los trabajos asincrónicos desde la página Estado **[!UI
 
 ## Monitoreo del estado de las operaciones asincrónicas {#monitoring-the-status-of-asynchronous-operations}
 
-Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
+Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada <!-- and through email -->.
 
 Para ver el estado de las operaciones asincrónicas en detalle, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Trabajos]**.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Trabajos]**.
 1. En la página Estado **[!UICONTROL del trabajo]** asincrónico, revise los detalles de las operaciones.
 
    ![job_status](assets/job_status.png)
@@ -44,7 +44,7 @@ Para ver el estado de las operaciones asincrónicas en detalle, vaya a la págin
 
    **[!UICONTROL Correcto]**: Se completó la operación
 
-   **[!UICONTROL Error]** o **[!UICONTROL error]**: No se pudo procesar la operación
+   **[!UICONTROL Fallo]** o **[!UICONTROL Error]**: No se pudo procesar la operación
 
    **[!UICONTROL Programado]**: La operación está programada para procesarse más tarde
 
@@ -72,7 +72,7 @@ Recursos AEM ejecuta un trabajo de depuración todos los días a la 1:00 a.m. pa
 
 Puede modificar la programación del trabajo de depuración y la duración durante la cual se conservan los detalles de los trabajos completados antes de que se eliminen. También puede configurar el número máximo de trabajos completados para los que se conservan los detalles en cualquier momento.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. Abra el trabajo programado de depuración de trabajos asincrónicos de **[!UICONTROL Adobe CQ DAM]** .
 1. Especifique el número de umbral de días después de los cuales se eliminarán los trabajos completados y el número máximo de trabajos para los que se conservarán los detalles en el historial.
 
@@ -89,7 +89,7 @@ Puede configurar el número de umbral de recursos o referencias para que Recurso
 
 Si el número de recursos o carpetas que se van a eliminar supera el número de umbral, la operación de eliminación se realiza de forma asíncrona.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. En la consola web, abra la configuración de Procesamiento **[!UICONTROL de trabajos de eliminación]** asincrónica.
 1. En el cuadro **[!UICONTROL Umbral de número de recursos]** , especifique el número de umbral de recursos/carpetas para el procesamiento asincrónico de las operaciones de eliminación.
 
@@ -101,7 +101,7 @@ Si el número de recursos o carpetas que se van a eliminar supera el número de 
 
 Si el número de recursos/carpetas o referencias que se van a mover supera el número de umbral, la operación de movimiento se realiza de forma asíncrona.
 
-1. Toque o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > Consola **** web.
+1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. Desde la consola web, abra la configuración Procesamiento **[!UICONTROL de trabajos de operación de movimiento]** asincrónico.
 1. En el cuadro **[!UICONTROL Umbral número de recursos/referencias]** , especifique el número de umbral de recursos/carpetas o referencias para el procesamiento asincrónico de operaciones de movimiento.
 
