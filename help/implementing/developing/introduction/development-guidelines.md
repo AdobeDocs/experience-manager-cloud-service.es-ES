@@ -2,7 +2,7 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: 'Para completar '
 translation-type: tm+mt
-source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
+source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
 
 ---
 
@@ -83,10 +83,33 @@ El contenido se replica de Autor a Publicación mediante un mecanismo de subproc
 
 ### Registros {#logs}
 
-* Para el desarrollo local, las entradas de registro se escriben en archivos locales
-   * `./crx-quickstart/logs`
-* En los entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para reducir los registros. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* Para cambiar los niveles de registro de los entornos de nube, se debe modificar la configuración OSGI de registro de Sling, seguida de una reimplementación completa. Dado que esto no es instantáneo, tenga cuidado de habilitar los registros detallados en entornos de producción que reciben mucho tráfico. En el futuro, es posible que haya mecanismos para cambiar más rápidamente el nivel de registro.
+Para el desarrollo local, las entradas de registro se escriben en los archivos locales de la `/crx-quickstart/logs` carpeta.
+
+En los entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para reducir los registros. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**Configuración del nivel de registro**
+
+Para cambiar los niveles de registro de los entornos de nube, se debe modificar la configuración OSGI de registro de Sling, seguida de una reimplementación completa. Dado que esto no es instantáneo, tenga cuidado de habilitar los registros detallados en entornos de producción que reciben mucho tráfico. En el futuro, es posible que haya mecanismos para cambiar más rápidamente el nivel de registro.
+
+**Activación del nivel de registro DEBUG**
+
+El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran.
+Para activar el nivel de registro DEBUG, utilice el explorador CRX para establecer la variable
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+para depurar. No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya que genera muchos registros.
+Normalmente, una línea en el archivo de depuración comienza con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+Los niveles de registro son los siguientes:
+
+| 0 | Error fatal | Error en la acción y el instalador no puede continuar. |
+|---|---|---|
+| 1 | Error | Error en la acción. La instalación continúa, pero una parte de CRX no se instaló correctamente y no funcionará. |
+| 2 | Advertencia | La acción se ha realizado correctamente, pero se han encontrado problemas. CRX puede funcionar correctamente o no. |
+| 3 | Información | La acción se ha realizado correctamente. |
 
 ### Duques de rosca {#thread-dumps}
 
