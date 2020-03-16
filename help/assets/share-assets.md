@@ -3,7 +3,7 @@ title: Compartir recursos, carpetas y colecciones como vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Experience Manager Assets como un hipervínculo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -29,59 +29,78 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 
 
 1. En la interfaz de usuario de Recursos, seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, toque o haga clic en el vínculo **[!UICONTROL Compartir]**.
-
-   Se crea automáticamente un vínculo de recurso en el campo **[!UICONTROL Compartir vínculo]** . Copie este vínculo y compártalo con los usuarios. El tiempo de caducidad predeterminado para el vínculo es un día.
-
-   Como alternativa, realice los pasos 3 a 7 de este procedimiento para agregar destinatarios de correo electrónico, configurar la caducidad del vínculo y enviarlo desde el cuadro de diálogo.
+1. En la barra de herramientas, toque o haga clic en el vínculo **[!UICONTROL Compartir]**. Se crea automáticamente un vínculo de recurso en el campo **[!UICONTROL Compartir vínculo]** . Copie este vínculo y compártalo con los usuarios. El tiempo de caducidad predeterminado para el vínculo es un día.
 
    >[!NOTE]
    >
    >Si un recurso compartido se mueve a una ubicación diferente, su vínculo deja de funcionar. Vuelva a crear el vínculo y a compartirlo con los usuarios.
 
-1. Desde la consola web, abra la configuración **[!UICONTROL Day CQ Link Externalizer]** y modifique las siguientes propiedades en el campo **[!UICONTROL Dominios]** con los valores mencionados en relación con cada uno de ellos:
+<!--
+## Share assets as a link {#sharelink}
 
-   * local
-   * author
-   * instancias de publicación
-   Para las propiedades local y de autor, proporcione la URL para la instancia local y de autor respectivamente. Tanto las propiedades locales como las de autor tienen el mismo valor si se ejecuta una única instancia de autor de AEM. Para la publicación, especifique la URL de la instancia de publicación.
+To generate the URL for assets you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to AEM Assets.
 
-1. En el cuadro de dirección de correo electrónico del cuadro de diálogo Uso compartido **[!UICONTROL de]** vínculos, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. También puede compartir el vínculo con varios usuarios.
+>[!NOTE]
+>
+>* You need Edit ACL permission on the folder or the asset that you want to share as a link.
+>* Before you share a link with users, ensure that Day CQ Mail Service is configured. Otherwise, an error occurs.
 
-   Si el usuario es miembro de su organización, seleccione el ID de correo electrónico del usuario en los ID de correo electrónico sugeridos que aparecen en la lista debajo del área de escritura. Para un usuario externo, escriba el ID de correo electrónico completo y selecciónelo en la lista.
+1. In the Assets user interface, select the asset to share as a link.
+1. From the toolbar, click/tap the **[!UICONTROL Share Link]**.
 
-   Para habilitar el envío de mensajes de correo electrónico a los usuarios, configure los detalles del servidor SMTP en [Día del servicio](/help/assets/configure-asset-sharing.md#configmailservice)de correo de CQ.
+   An asset link is auto-created in the **[!UICONTROL Share Link]** field. Copy this link and share it with the users. The default expiration time for the link is one day.
 
-   >[!NOTE]
-   >
-   >Si introduce un ID de correo electrónico de un usuario que no es miembro de su organización, las palabras &quot;Usuario externo&quot; llevan el prefijo &quot;ID de correo electrónico del usuario.
-
-1. En el **[!UICONTROL cuadro Asunto]** , introduzca un asunto para el recurso que desea compartir.
-1. En el cuadro **[!UICONTROL Mensaje]** , escriba un mensaje opcional.
-1. En el campo **[!UICONTROL Caducidad]** , especifique una fecha y hora de caducidad para el vínculo mediante el selector de fechas. De forma predeterminada, la fecha de caducidad se establece para una semana a partir de la fecha en que comparta el vínculo.
-1. Para permitir que los usuarios descarguen la imagen original junto con las representaciones, seleccione **[!UICONTROL Permitir la descarga del archivo]** original.
+   Alternatively, proceed to perform steps 3-7 of this procedure to add email recipients, configure the expiration time for the link, and send it from the dialog.
 
    >[!NOTE]
    >
-   >De forma predeterminada, los usuarios solo pueden descargar las representaciones del recurso que se comparten como vínculo.
+   >If a shared asset is moved to a different location, its link stops working. Re-create the link and re-share with the users.
 
-1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios a través de un correo electrónico.
-1. Para ver el recurso compartido, toque o haga clic en el vínculo del correo electrónico que se envía al usuario. El recurso compartido se muestra en la página de **[!UICONTROL Adobe Marketing Cloud]** .
+1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
 
-   Para cambiar a la vista de lista, toque o haga clic en el icono de diseño en la barra de herramientas.
+    * local
+    * author
+    * publish
 
-1. Para generar una vista previa del recurso, toque o haga clic en el recurso compartido. Para cerrar la vista previa y volver a la página de **[!UICONTROL Marketing Cloud]** , toque o haga clic en **[!UICONTROL Atrás]** en la barra de herramientas. Si ha compartido una carpeta, toque o haga clic en **[!UICONTROL Carpeta]** principal para volver a la carpeta principal.
+   For the local and author properties, provide the URL for the local and author instance respectively. Both local and author properties have the same value if you run a single AEM author instance. For publish, provide the URL for the publish instance.
+
+1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can also share the link with multiple users.
+
+   If the user is a member of your organization, select the user's email ID from the suggested email IDs that appear in the list below the typing area. For an external user, type the complete email ID and then select it from the list.
+
+   To enable emails to be sent out to users, configure the SMTP server details in [Day CQ Mail Service](/help/assets/configure-asset-sharing.md#configmailservice).
 
    >[!NOTE]
    >
-   >AEM admite la generación de la vista previa de recursos de estos tipos MIME: JPG, PNG, GIF, BMP, INDD, PDF y PPT. Solo puede descargar los recursos de los otros tipos MIME.
+   >If you enter an email ID of a user that is not a member of your organization, the words "External User" are prefixed with the email ID of the user.
 
-1. Para descargar el recurso compartido, toque o haga clic en **[!UICONTROL Seleccionar]** en la barra de herramientas, toque o haga clic en el recurso y, a continuación, toque o haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas.
-1. Para ver los recursos que ha compartido como vínculos, vaya a la interfaz de usuario de Recursos y toque o haga clic en el icono de GlobalNav. Elija **[!UICONTROL Navegación]** en la lista para mostrar el panel Navegación.
-1. En el panel Navegación, elija Vínculos **** compartidos para mostrar una lista de recursos compartidos.
-1. Para dejar de compartir un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Dejar de compartir]** en la barra de herramientas.
+1. In the **[!UICONTROL Subject]** box, enter a subject for the asset you want to share.
+1. In the **[!UICONTROL Message]** box, enter an optional message.
+1. In the **[!UICONTROL Expiration]** field, specify an expiration date and time for the link using the date picker. By default, the expiration date is set for a week from the date you share the link.
+1. To let users download the original image along with the renditions, select **[!UICONTROL Allow download of original file]**.
 
-Un mensaje confirma que se ha dejado de compartir el recurso. Además, la entrada del recurso se elimina de la lista.
+   >[!NOTE]
+   >
+   >By default, users can only download the renditions of the asset that you share as a link.
+
+1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users through an email.
+1. To view the shared asset, click/tap the link in the email that is sent to the user. The shared asset is displayed in the **[!UICONTROL Adobe Marketing Cloud]** page.
+
+   To toggle to the list view, click/tap the layout icon in the toolbar.
+
+1. To generate a preview of the asset, click/tap the shared asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
+
+   >[!NOTE]
+   >
+   >AEM supports generating the preview of assets of these MIME types: JPG, PNG, GIF, BMP, INDD, PDF, and PPT. You can only download the assets of the other MIME types.
+
+1. To download the shared asset, click/tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To view the assets you shared as links, go to the Assets user interface and click/tap the GlobalNav icon. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
+1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
+1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar.
+
+A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
+-->
 
 ## Descargar y compartir recursos {#download-and-share-assets}
 
@@ -95,13 +114,74 @@ Los especialistas en marketing y los usuarios de la línea de negocios pueden co
 
 * **Adobe Asset Link**: Los profesionales creativos pueden buscar y utilizar recursos directamente desde Adobe InDesign, Adobe Illustrator y Adobe Photoshop.
 
-### Best practices and troubleshooting {#bestpractices}
+## Configuración del uso compartido de recursos {#configure-sharing}
 
-* Es posible que las carpetas de recursos o las colecciones que contengan un espacio en blanco en su nombre no se compartan.
-* Si los usuarios no pueden descargar los recursos compartidos, compruebe con el administrador de AEM cuáles son los límites [de](/help/assets/configure-asset-sharing.md#maxdatasize) descarga.
-* Si no puede enviar correos electrónicos con vínculos a recursos compartidos o si los demás usuarios no pueden recibir su correo electrónico, consulte con el administrador de AEM si el servicio [de](/help/assets/configure-asset-sharing.md#configmailservice) correo electrónico está configurado o no.
-* Si no puede compartir recursos con la funcionalidad de uso compartido de vínculos, asegúrese de que dispone de los permisos adecuados. Consulte [Uso compartido de recursos](#sharelink).
+### Configuración del uso compartido de vínculos de recursos {#asset-link-sharing}
+
+<!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
+
+Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la `/var/dam/share` ubicación pueden ver los vínculos compartidos con ellos. El uso compartido de recursos a través de un vínculo es una forma práctica de poner los recursos a disposición de terceros externos sin que estos tengan que iniciar sesión en Recursos AEM en primer lugar.
+
+>[!NOTE]
+>
+>Si desea compartir vínculos de la instancia de AEM Author con entidades externas, asegúrese de que solo muestra las siguientes URL para `GET` solicitudes. Bloquee otras direcciones URL para asegurarse de que la instancia de AEM Author es segura.
+>* `[aem_server]:[port]/linkshare.html`
+>* `[aem_server]:[port]/linksharepreview.html`
+>* `[aem_server]:[port]/linkexpired.html`
+
 
 <!--
-Add content or link about how to share using BP, DA, AAL, etc.
+## Configure Day CQ mail service {#configmailservice}
+
+Before you can share assets as links, configure the email service.
+
+1. Click or tap the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
+1. From the list of services, locate **[!UICONTROL Day CQ Mail Service]**.
+1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **Day CQ Mail Service]** with the details mentioned against their names:
+
+    * SMTP server host name: email server host name
+    * SMTP server port: email server port
+    * SMTP user: email server user name
+    * SMTP password: email server password
+
+1. Click/tap **[!UICONTROL Save]**.
+-->
+
+### Configurar el tamaño máximo de datos {#maxdatasize}
+
+Al descargar recursos del vínculo compartido mediante la función de uso compartido de vínculos, AEM comprime la jerarquía de recursos del repositorio y, a continuación, devuelve el recurso en un archivo ZIP. Sin embargo, a falta de límites a la cantidad de datos que se pueden comprimir en un archivo ZIP, grandes cantidades de datos están sujetas a compresión, lo que causa errores de memoria insuficiente en JVM. Para proteger el sistema de un posible ataque de denegación de servicio debido a esta situación, puede configurar el tamaño máximo de los archivos descargados. Si el tamaño sin comprimir del recurso supera el valor configurado, se rechazan las solicitudes de descarga de recursos. El valor predeterminado es 100 MB.
+
+1. Haga clic o pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+1. Desde la consola web, busque la configuración del servlet proxy **[!UICONTROL Day CQ DAM Adhoc Asset Share]** .
+1. Abra la configuración en modo de edición y modifique el valor del parámetro Tamaño de contenido **[!UICONTROL máximo (sin comprimir)]** .
+1. Guarde los cambios.
+
+<!--
+Add content or link about how to configure sharing via BP, DA, AAL, etc.
+-->
+
+### Habilitar acciones de escritorio para usar con la aplicación de escritorio {#desktop-actions}
+
+Desde la interfaz de usuario de Recursos en un navegador, puede explorar las ubicaciones de los recursos o el cierre de compra y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan Acciones de escritorio y, si no están activadas, consulte [Activación de acciones de escritorio en la interfaz](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)web de AEM.
+
+![Activar acciones de escritorio para usarlas como método abreviado al trabajar con una aplicación de escritorio](assets/enable_desktop_actions.png)
+
+### Configuraciones para utilizar Adobe Asset Link {#configure-asset-link}
+
+Adobe Asset Link facilita la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Conecta recursos de Adobe Experience Manager (AEM) con aplicaciones de escritorio de Creative Cloud, Adobe InDesign, Adobe Photoshop y Adobe Illustrator. El panel Vínculo de recursos de Adobe permite a los creativos acceder y modificar el contenido almacenado en Recursos AEM sin tener que abandonar las aplicaciones creativas con las que están más familiarizados.
+
+Consulte [cómo configurar AEM para utilizarlo con Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+
+## Best practices and troubleshooting {#bestpractices}
+
+* Es posible que las carpetas de recursos o las colecciones que contengan un espacio en blanco en su nombre no se compartan.
+* Si los usuarios no pueden descargar los recursos compartidos, compruebe con el administrador de AEM cuáles son los límites [de](#maxdatasize) descarga.
+
+<!--
+* If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
+* If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
+-->
+
+<!--
+Add content or link about how to share using Brand Portal when it is available on Cloud Service.
 -->
