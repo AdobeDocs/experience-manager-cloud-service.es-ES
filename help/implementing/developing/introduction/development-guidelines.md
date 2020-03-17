@@ -2,7 +2,7 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: 'Para completar '
 translation-type: tm+mt
-source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
+source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
 
 ---
 
@@ -91,10 +91,14 @@ En los entornos de Cloud, los desarrolladores pueden descargar registros a trav�
 
 Para cambiar los niveles de registro de los entornos de nube, se debe modificar la configuración OSGI de registro de Sling, seguida de una reimplementación completa. Dado que esto no es instantáneo, tenga cuidado de habilitar los registros detallados en entornos de producción que reciben mucho tráfico. En el futuro, es posible que haya mecanismos para cambiar más rápidamente el nivel de registro.
 
+> [!NOTE]
+> 
+> Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia de AEM como servicio de nube. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como un servicio](/help/implementing/deploying/overview.md)de nube.
+
 **Activación del nivel de registro DEBUG**
 
 El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran.
-Para activar el nivel de registro DEBUG, utilice el explorador CRX para establecer la variable
+Para activar el nivel de registro DEBUG, establezca la variable
 
 ``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
 
