@@ -1,7 +1,7 @@
 ---
 title: Consolas de herramientas
 description: Obtenga información sobre las distintas consolas de herramientas en AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 # Consolas de herramientas{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository.
+Las consolas de **herramientas** permiten acceder a toda una serie de herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.
 
-Se puede acceder a estas consolas desde el panel [Herramientas de navegación](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel)global.
+Se puede acceder a estas consolas desde el [panel Herramientas de navegación global](/help/sites-cloud/authoring/getting-started/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Se puede acceder a estas consolas desde el panel [Herramientas de navegación](/
    <td>Comprobador de vínculos externos<br /> </td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Recursos</td>
    <td> </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ Se puede acceder a estas consolas desde el panel [Herramientas de navegación](/
   </tr>
   <tr>
    <td> </td>
-   <td>Permisos </td>
+   <td>Permisos  </td>
   </tr>
   <tr>
    <td> </td>
@@ -208,7 +208,7 @@ Se puede acceder a estas consolas desde el panel [Herramientas de navegación](/
    <td>Configuraciones de IMS de Adobe</td>
   </tr>
   <tr>
-   <td>Servicios de nube<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
