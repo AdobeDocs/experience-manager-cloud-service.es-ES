@@ -2,7 +2,7 @@
 title: Administrar registros - Servicio de nube
 description: Administrar registros - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
 
 ---
 
@@ -65,4 +65,11 @@ Environment Id Service    Name
 ```
 
 >[!Note]
->Mientras que las descargas **** de registro estarán disponibles a través de la interfaz de usuario y la API, **Log Tailing** es solo API/CLI.
+>Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
+
+### Additional Resources {#resources}
+
+Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
+
+* [Documentación de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
