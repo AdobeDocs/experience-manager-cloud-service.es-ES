@@ -2,7 +2,7 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
 
 ---
 
@@ -34,11 +34,15 @@ Para realizar la integración con Target, realice las siguientes tareas:
    * [Integración de AEM con Adobe Launch mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Información sobre la integración de AEM con Launch de Adobe, Analytics y Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [Configurar actividades](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Asocie sus actividades a la configuración de la nube de Target.
-
 >[!NOTE]
 >
 >La configuración de IMS (cuentas técnicas) para Launch de Adobe está preconfigurada en AEM como un servicio de nube. Los usuarios no tienen que crear esta configuración.
+
+1. [Configurar actividades](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Asocie sus actividades a la configuración de la nube de Target.
+
+>[!CAUTION]
+>
+>&quot;En AEM como servicio de nube, el agente de replicación que sincroniza ofertas y actividades de AEM con Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el servicio de asistencia técnica [de](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) Adobe si necesita volver a habilitar el agente de replicación&quot;.
 
 >[!NOTE]
 >
