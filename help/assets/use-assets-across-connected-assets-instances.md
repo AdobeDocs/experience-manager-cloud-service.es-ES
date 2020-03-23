@@ -3,7 +3,7 @@ title: Utilice los recursos conectados para compartir recursos DAM en el flujo d
 description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e3835cd4363a01fdf773831aa6f145a62dda6ae3
+source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
 
 ---
 
@@ -153,7 +153,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-## Restricciones    {#limitations}
+## Restricciones     {#limitations}
 
 **Permisos y administración de recursos**
 
@@ -164,7 +164,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 * No se recuperan los esquemas de metadatos.
 * Todos los creadores de Sites tienen permisos de lectura en las copias recuperadas, incluso si no tienen acceso a la implementación de DAM remota.
 * No se admiten las API para personalizar la integración.
-* La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que varios recursos remotos estén disponibles en la implementación local, considere migrar los recursos. Consulte [Guía de migración de recursos](assets-migration-guide.md).
+* La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que varios recursos remotos estén disponibles en la implementación local, considere migrar los recursos.
 * No se puede utilizar un recurso remoto como miniatura para una página web en la pestaña [!UICONTROL Miniatura] en [!UICONTROL Propiedades de página] haciendo clic en [!UICONTROL Seleccionar imagen].
 
 **Configuración y licencia**
