@@ -1,13 +1,13 @@
 ---
-title: Edición de las propiedades de página
+title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
 
-# Edición de las propiedades de página   {#editing-page-properties}
+# Edición de las propiedades de página {#editing-page-properties}
 
 Puede definir las propiedades para una página. Estas pueden variar en función de la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 
@@ -159,7 +159,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/sharing.html).
+   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir al usuario que comparta en Facebook**
    * **Permitir al usuario que comparta en Pinterest**
@@ -181,6 +181,8 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Configuración de ámbito**
 
    * Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Esta opción requiere que la cuenta de usuario esté en el `Target Adminstrators`grupo.
 
 ### Permisos   {#permissions}
 
@@ -195,7 +197,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Modelo**
 
    * Defina propiedades para una página de modelo en un entorno de administración de varios sitios. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Controla las circunstancias dentro de las cuales se propagarán las modificaciones a Live Copy.
+   * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
 ### Live Copy   {#live-copy}
 
@@ -236,14 +238,14 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
 1. Abra la página para la que desee editar las propiedades.
 1. Seleccione el icono **Información de página** para abrir el menú de selección:
-1. Seleccione **Abrir propiedades** para abrir un cuadro de diálogo que le permite editar las propiedades, ordenadas por la pestaña adecuada. También están disponibles los botones siguientes en la parte derecha de la barra de herramientas:
+1. Seleccione **Abrir propiedades** para abrir un cuadro de diálogo que le permite editar las propiedades, ordenadas por la pestaña adecuada. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
    * **Cancelar**
    * **Guardar y cerrar**
 1. Utilice el botón **Guardar y cerrar** para guardar los cambios. 
 
 ### Desde la consola Sitios: varias páginas {#from-the-sites-console-multiple-pages}
 
-Desde la consola **Sitios** puede seleccionar varias páginas y usar **Ver propiedades** para ver o editar las propiedades de las páginas. Esta acción recibe el nombre de edición de propiedades de páginas por lotes.
+Desde la consola **Sites** puede seleccionar varias páginas y luego utilizar **Ver propiedades** para ver o editar las propiedades de la página. Esto se conoce como edición masiva de propiedades de página.
 
 >[!NOTE]
 >
