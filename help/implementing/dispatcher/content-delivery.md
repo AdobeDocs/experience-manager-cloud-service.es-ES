@@ -1,15 +1,15 @@
 ---
-title: Entrega de contenido
-description: 'Entrega de contenido '
+title: Envío de contenido
+description: 'Envío de contenido '
 translation-type: tm+mt
-source-git-commit: d1c953e1caf440f18e488f07a32bcf5bc3880f67
+source-git-commit: 91005209eaf0fe1728940c414e28e24960df9e7f
 
 ---
 
 
-# Distribución de contenido en AEM como un servicio en la nube {#content-delivery}
+# Envío de contenido en AEM como servicio de nube {#content-delivery}
 
-La entrega de contenido del servicio de publicación incluye:
+La página actual detalla el envío de contenido del servicio de publicación en AEM como un servicio de nube. El envío de contenido del servicio de publicación incluye:
 
 * CDN (normalmente administrado por Adobe)
 * Distribuidor de AEM
@@ -27,7 +27,7 @@ El flujo de datos es el siguiente:
 
 El tipo de contenido HTML/texto está configurado para caducar después de 300 segundos (5 minutos) en la capa del despachante, un umbral que respetan tanto la caché del despachante como la CDN. Durante las redistribuciones del servicio de publicación, la caché del despachante se borra y se calienta posteriormente antes de que los nuevos nodos de publicación acepten el tráfico.
 
-Las secciones a continuación proporcionan buenos detalles sobre la entrega de contenido, incluida la configuración de CDN y el almacenamiento en caché de despachantes.
+Las secciones a continuación proporcionan buenos detalles sobre el envío de contenido, incluida la configuración de CDN y el almacenamiento en caché de despachantes.
 
 La información sobre la replicación del servicio de creación al servicio de publicación está disponible [aquí](/help/operations/replication.md).
 
@@ -36,7 +36,7 @@ La información sobre la replicación del servicio de creación al servicio de p
 
 ## CDN {#cdn}
 
-AEM ofrece tres opciones:
+AEM oferta tres opciones:
 
 1. CDN gestionado por Adobe: CDN incorporado de AEM. Esta es la opción recomendada, ya que está completamente integrada.
 1. CDN de cliente apunta a CDN gestionado por Adobe: el cliente señala su propia CDN a la CDN integrada de AEM. Si la primera opción no es viable, esta es la siguiente opción preferida, ya que aún aprovecha la integración de AEM con su CDN predeterminado. Los clientes seguirán siendo responsables de administrar su propia CDN.
@@ -49,14 +49,14 @@ Las opciones segunda y tercera se permitirán caso por caso. Esto implica cumpli
 
 ### CDN gestionado por Adobe {#adobe-managed-cdn}
 
-La preparación para la entrega de contenido mediante la CDN integrada de Adobe es sencilla, tal como se describe a continuación:
+La preparación para el envío de contenido mediante la CDN integrada de Adobe es sencilla, tal como se describe a continuación:
 
-1. Proporcionará el certificado SSL firmado y la clave secreta a Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine esta tarea con la asistencia al cliente.
+1. Proporcionará el certificado SSL firmado y la clave secreta a Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea.
 Nota: Aem como servicio de nube no admite certificados de dominio validados (DV).
 1. El servicio de asistencia al cliente coordinará con usted la temporización de un registro DNS CNAME, señalando a su FQDN `adobe-aem.map.fastly.net`.
 1. Se le notificará cuando los certificados SSL caduquen para que pueda volver a enviar los nuevos certificados SSL.
 
-De forma predeterminada, para una configuración de CDN administrada de Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para los entornos de producción como para los de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), debe trabajar con la asistencia al cliente para configurar estas restricciones.
+De forma predeterminada, para una configuración de CDN administrada de Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), debe trabajar con la asistencia al cliente para configurar estas restricciones.
 
 ### CDN de cliente apunta a CDN gestionada por Adobe {#point-to-point-CDN}
 
@@ -93,7 +93,7 @@ Puede administrar su propia CDN, siempre que:
 
 Instrucciones de configuración:
 
-1. Proporcione la lista blanca del proveedor de CDN a Adobe llamando a la API de creación/actualización de entorno con una lista de CIDR para la lista blanca.
+1. Proporcione la lista blanca del proveedor de CDN a Adobe llamando a la API de creación/actualización de entorno con una lista de CIDR a la lista blanca.
 1. Configure el `X-Forwarded-Host` encabezado con el nombre de dominio.
 1. Establezca el encabezado Host con el dominio de origen, que es Aem como ingreso al servicio de nube. El valor debe proceder de Adobe.
 1. Envíe el encabezado SNI al origen. El encabezado SNI debe ser el dominio de origen.
@@ -166,7 +166,7 @@ El contenido de tipo HTML/texto se establece con encabezados de caché que corre
 
 El resto de esta sección describe consideraciones relacionadas con la invalidación de la caché del despachante.
 
-### Invalidación de caché de despachantes durante la activación/desactivación {#cache-activation-deactivation}
+### Invalidación de caché de despachante durante la Activación/desactivación {#cache-activation-deactivation}
 
 Al igual que las versiones anteriores de AEM, la publicación o cancelación de publicaciones borrará el contenido de la caché del despachante. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión.
 
@@ -183,7 +183,7 @@ Antes de AEM como servicio de nube, había dos formas de invalidar la caché del
 
 Ya no se admitirá el `invalidate.cache` método, ya que solo se dirige a un nodo de distribuidor específico.
 AEM como servicio de nube funciona en el nivel de servicio, no en el nivel de nodo individual, por lo que las instrucciones de invalidación de la página [Invalidar páginas en caché de AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) no son válidas para AEM como servicio de nube.
-En su lugar, debe utilizarse el agente de vaciado de replicación. Esto se puede hacer con la API de replicación. La documentación de la API de replicación está disponible [aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la página [de ejemplo de la](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API específicamente el `CustomStep` ejemplo de cómo emitir una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar pero está preconfigurado para que apunte al despachante, junto con el servicio de publicación que ejecuta el agente de vaciado. El agente de vaciado generalmente se puede activar mediante eventos o flujos de trabajo de OSGi.
+En su lugar, debe utilizarse el agente de vaciado de replicación. Esto se puede hacer con la API de replicación. La documentación de la API de replicación está disponible [aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la página [de ejemplo de la](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API específicamente el `CustomStep` ejemplo de cómo emitir una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar pero está preconfigurado para que apunte al despachante, junto con el servicio de publicación que ejecuta el agente de vaciado. Normalmente, el agente de vaciado puede activarse mediante eventos o flujos de trabajo OSGi.
 
 El diagrama siguiente ilustra esto.
 
