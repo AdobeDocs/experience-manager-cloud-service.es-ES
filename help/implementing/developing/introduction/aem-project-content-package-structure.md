@@ -2,7 +2,7 @@
 title: Estructura del proyecto de AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
 
 ---
 
@@ -43,7 +43,7 @@ Este diagrama proporciona una visión general de la estructura de proyecto recom
 
 La estructura de implementación de aplicaciones recomendada es la siguiente:
 
-+ El `ui.apps` paquete, o paquete de contenido, contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros:
++ El `ui.apps` paquete, o paquete de código, contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros:
    + Paquetes OSGi
       + `/apps/my-app/install`
    + Configuraciones OSGi
@@ -69,7 +69,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
          + Grupos
          + ACL (permisos)
             + Cualquiera `rep:policy` para cualquier ruta (mutable o inmutable)
-+ El `ui.content` paquete, o paquete de código, contiene todo el contenido y la configuración. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
++ El `ui.content` paquete, o paquete de contenido, contiene todo el contenido y la configuración. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
    + Configuraciones según el contexto
       + `/conf`
    + Estructuras de contenido complejas y requeridas (por ejemplo: Generación de contenido que se basa en estructuras de contenido de línea de base definidas en la opción de repo y que se extiende más allá de ellas.
@@ -84,7 +84,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 
    Los paquetes ahora se incluyen mediante la configuración [integrada del complemento Maven](#embeddeds)FileVault Package Maven en lugar de la configuración `<subPackages>` .
 
-   En implementaciones complejas de Experience Manager, puede ser conveniente crear varios proyectos `ui.apps` y `ui.content` paquetes que representen sitios o inquilinos específicos en AEM. Si esto se hace, asegúrese de que se respeta la división entre contenido mutable e inmutable y de que los paquetes de contenido necesarios se agregan como subpaquetes en el paquete de contenido del `all` contenedor.
+   En implementaciones complejas de Experience Manager, puede ser conveniente crear varios proyectos `ui.apps` y `ui.content` paquetes que representen sitios o inquilinos específicos en AEM. Si esto se hace, asegúrese de que se respeta la división entre contenido mutable e inmutable y de que los paquetes de contenido necesarios se agregan como subpaquetes en el paquete de contenido de `all` contenedor.
 
    Por ejemplo, una estructura compleja del paquete de contenido de implementación puede tener este aspecto:
 
@@ -99,7 +99,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 
 Los paquetes se marcarán con su tipo de paquete declarado.
 
-+ Los paquetes de contenedores no deben tener un `packageType` conjunto.
++ Los paquetes de Contenedor no deben tener un `packageType` conjunto.
 + Los paquetes de código (inmutables) deben configurar su `packageType` en `application`.
 + Los paquetes de contenido (mutable) deben configurarse `packageType` en `content`.
 
@@ -144,7 +144,7 @@ El vocabulario completo para los scripts Repo Init está disponible en la docume
 
 >[!TIP]
 >
->Consulte la sección [Recortes](#snippet-repo-init) de inicio de la repo más abajo para ver un fragmento completo.
+>Para ver un fragmento completo, consulte la sección Recortes [de inicio de](#snippet-repo-init) repo más abajo.
 
 ## Paquete de estructura de repositorio {#repository-structure-package}
 
@@ -160,7 +160,7 @@ Tenga en cuenta que los paquetes de contenido (`<packageType>content</packageTyp
 >
 >Consulte la sección Fragmentos [XML de](#xml-repository-structure-package) POM más abajo para ver un fragmento completo.
 
-## Incrustación de subpaquetes en el paquete de contenedor{#embeddeds}
+## Incrustación de subpaquetes en el paquete de Contenedor{#embeddeds}
 
 Los paquetes de contenido o código se colocan en una carpeta especial &quot;cara-cara&quot; y se pueden dirigir para la instalación en AEM Author, AEM Publish o en ambos, mediante la configuración del complemento FileVault Maven `<embeddeds>` . Tenga en cuenta que no se debe utilizar la `<subPackages>` configuración.
 
@@ -172,7 +172,7 @@ Entre los casos de uso comunes se incluyen:
 
 ![Incrustación de paquetes](assets/embeddeds.png)
 
-Para dirigirse al autor de AEM, la publicación de AEM o ambos, el paquete se incrusta en el paquete del `all` contenedor en una ubicación de carpeta especial, en el siguiente formato:
+Para destinatario del autor de AEM, la publicación de AEM o ambos, el paquete se incrusta en el paquete de `all` contenedor en una ubicación de carpeta especial, con el siguiente formato:
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
@@ -194,11 +194,11 @@ Desglosar la estructura de carpetas:
 + La carpeta de cuarto nivel contiene los subpaquetes y debe ser uno de los siguientes:
    + `install` para realizar la instalación en **AEM Author y AEM Publish**
    + `install.author` para instalar **solo** en AEM Author
-   + `install.publish` para **instalar solo** en AEM publishTenga en cuenta que solo `install.author` y `install.publish` son objetivos admitidos. Otros modos de ejecución **no son** compatibles.
+   + `install.publish` para **instalar solo** en AEM publishTenga en cuenta que solo `install.author` y `install.publish` son destinatarios compatibles. Otros modos de ejecución **no son** compatibles.
 
 Por ejemplo, una implementación que contenga AEM Author y publique paquetes específicos puede tener el siguiente aspecto:
 
-+ `all` El paquete de contenedor incrusta los siguientes paquetes para crear un artefacto de implementación único
++ `all` El paquete Contenedor incorpora los siguientes paquetes para crear un artefacto de implementación único
    + `ui.apps` incorporado en `/apps/my-app-packages/application/install` implementa código tanto para el autor de AEM como para la publicación de AEM
    + `ui.apps.author` incorporado en `/apps/my-app-packages/application/install.author` implementa código solo para el autor de AEM
    + `ui.content` integrado en `/apps/my-app-packages/content/install` implementa contenido y configuración tanto para AEM Author como para AEM Publish
@@ -208,9 +208,9 @@ Por ejemplo, una implementación que contenga AEM Author y publique paquetes esp
 >
 >Consulte la sección Fragmentos [XML de](#xml-embeddeds) POM más abajo para ver un fragmento completo.
 
-### Definición de filtro del paquete de contenedor {#container-package-filter-definition}
+### Definición de filtro del paquete de Contenedor {#container-package-filter-definition}
 
-Debido a la incrustación del código y los subpaquetes de contenido en el paquete de contenedor, las rutas de destino incrustadas deben agregarse a las del proyecto de contenedor `filter.xml` para garantizar que los paquetes incrustados se incluyen en el paquete de contenedor cuando se generan.
+Debido a la incrustación del código y los subpaquetes de contenido en el paquete de contenedor, las rutas de destinatario incrustadas deben agregarse a las del proyecto de contenedor `filter.xml` para garantizar que los paquetes incrustados se incluyen en el paquete de contenedor cuando se generan.
 
 Simplemente agregue las `<filter root="/apps/<my-app>-packages"/>` entradas de las carpetas de segundo nivel que contengan subpaquetes para la implementación.
 
@@ -226,7 +226,7 @@ Si los paquetes de terceros están en el repositorio **público de artefactos Ma
 
 Si los paquetes de terceros están en un **repositorio público de artefactos de terceros de Maven**, este repositorio debe estar registrado en el `pom.xml` del proyecto e incrustado según el método [descrito anteriormente](#embeddeds). Si el conector/aplicación de terceros requiere paquetes de contenido y código, cada uno debe estar incrustado en las ubicaciones correctas del paquete (`all`) de contenedor.
 
-La adición de dependencias de Maven sigue las prácticas estándar de Maven, y la incrustación de artefactos de terceros (código y paquetes de contenido) se [describe más arriba](#embedding-3rd-party-packages).
+Añadir las dependencias de Maven sigue las prácticas estándar de Maven, y la incrustación de artefactos de terceros (código y paquetes de contenido) se [describe más arriba](#embedding-3rd-party-packages).
 
 >[!TIP]
 >
@@ -275,9 +275,9 @@ Los siguientes son fragmentos de configuración Maven `pom.xml` que se pueden ag
 
 Los paquetes de código y contenido, que se implementan como subpaquetes, deben declarar un tipo de paquete de **aplicación** o **contenido**, según lo que contengan.
 
-#### Tipos de paquetes de contenedores {#container-package-types}
+#### Tipos de paquetes de Contenedor {#container-package-types}
 
-El `all/pom.xml` proyecto contenedor **no** declara un `<packageType>`.
+El proyecto contenedor `all/pom.xml` **no** declara un `<packageType>`.
 
 #### Tipos de paquetes de código (inmutables) {#immutable-package-types}
 
@@ -403,7 +403,7 @@ En el `ui.apps/pom.xml` y cualquier otro `pom.xml` que declare un paquete de có
     ...
 ```
 
-### Incrustación de subpaquetes en el paquete de contenedor {#xml-embeddeds}
+### Incrustación de subpaquetes en el paquete de Contenedor {#xml-embeddeds}
 
 En la `all/pom.xml`, agregue las siguientes `<embeddeds>` directivas a la declaración del `filevault-package-maven-plugin` complemento. Recuerde, **no** use la `<subPackages>` configuración, ya que esto incluirá los subpaquetes en `/etc/packages` lugar de `/apps/my-app-packages/<application|content>/install(.author|.publish)?`.
 
@@ -474,7 +474,7 @@ En la `all/pom.xml`, agregue las siguientes `<embeddeds>` directivas a la declar
 ...
 ```
 
-### Definición de filtro del paquete de contenedor {#xml-container-package-filters}
+### Definición de filtro del paquete de Contenedor {#xml-container-package-filters}
 
 En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **incluya** todas `-packages` las carpetas que contengan subpaquetes para implementar:
 
@@ -482,12 +482,12 @@ En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/v
 <filter root="/apps/my-app-packages"/>
 ```
 
-Si `/apps/*-packages` se utilizan varios en los objetivos incrustados, todos deben enumerarse aquí.
+Si `/apps/*-packages` se utilizan varios en los destinatarios incrustados, todos deben enumerarse aquí.
 
 ### Repositorios de muevos de terceros {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> La adición de más repositorios Maven puede ampliar los tiempos de generación a medida que se comprueben las deficiencias de repositorios Maven adicionales.
+> Añadir más repositorios Maven puede extender los tiempos de generación a medida que se comprueben las deficiencias de repositorios Maven adicionales.
 
 En el proyecto del reactor `pom.xml`, agregue las directivas de repositorio de Maven públicas de terceros necesarias. La configuración completa debe estar disponible `<repository>` desde el proveedor de repositorio de terceros.
 
@@ -536,9 +536,9 @@ En la `ui.content/pom.xml`, agregue las siguientes `<dependencies>` directivas a
 ...
 ```
 
-### Limpieza de la carpeta de destino del proyecto de contenedor {#xml-clean-container-package}
+### Limpieza de la carpeta de Destinatario del proyecto de Contenedor {#xml-clean-container-package}
 
-En el `all/pom.xml` complemento agregue el `maven-clean-plugin` complemento que limpiará el directorio de destino antes de que se compile Maven.
+En el `all/pom.xml` complemento agregue el `maven-clean-plugin` complemento que limpiará el directorio de destinatario antes de crear Maven.
 
 ```xml
 <plugins>
