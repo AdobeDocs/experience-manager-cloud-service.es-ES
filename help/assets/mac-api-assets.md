@@ -3,7 +3,7 @@ title: API de HTTP de Assets
 description: Obtenga información sobre la implementación, el modelo de datos y las características de la API HTTP de Assets. Utilice la API HTTP de Assets para realizar varias tareas en torno a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -25,7 +25,7 @@ Después del tiempo de [!UICONTROL inactividad], un recurso y sus representacion
 
 >[!NOTE]
 >
->Todas las llamadas de API relacionadas con la carga o actualización de recursos o archivos binarios en general (como las representaciones) se eliminan para AEM como una implementación de Cloud Service. Para cargar archivos binarios, utilice en su lugar las API [de carga binarias](developer-reference-material-apis.md#asset-upload-technical) directas.
+>Todas las llamadas de API relacionadas con la carga o actualización de recursos o archivos binarios en general (como las representaciones) se eliminan para AEM como una implementación de Cloud Service. Para cargar archivos binarios, utilice las API [de carga binaria](developer-reference-material-apis.md#asset-upload-technical) directa.
 
 ## Fragmentos de contenido {#content-fragments}
 
@@ -127,7 +127,7 @@ Las propiedades de las entidades contenidas son un subconjunto del conjunto comp
 
 ## Crear una carpeta {#create-a-folder}
 
-Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si se da un * en lugar de un nombre de nodo, el servlet utilizará el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta de URL.
+Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si se da un * en lugar de un nombre de nodo, el servlet utilizará el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
 
 La operación fallará con un código de `500` respuesta si el nodo principal de la ruta dada no existe. Si la carpeta ya existe, se devuelve un código de `409` respuesta.
 
