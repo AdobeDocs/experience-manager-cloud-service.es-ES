@@ -1,16 +1,16 @@
 ---
-title: Procesar recursos con controladores de medios y flujos de trabajo
+title: Procesar recursos con controladores y Flujos de trabajo de medios
 description: Obtenga información sobre los distintos controladores de medios y cómo utilizarlos en flujos de trabajo para realizar tareas en los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
 
-# Procesar recursos con controladores de medios y flujos de trabajo {#processing-assets-using-media-handlers-and-workflows}
+# Procesar recursos con controladores y Flujos de trabajo de medios {#processing-assets-using-media-handlers-and-workflows}
 
-Recursos Adobe Experience Manager (AEM) incluye un conjunto de flujos de trabajo predeterminados y controladores de medios para procesar recursos. El flujo de trabajo define las tareas generales que se van a ejecutar en los recursos y, a continuación, delega las tareas específicas a los controladores de medios, como la generación de miniaturas o la extracción de metadatos.
+Recursos Adobe Experience Manager (AEM) incluye un conjunto de flujos de trabajo y controladores de medios predeterminados para procesar los recursos. El flujo de trabajo define las tareas generales que se van a ejecutar en los recursos y, a continuación, delega las tareas específicas a los controladores de medios, como la generación de miniaturas o la extracción de metadatos.
 
 Se puede definir un flujo de trabajo que se ejecutará automáticamente cuando se cargue un recurso de un tipo concreto en el servidor. Los pasos de procesamiento se definen en función de una serie de controladores de medios de AEM Assets. AEM proporciona algunos controladores [integrados,](#default-media-handlers) y otros adicionales se pueden [personalizar, desarrollar](#creating-a-new-media-handler) o definir delegando el proceso en una herramienta [de línea de](#command-line-based-media-handler)comandos.
 
@@ -18,7 +18,7 @@ Los controladores de medios son servicios dentro de Recursos AEM que realizan ac
 
 >[!NOTE]
 >
->Consulte la página Formatos [admitidos de](file-format-support.md) Recursos para obtener una descripción de todos los formatos admitidos por Recursos AEM, así como de las funciones admitidas para cada formato.
+>Consulte el artículo Formatos [de archivo admitidos por](file-format-support.md) Assets para obtener una descripción de todos los formatos admitidos por Recursos AEM, así como de las funciones admitidas para cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
@@ -82,7 +82,7 @@ Los siguientes controladores de medios están disponibles en Recursos AEM y cont
   <tr>
    <td>OpenOfficeHandler</td>
    <td>com.day.cq.dam.handler.standard.xml.OpenOfficeHandler</td>
-   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.document<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.Presentation<br /><br /> </td>
+   <td>application/vnd.openxmlformats-officedocument.wordprocessingml.documento<br /> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet<br /> application/vnd.openxmlformats-officedocument.presentationml.Presentation<br /><br /> </td>
   </tr>
   <tr>
    <td>EPubHandler</td>
@@ -102,19 +102,19 @@ Todos los controladores realizan las siguientes tareas:
 * extraer todos los metadatos disponibles del recurso.
 * crear una imagen en miniatura a partir del recurso.
 
-Es posible ver los controladores de medios activos:
+Es posible realizar la vista de los controladores de medios activos:
 
 1. In your browser, navigate to `http://localhost:4502/system/console/components`.
 1. Haga clic en el vínculo `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Se muestra una lista con todos los controladores de medios activos.
 
-## Uso de controladores de medios en flujos de trabajo para realizar tareas en recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Uso de controladores de medios en Flujos de trabajo para realizar tareas en recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Los controladores de medios son servicios que generalmente se utilizan en combinación con flujos de trabajo.
 
-AEM tiene algunos flujos de trabajo predeterminados para procesar recursos. Para verlos, abra la consola Flujo de trabajo y haga clic en la ficha **[!UICONTROL Modelos]** : los títulos de flujo de trabajo que comienzan con Recursos AEM son los específicos de los recursos.
+AEM tiene algunos flujos de trabajo predeterminados para procesar recursos. Para vistas, abra la consola Flujo de trabajo y haga clic en la ficha **[!UICONTROL Modelos]** : los títulos de flujo de trabajo que inicio con Recursos AEM son los específicos de los recursos.
 
-Los flujos de trabajo existentes se pueden ampliar y se pueden crear nuevos para procesar recursos según requisitos específicos.
+Los flujos de trabajo existentes se pueden ampliar y se pueden crear nuevos para procesar los recursos según requisitos específicos.
 
 En el siguiente ejemplo se muestra cómo mejorar el flujo de trabajo de **[!UICONTROL sincronización de recursos de AEM]** para que se generen subrecursos para todos los recursos, excepto para los documentos PDF.
 
@@ -131,11 +131,11 @@ Para habilitar/deshabilitar un controlador de medios:
 
 ### Creación de un nuevo controlador de medios {#creating-a-new-media-handler}
 
-Para admitir un nuevo tipo de medio o para ejecutar tareas específicas en un recurso, es necesario crear un nuevo controlador de medios. En esta sección se describe cómo proceder.
+Para admitir un nuevo tipo de medio o ejecutar tareas específicas en un recurso, es necesario crear un nuevo controlador de medios. En esta sección se describe cómo proceder.
 
 #### Clases e interfaces importantes {#important-classes-and-interfaces}
 
-La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la `com.day.cq.dam.core.AbstractAssetHandler` clase.
+La mejor manera de inicio de una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la `com.day.cq.dam.core.AbstractAssetHandler` clase.
 
 Esta clase ya proporciona un descriptor de servicio abstracto. Si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador inherit en `true`.
 
@@ -151,11 +151,11 @@ Esta es un ejemplo de plantilla:
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. La adición de un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. Para Añadir un nuevo tipo MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
 * Clase `com.day.cq.dam.core.AbstractSubAssetHandler`:
    * Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad utilizada comúnmente, además de otra funcionalidad utilizada comúnmente para la extracción de subrecursos.
-   * La mejor manera de iniciar una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
+   * La mejor manera de inicio de una implementación es heredar de una implementación abstracta proporcionada que se ocupa de la mayoría de las cosas y proporciona un comportamiento predeterminado razonable: la clase com.day.cq.dam.core.AbstractAssetHandler.
    * Esta clase ya proporciona un descriptor de servicio abstracto. Si hereda de esta clase y utiliza el complemento maven-sling, asegúrese de establecer el indicador inherit en true.
 
 Es necesario implementar los siguientes métodos:
@@ -170,9 +170,9 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 La interfaz y las clases incluyen:
 
-* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. La adición de un nuevo tipo MIME requiere implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
+* `com.day.cq.dam.api.handler.AssetHandler` interfaz: Esta interfaz describe el servicio que agrega compatibilidad para tipos MIME específicos. Para Añadir un nuevo tipo MIME es necesario implementar esta interfaz. La interfaz contiene métodos para importar y exportar documentos específicos, para crear miniaturas y extraer metadatos.
 * `com.day.cq.dam.core.AbstractAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona funcionalidad común.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` class: Esta clase sirve de base para todas las demás implementaciones de controladores de recursos y proporciona una funcionalidad común utilizada, además de una funcionalidad común utilizada para la extracción de subrecursos.
 
 <!--
 #### Example: create a specific Text Handler {#example-create-a-specific-text-handler}
@@ -391,7 +391,7 @@ Las siguientes conversiones se pueden ejecutar y almacenar automáticamente en R
 
 El `CommandLineProcess` proceso realiza las siguientes operaciones en el orden en que aparecen:
 
-* Filtra el archivo según tipos MIME específicos, si se especifica.
+* Filtros el archivo según tipos MIME específicos, si se especifica.
 * Crea un directorio temporal en el disco que aloja el servidor AEM.
 * Transmite el archivo original al directorio temporal.
 * Ejecuta el comando definido por los argumentos del paso. El comando se está ejecutando en el directorio temporal con los permisos del usuario que ejecuta AEM.
@@ -407,7 +407,7 @@ Para ello, utilizará ImageMagick. ImageMagick es un conjunto de software libre 
 
 Primera instalación de ImageMagick en el disco que aloja el servidor AEM:
 
-1. Instalar ImageMagick: consulte la documentación [de ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Instalar ImageMagick: Consulte la documentación [de ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configure la herramienta para que pueda ejecutar la conversión en la línea de comandos.
 1. Para ver si la herramienta está instalada correctamente, ejecute el siguiente comando `convert -h` en la línea de comandos.
 
@@ -443,7 +443,7 @@ Para probar el flujo de trabajo modificado, agregue un recurso a `/content/dam`.
 
 En esta sección se describe cómo establecer los **argumentos de proceso** de **CommandLineProcess**.
 
-Los valores de los argumentos **de** proceso deben separarse con una coma y no deben comenzar con un espacio en blanco.
+Los valores de los argumentos **de** proceso deben separarse con una coma y no deben estar en inicio con un espacio en blanco.
 
 <table>
  <tbody>
