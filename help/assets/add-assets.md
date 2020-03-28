@@ -1,13 +1,13 @@
 ---
-title: Adición de recursos digitales a Adobe Experience Manager
-description: Adición de recursos digitales a Adobe Experience Manager como un servicio de nube
+title: Añadir recursos digitales a Adobe Experience Manager
+description: Añada sus recursos digitales a Adobe Experience Manager como un servicio de nube
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
 
-# Adición de recursos digitales a Adobe Experience Manager {#add-assets-to-experience-manager}
+# Añadir recursos digitales a Adobe Experience Manager {#add-assets-to-experience-manager}
 
 La carga de archivos digitales en Adobe Experience Manager enriquece el contenido binario del archivo con metadatos enriquecidos, etiquetas inteligentes, representaciones y otros servicios de administración de recursos digitales (DAM). Puede cargar varios tipos de archivos (como imágenes, archivos PDF, archivos sin procesar, etc.) desde la carpeta local o desde una unidad de red a Experience Manager Assets.
 
@@ -15,7 +15,7 @@ Se proporcionan varios métodos de carga. Además de la carga del navegador que 
 
 Nos centraremos en los métodos de carga para los usuarios finales aquí y proporcionaremos vínculos a artículos que describen aspectos técnicos de la carga y la ingesta de recursos con las API y los SDK de Experience Manager.
 
-Aunque puede cargar y administrar cualquier archivo binario en Experience Manager, los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de vista previa/representación. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener más información.
+Aunque puede cargar y administrar cualquier archivo binario en Experience Manager, los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de previsualizaciones y representaciones. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener más información.
 
 También puede elegir que se realice un procesamiento adicional en los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte Procesamiento [](#additional-processing) adicional a continuación para obtener más información.
 
@@ -64,7 +64,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Además, la interfaz de usuario de Recursos muestra el recurso más reciente que
 
 > [!NOTE]
 >
-> Si necesita cargar jerarquías de carpetas anidadas en AEM, consulte Carga [masiva de recursos](#bulk-upload)
+> Para cargar jerarquías de carpetas anidadas en AEM, consulte Carga [masiva de recursos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -110,7 +110,7 @@ Puede elegir reemplazar un recurso existente, crear otra versión o mantener amb
 >
 >Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
 
-Para conservar el recurso duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
+Para conservar el recurso de duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
 
 ### Administración de nombres de archivo y caracteres prohibidos {#filename-handling}
 
@@ -118,7 +118,7 @@ Recursos AEM evita que se carguen recursos con los caracteres prohibidos en sus 
 
 Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
 
-Sin embargo, no se admiten los siguientes caracteres (lista de) separados por espacios:
+Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
 
 * el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
 * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -143,25 +143,25 @@ Además de la interfaz de usuario del navegador web, Experience Manager admite o
 
 ## Procesamiento adicional {#additional-processing}
 
-Para realizar un procesamiento adicional en los recursos cargados, puede utilizar perfiles de procesamiento de recursos en la carpeta en la que se cargan los recursos. Están disponibles en el cuadro de diálogo **[!UICONTROL Propiedades]** de la carpeta.
+Para realizar un procesamiento adicional en los recursos cargados, puede utilizar perfiles de perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos. Están disponibles en el cuadro de diálogo **[!UICONTROL Propiedades]** de la carpeta.
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
 Están disponibles los siguientes perfiles:
 
 * [Los perfiles](metadata-profiles.md) de metadatos permiten aplicar propiedades de metadatos predeterminadas a los recursos cargados en esa carpeta
-* [Los perfiles](asset-microservices-configure-and-use.md#processing-profiles) de procesamiento le permiten aplicar el procesamiento de representaciones y generar representaciones además de las predeterminadas
+* [Los perfiles](asset-microservices-configure-and-use.md#processing-profiles) de procesamiento permiten aplicar el procesamiento de representaciones y generar representaciones además de las predeterminadas
 
-Además, si Dynamic Media está habilitado en su entorno:
+Además, si Dynamic Media está habilitado en el entorno:
 
-* [Los perfiles](dynamic-media/image-profiles.md) de imagen le permiten aplicar un recorte específico (recorte **** inteligente y recorte de píxeles) y una configuración de enfoque a los recursos cargados
+* [Los perfiles de imagen](dynamic-media/image-profiles.md) le permiten aplicar un recorte específico (recorte **[!UICONTROL inteligente]** y recorte de píxeles) y una configuración perfeccionada a los recursos cargados
 * [Los perfiles](dynamic-media/video-profiles.md) de vídeo le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros)
 
 > [!NOTE]
 >
 > El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para recortar o transformar los medios que se deben realizar al entregar los recursos
 
-Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **[!UICONTROL de procesamiento]** .
+Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **[!UICONTROL de]** procesamiento.
 
 ## Carga o ingesta de recursos mediante API {#upload-using-apis}
 
