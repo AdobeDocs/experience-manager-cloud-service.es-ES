@@ -1,13 +1,13 @@
 ---
-title: AEM como SDK de servicio de nube
+title: AEM as a Cloud Service SDK
 description: 'Para completar '
 translation-type: tm+mt
-source-git-commit: a7dc007230632bf8343004794b2bc4c5baaf4e05
+source-git-commit: 2142bce6296e671fd1039dec8b0686c609611d98
 
 ---
 
 
-# AEM como SDK de servicio de nube {#aem-as-a-cloud-service-sdk}
+# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 El SDK de AEM como servicio de nube está compuesto por los siguientes artefactos:
 
@@ -24,7 +24,7 @@ Además, algunos clientes que se implementaron previamente con AEM 6.5 o version
 ## Acceso a AEM como SDK de servicio de nube {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Puede consultar el icono **Acerca de Adobe Experience Manager** de AEM Admin Console para conocer la versión de AEM que está ejecutando en producción.
-* El archivo jar y Dispatcher Tools de inicio rápido se pueden descargar como archivo zip desde el portal [de distribución de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos de servicio de nube.
+* El archivo jar y Dispatcher Tools de inicio rápido se pueden descargar como archivo zip desde el portal [de distribución de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos de Cloud Service.
 * El Jar de la API de Java y Javadoc Jar se pueden descargar mediante herramientas muevas, ya sea con la línea de comandos o con su IDE preferido.
 * Las páginas de proyecto principales deben hacer referencia al siguiente paquete de Jar de API. Esta dependencia también se debe hacer referencia a ella en cualquier página de subpaquete.
 
@@ -73,24 +73,24 @@ A continuación se muestra el procedimiento recomendado para actualizar un entor
 1. Tenga en cuenta la nueva versión de AEM, que se indica en Cloud Manager (esto se utilizará para identificar la nueva versión de Jar de QuickStart para seguir descargándola)
 1. Descargue el JAR de inicio rápido cuya versión coincida con la versión de AEM de producción desde el portal de distribución de software
 1. Cree una nueva carpeta y coloque la nueva barra de inicio rápido dentro
-1. Inicie el nuevo inicio rápido con los modos de ejecución deseados (ya sea cambiando el nombre del archivo o pasando los modos de ejecución a través de `-r`).
+1. Inicio el nuevo inicio rápido con los modos de ejecución deseados (ya sea cambiando el nombre del archivo o pasando los modos de ejecución a través de `-r`).
    * Asegúrese de que no quede nada del inicio rápido anterior en la carpeta.
 1. Cree su aplicación de AEM
 1. Implementar la aplicación de AEM en AEM local mediante PackageManager
-1. Instale los paquetes de contenido mutable necesarios para las pruebas del entorno local mediante PackageManager
+1. Instale los paquetes de contenido mutable necesarios para las pruebas de entorno locales mediante PackageManager
 1. Continúe con el desarrollo e implemente los cambios según sea necesario
 
 Si hay contenido que debe instalarse con cada nueva versión de inicio rápido de AEM, inclúyalo en un paquete de contenido y en el control de código fuente del proyecto. A continuación, instálela cada vez.
 
 La recomendación es actualizar el SDK con frecuencia (por ejemplo, cada dos semanas) y disponer de un estado local completo todos los días para no depender accidentalmente de los datos de estado de la aplicación.
 
-En caso de que dependa de CryptoSupport ([ya sea configurando las credenciales de Cloudservices o el servicio de correo SMTP en AEM o utilizando la API de CryptoSupport en la aplicación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente en el primer inicio de un entorno AEM. Aunque la configuración de nube se encarga de reutilizar automáticamente la CryptoKey específica del entorno, es necesario inyectar la criptoclave en el entorno de desarrollo local.
+En caso de que dependa de CryptoSupport ([ya sea configurando las credenciales de Cloudservices o el servicio de correo SMTP en AEM o utilizando la API de CryptoSupport en la aplicación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente en el primer inicio de un entorno de AEM. Aunque la configuración de nube se encarga de reutilizar automáticamente la clave CryptoKey específica del entorno, es necesario inyectar la clave criptográfica en el entorno de desarrollo local.
 
 De forma predeterminada, AEM está configurado para almacenar los datos clave en la carpeta de datos de una carpeta, pero para facilitar su reutilización en el desarrollo, el proceso de AEM se puede inicializar al iniciar por primera vez con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Esto generará los datos de cifrado en &quot;`/etc/key`&quot;.
 
 Para poder reutilizar paquetes de contenido que contengan los valores cifrados, debe seguir estos pasos:
 
-* Cuando inicialmente inicie el archivo local quickstart.jar, asegúrese de agregar el parámetro siguiente: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Se recomienda, pero es opcional, agregarla siempre.
-* La primera vez que inició una instancia, cree un paquete que contenga un filtro para la raíz &quot;`/etc/key`&quot;. Esto mantendrá el secreto para que se vuelva a utilizar en todos los entornos para los que desea que se reutilicen
+* Cuando inicialmente inicio el archivo local quickstart.jar, asegúrese de agregar el parámetro siguiente: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Se recomienda, pero es opcional, agregarla siempre.
+* La primera vez que inició una instancia, cree un paquete que contenga un filtro para la raíz &quot;`/etc/key`&quot;. Esto mantendrá el secreto para que se reutilice en todos los entornos para los que se desea que se reutilicen
 * Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para agregarlo al paquete que se reutilizará en las instalaciones
-* Siempre que gire una instancia nueva (ya sea para reemplazarla con una nueva versión o cuando varios entornos de desarrollo deban compartir las credenciales para la prueba), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la criptoclave está sincronizada.
+* Siempre que gire una instancia nueva (ya sea para reemplazarla con una nueva versión o cuando varios entornos de desarrollo deben compartir las credenciales para la prueba), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la criptoclave está sincronizada.
