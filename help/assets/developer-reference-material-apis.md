@@ -3,7 +3,7 @@ title: 'API de recursos para la administración de recursos digitales en Adobe E
 description: Las API de recursos permiten operaciones básicas de creación, lectura, actualización y eliminación (CRUD) para administrar recursos, incluidos binarios, metadatos, representaciones, comentarios y fragmentos de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ---
 
@@ -20,7 +20,7 @@ Give a list of and overview of all reference information available.
 
 ## Carga de recursos {#asset-upload-technical}
 
-Experience Manager como servicio en la nube ofrece una nueva forma de cargar recursos en el repositorio: carga binaria directa en el almacenamiento en la nube binario. En esta sección se ofrece una descripción general técnica.
+Experience Manager como servicio en la nube ofrece una nueva forma de cargar recursos en el repositorio: carga binaria directa en el almacenamiento de nube binario. En esta sección se ofrece una descripción general técnica.
 
 ### Descripción general de la carga binaria directa {#overview-binary-upload}
 
@@ -34,8 +34,8 @@ El algoritmo de alto nivel para cargar un binario es:
 
 Las diferencias importantes en comparación con versiones anteriores de AEM incluyen:
 
-* Los binarios no pasan por AEM, que ahora simplemente está coordinando el proceso de carga con el almacenamiento en la nube binaria configurado para la implementación
-* El almacenamiento binario en la nube está precedido por una red de entrega de contenido (CDN, Red perimetral), que acerca el punto final de carga al cliente, lo que ayuda a mejorar el rendimiento de carga y la experiencia del usuario, especialmente para equipos distribuidos que cargan recursos
+* Los binarios no pasan por AEM, que ahora simplemente está coordinando el proceso de carga con el almacenamiento de nube binario configurado para la implementación
+* El almacenamiento de nube binaria está precedido por una red de Envío de contenido (CDN, Red perimetral), que acerca el punto final de carga al cliente, lo que ayuda a mejorar el rendimiento de carga y la experiencia del usuario, especialmente para los equipos distribuidos que cargan recursos
 
 Este método debería proporcionar una gestión más escalable y eficaz de las cargas de recursos.
 
@@ -80,9 +80,9 @@ Si se realiza correctamente, la solicitud responderá con un código de estado d
 * `(string) folderPath`:: Ruta de acceso completa a la carpeta en la que se está cargando el binario.
 * `(array) (files)`:: Una lista de elementos cuya longitud y orden coincidirán con la longitud y el orden de la lista de información binaria proporcionada en la solicitud de inicio.
 * `(string) fileName`:: El nombre del binario correspondiente, tal como se indica en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
-* `(string) mimeType`:: El tipo MIME del binario correspondiente, tal como se proporciona en la solicitud in initiate. Este valor debe incluirse en la solicitud completa.
+* `(string) mimeType`:: El tipo mime del binario correspondiente, tal como se proporciona en la solicitud de inicio in. Este valor debe incluirse en la solicitud completa.
 * `(string) uploadToken`:: Un distintivo de carga para el binario correspondiente. Este valor debe incluirse en la solicitud completa.
-* `(array) uploadURIs`:: Una lista de cadenas cuyos valores son URI completos a los que se debe cargar el contenido del binario (consulte [Cargar binario](#upload-binary)).
+* `(array) uploadURIs`:: Una lista de cadenas cuyos valores son URIs completos a las que se debe cargar el contenido del binario (consulte [Cargar binario](#upload-binary)).
 * `(number) minPartSize`:: Longitud mínima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
 * `(number) maxPartSize`:: Longitud máxima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
 
@@ -93,8 +93,8 @@ El resultado del inicio de una carga incluirá uno o varios valores de URI de ca
 Una forma posible de lograrlo es calcular el tamaño de la pieza en función del número de URI de carga proporcionados por la API. Ejemplo suponiendo que el tamaño total del binario es de 20.000 bytes y el número de URI de carga es de 2:
 
 * Calcule el tamaño de la pieza dividiendo el tamaño total por el número de URI: 20.000 / 2 = 10.000
-* Intervalo de bytes POST 0-9,999 del binario al primer URI de la lista de URI de carga
-* Intervalo de bytes POST 10.000-19.999 del binario al segundo URI de la lista de URI de carga
+* Intervalo de bytes POST 0-9,999 del binario al primer URI en la lista de URI de carga
+* Intervalo de bytes POST 10.000-19.999 del binario al segundo URI en la lista de URI de carga
 
 Si se realiza correctamente, el servidor responde a cada solicitud con un código `201` de estado.
 
@@ -108,7 +108,7 @@ Una vez cargadas todas las partes de un binario, el paso final es enviar una sol
 * `(bool) createVersion`: Opcional. Si el valor es true y ya existe un recurso con el nombre especificado, la instancia creará una nueva versión del recurso.
 * `(string) versionLabel`: Opcional. Si se crea una nueva versión, la etiqueta que se asociará a la versión.
 * `(string) versionComment`: Opcional. Si se crea una nueva versión, los comentarios que se asociarán a la versión.
-* `(bool) replace`::Opcional: Si el valor es true y ya existe un recurso con el nombre especificado, la instancia eliminará el recurso y lo volverá a crear.
+* `(bool) replace`:: Opcional: Si el valor es true y ya existe un recurso con el nombre especificado, la instancia eliminará el recurso y lo volverá a crear.
 
 >!![NOTE]
 >
@@ -129,7 +129,7 @@ Para obtener más información sobre los algoritmos de carga o para crear sus pr
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Para Experience Manager como servicio de nube, solo se admiten las nuevas API de carga. Las API de Experience Manager 6.5 están en desuso.
@@ -144,18 +144,18 @@ Los métodos relacionados con la carga o actualización de recursos o representa
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
 
 
-## Flujos de trabajo de procesamiento y postprocesamiento de recursos {#post-processing-workflows}
+## flujos de trabajo de procesamiento y postprocesamiento de recursos {#post-processing-workflows}
 
-La mayor parte del procesamiento de recursos se ejecuta en función de la configuración de perfiles **[!UICONTROL de]** procesamiento mediante [los microservicios](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de recursos y no requiere extensiones de desarrollador.
+La mayor parte del procesamiento de recursos se ejecuta en función de la configuración **[!UICONTROL de Perfiles]** de procesamiento mediante [los microservicios](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de recursos y no requiere extensiones de desarrollador.
 
-Para la configuración del flujo de trabajo posterior al procesamiento, los flujos de trabajo estándar de AEM con extensiones (por ejemplo, se pueden utilizar pasos personalizados). Consulte la subsección siguiente para comprender qué pasos del flujo de trabajo se pueden utilizar en los flujos de trabajo posteriores al procesamiento de recursos.
+Para la configuración del flujo de trabajo posterior al procesamiento, se pueden utilizar Flujos de trabajo de AEM estándar con extensiones (por ejemplo, se pueden usar pasos personalizados). Revise la subsección siguiente para comprender qué pasos del flujo de trabajo se pueden utilizar en los flujos de trabajo de postprocesamiento de recursos.
 
 ### Pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
 >[!NOTE]
 Esta sección se aplica principalmente a los clientes que actualizan a AEM como servicio de nube desde versiones anteriores de AEM.
 
-Debido a un nuevo modelo de implementación introducido con Experience Manager como servicio de nube, es posible que algunos pasos de flujo de trabajo utilizados en el flujo de trabajo antes de la introducción de los microservicios de recursos ya no sean compatibles con los flujos de trabajo posteriores al procesamiento. `DAM Update Asset` Tenga en cuenta que la mayoría de ellos son reemplazados por un método mucho más sencillo de configurar y utilizar los microservicios de recursos.
+Debido a un nuevo modelo de implementación introducido con Experience Manager como servicio de nube, es posible que algunos pasos de flujo de trabajo utilizados en el flujo de trabajo antes de la introducción de los `DAM Update Asset` microservicios de recursos ya no sean compatibles con los flujos de trabajo posteriores al procesamiento. Tenga en cuenta que la mayoría de ellos son reemplazados por un método mucho más sencillo de configurar y utilizar los microservicios de recursos.
 
 A continuación se muestra una lista de los modelos técnicos de flujo de trabajo y su nivel de asistencia en AEM como servicio de nube:
 
