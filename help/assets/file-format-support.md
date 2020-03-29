@@ -3,22 +3,22 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
-# Formatos de archivo compatibles con los recursos {#supported-file-formats}
+# Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager como servicio de nube admite funciones básicas de administración de contenido: almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Recursos Adobe Experience Manager admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
+Adobe Experience Manager como servicio de nube admite funciones básicas de gestor de contenido — almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Recursos Adobe Experience Manager admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
 
-Además, Experience Manager Assets ofrece una compatibilidad ampliada para generar vistas previas y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
+Además, Experience Manager Assets ofrece una compatibilidad ampliada para generar previsualizaciones y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
 
 La leyenda siguiente describe el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
 | ------------------------------------------------------------ | --------------------------- |
-| ✓ | Admitido |
+| ✓ | Compatible |
 | * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
 
@@ -29,7 +29,7 @@ Los aspectos más destacados incluyen:
 * Formatos [de archivo clave de](#adobe-formats) Adobe producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, InDesign, Illustrator, XD, Dimension y Acrobat/PDF.
 * Formatos [de archivo de](#image-formats)imágenes clave.
 * [Formatos](#camera-raw-formats) de archivo de Camera Raw para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Formatos [comunes de](#document-formats)documento, incluidos los formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) y [Abrir documento](#opendocument-formats) .
+* Formatos [de](#document-formats)documento comunes, incluidos los formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) y [Open Documento](#opendocument-formats) .
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
 Las columnas de las siguientes tablas proporcionan la siguiente información:
@@ -60,7 +60,7 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 | PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 
-\* Para INDD (archivos de InDesign), el tamaño de la representación viene determinado por la vista previa incrustada en el archivo INDD. Configure las preferencias en InDesign (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, Tamaño]** de vista previa) para incrustar una representación más grande.
+\* Para INDD (archivos de InDesign), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en InDesign (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de Previsualización con Documentos, Tamaño]** de Previsualización) para incrustar una representación más grande.
 
 ### Formatos de imagen {#image-formats}
 
@@ -106,7 +106,7 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 | SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-### Formatos de documento {#document-formats}
+### Formatos de Documento {#document-formats}
 
 | Formato de archivo | TXT | XMP |
 | ----------- | --- | --- |
@@ -169,7 +169,7 @@ Assets as a Cloud Service ofrece compatibilidad con XMP para estos formatos de a
 
 ## Formatos de documento admitidos {#doc-formats}
 
-Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
+Los formatos de Documento admitidos para las funciones de administración de recursos son los siguientes.
 
 | Formato de archivo | Almacenamiento | Gestión de metadatos | [Recursos de red](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|
