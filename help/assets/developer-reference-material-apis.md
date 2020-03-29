@@ -3,7 +3,7 @@ title: 'API de recursos para la administración de recursos digitales en Adobe E
 description: Las API de recursos permiten operaciones básicas de creación, lectura, actualización y eliminación (CRUD) para administrar recursos, incluidos binarios, metadatos, representaciones, comentarios y fragmentos de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -55,9 +55,7 @@ El tipo de contenido del cuerpo de la solicitud deben ser datos `application/x-w
 * `(string) fileName`: Requerido. Nombre del recurso tal como aparecerá en la instancia.
 * `(number) fileSize`: Requerido. Longitud total, en bytes, del binario que se va a cargar.
 
-Tenga en cuenta que se puede utilizar una sola solicitud para iniciar cargas para varios binarios, siempre y cuando cada binario contenga los campos obligatorios.
-
-Si se realiza correctamente, la solicitud responderá con un código de estado de 201 y un cuerpo que contenga datos JSON en el siguiente formato:
+Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, siempre que cada binario contenga los campos obligatorios. Si se realiza correctamente, la solicitud responde con un código `201` de estado y un cuerpo que contiene datos JSON en el siguiente formato:
 
 ```
 {
@@ -74,17 +72,17 @@ Si se realiza correctamente, la solicitud responderá con un código de estado d
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`:: URI que debe invocarse cuando el binario ha terminado de cargarse. Podría ser un URI absoluto o relativo, y los clientes deberían poder gestionar cualquiera de ellos. es decir, el valor puede ser `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` (consulte Carga [](#complete-upload)completa).
-* `(string) folderPath`:: Ruta de acceso completa a la carpeta en la que se está cargando el binario.
-* `(array) (files)`:: Una lista de elementos cuya longitud y orden coincidirán con la longitud y el orden de la lista de información binaria proporcionada en la solicitud de inicio.
-* `(string) fileName`:: El nombre del binario correspondiente, tal como se indica en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
-* `(string) mimeType`:: El tipo mime del binario correspondiente, tal como se proporciona en la solicitud de inicio in. Este valor debe incluirse en la solicitud completa.
-* `(string) uploadToken`:: Un distintivo de carga para el binario correspondiente. Este valor debe incluirse en la solicitud completa.
-* `(array) uploadURIs`:: Una lista de cadenas cuyos valores son URIs completos a las que se debe cargar el contenido del binario (consulte [Cargar binario](#upload-binary)).
-* `(number) minPartSize`:: Longitud mínima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
-* `(number) maxPartSize`:: Longitud máxima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
+* `completeURI` (cadena): Invoque este URI cuando termine de cargarse el binario. El URI puede ser un URI absoluto o relativo y los clientes deben poder gestionar cualquiera de los dos. Es decir, el valor puede ser `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Ver carga [completa](#complete-upload).
+* `folderPath` (cadena): Ruta de acceso completa a la carpeta en la que se está cargando el binario.
+* `(files)` (matriz): Una lista de elementos cuya longitud y orden coincidirán con la longitud y el orden de la lista de información binaria proporcionada en la solicitud de inicio.
+* `fileName` (cadena): El nombre del binario correspondiente, tal como se indica en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
+* `mimeType` (cadena): El tipo mime del binario correspondiente, tal como se proporciona en la solicitud de inicio in. Este valor debe incluirse en la solicitud completa.
+* `uploadToken` (cadena): Un distintivo de carga para el binario correspondiente. Este valor debe incluirse en la solicitud completa.
+* `uploadURIs` (matriz): Una lista de cadenas cuyos valores son URIs completos a las que se debe cargar el contenido del binario (consulte [Cargar binario](#upload-binary)).
+* `minPartSize` (número): Longitud mínima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
+* `maxPartSize` (número): Longitud máxima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
 
 ### Cargar binario {#upload-binary}
 
