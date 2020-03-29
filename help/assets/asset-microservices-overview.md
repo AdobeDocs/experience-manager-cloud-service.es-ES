@@ -3,7 +3,7 @@ title: Conozca cómo los microservicios de recursos pueden procesar sus recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -13,19 +13,18 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-Adobe Experience Manager como servicio de nube proporciona una forma nativa de aprovechar las aplicaciones y capacidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos.
+Adobe Experience Manager como servicio de nube ofrece una forma nativa de aprovechar las aplicaciones y capacidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos.
 
 Los microservicios de recursos proporcionan un procesamiento escalable y flexible de recursos mediante servicios en la nube, que Adobe administra para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los beneficios clave son:
 
 * Arquitectura escalable que permite un procesamiento sin problemas para operaciones con gran cantidad de recursos.
-* Indexación eficaz y extracciones de texto que no afectan al rendimiento de los entornos de Experience Manager.
+* extracciones de texto e indexación eficaces que no afectan al rendimiento de los entornos de Experience Manager.
 * Minimice la necesidad de flujos de trabajo para gestionar el procesamiento de recursos en el entorno de Experience Manager. Esto libera recursos, minimiza la carga en Experience Manager y proporciona escalabilidad.
 * Se ha mejorado la resiliencia del procesamiento de recursos. Los posibles problemas al gestionar archivos atípicos, como archivos dañados o archivos extremadamente grandes, ya no afectan al rendimiento de la implementación.
 * Configuración simplificada del procesamiento de recursos para los administradores.
-* Adobe administra y mantiene la configuración de procesamiento de recursos para proporcionar la configuración más conocida para gestionar representaciones, metadatos y extracción de texto para distintos tipos de archivos
+* Adobe administra y mantiene la configuración de procesamiento de recursos para proporcionar la configuración más conocida para la gestión de representaciones, metadatos y extracción de texto para distintos tipos de archivos
 * Los servicios nativos de procesamiento de archivos de Adobe se utilizan cuando procede, lo que proporciona una salida de alta fidelidad y una gestión [eficaz de los formatos](file-format-support.md)propiedad de Adobe.
 * Capacidad de configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
 
@@ -33,7 +32,7 @@ Los microservicios de recursos ayudan a evitar la necesidad de herramientas de p
 
 ## Arquitectura de alto nivel {#asset-microservices-architecture}
 
-Un diagrama de arquitectura de alto nivel representa los elementos clave de la ingesta y el procesamiento y flujo de recursos en todo el sistema.
+Un diagrama de arquitectura de alto nivel muestra los elementos clave de la ingesta y el procesamiento y flujo de recursos en todo el sistema.
 
 <!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
@@ -44,19 +43,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Los pasos clave de la ingestión y el procesamiento mediante microservicios de activos son:
 
-* Los clientes, como los exploradores web o Adobe Asset Link, envían una solicitud de carga a Experience Manager y comienzan a cargar el binario directamente en el almacenamiento en la nube binario.
+* Los clientes, como los exploradores web o Adobe Asset Link, envían una solicitud de carga a Experience Manager y inicio que cargan el binario directamente en el almacenamiento de nube binario.
 * Cuando se completa la carga binaria directa, el cliente notifica a Experience Manager.
 * Experience Manager envía una solicitud de procesamiento a los microservicios de recursos. El contenido de la solicitud depende de la configuración de perfiles de procesamiento de Experience Manager que especifique, qué representaciones deben generarse
 * Assets microservices back-end recibe la solicitud, la envía a uno o varios microservicios en función de la solicitud. Cada microservicio accede al binario original directamente desde el almacén de nube binario.
-* Los resultados del procesamiento, como las representaciones, se almacenan en el almacenamiento en la nube binaria.
+* Los resultados del procesamiento, como las representaciones, se almacenan en el almacenamiento de nube binaria.
 * Se notifica a Experience Manager que el procesamiento se ha completado junto con punteros directos a los binarios (representaciones) generados, que luego están disponibles en Experience Manager para el recurso cargado
 
-Este es el flujo básico de procesamiento e ingesta de recursos. Si está configurado, Experience Manager también puede iniciar el modelo de flujo de trabajo del cliente para realizar el posprocesamiento del recurso, por ejemplo, para ejecutar algunos pasos personalizados específicos del entorno del cliente, como la obtención de información de los sistemas empresariales del cliente para agregarla a las propiedades del recurso.
+Este es el flujo básico de procesamiento e ingesta de recursos. Si está configurado, Experience Manager también puede realizar inicios en el modelo de flujo de trabajo del cliente para realizar el procesamiento posterior del recurso, por ejemplo, para ejecutar algunos pasos personalizados específicos del entorno del cliente, como la obtención de información de los sistemas empresariales del cliente para agregarla a las propiedades del recurso.
 
-La ingestión y el flujo de procesamiento muestran algunos conceptos clave aprovechados por la arquitectura de microservicios de recursos para Experience Manager:
+La ingestión y el flujo de procesamiento son conceptos clave de la arquitectura de los microservicios de recursos para Experience Manager.
 
-* **Acceso** binario directo: los recursos se transportan (y se cargan) al almacén binario de la nube una vez configurados para los entornos de Experience Manager y, a continuación, AEM, los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
-* **Procesamiento** externo: el procesamiento de recursos se realiza fuera del entorno de AEM y guarda sus recursos (CPU, memoria) para proporcionar funcionalidades clave de Digital Asset Management y admitir el trabajo interactivo con el sistema para los usuarios finales
+* **Acceso** binario directo: Los recursos se transportan (y se cargan) al almacén binario de la nube una vez configurados para los entornos de Experience Manager y, a continuación, AEM, los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
+* **Procesamiento** externo: El procesamiento de los recursos se realiza fuera del entorno AEM y guarda sus recursos (CPU, memoria) para proporcionar funciones clave de la administración de recursos digitales y admitir el trabajo interactivo con el sistema para los usuarios finales
 
 ## Carga de recursos con acceso binario directo {#asset-upload-with-direct-binary-access}
 
@@ -64,18 +63,18 @@ Los clientes de Experience Manager, que forman parte de la oferta de productos, 
 
 Puede utilizar herramientas de carga personalizadas, que funcionan directamente con las API HTTP de AEM. Puede utilizar estas API directamente o utilizar y ampliar los siguientes proyectos de código abierto que implementan el protocolo de carga:
 
-* [Abrir biblioteca de carga de código fuente](https://github.com/adobe/aem-upload)
+* [Biblioteca de carga de código abierto](https://github.com/adobe/aem-upload)
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
 
 Para obtener más información, consulte [Carga de recursos](add-assets.md).
 
-## Adición de recursos personalizados posteriores al procesamiento {#add-custom-asset-post-processing}
+## Añadir postprocesamiento de recursos personalizados {#add-custom-asset-post-processing}
 
-Aunque la mayoría de los clientes deben obtener todos sus requisitos de procesamiento de recursos de los microservicios de recursos configurables, algunos podrían necesitar un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en base a la información proveniente de otros sistemas a través de integraciones. En estos casos, se pueden utilizar flujos de trabajo personalizados posteriores al procesamiento.
+Aunque la mayoría de los clientes deben obtener todos sus requisitos de procesamiento de recursos de los microservicios de recursos configurables, algunos podrían necesitar un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en base a la información proveniente de otros sistemas a través de integraciones. En casos como este, se pueden utilizar flujos de trabajo de postprocesamiento personalizados.
 
-Los flujos de trabajo posteriores al procesamiento son modelos habituales de flujo de trabajo de AEM, creados y administrados en el editor de flujo de trabajo de AEM. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados y los flujos de trabajo personalizados disponibles.
+Los flujos de trabajo posteriores al procesamiento son modelos habituales de flujo de trabajo de AEM, creados y administrados en el editor de flujo de trabajo de AEM. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados y flujos de trabajo personalizados disponibles.
 
-Adobe Experience Manager se puede configurar para que active automáticamente los flujos de trabajo posteriores al procesamiento una vez finalizado el procesamiento de recursos.
+Adobe Experience Manager se puede configurar para que active automáticamente los flujos de trabajo posteriores al procesamiento después de que finalice el procesamiento de recursos.
 
 <!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
