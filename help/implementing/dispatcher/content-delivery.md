@@ -2,7 +2,7 @@
 title: Envío de contenido
 description: 'Envío de contenido '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ El almacenamiento en caché en CDN se puede configurar mediante reglas de despac
 
 * de forma predeterminada, el explorador almacena en caché durante cinco minutos, según el encabezado de control de caché emitido por la capa apache. La CDN también respeta este valor.
 * se puede anular para todo el contenido HTML/Texto definiendo la `EXPIRATION_TIME` variable en `global.vars` el uso de AEM como herramienta de distribución del SDK de Cloud Service.
-
-Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la siguiente regla:
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * se puede anular en un nivel más fino mediante las siguientes directivas apache mod_headers:
 
 ```
