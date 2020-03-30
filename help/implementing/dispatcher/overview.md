@@ -2,7 +2,7 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ## Configuración y pruebas de Apache y Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-En esta sección se describe cómo estructurar AEM como una configuración de Apache y Dispatcher de servicio de nube, así como cómo validarla y ejecutarla localmente antes de implementarla en entornos de nube. También describe la depuración en entornos de nube. Para obtener información adicional sobre Dispatcher, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)AEM Dispatcher.
+En esta sección se describe cómo estructurar AEM como una configuración de Apache y Dispatcher de servicio de nube, así como cómo validarla y ejecutarla localmente antes de implementarla en entornos de nube. También se describe la depuración en entornos de nube. Para obtener información adicional sobre Dispatcher, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)AEM Dispatcher.
 
 >[!NOTE]
 >Los usuarios de Windows necesitarán utilizar Windows 10 Professional u otras distribuciones que admitan Docker. Se trata de un requisito previo para ejecutar y depurar Dispatcher en un equipo local. Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux del SDK, pero el SDK de Windows se puede utilizar de forma similar.
@@ -26,7 +26,7 @@ Las herramientas de Dispatcher forman parte del conjunto de AEM como SDK de Clou
 
 ## Descarga y extracción de las herramientas {#extracting-the-sdk}
 
-Las Herramientas de Dispatcher se pueden descargar desde un archivo zip en el portal de distribución [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos de servicio de nube. Cualquier nueva configuración disponible en esa nueva versión de herramientas de distribuidor se puede utilizar para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
+Las Herramientas de Dispatcher se pueden descargar desde un archivo zip en el portal de distribución [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos de Cloud Service. Cualquier nueva configuración disponible en esa nueva versión de herramientas de distribuidor se puede utilizar para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
 
 **Para macOS y Linux**, descargue la secuencia de comandos shell en una carpeta de su equipo, haga que sea ejecutable y ejecútela. Se extraerán los archivos de herramientas de despachante debajo del directorio en el que se almacenó (donde `version` es la versión de las herramientas de despachante).
 
@@ -126,15 +126,15 @@ Este archivo se incluye dentro de `.farm` los archivos. Tiene un conjunto de reg
 
 * `conf.dispatcher.d/virtualhosts/virtualhosts.any`
 
-Este archivo se incluye dentro de `.farm` los archivos. Tiene una lista de nombres de host o rutas de URI que deben coincidir con la coincidencia de glob. Esto determina el servidor que se utilizará para proporcionar una solicitud.
+Este archivo se incluye dentro de `.farm` los archivos. Tiene una lista de nombres de host o rutas de URI para que coincidan con la coincidencia de glob. Esto determina el servidor que se utilizará para proporcionar una solicitud.
 
-Los archivos anteriores hacen referencia a los archivos de configuración inmutables que se enumeran a continuación. Los distribuidores no procesarán los cambios en los archivos inmutables en los entornos de Cloud.
+Los archivos anteriores hacen referencia a los archivos de configuración inmutables que se enumeran a continuación. Los cambios en los archivos inmutables no serán procesados por los distribuidores en los entornos de la nube.
 
 **Archivos de configuración inmutables**
 
 Estos archivos forman parte del marco de base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
 
-Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier declaración o anulación adicional. Cuando se implementa la configuración del despachante en un entorno de nube, se utilizará la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
+Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier declaración o anulación adicional. Cuando se implementa la configuración del distribuidor en un entorno de nube, se utilizará la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -170,7 +170,7 @@ Parte del marco base, utilizado para ilustrar cómo se incluyen las granjas de d
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
-Filtros predeterminados adecuados para un proyecto estándar. Si necesita personalización, modifique `filters.any`. En la personalización, puede incluir primero los filtros predeterminados si se adaptan a sus necesidades.
+filtros predeterminados adecuados para un proyecto estándar. Si necesita personalización, modifique `filters.any`. En la personalización, puede incluir primero los filtros predeterminados si se adaptan a sus necesidades.
 
 * `conf.dispatcher.d/renders/default_renders.any`
 
@@ -232,7 +232,7 @@ La siguiente tabla muestra los módulos apache admitidos:
 
 Los clientes no pueden agregar módulos arbitrarios, sin embargo se puede considerar incluir módulos adicionales en el producto en el futuro. Los clientes pueden encontrar la lista de directivas disponibles para una versión de Dispatcher determinada ejecutando &quot;validator whitelist&quot; en el SDK, como se describe en la documentación de Dispatcher Tools.
 
-La lista blanca contiene una lista de directivas Apache que están permitidas en una configuración de cliente. Si una directiva no está en la lista de direcciones permitidas, la herramienta registra un error y devuelve un código de salida distinto de cero. Si no se proporciona ninguna lista blanca en la línea de comandos (que es la forma de invocarla), la herramienta utiliza una lista blanca predeterminada que Cloud Manager utilizará para la validación antes de implementarla en los entornos de Cloud.
+La lista blanca contiene una lista de directivas Apache que se permiten en una configuración de cliente. Si una directiva no está en la lista de direcciones permitidas, la herramienta registra un error y devuelve un código de salida distinto de cero. Si no se proporciona ninguna lista blanca en la línea de comandos (que es la forma de invocarla), la herramienta utiliza una lista blanca predeterminada que Cloud Manager utilizará para la validación antes de implementarla en entornos de nube.
 
 Además, analiza todos los archivos con patrones `conf.dispatcher.d/enabled_farms/*.farm` y comprueba que:
 
@@ -258,13 +258,13 @@ A continuación se presentan técnicas de solución de problemas para depurar er
 
 **no se puede encontrar una`conf.dispatcher.d`subcarpeta en el archivo**
 
-El archivo debe contener carpetas `conf.d` y `conf.dispatcher.d`. Tenga en cuenta que **no debe** usar el prefijo `etc/httpd` en el archivo.
+El archivo debe contener las carpetas `conf.d` y `conf.dispatcher.d`. Tenga en cuenta que **no debe** usar el prefijo `etc/httpd` en el archivo.
 
 **no se pudo encontrar ninguna granja en`conf.dispatcher.d/enabled_farms`**
 
 Las granjas habilitadas deben ubicarse en la subcarpeta mencionada.
 
-**el archivo incluido (...) debe tener el nombre:...**
+**el archivo incluido (...) debe tener el nombre: ...**
 
 Hay dos secciones en la configuración del conjunto de servidores que **deben** incluir un archivo específico: `/renders` y `/allowedClients` en la `/cache` sección . Estas secciones deben tener el siguiente aspecto:
 
@@ -282,7 +282,7 @@ y:
 }
 ```
 
-**archivo incluido en una ubicación desconocida:...**
+**archivo incluido en una ubicación desconocida: ...**
 
 Hay cuatro secciones en la configuración del conjunto de servidores donde puede incluir su propio archivo: `/clientheaders`, `filters`, `/rules` en `/cache` la sección y `/virtualhosts`. Los archivos incluidos deben nombrarse de la siguiente manera:
 
@@ -295,7 +295,7 @@ Hay cuatro secciones en la configuración del conjunto de servidores donde puede
 
 También puede incluir la versión **predeterminada** de esos archivos, cuyos nombres van precedidos de la palabra `default_`, por ejemplo `../filters/default_filters.any`.
 
-**incluir instrucción en (...), fuera de cualquier ubicación conocida:...**
+**incluir instrucción en (...), fuera de cualquier ubicación conocida: ...**
 
 Aparte de las seis secciones mencionadas en los párrafos anteriores, no se le permite utilizar la `$include` instrucción, por ejemplo: lo siguiente generaría este error:
 
@@ -305,9 +305,9 @@ Aparte de las seis secciones mencionadas en los párrafos anteriores, no se le p
 }
 ```
 
-**los clientes/procesamientos permitidos no se incluyen desde:...**
+**los clientes/procesamientos permitidos no se incluyen desde: ...**
 
-Este error se genera cuando no se especifica una inclusión para `/renders` y `/allowedClients` en la `/cache` sección. **Consulte el nombre del** archivo incluido (...):... para obtener más información.
+Este error se genera cuando no se especifica una inclusión para `/renders` y `/allowedClients` en la `/cache` sección. Consulte el nombre del **archivo incluido (...): ...** para obtener más información.
 
 **el filtro no debe utilizar el patrón de glob para permitir solicitudes**
 
@@ -359,11 +359,11 @@ Starting httpd server
 ...
 ```
 
-Esto iniciará el despachante en un contenedor con su back-end que apunta a una instancia de AEM que se ejecuta en el equipo local de Mac OS en el puerto 4503.
+Esto inicio al despachante en un contenedor con su back-end que apunta a una instancia de AEM que se ejecuta en el equipo Mac OS local en el puerto 4503.
 
 ## Depuración de la configuración de Apache y Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-La siguiente estrategia se puede utilizar para aumentar la salida del registro para el módulo del despachante y ver el resultado de la evaluación en los entornos locales y en la nube, tanto en los entornos locales como en los `RewriteRule` .
+La siguiente estrategia se puede utilizar para aumentar la salida del registro para el módulo del despachante y ver el resultado de la evaluación en los entornos locales y en la nube `RewriteRule` .
 
 Los niveles de registro para esos módulos se definen mediante las variables `DISP_LOG_LEVEL` y `REWRITE_LOG_LEVEL`. Pueden configurarse en el archivo `conf.d/variables/global.vars`. Su parte pertinente es la siguiente:
 
@@ -393,11 +393,11 @@ Al ejecutar Dispatcher localmente, los registros también se imprimen directamen
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-Los registros para los entornos de nube se expondrán a través del servicio de registro disponible en Cloud Manager.
+Los registros de entornos en la nube se expondrán a través del servicio de registro disponible en Cloud Manager.
 
 ## Diferentes configuraciones de Dispatcher por entorno {#different-dispatcher-configurations-per-environment}
 
-En este momento, la misma configuración de distribuidor se aplica a todos los entornos de AEM que a los de Cloud Service. El motor de ejecución tendrá una variable de entorno `ENVIRONMENT_TYPE` que contiene el modo de ejecución actual (dev, stage o prod), así como una definición. La definición puede ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` o `ENVIRONMENT_PROD`. En la configuración de Apache, la variable puede utilizarse directamente en una expresión. También se puede usar la definición para generar lógica:
+En este momento, la misma configuración de distribuidor se aplica a todos los entornos de AEM como un servicio en la nube. El motor de ejecución tendrá una variable de entorno `ENVIRONMENT_TYPE` que contiene el modo de ejecución actual (dev, stage o prod), así como una definición. La definición puede ser `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE` o `ENVIRONMENT_PROD`. En la configuración de Apache, la variable puede utilizarse directamente en una expresión. También se puede usar la definición para generar lógica:
 
 ```
 # Simple usage of the environment variable
@@ -422,7 +422,7 @@ En la configuración de Dispatcher, está disponible la misma variable de entorn
 }
 ```
 
-Al probar la configuración localmente, puede simular diferentes tipos de entorno pasando la variable `DISP_RUN_MODE` a la secuencia de comandos `docker_run.sh` directamente:
+Al probar la configuración localmente, puede simular diferentes tipos de entornos pasando la variable `DISP_RUN_MODE` a la secuencia de comandos `docker_run.sh` directamente:
 
 ```
 $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -431,11 +431,11 @@ $ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
 El modo de ejecución predeterminado cuando no se pasa un valor para DISP_RUN_MODE es &quot;dev&quot;.
 Para obtener una lista completa de las opciones y variables disponibles, ejecute la secuencia de comandos `docker_run.sh` sin argumentos.
 
-## Visualización de la configuración de Dispatcher que está utilizando el contenedor de Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
+## Visualización de la configuración de Dispatcher en uso por el contenedor de Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Con las configuraciones específicas del entorno, puede resultar difícil determinar el aspecto de la configuración real de Dispatcher. Después de haber iniciado su contenedor de docker con `docker_run.sh` él, puede verterse de la siguiente manera:
+Con configuraciones específicas de entorno, puede resultar difícil determinar el aspecto de la configuración real de Dispatcher. Después de haber iniciado el contenedor del docker con `docker_run.sh` él, puede verterse de la siguiente manera:
 
-* Determinar la ID del contenedor de docker en uso:
+* Determinar la ID del contenedor del docker en uso:
 
 ```
 $ docker ps
@@ -460,7 +460,7 @@ Como se describe en la página de referencia anterior, la configuración de Apac
 
 * En AEM como servicio de nube, es posible que algunas directivas de Apache no se utilicen (por ejemplo `Listen` o `LogLevel`)
 * En AEM como servicio de nube, solo se pueden incluir algunos fragmentos de la configuración de Dispatcher en los archivos de inclusión y su nombre es importante. Por ejemplo, las reglas de filtro que desee reutilizar en diferentes hosts deben colocarse en un archivo llamado `filters/filters.any`. Consulte la página de referencia para obtener más información.
-* En AEM como servicio de nube, hay una validación adicional para no permitir las reglas de filtro escritas con `/glob` el fin de evitar problemas de seguridad. Dado que `deny *` se usará en lugar de `allow *` (que no se puede usar), los clientes se beneficiarán de ejecutar Dispatcher localmente y de realizar pruebas y errores, mirando los registros para saber exactamente qué rutas bloquean los filtros de Dispatcher para que se puedan agregar.
+* En AEM como servicio de nube, hay una validación adicional para no permitir las reglas de filtro escritas con `/glob` el fin de evitar problemas de seguridad. Dado que `deny *` se usará en lugar de `allow *` (que no se puede usar), los clientes se beneficiarán de ejecutar Dispatcher localmente y de realizar pruebas y errores, mirando los registros para saber exactamente qué rutas bloquean los filtros Dispatcher para poder agregarlas.
 
 ## Pautas para migrar la configuración del despachante de AMS a AEM como un servicio en la nube
 
@@ -472,7 +472,7 @@ En la siguiente sección se proporcionan instrucciones paso a paso sobre cómo c
 
 ### Extraer el archivo y eliminar un prefijo eventual
 
-Extraiga el archivo en una carpeta y asegúrese de que las subcarpetas inmediatas empiecen por `conf`, `conf.d``conf.dispatcher.d` y `conf.modules.d`. Si no lo hacen, muévalos arriba en la jerarquía.
+Extraiga el archivo en una carpeta y asegúrese de que las subcarpetas inmediatas inicio con `conf`, `conf.d``conf.dispatcher.d` y `conf.modules.d`. Si no lo hacen, muévalos arriba en la jerarquía.
 
 ### Elimine las subcarpetas y archivos no desinundados
 
@@ -661,7 +661,7 @@ Ejecute AEM como un validador del distribuidor de Cloud Service en el directorio
 $ validator dispatcher .
 ```
 
-Si observa errores en cuanto a la falta de archivos de inclusión, compruebe si ha cambiado el nombre de dichos archivos correctamente.
+Si observa errores en cuanto a la falta de archivos de inclusión, compruebe si ha cambiado correctamente el nombre de esos archivos.
 
 Si ve errores relacionados con variables no definidas `PUBLISH_DOCROOT`, cambie el nombre a `DOCROOT`.
 
@@ -679,150 +679,18 @@ validator full -d out .
 
 Esto valida la configuración completa y genera información de implementación en `out`
 
-### Paso 2: Inicie el despachante en una imagen de acoplador con esa información de implementación
+### Paso 2: Inicio del despachante en una imagen de acoplador con esa información de implementación
 
-Con el servidor de publicación de AEM en ejecución en el equipo MacOS, escuchando en el puerto 4503, puede ejecutar el despachante delante de ese servidor de la siguiente manera:
+Con el servidor de publicación de AEM en ejecución en el equipo MacOS, escuchando en el puerto 4503, puede ejecutar inicio del despachante delante de ese servidor de la siguiente manera:
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
 ```
 
-Esto iniciará el contenedor y expondrá Apache en el puerto local 8080.
+Esto inicio el contenedor y expondrá Apache en el puerto local 8080.
 
 ### Usar la nueva configuración del despachante
 
-¡Felicitaciones! Si el validador ya no informa de ningún problema y el contenedor de acoplador se inicia sin errores ni advertencias, ya estará listo para mover la configuración a un `dispatcher/src` subdirectorio del repositorio de Git.
+¡Felicitaciones! Si el validador ya no informa de ningún problema y el contenedor del acoplador se inicio sin errores ni advertencias, ya estará listo para mover la configuración a un `dispatcher/src` subdirectorio del repositorio de Git.
 
 **Los clientes que utilicen la configuración de AMS Dispatcher versión 1 deben ponerse en contacto con el servicio de asistencia al cliente para ayudarles a migrar de la versión 1 a la versión 2, de modo que se puedan seguir las instrucciones anteriores.**
-
-## Dispatcher y CDN {#dispatcher-cdn}
-
-La entrega de contenido del servicio de publicación incluye:
-
-* CDN (normalmente administrado por Adobe)
-* Distribuidor de AEM
-* Publicación de AEM
-
-El flujo de datos es el siguiente:
-
-1. La dirección URL se agrega al explorador
-1. Solicitud realizada a CDN asignada en DNS a ese dominio
-1. Si el contenido se almacena completamente en caché en CDN, CDN lo proporciona al explorador
-1. Si el contenido no se almacena completamente en caché, la CDN llama (proxy inverso) al distribuidor
-1. Si el contenido se almacena completamente en la caché del despachante, el despachante lo proporciona a la CDN
-1. Si el contenido no se almacena completamente en la caché, el despachante llama (proxy inverso) a la publicación de AEM
-1. El navegador procesa el contenido, que también puede almacenarlo en caché, según los encabezados
-
-La mayoría del contenido está configurado para caducar después de cinco minutos, un umbral que respetan tanto la caché del despachante como la CDN. Durante las redistribuciones del servicio de publicación, la caché del despachante se borra y se calienta posteriormente antes de que los nuevos nodos de publicación acepten el tráfico.
-
-Las secciones a continuación proporcionan más detalles sobre la entrega de contenido, incluida la configuración de CDN y el almacenamiento en caché del despachante.
-
-La información sobre la replicación del servicio de creación al servicio de publicación está disponible [aquí](/help/operations/replication.md).
-
->[!NOTE]
->El tráfico pasa por un servidor web apache, que admite módulos, incluido el despachante. El despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación con el fin de aumentar el rendimiento.
-
-### CDN {#cdn}
-
-AEM ofrece tres opciones:
-
-1. CDN gestionado por Adobe: CDN incorporado de AEM. Esta es la opción recomendada, ya que está completamente integrada.
-1. CDN administrada por el cliente: El cliente trae su propia CDN y es totalmente responsable de administrarla.
-1. Seleccione Adobe Managed CDN: el cliente señala un CDN a la CDN integrada de AEM.
-
->[!CAUTION]
->La primera opción es muy recomendable. Adobe no se responsabiliza del resultado de cualquier error de configuración si elige la segunda opción.
-
-Las opciones segunda y tercera se permitirán caso por caso. Esto implica cumplir ciertos requisitos previos, incluyendo, entre otros, el hecho de que el cliente tenga una integración heredada con su proveedor de CDN, lo cual es difícil de deshacer.
-
-#### CDN gestionado por Adobe {#adobe-managed-cdn}
-
-La preparación para la entrega de contenido mediante la CDN integrada de Adobe es sencilla, tal como se describe a continuación:
-
-1. Proporcionará el certificado SSL firmado y la clave secreta a Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine esta tarea con la asistencia al cliente.
-Nota: Aem como servicio de nube no admite certificados de dominio validados (DV).
-1. El servicio de asistencia al cliente coordinará con usted la temporización de un registro DNS CNAME, señalando a su FQDN `adobe-aem.map.fastly.net`.
-1. Se le notificará cuando los certificados SSL caduquen para que pueda volver a enviar los nuevos certificados SSL.
-
-De forma predeterminada, para una configuración de CDN administrada de Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para los entornos de producción como para los de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), debe trabajar con la asistencia al cliente para configurar estas restricciones.
-
-#### CDN gestionado por el cliente {#customer-managed-cdn}
-
-Puede administrar su propia CDN, siempre que:
-
-1. Tiene una CDN existente.
-1. Debe ser una CDN admitida. Actualmente, se admite Akamai. Si su organización desea administrar una CDN no admitida actualmente, póngase en contacto con el servicio de asistencia al cliente.
-1. Usted lo administrará.
-1. Debe ser capaz de configurar CDN para que funcione con Aem como un servicio de nube; consulte las instrucciones de configuración a continuación.
-1. Dispone de expertos en ingeniería de CDN que están disponibles en caso de que surjan problemas relacionados.
-1. Debe proporcionar listas blancas de nodos CDN al Administrador de nube, tal como se describe en las instrucciones de configuración.
-1. Debe realizar y superar correctamente una prueba de carga antes de ir a producción.
-
-Instrucciones de configuración:
-
-1. Proporcione la lista blanca del proveedor de CDN a Adobe llamando a la API de creación/actualización de entorno con una lista de CIDR para la lista blanca.
-1. Configure el `X-Forwarded-Host` encabezado con el nombre de dominio.
-1. Establezca el encabezado Host con el dominio de origen, que es Aem como ingreso al servicio de nube. El valor debe proceder de Adobe.
-1. Envíe el encabezado SNI al origen. El encabezado sni debe ser el dominio de origen.
-1. Establezca `X-Edge-Key` lo que se necesita para enrutar el tráfico correctamente a los servidores AEM. El valor debe proceder de Adobe.
-
-Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
-
-#### Seleccione Adobe Managed CDN {#point-to-point-CDN}
-
-Compatible si desea utilizar la CDN existente, pero no puede satisfacer los requisitos de una CDN administrada por el cliente. En este caso, usted administra su propia CDN, pero señala a la CDN administrada de Adobe.
-
-Los clientes deben realizar y superar correctamente una prueba de carga antes de ir a producción.
-
-Instrucciones de configuración:
-
-1. Configure el `X-Forwarded-Host` encabezado con el nombre de dominio.
-1. Establezca el encabezado Host con el dominio de origen, que es la entrada de CDN de Adobe. El valor debe proceder de Adobe.
-1. Envíe el encabezado SNI al origen. Al igual que el encabezado Host, el encabezado sni debe ser el dominio de origen.
-1. Establezca el `X-Edge-Key`, que es necesario para enrutar el tráfico correctamente a los servidores AEM. El valor debe proceder de Adobe.
-
-#### invalidación de caché de CDN {#CDN-cache-invalidation}
-
-La invalidación de caché sigue estas reglas:
-
-* En general, el contenido HTML se almacena en caché en la CDN durante 5 minutos, según el encabezado de control de caché emitido por el distribuidor.
-* Las bibliotecas de cliente (JavaScript y CSS) se almacenan en caché de forma indefinida mediante el control de caché establecido en inmutable o en 30 días para los exploradores más antiguos que no respetan el valor inmutable. Tenga en cuenta que las bibliotecas cliente se sirven en una ruta única que cambia si cambian las bibliotecas cliente. En otras palabras, el HTML que hace referencia a las bibliotecas de cliente se producirá según sea necesario para que pueda experimentar contenido nuevo a medida que se publica.
-* De forma predeterminada, las imágenes no se almacenan en caché.
-
-Antes de aceptar el tráfico activo, los clientes deben validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
-
-## invalidación explícita de la caché del despachante {#explicit-invalidation}
-
-Como se ha indicado anteriormente, el tráfico pasa a través de un servidor web apache, que admite módulos, incluido el despachante. El despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación con el fin de aumentar el rendimiento.
-
-En general, no será necesario invalidar manualmente el contenido en el despachante, pero es posible si es necesario, tal como se describe a continuación.
-
-Antes de AEM como servicio de nube, había dos formas de invalidar la caché del despachante.
-
-1. Invocar el agente de replicación, especificando el agente de vaciado del despachante de publicación
-2. Llamando directamente a la `invalidate.cache` API (por ejemplo, POST /dispatcher/invalidate.cache)
-
-Ya no se admitirá el `invalidate.cache` método, ya que solo se dirige a un nodo de distribuidor específico.
-AEM como servicio de nube funciona a nivel de servicio, no a nivel de nodo individual, por lo que las instrucciones de invalidación de la documentación de la Ayuda [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher ya no son precisas.
-En su lugar, se debe utilizar el agente de vaciado de replicación. Esto se puede hacer con la API de replicación. La documentación de la API de replicación está disponible [aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la página [de ejemplo de la](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API específicamente el `CustomStep` ejemplo de cómo emitir una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar pero está preconfigurado para que apunte al despachante, junto con el servicio de publicación que ejecuta el agente de vaciado. El agente de vaciado generalmente se puede activar mediante eventos o flujos de trabajo de OSGi.
-
-El diagrama siguiente ilustra esto.
-
-![](assets/cdnb.png "CDNCDN")
-
-Si existe la preocupación de que la caché del despachante no esté borrando, póngase en contacto con el servicio de asistencia al cliente, el cual puede vaciar la caché del despachante si es necesario.
-
-La CDN administrada por Adobe respeta los TTL y, por lo tanto, no es necesario vaciarla. Si se sospecha un problema, póngase en contacto con el servicio de asistencia al cliente para que pueda vaciar una caché de CDN administrada por Adobe según sea necesario.
-
-### Invalidación de caché de despachantes durante la activación/desactivación {#cache-activation-deactivation}
-
-Al igual que las versiones anteriores de AEM, la publicación o cancelación de publicaciones borrará el contenido de la caché del despachante. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión.
-
-Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su distribuidor. La ruta de acceso actualizada se elimina de la caché del despachante, junto con sus elementos principales, hasta un nivel (puede configurarla con el [nivel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)statfiles).
-
-### Frescura del contenido y coherencia de la versión {#content-consistency}
-
-* Las páginas están formadas por HTML, JavaScript, CSS e imágenes.
-* Se recomienda aprovechar el marco de clientlibs para importar recursos de JavaScript y CSS en páginas HTML, teniendo en cuenta las dependencias entre bibliotecas JS.
-* Se proporciona la administración automática de versiones, lo que significa que los desarrolladores pueden registrar cambios en las bibliotecas JS en el control de código fuente, y la última versión estará disponible cuando se inserte una versión. Sin esto, los desarrolladores necesitarían cambiar manualmente HTML con referencias a la nueva versión de la biblioteca, lo que resulta especialmente oneroso si muchas plantillas HTML comparten la misma biblioteca.
-* Cuando las nuevas versiones de las bibliotecas se publican en producción, las páginas HTML de referencia se actualizan con nuevos vínculos a esas versiones de biblioteca actualizadas. Una vez que la caché del navegador ha caducado para una página HTML determinada, no hay problema de que las bibliotecas antiguas se carguen desde la caché del navegador, ya que la página actualizada (desde AEM) ahora está garantizada para hacer referencia a las nuevas versiones de las bibliotecas. En otras palabras, una página HTML actualizada incluirá todas las versiones de biblioteca más recientes.
