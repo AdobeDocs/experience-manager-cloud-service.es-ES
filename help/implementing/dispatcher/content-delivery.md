@@ -2,7 +2,7 @@
 title: Envío de contenido
 description: 'Envío de contenido '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ En su lugar, debe utilizarse el agente de vaciado de replicación. Esto se puede
 
 El diagrama que se presenta a continuación ilustra esto.
 
-![](assets/cdnc.png "CDNCDN")
+![](assets/cdnd.png "CDNCDN")
 
 Si existe la preocupación de que la caché del despachante no se esté borrando, póngase en contacto con el servicio de asistencia [](https://helpx.adobe.com/support.ec.html) al cliente, que puede vaciar la caché del despachante si es necesario.
 
