@@ -2,7 +2,7 @@
 title: Envío de contenido
 description: 'Envío de contenido '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ El control de versiones de clientlib estricto está habilitado de forma predeter
 
 Para habilitar el control de versiones estrictas de clientlib en el SDK local Quickstart, realice las siguientes acciones:
 
-1. Vaya al Administrador de configuración de OSGi <host>/system/console/configMgr
+1. Vaya al Administrador de configuración de OSGi `<host>/system/console/configMgr`
 1. Busque la configuración OSGi para Adobe Granite HTML Library Manager:
    * Marque la casilla de verificación para habilitar el control estricto de versiones
    * En el campo rotulado Clave de caché del lado del cliente a largo plazo, introduzca el valor de /.*;hash
