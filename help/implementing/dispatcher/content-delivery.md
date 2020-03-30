@@ -2,7 +2,7 @@
 title: Envío de contenido
 description: 'Envío de contenido '
 translation-type: tm+mt
-source-git-commit: 0284a23051bf10cd0b6455492a709f1b9d2bd8c7
+source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ---
 
@@ -27,20 +27,20 @@ El flujo de datos es el siguiente:
 
 El tipo de contenido HTML/texto está configurado para caducar después de 300 segundos (5 minutos) en la capa del despachante, un umbral que respetan tanto la caché del despachante como la CDN. Durante las redistribuciones del servicio de publicación, la caché del despachante se borra y se calienta posteriormente antes de que los nuevos nodos de publicación acepten el tráfico.
 
-Las secciones a continuación proporcionan buenos detalles sobre el envío de contenido, incluida la configuración de CDN y el almacenamiento en caché de despachantes.
+Las secciones a continuación proporcionan buenos detalles sobre el envío de contenido, incluida la configuración de CDN y el almacenamiento en caché.
 
 La información sobre la replicación del servicio de creación al servicio de publicación está disponible [aquí](/help/operations/replication.md).
 
 ## CDN {#cdn}
 
-AEM as Cloud Service se envía con una CDN predeterminada. Su principal propósito es reducir la latencia mediante la entrega de contenido procesable desde los nodos CDN en el borde, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
+AEM as Cloud Service se suministra con una CDN integrada. Su principal propósito es reducir la latencia mediante la entrega de contenido procesable desde los nodos CDN en el borde, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
 
 En total, AEM oferta dos opciones:
 
 1. CDN gestionado por AEM: CDN incorporado de AEM. Se trata de una opción estrechamente integrada que no requiere una gran inversión de los clientes en el soporte de la integración de CDN con AEM.
 1. CDN gestionado por el cliente apunta a CDN gestionado por AEM: el cliente señala su propia CDN a la CDN integrada de AEM. El cliente aún tendrá que administrar su propia CDN, pero la inversión en la integración con AEM es moderada.
 
-La primera opción debe satisfacer la mayoría de los requisitos de seguridad y rendimiento del cliente. Además, requiere la menor cantidad de inversión del cliente y mantenimiento continuo.
+La primera opción debe satisfacer la mayoría de los requisitos de seguridad y rendimiento del cliente. Además, requiere un esfuerzo mínimo del cliente.
 
 La segunda opción se permitirá caso por caso. La decisión se basa en cumplir ciertos requisitos previos, como el hecho de que el cliente tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
 
@@ -53,7 +53,7 @@ A continuación se presenta una matriz de decisiones para comparar las dos opcio
 | **Experiencia de CDN** | Ninguna | Requiere al menos un recurso de ingeniería a tiempo parcial con conocimientos detallados de CDN que puedan configurar la CDN del cliente. |
 | **Seguridad** | Administrado por Adobe. | Administrado por Adobe (y opcionalmente por el cliente en su propia CDN). |
 | **Actuación** | Optimizado por Adobe. | Se beneficiará de algunas funciones de CDN de AEM, pero posiblemente de un pequeño rendimiento debido al salto adicional. **Nota**: Pasa de la CDN del cliente a la CDN de la duración probable). |
-| **Almacenamiento en caché** | Admite encabezados de caché aplicados en el nivel de distribuidor. | Admite encabezados de caché aplicados en el nivel de distribuidor. |
+| **Almacenamiento en caché** | Admite encabezados de caché aplicados al despachante. | Admite encabezados de caché aplicados al despachante. |
 | **Funciones de compresión de imágenes y vídeo** | Puede trabajar con Adobe Dynamic Media. | Puede trabajar con Adobe Dynamic Media o con una solución de vídeo/imagen CDN administrada por el cliente. |
 
 ### CDN gestionado por AEM {#aem-managed-cdn}
@@ -62,6 +62,9 @@ La preparación para el envío de contenido mediante la CDN integrada de Adobe e
 
 1. Proporcionará el certificado SSL firmado y la clave secreta a Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea.
    **Nota:** Aem como servicio de nube no admite certificados de dominio validados (DV).
+1. Debe informar a la asistencia al cliente:
+   * qué dominio personalizado debe asociarse con un determinado entorno, tal como se define en la identificación del programa y en la identificación del entorno.
+   * si se necesita una lista blanca de IP para restringir el tráfico a un entorno determinado.
 1. El servicio de asistencia al cliente coordinará con usted la temporización de un registro DNS CNAME, señalando a su FQDN `adobe-aem.map.fastly.net`.
 1. Se le notificará cuando los certificados SSL caduquen para que pueda volver a enviar los nuevos certificados SSL.
 
@@ -90,9 +93,9 @@ Instrucciones de configuración:
 
 Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
 
-### Almacenamiento en caché {#caching}
+## Almacenamiento en caché {#caching}
 
-El proceso de almacenamiento en caché sigue las reglas que se presentan a continuación.
+El almacenamiento en caché en CDN se puede configurar mediante reglas de despachante. Tenga en cuenta que el despachante también respeta los encabezados de caducidad de caché resultantes si `enableTTL` está activado en la configuración del despachante, lo que implica que actualizará el contenido específico incluso fuera del contenido que se está republicando.
 
 ### HTML/Texto {#html-text}
 
@@ -106,15 +109,15 @@ Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la 
 { /glob "*" /type "allow" }
 ```
 
-* puede anularse en un nivel más fino mediante las directivas apache mod_headers. Por ejemplo:
+* se puede anular en un nivel más fino mediante las siguientes directivas apache mod_headers:
 
 ```
 <LocationMatch "\.(html)$">
-        Header set Cache-Control "max-age=200 s-maxage=200"
+        Header set Cache-Control "max-age=200"
 </LocationMatch>
 ```
 
-Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la siguiente regla:
+Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la siguiente regla (que está en la configuración predeterminada):
 
 ```
 /0000
@@ -128,32 +131,41 @@ Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la 
 * al utilizar el marco de trabajo de biblioteca del cliente de AEM, el código JavaScript y CSS se genera de forma que los navegadores pueden almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única.  En otras palabras, el HTML que hace referencia a las bibliotecas de cliente se producirá según sea necesario para que los clientes puedan experimentar contenido nuevo a medida que se publica. El control de caché se establece en &quot;inmutable&quot; o en 30 días para los exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
 * consulte la sección Bibliotecas del lado del [cliente y coherencia](#content-consistency) de la versión para obtener más detalles.
 
-### Imágenes {#images}
+### Imágenes y cualquier contenido lo suficientemente grande como para almacenarse en el almacenamiento blob {#images}
 
-* no almacenado en caché
-
-### Otros tipos de contenido {#other-content}
-
-* sin caché predeterminada
-* puede ser anulado por apache `mod_headers`. Por ejemplo:
+* de forma predeterminada, no en caché
+* puede establecerse a un nivel más preciso mediante las siguientes directivas de apache `mod_headers` :
 
 ```
-<LocationMatch "\.(css|js)$">
-    Header set Cache-Control "max-age=500 s-maxage=500"
+<LocationMatch "^.*.jpeg$">
+    Header set Cache-Control "max-age=222"
 </LocationMatch>
 ```
 
-*Otros métodos para configurar los encabezados de caché también pueden funcionar
+Es necesario asegurarse de que un archivo en src/conf.dispatcher.d/cache tiene la siguiente regla (que se encuentra en la configuración predeterminada):
 
-Antes de aceptar el tráfico activo, los clientes deben validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
+```
+/0000
+{ /glob "*" /type "allow" }
+```
+
+Asegúrese de que los recursos destinados a ser guardados en privado en lugar de en caché no forman parte de los filtros de directiva LocationMatch.
+
+* Tenga en cuenta que otros métodos, incluido el proyecto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)Dispatcher-ttl AEM ACS Commons, no anularán correctamente los valores.
+
+### Otros tipos de archivos de contenido en el almacén de nodos {#other-content}
+
+* sin caché predeterminada
+* el valor predeterminado no se puede establecer con la `EXPIRATION_TIME` variable utilizada para los tipos de archivo html/texto
+* la caducidad de la caché se puede establecer con la misma estrategia LocationMatch descrita en la sección html/text especificando el regex adecuado
 
 ## Dispatcher {#disp}
 
 El tráfico pasa por un servidor web apache, que admite módulos, incluido el despachante. El despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación con el fin de aumentar el rendimiento.
 
-El contenido de tipo HTML/texto se establece con encabezados de caché que corresponden a una caducidad de 300 segundos (5 minutos).
+Como se describe en la sección de almacenamiento en caché de CDN, se pueden aplicar reglas a la configuración del despachante para modificar cualquier configuración de caducidad de caché predeterminada.
 
-El resto de esta sección describe consideraciones relacionadas con la invalidación de la caché del despachante.
+El resto de esta sección describe consideraciones relacionadas con la invalidación de la caché del despachante. Para la mayoría de los clientes, no debería ser necesario invalidar la caché del despachante, en lugar de depender de que el despachante actualice su caché cuando se vuelva a publicar el contenido, y de que la CDN respete los encabezados de caducidad de la caché.
 
 ### Invalidación de caché de despachante durante la Activación/desactivación {#cache-activation-deactivation}
 
