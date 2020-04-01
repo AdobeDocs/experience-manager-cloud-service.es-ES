@@ -3,14 +3,14 @@ title: Utilice los recursos conectados para compartir recursos DAM en el flujo d
 description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77494565596f3d7ac04613c057f0fccc8be71eab
+source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
 
 ---
 
 
 # Utilice los recursos conectados para compartir recursos de DAM en AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Algunas razones pueden ser: el uso de implementaciones distribuidas geográficamente que necesitan trabajar en conjunto, adquisiciones que conducen a una infraestructura heterogénea que la empresa principal quiere unificar y el crecimiento que lleva a tal escala que se necesita una instancia dedicada para la administración de recursos.
+En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Algunas razones pueden ser la distribución geográfica de las implementaciones existentes que se requieren para trabajar en conjunto o las adquisiciones que conducen a una infraestructura heterogénea que la compañía principal desea utilizar en conjunto.
 
 AEM Sites ofrece capacidades de crear páginas web, y AEM Assets es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web. AEM ahora es compatible con el caso de uso anterior mediante la integración de AEM Sites y AEM Assets.
 
