@@ -1,46 +1,50 @@
 ---
-title: 'Administrar entornos: servicio en la nube'
-description: 'Administrar entornos: servicio en la nube'
+title: Administrar Entornos - Servicio de nube
+description: Administrar Entornos - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 ---
 
 
 # Administración de entornos {#manage-environments}
 
-En la sección siguiente se describen los tipos de entorno que puede crear un usuario y cómo puede crearlo.
+En la sección siguiente se describen los tipos de entornos que puede crear un usuario y la forma en que puede crear un entorno.
 
-## Tipos de entorno {#environment-types}
+## Tipos de Entornos {#environment-types}
 
-Un usuario con los permisos necesarios puede crear los siguientes tipos de entorno (dentro de los límites de lo que está disponible para el inquilino específico).
+Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
-* **Entorno** de producción y etapa:La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.
+* **Entorno**de producción y etapa:
+La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.
 
-* **Desarrollo**: Se puede crear un entorno de desarrollo con fines de desarrollo y ensayo y sólo se asociará con tuberías que no sean de producción.
+* **Desarrollo**: Se puede crear un entorno de desarrollo con fines de desarrollo y ensayo y se asociará únicamente a los oleoductos que no sean de producción.
 
    >[!NOTE]
-   >Se configurará un entorno de desarrollo que se crea automáticamente en un programa de Simulador para pruebas para incluir las soluciones Sitios y Recursos.
+   >Se configurará un entorno de desarrollo que se crea automáticamente en un programa de Simulador para pruebas para que incluya las soluciones Sitios y Recursos.
 
-   La siguiente tabla resume los tipos de entorno y sus atributos:
+   La siguiente tabla resume los tipos de Entornos y sus atributos:
 
-   | Nombre | Nivel de autor | Publicar nivel | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con el entorno |
+   | Nombre | Nivel de autor | Publicar nivel | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con entorno |
    |--- |--- |--- |--- |---|---|
    | Producción | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
    | Escenario | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
    | Desarrollo | Sí | Sí si los sitios están incluidos | Sí | Sí | Canalización sin producción |
 
    >[!NOTE]
-   >La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.  El usuario no podrá crear solo el entorno de fase o de producción.
+   >La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.  El usuario no podrá crear solo la fase o solo el entorno de producción.
 
-## Adición de un entorno {#adding-environments}
+## Añadir un Entorno {#adding-environments}
 
 
 1. El usuario hace clic en el botón **Agregar entorno** para agregar un entorno.
 
+   >[!NOTE]
+   >También se puede acceder a este botón desde la página Entornos o desde la tarjeta Entornos. Como usuario solo verá esta opción si tiene los permisos necesarios. Póngase en contacto con su representante de Adobe si tiene alguna pregunta.
+
    ![](assets/add-environment.png)
 
-1. Aparece el cuadro de diálogo **Agregar entorno** .El usuario debe enviar detalles como Tipo **de** entorno y Nombre **de** entorno y Descripción **de** entorno (según el objetivo del usuario de crear el entorno dentro de los límites de lo que está disponible para el inquilino específico).
+1. Aparece el cuadro de diálogo **Agregar entorno**. El usuario debe enviar detalles como **Tipo de entorno**, **Nombre de entorno** y **Descripción de entorno** (según el objetivo del usuario al crear el entorno dentro de los límites de lo que está disponible para el inquilino específico).
 
    ![](assets/add-environment2.png)
 
@@ -55,16 +59,16 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
    >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
 
 
-## Actualización del entorno {#updating-dev-environment}
+## Actualizando Entorno {#updating-dev-environment}
 
 Adobe administra automáticamente las actualizaciones de los entornos de fase y producción.
 
-Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible para el público, el estado de la tarjeta de entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
+Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible para el público, el estado de la tarjeta de Entornos en la pantalla de inicio mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
 ![](assets/manage-environments2.png)
 )
 
-Cuando se muestra este estado, la opción **Actualizar** estará disponible en el menú desplegable, tanto en la Tarjeta de entorno como en el menú **Administrar** si hace clic en **Detalles** en la tarjeta **ENTORNOS** .
+Cuando se muestra este estado, la opción **Actualizar** estará disponible en el menú desplegable, tanto en la Tarjeta de entorno como en el menú **Administrar** si hace clic en **Detalles** en la tarjeta **ENTORNOS**.
 
 ![](assets/add-environment4.png)
 
