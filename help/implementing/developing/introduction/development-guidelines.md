@@ -2,7 +2,7 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: 'Para completar '
 translation-type: tm+mt
-source-git-commit: 7f4e27d10da1b9cb074223c1c43fc7798942dbe4
+source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
 
 ---
 
@@ -27,23 +27,23 @@ El estado no debe guardarse en la memoria sino en el repositorio. De lo contrari
 
 ## Estado en el sistema de archivos {#state-on-the-filesystem}
 
-El sistema de archivos de la instancia no debe usarse en AEM como un servicio de nube. El disco es efímero y se eliminará cuando se reciclen las instancias. Es posible el uso limitado del sistema de archivos para almacenamiento temporal relacionado con el procesamiento de solicitudes individuales, pero no se debe abusar de archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y tener limitaciones de disco.
+El sistema de archivos de la instancia no debe usarse en AEM como un servicio de nube. El disco es efímero y se eliminará cuando se reciclen las instancias. Es posible el uso limitado del sistema de archivos para almacenamientos temporales relacionados con el procesamiento de solicitudes individuales, pero no se debe abusar de archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y tener limitaciones de disco.
 
-Como ejemplo en el caso de que no se admita el uso del sistema de archivos, el nivel Publicar debe asegurarse de que todos los datos que deban conservarse se envíen a un servicio externo para almacenamiento a largo plazo.
+Como ejemplo en el caso de que no se admita el uso del sistema de archivos, el nivel Publicar debe garantizar que todos los datos que deban conservarse se envíen a un servicio externo para un almacenamiento a largo plazo.
 
 ## Observación {#observation}
 
-De manera similar, con todo lo que sucede asincrónicamente como actuar en eventos de observación, no se puede garantizar que se ejecute localmente y por lo tanto debe usarse con cuidado. Esto es válido tanto para eventos JCR como para eventos de recursos Sling. En el momento en que se produce un cambio, la instancia se puede retirar y reemplazar por otra instancia. Otras instancias de la topología que estén activas en ese momento podrán reaccionar a ese evento. En este caso, sin embargo, esto no será un evento local y podría incluso no haber un líder activo en caso de una elección de líder en curso cuando se publique el evento.
+De manera similar, con todo lo que sucede asincrónicamente como actuar en eventos de observación, no se puede garantizar que se ejecute localmente y, por lo tanto, debe usarse con cuidado. Esto es válido tanto para eventos JCR como para eventos de recursos Sling. En el momento en que se produce un cambio, la instancia se puede retirar y reemplazar por otra instancia. Otras instancias de la topología que estén activas en ese momento podrán reaccionar a ese evento. En este caso, sin embargo, esto no será un evento local y podría incluso no haber un líder activo en caso de una elección de líder en curso cuando se publique el evento.
 
 ## Tareas en segundo plano y trabajos de larga duración {#background-tasks-and-long-running-jobs}
 
-El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser resiliente y la mayoría de las importaciones deben poder reanudarse. Esto significa que si el código se vuelve a ejecutar, no debería empezar de nuevo desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM como servicio de nube es más probable que se produzca una eliminación de instancia.
+El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser resiliente y la mayoría de las importaciones deben poder reanudarse. Esto significa que si el código se vuelve a ejecutar, no debería volver a inicio desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM como servicio de nube es más probable que se produzca una eliminación de instancia.
 
-Para minimizar el problema, se deben evitar los trabajos de larga duración si es posible, y se deben reanudar al menos. Para ejecutar estos trabajos, utilice Sling Jobs, que cuenta con una garantía de al menos una vez y por lo tanto si se interrumpen, será reejecutado lo antes posible. Pero probablemente no deberían empezar de nuevo desde el principio. Para programar estos trabajos, es mejor utilizar el programador de trabajos [](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) de Sling, ya que de nuevo se trata de la ejecución de al menos una vez.
+Para minimizar el problema, se deben evitar los trabajos de larga duración si es posible, y se deben reanudar al menos. Para ejecutar estos trabajos, utilice Sling Jobs, que cuenta con una garantía de al menos una vez y por lo tanto si se interrumpen, será reejecutado lo antes posible. Pero probablemente no deberían volver a inicio desde el principio. Para programar estos trabajos, es mejor utilizar el Planificador Trabajos [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) Sling como una ejecución al menos una vez.
 
-El programador de Sling Commons no debe utilizarse para programar, ya que no se puede garantizar la ejecución. Es más probable que se programe.
+El Planificador de Sling Commons no debe ser usado para programar, ya que no se puede garantizar la ejecución. Es más probable que se programe.
 
-De manera similar, con todo lo que está sucediendo asincrónicamente, como actuar en eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar que se ejecute y por lo tanto debe usarse con cuidado. Esto ya se aplica a las implementaciones de AEM en este momento.
+De manera similar, con todo lo que está sucediendo asincrónicamente, como actuar en eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar que se ejecute y, por lo tanto, se debe usar con cuidado. Esto ya se aplica a las implementaciones de AEM en este momento.
 
 ## Conexiones HTTP salientes {#outgoing-http-connections}
 
@@ -83,41 +83,11 @@ El contenido se replica de Autor a Publicación mediante un mecanismo de subproc
 
 ### Registros {#logs}
 
-Para el desarrollo local, las entradas de registro se escriben en los archivos locales de la `/crx-quickstart/logs` carpeta.
-
-En los entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para reducir los registros. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-
-**Configuración del nivel de registro**
-
-Para cambiar los niveles de registro de los entornos de nube, se debe modificar la configuración OSGI de registro de Sling, seguida de una reimplementación completa. Dado que esto no es instantáneo, tenga cuidado de habilitar los registros detallados en entornos de producción que reciben mucho tráfico. En el futuro, es posible que haya mecanismos para cambiar más rápidamente el nivel de registro.
-
-> [!NOTE]
-> 
-> Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia de AEM como servicio de nube. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como un servicio](/help/implementing/deploying/overview.md)de nube.
-
-**Activación del nivel de registro DEBUG**
-
-El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran.
-Para activar el nivel de registro DEBUG, establezca la variable
-
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
-
-para depurar. No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya que genera muchos registros.
-Normalmente, una línea en el archivo de depuración comienza con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
-
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
-
-Los niveles de registro son los siguientes:
-
-| 0 | Error fatal | Error en la acción y el instalador no puede continuar. |
-|---|---|---|
-| 1 | Error | Error en la acción. La instalación continúa, pero una parte de CRX no se instaló correctamente y no funcionará. |
-| 2 | Advertencia | La acción se ha realizado correctamente, pero se han encontrado problemas. CRX puede funcionar correctamente o no. |
-| 3 | Información | La acción se ha realizado correctamente. |
+Para obtener más información sobre cómo trabajar con registros, consulte la documentación [de registro](/help/implementing/developing/introduction/logging.md).
 
 ### Duques de rosca {#thread-dumps}
 
-Los volcados de subprocesos en entornos de nube se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de asistencia de AEM si se necesitan volcados de subprocesos para depurar un problema, especificando la ventana horaria exacta.
+Los volcados de subprocesos en entornos de la nube se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de asistencia de AEM si se necesitan volcados de subprocesos para depurar un problema, especificando la ventana horaria exacta.
 
 ## CRX/DE Lite y la consola del sistema {#crxde-lite-and-system-console}
 
@@ -125,13 +95,13 @@ Los volcados de subprocesos en entornos de nube se recopilan de forma continua, 
 
 Para el desarrollo local, los desarrolladores tienen acceso completo a CRXDE Lite (`/crx/de`) y a la consola web de AEM (`/system/console`).
 
-Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la nube) `/apps` , y `/libs` se puede escribir directamente en él, lo cual es diferente de los entornos de nube donde esas carpetas de nivel superior son inmutables.
+Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la nube) `/apps` , y `/libs` se puede escribir directamente en él, lo cual es diferente de los entornos de nube donde las carpetas de nivel superior son inmutables.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
-Los clientes pueden acceder a CRXDE lite en el entorno de desarrollo, pero no en fase ni en producción. No se puede escribir en el repositorio inmutable (`/libs`, `/apps`) durante la ejecución, por lo que al intentar hacerlo se generarán errores.
+Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo, pero no en fase o producción. No se puede escribir en el repositorio inmutable (`/libs`, `/apps`) durante la ejecución, por lo que al intentar hacerlo se generarán errores.
 
-En la consola para desarrolladores hay disponible un conjunto de herramientas para depurar AEM como entornos de desarrollador de servicios de nube para entornos de desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
+Hay disponible un conjunto de herramientas para depurar AEM como entornos de desarrollador de Cloud Service en Developer Console para entornos de desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -153,7 +123,7 @@ Como se ilustra a continuación, los desarrolladores pueden resolver dependencia
 
 ![Consola de desarrollo 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-También resulta útil para la depuración, ya que la consola del desarrollador tiene un vínculo a la herramienta Explicar consulta:
+También resulta útil para la depuración, ya que la consola para desarrolladores tiene un vínculo a la herramienta de Consulta Explicar:
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
