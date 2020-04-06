@@ -2,7 +2,7 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -80,7 +80,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Indica si desea que la página use la URL de vanidad.
 
-### Avanzado   {#advanced}
+### Avanzado    {#advanced}
 
 * **Idioma**
 
@@ -135,7 +135,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Especificar una configuración de exportación.
 
-### Miniatura   {#thumbnail}
+### Miniatura    {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -159,7 +159,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html).
+   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir al usuario que comparta en Facebook**
    * **Permitir al usuario que comparta en Pinterest**
@@ -181,8 +181,6 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Configuración de ámbito**
 
    * Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
-   >[!NOTE]
-   >Esta opción requiere que la cuenta de usuario esté en el `Target Adminstrators`grupo.
 
 ### Permisos   {#permissions}
 
@@ -199,14 +197,14 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    * Defina propiedades para una página de modelo en un entorno de administración de varios sitios. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy   {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    * Defina propiedades para una página Live Copy en un entorno de administración de varios sitios. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio   {#site-structure}
+### Estructura del sitio    {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
