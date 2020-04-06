@@ -3,7 +3,7 @@ title: Administración de derechos digitales en recursos de Adobe Experience Man
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -16,14 +16,14 @@ Los recursos digitales suelen estar asociados a una licencia, que especifica sus
 
 La caducidad de los activos es una forma eficaz de aplicar los requisitos de licencia de los activos. Garantiza que el recurso publicado no se publique cuando caduque, lo que evita la posibilidad de cualquier infracción de licencia. Un usuario sin derechos de administrador no puede editar, copiar, mover, publicar ni descargar un recurso caducado.
 
-Puede ver el estado de caducidad de un recurso en los siguientes lugares:
+Puede vista del estado de caducidad de un recurso en los siguientes lugares:
 
-* **Vista** de tarjeta: Para un recurso caducado, un indicador de la tarjeta indica que ha caducado.
-* **Vista** de lista: En el caso de recursos caducados, la columna **[!UICONTROL Estado]** muestra la pancarta **[!UICONTROL Caducado]** .
-* **Cronología**: Puede ver el estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo.
-* **Carril** de referencias: También puede ver el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
+* **vista** de tarjeta: Para un recurso caducado, un indicador de la tarjeta indica que ha caducado.
+* **vista** de Lista: En el caso de recursos caducados, la columna **[!UICONTROL Estado]** muestra la pancarta **[!UICONTROL Caducado]** .
+* **Cronología**: Puede vista del estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo.
+* **Carril** de referencias: También puede vista el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
-1. Vaya al recurso para el que desea ver las páginas Web de referencia y los recursos compuestos.
+1. Desplácese al recurso para el que desea realizar una vista haciendo referencia a páginas web y recursos compuestos.
 1. Seleccione el recurso y toque o haga clic en el icono de navegación global.
 1. Elija **[!UICONTROL Referencias]** en el menú.
 1. En el caso de los recursos caducados, el carril Referencias muestra el estado de caducidad del **[!UICONTROL recurso]** en la parte superior. Si el recurso tiene subrecursos caducados, el carril Referencias muestra el estado **[!UICONTROL Recurso con subrecursos]** Caducados.
@@ -42,25 +42,23 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 1. Seleccione **[!UICONTROL Caducado]**. Los recursos caducados se muestran en los resultados de la búsqueda.
 
-Al elegir la opción **[!UICONTROL Caducado]** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el programador.
+Al elegir la opción **[!UICONTROL Caducado]** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
 
-Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo del programador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado en consecuencia.
+Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo de Planificador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado de forma acorde.
 
-Además, si un fallo o error impide que el programador detecte los recursos caducados en el ciclo actual, el programador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado caducado.
+Además, si un fallo o error impide que el Planificador detecte los recursos caducados en el ciclo actual, el Planificador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado de caducidad.
 
 Para permitir que la consola de Assets muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de **[!UICONTROL notificación de caducidad de Adobe CQ DAM]** en AEM Configuration Manager.
 
 1. Abra AEM Configuration Manager.
-1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado Programador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
+1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado el Planificador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
 
 1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; activa el trabajo a las 00 horas.
-
-<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
+1. Seleccione **[!UICONTROL enviar correo electrónico]** para recibir correos electrónicos cuando caduque un recurso.
 
    >[!NOTE]
    >
-   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
--->
+   >Solo el creador de recursos (la persona que carga un recurso concreto en Recursos AEM) recibe un correo electrónico cuando caduca el recurso. Consulte cómo configurar las notificaciones por correo electrónico para obtener más información sobre la configuración de las notificaciones por correo electrónico en todo el nivel de AEM.
 
 1. En el campo Notificación **[!UICONTROL previa en segundos]** , especifique el tiempo en segundos antes de que caduque un recurso cuando desee recibir una notificación con respecto a la caducidad. Si es un administrador o el creador de recursos, recibirá un mensaje antes de que caduque el recurso, en el que se le notificará que el recurso está a punto de caducar después de la hora especificada.
 
@@ -86,9 +84,9 @@ La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede
 1. Haga clic en **[!UICONTROL Guardar]** y, a continuación, en **[!UICONTROL Cerrar]** para mostrar la consola Recursos.
 1. El estado de publicación del recurso indica un estado caducado en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, el estado del recurso se muestra como **[!UICONTROL Caducado]**.
 
-1. En la consola Recursos, seleccione una carpeta y cree una tarea de revisión en la carpeta.
+1. En la consola Recursos, seleccione una carpeta y cree una tarea de revisión en ella.
 1. Revise y apruebe/rechace los recursos de la tarea de revisión y haga clic en **[!UICONTROL Completar]**.
-1. Vaya a la carpeta para la que creó la tarea de revisión. El estado de los recursos aprobados/rechazados se muestra en la parte inferior de la vista de tarjeta. En la vista de lista, los estados de aprobación y caducidad se muestran en las columnas correspondientes.
+1. Vaya a la carpeta para la que creó la tarea de revisión. El estado de los recursos aprobados/rechazados se muestra en la parte inferior de la vista de tarjetas. En la vista de lista, los estados de aprobación y caducidad se muestran en las columnas correspondientes.
 
 1. Para buscar recursos en función de su estado, toque o haga clic en el icono **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
 
@@ -122,7 +120,7 @@ Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 
 ### Descargar recursos DRM {#downloading-drm-assets}
 
-1. En la vista de tarjeta, seleccione los recursos que desea descargar y haga clic en el icono **[!UICONTROL Descargar]** .
+1. En la vista Tarjeta, seleccione los recursos que desee descargar y haga clic en el icono **[!UICONTROL Descargar]** .
 1. En la página **[!UICONTROL Administración de derechos de autor]**, seleccione el recurso que desee descargar de la lista.
 1. En el panel Licencia, elija **[!UICONTROL Aceptar]**. Aparece una marca de graduación junto al recurso para el que acepta el contrato de licencia. Toque o haga clic en el botón **[!UICONTROL Descargar]** .
 
