@@ -1,9 +1,9 @@
 ---
 title: Operaciones asincrónicas
-description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que requieren muchos recursos.
+description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que consumen muchos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
@@ -21,7 +21,7 @@ Estas operaciones incluyen:
 
 El procesamiento asincrónico implica poner en cola varios trabajos y, finalmente, ejecutarlos en serie, según la disponibilidad de los recursos del sistema.
 
-Puede ver el estado de los trabajos asincrónicos desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
+Puede vista el estado de los trabajos asincrónicos desde la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ Puede ver el estado de los trabajos asincrónicos desde la página Estado **[!UI
 
 ## Monitoreo del estado de las operaciones asincrónicas {#monitoring-the-status-of-asynchronous-operations}
 
-Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada <!-- and through email -->.
+Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
 
-Para ver el estado de las operaciones asincrónicas en detalle, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
+Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
 1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Trabajos]**.
 1. En la página Estado **[!UICONTROL del trabajo]** asincrónico, revise los detalles de las operaciones.
@@ -52,7 +52,7 @@ Para ver el estado de las operaciones asincrónicas en detalle, vaya a la págin
 
    ![stop_icon](assets/stop_icon.png)
 
-1. Para ver detalles adicionales, por ejemplo descripción y registros, seleccione la operación y toque o haga clic en el icono **[!UICONTROL Abrir]** de la barra de herramientas.
+1. Para vista de detalles adicionales, por ejemplo descripción y registros, seleccione la operación y toque o haga clic en el icono **[!UICONTROL Abrir]** de la barra de herramientas.
 
    ![open_icon](assets/open_icon.png)
 
