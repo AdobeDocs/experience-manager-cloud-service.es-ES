@@ -2,7 +2,7 @@
 title: Búsqueda de contenido e indexación
 description: 'Búsqueda de contenido e indexación '
 translation-type: tm+mt
-source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -31,7 +31,7 @@ A continuación se muestra una lista de los principales cambios en comparación 
 
 1. En un nivel elevado de AEM como servicio de nube, con la introducción del modelo [de implementación](#index-management-using-blue-green-deployments) azul-verde, existirán dos conjuntos de índices: un conjunto para la versión antigua (azul) y otro para la nueva versión (verde).
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+La versión del índice que se utiliza se configura mediante indicadores en las definiciones de índice a través del `useIfExist` indicador. Un índice solo puede utilizarse en una versión de la aplicación (por ejemplo, solo azul o solo verde) o en ambas versiones. Encontrará documentación detallada en Administración de [índices con implementaciones](#index-management-using-blue-green-deployments)Blue-Green.
 
 1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de compilación de Cloud Manager y recibirán una notificación cuando la nueva versión esté lista para recibir tráfico.
 
@@ -61,7 +61,7 @@ Debe preparar un nuevo paquete de definición de índice que contenga la definic
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-que luego debe pasar `ui.apps/src/main/content/jcr_root`. Las carpetas raíz secundarias no son compatibles hasta ahora.
+que luego debe pasar `ui.content/src/main/content/jcr_root`. Las carpetas raíz secundarias no son compatibles hasta ahora.
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,15 +69,11 @@ El paquete de la muestra anterior se crea como `com.adobe.granite:new-index-cont
 
 ### Implementación de definiciones de índice {#deploying-index-definitions}
 
-> [!NOTE]
->
-> Hay un problema conocido con Jackrabbit Filevault Maven Package Plugin versión **1.1.0** que no le permite agregar `oak:index` a módulos de `<packageType>application</packageType>`. Para solucionar esto, utilice la versión **1.0.4**.
-
 Las definiciones de índice ahora se marcan como personalizadas y con versiones:
 
-* La definición de índice misma (por ejemplo `/oak:index/ntBaseLucene-custom-1`)
+* La definición de índice misma (por ejemplo `/oak:index/ntBaseLucene-custom-1`) que es contenido MUTABLE
 
-Por lo tanto, para implementar un índice, la definición del índice (`/oak:index/definitionname`) debe entregarse a través `ui.apps` de Git y del proceso de implementación de Cloud Manager.
+Por lo tanto, para implementar un índice, la definición del índice (`/oak:index/definitionname`) debe entregarse a través del paquete **** mutable, generalmente `ui.content` a través de Git y del proceso de implementación de Cloud Manager.
 
 Una vez que se agrega la nueva definición de índice, la nueva aplicación debe implementarse mediante Cloud Manager. Tras la implementación se inician dos trabajos, responsables de agregar (y combinar si es necesario) las definiciones de índice a MongoDB y Azure Segment Store para la creación y publicación, respectivamente. Los repositorios subyacentes se están reindexando con las nuevas definiciones de índice, antes de que tenga lugar el cambio Blue-Green.
 
@@ -142,7 +138,7 @@ Una vez que Adobe cambia un índice listo para usar como &quot;damAssetLucene&qu
 | /oak:index/cqPageLucene | Sí | Sí | No |
 | /oak:index/cqPageLucene-2 | Sí | No | Sí |
 
-### Restricciones     {#limitations}
+### Restricciones      {#limitations}
 
 Actualmente, la administración de índices solo se admite para índices de tipo `lucene`.
 
