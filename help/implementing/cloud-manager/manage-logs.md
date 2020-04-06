@@ -2,14 +2,14 @@
 title: Administrar registros - Servicio de nube
 description: Administrar registros - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
 
 # Acceso y administración de registros {#manage-logs}
 
-Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
+Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
 
 Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** .
 
@@ -41,7 +41,7 @@ El siguiente comando permite el ajuste de registros:
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Para obtener la ID del entorno (1884 en este caso) y las opciones de nombre de registro o servicio disponibles, puede utilizar:
+Para obtener el ID de entorno (1884 en este caso) y las opciones de nombre de registro o servicio disponibles, puede utilizar:
 
 ```java
 $ aio cloudmanager:list-environments
@@ -66,10 +66,3 @@ Environment Id Service    Name
 
 >[!Note]
 >Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
-
-### Additional Resources {#resources}
-
-Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
-
-* [Documentación de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
