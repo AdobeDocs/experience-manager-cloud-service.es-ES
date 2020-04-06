@@ -1,15 +1,15 @@
 ---
 title: Cambios notables en Recursos Adobe Experience Manager como servicio de nube
-description: Cambios notables en Recursos Adobe Experience Manager en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
+description: Cambios notables en los recursos de Adobe Experience Manager en el servicio de nube de AEM en comparación con Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager como servicio de nube ofrece muchas funciones y posibilidades nuevas para administrar sus proyectos de AEM. Sin embargo, existen muchas diferencias entre Experience Manager Assets in situ o en Adobe Managed Service en comparación con Experience Manager como un servicio de nube. Este documento destaca las diferencias fundamentales.
+Adobe Experience Manager como servicio de nube ofrece muchas funciones y posibilidades nuevas para administrar sus proyectos de AEM. Sin embargo, existen varias diferencias entre los recursos de Experience Manager in situ o en los servicios administrados de Adobe en comparación con Experience Manager como servicio de nube. Este documento destaca las diferencias fundamentales.
 
 >[!NOTE]
 >
@@ -22,15 +22,15 @@ Las principales diferencias en comparación con Experience Manager 6.5 se encuen
 
 ## Ingesta de recursos {#asset-ingestion}
 
-La carga de recursos se ha optimizado para lograr una mayor eficacia al permitir una mejor ampliación de la ingesta de recursos y cargas más rápidas. Se han actualizado las capacidades del producto (interfaces de usuario web, clientes de escritorio). Sin embargo, esto puede afectar a algunas personalizaciones existentes.
+La carga de recursos se ha optimizado para que sea más eficaz, lo que permite una mejor ampliación de la ingesta de recursos y cargas más rápidas. Se han actualizado las capacidades del producto (interfaces de usuario web, clientes de escritorio). Sin embargo, esto puede afectar a algunos códigos personalizados existentes.
 
-* Experience Manager utiliza el principio de acceso binario directo para los microservicios de carga y descarga y de recursos para el procesamiento de recursos. Consulte [información general sobre la ingesta](/help/assets/asset-microservices-overview.md)de recursos.
-   * Carga de recursos [con acceso](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)binario directo.
-   * Para obtener información técnica, consulte el protocolo de carga binaria [directa y las API](/help/assets/developer-reference-material-apis.md#overview-binary-upload).
-* El flujo de trabajo predeterminado de **[!UICONTROL actualización de recursos DAM]** en versiones anteriores de AEM ya no está disponible. En su lugar, los microservicios de recursos proporcionan un servicio escalable y fácilmente disponible que cubre la mayor parte del procesamiento de recursos predeterminado (representaciones, extracción de metadatos, extracción de texto para indexación).
+* Experience Manager utiliza el principio de acceso binario directo para los microservicios de carga y descarga y de recursos para el procesamiento de recursos. Consulte [información general sobre la ingesta de recursos](/help/assets/asset-microservices-overview.md)
+   * Carga de recursos [con acceso binario directo](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)
+   * Para obtener información técnica, consulte el protocolo de carga binaria [directa y las API](/help/assets/developer-reference-material-apis.md#overview-binary-upload)
+* El flujo de trabajo predeterminado de **[!UICONTROL actualización de recursos DAM]** en versiones anteriores de AEM ya no está disponible. En su lugar, los microservicios de recursos proporcionan un servicio escalable y fácilmente disponible que cubre la mayor parte del procesamiento de recursos predeterminado (representaciones, extracción de metadatos, extracción de texto para indexación)
    * Consulte [Configuración y uso de microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
-   * Para tener pasos personalizados de flujo de trabajo en el procesamiento, se pueden utilizar flujos de trabajo [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) postprocesamiento.
-* Assets that come in via Package Manager require manual reprocessing using the **[!UICONTROL Reprocess Asset]** action in the Assets interface.
+   * Para tener pasos personalizados de flujo de trabajo en el procesamiento, se pueden utilizar flujos de trabajo [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) postprocesamiento
+* Los recursos que se incluyen mediante el administrador de paquetes requieren un reprocesamiento manual mediante la acción **[!UICONTROL Volver a procesar recursos]** de la interfaz de Assets.
 
 Las representaciones estándar generadas con los microservicios de recursos se almacenan de forma compatible con versiones anteriores en los nodos del repositorio de recursos (las mismas convenciones de nombres).
 
