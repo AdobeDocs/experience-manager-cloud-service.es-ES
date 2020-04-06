@@ -1,13 +1,13 @@
 ---
-title: 'Paquete de estructura del repositorio de proyectos de AEM  '
+title: 'Desarrollo de un paquete de estructura de repositorio   '
 description: Adobe Experience Manager como proyecto de Cloud Service Maven requiere una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
 
 ---
 
 
-# Paquete de estructura del repositorio de proyectos de AEM
+# Desarrollo de un paquete de estructura de repositorio
 
 Los proyectos Maven para Adobe Experience Manager como servicio de nube requieren una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto. Esto garantiza la instalación de paquetes en Experience Manager, ya que las dependencias de recursos de JCR solicitan automáticamente un servicio de nube. La falta de dependencias puede dar lugar a situaciones en las que las subestructuras se instalarían por encima de sus estructuras principales y, por lo tanto, se eliminarían inesperadamente, con lo que se rompería la implementación.
 
@@ -31,7 +31,7 @@ Para crear un paquete de estructura de repositorio para el proyecto Maven, cree 
 
 Actualice el `<filters>` para incluir todas las rutas de repositorio de JCR que originan sus paquetes de código implementados en.
 
-Asegúrese de agregar este nuevo subproyecto Maven a la lista de proyectos principales `<modules>` .
+Asegúrese de agregar este nuevo subproyecto Maven a la `<modules>` lista de proyectos principal.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -51,9 +51,9 @@ Asegúrese de agregar este nuevo subproyecto Maven a la lista de proyectos princ
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>ui.apps.structure</artifactId>
+    <artifactId>my-app.repository-structure</artifactId>
     <packaging>content-package</packaging>
-    <name>UI Apps Structure - Repository Structure Package for /apps</name>
+    <name>My App - Adobe Experience Manager Repository Structure Package</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,10 +66,6 @@ Asegúrese de agregar este nuevo subproyecto Maven a la lista de proyectos princ
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
-                <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
-                    <cloudManagerTarget>none</cloudManagerTarget>
-                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -80,29 +76,14 @@ Asegúrese de agregar este nuevo subproyecto Maven a la lista de proyectos princ
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!--
-                        Examples of complex roots
-
-
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
-
-                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
-
+                        <!-- Common overlay roots -->
+                        <filter><root>/apps/sling</root></filter>
                         <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/cq/core</root></filter>
-                        <filter><root>/apps/cq/core/content</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+                        <filter><root>/apps/dam</root></filter>
+                        <filter><root>/apps/wcm</root></filter>
 
-
-                        Any /apps level Context-aware configurations need to enumerated here. 
-                        
-                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
-
+                        <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
-                        <filter><root>/apps/settings/notification-templates</root></filter>
-                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
-                        -->
 
                     </filters>
                 </configuration>
@@ -131,7 +112,7 @@ En el `ui.apps/pom.xml`, y en cualquier otro paquete `pom.xml`de código, agregu
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>my-app.repository-structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -143,7 +124,7 @@ En el `ui.apps/pom.xml`, y en cualquier otro paquete `pom.xml`de código, agregu
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>ui.apps.structure</artifactId>
+        <artifactId>my-app.repository-structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
@@ -176,7 +157,7 @@ Si los paquetes de estructura de repositorio no están correctamente configurado
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-Esto indica que el paquete de código de salto no tiene un `<repositoryStructurePackage>` que figure `/apps/some/path` en su lista de filtros.
+Esto indica que el paquete de código de salto no tiene una `<repositoryStructurePackage>` lista `/apps/some/path` de filtro.
 
 ## Recursos adicionales
 
