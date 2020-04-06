@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Publicación de recursos, carpetas y colecciones en Brand Portal {#publish-aem-assets-to-brand-portal}
 
 Como administrador de Recursos Adobe Experience Manager (AEM), puede publicar recursos, carpetas y colecciones en la instancia de AEM Assets Brand Portal. Asimismo, puede programar el flujo de trabajo de publicación de un recurso o carpeta para una fecha u hora posterior. Una vez publicados, los usuarios de Brand Portal pueden acceder a los recursos, carpetas y colecciones y distribuirlos aún más a otros usuarios.
 
