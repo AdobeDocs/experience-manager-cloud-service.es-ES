@@ -3,7 +3,7 @@ title: API de HTTP de Assets
 description: Obtenga información sobre la implementación, el modelo de datos y las características de la API HTTP de Assets. Utilice la API HTTP de Assets para realizar varias tareas en torno a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -25,7 +25,7 @@ Después del tiempo de [!UICONTROL inactividad], un recurso y sus representacion
 
 >[!NOTE]
 >
->Todas las llamadas de API relacionadas con la carga o actualización de recursos o archivos binarios en general (como las representaciones) se eliminan para AEM como una implementación de Cloud Service. Para cargar archivos binarios, utilice las API [de carga binaria](developer-reference-material-apis.md#asset-upload-technical) directa.
+>Todas las llamadas de API relacionadas con la carga o actualización de recursos o archivos binarios en general (como las representaciones) se eliminan para AEM como una implementación de Cloud Service. Para cargar archivos binarios, utilice en su lugar las API [de carga binarias](developer-reference-material-apis.md#asset-upload-technical) directas.
 
 ## Fragmentos de contenido {#content-fragments}
 
