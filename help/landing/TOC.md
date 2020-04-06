@@ -1,8 +1,8 @@
 ---
-sub-product: Adobe Experience Manager as a Cloud Service Help
-user-guide-title: Adobe Experience Manager as a Cloud Service Help
+sub-product: Ayuda de Adobe Experience Manager como servicio de nube
+user-guide-title: Ayuda de Adobe Experience Manager como servicio de nube
 translation-type: tm+mt
-source-git-commit: b4147948c28a7aad277eda24f9c80f99b9f39d32
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
@@ -10,13 +10,13 @@ source-git-commit: b4147948c28a7aad277eda24f9c80f99b9f39d32
 # Ayuda de Experience Manager as a Cloud Service {#landing}
 
 + [Experience Manager as a Cloud Service](/help/landing/home.md)
-+ [Información general](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/overview/home.html)
-+ [Notas de la versión](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/home.html)
-+ [Conceptos principales de AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html)
-+ [Seguridad para AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
-+ [Incorporación a AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/home.html)
-+ [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html)
-+ [AEM Assets as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/home.html)
-+ [Implementación de aplicaciones para AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/home.html)
-+ [Implementación de conectores para AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/connectors/home.html)
-+ [Operaciones y mantenimiento en AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/operations/home.html)
++ [Información general](/help/overview/home.md)
++ [Notas de la versión](/help/release-notes/home.md)
++ [Conceptos principales de AEM as a Cloud Service](/help/core-concepts/home.md)
++ [Seguridad para AEM as a Cloud Service](/help/security/home.md)
++ [Incorporación a AEM as a Cloud Service](/help/onboarding/home.md)
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
++ [Implementación de conectores para AEM as a Cloud Service](/help/connectors/home.md)
++ [Operaciones y mantenimiento en AEM as a Cloud Service](/help/operations/home.md)
