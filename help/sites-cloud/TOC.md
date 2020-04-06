@@ -1,15 +1,14 @@
 ---
-sub-product: Authoring Content in AEM as a Cloud Service
-user-guide-title: Authoring Content in AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+sub-product: Creación de contenido en AEM como un servicio en la nube
+user-guide-title: Creación de contenido en AEM como un servicio en la nube
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Sites {#sites}
 
-+ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Cambios importantes en AEM Sites en AEM Cloud Service](sites-cloud-changes.md)
 + Creación {#authoring}
    + Introducción {#getting-started}
@@ -48,7 +47,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [Uso de proyectos](authoring/projects/overview.md)
       + [Administración de proyectos](authoring/projects/managing.md)
       + [Uso de tareas](authoring/projects/tasks.md)
-      + [Uso de flujos de trabajo de proyecto](authoring/projects/workflows.md)
+      + [Uso de flujos de trabajo de proyecto](authoring/projects/workflows.md).
    + Lanzamientos {#launches}
       + [Uso de lanzamientos](authoring/launches/overview.md)
       + [Creación de lanzamientos](authoring/launches/creating.md)
