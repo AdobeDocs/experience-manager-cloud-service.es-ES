@@ -3,22 +3,22 @@ title: Informes del recurso
 description: En este artículo se describen varios informes sobre los recursos en Recursos AEM y cómo generar informes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
 # Informes del recurso {#asset-reports}
 
-Los informes de recursos son una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager (AEM). Con Recursos AEM, puede generar varios informes en torno a sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
+El sistema de informes de recursos es una herramienta clave para evaluar la utilidad de la implementación de Recursos Adobe Experience Manager (AEM). Con Recursos AEM, puede generar varios informes en torno a sus recursos digitales. Los informes proporcionan información útil sobre el uso del sistema, la forma en que los usuarios interactúan con los recursos y los recursos que se descargan y comparten.
 
 Utilice la información de los informes para derivar métricas de éxito clave a fin de medir la adopción de Recursos AEM en su empresa y por parte de los clientes.
 
-El marco de informes de AEM Assets aprovecha los trabajos de Sling para procesar de forma asíncrona las solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
+El marco de sistema de informes de AEM Assets aprovecha los trabajos de Sling para procesar de forma asincrónica las solicitudes de informes de forma ordenada. Es escalable para repositorios grandes. El procesamiento asincrónico de informes aumenta la eficiencia y la velocidad con que se generan los informes.
 
-La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y ver los estados de ejecución de los informes (exitosos, fallidos y en cola).
+La interfaz de administración de informes es intuitiva e incluye opciones y controles detallados para acceder a los informes archivados y a los estados de ejecución de los informes de vista (exitosos, fallidos y en cola).
 
-Cuando se genera un informe, se le notifica mediante <!-- through an email (optional) and --> una notificación de bandeja de entrada. Puede ver, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
+Cuando se genera un informe, se le notifica mediante un mensaje de correo electrónico (opcional) y una notificación de bandeja de entrada. Puede vista, descargar o eliminar un informe desde la página con la lista de informes, donde se muestran todos los informes generados previamente.
 
 ## Generar informes {#generate-reports}
 
@@ -79,7 +79,7 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 
    ![files_report](assets/files_report.png)
 
-   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde AEM Assets. <!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. --> Las columnas no se pueden personalizar.
+   El informe **[!UICONTROL Compartir vínculos]** muestra las direcciones URL de los recursos que se comparten con usuarios externos desde AEM Assets. Incluye los ID de correo electrónico del usuario que ha compartido los recursos, los ID de correo electrónico de los usuarios con los que se comparten los recursos, la fecha de uso compartido y la fecha de caducidad del vínculo. Las columnas no se pueden personalizar.
 
    El informe **[!UICONTROL Compartir vínculos]** no incluye opciones para subcarpetas y representaciones porque solo publica las direcciones URL compartidas que aparecen en */var/dam/share*.
 
@@ -98,13 +98,13 @@ Los administradores de AEM pueden generar y personalizar fácilmente estos infor
 1. Tap/click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 1. En la página Informes de recursos, el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo, Éxito, Fallido, En cola o Programado. El mismo estado aparece en la bandeja de entrada de notificaciones.
 
-   Para ver la página del informe, toque o haga clic en el vínculo del informe. Como alternativa, seleccione el informe y toque o haga clic en el icono Ver en la barra de herramientas.
+   Para vista de la página del informe, toque o haga clic en el vínculo del informe. Como alternativa, seleccione el informe y toque o haga clic en el icono de Vista en la barra de herramientas.
 
    ![report_page](assets/report_page.png)
 
    Toque o haga clic en el icono Descargar de la barra de herramientas para descargar el informe en formato CSV.
 
-## Agregar columnas personalizadas {#add-custom-columns}
+## Añadir columnas personalizadas {#add-custom-columns}
 
 Puede agregar columnas personalizadas a los siguientes informes para mostrar más datos según sus requisitos personalizados:
 
@@ -126,7 +126,7 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 
    ![custom_columns-1](assets/custom_columns-1.png)
 
-1. Agregue la ruta de acceso de propiedad debajo del `jcr:content` nodo en CRXDE mediante el selector de rutas de propiedad.
+1. Añada la ruta de la propiedad bajo el `jcr:content` nodo en CRXDE mediante el selector de rutas de propiedad.
 
    ![property_picker](assets/property_picker.png)
 
@@ -134,7 +134,7 @@ Puede agregar columnas personalizadas a los siguientes informes para mostrar má
 
    ![property_path](assets/property_path.png)
 
-   Para agregar más columnas personalizadas, toque o haga clic en **[!UICONTROL Agregar]** y repita los pasos 5 y 6.
+   Para agregar más columnas personalizadas, toque o haga clic en **[!UICONTROL Añadir]** y repita los pasos 5 y 6.
 
 1. Tap/click **[!UICONTROL Create]** from the toolbar. Un mensaje notifica que se ha iniciado la generación de informes.
 
