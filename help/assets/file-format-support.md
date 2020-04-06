@@ -3,7 +3,7 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ---
 
