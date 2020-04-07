@@ -1,5 +1,5 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
 translation-type: tm+mt
 
 ---
@@ -45,5 +45,13 @@ Los encargados de la gestión de proyectos que no sigan o apliquen el Código de
 
 ## Atribución
 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTeste código de conducta se adapta a la versión 1.4 del [Pacto](https://contributor-covenant.org)de Colaboración, disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+=======
 El presente Código de Conducta se adapta a la versión 1.4 del Pacto de [Colaboración](https://contributor-covenant.org), disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+>>>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
 
+
+
+
+
+> 
