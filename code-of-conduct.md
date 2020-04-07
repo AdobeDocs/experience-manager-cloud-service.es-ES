@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: 1eb3d121d5d52f7212017b3cd3cc200517377aa9
 translation-type: tm+mt
 
 ---
@@ -45,13 +45,4 @@ Los encargados de la gestión de proyectos que no sigan o apliquen el Código de
 
 ## Atribución
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTeste código de conducta se adapta a la versión 1.4 del [Pacto](https://contributor-covenant.org)de Colaboración, disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
-=======
-Este código de conducta está adaptado a la versión 1.4 del [Pacto](https://contributor-covenant.org)Colaborador, disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayo
-
-
-
-
-
-> 
+El presente Código de Conducta se adapta a la versión 1.4 del Pacto de [Colaboración](https://contributor-covenant.org), disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
