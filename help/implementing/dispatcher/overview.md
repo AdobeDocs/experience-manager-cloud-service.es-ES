@@ -132,7 +132,7 @@ Los archivos anteriores hacen referencia a los archivos de configuración inmuta
 
 **Archivos de configuración inmutables**
 
-Estos archivos forman parte del marco base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
+Estos archivos forman parte del marco de base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
 
 Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier declaración o anulación adicional. Cuando se implementa la configuración del distribuidor en un entorno de nube, se utilizará la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
 
@@ -305,7 +305,7 @@ Aparte de las seis secciones mencionadas en los párrafos anteriores, no se le p
 }
 ```
 
-**los clientes/renderizadores permitidos no se incluyen desde: ...**
+**los clientes/procesamientos permitidos no se incluyen desde: ...**
 
 Este error se genera cuando no se especifica una inclusión para `/renders` y `/allowedClients` en la `/cache` sección. Consulte el nombre del **archivo incluido (...): ...** para obtener más información.
 
