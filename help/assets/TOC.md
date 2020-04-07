@@ -2,7 +2,7 @@
 sub-product: 'AEM Assets as a Cloud Service '
 user-guide-title: 'AEM Assets as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
+source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
 
 ---
 
@@ -52,11 +52,11 @@ source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
    + [Metadatos XMP](xmp-metadata.md)
    + [Funciones de MediaLibrary](medialibrary.md)
    + [Importación y exportación de metadatos de recursos](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEAD==========
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt; CABEAD===========
 + Uso compartido y distribución de recursos {#brandportal}
    + [Configuración de AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publicación de AEM Assets en Brand Portal](publish-to-brand-portal.md)
->>>>>>>>>>matriz de 733b637... update toc=========parent de da6a8ae... Configuración de Brand Portal con AEM Assets en la nube
+>>>>>>>>>>matriz de 733b637... update toc=========parent de da6a8ae... Configure Brand Portal con AEM Assets en Cloud=============parent de da6a8ae... Configuración de Brand Portal con AEM Assets en la nube
 
 
 
