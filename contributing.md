@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
+source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
 translation-type: tm+mt
 
 ---
@@ -19,25 +19,7 @@ Si bien acogemos con satisfacción cualquier contribución para mejorar la docum
 
 ## Cómo contribuir
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe desea que sea lo más fácil posible enviar sus contribuciones. Puede contribuir de dos maneras:
-=======
-=======
->>>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayoLa contribución depende de quién sea y del tipo de cambios que desee aportar:
-
-
-
-
-
-> 
-
-### Crear un número
->>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
-
-
-
-
-
-
+Queremos que sea lo más fácil posible enviar sus contribuciones. Puede contribuir de dos maneras:
 
 * [Crear un problema](#create-an-issue)
 * [Crear una solicitud de extracción](#create-a-pull-request)
@@ -45,7 +27,8 @@ Si bien acogemos con satisfacción cualquier contribución para mejorar la docum
 El método que elija dependerá de la comodidad con la que edite la documentación en GitHub.
 
 >[!NOTE]
-Las contribuciones que envía están cubiertas por las condiciones de uso de [Adobe.](https://www.adobe.com/legal/terms.html)
+>
+>Las contribuciones que envía están cubiertas por las condiciones de uso de [Adobe.](https://www.adobe.com/legal/terms.html)
 
 ### Crear un número {#create-an-issue}
 
@@ -55,24 +38,7 @@ Los problemas le permiten describir fácilmente su idea para mejorar los documen
 
 ### Crear una solicitud de extracción {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIsi ve un problema y sabe exactamente cómo arreglarlo, considere la posibilidad de crear una solicitud de extracción. Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego un miembro del equipo de AEM Docs revisa para su inclusión. Simplemente haga clic en el vínculo **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
-=======
->=======>
->>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayo
-
-
-
-
->> 
-
-### Principales cambios de los empleados de Adobe
->>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
-
-
-
-
-
-
+Si ve un problema y sabe exactamente cómo solucionarlo, considere la posibilidad de crear una solicitud de extracción. Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego un miembro del equipo de AEM Docs revisa para su inclusión. Simplemente haga clic en el vínculo **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
 
 Todas las solicitudes de extracción deben ir acompañadas de un contrato de licencia de [colaborador firmado o de un CLA.](https://opensource.adobe.com/cla.html)  Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Solo tiene que enviar un CLA de Adobe una vez, por lo que si lo ha enviado anteriormente, ¡ya está listo!
 
@@ -82,42 +48,11 @@ Consulte el siguiente vídeo para obtener una descripción general rápida de c�
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA
 ### Contribuciones de empleados de Adobe
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIsi es un empleado de Adobe y tiene una contribución, utilice la `AdobeDocs` organización en la puerta de la empresa.
+Si es un empleado de Adobe y desea realizar una solicitud de extracción, utilice el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`.
 
-Por supuesto, estamos satisfechos con cualquier contribución y revisaremos su contribución si se realiza en el repositorio público. Sin embargo, las solicitudes de extracción de los empleados de Adobe son más fáciles de procesar y se pueden aprobar más rápido en la repo corporativa. Asegúrese de que cualquier información de propiedad solo se analiza en la repo corporativa.
-=======
->=======>
->>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayo
-
-
-
-
->> 
-
-## Herramientas y configuración
-
-Los colaboradores de la comunidad pueden utilizar la interfaz de usuario de GitHub para la edición básica o realizar importantes contribuciones.
-
-Consulte la Guía [del colaborador de](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) Adobe Docs para obtener información general sobre cómo utilizar la plataforma de creación GitHub.
-
-## Cómo usar el formato de un tema en Markdown
-
-Todos los artículos de este repositorio utilizan una marca con sabor GitHub. Si no está familiarizado con el uso de la marca, consulte:
-
-* [Conceptos básicos de marcas](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Hoja de referencia de marcas imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Etiquetas
->>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
-
-
-
-
-
-
+Para problemas, por favor siéntase libre de usar los repositorios públicos.
 
 ## Información adicional
 
