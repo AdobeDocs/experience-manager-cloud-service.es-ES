@@ -3,7 +3,7 @@ title: Guía de migración de recursos
 description: Describe cómo incorporar recursos a AEM, aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -14,7 +14,7 @@ Al migrar recursos a AEM, hay que tener en cuenta varios pasos. La extracción d
 
 ## Requisitos previos {#prerequisites}
 
-Antes de realizar realmente cualquiera de los pasos de esta metodología, revise e implemente la guía de ajuste del rendimiento. Muchos de los pasos, como la configuración de los trabajos simultáneos máximos, mejoran considerablemente la estabilidad del servidor y el rendimiento bajo carga. Otros pasos, como la configuración de un almacén de datos de archivos, son mucho más difíciles de realizar después de cargar el sistema con los recursos.
+Antes de realizar realmente cualquiera de los pasos de migración, revise e implemente las directrices de ajuste del rendimiento. Muchos de los pasos, como la configuración de los trabajos simultáneos máximos, mejoran considerablemente la estabilidad del servidor y el rendimiento bajo carga. Otros pasos, como la configuración de un almacén de datos de archivos, son mucho más difíciles de realizar después de cargar el sistema con los recursos.
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ Antes de realizar realmente cualquiera de los pasos de esta metodología, revise
 >* Flujo de trabajo sintético
 >
 >
-Este software es de código abierto y está cubierto por la [Licencia de ](https://adobe-consulting-services.github.io/pages/license.html)Apache v2. Para hacer una pregunta o informar de un problema, visite los respectivos [problemas de GitHub para ACS AEM Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) y [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+These software are open source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migración a AEM {#migrating-to-aem}
+## Migrar a AEM {#migrating-to-aem}
 
 La migración de recursos a AEM requiere varios pasos y debe verse como un proceso por fases. Las fases de la migración son las siguientes:
 
@@ -42,21 +42,21 @@ La migración de recursos a AEM requiere varios pasos y debe verse como un proce
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Desactivación de Flujos de trabajo {#disabling-workflows}
+### Deshabilitar Flujos de trabajo {#disabling-workflows}
 
 Antes de iniciar la migración, deshabilite los lanzadores para el flujo de trabajo de recursos de actualización de DAM. Es mejor ingerir todos los recursos en el sistema y luego ejecutar los flujos de trabajo en lotes. Si ya está activo durante la migración, puede programar estas actividades para que se ejecuten en horas de inactividad.
 
-### Loading Tags {#loading-tags}
+### Cargar etiquetas {#loading-tags}
 
 Es posible que ya tenga una taxonomía de etiquetas en su lugar de aplicación a las imágenes. Aunque las herramientas como el importador de recursos CSV y la compatibilidad de AEM con los perfiles de metadatos pueden automatizar el proceso de aplicación de etiquetas a los recursos, las etiquetas deben cargarse en el sistema. La función [ACS Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite rellenar etiquetas mediante una hoja de cálculo de Microsoft Excel que se carga en el sistema.
 
-### Ingesta de recursos {#ingesting-assets}
+### Recursos de entrada {#ingesting-assets}
 
 El rendimiento y la estabilidad son cuestiones importantes que se deben tener en cuenta a la hora de transferir recursos al sistema. Dado que está cargando una gran cantidad de datos en el sistema, debe asegurarse de que el sistema funciona lo mejor posible para minimizar la cantidad de tiempo necesaria y evitar sobrecargar el sistema, lo que puede provocar un bloqueo del sistema, especialmente en sistemas que ya están en producción.
 
 Existen dos métodos para cargar los recursos en el sistema: un enfoque basado en push que utiliza HTTP o un método basado en extracción que utiliza las API de JCR.
 
-#### Inserción a través de HTTP {#pushing-through-http}
+#### Insertar a través de HTTP {#pushing-through-http}
 
 El equipo de servicios gestionados de Adobe utiliza una herramienta llamada Glutton para cargar datos en entornos de clientes. Glutton es una pequeña aplicación Java que carga todos los recursos de un directorio en otro directorio en una instancia de AEM. En lugar de utilizar Glutton, también puede utilizar herramientas como scripts Perl para publicar los recursos en el repositorio.
 
@@ -69,11 +69,11 @@ El otro método para la ingesta de recursos es extraer recursos del sistema de a
 
 #### Extracción del sistema de archivos local {#pulling-from-the-local-filesystem}
 
-El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y los metadatos de los recursos de un archivo CSV para la importación de recursos. La API de AEM Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
+El importador [de recursos CSV de las herramientas de AEM de](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS extrae recursos del sistema de archivos y de los metadatos de los recursos de un archivo CSV para la importación de recursos. La API de AEM Asset Manager se utiliza para importar los recursos al sistema y aplicar las propiedades de metadatos configuradas. Idealmente, los recursos se montan en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
 Dado que no es necesario transmitir los recursos a través de una red, el rendimiento general mejora considerablemente y este método se considera generalmente la forma más eficaz de cargar los recursos en el repositorio. Además, como la herramienta admite la ingestión de metadatos, puede importar todos los recursos y metadatos en un solo paso en lugar de crear un segundo paso para aplicar los metadatos mediante una herramienta independiente.
 
-### Processing Renditions {#processing-renditions}
+### Procesar representaciones {#processing-renditions}
 
 Después de cargar los recursos en el sistema, debe procesarlos mediante el flujo de trabajo de recursos de actualización de DAM para extraer metadatos y generar representaciones. Antes de realizar este paso, debe realizar un duplicado y modificar el flujo de trabajo de recursos de actualización de DAM para adaptarlo a sus necesidades. El flujo de trabajo integrado contiene muchos pasos que puede no necesitar, como la generación de PTIFF de Scene7 o la integración del servidor de InDesign.
 
@@ -82,7 +82,7 @@ Después de configurar el flujo de trabajo según sus necesidades, tiene dos opc
 1. El enfoque más sencillo es [ACS Commons&#39;Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Esta herramienta le permite ejecutar una consulta y procesar los resultados de la consulta a través de un flujo de trabajo. También hay opciones para configurar los tamaños de lote.
 1. Puede utilizar [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) junto con [Synth Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Aunque estos pasos pueden ser más intrincados, le permiten eliminar la sobrecarga del motor de flujo de trabajo de AEM y optimizar el uso de los recursos del servidor. Además, Fast Action Manager aumenta todavía más el rendimiento mediante la supervisión dinámica de los recursos del servidor y la limitación de la carga localizada en el sistema. Se han proporcionado ejemplos de secuencias de comandos en la página de características de ACS Commons.
 
-### Activación de recursos {#activating-assets}
+### Activar recursos {#activating-assets}
 
 Para implementaciones que tienen un nivel de publicación, debe activar los recursos en el conjunto de servidores de publicación. Aunque Adobe recomienda ejecutar más de una única instancia de publicación, es más eficaz replicar todos los recursos en una única instancia de publicación y clonar dicha instancia. Al activar un gran número de recursos, después de activar una activación de árbol, es posible que tenga que intervenir. He aquí por qué: Al desactivar activaciones, los elementos se agregan a la cola de trabajos/eventos de Sling. Después de que el tamaño de esta cola comience a superar los 40.000 elementos aproximadamente, el procesamiento se ralentiza considerablemente. Después de que el tamaño de esta cola exceda los 100.000 elementos, la estabilidad del sistema inicio en sufrir.
 
@@ -96,52 +96,39 @@ Para cualquiera de estos enfoques, la advertencia es que los recursos de la inst
 >
 >Adobe no mantiene ni admite Grabbit.
 
-### Clonación de publicación {#cloning-publish}
+### Clonar publicación {#cloning-publish}
 
 Una vez activados los recursos, puede clonar la instancia de publicación para crear tantas copias como sea necesario para la implementación. Clonar un servidor es bastante sencillo, pero hay que recordar algunos pasos importantes. Para clonar la publicación:
 
 1. Realice una copia de seguridad de la instancia de origen y del almacén de datos.
 1. Restaure la copia de seguridad de la instancia y del almacén de datos en la ubicación del destinatario. Los siguientes pasos hacen referencia a esta nueva instancia.
-1. Realice una búsqueda del sistema de archivos en **crx-quickstart/launchpad/felix** para **sling.id**. Elimine este archivo.
-1. Bajo la ruta raíz del almacén de datos, busque y elimine cualquier archivo **repositorio-XXX** .
-1. Edite **crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config** y **crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config** para señalar la ubicación del almacén de datos en el nuevo entorno.
+1. Perform a filesystem search under `crx-quickstart/launchpad/felix` for `sling.id`. Elimine este archivo.
+1. En la ruta raíz del almacén de datos, busque y elimine `repository-XXX` los archivos.
+1. Edite `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` y `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` señale la ubicación del almacén de datos en el nuevo entorno.
 1. Inicio el entorno.
 1. Actualice la configuración de cualquier agente de replicación en los autores para que señale a las instancias de publicación correctas o a los agentes de vaciado del despachante en la nueva instancia para que señalen a los despachantes correctos para el nuevo entorno.
 
-### Activación de Flujos de trabajo {#enabling-workflows}
+### Habilitar Flujos de trabajo {#enabling-workflows}
 
 Una vez completada la migración, los lanzadores de los flujos de trabajo de recursos de actualización de DAM deben volver a habilitarse para admitir la generación de representaciones y la extracción de metadatos para el uso diario del sistema.
 
-## Migración entre instancias de AEM {#migrating-between-aem-instances}
+## Migrar entre instancias de AEM {#migrating-between-aem-instances}
 
 Aunque no es tan común, a veces es necesario migrar grandes cantidades de datos de una instancia de AEM a otra; por ejemplo, al realizar una actualización de AEM, actualizar el hardware o migrar a un nuevo centro de datos, como con una migración de AMS.
 
 En este caso, los recursos ya están rellenados con metadatos y las representaciones ya se han generado. Puede centrarse simplemente en mover recursos de una instancia a otra. Al migrar entre instancias de AEM, se realizan los siguientes pasos:
 
-1. Deshabilitar flujos de trabajo.
+1. Como está migrando representaciones junto con nuestros recursos, desea deshabilitar los iniciadores de flujo de trabajo para DAM Update Asset.
 
-   Como está migrando representaciones junto con nuestros recursos, desea deshabilitar los iniciadores de flujo de trabajo para DAM Update Asset.
+1. Dado que ya tiene etiquetas cargadas en la instancia de AEM de origen, puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
 
-1. Migrar etiquetas.
-
-   Dado que ya tiene etiquetas cargadas en la instancia de AEM de origen, puede generarlas en un paquete de contenido e instalar el paquete en la instancia de destinatario.
-
-1. Migrar recursos.
-
-   Existen dos herramientas recomendadas para mover recursos de una instancia de AEM a otra:
+1. Existen dos herramientas recomendadas para mover recursos de una instancia de AEM a otra:
 
    * **Vault Remote Copy**, o vlt rcp, le permite usar vlt en una red. Puede especificar un directorio de origen y destino y vlt descarga todos los datos del repositorio de una instancia y los carga en la otra. Vlt rcp está documentado en [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** es una herramienta de sincronización de contenido de código abierto desarrollada por Time Warner Cable para su implementación de AEM. Debido a que utiliza flujos de datos continuos, en comparación con vlt rcp, tiene una latencia menor y reclama una mejora de velocidad de dos a diez veces más rápida que vlt rcp. Grabbit también admite la sincronización de contenido delta solamente, lo que le permite sincronizar los cambios una vez que se ha completado una fase de migración inicial.
 
-1. Activar recursos.
+1. Siga las instrucciones para [activar los recursos](#activating-assets) documentados para la migración inicial a AEM.
 
-   Siga las instrucciones para [activar los recursos](#activating-assets) documentados para la migración inicial a AEM.
+1. Al igual que con una nueva migración, cargar una única instancia de publicación y clonarla es más eficaz que activar el contenido en ambos nodos. Consulte Publicación [de clonación.](#cloning-publish)
 
-1. Clonar publicación.
-
-   Al igual que con una nueva migración, cargar una única instancia de publicación y clonarla es más eficaz que activar el contenido en ambos nodos. Consulte Publicación [de clonación.](#cloning-publish)
-
-1. Habilitación de flujos de trabajo.
-
-   Una vez completada la migración, vuelva a habilitar los lanzadores para los flujos de trabajo de recursos de actualización de DAM para admitir la generación de representaciones y la extracción de metadatos para el uso diario del sistema.
-
+1. Una vez completada la migración, vuelva a habilitar los lanzadores para los flujos de trabajo de recursos de actualización de DAM para admitir la generación de representaciones y la extracción de metadatos para el uso diario del sistema.
