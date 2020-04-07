@@ -3,14 +3,14 @@ title: Utilice los recursos conectados para compartir recursos DAM en el flujo d
 description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 188917fe677a88142c702b9637600db872853974
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Utilice los recursos conectados para compartir recursos de DAM en AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Algunas razones pueden ser: el uso de implementaciones distribuidas geográficamente que necesitan trabajar en conjunto, adquisiciones que conducen a una infraestructura heterogénea que la empresa principal quiere unificar y el crecimiento que lleva a tal escala que se necesita una instancia dedicada para la administración de recursos.
+En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Algunas razones pueden ser la distribución geográfica de las implementaciones existentes que se requieren para trabajar en conjunto o las adquisiciones que conducen a una infraestructura heterogénea que la compañía principal desea utilizar en conjunto.
 
 AEM Sites ofrece capacidades de crear páginas web, y AEM Assets es el sistema de gestión de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web. AEM ahora es compatible con el caso de uso anterior mediante la integración de AEM Sites y AEM Assets.
 
@@ -18,7 +18,7 @@ AEM Sites ofrece capacidades de crear páginas web, y AEM Assets es el sistema d
 
 Al editar páginas en el Editor de páginas, los creadores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación diferente de AEM Assets. Para hacer esto, un administrador de AEM debe llevar a cabo una integración única de una implementación local de AEM Sites con una implementación diferente (remota) de AEM Assets.
 
-Para los creadores de Sites, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en la implementación local en un solo uso, considere migrar los recursos de forma masiva. Consulte [Guía de migración de recursos](/help/assets/assets-migration-guide.md).
+Para los creadores de Sites, los recursos remotos están disponibles como recursos locales de solo lectura. La funcionalidad admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en la implementación local en un solo uso, considere migrar los recursos de forma masiva.
 
 ### Requisitos previos e implementaciones admitidas {#prerequisites}
 
@@ -164,7 +164,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 * No se recuperan los esquemas de metadatos.
 * Todos los creadores de Sites tienen permisos de lectura en las copias recuperadas, incluso si no tienen acceso a la implementación de DAM remota.
 * No se admiten las API para personalizar la integración.
-* La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que varios recursos remotos estén disponibles en la implementación local, considere migrar los recursos. Consulte [Guía de migración de recursos](assets-migration-guide.md).
+* La funcionalidad admite la búsqueda y el uso ininterrumpidos de recursos remotos. Para que varios recursos remotos estén disponibles en la implementación local, considere migrar los recursos.
 * No se puede utilizar un recurso remoto como miniatura para una página web en la pestaña [!UICONTROL Miniatura] en [!UICONTROL Propiedades de página] haciendo clic en [!UICONTROL Seleccionar imagen].
 
 **Configuración y licencia**
