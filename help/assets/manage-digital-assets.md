@@ -4,7 +4,7 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -19,7 +19,9 @@ Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágen
 
 >[!NOTE]
 >
->Compartir una carpeta de recursos del tipo `sling:OrderedFolder`, no se admite al compartir en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* Compartir una carpeta de recursos del tipo `sling:OrderedFolder`, no se admite al compartir en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* Experience Manager no permite usar `subassets` palabras como nombre de una carpeta. Es una palabra clave reservada para nodos que contienen subrecursos para recursos compuestos
+
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una nueva carpeta. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.
 1. En el campo **[!UICONTROL Título]** , especifique un nombre de carpeta. De forma predeterminada, DAM utiliza el título que ha proporcionado como nombre de carpeta. Una vez creada la carpeta, puede anular el valor predeterminado y especificar otro nombre de carpeta.
@@ -415,13 +417,15 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-1. Para notificar a un usuario sobre una anotación, especifique la dirección de correo electrónico del usuario y agregue el comentario. Por ejemplo, para notificar a Aaron MacDonald sobre una anotación, escriba @aa. Las sugerencias para todos los usuarios coincidentes se muestran en una lista. Seleccione la dirección de correo electrónico de Aaron en la lista para etiquetarla con el comentario. Del mismo modo, puede etiquetar a más usuarios en cualquier lugar dentro de la anotación o antes o después de ella.
+<!--
+1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+-->
 
-   >[!NOTE]
-   >
-   >Para un usuario que no es administrador, las sugerencias solo aparecen si el usuario tiene permisos de lectura en */inicio* en Crx-de.
+>[!NOTE]
+>
+>Para un usuario que no es administrador, las sugerencias solo aparecen si el usuario tiene permisos de lectura `/home` en CRXDE.
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. Después de agregar la anotación, haga clic en **[!UICONTROL Añadir]** para guardarla. Se envía una notificación para la anotación a Aaron.
 
