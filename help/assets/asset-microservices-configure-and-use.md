@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,6 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 # Introducción a los microservicios de recursos {#get-started-using-asset-microservices}
 
 <!--
-
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
 * Detailed list of what file formats and what processing is supported by which workflows/workers process.
@@ -19,14 +18,13 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 * How to create new config or request for new provisioning/purchase.
 
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
-
 -->
 
-Los microservicios de recursos proporcionan un procesamiento escalable y flexible de recursos mediante servicios en la nube, que Adobe administra para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento.
+Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe gestiona los servicios para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento.
 
-El procesamiento de recursos se realiza en función de la configuración de los Perfiles **[!UICONTROL de]** procesamiento, que proporcionan una configuración predeterminada y permiten al administrador agregar una configuración de procesamiento de recursos más específica. Para permitir la extensibilidad y la personalización total, el procesamiento de recursos permite una configuración opcional de flujos de trabajo posteriores al procesamiento, que luego son creados y mantenidos por el administrador.
+El procesamiento de recursos depende de la configuración de los Perfiles **[!UICONTROL de]** procesamiento, que proporcionan una configuración predeterminada, y permiten al administrador agregar una configuración de procesamiento de recursos más específica. Los administradores pueden crear y mantener las configuraciones de flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de flujos de trabajo permite la extensibilidad y la personalización total.
 
-A continuación se muestra un flujo de alto nivel para el procesamiento de recursos en Experience Manager como servicio de nube.
+A continuación se muestra un flujo de alto nivel para el procesamiento de recursos.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -37,7 +35,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> Para los clientes que actualicen desde versiones anteriores de Experience Manager: el procesamiento de recursos descrito en esta sección sustituye al modelo de flujo de trabajo &quot;DAM Update Asset&quot; utilizado anteriormente para el procesamiento de la ingesta de recursos. La mayoría de los pasos de generación de representación estándar y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos y los pasos restantes, si los hay, se pueden reemplazar por la configuración del flujo de trabajo posterior al procesamiento.
+> El procesamiento de recursos que se describe aquí sustituye al modelo de flujo de trabajo que existe en las versiones anteriores de Experience Manager. `DAM Update Asset` La mayoría de los pasos de generación de representación estándar y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos y los pasos restantes, si los hay, se pueden reemplazar por la configuración del flujo de trabajo posterior al procesamiento.
 
 ## Introducción al procesamiento de recursos {#get-started}
 
@@ -56,9 +54,9 @@ Para configurar los microservicios de recursos, los administradores pueden utili
 
 ### Configuración predeterminada {#default-config}
 
-Con la configuración predeterminada, solo se configura el perfil de procesamiento [!UICONTROL estándar] . Se trata de una versión integrada y no se puede modificar. Siempre se ejecuta para garantizar que se lleva a cabo todo el procesamiento requerido por la aplicación.
+Con la configuración predeterminada, solo se configura el perfil de procesamiento estándar. El perfil de procesamiento estándar no está visible en la interfaz de usuario y no se puede modificar. Siempre se ejecuta para procesar los recursos cargados. Un perfil de procesamiento estándar garantiza que todo el procesamiento básico requerido por Experience Manager se complete en todos los recursos.
 
-![procesado-perfiles-estándar](assets/processing-profiles-standard.png)
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
 El perfil de procesamiento estándar proporciona la siguiente configuración de procesamiento:
 
@@ -77,17 +75,18 @@ Se pueden agregar perfiles de procesamiento adicionales mediante la acción **[!
 
 Cada configuración de perfil de procesamiento incluye una lista de representaciones. Para cada representación, puede especificar lo siguiente:
 
-* nombre de representación
-* formato de representación (se admiten archivos JPEG, PNG o GIF)
-* anchura y altura de representación en píxeles (si no se especifica, se asume el tamaño de píxel completo del original)
-* calidad de representación (para JPEG) en porcentaje
-* Los tipos MIME incluidos y excluidos definen a qué tipos de recurso se aplica el perfil de procesamiento
+* Nombre de la representación.
+* Formato de representación admitido, como JPEG, PNG o GIF.
+* Anchura y altura de representación en píxeles. Si no se especifica, se utiliza el tamaño de píxel completo de la imagen original.
+* Calidad de representación de JPEG en porcentaje.
+* Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
 ![proceso-perfiles-adición](assets/processing-profiles-adding.png)
 
-Cuando se guarda un nuevo perfil de procesamiento, se agrega a la lista de perfiles de procesamiento configurados. Estos perfiles de procesamiento se pueden aplicar a las carpetas de la jerarquía de carpetas para que sean eficaces en la carga de recursos y en los recursos que se realicen en ellas.
+Al crear y guardar un nuevo perfil de procesamiento, se agrega a la lista de perfiles de procesamiento configurados. Puede aplicar estos perfiles de procesamiento a las carpetas de la jerarquía de carpetas para que sean eficaces en la carga de recursos y en el procesamiento de recursos.
 
-![procesando-perfiles-lista](assets/processing-profiles-list.png)
+<!-- Removed per cqdoc-15624 request by engineering.
+ ![processing-profiles-list](assets/processing-profiles-list.png) -->
 
 #### Anchura y altura de representación {#rendition-width-height}
 
@@ -103,13 +102,13 @@ De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincid
 
 #### Representación especial de FPO {#special-fpo-rendition}
 
-El perfil de procesamiento puede incluir una &quot;representación FPO&quot; especial, que se utiliza cuando [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) se utiliza con Adobe InDesign para colocar vínculos directos a recursos de Experience Manager en documentos de InDesign.
+Al colocar recursos de gran tamaño de AEM en documentos de Adobe InDesign, un profesional creativo debe esperar un tiempo considerable después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, el usuario no puede utilizar InDesign. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. Adobe permite la colocación temporal de representaciones de pequeño tamaño en documentos de InDesign para empezar, que se pueden reemplazar con recursos de resolución completa más adelante. Experience Manager proporciona representaciones que se utilizan solo para la colocación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño pero tienen la misma proporción de aspecto.
 
-Consulte la [documentación](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) de Adobe Asset Link para saber si necesita activarla para su perfil de procesamiento.
+El perfil de procesamiento puede incluir una representación FPO (solo para ubicación). Consulte la [documentación](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) de Adobe Asset Link para saber si necesita activarla para su perfil de procesamiento. Para obtener más información, consulte la documentación [completa de](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
 
 ## Uso de microservicios de recursos para procesar recursos {#use-asset-microservices}
 
-Una vez creados los perfiles de procesamiento adicionales, deben aplicarse a carpetas específicas de Experience Manager para utilizarlos en el procesamiento de recursos para los recursos cargados o actualizados en estas carpetas. El perfil de procesamiento estándar integrado siempre se ejecuta.
+Cree y aplique los perfiles de procesamiento personalizados adicionales a carpetas específicas para que Experience Manager pueda procesar los recursos cargados o actualizados en estas carpetas. El perfil de procesamiento estándar predeterminado e integrado siempre se ejecuta, pero no es visible en la interfaz de usuario. Si agrega un perfil personalizado, se utilizan ambos perfiles para procesar los recursos cargados.
 
 Existen dos formas de aplicar perfiles de procesamiento a las carpetas:
 
@@ -149,15 +148,15 @@ Añadir una configuración de flujo de trabajo posterior al procesamiento en Exp
 * El último paso de ese modelo debe ser el `DAM Update Asset Workflow Completed Process` paso. Esto es necesario para garantizar que AEM sepa que el procesamiento ha finalizado y que el recurso se puede marcar como procesado (&quot;Nuevo&quot;)
 * Creación de una configuración para el servicio de ejecución de flujo de trabajo personalizado, que permite configurar la ejecución de un modelo de flujo de trabajo posterior al procesamiento por ruta (ubicación de carpeta) o expresión regular
 
-### Creación de modelos de flujo de trabajo posteriores al procesamiento
+### Crear modelos de flujo de trabajo posteriores al procesamiento {#create-post-processing-workflow-models}
 
-Los modelos de flujo de trabajo posteriores al procesamiento son modelos habituales de flujo de trabajo de AEM. Cree diferentes si necesita un procesamiento diferente para diferentes ubicaciones de repositorio o tipos de recursos.
+Los modelos de flujo de trabajo posteriores al procesamiento son modelos habituales de flujo de trabajo de AEM. Cree distintos modelos si necesita un procesamiento diferente para diferentes ubicaciones de repositorio o tipos de recursos.
 
-Los pasos de procesamiento deben agregarse en función de las necesidades. Puede utilizar los pasos predeterminados admitidos disponibles, así como cualquier paso de flujo de trabajo personalizado.
+Los pasos de procesamiento deben agregarse en función de las necesidades. Puede utilizar los pasos admitidos disponibles, así como cualquier paso de flujo de trabajo personalizado.
 
-El último paso de cada uno de los flujos de trabajo de postprocesamiento debe ser el `DAM Update Asset Workflow Completed Process`. Esto garantiza que el recurso esté correctamente marcado como &quot;procesado completado&quot;.
+Asegúrese de que el último paso de cada flujos de trabajo posterior al procesamiento sea `DAM Update Asset Workflow Completed Process`. El último paso ayuda a garantizar que Experience Manager sabe cuándo se completa el procesamiento de recursos.
 
-### Configuración de la ejecución del flujo de trabajo posterior al procesamiento
+### Configurar la ejecución del flujo de trabajo posterior al procesamiento {#configure-post-processing-workflow-execution}
 
 Para configurar los modelos de flujo de trabajo posteriores al procesamiento que se van a ejecutar para los recursos cargados o actualizados en el sistema una vez finalizado el procesamiento de los microservicios de recursos, es necesario configurar el servicio de ejecución de flujo de trabajo personalizado.
 
@@ -171,4 +170,4 @@ El servicio Ejecutor de flujo de trabajo personalizado (`com.adobe.cq.dam.proces
 >La configuración del Ejecutor de flujo de trabajo personalizado es una configuración de un servicio OSGi. Consulte [Implementación en Experience Manager](/help/implementing/deploying/overview.md) para obtener información sobre cómo implementar una configuración OSGi.
 > La consola web OSGi, a diferencia de las implementaciones de servicios locales y gestionados de AEM, no está disponible directamente en las implementaciones de servicios en la nube.
 
-Para obtener más información sobre los pasos estándar del flujo de trabajo que se pueden utilizar en el flujo de trabajo posterior al procesamiento, consulte los pasos del [flujo de trabajo en el flujo de trabajo](developer-reference-material-apis.md#post-processing-workflows-steps) posterior al procesamiento en la referencia del desarrollador.
+Para obtener más información sobre qué paso de flujo de trabajo estándar se puede utilizar en el flujo de trabajo posterior al procesamiento, consulte los pasos de [flujo de trabajo en el flujo de trabajo](developer-reference-material-apis.md#post-processing-workflows-steps) posterior al procesamiento en la referencia del desarrollador.
