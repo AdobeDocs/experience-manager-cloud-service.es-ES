@@ -3,7 +3,7 @@ title: Conozca cómo los microservicios de recursos pueden procesar sus recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -13,10 +13,9 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 <!--
 First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
-
 -->
 
-Adobe Experience Manager como servicio de nube proporciona una forma nativa de aprovechar las aplicaciones y capacidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos.
+Adobe Experience Manager como servicio de nube ofrece una forma nativa de aprovechar las aplicaciones y capacidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos.
 
 Los microservicios de recursos proporcionan un procesamiento escalable y flexible de recursos mediante servicios en la nube, que Adobe administra para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los beneficios clave son:
 
@@ -53,10 +52,10 @@ Los pasos clave de la ingestión y el procesamiento mediante microservicios de a
 
 Este es el flujo básico de procesamiento e ingesta de recursos. Si está configurado, Experience Manager también puede realizar inicios en el modelo de flujo de trabajo del cliente para realizar el procesamiento posterior del recurso, por ejemplo, para ejecutar algunos pasos personalizados específicos del entorno del cliente, como la obtención de información de los sistemas empresariales del cliente para agregarla a las propiedades del recurso.
 
-La ingestión y el flujo de procesamiento muestran algunos conceptos clave aprovechados por la arquitectura de microservicios de recursos para Experience Manager:
+La ingestión y el flujo de procesamiento son conceptos clave de la arquitectura de los microservicios de recursos para Experience Manager.
 
-* **Acceso** binario directo: los recursos se transportan (y se cargan) al almacén binario de la nube una vez configurados para los entornos de Experience Manager y, a continuación, AEM, los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
-* **Procesamiento** externo: el procesamiento de recursos se realiza fuera del entorno de AEM y guarda sus recursos (CPU, memoria) para proporcionar funcionalidades clave de Digital Asset Management y admitir el trabajo interactivo con el sistema para los usuarios finales
+* **Acceso** binario directo: Los recursos se transportan (y se cargan) al almacén binario de la nube una vez configurados para los entornos de Experience Manager y, a continuación, AEM, los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
+* **Procesamiento** externo: El procesamiento de los recursos se realiza fuera del entorno AEM y guarda sus recursos (CPU, memoria) para proporcionar funciones clave de la administración de recursos digitales y admitir el trabajo interactivo con el sistema para los usuarios finales
 
 ## Carga de recursos con acceso binario directo {#asset-upload-with-direct-binary-access}
 
@@ -64,7 +63,7 @@ Los clientes de Experience Manager, que forman parte de la oferta de productos, 
 
 Puede utilizar herramientas de carga personalizadas, que funcionan directamente con las API HTTP de AEM. Puede utilizar estas API directamente o utilizar y ampliar los siguientes proyectos de código abierto que implementan el protocolo de carga:
 
-* [Abrir biblioteca de carga de código fuente](https://github.com/adobe/aem-upload)
+* [Biblioteca de carga de código abierto](https://github.com/adobe/aem-upload)
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
 
 Para obtener más información, consulte [Carga de recursos](add-assets.md).
