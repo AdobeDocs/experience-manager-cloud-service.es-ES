@@ -2,7 +2,7 @@
 title: Guías del usuario de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 587e60678bf92e2a0124da13d3c7fb492a5a7d4e
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -24,8 +24,6 @@ En esta página se muestran las guías del usuario para Experience Manager as a 
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de implementación de desarrollo. |
 | [Guía del usuario sobre conectores](/help/connectors/home.md) | Descubra cómo integrar soluciones en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de Experience Manager as a Cloud Service: tareas de indexación y mantenimiento. |
-| [Pasar a AEM como servicio de nube](/help/move-to-cloud-service/home.md) | Obtenga información sobre los recursos de autoayuda y las herramientas que facilitan el cambio a AEM como servicio de nube. |
-
 
 ## Otros recursos de Experience Manager {#other-resources}
 
