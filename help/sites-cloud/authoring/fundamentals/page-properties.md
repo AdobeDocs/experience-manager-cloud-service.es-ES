@@ -2,7 +2,7 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -181,8 +181,10 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Configuración de ámbito**
 
    * Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   >[!NOTE]
+   >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
 
-### Permisos   {#permissions}
+### Permisos    {#permissions}
 
 * **Permisos**
 
