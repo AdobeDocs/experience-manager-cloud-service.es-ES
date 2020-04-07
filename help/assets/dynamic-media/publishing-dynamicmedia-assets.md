@@ -2,7 +2,7 @@
 title: Publicación de recursos de Dynamic Media
 description: Cómo publicar recursos de medios dinámicos
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 Para publicar los recursos de Dynamic Media, selecciónelos y toque **[!UICONTROL Publicar]**. Una vez publicados los recursos de medios dinámicos, estarán disponibles para incluirlos en una página web mediante URL o mediante incrustación.
 
-También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. See [Configuring Dynamic Media](config-dm.md).
+También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. O bien, puede publicar estos recursos de forma selectiva. See [Configuring Dynamic Media](config-dm.md).
 
 En la **[!UICONTROL vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
