@@ -2,7 +2,7 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -132,7 +132,7 @@ Los archivos anteriores hacen referencia a los archivos de configuración inmuta
 
 **Archivos de configuración inmutables**
 
-Estos archivos forman parte del marco de base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
+Estos archivos forman parte del marco base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
 
 Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier declaración o anulación adicional. Cuando se implementa la configuración del distribuidor en un entorno de nube, se utilizará la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
 
@@ -694,135 +694,3 @@ Esto inicio el contenedor y expondrá Apache en el puerto local 8080.
 ¡Felicitaciones! Si el validador ya no informa de ningún problema y el contenedor del acoplador se inicio sin errores ni advertencias, ya estará listo para mover la configuración a un `dispatcher/src` subdirectorio del repositorio de Git.
 
 **Los clientes que utilicen la configuración de AMS Dispatcher versión 1 deben ponerse en contacto con el servicio de asistencia al cliente para ayudarles a migrar de la versión 1 a la versión 2, de modo que se puedan seguir las instrucciones anteriores.**
-
-## Dispatcher y CDN {#dispatcher-cdn}
-
-El envío de contenido del servicio de publicación incluye:
-
-* CDN (normalmente administrado por Adobe)
-* Distribuidor de AEM
-* Publicación de AEM
-
-El flujo de datos es el siguiente:
-
-1. La dirección URL se agrega al explorador
-1. Solicitud realizada a CDN asignada en DNS a ese dominio
-1. Si el contenido se almacena completamente en caché en CDN, CDN lo proporciona al explorador
-1. Si el contenido no se almacena completamente en caché, la CDN llama (proxy inverso) al distribuidor
-1. Si el contenido se almacena completamente en la caché del despachante, el despachante lo proporciona a la CDN
-1. Si el contenido no se almacena completamente en la caché, el despachante llama (proxy inverso) a la publicación de AEM
-1. El navegador procesa el contenido, que también puede almacenarlo en caché, según los encabezados
-
-La mayoría del contenido está configurado para caducar después de cinco minutos, un umbral que respetan tanto la caché del despachante como la CDN. Durante las redistribuciones del servicio de publicación, la caché del despachante se borra y se calienta posteriormente antes de que los nuevos nodos de publicación acepten el tráfico.
-
-Las secciones a continuación proporcionan buenos detalles sobre el envío de contenido, incluida la configuración de CDN y el almacenamiento en caché de despachantes.
-
-La información sobre la replicación del servicio de creación al servicio de publicación está disponible [aquí](/help/operations/replication.md).
-
->[!NOTE]
->El tráfico pasa por un servidor web apache, que admite módulos, incluido el despachante. El despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación con el fin de aumentar el rendimiento.
-
-### CDN {#cdn}
-
-AEM oferta tres opciones:
-
-1. CDN gestionado por Adobe: CDN incorporado de AEM. Esta es la opción recomendada, ya que está completamente integrada.
-1. CDN administrada por el cliente: El cliente trae su propia CDN y es totalmente responsable de administrarla.
-1. Seleccione Adobe Managed CDN: el cliente señala un CDN a la CDN integrada de AEM.
-
->[!CAUTION]
->La primera opción es muy recomendable. Adobe no se responsabiliza del resultado de cualquier error de configuración si elige la segunda opción.
-
-Las opciones segunda y tercera se permitirán caso por caso. Esto implica cumplir ciertos requisitos previos, incluyendo, entre otros, el hecho de que el cliente tenga una integración heredada con su proveedor de CDN, lo cual es difícil de deshacer.
-
-#### CDN gestionado por Adobe {#adobe-managed-cdn}
-
-La preparación para el envío de contenido mediante la CDN integrada de Adobe es sencilla, tal como se describe a continuación:
-
-1. Proporcionará el certificado SSL firmado y la clave secreta a Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea.
-Nota: Aem como servicio de nube no admite certificados de dominio validados (DV).
-1. El servicio de asistencia al cliente coordinará con usted la temporización de un registro DNS CNAME, señalando a su FQDN `adobe-aem.map.fastly.net`.
-1. Se le notificará cuando los certificados SSL caduquen para que pueda volver a enviar los nuevos certificados SSL.
-
-De forma predeterminada, para una configuración de CDN administrada de Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), debe trabajar con la asistencia al cliente para configurar estas restricciones.
-
-#### CDN gestionado por el cliente {#customer-managed-cdn}
-
-Puede administrar su propia CDN, siempre que:
-
-1. Tiene una CDN existente.
-1. Debe ser una CDN admitida. Actualmente, se admite Akamai. Si su organización desea administrar una CDN no admitida actualmente, póngase en contacto con el servicio de asistencia al cliente.
-1. Usted lo administrará.
-1. Debe ser capaz de configurar CDN para que funcione con Aem como un servicio de nube; consulte las instrucciones de configuración a continuación.
-1. Dispone de expertos en ingeniería de CDN que están disponibles en caso de que surjan problemas relacionados.
-1. Debe proporcionar listas blancas de nodos CDN al Administrador de nube, tal como se describe en las instrucciones de configuración.
-1. Debe realizar y superar correctamente una prueba de carga antes de ir a producción.
-
-Instrucciones de configuración:
-
-1. Proporcione la lista blanca del proveedor de CDN a Adobe llamando a la API de creación/actualización de entorno con una lista de CIDR a la lista blanca.
-1. Configure el `X-Forwarded-Host` encabezado con el nombre de dominio.
-1. Establezca el encabezado Host con el dominio de origen, que es Aem como ingreso al servicio de nube. El valor debe proceder de Adobe.
-1. Envíe el encabezado SNI al origen. El encabezado sni debe ser el dominio de origen.
-1. Establezca `X-Edge-Key` lo que se necesita para enrutar el tráfico correctamente a los servidores AEM. El valor debe proceder de Adobe.
-
-Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
-
-#### Seleccione Adobe Managed CDN {#point-to-point-CDN}
-
-Compatible si desea utilizar la CDN existente, pero no puede satisfacer los requisitos de una CDN administrada por el cliente. En este caso, usted administra su propia CDN, pero señala a la CDN administrada de Adobe.
-
-Los clientes deben realizar y superar correctamente una prueba de carga antes de ir a producción.
-
-Instrucciones de configuración:
-
-1. Configure el `X-Forwarded-Host` encabezado con el nombre de dominio.
-1. Establezca el encabezado Host con el dominio de origen, que es la entrada de CDN de Adobe. El valor debe proceder de Adobe.
-1. Envíe el encabezado SNI al origen. Al igual que el encabezado Host, el encabezado sni debe ser el dominio de origen.
-1. Establezca el `X-Edge-Key`, que es necesario para enrutar el tráfico correctamente a los servidores AEM. El valor debe proceder de Adobe.
-
-#### invalidación de caché de CDN {#CDN-cache-invalidation}
-
-La invalidación de caché sigue estas reglas:
-
-* En general, el contenido HTML se almacena en caché en la CDN durante 5 minutos, según el encabezado de control de caché emitido por el distribuidor.
-* Las bibliotecas de cliente (JavaScript y CSS) se almacenan en caché de forma indefinida mediante el control de caché establecido en inmutable o en 30 días para los exploradores más antiguos que no respetan el valor inmutable. Tenga en cuenta que las bibliotecas cliente se sirven en una ruta única que cambia si cambian las bibliotecas cliente. En otras palabras, el HTML que hace referencia a las bibliotecas de cliente se producirá según sea necesario para que pueda experimentar contenido nuevo a medida que se publica.
-* De forma predeterminada, las imágenes no se almacenan en caché.
-
-Antes de aceptar el tráfico activo, los clientes deben validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
-
-## invalidación explícita de la caché del despachante {#explicit-invalidation}
-
-Como se ha indicado anteriormente, el tráfico pasa a través de un servidor web apache, que admite módulos, incluido el despachante. El despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación con el fin de aumentar el rendimiento.
-
-En general, no será necesario invalidar manualmente el contenido en el despachante, pero es posible si es necesario, tal como se describe a continuación.
-
-Antes de AEM como servicio de nube, había dos formas de invalidar la caché del despachante.
-
-1. Invocar el agente de replicación, especificando el agente de vaciado del despachante de publicación
-2. Llamando directamente a la `invalidate.cache` API (por ejemplo, POST /dispatcher/invalidate.cache)
-
-Ya no se admitirá el `invalidate.cache` método, ya que solo se dirige a un nodo de distribuidor específico.
-AEM como servicio de nube funciona a nivel de servicio, no a nivel de nodo individual, por lo que las instrucciones de invalidación de la documentación de la Ayuda [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) Dispatcher ya no son precisas.
-En su lugar, se debe utilizar el agente de vaciado de replicación. Esto se puede hacer con la API de replicación. La documentación de la API de replicación está disponible [aquí](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la página [de ejemplo de la](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) API específicamente el `CustomStep` ejemplo de cómo emitir una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar pero está preconfigurado para que apunte al despachante, junto con el servicio de publicación que ejecuta el agente de vaciado. Normalmente, el agente de vaciado puede activarse mediante eventos o flujos de trabajo OSGi.
-
-El diagrama siguiente ilustra esto.
-
-![](assets/cdnb.png "CDNCDN")
-
-Si existe la preocupación de que la caché del despachante no esté borrando, póngase en contacto con el servicio de asistencia al cliente, el cual puede vaciar la caché del despachante si es necesario.
-
-La CDN administrada por Adobe respeta los TTL y, por lo tanto, no es necesario vaciarla. Si se sospecha un problema, póngase en contacto con el servicio de asistencia al cliente para que pueda vaciar una caché de CDN administrada por Adobe según sea necesario.
-
-### Invalidación de caché de despachante durante la Activación/desactivación {#cache-activation-deactivation}
-
-Al igual que las versiones anteriores de AEM, la publicación o cancelación de publicaciones borrará el contenido de la caché del despachante. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión.
-
-Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su distribuidor. La ruta de acceso actualizada se elimina de la caché del despachante, junto con sus elementos principales, hasta un nivel (puede configurarla con el [nivel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)statfiles).
-
-### Frescura del contenido y coherencia de la versión {#content-consistency}
-
-* Las páginas están formadas por HTML, JavaScript, CSS e imágenes.
-* Se recomienda aprovechar el marco de clientlibs para importar recursos de JavaScript y CSS en páginas HTML, teniendo en cuenta las dependencias entre bibliotecas JS.
-* Se proporciona la administración automática de versiones, lo que significa que los desarrolladores pueden registrar cambios en las bibliotecas JS en el control de código fuente, y la última versión estará disponible cuando se inserte una versión. Sin esto, los desarrolladores necesitarían cambiar manualmente HTML con referencias a la nueva versión de la biblioteca, lo que resulta especialmente oneroso si muchas plantillas HTML comparten la misma biblioteca.
-* Cuando las nuevas versiones de las bibliotecas se publican en producción, las páginas HTML de referencia se actualizan con nuevos vínculos a esas versiones de biblioteca actualizadas. Una vez que la caché del navegador ha caducado para una página HTML determinada, no hay problema de que las bibliotecas antiguas se carguen desde la caché del navegador, ya que la página actualizada (desde AEM) ahora está garantizada para hacer referencia a las nuevas versiones de las bibliotecas. En otras palabras, una página HTML actualizada incluirá todas las versiones de biblioteca más recientes.
