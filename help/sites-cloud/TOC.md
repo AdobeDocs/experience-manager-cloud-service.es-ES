@@ -2,13 +2,14 @@
 sub-product: Creación de contenido en AEM como un servicio en la nube
 user-guide-title: Creación de contenido en AEM como un servicio en la nube
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Sites {#sites}
 
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [Cambios importantes en AEM Sites en AEM Cloud Service](sites-cloud-changes.md)
 + Creación {#authoring}
    + Introducción {#getting-started}
