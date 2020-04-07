@@ -57,7 +57,7 @@ Utiliza el punto final y requiere la ruta del recurso para acceder a él (sin el
 * Debe solicitar:
    * `/api/assets/path/to/asset`
 
-Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por ejemplo, para acceder `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Acceso sobre:
