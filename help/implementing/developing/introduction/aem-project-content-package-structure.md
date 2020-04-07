@@ -1,13 +1,13 @@
 ---
-title: Comprender la estructura del paquete de contenido de un proyecto
-description: Obtenga información sobre cómo definir correctamente las estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
+title: Estructura del proyecto de AEM
+description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Comprender la estructura de un paquete de contenido de proyecto en el servicio de nube de Adobe Experience Manager {#understand-cloud-service-package-structure}
+# Estructura del proyecto de AEM
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ La estructura del paquete descrita en este documento es compatible **tanto** con
 
 `/apps` y `/libs` se consideran áreas **inmutables** de AEM, ya que no se pueden cambiar (crear, actualizar, eliminar) después de iniciarse AEM (es decir, durante la ejecución). Cualquier intento de cambiar un área inmutable durante la ejecución fallará.
 
-Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/home`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. son todas áreas **mutables** , lo que significa que se pueden cambiar en tiempo de ejecución.
+Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. son todas áreas **mutables** , lo que significa que se pueden cambiar en tiempo de ejecución.
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ Este diagrama proporciona una visión general de la estructura de proyecto recom
 
 La estructura de implementación de aplicaciones recomendada es la siguiente:
 
-+ El `ui.apps` paquete, o paquete de contenido, contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros:
++ El `ui.apps` paquete, o paquete de código, contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros:
    + Paquetes OSGi
       + `/apps/my-app/install`
    + Configuraciones OSGi
@@ -58,23 +58,28 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
       + `/apps/settings`
    + ACL (permisos)
       + Cualquiera `rep:policy` para cualquier ruta debajo de `/apps`
-+ El `ui.content` paquete, o paquete de código, contiene todo el contenido y la configuración. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
+   + Directivas de configuración de Repo Init OSGi (y las secuencias de comandos correspondientes)
+      + [Repo Init](#repo-init) es la forma recomendada de implementar contenido (mutable) que forma parte lógicamente de la aplicación AEM. Repo Init debe utilizarse para definir:
+         + Estructuras de contenido de línea base
+            + `/conf/my-app`
+            + `/content/my-app`
+            + `/content/dam/my-app`
+         + Usuarios
+         + Usuarios de servicio
+         + Grupos
+         + ACL (permisos)
+            + Cualquiera `rep:policy` para cualquier ruta (mutable o inmutable)
++ El `ui.content` paquete, o paquete de contenido, contiene todo el contenido y la configuración. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
    + Configuraciones según el contexto
       + `/conf`
-   + Estructuras de contenido de línea de base (carpetas de recursos, páginas raíz de sitios)
+   + Estructuras de contenido complejas y requeridas (por ejemplo: Generación de contenido que se basa en estructuras de contenido de línea de base definidas en la opción de repo y que se extiende más allá de ellas.
       + `/content`, `/content/dam`, etc.
    + Etiquetado de taxonomías gobernadas
       + `/content/cq:tags`
-   + Usuarios de servicios
-      + `/home/users`
-   + Grupos de usuarios
-      + `/home/groups`
    + Índices de roble
-      + `/oak:indexes`
+      + `/oak:index`
    + Nodos preexistentes de Etc
       + `/etc`
-   + ACL (permisos)
-      + Cualquiera `rep:policy` para cualquier ruta **no** en `/apps`
 + El paquete `all` es un paquete de contenedor que SOLAMENTE incluye los paquetes `ui.apps` y `ui.content` como incrustaciones. El paquete `all` no debe tener **ningún contenido** propio, sino delegar toda la implementación en el repositorio a sus subpaquetes.
 
    Los paquetes ahora se incluyen mediante la configuración [integrada del complemento Maven](#embeddeds)FileVault Package Maven en lugar de la configuración `<subPackages>` .
@@ -111,6 +116,35 @@ De forma predeterminada, Adobe Cloud Manager obtiene todos los paquetes producid
 >[!TIP]
 >
 >Consulte la sección Fragmentos [XML de](#pom-xml-snippets) POM más abajo para ver un fragmento completo.
+
+## Tiempo de espera de repo{#repo-init}
+
+Repo Init proporciona instrucciones, o secuencias de comandos, que definen estructuras JCR, desde estructuras de nodos comunes como árboles de carpetas hasta usuarios, usuarios de servicios, grupos y definición de ACL.
+
+Las ventajas clave de Repo Init son que tienen permisos implícitos para realizar todas las acciones definidas por sus secuencias de comandos y se invocan al principio del ciclo vital de implementación, lo que garantiza que todas las estructuras JCR necesarias existan al ejecutar el código de tiempo.
+
+Mientras que los scripts de Repo Init viven en el `ui.apps` proyecto como scripts, pueden y deben utilizarse para definir las siguientes estructuras mutables:
+
++ Estructuras de contenido de línea base
+   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
++ Usuarios de servicio
++ Usuarios
++ Grupos
++ ACL
+
+Las secuencias de comandos Repo Init se almacenan como `scripts` entradas de configuraciones de fábrica de `RepositoryInitializer` OSGi y, por tanto, se pueden dirigir implícitamente mediante runmode, lo que permite diferencias entre las secuencias de comandos Repo Init de AEM Author y AEM Publish Services, o incluso entre Envs (Dev, Stage y Prod).
+
+Tenga en cuenta que al definir usuarios y grupos, solo los grupos se consideran parte de la aplicación y se debe definir una parte integral de su función aquí. Los usuarios y grupos de la organización deben seguir estando definidos en tiempo de ejecución en AEM; por ejemplo, si un flujo de trabajo personalizado asigna trabajo a un grupo con nombre, dicho grupo debe definirse mediante Repo Init en la aplicación AEM. Sin embargo, si el grupo es meramente organizativo, como &quot;Wendy&#39;s Team&quot; y &quot;Sean&#39;s Team&quot;, se definirán mejor y se gestionarán en tiempo de ejecución en AEM.
+
+>[!TIP]
+>
+>Las secuencias de comandos Repo Init *deben* definirse en el `scripts` campo en línea y la configuración no `references` funcionará.
+
+El vocabulario completo para los scripts Repo Init está disponible en la documentación [](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)de Apache Sling Repo Init.
+
+>[!TIP]
+>
+>Consulte la sección [Recortes](#snippet-repo-init) de inicio de la repo más abajo para ver un fragmento completo.
 
 ## Paquete de estructura de repositorio {#repository-structure-package}
 
@@ -321,6 +355,28 @@ En todos los proyectos que generan un paquete, **excepto** en el proyecto de con
     ...
 ```
 
+### Tiempo de espera de repo{#snippet-repo-init}
+
+Las secuencias de comandos Repo Init que contienen las secuencias de comandos Repo Init se definen en la configuración de fábrica de `RepositoryInitializer` OSGi mediante la `scripts` propiedad. Tenga en cuenta que, dado que estos scripts se definen en las configuraciones de OSGi, se pueden crear fácilmente en el modo de ejecución utilizando la semántica de `../config.<runmode>` carpeta habitual.
+
+Tenga en cuenta que, debido a que las secuencias de comandos suelen ser declaraciones multilínea, es más fácil definirlas en el `.config` archivo que en el formato `sling:OsgiConfig` de bases XML.
+
+`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
+
+```plain
+scripts=["
+    create service user my-data-reader-service
+
+    set ACL on /var/my-data
+        allow jcr:read for my-data-reader-service
+    end
+
+    create path (sling:Folder) /conf/my-app/settings
+"]
+```
+
+La propiedad `scripts` OSGi contiene directivas según la definición del lenguaje [](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)Repo de Apache Sling.
+
 ### Paquete de estructura de repositorio {#xml-repository-structure-package}
 
 En el `ui.apps/pom.xml` y cualquier otro `pom.xml` que declare un paquete de código (`<packageType>application</packageType>`), agregue la siguiente configuración de paquete de estructura de repositorio al complemento FileVault Maven. Puede [crear su propio paquete de estructura de repositorio para su proyecto](repository-structure-package.md).
@@ -338,7 +394,7 @@ En el `ui.apps/pom.xml` y cualquier otro `pom.xml` que declare un paquete de có
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -429,6 +485,9 @@ En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/v
 Si `/apps/*-packages` se utilizan varios en los destinatarios incrustados, todos deben enumerarse aquí.
 
 ### Repositorios de muevos de terceros {#xml-3rd-party-maven-repositories}
+
+>[!WARNING]
+> Añadir más repositorios Maven puede extender los tiempos de generación a medida que se comprueben las deficiencias de repositorios Maven adicionales.
 
 En el proyecto del reactor `pom.xml`, agregue las directivas de repositorio de Maven públicas de terceros necesarias. La configuración completa debe estar disponible `<repository>` desde el proveedor de repositorio de terceros.
 
