@@ -19,10 +19,10 @@ Si bien acogemos con satisfacción cualquier contribución para mejorar la docum
 
 ## Cómo contribuir
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe desea que sea lo más fácil posible enviar sus contribuciones. Puede contribuir de dos maneras:
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADWe desea que sea lo más fácil posible enviar sus contribuciones. Puede contribuir de dos maneras:
 =======
 =======
->>>>>>>>>>principal de f6e5291... Combinar el &#39;ensayo&#39; de ramas de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en el ensayoLa contribución depende de quién sea y del tipo de cambios que desee aportar:
+>>>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayoLa contribución depende de quién sea y del tipo de cambios que desee aportar:
 
 
 
@@ -55,15 +55,15 @@ Los problemas le permiten describir fácilmente su idea para mejorar los documen
 
 ### Crear una solicitud de extracción {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIsi ve un problema y sabe exactamente cómo solucionarlo, considere la posibilidad de crear una solicitud de extracción. Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego un miembro del equipo de AEM Docs revisa para su inclusión. Simplemente haga clic en el vínculo **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIsi ve un problema y sabe exactamente cómo arreglarlo, considere la posibilidad de crear una solicitud de extracción. Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego un miembro del equipo de AEM Docs revisa para su inclusión. Simplemente haga clic en el vínculo **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
 =======
-=======
->>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
+>=======>
+>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayo
 
 
 
 
-
+>> 
 
 ### Principales cambios de los empleados de Adobe
 >>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
@@ -85,17 +85,17 @@ Consulte el siguiente vídeo para obtener una descripción general rápida de c�
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA
 ### Contribuciones de empleados de Adobe
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIsi es un empleado de Adobe y tiene una contribución, utilice la organización en la git corporativa `AdobeDocs` .
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADIsi es un empleado de Adobe y tiene una contribución, utilice la `AdobeDocs` organización en la puerta de la empresa.
 
 Por supuesto, estamos satisfechos con cualquier contribución y revisaremos su contribución si se realiza en el repositorio público. Sin embargo, las solicitudes de extracción de los empleados de Adobe son más fáciles de procesar y se pueden aprobar más rápido en la repo corporativa. Asegúrese de que cualquier información de propiedad solo se analiza en la repo corporativa.
 =======
-=======
->>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
+>=======>
+>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;staging&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========parent de 190577c... Combinar &#39;master&#39; de ramificación en ensayo
 
 
 
 
-
+>> 
 
 ## Herramientas y configuración
 
