@@ -1,5 +1,5 @@
 ---
-source-git-commit: 69fb4368528343eb5a85f89df9db73d72d36e4b2
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -47,8 +47,8 @@ Los encargados de la gestión de proyectos que no sigan o apliquen el Código de
 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADTeste código de conducta se adapta a la versión 1.4 del [Pacto](https://contributor-covenant.org)de Colaboración, disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
 =======
-El presente Código de Conducta se adapta a la versión 1.4 del Pacto de [Colaboración](https://contributor-covenant.org), disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
->>>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
+Este Código de Conducta está adaptado a la versión 1.4 del Pacto para los [Colaboradores](https://contributor-covenant.org), disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>principal de f6e5291... Combinar &#39;ensayo&#39; de ramificación de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en staging==========principal de f6e5291... Combinar &#39;ensayo&#39; de ramificaciones de https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en en ensayo
 
 
 
