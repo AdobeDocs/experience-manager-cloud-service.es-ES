@@ -3,7 +3,7 @@ title: Procesar recursos con controladores y Flujos de trabajo de medios
 description: Obtenga información sobre los distintos controladores de medios y cómo utilizarlos en flujos de trabajo para realizar tareas en los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Los controladores de medios son servicios dentro de Recursos AEM que realizan ac
 
 >[!NOTE]
 >
->Consulte la página Formatos [admitidos de](file-format-support.md) Recursos para obtener una descripción de todos los formatos admitidos por Recursos AEM, así como de las funciones admitidas para cada formato.
+>Consulte el artículo Formatos [de archivo admitidos por](file-format-support.md) Assets para obtener una descripción de todos los formatos admitidos por Recursos AEM, así como de las funciones admitidas para cada formato.
 
 ## Controladores de medios predeterminados {#default-media-handlers}
 
@@ -87,7 +87,7 @@ Los siguientes controladores de medios están disponibles en Recursos AEM y cont
   <tr>
    <td>EPubHandler</td>
    <td>com.day.cq.dam.handler.standard.epub.EPubHandler</td>
-   <td>aplicación/epub+zip</td>
+   <td>application/epub+zip</td>
   </tr>
   <tr>
    <td>GenericAssetHandler</td>
@@ -407,7 +407,7 @@ Para ello, utilizará ImageMagick. ImageMagick es un conjunto de software libre 
 
 Primera instalación de ImageMagick en el disco que aloja el servidor AEM:
 
-1. Instalar ImageMagick: consulte la documentación [de ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Instalar ImageMagick: Consulte la documentación [de ImageMagick](https://www.imagemagick.org/script/download.php).
 1. Configure la herramienta para que pueda ejecutar la conversión en la línea de comandos.
 1. Para ver si la herramienta está instalada correctamente, ejecute el siguiente comando `convert -h` en la línea de comandos.
 
