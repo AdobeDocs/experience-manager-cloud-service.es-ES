@@ -2,7 +2,7 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -25,7 +25,7 @@ Integre sus sitios de AEM con Adobe Destinatario para personalizar el contenido 
 
 Para realizar la integración con Destinatario, realice las siguientes tareas:
 
-* [Realizar tareas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)previas: Regístrese con Adobe Destinatario y configure determinados aspectos de la instancia de creación de AEM. La cuenta de Adobe Destinatario debe tener permisos de **nivel de aprobador** como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
+* [Realizar tareas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)previas: Regístrese con Adobe Destinatario y configure determinados aspectos de la instancia de creación de AEM. La cuenta de Adobe Destinatario debe tener como mínimo permisos de **nivel de aprobador** . Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
 
 * Launch by Adobe es la herramienta de facto para instrumentar un sitio de AEM con funciones de Destinatario (bibliotecas JS). Por lo tanto, la integración de AEM como servicio de nube con Launch y Adobe Destinatario va de la mano (consulte los vínculos siguientes).
 
@@ -34,11 +34,15 @@ Para realizar la integración con Destinatario, realice las siguientes tareas:
    * [Integración de AEM con Adobe Launch mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
    * [Información sobre la integración de AEM con Launch de Adobe, Analytics y Destinatario](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [Configurar Actividades](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Asocie sus Actividades con la configuración de la nube de Destinatario.
-
 >[!NOTE]
 >
 >La configuración de IMS (cuentas técnicas) para Launch de Adobe está preconfigurada en AEM como un servicio de nube. Los usuarios no tienen que crear esta configuración.
+
+1. [Configurar Actividades](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html): Asocie sus Actividades con la configuración de la nube de Destinatario.
+
+>[!CAUTION]
+>
+>En AEM como servicio de nube, el agente de replicación que sincroniza Ofertas y Actividades de AEM con Adobe Destinatario está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de asistencia [de](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) Adobe si necesita volver a habilitar el agente de replicación.
 
 >[!NOTE]
 >
