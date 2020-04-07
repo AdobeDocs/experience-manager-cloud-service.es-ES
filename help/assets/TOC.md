@@ -2,7 +2,7 @@
 sub-product: 'AEM Assets as a Cloud Service '
 user-guide-title: 'AEM Assets as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
+source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 
 ---
 
@@ -52,17 +52,24 @@ source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
    + [Metadatos XMP](xmp-metadata.md)
    + [Funciones de MediaLibrary](medialibrary.md)
    + [Importación y exportación de metadatos de recursos](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt; CABEAD===========
-+ Uso compartido y distribución de recursos {#brandportal}
-   + [Configuración de AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Publicación de AEM Assets en Brand Portal](publish-to-brand-portal.md)
->>>>>>>>>>matriz de 733b637... update toc=========parent de da6a8ae... Configure Brand Portal con AEM Assets en Cloud=============parent de da6a8ae... Configuración de Brand Portal con AEM Assets en la nube
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEZA&lt;&lt;&lt;&lt;&lt;&lt;&lt; CABEAD&lt;&lt;&lt;&lt;&lt;&lt; CABEAD======================
+>>>>>>>>>>matriz de 733b637... actualizar toc
 
 
 
 
 
 > 
++ Uso compartido y distribución de recursos {#brandportal}
+   + [Configuración de AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Publicación de AEM Assets en Brand Portal](publish-to-brand-portal.md)
+>>>>>>>matriz de 733b637... update toc=========parent de da6a8ae... Configure Brand Portal con AEM Assets en Cloud=============parent de da6a8ae... Configuración de Brand Portal con AEM Assets en la nube
+
+
+
+
+
+
 + Fragmentos de contenido {#content-fragments}
    + [Uso de fragmentos de contenido](content-fragments/content-fragments.md)
    + [Administración de fragmentos de contenido](content-fragments/content-fragments-managing.md)
