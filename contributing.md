@@ -1,5 +1,5 @@
 ---
-source-git-commit: b0abce7f1d911123da37ba279a565c7608e5a4c5
+source-git-commit: e11c6c58cd97f8c52fada14d9a6b6981d7a399c4
 translation-type: tm+mt
 
 ---
@@ -19,7 +19,7 @@ Si bien acogemos con satisfacción cualquier contribución para mejorar la docum
 
 ## Cómo contribuir
 
-Queremos que sea lo más fácil posible enviar sus contribuciones. Puede contribuir de dos maneras:
+Queremos que sea lo más fácil posible presentar sus contribuciones. Puede contribuir de dos maneras:
 
 * [Crear un problema](#create-an-issue)
 * [Crear una solicitud de extracción](#create-a-pull-request)
@@ -38,7 +38,7 @@ Los problemas le permiten describir fácilmente su idea para mejorar los documen
 
 ### Crear una solicitud de extracción {#create-a-pull-request}
 
-Si ve un problema y sabe exactamente cómo solucionarlo, considere la posibilidad de crear una solicitud de extracción. Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego un miembro del equipo de AEM Docs revisa para su inclusión. Simplemente haga clic en el vínculo **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
+Si ve un problema y sabe exactamente cómo solucionarlo, plantéese crear una solicitud de extracción. Las solicitudes de extracción le permiten realizar sus propios cambios en la documentación, que luego un miembro del equipo de AEM Docs revisa para su inclusión. Simplemente haga clic en el vínculo **Editar esta página** en la parte superior del panel de navegación derecho en cualquier página para realizar los cambios sugeridos y crear la solicitud de extracción.
 
 Todas las solicitudes de extracción deben ir acompañadas de un contrato de licencia de [colaborador firmado o de un CLA.](https://opensource.adobe.com/cla.html)  Esto otorga permiso a Adobe para redistribuir sus contribuciones como parte del proyecto. Solo tiene que enviar un CLA de Adobe una vez, por lo que si lo ha enviado anteriormente, ¡ya está listo!
 
@@ -50,9 +50,9 @@ Consulte el siguiente vídeo para obtener una descripción general rápida de c�
 
 ### Contribuciones de empleados de Adobe
 
-Si es un empleado de Adobe y desea realizar una solicitud de extracción, utilice el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`.
+Si usted es un empleado de Adobe y tiene una contribución, utilice la `AdobeDocs` organización en el Git corporativo.
 
-Para problemas, por favor siéntase libre de usar los repositorios públicos.
+Por supuesto, estamos satisfechos con cualquier contribución y revisaremos su contribución si se realiza en el repositorio público. Sin embargo, las solicitudes de extracción de los empleados de Adobe son más fáciles de procesar y se pueden aprobar más rápido en la repo corporativa. Asegúrese de que cualquier información de propiedad solo se analiza en la repo corporativa.
 
 ## Información adicional
 
