@@ -3,7 +3,7 @@ title: Operaciones asincrónicas
 description: Recursos AEM optimiza el rendimiento completando de forma asíncrona algunas tareas que consumen muchos recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ Puede vista el estado de los trabajos asincrónicos desde la página Estado **[!
 
 ## Monitoreo del estado de las operaciones asincrónicas {#monitoring-the-status-of-asynchronous-operations}
 
-Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada y por correo electrónico.
+Siempre que Recursos AEM procese una operación de forma asíncrona, recibirá una notificación en la bandeja de entrada <!-- and through email -->.
 
 Para realizar una vista detallada del estado de las operaciones asincrónicas, vaya a la página Estado **[!UICONTROL del trabajo]** asincrónico.
 
