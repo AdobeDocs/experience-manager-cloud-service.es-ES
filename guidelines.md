@@ -1,9 +1,9 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 translation-type: tm+mt
 
 ---
-# Directrices para contribuir a la documentación de Adobe Experience Manager
+# Directrices para contribuir a la documentación de AEM
 
 ## Filosofía de la documentación de AEM
 
@@ -13,11 +13,11 @@ El objetivo de la documentación de AEM es poner la documentación en manos de l
 
 ## AEM Documentation Contributions
 
-Con el fin de mejorar continuamente la documentación de AEM, toda la comunidad de usuarios de AEM puede contribuir a la documentación. Ya sea a través de solicitudes o problemas, las mejoras en la documentación pueden ser correcciones, aclaraciones, expansiones y ejemplos adicionales.
+Para mejorar continuamente la documentación de AEM, toda la comunidad de usuarios de AEM puede contribuir a la documentación. Ya sea a través de solicitudes o problemas, las mejoras en la documentación pueden ser correcciones, aclaraciones, expansiones y ejemplos adicionales.
 
 ## Normas de documentación
 
-Si bien acogemos con satisfacción las contribuciones a nuestra documentación, cualquier contribución a la documentación de AEM, ya sea en forma de solicitud de extracción o de un problema, debe ajustarse a nuestras normas de contribución y documentación.
+Si bien acogemos con satisfacción las contribuciones a nuestra documentación, cualquier contribución a la documentación de AEM, ya sea en forma de solicitud de extracción o de un problema, debería ajustarse a nuestras normas de contribución y documentación.
 
 Las contribuciones que no cumplan estas normas podrán rechazarse.
 
@@ -33,23 +33,23 @@ Las excepciones a esta regla se aplican a las notas de la versión en las que lo
 
 ### Las contribuciones de documentación no sirven para responder preguntas técnicas.
 
-Cualquier idea que tenga para mejorar la documentación de AEM será bienvenida como contribución. Sin embargo, los comentarios, los problemas y las solicitudes de extracción solo están destinados a *contribuciones* . No están pensados para utilizarse para responder a sus preguntas sobre cómo utilizar AEM o resolver problemas técnicos.
+Cualquier idea que tenga para mejorar la documentación de AEM será bienvenida como contribución. Sin embargo, los comentarios, los problemas y las solicitudes de extracción solo están destinados a *contribuciones* . No están pensados para utilizarse para responder a sus preguntas sobre cómo utilizar AEM, implementar su proyecto AEM o resolver problemas técnicos.
 
-Cualquier pregunta sobre el uso de AEM o los errores técnicos que pueda haber tenido se debe informar a través del proceso de asistencia técnica normal a través del portal [de asistencia técnica de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Experience Cloud Enterprise o se debe analizar en la comunidad [de](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)Experience Manager.
+Las preguntas sobre el uso de AEM o los errores técnicos que pueda haber recibido se deben notificar mediante el proceso de asistencia normal a través del portal [de asistencia técnica de](https://daycare.day.com/home.html) Experience Manager o analizarse en la comunidad [de](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)Experience Manager.
 
-***Las contribuciones a la documentación de AEM no sustituyen al Servicio de atención*** al cliente de Adobe y se rechazará cualquier contribución de este tipo que busque respuestas a preguntas relacionadas con la asistencia.
+***Las contribuciones a la documentación de AEM no sustituyen a la asistencia de Adobe*** y se rechazará cualquier contribución de este tipo que busque respuestas a preguntas relacionadas con la asistencia.
 
 ### Las contribuciones deben hacer referencia claramente a las páginas de documentación afectadas.
 
 Si crea un problema para sugerir mejoras en la documentación, debe incluir vínculos a las páginas afectadas. Si crea un problema utilizando el vínculo **Editar esta página** en una página de documentación, el problema se creará automáticamente con un vínculo a la página.
 
-Esto no se aplica a las solicitudes de extracción, ya que las solicitudes de extracción incluyen las páginas afectadas por definición.
+Esto no se aplica a las solicitudes de extracción, ya que las solicitudes de extracción por su naturaleza hacen referencia a las páginas afectadas.
 
 ## Directrices de documentación
 
 Pedimos que cualquier contribución a nuestra documentación siga ciertas pautas de estilo.
 
-Seguir estas directrices facilita la revisión de su contribución y, por lo tanto, la integración en nuestra documentación es más rápida. Sin embargo, el incumplimiento o el cumplimiento incompleto de estas directrices no significa que se rechace la contribución.
+Seguir estas directrices facilita la revisión de su contribución y, por lo tanto, la integración en nuestra documentación es más rápida.
 
 ### Idioma y estilo
 
