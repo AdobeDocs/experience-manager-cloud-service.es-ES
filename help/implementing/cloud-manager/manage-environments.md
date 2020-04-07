@@ -2,7 +2,7 @@
 title: Administrar Entornos - Servicio de nube
 description: Administrar Entornos - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -38,9 +38,6 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 
 
 1. El usuario hace clic en el botón **Agregar entorno** para agregar un entorno.
-
-   >[!NOTE]
-   >También se puede acceder a este botón desde la página Entornos o desde la tarjeta Entornos. Como usuario solo verá esta opción si tiene los permisos necesarios. Póngase en contacto con su representante de Adobe si tiene alguna pregunta.
 
    ![](assets/add-environment.png)
 
