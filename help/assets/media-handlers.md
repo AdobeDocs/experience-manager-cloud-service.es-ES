@@ -87,7 +87,7 @@ Los siguientes controladores de medios están disponibles en Recursos AEM y cont
   <tr>
    <td>EPubHandler</td>
    <td>com.day.cq.dam.handler.standard.epub.EPubHandler</td>
-   <td>application/epub+zip</td>
+   <td>aplicación/epub+zip</td>
   </tr>
   <tr>
    <td>GenericAssetHandler</td>
