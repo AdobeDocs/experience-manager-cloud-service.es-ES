@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
-description: 'Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service '
-translation-type: ht
-source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
+description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
+translation-type: tm+mt
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -106,7 +106,7 @@ La API de administración de usuarios que utiliza la herramienta de sincronizaci
 
 ## Configuración de Adobe Experience as a Cloud Service {#aem-configuration}
 
-> [!NOTE]
+>[!NOTE]
 >
 >La configuración de AEM IMS requerida se configura automáticamente cuando se ofrezcan los entornos y las instancias de AEM. Sin embargo, el administrador puede modificarla según sus necesidades utilizando el método descrito [aquí](/help/implementing/deploying/overview.md).
 
