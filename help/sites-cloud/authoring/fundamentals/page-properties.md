@@ -2,7 +2,7 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ Las propiedades se distribuyen entre varias pestañas.
    >Por ejemplo: si define un alias de `latin-lang` para el nodo `/content/we-retail/spanish`, se puede acceder a esta página mediante `/content/we-retail/latin-language`.
    >
    >Para obtener más información, consulte Nombres de páginas localizados en Procedimientos recomendados para la administración de direcciones URL y SEO.
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Cloud Services**
 
-   * Defina propiedades para Cloud Services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * Defina propiedades para Cloud Services.
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### Personalización {#personalization}
 
 * **Configuración de ContextHub**
 
-   * Seleccione la configuración de ContextHub y la ruta de acceso de los segmentos. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * Seleccione la configuración de ContextHub y la ruta de acceso de los segmentos.
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **Configuración de ámbito**
 
@@ -188,16 +193,24 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Permisos**
 
-   * Agregar permisos <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * Editar grupo de usuarios cerrado <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * Ver los permisos efectivos <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * Agregar permisos
+   * Editar grupo de usuarios cerrado
+   * Ver los permisos efectivos
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### Modelo {#blueprint}
 
 * **Modelo**
 
-   * Defina propiedades para una página de modelo en un entorno de administración de varios sitios. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * Defina propiedades para una página de modelo en un entorno de administración de varios sitios.
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
+
 
 ### Live Copy    {#live-copy}
 
@@ -252,6 +265,7 @@ Desde la consola **Sites** puede seleccionar varias páginas y luego utilizar **
 >La edición de propiedades por lotes también está disponible para los recursos. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte Edición de propiedades de varios recursos para obtener más información.
 >
 >También dispone del Editor por lotes, que le permite buscar contenido de varias páginas con GQL (Google Query Language) y, a continuación, editar el contenido directamente en el editor por lotes para luego guardar los cambios (en las páginas originales).
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 >[!NOTE]
 >
 >El componente de página se puede configurar para especificar los campos disponibles para la edición por lotes. Consulte Configuración de la página para editar las propiedades de página por lotes.
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
