@@ -2,14 +2,14 @@
 title: Repositorio de código fuente - Servicios de nube
 description: Repositorio de código fuente - Servicios de nube
 translation-type: tm+mt
-source-git-commit: 6f323f33663f83043eb8a15fe00e6ed872c3cac1
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
 
 # Repositorio de códigos de origen {#source-code-repository}
 
-El programa Cloud Manager se aprovisionará automáticamente con su propio repositorio Git.
+El programa de Cloud Manager se aprovisionará automáticamente con su propio repositorio Git.
 
 Para que un usuario pueda acceder al repositorio de Git de Cloud Manager, los usuarios deberán utilizar un cliente Git con una herramienta de línea de comandos, un cliente Git visual independiente o el IDE del usuario como Eclipse, IntelliJ o NetBeans.
 
@@ -21,5 +21,6 @@ Para comenzar a desarrollar la aplicación de AEM Cloud, se debe realizar una co
 $ git clone {URL}
 ```
 
-> [!NOTE]
+>[!NOTE]
+>
 > Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede volver a transferir los cambios de código al repositorio de código remoto en Cloud Manager.
