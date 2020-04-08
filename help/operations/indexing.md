@@ -1,8 +1,8 @@
 ---
 title: Búsqueda de contenido e indexación
-description: 'Búsqueda de contenido e indexación '
+description: Búsqueda de contenido e indexación
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ A continuación se muestra una lista de los principales cambios en comparación 
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -69,7 +69,7 @@ El paquete de la muestra anterior se crea como `com.adobe.granite:new-index-cont
 
 ### Implementación de definiciones de índice {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Hay un problema conocido con Jackrabbit Filevault Maven Package Plugin versión **1.1.0** que no le permite agregar `oak:index` a módulos de `<packageType>application</packageType>`. Para solucionar esto, utilice la versión **1.0.4**.
 
@@ -118,7 +118,8 @@ Con implementaciones en azul y verde, no hay tiempo de inactividad. Sin embargo,
 La siguiente tabla muestra 5 definiciones de índice: index `cqPageLucene` se utiliza en ambas versiones, mientras que index `damAssetLucene-custom-1` se utiliza únicamente en la versión 2.
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` es necesario para que AEM como servicio de nube marque esto como un reemplazo de un índice existente.
 
 | Índice | Índice listo para usar | Uso en la versión 1 | Uso en la versión 2 |
