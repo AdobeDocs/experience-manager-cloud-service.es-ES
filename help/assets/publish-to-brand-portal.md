@@ -3,7 +3,7 @@ title: Publicación de recursos, carpetas y colecciones en Brand Portal
 description: Publique recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,8 +21,9 @@ Si realiza las modificaciones posteriores en el recurso, la carpeta o la colecci
 * [Publicar colecciones en Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
 >
+>Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
+
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
