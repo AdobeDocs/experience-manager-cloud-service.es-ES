@@ -2,7 +2,7 @@
 title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -13,8 +13,8 @@ Al crear, puede invocar flujos de trabajo para realizar acciones en las páginas
 
 A la hora de aplicar el flujo de trabajo, puede especificar la siguiente información:
 
-* El flujo de trabajo que desea aplicar.
-   * Puede aplicar cualquier flujo de trabajo (a los que tiene acceso, según la asignación del administrador de AEM).
+* Flujo de trabajo que se va a aplicar.
+   * Puede aplicar cualquier flujo de trabajo (al que tenga acceso, según lo haya asignado el administrador de AEM).
 * De forma opcional, un título que ayuda a identificar la instancia de flujo de trabajo en la bandeja de entrada de un usuario.
 * La carga útil de los flujos de trabajo; pueden ser una o varias páginas.
 
@@ -30,7 +30,8 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 >* Cómo aplicar flujos de trabajo a recursos DAM.
 >* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 >[!NOTE]
 >
 >Los administradores de AEM pueden iniciar flujos de trabajo mediante varios métodos.
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -101,7 +103,8 @@ Puede especificar los detalles:
       * Puede especificar un título para el paquete para ayudar en su identificación.
    >[!NOTE]
    >
-   >La opción **Conservar paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la Compatibilidad con varios recursos y se han seleccionado varios recursos.
+   >La opción **Mantener paquete de flujo de trabajo** está disponible cuando el flujo de trabajo se ha configurado para la compatibilidad con varios recursos y se han seleccionado varios recursos.
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
@@ -112,7 +115,7 @@ Puede especificar los detalles:
 
 1. En la etapa **Ámbito**, puede seleccionar lo siguiente:
 
-   * **Agregar contenido** para abrir el explorador [de](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
+   * **Añadir contenido** para abrir el explorador [de](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) rutas y seleccionar recursos adicionales; en el navegador, toque o haga clic en **Seleccionar** para añadir contenido a la instancia de flujo de trabajo.
 
    * Un recurso existente para ver acciones adicionales:
 
@@ -129,7 +132,7 @@ Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo 
 
    >[!NOTE]
    >
-   >Si se añaden recursos adicionales, se puede utilizar la opción **Atrás** para ajustar la configuración de **Conservar paquete de flujo de trabajo** en la etapa **Propiedades**.
+   >Si agrega recursos adicionales, puede utilizar **Atrás** para ajustar la configuración **Mantener flujo de trabajo del paquete** en el paso **Propiedades**.
 
 1. Use **Create** to close the wizard and create the workflow instance. Se muestra una notificación en la consola Sitios.
 
