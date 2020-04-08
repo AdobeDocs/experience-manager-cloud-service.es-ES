@@ -1,13 +1,13 @@
 ---
-title: Búsqueda
+title: 'Búsqueda  '
 description: Encuentre contenido más rápidamente con una búsqueda detallada
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
 
-# Búsqueda   {#search-feature}
+# Búsqueda {#search-feature}
 
 El entorno de creación AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 
@@ -65,6 +65,7 @@ Para buscar y filtrar sus recursos:
    >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de comunidades y recursos son comprensivamente especializados.
    >* Su instancia, al igual que los formularios de búsqueda, se puede personalizar (según la ubicación en AEM).
 
+
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
   -->
@@ -73,7 +74,7 @@ Para buscar y filtrar sus recursos:
 
 1. También se pueden agregar términos de búsqueda adicionales.
 
-1. Cierre la función **Búsqueda** con la **X** (parte superior derecha).
+1. Cierre la **búsqueda** con la **X** (parte superior derecha).
 
 >[!NOTE]
 >
@@ -102,6 +103,6 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
    * Usar **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Usar la opción **Editar búsqueda guardada**, cambiar las condiciones de búsqueda y, a continuación, usar **Guardar** nuevamente.
 
-Las búsquedas guardadas pueden modificarse seleccionándolas y haciendo clic en **Editar búsqueda guardada** en la parte inferior del panel de búsqueda.
+Las búsquedas guardadas se pueden modificar seleccionando la búsqueda guardada y haciendo clic en **Editar búsqueda guardada** en la parte inferior del panel de búsqueda.
 
 ![Modificación de una búsqueda guardada](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
