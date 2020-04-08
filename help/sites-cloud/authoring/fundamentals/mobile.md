@@ -1,8 +1,8 @@
 ---
-title: Creación de una página para dispositivos móviles
+title: 'Creación de una página para dispositivos móviles  '
 description: Al crear un elemento para móvil, puede cambiar entre varios emuladores para ver qué es lo que verá el usuario final
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -20,6 +20,7 @@ Los dispositivos se agrupan en las categorías Característica, Inteligente y T�
 >Para crear un sitio para móvil según un sitio estándar existente, cree una Live Copy del sitio estándar. Consulte Creación de una Live Copy para diferentes canales.
 >
 >Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. Consulte Creación de filtros de grupo de dispositivos.
+
 <!--
 >To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
