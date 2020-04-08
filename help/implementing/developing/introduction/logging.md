@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ Los otros pares siguen la configuración estándar:
 
 Para cambiar los niveles de registro de los entornos de nube, se debe modificar la configuración de OSGI de registro de Sling, seguida de una reimplementación completa. Dado que esto no es instantáneo, tenga cuidado de habilitar los registros detallados en entornos de producción que reciben mucho tráfico. En el futuro, es posible que haya mecanismos para cambiar más rápidamente el nivel de registro.
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia de AEM como servicio de nube. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como un servicio](/help/implementing/deploying/overview.md)de nube.
 
 ### Activación del nivel de registro DEBUG {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > Al activar el nivel de registro DEBUG globalmente, se generará una gran cantidad de información que será difícil de pasar. Se recomienda habilitarlo solo para los servicios que requieren depuración. Para obtener más información, consulte [Registros y escritores de servicios](logging.md#loggers-and-writers-for-individual-services)individuales.
 
