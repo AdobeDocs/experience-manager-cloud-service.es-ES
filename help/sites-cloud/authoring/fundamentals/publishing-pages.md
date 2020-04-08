@@ -1,8 +1,8 @@
 ---
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
-translation-type: ht
-source-git-commit: e88a814a901d7fa0da2675fa6017c66d61a73445
+translation-type: tm+mt
+source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
 
@@ -44,6 +44,7 @@ En función de su ubicación, puede publicar:
 >* Este flujo de trabajo puede haber sido personalizado por el equipo de desarrollo.
 >* Se mostrará brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
 
+
 <!--
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
@@ -81,8 +82,8 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 En la consola Sitios hay dos opciones para la publicación:
 
-* [Publicación rápida](#quick-publish)
-* [Administrar publicación](#manage-publication)
+* [Publicación rápida  ](#quick-publish)
+* [Administrar publicación  ](#manage-publication)
 
 #### Publicación rápida   {#quick-publish}
 
@@ -182,7 +183,10 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    Los recursos se agrupan por los flujos de trabajo activados y cada uno ofrece opciones para:
 
    * Definir el título del flujo de trabajo.
-   * Mantener el paquete del flujo de trabajo, siempre que este sea compatible con varios recursos. <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).-->
+   * Mantener el paquete del flujo de trabajo, siempre que este sea compatible con varios recursos.
+   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+    -->
+
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
    Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
