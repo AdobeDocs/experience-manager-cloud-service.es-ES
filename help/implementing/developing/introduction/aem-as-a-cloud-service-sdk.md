@@ -1,8 +1,8 @@
 ---
 title: AEM as a Cloud Service SDK
-description: 'Para completar '
+description: Para completar
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -32,12 +32,12 @@ Además, algunos clientes que se implementaron previamente con AEM 6.5 o version
 <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>aem-sdk-api</artifactId>
-  <version>2019.11.3006.20191108T223635Z-191201</version> 
+  <version>2019.11.3006.20191108T223635Z-191201</version>
   <scope>provided</scope>
 </dependency>
 ```
 
-> [!NOTE] La entrada de versión del SDK debe coincidir con la versión de AEM como un servicio de nube. Para ver qué versión utiliza, inicie sesión en AEM y, a continuación, vaya al signo de interrogación en la esquina superior derecha de la pantalla y seleccione **[!UICONTROL Acerca de Adobe Experience Manager]**
+>[!NOTE] La entrada de versión del SDK debe coincidir con la versión de AEM como un servicio de nube. Para ver qué versión utiliza, inicie sesión en AEM y, a continuación, vaya al signo de interrogación en la esquina superior derecha de la pantalla y seleccione **[!UICONTROL Acerca de Adobe Experience Manager]**
 
 * La coordenada remota del repositorio principal en el que se aloja el paquete debe incluirse en el archivo pom.
 
