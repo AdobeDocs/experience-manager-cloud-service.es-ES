@@ -1,21 +1,14 @@
 ---
 title: Publicación de recursos, carpetas y colecciones en Brand Portal
-seo-title: Publicación de recursos, carpetas y colecciones en Brand Portal
-description: Obtenga información sobre cómo publicar y cancelar la publicación de recursos, carpetas y colecciones en Brand Portal.
-seo-description: Obtenga información sobre cómo publicar y cancelar la publicación de recursos, carpetas y colecciones en Brand Portal.
-uuid: null
+description: Publique recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
-products: SG_EXPERIENCEMANAGER/ASSETS
-topic-tags: brand-portal
-content-type: reference
-discoiquuid: null
 translation-type: tm+mt
-source-git-commit: da8b23d7f14cdf5f4f9dee03a0498fe048541cda
+source-git-commit: 4194f089f87deeb62095703614947a295235edbf
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Publish assets to Brand Portal {#publish-assets-to-brand-portal}
 
 Como administrador de Recursos Adobe Experience Manager (AEM), puede publicar recursos, carpetas y colecciones en la instancia de AEM Assets Brand Portal. Asimismo, puede programar el flujo de trabajo de publicación de un recurso o carpeta para una fecha u hora posterior. Una vez publicados, los usuarios de Brand Portal pueden acceder a los recursos, carpetas y colecciones y distribuirlos aún más a otros usuarios.
 
@@ -28,9 +21,8 @@ Si realiza las modificaciones posteriores en el recurso, la carpeta o la colecci
 * [Publicar colecciones en Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
+>>Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
 >
->Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
-
 
 ## Publish assets to Brand Portal {#publish-assets-to-bp}
 
@@ -38,24 +30,27 @@ A continuación se indican los pasos para publicar recursos de Recursos AEM en B
 
 1. En la consola Recursos, abra la carpeta principal, seleccione todos los recursos que desee publicar y haga clic en la opción Publicación **** rápida de la barra de herramientas.
 
-
    ![publish2bp-2](assets/publish2bp.png)
 
 1. A continuación se indican las dos formas de publicar recursos:
    * [Publicar ahora](#publish-to-bp-now) (Publicar recursos inmediatamente)
-   * [Publicar más tarde](#publish-to-bp-now) (Programar la publicación de recursos)
+   * [Publicar más tarde](#publish-to-bp-later) (Programar la publicación de recursos)
 
 ### Publicar recursos ahora {#publish-to-bp-now}
 
 Para publicar los recursos seleccionados en Brand Portal, realice una de las acciones siguientes:
 
-* En la barra de herramientas, seleccione **[!UICONTROL Publicación]** rápida. En el menú, haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+* En la barra de herramientas, seleccione **[!UICONTROL Publicación]** rápida. A continuación, en el menú, haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
 * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**. 
+   1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
-   2. Confirme la selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+      En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**.
+
+      Haga clic en **[!UICONTROL Siguiente]**. 
+
+   2. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
 Aparece un mensaje que indica que los recursos se han puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados.
 
@@ -63,11 +58,15 @@ Aparece un mensaje que indica que los recursos se han puesto en cola para su pub
 
 Para programar la publicación de recursos en Brand Portal para una fecha u hora posterior:
 
-1. Seleccione los recursos que desea programar para la publicación y seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
+1. Seleccione los recursos que desea programar para la publicación y haga clic en **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
 
-1. En la página **[!UICONTROL Administrar publicación]** , seleccione **[!UICONTROL Publicar en Brand Portal]** en **[!UICONTROL Acción]** y, a continuación, seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
+1. En la página **[!UICONTROL Administrar publicación]** , seleccione **[!UICONTROL Publicar en Brand Portal]** desde **[!UICONTROL Acción]**.
+
+   Seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
+
+1. Seleccione una fecha **[!UICONTROL de]** Activación y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
 
 1. Seleccione una fecha **de** Activación y especifique la hora. Haga clic en **Siguiente**. 
 
@@ -75,22 +74,16 @@ Para programar la publicación de recursos en Brand Portal para una fecha u hora
 
    ![publishworkflow](assets/publishworkflow.png)
 
-Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados disponibles.
+Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados (según la fecha u hora programadas).
 
 ![bp_landing_page](assets/bp_landing_page.png)
 
-<!--
 
-End - Publish assets to Brand Portal
-Start- Publish folders to Brand Portal
--->
-
-
-## Publish folders to Brand Portal{#publish-folders-to-brand-portal}
+## Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
 Puede publicar o cancelar la publicación de las carpetas de recursos inmediatamente o programarlas para una fecha u hora posterior.
 
-### Publish folders to Brand Portal {#publish-folders-to-brand-portal-1}
+### Publish folders to Brand Portal {#publish-folders-to-bp}
 
 1. En la consola Recursos, seleccione las carpetas que desee publicar y haga clic en la opción Publicación **** rápida de la barra de herramientas.
 
@@ -100,73 +93,89 @@ Puede publicar o cancelar la publicación de las carpetas de recursos inmediatam
 
    Para publicar las carpetas seleccionadas en Brand Portal, realice una de las acciones siguientes:
 
-   * En la barra de herramientas, seleccione **[!UICONTROL Publicación]** rápida. En el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
+   * En la barra de herramientas, seleccione **[!UICONTROL Publicación]** rápida.
+
+      En el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
    * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-      1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]**. En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**. 
+      1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]**.
+
+         En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**.
+
+         Haga clic en **Siguiente.**
+
       1. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
 
 1. **Publicar carpetas más tarde**
 
-   Para programar la publicación de las carpetas de recursos para una fecha u hora posterior.
+   Para programar la publicación de las carpetas de recursos para una fecha u hora posterior:
 
    1. Seleccione las carpetas que desee programar para la publicación, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
-   1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]** , seleccione **[!UICONTROL Más adelante]**.
+   1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Publicar en Brand Portal]**.
+
+      En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Más adelante]**.
+
+   1. Seleccione una fecha **[!UICONTROL de]** Activación y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. Seleccione una fecha **[!UICONTROL de]** Activación y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
    1. Confirme la selección en **[!UICONTROL Ámbito]**. Haga clic en **[!UICONTROL Siguiente]**. 
+
    1. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Haga clic en **[!UICONTROL Publicar posteriormente]**.
-   ![management eschedulepub](assets/manageschedulepub.png)
+
+      ![management eschedulepub](assets/manageschedulepub.png)
 
 ### Unpublish folders from Brand Portal {#unpublish-folders-from-brand-portal}
 
-Puede eliminar cualquier carpeta de recursos publicada en Brand Portal cancelándola de la instancia de Recursos AEM. Una vez que haya cancelado la publicación de la carpeta original, los usuarios de Brand Portal ya no podrán acceder a su copia.
+Puede eliminar cualquier carpeta de recursos publicada en Brand Portal cancelándola de la instancia de Recursos AEM. Después de cancelar la publicación de la carpeta original, su copia ya no estará disponible para los usuarios de Brand Portal.
 
 Puede cancelar la publicación de las carpetas de recursos desde Brand Portal inmediatamente o programarlas para una fecha y hora posteriores.
 
 Para cancelar la publicación de carpetas de recursos desde Brand Portal:
 
-1. En la consola Recursos AEM, seleccione la carpeta que desee cancelar la publicación.
+1. En la consola Recursos, seleccione las carpetas de recursos que desee publicar y haga clic en la opción **[!UICONTROL Administrar publicación]** de la barra de herramientas.
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Administrar publicación]**.
+1. **Cancelar la publicación de carpetas de recursos**
 
-1. **Cancelar la publicación de Brand Portal ahora**
+   Para cancelar inmediatamente la publicación de la carpeta de recursos seleccionada desde Brand Portal:
 
-   Para cancelar inmediatamente la publicación de la carpeta seleccionada desde Brand Portal:
+   1. En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. En la barra de herramientas, seleccione **Administrar publicación**.
-   1. En **Acción**, seleccione **Cancelar publicación en Brand Portal** y, en **Programación**, seleccione **Ahora**. Haga clic en **Siguiente.**
-   1. Confirme su selección en **Ámbito** y haga clic en **Cancelar publicación desde Brand Portal**.
-   ![confirmar-cancelar publicación](assets/confirm-unpublish.png)
+   1. En **[!UICONTROL Acción]** , seleccione **[!UICONTROL Cancelar publicación en Brand Portal]**.
 
-1. **Cancelar la publicación de Brand Portal más tarde**
+      En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**.
 
-   Para programar la cancelación de la publicación de una carpeta desde Brand Portal a una fecha y hora posteriores:
+      Haga clic en **[!UICONTROL Siguiente]**. 
 
-   1. En la barra de herramientas, seleccione **Administrar publicación**.
-   1. En **Acción**, seleccione **Cancelar publicación en Brand Portal** y, en **Programación** , seleccione **Más adelante**.
-   1. Seleccione una fecha **de** Activación y especifique la hora. Haga clic en **Siguiente**. 
-   1. Confirme la selección en **Ámbito** y haga clic en **Siguiente**.
-   1. Especifique un título **de** flujo de trabajo en **Flujos de trabajo**. Haga clic en **Cancelar publicación posteriormente.**
+   1. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Cancelar publicación desde Brand Portal]**.
+
+      ![confirmar-cancelar publicación](assets/confirm-unpublish.png)
+
+1. **Cancelar la publicación de carpetas de recursos más tarde**
+
+   Para programar la cancelación de la publicación de una carpeta de recursos para una fecha y hora posteriores:
+
+   1. En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
+
+   1. En **[!UICONTROL Acción]**, seleccione **[!UICONTROL Cancelar publicación en Brand Portal]**.
+
+      En **[!UICONTROL Programación]**, seleccione **[!UICONTROL Más adelante]**.
+
+   1. Seleccione una fecha **[!UICONTROL de]** Activación y especifique la hora. Haga clic en **[!UICONTROL Siguiente]**. 
+
+   1. Confirme la selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Siguiente]**.
+
+   1. Especifique un título **[!UICONTROL de]** flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Haga clic en **[!UICONTROL Cancelar publicación posteriormente]**.
 
       ![flujos de trabajo sin publicar](assets/unpublishworkflows.png)
 
-
-<!--
-End - Publish folders to Brand Portal
-Start- Publish Collections to Brand Portal
-
--->
-
 ## Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-Puede publicar o cancelar la publicación de colecciones desde la instancia de Recursos AEM.
+Puede publicar o cancelar la publicación de colecciones desde la instancia de nube de AEM Assets.
 
 >[!NOTE]
 >
@@ -174,31 +183,36 @@ Puede publicar o cancelar la publicación de colecciones desde la instancia de R
 >
 >Si las colecciones que contienen fragmentos de contenido se publican desde Recursos AEM a Brand Portal, todo el contenido de la carpeta, excepto los fragmentos de contenido, se replicará en la interfaz de Brand Portal.
 
-### Publicación de colecciones {#publish-a-collection-to-brand-portal}
+
+### Publicación de colecciones {#publish-collections}
 
 A continuación se indican los pasos para publicar colecciones de Recursos AEM en Brand Portal:
 
 1. En la interfaz de usuario de AEM Assets, haga clic en el logotipo de AEM.
+
 1. From **Navigation** page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+
 1. En la consola **Colecciones** , seleccione las colecciones que desee publicar en Brand Portal.
 
    ![select_collection](assets/select_collection.png)
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+
 1. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Publicar]**.
+
 1. Cierre el mensaje de confirmación.
 
-   Inicie sesión en Brand Portal como administrador. La colección publicada está disponible en la consola **[!UICONTROL Colecciones]** .
+   Inicie sesión en Brand Portal como administrador. La colección publicada está disponible en la consola Colecciones.
 
    ![colección publicada](assets/published_collection.png)
 
-## Cancelar la publicación de colecciones {#unpublish-collections}
+### Cancelar la publicación de colecciones {#unpublish-collections}
 
 Puede eliminar cualquier colección publicada en Brand Portal cancelándola de su instancia de Recursos AEM. Después de cancelar la publicación de la colección original, los usuarios de Brand Portal ya no podrán acceder a su copia.
 
-A continuación se indican los pasos para cancelar la publicación de colecciones:
+A continuación se indican los pasos para cancelar la publicación de una colección:
 
-1. En la consola Colecciones de la instancia de Recursos AEM, seleccione la colección que desee cancelar la publicación.
+1. En la consola **Colecciones** de su instancia de Recursos AEM y seleccione la colección que desee cancelar la publicación.
 
    ![select_collection-1](assets/select_collection-1.png)
 
@@ -208,9 +222,16 @@ A continuación se indican los pasos para cancelar la publicación de coleccione
 
 Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información sobre la distribución de recursos, carpetas y colecciones a los usuarios finales.
 
+
+
 <!--
+   Comment Type: draft
 
-End - Publish Collections to Brand Portal
+   <li> </li>
+   -->
 
--->
+<!--
+   Comment Type: draft
 
+   <li>Step text</li>
+   -->
