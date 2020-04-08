@@ -1,8 +1,8 @@
 ---
 title: Notas de la versión 2020.2.0
 description: Notas de la versión 2020.2.0
-translation-type: ht
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+translation-type: tm+mt
+source-git-commit: 8796d4bcbfc4089e1e78bd18bdb253386a5f5b6d
 
 ---
 
@@ -11,11 +11,13 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.2.0.
 
+## Release Date {#release-date}
+
+La fecha de versión de Experience Manager como servicio de nube 2020.2.0 es el 13 de febrero de 2020.
+
 ## Cloud Manager {#cloud-manager}
 
-La fecha de lanzamiento de la versión 2020.2.0 de Cloud Manager es el 13 de febrero de 2020.
-
-Siga esta sección para conocer las novedades y las actualizaciones de la versión 2020.2.0 de Cloud Manager.
+Siga esta sección para conocer las novedades y las actualizaciones de Cloud Manager en AEM como una versión 2020.2.0 de Cloud Service.
 
 ### Novedades {#what-is-new}
 
