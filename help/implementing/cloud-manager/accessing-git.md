@@ -4,7 +4,7 @@ seo-title: Acceso a Git
 description: Esta página describe cómo puede acceder y administrar el repositorio Git.
 seo-description: Siga esta página para conocer cómo acceder y administrar su repositorio Git.
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -17,13 +17,13 @@ Puede acceder a su repositorio Git y administrarlo mediante la administración d
 
 Utilice el botón **Administrar Git** disponible en la interfaz de usuario de Cloud Manager, especialmente en la tarjeta de canalización.
 
-1. Vaya a la página Información general *del* programa y a la tarjeta de tuberías.
+1. Vaya a la página Información general *de su* Programa y a la tarjeta de tuberías.
 
-1. Verá la opción **Administrar Git** para acceder y administrar su repositorio Git.
+1. vista la opción **Administrar Git** para acceder y administrar su repositorio Git.
 
    ![](assets/manage-git1.png)
 
-   Además, si selecciona la ficha Canalización **sin producción** , también verá la opción **Administrar Git** .
+   Además, si selecciona la ficha Canalización **sin producción** , también vista la opción **Administrar Git** .
 
    ![](assets/manage-git-new2.png)
 
@@ -36,9 +36,10 @@ Las consideraciones importantes para administrar su Git en Cloud Manager son:
 
 * **Dirección URL**: La dirección URL del repositorio
 * **Nombre de usuario**: El nombre de usuario
-* **Contraseña**: Valor que se muestra cuando se hace clic en el botón **Generar contraseña** .
+* **Contraseña**: Valor que se muestra cuando se hace clic en el botón **Generar contraseña**.
 
 
-> [!NOTE]
-> Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede volver a transferir los cambios de código al repositorio de código remoto en Cloud Manager.
+>[!NOTE]
+>
+>Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede volver a transferir los cambios de código al repositorio de código remoto en Cloud Manager.
 
