@@ -2,7 +2,7 @@
 title: Añadir recursos digitales a Adobe Experience Manager
 description: Añada sus recursos digitales a Adobe Experience Manager como un servicio de nube
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Aunque puede cargar y administrar cualquier archivo binario en Experience Manage
 
 También puede elegir que se realice un procesamiento adicional en los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte Procesamiento [](#additional-processing) adicional a continuación para obtener más información.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Experience Manager como servicio de nube aprovecha una nueva forma de cargar recursos: la carga binaria directa. De forma predeterminada, es compatible con las prestaciones y los clientes del producto integrados, como la interfaz de usuario de AEM, Adobe Asset Link, la aplicación de escritorio de AEM y, por tanto, transparente para los usuarios finales.
 >
@@ -75,7 +75,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
 Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Para cargar jerarquías de carpetas anidadas en AEM, consulte Carga [masiva de recursos](#bulk-upload).
 
@@ -130,7 +130,7 @@ Para cargar un mayor número de archivos, especialmente si existen en una jerarq
 * Utilice un script o una herramienta de carga personalizada que aproveche las API [de carga de](developer-reference-material-apis.md#asset-upload-technical)recursos. Una herramienta personalizada de este tipo puede añadir una gestión adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de los archivos), si es necesario.
 * Utilice la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager para cargar jerarquías de carpetas anidadas.
 
-> [!NOTE]
+>[!NOTE]
 >
 > La carga masiva como parte de la migración de contenido desde otros sistemas cuando se configura e implementa en Experience Manager requiere una planificación, consideración y elección cuidadosas de las herramientas. Consulte la guía [de](/help/implementing/deploying/overview.md) implementación para obtener instrucciones sobre los enfoques de migración de contenido.
 
@@ -157,7 +157,7 @@ Además, si Dynamic Media está habilitado en el entorno:
 * [Los perfiles de imagen](dynamic-media/image-profiles.md) le permiten aplicar un recorte específico (recorte **[!UICONTROL inteligente]** y recorte de píxeles) y una configuración perfeccionada a los recursos cargados
 * [Los perfiles](dynamic-media/video-profiles.md) de vídeo le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros)
 
-> [!NOTE]
+>[!NOTE]
 >
 > El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para recortar o transformar los medios que se deben realizar al entregar los recursos
 
