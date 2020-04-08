@@ -1,8 +1,8 @@
 ---
 title: Crear contenido accesible (Conformidad con WCAG 2.0)
 description: Ayude a que las personas con discapacidades puedan acceder al contenido web y utilizarlo
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -18,15 +18,17 @@ WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y c
 >* nuestra Guía rápida para WCAG 2.0 si desea más información
 >* Configurar el Editor de texto enriquecido para producir contenido accesible
 
-<!--
->* our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
->* [Configuring the Rich Text Editor for producing accessible content](/help/sites-administering/rte-accessible-content.md)
+
+<!-- 
+>* See our [Quick Guide to WCAG 2.0](/help/managing/qg-wcag.md) for further details
+>* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
 -->
+
 Se clasifican según tres niveles de conformidad: Nivel A (el más bajo), Nivel AA y Nivel AAA (el más alto). Brevemente, los niveles se definen de la siguiente manera:
 
-* **Nivel A:** su página alcanza un nivel básico y mínimo de accesibilidad. Para alcanzar este nivel, se deben cumplir todos los criterios de éxito del nivel A.
+* **Nivel A:** El sitio alcanza un nivel básico y mínimo de accesibilidad. Para alcanzar este nivel, se cumplen todos los criterios de éxito del nivel A.
 * **Nivel AA:** Se trata de un nivel ideal de accesibilidad en el que su página alcanza un nivel mejorado de accesibilidad, por lo que resulta accesible para mucha gente, en muchas situaciones y utilizando distintas tecnologías. Para alcanzar este nivel, se deben cumplir todos los criterios de éxito de los niveles A y niveles AA.
-* **Nivel AAA:** su página alcanza un nivel muy alto de accesibilidad. Para alcanzar este nivel, se deben cumplir todos los criterios de éxito de los niveles A, AA y AAA.
+* **Nivel AAA:** Su sitio alcanza un nivel muy alto de accesibilidad. Para alcanzar este nivel, se cumplen todos los criterios de éxito de los niveles A, AA y AAA.
 
 Al crear su página, debe determinar el nivel general en el que desea que se ajuste.
 
@@ -73,6 +75,7 @@ Para gráficos estáticos, el requisito principal es proporcionar una alternativ
 >[!NOTE]
 >
 >Algunos componentes listos para usar, como **Carrusel** y **Presentación de diapositivas,** no proporcionan los medios para añadir descripciones de texto alternativas a las imágenes. Cuando se implementan versiones de estos componentes para su instancia de AEM, su equipo de desarrollo debe configurarlos para dar soporte al atributo `alt` y que así los autores puedan añadirlo al contenido (consulte Añadir soporte para elementos y atributos HTML adicionales).
+
 <!--
 >Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -306,7 +309,7 @@ AEM facilita construir páginas web utilizando los elementos HTML adecuados. Abr
 
 Puede comprobar que sus páginas web contienen la estructura adecuada mediante:
 
-* **Uso de encabezados:**   siempre y cuando tenga las características de accesibilidad de RTE, AEM ofrece 3 niveles de encabezados de página. Puede utilizarlos para identificar secciones y subsecciones del contenido. El Encabezado 1 es el nivel más alto, mientras que el Encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de titulares.
+* **Uso de encabezados:** Siempre y cuando tenga las funciones de accesibilidad de RTE activadas, AEM ofrece 3 niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
 * **Texto enfatizado**: Utilice el elemento `<strong>` o `<em>` para indicar el énfasis. No utilice encabezados o texto enfatizado en los párrafos.
    * Enfatice el texto que quiera remarcar;
    * Haga clic en el icono **B** (para `<strong>`) o en el icono **I** (para `<em>`) que se muestra en el panel de **Propiedades** (asegúrese de que está seleccionada la opción HTML).
@@ -327,7 +330,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
    * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`. En RTE, utilice el icono **Lista numerada** .
    Si desea cambiar contenido existente por un tipo de lista específica, remarque el texto adecuado y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, en el que se mostraba cómo se introducía texto en formato párrafo, los elementos de la lista adecuada se añaden automáticamente a su HTML.
 
-   En el modo de pantalla completa pueden verse los iconos individuales **Lista con viñetas** y **Lista numerada**. Fuera del modo de pantalla completa, ambas opciones están disponibles dentro del icono único **Listas**.
+   En el modo de pantalla completa, están visibles los iconos individuales **Lista con viñetas** y **Lista numerada**. Cuando no se encuentra en modo de pantalla completa, las dos opciones están disponibles detrás del icono de una **Listas**.
 * **Use tablas**: las tablas de datos deben identificarse utilizando elementos de tablas HTML:
    * un elemento `<table>`
    * un elemento `<tr>` para cada fila de la tabla
@@ -341,18 +344,19 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
    >[!NOTE]
    >
    >Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte Agregar ayuda para elementos y atributos HTML adicionales).
-<!--
->By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+
+<!-- removed link syntax for ExL
+>By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
 -->
 
 Para abrir el cuadro de diálogo **Tabla**, seleccione la pestaña **Propiedades de la tabla**:
 
 * Defina un **subtítulo** adecuado.
-* Idealmente elimina todo tipo de valores predeterminados de **anchura**, **altura**, **bordes**, **relleno de celdas**, **espacio de celdas**, ya que estas propiedades se pueden configurar en una hoja de estilo global.
+* Idealmente, elimine los valores predeterminados de **anchura**, **altura**, **borde**, **relleno de celda** y **espaciado de celda**, ya que estas propiedades se pueden definir en una hoja de estilo global.
 
 Puede utilizar las **propiedades de la celda** para decidir si la celda es una celda de datos o de encabezado:
 
-* **Tablas de datos complejos**: en algunos casos en los que hay tablas complejas con dos o más niveles de encabezados, las Propiedades de la tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas es necesario crear relaciones directas entre los encabezados y sus celdas utilizando el **encabezado** y **atributos de identificación**. Por ejemplo, en la tabla siguiente los encabezados y las identificaciones se combinan para crear una asociación programática para los usuarios de tecnologías de asistencia.
+* **Tablas de datos complejos**: en algunos casos en los que hay tablas complejas con dos o más niveles de encabezados, las Propiedades de la tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas es necesario crear relaciones directas entre los encabezados y sus celdas utilizando el **encabezado** y **atributos de identificación**. Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
 
    >[!NOTE]
    >
@@ -793,9 +797,10 @@ Cuando se utilizan botones de imagen (por ejemplo, el componente **Botón de ima
 
 #### Grupos de campos de formulario {#groups-of-form-fields}
 
-Cuando hay un grupo de controles conexos, como un **Grupo de radio**, puede que se necesite un título para el grupo, además de controles individuales. Al añadir un conjunto de botones de opción en AEM, el campo **Título** proporciona el título del grupo, mientras que se especifican títulos individuales cuando los botones de opción (**elementos**) se crean.
+Cuando hay un grupo de controles relacionados, como el **Grupo de radio**, puede ser necesario un título para el grupo, así como controles individuales. Al agregar un conjunto de botones de radio en AEM, el campo **Título** proporciona este título de grupo, mientras que los títulos individuales se especifican a medida que se crean los botones de radio (**Elementos**).
 
 Sin embargo, no existe una asociación programática entre el título del grupo y los botones de opción. Los editores de plantillas necesitarían rodear el título en los `fieldset` necesarios y las etiquetas `legend` para crear esta asociación, que solo se puede hacer editando el código fuente de la página. Alternativamente, un administrador del sistema puede añadir soporte a estos elementos para que aparezcan en el diálogo **Propiedades del campo** (consulte Añadir ayuda para elementos y atributos HTML adicionales).
+
 <!--
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
@@ -804,7 +809,7 @@ However, there is no programmatic association between the group title and the ra
 
 Si se introducen datos en un formato concreto, especifíquelo en el texto de la etiqueta. Por ejemplo, si se tiene que introducir una fecha en formato `DD-MM-YYYY`, especifíquelo como parte de la etiqueta. Esto significa que cuando los usuarios de los lectores de pantalla se encuentren con este campo, la etiqueta se anunciará automáticamente junto con la información adicional sobre el formato.
 
-Si es obligatorio introducir datos en un formulario, especifíquelo utilizando la palabra obligatorio como parte de la etiqueta. AEM añade un asterisco cuando un campo es obligatorio, pero sería ideal incluir la palabra `required` en la etiqueta (en el campo **Título** del diálogo de edición).
+Si es obligatorio introducir datos en un campo de formulario, especifíquelo utilizando la palabra obligatorio como parte de la etiqueta. AEM añade un asterisco cuando un campo es obligatorio, pero sería ideal incluir la palabra `required` en la etiqueta (en el campo **Título** del diálogo de edición).
 
 La colocación de las etiquetas también es importante ya que ayuda a localizar campos adecuados. Esto es de particular importancia cuando el usuario se encuentra con un formulario complejo. Siga la convención siguiente:
 
