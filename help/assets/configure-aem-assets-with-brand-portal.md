@@ -3,7 +3,7 @@ title: Configuración del servicio de nube de AEM Assets con Brand Portal
 description: Configure el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    Un agente de distribución contiene dos colas:
    * Una cola de procesamiento para la distribución de recursos a Brand Portal.
    * Una cola de errores para los recursos en los que se ha producido un error en la distribución.
-   Puede probar las colas individuales o la configuración general.
-
    ![](assets/test-bpconfig3.png)
 
 1. Para comprobar la conexión entre AEM Assets y Brand Portal, haga clic en **[!UICONTROL Probar conexión]**.
@@ -218,11 +216,20 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    >
    >Evite desactivar el agente de distribución, ya que puede provocar errores en la distribución de los recursos (que se ejecutan en la cola).
 
-Brand Portal se ha configurado correctamente con la instancia de nube de AEM Assets. Ahora puede:
+
+Una vez que Brand Portal se haya configurado correctamente con la instancia de nube de AEM Assets, podrá:
 
 * [Publicación de recursos de AEM Assets en Brand Portal](publish-to-brand-portal.md)
 * [Publicación de carpetas de AEM Assets en Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publicación de colecciones de AEM Assets en Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+Además de lo anterior, también puede publicar esquemas de metadatos, ajustes preestablecidos de imagen, facetas de búsqueda y etiquetas de Recursos AEM en Brand Portal.
+
+* [Publicación de ajustes preestablecidos, esquemas y facetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar etiquetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información.
 
 
 ## Registros de distribución {#distribution-logs}
@@ -233,7 +240,7 @@ Por ejemplo, hemos publicado un recurso de Recursos AEM en Brand Portal para com
 
 1. Siga los pasos (paso 1 a 4) que se muestran en **[!UICONTROL Test Connection]** y vaya a la página del agente de distribución.
 
-1. Seleccione la cola de distribución **[!UICONTROL queue-distributionagent0]** y haga clic en **[!UICONTROL Registros]** para vista de los registros de distribución.
+1. Haga clic en **[!UICONTROL Registros]** para vista de los registros de distribución. Aquí puede ver los registros de procesamiento y error.
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,9 @@ Al publicar el recurso, se generan los siguientes registros de solicitud y respu
 
 En el ejemplo anterior, se activa una solicitud y una respuesta adicionales. El sistema no pudo encontrar la carpeta principal (denominada ruta de Añado) en Brand Portal porque el recurso se publicó por primera vez, por lo que activa una solicitud adicional para crear una carpeta principal con el mismo nombre en Brand Portal en la que se publica el recurso.
 
-Si existe la carpeta principal con el mismo nombre (también conocida como Añadir ruta) en Brand Portal, no se activa la solicitud adicional.
-
 >[!NOTE]
+>>Se genera una solicitud adicional en caso de que la carpeta principal no exista en Brand Portal (en el ejemplo anterior) o de que la carpeta principal se haya modificado en Recursos AEM.
 >
->Para vista de los registros de errores, seleccione la cola de distribución **[!UICONTROL error-queue-distributionagent0]** y haga clic en **[!UICONTROL Registros]**.
-
 
 ## Información adicional {#additional-information}
 
@@ -274,6 +278,7 @@ Vaya a `/system/console/slingmetrics` para obtener estadísticas relacionadas co
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
