@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.4.0
 description: Notas de la versión de Experience Manager para 2020.4.0
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 >* [Crear un flujo de trabajo en Experience Manager mediante los microservicios de recursos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Actualizaciones del Administrador de nube {#cloud-manager}
-
 ## Novedades de Cloud Manager {#whats-new-cloud-manager}
 
 * Las direcciones URL de Publisher ya están disponibles en la página de Entorno de la interfaz de usuario del Administrador de nube.
@@ -57,7 +55,7 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 * Los Entornos fallidos ahora se pueden eliminar a través de la interfaz de usuario y la API.
 * El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
 
-## Corrección de errores {#bug-fixes-cloud-manager}
+### Corrección de errores {#bug-fixes-cloud-manager}
 
 * Los vínculos al entorno del escenario en la página de detalles de la ejecución de la canalización no navegaban de manera consistente a la ubicación correcta.
 * Los pasos individuales dentro del proceso de creación de entornos agotarían el tiempo de espera antes de lo necesario, lo que ocasionaría que el proceso fallara.
