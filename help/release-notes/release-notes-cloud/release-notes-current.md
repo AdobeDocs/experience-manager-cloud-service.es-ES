@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.4.0
 description: Notas de la versión de Experience Manager para 2020.4.0
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 >* [Configurar Experience Manager para que funcione con Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Crear un flujo de trabajo en Experience Manager mediante los microservicios de recursos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Actualizaciones del Administrador de nube {#cloud-manager}
+
+## Novedades de Cloud Manager {#whats-new-cloud-manager}
+
+* Las direcciones URL de Publisher ya están disponibles en la página de Entorno de la interfaz de usuario del Administrador de nube.
+* Cambios en la navegación para permitir que el usuario edite, cambie o agregue un programa desde la página de información general de Cloud Manager.
+* Cambios que permiten al usuario editar programas desde la tarjeta de programa en la página de aterrizaje de Cloud Manager.
+* Nuevo estado de canalización **La ejecución** de canalización se muestra en el entorno con el que está asociada.
+* Mejoras en la comprensión de la página de ejecución de la canalización. Esto incluye la visualización del nombre de la canalización (solo para la canalización que no es de producción) y el tipo, y un distintivo para indicar si el estado de la canalización está en curso/cancelado/fallido.
+* Información sobre herramientas para mejorar la experiencia del usuario y la comprensión de por qué se desactiva el botón Añadir Programa/Entorno.
+* Los Entornos fallidos ahora se pueden eliminar a través de la interfaz de usuario y la API.
+* El proceso utilizado para generar contraseñas de git se ha vuelto más resistente a los problemas en la capa de servicio subyacente.
+
+## Corrección de errores {#bug-fixes-cloud-manager}
+
+* Los vínculos al entorno del escenario en la página de detalles de la ejecución de la canalización no navegaban de manera consistente a la ubicación correcta.
+* Los pasos individuales dentro del proceso de creación de entornos agotarían el tiempo de espera antes de lo necesario, lo que ocasionaría que el proceso fallara.
+* La configuración Maven utilizada en el contenedor de compilación se actualizó para evitar interbloqueos al descargar metadatos de artefactos.
+* En algunos casos, el paso Generar imagen no puede descargar correctamente los paquetes de clientes.
+* Algunas condiciones poco frecuentes evitarían que se eliminaran entornos.
+* Las notificaciones de Experience Cloud no se recibían de forma coherente.
