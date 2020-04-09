@@ -3,7 +3,7 @@ title: Configuración del servicio de nube de AEM Assets con Brand Portal
 description: Configure el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -48,7 +48,7 @@ El certificado público le permite autenticar su perfil en Adobe I/O.
 
 1. Inicie sesión en la instancia de nube de AEM Assets
 
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Seguridad]** >> Configuraciones de **[!UICONTROL Adobe IMS]**.
+1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Seguridad]** > Configuraciones de **[!UICONTROL Adobe IMS]**.
 
    ![Interfaz de usuario de configuración de cuenta de Adobe IMS](assets/ims-configuration1.png)
 
@@ -163,7 +163,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 1. Inicie sesión en la instancia de nube de AEM Assets
 
-1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a Servicios de **[!UICONTROL nube >> AEM Brand Portal]**.
+1. En el panel **Herramientas** ![Herramientas](assets/tools.png) , vaya a **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
    Se abre la página Configuraciones de Brand Portal.
 
@@ -217,7 +217,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    >Evite desactivar el agente de distribución, ya que puede provocar errores en la distribución de los recursos (que se ejecutan en la cola).
 
 
-Una vez que Brand Portal se haya configurado correctamente con la instancia de nube de AEM Assets, podrá:
+La instancia de nube de AEM Assets se ha configurado correctamente con Brand Portal y ahora puede:
 
 * [Publicación de recursos de AEM Assets en Brand Portal](publish-to-brand-portal.md)
 * [Publicación de carpetas de AEM Assets en Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,8 +262,9 @@ Al publicar el recurso, se generan los siguientes registros de solicitud y respu
 En el ejemplo anterior, se activa una solicitud y una respuesta adicionales. El sistema no pudo encontrar la carpeta principal (denominada ruta de Añado) en Brand Portal porque el recurso se publicó por primera vez, por lo que activa una solicitud adicional para crear una carpeta principal con el mismo nombre en Brand Portal en la que se publica el recurso.
 
 >[!NOTE]
->>Se genera una solicitud adicional en caso de que la carpeta principal no exista en Brand Portal (en el ejemplo anterior) o de que la carpeta principal se haya modificado en Recursos AEM.
 >
+>Se genera una solicitud adicional si la carpeta principal no existe en Brand Portal (en el ejemplo anterior) o si la carpeta principal se ha modificado en Recursos AEM.
+
 
 ## Información adicional {#additional-information}
 
