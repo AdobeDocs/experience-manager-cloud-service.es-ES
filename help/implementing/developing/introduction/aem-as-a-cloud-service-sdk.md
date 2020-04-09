@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service SDK
 description: Para completar
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ Además, algunos clientes que se implementaron previamente con AEM 6.5 o version
 </repository>
 ```
 
-## Actualización de un proyecto local con una nueva versión del SDK {#refreshing-a-local-prokect-with-a-new-skd-version}
+## Actualización de un proyecto local con una nueva versión del SDK {#refreshing-a-local-project-with-a-new-skd-version}
 
 ¿Cuándo se recomienda actualizar el proyecto local con un nuevo SDK?
 
@@ -92,5 +92,5 @@ Para poder reutilizar paquetes de contenido que contengan los valores cifrados, 
 
 * Cuando inicialmente inicio el archivo local quickstart.jar, asegúrese de agregar el parámetro siguiente: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Se recomienda, pero es opcional, agregarla siempre.
 * La primera vez que inició una instancia, cree un paquete que contenga un filtro para la raíz &quot;`/etc/key`&quot;. Esto mantendrá el secreto para que se reutilice en todos los entornos para los que se desea que se reutilicen
-* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para agregarlo al paquete que se reutilizará en las instalaciones
+* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para agregarlo al paquete que se reutilizará en todas las instalaciones
 * Siempre que gire una instancia nueva (ya sea para reemplazarla con una nueva versión o cuando varios entornos de desarrollo deben compartir las credenciales para la prueba), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la criptoclave está sincronizada.
