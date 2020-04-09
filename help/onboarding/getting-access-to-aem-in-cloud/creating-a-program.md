@@ -1,8 +1,8 @@
 ---
-title: Creación de un programa - Servicio en la nube
-description: Creación de un programa - Servicio en la nube
+title: Creación de un Programa - Servicio de nube
+description: Creación de un Programa - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
 
 ---
 
@@ -11,29 +11,28 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
 La solución nativa de la nube proporciona al usuario los permisos necesarios y la capacidad de crear un programa en un modelo de autoservicio.
 
-Un asistente para la creación de programas pedirá al usuario que envíe detalles, según el objetivo del usuario de crear el programa dentro de los límites de lo que esté disponible para el cliente o la organización en cuestión.
+Un asistente para la creación de programas pedirá al usuario que envíe detalles, según el objetivo del usuario de crear el programa dentro de los límites de lo que está disponible para el cliente o la organización en cuestión.
 
-En caso de que el usuario tenga acceso por primera vez a Cloud Manager o de que no haya programas en el inquilino, verá **Crear su primera pantalla de programa** . Si el usuario selecciona *Esc* o hace clic fuera del cuadro de diálogo, se muestra la siguiente pantalla:
+En el evento del acceso por primera vez a Cloud Manager o si no hay programas en el inquilino, el usuario verá **Crear su primera pantalla de Programa** . Si el usuario selecciona *Esc* o hace clic fuera del cuadro de diálogo, se muestra la siguiente pantalla:
 
 ![](assets/create-program1.png)
 
 
-## Uso del Asistente para crear programas {#using-create-program-wizard}
+## Uso del Asistente para crear Programas {#using-create-program-wizard}
 
-Según el objetivo del usuario de crear el programa dentro de los límites de lo que está disponible para el cliente o la organización específicos, un asistente para la creación de programas pedirá al usuario que envíe uno o varios detalles.
+Según el objetivo del usuario de crear el programa dentro de los límites de lo que está disponible para el cliente o la organización específicos, un asistente para la creación de programas solicitará al usuario que envíe uno o varios detalles.
 
 ![](assets/create-program-2.png)
 
 >[!NOTE]
->Si ya existe un programa, verá **Agregar programa** en la parte superior derecha de la página de aterrizaje, como se muestra en la figura siguiente.
+>If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
 
 ![](assets/create-program-add.png)
 
-## Creación de un programa de demostración {#create-demo-program}
+## Creación de un Programa de demostración {#create-demo-program}
 
 >[!NOTE]
->
-Un programa de demostración es análogo a un programa de simulación de pruebas en la interfaz de usuario de Cloud Manager.
+>Un programa de demostración es similar a un programa de simulación de pruebas en la interfaz de usuario del Administrador de nubes.
 
 Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
@@ -58,18 +57,24 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
    ![](assets/create-program-5.png)
 
-1. Una vez que se haya completado la implementación de la canalización sin producción en el desarrollo, el asistente guiará al usuario para que acceda a AEM (en desarrollo) o para implementar código en el entorno de desarrollo:
+1. Una vez que se haya completado la implementación de la canalización sin producción en el desarrollo, el asistente guiará al usuario para que acceda a AEM (en desarrollo) o implemente código en el entorno de desarrollo:
 
    ![](assets/create-program-setup-deploy.png)
 
+   >[!NOTE]
+   >También puede editar, cambiar o agregar un programa desde la página Información general de Cloud Manager, como se muestra a continuación:
 
-## Creación de un programa regular {#create-regular-program}
+   ![](assets/create-program-a1.png)
 
-Un programa *regular* está dirigido a un usuario familiarizado con AEM y Cloud Manager y está listo para empezar a escribir, crear y probar código con el objetivo de implementarlo en Producción.
+
+
+## Creación de un Programa normal {#create-regular-program}
+
+Un programa *regular* está dirigido a un usuario que esté familiarizado con AEM y Cloud Manager y esté listo para escribir, crear y probar código con el objetivo de implementarlo en Producción.
 
 Siga los pasos a continuación para crear un programa normal:
 
-1. Seleccione **Configurar para producción** en el asistente Crear programa para crear un programa normal. El usuario puede aceptar el nombre predeterminado del programa o editarlo antes de seleccionar **Continuar**.
+1. Seleccione **Configurar para producción** en el asistente Crear Programa para crear un programa normal. El usuario puede aceptar el nombre de programa predeterminado o editarlo antes de seleccionar **Continuar**.
 
    ![](assets/set-up-prod1.png)
 
@@ -87,17 +92,17 @@ Siga los pasos a continuación para crear un programa normal:
 
    ![](assets/set-up-prod3.png)
 
-1. Una vez que vea la tarjeta del programa en la página de aterrizaje, pase el ratón por encima para seleccionar el icono Administrador de nube para navegar a la página **Información general** del Administrador de nube.
+1. Una vez que vea la tarjeta de programa en la página de aterrizaje, pase el ratón sobre ella para seleccionar el icono Administrador de nube y navegar hasta la página **Información general** del Administrador de nube.
 
    ![](assets/set-up-prod4.png)
 
-1. La tarjeta principal de llamada a acción guiará al usuario para crear un entorno, crear una canalización que no sea de producción y, finalmente, una canalización de producción.
+1. La tarjeta principal de llamada a acción guiará al usuario para crear un entorno, crear un canal que no sea de producción y, finalmente, un canal de producción.
    ![](assets/set-up-prod5.png)
 
 
    >[!NOTE]
    >
-   >Un programa normal no tiene la función de configuración **** automática.
+   >A regular program does not have **Auto-setup** feature.
 
 
 
