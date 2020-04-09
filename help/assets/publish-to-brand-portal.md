@@ -3,7 +3,7 @@ title: Publicación de recursos, carpetas y colecciones en Brand Portal
 description: Publique recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ A continuación se indican los pasos para cancelar la publicación de una colecc
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Cancelar publicación]**.
 1. Cierre el mensaje de confirmación. La colección se elimina de la interfaz de Brand Portal.
 
-Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información sobre la distribución de recursos, carpetas y colecciones a los usuarios finales.
+Además de lo anterior, también puede publicar esquemas de metadatos, ajustes preestablecidos de imagen, facetas de búsqueda y etiquetas de Recursos AEM en Brand Portal.
 
+* [Publicación de ajustes preestablecidos, esquemas y facetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar etiquetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información.
 
 
 <!--
