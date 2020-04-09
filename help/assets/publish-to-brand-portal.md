@@ -3,7 +3,7 @@ title: Publicación de recursos, carpetas y colecciones en Brand Portal
 description: Publique recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -215,7 +215,7 @@ A continuación se indican los pasos para cancelar la publicación de una colecc
 
 1. En la consola **Colecciones** de su instancia de Recursos AEM y seleccione la colección que desee cancelar la publicación.
 
-   ![select_collection-1](assets/select_collection-1.png)
+   ![select_collection](assets/select_collection-1.png)
 
 1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Eliminar de Brand Portal]** .
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Cancelar publicación]**.
