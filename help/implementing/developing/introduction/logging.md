@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
+source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
 
 ---
 
@@ -13,7 +13,7 @@ AEM como servicio de nube le oferta la posibilidad de configurar:
 
 * parámetros globales para el servicio de registro central
 * registro de datos de solicitud; una configuración de registro especializada para información de solicitud
-* ajustes específicos para los servicios individuales; por ejemplo, un archivo de registro y un formato individuales para los mensajes de registro
+* configuración específica para los servicios individuales
 
 Para el desarrollo local, las entradas de registro se escriben en los archivos locales de la `/crx-quickstart/logs` carpeta.
 
@@ -55,23 +55,27 @@ Estos elementos están vinculados por los siguientes parámetros para los elemen
 
    Defina los servicios que generan los mensajes.
 
-* **Archivo de registro (registrador)**
+<!-- * **Log File (Logging Logger)**
 
-   Defina el archivo físico para almacenar los mensajes de registro.
+  Define the physical file for storing the log messages.
 
-   Se utiliza para vincular un registrador con un grabador de registros. El valor debe ser idéntico al mismo parámetro en la configuración del Escritor de registros para la conexión que se va a realizar.
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
-* **Archivo de registro (escritor de registro)**
+* **Log File (Logging Writer)**
 
-   Defina el archivo físico en el que se escribirán los mensajes de registro.
+  Define the physical file that the log messages will be written to.
 
-   Debe ser idéntico al mismo parámetro en la configuración del Escritor de registro, o no se realizará la coincidencia. Si no hay coincidencia, se creará un Writer implícito con la configuración predeterminada (rotación diaria del registro).
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
+> [!IMPORTANT]
+> Se pueden personalizar si es necesario, aunque la configuración estándar es adecuada para la mayoría de las instalaciones. Sin embargo, si necesita personalizar las configuraciones de registro estándar, asegúrese de hacerlo solo en `dev` entornos.
+
 Algunos registradores y escritores se incluyen en un AEM estándar como instalación de Cloud Service.
 
-El primero es un caso especial, ya que controla tanto los archivos `request.log` como los `access.log` :
+El primero es un caso especial, ya que controla tanto los registros `request` como los `access` :
 
 * El Registrador:
 
@@ -88,8 +92,6 @@ El primero es un caso especial, ya que controla tanto los archivos `request.log`
       (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Escribe los mensajes en `request.log` o `access.log`.
-
-Se pueden personalizar si es necesario, aunque la configuración estándar es adecuada para la mayoría de las instalaciones.
 
 Los otros pares siguen la configuración estándar:
 
@@ -114,6 +116,56 @@ Los otros pares siguen la configuración estándar:
    * Escribe `Warning` mensajes en `../logs/error.log` para el servicio `org.apache.pdfbox`.
 
 * No se vincula a un escritor específico, por lo que creará y utilizará un escritor implícito con la configuración predeterminada (rotación diaria del registro).
+
+Además de los tres tipos de registros presentes en AEM como instancia de servicio de nube (`request`, `access` y `error` registros), hay otro registro para depurar problemas de Dispatcher. Para obtener más información, consulte [Depuración de la configuración](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)de Apache y Dispatcher.
+
+En lo que respecta a las prácticas básicas, se recomienda que se alinee con las configuraciones que existen actualmente en AEM como arquetipo de máquina de servicio en la nube. Estos valores definen diferentes niveles y configuraciones de registro para tipos de entorno específicos:
+
+* para `local dev` y `dev` entornos, establezca el registrador en el nivel **DEBUG** en la variable `error.log`
+* para `stage`, establezca el registrador en el nivel **WARN** en la variable `error.log`
+* para `prod`, establezca el registro en el nivel de **ERROR** en la variable `error.log`
+
+A continuación encontrará ejemplos de cada configuración:
+
+* `dev` entornos:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage` entornos:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod` entornos:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
 
 ## Configuración del nivel de registro {#setting-the-log-level}
 
@@ -153,7 +205,6 @@ Puede definir su propio par Logger/Writer:
 
 1. Cree una nueva instancia de la Configuración de fábrica [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. Especifique el archivo de registro.
    1. Especifique el registrador.
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -167,7 +218,7 @@ Puede definir su propio par Logger/Writer:
 >
 >Al trabajar con Adobe Experience Manager, existen varios métodos para administrar la configuración de dichos servicios.
 
-En determinadas circunstancias, es posible que desee crear un archivo de registro personalizado con un nivel de registro diferente. Puede hacerlo en el repositorio:
+En determinadas circunstancias, es posible que desee crear un registro personalizado con un nivel de registro diferente. Puede hacerlo en el repositorio:
 
 1. Si aún no existe, cree una nueva carpeta de configuración ( `sling:Folder`) para el proyecto `/apps/<*project-name*>/config`.
 1. En `/apps/<*project-name*>/config`, cree un nodo para la nueva configuración del registrador de registros de Sling de Apache:
