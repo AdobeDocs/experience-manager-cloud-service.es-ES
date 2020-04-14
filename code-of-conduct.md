@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1eb3d121d5d52f7212017b3cd3cc200517377aa9
+source-git-commit: 2ca676ed1bd59651c00a83fd28945f6f042ca50a
 translation-type: tm+mt
 
 ---
@@ -45,4 +45,4 @@ Los encargados de la gestión de proyectos que no sigan o apliquen el Código de
 
 ## Atribución
 
-El presente Código de Conducta se adapta a la versión 1.4 del Pacto de [Colaboración](https://contributor-covenant.org), disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Este Código de Conducta se adapta a la versión 1.4 del Pacto de [Colaboración](https://contributor-covenant.org), disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
