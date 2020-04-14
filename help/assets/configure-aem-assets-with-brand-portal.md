@@ -3,7 +3,7 @@ title: Configuración del servicio de nube de AEM Assets con Brand Portal
 description: Configure el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
 
 ---
 
@@ -152,7 +152,7 @@ Asegúrese de que ha realizado los siguientes pasos:
 
 >[!CAUTION]
 >
->Cree sólo una configuración IMS válida. No cree varias configuraciones de IMS.
+>Cree sólo una configuración IMS válida.
 >
 > Asegúrese de que la configuración esté correcta. En caso de que la configuración no esté en buen estado, elimínela y cree una nueva configuración en buen estado.
 
