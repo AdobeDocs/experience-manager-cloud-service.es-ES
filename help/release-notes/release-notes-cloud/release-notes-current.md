@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.4.0
 description: Notas de la versión de Experience Manager para 2020.4.0
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -20,7 +20,7 @@ La fecha de lanzamiento de [!DNL Experience Manager] como servicio de nube 2020.
 Obtenga información sobre las nuevas funciones, mejoras y correcciones de errores de [!DNL Experience Manager Assets] y [!DNL Dynamic Media] en la versión actual.
 
 * [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) admite los casos de uso de distribución de recursos para Experience Manager Assets. [!DNL Brand Portal] ayuda a las organizaciones a satisfacer sus necesidades de marketing mediante la distribución segura de recursos de productos y marcas aprobados a agencias externas, socios, equipos internos y distribuidores para su descarga.
-   * [!DNL Brand Portal] la configuración se completa mediante [!DNL Adobe I/O] la consola.
+   * [!DNL Brand Portal] la configuración se completa mediante [!DNL Adobe I/O] la consola. Consulte [Configuración de Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html).
    * El abastecimiento de recursos en [!DNL Brand Portal] no es compatible aún con [!DNL Experience Manager] el servicio de nube.
 
 * [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) v2.0 funciona [!DNL Experience Manager] como un servicio de nube. [!DNL Adobe Asset Link] facilita la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido mediante la conexión [!DNL Experience Manager Assets] con las aplicaciones de [!DNL Creative Cloud] escritorio [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]y [!DNL Adobe InDesign] a través del panel en la aplicación [!DNL Asset Link] .
@@ -29,7 +29,13 @@ Obtenga información sobre las nuevas funciones, mejoras y correcciones de error
 
 * Los usuarios pueden configurar flujos de trabajo [de](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) postprocesamiento para el inicio automático en la interfaz de usuario [!UICONTROL Propiedades] de la carpeta para jerarquías de carpetas específicas.
    * La interfaz de usuario [!UICONTROL Propiedades] de la carpeta se simplifica, con la nueva ficha Procesamiento [!UICONTROL de] recursos que contiene el perfil de metadatos, el perfil de procesamiento y la nueva configuración del flujo de trabajo de inicio automático.
-   * El cuadro de diálogo de reprocesamiento de recursos permite seleccionar un perfil de procesamiento específico y decidir volver a procesarlo en subcarpetas.
+
+      ![Los perfiles de procesamiento se pueden aplicar fácilmente a las carpetas y todos los recursos cargados a las carpetas se procesan mediante estos perfiles](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * La opción de reprocesamiento de recursos permite seleccionar un perfil de procesamiento específico para volver a procesar los recursos seleccionados por el usuario en las subcarpetas.
+
+      ![Volver a procesar los recursos seleccionados mediante un perfil de procesamiento específico](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]:: Se ha Añadido la configuración de publicación selectiva para que los recursos se publiquen automáticamente solo para previsualización segura. Además, los recursos se pueden publicar explícitamente en Experience Manager sin necesidad de publicarlos en DMS7 para envío de dominio público.
 
 ### Corrección de errores {#assets-bug-fixes}
