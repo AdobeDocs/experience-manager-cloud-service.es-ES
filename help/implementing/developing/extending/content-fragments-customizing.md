@@ -2,7 +2,7 @@
 title: Personalización y ampliación de fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -292,11 +292,9 @@ Cabe señalar que:
 
 * Tareas que podrían requerir un esfuerzo adicional:
 
-   * La creación o eliminación de nuevos elementos no actualizará la estructura de datos de fragmentos simples (según la plantilla Fragmento **** simple).
-
    * Cree nuevas variaciones desde `ContentFragment` para actualizar la estructura de datos.
 
-   * La eliminación de las variaciones existentes no actualizará la estructura de datos.
+   * Al eliminar las variaciones existentes mediante un elemento, `ContentElement.removeVariation()`no se actualizarán las estructuras de datos globales asignadas a la variación. Para garantizar que estas estructuras de datos se mantengan sincronizadas, utilice `ContentFragment.removeVariation()` en su lugar, lo que elimina una variación de forma global.
 
 ## La Content Fragment Management API (API de administración de fragmentos de contenido) del lado del cliente {#the-content-fragment-management-api-client-side}
 
@@ -314,84 +312,18 @@ Consulte lo siguiente:
 
 ## Editar sesiones {#edit-sessions}
 
-Una sesión de edición se inicia cuando el usuario abre un fragmento de contenido en una de las páginas del editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Guardar** o **Cancelar**.
+>[!CAUTION]
+>
+>Tenga en cuenta esta información básica. Se supone que no debe cambiar nada aquí (ya que está marcado como un área ** privada en el repositorio), pero en algunos casos podría ayudar a entender cómo funcionan las cosas bajo el capó.
 
-### Requisitos {#requirements}
+Editar un fragmento de contenido, que puede abarcar varias vistas (= páginas HTML), es atómico. Como estas funciones de edición atómica con varias vistas no son un concepto típico de AEM, los fragmentos de contenido utilizan lo que se denomina sesión *de* edición.
 
-Los requisitos para controlar una sesión de edición son:
+Una sesión de edición se inicia cuando el usuario abre un fragmento de contenido en el editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Guardar** o **Cancelar**.
 
-* Editar un fragmento de contenido, que puede abarcar varias vistas (= páginas HTML), debe ser atómico.
+Técnicamente, todas las ediciones se realizan en contenido *en directo* , al igual que todas las demás ediciones de AEM. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se realiza ninguna acción específica, ya que toda la edición se ejecutó en contenido en *directo* , por lo tanto todos los cambios se mantienen ya. Además, al hacer clic en **Guardar** se activará cierto procesamiento en segundo plano (como la creación de información de búsqueda de texto completo y/o el manejo de recursos de medios mixtos).
 
-* La edición también debe ser *transaccional*; al final de la sesión de edición, los cambios se deben confirmar (guardar) o revertir (cancelar).
-
-* Los casos perimetrales deben gestionarse correctamente; estas situaciones incluyen situaciones como cuando el usuario abandona la página introduciendo una dirección URL manualmente o utilizando la navegación global.
-
-* Debe estar disponible un guardado automático periódico (cada x minutos) para evitar la pérdida de datos.
-
-* Si dos usuarios editan un fragmento de contenido al mismo tiempo, no deben sobrescribir los cambios de los demás.
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* Salida de una página
-
-   * Si hay una sesión de edición presente y los cambios no se han mantenido, se muestra un cuadro de diálogo de confirmación modal para notificar al usuario la pérdida potencial de contenido y permitirle permanecer en la página.
+Existen algunas medidas de seguridad para los casos de borde; por ejemplo, si el usuario intenta salir del editor sin guardar o cancelar la sesión de edición. Además, hay disponible un guardado automático periódico para evitar la pérdida de datos.
+Tenga en cuenta que dos usuarios pueden editar el mismo fragmento de contenido al mismo tiempo y, por lo tanto, sobrescribir los cambios entre sí. Para evitarlo, el fragmento de contenido debe bloquearse mediante la aplicación de la acción de *cierre* de compra de la administración de DAM en el fragmento.
 
 ## Ejemplos {#examples}
 
