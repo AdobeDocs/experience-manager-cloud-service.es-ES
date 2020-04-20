@@ -2,7 +2,7 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
+source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
 
@@ -199,13 +199,7 @@ Como se muestra a continuación, el grupo **AEM-GRP_008** hereda los permisos y 
 
 Para poder acceder a Cloud Manager o a AEM como entornos de servicios en la nube, debe asignarlo a Perfiles del producto Cloud Manager.
 
-El producto Cloud Manager tiene los siguientes perfiles:
-
-* Propietario del negocio
-* Administrador de implementación
-* Administrador de Programas
-* Desarrollador
-* Integraciones
+Consulte Definiciones [de](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) funciones para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas en Cloud Manager.
 
 >[!NOTE]
 >Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte Permisos [basados en](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)roles.
