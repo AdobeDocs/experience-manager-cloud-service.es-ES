@@ -2,7 +2,7 @@
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager como servicio de nube en la API HTTP de Assets
 description: Obtenga información sobre Adobe Experience Manager como compatibilidad con fragmentos de contenido de servicios en la API HTTP de recursos.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -32,6 +32,7 @@ Aunque los componentes [principales de](https://docs.adobe.com/content/help/es-E
 Es cuando se puede utilizar la API REST de Assets. Permite a los desarrolladores acceder a los recursos (por ejemplo, imágenes y fragmentos de contenido) directamente, sin necesidad de incrustarlos primero en una página y entregar su contenido en formato JSON serializado.
 
 >[!NOTE]
+>
 >No es posible personalizar la salida JSON desde la API REST de Assets.
 
 La API de REST de recursos también permite a los desarrolladores modificar contenido mediante la creación, actualización o eliminación de recursos, fragmentos de contenido y carpetas existentes.
@@ -57,7 +58,7 @@ Utiliza el punto final y requiere la ruta del recurso para acceder a él (sin el
 * Debe solicitar:
    * `/api/assets/path/to/asset`
 
-Por ejemplo, para acceder `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Acceso sobre:
@@ -296,7 +297,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones      {#limitations}
+## Restricciones        {#limitations}
 
 Existen algunas limitaciones:
 
@@ -386,7 +387,7 @@ Consulte aquí las referencias de API detalladas:
 
    * [Funciones disponibles](/help/assets/mac-api-assets.md#available-features)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
 Para obtener más información, consulte:
 
