@@ -1,7 +1,7 @@
 ---
-sub-product: Implementación para AEM como servicio de nube
-user-guide-title: Implementación para AEM como servicio de nube
-translation-type: tm+mt
+sub-product: Implementar para AEM as a Cloud Service
+user-guide-title: Implementar para AEM as a Cloud Service
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -9,32 +9,32 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Implementación {#implementing}
 
-+ [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
-+ Uso de Cloud Manager {#using-cloud-manager}
-   + [Administración de entornos](cloud-manager/manage-environments.md)
-   + [Configuración de la canalización de CI/CD](cloud-manager/configure-pipeline.md)
-   + [Implementación del código](cloud-manager/deploy-code.md)
++ [Implementar aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
++ Usar Cloud Manager {#using-cloud-manager}
+   + [Administrar entornos](cloud-manager/manage-environments.md)
+   + [Configurar el canal de CI/CD](cloud-manager/configure-pipeline.md)
+   + [Implementar el código](cloud-manager/deploy-code.md)
    + [Comprender las reglas de calidad de código personalizadas](cloud-manager/custom-code-quality-rules.md)
-   + [Acceso y administración de registros](cloud-manager/manage-logs.md)
-   + [Explicación de las notificaciones](cloud-manager/notifications.md)
-+ Administración del código {#managing-code}
-   + [Administración de versiones del proyecto de Maven](cloud-manager/project-version-handling.md)
-   + [Acceso a Git](cloud-manager/accessing-git.md)
-   + [Integración de Git con Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-+ Desarrollo para AEM as a Cloud Service {#developing}
+   + [Acceder y administrar registros](cloud-manager/manage-logs.md)
+   + [Explicar notificaciones](cloud-manager/notifications.md)
++ Administrar el código {#managing-code}
+   + [Administrar versiones del proyecto de Maven](cloud-manager/project-version-handling.md)
+   + [Acceder a Git](cloud-manager/accessing-git.md)
+   + [Integrar Git con Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
++ Desarrollar para AEM as a Cloud Service {#developing}
    + [Estructura del proyecto de AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Paquete de estructura del repositorio de proyectos de AEM](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
-   + [Búsqueda de contenido e indexación](/help/operations/indexing.md)
+   + [Buscar contenido e indexar](/help/operations/indexing.md)
    + [Directrices de desarrollo de AEM as a Cloud Service](developing/introduction/development-guidelines.md)
-   + [Primeros pasos para el desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
+   + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
    + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
-+ Configuración y ampliación de AEM as a Cloud Service {#configuring-and-extending}
-   + [Ampliación de fragmentos de Experience](developing/extending/experience-fragments.md)
-   + [Configuración de formularios de búsqueda](developing/extending/search-forms.md)
-+ Implementación en AEM as a Cloud Service {#deploying}
-   + [Implementación en AEM as a Cloud Service](deploying/overview.md)
++ Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
+   + [Ampliar fragmentos de Experience](developing/extending/experience-fragments.md)
+   + [Configurar formularios de búsqueda](developing/extending/search-forms.md)
++ Implementar en AEM as a Cloud Service {#deploying}
+   + [Implementar en AEM as a Cloud Service](deploying/overview.md)
 + Dispatcher en la nube {#dispatcher}
    + [Dispatcher en la nube](dispatcher/overview.md)
-   + [Envío de contenido en AEM como servicio de nube](dispatcher/content-delivery.md)
+   + [Enviar contenido en AEM as a Cloud Service](dispatcher/content-delivery.md)
