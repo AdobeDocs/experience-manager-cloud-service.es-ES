@@ -2,7 +2,7 @@
 title: Personalización y ampliación de fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 translation-type: tm+mt
-source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -40,7 +40,7 @@ Según el tipo de fragmento, también se utilizan modelos o la plantilla Fragmen
    * Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento según corresponda.
    >[!NOTE]
    >
-   >Para que pueda mostrar o procesar un fragmento de contenido, su cuenta debe tener permisos de lectura para el modelo.
+   >Para que pueda mostrar o procesar un fragmento de contenido, su cuenta debe tener `read` permisos para el modelo.
 
    >[!CAUTION]
    >
