@@ -3,7 +3,7 @@ title: API de HTTP de Assets
 description: Obtenga información sobre la implementación, el modelo de datos y las características de la API HTTP de Assets. Utilice la API HTTP de Assets para realizar varias tareas en torno a los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## Información general {#overview}
 
-La API HTTP de recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos, incluidos binarios, metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de contenido de AEM. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](content-fragments/content-fragments.md)de contenido.
+La API HTTP de recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos, incluidos binarios, metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de contenido de AEM. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](assets-api-content-fragments.md)de contenido.
 
 Para acceder a la API:
 
@@ -31,13 +31,13 @@ Después del tiempo de [!UICONTROL inactividad], un recurso y sus representacion
 
 Un fragmento [de](content-fragments/content-fragments.md) contenido es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que hay varias diferencias con `standard` los recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
 
-Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](content-fragments/content-fragments.md)HTTP de AEM Assets.
+Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](assets-api-content-fragments.md)HTTP de AEM Assets.
 
 ## modelo Data {#data-model}
 
 La API HTTP de Recursos expone dos elementos principales, carpetas y recursos (para recursos estándar).
 
-Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte Modelos [de datos de fragmento de contenido](content-fragments/content-fragments.md) para obtener más información.
+Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte Modelos [de datos de fragmento de contenido](assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
 
 ### Carpetas {#folders}
 
@@ -66,7 +66,7 @@ En AEM, los recursos contienen los siguientes elementos:
 * Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de PDF o InDesign.
 * Comentarios opcionales
 
-Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](content-fragments/content-fragments.md)HTTP de Recursos AEM.
+Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](assets-api-content-fragments.md)HTTP de Recursos AEM.
 
 En AEM, una carpeta tiene los siguientes componentes:
 
