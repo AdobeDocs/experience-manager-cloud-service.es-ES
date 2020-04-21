@@ -1,13 +1,13 @@
 ---
-title: 'Fragmentos de contenido: eliminar consideraciones'
-description: 'Fragmentos de contenido: eliminar consideraciones'
+title: 'Fragmentos de contenido: Eliminar consideraciones'
+description: 'Fragmentos de contenido: Eliminar consideraciones'
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Fragmentos de contenido: eliminar consideraciones{#content-fragments-delete-considerations}
+# Fragmentos de contenido: Eliminar consideraciones{#content-fragments-delete-considerations}
 
 ## Permisos - Eliminar o no eliminar {#permissions-delete-or-not-delete}
 
@@ -25,11 +25,11 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
    El funcionamiento básico del editor de fragmentos de contenido requiere que se puedan eliminar estos subelementos transitorios. Por ejemplo, al manipular variaciones; también al editar metadatos o administrar el contenido asociado.
 
    * **Caso** de uso: Usuario que necesita editar/actualizar un fragmento de contenido **sin tener permiso para eliminar un fragmento** completo.
-   * **Permisos**: Consulte Permisos requeridos para la funcionalidad del editor solamente. <!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **Permisos**: Consulte [Permisos requeridos solo](#permissions-required-for-editor-functionality-only)para la funcionalidad del editor.
 
 >[!NOTE]
 >
->Cuando un usuario no tiene permisos de eliminación, el editor de fragmentos de contenido funciona en modo de solo *lectura* . <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
+>When a user does not have any Delete permissions, the Content Fragment editor operates in *read-only* mode. <!-- When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode. -->
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ En relación con los permisos de eliminación, los fragmentos de contenido deben
 
 ## Permisos requeridos solo para la funcionalidad del editor {#permissions-required-for-editor-functionality-only}
 
-Para los usuarios que necesiten editar o actualizar un fragmento de contenido, **sin permitirles eliminar un fragmento** completo, se deben asignar permisos específicos, ya que la operación básica del editor de fragmentos de contenido requiere que se puedan eliminar subelementos transitorios.
+Para los usuarios que necesiten editar o actualizar un fragmento de contenido, **sin permitirles eliminar un fragmento completo**, se deben asignar permisos específicos, ya que la operación básica del editor de fragmentos de contenido requiere que se puedan eliminar subelementos transitorios.
 
 Por ejemplo, al manipular variaciones; también al editar metadatos o administrar el contenido asociado.
 
