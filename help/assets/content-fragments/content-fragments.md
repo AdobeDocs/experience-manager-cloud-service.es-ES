@@ -1,22 +1,22 @@
 ---
-title: Uso de fragmentos de contenido
+title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de la página.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
 
-# Uso de fragmentos de contenido{#working-with-content-fragments}
+# Trabajar con fragmentos de contenido{#working-with-content-fragments}
 
 Los fragmentos de contenido de Adobe Experience Manager (AEM) le permiten diseñar, crear, depurar y [publicar contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)independiente de la página. Permiten preparar contenido listo para su uso en varias ubicaciones o en varios canales.
 
-Los fragmentos de contenido también se pueden entregar en formato JSON mediante las funciones de exportación del Modelo de Sling (JSON) de los componentes principales de AEM. Esta forma de entrega:
+Los fragmentos de contenido también se pueden entregar en formato JSON mediante las funciones de exportación del Modelo de Sling (JSON) de los componentes principales de AEM. Esta forma de envío:
 
 * le permite utilizar el componente para administrar qué elementos de un fragmento entregar
-* permite la entrega masiva, agregando varios componentes principales de fragmento de contenido en la página que se está utilizando para la entrega de API
+* permite el envío masivo, agregando varios componentes principales de fragmento de contenido en la página que se está utilizando para el envío de API
 
-Esta y las siguientes páginas explican las tareas para crear, configurar y mantener los fragmentos de contenido:
+Esta y las siguientes páginas cubren las tareas para crear, configurar y mantener los fragmentos de contenido:
 
 * [Administración de fragmentos](/help/assets/content-fragments/content-fragments-managing.md) de contenido: cree sus fragmentos de contenido; a continuación, edite, publique y haga referencia a
 * [Modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmento de contenido: activar, crear y definir sus modelos
@@ -29,47 +29,47 @@ Esta y las siguientes páginas explican las tareas para crear, configurar y mant
 >
 >Estas páginas deben leerse junto con la creación de [páginas con fragmentos](/help/sites-cloud/authoring/fundamentals/content-fragments.md)de contenido.
 
-El número de canales de comunicación aumenta cada año. Normalmente, los canales hacen referencia al mecanismo de entrega, ya sea como:
+El número de canales de comunicación aumenta cada año. Normalmente, los canales hacen referencia al mecanismo de envío, ya sea como:
 
-* Canal físico; Por ejemplo, escritorio, móvil.
-* Forma de entrega en un canal físico; Por ejemplo: &quot;página de detalles del producto&quot;, &quot;página de categoría del producto&quot; para escritorio o &quot;web móvil&quot;, &quot;aplicación móvil&quot; para dispositivos móviles.
+* canal físico; Por ejemplo, escritorio, móvil.
+* Forma de envío en un canal físico; Por ejemplo: &quot;página de detalles del producto&quot;, &quot;página de categoría del producto&quot; para escritorio o &quot;web móvil&quot;, &quot;aplicación móvil&quot; para dispositivos móviles.
 
-Sin embargo, usted (probablemente) no desea utilizar exactamente el mismo contenido para todos los canales; necesita optimizar el contenido según el canal específico.
+Sin embargo, usted (probablemente) no desea utilizar exactamente el mismo contenido para todos los canales; necesita optimizar su contenido según el canal específico.
 
 Los fragmentos de contenido le permiten:
 
-* Considere cómo llegar a las audiencias objetivo de forma eficaz a través de los canales.
-* Cree y administre contenido editorial neutro para el canal.
+* Considere cómo alcanzar audiencias de destinatario de manera eficiente en todos los canales.
+* Cree y gestione contenido editorial neutro para el canal.
 * Cree grupos de contenido para una amplia gama de canales.
 * Diseñar variaciones de contenido para canales específicos.
-* Agregue imágenes al texto insertando recursos (fragmentos de medios mixtos).
+* Añada imágenes al texto insertando recursos (fragmentos de medios mixtos).
 
 Estos fragmentos de contenido se pueden ensamblar para proporcionar experiencias en diversos canales.
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 
-Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
+Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido de AEM desde y hacia AEM más allá del enfoque en las páginas web.
 
-Proporcionan la entrega de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
+Proporcionan el envío de contenido a canales que no son páginas web tradicionales de AEM, utilizando métodos estandarizados que cualquier cliente puede consumir. Estos canales pueden incluir:
 
 * Aplicaciones de una sola página
 * Aplicaciones móviles nativas
 * otros canales y puntos de contacto externos a AEM
 
-La entrega se realiza en formato JSON.
+Envío se realiza en formato JSON.
 
 Los fragmentos de contenido de AEM se pueden utilizar para describir y administrar el contenido estructurado. El contenido estructurado se define en modelos que pueden contener diversos tipos de contenido; incluyendo texto, datos numéricos, booleano, fecha y hora, etc.
 
-Junto con las funciones de exportación JSON de los componentes principales de AEM, este contenido estructurado se puede utilizar para ofrecer contenido de AEM a canales que no sean páginas de AEM.
+Junto con las funciones de exportación JSON de los componentes principales de AEM, este contenido estructurado se puede utilizar para entregar contenido de AEM a canales que no sean páginas de AEM.
 
 >[!NOTE]
 >
->Los **fragmentos de contenido** y los **[fragmentos de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**son funciones distintas de AEM:
+>Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
 >
 >
-Los fragmentos de experiencia pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
 >
 >Para obtener más información, consulte también [Explicación de los fragmentos de contenido y los fragmentos de experiencia en AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
@@ -119,7 +119,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 * Puede [contener imágenes](#fragments-with-visual-assets)o estar conectado a ellas.
 * Puede usar contenido intermedio [cuando se hace referencia a él](#in-between-content-when-page-authoring-with-content-fragments) en una página.
 
-* Son independientes del mecanismo de entrega (es decir, página, canal).
+* Son independientes del mecanismo de envío (es decir, página, canal).
 
 ### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
@@ -143,7 +143,7 @@ Los recursos se pueden utilizar con un fragmento de contenido de varias formas; 
    * Están fácilmente disponibles para su uso (como contenido intermedio) al utilizar el fragmento en una página.
    * Consulte Contenido [asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) para obtener más información.
 
-* Recursos disponibles desde el navegador **** Recursos del editor de páginas
+* Recursos disponibles desde el **explorador de Assets** del editor de páginas
 
    * Permite una flexibilidad total para seleccionar un recurso.
    * Permite cierta flexibilidad en la colocación.
@@ -161,7 +161,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
    * Para fragmentos simples:
 
       * El contenido se incluye en uno o varios campos de texto con varias líneas o elementos.
-      * Los elementos se definen en la plantilla de fragmento (no se pueden definir al crear el fragmento, consulte Plantillas de fragmento de contenido). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * Los elementos se definen en la plantilla de fragmento (no se pueden definir al crear el fragmento).
 
 * **Párrafos de fragmento**
 
@@ -169,7 +169,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 
       * separado por espacios verticales (retorno de carro)
       * en elementos de texto multilínea; en fragmentos simples o estructurados
-   * En los modos Texto [](/help/assets/content-fragments/content-fragments-variations.md#rich-text) enriquecido y [Marcado](/help/assets/content-fragments/content-fragments-variations.md#markdown) , un párrafo se puede formatear como un encabezado, en cuyo caso y el siguiente párrafo se unirán como una unidad.
+   * En los modos [Texto enriquecido](/help/assets/content-fragments/content-fragments-variations.md#rich-text) y [Marcado](/help/assets/content-fragments/content-fragments-variations.md#markdown), un párrafo se puede formatear como un encabezado, en cuyo caso, ese párrafo y el siguiente se unirán como una sola unidad.
 
    * Habilite el control de contenido durante la creación de páginas.
 
@@ -203,7 +203,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 
 * **Metadatos de fragmento**
 
-   * Utilice los esquemas de metadatos de [Recursos](/help/assets/metadata-schemas.md).
+   * Utilice los esquemas [de metadatos de](/help/assets/metadata-schemas.md)Recursos.
    * Las etiquetas se pueden crear cuando:
 
       * Creación y creación del fragmento
@@ -227,7 +227,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 
 * **Variaciones**
 
-   * Representaciones de texto de fragmento específicas para fines editoriales; puede estar relacionado con el canal pero no es obligatorio, también puede ser para modificaciones locales ad-hoc.
+   * Representaciones de texto de fragmento específicas para fines editoriales; puede estar relacionado con el canal pero no es obligatorio, también puede ser para modificaciones locales ad hoc.
    * Se crean como copias de **Master**, pero se pueden editar según sea necesario; normalmente hay superposición de contenido entre las variaciones mismas.
    * Puede definirse durante la creación de fragmentos o predefinirse en plantillas de fragmento.
    * Almacenada en el fragmento, para evitar la dispersión de copias de contenido.
@@ -263,7 +263,7 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
 * **Plantilla de fragmento**
 
    * Necesario para [crear un fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simple.
-   * Generalmente se desarrolla durante la ejecución del proyecto; no se puede crear durante la creación. <!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * Generalmente se desarrolla durante la ejecución del proyecto; no se puede crear durante el proceso de diseño.
    * Define las propiedades básicas de un fragmento simple (título, número de elementos de texto, definiciones de etiquetas).
    * Las definiciones de plantilla requieren un título y un elemento de texto; todo lo demás es opcional. La plantilla define un ámbito mínimo del fragmento y el contenido predeterminado, si corresponde. Los autores pueden extender posteriormente un fragmento más allá de lo definido en la plantilla.
 
@@ -271,7 +271,7 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
 
    * Instrumental para entregar el fragmento en formato HTML o JSON.
    * Necesario para [hacer referencia al fragmento en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * Responsable de la presentación y entrega de un fragmento; es decir, canales.
+   * Responsable de la presentación y el envío de un fragmento; es decir, canales.
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y entregar algunos o todos los elementos/variaciones y el contenido asociado.
    * Al arrastrar un fragmento a una página en la creación, se asociará automáticamente el componente requerido.
 
