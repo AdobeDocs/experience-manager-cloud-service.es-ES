@@ -2,7 +2,7 @@
 title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de la página.
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -94,7 +94,7 @@ Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos d
 Los fragmentos de contenido pueden ser:
 
 * Fragmentos simplesNo tienen una estructura predefinida. Solo contienen texto e imágenes.
-Se basan en la plantilla Fragmento simple.
+Se basan en la plantilla Fragmento **** simple.
 
 * Fragmentos que contienen contenido estructuradoSe basan en un modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)contenido, que predefine una estructura para el fragmento resultante.
 También se pueden usar para realizar los servicios de contenido mediante el exportador JSON.
@@ -161,7 +161,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
    * Para fragmentos simples:
 
       * El contenido se incluye en uno o varios campos de texto con varias líneas o elementos.
-      * Los elementos se definen en la plantilla de fragmento (no se pueden definir al crear el fragmento).
+      * Los elementos se definen en la plantilla Fragmento **** simple.
 
 * **Párrafos de fragmento**
 
@@ -197,7 +197,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
    * Los recursos individuales de la colección están disponibles para utilizarse con el fragmento en el editor de páginas, cuando se añada a una página. Esto significa que son opcionales, según los requisitos del canal específico.
    * Los recursos se [asocian a fragmentos mediante colecciones](/help/assets/content-fragments/content-fragments-assoc-content.md); las colecciones asociadas permiten al autor decidir qué recursos utilizar al crear la página.
 
-      * Las colecciones se pueden asociar a fragmentos mediante plantillas, como contenido predeterminado o por medio de autores durante la creación de fragmentos.
+      * Las colecciones pueden asociarse a fragmentos como contenido predeterminado o por autores durante la creación de fragmentos.
       * [Las colecciones](/help/assets/manage-collections.md) de recursos (DAM) son la base del contenido asociado de los fragmentos.
    * Opcionalmente, también puede agregar el propio fragmento a una colección para facilitar el seguimiento.
 
@@ -229,7 +229,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 
    * Representaciones de texto de fragmento específicas para fines editoriales; puede estar relacionado con el canal pero no es obligatorio, también puede ser para modificaciones locales ad hoc.
    * Se crean como copias de **Master**, pero se pueden editar según sea necesario; normalmente hay superposición de contenido entre las variaciones mismas.
-   * Puede definirse durante la creación de fragmentos o predefinirse en plantillas de fragmento.
+   * Se puede definir durante la creación de fragmentos.
    * Almacenada en el fragmento, para evitar la dispersión de copias de contenido.
    * Las variaciones se pueden [sincronizar](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con el contenido principal si el contenido principal se ha actualizado.
    * Se puede [resumir](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) para truncar rápidamente el texto a una longitud predefinida.
@@ -262,10 +262,8 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
 
 * **Plantilla de fragmento**
 
-   * Necesario para [crear un fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simple.
-   * Generalmente se desarrolla durante la ejecución del proyecto; no se puede crear durante el proceso de diseño.
+   * La plantilla Fragmento **** simple es necesaria para [crear un fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simple.
    * Define las propiedades básicas de un fragmento simple (título, número de elementos de texto, definiciones de etiquetas).
-   * Las definiciones de plantilla requieren un título y un elemento de texto; todo lo demás es opcional. La plantilla define un ámbito mínimo del fragmento y el contenido predeterminado, si corresponde. Los autores pueden extender posteriormente un fragmento más allá de lo definido en la plantilla.
 
 * **Componente de fragmento de contenido**
 
