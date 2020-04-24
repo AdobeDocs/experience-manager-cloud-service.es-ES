@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ Los otros pares siguen la configuración estándar:
 
    * Escribe `Warning` mensajes en `../logs/error.log` para el servicio `org.apache.pdfbox`.
 
-* No se vincula a un escritor específico, por lo que creará y utilizará un escritor implícito con la configuración predeterminada (rotación diaria del registro).
+* No se vincula a un escritor específico, por lo que creará y utilizará un escritor implícito con la configuración predeterminada.
 
 **AEM como servicio de nube Registro de solicitudes HTTP**
 
@@ -96,7 +96,7 @@ Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
 
 Ejemplo de salida:
 
-**Registro de acceso de solicitudes y respuestas HTTP de AEM**
+**AEM como servicio de nube Solicitud HTTP / Registro de acceso de respuesta**
 
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
@@ -183,7 +183,7 @@ Estos elementos están vinculados por los siguientes parámetros para los elemen
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## Configuración del nivel de registro {#setting-the-log-level}
+### Configuración del nivel de registro {#setting-the-log-level}
 
 Para cambiar los niveles de registro de los entornos de nube, se debe modificar la configuración de OSGI de registro de Sling, seguida de una reimplementación completa. Dado que esto no es instantáneo, tenga cuidado de habilitar los registros detallados en entornos de producción que reciben mucho tráfico. En el futuro, es posible que haya mecanismos para cambiar más rápidamente el nivel de registro.
 
@@ -191,7 +191,7 @@ Para cambiar los niveles de registro de los entornos de nube, se debe modificar 
 >
 > Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia de AEM como servicio de nube. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como un servicio](/help/implementing/deploying/overview.md)de nube.
 
-### Activación del nivel de registro DEBUG {#activating-the-debug-log-level}
+**Activación del nivel de registro DEBUG**
 
 >[!WARNING]
 >
