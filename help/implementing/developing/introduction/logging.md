@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,19 +90,19 @@ Los otros pares siguen la configuración estándar:
 
 * No se vincula a un escritor específico, por lo que creará y utilizará un escritor implícito con la configuración predeterminada (rotación diaria del registro).
 
-### AEM como servicio de nube Registro de solicitudes HTTP {#request-logging}
+**AEM como servicio de nube Registro de solicitudes HTTP**
 
 Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
 
 Ejemplo de salida:
 
-### Registro de acceso de solicitud y respuesta HTTP de AEM {#access-logging}
+**Registro de acceso de solicitud y respuesta HTTP de AEM**
 
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
 Ejemplo de salida:
 
-### Registro de Apache Web Server / Dispatcher {#dispatcher-logging}
+**Registro de Apache Web Server / Dispatcher**
 
 Es un registro que se utiliza para depurar problemas de Dispatcher. Para obtener más información, consulte [Depuración de la configuración](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)de Apache y Dispatcher.
 
