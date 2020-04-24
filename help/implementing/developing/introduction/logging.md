@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
@@ -96,7 +96,7 @@ Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
 
 Ejemplo de salida:
 
-**Registro de acceso de solicitud y respuesta HTTP de AEM**
+**Registro de acceso de solicitudes y respuestas HTTP de AEM**
 
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
