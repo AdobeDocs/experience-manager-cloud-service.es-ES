@@ -2,12 +2,28 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
+source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
 
 ---
 
 
 # Registro{#logging}
+
+AEM como servicio de nube es una plataforma para que los clientes incluyan código personalizado para crear experiencias únicas para su base de clientes. Teniendo esto en cuenta, el registro es una función crítica para depurar código personalizado en entornos de nube y, más particularmente, en entornos de desarrollo locales.
+
+
+<!-- ## Global Logging {#global-logging}
+
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
+
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
+
+## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
 
 AEM como servicio de nube le oferta la posibilidad de configurar:
 
@@ -23,50 +39,7 @@ En los entornos de Cloud, los desarrolladores pueden descargar registros a trav�
 >
 >El inicio de sesión en AEM como servicio de nube se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
 
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## Registros y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
-
-Además de la configuración de registro global, AEM como servicio de nube le permite configurar opciones específicas para un servicio individual:
-
-* el nivel de registro específico
-* el registrador (el servicio OSGi que proporciona los mensajes de registro)
-
-Esto le permite canal los mensajes de registro de un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o la realización de pruebas; por ejemplo, cuando necesita un nivel de registro mayor para un servicio específico.
-
-AEM como servicio de nube utiliza lo siguiente para escribir mensajes de registro en el archivo:
-
-1. Un servicio **** OSGi (registrador) escribe un mensaje de registro.
-1. Un **registrador** toma este mensaje y lo formatea según sus especificaciones.
-1. Un **escritor** de registro escribe todos estos mensajes en el archivo físico que ha definido.
-
-Estos elementos están vinculados por los siguientes parámetros para los elementos apropiados:
-
-* **Registrador (registrador)**
-
-   Defina los servicios que generan los mensajes.
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
+## AEM como servicio de nube Registro de Java {#aem-as-a-cloud-service-java-logging}
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
@@ -117,7 +90,25 @@ Los otros pares siguen la configuración estándar:
 
 * No se vincula a un escritor específico, por lo que creará y utilizará un escritor implícito con la configuración predeterminada (rotación diaria del registro).
 
-Además de los tres tipos de registros presentes en AEM como instancia de servicio de nube (`request`, `access` y `error` registros), hay otro registro para depurar problemas de Dispatcher. Para obtener más información, consulte [Depuración de la configuración](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)de Apache y Dispatcher.
+### AEM como servicio de nube Registro de solicitudes HTTP {#request-logging}
+
+Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
+
+Ejemplo de salida:
+
+### Registro de acceso de solicitud y respuesta HTTP de AEM {#access-logging}
+
+Cada solicitud de acceso se registra aquí junto con la respuesta.
+
+Ejemplo de salida:
+
+### Registro de Apache Web Server / Dispatcher {#dispatcher-logging}
+
+Es un registro que se utiliza para depurar problemas de Dispatcher. Para obtener más información, consulte [Depuración de la configuración](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)de Apache y Dispatcher.
+
+<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
+
+leftover text from the last breakaway chunk (re dispatcher) -->
 
 En lo que respecta a las prácticas básicas, se recomienda que se alinee con las configuraciones que existen actualmente en AEM como arquetipo de máquina de servicio en la nube. Estos valores definen diferentes niveles y configuraciones de registro para tipos de entorno específicos:
 
@@ -133,11 +124,8 @@ A continuación encontrará ejemplos de cada configuración:
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 
@@ -147,11 +135,8 @@ A continuación encontrará ejemplos de cada configuración:
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 * `prod` entornos:
@@ -160,12 +145,43 @@ A continuación encontrará ejemplos de cada configuración:
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
+
+### Registros y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
+
+Además de la configuración de registro global, AEM como servicio de nube le permite configurar opciones específicas para un servicio individual:
+
+* el nivel de registro específico
+* el registrador (el servicio OSGi que proporciona los mensajes de registro)
+
+Esto le permite canal los mensajes de registro de un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o la realización de pruebas; por ejemplo, cuando necesita un nivel de registro mayor para un servicio específico.
+
+AEM como servicio de nube utiliza lo siguiente para escribir mensajes de registro en el archivo:
+
+1. Un servicio **** OSGi (registrador) escribe un mensaje de registro.
+1. Un **registrador** toma este mensaje y lo formatea según sus especificaciones.
+1. Un **escritor** de registro escribe todos estos mensajes en el archivo físico que ha definido.
+
+Estos elementos están vinculados por los siguientes parámetros para los elementos apropiados:
+
+* **Registrador (registrador)**
+
+   Defina los servicios que generan los mensajes.
+
+<!-- * **Log File (Logging Logger)**
+
+  Define the physical file for storing the log messages.
+
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
+
+* **Log File (Logging Writer)**
+
+  Define the physical file that the log messages will be written to.
+
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ## Configuración del nivel de registro {#setting-the-log-level}
 
@@ -403,3 +419,70 @@ En determinadas circunstancias, es posible que desee crear un registro personali
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 La consola de Felix también proporciona información sobre la compatibilidad con el registro de Sling en `../system/console/slinglog`; por ejemplo `https://localhost:4502/system/console/slinglog`.draf
+
+## Acceder y administrar registros {#manage-logs}
+
+Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
+
+Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** .
+
+![](assets/manage-logs1.png)
+
+O bien, la página **Entornos** :
+
+![](assets/manage-logs2.png)
+
+>[!Note]
+>Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
+
+![](assets/manage-logs3.png)
+
+
+### Registros a través de API {#logs-thorugh-api}
+
+Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
+
+Por ejemplo, para descargar los archivos de registro de un entorno específico, el comando sería algo más que las líneas de
+
+```java
+$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
+```
+
+El siguiente comando permite el ajuste de registros:
+
+```java
+$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
+```
+
+Para obtener el ID de entorno (1884 en este caso) y las opciones de nombre de registro o servicio disponibles, puede utilizar:
+
+```java
+$ aio cloudmanager:list-environments
+Environment Id Name                     Type  Description                          
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
+ 
+ 
+$ aio cloudmanager:list-available-log-options 1884
+Environment Id Service    Name         
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
+```
+
+>[!Note]
+>Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
+
+### Recursos adicionales {#resources}
+
+Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
+
+* [Documentación de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
