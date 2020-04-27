@@ -1,8 +1,8 @@
 ---
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -255,19 +255,21 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
    * [El modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) y la barra de herramientas
    A continuación, seleccione el icono de la página **Copiar**:
 
-   ![Botón Copiar](/help/sites-cloud/authoring/assets/copy.png)
+   ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >Si se encuentra en el modo de selección, se saldrá del mismo automáticamente en cuanto se copie la página.
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. Utilice el icono **Pegar** de la página:
+1. El icono **Pegar** está disponible con una flecha desplegable directamente a la derecha:
 
-   ![Botón Pegar](/help/sites-cloud/authoring/assets/paste.png)
+   ![Pegar](/help/sites-cloud/authoring/assets/paste.png)
 
-   Se crea una copia de la página original y de las páginas secundarias en esta ubicación.
+   Puede:
 
+   1. Seleccione el icono **Pegar** página: En esta ubicación se creará una copia de la página original y de las páginas secundarias.
+   1. Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios** . Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
    >[!NOTE]
    >
    >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
@@ -336,7 +338,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
 >[!NOTE]
 >
->Si la página ya se había publicado, la acción de mover la página provocará que se cancele su publicación automáticamente. De forma predeterminada, se vuelve a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
+>Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se vuelve a publicar una vez finalizado su desplazamiento, pero esto puede cambiar si se desmarca el campo **Volver a publicar** en el paso **Ajustar/volver a publicar**.
 
 >[!NOTE]
 >
