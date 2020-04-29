@@ -1,8 +1,8 @@
 ---
 title: Consolas de herramientas
 description: Obtenga información sobre las distintas consolas de herramientas en AEM.
-translation-type: ht
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+translation-type: tm+mt
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ Se puede acceder a estas consolas desde el [panel Herramientas de navegación gl
 >Dado que las tarjetas de la interfaz de usuario proporcionan detalles sobre el propósito de cada opción, esta tabla simplemente proporciona una referencia rápida sobre la ubicación de las funciones en el panel Herramientas.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>Sección</td>
    <td>Opción</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>General</td>
    <td> </td>
