@@ -1,13 +1,13 @@
 ---
-title: Configuración de formularios de búsqueda
+title: Configurar formularios de búsqueda
 description: Configuración de formularios de búsqueda para Adobe Experience Manager como un servicio de nube.
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
 
-# Configuración de formularios de búsqueda {#configuring-search-forms}
+# Configurar formularios de búsqueda {#configuring-search-forms}
 
 Adobe Experience Manager como servicio de nube incluye un potente mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
 
@@ -17,7 +17,7 @@ En combinación con esto, también hay un conjunto de opciones predefinidas para
 
 Juntos, estos objetivos le ayudan a localizar su contenido de forma rápida y sencilla desde:
 
-* [Búsqueda y filtro](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [Buscar y filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [Selector de raíl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 * el [navegador](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) de recursos (al editar páginas)
 
@@ -93,7 +93,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Análisis</td>
-   <td>Funciones de búsqueda/filtro en el navegador Sitios al mostrar datos con alimentación de análisis. Los filtros de búsqueda de Analytics se cargan para coincidir con las columnas de análisis personalizado asignadas.</td>
+   <td>Funciones de búsqueda/filtro en el navegador Sitios al mostrar datos con alimentación de análisis. Los filtros de búsqueda de Analytics se cargan para coincidir con las columnas de análisis personalizados asignadas.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -112,7 +112,7 @@ Los siguientes predicados están disponibles, según la configuración:
    </td>
   </tr>
   <tr>
-   <td>Creación</td>
+   <td>Autor</td>
    <td>Buscar según el autor.</td>
    <td>
     <ul>
@@ -157,7 +157,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Intervalo de fechas</td>
-   <td>Busque recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de inicio y finalización.</td>
+   <td>Busque recursos creados dentro de un intervalo especificado para una propiedad de fecha. En el panel Buscar, puede especificar las fechas de Inicio y finalización.</td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -267,7 +267,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Opciones</td>
-   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Adición de un predicado</a> de opciones para obtener más información.</p> </td>
+   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Añadir un predicado</a> de opciones para obtener más información.</p> </td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -529,7 +529,7 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
 * **Valor de propiedad**
 
-   El valor de propiedad como una cadena absoluta o como lenguaje de expresión; por ejemplo, `cq:Page` o
+   El valor de la propiedad como una cadena absoluta o como lenguaje de expresión; por ejemplo, `cq:Page` o
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
@@ -572,7 +572,7 @@ Según el predicado, hay una selección de opciones disponibles para la configur
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### Agregar o editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
+### Añadir/editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puede agregar o editar campos y definir o actualizar su configuración:
 
@@ -598,20 +598,20 @@ Puede agregar o editar campos y definir o actualizar su configuración:
 
 ### Vista preliminar de la configuración de búsqueda {#previewing-the-search-configuration}
 
-1. Seleccione el icono Vista previa:
+1. Seleccione el icono de Previsualización:
 
-   ![icono de vista previa](assets/csf-preview-icon.png)
+   ![Icono de previsualización](assets/csf-preview-icon.png)
 
 1. Esto mostrará los formularios de búsqueda tal como se mostrarán (completamente expandidos) en la columna Buscar de la consola adecuada.
 
-   ![formulario de vista previa](assets/csf-preview-form.png)
+   ![Formulario de previsualización](assets/csf-preview-form.png)
 
-1. **Cierre** la vista previa para volver y finalizar la configuración.
+1. **Cierre** la previsualización para volver y finalizar la configuración.
 
 ### Eliminación de un campo predicado {#deleting-a-predicate-field}
 
 1. [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.
-1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y seleccione el icono **Eliminar** (abajo a la izquierda).
+1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y, a continuación, seleccione el icono **Eliminar** (abajo a la izquierda).
 
    ![icono Eliminar](assets/csf-delete-icon.png)
 
@@ -635,7 +635,7 @@ La eliminación de una configuración personalizada se realiza desde la consola:
 
 1. Se eliminará la configuración personalizada y se restablecerá la configuración predeterminada (esto se indica con la reaparición del símbolo de cerrojo en la consola).
 
-### Adición de predicados de opciones {#adding-options-predicates}
+### Predicados de opciones de Añada {#adding-options-predicates}
 
 Los predicados de opciones (Opciones, Propiedad de opciones) permiten configurar un elemento que se va a buscar. Normalmente se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de página.
 
@@ -671,7 +671,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    * **Nombre de propiedad**
 
-      Especifique la propiedad node que se buscará en los nodos de destino. Por ejemplo:
+      Especifique la propiedad node que se buscará en los nodos destinatario. Por ejemplo:
 
       `jcr:content/cq:template`
 
@@ -690,14 +690,16 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
 ## Permisos de usuario {#user-permissions}
 
-En la tabla siguiente se muestran los permisos necesarios para realizar acciones de edición, eliminación y vista previa en formularios de búsqueda.
+La siguiente tabla lista los permisos necesarios para realizar acciones de edición, eliminación y previsualización en los formularios de búsqueda.
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>Acción</strong></td>
    <td><strong>Permisos </strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>Editar </td>
    <td>Permisos de lectura y escritura en el <code>/apps </code>nodo.</td>
