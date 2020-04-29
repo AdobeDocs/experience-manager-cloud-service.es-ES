@@ -1,15 +1,15 @@
 ---
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # Fragmentos de contenido {#content-fragments}
 
-Los fragmentos de contenido de Adobe Experience Manager (AEM)[ se crean y administran como recursos independientes de las páginas](/help/assets/content-fragments/content-fragments.md).
+Los fragmentos de contenido de Adobe Experience Manager (AEM) como servicio de nube se [crean y administran como recursos](/help/assets/content-fragments/content-fragments.md)independientes de las páginas.
 
 Permiten crear contenido neutro con respecto al canal, así como variaciones (posiblemente específicas del canal). Después se pueden usar estos fragmentos, y sus variaciones, al crear páginas de contenido.
 
@@ -68,7 +68,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    >Para obtener más información sobre otras funciones de edición, consulte también:
    >
    >    * [Diseño adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Editar el contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >    * [Edición del contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selección del elemento o la variación {#selecting-the-element-or-variation}
@@ -90,7 +90,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
    >Los elementos disponibles dependen de la plantilla utilizada.
 
 * **Variación**
-   * Siempre aparecerá disponible la opción predeterminada **Principal**.
+   * **Principal** siempre aparecerá como la opción predeterminada.
    * Podrá realizar una selección si se crearon variaciones para el fragmento.
 * **Párrafos**: especifique el rango de párrafos que incluir:
    * **Todos**
@@ -143,7 +143,7 @@ Para el contenido intermedio puede:
 
 ### Uso de contenido asociado   {#using-associated-content}
 
-Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) al [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado actúa como fuente especial de contenido para el [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
