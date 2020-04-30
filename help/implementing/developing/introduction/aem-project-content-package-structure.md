@@ -2,7 +2,7 @@
 title: Estructura del proyecto de AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 57a5b6b80097938dd63a73734676ff374db3ecce
+source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
 
 ---
 
@@ -69,15 +69,13 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
          + Grupos
          + ACL (permisos)
             + Cualquiera `rep:policy` para cualquier ruta (mutable o inmutable)
-+ El `ui.content` paquete, o paquete de contenido, contiene todo el contenido y la configuración. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
++ El `ui.content` paquete, o paquete de contenido, contiene todo el contenido y la configuración. El paquete de contenido contiene todo lo que no se encuentra en el `ui.apps` paquete, o en otras palabras, cualquier cosa que no esté en `/apps` o `/oak:index`. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
    + Configuraciones según el contexto
       + `/conf`
    + Estructuras de contenido complejas y requeridas (por ejemplo: Generación de contenido que se basa en estructuras de contenido de línea de base definidas en la opción de repo y que se extiende más allá de ellas.
       + `/content`, `/content/dam`, etc.
    + Etiquetado de taxonomías gobernadas
       + `/content/cq:tags`
-   + Índices de roble
-      + `/oak:index`
    + Nodos preexistentes de Etc
       + `/etc`
 + El paquete `all` es un paquete de contenedor que SOLAMENTE incluye los paquetes `ui.apps` y `ui.content` como incrustaciones. El paquete `all` no debe tener **ningún contenido** propio, sino delegar toda la implementación en el repositorio a sus subpaquetes.
