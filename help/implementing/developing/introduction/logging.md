@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -23,7 +23,7 @@ AEM como servicio de nube es una plataforma para que los clientes incluyan códi
 * the format to be used when writing the log messages
 -->
 
-## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
+## AEM como registro de servicios en la nube {#aem-as-a-cloud-service-logging}
 
 AEM como servicio de nube le oferta la posibilidad de configurar:
 
@@ -422,67 +422,4 @@ La consola de Felix también proporciona información sobre la compatibilidad co
 
 ## Acceder y administrar registros {#manage-logs}
 
-Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
-
-Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** .
-
-![](assets/manage-logs1.png)
-
-O bien, la página **Entornos** :
-
-![](assets/manage-logs2.png)
-
->[!Note]
->Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
-
-![](assets/manage-logs3.png)
-
-
-### Registros a través de API {#logs-thorugh-api}
-
-Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
-
-Por ejemplo, para descargar los archivos de registro de un entorno específico, el comando sería algo más que las líneas de
-
-```java
-$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
-```
-
-El siguiente comando permite el ajuste de registros:
-
-```java
-$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
-```
-
-Para obtener el ID de entorno (1884 en este caso) y las opciones de nombre de registro o servicio disponibles, puede utilizar:
-
-```java
-$ aio cloudmanager:list-environments
-Environment Id Name                     Type  Description                          
-1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
-1884           FoundationInternal_stage stage Foundation Internal STAGE environment
-1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
- 
- 
-$ aio cloudmanager:list-available-log-options 1884
-Environment Id Service    Name         
-1884           author     aemerror     
-1884           author     aemrequest   
-1884           author     aemaccess    
-1884           publish    aemerror     
-1884           publish    aemrequest   
-1884           publish    aemaccess    
-1884           dispatcher httpderror   
-1884           dispatcher aemdispatcher
-1884           dispatcher httpdaccess
-```
-
->[!Note]
->Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
-
-### Recursos adicionales {#resources}
-
-Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
-
-* [Documentación de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+Para obtener información sobre cómo acceder y administrar registros, consulte la documentación [de](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
