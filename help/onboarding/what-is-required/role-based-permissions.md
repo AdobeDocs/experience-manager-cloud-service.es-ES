@@ -2,35 +2,37 @@
 title: Permisos basados en roles
 description: Permisos basados en roles
 translation-type: tm+mt
-source-git-commit: a1b4feced2dd8becc74383fe8a3b835bde7159d2
+source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
 
 ---
 
 
 # Permisos basados en roles {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] tiene funciones preconfiguradas con los permisos adecuados. Por ejemplo, un desarrollador desarrolla código y tiene permiso para insertar el código en el repositorio **Git**. Como alternativa, un propietario de una empresa tiene permisos diferentes que les permiten definir los Indicadores de rendimiento clave (KPI) y aprobar las implementaciones.
+[!UICONTROL Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. ] Por ejemplo, un desarrollador desarrolla código y tiene permiso para insertar el código en el repositorio **Git**. Como alternativa, un propietario de una empresa tiene permisos diferentes que les permiten definir los Indicadores de rendimiento clave (KPI) y aprobar las implementaciones.
 
 ## Permisos de usuario {#user-permissions}
 
-Cada función tiene permisos específicos, tareas preconfiguradas o permisos asociados a cada función. Esta tabla enumera las funciones disponibles y las funciones que pueden ejecutar la función.
+Cada una de las funciones tiene permisos específicos, tareas preconfiguradas o permisos asociados a cada función. Esta tabla lista las funciones disponibles y las funciones que pueden ejecutar la función.
 
-| Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programas | Desarrollador |
+| Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programa | Desarrollador |
 |--- |--- |--- |--- |--- |--- |
-| Agregar programa | Agregar un nuevo programa. | x |  |  |  |
-| Crear entorno | Cree Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
-| Entorno de actualización | Actualice Los Entornos Prod+Stage, Dev Y Playground. | x | x |  |  |
-| Eliminar entorno | Elimine Entornos No Prod, Dev Y Playground. | x | x |  |  |
-| Eliminar entorno | Eliminar Entorno Prod+Stage. |  |  |  |  |
-| Configuración del programa | Configurar el programa (incluidos los KPI). | x |  |  |  |
-| Configuración del programa | Obtener acceso de confirmación. |  | x |  | x |
+| Añadir Programa | Añadir un nuevo Programa. | x |  |  |  |
+| Crear Entorno | Crear Entornos Prod+Stage, Dev y Playground. | x | x |  |  |
+| Actualizar Entorno | Actualice los Entornos Prod+Stage, Dev y Playground. | x | x |  |  |
+| Eliminar Entorno | Elimine Entornos No Prod, Dev Y Playground. | x | x |  |  |
+| Eliminar Entorno | Eliminar Entorno Prod+Stage. |  |  |  |  |
+| Configuración de Programa | Configurar Programas (incluidos KPI). | x |  |  |  |
+| Configuración de Programa | Obtener acceso de confirmación. |  | x |  | x |
 | Configuración de tubería | Configurar o editar tubería. |  | x |  |  |
-| Ejecución de canalización | Inicie la canalización. | x | x |  |  |
+| Ejecución de canalización | Inicio de la tubería. | x | x |  |  |
 | Ejecución de canalización | Rechazar o aprobar errores importantes de tres niveles. | x | x | x |  |
 | Ejecución de canalización | Proporcione la aprobación de GoLive. | x | x | x |  |
 | Ejecución de canalización | Programar la implementación de producción. | x | x | x |  |
 | Ejecución de canalización | Reanudar tubería de producción. |  |  |  |  |
-| Administrar entorno | Agregue el segmento Publish-Dispatcher desde la pantalla Administrar entorno. | x | x |  |  |  |
-| Actualización push | Iniciar la canalización de actualización push. |  |  |  |  |
-| Generar token de acceso personal | Acceso a Git. |  | x |  | x |
+| Eliminación de tubería | Permite la eliminación de una canalización. |  | x |  |  |
+| Cancelación de ejecución | Cancelar ejecución actual. |  | x |  |  |
+| Administrar Entorno | Añada el segmento Publish-Dispatcher desde la pantalla Administrar Entorno. | x | x |  |  |  |
+| Actualización push | Canalización de actualización de Inicio Push. |  |  |  |  |
+| Generar Token de acceso personal | Acceso a Git. |  | x |  | x |
 
