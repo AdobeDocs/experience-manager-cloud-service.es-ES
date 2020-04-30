@@ -2,7 +2,7 @@
 title: Estructura del proyecto de AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
          + Grupos
          + ACL (permisos)
             + Cualquiera `rep:policy` para cualquier ruta (mutable o inmutable)
-+ El `ui.content` paquete, o paquete de contenido, contiene todo el contenido y la configuración. Los elementos comunes del `ui.content` paquete incluyen, entre otros:
++ El `ui.apps` paquete, o paquete de código, contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros: <!-- GRANITE-29128 -->
    + Configuraciones según el contexto
       + `/conf`
    + Estructuras de contenido complejas y requeridas (por ejemplo: Generación de contenido que se basa en estructuras de contenido de línea de base definidas en la opción de repo y que se extiende más allá de ellas.
@@ -144,7 +144,7 @@ El vocabulario completo para los scripts Repo Init está disponible en la docume
 
 >[!TIP]
 >
->Consulte la sección [Recortes](#snippet-repo-init) de inicio de la repo más abajo para ver un fragmento completo.
+>Para ver un fragmento completo, consulte la sección Recortes [de inicio de](#snippet-repo-init) repo más abajo.
 
 ## Paquete de estructura de repositorio {#repository-structure-package}
 
@@ -560,7 +560,7 @@ En el `all/pom.xml` complemento agregue el `maven-clean-plugin` complemento que 
 </plugins>
 ```
 
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
 + [Administración de paquetes con Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
 + [Complemento Maven del paquete de contenido de FileVault](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
