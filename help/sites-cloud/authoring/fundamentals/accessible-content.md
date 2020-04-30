@@ -2,14 +2,14 @@
 title: Creación de contenido accesible para Adobe Experience Manager como servicio de nube (conformidad con WCAG 2.1)
 description: Ayude a que las personas con discapacidades puedan acceder al contenido web y utilizarlo
 translation-type: tm+mt
-source-git-commit: 6d905c5a29b71c9d05dba910a20ffef21a4eceec
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
 
 # Crear contenido accesible (Conformidad con WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-Las Directrices de Accesibilidad al Contenido [Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), elaboradas por [un grupo de trabajo del World Wide Wec Consortium](https://www.w3.org/Consorcio/actividades#Accessibility_Guidelines_Working_Group), consisten en un conjunto de directrices y criterios de éxito independientes de la tecnología para ayudar a las personas con discapacidad a tener acceso al contenido web y utilizarlos.
+Las Directrices de Accesibilidad al Contenido [Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), elaboradas por [un grupo de trabajo del consorcio](https://www.w3.org/Consorcio/actividades#Accessibility_Guidelines_Working_Group)World Wide Wec, consisten en un conjunto de directrices y criterios de éxito independientes de la tecnología para ayudar a las personas con discapacidad a tener acceso al contenido web y utilizarlos.
 
 Como introducción, el consorcio ofrece una serie de secciones y documentos de apoyo:
 
