@@ -2,25 +2,22 @@
 title: Cambios notables en Recursos Adobe Experience Manager como servicio de nube
 description: Cambios notables en Recursos Adobe Experience Manager en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
 
 # Notable changes to Experience Manager Assets as a Cloud Service {#notable-changes}
 
-Adobe Experience Manager como servicio de nube ofrece muchas funciones y posibilidades nuevas para administrar sus proyectos de AEM. Sin embargo, existen muchas diferencias entre Experience Manager Assets in situ o en Adobe Managed Service en comparación con Experience Manager como un servicio de nube. Este documento destaca las diferencias fundamentales.
-
->[!NOTE]
->
->Este documento destaca los cambios notables que son específicos de Experience Manager Assets como servicio de nube. Consulte los [cambios genéricos realizados en Experience Manager como un servicio](/help/release-notes/aem-cloud-changes.md)de nube.
+Adobe Experience Manager como servicio de nube ofrece muchas funciones y posibilidades nuevas para administrar sus proyectos de AEM. Sin embargo, existen muchas diferencias entre Experience Manager Assets in situ o en Adobe Managed Service en comparación con Experience Manager como un servicio de nube. Este documento destaca las importantes diferencias que existen entre las capacidades de Recursos. Para ver otros cambios, consulte los [cambios genéricos a Experience Manager como un servicio](/help/release-notes/aem-cloud-changes.md)de nube.
 
 Las principales diferencias en comparación con Experience Manager 6.5 se encuentran en las siguientes áreas:
 
-* [Ingesta de recursos](#asset-ingestion)
-* [Eliminación de la IU clásica](#classic-ui)
+* [Carga](#asset-ingestion)e ingesta de recursos.
+* [Microservicios de recursos para procesamiento](#asset-microservices)en la nube.
+* [Eliminación de la IU clásica](#classic-ui).
 
-## Ingesta de recursos {#asset-ingestion}
+## Carga e ingestión de recursos {#asset-ingestion}
 
 La carga de recursos se ha optimizado para lograr una mayor eficacia al permitir una mejor ampliación de la ingesta de recursos y cargas más rápidas. Se han actualizado las capacidades del producto (interfaces de usuario web, clientes de escritorio). Sin embargo, esto puede afectar a algunas personalizaciones existentes.
 
@@ -34,12 +31,14 @@ La carga de recursos se ha optimizado para lograr una mayor eficacia al permitir
 
 Las representaciones estándar generadas con los microservicios de recursos se almacenan de forma compatible con versiones anteriores en los nodos del repositorio de recursos (las mismas convenciones de nombres).
 
-## Desarrollar y probar microservicios de activos {#developing-testing-asset-microservices}
+## Desarrollar y probar microservicios de activos {#asset-microservices}
 
-Asset microservices es un servicio en la nube nativo que se aprovisiona automáticamente y se envía por cable a Experience Manager en programas de clientes y entornos administrados en Cloud Manager. Los desarrolladores que trabajen para ampliar Experience Manager o para realizar personalizaciones pueden utilizar el contenido existente (o los recursos con representaciones generadas en un entorno en la nube) para probar y validar su código mediante, mostrar y descargar recursos.
+Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios en la nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la transcodificación de ImageMagick y FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan una funcionalidad lista para usar para tipos de archivos comunes. Actualmente, la integración de ImageMagick y la transcodificación FFMmpeg no están disponibles en el servicio de nube.
 
-Para realizar una validación completa del código y del proceso, incluida la ingesta y el procesamiento de recursos, implemente los cambios de código en un entorno de desarrollo en la nube mediante la canalización y realice pruebas con la ejecución completa del procesamiento de los microservicios de recursos.
+Asset microservices es un servicio nativo de la nube que se aprovisiona automáticamente y se envía por cable a Experience Manager en programas y entornos de clientes administrados en Cloud Manager. Para ampliar o personalizar Experience Manager, los desarrolladores pueden utilizar el contenido o los recursos existentes con las representaciones generadas en un entorno en la nube para probar y validar su código mediante, mostrar y descargar recursos.
+
+Para realizar una validación completa del código y del proceso, incluida la ingesta y el procesamiento de recursos, implemente los cambios de código en un entorno de desarrollo en la nube mediante [la canalización](/help/implementing/cloud-manager/configure-pipeline.md) y la prueba con la ejecución completa del procesamiento de los microservicios de recursos.
 
 ## Eliminación de la IU clásica {#classic-ui}
 
-La IU clásica ya no está disponible en Experience Manager como servicio de nube.
+La IU clásica ya no está disponible en Experience Manager como servicio de nube. La interfaz estándar es la IU táctil.
