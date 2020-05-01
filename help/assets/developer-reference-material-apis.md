@@ -3,7 +3,7 @@ title: 'API de recursos para la administración de recursos digitales en Adobe E
 description: Las API de recursos permiten operaciones básicas de creación, lectura, actualización y eliminación (CRUD) para administrar recursos, incluidos binarios, metadatos, representaciones, comentarios y fragmentos de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -40,7 +40,7 @@ Las diferencias importantes en comparación con versiones anteriores de AEM incl
 Este método debería proporcionar una gestión más escalable y eficaz de las cargas de recursos.
 
 > !![NOTE]
-Para revisar el código de cliente que implementa este método, consulte la biblioteca de carga de [correo electrónico de código abierto](https://github.com/adobe/aem-upload)
+Para revisar el código de cliente que implementa este método, consulte la biblioteca de carga de [aem de código abierto](https://github.com/adobe/aem-upload)
 
 ### Iniciar carga {#initiate-upload}
 
@@ -92,25 +92,27 @@ Una forma posible de lograrlo es calcular el tamaño de la pieza en función del
 
 * Calcule el tamaño de la pieza dividiendo el tamaño total por el número de URI: 20.000 / 2 = 10.000
 * Intervalo de bytes POST 0-9,999 del binario al primer URI en la lista de URI de carga
-* Intervalo de bytes POST 10.000-19.999 del binario al segundo URI en la lista de URI de carga
+* Intervalo de bytes POST 10.000 - 19.999 del binario al segundo URI en la lista de URI de carga
 
 Si se realiza correctamente, el servidor responde a cada solicitud con un código `201` de estado.
 
 ### Carga completa {#complete-upload}
 
-Una vez cargadas todas las partes de un binario, el paso final es enviar una solicitud HTTP POST al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser datos de aplicación/`x-www-form-urlencoded` formulario que contengan los siguientes campos:
+Una vez cargadas todas las partes de un archivo binario, envíe una solicitud HTTP POST al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser datos `application/x-www-form-urlencoded` de formulario, que contengan los campos siguientes.
 
-* `(string) fileName`: Requerido. El nombre del recurso, tal y como lo proporcionaron los datos de inicio.
-* `(string) mimeType`: Requerido. El tipo de contenido HTTP del binario, tal como se proporcionó con los datos de inicio.
-* `(string) uploadToken`: Requerido. Distintivo de carga para el binario, tal y como proporcionaban los datos de inicio.
-* `(bool) createVersion`: Opcional. Si el valor es true y ya existe un recurso con el nombre especificado, la instancia creará una nueva versión del recurso.
-* `(string) versionLabel`: Opcional. Si se crea una nueva versión, la etiqueta que se asociará a la versión.
-* `(string) versionComment`: Opcional. Si se crea una nueva versión, los comentarios que se asociarán a la versión.
-* `(bool) replace`:: Opcional: Si el valor es true y ya existe un recurso con el nombre especificado, la instancia eliminará el recurso y lo volverá a crear.
+| Fields | Tipo | Obligatorio o no | Descripción |
+|---|---|---|---|
+| `fileName` | Cadena | Requerido | El nombre del recurso, tal y como lo proporcionaron los datos de inicio. |
+| `mimeType` | Cadena | Requerido | El tipo de contenido HTTP del binario, tal como se proporcionó con los datos de inicio. |
+| `uploadToken` | Cadena | Requerido | Distintivo de carga para el binario, tal y como proporcionaban los datos de inicio. |
+| `createVersion` | Booleano | Opcional | Si `True` y ya existe un recurso con el nombre especificado, Experience Manager crea una nueva versión del recurso. |
+| `versionLabel` | Cadena | Opcional | Si se crea una nueva versión, la etiqueta asociada con la nueva versión de un recurso. |
+| `versionComment` | Cadena | Opcional | Si se crea una nueva versión, los comentarios asociados a ella. |
+| `replace` | Booleano | Opcional | Si ya existe `True` un recurso con el nombre especificado, Experience Manager lo elimina y lo vuelve a crear. |
 
 >!![NOTE]
 >
-> Si el recurso ya existe y no se especifica createVersion ni replace, la instancia actualizará la versión actual del recurso con el nuevo binario.
+> Si el recurso ya existe `createVersion` y no `replace` se especifica, Experience Manager actualiza la versión actual del recurso con el nuevo binario.
 
 Al igual que el proceso de inicio, los datos completos de la solicitud pueden contener información para más de un archivo.
 
@@ -120,46 +122,36 @@ Si se realiza correctamente, el servidor responde con un código `200` de estado
 
 ### Biblioteca de carga de código abierto {#open-source-upload-library}
 
-Para obtener más información sobre los algoritmos de carga o para crear sus propias herramientas y secuencias de comandos de carga, Adobe proporciona herramientas y bibliotecas de código abierto como punto de partida:
+Para obtener más información sobre los algoritmos de carga o para crear sus propios scripts y herramientas de carga, Adobe proporciona bibliotecas y herramientas de código abierto como punto de partida:
 
-* [Abrir biblioteca de carga de aem de origen](https://github.com/adobe/aem-upload)
+* [Biblioteca de carga de aem de código abierto](https://github.com/adobe/aem-upload)
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
->[!NOTE]
-Para Experience Manager como servicio de nube, solo se admiten las nuevas API de carga. Las API de Experience Manager 6.5 están en desuso.
-
-Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están en desuso en las siguientes API:
+Para Adobe Experience Manager como servicio de nube, solo se admiten las nuevas API de carga. Las API de Adobe Experience Manager 6.5 están en desuso. Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están obsoletos en las siguientes API:
 
 * [API HTTP de AEM Assets](mac-api-assets.md)
 * `AssetManager` API de Java, como `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Abrir biblioteca de carga de aem de origen](https://github.com/adobe/aem-upload)
-* [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
+* [Biblioteca](https://github.com/adobe/aem-upload)de carga de aem de código abierto.
+* [Herramienta](https://github.com/adobe/aio-cli-plugin-aem)de línea de comandos de código abierto.
 
 
 ## flujos de trabajo de procesamiento y postprocesamiento de recursos {#post-processing-workflows}
 
-La mayor parte del procesamiento de recursos se ejecuta en función de la configuración **[!UICONTROL de Perfiles]** de procesamiento mediante [los microservicios](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de recursos y no requiere extensiones de desarrollador.
+En Experience Manager, el procesamiento de recursos se basa en la configuración **[!UICONTROL de Perfiles]** de procesamiento que utiliza [los microservicios](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de recursos. El procesamiento no requiere extensiones de desarrollador.
 
-Para la configuración del flujo de trabajo posterior al procesamiento, se pueden utilizar Flujos de trabajo de AEM estándar con extensiones (por ejemplo, se pueden usar pasos personalizados). Revise la subsección siguiente para comprender qué pasos del flujo de trabajo se pueden utilizar en los flujos de trabajo de postprocesamiento de recursos.
+Para la configuración del flujo de trabajo posterior al procesamiento, utilice los flujos de trabajo estándar con extensiones con pasos personalizados.
 
-### Pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
+## Compatibilidad con los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
->[!NOTE]
-Esta sección se aplica principalmente a los clientes que actualizan a AEM como servicio de nube desde versiones anteriores de AEM.
+Los clientes que actualicen a Experience Manager como servicio de nube desde versiones anteriores de Experience Manager pueden utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y utilizar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM de la versión anterior.
 
-Debido a un nuevo modelo de implementación introducido con Experience Manager como servicio de nube, es posible que algunos pasos de flujo de trabajo utilizados en el flujo de trabajo antes de la introducción de los `DAM Update Asset` microservicios de recursos ya no sean compatibles con los flujos de trabajo posteriores al procesamiento. Tenga en cuenta que la mayoría de ellos son reemplazados por un método mucho más sencillo de configurar y utilizar los microservicios de recursos.
-
-A continuación se muestra una lista de los modelos técnicos de flujo de trabajo y su nivel de asistencia en AEM como servicio de nube:
-
-### Pasos de flujo de trabajo admitidos {#supported-workflow-steps}
-
-Los siguientes pasos del flujo de trabajo son compatibles con el servicio de nube.
+Experience Manager admite los siguientes pasos de flujo de trabajo como servicio de nube.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -170,8 +162,6 @@ Los siguientes pasos del flujo de trabajo son compatibles con el servicio de nub
 * `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
-
-### Modelos no admitidos o reemplazados {#unsupported-replaced-models}
 
 Los siguientes modelos técnicos de flujo de trabajo se sustituyen por microservicios de recursos o no se admite.
 
