@@ -3,7 +3,7 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -17,7 +17,7 @@ Además, Experience Manager Assets ofrece una compatibilidad ampliada para gener
 La leyenda siguiente describe el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
-| ------------------------------------------------------------ | --------------------------- |
+| ------------- | --------------------------- |
 | ✓ | Compatible |
 | * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
@@ -26,28 +26,26 @@ La leyenda siguiente describe el nivel de asistencia.
 
 Los aspectos más destacados incluyen:
 
-* Formatos [de archivo clave de](#adobe-formats) Adobe producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, InDesign, Illustrator, XD, Dimension y Acrobat/PDF.
+* Formatos [de archivo clave de](#adobe-formats) Adobe producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension y Adobe Acrobat o PDF.
 * Formatos [de archivo de](#image-formats)imágenes clave.
 * [Formatos](#camera-raw-formats) de archivo de Camera Raw para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Formatos [de](#document-formats)documento comunes, incluidos los formatos [Microsoft Office](#microsoft-office-formats) (Word, Excel, PowerPoint) y [Open Documento](#opendocument-formats) .
+* Formatos [de](#document-formats)documento comunes, incluidos los formatos Microsoft Office y Open Documento.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
 Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 | Columna | Descripción |
 | ------------ | --------------------------------------------------------------- |
-| Formato | Formato de archivo (extensión de archivo) del binario original del recurso |
-| GIF | Formato GIF para la generación de representaciones |
-| JPEG | Formato JPEG para la generación de representaciones |
-| PNG | Formato PNG para la generación de representaciones |
-| XMP | Extracción de metadatos del binario original |
-| TXT | Extracción de texto del documento para indexar |
-| Anchura/Altura | Compatibilidad para definir la anchura y la altura de una representación (píxeles) |
+| Formato | Formato de archivo (extensión de archivo) del binario original del recurso. |
+| GIF | Formato GIF para la generación de representaciones. |
+| JPEG | Formato JPEG para la generación de representaciones. |
+| PNG | Formato PNG para la generación de representaciones. |
+| Anchura/Altura | Compatibilidad para definir la anchura y la altura de una representación en píxeles. |
 
 ### Formatos de Adobe {#adobe-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | TXT | XMP | Anchura/Altura |
-| ----------- | --- | ---- | --- | --- | --- | ------------ |
+| Formato de archivo | GIF | JPEG | PNG | extracción de texto completo | Extracción de metadatos | Anchura/Altura |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | - | - | ✓ | - |
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -64,8 +62,8 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 ### Formatos de imagen {#image-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | XMP | Anchura/Altura |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Formato de archivo | GIF | JPEG | PNG | Extracción de metadatos | Anchura/Altura |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | BMP | ✓ | ✓ | ✓ | - | ✓ |
 | EPS | - | - | - | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -76,8 +74,8 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 ### Formatos RAW de cámara {#camera-raw-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | XMP | Anchura/Altura |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Formato de archivo | GIF | JPEG | PNG | Extracción de metadatos | Anchura/Altura |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ | ✓ | ✓ |
 | CR2 | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -108,38 +106,34 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 ### Formatos de Documento {#document-formats}
 
-| Formato de archivo | TXT | XMP |
-| ----------- | --- | --- |
-| EPUB | ✓ | - |
-| HTML | ✓ | - |
-| PS | - | ✓ |
-| RTF | ✓ | - |
-| TEXTO | ✓ | - |
-| XML | ✓ | - |
+Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
 
-### Formatos de Microsoft Office {#microsoft-office-formats}
-
-| Formato de archivo | GIF | JPEG | PNG | TEXTO | Anchura/Altura |
-| ----------- | --- | ---- | --- | ---- | ------------ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-### Formatos OpenDocument {#opendocument-formats}
-
-| Formato de archivo | GIF | JPEG | PNG | TEXTO | Altura |
-| ----------- | --- | ---- | --- | ---- | ------ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| OFG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+|  | GIF | JPEG | PNG | extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+| ---- | -------- | -------- | -------- | ------------------- | ------------ | ------------------- | ---------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| OFG | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | - | - | ✓ | - | - | - |
+| HTML | - | - | - | ✓ | - | ✓ | ✓ |
+| PS | - | - | - | - | ✓ | - | - |
+| RTF | - | - | - | ✓ | - | ✓ | ✓ |
+| TXT | - | - | - | ✓ | - | ✓ | ✓ |
+| XML | - | - | - | ✓ | - | - | - |
 
 ### Formatos de vídeo {#video-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | XMP | Anchura/Altura |
-| ----------- | --- | ---- | --- | --- | ------------ |
+| Formato de archivo | GIF | JPEG | PNG | Extracción de metadatos | Anchura/Altura |
+| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
 | 3G2 | - | - | - | ✓ | - |
 | 3GP | - | - | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -165,25 +159,7 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 ### Formatos de audio {#audio-formats}
 
-Assets as a Cloud Service ofrece compatibilidad con XMP para estos formatos de audio: AIF, ASF, M4A, MP3, WAV y WMA.
-
-## Formatos de documento admitidos {#doc-formats}
-
-Los formatos de Documento admitidos para las funciones de administración de recursos son los siguientes.
-
-| Formato de archivo | Almacenamiento | Gestión de metadatos | [Recursos de red](use-assets-across-connected-assets-instances.md) |
-|---|---|---|---|
-| DOC | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ |
-| ODT | ✓ | ✓ | ✓ |
-| PDF | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |
-| RTF | ✓ | ✓ | ✓ |
-| TXT | ✓ | ✓ | ✓ |
-| XLS | ✓ | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ |
-| PPT | ✓ | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ |
+Assets as a Cloud Service ofrece compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
 
 >[!MORELIKETHIS]
 >
