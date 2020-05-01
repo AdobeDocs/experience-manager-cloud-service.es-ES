@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -24,7 +24,7 @@ Los microservicios de recursos proporcionan un procesamiento escalable y flexibl
 
 El procesamiento de recursos depende de la configuración de los Perfiles **[!UICONTROL de]** procesamiento, que proporcionan una configuración predeterminada, y permiten al administrador agregar una configuración de procesamiento de recursos más específica. Los administradores pueden crear y mantener las configuraciones de flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de flujos de trabajo permite la extensibilidad y la personalización total.
 
-Asset microservices permite procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos de forma predeterminada de lo que es posible con versiones anteriores de Experience Manager, por ejemplo, la extracción en miniatura de formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
+Los microservicios de recursos permiten procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos integrados de lo que es posible con versiones anteriores de Experience Manager. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
