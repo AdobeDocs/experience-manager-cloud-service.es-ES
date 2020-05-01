@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -24,14 +24,14 @@ Los microservicios de recursos proporcionan un procesamiento escalable y flexibl
 
 El procesamiento de recursos depende de la configuración de los Perfiles **[!UICONTROL de]** procesamiento, que proporcionan una configuración predeterminada, y permiten al administrador agregar una configuración de procesamiento de recursos más específica. Los administradores pueden crear y mantener las configuraciones de flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de flujos de trabajo permite la extensibilidad y la personalización total.
 
-A continuación se muestra un flujo de alto nivel para el procesamiento de recursos.
+Asset microservices permite procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos de forma predeterminada de lo que es posible con versiones anteriores de Experience Manager, por ejemplo, la extracción en miniatura de formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![asset-microservices-flow](assets/asset-microservices-flow.png)
+![Una vista de alto nivel del](assets/asset-microservices-flow.png "procesamiento de recursosUna vista de alto nivel del procesamiento de recursos")
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ El perfil de procesamiento estándar proporciona la siguiente configuración de 
 * Extracción de metadatos
 * extracción de texto
 
-### Formatos de archivo admitidos {#supported-file-formats}
+### Formatos de archivo compatibles {#supported-file-formats}
 
 Los microservicios de recursos admiten una amplia variedad de formatos de archivo en cuanto a la capacidad de generar representaciones o extraer metadatos. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener la lista completa.
 
@@ -104,7 +104,7 @@ De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincid
 
 Al colocar recursos de gran tamaño de AEM en documentos de Adobe InDesign, un profesional creativo debe esperar un tiempo considerable después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, el usuario no puede utilizar InDesign. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. Adobe permite la colocación temporal de representaciones de pequeño tamaño en documentos de InDesign para empezar, que se pueden reemplazar con recursos de resolución completa más adelante. Experience Manager proporciona representaciones que se utilizan solo para la colocación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño pero tienen la misma proporción de aspecto.
 
-El perfil de procesamiento puede incluir una representación FPO (solo para ubicación). Consulte la [documentación](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) de Adobe Asset Link para saber si necesita activarla para su perfil de procesamiento. Para obtener más información, consulte la documentación [completa de](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
+El perfil de procesamiento puede incluir una representación FPO (solo para ubicación). Consulte la [documentación](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) de Adobe Asset Link para saber si necesita activarla para su perfil de procesamiento. Para obtener más información, consulte la documentación [completa de](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
 
 ## Uso de microservicios de recursos para procesar recursos {#use-asset-microservices}
 
