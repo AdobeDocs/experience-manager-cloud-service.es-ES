@@ -3,7 +3,7 @@ title: Utilice los recursos conectados para compartir recursos DAM en el flujo d
 description: Utilice los recursos disponibles en una implementación remota de recursos de Adobe Experience Manager al crear sus páginas web en otra implementación de Experience Manager Sites.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7524f6146c33932677b6c8af49d5fe2638a5c02a
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -38,7 +38,7 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 Los creadores pueden buscar imágenes y los siguientes tipos de documentos en el buscador de contenido y utilizar los recursos buscados en el editor de páginas. Se pueden agregar documentos al `Download` componente y se pueden agregar imágenes al `Image` componente. Los creadores también pueden agregar recursos remotos en cualquier componente personalizado de AEM que amplía los componentes predeterminados `Download` o los componentes `Image`. Las listas de formatos compatibles son:
 
 * **Formatos de imagen**: Los formatos de imagen admitidos por el [componente Imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) son compatibles. Las imágenes de Dynamic Media no son compatibles.
-* **Formatos de documento**: Consulte [Formatos de documento compatibles con recursos conectados](file-format-support.md#doc-formats).
+* **Formatos de documento**: Consulte [Formatos de documento compatibles con recursos conectados](file-format-support.md#document-formats).
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
 
@@ -153,7 +153,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-## Restricciones        {#limitations}
+## Restricciones          {#limitations}
 
 **Permisos y administración de recursos**
 
