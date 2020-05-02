@@ -3,7 +3,7 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 4729f0bdd3cf7e2c6fc80e52bf2f70d689956296
 
 ---
 
@@ -44,91 +44,91 @@ Las columnas de las siguientes tablas proporcionan la siguiente información:
 
 ### Formatos de Adobe {#adobe-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | extracción de texto completo | Extracción de metadatos | Anchura/Altura |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | - | - | ✓ | - |
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| IDEAS | - | - | - | - | ✓ | - |
-| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓* |
-| INDT | - | - | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | - | - | ✓ | - |
-| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| Formato de archivo | GIF | JPEG | PNG | extracción de texto completo | TIFF | Extracción de metadatos | Anchura/Altura |
+| ----------- | -------- | -------- | -------- | ------------------- | -------- | ------------------- | ------------ |
+| AI | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| COLLAGE | - | - | - | - | - | ✓ | - |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ |
+| IDEAS | - | - | - | - | - | ✓ | - |
+| INDD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓* |
+| INDT | - | - | - | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PROTO | - | - | - | - | - | ✓ | - |
+| PSB | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| PSD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XD | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
 
 \* Para INDD (archivos de InDesign), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en InDesign (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de Previsualización con Documentos, Tamaño]** de Previsualización) para incrustar una representación más grande.
 
 ### Formatos de imagen {#image-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | Extracción de metadatos | Anchura/Altura |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| BMP | ✓ | ✓ | ✓ | - | ✓ |
-| EPS | - | - | - | ✓ | - |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | - | - | ✓ | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Formato de archivo | GIF | JPEG | PNG | TIFF | Extracción de metadatos | Anchura/Altura | Recortar |
+| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ | -------- |
+| BMP | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| EPS | - | - | - | - | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SVG | - | - | - | - | ✓ | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 
 ### Formatos RAW de cámara {#camera-raw-formats}
 
-| Formato de archivo | GIF | JPEG | PNG | Extracción de metadatos | Anchura/Altura |
-| ----------- | -------- | -------- | -------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| FEDER | ✓ | ✓ | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Formato de archivo | GIF | JPEG | PNG | TIFF | Extracción de metadatos | Anchura/Altura |
+| ----------- | -------- | -------- | -------- | -------- | ------------------- | ------------ |
+| 3FR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| FEDER | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ### Formatos de Documento {#document-formats}
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
 
-|  | GIF | JPEG | PNG | extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
-| ---- | -------- | -------- | -------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | - | - | ✓ | - | - | - |
-| HTML | - | - | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | - | - | ✓ | - | - |
-| RTF | - | - | - | ✓ | - | ✓ | ✓ |
-| TXT | - | - | - | ✓ | - | ✓ | ✓ |
-| XML | - | - | - | ✓ | - | - | - |
+|  | GIF | JPEG | PNG | extracción de texto completo | TIFF | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+| ---- | -------- | -------- | -------- | ------------------- | -------- | ------------ | ------------------- | ------------------------------------------------------------------- |
+| PDF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| DOC | - | - | - | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XLS | - | - | - | - | - | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| OFG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | - | - | ✓ | - | - | - | - |
+| HTML | - | - | - | ✓ | - | - | ✓ | ✓ |
+| PS | - | - | - | - | - | ✓ | - | - |
+| RTF | - | - | - | ✓ | - | - | ✓ | ✓ |
+| TXT | - | - | - | ✓ | - | - | ✓ | ✓ |
+| XML | - | - | - | ✓ | - | - | - | - |
 
 ### Formatos de vídeo {#video-formats}
 
