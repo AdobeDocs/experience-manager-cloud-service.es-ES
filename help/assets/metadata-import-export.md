@@ -3,7 +3,7 @@ title: Importación y exportación masiva de metadatos de recursos
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
 
 ---
 
@@ -18,11 +18,11 @@ La importación de metadatos es asincrónica y no impide el rendimiento del sist
 
 >[!NOTE]
 >
->Para importar metadatos en espacios de nombres personalizados, primero registre los espacios de nombres.
+>Para importar metadatos en Áreas de nombres personalizadas, primero registre las Áreas de nombres.
 
 1. Vaya a la interfaz de usuario de Recursos y toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En el menú, seleccione **[!UICONTROL Metadatos]**.
-1. En la página Importación **[!UICONTROL de]** metadatos, toque o haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
+1. En la página **[!UICONTROL Importación de metadatos]**, pulse o haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
 1. Especifique los siguientes parámetros:
 
    | Parámetro | Descripción |
@@ -30,10 +30,16 @@ La importación de metadatos es asincrónica y no impide el rendimiento del sist
    | Tamaño del lote | Número de recursos de un lote para el que se van a importar metadatos. El valor predeterminado es 50. El valor máximo es 100. |
    | Separador de campos | El valor predeterminado es `,` (coma). Puede especificar cualquier otro carácter. |
    | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada del iniciador está en vigor para el flujo de trabajo WriteBack de metadatos DAM (que escribe metadatos en los datos XMP binarios). La activación de los flujos de trabajo de inicio ralentiza el funcionamiento del sistema. |
+   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada del iniciador está en vigor para el flujo de trabajo WriteBack de metadatos DAM (que escribe metadatos en los datos XMP binarios). Al habilitar los flujos de trabajo de inicio se ralentiza el sistema. |
    | Nombre de columna de ruta de activos | Define el nombre de la columna para el archivo CSV con recursos. |
 
 1. Toque o haga clic en **[!UICONTROL Importar]** desde la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
+
+Para agregar la fecha y la marca de hora al importar metadatos, utilice `YYYY-MM-DDThh:mm:ss.fff-00:00` el formato de fecha y hora. La fecha y la hora se separan por `T`, `hh` es hora en formato de 24 horas, `fff` es nanosegundos y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es 26 de marzo de 2020 a las 11:26:00.000 AM hora PST.
+
+>[!CAUTION]
+>
+>Si el formato de fecha no coincide `YYYY-MM-DDThh:mm:ss.fff-00:00`, no se establecen los valores de fecha. Los formatos de fecha del archivo CSV de metadatos exportado tienen el formato `YYYY-MM-DDThh:mm:ss-00:00`. Si desea importarla, conviértala al formato aceptable agregando el valor de nanosegundos indicado por `fff`.
 
 ## Exportar metadatos {#export-metadata}
 
@@ -56,7 +62,7 @@ Algunos casos de uso para exportar metadatos de forma masiva son:
 1. En el campo **[!UICONTROL Propiedades que exportar]** , especifique si desea exportar todas las propiedades o determinadas. Si selecciona Propiedades selectivas para exportar, agregue las propiedades que desee.
 
 1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Exportar]**. Un mensaje confirma que se exportan los metadatos. Cierre el mensaje.
-1. Abra la notificación de bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, toque o haga clic en Descarga **** CSV desde la barra de herramientas. Click **[!UICONTROL Close]**.
+1. Abra la notificación de la bandeja de entrada para el trabajo de exportación. Seleccione el trabajo y haga clic en **[!UICONTROL Abrir]** en la barra de herramientas. Para descargar el archivo CSV con los metadatos, pulse o haga clic en **[!UICONTROL Descargar CSV]** desde la barra de herramientas. Haga clic en **[!UICONTROL Cerrar]**.
 
    ![Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva](assets/csv_download.png)
-   *Figura:Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva*
+   *Figura: Cuadro de diálogo para descargar el archivo CSV que contiene metadatos exportados de forma masiva*
