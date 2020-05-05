@@ -2,7 +2,7 @@
 title: Configuración de OSGi para AEM como servicio de nube
 description: 'Configuración de OSGi con valores secretos y valores específicos de Entorno '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 La intención es que el valor de la propiedad OSGI `my_var1` difiera para stage, prod y para cada uno de los 3 entornos dev. Por lo tanto, será necesario llamar a la API de Cloud Manager para establecer el valor `my_var1` para cada env de desarrollo.
 
+<table>
+<tr>
+<td>
+<b>Carpeta</b>
+</td>
+<td>
+<b>Contenido de myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**Ejemplo 3**
+
+La intención es que el valor de la propiedad OSGi `my_var1` sea el mismo para la etapa, la producción y sólo uno de los entornos de desarrollo, pero para que difiera en los otros dos entornos de desarrollo. En este caso, será necesario llamar a la API de Cloud Manager para establecer el valor de `my_var1` para cada uno de los entornos de desarrollo, incluso para el entorno de desarrollo que debe tener el mismo valor que stage y production. No heredará el valor establecido en la **configuración** de la carpeta.
+
+<table>
+<tr>
+<td>
+<b>Carpeta</b>
+</td>
+<td>
+<b>Contenido de myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+Otra manera de lograrlo sería establecer un valor predeterminado para el token de reemplazo en la carpeta config.dev de manera que sea el mismo valor que en la carpeta **config** .
+
+<table>
+<tr>
+<td>
+<b>Carpeta</b>
+</td>
+<td>
+<b>Contenido de myfile.cfg.json</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## Formato de API de Cloud Manager para definir propiedades {#cloud-manager-api-format-for-setting-properties}
+
+### Configuración de valores mediante API {#setting-values-via-api}
+
+Al llamar a la API, se implementarán las nuevas variables y valores en un entorno de Cloud, de forma similar a un flujo de implementación de código de cliente habitual. Los servicios de creación y publicación se reiniciarán y harán referencia a los nuevos valores, tardando normalmente unos minutos.
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+Tenga en cuenta que las variables predeterminadas no se configuran mediante API, sino en la propiedad OSGi misma.
+
+Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) para obtener más información.
+
+### Obtención de valores mediante API {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables) para obtener más información.
+
+### Eliminación de valores mediante API {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+Para eliminar una variable, inclúyala con un valor vacío.
+
+Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables) para obtener más información.
+
+### Obtención de valores a través de la línea de comandos {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### Configuración de valores mediante la línea de comandos {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### Eliminación de valores mediante la línea de comandos {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Consulte [esta página](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para obtener más información sobre cómo configurar valores mediante el complemento Cloud Manager para la CLI de Adobe I/O.
+
+### Número de variables {#number-of-variables}
+
+Se pueden declarar hasta 20 variables.
+
+## Consideraciones de implementación para valores de configuración específicos de Entornos y secretos {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+Dado que los valores de configuración específicos de entorno y secreto se encuentran fuera de Git y, por tanto, no forman parte de AEM formal como mecanismos de implementación de Cloud Service, el cliente debe gestionar, gobernar e integrar en AEM como un proceso de implementación de Cloud Service.
+
+Como se ha mencionado anteriormente, llamar a la API implementará las nuevas variables y valores en entornos de nube, de forma similar a un flujo de implementación de código de cliente habitual. Los servicios de creación y publicación se reiniciarán y harán referencia a los nuevos valores, tardando normalmente unos minutos. Tenga en cuenta que las puertas y pruebas de calidad que ejecuta Cloud Manager durante una implementación de código normal no se realizan durante este proceso.
+
+Normalmente, los clientes llamaban a la API para establecer variables de entorno antes de implementar código que dependa de ellas en Cloud Manager. En algunas situaciones, es posible que se desee modificar una variable existente después de que el código ya se haya implementado.
+
+Tenga en cuenta que la API puede no tener éxito cuando se está utilizando una canalización, ya sea una actualización de AEM o una implementación de cliente, según la parte de la canalización de extremo a extremo que se esté ejecutando en ese momento. La respuesta de error indicará que la solicitud no se realizó correctamente, aunque no indicará el motivo específico.
+
+Es posible que haya situaciones en las que la implementación de código de cliente programado dependa de variables existentes para tener nuevos valores, lo que no sería apropiado con el código actual. Si esto es un problema, se recomienda realizar modificaciones variables de manera aditiva. Para ello, cree nuevos nombres de variables en lugar de simplemente cambiar el valor de variables antiguas, de modo que el código antiguo nunca haga referencia al nuevo valor. Luego, cuando la nueva versión del cliente se vea estable, se puede optar por eliminar los valores anteriores.
+
+Del mismo modo, como los valores de una variable no tienen versiones, una reversión del código podría hacer que haga referencia a valores más recientes que causen problemas. La estrategia de variables aditivas antes mencionada también sería útil en este caso.
+
+Esta estrategia de variables aditivas también es útil para situaciones de recuperación ante desastres en las que si se necesita reimplementar el código de varios días antes de que sea necesario, los nombres y valores de las variables a los que hace referencia seguirán intactos. Esto depende de una estrategia en la que un cliente espera unos días antes de eliminar esas variables antiguas; de lo contrario, el código anterior no tendría las variables adecuadas a las que hacer referencia.
