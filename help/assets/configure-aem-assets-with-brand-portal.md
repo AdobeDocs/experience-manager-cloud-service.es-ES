@@ -2,7 +2,7 @@
 title: Configurar el servicio en la nube de AEM Assets con Brand Portal
 description: Configurar el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bbb3327d4bc7cef8eede3169bc14a1d247ee2bdc
 
 ---
@@ -27,11 +27,11 @@ Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 Puede crear una configuración en Adobe I/O para configurar la instancia de nube de AEM Assets con Brand Portal.
 
 Siga estos pasos en la secuencia indicada:
-1. [Obtenga un certificado público](#public-certificate)
-1. [Cree la integración de Adobe I/O](#createnewintegration)
-1. [Cree la configuración de cuenta IMS](#create-ims-account-configuration)
-1. [Configure el servicio en la nube](#configure-the-cloud-service)
-1. [Pruebe la configuración](#test-configuration)
+1. [Obtener un certificado público](#public-certificate)
+1. [Crear la integración de Adobe I/O](#createnewintegration)
+1. [Crear la configuración de cuenta IMS](#create-ims-account-configuration)
+1. [Configurar el servicio en la nube](#configure-the-cloud-service)
+1. [Probar la configuración](#test-configuration)
 
 ### Crear la configuración de IMS {#create-ims-configuration}
 
@@ -48,7 +48,7 @@ El certificado público permite autenticar el perfil en Adobe I/O.
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. En el panel **** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de Adobe IMS]**.
 
    ![Interfaz de usuario de configuración de cuenta de Adobe IMS](assets/ims-configuration1.png)
 
@@ -56,13 +56,13 @@ El certificado público permite autenticar el perfil en Adobe I/O.
 
    Haga clic en **[!UICONTROL Crear]**.
 
-   It will take you to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page.
+   Esto lo llevará a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**.
 
 1. De forma predeterminada, se abre la pestaña **Certificado** .
 
    En **Cloud Solution**, seleccione **[!UICONTROL Adobe Brand Portal]**.
 
-1. Mark the check box **[!UICONTROL Create new certificate]** and specify an **alias** for the certificate. El alias sirve como nombre del cuadro de diálogo.
+1. Marque la casilla de verificación **[!UICONTROL Crear nuevo certificado]** y especifique un **alias** para el certificado. El alias sirve como nombre del cuadro de diálogo.
 
 1. Haga clic en **[!UICONTROL Crear certificado]**. Aparece un cuadro de diálogo. Haga clic en **[!UICONTROL Aceptar]** para generar el certificado público.
 
@@ -152,9 +152,9 @@ Asegúrese de haber realizado los siguientes pasos:
 
 >[!CAUTION]
 >
->Sólo debe tener una configuración IMS. No cree varias configuraciones de IMS.
+>Sólo debe tener una configuración de IMS. No cree varias configuraciones de IMS.
 >
->Asegúrese de que la configuración de IMS pasa la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarlo y crear una configuración nueva y válida.
+>Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
 
 
 
@@ -164,7 +164,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. En el panel **** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Cloud Services**[!UICONTROL  > ]**AEM Brand Portal]**.
 
    Se abre la página Configuraciones de Brand Portal.
 
@@ -180,11 +180,11 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube. La instancia de nube de AEM Assets ahora está configurada con el inquilino de Brand Portal.
 
-### Pruebe la configuración{#test-configuration}
+### Probar la configuración{#test-configuration}
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. From **tool** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
+1. En el panel **** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Implementación]** > **[!UICONTROL Distribución]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -208,7 +208,7 @@ Siga estos pasos para crear la configuración del servicio en la nube de Brand P
    * **error-queue**: para los recursos en los que la distribución ha fallado.
    >[!NOTE]
    >
-   >Se recomienda revisar los errores y borrar la cola **de** errores periódicamente.
+   >Se recomienda revisar los errores y borrar la **cola de errores** periódicamente.
 
    ![](assets/test-bpconfig3.png)
 
@@ -229,13 +229,13 @@ La instancia de nube de AEM Assets se ha configurado correctamente con Brand Por
 * [Publicar carpetas desde AEM Assets en Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [Publicar colecciones desde AEM Assets en Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
 
-Además de lo anterior, también puede publicar esquemas de metadatos, ajustes preestablecidos de imagen, facetas de búsqueda y etiquetas de Recursos AEM en Brand Portal.
+Además de lo anterior, también puede publicar esquemas de metadatos, ajustes preestablecidos de imagen, facetas de búsqueda y etiquetas de AEM Assets en Brand Portal.
 
-* [Publicación de ajustes preestablecidos, esquemas y facetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar ajustes preestablecidos, esquemas y facetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Publicar etiquetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información.
+Consulte la [documentación de Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) para obtener más información.
 
 
 ## Registros de distribución {#distribution-logs}
@@ -244,16 +244,16 @@ Puede consultar los registros para obtener información detallada sobre las acci
 
 Por ejemplo, publicamos un recurso desde AEM Assets en Brand Portal para comprobar la configuración.
 
-1. Follow the steps (Step 1 - 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Siga los pasos (paso 1 a 4) que se muestran en **[!UICONTROL Comprobar conexión]** y vaya a la página del agente de distribución.
 
-1. Haga clic en **[!UICONTROL Registros]** para vista de los registros de distribución. Aquí puede ver los registros de procesamiento y error.
+1. Haga clic en **[!UICONTROL Registros]** para ver los registros de distribución. Aquí puede ver los registros de procesamiento y de errores.
 
    ![](assets/test-bpconfig5.png)
 
 El agente de distribución genera los siguientes registros:
 
 * INFORMACIÓN: Es un registro generado por el sistema que se activa en una configuración correcta que habilita el agente de distribución.
-* DSTRQ1 (Solicitud 1): Activa la conexión de prueba.
+* DSTRQ1 (Solicitud 1): Se activa en comprobar la conexión.
 
 Al publicar el recurso, se generan los siguientes registros de solicitud y respuesta:
 
@@ -265,11 +265,11 @@ Al publicar el recurso, se generan los siguientes registros de solicitud y respu
 * queue-bpdistributionagent0 (DSTRQ2): El recurso se publica en Brand Portal.
 * queue-bpdistributionagent0 (DSTRQ3): El sistema replica la carpeta con el recurso en Brand Portal.
 
-En el ejemplo anterior, se activan una solicitud y una respuesta adicionales. El sistema no pudo encontrar la carpeta principal (denominada ruta de Añado) en Brand Portal porque el recurso se publicó por primera vez, por lo que activa una solicitud adicional para crear una carpeta principal con el mismo nombre en Brand Portal en la que se publica el recurso.
+En el ejemplo anterior, se activa una solicitud y una respuesta adicionales. El sistema no pudo encontrar la carpeta principal (denominada Agregar ruta) en Brand Portal porque el recurso se publicó por primera vez, por lo tanto se activa una solicitud adicional para crear una carpeta principal con el mismo nombre en Brand Portal en la que se publica el recurso.
 
 >[!NOTE]
 >
->Se genera una solicitud adicional si la carpeta principal no existe en Brand Portal (en el ejemplo anterior) o si la carpeta principal se ha modificado en Recursos AEM.
+>Se genera una solicitud adicional si la carpeta principal no existe en Brand Portal (en el ejemplo anterior) o si la carpeta principal se ha modificado en AEM Assets.
 
 
 
