@@ -1,7 +1,7 @@
 ---
 title: 'Búsqueda  '
 description: Encuentre contenido más rápidamente con una búsqueda detallada
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 # Búsqueda {#search-feature}
 
-El entorno de creación AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
+El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 
 ## Conceptos básicos de búsqueda {#search-basics}
 
@@ -19,19 +19,19 @@ La función de búsqueda está disponible en la barra de herramientas superior:
 
 Con el carril de búsqueda puede:
 
-* Busque una palabra clave concreta, una ruta o una etiqueta.
-* Filtre según criterios específicos de recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
+* Busque una palabra clave, una ruta o una etiqueta específicas.
+* Filtre según los criterios específicos del recurso, como fechas de modificación, estados de página, tamaño de archivo, etc.
 * Defina y utilice una [búsqueda guardada](#saved-searches) según los criterios anteriores
 
 >[!NOTE]
 >
->También se puede iniciar una búsqueda con la tecla de función `/` (barra diagonal) cuando el carril de búsqueda sea visible.
+>También se puede iniciar una búsqueda con la tecla de función `/` (barra diagonal) cuando el carril de búsqueda esté visible.
 
-## Búsqueda y filtro {#search-and-filter}
+## Buscar y filtrar {#search-and-filter}
 
 Para buscar y filtrar sus recursos: 
 
-1. Abra **Búsqueda** (con la lupa de la barra de herramientas) e introduzca el término de búsqueda. Se muestran sugerencias que puede seleccionar:
+1. Abra **Buscar** (con la lupa de la barra de herramientas) y escriba el término de búsqueda. Se muestran sugerencias que puede seleccionar:
 
    ![Término de búsqueda](/help/sites-cloud/authoring/assets/search-term.png)
 
@@ -39,7 +39,7 @@ Para buscar y filtrar sus recursos:
 
    ![Ubicación de la búsqueda](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que se desea eliminar) para buscar en todas las consolas/tipos de recurso.
+1. Si es necesario, puede quitar el filtro de ubicación (seleccione **X** en el filtro que desea eliminar) para buscar en todas las consolas/tipos de recurso.
 1. Los resultados se muestran agrupados según la consola y el tipo de recurso relacionado.
 
    Puede seleccionar un recurso específico (para realizar más acciones), o profundizar seleccionando el tipo de recurso necesario; por ejemplo **Ver todos los sitios**: 
@@ -52,12 +52,12 @@ Para buscar y filtrar sus recursos:
 
    Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda o de filtro.
 
-   El panel lateral le permite seleccionar:
+   El panel lateral permite seleccionar:
 
    * Búsquedas guardadas
    * Directorio de búsqueda
    * Etiquetas
-   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de Live Copy.
+   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy.
    >[!NOTE]
    >
    >Los criterios de búsqueda pueden variar:
@@ -74,7 +74,7 @@ Para buscar y filtrar sus recursos:
 
 1. También se pueden agregar términos de búsqueda adicionales.
 
-1. Cierre la **búsqueda** con la **X** (parte superior derecha).
+1. Cierre **Buscar** con la **X** (parte superior derecha).
 
 >[!NOTE]
 >
@@ -84,13 +84,13 @@ Para buscar y filtrar sus recursos:
 
 ## Búsquedas guardadas {#saved-searches}
 
-Además de buscar aplicando una amplia gama de criterios, también puede guardar una configuración de búsqueda determinada para poder recuperarla y utilizarla en otro momento:
+Además de buscar aplicando una amplia gama de criterios, también puede guardar una configuración de búsqueda determinada para recuperarla y utilizarla en otro momento:
 
 1. Defina sus criterios de búsqueda y seleccione **Guardar**.
 
    ![Guardar una búsqueda](/help/sites-cloud/authoring/assets/search-side-panel.png)
 
-1. Asigne un nombre y, a continuación, utilice **Guardar** para confirmar la acción:
+1. Asigne un nombre y luego utilice **Guardar** para confirmar la acción:
 
    ![Guardar una búsqueda con un nombre](/help/sites-cloud/authoring/assets/search-save-name.png)
 
@@ -100,9 +100,9 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
 1. Una vez guardada, podrá:
 
-   * Usar **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
-   * Usar la opción **Editar búsqueda guardada**, cambiar las condiciones de búsqueda y, a continuación, usar **Guardar** nuevamente.
+   * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
+   * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.
 
 Las búsquedas guardadas se pueden modificar seleccionando la búsqueda guardada y haciendo clic en **Editar búsqueda guardada** en la parte inferior del panel de búsqueda.
 
-![Modificación de una búsqueda guardada](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
+![Modificar una búsqueda guardada](/help/sites-cloud/authoring/assets/saved-searches-modify.png)
