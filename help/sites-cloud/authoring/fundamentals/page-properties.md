@@ -1,7 +1,7 @@
 ---
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -80,7 +80,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Indica si desea que la página use la URL de vanidad.
 
-### Avanzado    {#advanced}
+### Avanzado  {#advanced}
 
 * **Idioma**
 
@@ -136,7 +136,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Especificar una configuración de exportación.
 
-### Miniatura    {#thumbnail}
+### Miniatura  {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -189,7 +189,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    >[!NOTE]
    >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
 
-### Permisos    {#permissions}
+### Permisos  {#permissions}
 
 * **Permisos**
 
@@ -212,14 +212,14 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
 
-### Live Copy    {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    * Defina propiedades para una página Live Copy en un entorno de administración de varios sitios. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio    {#site-structure}
+### Estructura del sitio  {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
