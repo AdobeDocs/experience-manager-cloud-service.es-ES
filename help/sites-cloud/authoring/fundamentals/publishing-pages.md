@@ -1,7 +1,7 @@
 ---
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -82,10 +82,10 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 En la consola Sitios hay dos opciones para la publicación:
 
-* [Publicación rápida  ](#quick-publish)
-* [Administrar publicación  ](#manage-publication)
+* [Publicación rápida](#quick-publish)
+* [Administrar publicación](#manage-publication)
 
-#### Publicación rápida   {#quick-publish}
+#### Publicación rápida  {#quick-publish}
 
 **Publicación rápida** es para casos sencillos y publica las páginas seleccionadas inmediatamente, sin más interacción. Por este motivo, cualquier referencia no publicada se publica también automáticamente.
 
@@ -105,7 +105,7 @@ Para publicar una página con Publicación rápida:
 >
 >La Publicación rápida no es profunda; es decir, solo se publica la página o páginas seleccionadas, y no las páginas secundarias.
 
-#### Administrar publicación   {#manage-publication}
+#### Administrar publicación     {#manage-publication}
 
 **Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
 
@@ -199,11 +199,11 @@ De forma [similar a la publicación](#publishing-pages), se puede cancelar la p
 * [Desde el editor de páginas](#unpublishing-from-the-editor)
 * [Desde la consola Sitios](#unpublishing-from-the-console)
 
-### Cancelación de la publicación desde el editor   {#unpublishing-from-the-editor}
+### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
 
 Si desea cancelar la publicación de una página que está editando, seleccione **Cancelar publicación de página** en el menú **Información de página**, de un modo similar a como haría para [publicar la página](#publishing-from-the-editor).
 
-### Cancelación de la publicación desde la consola   {#unpublishing-from-the-console}
+### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 
 Al igual que [utiliza la opción Administrar publicación para publicar](#manage-publication), puede usarla para cancelar la publicación.
 
