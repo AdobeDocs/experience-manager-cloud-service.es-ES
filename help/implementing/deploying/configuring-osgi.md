@@ -2,9 +2,9 @@
 title: Configuración de OSGi para AEM como servicio de nube
 description: 'Configuración de OSGi con valores secretos y valores específicos de Entorno '
 translation-type: tm+mt
-source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -162,29 +162,29 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
+## Creación de la configuración en el repositorio {#creating-the-configuration-in-the-repository}
 
-To actually add the new configuration to the repository:
+Para agregar la nueva configuración al repositorio:
 
-1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
+1. En el proyecto ui.apps, cree una `/apps/…/config.xxx` carpeta según sus necesidades en función del modo de ejecución que esté utilizando
 
-1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
+1. Cree un nuevo archivo JSON con el nombre del PID y agregue la `.cfg.json` extensión
 
 
-1. Populate the JSON file with the OSGi configuration key value pairs
+1. Rellene el archivo JSON con los pares de valor de clave de configuración OSGi
 
    >[!NOTE]
    >
-   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
+   >Si está configurando un servicio OSGi predeterminado, puede buscar los nombres de propiedad OSGi mediante `/system/console/configMgr`
 
 
-1. Save the JSON file to your project. -->
+1. Guarde el archivo JSON en el proyecto. -->
 
 ## Formato de propiedad de configuración en el control de código fuente {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+La creación de una nueva propiedad de configuración OSGI se describe en la sección anterior para [Añadir una nueva configuración al repositorio](#creating-the-configuration-in-the-repository) .
 
 Siga estos pasos y modifique la sintaxis como se describe en las subsecciones siguientes:
 
