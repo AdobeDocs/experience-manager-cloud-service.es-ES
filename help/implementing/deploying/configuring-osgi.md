@@ -2,9 +2,9 @@
 title: Configuración de OSGi para AEM como servicio de nube
 description: 'Configuración de OSGi con valores secretos y valores específicos de Entorno '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '2509'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -127,64 +127,66 @@ AEM como servicio de nube requiere el uso de configuraciones específicas de ent
 
 Utilice configuraciones secretas específicas del entorno para almacenar el valor de los secretos en todos los entornos de AEM como servicios en la nube, incluidos el escenario y la producción.
 
-### Añadir una nueva configuración en el repositorio {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### Qué necesita saber {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-Para agregar una nueva configuración al repositorio, debe saber lo siguiente:
+To add a new configuration to the repository you need to know the following:
 
-1. Identidad **persistente** (PID) del servicio.
+1. The **Persistent Identity** (PID) of the service.
 
-   Haga referencia al campo **Configuraciones** de la consola web. El nombre se muestra entre corchetes después del nombre del paquete (o en Información **de** configuración hacia la parte inferior de la página).
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   Por ejemplo, cree un nodo `com.day.cq.wcm.core.impl.VersionManagerImpl.` para configurar **AEM WCM Version Manager**.
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Indica si se requiere un modo de ejecución específico. Cree la carpeta:
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config` - para todos los modos de ejecución
-   * `config.author` - para el entorno del autor
-   * `config.publish` - para el entorno de publicación
-   * `config.<run-mode>` - según proceda
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
-1. Indica si es necesaria una **configuración** o una configuración **de fábrica** .
-1. Parámetros individuales que se van a configurar; incluyendo cualquier definición de parámetro existente que deba volver a crearse.
+1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   Haga referencia al campo de parámetro individual en la consola web. El nombre se muestra entre corchetes para cada parámetro.
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   Por ejemplo, crear una propiedad
-   `versionmanager.createVersionOnActivation` para configurar **Crear versión en la Activación**.
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. ¿Ya existe una configuración en `/libs`? Para lista de todas las configuraciones de su instancia, utilice la herramienta de **Consulta** de CRXDE Lite para enviar la siguiente consulta SQL:
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   Si es así, esta configuración se puede copiar en ` /apps/<yourProject>/`y, a continuación, personalizar en la nueva ubicación.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## Creación de la configuración en el repositorio {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-Para agregar la nueva configuración al repositorio:
+To actually add the new configuration to the repository:
 
-1. En el proyecto ui.apps, cree una `/apps/…/config.xxx` carpeta según sus necesidades en función del modo de ejecución que esté utilizando
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. Cree un nuevo archivo JSON con el nombre del PID y agregue la `.cfg.json` extensión
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. Rellene el archivo JSON con los pares de valor de clave de configuración OSGi
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >Si está configurando un servicio OSGi predeterminado, puede buscar los nombres de propiedad OSGi mediante `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. Guarde el archivo JSON en el proyecto.
+1. Save the JSON file to your project. -->
 
 ## Formato de propiedad de configuración en el control de código fuente {#configuration-property-format-in-source-control}
 
-La creación de una nueva propiedad de configuración OSGI se describe en la sección anterior para [Añadir una nueva configuración al repositorio](#creating-the-configuration-in-the-repository) . Siga estos pasos y modifique la sintaxis como se describe en las subsecciones siguientes:
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+Siga estos pasos y modifique la sintaxis como se describe en las subsecciones siguientes:
 
 ### Valores en línea {#inline-values}
 
