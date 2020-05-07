@@ -2,12 +2,15 @@
 title: Reglas de calidad de código personalizado - Servicios de nube
 description: Reglas de calidad de código personalizado - Servicios de nube
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '2254'
+ht-degree: 5%
 
 ---
 
 
-# Understanding Custom Code Quality Rules {#custom-code-quality-rules}
+# Comprender las reglas de calidad de código personalizadas {#custom-code-quality-rules}
 
 
 En esta página se describen las reglas de calidad de código personalizadas ejecutadas por Cloud Manager creadas en función de las prácticas recomendadas de ingeniería de AEM.
@@ -107,7 +110,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 **Tipo**: Error
 
-**Gravedad**:Crítico
+**Gravedad**: Crítico
 
 **Desde**: Versión 2018.6.0
 
@@ -185,11 +188,11 @@ public void orDoThis() {
 
 **Tipo**: Error
 
-**Gravedad**:Crítico
+**Gravedad**: Crítico
 
 **Desde**: Versión 2018.7.0
 
-La API de AEM contiene interfaces y clases de Java que solo están pensadas para utilizarse, pero no implementadas, mediante código personalizado. Por ejemplo, la interfaz *com.day.cq.wcm.api.Page* está diseñada para que la implemente solo ****** AEM.
+La API de AEM contiene interfaces y clases de Java que solo están pensadas para utilizarse, pero no para implementarse, mediante código personalizado. Por ejemplo, la interfaz *com.day.cq.wcm.api.Page* está diseñada para que la implemente ***solo AEM***.
 
 Cuando se añaden nuevos métodos a estas interfaces, esos métodos adicionales no afectan al código existente que utiliza estas interfaces y, como resultado, la adición de nuevos métodos a estas interfaces se considera compatible con versiones anteriores. Sin embargo, si el código personalizado ***implementa*** una de estas interfaces, dicho código personalizado ha introducido un riesgo de compatibilidad con versiones anteriores para el cliente.
 
@@ -260,7 +263,7 @@ public void orDoThis(Session session) throws Exception {
 
 **Desde**: Versión 2018.4.0
 
-Como se describe en la documentación [de](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, se desaconseja enlazar servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso JCR estándar y, como resultado, requieren un rigor de seguridad adicional. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
+Como se describe en la documentación [de](http://sling.apache.org/documentation/the-sling-engine/servlets.html)Sling, se desaconseja enlazar servlets por rutas. Los servlets enlazados a rutas no pueden utilizar controles de acceso de JCR estándar y, como resultado, requieren mayor rigor de seguridad. En lugar de utilizar servlets enlazados a rutas, se recomienda crear nodos en el repositorio y registrar servlets por tipo de recurso.
 
 #### Código no compatible {#non-compliant-code-5}
 
@@ -531,7 +534,7 @@ public void doThis() {
 
 **Desde**: Versión 2018.4.0
 
-En general, las rutas que comienzan con /libs y /apps no deben codificarse de forma rígida, ya que las rutas a las que hacen referencia se almacenan normalmente como rutas relativas a la ruta de búsqueda Sling (que se establece en /libs,/apps de forma predeterminada). El uso de la ruta absoluta puede introducir defectos sutiles que solo aparecerían más adelante en el ciclo vital del proyecto.
+En general, las rutas que inicio con /libs y /apps no deben codificarse como no modificables, ya que las rutas a las que hacen referencia se almacenan normalmente como rutas relativas a la ruta de búsqueda Sling (que se establece en /libs,/apps de forma predeterminada). El uso de la ruta absoluta puede introducir defectos sutiles que solo aparecerían más adelante en el ciclo vital del proyecto.
 
 #### Código no compatible {#non-compliant-code-13}
 
@@ -549,6 +552,35 @@ public void doThis(Resource resource) {
 }
 ```
 
+### No Debe Utilizarse El Planificador Sling {#sonarqube-sling-scheduler}
+
+**Clave**: CQRules:AMSCORE-554
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2020.5.0
+
+El Planificador Sling no debe utilizarse para tareas que requieran una ejecución garantizada. Los trabajos programados de Sling garantizan la ejecución y se adaptan mejor a los entornos agrupados y no agrupados.
+
+Consulte [Apache Sling Eventing y Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) para obtener más información sobre cómo se gestionan los trabajos Sling en entornos agrupados.
+
+### No se deben usar las API obsoletas de AEM {#sonarqube-aem-deprecated}
+
+**Clave**: AMSCORE-553
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2020.5.0
+
+La superficie de la API de AEM está en constante revisión para identificar las API para las que se desaconseja el uso y, por tanto, se considera obsoleta.
+
+En muchos casos, estas API quedan obsoletas mediante la anotación estándar Java *@Deprecated* y, como tal, según lo identifica `squid:CallToDeprecatedMethod`.
+
+Sin embargo, hay casos en los que una API está en desuso en el contexto de AEM, pero puede que no esté en desuso en otros contextos. Esta regla identifica esta segunda clase.
 
 ## Reglas de contenido OakPAL {#oakpal-rules}
 
@@ -569,7 +601,7 @@ Debajo de las comprobaciones OakPAL ejecutadas por Cloud Manager.
 
 Desde hace tiempo, se recomienda que los clientes consideren el árbol de contenido /libs del repositorio de contenido de AEM como de solo lectura. La modificación de nodos y propiedades en */libs* crea un riesgo significativo para actualizaciones mayores y menores. Las modificaciones a */libs* solo deben realizarlas Adobe a través de canales oficiales.
 
-### Los paquetes no deben contener configuraciones OSGi duplicadas {#oakpal-package-osgi}
+### Los Paquetes No Deben Contener Configuraciones OSGi Duplicado {#oakpal-package-osgi}
 
 **Clave**: DuplicateOsgiConfigurations
 
@@ -643,4 +675,63 @@ Un problema común es el uso de nodos denominados `config` dentro de los cuadros
 
 **Desde**: Versión 2019.6.0
 
-De manera similar a *los paquetes no deben contener configuraciones* OSGi duplicadas, este es un problema común en proyectos complejos en los que la misma ruta de nodo está escrita por varios paquetes de contenido independientes. Aunque el uso de dependencias de paquetes de contenido se puede utilizar para garantizar un resultado coherente, es mejor evitar las superposiciones por completo.
+De forma similar a los *paquetes no deben contener configuraciones OSGi Duplicado* , este es un problema común en proyectos complejos en los que la misma ruta de nodo se escribe en varios paquetes de contenido independientes. Aunque se pueden utilizar dependencias de paquetes de contenido para garantizar un resultado coherente, es mejor evitar las superposiciones por completo.
+
+### El modo de creación predeterminado no debe ser la IU clásica {#oakpal-default-authoring}
+
+**Clave**: ClassicUIAuthoringMode
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2020.5.0
+
+La configuración OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` define el modo de creación predeterminado en AEM. Como la IU clásica ha quedado obsoleta desde AEM 6.4, ahora se generará un problema cuando el modo de creación predeterminado se configure en la IU clásica.
+
+### Los Componentes Con Diálogos Deben Tener Diálogos De IU Táctiles {#oakpal-components-dialogs}
+
+**Clave**: ComponentWithOnlyClassicUIDialog
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2020.5.0
+
+Los componentes de AEM que tengan un cuadro de diálogo de IU clásica siempre deben tener un cuadro de diálogo de IU táctil correspondiente para ofrecer una experiencia de creación óptima y para ser compatibles con el modelo de implementación de Cloud Service, en el que la IU clásica no es compatible. Esta regla comprueba los siguientes escenarios:
+
+* Un componente con un cuadro de diálogo de IU clásica (es decir, un nodo secundario de cuadro de diálogo) debe tener un cuadro de diálogo de IU táctil correspondiente (es decir, un nodo secundario `cq:dialog` ).
+* Un componente con un cuadro de diálogo de diseño de la IU clásica (es decir, un nodo design_dialog) debe tener un cuadro de diálogo de diseño de la IU táctil correspondiente (es decir, un nodo secundario `cq:design_dialog` ).
+* Un componente con un cuadro de diálogo de IU clásica y un cuadro de diálogo de diseño de IU clásica debe tener un cuadro de diálogo de IU táctil correspondiente y un cuadro de diálogo de diseño de IU táctil correspondiente.
+
+La documentación de las herramientas de modernización de AEM proporciona documentación y herramientas para convertir componentes de la IU clásica a la IU táctil. Consulte [las Herramientas](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) de modernización de AEM para obtener más información.
+
+### Los paquetes no deben mezclar contenido mutable e inmutable {#oakpal-packages-immutable}
+
+**Clave**: ImmutableMutableMixedPackage
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2020.5.0
+
+Para ser compatible con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben contener contenido para las áreas inmutables del repositorio (es decir, no `/apps and /libs, although /libs` deben ser modificados por el código del cliente y causarán una infracción por separado) o el área mutable (es decir, todo lo demás), pero no ambos. Por ejemplo, un paquete que incluye ambos `/apps/myco/components/text and /etc/clientlibs/myco` no es compatible con Cloud Service y provocará que se informe de un problema.
+
+Consulte Estructura [del proyecto de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEM para obtener más información.
+
+### No Deben Utilizarse Agentes De Replicación Inversa {#oakpal-reverse-replication}
+
+**Clave**: ReverseReplication
+
+**Tipo**: Huele de código
+
+**Gravedad**: Menor
+
+**Desde**: Versión 2020.5.0
+
+La compatibilidad con la replicación inversa no está disponible en implementaciones de servicios en la nube, como se describe en las Notas [de la versión: Eliminación de agentes](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)de replicación.
+
+Los clientes que utilizan replicación inversa deben ponerse en contacto con Adobe para obtener soluciones alternativas.
+
