@@ -2,9 +2,9 @@
 title: Configuración de OSGi para AEM como servicio de nube
 description: 'Configuración de OSGi con valores secretos y valores específicos de Entorno '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creación de la configuración en el repositorio {#creating-the-configuration-in-the-repository}
+## Creación de configuraciones de OSGi
 
-Para agregar la nueva configuración al repositorio:
+Existen dos maneras de crear nuevas configuraciones de OSGi, como se describe a continuación. El método anterior se utiliza generalmente para configurar componentes OSGi personalizados que tienen propiedades y valores OSGi conocidos por parte del desarrollador, y el último para componentes OSGi proporcionados por AEM.
 
-1. En el proyecto ui.apps, cree una `/apps/…/config.xxx` carpeta según sus necesidades en función del modo de ejecución que esté utilizando
+### Escritura de configuraciones de OSGi
 
-1. Cree un nuevo archivo JSON con el nombre del PID y agregue la `.cfg.json` extensión
+Los archivos de configuración OSGi con formato JSON se pueden escribir a mano directamente en el proyecto de AEM. Esta es la forma más rápida de crear configuraciones OSGi para componentes OSGi conocidos, y especialmente componentes OSGi personalizados que han sido diseñados y desarrollados por el mismo desarrollador que define las configuraciones. Este método también se puede aprovechar para copiar/pegar y actualizar configuraciones para el mismo componente OSGi en varias carpetas de modo de ejecución.
+
+1. En su IDE, abra el `ui.apps` proyecto, ubique o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que destinatario los modos de ejecución que debería aplicar la nueva configuración OSGi
+1. En esta carpeta de configuración, cree un nuevo `<PID>.cfg.json` archivo. El PID es la identidad persistente del componente OSGi que suele ser el nombre completo de la clase de la implementación del componente OSGi. Por ejemplo:
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan la convención de `<PID>-<factory-name>.cfg.json` nomenclatura
+1. Abra el nuevo `.cfg.json` archivo y defina las combinaciones de clave y valor para los pares de propiedades y valores OSGi, siguiendo el formato [de configuración OSGi de](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)JSON.
+1. Guarde los cambios en el nuevo `.cfg.json` archivo
+1. Añada y envíe su nuevo archivo de configuración OSGi a Git
+
+### Generación de configuraciones de OSGi mediante el inicio rápido del SDK de AEM
+
+La consola web de AEM SDK Quickstart Jar se puede utilizar para configurar componentes OSGi y exportar configuraciones de OSGi como JSON. Esto resulta útil para configurar componentes OSGi proporcionados por AEM cuyas propiedades OSGi y sus formatos de valor pueden no ser bien entendidos por el desarrollador que define las configuraciones OSGi en el proyecto AEM. Tenga en cuenta que el uso de la interfaz de usuario de configuración de la consola web de AEM hace que se escriban `.cfg.json` archivos en el repositorio, por lo que debe tener en cuenta este hecho para evitar un posible comportamiento inesperado durante el desarrollo local, cuando las configuraciones de OSGi definidas por el proyecto de AEM pueden diferir de las configuraciones generadas.
+
+1. Inicie sesión en la consola web AEM de AEM SDK Quickstart Jar como usuario administrador
+1. Vaya a OSGi > Configuración
+1. Localice el componente OSGi para configurarlo y toque su título para editar
+   ![Configuración de OSGi](./assets/configuring-osgi/configuration.png)
+1. Edite los valores de las propiedades de configuración OSGi a través de la interfaz de usuario web según sea necesario
+1. Registre la identidad persistente (PID) en un lugar seguro; se utilizará más adelante para generar el JSON de configuración OSGi
+1. Toque Guardar
+1. Vaya a OSGi > Impresora de configuración del instalador OSGi
+1. Pegar en el PID copiado en el paso 5, asegúrese de que el Formato de serialización está establecido en &quot;OSGi Configurator JSON&quot;
+1. Toque Imprimir,
+1. La configuración OSGi en formato JSON se mostrará en la sección Propiedades de configuración serializadas
+   ![Impresora de configuración del instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. En su IDE, abra el `ui.apps` proyecto, ubique o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que destinatario los modos de ejecución en los que debería aplicarse la nueva configuración OSGi.
+1. En esta carpeta de configuración, cree un nuevo `<PID>.cfg.json` archivo. El PID es el mismo valor del paso 5.
+1. Pegue las Propiedades de configuración serializada del paso 10 en el `.cfg.json` archivo.
+1. Guarde los cambios en el nuevo `.cfg.json` archivo.
+1. Añada y envíe su nuevo archivo de configuración OSGi a Git.
 
 
-1. Rellene el archivo JSON con los pares de valor de clave de configuración OSGi
-
-   >[!NOTE]
-   >
-   >Si está configurando un servicio OSGi predeterminado, puede buscar los nombres de propiedad OSGi mediante `/system/console/configMgr`
-
-
-1. Guarde el archivo JSON en el proyecto. -->
-
-## Formato de propiedad de configuración en el control de código fuente {#configuration-property-format-in-source-control}
-
-La creación de una nueva propiedad de configuración OSGI se describe en la sección anterior para [Añadir una nueva configuración al repositorio](#creating-the-configuration-in-the-repository) .
-
-Siga estos pasos y modifique la sintaxis como se describe en las subsecciones siguientes:
+## Formatos de propiedad de configuración OSGi
 
 ### Valores en línea {#inline-values}
 
 Como es de esperar, los valores en línea tienen el formato de pares de nombre-valor estándar, siguiendo la sintaxis estándar JSON. Por ejemplo:
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
