@@ -2,7 +2,10 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 1%
 
 ---
 
@@ -15,6 +18,9 @@ En esta sección se describe cómo estructurar AEM como una configuración de Ap
 
 >[!NOTE]
 >Los usuarios de Windows necesitarán utilizar Windows 10 Professional u otras distribuciones que admitan Docker. Se trata de un requisito previo para ejecutar y depurar Dispatcher en un equipo local. Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux del SDK, pero el SDK de Windows se puede utilizar de forma similar.
+
+>[!WARNING]
+> Usuarios de Windows: la versión actual de AEM como herramienta de distribución local de servicios de nube (v2.0.20) no es compatible con Windows. Póngase en contacto con el servicio de asistencia [de](https://daycare.day.com/home.html) Adobe para recibir actualizaciones sobre la compatibilidad con Windows.
 
 ## Herramientas de despachante {#dispatcher-sdk}
 
@@ -266,7 +272,7 @@ Las granjas habilitadas deben ubicarse en la subcarpeta mencionada.
 
 **el archivo incluido (...) debe tener el nombre: ...**
 
-Hay dos secciones en la configuración del conjunto de servidores que **deben** incluir un archivo específico: `/renders` y `/allowedClients` en la `/cache` sección . Estas secciones deben tener el siguiente aspecto:
+Hay dos secciones en la configuración del conjunto de servidores que **deben** incluir un archivo específico: `/renders` y `/allowedClients` en la `/cache` sección. Estas secciones deben tener el siguiente aspecto:
 
 ```
 /renders {
