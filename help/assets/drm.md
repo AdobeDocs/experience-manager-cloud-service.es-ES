@@ -1,20 +1,23 @@
 ---
-title: Administración de derechos digitales en recursos de Adobe Experience Manager
-description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en AEM.
+title: Digital Rights Management [!DNL Adobe Experience Manager Assets] usa un servicio de nube.
+description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia [!DNL Experience Manager] en un servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+workflow-type: tm+mt
+source-wordcount: '1337'
+ht-degree: 7%
 
 ---
 
 
-# Administración de derechos digitales en Experience Manager Assets {#digital-rights-management-in-assets}
+# Digital Rights Management for assets {#digital-rights-management-in-assets}
 
-Los recursos digitales suelen estar asociados a una licencia, que especifica sus términos y duración de uso. Puesto que Recursos Adobe Experience Manager (AEM) está totalmente integrado con la plataforma AEM, puede administrar de forma eficaz la información de caducidad de recursos y los estados de los mismos. También puede asociar información de licencias con recursos.
+Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración del uso. Dado que [!DNL Adobe Experience Manager Assets] está totalmente integrada con la [!DNL Experience Manager] plataforma, puede administrar de forma eficaz la información de caducidad de recursos y los estados de recursos. También puede asociar información de licencias con recursos.
 
 ## Caducidad del recurso {#asset-expiration}
 
-La caducidad de los activos es una forma eficaz de aplicar los requisitos de licencia de los activos. Garantiza que el recurso publicado no se publique cuando caduque, lo que evita la posibilidad de cualquier infracción de licencia. Un usuario sin derechos de administrador no puede editar, copiar, mover, publicar ni descargar un recurso caducado.
+La caducidad de los activos es una forma eficaz de aplicar los requisitos de licencia de los activos. Garantiza que el recurso publicado no se publique cuando caduque, lo que evita la posibilidad de cualquier infracción de licencia. Un usuario sin permisos de administrador no puede editar, copiar, mover, publicar ni descargar un recurso caducado.
 
 Puede vista del estado de caducidad de un recurso en los siguientes lugares:
 
@@ -24,7 +27,7 @@ Puede vista del estado de caducidad de un recurso en los siguientes lugares:
 * **Carril** de referencias: También puede vista el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
 1. Desplácese al recurso para el que desea realizar una vista haciendo referencia a páginas web y recursos compuestos.
-1. Seleccione el recurso y toque o haga clic en el icono de navegación global.
+1. Seleccione el recurso y haga clic en el [!DNL Experience Manager] logotipo.
 1. Elija **[!UICONTROL Referencias]** en el menú.
 1. En el caso de los recursos caducados, el carril Referencias muestra el estado de caducidad del **[!UICONTROL recurso]** en la parte superior. Si el recurso tiene subrecursos caducados, el carril Referencias muestra el estado **[!UICONTROL Recurso con subrecursos]** Caducados.
 
@@ -32,7 +35,7 @@ Puede vista del estado de caducidad de un recurso en los siguientes lugares:
 
 Puede buscar recursos caducados, incluidos los subrecursos caducados, en el panel Buscar.
 
-1. En la consola Recursos, haga clic en el icono Buscar en la barra de herramientas para mostrar el campo Omniture Search.
+1. En la [!DNL Assets] consola, haga clic en la **[!UICONTROL opción Buscar]** de la barra de herramientas para mostrar el cuadro Omniture Search.
 
 1. Con el cursor en el cuadro Omniture Search, presione la tecla Intro para mostrar la página de resultados de la búsqueda.
 
@@ -42,15 +45,15 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 1. Seleccione **[!UICONTROL Caducado]**. Los recursos caducados se muestran en los resultados de la búsqueda.
 
-Al elegir la opción **[!UICONTROL Caducado]** , la consola Recursos solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de que Recursos AEM detecte que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
+Al elegir la opción **[!UICONTROL Caducado]** , la [!DNL Assets] consola solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de [!DNL Experience Manager] detectar que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
 
 Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo de Planificador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado de forma acorde.
 
 Además, si un fallo o error impide que el Planificador detecte los recursos caducados en el ciclo actual, el Planificador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado de caducidad.
 
-Para permitir que la consola de Assets muestre los recursos compuestos de referencia junto con los subrecursos caducados, configure un flujo de trabajo de **[!UICONTROL notificación de caducidad de Adobe CQ DAM]** en AEM Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
-1. Abra AEM Configuration Manager.
+1. Abra [!DNL Experience Manager] Configuration Manager.
 1. Seleccione **[!UICONTROL Adobe CQ DAM Expiry Notification]**. De forma predeterminada, está seleccionado el Planificador **[!UICONTROL basado en]** tiempo, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
 
 1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; activa el trabajo a las 00 horas.
@@ -70,64 +73,64 @@ Para permitir que la consola de Assets muestre los recursos compuestos de refere
 
 ## Estados de activos {#asset-states}
 
-La consola Recursos de Recursos de Recursos Adobe Experience Manager (AEM) puede mostrar varios estados para los recursos. Según el estado actual de un recurso concreto, su vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
+La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según el estado actual de un recurso concreto, su vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
-1. En la interfaz de usuario de Recursos, seleccione un recurso.
+1. En la interfaz de usuario, seleccione un recurso. [!DNL Assets]
 
-1. Pulse o haga clic en el icono **[!UICONTROL Publicar]** de la barra de herramientas. Si no puede ver el icono **Publicar** en la barra de herramientas, pulse o haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque el icono **[!UICONTROL Publicar]**.
+1. Haga clic en **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
 
 1. Elija **[!UICONTROL Publicar]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora en que se publicó el recurso.
 
-1. En la interfaz de usuario de Recursos, seleccione un recurso y toque o haga clic en el icono **[!UICONTROL Propiedades]** para mostrar la página de detalles del recurso.
+1. Para mostrar la página de detalles del recurso, en la [!DNL Assets] interfaz, seleccione un recurso y haga clic en **[!UICONTROL Propiedades]**.
 
-1. En la ficha Avanzado, y defina una fecha de caducidad para el recurso en el campo **[!UICONTROL Caduca]** en.
+1. En la ficha [!UICONTROL Avanzado] , establezca una fecha de caducidad para el recurso en el campo **[!UICONTROL Caduca]** .
 
 1. Haga clic en **[!UICONTROL Guardar]** y, a continuación, en **[!UICONTROL Cerrar]** para mostrar la consola Recursos.
 1. El estado de publicación del recurso indica un estado caducado en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, el estado del recurso se muestra como **[!UICONTROL Caducado]**.
 
-1. En la consola Recursos, seleccione una carpeta y cree una tarea de revisión en ella.
+1. En la [!DNL Assets] consola, seleccione una carpeta y cree una tarea de revisión en ella.
 1. Revise y apruebe/rechace los recursos de la tarea de revisión y haga clic en **[!UICONTROL Completar]**.
 1. Vaya a la carpeta para la que creó la tarea de revisión. El estado de los recursos aprobados/rechazados se muestra en la parte inferior de la vista de tarjetas. En la vista de lista, los estados de aprobación y caducidad se muestran en las columnas correspondientes.
 
-1. Para buscar recursos en función de su estado, toque o haga clic en el icono **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
+1. Para buscar recursos según su estado, haga clic en **[!UICONTROL Buscar]** para mostrar la barra de Omniture.
 
-1. Pulse la tecla Intro y, a continuación, toque o haga clic en el icono de AEM para mostrar el panel Buscar.
-1. En el panel Buscar, pulse o haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en AEM Assets.
+1. Pulse Volver y haga clic en [!DNL Experience Manager] para mostrar el panel de búsqueda.
+1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
-1. Pulse o haga clic en **[!UICONTROL Estado de aprobación]** y haga clic en la opción correspondiente para buscar recursos aprobados o rechazados.
+1. Click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
 
 1. Para buscar recursos en función de su estado de caducidad, seleccione **[!UICONTROL Estado de caducidad]** en el panel Buscar y elija la opción adecuada.
 
 1. También puede buscar recursos en función de una combinación de estados en varias facetas de búsqueda. Por ejemplo, puede buscar recursos publicados que hayan sido aprobados en una tarea de revisión y que aún no hayan caducado seleccionando las opciones correspondientes en las facetas de búsqueda.
 
-## Administración de derechos digitales en Experience Manager Assets {#digital-rights-management-in-assets-1}
+## Administración de derechos digitales en [!DNL Assets] {#digital-rights-management-in-assets-1}
 
-Esta función fuerza la aceptación del contrato de licencia antes de poder descargar un recurso con licencia desde Recursos Adobe Experience Manager (AEM).
+Esta función fuerza la aceptación del contrato de licencia antes de poder descargar un recurso con licencia desde [!DNL Adobe Experience Manager Assets].
 
-Si selecciona un recurso protegido y hace clic en el icono **[!UICONTROL Descargar]** , se le redirigirá a una página de licencia en la que acepte el contrato de licencia. Si no acepta el contrato de licencia, se desactiva el botón **[!UICONTROL Descargar]** .
+Si selecciona un recurso protegido y hace clic en **[!UICONTROL Descargar]**, se le redirigirá a una página de licencia para aceptar el contrato de licencia. Si no acepta el contrato de licencia, la opción **[!UICONTROL Descargar]** no está disponible.
 
 Si la selección contiene varios recursos protegidos, selecciónelos de uno en uno, acepte el contrato de licencia y continúe con la descarga del recurso.
 
 Un recurso se considera protegido si se cumple cualquiera de estas condiciones:
 
-* La propiedad de metadatos del recurso `xmpRights:WebStatement` apunta a la ruta de la página de CQ que contiene el contrato de licencia del recurso.
+* La propiedad de metadatos del recurso `xmpRights:WebStatement` apunta a la ruta de la página que contiene el contrato de licencia del recurso.
 * El valor de la propiedad de metadatos del recurso `adobe_dam:restrictions` es un HTML sin procesar que especifica el contrato de licencia.
 
 >[!NOTE]
 >
->La ubicación `/etc/dam/drm/licences` utilizada para almacenar licencias en versiones anteriores de AEM ya no se utiliza.
+>La ubicación `/etc/dam/drm/licences` utilizada para almacenar licencias en versiones anteriores de [!DNL Experience Manager] está en desuso.
 >
->Si crea o modifica páginas de licencia o las transfiere desde versiones anteriores de AEM, Adobe recomienda que almacene las páginas en `/apps/settings/dam/drm/licenses` o `/conf/*/settings/dam/drm/licenses`.
+>Si crea o modifica páginas de licencia o las transfiere desde versiones anteriores, Adobe recomienda almacenarlas en [!DNL Experience Manager] o `/apps/settings/dam/drm/licenses` `/conf/*/settings/dam/drm/licenses`.
 
-### Descargar recursos DRM {#downloading-drm-assets}
+### Descargar recursos protegidos con DRM {#downloading-drm-assets}
 
-1. En la vista Tarjeta, seleccione los recursos que desee descargar y haga clic en el icono **[!UICONTROL Descargar]** .
+1. En la vista de tarjeta, seleccione los recursos que desea descargar y haga clic en **[!UICONTROL Descargar]**.
 1. En la página **[!UICONTROL Administración de derechos de autor]**, seleccione el recurso que desee descargar de la lista.
-1. En el panel Licencia, elija **[!UICONTROL Aceptar]**. Aparece una marca de graduación junto al recurso para el que acepta el contrato de licencia. Toque o haga clic en el botón **[!UICONTROL Descargar]** .
+1. En el panel [!UICONTROL Licencia] , elija **[!UICONTROL Aceptar]**. Aparece una marca de verificación junto al recurso. Haga clic en la opción **[!UICONTROL Descargar]** .
 
    >[!NOTE]
    >
-   >El botón **[!UICONTROL Descargar]** solo se activa cuando se decide aceptar el contrato de licencia de un recurso protegido. Sin embargo, si la selección incluye recursos protegidos y no protegidos, solo los recursos protegidos aparecen en el panel izquierdo; el botón **[!UICONTROL Descargar]** se habilitará para obtener los recursos no protegidos. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
+   >The **[!UICONTROL Download]** option is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the pane and the **[!UICONTROL Download]** option is enabled to download the unprotected assets. Para aceptar simultáneamente acuerdos de licencia para varios recursos protegidos, seleccione los recursos de la lista y, a continuación, elija **[!UICONTROL Aceptar]**.
 
-1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Descargar]** para descargar el recurso o sus representaciones.
+1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]** para descargar el recurso o sus representaciones.
