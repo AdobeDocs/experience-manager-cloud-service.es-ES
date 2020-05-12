@@ -3,9 +3,9 @@ title: Digital Rights Management [!DNL Adobe Experience Manager Assets] usa un s
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia [!DNL Experience Manager] en un servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1351'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 Al elegir la opción **[!UICONTROL Caducado]** , la [!DNL Assets] consola solo muestra los recursos y subrecursos caducados a los que hacen referencia los recursos compuestos. Los recursos compuestos que hacen referencia a subrecursos caducados no se muestran inmediatamente después de que caduquen los subrecursos. En su lugar, se muestran después de [!DNL Experience Manager] detectar que hacen referencia a subrecursos caducados la próxima vez que se ejecute el Planificador.
 
-Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo de Planificador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado de forma acorde.
+Si modifica la fecha de caducidad de un recurso publicado a una fecha anterior al ciclo de Planificador actual, el programa seguirá detectando este recurso como recurso caducado la próxima vez que se ejecute y reflejará su estado de forma acorde. La fecha de caducidad de un recurso se muestra de forma diferente para los usuarios de distintos horarios.
 
 Además, si un fallo o error impide que el Planificador detecte los recursos caducados en el ciclo actual, el Planificador vuelve a examinar estos recursos en el siguiente ciclo y detecta su estado de caducidad.
 
