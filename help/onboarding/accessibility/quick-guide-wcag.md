@@ -2,7 +2,10 @@
 title: Guía rápida de WCAG 2.1
 seo-title: Guía rápida de WCAG 2.1
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 93%
 
 ---
 
@@ -11,13 +14,21 @@ source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 Adobe Experience Manager (AEM) as a Cloud Service se ha desarrollado para maximizar el cumplimiento de las directrices de accesibilidad del contenido web.
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://www.w3.org/TR/WCAG/) son un conjunto de directrices reconocidas internacionalmente desarrolladas por el [World Wide Web Consortium (W3C)](https://www.w3.org/) en el marco de su [Iniciativa de accesibilidad a la web (WAI)](https://www.w3.org/WAI/).
+
+>[!NOTE]
+> 
+> WCAG 2.1 actualiza la versión anterior, WCAG 2.0 de 2008. Consulte [WCAG 2.1: Comparación con WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+
+>[!NOTE]
+> 
+>Actualmente se está desarrollando una [versión actualizada de las directrices, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) pero no se examinará en este momento.
 
 WCAG 2.1 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
 Por ejemplo, describir una imagen (o cualquier otro contenido no textual) mediante el uso del `alt` atributo en HTML beneficia en gran medida a las personas no videntes o con visión parcial. La descripción textual del `alt` atributo puede convertirse en salida de voz o transmitirse a pantallas de braille actualizables electrónicas.
 
-Además, WCAG 2.1 puede dar lugar a ventajas para otros beneficiarios, incluidas las personas que pueden considerarse *con discapacidades de situación*. Las personas que, por circunstancias como la tecnología de navegación, la velocidad de conexión de red o el entorno de navegación, pueden experimentar barreras similares a las de las personas con discapacidad.
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. Las personas que, por circunstancias como la tecnología de navegación, la velocidad de conexión de red o el entorno de navegación, pueden experimentar barreras similares a las de las personas con discapacidad.
 
 Con Adobe Experience Manager, los autores de contenido o los propietarios de sitios web pueden crear contenido web que cumpla los criterios de éxito relevantes de WCAG 2.1 de nivel A y de nivel AA.
 
@@ -65,14 +76,14 @@ Para obtener más detalles:
 * Cada directriz consta de uno o más **criterios de éxito**.
 * Los criterios de éxito se escriben como afirmaciones, que son `True` o `False` para una página web determinada.
 * Los criterios de éxito pueden incluir una u otra opción, o excepciones, que son situaciones en las que no es necesario reunir los criterios de éxito.
-* Los criterios de éxito se numeran según la directriz y el principio superior, de 1.1.1 a 4.1.1. También tienen un nombre corto que resume la intención del criterio, para facilitar la referencia. Por ejemplo, el criterio de éxito 1.1.1 es una alternativa no textual.
+* Los criterios de éxito se numeran según la directriz y el principio superior, de 1.1.1 a 4.1.1. También tienen un nombre corto que resume la intención del criterio, para facilitar la referencia. Por ejemplo, el criterio de éxito 1.1.1 es Contenido no textual.
 * Los criterios de éxito incluyen una lista de las **técnicas** relacionadas (que se describen más adelante).
 
 ## Recursos de apoyo {#supporting-resources}
 
 Además de los componentes básicos del Grupo de Acción Mundial 2.1 de los Principios, Directrices y Criterios de Éxito, hay una serie de documentos de apoyo. Algunos de ellos proporcionan consejos específicos sobre cómo cumplir con los aspectos de las directrices, otros son referencias más generales que ayudan a los autores web, diseñadores y desarrolladores de todas las capacidades a comprender y utilizar WCAG 2.1 con la mayor eficacia posible.
 
-Si bien WCAG 2.1 es un documento estable y no cambiará, la mayoría de estos recursos de apoyo son documentos dinámicos; cambiarán y crecerán con el tiempo, a medida que surjan nuevas tecnologías, y hay nuevos ejemplos de cómo se puede lograr la accesibilidad web.
+Si bien el WCAG 2.1 es un documento estable y no cambiará, la mayoría de estos recursos de apoyo son documentos dinámicos; cambiarán y crecerán con el tiempo, a medida que surjan nuevas tecnologías, y se encuentran nuevos ejemplos de cómo se puede lograr la accesibilidad web.
 
 ### Recursos WCAG 2.1 {#wcag-resources}
 
@@ -87,7 +98,7 @@ Esta lista no pretende ser exhaustiva, sino que presenta una introducción a los
 
 ### Novedades de WCAG 2.1 {#what-is-new}
 
-[Novedades de WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) proporciona información valiosa sobre la diferencia entre WCAG y 2.0 y WCAG 2.1.
+[Novedades de WCAG 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) proporciona información valiosa sobre el delta entre WCAG 2.0 y WCAG 2.1.
 
 En la sección [WCAG 2.0 y 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) se aclara el estado de su relación.
 
@@ -116,7 +127,7 @@ Los detalles de las técnicas incluyen una descripción, aplicabilidad, ejemplos
 
 La lista de las técnicas no está completa y la WAI está actualizando constantemente la lista con nuevos ejemplos, que reflejan los avances en la tecnología de la Web, los enfoques de diseño y los resultados de las investigaciones. Así que vale la pena revisar periódicamente la lista de técnicas para ver las nuevas incorporaciones.
 
-### Explicación de WCAG 2.1 {#understanding-wcag}
+### Comprender WCAG 2.1 {#understanding-wcag}
 
 Esto se refiere a una serie de documentos, que proporcionan consejos para ayudar a los lectores a apreciar el propósito de directrices específicas y criterios de éxito. Puede [descargar una introducción, además de vínculos a información más detallada](https://www.w3.org/WAI/WCAG21/Understanding/).
 
@@ -138,7 +149,7 @@ Puede encontrar un ejemplo en: [Entender los criterios de éxito 1.1.1 (&quot;Co
 
 ### Cómo cumplir con WCAG 2.1 {#how-to-meet-wcag}
 
-La sección &quot;Cómo cumplir&quot; está disponible en la página [Cómo cumplir con WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). En esta sección se ofrece una presentación alternativa del WCAG, que permite perfeccionar el contenido de las directrices para adaptarlo a los intereses o circunstancias del lector. Los lectores pueden filtrar las técnicas de criterios de éxito que deseen aplicar a la vista especificando tecnologías de contenido web específicas, como hojas de estilo en cascada o scripts, o especificando un nivel de prioridad determinado.
+La sección &quot;Cómo cumplir&quot; está disponible en la página [Cómo cumplir con WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Esta sección ofrece una presentación alternativa de WCAG, que permite a los lectores restringir el contenido de las directrices a las más relevantes para sus propios intereses y/o circunstancias. Los lectores pueden filtrar las técnicas de criterios de éxito que deseen aplicar a la vista especificando tecnologías de contenido web específicas, como hojas de estilo en cascada o scripts, o especificando un nivel de prioridad determinado.
 
 Sin filtrar, este recurso proporciona todos los criterios de éxito agrupados por directriz. Para cada criterio de éxito, se proporciona lo siguiente:
 
