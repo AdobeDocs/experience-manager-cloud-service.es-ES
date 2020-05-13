@@ -2,10 +2,10 @@
 title: Guía rápida de WCAG 2.1
 seo-title: Guía rápida de WCAG 2.1
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 93%
+source-wordcount: '1758'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://
 
 >[!NOTE]
 > 
-> WCAG 2.1 actualiza la versión anterior, WCAG 2.0 de 2008. Consulte [WCAG 2.1: Comparación con WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+> WCAG 2.1 actualiza la versión anterior de WCAG 2.0 desde 2008. Consulte [WCAG 2.1: Comparación con WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 > 
@@ -37,25 +37,19 @@ Por lo tanto, comprender los objetivos de WCAG 2.1 y cómo se estructuran las di
 La intención de WCAG 2.1 es proporcionar directrices que:
 
 * Son **neutrales tecnológicamente:**
-es decir, las directrices que pueden aplicarse a una amplia gama de formatos de contenido web, no solo a HTML. Por lo tanto, WCAG 2.1 puede cubrir el contenido generado por PDF, Flash, JavaScript y otras tecnologías web actuales y futuras, o proporcionado por ellas. <!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+es decir, las directrices que pueden aplicarse a una amplia gama de formatos de contenido web, no solo a HTML. Por lo tanto, WCAG 2.1 puede cubrir el contenido generado por PDF, Flash, JavaScript y otras tecnologías web actuales y futuras, o proporcionado por ellas.
 
 * Son **comprobables:**
-cada directriz está redactada de manera que pueda probarse de manera objetiva para garantizar que un grupo de expertos en accesibilidad esté generalmente de acuerdo en que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito. <!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+cada directriz está redactada de manera que pueda probarse de manera objetiva para garantizar que un grupo de expertos en accesibilidad esté generalmente de acuerdo en que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito.
 
-* Apoyar la **implementación contextual y priorizada:**
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* Apoyar la implementación contextual y **priorizada:**
+Las directrices de WCAG 2.1 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidad. Esto permite a los autores adoptar una decisión fundamentada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible* . Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o puede requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
 
 Estos objetivos han influido de manera significativa en la estructura de WCAG 2.1.
 
 >[!NOTE]
 >
 >No es posible crear un sitio web que atienda a cada discapacidad o tipo de persona posible. El propósito de WCAG 2.1 es ayudar a los autores de la Web a crear sitios que sean, en la medida de lo posible, accesibles dentro de ciertas condiciones y dentro de la razón.
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## Estructura {#structure}
 
@@ -115,7 +109,7 @@ Se puede acceder a las técnicas:
 * Mediante recopilación (las técnicas pueden ser generales o estar relacionadas con una tecnología o un formato específicos, como HTML, CSS o Scripts del lado del cliente), o
 * A partir de criterios de éxito relacionados. Las técnicas se pueden aplicar a más de un criterio de éxito.
 
-Cada técnica tiene un número único, que se relaciona con su colección. Por ejemplo, una de las técnicas de ARIA es la *Técnica ARIA2: Identificar los campos obligatorios con la propiedad &quot;requerido&quot;*.
+Cada técnica tiene un número único, que se relaciona con su colección. For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 Las técnicas pueden ser suficientes, aconsejables o un error:
 
