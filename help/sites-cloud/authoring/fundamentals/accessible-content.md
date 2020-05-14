@@ -2,10 +2,10 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Ayude a que las personas con discapacidades puedan acceder al contenido web y utilizarlo
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 89%
+source-wordcount: '13873'
+ht-degree: 87%
 
 ---
 
@@ -38,14 +38,14 @@ Las directrices se clasifican según tres niveles de conformidad: Nivel A (el m�
 
 Al crear su sitio, debe determinar el nivel general en el que desea que se ajuste.
 
-La siguiente sección presenta las [directrices WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) con criterios de éxito vinculados a los [niveles de conformidad](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) de los niveles A y AA.
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >En este documento utilizamos:
 >
->* Los nombres abreviados para las [directrices WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)
->* La numeración utilizada en las [directrices WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) para ayudar a las referencias cruzadas en la página web de WCAG.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## Principio 1: perceptible  {#principle-perceivable}
@@ -133,7 +133,7 @@ Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen 
 
 [Directrices 1.2 Medios basados en el tiempo: proporcionar alternativas para medios basados en el tiempo.](https://www.w3.org/TR/WCAG/#time-based-media)
 
-Trata el contenido de la página web *basado en el tiempo*. Abarca el contenido que puede reproducir el usuario (como vídeos, audios y contenido animado) y se puede pregrabar o reproducir en vivo.
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Solo audio y solo vídeo (pregrabado) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -157,7 +157,7 @@ Proporcionar esta información en un formato diferente, como texto (o audio para
 
 #### Cómo cumplir: Solo audio y solo vídeo (pregrabado) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* Si el contenido es audio pregrabado sin vídeo (como podcast):
+* Si el contenido es audio pregrabado sin vídeo (como un podcast):
    * Proporcione un enlace inmediatamente antes o después del contenido para una transcripción textual del contenido del audio.
 La transcripción debe ser una página HTML con un texto equivalente a todo el contenido hablado o no hablado importante, además de una indicación de quién habla, una descripción del escenario, expresiones vocales y una descripción de cualquier otro audio significativo.
 * Si el contenido es una animación o un vídeo pregrabado sin audio:
@@ -200,13 +200,13 @@ Los subtítulos pueden ser:
 
 Utilice subtítulos cerrados siempre que sea posible, ya que proporciona a los usuarios la opción de verlos o de no verlos.
 
-Para los subtítulos cerrados necesitará crear y proporcionar un archivo de subtítulos sincronizados en un formato adecuado (como [SMIL](https://www.w3.org/AudioVideo/)) a lo largo del archivo de vídeo (los detalles de cómo hacerlo van más allá de esta guía, pero hemos proporcionado enlaces a varios tutoriales en [Más información: Subtítulos (pregrabados) (1.2.2)](#more-information-captions-pre-recorded)). Asegúrese de proporcionar una nota o activar la función de rótulo en el reproductor de vídeo para que los usuarios sepan que los subtítulos están disponibles para el vídeo.
+For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Prerecorded) (1.2.2)](#more-information-captions-prerecorded). Asegúrese de proporcionar una nota o activar la función de rótulo en el reproductor de vídeo para que los usuarios sepan que los subtítulos están disponibles para el vídeo.
 
 Si necesita utilizar subtítulos abiertos, incorpore el texto en la pista de vídeo. Esto se puede conseguir utilizando aplicaciones de edición de vídeo que permiten superponer títulos en el vídeo.
 
-#### Más información: Subtítulos (en vivo) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html):
+* [Entender los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Cumplir los criterios de éxito 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -242,7 +242,10 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 
 * [Entender los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [Cumplir los criterios de éxito 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### Subtítulos (en vivo) (1.2.4)    {#captions-live}
 
@@ -252,7 +255,7 @@ Los detalles exactos de cómo crear vídeos descritos por audio quedan fuera del
 
 #### Objetivo: Subtítulos (en vivo) (1.2.4)  {#purpose-captions-live}
 
-Este criterio de éxito es idéntico al de [Subtítulos (pregrabados)](#captions-pre-recorded) puesto que se enfrenta a las barreras de accesibilidad que experimentan las personas sordas o que sufren deficiencias auditivas, excepto por el hecho de que este criterio de éxito trata las presentaciones en vivo tales como retransmisiones vía Internet.
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### Cómo cumplir: Subtítulos (en vivo) (1.2.4) {#how-to-meet-captions-live}
 
@@ -363,44 +366,46 @@ Puede asegurarse de que las páginas Web tengan la estructura adecuada mediante 
       >Aunque son igual de eficaces, `<strong>` y `<em>` son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar `<strong>` y `<em>` (en lugar de `<b>` y `<i>`) cuando desarrolle su proyecto.
 
 
-* **Tablas de datos complejos**: en algunos casos en los que hay tablas complejas con dos o más niveles de encabezados, las Propiedades de la tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas es necesario crear relaciones directas entre los encabezados y sus celdas utilizando el **encabezado** y **atributos de identificación**. Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
+* **Tablas de datos complejos**: en algunos casos en los que hay tablas complejas con dos o más niveles de encabezados, las Propiedades de la tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas es necesario crear relaciones directas entre los encabezados y sus celdas utilizando el **encabezado** y **atributos de identificación**.
 
    >[!NOTE]
    >
    >El atributo de identificación no se encuentra disponible en una instalación lista para usar. Se puede activar configurando las normas HTML y el serializador en RTE.
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   Por ejemplo, en la tabla siguiente, los encabezados y las identificaciones se comparan para crear una asociación programática para los usuarios de tecnología de asistencia.
 
-Para conseguirlo en AEM, añada las especificaciones directamente utilizando el modo de edición de la fuente.
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->Esta funcionalidad no está inmediatamente disponible en una instalación estándar. Requiere una configuración de RTE, normas HTML y un serializador.
+   Para conseguirlo en AEM, añada las especificaciones directamente utilizando el modo de edición de la fuente.
+
+   >[!NOTE]
+   >
+   >Esta funcionalidad no está inmediatamente disponible en una instalación estándar. Requiere una configuración de RTE, normas HTML y un serializador.
 
 #### Más información: Información y relaciones (1.3.1) {#more-information-info-and-relationships}
 
@@ -495,9 +500,6 @@ Si el color se utiliza como señal para proporcionar información, debe proporci
 * [Entender los criterios de éxito 1.4.1](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [Cumplir los criterios de éxito 1.4.1](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### Control de audio (1.4.2){#audio-control}
 
 * Criterios de éxito 1.4.2
@@ -562,7 +564,7 @@ Asegúrese de que el texto contrasta lo suficiente con el fondo. Las relaciones 
 
 >[!NOTE]
 >
->Para ayudar con las conversiones a otras unidades:
+>Los siguientes sitios pueden ayudar con las conversiones a otras unidades:
 >
 >* [Calculadora Px a Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Conversión de tamaño de fuente: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -874,7 +876,7 @@ John Smith’s publications
 >
 >El fragmento anterior representa una ilustración; es recomendable utilizar el componente **Imagen**.
 
-Aunque es aconsejable proporcionar un texto para el vínculo que identifique su objetivo sin necesidad de contexto adicional, no siempre es posible. Los vínculos de contexto libre se pueden utilizar en los casos siguientes, cuyos ejemplos HTML se pueden encontrar en [Cumplir los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Aunque es aconsejable proporcionar texto de vínculo que identifique el propósito del vínculo sin necesidad de contexto adicional, se reconoce que esto no siempre es posible. Los vínculos de contexto libre se pueden utilizar en los casos siguientes, cuyos ejemplos HTML se pueden encontrar en [Cumplir los criterios de éxito 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Cuando el texto del vínculo forme parte de una lista de vínculos relacionados y cuando el elemento de la lista que incluye el vínculo proporcione contexto suficiente.
 * Cuando el objetivo del vínculo se pueda identificar claramente gracias al párrafo *anterior* (y no gracias al siguiente).
