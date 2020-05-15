@@ -1,7 +1,7 @@
 ---
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
 
 ---
@@ -244,7 +244,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 >
 >Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
-### Copiar y pegar una página   {#copying-and-pasting-a-page}
+### Copiar y pegar una página  {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus páginas secundarias en una nueva ubicación:
 
@@ -268,8 +268,8 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
    Puede:
 
-   1. Seleccione el icono **Pegar** página: En esta ubicación se creará una copia de la página original y de las páginas secundarias.
-   1. Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios** . Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
+   1. Seleccione el icono **Pegar** página: En esta ubicación, se creará una copia de la página original y de las páginas secundarias.
+   1. Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios**. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
    >[!NOTE]
    >
    >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
@@ -364,13 +364,13 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
    >[!NOTE]
    >
-   >Como medida de seguridad, el icono de página **Eliminar** no está disponible como acción rápida.
+   >Como medida de seguridad, el icono **Eliminar** página no está disponible como acción rápida.
 
-1. Un cuadro de diálogo solicitará confirmación.
+1. Aparecerá un cuadro de diálogo que le pedirá que confirme la acción.
 
    ![Cuadro de diálogo Eliminar](/help/sites-cloud/authoring/assets/delete-page.png)
 
-   * **¿Seguro que quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
+   * **¿Quiere archivar las páginas antes de la eliminación?** - Si se selecciona, las versiones de las páginas seleccionadas para su eliminación se crearán al eliminarlas.
       * [Las versiones se pueden restaurar más adelante.](/help/sites-cloud/authoring/features/page-versions.md)
       * Las páginas eliminadas sin versiones anteriores no se pueden restaurar.
    * Seleccione **Cancelar** para cancelar la acción.
