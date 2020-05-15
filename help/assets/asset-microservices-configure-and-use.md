@@ -3,7 +3,10 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 3%
 
 ---
 
@@ -171,3 +174,7 @@ El servicio Ejecutor de flujo de trabajo personalizado (`com.adobe.cq.dam.proces
 > La consola web OSGi, a diferencia de las implementaciones de servicios locales y gestionados de AEM, no está disponible directamente en las implementaciones de servicios en la nube.
 
 Para obtener más información sobre qué paso de flujo de trabajo estándar se puede utilizar en el flujo de trabajo posterior al procesamiento, consulte los pasos de [flujo de trabajo en el flujo de trabajo](developer-reference-material-apis.md#post-processing-workflows-steps) posterior al procesamiento en la referencia del desarrollador.
+
+## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
+
+* Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
