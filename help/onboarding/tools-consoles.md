@@ -1,7 +1,7 @@
 ---
 title: Consolas de herramientas
 description: Obtenga información sobre las distintas consolas de herramientas en AEM.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
@@ -90,12 +90,12 @@ Se puede acceder a estas consolas desde el [panel Herramientas de navegación gl
    <td>Asignación automática</td>
   </tr>
   <tr>
-   <td>Sitios</td>
+   <td>Sites</td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Modelos</td>
+   <td>Planes</td>
   </tr>
   <tr>
    <td> </td>
@@ -110,7 +110,7 @@ Se puede acceder a estas consolas desde el [panel Herramientas de navegación gl
    <td>Comprobador de vínculos externos<br /> </td>
   </tr>
   <tr>
-   <td>Recursos</td>
+   <td>Assets</td>
    <td> </td>
   </tr>
   <tr>
@@ -215,11 +215,11 @@ Se puede acceder a estas consolas desde el [panel Herramientas de navegación gl
   </tr>
   <tr>
    <td> </td>
-   <td>Servicios en la nube heredados</td>
+   <td>Cloud Services heredados</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Servicios de traducción en la nube</td>
+   <td>Cloud Services de traducción</td>
   </tr>
   <tr>
    <td> </td>
