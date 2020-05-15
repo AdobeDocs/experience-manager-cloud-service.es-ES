@@ -4,14 +4,17 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '4284'
+ht-degree: 12%
 
 ---
 
 
 # Manage assets {#manage-assets}
 
-En este artículo se describe cómo administrar y editar recursos en Recursos Adobe Experience Manager (AEM). Para administrar fragmentos de contenido, consulte Recursos de fragmentos [de contenido](content-fragments/content-fragments.md) .
+En este artículo se describe cómo administrar y editar recursos en Recursos Adobe Experience Manager. Para administrar fragmentos de contenido, consulte Recursos de fragmentos [de contenido](content-fragments/content-fragments.md) .
 
 ## Crear carpetas {#creating-folders}
 
@@ -183,7 +186,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    **Eliminación de una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, toque o haga clic en el icono **[!UICONTROL Eliminar representación]** de la barra de herramientas.
+   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, toque o haga clic en el icono **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez que se haya completado el procesamiento de recursos. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o para eliminar los recursos y volver a cargar los recursos eliminados.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -315,7 +318,7 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
 1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
 
-## Búsqueda de recursos {#search-assets}
+## Buscar recursos {#search-assets}
 
 La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM.
 
