@@ -1,7 +1,7 @@
 ---
 sub-product: 'AEM Assets as a Cloud Service '
 user-guide-title: 'AEM Assets as a Cloud Service '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
