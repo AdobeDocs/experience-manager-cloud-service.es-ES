@@ -3,7 +3,10 @@ title: Comprender los recursos de Experience Manager como una interfaz de usuari
 description: Familiarícese con Recursos como espacio de trabajo, interfaz y elementos de interfaz de usuario de Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+workflow-type: tm+mt
+source-wordcount: '37'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +17,16 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 TBD: Removing this article for now from TOC.
 Need to rewrite this getting started content post-GA.
 
--->
-
-Información general sobre la experiencia de la página principal.
-Partes de la interfaz de usuario que llevan a diferentes funciones accesibles desde aquí.
-Cómo llegar a la IU específica de Recursos y dónde buscar realizar tareas específicas de DAM.
-Cómo navegar, dónde buscar, encontrar flujos de trabajo, hacer configuraciones, comprobar informes, etc.
-Cómo encontrar vínculos de soporte y documentos, información de perfil, etc.
+Topics to be covered:
+* Overview of the home page experience.
+* Parts of the UI that lead to different capabilities accessible from here.
+* How to reach Assets specific UI and where to look to do DAM specific tasks.
+* How to navigate, where to search, find workflows, do configurations, check reports, etc.
+* How to find support and docs links, profile info, etc.
+* Embed videos from Tech Mktg, if any.
+* Look for videos on YT and blog posts on the Internet for introductions to AEMaaCS Assets.
 
 >[!MORELIKETHIS]
-
+>
+>* [Basic handling for Sites]
+-->
