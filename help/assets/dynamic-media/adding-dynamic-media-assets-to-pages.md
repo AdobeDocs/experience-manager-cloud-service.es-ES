@@ -2,7 +2,10 @@
 title: Adición de recursos de Dynamic Media a las páginas
 description: Cómo agregar componentes de Dynamic Media a una página en AEM
 translation-type: tm+mt
-source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
+source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+workflow-type: tm+mt
+source-wordcount: '3132'
+ht-degree: 32%
 
 ---
 
@@ -19,14 +22,14 @@ Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
-Agregar un componente de Dynamic Media, Interactive Media, Panoramic Media o Video 360 Media a una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
+Añadir un componente Medios dinámicos, Medios interactivos, Medios panorámicas o Medios de vídeo 360 a una página es lo mismo que agregar un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
 
-**Adición de un componente de Dynamic Media a una página**
+**Añadir un componente de Dynamic Media en una página**
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
 1. En el panel izquierdo, toque el icono **[!UICONTROL Componentes]** y, a continuación, filtre para Medios dinámicos.
 
-   Si no hay componentes de Dynamic Media disponibles, debe activar o activar los componentes de Dynamic Media. Consulte [Edición de plantillas - Autores](/help/sites-cloud/authoring/features/templates.md) de plantillas para obtener más información.
+   Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba activar los componentes de Dynamic Media que desee utilizar. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,6 +52,33 @@ Agregar un componente de Dynamic Media, Interactive Media, Panoramic Media o Vid
    Componente Dynamic Media Video 360 Media.
 
 1. Cuando haya terminado, toque la marca de verificación para guardar los cambios cerca de la esquina superior derecha del cuadro de diálogo.
+
+### Activación de componentes de Dynamic Media {#enabling-dynamic-media-components}
+
+Si no hay componentes de Dynamic Media disponibles para agregar a una página, es probable que primero deba habilitar los componentes que desee utilizar.
+
+1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
+1. En la parte izquierda de la barra de herramientas, cerca de la parte superior de la página, toque el icono Información de página y, a continuación, **[!UICONTROL Editar plantilla]** en la lista desplegable.
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque **[!UICONTROL Estructura]**.
+
+   ![Política](/help/assets/assets-dm/structure-mode.png)
+
+1. Cerca de la parte inferior de la página, toque el Contenedor **** Diseño para abrir su barra de herramientas y, a continuación, toque el icono Política.
+1. En la página Contenedor **** Diseño, bajo el encabezado **[!UICONTROL Propiedades]** , asegúrese de que la ficha Componentes **** permitidos está seleccionada.
+
+   ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
+
+1. Desplácese hasta que vea Medios **[!UICONTROL dinámicos]**.
+1. Toque el icono > situado a la izquierda de Medios **[!UICONTROL dinámicos]** para expandir la lista y seleccione los componentes de Dynamic Media que desee activar.
+
+   ![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+
+1. Cerca de la esquina superior derecha de la página de Contenedor **[!UICONTROL de]** diseño, toque el icono Listo (marca de verificación).
+
+1. En la parte derecha de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, toque Contenido **** inicial y, a continuación, [agregue un componente Medios dinámicos a una página](#adding-a-dynamic-media-component-to-a-page) como de costumbre.
 
 ## Localización de componentes de Dynamic Media {#localizing-dynamic-media-components}
 
@@ -137,7 +167,7 @@ You can edit the following Dynamic Media Settings by tapping the **[!UICONTROL E
 
 * **[!UICONTROL Título]**: permite cambiar el título de la imagen.
 
-* **[!UICONTROL Texto]** alternativo: Agregue un título a la imagen para los usuarios que tienen gráficos desactivados.
+* **[!UICONTROL Texto]** alternativo: Añada un título a la imagen para aquellos usuarios que tengan los gráficos desactivados.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -168,7 +198,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    Con los modificadores de visor, por ejemplo, puede hacer lo siguiente:
 
-   * Asocie un archivo de subtítulos con un vídeo: [rótulo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Asocie un archivo de subtítulos con un vídeo: [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Asociación de un archivo de navegación con un vídeo: [navegación](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
@@ -204,7 +234,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
 * **[!UICONTROL Título]**: cambie el título de la imagen de recorte inteligente.
 
-* **[!UICONTROL Texto]** alternativo: Agregue un título a la imagen de recorte inteligente para los usuarios que tienen gráficos desactivados.
+* **[!UICONTROL Texto]** alternativo: Añada un título a la imagen de recorte inteligente para los usuarios que tienen gráficos desactivados.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -289,7 +319,7 @@ Utilice el componente **[!UICONTROL Vídeo de medios]** 360 para procesar vídeo
 
 Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.
 
-El visor incluye compatibilidad nativa con la entrega de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
+El visor incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
@@ -299,9 +329,9 @@ Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en 
 
 Si el ajuste preestablecido de visor que está buscando no está visible, asegúrese de que se ha publicado. Debe publicar ajustes preestablecidos de visor para poder utilizarlos. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md). 
 
-### Uso de HTTP/2 para enviar recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
+### Uso de HTTP/2 para envío de recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona mejores tiempos de respuesta y carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](/help/assets/dynamic-media/http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
 
