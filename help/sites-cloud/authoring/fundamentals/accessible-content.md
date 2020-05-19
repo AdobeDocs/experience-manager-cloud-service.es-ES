@@ -2,9 +2,9 @@
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Ayude a que las personas con discapacidades puedan acceder al contenido web y utilizarlo
 translation-type: tm+mt
-source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
+source-git-commit: ad0bceb47a2881ad82af4967b135d2adeff3fbf7
 workflow-type: tm+mt
-source-wordcount: '13935'
+source-wordcount: '13936'
 ht-degree: 86%
 
 ---
@@ -539,7 +539,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.4.2](https://ww
    * Logotipos: el texto que forma parte de un logotipo o del nombre de una marca no cuenta con un requisito mínimo de contraste.
    >[!NOTE]
    >
-   >Consulte [Explicación del contraste](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) no textual para obtener más información, a fin de garantizar que los lectores comprendan los requisitos adicionales relacionados con los elementos no textuales (incluidos los iconos, los elementos de interfaz, entre otros).
+   >Consulte [Explicación del contraste](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) no textual para obtener más información, a fin de garantizar que los autores de contenido entiendan los requisitos adicionales relacionados con los elementos no textuales (incluidos los iconos, los elementos de interfaz, entre otros).
 
 #### Objetivo: Contraste (mínimo) (1.4.3)  {#purpose-contrast-minimum}
 
