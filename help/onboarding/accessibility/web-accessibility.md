@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
-seo-title: Adobe Experience Manager as a Cloud Service y las directrices de accesibilidad web
+description: Introducción a Adobe Experience Manager como servicio de nube y a las directrices de accesibilidad web
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 96%
+source-wordcount: '385'
+ht-degree: 92%
 
 ---
 
