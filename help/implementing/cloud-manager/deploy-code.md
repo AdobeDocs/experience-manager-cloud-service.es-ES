@@ -2,25 +2,28 @@
 title: Implementar el código - Servicios de nube
 description: Implementar el código - Servicios de nube
 translation-type: tm+mt
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 3%
 
 ---
 
 
-# Implementación del código {#deploy-your-code}
+# Implementar el código {#deploy-your-code}
 
 ## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
 
 Una vez configurada la **canalización** (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
-1. Haga clic en **Implementar** desde el Administrador de nube para iniciar el proceso de implementación.
+1. Haga clic en **Implementar** desde el Administrador de nube para realizar el inicio del proceso de implementación.
 
    ![](assets/deploy-code1.png)
 
 
 1. Aparece la pantalla Ejecución **de la canalización** .
 
-   Haga clic en **Generar** para iniciar el proceso.
+   Haga clic en **Generar** para inicio del proceso.
 
    ![](assets/deploy-code2.png)
 
@@ -35,7 +38,7 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
    >
    >Además, puede revisar los pasos de varios procesos de implementación mediante la visualización de registros o la revisión de los resultados de los criterios de prueba.
 
-   La implementación **de la** etapa incluye los siguientes pasos:
+   La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
    * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Creación de un proyecto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) de aplicación de AEM para obtener más información sobre el entorno de compilación.
@@ -44,9 +47,9 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
    * Implementar en etapa
 
       ![](assets/stage-deployment.png)
-   La prueba **de** fase incluye los siguientes pasos:
+   La **prueba de fase** incluye los siguientes pasos:
 
-   * Prueba funcional del producto: Las ejecuciones de canalizaciones de Cloud Manager admitirán la ejecución de pruebas que se ejecuten en el entorno de ensayo. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba funcional del producto: Las ejecuciones de canalizaciones del Administrador de nube admitirán la ejecución de pruebas que se ejecuten con el entorno de la fase. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
    * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
 
       ![](assets/stage-testing.png)
@@ -62,14 +65,14 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
 
 En la siguiente sección se describe cómo se implementan los paquetes AEM y Dispatcher en la fase de fase y en la fase de producción.
 
-Cloud Manager carga todos los archivos target/*.zip producidos por el proceso de compilación en una ubicación de almacenamiento.  Estos artefactos se recuperan de esta ubicación durante las fases de implementación de la canalización.
+Cloud Manager carga todos los archivos destinatario/*.zip producidos por el proceso de compilación en una ubicación de almacenamiento.  Estos artefactos se recuperan de esta ubicación durante las fases de implementación de la canalización.
 
 Cuando Cloud Manager se implementa en topologías que no son de producción, el objetivo es completar la implementación lo más rápido posible y, por lo tanto, los artefactos se implementan en todos los nodos simultáneamente de la siguiente manera:
 
 1. Cloud Manager determina si cada artefacto es un paquete de AEM o de distribuidor.
 1. Cloud Manager elimina todos los distribuidores del equilibrador de carga para aislar el entorno durante la implementación.
 
-   A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, separar y adjuntar los pasos en las tuberías que no sean de producción, en los entornos de desarrollo y en la canalización de producción, para los entornos de escenario.
+   A menos que se haya configurado lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y de fase, es decir, desconectar y adjuntar pasos en las tuberías que no sean de producción, en los entornos de desarrollo y en la canalización de producción, para los entornos de fase.
 
    >[!NOTE]
    >
@@ -98,7 +101,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    >[!NOTE]
    >
-   >Puede omitir los cambios del equilibrador de carga en implementaciones de desarrollo y de etapa, es decir, separar y adjuntar pasos en las tuberías que no son de producción, en los entornos de desarrollador y en la canalización de producción, en los entornos de escenario.
+   >Puede omitir los cambios del equilibrador de carga en implementaciones de desarrollo y de fase, es decir, separar y adjuntar pasos tanto en las tuberías que no son de producción, para los entornos de desarrollador y en la canalización de producción, para los entornos de fase.
 
 ### Implementación en fase de producción {#deployment-production-phase}
 
