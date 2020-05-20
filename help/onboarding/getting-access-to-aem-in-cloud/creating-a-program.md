@@ -2,7 +2,10 @@
 title: Creación de un Programa - Servicio de nube
 description: Creación de un Programa - Servicio de nube
 translation-type: tm+mt
-source-git-commit: b30d9e37bb7de46aa252aa7030ab0c2de8610431
+source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +32,7 @@ Según el objetivo del usuario de crear el programa dentro de los límites de lo
 
 ![](assets/create-program-add.png)
 
-## Creación de un Programa de demostración {#create-demo-program}
-
->[!NOTE]
->Un programa de demostración es similar a un programa de simulación de pruebas en la interfaz de usuario del Administrador de nubes.
+## Creación de un Programa de Simulador para pruebas {#create-demo-program}
 
 Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
