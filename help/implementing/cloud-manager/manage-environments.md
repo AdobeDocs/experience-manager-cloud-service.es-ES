@@ -2,10 +2,10 @@
 title: Administrar Entornos - Servicio de nube
 description: Administrar Entornos - Servicio de nube
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 15%
+source-wordcount: '629'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +44,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    ![](assets/no-environment-2.png)
 
 
-   La opción **Añadir Entorno** también estará disponible en la tarjeta de **Entornos** cuando no haya ningún entorno en el programa.
+   La opción **Añadir Entorno** también está disponible en la tarjeta de **Entornos** cuando hay cero entornos en el programa.
 
    ![](assets/no-environments.png)
 
@@ -65,7 +65,6 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    >[!NOTE]
    >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
 
-
 ## Actualizando Entorno {#updating-dev-environment}
 
 Adobe administra automáticamente las actualizaciones de los entornos de fase y producción.
@@ -73,11 +72,12 @@ Adobe administra automáticamente las actualizaciones de los entornos de fase y 
 Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible para el público, el estado de la tarjeta de Entornos en la pantalla de inicio mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
 ![](assets/manage-environments2.png)
-)
 
-Cuando se muestra este estado, la opción **Actualizar** estará disponible en el menú desplegable, tanto en la Tarjeta de entorno como en el menú **Administrar** si hace clic en **Detalles** en la tarjeta **ENTORNOS**.
 
-![](assets/add-environment4.png)
+La opción **Actualizar** está disponible en el menú desplegable de la tarjeta de **Entornos** .
+Esta opción también está disponible desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
+
+![](assets/update-environment2.png)
 
 Si selecciona esta opción en el menú desplegable, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la última versión y, a continuación, ejecutar la canalización.
 
@@ -87,10 +87,19 @@ Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la 
 
 El usuario con los permisos necesarios podrá eliminar un entorno de desarrollo.
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+La opción **Eliminar** está disponible en el menú desplegable de la tarjeta de **Entornos** .
+Esta opción también está disponible desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 Esta función no está disponible para el entorno de producción/fase definido en un programa normal configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de Simulador para pruebas.
+
+## Acceso a Developer Console {#accessing-developer-console}
+
+Seleccione **Developer Console** en el menú desplegable de la tarjeta de **Entornos** .
+
+![](assets/dev-console1.png)
+
+También puede seleccionar esta opción desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
 
