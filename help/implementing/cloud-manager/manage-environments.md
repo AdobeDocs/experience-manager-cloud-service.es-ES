@@ -2,9 +2,9 @@
 title: Administrar Entornos - Servicio de nube
 description: Administrar Entornos - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 15%
 
 ---
@@ -48,7 +48,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 
    ![](assets/no-environments.png)
 
-   >[!NOTA)
+   >[!NOTE]
    >La opción **Añadir Entorno** se desactivará por falta de permisos o por lo que se pueda contratar.
 
 1. Aparece el cuadro de diálogo **Agregar entorno**. El usuario debe enviar detalles como **Tipo de entorno**, **Nombre de entorno** y **Descripción de entorno** (según el objetivo del usuario al crear el entorno dentro de los límites de lo que está disponible para el inquilino específico).
