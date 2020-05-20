@@ -2,12 +2,15 @@
 title: Administrar Entornos - Servicio de nube
 description: Administrar Entornos - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
+source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 15%
 
 ---
 
 
-# Administración de entornos {#manage-environments}
+# Administrar entornos {#manage-environments}
 
 En la sección siguiente se describen los tipos de entornos que puede crear un usuario y la forma en que puede crear un entorno.
 
@@ -37,9 +40,16 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 ## Añadir un Entorno {#adding-environments}
 
 
-1. El usuario hace clic en el botón **Agregar entorno** para agregar un entorno.
+1. Haga clic en **Añadir Entorno** para agregar un entorno. Se puede acceder a este botón desde la pantalla **Entornos** .
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
+
+   La opción **Añadir Entorno** también estará disponible en la tarjeta de **Entornos** cuando no haya ningún entorno en el programa.
+
+   ![](assets/no-environments.png)
+
+   >[!NOTA)
+   >La opción **Añadir Entorno** se desactivará por falta de permisos o por lo que se pueda contratar.
 
 1. Aparece el cuadro de diálogo **Agregar entorno**. El usuario debe enviar detalles como **Tipo de entorno**, **Nombre de entorno** y **Descripción de entorno** (según el objetivo del usuario al crear el entorno dentro de los límites de lo que está disponible para el inquilino específico).
 
@@ -72,3 +82,15 @@ Cuando se muestra este estado, la opción **Actualizar** estará disponible en e
 Si selecciona esta opción en el menú desplegable, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la última versión y, a continuación, ejecutar la canalización.
 
 Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la canalización.
+
+## Eliminación de Entorno {#deleting-environment}
+
+El usuario con los permisos necesarios podrá eliminar un entorno de desarrollo.
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+Esta función no está disponible para el entorno de producción/fase definido en un programa normal configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de Simulador para pruebas.
+
