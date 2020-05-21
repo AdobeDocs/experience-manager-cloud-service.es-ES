@@ -2,9 +2,9 @@
 title: Programas de Simulador para pruebas - Servicio de nube
 description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Los Programas de Simulador para pruebas tienen los atributos siguientes:
 
 Un asistente para la creación de programas permite crear un Programa de Simulador para pruebas.
 
-Para obtener información sobre cómo crear un Programa de Simulador para pruebas, consulte [Creación de un Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)de Simulador para pruebas.
+Para obtener información sobre cómo crear un Programa de Simulador para pruebas, consulte.
 
 ### Creación de Entornos de Simulador para pruebas {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ El conjunto de entornos Producción-Fase se puede agregar manualmente al Program
 
 Para obtener más información sobre cómo crear manualmente un entorno, consulte [Añadir Entornos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) para obtener más información.
 
-### Eliminación de Entornos de Simulador para pruebas  {#deleting-sandbox-environments}
+### Eliminación de Entornos de Simulador para pruebas {#deleting-sandbox-environments}
 
 El usuario con los permisos necesarios puede eliminar un entorno o conjuntos de desarrollo o producción o etapa.
 
@@ -87,9 +87,16 @@ Siga los pasos a continuación para hibernar manualmente los entornos de Program
 1. Vaya a **Developer Console**.
 Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
 
-1. Haga clic en Hibernar, como se muestra en la figura siguiente
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   O bien,
+
+   Haga clic en **Hibernar** en la lista de Entornos, como se muestra en la figura siguiente:
+
+   ![](assets/hibernate-1b.png)
+
 1. Haga clic en **Hibernar** para confirmar el paso.
 
    ![](assets/hibernate-2.png)
@@ -97,14 +104,6 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 1. Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para el entorno en la pantalla de la consola **** del desarrollador.
 
    ![](assets/hibernate-4.png)
-
-#### Acceso a un Entorno hibernado {#accessing-hibernated-environment}
-
-Al realizar solicitudes de navegador contra la capa de creación o publicación de un entorno hibernado, el usuario encontrará una página de aterrizaje que describe el estado de hibernación del entorno, como se ilustra a continuación:
-
-Un usuario con el rol **Administrador de** nube - Función de desarrollador puede hacer clic en el botón Consola de desarrollador para acceder a la consola de desarrollador y anular la hibernación del entorno. Encontrará información sobre la configuración de roles en la documentación de Cloud Manager.
-
-Si un usuario de una organización no puede hacer clic en el botón de la consola de desarrollador para que se le lleve a la consola de desarrollador, es probable que tenga que recibir la &quot;Cloud Manager - Función de desarrollador&quot;.
 
 
 ### Deshibernación {#de-hibernation-introduction}
@@ -119,6 +118,13 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
    ![](assets/de-hibernation-img1.png)
 
+   O bien,
+
+   Haga clic en **Deshibernar** desde la lista de **Entornos** , como se muestra en la figura siguiente:
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. Haga clic en **De Hibernate** para confirmar el paso.
 
    ![](assets/de-hibernation-img2.png)
@@ -131,15 +137,25 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
    ![](assets/de-hibernation-img4.png)
 
+#### Acceso a un Entorno hibernado {#accessing-hibernated-environment}
+
+Al realizar cualquier solicitud de explorador en el nivel de autor o publicación de un entorno hibernado, el usuario encontrará una página de aterrizaje que describe el estado de hibernación del entorno, como se muestra en la figura siguiente:
+
+![](assets/de-hibernation-img5.png)
+
+
+Un usuario con el rol **Administrador de** nube - Función de desarrollador puede hacer clic en la consola **de** desarrollador para acceder a la consola de desarrollador y dejar de hibernar el entorno.
+
+>[!NOTE]
+> Muchas funciones de Cloud Manager requieren permisos específicos para funcionar. Para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas, consulte[Agregar usuarios y funciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ## Actualizaciones de AEM a Entornos de Simulador para pruebas {#aem-updates-sandbox}
 
-
 Consulte las actualizaciones [de la versión de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM para obtener más información.
 
-Un usuario puede aplicar manualmente las actualizaciones de AEM a los entornos de un Programa de Simulador para pruebas (ver la figura siguiente). Esto se puede hacer cuando el estado mostrado esté **DISPONIBLE** ACTUALIZAR.
+Un usuario puede aplicar manualmente las actualizaciones de AEM a los entornos de un Programa de Simulador para pruebas.
 
-La opción Actualizar está disponible en el menú desplegable de la tarjeta de **Entornos** . Esta opción también está disponible desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
+Consulte [Actualización de Entorno](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) para obtener información sobre cómo actualizar un entorno.
 
 >[!NOTE]
 >Se debe configurar una canalización ** sin producción que se implemente en el entorno de intereses de desarrollo para que se inicie una canalización de actualización manual.
