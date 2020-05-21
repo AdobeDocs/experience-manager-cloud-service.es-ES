@@ -2,9 +2,9 @@
 title: Programas de Simulador para pruebas - Servicio de nube
 description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Un programa de Simulador para pruebas es uno de los dos tipos de programas dispo
 
 Normalmente, un Simulador para pruebas se crea para servir los fines de capacitación, administración de demostraciones, habilitación o Prueba de conceptos (POC). No tienen la intención de transportar tráfico en directo.
 
-Los programas del Simulador para pruebas incluyen Sitios y recursos y se rellenan automáticamente con una rama Git que incluye código de muestra, un entorno de desarrollo y una canalización sin producción.
+Los programas del Simulador para pruebas incluyen Sitios y Recursos y se rellenan automáticamente con un repositorio Git, un entorno de desarrollo y un canalizador que no es de producción.  El repositorio Git se rellena con un proyecto de muestra basado en el arquetipo del proyecto AEM.
 
 Consulte [Explicación de los tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programas y Programas para obtener más información sobre los tipos de Programas.
 
@@ -41,7 +41,7 @@ Los Programas de Simulador para pruebas tienen los atributos siguientes:
 
 Un asistente para la creación de programas permite crear un Programa de Simulador para pruebas.
 
-Para obtener información sobre cómo crear un Programa de Simulador para pruebas, consulte.
+Para obtener más información sobre cómo crear un Programa de Simulador para pruebas, consulte [Creación de un Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) de Simulador para pruebas para pruebas.
 
 ### Creación de Entornos de Simulador para pruebas {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ La hibernación se clasifica como:
 * **Los entornos de Programa automático** de Simulador para pruebas se hibernan automáticamente tras ocho horas de inactividad, lo que significa que ni el autor ni los servicios de publicación reciben la solicitud.
 
 * **Manual**: Como usuario, puede hibernar manualmente un entorno de Programa de Simulador para pruebas, aunque no es necesario hacerlo, ya que la hibernación se producirá automáticamente después de cierto período (ocho horas) de inactividad.
+
+>[!CAUTION]
+>En la última versión, la vinculación a la consola de desarrollador de Cloud Manager no le permitirá hibernar el entorno de Programa de Simulador para pruebas.
 
 #### Uso de la hibernación manual {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ Un usuario con el rol **Administrador de** nube - Función de desarrollador pued
 >[!NOTE]
 > Muchas funciones de Cloud Manager requieren permisos específicos para funcionar. Para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas, consulte[Agregar usuarios y funciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
+#### Consideraciones importantes {#important-considerations}
+
+Pocas consideraciones clave relacionadas con los entornos hibernados y deshibernados son:
+
+* Un usuario puede utilizar una canalización para implementar código personalizado en entornos hibernados. El entorno permanecerá en estado de hibernación y el nuevo código aparecerá en el entorno una vez que se haya deshibernado.
+
+* Las actualizaciones de AEM se pueden aplicar a entornos hibernados, que los clientes pueden activar manualmente desde Cloud Manager. El entorno permanecerá en estado de hibernación y la nueva versión aparecerá en el entorno una vez que se haya deshibernado.
+
+>[!NOTE]
+>Actualmente, Cloud Manager no indica si un entorno está hibernado.
+
 ## Actualizaciones de AEM a Entornos de Simulador para pruebas {#aem-updates-sandbox}
 
 Consulte las actualizaciones [de la versión de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) AEM para obtener más información.
@@ -158,13 +172,9 @@ Un usuario puede aplicar manualmente las actualizaciones de AEM a los entornos d
 Consulte [Actualización de Entorno](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) para obtener información sobre cómo actualizar un entorno.
 
 >[!NOTE]
->Se debe configurar una canalización ** sin producción que se implemente en el entorno de intereses de desarrollo para que se inicie una canalización de actualización manual.
+>* Una actualización manual solo se puede ejecutar cuando el entorno de destino tiene una canalización correctamente configurada.
+>* Una actualización manual del entorno *de producción* o de *fase* se actualizará automáticamente al otro. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
 
->[!NOTE]
->Se debe configurar una canalización *de producción* para que se inicie una canalización de actualización manual al conjunto de entornos Producción+Fase.
-
->[!NOTE]
->La actualización manual a *Producción* o a entorno de *etapa* se actualizará automáticamente a la otra. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
 
 
 
