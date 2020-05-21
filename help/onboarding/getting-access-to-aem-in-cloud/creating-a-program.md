@@ -38,7 +38,7 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
 1. En el asistente para crear programas, seleccione **Configurar una demostración**. El usuario envía el nombre del programa antes de seleccionar **Crear**.
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. El usuario verá la nueva tarjeta de programa de simulación de pruebas en la página de aterrizaje y podrá pasar el ratón sobre ella para seleccionar el icono Administrador de nubes y navegar hasta la página de información general del Administrador de nubes. La tarjeta informará al usuario sobre el estado de la configuración automática del programa de simulación de pruebas recién creado. El usuario verá progresión.
 
