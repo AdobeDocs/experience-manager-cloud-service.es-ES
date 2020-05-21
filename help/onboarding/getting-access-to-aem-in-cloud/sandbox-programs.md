@@ -2,9 +2,9 @@
 title: Programas de Simulador para pruebas - Servicio de nube
 description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Normalmente, un Simulador para pruebas se crea para servir los fines de capacita
 
 Los programas del Simulador para pruebas incluyen Sitios y recursos y se rellenan automáticamente con una rama Git que incluye código de muestra, un entorno de desarrollo y una canalización sin producción.
 
-Para obtener más información sobre los tipos de programas, consulte [Explicación de los Programas y los tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)de Programas.
+Consulte [Explicación de los tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programas y Programas para obtener más información sobre los tipos de Programas.
 
 ### Atributos de los Programas de Simulador para pruebas {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Siga los pasos a continuación para hibernar manualmente los entornos de Program
 
 1. Vaya a **Developer Console**.
 Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
-1. Haga clic en Hibernar, como se muestra en la figura siguiente:
-1. Haga clic en **Hibernar** para confirmar el paso
-1. Cuando la hibernación se realice correctamente, verá la siguiente pantalla.
+
+1. Haga clic en Hibernar, como se muestra en la figura siguiente
+
+   ![](assets/hibernate-1.png)
+1. Haga clic en **Hibernar** para confirmar el paso.
+
+   ![](assets/hibernate-2.png)
+
+1. Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para el entorno en la pantalla de la consola **** del desarrollador.
+
+   ![](assets/hibernate-4.png)
 
 #### Acceso a un Entorno hibernado {#accessing-hibernated-environment}
 
