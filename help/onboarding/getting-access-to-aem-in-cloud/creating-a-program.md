@@ -2,7 +2,7 @@
 title: Creación de un Programa - Servicio de nube
 description: Creación de un Programa - Servicio de nube
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Según el objetivo del usuario de crear el programa dentro de los límites de lo
 
 ![](assets/create-program-add.png)
 
-## Creación de un Programa de Simulador para pruebas {#create-demo-program}
+## Creación de un Programa de Simulador para pruebas {#create-sandbox-program}
 
 Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
