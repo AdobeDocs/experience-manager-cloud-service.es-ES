@@ -4,7 +4,7 @@ description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Un programa de Simulador para pruebas es uno de los dos tipos de programas disponibles en el servicio de nube de AEM; el otro es un programa normal.
 
-Normalmente, un Simulador para pruebas se crea para servir los fines de capacitación, administración de demostraciones, habilitación o Prueba de conceptos (POC). No tienen la intención de transportar tráfico en directo. No están sujetos a [AEM como compromisos](https://www.adobe.com/legal/service-commitments.html)de servicio de nube.
+Normalmente, un Simulador para pruebas se crea para servir los fines de capacitación, administración de demostraciones, habilitación o Prueba de conceptos (POC). No tienen la intención de transportar tráfico en directo. No están sujetos a [AEM como compromisos](https://www.adobe.com/legal/service-commitments.html)de servicio en la nube.
 
 Los entornos creados en un Simulador para pruebas no están configurados para escalar automáticamente. Por lo tanto, no son adecuadas para el rendimiento o las pruebas de carga.
 
