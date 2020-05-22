@@ -2,9 +2,9 @@
 title: Programas de Simulador para pruebas - Servicio de nube
 description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 4539744f8574bfa925d40cf685d02e4bc7ad4416
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo crear un Programa de Simulador para p
 
 ### Creación de Entornos de Simulador para pruebas {#creating-sandbox-environments}
 
-Los Programas de Simulador para pruebas se entregan como entornos de desarrollo en el momento de la creación del programa de una manera creada automáticamente. El entorno de desarrollo incluye un autor y un nivel de publicación de forma predeterminada.
+Los Programas del Simulador para pruebas se entregan a un entorno de desarrollo en el momento de la creación del programa de una forma creada automáticamente. El entorno de desarrollo incluye un autor y un nivel de publicación de forma predeterminada.
 
 El conjunto de entornos Producción-Fase se puede agregar manualmente al Programa Simulador para pruebas cuando el usuario esté listo para configurar una canalización de producción.
 
@@ -71,12 +71,12 @@ La hibernación puede producirse de forma automática o manual. Los entornos de 
 
 La hibernación se clasifica como:
 
-* **Los entornos de Programa automático** de Simulador para pruebas se hibernan automáticamente tras ocho horas de inactividad, lo que significa que ni el autor ni los servicios de publicación reciben la solicitud.
+* **Los entornos de Programa automático** de Simulador para pruebas se hibernan automáticamente tras ocho horas de inactividad, lo que significa que ni el autor ni los servicios de publicación reciben solicitudes.
 
-* **Manual**: Como usuario, puede hibernar manualmente un entorno de Programa de Simulador para pruebas, aunque no es necesario hacerlo, ya que la hibernación se producirá automáticamente después de cierto período (ocho horas) de inactividad.
+* **Manual**: Como usuario, puede hibernar manualmente un entorno de Programa de Simulador para pruebas, aunque no es necesario hacerlo, ya que la hibernación se producirá automáticamente tras un período determinado (ocho horas) de inactividad.
 
 >[!CAUTION]
->En la última versión, la vinculación a la consola de desarrollador de Cloud Manager no le permitirá hibernar el entorno de Programa de Simulador para pruebas.
+>En la última versión, la vinculación a la consola de desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
 
 #### Uso de la hibernación manual {#using-manual-hibernation}
 
@@ -89,6 +89,8 @@ Siga los pasos a continuación para hibernar manualmente los entornos de Program
 
 1. Vaya a **Developer Console**.
 Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
+   >[!NOTE]
+   >la vinculación a la consola de desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -96,7 +98,7 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
    O bien,
 
-   Haga clic en **Hibernar** en la lista de Entornos, como se muestra en la figura siguiente:
+   Haga clic en el vínculo **Entornos** en la parte superior izquierda para realizar la vista de la lista de entornos y, a continuación, haga clic en **Hibernar**, como se muestra en la figura siguiente:
 
    ![](assets/hibernate-1b.png)
 
@@ -114,6 +116,9 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 1. Vaya a **Developer Console**.
 Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
 
+   >[!NOTE]
+   >Como alternativa, puede desplazarse a la consola **de** desarrollador para anular la hibernación intentando acceder al servicio de creación o publicación de un entorno ya en estado de hibernación; en ese caso, aparecerá una página de aterrizaje con un vínculo a la consola de desarrollador. Consulte la sección Acceso a un Entorno hibernado más abajo.
+
    >[!IMPORTANT]
    >El acceso a la consola de desarrollador lo define el rol **Administrador de** nube - Desarrollador de la Consola **de administración**. Un usuario con permiso de función de desarrollador puede anular la hibernación de un entorno de Programa de Simulador para pruebas.
 
@@ -123,7 +128,7 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
    O bien,
 
-   Haga clic en **Deshibernar** desde la lista de **Entornos** , como se muestra en la figura siguiente:
+   Haga clic en el vínculo **Entornos** en la parte superior izquierda para vista de la lista de entornos y, a continuación, haga clic en **Deshibernar**, como se muestra en la figura siguiente
 
    ![](assets/de-hibernate-1b.png)
 
@@ -152,7 +157,7 @@ Un usuario con el rol **Administrador de** nube - Función de desarrollador pued
 >[!NOTE]
 > Muchas funciones de Cloud Manager requieren permisos específicos para funcionar. Para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas, consulte[Agregar usuarios y funciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
-#### Consideraciones importantes {#important-considerations}
+### Consideraciones importantes {#important-considerations}
 
 Pocas consideraciones clave relacionadas con los entornos hibernados y deshibernados son:
 
