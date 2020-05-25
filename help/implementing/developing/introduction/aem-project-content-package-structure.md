@@ -2,7 +2,10 @@
 title: Estructura del proyecto de AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 94182b95cb00923d3e055cb3c2e1d943db70c7a9
+source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+workflow-type: tm+mt
+source-wordcount: '2352'
+ht-degree: 18%
 
 ---
 
@@ -130,7 +133,7 @@ Mientras que los scripts de Repo Init viven en el `ui.apps` proyecto como script
 + Grupos
 + ACL
 
-Las secuencias de comandos Repo Init se almacenan como `scripts` entradas de configuraciones de fábrica de `RepositoryInitializer` OSGi y, por tanto, se pueden dirigir implícitamente mediante runmode, lo que permite diferencias entre las secuencias de comandos Repo Init de AEM Author y AEM Publish Services, o incluso entre Envs (Dev, Stage y Prod).
+Las secuencias de comandos Repo Init se almacenan como `scripts` entradas de configuraciones de fábrica de `RepositoryInitializer` OSGi y, por tanto, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre las secuencias de comandos Repo Init de AEM Author y AEM Publish Services, o incluso entre Envs (Dev, Stage y Prod).
 
 Tenga en cuenta que al definir usuarios y grupos, solo los grupos se consideran parte de la aplicación y se debe definir una parte integral de su función aquí. Los usuarios y grupos de la organización deben seguir estando definidos en tiempo de ejecución en AEM; por ejemplo, si un flujo de trabajo personalizado asigna trabajo a un grupo con nombre, dicho grupo debe definirse mediante Repo Init en la aplicación AEM. Sin embargo, si el grupo es meramente organizativo, como &quot;Wendy&#39;s Team&quot; y &quot;Sean&#39;s Team&quot;, se definirán mejor y se gestionarán en tiempo de ejecución en AEM.
 
@@ -188,7 +191,7 @@ Desglosar la estructura de carpetas:
 + La carpeta de tercer nivel debe ser
    `application` o `content`
    + La `application` carpeta contiene paquetes de código
-   + La `content` carpeta oro paquetes de contenidoEste nombre de carpeta debe corresponder a los tipos [de](#package-types) paquete de los paquetes que contiene.
+   + La `content` carpeta contiene paquetes de contenidoEste nombre de carpeta debe corresponder a los tipos [de](#package-types) paquete de los paquetes que contiene.
 + La carpeta de cuarto nivel contiene los subpaquetes y debe ser uno de los siguientes:
    + `install` para realizar la instalación en **AEM Author y AEM Publish**
    + `install.author` para instalar **solo** en AEM Author
@@ -333,7 +336,7 @@ En la `ui.content/pom.xml`, la directiva de configuración de `<packageType>cont
 
 ### Marcado de paquetes para la implementación de Adobe Cloud Manager {#cloud-manager-target}
 
-En todos los proyectos que generan un paquete, **excepto** en el proyecto de contenedor (`all`), agregue `<cloudManagerTarget>none</cloudManagerTarget>` a la configuración de la declaración del complemento `<properties>` para garantizar `filevault-package-maven-plugin` que Adobe Cloud Manager **no** los implementa. El paquete de contenedor (`all`) debe ser el paquete singular implementado mediante Cloud Manager, que a su vez incorpora todos los paquetes de contenido y código necesarios.
+En todos los proyectos que generan un paquete, **excepto** en el proyecto de contenedor (`all`), agregue `<cloudManagerTarget>none</cloudManagerTarget>` a la configuración de la declaración del complemento `<properties>` para garantizar `filevault-package-maven-plugin` que Adobe Cloud Manager **no** los implementa. The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
 
 ```xml
 ...
@@ -485,7 +488,7 @@ Si `/apps/*-packages` se utilizan varios en los destinatarios incrustados, todos
 ### Repositorios de muevos de terceros {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Añadir más repositorios Maven puede extender los tiempos de generación a medida que se comprueben las deficiencias de repositorios Maven adicionales.
+> Añadir más repositorios de Maven puede extender los tiempos de generación, ya que se comprobarán las dependencias de repositorios de Maven adicionales.
 
 En el proyecto del reactor `pom.xml`, agregue las directivas de repositorio de Maven públicas de terceros necesarias. La configuración completa debe estar disponible `<repository>` desde el proveedor de repositorio de terceros.
 
