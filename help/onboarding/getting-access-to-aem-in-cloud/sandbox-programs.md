@@ -4,7 +4,7 @@ description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ Siga los pasos a continuación para hibernar manualmente los entornos de Program
 
 1. Vaya a **Developer Console**.
 Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
-   >[!NOTE]
-   >la vinculación a la consola de desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
+   >[!IMPORTANT]
+   >Vincular la consola **de** desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
 1. Vaya a **Developer Console**.
 Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
+
+   >[!IMPORTANT]
+   >Vincular la consola **de** desarrollador directamente desde Cloud Manager no le dará la opción de deshibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
 
    >[!NOTE]
    >Como alternativa, puede desplazarse a la consola **de** desarrollador para anular la hibernación intentando acceder al servicio de creación o publicación de un entorno ya en estado de hibernación; en ese caso, aparecerá una página de aterrizaje con un vínculo a la consola de desarrollador. Consulte la sección Acceso a un Entorno hibernado más abajo.
