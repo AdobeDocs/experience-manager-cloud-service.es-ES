@@ -1,8 +1,11 @@
 ---
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+workflow-type: tm+mt
+source-wordcount: '2864'
+ht-degree: 96%
 
 ---
 
@@ -59,6 +62,8 @@ Las opciones disponibles en estos paneles se describen a continuación.
 El panel Navegación:
 
 ![Panel de navegación](/help/sites-cloud/authoring/assets/navigation.png)
+
+El título de la ficha del navegador se actualizará para reflejar su ubicación a medida que navega por las consolas y el contenido.
 
 En Navegación, las consolas disponibles son:
 
@@ -150,6 +155,14 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
    >
    >La opción **Ver configuración** solo está disponible en el modo **Vista de lista**.
 
+* Navegación por teclado
+
+   Puede navegar por un sitio web utilizando únicamente el teclado. Utiliza la funcionalidad estándar del navegador de la tecla **TAB** (u **OPT+TAB**) para desplazar al usuario entre los elementos de la página que se pueden enfocar.
+
+   En la consola **Sitios** hay una opción agregada para **Omitir al contenido** principal. Esto se hace visible a medida que se desplaza por el tabulador a través de las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto) y llevándolo directamente al contenido principal.
+
+   ![Pasar al contenido principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+
 ## Acceso a la Ayuda {#accessing-help}
 
 Hay varios medios de ayuda disponibles:
@@ -228,7 +241,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
-* [Vista de lista](#list-view)
+* [Vista de lista  ](#list-view)
 
 >[!NOTE]
 >
