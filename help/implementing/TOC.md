@@ -1,11 +1,11 @@
 ---
 sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ ht-degree: 89%
    + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
    + [Ampliar fragmentos de Experience](developing/extending/experience-fragments.md)
-   + [Personalización y ampliación de fragmentos de contenido](developing/extending/content-fragments-customizing.md)
-   + [Fragmentos de contenido Configuración de componentes para procesamiento](developing/extending/content-fragments-configuring-components-rendering.md)
+   + [Personalizar y ampliar fragmentos de contenido](developing/extending/content-fragments-customizing.md)
+   + [Fragmentos de contenido Configurar componentes para procesamiento](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configurar formularios de búsqueda](developing/extending/search-forms.md)
 + Implementar en AEM as a Cloud Service {#deploying}
    + [Implementar en AEM as a Cloud Service](deploying/overview.md)
-   + [Configuración de OSGi para AEM como servicio de nube](deploying/configuring-osgi.md)
+   + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Dispatcher en la nube {#dispatcher}
    + [Dispatcher en la nube](dispatcher/overview.md)
    + [Enviar contenido en AEM as a Cloud Service](dispatcher/content-delivery.md)
