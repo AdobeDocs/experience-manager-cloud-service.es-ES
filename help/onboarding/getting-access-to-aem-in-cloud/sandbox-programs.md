@@ -2,9 +2,9 @@
 title: Programas de Simulador para pruebas - Servicio de nube
 description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -150,17 +150,17 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
    ![](assets/de-hibernation-img4.png)
 
+#### Permisos para deshibernar {#permissions-de-hibernate}
+
+Cualquier usuario con un perfil de producto que les permita acceder a AEM como servicio de nube debe poder acceder a **Developer Console**, lo que le permitirá deshibernar el entorno.
+
+Consulte [Añadir usuarios y funciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) en Cloud Manager para obtener información sobre la configuración de los permisos de usuario.
+
 #### Acceso a un Entorno hibernado {#accessing-hibernated-environment}
 
 Al realizar cualquier solicitud de explorador en el nivel de autor o publicación de un entorno hibernado, el usuario encontrará una página de aterrizaje que describe el estado de hibernación del entorno, como se muestra en la figura siguiente:
 
 ![](assets/de-hibernation-img5.png)
-
-
-Un usuario con el rol **Administrador de** nube - Función de desarrollador puede hacer clic en la consola **de** desarrollador para acceder a la consola de desarrollador y dejar de hibernar el entorno.
-
->[!NOTE]
-> Muchas funciones de Cloud Manager requieren permisos específicos para funcionar. Para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas, consulte[Agregar usuarios y funciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html).
 
 ### Consideraciones importantes {#important-considerations}
 
