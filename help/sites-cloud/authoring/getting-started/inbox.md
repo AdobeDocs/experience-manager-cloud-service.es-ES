@@ -1,8 +1,11 @@
 ---
-title: Su bandeja de entrada
+title: 'Su bandeja de entrada  '
 description: Administración de las tareas con la bandeja de entrada
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +50,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 1. Toque o haga clic en el indicador de la barra de herramientas.
 
 1. Seleccione **Ver todo**. Se abrirá la **bandeja de entrada AEM.** La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
-1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se lleva a cabo con el selector de vista (barra de herramientas, en la parte superior derecha).
+1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
    Para ambas vistas también puede definir una [Configuración de vista](#inbox-view-settings). Las opciones disponibles dependen de la vista actual.
 
@@ -105,6 +108,10 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
 ## Acción en un elemento {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
+
 1. Para realizar una acción en un elemento, seleccione la miniatura correspondiente al elemento en cuestión. En la barra de herramientas se mostrarán iconos para las acciones aplicables a dicho elemento:
 
    ![Seleccionar elemento de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -128,7 +135,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
    >* Elementos del flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. Dependiendo del elemento seleccionado, se inicia una acción; por ejemplo:
+2. Dependiendo del elemento seleccionado, se inicia una acción; por ejemplo:
 
    * Se abre un cuadro de diálogo apropiado para la acción.
    * Se inicia un asistente de acciones.
