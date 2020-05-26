@@ -1,9 +1,9 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.4.0
 description: Notas de la versión de Experience Manager para 2020.4.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
 ht-degree: 100%
 
