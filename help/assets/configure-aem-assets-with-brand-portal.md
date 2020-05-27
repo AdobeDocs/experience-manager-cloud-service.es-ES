@@ -3,9 +3,9 @@ title: Configurar el servicio en la nube de AEM Assets con Brand Portal
 description: Configurar el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Recursos Adobe Experience Manager (AEM) se configura con Brand Portal a través 
 
 **¿Cómo funciona la configuración?**
 
-La configuración de una instancia de nube de AEM Assets con el inquilino (organización) de Brand Portal es un proceso de varios pasos que requiere configuraciones tanto en la instancia de nube de AEM Assets como en Adobe Developer Console.
+La configuración de la instancia de nube de AEM Assets con un inquilino (organización) de Brand Portal requiere configuraciones tanto en la instancia de nube de AEM Assets como en Adobe Developer Console.
 
 1. En la instancia de nube de AEM Assets, cree una cuenta de IMS y genere un certificado público (clave pública).
 1. En Adobe Developer Console, cree un proyecto para el inquilino (organización) de Brand Portal.
@@ -28,9 +28,11 @@ La configuración de una instancia de nube de AEM Assets con el inquilino (organ
 1. Pruebe la configuración publicando un recurso de la instancia de nube de AEM Assets en Brand Portal.
 
 >[!NOTE]
->>Un inquilino de Brand Portal solo se configurará con una instancia de nube de AEM Assets.
->>No configure un inquilino de Brand Portal con varias instancias de nube de AEM Assets.
 >
+>Un inquilino de Brand Portal solo se configurará con una instancia de nube de AEM Assets.
+>
+>No configure un inquilino de Brand Portal con varias instancias de nube de AEM Assets.
+
 
 ## Requisitos previos {#prerequisites}
 
