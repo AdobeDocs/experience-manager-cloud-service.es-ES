@@ -2,9 +2,9 @@
 title: Estructura del proyecto de AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 9a8d47db7f8ab90748d24c646bd5a8844cf24448
+source-git-commit: 60093232710426d919a45742b1775239944d266d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2417'
 ht-degree: 18%
 
 ---
@@ -145,7 +145,7 @@ El vocabulario completo para los scripts Repo Init está disponible en la docume
 
 >[!TIP]
 >
->Consulte la sección [Recortes](#snippet-repo-init) de inicio de la repo más abajo para ver un fragmento completo.
+>Para ver un fragmento completo, consulte la sección Recortes [de inicio de](#snippet-repo-init) repo más abajo.
 
 ## Paquete de estructura de repositorio {#repository-structure-package}
 
@@ -237,7 +237,9 @@ Añadir las dependencias de Maven sigue las prácticas estándar de Maven, y la 
 
 Para garantizar la correcta instalación de los paquetes, se recomienda establecer dependencias entre paquetes.
 
-La regla general es que los paquetes que contienen contenido mutable (`ui.content`) deben depender del contenido inmutable (`ui.apps`) que admite la representación y el uso del contenido mutable.
+La regla general es que los paquetes que contienen contenido mutable (`ui.content`) deben depender del código inmutable (`ui.apps`) que admite la representación y el uso del contenido mutable.
+
+Una excepción notable a esta regla general es si el paquete de código inmutable (`ui.apps` o cualquier otro) __solo__ contiene paquetes OSGi. Si es así, ningún paquete de AEM debe declarar una dependencia de él. Esto se debe a que los paquetes de código inmutables que __solo__ contienen paquetes OSGi no están registrados con AEM Package Manager y, por lo tanto, cualquier paquete de AEM que dependa de él tendrá una dependencia insatisfecha y no se podrá instalar.
 
 >[!TIP]
 >
