@@ -2,7 +2,7 @@
 title: Creación de un Programa - Servicio de nube
 description: Creación de un Programa - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ En el evento del acceso por primera vez a Cloud Manager o si no hay programas en
 
 Según el objetivo del usuario de crear el programa dentro de los límites de lo que está disponible para el cliente o la organización específicos, un asistente para la creación de programas solicitará al usuario que envíe uno o varios detalles.
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ Según el objetivo del usuario de crear el programa dentro de los límites de lo
 
 Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
-1. En el asistente para crear programas, seleccione **Configurar una demostración**. El usuario envía el nombre del programa antes de seleccionar **Crear**.
+1. En el asistente para crear programa, seleccione **Configurar un simulador para pruebas**. El usuario envía el nombre del programa antes de seleccionar **Crear**.
 
    ![](assets/create-sandbox.png)
 
