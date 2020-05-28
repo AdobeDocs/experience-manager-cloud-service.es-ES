@@ -2,10 +2,10 @@
 title: Administrar Entornos - Servicio de nube
 description: Administrar Entornos - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 9%
+source-wordcount: '702'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,12 @@ Esta función no está disponible para el entorno de producción/fase definido e
 
 ## Acceso a Developer Console {#accessing-developer-console}
 
-Seleccione **Developer Console** en el menú desplegable de la tarjeta de **Entornos** .
+Seleccione **Developer Console** en el menú desplegable de la tarjeta de **Entornos** . Se abrirá una nueva ficha en el navegador con la página de inicio de sesión en **Developer Console**.
+
+Solo un usuario de la función de desarrollador tendrá acceso a **Developer Console**. Excepción para los Programas de Simulador para pruebas, en los que cualquier usuario con acceso al Programa de Simulador para pruebas de Cloud Manager tendrá acceso a **Developer Console**.
+
+Consulte Entornos [de Simulador para pruebas de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) hibernación y deshibernación para obtener más detalles.
+
 
 ![](assets/dev-console1.png)
 
