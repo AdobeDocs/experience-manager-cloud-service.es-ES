@@ -2,10 +2,10 @@
 sub-product: Incorporación a AEM as a Cloud Service
 user-guide-title: Incorporación a AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
+source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 96%
+source-wordcount: '133'
+ht-degree: 93%
 
 ---
 
@@ -33,4 +33,6 @@ ht-degree: 96%
 + Accesibilidad {#accessibility}
    + [AEM as a Cloud Service y las directrices de accesibilidad web](accessibility/web-accessibility.md)
    + [Guía rápida de WCAG 2.1](accessibility/quick-guide-wcag.md)
++ Prácticas recomendadas   {#best-practices}
+   + [Administración de direcciones URL y SEO](best-practices/seo-and-url-management.md)
 + [Información general sobre las consolas de herramientas](tools-consoles.md)
