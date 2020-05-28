@@ -1,8 +1,11 @@
 ---
 title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
 seo-title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ Existen algunas prácticas recomendadas generalmente aceptadas en cuanto a las U
 
 En el proyecto de AEM, al evaluar las URL, pregúntese lo siguiente:
 
-“Si un usuario viera esta URL y ningún contenido en la página, ¿podría describir de qué se trata?”
+*“Si un usuario viera esta URL y ningún contenido en la página, ¿podría describir de qué se trata?”*
 
 Si la respuesta es sí, es probable que la URL funcione bien en un motor de búsqueda.
 
