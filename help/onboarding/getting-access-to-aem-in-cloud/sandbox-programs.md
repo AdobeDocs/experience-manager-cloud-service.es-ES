@@ -2,9 +2,9 @@
 title: Programas de Simulador para pruebas - Servicio de nube
 description: Programas de Simulador para pruebas - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,9 @@ Puede hibernar manualmente el Programa de Simulador para pruebas desde la Consol
 
 * Pantalla de detalles del Entorno
 * Pantalla de listado de Entornos
+
+>[!NOTE]
+>El acceso a la consola de desarrollador para un Programa de Simulador para pruebas está disponible para cualquier usuario de Cloud Manager.
 
 Siga los pasos a continuación para hibernar manualmente los entornos de Programa del Simulador para pruebas:
 
