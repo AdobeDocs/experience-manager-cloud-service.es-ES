@@ -3,10 +3,10 @@ title: Configurar el servicio en la nube de AEM Assets con Brand Portal
 description: Configurar el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 38%
+source-wordcount: '1762'
+ht-degree: 37%
 
 ---
 
@@ -69,7 +69,7 @@ El certificado público le permite autenticar su perfil en Adobe Developer Conso
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. En el panel **** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de Adobe IMS]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Interfaz de usuario de configuración de cuenta de Adobe IMS](assets/ims-configuration1.png)
 
@@ -134,9 +134,11 @@ Realice los siguientes pasos para generar las credenciales de cuenta de servicio
 
 1. Compruebe el certificado público y haga clic en **[!UICONTROL Siguiente]**.
 
-1. En Brand Portal, se crea un perfil predeterminado para cada organización. Los Perfiles de producto se crean en la consola de administración para asignar usuarios a grupos (según las funciones y los permisos). Para la configuración con Brand Portal, el token de OAuth se crea a nivel de organización. Por lo tanto, debe configurar el Perfil de producto predeterminado para su organización.
+1. Seleccione el producto predeterminado perfil **[!UICONTROL Assets Brand Portal]** y haga clic en **[!UICONTROL Guardar configuración]**.
 
-   Seleccione el producto predeterminado perfil **[!UICONTROL Assets Brand Portal]**.
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![Seleccionar Perfil de producto](assets/service-account4.png)
 
@@ -144,7 +146,7 @@ Realice los siguientes pasos para generar las credenciales de cuenta de servicio
 
    >[!NOTE]
    >
-   >Puede vista de las credenciales y realizar otras acciones (generar tokens JWT, copiar detalles de credenciales, recuperar secretos de cliente, etc.) según sea necesario.
+   >Puede vista de las credenciales y realizar otras acciones (generar tokens JWT, copiar detalles de credenciales, recuperar el secreto del cliente, etc.) según sea necesario.
 
 1. En la ficha **[!UICONTROL Credenciales]** de cliente, copie el ID **[!UICONTROL de]** cliente.
 
@@ -237,7 +239,7 @@ Siga los pasos siguientes para configurar el servicio en la nube de Brand Portal
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. En el panel **** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Cloud Services**[!UICONTROL  > ]**AEM Brand Portal]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. En la página Configuraciones de Brand Portal, haga clic en **[!UICONTROL Crear]**.
 
@@ -257,7 +259,7 @@ Realice los siguientes pasos para validar la configuración:
 
 1. Inicie sesión en la instancia de nube de AEM Assets.
 
-1. En el panel **** ![Herramientas](assets/tools.png), vaya a **[!UICONTROL Implementación]** > **[!UICONTROL Distribución]**.
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ Puede consultar los registros para obtener información detallada sobre las acci
 
 Por ejemplo, hemos publicado un recurso de Recursos AEM en Brand Portal para validar la configuración.
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
 
 1. Haga clic en **[!UICONTROL Registros]** para ver los registros de distribución. Aquí puede ver los registros de procesamiento y de errores.
 
