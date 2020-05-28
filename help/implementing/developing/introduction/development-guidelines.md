@@ -2,7 +2,10 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Para completar
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 1%
 
 ---
 
@@ -156,6 +159,10 @@ Como se ilustra a continuación, los desarrolladores pueden resolver dependencia
 También resulta útil para la depuración, ya que la consola para desarrolladores tiene un vínculo a la herramienta de Consulta Explicar:
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+
+Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Cloud Manager - Función de desarrollador&quot; en la Consola de administración, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como servicio de nube. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+
+
 
 ### Servicio de ensayo y producción de AEM {#aem-staging-and-production-service}
 
