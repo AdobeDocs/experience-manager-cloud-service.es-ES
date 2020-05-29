@@ -1,9 +1,17 @@
 ---
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 9b710d8001641cf9b79fff9129d8c162bee5e479
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '143'
+ht-degree: 1%
 
 ---
 # Documentación del servicio de nube de Adobe Experience Manager
+
+| Producción | Escenario |
+|---|---|
+| [![Estado de compilación](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_production/lastBuild) | [![Estado de compilación](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/experience-manager-cloud-service.en_stage/lastBuild) |
+| [Producto de salida](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) | [Output Stg](https://docs-stg.corp.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) |
 
 Éste es el repositorio de la documentación del servicio de nube de Adobe Experience Manager. Esta documentación trata sobre la instalación, administración, uso de creación y cómo personalizar AEM mediante el servicio de nube.
 
