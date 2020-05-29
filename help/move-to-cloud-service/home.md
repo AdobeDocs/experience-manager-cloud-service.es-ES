@@ -2,7 +2,7 @@
 title: Pasar a AEM como servicio de nube
 description: Adobe Experience Manager como servicio de nube que se está trasladando a AEM como recursos de autoayuda y vínculos de documentación del servicio de nube
 translation-type: tm+mt
-source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
+source-git-commit: 43c5af886ccddea73b68008a372f192ff8c1f26f
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -10,7 +10,7 @@ ht-degree: 57%
 ---
 
 
-# Move to AEM as a Cloud Service {#aem-moving-to-aem-guide}
+# Moving to AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 ## Ventajas de pasar a AEM como servicio de nube {#benefits-aem-moving-to-aem-guide}
 
