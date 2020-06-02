@@ -2,9 +2,9 @@
 title: Perfiles de imagen de Dynamic Media
 description: Cree perfiles de imagen que contengan ajustes para máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
+source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2736'
 ht-degree: 14%
 
 ---
@@ -20,7 +20,9 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 ## Crop options {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for the paragraph directly below -->
+
+Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda utilizar el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el perfil de la imagen.
 
 Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
 
