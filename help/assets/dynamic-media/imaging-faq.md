@@ -2,7 +2,10 @@
 title: Imágenes inteligentes
 description: Las imágenes inteligentes aprovechan las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes correctas optimizadas para su experiencia, lo que mejora el rendimiento y la participación.
 translation-type: tm+mt
-source-git-commit: a934f28f74f0ff9ae68d7507290851dc5ca907e5
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '1720'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +20,7 @@ Smart Imaging también se beneficia del aumento de rendimiento añadido de la in
 
 Los siguientes ejemplos de recursos de imagen muestran la optimización de imágenes inteligentes añadida:
 
-| Image<br>(URL) | Miniatura    | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
+| Image<br>(URL) | Miniatura  | Tamaño<br> (JPEG) | Tamaño (WebP)<br> (con imágenes inteligentes) | % de reducción |
 |---|---|---|---|---|
 | [Imagen 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [Imagen 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -87,7 +90,7 @@ No. Las imágenes inteligentes funcionan perfectamente con las URL de imágenes 
 
 Además, consulte [¿Cumplo los requisitos para utilizar imágenes inteligentes?](#am-i-eligible-to-use-smart-imaging) para comprender los requisitos previos para las imágenes inteligentes.
 
-## ¿Funciona la función de Smart Mmaging con HTTPS? ¿Qué tal HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## ¿Las imágenes inteligentes funcionan con HTTPS? ¿Qué tal HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Las imágenes inteligentes funcionan con imágenes enviadas a través de HTTP o HTTPS. Además, también funciona a través de HTTP/2.
 
