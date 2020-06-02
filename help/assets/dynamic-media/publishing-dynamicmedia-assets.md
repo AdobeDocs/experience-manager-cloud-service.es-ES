@@ -1,19 +1,23 @@
 ---
 title: Publicación de recursos de Dynamic Media
 description: Cómo publicar recursos de medios dinámicos
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 3%
 
 ---
 
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-Para publicar los recursos de Dynamic Media, selecciónelos y toque **[!UICONTROL Publicar]**. Una vez publicados los recursos de medios dinámicos, estarán disponibles para incluirlos en una página web mediante URL o mediante incrustación.
+Para publicar los recursos de Dynamic Media, seleccione los recursos que ya ha cargado y toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicación]** rápida. Una vez publicados los recursos de Dynamic Media, estarán disponibles para su inclusión en una página web mediante una URL o mediante la incrustación de código en la página.
 
 También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. O bien, puede publicar estos recursos de forma selectiva. See [Configuring Dynamic Media](config-dm.md).
 
-En la **[!UICONTROL vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
+En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
 >[!NOTE]
 >
@@ -23,7 +27,7 @@ Si tiene intención de publicar recursos de vídeo inmediatamente después de co
 
 See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-Consulte también [Incrustación del visor de vídeos en una página web.](embed-code.md)
+Consulte también [Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web.](embed-code.md)
 
 >[!NOTE]
 >
