@@ -2,9 +2,9 @@
 title: Adición de recursos de Dynamic Media a las páginas
 description: Cómo agregar componentes de Dynamic Media a una página en AEM
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 32%
 
 ---
@@ -34,10 +34,6 @@ Añadir un componente de medios 3D, medios dinámicos, medios interactivos, medi
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Arrastre un componente de **[!UICONTROL Dynamic Media]** y colóquelo en la ubicación deseada de la página.
-
-   En el ejemplo siguiente, se utiliza el componente **[!UICONTROL Vídeo 360 Medios]** .
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Sitúe el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, toque una vez para mostrar la barra de herramientas del componente. Toque el icono **[!UICONTROL Configuración (llave)]** .
 
@@ -121,6 +117,7 @@ El componente Dynamic Media es inteligente. Según si agrega una imagen o un ví
 >
 >* Varias instancias del componente Dynamic Media que se están utilizando en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
+
 >
 >
 Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visor diferente a cada componente de Dynamic Media en esa página.
@@ -200,6 +197,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    * Asocie un archivo de subtítulos con un vídeo: [caption](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Asociación de un archivo de navegación con un vídeo: [navegación](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!Título** UICONTROL: cambie el título del vídeo.
@@ -258,6 +256,7 @@ El componente Medios interactivos es inteligente. Según si agrega una imagen o 
 >
 >* Varias instancias del componente Medios interactivos que se están utilizando en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
+
 >
 >
 Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visor diferente a cada componente de medios interactivos de esa página.
@@ -299,6 +298,7 @@ Tanto la proporción de aspecto como los criterios de palabra clave se aplican a
 >
 >* Varias instancias del componente Medios **[!UICONTROL panorámicas]** que se utilizan en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
+
 >
 >
 Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de visualizador diferente a cada componente de **[!UICONTROL medios panorámicos]** de esa página.
