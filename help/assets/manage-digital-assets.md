@@ -4,9 +4,9 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4419'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Consulte [Adición de recursos digitales a Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un recurso de duplicado existe en el repositorio de DAM, Assets lo detecta y lo notifica al usuario. La detección de Duplicados está deshabilitada de forma predeterminada. Para activar la función, configure el detector de duplicación de recursos de Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
+Si un usuario de DAM carga uno o varios recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y lo notifica al usuario. La detección de Duplicados está deshabilitada de forma predeterminada, ya que puede afectar al rendimiento en función del tamaño del repositorio y del número de recursos cargados. Para activar la función, configure el detector de duplicación de recursos de Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
 
 ![Detectar la configuración OSGi del recurso de duplicado](assets/duplicate-detection.png)
 
@@ -101,6 +101,7 @@ Para realizar la previsualización de un recurso, siga estos pasos.
    * Número de veces que se ha visualizado o descargado el recurso
    * Canales/dispositivos a través de los cuales se utilizó el recurso
    * Soluciones creativas en las que el recurso se ha utilizado recientemente
+
    Para obtener más información, consulte Perspectivas [de recursos](assets-insights.md).
 
 1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
@@ -172,6 +173,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    * Toque o haga clic en **[!UICONTROL Atrás]** para volver a la pantalla **[!UICONTROL Seleccionar destino]** .
 
    * Toque o haga clic en **[!UICONTROL Cancelar]** para detener la operación de movimiento.
+
    Si no actualiza las referencias, éstas seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de acceso del recurso.
 
 ### Administrar representaciones {#managing-renditions}
@@ -245,6 +247,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
       * Si el recurso no tiene referencias, se elimina.
       * Si el recurso tiene referencias, un mensaje de error le informa de que se hace referencia a **uno o varios recursos.** Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
+
    >[!NOTE]
    >
    >Para poder eliminar un recurso, se requieren permisos de eliminación en la represa o el recurso. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
@@ -304,6 +307,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
    * **[!UICONTROL Cancelar]** para detener la acción
    * **[!UICONTROL Cancele la publicación]** para confirmar que los recursos se han cancelado de publicar (ya no están disponibles en el entorno de publicación) en la fecha especificada.
+
    >[!NOTE]
    >
    >Al cancelar la publicación de un recurso complejo, solo se debe cancelar la publicación del recurso. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
@@ -356,6 +360,7 @@ Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar
    * Seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
    * Toque o haga clic en el icono **[!UICONTROL Editar]** que aparece en un recurso de la vista de tarjetas.
    * En la página de recursos, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
+
    ![edit_icon](assets/edit_icon.png)
 
 1. Para recortar la imagen, toque o haga clic en el icono **Recortar** .
@@ -426,6 +431,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
    * [Acciones rápidas](#quick-actions)
    * Desde la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
