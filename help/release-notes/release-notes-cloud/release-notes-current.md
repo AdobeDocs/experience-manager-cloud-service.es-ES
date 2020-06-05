@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 7%
 
 ---
@@ -120,17 +120,12 @@ Capacite las etiquetas inteligentes mejoradas para obtener una formación más i
 
 **Compatibilidad con la ingestión, previsualización y envío de contenido 3D**
 
-Las organizaciones ahora pueden almacenar y utilizar archivos 3D en Recursos AEM. El usuario puede cargar, previsualización y aprovechar una gran variedad de archivos 3D principales, incluidos archivos .obj, .stl, .gltf y .glb. Con la adición de [!DNL Dynamic Media], las experiencias 3D se pueden configurar y enviar mediante direcciones URL o visores agnósticos. Esto incluye un visor de experiencias [!DNL Dynamic Media] 3D, un componente de visor 3D de sitios y la capacidad de distribuir archivos 3D a través [!DNL Dynamic Media] (AR/VR).
-
-<!-- TBD: Add link to the DM help article, if any. -->
+Las organizaciones ahora pueden almacenar y utilizar archivos 3D en Recursos AEM. El usuario puede cargar, previsualización y aprovechar una gran variedad de archivos 3D principales, incluidos archivos .obj, .stl, .gltf y .glb. Con la adición de [!DNL Dynamic Media], las experiencias 3D se pueden configurar y enviar mediante direcciones URL o visores agnósticos. Esto incluye un visor de experiencias [!DNL Dynamic Media] 3D, un componente de visor 3D de sitios y la capacidad de distribuir archivos 3D a través [!DNL Dynamic Media] (AR/VR). Consulte [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **Mejoras de accesibilidad**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * Los elementos de la interfaz de usuario, los controles y los campos del formulario de entrada son accesibles mediante el teclado.
 * Cambiar el color o el contraste de algunos elementos de interfaz para hacerlos más distinguibles por usuarios con visión limitada y sin percepción del color. Por ejemplo, Recursos ahora tiene el contraste adecuado en los iconos de clasificación por estrellas de la página [!UICONTROL Propiedades] y de la vista de tarjeta.
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **Otras mejoras**
 
 La versión incorpora las siguientes mejoras adicionales:
 
-* Mejoras de accesibilidad para la interfaz de usuario de Recursos.
 * Capacidad para volver a procesar recursos con perfiles de procesamiento de recursos, lo que permite que los usuarios tengan un control total del proceso (ejecute el procesamiento completo de recursos, aplique perfiles de procesamiento específicos y decida si se debe ejecutar el flujo de trabajo posterior al procesamiento).
 * Las consultas de búsqueda devuelven los resultados más rápido ahora que la instancia de clúster subyacente se ha reiniciado entre bastidores (la ejecución de búsqueda inicial podría durar más en un caso anterior).
-* Ordene por &#39;Nombre&#39; cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda.
-* Ordena en &quot;Creación&quot; (fecha) cuando visualiza recursos en la vista de listas en la interfaz de Recursos y en los resultados de búsqueda.
-* Compatibilidad para convertir archivos EPS en imágenes.
+* Ordene por &#39;Nombre&#39; cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
+* Ordena en &quot;Creación&quot; (fecha) cuando visualiza recursos en la vista de listas en la interfaz de Recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
+* Compatibilidad para convertir archivos EPS en imágenes mediante microservicios de recursos.
 
 ### Corrección de errores {#assets-bug-fixes}
 
