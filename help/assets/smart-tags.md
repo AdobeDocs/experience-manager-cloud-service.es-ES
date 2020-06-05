@@ -3,15 +3,15 @@ title: Etiquete imágenes con servicios artificialmente inteligentes.
 description: Etiquete imágenes con servicios artificialmente inteligentes que apliquen etiquetas empresariales contextuales y descriptivas mediante los servicios de Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 5%
 
 ---
 
 
-# Etiquetado de imágenes mediante servicios inteligentes {#smart-tag-assets}
+# Servicio de etiquetas inteligentes de formación y etiquetado de imágenes {#train-service-tag-assets}
 
 Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a sus recursos digitales y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
 
@@ -25,7 +25,7 @@ En segundo plano, las etiquetas inteligentes utilizan un marco de inteligencia a
 
 Para utilizar el etiquetado inteligente, complete las siguientes tareas:
 
-* [Integre Experience Manager con Adobe I/O](#integrate-aem-with-aio).
+* [Integre Experience Manager con Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprender los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
 * [Entrena al modelo](#train-model).
 * [Etiquete sus recursos](#tag-assets)digitales.
@@ -35,11 +35,11 @@ Las etiquetas inteligentes solo se aplican a [!DNL Adobe Experience Manager Asse
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Integración [!DNL Experience Manager] con Adobe I/O {#integrate-aem-with-aio}
+## Integración [!DNL Experience Manager] con Adobe Developer Console {#integrate-aem-with-aio}
 
-Puede integrarse [!DNL Adobe Experience Manager] con las etiquetas inteligentes mediante Adobe I/O. Utilice esta configuración para acceder al servicio Etiquetas inteligentes desde dentro [!DNL Experience Manager].
+Puede realizar la integración [!DNL Adobe Experience Manager] con las etiquetas inteligentes mediante Adobe Developer Console. Utilice esta configuración para acceder al servicio Etiquetas inteligentes desde dentro [!DNL Experience Manager].
 
-Consulte [Configuración de Experience Manager para el etiquetado inteligente de recursos](smart-tags-configuration.md) para tareas a fin de configurar las etiquetas inteligentes. En el back-end, el [!DNL Experience Manager] servidor autentica las credenciales de servicio con la puerta de enlace de Adobe I/O antes de reenviar la solicitud al servicio Smart Tags.
+Consulte [Configuración de Experience Manager para el etiquetado inteligente de recursos](smart-tags-configuration.md) para tareas a fin de configurar las etiquetas inteligentes. En el back-end, el [!DNL Experience Manager] servidor autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio Smart Tags.
 
 ## Explicación de los modelos y directrices de etiquetas {#understand-tag-models-guidelines}
 
