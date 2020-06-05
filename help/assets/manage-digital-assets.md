@@ -4,9 +4,9 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d262d4493939f0fc60a98ef4ff892fbce5f526ab
 workflow-type: tm+mt
-source-wordcount: '4284'
+source-wordcount: '4396'
 ht-degree: 12%
 
 ---
@@ -37,7 +37,19 @@ No se admiten los siguientes caracteres (lista separada por espacios):
 
 ## Upload assets {#uploading-assets}
 
-Consulte [Adición de recursos digitales a Experience Manager](add-assets.md)para obtener información detallada.
+Consulte [Adición de recursos digitales a Experience Manager](add-assets.md).
+
+## Detectar recursos de duplicado {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+Si un recurso de duplicado existe en el repositorio de DAM, Assets lo detecta y lo notifica al usuario. La detección de Duplicados está deshabilitada de forma predeterminada. Para activar la función, configure el detector de duplicación de recursos de Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
+
+![Detectar la configuración OSGi del recurso de duplicado](assets/duplicate-detection.png)
+
+Una vez habilitada, Experience Manager envía notificaciones de recursos de duplicado a la bandeja de entrada. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
+
+![Notificación de bandeja de entrada para recursos de duplicado](assets/duplicate-detect-inbox-notification.png)
 
 ## Recursos de Previsualización {#previewing-assets}
 
