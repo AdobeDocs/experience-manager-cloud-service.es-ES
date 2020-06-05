@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 7%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## Novedades en AEM Sites {#aem-sites}
 
 Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites en AEM as a Cloud Service versión 2020.6.0.
+
+### Novedades {#whats-new-2020.6.0}
+
+La versión 2.9.0 de los componentes [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) principales ya está disponible como parte de los sitios de AEM, incluidos:
+
+* Integración entre la capa [de datos del cliente de](https://github.com/adobe/adobe-client-data-layer) Adobe y los componentes principales
+* Atributos de ID HTML configurables para todos los componentes
+* Un nuevo componente de barra de progreso
+* Muchas correcciones de errores
 
 ### Corrección de errores {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Un usuario con la función Propietario ** empresarial en Cloud Manager ahora puede eliminar un Programa de Simulador para pruebas de la página de aterrizaje (mediante un botón de acción rápida en la tarjeta de Programa) o desde el programa.
 
-* Un usuario de Programa de Simulador para pruebas en la función Propietario ** empresarial o Administrador *de* implementación en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y de fase mediante la interfaz de usuario del Administrador de nube. La opción Eliminar ya está disponible tanto en la tarjeta de Entorno de la página de información general como en la página de Entornos. Al seleccionar la opción de eliminación en Producción o Etapa, también se elimina la otra del conjunto.
+   Consulte [Eliminación de un Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) de Simulador para pruebas para obtener más información.
+
+* Un usuario de Programa de Simulador para pruebas en la función Propietario ** empresarial o Administrador *de* implementación en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y de fase mediante la interfaz de usuario del Administrador de nube. La opción Eliminar ya está disponible en la tarjeta de Entorno de la página Información general **de** Programas y en la página **Entornos** . Al seleccionar la opción de eliminación en Producción o Etapa, también se elimina la otra del conjunto.
+
+   Consulte [Eliminación de un Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) de Simulador para pruebas para obtener más información.
 
 * Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
 
-* Marcas de entrenador en la página *Información general* para informar e instruir al usuario sobre la navegación básica dentro de Cloud Manager para iniciarla.
+* Marcas de entrenador en la página Información general **de** Programa para informar e instruir al usuario sobre la navegación básica dentro de Cloud Manager para iniciarla.
 
 * Ahora hay disponible una página **APRENDIZAJE** en Cloud Manager, a la que se puede acceder desde la barra de navegación superior. Esta página incluye recursos para ayudar a los usuarios a conocer los flujos de trabajo utilizados con más frecuencia según su función asignada en Cloud Manager.
 
-* Los Programas de Simulador para pruebas ahora se identifican mediante un distintivo de **Simulador para pruebas** que se mostrará en la tarjeta de programa de la página de aterrizaje y junto al nombre del programa en la página *Información general* .
+* Los Programas de Simulador para pruebas ahora se identifican mediante un distintivo de **Simulador para pruebas** que se mostrará en la tarjeta de programa de la página de aterrizaje y junto al nombre del programa en la página Información general **de** Programa.
 
-* Un usuario con la función *Administración* de sistemas ahora tiene acceso con un solo clic a la ubicación de la Consola de administración desde la que se pueden administrar las funciones de usuario o los permisos de Cloud Manager. En la página de aterrizaje que hay junto al botón **Añadir Programa** habrá disponible un botón **Administrar funciones** .
+* Un usuario con la función Administración de sistemas ahora tiene acceso de un solo clic a la ubicación de la Consola de administración desde la que se pueden administrar las funciones de usuario o los permisos de Cloud Manager. Ahora hay disponible un botón **Administrar acceso** en la página de aterrizaje junto al botón **Añadir Programa** .
 
-* Un usuario con la función Administración de sistemas ahora tiene acceso de un solo clic a la instancia de Autor directamente desde CM.
+   Consulte [Tareas](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) de Administración de sistemas para obtener más detalles.
+
+* Un usuario con la función Administración de sistemas ahora tiene acceso con un solo clic a la instancia de autor directamente desde Cloud Manager.
+
+   Consulte [Administración del acceso a la instancia](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) de autor para obtener más información.
 
 * El registro de compilación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
 
@@ -77,7 +94,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * En determinadas situaciones, los iconos del cuadro de diálogo **Crear Programa** estaban desalineados.
 
-* El identificador de la versión de AEM no se mostraba de forma coherente en la página *Información general* .
+* El identificador de versión de AEM no se mostraba de forma coherente en la página Información general **de** Programas.
 
 * Al configurar la canalización de producción, la opción Implementación **** programada no estaba visible para algunos clientes.
 
