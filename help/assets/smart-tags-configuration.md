@@ -3,10 +3,10 @@ title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 12%
+source-wordcount: '1005'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas. Adobe proporciona etiquetas inteligentes que utilizan inteligencia artificial y algoritmos de aprendizaje automático para formar imágenes. Smart Tags utiliza un marco de inteligencia artificial de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial.
 
-La funcionalidad Etiquetas inteligentes está disponible para su compra como complemento de [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a Adobe I/O. El administrador accede al vínculo para integrar las etiquetas inteligentes con [!DNL Experience Manager] Adobe I/O.
+La funcionalidad Etiquetas inteligentes está disponible para su compra como complemento de [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a Adobe Developer Console. El administrador accede al vínculo para integrar las etiquetas inteligentes con [!DNL Experience Manager] Adobe Developer Console.
 
 <!-- TBD: 
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
@@ -24,45 +24,35 @@ La funcionalidad Etiquetas inteligentes está disponible para su compra como com
 4. Post-GA, if time permits, create a video.
 -->
 
-## Integración con Adobe I/O {#aio-integration}
+## Integración con Adobe Developer Console {#aio-integration}
 
-Para poder etiquetar las imágenes con SCS, integre [!DNL Adobe Experience Manager] el servicio de etiquetas inteligentes con Adobe I/O. En el back-end, el [!DNL Experience Manager] servidor autentica las credenciales de servicio con la puerta de enlace de Adobe I/O antes de reenviar la solicitud al servicio.
+Para poder etiquetar las imágenes mediante SCS, integre [!DNL Adobe Experience Manager] el servicio de etiquetas inteligentes con Adobe Developer Console. En el back-end, el [!DNL Experience Manager] servidor autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio.
 
 * Cree una configuración en [!DNL Experience Manager] para generar una clave pública. Obtenga un certificado público para la integración de OAuth.
-* Cree una integración en Adobe I/O y cargue la clave pública generada.
-* Configure la [!DNL Experience Manager] instancia mediante la clave de API y otras credenciales de Adobe I/O.
+* Cree una integración en Adobe Developer Console y cargue la clave pública generada.
+* Configure la [!DNL Experience Manager] instancia utilizando la clave de API y otras credenciales de Adobe Developer Console.
 * De forma opcional, habilite el etiquetado automático en la carga de recursos.
 
-### Requisitos previos para la integración de Adobe I/O {#prerequisite-for-aio-integration}
+### Requisitos previos para la integración de Adobe Developer Console {#prerequisite-for-aio-integration}
 
-Antes de utilizar las etiquetas inteligentes, asegúrese de lo siguiente para crear una integración en Adobe I/O:
+Antes de utilizar las etiquetas inteligentes, asegúrese de lo siguiente para crear una integración en Adobe Developer Console:
 
 * Una cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * Las etiquetas inteligentes están activadas para su organización.
 
 ### Obtain a public certificate {#obtain-public-certificate}
 
-Un certificado público le permite autenticar su perfil en Adobe I/O.
+Un certificado público le permite autenticar su perfil en Adobe Developer Console. Puede crear un certificado desde dentro [!DNL Experience Manager].
 
-1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > Servicios **[!UICONTROL de]** nube > Servicios **[!UICONTROL de nube]** heredados.
+1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > Configuraciones de IMS de **[!UICONTROL Adobe]**.
 
-1. On the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. En la página Configuraciones [!UICONTROL de IMS de] Adobe, haga clic en **[!UICONTROL Crear]**. En el menú Solución **[!UICONTROL de]** Cloud, seleccione Etiquetas **[!UICONTROL inteligentes]**.
 
-1. En el cuadro de diálogo **[!UICONTROL Crear configuración]** , especifique un título y un nombre para la configuración de etiquetas inteligentes. Haga clic en **[!UICONTROL Crear]**.
+1. Seleccione **[!UICONTROL Crear nuevo certificado]**. Proporcione un nombre y haga clic en **[!UICONTROL Crear certificado]**. Haga clic en **[!UICONTROL Aceptar]**.
 
-1. En el cuadro de diálogo **[!UICONTROL AEM Smart Content Service]** , utilice los valores siguientes:
+1. Haga clic en **[!UICONTROL Descargar clave]** pública.
 
-   **[!UICONTROL URL de servicio]**: `https://mc.adobe.io/marketingcloud/smartcontent`
-
-   **[!UICONTROL Servidor de autorización]**: `https://ims-na1.adobelogin.com`
-
-   Deje el resto de campos en blanco por ahora (se proporcionará más tarde). Haga clic en **[!UICONTROL Aceptar]**.
-
-   ![Cuadro de diálogo del servicio de contenido inteligente de Experience Manager para proporcionar la URL del servicio de contenido](assets/aem_scs.png)
-
-1. Haga clic en **[!UICONTROL Descargar certificado público para la integración]** de OAuth y descargue el archivo de certificado público `AEM-SmartTags.crt`.
-
-   ![Configuración creada para el servicio de etiquetado inteligente](assets/download_link.png)
+   ![Las etiquetas inteligentes de Experience Manager crean una clave pública](assets/aem_smarttags-config1.png)
 
 ### Volver a configurar si un certificado caduca {#certrenew}
 
@@ -77,47 +67,43 @@ Cuando caduca el certificado, ya no es de confianza. Para agregar un nuevo certi
 
    *Figura: Elimine la`similaritysearch`entrada existente en Keystore para agregar un nuevo certificado de seguridad.*
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servicios de nube heredados]**. Haga clic en **[!UICONTROL Etiquetas inteligentes de recursos]** > **[!UICONTROL Mostrar configuración]** > **[!UICONTROL Configuraciones disponibles]**. Haga clic en la configuración requerida.
+1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > Configuraciones de IMS de **[!UICONTROL Adobe]**. Abra la configuración de etiquetas inteligentes disponible. Para descargar un certificado público, haga clic en **[!UICONTROL Descargar certificado]** público.
 
-1. Para descargar un certificado público, haga clic en **[!UICONTROL Descargar certificado público para la integración]** de OAuth.
-
-1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya al servicio existente en el proyecto. Cargue el nuevo certificado. Para obtener más información, consulte las instrucciones de [Creación de la integración](#create-aio-integration)de Adobe I/O.
+1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya al servicio existente en el proyecto. Cargue el nuevo certificado y configúrelo. Para obtener más información sobre la configuración, consulte las instrucciones de [Creación de la integración](#create-aio-integration)de Adobe Developer Console.
 
 ### Creación de una integración {#create-aio-integration}
 
-Para utilizar las API de etiquetas inteligentes, cree una integración en Adobe I/O para generar la clave de API, el ID de cuenta técnica, el ID de organización y el Secreto de cliente.
+Para utilizar etiquetas inteligentes, cree una integración en Adobe Developer Console para generar clave de API, ID de cuenta técnica, ID de organización y Secreto de cliente.
 
-1. Acceda a [https://console.adobe.io](https://console.adobe.io/).
-1. Seleccione la cuenta adecuada y compruebe que la función de organización asociada sea administrador del sistema. Cree un proyecto o abra un proyecto existente. En la página del proyecto, haga clic en **[!UICONTROL Añadir API]**.
-1. En la página **[!UICONTROL Añadir una API]** , seleccione **[!UICONTROL Experience Cloud]** y seleccione Contenido **** inteligente. Haga clic en **[!UICONTROL Continuar]**.
-1. En la página siguiente, seleccione **[!UICONTROL Nueva integración]**. Haga clic en **[!UICONTROL Continuar]**.
-1. En la página Detalles **[!UICONTROL de la]** integración, especifique un nombre para la puerta de enlace de integración y agregue una descripción.
-1. En los certificados **[!UICONTROL de claves]** públicas, cargue el `AEM-SmartTags.crt` archivo que descargó anteriormente.
-1. Haga clic en **[!UICONTROL Crear integración]**.
-1. Para vista de la información de la integración, haga clic en **[!UICONTROL Continuar a los detalles]** de la integración.
+1. Acceda a [https://console.adobe.io](https://console.adobe.io/) en un navegador. Seleccione la cuenta adecuada y compruebe que la función de organización asociada sea administrador del sistema.
+1. Cree un proyecto con el nombre que desee. Haga clic en **[!UICONTROL Añadir API]**.
+1. En la página **[!UICONTROL Añadir una API]** , seleccione **[!UICONTROL Experience Cloud]** y seleccione Contenido **** inteligente. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione **[!UICONTROL Cargar la clave]** pública. Proporcione el archivo de certificado descargado de [!DNL Experience Manager]. Se muestra un mensaje con las claves [!UICONTROL públicas cargadas correctamente] . Haga clic en **[!UICONTROL Siguiente]**. 
+1. [!UICONTROL Crear una nueva página de credenciales] de cuenta de servicio (JWT) muestra la clave pública de la cuenta de servicio que se acaba de configurar. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En la página **[!UICONTROL Seleccionar perfiles]** de producto, seleccione Servicios de contenido **[!UICONTROL inteligente]**. Haga clic en **[!UICONTROL Guardar API]** configurada. Una página muestra más información sobre la configuración. Mantenga esta página abierta para copiar y agregar estos valores en Experience Manager al configurar las etiquetas inteligentes en [!DNL Experience Manager].
 
    ![En la ficha Información general, puede revisar la información proporcionada para la integración.](assets/integration_details.png)
 
 ### Configurar etiquetas inteligentes {#configure-smart-content-service}
 
-Para configurar la integración, utilice los valores de los campos de ID de cuenta técnica, ID de organización, Secreto de cliente, Servidor de autorización y clave de API de la integración de Adobe I/O. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la [!DNL Experience Manager] instancia.
+Para configurar la integración, utilice los valores de los campos Carga útil, Secreto del cliente, Servidor de autorización y Clave de API de la integración de Adobe Developer Console.
 
-1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Servicio de nube > Servicios]** de nube heredados para abrir la consola de [!UICONTROL Cloud Services] .
-1. En Etiquetas **[!UICONTROL inteligentes de]** recursos, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
-1. En el cuadro de diálogo **[!UICONTROL AEM Smart Content Service]**, utilice los valores predefinidos para los campos **[!UICONTROL URL de servicio]** y **[!UICONTROL Servidor de autorización]**.
-1. Para los campos **[!UICONTROL Clave de API]**, **[!UICONTROL Id de cuenta técnica]**, **[!UICONTROL Id de organización]** y **[!UICONTROL Secreto de cliente]**, utilice los valores generados anteriormente.
+1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > Configuraciones de IMS de **[!UICONTROL Adobe]**.
+1. Acceda a la página Configuración **[!UICONTROL de cuenta técnica de]** Adobe IMS y proporcione un **[!UICONTROL título]**.
+1. En el campo **[!UICONTROL Servidor]** de autorización, proporcione `https://ims-na1.adobelogin.com` la dirección URL.
+1. En el campo Clave **** de API, especifique el ID **[!UICONTROL de]** cliente desde el [!DNL Adobe Developer Console].
+1. En el campo Secreto **[!UICONTROL del]** cliente, proporcione el Secreto **[!UICONTROL del]** cliente desde el [!DNL Adobe Developer Console]. Haga clic en la opción **[!UICONTROL Recuperar secreto]** de cliente para verlo.
+1. En [!DNL Adobe Developer Console], en el proyecto, haga clic en Cuenta **[!UICONTROL de servicio (JWT)]** desde el margen izquierdo. Haga clic en la ficha **[!UICONTROL Generar JWT]** . Haga clic en **[!UICONTROL Copiar]** para copiar la carga útil **** JWT mostrada. Proporcione este valor en el campo **[!UICONTROL Carga útil]** de [!DNL Experience Manager]. Haga clic en **[!UICONTROL Crear]**.
 
 ### Validar la configuración {#validate-the-configuration}
 
-Después de completar la configuración, puede utilizar un MBean de JMX para validar la configuración. Para validar, siga estos pasos.
+Después de completar la configuración, siga estos pasos para validar la configuración.
 
-1. Acceda a su [!DNL Experience Manager] servidor en `https://[aem_server]:[port]`.
+1. En la interfaz [!DNL Experience Manager] de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > Configuraciones de IMS de **[!UICONTROL Adobe]**.
 
-1. Vaya a **[!UICONTROL Herramientas > Operaciones > Consola]** Web para abrir la consola OSGi. Haga clic en **[!UICONTROL Principal > JMX]**.
-1. Haga clic en **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Abre **[!UICONTROL SimilitudBuscar Tareas diversas.]**.
-1. Haga clic en **[!UICONTROL validateConfigs()]**. En el cuadro de diálogo **[!UICONTROL Validar configuraciones]** , haga clic en **[!UICONTROL Invocar]**.
+1. Seleccione la configuración de Etiquetas inteligentes. Haga clic en **[!UICONTROL Comprobar estado]** en la barra de herramientas. Haga clic en **[!UICONTROL Comprobar]**. Un cuadro de diálogo con el mensaje de configuración  Sana confirma que la configuración está funcionando.
 
-   El resultado de validación se muestra en el mismo cuadro de diálogo.
+![Validación de la configuración de etiquetas inteligentes](assets/smart-tag-config-validation.png)
 
 ## Habilitar el etiquetado inteligente para los recursos recientemente cargados (opcional) {#enable-smart-tagging-for-uploaded-assets}
 
