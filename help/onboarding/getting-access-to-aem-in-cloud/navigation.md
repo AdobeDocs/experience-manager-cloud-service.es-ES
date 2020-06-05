@@ -2,7 +2,7 @@
 title: Navegación
 description: 'Navegación: servicio en la nube'
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 072c93eb367a4497d94b73d7f9e54bda862605fa
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 1%
@@ -33,11 +33,9 @@ Consulte [Acceso a Cloud Manager](https://docs.adobe.com/content/help/en/experie
 
 1. Vaya a la página de aterrizaje del Administrador de nube y haga clic en **Administrar acceso**.
 
-   ![](assets/sys-admin1.png)
+   ![](assets/sys-admin5.png)
 
 1. Al hacer clic en **Administrar acceso** , se desplaza hasta la Consola **de** administración, desde donde puede administrar las funciones de usuario o los permisos de Cloud Manager.
-
-   ![](assets/sys-admin2.png)
 
 ### Administración del acceso a la instancia de autor {#manage-access-aem}
 
@@ -48,14 +46,17 @@ Como usuario en la función Administración de sistemas, tiene acceso con un sol
 
 Consulte [Acceso a una instancia en AEM como servicio](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) de nube para obtener más información.
 
-1. Vaya a la tarjeta **Entornos** desde la página *Información general* o a la página **Entornos** para utilizar la opción **Administrar acceso** , como se muestra en la figura siguiente.
+1. Vaya a la tarjeta **Entornos** desde la página Información general **de** Programa.
 
-   ![](assets/manage-access1.png)
+   ![](assets/sys-admin6.png)
+
+   O bien,
+
+   Haga clic en **Detalles** en la tarjeta de **Entornos** para abrir la página de Entornos. Haga clic en **Administrar** -> **Administrar acceso**.
+
+   ![](assets/sys-admin4.png)
 
 1. Al hacer clic en **Administrar acceso** , se desplaza a la Consola **de** administración desde donde tiene acceso a la instancia de autor de un entorno.
-
-   ![](assets/sys-admin3.png)
-
 
 ## Para clientes de AMS existentes {#existing-aem}
 
