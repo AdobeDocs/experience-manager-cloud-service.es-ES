@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.5.0
 description: Notas de la versión de Experience Manager para 2020.5.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 ## Fecha de la versión {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.5.0 es 7 de mayo de 2020.
 
-## What&#39;s New in AEM Sites {#aem-sites}
+## Novedades en AEM Sites {#aem-sites}
 
-Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites en AEM como una versión 2020.5.0 del servicio de nube.
+Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites en AEM as a Cloud Service versión 2020.5.0.
 
-* La información detallada del trabajo ahora está disponible después de procesar los movimientos de página masiva y los despliegues como trabajos asincrónicos.
+* La información detallada del trabajo ahora está disponible después de procesar los movimientos y despliegues de página masiva como trabajos asincrónicos.
 * Al copiar/pegar un árbol de páginas, ahora ofrece la opción de pegar solo la página raíz o también las subpáginas del árbol.
-* Los fragmentos de experiencia de AEM exportados a espacios de trabajo de Adobe Destinatario ahora aparecen como tipos de oferta únicos y fuentes de oferta en Destinatario.
-* MSM: el uso del activador de *publicación* ahora despliega correctamente eventos de eliminación para los componentes del origen de Live Copy, es decir, eliminando componentes de una Live Copy que se eliminaron del origen de Live Copy.
-* MSM: ahora se cambia el nombre de los componentes de Live Copy a *_msm_move* después de la misma implementación de componente desde el origen de Live Copy.
+* Los fragmentos de experiencias de AEM exportados a espacios de trabajo de Adobe Target ahora aparecen como tipos de oferta únicos y fuentes de oferta en Target.
+* MSM: al usar el activador de *publicación* ahora despliega correctamente eventos de eliminación para los componentes del origen de Live Copy, es decir, elimina componentes de una Live Copy que se eliminaron del origen de Live Copy.
+* MSM: ahora se cambia el nombre de los componentes de Live Copy a *_msm_move* después del mismo despliegue de componente desde el origen de Live Copy.
 
 
 ## Novedades de Cloud Manager {#cloud-manager}
