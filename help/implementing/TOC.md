@@ -2,10 +2,10 @@
 sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 89%
+source-wordcount: '203'
+ht-degree: 85%
 
 ---
 
@@ -37,6 +37,9 @@ ht-degree: 89%
    + [Personalizar y ampliar fragmentos de contenido](developing/extending/content-fragments-customizing.md)
    + [Fragmentos de contenido Configurar componentes para procesamiento](developing/extending/content-fragments-configuring-components-rendering.md)
    + [Configurar formularios de búsqueda](developing/extending/search-forms.md)
+   + [Configuración del editor de texto enriquecido](/help/implementing/developing/extending/rich-text-editor.md)
+   + [Configuración de los complementos RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [Configurar RTE para crear sitios accesibles](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implementar en AEM as a Cloud Service {#deploying}
    + [Implementar en AEM as a Cloud Service](deploying/overview.md)
    + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
