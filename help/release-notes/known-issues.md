@@ -1,8 +1,11 @@
 ---
 title: Problemas conocidos
 description: Notas de la versión específicas de los problemas conocidos con Adobe Experience Manager as a Cloud Service.
-translation-type: ht
-source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -31,13 +34,12 @@ Algunos problemas conocidos son:
 
 Se espera que algunas funciones de Adobe Experience Manager Assets que dependen de las funciones básicas y que aún no están disponibles como una arquitectura de implementación de Experience Manager as a Cloud Service, se habiliten más adelante:
 
-* Por ahora, la función de etiquetado inteligente mejorada que aprovecha los servicios de IA de Adobe I/O no está disponible.
 * Funciones no habilitadas en este momento debido a la dependencia de las API del marco de integración comercial:
    * Modelos de flujo de trabajo de sesión fotográfica.
    * La pestaña Información del producto de la interfaz de usuario de las propiedades del recurso no se completó.
 * Funciones no habilitadas en esta etapa debido a la dependencia de la integración de InDesign Server:
    * Plantillas y catálogos de recursos.
-   * Vista previa de varias páginas de archivos de InDesign.
+   * previsualización de varios archivos de Adobe InDesign en varias páginas.
 
 >[!MORELIKETHIS]
 >
