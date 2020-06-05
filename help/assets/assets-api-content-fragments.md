@@ -2,7 +2,10 @@
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager como servicio de nube en la API HTTP de Assets
 description: Obtenga información sobre Adobe Experience Manager como compatibilidad con fragmentos de contenido de servicios en la API HTTP de recursos.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +30,7 @@ La API le permite utilizar Adobe Experience Manager como un servicio en la nube 
 
 Por ejemplo, las aplicaciones de una sola página (SPA), basadas en marcos o personalizadas, requieren contenido proporcionado a través de la API HTTP, a menudo en formato JSON.
 
-Aunque los componentes [principales de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) AEM proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí que requieren el conocimiento práctico de AEM WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas basadas en plantillas de AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso directo a esos conocimientos.
+Aunque los componentes [principales de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) AEM proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí que requieren el conocimiento práctico de AEM WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas basadas en plantillas de AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso directo a esos conocimientos.
 
 Es cuando se puede utilizar la API REST de Assets. Permite a los desarrolladores acceder a los recursos (por ejemplo, imágenes y fragmentos de contenido) directamente, sin necesidad de incrustarlos primero en una página y entregar su contenido en formato JSON serializado.
 
@@ -58,7 +61,7 @@ Utiliza el punto final y requiere la ruta del recurso para acceder a él (sin el
 * Debe solicitar:
    * `/api/assets/path/to/asset`
 
-Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por ejemplo, para acceder `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Acceso sobre:
@@ -297,7 +300,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones        {#limitations}
+## Restricciones          {#limitations}
 
 Existen algunas limitaciones:
 
@@ -310,7 +313,7 @@ Existen algunas limitaciones:
 
 Los siguientes códigos de estado se pueden ver en las circunstancias pertinentes:
 
-1. 200 (OK)
+* **200** (Aceptar)
 
    Se devuelve cuando:
 
@@ -318,19 +321,19 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
    * actualización satisfactoria de un fragmento de contenido mediante `PUT`
 
-1. 201 (Creación)
+* **201** (Creación)
 
    Se devuelve cuando:
 
    * crear correctamente un fragmento de contenido mediante `POST`
 
-1. 404 (No encontrado)
+* **404** (No encontrado)
 
    Se devuelve cuando:
 
    * el fragmento de contenido solicitado no existe
 
-1. 500 (error interno del servidor)
+* **500** (error interno del servidor)
 
    >[!NOTE]
    >
