@@ -1,11 +1,11 @@
 ---
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Inmediatamente después del inicio de sesión llega al [panel Navegación](#navi
 
 Para comprender bien el uso básico de AEM, este documento se basa en la consola **Sitios**. Pulse o haga clic en **Sitios** para comenzar.
 
-## Navegación de productos   {#product-navigation}
+## Navegación de productos    {#product-navigation}
 
 Cuando un usuario accede por primera vez a una consola, se inicia un tutorial de navegación por el producto. Dedíquele un momento para ver una buena descripción general del funcionamiento básico de AEM.
 
@@ -50,20 +50,20 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 
 ![Barra superior del panel de navegación](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
-La navegación global dispone de dos paneles, representados por sendos iconos en el lado izquierdo de la pantalla:
+La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
-* **[Navegación](#navigation-panel)**: se representa mediante una brújula   y el panel predeterminado al iniciar sesión en AEM.
+* **[Navegación](#navigation-panel)**: se representa mediante una brújula    y el panel predeterminado al iniciar sesión en AEM.
 * **[Herramientas](#tools-panel)**: se representa mediante un martillo
 
 Las opciones disponibles en estos paneles se describen a continuación.
 
-### Panel de navegación   {#navigation-panel}
+### Panel de navegación    {#navigation-panel}
 
 El panel Navegación:
 
 ![Panel de navegación](/help/sites-cloud/authoring/assets/navigation.png)
 
-El título de la ficha del navegador se actualizará para reflejar su ubicación a medida que navega por las consolas y el contenido.
+El título de la pestaña del navegador se actualizará para reflejar su ubicación a medida que navegue por las consolas y el contenido.
 
 En Navegación, las consolas disponibles son:
 
@@ -157,9 +157,9 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Navegación por teclado
 
-   Puede navegar por un sitio web utilizando únicamente el teclado. Utiliza la funcionalidad estándar del navegador de la tecla **TAB** (u **OPT+TAB**) para desplazar al usuario entre los elementos de la página que se pueden enfocar.
+   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del navegador de la tecla **TAB** (u **OPT+TAB**) para desplazarlo entre los elementos de la página que se pueden enfocar.
 
-   En la consola **Sitios** hay una opción agregada para **Omitir al contenido** principal. Esto se hace visible a medida que se desplaza por el tabulador a través de las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto) y llevándolo directamente al contenido principal.
+   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se vuelve visible a medida que se desplaza con el tabulador a través de las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto), y lo lleva directamente al contenido principal.
 
    ![Pasar al contenido principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
@@ -225,7 +225,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas   {#quick-actions}
+## Acciones rápidas    {#quick-actions}
 
 En la [vista de tarjeta](#card-view), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -247,7 +247,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 >
 >De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos   {#selecting-resources}
+### Selección de recursos    {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -338,7 +338,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](#the-header).
 
-### Vista de lista   {#list-view}
+### Vista de lista    {#list-view}
 
 ![Vista de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
