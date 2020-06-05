@@ -2,9 +2,9 @@
 title: Creación de un Programa - Servicio de nube
 description: Creación de un Programa - Servicio de nube
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
 Un usuario de un Programa de Simulador para pruebas en la función Propietario ** empresarial o Administrador *de* implementación en Cloud Manager puede eliminar el conjunto de entornos de producción y de fase mediante la interfaz de usuario del Administrador de nubes.
 
-La opción Eliminar está disponible tanto en la tarjeta de Entorno de la página *Información general* como en la página **Entornos** . Al seleccionar la opción de eliminación en Producción o Etapa, también se elimina la otra del conjunto.
+>[!NOTE]
+>Al seleccionar la opción de eliminación en Producción o Etapa, también se elimina la otra del conjunto.
+
+La opción Eliminar está disponible en la página de aterrizaje, como se muestra a continuación:
+
+![](assets/delete-sandbox1.png)
+
+O bien,
+
+Seleccione **Eliminar Programa** en la página *Información general* para eliminar el Programa del Simulador para pruebas.
+
+![](assets/delete-sandbox2.png)
+
 
 ## Creación de un Programa normal {#create-regular-program}
 
