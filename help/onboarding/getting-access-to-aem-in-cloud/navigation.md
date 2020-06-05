@@ -2,7 +2,7 @@
 title: Navegación
 description: 'Navegación: servicio en la nube'
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ Consulte [Acceso a una instancia en AEM como servicio](https://docs.adobe.com/co
    ![](assets/sys-admin4.png)
 
 1. Una vez que haga clic en **Administrar acceso**, se desplazará a la Consola **de** administración desde donde tiene acceso a la instancia de creación del entorno.
+
+   ![](assets/sys-admin-2.png)
 
 ## Para clientes de AMS existentes {#existing-aem}
 
