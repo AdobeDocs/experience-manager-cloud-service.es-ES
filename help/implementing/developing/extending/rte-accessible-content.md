@@ -3,9 +3,9 @@ title: Configure RTE para crear sitios y páginas web accesibles.
 description: Aprenda a configurar el Editor de texto enriquecido para crear sitios accesibles en Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 78ec0ed2a1473797a07905baa346a83376779419
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -149,4 +149,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guía rápida de los estándares WCAG](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [Creación de contenido accesible en Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
