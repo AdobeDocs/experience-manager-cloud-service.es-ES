@@ -1,11 +1,11 @@
 ---
 sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
-source-wordcount: '181'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,8 @@ ht-degree: 100%
 + Implementar en AEM as a Cloud Service {#deploying}
    + [Implementar en AEM as a Cloud Service](deploying/overview.md)
    + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ Dispatcher en la nube {#dispatcher}
-   + [Dispatcher en la nube](dispatcher/overview.md)
-   + [Enviar contenido en AEM as a Cloud Service](dispatcher/content-delivery.md)
++ Información general del Envío de contenido {#content-delivery}
+   + [Flujo de Envío de contenido](dispatcher/overview.md)
+   + [Dispatcher en la nube](dispatcher/disp-overview.md)
+   + [CDN en AEM como servicio de nube](dispatcher/cdn.md)
+   + [Almacenamiento en caché de AEM como un servicio en la nube](dispatcher/caching.md)
