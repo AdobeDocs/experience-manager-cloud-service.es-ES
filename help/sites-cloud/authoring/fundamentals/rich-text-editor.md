@@ -1,17 +1,20 @@
 ---
-title: Uso del editor de texto enriquecido para crear contenido
-description: Uso del editor de texto enriquecido para crear contenido
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+title: Utilice el Editor de texto enriquecido de Adobe Experience Manager para crear contenido.
+description: Utilice el Editor de texto enriquecido de Experience Manager para crear contenido.
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 47%
 
 ---
 
 
-# Uso del editor de texto enriquecido para crear contenido {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes.
 
-## Edición local {#in-place-editing}
+## In-place editing {#in-place-editing}
 
 Si se selecciona un componente basado en texto con un solo pulse o clic, se muestra la [barra de herramientas de componentes](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar), como con cualquier otro componente.
 
@@ -23,19 +26,17 @@ Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo seleccion
 
 Esta barra de herramientas ofrece las opciones siguientes:
 
-* **Formato**: esta opción le permite utilizar negrita, cursiva y subrayado.
-* **Listas**: con esta opción puede crear listas con viñetas o números, o establecer la sangría.
-* **Hipervínculo**
-* **Desvincular**
-* **Pantalla completa**
-* **Cerrar**
-* **Guardar**
+* **Formato**: Resalte el texto como negrita o cursiva o subrayado.
+* **Listas**: Cree listas con viñetas o numeradas y defina la sangría.
+* **Hipervínculo**: Cree vínculos.
+* **Desvincular**: Quitar hipervínculo.
+* **Pantalla** completa: Abra el editor en modo de pantalla completa.
+* **Cerrar**: Detenga la edición.
+* **Guardar**: Guarde los cambios.
 
-## Edición en pantalla completa {#full-screen-editing}
+## Full screen editing {#full-screen-editing}
 
-Para los componentes basados en texto, pulsar el modo de pantalla completa en la [barra de herramientas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
-
-![Botón de pantalla completa de RTE](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+Para los componentes basados en texto, toque el botón ![de pantalla completa](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTE en modo de pantalla completa desde la [barra de herramientas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir el editor de texto enriquecido y ocultar el resto del contenido de la página.
 
 El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la fase de creación. La disponibilidad de las opciones depende de la configuración. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ El modo de pantalla completa muestra todas las opciones configuradas que puede u
 
 Entre las opciones adicionales del editor de texto enriquecido están:
 
-* **Anclaje**: crea en el texto un anclaje al que posteriormente puede hacer referencia o emplear como vínculo.
+* **Anclaje**: Cree un anclaje en el texto con el que posteriormente pueda establecer un vínculo o crear una referencia.
 * **Alinear texto a la izquierda**
 * **Centrar texto**
 * **Alinear texto a la derecha**
 
-El modo de pantalla completa se cierra haciendo clic en el icono de minimizar.
+Haga clic en minimizar para cerrar el modo de pantalla completa.
 
 ![Botón para minimizar el RTE](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->La copia de listas anidadas de Microsoft Word en el editor de texto enriquecido puede dar resultados incoherentes y necesitar un ajuste manual después de pegar el texto en el RTE.
+>Copiar listas anidadas de Microsoft Word en el editor de texto enriquecido puede dar resultados incoherentes. En su lugar, pegue como texto y realice ajustes manuales.
