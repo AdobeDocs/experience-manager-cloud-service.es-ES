@@ -2,9 +2,9 @@
 title: Creación de un Programa - Servicio de nube
 description: Creación de un Programa - Servicio de nube
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ La opción Eliminar está disponible en la página de aterrizaje, como se muestr
 
 O bien,
 
-Seleccione **Eliminar Programa** en la página *Información general* para eliminar el Programa del Simulador para pruebas.
+Seleccione **Eliminar Programa** en la página Información general **de** Programa para eliminar el Programa del Simulador para pruebas.
 
 ![](assets/delete-sandbox2.png)
 
