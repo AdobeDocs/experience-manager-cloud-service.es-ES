@@ -1,13 +1,16 @@
 ---
-title: Fragmentos de contenido Configuración de componentes para procesamiento
-description: Fragmentos de contenido Configuración de componentes para procesamiento
+title: Fragmentos de contenido Configurar componentes para procesamiento
+description: Fragmentos de contenido Configurar componentes para procesamiento
 translation-type: tm+mt
 source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 6%
 
 ---
 
 
-# Fragmentos de contenido Configuración de componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
+# Fragmentos de contenido Configurar componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
 
 Existen varios servicios [](#definition-of-advanced-services-that-need-configuration) avanzados relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recursos de dichos componentes deben darse a conocer al marco de fragmentos de contenido.
 
