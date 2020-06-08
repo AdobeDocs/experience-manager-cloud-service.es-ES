@@ -3,6 +3,9 @@ title: Vídeo
 description: Aprenda a trabajar con vídeo en Dynamic Media
 translation-type: tm+mt
 source-git-commit: acdad463a188387a7c39c1061191c7472e8295dd
+workflow-type: tm+mt
+source-wordcount: '10160'
+ht-degree: 10%
 
 ---
 
@@ -20,6 +23,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 >Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado los servicios de Dynamic Media Cloud.
 >
 >* Consulte [Configuración de los servicios](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) de Dynamic Media Cloud en Configuración de Dynamic Media y [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+
 >
 
 
@@ -469,6 +473,7 @@ Para configurar Google Cloud:
 
    * En el Panel del proyecto, en la tarjeta Introducción, toque **[!UICONTROL Explorar y active las API]**.
    * En el Panel del proyecto, en la tarjeta API, toque **[!UICONTROL Ir a la información general]** de las API.
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Cerca de la parte superior de la página API y servicios, toque **[!UICONTROL Activar API y servicios]**.
@@ -488,6 +493,7 @@ Para configurar Google Cloud:
    * Desde **[!UICONTROL ¿De dónde va a llamar a la API?]** lista desplegable, seleccione Servidor **[!UICONTROL Web (por ejemplo, node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** lista desplegable, toque Datos **[!UICONTROL de usuario]**.
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Puntee **[!UICONTROL ¿Qué credenciales necesito?]**
@@ -833,9 +839,11 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
 1. Progreso de la codificación de vídeo de Vista en la carpeta de recursos:
 
    * En la vista de tarjetas, el progreso de la codificación de vídeo se muestra en el recurso por porcentaje. Si hay un error, esta información también se muestra en el recurso.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. Si hay un error, este mensaje se muestra en la misma columna.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Esta columna no se muestra de forma predeterminada. Para habilitar la columna, seleccione **[!UICONTROL Ver configuración]** en el menú desplegable de vistas, agregue la columna **[!UICONTROL Estado de procesamiento]** y pulse o haga clic en **[!UICONTROL Actualizar]**.
@@ -855,6 +863,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >    * Configuración de cola de trabajos de Apache Sling
    >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
    >    * Cola de tiempo de espera de flujo de trabajo de granito
+
    >
    >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
 
@@ -889,6 +898,7 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    >    * Configuración de cola de trabajos de Apache Sling
    >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
    >    * Cola de tiempo de espera de flujo de trabajo de granito
+
    >
    >
    >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
@@ -987,6 +997,7 @@ Sólo necesita utilizar Actualizar si la fecha de finalización del informe es e
 
    * Cerca de la esquina superior derecha, toque el icono del selector de fechas **[UICONTROL]** .
 Especifique el intervalo de fechas de inicio y finalización para el que desea obtener datos de vídeo y, a continuación, toque **[!UICONTROL Ejecutar informe]**.
+
    El cuadro de grupo Métricas principales identifica varias medidas acumuladas para todos los *videos publicados en el sitio.
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
