@@ -3,6 +3,9 @@ title: Cambios notables en Recursos Adobe Experience Manager como servicio de nu
 description: Cambios notables en Recursos Adobe Experience Manager en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
 translation-type: tm+mt
 source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 4%
 
 ---
 
