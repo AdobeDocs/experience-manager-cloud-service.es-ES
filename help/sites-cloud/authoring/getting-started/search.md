@@ -1,8 +1,11 @@
 ---
 title: 'Búsqueda  '
 description: Encuentre contenido más rápidamente con una búsqueda detallada
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ Para buscar y filtrar sus recursos:
    * Directorio de búsqueda
    * Etiquetas
    * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy.
+
    >[!NOTE]
    >
    >Los criterios de búsqueda pueden variar:
