@@ -1,13 +1,16 @@
 ---
-title: Uso de Dynamic Media
+title: Trabajar con Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '415'
+ht-degree: 28%
 
 ---
 
 
-# Uso de Dynamic Media {#working-with-dynamic-media}
+# Trabajar con Dynamic Media {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento.
 
@@ -23,18 +26,18 @@ Dynamic Media permite administrar los recursos antes de publicarlos. El trabajo 
 
 Las funciones solo de Dynamic Media incluyen lo siguiente:
 
-* [Pancartas de carrusel](carousel-banners.md)
+* [Banner de carrusel](carousel-banners.md)
 * [Conjuntos de imágenes](image-sets.md)
 * [Imágenes interactivas](interactive-images.md)
 * [Vídeos interactivos](interactive-videos.md)
 * [Conjuntos de medios mixtos](mixed-media-sets.md)
 * [Imágenes panorámicas](panoramic-images.md)
 
-* [Cojuntos de giros](spin-sets.md)
+* [Conjuntos de giros](spin-sets.md)
 * [Vídeo](video.md)
 * [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de recursos](managing-assets.md)
-* [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
+* [Usar las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 
 Consulte también [Configuración de Dynamic Media](administering-dynamic-media.md).
 
@@ -75,7 +78,7 @@ Los recursos habilitados para Dynamic Media incluyen `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Cambio en las vistas de recursos {#asset-views-change}
+### Cambio de vistas de recursos {#asset-views-change}
 
 Con Dynamic Media activado, puede acercar y alejar haciendo clic en los botones `+` y `-` . También puede tocar o hacer clic para acercar cierta área. Revertir le lleva a la versión original y puede hacer que la imagen esté a pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
 
