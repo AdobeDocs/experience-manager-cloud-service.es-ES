@@ -3,6 +3,9 @@ title: Integración con Adobe Analytics
 description: 'Integración con Adobe Analytics '
 translation-type: tm+mt
 source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 14%
 
 ---
 
@@ -26,7 +29,7 @@ Las páginas que se enumeran a continuación pueden ayudarle a configurar la int
 * [Conexión a Adobe Analytics y creación de marcos](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-connect.html) : tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y que su creación no funciona en AEM como un servicio de nube porque requiere la IU clásica. En su lugar, se debe utilizar el lanzamiento de Adobe, tanto para la asignación de variables como para la implementación de bibliotecas JS en páginas.
 * [Integrar Launch de Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [Integración de AEM con Adobe Launch mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
-* [Información sobre la integración de AEM con Launch de Adobe, Analytics y Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+* [Información sobre la integración de AEM con Launch de Adobe, Analytics y Destinatario](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 * [Configuración del seguimiento de vínculos para Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-link.html)
 * [Asignación de datos de componentes con propiedades de Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
 * [Configuración del seguimiento de vídeo para Adobe Analytics](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/adobeanalytics-video.html)
@@ -49,7 +52,7 @@ Consulte:
 
 >[!NOTE]
 >
->Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de** Apache. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configurar:
+>Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de Apache**. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configurar:
 >
 >* **Day Commons HTTP Client 3.1** para configurar la API 3.x;
    >  por ejemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
@@ -57,6 +60,7 @@ Consulte:
    >
 * **Configuración** proxy de componentes HTTP de Apache para configurar la API 4.x;
    >  por ejemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
