@@ -3,6 +3,9 @@ sub-product: Conectores para AEM como servicio de nube
 user-guide-title: Conectores para AEM como servicio de nube
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '35'
+ht-degree: 60%
 
 ---
 
