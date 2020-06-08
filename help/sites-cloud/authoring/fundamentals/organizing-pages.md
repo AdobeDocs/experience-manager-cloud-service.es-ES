@@ -1,8 +1,11 @@
 ---
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+workflow-type: tm+mt
+source-wordcount: '2357'
+ht-degree: 100%
 
 ---
 
