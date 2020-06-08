@@ -2,8 +2,11 @@
 title: Publicar recursos, carpetas y colecciones en Brand Portal
 description: Publicar recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 100%
 
 ---
 
@@ -107,6 +110,7 @@ Puede publicar o cancelar la publicación de las carpetas de recursos inmediatam
          Haga clic en **Siguiente.**
 
       1. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
 
 1. **Publicar carpetas más tarde**
