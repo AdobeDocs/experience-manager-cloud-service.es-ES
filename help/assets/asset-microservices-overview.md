@@ -4,6 +4,9 @@ description: Procese sus recursos digitales mediante microservicios de procesami
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +33,7 @@ Los microservicios de recursos ayudan a evitar la necesidad de herramientas y m√
 
 ## Arquitectura de alto nivel {#asset-microservices-architecture}
 
-Un diagrama de arquitectura de alto nivel representa los elementos clave de la ingesta y el procesamiento y flujo de recursos en todo el sistema.
+Un diagrama de arquitectura de alto nivel muestra los elementos clave de la ingesta y el procesamiento y flujo de recursos en todo el sistema.
 
 <!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
