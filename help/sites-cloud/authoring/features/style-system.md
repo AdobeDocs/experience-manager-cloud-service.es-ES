@@ -1,9 +1,9 @@
 ---
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 100%
 
@@ -100,6 +100,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    * **Los estilos se pueden combinar**: permite que se seleccionen al mismo tiempo diversos estilos dentro de ese grupo.
    * **Nombre del estilo**: la descripción del estilo que se mostrará al autor de contenido al configurar el estilo del componente.
    * **Clases CSS**: el nombre real de la clase CSS asociada al estilo.
+
    Utilice los controles de arrastre para ordenar los grupos y los estilos dentro de los grupos. Utilice los iconos Añadir o Eliminar para añadir o quitar grupos y estilos dentro de los grupos.
 
 >[!CAUTION]
@@ -151,6 +152,7 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 >1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
 >1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
 >1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
+
 >
 
 
