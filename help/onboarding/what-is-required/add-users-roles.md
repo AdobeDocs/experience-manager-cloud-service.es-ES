@@ -1,8 +1,11 @@
 ---
-title: 'Agregar usuarios y funciones: lo que se necesita'
-description: 'Agregar usuarios y funciones: lo que se necesita'
+title: 'Añadir usuarios y funciones: lo que se necesita'
+description: 'Añadir usuarios y funciones: lo que se necesita'
 translation-type: tm+mt
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +18,7 @@ Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos p
 [!UICONTROL Cloud Manager] define actualmente cuatro funciones para los usuarios que rigen la disponibilidad de funciones específicas:
 
 * Propietario del negocio
-* Administrador de programas
+* Administrador de programa
 * Administrador de implementación
 * Desarrollador
 
@@ -34,7 +37,7 @@ La siguiente tabla resume los roles:
 | [!UICONTROL Funciones del Administrador] de nube | Descripción |
 |--- |--- |
 | Propietario del negocio | Responsable de definir KPI, aprobar implementaciones de producción y anular errores importantes de tres niveles. |
-| Administrador de programas | Utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado y ver KPI. Puede aprobar errores importantes de tres niveles. |
+| Administrador de programa | Utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado y los KPI de vista. Puede aprobar errores importantes de tres niveles. |
 | Administrador de implementación | Gestiona las operaciones de implementación. Utiliza [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase/producción. Puede editar las tuberías de CD/CI. Puede aprobar errores importantes de tres niveles. Puede obtener acceso al repositorio Git. |
-| Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado. Puede obtener acceso al repositorio Git para la confirmación de código. |
-| Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el conmutador de programas [!UICONTROL Cloud Manager] (tras haber navegado desde [!UICONTROL Experience Cloud]) para acceder a AEM. |
+| Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Utiliza principalmente [!UICONTROL Cloud Manager] para obtener el estado de vista. Puede obtener acceso al repositorio Git para la confirmación de código. |
+| Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el conmutador de Programas [!UICONTROL Cloud Manager] (tras haber navegado desde [!UICONTROL Experience Cloud]) para acceder a AEM. |
