@@ -3,6 +3,9 @@ title: Personalización y targeting de contenido
 description: Descubra cómo AEM puede crear contenido personalizado
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 83%
 
 ---
 
@@ -41,7 +44,7 @@ Se definen experiencias para una actividad. Puede utilizar [consola Actividades]
 
 Una oferta es el contenido que aparece en una ubicación de una página para una experiencia. Utilice ofertas diferentes para distintas experiencias con el fin de maximizar la eficacia del contenido para las audiencias.
 
-Por ejemplo: la página para mujeres de un sitio web de muestra puede utilizar ofertas como la imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y la experiencia de muyeres menores de 30 años.
+Por ejemplo: la página para mujeres de un sitio web de muestra puede utilizar ofertas como imagen de teaser que aparece en la parte superior de la página. Se utiliza una oferta diferente como teaser para la experiencia de mujeres mayores de 30 años y la experiencia de muyeres menores de 30 años.
 
 Utilice la [consola Ofertas](/help/sites-cloud/authoring/personalization/offers.md) para crear ofertas que se pueden usar en varias experiencias. Cree ofertas de un solo uso o añada ofertas de una biblioteca de ofertas al [crear el contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
