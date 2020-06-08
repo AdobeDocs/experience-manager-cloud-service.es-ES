@@ -3,6 +3,9 @@ title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar el contenido de destino, como actividades, experiencias y ofertas entre sus sitios, puede aprovechar la compatibilidad multisitio integrada de AEM, para el contenido de destino.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2900'
+ht-degree: 89%
 
 ---
 
@@ -49,6 +52,7 @@ Un sitio o Live Copy que vincula a un área que contiene las actividades que deb
 >
 >* Cuando utilice lanzamientos o Live Copies, necesitará una licencia MSM.
 >* Cuando utilice la función de sincronización a Adobe Target, necesitará una licencia de Adobe Target.
+
 >
 
 
@@ -93,7 +97,7 @@ Existen cuatro versiones del mismo sitio en función del área geográfica:
 Cada sitio comparte el contenido personalizado en zonas geográficas:
 
 * Canadá comparte el área principal con los Estados Unidos.
-* Gran Bretaña está vinculada a la zona europea y hereda de la zona maestra.
+* La Buena Gran Bretaña está vinculada a la zona europea y hereda de la zona maestra.
 * Australia, porque se encuentra en el hemisferio sur y los productos de temporada no se aplicarían; además, tiene su propio contenido personalizado.
 
 ![Diagrama multisitio](/help/sites-cloud/authoring/assets/multisite-diagram.png)
@@ -102,7 +106,7 @@ Para el hemisferio norte, contamos con una actividad de invierno que se creó pa
 
 ![Versión de Estados Unidos](/help/sites-cloud/authoring/assets/multisite-us.png)
 
-Después de actualizar la ficha, el sitio canadiense cambia a la nueva imagen sin que deba realizarse ninguna acción más. Realiza esta acción porque comparte el área principal con los Estados Unidos. En los sitios de Gran Bretaña y Australia, la imagen no cambia.
+Después de actualizar la ficha, el sitio canadiense cambia a la nueva imagen sin que deba realizarse ninguna acción más. Realiza esta acción porque comparte el área principal con los Estados Unidos. En los sitios Buenos de Gran Bretaña y Australia, la imagen no cambia.
 
 ![Cambio de las versiones](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
@@ -147,11 +151,11 @@ Las áreas pueden abarcar actividades y ofertas. Una vez que haya creado un áre
 
 >[!NOTE]
 >
->El área predeterminada denominada Área principal está contraída de forma predeterminada cuando se pulsa o se hace clic en el nombre de una marca, **hasta que** decida crear otra área. A continuación, cuando se seleccione una marca en la consola **Actividad** u **Ofertas**, podrá ver la consola **Área.**
+>El área predeterminada denominada Área maestra se contrae de forma predeterminada al pulsar o hacer clic en el nombre de una marca **hasta** crear otra área. A continuación, cuando selecciona una marca en la consola **Actividad** u **Ofertas**, llegará a la consola **Área**.
 
 Para crear una nueva área:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** or and then to your brand.
+1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
 1. Haga clic o pulse **Crear área**.
 
    ![Crear área](/help/sites-cloud/authoring/assets/multisite-create-area.png)
@@ -170,7 +174,7 @@ Cree una zona como una Live Copy para heredar el contenido de destino a través 
 
 Para crear un área como una Live Copy:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then to your brand.
+1. Vaya a **Personalización** > **Actividades** u **Ofertas** y, a continuación, a su marca.
 1. Haga clic o pulse **Crear área como Live Copy**.
 
    ![Crear área como Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
@@ -179,7 +183,7 @@ Para crear un área como una Live Copy:
 
    ![Crear Live Copy](/help/sites-cloud/authoring/assets/multisite-livecopy.png)
 
-1. En el campo **Nombre**, escriba un nombre para la Live Copy. De forma predeterminada, se incluyen las páginas secundarias; exclúyalas seleccionando la casilla **Excluir páginas secundarias**.
+1. En el campo **Nombre**, introduzca un nombre para la Live Copy. De forma predeterminada, se incluyen las páginas secundarias; para excluirlas, seleccione la casilla de verificación **Excluir páginas secundarias**.
 
    ![Crear Live Copy](/help/sites-cloud/authoring/assets/multisite-create-livecopy.png)
 
@@ -236,6 +240,7 @@ Una actividad que se hereda de otro sitio aparece en color verde junto al nombre
 >
 >* Solo se pueden suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender o desasociar Live Copies para expandir una actividad heredada. También puede crear **nuevas** experiencias y ofertas locales para dicha actividad. Si desea modificar una actividad existente, deberá suspender la herencia.
+
 >
 
 
@@ -250,6 +255,7 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
    1. Seleccione un elemento de la actividad, como la audiencia. AEM muestra automáticamente la casilla de confirmación Suspender Live Copy. (Puede suspender Live Copy si pulsa o hacer clic en cualquier elemento durante el proceso de establecimiento de objetivos).
    1. Seleccione **Suspender Live Copy** en el menú desplegable de la barra de herramientas.
+
    ![Suspender Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
 1. Tap or click **Suspend** to suspend the activity. Las actividades suspendidas están marcadas en rojo.
@@ -262,10 +268,10 @@ Para cancelar la herencia del contenido de destino en una actividad:
 
 1. Desplácese a la página donde desee separar la Live Copy de la copia principal y haga clic o pulse el modo **Segmentación** en el menú desplegable.
 1. Si la página está vinculada a un área que es una Live Copy, verá el estado de la herencia. Haga clic o pulse **Iniciar segmentación**.
-1. Seleccione **Desasociar Live Copy** del menú desplegable en la barra de herramientas. El AEM confirma que desea separar Live Copy.
+1. Seleccione **Separar Live Copy** en el menú desplegable de la barra de herramientas. AEM confirma que desea separar la Live Copy.
 1. Haga clic o pulse **Desasociar** para separar la Live Copy de la actividad. Después de quitarla, el menú desplegable de la herencia deja de visualizarse. La actividad es ahora una actividad local.
 
-   ![Actividad local](/help/sites-cloud/authoring/assets/multisite-winter.png)
+   ![actividad local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
 ## Restaurar la herencia del contenido de destino {#restoring-inheritance-of-targeted-content}
 
@@ -275,7 +281,7 @@ Para restaurar la herencia del contenido de destino en una actividad:
 
 1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
 1. Haga clic o pulse **Iniciar segmentación**.
-1. Select **Resume Live Copy** from the drop-down menu in the toolbar.
+1. Seleccione **Reanudar Live Copy** en el menú desplegable de la barra de herramientas.
 
    ![Reanudar Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
