@@ -1,8 +1,11 @@
 ---
 title: Replicación
-description: Distribución y resolución de problemas de replicación.
+description: Distribución y Resolución de problemas de replicación.
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 3%
 
 ---
 
@@ -28,6 +31,7 @@ Para realizar una activación de árbol:
 1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
 2. Seleccione la tarjeta **forwardPublisher**
 3. Una vez en la interfaz de usuario de la consola web de forwardPublisher, **seleccione Distribuir**
+
    ![](assets/distribute.png "DistribuirDistribuir")
 4. Seleccione la ruta en el explorador de rutas, elija agregar un nodo, árbol o eliminar según sea necesario y seleccione **Enviar**
 
