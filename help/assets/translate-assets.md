@@ -78,7 +78,7 @@ Realice los siguientes pasos para preparar los recursos para la traducción:
 
 ### Crear una raíz de idioma {#create-a-language-root}
 
-Para crear la raíz de idioma, cree una carpeta y utilice un código de idioma ISO como valor para la propiedad Name. Después de crear la raíz del idioma, puede crear una copia del idioma en cualquier nivel dentro de la raíz del idioma.
+Para crear la raíz del idioma, cree una carpeta y utilice un código de idioma ISO como valor para la propiedad Name. Después de crear la raíz del idioma, puede crear una copia del idioma en cualquier nivel dentro de la raíz del idioma.
 
 Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de muestra tiene `it` como propiedad Name. La propiedad Name se utiliza como nombre del nodo de recursos en el repositorio y, por lo tanto, determina la ruta de los recursos. (*&lt;servidor>:&lt;puerto>/assets.html/content/dam/it/*)
 
