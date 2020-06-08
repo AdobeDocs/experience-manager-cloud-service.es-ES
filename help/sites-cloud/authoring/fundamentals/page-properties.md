@@ -1,8 +1,11 @@
 ---
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +70,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Permite introducir una URL de vanidad para esta página, que le permitirá disponer de una URL más corta y/o descriptiva.
    * Por ejemplo, si la URL de vanidad se establece como `welcome` en la página identificada por la ruta `/v1.0/startpage` del sitio web `http://example.com`, entonces `http://example.com/welcome` es la URL de vanidad de `http://example.com/content/v1.0/startpage`.
+
    >[!CAUTION]
    >
    >URL de vanidad:
@@ -172,6 +176,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Cloud Services**
 
    * Defina propiedades para Cloud Services.
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -180,6 +185,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Configuración de ContextHub**
 
    * Seleccione la configuración de ContextHub y la ruta de acceso de los segmentos.
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -196,6 +202,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    * Agregar permisos
    * Editar grupo de usuarios cerrado
    * Ver los permisos efectivos
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -207,6 +214,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 * **Modelo**
 
    * Defina propiedades para una página de modelo en un entorno de administración de varios sitios.
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
