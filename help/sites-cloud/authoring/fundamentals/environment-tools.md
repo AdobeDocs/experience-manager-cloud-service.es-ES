@@ -1,8 +1,11 @@
 ---
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2163'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Puede editar una página con el editor. Por ejemplo:
 >
 >Si lo desea, puede omitir la visita y repetirla cuando le convenga seleccionando una opción del menú **Información de página**.
 
-## Acceso a la Ayuda   {#accessing-help}
+## Acceso a la Ayuda {#accessing-help}
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
@@ -79,11 +82,13 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
    * Icono o abreviatura
       * Los iconos de componentes estándar son monocromo.
       * Las abreviaturas siempre están formadas por los dos primeros caracteres del nombre del componente.
+
    Desde la barra de herramientas superior del explorador de **componentes**, puede realizar las siguientes acciones:
 
    * Filtrar componentes por su nombre.
    * Restringir la visualización a un grupo específico mediante la selección desplegable.
-   Para obtener una descripción más detallada del componente, puede tocar o hacer clic en el icono de información situado junto al componente en el explorador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
+
+   Para obtener una descripción más detallada del componente, puede hacer clic o pulsar el icono de información situado junto al componente en el navegador de **componentes** (si está disponible). Por ejemplo, para el **fragmento de contenido**:
 
    ![Información del explorador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -200,7 +205,7 @@ Si la página contiene fragmentos de contenido, también podrá acceder al [nave
 
 **Referencias** muestra las conexiones a la página seleccionada:
 
-* Modelos
+* Planes
 * Lanzamientos
 * Live Copies
 * Copias de idioma
@@ -278,6 +283,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
 >* Existe un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
+
 >
 
 
@@ -307,7 +313,7 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 ![Navegador de rutas](/help/sites-cloud/authoring/assets/path-browser.png)
 
 * Una vez que se selecciona un recurso, el botón **Seleccionar** de la esquina superior derecha del cuadro de diálogo se activa. Toque o haga clic para confirmar la selección o en **Cancelar** para anular la operación.
-* Si el contexto permite seleccionar varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se añade un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Haga clic en la **X** situada junto al número para anular todas las selecciones.
+* Si el contexto permite la selección de varios recursos, al seleccionar un recurso también se activa el botón **Seleccionar**, pero también se agrega un recuento del número de recursos seleccionados a la esquina superior derecha de la ventana. Haga clic en la **X** junto al número para anular toda la selección.
 * Al navegar por el árbol, la ubicación se refleja en la ruta de exploración situada en la parte superior del cuadro de diálogo. Las rutas de exploración también se pueden usar para saltar rápidamente dentro de la jerarquía del recurso.
 * El campo de búsqueda situado en la parte superior del cuadro de diálogo se puede usar en cualquier momento. Haga clic en la **X** que aparece en el campo de búsqueda para borrar la búsqueda.
 * Para limitar la búsqueda, puede mostrar las opciones de filtro y filtrar los resultados en función de una ruta determinada.
