@@ -3,6 +3,9 @@ title: Añadir recursos digitales a Adobe Experience Manager
 description: Añada sus recursos digitales a Adobe Experience Manager como un servicio de nube
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 3%
 
 ---
 
@@ -34,6 +37,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario de Recursos. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+
    ![create_menu](assets/create_menu.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
