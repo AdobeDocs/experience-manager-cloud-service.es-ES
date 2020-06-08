@@ -1,13 +1,16 @@
 ---
-title: Envío de un conector AEM
-description: Envío de un conector AEM
+title: Envío de un conector de AEM
+description: Envío de un conector de AEM
 translation-type: tm+mt
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 12%
 
 ---
 
 
-Envío de un conector AEM
+Envío de un conector de AEM
 ===========================
 
 La información que se proporciona a continuación es útil para enviar Conectores AEM y debe leerse junto con los artículos sobre la [implementación](implement.md) y el [mantenimiento](maintain.md) de los conectores.
