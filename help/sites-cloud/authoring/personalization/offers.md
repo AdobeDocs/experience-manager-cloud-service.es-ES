@@ -3,6 +3,9 @@ title: Creación y administración de ofertas
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 93%
 
 ---
 
@@ -14,7 +17,7 @@ Utilice la consola Ofertas para crear ofertas que se pueden [usar en las experie
 * Cree la oferta una vez en la biblioteca y utilícela en varias experiencias de sus actividades de marca.
 * Al cambiar la oferta en la biblioteca, el cambio afecta a todas las experiencias que la utilizan.
 
-La consola Ofertas organiza las ofertas por marca. En cada marca se incluye una biblioteca de ofertas que se pueden utilizar en las experiencias de una marca. Utilice carpetas para definir una estructura jerárquica para organizar las ofertas en cada biblioteca. Una estructura lógica de carpetas permite a los autores buscar ofertas fácilmente. Además, las herramientas de etiquetado y búsqueda permiten a los autores buscar ofertas.
+La consola Ofertas organiza las ofertas por marca. En cada marca se incluye una biblioteca de ofertas que se pueden utilizar en las experiencias de una marca. Utilice las carpetas para definir una estructura jerárquica para organizar ofertas en cada biblioteca. Una estructura lógica de carpetas permite a los autores buscar ofertas fácilmente. Además, las herramientas de etiquetado y búsqueda permiten a los autores buscar ofertas.
 
 ## Añadir una marca mediante la consola de ofertas {#add-a-brand-using-the-offers-console}
 
@@ -22,7 +25,7 @@ Cree una marca con la que asociar las ofertas. Abra una marca en la consola de o
 
 Cuando cree una marca mediante la consola de ofertas, esta también aparecerá en la [consola de actividades](/help/sites-cloud/authoring/personalization/activities.md) donde podrá añadir y administrar actividades para la marca.
 
-1. En la consola de navegación, haga clic o pulse **Personalización** > **Ofertas**.
+1. En la consola de navegación, pulse o haga clic en **Personalización** > **Ofertas**.
 
    ![Navegación a la consola Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
@@ -38,7 +41,7 @@ Añada una carpeta a la biblioteca de ofertas de una marca para organizar y para
 1. En la consola de ofertas, abra la ubicación en la que desea crear la carpeta. Por ejemplo, abra la marca para crear una carpeta de nivel superior o abra otra carpeta en la biblioteca.
 1. Haga clic o pulse **Crear** > **Crear carpeta u oferta**.
 
-   ![Creación de una carpeta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
+   ![Creación de la carpeta oferta](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
 1. Seleccione **Carpeta** y haga clic en **Siguiente**.
 1. Escriba un título para la carpeta tal y como desea que aparezca en la biblioteca de ofertas y escriba o seleccione las etiquetas.
@@ -56,7 +59,7 @@ Una vez que haya creado la oferta, puede abrirla para la creación de contenido.
 1. En la consola de ofertas, abra la ubicación en la que desea crear la oferta. Por ejemplo, abra la marca para crear una oferta de nivel superior o abra otra carpeta en la biblioteca.
 1. Haga clic o pulse **Crear** > **Crear carpeta u oferta**.
 
-   ![Creación de una carpeta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
+   ![Creación de la carpeta oferta](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
 1. Seleccione la plantilla **Página de oferta** y, a continuación, haga clic o pulse **Siguiente**.
 1. Escriba un título para la oferta y, opcionalmente, seleccione o escriba una o varias etiquetas para asociarlas a la oferta; a continuación, haga clic o pulse **Crear**.
