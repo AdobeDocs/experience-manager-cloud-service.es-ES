@@ -3,6 +3,9 @@ title: Repositorio de código fuente - Servicios de nube
 description: Repositorio de código fuente - Servicios de nube
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
