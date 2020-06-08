@@ -1,13 +1,16 @@
 ---
-title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
+title: Usar las vistas rápidas para crear ventanas emergentes personalizadas
 description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Puede activar el contenido personalizado para que se muestre en las ventanas emergentes.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
 
-# Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Usar las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede activar el contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, esta funcionalidad permite a los usuarios hacer clic en un punto interactivo, una imagen en miniatura o en un mapa de imágenes para ver información o contenido relacionado.
 
@@ -33,15 +36,15 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     </tr>
     <tr>
     <td>Imágenes interactivas</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adición de zonas interactivas a una pancarta</a>de imagen.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Añadir zonas interactivas en una pancarta</a>de imagen.</td>
     </tr>
     <tr>
     <td>Vídeos interactivos</td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adición de interactividad al vídeo</a>.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Añadir la interactividad en el vídeo</a>.</td>
     </tr>
     <tr>
-    <td>Pancartas de carrusel</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Adición de zonas interactivas o mapas de imagen a un letrero</a>.<br /> </td>
+    <td>Banner de carrusel</td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Añadir puntos interactivos o mapas de imagen en un letrero</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -64,7 +67,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     </tr>
     <tr>
     <td>Pancarta de carrusel</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adición de una pancarta de carrusel a la página</a>del sitio web.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Añadir una pancarta de carrusel a la página</a>del sitio web.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -101,7 +104,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
 
 1. Ahora debe configurar el `quickViewActivate` controlador.
 
-   El `quickViewActivate` controlador controla las vistas rápidas en el visor. El controlador contiene la lista de variables y las llamadas a funciones para su uso con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida, así como una llamada a `loadQuickView` la función de muestra.
+   El `quickViewActivate` controlador controla las vistas rápidas en el visor. El controlador contiene la lista de variable y las llamadas de función que se utilizarán con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida, así como una llamada a `loadQuickView` la función de muestra.
 
    **Asignación** de variables Asigne variables para su uso en la página web al valor de SKU y a las variables genéricas incluidas en la vista rápida:
 
@@ -153,7 +156,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
 
 
 1. Ahora puede utilizar una función para abrir una ventana emergente sencilla en la vista rápida. El siguiente ejemplo utiliza un `DIV` para una ventana emergente.
-1. Ajuste el estilo de la ventana emergente `DIV` de la siguiente manera. Agregue su propio estilo adicional según lo desee.
+1. Ajuste el estilo de la ventana emergente `DIV` de la siguiente manera. Añada su propio estilo adicional como desee.
 
    ```xml
    <style type="text/css">
@@ -178,7 +181,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
    </div>
    ```
 
-1. Agregue una función para actualizar el valor de sku en la ventana emergente; haga visible la ventana emergente reemplazando la función simple creada en el paso 5. con lo siguiente:
+1. Añada una función para actualizar el valor de sku en la ventana emergente; haga visible la ventana emergente reemplazando la función simple creada en el paso 5. con lo siguiente:
 
    ```xml
    <script type="text/javascript">
