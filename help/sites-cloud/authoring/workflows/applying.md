@@ -3,6 +3,9 @@ title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
 translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 81%
 
 ---
 
@@ -95,6 +98,7 @@ Puede especificar los detalles:
    * **Título del flujo de trabajo**
 
       * Puede especificar un título para esta instancia, de modo que pueda identificarlo en una etapa posterior.
+
    Según el modelo de flujo de trabajo, también están disponibles las siguientes opciones. Estas permiten conservar el paquete creado como carga útil después de que se haya completado el flujo de trabajo.
 
    * **Conservar paquete de flujo de trabajo**
@@ -125,9 +129,11 @@ Se abrirá un cuadro de diálogo para que pueda ajustar la selección según lo 
          * Incluir solo los elementos secundarios inmediatos.
          * Incluir solo las páginas modificadas.
          * Incluir solo las páginas ya publicadas.
+
          Los elementos secundarios especificados se añaden a la lista de recursos a los que se aplicará el flujo de trabajo.
 
       * **Eliminar selección** para eliminar ese recurso del flujo de trabajo.
+
    ![Definir ámbito de flujo de trabajo](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
