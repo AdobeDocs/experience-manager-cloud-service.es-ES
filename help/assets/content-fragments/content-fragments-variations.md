@@ -1,15 +1,18 @@
 ---
-title: 'Variaciones: creación de contenido de fragmentos'
+title: 'Variaciones: Crear contenido de fragmentos'
 description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 translation-type: tm+mt
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+workflow-type: tm+mt
+source-wordcount: '1710'
+ht-degree: 16%
 
 ---
 
 
-# Variaciones: creación de contenido de fragmentos{#variations-authoring-fragment-content}
+# Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-[Las variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para su uso en canales o escenarios específicos.
+[Las variaciones](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) son una característica importante de los fragmentos de contenido, ya que permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
 
 Desde la ficha **Variaciones** puede:
 
@@ -24,7 +27,7 @@ Realizar una serie de otras acciones en función del tipo de datos que se esté 
 
 * [Cargar contenido](#uploading-content)
 
-* [Ver estadísticas](#viewing-key-statistics) clave (acerca de texto multilínea)
+* [Estadísticas](#viewing-key-statistics) de clave de Vista (acerca de texto multilínea)
 
 * [Resumir texto](#summarizing-text)
 
@@ -50,7 +53,7 @@ Por ejemplo:
 
 * Edición de un fragmento simple
 
-   Un fragmento simple consta de un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
+   Un fragmento simple consiste en un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
 
    ![fragmento simple](assets/cfm-variations-01.png)
 
@@ -107,8 +110,8 @@ La edición de texto enriquecido le permite dar formato:
 * Cursiva
 * Subrayado
 * Alineación: izquierda, centro, derecha
-* Lista con viñetas
-* Lista numerada
+* lista con viñetas
+* lista numerada
 * Sangría: aumentar, disminuir
 * Crear/romper hipervínculos
 * Abra el editor de pantalla completa, donde están disponibles las siguientes opciones de formato:
@@ -117,7 +120,7 @@ La edición de texto enriquecido le permite dar formato:
    * Insertar una tabla
    * Estilo de párrafo: Párrafo, Encabezado 1/2/3
    * [Inserción de recursos visuales](#inserting-assets-into-your-fragment)
-   * Búsqueda
+   * Búsqueda  
    * Buscar/Reemplazar
    * Corrector ortográfico
    * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
@@ -130,7 +133,7 @@ El texto sin formato permite una rápida entrada de contenido sin formato ni inf
 
 >[!CAUTION]
 >
->Si selecciona **Texto** sin formato, puede perder cualquier formato, marca o recurso que haya insertado en Texto **** enriquecido o en **Marcado**.
+>Si selecciona **Texto sin formato**, puede perder cualquier formato, marca o recurso que haya insertado en **Texto enriquecido** o **Marcado**.
 
 ### Markdown {#markdown}
 
@@ -154,11 +157,11 @@ También puede abrir el editor de pantalla completa para realizar más [acciones
 
 >[!CAUTION]
 >
->Si cambia entre Texto **** enriquecido y **Marcado** , puede que se produzcan efectos inesperados con Comillas de bloque y Bloques de código, ya que estos dos formatos pueden tener diferencias en la forma en que se gestionan.
+>Si cambia entre **Texto enriquecido** y **Marcado**, puede que se produzcan efectos inesperados con Comillas de bloque y Bloques de código, ya que estos dos formatos pueden tener diferencias en la forma en que se gestionan.
 
 ### Visualización de estadísticas clave {#viewing-key-statistics}
 
-Cuando el editor de pantalla completa está abierto, la acción Estadísticas **de** texto mostrará un rango de información sobre el texto.
+Cuando el editor de pantalla completa está abierto, la acción **Estadísticas de texto** mostrará un rango de información sobre el texto.
 
 Por ejemplo:
 
@@ -201,12 +204,13 @@ Otros idiomas están disponibles como Paquetes de modelo de idioma en Uso compar
 
    ![resumen](assets/cfm-variations-05.png)
 
-4. Especifique el número de palabras objetivo y seleccione **Inicio**:
+4. Especifique el número de palabras del destinatario y seleccione **Inicio**:
 5. El texto original se muestra junto con el resumen propuesto:
 
    * Las oraciones que se van a eliminar se resaltan en rojo, con huelga.
    * Haga clic en cualquier frase resaltada para mantenerla en el contenido resumido.
    * Haga clic en cualquier frase no resaltada para eliminarla.
+
    ![comparación de resumen](assets/cfm-variations-06.png)
 
 6. Seleccione **Resumir** para confirmar los cambios.
@@ -264,14 +268,15 @@ There are various methods of adding [images](/help/assets/content-fragments/cont
 
    * desplazarse al recurso necesario en DAM
    * buscar el recurso en DAM
+
    Una vez localizado, seleccione el recurso requerido haciendo clic en la miniatura.
 
 4. Utilice **Seleccionar** para agregar el recurso al sistema de párrafos del fragmento de contenido en la ubicación actual.
 
    >[!CAUTION]
    Si, después de agregar un recurso, cambia el formato a:
-   * **Texto** sin formato: el recurso se perderá completamente del fragmento.
-   * **Marcado**: el recurso no estará visible, pero permanecerá allí cuando vuelva a Texto **** enriquecido.
+   * **Texto sin formato**: El recurso se perderá completamente del fragmento.
+   * **Marcado**: El recurso no estará visible, pero permanecerá allí cuando vuelva a **Texto enriquecido**.
 
 
 ## Administración de variaciones {#managing-variations}
@@ -286,7 +291,7 @@ Para crear una nueva variación:
 1. Seleccione **Variaciones** en la barra de iconos del panel lateral.
 1. Seleccione **Crear variación**.
 1. Se abrirá un cuadro de diálogo, especifique el **Título** y la **Descripción** de la nueva variación.
-1. Seleccione **Agregar**; el fragmento **principal** se copiará en la nueva variación, que ahora está abierta para [edición](#editing-a-variation).
+1. Seleccione **Agregar**; el fragmento **principal** se copiará en la nueva variación, que ahora estará abierta para [edición](#editing-a-variation).
 
    >[!NOTE]
    Cuando se crea una nueva variación, siempre es **Master** el que se copia, no la variación que está abierta actualmente.
@@ -304,11 +309,11 @@ Puede realizar cambios en el contenido de la variación después de:
 
 Para cambiar el nombre de una variación existente:
 
-1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
+1. Open your fragment and select **Variations** from the side panel.
 1. Seleccione la variación requerida.
 1. Seleccione **Cambiar nombre** en la lista desplegable **Acciones** .
 
-1. Introduzca el nuevo **Título** y/o **Descripción** en el cuadro de diálogo resultante.
+1. Introduzca el nuevo **Título** o **Descripción** en el cuadro de diálogo resultante.
 
 1. Confirme la acción **Cambiar nombre** .
 
@@ -319,7 +324,7 @@ Esto solo afecta al **título** de la variación.
 
 Para eliminar una variación existente:
 
-1. Abra el fragmento y seleccione **Variaciones** en el panel lateral.
+1. Open your fragment and select **Variations** from the side panel.
 1. Seleccione la variación requerida.
 1. Seleccione **Eliminar** en la lista desplegable **Acciones** .
 
@@ -335,10 +340,10 @@ No puede eliminar **Master**.
 Al editar una variación, tiene acceso a la acción para sincronizar el elemento actual de la variación con Master. Esto le permite copiar automáticamente los cambios realizados en Master en la variación requerida.
 
 >[!CAUTION]
-La sincronización solo está disponible para copiar cambios *de **Master**a la variación*.
+La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 Solo se sincronizará el elemento actual de la variación.
-La sincronización solo funciona en el tipo de datos de texto **** de varias líneas.
-No está disponible como opción la transferencia *de cambios de una variación a **Maestro ***.
+La sincronización solo funciona en el tipo de datos de **texto de varias líneas**.
+No está disponible como opción la transferencia de cambios *de una variación **a Principal ***.
 
 1. Abra el fragmento de contenido en el editor de fragmentos. Asegúrese de que se ha editado la **página maestra** .
 1. Seleccione una variación específica y, a continuación, la acción de sincronización adecuada desde:
@@ -352,6 +357,7 @@ No está disponible como opción la transferencia *de cambios de una variación 
    * verde indica el contenido agregado (a la variación)
    * rojo indica que el contenido se ha eliminado (de la variación)
    * azul indica texto reemplazado
+
    ![sincronizar con maestro](assets/cfm-variations-11.png)
 
 1. Seleccione **Sincronizar**, la variación se actualizará y se mostrará.
