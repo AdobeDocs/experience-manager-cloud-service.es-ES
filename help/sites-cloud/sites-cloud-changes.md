@@ -1,20 +1,23 @@
 ---
-title: Cambios notables en los sitios de AEM en el servicio de nube de AEM
-description: 'Cambios notables en los sitios de AEM en el servicio de nube de AEM '
+title: Cambios importantes en AEM Sites en AEM Cloud Service
+description: 'Cambios importantes en AEM Sites en AEM Cloud Service '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 11%
 
 ---
 
 
-# Cambios notables en los sitios de AEM como servicio de nube {#notable-changes}
+# Cambios importantes en AEM Sites as a Cloud Service {#notable-changes}
 
 AEM Sites como servicio de nube ofrece funciones de gestión de experiencias como parte de AEM nativo de la nube como plataforma de servicio de nube. Además de las ventajas principales de AEM como servicio de nube, como la escalabilidad nativa de la nube, el tiempo de actividad y el estar siempre actualizado, AEM Sites como servicio de nube también ofrece una serie de cambios y adiciones específicos de sitios.
 
 >[!NOTE]
->Este documento resalta los cambios más notables en los sitios de AEM. Para ver los cambios generales de AEM en la nube, consulte:
+>Este documento resalta los cambios más notables en los sitios AEM. Para ver los cambios generales de AEM en la nube, consulte:
 >
->* [Cambios notables en Adobe Experience Manager (AEM) como servicio de nube](/help/release-notes/aem-cloud-changes.md)
+>* [Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md)
 
 
 Los cambios y las adiciones en AEM Sites como servicio de nube son los siguientes:
