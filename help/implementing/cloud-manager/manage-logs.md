@@ -3,11 +3,14 @@ title: Administrar registros - Servicio de nube
 description: Administrar registros - Servicio de nube
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
 
-# Acceso y administración de registros {#manage-logs}
+# Acceder y administrar registros {#manage-logs}
 
 Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
 
@@ -67,7 +70,7 @@ Environment Id Service    Name
 >[!Note]
 >Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
 
-### Additional Resources {#resources}
+### Recursos adicionales {#resources}
 
 Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
 
