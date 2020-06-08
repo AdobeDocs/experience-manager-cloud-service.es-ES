@@ -3,6 +3,9 @@ title: 'Novedades y diferencias: Adobe Experience Manager como servicio de nube'
 description: 'Qué es diferente y qué es lo nuevo: Adobe Experience Manager (AEM) como servicio de nube. '
 translation-type: tm+mt
 source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
+workflow-type: tm+mt
+source-wordcount: '1724'
+ht-degree: 7%
 
 ---
 
@@ -42,7 +45,7 @@ Existen diferencias intrínsecas entre estos enfoques anteriores y AEM como serv
 >
 >Para obtener más información, consulte [Arquitectura](/help/core-concepts/architecture.md).
 
-AEM como Cloud Service ahora tiene:
+AEM as a Cloud Service ahora tiene:
 
 * Arquitectura dinámica con un número variable de imágenes de AEM.
 
@@ -69,7 +72,7 @@ Esto permite adaptarse automáticamente a distintos patrones de uso:
 >
 >Para obtener más información, consulte la Introducción a la [implementación](/help/implementing/deploying/overview.md).
 
-AEM como servicio de nube ahora utiliza la integración continua y la entrega continua (CI/CD) para garantizar que los proyectos están completamente actualizados. Esto significa que todas las operaciones de actualización están completamente automatizadas, por lo que no es necesario interrumpir el servicio para los usuarios.
+AEM como servicio de nube ahora utiliza la integración continua y el Envío continuo (CI/CD) para garantizar que los proyectos están completamente actualizados. Esto significa que todas las operaciones de actualización están completamente automatizadas, por lo que no es necesario interrumpir el servicio para los usuarios.
 
 Adobe se encarga de actualizar de forma proactiva todas las instancias operativas del servicio a la versión más reciente de la base de código de AEM:
 
@@ -97,7 +100,7 @@ Adobe puede activar las actualizaciones cuando hay una nueva versión del servic
 
 Cloud Manager es:
 
-* se utiliza para administrar los programas y entornos de AEM,
+* se utiliza para administrar programas y entornos de AEM,
 
 * un componente esencial de AEM como servicio de nube; cada nuevo inquilino se aprovisiona primero para el acceso a Cloud Manager,
 
@@ -113,13 +116,13 @@ Específicamente, el número y el tipo de programas de AEM que se pueden crear d
 
 Cloud Manager ha evolucionado como un portal de autoservicio en el que se pueden crear y configurar los componentes principales de AEM como servicio de nube:
 
-* Creación y gestión de nuevos programas.
+* Creación y administración de nuevos programas.
 
-* Creación y administración de entornos AEM en estos programas.
+* Creación y administración de entornos de AEM dentro de estos programas.
 
 * Creación y administración de las tuberías para implementar el código del cliente y la configuración relacionada en un entorno específico.
 
-* Recibir notificaciones de eventos de ciclo vital importantes para estos componentes (por ejemplo, actualizaciones de productos).
+* Recibir notificaciones de eventos importantes del ciclo vital para estos componentes (por ejemplo, actualizaciones de productos).
 
 Actualmente, Cloud Manager puede crear entornos en 3 regiones geográficas (con más regiones a continuación):
 
@@ -129,7 +132,7 @@ Actualmente, Cloud Manager puede crear entornos en 3 regiones geográficas (con 
 
 * APAC (Australia)
 
-## Incorporación {#onboarding}
+## Integración {#onboarding}
 
 >[!NOTE]
 >
@@ -161,7 +164,7 @@ También es significativamente diferente, como ahora lo es:
 
 >[!NOTE]
 >
->Para obtener más información, puede empezar con [Desarrollo Guías](/help/implementing/developing/introduction/development-guidelines.md) y [Desarrollo - Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)de WKND.
+>Para obtener más información, puede consultar el inicio con [las Directrices](/help/implementing/developing/introduction/development-guidelines.md) de desarrollo y [Desarrollo - Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)de WKND.
 
 La nueva arquitectura que admite AEM como un servicio de nube incluye algunos cambios clave en la experiencia general del desarrollador. Uno de los principales objetivos de AEM como servicio de nube es permitir que los clientes con experiencia (que han utilizado AEM in situ o en el contexto de los servicios gestionados de Adobe) migren a AEM como servicio de nube lo antes posible, sin tener que reescribir la mayor parte de su código personalizado. Sin embargo, es posible que aún sean necesarios algunos ajustes.
 
@@ -169,15 +172,15 @@ La nueva arquitectura que admite AEM como un servicio de nube incluye algunos ca
 
 Para que las aplicaciones de AEM existentes se ejecuten en AEM como un servicio de nube, se esperan los siguientes pasos:
 
-* El código y la configuración de la aplicación deben almacenarse en el repositorio de código Git del programa Cloud Manager asociado.
+* El código y la configuración de la aplicación deben almacenarse en el repositorio de código Git del programa de Cloud Manager asociado.
 * El código y la configuración de la aplicación deben ser compatibles con la versión más reciente de la imagen AEM de línea base (que puede estar cambiando diariamente).
-   * La aplicación cliente debe crearse e implementarse mediante la canalización de Cloud Manager asociada al entorno de Cloud Manager.
+   * La aplicación del cliente debe crearse e implementarse mediante la canalización de Cloud Manager asociada al entorno de Cloud Manager.
 * La aplicación cliente debe pasar todas las puertas de calidad, seguridad y rendimiento del código que se apliquen en la canalización.
 * Las imágenes creadas para la aplicación del cliente deben implementarse mediante la canalización de Cloud Manager.
 
 Este proceso se conoce comúnmente como desarrollo primerizado en la nube. Dado que se espera que la duración de extremo a extremo tome minutos (de 20 a 50 según la complejidad de la aplicación), es necesario adoptar metodologías de desarrollo rápido antes de que se intenten los cambios de código y configuración pendientes en la nube.
 
-La consola web, en la que se administran los paquetes OSGI y su configuración asociada, y que anteriormente formaba parte de AEM QuickStart, ya no es accesible directamente para los usuarios de AEM como entorno de servicio en la nube. Se puede acceder a esta interfaz en modo de solo lectura mediante una nueva consola para desarrolladores. Con esta consola, los desarrolladores pueden seleccionar e iniciar sesión directamente en cualquier nodo concreto de un autor o servicio de publicación y, a continuación, acceder a las áreas bloqueadas de forma predeterminada.
+La consola web, en la que se administran los paquetes OSGI y su configuración asociada, y que anteriormente formaba parte de AEM QuickStart, ya no es accesible directamente para los usuarios de AEM como entorno de servicios en la nube. Se puede acceder a esta interfaz en modo de solo lectura mediante una nueva consola para desarrolladores. Con esta consola, los desarrolladores pueden seleccionar e iniciar sesión directamente en cualquier nodo concreto de un autor o servicio de publicación y, a continuación, acceder a las áreas bloqueadas de forma predeterminada.
 
 >[!NOTE]
 >
@@ -197,7 +200,7 @@ Debido a la clara separación de código y contenido, los desarrolladores pueden
 
 ### Desarrollo local {#aem-as-a-cloud-service-developing-local-development}
 
-Para permitir el desarrollo y las iteraciones rápidas, también es posible desarrollar aplicaciones AEM fuera de AEM como contexto de servicio en la nube. Con este fin, los desarrolladores pueden acceder a los siguientes artefactos:
+Para admitir iteraciones y desarrollo rápidos, también es posible desarrollar aplicaciones AEM fuera de AEM como contexto de servicio en la nube. Con este fin, los desarrolladores pueden acceder a los siguientes artefactos:
 
 * Inicio rápido de AEM as a Cloud Service: un instalador independiente `.jar` basado en la última base de código de AEM, con la misma superficie funcional y de API.
 
@@ -205,7 +208,7 @@ Para permitir el desarrollo y las iteraciones rápidas, también es posible desa
 
 >[!NOTE]
 >
->Debe tenerse en cuenta que el inicio rápido de la nube no permite todas las funcionalidades de AEM Sites y AEM Assets. Consiste en un entorno de creación sencillo en el que la mayoría de las extensiones se pueden desarrollar y probar.
+>Debe tenerse en cuenta que el inicio rápido de la nube no permite todas las funcionalidades de AEM Sites y AEM Assets. Consiste en un simple entorno de autor en el que la mayoría de las extensiones se pueden desarrollar y probar.
 
 ## Operaciones y rendimiento {#operations-and-performance}
 
@@ -223,7 +226,7 @@ En estas áreas:
 
 * Las tareas de gran carga, como colas, trabajos y tareas de procesamiento masivo, se han trasladado de la instancia principal de AEM para que se gestionen mediante microservicios compartidos y dedicados.
 
-Las operaciones para AEM como servicio de nube también son compatibles con una nueva infraestructura de supervisión, informes y alertas. Esto permite que los SRE de Adobe (Ingenieros de confiabilidad del sitio) mantengan el servicio de forma proactiva y saludable. Los diferentes elementos de la arquitectura están equipados con una gran variedad de controles sanitarios. Si, por alguna razón, un nodo particular de la arquitectura se considera insalubre, entonces se elimina del servicio y se reemplaza silenciosamente por uno nuevo y saludable.
+Las operaciones para AEM como servicio de nube también son compatibles con una nueva infraestructura de supervisión, sistema de informes y alerta. Esto permite que los SRE de Adobe (Ingenieros de confiabilidad del sitio) mantengan el servicio de forma proactiva y saludable. Los diferentes elementos de la arquitectura están equipados con una gran variedad de controles sanitarios. Si, por alguna razón, un nodo particular de la arquitectura se considera insalubre, entonces se elimina del servicio y se reemplaza silenciosamente por uno nuevo y saludable.
 
 ## Administración de identidades {#identity-management}
 
@@ -233,7 +236,7 @@ Las operaciones para AEM como servicio de nube también son compatibles con una 
 
 Un cambio importante en AEM como servicio de nube es el uso totalmente integrado de Adobe ID para acceder al nivel de creación.
 
-Esto requiere el uso de la consola [de administración de](https://helpx.adobe.com/enterprise/using/admin-console.html) Adobe para administrar usuarios y grupos de usuarios. Las cuentas de usuario permiten a los usuarios acceder a los productos y servicios de Adobe, ya que la información de perfil de usuario está centralizada en Adobe Identity Management System (IMS) para compartirse en todos los servicios en la nube. Una vez asignado el acceso a AEM, se puede hacer referencia a las cuentas de usuario en AEM como un servicio de nube (como antes); por ejemplo, para definir funciones y permisos desde las interfaces de usuario de AEM Security.
+Esto requiere el uso de la consola [de administración de](https://helpx.adobe.com/es/enterprise/using/admin-console.html) Adobe para administrar usuarios y grupos de usuarios. Las cuentas de usuario permiten a los usuarios acceder a los productos y servicios de Adobe, ya que la información de perfil de usuario está centralizada en Adobe Identity Management System (IMS) para compartirse en todos los servicios en la nube. Una vez asignado el acceso a AEM, se puede hacer referencia a las cuentas de usuario en AEM como un servicio de nube (como antes); por ejemplo, para definir funciones y permisos desde las interfaces de usuario de AEM Security.
 
 Esto combina las ventajas de:
 
@@ -253,14 +256,14 @@ La principal diferencia es que la interfaz de usuario está habilitada exclusiva
 
 ## AEM Sites {#aem-sites}
 
-Los sitios de Adobe Experience Manager como servicio de nube le permiten ofrecer a sus clientes experiencias personalizadas basadas en contenido, combinando la potencia de AEM Content Management System con AEM Digital Asset Management.
+Los sitios de Adobe Experience Manager como servicio de nube le permiten ofrecer a sus clientes experiencias personalizadas basadas en contenido, combinando la potencia del sistema de Gestor de contenido de AEM con la administración de activos digitales de AEM.
 
 Para obtener más información, consulte la descripción general de [los cambios en los sitios](/help/sites-cloud/sites-cloud-changes.md).
 
 ## AEM Assets {#aem-assets}
 
-Recursos Adobe Experience Manager como servicio de nube ofrece una solución SaaS nativa de la nube para que las empresas no solo realicen sus operaciones de administración de recursos digitales y de medios dinámicos con rapidez e impacto, sino que también utilicen funciones inteligentes de próxima generación, como AI/ML, desde un sistema que siempre está actualizado, siempre disponible y siempre aprendiendo.
+Recursos Adobe Experience Manager como servicio de nube oferta una solución SaaS nativa de la nube para que las empresas no solo realicen sus operaciones de administración de recursos digitales y de medios dinámicos con rapidez e impacto, sino que también utilicen las funciones inteligentes de próxima generación, como AI/ML, desde un sistema que siempre está actualizado, siempre disponible y siempre aprendiendo.
 
 La oferta de recursos incluye el procesamiento de recursos de próxima generación en la nube y la búsqueda y la ingesta de recursos de alto rendimiento.
 
-Para obtener más información, consulte [información general e introducción a Recursos como servicio](/help/assets/overview.md)de nube.
+Para obtener más información, consulte [Información general e introducción a Recursos como servicio](/help/assets/overview.md)de nube.
