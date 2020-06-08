@@ -1,15 +1,18 @@
 ---
 title: Preguntas frecuentes sobre la entrega de contenido HTTP2
-description: Obtenga información sobre la entrega de contenido HTTP2.
+description: Obtenga información sobre el envío de contenido HTTP2.
 translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 3%
 
 ---
 
 
 # Preguntas frecuentes sobre la entrega de contenido HTTP2{#http-delivery-of-content-faq}
 
-Adobe se complace en anunciar la disponibilidad de la entrega de contenido HTTP/2. Al utilizar HTTP/2 notará un aumento general del rendimiento.
+Adobe se complace en anunciar la disponibilidad del envío de contenido HTTP/2. Al utilizar HTTP/2 notará un aumento general del rendimiento.
 
 ## ¿Qué es HTTP/2? {#what-is-http}
 
@@ -19,7 +22,7 @@ El siguiente sitio web describe HTTP/2 y sus ventajas de una manera breve y senc
 
 [https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
 
-## ¿Cuáles son las ventajas clave de pasar a HTTP/2 para la entrega de contenido? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## ¿Cuáles son las ventajas clave del cambio a HTTP/2 para el envío de contenido? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
 La mejora del rendimiento varía ampliamente en función de factores como el código del sitio web, el uso de Scene7, el dispositivo, la pantalla y la ubicación del consumidor, etc.
 
@@ -37,12 +40,12 @@ La siguiente demostración ilustra la diferencia entre la carga HTTP/1 y la carg
 Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 * Utilice HTTPS seguro para sus solicitudes de medios enriquecidos.
-* Utilice la CDN (red de entrega de contenido) incluida en Adobe como parte de su licencia de Dynamic Media Classic.
+* Utilice la CDN (red de envío de contenido) incluida en Adobe como parte de su licencia de Dynamic Media Classic.
 * Utilice un dominio dedicado (es decir, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico de Dynamic Media Classic (es decir, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
 
-   Para encontrar los dominios, [inicie sesión en la instancia de Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de empresa.
+   Para encontrar los dominios, [inicie sesión en la instancia de Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de compañía.
 
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuración]** general. Busque el campo con la etiqueta Nombre **del servidor** publicado. Si está utilizando un dominio genérico de Scene7, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
+   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo con la etiqueta Nombre **del servidor** publicado. Si está utilizando un dominio genérico de Scene7, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
 
 ## ¿Cuál es el proceso para activar HTTP/2 en mi cuenta de Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -52,19 +55,21 @@ Debe iniciar una solicitud de asistencia técnica (`s7support@adobe.com`) de Ado
 
    * Nombre de contacto principal, correo electrónico y número de teléfono.
    * Todos los dominios que se van a transferir a HTTP2. Eso es, `images.company.com` o `mycompany.scene7.com`.
-   Para encontrar los dominios, [inicie sesión en la instancia de Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de empresa.
 
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuración]** general. Busque el campo con la etiqueta Nombre **[!UICONTROL del servidor]** publicado.
+   Para encontrar los dominios, [inicie sesión en la instancia de Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de compañía.
+
+   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo con la etiqueta Nombre **[!UICONTROL del servidor]** publicado.
 
    * Compruebe que utiliza HTTPS seguro para solicitudes de medios enriquecidos.
    * Compruebe que está utilizando la CDN a través de Adobe y que no se administra con una relación directa.
    * Compruebe que está utilizando un dominio dedicado. Es decir, `images.company.com` o `mycompany.scene7.com`, no un dominio de Scene7 genérico como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
-   Para encontrar los dominios, [inicie sesión en la instancia de Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de empresa.
 
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuración]** general. Busque el campo con la etiqueta Nombre **[!UICONTROL del servidor]** publicado. Si está utilizando un dominio genérico de Scene7, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
+   Para encontrar los dominios, [inicie sesión en la instancia de Scene7 Publishing System](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) para cada cuenta de compañía.
+
+   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo con la etiqueta Nombre **[!UICONTROL del servidor]** publicado. Si está utilizando un dominio genérico de Scene7, puede solicitar el traslado a su propio dominio personalizado como parte de esta transición.
 
    1. La asistencia técnica le agrega a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
-   1. Cuando Adobe esté preparado para gestionar su solicitud, el servicio de asistencia técnica se pondrá en contacto con usted para coordinar la transición y establecer una fecha objetivo.
+   1. Cuando Adobe esté preparado para gestionar su solicitud, el servicio de asistencia técnica se pondrá en contacto con usted para coordinar la transición y establecer una fecha de destinatario.
    1. Se le notificará una vez finalizada la operación y podrá comprobar que la transición a HTTP2 se ha realizado correctamente.
 
 
@@ -75,13 +80,13 @@ Las solicitudes se procesan en el orden en que son recibidas por la asistencia t
 
 >[!NOTE]
 >
->Puede haber un largo tiempo de espera porque la transición a HTTP/2 implica borrar la caché. Por lo tanto, solo se pueden gestionar algunas transiciones de cliente a la vez.
+>Puede haber un largo tiempo de espera porque la transición a HTTP/2 implica borrar la caché. Por lo tanto, sólo se pueden gestionar unas pocas transiciones de clientes a la vez.
 
 ## ¿Cuáles son los riesgos de pasar a HTTP/2? {#what-are-the-risks-with-moving-to-http}
 
-La transición a HTTP/2 borra la caché en la CDN porque implica el desplazamiento a una nueva configuración de CDN.
+La transición a HTTP/2 borra la caché en la CDN porque implica pasar a una nueva configuración de CDN.
 
-El contenido no almacenado en caché llega directamente a los servidores de origen de Adobe hasta que se vuelve a crear la caché. Debido a esto, Adobe tiene previsto gestionar algunas transiciones de clientes a la vez, de modo que se mantenga un rendimiento aceptable al extraer solicitudes de nuestro origen.
+El contenido no almacenado en caché llega directamente a los servidores de origen de Adobe hasta que se vuelve a crear la caché. Debido a esto, Adobe planea gestionar algunas transiciones de clientes a la vez, de modo que se mantenga un rendimiento aceptable al extraer solicitudes de nuestro origen.
 
 ## ¿Cómo puede verificar si una dirección URL o un sitio web está activado con HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
