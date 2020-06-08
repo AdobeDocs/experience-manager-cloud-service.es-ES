@@ -1,8 +1,11 @@
 ---
-title: Creación de plantillas de página
+title: 'Creación de plantillas de página  '
 description: La plantilla define la estructura de la página resultante y con el editor de plantillas, crear y mantener plantillas ya no es una tarea solo de desarrollador
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 Al crear una página, debe seleccionar una plantilla, que se utilizará como base para crear la página nueva. La plantilla define la estructura de la página resultante, cualquier contenido inicial y los componentes que se pueden utilizar.
 
-Con el **Editor de plantillas**, crear y mantener plantillas ya no es una tarea solo de desarrollador. También puede intervenir un tipo de usuario avanzado, denominado **autor de plantillas**. Los desarrolladores aún tienen que encargarse de configurar el entorno y crear bibliotecas del cliente y los componentes que se vayan a utilizar, pero una vez efectuados estos pasos básicos, el **autor de plantillas** disfruta de la flexibilidad para crear y configurar plantillas sin un proyecto de desarrollo.
+Con el **Editor de plantillas**, la creación y el mantenimiento de plantillas ya no es una tarea exclusiva para desarrolladores. También puede participar un tipo de usuario avanzado, que se denomina **autor de la plantilla**. Los desarrolladores siguen necesitando configurar el entorno, crear bibliotecas de clientes y crear los componentes que se van a utilizar, pero una vez que estos conceptos básicos están establecidos, el **autor de la plantilla** tiene la flexibilidad de crear y configurar plantillas sin un proyecto de desarrollo.
 
 La **Consola de plantillas** permite a los autores de plantillas:
 
@@ -30,7 +33,7 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 >[!NOTE]
 >
->El **Editor de plantillas** no admite trabajar directamente en el nivel de plantilla. Se puede trabajar con las páginas creadas a partir de una plantilla editable, pero no con las plantillas en sí.
+>El **Editor de plantillas** no admite la segmentación directamente en el nivel de plantilla. Las páginas creadas a partir de una plantilla editable pueden estar segmentadas, pero esto no es posible para las plantillas en sí.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -42,7 +45,7 @@ Antes de empezar, es importante tener en cuenta que la creación de una nueva pl
 
 ### Funciones {#roles}
 
-La creación de una plantilla nueva con la **Consola de plantillas** y el **Editor de plantillas** requiere la colaboración entre las funciones siguientes:
+La creación de una nueva plantilla mediante la **consola Plantillas** y el **Editor de plantillas** requiere la colaboración entre las siguientes funciones:
 
 * **Administrador**:
    * Crea una nueva carpeta de plantillas y requiere derechos `admin` (de administración).
@@ -455,7 +458,7 @@ En la pestaña **Componentes predeterminados**, puede definir qué componentes s
 
 Toque o haga clic en **Añadir asignación** para añadir un componente y una asignación de tipo MIME completamente nuevos.
 
-Seleccione un componente de la lista y toque o haga clic en **Añadir tipo** para añadir un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
+Seleccione un componente en la lista y pulse o haga clic en **Agregar tipo** para agregar un tipo MIME adicional a un componente ya asignado. Haga clic en el icono **Eliminar** para quitar un tipo MIME.
 
 ![Pestaña Componentes predeterminados](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
@@ -477,13 +480,13 @@ Cuando un componente se ha desbloqueado:
 
 ![Botón Bloquear componente](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Esto incluye desbloquear componentes de contenedor para poder añadir otros componentes, ya sea en el modo de **Contenido inicial** o en las páginas resultantes. Si ya ha añadido componentes/contenido al contenedor antes de desbloquearlo, estos dejarán de mostrarse en el modo de **Estructura**, pero se mostrarán en el modo de **Contenido inicial**. En el **modo de Estructura**, solo el propio componente de contenedor se mostrará con su lista de **Componentes permitidos**.
+Esto incluye el desbloqueo de componentes de contenedor para que se puedan añadir más componentes, ya sea en el modo **Contenido inicial** o en las páginas resultantes. Si ya ha agregado componentes o contenido al contenedor antes de desbloquearlo, estos ya no se mostrarán en el modo **Estructura**, pero se mostrarán en el modo **Contenido inicial**. En el **modo de Estructura**, solo el propio componente de contenedor se mostrará con su lista de **Componentes permitidos**.
 
 ![Componentes permitidos](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
 Para ahorrar espacio, el contenedor de diseño no aumenta para dar cabida a la lista de componentes permitidos. En su lugar, el contenedor se convierte en una lista por la que puede desplazarse.
 
-Los componentes que se pueden configurar se muestran con un icono de **Política**, que se puede tocar o hacer clic en él para editar la política y las propiedades de dicho componente.
+Los componentes que se pueden configurar se muestran con un icono de **directiva**, que se puede pulsar o hacer clic para editar la política y las propiedades de ese componente.
 
 ![Icono de componente configurable](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -547,6 +550,7 @@ Para acceder al cuadro de diálogo **Política de página**:
 
    * En la mitad izquierda, se definen las [políticas de la página](#page-policies)
    * En la mitad derecha, se definen las [propiedades de página](#page-properties)
+
    ![Política de página](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### Políticas de la página {#page-policies}
@@ -635,6 +639,7 @@ Al crear plantillas debe tener en cuenta:
 
       * Únicamente la estructura: se aplican inmediatamente
       * Contienen el contenido inicial: solo en las páginas creadas después del cambio
+
    Tenga una precaución especial al:
 
    * Bloquear o desbloquear componentes en plantillas activadas.
@@ -642,6 +647,7 @@ Al crear plantillas debe tener en cuenta:
 
       * En las páginas existentes, no estará disponible la opción de desbloquear los componentes (que estaban bloqueados).
       * Al bloquear los componentes (que eran editables), ese contenido se ocultará y no se mostrará en las páginas.
+
    >[!NOTE]
    >
    >AEM proporciona advertencias explícitas al cambiar el estado de bloqueo de componentes en las plantillas que ya no son borradores.
