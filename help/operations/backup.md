@@ -3,13 +3,16 @@ title: Backup y restauración en AEM como servicio de nube
 description: 'Backup y restauración en AEM como servicio de nube '
 translation-type: tm+mt
 source-git-commit: 8fba31951276d7e0de1f3bd079e42e431edaff4e
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
 
 # Backup y restauración en AEM como servicio de nube
 
-Si se produce corrupción de contenido o datos, AEM como servicio de nube puede restaurar la aplicación completa de un cliente (código y contenido) a tiempos específicos predeterminados en los últimos siete días, reemplazando lo que estaba en producción.
+Si se produce corrupción de contenido o datos, AEM como servicio en la nube puede restaurar la aplicación completa de un cliente (código y contenido) a tiempos específicos predeterminados en los últimos siete días, reemplazando lo que estaba en producción.
 Si la implementación de un cliente, lo que significa que el código de la aplicación implementado está dañado o dañado, es preferible corregirlo y avanzar a una nueva versión en lugar de restaurarlo desde el backup.
 
 >[!CAUTION]
