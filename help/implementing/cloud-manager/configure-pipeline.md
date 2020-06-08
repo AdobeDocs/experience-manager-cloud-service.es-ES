@@ -3,6 +3,9 @@ title: 'Configuración de la canalización de CD/CI: servicios de nube'
 description: 'Configuración de la canalización de CD/CI: servicios de nube'
 translation-type: tm+mt
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
@@ -12,13 +15,13 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ## Explicación del flujo {#understanding-the-flow}
 
-Puede configurar la canalización desde el mosaico Configuración **de** canalización en la interfaz de usuario del Administrador [!UICONTROL de] nube.
+Puede configurar la canalización desde el mosaico **Configuración de canalización** en la interfaz de usuario de [!UICONTROL Cloud Manager].
 
 El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **repositorio** Git.
 
 Para configurar la canalización, el usuario debe:
 
-* defina el activador que iniciará la canalización.
+* defina el activador que hará inicio a la canalización.
 * defina los parámetros que controlan la implementación de producción.
 * configure los parámetros de prueba de rendimiento.
 
@@ -28,13 +31,13 @@ Para configurar la canalización, el usuario debe:
 >
 >La canalización no se puede configurar hasta que se complete la creación de un programa y el repositorio Git tenga al menos una rama.
 
-Antes de comenzar a implementar el código, debe configurar la configuración de la canalización desde el Administrador de [!UICONTROL nube].
+Para poder implementar el código con inicio, debe configurar la configuración de la canalización desde [!UICONTROL Cloud Manager].
 
 >[!NOTE]
 >
 >Puede cambiar la configuración de la canalización después de la configuración inicial.
 
-## Configuración de la canalización desde [!UICONTROL Cloud Manager]{#configuring-the-pipeline-settings-from-cloud-manager}
+## Configuración de la canalización desde [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
 
 Una vez que haya configurado el programa y tenga al menos un entorno usando la interfaz de usuario de [!UICONTROL Cloud Manager] , estará listo para configurar la canalización de implementación.
 
@@ -52,10 +55,11 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    ![](assets/set-up-pipeline3.png)
 
-   Puede definir el activador para iniciar la canalización:
+   Puede definir el activador para el inicio de la canalización:
 
-   * **Manual** : si se utiliza la interfaz de usuario, se iniciará la canalización manualmente.
-   * **Al cambiar** Git: inicia la canalización CI/CD cada vez que se añaden confirmaciones a la ramificación git configurada. Aunque seleccione esta opción, siempre puede iniciar la canalización manualmente.
+   * **Manual** : el uso de la interfaz de usuario inicio manualmente la canalización.
+   * **Al cambiar** Git: inicio la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede realizar el inicio de la canalización manualmente.
+
    Durante la configuración o edición de la canalización, el Administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se produce un error importante en cualquiera de las puertas de calidad.
 
    Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
@@ -69,14 +73,14 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    ![](assets/set-up-pipeline4.png)
 
-1. Haga clic en **Guardar.** La página *Información general* ahora muestra la tarjeta **Implementar el programa** . Haga clic en el botón **Implementar** para implementar el programa.
+1. Haga clic en **Guardar.** La página *Información general* ahora muestra la tarjeta **Implementar Programa** . Haga clic en el botón **Implementar** para implementar el programa.
 
    ![](assets/configure-pipeline5.png)
 
 
 ## Tuberías de calidad de código y de no producción
 
-Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de servicios gestionados de Adobe.
+Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en Adobe Managed Services entorno.
 
 En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
@@ -84,7 +88,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
    ![](assets/configure-pipeline6.png)
 
-1. Haga clic en el botón **Agregar** para especificar el nombre de la canalización, el tipo de canalización y la rama Git.
+1. Haga clic en el botón **Añadir** para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
 
    Además, también puede configurar Activador de implementación y Comportamiento de error importante desde Opciones de tubería.
 
