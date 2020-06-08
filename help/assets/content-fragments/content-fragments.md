@@ -3,6 +3,9 @@ title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido de Adobe Experience Manager (AEM) como servicio de nube le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: tm+mt
+source-wordcount: '1936'
+ht-degree: 7%
 
 ---
 
@@ -67,6 +70,7 @@ Junto con las funciones de exportación JSON de los componentes principales de A
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**son funciones distintas de AEM:
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
+
 >
 >
 Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
@@ -140,6 +144,7 @@ Los recursos se pueden utilizar con un fragmento de contenido de varias formas; 
    * Son una parte integral del fragmento (consulte Partes [constitutivas de un fragmento](#constituent-parts-of-a-content-fragment)de contenido).
    * Defina la posición del recurso.
    * Consulte [Inserción de recursos en el fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) en el Editor de fragmentos para obtener más información.
+
    >[!NOTE]
    >
    >Los recursos visuales insertados en el propio fragmento de contenido se adjuntan al párrafo anterior. Cuando se agrega el fragmento a una página, estos recursos se mueven en relación con ese párrafo cuando se agrega contenido intermedio.
@@ -191,6 +196,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
    * Solo se puede agregar, eliminar o mover dentro de un fragmento con formato de texto [enriquecido en el editor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)de fragmentos.
    * Solo se puede agregar a elementos de texto de varias líneas (cualquier tipo de fragmento).
    * Se adjuntan al texto anterior (párrafo).
+
    >[!CAUTION]
    >
    >Puede eliminarse (inadvertidamente) de un fragmento cambiando al formato de texto sin formato.
@@ -219,6 +225,7 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 
          * Al ver/editar las **propiedades** del fragmento desde la consola
          * Al editar los **metadatos** en el editor de fragmentos
+
    >[!CAUTION]
    >
    >Los perfiles de procesamiento de metadatos no se aplican a los fragmentos de contenido.
