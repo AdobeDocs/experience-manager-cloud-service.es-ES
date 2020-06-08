@@ -1,8 +1,11 @@
 ---
 title: La consola Componentes
 description: La consola Componentes permite examinar todos los componentes definidos para una instancia.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
       * Si hace clic en el origen del icono, se le dirigirá a dicho componente.
    * Ver el **tipo de recurso** y el **supertipo de recurso** (si está definido) para el componente.
       * Si hace clic en el supertipo de recurso, se le dirigirá a dicho componente.
+
    >[!NOTE]
    >
    >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
