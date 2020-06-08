@@ -33,6 +33,7 @@ Consulte también [Incrustación del visor de vídeo o de imagen de Dynamic Medi
 >
 >* Los recursos deben publicarse para poder utilizar la dirección URL. Si no se publican los recursos, no funcionará copiar y pegar la URL en un explorador web.
 >* Los ajustes preestablecidos de imagen y los ajustes preestablecidos de visor deben activarse y publicarse para el envío en directo.
+
 >
 
 
