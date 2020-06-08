@@ -1,8 +1,11 @@
 ---
-title: Uso de versiones de página
+title: 'Uso de versiones de página  '
 description: Cree, compare y restaure versiones de una página
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -71,7 +74,7 @@ Para volver a una versión anterior:
 
 1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todos** o **Versiones**. Se indicarán las versiones de página para la página seleccionada.
+1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
 1. Seleccione la versión a la que desee revertir. Se mostrarán las opciones posibles:
 
    ![Revertir versión](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -84,7 +87,7 @@ Puede previsualizar una versión específica:
 
 1. Desplácese para mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todos** o **Versiones**. 
+1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
 1. Se enumerarán las versiones de la página. Seleccione la versión que quiere previsualizar:
 
    ![Previsualizar versión](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -103,7 +106,7 @@ Para comparar una versión anterior con la página actual:
 
 1. Desplácese para mostrar la página que desea comparar.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todos** o **Versiones**. 
+1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
 1. Se enumerarán las versiones de la página. Seleccione la versión que desee comparar:
 
    ![Comparar versiones](/help/sites-cloud/authoring/assets/versions-revert.png)
@@ -131,7 +134,7 @@ Deformación de tiempo es un [modo](/help/sites-cloud/authoring/fundamentals/env
 
    ![Modo Deformación de tiempo](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
-1. En el cuadro de diálogo, establezca una fecha y una hora de destino y toque o haga clic en **Establecer fecha**. Si no selecciona una hora, el valor predeterminado será la hora actual.
+1. En el cuadro de diálogo establezca una fecha y hora de destino y pulse o haga clic en **Establecer fecha**. Si no selecciona una hora, la hora actual será la predeterminada.
 
    ![Fecha objetivo de Deformación de tiempo](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
