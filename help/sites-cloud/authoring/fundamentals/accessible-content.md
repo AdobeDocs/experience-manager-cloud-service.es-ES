@@ -1,9 +1,9 @@
 ---
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '13955'
 ht-degree: 100%
 
@@ -327,6 +327,7 @@ Puede asegurarse de que las páginas web tengan la estructura adecuada mediante 
 * **Listas**: Puede utilizar HTML para especificar tres tipos diferentes de listas:
    * El elemento `<ul>` se utiliza para listas *desordenadas* (o listas con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`. En RTE, utilice el icono de **Lista con viñetas**.
    * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`. En RTE, utilice el icono **Lista numerada** .
+
    Si desea cambiar contenido existente por un tipo de lista específica, remarque el texto adecuado y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, en el que se mostraba cómo se introducía texto en formato párrafo, los elementos de la lista adecuada se añaden automáticamente a su HTML.
 
    En el modo de pantalla completa, están visibles los iconos individuales **Lista con viñetas** y **Lista numerada**. Cuando no se encuentra en modo de pantalla completa, las dos opciones están disponibles detrás del icono de una **Listas**.
@@ -336,11 +337,13 @@ Puede asegurarse de que las páginas web tengan la estructura adecuada mediante 
    * un elemento `<tr>` para cada fila de la tabla
    * un elemento `<th>` para cada titular de fila y columna
    * un elemento `<td>` para cada celda de datos
+
    Además, las tablas accesibles utilizan los siguientes elementos y atributos:
 
    * El elemento `<caption>` se utiliza para proporcionar un subtítulo visible para la tabla. Los subtítulos por defecto aparecen centrados debajo de la tabla, pero se pueden posicionar de cualquier otra manera adecuada utilizando CSS. El subtítulo está asociado programáticamente con la tabla, por lo que se trata de un método útil para proporcionar una introducción al contenido.
    * El elemento `<summary>` ayuda a los usuarios que carecen de visión para que entiendan con mayor facilidad la información que se presenta en la tabla mediante una sinopsis de lo que el usuario puede ver. Resulta particularmente útil cuando se utilizan diseños de la tabla complejos o poco convencionales (este atributo no se muestra en el buscador, solo se lee en voz alta para tecnologías de asistencia).
    * El atributo `scope` del elemento `<th>` se utiliza para indicar si una celda representa el encabezado de una fila en concreto o de una columna en concreto. Un enfoque similar es el de utilizar el encabezado y los atributos de identificación en tablas complejas, donde las celdas de datos se pueden asociar con uno o más encabezados.
+
    >[!NOTE]
    >
    >Por defecto, estos elementos y atributos no se encuentran disponibles directamente, aunque es posible que el administrador del sistema añada cierta ayuda para estos valores en el cuadro de diálogo **Propiedades de la tabla** (consulte Agregar ayuda para elementos y atributos HTML adicionales).
@@ -353,6 +356,7 @@ Puede asegurarse de que las páginas web tengan la estructura adecuada mediante 
 
    * Defina un **subtítulo** adecuado.
    * Idealmente, elimine los valores predeterminados de **anchura**, **altura**, **borde**, **relleno de celda** y **espaciado de celda**, ya que estas propiedades se pueden definir en una hoja de estilo global.
+
    Puede utilizar las **propiedades de la celda** para decidir si la celda es una celda de datos o de encabezado:
 
 * **Énfasis**: Utilice el elemento `<strong>` o `<em>` para dar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
@@ -365,6 +369,7 @@ Puede asegurarse de que las páginas web tengan la estructura adecuada mediante 
       >
       >* `<b>` para `<strong>`
       >* `<i>` para `<em>`
+
       >
       >Aunque son igual de eficaces, `<strong>` y `<em>` son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar `<strong>` y `<em>` (en lugar de `<b>` y `<i>`) cuando desarrolle su proyecto.
 
@@ -536,6 +541,7 @@ Siga las directrices de [Cómo cumplir los criterios de éxito 1.4.2](https://ww
    * Texto grande: el texto y las imágenes de texto a gran escala mantienen una relación de contraste de al menos 3:1.
    * Secundario: el texto o las imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, que son [puramente decorativos](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), que no son visibles para nadie o que forman parte de una fotografía que contiene otro contenido visual significativo, no tienen requisitos de contraste.
    * Logotipos: El texto que forma parte de un logotipo o del nombre de una marca no cuenta con un requisito mínimo de contraste.
+
    >[!NOTE]
    >
    >Para obtener más información, consulte [Comprender el contraste no textual](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html), a fin de garantizar que los autores de contenido comprendan los requisitos adicionales relacionados con los elementos no textuales (incluidos los iconos, los elementos de interfaz, entre otros).
