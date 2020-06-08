@@ -1,15 +1,18 @@
 ---
-title: Preguntas más frecuentes sobre el fin de vida útil del visor DHTML
-description: A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición a nuestra nueva plataforma de visor HTML5.
+title: Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML
+description: A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición en nuestra nueva plataforma de visor HTML5.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 1%
 
 ---
 
 
-# Preguntas más frecuentes sobre el fin de vida útil del visor DHTML{#dhtml-viewer-end-of-life-faqs}
+# Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML{#dhtml-viewer-end-of-life-faqs}
 
-A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición a nuestra nueva plataforma de visor HTML5.
+A partir del 31 de enero de 2014, la plataforma de visor DHTML de Scene7 dejará de funcionar oficialmente. Esta notificación le proporciona respuestas a las preguntas más frecuentes para que pueda prepararse para esta transición en nuestra nueva plataforma de visor HTML5.
 
 **¿Cuál es el cambio?**
 
@@ -30,39 +33,39 @@ Los estándares web evolucionan constantemente y DHTML es una tecnología de des
 * Compatibilidad total con fuentes
 * Reproducción de vídeo sin complementos
 
-Específicamente a la plataforma de visor DHTML de Scene7, tanto la solución basada en JSP como las API de Javascript no se han optimizado para dispositivos móviles para aprovechar las funciones de gestos y multitoque. Y aunque los visores DHTML que se lanzaron en 2011/principios de 2012 están optimizados para dispositivos móviles, eran difíciles de personalizar y mantener debido a la falta de un marco de desarrollo flexible basado en componentes SDK.
+Específicamente a la plataforma de visor DHTML de Scene7, tanto la solución basada en JSP como las API de Javascript no se han optimizado para dispositivos móviles para aprovechar las funciones de gestos y multitoque. Y aunque los visores DHTML que se lanzaron en 2011/principios de 2012 están optimizados para dispositivos móviles, fueron difíciles de personalizar y mantener debido a la falta de un marco de desarrollo flexible basado en componentes SDK.
 
-Debido a estas limitaciones en DHTML y a la rápida tracción del sector con HTML5 como estándar emergente tanto para equipos de escritorio como móviles, Scene7 ha decidido invertir en una plataforma de visor basada en HTML5. Esta inversión ofrecerá a nuestros clientes una plataforma sólida con la que podrán crear visores interactivos más enriquecidos y atractivos que puedan llegar a los usuarios en varias pantallas, incluidos los dispositivos de escritorio, iOS y Android.
+Debido a estas limitaciones en DHTML y a la rápida tracción del sector con HTML5 como estándar emergente tanto para equipos de escritorio como móviles, Scene7 ha decidido invertir en una plataforma de visor basada en HTML5. Esta inversión oferta a nuestros clientes una plataforma sólida con la que pueden crear visores interactivos más enriquecidos y atractivos que puedan llegar a los usuarios en varias pantallas, incluidos los dispositivos de escritorio, iOS y Android.
 
 **¿Cómo sé si mi visor está usando la plataforma DHTML?**
 
-Para determinar si el visor que utiliza su empresa es DHTML y, por lo tanto, se ve afectado por este cambio, compruebe si:
+Para determinar si el visor que utiliza su compañía es DHTML y, por tanto, se ve afectado por este cambio, compruebe si:
 
-1. Su empresa está utilizando un visor de Scene7 incorporado en esta tabla, donde la &quot;Tecnología de visor&quot; se designa como &quot;DHTML&quot;:
-
-   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
-
-1. Su empresa está utilizando un visor que se creó como un nuevo ajuste preestablecido basado en un visor de Scene7 incorporado en esta tabla, donde la &quot;Tecnología del visor&quot; se designa como &quot;DHTML&quot;:
+1. Su compañía está utilizando un visor de Scene7 incorporado en esta tabla, donde la &quot;Tecnología de visor&quot; se designa como &quot;DHTML&quot;:
 
    [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
-1. Su empresa está utilizando un visor personalizado creado a partir de la solución DHTML basada en JSP:
+1. La compañía está utilizando un visor que se creó como un nuevo ajuste preestablecido basado en un visor de Scene7 incorporado en esta tabla, donde la &quot;Tecnología del visor&quot; se designa como &quot;DHTML&quot;:
+
+   [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+
+1. La compañía está utilizando un visor personalizado creado a partir de la solución DHTML basada en JSP:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
 
-1. Su empresa está utilizando un visor personalizado creado a partir de la API de JavaScript:
+1. La compañía utiliza un visor personalizado creado con la API de JavaScript:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 
-1. Su empresa está utilizando un visor personalizado creado con la API de flotación multipantalla DHTML:
+1. La compañía utiliza un visor personalizado creado con la API de flotación multipantalla DHTML:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Multi-screen_Flyout_Viewer)
 
-1. Su empresa está utilizando un visor personalizado creado con la API flotante de escritorio DHTML:
+1. La compañía está utilizando un visor personalizado creado con la API flotante de escritorio DHTML:
 
    [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#Desktop_Flyout_Viewer)
 
-1. Su empresa está utilizando una biblioteca de detección de dispositivos que forma parte del paquete de visores DHTML:
+1. La compañía está utilizando una biblioteca de detección de dispositivos que forma parte del paquete de visores DHTML:
 
    Busque la inclusión de JS de &quot;sj_deviceDetect.js&quot; en el código.
 
@@ -75,7 +78,7 @@ El reemplazo de DHTML es la plataforma de visor HTML5 de Scene7, que consta de:
 * Los visores integrados en HTML5 incluyen interacciones optimizadas para dispositivos móviles en varios tipos de visor, incluidos zoom básico, zoom flotante, conjuntos de imágenes, conjuntos de muestras, giro multidimensional y medios mixtos. Para ver ejemplos actualizados de estos visores, consulte: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 * SDK de visor HTML5 que permite una amplia personalización de los visores de Adobe Scene7 para sitios y dispositivos compatibles con HTML5 (como iOS y Android), lo que ofrece la máxima flexibilidad y creatividad para personalizar el aspecto del visor y la interactividad. Las ventajas de los componentes reutilizables optimizados para el rendimiento reducen el coste total del desarrollo del visor y aceleran el desarrollo personalizado.
 
-**¿Cuándo tendrá la plataforma de visor HTML5 las funciones que necesito para realizar la transición desde la plataforma de visor DHTML?**
+**¿Cuándo tendrá la plataforma de visor HTML5 las funciones que necesito para la transición de la plataforma de visor DHTML?**
 
 Scene7 lanzó el primer SDK de visor HTML5 en otoño de 2011 con el lanzamiento de la versión 5.5. Desde entonces, hemos agregado numerosas funciones a la plataforma y hemos ampliado la compatibilidad para más y más tipos de visores. Para la mayoría de los requisitos habituales del visor, es probable que la plataforma de visor HTML5 ya cuente con las funciones que necesita migrar ahora. Y seguimos invirtiendo agresivamente en esta plataforma de visor con lanzamientos cada trimestre.
 
@@ -87,9 +90,9 @@ Para determinar si los requisitos del visor se pueden satisfacer hoy mismo con l
 
 Si no está seguro de si el SDK de visor HTML5 puede o no satisfacer sus necesidades, consulte con nuestro equipo de servicios profesionales.
 
-**¿Cómo puedo realizar la transición de mis visores a la plataforma HTML5?**
+**¿Cómo se realiza la transición de mis visores a la plataforma HTML5?**
 
-Para realizar la transición de los visores a la plataforma HTML5, Scene7 ofrece las siguientes opciones:
+Para transición de los visores a la plataforma HTML5, Scene7 oferta las siguientes opciones:
 
 1. Utilice uno de los visores HTML5 integrados de Scene7, cuyos ejemplos se pueden encontrar aquí: [https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html)
 1. Configure uno de los visores HTML5 integrados de Scene7 en la configuración de la aplicación de SPS. Esto le permitirá personalizar cierto comportamiento, como el tamaño del visor, las transiciones, el comportamiento de zoom, etc.: [https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
@@ -120,4 +123,4 @@ Aunque todavía puede estar en producción con visores basados en DHTML, es impo
 
 **¿Con quién puedo contactar para obtener más información?**
 
-Si esta pregunta frecuente no responde a todas sus preguntas, póngase en contacto con el servicio de asistencia técnica ([s7support@adobe.com](mailto:s7support@adobe.com)) o con el administrador de cuentas de Adobe.
+Si esta sección de preguntas recientes no soluciona su problema, contacte con el servicio de asistencia técnica ([s7support@adobe.com](mailto:s7support@adobe.com)) o con el administrador de cuentas de Adobe.
