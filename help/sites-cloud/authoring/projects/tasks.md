@@ -3,6 +3,9 @@ title: Uso de tareas
 description: Las tareas representan elementos de trabajo que tienen que implementarse en el contenido y se utilizan en los proyectos para determinar el nivel de conclusión de las tareas actuales
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 93%
 
 ---
 
@@ -17,9 +20,9 @@ Las tareas también se utilizan en los proyectos para determinar el nivel de con
 
 Para realizar un seguimiento del progreso del proyecto, fíjese en las tareas activas/terminadas en un proyecto representadas en el mosaico **Tareas**. Los elementos siguientes sirven para determinar el progreso del proyecto:
 
-* **** Mosaico de tareas: En el mosaico de tareas, disponible en la página de detalles del proyecto, se muestra un progreso general del proyecto.
+* **Mosaico de tareas:** En el mosaico de tareas, disponible en la página de detalles del proyecto, se muestra un progreso general del proyecto.
 
-* **** Lista de tareas: Al hacer clic en el mosaico Tarea, se muestra una lista de tareas. En esta lista se incluye información detallada sobre todas las tareas relacionadas con el proyecto.
+* **Lista de tareas:** Al hacer clic en el mosaico Tarea, se muestra una lista de tareas. Esta lista contiene información detallada sobre todas las tareas relacionadas con el proyecto.
 
 Las tareas de flujo de trabajo de la lista, así como las tareas que cree directamente en el mosaico **Tareas**.
 
@@ -31,7 +34,7 @@ Si un proyecto contiene tareas relacionadas, en el proyecto se muestra un mosaic
 * Porcentaje de tareas activas
 * Porcentaje de tareas caducadas
 
-![Icono de tarea](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Mosaico de Tarea](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ### Ver o modificar las tareas en un proyecto {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -45,15 +48,15 @@ Haga clic en los puntos suspensivos (…) en el mosaico Tareas para mostrar la l
 
 #### Detalles de la tarea {#task-details}
 
-Para obtener más información sobre una tarea en particular, en la Lista de tareas, toque o haga clic en la tarea y **Detalles de la tarea **abra.
+Para obtener más información sobre una tarea en particular, en la Lista Tarea, toque o haga clic en la tarea y **Detalles de Tarea **abrir.
 
-![Detalles de la tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
+![Detalles de Tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
 ### Ver y modificar los comentarios de la tarea {#viewing-and-modifying-task-comments}
 
 En Detalles de la tarea, puede editar o añadir comentarios. Además, todos los comentarios de un proyecto están visibles en el área de comentarios.
 
-![Comentarios sobre las tareas](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
+![Observaciones sobre tareas](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### Adición de tareas {#adding-tasks}
 
@@ -61,10 +64,10 @@ Puede añadir tareas nuevas a los proyectos. A continuación, estas tareas apare
 
 Para añadir una tarea:
 
-1. En el proyecto, en el mosaico **Tareas**, toque o haga clic en el icono +. Se abrirá la ventana **Añadir tarea**.
+1. En el mosaico **Tareas** del proyecto, pulse o haga clic en el icono +. Se abre la ventana **Agregar tarea**.
 1. Introduzca la información sobre la tarea. El título de la tarea y el grupo al que está asignada son obligatorios. La información adicional, como la ruta de acceso del contenido, la descripción, la prioridad de tareas y la fecha de caducidad, es opcional. Además, puede seleccionar la pestaña **Avanzadas** para introducir el nombre de la tarea, que se utiliza para dar nombre a la dirección URL.
 
-   ![Agregar una tarea](/help/sites-cloud/authoring/assets/projects-add-task.png)
+   ![Añadir una tarea](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
 1. Toque o haga clic en **Crear**.
 
@@ -76,4 +79,4 @@ Otra forma de acceder a las tareas es desde la bandeja de entrada. Puede abrir e
 
 Para completar una tarea, selecciónela y haga clic en **Completada**. Añada información a la tarea y, a continuación, haga clic en **Hecho**. Consulte la [bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
 
-![Notificaciones de tareas](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
+![Notificaciones de Tarea](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
