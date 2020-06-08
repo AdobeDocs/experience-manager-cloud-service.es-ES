@@ -1,13 +1,16 @@
 ---
-title: Aviso de final de asistencia para el visor Flash
+title: Aviso de fin de vida útil para el visualizador Flash
 description: A partir del 31 de enero de 2017, Adobe Scene7 dejará de ofrecer asistencia para la plataforma del visor Flash.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 61%
 
 ---
 
 
-# Aviso de final de asistencia para el visor Flash{#flash-viewers-end-of-life-notice}
+# Aviso de fin de vida útil para el visualizador Flash{#flash-viewers-end-of-life-notice}
 
 *A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejó de ofrecer asistencia técnica para la plataforma de visor Flash.*
 
