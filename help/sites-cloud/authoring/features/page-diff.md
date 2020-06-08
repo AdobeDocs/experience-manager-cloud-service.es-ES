@@ -1,8 +1,11 @@
 ---
-title: Diferencias de página
+title: 'Diferencias de página  '
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
 
