@@ -4,6 +4,9 @@ description: Obtenga información sobre cómo retirar recursos para editarlos y 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +41,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sin embargo, puede tocar o hacer clic en el icono **[!UICONTROL Ver propiedades]** para editar los metadatos del recurso bloqueado.
+   Sin embargo, puede tocar o hacer clic en el icono Propiedades **[!UICONTROL de la]** Vista para editar los metadatos del recurso bloqueado.
 
 1. Toque o haga clic en el icono Editar para abrir el recurso en modo de edición.
 
@@ -50,7 +53,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    También puede elegir anotar o publicar el recurso.
 
-1. Seleccione el recurso editado en la interfaz de usuario de Recursos y toque o haga clic en el icono **[!UICONTROL Proteger]** de la barra de herramientas.
+1. Seleccione el recurso editado en la interfaz de usuario de Assets y pulse o haga clic en el icono **[!UICONTROL Proteger]** de la barra de herramientas.
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
