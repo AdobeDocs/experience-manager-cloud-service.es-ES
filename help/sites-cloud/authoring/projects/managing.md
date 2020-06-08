@@ -1,8 +1,11 @@
 ---
-title: Administración de Proyectos
+title: Administración de proyectos
 description: Los proyectos permiten organizar el proyecto agrupando los recursos en una entidad a la que se puede acceder y administrar en la consola Proyectos
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +20,7 @@ En la consola **Proyectos**, puede acceder a los proyectos y realizar acciones c
 
 En Proyectos, puede crear un proyecto, asociar recursos al proyecto y, además, eliminar un proyecto o vínculos a recursos. Es posible que desee abrir un mosaico para ver su contenido, así como para añadir elementos a un mosaico. En este tema se describen estos procedimientos.
 
-## Creación de un proyecto {#creating-a-project}
+## Creación de un proyecto    {#creating-a-project}
 
 En la versión básica, AEM proporciona estas plantillas para elegir al crear un proyecto:
 
@@ -26,16 +29,16 @@ En la versión básica, AEM proporciona estas plantillas para elegir al crear un
 * Proyecto de sesión fotográfica del producto
 * Proyecto de traducción
 
-El procedimiento de creación de un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [ flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles.  Para crear un proyecto nuevo:
+El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Para crear un nuevo proyecto:
 
-1. En **Proyectos**, toque o haga clic en **Crear** para abrir el asistente **Crear proyecto**:
+1. En **Proyectos**, pulse o haga clic en **Crear** y abrirá el asistente **Crear proyecto**:
 1. Select a template and click **Next**.
 
    ![Creación de un proyecto](/help/sites-cloud/authoring/assets/projects-create.png)
 
 1. Define the **Title** and **Description** and add a **Thumbnail** image if required. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
 
-   ![Adición de detalles del proyecto](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Añadir detalles del proyecto](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el proyecto nuevo o regresar a la consola.
 
@@ -48,7 +51,7 @@ Para asociar recursos al proyecto:
 1. Abra el proyecto en la consola **Proyectos**.
 1. Toque o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular al proyecto. Puede seleccionar varios tipos de mosaicos.
 
-   ![Adición de un mosaico a un proyecto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
+   ![Añadir un mosaico en un proyecto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
    >[!NOTE]
    >
@@ -72,7 +75,7 @@ Para eliminar un proyecto desde la consola o un recurso vinculado desde el proye
 
 >[!NOTE]
 >
->Al crear el proyecto y añadir a usuarios a las distintas funciones, se crean automáticamente los grupos asociados al proyecto para gestionar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tiene tres propietarios **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminan automáticamente. Un administrador tiene que eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
+>Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador tiene que eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
 
 ### Adición de elementos a un mosaico {#adding-items-to-a-tile}
 
@@ -82,7 +85,7 @@ Para añadir elementos a un mosaico:
 
 1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
 
-   ![Agregar elemento a un mosaico](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Añadir elemento en un mosaico](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
 1. Añada un elemento al mosaico como lo haría al crear un mosaico nuevo. Los mosaicos de proyecto se describen [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
 
