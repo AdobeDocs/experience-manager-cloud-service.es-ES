@@ -1,8 +1,11 @@
 ---
 title: Consolas de herramientas
 description: Obtenga información sobre las distintas consolas de herramientas en AEM.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 100%
 
 ---
 
