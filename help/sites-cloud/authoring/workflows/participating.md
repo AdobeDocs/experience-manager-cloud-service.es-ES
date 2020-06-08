@@ -3,6 +3,9 @@ title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +23,7 @@ Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar
 
 ## Notificaciones de las acciones de flujo de trabajo disponibles {#notifications-of-available-workflow-actions}
 
-Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**) aparecen varias alertas y notificaciones:
+Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas o notificaciones:
 
 * El indicador de [notificaciones](/help/sites-cloud/authoring/getting-started/inbox.md) (barra de herramientas) se incrementará:
 
@@ -36,6 +39,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**) 
    * El número de flujos de trabajo en los que se encuentra la página. Puede hacer lo siguiente:
       * Usar las flechas izquierda/derecha para navegar por la información de estado de los distintos flujos de trabajo.
       * Hacer clic o pulsar en el número real para abrir una lista desplegable de todos los flujos de trabajo aplicables y, a continuación, seleccionar el flujo de trabajo que desee visualizar en la barra de estado.
+
    ![Página con varios flujos de trabajo](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
