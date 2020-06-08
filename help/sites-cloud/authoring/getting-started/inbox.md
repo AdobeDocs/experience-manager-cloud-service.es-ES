@@ -1,9 +1,9 @@
 ---
 title: 'Su bandeja de entrada  '
 description: Administración de las tareas con la bandeja de entrada
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -92,6 +92,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
    * **Agrupar por**
    * **Programa** o **Ninguno**
    * **Tamaño de la tarjeta**
+
    ![Ajustes de vista de calendario de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Vista de lista**
@@ -100,6 +101,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
    * **Ordenar en**
    * **Orden**
+
    ![Ajustes de vista de lista de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    También puede delegar el calendario a otros usos, así como solicitar la delegación de otros usuarios y administrar las delegaciones.
@@ -128,6 +130,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
    * **Retroceder** a una etapa anterior
    * Consultar la carga útil de un flujo de trabajo
    * Crear un proyecto a partir de un elemento
+
    >[!NOTE]
    >
    >Para obtener más información, consulte:
@@ -140,6 +143,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
    * Se abre un cuadro de diálogo apropiado para la acción.
    * Se inicia un asistente de acciones.
    * Se abre una página de documentación.
+
    Por ejemplo, la opción **Delegar** abre el siguiente cuadro de diálogo:
 
    ![Delegar tarea de bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
@@ -168,11 +172,13 @@ Desde la bandeja de entrada, puede crear tareas:
       * **Prioridad de tareas**
       * **Fecha de inicio**
       * **Fecha de vencimiento**
+
    ![Añadir tarea en la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **Avanzado**
 
       * **Nombre:**: este se usa para crear la dirección URL; si está en blanco, se basa en el **Título**.
+
    ![Opciones avanzadas de añadir tarea en la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. Seleccione **Enviar**.
