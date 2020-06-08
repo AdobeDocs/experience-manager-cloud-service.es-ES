@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Programas de Simulador para pruebas {#sandbox-programs}
+# Programas del Simulador para pruebas {#sandbox-programs}
 
 ## Introducción {#introduction}
 
