@@ -1,8 +1,11 @@
 ---
-title: Exportar a CSV
+title: 'Exportar a CSV  '
 description: Permite exportar información sobre las páginas a un archivo CSV en el sistema local
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 100%
 
 ---
 
