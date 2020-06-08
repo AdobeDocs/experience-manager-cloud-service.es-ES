@@ -3,6 +3,9 @@ title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 translation-type: tm+mt
 source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 3%
 
 ---
 
@@ -142,7 +145,7 @@ Una vez que Adobe cambia un índice listo para usar como &quot;damAssetLucene&qu
 | /oak:index/cqPageLucene | Sí | Sí | No |
 | /oak:index/cqPageLucene-2 | Sí | No | Sí |
 
-### Restricciones        {#limitations}
+### Restricciones          {#limitations}
 
 Actualmente, la administración de índices solo se admite para índices de tipo `lucene`.
 
