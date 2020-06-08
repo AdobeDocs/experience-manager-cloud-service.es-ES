@@ -1,8 +1,11 @@
 ---
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 100%
 
 ---
 
@@ -64,6 +67,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
    * Si la página tiene referencias que es necesario publicar, estas se enumerarán en el asistente **Publicar**, donde puede:
       * Especificar qué recurso/etiqueta/etc. desea publicar junto con la página y, a continuación, utilizar **Publicar** para completar el proceso.
       * Utilizar **Cancelar** para anular la acción.
+
    ![Publicación de referencias con la página](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas se mostrará un mensaje que confirma la acción de publicación.
@@ -119,6 +123,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    * Elija si publica o cancela la publicación de las páginas seleccionadas.
    * Elija si la acción se realizará ahora o en una fecha posterior.
+
    Posponer la publicación inicia un flujo de trabajo que publicará la página o páginas seleccionadas en el momento especificado. Por su parte, cancelar la publicación inicia un flujo de trabajo para anular la publicación de la página o páginas seleccionadas en un momento especificado.
 
    Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la consola Flujo de trabajo para finalizar el flujo de trabajo correspondiente. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -142,6 +147,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Incluir sus elementos secundarios.
    * Eliminarlo de la selección.
    * Gestionar sus referencias publicadas.
+
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    Al hacer clic en **Incluir elementos secundarios** se abre un cuadro de diálogo que le permite lo siguiente:
@@ -149,6 +155,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Incluir solo los elementos secundarios inmediatos.
    * Incluir solo las páginas modificadas.
    * Incluir solo las páginas ya publicadas.
+
    Haga clic en **Añadir** para añadir las páginas secundarias que se van a publicar o dejar de publicar, en función de las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
 
    ![Administrar publicación, incluidos los elementos secundarios](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -184,10 +191,12 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    * Definir el título del flujo de trabajo.
    * Mantener el paquete del flujo de trabajo, siempre que este sea compatible con varios recursos.
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
+
    Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
@@ -234,6 +243,7 @@ Para hacerlo, puede utilizar la opción [Administrar publicación](#manage-publi
 
    * Incluir solo los elementos secundarios inmediatos
    * Incluir solo las páginas ya publicadas
+
    Estas opciones están seleccionadas de forma predeterminada, por lo que debe acordarse de anular su selección. Haga clic en **Añadir** para confirmar y añadir el contenido a la publicación o cancelación de publicación.
 
    ![Inclusión de elementos secundarios al cancelar la publicación](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
