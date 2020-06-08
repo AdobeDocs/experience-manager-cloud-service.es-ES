@@ -3,11 +3,14 @@ title: Integración con Git
 description: 'Integración con Git: servicios de nube'
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
 
-# Integración de Git con Adobe Cloud Manager {#git-integration}
+# Integrar Git con Adobe Cloud Manager {#git-integration}
 
 Adobe Cloud Manager se suministra con un único repositorio de Git que se utiliza para implementar código mediante las canalizaciones CI/CD de Cloud Manager. Los clientes pueden utilizar el repositorio de Git del Administrador de nube de forma predeterminada. Los clientes también tienen la opción de integrar un repositorio Git local o gestionado por el **cliente** con Cloud Manager.
 
@@ -27,7 +30,7 @@ La serie de vídeos asume un conocimiento básico de la gestión de la entrada y
 
 >[!NOTE]
 >
-> Los pasos y las convenciones de nombres que se describen en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio Git gestionado por el cliente y con Cloud Manager. Se prevé que las convenciones y los flujos de trabajo descritos se adapten a los distintos equipos de desarrollo.
+> Los pasos y las convenciones de nombres que se describen en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio Git gestionado por el cliente y con Cloud Manager. Se espera que los convenios y flujos de trabajo descritos se adapten a los distintos equipos de desarrollo.
 
 ## Sincronización inicial {#initial-sync}
 
@@ -49,7 +52,7 @@ Utilice una rama de funciones para aislar los cambios de código en un repositor
 
 ## Implementación de producción {#production-deployment}
 
-Prepare el código para una versión de producción en un repositorio git gestionado por el cliente y sincronícelo con el repositorio git de Cloud Manager para poder implementarlo en entornos de producción y ensayo.
+Prepare el código para una versión de producción en un repositorio de Git gestionado por el cliente y sincronícelo con el repositorio de Git de Cloud Manager para implementarlo en entornos de producción y ensayo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
@@ -59,7 +62,7 @@ Sincronice las etiquetas de lanzamiento de un repositorio de Git de Cloud Manage
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 
-## Additional Resources {#additional-resources}
+## Recursos adicionales {#additional-resources}
 
 * [Recursos de GitHub](https://try.github.io)
 * [Tutoriales de Atlassian Git](https://www.atlassian.com/git/tutorials/what-is-version-control)
