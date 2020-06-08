@@ -1,15 +1,18 @@
 ---
-title: Administrar audiencias
-description: La consola Audiencias le permite crear, organizar y administrar audiencias para su cuenta de Adobe Target o administrar segmentos para ContextHub
+title: 'Administrar audiencias '
+description: La consola Audiencias le permite crear, organizar y administrar audiencias para su cuenta de Adobe Destinatario o administrar segmentos para ContextHub
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 60%
 
 ---
 
 
 # Administrar audiencias{#managing-audiences} 
 
-La consola Audiencias le permite crear, organizar y administrar audiencias para su cuenta de Adobe Target o administrar segmentos para ContextHub:
+La consola Audiencias le permite crear, organizar y administrar audiencias para su cuenta de Adobe Destinatario o administrar segmentos para ContextHub:
 
 * Añadir audiencias: audiencias de Adobe Target o segmentos de ContextHub.
 * Administre audiencias.
@@ -40,7 +43,7 @@ Para crear un segmento de ContextHub en la consola de audiencias:
 
    >[!NOTE]
    >
-   >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
+   >Puede ordenar la lista modificada pulsando o haciendo clic en **Modificado** para clasificar en orden descendente y ver las audiencias recién creadas.
 
 Para obtener más información sobre cómo crear segmentos con ContextHub, consulte la documentación de Configurar la segmentación con ContextHub. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
 
@@ -54,7 +57,7 @@ Al utilizar más de una regla, estas reglas se combinan según el operador boole
 
 >[!NOTE]
 >
->Si no ve la opción **Crear audiencia de destino** en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. You need write permissions under `/etc/segmentation` to be able to create audiences. El grupo de contenido-autores tiene permisos de escritura de forma predeterminada.
+>Si no ve **Crear audiencia de Target** en el menú **Crear**, no tiene los permisos necesarios para crear una audiencia. Debe disponer de permisos de escritura en `/etc/segmentation` para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
 
 Para crear una audiencia de Adobe Target:
 
@@ -64,11 +67,11 @@ Para crear una audiencia de Adobe Target:
 
 1. In the Audiences console, tap or click **Create** and then** Create Target Audience**.
 
-   ![Creación de una audiencia de Target](/help/sites-cloud/authoring/assets/audiences-create-target.png)
+   ![Creación de una audiencia de Destinatario](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
 1. En el cuadro de diálogo **Configuración de Adobe Target**, seleccione la configuración de destino y haga clic o pulse **Aceptar**.
 1. En el área de la Regla n.º 1, haga clic o pulse el tipo de atributo e introduzca la información de atributo en los campos que están disponibles. Cuando termine, seleccione la marca de verificación situada a la derecha del atributo para guardarlo. Consulte [Atributos y sus opciones](#attributes-and-their-options) para obtener más información acerca de todos los atributos.
-1. Haga clic en **Añadir regla** para añadir otra regla. Especifique tantas reglas como necesite. Las reglas se combinan con el operador booleano Y (AND), lo cual significa que la audiencia debe cumplir todos los requisitos de cada regla para poder realizar una actividad.
+1. Haga clic en **Agregar regla** para añadir otra regla. Escriba tantas reglas como sea necesario. Las reglas se combinan con el operador booleano Y, lo que significa que la audiencia debe cumplir todos los requisitos de cada regla para poder optar a una actividad.
 1. Haga clic o pulse **Siguiente**.
 1. Especifique un nombre para la audiencia y haga clic o pulse **Guardar**.
 1. Tap or click **Save**. La audiencia se enumera en la lista de audiencias.
@@ -79,13 +82,13 @@ Puede crear reglas de segmentación para cada uno de los atributos siguientes:
 
 | **Atributo** | **Descripción** | **Para obtener más información** |
 |---|---|---|
-| **Móvil** | Establezca como objetivo los dispositivos móviles en función de parámetros como dispositivo móvil, tipo de dispositivo, proveedor de dispositivos, dimensiones de pantalla (en píxeles) y más. | Consulte la documentación [de](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile en Adobe Target. |
-| **Personalizado** | Los parámetros personalizados son parámetros de mbox. Si pasa algún parámetro mbox a mboxes, o usa la función targetPageParams, ese parámetro aparece aquí para su uso en audiencias. | Consulte la documentación [Parámetros](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) personalizados en Adobe Target. |
-| **SO** | Puede dirigirse a visitantes que utilicen un determinado sistema operativo. | Usuarios de Target que usen Linux, Macintosh o Windows. |
-| **Páginas del sitio** | Diríjase a visitantes que estén en una página específica o que tengan un parámetro de mbox específico. | Consulte la documentación [Páginas](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) del sitio en Adobe Target. |
-| **Explorador** | Puede dirigirse a usuarios que utilicen un navegador específico o opciones específicas del navegador cuando visiten la página. | Consulte la documentación [sobre las opciones del explorador en](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)Adobe Target. |
-| **Perfil del visitante** | Diríjase a visitantes que cumplan parámetros de perfil específicos. | Consulte la documentación [de perfil del](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) visitante en Adobe Target. |
-| **Fuentes de tráfico** | Establezca como objetivo a los visitantes en función del motor de búsqueda o de la página de aterrizaje que los lleve a su sitio. | Consulte la documentación [de fuentes de](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) tráfico en Adobe Target. |
+| **Móvil** | Destinatario los dispositivos móviles en función de parámetros como dispositivos móviles, tipo de dispositivo, proveedor de dispositivos, dimensiones de pantalla (en píxeles), etc. | Consulte la documentación [de](https://marketing.adobe.com/resources/help/en_US/target/target/c_mobile.html) Mobile en Adobe Destinatario. |
+| **Personalizado** | Los parámetros personalizados son parámetros de mbox. Si pasa algún parámetro mbox a mboxes, o usa la función targetPageParams, ese parámetro aparece aquí para su uso en audiencias. | Consulte la documentación [Parámetros](https://marketing.adobe.com/resources/help/en_US/target/target/c_custom_parameters.html) personalizados en Adobe Destinatario. |
+| **SO** | Puede destinatario visitantes que utilicen un sistema operativo determinado. | Usuarios de Target que usen Linux, Macintosh o Windows. |
+| **Páginas del sitio** | visitantes de Destinatario que se encuentran en una página específica o que tienen un parámetro de mbox específico. | Consulte la documentación [de Páginas](https://marketing.adobe.com/resources/help/en_US/target/target/c_site_pages.html) del sitio en Adobe Destinatario. |
+| **Explorador** | Puede asignar destinatarios a los usuarios que utilicen un explorador específico o opciones específicas del explorador cuando visiten la página. | Consulte la documentación [de las opciones del explorador](https://marketing.adobe.com/resources/help/en_US/target/target/c_browser_options.html)en Adobe Destinatario. |
+| **Perfil del visitante** | visitantes de Destinatario que cumplen parámetros de perfil específicos. | Consulte la documentación [de](https://marketing.adobe.com/resources/help/en_US/target/target/c_visitor_profile.html) Visitante Perfil en Adobe Destinatario. |
+| **Fuentes de tráfico** | visitantes de Destinatario basados en el motor de búsqueda o la página de aterrizaje que los remite a su sitio. | Consulte la documentación [de fuentes](https://marketing.adobe.com/resources/help/en_US/target/target/c_traffic_sources.html) de tráfico en Adobe Destinatario. |
 
 ## Modificar una audiencia en la consola de audiencias {#modifying-an-audience-in-the-audiences-console}
 
@@ -93,7 +96,7 @@ Puede crear reglas de segmentación para cada uno de los atributos siguientes:
 >
 >Solo puede editar las audiencias de Adobe Target que se crearon en la misma instancia de AEM en la cual realizó las modificaciones. Las audiencias de destino que se crearon en diferentes entornos de AEM no se pueden editar.
 
-Puede editar cualquier audiencia de ContextHub desde la consola Audiencias. También puede editar audiencias de Adobe Target, pero solo las que se crearon en AEM:
+Puede editar cualquier audiencia de ContextHub desde la consola Audiencias. También puede editar audiencias de Adobe Destinatario, pero solo aquellas que se crearon en AEM:
 
 1. En la consola de navegación, haga clic o pulse **Personalización**. Click or tap **Audiences**.
 1. Tap or click the icon next to the ContextHub segment you want to edit, and tap or click **Edit**.
