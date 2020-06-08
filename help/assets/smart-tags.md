@@ -3,9 +3,9 @@ title: Etiquete imágenes con servicios artificialmente inteligentes.
 description: Etiquete imágenes con servicios artificialmente inteligentes que apliquen etiquetas empresariales contextuales y descriptivas mediante los servicios de Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2401'
 ht-degree: 5%
 
 ---
@@ -99,7 +99,7 @@ No se puede deshacer la formación. Las directrices anteriores le ayudarán a el
 Para crear y capacitar un modelo para las etiquetas específicas de su empresa, siga estos pasos:
 
 1. Cree las etiquetas necesarias y la estructura de etiquetas adecuada. Cargue las imágenes relevantes en el repositorio de DAM.
-1. En [!DNL Experience Manager] la interfaz de usuario, acceda a **[!UICONTROL Recursos]** > Modelo **** de formación.
+1. En [!DNL Experience Manager] la interfaz de usuario, acceda a **[!UICONTROL Recursos]** > Formación en etiquetas **[!UICONTROL inteligentes]**.
 1. Haga clic en **[!UICONTROL Crear]**. Proporcione un **[!UICONTROL Título]**, **[!UICONTROL Descripción]**.
 1. Busque y seleccione las etiquetas de las etiquetas existentes en las `cq:tags` que desea preparar el modelo. Haga clic en **[!UICONTROL Siguiente]**. 
 1. En el cuadro de diálogo **[!UICONTROL Seleccionar recursos]** , haga clic en **[!UICONTROL Añadir recursos]** con cada etiqueta. Busque en el repositorio DAM o navegue hasta el repositorio para seleccionar al menos 10 y 50 imágenes. Seleccione los recursos y no la carpeta. Una vez que haya seleccionado las imágenes, haga clic en **[!UICONTROL Seleccionar]**.
