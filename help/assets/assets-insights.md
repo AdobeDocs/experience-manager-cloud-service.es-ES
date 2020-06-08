@@ -4,6 +4,9 @@ description: Descubra cómo la función de perspectivas de recursos le permite r
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 10%
 
 ---
 
@@ -40,6 +43,7 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
    * **[!UICONTROL Web y móvil]**: El número de veces que el recurso formaba parte de sitios web y aplicaciones.
    * **[!UICONTROL Social]**: El número de veces que se ha utilizado el recurso en soluciones como Adobe Social y Adobe Campaign.
    * **[!UICONTROL Correo electrónico]**: El número de veces que el recurso se ha utilizado en campañas de correo electrónico.
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
