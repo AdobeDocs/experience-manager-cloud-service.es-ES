@@ -1,8 +1,11 @@
 ---
-title: Uso de selectores
+title: Trabajar con selectores
 description: Selección de recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 18%
 
 ---
 
@@ -25,9 +28,9 @@ Cuando selecciona (en lugar de introducir manualmente) hacia dónde van las zona
 
 Utilice el selector de productos para elegir un producto cuando desee un punto interactivo o mapa de imagen para proporcionar una vista rápida a un producto específico del catálogo de productos.
 
-1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y toque la ficha **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
+1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
-   El selector de productos se encuentra en el área **[!UICONTROL Action Type** .
+   The Product selector is in the **[!UICONTROL Action Type** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -47,7 +50,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Puntee en **[!UICONTROL Ver como]** cambiar la forma en que ve los productos, ya sea en Vista **[!UICONTROL de]** lista o en Vista **** de tarjeta.
+   Puntee en **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos, ya sea en **[!UICONTROL Vista de lista]** o en **[!UICONTROL Vista de tarjeta]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -55,7 +58,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En el modo de **[!UICONTROL vista previa]** , puede tocar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
+1. En el modo de **[!UICONTROL Previsualización]** , puede tocar la zona interactiva o el mapa de imágenes y ver el aspecto de la vista rápida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
@@ -63,13 +66,13 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
 Utilice el selector de sitios para elegir una página web cuando desee que un punto interactivo o un mapa de imagen se vincule a una página web que se administre en los sitios de AEM.
 
-1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y toque la ficha **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
+1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
-   El Selector de sitio se encuentra en el área Tipo **[!UICONTROL de]** acción.
+   El Selector de sitio se encuentra en el área **[!UICONTROL Tipo de acción]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Toque el icono Selector **[!UICONTROL de]** sitio (carpeta con lupa) y navegue a una página de los sitios de AEM a la que desee vincular el punto interactivo o el mapa de imagen.
+1. Pulse el icono **[!UICONTROL Selector de sitio]** (carpeta con lupa) y navegue a una página de los sitios de AEM a la que desee vincular el punto interactivo o el mapa de imagen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -77,7 +80,7 @@ Utilice el selector de sitios para elegir una página web cuando desee que un pu
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En el modo de **[!UICONTROL vista previa]** , si toca la zona interactiva o el mapa de imágenes, navegará a la página del sitio de AEM que haya especificado.
+1. En el modo de **[!UICONTROL Previsualización]** , si toca la zona interactiva o el mapa de imágenes, navegará a la página del sitio de AEM que ha especificado.
 
 ## Selección de recursos en Dynamic Media {#selecting-assets}
 
@@ -86,7 +89,7 @@ Utilice este selector para elegir imágenes que se utilizarán en letreros de ca
 Consulte también Selector [de recursos](/help/assets/search-assets.md#assetselector) para obtener más información.
 
 1. Vaya al conjunto de carrusel y cree una nueva diapositiva. O bien, vaya a Vídeo interactivo, vaya a la ficha **[!UICONTROL Contenido]** y seleccione recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
-1. Toque el icono **[!UICONTROL Selector]** de recursos (carpeta con lupa) y navegue hasta un recurso.
+1. Pulse el icono **[!UICONTROL Selector de recursos]** (carpeta con lupa) y navegue hasta un recurso.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -100,7 +103,7 @@ Consulte también Selector [de recursos](/help/assets/search-assets.md#assetsele
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Toque **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: vista **[!UICONTROL de]** lista, vista **[!UICONTROL de]** columna o vista **** de tarjeta.
+   Pulse **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL vista de lista]**, **[!UICONTROL vista de columna]** o **[!UICONTROL vista de tarjeta]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
