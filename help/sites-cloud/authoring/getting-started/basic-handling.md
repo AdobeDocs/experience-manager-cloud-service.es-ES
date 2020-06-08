@@ -1,9 +1,9 @@
 ---
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 100%
 
@@ -195,6 +195,7 @@ Hay varios medios de ayuda disponibles:
 
    * **Documentación**: ver la documentación de Web Experience Management.
    * **Recursos de desarrollador**: recursos y descargas para desarrolladores.
+
    >[!NOTE]
    >
    >Puede acceder a una descripción general de las teclas de método abreviado disponibles en cualquier momento mediante la tecla de marcación rápida `?` (signo de interrogación) en una consola.
@@ -309,6 +310,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * Cuando se selecciona una miniatura, sobre ella se superpone una casilla de verificación y el nombre del recurso se muestra resaltado.
    * Los detalles del recurso seleccionado se mostrarán en la última columna.
    * La barra de herramientas de acciones estará disponible.
+
    Cuando en la vista de columna hay una página seleccionada, esta se muestra en la última columna, junto a los datos siguientes:
 
    * Título de página
