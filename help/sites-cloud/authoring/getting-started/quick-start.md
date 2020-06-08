@@ -1,8 +1,11 @@
 ---
 title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1585'
+ht-degree: 100%
 
 ---
 
@@ -74,7 +77,7 @@ Existen varios aspectos para encontrar una página; puede navegar o buscar:
 
 Para [crear una nueva página](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page):
 
-1. [Desplácese hasta la ubicación](#finding-your-page) en la que desee crear la nueva página.
+1. [Desplácese hasta la ubicación en la que desee crear la nueva página.](#finding-your-page)
 1. Elija el icono **Crear** y seleccione **Página** en la lista:
 
    ![Botón Crear](/help/sites-cloud/authoring/assets/create.png)
@@ -102,6 +105,7 @@ Cómo seleccionar una página depende de la vista que se utilice en el panel:
       * En un dispositivo móvil: pulsar y mantener pulsada la tarjeta.
       * En un dispositivo de escritorio: usar la [acción rápida](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) representada por el icono de visto:
    * En la tarjeta se superpondrá una marca de verificación que indica que se ha seleccionado la página.
+
    ![Tarjeta de ejemplo](/help/sites-cloud/authoring/assets/card.png)
 
 ### Acciones rápidas (solo vista de tarjeta y escritorio) {#quick-actions-card-view-desktop-only}
@@ -134,6 +138,7 @@ Para editar la página:
       * Abrir el panel lateral.
       * Seleccionar la pestaña de componentes (el [buscador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)).
       * Arrastrar el componente requerido a su página.
+
       El panel lateral se puede abrir (y cerrar) con:
 
       ![Botón de alternador del panel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -171,6 +176,7 @@ Para editar la página:
 
       * Seleccione **Vista previa** en la barra de herramientas.
    * Volver al modo de edición (o seleccionar otro modo) haciendo clic en **Editar** en el selector desplegable.
+
    >[!NOTE]
    >
    >Para navegar mediante los vínculos en el contenido debe utilizar el [modo de vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
@@ -186,6 +192,7 @@ Existen dos métodos (principales) para [editar las propiedades de la página](/
 
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
       * La barra de herramientas cuando [su página se haya seleccionado](#selecting-your-page-for-further-action).
+
       ![Botón Propiedades](/help/sites-cloud/authoring/assets/properties.png)
 
    1. Se mostrarán las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
@@ -209,6 +216,7 @@ Existen dos métodos principales para [publicar su página](/help/sites-cloud/au
 
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
       * La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action) (también permite el acceso a [Publicar posteriormente](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)).
+
       ![Botón Publicación rápida](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -217,7 +225,7 @@ Existen dos métodos principales para [publicar su página](/help/sites-cloud/au
    1. Abra el menú **Información de la página.**
    1. Seleccione **Publicar página**.
 
-* La cancelación de la publicación de una página desde la consola solo se puede realizar a través de la opción de **Administrar publicación**, que solo está disponible en la barra de herramientas (no a través de las acciones rápidas).
+* La cancelación de la publicación de una página desde la consola solo se puede realizar mediante la opción **Administrar publicación**, que solo está disponible en la barra de herramientas (no a través de las acciones rápidas).
 
    ![Botón Administrar publicación](/help/sites-cloud/authoring/assets/manage-publication.png)
 
@@ -230,10 +238,11 @@ Existen dos métodos principales para [publicar su página](/help/sites-cloud/au
 Todas estas acciones pueden activarse del siguiente modo:
 
 1. [Desplácese hasta la página](#finding-your-page) que quiera mover, copiar, pegar o eliminar.
-1. Seleccione el icono Copiar (y después, Pegar), Mover o Eliminar mediante:
+1. Seleccione el icono de copiar (y luego pegar), mover o eliminar según sea necesario mediante:
 
    * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso necesario.
    * La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action).
+
    A continuación, depende de la acción:
 
    * Copiar:
@@ -251,7 +260,7 @@ Todas estas acciones pueden activarse del siguiente modo:
 
 ### Bloquear y desbloquear su página {#locking-your-page-then-unlocking}
 
-[Bloquear una página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) impide a otros autores que trabajen en ella al mismo tiempo que usted. El botón o icono Bloquear (y Desbloquear) se puede encontrar en:
+[Bloquear una página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
 * La barra de herramientas cuando su [página se haya seleccionado](#selecting-your-page-for-further-action).
 * Menú desplegable [Información de la página](#editing-the-page-properties) cuando edita la página.
