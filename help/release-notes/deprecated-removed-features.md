@@ -1,8 +1,11 @@
 ---
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager as a Cloud Service.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
