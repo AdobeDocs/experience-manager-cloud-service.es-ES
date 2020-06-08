@@ -3,6 +3,9 @@ title: 'Paquete de estructura del repositorio de proyectos de AEM  '
 description: Adobe Experience Manager como proyecto de Cloud Service Maven requiere una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 9%
 
 ---
 
