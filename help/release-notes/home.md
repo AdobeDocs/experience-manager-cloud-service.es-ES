@@ -4,8 +4,8 @@ description: 'Notas de la versión de Adobe Experience Manager (AEM) as a Cloud 
 translation-type: tm+mt
 source-git-commit: f3bc33191c66e48ce995c8656e9669f9015f7755
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 100%
 
 ---
 
