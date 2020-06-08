@@ -3,6 +3,9 @@ title: Obtención de vista previa de páginas mediante los datos de ContextHub
 description: La barra de herramientas de ContextHub muestra datos de los almacenes de ContextHub, le permite cambiar datos de los almacenes y resulta útil para obtener una vista previa del contenido
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +29,7 @@ La barra de herramientas de ContextHub está disponible en modo de Vista previa.
 
 1. Con la página abierta para edición, en la barra de herramientas, toque o haga clic en Vista previa.
 
-   ![Botón Vista previa](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
+   ![El botón Previsualización](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
 1. Para mostrar la barra de herramientas, toque o haga clic en el icono de ContextHub.
 
