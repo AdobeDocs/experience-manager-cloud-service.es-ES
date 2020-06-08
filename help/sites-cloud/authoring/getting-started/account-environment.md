@@ -1,8 +1,11 @@
 ---
-title: Configuración del entorno de la cuenta
+title: 'Configuración del entorno de la cuenta  '
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
 
@@ -82,6 +85,7 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
    * [Métodos abreviados del teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    Esta opción habilita los métodos abreviados del teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
 
 * **Activar la página principal de los recursos**
