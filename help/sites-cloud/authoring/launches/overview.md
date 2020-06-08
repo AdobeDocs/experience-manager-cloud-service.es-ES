@@ -3,6 +3,9 @@ title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 91%
 
 ---
 
@@ -37,15 +40,16 @@ Los lanzamientos permiten desarrollar contenido con eficacia para una versión f
 
 Los lanzamientos permiten realizar lo siguiente:
 
-* Crear una copia de las páginas de origen:
-   * La copia es el lanzamiento.
-   * Las páginas de origen de nivel superior se conocen como páginas de **producción**.
+* Cree una copia de las páginas de origen:
+   * La copia es su lanzamiento.
+   * Las páginas de origen de nivel superior se denominan **Producción**.
       * Las páginas de origen puedan obtenerse de varias ramas (separadas).
+
    ![Orden de funcionamiento de los lanzamientos](/help/sites-cloud/authoring/assets/launches-order.png)
 
-* Editar la configuración del lanzamiento:
+* Edite la configuración de lanzamiento:
    * Adición o eliminación de páginas o ramas en el lanzamiento.
-   * Edición de las propiedades del lanzamiento. Por ejemplo, los indicadores **Título**, **Fecha de lanzamiento** y **Producción lista**.
+   * Editar propiedades de lanzamiento; como **Título**, **Fecha de lanzamiento** e indicador **Listo para la producción**.
 * Es posible promocionar y publicar el contenido de forma manual o automática:
    * Manualmente:
       * Promocione de nuevo el contenido del lanzamiento en el **Destino** (páginas de origen) cuando esté listo para su publicación.
@@ -59,11 +63,13 @@ Los lanzamientos permiten realizar lo siguiente:
 * Actualice las páginas de origen y de lanzamiento en paralelo:
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
+
    ![Acciones en paralelo](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Crear un lanzamiento anidado](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch): lanzamiento dentro de un lanzamiento.
    * El origen es un lanzamiento existente.
    * Puede [promocionar un lanzamiento anidado](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) a cualquier destino; esto puede ser un lanzamiento principal o bien las páginas de origen de nivel superior (producción).
+
    ![Un lanzamiento anidado](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
