@@ -3,6 +3,9 @@ title: Contenido asociado
 description: El contenido asociado proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 25%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 El contenido asociado proporciona la conexión para que los recursos (es decir, los) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
-## Adición de contenido asociado {#adding-associated-content}
+## Añadir contenido asociado {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -19,7 +22,7 @@ El contenido asociado proporciona la conexión para que los recursos (es decir, 
 
 Para crear la asociación, primero debe [agregar los recursos de medios a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede:
 
-1. Abra el fragmento y seleccione Contenido **** asociado en el panel lateral.
+1. Abra el fragmento y seleccione **Contenido asociado** en el panel lateral.
 
    ![Contenido asociado](assets/cfm-assoc-content-01.png)
 
@@ -39,6 +42,6 @@ Para crear la asociación, primero debe [agregar los recursos de medios a una co
 Una vez asociada una colección, puede:
 
 * **Elimine** la asociación.
-* **Agregar recursos** a la colección.
+* **Añadir recursos** a la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
