@@ -3,6 +3,9 @@ title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +28,7 @@ Integre sus sitios de AEM con Adobe Destinatario para personalizar el contenido 
 
 Para realizar la integración con Destinatario, realice las siguientes tareas:
 
-* [Realizar tareas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)previas: Regístrese con Adobe Destinatario y configure determinados aspectos de la instancia de creación de AEM. La cuenta de Adobe Destinatario debe tener como mínimo permisos de **nivel de aprobador** . Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
+* [Realizar tareas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)previas: Regístrese con Adobe Destinatario y configure determinados aspectos de la instancia de creación de AEM. La cuenta de Adobe Destinatario debe tener permisos de **nivel de aprobador** como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
 
 * Launch by Adobe es la herramienta de facto para instrumentar un sitio de AEM con funciones de Destinatario (bibliotecas JS). Por lo tanto, la integración de AEM como servicio de nube con Launch y Adobe Destinatario va de la mano (consulte los vínculos siguientes).
 
@@ -50,6 +53,7 @@ Para realizar la integración con Destinatario, realice las siguientes tareas:
 >
 >* 3.x está configurado con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x está configurado con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -82,6 +86,7 @@ La integración de AEM como un servicio de nube con Adobe Destinatario requiere 
 >* 2.000 experiencias
 >* 50 métricas
 >* 50 segmentos de sistema de informes
+
 >
 
 
