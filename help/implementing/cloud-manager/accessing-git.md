@@ -1,15 +1,18 @@
 ---
-title: Acceso a Git
-seo-title: Acceso a Git
+title: Acceder a Git
+seo-title: Acceder a Git
 description: Esta página describe cómo puede acceder y administrar el repositorio Git.
 seo-description: Siga esta página para conocer cómo acceder y administrar su repositorio Git.
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 7%
 
 ---
 
 
-# Acceso a Git {#accessing-git}
+# Acceder a Git {#accessing-git}
 
 Puede acceder a su repositorio Git y administrarlo mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager.
 
