@@ -20,6 +20,7 @@ ht-degree: 2%
 >
 >* API de REST de recursos
 >* incluida la compatibilidad con fragmentos de contenido
+
 >
 >
 La implementación actual de la API HTTP de Assets se basa en el estilo arquitectónico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
@@ -61,7 +62,7 @@ Utiliza el punto final y requiere la ruta del recurso para acceder a él (sin el
 * Debe solicitar:
    * `/api/assets/path/to/asset`
 
-Por ejemplo, para acceder `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Acceso sobre:
@@ -147,6 +148,7 @@ Si la API REST de Assets se utiliza en un entorno sin requisitos de autenticaci�
 >
 >* [Se explica CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -364,6 +366,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
    ```xml
