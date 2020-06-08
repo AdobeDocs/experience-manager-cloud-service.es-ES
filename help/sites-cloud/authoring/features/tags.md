@@ -1,8 +1,11 @@
 ---
-title: Uso de etiquetas
+title: 'Uso de etiquetas  '
 description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 100%
 
 ---
 
