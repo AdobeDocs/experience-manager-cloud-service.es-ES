@@ -3,6 +3,9 @@ title: Markdown
 description: Cuando se está creando, el editor de fragmentos de contenido utiliza la sintaxis de restricción para permitir escribir contenido fácilmente.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 4%
 
 ---
 
@@ -89,7 +92,7 @@ La sintaxis incluye:
 
 * Signo de exclamación: !;
 * seguido de un conjunto de corchetes que contiene el texto del atributo alt de la imagen;
-* seguido de un conjunto de paréntesis, que contiene la dirección URL o la ruta de la imagen, y de un atributo de título opcional entre comillas dobles o simples.
+* seguido de un conjunto de paréntesis, que contiene la dirección URL o la ruta de la imagen, y un atributo de título opcional entre comillas simples o dobles.
 
 Una imagen de estilo de referencia tiene la siguiente sintaxis:
 
