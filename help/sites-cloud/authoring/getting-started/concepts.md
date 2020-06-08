@@ -1,17 +1,20 @@
 ---
 title: Conceptos de creación
 description: Conceptos sobre la creación de contenido en AEM
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
 
-# Creación   Conceptos {#authoring-concepts}
+# Conceptos de creación {#authoring-concepts}
 
 Una instalación de AEM generalmente consta de al menos dos entornos:
 
-* Creación
+* Autor
 * Publicación
 
 Interactúan para permitirle ofrecer contenido en su sitio web para que los visitantes puedan acceder a él.
