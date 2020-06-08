@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Token de acceso**: Introduzca el token de acceso.
 
       >[!NOTE]
-      >Puede recuperar el token de acceso de la instancia de creación navegando hasta `/libs/granite/migration/token.json`.
+      >Puede recuperar el token de acceso de la instancia de creación navegando hasta `/libs/granite/migration/token.json`. El token de acceso se recupera de la instancia de creación del servicio de nube.
 
    1. **Parámetros**: Seleccione los siguientes parámetros para crear el conjunto de migración:
 
