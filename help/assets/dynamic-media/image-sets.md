@@ -3,6 +3,9 @@ title: Conjuntos de imágenes
 description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media
 translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '2049'
+ht-degree: 20%
 
 ---
 
@@ -212,6 +215,7 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
    * Para reordenar recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
+
       >[!NOTE]
       >
       >Si elimina la imagen que AEM utiliza para la miniatura sustituyéndola por otra imagen, el recurso original seguirá apareciendo.
@@ -219,6 +223,7 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya al nuevo recurso de miniatura o muestra, selecciónelo y toque **[!UICONTROL Seleccionar]**.
    * Para eliminar un conjunto de imágenes completo, desplácese hasta el conjunto de imágenes, selecciónelo y toque **[!UICONTROL Eliminar]**.
+
    >[!NOTE]
    >
    >Para editar las imágenes de un conjunto de imágenes, vaya al conjunto, pulse **[!UICONTROL Establecer miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.
