@@ -1,8 +1,11 @@
 ---
 title: Componentes
 description: Los componentes son la base de la creación de páginas de contenido en AEM.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 100%
 
 ---
 
