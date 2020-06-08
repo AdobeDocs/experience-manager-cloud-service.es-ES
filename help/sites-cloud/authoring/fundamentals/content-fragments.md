@@ -1,8 +1,11 @@
 ---
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: tm+mt
+source-wordcount: '1154'
+ht-degree: 100%
 
 ---
 
@@ -21,6 +24,7 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencias** son contenido plenamente diseñado y partes de una página web.
+
 >
 >
 Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
@@ -55,6 +59,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
 3. Puede:
    * Abra el navegador **Recursos** y filtre por **Fragmentos de contenido** (el valor predeterminado es Imágenes). Arrastre el fragmento en cuestión a la instancia de componente.
    * Seleccione el componente de fragmento de contenido y, a continuación, **Configurar** en la barra de herramientas. En el cuadro de diálogo, puede abrir el cuadro de diálogo de selección para buscar y seleccionar el **fragmento de contenido** requerido.
+
    >[!NOTE]
    >
    >Otra posibilidad es arrastrar un fragmento de contenido específico directamente a la página. Esto creará automáticamente el componente asociado (fragmento de contenido). 
@@ -85,6 +90,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 * **Elemento**
    * El valor predeterminado **Principal** siempre aparecerá disponible.
    * Se podrá hacer una selección si el fragmento se creó con una plantilla adecuada.
+
    >[!NOTE]
    >
    >Los elementos disponibles dependen de la plantilla utilizada.
