@@ -3,6 +3,9 @@ title: Solución de problemas de Dynamic Media
 description: Solución de problemas de Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1157'
+ht-degree: 2%
 
 ---
 
@@ -44,7 +47,7 @@ Al reemplazar un recurso de Dynamic Media existente (el mismo nombre y la misma 
 
 * Al mantener ambos, se creará un nuevo recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
 
-* La creación de una versión no es compatible con Dynamic Media. La nueva versión reemplazará al recurso existente en la entrega.
+* La creación de una versión no es compatible con Dynamic Media. La nueva versión reemplazará al recurso existente en envío.
 
 ## Imágenes y conjuntos {#images-and-sets}
 
@@ -63,7 +66,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
     <ol>
      <li><p>Vaya a CRX/DE:</p>
       <ul>
-       <li>Compruebe si el ajuste preestablecido del JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado AEM 6.x a 6.4 y ha optado por no migrar. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Compruebe si el ajuste preestablecido del JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado AEM 6.x a 6.4 y ha exclusión la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Asegúrese de que el recurso del JCR está <code>dam:scene7FileStatus</code><strong> en la sección Metadatos se muestra como </strong><code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
@@ -89,7 +92,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
    <td><p>Utilice solo imágenes con el mismo tamaño para el carrusel.</p> </td>
   </tr>
   <tr>
-   <td>La imagen no se previsualiza con el visor de Dynamic Media</td>
+   <td>La imagen no previsualización con el visor de Dynamic Media</td>
    <td><p>Compruebe que el recurso contiene <code>dam:scene7File</code> en las propiedades de metadatos (CRXDE Lite)</p> </td>
    <td><p>Compruebe que todos los recursos han terminado de procesarse.</p> </td>
   </tr>
@@ -99,7 +102,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
    <td><p>Compruebe que todos los recursos han terminado de procesarse.</p> </td>
   </tr>
   <tr>
-   <td>La pancarta en la vista de tarjeta muestra <strong>Nuevo</strong> cuando el recurso no ha empezado a procesarse</td>
+   <td>La vista de pancarta muestra <strong>Nuevo</strong> cuando el recurso no ha comenzado a procesarse</td>
    <td>Marque el recurso <code>jcr:content</code> &gt; <code>dam:assetState</code> = si el flujo de trabajo no <code>unprocessed</code> lo recogió.</td>
    <td>Espere hasta que el flujo de trabajo recoja el recurso.</td>
   </tr>
@@ -111,7 +114,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
  </tbody>
 </table>
 
-## El vídeo {#video}
+## Vídeo {#video}
 
 Si tiene problemas con el vídeo, consulte las siguientes instrucciones para solucionar problemas.
 
@@ -126,7 +129,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
    <td>No se puede previsualizar el vídeo</td>
    <td>
     <ul>
-     <li>Compruebe que la carpeta tiene un perfil de vídeo asignado (si el formato de archivo no es compatible). Si no se admite, solo se muestra una imagen.</li>
+     <li>Compruebe que la carpeta tiene un perfil de vídeo asignado a ella (si el formato de archivo no es compatible). Si no se admite, solo se muestra una imagen.</li>
      <li>El perfil de vídeo debe contener más de un ajuste preestablecido de codificación para generar un conjunto AVS (las codificaciones únicas se tratan como contenido de vídeo para archivos MP4; para los archivos no admitidos, se trata igual que los archivos no procesados).</li>
      <li>Compruebe que el vídeo ha terminado de procesarse confirmando <code>dam:scene7FileAvs</code> de <code>dam:scene7File</code> los metadatos.</li>
     </ul> </td>
@@ -149,7 +152,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
    <td>
     <ol>
      <li>Compruebe que la configuración de Dynamic Media en Cloud Services está correctamente configurada.</li>
-     <li>Compruebe que la carpeta tiene un perfil de vídeo. Además, compruebe el perfil de vídeo.</li>
+     <li>Compruebe que la carpeta tiene un perfil de vídeo. Además, compruebe el perfil del vídeo.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -191,7 +194,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
   <tr>
    <td>Los ajustes preestablecidos de visor no se publican</td>
    <td><p>Vaya a la página de diagnóstico del administrador de muestra: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe los valores calculados. Cuando funcione correctamente, debería ver:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos no activados permanecen, haga clic en cualquiera de los botones <strong>Enumerar todos los recursos</strong> no activados para ver los detalles.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos desactivados permanecen, haga clic en cualquiera de los botones de <strong>Lista de todos los recursos</strong> no activados para ver los detalles.</p> </td>
    <td>
     <ol>
      <li>Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
@@ -200,7 +203,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
     </ol> </td>
   </tr>
   <tr>
-   <td>La ilustración de Ajustes preestablecidos de visor devuelve 404 desde la vista previa en los detalles del recurso o desde la URL de copia o el código incrustado</td>
+   <td>La ilustración de Ajustes preestablecidos de visor devuelve 404 desde la previsualización en los detalles del recurso o desde la URL de copia o el código incrustado</td>
    <td><p>En CRXDE Lite, haga lo siguiente:</p>
     <ol>
      <li>Vaya a <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> la carpeta de sincronización de Dynamic Media (por ejemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
@@ -223,7 +226,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
       </ul> </li>
      <li>Vaya al administrador de paquetes de CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
-       <li>Buscar el paquete de visor en la lista (empieza por <code>cq-dam-scene7-viewers-content</code>)</li>
+       <li>Buscar el paquete de visor en la lista (inicio con <code>cq-dam-scene7-viewers-content</code>)</li>
        <li>Haga clic en <strong>Reinstalar</strong>.</li>
       </ol> </li>
      <li>En Cloud Services, vaya a la página de configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de Dynamic Media - S7.
