@@ -3,6 +3,9 @@ description: 'El boletín informativo de Dynamic Media de Experience League es u
 title: Boletín de Dynamic Media
 translation-type: tm+mt
 source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
@@ -29,6 +32,7 @@ En este boletín informativo de una sola publicación, descubra los valiosos rec
    * Vista de las sesiones de Dynamic Media desde la Cumbre en línea de Adobe 2020.
    * Obtenga más información sobre nuestras auditorías gratuitas de Dynamic Media Classic.
    * Conozca a John Monroe, Director de Programa sénior para Servicios de Éxito de Clientes.
+
    >[!IMPORTANT]
    >
    >Queremos asegurarnos de que sólo enviaremos el boletín de Dynamic Media a los que deseen recibirlo. Para continuar recibiendo la newsletter después de este número, regístrese [aquí](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
