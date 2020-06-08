@@ -1,8 +1,11 @@
 ---
 title: Editar el contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -229,6 +232,7 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
    * Puede pegar componentes en la misma página o en otra distinta.
    * El elemento se pegará sobre el elemento en el que seleccione la acción de pegar.
    * La acción Pegar se muestra únicamente si hay contenido en el portapapeles.
+
    ![Botón Pegar](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -288,7 +292,7 @@ Las opciones exactas de edición dependerán del componente. Para algunos compon
 
 * Componente de imagen: pantalla completa
 
-   Si [entra en el modo de pantalla completa](#edit-content-full-screen-mode) para el componente de imagen, tendrá más espacio para editarla y verá opciones de edición adicionales, como **Iniciar mapa** y **Restablecer zoom**. Además, la pantalla completa permite la selección de ajustes preestablecidos de recorte.
+   [La introducción del modo de pantalla completa](#edit-content-full-screen-mode) para el componente de imagen permite disponer de más espacio para editar la imagen y mostrar opciones de edición adicionales como **Iniciar mapa** y **Restablecer zoom**. Además, la pantalla completa permite seleccionar ajustes preestablecidos de recorte.
 
    ![Modo de pantalla completa del componente de imagen](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -344,6 +348,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-cl
    * Se muestran los controles de cambio de tamaño del componente.
    * La barra de herramientas del emulador aparece en la parte superior de la pantalla.
    * En la barra de herramientas del componente se muestran las acciones de diseño en vez de las acciones de edición normales.
+
    ![Un componente en modo de diseño](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    Ahora puede modificar el diseño del componente como haría en el [modo de diseño](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
@@ -387,7 +392,7 @@ Por ejemplo:
 
 Puede cambiar fácilmente al [editor de plantillas](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) seleccionando **Editar plantilla** en el menú [Información de página](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
 
-Puede ver fácilmente en qué plantilla se basa la página, o cuándo debe seleccionar la página en [vista de columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o [vista de lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
+Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o en la [vista Lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
 ## Estado de Live Copy   {#live-copy-status}
 
