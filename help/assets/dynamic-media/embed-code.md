@@ -2,15 +2,15 @@
 title: Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web
 description: Obtenga información sobre cómo incrustar vídeos o imágenes de Dynamic Media en una página web
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 22%
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Incrustación del vídeo de Dynamic Media, el visor de imágenes o el visor de dimensiones en una página web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilice la función **[!UICONTROL Código incrustado]** cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código incrustado]**.
 
