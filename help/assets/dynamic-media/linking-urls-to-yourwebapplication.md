@@ -2,9 +2,9 @@
 title: Vincular URL en la aplicación web
 description: Cómo vincular direcciones URL a la aplicación web en medios dinámicos
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1272'
 ht-degree: 11%
 
 ---
@@ -22,13 +22,13 @@ Para colocar estas cadenas URL en las páginas web y las aplicaciones, cópielas
 >
 >Las cadenas URL solo están disponibles para las representaciones dinámicas de recursos. Actualmente no están disponibles para recursos estáticos que residen en DAM y no en el servidor de medios dinámicos. El botón URL no aparece en las representaciones estáticas.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](/help/assets/manage-digital-assets.md#uploading-assets)
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## Obtención de una URL para un recurso {#obtaining-a-url-for-an-asset}
 
@@ -52,7 +52,7 @@ Existen varias formas de obtener una cadena URL. Sin embargo, los pasos a contin
 
    Recuerde que las direcciones URL solo están disponibles para copiarse *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de visualizador o de imagen.
 
-   Consulte [Publicación de recursos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -84,6 +84,7 @@ Existen varias formas de obtener una cadena URL. Sin embargo, los pasos a contin
 
 Dynamic Media admite el envío de recursos estáticos, que son recursos adicionales que van más allá de las imágenes y el vídeo. Los formatos de recursos estáticos admitidos para envío son los siguientes:
 
+* Archivos 3D
 * GIF animado
 * Archivos de audio
 * CSS
@@ -99,7 +100,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
-   Consulte [Publicación de recursos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
 1. Utilice cualquiera de los siguientes métodos para obtener la URL del recurso estático publicado:
 
@@ -108,7 +109,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Por ejemplo, `https://aem.com/is/content/adobe/image.gif`.
-   * haga clic en **[!UICONTROL Recurso > Representaciones]** dinámicas, toque una representación dinámica del recurso estático y copie la URL.
+   * Toque **[!UICONTROL Recurso > Representaciones]** dinámicas y, a continuación, toque una representación dinámica del recurso estático y copie la URL.
 
       Cambie la URL copiada para usarla `is/content` en la ruta en lugar de `is/image/`.
 
