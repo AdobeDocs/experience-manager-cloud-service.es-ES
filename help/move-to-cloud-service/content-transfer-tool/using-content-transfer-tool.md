@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
+source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 
 * El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3 + y JAVA 8. Si dispone de una versión inferior de AEM, deberá actualizar el repositorio de contenido a AEM 6.5 para utilizar la herramienta de transferencia de contenido.
 
-* Si utiliza un Entorno *de* Simulador para pruebas, asegúrese de que el entorno se actualiza a la versión del 29 de mayo de 2020 o posterior. Si utiliza un Entorno *de* producción, se actualiza automáticamente.
+* Si utiliza un Entorno *de* Simulador para pruebas, asegúrese de que el entorno se actualiza a la versión del 10 de junio de 2020 o posterior. Si utiliza un Entorno *de* producción, se actualiza automáticamente.
 
-* Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en su instancia de origen y pertenecer al grupo de administración en la instancia de servicio de nube a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
+* Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en su instancia de origen y pertenecer al grupo de administradores de AEM en la instancia de servicio de nube a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
@@ -28,10 +28,10 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 
 ## Disponibilidad {#availability}
 
-La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
+La herramienta de transferencia de contenido se puede descargar como archivo zip (Content Transfer Tool v1.0.0) desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue Content Transfer Tool de [Adobe Experience Cloud](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+>Descargue Content Transfer Tool, desde [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
 
