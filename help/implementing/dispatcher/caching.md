@@ -2,9 +2,9 @@
 title: Almacenamiento en caché de AEM como un servicio en la nube
 description: 'Almacenamiento en caché de AEM como un servicio en la nube '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,10 @@ ht-degree: 0%
 
 # Introducción {#intro}
 
-El almacenamiento en caché en CDN se puede configurar mediante reglas de despachante. Tenga en cuenta que el despachante también respeta los encabezados de caducidad de caché resultantes si `enableTTL` está activado en la configuración del despachante, lo que implica que actualizará el contenido específico incluso fuera del contenido que se está republicando.
+El tráfico pasa a través de la CDN a una capa de servidor web apache, que admite módulos, incluido el despachante. Para aumentar el rendimiento, el despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación.
+Se pueden aplicar reglas a la configuración del despachante para modificar cualquier configuración de caducidad de caché predeterminada, lo que resulta en almacenamiento en caché en CDN. Tenga en cuenta que el despachante también respeta los encabezados de caducidad de caché resultantes si `enableTTL` está activado en la configuración del despachante, lo que implica que actualizará el contenido específico incluso fuera del contenido que se está republicando.
+
+En esta página también se describe cómo se invalida la caché del despachante, así como cómo funciona la caché a nivel del explorador con respecto a las bibliotecas del lado del cliente.
 
 ## Almacenamiento en caché {#caching}
 
@@ -33,6 +36,14 @@ Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la 
 ```
 /0000
 { /glob "*" /type "allow" }
+```
+
+* Para evitar que se almacene en caché contenido específico, establezca el encabezado Cache-Control en &quot;private&quot;. Por ejemplo, lo siguiente impediría que el contenido HTML de un directorio llamado &quot;myfolder&quot; se almacene en caché:
+
+```
+<LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
+    Header set Cache-Control “private”
+</LocationMatch>
 ```
 
 * Tenga en cuenta que otros métodos, incluido el proyecto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)Dispatcher-ttl AEM ACS Commons, no anularán correctamente los valores.
@@ -70,13 +81,9 @@ Asegúrese de que los recursos destinados a ser guardados en privado en lugar de
 * el valor predeterminado no se puede establecer con la `EXPIRATION_TIME` variable utilizada para los tipos de archivo html/texto
 * la caducidad de la caché se puede establecer con la misma estrategia LocationMatch descrita en la sección html/text especificando el regex adecuado
 
-## Dispatcher {#disp}
+## Invalidación de caché de despachante {#disp}
 
-El tráfico pasa por un servidor web apache, que admite módulos, incluido el despachante. El despachante se utiliza principalmente como caché para limitar el procesamiento en los nodos de publicación con el fin de aumentar el rendimiento.
-
-Como se describe en la sección de almacenamiento en caché de CDN, se pueden aplicar reglas a la configuración del despachante para modificar cualquier configuración de caducidad de caché predeterminada.
-
-El resto de esta sección describe consideraciones relacionadas con la invalidación de la caché del despachante. Para la mayoría de los clientes, no debería ser necesario invalidar la caché del despachante, en lugar de depender de que el despachante actualice su caché cuando se vuelva a publicar el contenido, y de que la CDN respete los encabezados de caducidad de la caché.
+En general, no debería ser necesario invalidar la caché del despachante. En su lugar, debe confiar en que el despachante actualice su caché cuando se vuelva a publicar el contenido y en que la CDN respete los encabezados de caducidad de la caché.
 
 ### Invalidación de caché de despachante durante la Activación/desactivación {#cache-activation-deactivation}
 
