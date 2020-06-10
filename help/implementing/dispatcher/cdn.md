@@ -2,9 +2,9 @@
 title: CDN en AEM como servicio de nube
 description: CDN en AEM como servicio de nube
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,16 @@ A continuación se presenta una matriz de decisiones para comparar las dos opcio
 
 ## CDN gestionado por AEM  {#aem-managed-cdn}
 
-La preparación para el envío de contenido mediante la CDN integrada de Adobe es sencilla, tal como se describe a continuación:
+Siga estos pasos para prepararse para el envío de contenido mediante la CDN integrada de Adobe:
 
 1. Proporcionará el certificado SSL firmado y la clave secreta a Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea.
    **Nota:** Aem como servicio de nube no admite certificados de dominio validados (DV).
 1. Debe informar a la asistencia al cliente:
-   * qué dominio personalizado debe asociarse con un determinado entorno, tal como se define en la identificación del programa y en la identificación del entorno.
+   * qué dominio personalizado debe asociarse con un determinado entorno, tal como se define en la identificación del programa y en la identificación del entorno. Tenga en cuenta que los dominios personalizados del lado del autor no son compatibles.
    * si se necesita una lista blanca de IP para restringir el tráfico a un entorno determinado.
-1. El servicio de asistencia al cliente coordinará con usted la temporización de un registro DNS CNAME, señalando a su FQDN `cdn.adobeaemcloud.com`.
+1. Debe coordinar con el servicio de atención al cliente la temporización de los cambios necesarios en los registros DNS. Las instrucciones son diferentes en función de si se necesita un registro de apex:
+   * si no se necesita un registro apex, los clientes deben establecer el registro DNS CNAME para que apunte a su FQDN `cdn.adobeaemcloud.com`.
+   * si se necesita un registro apex, cree un registro A que apunte a las siguientes IP: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Los clientes necesitan un registro apex si el FQDN deseado coincide con la zona DNS. Esto se puede probar usando el comando Unix dig para ver si el valor SOA de la salida coincide con el dominio. Por ejemplo, el comando `dig anything.dev.adobeaemcloud.com` devuelve un SOA (Inicio de Autoridad, es decir, la zona) de `dev.adobeaemcloud.com` modo que no es un registro APEX, mientras que `dig dev.adobeaemcloud.com` devuelve un SOA de `dev.adobeaemcloud.com` modo que es un registro apex.
 1. Se le notificará cuando los certificados SSL caduquen para que pueda volver a enviar los nuevos certificados SSL.
 
 **Restricción del tráfico**
