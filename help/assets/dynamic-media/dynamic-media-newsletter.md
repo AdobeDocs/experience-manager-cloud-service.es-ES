@@ -2,9 +2,9 @@
 description: 'El boletín informativo de Dynamic Media de Experience League es un boletín mensual. Está diseñado para ayudarle a ponerse al día con los medios dinámicos y los medios dinámicos clásicos, de modo que pueda obtener un inicio del valor de inmediato. En este boletín de noticias de una sola empresa encontrará valiosos recursos para la creación de conocimientos, entre los que se incluyen vídeos, descripciones generales de soluciones e presentaciones de algunas de las funciones y funciones clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo y mucho más. '
 title: Boletín de Dynamic Media
 translation-type: tm+mt
-source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,21 @@ En este boletín informativo de una sola publicación, descubra los valiosos rec
 [Regístrese](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para recibir el boletín de Dynamic Media mensualmente en su bandeja de entrada.
 
 ## ¿Ha perdido un número del boletín de Dynamic Media?
+
+* **[Mayo de 2020, número 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   En este número:
+
+   * Qué significa continuidad del negocio en tiempos inciertos.
+   * Principales ventajas de la primera Cumbre de Adobe digital.
+   * Hay que observar las sesiones de grupo de trabajo de Experience Manager.
+   * Puntos destacados del cliente de la cumbre: Bajo Armor.
+   * Nunca pierda un seminario web de Experience Insider.
+   * Puntos destacados del sector público: La necesidad urgente de matriculación digital.
+   * Descubra las novedades de la innovación de Experience Manager.
+   * Cree sus habilidades de Experience Manager *en directo* con los profesionales de Adobe.
+   * Conéctese con la comunidad de Adobe Experience Manager.
+   * Realice un seguimiento rápido de su experiencia con Adobe Experience League.
 
 * **[Abril de 2020, número 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
