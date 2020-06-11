@@ -2,7 +2,7 @@
 title: Almacenamiento en caché de AEM como un servicio en la nube
 description: 'Almacenamiento en caché de AEM como un servicio en la nube '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Asegúrese de que los recursos destinados a ser guardados en privado en lugar de
 
 ## Invalidación de caché de despachante {#disp}
 
-En general, no debería ser necesario invalidar la caché del despachante. En su lugar, debe confiar en que el despachante actualice su caché cuando se vuelva a publicar el contenido y en que la CDN respete los encabezados de caducidad de la caché.
+En general, no será necesario invalidar la caché del despachante. En su lugar, debe confiar en que el despachante actualice su caché cuando se vuelva a publicar el contenido y en que la CDN respete los encabezados de caducidad de la caché.
 
 ### Invalidación de caché de despachante durante la Activación/desactivación {#cache-activation-deactivation}
 
