@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -99,9 +99,9 @@ Un valor vacío significa que el procesamiento de recursos asume la dimensión d
 
 #### Reglas de inclusión de tipo MIME {#mime-type-inclusion-rules}
 
-Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (&quot;lista negra&quot;).
+Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (lista bloqueada).
 
-De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (&quot;lista blanca&quot;).
+De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (lista permitida).
 
 #### Representación especial de FPO {#special-fpo-rendition}
 
