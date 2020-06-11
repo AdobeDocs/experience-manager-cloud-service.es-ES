@@ -4,9 +4,9 @@ description: Prácticas recomendadas para integrar una instancia de AEM con Adob
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3302'
 ht-degree: 18%
 
 ---
@@ -173,7 +173,7 @@ Recursos AEM admite dos tipos de usuarios en función de su acceso a la implemen
 
 #### Usuarios creativos con acceso directo a DAM {#creative-users-with-direct-access-to-dam}
 
-Normalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la instancia de DAM, incluido el inicio de sesión de AEM. La infraestructura de red y AEM se puede configurar para permitir el acceso directo a partes externas (generalmente organizaciones de confianza como las agencias que trabajan para un cliente) para tener acceso a AEM a través de la red, por ejemplo, a través de una lista blanca de VPN o IP.
+Normalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la instancia de DAM, incluido el inicio de sesión de AEM. La infraestructura de red y AEM se puede configurar para permitir el acceso directo a partes externas (generalmente organizaciones de confianza como las agencias que trabajan para un cliente) para tener acceso a AEM a través de la red, por ejemplo, a través de una lista permitida por VPN o IP.
 
 En estos casos, Adobe Asset Link o la aplicación de escritorio AEM proporcionan un acceso sencillo a los recursos finales o aprobados y le permiten guardar en DAM recursos listos para la creación.
 
@@ -186,7 +186,7 @@ Utilice las siguientes estrategias para proporcionar acceso a los activos finale
 * Utilice la aplicación de escritorio si Asset Link no funciona.
 * Utilice [AEM Assets Brand Portal](https://helpx.adobe.com/es/experience-manager/brand-portal/user-guide.html) para distribuir recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilice la configuración de Control de acceso en AEM y la infraestructura de red necesaria (por ejemplo, la lista blanca de VPN e IP) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario web de AEM para obtener recursos y cargar contenido nuevo en su DAM.
+* Utilice la configuración de Control de acceso en AEM y la infraestructura de red necesaria (por ejemplo, la lista de IP y VPN permitidas) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario web de AEM para obtener recursos y cargar contenido nuevo en su DAM.
 
 #### Trabajo en curso sobre los recursos de AEM {#work-in-progress-on-assets-from-aem}
 
