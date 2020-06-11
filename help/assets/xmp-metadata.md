@@ -3,10 +3,10 @@ title: Metadatos XMP
 description: Obtenga información sobre el estándar de metadatos XMP (Extensible Metadata Platform) para la administración de metadatos. AEM lo utiliza como formato estandarizado para la creación, el procesamiento y el intercambio de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 20%
+source-wordcount: '1483'
+ht-degree: 16%
 
 ---
 
@@ -77,7 +77,7 @@ Al cambiar los metadatos de un recurso desde Recursos AEM o al cargar el recurso
 
 La función de reescritura XMP propaga los cambios de metadatos en todas las representaciones del recurso o en determinadas representaciones.
 
-Considere un escenario en el que modifique la propiedad [!UICONTROL Title] del recurso `Classic Leather` al que se le asigna `Nylon`.
+Considere un escenario en el que modifique la propiedad [!UICONTROL Title] del recurso `Classic Leather` al que se denomina `Nylon`.
 
 ![metadata](assets/metadata.png)
 
@@ -89,7 +89,7 @@ Sin embargo, Recursos AEM no propaga automáticamente ningún cambio de metadato
 
 La función de reescritura XMP permite propagar los cambios de metadatos a todas las representaciones del recurso o a determinadas representaciones del recurso. Sin embargo, los cambios no se almacenan en el nodo de metadatos de la jerarquía de recursos. En su lugar, esta función incrusta los cambios en los archivos binarios para las representaciones.
 
-### Habilitar la eliminación de XMP {#enable-xmp-writeback}
+### Habilitar eliminación de XMP {#enable-xmp-writeback}
 
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
@@ -131,11 +131,11 @@ Los cambios en los metadatos se propagan a las representaciones thumbnail.140.10
 
 ### Filtrar metadatos XMP {#filtering-xmp-metadata}
 
-Recursos AEM admite el filtrado de propiedades/nodos de listas negras y listas blancas para los metadatos XMP que se leen de los binarios de recursos y se almacenan en JCR cuando se ingestan recursos.
+Recursos AEM admite el filtrado de propiedades/nodos para metadatos XMP que se leen de los binarios de recursos y se almacenan en JCR cuando se ingestan recursos. El filtrado es posible a través de una lista bloqueada y una lista permitida.
 
-El filtrado de listas negras permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado de listas negras permite importar un gran número de recursos con numerosos metadatos XMP, la instancia/clúster de AEM puede encontrar problemas de estabilidad, por ejemplo, colas de observación obstruidas.
+El filtrado mediante una lista bloqueada permite importar todas las propiedades de metadatos XMP, excepto las propiedades especificadas para la exclusión. Sin embargo, para tipos de recursos como archivos INDD que tienen grandes cantidades de metadatos XMP (por ejemplo, 1000 nodos con 10.000 propiedades), los nombres de los nodos que se van a filtrar no siempre se conocen por adelantado. Si el filtrado mediante una lista bloqueada permite importar un gran número de recursos con numerosos metadatos XMP, la instancia/clúster de AEM puede tener problemas de estabilidad, por ejemplo, colas de observación obstruidas.
 
-El filtrado de la lista blanca de metadatos XMP resuelve este problema permitiéndole definir las propiedades XMP que se van a importar. De este modo, se omiten otras propiedades XMP desconocidas. Puede agregar algunas de estas propiedades al filtro de lista negra para obtener compatibilidad con versiones anteriores.
+El filtrado de metadatos XMP mediante la lista permitida resuelve este problema permitiéndole definir las propiedades XMP que se van a importar. De este modo, se omiten otras propiedades XMP desconocidas. Para la compatibilidad con versiones anteriores, puede agregar algunas de estas propiedades al filtro que utiliza una lista bloqueada.
 
 >[!NOTE]
 >
@@ -143,16 +143,17 @@ El filtrado de la lista blanca de metadatos XMP resuelve este problema permitié
 
 1. Para abrir Configuration Manager, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra la configuración de **[!UICONTROL Adobe CQ DAM XmpFilter]** .
-1. Para aplicar el filtrado de listas blancas, seleccione **[!UICONTROL Aplicar lista blanca a las propiedades XMP]** y especifique las propiedades que desea importar en el cuadro de filtrado **[!UICONTROL Nombres XML admitidos para XMP]**.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
-1. Para filtrar las propiedades XMP bloqueadas después de aplicar el filtro de la lista blanca, especifíquelas en el cuadro de **[!UICONTROL filtrado Nombres XML bloqueados para XMP]**.
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >La opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP está seleccionada de forma predeterminada. En otras palabras, el filtrado de listas negras está habilitado de forma predeterminada. Para desactivar el filtrado de listas negras, desactive la opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP.
+   >La opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP está seleccionada de forma predeterminada. En otras palabras, el filtrado mediante una lista bloqueada está habilitado de forma predeterminada. Para desactivar este filtrado, anule la selección de la opción **[!UICONTROL Aplicar lista negra a propiedades]** XMP.
 
 1. Guarde los cambios.
 
 >[!MORELIKETHIS]
 >
 >* [Especificación XMP por Adobe](https://www.adobe.com/devnet/xmp.html)
+
