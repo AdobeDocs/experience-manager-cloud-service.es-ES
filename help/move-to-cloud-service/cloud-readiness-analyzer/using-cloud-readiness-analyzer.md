@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 3d818278c53f3d3b4c5b53aa5b78d06d876bf05f
+source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 0%
 
 Siga la sección siguiente para comprender las consideraciones importantes al ejecutar el analizador de preparación para la nube (CRA):
 
-* CRA es compatible con las instancias de AEM de origen con la versión 6.1 o posterior.
-* CRA se puede ejecutar en cualquier entorno.
+* CRA es compatible con las instancias de AEM de origen con la versión 6.1 o superior
+* CRA puede ejecutarse en cualquier entorno (preferiblemente *entorno de etapa* )
 
    >[!NOTE]
-   >Para aumentar la tasa de detección y evitar cualquier desaceleración en instancias críticas del negocio, se recomienda ejecutar CRA en los entornos de ensayo del autor de origen que estén lo más cerca posible de los de producción en las áreas de personalización, configuración, contenido y aplicaciones de usuario. También puede ejecutarse en un clon del entorno de publicación.
+   >Para aumentar la tasa de detección y evitar cualquier desaceleración en instancias críticas del negocio, se recomienda ejecutar CRA en los entornos de ensayo del autor de origen que estén lo más cerca posible de los de producción en las áreas de personalización, configuración, contenido y aplicaciones de usuario. También puede ejecutarse en un clon del entorno *Publicar* .
 
 ## Disponibilidad {#availability}
 
-El analizador de preparación para la nube (CRA) se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
+El analizador de preparación para la nube se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue el analizador de preparación para la nube (CRA) de *pendiente*.
+>Descargue el analizador de preparación para la nube del portal de distribución de software *pendiente*.
 
 ## Ejecución del analizador de preparación para la nube {#running-tool}
 
@@ -37,20 +37,32 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
 
 ### Visualización de los resultados {#viewing-the-results}
 
-Existen dos maneras de vista de la salida de la CRA:
+>[!IMPORTANT]
+>Los informes generados a partir del analizador de preparación para la nube se basan en los detectores de patrones. Consulte Detectores [de patrones](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) para obtener más detalles.
 
-1. Uso del informe organizado
+Existen dos formas de vista del resultado desde el analizador de preparación para la nube:
+
+1. **Uso del informe organizado**
 
    >[!NOTE]
    >El informe organizado está disponible en AEM versión 6.3 y posterior.
 
-Consulte Planificación y estado del Documento de CRA para describir los niveles de importancia en el informe
+   O bien,
 
-1. Visualización del resultado del CRA (se puede utilizar con AEM versión 6.1 y posterior):
+1. **Visualización del resultado del CRA**
 
-   1. Vaya a la consola web de AEM navegando hasta.
+   Siga los pasos que se describen a continuación para vista del resultado del analizador de preparación para la nube:
 
-   1. Seleccione Estado - Analizador de preparación para la nube, como se muestra en la imagen siguiente.
+   >[!NOTE]
+   >Los pasos a continuación se aplican a AEM versión 6.1 y posterior.
+
+   1. Vaya a **AEM Web Console** mediante `https://serveraddress:serverport/system/console/configMgr`.
+
+   1. Seleccione **Estado - Detector** de patrones como se muestra en la figura siguiente.
+
+#### Visualización del informe en instancias de AEM 6.1 {#aem-instances-report}
+
+Puede descargar el informe csv para AEM 6.1. Esto está pendiente.
 
 #### Explicación de los niveles de importancia en el informe {#importance-levels}
 
