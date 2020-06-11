@@ -3,10 +3,10 @@ title: Cree y gestione recursos digitales en varios idiomas y ejecute flujos de 
 description: Aprenda a automatizar flujos de trabajo para traducir recursos, incluidos binarios, metadatos y etiquetas en varios idiomas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '2615'
-ht-degree: 23%
+source-wordcount: '2612'
+ht-degree: 24%
 
 ---
 
@@ -55,7 +55,7 @@ En Recursos Adobe Experience Manager (AEM), los recursos multilingües se incluy
 
 Cada carpeta de idioma se denomina copia de idioma. La carpeta raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/dam/it` es la raíz de idioma italiano para la copia en idioma italiano. Las copias de idioma deben utilizar una raíz [de idioma](#create-a-language-root) correctamente configurada para que el idioma correcto se dirija al realizar las traducciones de recursos de origen.
 
-La copia de idioma para la que se agregaron recursos originalmente es el maestro de idioma. El maestro de idiomas es la fuente que se traduce a otros idiomas. Una jerarquía de carpetas de ejemplo incluye varias raíces de idioma:
+La copia de idioma para la que se agregaron recursos originalmente es el idioma principal. El idioma principal es la fuente que se traduce a otros idiomas. Una jerarquía de carpetas de ejemplo incluye varias raíces de idioma:
 
 ```shell
 /content
@@ -71,14 +71,14 @@ La copia de idioma para la que se agregaron recursos originalmente es el maestro
 
 Realice los siguientes pasos para preparar los recursos para la traducción:
 
-1. Cree la raíz del idioma del maestro de idioma. Por ejemplo, la raíz de idioma de la copia en inglés en la jerarquía de carpetas de ejemplo es */content/dam/en*. Asegúrese de que la raíz del idioma está configurada correctamente según la información de [Crear una raíz](#create-a-language-root)de idioma.
+1. Cree la raíz del idioma de la fuente principal del idioma. Por ejemplo, la raíz de idioma de la copia en inglés en la jerarquía de carpetas de ejemplo es `/content/dam/en`. Asegúrese de que la raíz del idioma está configurada correctamente según la información de [Crear una raíz](#create-a-language-root)de idioma.
 
-1. Añada recursos a su maestro de idioma.
+1. Añada recursos a su idioma principal.
 1. Cree la raíz de idioma de cada idioma de destinatario para el que necesite una copia de idioma.
 
 ### Crear una raíz de idioma {#create-a-language-root}
 
-Para crear la raíz del idioma, cree una carpeta y utilice un código de idioma ISO como valor para la propiedad Name. Después de crear la raíz del idioma, puede crear una copia del idioma en cualquier nivel dentro de la raíz del idioma.
+Para crear la raíz de idioma, cree una carpeta y utilice un código de idioma ISO como valor para la propiedad Name. Después de crear la raíz del idioma, puede crear una copia del idioma en cualquier nivel dentro de la raíz del idioma.
 
 Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de muestra tiene `it` como propiedad Name. La propiedad Name se utiliza como nombre del nodo de recursos en el repositorio y, por lo tanto, determina la ruta de los recursos. (*&lt;servidor>:&lt;puerto>/assets.html/content/dam/it/*)
 
@@ -90,7 +90,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en Recursos AEM.
 
-1. En la consola Recursos, seleccione el maestro de idioma para el que desea crear copias de idioma.
+1. En la consola Recursos, seleccione el idioma principal para el que desea crear copias de idioma.
 1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Referencias]** para abrir el panel Referencia.
 1. En el panel Referencias, toque o haga clic en **[!UICONTROL Copias]** de idioma. El panel Copias de idioma muestra las copias de idioma de los recursos.
 
