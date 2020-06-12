@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: d72f02f76f9be61ef4c3eefd790ff8abbb23a3d8
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1768'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 
 * El informe de CRA se crea con el resultado del detector [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)patrones de Adobe Experience Manager (AEM). La versión del detector de patrones utilizado por CRA se incluye en el paquete de instalación de CRA.
 
-* El CRA solo puede ser ejecutado por el `admin` usuario o un usuario del `Administrators` grupo.
+* El CRA solo puede ser ejecutado por el usuario *administrador* o un usuario del grupo **Administradores** .
 
 * CRA se admite en instancias de AEM con la versión 6.1 o posterior.
 
@@ -57,30 +57,47 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
 
 Para AEM 6.3 y versiones posteriores, la forma principal de ejecutar el analizador de preparación para la nube es:
 
-1. Utilice la interfaz de usuario de Adobe Experience Manager para navegar hasta Herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
+1. Seleccione la instancia de Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
 
    >[!NOTE]
    >El CRA iniciará un proceso en segundo plano para generar el informe en cuanto se abra la herramienta. Muestra una indicación de que la generación del informe está en curso hasta que el informe está listo. Puede cerrar la ficha del explorador y regresar más tarde para realizar la vista del informe cuando se haya completado.
 
-Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en formato de valores separados por comas (CSV) haciendo clic en el botón **CSV** en la esquina superior derecha de la página de herramientas.
+1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
 
-Puede forzar el CRA para que borre su caché y vuelva a generar el informe haciendo clic en el botón &quot;Actualizar informe&quot; en la esquina superior izquierda.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Puede forzar el CRA para que borre su caché y vuelva a generar el informe haciendo clic en el botón **Actualizar informe** en la esquina superior izquierda.
 
 ### AEM 6.2 y 6.1 {#aem-specific-versions}
 
-La interfaz de usuario de CRA está limitada en AEM 6.2 a un vínculo que genera y descarga el informe CSV. En AEM 6.1, la interfaz de usuario no funciona y solo se puede utilizar la interfaz HTTP.
+La interfaz de usuario del analizador de preparación para la nube está limitada en AEM 6.2 a un vínculo que genera y descarga el informe CSV. En AEM 6.1, la interfaz de usuario no funciona y solo se puede utilizar la interfaz HTTP.
 
 En todas las versiones, el detector de patrones incluido puede ejecutarse de forma independiente.
 
+Siga los pasos a continuación para descargar el informe CSV de Adobe Experience Manager (AEM) 6.1 y 6.2:
+
+1. Vaya a **Adobe Experience Manager Web ConsoleConfiguración** mediante `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Seleccione la ficha **Estado** y busque Detector **de** patrones en la lista desplegable, como se muestra en la figura siguiente.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Puede descargar el informe de resumen en una carpeta zip o en formato JSON.
+
 ## Informe de resumen de CRA {#cra-summary-report}
 
-Cuando el CRA se ejecuta en la interfaz de usuario de AEM, el informe se muestra como resultados en la ventana de herramientas. El formato del informe es:
+Cuando se ejecuta el analizador de preparación para la nube en la interfaz de usuario de AEM, el informe se muestra como resultados en la ventana de herramientas.
 
-* Información general del informe: Información sobre el propio informe, incluso cuando se generó.
-* Información general del sistema: Información sobre el sistema AEM en el que se ejecutó el CRA.
-* Búsqueda de Categorías: Varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: Nombre de la Categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
+El formato del informe es:
 
-Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción. Los niveles de importancia utilizados son los siguientes:
+* *Información general* del informe: Información sobre el propio informe, incluso cuando se generó.
+* *Información general* del sistema: Información sobre el sistema AEM en el que se ejecutó el CRA.
+* *Búsqueda de Categorías*: Varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: Nombre de la Categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
+
+Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
+
+Siga la tabla siguiente para comprender los niveles de importancia:
 
 | Importancia | Descripción |
 |--- |--- |
@@ -91,16 +108,7 @@ Se asigna un nivel de importancia a cada resultado para indicar una prioridad ap
 
 ## Informe CSV de CRA {#crs-csv-report}
 
-Cuando se presiona el botón &quot;CSV&quot;, el formato CSV del informe de CRA se crea a partir de la caché de resultados y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`. Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
-
-Siga los pasos a continuación para generar un formato CSV del informe de resumen desde la instancia de AEM:
-
-1. 
-   1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
-
-1. Una vez que el informe esté disponible, haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+Al hacer clic en la opción **CSV** desde la instancia de AEM, el formato CSV del informe del analizador de preparación para la nube se crea a partir de la caché de resultados y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`. Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
 
 El formato CSV del informe incluye información que se genera a partir de la salida del detector de patrones, ordenada y organizada por tipo de categoría, subtipo y nivel de importancia. Su formato es adecuado para visualizarlo y editarlo en una aplicación como Microsoft Excel. Su finalidad es proporcionar toda la información de búsqueda en un formato repetible que pueda resultar útil al comparar los informes con el paso del tiempo para medir el progreso.
 
@@ -133,8 +141,10 @@ La interfaz HTTP puede utilizarse en diversos métodos.
 
 Una forma sencilla es abrir una ficha de navegador en el mismo navegador en el que ya ha iniciado sesión en AEM como administrador. Puede introducir la dirección URL en la ficha del explorador y mostrar o descargar los resultados en el explorador.
 
-También puede utilizar una herramienta de línea de comandos como `curl` o `wget` como así también cualquier aplicación cliente HTTP. Cuando no utilice una ficha de explorador con una sesión autenticada, debe proporcionar un nombre de usuario y una contraseña de administración como parte del comentario. A continuación se muestra un ejemplo de cómo se puede realizar esto:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`
+También puede utilizar una herramienta de línea de comandos como `curl` o `wget` como así también cualquier aplicación cliente HTTP. Cuando no utilice una ficha de explorador con una sesión autenticada, debe proporcionar un nombre de usuario y una contraseña de administración como parte del comentario.
+
+A continuación se muestra un ejemplo de cómo se puede realizar esto:
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### Encabezados y parámetros {#http-headers-and-parameters}
 
@@ -151,7 +161,7 @@ Los siguientes parámetros de consulta HTTP están disponibles para determinar c
 Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta correspondiente, el parámetro de consulta tendrá prioridad.
 
 Una manera sencilla de iniciar la generación del informe a través de la interfaz HTTP es con el siguiente comando:
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
 Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP GET y, una vez generado el informe, se puede ver desde la caché en otro cliente o desde la herramienta CSV en la interfaz de usuario de AEM.
 
@@ -175,16 +185,7 @@ El valor de duración de la caché se almacena como la `maxCacheAge` propiedad e
 
 El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante la interfaz CRX/DE Lite a AEM.
 
-## Visualización del informe en instancias de AEM 6.1 {#aem-instances-report}
 
-Siga los pasos a continuación para descargar el informe CSV de Adobe Experience Manager (AEM) 6.1:
 
-1. Vaya a **Adobe Experience Manager Web ConsoleConfiguración** mediante `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Seleccione la ficha **Estado** y busque Detector **de** patrones en la lista desplegable, como se muestra en la figura siguiente.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Puede descargar el informe de resumen en una carpeta zip o en formato JSON.
 
 
