@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -35,42 +35,54 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
 
 1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
 
-### Visualización de los resultados {#viewing-the-results}
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Una vez que haga clic en **Cloud Readiness Analyzer**, la herramienta inicio la generación del informe y, después de unos minutos, verá el informe generado.
+
+   >[!NOTE]
+   >Tendrá que desplazarse hacia abajo por la página para vista del informe completo.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### Visualización de los resultados en el informe Resumen {#viewing-the-results}
 
 >[!IMPORTANT]
 >Los informes generados a partir del analizador de preparación para la nube se basan en los detectores de patrones. Consulte Detectores [de patrones](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) para obtener más detalles.
 
-Existen dos formas de vista del resultado desde el analizador de preparación para la nube:
+Una vez que se desplace hacia abajo por la página para realizar la vista del informe de resumen completo, podrá ver la siguiente información para cada una de las categorías resaltadas en el informe:
 
-1. **Uso del informe organizado**
+1. **Nivel de importancia**
 
-   >[!NOTE]
-   >El informe organizado está disponible en AEM versión 6.3 y posterior.
+   En la tabla siguiente se describe el significado de los distintos niveles de importancia del detector de patrones y del analizador de preparación para la nube.
 
-   O bien,
+   | Nivel de importancia | Descripción |
+   |--- |--- |
+   | INFORMACIÓN/0 | Esta conclusión se proporciona con fines informativos. |
+   | CONSEJO/1 | Este hallazgo es potencialmente un problema de actualización. Se recomienda una investigación más a fondo. |
+   | PRINCIPAL/2 | Es probable que este hallazgo sea un problema de actualización que se debe abordar. |
+   | CRÍTICO/3 | Es muy probable que este hallazgo sea un problema de actualización que debe solucionarse para evitar la pérdida de funciones o rendimiento. |
 
-1. **Visualización del resultado del CRA**
+1. **Descripción** La descripción proporciona información sobre la categoría notificada.
 
-   Siga los pasos que se describen a continuación para vista del resultado del analizador de preparación para la nube:
+1. **Dirección URL** de la documentación La dirección URL de la documentación le permite realizar la vista de la documentación técnica del tipo asociado.
 
-   >[!NOTE]
-   >Los pasos a continuación se aplican a AEM versión 6.1 y posterior.
+1. **Mensaje** Descripción de la búsqueda en un solo mensaje.
 
-   1. Vaya a **AEM Web Console** mediante `https://serveraddress:serverport/system/console/configMgr`.
+### Visualización de los resultados en formato CSV {#viewing-the-results-csv}
 
-   1. Seleccione **Estado - Detector** de patrones como se muestra en la figura siguiente.
+El informe de resumen está disponible en la interfaz de usuario de AEM. Puede descargar el informe completo en un formato de valores separados por comas (CSV) que sea útil durante el proceso de refactorización.
+
+Siga los pasos a continuación para generar un formato CSV del informe de resumen:
+
+1. 
+   1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
+
+1. Una vez generado el informe, haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
+
+![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### Visualización del informe en instancias de AEM 6.1 {#aem-instances-report}
 
 Puede descargar el informe csv para AEM 6.1. Esto está pendiente.
 
-#### Explicación de los niveles de importancia en el informe {#importance-levels}
-
-En la tabla siguiente se describe el significado de los distintos niveles de importancia del detector de patrones y del analizador de preparación para la nube.
-
-| Nivel de importancia | Descripción |
-|--- |--- |
-| INFORMACIÓN/0 | Esta conclusión se proporciona con fines informativos. |
-| CONSEJO/1 | Este hallazgo es potencialmente un problema de actualización. Se recomienda una investigación más a fondo. |
-| PRINCIPAL/2 | Es probable que este hallazgo sea un problema de actualización que se debe abordar. |
-| CRÍTICO/3 | Es muy probable que este hallazgo sea un problema de actualización que debe solucionarse para evitar la pérdida de funciones o rendimiento. |
