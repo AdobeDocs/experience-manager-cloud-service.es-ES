@@ -2,9 +2,9 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,11 @@ Siga la sección siguiente para conocer las directrices y prácticas recomendada
 * En la fase de ingestión, se recomienda ejecutar la ingesta mediante el modo de *borrado* activado, en el que el repositorio existente (autor o publicación) en el entorno de servicio de nube de AEM de destinatario se eliminará por completo y, a continuación, se actualizará con los datos del conjunto de migración. Este modo es mucho más rápido que el modo sin barrido, donde el conjunto de migración se aplica sobre el contenido actual.
 
 * Una vez completada la actividad de transferencia de contenido, se requiere la estructura de proyecto correcta en el entorno de servicios de nube para garantizar que el contenido se procese correctamente en el entorno de servicios de nube.
+
+* Antes de ejecutar la herramienta de transferencia de contenido, debe asegurarse de que hay suficiente espacio en disco en el `crx-quickstart` subdirectorio de la instancia de AEM de origen. Esto se debe a que la herramienta de transferencia de contenido crea una copia local del repositorio que se carga posteriormente en el conjunto de migración.
+La fórmula general para calcular el espacio en disco necesario es la siguiente:
+   *tamaño del almacén de datos + tamaño del almacén de nodos * 1.5*
+
+   * Para el tamaño *del almacén de* datos, la herramienta de transferencia de contenido utiliza 64 GB, incluso si el almacén de datos real es más grande.
+   * El tamaño *del almacén de* nodos es el tamaño del directorio del almacén de segmentos o el tamaño de la base de datos MongoDB.
+Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libre requerido en disco sería de 94 GB.
