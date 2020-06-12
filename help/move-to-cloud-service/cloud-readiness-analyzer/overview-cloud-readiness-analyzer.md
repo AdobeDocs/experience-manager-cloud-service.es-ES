@@ -2,9 +2,9 @@
 title: Información general sobre el analizador de preparación para la nube
 description: Información general sobre el analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 64b685a7c9fbb105ed66dc4b3212b2bf91dee4af
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ En el informe resumido se proporciona información adicional sobre las categorí
 >[!NOTE]
 >El informe del analizador de preparación para la nube acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a AEM como servicio de nube al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
 
-El informe de resumen está disponible en la interfaz de usuario de AEM. Existe una opción para descargar el informe completo en un formato de valores separados por comas (CSV) que resulta útil durante el proceso de refactorización.
+También puede descargar el informe de resumen desde la interfaz de usuario de AEM. Consulte **Visualización de los resultados en formato** CSV para obtener más detalles pendientes.
