@@ -2,10 +2,10 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Una vez que haga clic en **Cloud Readiness Analyzer**, la herramienta inicio la generación del informe y, después de unos minutos, verá el informe generado.
+1. Una vez que haga clic en el Analizador **de preparación para** la nube, la herramienta inicio la generación del informe y, a los pocos minutos, el informe de resumen estará disponible en la instancia de AEM.
 
    >[!NOTE]
    >Tendrá que desplazarse hacia abajo por la página para vista del informe completo.
@@ -77,12 +77,21 @@ Siga los pasos a continuación para generar un formato CSV del informe de resume
 1. 
    1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
 
-1. Una vez generado el informe, haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
+1. Una vez que el informe esté disponible, haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
 
 ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### Visualización del informe en instancias de AEM 6.1 {#aem-instances-report}
 
-Puede descargar el informe csv para AEM 6.1. Esto está pendiente.
+Siga los pasos a continuación para descargar el informe CSV de Adobe Experience Manager (AEM) 6.1:
+
+1. Vaya a **Adobe Experience Manager Web ConsoleConfiguración** mediante `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Seleccione la ficha **Estado** y busque Detector **de** patrones en la lista desplegable, como se muestra en la figura siguiente.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Puede descargar el informe de resumen en una carpeta zip o en formato JSON.
+
 
