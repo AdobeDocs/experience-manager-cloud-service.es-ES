@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1582'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,8 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
 * La fase *de* ingestión del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción.
+
+* El límite superior recomendado para el tamaño del repositorio que la herramienta de transferencia de contenido puede admitir a la vez es de 20 GB.
 
 ## Disponibilidad {#availability}
 
@@ -200,13 +202,15 @@ Siga los pasos a continuación:
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log1.png)
 
-1. Aparece el cuadro de diálogo **Registros** . Haga clic en Registros **de** Extracción para vista de los registros en una nueva ficha.
+1. Se abre el cuadro de diálogo **Registros** . Haga clic en Registros **de** Extracción para vista de los registros en una nueva ficha.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log2.png)Or,
 
    También puede crear registros de vistas para el conjunto de migraciones desde la pantalla *Información general* . Seleccione el conjunto de migración y haga clic en el estado en el campo **EXTRACCIÓN** . En este caso, haga clic en **FINALIZADO** para ver los registros de vista en una nueva ficha.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. Para rastrear los registros sin utilizar la interfaz de usuario, puede SSH en el entorno AEM de origen y seguir el `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
 
 ### Eliminación de un conjunto de migraciones {#deleting-migration-set}
 
