@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para que cree contenido en Adobe
 description: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como un servicio de nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Los autores pueden crear y editar contenido textual en Experience Manager median
 | Modo de edición | Área de edición | Funciones recomendadas para habilitarlas |
 |--- |--- |--- |
 | En línea | Edición in situ para ediciones rápidas y secundarias; Formato sin abrir un cuadro de diálogo | Características mínimas de RTE |
-| RTE pantalla completa | Abarca toda la página | Todas las funciones RTE necesarias |
+| RTE a pantalla completa | Abarca toda la página | Todas las funciones RTE necesarias |
 | Cuadro de diálogo | Cuadro de diálogo en la parte superior del contenido de la página pero no cubre toda la página | Activación juiciosa de las funciones |
 | Pantalla completa del cuadro de diálogo | Igual que el modo de pantalla completa; contiene campos del cuadro de diálogo junto con RTE | Todas las funciones RTE necesarias |
 
 >[!NOTE]
 >
->La función de edición de origen no está disponible en el modo de edición en línea. No puede arrastrar imágenes en el modo de pantalla completa. Todas las demás funciones funcionan en todos los modos.
+>La función de edición de origen no está disponible en el modo de edición en línea. No se pueden arrastrar imágenes en el modo de pantalla completa. Todas las demás funciones funcionan en todos los modos.
 
 ### Edición en línea {#inline-editing}
 
@@ -56,9 +56,9 @@ Cuando se abre (con un doble de clic lento), el contenido se puede editar dentro
 
 *Figura: Edición en línea con opciones básicas en la barra de herramientas.*
 
-### Full screen editing {#full-screen-editing}
+### Full-screen editing {#full-screen-editing}
 
-Los componentes de Experience Manager se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar en pantalla completa una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
+Los componentes de Experience Manager se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa con una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
 En el modo de pantalla completa del cuadro de diálogo, junto con una barra de herramientas RTE detallada, también están disponibles las opciones y los componentes disponibles en un cuadro de diálogo. Solo se aplica a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
@@ -131,7 +131,6 @@ El [modo de edición RTE (y la interfaz de usuario)](#editingmodes) que proporci
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
-
 >
 >
 No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
@@ -165,7 +164,6 @@ El componente [de texto Componentes](https://docs.adobe.com/content/help/en/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
@@ -215,13 +213,13 @@ Para configurar la barra de herramientas para `dialogFullScreen`, utilice la sig
 </uiSettings>
 ```
 
-Para el modo en línea y el modo de pantalla completa se utilizan diferentes ajustes de IU. La propiedad toolbar se utiliza para especificar los botones de la barra de herramientas.
+Para el modo en línea y el modo de pantalla completa se utilizan diferentes configuraciones de interfaz de usuario. La propiedad toolbar especifica la opción de la barra de herramientas.
 
-Por ejemplo, si el botón es en sí mismo una función (por ejemplo, `Bold`), se especifica como `PluginName#FeatureName` (por ejemplo, `links#modifylink`).
+Por ejemplo, si la opción es en sí misma una característica (por ejemplo, `Bold`), se especifica como `PluginName#FeatureName` (por ejemplo, `links#modifylink`).
 
-Si el botón es una ventana emergente (que contiene algunas características de un complemento), se especifica como `#PluginName` (por ejemplo, `#format`).
+Si la opción es una ventana emergente (que contiene algunas características de un complemento), se especifica como `#PluginName` (por ejemplo, `#format`).
 
-Se pueden especificar separadores (`|`) entre un grupo de botones con `-`.
+Los separadores (`|`) entre un grupo de opciones se pueden especificar con `-`.
 
 El nodo emergente en el modo en línea o en pantalla completa contiene una lista de las ventanas emergentes que se utilizan. Cada nodo secundario bajo el nodo &#39;povers&#39; recibe el nombre del complemento (por ejemplo, format). Tiene una propiedad &#39;items&#39; que contiene una lista de características del complemento (por ejemplo, format#bold).
 
