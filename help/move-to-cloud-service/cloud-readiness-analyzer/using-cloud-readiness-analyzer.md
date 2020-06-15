@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: daa281745540e6446adecd2501e26135d6000844
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 * CRA puede ejecutarse en cualquier entorno, pero es preferible que se ejecute en un entorno de *etapa* .
 
    >[!NOTE]
-   >Para evitar un impacto en instancias críticas del negocio, se recomienda ejecutar CRA en un entorno de ensayo de *creación* que esté lo más cerca posible del entorno de producción en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno *Autor* de producción.
+   >Para evitar un impacto en instancias críticas del negocio, se recomienda ejecutar CRA en un entorno de ensayo de creación que esté lo más cerca posible del entorno de producción en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de creación de producción.
 
 * La generación de informes de CRA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
 
@@ -33,7 +33,7 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 
 ## Disponibilidad {#availability}
 
-El analizador de preparación para la nube se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
+El analizador de preparación para la nube se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de Adobe Experience Manager de origen (AEM).
 
 >[!NOTE]
 >Descargue el analizador de preparación para la nube del portal de distribución de software *pendiente*.
@@ -42,7 +42,7 @@ El analizador de preparación para la nube se puede descargar como archivo zip d
 
 Siga esta sección para obtener información sobre cómo ejecutar el analizador de preparación para la nube:
 
-1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
+1. Seleccione el Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
@@ -53,41 +53,9 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-### AEM 6.3 y posterior {#aem-older-version}
+## Interpretación del informe organizado del analizador de preparación para la nube {#organized-report}
 
-Para AEM 6.3 y versiones posteriores, la forma principal de ejecutar el analizador de preparación para la nube es:
-
-1. Seleccione la instancia de Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
-
-   >[!NOTE]
-   >El CRA iniciará un proceso en segundo plano para generar el informe en cuanto se abra la herramienta. Muestra una indicación de que la generación del informe está en curso hasta que el informe está listo. Puede cerrar la ficha del explorador y regresar más tarde para realizar la vista del informe cuando se haya completado.
-
-1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
-
-   >[!NOTE]
-   >Puede forzar el CRA para que borre su caché y vuelva a generar el informe haciendo clic en el botón **Actualizar informe** en la esquina superior izquierda.
-
-### AEM 6.2 y 6.1 {#aem-specific-versions}
-
-La interfaz de usuario del analizador de preparación para la nube está limitada en AEM 6.2 a un vínculo que genera y descarga el informe CSV. En AEM 6.1, la interfaz de usuario no funciona y solo se puede utilizar la interfaz HTTP.
-
-En todas las versiones, el detector de patrones incluido puede ejecutarse de forma independiente.
-
-Siga los pasos a continuación para descargar el informe CSV de Adobe Experience Manager (AEM) 6.1 y 6.2:
-
-1. Vaya a **Adobe Experience Manager Web ConsoleConfiguración** mediante `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Seleccione la ficha **Estado** y busque Detector **de** patrones en la lista desplegable, como se muestra en la figura siguiente.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Puede descargar el informe de resumen en una carpeta zip o en formato JSON.
-
-## Informe de resumen de CRA {#cra-summary-report}
-
-Cuando se ejecuta el analizador de preparación para la nube en la interfaz de usuario de AEM, el informe se muestra como resultados en la ventana de herramientas.
+Cuando se ejecuta el analizador de preparación para la nube en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
 
 El formato del informe es:
 
@@ -106,7 +74,45 @@ Siga la tabla siguiente para comprender los niveles de importancia:
 | PRINCIPAL | Es probable que este hallazgo sea un problema de actualización que se debe abordar. |
 | CRÍTICO | Es muy probable que este hallazgo sea un problema de actualización que debe solucionarse para evitar la pérdida de funciones o rendimiento. |
 
-## Informe CSV de CRA {#crs-csv-report}
+### Adobe Experience Manager 6.3 and later {#aem-older-version}
+
+Para AEM 6.3 y versiones posteriores, la forma principal de ejecutar el analizador de preparación para la nube es:
+
+1. Seleccione la instancia de Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
+
+   >[!NOTE]
+   >El CRA iniciará un proceso en segundo plano para generar el informe en cuanto se abra la herramienta. Muestra una indicación de que la generación del informe está en curso hasta que el informe está listo. Puede cerrar la ficha del explorador y regresar más tarde para realizar la vista del informe cuando se haya completado.
+
+1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >Puede forzar el CRA para que borre su caché y vuelva a generar el informe haciendo clic en el botón **Actualizar informe** en la esquina superior izquierda.
+
+### Adobes Experience Manager 6.2 y 6.1 {#aem-specific-versions}
+
+El analizador de preparación para la nube está limitado en Adobe Experience Manager (AEM) 6.2 a un vínculo que genera y descarga el informe CSV.
+
+>[!NOTE]
+>
+>* En Adobe Experience Manager 6.1, la herramienta no funciona y solo se puede utilizar la interfaz HTTP.
+   >
+   >
+* En todas las versiones, el detector de patrones incluido puede ejecutarse de forma independiente.
+
+
+Siga los pasos a continuación para descargar el informe CSV para Adobe Experience Manager (AEM) 6.1 y 6.2:
+
+1. Vaya a **Adobe Experience Manager Web ConsoleConfiguración** mediante `https://serveraddress:serverport/system/console/configMgr`.
+
+1. Seleccione la ficha **Estado** y busque Detector **de** patrones en la lista desplegable, como se muestra en la figura siguiente.
+
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. Puede descargar el informe de resumen en una carpeta zip o en formato JSON.
+
+## Interpretación del informe CSV del analizador de preparación para la nube {#crs-csv-report}
 
 Al hacer clic en la opción **CSV** desde la instancia de AEM, el formato CSV del informe del analizador de preparación para la nube se crea a partir de la caché de resultados y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`. Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
 
@@ -128,7 +134,7 @@ Un valor de &quot;\N&quot; en una columna para una búsqueda individual indica q
 
 ## Interfaz HTTP {#http-interface}
 
-El CRA proporciona una interfaz HTTP que puede utilizarse como alternativa a la interfaz de usuario de AEM. La interfaz admite comandos HEAD y GET. Se puede utilizar para generar el informe CRA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
+CRA proporciona una interfaz HTTP que puede utilizarse como alternativa a la instancia de AEM. La interfaz admite comandos HEAD y GET. Se puede utilizar para generar el informe CRA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
 
 Las siguientes direcciones URL están disponibles para el acceso HTTP, donde `<host>` es el nombre de host y el puerto, si es necesario, del servidor en el que está instalado CRA:
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` para formato JSON
@@ -163,7 +169,7 @@ Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta 
 Una manera sencilla de iniciar la generación del informe a través de la interfaz HTTP es con el siguiente comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP GET y, una vez generado el informe, se puede ver desde la caché en otro cliente o desde la herramienta CSV en la interfaz de usuario de AEM.
+Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP GET y, una vez generado el informe, se puede ver desde la caché en otro cliente o desde la herramienta CSV en la instancia de AEM.
 
 ### Respuestas (#http-response)
 
@@ -178,12 +184,12 @@ Los siguientes valores de respuesta son posibles:
 
 ## Ajuste de duración de caché {#cache-adjustment}
 
-La duración predeterminada de la caché de CRA es de 24 horas. Con la opción de actualizar un informe y regenerar la caché, tanto en la interfaz de usuario como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del CRA. Si el tiempo de generación de informes es particularmente largo para la instancia de AEM, puede que desee ajustar la duración de la caché para minimizar la regeneración del informe.
+La duración predeterminada de la caché de CRA es de 24 horas. Con la opción para actualizar un informe y regenerar la caché, tanto en la instancia de AEM como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del CRA. Si el tiempo de generación de informes es particularmente largo para la instancia de AEM, puede que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
 El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante la interfaz CRX/DE Lite a AEM.
+El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
 
 
 
