@@ -2,9 +2,9 @@
 title: Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles
 description: Sugerencias y prácticas recomendadas para nombrar, organizar y administrar metadatos para archivos de recursos digitales.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 78e3f5f0324383578c8f4f91f7d07a2bd12f01d4
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Prácticas recomendadas para organizar recursos digitales para utilizar perfiles {#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
-Un concepto importante con respecto al uso de perfiles en Recursos AEM es que se asignan a las carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos de estas carpetas influye considerablemente en la forma en que un perfil procesa dichos recursos.
+Un concepto importante con respecto al uso de perfiles en AEM Assets es que se asignan a las carpetas. Dentro de un perfil hay ajustes en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a los archivos y las carpetas, la forma en que se organizan las subcarpetas y la forma en que se gestionan los archivos de estas carpetas influye considerablemente en la forma en que un perfil procesa dichos recursos.
 
 Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con una buena práctica de metadatos, puede sacar el máximo partido de la colección de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados.
 
@@ -30,7 +30,7 @@ A continuación se ofrecen consejos sobre prácticas recomendadas para organizar
 
    * **Carpetas** de desarrollo: contiene recursos digitales en los que está trabajando.
    * **Carpetas** de cliente: contiene recursos digitales basados en nombres de clientes o proyectos.
-   * **Carpetas** maestras: contiene recursos digitales originales.
+   * **Carpetas** de origen principales: contiene recursos digitales originales.
    * **Carpetas** de representación: contiene representaciones y copias de los recursos digitales originales.
    * **Carpetas** de tamaño de archivo: contiene recursos digitales basados en tamaños de archivo pequeños, medios o grandes.
    * **Carpetas** de ensayo: contiene recursos digitales que están listos para publicarse en directo en el sitio web.
