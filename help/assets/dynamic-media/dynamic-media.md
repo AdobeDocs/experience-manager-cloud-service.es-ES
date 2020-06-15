@@ -2,29 +2,29 @@
 title: Trabajar con Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 28%
+source-wordcount: '416'
+ht-degree: 22%
 
 ---
 
 
 # Trabajar con Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 Dynamic Media proporciona experiencias de visualización interactivas, que incluyen zoom, giro de 360 grados y vídeo. Dynamic Media introduce de forma exclusiva los flujos de trabajo de la solución de administración de recursos digitales (Recursos) de Adobe Experience Manager para simplificar y agilizar el proceso de administración de campañas digitales.
 
 >[!NOTE]
 >
->Hay un artículo de la comunidad disponible en [Uso de Adobe Experience Manager y Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>Hay un artículo de la comunidad disponible en [Trabajo con Adobe Experience Manager y Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
 
 ## Qué puede hacer con Dynamic Media {#what-you-can-do-with-dynamic-media}
 
 Dynamic Media permite administrar los recursos antes de publicarlos. El trabajo con recursos en general se trata en detalle en [Uso de recursos](/help/assets/manage-digital-assets.md)digitales. Los temas generales incluyen la carga, descarga, edición y publicación de recursos; visualización y edición de propiedades y búsqueda de recursos.
 
-Las funciones solo de Dynamic Media incluyen lo siguiente:
+Las funciones solo para Dynamic Media incluyen lo siguiente:
 
 * [Banner de carrusel](carousel-banners.md)
 * [Conjuntos de imágenes](image-sets.md)
@@ -50,9 +50,9 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Medios dinámicos activados frente a Medios dinámicos deshabilitados {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media habilitado frente a Dynamic Media deshabilitado {#dynamic-media-on-versus-dynamic-media-off}
 
-Puede saber si Dynamic Media está habilitado (activado) por las siguientes características:
+Puede saber si Dynamic Media está habilitado (activado) según las características siguientes:
 
 * Las representaciones dinámicas están disponibles al descargar o previsualizar recursos.
 * Hay disponibles conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos.
@@ -62,13 +62,13 @@ Al hacer clic en un recurso de imagen, la vista del recurso es diferente con Dyn
 
 ### Representaciones dinámicas {#dynamic-renditions}
 
-Las representaciones dinámicas, como los ajustes preestablecidos de imagen y visor (en **[!UICONTROL Dinámico]**), están disponibles cuando se habilita Dynamic Media.
+Las representaciones dinámicas, como los ajustes preestablecidos de imagen y visor (en **[!UICONTROL Dinámico]**), están disponibles cuando Dynamic Media está activado.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
 ### Conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos {#image-sets-spins-sets-mixed-media-sets}
 
-Los conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos están disponibles si está activado Dynamic Media.
+Los conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos están disponibles si Dynamic Media está activado.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
