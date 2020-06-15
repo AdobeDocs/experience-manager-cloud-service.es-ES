@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -46,14 +46,14 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Una vez que haga clic en el Analizador **de preparación para** la nube, la herramienta inicio la generación del informe y, a los pocos minutos, el informe de resumen estará disponible en la instancia de AEM.
+1. Una vez que haga clic en **Cloud Readiness Analyzer**, la herramienta inicio la generación del informe y, a los pocos minutos, el informe de CRA estará disponible en la instancia de AEM.
 
    >[!NOTE]
    >Tendrá que desplazarse hacia abajo por la página para vista del informe completo.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Interpretación del informe organizado del analizador de preparación para la nube {#organized-report}
+## Interpretación del informe del analizador de preparación para la nube {#cra-report}
 
 Cuando se ejecuta el analizador de preparación para la nube en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
 
@@ -83,7 +83,7 @@ Para AEM 6.3 y versiones posteriores, la forma principal de ejecutar el analizad
    >[!NOTE]
    >El CRA iniciará un proceso en segundo plano para generar el informe en cuanto se abra la herramienta. Muestra una indicación de que la generación del informe está en curso hasta que el informe está listo. Puede cerrar la ficha del explorador y regresar más tarde para realizar la vista del informe cuando se haya completado.
 
-1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe de resumen completo en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
+1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe completo de CRA en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,29 +92,18 @@ Para AEM 6.3 y versiones posteriores, la forma principal de ejecutar el analizad
 
 ### Adobes Experience Manager 6.2 y 6.1 {#aem-specific-versions}
 
-El analizador de preparación para la nube está limitado en Adobe Experience Manager (AEM) 6.2 a un vínculo que genera y descarga el informe CSV.
+El analizador de preparación para la nube está limitado en Adobe Experience Manager 6.2 a un vínculo que genera y descarga el informe CSV.
+
+En Adobe Experience Manager 6.1, la herramienta no funciona y solo se puede utilizar la interfaz HTTP.
 
 >[!NOTE]
->
->* En Adobe Experience Manager 6.1, la herramienta no funciona y solo se puede utilizar la interfaz HTTP.
-   >
-   >
-* En todas las versiones, el detector de patrones incluido puede ejecutarse de forma independiente.
+>En todas las versiones, el detector de patrones incluido puede ejecutarse de forma independiente.
 
+## Interpretación del informe CSV del analizador de preparación para la nube {#cra-csv-report}
 
-Siga los pasos a continuación para descargar el informe CSV para Adobe Experience Manager (AEM) 6.1 y 6.2:
+Al hacer clic en la opción **CSV** desde la instancia de AEM, el formato CSV del informe del analizador de preparación para la nube se crea a partir de la caché de resultados y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`.
 
-1. Vaya a **Adobe Experience Manager Web ConsoleConfiguración** mediante `https://serveraddress:serverport/system/console/configMgr`.
-
-1. Seleccione la ficha **Estado** y busque Detector **de** patrones en la lista desplegable, como se muestra en la figura siguiente.
-
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. Puede descargar el informe de resumen en una carpeta zip o en formato JSON.
-
-## Interpretación del informe CSV del analizador de preparación para la nube {#crs-csv-report}
-
-Al hacer clic en la opción **CSV** desde la instancia de AEM, el formato CSV del informe del analizador de preparación para la nube se crea a partir de la caché de resultados y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`. Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
+Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
 
 El formato CSV del informe incluye información que se genera a partir de la salida del detector de patrones, ordenada y organizada por tipo de categoría, subtipo y nivel de importancia. Su formato es adecuado para visualizarlo y editarlo en una aplicación como Microsoft Excel. Su finalidad es proporcionar toda la información de búsqueda en un formato repetible que pueda resultar útil al comparar los informes con el paso del tiempo para medir el progreso.
 
@@ -189,7 +178,7 @@ La duración predeterminada de la caché de CRA es de 24 horas. Con la opción p
 El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
+El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante **CRXDE Lite**.
 
 
 
