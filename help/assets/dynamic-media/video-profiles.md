@@ -1,10 +1,10 @@
 ---
 title: perfiles de vídeo
-description: Dynamic Media ya incluye un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede añadir recortes inteligentes a los vídeos.
+description: Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede añadir recortes inteligentes a los vídeos.
 translation-type: tm+mt
-source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '3676'
+source-wordcount: '3678'
 ht-degree: 20%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 20%
 
 # Video profiles{#video-profiles}
 
-Dynamic Media ya incluye un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de los clientes. Esto se conoce como flujo adaptable.
+Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de los clientes. Esto se conoce como flujo adaptable.
 
 A continuación se indican otros factores que determinan la calidad de los vídeos:
 
-* **Resolución del vídeo principal cargado**
+* **Resolución del vídeo de origen principal cargado**
 
    Si el vídeo MP4 se grabó con una resolución inferior, como 240p o 360p, no se puede transmitir en alta definición.
 
@@ -140,7 +140,7 @@ Por lo tanto, para todos los ajustes preestablecidos de codificación de vídeo 
 * Perfil H264
 * Velocidad de muestreo de audio
 
-Si los valores no son los mismos, puede seguir creando el perfil tal cual. Sin embargo, tenga en cuenta que la transmisión adaptable no será posible. En su lugar, los usuarios experimentarán un flujo de una sola velocidad de bits. Se recomienda editar los ajustes de codificación para utilizar los mismos valores en los ajustes preestablecidos de codificación individuales del perfil. (Tenga en cuenta que el perfil/editor de ajustes preestablecidos de vídeo debe garantizar la paridad de los ajustes de codificación de vídeo adaptable si está activado &quot;Codificar para flujo adaptable&quot;).
+Si los valores no son los mismos, puede seguir creando el perfil tal cual. Sin embargo, tenga en cuenta que la transmisión adaptable no será posible. En su lugar, los usuarios experimentarán un flujo de una sola velocidad de bits. Se recomienda editar los ajustes de codificación para utilizar los mismos valores en los ajustes preestablecidos de codificación individuales del perfil. (Tenga en cuenta que el editor de ajustes preestablecidos/perfil de vídeo debe garantizar la paridad de los ajustes de codificación de vídeo adaptable si está activado &quot;Codificar para flujo adaptable&quot;).
 
 Consulte también [Creación de un perfil de codificación de vídeo para flujo continuo](#creating-a-video-encoding-profile-for-progressive-streaming)progresivo.
 
@@ -337,7 +337,7 @@ Pulse el icono de información para ver una descripción del flujo adaptable. (S
 1. En la página Perfil de codificación de vídeo, introduzca un nuevo nombre para el perfil.
 1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada. Pulse el icono de información para ver una descripción del flujo adaptable. (Si está copiando un perfil de vídeo progresivo, no active la casilla de verificación).
 
-   En el modo Dynamic Media: híbrido, si un ajuste preestablecido de vídeo WebM forma parte del perfil de vídeo, no es posible **[!UICONTROL codificar para flujo]** adaptable porque todos los ajustes preestablecidos deben ser MP4.
+   En Dynamic Media: modo híbrido, si un ajuste preestablecido de vídeo WebM forma parte del perfil de vídeo, no es posible **[!UICONTROL codificar para flujo]** adaptable porque todos los ajustes preestablecidos deben ser MP4.
 1. En el encabezado Ajustes preestablecidos de codificación de vídeo, agregue, edite o elimine los ajustes preestablecidos de codificación de vídeo que componen el perfil.
 
    Puntee en el icono de información que hay junto a cada opción en las fichas Básico y Avanzado para ver la configuración y las descripciones recomendadas.
