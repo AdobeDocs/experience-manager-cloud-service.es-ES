@@ -2,10 +2,10 @@
 title: Administración de actividades
 description: La consola Actividades permite crear, organizar y administrar las actividades de marketing de las marcas
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 87%
+source-wordcount: '2002'
+ht-degree: 86%
 
 ---
 
@@ -50,7 +50,7 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 >
 >You must secure the activity settings node `cq:ActivitySettings` on the publish instance so that it is inaccessible to normal users. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
->Consulte Requisitos previos para la integración con Adobe Destinatario para obtener información detallada.
+>Consulte Requisitos previos para la integración con Adobe Target para obtener información detallada.
 <!--
 >See [Prerequisites for Integrating with Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) for detailed information.
 -->
@@ -130,7 +130,7 @@ Debe publicar actividades para que puedan estar disponibles. Por el contrario, e
 
 >[!NOTE]
 >
->Cuando se cancela la publicación de una actividad,
+>Al cancelar la publicación de una actividad, el estado de la actividad no cambia a menos que actualice la página.
 
 Para publicar o cancelar la publicación de actividades:
 
@@ -166,6 +166,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 
    * Desactiva la actividad actual
    * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![Convirtiendo ganador](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
@@ -187,7 +188,7 @@ Cuando se sincroniza una actividad, se crea la campaña correspondiente en Adobe
 * Las actividades de la instancia de publicación tienen el mismo nombre que la campaña de Adobe Target correspondiente.
 * Activities on the author instance correspond with Target campaigns of the same name with the `_author` suffix.
 
-![Sincronización con Adobe Destinatario](/help/sites-cloud/authoring/assets/activities-synch.png)
+![Sincronización con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 
 Las actividades de creación se sincronizan inmediatamente cuando se modifica la actividad. La sincronización inmediata permite la simulación de actividades con ContextHub.
 
