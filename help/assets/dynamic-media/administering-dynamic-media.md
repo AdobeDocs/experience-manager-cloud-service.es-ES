@@ -2,17 +2,17 @@
 title: Configuración de Dynamic Media
 description: Para configurar medios dinámicos, debe configurar los medios dinámicos y administrar los ajustes preestablecidos de imagen y visor
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 18%
+source-wordcount: '173'
+ht-degree: 3%
 
 ---
 
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) le ayuda a administrar recursos al ofrecer recursos de marketing y comercialización visuales enriquecidos a petición, que se escalan automáticamente para consumo en sitios web, móviles y sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) le ayuda a administrar los recursos al ofrecer una amplia comercialización visual y recursos de marketing a petición, escalados automáticamente para consumo en sitios web, móviles y sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -40,4 +40,4 @@ Consulte también los siguientes temas:
 >
 >**Si está actualizando:**
 >
->* Una vez que AEM esté en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si está en una instancia actualizada de AEM y es nuevo en Dynamic Media, es posible que tenga que volver a procesar los recursos para activarlos con Dynamic Media.
+>* Una vez que AEM esté en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si se encuentra en una instancia actualizada de AEM y es nuevo en Dynamic Media, es posible que tenga que volver a procesar los recursos para activarlos con Dynamic Media.
