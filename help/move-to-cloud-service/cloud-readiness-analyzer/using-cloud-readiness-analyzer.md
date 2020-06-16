@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta 
 Una manera sencilla de iniciar la generación del informe a través de la interfaz HTTP es con el siguiente comando:
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP GET y, una vez generado el informe, se puede ver desde la caché en otro cliente o desde la herramienta CSV en la instancia de AEM.
+Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP GET y, una vez generado el informe, se puede ver desde la caché de otro cliente o desde la herramienta CSV en la interfaz de usuario de AEM.
 
 ### Respuestas (#http-response)
 
