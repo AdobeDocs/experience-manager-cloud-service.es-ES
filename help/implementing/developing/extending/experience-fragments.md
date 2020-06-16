@@ -1,6 +1,6 @@
 ---
 title: Fragmentos de experiencias
-description: Amplíe Adobe Experience Manager como fragmentos de experiencia de servicios en la nube.
+description: Extender el Adobe Experience Manager como fragmentos de experiencias Cloud Service.
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 workflow-type: tm+mt
@@ -127,7 +127,7 @@ The only additional configuration is to ensure that the components are [allowed 
 consiste en un grupo de componentes junto con una presentación,
 
 * puede existir independientemente de una página de AEM.
-* Uno de los casos de uso de estos grupos es para incrustar contenido en puntos de contacto de terceros, como Adobe Destinatario.
+* Uno de los casos de uso de estos grupos es para incrustar contenido en puntos de contacto de terceros, como Adobe Target.
 
 Reescritura de vínculos predeterminada {#default-link-rewriting}
 
@@ -139,10 +139,10 @@ Reescritura de vínculos predeterminada {#default-link-rewriting}
 crear un fragmento de experiencia,
 
 * añadir componentes a la misma,
-* y, a continuación, expórtela como una Oferta de Adobe Destinatario, ya sea en formato HTML o JSON.
-* Esta función se puede activar en una instancia de autor de AEM. Requiere una configuración válida de Adobe Destinatario y configuraciones para el Externalizador de vínculos.
+* y, a continuación, expórtela como una Oferta de Adobe Target, ya sea en formato HTML o JSON.
+* Esta función se puede activar en una instancia de autor de AEM. Requiere una configuración de Adobe Target válida y configuraciones para el Externalizador de vínculos.
 
-El Externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión HTML de la Oferta de Destinatario, que posteriormente se envía a Adobe Destinatario. Esto es necesario, ya que Adobe Destinatario requiere que todos los vínculos dentro de la Oferta HTML de Destinatario sean de acceso público; esto significa que los recursos a los que hacen referencia los vínculos y el propio fragmento de experiencias deben publicarse antes de poder utilizarse.
+El Externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión HTML de la Oferta de Destinatario, que se envía posteriormente a Adobe Target. Esto es necesario, ya que Adobe Target requiere que todos los vínculos dentro de la Oferta HTML de Destinatario puedan ser accesibles al público; esto significa que los recursos a los que hacen referencia los vínculos y el propio fragmento de experiencias deben publicarse antes de poder utilizarse.
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
@@ -171,7 +171,7 @@ Los elementos `html`, `head`y `body` se reemplazan por `div` elementos. Los elem
    >
    >Los vínculos de estos atributos se ejecutan a través del Externalizador de vínculos de AEM `publishLink()` para recrear la dirección URL como si estuviera en una instancia publicada y, como tal, disponible públicamente.
 
-   Al utilizar una implementación lista para usar, el proceso descrito anteriormente debería ser suficiente para generar la Oferta de Destinatario a partir del fragmento de experiencias y luego exportarla a Adobe Destinatario. Sin embargo, hay algunos casos de uso que no se tienen en cuenta en este proceso; entre ellos se incluyen:`publishLink()`
+   Al utilizar una implementación lista para usar, el proceso descrito anteriormente debería ser suficiente para generar la Oferta de Destinatario a partir del fragmento de experiencias y luego exportarla a Adobe Target. Sin embargo, hay algunos casos de uso que no se tienen en cuenta en este proceso; entre ellos se incluyen:`publishLink()`
 
 Asignación de Sling disponible solo en la instancia de publicación
 
