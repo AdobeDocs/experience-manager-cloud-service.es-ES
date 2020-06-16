@@ -3,42 +3,49 @@ title: Descargar recursos de AEM
 description: Obtenga información sobre cómo descargar recursos de AEM y activar o desactivar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '771'
 ht-degree: 4%
 
 ---
 
 
-# Descargar recursos de AEM {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Puede descargar recursos, incluidas las representaciones estáticas y dinámicas. Los recursos descargados se incluyen en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 recursos totales por trabajo de exportación.
+Puede descargar recursos, incluidas las representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados se incluyen en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 recursos totales por trabajo de exportación.
 
 >[!NOTE]
 >
->Para poder descargar los recursos, los miembros deben tener permisos para iniciar flujos de trabajo que activen la descarga de recursos.
-
-Para descargar recursos, navegue hasta un recurso, selecciónelo y toque o haga clic en el icono **[!UICONTROL Descargar]** de la barra de herramientas. En el cuadro de diálogo resultante, especifique las opciones de descarga.
+>Destinatarios de correos electrónicos deben ser miembros del `dam-users` grupo para acceder al vínculo de descarga ZIP del mensaje de correo electrónico. Para poder descargar los recursos, los miembros deben tener permisos para iniciar flujos de trabajo que activen la descarga de recursos.
 
 No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de medios mixtos y Conjuntos de carrusel.
 
-![Opciones disponibles al descargar recursos de Recursos AEM](assets/asset_download_dialog.png)
+**Para descargar recursos,**
 
-*Figura: Opciones disponibles al descargar recursos de Recursos AEM.*
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. En la página Navegación, toque **[!UICONTROL Recursos > Archivos]**.
+1. Vaya a una carpeta que contenga los recursos que desee descargar.
+1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.
+1. En la barra de herramientas, toque **[!UICONTROL Descargar]**.
 
-Las siguientes son las opciones de exportación y descarga. Las representaciones dinámicas son exclusivas de Dynamic Media y permiten generar representaciones sobre la marcha además del recurso seleccionado; esta opción solo está disponible si tiene Dynamic Media activado.
+   ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download.png)
 
-| Opciones de exportación o descarga | Descripciones |
-|---|---|
-| [!UICONTROL Assets] | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación. |
-| [!UICONTROL Representaciones] | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
-| [!UICONTROL Representaciones dinámicas] | Una representación dinámica genera otras representaciones sobre la marcha. Cuando selecciona esta opción, también selecciona las representaciones que desea crear dinámicamente seleccionando una de las listas de ajustes preestablecidos de imagen. Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen (por ejemplo, para invertir la imagen) |
-| [!UICONTROL Crear una carpeta independiente para cada recurso] | Seleccione esta opción para conservar la jerarquía de carpetas al descargar recursos. De forma predeterminada, la jerarquía de carpetas se ignora y todos los recursos se descargan en una carpeta del sistema local. |
+   *Opciones del cuadro de diálogo Descargar.*
 
-La opción Representaciones está disponible si el recurso tiene representaciones. La opción de subrecursos está disponible si el recurso incluye subrecursos.
+1. En el cuadro de diálogo Descargar, seleccione las opciones de descarga que desee.
 
-Cuando selecciona una carpeta para descargar, se descarga la jerarquía completa de recursos bajo la carpeta. Para incluir cada recurso que descargue (incluidos los recursos de las carpetas secundarias anidadas en la carpeta principal) en una carpeta individual, seleccione **[!UICONTROL Crear una carpeta independiente para cada recurso]**.
+   | Opción de descarga | Descripción |
+   |---|---|
+   | **[!UICONTROL Crear una carpeta independiente para cada recurso]** | Seleccione esta opción para incluir cada recurso que descargue, incluidos los recursos de carpetas secundarias anidados en la carpeta principal del recurso, en una carpeta del equipo local. Cuando esta opción *no está* seleccionada, de forma predeterminada se ignora la jerarquía de carpetas y todos los recursos se descargan en una carpeta del equipo local. |
+   | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para que se envíe una notificación por correo electrónico al destinatario. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que se personalizan durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación.<br>La opción de subrecursos está disponible si el recurso original tiene subrecursos. |
+   | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
+   | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde AEM. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
+   | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de las que aparecen en la lista Ajuste preestablecido [de](/help/assets/dynamic-media/image-presets.md) imagen. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como invertir la imagen. La opción solo está disponible si se ha [!DNL Dynamic Media] activado. |
+
+1. En el cuadro de diálogo, toque **[!UICONTROL Descargar]**.
+
 
 ## Habilitar servlet de descarga de recursos {#enable-asset-download-servlet}
 
@@ -60,7 +67,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza 
 
 ## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
 
-El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
+El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish actualizando la configuración del despachante para bloquear las solicitudes de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
 
 1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtros.
 
