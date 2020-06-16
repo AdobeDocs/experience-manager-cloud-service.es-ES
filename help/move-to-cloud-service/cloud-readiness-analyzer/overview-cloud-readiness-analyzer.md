@@ -2,9 +2,9 @@
 title: Información general sobre el analizador de preparación para la nube
 description: Información general sobre el analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ El analizador de preparación para la nube ayuda a acelerar los procesos de eval
 
 Esta herramienta genera un informe que identifica las áreas de posible refactorización, que es el primer paso en el viaje de transición a AEM como Cloud Service.
 
-## Informe de resumen en el analizador de preparación para la nube {#summary-report}
+## Informe del analizador de preparación para la nube {#cra-report}
 
-El informe de resumen del analizador de preparación para la nube se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización. El informe consiste en categorías de problemas que deben resolverse antes de una implementación exitosa en AEM como Cloud Service.
+El informe del analizador de preparación para la nube se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización. El informe consiste en categorías de problemas que deben resolverse antes de una implementación exitosa en AEM como Cloud Service.
 
-El informe resumido incluye las siguientes categorías:
+El informe del analizador de preparación para la nube incluye las siguientes categorías:
 
 * Funcionalidad de la aplicación que se debe refactorizar
 * Elementos de repositorio que deben moverse a una ubicación admitida
@@ -28,7 +28,7 @@ El informe resumido incluye las siguientes categorías:
 * Problemas de implementación y configuración
 * Funciones de AEM 6.x que se han sustituido por nuevas funciones o que actualmente no son compatibles con AEM como Cloud Service
 
-En el informe resumido se proporciona información adicional sobre las categorías y las posibles consecuencias y soluciones asociadas con esas categorías mediante enlaces.
+Se proporciona información adicional sobre las categorías y posibles implicaciones y soluciones asociadas con dichas categorías mediante vínculos desde el informe del analizador de preparación para la nube.
 
 >[!NOTE]
 >El informe del analizador de preparación para la nube acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a AEM como Cloud Service al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
