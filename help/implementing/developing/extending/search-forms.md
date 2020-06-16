@@ -1,6 +1,6 @@
 ---
 title: Configurar formularios de búsqueda
-description: Configuración de formularios de búsqueda para Adobe Experience Manager como un servicio de nube.
+description: Configuración de formularios de búsqueda para Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Configurar formularios de búsqueda {#configuring-search-forms}
 
-Adobe Experience Manager como servicio de nube incluye un potente mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
+Adobe Experience Manager como Cloud Service viene con un poderoso mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
 
 En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar el contenido. Éstas contienen facetas predefinidas como Fecha **de** modificación, Estado **de** publicación o Estado **de** Live Copy para ayudarle a explorar rápidamente los recursos que necesita.
 
