@@ -2,7 +2,7 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -167,7 +167,7 @@ Los siguientes valores de respuesta son posibles:
 * `400 Bad Request`:: Indica que se produjo un error con la solicitud. Un mensaje en formato Detalles del problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) proporciona más detalles.
 * `401 Unauthorized`:: No se autorizó la solicitud.
 * `500 Internal Server Error`:: Indica que se ha producido un error de servidor interno. Un mensaje en formato Detalles del problema proporciona más detalles.
-* `503 Service Unavailable`:: Indica que el servidor está ocupado con otra respuesta y no puede atender esta solicitud de forma oportuna. Esto solo sucede cuando se realizan solicitudes sincrónicas. Un mensaje en formato Detalles del problema proporciona más detalles.
+* `503 Service Unavailable`:: Indica que el servidor está ocupado con otra respuesta y no puede atender esta solicitud de forma oportuna. Esto sólo es probable cuando se realizan solicitudes sincrónicas. Un mensaje en formato Detalles del problema proporciona más detalles.
 
 ## Ajuste de duración de caché {#cache-adjustment}
 
