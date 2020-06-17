@@ -2,19 +2,19 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Para completar
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # Directrices de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-El código que se ejecuta en AEM como servicio de nube debe tener en cuenta que siempre se ejecuta en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
+El código que se ejecuta en AEM como Cloud Service debe tener en cuenta que siempre se ejecuta en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
 
-Durante la actualización de AEM como servicio de nube, habrá instancias con código antiguo y nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo código y el nuevo código debe ser capaz de tratar el contenido antiguo.
+Durante la actualización de AEM como Cloud Service, habrá instancias con código antiguo y nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo código y el nuevo código debe ser capaz de tratar el contenido antiguo.
 <!--
 
 >[!NOTE]
@@ -22,7 +22,7 @@ Durante la actualización de AEM como servicio de nube, habrá instancias con c�
 
 -->
 
-Si es necesario identificar al maestro en el clúster, la API de Apache Sling Discovery puede utilizarse para detectarla.
+Si existe la necesidad de identificar el principal en el clúster, la API de Apache Sling Discovery puede utilizarse para detectarlo.
 
 ## Estado en memoria {#state-in-memory}
 
@@ -30,7 +30,7 @@ El estado no debe guardarse en la memoria sino en el repositorio. De lo contrari
 
 ## Estado en el sistema de archivos {#state-on-the-filesystem}
 
-El sistema de archivos de la instancia no debe usarse en AEM como un servicio de nube. El disco es efímero y se eliminará cuando se reciclen las instancias. Es posible el uso limitado del sistema de archivos para almacenamientos temporales relacionados con el procesamiento de solicitudes individuales, pero no se debe abusar de archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y tener limitaciones de disco.
+El sistema de archivos de la instancia no debe utilizarse en AEM como Cloud Service. El disco es efímero y se eliminará cuando se reciclen las instancias. Es posible el uso limitado del sistema de archivos para almacenamientos temporales relacionados con el procesamiento de solicitudes individuales, pero no se debe abusar de archivos enormes. Esto se debe a que puede tener un impacto negativo en la cuota de uso de recursos y tener limitaciones de disco.
 
 Como ejemplo en el caso de que no se admita el uso del sistema de archivos, el nivel Publicar debe garantizar que todos los datos que deban conservarse se envíen a un servicio externo para un almacenamiento a largo plazo.
 
@@ -40,7 +40,7 @@ De manera similar, con todo lo que sucede asincrónicamente como actuar en event
 
 ## Tareas en segundo plano y trabajos de larga duración {#background-tasks-and-long-running-jobs}
 
-El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser resiliente y la mayoría de las importaciones deben poder reanudarse. Esto significa que si el código se vuelve a ejecutar, no debería volver a inicio desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM como servicio de nube es más probable que se produzca una eliminación de instancia.
+El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser resiliente y la mayoría de las importaciones deben poder reanudarse. Esto significa que si el código se vuelve a ejecutar, no debería volver a inicio desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un nuevo requisito para este tipo de código, en AEM como Cloud Service es más probable que se produzca una eliminación de instancia.
 
 Para minimizar el problema, se deben evitar los trabajos de larga duración si es posible, y se deben reanudar al menos. Para ejecutar estos trabajos, utilice Sling Jobs, que cuenta con una garantía de al menos una vez y por lo tanto si se interrumpen, será reejecutado lo antes posible. Pero probablemente no deberían volver a inicio desde el principio. Para programar estos trabajos, es mejor utilizar el Planificador Trabajos [de](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) Sling como una ejecución al menos una vez.
 
@@ -50,7 +50,7 @@ De manera similar, con todo lo que está sucediendo asincrónicamente, como actu
 
 ## Conexiones HTTP salientes {#outgoing-http-connections}
 
-Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y de espera de lectura razonables. Para el código que no aplica estos tiempos de espera, las instancias de AEM que se ejecutan en AEM como un servicio de nube exigirán tiempos de espera globales. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones utilizadas por las siguientes bibliotecas de Java populares:
+Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y de espera de lectura razonables. Para el código que no aplique estos tiempos de espera, las instancias de AEM que se ejecuten en AEM como Cloud Service aplicarán un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones utilizadas por las siguientes bibliotecas de Java populares:
 
 Adobe recomienda el uso de la biblioteca [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x proporcionada para realizar conexiones HTTP.
 
@@ -62,13 +62,13 @@ Las alternativas que se sabe que funcionan, pero que pueden requerir que usted m
 
 ## No hay personalizaciones de IU clásicas {#no-classic-ui-customizations}
 
-AEM como servicio de nube solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
+AEM como Cloud Service solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
 
 ## Evitar binarios nativos {#avoid-native-binaries}
 
 El código no podrá descargar archivos binarios en tiempo de ejecución ni modificarlos. Por ejemplo, no podrá desempaquetar `jar` ni `tar` archivos.
 
-## Sin archivos binarios de flujo continuo a través de AEM como un servicio de nube {#no-streaming-binaries}
+## Sin archivos binarios de flujo continuo a través de AEM como Cloud Service {#no-streaming-binaries}
 
 Se debe acceder a los binarios a través de la CDN, que servirá binarios fuera de los servicios principales de AEM.
 
@@ -76,7 +76,7 @@ Por ejemplo, no utilice `asset.getOriginal().getStream()`, lo que desencadena la
 
 ## No hay agentes de replicación inversa {#no-reverse-replication-agents}
 
-La replicación inversa de Publicar en autor no se admite en AEM como un servicio de nube. Si se necesita una estrategia de este tipo, puede utilizar un almacén de persistencia externo que se comparte entre el conjunto de instancias de Publish y, potencialmente, el clúster de Autor.
+La replicación inversa de Publicar en autor no se admite en AEM como Cloud Service. Si se necesita una estrategia de este tipo, puede utilizar un almacén de persistencia externo que se comparte entre el conjunto de instancias de Publish y, potencialmente, el clúster de Autor.
 
 ## Es posible que los agentes de replicación de avanzada necesiten ser trasladados {#forward-replication-agents}
 
@@ -96,7 +96,7 @@ Para cambiar los niveles de registro de los entornos de nube, se debe modificar 
 
 >[!NOTE]
 >
->Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia de AEM como servicio de nube. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como un servicio](/help/implementing/deploying/overview.md)de nube.
+>Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, insertarlos en una instancia de AEM como Cloud Service. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activación del nivel de registro DEBUG**
 
@@ -134,7 +134,7 @@ Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la 
 
 Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo, pero no en fase o producción. No se puede escribir en el repositorio inmutable (`/libs`, `/apps`) durante la ejecución, por lo que al intentar hacerlo se generarán errores.
 
-Hay disponible un conjunto de herramientas para depurar AEM como entornos de desarrollador de Cloud Service en Developer Console para entornos de desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
+Hay un conjunto de herramientas disponibles para depurar AEM como entornos de desarrollador Cloud Service en Developer Console para entornos de desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,7 +160,7 @@ También resulta útil para la depuración, ya que la consola para desarrollador
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Cloud Manager - Función de desarrollador&quot; en la Consola de administración, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como servicio de nube. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Cloud Manager - Función de desarrollador&quot; en Admin Console, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
 
