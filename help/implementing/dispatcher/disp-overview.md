@@ -2,9 +2,9 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 9%
 
 ---
@@ -138,7 +138,7 @@ Los archivos anteriores hacen referencia a los archivos de configuración inmuta
 
 **Archivos de configuración inmutables**
 
-Estos archivos forman parte del marco base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
+Estos archivos forman parte del marco de base y hacen cumplir las normas y las prácticas recomendadas. Los archivos se consideran inmutables porque modificarlos o eliminarlos localmente no afectará a su implementación, ya que no se transferirán a su instancia de Cloud.
 
 Se recomienda que los archivos anteriores hagan referencia a los archivos inmutables que se enumeran a continuación, seguidos de cualquier declaración o anulación adicional. Cuando se implementa la configuración del distribuidor en un entorno de nube, se utilizará la versión más reciente de los archivos inmutables, independientemente de la versión que se haya utilizado en el desarrollo local.
 
@@ -236,7 +236,7 @@ La siguiente tabla muestra los módulos apache admitidos:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Los clientes no pueden agregar módulos arbitrarios, sin embargo se puede considerar incluir módulos adicionales en el producto en el futuro. Los clientes pueden encontrar la lista de directivas disponibles para una versión de Dispatcher determinada ejecutando la &quot;lista blanca de validadores&quot; en el SDK, como se describe más arriba.
+Los clientes no pueden agregar módulos arbitrarios, sin embargo se puede considerar incluir módulos adicionales en el producto en el futuro. Los clientes pueden encontrar la lista de directivas disponibles para una versión de Dispatcher determinada ejecutando el comando allow list del validador en el SDK, como se describe anteriormente.
 
 La lista de permitidos contiene una lista de directivas Apache que están permitidas en una configuración de cliente. Si no se permite una directiva, la herramienta registra un error y devuelve un código de salida distinto de cero. Si no se proporciona ninguna lista permitida en la línea de comandos (que es la forma en que se debe invocar), la herramienta utiliza una lista permitida predeterminada que Cloud Manager utilizará para la validación antes de implementarla en entornos de nube.
 
