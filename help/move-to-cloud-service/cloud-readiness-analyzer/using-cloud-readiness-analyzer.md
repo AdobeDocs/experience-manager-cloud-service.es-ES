@@ -2,10 +2,10 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 0%
+source-wordcount: '1713'
+ht-degree: 1%
 
 ---
 
@@ -33,14 +33,16 @@ Siga la sección siguiente para comprender las consideraciones importantes al ej
 
 ## Disponibilidad {#availability}
 
-El analizador de preparación para la nube se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de Adobe Experience Manager de origen (AEM).
+El analizador de preparación para la nube se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue el analizador de preparación para la nube del portal de distribución de software *pendiente*.
+>Descargue el analizador de preparación para la nube del portal de distribución de software.
 
-## Ejecución del analizador de preparación para la nube {#running-tool}
+## Visualización del informe del analizador de preparación para la nube {#viewing-report}
 
-Siga esta sección para obtener información sobre cómo ejecutar el analizador de preparación para la nube:
+### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+
+Siga esta sección para obtener información sobre la vista del informe del analizador de preparación para la nube:
 
 1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
 
@@ -51,41 +53,11 @@ Siga esta sección para obtener información sobre cómo ejecutar el analizador 
    >[!NOTE]
    >Tendrá que desplazarse hacia abajo por la página para vista del informe completo.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Interpretación del informe del analizador de preparación para la nube {#cra-report}
-
-Cuando se ejecuta el analizador de preparación para la nube en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
-
-El formato del informe es:
-
-* *Información general* del informe: Información sobre el propio informe, incluso cuando se generó.
-* *Información general* del sistema: Información sobre el sistema AEM en el que se ejecutó el CRA.
-* *Búsqueda de Categorías*: Varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: Nombre de la Categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
-
-Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
-
-Siga la tabla siguiente para comprender los niveles de importancia:
-
-| Importancia | Descripción |
-|--- |--- |
-| INFORMACIÓN | Esta conclusión se proporciona con fines informativos. |
-| CONSEJO | Este hallazgo es potencialmente un problema de actualización. Se recomienda una investigación más a fondo. |
-| PRINCIPAL | Es probable que este hallazgo sea un problema de actualización que se debe abordar. |
-| CRÍTICO | Es muy probable que este hallazgo sea un problema de actualización que debe solucionarse para evitar la pérdida de funciones o rendimiento. |
-
-### Adobe Experience Manager 6.3 and later {#aem-older-version}
-
-Para AEM 6.3 y versiones posteriores, la forma principal de ejecutar el analizador de preparación para la nube es:
-
-1. Seleccione la instancia de Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador** de preparación para la nube.
-
-   >[!NOTE]
-   >El CRA iniciará un proceso en segundo plano para generar el informe en cuanto se abra la herramienta. Muestra una indicación de que la generación del informe está en curso hasta que el informe está listo. Puede cerrar la ficha del explorador y regresar más tarde para realizar la vista del informe cuando se haya completado.
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe completo de CRA en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
 
-   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >Puede forzar el CRA para que borre su caché y vuelva a generar el informe haciendo clic en **Actualizar informe**.
@@ -98,6 +70,32 @@ Para Adobe Experience Manager 6.1, la herramienta no es funcional y sólo se pue
 
 >[!NOTE]
 >En todas las versiones, el detector de patrones incluido puede ejecutarse de forma independiente.
+
+## Interpretación del informe del analizador de preparación para la nube {#cra-report}
+
+Cuando la herramienta Analizador de preparación para la nube se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
+
+El formato del informe es:
+
+* **Información general** del informe: Información sobre el propio informe e información como:
+   * *Tiempo* del informe: Cuando se generó el contenido del informe y se puso a disposición por primera vez.
+   * *Tiempo* de caducidad: Cuando caduque la caché de contenido del informe.
+   * *Período* de tiempo de generación: Tiempo empleado por el proceso de generación de contenido del informe.
+   * *Recuento* de búsqueda: Número total de conclusiones incluidas en el informe.
+* **Información general** del sistema: Información sobre el sistema AEM en el que se ejecutó el CRA.
+* **Búsqueda de Categorías**: Varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: Nombre de la Categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
+
+Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
+
+Siga la tabla siguiente para comprender los niveles de importancia:
+
+| Importancia | Descripción |
+|--- |--- |
+| INFORMACIÓN | Esta conclusión se proporciona con fines informativos. |
+| CONSEJO | Este hallazgo es potencialmente un problema de actualización. Se recomienda una investigación más a fondo. |
+| PRINCIPAL | Es probable que este hallazgo sea un problema de actualización que se debe abordar. |
+| CRÍTICO | Es muy probable que este hallazgo sea un problema de actualización que debe solucionarse para evitar la pérdida de funciones o rendimiento. |
+
 
 ## Interpretación del informe CSV del analizador de preparación para la nube {#cra-csv-report}
 
