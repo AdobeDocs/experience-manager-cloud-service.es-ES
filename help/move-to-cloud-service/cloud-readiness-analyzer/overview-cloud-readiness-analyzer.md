@@ -2,9 +2,9 @@
 title: Información general sobre el analizador de preparación para la nube
 description: Información general sobre el analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Se proporciona información adicional sobre las categorías y posibles implicaci
 >[!NOTE]
 >El informe del analizador de preparación para la nube acelera el proceso de estimación del tiempo y el coste necesarios para realizar la transición a AEM como Cloud Service al proporcionar información que, de lo contrario, tendría que recopilarse y evaluarse manualmente.
 
-También puede descargar el informe del analizador de preparación para la nube desde su instancia de AEM. Consulte **Visualización de los resultados en formato** CSV para obtener más detalles pendientes.
+También puede descargar el informe del analizador de preparación para la nube desde su instancia de AEM. Consulte [Visualización del informe](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) del analizador de preparación para la nube para obtener más detalles.
