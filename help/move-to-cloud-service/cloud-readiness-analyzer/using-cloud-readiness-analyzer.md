@@ -2,7 +2,7 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
+source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 1%
@@ -164,7 +164,7 @@ Los siguientes valores de respuesta son posibles:
 
 * `200 OK`:: La respuesta contiene los hallazgos del detector de patrones que se generaron durante la duración de frescura de la caché.
 * `202 Accepted, processing cache`:: Se proporcionan respuestas asincrónicas para indicar que la caché estaba obsoleta y que se está realizando una actualización.
-* `400 Bad Request`:: Indica que se produjo un error con la solicitud. Un mensaje en formato Detalles del problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) proporciona más detalles.
+* `400 Bad Request`:: Indica que se produjo un error con la solicitud. Un mensaje en formato Detalles del problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) para obtener más información.
 * `401 Unauthorized`:: No se autorizó la solicitud.
 * `500 Internal Server Error`:: Indica que se ha producido un error de servidor interno. Un mensaje en formato Detalles del problema proporciona más detalles.
 * `503 Service Unavailable`:: Indica que el servidor está ocupado con otra respuesta y no puede atender esta solicitud de forma oportuna. Esto sólo es probable cuando se realizan solicitudes sincrónicas. Un mensaje en formato Detalles del problema proporciona más detalles.
