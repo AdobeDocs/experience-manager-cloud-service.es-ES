@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ El analizador de preparación para la nube se puede descargar como archivo zip d
 
 ## Visualización del informe del analizador de preparación para la nube {#viewing-report}
 
-### Adobe Experience Manager 6.3 and later {#aem-later-versions}
+### Adobe Experience Manager 6.3.0 and later {#aem-later-versions}
 
 Siga esta sección para obtener información sobre la vista del informe del analizador de preparación para la nube:
 
@@ -64,7 +64,7 @@ Siga esta sección para obtener información sobre la vista del informe del anal
 
 ### Adobes Experience Manager 6.2 y 6.1 {#aem-specific-versions}
 
-El analizador de preparación para la nube está limitado en Adobe Experience Manager 6.2 a un vínculo que genera y descarga el informe CSV.
+La herramienta Analizador de preparación para la nube está limitada en Adobe Experience Manager 6.2 a un vínculo que genera y descarga el informe CSV.
 
 Para Adobe Experience Manager 6.1, la herramienta no es funcional y sólo se puede utilizar la interfaz HTTP.
 
@@ -77,11 +77,11 @@ Cuando la herramienta Analizador de preparación para la nube se ejecuta en la i
 
 El formato del informe es:
 
-* **Información general** del informe: Información sobre el propio informe e información como:
-   * *Tiempo* del informe: Cuando se generó el contenido del informe y se puso a disposición por primera vez.
-   * *Tiempo* de caducidad: Cuando caduque la caché de contenido del informe.
-   * *Período* de tiempo de generación: Tiempo empleado por el proceso de generación de contenido del informe.
-   * *Recuento* de búsqueda: Número total de conclusiones incluidas en el informe.
+* **Información general** del informe: Información sobre el propio informe e incluye la siguiente información:
+   * **Tiempo** del informe: Cuando se generó el contenido del informe y se puso a disposición por primera vez.
+   * **Tiempo** de caducidad: Cuando caduque la caché de contenido del informe.
+   * **Período** de tiempo de generación: Tiempo empleado por el proceso de generación de contenido del informe.
+   * **Recuento** de búsqueda: Número total de conclusiones incluidas en el informe.
 * **Información general** del sistema: Información sobre el sistema AEM en el que se ejecutó el CRA.
 * **Búsqueda de Categorías**: Varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: Nombre de la Categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
 
