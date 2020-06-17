@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 1%
 
 ## Consideraciones importantes sobre el uso del analizador de preparación para la nube {#imp-considerations}
 
-Siga la sección siguiente para comprender las consideraciones importantes al ejecutar el analizador de preparación para la nube (CRA):
+Siga la sección siguiente para comprender las consideraciones importantes para ejecutar el analizador de preparación para la nube (CRA):
 
 * El informe de CRA se crea con el resultado del detector [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)patrones de Adobe Experience Manager (AEM). La versión del detector de patrones utilizado por CRA se incluye en el paquete de instalación de CRA.
 
-* El CRA solo puede ser ejecutado por el usuario **administrador** o un usuario de los **administradores**.
+* El CRA solo puede ser ejecutado por el usuario **administrador** o un usuario del grupo **Administradores** .
 
 * CRA se admite en instancias de AEM con la versión 6.1 o posterior.
 
 * CRA puede ejecutarse en cualquier entorno, pero es preferible que se ejecute en un entorno de *etapa* .
 
    >[!NOTE]
-   >A fin de evitar un impacto en instancias críticas para el negocio, se recomienda ejecutar CRA en un entorno de *creación* lo más cercano posible al entorno de *producción* en las áreas de personalización, configuración, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno *Autor* de producción.
+   >Para evitar un impacto en las instancias críticas para el negocio, se recomienda ejecutar CRA en un entorno de *creación* lo más cercano posible al entorno de *producción* en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno *Autor* de producción.
 
 * La generación del contenido de los informes CRA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
 
@@ -55,7 +55,7 @@ Siga esta sección para obtener información sobre la vista del informe del anal
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en valores separados por comas (CSV). Haga clic en **CSV** para descargar el informe completo de CRA en formato de valores separados por comas (CSV), como se muestra en la figura siguiente.
+1. Una vez generado y mostrado el informe de CRA, tiene la opción de descargar el informe en formato de valores separados por comas (CSV) haciendo clic en **CSV**, como se muestra en la figura siguiente.
 
    ![image](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Cuando la herramienta Analizador de preparación para la nube se ejecuta en la i
 
 El formato del informe es:
 
-* **Información general** del informe: Información sobre el propio informe e incluye la siguiente información:
+* **Información general** del informe: Información sobre el propio informe que incluye la siguiente información:
    * **Tiempo** del informe: Cuando se generó el contenido del informe y se puso a disposición por primera vez.
    * **Tiempo** de caducidad: Cuando caduque la caché de contenido del informe.
    * **Período** de tiempo de generación: Tiempo empleado por el proceso de generación de contenido del informe.
@@ -176,7 +176,7 @@ La duración predeterminada de la caché de CRA es de 24 horas. Con la opción p
 El valor de duración de la caché se almacena como la `maxCacheAge` propiedad en el siguiente nodo de repositorio:
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRXDE Lite.
+El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
 
 
 
