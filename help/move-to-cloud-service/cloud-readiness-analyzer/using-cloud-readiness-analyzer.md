@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ Una manera sencilla de iniciar la generación del informe a través de la interf
 
 Una vez realizada una solicitud, el cliente no necesita permanecer activo para que se genere el informe. La generación de informes se puede iniciar con un cliente mediante una solicitud HTTP GET y, una vez generado el informe, se puede ver desde la caché de otro cliente o desde la herramienta CSV en la interfaz de usuario de AEM.
 
-### Respuestas (#http-response)
+### Respuestas {#http-responses}
 
 Los siguientes valores de respuesta son posibles:
 
