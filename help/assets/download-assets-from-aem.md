@@ -3,7 +3,7 @@ title: Descargar recursos de AEM
 description: Obtenga información sobre cómo descargar recursos de AEM y activar o desactivar la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 4%
@@ -29,7 +29,7 @@ No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de
 1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.
 1. En la barra de herramientas, toque **[!UICONTROL Descargar]**.
 
-   ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download.png)
+   ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download1.png)
 
    *Opciones del cuadro de diálogo Descargar.*
 
