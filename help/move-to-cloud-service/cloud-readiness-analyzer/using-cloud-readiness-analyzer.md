@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 El analizador de preparación para la nube se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue el analizador de preparación para la nube del portal de distribución de software.
+>Descargue el analizador de preparación para la nube del portal de distribución [de](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) software.
 
 ## Visualización del informe del analizador de preparación para la nube {#viewing-report}
 
