@@ -548,154 +548,152 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Ruta** del nodo de opciones Igual que la ruta **de** opciones, solo se encuentra en el campo predicado común y el otro es específico para los recursos.
-**Selección**&#x200B;única Si está activada, las opciones se procesan como casillas de verificación que solo permiten una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
+* **La ruta** del nodo de opciones es igual que la del ****
+
+* **Ruta** de opciones, solo que se encuentra en el campo predicado común, mientras que el otro es específico para recursos.
+
+* **Selección**&#x200B;única Si está activada, las opciones se procesan como casillas de verificación que solo permiten una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
 
 * **Nombre(s) de la propiedad Publicar y Live Copy** Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico Sitios.
 
-* &amp;ast; en las etiquetas de campo de la ficha **Configuración** , los campos son obligatorios y, si se dejan en blanco, aparecerá un mensaje de error.
+## &amp;ast; en las etiquetas de campo de la ficha **Configuración** , los campos son obligatorios y, si se dejan en blanco, aparecerá un mensaje de error.
 
-* Configuración de los formularios de búsqueda {#configuring-your-search-forms}**
+### Configuración de los formularios de búsqueda {#configuring-your-search-forms}
 
-## Creación/apertura de una configuración personalizada {#creating-opening-a-customized-configuration}
+1. Creación/apertura de una configuración personalizada {#creating-opening-a-customized-configuration}**********
 
-### Vaya a **Herramientas**, **General**, Formularios **de búsqueda**.
-
-1. Seleccione la configuración que desee personalizar.************
-
-1. Utilice el icono **Editar** para abrir la configuración y actualizarla.
+1. Vaya a **Herramientas**, **General**, Formularios **de búsqueda**.
+1. Seleccione la configuración que desee personalizar.****
+1. Utilice el icono **Editar** para abrir la configuración y actualizarla.[](#add-edit-a-predicate-field-and-define-field-settings)
 1. Si se trata de una nueva personalización, es probable que desee [agregar nuevos campos de predicado y definir la configuración](#add-edit-a-predicate-field-and-define-field-settings) según sea necesario. Si ya existe una personalización, puede seleccionar un campo existente y [actualizar la configuración](#add-edit-a-predicate-field-and-define-field-settings).
-1. Select **Done** to save the configuration. Los cambios se pueden ver la próxima vez que se utilice la configuración.[](#add-edit-a-predicate-field-and-define-field-settings)
-1. [!NOTE]**
 
-   >[!NOTE]Las configuraciones personalizadas se almacenan (según corresponda) en:
+   >Select **Done** to save the configuration. Los cambios se pueden ver la próxima vez que se utilice la configuración.
    >
-   >`/apps/cq/gui/content/facets/<option>`
+   >[!NOTE]
    >
-   >* `/apps/commerce/gui/content/facets/<option>`
-   >* Añadir/editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
+   >* `/apps/cq/gui/content/facets/<option>`Las configuraciones personalizadas se almacenan (según corresponda) en:
+   >* `/apps/cq/gui/content/facets/<option>`
 
 
-### Puede agregar o editar campos y definir o actualizar su configuración:{#add-edit-a-predicate-field-and-define-field-settings}
+### `/apps/commerce/gui/content/facets/<option>`
 
-[Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.
+Añadir/editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
 
-1. Si desea agregar un nuevo campo, abra la ficha **Seleccionar predicado** y arrastre el predicado requerido a la ubicación requerida. Por ejemplo, el predicado **Intervalo de fechas**:
-1. ![agregar un predicado](assets/csf-add-predicate.png)****
+1. [Puede agregar o editar campos y definir o actualizar su configuración:](#creating-opening-a-customized-configuration)
+1. [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.****
 
-   ![Dependiendo de si:](assets/csf-add-predicate.png)
+   Si desea agregar un nuevo campo, abra la ficha **Seleccionar predicado** y arrastre el predicado requerido a la ubicación requerida. Por ejemplo, el predicado **Intervalo de fechas**:
 
-1. Está agregando un nuevo campo:
+1. ![agregar un predicado](assets/csf-add-predicate.png)
+
+   * Dependiendo de si:
+
+      Está agregando un nuevo campo:****
 
    * Después de agregar el predicado, se abrirá la ficha **Configuración** y se mostrarán las propiedades que se pueden definir.
 
       Desea actualizar un predicado existente:****
+   Seleccione el campo de predicado (a la derecha) y, a continuación, abra la ficha **Configuración** .
 
-   * Seleccione el campo de predicado (a la derecha) y, a continuación, abra la ficha **Configuración** .
+   Por ejemplo, la configuración del predicado **Intervalo de fechas**:
 
-      Por ejemplo, la configuración del predicado **Intervalo de fechas**:
-   ![modificar predicado](assets/csf-modify-predicate.png)
+1. ![modificar predicado](assets/csf-modify-predicate.png)
 
-   Realice los cambios necesarios y confirme con **Finalizado**. Los cambios se pueden ver la próxima vez que se utilice la configuración.
+### Realice los cambios necesarios y confirme con **Finalizado**. Los cambios se pueden ver la próxima vez que se utilice la configuración.
 
-1. Vista preliminar de la configuración de búsqueda {#previewing-the-search-configuration}**
+1. Vista preliminar de la configuración de búsqueda {#previewing-the-search-configuration}
 
-### Seleccione el icono de Previsualización:{#previewing-the-search-configuration}
+   ![Seleccione el icono de Previsualización:](assets/csf-preview-icon.png)
 
 1. ![Icono de previsualización](assets/csf-preview-icon.png)
 
-   ![Esto mostrará los formularios de búsqueda tal como se mostrarán (completamente expandidos) en la columna Buscar de la consola adecuada.](assets/csf-preview-icon.png)
+   ![Esto mostrará los formularios de búsqueda tal como se mostrarán (completamente expandidos) en la columna Buscar de la consola adecuada.](assets/csf-preview-form.png)
 
 1. ![Formulario de previsualización](assets/csf-preview-form.png)
 
-   **Cierre** la previsualización para volver y finalizar la configuración.
+### **Cierre** la previsualización para volver y finalizar la configuración.
 
-1. Eliminación de un campo predicado {#deleting-a-predicate-field}**
+1. Eliminación de un campo predicado {#deleting-a-predicate-field}](#creating-opening-a-customized-configuration)
+1. [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.****
 
-### [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.
+   Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y, a continuación, seleccione el icono **Eliminar** (abajo a la izquierda).
 
-1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y, a continuación, seleccione el icono **Eliminar** (abajo a la izquierda).
-1. ![icono Eliminar](assets/csf-delete-icon.png)****
+1. ![icono Eliminar](assets/csf-delete-icon.png)
 
-   ![Un cuadro de diálogo solicitará la confirmación de la acción de eliminar.](assets/csf-delete-icon.png)
+1. Un cuadro de diálogo solicitará la confirmación de la acción de eliminar.****
 
-1. Confirme este y cualquier otro cambio con **Finalizado**.
+### Confirme este y cualquier otro cambio con **Finalizado**.
 
-1. Eliminación de una configuración (para restablecer el valor predeterminado) {#deleting-a-configuration-to-reinstate-the-default}**
+Eliminación de una configuración (para restablecer el valor predeterminado) {#deleting-a-configuration-to-reinstate-the-default}
 
-### Una vez que haya personalizado una configuración, se anularán los valores predeterminados. Puede restablecer la configuración predeterminada eliminando la configuración personalizada.{#deleting-a-configuration-to-reinstate-the-default}
-
-[!NOTE]
-
->[!NOTE]No puede eliminar las configuraciones predeterminadas.
+>[!NOTE]Una vez que haya personalizado una configuración, se anularán los valores predeterminados. Puede restablecer la configuración predeterminada eliminando la configuración personalizada.
 >
->La eliminación de una configuración personalizada se realiza desde la consola:
+>[!NOTE]
 
-Seleccione la configuración requerida (por ejemplo, Editor **de páginas (búsqueda de párrafos)**) y, a continuación, el icono **Eliminar** de la barra de herramientas:
+No puede eliminar las configuraciones predeterminadas.
 
-1. ![restaurar predeterminado](assets/csf-restore-default.png)****
+1. La eliminación de una configuración personalizada se realiza desde la consola:********
 
-   ![Se eliminará la configuración personalizada y se restablecerá la configuración predeterminada (esto se indica con la reaparición del símbolo de cerrojo en la consola).](assets/csf-restore-default.png)
+   Seleccione la configuración requerida (por ejemplo, Editor **de páginas (búsqueda de párrafos)**) y, a continuación, el icono **Eliminar** de la barra de herramientas:
 
-1. Predicados de opciones de Añada {#adding-options-predicates}
+1. ![restaurar predeterminado](assets/csf-restore-default.png)
 
-### Los predicados de opciones (Opciones, Propiedad de opciones) permiten configurar un elemento que se va a buscar. Normalmente se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de página.{#adding-options-predicates}
+### Se eliminará la configuración personalizada y se restablecerá la configuración predeterminada (esto se indica con la reaparición del símbolo de cerrojo en la consola).{#adding-options-predicates}
 
-El siguiente ejemplo (para buscar según la plantilla utilizada para crear una página) ilustra los pasos involucrados:
+Predicados de opciones de Añada {#adding-options-predicates}
 
-Cree el nodo que define la propiedad en la que se buscará.
+Los predicados de opciones (Opciones, Propiedad de opciones) permiten configurar un elemento que se va a buscar. Normalmente se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de página.
 
-1. Necesitará un nodo raíz que contenga definiciones de las opciones individuales para estar disponible para el usuario.
+1. El siguiente ejemplo (para buscar según la plantilla utilizada para crear una página) ilustra los pasos involucrados:
 
-   Los nodos de las opciones individuales necesitan las propiedades:
+   Cree el nodo que define la propiedad en la que se buscará.
 
-   `jcr:title` - la etiqueta de campo que se mostrará en el carril de búsqueda
+   Necesitará un nodo raíz que contenga definiciones de las opciones individuales para estar disponible para el usuario.
 
-   * `value` - el valor de propiedad en el que se buscará
-   * ![Definición de predicado](assets/csf-options-predicate-01.png)
+   * `jcr:title`Los nodos de las opciones individuales necesitan las propiedades:
+   * `jcr:title` - la etiqueta de campo que se mostrará en el carril de búsqueda
+   `value` - el valor de propiedad en el que se buscará](assets/csf-options-predicate-01.png)
 
-   [!NOTE]](assets/csf-options-predicate-01.png)
-
+   >![Definición de predicado](assets/csf-options-predicate-01.png)
+   >
+   >[!NOTE]***`/libs`
+   >
    >No ***debe*** cambiar nada en la `/libs` ruta.
    >
-   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).***`/libs`
+   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
    >
-   >El método recomendado para la configuración y otros cambios es:`/libs`
-   >
-   >Volver a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso, de:
-   >
-   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
-   >1. Realice los cambios en `/apps.`
-   >1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda. A continuación, seleccione **Editar**.
+   >1. El método recomendado para la configuración y otros cambios es:`/libs``/apps`
+   >1. Volver a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso, de:
+   >1. `/libs/cq/gui/content/common/options/predicates`
 
 
-1. En función de la configuración, agregue una propiedad **Options** o **Options** a la configuración.****
+1. Realice los cambios en `/apps.`**********
 
-1. Actualice los campos, en particular:********
-1. **Nombre de propiedad**
+1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda. A continuación, seleccione **Editar**.
+1. En función de la configuración, agregue una propiedad **Options** o **Options** a la configuración.
 
-   * **Especifique la propiedad node que se buscará en los nodos destinatario. Por ejemplo:**
+   * **Actualice los campos, en particular:**
 
-      `jcr:content/cq:template`
+      **Nombre de propiedad**
+
+      `jcr:content/cq:template`Especifique la propiedad node que se buscará en los nodos destinatario. Por ejemplo:
+
+   * `jcr:content/cq:template`**
 
       **Ruta del nodo de opción**
 
-   * **Seleccione la ruta donde se guardan las opciones. Por ejemplo:**
+      `/apps/cq/gui/content/common/options/predicates/templatetype`Seleccione la ruta donde se guardan las opciones. Por ejemplo:
+   `/apps/cq/gui/content/common/options/predicates/templatetype`](assets/csf-options-predicate-02.png)
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+1. ![Predicados de opciones](assets/csf-options-predicate-02.png)
+1. Select **Done** to save your configuration.****
 
-      ![Predicados de opciones](assets/csf-options-predicate-02.png)
-   Select **Done** to save your configuration.
-
-1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar - Filtros** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
-1. ![opciones utilizadas](assets/csf-options-usage.png)****
-
-   Permisos de usuario {#user-permissions}](assets/csf-options-usage.png)
+   Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar - Filtros** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
 
 
-## La siguiente tabla lista los permisos necesarios para realizar acciones de edición, eliminación y previsualización en los formularios de búsqueda.{#user-permissions}
+## ![opciones utilizadas](assets/csf-options-usage.png)
 
-
+Permisos de usuario {#user-permissions}
 
 <table>
  <thead>
@@ -715,7 +713,7 @@ Cree el nodo que define la propiedad en la que se buscará.
   </tr>
   <tr>
    </td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
+   </td>
   </tr>
  </tbody>
 </table>
