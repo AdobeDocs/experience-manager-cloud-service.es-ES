@@ -28,11 +28,11 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 * Los usuarios forman parte de los grupos correspondientes en cada implementación.
-* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. Para obtener información sobre [!DNL Experience Manager] 6.5, consulte Funcionalidad de Recursos [conectados en Experience Manager 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
+* For [!DNL Adobe Experience Manager] deployment types, one of the supported criteria is met. Para obtener información sobre [!DNL Experience Manager] 6.5, consulte Funcionalidad de Recursos [conectados en Recursos](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)Experience Manager 6.5.
 
-   |  | [!DNL Sites] como servicio de nube | [!DNL Experience Manager] 6.5 [!DNL Sites] sobre AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] in situ |
+   |  | [!DNL Sites] como Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sobre AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] in situ |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como servicio de nube ** | Compatible | Compatible | Compatible |
+   | **[!DNL Experience Manager Assets]como Cloud Service ** | Compatible | Compatible | Compatible |
    | **[!DNL Experience Manager]6.5[!DNL Assets]sobre AMS ** | Compatible | Compatible | Compatible |
    | **[!DNL Experience Manager]6.5[!DNL Assets]in situ ** | No compatible | No compatible | No compatible |
 
