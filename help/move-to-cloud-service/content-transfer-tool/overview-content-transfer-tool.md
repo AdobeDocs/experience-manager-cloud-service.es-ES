@@ -2,10 +2,10 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 75%
+source-wordcount: '639'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,7 @@ En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual
 
 Siga esta sección para conocer las directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido:
 
-* Es aconsejable realizar de antemano pruebas de compactación y consistencia del almacenamiento de datos en los repositorios para detectar posibles problemas y también reducir la basura presente en el repositorio.
+* Es aconsejable ejecutar [Revision Cleanup](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) y comprobaciones [de coherencia del almacén de](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) datos en el repositorio de **origen** para identificar posibles problemas y reducir el tamaño del repositorio.
 
 * Si la configuración de la red de Envío de contenido de AEM Cloud Author (CDN) está configurada para tener una lista blanca de direcciones IP, debe asegurarse de que las direcciones IP de entorno de origen también se añadan a la lista de permitidas para que el entorno de origen y el entorno de AEM Cloud puedan comunicarse entre sí.
 
