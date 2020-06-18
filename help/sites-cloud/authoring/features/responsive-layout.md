@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '1765'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -97,114 +97,114 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
    * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
-![Botón Girar el dispositivo a horizontal](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
-   ![Botón Girar el dispositivo a vertical](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)   **Seleccionar dispositivo**: le permite definir un dispositivo específico para emular de una lista (consulte el paso siguiente para obtener detalles)
+   ![
+](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)   ![Botón Girar el dispositivo a horizontal](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
 
-   * ![Botón Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
-   ![Al seleccionar un dispositivo específico para emular, puede efectuar cualquiera de las siguientes acciones:](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
+   * ![Botón Girar el dispositivo a vertical](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
+   **Seleccionar dispositivo**: le permite definir un dispositivo específico para emular de una lista (consulte el paso siguiente para obtener detalles)
 
-1. Utilizar el icono Seleccionar dispositivo y seleccionarlo de un selector desplegable.
+1. ![Botón Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
-   * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
-   * ![Menú desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+   * Al seleccionar un dispositivo específico para emular, puede efectuar cualquiera de las siguientes acciones:
+   * Utilizar el icono Seleccionar dispositivo y seleccionarlo de un selector desplegable.
+   ![Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
-   ![Una vez que haya seleccionado un dispositivo específico, puede:](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+1. ![Menú desplegable Seleccionar dispositivo](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
-1. Ver el marcador activo del dispositivo seleccionado; por ejemplo, **iPad.**
-
+   * Una vez que haya seleccionado un dispositivo específico, puede:****
+   * Ver el marcador activo del dispositivo seleccionado; por ejemplo, **iPad.******
    * Ver el marcador activo del [punto de interrupción](#layout-definitions-device-emulation-and-breakpoints) adecuado; por ejemplo, **Tableta.**
-   * La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (en este caso, un **iPhone 6 Plus** en orientación vertical).
-   * ![El pliegue](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)****
+   La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (en este caso, un **iPhone 6 Plus** en orientación vertical).
 
-   El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de efectuar el desplazamiento.
-
-   * La línea del pliegue no se mostrará si la altura del dispositivo que se emula es superior al tamaño de la pantalla.[](#layout-definitions-device-emulation-and-breakpoints)
-   * El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.
-   * Adición de un contenedor de diseño y su contenido (modo de edición) {#adding-a-layout-container-and-its-content-edit-mode}
+   * ![El pliegue](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
+   * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de efectuar el desplazamiento.
+   * La línea del pliegue no se mostrará si la altura del dispositivo que se emula es superior al tamaño de la pantalla.
 
 
-## Un **contenedor de diseño** es un sistema de párrafos que:
+## El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.{#adding-a-layout-container-and-its-content-edit-mode}
 
-Contiene otros componentes.****
+Adición de un contenedor de diseño y su contenido (modo de edición) {#adding-a-layout-container-and-its-content-edit-mode}**
 
+* Un **contenedor de diseño** es un sistema de párrafos que:
+* Contiene otros componentes.
 * Define el diseño.
-* Responde a los cambios.
-* [!NOTE]
 
->Si no está disponible, el **contenedor de diseño** debe activarse explícitamente para un sistema de párrafos o una página. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
+>[!NOTE]Responde a los cambios.
 >
->El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
+>[!NOTE]**<!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. A continuación, puede agregar componentes al contenedor de diseño. Estos componentes albergarán el contenido real:****[](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)****
-1. ![Contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+1. Si no está disponible, el **contenedor de diseño** debe activarse explícitamente para un sistema de párrafos o una página. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)****
+1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
 
-   Selección y ejecución de una acción en un contenedor de diseños (modo de edición) {#selecting-and-taking-action-on-a-layout-container-edit-mode}](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+   ![A continuación, puede agregar componentes al contenedor de diseño. Estos componentes albergarán el contenido real:](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
-## Al igual que con otros componentes, puede seleccionar un contenedor de diseños (cuando se encuentra en el modo de **edición**) y luego realizar una acción en él (copiar, cortar, eliminar):
+## ![Contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
-[!CAUTION]**
+Selección y ejecución de una acción en un contenedor de diseños (modo de edición) {#selecting-and-taking-action-on-a-layout-container-edit-mode}**
 
->[!CAUTION]Dado que los contenedores de diseños son un sistema de párrafos, al eliminar el componente, se eliminará la cuadrícula de diseño y todos los componentes (y su contenido) incluidos en el contenedor.
+>Al igual que con otros componentes, puede seleccionar un contenedor de diseños (cuando se encuentra en el modo de **edición**) y luego realizar una acción en él (copiar, cortar, eliminar):
 >
->Si pasa el puntero del ratón o toca el marcador de posición de la cuadrícula, se mostrará el menú de acciones.
+>[!CAUTION]
 
-1. ![Agregar al contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
+1. Dado que los contenedores de diseños son un sistema de párrafos, al eliminar el componente, se eliminará la cuadrícula de diseño y todos los componentes (y su contenido) incluidos en el contenedor.
+
+   ![Si pasa el puntero del ratón o toca el marcador de posición de la cuadrícula, se mostrará el menú de acciones.](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
+
+   ![Agregar al contenedor de diseño](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
    Debe seleccionar la opción **Principal**.
 
-   ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+1. ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    Si el componente de diseño se encuentra anidado, la selección de la opción **Principal** presenta una lista desplegable de opciones que le permite seleccionar el contenedor de diseños anidado o sus elementos principales.
 
-1. Cuando pase el ratón sobre los nombres de contenedor de la lista desplegable, los contornos se mostrarán en la página.****
+   * Cuando pase el ratón sobre los nombres de contenedor de la lista desplegable, los contornos se mostrarán en la página.
+   * El contenedor de diseños anidado en la parte inferior se muestra en color azul.
+   ![Cada contenedor sucesivo aparece en un tono más claro de azul.](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-   El contenedor de diseños anidado en la parte inferior se muestra en color azul.
+1. ![Contenedores anidados](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-   * Cada contenedor sucesivo aparece en un tono más claro de azul.
-   * ![Contenedores anidados](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
+## De esta forma se resaltará toda la cuadrícula con su contenido. Se muestra la barra de herramientas de acciones, desde donde puede seleccionar una acción, como, por ejemplo, **Eliminar.**
 
-   De esta forma se resaltará toda la cuadrícula con su contenido. Se muestra la barra de herramientas de acciones, desde donde puede seleccionar una acción, como, por ejemplo, **Eliminar.**
-
-1. Definición de diseños (modo de diseño) {#defining-layouts-layout-mode}**
-
-## [!NOTE]
-
->Puede definir un diseño distinto para cada [punto de interrupción](#layout-definitions-device-emulation-and-breakpoints) (tal y como determinan el tipo y la orientación del dispositivo emulado).
+>Definición de diseños (modo de diseño) {#defining-layouts-layout-mode}
 >
->Para configurar el diseño de una cuadrícula interactiva implementada con el contenedor de diseño, debe usar el modo **Diseño**.
+>[!NOTE]](#layout-definitions-device-emulation-and-breakpoints)
 
-El modo **Diseño** puede iniciarse de dos formas.
+Puede definir un diseño distinto para cada [punto de interrupción](#layout-definitions-device-emulation-and-breakpoints) (tal y como determinan el tipo y la orientación del dispositivo emulado).
 
-Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) y seleccionando el modo **Diseño**.
+Para configurar el diseño de una cuadrícula interactiva implementada con el contenedor de diseño, debe usar el modo **Diseño**.
 
-* Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
-   * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.****
+* El modo **Diseño** puede iniciarse de dos formas.****
+   * Mediante el uso del [menú de modo de la barra de herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) y seleccionando el modo **Diseño**.****
+   * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
+* El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
    * Al [editar un componente individual.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)****
-* Mediante la opción **Diseño** del menú de acciones rápidas del componente, puede cambiar al modo **Diseño**.
-   * El modo **Diseño** se mantiene durante la edición del componente, y se vuelve a acceder al modo **Editar** en cuanto el enfoque cambia a otro componente.
-   * **En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:******
+   * Mediante la opción **Diseño** del menú de acciones rápidas del componente, puede cambiar al modo **Diseño**.
 
-Redimensionar los componentes del contenido utilizando los puntos azules. Al redimensionar siempre se hará un ajuste a la cuadrícula. Al redimensionar se mostrará la cuadrícula de fondo como referencia para la alineación: 
+El modo **Diseño** se mantiene durante la edición del componente, y se vuelve a acceder al modo **Editar** en cuanto el enfoque cambia a otro componente.
 
-* ![Cambiar el tamaño de los componentes](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+* En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
-   [!NOTE]](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+   ![Redimensionar los componentes del contenido utilizando los puntos azules. Al redimensionar siempre se hará un ajuste a la cuadrícula. Al redimensionar se mostrará la cuadrícula de fondo como referencia para la alineación: ](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
+   >![Cambiar el tamaño de los componentes](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
    >
-   >Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:****
+   >[!NOTE]**
 
-* **Principal**: le permite seleccionar todos los componentes del contenedor de diseños para efectuar acciones en conjunto.
+* Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
+   * **Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:**
+   * **Principal**: le permite seleccionar todos los componentes del contenedor de diseños para efectuar acciones en conjunto.
    * **Flotar a una línea nueva**: se mueve el componente a una línea nueva, según el espacio disponible en la cuadrícula.
-   * **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
-   * ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+   **Ocultar componente**: el componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseños).
+
+* ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)****
 
    En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Esto hará que se muestre la barra de herramientas de este modo.
 
-* La barra de herramientas mostrará distintas opciones en función del estado del componente del diseño y de los componentes que pertenecen a él. Por ejemplo:********
+   * **La barra de herramientas mostrará distintas opciones en función del estado del componente del diseño y de los componentes que pertenecen a él. Por ejemplo:**
 
-   **Principal**: seleccione el componente principal.
+      **Principal**: seleccione el componente principal.
 
    * ![Botón Principal](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
@@ -221,20 +221,15 @@ Redimensionar los componentes del contenido utilizando los puntos azules. Al red
    * ![Botón Flotar a una línea nueva](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
       **Ocultar componente**: oculte el componente actual.
-
-   * ![Ocultar botón de componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-
-      [!NOTE]](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
+   >![Ocultar botón de componente](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
    >
-   >**Mostrar los componentes:** permite seleccionar los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
+   >[!NOTE]
 
-   * ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
+   * **En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.******
 
-      ![Botón Restaurar todo](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
-   La selección de la opción **Restaurar todo** permitirá que se muestren todos los componentes ocultos.
+      **Mostrar componentes** Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
+   **Mostrar la opción de componentes** ocultos. En este ejemplo, hay dos componentes ocultos.
 
-   ![Restore all button](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+   ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   Selecting **Restore all** will unhide all hidden components.
+   Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
