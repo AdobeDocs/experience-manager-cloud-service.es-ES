@@ -1,11 +1,11 @@
 ---
-title: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como un servicio de nube.
-description: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como un servicio de nube.
+title: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como Cloud Service.
+description: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
-El editor de texto enriquecido (RTE) ofrece a los autores una amplia gama de funciones para editar el contenido del texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG. Los administradores configuran RTE para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Para saber cómo utilizar las funciones RTE para la creación, consulte [Uso del editor de texto enriquecido para la creación](rich-text-editor.md). Vea cómo los autores [utilizan RTE para crear](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenido web.
+El editor de texto enriquecido (RTE) ofrece a los autores una amplia gama de funciones para editar el contenido del texto. Se proporcionan iconos, cuadros de selección, barras de herramientas y menús para una experiencia de edición de texto WYSIWYG. Los administradores configuran RTE para habilitar, deshabilitar y ampliar las funciones disponibles en los componentes de creación. Vea cómo los autores [utilizan RTE para crear](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) contenido web.
 
 A continuación se enumeran los conceptos y pasos RTE necesarios para configurarlo.
 
@@ -31,7 +31,7 @@ La interfaz RTE oferta un diseño [](/help/sites-cloud/authoring/features/respon
 
 *Figura: Barra de herramientas del Editor de texto enriquecido con todas las opciones disponibles activadas.*
 
-La barra de herramientas proporciona las opciones para la experiencia de creación WYSIWYG. Los administradores de Experience Manager pueden configurar las opciones disponibles en la barra de herramientas de la interfaz. De forma predeterminada, en Experience Manager hay disponible un conjunto completo de opciones de edición. Los desarrolladores pueden personalizar Experience Manager para añadir más opciones de edición.
+La barra de herramientas proporciona las opciones para la experiencia de creación WYSIWYG. Los administradores Experience Manager pueden configurar las opciones disponibles en la barra de herramientas de la interfaz. De forma predeterminada, el Experience Manager dispone de un conjunto completo de opciones de edición. Los desarrolladores pueden personalizar el Experience Manager para añadir más opciones de edición.
 
 ## Diversos modos de edición {#editingmodes}
 
@@ -58,7 +58,7 @@ Cuando se abre (con un doble de clic lento), el contenido se puede editar dentro
 
 ### Full-screen editing {#full-screen-editing}
 
-Los componentes de Experience Manager se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa con una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
+Los componentes de Experience Manager se pueden abrir en vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa con una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
 En el modo de pantalla completa del cuadro de diálogo, junto con una barra de herramientas RTE detallada, también están disponibles las opciones y los componentes disponibles en un cuadro de diálogo. Solo se aplica a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
@@ -98,7 +98,7 @@ La siguiente tabla lista los complementos actuales y muestra:
 | editar | cortar copiar pegar-predeterminado pegar-plaintext pegar-wordhtml | [Cortar, copiar y pegar los tres modos](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | buscar reemplazar | Buscar y reemplazar. |
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | subrayado en cursiva negrita | [Formato](configure-rich-text-editor-plug-ins.md#textstyles)de texto básico. |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | imagen | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
+| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
 | [claves](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir este valor, consulte Tamaño [de tabulación](configure-rich-text-editor-plug-ins.md#tabsize). |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justificfycenter | Alineación de párrafo. |
 | [vínculos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink desvincular anclaje | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -131,6 +131,7 @@ El [modo de edición RTE (y la interfaz de usuario)](#editingmodes) que proporci
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
+
 >
 >
 No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
@@ -143,7 +144,7 @@ Configure las siguientes propiedades que se aplican en el modo de edición de cu
 
    Para evitarlo, establezca la propiedad `customStart` en `True`y active el evento &#39;rte-inicio&#39; en la edición RTE de inicio. Cuando esta propiedad es &#39;true&#39;, el comportamiento predeterminado, inicio de velocidad al hacer clic, no funciona.
 
-* `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo se debe activar el inicio RTE activando el evento `rte-start`.
+* `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo se debe inicio RTE activando el evento `rte-start`.
 
 * `rte-start`:: Activar este evento en la `contenteditable-div` parte de RTE, cuándo editar inicio RTE. Esto solo funciona si `customStart` se ha establecido en true.
 
@@ -164,13 +165,14 @@ El componente [de texto Componentes](https://docs.adobe.com/content/help/en/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
 
 ## Configurar barra de herramientas RTE {#dialogfullscreen}
 
-Experience Manager le permite configurar la interfaz del Editor de texto enriquecido de forma diferente para los distintos modos de edición. A continuación se proporciona la configuración predeterminada. Puede anular estos valores predeterminados según sus necesidades. Solo puede personalizar las funciones de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
+Experience Manager le permite configurar la interfaz para el Editor de texto enriquecido de forma diferente para los distintos modos de edición. A continuación se proporciona la configuración predeterminada. Puede anular estos valores predeterminados según sus necesidades. Solo puede personalizar las funciones de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
 
 Para configurar la barra de herramientas para `dialogFullScreen`, utilice la siguiente configuración de ejemplo.
 
@@ -268,7 +270,7 @@ A continuación se muestra un fragmento de ejemplo para asignar el comando Negri
 
 ## Limitaciones conocidas {#known-limitations}
 
-La capacidad RTE de Experience Manager tiene las siguientes limitaciones:
+La capacidad RTE del Experience Manager tiene las siguientes limitaciones:
 
 * Las funciones RTE solo se admiten en los cuadros de diálogo de componentes de Experience Manager. RTE no se admite en asistentes o formularios de base.
 
