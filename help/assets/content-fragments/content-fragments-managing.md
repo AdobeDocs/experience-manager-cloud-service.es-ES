@@ -2,9 +2,9 @@
 title: Administrar fragmentos de contenido
 description: Los fragmentos de contenido se almacenan como recursos, por lo que se administran principalmente desde la consola Recursos.
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1454'
 ht-degree: 11%
 
 ---
@@ -22,24 +22,19 @@ Los fragmentos de contenido se almacenan como **recursos**, por lo que se admini
 
 ### Creación de un modelo de contenido {#creating-a-content-model}
 
-
 [Los modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmentos de contenido se pueden habilitar y crear antes de crear fragmentos de contenido con contenido estructurado.
 
 ### Creación de un fragmento de contenido {#creating-a-content-fragment}
 
-El método para crear un fragmento de contenido es (básicamente) el mismo para fragmentos simples y estructurados:
+El método para crear un fragmento de contenido es:
 
 1. Vaya a la carpeta **Assets** en la que desea crear el fragmento.
 2. Seleccione **Crear** y, a continuación, **Fragmento de contenido** para abrir el asistente.
 3. El primer paso del asistente requiere que especifique la base del nuevo fragmento.
 
-   * Esto puede ser:
+   * [Modelo](/help/assets/content-fragments/content-fragments-models.md) : se utiliza para crear un fragmento que requiere contenido estructurado; por ejemplo, el modelo **Aventura**
 
-      * la plantilla Fragmento **** simple
-
-      * [Modelo](/help/assets/content-fragments/content-fragments-models.md) : se utiliza para crear un fragmento que requiere contenido estructurado; por ejemplo, el modelo **Aeroports**
-
-         * Se muestran todos los modelos disponibles.
+      * Se muestran todos los modelos disponibles.
 
    Después de la selección, utilice **Siguiente** para continuar.
 
