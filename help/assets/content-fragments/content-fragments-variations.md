@@ -2,9 +2,9 @@
 title: 'Variaciones: Crear contenido de fragmentos'
 description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 translation-type: tm+mt
-source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1686'
 ht-degree: 16%
 
 ---
@@ -50,12 +50,6 @@ Cuando abra el fragmento de contenido para editarlo, la ficha **Variaciones** es
    * acceder a una serie de [acciones](#actions)
 
 Por ejemplo:
-
-* Edición de un fragmento simple
-
-   Un fragmento simple consiste en un campo de texto multilínea (se pueden añadir recursos visuales desde el editor de pantalla completa).
-
-   ![fragmento simple](assets/cfm-variations-01.png)
 
 * Edición de un fragmento con contenido estructurado
 
@@ -350,7 +344,7 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    * el selector desplegable **Acciones** - **Sincronizar el elemento actual con el maestro**
 
-   * la barra de herramientas del editor de pantalla completa: **Sincronizar con el maestro**
+   * la barra de herramientas del editor de pantalla completa: **Sincronizar con el editor maestro**
 
 1. El patrón y la variación se mostrarán en paralelo:
 
