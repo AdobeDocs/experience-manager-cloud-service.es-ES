@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1942'
 ht-degree: 7%
 
 ---
@@ -109,16 +109,16 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 Las etiquetas inteligentes mejoradas permiten a las organizaciones formar modelos de etiquetado inteligente para reconocer imágenes basadas en etiquetas comerciales específicas del cliente, además de etiquetas inteligentes genéricas.
 
-Con esta versión, existe una experiencia de usuario nueva y guiada que ayuda a configurar la formación sobre etiquetas inteligentes para conjuntos de etiquetas específicas del cliente y a formarlas con recursos que se deben reconocer y etiquetar con ellas en el futuro. Esta es una experiencia más intuitiva.
+Con esta versión, existe una experiencia de usuario nueva y guiada que ayuda a configurar la formación sobre etiquetas inteligentes para conjuntos de etiquetas específicas del cliente y a formarlas con recursos que se deben reconocer y etiquetar con ellas en el futuro. La experiencia es ahora más intuitiva.
 Capacite las etiquetas inteligentes mejoradas para obtener una formación más intuitiva sobre las etiquetas inteligentes. Consulte [cómo agregar etiquetas inteligentes a los recursos](/help/assets/smart-tags.md) y [configurar el etiquetado](/help/assets/smart-tags-configuration.md)inteligente.
 
-**Compatibilidad con la ingestión, previsualización y envío de contenido 3D**
+**Compatibilidad con ingestión, previsualización y envío de contenido 3D**
 
-Las organizaciones ahora pueden almacenar y utilizar archivos 3D en AEM Assets. El usuario puede cargar, previsualización y aprovechar una gran variedad de archivos 3D principales, incluidos archivos .obj, .stl, .gltf y .glb. Con la adición de [!DNL Dynamic Media], las experiencias 3D se pueden configurar y enviar mediante direcciones URL o visores agnósticos. Esto incluye un visor de experiencias [!DNL Dynamic Media] 3D, un componente de visor 3D de sitios y la capacidad de distribuir archivos 3D a través [!DNL Dynamic Media] (AR/VR). Consulte [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Las organizaciones ahora pueden almacenar y utilizar archivos 3D en AEM Assets. El usuario puede cargar, previsualización y utilizar varios archivos 3D principales, incluidos archivos OBJ, STL, GLTF y GLB. Con la adición de [!DNL Dynamic Media], puede configurar y entregar experiencias 3D mediante direcciones URL o visores agnósticos. Esto incluye un visor de experiencias [!DNL Dynamic Media] 3D, un componente de visor 3D de sitios y la capacidad de distribuir archivos 3D a través [!DNL Dynamic Media] (AR/VR). Consulte [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 **Compatibilidad con Adobe Asset Link para Adobe XD**
 
-Con la última versión, [!DNL Experience Manager Assets] ofrece compatibilidad con un nuevo [!DNL Adobe Asset Link] complemento que se incluye en la versión [!DNL Adobe XD] v29.3. La integración permite a los diseñadores acceder y utilizar recursos desde [!DNL Experience Manager] en sus diseños, sin necesidad de salir de [!DNL Adobe XD] la aplicación. Consulte [Adobe Asset Link para obtener la documentación](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)de Adobe XD.
+Con la última versión, [!DNL Experience Manager Assets] admite un nuevo [!DNL Adobe Asset Link] complemento que se lanza con la [!DNL Adobe XD] versión v29.3. La integración permite a los diseñadores acceder y utilizar recursos desde [!DNL Experience Manager] en sus diseños, sin necesidad de salir de [!DNL Adobe XD] la aplicación. Consulte [Adobe Asset Link para obtener la documentación](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)de Adobe XD.
 
 Con esta versión, los usuarios y diseñadores creativos ahora pueden trabajar con recursos gestionados en [!DNL AEM Assets] el uso [!DNL Adobe Asset Link] en una serie de aplicaciones de escritorio de Creative Cloud, incluidas [!DNL Adobe XD], [!DNL Photoshop], [!DNL Illustrator]y [!DNL InDesign].
 
@@ -128,17 +128,17 @@ Con esta versión, los usuarios y diseñadores creativos ahora pueden trabajar c
 
 Los elementos de la interfaz de usuario son fáciles de leer en pantalla, son accesibles mediante un teclado y tienen un mejor contraste. A continuación se muestra una lista detallada de las mejoras:
 
-* El lector de pantalla no lee los indicadores de progreso de [!UICONTROL Opciones], [!UICONTROL Ámbito]y [!UICONTROL Flujos de trabajo] en la página [!UICONTROL Administrar publicación] como indicadores de progreso. En su lugar, los usuarios de lectores de pantalla perciben estos indicadores de estado como una lista de tabulación. (CQ-4273015)
+* Las barras de progreso [!UICONTROL Opciones], [!UICONTROL Ámbito]y [!UICONTROL Flujos de trabajo] de la página [!UICONTROL Administrar publicación] no son leídas por el lector de pantalla como barras de progreso. En su lugar, los usuarios de lectores de pantalla perciben estos indicadores de estado como una lista de tabulación. (CQ-4273015)
 
 * Al agregar etiquetas en la página [!UICONTROL Propiedades] de un recurso, los usuarios navegan por una estructura de árbol de etiquetas. No se puede acceder a la estructura de árbol porque los usuarios del lector de pantalla no escuchan nada al navegar por ella. (CQ-4272964)
 
 * En el cuadro de diálogo de uso compartido de vínculos, al navegar en el modo de exploración, el lector de pantalla,
 
-   * narra la información de la tabla tan pronto como se carga el cuadro de diálogo.
-   * no puede navegar a todas las sugerencias automáticas de la lista.
-   * no narra las sugerencias automáticas mostradas para el cuadro combinado [!UICONTROL Añadir dirección de correo electrónico/Buscar] . (CQ-4294232)
+   * Narra la información de la tabla inmediatamente cuando se carga el cuadro de diálogo.
+   * No puede navegar a todas las sugerencias automáticas de la lista.
+   * No narra las sugerencias automáticas mostradas para el cuadro combinado [!UICONTROL Añadir dirección de correo electrónico/Buscar] . (CQ-4294232)
 
-* Ahora se puede acceder a la página Editor [!UICONTROL de Esquemas de] metadatos y a sus elementos, y es fácil leerlos en pantalla. Las opciones se pueden utilizar con un teclado. (CQ-4272953) Los usuarios pueden arrastrar los componentes mediante el teclado en el modo de exploración NVDA. (CQ-4296326)
+* Ahora se puede acceder a la página Editor [!UICONTROL de Esquemas de] metadatos y a sus elementos mediante un teclado y es fácil de leer en pantalla. (CQ-4272953) Los usuarios pueden arrastrar los componentes mediante el teclado en el modo de exploración NVDA. (CQ-4296326)
 
 * En la interfaz de usuario de Recursos, no se puede acceder a la configuración de vista mediante el teclado. (CQ-4289038)
 
@@ -146,17 +146,17 @@ Los elementos de la interfaz de usuario son fáciles de leer en pantalla, son ac
 
 * El color y el contraste de algunos elementos de la interfaz de usuario se actualizan para que los usuarios con visión limitada o los usuarios sin percepción del color puedan distinguir estos elementos de la interfaz de usuario. Por ejemplo, el color de los iconos de clasificación por estrellas en la sección [!UICONTROL Clasificación] de la ficha [!UICONTROL Avanzado] de las [!UICONTROL Propiedades] de un recurso y en la vista de tarjetas se cambia para obtener el contraste adecuado. (CQ-4295106)
 
-* El menú emergente del cuadro de lista del cuadro combinado (en varios campos de diferentes páginas) ahora muestra las entradas como una lista de opciones que pueden anunciar los lectores de pantalla. (CQ-4294017)
+* Los lectores de pantalla ahora pueden leer las entradas del menú emergente del cuadro de lista del cuadro combinado (en varios campos de diferentes páginas) como una lista de opciones. (CQ-4294017)
 
 * Para aplicar un flujo de trabajo a un recurso, se puede acceder a la flecha de chevron de la [!UICONTROL línea de tiempo] mediante un teclado. (CQ-4289268)
 
-* Los usuarios pueden eliminar las etiquetas seleccionadas en el campo [!UICONTROL Etiquetas] de la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] de un recurso con `x` un símbolo. Ahora los lectores de pantalla anuncian su propósito junto con el número de etiquetas seleccionadas (CQ-4273033).
+* Los usuarios pueden eliminar las etiquetas seleccionadas en el campo [!UICONTROL Etiquetas] de la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] de un recurso con `x` un símbolo. Los lectores de pantalla ahora anuncian el propósito y el número de etiquetas seleccionadas (CQ-4273033).
 
 * Los campos de formulario de sólo lectura se pueden centrar en el uso de un teclado. Por ejemplo, los campos desactivados en la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] de un recurso. (CQ-4273031)
 
 * Acceda ahora a las opciones para filtrar recursos en la barra lateral izquierda con un teclado. (CQ-4273018)
 
-* Los lectores de pantalla ahora anuncian correctamente el propósito de varios elementos de cuadro combinado, como el campo Ruta y la opción de abrir el cuadro de diálogo Selección en la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] de un recurso. (CQ-4273016)
+* El lector de pantalla anuncia el propósito de varios elementos de cuadro combinado, como el campo Ruta y la opción de abrir el cuadro de diálogo Selección en la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] de un recurso. (CQ-4273016)
 
 * Se puede acceder a los controles de volumen de los vídeos mediante un teclado. (CQ-4272696)
 
@@ -172,12 +172,12 @@ Los elementos de la interfaz de usuario son fáciles de leer en pantalla, son ac
 
 **Otras mejoras**
 
-La versión incorpora las siguientes mejoras adicionales:
+La versión incorpora las siguientes mejoras:
 
 * Capacidad para volver a procesar recursos con perfiles de procesamiento de recursos, lo que permite que los usuarios tengan un control total del proceso (ejecute el procesamiento completo de recursos, aplique perfiles de procesamiento específicos y decida si se debe ejecutar el flujo de trabajo posterior al procesamiento).
 * Las consultas de búsqueda devuelven los resultados más rápido ahora que la instancia de clúster subyacente se ha reiniciado entre bastidores (la ejecución de búsqueda inicial podría durar más en un caso anterior).
 * Ordene por &#39;Nombre&#39; cuando visualice recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
-* Ordena en &quot;Creación&quot; (fecha) cuando visualiza recursos en la vista de listas en la interfaz de recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
+* Ordena en &quot;Creación&quot; (fecha) cuando visualiza recursos en la vista de listas en la interfaz de Recursos y en los resultados de búsqueda. Consulte [Búsqueda de recursos](/help/assets/search-assets.md#sort).
 * Compatibilidad para convertir archivos EPS en imágenes mediante microservicios de recursos.
 
 ### Corrección de errores {#assets-bug-fixes}
@@ -191,7 +191,7 @@ Además de las nuevas funciones anteriores, la versión actual proporciona las s
 
 * Para archivos de música MP3, el botón de reproducción mostrado en la miniatura en la previsualización DAM no funciona. (CQ-4294731)
 * Al pasar el puntero sobre la vista de la tarjeta, la pantalla se desplaza como resultado del enfoque (automático) en las acciones rápidas disponibles en la tarjeta. (GRANITE-26895)
-* La visualización de demasiadas imágenes después de desplazarse por un gran número de resultados de búsqueda provoca el bloqueo del explorador. (GRANITE-26432)
+* La visualización de demasiadas imágenes después de desplazarse por muchos resultados de búsqueda provoca el bloqueo del explorador. (GRANITE-26432)
 * Al descargar un recurso, si se selecciona la opción de correo electrónico e incluso si se proporciona un ID de correo electrónico válido, la opción de descarga no está disponible. (CQ-4296535)
 * Los filtros personalizados guardados como colecciones inteligentes no se aplican correctamente a los recursos. (CQ-4294942)
 * Varias mejoras en la búsqueda y la indexación y correcciones de errores para mejorar el rendimiento. (CQ-4286373)
