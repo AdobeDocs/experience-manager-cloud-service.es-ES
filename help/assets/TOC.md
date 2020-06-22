@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 98%
    + [Metadatos en cascada](cascading-metadata.md)
    + [Metadatos XMP](xmp-metadata.md)
    + [Funciones de MediaLibrary](medialibrary.md)
-   + [Importar y exportar metadatos de recursos](metadata-import-export.md)
+   + [Importación y exportación metadatos de recursos](metadata-import-export.md)
 + Compartir y distribuir recursos {#brand-portal}
    + [Configurar AEM Assets con Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publicar recursos en Brand Portal](publish-to-brand-portal.md)
@@ -71,9 +71,9 @@ ht-degree: 98%
    + [Markdown](content-fragments/content-fragments-markdown.md)
 + Dynamic Media {#dynamicmedia}
    + [Newsletter sobre Dynamic Media de Experience League](dynamic-media/dynamic-media-newsletter.md)
-   + [Configurar Dynamic Media](dynamic-media/administering-dynamic-media.md)
-   + [Trabajar con Dynamic Media](dynamic-media/dynamic-media.md)
-   + [Configurar Dynamic Media](dynamic-media/config-dm.md)
+   + [Configuración de Dynamic Media](dynamic-media/administering-dynamic-media.md)
+   + [Trabajo con Dynamic Media](dynamic-media/dynamic-media.md)
+   + [Configuración de Dynamic Media](dynamic-media/config-dm.md)
    + [Solución de problemas de Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Administrar recursos de Dynamic Media](dynamic-media/managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -97,9 +97,9 @@ ht-degree: 98%
    + [Imágenes interactivas](dynamic-media/interactive-images.md)
    + [Vídeos interactivos](dynamic-media/interactive-videos.md)
    + [Vídeo de RV 360](dynamic-media/360-video.md)
-   + [Integrar visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](dynamic-media/launch.md)
-   + [Usar las vistas rápidas para crear ventanas emergentes personalizadas](dynamic-media/custom-pop-ups.md)
-   + [Distribuir imágenes optimizadas para un sitio interactivo](dynamic-media/responsive-site.md)
+   + [Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](dynamic-media/launch.md)
+   + [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](dynamic-media/custom-pop-ups.md)
+   + [Distribución de imágenes adaptables para un sitio interactivo](dynamic-media/responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](dynamic-media/previewing-assets.md)
    + [Agregar recursos de Dynamic Media a las páginas](dynamic-media/adding-dynamic-media-assets-to-pages.md)
    + [Incrustar Dynamic Video o el visualizador de imágenes en una página web](dynamic-media/embed-code.md)
