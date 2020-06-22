@@ -1,10 +1,10 @@
 ---
-title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager como servicio de nube en la API HTTP de Assets
-description: Obtenga información sobre Adobe Experience Manager como compatibilidad con fragmentos de contenido de servicios en la API HTTP de recursos.
+title: Adobe Experience Manager como Cloud Service Compatibilidad con fragmentos de contenido en la API HTTP de recursos
+description: Obtenga información sobre la compatibilidad con Adobe Experience Manager como Cloud Service de fragmentos de contenido en la API HTTP de Assets.
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1891'
 ht-degree: 2%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 2%
 >
 La implementación actual de la API HTTP de Assets se basa en el estilo arquitectónico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) .
 
-La API [REST de](/help/assets/mac-api-assets.md) Assets permite a los desarrolladores de Adobe Experience Manager como servicio de nube acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, mediante operaciones CRUD (Crear, leer, actualizar, eliminar).
+La API [REST de](/help/assets/mac-api-assets.md) Assets permite a los desarrolladores de Adobe Experience Manager como Cloud Service acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, mediante operaciones CRUD (Crear, leer, actualizar, eliminar).
 
-La API le permite utilizar Adobe Experience Manager como un servicio en la nube como un CMS (sistema Gestor de contenido) sin encabezado al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
+La API le permite operar Adobe Experience Manager como Cloud Service como CMS (sistema Gestor de contenido) sin encabezado al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
 
 Por ejemplo, las aplicaciones de una sola página (SPA), basadas en marcos o personalizadas, requieren contenido proporcionado a través de la API HTTP, a menudo en formato JSON.
 
-Aunque los componentes [principales de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) AEM proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí que requieren el conocimiento práctico de AEM WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas basadas en plantillas de AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso directo a esos conocimientos.
+Aunque los componentes [principales de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) AEM proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí que requieren el conocimiento práctico de AEM WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas basadas en plantillas de AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso directo a esos conocimientos.
 
 Es cuando se puede utilizar la API REST de Assets. Permite a los desarrolladores acceder a los recursos (por ejemplo, imágenes y fragmentos de contenido) directamente, sin necesidad de incrustarlos primero en una página y entregar su contenido en formato JSON serializado.
 
@@ -49,7 +49,7 @@ La API de REST de Recursos:
 
 ## Requisitos previos {#prerequisites}
 
-La API de REST de Assets está disponible en cada instalación predeterminada de un Adobe Experience Manager reciente como versión de servicio de nube.
+La API de REST de Assets está disponible en cada instalación predeterminada de un Adobe Experience Manager reciente como versión de Cloud Service.
 
 ## Conceptos clave {#key-concepts}
 
@@ -62,7 +62,7 @@ Utiliza el punto final y requiere la ruta del recurso para acceder a él (sin el
 * Debe solicitar:
    * `/api/assets/path/to/asset`
 
-Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por ejemplo, para acceder `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Acceso sobre:
@@ -75,7 +75,7 @@ El método HTTP determina la operación que se va a ejecutar:
 * **GET** : para recuperar una representación JSON de un recurso o una carpeta
 * **POST** : para crear nuevos recursos o carpetas
 * **PUT** : para actualizar las propiedades de un recurso o una carpeta
-* **ELIMINAR** : para eliminar un recurso o una carpeta
+* **DELETE** : para eliminar un recurso o una carpeta
 
 >[!NOTE]
 >
@@ -302,7 +302,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones          {#limitations}
+## Restricciones   {#limitations}
 
 Existen algunas limitaciones:
 
@@ -348,11 +348,10 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
    Las siguientes listas son escenarios comunes cuando se devuelve este estado de error, junto con el mensaje de error (monospace) generado:
 
    * La carpeta principal no existe (al crear un fragmento de contenido mediante `POST`)
-   * No se proporciona ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta de acceso no válida o a un problema de permisos) o no hay ningún modelo o plantilla de fragmento válido:
+   * No se proporciona ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta de acceso no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * No se pudo crear el fragmento de contenido (posiblemente sea un problema de permisos):
 
       * `Could not create content fragment`
