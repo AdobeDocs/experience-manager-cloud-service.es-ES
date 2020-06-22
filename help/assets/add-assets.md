@@ -1,22 +1,22 @@
 ---
-title: Añadir recursos digitales a Adobe Experience Manager
-description: Añada sus recursos digitales a Adobe Experience Manager como un servicio de nube
+title: Añadir los recursos digitales en Adobe Experience Manager
+description: Añada los recursos digitales a Adobe Experience Manager como Cloud Service
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 3%
+source-wordcount: '1358'
+ht-degree: 2%
 
 ---
 
 
 # Añadir recursos digitales a Adobe Experience Manager {#add-assets-to-experience-manager}
 
-Adobe Experience Manager enriquece el contenido binario de los archivos digitales cargados con metadatos enriquecidos, etiquetas inteligentes, representaciones y otros servicios de Digital Asset Management (DAM). Puede cargar varios tipos de archivos, como imágenes, documentos y archivos de imagen sin procesar, desde la carpeta local o desde una unidad de red a Experience Manager Assets.
+Adobe Experience Manager enriquece el contenido binario de los archivos digitales cargados con metadatos enriquecidos, etiquetas inteligentes, representaciones y otros servicios de administración de recursos digitales (DAM). Puede cargar varios tipos de archivos, como imágenes, documentos y archivos de imagen sin procesar, desde la carpeta local o desde una unidad de red a Recursos Experience Manager.
 
-Se proporcionan varios métodos de carga. Además de la carga del navegador que se utiliza con más frecuencia, existen otros métodos para añadir recursos al repositorio de Experience Manager, incluidos los clientes de escritorio, como Adobe Asset Link o la aplicación de escritorio de Experience Manager, los scripts de carga e inserción que los clientes crearían, y las integraciones de inserción automatizada se agregan como extensiones de AEM.
+Se proporcionan varios métodos de carga. Además de la carga del navegador que se utiliza con más frecuencia, existen otros métodos para añadir recursos al repositorio de Experience Manager, incluidos los clientes de escritorio, como Adobe Asset Link o la aplicación de escritorio de Experience Manager, los scripts de carga e inserción que crearían los clientes, y las integraciones de inserción automatizada se agregan como extensiones de AEM.
 
-Nos centraremos en los métodos de carga para los usuarios finales aquí y proporcionaremos vínculos a artículos que describen aspectos técnicos de la carga y la ingesta de recursos con las API y los SDK de Experience Manager.
+Nos centraremos en los métodos de carga para los usuarios finales aquí y proporcionaremos vínculos a artículos que describen los aspectos técnicos de la carga y la ingesta de recursos mediante API y SDK de Experience Manager.
 
 Aunque puede cargar y administrar cualquier archivo binario en Experience Manager, los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de previsualizaciones y representaciones. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener más información.
 
@@ -24,7 +24,7 @@ También puede elegir que se realice un procesamiento adicional en los recursos 
 
 >[!NOTE]
 >
-> Experience Manager como servicio de nube aprovecha una nueva forma de cargar recursos: la carga binaria directa. De forma predeterminada, es compatible con las prestaciones y los clientes del producto integrados, como la interfaz de usuario de AEM, Adobe Asset Link, la aplicación de escritorio de AEM y, por tanto, transparente para los usuarios finales.
+> Experience Manager como Cloud Service aprovecha una nueva forma de cargar recursos: la carga binaria directa. De forma predeterminada, es compatible con las prestaciones y los clientes del producto integrados, como la interfaz de usuario de AEM, Adobe Asset Link, la aplicación de escritorio de AEM y, por tanto, transparente para los usuarios finales.
 >
 > El código de carga personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
 
@@ -37,7 +37,6 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario de Recursos. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
-
    ![create_menu](assets/create_menu.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
@@ -59,9 +58,9 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, AEM Assets elimina la parte parcialmente cargada del recurso.
+1. Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, los AEM Assets eliminan la parte parcialmente cargada del recurso.
 
-   Si cancela la operación de carga antes de que se carguen los archivos, Recursos AEM deja de cargar el archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
+   Si cancela la operación de carga antes de que se carguen los archivos, los AEM Assets dejan de cargar el archivo actual y actualizan el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -75,7 +74,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 -->
 
 
-1. El cuadro de diálogo de progreso de carga en Recursos AEM muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
+1. El cuadro de diálogo de progreso de carga en AEM Assets muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
 
 Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
 
@@ -114,11 +113,11 @@ Puede elegir reemplazar un recurso existente, crear otra versión o mantener amb
 >
 >Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
 
-Para conservar el recurso de duplicado en Recursos AEM, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
+Para conservar el recurso de duplicado en AEM Assets, toque o haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso de duplicado que ha cargado, toque o haga clic en **[!UICONTROL Eliminar]**.
 
 ### Administración de nombres de archivo y caracteres prohibidos {#filename-handling}
 
-Recursos AEM evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, Recursos AEM muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
+Los AEM Assets evitan que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, los AEM Assets mostrarán un mensaje de advertencia y detendrán la carga hasta que se eliminen estos caracteres o se carguen con un nombre permitido.
 
 Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
 
@@ -143,7 +142,7 @@ Para cargar un mayor número de archivos, especialmente si existen en una jerarq
 Además de la interfaz de usuario del navegador web, Experience Manager admite otros clientes en el escritorio. También proporcionan una experiencia de carga sin necesidad de ir al navegador web.
 
 * [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) proporciona acceso a recursos de AEM en aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente en AEM directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
-* [La aplicación](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) de escritorio de Experience Manager simplifica el trabajo con recursos en el escritorio, independientemente del tipo de archivo o la aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del navegador solo admite la carga de listas de archivos planos.
+* [La aplicación](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) de escritorio Experience Manager simplifica el trabajo con los recursos en el escritorio, independientemente del tipo de archivo o la aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del navegador solo admite la carga de listas de archivos planos.
 
 ## Procesamiento adicional {#additional-processing}
 
@@ -158,12 +157,12 @@ Están disponibles los siguientes perfiles:
 
 Además, si Dynamic Media está habilitado en el entorno:
 
-* [Los perfiles de imagen](dynamic-media/image-profiles.md) le permiten aplicar un recorte específico (recorte **[!UICONTROL inteligente]** y recorte de píxeles) y una configuración perfeccionada a los recursos cargados
-* [Los perfiles](dynamic-media/video-profiles.md) de vídeo le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros)
+* [Los perfiles](dynamic-media/image-profiles.md) de imagen de Dynamic Media le permiten aplicar a los recursos cargados una configuración de recorte y enfoque específicos (recorte **** inteligente y recorte de píxeles).
+* [Los perfiles](dynamic-media/video-profiles.md) de vídeo de Dynamic Media le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
 
 >[!NOTE]
 >
-> El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para recortar o transformar los medios que se deben realizar al entregar los recursos
+> El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para el recorte o la transformación de medios que se debe realizar al entregar los recursos
 
 Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **[!UICONTROL de]** procesamiento.
 
