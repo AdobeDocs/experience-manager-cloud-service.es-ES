@@ -5,16 +5,16 @@ translation-type: tm+mt
 source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 81%
+ht-degree: 90%
 
 ---
 
 
 # Implementación {#implementing}
 
-+ [Implementar aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
-+ Usar Cloud Manager {#using-cloud-manager}
-   + [Administrar entornos](cloud-manager/manage-environments.md)
++ [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
++ Uso de Cloud Manager {#using-cloud-manager}
+   + [Administración de entornos](cloud-manager/manage-environments.md)
    + [Configurar el canal de CI/CD](cloud-manager/configure-pipeline.md)
    + [Implementar el código](cloud-manager/deploy-code.md)
    + [Comprender las reglas de calidad de código personalizadas](cloud-manager/custom-code-quality-rules.md)
@@ -30,7 +30,7 @@ ht-degree: 81%
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Directrices de desarrollo de AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
    + [Ampliar fragmentos de Experience](developing/extending/experience-fragments.md)
@@ -46,8 +46,8 @@ ht-degree: 81%
 + Author Tier {#author-tier}
    + [Acceso al nivel de creación](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Seguridad del nivel de creación](/help/implementing/author-tier/securing-the-author-tier.md)
-+ Información general del Envío de contenido {#content-delivery}
-   + [Flujo de Envío de contenido](dispatcher/overview.md)
++ Información general sobre la distribución de contenido {#content-delivery}
+   + [Flujo de distribución de contenido](dispatcher/overview.md)
    + [Dispatcher en la nube](dispatcher/disp-overview.md)
-   + [CDN en AEM como servicio de nube](dispatcher/cdn.md)
-   + [Almacenamiento en caché de AEM como un servicio en la nube](dispatcher/caching.md)
+   + [CDN en AEM as a Cloud Service](dispatcher/cdn.md)
+   + [Almacenamiento en caché en AEM as a Cloud Service](dispatcher/caching.md)
