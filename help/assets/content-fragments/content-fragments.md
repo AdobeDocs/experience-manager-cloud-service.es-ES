@@ -1,10 +1,10 @@
 ---
 title: Trabajar con fragmentos de contenido
-description: Descubra cómo los fragmentos de contenido de Adobe Experience Manager (AEM) como servicio de nube le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
+description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1804'
 ht-degree: 7%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 7%
 # Trabajar con fragmentos de contenido{#working-with-content-fragments}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Permiten preparar contenido listo para su uso en varias ubicaciones o en varios canales.
+
+Los fragmentos de contenido contienen contenido estructurado:
+
+* Se basan en un modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)contenido, que predefine una estructura para el fragmento resultante.
 
 Los fragmentos de contenido también se pueden entregar en formato JSON mediante las funciones de exportación del Modelo de Sling (JSON) de los componentes principales de AEM. Esta forma de envío:
 
@@ -59,7 +63,7 @@ Proporcionan el envío de contenido a canales que no son páginas web tradiciona
 * Aplicaciones móviles nativas
 * otros canales y puntos de contacto externos a AEM
 
-Envío se realiza en formato JSON.
+El Envío se realiza en formato JSON mediante el exportador JSON.
 
 Los fragmentos de contenido de AEM se pueden utilizar para describir y administrar el contenido estructurado. El contenido estructurado se define en modelos que pueden contener diversos tipos de contenido; incluyendo texto, datos numéricos, booleano, fecha y hora, etc.
 
@@ -77,12 +81,6 @@ Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos d
 >
 >Para obtener más información, consulte también [Explicación de los fragmentos de contenido y los fragmentos de experiencia en AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
->[!CAUTION]
->
->Los fragmentos de contenido no están disponibles en la IU clásica.
->
->El componente Fragmento de contenido se puede ver en la barra de tareas de la IU clásica, pero no hay más funciones disponibles.
-
 >[!NOTE]
 >
 >AEM también admite la traducción de contenido de fragmento. Consulte Creación de proyectos de traducción para fragmentos de contenido para obtener más información.
@@ -92,24 +90,6 @@ Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos d
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## Tipos de fragmento de contenido {#types-of-content-fragment}
-
-Los fragmentos de contenido pueden ser:
-
-* Fragmentos simples
-
-   * No tienen estructura predefinida.
-
-   * Solo contienen texto e imágenes.
-
-   * Se basan en la plantilla Fragmento **** simple.
-
-* Fragmentos que contienen contenido estructurado
-
-   * Se basan en un modelo [de fragmento de](/help/assets/content-fragments/content-fragments-models.md)contenido, que predefine una estructura para el fragmento resultante.
-
-   * También se pueden usar para realizar los servicios de contenido mediante el exportador JSON.
 
 ## Tipo de contenido {#content-type}
 
@@ -170,18 +150,14 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 * **Elementos de fragmento**
 
    * Los elementos se correlacionan con los campos de datos que contienen contenido.
-   * Para fragmentos con contenido estructurado, se utiliza un modelo de contenido para crear el fragmento de contenido. Los elementos (campos) especificados en el modelo definen la estructura del fragmento. Estos elementos (campos) pueden ser de diversos tipos de datos.
-   * Para fragmentos simples:
-
-      * El contenido se incluye en uno o varios campos de texto con varias líneas o elementos.
-      * Los elementos se definen en la plantilla Fragmento **** simple.
+   * Utilice un modelo de contenido para crear el fragmento de contenido. Los elementos (campos) especificados en el modelo definen la estructura del fragmento. Estos elementos (campos) pueden ser de diversos tipos de datos.
 
 * **Párrafos de fragmento**
 
    * Bloques de texto, que son:
 
       * separado por espacios verticales (retorno de carro)
-      * en elementos de texto multilínea; en fragmentos simples o estructurados
+      * en elementos de texto multilínea
    * En los modos [Texto enriquecido](/help/assets/content-fragments/content-fragments-variations.md#rich-text) y [Marcado](/help/assets/content-fragments/content-fragments-variations.md#markdown), un párrafo se puede formatear como un encabezado, en cuyo caso, ese párrafo y el siguiente se unirán como una sola unidad.
 
    * Habilite el control de contenido durante la creación de páginas.
@@ -275,11 +251,6 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
    * Define la estructura de un fragmento (título, elementos de contenido, definiciones de etiquetas).
    * Las definiciones de modelos de contenido requieren un título y un elemento de datos; todo lo demás es opcional. El modelo define un ámbito mínimo del fragmento y el contenido predeterminado, si corresponde. Los autores no pueden cambiar la estructura definida al crear contenido de fragmento.
 
-* **Plantilla de fragmento**
-
-   * La plantilla Fragmento **** simple es necesaria para [crear un fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)simple.
-   * Define las propiedades básicas de un fragmento simple (título, número de elementos de texto, definiciones de etiquetas).
-
 * **Componente de fragmento de contenido**
 
    * Instrumental para entregar el fragmento en formato HTML o JSON.
@@ -294,6 +265,6 @@ Un fragmento, con sus elementos y variaciones, puede utilizarse para crear conte
 
 ### Ejemplo de WKND {#wknd-sample}
 
-Los ejemplos del sitio [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND se proporcionan para ayudarle a obtener información sobre AEM como servicio de nube. Incluye fragmentos de muestra, que se pueden ver en:
+Los ejemplos del sitio [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKND se proporcionan para ayudarle a obtener información sobre AEM como Cloud Service. Incluye fragmentos de muestra, que se pueden ver en:
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
