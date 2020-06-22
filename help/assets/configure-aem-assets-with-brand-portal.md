@@ -3,7 +3,7 @@ title: Configurar el servicio en la nube de AEM Assets con Brand Portal
 description: Configurar el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
+source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 36%
@@ -13,7 +13,7 @@ ht-degree: 36%
 
 # Configurar AEM Assets con Brand Portal {#configure-aem-assets-with-brand-portal}
 
-Recursos Adobe Experience Manager (AEM) se configura con Brand Portal a través de Adobe Developer Console, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
+Recursos de Adobe Experience Manager (AEM) se configura con Brand Portal mediante Adobe Developer Console, que proporciona un distintivo IMS para la autorización del inquilino de Brand Portal.
 
 **¿Cómo funciona la configuración?**
 
@@ -23,8 +23,8 @@ La configuración de la instancia de nube de AEM Assets con un inquilino (organi
 1. En Adobe Developer Console, cree un proyecto para el inquilino (organización) de Brand Portal.
 1. En el proyecto, configure una API con la clave pública para crear una conexión de cuenta de servicio (JWT).
 1. Obtenga las credenciales de la cuenta de servicio y la información de carga útil de JWT.
-1. En la instancia de nube de AEM Assets, configure la cuenta de IMS con las credenciales de cuenta de servicio y la carga útil de JWT.
-1. En la instancia de nube de AEM Assets, configure el servicio en la nube de Brand Portal con la cuenta IMS y el extremo de Brand Portal (dirección URL de la organización).
+1. En la instancia de nube de AEM Assets, configure la cuenta de IMS mediante las credenciales de cuenta de servicio y la carga útil de JWT.
+1. En la instancia de nube de AEM Assets, configure el servicio en la nube de Brand Portal mediante la cuenta IMS y el extremo de Brand Portal (dirección URL de la organización).
 1. Pruebe la configuración publicando un recurso de la instancia de nube de AEM Assets en Brand Portal.
 
 >[!NOTE]
@@ -315,9 +315,9 @@ Consulte la [documentación de Brand Portal](https://docs.adobe.com/content/help
 
 Puede consultar los registros para obtener información detallada sobre las acciones realizadas por el agente de distribución.
 
-Por ejemplo, hemos publicado un recurso de Recursos AEM en Brand Portal para validar la configuración.
+Por ejemplo, hemos publicado un recurso de AEM Assets a Brand Portal para validar la configuración.
 
-1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
 1. Haga clic en **[!UICONTROL Registros]** para ver los registros de distribución. Aquí puede ver los registros de procesamiento y de errores.
 
