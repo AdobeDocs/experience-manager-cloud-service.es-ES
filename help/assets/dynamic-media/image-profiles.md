@@ -1,18 +1,18 @@
 ---
 title: Perfiles de imagen de Dynamic Media
-description: Cree perfiles de imagen que contengan ajustes para máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
+description: Cree Perfiles de imagen de Dynamic Media que contengan la configuración de máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: 59dacf83fd3df03bf9cc62d7816b8b7d7ee5ab9b
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
-source-wordcount: '2736'
-ht-degree: 14%
+source-wordcount: '2739'
+ht-degree: 11%
 
 ---
 
 
 # Perfiles de imagen de Dynamic Media {#image-profiles}
 
-Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplicando un perfil de imagen a la carpeta.
+Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplicando un Perfil de imagen a la carpeta.
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda utilizar el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el perfil de la imagen.
+Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un Perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el Perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda utilizar el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el Perfil de imágenes.
 
 Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
 
@@ -55,7 +55,7 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
   <tr>
    <td>Muestra de color e imagen</td>
    <td>Genera de forma masiva una muestra de imagen para cada imagen.</td>
-   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione Recorte <strong>inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización de la muestra utilizada en las pancartas de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una <code>req=userdata</code> solicitud con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, a continuación se muestra un recurso de muestra en Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la <code>req=userdata</code> URL correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> respuesta es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione Recorte <strong>inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los letreros de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una <code>req=userdata</code> solicitud con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la <code>req=userdata</code> URL correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> respuesta es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -99,14 +99,14 @@ El enfoque se describe en [Enfoque de imágenes](/help/assets/dynamic-media/asse
 
 Para definir parámetros de procesamiento avanzados para otros tipos de recursos, consulte [Configuración del procesamiento](config-dm.md#configuring-asset-processing)de recursos.
 
-Consulte [Perfiles para procesar metadatos, imágenes y vídeos](/help/assets/dynamic-media/processing-profiles.md).
+Consulte [Acerca de los Perfiles de imagen y los Perfiles](/help/assets/dynamic-media/about-image-video-profiles.md)de vídeo de Dynamic Media.
 
 Consulte también [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles](/help/assets/dynamic-media/best-practices-for-file-management.md)de procesamiento.
 
 **Para crear Perfiles de imagen de Dynamic Media**
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Toque **[!UICONTROL Crear]** para agregar un nuevo perfil de imagen.
+1. Toque **[!UICONTROL Crear]** para agregar un nuevo Perfil de imagen.
 1. Introduzca un nombre de perfil y valores para máscara de enfoque, recorte o muestra, o ambos.
 
    Puede que le resulte útil utilizar un nombre de perfil que sea específico para su propósito. Por ejemplo, si desea crear un perfil que genere muestras únicamente (es decir, el recorte inteligente está desactivado y la muestra de color e imagen está activada), puede utilizar el nombre de perfil &quot;Muestras inteligentes&quot;.
@@ -120,58 +120,58 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 ## Edición o eliminación de Perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Seleccione el perfil de imagen que desee editar o eliminar. Para editarlo, seleccione **[!UICONTROL Editar Perfil]** de procesamiento de imágenes. Para eliminarlo, seleccione **[!UICONTROL Eliminar Perfil]** de procesamiento de imágenes.
+1. Seleccione el Perfil de imagen que desee editar o eliminar. Para editarlo, seleccione **[!UICONTROL Editar Perfil]** de procesamiento de imágenes. Para eliminarlo, seleccione **[!UICONTROL Eliminar Perfil]** de procesamiento de imágenes.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. Si está editando, guarde los cambios. Si elimina, confirme que desea eliminar el perfil.
 
-## Aplicación de un perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
+## Aplicación de un Perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
 
-Al asignar un perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de la carpeta principal. Esto significa que solo puede asignar un perfil de imagen a una carpeta. Como tal, considere cuidadosamente la estructura de carpetas en la que carga, almacena, utiliza y archiva los recursos.
+Al asignar un Perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de la carpeta principal. Esto significa que solo puede asignar un Perfil de imagen a una carpeta. Como tal, considere cuidadosamente la estructura de carpetas en la que carga, almacena, utiliza y archiva los recursos.
 
-Si ha asignado un perfil de imagen diferente a una carpeta, el nuevo perfil anula el perfil anterior. Los recursos de carpeta existentes anteriormente permanecen sin cambios. El nuevo perfil se aplica a los recursos que se agregan a la carpeta más adelante.
+Si ha asignado otro Perfil de imagen a una carpeta, el nuevo perfil anula el perfil anterior. Los recursos de carpeta existentes anteriormente permanecen sin cambios. El nuevo perfil se aplica a los recursos que se agregan a la carpeta más adelante.
 
 Las carpetas que tienen asignado un perfil se indican en la interfaz de usuario por el nombre del perfil que aparece en la tarjeta.
 
-<!-- When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
+<!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
-Puede aplicar perfiles de imagen a carpetas específicas o globalmente a todos los recursos.
+Puede aplicar Perfiles de imagen a carpetas específicas o globalmente a todos los recursos.
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de imagen existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Puede volver a procesar los recursos en una carpeta que ya tenga un Perfil de imagen existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-### Aplicación de perfiles de imagen de Dynamic Media a carpetas específicas {#applying-image-profiles-to-specific-folders}
+### Aplicación de Perfiles de imagen de Dynamic Media a carpetas específicas {#applying-image-profiles-to-specific-folders}
 
-Puede aplicar un perfil de imagen a una carpeta desde el menú **[!UICONTROL Herramientas]** o si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo aplicar perfiles de imagen a las carpetas de ambos modos.
+You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. En esta sección se describe cómo aplicar Perfiles de imagen a las carpetas de ambos modos.
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-#### Aplicación de perfiles de imagen de Dynamic Media a las carpetas desde la interfaz de usuario de Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Aplicación de Perfiles de imagen de Dynamic Media a las carpetas desde la interfaz de usuario de Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Seleccione el perfil de imagen que desea aplicar a una o varias carpetas.
+1. Seleccione el Perfil de imagen que desea aplicar a una o varias carpetas.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
 1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-#### Aplicación de perfiles de imagen de Dynamic Media a las carpetas de Propiedades {#applying-image-profiles-to-folders-from-properties}
+#### Aplicación de Perfiles de imagen de Dynamic Media a las carpetas de Propiedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Toque el logotipo de AEM, vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta a la que desee aplicar un perfil de imagen.
+1. Toque el logotipo de AEM, vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta a la que desee aplicar un Perfil de imagen.
 1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
 1. Pulse la pestaña **[!UICONTROL Perfiles de imagen]**. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione el perfil y, a continuación, pulse **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Aplicación global de un perfil de imagen de Dynamic Media {#applying-an-image-profile-globally}
+### Aplicación global de un Perfil de imagen de Dynamic Media {#applying-an-image-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de AEM de cualquier carpeta tenga el perfil seleccionado aplicado.
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/processing-profiles.md#reprocessing-assets).
+Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Para aplicar un perfil de imagen de Dynamic Media de forma global**:
+**Para aplicar un Perfil de imagen de Dynamic Media globalmente**:
 
 1. Realice una de las acciones siguientes:
 
@@ -197,7 +197,7 @@ Consulte también [Edición del recorte inteligente o muestra inteligente de var
 
 **Para editar el recorte inteligente o la muestra inteligente de una sola imagen**:
 
-1. Toque el logotipo de AEM y vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta en la que se le haya aplicado un perfil de imagen inteligente o de recorte inteligente.
+1. Toque el logotipo de AEM y vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta que tenga un recorte inteligente o un Perfil de imagen de muestra inteligente aplicado.
 
 1. Toque la carpeta para abrir su contenido.
 1. Toque la imagen cuyo recorte inteligente o muestra inteligente desee ajustar.
@@ -214,7 +214,7 @@ Consulte también [Edición del recorte inteligente o muestra inteligente de var
 
 ## Edición del recorte inteligente o muestra inteligente de varias imágenes {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Después de aplicar un perfil de imagen (que contiene recorte inteligente) a una carpeta, todas las imágenes de la carpeta tienen un recorte aplicado. Si lo desea, puede volver a alinear *manualmente* o cambiar el tamaño de la ventana de recorte inteligente en varias imágenes para reducir aún más su punto focal.
+Después de aplicar un Perfil de imagen (que contiene recorte inteligente) a una carpeta, todas las imágenes de la carpeta tienen un recorte aplicado. Si lo desea, puede volver a alinear *manualmente* o cambiar el tamaño de la ventana de recorte inteligente en varias imágenes para reducir aún más su punto focal.
 
 Después de editar un recorte inteligente y guardarlo, el cambio se propaga dondequiera que utilice el recorte para las imágenes específicas.
 
@@ -222,7 +222,7 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
 **Para editar el recorte inteligente o la muestra inteligente de varias imágenes**:
 
-1. Toque el logotipo de AEM y vaya a **[!UICONTROL Recursos]** y, a continuación, a una carpeta que tenga aplicado un perfil de imagen de muestra inteligente o de recorte inteligente.
+1. Toque el logotipo de AEM y vaya a **[!UICONTROL Recursos]** y, a continuación, a una carpeta que tenga un recorte inteligente o un Perfil de imagen de muestra inteligente aplicado.
 1. En la carpeta, toque el icono **[!UICONTROL Más acciones]** (...) y luego **[!UICONTROL Recorte]** inteligente.
 
 1. En la página **[!UICONTROL Editar cultivos]** inteligentes, realice una de las siguientes acciones:
@@ -263,23 +263,23 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**. a continuación, toque **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
-## Eliminación de un perfil de imagen de las carpetas {#removing-an-image-profile-from-folders}
+## Eliminación de un Perfil de imagen de las carpetas {#removing-an-image-profile-from-folders}
 
-Al quitar un perfil de imagen de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de la carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
+Al quitar un Perfil de imagen de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de la carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
-Puede quitar un perfil de imagen de una carpeta desde el menú **[!UICONTROL Herramientas]** o, si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo quitar perfiles de imagen de las carpetas de ambos modos.
+You can remove an Image Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. En esta sección se describe cómo quitar Perfiles de imagen de las carpetas de ambos modos.
 
-### Eliminación de perfiles de imagen de Dynamic Media de las carpetas mediante la interfaz de usuario de Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Eliminación de Perfiles de imagen de Dynamic Media de las carpetas mediante la interfaz de usuario de Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Seleccione el perfil de imagen que desea eliminar de una carpeta o de varias carpetas.
+1. Seleccione el Perfil de imagen que desea eliminar de una carpeta o de varias carpetas.
 1. Pulse **[!UICONTROL Eliminar perfil de procesamiento de las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para quitar el perfil. A continuación, pulse **[!UICONTROL Eliminar]**.
 
-   Puede confirmar que el perfil de imagen ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
+   Puede confirmar que el Perfil de imagen ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
-### Eliminación de perfiles de imagen de Dynamic Media de las carpetas mediante Propiedades {#removing-image-profiles-from-folders-via-properties}
+### Eliminación de Perfiles de imagen de Dynamic Media de las carpetas mediante Propiedades {#removing-image-profiles-from-folders-via-properties}
 
-1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de imagen.
+1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un Perfil de imagen.
 1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
 1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
