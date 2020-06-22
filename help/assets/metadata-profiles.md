@@ -3,7 +3,7 @@ title: Perfiles de metadatos
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -15,12 +15,6 @@ ht-degree: 23%
 
 Un Perfil de metadatos permite aplicar metadatos predeterminados a los recursos de una carpeta. Cree un Perfil de metadatos y aplíquelo a una carpeta. Cualquier recurso que cargue posteriormente en la carpeta heredará los metadatos predeterminados configurados en el Perfil de metadatos.
 
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
-
 ## Añadir un perfil de metadatos {#adding-a-metadata-profile}
 
 1. Toque el logotipo de AEM, vaya a **[!UICONTROL Herramientas > Recursos > Perfiles]** de metadatos y, a continuación, toque **[!UICONTROL Crear]**.
@@ -31,7 +25,7 @@ Edite las siguientes propiedades para el componente **[!UICONTROL Descripción]*
    * **[!UICONTROL Etiqueta]** de campo: el nombre para mostrar de la propiedad metadata. Solo sirve para la referencia del usuario.
    * **[!UICONTROL Asignar a propiedad]** : el valor de esta propiedad proporciona la ruta/nombre relativos al nodo del recurso donde se guarda en el repositorio. El valor siempre debe tener inicios `./` porque indica que la ruta está bajo el nodo del recurso.
 
-      The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como nombre de **[!UICONTROL Asignar a propiedad]**, Recursos AEM almacena el valor `dc:desc` en el nodo de metadatos del recurso.
+      The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Por ejemplo, si especifica `/jcr:content/metadata/dc:desc` como nombre de **[!UICONTROL Asignar a propiedad]**, AEM Assets almacena el valor `dc:desc` en el nodo de metadatos del recurso.
 
    * **[!UICONTROL Valor]** predeterminado: utilice esta propiedad para agregar un valor predeterminado para el componente de metadatos. Por ejemplo, si especifica &quot;Mi descripción&quot;, este valor se asigna a la propiedad `dc:desc` en el nodo de metadatos del recurso.
 
