@@ -1,11 +1,11 @@
 ---
-title: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como Cloud Service.
-description: Configure el Editor de texto enriquecido para que cree contenido en Adobe Experience Manager como Cloud Service.
+title: Configure el Editor de texto enriquecido para que cree contenido [!DNL Adobe Experience Manager] en un Cloud Service.
+description: Configure el Editor de texto enriquecido para que cree contenido [!DNL Adobe Experience Manager] en un Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
+source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,18 @@ La interfaz RTE oferta un diseño [](/help/sites-cloud/authoring/features/respon
 
 *Figura: Barra de herramientas del Editor de texto enriquecido con todas las opciones disponibles activadas.*
 
-La barra de herramientas proporciona las opciones para la experiencia de creación WYSIWYG. Los administradores Experience Manager pueden configurar las opciones disponibles en la barra de herramientas de la interfaz. De forma predeterminada, el Experience Manager dispone de un conjunto completo de opciones de edición. Los desarrolladores pueden personalizar el Experience Manager para añadir más opciones de edición.
+La barra de herramientas proporciona las opciones para la experiencia de creación WYSIWYG. [!DNL Experience Manager] los administradores pueden configurar las opciones disponibles en la barra de herramientas de la interfaz. De forma predeterminada, hay disponible un conjunto completo de opciones de edición en [!DNL Experience Manager]. Los desarrolladores pueden personalizar [!DNL Experience Manager] para agregar más opciones de edición.
 
 ## Diversos modos de edición {#editingmodes}
 
-Los autores pueden crear y editar contenido textual en Experience Manager mediante los distintos modos de componentes. Las opciones de la barra de herramientas para crear y dar formato al contenido y la experiencia del usuario de los componentes habilitados para RTE en diferentes modos de edición varían según las configuraciones de RTE.
+Los autores pueden crear y editar contenido textual [!DNL Experience Manager] utilizando los distintos modos de componentes. Las opciones de la barra de herramientas para crear y dar formato al contenido y la experiencia del usuario de los componentes habilitados para RTE en diferentes modos de edición varían según las configuraciones de RTE.
 
 | Modo de edición | Área de edición | Funciones recomendadas para habilitarlas |
 |--- |--- |--- |
-| En línea | Edición in situ para ediciones rápidas y secundarias; Formato sin abrir un cuadro de diálogo | Características mínimas de RTE |
-| RTE a pantalla completa | Abarca toda la página | Todas las funciones RTE necesarias |
-| Cuadro de diálogo | Cuadro de diálogo en la parte superior del contenido de la página pero no cubre toda la página | Activación juiciosa de las funciones |
-| Pantalla completa del cuadro de diálogo | Igual que el modo de pantalla completa; contiene campos del cuadro de diálogo junto con RTE | Todas las funciones RTE necesarias |
+| En línea | Edición in situ para ediciones rápidas y secundarias; Formato sin abrir un cuadro de diálogo. | Características mínimas de RTE. |
+| RTE a pantalla completa | Abarca toda la página. | Todas las funciones RTE requeridas. |
+| Cuadro de diálogo | Cuadro de diálogo en la parte superior del contenido de la página pero no cubre toda la página. | Activar las funciones de forma juiciosa. |
+| Pantalla completa del cuadro de diálogo | Igual que el modo de pantalla completa; contiene campos del cuadro de diálogo junto con RTE. | Todas las funciones RTE requeridas. |
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Los autores pueden crear y editar contenido textual en Experience Manager median
 
 ### Edición en línea {#inline-editing}
 
-Cuando se abre (con un doble de clic lento), el contenido se puede editar dentro de la página. Se presenta una barra de herramientas compacta con opciones muy básicas.
+Para editar el contenido dentro de una página, abra el contenido con un doble lento y haga clic en . Se presenta una barra de herramientas compacta con opciones básicas.
 
 ![Edición en línea con opciones básicas en la barra de herramientas](assets/inline-editing-mode-basic-options.png)
 
@@ -58,7 +58,7 @@ Cuando se abre (con un doble de clic lento), el contenido se puede editar dentro
 
 ### Full-screen editing {#full-screen-editing}
 
-Los componentes de Experience Manager se pueden abrir en vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa con una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![rte_fullscreen](assets/rte_fullscreen.png), desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
+[!DNL Experience Manager] los componentes se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa con una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![Icono para abrir RTE en pantalla](assets/rte_fullscreen.png)completa, desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
 En el modo de pantalla completa del cuadro de diálogo, junto con una barra de herramientas RTE detallada, también están disponibles las opciones y los componentes disponibles en un cuadro de diálogo. Solo se aplica a un cuadro de diálogo que contenga RTE junto con otros componentes.
 
@@ -68,7 +68,7 @@ En el modo de pantalla completa del cuadro de diálogo, junto con una barra de h
 
 ### Edición de cuadro de diálogo {#dialog-editing}
 
-Cuando se hace clic en un componente mediante doble, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página con varias columnas y el área disponible para el cuadro de diálogo es menor.
+Cuando se hace clic en un componente mediante doble, se abre un cuadro de diálogo para editar el contenido. El cuadro de diálogo se abre sobre la página existente. En algunos casos específicos, el cuadro de diálogo se abre como una ventana emergente. Por ejemplo, cuando un componente Texto forma parte de una columna en un diseño de página de varias columnas y el área disponible para el cuadro de diálogo es menor.
 
 ![Modo de edición de cuadro de diálogo](assets/dialog_editing_modetouchui.png)
 
@@ -83,7 +83,7 @@ La funcionalidad está disponible mediante una serie de complementos, cada uno c
    * Se utiliza para activar o desactivar la funcionalidad básica de ese complemento.
    * Configurado mediante un procedimiento estandarizado.
 
-* Cuando proceda, propiedades y opciones adicionales que requieran una configuración especializada.
+* Cuando proceda, más propiedades y opciones que requieran una configuración especializada.
 
 Las funciones básicas de RTE se activan o desactivan por el valor de la `features` propiedad en un nodo específico del complemento adecuado.
 
@@ -95,21 +95,21 @@ La siguiente tabla lista los complementos actuales y muestra:
 
 | ID del complemento | características | Descripción |
 |--- |--- |--- |
-| editar | cortar copiar pegar-predeterminado pegar-plaintext pegar-wordhtml | [Cortar, copiar y pegar los tres modos](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | buscar reemplazar | Buscar y reemplazar. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | subrayado en cursiva negrita | [Formato](configure-rich-text-editor-plug-ins.md#textstyles)de texto básico. |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
-| [claves](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir este valor, consulte Tamaño [de tabulación](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justificfycenter | Alineación de párrafo. |
-| [vínculos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink desvincular anclaje | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [listas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | sangría sin ordenar anulada | Este complemento controla tanto la [sangría como las listas](configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Varias herramientas permiten a los autores introducir caracteres [](configure-rich-text-editor-plug-ins.md#spchar) especiales o editar el origen HTML. Además, puede agregar un [rango completo de caracteres](configure-rich-text-editor-plug-ins.md#definerangechar) especiales si desea definir su propia lista. |
-| Paraformat | parformat | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`y `<h3>`). Puede [agregar más formatos](configure-rich-text-editor-plug-ins.md#paraformats) de párrafo o extender la lista. |
-| spellcheck | texto de comprobación | [Corrector ortográfico](configure-rich-text-editor-plug-ins.md#adddict)con conocimiento del idioma. |
-| estilos | estilos | Compatibilidad con estilos mediante una clase CSS. [Añada nuevos estilos](configure-rich-text-editor-plug-ins.md#textstyles) de texto si desea agregar (o ampliar) su propia gama de estilos para utilizarlos con texto. |
-| subsuperíndice | superíndice de subíndice | Extensiones a los formatos básicos, agregando sub-y-super-script. |
-| tabla | tabla insertar quitable quitar insertar columna removercolumna propiedades de celda mergecells separtcelda seleccionar selectfilas seleccionar columnas | Consulte [Configuración de estilos](configure-rich-text-editor-plug-ins.md#tablestyles)de tabla si desea agregar sus propios estilos para tablas enteras o celdas individuales. |
-| deshacer | deshacer rehacer | Tamaño del historial de las operaciones de [deshacer y rehacer](configure-rich-text-editor-plug-ins.md#undohistory) . |
+| editar | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [Cortar, copiar y pegar los tres modos](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | Buscar y reemplazar. |
+| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Formato](configure-rich-text-editor-plug-ins.md#textstyles)de texto básico. |
+| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Compatibilidad básica con imágenes (arrastre desde el contenido o desde el buscador de contenido). Según el explorador, la compatibilidad con los autores tiene comportamientos diferentes |
+| [claves](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Para definir este valor, consulte Tamaño [de tabulación](configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Alineación de párrafo. |
+| [vínculos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Hipervínculos y anclajes](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [listas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Este complemento controla tanto la [sangría como las listas](configure-rich-text-editor-plug-ins.md#indentmargin); incluyendo listas anidadas. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Varias herramientas permiten a los autores introducir caracteres [](configure-rich-text-editor-plug-ins.md#spchar) especiales o editar el origen HTML. Además, puede agregar un [rango de caracteres](configure-rich-text-editor-plug-ins.md#definerangechar) especiales si desea definir su propia lista. |
+| Paraformat | `paraformat` | Los formatos de párrafo predeterminados son Párrafo, Encabezado 1, Encabezado 2 y Encabezado 3 (`<p>`, `<h1>`, `<h2>`y `<h3>`). Puede [agregar más formatos](configure-rich-text-editor-plug-ins.md#paraformats) de párrafo o extender la lista. |
+| spellcheck | `checktext` | [Corrector ortográfico](configure-rich-text-editor-plug-ins.md#adddict)con conocimiento del idioma. |
+| estilos | `styles` | Compatibilidad con estilos mediante una clase CSS. [Añada nuevos estilos](configure-rich-text-editor-plug-ins.md#textstyles) de texto si desea agregar (o ampliar) su propia gama de estilos para utilizarlos con texto. |
+| subsuperíndice | `subscript`, `superscript` | Extensiones a los formatos básicos, agregando sub-script y super-script. |
+| tabla | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Consulte [Configuración de estilos](configure-rich-text-editor-plug-ins.md#tablestyles) de tabla para agregar sus propios estilos a tablas enteras o celdas individuales. |
+| deshacer | `undo`, `redo` | Tamaño del historial de las operaciones de [deshacer y rehacer](configure-rich-text-editor-plug-ins.md#undohistory) . |
 
 >[!NOTE]
 >
@@ -117,12 +117,12 @@ La siguiente tabla lista los complementos actuales y muestra:
 
 ## Conocer las rutas y ubicaciones de configuración {#understand-the-configuration-paths-and-locations}
 
-El [modo de edición RTE (y la interfaz de usuario)](#editingmodes) que proporciona a los autores decide la ubicación de los detalles de configuración al [activar los complementos](configure-rich-text-editor-plug-ins.md#activateplugin)RTE:
+El [modo de edición RTE y la interfaz](#editingmodes) que se proporciona a los autores determinan la ubicación de los detalles de configuración al [activar los complementos](configure-rich-text-editor-plug-ins.md#activateplugin)RTE. Las ubicaciones son:
 
-* Modo en línea: `cq:editConfig/cq:inplaceEditing`
-* Modo de pantalla completa: `cq:editConfig/cq:inplaceEditing`
-* Modo de cuadro de diálogo: `cq:dialog`
-* Modo de cuadro de diálogo de pantalla completa: `cq:dialog`
+* Modo en línea: `cq:editConfig/cq:inplaceEditing`.
+* Modo de pantalla completa: `cq:editConfig/cq:inplaceEditing`.
+* Modo de cuadro de diálogo: `cq:dialog`.
+* Modo de cuadro de diálogo de pantalla completa: `cq:dialog`.
 
 >[!NOTE]
 >
@@ -131,22 +131,17 @@ El [modo de edición RTE (y la interfaz de usuario)](#editingmodes) que proporci
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
-
 >
 >
 No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
 
 Configure las siguientes propiedades que se aplican en el modo de edición de cuadro de diálogo:
 
-* `useFixedInlineToolbar`:: Establezca esta propiedad booleana definida en el nodo RTE (uno con sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) en `True`, para que la barra de herramientas RTE sea fija en lugar de flotante.
+* `useFixedInlineToolbar`:: Puede hacer que la barra de herramientas RTE sea fija en lugar de flotante. Establezca esta propiedad booleana definida en el nodo RTE con sling:resourceType= `cq/gui/components/authoring/dialog/richtext` en `True`. Cuando esta propiedad se establece en `True`, la edición de texto enriquecido se inicia en el `foundation-contentloaded` evento. Para evitarlo, establezca la propiedad `customStart` en `True` y active el `rte-start` evento en inicio RTE. Cuando esta propiedad es `true`, RTE no tiene el inicio de hacer clic y este es el comportamiento predeterminado.
 
-   Cuando esta propiedad es verdadera, la edición de Richtext se inicia, de forma predeterminada, en el evento &quot;foundation-contentloaded&quot;.
+* `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo se debe activar el inicio RTE activando el evento `rte-start`.
 
-   Para evitarlo, establezca la propiedad `customStart` en `True`y active el evento &#39;rte-inicio&#39; en la edición RTE de inicio. Cuando esta propiedad es &#39;true&#39;, el comportamiento predeterminado, inicio de velocidad al hacer clic, no funciona.
-
-* `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en `True`, para controlar cuándo se debe inicio RTE activando el evento `rte-start`.
-
-* `rte-start`:: Activar este evento en la `contenteditable-div` parte de RTE, cuándo editar inicio RTE. Esto solo funciona si `customStart` se ha establecido en true.
+* `rte-start`:: Activar este evento en la `contenteditable-div` parte de RTE, cuándo editar inicio RTE. Funciona sólo si `customStart` se ha establecido en `true`.
 
 Cuando se utiliza RTE en el cuadro de diálogo táctil, establezca la propiedad `useFixedInlineToolbar` para `true` evitar problemas.
 
@@ -165,14 +160,13 @@ El componente [de texto Componentes](https://docs.adobe.com/content/help/en/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >
 Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
 
 ## Configurar barra de herramientas RTE {#dialogfullscreen}
 
-Experience Manager le permite configurar la interfaz para el Editor de texto enriquecido de forma diferente para los distintos modos de edición. A continuación se proporciona la configuración predeterminada. Puede anular estos valores predeterminados según sus necesidades. Solo puede personalizar las funciones de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
+[!DNL Experience Manager] permite configurar la interfaz para el Editor de texto enriquecido de forma diferente para los distintos modos de edición. A continuación se proporciona la configuración predeterminada. Puede anular estos valores predeterminados según sus necesidades. Solo puede personalizar las funciones de la barra de herramientas que desea proporcionar a los autores. No es necesario especificar todas las configuraciones de la barra de herramientas.
 
 Para configurar la barra de herramientas para `dialogFullScreen`, utilice la siguiente configuración de ejemplo.
 
@@ -223,7 +217,7 @@ Si la opción es una ventana emergente (que contiene algunas características de
 
 Los separadores (`|`) entre un grupo de opciones se pueden especificar con `-`.
 
-El nodo emergente en el modo en línea o en pantalla completa contiene una lista de las ventanas emergentes que se utilizan. Cada nodo secundario bajo el nodo &#39;povers&#39; recibe el nombre del complemento (por ejemplo, format). Tiene una propiedad &#39;items&#39; que contiene una lista de características del complemento (por ejemplo, format#bold).
+El nodo emergente en el modo en línea o en pantalla completa contiene una lista de las ventanas emergentes que se utilizan. Cada nodo secundario del `popovers` nodo recibe el nombre del complemento (por ejemplo, formato). Tiene una propiedad &#39;items&#39; que contiene una lista de características del complemento (por ejemplo, format#bold).
 
 ## Configuración de la interfaz de usuario RTE y directivas de contenido {#rtecontentpolicies}
 
@@ -246,7 +240,7 @@ Puede personalizar la asignación entre los iconos de Coral que se muestran en l
 1. Cree nodos para iconos individuales debajo de él.
 1. En cada uno de los nodos de icono individuales, especifique un icono de Coral y un comando para asignarlo al icono.
 
-A continuación se muestra un fragmento de ejemplo para asignar el comando Negrita al icono Coral denominado `textItalic`.
+A continuación se muestra un fragmento de ejemplo para asignar el comando `Bold` al icono Coral denominado `textItalic`.
 
 ```java
 <text jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/richtext" name="./text" useFixedInlineToolbar="{Boolean}true">
@@ -270,11 +264,11 @@ A continuación se muestra un fragmento de ejemplo para asignar el comando Negri
 
 ## Limitaciones conocidas {#known-limitations}
 
-La capacidad RTE del Experience Manager tiene las siguientes limitaciones:
+[!DNL Experience Manager] La capacidad RTE tiene las siguientes limitaciones:
 
-* Las funciones RTE solo se admiten en los cuadros de diálogo de componentes de Experience Manager. RTE no se admite en asistentes o formularios de base.
+* Las funciones RTE solo se admiten en los cuadros de diálogo de [!DNL Experience Manager] componentes. RTE no se admite en asistentes o formularios de base.
 
-* Experience Manager no funciona en dispositivos híbridos. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
+* [!DNL Experience Manager] no funciona en dispositivos híbridos. <!-- TBD: Check. This is not mentioned in Known Issue /help/release-notes/known-issues.md-->
 
 * No asigne un nombre al nodo de configuración RTE `config`. De lo contrario, la configuración RTE solo se aplica a los administradores y no a los usuarios del grupo `content-author`.
 
