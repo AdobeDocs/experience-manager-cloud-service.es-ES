@@ -2,10 +2,10 @@
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -72,8 +72,8 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    >
    >Para obtener más información sobre otras funciones de edición, consulte también:
    >
-   >    * [Diseño adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [Editar el contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Diseño adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [Editar el contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selección del elemento o la variación {#selecting-the-element-or-variation}
@@ -88,21 +88,19 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
    * **Elemento de texto único**
    * **Varios elementos**
 * **Elemento**
-   * El valor predeterminado **Principal** siempre aparecerá disponible.
-   * Se podrá hacer una selección si el fragmento se creó con una plantilla adecuada.
+   * Una selección estará disponible en función del modelo utilizado.
 
    >[!NOTE]
    >
-   >Los elementos disponibles dependen de la plantilla utilizada.
+   >Los elementos disponibles dependen del modelo utilizado.
 
 * **Variación**
    * **Principal** siempre aparecerá como la opción predeterminada.
    * Podrá realizar una selección si se crearon variaciones para el fragmento.
-* **Párrafos**: especifique el rango de párrafos que incluir:
-   * **Todos**
-   * **Rango**: por ejemplo, `1`, `3-5` o `9-*`
-      * **Gestionar encabezados como sus propios párrafos**
-* **Gestionar encabezados como sus propios párrafos**
+
+* **ID**
+
+   * **Atributo de id. de HTML que se aplicará al componente.**
 
 ### Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
 
