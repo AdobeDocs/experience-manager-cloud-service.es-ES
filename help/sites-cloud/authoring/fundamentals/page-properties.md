@@ -2,10 +2,10 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -39,6 +39,10 @@ Las propiedades se distribuyen entre varias pestañas.
 * **Ocultar en navegación**
 
    * Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
+
+* **ID HTML**
+
+   * ID HTML que se aplicará al componente.
 
 * **Título de página**
 
@@ -98,6 +102,10 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Indique la página a la cual esta página debería redirigirse automáticamente.
 
+* **Diseño**
+
+   * Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
+
 * **Alias**
 
    * Especifique un alias para usar con esta página.
@@ -113,9 +121,11 @@ Las propiedades se distribuyen entre varias pestañas.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Heredado de &lt;*path*>**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * Indica si la página se ha heredado y dónde.
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **Configuración de nube**
 
@@ -173,7 +183,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 ### Cloud Services{#cloud-services}
 
-* **Cloud Services**
+* **Configuraciones de Cloud Service**
 
    * Defina propiedades para Cloud Services.
 
