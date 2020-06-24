@@ -2,9 +2,9 @@
 title: Perfiles de imagen de Dynamic Media
 description: Cree Perfiles de imagen de Dynamic Media que contengan la configuración de máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2732'
 ht-degree: 11%
 
 ---
@@ -38,7 +38,7 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
   <tr>
    <td>Recorte de píxeles</td>
    <td>Recorte masivo de imágenes solo en función de las dimensiones.</td>
-   <td><p>Para utilizar esta opción, seleccione Recorte de <strong>píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar de los lados de una imagen, introduzca el número de píxeles que recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen.</p> <p>El recorte de píxeles de un Perfil de imagen se representa de la siguiente manera:<br /> </p>
+   <td><p>Para utilizar esta opción, seleccione Recorte de <strong>píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar de los lados de una imagen, introduzca el número de píxeles que recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen.</p> <p>El recorte de píxeles de un Perfil de imagen se representa de la siguiente manera:<br /> </p>
     <ul>
      <li>Los valores son Superior, Inferior, Izquierda y Derecha.</li>
      <li>La parte superior izquierda se considera 0,0 y el recorte de píxeles se calcula a partir de ahí.</li>
@@ -93,7 +93,7 @@ En Máscara de **[!UICONTROL enfoque]**, tiene las siguientes opciones de filtra
  </tbody>
 </table>
 
-El enfoque se describe en [Enfoque de imágenes](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+El enfoque se describe en [Enfoque de imágenes.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Creating Dynamic Media Image Profiles {#creating-image-profiles}
 
