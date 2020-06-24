@@ -2,10 +2,10 @@
 title: Administración de ajustes preestablecidos de visor
 description: Cómo crear y gestionar ajustes preestablecidos de visor
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 19%
+source-wordcount: '4263'
+ht-degree: 18%
 
 ---
 
@@ -148,9 +148,9 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 ### Lista de ajustes preestablecidos de visor integrados {#list-of-out-of-the-box-viewer-presets}
 
-La siguiente tabla identifica todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
+En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
 
-Consulte también [Ejemplos de la biblioteca de referencia de visualizadores](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) y [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Consulte también <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Demostraciones](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)en directo.
 
 Para obtener información sobre las versiones compatibles del navegador web y del sistema operativo para visores, consulte las Notas de la versión de los visores.
 
@@ -387,9 +387,9 @@ AEM muestra una amplia variedad de ajustes preestablecidos de visor al ver recur
 
 ## Creación de un ajuste preestablecido de visor {#creating-a-new-viewer-preset}
 
-La creación de ajustes preestablecidos de visor permite aplicar varios ajustes a la vista e interactuar con los recursos. Sin embargo, no es necesario crear nuevos ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visor predeterminados y listos para usar que ya vienen con Recursos AEM.
+La creación de ajustes preestablecidos de visor permite aplicar varios ajustes a la vista e interactuar con los recursos. Sin embargo, no es necesario crear nuevos ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visor predeterminados y listos para usar que ya vienen con AEM Assets.
 
-Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (se establece en **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Interactive Media y siempre que se previsualización una imagen o un vídeo.
+Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (se establece en **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Medios interactivos y siempre que se previsualización una imagen o un vídeo.
 
 Algunos ajustes preestablecidos de visor tienen una configuración exclusiva que puede afectar al uso y al comportamiento general del visor. Según el ajuste preestablecido de visor que esté creando, es posible que desee tener en cuenta estas consideraciones especiales.
 
@@ -419,13 +419,13 @@ Consulte Consideraciones [especiales para crear un ajuste preestablecido](#speci
 
       El editor visual permite ver el efecto que una propiedad determinada tiene en un estilo. Simplemente configure o ajuste cualquier propiedad para ver instantáneamente el efecto que tiene en el visor con la muestra a la izquierda del editor.
 
-      Las propiedades de estilo CSS de cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización *`<viewer name>`* del visor&quot; de la Guía de referencia de [visores](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). Por ejemplo, si va a crear un ajuste preestablecido de visor del tipo `Mixed_Media`, consulte [Personalización del visor](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) de medios mixtos para obtener una lista y una descripción de cada propiedad.
+      Las propiedades de estilo CSS de cada tipo de ajuste preestablecido de visor se describen en el tema de ayuda &quot;Personalización *`<viewer name>`* del visor&quot; de la Guía de referencia de [visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Por ejemplo, si va a crear un ajuste preestablecido de visor del tipo `Mixed_Media`, consulte [Personalización del visor](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) de medios mixtos para obtener una lista y una descripción de cada propiedad.
 
-   * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en Recursos AEM. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
+   * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS a AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
       Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si va a crear un visor de zoom, todas las reglas CSS que importe deben definirse con el nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitrario hecho a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización *&lt;nombre del visor>* del visor&quot; de la Guía de referencia de [visores](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). Por ejemplo, si desea leer sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)de zoom). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+      Puede importar CSS arbitrario hecho a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización *&lt;nombre del visor>* del visor&quot; de la Guía de referencia de [visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea leer sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)de zoom). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, pulse **[!UICONTROL Mostrar/Ocultar CSS]** debajo del menú desplegable Tipo seleccionado (puede que necesite desplazar el editor visual hacia arriba para verlo).
@@ -441,7 +441,7 @@ Consulte Consideraciones [especiales para crear un ajuste preestablecido](#speci
 
    Muchos componentes del editor visual tienen una descripción detallada asociada. Estas descripciones aparecen en cuadros azules cuando se expande un componente para mostrar sus parámetros asociados.
 
-   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html).
+   Algunos tipos de visualizador tienen componentes que permiten especificar comandos del servicio de imágenes en un campo de texto **[!UICONTROL Comando IS]**. Para obtener una lista de los comandos que puede utilizar, consulte la [Referencia de API del servicio de imágenes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
@@ -469,7 +469,7 @@ Cuando se crea o edita un ajuste preestablecido de visualizador de vídeo intera
   </tr>
   <tr>
    <td>Segmento</td>
-   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos y ajustes preestablecidos del visor de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code> cualquier ajuste preestablecido del visor de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguiente o anterior <i>no se </i>extraen para rellenar las áreas vacías del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo en particular.</p> </td>
+   <td><p><code>Segment </code>es el modo de visualización predeterminado para los ajustes preestablecidos y ajustes preestablecidos del visor de vídeo interactivo <code>Shoppable_Video_light</code> y <code>Shoppable_Video_dark</code> cualquier ajuste preestablecido del visor de vídeo interactivo que cree usted mismo.</p> <p>En este modo, cuando hay menos miniaturas asignadas a un segmento de vídeo que el número de puntos visibles en el panel de visualización, las miniaturas de los subsegmentos siguientes o anteriores <i>no se </i>extraen para rellenar ninguna zona vacía del panel. Es decir, conserva la visualización de muestras asignadas al segmento de vídeo en particular.</p> </td>
   </tr>
   <tr>
    <td>Continua</td>
@@ -530,7 +530,7 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
 ## Ajustes preestablecidos del visor de publicaciones {#publishing-viewer-presets}
 
-Al activar (o activar) el estado de un ajuste preestablecido de visor, se muestra visible en el componente Dynamic Media, en el componente Interactive Media y siempre que se vista un recurso.
+Al activar (o activar) el estado de un ajuste preestablecido de visor, se hace visible en el componente Dynamic Media, el componente de medios interactivos y siempre que se vista un recurso.
 
 Sin embargo, para entregar* *un recurso con un ajuste preestablecido de visualizador, también se debe publicar el ajuste preestablecido de visualizador. Todos los ajustes preestablecidos de visualizador se deben activar *y *publicar para obtener la URL o el código incrustado de un recurso. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
