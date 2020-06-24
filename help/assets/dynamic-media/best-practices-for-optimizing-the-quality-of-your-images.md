@@ -2,7 +2,7 @@
 title: Práctica recomendada para optimizar la calidad de las imágenes
 description: Conozca las prácticas recomendadas para optimizar la calidad de imagen en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 5%
@@ -19,7 +19,7 @@ AEM incluye más de 100 comandos de envío de imágenes de Dynamic Media para aj
 ## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
-* Si no se proporciona ningún comando de formato en la URL, el Envío de imagen de Dynamic Media tiene el valor predeterminado JPG para envío.
+* Si no se proporciona ningún comando de formato en la dirección URL, el Envío de imágenes de Dynamic Media utiliza de forma predeterminada JPG para envío.
 * JPG comprime a una proporción de 10:1 y normalmente produce archivos de imagen más pequeños. PNG se comprime a una proporción de aproximadamente 2:1, excepto en algunos casos, como cuando las imágenes contienen un fondo blanco. Normalmente, los tamaños de archivo PNG son mayores que los archivos JPG.
 * JPG utiliza compresión con pérdida, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. Por otro lado, PNG utiliza compresión sin pérdida.
 * JPG a menudo comprime imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
@@ -65,7 +65,7 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 
       Tema de ayuda de AEM sobre cómo enfocar una imagen.
 
-      Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)de imágenes.
+      Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor de imágenes.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
 
@@ -118,6 +118,6 @@ Si los resultados de enfoque siguen siendo insatisfactorios, aumente el radio en
 A medida que experimenta, también puede encontrar las siguientes sugerencias generales útiles para optimizar el flujo de trabajo:
 
 * Pruebe distintos parámetros en tiempo real, ya sea directamente en una URL o mediante la función de ajuste de imagen de Scene7 Publishing System, que proporciona previsualizaciones en tiempo real para las operaciones de ajuste.
-* Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
+* La práctica recomendada es agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
 * AEM también ofrece métodos más avanzados para ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. En los casos de uso avanzado en los que esta opción puede mejorar y optimizar los resultados del procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
 
