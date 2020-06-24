@@ -1,16 +1,16 @@
 ---
-title: Regulaciones de protección de datos y privacidad de datos - Adobe Experience Manager como preparación para sitios de servicios en la nube
-description: 'Obtenga información sobre la compatibilidad de Adobe Experience Manager como sitios de servicios en la nube para las distintas normativas de protección de datos y privacidad de datos; incluyendo el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Privacidad del Consumidor de California y cómo cumplir al implementar un nuevo proyecto de AEM como servicio de nube. '
+title: 'Normas de protección de datos y privacidad de datos: Adobe Experience Manager como preparación para sitios de Cloud Service'
+description: 'Obtenga información sobre la compatibilidad del Adobe Experience Manager como Cloud Service Sitios con las distintas Regulaciones de Protección de Datos y Privacidad de Datos; incluido el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Protección de los Consumidores de California y la manera de cumplir con la implementación de un nuevo proyecto de AEM como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 1130e8a07bc3826380483a7560ebda7e8a17e238
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1038'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Experience Manager como preparación para sitios de servicios en la nube para la protección de datos y las regulaciones de privacidad de datos {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager como Cloud Service Sitios listos para la protección de datos y normas de privacidad de datos {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -22,13 +22,13 @@ ht-degree: 1%
 >
 >Para obtener más información sobre la respuesta de Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte el Centro [de privacidad de](https://www.adobe.com/privacy.html)Adobe.
 
-Adobe Experience Manager como sitios de servicios en la nube está listo para ayudar a los clientes con sus obligaciones de privacidad de datos y de cumplimiento de la protección. Esta página guía a los clientes a través de los procedimientos para gestionar dichas solicitudes en los sitios de AEM. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o con código.
+Adobe Experience Manager como Cloud Service Sitios está listo para ayudar a los clientes con sus obligaciones de cumplimiento de protección y privacidad de datos. Esta página guía a los clientes a través de los procedimientos para gestionar dichas solicitudes en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o con código.
 
 Para obtener más información, consulte [Adobe Privacy Center](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Consulte [Adobe Experience Manager como preparación para servicios en la nube para protección de datos y normativas](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) de privacidad de datos para obtener más información.
+>Consulte [Adobe Experience Manager como Cloud Service listo para la protección de datos y las normas](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) de privacidad de datos para obtener más información.
 
 ## Nivel de AEM Author {#aem-author-tier}
 
@@ -38,7 +38,7 @@ Las cuentas de usuario y el contenido UGC del servidor de creación se tratan en
 
 Las cuentas de usuario utilizadas para autenticar visitantes en el sitio y el contenido UGC en el servidor de publicación se tratan en la documentación [de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
 
-De forma predeterminada, los componentes de AEM Sites no almacenan datos de formulario introducidos por visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a un Adobe Campaign para su posterior procesamiento.
+De forma predeterminada, los componentes AEM Sites no almacenan datos de formulario introducidos por visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a un Adobe Campaign para su posterior procesamiento.
 
 ## Inclusión/exclusión {#opt-in-opt-out}
 
@@ -68,21 +68,25 @@ Para la exclusión:
       Inclusión: Incluirme en la agregación y análisis de sesiones de visitante (no instalar la cookie de `amcglobal.sc.omtrdc.net` exclusión). Haga clic aquí.
    Siga los pasos anteriores para acceder a los vínculos reales.
 
+   <!--
+    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
+    -->
+
    >[!NOTE]
    >
    > Hay una descripción adicional en la sección Política **de** privacidad de las [Condiciones de uso](https://marketing.adobe.com/resources/help/es_ES/terms.html).
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM Sites incluye una integración opcional con Analytics Foundation que utiliza funciones dentro del servicio a petición de Adobe Analytics.
+AEM Sites incluye una integración opcional con Analytics Foundation que utiliza la funcionalidad dentro del servicio a petición de Adobe Analytics.
 
 Para obtener más información sobre la administración de solicitudes de asunto de datos relacionadas con Adobe Analytics, consulte [Adobe Analytics y Privacidad](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)de datos.
 
 ## Personalización por Destinatario {#personalization-foundation-by-target}
 
-AEM Sites incluye una integración opcional con Personalization Foundation por Destinatario que utiliza funciones dentro del servicio a petición de Adobe Destinatario.
+AEM Sites incluye una integración opcional con Personalization Foundation por Destinatario que utiliza la funcionalidad dentro del servicio a petición de Adobe Target.
 
-Para obtener más información sobre la administración de solicitudes de asunto de datos relacionadas con Adobe Destinatario, consulte [Adobe Destinatario - Privacidad y Regulación](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html)general de protección de datos.
+Para obtener más información sobre la gestión de solicitudes de datos relacionadas con el Adobe Target, consulte [Adobe Target - Privacidad y Reglamento](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)General de Protección de Datos.
 
 ## ContextHub {#contexthub}
 
