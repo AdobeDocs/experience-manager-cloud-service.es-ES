@@ -1,30 +1,30 @@
 ---
-title: Utilice el Editor de texto enriquecido de Adobe Experience Manager para crear contenido.
-description: Utilice el Editor de texto enriquecido de Experience Manager para crear contenido.
+title: Use the Rich Text Editor in [!DNL Adobe Experience Manager] to author content.
+description: Use the [!DNL Experience Manager] Rich Text Editor to author content.
 translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 47%
+source-wordcount: '287'
+ht-degree: 15%
 
 ---
 
 
 # Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
-El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes.
+El Editor de texto enriquecido (RTE) es un bloque de creación básico al que se agrega contenido textual [!DNL Adobe Experience Manager]. Además, muchos otros componentes que permiten la creación se basan en RTE. Los desarrolladores de Experience Manager pueden personalizar RTE y los administradores pueden configurar RTE para que los usuarios los utilicen.
 
 ## In-place editing {#in-place-editing}
 
-Si se selecciona un componente basado en texto con un solo pulse o clic, se muestra la [barra de herramientas de componentes](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar), como con cualquier otro componente.
+Seleccionar un componente basado en texto con un solo clic para mostrar la barra de herramientas [del](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)componente.
 
 ![La barra de herramientas de componentes](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
-Si vuelve a pulsar o hacer clic en el componente, o si inicialmente lo selecciona con un doble pulse o doble clic lento, se abre la edición local, que dispone de su propia barra de herramientas. Aquí puede editar el contenido y realizar cambios básicos de formato.
+Al volver a hacer clic o seleccionar inicialmente el componente con un doble lento, se abre la edición in-situ. El modo de edición contiene una barra de herramientas. Puede editar el contenido y realizar cambios básicos de formato.
 
 ![Edición local con RTE](/help/sites-cloud/authoring/assets/rte-in-place-editing.png)
 
-Esta barra de herramientas ofrece las opciones siguientes:
+Normalmente, la barra de herramientas ofrece las siguientes opciones:
 
 * **Formato**: Resalte el texto como negrita o cursiva o subrayado.
 * **Listas**: Cree listas con viñetas o numeradas y defina la sangría.
@@ -34,25 +34,28 @@ Esta barra de herramientas ofrece las opciones siguientes:
 * **Cerrar**: Detenga la edición.
 * **Guardar**: Guarde los cambios.
 
-## Full screen editing {#full-screen-editing}
+## Full-screen editing {#full-screen-editing}
 
-Para los componentes basados en texto, toque el botón ![de pantalla completa](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTE en modo de pantalla completa desde la [barra de herramientas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir el editor de texto enriquecido y ocultar el resto del contenido de la página.
+Para los componentes basados en texto, haga clic en el botón ![RTE de pantalla completa del modo de pantalla completa de la](/help/sites-cloud/authoring/assets/editing-full-screen.png) barra de herramientas [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir el editor de texto enriquecido y ocultar el resto del contenido de la página.
 
 El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la fase de creación. La disponibilidad de las opciones depende de la configuración. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
 ![RTE en modo de pantalla completa](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
-Entre las opciones adicionales del editor de texto enriquecido están:
+Otras opciones del editor de texto enriquecido incluyen:
 
 * **Anclaje**: Cree un anclaje en el texto con el que posteriormente pueda establecer un vínculo o crear una referencia.
-* **Alinear texto a la izquierda**
-* **Centrar texto**
-* **Alinear texto a la derecha**
+* **Alinear texto a la izquierda**.
+* **Centrar texto**.
+* **Alinear texto a la derecha**.
 
 Haga clic en minimizar para cerrar el modo de pantalla completa.
 
-![Botón para minimizar el RTE](/help/sites-cloud/authoring/assets/rte-minimize.png)
-
 >[!Tip]
 >
->Copiar listas anidadas de Microsoft Word en el editor de texto enriquecido puede dar resultados incoherentes. En su lugar, pegue como texto y realice ajustes manuales.
+>Copiar listas anidadas desde [!DNL Microsoft Word] al editor de texto enriquecido puede dar resultados incoherentes. En su lugar, pegue como texto y realice ajustes manuales.
+
+>[!MORELIKETHIS]
+>
+>* [Configuración de editores de texto enriquecido](/help/implementing/developing/extending/rich-text-editor.md)
+
