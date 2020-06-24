@@ -2,9 +2,9 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '5351'
+source-wordcount: '5348'
 ht-degree: 75%
 
 ---
@@ -337,12 +337,15 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
    El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica la cantidad de ofertas que están disponibles en la biblioteca actual.
 
    * Click or tap **Browse** to navigate to another folder. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Click or tap **Browse** again to close the navigation pane.
+
    ![Examinar contenido](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * Toque o haga clic en **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Vuelva a tocar o hacer clic en **Filtrar** para cerrar el panel de filtrado.
+
    ![Filtrar contenido](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
    * Para cambiar la manera de ordenar las ofertas, toque o haga clic en la flecha al lado de **La más reciente a la más antigua**. Las Ofertas se pueden ordenar de más reciente a más antigua o de más antigua a más reciente.
+
    ![Orden de clasificación de filtro](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    Toque o haga clic en el icono junto a **Ver como** para ver las ofertas como mosaicos o como una lista.
@@ -437,7 +440,7 @@ Si utiliza AEM como motor de orientación:
 
 Si utiliza Adobe Target como motor de orientación:
 
-![Adobe Destinatario como motor de destinatario](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![Adobe Target como motor de destinatario](/help/sites-cloud/authoring/assets/targeted-engine.png)
 
 Si utiliza Adobe Target como motor de determinación de objetivos y tiene A4T Analytics configurado en la cuenta, tiene un menú desplegable de **Fuente de informes** adicional:
 
@@ -461,7 +464,7 @@ Use la configuración avanzada para determinar qué sucede **después** de que u
 | Aumentar recuento, liberar usuario y permitir la reentrada | Seleccione la experiencia que el visitante verá si vuelve a entrar en la actividad: Misma experiencia, experiencia aleatoria, experiencia no vista |
 | Aumentar recuento, liberar usuario y volver a entrar en la barra | Determine lo que ve el usuario en lugar del contenido de la actividad: La misma experiencia, sin seguimiento, contenido predeterminado u otro contenido de actividad |
 
-Consulte la [documentación de Adobe Target](https://marketing.adobe.com/resources/help/es_ES/target/target/r_success_metrics.html) para obtener más información sobre las métricas de éxito.
+Consulte la [documentación de Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) para obtener más información sobre las métricas de éxito.
 
 ### Configuración (orientación de AEM) {#configuring-settings-aem-targeting}
 
@@ -500,13 +503,13 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
    ![Origen del Sistema de informes](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://marketing.adobe.com/resources/help/es_ES/target/target/r_success_metrics.html) sobre las métricas de éxito.
+1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sobre las métricas de éxito.
 
    Para cambiar el nombre del objetivo, haga clic en los tres puntos de la esquina superior derecha y seleccione **Cambiar nombre**.
 
    Si necesita borrar todos los campos, haga clic en los tres puntos de la esquina superior derecha y seleccione **Borrar todos los campos**.
 
-   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/es_ES/target/target/r_success_metrics.html).
+   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -592,7 +595,7 @@ Para personalizar el componente Target, acceda a las opciones del componente de 
 | Opción | Descripción |
 |---|---|
 | Lugar de residencia | La ubicación es una cadena que da un nombre a la ubicación de contenido de destino y conecta ofertas con lugares (o ubicaciones o componentes) en la página donde se deben colocar dichas ofertas. Este campo es un valor genérico. Si coloca una oferta en un componente, la oferta recuerda el ID de ubicación. Al ejecutar la página, el motor evalúa los segmentos del usuario y, de acuerdo con ello, soluciona las experiencias de las campañas activas que deben mostrarse. A continuación, comprueba los identificadores de ubicación en la página e intenta hacer coincidir las ofertas con dichos identificadores de ubicación. |
-| Motor | Seleccione entre Reglas del lado del cliente (sin seguimiento), Adobe Destinatario, ContextHub y Adobe Campaign según el motor que desee utilizar. |
+| Motor | Seleccione entre Reglas del lado del cliente (sin seguimiento), Adobe Target, ContextHub y Adobe Campaign según el motor que desee utilizar. |
 
 Si selecciona Adobe Target como motor:
 
@@ -600,9 +603,9 @@ Si selecciona Adobe Target como motor:
 
 | Opción | Descripción |
 |---|---|
-| Direccionamiento preciso | Si se habilita la determinación precisa de objetivos, el componente espera a que los datos de contexto o de concentrador de contexto estén disponibles antes de enviar la solicitud a Adobe Destinatario. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está activada. Si selecciona la casilla de verificación Establecimiento de objetivos preciso, el mbox realiza primero un mboxDefine y después un mboxUpdate que genera una solicitud de Ajax una vez que los datos están disponibles. Si no selecciona la casilla de verificación Establecimiento de objetivos preciso, el mbox realiza un mboxCreate que resulta en una solicitud sincrónica de inmediato (en este caso, es posible que no todos los datos de contexto estén disponibles aún). Nota: La activación o desactivación de la segmentación precisa en un componente específico no afecta a la configuración que haya definido de forma global. Siempre puede seleccionar Orientación precisa en el componente para anular la configuración global. |
+| Direccionamiento preciso | Si se habilita la determinación precisa de objetivos, el componente espera a que los datos de contexto o de concentrador de contexto estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está activada. Si selecciona la casilla de verificación Establecimiento de objetivos preciso, el mbox realiza primero un mboxDefine y después un mboxUpdate que genera una solicitud de Ajax una vez que los datos están disponibles. Si no selecciona la casilla de verificación Establecimiento de objetivos preciso, el mbox realiza un mboxCreate que resulta en una solicitud sincrónica de inmediato (en este caso, es posible que no todos los datos de contexto estén disponibles aún). Nota: La activación o desactivación de la segmentación precisa en un componente específico no afecta a la configuración que haya definido de forma global. Siempre puede seleccionar Orientación precisa en el componente para anular la configuración global. |
 | Incluir segmentos resueltos | Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco. Esto solo funciona en situaciones con la API XML en las que se sincronizan segmentos de AEM. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo. |
-| Parámetros heredados de contexto | Parámetros de contexto de Listas heredados del marco de Destinatario de Adobe, si los hay, asociados a la página seleccionada. |
+| Parámetros heredados de contexto | Parámetros de contexto de Listas heredados del marco de Adobe Target, si los hay, asociados a la página seleccionada. |
 | Parámetros de contexto | Toque o haga clic en el campo Añadir para configurar parámetros de contexto adicionales (igual que el que está disponible en Destinatario framework). Los parámetros de contexto agregados al componente se aplican únicamente al componente y no a otro componente, como sucedería si se añadieran parámetros de contexto directamente al marco. |
 | Parámetros estáticos | Toque o haga clic en el campo Añadir para configurar parámetros estáticos adicionales (igual que los disponibles en el marco de Destinatario). Los parámetros estáticos agregados al componente se aplican solamente al componente y no a otro componente, como ocurriría si agregara parámetros estáticos directamente al marco. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub). |
 
