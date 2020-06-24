@@ -1,11 +1,11 @@
 ---
 title: Configure RTE para crear sitios y páginas web accesibles.
-description: Aprenda a configurar el Editor de texto enriquecido para crear sitios accesibles en Adobe Experience Manager.
+description: Aprenda a configurar el Editor de texto enriquecido para crear sitios accesibles en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78ec0ed2a1473797a07905baa346a83376779419
+source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Configure RTE to create accessible sites {#configure-rte-accessible-sites}
 
-Adobe Experience Manager admite funciones de accesibilidad estándar, como texto alternativo para imágenes, y funciones adicionales a las que se puede acceder al crear contenido. Los autores de contenido utilizan estas funciones con componentes que utilizan el editor de texto enriquecido (RTE). Esto incluye agregar texto alternativo, información estructural a través de encabezados y elementos de párrafo, etc.
+[!DNL Adobe Experience Manager] admite funciones de accesibilidad estándar, como texto alternativo para imágenes, y funciones adicionales a las que se puede acceder al crear contenido. Los autores de contenido utilizan estas funciones con componentes que utilizan el editor de texto enriquecido (RTE). Las funciones incluyen la adición de texto alternativo, información estructural a través de encabezados y elementos de párrafo, etc.
 
 Para conocer las configuraciones típicas de RTE, consulte [Configuración de RTE](rich-text-editor.md) y [configuración de complementos RTE para funcionalidad](configure-rich-text-editor-plug-ins.md)específica.
 
@@ -21,11 +21,11 @@ Utilice la configuración de complementos RTE para configurar y personalizar las
 
 La funcionalidad RTE puede estar disponible en muchos componentes. El componente principal es el `Text` componente.
 
-En el caso del `Text` componente de Experience Manager, la siguiente captura de pantalla muestra el editor de texto enriquecido con una serie de complementos activados, incluidos `paraformat`:
+Para el `Text` componente de [!DNL Experience Manager], la siguiente captura de pantalla muestra el editor de texto enriquecido con una serie de complementos activados, entre los que se incluyen `paraformat`:
 
 ![Componente Texto RTE en modo de pantalla completa](assets/rte-toolbar-full-screen-mode.png)
 
-## Configurar las características del complemento {#configuring-the-plugin-features}
+## Configuración de las características del complemento {#configuring-the-plugin-features}
 
 Para obtener instrucciones sobre cómo configurar RTE, consulte [Configuración de la página Editor](rich-text-editor.md) de texto enriquecido. El artículo cubre:
 
@@ -34,41 +34,41 @@ Para obtener instrucciones sobre cómo configurar RTE, consulte [Configuración 
 * [Activar un complemento y configurar la propiedad features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurar otras funcionalidades del RTE](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Para activar algunas o todas las características de un complemento, configure el complemento dentro de la `rtePlugins` subrama correspondiente en CRXDE Lite.
+Para activar algunas o todas las funciones de un complemento, configure el complemento dentro de la `rtePlugins` subrama correspondiente en CRXDE Lite.
 
-![CRXDE Lite muestra un ejemplo de rtePlugin.](assets/chlimage_1-208.png)
+![CRXDE Lite muestra un ejemplo de rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
-### Ejemplo: Especificar formatos de párrafo disponibles en el campo de selección RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Ejemplo para especificar formatos de párrafo disponibles en el campo de selección RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-Los nuevos formatos de bloque semántico pueden estar disponibles para su selección mediante:
+Hay nuevos formatos de bloques semánticos disponibles para la selección.
 
 1. Según el RTE, determine y navegue a la ubicación [de](rich-text-editor.md#understand-the-configuration-paths-and-locations)configuración.
 1. [Habilite el campo](rich-text-editor.md) de selección de párrafos [activando el complemento](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 1. [Especifique los formatos que desea que estén disponibles en el campo](rich-text-editor.md)de selección de párrafos.
 1. Los formatos de párrafo están disponibles para el autor del contenido desde los campos de selección en RTE.
 
-Con los elementos estructurales disponibles en RTE mediante las opciones de formato de párrafo, Experience Manager proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente o a los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, deben seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales seleccionados en la opción Estilos. Esto garantiza la limpieza de las marcas, buenas opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
+Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, [!DNL Experience Manager] proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente o a los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, los autores pueden seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos en la opción Estilos, para garantizar la limpieza del marcado y las buenas opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
 
-## Uso de la función de edición de origen {#use-of-the-source-edit-feature}
+## Uso de la función Editar origen {#use-of-the-source-edit-feature}
 
-En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente HTML creado mediante RTE. Por ejemplo, un fragmento de contenido creado dentro del editor de texto enriquecido puede requerir un marcado adicional para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción de edición [de](rich-text-editor.md#aboutplugins) origen de RTE. Puede especificar la [`sourceedit` función en el `misctools` complemento](rich-text-editor.md#aboutplugins).
+En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente HTML creado mediante RTE. Por ejemplo, un fragmento de contenido creado dentro del editor de texto enriquecido puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción de edición [de](rich-text-editor.md#aboutplugins) origen de RTE. Puede especificar la [`sourceedit` función en el `misctools` complemento](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Utilice la `sourceedit` función con cuidado. Los errores de escritura y/o las funciones no compatibles pueden provocar más problemas.
+>Utilice la `sourceedit` función con cuidado. Cualquier error de escritura y las funciones no compatibles pueden presentar problemas.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
 
-## Adding Support for Additional HTML Elements and Attributes {#adding-support-for-additional-html-elements-and-attributes}
+## Adding Support for further HTML Elements and Attributes {#adding-support-for-additional-html-elements-and-attributes}
 
-To further extend the accessibility features of Experience Manager, it is possible to extend the existing components based on the RTE (such as the `Text` and `Table` components) with additional elements and attributes.
+To further extend the accessibility features of [!DNL Experience Manager], it is possible to extend the existing components based on the RTE (such as the `Text` and `Table` components) with extra elements and attributes.
 
 The following procedure illustrates how to extend the `Table` component with a `Caption` element that provides information about a data table to assistive technology users:
 
 ### Example: Add a caption to a table properties dialog {#example-adding-the-caption-to-the-table-properties-dialog}
 
-In the constructor of the `TablePropertiesDialog`, add an additional text input field that is used for editing the caption. Set the `itemId` to `caption` (the DOM attribute’s name) to automatically handle its content.
+In the constructor of the `TablePropertiesDialog`, add an extra text input field that is used for editing the caption. Set the `itemId` to `caption` (the DOM attribute’s name) to automatically handle its content.
 
 In a `Table`, set the attribute to the DOM element or or remove it from the DOM element. The dialog in the `config` object passed the value. Set or remove the DOM attributes using the corresponding `CQ.form.rte.Common` methods (`com` is a shortcut for `CQ.form.rte.Common`). Using `CQ.form.rte.Common` methods avoids common pitfalls with browser implementations.
 
@@ -140,7 +140,7 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
 * A plain text field is not the only type of input allowed for the value of the caption element. You can use any ExtJS widget, that provides the caption’s value through its `getValue()` method.
-* To add editing capabilities for further additional elements and attributes, ensure that:
+* To add editing capabilities for more elements and attributes, ensure that:
 
   * The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
   * The attribute is set and/or removed on the DOM element explicitly (`Table`).
@@ -149,5 +149,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [Guía rápida de los estándares WCAG](/help/onboarding/accessibility/quick-guide-wcag.md)
->* [Creación de contenido accesible en Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Cómo crear contenido accesible en Experience Manager](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
