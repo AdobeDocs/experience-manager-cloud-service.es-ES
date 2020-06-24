@@ -2,9 +2,9 @@
 title: Administración de ajustes preestablecidos de imagen
 description: Conozca los ajustes preestablecidos de imagen y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3651'
 ht-degree: 11%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Managing Image Presets{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten que Recursos AEM distribuya de forma dinámica imágenes de diferentes tamaños, formatos diferentes o con otras propiedades de imagen que se generan de forma dinámica. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para el envío de la imagen. También puede elegir comandos de formato para que el aspecto de la imagen se optimice cuando se distribuya para su visualización.
+Los ajustes preestablecidos de imagen permiten a los AEM Assets distribuir imágenes de forma dinámica en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen generadas dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para el envío de la imagen. También puede elegir comandos de formato para que el aspecto de la imagen se optimice cuando se distribuya para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido cuando exportan imágenes, lo que también cambia el formato de las imágenes según las especificaciones del administrador.
 
@@ -56,7 +56,7 @@ Para administrar los ajustes preestablecidos de imagen en AEM, toque o haga clic
 
 Si desea admitir la ingestión de archivos AI, EPS y PDF para poder generar representaciones dinámicas de estos formatos de archivo, puede que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.
 
-El formato de archivo de Adobe Illustrator es una variante de PDF. Las principales diferencias, en el contexto de Recursos AEM, son las siguientes:
+El formato de archivo de Adobe Illustrator es una variante de PDF. Las principales diferencias, en el contexto de los AEM Assets, son las siguientes:
 
 * Los documentos de Adobe Illustrator constan de una sola página con varias capas. Cada capa se extrae como un subrecurso PNG en el recurso principal de Illustrator.
 * Los documentos PDF constan de una o varias páginas. Cada página se extrae como un subrecurso PDF de una sola página en el documento PDF principal de varias páginas.
@@ -86,7 +86,7 @@ Para utilizar Dynamic Media para la previsualización y generación de represent
 
 Puede acceder a las opciones `Rasterize PDF/AI Image Preview Rendition` de componentes del proceso a través del `DAM Update Asset` flujo de trabajo.
 
-Toque Adobe Experience Manager en la esquina superior izquierda y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL DAM Update Asset]** y, a continuación, en la barra de herramientas, toque **[!UICONTROL Editar]**. En la página de flujo de trabajo de recursos de actualización de DAM, toque con el doble el componente de proceso para abrir el cuadro de diálogo Propiedades de los pasos. `Rasterize PDF/AI Image Preview Rendition`
+Toque en Adobe Experience Manager en la esquina superior izquierda y vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL DAM Update Asset]** y, a continuación, en la barra de herramientas, toque **[!UICONTROL Editar]**. En la página de flujo de trabajo de recursos de actualización de DAM, toque con el doble el componente de proceso para abrir el cuadro de diálogo Propiedades de los pasos. `Rasterize PDF/AI Image Preview Rendition`
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -173,7 +173,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
 ### Configuración del tamaño de miniatura de la imagen {#configuring-image-thumbnail-size}
 
-Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (Recursos **[!UICONTROL de imagen de proceso de medios]** dinámicos) para recursos de imagen dinámicos y el otro (Miniaturas de **[!UICONTROL proceso]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
+Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo de recursos **[!UICONTROL de actualización de]** DAM. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (Recursos **[!UICONTROL de imagen de proceso de]** Dynamic Media) para recursos de imagen dinámicos y el otro (Miniaturas de **[!UICONTROL proceso]**) para la generación de miniaturas estáticas o cuando el resto de procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
@@ -193,7 +193,7 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
 **Para configurar el tamaño de las miniaturas de imágenes**
 
 1. Toque **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
-1. Toque el paso Recursos **[!UICONTROL de imagen de proceso de medios]** dinámicos y toque la ficha **[!UICONTROL Miniaturas]** . Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Toque el paso Recursos **[!UICONTROL de imagen de proceso de]** Dynamic Media y toque la ficha **[!UICONTROL Miniaturas]** . Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -394,7 +394,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo Modificadores <strong>de</strong> imagen. Estos parámetros se definen en la referencia <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html">del comando del protocolo</a>de servidor de imágenes.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo Modificadores <strong>de</strong> imagen. Estos parámetros se definen en la referencia <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">del comando del protocolo</a>de servidor de imágenes.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
     <ul>
      <li>Comandos básicos de creación de plantillas y procesamiento de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de Localización: <code>locale=</code> y <code>req=xlate</code></li>
@@ -403,7 +403,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Servicios de Dynamic Media no principales: SVG, procesamiento de imágenes y impresión virtual</li>
+     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li>
     </ul> </td>
   </tr>
  </tbody>
