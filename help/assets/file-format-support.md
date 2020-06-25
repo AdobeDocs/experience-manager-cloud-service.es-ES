@@ -1,11 +1,11 @@
 ---
-title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube
-description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como servicio de nube.
+title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service
+description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '821'
 ht-degree: 9%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 9%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager como servicio de nube admite funciones básicas de gestor de contenido — almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Recursos Adobe Experience Manager admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
+Adobe Experience Manager como Cloud Service admite capacidades básicas de gestor de contenido — almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Adobe Experience Manager Assets admite una amplia gama de formatos de archivo y cada función de producto admite diversos formatos.
 
-Además, Experience Manager Assets ofrece una compatibilidad ampliada para generar previsualizaciones y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
+Además, Experience Manager Assets ofrece una mayor compatibilidad para generar previsualizaciones y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
 
 Los aspectos destacados de la conversión de recursos mediante los microservicios de recursos son:
 
@@ -86,6 +86,21 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada que no se a
 * Archivos PSD con una profundidad buena de 16.
 * Archivos TIFF que tienen datos de coma flotante.
 * Archivos TIFF que tienen espacio de color Lab.
+
+## Formatos 3D admitidos {#support-3d-formats}
+
+Se admite la siguiente lista de formatos 3D.
+
+Consulte [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+
+| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW] formatos {#camera-raw-formats}
 
@@ -203,7 +218,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de audio {#audio-formats}
 
-Assets as a Cloud Service ofrece compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+Assets como Cloud Service ofrece compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
 
 >[!MORELIKETHIS]
 >
