@@ -3,7 +3,7 @@ title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets 
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 9%
@@ -87,11 +87,11 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada que no se a
 * Archivos TIFF que tienen datos de coma flotante.
 * Archivos TIFF que tienen espacio de color Lab.
 
-## Formatos 3D admitidos {#support-3d-formats}
+## Formatos 3D {#support-3d-formats}
 
 Se admite la siguiente lista de formatos 3D.
 
-Consulte [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
