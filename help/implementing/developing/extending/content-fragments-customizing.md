@@ -2,9 +2,9 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '1786'
 ht-degree: 3%
 
 ---
@@ -26,21 +26,12 @@ Las partes [constituyentes](/help/assets/content-fragments/content-fragments.md#
 * consta de uno o varios elementos *de* contenido,
 * y que pueden tener una o más variaciones *de contenido*.
 
-Según el tipo de fragmento, también se utilizan modelos o la plantilla Fragmento **** simple:
+Los fragmentos de contenido individuales se basan en modelos de fragmento de contenido:
 
->[!CAUTION]
->
->[Ahora se recomiendan modelos](/help/assets/content-fragments/content-fragments-models.md) de fragmentos de contenido para crear todos los fragmentos.
->
->Los modelos de fragmentos de contenido se utilizan en todos los ejemplos de WKND.
-
-* Modelos de fragmento de contenido:
-
-   * Se utiliza para definir fragmentos de contenido que contienen contenido estructurado.
-   * Los modelos de fragmento de contenido definen la estructura de un fragmento de contenido al crearlo.
-   * Un fragmento hace referencia al modelo; por lo tanto, los cambios en el modelo pueden/afectarán a cualquier fragmento dependiente.
-   * Los modelos están compuestos por tipos de datos.
-   * Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento según corresponda.
+* Los modelos de fragmento de contenido definen la estructura de un fragmento de contenido al crearlo.
+* Un fragmento hace referencia al modelo; por lo tanto, los cambios en el modelo pueden/afectarán a cualquier fragmento dependiente.
+* Los modelos están compuestos por tipos de datos.
+* Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento según corresponda.
 
    >[!NOTE]
    >
@@ -49,20 +40,6 @@ Según el tipo de fragmento, también se utilizan modelos o la plantilla Fragmen
    >[!CAUTION]
    >
    >Cualquier cambio en un modelo de fragmento de contenido existente puede afectar a los fragmentos dependientes; esto puede llevar a propiedades huérfanas en esos fragmentos.
-
-* Plantilla de fragmento de contenido - Fragmento **** simple:
-
-   * Se utiliza para definir fragmentos de contenido sencillos.
-
-   * Esta plantilla define la estructura (básica, de solo texto) de un fragmento de contenido cuando se crea.
-
-   * La plantilla se copia en el fragmento cuando se crea.
-
-   * Las funciones para agregar nuevas variaciones, etc., deben actualizar el fragmento según corresponda.
-
-   * La plantilla de fragmento de contenido (Fragmento **** simple) funciona de forma distinta a la de otros mecanismos de plantilla dentro del ecosistema de AEM (por ejemplo, plantillas de página, etc.). Por lo tanto, debe considerarse por separado.
-
-   * Cuando se basa en la plantilla Fragmento **** simple, el tipo MIME del contenido se administra en el contenido real; esto significa que cada elemento y variación puede tener un tipo MIME diferente.
 
 ### Integración de sitios con recursos {#integration-of-sites-with-assets}
 
@@ -76,11 +53,11 @@ Los fragmentos de contenido se consideran una función de sitios como:
 
 * Se utilizan al crear las páginas.
 
-#### Asignación de fragmentos de contenido estructurado a recursos {#mapping-structured-content-fragments-to-assets}
+#### Asignación de fragmentos de contenido a recursos {#mapping-content-fragments-to-assets}
 
-![fragmento de contenido a recursos estructurados](assets/content-fragment-to-assets-structured.png)
+![fragmento de contenido a recursos](assets/content-fragment-to-assets.png)
 
-Los fragmentos de contenido con contenido estructurado (es decir, basados en un modelo de fragmento de contenido) se asignan a un solo recurso:
+Los fragmentos de contenido, basados en un modelo de fragmento de contenido, se asignan a un solo recurso:
 
 * Todo el contenido se almacena bajo el `jcr:content/data` nodo del recurso:
 
@@ -95,22 +72,6 @@ Por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` 
 
 * Los metadatos y el contenido asociado se almacenan a continuación `jcr:content/metadata`excepto el título y la descripción, que no se consideran metadatos tradicionales y se almacenan en 
 `jcr:content`
-
-#### Asignación de fragmentos de contenido simples a recursos {#mapping-simple-content-fragments-to-assets}
-
-![fragmento de contenido a recursos simple](assets/content-fragment-to-assets-simple.png)
-
-Los fragmentos de contenido simple (basados en la plantilla Fragmento **** simple) se asignan a una composición compuesta por un recurso principal y subrecursos (opcionales):
-
-* Toda la información que no sea de contenido de un fragmento (como título, descripción, metadatos, estructura) se administra exclusivamente en el recurso principal.
-* El contenido del primer elemento de un fragmento se asigna a la representación original del recurso principal.
-
-   * Las variaciones (si las hay) del primer elemento se asignan a otras representaciones del recurso principal.
-
-* Los elementos adicionales (si existen) se asignan a subrecursos del recurso principal.
-
-   * El contenido principal de estos elementos adicionales se asigna a la representación original del subactivo correspondiente.
-   * Otras variaciones (si procede) de cualquier elemento adicional se relacionan con otras representaciones del subactivo correspondiente.
 
 #### Ubicación del recurso {#asset-location}
 
@@ -160,11 +121,9 @@ Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, a
 >
 >**Modelo de fragmento de contenido:**
 >
->Cuando se utiliza un fragmento de contenido basado en un modelo de fragmento de contenido en una página, se hace referencia al modelo. Esto significa que si el modelo no se ha publicado en el momento de publicar la página, se marcará y el modelo se agregará a los recursos que se publicarán con la página.
+>Cuando se utiliza un fragmento de contenido en una página, se hace referencia al modelo de fragmento de contenido en el que se basa.
 >
->**Plantilla de fragmento de contenido - Fragmento simple:**
->
->Cuando se utiliza un fragmento de contenido basado en la plantilla de fragmento de contenido Fragmento **** simple en una página, no hay referencia ya que la plantilla se copió al crear el fragmento.
+>Esto significa que si el modelo no se ha publicado en el momento de publicar la página, se marcará y el modelo se agregará a los recursos que se publicarán con la página.
 
 ### Integración con otros marcos {#integration-with-other-frameworks}
 
@@ -239,7 +198,7 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
       * Colecciones de Lista
       * Añadir colecciones
       * Eliminar colecciones
-   * Acceso al modelo o plantilla del fragmento
+   * Acceso al modelo del fragmento
 
    Las interfaces que representan los elementos principales de un fragmento son:
 
@@ -354,13 +313,13 @@ if (fragmentResource != null) {
 
 ### Ejemplo: Creación de un nuevo fragmento de contenido {#example-creating-a-new-content-fragment}
 
-Para crear un nuevo fragmento de contenido mediante programación, debe utilizar un`FragmentTemplate` recurso de modelo o plantilla adaptado.
+Para crear un nuevo fragmento de contenido mediante programación, debe utilizar un`FragmentTemplate` recurso de modelo adaptado.
 
 Por ejemplo:
 
 ```java
-Resource templateOrModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+Resource ModelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
