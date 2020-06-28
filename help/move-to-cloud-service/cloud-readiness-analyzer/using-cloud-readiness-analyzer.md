@@ -2,9 +2,9 @@
 title: Uso del analizador de preparación para la nube
 description: Uso del analizador de preparación para la nube
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,12 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 
 * El informe de CRA se crea con el resultado del detector [de](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)patrones de Adobe Experience Manager (AEM). La versión del detector de patrones utilizado por CRA se incluye en el paquete de instalación de CRA.
 
-* El CRA solo puede ser ejecutado por el usuario **administrador** o un usuario del grupo **Administradores** .
+* CRA sólo puede ser ejecutado por el usuario **administrador** o un usuario del grupo de **administradores** .
 
 * CRA se admite en instancias de AEM con la versión 6.1 o posterior.
+
+   >[!NOTE]
+   > Consulte [Instalación en AEM 6.1](#installing-on-aem61) para conocer los requisitos especiales para instalar CRA en AEM 6.1.
 
 * CRA puede ejecutarse en cualquier entorno, pero es preferible que se ejecute en un entorno de *etapa* .
 
@@ -169,7 +172,9 @@ Los siguientes valores de respuesta son posibles:
 * `500 Internal Server Error`:: Indica que se ha producido un error de servidor interno. Un mensaje en formato Detalles del problema proporciona más detalles.
 * `503 Service Unavailable`:: Indica que el servidor está ocupado con otra respuesta y no puede atender esta solicitud de forma oportuna. Esto sólo es probable cuando se realizan solicitudes sincrónicas. Un mensaje en formato Detalles del problema proporciona más detalles.
 
-## Ajuste de duración de caché {#cache-adjustment}
+## Información del administrador
+
+### Ajuste de duración de caché {#cache-adjustment}
 
 La duración predeterminada de la caché de CRA es de 24 horas. Con la opción para actualizar un informe y regenerar la caché, tanto en la instancia de AEM como en la interfaz HTTP, es probable que este valor predeterminado sea adecuado para la mayoría de los usos del CRA. Si el tiempo de generación de informes es particularmente largo para la instancia de AEM, puede que desee ajustar la duración de la caché para minimizar la regeneración del informe.
 
@@ -178,7 +183,12 @@ El valor de duración de la caché se almacena como la `maxCacheAge` propiedad e
 
 El valor de esta propiedad es la duración de la caché en segundos. Un administrador puede ajustar la duración de la caché mediante CRX/DE Lite.
 
+### Instalación en AEM 6.1 {#installing-on-aem61}
 
+CRA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar el detector de patrones. Esta cuenta está disponible en AEM 6.2 y posterior. En AEM 6.1, esta cuenta debe crearse *antes* de la instalación de CRA siguiendo los pasos siguientes:
 
+1. Siga las instrucciones de [Creación de un nuevo usuario](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) de servicio para crear un usuario. Establezca UserID en `repository-reader-service` y deje la ruta intermedia vacía y, a continuación, haga clic en la marca de verificación verde.
 
+2. Siga las instrucciones de [Administración de usuarios y grupos](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups), específicamente las instrucciones para Añadir usuarios a un grupo para agregar el `repository-reader-service` usuario al `administrators` grupo.
 
+3. Instale el paquete de CRA mediante el Administrador de paquetes en la instancia de AEM de origen. (Esto agregará la modificación de configuración necesaria a la configuración de ServiceUserMapper para el usuario del servicio `repository-reader-service` del sistema).
