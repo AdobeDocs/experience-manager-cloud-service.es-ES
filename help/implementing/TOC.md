@@ -2,10 +2,10 @@
 sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 90%
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 90%
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Directrices de desarrollo de AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
+   + [Superposiciones en AEM como Cloud Service](developing/introduction/overlays.md)
+   + [Uso de la fusión de recursos de Sling en AEM como Cloud Service](developing/introduction/sling-resource-merger.md)
    + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
@@ -39,13 +41,13 @@ ht-degree: 90%
    + [Configurar formularios de búsqueda](developing/extending/search-forms.md)
    + [Configuración del editor de texto enriquecido](/help/implementing/developing/extending/rich-text-editor.md)
    + [Configuración de los complementos RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [Configurar RTE para crear sitios accesibles](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [Configuración de RTE para crear sitios accesibles](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implementar en AEM as a Cloud Service {#deploying}
    + [Implementar en AEM as a Cloud Service](deploying/overview.md)
    + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
-+ Author Tier {#author-tier}
-   + [Acceso al nivel de creación](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [Seguridad del nivel de creación](/help/implementing/author-tier/securing-the-author-tier.md)
++ Nivel de Author {#author-tier}
+   + [Acceso al nivel de Author](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [Protección del nivel de Author](/help/implementing/author-tier/securing-the-author-tier.md)
 + Información general sobre la distribución de contenido {#content-delivery}
    + [Flujo de distribución de contenido](dispatcher/overview.md)
    + [Dispatcher en la nube](dispatcher/disp-overview.md)
