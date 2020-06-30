@@ -2,10 +2,10 @@
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
 translation-type: tm+mt
-source-git-commit: e7efa3739ef386fdff9c86de238c64df09fb845f
+source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 93%
 
 ---
 
@@ -100,7 +100,6 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    * **Los estilos se pueden combinar**: permite que se seleccionen al mismo tiempo diversos estilos dentro de ese grupo.
    * **Nombre del estilo**: la descripción del estilo que se mostrará al autor de contenido al configurar el estilo del componente.
    * **Clases CSS**: el nombre real de la clase CSS asociada al estilo.
-
    Utilice los controles de arrastre para ordenar los grupos y los estilos dentro de los grupos. Utilice los iconos Añadir o Eliminar para añadir o quitar grupos y estilos dentro de los grupos.
 
 >[!CAUTION]
@@ -117,21 +116,27 @@ Los pasos siguientes solo son necesarios para habilitar el sistema de estilos pa
 
 ### Activar la pestaña Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
 
-Para que un componente funcione con el sistema de estilos de AEM y se muestre la pestaña Estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la pestaña de estilo en la siguiente configuración del componente:
+Para que un componente funcione con el sistema de estilos de AEM y muestre la ficha de estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la ficha de estilo con la siguiente configuración en el componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md)mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con el componente configurado, AEM insertará automáticamente en el elemento de decoración que AEM ajusta automáticamente en cada componente editable los estilos que los autores de páginas hayan configurado. El componente en sí no tiene que hacer nada más para que esto ocurra.
 
 ### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
-También hay disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
+También hay disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la ficha Cuadro de diálogo de diseño, la ficha del cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
 
 La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Diseño:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
+
+>[!NOTE]
+>Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md)mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
@@ -152,7 +157,6 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 >1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
 >1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
 >1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
-
 >
 
 
