@@ -2,9 +2,9 @@
 title: Uso de la fusión de recursos Sling en Adobe Experience Manager como Cloud Service
 description: La fusión de recursos de Sling proporciona servicios para acceder a los recursos y combinarlos
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ La fusión de recursos de Sling proporciona servicios para acceder a los recurso
 
 * **Sobrescribe** los cuadros de diálogo de componentes para la IU táctil (`cq:dialog`) mediante la jerarquía de tipos de recursos (mediante la propiedad `sling:resourceSuperType`).
 
-Con la fusión de recursos de Sling, los recursos o propiedades de superposición/anulación se combinan con los recursos/propiedades originales:
+Con la fusión de recursos de Sling, los recursos y/o propiedades de superposición/anulación se combinan con los recursos/propiedades originales:
 
 * El contenido de la definición personalizada tiene una prioridad mayor que el del original (es decir, *se superpone* o *anula* ).
 
@@ -32,7 +32,7 @@ Con la fusión de recursos de Sling, los recursos o propiedades de superposició
 >
 >La fusión de recursos de Sling y los métodos relacionados solo se pueden usar con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Esto también significa que solo es apropiado para la IU estándar con capacidad táctil; en particular, las anulaciones definidas de este modo solo son aplicables al cuadro de diálogo táctil de un componente.
 >
->Las superposiciones/anulaciones de otras áreas (incluidos otros aspectos de un componente táctil o de la IU clásica) implican copiar el nodo y la estructura adecuados del original al lugar donde se definirá la personalización.
+>Las superposiciones/anulaciones de otras áreas (incluidos otros aspectos de un componente táctil) implican copiar el nodo y la estructura adecuados del original al lugar donde se definirá la personalización.
 
 ### Objetivos para AEM {#goals-for-aem}
 
@@ -61,7 +61,6 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
    >
    >
 1. Realice los cambios en `/apps`
-
 >
 
 
@@ -210,7 +209,6 @@ Estos, junto con la funcionalidad estándar, le permiten:
 
       * tipo: `String[]`
       * value: una lista de nodos secundarios (como se define en `/libs`) para ocultar/ignorar
-
       &amp;ast; comodín; puede utilizarse para ocultar o ignorar todos los nodos secundarios.
 
 
