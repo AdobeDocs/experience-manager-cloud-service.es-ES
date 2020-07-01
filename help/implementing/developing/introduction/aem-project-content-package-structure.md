@@ -1,10 +1,10 @@
 ---
 title: Estructura del proyecto de AEM
-description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el servicio de nube de Adobe Experience Manager.
+description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el Cloud Service de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2530'
 ht-degree: 17%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 17%
 >
 >Familiarícese con el uso [básico de Arquetipo de proyecto de](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)AEM y con el complemento [Maven de contenido de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault, ya que este artículo se basa en estos conocimientos y conceptos.
 
-Este artículo describe los cambios que se requieren para que los proyectos de Adobe Experience Manager Maven sean compatibles con el servicio de nube AEM, asegurándose de que respetan la división entre contenido mutable e inmutable; que se establezcan las dependencias necesarias para crear implementaciones determinísticas y no conflictivas; y que están empaquetados en una estructura desplegable.
+Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager Maven sean compatibles con AEM Cloud Service, asegurándose de que respetan la división entre contenido mutable e inmutable; que se establezcan las dependencias necesarias para crear implementaciones determinísticas y no conflictivas; y que están empaquetados en una estructura desplegable.
 
 Las implementaciones de aplicaciones AEM deben estar formadas por un único paquete de AEM. A su vez, este paquete debe contener subpaquetes que comprenden todo lo que la aplicación necesita para funcionar, incluyendo código, configuración y cualquier contenido de línea de base compatible.
 
@@ -30,9 +30,9 @@ La estructura del paquete descrita en este documento es compatible **tanto** con
 
 ## Áreas mutables vs. inmutables del repositorio {#mutable-vs-immutable}
 
-`/apps` y `/libs` se consideran áreas **inmutables** de AEM, ya que no se pueden cambiar (crear, actualizar, eliminar) después de iniciarse AEM (es decir, durante la ejecución). Cualquier intento de cambiar un área inmutable durante la ejecución fallará.
+`/apps` y `/libs`**se consideran áreas inmutables de AEM, ya que no se pueden cambiar (crear, actualizar, eliminar) después de iniciarse AEM (es decir, durante la ejecución).** Cualquier intento de cambiar un área inmutable durante la ejecución fallará.
 
-Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. son todas áreas **mutables** , lo que significa que se pueden cambiar en tiempo de ejecución.
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. are all **mutable** areas, meaning they can be changed at runtime.
 
 >[!WARNING]
 >
@@ -46,7 +46,7 @@ Por este motivo, aunque los índices Oak son mutables en tiempo de ejecución, d
 
 >[!TIP]
 >
->Para obtener más información sobre la indexación en AEM como servicio de nube, consulte Búsqueda e indexación de [contenido de documento.](/help/operations/indexing.md)
+>Para obtener más información sobre la indexación en AEM como Cloud Service, consulte Búsqueda e indexación de [contenido de documento.](/help/operations/indexing.md)
 
 ## Estructura de paquete recomendada {#recommended-package-structure}
 
@@ -59,13 +59,13 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 + El `ui.apps` paquete, o paquete de código, contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros:
    + Paquetes OSGi
       + `/apps/my-app/install`
-   + Configuraciones OSGi
+   + [Configuraciones OSGi](/help/implementing/deploying/configuring-osgi.md)
       + `/apps/my-app/config`
-   + Secuencias de comandos HTL
+   + [Secuencias de comandos HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
    + JavaScript y CSS (a través de bibliotecas de clientes)
       + `/apps/my-app/clientlibs`
-   + Superposiciones de /libs
+   + [Superposiciones](/help/implementing/developing/introduction/overlays.md) de /libs
       + `/apps/cq`, `/apps/dam/`, etc.
    + Configuraciones de reserva según el contexto
       + `/apps/settings`
@@ -95,7 +95,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 
    Los paquetes ahora se incluyen mediante la configuración [integrada del complemento Maven](#embeddeds)FileVault Package Maven en lugar de la configuración `<subPackages>` .
 
-   En implementaciones complejas de Experience Manager, puede ser conveniente crear varios proyectos `ui.apps` y `ui.content` paquetes que representen sitios o inquilinos específicos en AEM. Si esto se hace, asegúrese de que se respeta la división entre contenido mutable e inmutable y de que los paquetes de contenido necesarios se agregan como subpaquetes en el paquete de contenido de `all` contenedor.
+   Para implementaciones de Experience Manager complejas, puede ser conveniente crear varios proyectos `ui.apps` y `ui.content` paquetes que representen sitios o inquilinos específicos en AEM. Si esto se hace, asegúrese de que se respeta la división entre contenido mutable e inmutable y de que los paquetes de contenido necesarios se agregan como subpaquetes en el paquete de contenido de `all` contenedor.
 
    Por ejemplo, una estructura compleja del paquete de contenido de implementación puede tener este aspecto:
 
@@ -143,7 +143,7 @@ Mientras que los scripts de Repo Init viven en el `ui.apps` proyecto como script
 + Grupos
 + ACL
 
-Las secuencias de comandos Repo Init se almacenan como `scripts` entradas de configuraciones de fábrica de `RepositoryInitializer` OSGi y, por tanto, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre las secuencias de comandos Repo Init de AEM Author y AEM Publish Services, o incluso entre Envs (Dev, Stage y Prod).
+Las secuencias de comandos Repo Init se almacenan como `scripts` entradas de las configuraciones de fábrica de `RepositoryInitializer` OSGi y, por lo tanto, se pueden dirigir implícitamente al modo de ejecución, lo que permite diferencias entre las secuencias de comandos Repo Init de AEM Author y AEM Publish Services, o incluso entre Envs (Dev, Stage y Prod).
 
 Tenga en cuenta que al definir usuarios y grupos, solo los grupos se consideran parte de la aplicación y se debe definir una parte integral de su función aquí. Los usuarios y grupos de la organización deben seguir estando definidos en tiempo de ejecución en AEM; por ejemplo, si un flujo de trabajo personalizado asigna trabajo a un grupo con nombre, dicho grupo debe definirse mediante Repo Init en la aplicación AEM. Sin embargo, si el grupo es meramente organizativo, como &quot;Wendy&#39;s Team&quot; y &quot;Sean&#39;s Team&quot;, se definirán mejor y se gestionarán en tiempo de ejecución en AEM.
 
@@ -155,7 +155,7 @@ El vocabulario completo para los scripts Repo Init está disponible en la docume
 
 >[!TIP]
 >
->Para ver un fragmento completo, consulte la sección Recortes [de inicio de](#snippet-repo-init) repo más abajo.
+>Consulte la sección [Recortes](#snippet-repo-init) de inicio de la repo más abajo para ver un fragmento completo.
 
 ## Paquete de estructura de repositorio {#repository-structure-package}
 
