@@ -2,19 +2,19 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 3%
+source-wordcount: '1475'
+ht-degree: 2%
 
 ---
 
 
 # Buscar contenido e indexar {#indexing}
 
-## Cambios en AEM como servicio de nube {#changes-in-aem-as-a-cloud-service}
+## Cambios en AEM como Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Con AEM como servicio de nube, Adobe está pasando de un modelo centrado en la instancia de AEM a una vista basada en servicios con Contenedores AEM n-x, impulsados por canalizaciones de CD/CI en el Administrador de nube. En lugar de configurar y mantener índices en instancias de AEM únicas, la configuración de índice debe especificarse antes de la implementación. Los cambios de configuración en la producción están claramente rompiendo las políticas de CI/CD. Lo mismo se aplica a los cambios de índice, ya que pueden afectar a la estabilidad y el rendimiento del sistema si no se especifica, se prueban y se vuelven a indexar antes de llevarlos a la producción.
+Con AEM como Cloud Service, Adobe está pasando de un modelo centrado en instancias de AEM a una vista basada en servicios con Contenedores de AEM n-x, impulsados por canalizaciones de CD/CI en el Administrador de nube. En lugar de configurar y mantener índices en instancias de AEM únicas, la configuración de índice debe especificarse antes de la implementación. Los cambios de configuración en la producción están claramente rompiendo las políticas de CI/CD. Lo mismo se aplica a los cambios de índice, ya que pueden afectar a la estabilidad y el rendimiento del sistema si no se especifica, se prueban y se vuelven a indexar antes de llevarlos a la producción.
 
 A continuación se muestra una lista de los principales cambios en comparación con AEM 6.5 y versiones anteriores:
 
@@ -32,13 +32,11 @@ A continuación se muestra una lista de los principales cambios en comparación 
 
 1. La configuración del índice se cambia mediante implementaciones. Los cambios en la definición del índice se configuran como otros cambios en el contenido.
 
-1. En un nivel elevado de AEM como servicio de nube, con la introducción del modelo [de implementación](#index-management-using-blue-green-deployments) azul-verde, existirán dos conjuntos de índices: un conjunto para la versión antigua (azul) y otro para la nueva versión (verde).
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+1. En un nivel alto en AEM como Cloud Service, con la introducción del modelo [de implementación](#index-management-using-blue-green-deployments) azul-verde, existirán dos conjuntos de índices: un conjunto para la versión antigua (azul) y otro para la nueva versión (verde).
 
 1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de compilación de Cloud Manager y recibirán una notificación cuando la nueva versión esté lista para recibir tráfico.
 
-1. Limitaciones: actualmente, la administración de índices en AEM como servicio de nube solo es compatible con índices de tipo lucene.
+1. Limitaciones: actualmente, la administración de índices en AEM como Cloud Service solo se admite para índices de tipo lucene.
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -56,7 +54,7 @@ La definición de índices puede incluir los tres casos de uso:
 1. Actualizando una definición de índice existente. Esto significa en realidad añadir una nueva versión de una definición de índice existente
 1. Eliminación de un índice existente que sea redundante u obsoleto.
 
-Tanto para los puntos 1 como 2 anteriores, debe crear una nueva definición de índice como parte de su base de código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte la documentación [](/help/implementing/deploying/overview.md)Implementación en AEM como un servicio de nube.
+Tanto para los puntos 1 como 2 anteriores, debe crear una nueva definición de índice como parte de su base de código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte la documentación [](/help/implementing/deploying/overview.md)Implementación en AEM como Cloud Service.
 
 ### Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
 
@@ -86,7 +84,7 @@ Una vez que se agrega la nueva definición de índice, la nueva aplicación debe
 
 >[!TIP]
 >
->Para obtener más información sobre la estructura de paquetes necesaria para AEM como servicio de nube, consulte la Estructura de proyectos de [AEM de documento.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Para obtener más información sobre la estructura de paquetes necesaria para AEM como Cloud Service, consulte la Estructura de proyectos de [AEM de documento.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Administración de índices mediante implementaciones Blue-Green {#index-management-using-blue-green-deployments}
 
@@ -126,7 +124,7 @@ La siguiente tabla muestra 5 definiciones de índice: index `cqPageLucene` se ut
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` es necesario para que AEM como servicio de nube marque esto como un reemplazo de un índice existente.
+> `<indexName>-custom-<customerVersionNumber>` para que AEM como Cloud Service marque esto como sustitución de un índice existente.
 
 | Índice | Índice listo para usar | Uso en la versión 1 | Uso en la versión 2 |
 |---|---|---|---|
@@ -149,7 +147,7 @@ Una vez que Adobe cambia un índice listo para usar como &quot;damAssetLucene&qu
 | /oak:index/cqPageLucene | Sí | Sí | No |
 | /oak:index/cqPageLucene-2 | Sí | No | Sí |
 
-### Restricciones          {#limitations}
+### Restricciones     {#limitations}
 
 Actualmente, la administración de índices solo se admite para índices de tipo `lucene`.
 
@@ -161,7 +159,9 @@ Si se va a eliminar un índice en una versión posterior de la aplicación, pued
 
 Para agregar un índice denominado &quot;/oak:index/acmeProduct-custom-1&quot; para utilizarlo en una nueva versión de la aplicación y posterior, el índice debe configurarse de la siguiente manera:
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+Esto funciona anteponiendo un identificador personalizado al nombre del índice, seguido de un punto (**.**). El identificador debe tener una longitud de entre 1 y 4 caracteres.
 
 Como se ha indicado anteriormente, esto garantiza que la nueva versión de la aplicación solo utilice el índice.
 
