@@ -2,9 +2,9 @@
 title: Uso de la fusión de recursos Sling en Adobe Experience Manager como Cloud Service
 description: La fusión de recursos de Sling proporciona servicios para acceder a los recursos y combinarlos
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1160'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 La fusión de recursos de Sling proporciona servicios para acceder a los recursos y combinarlos. Proporciona mecanismos diferentes (de diferenciación) para:
 
-* **[Superposiciones](/help/implementing/developing/introduction/overlays.md)**de recursos mediante las rutas[de búsqueda](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)configuradas.
+* **[Superposiciones](/help/implementing/developing/introduction/overlays.md)**de recursos mediante las rutas[de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
 
 * **Sobrescribe** los cuadros de diálogo de componentes para la IU táctil (`cq:dialog`) mediante la jerarquía de tipos de recursos (mediante la propiedad `sling:resourceSuperType`).
 
@@ -30,9 +30,7 @@ Con la fusión de recursos de Sling, los recursos y/o propiedades de superposici
 
 >[!CAUTION]
 >
->La fusión de recursos de Sling y los métodos relacionados solo se pueden usar con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Esto también significa que solo es apropiado para la IU estándar con capacidad táctil; en particular, las anulaciones definidas de este modo solo son aplicables al cuadro de diálogo táctil de un componente.
->
->Las superposiciones/anulaciones de otras áreas (incluidos otros aspectos de un componente táctil) implican copiar el nodo y la estructura adecuados del original al lugar donde se definirá la personalización.
+>La fusión de recursos de Sling y los métodos relacionados solo se pueden usar con la IU táctil (que es la única IU disponible para AEM como Cloud Service).
 
 ### Objetivos para AEM {#goals-for-aem}
 
@@ -43,26 +41,17 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 
    Al utilizar la fusión de recursos Sling no se recomienda copiar toda la estructura de `/libs` porque esto resultaría en que se retuviera demasiada información en la personalización (normalmente `/apps`). La duplicación de información aumenta innecesariamente la posibilidad de problemas cuando el sistema se actualiza de alguna manera.
 
->[!NOTE]
->
->Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
->
->Sin embargo, las anulaciones suelen definirse en `/apps`, ya que la mejor opción en AEM es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
-
 >[!CAUTION]
 >
 >No ***debe*** cambiar nada en la `/libs` ruta.
 >
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se puede sobrescribir cada vez que se apliquen actualizaciones a la instancia.
 >
->El método recomendado para la configuración y otros cambios es:
->
->1. Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
+>* Las superposiciones dependen de las rutas [de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
    >
    >
-1. Realice los cambios en `/apps`
->
-
+* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
+   >  Sin embargo, las anulaciones se definen a menudo en `/apps`, ya que la práctica recomendada en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
 
 
 ### Propiedades {#properties}
@@ -209,6 +198,7 @@ Estos, junto con la funcionalidad estándar, le permiten:
 
       * tipo: `String[]`
       * value: una lista de nodos secundarios (como se define en `/libs`) para ocultar/ignorar
+
       &amp;ast; comodín; puede utilizarse para ocultar o ignorar todos los nodos secundarios.
 
 
