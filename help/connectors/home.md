@@ -2,10 +2,10 @@
 title: Conectores de Adobe Experience Manager as a Cloud Service
 description: Recursos de autoayuda y enlaces a documentación sobre conectores de Adobe Experience Manager as a Cloud Service Connectors
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 68%
+source-wordcount: '379'
+ht-degree: 70%
 
 ---
 
@@ -34,7 +34,6 @@ En esta página se muestran los recursos de autoayuda sobre conectores para Expe
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo utilizar y administrar Recursos Experience Manager como Cloud Service. |
 | [El paso de AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprender el viaje de transición a Cloud Service |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo personalizar a su Experience Manager como una implementación de Cloud Service, incluidos los temas de desarrollo e implementación. |
-| [Guía del usuario sobre conectores](/help/connectors/home.md) | Obtenga información sobre cómo integrar Conectores en un Experience Manager como Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de Experience Manager como Cloud Service, como tareas de indexación y mantenimiento. |
 
 ## Otros recursos de Experience Manager {#other-resources}
