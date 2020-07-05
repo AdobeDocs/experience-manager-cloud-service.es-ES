@@ -1,18 +1,18 @@
 ---
-title: Acceso al nivel de creación
-description: Acceso al nivel de creación
-translation-type: tm+mt
+title: Acceso al nivel de Author
+description: Acceso al nivel de Author
+translation-type: ht
 source-git-commit: e772687c4034a364912aa426a133134571246db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Acceso al nivel de creación {#accessing-the-author-tier}
+# Acceso al nivel de Author {#accessing-the-author-tier}
 
-El acceso al nivel de creación de un entorno de AEM como Cloud Service se realiza mediante una dirección URL estándar y no personalizable.
+El acceso al nivel de Author como entorno de AEM as a Cloud Service se realiza mediante una dirección URL estándar y no personalizable.
 
 El formato de la dirección URL es el siguiente:
 
@@ -22,4 +22,4 @@ Finalmente, este formato se reemplazará con un formato de URL estándar de Adob
 
 * `https://experience.adobe.com/#/@[TenantId]/`
 
-Por lo tanto, no se puede configurar nombres de dominio personalizados para el nivel de autor de AEM.
+Por lo tanto, no se pueden configurar nombres de dominio personalizados para el Nivel de AEM Author.
