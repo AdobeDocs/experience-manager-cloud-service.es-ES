@@ -1,9 +1,9 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.5.0
 description: Notas de la versión de Experience Manager para 2020.5.0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.5.0 es 7 de mayo de 2020.
+La fecha de la versión de [!DNL Experience Manager] as a Cloud Service 2020.5.0 es el 7 de mayo de 2020.
 
 ## Novedades en AEM Sites {#aem-sites}
 
