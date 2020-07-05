@@ -1,11 +1,11 @@
 ---
 title: Problemas conocidos
 description: Notas de la versión específicas de los problemas conocidos con Adobe Experience Manager as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Se espera que algunas funciones de Adobe Experience Manager Assets que dependen 
    * La pestaña Información del producto de la interfaz de usuario de las propiedades del recurso no se completó.
 * Funciones no habilitadas en esta etapa debido a la dependencia de la integración de InDesign Server:
    * Plantillas y catálogos de recursos.
-   * previsualización de varios archivos de Adobe InDesign en varias páginas.
+   * Vista previa de varias páginas de archivos de Adobe InDesign.
 
 >[!MORELIKETHIS]
 >
