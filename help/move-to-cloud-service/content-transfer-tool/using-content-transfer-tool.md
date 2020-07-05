@@ -1,11 +1,11 @@
 ---
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1582'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,26 +18,26 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3+ y JAVA 8. Si dispone de una versión anterior de AEM, deberá actualizar el repositorio de contenido a AEM 6.5 para usar la herramienta de transferencia de contenido.
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
+* Si utiliza un *entorno limitado*, asegúrese de que el entorno se actualice a la versión del 10 de junio de 2020 o posterior. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
 
-* Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en la instancia de origen y pertenecer al grupo de administradores de AEM en la instancia de Cloud Service a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
+* Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en su instancia de origen y pertenecer al grupo de administradores de AEM en la instancia de Cloud Service a la que esté transfiriendo el contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
 * La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción.
 
-* El límite superior recomendado para el tamaño del repositorio que la herramienta de transferencia de contenido puede admitir a la vez es de 20 GB.
+* El límite superior recomendado para el tamaño del repositorio que la herramienta de transferencia de contenido puede admitir a la vez es de 20 GB.
 
 ## Disponibilidad {#availability}
 
-La herramienta de transferencia de contenido se puede descargar como archivo zip (Content Transfer Tool v1.0.0) desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
+Content Transfer Tool se puede descargar como un archivo zip (Content Transfer Tool v1.0.0) desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue Content Transfer Tool, desde el portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) .
+>Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html).
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=spa)
 
 Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación):
 
@@ -70,7 +70,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Token de acceso**: introduzca el token de acceso.
 
       >[!NOTE]
-      >Puede recuperar el token de acceso de la instancia de autor navegando hasta `/libs/granite/migration/token.json`. El token de acceso se recupera de la instancia de creación del Cloud Service.
+      >Puede recuperar el token de acceso de la instancia de autor navegando hasta `/libs/granite/migration/token.json`. El token de acceso se recupera de la instancia de creación de Cloud Service.
 
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
