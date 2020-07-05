@@ -1,11 +1,11 @@
 ---
 title: Herramienta de Dispatcher Converter de AEM
 description: Herramienta de Dispatcher Converter de AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Consulte el documento **[Recursos de Git: Dispatcher Converter de AEM Cloud Serv
 >[!IMPORTANT]
 >Dispatcher Converter de AEM se desarrolla con Python 3.7.3. Se recomienda tener instalado Python 3.5 o superior.
 
-## Restricciones   {#limitations}
+## Restricciones     {#limitations}
 
 Dispatcher Converter de AEM funciona bajo el supuesto de que la estructura de la carpeta de configuración de Dispatcher proporcionada es similar a la descrita en la configuración de Dispatcher de Cloud Manager.
 
