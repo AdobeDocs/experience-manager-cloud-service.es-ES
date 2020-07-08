@@ -2,7 +2,7 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 9%
@@ -17,10 +17,12 @@ ht-degree: 9%
 En esta sección se describe cómo estructurar AEM como una configuración Cloud Service de Apache y Dispatcher, así como cómo validarla y ejecutarla localmente antes de implementarla en entornos de Cloud. También se describe la depuración en entornos de nube. Para obtener más información sobre Dispatcher, consulte la documentación [de Dispatcher de](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)AEM.
 
 >[!NOTE]
+>
 >Los usuarios de Windows necesitarán utilizar Windows 10 Professional u otras distribuciones que admitan Docker. Se trata de un requisito previo para ejecutar y depurar Dispatcher en un equipo local. Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux del SDK, pero el SDK de Windows se puede utilizar de forma similar.
 
 >[!WARNING]
-> Usuarios de Windows: la versión actual de AEM como Cloud Service de herramientas de Dispatcher locales (v2.0.20) no es compatible con Windows. Póngase en contacto con el servicio de asistencia [de](https://daycare.day.com/home.html) Adobe para recibir actualizaciones sobre la compatibilidad con Windows.
+>
+>Usuarios de Windows: la versión actual de AEM como Cloud Service de herramientas de Dispatcher locales (v2.0.20) no es compatible con Windows. Póngase en contacto con el servicio de asistencia [de](https://daycare.day.com/home.html) Adobe para recibir actualizaciones sobre la compatibilidad con Windows.
 
 ## Herramientas de Dispatcher {#dispatcher-sdk}
 
@@ -197,7 +199,7 @@ La herramienta de validación está disponible en el SDK `bin/validator` como un
 
 Se invoca como: `validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-La herramienta valida la configuración de Apache y dispatcher. Analiza todos los archivos con un patrón `conf.d/enabled_vhosts/*.vhost` y comprueba que solo se utilizan las directivas permitidas. Las directivas permitidas en los archivos de configuración de Apache se pueden enumerar ejecutando el comando allow list del validador:
+La herramienta valida la configuración de Apache y dispatcher. Analiza todos los archivos con un patrón `conf.d/enabled_vhosts/*.vhost` y comprueba que solo se utilizan las directivas permitidas. Las directivas permitidas en los archivos de configuración de Apache se pueden enumerar ejecutando el comando de lista de permitidos del validador:
 
 ```
 $ validator whitelist
@@ -236,9 +238,9 @@ La siguiente tabla muestra los módulos apache admitidos:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-Los clientes no pueden agregar módulos arbitrarios, sin embargo se puede considerar incluir módulos adicionales en el producto en el futuro. Los clientes pueden encontrar la lista de directivas disponibles para una versión de Dispatcher determinada ejecutando el comando allow list del validador en el SDK, como se describe anteriormente.
+Los clientes no pueden agregar módulos arbitrarios, sin embargo se puede considerar incluir módulos adicionales en el producto en el futuro. Los clientes pueden encontrar la lista de directivas disponibles para una versión de Dispatcher determinada ejecutando el comando de lista de permitidos del validador en el SDK, tal como se describe anteriormente.
 
-La lista de permitidos contiene una lista de directivas Apache que están permitidas en una configuración de cliente. Si no se permite una directiva, la herramienta registra un error y devuelve un código de salida distinto de cero. Si no se proporciona ninguna lista permitida en la línea de comandos (que es la forma en que se debe invocar), la herramienta utiliza una lista permitida predeterminada que Cloud Manager utilizará para la validación antes de implementarla en entornos de nube.
+La lista de permitidos contiene una lista de directivas Apache que se permiten en una configuración de cliente. Si no se permite una directiva, la herramienta registra un error y devuelve un código de salida distinto de cero. Si no se proporciona ninguna lista de permitidos en la línea de comandos (que es la forma de invocarla), la herramienta utiliza una lista de permitidos predeterminada que Cloud Manager utilizará para la validación antes de implementarla en entornos de nube.
 
 Además, analiza todos los archivos con patrones `conf.dispatcher.d/enabled_farms/*.farm` y comprueba que:
 
@@ -311,7 +313,7 @@ Aparte de las seis secciones mencionadas en los párrafos anteriores, no se le p
 }
 ```
 
-**los clientes/procesamientos permitidos no se incluyen desde: ...**
+**los clientes/renderizadores permitidos no se incluyen desde: ...**
 
 Este error se genera cuando no se especifica una inclusión para `/renders` y `/allowedClients` en la `/cache` sección. Consulte el nombre del **archivo incluido (...): ...** para obtener más información.
 
@@ -529,7 +531,7 @@ forget to adapt the `Include` statements referring to that file in the virtual h
 If the folder however contains multiple, virtual host specific files, their contents should be
 copied to the `Include` statement referring to them in the virtual host files.
 
-### Eliminar listas permitidas
+### Eliminar listas de permitidos
 
 Remove the folder `conf.d/whitelists` and remove `Include` statements in the virtual host files referring to
 some file in that subfolder.
