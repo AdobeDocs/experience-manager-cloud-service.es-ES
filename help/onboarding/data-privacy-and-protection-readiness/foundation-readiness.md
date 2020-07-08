@@ -1,8 +1,8 @@
 ---
-title: Regulaciones de protección de datos y privacidad de datos - Adobe Experience Manager como preparación de la base de servicios en la nube
-description: 'Obtenga información sobre la compatibilidad de Adobe Experience Manager como base de servicios en la nube para las distintas normativas de protección de datos y privacidad de datos; incluyendo el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Privacidad del Consumidor de California y cómo cumplir al implementar un nuevo proyecto de AEM como servicio de nube. '
+title: Regulaciones de protección de datos y privacidad de datos - Adobe Experience Manager como preparación de base para Cloud Service
+description: 'Obtenga información sobre el Adobe Experience Manager como Cloud Service Foundation y la compatibilidad con las diversas normas de protección de datos y protección de datos; incluido el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Protección de los Consumidores de California y la manera de cumplir con la implementación de un nuevo proyecto de AEM como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 5%
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager como base de servicios en la nube Preparación para la protección de datos y Regulaciones de privacidad de datos {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager como Cloud Service Base Preparada para la Protección de Datos y Regulaciones de Privacidad de Datos {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> Para AEM como servicio de nube no hay ningún procedimiento manual disponible en la interfaz de usuario para la eliminación de un perfil de usuario, ya que no se puede acceder a CRXDE.
+>Para AEM como Cloud Service no hay ningún procedimiento manual disponible en la interfaz de usuario para la eliminación de un perfil de usuario, ya que no se puede acceder a CRXDE.
 
 ### HTTP API {#http-api-1}
 
