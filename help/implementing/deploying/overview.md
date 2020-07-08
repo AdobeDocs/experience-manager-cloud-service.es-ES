@@ -2,7 +2,7 @@
 title: Implementar en AEM as a Cloud Service
 description: 'Implementar en AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Es fundamental comprender que AEM se actualizará con frecuencia, y posiblemente
 
 >[!NOTE]
 >
-> Si el código personalizado se insertó en el entorno de ensayo y luego fue rechazado por usted, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta de git de la última versión de cliente en producción correcta.
+>Si el código personalizado se insertó en el entorno de ensayo y luego fue rechazado por usted, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta de git de la última versión de cliente en producción correcta.
 
 Con frecuencia regular, se lanzará una versión de funciones que se centrará en las adiciones y mejoras de funciones que tendrán un impacto más considerable en la experiencia del usuario en comparación con las versiones diarias. La versión de una función no se activa por la implementación de un conjunto de cambios grande, sino por la activación de un cambio de versión, que activa el código que se ha ido acumulando durante días o semanas a través de las actualizaciones diarias.
 
@@ -133,8 +133,11 @@ En los siguientes casos, es preferible utilizar el método de codificación manu
 * Crear/eliminar grupos
 * Crear/eliminar usuarios
 * Añadir ACL
-   > [!NOTE]
+
+   >[!NOTE]
+   >
    >La definición de ACL requiere que las estructuras de nodos ya estén presentes. Por lo tanto, puede que sea necesario crear las sentencias de ruta anteriores.
+
 * Añadir ruta (por ejemplo, para estructuras de carpetas raíz)
 * Añadir CND (definiciones de tipo de nodo)
 
