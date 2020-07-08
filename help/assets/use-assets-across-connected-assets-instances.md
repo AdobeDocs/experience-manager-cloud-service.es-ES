@@ -3,7 +3,7 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 54%
@@ -139,13 +139,13 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
    *Figura: Opciones para filtrar tipos de documentos e imágenes al buscar recursos en DAM remoto.*
 
-1. Se notifica al creador del sitio si se busca un recurso de forma asincrónica y si falla alguna tarea de recuperación. Durante la creación o incluso después de esta, los autores pueden ver información detallada sobre las tareas de recuperación y los errores en la interfaz de usuario de [trabajos asincrónicos](/help/assets/asynchronous-jobs.md).
+1. Se notifica al creador del sitio si se busca un recurso de forma asincrónica y si falla alguna tarea de recuperación. Durante la creación o incluso después de esta, los autores pueden ver información detallada sobre las tareas de recuperación y los errores en la interfaz de usuario de [trabajos asincrónicos](/help/operations/asynchronous-jobs.md).
 
    ![Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.](assets/assets_async_transfer_fails.png)
 
    *Figura: Notificación sobre la captura asincrónica de recursos que se produce en segundo plano.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso recuperado, consulte la interfaz de usuario de [trabajos asincrónicos](/help/assets/asynchronous-jobs.md) .
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso recuperado, consulte la interfaz de usuario de [trabajos asincrónicos](/help/operations/asynchronous-jobs.md) .
 
    >[!NOTE]
    >
@@ -189,4 +189,4 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 Siga estos pasos para solucionar los problemas de los escenarios de error comunes:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Puede que un recurso recuperado de un DAM remoto no se publique en una página web por las siguientes razones: no existe en remoto; falta de permisos adecuados para recuperarla; error de red. Asegúrese de que el recurso no se elimina del DAM remoto o de que no se cambian los permisos. Asegúrese de que se cumplen los requisitos previos adecuados. Vuelva a intentar agregar el recurso a la página y vuelva a publicarlo. Compruebe la [lista de trabajos asincrónicos](/help/assets/asynchronous-jobs.md) si hay errores en la recuperación de recursos.
+* Puede que un recurso recuperado de un DAM remoto no se publique en una página web por las siguientes razones: no existe en remoto; falta de permisos adecuados para recuperarla; error de red. Asegúrese de que el recurso no se elimina del DAM remoto o de que no se cambian los permisos. Asegúrese de que se cumplen los requisitos previos adecuados. Vuelva a intentar agregar el recurso a la página y vuelva a publicarlo. Compruebe la [lista de trabajos asincrónicos](/help/operations/asynchronous-jobs.md) si hay errores en la recuperación de recursos.
