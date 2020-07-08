@@ -2,17 +2,17 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 
 # Registro{#logging}
 
-AEM como servicio de nube es una plataforma para que los clientes incluyan código personalizado para crear experiencias únicas para su base de clientes. Teniendo esto en cuenta, el registro es una función crítica para depurar código personalizado en entornos de nube y, más particularmente, en entornos de desarrollo locales.
+AEM como Cloud Service es una plataforma en la que los clientes pueden incluir código personalizado para crear experiencias únicas para la base de clientes. Teniendo esto en cuenta, el registro es una función crítica para depurar código personalizado en entornos de nube y, más particularmente, en entornos de desarrollo locales.
 
 
 <!-- ## Global Logging {#global-logging}
@@ -26,9 +26,9 @@ AEM como servicio de nube es una plataforma para que los clientes incluyan códi
 * the format to be used when writing the log messages
 -->
 
-## AEM como registro de servicios en la nube {#aem-as-a-cloud-service-logging}
+## AEM como Cloud Service de registro {#aem-as-a-cloud-service-logging}
 
-AEM como servicio de nube le oferta la posibilidad de configurar:
+AEM como Cloud Service le oferta la posibilidad de configurar:
 
 * parámetros globales para el servicio de registro central
 * registro de datos de solicitud; una configuración de registro especializada para información de solicitud
@@ -40,16 +40,17 @@ En los entornos de Cloud, los desarrolladores pueden descargar registros a trav�
 
 >[!NOTE]
 >
->El inicio de sesión en AEM como servicio de nube se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
+>El inicio de sesión en AEM como Cloud Service se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
 
-## AEM como servicio de nube Registro de Java {#aem-as-a-cloud-service-java-logging}
+## AEM como Cloud Service del registro Java {#aem-as-a-cloud-service-java-logging}
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> Se pueden personalizar si es necesario, aunque la configuración estándar es adecuada para la mayoría de las instalaciones. Sin embargo, si necesita personalizar las configuraciones de registro estándar, asegúrese de hacerlo solo en `dev` entornos.
+>[!IMPORTANT]
+>
+>Se pueden personalizar si es necesario, aunque la configuración estándar es adecuada para la mayoría de las instalaciones. Sin embargo, si necesita personalizar las configuraciones de registro estándar, asegúrese de hacerlo solo en `dev` entornos.
 
-Algunos registradores y escritores se incluyen en un AEM estándar como instalación de Cloud Service.
+Algunos registradores y escritores se incluyen en una instalación estándar de AEM como Cloud Service.
 
 El primero es un caso especial, ya que controla tanto los registros `request` como los `access` :
 
@@ -93,19 +94,19 @@ Los otros pares siguen la configuración estándar:
 
 * No se vincula a un escritor específico, por lo que creará y utilizará un escritor implícito con la configuración predeterminada.
 
-**AEM como servicio de nube Registro de solicitudes HTTP**
+**AEM como Cloud Service HTTP Request Logging**
 
 Todas las solicitudes de acceso a AEM WCM y al repositorio se registran aquí.
 
 Ejemplo de salida:
 
-**AEM como servicio de nube Solicitud HTTP / Registro de acceso de respuesta**
+**AEM como Cloud Service HTTP Request / Response Access Loging**
 
 Cada solicitud de acceso se registra aquí junto con la respuesta.
 
 Ejemplo de salida:
 
-**Registro de Apache Web Server / Dispatcher**
+**Registro de Apache Web Server/Dispatcher**
 
 Es un registro que se utiliza para depurar problemas de Dispatcher. Para obtener más información, consulte [Depuración de la configuración](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/)de Apache y Dispatcher.
 
@@ -113,7 +114,7 @@ Es un registro que se utiliza para depurar problemas de Dispatcher. Para obtener
 
 leftover text from the last breakaway chunk (re dispatcher) -->
 
-En lo que respecta a las prácticas básicas, se recomienda que se alinee con las configuraciones que existen actualmente en AEM como arquetipo de máquina de servicio en la nube. Estos valores definen diferentes niveles y configuraciones de registro para tipos de entorno específicos:
+En cuanto a las prácticas básicas, se recomienda que se alinee con las configuraciones que existen actualmente en AEM como arquetipo Maven Cloud Service. Estos valores definen diferentes niveles y configuraciones de registro para tipos de entorno específicos:
 
 * para `local dev` y `dev` entornos, establezca el registrador en el nivel **DEBUG** en la variable `error.log`
 * para `stage`, establezca el registrador en el nivel **WARN** en la variable `error.log`
@@ -154,14 +155,14 @@ A continuación encontrará ejemplos de cada configuración:
 
 ### Registros y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
 
-Además de la configuración de registro global, AEM como servicio de nube le permite configurar opciones específicas para un servicio individual:
+Además de la configuración de registro global, AEM como Cloud Service le permite configurar opciones específicas para un servicio individual:
 
 * el nivel de registro específico
 * el registrador (el servicio OSGi que proporciona los mensajes de registro)
 
 Esto le permite canal los mensajes de registro de un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o la realización de pruebas; por ejemplo, cuando necesita un nivel de registro mayor para un servicio específico.
 
-AEM como servicio de nube utiliza lo siguiente para escribir mensajes de registro en el archivo:
+AEM como Cloud Service utiliza lo siguiente para escribir mensajes de registro en el archivo:
 
 1. Un servicio **** OSGi (registrador) escribe un mensaje de registro.
 1. Un **registrador** toma este mensaje y lo formatea según sus especificaciones.
@@ -192,13 +193,13 @@ Para cambiar los niveles de registro de los entornos de nube, se debe modificar 
 
 >[!NOTE]
 >
-> Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia de AEM como servicio de nube. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como un servicio](/help/implementing/deploying/overview.md)de nube.
+>Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, insertarlos en una instancia de AEM como Cloud Service. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activación del nivel de registro DEBUG**
 
 >[!WARNING]
 >
-> Al activar el nivel de registro DEBUG globalmente, se generará una gran cantidad de información que será difícil de pasar. Se recomienda habilitarlo solo para los servicios que requieren depuración. Para obtener más información, consulte [Registros y escritores de servicios](logging.md#loggers-and-writers-for-individual-services)individuales.
+>Al activar el nivel de registro DEBUG globalmente, se generará una gran cantidad de información que será difícil de pasar. Se recomienda habilitarlo solo para los servicios que requieren depuración. Para obtener más información, consulte [Registros y escritores de servicios](logging.md#loggers-and-writers-for-individual-services)individuales.
 
 El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran.
 Para activar el nivel de registro DEBUG, establezca la variable
@@ -235,7 +236,7 @@ Puede definir su propio par Logger/Writer:
 
 >[!NOTE]
 >
->Al trabajar con Adobe Experience Manager, existen varios métodos para administrar la configuración de dichos servicios.
+>Al trabajar con Adobe Experience Manager existen varios métodos para administrar la configuración de dichos servicios.
 
 En determinadas circunstancias, es posible que desee crear un registro personalizado con un nivel de registro diferente. Puede hacerlo en el repositorio:
 
