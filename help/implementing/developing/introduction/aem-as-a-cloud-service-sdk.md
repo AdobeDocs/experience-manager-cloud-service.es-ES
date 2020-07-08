@@ -2,32 +2,32 @@
 title: AEM as a Cloud Service SDK
 description: Para completar
 translation-type: tm+mt
-source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
-El SDK de AEM como servicio de nube está compuesto por los siguientes artefactos:
+El SDK de AEM como Cloud Service consta de los siguientes artefactos:
 
 * **Jar** de inicio rápido: tiempo de ejecución de AEM utilizado para el desarrollo local
-* **Java API Jar** : la dependencia Java Jar/Maven que expone todas las API de Java permitidas que se pueden usar para desarrollarse con AEM como servicio de nube. Anteriormente denominado Uberjar
+* **Java API Jar** : la dependencia Java Jar/Maven que expone todas las API de Java permitidas que se pueden usar para desarrollarse contra AEM como Cloud Service. Anteriormente denominado Uberjar
 * **Javadoc Jar** - Los javadocs para Java API Jar
-* **Herramientas** de despachante: conjunto de herramientas utilizadas para desarrollar con Dispatcher localmente. Objetos independientes para unix y ventanas
+* **Herramientas** de Dispatcher: conjunto de herramientas que se utilizan para desarrollar con Dispatcher localmente. Objetos independientes para unix y ventanas
 
-Además, algunos clientes que se implementaron previamente con AEM 6.5 o versiones anteriores utilizarán los artefactos siguientes. Si la compilación local no funciona con el tarro de inicio rápido y sospecha que se debe a interfaces que se han eliminado de AEM implementadas como servicio de nube, póngase en contacto con el servicio de asistencia al cliente para determinar si necesita acceso. Esto requerirá cambios en el servidor.
+Además, algunos clientes que se implementaron previamente con AEM 6.5 o versiones anteriores utilizarán los artefactos siguientes. Si la compilación local no funciona con el tarro de inicio rápido y sospecha que se debe a interfaces que se han eliminado de AEM implementadas como Cloud Service, póngase en contacto con el servicio de asistencia al cliente para determinar si necesita acceso. Esto requerirá cambios en el servidor.
 
 * **6.5 Java API Jar** , un conjunto adicional de interfaces que se han eliminado desde AEM 6.5
 * **6.5 Javadoc Jar** desaprobado: los javadocs para el conjunto adicional de interfaces
 
-## Acceso a AEM como SDK de servicio de nube {#accessing-the-aem-as-a-cloud-service-sdk}
+## Acceso a AEM como SDK de Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
-* Puede consultar el icono **Acerca de Adobe Experience Manager** de AEM Admin Console para conocer la versión de AEM que está ejecutando en producción.
-* El archivo jar y Dispatcher Tools de inicio rápido se pueden descargar como archivo zip desde el portal [de distribución de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos de Cloud Service.
+* Puede consultar el icono **Acerca del Adobe Experience Manager** de AEM Admin Console para conocer la versión de AEM que está ejecutando en producción.
+* El archivo jar de inicio rápido y las herramientas de Dispatcher se pueden descargar como archivo zip desde el portal [de distribución de](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)software. Tenga en cuenta que el acceso a los listados de SDK está limitado a los que tienen AEM Managed Services o AEM como entornos Cloud Service.
 * El Jar de la API de Java y Javadoc Jar se pueden descargar mediante herramientas muevas, ya sea con la línea de comandos o con su IDE preferido.
 * Las páginas de proyecto principales deben hacer referencia al siguiente paquete de Jar de API. Esta dependencia también se debe hacer referencia a ella en cualquier página de subpaquete.
 
@@ -40,7 +40,9 @@ Además, algunos clientes que se implementaron previamente con AEM 6.5 o version
 </dependency>
 ```
 
->[!NOTE] La entrada de versión del SDK debe coincidir con la versión de AEM como un servicio de nube. Para ver qué versión utiliza, inicie sesión en AEM y, a continuación, vaya al signo de interrogación en la esquina superior derecha de la pantalla y seleccione **[!UICONTROL Acerca de Adobe Experience Manager]**
+>[!NOTE]
+>
+>La entrada de versión del SDK debe coincidir con la versión de AEM como Cloud Service. Puede ver qué versión está utilizando si inicia sesión en AEM, luego va al signo de interrogación en la esquina superior derecha de la pantalla y selecciona **[!UICONTROL Acerca de Adobe Experience Manager]**
 
 
 ## Actualización de un proyecto local con una nueva versión del SDK {#refreshing-a-local-project-with-a-new-skd-version}
