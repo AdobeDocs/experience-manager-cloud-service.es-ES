@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Para completar
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1631'
 ht-degree: 2%
 
 ---
@@ -160,8 +160,7 @@ También resulta útil para la depuración, ya que la consola para desarrollador
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Cloud Manager - Función de desarrollador&quot; en Admin Console, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
-
+Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Cloud Manager - Función de desarrollador&quot; en Admin Console, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para todos los programas, &quot;Cloud Manager - Función de desarrollador&quot; es necesario para los volcados de estado y los usuarios también deben definirse en el Perfil de producto Usuarios de AEM o Administradores de AEM en los servicios de creación y publicación para poder vista de datos de volcado de estado de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
 ### Servicio de ensayo y producción de AEM {#aem-staging-and-production-service}
