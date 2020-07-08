@@ -1,8 +1,8 @@
 ---
-title: Repositorio de código fuente - Servicios de nube
-description: Repositorio de código fuente - Servicios de nube
+title: 'Repositorio de códigos de origen: Cloud Service'
+description: 'Repositorio de códigos de origen: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 1%
@@ -26,4 +26,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
-> Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede volver a transferir los cambios de código al repositorio de código remoto en Cloud Manager.
+>Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede volver a transferir los cambios de código al repositorio de código remoto en Cloud Manager.
