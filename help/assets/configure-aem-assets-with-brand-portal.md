@@ -3,7 +3,7 @@ title: Configurar el servicio en la nube de AEM Assets con Brand Portal
 description: Configurar el servicio en la nube de AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 36%
@@ -32,7 +32,6 @@ La configuración de la instancia de nube de AEM Assets con un inquilino (organi
 >Un inquilino de Brand Portal solo se configurará con una instancia de nube de AEM Assets.
 >
 >No configure un inquilino de Brand Portal con varias instancias de nube de AEM Assets.
-
 
 ## Requisitos previos {#prerequisites}
 
@@ -231,8 +230,6 @@ Realice los siguientes pasos para configurar la cuenta de IMS que ha creado para
 >
 >Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
 
-
-
 ### Configurar el servicio en la nube {#configure-the-cloud-service}
 
 Siga los pasos siguientes para configurar el servicio en la nube de Brand Portal:
@@ -343,8 +340,6 @@ En el ejemplo anterior, se activa una solicitud y una respuesta adicionales. El 
 >[!NOTE]
 >
 >Se genera una solicitud adicional si la carpeta principal no existe en Brand Portal (en el ejemplo anterior) o si la carpeta principal se ha modificado en AEM Assets.
-
-
 
 <!--
 
