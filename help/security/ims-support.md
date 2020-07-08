@@ -2,7 +2,7 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -91,7 +91,7 @@ La herramienta de sincronización de usuarios se distribuye a través del reposi
 
 >[!NOTE]
 >
-> La versión de evaluación **2.4RC1** está disponible con compatibilidad para la creación de grupos dinámicos y se puede encontrar [aquí](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
+>La versión de evaluación **2.4RC1** está disponible con compatibilidad para la creación de grupos dinámicos y se puede encontrar [aquí](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1).
 
 Las principales características de esta versión son la capacidad de asignar dinámicamente nuevos grupos LDAP para la pertenencia de usuarios a Admin Console, así como la creación dinámica de grupos de usuarios.
 
@@ -159,7 +159,8 @@ Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una ve
 
 
 >[!NOTE]
-> Cualquier usuario creado en IMS puede crearse con un Adobe ID o un Federated ID. Si un usuario está configurado con un Adobe ID, se autentica con el proveedor de identidad de su Compañía para iniciar sesión.
+>
+>Cualquier usuario creado en IMS puede crearse con un Adobe ID o un Federated ID. Si un usuario está configurado con un Adobe ID, se autentica con el proveedor de identidad de su Compañía para iniciar sesión.
 
 Luego se les redirige a la pantalla de inicio de sesión de IMS y deberán introducir sus credenciales:
 
