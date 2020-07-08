@@ -2,7 +2,7 @@
 title: Estructura del proyecto de AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en el Cloud Service de Adobe Experience Manager.
 translation-type: tm+mt
-source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2530'
 ht-degree: 17%
@@ -36,7 +36,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 >[!WARNING]
 >
-> Como en versiones anteriores de AEM, no `/libs` debe modificarse. Solo se puede implementar el código de producto de AEM en `/libs`.
+>Como en versiones anteriores de AEM, no `/libs` debe modificarse. Solo se puede implementar el código de producto de AEM en `/libs`.
 
 ### Índices de roble {#oak-indexes}
 
@@ -501,7 +501,8 @@ Si `/apps/*-packages` se utilizan varios en los destinatarios incrustados, todos
 ### Repositorios de muevos de terceros {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Añadir más repositorios de Maven puede extender los tiempos de generación, ya que se comprobarán las dependencias de repositorios de Maven adicionales.
+>
+>Añadir más repositorios de Maven puede extender los tiempos de generación, ya que se comprobarán las dependencias de repositorios de Maven adicionales.
 
 En el proyecto del reactor `pom.xml`, agregue las directivas de repositorio de Maven públicas de terceros necesarias. La configuración completa debe estar disponible `<repository>` desde el proveedor de repositorio de terceros.
 
