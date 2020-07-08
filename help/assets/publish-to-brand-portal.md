@@ -3,7 +3,7 @@ title: Publicar recursos, carpetas y colecciones en Brand Portal
 description: Publicar recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ Si realiza las modificaciones posteriores al recurso, la carpeta o la colección
 >[!NOTE]
 >
 >Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
-
 
 ## Publicar recursos en Brand Portal {#publish-assets-to-bp}
 
@@ -110,7 +109,6 @@ Puede publicar o cancelar la publicación de las carpetas de recursos inmediatam
          Haga clic en **Siguiente.**
 
       1. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
-
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
 
 1. **Publicar carpetas más tarde**
@@ -187,7 +185,6 @@ Puede publicar o cancelar la publicación de colecciones desde la instancia de n
 >Los fragmentos de contenido no se pueden publicar en Brand Portal. Por lo tanto, si selecciona fragmentos de contenido en AEM Assets, la acción **[!UICONTROL Publicar en Brand Portal]** no estará disponible.
 >
 >Si las colecciones que contienen fragmentos de contenido se publican desde AEM Assets a Brand Portal, todo el contenido de la carpeta, excepto los fragmentos de contenido, se replicará en la interfaz de Brand Portal.
-
 
 ### Publicar colecciones {#publish-collections}
 
