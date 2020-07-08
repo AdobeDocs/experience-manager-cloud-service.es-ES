@@ -1,9 +1,9 @@
 ---
-title: 'API de recursos para la administración de recursos digitales en Adobe Experience Manager como servicio de nube '
+title: 'API de recursos para administración de recursos digitales en Adobe Experience Manager como Cloud Service '
 description: Las API de recursos permiten operaciones básicas de creación, lectura, actualización y eliminación (CRUD) para administrar recursos, incluidos binarios, metadatos, representaciones, comentarios y fragmentos de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Give a list of and overview of all reference information available.
 
 ## Carga de recursos {#asset-upload-technical}
 
-Experience Manager como servicio en la nube ofrece una nueva forma de cargar recursos en el repositorio: carga binaria directa en el almacenamiento de nube binario. En esta sección se ofrece una descripción general técnica.
+Experience Manager como servicio de nube ofrece una nueva forma de cargar recursos en el repositorio: carga binaria directa en el almacenamiento de nube binario. En esta sección se ofrece una descripción general técnica.
 
 ### Descripción general de la carga binaria directa {#overview-binary-upload}
 
@@ -42,8 +42,9 @@ Las diferencias importantes en comparación con versiones anteriores de AEM incl
 
 Este método debería proporcionar una gestión más escalable y eficaz de las cargas de recursos.
 
-> !![NOTE]
-Para revisar el código de cliente que implementa este método, consulte la biblioteca de carga de [aem de código abierto](https://github.com/adobe/aem-upload)
+>[!NOTE]
+>
+>Para revisar el código de cliente que implementa este método, consulte la biblioteca de carga de [aem de código abierto](https://github.com/adobe/aem-upload)
 
 ### Iniciar carga {#initiate-upload}
 
@@ -114,8 +115,7 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud HT
 | `replace` | Booleano | Opcional | Si ya existe `True` un recurso con el nombre especificado, Experience Manager lo elimina y lo vuelve a crear. |
 
 >!![NOTE]
->
-> Si el recurso ya existe `createVersion` y no `replace` se especifica, Experience Manager actualiza la versión actual del recurso con el nuevo binario.
+Si el recurso ya existe `createVersion` y no `replace` se especifica, Experience Manager actualiza la versión actual del recurso con el nuevo binario.
 
 Al igual que el proceso de inicio, los datos completos de la solicitud pueden contener información para más de un archivo.
 
@@ -134,7 +134,7 @@ Para obtener más información sobre los algoritmos de carga o para crear sus pr
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-Para Adobe Experience Manager como servicio de nube, solo se admiten las nuevas API de carga. Las API de Adobe Experience Manager 6.5 están en desuso. Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están obsoletos en las siguientes API:
+Para Adobe Experience Manager como Cloud Service solo se admiten las nuevas API de carga. Las API de Adobe Experience Manager 6.5 están en desuso. Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están obsoletos en las siguientes API:
 
 * [API HTTP de AEM Assets](mac-api-assets.md)
 * `AssetManager` API de Java, como `AssetManager.createAsset(..)`
@@ -152,9 +152,9 @@ Para la configuración del flujo de trabajo posterior al procesamiento, utilice 
 
 ## Compatibilidad con los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
-Los clientes que actualicen a Experience Manager como servicio de nube desde versiones anteriores de Experience Manager pueden utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y utilizar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM de la versión anterior.
+Los clientes que actualicen a Experience Manager como Cloud Service desde versiones anteriores de Experience Manager pueden utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y utilizar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM de la versión anterior.
 
-Experience Manager admite los siguientes pasos de flujo de trabajo como servicio de nube.
+Los siguientes pasos del flujo de trabajo son compatibles con Experience Manager como Cloud Service.
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
