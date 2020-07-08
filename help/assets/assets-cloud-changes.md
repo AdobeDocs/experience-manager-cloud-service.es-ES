@@ -2,7 +2,7 @@
 title: Cambios notables en Recursos de Adobe Experience Manager como Cloud Service
 description: Cambios notables en Recursos de Adobe Experience Manager en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 10%
@@ -21,6 +21,7 @@ Las principales diferencias con respecto al Experience Manager 6.5 se encuentran
 * [Eliminación de la IU clásica](#classic-ui).
 
 >[!NOTE]
+>
 >Este documento destaca los cambios notables que se han producido en los AEM Assets. Para ver los cambios generales en AEM como Cloud Service y otros módulos, consulte:
 >
 >* [Introducción a Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
