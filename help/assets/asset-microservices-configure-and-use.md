@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b63f62790973be59b1437a6406563638f63eeb28
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 3%
@@ -38,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> El procesamiento de recursos descrito aquí reemplaza el modelo de flujo de trabajo que existe en las versiones anteriores de Experience Manager. `DAM Update Asset` La mayoría de los pasos de generación de representación estándar y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos y los pasos restantes, si los hay, se pueden reemplazar por la configuración del flujo de trabajo posterior al procesamiento.
+>El procesamiento de recursos descrito aquí reemplaza el modelo de flujo de trabajo que existe en las versiones anteriores de Experience Manager. `DAM Update Asset` La mayoría de los pasos de generación de representación estándar y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos y los pasos restantes, si los hay, se pueden reemplazar por la configuración del flujo de trabajo posterior al procesamiento.
 
 ## Introducción al procesamiento de recursos {#get-started}
 
@@ -99,9 +99,9 @@ Un valor vacío significa que el procesamiento de recursos asume la dimensión d
 
 #### Reglas de inclusión de tipo MIME {#mime-type-inclusion-rules}
 
-Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (lista bloqueada).
+Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (lista de bloqueados).
 
-De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (lista permitida).
+De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (lista de permitidos).
 
 #### Representación especial de FPO {#special-fpo-rendition}
 
@@ -169,7 +169,7 @@ El servicio Ejecutor de flujo de trabajo personalizado (`com.adobe.cq.dam.proces
 >[!NOTE]
 >
 >La configuración del Ejecutor de flujo de trabajo personalizado es una configuración de un servicio OSGi. Consulte [Implementación en Experience Manager](/help/implementing/deploying/overview.md) para obtener información sobre cómo implementar una configuración OSGi.
-> La consola web OSGi, a diferencia de las implementaciones de servicios locales y gestionados de AEM, no está disponible directamente en las implementaciones de servicios en la nube.
+>La consola web OSGi, a diferencia de las implementaciones de servicios locales y gestionados de AEM, no está disponible directamente en las implementaciones de servicios en la nube.
 
 Para obtener más información sobre qué paso de flujo de trabajo estándar se puede utilizar en el flujo de trabajo posterior al procesamiento, consulte los pasos de [flujo de trabajo en el flujo de trabajo](developer-reference-material-apis.md#post-processing-workflows-steps) posterior al procesamiento en la referencia del desarrollador.
 
