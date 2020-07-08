@@ -2,7 +2,7 @@
 title: Añadir los recursos digitales en Adobe Experience Manager
 description: Añada los recursos digitales a Adobe Experience Manager como Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 2%
@@ -24,9 +24,9 @@ También puede elegir que se realice un procesamiento adicional en los recursos 
 
 >[!NOTE]
 >
-> Experience Manager como Cloud Service aprovecha una nueva forma de cargar recursos: la carga binaria directa. De forma predeterminada, es compatible con las prestaciones y los clientes del producto integrados, como la interfaz de usuario de AEM, Adobe Asset Link, la aplicación de escritorio de AEM y, por tanto, transparente para los usuarios finales.
+>Experience Manager como Cloud Service aprovecha una nueva forma de cargar recursos: la carga binaria directa. De forma predeterminada, es compatible con las prestaciones y los clientes del producto integrados, como la interfaz de usuario de AEM, Adobe Asset Link, la aplicación de escritorio de AEM y, por tanto, transparente para los usuarios finales.
 >
-> El código de carga personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
+>El código de carga personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
 
 ## Upload assets {#upload-assets}
 
@@ -37,6 +37,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
    * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario de Recursos. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+
    ![create_menu](assets/create_menu.png)
 
    Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
@@ -80,7 +81,7 @@ Además, la interfaz de usuario de Recursos muestra el recurso más reciente que
 
 >[!NOTE]
 >
-> Para cargar jerarquías de carpetas anidadas en AEM, consulte Carga [masiva de recursos](#bulk-upload).
+>Para cargar jerarquías de carpetas anidadas en AEM, consulte Carga [masiva de recursos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -135,7 +136,7 @@ Para cargar un mayor número de archivos, especialmente si existen en una jerarq
 
 >[!NOTE]
 >
-> La carga masiva como parte de la migración de contenido desde otros sistemas cuando se configura e implementa en Experience Manager requiere una planificación, consideración y elección cuidadosas de las herramientas. Consulte la guía [de](/help/implementing/deploying/overview.md) implementación para obtener instrucciones sobre los enfoques de migración de contenido.
+>La carga masiva como parte de la migración de contenido desde otros sistemas cuando se configura e implementa en Experience Manager requiere una planificación, consideración y elección cuidadosas de las herramientas. Consulte la guía [de](/help/implementing/deploying/overview.md) implementación para obtener instrucciones sobre los enfoques de migración de contenido.
 
 ## Carga de recursos mediante clientes de escritorio {#upload-assets-desktop-clients}
 
@@ -162,7 +163,7 @@ Además, si Dynamic Media está habilitado en el entorno:
 
 >[!NOTE]
 >
-> El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para el recorte o la transformación de medios que se debe realizar al entregar los recursos
+>El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para el recorte o la transformación de medios que se debe realizar al entregar los recursos
 
 Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **[!UICONTROL de]** procesamiento.
 
