@@ -1,9 +1,9 @@
 ---
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
-translation-type: ht
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -36,7 +36,8 @@ El conjunto *de migraciones* tiene los siguientes atributos:
 La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
 >[!NOTE]
-> Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
+>
+>Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
 
 En la fase de extracción, para ***completar*** un conjunto de migración existente, se debe desactivar la opción de *sobrescritura*. Consulte la Extracción [](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-extraction-process) Superior para obtener más detalles.
 
