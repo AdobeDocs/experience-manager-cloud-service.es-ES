@@ -1,8 +1,8 @@
 ---
 title: Integración con Git
-description: 'Integración con Git: servicios de nube'
+description: 'Integración con Git: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 2%
@@ -30,7 +30,7 @@ La serie de vídeos asume un conocimiento básico de la gestión de la entrada y
 
 >[!NOTE]
 >
-> Los pasos y las convenciones de nombres que se describen en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio Git gestionado por el cliente y con Cloud Manager. Se espera que los convenios y flujos de trabajo descritos se adapten a los distintos equipos de desarrollo.
+>Los pasos y las convenciones de nombres que se describen en esta serie de vídeos representan algunas prácticas recomendadas para trabajar con un repositorio Git gestionado por el cliente y con Cloud Manager. Se espera que los convenios y flujos de trabajo descritos se adapten a los distintos equipos de desarrollo.
 
 ## Sincronización inicial {#initial-sync}
 
