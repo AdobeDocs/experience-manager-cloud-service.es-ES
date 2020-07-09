@@ -1,11 +1,11 @@
 ---
-title: Proyecto de aplicación de AEM - Servicio de nube
-description: Proyecto de aplicación de AEM - Servicio de nube
+title: 'Proyecto de aplicación de AEM: Cloud Service'
+description: 'Proyecto de aplicación de AEM: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 11%
+source-wordcount: '1255'
+ht-degree: 10%
 
 ---
 
@@ -48,7 +48,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 * Puede agregar referencias a repositorios de artefactos Maven adicionales en los archivos *pom.xml* . Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por contraseña o de red.
 * Los paquetes de contenido implementable se descubren mediante la búsqueda de archivos *zip* del paquete de contenido que se encuentran en un directorio denominado *destinatario*. Cualquier número de submódulos puede producir paquetes de contenido.
 
-* Los artefactos de Dispatcher implementables se detectan mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio denominado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
+* Los artefactos de Dispatcher implementables se descubren mediante la búsqueda de archivos *zip* (nuevamente, contenidos en un directorio llamado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
 
 * Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Es posible que los paquetes se [omitan](#skipping-content-packages) de la implementación.
 
@@ -59,7 +59,7 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 18.04.
 * Se ha instalado Apache Maven 3.6.0.
-* La versión de Java instalada es Oracle JDK 8u202.
+* La versión de Java instaló Oracle JDK 8u202 y 11.0.2.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios:
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 * Maven siempre se ejecuta con el comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
 * Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Para obtener más información, consulte el Repositorio [público de](https://repo.adobe.com/) Adobe Maven).
 
+### Uso de Java 11 {#using-java-11}
+
+Cloud Manager ahora admite la creación de proyectos de clientes con Java 8 y Java 11. De forma predeterminada, los proyectos se crean con Java 8. Los clientes que deseen utilizar Java 11 en sus proyectos pueden hacerlo usando el complemento [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+
+Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspecto:
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>Los proveedores admitidos son Oracle y Sun Microsystems y las versiones admitidas son 1.8, 1.11 y 11.
 
 ## Variables de Entorno {#environment-variables}
 
@@ -258,7 +289,7 @@ Esta misma técnica se puede utilizar para instalar paquetes específicos de idi
 
 >[!NOTE]
 >
->La instalación de un paquete de sistema de este modo **no lo instala** en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con su representante de Adobe.
+>La instalación de un paquete de sistema de esta manera **no** lo instala en el entorno de tiempo de ejecución utilizado para ejecutar Adobe Experience Manager. Si necesita un paquete de sistema instalado en el entorno de AEM, póngase en contacto con su representante de Adobe.
 
 ## Omisión de paquetes de contenido {#skipping-content-packages}
 
