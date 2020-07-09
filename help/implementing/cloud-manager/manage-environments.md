@@ -1,16 +1,16 @@
 ---
-title: Administrar Entornos - Servicio de nube
-description: Administrar Entornos - Servicio de nube
+title: 'Administrar Entornos: Cloud Service'
+description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '695'
 ht-degree: 8%
 
 ---
 
 
-# Administrar entornos {#manage-environments}
+# Administración de entornos {#manage-environments}
 
 En la sección siguiente se describen los tipos de entornos que puede crear un usuario y la forma en que puede crear un entorno.
 
@@ -28,7 +28,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 
    La siguiente tabla resume los tipos de Entornos y sus atributos:
 
-   | Nombre | Nivel de autor | Publicar nivel | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con entorno |
+   | Nombre | Nivel de Author | Publicar nivel | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con entorno |
    |--- |--- |--- |--- |---|---|
    | Producción | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
    | Escenario | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
@@ -41,8 +41,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 
 
 1. Haga clic en **Añadir Entorno** para agregar un entorno. Se puede acceder a este botón desde la pantalla **Entornos** .
-   ![](assets/no-environment-2.png)
-
+   ![](assets/environments-tab.png)
 
    La opción **Añadir Entorno** también está disponible en la tarjeta de **Entornos** cuando hay cero entornos en el programa.
 
@@ -74,12 +73,12 @@ Los usuarios del programa administran las actualizaciones de los entornos de des
 ![](assets/manage-environments2.png)
 
 
-La opción **Actualizar** está disponible en el menú desplegable de la tarjeta de **Entornos** .
+La opción **Actualizar** está disponible en la tarjeta de **Entornos** .
 Esta opción también está disponible desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
 
-![](assets/update-environment2.png)
+![](assets/environments-screen-update.png)
 
-Si selecciona esta opción en el menú desplegable, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la última versión y, a continuación, ejecutar la canalización.
+Al seleccionar esta opción, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la versión más reciente y, a continuación, ejecutar la canalización.
 
 Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la canalización.
 
