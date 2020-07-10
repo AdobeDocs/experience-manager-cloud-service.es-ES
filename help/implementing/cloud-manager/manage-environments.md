@@ -2,9 +2,9 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '702'
 ht-degree: 8%
 
 ---
@@ -70,7 +70,7 @@ Adobe administra automáticamente las actualizaciones de los entornos de fase y 
 
 Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible para el público, el estado de la tarjeta de Entornos en la pantalla de inicio mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 La opción **Actualizar** está disponible en la tarjeta de **Entornos** .
@@ -86,10 +86,14 @@ Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la 
 
 El usuario con los permisos necesarios podrá eliminar un entorno de desarrollo.
 
-La opción **Eliminar** está disponible en el menú desplegable de la tarjeta de **Entornos** .
-Esta opción también está disponible desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
+La opción **Eliminar** está disponible en el menú desplegable de la tarjeta de **Entornos** . Haga clic en **...** para un entorno de desarrollo que desee eliminar.
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+También puede eliminar un entorno si hace clic en **Detalles** en la tarjeta de **Entornos** .
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 Esta función no está disponible para el entorno de producción/fase definido en un programa normal configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de Simulador para pruebas.
@@ -103,7 +107,7 @@ Solo un usuario de la función de desarrollador tendrá acceso a **Developer Con
 Consulte Entornos [de Simulador para pruebas de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) hibernación y deshibernación para obtener más detalles.
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 También puede seleccionar esta opción desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
 
