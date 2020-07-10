@@ -2,9 +2,9 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '753'
 ht-degree: 8%
 
 ---
@@ -74,7 +74,7 @@ Los usuarios del programa administran las actualizaciones de los entornos de des
 
 
 La opción **Actualizar** está disponible en la tarjeta de **Entornos** .
-Esta opción también está disponible desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
+Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Actualizar**, como se muestra en la figura siguiente:
 
 ![](assets/environments-screen-update.png)
 
@@ -90,7 +90,7 @@ La opción **Eliminar** está disponible en el menú desplegable de la tarjeta d
 
 ![](assets/environ-delete.png)
 
-También puede eliminar un entorno si hace clic en **Detalles** en la tarjeta de **Entornos** .
+La opción Eliminar también está disponible si hace clic en **Detalles** en la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Eliminar**, como se muestra en la figura siguiente:
 
 ![](assets/environ-delete-2.png)
 
@@ -109,5 +109,5 @@ Consulte Entornos [de Simulador para pruebas de](https://docs.adobe.com/content/
 
 ![](assets/environ-dev-console.png)
 
-También puede seleccionar esta opción desde el botón **Administrar** , si hace clic en **Detalles** desde la tarjeta de **Entornos** .
+Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado un entorno, haga clic en **...** y seleccione **Developer Console**.
 
