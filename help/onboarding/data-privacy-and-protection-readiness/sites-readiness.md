@@ -2,9 +2,9 @@
 title: 'Normas de protección de datos y privacidad de datos: Adobe Experience Manager como preparación para sitios de Cloud Service'
 description: 'Obtenga información sobre la compatibilidad del Adobe Experience Manager como Cloud Service Sitios con las distintas Regulaciones de Protección de Datos y Privacidad de Datos; incluido el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Protección de los Consumidores de California y la manera de cumplir con la implementación de un nuevo proyecto de AEM como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,9 @@ Para la exclusión:
       Inclusión: Incluirme en la agregación y análisis de sesiones de visitante (no instalar la cookie de `amcglobal.sc.omtrdc.net` exclusión). Haga clic aquí.
    Siga los pasos anteriores para acceder a los vínculos reales.
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > Hay una descripción adicional en la sección Política **de** privacidad de las [Condiciones de uso](https://marketing.adobe.com/resources/help/es_ES/terms.html).
+   > Hay una descripción adicional en el **2. Privacidad.** de las Condiciones generales de uso [de](https://www.adobe.com/legal/terms.html)Adobe.
 
 ## Analytics Foundation {#analytics-foundation}
 
