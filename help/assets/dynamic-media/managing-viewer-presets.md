@@ -2,7 +2,7 @@
 title: Administración de ajustes preestablecidos de visor
 description: Cómo crear y gestionar ajustes preestablecidos de visor
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
 source-wordcount: '4263'
 ht-degree: 18%
@@ -150,7 +150,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
 
-Consulte también <!-- KEEP REFERENCE [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Demostraciones](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)en directo.
+Consulte también Demostraciones [en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Para obtener información sobre las versiones compatibles del navegador web y del sistema operativo para visores, consulte las Notas de la versión de los visores.
 
