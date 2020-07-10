@@ -1,18 +1,18 @@
 ---
-title: Administrar registros - Servicio de nube
-description: Administrar registros - Servicio de nube
+title: 'Administrar registros: Cloud Service'
+description: 'Administrar registros: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 11%
+ht-degree: 17%
 
 ---
 
 
 # Acceder y administrar registros {#manage-logs}
 
-Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado.
+Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
 
 Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** .
 
@@ -20,7 +20,7 @@ Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea d
 
 O bien, la página **Entornos** :
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
