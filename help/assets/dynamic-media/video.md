@@ -1,10 +1,10 @@
 ---
 title: Vídeo
-description: Aprenda a trabajar con vídeo en Dynamic Media
+description: Learn how to work with video in Dynamic Media
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10058'
 ht-degree: 10%
 
 ---
@@ -16,13 +16,13 @@ En esta sección se describe cómo trabajar con vídeo en Dynamic Media.
 
 ## Inicio rápido: Vídeos {#quick-start-videos}
 
-La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle en el uso inicial de conjuntos de vídeos adaptables en Dynamic Media. Después de cada paso hay referencias cruzadas a los encabezados de temas donde puede encontrar más información.
+The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step are cross-references to topic headings where you can find more information.
 
 >[!NOTE]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado Cloud Service de Dynamic Media.
+>Before you work with video in Dynamic Media, make sure that your AEM admininistrator has already enabled and configured Dynamic Media Cloud Services.
 >
->* Consulte [Configuración de Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) de Dynamic Media en Configuración de Dynamic Media y [Solución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+>* See [Configuring Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media and [Troubleshooting Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 >
 
@@ -32,18 +32,18 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
    * Cree su propio perfil de codificación de vídeo. O bien, puede utilizar el perfil predefinido de codificación _de vídeo_ adaptable que viene con Dynamic Media.
 
-      * [Creación de un perfil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)de codificación de vídeo.
+      * [Creating a video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Obtenga más información sobre las [prácticas recomendadas para la codificación](#best-practices-for-encoding-videos)de vídeo.
-   * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos de origen principales.
+   * Associate the video processing profile to one or more folders where you are going to upload your primary source videos.
 
-      * [Aplicación de un perfil de vídeo a las carpetas](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-      * Obtenga más información sobre las [prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles](/help/assets/dynamic-media/best-practices-for-file-management.md)de procesamiento.
-      * Obtenga más información sobre la [organización de recursos](/help/assets/organize-assets.md)digitales.
-   * Cargue los vídeos de origen principales en las carpetas. Puede cargar archivos de vídeo de hasta 15 GB cada uno. Al agregar vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo asignado a la carpeta.
+      * [Applying a video profile to folders](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+      * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+      * Learn more about [Organizing digital assets](/help/assets/organize-assets.md).
+   * Upload your primary source videos to the folders. Puede cargar archivos de vídeo de hasta 15 GB cada uno. Al agregar vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo asignado a la carpeta.
 
       * [Cargue los vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Obtenga más información sobre los formatos [de archivo de entrada](/help/assets/file-format-support.md)admitidos.
-   * Monitoree cómo progresa [la codificación de](#monitoring-video-encoding-and-youtube-publishing-progress) vídeo desde la vista de recursos o flujos de trabajo.
+   * Monitor how [video encoding is progressing](#monitoring-video-encoding-and-youtube-publishing-progress) either from the asset or workflow view.
 
 
 
@@ -122,11 +122,11 @@ Video en Dynamic Media es una solución integral que facilita la publicación de
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptable. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tablets.
 
-Además, la calidad de vídeo se cambia de forma dinámica automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Además, si un cliente entra en el modo de pantalla completa en un equipo de escritorio, el conjunto de vídeos adaptable responde con una mejor resolución, lo que mejora la experiencia de visualización del cliente. El uso de conjuntos de vídeos adaptables le ofrece la mejor reproducción posible para los clientes que reproducen vídeos de Dynamic Media en varias pantallas y dispositivos.
+Además, la calidad de vídeo se cambia de forma dinámica automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, thereby improving the customer’s viewing experience. El uso de conjuntos de vídeos adaptables le ofrece la mejor reproducción posible para los clientes que reproducen vídeos de Dynamic Media en varias pantallas y dispositivos.
 
 La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codificado se debe reproducir o seleccionar durante la reproducción se basa en el siguiente algoritmo:
 
-1. El reproductor de vídeo carga el fragmento de vídeo inicial en función de la velocidad de bits más cercana al valor definido para la &quot;velocidad de bits inicial&quot; en el propio reproductor.
+1. Video player loads the initial video fragment based on the bit rate that is closest to the value that is set for &quot;initial bitrate&quot; in the player itself.
 1. El reproductor de vídeo cambia en función de los cambios en la velocidad de ancho de banda mediante los siguientes criterios:
 
    1. El reproductor elige el flujo de ancho de banda más alto por debajo o por debajo del ancho de banda estimado.
@@ -161,36 +161,36 @@ Puede encontrar los dispositivos Windows compatibles con este formato de vídeo 
 
 Consulte Ejemplo de reproducción [](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) dinámica de vídeo.
 
-Consulte también [Visores para AEM y Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) y [Visores para recursos AEM solo](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) en la Guía de referencia de visores de Adobe Scene7.
+See also [Viewers for AEM and Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
 
 ## Práctica recomendada: Uso del visor de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
-Los ajustes preestablecidos del visor de vídeo HTML5 de Dynamic Media son reproductores de vídeo sólidos. Puede utilizarlos para evitar muchos problemas comunes asociados con la reproducción de vídeo HTML5 y problemas relacionados con los dispositivos móviles, como la falta de envío de flujo adaptable y el alcance limitado del navegador de escritorio.
+The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback and issues associated with mobile devices such as lack of adaptive streaming delivery and limited desktop browser reach.
 
-En el lado de diseño del reproductor, puede diseñar toda la funcionalidad del reproductor de vídeo mediante herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo de imagen de póster personalizado con HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
+On the design side of the player, you can design all of the video player’s functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-En el lado de reproducción del visor, detecta automáticamente la capacidad de vídeo del navegador. A continuación, se muestra el vídeo mediante HLS (HTTP Live Streaming), también conocido como flujo de vídeo adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML5 progresivo en su lugar.
+On the playback side of the viewer, it automatically detects the browser’s video capability. It then serves the video using HLS (HTTP Live Streaming), also known as adaptive video streaming. O bien, si estos métodos de envío no están presentes, se utiliza HTML5 progresivo en su lugar.
 
-Al combinar en un solo reproductor la capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS, tener una reproducción incrustada y utilizar flujo adaptable y progresivo en función de la capacidad del navegador, se amplía el alcance del contenido de medios enriquecidos a los usuarios de escritorio y móviles y se garantiza una experiencia de vídeo optimizada.
+By combining into a single player the ability to design the playback components using HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the browser’s capability, you extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
-Consulte también [Acerca de los visores](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) HTML5 en la Guía de referencia de visores de Adobe Scene7.
+See also [About HTML5 Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
 
-### Reproducción de vídeo en equipos de escritorio y dispositivos móviles con el visor de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Playback of video on desktop computers and mobile devices using the HTML5 video viewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Para el flujo continuo de vídeo adaptable móvil y de escritorio, los vídeos utilizados para el cambio de velocidad de bits se basan en todos los vídeos MP4 del conjunto de vídeos adaptable.
 
-La reproducción de vídeo se produce mediante descarga de vídeo progresiva o HLS. En versiones anteriores de AEM, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
+Video playback occurs using either HLS or progressive video download. In prior versions of AEM, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
 
-Sin embargo, en AEM 6.3 y versiones posteriores, los vídeos ahora se transmiten a través de HTTPS (es decir, HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS también. Tenga en cuenta que este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se producirá a través de HTTPS, a menos que el explorador no lo admita. (véase la siguiente tabla). Por tanto,
+Sin embargo, en AEM 6.3 y versiones posteriores, los vídeos ahora se transmiten a través de HTTPS (es decir, HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS también. Tenga en cuenta que este comportamiento predeterminado no afecta al cliente. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (véase la siguiente tabla). Por tanto,
 
 * Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, la transmisión está bien.
 * Si tiene un sitio web HTTP con flujo de vídeo HTTPS, la transmisión de flujo continuo es correcta y no hay problemas de contenido mixto en el navegador web.
 
 HLS es un estándar de Apple para el flujo de vídeo adaptable que ajusta automáticamente la reproducción en función de la capacidad de ancho de banda de la red. También permite al cliente &quot;buscar&quot; en cualquier punto del vídeo sin necesidad de esperar a que se descargue el resto del vídeo.
 
-El vídeo progresivo se entrega descargando y almacenando el vídeo localmente en el sistema de escritorio o dispositivo móvil del usuario.
+Progressive video is delivered by downloading and storing the video locally on a user’s desktop system or mobile device.
 
-En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles mediante el visor de vídeo de Scene7.
+The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the Scene7 Video Viewer.
 
 <table>
  <tbody>
@@ -202,17 +202,17 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Escritorio</td>
    <td>Internet Explorer 9 y 10</td>
-   <td>Descarga progresiva.</td>
+   <td>Progressive download.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Internet Explorer 11+</td>
-   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite HLS. Limitación conocida: HTTP en HLS no funciona en esta combinación<br /> de explorador y sistema operativo <br /> En Windows 7: descarga progresiva. Utiliza lógica estándar para seleccionar protocolo HTTP frente a HTTPS.</td>
+   <td>On Windows 8 and Windows 10 - Force use of HTTPS whenever HLS is requested. Known limitation: HTTP on HLS does not work in this browser/operating system combination<br /> <br /> On Windows 7 - Progressive download. Utiliza lógica estándar para seleccionar protocolo HTTP frente a HTTPS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Firefox 23-44</td>
-   <td>Descarga progresiva.</td>
+   <td>Progressive download.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
@@ -241,8 +241,8 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>Android (navegador predeterminado)</td>
-   <td>Descarga progresiva.</td>
+   <td>Android (default browser)</td>
+   <td>Progressive download.</td>
   </tr>
   <tr>
    <td>Móvil</td>
@@ -262,30 +262,30 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
  </tbody>
 </table>
 
-## Arquitectura de la solución de vídeo Dynamic Media {#architecture-of-dynamic-media-video-solution}
+## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
 El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGgateway (en modo Dynamic Media híbrido) y que están disponibles para el consumo público.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## Arquitectura de publicación híbrida para vídeos {#hybrid-publishing-architecture-for-videos}
+## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## Prácticas recomendadas para la codificación de vídeos {#best-practices-for-encoding-videos}
+## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
 El flujo de trabajo de **codificación de vídeo de Dynamic Media** codifica el vídeo si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si ha activado los Dynamic Media y ha configurado los servicios de la nube de vídeo, el flujo de trabajo de **[!UICONTROL codificación de vídeo de Dynamic Media]** surte efecto automáticamente al cargar un vídeo. (Si no utiliza medios dinámicos, el flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]** tiene efecto).
 
-A continuación se ofrecen sugerencias recomendadas para codificar archivos de vídeo de origen.
+The following are best-practice tips for encoding source video files.
 
-Para obtener consejos sobre la codificación de vídeo, consulte los siguientes temas:
+For advice about video encoding, see the following:
 
 * [Flujo 101: Conceptos básicos: Códecs, Ancho de banda, Velocidad de datos y Resolución](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [Conceptos básicos](https://www.adobe.com/go/learn_s7_encoding_en)de codificación de vídeo.
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### Archivos de vídeo de origen {#source-video-files}
 
-Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados previamente porque estos archivos ya están comprimidos y una codificación adicional creará un vídeo de calidad inferior.
+When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
 En la tabla siguiente se describe el tamaño recomendado, la proporción de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
 
@@ -301,19 +301,19 @@ Puede obtener los metadatos de un archivo visualizando sus metadatos con una her
 
 1. Vaya a esta página web: [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
 1. Seleccione y descargue el instalador para la versión de la interfaz gráfica de usuario y siga las instrucciones de instalación.
-1. Después de la instalación, haga clic con el botón derecho en el archivo de vídeo (solo Windows) y seleccione MediaInfo, o bien abra MediaInfo y arrastre el archivo de vídeo a la aplicación. Verá todos los metadatos asociados al archivo de vídeo, incluidos su ancho, altura y fps.
+1. Después de la instalación, haga clic con el botón derecho en el archivo de vídeo (solo Windows) y seleccione MediaInfo, o bien abra MediaInfo y arrastre el archivo de vídeo a la aplicación. You see all metadata associated with your video file, including its width, height, and fps.
 
 ### Proporción de aspecto {#aspect-ratio}
 
 Cuando elija o cree un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, asegúrese de que el ajuste preestablecido tenga la misma proporción de aspecto que el archivo de vídeo de origen principal. La proporción de aspecto es la proporción entre la anchura y la altura del vídeo.
 
-Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y tenga en cuenta la anchura y la altura del archivo (consulte Obtención de los metadatos de un archivo más arriba). A continuación, utilice esta fórmula para determinar la proporción de aspecto:
+Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y tenga en cuenta la anchura y la altura del archivo (consulte Obtención de los metadatos de un archivo más arriba). Then use this formula to determine the aspect ratio:
 
-anchura/altura = proporción de aspecto
+width/height = aspect ratio
 
-En la tabla siguiente se describe cómo los resultados de la fórmula se traducen en opciones comunes de relación de aspecto:
+The following table describes how formula results translate to common aspect ratio choices:
 
-| Resultado de la fórmula | Proporción de aspecto |
+| Formula result | Proporción de aspecto |
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
@@ -324,60 +324,60 @@ Por ejemplo, un vídeo con una anchura de 1440 x una altura de 1080 tiene una pr
 
 ### Velocidad de bits {#bitrate}
 
-La velocidad de bits es la cantidad de datos codificados para configurar un solo segundo de reproducción de vídeo. La velocidad de bits se mide en kilobits por segundo (kbps).
+Bitrate is the amount of data that is encoded to make up a single second of video playback. La velocidad de bits se mide en kilobits por segundo (kbps).
 
 >[!NOTE]
 >
->Dado que todos los códecs utilizan compresión con pérdida, la velocidad de bits es el factor más importante en la calidad del vídeo. Con compresión con pérdida, cuanto más comprima un archivo de vídeo, más degradará la calidad. Por este motivo, si todas las demás características son iguales (resolución, velocidad de fotogramas y códec), cuanto menor sea la velocidad de bits, menor será la calidad del archivo comprimido.
+>Because all codecs use lossy compression, bitrate is the most important factor in video quality. With lossy compression, the more you compress a video file, the more the quality is degraded. For this reason, all other characteristics being equal (the resolution, frame rate, and codec), the lower the bitrate, the lower the quality of the compressed file.
 
-Al seleccionar una codificación de velocidad de bits, puede elegir dos tipos:
+When selecting a bitrate encoding, there are two types you can choose:
 
-* **[!UICONTROL Codificación]** de velocidad de bits constante (CBR): durante la codificación CBR, la velocidad de bits o el número de bits por segundo se mantiene igual durante todo el proceso de codificación. La codificación CBR mantiene la velocidad de datos establecida en su configuración durante todo el vídeo. Además, la codificación CBR no optimiza los archivos multimedia para garantizar la calidad, pero sí lo hace en el espacio de almacenamiento.
-Utilice CBR si el vídeo contiene un nivel de movimiento similar en todo el vídeo. CBR se utiliza generalmente para transmitir contenido de vídeo. Consulte también [Uso de parámetros](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)de codificación de vídeo personalizados.
+* **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
+Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Using custom-added video encoding parameters](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Codificación]** de velocidad de bits variable (VBR): la codificación VBR ajusta la velocidad de datos hacia abajo y hasta el límite superior establecido, según los datos requeridos por el compresor. Esto significa que durante un proceso de codificación VBR, la velocidad de bits del archivo multimedia aumenta o disminuye dinámicamente según las necesidades de velocidad de bits de los archivos multimedia.
-El VBR tarda más en codificarse, pero produce los resultados más favorables; la calidad del archivo multimedia es superior. VBR se utiliza generalmente para el envío progresivo http de contenido de vídeo.
+* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
+El VBR tarda más en codificarse, pero produce los resultados más favorables; la calidad del archivo multimedia es superior. VBR is most commonly used for http progressive delivery of video content.
 
 ¿Cuándo debe usar VBR frente a CRB?
-Cuando se trata de seleccionar VBR frente a CBR, casi siempre se recomienda utilizar VBR para los archivos de medios. VBR proporciona archivos de mayor calidad a velocidades de bits competitivas. Cuando utilice VBR, asegúrese de utilizar con codificación de dos pasadas y establezca la velocidad de bits máxima en 1,5 veces la velocidad de bits de vídeo de destinatario.
+When it comes to selecting VBR versus CBR, it is almost always recommended that you use VBR for your media files. VBR provides higher quality files at competitive bitrates. Cuando utilice VBR, asegúrese de utilizar con codificación de dos pasadas y establezca la velocidad de bits máxima en 1,5 veces la velocidad de bits de vídeo de destinatario.
 
-Al elegir un ajuste preestablecido de codificación de vídeo, tenga en cuenta la velocidad de conexión del usuario final del destinatario. Elija un ajuste preestablecido con una velocidad de datos que sea el 80 % de esa velocidad. Por ejemplo, si la velocidad de conexión del usuario final de destinatario es de 1000 kbps, el mejor ajuste preestablecido es uno con una velocidad de datos de vídeo de 800 kbps.
+When you choose a video encoding preset, take into account the target end user’s connection speed. Elija un ajuste preestablecido con una velocidad de datos que sea el 80 % de esa velocidad. For example, if the target end user’s connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
 
-En esta tabla se describe la velocidad de datos de las velocidades de conexión típicas.
+This table describes the data rate of typical connection speeds.
 
-| Velocidad (kbps) | Tipo de conexión |
+| Speed (Kbps) | Tipo de conexión |
 |--- |--- |
-| 256 | Conexión de acceso telefónico. |
-| 800 | Conexión móvil típica. Para esta conexión, destinatario una velocidad de datos en el rango de 400 a un máximo de 800 para experiencias 3G. |
-| 2000 | Conexión de escritorio de banda ancha típica. Para esta conexión, destinatario una velocidad de datos en el rango de 800 a 2000 kbps, con un promedio de la mayoría de destinatarios de 1200 a 1500 kbps. |
-| 5000 | Conexión típica de banda ancha alta. No se recomienda codificar en este rango superior porque el envío de vídeo a esta velocidad no está disponible para la mayoría de los consumidores. |
+| 256 | Dial-up connection. |
+| 800 | Typical mobile connection. For this connection, target a data rate in the range of 400 to a maximum of 800 for 3G experiences. |
+| 2000 | Typical broadband desktop connection. For this connection, target a data rate in the 800-2000 Kbps range, with most targets averaging 1200-1500 Kbps. |
+| 5000 | Typical high-broadband connection. Encoding in this upper range is not recommended because video delivery at this speed is not available to most consumers. |
 
 ### Resolución {#resolution}
 
-**Resolución **describe la altura y anchura de un archivo de vídeo en píxeles. La mayoría de los vídeos de origen se almacenan con una alta resolución (por ejemplo, 1920 x 1080). Para transmitir, el vídeo de origen se comprime a una resolución más pequeña (640 x 480 o más pequeña).
+**Resolution **describes a video file’s height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
 
-La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles de un archivo de vídeo (cuanto mayor sea la resolución), mayor será la velocidad de datos. Por ejemplo, observe el número de píxeles por fotograma en una resolución de 320 x 240 y un archivo de vídeo de resolución de 640 x 480:
+Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
 
-| Resolución | Píxeles por fotograma |
+| Resolución | Pixels per frame |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
 
-El archivo de 640 x 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 x 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad con una resolución de 320 x 240, pero no con una resolución de 640 x 480.
+The 640 x 480 file has four times more pixels per frame. To achieve the same data rate for these two example resolutions, you apply four times the compression to the 640 x 480 file, which can reduce the quality of the video. Therefore, a video data rate of 250 Kbps produces high-quality viewing at a 320 x 240 resolution, but not at a 640 x 480 resolution.
 
-En general, cuanto mayor sea la velocidad de datos que utilice, mejor será el aspecto del vídeo y mayor será la resolución que utilice, mayor será la velocidad de datos necesaria para mantener la calidad de visualización (en comparación con resoluciones más bajas).
+In general, the higher data rate you use, the better your video looks, and the higher resolution you use, the higher data rate you need to maintain viewing quality (compared to lower resolutions).
 
-Como la resolución y la velocidad de datos están vinculadas, tiene dos opciones al codificar vídeo:
+Because resolution and data rate are linked, you have two options when encoding video:
 
-* Elija una velocidad de datos y, a continuación, codifique la resolución más alta que se muestre correctamente a la velocidad de datos elegida.
-* Elija una resolución y, a continuación, codifique a la velocidad de datos necesaria para conseguir vídeo de alta calidad con la resolución elegida.
+* Choose a data rate and then encode at the highest resolution that looks good at the data rate you chose.
+* Choose a resolution and then encode at the data rate necessary to achieve high-quality video at the resolution you chose.
 
-Al elegir (o crear) un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, utilice esta tabla para destinatario de la resolución correcta:
+When you choose (or create) a video encoding preset for your primary source video file, use this table to target the correct resolution:
 
 | Resolución | Altura (píxeles) | Tamaño de la pantalla |
 |--- |--- |--- |
 | 240p | 240 | Pantalla pequeña |
-| 300p | 300 | Pantalla pequeña habitual para dispositivos móviles |
+| 300p | 300 | Small screen typically for mobile devices |
 | 360p | 360 | Pantalla pequeña |
 | 480p | 480 | Pantalla media |
 | 720p | 720 | Pantalla grande |
@@ -410,13 +410,13 @@ Como ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla 
 
 Dynamic Media recomienda el uso de ajustes preestablecidos de codificación de vídeo MP4 H.264. Dado que los archivos MP4 utilizan el códec de vídeo H.264, proporcionan vídeo de alta calidad pero con un tamaño de archivo comprimido.
 
-## Publicación de vídeos en YouTube {#publishing-videos-to-youtube}
+## Publishing videos to YouTube {#publishing-videos-to-youtube}
 
 Puede publicar recursos de vídeo de AEM in situ directamente en un canal de YouTube que haya creado anteriormente.
 
-Para publicar recursos de vídeo en YouTube, configure AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo siempre que se utilice una etiqueta asociada.
+To publish video assets to YouTube, you set up AEM Assets with tags. Estas etiquetas se asocian a un canal de YouTube. If a video asset&#39;s tag matches the tag of a YouTube channel, then the video is published to YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo siempre que se utilice una etiqueta asociada.
 
-YouTube realiza su propia codificación. De este modo, el archivo de vídeo original que se cargó en AEM se publica en YouTube en lugar de en cualquier representación de vídeo que haya creado la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visor para la reproducción.
+YouTube does its own encoding. De este modo, el archivo de vídeo original que se cargó en AEM se publica en YouTube en lugar de en cualquier representación de vídeo que haya creado la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visor para la reproducción.
 
 Al omitir el perfil de procesamiento de vídeo y publicar directamente en YouTube, solo significa que el recurso de vídeo en Recursos AEM puede no obtener una miniatura visible. También significa que los vídeos que no están codificados no funcionarán con ninguno de los tipos de recursos de Dynamic Media.
 
@@ -425,7 +425,6 @@ La publicación de recursos de vídeo en servidores de YouTube implica completar
 1. [Configuración de la configuración de Google Cloud](#configuring-google-cloud-settings)
 1. [Creación de un canal de YouTube](#creating-a-youtube-channel)
 1. [Añadir etiquetas para publicación](#adding-tags-for-publishing)
-1. [Activación del agente de replicación de publicaciones de YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configuración de YouTube en AEM](#setting-up-youtube-in-aem)
 1. [(Opcional) Automatización de la configuración de las propiedades de YouTube predeterminadas para los vídeos cargados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Publicación de vídeos en el canal de YouTube](#publishing-videos-to-your-youtube-channel)
@@ -564,19 +563,21 @@ Para crear un canal de YouTube:
 
 Para publicar vídeos en YouTube, AEM asocia etiquetas a uno o varios canales de YouTube. Para agregar etiquetas para la publicación, consulte [Administración de etiquetas](/help/sites-cloud/authoring/features/tags.md).
 
-O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir esta tarea y acceder a [Habilitar el agente](#enabling-the-youtube-publish-replication-agent)de replicación de YouTube Publish.
+O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir esta tarea y acceder a [Configuración de YouTube en AEM](#setting-up-youtube-in-aem).
 
-### Activación del agente de replicación de YouTube Publish {#enabling-the-youtube-publish-replication-agent}
+>[!NOTE]
+>
+>Una vez configurado el servicio en la nube, no se requiere una configuración adicional para habilitar el agente de replicación de YouTube Publish como este punto. El motivo es que se habilitó cuando se guardó la configuración del servicio en la nube.
 
-Después de habilitar el agente de replicación de YouTube Publish, si desea probar la conexión con la cuenta de Google Cloud, toque **[!UICONTROL Probar conexión]**. La ficha del navegador muestra los resultados de la conexión. Si ha agregado Canales de YouTube, se mostrará un listado de estos como parte de la prueba.
+<!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
-1. En la esquina superior izquierda de AEM, haga clic en el logotipo de AEM y, a continuación, en el carril izquierdo, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** > **[!UICONTROL Agentes en Author]**.
-1. En la página Agentes de autor, haga clic en **[!UICONTROL YouTube Publish (youtube)]**.
-1. En la barra de herramientas, a la derecha de Configuración, haga clic en **[!UICONTROL Editar]**.
-1. Seleccione la casilla de verificación **[!UICONTROL Habilitado]** para activar el agente de replicación.
-1. Haga clic en **[!UICONTROL Aceptar]**.
+After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-   Ahora configurará YouTube en AEM.
+1. In the upper-left corner of AEM, click the AEM logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
+1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
+1. Click **[!UICONTROL OK]**. -->
 
 ### Setting up YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -749,17 +750,14 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 >
 >Tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. Cuando se configura Dynamic Media, hay dos opciones de publicación entre las que elegir: **[!UICONTROL Inmediata]** o **[!UICONTROL Después de la activación]**.
 >
->**[!UICONTROL Publicar inmediatamente]** significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque eso es cierto para Dynamic Media, no es cierto para YouTube. Para publicar en YouTube, debe publicar por medio de un AEM Author.
+>**[!UICONTROL Publicar inmediatamente]** significa que el recurso cargado, una vez sincronizado con IPS, se publica automáticamente en el sistema de envío. Aunque eso es cierto para Dynamic Media, no es cierto para YouTube. Para publicar en YouTube, debe publicar por medio de un AEM Author.
 
 >[!NOTE]
->
->Para publicar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Publicar en YouTube]** , que le permite supervisar el progreso y la vista de cualquier información de error.
->
->Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->Para obtener información más detallada sobre el progreso, puede supervisar el registro de YouTube en replicación. Sin embargo, tenga en cuenta que dicha supervisión requiere acceso de administrador.
+Para publicar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Publicar en YouTube]** , que le permite supervisar el progreso y la vista de cualquier información de error.
+Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Para obtener información más detallada sobre el progreso, puede supervisar el registro de YouTube en replicación. Sin embargo, tenga en cuenta que dicha supervisión requiere acceso de administrador.
 
-Para publicar vídeos en su canal de YouTube:
+**Para publicar vídeos en su canal** de YouTube:
 
 1. En AEM, vaya a un recurso de vídeo que desee publicar en su canal de YouTube.
 1. Seleccione el recurso de vídeo (el conjunto de vídeos adaptables).
@@ -792,8 +790,7 @@ Después de ocho horas, si sigue viendo un mensaje de estado que dice **[!UICONT
 Puede obtener una cadena URL de YouTube que Dynamic Media genera después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
 
 >[!NOTE]
->
->La URL de YouTube no está disponible para copiarse hasta que haya publicado el recurso de vídeo en YouTube.
+La URL de YouTube no está disponible para copiarse hasta que haya publicado el recurso de vídeo en YouTube.
 
 Para vincular direcciones URL de YouTube a la aplicación web:
 
@@ -810,14 +807,11 @@ Para vincular direcciones URL de YouTube a la aplicación web:
 Al cancelar la publicación de un recurso de vídeo en AEM, el vídeo se elimina de YouTube.
 
 >[!CAUTION]
->
->Si elimina un vídeo directamente desde YouTube, AEM no se da cuenta y sigue comportándose como si el vídeo aún se hubiera publicado en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante AEM.
+Si elimina un vídeo directamente desde YouTube, AEM no se da cuenta y sigue comportándose como si el vídeo aún se hubiera publicado en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante AEM.
 
 >[!NOTE]
->
->Para eliminar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Cancelar publicación de YouTube]** , que le permite supervisar el progreso y la vista de cualquier información de error.
->
->Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Para eliminar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Cancelar publicación de YouTube]** , que le permite supervisar el progreso y la vista de cualquier información de error.
+Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 Para cancelar la publicación de vídeos para eliminarlos de YouTube:
 
@@ -857,21 +851,17 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
    En la línea de tiempo se muestra cualquier información de flujo de trabajo, como la codificación. Para la publicación en YouTube, la línea de tiempo del flujo de trabajo también incluye el nombre del canal de YouTube y la URL del vídeo de YouTube. Además, verá cualquier notificación de error en la línea de tiempo del flujo de trabajo una vez finalizada la publicación.
 
    >[!NOTE]
-   >
-   >Podría tomar mucho tiempo que los mensajes de error/error finalmente se registren debido a varias configuraciones de flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintentos]** y **[!UICONTROL tiempo de espera]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
-   >
-   >    * Configuración de cola de trabajos de Apache Sling
-   >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >    * Cola de tiempo de espera de flujo de trabajo de granito
+   Podría tomar mucho tiempo que los mensajes de error/error finalmente se registren debido a varias configuraciones de flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintentos]** y **[!UICONTROL tiempo de espera]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
+   * Configuración de cola de trabajos de Apache Sling
+   * Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   * Cola de tiempo de espera de flujo de trabajo de granito
 
-   >
-   >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
+   Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
 
 1. Para los flujos de trabajo en curso, consulte Instancias de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Instancias]**.
 
    >[!NOTE]
-   >
-   >Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Herramientas]** .
+   Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Herramientas]** .
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -884,30 +874,22 @@ Para supervisar el progreso (incluida la codificación fallida/publicación en Y
 1. Para los trabajos con errores, consulte Errores de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Errores]**. El **[!UICONTROL error de flujo de trabajo]** muestra todas las actividades de flujo de trabajo con errores.
 
    >[!NOTE]
-   >
-   >Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Herramientas]** .
+   Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Herramientas]** .
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >Podría llevar bastante tiempo que el mensaje de error finalmente se registre debido a varias configuraciones de flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retrasos de reintentos]** y **[!UICONTROL tiempo de espera]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
-   >
-   >
-   >
-   >    * Configuración de cola de trabajos de Apache Sling
-   >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >    * Cola de tiempo de espera de flujo de trabajo de granito
+   Podría llevar bastante tiempo que el mensaje de error finalmente se registre debido a varias configuraciones de flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retrasos de reintentos]** y **[!UICONTROL tiempo de espera]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
+   * Configuración de cola de trabajos de Apache Sling
+   * Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   * Cola de tiempo de espera de flujo de trabajo de granito
 
-   >
-   >
-   >Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
+   Puede ajustar las propiedades de **[!UICONTROL reintentos]**, **[!UICONTROL reintentos de demora]** y **[!UICONTROL tiempo de espera]** en estas configuraciones.
 
 1. Para ver los flujos de trabajo completados, consulte Archivo de flujo de trabajo, disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Archivar]**. El **[!UICONTROL archivo de flujo de trabajo]** enumera todas las actividades de flujo de trabajo completadas.
 
    >[!NOTE]
-   >
-   >Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Herramientas]** .
+   Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Herramientas]** .
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -962,8 +944,7 @@ For YouTube publishing jobs, do the following:
 ## Visualización de informes de vídeo {#viewing-video-reports}
 
 >[!NOTE]
->
->Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
+Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -980,8 +961,7 @@ Al tocar un nombre de vídeo en la lista, se muestra el informe de retención de
 Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencias (desplegable) y los datos de porcentaje de reproducción de la tabla no están disponibles.
 
 >[!NOTE]
->
->El seguimiento y los datos de sistema de informes se basan exclusivamente en el uso del propio reproductor de vídeo de Dynamic Media y el ajuste preestablecido del reproductor de vídeo asociado. Por lo tanto, no puede rastrear e informar sobre los vídeos que se reproducen a través de otros reproductores de vídeo.
+El seguimiento y los datos de sistema de informes se basan exclusivamente en el uso del propio reproductor de vídeo de Dynamic Media y el ajuste preestablecido del reproductor de vídeo asociado. Por lo tanto, no puede rastrear e informar sobre los vídeos que se reproducen a través de otros reproductores de vídeo.
 
 De forma predeterminada, la primera vez que se ingresa a Informes de video, el informe muestra los datos de video comenzando en el primer mes actual y finalizando con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que ingrese Informes de video, se utilizará el intervalo de fechas especificado.
 
@@ -1076,8 +1056,7 @@ Puede ampliar el alcance de los vídeos a mercados globales agregando subtítulo
 El subtítulo también permite una buena accesibilidad mediante subtítulos opcionales para personas sordas o con dificultades auditivas.
 
 >[!NOTE]
->
->El reproductor de vídeo que utilice debe admitir la visualización de rótulos.
+El reproductor de vídeo que utilice debe admitir la visualización de rótulos.
 
 Dynamic Media tiene la capacidad de convertir archivos de subtítulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos se puedan descubrir más fácilmente y proporcionar a los clientes detalles adicionales sobre el contenido del vídeo.
 
@@ -1102,8 +1081,7 @@ Consulte [Servicio de contenido](https://docs.adobe.com/content/help/en/dynamic-
    Siga las instrucciones en pantalla del sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de subtítulos y péguelo en un editor de texto sin formato y guárdelo con la extensión de nombre de archivo .vtt.
 
    >[!NOTE]
-   >
-   >Para obtener compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree llamadas y archivos .vtt independientes para cada idioma que desee admitir.
+   Para obtener compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree llamadas y archivos .vtt independientes para cada idioma que desee admitir.
 
    Generalmente, desea asignar al archivo de subtítulos VTT el mismo nombre que el archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE, etc. Al hacerlo, puede ayudarle a automatizar la generación de las direcciones URL de vídeo mediante el sistema de gestoras de contenido web existente.
 
@@ -1133,14 +1111,13 @@ Consulte [Servicio de contenido](https://docs.adobe.com/content/help/en/dynamic-
 Puede facilitar la visualización y navegación de los vídeos de formato largo agregando marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo en la línea de tiempo del vídeo (también conocida como la barra de desplazamiento del vídeo) para desplazarse fácilmente a su punto de interés o para acceder inmediatamente a nuevo contenido, demostraciones, tutoriales, etc.
 
 >[!NOTE]
->
->El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
+El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 se puede descargar desde [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
 
 Puede crear una lista de capítulo para el vídeo de la misma manera que crea rótulos. Es decir, se crea un archivo WebVTT. Tenga en cuenta, sin embargo, que este archivo debe ser independiente de cualquier archivo de subtítulos WebVTT que también esté utilizando; no puede combinar rótulos y capítulos en un archivo WebVTT.
 
-Puede utilizar la siguiente muestra como ejemplo del formato que utiliza para crear un archivo WebVTT con navegación por capítulos:
+You can use the following sample as an example of the format you use to create a WebVTT file with chapter navigation:
 
 ### Archivo WebVTT con navegación por capítulos de vídeo {#webvtt-file-with-video-chapter-navigation}
 
@@ -1160,7 +1137,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-En el ejemplo anterior, `Chapter 1` es el identificador de señal y es opcional. La hora de señal `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en `00:00:000` formato. Los tres últimos dígitos son milisegundos y se pueden dejar como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. El identificador de señal, el tiempo de señal de inicio y el título del capítulo aparecen en una ventana emergente del reproductor de vídeo cuando un usuario sitúa el puntero del ratón sobre un punto de referencia visual en la línea de tiempo del vídeo.
+In the example above, `Chapter 1` is the cue identifier and is optional. La hora de señal `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en `00:00:000` formato. Los tres últimos dígitos son milisegundos y se pueden dejar como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. El identificador de señal, el tiempo de señal de inicio y el título del capítulo aparecen en una ventana emergente del reproductor de vídeo cuando un usuario sitúa el puntero del ratón sobre un punto de referencia visual en la línea de tiempo del vídeo.
 
 Dado que utiliza un visor de vídeo HTML5, asegúrese de que el archivo de capítulo que crea sigue el estándar WebVTT (Web Video Text Tracks). La extensión de nombre de archivo del capítulo es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
@@ -1183,24 +1160,24 @@ Consulte [WebVTT: Formato de seguimiento de texto de vídeo web](https://dev.w3.
        <td>Para una experiencia de visor de vídeo emergente</td>
        <td>
        <ol>
-       <li>Vaya al recurso de <i>vídeo </i>publicado que desea asociar al archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Consulte <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publicación de recursos.</a></li>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. See <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
        <li>En el menú desplegable, toque o haga clic en <strong>Visores</strong>.</li>
        <li>En el carril izquierdo, toque o haga clic en el nombre del ajuste preestablecido del visor de vídeo. Una previsualización del vídeo se abre en una página independiente.</li>
        <li>En el carril izquierdo, en la parte inferior, haga clic en <strong>URL</strong>.</li>
        <li>En el cuadro de diálogo URL, seleccione y copie la URL en el portapapeles y, a continuación, pase la URL a un editor de texto sencillo.</li>
-       <li>Añada la URL copiada del vídeo con la siguiente sintaxis para asociarla con la URL copiada al archivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>Append the copied URL of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td>Para una experiencia de visor de vídeo integrado<br /> </td>
+       <td>For an embedded video viewer experience<br /> </td>
        <td>
        <ol>
-       <li>Vaya al recurso de <i>vídeo </i>publicado que desea asociar al archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Consulte <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publicación de recursos.</a></li>
+       <li>Navigate to the <i>published </i>video asset that you want to associate with the chapter file that you uploaded. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. See <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publishing Assets.</a></li>
        <li>En el menú desplegable, toque o haga clic en <strong>Visores</strong>.</li>
        <li>En el carril izquierdo, toque o haga clic en el nombre del ajuste preestablecido del visor de vídeo. Una previsualización del vídeo se abre en una página independiente.</li>
        <li>En el carril izquierdo, en la parte inferior, haga clic en <strong>Incrustar</strong>.</li>
-       <li>En el cuadro de diálogo Código incrustado, seleccione y copie todo el código en el portapapeles y péguelo en un editor de texto sencillo.</li>
-       <li>Añada el código incrustado del vídeo con la siguiente sintaxis para asociarlo a la URL copiada en el archivo de capítulos:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       <li>In the Embed Code dialog box, select and copy the entire code to the Clipboard, then paste it into a simple text editor.</li>
+       <li>Append the embed code of the video with the following syntax to associate it with the copied URL to your chapter file:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
        </ol> </td>
       </tr>
      </tbody>
