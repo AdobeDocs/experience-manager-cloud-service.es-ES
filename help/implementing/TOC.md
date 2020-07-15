@@ -2,10 +2,10 @@
 sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 92%
+source-wordcount: '236'
+ht-degree: 97%
 
 ---
 
@@ -24,14 +24,16 @@ ht-degree: 92%
    + [Administrar versiones del proyecto de Maven](cloud-manager/project-version-handling.md)
    + [Acceder a Git](cloud-manager/accessing-git.md)
    + [Integrar Git con Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
-+ Desarrollar para AEM as a Cloud Service {#developing}
++ Desarrollo para AEM as a Cloud Service {#developing}
    + [Estructura del proyecto de AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Paquete de estructura del repositorio de proyectos de AEM](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Directrices de desarrollo de AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
-   + [Superposiciones en AEM como Cloud Service](developing/introduction/overlays.md)
-   + [Uso de la fusión de recursos de Sling en AEM como Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [Hoja De Cálculo De Sling](developing/introduction/sling-cheatsheet.md)
+   + [Uso de adaptadores Sling](developing/introduction/sling-adapters.md)
+   + [Uso de la fusión de recursos de Sling en AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
+   + [Superposiciones en AEM as a Cloud Service](developing/introduction/overlays.md)
    + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
