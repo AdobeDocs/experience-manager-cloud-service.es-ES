@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    * Pueden utilizar contenido multimedia asociado seleccionado según relevancia.
    * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
-## Adición de un fragmento de contenido a la página  {#adding-a-content-fragment-to-your-page}
+## Adición de un fragmento de contenido a la página    {#adding-a-content-fragment-to-your-page}
 
 1. Abra la página para editarla. 
 2. Añada el componente **Fragmento de contenido**, bien desde el navegador **Componentes** o con **Insertar nuevo componente**. 
@@ -88,11 +88,11 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
    * **Elemento de texto único**
    * **Varios elementos**
 * **Elemento**
-   * Una selección estará disponible en función del modelo utilizado.
+   * Una selección estará disponible dependiendo del modelo utilizado.
 
    >[!NOTE]
    >
-   >Los elementos disponibles dependen del modelo utilizado.
+   >Los elementos disponibles dependen de la plantilla utilizada.
 
 * **Variación**
    * **Principal** siempre aparecerá como la opción predeterminada.
@@ -100,9 +100,9 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **ID**
 
-   * **Atributo de id. de HTML que se aplicará al componente.**
+   * Atributo de **ID de HTML** que se aplicará al componente.
 
-### Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos    {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md). 
 
@@ -110,7 +110,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Agregar contenido intermedio  {#adding-in-between-content}
+### Agregar contenido intermedio    {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -147,7 +147,7 @@ Por este motivo, es posible que parezca que la posición relativa ha cambiado, y
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 
 
-### Uso de contenido asociado  {#using-associated-content}
+### Uso de contenido asociado    {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
