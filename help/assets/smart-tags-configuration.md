@@ -2,11 +2,11 @@
 title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Para poder etiquetar las imágenes mediante SCS, integre [!DNL Adobe Experience 
 
 * Cree una configuración en [!DNL Experience Manager] para generar una clave pública. [Obtenga un certificado público para la integración de OAuth.](#obtain-public-certificate)
 * [Cree una integración en Adobe Developer Console y cargue la clave pública generada.](#create-aio-integration)
-* [Configure las etiquetas](#configure-smart-content-service) inteligentes en su [!DNL Experience Manager] instancia mediante la clave de API y otras credenciales de Adobe Developer Console.
+* [Configure las etiquetas inteligentes](#configure-smart-content-service) en su [!DNL Experience Manager] instancia utilizando la clave de API y otras credenciales de Adobe Developer Console.
 * [Compruebe la configuración](#validate-the-configuration).
-* [Vuelva a configurar una vez caducado](#certrenew)el certificado.
+* [Vuelva a configurar una vez caducado ](#certrenew)el certificado.
 
 ### Requisitos previos para la integración de Adobe Developer Console {#prerequisite-for-aio-integration}
 
