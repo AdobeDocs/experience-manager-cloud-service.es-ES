@@ -1,11 +1,11 @@
 ---
 title: Sistema de estilos
 description: El sistema de estilos permite a un autor de plantillas definir clases de estilos en la política de contenido de un componente, de modo que un autor de contenido puede seleccionarlos al editar el componente en una página. Estos estilos pueden ser variaciones visuales alternativas de un componente, lo que hacen que este sea más flexible.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ El sistema de estilos permite a un autor de plantillas definir clases de estilo
 
 Esto elimina la necesidad de desarrollar un componente personalizado para cada estilo o de personalizar el cuadro de diálogo del componente para permitir dicha funcionalidad de estilo. De esta manera, más componentes reutilizables se pueden adaptar de forma rápida y sencilla a las necesidades de los autores de contenido sin ningún desarrollo final de AEM.
 
-## Caso práctico  {#use-case}
+## Caso práctico    {#use-case}
 
 Los autores de plantillas no solo necesitan la posibilidad de configurar la forma en que los componentes funcionan para los autores de contenido, sino también de configurar diversas variaciones visuales alternativas de un componente.
 
@@ -67,7 +67,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 1. Configure las clases CSS que desea poner a disposición de los autores de contenido, tal como se describe en la sección [Como autor de plantillas](#as-a-template-author).
 1. A continuación, los autores de contenido pueden utilizar los estilos, tal como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
-### Como autor de contenido  {#as-a-content-author}
+### Como autor de contenido    {#as-a-content-author}
 
 1. Después de instalar el proyecto WKND, vaya a la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en` y edite la página.
 1. Seleccione un componente del **Título** más abajo en la página
@@ -82,7 +82,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    >
    >En este ejemplo, los estilos **Colores** (**Negro**, **Blanco** y **Gris**) se excluyen mutuamente, mientras que las opciones **Estilo** (**Subrayado**, **Alinear a la derecha** y **Miniespaciado**) se pueden combinar. Esto se puede [configurar en la plantilla como el autor de la misma](#as-a-template-author).
 
-### Como autor de plantillas  {#as-a-template-author}
+### Como autor de plantillas    {#as-a-template-author}
 
 1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página -> Editar plantilla**.
 
@@ -100,6 +100,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    * **Los estilos se pueden combinar**: permite que se seleccionen al mismo tiempo diversos estilos dentro de ese grupo.
    * **Nombre del estilo**: la descripción del estilo que se mostrará al autor de contenido al configurar el estilo del componente.
    * **Clases CSS**: el nombre real de la clase CSS asociada al estilo.
+
    Utilice los controles de arrastre para ordenar los grupos y los estilos dentro de los grupos. Utilice los iconos Añadir o Eliminar para añadir o quitar grupos y estilos dentro de los grupos.
 
 >[!CAUTION]
@@ -116,33 +117,33 @@ Los pasos siguientes solo son necesarios para habilitar el sistema de estilos pa
 
 ### Activar la pestaña Estilo en el cuadro de diálogo Diseño {#enable-styles-tab-design}
 
-Para que un componente funcione con el sistema de estilos de AEM y muestre la ficha de estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la ficha de estilo con la siguiente configuración en el componente:
+Para que un componente funcione con el sistema de estilos de AEM y se muestre la pestaña Estilo en el cuadro de diálogo de diseño, el desarrollador de componentes debe incluir la pestaña de estilo con la siguiente configuración del componente:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md)mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con el componente configurado, AEM insertará automáticamente en el elemento de decoración que AEM ajusta automáticamente en cada componente editable los estilos que los autores de páginas hayan configurado. El componente en sí no tiene que hacer nada más para que esto ocurra.
 
 ### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
-También hay disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la ficha Cuadro de diálogo de diseño, la ficha del cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
+También hay disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
 
-La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Diseño:
+La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Cuadro de diálogo de diseño:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md)mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >
 >La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
 
-### Estilos con nombres de elemento     {#styles-with-element-names}
+### Estilos con nombres de elemento       {#styles-with-element-names}
 
 Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la política, dentro del cuadro de diálogo de diseño, el creador de plantillas también puede elegir un nombre de elemento para cada estilo. Esto definirá el nombre de elemento del elemento envolvente.
 
@@ -157,6 +158,7 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 >1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
 >1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
 >1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
+
 >
 
 
