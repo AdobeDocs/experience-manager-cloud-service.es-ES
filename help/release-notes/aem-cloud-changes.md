@@ -1,11 +1,11 @@
 ---
 title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM Cloud Service ofrece muchas funciones y posibilidades nuevas para la gestió
 >* [Introducción a Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 >* [Novedades y diferencias](/help/overview/what-is-new-and-different.md) entre Adobe Experience Manager as a Cloud Service y las versiones anteriores
 >* La [arquitectura](/help/core-concepts/architecture.md) de Adobe Experience Manager as a Cloud Service
->* [Cambios importantes en Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
+>* [Cambios importantes en AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Cambios importantes en AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
 
