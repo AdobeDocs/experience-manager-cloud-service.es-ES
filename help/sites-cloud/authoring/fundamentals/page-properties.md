@@ -1,11 +1,11 @@
 ---
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1538'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
 
-* **ID HTML**
+* **ID de HTML**
 
-   * ID HTML que se aplicará al componente.
+   * ID de HTML que se aplicará al componente.
 
 * **Título de página**
 
@@ -150,7 +150,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Especificar una configuración de exportación.
 
-### Miniatura  {#thumbnail}
+### Miniatura    {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -205,7 +205,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    >[!NOTE]
    >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
 
-### Permisos  {#permissions}
+### Permisos    {#permissions}
 
 * **Permisos**
 
@@ -230,14 +230,14 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
 
-### Live Copy  {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    * Defina propiedades para una página Live Copy en un entorno de administración de varios sitios. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio  {#site-structure}
+### Estructura del sitio    {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
