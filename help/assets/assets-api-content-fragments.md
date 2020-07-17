@@ -2,7 +2,7 @@
 title: Adobe Experience Manager como Cloud Service Compatibilidad con fragmentos de contenido en la API HTTP de recursos
 description: Obtenga información sobre la compatibilidad con Adobe Experience Manager como Cloud Service de fragmentos de contenido en la API HTTP de Assets.
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -211,7 +211,7 @@ La API de REST de Recursos expone el acceso a las propiedades de una carpeta; po
 
 Si se solicita un recurso, la respuesta devolverá sus metadatos; como título, nombre y otra información según la definición del esquema de recursos correspondiente.
 
-Los datos binarios de un recurso se exponen como un vínculo SIREN de tipo `content` (también conocido como el `rel attribute`).
+Los datos binarios de un recurso se exponen como un vínculo SIREN de tipo `content`.
 
 Los recursos pueden tener varias representaciones. Normalmente se exponen como entidades secundarias, con una excepción una representación en miniatura, que se expone como un vínculo de tipo `thumbnail` ( `rel="thumbnail"`).
 
@@ -244,7 +244,7 @@ El contenido asociado no está expuesto actualmente.
 
 El uso puede variar en función de si está utilizando un entorno de publicación o autor de AEM, junto con el caso de uso específico.
 
-* La creación está estrictamente enlazada a una instancia de autor ([y actualmente no hay forma de replicar un fragmento para publicar con esta API](/help/assets/assets-api-content-fragments.md#limitations)).
+* Se recomienda encarecidamente que la creación esté enlazada a una instancia de autor ([y actualmente no hay forma de replicar un fragmento para publicar con esta API](/help/assets/assets-api-content-fragments.md#limitations)).
 * Es posible realizar el Envío desde ambos, ya que AEM solo proporciona contenido solicitado en formato JSON.
 
    * El Almacenamiento y el envío de una instancia de autor de AEM deben ser suficientes para las aplicaciones de biblioteca multimedia que se encuentran detrás del servidor de seguridad.
