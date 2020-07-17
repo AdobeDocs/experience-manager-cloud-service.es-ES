@@ -2,10 +2,10 @@
 title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
 translation-type: tm+mt
-source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 7%
+source-wordcount: '1828'
+ht-degree: 6%
 
 ---
 
@@ -72,7 +72,7 @@ Junto con las funciones de exportación JSON de los componentes principales de A
 >[!NOTE]
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**son funciones distintas de AEM:
->* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
+>* **Los fragmentos** de contenido son contenido editorial que se puede utilizar para acceder a datos estructurados, incluidos textos, números y fechas, entre otros. Son contenidos puros, con definición y estructura, pero sin diseño visual y/o diseño adicional.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
 
 >
@@ -154,14 +154,11 @@ Los recursos de fragmento de contenido están formados por las siguientes partes
 
 * **Párrafos de fragmento**
 
-   * Bloques de texto, que son:
+   * Bloques de texto, a menudo multilínea, que se delimitan como entidades individuales.
 
-      * separado por espacios verticales (retorno de carro)
-      * en elementos de texto multilínea
    * En los modos [Texto enriquecido](/help/assets/content-fragments/content-fragments-variations.md#rich-text) y [Marcado](/help/assets/content-fragments/content-fragments-variations.md#markdown), un párrafo se puede formatear como un encabezado, en cuyo caso, ese párrafo y el siguiente se unirán como una sola unidad.
 
    * Habilite el control de contenido durante la creación de páginas.
-
 
 * **Recursos insertados en un fragmento (fragmentos de medios mixtos)**
 
@@ -247,9 +244,12 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
 * **Modelo de contenido**
 
    * Se [habilitan y luego se crean mediante Herramientas](/help/assets/content-fragments/content-fragments-models.md).
-   * Necesario para [crear un fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)estructurado.
+   * Necesario para [crear un fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Define la estructura de un fragmento (título, elementos de contenido, definiciones de etiquetas).
-   * Las definiciones de modelos de contenido requieren un título y un elemento de datos; todo lo demás es opcional. El modelo define un ámbito mínimo del fragmento y el contenido predeterminado, si corresponde. Los autores no pueden cambiar la estructura definida al crear contenido de fragmento.
+   * Las definiciones de modelos de contenido requieren un título y un elemento de datos; todo lo demás es opcional.
+   * El modelo puede definir el contenido predeterminado, si corresponde.
+   * Los autores no pueden cambiar la estructura definida al crear contenido de fragmento.
+   * Los cambios realizados en un modelo después de crear fragmentos de contenido dependientes afectarán a dichos fragmentos de contenido.
 
 * **Componente de fragmento de contenido**
 
