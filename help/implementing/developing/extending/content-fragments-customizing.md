@@ -2,9 +2,9 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 translation-type: tm+mt
-source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
+source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1849'
 ht-degree: 3%
 
 ---
@@ -166,7 +166,7 @@ Los fragmentos de contenido se pueden integrar con:
 
 Puede utilizar la API del lado del servidor para acceder a los fragmentos de contenido; consulte:
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -244,7 +244,9 @@ Se pueden adaptar los siguientes elementos:
 
 * `ContentElement` puede adaptarse a:
 
-   * `ElementTemplate` - para acceder a la información estructural del elemento.
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - para acceder a la información estructural del elemento.
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` puede adaptarse a:
 
@@ -258,7 +260,7 @@ Cabe señalar que:
 
 * Tareas que podrían requerir un esfuerzo adicional:
 
-   * Cree nuevas variaciones desde `ContentFragment` para actualizar la estructura de datos.
+   * Se recomienda encarecidamente crear nuevas variaciones de `ContentFragment`. Esto garantiza que todos los elementos compartan esta variación y que las estructuras de datos globales apropiadas se actualicen según sea necesario para reflejar la variación recién creada en la estructura de contenido.
 
    * Al eliminar las variaciones existentes mediante un elemento, `ContentElement.removeVariation()`no se actualizarán las estructuras de datos globales asignadas a la variación. Para garantizar que estas estructuras de datos se mantengan sincronizadas, utilice `ContentFragment.removeVariation()` en su lugar, lo que elimina una variación de forma global.
 
@@ -318,8 +320,8 @@ Para crear un nuevo fragmento de contenido mediante programación, debe utilizar
 Por ejemplo:
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
