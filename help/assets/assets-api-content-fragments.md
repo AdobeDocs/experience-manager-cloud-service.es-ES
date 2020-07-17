@@ -2,7 +2,7 @@
 title: Adobe Experience Manager como Cloud Service Compatibilidad con fragmentos de contenido en la API HTTP de recursos
 description: Obtenga información sobre la compatibilidad con Adobe Experience Manager como Cloud Service de fragmentos de contenido en la API HTTP de Assets.
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 2%
@@ -62,12 +62,12 @@ Utiliza el punto final y requiere la ruta del recurso para acceder a él (sin el
 * Debe solicitar:
    * `/api/assets/path/to/asset`
 
-Por ejemplo, para acceder `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
+Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, solicite `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
 >Acceso sobre:
 >* `/api/assets` **no necesita** el uso del `.model` selector.
->* `/content/assets` **requiere** el uso del `.model` selector.
+>* `/content/path/to/page` **requiere** el uso del `.model` selector.
 
 
 El método HTTP determina la operación que se va a ejecutar:
@@ -302,7 +302,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones   {#limitations}
+## Restricciones     {#limitations}
 
 Existen algunas limitaciones:
 
