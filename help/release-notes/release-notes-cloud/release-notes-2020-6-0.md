@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 100%
+source-wordcount: '1949'
+ht-degree: 99%
 
 ---
 
@@ -182,11 +182,6 @@ La versión incorpora las siguientes mejoras adicionales:
 
 ### Corrección de errores {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 Además de las nuevas funciones anteriores, la versión actual proporciona las siguientes correcciones de errores en función de los comentarios de los clientes para [!DNL Assets].
 
 * Para archivos de música MP3, el botón de reproducción mostrado en la miniatura en la previsualización DAM no funciona. (CQ-4294731)
@@ -195,3 +190,4 @@ Además de las nuevas funciones anteriores, la versión actual proporciona las s
 * Al descargar un recurso, si se selecciona la opción de correo electrónico e incluso si se proporciona un ID de correo electrónico válido, la opción de descarga no está disponible. (CQ-4296535)
 * Los filtros personalizados guardados como colecciones inteligentes no se aplican correctamente a los recursos. (CQ-4294942)
 * Varias mejoras en la búsqueda y la indexación y correcciones de errores para mejorar el rendimiento. (CQ-4286373)
+* Las propiedades de la carpeta muestran un error de servidor interno 500. (CQ-4295701)
