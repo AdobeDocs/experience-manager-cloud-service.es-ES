@@ -1,12 +1,12 @@
 ---
 title: Gestión de colecciones de recursos digitales
-description: Comprenda el concepto de la colección en Recursos Adobe Experience Manager. Aprenda a recopilar, administrar, editar y recopilar con otros usuarios.
+description: Comprender el concepto de recogida en Adobe Experience Manager Assets. Aprenda a recopilar, administrar, editar y recopilar con otros usuarios.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2401'
 ht-degree: 20%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 20%
 
 # Administrar colecciones {#manage-collections}
 
-Una colección es un conjunto de recursos dentro de Recursos Adobe Experience Manager. Utilice colecciones para compartir recursos entre usuarios. El conjunto puede ser una colección estática o una colección dinámica basada en los resultados de la búsqueda.
+Una colección es un conjunto de recursos dentro de Recursos de Adobe Experience Manager. Utilice colecciones para compartir recursos entre usuarios. El conjunto puede ser una colección estática o una colección dinámica basada en los resultados de la búsqueda.
 
 A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir colecciones con varios usuarios a los que se han asignado diferentes niveles de privilegios, como ver, editar, etc.
 
@@ -30,7 +30,7 @@ Las colecciones son de los siguientes tipos, según la forma en que recopilan lo
 
 Para abrir la consola **[!UICONTROL Colecciones]** :
 
-Para abrir las **[!UICONTROL colecciones]**, toque o haga clic en el logotipo de Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Para abrir las **[!UICONTROL colecciones]**, toque o haga clic en el logotipo del Experience Manager. From the navigation page, go to **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Creación de una colección {#create-a-collection}
 
@@ -54,7 +54,7 @@ Puede crear una colección con referencias estáticas, por ejemplo, una colecci�
 
    >[!NOTE]
    >
-   >Experience Manager Assets permite crear tareas de revisión para una colección de forma similar a como se crean tareas de revisión para una carpeta de recursos.
+   >Recursos Experience Manager permite crear tareas de revisión para una colección de forma similar a como se crean tareas de revisión para una carpeta de recursos.
 
    Para añadir recursos a la colección, vaya a la interfaz de usuario de Recursos. Para obtener más información, consulte [Añadir recursos en una colección](#add-assets-to-a-collection).
 
@@ -140,7 +140,7 @@ La función de búsqueda dentro de las colecciones admite tanto la [búsqueda de
 
 ### Buscar colecciones {#search-collections}
 
-Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro de búsqueda de Omniture, Recursos AEM busca los nombres de las colecciones, los metadatos y las etiquetas agregadas a las colecciones.
+Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro Omniture, los AEM Assets buscan nombres de recopilación, metadatos y las etiquetas agregadas a las colecciones.
 
 Si busca colecciones desde el nivel superior, solo se devuelven colecciones individuales en los resultados de búsqueda. Se excluyen los recursos o las carpetas de las colecciones. En todos los demás casos (por ejemplo, dentro de una colección individual o en una jerarquía de carpetas), se devuelven todos los recursos, carpetas y colecciones relevantes.
 
@@ -226,7 +226,7 @@ Puede agregar una colección a otra colección, creando así una colección anid
 
 En la interfaz de usuario de Assets, puede buscar o filtrar recursos en función de determinadas reglas, criterios de búsqueda o facetas de búsqueda personalizadas. Si los guarda como **[!UICONTROL Búsquedas guardadas]**, puede acceder a ellos más adelante desde la lista **[!UICONTROL Búsquedas guardadas]** del panel Filtro. Al crear una búsqueda guardada también se crea una colección inteligente.
 
-Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista **[!UICONTROL Búsquedas guardadas]**. La consulta Búsquedas guardadas para la colección se guarda en la `dam:query`propiedad de CRXDE en la ubicación relativa`/content/dam/collections/`.
+Las búsquedas guardadas se crean al crear una colección inteligente. Las colecciones inteligentes se agregan automáticamente a la lista **[!UICONTROL Búsquedas guardadas]**. La consulta Búsquedas guardadas para la colección se guarda en la `dam:query`propiedad de CRXDE en la ubicación relativa`/content/dam/collections/`. No hay límites para las búsquedas que puede guardar ni para las búsquedas guardadas que se muestran en la lista.
 
 >[!NOTE]
 >
