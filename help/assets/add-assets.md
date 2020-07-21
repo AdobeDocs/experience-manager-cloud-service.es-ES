@@ -2,9 +2,9 @@
 title: Añadir los recursos digitales en Adobe Experience Manager
 description: Añada los recursos digitales a Adobe Experience Manager como Cloud Service
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1356'
 ht-degree: 2%
 
 ---
