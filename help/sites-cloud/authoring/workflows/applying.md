@@ -2,7 +2,7 @@
 title: Aplicación de flujos de trabajo a páginas
 description: Durante la creación, puede invocar flujos de trabajo para realizar acciones en las páginas; también es posible aplicar más de un flujo de trabajo.
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 81%
@@ -23,8 +23,8 @@ A la hora de aplicar el flujo de trabajo, puede especificar la siguiente informa
 
 Los flujos de trabajo se pueden iniciar desde lo siguiente:
 
-* [la consola **Sitios**](#starting-a-workflow-from-the-sites-console).
-* [al editar una página, en **Información de la página **](#starting-a-workflow-from-the-page-editor).
+* [la consola Sitios](#starting-a-workflow-from-the-sites-console).
+* [al editar una página, en  Información de la página](#starting-a-workflow-from-the-page-editor). 
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ Los flujos de trabajo se pueden iniciar desde lo siguiente:
 
 Puede iniciar un flujo de trabajo desde:
 
-* [la opción **Crear** de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
-* [el carril **Escala de tiempo** de la consola Sitios](#starting-a-workflow-from-the-timeline).
+* [la opción Crear de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
+* [el carril Escala de tiempo de la consola Sitios](#starting-a-workflow-from-the-timeline).
 
 En ambos casos, tendrá que realizar lo siguiente:
 
@@ -87,8 +87,8 @@ El asistente **Crear flujo de trabajo** ayuda a seleccionar el flujo de trabajo 
 
 Después de abrir el asistente **Crear flujo de trabajo** desde:
 
-* [la opción **Crear** de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
-* [el carril **Escala de tiempo** de la consola Sitios](#starting-a-workflow-from-the-timeline).
+* [la opción Crear de la barra de herramientas del sitio](#starting-a-workflow-from-the-sites-toolbar).
+* [el carril Escala de tiempo de la consola Sitios](#starting-a-workflow-from-the-timeline).
 
 Puede especificar los detalles:
 
