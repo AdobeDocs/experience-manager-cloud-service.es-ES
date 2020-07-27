@@ -1,10 +1,10 @@
 ---
-title: Facetas de búsqueda
+title: Facetas de búsqueda.
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2371'
 ht-degree: 23%
 
 ---
@@ -12,9 +12,7 @@ ht-degree: 23%
 
 # Facetas de búsqueda {#search-facets}
 
-Obtenga información sobre cómo crear, modificar y utilizar facetas de búsqueda en AEM.
-
-Una implementación en toda la empresa de Recursos Adobe Experience Manager (AEM) tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso correcto puede resultar difícil y llevar mucho tiempo si solo se utilizan las funciones de búsqueda genéricas de AEM.
+Una implementación de Recursos Adobe Experience Manager (AEM) en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso correcto puede resultar difícil y llevar mucho tiempo si solo se utilizan las funciones de búsqueda genéricas de AEM.
 
 Utilice las facetas de búsqueda del panel Filtros para agregar más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda agregan varias dimensiones (predicados) que le permiten realizar búsquedas más complejas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
 
@@ -35,34 +33,30 @@ Para las búsquedas de texto completo, agregue el `Fulltext` predicado al formul
 
 1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Por ejemplo, arrastre Predicado **[!UICONTROL de propiedades]**.
 
-   ![Arrastre y suelte un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
+   ![Pulse y mueva un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
 
-   Arrastre y suelte un predicado para personalizar los filtros de búsqueda
+   *Figura: Pulse y mueva un predicado para personalizar los filtros de búsqueda.*
 
-1. En la ficha Configuración, introduzca una etiqueta de campo, un texto de marcador de posición y una descripción para el predicado. Especifique un nombre válido para la propiedad de metadatos que desea asociar con el predicado.
-
-   La etiqueta de encabezado de la ficha Configuración identifica el tipo del predicado seleccionado.
+1. En la ficha Configuración, introduzca una etiqueta de campo, un texto de marcador de posición y una descripción para el predicado. Especifique un nombre válido para la propiedad de metadatos que desea asociar con el predicado. La etiqueta de encabezado de la ficha Configuración identifica el tipo del predicado seleccionado.
 
    ![Utilice la ficha Configuración para proporcionar las opciones necesarias de un predicado](assets/settings.png)
 
-   Utilice la ficha Configuración para proporcionar las opciones necesarias de un predicado
+   *Figura: Utilice la ficha Configuración para proporcionar las opciones necesarias de un predicado.*
 
-1. En el campo **[!UICONTROL Nombre de propiedad]**, indique un nombre válido para la propiedad de metadatos que desea asociar al predicado. Es el nombre sobre el cual se realiza la búsqueda. Por ejemplo, escriba `jcr:content/metadata/dc:description` o `./jcr:content/metadata/dc:description`.
-
-   También puede seleccionar un nodo existente en el cuadro de diálogo de selección.
+1. En el campo **[!UICONTROL Nombre de propiedad]**, indique un nombre válido para la propiedad de metadatos que desea asociar al predicado. Es el nombre sobre el cual se realiza la búsqueda. Por ejemplo, escriba `jcr:content/metadata/dc:description` o `./jcr:content/metadata/dc:description`. También puede seleccionar un nodo existente en el cuadro de diálogo de selección.
 
    ![Asociación de una propiedad de metadatos con un predicado en el campo Nombre de propiedad](assets/property_settings.png)
 
-   Asociación de una propiedad de metadatos con un predicado en el campo Nombre de propiedad
+   *Figura: Asocie una propiedad de metadatos con un predicado en el campo Nombre de propiedad.*
 
-1. Toque o haga clic en la **[!UICONTROL Previsualización]** de la ![previsualización](assets/preview.png) para generar una previsualización del panel Filtros tal como aparece después de agregar el predicado.
+1. Haga clic en la **[!UICONTROL Previsualización]** ![previsualización](assets/preview.png) para generar una previsualización del panel Filtros tal como aparece después de agregar el predicado.
 1. Revise la presentación del predicado en el modo de Previsualización.
 
    ![Previsualización del formulario de búsqueda antes de enviar los cambios](assets/preview-1.png)
 
    Previsualización del formulario de búsqueda antes de enviar los cambios
 
-1. Para cerrar la previsualización, toque o haga clic en **[!UICONTROL Cerrar]** ![cerrar](assets/do-not-localize/close_icon.png) en la esquina superior derecha de la previsualización.
+1. Para cerrar la previsualización, haga clic en **[!UICONTROL Cerrar]** ![cerrar](assets/do-not-localize/close_icon.png) en la esquina superior derecha de la previsualización.
 1. Toque **[!UICONTROL Listo]** para guardar la configuración.
 1. Vaya al panel Buscar en la interfaz de usuario de Recursos. El predicado Propiedad se agrega al panel.
 1. Escriba una descripción del recurso que se buscará en el cuadro de texto. Por ejemplo, escriba &quot;Adobe&quot;. Cuando realiza una búsqueda, los recursos con una descripción que coincide con &quot;Adobe&quot; se muestran en los resultados de la búsqueda.
@@ -75,7 +69,7 @@ Para asignar las opciones a la propiedad correspondiente, cree una estructura de
 
 La `jcr:title` propiedad es un nombre descriptivo para la opción que se muestra en el panel Filtros. El `value` campo se utiliza en la consulta para coincidir con la propiedad especificada.
 
-Cuando se selecciona una opción, la búsqueda se realiza en función de la propiedad del nodo de opción y de sus nodos secundarios, si los hay. `value` El árbol entero bajo el nodo de opciones se recorre y la propiedad de cada nodo secundario se combina mediante una operación O para formar la consulta de búsqueda. `value`
+Al seleccionar una opción, la búsqueda se realiza en función de la propiedad del nodo de opciones y de sus nodos secundarios, si los hay. `value` El árbol entero bajo el nodo de opciones se recorre y la propiedad de cada nodo secundario se combina mediante una operación O para formar la consulta de búsqueda. `value`
 
 Por ejemplo, si selecciona “Imágenes” para los tipos de archivo, la consulta de búsqueda de los recursos se genera combinando la propiedad `value` mediante una operación O. Por ejemplo, la búsqueda de imágenes se genera combinando los resultados coincidentes para *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg*, e *image/tiff* `jcr:content/metadata/dc:format` para la propiedad mediante una operación OR.
 
@@ -121,7 +115,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 
 ## Añadir un predicado de propiedad de varios valores {#adding-a-multi-value-property-predicate}
 
-El `Multi Value Property` predicado permite buscar recursos para varios valores. Imagine un escenario en el que tiene imágenes de varios productos en Recursos AEM y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
+El `Multi Value Property` predicado permite buscar recursos para varios valores. Imagine un escenario en el que tiene imágenes de varios productos en AEM Assets y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
 
 1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
 1. En la página Buscar formularios, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y toque **Editar** aemassets_edit ![](assets/aemassets_edit.png).
@@ -134,18 +128,16 @@ El `Multi Value Property` predicado permite buscar recursos para varios valores.
 
 ## Añadir un predicado de etiquetas {#adding-a-tags-predicate}
 
-El `Tags` predicado permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, Recursos AEM busca en los recursos una o varias etiquetas coincidentes en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación O utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción de coincidencia con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
+El `Tags` predicado permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, los AEM Assets buscan en los recursos una o varias etiquetas coincidentes en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación O utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción de coincidencia con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
 1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
 1. En la página Buscar formularios, seleccione **[!UICONTROL Recursos Administración Raíl]** de búsqueda y toque **Editar** aemassets_edit ![](assets/aemassets_edit.png).
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
-1. En la ficha Configuración, introduzca un texto de marcador de posición para el predicado. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. También puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
+1. En la ficha Configuración, introduzca un texto de marcador de posición para el predicado. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/cq:tags`. También puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
 1. Configure la propiedad de ruta de las etiquetas raíz de este predicado para rellenar varias etiquetas en la lista Etiquetas.
 1. Seleccione la opción **[!UICONTROL Mostrar todas las etiquetas]** para buscar recursos que incluyan todas las etiquetas que especifique.
 
    ![Configuración típica del predicado Etiquetas](assets/tags_predicate.png)
-
-   Configuración típica del predicado Etiquetas
 
 1. En el campo **[!UICONTROL Descripción]** , introduzca una descripción opcional y toque o haga clic en **[!UICONTROL Listo]**.
 1. Vaya al panel Buscar. El predicado **[!UICONTROL Etiquetas]** se agrega al panel Buscar.
@@ -330,28 +322,13 @@ Para restaurar la faceta de búsqueda predeterminada, realice los siguientes pas
 
 Si no se le asigna una función de administrador, aquí tiene una lista de permisos que necesita para realizar acciones de edición, eliminación y previsualización que involucran facetas de búsqueda.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Acción</strong></td>
-   <td><strong>Permisos </strong></td>
-  </tr>
-  <tr>
-   <td>Editar </td>
-   <td>Permisos de lectura y escritura en el <code>/apps</code> nodo de CRX<br /> </td>
-  </tr>
-  <tr>
-   <td>Eliminar</td>
-   <td>Permisos de lectura, escritura y eliminación en el <code>/apps</code> nodo de CRX</td>
-  </tr>
-  <tr>
-   <td>Vista previa</td>
-   <td>Permisos de lectura, escritura y eliminación en el <code>/var/dam/content</code> nodo de CRX. Además, los permisos de lectura y escritura en el <code>/apps</code> nodo.</td>
-  </tr>
- </tbody>
-</table>
+| Acción | Permiso |
+|---|---|
+| Editar | Permisos de lectura y escritura en el `/apps` nodo de CRX. |
+| Eliminar | Leer, escribir y eliminar permisos en el `/apps` nodo de CRX. |
+| Vista previa | Leer, escribir y eliminar permisos en el `/var/dam/content` nodo de CRX. Además, los permisos de lectura y escritura en el `/apps` nodo. |
 
 >[!MORELIKETHIS]
 >
->* [Buscar recursos digitales](search-assets.md)
+>* [Buscar recursos](search-assets.md)digitales.
 
