@@ -52,7 +52,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    * Pueden utilizar contenido multimedia asociado seleccionado según relevancia.
    * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
-## Adición de un fragmento de contenido a la página    {#adding-a-content-fragment-to-your-page}
+## Adición de un fragmento de contenido a la página      {#adding-a-content-fragment-to-your-page}
 
 1. Abra la página para editarla. 
 2. Añada el componente **Fragmento de contenido**, bien desde el navegador **Componentes** o con **Insertar nuevo componente**. 
@@ -106,7 +106,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
    * Atributo de **ID de HTML** que se aplicará al componente.
 
-### Conexión rápida con el editor de fragmentos    {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos      {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md). 
 
@@ -114,7 +114,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Agregar contenido intermedio    {#adding-in-between-content}
+### Añadir contenido intermedio      {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -151,7 +151,7 @@ Por este motivo, es posible que parezca que la posición relativa ha cambiado, y
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 
 
-### Uso de contenido asociado    {#using-associated-content}
+### Uso de contenido asociado      {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
