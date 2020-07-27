@@ -1,25 +1,25 @@
 ---
 title: Organización de recursos digitales
-description: Organice los recursos digitales mediante varios métodos que se proporcionan en Recursos Adobe Experience Manager.
+description: Organice los recursos digitales mediante varios métodos que se proporcionan en Recursos de Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
 
 
-# Organizar recursos digitales{#organize-digital-assets}
+# Organización de recursos digitales {#organize-digital-assets}
 
 Todos los recursos digitales, los metadatos y el contenido de los documentos de Microsoft Office y PDF se extraen y permiten realizar búsquedas. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en Digital Asset Management.
 
-Recursos AEM admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
+Los AEM Assets admiten varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 ## Crear carpetas {#create-folders}
 
-Al organizar una colección de recursos, por ejemplo, todas las imágenes de *Naturaleza* , puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. Recursos AEM no requiere que organice los recursos en carpetas para que funcionen mejor.
+Al organizar una colección de recursos, por ejemplo, todas las imágenes de *Naturaleza* , puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. Los AEM Assets no requieren que organice los recursos en carpetas para que funcionen mejor.
 
 >[!NOTE]
 >
@@ -44,5 +44,5 @@ Puede limitar quién puede acceder a determinadas carpetas en Recursos haciendo 
 Puede utilizar carpetas, etiquetas o ambos para organizar los recursos. Añadir etiquetas en recursos facilita su recuperación durante una búsqueda. Para agregar etiquetas a un recurso, siga estos pasos:
 
 1. En Digital Asset Manager, haga clic en el recurso con el botón doble para abrirlo.
-1. En el área **Etiquetas** , haga clic en el botón desplegable para mostrar las etiquetas disponibles. Seleccione las etiquetas que desee para agregar una etiqueta. Para eliminar una etiqueta, pase el ratón sobre la etiqueta y haga clic en la **x** para eliminarla.
+1. En el área **Etiquetas** , abra el menú para mostrar las etiquetas disponibles. Seleccione las etiquetas que desee. Para eliminar una etiqueta, coloque el puntero sobre ella y haga clic en `X` para eliminarla.
 1. Haga clic en **Guardar** para guardar las etiquetas agregadas.
