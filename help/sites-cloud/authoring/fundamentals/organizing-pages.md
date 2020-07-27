@@ -1,11 +1,11 @@
 ---
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -251,7 +251,7 @@ Tras crear una página o desplazarse a una página existente (en la consola), pu
 >
 >Solo se puede navegar a otras páginas desde el editor de páginas en el modo de previsualización, ya que los vínculos no están activos en el modo Editar.
 
-### Copiar y pegar una página  {#copying-and-pasting-a-page}
+### Copiar y pegar una página    {#copying-and-pasting-a-page}
 
 Puede copiar una página y todas sus páginas secundarias en una nueva ubicación:
 
@@ -369,24 +369,24 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
 #### Acciones asincrónicas {#asynchronous-actions}
 
-Normalmente, una acción de mover o cambiar el nombre de una página se realiza inmediatamente. Esto se considera un procesamiento sincrónico y las acciones posteriores en la interfaz de usuario se bloquean hasta que se complete la acción.
+Normalmente, una acción de mover o cambiar el nombre de una página se realiza de inmediato. Esto se considera un procesamiento sincrónico y las acciones posteriores en la IU se bloquean hasta que se complete la acción.
 
-Sin embargo, si el número de páginas afectadas está por encima de un límite definido, la acción se procesará asincrónicamente, lo que permitirá al usuario continuar la creación en la interfaz de usuario sin impedimentos por la acción de mover o cambiar el nombre de la página.
+Sin embargo, si el número de páginas afectadas supera un límite definido, la acción se procesará asincrónicamente, lo que permitirá al usuario continuar la creación en la IU sin impedimentos por la acción de mover o cambiar el nombre de la página.
 
 * Al hacer clic en **Mover** en el último paso anterior, AEM comprueba el límite configurado.
-* Si el número de páginas afectadas está por debajo del límite, realiza una operación sincrónica.
-* Si el número de páginas afectadas está por encima del límite, realiza una operación asincrónica.
-   * El usuario debe definir cuándo debe realizarse la operación asincrónica
-      * **Ahora** comienza la ejecución del trabajo asincrónico inmediatamente.
-      * **Más adelante** permite al usuario definir cuándo se inicio el trabajo asincrónico.
+* Si el número de páginas afectadas es inferior al límite, realiza una operación sincrónica.
+* Si el número de páginas afectadas supera el límite, realiza una operación asincrónica.
+   * El usuario debe definir cuándo se debe realizar la operación asincrónica
+      * **Ahora** comienza la ejecución del trabajo asincrónico de inmediato.
+      * **Más tarde** permite al usuario definir cuándo se iniciará el trabajo asincrónico.
 
-         ![Movimiento de página asincrónico](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+         ![Movimiento asincrónico de página](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado **de los trabajos](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asincrónicos en Navegación****global ->** Herramientas **->** Operaciones **->** Trabajos **
+El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en** Navegación global **->** Herramientas **->** Operaciones **->** Trabajos **
 
 >[!NOTE]
 >
->Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte el documento Trabajos [](/help/operations/asynchronous-jobs.md) asincrónicos en la guía del usuario Operaciones.
+>Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte el documento [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md) en la guía del usuario Operaciones.
 
 ### Eliminar una página {#deleting-a-page}
 
