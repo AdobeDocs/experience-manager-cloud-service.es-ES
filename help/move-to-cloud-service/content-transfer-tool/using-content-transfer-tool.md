@@ -1,9 +1,9 @@
 ---
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1582'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Content Transfer Tool se puede descargar como un archivo zip (Content Transfer T
 
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=spa)
 
 Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación):
 
