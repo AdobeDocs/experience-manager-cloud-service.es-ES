@@ -3,10 +3,10 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 3%
+source-wordcount: '1861'
+ht-degree: 1%
 
 ---
 
@@ -113,24 +113,26 @@ El perfil de procesamiento puede incluir una representación FPO (solo para ubic
 
 Cree y aplique los perfiles de procesamiento personalizados adicionales a carpetas específicas para que el Experience Manager pueda procesarlos para los recursos cargados o actualizados en estas carpetas. El perfil de procesamiento estándar predeterminado e integrado siempre se ejecuta, pero no es visible en la interfaz de usuario. Si agrega un perfil personalizado, se utilizan ambos perfiles para procesar los recursos cargados.
 
-Existen dos formas de aplicar perfiles de procesamiento a las carpetas:
+Aplique perfiles de procesamiento a las carpetas mediante uno de los siguientes métodos:
 
 * Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Herramientas > Recursos > Perfiles]** de procesamiento y utilizar la acción **[!UICONTROL Aplicar Perfil a carpetas]** . Abre un navegador de contenido que le permite desplazarse a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
-* Los usuarios pueden seleccionar una carpeta en la interfaz de usuario de Assets, utilizar la acción **[!UICONTROL Propiedades]** para abrir la pantalla Propiedades de la carpeta, hacer clic en la pestaña **[!UICONTROL Perfiles de procesamiento]** y, en la lista desplegable, seleccionar el perfil de procesamiento correcto para esa carpeta. La opción se guardará tras la acción **[!UICONTROL Guardar y cerrar]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 >[!NOTE]
 >
->Solo se puede aplicar un perfil de procesamiento a una carpeta específica. Si necesita que se generen más representaciones, puede agregar más definiciones de representación al perfil de procesamiento.
+>Solo se puede aplicar un perfil de procesamiento a una carpeta específica. Para generar más representaciones, agregue más definiciones de representación al perfil de procesamiento existente.
 
-Después de aplicar un perfil de procesamiento a una carpeta, todos los recursos nuevos cargados (o actualizados) en esta carpeta o en cualquiera de sus subcarpetas se procesan con el perfil de procesamiento adicional configurado. Este procesamiento adicional se suma al perfil predeterminado estándar. Si aplica varios perfiles a una carpeta, los recursos cargados o actualizados se procesan con cada uno de estos perfiles.
+Después de aplicar un perfil de procesamiento a una carpeta, todos los recursos nuevos cargados (o actualizados) en esta carpeta o en cualquiera de sus subcarpetas se procesan con el perfil de procesamiento adicional configurado. Este procesamiento se suma al perfil predeterminado estándar. Si aplica varios perfiles a una carpeta, los recursos cargados o actualizados se procesan con cada uno de estos perfiles.
 
 >[!NOTE]
 >
->Cuando se cargan recursos en una carpeta, el Experience Manager comprueba si hay un perfil de procesamiento en las propiedades de la carpeta contenedora. Si no se aplica ninguno, sube al árbol de carpetas hasta que encuentra un perfil de procesamiento aplicado y lo utiliza para el recurso. Esto significa que un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, pero se puede sobrescribir con otro perfil aplicado a una subcarpeta.
+>Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, pero se puede sobrescribir con otro perfil aplicado a una subcarpeta. Cuando se cargan recursos en una carpeta, el Experience Manager comprueba si hay un perfil de procesamiento en las propiedades de la carpeta contenedora. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
 
 Los usuarios pueden comprobar que el procesamiento se ha realizado abriendo un recurso recién cargado para el que ha finalizado el procesamiento, abriendo la previsualización de recursos y haciendo clic en la vista **[!UICONTROL Representaciones]** del carril izquierdo. Las representaciones específicas del perfil de procesamiento, para las que el tipo de recurso específico coincide con las reglas de inclusión de tipo MIME, deben ser visibles y accesibles.
 
-![representaciones](assets/renditions-additional-renditions.png)adicionales *Figura: Ejemplo de dos representaciones adicionales generadas por un perfil de procesamiento aplicado a la carpeta principal*
+![representaciones adicionales](assets/renditions-additional-renditions.png)
+
+*Figura: Ejemplo de dos representaciones adicionales generadas por un perfil de procesamiento aplicado a la carpeta principal.*
 
 ## flujos de trabajo posteriores al procesamiento {#post-processing-workflows}
 
