@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: a7c8e1ab8e0196a3a79d8e0963192775e64a2400
+source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -34,48 +34,62 @@ Tenga en cuenta que las solicitudes HTTP que se envían desde la caché de Dispa
 AEM como Cloud Service proporciona acceso a las sentencias de registro de Java. Los desarrolladores de aplicaciones para AEM deben seguir las optimizaciones generales de registro de Java, registrando afirmaciones pertinentes sobre la ejecución de código personalizado, en los siguientes niveles de registro:
 
 <table>
-<tbody>
 <tr>
-<td> <b>Entorno AEM</b></td>
-<td> <b>Nivel de registro</b></td>
-<td> <b>Descripción</b></td>
-<td> <b>Disponibilidad de estado de registro</b></td>
+<td>
+<b>Entorno AEM</b></td>
+<td>
+<b>Nivel de registro</b></td>
+<td>
+<b>Descripción</b></td>
+<td>
+<b>Disponibilidad de estado de registro</b></td>
 </tr>
 <tr>
-<td> Desarrollo</td>
-<td> DEPURACIONES</td>
-<td> Describe lo que sucede en la aplicación.
+<td>
+Desarrollo</td>
+<td>
+DEPURACIONES</td>
+<td>
+Describe lo que sucede en la aplicación.<br>
 
 Cuando el registro DEBUG está activo, se registran las instrucciones que proporcionan una imagen clara de las actividades que se producen, así como los parámetros clave que afectan al procesamiento.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Desarrollo local</li>
 <li>Desarrollo</li>
 </ul></td>
 </tr>
 <tr>
-<td> Escenario</td>
-<td> AVISAR</td>
-<td> Describe las condiciones que pueden convertirse en errores.
+<td>
+Escenario</td>
+<td>
+AVISAR</td>
+<td>
+Describe las condiciones que pueden convertirse en errores.<br>
 
 Cuando el registro de WARN está activo, solo se registran las afirmaciones que indican condiciones que se acercan a la suboptimización.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Desarrollo local</li>
 <li>Desarrollo</li>
 <li>Escenario</li>
 </ul></td>
 </tr>
 <tr>
-<td> Producción</td>
-<td> ERROR</td>
-<td> Describe las condiciones que indican un error y deben resolverse.
+<td>
+Producción</td>
+<td>
+ERROR</td>
+<td>
+Describe las condiciones que indican un error y deben resolverse.<br>
 
 Cuando el registro de ERROR está activo, solo se registran las sentencias que indican errores. Las instrucciones del registro de errores indican un problema grave que debe resolverse lo antes posible.</td>
-<td> <ul>
+<td>
+<ul>
 <li> Desarrollo local</li>
 <li>Desarrollo</li>
 <li>Escenario</li>
 <li>Producción</li>
 </ul></td>
 </tr>
-</tbody>
 </table>
