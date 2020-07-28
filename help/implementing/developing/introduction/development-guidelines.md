@@ -2,7 +2,7 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Para completar
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 1%
@@ -171,21 +171,21 @@ Los clientes no tendrán acceso a las herramientas para desarrolladores para ent
 
 El Adobe supervisa el rendimiento de la aplicación y toma medidas para corregir el deterioro. En este momento, las métricas de la aplicación no se pueden respetar.
 
-## Dirección IP de salida dedicada
+## Dirección IP de salida dedicada {#dedicated-egress-ip-address}
 
 Si se solicita, AEM como Cloud Service proporcionará una dirección IP estática y dedicada para el tráfico saliente HTTP (puerto 80) y HTTPS (puerto 443) programado en el código Java.
 
-### Beneficios
+### Beneficios {#benefits}
 
 Esta dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor de CRM) u otras integraciones fuera de AEM como Cloud Service que oferta una lista de permitidos de direcciones IP. Al agregar la dirección IP dedicada a la lista de permitidos, se asegura de que sólo el tráfico del Cloud Service de AEM del cliente pueda fluir al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
 
 Sin la característica de dirección IP dedicada habilitada, el tráfico que sale de AEM como Cloud Service fluye a través de un conjunto de direcciones IP compartidas con otros clientes.
 
-### Configuración
+### Configuración {#configuration}
 
 Para habilitar una dirección IP dedicada, envíe una solicitud a la asistencia al cliente, que le proporcionará la información de la dirección IP. La solicitud debe especificar cada entorno y se deben realizar solicitudes adicionales si los nuevos entornos necesitan la función después de la solicitud inicial. No se admiten entornos de programa de Simulador para pruebas.
 
-### Uso de funciones
+### Uso de funciones {#feature-usage}
 
 La función es compatible con el código Java o las bibliotecas que resultan en tráfico saliente, siempre que utilicen las propiedades estándar del sistema Java para las configuraciones de proxy. En la práctica, esto debería incluir las bibliotecas más comunes.
 
@@ -209,6 +209,6 @@ La misma IP dedicada se aplica a todos los programas de un cliente en su organiz
 
 Solo se admiten los puertos HTTP y HTTPS. Esto incluye HTTP/1.1, así como HTTP/2 cuando se cifra.
 
-### Consideraciones sobre la depuración
+### Consideraciones sobre la depuración {#debugging-considerations}
 
 Para validar que el tráfico sea realmente saliente en la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si están disponibles. De lo contrario, puede resultar útil llamar a un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devolverá la dirección IP que realiza la llamada.
