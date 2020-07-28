@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Para completar
 translation-type: tm+mt
-source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
+source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1949'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Directrices de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
-El código que se ejecuta en AEM como Cloud Service debe tener en cuenta que siempre se ejecuta en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
+El código que se ejecuta en AEM como Cloud Service debe ser consciente del hecho de que siempre se ejecuta en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
 
 Durante la actualización de AEM como Cloud Service, habrá instancias con código antiguo y nuevo ejecutándose en paralelo. Por lo tanto, el código antiguo no debe romperse con el contenido creado por el nuevo código y el nuevo código debe ser capaz de tratar el contenido antiguo.
 <!--
@@ -46,19 +46,19 @@ Para minimizar el problema, se deben evitar los trabajos de larga duración si e
 
 El Planificador de Sling Commons no debe ser usado para programar, ya que no se puede garantizar la ejecución. Es más probable que se programe.
 
-De manera similar, con todo lo que está sucediendo asincrónicamente, como actuar en eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar que se ejecute y, por lo tanto, se debe usar con cuidado. Esto ya se aplica a las implementaciones de AEM en este momento.
+De manera similar, con todo lo que está sucediendo asincrónicamente, como actuar en eventos de observación (ya sean eventos JCR o eventos de recursos Sling), no se puede garantizar que se ejecute y, por lo tanto, se debe usar con cuidado. Esto ya se aplica a AEM implementaciones en el presente.
 
 ## Conexiones HTTP salientes {#outgoing-http-connections}
 
-Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y de espera de lectura razonables. Para el código que no aplique estos tiempos de espera, las instancias de AEM que se ejecuten en AEM como Cloud Service aplicarán un tiempo de espera global. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones utilizadas por las siguientes bibliotecas de Java populares:
+Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y de espera de lectura razonables. Para el código que no aplica estos tiempos de espera, AEM instancias que se ejecutan en AEM como Cloud Service exigirán tiempos de espera globales. Estos valores de tiempo de espera son de 10 segundos para llamadas de conexión y de 60 segundos para llamadas de lectura para conexiones utilizadas por las siguientes bibliotecas de Java populares:
 
 Adobe recomienda el uso de la biblioteca [](https://hc.apache.org/httpcomponents-client-ga/) Apache HttpComponents Client 4.x proporcionada para realizar conexiones HTTP.
 
 Las alternativas que se sabe que funcionan, pero que pueden requerir que usted mismo proporcione la dependencia son:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (AEM)
+* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (proporcionado por AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no recomendado porque está obsoleto y reemplazado por la versión 4.x)
-* [Http](https://square.github.io/okhttp/) correcto (no proporcionado por AEM)
+* [Aceptar HTTP](https://square.github.io/okhttp/) (no proporcionado por AEM)
 
 ## No hay personalizaciones de IU clásicas {#no-classic-ui-customizations}
 
@@ -68,11 +68,11 @@ AEM como Cloud Service solo admite la IU táctil para el código de cliente de t
 
 El código no podrá descargar archivos binarios en tiempo de ejecución ni modificarlos. Por ejemplo, no podrá desempaquetar `jar` ni `tar` archivos.
 
-## Sin archivos binarios de flujo continuo a través de AEM como Cloud Service {#no-streaming-binaries}
+## Ningún binario de flujo a través de AEM como Cloud Service {#no-streaming-binaries}
 
 Se debe acceder a los binarios a través de la CDN, que servirá binarios fuera de los servicios principales de AEM.
 
-Por ejemplo, no utilice `asset.getOriginal().getStream()`, lo que desencadena la descarga de un binario en el disco efímero del servicio AEM.
+Por ejemplo, no utilice `asset.getOriginal().getStream()`, lo que desencadena la descarga de un binario en el disco efímero del servicio de AEM.
 
 ## No hay agentes de replicación inversa {#no-reverse-replication-agents}
 
@@ -96,7 +96,7 @@ Para cambiar los niveles de registro de los entornos de nube, se debe modificar 
 
 >[!NOTE]
 >
->Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, insertarlos en una instancia de AEM como Cloud Service. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM como Cloud Service](/help/implementing/deploying/overview.md).
+>Para realizar los cambios de configuración que se indican a continuación, debe crearlos en un entorno de desarrollo local y luego insertarlos en un AEM como una instancia de Cloud Service. Para obtener más información sobre cómo hacerlo, consulte [Implementación para AEM como Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activación del nivel de registro DEBUG**
 
@@ -120,13 +120,13 @@ Los niveles de registro son los siguientes:
 
 ### Duques de rosca {#thread-dumps}
 
-Los volcados de subprocesos en entornos de la nube se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de asistencia de AEM si se necesitan volcados de subprocesos para depurar un problema, especificando la ventana horaria exacta.
+Los volcados de subprocesos en entornos de la nube se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de soporte AEM si se necesitan volcados de subprocesos para depurar un problema, especificando la hora exacta.
 
 ## CRX/DE Lite y la consola del sistema {#crxde-lite-and-system-console}
 
 ### Desarrollo local {#local-development}
 
-Para el desarrollo local, los desarrolladores tienen acceso completo a CRXDE Lite (`/crx/de`) y a la consola web de AEM (`/system/console`).
+Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Lite (`/crx/de`) y a la consola web AEM (`/system/console`).
 
 Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la nube) `/apps` , y `/libs` se puede escribir directamente en él, lo cual es diferente de los entornos de nube donde las carpetas de nivel superior son inmutables.
 
@@ -134,7 +134,7 @@ Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la 
 
 Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo, pero no en fase o producción. No se puede escribir en el repositorio inmutable (`/libs`, `/apps`) durante la ejecución, por lo que al intentar hacerlo se generarán errores.
 
-Hay un conjunto de herramientas disponibles para depurar AEM como entornos de desarrollador Cloud Service en Developer Console para entornos de desarrollo, fase y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
+Hay un conjunto de herramientas para depurar AEM como entornos de desarrollador Cloud Service disponibles en la consola de desarrollador para entornos de desarrollo, etapa y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -160,7 +160,7 @@ También resulta útil para la depuración, ya que la consola para desarrollador
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Cloud Manager - Función de desarrollador&quot; en Admin Console, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para todos los programas, &quot;Cloud Manager - Función de desarrollador&quot; es necesario para los volcados de estado y los usuarios también deben definirse en el Perfil de producto Usuarios de AEM o Administradores de AEM en los servicios de creación y publicación para poder vista de datos de volcado de estado de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
+Para los programas regulares, el acceso a la consola de desarrollador se define mediante el &quot;Administrador de la nube - Función de desarrollador&quot; en el Admin Console, mientras que para los programas de simulación de pruebas, la consola de desarrollador está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para todos los programas, &quot;Cloud Manager - Función de desarrollador&quot; es necesario para los volcados de estado y los usuarios también deben definirse en el Perfil de producto de los usuarios de AEM o administradores de AEM en los servicios de creación y publicación para poder vista los datos de volcado de estado de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)Cloud Manager.
 
 
 ### Servicio de ensayo y producción de AEM {#aem-staging-and-production-service}
@@ -169,21 +169,21 @@ Los clientes no tendrán acceso a las herramientas para desarrolladores para ent
 
 ### Monitoreo del rendimiento {#performance-monitoring}
 
-Adobe supervisa el rendimiento de las aplicaciones y toma medidas para solucionar el problema si se observa un deterioro. En este momento, las métricas de la aplicación no se pueden respetar.
+El Adobe supervisa el rendimiento de la aplicación y toma medidas para corregir el deterioro. En este momento, las métricas de la aplicación no se pueden respetar.
 
 ## Dirección IP de salida dedicada
 
-Si se solicita, AEM como Cloud Service proporcionará una dirección IP estática y dedicada para el tráfico saliente HTTP (puerto 80) y HTTPS (puerto 443) programado en código Java.
+Si se solicita, AEM como Cloud Service proporcionará una dirección IP estática y dedicada para el tráfico saliente HTTP (puerto 80) y HTTPS (puerto 443) programado en el código Java.
 
 ### Beneficios
 
 Esta dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor de CRM) u otras integraciones fuera de AEM como Cloud Service que oferta una lista de permitidos de direcciones IP. Al agregar la dirección IP dedicada a la lista de permitidos, se asegura de que sólo el tráfico del Cloud Service de AEM del cliente pueda fluir al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
 
-Sin la función de dirección IP dedicada habilitada, el tráfico que sale de AEM como Cloud Service fluye a través de un conjunto de direcciones IP compartidas con otros clientes.
+Sin la característica de dirección IP dedicada habilitada, el tráfico que sale de AEM como Cloud Service fluye a través de un conjunto de direcciones IP compartidas con otros clientes.
 
 ### Configuración
 
-Para habilitar una dirección IP dedicada, envíe una solicitud a la asistencia al cliente, que le proporcionará la información de la dirección IP. Se debe realizar una solicitud para cada entorno, incluidos los nuevos entornos que se creen después de la solicitud inicial.
+Para habilitar una dirección IP dedicada, envíe una solicitud a la asistencia al cliente, que le proporcionará la información de la dirección IP. La solicitud debe especificar cada entorno y se deben realizar solicitudes adicionales si los nuevos entornos necesitan la función después de la solicitud inicial. No se admiten entornos de programa de Simulador para pruebas.
 
 ### Uso de funciones
 
@@ -205,7 +205,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
-La misma dirección IP dedicada se aplica a todos los programas de un cliente en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica a los servicios de creación y publicación.
+La misma IP dedicada se aplica a todos los programas de un cliente en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica a los servicios de creación y publicación.
 
 Solo se admiten los puertos HTTP y HTTPS. Esto incluye HTTP/1.1, así como HTTP/2 cuando se cifra.
 
