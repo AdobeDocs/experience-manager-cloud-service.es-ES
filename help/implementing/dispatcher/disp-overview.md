@@ -2,7 +2,7 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 9%
@@ -372,7 +372,7 @@ Esto inicio al despachante en un contenedor con su back-end que apunta a una ins
 
 ## Depuración de la configuración de Apache y Dispatcher {#debugging-apache-and-dispatcher-configuration}
 
-Los niveles de registro están definidos por las variables `DISP_LOG_LEVEL` y `REWRITE_LOG_LEVEL` en `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+Los niveles de registro están definidos por las variables `DISP_LOG_LEVEL` y `REWRITE_LOG_LEVEL` en `conf.d/variables/global.var`s&quot;. See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## Diferentes configuraciones de Dispatcher por entorno {#different-dispatcher-configurations-per-environment}
 
