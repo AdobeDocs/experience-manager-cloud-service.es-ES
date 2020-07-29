@@ -1,8 +1,8 @@
 ---
 title: 'Paquete de estructura del repositorio de proyectos de AEM  '
-description: Adobe Experience Manager como proyecto de Cloud Service Maven requiere una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
+description: Adobe Experience Manager como Cloud Service Los proyectos Maven requieren una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a6820eab30f2b318d62d2504cb17c12081a320a3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 9%
@@ -12,7 +12,7 @@ ht-degree: 9%
 
 # Paquete de estructura del repositorio de proyectos de AEM
 
-Los proyectos Maven para Adobe Experience Manager como servicio de nube requieren una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto. Esto garantiza la instalación de paquetes en Experience Manager, ya que las dependencias de recursos de JCR solicitan automáticamente un servicio de nube. La falta de dependencias puede dar lugar a situaciones en las que las subestructuras se instalarían por encima de sus estructuras principales y, por lo tanto, se eliminarían inesperadamente, con lo que se rompería la implementación.
+Los proyectos Maven para Adobe Experience Manager como Cloud Service requieren una definición de subpaquete de estructura de repositorio cuyo único propósito es definir las raíces del repositorio JCR en las que se implementan los subpaquetes de código del proyecto. Esto garantiza que la instalación de paquetes en Experience Manager como Cloud Service se ordene automáticamente por las dependencias de recursos de JCR. La falta de dependencias puede dar lugar a situaciones en las que las subestructuras se instalarían por encima de sus estructuras principales y, por lo tanto, se eliminarían inesperadamente, con lo que se rompería la implementación.
 
 Si el paquete de código se implementa en una ubicación **no cubierta** por el paquete de código, cualquier recurso antecesor (recursos JCR más cercanos a la raíz JCR) debe enumerarse en el paquete de estructura del repositorio para establecer estas dependencias.
 
