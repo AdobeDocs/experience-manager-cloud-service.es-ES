@@ -2,9 +2,9 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1304'
 ht-degree: 3%
 
 ---
@@ -195,41 +195,18 @@ Este registro es útil para comprender rápidamente qué solicitudes HTTP se est
 
 ### Formato de registro {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>AEM como ID de nodo de Cloud Service</b></td>
-<td><b>Dirección IP del cliente</b></td>
-<td><b>Usuario</b></td>
-<td><b>Fecha y hora</b></td>
-<td><b>Vacío</b></td>
-<td><b>Método HTTP</b></td>
-<td><b>URL</b></td>
-<td><b>Protocolo</b></td>
-<td><b>Vacío</b></td>
-<td><b>Estado de respuesta HTTP</b></td>
-<td><b>Tiempo de respuesta HTTP en milisegundos</b></td>
-<td><b>Referencia</b></td>
-<td><b>Agente de usuario</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/Abr/2020:17:37:14 +0000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
-
+| AEM como ID de nodo de Cloud Service | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| Dirección IP del cliente | - |
+| Usuario | myuser@adobe.com |
+| Fecha y hora | 30/Abr/2020:17:37:14 +0000 |
+| Método HTTP | GET |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| Protocolo | HTTP/1.1 |
+| Estado de respuesta HTTP | 200 |
+| Tiempo de solicitud HTTP en milisegundos | 1141 |
+| Referencia | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| Agente de usuario | &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/81.0.4044.122 Safari/537.36&quot; |
 
 **Ejemplo**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 El registro de acceso HTTP no se puede configurar en AEM como Cloud Service.
 
-## Registro de Apache Web Server/Dispatcher {#dispatcher-logging}
+## Registro de Apache Web Server y Dispatcher {#apache-web-server-and-dispatcher-logging}
 
 AEM como Cloud Service proporciona tres registros para los servidores web Apache y la capa de distribuidor en la publicación:
 
@@ -253,4 +230,74 @@ AEM como Cloud Service proporciona tres registros para los servidores web Apache
 
 Tenga en cuenta que estos registros solo están disponibles para el nivel Publicar.
 
-Este conjunto de registros proporciona perspectivas sobre las solicitudes HTTP al AEM como un nivel de publicación Cloud Service antes de que dichas solicitudes lleguen a la aplicación AEM. Esto es importante de comprender, ya que, idealmente, la mayoría de las solicitudes HTTP a los servidores del nivel Publicar son atendidas por contenido en caché por el servidor web Apache HTTPD y AEM Dispatcher, y nunca llegan a la aplicación AEM en sí, por lo que no hay instrucciones de registro para estas solicitudes en AEM registros de Java, Solicitud o Acceso.
+Este conjunto de registros proporciona perspectivas sobre las solicitudes HTTP al AEM como un nivel de publicación Cloud Service antes de que dichas solicitudes lleguen a la aplicación AEM. Esto es importante de comprender, ya que, idealmente, la mayoría de las solicitudes HTTP a los servidores del nivel Publicar se proporcionan con contenido almacenado en caché por el servidor web Apache HTTPD y AEM Dispatcher, y nunca llegan a la aplicación AEM misma. Por lo tanto, no hay instrucciones de registro para estas solicitudes en los registros de Java, solicitud o acceso AEM.
+
+### Registro de acceso al servidor web Apache HTTPD {#apache-httpd-web-server-access-log}
+
+El registro de acceso al servidor web Apache HTTP proporciona instrucciones para cada solicitud HTTP que llega al servidor web o Dispatcher del nivel de publicación. Tenga en cuenta que las solicitudes que se proporcionan desde una CDN de flujo ascendente no se reflejan en estos registros.
+
+Consulte la información sobre el formato de registro de errores en la documentación [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)oficial de apache.
+
+**Formato de registro**
+
+<!--blank until prod build finishes-->
+
+**Ejemplo**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Configuración del registro de acceso al servidor web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
+
+Este registro no se puede configurar en AEM como Cloud Service.
+
+## Registro de errores de Apache HTTPD Web Server {#apache-httpd-web-server-error-log}
+
+El registro de errores de Apache HTTP Web Server proporciona instrucciones para cada error en el servidor Web de la capa Publicar/Dispatcher.
+
+Consulte la información sobre el formato de registro de errores en la documentación [](https://httpd.apache.org/docs/2.4/logs.html#errorlog)oficial de apache.
+
+**Formato de registro**
+
+<!--placeholder-->
+
+**Ejemplo**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Configuración del registro de errores del servidor web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
+
+Los niveles de registro mod_rewrite están definidos por la variable REWRITE_LOG_LEVEL en el archivo `conf.d/variables/global.var`.
+
+Se puede establecer en Error, Advertir, Información, Depurar y Rastrear1 - Rastrear8, con un valor predeterminado de Advertir. Para depurar RewriteRules, se recomienda elevar el nivel de registro a Trace2.
+
+Consulte la documentación [del módulo](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) mod_rewrite para obtener más información.
+
+Para establecer el nivel de registro por entorno, utilice la rama condicional adecuada en el archivo global.var, como se describe a continuación:
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Registro de Dispatcher {#dispatcher-log}
+
+**Formato de registro**
+
