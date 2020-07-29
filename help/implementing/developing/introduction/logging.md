@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 3%
@@ -66,7 +66,6 @@ Escenario</td>
 AVISAR</td>
 <td>
 Describe las condiciones que pueden convertirse en errores.<br>
-
 Cuando el registro de WARN está activo, solo se registran las afirmaciones que indican condiciones que se acercan a la suboptimización.</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ Producción</td>
 ERROR</td>
 <td>
 Describe las condiciones que indican un error y deben resolverse.<br>
-
 Cuando el registro de ERROR está activo, solo se registran las sentencias que indican errores. Las instrucciones del registro de errores indican un problema grave que debe resolverse lo antes posible.</td>
 <td>
 <ul>
