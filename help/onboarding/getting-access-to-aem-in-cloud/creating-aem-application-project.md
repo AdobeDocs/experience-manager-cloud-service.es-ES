@@ -1,23 +1,23 @@
 ---
-title: 'Proyecto de aplicación de AEM: Cloud Service'
-description: 'Proyecto de aplicación de AEM: Cloud Service'
+title: Proyecto de aplicación AEM - Cloud Service
+description: Proyecto de aplicación AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 9%
 
 ---
 
 
 # Creación de un proyecto de aplicación de AEM {#aem-application-project}
 
-## Uso del asistente para crear un proyecto de aplicación de AEM {#using-wizard-to-create-an-aem-application-project}
+## Uso del Asistente para crear un proyecto de aplicación AEM {#using-wizard-to-create-an-aem-application-project}
 
-Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto mínimo de AEM como punto de partida. Este proceso se basa en el arquetipo [**del proyecto de **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)AEM.
+Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo **](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
 
 
-Siga los pasos a continuación para crear un proyecto de aplicación de AEM en Cloud Manager:
+Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager:
 
 1. Una vez que inicie sesión en Cloud Manager y se complete la configuración básica del programa, se mostrará una tarjeta de llamada a la acción especial en la pantalla **Información general**, si el repositorio está vacío.
 
@@ -71,42 +71,11 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 * Se pueden instalar otros paquetes en el momento de la compilación, como se describe [a continuación](#installing-additional-system-packages).
 * Cada obra se construye sobre un entorno prístino; el contenedor de compilación no mantiene ningún estado entre las ejecuciones.
 * Maven siempre se ejecuta con el comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
-* Maven se configura a nivel del sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Para obtener más información, consulte el Repositorio [público de](https://repo.adobe.com/) Adobe Maven).
+* Maven se configura a nivel de sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Consulte Repositorio [de Maven Público de](https://repo.adobe.com/) Adobe para obtener más detalles).
 
 >[!NOTE]
 >Aunque Cloud Manager no define una versión específica del `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
 
-### Uso de Java 11 {#using-java-11}
-
-Cloud Manager ahora admite la creación de proyectos de clientes con Java 8 y Java 11. De forma predeterminada, los proyectos se crean con Java 8. Los clientes que deseen utilizar Java 11 en sus proyectos pueden hacerlo usando el complemento [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
-
-Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspecto:
-
-```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-toolchains-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>toolchain</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <toolchains>
-                    <jdk>
-                        <version>11</version>
-                        <vendor>oracle</vendor>
-                    </jdk>
-                </toolchains>
-            </configuration>
-        </plugin>
-```
-
->[!NOTE]
->Los `vendor` valores admitidos son `oracle` y `sun` y los `version` valores admitidos son `1.8`, `1.11`y `11`.
 
 ## Variables de Entorno {#environment-variables}
 
