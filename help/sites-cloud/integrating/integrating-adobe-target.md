@@ -2,9 +2,9 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 2%
 
 ---
@@ -17,18 +17,18 @@ Como parte del Adobe Marketing Cloud, Adobe Target le permite aumentar la releva
 * uso de la IU táctil para crear una configuración de Analytics en AEM como Cloud Service (se requiere la configuración de IMS).
 * agregar y configurar Adobe Analytics como una extensión en [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-La integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencia a Destinatario solo necesita la Configuración de Adobe Target y el IMS.
+Adobe Launch es necesario para administrar las propiedades del cliente tanto para Analytics como para Destinatario en páginas AEM (bibliotecas/etiquetas JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencia a Destinatario solo necesita la Configuración de Adobe Target y el IMS.
 
 >[!NOTE]
 >
->Adobe Experience Manager como cliente Cloud Service que no tiene una cuenta de Destinatario existente, puede solicitar acceso al Destinatario Foundation Pack para Experience Cloud.  Foundation Pack proporciona un uso limitado del Destinatario por volumen.
+>Adobe Experience Manager como cliente Cloud Service que no tiene una cuenta de Destinatario existente, puede solicitar acceso al Destinatario Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del Destinatario por volumen.
 
 ## Creación de la configuración de Adobe Target {#create-configuration}
 
 1. Vaya a **Herramientas** → **Cloud Service**.
    ![](assets/cloudservice.png "NavegaciónNavegación")
 2. Seleccione **Adobe Target**.
-3. Haga clic en el botón **Crear** .
+3. Seleccione el botón **Crear** .
    ![](assets/tenant.png "CreateCreate")
 4. Rellene los detalles (consulte a continuación) y seleccione **Connect**.
    ![](assets/open_screen.png "ConnectConnect")
@@ -59,10 +59,6 @@ AEM ofertas y la integración lista para usar con Experience Platform Launch. Al
 >
 >Los marcos existentes (heredados) siguen funcionando, pero no se pueden configurar en la IU táctil. Es aconsejable volver a compilar las configuraciones de asignación de variables en Launch.
 
->[!NOTE]
->
->Los marcos existentes (heredados) siguen funcionando, pero no se pueden configurar en la IU táctil. Es aconsejable volver a compilar las configuraciones de asignación de variables en Launch.
-
 Como información general, los pasos de integración son:
 
 1. Crear una propiedad de inicio
@@ -83,7 +79,7 @@ Una propiedad es un contenedor que se rellenará con extensiones, reglas y eleme
 
 ### Añadir las extensiones necesarias {#add-extension}
 
-Extensiones es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target admite implementaciones de cliente mediante el SDK de JavaScript de Destinatario para la web moderna, at.js. Debe agregar las extensiones **Adobe Target** y **Adobe de ContextHub** .
+**Extensiones** es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target admite implementaciones de cliente mediante el uso del SDK de JavaScript de Destinatario para la web moderna, at.js. Debe agregar las extensiones **Adobe Target** y **Adobe de ContextHub** .
 
 1. Seleccione la opción Catálogo de extensiones y busque Destinatarios en el filtro.
 2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar.
@@ -95,7 +91,7 @@ Extensiones es el contenedor que administra la configuración de la biblioteca p
 
 ### Creación de un elemento de datos {#data-element}
 
-Los elementos de datos son los marcadores de posición a los que se pueden asignar parámetros de concentrador de contexto.
+**Los elementos** de datos son los marcadores de posición a los que se pueden asignar parámetros de concentrador de contexto.
 
 1. Seleccione Elementos **de datos**.
 2. Seleccione **Añadir elemento** de datos.
@@ -105,7 +101,7 @@ Los elementos de datos son los marcadores de posición a los que se pueden asign
 
 ### Creación de una regla de página {#page-rule}
 
-En Regla, definimos y ordenamos una secuencia de acciones, que se ejecutarán en el sitio, para lograr objetivos.
+En **Regla** definimos y ordenamos una secuencia de acciones, que se ejecutarán en el sitio, para lograr objetivos.
 
 1. Añada un conjunto de acciones como se muestra en la captura de pantalla.
    ![](assets/rules.png "ActionsActions")
