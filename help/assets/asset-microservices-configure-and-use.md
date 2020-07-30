@@ -3,15 +3,15 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '2246'
 ht-degree: 1%
 
 ---
 
 
-# Introducción a los microservicios de recursos {#get-started-using-asset-microservices}
+# Usar microservicios de recursos y perfiles de procesamiento {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -38,78 +38,116 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->El procesamiento de recursos descrito aquí reemplaza el modelo de flujo de trabajo que existe en las versiones anteriores de Experience Manager. `DAM Update Asset` La mayoría de los pasos de generación de representación estándar y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos y los pasos restantes, si los hay, se pueden reemplazar por la configuración del flujo de trabajo posterior al procesamiento.
+>El procesamiento de recursos descrito aquí reemplaza el modelo de `DAM Update Asset` flujo de trabajo que existe en las versiones anteriores de [!DNL Experience Manager]. La mayoría de los pasos de generación de representación estándar y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos y los pasos restantes, si los hay, se pueden reemplazar por la configuración del flujo de trabajo posterior al procesamiento.
 
-## Introducción al procesamiento de recursos {#get-started}
+## Comprender las opciones de procesamiento de recursos {#get-started}
 
-El procesamiento de recursos con microservicios de recursos está preconfigurado con una configuración predeterminada, lo que garantiza que las representaciones predeterminadas que requiere el sistema estén disponibles. También garantiza la disponibilidad de operaciones de extracción de metadatos y extracción de texto. Los usuarios pueden cargar o actualizar los recursos de forma inmediata con inicio y el procesamiento básico está disponible de forma predeterminada.
+Experience Manager permite los siguientes niveles de procesamiento.
 
-Para requisitos específicos de generación de representaciones o procesamiento de recursos, un administrador de AEM puede crear Perfiles [!UICONTROL de]procesamiento adicionales. Los usuarios pueden asignar una o más de las perfiles disponibles a carpetas específicas para realizar un procesamiento adicional. Por ejemplo, para generar representaciones específicas de web, móviles y tabletas. El siguiente vídeo muestra cómo crear y aplicar Perfiles  de procesamiento y cómo acceder a las representaciones creadas.
+| Configuración | Descripción | Casos de uso cubiertos |
+|---|---|---|
+| [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles); previsualización grande (representación web - 1280 px); Metadatos y extracción de texto. |
+| [Configuración estándar](#standard-config) | Configurado por los administradores únicamente mediante la interfaz de usuario. Proporciona más opciones para la generación de representaciones que la configuración predeterminada anterior. | Cambiar el formato y la resolución de las imágenes; generar representaciones de FPO. |
+| [Configuración personalizada](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para invocar trabajadores personalizados que admiten requisitos más complejos. Aprovecha una nube nativa [!DNL Asset Compute Service]. | Consulte casos [de uso](#custom-config)permitidos. |
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
-
-Para cambiar el perfil existente, consulte [configuraciones para microservicios](#configure-asset-microservices)de recursos.
 Para crear perfiles de procesamiento personalizados específicos de los requisitos personalizados, por ejemplo, para integrarlos con otros sistemas, consulte flujos de trabajo [de](#post-processing-workflows)postprocesamiento.
 
-## Configuraciones para microservicios de recursos {#configure-asset-microservices}
-
-Para configurar los microservicios de recursos, los administradores pueden utilizar la interfaz de usuario de configuración en **[!UICONTROL Herramientas > Recursos > Perfiles]** de procesamiento.
-
-### Configuración predeterminada {#default-config}
-
-Con la configuración predeterminada, solo se configura el perfil de procesamiento estándar. El perfil de procesamiento estándar no está visible en la interfaz de usuario y no se puede modificar. Siempre se ejecuta para procesar los recursos cargados. Un perfil de procesamiento estándar garantiza que todo el procesamiento básico requerido por el Experience Manager se complete en todos los recursos.
-
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
-
-El perfil de procesamiento estándar proporciona la siguiente configuración de procesamiento:
-
-* Miniaturas estándar utilizadas por la interfaz de usuario de recursos (48, 140 y 319 píxeles)
-* previsualización grande (representación web - 1280 px)
-* Extracción de metadatos
-* extracción de texto
-
-### Formatos de archivo compatibles {#supported-file-formats}
+## Formatos de archivo compatibles {#supported-file-formats}
 
 Los microservicios de recursos admiten una amplia variedad de formatos de archivo en cuanto a la capacidad de generar representaciones o extraer metadatos. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener la lista completa.
 
-### Añadir perfiles de procesamiento adicionales {#processing-profiles}
+## Configuración predeterminada {#default-config}
 
-Se pueden agregar perfiles de procesamiento adicionales mediante la acción **[!UICONTROL Crear]** .
+Algunos valores predeterminados están preconfigurados para garantizar que las representaciones predeterminadas necesarias en Experience Manager están disponibles. La configuración predeterminada también garantiza que las operaciones de extracción de metadatos y extracción de texto estén disponibles. Los usuarios pueden cargar o actualizar los recursos de forma inmediata con inicio y el procesamiento básico está disponible de forma predeterminada.
 
-Cada configuración de perfil de procesamiento incluye una lista de representaciones. Para cada representación, puede especificar lo siguiente:
+Con la configuración predeterminada, solo se configura el perfil de procesamiento más básico. Este perfil de procesamiento no está visible en la interfaz de usuario y no se puede modificar. Siempre se ejecuta para procesar los recursos cargados. Este perfil de procesamiento predeterminado garantiza que el procesamiento básico requerido por [!DNL Experience Manager] se complete en todos los recursos.
 
-* Nombre de la representación.
-* Formato de representación admitido, como JPEG, PNG o GIF.
-* Anchura y altura de representación en píxeles. Si no se especifica, se utiliza el tamaño de píxel completo de la imagen original.
-* Calidad de representación de JPEG en porcentaje.
-* Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+-->
+
+## perfil estándar {#standard-config}
+
+[!DNL Experience Manager] ofrece capacidades para generar representaciones más específicas para formatos comunes según las necesidades del usuario. Un administrador puede crear Perfiles [!UICONTROL de] procesamiento adicionales para facilitar la creación de dichas representaciones. A continuación, los usuarios asignan una o varias de las perfiles disponibles a carpetas específicas para realizar el procesamiento adicional. Por ejemplo, el procesamiento adicional puede generar representaciones para web, móvil y tablet. El siguiente vídeo muestra cómo crear y aplicar Perfiles  de procesamiento y cómo acceder a las representaciones creadas.
+
+* **Ancho y altura** de representación: La especificación de anchura y altura de representación proporciona los tamaños máximos de la imagen de salida generada. Los microservicios de recursos intentan producir la representación más grande posible, cuya anchura y altura no superan la anchura y la altura especificadas, respectivamente. Se conserva la relación de aspecto, que es la misma que la original. Un valor vacío significa que el procesamiento de recursos asume la dimensión de píxeles del original.
+
+* **Reglas** de inclusión de tipo MIME: Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (lista de bloqueados). De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (lista de permitidos).
+
+* **Representación** especial de FPO: Al colocar recursos de gran tamaño desde [!DNL Experience Manager] en [!DNL Adobe InDesign] documentos, un profesional creativo espera mucho tiempo después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, se bloquea el uso del usuario [!DNL InDesign]. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. Adobe permite colocar temporalmente representaciones de pequeño tamaño en [!DNL InDesign] documentos para empezar, que se pueden reemplazar posteriormente con recursos de resolución completa a petición. [!DNL Experience Manager] proporciona representaciones que se utilizan únicamente para la colocación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño pero tienen la misma proporción de aspecto.
+
+El perfil de procesamiento puede incluir una representación FPO (solo para ubicación). Consulte [!DNL Adobe Asset Link] la documentación [](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber si necesita activarla para su perfil de procesamiento. Para obtener más información, consulte la documentación [completa de Vínculo de recursos de](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)Adobe.
+
+### Crear perfil estándar {#create-standard-profile}
+
+Para crear un perfil de procesamiento estándar, siga estos pasos:
+
+1. Los administradores acceden a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Perfiles **** de procesamiento. Haga clic en **[!UICONTROL Crear]**.
+1. Proporcione un nombre que le ayude a identificar de forma exclusiva el perfil al aplicarlo a una carpeta.
+1. Para generar representaciones de FPO, en la ficha **[!UICONTROL Estándar]** , active **[!UICONTROL Crear representación]** de FPO. Introduzca un valor de **[!UICONTROL calidad]** entre 1 y 100.
+1. Para generar otras representaciones, haga clic en **[!UICONTROL Añadir nuevo]** y proporcione la siguiente información:
+
+   * Nombre de archivo de cada representación.
+   * Formato de archivo (PNG, JPEG o GIF) de cada representación.
+   * Anchura y altura en píxeles de cada representación. Si no se especifican los valores, se utiliza el tamaño de píxel completo de la imagen original.
+   * Calidad en porcentaje de cada representación JPEG.
+   * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
 ![proceso-perfiles-adición](assets/processing-profiles-adding.png)
 
-Al crear y guardar un nuevo perfil de procesamiento, se agrega a la lista de perfiles de procesamiento configurados. Puede aplicar estos perfiles de procesamiento a las carpetas de la jerarquía de carpetas para que sean eficaces en la carga de recursos y en el procesamiento de recursos.
+1. Haga clic en **[!UICONTROL Guardar]**.
+
+El siguiente vídeo muestra la utilidad y el uso del perfil estándar.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 <!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
+ ![processing-profiles-list](assets/processing-profiles-list.png) 
+ -->
 
-#### Anchura y altura de representación {#rendition-width-height}
+## Casos de uso y perfil personalizados {#custom-config}
 
-La especificación de anchura y altura de representación proporciona los tamaños máximos de la imagen de salida generada. El microservicio de recursos intenta producir la representación más grande posible, cuya anchura y altura no superan la anchura y la altura especificadas, respectivamente. Se conserva la relación de aspecto, que es la misma que la original.
+**Elementos** TBD:
 
-Un valor vacío significa que el procesamiento de recursos asume la dimensión de píxeles del original.
+* Interrelación general con el contenido de extensibilidad.
+* Mencione cómo obtener la dirección URL del trabajador. URL de trabajo para entornos Dev, Stage y Prod.
+* Asignación de menciones de parámetros de servicio. Vínculo al artículo del servicio de cómputo.
+* Revisar desde la perspectiva del flujo compartido en el billete de Jira.
 
-#### Reglas de inclusión de tipo MIME {#mime-type-inclusion-rules}
+Algunos casos de uso de procesamiento de recursos complejos no se pueden realizar con configuraciones predeterminadas, ya que las necesidades de las organizaciones son diversas. ofertas de Adobe [!DNL Asset Compute Service] para estos casos de uso. Es un servicio ampliable y ampliable para procesar activos digitales. Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos y archivos.
 
-Cuando se procesa un recurso con un tipo MIME específico, se comprueba primero el tipo MIME con el valor de tipos MIME excluidos para la especificación de representación. Si coincide con esa lista, esta representación específica no se genera para el recurso (lista de bloqueados).
+Los desarrolladores pueden utilizar el servicio de cómputo de recursos para crear trabajadores personalizados especializados que se ocupen de casos de uso complejos y predefinidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso:
 
-De lo contrario, el tipo MIME se compara con el tipo MIME incluido y, si coincide con la lista, se genera la representación (lista de permitidos).
+* Genere etiquetas inteligentes mejoradas personalizadas para recursos digitales mediante Adobe Sensei.
+* Genere una máscara de recorte de un sujeto mediante Adobe Sensei.
+* Recupere la información de metadatos del producto del sistema PIM y convierta los metadatos en parte del binario del recurso durante la ingestión del recurso.
+* Cambie el color de fondo de una imagen transparente mediante [!DNL Adobe Photoshop] API.
+* Retoque una imagen mediante [!DNL Photoshop] API.
+* Enderezar una imagen mediante [!DNL Adobe Lightroom] API.
 
-#### Representación especial de FPO {#special-fpo-rendition}
+>[!NOTE]
+>
+>No se pueden editar los metadatos estándar con los programas de trabajo personalizados. Solo puede modificar metadatos personalizados.
 
-Al colocar recursos de gran tamaño de AEM en documentos de Adobe InDesign, un profesional creativo debe esperar un tiempo considerable después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, el usuario no puede utilizar InDesign. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. Adobe permite la colocación temporal de representaciones de pequeño tamaño en documentos de InDesign para empezar, que se pueden reemplazar con recursos de resolución completa más adelante. Experience Manager proporciona representaciones que se utilizan únicamente para la colocación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño pero tienen la misma proporción de aspecto.
+### Crear un perfil personalizado {#create-custom-profile}
 
-El perfil de procesamiento puede incluir una representación FPO (solo para ubicación). Consulte la [documentación](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) de Adobe Asset Link para saber si necesita activarla para su perfil de procesamiento. Para obtener más información, consulte la documentación [completa de](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)Adobe Asset Link.
+Para crear un perfil personalizado, siga estos pasos:
 
-## Uso de microservicios de recursos para procesar recursos {#use-asset-microservices}
+1. Los administradores acceden a **[!UICONTROL Herramientas > Recursos > Perfiles]** de procesamiento. Haga clic en **[!UICONTROL Crear]**.
+1. Click on **[!UICONTROL Custom]** tab. Haga clic en **[!UICONTROL Añadir nuevo]**. Proporcione el nombre de archivo que desee para la representación.
+1. Proporcione la siguiente información y haga clic en **[!UICONTROL Guardar]**.
+
+   * Nombre de archivo de cada representación y extensión de archivo admitida.
+   * URL de punto final de una aplicación personalizada de Firefly. La aplicación debe pertenecer a la misma organización que la cuenta de Experience Manager.
+   * Añada los parámetros de servicio según sea necesario.
+   * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
+
+![custom-processing-perfil](assets/custom-processing-profile.png)
+
+>[!CAUTION]
+>
+>Si la aplicación y la cuenta de Firefly no son de la misma organización, la integración no funcionará. [!DNL Experience Manager]
+
+## Uso de perfiles de procesamiento para procesar recursos {#use-profiles}
 
 Cree y aplique los perfiles de procesamiento personalizados adicionales a carpetas específicas para que el Experience Manager pueda procesarlos para los recursos cargados o actualizados en estas carpetas. El perfil de procesamiento estándar predeterminado e integrado siempre se ejecuta, pero no es visible en la interfaz de usuario. Si agrega un perfil personalizado, se utilizan ambos perfiles para procesar los recursos cargados.
 
@@ -138,7 +176,7 @@ Los usuarios pueden comprobar que el procesamiento se ha realizado abriendo un r
 
 En el caso de que sea necesario un procesamiento adicional de los recursos que no se pueda lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo adicionales posteriores al procesamiento a la configuración. Esto permite agregar un procesamiento totalmente personalizado además del procesamiento configurable mediante microservicios de recursos.
 
-Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por AEM una vez finalizado el procesamiento de microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para activarlos. Los ejemplos incluyen:
+Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por AEM una vez finalizado el procesamiento de los microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para activarlos. Los ejemplos incluyen:
 
 * Pasos personalizados del flujo de trabajo para procesar recursos.
 * Integraciones para agregar metadatos o propiedades a recursos de sistemas externos, por ejemplo, información de productos o procesos.
@@ -153,7 +191,7 @@ Añadir una configuración de flujo de trabajo posterior al procesamiento en Exp
 
 ### Crear modelos de flujo de trabajo posteriores al procesamiento {#create-post-processing-workflow-models}
 
-Los modelos de flujo de trabajo posteriores al procesamiento son modelos habituales de flujo de trabajo de AEM. Cree distintos modelos si necesita un procesamiento diferente para diferentes ubicaciones de repositorio o tipos de recursos.
+Los modelos de flujo de trabajo de postprocesamiento son modelos AEM de flujo de trabajo habituales. Cree distintos modelos si necesita un procesamiento diferente para diferentes ubicaciones de repositorio o tipos de recursos.
 
 Los pasos de procesamiento deben agregarse en función de las necesidades. Puede utilizar los pasos admitidos disponibles, así como cualquier paso de flujo de trabajo personalizado.
 
