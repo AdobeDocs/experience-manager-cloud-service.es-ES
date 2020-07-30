@@ -2,10 +2,10 @@
 title: Notas de la versión de 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!Adobe Experience Manager DNL] como Cloud Service Notas de la versión 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 36%
+source-wordcount: '942'
+ht-degree: 35%
 
 ---
 
@@ -55,7 +55,8 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * Introducción a un nuevo componente [de visor de](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)PDF.
 
-* La compatibilidad con las páginas móviles aceleradas (AMP) de los componentes principales ayuda a producir experiencias de cliente más rápidas al hacer que la página se transición de forma instantánea al entrar al sitio desde un resultado de búsqueda móvil de Google, lo que mejora la participación del usuario y la optimización para motores de búsqueda.
+* Ya está disponible la compatibilidad con las páginas móviles aceleradas (AMP) de los componentes principales. Ayuda a producir experiencias de cliente más rápidas al hacer que la página se transición instantáneamente al entrar al sitio desde un resultado de búsqueda móvil de Google, lo que mejora la participación del usuario y la optimización para motores de búsqueda.
+Consulte Compatibilidad con [AMP para los componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) principales para obtener más detalles.
 
 * Compatibilidad con la versión 1.0.2 de la capa [de datos del cliente de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)Adobe.
 
