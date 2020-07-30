@@ -2,7 +2,7 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: db0ea2367e8ecf645694a0f33b9f3b99010ec491
+source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 3%
@@ -27,9 +27,9 @@ El registro en el nivel de aplicación AEM se administra mediante tres registros
 1. Registros de solicitudes HTTP, que registran información sobre solicitudes HTTP y sus respuestas servidas por AEM
 1. Registros de acceso HTTP, que registran información resumida y solicitudes HTTP servidas por AEM
 
-> [!NOTE]
-> 
-> Las solicitudes HTTP que se envían desde la caché de Dispatcher del nivel de publicación o desde la CDN de flujo ascendente no se reflejan en estos registros.
+>[!NOTE]
+>
+>Las solicitudes HTTP que se envían desde la caché de Dispatcher del nivel de publicación o desde la CDN de flujo ascendente no se reflejan en estos registros.
 
 ## Registro de Java AEM {#aem-java-logging}
 
@@ -595,9 +595,9 @@ En la solicitud de soporte, los clientes deben indicar:
 
 Las propiedades anteriores deben especificarse para cada combinación de tipo de programa/entorno pertinente.  Por ejemplo, si un cliente quería entornos de desarrollo, ensayo y producción, debe proporcionar tres conjuntos de información, como se indica a continuación.
 
-> [!NOTE]
+>[!NOTE]
 >
-> No se admite el reenvío de fragmentos para entornos de programa de entorno limitado.
+>No se admite el reenvío de fragmentos para entornos de programa de entorno limitado.
 
 A continuación encontrará una muestra de la solicitud de asistencia al cliente:
 
