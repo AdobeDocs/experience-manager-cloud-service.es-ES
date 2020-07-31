@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ Para crear un perfil de procesamiento estándar, siga estos pasos:
    * Calidad en porcentaje de cada representación JPEG.
    * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
-![proceso-perfiles-adición](assets/processing-profiles-adding.png)
+   ![proceso-perfiles-adición](assets/processing-profiles-adding.png)
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -106,23 +106,22 @@ El siguiente vídeo muestra la utilidad y el uso del perfil estándar.
 
 ## Casos de uso y perfil personalizados {#custom-config}
 
-**Elementos** TBD:
+<!-- **TBD items**:
 
-* Interrelación general con el contenido de extensibilidad.
-* Mencione cómo obtener la dirección URL del trabajador. URL de trabajo para entornos Dev, Stage y Prod.
-* Asignación de menciones de parámetros de servicio. Vínculo al artículo del servicio de cómputo.
-* Revisar desde la perspectiva del flujo compartido en el billete de Jira.
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
-Algunos casos de uso de procesamiento de recursos complejos no se pueden realizar con configuraciones predeterminadas, ya que las necesidades de las organizaciones son diversas. ofertas de Adobe [!DNL Asset Compute Service] para estos casos de uso. Es un servicio ampliable y ampliable para procesar activos digitales. Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos y archivos.
+Algunos casos de uso de procesamiento de recursos complejos no se pueden realizar con configuraciones predeterminadas, ya que las necesidades de las organizaciones son diversas. ofertas de Adobe [!DNL Asset Compute Service] para estos casos de uso. Es un servicio ampliable y ampliable para procesar activos digitales. Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído, metadatos y archivos.
 
-Los desarrolladores pueden utilizar el servicio de cómputo de recursos para crear trabajadores personalizados especializados que se ocupen de casos de uso complejos y predefinidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso:
+Los desarrolladores pueden utilizar el servicio de cómputo de recursos para crear trabajadores personalizados especializados que se ocupen de casos de uso complejos y predefinidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
 
-* Genere etiquetas inteligentes mejoradas personalizadas para recursos digitales mediante Adobe Sensei.
-* Genere una máscara de recorte de un sujeto mediante Adobe Sensei.
-* Recupere la información de metadatos del producto del sistema PIM y convierta los metadatos en parte del binario del recurso durante la ingestión del recurso.
-* Cambie el color de fondo de una imagen transparente mediante [!DNL Adobe Photoshop] API.
-* Retoque una imagen mediante [!DNL Photoshop] API.
-* Enderezar una imagen mediante [!DNL Adobe Lightroom] API.
+* Invoque [!DNL Adobe Photoshop] a la API de corte de imagen y guarde el resultado como representación.
+* Invoque sistemas de terceros para actualizar datos, por ejemplo, un sistema PIM.
+* Utilice [!DNL Photoshop] la API para generar diversas representaciones basadas en la plantilla de Photoshop.
+* Utilice [!DNL Adobe Lightroom] la API para optimizar los recursos ingestados y guardarlos como representaciones.
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Para obtener más información sobre qué paso de flujo de trabajo estándar se 
 ## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
 
 * Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
+* Actualmente, la compatibilidad está limitada a la generación de representaciones. No se admite la generación de recursos nuevos.
