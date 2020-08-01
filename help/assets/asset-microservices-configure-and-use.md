@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2405'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Los microservicios de recursos proporcionan un procesamiento escalable y flexibl
 
 El procesamiento de recursos depende de la configuración de los Perfiles **[!UICONTROL de]** procesamiento, que proporcionan una configuración predeterminada, y permiten al administrador agregar una configuración de procesamiento de recursos más específica. Los administradores pueden crear y mantener las configuraciones de flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de flujos de trabajo permite la extensibilidad y la personalización total.
 
-Los microservicios de recursos permiten procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos listos para usar que los posibles con versiones anteriores de Experience Manager. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
+Los microservicios de recursos le permiten procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos listos para usar que lo que es posible con versiones anteriores de Experience Manager. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Manager permite los siguientes niveles de procesamiento.
 
-| Configuración | Descripción | Casos de uso cubiertos |
+| Opción | Descripción | Casos de uso cubiertos |
 |---|---|---|
-| [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles); previsualización grande (representación web - 1280 px); Metadatos y extracción de texto. |
-| [Configuración estándar](#standard-config) | Configurado por los administradores únicamente mediante la interfaz de usuario. Proporciona más opciones para la generación de representaciones que la configuración predeterminada anterior. | Cambiar el formato y la resolución de las imágenes; generar representaciones de FPO. |
-| [Configuración personalizada](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para invocar trabajadores personalizados que admiten requisitos más complejos. Aprovecha una nube nativa [!DNL Asset Compute Service]. | Consulte casos [de uso](#custom-config)permitidos. |
+| [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles) </li> <li> previsualización grande (representación web - 1280 px) </li><li> Metadatos y extracción de texto.</li></ul> |
+| [Configuración personalizada](#standard-config) | Configurado por los administradores mediante la interfaz de usuario. Proporciona más opciones para la generación de representaciones ampliando la opción predeterminada. Amplíe el programa de trabajo integrado para proporcionar diferentes formatos y representaciones. | <ul><li>Representación de FPO. </li> <li>Cambiar el formato de archivo y la resolución de las imágenes</li> <li> Se aplica condicionalmente a los tipos de archivo configurados. </li> </ul> |
+| [perfil personalizado](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para utilizar código personalizado a través de trabajadores personalizados para invocar [!DNL Asset Compute Service]. Admite requisitos más complejos en un método escalable y nativo de la nube. | Consulte casos [de uso](#custom-config)permitidos. |
 
-Para crear perfiles de procesamiento personalizados específicos de los requisitos personalizados, por ejemplo, para integrarlos con otros sistemas, consulte flujos de trabajo [de](#post-processing-workflows)postprocesamiento.
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## Formatos de archivo compatibles {#supported-file-formats}
 
-Los microservicios de recursos admiten una amplia variedad de formatos de archivo en cuanto a la capacidad de generar representaciones o extraer metadatos. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener la lista completa.
+Los microservicios de recursos admiten una amplia variedad de formatos de archivo para procesar, generar representaciones o extraer metadatos. Consulte los formatos [de archivo](file-format-support.md) admitidos para ver la lista completa de los tipos MIME y la funcionalidad admitida para cada tipo.
 
 ## Configuración predeterminada {#default-config}
 
@@ -65,7 +66,7 @@ Con la configuración predeterminada, solo se configura el perfil de procesamien
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## perfil estándar {#standard-config}
+## Configuración estándar {#standard-config}
 
 [!DNL Experience Manager] ofrece capacidades para generar representaciones más específicas para formatos comunes según las necesidades del usuario. Un administrador puede crear Perfiles [!UICONTROL de] procesamiento adicionales para facilitar la creación de dichas representaciones. A continuación, los usuarios asignan una o varias de las perfiles disponibles a carpetas específicas para realizar el procesamiento adicional. Por ejemplo, el procesamiento adicional puede generar representaciones para web, móvil y tablet. El siguiente vídeo muestra cómo crear y aplicar Perfiles  de procesamiento y cómo acceder a las representaciones creadas.
 
@@ -96,11 +97,14 @@ Para crear un perfil de procesamiento estándar, siga estos pasos:
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-El siguiente vídeo muestra la utilidad y el uso del perfil estándar.
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ El siguiente vídeo muestra la utilidad y el uso del perfil estándar.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-Algunos casos de uso de procesamiento de recursos complejos no se pueden realizar con configuraciones predeterminadas, ya que las necesidades de las organizaciones son diversas. ofertas de Adobe [!DNL Asset Compute Service] para estos casos de uso. Es un servicio ampliable y ampliable para procesar activos digitales. Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído, metadatos y archivos.
+El [!DNL Asset Compute Service] admite una variedad de casos de uso, como el procesamiento predeterminado, el procesamiento de formatos específicos de Adobe como archivos Photoshop y la implementación de un procesamiento personalizado o específico de la organización. La personalización del flujo de trabajo de recursos de actualización de DAM que se requiere en el pasado se gestiona de forma predeterminada o mediante la configuración de perfiles de procesamiento en la interfaz de usuario. Si este procesamiento no satisface las necesidades comerciales, Adobe recomienda desarrollar y utilizar el servicio de cómputo de recursos para ampliar las capacidades predeterminadas.
 
-Los desarrolladores pueden utilizar el servicio de cómputo de recursos para crear trabajadores personalizados especializados que se ocupen de casos de uso complejos y predefinidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
+>[!NOTE]
+>
+>Adobe recomienda utilizar un programa de trabajo personalizado solo cuando la necesidad empresarial no se pueda realizar con las configuraciones predeterminadas o el perfil estándar.
 
-* Invoque [!DNL Adobe Photoshop] a la API de corte de imagen y guarde el resultado como representación.
+Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído, metadatos y archivos.
+
+Los desarrolladores pueden utilizar [!DNL Asset Compute Service] para crear trabajadores personalizados especializados que se ocupen de casos de uso predefinidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
+
+* Utilice [!DNL Adobe Photoshop]la [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout de Adobe y guarde el resultado como representación.
 * Invoque sistemas de terceros para actualizar datos, por ejemplo, un sistema PIM.
 * Utilice [!DNL Photoshop] la API para generar diversas representaciones basadas en la plantilla de Photoshop.
-* Utilice [!DNL Adobe Lightroom] la API para optimizar los recursos ingestados y guardarlos como representaciones.
+* Utilice la API [de Lightroom de](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) Adobe para optimizar los recursos ingestados y guardarlos como representaciones.
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Para crear un perfil personalizado, siga estos pasos:
 
 1. Los administradores acceden a **[!UICONTROL Herramientas > Recursos > Perfiles]** de procesamiento. Haga clic en **[!UICONTROL Crear]**.
 1. Click on **[!UICONTROL Custom]** tab. Haga clic en **[!UICONTROL Añadir nuevo]**. Proporcione el nombre de archivo que desee para la representación.
-1. Proporcione la siguiente información y haga clic en **[!UICONTROL Guardar]**.
+1. Proporcione la siguiente información.
 
    * Nombre de archivo de cada representación y extensión de archivo admitida.
    * URL de punto final de una aplicación personalizada de Firefly. La aplicación debe pertenecer a la misma organización que la cuenta de Experience Manager.
-   * Añada los parámetros de servicio según sea necesario.
+   * Añada Parámetros [!UICONTROL de servicio] para pasar información o parámetros adicionales al programa de trabajo personalizado.
    * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
-![custom-processing-perfil](assets/custom-processing-profile.png)
+   Haga clic en **[!UICONTROL Guardar]**.
 
 >[!CAUTION]
 >
 >Si la aplicación y la cuenta de Firefly no son de la misma organización, la integración no funcionará. [!DNL Experience Manager]
+
+### Ejemplo de un perfil personalizado {#custom-profile-example}
+
+Para ilustrar el uso personalizado del perfil, consideremos un caso de uso para aplicar texto personalizado a las imágenes de campaña. Puede crear un perfil de procesamiento que aproveche la API de Photoshop para editar las imágenes.
+
+La integración del servicio de cómputo de recursos permite al Experience Manager pasar estos parámetros al programa de trabajo personalizado mediante el campo Parámetros  de servicio. A continuación, el trabajador personalizado invoca la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color del texto, el peso del texto y el tamaño del texto para agregar el texto personalizado a las imágenes de campaña.
+
+![custom-processing-perfil](assets/custom-processing-profile.png)
+
+*Figura: Utilice el campo Parámetrosde servicio para pasar información agregada a los parámetros predefinidos generados en el programa de trabajo personalizado.*
+
+Cuando se cargan imágenes de campaña en la carpeta en la que se aplica este perfil de procesamiento, las imágenes se actualizan con `Jumanji` texto en la `Arial-BoldMT` fuente.
 
 ## Uso de perfiles de procesamiento para procesar recursos {#use-profiles}
 
@@ -152,7 +174,7 @@ Cree y aplique los perfiles de procesamiento personalizados adicionales a carpet
 
 Aplique perfiles de procesamiento a las carpetas mediante uno de los siguientes métodos:
 
-* Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Herramientas > Recursos > Perfiles]** de procesamiento y utilizar la acción **[!UICONTROL Aplicar Perfil a carpetas]** . Abre un navegador de contenido que le permite desplazarse a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
+* Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Perfiles **** de procesamiento y utilizar la acción **[!UICONTROL Aplicar Perfil a carpetas]** . Abre un navegador de contenido que le permite desplazarse a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Después de aplicar un perfil de procesamiento a una carpeta, todos los recursos
 >
 >Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, pero se puede sobrescribir con otro perfil aplicado a una subcarpeta. Cuando se cargan recursos en una carpeta, el Experience Manager comprueba si hay un perfil de procesamiento en las propiedades de la carpeta contenedora. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
 
-Los usuarios pueden comprobar que el procesamiento se ha realizado abriendo un recurso recién cargado para el que ha finalizado el procesamiento, abriendo la previsualización de recursos y haciendo clic en la vista **[!UICONTROL Representaciones]** del carril izquierdo. Las representaciones específicas del perfil de procesamiento, para las que el tipo de recurso específico coincide con las reglas de inclusión de tipo MIME, deben ser visibles y accesibles.
+Todas las representaciones generadas están disponibles en la vista [!UICONTROL Representaciones] del carril izquierdo. Abra la previsualización de recursos y abra el carril izquierdo para acceder a la vista **[!UICONTROL Representaciones]** . Las representaciones específicas del perfil de procesamiento, para las que el tipo de recurso específico coincide con las reglas de inclusión de tipo MIME, deben ser visibles y accesibles.
 
 ![representaciones adicionales](assets/renditions-additional-renditions.png)
 
