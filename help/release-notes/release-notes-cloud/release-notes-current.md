@@ -2,10 +2,10 @@
 title: Notas de la versión de 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!Adobe Experience Manager DNL] como Cloud Service Notas de la versión 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '952'
+ht-degree: 38%
 
 ---
 
@@ -31,9 +31,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * Las configuraciones ahora se almacenan en `/conf` lugar de `/etc/cloudsettings` en el repositorio de Experience Manager.
 
 ## Adobe Experience Manager Assets as a Cloud Service {#assets}
-
->[!NOTE]
->Los AEM Assets como Cloud Service se implementarán en los próximos días.
 
 ### Novedades {#what-is-new-assets}
 
@@ -78,7 +75,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 
 * Las canalizaciones de Cloud Manager ahora admiten las variables y los secretos establecidos por el cliente.
 
-   Consulte [Variables](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) de canalización para obtener más detalles.
+   Consulte [Variables de canalización](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) para obtener más detalles.
 
 ### Corrección de errores {#bug-fixes-cm}
 
