@@ -2,10 +2,10 @@
 title: Sitios de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre sitios de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+source-git-commit: 6c2215cdc83aaaf15e9ef9905805d3da10c1e8f6
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ En esta página se muestran los recursos informativos relacionados con Sites de 
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
+| [Guía del usuario de comercio](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM como Cloud Service. |
 
 ## Otros recursos de Experience Manager {#other-resources}
 
