@@ -1,11 +1,11 @@
 ---
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    * Pueden utilizar contenido multimedia asociado seleccionado según relevancia.
    * Pueden crear variaciones de contenido ad hoc al instante garantizando al mismo tiempo que las variaciones siguen administradas de forma centralizada en el fragmento.
 
-## Adición de un fragmento de contenido a la página      {#adding-a-content-fragment-to-your-page}
+## Adición de un fragmento de contenido a la página       {#adding-a-content-fragment-to-your-page}
 
 1. Abra la página para editarla. 
 2. Añada el componente **Fragmento de contenido**, bien desde el navegador **Componentes** o con **Insertar nuevo componente**. 
@@ -73,7 +73,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    >Para obtener más información sobre otras funciones de edición, consulte también:
    >
    >* [Diseño adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >* [Editar el contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Edición del contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selección del elemento o la variación {#selecting-the-element-or-variation}
@@ -82,7 +82,7 @@ Abra el cuadro de diálogo **Configuración** del fragmento para configurar el f
 
 >[!NOTE]
 >
->Consulte también Componentes [principales, el componente Fragmento de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+>Consulte también [los componentes principales y el componente de fragmento de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 En el cuadro de diálogo de configuración adecuado, puede seleccionar los parámetros disponibles, entre los que se incluyen:
 
@@ -106,7 +106,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
    * Atributo de **ID de HTML** que se aplicará al componente.
 
-### Conexión rápida con el editor de fragmentos      {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos       {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md). 
 
@@ -114,7 +114,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Añadir contenido intermedio      {#adding-in-between-content}
+### Añadir contenido intermedio       {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -136,7 +136,7 @@ Para el contenido intermedio puede:
 >
 >También puede [insertar recursos visuales (imágenes) en el propio fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo precedente. Si necesita este nivel de conexión, puede agregar la imagen al fragmento (como un fragmento [de medios](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)mixtos).
+>Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo precedente. Si necesita este nivel de conexión, puede agregar la imagen al fragmento (como un [fragmento de medios mixtos](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
 >
@@ -151,9 +151,9 @@ Por este motivo, es posible que parezca que la posición relativa ha cambiado, y
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 
 
-### Uso de contenido asociado      {#using-associated-content}
+### Uso de contenido asociado       {#using-associated-content}
 
-Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Desde aquí podrá arrastrar los recursos a la ubicación requerida (en un compo
 
 ### Recursos insertados en el fragmento {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+[Si se insertan recursos (p. ej. imágenes) en el fragmento en sí (como fragmentos de medios mixtos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets), las opciones para modificarlos en el editor de páginas son limitadas.
 
 Por ejemplo, para una imagen puede
 
