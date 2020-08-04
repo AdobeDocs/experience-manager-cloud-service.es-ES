@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -146,8 +146,8 @@ Para crear un perfil personalizado, siga estos pasos:
 1. Proporcione la siguiente información.
 
    * Nombre de archivo de cada representación y extensión de archivo admitida.
-   * URL de punto final de una aplicación personalizada de Firefly. La aplicación debe pertenecer a la misma organización que la cuenta de Experience Manager.
-   * Añada Parámetros [!UICONTROL de servicio] para pasar información o parámetros adicionales al programa de trabajo personalizado.
+   * [URL de punto final de una aplicación](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)personalizada de Firefly. La aplicación debe pertenecer a la misma organización que la cuenta de Experience Manager.
+   * Añada Parámetros de servicio para [pasar información o parámetros adicionales al programa de trabajo](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)personalizado.
    * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
    Haga clic en **[!UICONTROL Guardar]**.
