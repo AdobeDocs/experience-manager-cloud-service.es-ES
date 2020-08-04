@@ -2,7 +2,7 @@
 title: Personalizar componentes principales de CIF
 description: Personalizar componentes principales de CIF
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Se requieren las siguientes herramientas y tecnologías:
 * [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
 * [AEM Cloud SKD con complemento CIF](../develop.md)
-* Magento compatible con los componentes principales de CIF
+* Magento compatible con componentes principales de CIF
 
 Se recomienda revisar el siguiente contenido antes de continuar con este tutorial:
 
@@ -352,7 +352,7 @@ Los modelos Sling se implementan como Java y se pueden encontrar en el módulo *
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    Guarde los cambios en `productteaser.html`.
