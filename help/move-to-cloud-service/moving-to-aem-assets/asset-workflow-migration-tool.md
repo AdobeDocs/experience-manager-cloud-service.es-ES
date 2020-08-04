@@ -1,25 +1,38 @@
 ---
-title: Herramienta de migración de flujo de trabajo de recursos
-description: 'Herramienta de migración de flujo de trabajo de recursos '
+title: Herramienta de Migración del flujo de trabajo de recursos
+description: 'Herramienta de Migración del flujo de trabajo de recursos '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 46%
 
 ---
 
 
-# Herramienta de migración de flujo de trabajo de recursos {#asset-workflow-migration}
+# Herramienta de Migración del flujo de trabajo de recursos {#asset-workflow-migration}
 
-La herramienta de migración de flujo de trabajo de recursos se utiliza para migrar automáticamente flujos de trabajo de procesamiento de recursos de implementaciones in situ o AMS de AEM a perfiles de procesamiento y configuraciones OSGi para utilizarlos en AEM Assets como servicio de nube.
+La herramienta de migración del flujo de trabajo de recursos se utiliza para migrar automáticamente los flujos de trabajo de procesamiento de recursos de implementaciones on-premise o AMS de AEM a perfiles de procesamiento y configuraciones OSGi para utilizarlos en AEM Assets as a Cloud Service.
 
 ## Introducción {#introduction}
 
-En esta sección se describen los recursos y los detalles de implementación de la herramienta de migración de flujo de trabajo de recursos.
+En esta sección se describen los recursos y los detalles de implementación de la herramienta de migración del flujo de trabajo de recursos.
 
-Esta utilidad permite a los desarrolladores de AEM migrar flujos de trabajo de procesamiento de recursos de AEM existentes a AEM como un servicio de nube.
+Esta utilidad permite a los desarrolladores de AEM migrar los flujos de trabajo de procesamiento de AEM Assets existentes a AEM as a Cloud Service.
 
-## Instalación de la herramienta de migración de flujo de trabajo de recursos {#installing-tool}
+## flujos de trabajo admitidos {#migration-support-for-workflows}
 
-Consulte Recurso **[Git: Recursos AEM como servicio de nube: migración](https://github.com/adobe/aem-cloud-migration)**de flujo de trabajo para obtener más información sobre la instalación y creación de código desde el origen.
+Los flujos de trabajo tienen distintos niveles de soporte para la migración. Consulte esta [lista de flujos de trabajo](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)específicos. Los flujos de trabajo se clasifican en las siguientes categorías sobre la base del apoyo prestado. Adobe admite la migración de los flujos de trabajo enumerados en `SUPPORTED`, `REQUIRED`o `OPTIONAL` categorías. No se admiten los pasos del flujo de trabajo mencionados en las otras categorías.
+
+* `SUPPORTED`:: Funcionalidad admitida en [!DNL Experience Manager Assets] calidad de Cloud Service.
+* `OPTIONAL`:: Funcionalidad opcional en [!DNL Experience Manager Assets] calidad de Cloud Service.
+* `REQUIRED`:: Un paso requerido que se agrega al flujo de trabajo.
+* `UNNECESSARY`:: La funcionalidad no es necesaria [!DNL Experience Manager Assets] como Cloud Service.
+* `NUI_OOTB`:: Funcionalidad proporcionada por [Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
+* `DMS7_OOTB`:: Funcionalidad proporcionada por los [!DNL Dynamic Media] conectores predeterminados.
+* `NUI_MIGRATED`:: Se ha migrado a un perfil [de procesamiento para el servicio](/help/assets/asset-microservices-configure-and-use.md)de cómputo de recursos.
+* `UNSUPPORTED`:: Actualmente no se admite en [!DNL Experience Manager Assets] como Cloud Service.
+
+## Instalación de la Herramienta de Migración del flujo de trabajo de recursos {#installing-tool}
+
+Consulte el documento **[Recursos de Git: AEM Assets as a Cloud Service: migración del flujo de trabajo](https://github.com/adobe/aem-cloud-migration)**para obtener más información sobre la instalación y la creación de código desde el origen.
