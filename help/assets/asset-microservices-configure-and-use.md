@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Experience Manager permite los siguientes niveles de procesamiento.
 |---|---|---|
 | [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles) </li> <li> previsualización grande (representación web - 1280 px) </li><li> Metadatos y extracción de texto.</li></ul> |
 | [Configuración personalizada](#standard-config) | Configurado por los administradores mediante la interfaz de usuario. Proporciona más opciones para la generación de representaciones ampliando la opción predeterminada. Amplíe el programa de trabajo integrado para proporcionar diferentes formatos y representaciones. | <ul><li>Representación de FPO. </li> <li>Cambiar el formato de archivo y la resolución de las imágenes</li> <li> Se aplica condicionalmente a los tipos de archivo configurados. </li> </ul> |
-| [perfil personalizado](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para utilizar código personalizado a través de trabajadores personalizados para invocar [!DNL Asset Compute Service]. Admite requisitos más complejos en un método escalable y nativo de la nube. | Consulte casos [de uso](#custom-config)permitidos. |
+| [perfil personalizado](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para utilizar código personalizado a través de trabajadores personalizados para invocar el servicio [de cómputo de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)recursos. Admite requisitos más complejos en un método escalable y nativo de la nube. | Consulte casos [de uso](#custom-config)permitidos. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,15 +118,15 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-El [!DNL Asset Compute Service] admite una variedad de casos de uso, como el procesamiento predeterminado, el procesamiento de formatos específicos de Adobe como archivos Photoshop y la implementación de un procesamiento personalizado o específico de la organización. La personalización del flujo de trabajo de recursos de actualización de DAM que se requiere en el pasado se gestiona de forma predeterminada o mediante la configuración de perfiles de procesamiento en la interfaz de usuario. Si este procesamiento no satisface las necesidades comerciales, Adobe recomienda desarrollar y utilizar el servicio de cómputo de recursos para ampliar las capacidades predeterminadas.
+El [!DNL Asset Compute Service] admite una variedad de casos de uso, como el procesamiento predeterminado, el procesamiento de formatos específicos de Adobe como archivos Photoshop y la implementación de un procesamiento personalizado o específico de la organización. La personalización del flujo de trabajo de recursos de actualización de DAM necesaria en el pasado se gestiona automáticamente o mediante la configuración de perfiles de procesamiento. Si estas opciones de procesamiento no satisfacen las necesidades comerciales, Adobe recomienda desarrollar y utilizar [!DNL Asset Compute Service] para ampliar las capacidades predeterminadas. Para obtener información general, consulte [Comprender la extensibilidad y cuándo utilizarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
 >Adobe recomienda utilizar un programa de trabajo personalizado solo cuando la necesidad empresarial no se pueda realizar con las configuraciones predeterminadas o el perfil estándar.
 
-Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído, metadatos y archivos.
+Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos y archivos.
 
-Los desarrolladores pueden utilizar [!DNL Asset Compute Service] para crear trabajadores personalizados especializados que se ocupen de casos de uso predefinidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
+Los desarrolladores pueden usar el [!DNL Asset Compute Service] para [crear trabajadores](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) personalizados que se ocupen de los casos de uso admitidos. [!DNL Experience Manager] Puede invocar a estos trabajadores personalizados desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
 
 * Utilice [!DNL Adobe Photoshop]la [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout de Adobe y guarde el resultado como representación.
 * Invoque sistemas de terceros para actualizar datos, por ejemplo, un sistema PIM.
@@ -238,3 +238,10 @@ Para obtener más información sobre qué paso de flujo de trabajo estándar se 
 
 * Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. En el caso de varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y cargarlos de nuevo.
 * Actualmente, la compatibilidad está limitada a la generación de representaciones. No se admite la generación de recursos nuevos.
+
+>[!MORELIKETHIS]
+>
+>* [Introducción al servicio](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)de cómputo de recursos.
+>* [Comprenda la extensibilidad y cuándo utilizarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
+>* [Cómo crear trabajadores](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)personalizados.
+
