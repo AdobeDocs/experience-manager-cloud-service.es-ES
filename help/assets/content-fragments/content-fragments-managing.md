@@ -2,7 +2,7 @@
 title: Administrar fragmentos de contenido
 description: Los fragmentos de contenido se almacenan como recursos, por lo que se administran principalmente desde la consola Recursos.
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 11%
@@ -131,9 +131,7 @@ Para abrir el fragmento y editarlo:
    >[!NOTE]
    >
    >1. Se mostrará un mensaje cuando ya se haga referencia al fragmento en una página de contenido.
-      >
-      >
-   2. El panel lateral puede ocultarse o mostrarse mediante el icono **Alternar panel** lateral.
+   >2. El panel lateral puede ocultarse o mostrarse mediante el icono **Alternar panel** lateral.
 
 
 3. Navegue por los tres modos utilizando los iconos del panel lateral:
