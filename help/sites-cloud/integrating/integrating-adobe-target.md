@@ -2,7 +2,7 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -14,18 +14,18 @@ ht-degree: 2%
 
 Como parte del Adobe Marketing Cloud, Adobe Target le permite aumentar la relevancia del contenido mediante la determinación de objetivos y la medición en todos los canales. La integración de Adobe Target y AEM como Cloud Service requiere:
 
-* uso de la IU táctil para crear una configuración de Analytics en AEM como Cloud Service (se requiere la configuración de IMS).
+* uso de la IU táctil para crear una configuración de Destinatario en AEM como Cloud Service (se requiere la configuración IMS).
 * agregar y configurar Adobe Target como una extensión en [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Adobe Launch es necesario para administrar las propiedades del cliente tanto para Analytics como para Destinatario en páginas AEM (bibliotecas/etiquetas JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencia a Destinatario solo necesita la Configuración de Adobe Target y el IMS.
+Adobe Launch es necesario para administrar las propiedades del lado del cliente tanto para Analytics como para Destinatario en páginas AEM (bibliotecas/etiquetas de JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencia a Destinatario solo necesita la configuración de Adobe Target y el IMS.
 
 >[!NOTE]
 >
->Adobe Experience Manager como cliente Cloud Service que no tiene una cuenta de Destinatario existente, puede solicitar acceso al Destinatario Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del Destinatario por volumen.
+>Adobe Experience Manager, como cliente Cloud Service que no tiene una cuenta de Destinatario existente, puede solicitar acceso al Destinatario Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del Destinatario por volumen.
 
 ## Creación de la configuración de Adobe Target {#create-configuration}
 
-1. Vaya a **Herramientas** → **Cloud Service**.
+1. Vaya a **Herramientas** → **Cloud Services**.
    ![](assets/cloudservice1.png "NavegaciónNavegación")
 2. Seleccione **Adobe Target**.
 3. Seleccione el botón **Crear** .
@@ -79,7 +79,7 @@ Una propiedad es un contenedor que se rellenará con extensiones, reglas y eleme
 
 ### Añadir las extensiones necesarias {#add-extension}
 
-**Extensiones** es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target admite implementaciones de cliente mediante el uso del SDK de JavaScript de Destinatario para la web moderna, at.js. Debe agregar las extensiones **Adobe Target** y **Adobe de ContextHub** .
+**Extensiones** es el contenedor que administra la configuración de la biblioteca principal. La extensión Adobe Target admite implementaciones de cliente mediante el uso del SDK de JavaScript de Destinatario para la web moderna, at.js. Debe agregar las extensiones **Adobe Target** y **Adobe de ContextHub** .
 
 1. Seleccione la opción Catálogo de extensiones y busque Destinatarios en el filtro.
 2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar.
