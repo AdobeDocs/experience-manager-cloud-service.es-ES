@@ -1,9 +1,9 @@
 ---
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 100%
 
