@@ -1,21 +1,21 @@
 ---
-title: 'Configuración de la canalización de CD/CI: servicios de nube'
-description: 'Configuración de la canalización de CD/CI: servicios de nube'
+title: 'Configuración de la canalización de CD/CI: Cloud Services'
+description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 3%
+source-wordcount: '578'
+ht-degree: 1%
 
 ---
 
 
-# Configuración de la canalización CI-CD {#configure-ci-cd-pipeline}
+# Configuración de la canalización de CI/CD {#configure-ci-cd-pipeline}
 
 
 ## Explicación del flujo {#understanding-the-flow}
 
-Puede configurar la canalización desde el mosaico **Configuración de canalización** en la interfaz de usuario de [!UICONTROL Cloud Manager].
+You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
 
 El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **repositorio** Git.
 
