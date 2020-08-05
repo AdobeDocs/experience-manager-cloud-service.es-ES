@@ -1,6 +1,6 @@
 ---
 title: Notas de la versión de 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
-description: '[!Adobe Experience Manager DNL] como Cloud Service Notas de la versión 2020.7.0.'
+description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.7.0.'
 translation-type: tm+mt
 source-git-commit: de220114d7eb4ac1fcee028890ff029de168d0c3
 workflow-type: tm+mt
@@ -107,9 +107,9 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 
 * [Se puede asignar una dirección](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) IP de salida estática y dedicada para el tráfico de salida programado en código Java, lo cual puede resultar útil para algunas integraciones.
 
-* Se ha transferido AEM interfaz de usuario del servicio en la nube de Analytics de la IU clásica a la nueva interfaz de usuario de AEM. También se ha movido la ubicación del servicio de nube de Analytics en AEM repositorio de `/etc` a `/conf`, para alinearlo con otros AEM cloud services.
+* Se ha trasladado la interfaz de usuario del servicio en la nube de Analytics de AEM Classic a la nueva interfaz de usuario de AEM. También se ha movido la ubicación del servicio en la nube de Analytics en AEM repositorio de `/etc` a `/conf`, para alinearlo con otros servicios en la nube de AEM.
 
-* Se ha transferido AEM interfaz de usuario del servicio de nube de Destinatario de la IU clásica a la nueva interfaz de usuario de AEM. También se ha movido la ubicación del servicio de nube de Destinatario en AEM repositorio de `/etc` a `/conf`, para alinearlo con otros AEM cloud services.
+* Se ha transferido AEM interfaz de usuario del servicio de nube de Destinatario de la IU clásica a la nueva interfaz de usuario de AEM. También se ha movido la ubicación del servicio de nube de Destinatario en AEM repositorio de `/etc` a `/conf`, para alinearlo con otros servicios de nube de AEM.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
