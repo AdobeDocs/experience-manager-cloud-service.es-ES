@@ -2,9 +2,9 @@
 sub-product: Operaciones y mantenimiento en AEM as a Cloud Service
 user-guide-title: Operaciones y mantenimiento en AEM as a Cloud Service
 user-guide-description: Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
 ht-degree: 100%
 
