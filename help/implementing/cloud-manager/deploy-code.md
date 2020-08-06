@@ -2,7 +2,7 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Consulte [Comprender los resultados](/help/implementing/developing/introduction/
    * Auditoría de contenido: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de contenido después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
 Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de la auditoría de contenido para obtener más detalles.
 
-      ![](assets/stage-testing.png)
+      ![](assets/testing-tab.png)
 
 
 
