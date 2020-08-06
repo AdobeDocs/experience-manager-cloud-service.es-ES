@@ -2,7 +2,7 @@
 title: Notas de la versión de 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -34,7 +34,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### Novedades {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] es un servicio ampliable y ampliable para procesar recursos. Los administradores pueden configurar el Experience Manager para que invoque el programa de trabajo personalizado creado con el [!DNL Asset Compute Service]. Los desarrolladores pueden utilizar el servicio para crear trabajadores personalizados especializados que se ocupen de casos de uso complejos. Este servicio Web puede generar miniaturas para diferentes tipos de archivos, representaciones de imágenes de alta calidad a partir de formatos de archivo Adobe, codificar vídeos (futuros), extraer metadatos, extraer texto completo como precursor para la indexación y ejecutar un recurso a través de todos los servicios Sensei disponibles. consulte [Uso de microservicios de recursos y perfiles](/help/assets/asset-microservices-configure-and-use.md)de procesamiento.
+* [!DNL Asset Compute Service] es un servicio ampliable y ampliable para procesar recursos. Los administradores pueden configurar el Experience Manager para que invoque las aplicaciones personalizadas creadas con el [!DNL Asset Compute Service]. Los desarrolladores pueden utilizar el servicio para crear aplicaciones personalizadas especializadas que se ocupen de casos de uso complejos. Este servicio Web puede generar miniaturas para diferentes tipos de archivos, representaciones de imágenes de alta calidad a partir de formatos de archivo Adobe, codificar vídeos (futuros), extraer metadatos, extraer texto completo como precursor para la indexación y ejecutar un recurso a través de todos los servicios Sensei disponibles. consulte [Uso de microservicios de recursos y perfiles](/help/assets/asset-microservices-configure-and-use.md)de procesamiento.
 
 * Se ha mejorado la configuración inicial de [!DNL Dynamic Media] en [!DNL Experience Manager] calidad de Cloud Service para que sea más robusta. Ahora proporciona el progreso de los procesos a los administradores.
 
