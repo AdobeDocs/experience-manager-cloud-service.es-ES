@@ -2,9 +2,9 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '994'
 ht-degree: 3%
 
 ---
@@ -50,8 +50,14 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
       ![](assets/stage-deployment.png)
    La **prueba de fase** incluye los siguientes pasos:
 
-   * Prueba funcional del producto: Las ejecuciones de canalizaciones del Administrador de nube admitirán la ejecución de pruebas que se ejecuten con el entorno de la fase. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
-   * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba funcional del producto: Las ejecuciones de canalizaciones del Administrador de nube admitirán la ejecución de pruebas que se ejecuten con el entorno de la fase.
+Consulte [Comprender los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener detalles sobre el proceso de prueba.
+
+   * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.\
+      Consulte [Comprender los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener detalles sobre el proceso de prueba.
+
+   * Auditoría de contenido: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de contenido después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
+Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de la auditoría de contenido para obtener más detalles.
 
       ![](assets/stage-testing.png)
 
