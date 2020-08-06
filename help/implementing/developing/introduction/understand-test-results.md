@@ -2,7 +2,7 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 4%
@@ -140,9 +140,9 @@ La auditoría de contenido es una función disponible en los canales de producci
 
 Valida el proceso de implementación y ayuda a garantizar que los cambios implementados:
 
-1. Cumplir los estándares de referencia para rendimiento, accesibilidad, optimizaciones, SEO (Optimización de motores de búsqueda) y PWA (Aplicación web progresiva)
+1. Cumplir los estándares de referencia para rendimiento, accesibilidad, optimizaciones, SEO (Optimización de motores de búsqueda) y PWA (Aplicación web progresiva).
 
-1. No incluir regresiones en estas dimensiones
+1. No incluya regresiones en estas dimensiones.
 
 La auditoría de contenido en Cloud Manager garantiza que la experiencia digital de los usuarios finales en el sitio se pueda mantener con los estándares más altos. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
 
@@ -171,10 +171,13 @@ El valor de la métrica Cambio puede ser uno de los siguientes:
 
 * **N/D** : no había ninguna puntuación anterior disponible para comparar
 
+   ![](assets/content-audit-test1.png)
+
 #### Puntuaciones de nivel de página {#page-level-scores}
 
 Al explorar en profundidad cualquiera de las pruebas, se puede ver una puntuación de nivel de página más detallada. El usuario podrá ver cómo las páginas individuales se clasificaron para la prueba específica junto con el cambio de la hora anterior en que se ejecutó la prueba.
 Al hacer clic en Detalles de cualquier página individual se proporcionará información sobre los elementos de la página que se evaluaron y una guía para solucionar problemas si se detectan oportunidades de mejora. Los detalles de las pruebas y las directrices asociadas son proporcionados por Google Lighthouse.
+![](assets/page-level-scores.png)
 
 ## Ejecución de pruebas locales {#local-test-execution}
 
