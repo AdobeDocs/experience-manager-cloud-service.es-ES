@@ -2,10 +2,10 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 2%
+source-wordcount: '772'
+ht-degree: 0%
 
 ---
 
@@ -14,35 +14,31 @@ ht-degree: 2%
 
 En Cloud Manager, hay dos tipos de Canalización:
 
-* **Canalizaciones** de producción:
+* **Canalización** de producción:
 
-   Una canalización de producción solo se puede agregar una vez que se ha creado un entorno de producción y de fase.
+   Una canalización de producción solo se puede agregar una vez que se ha creado un conjunto de entornos de producción y de fase.
 
-   Consulte [Configuración de la canalización](configure-pipeline.md#setting-up-the-pipeline) para obtener más información.
+   Consulte [Configuración de tubería](configure-pipeline.md#setting-up-the-pipeline) de producción para obtener más detalles.
 
-* **Tuberías** no productivas:
+* **Canalización** sin producción:
 
    Se puede añadir una canalización que no sea de producción desde la página **Información general** de la interfaz de usuario del Administrador de nube.
 
    Para obtener más información, consulte [No producción y sólo tuberías](configure-pipeline.md#non-production-pipelines) de calidad de código.
 
-## Explicación del flujo {#understanding-the-flow}
+>[!NOTE]
+>Para configurar la canalización, debe:
+> * defina el activador que hará inicio a la canalización.
+> * defina los parámetros que controlan la implementación de producción.
+> * configure los parámetros de prueba de rendimiento.
 
-Puede configurar la canalización desde el mosaico **Configuración de canalización** en la interfaz de usuario de [!UICONTROL Cloud Manager].
 
-El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **repositorio** Git.
+## Configuración de la canalización de producción {#setting-up-production-pipeline}
 
-Para configurar la canalización, el usuario debe:
+El Administrador de implementación es responsable de configurar la canalización de producción.
 
-* defina el activador que hará inicio a la canalización.
-* defina los parámetros que controlan la implementación de producción.
-* configure los parámetros de prueba de rendimiento.
-
-## Configuración de la canalización {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->La canalización no se puede configurar hasta que se complete la creación de un programa y el repositorio Git tenga al menos una rama.
+>[!NOTE]
+>Una canalización de producción no se puede configurar hasta que se complete la creación de un programa, el repositorio de Git tenga al menos una rama y se cree un conjunto de entornos de producción y fase.
 
 Para poder implementar el código con inicio, debe configurar la configuración de la canalización desde [!UICONTROL Cloud Manager].
 
