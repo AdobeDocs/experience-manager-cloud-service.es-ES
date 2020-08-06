@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -57,11 +57,11 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 1. Aparece la pantalla **Configurar tubería** . Select the branch and click **Next**.
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. Configure las opciones de implementación.
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    Puede definir el activador para el inicio de la canalización:
 
