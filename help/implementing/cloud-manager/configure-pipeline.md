@@ -2,20 +2,28 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
 
 # Configuración de la canalización de CI/CD {#configure-ci-cd-pipeline}
 
+En Cloud Manager, hay dos tipos de Canalización:
+
+* **Canalizaciones**de producción:
+Una canalización de producción solo se puede agregar una vez que se ha creado un entorno de producción y de fase. Consulte [Configuración de la sección Canalización](configure-pipeline.md#setting-up-the-pipeline) para obtener más detalles.
+
+* **Tuberías** no productivas:
+
+   Se puede añadir una canalización que no sea de producción desde la página **Información general** de la interfaz de usuario del Administrador de nube. Para obtener más información, consulte [No producción y sólo tuberías](configure-pipeline.md#non-production-pipelines) de calidad de código.
 
 ## Explicación del flujo {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+Puede configurar la canalización desde el mosaico **Configuración de canalización** en la interfaz de usuario de [!UICONTROL Cloud Manager].
 
 El Administrador de implementación es responsable de configurar la canalización. Al hacerlo, primero se selecciona una rama del **repositorio** Git.
 
@@ -69,16 +77,27 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
 
 
-1. Haga clic en **Siguiente** para acceder a la ficha **Prueba** y definir los criterios de prueba del programa.
+1. La configuración de la canalización de producción incluye una tercera ficha etiquetada como Auditoría **del contenido**.
 
-   ![](assets/set-up-pipeline4.png)
+   Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de contenido. El usuario puede introducir manualmente una ruta URL para incluirla. Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de contenido como opción predeterminada.
 
-1. Haga clic en **Guardar.** La página *Información general* ahora muestra la tarjeta **Implementar Programa** . Haga clic en el botón **Implementar** para implementar el programa.
+   >[!NOTE]
+   > Las páginas configuradas se enviarán al servicio y se evaluarán según las pruebas de rendimiento, accesibilidad, SEO (Optimización de motores de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva).
+
+   Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de auditoría de contenido para obtener más detalles.
+
+   ![](assets/content-audit-1.png)
+
+   Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de contenido. Una vez agregada la ruta, haga clic en **Guardar**.
+
+   ![](assets/content-audit-2.png)
+
+1. Haga clic en **Guardar** en la pantalla **Editar tubería** . La página **Información general** ahora muestra la tarjeta **Implementar Programa** . Haga clic en el botón **Implementar** para implementar el programa.
 
    ![](assets/configure-pipeline5.png)
 
 
-## Tuberías de calidad de código y de no producción
+## Tuberías de calidad de código y de no producción {#non-production-pipelines}
 
 Además de la tubería principal que se despliega en el escenario y la producción, los clientes pueden establecer oleoductos adicionales, denominados **oleoductos** no productivos. Estas tuberías siempre ejecutan los pasos de generación y calidad del código. Opcionalmente, también pueden implementarse en Adobe Managed Services entorno.
 
