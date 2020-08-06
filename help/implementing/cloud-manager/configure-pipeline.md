@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '793'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,11 @@ ht-degree: 2%
 
 En Cloud Manager, hay dos tipos de Canalización:
 
-* **Canalizaciones**de producción:
-Una canalización de producción solo se puede agregar una vez que se ha creado un entorno de producción y de fase.
+* **Canalizaciones** de producción:
 
-   Consulte [Configuración de la sección Canalización](configure-pipeline.md#setting-up-the-pipeline) para obtener más detalles.
+   Una canalización de producción solo se puede agregar una vez que se ha creado un entorno de producción y de fase.
+
+   Consulte [Configuración de la canalización](configure-pipeline.md#setting-up-the-pipeline) para obtener más información.
 
 * **Tuberías** no productivas:
 
@@ -83,6 +84,8 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 1. La configuración de la canalización de producción incluye una tercera ficha etiquetada como Auditoría **del contenido**.
 
+   ![](assets/content-audit-1.png)
+
    Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de contenido. El usuario puede introducir manualmente una ruta URL para incluirla. Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de contenido como opción predeterminada.
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de auditoría de contenido para obtener más detalles.
 
-   ![](assets/content-audit-1.png)
-
    Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de contenido. Una vez agregada la ruta, haga clic en **Guardar**.
+
+   >[!NOTE]
+   >Para activar el paso Auditoría de contenido, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Consulte Problemas [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) conocidos para obtener más detalles.
 
    ![](assets/content-audit2.png)
 
