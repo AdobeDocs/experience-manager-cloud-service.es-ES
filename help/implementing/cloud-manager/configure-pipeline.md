@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -15,11 +15,15 @@ ht-degree: 2%
 En Cloud Manager, hay dos tipos de Canalización:
 
 * **Canalizaciones**de producción:
-Una canalización de producción solo se puede agregar una vez que se ha creado un entorno de producción y de fase. Consulte [Configuración de la sección Canalización](configure-pipeline.md#setting-up-the-pipeline) para obtener más detalles.
+Una canalización de producción solo se puede agregar una vez que se ha creado un entorno de producción y de fase.
+
+   Consulte [Configuración de la sección Canalización](configure-pipeline.md#setting-up-the-pipeline) para obtener más detalles.
 
 * **Tuberías** no productivas:
 
-   Se puede añadir una canalización que no sea de producción desde la página **Información general** de la interfaz de usuario del Administrador de nube. Para obtener más información, consulte [No producción y sólo tuberías](configure-pipeline.md#non-production-pipelines) de calidad de código.
+   Se puede añadir una canalización que no sea de producción desde la página **Información general** de la interfaz de usuario del Administrador de nube.
+
+   Para obtener más información, consulte [No producción y sólo tuberías](configure-pipeline.md#non-production-pipelines) de calidad de código.
 
 ## Explicación del flujo {#understanding-the-flow}
 
@@ -90,7 +94,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de contenido. Una vez agregada la ruta, haga clic en **Guardar**.
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. Haga clic en **Guardar** en la pantalla **Editar tubería** . La página **Información general** ahora muestra la tarjeta **Implementar Programa** . Haga clic en el botón **Implementar** para implementar el programa.
 
