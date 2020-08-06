@@ -2,7 +2,7 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 4%
@@ -176,7 +176,9 @@ El valor de la métrica Cambio puede ser uno de los siguientes:
 #### Puntuaciones de nivel de página {#page-level-scores}
 
 Al explorar en profundidad cualquiera de las pruebas, se puede ver una puntuación de nivel de página más detallada. El usuario podrá ver cómo las páginas individuales se clasificaron para la prueba específica junto con el cambio de la hora anterior en que se ejecutó la prueba.
-Al hacer clic en Detalles de cualquier página individual se proporcionará información sobre los elementos de la página que se evaluaron y una guía para solucionar problemas si se detectan oportunidades de mejora. Los detalles de las pruebas y las directrices asociadas son proporcionados por Google Lighthouse.
+
+Al hacer clic en los detalles de cualquier página individual se proporcionará información sobre los elementos de la página que se evaluaron y una guía para solucionar problemas si se detectan oportunidades de mejora. Los detalles de las pruebas y las directrices asociadas son proporcionados por Google Lighthouse.
+
 ![](assets/page-level-scores.png)
 
 ## Ejecución de pruebas locales {#local-test-execution}
