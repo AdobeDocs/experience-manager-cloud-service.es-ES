@@ -2,9 +2,9 @@
 title: Notas de la versión de 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '494'
 ht-degree: 6%
 
 ---
@@ -67,4 +67,18 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * La ficha Auditoría de contenido muestra incorrectamente la dirección URL base utilizando el dominio de autor en lugar del dominio de publicación.
 
 * Para activar el paso Auditoría de contenido, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Si no se agrega ninguna página, se auditará la página principal.
+
+## Herramienta de transferencia de contenido {#content-transfer-tool}
+
+Siga esta sección para conocer las novedades y las actualizaciones de la versión v1.0.4 de la herramienta de transferencia de contenido.
+
+### Novedades {#what-is-new-ctt}
+
+* La herramienta de transferencia de contenido ahora es compatible con Shared S3 DataStore.
+
+### Corrección de errores {#ctt-bug-fixes}
+
+* Se han agregado tiempos de espera adicionales para que la herramienta complete las acciones.
+
+* La IU de la versión anterior a veces mostraba una extracción correcta aunque el registro mostraba errores.
 
