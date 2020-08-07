@@ -4,7 +4,7 @@ description: Aprenda a configurar [!DNL Adobe Experience Manager] los complement
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
 source-wordcount: '4301'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Para obtener más información sobre las demás configuraciones de RTE, consulte
 
 >[!NOTE]
 >
->Al trabajar con CRXDE Lite, se recomienda guardar los cambios de forma regular mediante la opción [!UICONTROL Guardar todo] .
+>Cuando trabaje con CRXDE Lite, se recomienda guardar los cambios de forma regular mediante la opción [!UICONTROL Guardar todo] .
 
 ## Activar un complemento y configurar la propiedad features {#activateplugin}
 
@@ -32,7 +32,7 @@ De forma predeterminada, `format`, `link`, `list`, `justify``control` y todos su
 >
 >El `rtePlugins` nodo respectivo se denomina `<rtePlugins-node>` para evitar la duplicación en este artículo.
 
-1. Con CRXDE Lite, busque el componente de texto para su proyecto.
+1. Con CRXDE Lite, busque el componente de texto para el proyecto.
 1. Cree el nodo principal de `<rtePlugins-node>` si no existe, antes de configurar los complementos RTE:
 
    * Según el componente, los nodos principales son:
@@ -63,7 +63,7 @@ Después de activar un complemento, siga estas instrucciones para configurar la 
 |  | Habilitar todas las funciones | Habilite algunas funciones específicas. | Desactive todas las funciones. |
 |---|---|---|---|
 | Nombre | características | características | características |
-| Tipo | Cadena | `String` (multi-string; definir Tipo `String` y hacer clic `Multi` en CRXDE Lite) | Cadena |
+| Tipo | Cadena | `String` (multi-string; definir Tipo en `String` y hacer clic `Multi` en CRXDE Lite) | Cadena |
 | Value | `*` (un asterisco) | Se establece en uno o varios valores de función. | - |
 
 ## Comprender el complemento Findreplace {#findreplace}
@@ -641,7 +641,7 @@ Puede definir la altura del espacio editable que se muestra en el cuadro de diá
 
 Al agregar vínculos en [!DNL Experience Manager], puede definir los estilos CSS que se utilizarán y los protocolos que se aceptarán automáticamente. Para configurar cómo se agregan vínculos [!DNL Experience Manager] desde otro programa, defina las reglas HTML.
 
-1. Con CRXDE Lite, busque el componente de texto para su proyecto.
+1. Con CRXDE Lite, busque el componente de texto para el proyecto.
 1. Cree un nodo en el mismo nivel que `<rtePlugins-node>`, es decir, cree el nodo en el nodo principal de `<rtePlugins-node>`:
 
    * **Nombre** `htmlRules`
@@ -705,8 +705,8 @@ Al agregar vínculos en [!DNL Experience Manager], puede definir los estilos CSS
 
          * **Nombre** `targetInternal`
          * **Tipo** `String`
-         * **Valor** del destinatario para los vínculos internos (solo se utiliza cuando el &quot;modo es `auto`)
-      * destinatario para vínculos externos:
+         * **Valor** del destinatario para los vínculos internos (solo se utiliza cuando el modo es `auto`)
+      * Destinatario para vínculos externos:
 
          * **Nombre** `targetExternal`
          * **Tipo** `String`
