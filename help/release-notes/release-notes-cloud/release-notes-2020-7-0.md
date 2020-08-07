@@ -2,7 +2,7 @@
 title: Notas de la versión de 2020.7.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.7.0.'
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -43,6 +43,14 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * Los pasos de flujo de trabajo que no son compatibles con una implementación de Cloud Service ahora se marcan con una advertencia en el editor de modelos [!UICONTROL de] flujo de trabajo. Además, al ejecutar los flujos de trabajo existentes en el entorno de Cloud Service, se omiten los pasos de flujo de trabajo incompatibles.
 
 * Los modelos de flujo de trabajo creados por clientes implementados `/conf/global` en el proyecto Git asociado con el entorno en Cloud Manager se implementan automáticamente en `/var` y, por lo tanto, están disponibles en Experience Manager. Los modelos de flujo de trabajo de productos en los `/libs` que el cliente cambió no se implementan automáticamente en `/var`.
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Novedades {#what-is-new-commerce}
+
+AEM Comercio ahora está disponible en Cloud Service.
+
+Consulte [Introducción a AEM comercio como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) para obtener más información.
 
 ## Componentes principales {#core-components}
 
@@ -110,14 +118,6 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 * Se ha trasladado la interfaz de usuario del servicio en la nube de Analytics de AEM Classic a la nueva interfaz de usuario de AEM. También se ha movido la ubicación del servicio en la nube de Analytics en AEM repositorio de `/etc` a `/conf`, para alinearlo con otros servicios en la nube de AEM.
 
 * Se ha transferido AEM interfaz de usuario del servicio de nube de Destinatario de la IU clásica a la nueva interfaz de usuario de AEM. También se ha movido la ubicación del servicio de nube de Destinatario en AEM repositorio de `/etc` a `/conf`, para alinearlo con otros servicios de nube de AEM.
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### Novedades {#what-is-new-commerce}
-
-AEM Comercio ahora está disponible en Cloud Service.
-
-Consulte [Introducción a AEM comercio como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) para obtener más información.
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
