@@ -1,17 +1,17 @@
 ---
-title: 'API de recursos para administración de recursos digitales en Adobe Experience Manager como Cloud Service '
+title: 'API de recursos para la administración de recursos digitales en Adobe Experience Manager como Cloud Service '
 description: Las API de recursos permiten operaciones básicas de creación, lectura, actualización y eliminación (CRUD) para administrar recursos, incluidos binarios, metadatos, representaciones, comentarios y fragmentos de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
 
 
-# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
+# Recursos como API de Cloud Service {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -30,7 +30,7 @@ Experience Manager como servicio de nube ofrece una nueva forma de cargar recurs
 El algoritmo de alto nivel para cargar un binario es:
 
 1. Envíe una solicitud HTTP informando a AEM de la intención de cargar un nuevo binario.
-1. Publique el contenido del binario en uno o más URI proporcionados por la solicitud de inicio.
+1. POST el contenido del binario a uno o más URI proporcionados por la solicitud de inicio.
 1. Envíe una solicitud HTTP para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
@@ -48,11 +48,7 @@ Este método debería proporcionar una gestión más escalable y eficaz de las c
 
 ### Iniciar carga {#initiate-upload}
 
-El primer paso es enviar una solicitud HTTP POST a la carpeta en la que se debe crear o actualizar el recurso; incluya el selector `.initiateUpload.json` para indicar que la solicitud debe comenzar una carga binaria. Por ejemplo, la ruta a la carpeta en la que se debe crear el recurso es `/assets/folder`:
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+El primer paso es enviar una solicitud de POST HTTP a la carpeta en la que se debe crear o actualizar el recurso; incluya el selector `.initiateUpload.json` para indicar que la solicitud debe comenzar una carga binaria. Por ejemplo, la ruta a la carpeta en la que se debe crear el recurso es `/assets/folder`. La solicitud del POST es `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
 El tipo de contenido del cuerpo de la solicitud deben ser datos `application/x-www-form-urlencoded` de formulario, que contengan los campos siguientes:
 
@@ -61,7 +57,7 @@ El tipo de contenido del cuerpo de la solicitud deben ser datos `application/x-w
 
 Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, siempre que cada binario contenga los campos obligatorios. Si se realiza correctamente, la solicitud responde con un código `201` de estado y un cuerpo que contiene datos JSON en el siguiente formato:
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
@@ -95,14 +91,14 @@ El resultado del inicio de una carga incluirá uno o varios valores de URI de ca
 Una forma posible de lograrlo es calcular el tamaño de la pieza en función del número de URI de carga proporcionados por la API. Ejemplo suponiendo que el tamaño total del binario es de 20.000 bytes y el número de URI de carga es de 2:
 
 * Calcule el tamaño de la pieza dividiendo el tamaño total por el número de URI: 20.000 / 2 = 10.000
-* Intervalo de bytes POST 0-9,999 del binario al primer URI en la lista de URI de carga
-* Intervalo de bytes POST 10.000 - 19.999 del binario al segundo URI en la lista de URI de carga
+* Intervalo de bytes del POST 0-9,999 del binario al primer URI en la lista de URI de carga
+* Intervalo de bytes del POST 10.000 - 19.999 del binario al segundo URI en la lista de URI de carga
 
 Si se realiza correctamente, el servidor responde a cada solicitud con un código `201` de estado.
 
 ### Carga completa {#complete-upload}
 
-Una vez cargadas todas las partes de un archivo binario, envíe una solicitud HTTP POST al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser datos `application/x-www-form-urlencoded` de formulario, que contengan los campos siguientes.
+Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de POST HTTP al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser datos `application/x-www-form-urlencoded` de formulario, que contengan los campos siguientes.
 
 | Fields | Tipo | Obligatorio o no | Descripción |
 |---|---|---|---|
@@ -144,7 +140,7 @@ Para Adobe Experience Manager como Cloud Service solo se admiten las nuevas API 
 * [Herramienta](https://github.com/adobe/aio-cli-plugin-aem)de línea de comandos de código abierto.
 
 
-## flujos de trabajo de procesamiento y postprocesamiento de recursos {#post-processing-workflows}
+## Flujos de trabajo de procesamiento y postprocesamiento de recursos {#post-processing-workflows}
 
 En Experience Manager, el procesamiento de recursos se basa en la configuración **[!UICONTROL de Perfiles]** de procesamiento que utiliza [los microservicios](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de recursos. El procesamiento no requiere extensiones de desarrollador.
 
