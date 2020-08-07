@@ -2,9 +2,9 @@
 title: Notas de la versión de 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 6%
 
 ---
@@ -48,7 +48,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * En algunos casos, las ejecuciones de los trámites terminados no se registraban correctamente por haberse completado, lo que impedía la ejecución de los nuevos trámites.
 
-* Ocasionalmente, las ejecuciones por tuberías se quedaban &quot;atascadas&quot; debido a problemas de comunicación interna.
+* Ocasionalmente, las ejecuciones por tuberías se *quedaban atascadas* debido a problemas de comunicación interna.
 
 * Al aprovisionar una nueva organización, a algunos usuarios con funciones administrativas distintas de los administradores del sistema se les daba acceso erróneamente a Cloud Manager.
 
@@ -58,7 +58,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * La interfaz de usuario permitía erróneamente que las operaciones se intentaran en un entorno mientras se eliminaba.
 
-* Hubo una discordancia de color en la página de información general.
+* Hubo una discordancia de color en la página **Información general** del Administrador de nube.
 
 ### Problemas conocidos {#known-issues-cm}
 
