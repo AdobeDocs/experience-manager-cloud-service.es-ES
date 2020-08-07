@@ -2,10 +2,10 @@
 title: AEM comercio como Cloud Service
 description: AEM Comercio como Cloud Service de recursos de autoayuda y vínculos de documentación
 translation-type: tm+mt
-source-git-commit: db2e6745f73ad95fe7e5a01945e95a386dc9e95f
+source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 84%
+source-wordcount: '362'
+ht-degree: 82%
 
 ---
 
@@ -41,7 +41,7 @@ Esta página lista los recursos de autoayuda relacionados con AEM comercio como 
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentación de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
 * [Documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [Documentación de Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Documentación de Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Preparación para el RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
