@@ -3,9 +3,9 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1476'
 ht-degree: 1%
 
 ---
@@ -68,16 +68,18 @@ Las carpetas son como directorios en sistemas de archivos tradicionales. Son con
 En [!DNL Experience Manager] un recurso contiene los siguientes elementos:
 
 * Propiedades y metadatos del recurso.
-* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo o páginas extraídas de archivos PDF o Adobe InDesign.
+* Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o Adobe InDesign.
 * Comentarios opcionales.
 
-Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md).
+Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de Recursos Experience Manager.
 
 En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
 * Entidades: Los hijos de los activos son sus representaciones.
 * Propiedades.
 * Vínculos.
+
+## Funciones disponibles {#available-features}
 
 La API HTTP de Assets incluye las siguientes funciones:
 
