@@ -2,9 +2,9 @@
 title: Proyecto de aplicación AEM - Cloud Service
 description: Proyecto de aplicación AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1406'
 ht-degree: 9%
 
 ---
@@ -48,7 +48,7 @@ Para poder compilar e implementar correctamente con Cloud Manager, los proyectos
 * Puede agregar referencias a repositorios de artefactos Maven adicionales en los archivos *pom.xml* . El acceso a repositorios [de artefactos protegidos con](#password-protected-maven-repositories) contraseña se admite cuando se configura. Sin embargo, no se admite el acceso a repositorios de artefactos protegidos por la red.
 * Los paquetes de contenido implementable se descubren mediante la búsqueda de archivos *zip* del paquete de contenido que se encuentran en un directorio denominado *destinatario*. Cualquier número de submódulos puede producir paquetes de contenido.
 
-* Los artefactos de Dispatcher implementables se descubren mediante la búsqueda de archivos *zip* (nuevamente, contenidos en un directorio llamado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
+* Los artefactos de Dispatcher implementables se detectan mediante el análisis de archivos *zip* (nuevamente, contenidos en un directorio denominado *destinatario*) que tienen directorios llamados *conf* y *conf.d*.
 
 * Si hay más de un paquete de contenido, no se garantiza el orden de las implementaciones de paquetes. Si se necesita un orden específico, se pueden usar dependencias de paquetes de contenido para definir el orden. Es posible que los paquetes se [omitan](#skipping-content-packages) de la implementación.
 
@@ -59,7 +59,6 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 
 * El entorno de compilación está basado en Linux, derivado de Ubuntu 18.04.
 * Se ha instalado Apache Maven 3.6.0.
-* La versión de Java instaló Oracle JDK 8u202 y 11.0.2.
 * Hay algunos paquetes de sistema adicionales instalados que son necesarios:
 
    * bzip2
@@ -77,7 +76,7 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 >Aunque Cloud Manager no define una versión específica del `jacoco-maven-plugin`, la versión utilizada debe ser al menos `0.7.5.201505241946`.
 
 
-## Variables de Entorno {#environment-variables}
+## Variables de entorno {#environment-variables}
 
 ### Variables de Entorno estándar {#standard-environ-variables}
 
@@ -135,7 +134,7 @@ Cuando se utiliza dentro de un `Maven pom.xml` archivo, generalmente resulta út
 
 En algunos casos limitados, es posible que deba variar ligeramente el proceso de compilación al ejecutarse dentro de Cloud Manager, en lugar de hacerlo en estaciones de trabajo para desarrolladores. En estos casos, los Perfiles [](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) Maven se pueden usar para definir cómo la compilación debe ser diferente en diferentes entornos, incluido Cloud Manager.
 
-La Activación de un Perfil Maven dentro del entorno de compilación de Cloud Manager debe realizarse buscando la variable de entorno CM_BUILD descrita anteriormente. Por el contrario, un perfil que se pretenda usar solamente fuera del entorno de compilación de Cloud Manager debería realizarse buscando la ausencia de esta variable.
+La activación de un Perfil Maven dentro del entorno de compilación de Cloud Manager debe realizarse buscando la variable de entorno CM_BUILD descrita anteriormente. Por el contrario, un perfil que se pretenda usar solamente fuera del entorno de compilación de Cloud Manager debería realizarse buscando la ausencia de esta variable.
 
 Por ejemplo, si desea enviar un mensaje sencillo solo cuando la compilación se ejecute dentro de Cloud Manager, puede hacer lo siguiente:
 
