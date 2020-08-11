@@ -2,7 +2,7 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 # Comprender los resultados de la prueba {#understand-test-results}
 
 Las ejecuciones de canalizaciones de Cloud Manager para Cloud Services admitirán la ejecución de pruebas que se ejecuten con el entorno de ensayo. Esto contrasta con las pruebas que se ejecutan durante el paso Generar y Prueba de unidades que se ejecutan sin conexión, sin acceso a ningún entorno de AEM en ejecución.
-Existen dos tipos de pruebas ejecutadas en este contexto:
+Existen tres tipos de pruebas ejecutadas en este contexto:
 * Pruebas escritas por el cliente
 * Pruebas escritas en Adobe
 * Herramienta de código abierto con Lighthouse de Google
@@ -150,12 +150,12 @@ La auditoría de contenido en Cloud Manager garantiza que la experiencia digital
 
 La auditoría de contenido proporciona resultados de prueba acumulados y detallados a nivel de página a través de la página de ejecución de la tubería de producción.
 
-* Las métricas de nivel Acumulado miden la puntuación promedio en las páginas que fueron auditadas.
+* Las métricas de nivel acumulado miden la puntuación promedio en las páginas que fueron auditadas.
 * Las puntuaciones de nivel de página individuales también están disponibles mediante el desglose.
 * Los detalles de las puntuaciones están disponibles para ver cuáles son los resultados de las pruebas individuales, junto con la guía sobre cómo solucionar cualquier problema que se identificó durante la auditoría de contenido.
 * Dentro del Administrador de nube se conserva un historial de los resultados de la prueba para que los clientes puedan ver si los cambios que se introducen en la ejecución de la canalización incluyen alguna regresión de la ejecución anterior.
 
-#### Puntuaciones Acumuladas {#aggregate-scores}
+#### Puntuaciones acumuladas {#aggregate-scores}
 
 Hay una puntuación de nivel acumulada para cada tipo de prueba (rendimiento, accesibilidad, SEO, prácticas recomendadas y PWA).
 
