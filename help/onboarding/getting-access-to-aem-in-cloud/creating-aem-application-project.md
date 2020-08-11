@@ -2,9 +2,9 @@
 title: Proyecto de aplicación AEM - Cloud Service
 description: Proyecto de aplicación AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 32f2581e4aee93da7aac73b49a87cd5202dd4417
+source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1442'
 ht-degree: 9%
 
 ---
@@ -210,7 +210,7 @@ Y si desea enviar un mensaje sencillo solo cuando la compilación se ejecute fue
 
 ## Compatibilidad con repositorio Maven protegido por contraseña {#password-protected-maven-repositories}
 
-Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como una variable [secreta de](#pipeline-variables) canalización y, a continuación, haga referencia a ese secreto dentro de un archivo denominado `.cloudmanager/maven/settings.xml` en el repositorio git. Este archivo sigue el esquema [Maven Settings File](https://maven.apache.org/settings.html) . Cuando el administrador de nube genera inicios de proceso, el `<servers>` elemento de este archivo se combina en el archivo `settings.xml` predeterminado proporcionado por Cloud Manager. Los ID de servidor que comienzan con `adobe` y `cloud-manager` se consideran reservados y no deben ser utilizados por servidores personalizados. Con este archivo en su lugar, se haría referencia a la identificación del servidor desde dentro de un elemento `<repository>` y/o `<pluginRepository>` dentro del `pom.xml` archivo. Por lo general, estos `<repository>` y/o `<pluginRepository>` elementos se contendrían dentro de un perfil [específico del Administrador de](#activating-maven-profiles-in-cloud-manager)nube, aunque esto no es estrictamente necesario.
+Para utilizar un repositorio Maven protegido por contraseña de Cloud Manager, especifique la contraseña (y, opcionalmente, el nombre de usuario) como una variable [secreta de](#pipeline-variables) canalización y, a continuación, haga referencia a ese secreto dentro de un archivo denominado `.cloudmanager/maven/settings.xml` en el repositorio git. Este archivo sigue el esquema [Maven Settings File](https://maven.apache.org/settings.html) . Cuando el administrador de nube genera inicios de proceso, el `<servers>` elemento de este archivo se combina en el archivo `settings.xml` predeterminado proporcionado por Cloud Manager. Los ID de servidor que comienzan con `adobe` y `cloud-manager` se consideran reservados y no deben ser utilizados por servidores personalizados. Los ID de servidor que **no** coincidan con uno de estos prefijos o el ID predeterminado nunca `central` será reflejado por Cloud Manager. Con este archivo en su lugar, se haría referencia a la identificación del servidor desde dentro de un elemento `<repository>` y/o `<pluginRepository>` dentro del `pom.xml` archivo. Por lo general, estos `<repository>` y/o `<pluginRepository>` elementos se contendrían dentro de un perfil [específico del Administrador de](#activating-maven-profiles-in-cloud-manager)nube, aunque esto no es estrictamente necesario.
 
 Por ejemplo, supongamos que el repositorio se encuentra en https://repository.myco.com/maven2, el nombre de usuario Cloud Manager debe utilizarse `cloudmanager` y la contraseña es `secretword`.
 
