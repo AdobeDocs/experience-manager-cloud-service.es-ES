@@ -1,11 +1,11 @@
 ---
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
-translation-type: ht
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
-workflow-type: ht
-source-wordcount: '1538'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -62,13 +62,21 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Tiempo de activación**
 
-   * La fecha y hora a la que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta la hora especificada.
-   * Deje vacíos estos campos para las páginas que desee publicar inmediatamente (el caso normal).
+   * La fecha y la hora a las que la página publicada estará visible (representada) en el entorno de publicación. La página debe publicarse de forma manual o mediante replicación automática preconfigurada.
+
+      >[!NOTE]
+      >
+      > Consulte [Tiempo de activación y Tiempo de inactividad: Configuración](/help/operations/replication.md#on-and-off-times-trigger-configuration) del activador para obtener detalles sobre cómo configurar la replicación automática relacionada.
+
+      * Si ya se ha [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , esta página se mantendrá inactiva (oculta) hasta que se procese a la hora especificada.
+      * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
+      * Si no se publica y no se configura para la replicación automática, la página no se publicará automáticamente, por lo que se verá un 404 cuando se intente acceder a la página.
+   * Deje vacíos estos campos (**Tiempo** de activación y Tiempo de **desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
 * **Tiempo de inactividad**
 
-   * La hora a la que se desactivará la página publicada.
-   * Deje estos campos vacíos para una acción inmediata.
+   * En paralelo a **Tiempo** de activación, define la hora a la que la página publicada se ocultará en el entorno de publicación.
+   * Deje vacíos estos campos (**Tiempo** de activación y Tiempo de **desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
 * **URL de vanidad**
 
