@@ -2,9 +2,9 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
+source-wordcount: '1614'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Estas pruebas pueden ser:
 
 * Escrito por el cliente
 * Escrito en Adobe
-* Herramienta de código abierto con Lighthouse de Google
+* Equipado con Lighthouse de Google como herramienta de código abierto
 
    >[!NOTE]
    > Tanto las pruebas escritas por el cliente como las pruebas por Adobe se ejecutan en una infraestructura de contenedores diseñada para ejecutar estos tipos de pruebas.
@@ -89,6 +89,9 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 >[!NOTE]
 >
 >Si bien es recomendable que la anotación sea lo más específica posible, es decir, que solo haga una anotación de la sentencia o bloque específico que causa el problema, es posible realizar anotaciones a nivel de clase. `@SuppressWarnings`
+
+>[!NOTE]
+>Aunque no hay un paso explícito de la prueba de seguridad, todavía hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte Información general [de seguridad para AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más detalles.
 
 ## Prueba funcional {#functional-testing}
 
