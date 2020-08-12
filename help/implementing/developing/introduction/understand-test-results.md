@@ -2,9 +2,9 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
+source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1596'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Estas pruebas pueden ser:
 
 * Escrito por el cliente
 * Escrito en Adobe
-* Equipado con Lighthouse de Google como herramienta de código abierto
+* Herramienta de código abierto (con tecnología Lighthouse de Google)
 
    >[!NOTE]
    > Tanto las pruebas escritas por el cliente como las pruebas por Adobe se ejecutan en una infraestructura de contenedores diseñada para ejecutar estos tipos de pruebas.
