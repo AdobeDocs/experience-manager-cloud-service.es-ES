@@ -1,12 +1,12 @@
 ---
-title: Gestión de recursos digitales en Experience Manager
+title: Administración de recursos digitales en Experience Manager
 description: Obtenga información sobre varios métodos de edición y administración de recursos.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
+source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
 workflow-type: tm+mt
-source-wordcount: '4419'
+source-wordcount: '4435'
 ht-degree: 12%
 
 ---
@@ -14,16 +14,16 @@ ht-degree: 12%
 
 # Manage assets {#manage-assets}
 
-En este artículo se describe cómo administrar y editar recursos en Recursos Adobe Experience Manager. Para administrar fragmentos de contenido, consulte Recursos de fragmentos [de contenido](content-fragments/content-fragments.md) .
+En este artículo se describe cómo administrar y editar recursos en Adobe Experience Manager Assets. Para administrar fragmentos de contenido, consulte Recursos de fragmentos [de contenido](content-fragments/content-fragments.md) .
 
 ## Crear carpetas {#creating-folders}
 
-Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágenes, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. Recursos AEM no requiere que organice los recursos en carpetas para que funcionen mejor.
+Al organizar una colección de recursos, por ejemplo, todas `Nature` las imágenes, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. AEM Assets no requiere que organice los recursos en carpetas para que funcionen mejor.
 
 >[!NOTE]
 >
 >* Compartir una carpeta de recursos del tipo `sling:OrderedFolder`, no se admite al compartir en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
->* Experience Manager no permite usar `subassets` palabras como nombre de una carpeta. Es una palabra clave reservada para nodos que contienen subrecursos para recursos compuestos
+>* Experience Manager no permite usar `subassets` palabra como nombre de una carpeta. Es una palabra clave reservada para nodos que contienen subrecursos para recursos compuestos
 
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una nueva carpeta. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.
@@ -43,15 +43,24 @@ Consulte [Adición de recursos digitales a Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un usuario de DAM carga uno o varios recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y lo notifica al usuario. La detección de Duplicados está deshabilitada de forma predeterminada, ya que puede afectar al rendimiento en función del tamaño del repositorio y del número de recursos cargados. Para activar la función, configure el detector de duplicación de recursos de Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
+Si un usuario de DAM carga uno o varios recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y lo notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede afectar al rendimiento en función del tamaño del repositorio y del número de recursos cargados. Para habilitar la función, configure el detector [!UICONTROL de duplicación de recursos de]Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
 
 ![Detectar la configuración OSGi del recurso de duplicado](assets/duplicate-detection.png)
 
-Una vez habilitada, Experience Manager envía notificaciones de recursos de duplicado a la bandeja de entrada. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
+Puede agregar el archivo de configuración `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` en código personalizado y el archivo puede contener lo siguiente:
+
+```json
+{
+  "enabled":true,
+  "detectMetadataField":"dam:sha1"
+}
+```
+
+Una vez habilitada, el Experience Manager envía notificaciones de los recursos de duplicado a la bandeja de entrada. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
 
 ![Notificación de bandeja de entrada para recursos de duplicado](assets/duplicate-detect-inbox-notification.png)
 
-## Recursos de Previsualización {#previewing-assets}
+## Recursos de previsualización {#previewing-assets}
 
 Para realizar la previsualización de un recurso, siga estos pasos.
 
@@ -104,7 +113,7 @@ Para realizar la previsualización de un recurso, siga estos pasos.
 
    Para obtener más información, consulte Perspectivas [de recursos](assets-insights.md).
 
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
+1. Tap/click **[!UICONTROL Save &amp; Close]**.
 
 1. Vaya a la interfaz de usuario de Recursos. Las propiedades de metadatos editadas, incluido el título, la descripción y las etiquetas, se muestran en la tarjeta del recurso en la vista de tarjetas y en las columnas relevantes de la vista de Lista.
 
@@ -130,7 +139,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    >[!NOTE]
    >
-   >Si copia un recurso en la misma ubicación, AEM genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con título `Square`, AEM genera automáticamente el título de su copia como `Square1`.
+   >Si copia un recurso en la misma ubicación, AEM genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con título `Square`, AEM automáticamente genera el título de su copia como `Square1`.
 
 1. Haga clic en el icono **[!UICONTROL Pegar]** recurso de la barra de herramientas. Los recursos se copian en esta ubicación.
 
@@ -194,7 +203,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
 
    >[!NOTE]
    >
-   >De forma predeterminada, Recursos AEM no muestra la representación original del recurso en el modo de previsualización. Si es un administrador, puede utilizar superposiciones para configurar Recursos AEM para que muestren las representaciones originales en el modo de previsualización.
+   >De forma predeterminada, AEM Assets no muestra la representación original del recurso en el modo de previsualización. Si es administrador, puede utilizar las superposiciones para configurar AEM Assets para que muestre las representaciones originales en el modo de previsualización.
 
 1. Seleccione una representación para vista o eliminarla.
 
@@ -214,7 +223,7 @@ El resto de las propiedades y la información de metadatos se conservan. No se c
    >
    >Si selecciona una representación en el panel **[!UICONTROL Representaciones]**, la barra de herramientas cambia de contexto y muestra solo las acciones que son relevantes para la representación. Las opciones, como el icono Cargar representación, no se muestran. Para ver estas opciones en la barra de herramientas, vaya a la página de detalles del recurso.
 
-   Puede configurar las dimensiones de la representación que desee mostrar en la página de detalles de un recurso de vídeo o imagen. En función de las dimensiones que especifique, Recursos AEM muestra la representación con las dimensiones exactas o más cercanas.
+   Puede configurar las dimensiones de la representación que desee mostrar en la página de detalles de un recurso de vídeo o imagen. En función de las dimensiones que especifique, AEM Assets muestra la representación con las dimensiones exactas o más cercanas.
 
    Para configurar las dimensiones de representación de una imagen en el nivel de detalle del recurso, superponga el `renditionpicker` nodo (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) y configure el valor de la propiedad de anchura. Configure el **[!UICONTROL tamaño de la propiedad (Long) en KB]** en lugar de la anchura para personalizar la representación en la página de detalles del recurso según el tamaño de la imagen. En el caso de la personalización basada en el tamaño, la propiedad `preferOriginal` asigna preferencia al original si el tamaño de la representación coincidente es mayor que el del original.
 
@@ -332,7 +341,7 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
    >Si no especifica la ruta a una página de inicio de sesión, AEM muestra la página de inicio de sesión predeterminada en la instancia de publicación.
 
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Aparece una pantalla de inicio de sesión.
-1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM le autentique.
+1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que AEM autenticado.
 
 ## Buscar recursos {#search-assets}
 
@@ -349,7 +358,7 @@ Los iconos de acción rápida están disponibles para un único recurso a la vez
 
 ## Edición de imágenes {#editing-images}
 
-Las herramientas de edición de la interfaz de Recursos AEM le permiten realizar pequeños trabajos de edición en recursos de imagen. Puede recortar, rotar, voltear y realizar otros trabajos de edición en imágenes. También puede añadir mapas de imagen a los recursos.
+Las herramientas de edición de la interfaz de AEM Assets le permiten realizar pequeños trabajos de edición en recursos de imagen. Puede recortar, rotar, voltear y realizar otros trabajos de edición en imágenes. También puede añadir mapas de imagen a los recursos.
 
 >[!NOTE]
 >
@@ -420,7 +429,7 @@ La línea de tiempo permite la vista de varios eventos para un elemento seleccio
 
 Las anotaciones son comentarios o notas explicativas añadidas a imágenes o vídeos. Las anotaciones proporcionan a los especialistas en marketing la posibilidad de colaborar y dejar comentarios sobre los recursos.
 
-Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con AEM Assets dependen del navegador.
+Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con AEM Assets dependen del explorador.
 
 >[!NOTE]
 >
@@ -457,7 +466,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >Puede agregar varias anotaciones antes de guardarlas.
 
 1. Toque o haga clic en **[!UICONTROL Cerrar]** para salir del modo de anotación.
-1. Para vista de la notificación, inicie sesión en Recursos AEM con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
+1. Para vista de la notificación, inicie sesión en AEM Assets con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
 
    >[!NOTE]
    >
@@ -475,7 +484,7 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 >
 >También puede agregar anotaciones a una colección. Sin embargo, si una colección contiene colecciones secundarias, solo puede agregar anotaciones/comentarios a la colección principal. La opción Anotar no está disponible para colecciones secundarias.
 
-### Anotaciones guardadas en la Vista {#viewing-saved-annotations}
+### Anotaciones guardadas en la vista {#viewing-saved-annotations}
 
 1. Para vista de anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
@@ -539,7 +548,7 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la configuración **[!UICONTROL de PDF de]** anotación desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
@@ -549,9 +558,9 @@ Al generar una versión se crea una instantánea de activos digitales en un punt
 
 A continuación se muestran los escenarios en los que se crean versiones:
 
-* Puede modificar una imagen en una aplicación diferente y cargarla en Recursos AEM. Se crea una versión de la imagen para que no se sobrescriba la imagen original.
+* Puede modificar una imagen en una aplicación diferente y cargarla en AEM Assets. Se crea una versión de la imagen para que no se sobrescriba la imagen original.
 * Los metadatos de un recurso se editan.
-* La aplicación de escritorio de AEM se utiliza para extraer un recurso existente y guardar los cambios. Se crea una nueva versión cada vez que se guarda el recurso.
+* Utilice AEM aplicación de escritorio para retirar un recurso existente y guardar los cambios. Se crea una nueva versión cada vez que se guarda el recurso.
 
 También puede activar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas representadas de las mismas imágenes, por ejemplo, una representación PNG de un archivo JPEG cargado.
 
