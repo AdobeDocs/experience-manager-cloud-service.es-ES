@@ -2,9 +2,9 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1596'
 ht-degree: 3%
 
 ---
@@ -102,10 +102,9 @@ Las pruebas funcionales se clasifican en dos tipos:
 
 ### Prueba funcional del producto {#product-functional-testing}
 
-Las pruebas funcionales del producto son un conjunto de pruebas de integración HTTP (TI) estables en torno a la creación, replicación, que impiden que se implementen los cambios de cliente en el código de la aplicación si rompe la funcionalidad básica en AEM.
-Se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager.
+Las pruebas funcionales del producto son un conjunto de pruebas de integración HTTP (TI) estables en torno a la funcionalidad básica en AEM (por ejemplo, creación y replicación) que impiden que se implementen los cambios de cliente en el código de la aplicación si rompe esta funcionalidad básica.
 
-El paso Prueba funcional del producto en la canalización siempre está presente y no se puede omitir.Este paso se realiza inmediatamente después de la implementación de la etapa.
+Se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager.
 
 ### Prueba funcional personalizada {#custom-functional-testing}
 
