@@ -2,9 +2,9 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '983'
 ht-degree: 3%
 
 ---
@@ -42,8 +42,8 @@ Una vez configurada la **canalización** (repositorio, entorno y entorno de prue
    La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
-   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Creación de un proyecto](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md) de aplicación AEM para obtener más información sobre el entorno de compilación.
-   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md) de la prueba para obtener más información sobre el proceso de prueba.
+   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Generar detalles](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) de Entorno para obtener detalles sobre el entorno de compilación.
+   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte Prueba [de calidad del](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) código para obtener más detalles sobre el proceso de prueba.
    * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para generar imágenes. Este proceso es responsable de transformar el contenido y los paquetes de despachante producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
    * Implementar en etapa
 
