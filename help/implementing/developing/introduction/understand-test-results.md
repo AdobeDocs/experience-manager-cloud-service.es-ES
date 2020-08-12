@@ -2,10 +2,10 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 4%
+source-wordcount: '1578'
+ht-degree: 3%
 
 ---
 
@@ -13,9 +13,17 @@ ht-degree: 4%
 # Comprender los resultados de la prueba {#understand-test-results}
 
 Las ejecuciones de canalizaciones de Cloud Manager para Cloud Services admitirán la ejecución de pruebas que se ejecuten con el entorno de ensayo. Esto contrasta con las pruebas que se ejecutan durante el paso Generar y Prueba de unidades que se ejecutan sin conexión, sin acceso a ningún entorno de AEM en ejecución.
-Existen tres tipos de pruebas ejecutadas en este contexto:
-* Pruebas escritas por el cliente
-* Pruebas escritas en Adobe
+
+Existen tres categorías generales de pruebas admitidas por Cloud Manager for Cloud Services Pipeline:
+
+1. [Prueba de calidad del código](#code-quality-testing)
+1. [Prueba funcional](#functional-testing)
+1. [Prueba de auditoría de contenido](#content-audit-testing)
+
+Estas pruebas pueden ser:
+
+* Escrito por el cliente
+* Escrito en Adobe
 * Herramienta de código abierto con Lighthouse de Google
 
    >[!NOTE]
@@ -82,7 +90,31 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 >
 >Si bien es recomendable que la anotación sea lo más específica posible, es decir, que solo haga una anotación de la sentencia o bloque específico que causa el problema, es posible realizar anotaciones a nivel de clase. `@SuppressWarnings`
 
-## Escritura de pruebas funcionales {#writing-functional-tests}
+## Prueba funcional {#functional-testing}
+
+Las pruebas funcionales se clasifican en dos tipos:
+
+* Prueba funcional del producto
+* Prueba funcional personalizada
+
+### Prueba funcional del producto {#product-functional-testing}
+
+Las pruebas funcionales del producto son un conjunto de pruebas de integración HTTP (TI) estables en torno a la creación, replicación, que impiden que se implementen los cambios de cliente en el código de la aplicación si rompe la funcionalidad básica en AEM.
+Se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager.
+
+El paso Prueba funcional del producto en la canalización siempre está presente y no se puede omitir.Este paso se realiza inmediatamente después de la implementación de la etapa.
+
+### Prueba funcional personalizada {#custom-functional-testing}
+
+El paso de prueba funcional personalizada de la canalización siempre está presente y no se puede omitir.
+
+Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.
+
+>[!NOTE]
+>El botón **Descargar registro** permite acceder a un archivo ZIP que contiene el formulario detallado de la ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución de AEM real; se puede acceder a ellos mediante la funcionalidad de los registros de descargas o de colas. Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más detalles.
+
+
+#### Escritura de pruebas funcionales {#writing-functional-tests}
 
 Las pruebas funcionales escritas por el cliente deben empaquetarse como un archivo JAR independiente producido por la misma compilación Maven que los artefactos que se implementarán en AEM. Generalmente sería un módulo Maven independiente. El archivo JAR resultante debe contener todas las dependencias requeridas y generalmente se crearía usando el complemento maven-assembly-plugin usando el descriptor jar-con-dependencias.
 
@@ -124,15 +156,6 @@ Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se va
 Por ejemplo, se ejecutaría una clase denominada `com.myco.tests.aem.ExampleIT` , pero no una clase denominada `com.myco.tests.aem.ExampleTest` .
 
 Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de pruebas aem-testing-customers. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obtener más detalles.
-
-## Prueba funcional personalizada {#custom-functional-test}
-
-El paso de prueba funcional personalizada de la canalización siempre está presente y no se puede omitir.
-
-Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada. Este paso se realiza inmediatamente después de la implementación de la etapa.
-
->[!NOTE]
->El botón **Descargar registro** permite acceder a un archivo ZIP que contiene el formulario detallado de la ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución de AEM real; se puede acceder a ellos mediante la funcionalidad de los registros de descargas o de colas. Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más detalles.
 
 ## Prueba de auditoría de contenido {#content-audit-testing}
 
