@@ -2,9 +2,9 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1620'
 ht-degree: 3%
 
 ---
@@ -91,7 +91,7 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 >Si bien es recomendable que la anotación sea lo más específica posible, es decir, que solo haga una anotación de la sentencia o bloque específico que causa el problema, es posible realizar anotaciones a nivel de clase. `@SuppressWarnings`
 
 >[!NOTE]
->Aunque no hay un paso explícito de la prueba de seguridad, todavía hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte Información general [de seguridad para AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más detalles.
+>Aunque no hay un paso explícito de la prueba de seguridad, todavía hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte Información general [de seguridad para AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
 
 ## Prueba funcional {#functional-testing}
 
@@ -104,7 +104,9 @@ Las pruebas funcionales se clasifican en dos tipos:
 
 Las pruebas funcionales del producto son un conjunto de pruebas de integración HTTP (TI) estables en torno a la funcionalidad básica en AEM (por ejemplo, creación y replicación) que impiden que se implementen los cambios de cliente en el código de la aplicación si rompe esta funcionalidad básica.
 
-Las pruebas funcionales del producto se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager.
+Las pruebas funcionales del producto se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager y no se pueden omitir.
+
+Consulte las pruebas [funcionales](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) del producto para obtener pruebas de muestra.
 
 ### Prueba funcional personalizada {#custom-functional-testing}
 
