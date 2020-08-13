@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
-source-wordcount: '1948'
-ht-degree: 99%
+source-wordcount: '1955'
+ht-degree: 98%
 
 ---
 
@@ -190,4 +190,4 @@ Además de las nuevas funciones anteriores, la versión actual proporciona las s
 * Al descargar un recurso, si se selecciona la opción de correo electrónico e incluso si se proporciona un ID de correo electrónico válido, la opción de descarga no está disponible. (CQ-4296535)
 * Los filtros personalizados guardados como colecciones inteligentes no se aplican correctamente a los recursos. (CQ-4294942)
 * Varias mejoras en la búsqueda y la indexación y correcciones de errores para mejorar el rendimiento. (CQ-4286373)
-* Las propiedades de la carpeta muestran un error de servidor interno 500. (CQ-4295701)
+* No se puede acceder a la ficha Propiedades de la carpeta en Recursos y devuelve un error 500. (CQ-4295701)
