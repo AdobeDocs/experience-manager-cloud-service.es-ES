@@ -2,9 +2,9 @@
 title: Notas de la versión de 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '525'
 ht-degree: 6%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 6%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.8.0.
+
+## [!DNL Adobe Experience Manager Assets] como Cloud Service {#assets}
+
+* Las nuevas [!DNL Experience Manager Assets] implementaciones se integran [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores [configuran la integración](/help/assets/smart-tags-configuration.md#aio-integration) de etiquetas inteligentes como antes.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
