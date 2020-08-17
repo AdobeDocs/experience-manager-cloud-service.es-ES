@@ -2,10 +2,10 @@
 title: Notas de la versión de 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
+source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 6%
+source-wordcount: '544'
+ht-degree: 8%
 
 ---
 
@@ -43,6 +43,9 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 * Los entornos hibernados se pueden eliminar de la hibernación desde la página **Información general** del Administrador de nubes.
 
 * Ahora se admiten repositorios privados de Maven enlazados a autenticación.
+
+* El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
+Consulte [Uso de la compatibilidad](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) con Java 11 para obtener más detalles.
 
 ### Corrección de errores {#bug-fixes-cm}
 
