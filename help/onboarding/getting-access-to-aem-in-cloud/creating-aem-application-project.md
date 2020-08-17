@@ -2,9 +2,9 @@
 title: Proyecto de aplicación AEM - Cloud Service
 description: Proyecto de aplicación AEM - Cloud Service
 translation-type: tm+mt
-source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
+source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1549'
 ht-degree: 9%
 
 ---
@@ -78,7 +78,9 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 
 ### Uso de la compatibilidad con Java 11 {#using-java-support}
 
-Cloud Manager ahora admite la creación de proyectos de clientes con Java 8 y Java 11. De forma predeterminada, los proyectos se crean con Java 8. Los clientes que deseen utilizar Java 11 en sus proyectos pueden hacerlo usando el complemento Maven Toolchain.
+Cloud Manager ahora admite la creación de proyectos de clientes con Java 8 y Java 11. De forma predeterminada, los proyectos se crean con Java 8.
+
+Los clientes que deseen utilizar Java 11 en sus proyectos pueden hacerlo mediante el complemento [Apache Maven Toolchain](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
 Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspecto:
 
@@ -107,6 +109,7 @@ Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspect
 
 >[!NOTE]
 >Los valores de proveedor admitidos son `oracle` y `sun`.
+>
 >Los valores de versión admitidos son `1.8`, `1.11`y `11`.
 
 ## Variables de entorno {#environment-variables}
