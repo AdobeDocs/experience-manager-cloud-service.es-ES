@@ -2,9 +2,9 @@
 title: Conjuntos de giros
 description: Aprenda a trabajar con conjuntos de giros en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1804'
 ht-degree: 13%
 
 ---
@@ -52,7 +52,7 @@ Para ayudarle en el uso inicial de los conjuntos de giros, siga estos pasos:
 
    Puede vista y acceder a los conjuntos creados mediante ajustes preestablecidos de conjunto de lotes de tres formas diferentes. (Los conjuntos creados con ajustes preestablecidos de conjunto de lotes *no aparecen* en la interfaz de usuario).
 
-1. [Conjuntos de giros de Previsualización.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Conjuntos de giros de previsualización.](/help/assets/dynamic-media/previewing-assets.md)
 
    Seleccione el conjunto de giros y puede previsualización. Girar el conjunto de giros. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
 
@@ -62,7 +62,7 @@ Para ayudarle en el uso inicial de los conjuntos de giros, siga estos pasos:
 
 1. [Vincule las direcciones URL a la Aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste el visor](/help/assets/dynamic-media/embed-code.md)de vídeo o de imágenes.
 
-   Recursos AEM crea llamadas mediante URL para conjuntos de giros y los activa después de publicar los conjuntos de giros. Puede copiar estas direcciones URL cuando previsualización recursos. Como alternativa, puede incrustarlos en su sitio Web.
+   AEM Assets crea llamadas mediante URL para conjuntos de giros y los activa después de publicar los conjuntos de giros. Puede copiar estas direcciones URL cuando previsualización recursos. Como alternativa, puede incrustarlos en su sitio Web.
 
    Seleccione el conjunto de giros y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores]**.
 
@@ -74,11 +74,11 @@ Si lo necesita, puede [editar los conjuntos](#editing-spin-sets)de giros. Ademá
 
 Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el elemento está rotando y volteando. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
 
-Puede cargar imágenes para los conjuntos de giros como lo haría con cualquier otro [recurso en Recursos](/help/assets/manage-digital-assets.md)AEM.
+Puede cargar imágenes para los conjuntos de giros como lo haría con cualquier otro [recurso en AEM Assets](/help/assets/manage-digital-assets.md).
 
 ### Pautas para capturar imágenes para el conjunto de giros {#guidelines-for-shooting-spin-set-images}
 
-A continuación se indican algunas prácticas recomendadas en relación con las imágenes de conjuntos de giros. En general, cuantas más imágenes haya en un conjunto de giros, mejor será el efecto de giro de la imagen. Sin embargo, incluir muchas imágenes en el conjunto también aumenta el tiempo que tardan las imágenes en cargarse. AEM recomienda estas instrucciones para la toma de imágenes para su uso en conjuntos de giros:
+A continuación se indican algunas prácticas recomendadas en relación con las imágenes de conjuntos de giros. En general, cuantas más imágenes haya en un conjunto de giros, mejor será el efecto de giro de la imagen. Sin embargo, incluir muchas imágenes en el conjunto también aumenta el tiempo que tardan las imágenes en cargarse. AEM recomienda estas directrices para la toma de imágenes para su uso en conjuntos de giros:
 
 * Como mínimo, utilice entre 8 y 12 imágenes en un conjunto de giros unidimensional y entre 16 y 24 imágenes en un conjunto de giros bidimensional. Se necesita un mínimo de 8 imágenes para poder girar 360 grados. Los conjuntos de giros unidimensionales son más comunes ya que la creación de conjuntos de giros bidimensionales requiere mucho trabajo.
 * Utilizar un formato sin pérdida; Se recomiendan TIFF y PNG.
@@ -121,7 +121,7 @@ En esta sección se describe cómo crear conjuntos de giros.
    * Cerca del centro de la página Editor de conjuntos de giros, toque **[!UICONTROL Tocar para abrir el Selector]** de recursos.
    Toque para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
+   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
    See [Working with Selectors](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -163,7 +163,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente medi
 
 1. Desde la búsqueda, puede seleccionar **[!UICONTROL Filtros]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos]**.
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. En el caso de los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de `Starts with` búsqueda diferentes de la búsqueda de AEM, que se basa en el uso de criterios `Contains` de búsqueda. Definir el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de `Starts with` búsqueda diferentes de AEM búsqueda que se basa en el uso de criterios `Contains` de búsqueda. Definir el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -191,7 +191,7 @@ Puede realizar varias tareas de edición en los conjuntos de giros, como las sig
    * Para reordenar imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
-Si elimina la imagen que AEM utiliza para la miniatura sustituyéndola por otra imagen, el recurso original seguirá apareciendo.
+Si elimina la imagen que AEM utiliza para la miniatura reemplazándola por otra imagen, el recurso original seguirá mostrándose.
    * Para eliminar un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, toque o haga clic en el icono Ajuste preestablecido y seleccione un ajuste preestablecido.
    * Para eliminar un conjunto de giros completo, desplácese hasta el conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
