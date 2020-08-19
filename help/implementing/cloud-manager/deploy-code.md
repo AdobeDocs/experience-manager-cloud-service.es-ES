@@ -2,9 +2,9 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
    >
    >Se espera que esta función la utilicen principalmente los clientes 1-1-1.
 
-1. Cada artefacto AEM se implementa en cada instancia de AEM mediante las API del administrador de paquetes, con las dependencias del paquete que determinan el orden de implementación.
+1. Cada artefacto AEM se implementa en cada instancia de AEM mediante las API del administrador de paquetes, con dependencias de paquetes que determinan el orden de implementación.
 
    Para obtener más información sobre cómo puede utilizar los paquetes para instalar nueva funcionalidad, transferir contenido entre instancias y realizar una copia de seguridad del contenido del repositorio, consulte Cómo trabajar con paquetes.
 
@@ -94,7 +94,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal
    1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de despachante para obtener más detalles. Esto borra los directorios para asegurarse de que no quedan archivos huérfanos.
-   1. El artefacto se extrae en el directorio httpd.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
+   1. El artefacto se extrae en el `httpd` directorio.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, se vuelve a cargar el servicio. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve al Administrador de nube.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se borra de la caché del despachante.
 
