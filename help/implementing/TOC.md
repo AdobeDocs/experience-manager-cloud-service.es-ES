@@ -3,10 +3,10 @@ sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 99%
+source-wordcount: '246'
+ht-degree: 96%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 99%
    + [Administración de entornos](cloud-manager/manage-environments.md)
    + [Configurar el canal de CI/CD](cloud-manager/configure-pipeline.md)
    + [Implementar el código](cloud-manager/deploy-code.md)
+   + Comprender los resultados de la prueba {#test-results}
+      + [Información general](/help/implementing/cloud-manager/overview-test-results.md)
+      + [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [Prueba funcional](/help/implementing/cloud-manager/functional-testing.md)
+      + [Prueba de auditoría de contenido](/help/implementing/cloud-manager/content-audit-testing.md)
    + [Comprender las reglas de calidad de código personalizadas](cloud-manager/custom-code-quality-rules.md)
    + [Acceder y administrar registros](cloud-manager/manage-logs.md)
    + [Explicar notificaciones](cloud-manager/notifications.md)
@@ -37,7 +42,6 @@ ht-degree: 99%
    + [Superposiciones en AEM as a Cloud Service](developing/introduction/overlays.md)
    + [Registro](developing/introduction/logging.md)
    + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
    + [Ampliar fragmentos de Experience](developing/extending/experience-fragments.md)
    + [Personalizar y ampliar fragmentos de contenido](developing/extending/content-fragments-customizing.md)
