@@ -2,9 +2,9 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1703'
 ht-degree: 3%
 
 ---
@@ -36,9 +36,13 @@ Este paso evalúa la calidad del código de la aplicación. Es el objetivo centr
 
 Consulte [Configuración de la canalización](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD para obtener más información sobre los distintos tipos de canalizaciones.
 
+### Comprender las reglas de calidad de código personalizadas {#understanding-code-quality-rules}
+
 En la prueba de calidad del código, se analiza el código fuente para asegurarse de que la implementación cumple ciertos criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en base a las optimizaciones de AEM ingeniería y se denominan Reglas [de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizado.
 
-Los resultados de este paso se entregan como *Clasificación*. En la tabla siguiente se resumen las clasificaciones de los distintos criterios de prueba:
+Puede descargar la lista de reglas [aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+Los resultados de este paso se entregan como *Clasificación*. La siguiente tabla resume la clasificación para los criterios de prueba:
 
 | Nombre | Definición | Categoría | Umbral de error |
 |--- |--- |--- |--- |
@@ -50,9 +54,6 @@ Los resultados de este paso se entregan como *Clasificación*. En la tabla sigui
 | Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | > 0 |
 | Líneas duplicadas | Número de líneas involucradas en bloques duplicados. <br/>Para que un bloque de código se considere como duplicado: <br/><ul><li>**Proyectos que no son de Java:**</li><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse al menos en: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li><li>**Proyectos de Java:**</li><li> Debe haber al menos 10 declaraciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul> <br/>Las diferencias en sangría y en literales de cadena se omiten al detectar duplicaciones. | Información | > 1% |
 | Compatibilidad con Cloud Service | Número de problemas de compatibilidad con Cloud Service identificados. | Información | > 0 |
-
-
-Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
