@@ -2,9 +2,9 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1700'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,13 @@ Estas pruebas pueden ser:
 
 ## Prueba de calidad del código {#code-quality-testing}
 
-Como parte de la canalización, se analiza el código fuente para asegurarse de que las implementaciones cumplen determinados criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. La siguiente tabla resume la clasificación para los criterios de prueba:
+Este paso evalúa la calidad del código de la aplicación. Es el objetivo central de una tubería de sólo calidad de código y se ejecuta inmediatamente después del paso de construcción en todos los gasoductos que no sean de producción y producción.
+
+Consulte [Configuración de la canalización](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD para obtener más información sobre los distintos tipos de canalizaciones.
+
+En la prueba de calidad del código, se analiza el código fuente para asegurarse de que la implementación cumple ciertos criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en base a las optimizaciones de AEM ingeniería y se denominan Reglas [de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizado.
+
+Los resultados de este paso se entregan como *Clasificación*. En la tabla siguiente se resumen las clasificaciones de los distintos criterios de prueba:
 
 | Nombre | Definición | Categoría | Umbral de error |
 |--- |--- |--- |--- |
@@ -46,11 +52,12 @@ Como parte de la canalización, se analiza el código fuente para asegurarse de 
 | Compatibilidad con Cloud Service | Número de problemas de compatibilidad con Cloud Service identificados. | Información | > 0 |
 
 
+Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
+
 >[!NOTE]
 >
 >Consulte Definiciones [de métricas](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener definiciones más detalladas.
 
-Puede descargar la lista de reglas aquí [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
