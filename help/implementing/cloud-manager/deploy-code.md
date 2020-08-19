@@ -2,7 +2,7 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
    * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Generar detalles](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) de Entorno para obtener detalles sobre el entorno de compilación.
-   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte Prueba [de calidad del](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) código para obtener más detalles sobre el proceso de prueba.
+   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte Prueba [de calidad del](/help/implementing/cloud-manager/code-quality-testing.md) código para obtener más detalles sobre el proceso de prueba.
    * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para generar imágenes. Este proceso es responsable de transformar el contenido y los paquetes de despachante producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
    * Implementar en etapa
 
@@ -51,13 +51,13 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    La **prueba de fase** incluye los siguientes pasos:
 
    * Prueba funcional del producto: Las ejecuciones de canalizaciones del Administrador de nube admitirán la ejecución de pruebas que se ejecuten con el entorno de la fase.
-Consulte Prueba [funcional](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) del producto para obtener más detalles.
+Consulte Prueba [funcional](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) del producto para obtener más detalles.
 
    * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.\
-      Consulte Prueba [funcional](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) personalizada para obtener más detalles.
+      Consulte Prueba [funcional](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizada para obtener más detalles.
 
    * Auditoría de contenido: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de contenido después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
-Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de la auditoría de contenido para obtener más detalles.
+Consulte [Explicación de los resultados](/help/implementing/cloud-manager/content-audit-testing.md) de la auditoría de contenido para obtener más detalles.
 
       ![](assets/testing-tab.png)
 
