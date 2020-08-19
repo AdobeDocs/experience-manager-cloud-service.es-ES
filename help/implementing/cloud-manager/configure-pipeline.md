@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    >[!NOTE]
    > Las páginas configuradas se enviarán al servicio y se evaluarán según las pruebas de rendimiento, accesibilidad, SEO (Optimización de motores de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva).
 
-   Consulte [Explicación de los resultados](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) de auditoría de contenido para obtener más detalles.
+   Consulte [Explicación de los resultados](/help/implementing/cloud-manager/content-audit-testing.md) de auditoría de contenido para obtener más detalles.
 
    Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de contenido. Una vez agregada la ruta, haga clic en **Guardar**.
 
