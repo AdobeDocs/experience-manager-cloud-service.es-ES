@@ -1,11 +1,11 @@
 ---
-title: Descargar recursos de AEM
-description: Obtenga información sobre cómo descargar recursos de AEM y activar o desactivar la funcionalidad de descarga.
+title: Download assets from [!DNL Adobe Experience Manager Assets].
+description: Descargue recursos [!DNL Adobe Experience Manager Assets] desde y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
+source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '747'
 ht-degree: 4%
 
 ---
@@ -21,17 +21,14 @@ Puede descargar recursos, incluidas las representaciones estáticas y dinámicas
 
 No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de medios mixtos y Conjuntos de carrusel.
 
-**Para descargar recursos,**
+Para descargar recursos, siga estos pasos:
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. En la página Navegación, toque **[!UICONTROL Recursos > Archivos]**.
-1. Vaya a una carpeta que contenga los recursos que desee descargar.
-1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.
-1. En la barra de herramientas, toque **[!UICONTROL Descargar]**.
+1. En la interfaz de usuario de Experience Manager, haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**.
+1. Vaya a los recursos que desee descargar. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta. En la barra de herramientas, haga clic en **[!UICONTROL Descargar]**.
 
-   ![Opciones disponibles al descargar recursos de Recursos Experience Manager](/help/assets/assets/asset-download1.png)
+   ![Opciones disponibles al descargar recursos de [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *Opciones del cuadro de diálogo Descargar.*
+   *Figura: Opciones del cuadro de diálogo Descargar.*
 
 1. En el cuadro de diálogo Descargar, seleccione las opciones de descarga que desee.
 
@@ -41,11 +38,10 @@ No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de
    | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para que se envíe una notificación por correo electrónico al destinatario. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que se personalizan durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación.<br>La opción de subrecursos está disponible si el recurso original tiene subrecursos. |
    | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
-   | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde AEM. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
+   | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde dentro de AEM. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
    | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de las que aparecen en la lista Ajuste preestablecido [de](/help/assets/dynamic-media/image-presets.md) imagen. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como invertir la imagen. La opción solo está disponible si se ha [!DNL Dynamic Media] activado. |
 
-1. En el cuadro de diálogo, toque **[!UICONTROL Descargar]**.
-
+1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
 
 ## Habilitar servlet de descarga de recursos {#enable-asset-download-servlet}
 
@@ -67,7 +63,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza 
 
 ## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
 
-El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish actualizando la configuración del despachante para bloquear las solicitudes de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
+El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
 
 1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtros.
 
@@ -76,6 +72,6 @@ El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish act
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos DRM](drm.md)
->* [Descargar recursos con la aplicación de escritorio AEM en Windows o Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [Descargar recursos mediante Adobe Assets Link desde las aplicaciones compatibles de Adobe Creative Cloud](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Descargar recursos mediante la aplicación de escritorio Experience Manager en el escritorio de Windows o Mac](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Descargar recursos mediante el vínculo Recursos de Adobe desde las aplicaciones de Adobe Creative Cloud admitidas](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
