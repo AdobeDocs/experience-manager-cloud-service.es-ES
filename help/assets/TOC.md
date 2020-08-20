@@ -3,10 +3,10 @@ sub-product: 'AEM Assets as a Cloud Service '
 user-guide-title: 'AEM Assets as a Cloud Service '
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: f7e61c6544920ea38ceb4b455412e5e3ac32e476
+source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 97%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
    + [Insertar y sacar recursos para editar](check-out-and-submit-assets.md)
    + [Digital Rights Management para recursos](drm.md)
 + Configurar, administrar y ampliar recursos {#admin}
-   + [API y material de referencia](developer-reference-material-apis.md)
+   + [Documentos de desarrollador y referencias de API](developer-reference-material-apis.md)
    + [Carpeta de esquema de metadatos](folder-metadata-schema.md)
    + [Acerca del trabajo con perfiles de imágenes y perfiles de vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [Configuración de las etiquetas inteligentes](smart-tags-configuration.md)
