@@ -2,10 +2,10 @@
 title: 'Prueba de calidad del código: Cloud Services'
 description: 'Prueba de calidad del código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 3%
+source-wordcount: '831'
+ht-degree: 2%
 
 ---
 
@@ -16,14 +16,26 @@ La prueba de calidad del código evalúa la calidad del código de la aplicació
 
 Consulte [Configuración de la canalización](/help/implementing/cloud-manager/configure-pipeline.md) CI-CD para obtener más información sobre los distintos tipos de canalizaciones.
 
-## Comprender las reglas de calidad de código personalizadas {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 En la prueba de calidad del código, se analiza el código fuente para asegurarse de que cumple ciertos criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en base a las optimizaciones de AEM ingeniería y se denominan Reglas [de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md)personalizado.
 
 >[!NOTE]
 >Puede descargar la lista completa de reglas [aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-Los resultados de este paso se entregan como *Clasificación*. La siguiente tabla resume la clasificación para los criterios de prueba:
+**Puerta de tres niveles**
+
+Hay una estructura de tres niveles en este paso de prueba de calidad de código para los problemas identificados:
+
+* **Crítico**: Estos son problemas identificados por la puerta que causan un fallo inmediato de la tubería.
+
+* **Importante**: Estos son problemas identificados por la puerta que hacen que la tubería entre en estado de pausa. Un administrador de implementación, un jefe de proyecto o un propietario de empresa pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+
+* **Información**: Estos son problemas identificados por la puerta que se proporcionan exclusivamente con fines informativos y no tienen impacto en la ejecución de la tubería
+
+Los resultados de este paso se entregan como *clasificaciones*.
+
+La siguiente tabla resume los umbrales de clasificación y error para cada una de las categorías críticas, importantes y de información:
 
 | Nombre | Definición | Categoría | Umbral de error |
 |--- |--- |--- |--- |
