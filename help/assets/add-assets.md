@@ -2,9 +2,9 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1320'
 ht-degree: 2%
 
 ---
@@ -152,16 +152,16 @@ Para realizar un procesamiento adicional en los recursos cargados, puede utiliza
 Están disponibles los siguientes perfiles:
 
 * [Los perfiles](metadata-profiles.md) de metadatos permiten aplicar propiedades de metadatos predeterminadas a los recursos cargados en esa carpeta
-* [Los perfiles](asset-microservices-configure-and-use.md) de procesamiento le permiten generar más representaciones de las posibles de forma predeterminada.
+* [Los perfiles](asset-microservices-configure-and-use.md) de procesamiento permiten generar más representaciones de las que son posibles de forma predeterminada.
 
 Además, si Dynamic Media está habilitado en el entorno:
 
-* [Los perfiles](dynamic-media/image-profiles.md) de imagen de Dynamic Media le permiten aplicar a los recursos cargados una configuración de recorte y enfoque específicos (recorte **** inteligente y recorte de píxeles).
-* [Los perfiles](dynamic-media/video-profiles.md) de vídeo de Dynamic Media le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
+* [Los perfiles](dynamic-media/image-profiles.md) de imagen de Dynamic Media permiten aplicar a los recursos cargados un recorte específico (recorte **** inteligente y recorte de píxeles) y una configuración de enfoque.
+* [Los perfiles](dynamic-media/video-profiles.md) de vídeo de Dynamic Media permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
 
 >[!NOTE]
 >
->El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para el recorte o la transformación de medios que se debe realizar al entregar los recursos
+>El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para recortar o transformar los medios que se deben realizar al entregar los recursos
 
 Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **[!UICONTROL de]** procesamiento.
 
