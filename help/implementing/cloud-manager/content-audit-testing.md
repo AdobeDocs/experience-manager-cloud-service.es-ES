@@ -2,9 +2,9 @@
 title: 'Prueba de auditoría de contenido: Cloud Services'
 description: 'Prueba de auditoría de contenido: Cloud Services'
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Prueba de auditoría de contenido {#content-audit-testing}
 
-La auditoría de contenido es una función disponible en los canales de producción de Cloud Manager que utiliza Lighthouse, una herramienta de código abierto de Google. Esta función está habilitada en todas las canalizaciones de producción de Cloud Manager.
+La auditoría de contenido es una función disponible en los canales de producción de Cloud Manager, una herramienta de código abierto de Google. Esta función está habilitada en todas las canalizaciones de producción de Cloud Manager.
 
 Valida el proceso de implementación y ayuda a garantizar que los cambios implementados:
 
