@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos para el procesamiento 
 description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Experience Manager permite los siguientes niveles de procesamiento.
 |---|---|---|
 | [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles) </li> <li> Previsualización grande (representación web - 1280 px) </li><li> Metadatos y extracción de texto.</li></ul> |
 | [Configuración personalizada](#standard-config) | Configurado por los administradores mediante la interfaz de usuario. Proporciona más opciones para la generación de representaciones ampliando la opción predeterminada. Amplíe la opción lista para usar para proporcionar diferentes formatos y representaciones. | <ul><li>Representación de FPO. </li> <li>Cambiar el formato de archivo y la resolución de las imágenes</li> <li> Se aplica condicionalmente a los tipos de archivo configurados. </li> </ul> |
-| [Perfil personalizado](#custom-config) | Configurado por los administradores mediante la interfaz de usuario para utilizar código personalizado mediante aplicaciones personalizadas para invocar el servicio [de cómputo de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)recursos. Admite requisitos más complejos en un método escalable y nativo de la nube. | Consulte casos [de uso](#custom-config)permitidos. |
+| [Perfil personalizado](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para utilizar código personalizado a través de aplicaciones personalizadas para llamar al servicio [de cómputo de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)recursos. Admite requisitos más complejos en un método escalable y nativo de la nube. | Consulte casos [de uso](#custom-config)permitidos. |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,10 +118,10 @@ El [!DNL Asset Compute Service] admite una variedad de casos de uso, como el pro
 
 Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, y archivos.
 
-Los desarrolladores pueden usar el [!DNL Asset Compute Service] para [crear aplicaciones](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personalizadas que se adapten a los casos de uso admitidos. [!DNL Experience Manager] Puede invocar estas aplicaciones personalizadas desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
+Los desarrolladores pueden usar el [!DNL Asset Compute Service] para [crear aplicaciones](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) personalizadas que se adapten a los casos de uso admitidos. [!DNL Experience Manager] Puede llamar a estas aplicaciones personalizadas desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
 
 * Utilice [!DNL Adobe Photoshop]la [API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) ImageCutout de Adobe y guarde el resultado como representación.
-* Invoque sistemas de terceros para actualizar datos, por ejemplo, un sistema PIM.
+* Llame a sistemas de terceros para actualizar los datos, por ejemplo, un sistema PIM.
 * Utilice [!DNL Photoshop] la API para generar diversas representaciones basadas en la plantilla de Photoshop.
 * Utilice la API [de Lightroom de](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) Adobe para optimizar los recursos ingestados y guardarlos como representaciones.
 
@@ -154,7 +154,7 @@ Las aplicaciones personalizadas son aplicaciones [de Project Firefly](https://gi
 
 Para ilustrar el uso personalizado del perfil, consideremos un caso de uso para aplicar texto personalizado a las imágenes de campaña. Puede crear un perfil de procesamiento que aproveche la API de Photoshop para editar las imágenes.
 
-La integración del servicio de cómputo de recursos permite al Experience Manager pasar estos parámetros a la aplicación personalizada mediante el campo Parámetros  de servicio. A continuación, la aplicación personalizada invoca la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color del texto, el peso del texto y el tamaño del texto para agregar el texto personalizado a las imágenes de campaña.
+La integración del servicio de cómputo de recursos permite al Experience Manager pasar estos parámetros a la aplicación personalizada mediante el campo Parámetros  de servicio. La aplicación personalizada llama a la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color del texto, el peso del texto y el tamaño del texto para agregar el texto personalizado a las imágenes de campaña.
 
 ![custom-processing-perfil](assets/custom-processing-profile.png)
 
