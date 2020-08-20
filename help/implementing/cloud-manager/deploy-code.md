@@ -2,7 +2,7 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+Una vez configurada la tubería de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
 1. Haga clic en **Implementar** desde el Administrador de nube para realizar el inicio del proceso de implementación.
 
