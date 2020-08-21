@@ -1,10 +1,10 @@
 ---
 title: Adición de recursos de Dynamic Media a las páginas
-description: Cómo agregar componentes de Dynamic Media a una página en AEM
+description: Cómo agregar componentes de Dynamic Media a una página de AEM
 translation-type: tm+mt
-source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3121'
 ht-degree: 32%
 
 ---
@@ -18,7 +18,7 @@ Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM
 
 >[!NOTE]
 >
->Debe publicar recursos antes de agregarlos a páginas en AEM. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Debe publicar los recursos antes de agregarlos a las páginas de AEM. See [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
@@ -70,7 +70,7 @@ Si no hay componentes de Dynamic Media disponibles para agregar a una página, e
 1. Desplácese hasta que vea Medios **[!UICONTROL dinámicos]**.
 1. Toque el icono > situado a la izquierda de Medios **[!UICONTROL dinámicos]** para expandir la lista y seleccione los componentes de Dynamic Media que desee activar.
 
-   ![lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
+   ![Lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
 1. Cerca de la esquina superior derecha de la página de Contenedor **[!UICONTROL de]** diseño, toque el icono Listo (marca de verificación).
 
@@ -103,7 +103,7 @@ Los componentes de Dynamic Media disponibles son los siguientes:
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de su uso. Una vez que estén disponibles en el editor de plantillas, puede añadir los componentes a la página como lo haría con cualquier otro componente de AEM.
+>Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de su uso. Una vez que estén disponibles en el editor de plantillas, puede agregar los componentes a la página como lo haría con cualquier otro componente AEM.
 
 ![6_5_dynamicmediawcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -189,9 +189,9 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 >
 >De forma predeterminada, el componente de vídeo de Dynamic Media es adaptable. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-* **[!Ajuste preestablecido** de visor UICONTROL: seleccione un ajuste preestablecido de visor de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. 
+* **[!UICONTROL Ajuste preestablecido]** de visor: seleccione un ajuste preestablecido de visor de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. 
 
-* **[!Modificadores** del visor UICONTROL: los modificadores del visor adoptan la forma de par nombre=valor con delimitador &amp; y permiten cambiar los visores como se describe en la Guía de referencia de visores de Adobe. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificadores]** de visor: los modificadores de visor adoptan la forma de par nombre=valor con un delimitador &amp; y permiten cambiar los visores como se describe en la Guía de referencia de visores de Adobe. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`
 
    Con los modificadores de visor, por ejemplo, puede hacer lo siguiente:
 
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!Título** UICONTROL: cambie el título del vídeo.
+* **[!UICONTROL Título]**: cambie el título del vídeo.
 
 * **[!UICONTROL Anchura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Al dejar este valor en blanco, el recurso se adapta.
 
@@ -331,16 +331,16 @@ Si el ajuste preestablecido de visor que está buscando no está visible, asegú
 
 ### Uso de HTTP/2 para envío de recursos de Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el Envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
 Consulte Envío de contenido [](/help/assets/dynamic-media/http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
 
 >[!MORELIKETHIS]
 >
 >* [Uso del reproductor de vídeo en AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Uso de vídeo interactivo con Dynamic Media de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Información sobre Asset Viewer con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Uso de miniaturas de vídeo personalizadas con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Explicación de la administración de color con los medios dinámicos de AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Uso de vídeo interactivo con medios dinámicos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Información sobre el visor de recursos con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Uso de miniaturas de vídeo personalizadas con medios dinámicos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Explicación de la administración de color con medios dinámicos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
 >* [Uso del enfoque de imágenes con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
