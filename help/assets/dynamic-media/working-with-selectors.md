@@ -2,9 +2,9 @@
 title: Trabajar con selectores
 description: Selección de recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ Por ejemplo, en este letrero de carrusel, utilice el selector de productos si es
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Cuando selecciona (en lugar de introducir manualmente) hacia dónde van las zonas interactivas o los mapas de imagen, está utilizando el selector. El selector de sitios solo funciona si es cliente de AEM Sites. El selector de productos también requiere AEM Commerce.
+Cuando selecciona (en lugar de introducir manualmente) hacia dónde van las zonas interactivas o los mapas de imagen, está utilizando el selector. El selector de sitios solo funciona si es cliente de AEM Sites. El selector de productos también requiere AEM comercio.
 
 ## Selección de productos en Dynamic Media {#selecting-products}
 
@@ -30,7 +30,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
 1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -42,7 +42,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Puede cambiar el lugar en el que AEM busca datos de productos tocando **[!UICONTROL Examinar]** y navegando a otra carpeta.
+   Puede cambiar el lugar donde AEM los datos del producto tocando **[!UICONTROL Examinar]** y navegando a otra carpeta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -64,7 +64,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
 ## Selección de sitios en Dynamic Media {#selecting-sites}
 
-Utilice el selector de sitios para elegir una página web cuando desee que un punto interactivo o un mapa de imagen se vincule a una página web que se administre en los sitios de AEM.
+Utilice el selector de sitios para elegir una página Web cuando desee que un punto interactivo o mapa de imágenes se vincule a una página Web administrada dentro de AEM sitios.
 
 1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
@@ -80,7 +80,7 @@ Utilice el selector de sitios para elegir una página web cuando desee que un pu
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En el modo de **[!UICONTROL Previsualización]** , si toca la zona interactiva o el mapa de imágenes, navegará a la página del sitio de AEM que ha especificado.
+1. En el modo de **[!UICONTROL Previsualización]** , si toca el punto interactivo o el mapa de imagen, navegará a la página del sitio AEM que especificó.
 
 ## Selección de recursos en Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Consulte también Selector [de recursos](/help/assets/search-assets.md#assetsele
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Puede cambiar el lugar donde AEM busca recursos navegando a otra carpeta en el campo **[!UICONTROL Ruta]** .
+   Puede cambiar el lugar donde AEM exploran los recursos navegando a otra carpeta en el campo **[!UICONTROL Ruta]** .
 
    Toque **[!UICONTROL Colección]** para buscar solo recursos dentro de las colecciones.
 
