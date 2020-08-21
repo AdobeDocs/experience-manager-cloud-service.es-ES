@@ -2,10 +2,10 @@
 title: Banner de carrusel
 description: Aprenda a trabajar con letreros de carrusel en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '4606'
-ht-degree: 5%
+source-wordcount: '4605'
+ht-degree: 4%
 
 ---
 
@@ -36,15 +36,15 @@ Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean](https://s7d5.
 
 >[!NOTE]
 >
->Los usuarios no administrativos deben agregarse al grupo de usuarios **[!UICONTROL de]** presas para poder crear o editar letreros de carrusel. Si tiene problemas para crear o editar, póngase en contacto con el administrador del sistema, el cual puede agregarle al grupo de usuarios **[!UICONTROL de ]**presas.
+>Los usuarios no administrativos deben agregarse al grupo de usuarios **[!UICONTROL de]** presas para poder crear o editar letreros de carrusel. Si tiene problemas para crear o editar, póngase en contacto con el administrador del sistema, el cual puede agregarle al grupo de usuarios **[!UICONTROL de]** presas.
 
 ## Inicio rápido: Pancartas de carrusel {#quick-start-carousel-banners}
 
 Para ayudarle a ponerse en marcha rápidamente:
 
-1. [Identifique las variables](#identifying-hotspot-and-image-map-variables) de puntos interactivos y mapas de imagen (solo para clientes que utilizan Recursos AEM + Medios dinámicos)
+1. [Identifique las variables](#identifying-hotspot-and-image-map-variables) de puntos interactivos y mapas de imagen (solo para clientes que utilizan AEM Assets + Dynamic Media)
 
-   Inicio identificando las variables dinámicas utilizadas por la implementación de vista rápida existente para que pueda introducir los puntos interactivos y los datos de mapa de imágenes correctamente durante el proceso de creación de letreros de carrusel en Recursos AEM.
+   Inicio identificando las variables dinámicas utilizadas por la implementación de vista rápida existente para que pueda introducir los puntos interactivos y los datos de mapa de imágenes correctamente durante el proceso de creación de letreros de carrusel en AEM Assets.
 
 <!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
@@ -83,21 +83,19 @@ Para ayudarle a ponerse en marcha rápidamente:
 
 1. Realice una de las acciones siguientes:
 
-   * [Añadir una pancarta de carrusel a la página del sitio web
-      ](#adding-a-carousel-banner-to-your-website-page)Puede agregar la dirección URL de la pancarta de carrusel o el código incrustado que ha copiado en la página del sitio web.
+   * [Añadir una pancarta de carrusel a la](#adding-a-carousel-banner-to-your-website-page)página webPuede agregar la URL de la pancarta de carrusel o el código incrustado que ha copiado en la página web.
 
       * [Integre la pancarta de carrusel con una vista rápida](#integrating-the-carousel-banner-with-an-existing-quickview)existente. Si utiliza un sistema de gestor de contenido web de terceros, deberá integrar la nueva pancarta de carrusel con la implementación de vista rápida existente en su sitio web.
-   * [Añadir una pancarta de carrusel a su sitio web en AEM
-      ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)Si es cliente de AEM Sites, puede añadir el conjunto de carrusel directamente a la página en AEM mediante el componente de medios interactivos.
+   * [Añada una pancarta de carrusel a su sitio web en](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)AEMIsi es cliente de AEM Sites, puede agregar el conjunto de carrusel directamente a la página en AEM, mediante el componente Medios interactivos.
 
 
 Si necesita editar conjuntos de carrusel, consulte [Edición de conjuntos de carrusel.](#editing-carousel-sets) Además, puede realizar vistas y editar las propiedades [del conjunto de](/help/assets/manage-digital-assets.md#editing-properties)carrusel.
 
 ## Identificación de variables de puntos interactivos y mapas de imagen {#identifying-hotspot-and-image-map-variables}
 
-Inicio identificando las variables dinámicas utilizadas por la implementación de vista rápida existente para que pueda introducir los puntos interactivos o los datos de mapa de imagen correctamente durante el proceso de creación de conjuntos de carrusel en Recursos AEM.
+Inicio identificando las variables dinámicas utilizadas por la implementación de vista rápida existente para que pueda introducir los puntos interactivos o los datos de mapa de imagen correctamente durante el proceso de creación de conjuntos de carrusel en AEM Assets.
 
-Al añadir zonas interactivas o mapas de imagen a una imagen de pancarta en Recursos AEM, debe asignar un SKU y variables adicionales opcionales a cada zona interactiva o mapa de imagen. Estas variables se utilizan más adelante para hacer coincidir puntos interactivos o mapas de imagen con contenido de vista rápida.
+Cuando agrega zonas interactivas o mapas de imagen a una imagen de pancarta en AEM Assets, debe asignar un SKU y variables adicionales opcionales a cada zona interactiva o mapa de imagen. Estas variables se utilizan más adelante para hacer coincidir puntos interactivos o mapas de imagen con contenido de vista rápida.
 
 <!-- LEAVE; COMMERCE BEING ADDED LATER
 
@@ -201,8 +199,7 @@ Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/manage
    * Cerca de la esquina superior izquierda de la página, toque el icono **[!UICONTROL Añadir diapositiva]** .
 
    * Cerca del centro de la página, toque **[!UICONTROL Tocar para abrir el Selector]** de recursos.
-
-   Pulse para seleccionar los recursos que desea incluir en el conjunto de carrusel. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, pulse **[!UICONTROL Seleccionar]** cuando esté cerca de la esquina superior derecha de la página.
+   Pulse para seleccionar los recursos que desea incluir en el conjunto de carrusel. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
@@ -284,8 +281,8 @@ Si está editando imágenes interactivas con zonas interactivas y recortando la 
 
    * Toque **[!UICONTROL Vista]** rápida.
 
-      * Si es un sitio de AEM <!-- and Ecommerce customer-->, toque el icono Selector de producto (lupa) para abrir la página Seleccionar producto. Toque el producto que desee utilizar y, a continuación, toque la marca de verificación situada en la esquina superior derecha de la página para volver al Editor de letreros de carrusel.
-      * Si no es un sitio AEM <!-- or Ecommerce customer -->
+      * Si es un AEM Sites <!-- and Ecommerce customer-->, toque el icono Selector de producto (lupa) para abrir la página Seleccionar producto. Toque el producto que desee utilizar y, a continuación, toque la marca de verificación situada en la esquina superior derecha de la página para volver al Editor de letreros de carrusel.
+      * Si no es un AEM Sites <!-- or Ecommerce customer -->
 
          * Consulte [Identificación de las variables](#identifying-hotspot-and-image-map-variables) de puntos interactivos tal como desee definir estas variables.
          * A continuación, introduzca manualmente el valor de SKU. En el campo de texto Valor de SKU, escriba el SKU del producto (Unidad de mantenimiento de existencias), que es un identificador único para cada producto o servicio distinto que oferta. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa asociar la zona interactiva tocada con una vista rápida de SKU concreta.
@@ -294,9 +291,9 @@ Si está editando imágenes interactivas con zonas interactivas y recortando la 
          * Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md) para obtener más información.
    * Toque **[!UICONTROL Hipervínculo]**.
 
-      * Si es cliente de AEM Sites, toque el icono (carpeta) Selector de sitio para navegar a una URL.
+      * Si es cliente de AEM Sites, toque el icono (carpeta) Selector de sitio para navegar a una dirección URL.
          >[!NOTE]
-         El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de AEM Sites.
+         El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
       * Si es un cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
 
@@ -306,7 +303,7 @@ Si está editando imágenes interactivas con zonas interactivas y recortando la 
 
    * Tap **[!UICONTROL Experience Fragment]**.
 
-      * Si es cliente de AEM Sites, toque el icono de búsqueda (lupa) para abrir la página Fragmento de experiencias. Toque o haga clic en el fragmento de experiencias que desee utilizar y, a continuación, toque Seleccionar en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
+      * Si es cliente de AEM Sites, toque el icono de búsqueda (lupa) para abrir la página Fragmento de experiencia. Toque o haga clic en el fragmento de experiencias que desee utilizar y, a continuación, toque Seleccionar en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
 Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Especifique la anchura y la altura del fragmento de experiencias tal como aparecerán en el letrero.
@@ -368,12 +365,12 @@ Puede utilizar la Previsualización para ver el aspecto que tendrá la pancarta 
 
 Cuando esté satisfecho con la pancarta de carrusel, puede publicarla.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de AEM Sites.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 Puede realizar la previsualización de letreros de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visores]** .
 
-**previsualización de letreros de carrusel**
+**Previsualización de letreros de carrusel**
 
 1. En **[!UICONTROL Recursos]**, desplácese hasta una pancarta de carrusel existente que haya creado y toque para abrirla.
 1. Toque **[!UICONTROL Editar]**.
@@ -381,10 +378,10 @@ Puede realizar la previsualización de letreros de carrusel desde el Editor de c
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Toque **Previsualización]**.
+1. Toque **[Previsualización]**.
 1. Toque las zonas interactivas o los mapas de imagen de la imagen para probar las acciones asociadas.
 
-**previsualización de letreros de carrusel desde la lista Visores**
+**Previsualización de letreros de carrusel desde la lista Visores**
 
 1. En **[!UICONTROL Recursos]**, desplácese hasta una pancarta de carrusel existente que haya creado y toque para abrirla.
 1. Cerca de la esquina superior izquierda de la página de Previsualización, haga clic en el icono Contenido.
@@ -406,19 +403,19 @@ Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynami
 Una vez cargadas las imágenes de los letreros para crear un carrusel, añadidas zonas interactivas y/o mapas de imagen al letrero y publicado el conjunto de carrusel, ya estará listo para agregarlo a la página del sitio web existente.
 
 >[!NOTE]
-Si es cliente de AEM Sites, puede añadir la pancarta de carrusel directamente a la página arrastrando el componente de medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Si es cliente de AEM Sites, puede agregar la pancarta de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-Sin embargo, si es cliente independiente de Recursos AEM, puede agregar manualmente la pancarta de carrusel a la página de aterrizaje del sitio web, tal como se describe en esta sección.
+Sin embargo, si es cliente de recursos AEM independientes, puede agregar manualmente la pancarta de carrusel a la página de aterrizaje de su sitio web como se describe en esta sección.
 
 1. Copie el código incrustado del conjunto de carrusel publicado.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
 
-1. Añada el código incrustado que ha copiado de Recursos AEM a su página web.
+1. Añada el código incrustado que ha copiado de AEM Assets a su página web.
 El código incrustado copiado responde, por lo que debe ajustarse automáticamente al área de incrustación de la página.
 
 ## Integración del letrero carrusel con una vista rápida existente {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-Nota: este paso solo se aplica si es cliente independiente de Recursos AEM.
+Nota: este paso solo se aplica si es cliente independiente de AEM Assets.
 
 El último paso en este proceso es integrar la pancarta de carrusel con una implementación de vista rápida existente en el sitio web. Cada implementación de vista rápida es única y se necesita un enfoque específico que muy probablemente implique la asistencia de una persona de TI de primer nivel.
 
@@ -442,7 +439,7 @@ En un controlador de evento de este tipo, el código front-end hace lo siguiente
 * Construye una URL de vista rápida en función de los datos de puntos interactivos o mapas de imagen.
 * Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
 
-El código incrustado devuelto por Recursos AEM ya tiene un controlador de eventos listo para usar en su lugar, con comentarios.
+El código incrustado devuelto por AEM Assets ya tiene un controlador de eventos listo para usar en su lugar con comentarios.
 
 Por lo tanto, solo es necesario descomentar el código y reemplazar el cuerpo del controlador ficticio por el código específico de la página web en particular.
 
@@ -452,6 +449,6 @@ Consulte [Identificación de variables](#identifying-hotspot-and-image-map-varia
 
 El último paso para activar la dirección URL de vista rápida y activar el panel de vista rápida requiere, muy probablemente, la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo activar con precisión la implementación de vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
-## Usar las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+## Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
