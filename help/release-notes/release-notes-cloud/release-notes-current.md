@@ -1,16 +1,16 @@
 ---
-title: Notas de la versión de 2020.8.0 [!DNL Adobe Experience Manager] de Cloud Service.
-description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.8.0.'
+title: Notas de la versión 2020.8.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
+description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.8.0.
 
@@ -36,7 +36,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * La auditoría de contenido es una función habilitada en Cloud Manager Sites Producines. La configuración de la tubería de producción para programas con sitios ahora incluye una tercera ficha denominada Auditoría **del contenido**. Cada vez que se ejecute un flujo de producción, se incluirá un nuevo paso de auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
 
-   Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
+   Refer to [Content Audit Testing](/help/implementing/cloud-manager/content-audit-testing.md) for more details.
 
 * Los entornos recién creados en programas de Recursos ahora se configurarán automáticamente con Smart Content Services.
 
