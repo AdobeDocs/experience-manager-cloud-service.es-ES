@@ -1,9 +1,9 @@
 ---
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
-translation-type: ht
-source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -382,7 +382,7 @@ Sin embargo, si el número de páginas afectadas supera un límite definido, la 
 
          ![Movimiento asincrónico de página](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
 
-El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos **](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en** Navegación global **->** Herramientas **->** Operaciones **->** Trabajos **
+El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado de los trabajos asincrónicos** ](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)en **Navegación global** -> **Herramientas** -> **Operaciones** -> **Trabajos**
 
 >[!NOTE]
 >
