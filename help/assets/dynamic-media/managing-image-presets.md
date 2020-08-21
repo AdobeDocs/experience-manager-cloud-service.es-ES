@@ -2,9 +2,9 @@
 title: Administración de ajustes preestablecidos de imagen
 description: Conozca los ajustes preestablecidos de imagen y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3648'
 ht-degree: 11%
 
 ---
@@ -253,7 +253,7 @@ Consulte Formato [de archivo](#indesign-indd-file-format)InDesign (INDD).
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. Haga clic en **[!UICONTROL Guardar**.
+1. Haga clic en **[!UICONTROL Guardar]**.
 
 ### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
 
