@@ -3,7 +3,7 @@ title: Perfiles de metadatos
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -89,11 +89,11 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. En el carril izquierdo, toque **[!UICONTROL Recursos]** y, a continuación, desplácese hasta la carpeta a la que desee aplicar un perfil de metadatos.
 1. En la carpeta, toque o haga clic en la marca de verificación para seleccionarla y, a continuación, toque o haga clic en **Propiedades**.
-1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione el perfil en el menú desplegable y pulse **Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione el perfil en el menú desplegable y pulse **[Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
 ### Aplicar un perfil de metadatos de forma global {#applying-a-metadata-profile-globally}
 
-Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de AEM de cualquier carpeta tenga el perfil seleccionado aplicado.
+Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en AEM recursos de cualquier carpeta tenga el perfil seleccionado aplicado.
 
 You can reprocess assets in a folder that already has an existing metadata profile that you later changed. <!--See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
@@ -101,7 +101,7 @@ You can reprocess assets in a folder that already has an existing metadata profi
 
 * Vaya a `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y toque **Guardar**.
 
-* Vaya a CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Añada la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` y toque **Guardar todo**.
+* Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Añada la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` y toque **Guardar todo**.
 
 ## Eliminación de un perfil de metadatos de las carpetas {#removing-a-metadata-profile-from-folders}
 
@@ -119,6 +119,6 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 
 ### Eliminación de perfiles de metadatos de las carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un perfil de metadatos.
+1. Toque el logotipo de AEM, navegue por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desee quitar un perfil de metadatos.
 1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
