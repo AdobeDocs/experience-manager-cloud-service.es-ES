@@ -2,9 +2,9 @@
 title: Vídeo
 description: Aprenda a trabajar con vídeo en Dynamic Media
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '10057'
+source-wordcount: '10056'
 ht-degree: 10%
 
 ---
@@ -689,7 +689,7 @@ Para automatizar la configuración de las propiedades de YouTube predeterminadas
 
 1. En la esquina superior izquierda de AEM, haga clic en el logotipo de AEM y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > Esquemas **[!UICONTROL de metadatos]**.
 1. Click **[!UICONTROL default]**. (No agregue una marca de verificación al cuadro de selección a la izquierda de &quot;predeterminado&quot;).
-1. En la página **[!UICONTROL predeterminada]**, marque la casilla a la izquierda del **[!UICONTROL vídeo]** y luego haga clic en **Editar]**.
+1. En la página **[!UICONTROL predeterminada]**, marque la casilla a la izquierda del **[!UICONTROL vídeo]** y luego haga clic en **[Editar]**.
 1. En la página Editor de Esquemas de metadatos, haga clic en la ficha **[!UICONTROL Avanzado]** .
 1. Bajo el encabezado Publicación de YouTube, haga clic en **[!UICONTROL Categoría de YouTube]**.
 1. En la parte derecha de la página, en la ficha **[!UICONTROL Configuración]** , haga lo siguiente:
@@ -723,7 +723,7 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
    * (Opcional) En la parte derecha de la página, en la ficha Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Publishing`.
    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you just created.
 
-   * Click **[!UICONTROL Field Label** to select the component.
+   * Click **[!UICONTROL Field Label]** to select the component.
    * En la parte derecha de la página, en la ficha Configuración, pegue los valores de Publicación de YouTube (valor Etiqueta de campo y Asignar a valor de propiedad) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor Opciones en el campo Valor predeterminado.
 
 1. Añada los valores de privacidad de YouTube copiados en el perfil haciendo lo siguiente:
@@ -944,7 +944,7 @@ For YouTube publishing jobs, do the following:
 ## Visualización de informes de vídeo {#viewing-video-reports}
 
 >[!NOTE]
-Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media - Híbrido.
+Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media: híbrido.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
