@@ -2,10 +2,10 @@
 title: 'Administrar registros: Cloud Service'
 description: 'Administrar registros: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 17%
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,7 @@ O bien, la página **Entornos** :
 
 ![](assets/download-logs.png)
 
->[!Note]
+>[!NOTE]
 >Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
 
 ![](assets/manage-logs3.png)
@@ -67,12 +67,12 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!Note]
+>[!NOTE]
 >Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
 
 ### Recursos adicionales {#resources}
 
-Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de Adobe I/O:
+Consulte los siguientes recursos adicionales para obtener más información sobre la API de Cloud Manager y la CLI de E/S de Adobe:
 
 * [Documentación de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [CLI de Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [CLI de E/S de Adobe](https://github.com/adobe/aio-cli-plugin-cloudmanager)
