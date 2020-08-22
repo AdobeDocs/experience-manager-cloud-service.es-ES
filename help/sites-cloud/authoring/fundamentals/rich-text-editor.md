@@ -1,10 +1,10 @@
 ---
 title: Use el Editor de texto enriquecido en  [!DNL Adobe Experience Manager] para crear contenido
 description: Use el  [!DNL Experience Manager] Editor de texto enriquecido para crear contenido.
-translation-type: ht
-source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
-workflow-type: ht
-source-wordcount: '287'
+translation-type: tm+mt
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+workflow-type: tm+mt
+source-wordcount: '286'
 ht-degree: 100%
 
 ---
@@ -51,7 +51,7 @@ Las opciones adicionales del editor de texto enriquecido incluyen:
 
 Haga clic en minimizar para cerrar el modo de pantalla completa.
 
->[!TConsejo]
+>[!TIP]
 >
 >Copiar listas anidadas de [!DNL Microsoft Word] en RTE puede arrojar resultados incoherentes. En su lugar, pegue como un texto y realice ajustes manuales.
 
