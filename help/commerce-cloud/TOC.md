@@ -1,32 +1,32 @@
 ---
-sub-product: AEM comercio como Cloud Service
-user-guide-title: AEM comercio como Cloud Service
+sub-product: AEM Commerce as a Cloud Service
+user-guide-title: AEM Commerce as a Cloud Service
 user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8e7b2e2e0c5c23aa14bc4d302c417dcc27f70468
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
 
 # Comercio {#commerce}
 
-+ [AEM comercio como Cloud Service](/help/commerce-cloud/home.md)
++ [AEM Commerce as a Cloud Service](/help/commerce-cloud/home.md)
 + [Introducción](overview.md)
 + [Cambios importantes](changes.md)
 + Arquitectura {#architecture}
    + [Integración de Magento](architecture/magento.md)
-   + [Integración de comercio de terceros](architecture/third-party.md)
+   + [Integraciones de comercio de terceros](architecture/third-party.md)
 + [Introducción](getting-started.md)
-+ [Desarrollar con AEM SDK de Cloud Service](develop.md)
-+ Configurar {#configure}
++ [Desarrollo con el SDK de AEM Cloud Service](develop.md)
++ Configuración {#configure}
    + [Uso de varias plantillas](configuring/multi-template-usage.md)
    + [Configuración de varias tiendas](configuring/multi-store-setup.md)
    + [Configuración de direcciones URL para SEO](configuring/advanced-url-configuration.md)
    + [Opciones de almacenamiento en caché](configuring/caching.md)
-+ Personalizar {#customize}
-   + [Diseño de componentes CIF](customizing/style-cif-component.md)
++ Personalización {#customize}
+   + [Diseño de componentes del CIF](customizing/style-cif-component.md)
    + [Personalización de componentes CIF](customizing/customize-cif-components.md)
 + [Preguntas más frecuentes](faq.md)
