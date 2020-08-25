@@ -1,22 +1,22 @@
 ---
-title: Personalizar componentes principales de CIF
-description: Personalizar componentes principales de CIF
-translation-type: tm+mt
+title: Personalice los componentes principales de CIF
+description: Personalice los componentes principales de CIF
+translation-type: ht
 source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2520'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Personalizar componentes principales de AEM CIF {#customize-cif-components}
+# Personalización de los componentes principales del CIF de AEM {#customize-cif-components}
 
-[AEM componentes](https://github.com/adobe/aem-core-cif-components) principales de CIF proporciona un conjunto estándar de componentes de comercio que pueden utilizarse para acelerar un proyecto que integra soluciones de Adobe Experience Manager (AEM) y Magento. Estos componentes están listos para la producción y se pueden diseñar [fácilmente con CSS](style-cif-component.md). Muchas implementaciones también desean ampliar estos componentes para satisfacer los requerimientos específicos del negocio.
+Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan un conjunto estándar de componentes de comercio que pueden utilizarse para acelerar un proyecto que integra soluciones de Adobe Experience Manager (AEM) y Magento. Estos componentes están listos para la producción y se pueden [diseñar fácilmente con CSS](style-cif-component.md). Muchas implementaciones también desean ampliar estos componentes para satisfacer los requerimientos específicos de la empresa.
 
-En este tutorial analizaremos varios puntos de extensión diferentes proporcionados por AEM componentes principales de CIF y AEM en general. Para ello, ampliaremos las capacidades del componente [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para incluir la capacidad de procesar un letrero &quot;Nuevo&quot;. Los autores de contenido tendrán la capacidad de alternar este letrero y determinar cuánto tiempo se mostrará. La &quot;edad&quot; del producto se basará en su fecha de creación en el catálogo del Magento. Una vez que un producto tiene una cierta cantidad de días, la pancarta &quot;Nuevo&quot; debe desaparecer automáticamente.
+En este tutorial analizaremos varios puntos de extensión diferentes proporcionados por los componentes principales del CIF de AEM y de AEM en general. Para ello, ampliaremos las funcionalidades del componente [teaser de productos](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para incluir la capacidad de renderizar un titular &quot;Nuevo&quot;. Los autores de contenido tendrán la capacidad de alternar este titular y determinar cuánto tiempo se mostrará. La &quot;edad&quot; del producto se basa en su fecha de creación en el catálogo de Magento. Una vez que un producto tiene una cierta cantidad de días, el titular &quot;Nuevo&quot; debe desaparecer automáticamente.
 
-![Nueva pancarta extendida](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
+![Nuevo titular extendido](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
 
 ## Requisitos previos {#prerequisites}
 
@@ -24,19 +24,19 @@ Se requieren las siguientes herramientas y tecnologías:
 
 * [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o posterior)
-* [AEM Cloud SKD con complemento CIF](../develop.md)
-* Magento compatible con componentes principales de CIF
+* [SKD de AEM Cloud con el complemento CIF](../develop.md)
+* Compatibilidad de Magento con los componentes principales del CIF
 
 Se recomienda revisar el siguiente contenido antes de continuar con este tutorial:
 
-* [Introducción a Commerce Integration Framework en AEM como Cloud Service](/help/commerce-cloud/overview.md)
-* [Componentes principales de CIF de estilo AEM - Tutorial](style-cif-component.md)
+* [Presentación de Commerce Integration Framework en AEM as a Cloud Service.](/help/commerce-cloud/overview.md)
+* [Diseño de los componentes principales del CIF de AEM: tutorial](style-cif-component.md)
 
 ## Proyecto de inicio
 
-Hemos proporcionado un proyecto de inicio para utilizarlo con este tutorial. El proyecto se generó usando la [versión 0.7.0](https://github.com/adobe/aem-cif-project-archetype/releases/tag/cif-project-archetype-0.7.0) del Arquetipo del Proyecto CIF. Se considera una práctica recomendada utilizar siempre la [última versión](https://github.com/adobe/aem-cif-project-archetype/releases/latest) del arquetipo al iniciar un nuevo proyecto.
+Hemos proporcionado un proyecto de inicio para utilizarlo con este tutorial. El proyecto se generó usando la [versión 0.7.0](https://github.com/adobe/aem-cif-project-archetype/releases/tag/cif-project-archetype-0.7.0) del tipo de archivo del proyecto CIF. Se considera una práctica recomendada utilizar siempre la [última versión](https://github.com/adobe/aem-cif-project-archetype/releases/latest) del tipo de archivo al iniciar un nuevo proyecto.
 
-1. Descargue [**acme-store.zip **](/help/commerce-cloud/assets/customize-cif-components/acme-store.zip)del proyecto de inicio en su escritorio.
+1. Descargue el proyecto de inicio [**acme-store.zip**](/help/commerce-cloud/assets/customize-cif-components/acme-store.zip) a su escritorio.
 
 1. Descomprima **acme-store.zip** y debería ver la siguiente estructura de carpetas:
 
@@ -58,43 +58,43 @@ Hemos proporcionado un proyecto de inicio para utilizarlo con este tutorial. El 
    $ mvn clean install -PautoInstallAll
    ```
 
-1. Añada las configuraciones de OSGi necesarias para conectar la instancia de AEM a una instancia de Magento o agregar las configuraciones al proyecto recién creado.
+1. Añada las configuraciones de OSGi necesarias para conectar la instancia de AEM a una instancia de Magento o añadir las configuraciones al proyecto recién creado.
 
 1. En este punto, debería tener una versión de trabajo de una tienda conectada a una instancia de Magento. Vaya a la página `US` > `Home` en: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-   Hay que ver que la tienda está usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que el Magento de conexión está funcionando.
+   Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Magento está funcionando.
 
    ![Tienda configurada con tema de Venia](/help/commerce-cloud/assets/customize-cif-components/acme-store-configured.png)
 
 ## Creación del teaser de productos {#author-product-teaser}
 
-Ampliaremos el componente teaser de producto a través de este tutorial. Como primer paso, agregaremos una nueva instancia del teaser de productos a la Página de inicio para comprender la funcionalidad básica.
+Ampliaremos el componente teaser de productos a través de este tutorial. Como primer paso, añadiremos una nueva instancia del teaser de productos a la página de inicio para entender la funcionalidad de línea de base.
 
-1. Navegue hasta la **Página de inicio** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Vaya hasta la **Página de inicio** del sitio: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-1. Inserte un nuevo componente **de teaser** de producto en el contenedor de diseño principal de la página.
+1. Inserte un nuevo componente **teaser de productos** en el contenedor del diseño principal de la página.
 
-   ![Insertar teaser de productos](/help/commerce-cloud/assets/customize-cif-components/product-teaser-add-component.png)
+   ![Inserción del teaser de productos](/help/commerce-cloud/assets/customize-cif-components/product-teaser-add-component.png)
 
-1. Expanda el panel lateral (si no está activado) y cambie el menú desplegable del buscador de recursos a **Productos**. Esto debería mostrar una lista de los productos disponibles de una instancia de Magento conectada. Seleccione un producto y **arrástrelo y suéltelo** en el componente **Product Teaser** de la página.
+1. Expanda el panel lateral (si no está activado) y cambie desde menú desplegable del buscador de recursos a **Productos**. Esto debería mostrar una lista de los productos disponibles de una instancia conectada a Magento. Seleccione un producto y **arrástrelo y suéltelo** en el componente **teaser de productos** de la página.
 
-   ![Arrastrar y soltar teaser de producto](/help/commerce-cloud/assets/customize-cif-components/drag-drop-product-teaser.png)
+   ![Arrastrar y soltar teaser de productos](/help/commerce-cloud/assets/customize-cif-components/drag-drop-product-teaser.png)
 
-   > Tenga en cuenta que también puede configurar el producto mostrado configurando el componente mediante el cuadro de diálogo (haciendo clic en el icono de *llave inglesa* ).
+   > Tenga en cuenta que también puede configurar el producto mostrado configurando el componente con el cuadro de diálogo (haga clic en el icono de *llave inglesa*).
 
-1. Ahora debería ver un producto que está mostrando el teaser de productos. El nombre del producto y el precio del producto son atributos predeterminados que se muestran.
+1. Ahora debería ver un producto que muestra el teaser de productos. Se muestran el nombre y el precio del producto ya que son atributos predeterminados.
 
    ![Teaser de productos: estilo predeterminado](/help/commerce-cloud/assets/customize-cif-components/product-teaser-default-style.png)
 
 ## Personalización del marcado del teaser de productos {#customize-markup-product-teaser}
 
-Una extensión común de AEM componentes es modificar el marcado generado por el componente. Esto se realiza anulando la secuencia de comandos [](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) HTL que utiliza el componente para representar su marcado. HTML Template Language (HTL) es un lenguaje de plantilla ligero que AEM los componentes utilizan para representar dinámicamente el marcado basado en contenido creado, lo que permite reutilizar los componentes. El teaser de productos, por ejemplo, se puede reutilizar una y otra vez para mostrar diferentes productos.
+Una extensión común de los componentes de AEM es modificar el marcado que genera el componente. Esto se realiza anulando la [secuencia de comandos HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) que utiliza el componente para representar su marcado. La plantilla de idioma HTML (HTL) es un idioma de plantilla ligero que los componentes de AEM utilizan para representar dinámicamente el marcado basado en contenido creado, lo que permite la reutilización de los componentes. El teaser de productos, por ejemplo, se puede reutilizar una y otra vez para mostrar diferentes productos.
 
-En nuestro caso, queremos mostrar un letrero encima del teaser para indicar que el producto es &quot;Nuevo&quot; y que se ha agregado recientemente al catálogo. El patrón de diseño para [personalizar el marcado](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de un componente es en realidad estándar para todos los componentes AEM, no solo para los componentes principales de CIF AEM.
+En nuestro caso, queremos renderizar un titular sobre el teaser para indicar que el producto es &quot;Nuevo&quot; y que se ha añadido recientemente al catálogo. El patrón de diseño para [personalizar el marcado](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de un componente es en realidad estándar para todos los componentes AEM, no solo para los componentes principales del CIF de AEM.
 
 Utilice el IDE de su elección para [abrir el proyecto de inicio descargado](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) al principio del tutorial.
 
-1. Navegue y expanda el módulo **ui.apps** y expanda la jerarquía de carpetas a: `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser` e inspeccione el `.content.xml` archivo.
+1. Navegue y expanda el módulo **ui.apps** y expanda la jerarquía de carpetas a: `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser` e inspeccione el archivo `.content.xml` .
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -106,21 +106,21 @@ Utilice el IDE de su elección para [abrir el proyecto de inicio descargado](htt
        componentGroup="acme"/>
    ```
 
-   Arriba se encuentra la definición de componentes para el componente teaser de productos en nuestro proyecto. Observe la propiedad `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este es un ejemplo de creación de un componente [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components)Proxy. En lugar de copiar y pegar todas las secuencias de comandos HTL de teaser de productos de los componentes principales de CIF de AEM, podemos usar `sling:resourceSuperType` para heredar toda la funcionalidad.
+   Arriba se encuentra la definición del componente para el componente teaser de productos en nuestro proyecto. Observe la propiedad `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este es un ejemplo de creación de un [componente Proxy](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/get-started/using.html#create-proxy-components). En lugar de copiar y pegar todas las secuencias de comandos HTL del teaser de productos de los componentes principales del CIF de AEM, podemos usar `sling:resourceSuperType` para heredar todas las funcionalidades.
 
-1. Abra un navegador nuevo y vaya a [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/core/cif/components/commerce/productteaser/v1/productteaser) en AEM. Expanda el árbol para vista del `productteaser` componente en: `/apps/core/cif/components/commerce/productteaser/v1/productteaser`::
+1. Abra un explorador nuevo y vaya a [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/core/cif/components/commerce/productteaser/v1/productteaser) en AEM. Expanda el árbol para ver el `productteaser` componente en: `/apps/core/cif/components/commerce/productteaser/v1/productteaser`:
 
-   ![Teaser de producto CRXDE Lite](/help/commerce-cloud/assets/customize-cif-components/crxde-productteaser.png)
+   ![Teaser del producto CRXDE Lite](/help/commerce-cloud/assets/customize-cif-components/crxde-productteaser.png)
 
-   Es la definición completa del componente para el componente teaser de producto.
+   Es la definición completa del componente para el componente teaser de productos.
 
-1. Vuelva a su IDE y al proyecto de Acme Store. Cree un nuevo archivo con el nombre `productteaser.html` debajo de `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser`.
+1. Cambie a su IDE y al proyecto de Tienda Acme. Cree un nuevo archivo con el nombre `productteaser.html` debajo de `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser`.
 
-1. Copie el contenido de `productteaser.html` CRXDE- [Lite](http://localhost:4502/crx/de/index.jsp#/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html) y péguelo en el proyecto Acme-Store en el `productteaser.html` archivo recién creado.
+1. Copie el contenido de `productteaser.html` de [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html) y péguelo en el proyecto Acme-Store en el `productteaser.html` archivo recién creado.
 
-   ![Sobrescritura HTML de teaser de productos](/help/commerce-cloud/assets/customize-cif-components/productteaser-html-overwrite.png)
+   ![Sobrescritura HTML del teaser de productos](/help/commerce-cloud/assets/customize-cif-components/productteaser-html-overwrite.png)
 
-1. En el proyecto Acme-Store, modifique el `productteaser.html` archivo e inserte un nuevo div que represente un distintivo sobre el marcado de imagen del producto:
+1. En el proyecto Acme-Store, modifique el `productteaser.html` archivo e inserte un nuevo div que represente un distintivo sobre el marcado de la imagen del producto:
 
    ```html
    ...
@@ -142,28 +142,28 @@ Utilice el IDE de su elección para [abrir el proyecto de inicio descargado](htt
    </div>
    ```
 
-1. Implemente el código actualizado en la instancia local de AEM con sus habilidades o con [las características de su IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment):
+1. Implemente el código actualizado en la instancia local de AEM con sus habilidades con Maven o con [las características de su IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment):
 
    ```shell
    $ cd ui.apps
    $ mvn -PautoInstallPackage clean install
    ```
 
-1. En el navegador, vuelva a la [página principal de la tienda](http://localhost:4502/editor.html/content/acme/us/en.html) en AEM. Actualice y verá que aparece un letrero &quot;nuevo&quot; en la esquina superior derecha del componente.
+1. En el explorador, vuelva a la [página principal de la tienda](http://localhost:4502/editor.html/content/acme/us/en.html) en AEM. Actualice y verá que aparece un titular &quot;nuevo&quot; en la esquina superior derecha del componente.
 
-   ![Nueva pancarta extendida](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
+   ![Nuevo titular extendido](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
 
-   Actualmente no hay ninguna lógica detrás de cuándo se mostrará la pancarta. En los próximos ejercicios corregiremos eso.
+   Actualmente no hay ninguna lógica detrás de cuándo se mostrará el titular. En los próximos ejercicios corregiremos eso.
 
-   > Tenga en cuenta que el CSS para procesar la pancarta se proporcionó como parte del proyecto de inicio y se puede encontrar en: `ui.apps/../apps/acme/clientlibs/theme/components/productteaser/teaser.css`. Para obtener más información, consulte el tutorial [Estilo de los componentes principales de CIF](style-cif-component.md).
+   > Tenga en cuenta que el CSS para renderizar el titular se proporcionó como parte del proyecto de inicio y se puede encontrar en: `ui.apps/../apps/acme/clientlibs/theme/components/productteaser/teaser.css`. Para obtener más información, consulte el tutorial [Diseño de componentes principales del CIF](style-cif-component.md).
 
 ## Personalización del cuadro de diálogo del teaser de productos {#customize-dialog-product-teaser}
 
-A continuación, personalizaremos el cuadro de diálogo del componente Product Teaser para permitir que un Autor determine el intervalo de fechas para el cual un producto se considera &quot;nuevo&quot; y si se debe mostrar la pancarta. Para ello, [personalizaremos el cuadro de diálogo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) de Product Teaser como parte del proyecto Acme Store.
+A continuación, personalizaremos el cuadro de diálogo del componente teaser de productos para permitir que un Autor determine el intervalo de fecha para el cual un producto se considera &quot;nuevo&quot; y si se debe mostrar el titular. Para ello, [personalizaremos el cuadro de diálogo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) del teaser de productos como parte del proyecto de tienda Acme.
 
 1. Abra el proyecto de la tienda Acme en el IDE que desee y vaya a `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser`.
 
-1. Debajo de la `productteaser` carpeta, agregue una nueva carpeta denominada `_cq_dialog`. Añada un nuevo archivo a la `_cq_dialog` carpeta denominada `.content.xml`. Ahora debe tener la siguiente estructura de archivos:
+1. Debajo de la carpeta `productteaser`, añada una nueva carpeta denominada `_cq_dialog`. Añada un nuevo archivo a la `_cq_dialog` carpeta denominada `.content.xml`. Ahora debe tener la siguiente estructura de archivos:
 
    ```plain
    ../acme
@@ -239,15 +239,15 @@ A continuación, personalizaremos el cuadro de diálogo del componente Product T
    </jcr:root>
    ```
 
-   Arriba hemos agregado 2 campos adicionales como parte de una nueva ficha y un único campo oculto.
+   Arriba hemos agregado dos campos adicionales como parte de una nueva pestaña y un único campo oculto.
 
-   1. Casilla de verificación para mostrar el distintivo &#39;Nuevo&#39;
+   1. Casilla de verificación para mostrar el distintivo &quot;Nuevo&quot;
    2. Campo de número para definir la edad máxima del producto
-   3. Campo oculto para asegurarse de que la edad máxima del producto se guarda como una longitud (consulte [@TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) para obtener más información)
+   3. Campo oculto para asegurarse de que la edad máxima del producto se guarde con una longitud (consulte [@TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) para obtener más información).
 
-   Los cuadros de diálogo definidos como parte de un componente proxy heredan todos los campos de diálogo existentes con una función conocida como Fusión [de recursos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html)Sling. Por lo tanto, no es necesario redefinir los campos existentes que forman parte del teaser de productos.
+   Los cuadros de diálogo definidos como parte de un componente proxy heredan todos los campos de diálogo existentes con una función conocida como [fusión de recursos de Sling](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html). Por lo tanto, no es necesario redefinir los campos existentes que forman parte del teaser de productos.
 
-1. Actualice `productteaser.html` y agregue un `data-sly-test` al `<div>` para el distintivo. Será una prueba sencilla para decidir procesar el distintivo si el usuario ha marcado &quot;true&quot;.
+1. Actualice `productteaser.html` y añada un `data-sly-test` al `<div>` para el distintivo. Será una prueba sencilla para decidir procesar el distintivo si el usuario ha marcado &quot;true&quot;.
 
    ```html
        ...
@@ -260,30 +260,30 @@ A continuación, personalizaremos el cuadro de diálogo del componente Product T
    ...
    ```
 
-1. Implemente el código actualizado en la instancia local de AEM mediante las funciones de su IDE o con sus habilidades principales:
+1. Implemente el código actualizado en la instancia local de AEM mediante las funciones de su IDE o con sus habilidades con Maven:
 
    ```shell
    $ cd ui.apps
    $ mvn -PautoInstallPackage clean install
    ```
 
-1. Vuelva al componente Product Teaser y haga clic en el icono de la *llave inglesa* para abrir el cuadro de diálogo. Ahora debería ver una ficha para el **distintivo** con dos campos adicionales. Al actualizar estos campos, los valores se mantendrán en AEM. Debe poder activar o desactivar el distintivo con la casilla de verificación:
+1. Vuelva al componente teaser de productos y haga clic en el icono de la *llave inglesa* para abrir el cuadro de diálogo. Ahora debería ver una pestaña para el **distintivo** con dos campos adicionales. Al actualizar estos campos, los valores se mantienen en AEM. Debe poder activar o desactivar el distintivo con la casilla de verificación:
 
    ![Alternar distintivo](/help/commerce-cloud/assets/customize-cif-components/toggle-badge-checkbox.gif)
 
-   Esto le da al autor cierto control sobre cuándo aparece el distintivo. Sin embargo, sería ideal que la insignia desapareciera automáticamente una vez que el producto haya alcanzado una cierta edad en el día según la entrada de la edad **** máxima del producto. Para ello, tendremos que implementar una lógica de backend.
+   Esto le da al autor cierto control sobre cuándo aparece el distintivo. Sin embargo, sería ideal que el distintivo desapareciera automáticamente una vez que el producto haya alcanzado una cierta edad en el día según la entrada de la **edad máxima del producto**. Para ello, tendremos que implementar una lógica de back-end.
 
-## Actualización del modelo Sling para el teaser de producto {#updating-sling-model-product-teaser}
+## Actualización del modelo de Sling para el teaser de productos {#updating-sling-model-product-teaser}
 
-A continuación, ampliaremos la lógica empresarial del teaser de productos implementando un modelo Sling. [Los modelos](https://sling.apache.org/documentation/bundles/models.html)de Sling son &quot;POJO&quot; (objetos Java antiguos comunes) impulsados por anotaciones que implementan cualquier lógica comercial necesaria para el componente. Los modelos Sling se utilizan junto con las secuencias de comandos HTL como parte del componente. Seguiremos el patrón de [delegación de modelos](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) Sling para que podamos extender partes del modelo existente de teaser de producto.
+A continuación, ampliaremos la lógica empresarial del teaser de productos implementando el modelo Sling. [Los modelos de Sling](https://sling.apache.org/documentation/bundles/models.html) son objetos Java antiguos comunes (&quot;POJO&quot;), impulsados por anotaciones que implementan cualquier lógica comercial necesaria para el componente. Los modelos Sling se utilizan junto con las secuencias de comandos HTL como parte del componente. Seguiremos el patrón de [delegación de modelos Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) para que podamos extender las partes del modelo de teaser de productos existente.
 
 Los modelos Sling se implementan como Java y se pueden encontrar en el módulo **principal** del proyecto generado.
 
-1. Abra el proyecto de Acme Store en el IDE que desee y navegue bajo el módulo **principal** para: `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`. **MyProductTeaser.java** es una interfaz de Java que hemos creado previamente y que amplía la interfaz CIF **ProductTeaser** .
+1. Abra el proyecto de la tienda Acme en el IDE que desee y vaya al módulo **principal** a: `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`. **MyProductTeaser.java** es una interfaz de Java que hemos creado previamente y que amplía la interfaz **ProductTeaser** del CIF.
 
 1. A continuación, abra el archivo **MyProductTeaserImpl.java** ubicado en: `core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`. `MyProductTeaserImpl` es la clase de implementación para la interfaz `MyProductTeaser`.
 
-   Utilizando el patrón de [delegación para modelos](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) Sling, podemos hacer referencia a la `ProductTeaser` clase mediante la `sling:resourceSuperType` propiedad:
+   Utilizando el patrón de [delegación para modelos Sling,](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) podemos hacer referencia a la clase `ProductTeaser`mediante la propiedad `sling:resourceSuperType`:
 
    ```java
    @Self
@@ -291,7 +291,7 @@ Los modelos Sling se implementan como Java y se pueden encontrar en el módulo *
    private ProductTeaser productTeaser;
    ```
 
-   Para todos los métodos que no queremos anular o cambiar, simplemente podemos devolver el valor que devuelve el `ProductTeaser` :
+   Para todos los métodos que no queremos anular o cambiar, simplemente podemos devolver el valor que devuelve el `ProductTeaser`:
 
    ```java
    @Override
@@ -300,7 +300,7 @@ Los modelos Sling se implementan como Java y se pueden encontrar en el módulo *
    }
    ```
 
-1. Uno de los puntos de extensión adicionales que proporciona AEM componentes principales de CIF es el `AbstractProductRetriever` que nos permite tener acceso a atributos de producto específicos. Añada el siguiente método para inicializar el `AbstractProductRetriever` en el `init()` método:
+1. Uno de los puntos de extensión adicionales que proporcionan los componentes principales del CIF de AEM es el `AbstractProductRetriever` que nos permite tener acceso a los atributos de productos específicos. Añada el siguiente método para inicializar el `AbstractProductRetriever` en el método `init()`:
 
    ```java
    import javax.annotation.PostConstruct;
@@ -319,7 +319,7 @@ Los modelos Sling se implementan como Java y se pueden encontrar en el módulo *
    ...
    ```
 
-1. Pruebe estos cambios modificando el precio con formato y anulando la lógica en `getFormattedPrice()`. Realice las siguientes actualizaciones para dar formato explícito al precio en función de la configuración regional alemana. (¡o elegir otro país!)
+1. Pruebe estos cambios modificando el precio con formato y anulando la lógica en `getFormattedPrice()`. Realice las siguientes actualizaciones para dar formato explícito al precio en función de la configuración regional en alemán (o elija otro país).
 
    ```java
            import java.util.Locale;
@@ -340,11 +340,11 @@ Los modelos Sling se implementan como Java y se pueden encontrar en el módulo *
                    }
    ```
 
-   Observe cómo el `productRetriever` objeto nos da acceso al `ProductInterface` objeto mediante el `fetchProduct()` método . Puede ver todos los métodos [disponibles aquí](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java).
+   Observe cómo el objeto `productRetriever` nos da acceso al objeto `ProductInterface` mediante el método `fetchProduct()` . Puede ver todos los métodos [disponibles aquí](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java).
 
-   > Nota* modificar la configuración regional a alemán es solo un ejemplo divertido para ver la anulación. En realidad, ProductTeaser utiliza la configuración regional de la [página para determinar el formato](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/internal/models/v1/productteaser/ProductTeaserImpl.java#L173).
+   > Nota:* Modificar la configuración regional a alemán es solo un ejemplo divertido para ver la anulación. En realidad, ProductTeaser utiliza la configuración regional de la [página para determinar el formato](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/internal/models/v1/productteaser/ProductTeaserImpl.java#L173).
 
-1. A continuación, debemos actualizar **productEaser.html** en el módulo **ui.apps** para hacer referencia a nuestro nuevo modelo Sling en: `com.acme.cif.core.models.MyProductTeaser`.
+1. A continuación, debemos actualizar **productteaser.html** en el módulo **ui.apps** para hacer referencia a nuestro nuevo modelo Sling en: `com.acme.cif.core.models.MyProductTeaser`.
 
    ```diff
      <!--/* productteaser.html - change the use.product to point to MyProductTeaser */-->
@@ -357,26 +357,26 @@ Los modelos Sling se implementan como Java y se pueden encontrar en el módulo *
 
    Guarde los cambios en `productteaser.html`.
 
-1. Implemente el código base en la instancia local de AEM. Dado que se han realizado cambios en los módulos **ui.apps** y **core** , cree e implemente el proyecto desde la raíz:
+1. Implemente el código base en la instancia local de AEM. Dado que se han realizado cambios en los módulos **ui.apps** y **core**, cree e implemente el proyecto desde la raíz:
 
    ```shell
    $ cd acme-store
    $ mvn -PautoInstallPackage clean install
    ```
 
-1. Abra un explorador y vaya a: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). Esta consola muestra todos los modelos Sling registrados en el sistema. Comprobación de Dobles para garantizar que MyTeaserModelImpl se implementó y se asignó correctamente. Debería poder ver algo como:
+1. Abra un explorador y vaya a [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). Esta consola muestra todos los modelos Sling registrados en el sistema. Compruebe que MyTeaserModelImpl se implementó y se asignó correctamente. Debería poder ver algo como:
 
    ```plain
    com.acme.cif.core.models.MyProductTeaserImpl - acme/components/commerce/productteaser
    ```
 
-1. Por último, navegue hasta el lugar en el que creó el componente Product Teaser y debería ver el precio con el formato de moneda alemán:
+1. Por último, navegue hasta el lugar en el que creó el componente teaser de productos y debería ver el precio con el formato de moneda alemán:
 
    ![Formato de precio actualizado](/help/commerce-cloud/assets/customize-cif-components/german-currency-update.png)
 
 ## Implementar la lógica isShowBadge {#implement-isshowbadge}
 
-Ahora que hemos tenido la oportunidad de experimentar con la anulación de los métodos del modelo de Sling, vamos a implementar la lógica de cuándo mostrar la insignia &quot;nueva&quot;.
+Ahora que hemos tenido la oportunidad de experimentar con la anulación de los métodos del modelo de Sling, vamos a implementar la lógica de cuándo mostrar el distintivo &quot;nuevo&quot;.
 
 1. Vuelva a su IDE y abra el archivo **MyProductTeaser.java** en: `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`.
 
@@ -395,7 +395,7 @@ Ahora que hemos tenido la oportunidad de experimentar con la anulación de los m
 
 1. A continuación, vuelva a abrir **MyProductTeaserImpl.java** en `core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`.
 
-1. La lógica de cuánto tiempo se mostrará el distintivo &quot;nuevo&quot; se basará en el `created_at` atributo del Producto. Para tener acceso a ese atributo, necesitamos extender la consulta **GraphQL** realizada por ProductTeaser. Podemos hacerlo actualizando el `init()` método en **MyProductTeaserImpl.java**:
+1. La lógica de cuánto tiempo se mostrará el distintivo &quot;nuevo&quot; se basará en el atributo `created_at` del Producto. Para tener acceso a ese atributo, necesitamos extender la consulta **GraphQL** realizada por ProductTeaser. Podemos hacerlo actualizando el `init()` método en **MyProductTeaserImpl.java**:
 
    ```java
    //MyProductTeaserImpl.java
@@ -415,14 +415,14 @@ Ahora que hemos tenido la oportunidad de experimentar con la anulación de los m
    }
    ```
 
-   Añadir al `extendProductQueryWith` método es una manera eficaz de garantizar que el resto del modelo disponga de atributos de producto adicionales. También minimiza el número de consultas ejecutadas.
+   Añadir al método `extendProductQueryWith` es una manera eficaz de garantizar que el resto del modelo disponga de atributos de productos adicionales. También minimiza el número de consultas ejecutadas.
 
    >[!NOTE]
-   >En el código anterior utilizamos los`addCustomSimpleField` para recuperar la `created_at` propiedad. Esto ilustra cómo se puede realizar la consulta de cualquier atributo personalizado que forme parte del esquema del Magento.
+   >En el código anterior utilizamos los `addCustomSimpleField` para recuperar la propiedad `created_at`. Esto ilustra cómo se puede realizar la consulta de cualquier atributo personalizado que forme parte del esquema del Magento.
    >
-   > Sin embargo, la `created_at` propiedad se ha implementado realmente como parte de la interfaz [de](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) producto y una mejor práctica sería reutilizar el método como el así: `productRetriever.extendProductQueryWith(p -> p.createdAt());`. Se han implementado la mayoría de los atributos de esquema encontrados con frecuencia, por lo que solo debe utilizarse `addCustomSimpleField` para atributos verdaderamente personalizados.
+   > Sin embargo, la propiedad `created_at` se ha implementado realmente como parte de la [interfaz de producto](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) y una práctica recomendada sería reutilizar el método como el: `productRetriever.extendProductQueryWith(p -> p.createdAt());`. Se han implementado la mayoría de los atributos de esquema encontrados con frecuencia, por lo que solo debe utilizarse `addCustomSimpleField` para atributos verdaderamente personalizados.
 
-1. A continuación, implementaremos el `isShowBadge()` método:
+1. A continuación, implementaremos el método `isShowBadge()`:
 
    ```java
    import java.time.format.DateTimeFormatter;
@@ -470,9 +470,9 @@ Ahora que hemos tenido la oportunidad de experimentar con la anulación de los m
     }
    ```
 
-   En el método anterior comprobamos primero si el autor ha habilitado la funcionalidad de distintivo con la casilla de verificación. A continuación, leemos el valor de la propiedad `age` que se establece como parte del cuadro de diálogo y representa el número máximo de días de antigüedad que debe tener un producto hasta que desaparezca el letrero. Finalmente calculamos la antigüedad del producto en base a la `created_at` fecha. Si después de comparar los dos valores regresamos `true` para mostrar el distintivo, `false` en todos los demás casos.
+   En el método anterior comprobamos primero si el autor ha habilitado la funcionalidad de distintivo con la casilla de verificación. A continuación, leemos el valor de la propiedad `age` que se establece como parte del cuadro de diálogo y representa el número máximo de días de antigüedad que debe tener un producto hasta que desaparezca el titular. Finalmente calculamos la antigüedad del producto en base a la `created_at` fecha. Si después de comparar los dos valores regresamos a `true` para mostrar el distintivo, `false` en todos los demás casos.
 
-1. Finalmente, se necesita agregar más a la `productteaser.html` secuencia de comandos para llamar al `isShowBadge()` método. Abra el archivo en `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser/productteaser.html`. Realice la siguiente actualización:
+1. Finalmente, se necesita añadir más a la secuencia de comandos `productteaser.html` para llamar al método `isShowBadge()`. Abra el archivo en `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser/productteaser.html`. Realice la siguiente actualización:
 
    ```diff
    ...
@@ -483,18 +483,18 @@ Ahora que hemos tenido la oportunidad de experimentar con la anulación de los m
    ...
    ```
 
-1. Implemente el código base en la instancia local de AEM. Dado que se han realizado cambios en los módulos **ui.apps** y **core** , cree e implemente el proyecto desde la raíz:
+1. Implemente el código base en la instancia local de AEM. Dado que se han realizado cambios en los módulos **ui.apps** y **core**, cree e implemente el proyecto desde la raíz:
 
    ```shell
    $ cd acme-store
    $ mvn -PautoInstallPackage clean install
    ```
 
-1. Regrese a AEM y al componente ProductTeaser y experimente con números diferentes para mostrar la edad máxima del producto. Dependiendo de la antigüedad del producto, es posible que deba introducir números muy grandes para que se muestre el distintivo.
+1. Regrese a AEM y al componente ProductTeaser y experimente con números diferentes para mostrar la edad máxima del producto. Según la edad del producto, es posible que deba introducir números muy grandes para que se muestre el distintivo.
 
    ![Edad máxima del producto 999](/help/commerce-cloud/assets/customize-cif-components/max-age-working.png)
 
-1. Finalmente, busque los registros de AEM para ver la sentencia de registro ingresada en el paso 5 anterior. Debe imprimir el valor de la `created_at` propiedad que proviene del Magento. Puede vista de los registros de AEM abriendo el `error.log` archivo. Este archivo se encuentra debajo del `crx-quickstart/logs/error.log` lugar donde se ha instalado el tarro de AEM. Puede esperar ver un elemento de línea como el siguiente:
+1. Finalmente, busque los registros de AEM para ver la sentencia de registro ingresada anteriormente en el paso 5. Debe imprimir el valor de la propiedad `created_at` que proviene del Magento. Puede vista de los registros de AEM abriendo el archivo `error.log`. Este archivo se encuentra debajo del `crx-quickstart/logs/error.log` donde se ha instalado el jar de AEM. Puede esperar ver un elemento de línea como el siguiente:
 
    ```plain
    com.acme.cif.core.models.MyProductTeaser ***CREATED_AT**** 2019-06-05 06:51:33
@@ -504,11 +504,11 @@ Ahora que hemos tenido la oportunidad de experimentar con la anulación de los m
 
 ### Felicitaciones {#congratulations}
 
-¡Acaba de personalizar su primer componente AEM CIF! Descargue el paquete de solución [terminado aquí](/help/commerce-cloud/assets/customize-cif-components/acme-store-solution.zip).
+Acaba de personalizar su primer componente del CIF de AEM. Descargue el paquete de solución [terminado aquí](/help/commerce-cloud/assets/customize-cif-components/acme-store-solution.zip).
 
 ## Recursos adicionales {#additional-resources}
 
-* [AEM Arquetipo](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components)
-* [Personalización de los componentes principales de AEM CIF](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-* [Personalización de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
+* [Tipo de archivo de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
+* [Personalización de los componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+* [Personalización de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/customizing.html)
