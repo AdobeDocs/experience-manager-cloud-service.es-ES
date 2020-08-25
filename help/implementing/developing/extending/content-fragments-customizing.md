@@ -2,9 +2,9 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,11 @@ En Adobe Experience Manager como Cloud Service, un fragmento de contenido extien
 
 * [Creación y administración de fragmentos](/help/assets/content-fragments/content-fragments.md) de contenido y creación de [páginas con fragmentos](/help/sites-cloud/authoring/fundamentals/content-fragments.md) de contenido para obtener más información sobre los fragmentos de contenido.
 
-* [Administración de recursos](/help/assets/manage-digital-assets.md) y [personalización y ampliación del editor](/help/assets/extend-asset-editor.md) de recursos para obtener más información sobre los recursos estándar.
+* [Administración de recursos](/help/assets/manage-digital-assets.md) para obtener más información sobre los recursos estándar.
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## Arquitectura {#architecture}
 
@@ -43,7 +47,7 @@ Los fragmentos de contenido individuales se basan en modelos de fragmento de con
 
 ### Integración de sitios con recursos {#integration-of-sites-with-assets}
 
-Content Fragment Management (CFM) forma parte de AEM Assets como:
+Content Fragment Management (CFM) es parte de AEM Assets como:
 
 * Los fragmentos de contenido son recursos.
 * Utilizan la funcionalidad de Recursos existente.
@@ -99,7 +103,7 @@ Para realizar la integración con el núcleo de recursos:
 >
 >El componente Fragmento [de contenido forma parte de los componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)principales. Consulte [Desarrollo de componentes](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html) principales para obtener más detalles.
 
-Se puede hacer referencia a los fragmentos de contenido desde páginas de AEM, al igual que a cualquier otro tipo de recurso. AEM proporciona el componente **[principal Fragmento de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)**contenido, un[componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal de fragmento**[de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** .
+Se puede hacer referencia a los fragmentos de contenido desde AEM páginas, al igual que a cualquier otro tipo de recurso. AEM proporciona el componente **[principal Fragmento de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)** contenido, un [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal de fragmento **[de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)** .
 
 * El componente utiliza la propiedad `fragmentPath` para hacer referencia al fragmento de contenido real. La `fragmentPath` propiedad se gestiona del mismo modo que otras propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
@@ -131,7 +135,7 @@ Los fragmentos de contenido se pueden integrar con:
 
 * **Traducciones**
 
-   Los fragmentos de contenido están totalmente integrados con el flujo de trabajo de traducción de AEM. A nivel arquitectónico, esto significa:
+   Los fragmentos de contenido están totalmente integrados con el flujo de trabajo de traducción AEM. A nivel arquitectónico, esto significa:
 
    * Las traducciones individuales de un fragmento de contenido son en realidad fragmentos independientes; por ejemplo:
 
@@ -145,14 +149,14 @@ Los fragmentos de contenido se pueden integrar con:
    * Además de las rutas basadas en reglas, no hay más conexión entre las distintas versiones de idioma de un fragmento de contenido; se gestionan como dos fragmentos independientes, aunque la interfaz de usuario proporciona los medios para desplazarse entre las variantes de idioma.
    >[!NOTE]
    >
-   >El flujo de trabajo de traducción de AEM funciona con `/content`:
+   >El flujo de trabajo de traducción AEM funciona con `/content`:
    >
    >* Dado que los modelos de fragmentos de contenido residen en `/conf`, no se incluyen en dichas traducciones. Puede internacionalizar las cadenas de la interfaz de usuario.
 
 
 * **Esquemas de metadatos**
 
-   * Los fragmentos de contenido (re)utilizan los esquemas [de](/help/assets/metadata-schemas.md)metadatos, que se pueden definir con recursos estándar.
+   * Los fragmentos de contenido (re)utilizan los esquemas [de](/help/assets/metadata-schemas.md)metadatos, que se pueden definir con los recursos estándar.
 
    * CFM ofrece su propio esquema específico:
 
@@ -186,16 +190,16 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
    * Acceso a metadatos
    * Elementos de acceso:
 
-      * Elementos de Lista
+      * Elementos de lista
       * Obtener elementos por nombre
       * Crear nuevos elementos (consulte [Advertencias](#caveats))
 
       * Acceso a datos de elementos (consulte `ContentElement`)
-   * Variaciones de Lista definidas para el fragmento
+   * Variaciones de lista definidas para el fragmento
    * Crear nuevas variaciones globalmente
    * Administrar contenido asociado:
 
-      * Colecciones de Lista
+      * Colecciones de lista
       * Añadir colecciones
       * Eliminar colecciones
    * Acceso al modelo del fragmento
@@ -208,12 +212,12 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
       * Obtener o definir contenido
       * Variaciones de acceso de un elemento:
 
-         * Variaciones de Lista
+         * Variaciones de lista
          * Obtener variaciones por nombre
          * Crear nuevas variaciones (consulte [Advertencias](#caveats))
          * Eliminar variaciones (consulte [Advertencias](#caveats))
          * Acceso a los datos de variación (consulte `ContentVariation`)
-      * Método abreviado para resolver variaciones (aplicando alguna lógica adicional de reserva específica de implementación si la variación especificada no está disponible para un elemento)
+      * Método abreviado para resolver variaciones (aplicando alguna lógica adicional de reserva específica para la implementación si la variación especificada no está disponible para un elemento)
    * **Variación** de contenido ([ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obtener datos básicos (nombre, título, descripción)
@@ -223,7 +227,7 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
    Las tres interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) amplían la `Versionable` interfaz, que agrega capacidades de creación de versiones, necesarias para los fragmentos de contenido:
 
    * Crear nueva versión del elemento
-   * Versiones de Lista del elemento
+   * Versiones de lista del elemento
    * Obtener el contenido de una versión específica del elemento con versiones
 
 
@@ -284,11 +288,11 @@ Consulte lo siguiente:
 >
 >Tenga en cuenta esta información básica. Se supone que no debe cambiar nada aquí (ya que está marcado como un área ** privada en el repositorio), pero en algunos casos podría ayudar a entender cómo funcionan las cosas bajo el capó.
 
-Editar un fragmento de contenido, que puede abarcar varias vistas (= páginas HTML), es atómico. Como estas funciones de edición atómica con varias vistas no son un concepto típico de AEM, los fragmentos de contenido utilizan lo que se denomina sesión *de* edición.
+Editar un fragmento de contenido, que puede abarcar varias vistas (= páginas HTML), es atómico. Como estas funciones de edición atómica con varias vistas no son un concepto AEM típico, los fragmentos de contenido utilizan lo que se denomina sesión *de* edición.
 
 Una sesión de edición se inicia cuando el usuario abre un fragmento de contenido en el editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Guardar** o **Cancelar**.
 
-Técnicamente, todas las ediciones se realizan en contenido *en directo* , al igual que todas las demás ediciones de AEM. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se realiza ninguna acción específica, ya que toda la edición se ejecutó en contenido en *directo* , por lo tanto todos los cambios se mantienen ya. Además, al hacer clic en **Guardar** se activará cierto procesamiento en segundo plano (como la creación de información de búsqueda de texto completo y/o el manejo de recursos de medios mixtos).
+Técnicamente, todas las ediciones se realizan en contenido *en directo* , al igual que con el resto de la edición AEM. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se realiza ninguna acción específica, ya que toda la edición se ejecutó en contenido en *directo* , por lo tanto todos los cambios se mantienen ya. Además, al hacer clic en **Guardar** se activará cierto procesamiento en segundo plano (como la creación de información de búsqueda de texto completo y/o el manejo de recursos de medios mixtos).
 
 Existen algunas medidas de seguridad para los casos de borde; por ejemplo, si el usuario intenta salir del editor sin guardar o cancelar la sesión de edición. Además, hay disponible un guardado automático periódico para evitar la pérdida de datos.
 Tenga en cuenta que dos usuarios pueden editar el mismo fragmento de contenido al mismo tiempo y, por lo tanto, sobrescribir los cambios entre sí. Para evitarlo, el fragmento de contenido debe bloquearse mediante la aplicación de la acción de *cierre* de compra de la administración de DAM en el fragmento.
