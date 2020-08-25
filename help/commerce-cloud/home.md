@@ -1,23 +1,23 @@
 ---
-title: AEM comercio como Cloud Service
-description: AEM Comercio como Cloud Service de recursos de autoayuda y vínculos de documentación
+title: AEM Commerce as a Cloud Service
+description: Recursos informativos y enlaces a la documentación de AEM Commerce as a Cloud Service
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # AEM Commerce as a Cloud Service {#commerce-guide}
 
-Esta página lista los recursos de autoayuda relacionados con AEM comercio como Cloud Service.
+En esta página se muestran los recursos informativos relacionados con AEM Commerce as a Cloud Service.
 
-## Artículos clave de comercio {#key-articles}
+## Artículos clave de Comercio {#key-articles}
 
-* [Introducción de AEM comercio como Cloud Service](overview.md)
-* [Arquitectura del comercio AEM como Cloud Service](architecture/magento.md)
+* [Introducción a AEM Commerce as a Cloud Service](overview.md)
+* [Arquitectura de AEM Commerce as a Cloud Service](architecture/magento.md)
 * [Introducción](getting-started.md)
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
@@ -33,7 +33,7 @@ Esta página lista los recursos de autoayuda relacionados con AEM comercio como 
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo administrar Experience Manager Assets as a Cloud Service. |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluso los temas de implementación de desarrollo. |
-| [Guía del usuario sobre conectores](/help/connectors/home.md) | Descubra cómo integrar soluciones en Experience Manager as a Cloud Service. |
+| [Guía del usuario sobre Connectors](/help/connectors/home.md) | Descubra cómo integrar soluciones en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service: tareas de indexación y mantenimiento. |
 
 ## Otros recursos de Experience Manager {#other-resources}
