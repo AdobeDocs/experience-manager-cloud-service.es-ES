@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c0a66239e949ee4b460142e392d61e22938896bc
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ En esta página se muestran los recursos informativos relacionados con la seguri
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
-| [Guía del usuario de comercio](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM como Cloud Service. |
+| [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
 
 ## Otros recursos de Experience Manager {#other-resources}
 
