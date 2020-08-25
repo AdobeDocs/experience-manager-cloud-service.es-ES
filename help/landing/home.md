@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 3f8c56cfbb7d1eb17b6b7356108652e82c3b54d3
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,12 +25,12 @@ En esta página se muestran las guías del usuario para Experience Manager as a 
 | [Incorporación](/help/onboarding/home.md) | Esta guía proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
-| [Guía del usuario de comercio](/help/commerce-cloud/home.md) | Comprender cómo usar y administrar Experience Manager Commerce como Cloud Service. |
+| [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Comercio as a Cloud Service. |
 | [El paso de AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprender el viaje de transición a Cloud Service |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
-| [Guía del usuario de comercio](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM como Cloud Service. |
+| [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
 
 ## Otros recursos de Experience Manager {#other-resources}
 
