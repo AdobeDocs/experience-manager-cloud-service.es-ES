@@ -1,20 +1,20 @@
 ---
-title: Integración de Adobe Experience Manager as a Cloud Service
-description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
+title: Incorporación de Adobe Experience Manager as a Cloud Service
+description: Recursos informativos y enlaces a la documentación sobre la incorporación de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Integración de Experience Manager as a Cloud Service{#aem-onboarding-guide}
+# Incorporación de Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
-En esta página se muestran los recursos informativos para la integración de Experience Manager as a Cloud Service.
+En esta página se muestran los recursos informativos para la incorporación de Experience Manager as a Cloud Service.
 
-## Artículos clave sobre integración {#key-articles}
+## Artículos clave sobre incorporación {#key-articles}
 
 Esta sección muestra algunos de los artículos más importantes centrados en:
 
@@ -39,7 +39,7 @@ Esta sección muestra algunos de los artículos más importantes centrados en:
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
-| [Guía del usuario de comercio](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM como Cloud Service. |
+| [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
 
 ## Otros recursos de Experience Manager {#other-resources}
 
