@@ -2,9 +2,9 @@
 sub-product: Creación de contenido en AEM as a Cloud Service
 user-guide-title: Creación de contenido en AEM as a Cloud Service
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
@@ -56,8 +56,8 @@ ht-degree: 100%
    + Lanzamientos {#launches}
       + [Uso de lanzamientos](authoring/launches/overview.md)
       + [Creación de lanzamientos](authoring/launches/creating.md)
-      + [Edición de lanzamientos](authoring/launches/editing.md) 
-      + [Promoción de lanzamientos](authoring/launches/promoting.md) 
+      + [Edición de lanzamientos](authoring/launches/editing.md)
+      + [Promoción de lanzamientos](authoring/launches/promoting.md)
    + Flujos de trabajo {#workflows}
       + [Uso de flujos de trabajo](authoring/workflows/overview.md)
       + [Aplicación de flujos de trabajo a las páginas](authoring/workflows/applying.md)
@@ -69,7 +69,7 @@ ht-degree: 100%
       + [Uso del contenido de destino de varios sitios](authoring/personalization/multisite-targeted-content.md)
       + [Estructurar la administración de diversos sitios para el contenido segmentado](authoring/personalization/multisite-structure.md)
       + [Administración de actividades](authoring/personalization/activities.md)
-      + [Administrar audiencias](authoring/personalization/audiences.md) 
+      + [Administrar audiencias](authoring/personalization/audiences.md)
       + [Creación y administración de ofertas](authoring/personalization/offers.md)
       + [Información acerca de la segmentación](authoring/personalization/segmentation.md)
 + Integración con AEM as a Cloud Service {#integrations}
