@@ -5,8 +5,8 @@ user-guide-description: Learn how to customize your Experience Manager as a Clou
 translation-type: tm+mt
 source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 96%
    + [Acceder a Git](cloud-manager/accessing-git.md)
    + [Integrar Git con Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
 + Desarrollo para AEM as a Cloud Service {#developing}
-   + [Estructura del proyecto de AEM](developing/introduction/aem-project-content-package-structure.md)
+   + [Estructura del proyecto AEM](developing/introduction/aem-project-content-package-structure.md)
    + [Paquete de estructura del repositorio de proyectos de AEM](developing/introduction/repository-structure-package.md)
-   + [AEM as a Cloud Service SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [SDK de AEM as a Cloud Service](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [Directrices de desarrollo de AEM as a Cloud Service](developing/introduction/development-guidelines.md)
    + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
    + [Hoja de referencia de Sling](developing/introduction/sling-cheatsheet.md)
