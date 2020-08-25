@@ -4,8 +4,8 @@ description: Desarrollo de AEM Commerce para AEM as a Cloud Service
 translation-type: tm+mt
 source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Se recomienda contar con un entorno de desarrollo local para trabajar con proyec
 
 El complemento CIF se proporciona como un archivo de funciones Sling. El archivo zip disponible en el portal de distribución de software incluye dos archivos de archivo de funciones Sling, uno para el Autor de AEM y otro para las instancias de AEM Publish.
 
-**¿Es novato en el uso de AEM as a Cloud Service?** Check out [a more detailed guide to setting up a local development environment using the AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**¿Es novato en el uso de AEM as a Cloud Service?** Consulte [una guía más detallada sobre la configuración de un entorno de desarrollo local con el AEM como SDK](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)de Cloud Service.
 
 ### Software necesario
 
