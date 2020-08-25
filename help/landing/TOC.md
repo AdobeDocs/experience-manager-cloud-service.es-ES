@@ -1,11 +1,11 @@
 ---
 sub-product: Ayuda de Adobe Experience Manager as a Cloud Service
 user-guide-title: Ayuda de Adobe Experience Manager as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 + [Incorporación a AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/onboarding/home.html)
 + [AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/sites/home.html)
 + [AEM Assets as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/assets/home.html)
-+ [AEM comercio como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html)
++ [AEM Commerce as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/commerce/home.html)
 + [El paso de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/moving/home.html)
 + [Implementación de aplicaciones para AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/home.html)
 + [Implementación de conectores para AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/connectors/home.html)
