@@ -2,7 +2,7 @@
 title: Experiencia unificada para herramientas de refactorización de código
 description: Experiencia unificada para herramientas de refactorización de código
 translation-type: tm+mt
-source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
+source-git-commit: 9ef0681f93c8c25a1e5115cccb987d2db32c318e
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Las herramientas de refactorización Experiencia unificada para código unifican
 
 Esta herramienta reduce la complejidad del uso de herramientas de refactorización de código, y cada una de ellas tiene diferentes requisitos de ejecución en términos de instalación, configuración y ejecución.
 
-![image](/help/move-to-cloud-service/assets/unified-1.png)
+![image](/help/move-to-cloud-service/assets/unified-one.png)
 
 ## Benefits {#benefits}
 
