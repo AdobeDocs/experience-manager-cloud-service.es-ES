@@ -2,9 +2,9 @@
 title: Experiencia unificada para herramientas de refactorización de código
 description: Experiencia unificada para herramientas de refactorización de código
 translation-type: tm+mt
-source-git-commit: c554506aea99518c94666f5d2e6151a3dce3b91e
+source-git-commit: df41244712e1792e5265e4e6c8104962899c9b26
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,19 @@ Las herramientas de refactorización Experiencia unificada para código unifican
 
 Esta herramienta reduce la complejidad del uso de herramientas de refactorización de código, y cada una de ellas tiene diferentes requisitos de ejecución en términos de instalación, configuración y ejecución.
 
+![image](/help/move-to-cloud-service/assets/unified-1.png)
+
 ## Benefits {#benefits}
 
 Las herramientas de refactorización Experiencia unificada para código invocan y ejecutan todas las herramientas de refactorización de código que funcionan en el código fuente desde el mismo lugar.
 
-Las herramientas de refactorización de experiencias unificadas para código, junto con los repositorios complementarios, permiten:
+Estas herramientas, junto con los repositorios complementarios, permiten:
 
-* Unifique todas las herramientas que trabajan en la migración del código fuente en una `node.js` aplicación expuesta `aio-cli plugin` para proporcionar al usuario una experiencia de usuario coherente.
+* Unificar todas las herramientas que trabajan en la migración del código fuente en una `node.js` aplicación expuesta `aio-cli plugin` para proporcionar al usuario una experiencia de usuario coherente.
 
-* Provisión para realizar la migración general a través de un único comando, a la vez que proporciona flexibilidad para ejecutar una herramienta en particular según sea necesario.
+* Aprovisionamiento para realizar la migración general mediante un único comando, al mismo tiempo que proporciona flexibilidad para ejecutar una herramienta en particular según sea necesario.
 
-* Simplifique la adición futura de nuevas herramientas, como la adición de nueva herramienta al complemento, simplemente debería requerir la adición de un nuevo comando para desarrolladores y una simple actualización del complemento para el usuario, de modo que la experiencia se mantenga consistente con una adición de más valor.
+* Simplificar la futura adición de nuevas herramientas como la adición de nueva herramienta al complemento simplemente requiere la adición de un nuevo comando para desarrolladores y una simple actualización del complemento para el usuario, de modo que la experiencia sigue siendo consistente con una adición de más valor.
 
 ## Explicación del complemento {#understanding-plugin}
 
