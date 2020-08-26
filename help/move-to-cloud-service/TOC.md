@@ -2,11 +2,11 @@
 sub-product: El paso de AEM as a Cloud Service
 user-guide-title: El paso de AEM as a Cloud Service
 user-guide-description: Understand the transition journey to Cloud Service.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '68'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0d5d227905089fea969831c0de2896aef4d24589
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 97%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 100%
       + [Información general](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [Uso de la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + Herramientas de refactorización de código {#refactoring-tools}
+   + [Experiencia unificada](/help/move-to-cloud-service/unified-experience.md)
    + [Migración del flujo de trabajo de recursos](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [Dispatcher Converter de AEM](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [Herramientas de modernización de AEM](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
