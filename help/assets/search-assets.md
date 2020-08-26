@@ -1,10 +1,10 @@
 ---
-title: Buscar recursos e imágenes digitales en AEM
+title: Buscar recursos digitales e imágenes en AEM
 description: Obtenga información sobre cómo encontrar los recursos necesarios en AEM mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
+source-git-commit: c0c5663999158e326bb4617f3bf34e96e7615f64
 workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 7%
@@ -14,9 +14,9 @@ ht-degree: 7%
 
 # Buscar recursos en AEM {#search-assets-in-aem}
 
-Puede lograr una mayor velocidad de contenido mediante las opciones de detección de recursos sencillas de Experience Manager. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda inteligente y sin fisuras mediante la funcionalidad lista para usar y los métodos personalizados. La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM. Las búsquedas simples, avanzadas y personalizadas que puede realizar mediante la interfaz de usuario de Recursos AEM u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
+Puede lograr una mayor velocidad de contenido mediante las opciones de detección de recursos fáciles de usar en Experience Manager. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda inteligente y sin fisuras mediante la funcionalidad lista para usar y los métodos personalizados. La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM. Las búsquedas simples, avanzadas y personalizadas que puede realizar a través de la interfaz de usuario de AEM Assets u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
 
-AEM admite los siguientes casos de uso y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
+AEM admite los siguientes casos de uso y este artículo describe el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas para estos casos de uso.
 
 | Buscar recursos | Configuración y administración | Trabajar con resultados de búsqueda |
 |--- |--- |--- |
@@ -24,18 +24,18 @@ AEM admite los siguientes casos de uso y en este artículo se describen el uso, 
 | [Comprender la IU de búsqueda](#searchui) |  | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
 | [Sugerencias de búsqueda](#searchsuggestions) | [Metadatos obligatorios](#mandatorymetadata) | [Descargar](#download) |
 | [Comprender los resultados y el comportamiento de la búsqueda](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
-| [Buscar clasificación y aumentar](#searchrank) | [extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
+| [Buscar clasificación y aumentar](#searchrank) | [Extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
 | [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender los resultados](#unexpectedresults) inesperados y [solucionar problemas](#troubleshoot) |
 | [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch): <br />     [Aplicación Asset Link](#aal) <br />Desktop [para escritorio](#desktopapp) <br />     [Imágenes de Adobe Stock](#adobestock) <br />     [Recursos de Dynamic Media](#dynamicmedia) |  |  |
 | [Selector/selector de recursos](#assetselector) |  |  |
 | [Limitaciones](#tips) y [sugerencias](#limitations) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
 
-Busque recursos mediante el campo Omniture en la parte superior de la interfaz web de AEM. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en AEM, haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca la palabra clave de búsqueda y pulse return. Alternativamente, utilice el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. Puede realizar búsquedas avanzadas para aumentar o limitar el [alcance de la búsqueda](#scope).
+Busque recursos utilizando el campo Omniture en la parte superior de la interfaz Web AEM. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en AEM, haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca la palabra clave de búsqueda y pulse return. Alternativamente, utilice el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. Puede realizar búsquedas avanzadas para aumentar o limitar el [alcance de la búsqueda](#scope).
 
-Utilice el panel **[!UICONTROL Filtros]** para buscar recursos, carpetas, etiquetas y metadatos. Puede filtrar los resultados de búsqueda en función de las distintas opciones (predicados), como el tipo de archivo, el tamaño del archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas [de](/help/assets/search-facets.md)búsqueda.
+Utilice el panel **[!UICONTROL Filtros]** para buscar recursos, carpetas, etiquetas y metadatos. Puede filtrar los resultados de la búsqueda en función de las distintas opciones (predicados), como el tipo de archivo, el tamaño del archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas [de](/help/assets/search-facets.md)búsqueda.
 
-La función de búsqueda de AEM admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
+AEM capacidad de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
 
 ## Comprender la interfaz de búsqueda {#searchui}
 
@@ -55,13 +55,13 @@ Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en
 
 ## Search suggestions as you type {#searchsuggestions}
 
-Al escribir una palabra clave con inicio, AEM sugiere las posibles palabras clave o frases de búsqueda. Las sugerencias se basan en los recursos de AEM. AEM indexa todos los campos de metadatos para facilitar la búsqueda. Para proporcionar sugerencias de búsqueda, el sistema utiliza los valores de los siguientes campos de metadatos. Para proporcionar sugerencias de búsqueda, considere rellenar los campos siguientes con palabras clave apropiadas:
+Cuando escribe una palabra clave en inicio, AEM sugiere las posibles palabras clave o frases de búsqueda. Las sugerencias se basan en los recursos de AEM. AEM indexa todos los campos de metadatos para facilitar la búsqueda. Para proporcionar sugerencias de búsqueda, el sistema utiliza los valores de los siguientes campos de metadatos. Para proporcionar sugerencias de búsqueda, considere rellenar los campos siguientes con palabras clave apropiadas:
 
 * Etiquetas de recursos. (mapas a `jcr:content/metadata/cq:tags`)
 * Título del recurso. (mapas a `jcr:content/metadata/dc:title`)
 * Descripción del recurso. (mapas a `jcr:content/metadata/dc:description`)
 * Título en el repositorio de JCR. El valor puede asignarse al título del recurso. (mapas a `jcr:content/jcr:title`)
-* Descripción en el repositorio JCR. El valor puede asignarse a la descripción del recurso. (mapas a `jcr:content/jcr:description`)
+* Descripción en el repositorio de JCR. El valor puede asignarse a la descripción del recurso. (mapas a `jcr:content/jcr:description`)
 
 ## Comprender los resultados y el comportamiento de la búsqueda {#searchbehavior}
 
@@ -69,13 +69,13 @@ Al escribir una palabra clave con inicio, AEM sugiere las posibles palabras clav
 
 Puede ejecutar búsquedas de palabras clave desde el campo OmniSearch. La búsqueda de palabras clave no distingue entre mayúsculas y minúsculas y es una búsqueda de texto completo (en los campos de metadatos populares). Si se utiliza más de una palabra clave, `AND` es el operador predeterminado entre las palabras clave. Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas. Para varias palabras clave, los resultados más relevantes son los recursos que contienen ambos términos en sus metadatos. Dentro de los metadatos, las palabras clave que aparecen como etiquetas inteligentes se clasifican más que las palabras clave que aparecen en otros campos de metadatos.
 
-AEM permite otorgar un peso mayor a un término de búsqueda concreto. Además, es posible aumentar la clasificación de unos pocos recursos de destino para términos de búsqueda específicos. Los administradores de AEM pueden realizar estas configuraciones como se describe a continuación.
+AEM permite dar un peso mayor a un término de búsqueda en particular. Además, es posible aumentar la clasificación de unos pocos recursos de destino para términos de búsqueda específicos. Los administradores de AEM pueden realizar estas configuraciones como se describe a continuación.
 
 Para encontrar rápidamente los recursos relevantes, la interfaz enriquecida proporciona mecanismos de filtrado, clasificación y selección. Puede filtrar los resultados en función de varios criterios y ver el número de recursos buscados para varios filtros. De lo contrario, puede volver a ejecutar la búsqueda cambiando la consulta en el campo Omniture Search. Al cambiar los términos o filtros de búsqueda, los demás filtros permanecen aplicados para preservar el contexto de búsqueda.
 
 A veces, puede ver algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte Resultados [inesperados](#unexpectedresults).
 
-AEM puede buscar muchos formatos de archivo y los filtros de búsqueda se pueden personalizar para adaptarlos a sus necesidades comerciales. Póngase en contacto con los administradores para conocer las opciones de búsqueda disponibles para el repositorio de DAM y las restricciones de inicio de sesión que puede tener.
+AEM buscar muchos formatos de archivo y los filtros de búsqueda se pueden personalizar para adaptarlos a sus necesidades comerciales. Póngase en contacto con los administradores para conocer las opciones de búsqueda disponibles para el repositorio de DAM y las restricciones de inicio de sesión que puede tener.
 
 <!-- 
 ### Results with and without Enhanced Smart Tags {#withsmarttags}
@@ -106,9 +106,9 @@ Puede mejorar la relevancia de las palabras clave para los recursos en particula
 
 1. En la interfaz de usuario de Assets, abra la página de propiedades del recurso. Haga clic en **[!UICONTROL Avanzadas]** y pulse o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave de búsqueda]**.
 1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
+1. Click/tap **[!UICONTROL Save &amp; Close]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
-Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Búsqueda en AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
+Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -154,7 +154,7 @@ Puede utilizar recursos en función de los valores exactos de campos de metadato
 | Lugar de residencia | ubicación:NA |
 | Descripción | description:&quot;Imagen de muestra&quot; |
 | Herramienta Creador | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
-| Propietario del copyright | copyright:&quot;Adobe Systems&quot; |
+| Propietario del copyright | copyrightowner:&quot;Adobe Systems&quot; |
 | Colaborador | colaborador:John |
 | Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |
 | Creado | creado:AAAA-MM-DDTHH |
@@ -163,7 +163,7 @@ Puede utilizar recursos en función de los valores exactos de campos de metadato
 | Tiempo de inactividad | offtime:AAAA-MM-DDTHH |
 | Intervalo de tiempo (caduca dateontime, offtime) | facet field : límite inferior..upperbound |
 | Ruta | /content/dam/&lt;nombre de carpeta> |
-| Título del PDF | pdftitle:&quot;Adobe Documento&quot; |
+| Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
 | Etiquetas | etiquetas: &quot;Ubicación y viaje&quot; |
 | Tipo | type:&quot;image\png&quot; |
@@ -183,19 +183,19 @@ Estos son algunos ejemplos de formatos de búsqueda para consultas complejas:
 * Para mostrar recursos con valores de propiedad que empiecen por una cadena específica (por ejemplo: el título es Scott Reynolds): `title:Scott*`
 * Para mostrar recursos con valores de propiedad que finalizan con una cadena específica (por ejemplo: el título es Scott Reynolds): `title:*Reynolds`
 * Para mostrar recursos con un valor de propiedad que contenga una cadena específica (por ejemplo: título = Sala de reuniones de Basilea): `title:*Meeting*`
-* Para mostrar los recursos que contienen una cadena concreta y tienen un valor de propiedad específico (por ejemplo: buscar la cadena Adobe en recursos con título=John Doe): `*Adobe* title:"John Doe"`
+* Para mostrar los recursos que contienen una cadena concreta y tienen un valor de propiedad específico (por ejemplo: buscar Adobe de cadena en recursos con título=John Doe): `*Adobe* title:"John Doe"`
 
-## Buscar recursos de otras ofertas o interfaces de AEM {#beyondomnisearch}
+## Buscar recursos de otras ofertas o interfaces AEM {#beyondomnisearch}
 
-Adobe Experience Manager (AEM) conecta el repositorio de DAM con varias otras soluciones de AEM para proporcionar un acceso más rápido a los recursos digitales y optimizar los flujos de trabajo creativos. Cualquier detección de recursos inicio con la exploración o búsqueda. El comportamiento de la búsqueda sigue siendo en gran medida el mismo en las distintas superficies y soluciones. Algunos métodos de búsqueda cambian a medida que la audiencia de destinatario, los casos de uso y la interfaz de usuario varían según las soluciones de AEM. Los métodos específicos están documentados para las soluciones individuales en los vínculos siguientes. Los consejos y comportamientos universalmente aplicables están documentados en este artículo.
+Adobe Experience Manager (AEM) conecta el repositorio de DAM con varias otras soluciones AEM para proporcionar un acceso más rápido a los recursos digitales y optimizar los flujos de trabajo creativos. Cualquier detección de recursos inicio con la exploración o búsqueda. El comportamiento de la búsqueda sigue siendo en gran medida el mismo en las distintas superficies y soluciones. Algunos métodos de búsqueda cambian a medida que la audiencia de destinatario, los casos de uso y la interfaz de usuario varían según las soluciones AEM. Los métodos específicos están documentados para las soluciones individuales en los vínculos siguientes. Los consejos y comportamientos universalmente aplicables están documentados en este artículo.
 
 ### Buscar recursos desde el panel Vínculo de recursos de Adobe {#aal}
 
-Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en Recursos AEM sin tener que abandonar las aplicaciones compatibles de Adobe Creative Cloud. Los creativos pueden examinar, buscar, desproteger y proteger recursos sin problemas mediante el panel integrado en las aplicaciones de Creative Cloud: Photoshop, Illustrator e InDesign. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en los algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
+Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en AEM Assets sin salir de las aplicaciones de Adobe Creative Cloud admitidas. Los creativos pueden examinar, buscar, desproteger y proteger recursos sin problemas mediante el panel integrado en la aplicación de las aplicaciones Creative Cloud: Photoshop, Illustrator y InDesign. El vínculo de recursos también permite a los usuarios buscar resultados visualmente similares. Los resultados de la visualización de la búsqueda visual se basan en algoritmos de aprendizaje automático de Adobe Sensei y ayudan a los usuarios a encontrar imágenes estéticas similares. Consulte [Búsqueda y exploración de recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante Adobe Asset Link.
 
-### Buscar recursos en la aplicación de escritorio de AEM {#desktopapp}
+### Buscar recursos en AEM aplicación de escritorio {#desktopapp}
 
-Los profesionales creativos utilizan la aplicación de escritorio para facilitar la búsqueda y la disponibilidad de Recursos AEM en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en Mac Finder o el Explorador de Windows, abrirlos en aplicaciones de escritorio y cambiarlos localmente; los cambios se guardan de nuevo en AEM con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, * y ? comodines y operador AND. Consulte [Examinar, buscar y previsualización de recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
+Los profesionales creativos utilizan la aplicación de escritorio para que el AEM Assets sea fácil de buscar y esté disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en Mac Finder o el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, * y ? comodines y operador AND. Consulte [Examinar, buscar y previsualización de recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
 
 ### Search assets in Brand Portal {#brandportal}
 
@@ -203,7 +203,7 @@ Los usuarios de la línea de negocios y los especialistas en marketing utilizan 
 
 ### Buscar imágenes de Adobe Stock {#adobestock-1}
 
-Desde la interfaz de usuario de AEM, los usuarios pueden buscar recursos de Adobe Stock y obtener licencias para los recursos necesarios. Añada `Location: Adobe Stock` en el campo Omniture Search. También puede utilizar el panel **[!UICONTROL Filtros]** para buscar todos los recursos con licencia o sin licencia, o para buscar un recurso específico con el número de archivo de Adobe Stock. Consulte [Gestión de imágenes de Adobe Stock en AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Desde la interfaz de usuario de AEM, los usuarios pueden buscar recursos de Adobe Stock y obtener licencias para los recursos necesarios. Añada `Location: Adobe Stock` en el campo Omniture Search. También puede utilizar el panel **[!UICONTROL Filtros]** para buscar todos los recursos con licencia o sin licencia, o buscar un recurso específico con el número de archivo de Adobe Stock. Consulte [Gestión de imágenes de Adobe Stock en AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
 ### Buscar recursos de Dynamic Media {#dynamicmedia}
 
@@ -218,7 +218,7 @@ Los autores pueden utilizar Content Finder para buscar en el repositorio de DAM 
 
 ### Buscar colecciones {#collections}
 
-La función de búsqueda de AEM admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
+AEM capacidad de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
 
 ## Asset selector {#assetselector}
 
@@ -243,19 +243,19 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[AEM server
 
 Examinar y seleccionar recursos en el selector de recursos
 
-## Restricciones          {#limitations}
+## Restricciones     {#limitations}
 
-La capacidad de búsqueda en Recursos AEM tiene las siguientes limitaciones:
+La capacidad de búsqueda de AEM Assets tiene las siguientes limitaciones:
 
 * No introduzca un espacio de interlineado en la consulta de búsqueda; de lo contrario, la búsqueda no funcionará.
-* AEM puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso de los resultados de búsqueda y, a continuación, cancelar la búsqueda (CQ-4273540).
+* AEM puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso de los resultados de búsqueda y luego cancelar la búsqueda (CQ-4273540).
 * Al buscar carpetas o archivos y carpetas, los resultados de la búsqueda no se pueden ordenar según ningún parámetro.
-* Si presiona Retorno sin vincular nada en la barra de Omniture, AEM devuelve una lista de sólo archivos y no carpetas. Si busca carpetas de forma específica sin utilizar una palabra clave, AEM no devuelve ningún resultado.
+* Si presiona el comando return sin vincular nada en la barra de Omniture, AEM devuelve una lista de sólo archivos y no carpetas. Si busca carpetas de forma específica sin utilizar una palabra clave, no AEM ningún resultado.
 
 La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitaciones:
 
 * La búsqueda visual funciona mejor con repositorios más grandes. Aunque no se requiere un número mínimo de imágenes para obtener buenos resultados, la calidad de las coincidencias con unas pocas imágenes puede no ser tan buena como las coincidencias de un repositorio grande.
-* No puede cambiar el modelo ni entrenar a AEM para encontrar imágenes similares. Por ejemplo, la adición o eliminación de etiquetas inteligentes a algunos recursos no cambia el modelo. Los recursos se excluyen de los resultados de búsqueda visualmente similares.
+* No se puede cambiar el modelo o el AEM de tren para encontrar imágenes similares. Por ejemplo, la adición o eliminación de etiquetas inteligentes a algunos recursos no cambia el modelo. Los recursos se excluyen de los resultados de búsqueda visualmente similares.
 
 ## Sugerencias de búsqueda {#tips}
 
@@ -267,7 +267,7 @@ La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitac
 * La búsqueda de texto completo admite operadores como -, ^, etc. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice &quot;Portátil - Belleza&quot; en lugar de Portátil - Belleza.
 * Si los resultados de búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, un tipo de archivo específico, una ubicación específica, metadatos específicos, etc.
 
-* **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. AEM oferta métodos para etiquetar recursos automáticamente mediante los servicios inteligentes de Adobe Sensei, que mejoran aún más la etiquetado de los recursos con el uso y la formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
+* **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. AEM métodos de oferta para etiquetar automáticamente los recursos mediante Adobe Sensei, que  servicios inteligentes artificialmente que mejoran el etiquetado de los recursos con el uso y la formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
 
 * **Indexación**: En los resultados de búsqueda solo se devuelven los metadatos y recursos indexados. Para obtener una mejor cobertura y rendimiento, asegúrese de que la indexación sea correcta y siga las optimizaciones. Consulte [indización](#searchindex).
 
@@ -393,16 +393,16 @@ You can search for digital assets based on one or more of the following properti
 
 Una vez que vea algunos recursos buscados que coinciden con sus criterios, puede realizar las siguientes tareas típicas con estos resultados de búsqueda o realizar las siguientes acciones:
 
-* Propiedades de metadatos de Vista y otra información.
+* Propiedades de metadatos de vista y otra información.
 * Descargue uno o varios recursos.
 * Utilice las acciones de escritorio para abrir estos recursos en la aplicación de escritorio.
 * Cree colecciones inteligentes.
 
 ### Ordenar resultados de búsqueda {#sort}
 
-La ordenación de los resultados de búsqueda ayuda a descubrir los recursos necesarios con mayor rapidez. La ordenación de los resultados de búsqueda funciona en la vista de lista y solo cuando se selecciona **[!UICONTROL [Archivos](#searchui)]**en el panel**[!UICONTROL  Filtros ]**.[!DNL Assets]utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+La ordenación de los resultados de búsqueda ayuda a descubrir los recursos necesarios con mayor rapidez. La ordenación de los resultados de búsqueda funciona en la vista de lista y solo cuando se selecciona **[[!UICONTROL Archivos]](#searchui)** en el panel **[!UICONTROL Filtros]**. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
-En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, dimensiones, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
+En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, Dimension, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
 Para ver las limitaciones de la funcionalidad de ordenación, consulte [Limitaciones](#limitations).
 
@@ -433,13 +433,13 @@ Para los recursos disponibles en una única carpeta o colección, es más fácil
 Una colección es un conjunto ordenado de recursos que puede incluir recursos de distintas ubicaciones porque las colecciones solo contienen referencias a estos recursos. Las colecciones son de los dos tipos siguientes:
 
 * Una lista de referencia estática de recursos, carpetas y otras colecciones.
-* lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
+* Lista dinámica (colección inteligente) que rellena los recursos de la colección en función de criterios de búsqueda.
 
 Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/manage-collections.md).
 
 ## Resultados de búsqueda inesperados {#unexpectedresults}
 
-**Buscar metadatos** que faltan: Al buscar recursos que no tienen los metadatos obligatorios, AEM puede mostrar algunos recursos que tienen metadatos válidos. Los metadatos que faltan se detectan e informan en función de la propiedad de metadatos indizados. Aunque los metadatos del recurso se corrijan, siguen mostrándose como metadatos faltantes hasta que se vuelve a indexar. Consulte metadatos [](/help/assets/metadata-schemas.md#defining-mandatory-metadata)obligatorios.
+**Buscar metadatos** que faltan: Al buscar recursos que no tengan los metadatos obligatorios, AEM puede mostrar algunos recursos que tengan metadatos válidos. Los metadatos que faltan se detectan e informan en función de la propiedad de metadatos indizados. Aunque los metadatos del recurso se corrijan, siguen mostrándose como metadatos faltantes hasta que se vuelve a indexar. Consulte metadatos [](/help/assets/metadata-schemas.md#defining-mandatory-metadata)obligatorios.
 
 **Demasiados resultados** de búsqueda: Para evitar obtener demasiados resultados de búsqueda, considere limitar los resultados de búsqueda. Por ejemplo: para buscar recursos en DAM, seleccione `Location:Assets` en la barra de Omniture Search. Para obtener más filtros de búsqueda, consulte [el ámbito de búsqueda](#scope).
 
@@ -450,9 +450,9 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
-**No hay sugerencias de autocompletar para los recursos** cargados recientemente: Los metadatos (títulos, etiquetas, etc.) de los recursos cargados recientemente no están disponibles inmediatamente como sugerencias cuando se escribe una palabra clave de búsqueda en la barra de Omniture. Recursos AEM espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados y, a continuación, agrega los metadatos a la lista de sugerencias.
+**No hay sugerencias de autocompletar para los recursos** cargados recientemente: Los metadatos (títulos, etiquetas, etc.) de los recursos cargados recientemente no están disponibles inmediatamente como sugerencias cuando se escribe una palabra clave de búsqueda en la barra de Omniture. AEM Assets espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos recién cargados o actualizados y, a continuación, agrega los metadatos a la lista de sugerencias.
 
-**No hay resultados** de búsqueda: Si AEM muestra una página vacía para una consulta de búsqueda, puede que los motivos sean los siguientes:
+**No hay resultados** de búsqueda: Si AEM y muestra una página vacía para una consulta de búsqueda, puede que los siguientes sean los motivos:
 
 * No existen recursos que coincidan con la consulta.
 * Agregue un espacio en blanco antes de la consulta de búsqueda. Es una limitación [conocida](#limitations).
