@@ -4,10 +4,10 @@ description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Exp
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 5%
+source-wordcount: '1933'
+ht-degree: 4%
 
 ---
 
@@ -65,7 +65,7 @@ Los dos tipos básicos de metadatos son los metadatos técnicos y los descriptiv
 Los metadatos técnicos son útiles para las aplicaciones de software que se ocupan de activos digitales y no deben mantenerse manualmente. [!DNL Experience Manager Assets] y otro software determina automáticamente los metadatos técnicos y los metadatos pueden cambiar cuando se modifica el recurso. Los metadatos técnicos disponibles de un recurso dependen en gran medida del tipo de archivo del recurso. Algunos ejemplos de metadatos técnicos son:
 
 * Tamaño de un archivo.
-* Dimensiones (altura y anchura) de una imagen.
+* Dimension (altura y anchura) de una imagen.
 * Velocidad de bits de un archivo de audio o vídeo.
 * Resolución (nivel de detalle) de una imagen.
 
@@ -84,7 +84,7 @@ Existen varias formas de incrustar metadatos en los archivos. Se admite una sele
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que se utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar oferta la codificación de metadatos universales que puede incrustarse en todos los formatos de archivo. Adobe y otras compañías admiten el estándar XMP, ya que proporciona un modelo de contenido enriquecido. Los usuarios del estándar XMP y de [!DNL Experience Manager Assets] tienen una poderosa plataforma sobre la que construir. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que se utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar oferta la codificación de metadatos universales que puede incrustarse en todos los formatos de archivo. Adobe y otras compañías admiten XMP estándar ya que proporciona un modelo de contenido enriquecido. Los usuarios de XMP estándar y de [!DNL Experience Manager Assets] tienen una poderosa plataforma sobre la que construir. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -142,6 +142,16 @@ Recursos de Enterprise Manager le permite editar los metadatos de varios recurso
    >
    >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
+## Metadatos personalizados con perfil de procesamiento {#metadata-compute-service}
+
+Los recursos como Cloud Service pueden generar metadatos personalizados para un recurso mediante servicios nativos de nube. Configure un perfil de procesamiento para generar metadatos personalizados. Consulte [cómo utilizar el perfil](/help/assets/asset-microservices-configure-and-use.md#use-profiles)de procesamiento.
+
+![Representación de metadatos en el perfil de procesamiento](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>Solo se puede aplicar un perfil de procesamiento a una carpeta. Para aplicar varios procesos a los recursos de una carpeta, agregue más opciones a un solo perfil de procesamiento. Por ejemplo, un solo perfil puede generar representaciones, transcodificar recursos, generar metadatos personalizados, etc. Puede aplicar filtros de tipo MIME para cada tarea de modo que la tarea adecuada se active para el formato de archivo requerido.
+
 ## Configurar límite para la actualización masiva de metadatos {#configlimit}
 
 Para evitar una situación similar a DOS, AEM limita el número de parámetros admitidos en una solicitud de Sling. Al actualizar los metadatos de muchos recursos de una sola vez, es posible que se alcance el límite y que los metadatos no se actualicen para más recursos. AEM genera la siguiente advertencia en los registros:
@@ -176,7 +186,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * CQ - Utilizado por [!DNL Experience Manager Assets].
 * DAM - Utilizado por [!DNL Experience Manager Assets].
 * DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
-* CRS: [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto y MP - Microsoft Photo.
@@ -205,14 +215,14 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * PDF y PDF/X: Adobe PDF y aplicaciones de terceros.
 * PRISM: requisitos de [publicación para metadatos](https://www.prismstandard.org)estándar del sector.
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - Metadatos XMP para texto paginado.
+* `xmpPG` - XMP metadatos para texto paginado.
 
 ### Metadatos específicos de multimedia {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM` - Administración de medios.
 
-## flujos de trabajo impulsados por metadatos {#metadata-driven-workflows}
+## Flujos de trabajo impulsados por metadatos {#metadata-driven-workflows}
 
 La creación de flujos de trabajo basados en metadatos le ayuda a automatizar algunos procesos, lo que mejora la eficacia. En un flujo de trabajo basado en metadatos, el sistema de administración de flujo de trabajo lee el flujo de trabajo y, como resultado, realiza alguna acción predefinida. Por ejemplo, algunas de las formas en que puede utilizar flujos de trabajo basados en metadatos:
 
