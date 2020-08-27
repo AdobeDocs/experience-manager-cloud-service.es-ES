@@ -2,10 +2,10 @@
 title: Cambios notables en Adobe Experience Manager Assets como Cloud Service
 description: Cambios notables en Adobe Experience Manager Assets en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 20%
+source-wordcount: '628'
+ht-degree: 19%
 
 ---
 
@@ -48,7 +48,7 @@ Las representaciones estándar generadas con los microservicios de recursos se a
 
 ## Desarrollar y probar microservicios de activos {#asset-microservices}
 
-Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios en la nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como ImageMagick) y simplifican las configuraciones, al tiempo que proporcionan una funcionalidad lista para usar para tipos de archivos comunes. Ahora puede procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos listos para usar que los que se pueden procesar en versiones anteriores de Experience Manager. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick. No puede utilizar las configuraciones complejas de ImageMagick para la configuración de Perfiles [!UICONTROL de] procesamiento. Además, utilice [!DNL Dynamic Media] la transcodificación FFmpeg de vídeos.
+Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios en la nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como ImageMagick) y simplifican las configuraciones, al tiempo que proporcionan una funcionalidad lista para usar para tipos de archivos comunes. Ahora puede procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos listos para usar que los que se pueden procesar en versiones anteriores de Experience Manager. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick. No puede utilizar las configuraciones complejas de ImageMagick para la configuración de Perfiles [!UICONTROL de] procesamiento. Se utiliza [!DNL Dynamic Media] para la transcodificación FFmpeg de vídeos y perfiles de procesamiento para la transcodificación [básica de vídeos](/help/assets/manage-video-assets.md#transcode-video)MP4.
 
 Asset microservices es un servicio nativo de la nube que se aprovisiona automáticamente y se cablea al Experience Manager en programas y entornos del cliente administrados en Cloud Manager. Para ampliar o personalizar el Experience Manager, los desarrolladores pueden utilizar el contenido o los recursos existentes con las representaciones generadas en un entorno de nube, para probar y validar su código mediante, visualización o descarga de recursos.
 
