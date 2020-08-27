@@ -1,33 +1,23 @@
 ---
-title: Configuración y uso de microservicios de recursos para el procesamiento de recursos
-description: Obtenga información sobre cómo configurar y utilizar los microservicios de recursos nativos de la nube para procesar recursos a escala.
+title: Configure y utilice microservicios de recursos para el procesamiento de recursos.
+description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
+source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
 
 
-# Usar microservicios de recursos y perfiles de procesamiento {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
-<!--
-* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
-* How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/application process.
-* How/where can admins check what's already configured and provisioned.
-* How to create new config or request for new provisioning/purchase.
+Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante aplicaciones nativas de la nube (también denominadas trabajadores). Adobe gestiona los servicios para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento.
 
-* [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
--->
+Los microservicios de recursos le permiten procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos listos para usar que los que son posibles con versiones anteriores de [!DNL Experience Manager]. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
 
-Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe gestiona los servicios para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento.
-
-El procesamiento de recursos depende de la configuración de los Perfiles **[!UICONTROL de]** procesamiento, que proporcionan una configuración predeterminada, y permiten al administrador agregar una configuración de procesamiento de recursos más específica. Los administradores pueden crear y mantener las configuraciones de flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de flujos de trabajo permite la extensibilidad y la personalización total.
-
-Los microservicios de recursos le permiten procesar una [amplia gama de tipos](/help/assets/file-format-support.md) de archivos que cubren más formatos listos para usar que lo que es posible con versiones anteriores de Experience Manager. Por ejemplo, ahora es posible la extracción en miniatura de los formatos PSD y PSB que anteriormente requerían soluciones de terceros como ImageMagick.
+El procesamiento de recursos depende de la configuración de los Perfiles **[!UICONTROL de procesamiento]**. Experience Manager proporciona una configuración predeterminada básica y permite a los administradores agregar una configuración de procesamiento de recursos más específica. Los administradores crean, mantienen y modifican las configuraciones de los flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de los flujos de trabajo permite a los desarrolladores ampliar la oferta predeterminada.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -93,7 +83,7 @@ Para crear un perfil de procesamiento estándar, siga estos pasos:
    * Calidad en porcentaje de cada representación JPEG.
    * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
-   ![proceso-perfiles-adición](assets/processing-profiles-adding.png)
+   ![proceso-perfiles-adición](assets/processing-profiles-image.png)
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -158,9 +148,7 @@ La integración del servicio de cómputo de recursos permite al Experience Manag
 
 ![custom-processing-perfil](assets/custom-processing-profile.png)
 
-*Figura: Utilice el campo Parámetrosde servicio para pasar información agregada a los parámetros predefinidos generados en la aplicación personalizada.*
-
-Cuando se cargan imágenes de campaña en la carpeta en la que se aplica este perfil de procesamiento, las imágenes se actualizan con `Jumanji` texto en la `Arial-BoldMT` fuente.
+*Figura: Utilice el campo Parámetrosde servicio para pasar información agregada a los parámetros predefinidos generados en la aplicación personalizada. En este ejemplo, cuando se cargan imágenes de campaña, las imágenes se actualizan con`Jumanji`texto en la`Arial-BoldMT`fuente.*
 
 ## Uso de perfiles de procesamiento para procesar recursos {#use-profiles}
 
@@ -169,19 +157,20 @@ Cree y aplique los perfiles de procesamiento personalizados adicionales a carpet
 Aplique perfiles de procesamiento a las carpetas mediante uno de los siguientes métodos:
 
 * Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > Perfiles **** de procesamiento y utilizar la acción **[!UICONTROL Aplicar Perfil a carpetas]** . Abre un navegador de contenido que le permite desplazarse a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
+* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the appropriate processing profile for that folder. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
+   ![Aplicar perfil de procesamiento a una carpeta desde la ficha Propiedades del recurso](assets/folder-properties-processing-profile.png)
 
->[!NOTE]
+>[!TIP]
 >
->Solo se puede aplicar un perfil de procesamiento a una carpeta específica. Para generar más representaciones, agregue más definiciones de representación al perfil de procesamiento existente.
+>Solo se puede aplicar un perfil de procesamiento a una carpeta. Para generar más representaciones, agregue más definiciones de representación al perfil de procesamiento existente.
 
-Después de aplicar un perfil de procesamiento a una carpeta, todos los recursos nuevos cargados (o actualizados) en esta carpeta o en cualquiera de sus subcarpetas se procesan con el perfil de procesamiento adicional configurado. Este procesamiento se suma al perfil predeterminado estándar. Si aplica varios perfiles a una carpeta, los recursos cargados o actualizados se procesan con cada uno de estos perfiles.
+Después de aplicar un perfil de procesamiento a una carpeta, todos los recursos nuevos cargados (o actualizados) en esta carpeta o en cualquiera de sus subcarpetas se procesan con el perfil de procesamiento adicional configurado. Este procesamiento se suma al perfil predeterminado estándar.
 
 >[!NOTE]
 >
 >Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, pero se puede sobrescribir con otro perfil aplicado a una subcarpeta. Cuando se cargan recursos en una carpeta, el Experience Manager comprueba si hay un perfil de procesamiento en las propiedades de la carpeta contenedora. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
 
-Todas las representaciones generadas están disponibles en la vista [!UICONTROL Representaciones] del carril izquierdo. Abra la previsualización de recursos y abra el carril izquierdo para acceder a la vista **[!UICONTROL Representaciones]** . Las representaciones específicas del perfil de procesamiento, para las que el tipo de recurso específico coincide con las reglas de inclusión de tipo MIME, deben ser visibles y accesibles.
+Para comprobar que los recursos se procesan, previsualización las representaciones generadas en la vista [!UICONTROL Representaciones] del carril izquierdo. Abra la previsualización de recursos y abra el carril izquierdo para acceder a la vista **[!UICONTROL Representaciones]** . Las representaciones específicas del perfil de procesamiento, para las que el tipo de recurso específico coincide con las reglas de inclusión de tipo MIME, deben ser visibles y accesibles.
 
 ![representaciones adicionales](assets/renditions-additional-renditions.png)
 
@@ -206,7 +195,7 @@ Añadir una configuración de flujo de trabajo posterior al procesamiento en Exp
 
 ### Crear modelos de flujo de trabajo posteriores al procesamiento {#create-post-processing-workflow-models}
 
-Los modelos de flujo de trabajo de postprocesamiento son modelos AEM de flujo de trabajo habituales. Cree distintos modelos si necesita un procesamiento diferente para diferentes ubicaciones de repositorio o tipos de recursos.
+Los modelos de flujo de trabajo de postprocesamiento son modelos AEM de flujo de trabajo habituales. Cree distintos modelos si necesita un procesamiento diferente para distintas ubicaciones de repositorio o tipos de recursos.
 
 Los pasos de procesamiento deben agregarse en función de las necesidades. Puede utilizar los pasos admitidos disponibles, así como cualquier paso de flujo de trabajo personalizado.
 
@@ -238,4 +227,10 @@ Para obtener más información sobre qué paso de flujo de trabajo estándar se 
 >* [Introducción al servicio](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)de cómputo de recursos.
 >* [Comprenda la extensibilidad y cuándo utilizarla](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html).
 >* [Cómo crear aplicaciones](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)personalizadas.
+>* [Tipos MIME admitidos para varios casos](/help/assets/file-format-support.md)de uso.
 
+
+<!-- TBD: 
+* How/where can admins check what's already configured and provisioned.
+* How/where to request for new provisioning/purchase.
+-->
