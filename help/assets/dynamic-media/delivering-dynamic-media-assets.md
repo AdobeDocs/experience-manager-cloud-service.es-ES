@@ -2,9 +2,9 @@
 title: Envío de recursos de Dynamic Media
 description: Aprenda a distribuir recursos de medios dinámicos
 translation-type: tm+mt
-source-git-commit: a09e82278df1adfb225a01e60ae7ef188375b800
+source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '315'
 ht-degree: 15%
 
 ---
@@ -35,6 +35,7 @@ Para obtener más información, consulte los temas siguientes:
 * [Vinculación de direcciones URL a la Aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [Envío de imágenes optimizadas para un sitio interactivo](/help/assets/dynamic-media/responsive-site.md)
 * [ENVÍO de contenido HTTP2](/help/assets/dynamic-media/http2faq.md)
+* [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Uso de conjuntos de reglas para transformar direcciones URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
