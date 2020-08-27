@@ -2,9 +2,9 @@
 title: Notas de la versión 2020.8.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 7%
 
 ---
@@ -44,7 +44,7 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 * Las previsualizaciones de documento en PDF nativas y de alta fidelidad ya están disponibles en Brand Portal. Consulte Descripción general [del visor de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documento.
 
-* La interfaz de usuario para invalidar la caché ahora está disponible en [!DNL Dynamic Media].
+* Ahora puede invalidar la caché de CDN (red de Envío de contenido) directamente desde [!DNL Dynamic Media] en AEM como Cloud Service (en lugar de utilizar [!DNL Dynamic Media Classic]) para garantizar que los recursos más recientes se proporcionen en minutos en lugar de horas. Consulte [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * La compatibilidad de accesibilidad mejorada se agrega a los controles de interfaz de usuario, la navegación, la exploración y la experiencia de búsqueda en [!DNL Assets].
 
