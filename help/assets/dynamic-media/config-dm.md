@@ -2,7 +2,7 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: ed904a95768fb1965506187932d4f9d6464ed190
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -77,7 +77,7 @@ A menos que tenga una disposición especial para utilizar el servidor de su prop
 
    * **[!UICONTROL Sincronizar todo el contenido]** : seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:
 
-   * **[!UICONTROL Modo de sincronización de medios dinámicos]**
+   * **[!UICONTROL Modo de sincronización de Dynamic Media]**
       * **[!UICONTROL Habilitado de forma predeterminada]** : la configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Deshabilitado de forma predeterminada]** : la configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.
 Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, abra la página Propiedades de la carpeta de recursos. Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
@@ -139,7 +139,7 @@ Las tareas de configuración y configuración incluyen lo siguiente:
 
 #### Configuración de publicación para Image Server {#publishing-setup-for-image-server}
 
-La configuración de configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Medios dinámicos envía un recurso según la configuración predeterminada definida en Ajuste de publicación. Por ejemplo, una solicitud de envío de una imagen que no incluye un atributo resolution genera una imagen con la configuración de Resolución de objeto predeterminada.
+La configuración de configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Medios dinámicos envía un recurso según la configuración predeterminada definida en Ajuste de publicación. Por ejemplo, una solicitud para entregar una imagen que no incluye un atributo resolution genera una imagen con la configuración de Resolución de objeto predeterminada.
 
 Para configurar Ajuste de publicación: en Dynamic Media Classic, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor]** de imágenes.
 
@@ -189,7 +189,7 @@ Para configurar las propiedades de color predeterminadas para habilitar la corre
 
    Puede establecer las siguientes propiedades de corrección de color:
 
-   * **[!UICONTROL Espacio]** de color predeterminado CMYK: nombre del perfil de color predeterminado CMYK
+   * **[!UICONTROL Espacio]** de color predeterminado CMYK: nombre del perfil de color CMYK predeterminado
    * **[!UICONTROL Espacio]** de color predeterminado de escala de grises: nombre del perfil de color gris predeterminado
    * **[!UICONTROL Espacio]** de color predeterminado RGB: nombre del perfil de color RGB predeterminado
    * **[!UICONTROL Calidad]** de representación de conversión de color: especifica la interpretación. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default.
@@ -200,7 +200,7 @@ Por ejemplo, puede establecer el **[!UICONTROL espacio de color predeterminado R
 
 Al hacerlo, se haría lo siguiente:
 
-* Activa la corrección de color para imágenes RGB y CMYK.
+* Permite la corrección de color para imágenes RGB y CMYK.
 * Las imágenes RGB que no tengan un perfil de color se considerarán como en el espacio de color *sRGB* .
 * Las imágenes CMYK que no tengan un perfil de color se considerarán en el espacio de color *WebCoated* .
 * Las representaciones dinámicas que devuelven salida RGB la devolverán en el *sRGB *espacio de color.
@@ -219,7 +219,7 @@ Consulte [Carga de recursos](/help/assets/add-assets.md).
 
 **Para configurar el procesamiento de recursos**
 
-1. En AEM, haga clic en el logotipo AEM para acceder a la consola de navegación global y, a continuación, haga clic en **[!UICONTROL General > CRXDE Lite]**.
+1. En AEM, haga clic en el logotipo de AEM para acceder a la consola de navegación global y, a continuación, haga clic en **[!UICONTROL General > CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -300,7 +300,7 @@ En primer lugar, defina la convención de nombre para la forma en que los recurs
 
 Al cargar archivos, Dynamic Media crea automáticamente un conjunto con todos los archivos que coinciden con la convención de nombre definida en los ajustes preestablecidos activos.
 
-**Configuración de la asignación de nombres predeterminada**
+**Configuración de la nomenclatura predeterminada**
 
 Cree una convención de nombre predeterminada que se utilice en cualquier fórmula de ajuste preestablecido de conjunto de lotes. La convención de nombre predeterminada seleccionada en la definición del ajuste preestablecido de conjunto de lotes puede ser todo lo que la compañía necesita para generar conjuntos por lotes. Se crea un ajuste preestablecido de conjunto de lotes para utilizar la convención de nombre predeterminada que defina. Puede crear tantos ajustes preestablecidos de conjunto de lotes como desee con convenciones de nombre personalizadas alternativas necesarias para un conjunto concreto de contenido en casos en los que exista una excepción a la nomenclatura predeterminada definida por la compañía.
 
