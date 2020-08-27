@@ -3,9 +3,9 @@ title: Download assets from [!DNL Adobe Experience Manager Assets].
 description: Descargue recursos [!DNL Adobe Experience Manager Assets] desde y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
+source-git-commit: c4a642541a3c8f69c0efff0dbbe036374a1d6f6b
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '894'
 ht-degree: 4%
 
 ---
@@ -21,9 +21,30 @@ Puede descargar recursos, incluidas las representaciones estáticas y dinámicas
 
 No se pueden descargar los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de medios mixtos y Conjuntos de carrusel.
 
+Puede descargar recursos de Experience Manager mediante los siguientes métodos:
+
+* [interfaz de usuario de Experience Manager](#download-in-aem)
+* Interfaz de usuario de uso compartido de vínculos de recursos
+* [Uso compartido de recursos comunes](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Aplicación de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+
+## Descargar recursos mediante AEM interfaz {#download-in-aem}
+
+El servicio de descarga asincrónico proporciona un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan de la interfaz de usuario en tiempo real. Los archivos de gran tamaño se descargan de forma asíncrona y se informa a los usuarios de la finalización mediante notificaciones de Experience Manager en la Bandeja de entrada. Consulte [Descripción de la bandeja de entrada](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)del Experience Manager.
+
+![Descargar notificación](assets/download-notification.png)
+
+*Figura: Descargue la notificación a través de la[!DNL Experience Manager]Bandeja de entrada.*
+
+Las descargas asincrónicas se activan en cualquiera de los casos siguientes:
+
+* Si hay más de 10 recursos o más de 100 MB para descargar.
+* Si la descarga tarda más de 30 segundos en prepararse.
+
 Para descargar recursos, siga estos pasos:
 
-1. En la interfaz de usuario de Experience Manager, haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**.
+1. En [!DNL Experience Manager] la interfaz de usuario, haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**.
 1. Vaya a los recursos que desee descargar. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta. En la barra de herramientas, haga clic en **[!UICONTROL Descargar]**.
 
    ![Opciones disponibles al descargar recursos de [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
@@ -38,14 +59,14 @@ Para descargar recursos, siga estos pasos:
    | **[!UICONTROL Correo electrónico]** | Seleccione esta opción para que se envíe una notificación por correo electrónico al destinatario. Las plantillas de correo electrónico estándar están disponibles en las siguientes ubicaciones:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Las plantillas que se personalizan durante la implementación están disponibles en las siguientes ubicaciones: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puede almacenar plantillas personalizadas específicas del inquilino en las siguientes ubicaciones:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Recursos]** | Seleccione esta opción para descargar el recurso en su formulario original sin ninguna representación.<br>La opción de subrecursos está disponible si el recurso original tiene subrecursos. |
    | **[!UICONTROL Representaciones]** | Una representación es la representación binaria de un recurso. Los recursos tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones. <br> Con esta opción, puede seleccionar las representaciones que desee descargar. Las representaciones disponibles dependen del recurso seleccionado. |
-   | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde dentro de AEM. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
+   | **[!UICONTROL Recortes inteligentes]** | Seleccione esta opción para descargar todas las representaciones de recorte inteligente del recurso seleccionado desde dentro [!DNL Experience Manager]. Se crea un archivo zip con las representaciones de recorte inteligente y se descarga en el equipo local. |
    | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de las que aparecen en la lista Ajuste preestablecido [de](/help/assets/dynamic-media/image-presets.md) imagen. <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como invertir la imagen. La opción solo está disponible si se ha [!DNL Dynamic Media] activado. |
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
 
 ## Habilitar servlet de descarga de recursos {#enable-asset-download-servlet}
 
-El servlet predeterminado de AEM permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos visibles para ellos que pueden sobrecargar el servidor y la red. Para mitigar los posibles riesgos de DoS causados por esta función, el componente `AssetDownloadServlet` OSGi está deshabilitado de forma predeterminada para las instancias de publicación.
+El servlet predeterminado de [!DNL Experience Manager] permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos. La preparación de la descarga puede tener implicaciones de rendimiento o incluso puede sobrecargar el servidor y la red. Para mitigar los riesgos potenciales de tipo DoS causados por esta función, el componente `AssetDownloadServlet` OSGi está desactivado para las instancias de publicación.
 
 Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza algo como Asset Share Commons u otra implementación similar al portal, habilite manualmente el servlet mediante una configuración OSGi. Adobe recomienda que el tamaño de descarga permitido sea lo más bajo posible sin afectar a los requisitos de descarga diaria. Un valor alto puede afectar al rendimiento.
 
@@ -63,7 +84,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza 
 
 ## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
 
-El `Asset Download Servlet` se puede desactivar en instancias de AEM Publish actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
+El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experience Manager] publicación actualizando la configuración del despachante para bloquear las solicitudes de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
 
 1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtros.
 
