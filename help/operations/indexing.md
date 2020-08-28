@@ -2,9 +2,9 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 translation-type: tm+mt
-source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
+source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1521'
 ht-degree: 2%
 
 ---
@@ -176,3 +176,7 @@ La versión anterior de la aplicación utiliza la siguiente configuración:
 La nueva versión de la aplicación utiliza la siguiente configuración (modificada):
 
 `/oak:index/acme.product-custom-2`
+
+### Índice-Disponibilidad/Tolerancia a fallas {#index-availability}
+
+Se recomienda crear índices de duplicado para las características que son extremadamente importantes (teniendo en cuenta la convención de nomenclatura para los índices antes mencionados), por lo que en el caso de corrupción de índices o de cualquier evento imprevisto de este tipo, existe un índice de reserva disponible para responder a las consultas.
