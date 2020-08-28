@@ -2,7 +2,7 @@
 title: 'Uso de versiones de página  '
 description: Cree, compare y restaure versiones de una página
 translation-type: tm+mt
-source-git-commit: 2d5c7ee7866f8334e67a36b120fdb8ad7a34e7f1
+source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -226,7 +226,7 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 * **Deformación de tiempo funciona dependiendo de las páginas publicadas**: Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo mostrará la página actual en el entorno de creación.
 * **Deformación de tiempo emplea las versiones de página**: si se desplaza a una página que se ha eliminado del repositorio, se procesa correctamente si aún hay versiones antiguas de la página en el repositorio.
 * **Las versiones eliminadas afectan a la función Deformación de tiempo**: si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar resultados correctos.
-* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, deberá hacerlo manualmente mediante la [restauración](#reverting-to-a-page-version).
+* **Deformación de tiempo es de solo lectura**: no se puede editar la versión antigua de la página. Tan solo pueden visualizarse. Si desea restaurar la versión anterior, deberá hacerlo manualmente mediante la [restauración](#revert-to-a-version).
 * **Deformación de tiempo se basa únicamente en el contenido de la página**: si los elementos para procesar el sitio web (código, CSS, recursos e imágenes, etc.) cambian, la vista será diferente de la original, ya que no hay versiones de dichos elementos en el repositorio.
 
 >[!CAUTION]
