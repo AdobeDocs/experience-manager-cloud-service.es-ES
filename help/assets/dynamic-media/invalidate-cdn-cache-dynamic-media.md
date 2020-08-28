@@ -2,9 +2,9 @@
 title: Invalidación de la caché de CDN mediante Dynamic Media
 description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que se entregan mediante Dynamic Media, en lugar de esperar a que caduque la caché.
 translation-type: tm+mt
-source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
+source-git-commit: d025a44fea539e1d7a0d76fe20dd818a88c43fd8
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1312'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,11 @@ Consulte también Descripción general [del almacenamiento en caché en Dynamic 
 
 **Para invalidar la caché de CDN mediante Dynamic Media**
 
-*Parte 1: Creación de una plantilla de invalidación de CDN*
+*Parte 1 de 2: Creación de una plantilla de invalidación de CDN*
 
 1. En AEM como Cloud Service, toque **[!UICONTROL Herramientas > Recursos > Plantilla de invalidación de CDN.]**
 
-<!--
-    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
--->
+   ![Función de validación de CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
 1. En la página Plantilla **[!UICONTROL de invalidación de]** CDN, realice una de las siguientes opciones según el escenario:
 
@@ -39,9 +37,10 @@ Consulte también Descripción general [del almacenamiento en caché en Dynamic 
 
    ![Plantilla de invalidación de CDN: Crear](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. En la esquina superior derecha de la página Plantilla de invalidación de CDN, toque **[!UICONTROL Guardar]** y, a continuación, **[!UICONTROL Aceptar]**.
+1. En la esquina superior derecha de la página Plantilla de invalidación de CDN, toque **[!UICONTROL Guardar]** y, a continuación, **[!UICONTROL Aceptar]**.<br>
 
-   *Parte 2: Configuración de las opciones de invalidación de CDN*
+   *Parte 2 de 2: Configuración de las opciones de invalidación de CDN*
+   <br>
 
 1. En AEM como Cloud Service, toque **[!UICONTROL Herramientas > Recursos > Invalidación de CDN.]**
 
