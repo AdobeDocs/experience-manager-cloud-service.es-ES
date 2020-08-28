@@ -2,9 +2,9 @@
 title: Invalidación de la caché de CDN mediante Dynamic Media
 description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que se entregan mediante Dynamic Media, en lugar de esperar a que caduque la caché.
 translation-type: tm+mt
-source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
+source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,9 @@ Consulte también Descripción general [del almacenamiento en caché en Dynamic 
 
 1. En AEM como Cloud Service, toque **[!UICONTROL Herramientas > Recursos > Plantilla de invalidación de CDN.]**
 
-   ![Función de validación de CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
+<!--
+    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
+-->
 
 1. En la página Plantilla **[!UICONTROL de invalidación de]** CDN, realice una de las siguientes opciones según el escenario:
 
