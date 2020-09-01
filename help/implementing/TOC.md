@@ -3,10 +3,10 @@ sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 70%
+source-wordcount: '371'
+ht-degree: 69%
 
 ---
 
@@ -44,6 +44,9 @@ ht-degree: 70%
    + [Registro](developing/introduction/logging.md)
    + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Comprender los resultados de la prueba](/help/implementing/developing/introduction/understand-test-results.md)
+   + [Diferencias de página](/help/implementing/developing/introduction/page-diff.md)
+   + [Limitaciones del editor](/help/implementing/developing/introduction/editor-limitations.md)
+   + [Convenciones de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)
 + Componentes y plantillas {#components-templates}
    + [Información general de componentes](developing/components/overview.md)
    + [Plantillas](developing/components/templates.md)
