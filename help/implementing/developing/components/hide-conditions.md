@@ -2,7 +2,7 @@
 title: Uso de Ocultar condiciones
 description: Las condiciones de ocultación se pueden utilizar para determinar si un recurso de componente se procesa o no.
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 4%
@@ -58,22 +58,22 @@ Si el autor de una plantilla decide desactivar la opción de páginas secundaria
 
 1. De forma predeterminada, el autor de la página puede utilizar el componente principal de lista para crear una lista con páginas secundarias seleccionando la opción Páginas **** secundarias.
 
-   ![Ajustes del componente lista](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![Ajustes del componente lista](assets/hide-conditions-list-settings.png)
 
 1. En el cuadro de diálogo de diseño del componente principal de lista, el autor de la plantilla puede elegir la opción **Deshabilitar elementos secundarios** para evitar que la opción de generar una lista basada en páginas secundarias se muestre al autor de la página.
 
-   ![Cuadro de diálogo de diseño de componente de lista](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![Cuadro de diálogo de diseño de componente de lista](assets/hide-conditions-list-design.png)
 
 1. Se crea un nodo de política en `/conf/wknd/settings/wcm/policies/wknd/components/list` con una propiedad `disableChildren` definida en `true`.
 
-   ![Estructura de nodos de la condición de ocultar](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![Estructura de nodos de la condición de ocultar](assets/hide-conditions-node-structure.png)
 
 1. La condición hide se define como el valor de una `granite:hide` propiedad en el nodo de propiedad dialog. `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![Evaluación de la condición de ocultar](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![Evaluación de la condición de ocultar](assets/hide-conditions-evaluation.png)
 
 1. El valor de `disableChildren` se extrae de la configuración de diseño y la expresión `${cdDesign.disableChildren}` se evalúa como `false`, lo que significa que la opción no se procesará como parte del componente.
 
 1. La opción **Páginas** secundarias ya no se representa para el autor de la página al utilizar el componente lista.
 
-   ![Componente de lista con opción secundaria deshabilitada](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![Componente de lista con opción secundaria deshabilitada](assets/hide-conditions-child-disabled.png)
