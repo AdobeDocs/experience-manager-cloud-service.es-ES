@@ -2,7 +2,7 @@
 title: Modelo SPA
 description: En el presente documento se describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de la SPA para aplicar componentes de la SPA editables en AEM.
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Para permitir que el autor utilice el Editor de SPA de AEM para editar el contenido de un SPA, hay requisitos que debe cumplir el SPA.
 
-## Introducción {#introdcution}
+## Introducción {#introduction}
 
 El presente documento describe el contrato general que debe cumplir cualquier marco de SPA (es decir, el tipo de capa de soporte AEM) para implementar componentes de SPA editables dentro de AEM.
 
@@ -283,4 +283,3 @@ Vea cómo funciona una SPA sencilla y experimente con una SPA usted mismo contin
 Para obtener más información sobre las SPA en AEM, consulte los siguientes documentos:
 
 * [Información general](editor-overview.md) del Editor de SPA para obtener información general sobre las SPA en AEM y el modelo de comunicación
-
