@@ -1,8 +1,8 @@
 ---
-title: Editar el contenido de una página
+title: Edición del contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ El marcador de posición de componente es un indicador para mostrar la posición
 
 Puede seleccionar un componente nuevo mediante el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). El [marcador de posición de componente](#component-placeholder) le muestra dónde se colocará el componente:
 
-1. Asegúrese de que la página se encuentra en el modo de [**edición **.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 1. Abra el [navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 1. Arrastre el componente en cuestión hasta la [posición deseada](#component-placeholder).
 1. [Edite](#edit-content) el componente.
@@ -142,7 +142,7 @@ Puede seleccionar un componente nuevo mediante el [navegador de componentes](/he
 
 Puede agregar un componente nuevo mediante el cuadro **Arrastrar componentes aquí** del sistema de párrafos:
 
-1. Asegúrese de que la página se encuentra en el modo de [**edición **.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 1. Existen dos formas de seleccionar y añadir un nuevo componente desde el sistema de párrafo:
 
    * Seleccione la opción **Insertar componente** (+) en la barra de herramientas de un componente existente o el cuadro **Arrastrar componentes aquí**.
@@ -165,7 +165,7 @@ Puede configurar este comportamiento en su instalación. Para obtener más detal
 
 Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
-1. Asegúrese de que la página se encuentra en el modo de [**edición **.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+1. Asegúrese de que la página se encuentra en el modo de [**edición**.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 1. Abra el [navegador de recursos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
 1. Arrastre el recurso hasta la posición necesaria. El [marcador de posición de componente](#component-placeholder) le muestra dónde se colocará este.
 
@@ -177,7 +177,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 >
 >En un dispositivo móvil, el navegador de recursos ocupará toda la pantalla. Cuando comience a arrastrar un recurso, el navegador se cerrará para volver a mostrar la página, de modo que pueda colocarlo.
 
-Si al examinar los recursos descubre que necesita realizar alguna modificación rápida en alguno de ellos, puede iniciar el editor de recursos directamente desde el navegador haciendo clic en el icono de edición que hay junto al nombre del recurso. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+Si al examinar los recursos descubre que necesita realizar alguna modificación rápida en alguno de ellos, puede iniciar el [editor de recursos](/help/assets/manage-digital-assets.md) directamente desde el navegador haciendo clic en el icono de edición que hay junto al nombre del recurso.
 
 ![Botón Editar recursos](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
