@@ -2,7 +2,7 @@
 title: Etiqueta decorativa
 description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM ofertas claras y sencillas controlando las etiquetas de decoración que envuelven los componentes incluidos.
 translation-type: tm+mt
-source-git-commit: 78afd53eaa4945e4933ef80a175fdf97c63b388e
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Para obtener más información sobre el desarrollo en HTL, consulte la documenta
 
 Este árbol de decisión resume la lógica que determina el comportamiento de las etiquetas de envoltorio.
 
-![Árbol de decisiones](/help/implementing/developing/introduction/assets/decoration-tag-decision-tree.png)
+![Árbol de decisiones](assets/decoration-tag-decision-tree.png)
 
 ### Use Cases {#use-cases}
 
