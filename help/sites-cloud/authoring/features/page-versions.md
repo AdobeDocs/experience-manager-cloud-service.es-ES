@@ -2,7 +2,7 @@
 title: 'Uso de versiones de página  '
 description: Cree, compare y restaure versiones de una página
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -132,7 +132,7 @@ Este método puede utilizarse para restaurar versiones de páginas específicas 
 
    ![Restaurar versión: seleccionar página](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Seleccione **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión *actual* .
+1. Seleccione **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión actual.
 
 >[!NOTE]
 >
