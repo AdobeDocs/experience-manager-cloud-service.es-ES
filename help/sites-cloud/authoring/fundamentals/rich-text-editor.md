@@ -2,10 +2,10 @@
 title: Use el Editor de texto enriquecido en  [!DNL Adobe Experience Manager] para crear contenido
 description: Use el  [!DNL Experience Manager] Editor de texto enriquecido para crear contenido.
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Generalmente, la barra de herramientas ofrece las siguientes opciones:
 
 Para los componentes basados en texto, haga clic en el botón de modo de pantalla completa ![RTE de pantalla completa](/help/sites-cloud/authoring/assets/editing-full-screen.png) desde la [barra de herramientas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir el editor de texto enriquecido y ocultar el resto del contenido de la página.
 
-El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la fase de creación. La disponibilidad de las opciones depende de la configuración. <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la fase de creación. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE en modo de pantalla completa](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
