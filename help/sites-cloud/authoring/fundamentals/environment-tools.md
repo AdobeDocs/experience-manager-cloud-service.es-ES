@@ -2,7 +2,7 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Puede editar una página con el editor. Por ejemplo:
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
-* El selector [**Información de página **](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)muestra las diapositivas introductorias (tal y como se muestran la primera vez que se accede al editor).
+* El selector [**Información de página**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties) muestra las diapositivas introductorias (tal y como se muestran la primera vez que se accede al editor).
 * El cuadro de diálogo [Configuración](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) de componentes específicos (utilizando el icono ? en la barra de herramientas del cuadro de diálogo), que ofrece ayuda contextual.
 
 Encontrará [más recursos relacionados con la ayuda en las consolas](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help).
@@ -100,7 +100,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
 ## Navegador de recursos {#assets-browser}
 
-El navegador de recursos muestra todos los recursos que se pueden utilizar directamente en la página actual. <!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+El navegador de recursos muestra todos los [recursos](/help/assets/home.md) que se pueden utilizar directamente en la página actual.
 
 El explorador de recursos es una pestaña del panel lateral que está situada junto al [explorador de componentes](#components-browser) y al [árbol de contenido](#content-tree). Para abrir o cerrar el panel lateral, utilice el icono de la parte superior izquierda de la barra de herramientas:
 
@@ -155,7 +155,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 >
 >Se detectará un dispositivo móvil cuando la anchura sea menor a 1024 píxeles; es decir, también cuando la ventana de escritorio sea pequeña.
 
-Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el editor de recursos directamente desde el explorador de recursos haciendo clic en el icono de edición que se muestra al lado del nombre del recurso. <!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+Si necesita realizar rápidamente un cambio en un recurso, puede iniciar el [editor de recursos](/help/assets/manage-digital-assets.md) directamente desde el explorador de recursos haciendo clic en el icono de edición que se muestra al lado del nombre del recurso.
 
 ![Botón Editar recursos](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -254,7 +254,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 * [Publicar página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
 * [Cancelar la publicación de página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Editar plantilla](/help/sites-cloud/authoring/features/templates.md)
-* [Ver tal y como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+* [Ver como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [Ver en administración](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 * [Ayuda](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)
 * [Promocionar lanzamiento](/help/sites-cloud/authoring/launches/promoting.md) (solo si la página es nueva)
