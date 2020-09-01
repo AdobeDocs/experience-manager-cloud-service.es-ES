@@ -2,10 +2,10 @@
 title: 'Creación de plantillas de página  '
 description: La plantilla define la estructura de la página resultante y con el editor de plantillas, crear y mantener plantillas ya no es una tarea solo de desarrollador
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ El **Editor de plantillas** permite a los autores de plantillas:
 
 En este documento se explica cómo un **autor de plantillas** puede utilizar la consola y el editor de plantillas para crear y gestionar plantillas editables.
 
-Para obtener información detallada acerca de cómo funcionan las plantillas editables en un nivel técnico, consulte el documento para desarrolladores Plantillas de página: editables. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
-Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Es una tarea de administración que se describe en el documento Plantillas de página: editables. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >
    >En una instancia estándar de AEM, la carpeta **Global** ya existe en la consola de plantillas. Contiene plantillas predeterminadas y actúa como alternativa en caso de que no se encuentre ninguna política ni ningún tipo de plantilla en la carpeta actual.
    >
-   >Una práctica recomendada es utilizar una carpeta de plantillas creada para su proyecto. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >Una práctica recomendada es utilizar una [carpeta de plantillas creada para su proyecto](/help/implementing/developing/components/templates.md#template-folders).
 
 1. Seleccione **Crear** y, a continuación, **Crear plantilla** para abrir el asistente.
 
@@ -114,7 +114,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 
    >[!NOTE]
    >
-   >Los tipos de plantilla son diseños de plantilla predefinidos y se pueden concebir como plantillas para una plantilla. Los responsables de predefinirlos son los desarrolladores o el administrador del sistema. Encontrará más información en el documento para desarrolladores Plantillas de página: editables. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >Los tipos de plantilla son diseños de plantilla predefinidos y se pueden concebir como plantillas para una plantilla. Los responsables de predefinirlos son los desarrolladores o el administrador del sistema. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. Complete los **detalles de la plantilla**:
 
@@ -204,7 +204,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
    >
-   >Consulte Disponibilidad de plantillas: los principios para las plantillas permitidas siguen siendo los mismos. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -265,7 +265,7 @@ Cuando un componente se ha desbloqueado, puede definir el [contenido inicial](#e
 
 #### Diseño {#template-layout}
 
-En [diseño](#editing-a-template-layout-template-author) puede predefinir el diseño de la plantilla para los formatos de dispositivo requeridos. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de [**Diseño **para la creación de páginas](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+En [diseño](#editing-a-template-layout-template-author) puede predefinir el diseño de la plantilla para los formatos de dispositivo requeridos. El modo de **Diseño** para la creación de plantillas tiene la misma funcionalidad que el modo de [**Diseño** para la creación de páginas](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
 
 #### Políticas de la página {#template-page-policies}
 
@@ -414,7 +414,7 @@ Por ejemplo, para un componente de imagen, puede definir la proporción del reco
 
 >[!NOTE]
 >
->Las políticas de contenido para componentes que implementan el editor de texto enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. <!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)Las políticas de contenido para componentes que implementan el editor de texto enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario.
 
 #### Política y propiedades (contenedor de diseño) {#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 
 >[!NOTE]
 >
->El modo de **Contenido inicial** puede considerarse un modo de edición para las páginas creadas con esa plantilla. Por tanto, las políticas no se definen en el modo de **Contenido inicial**, sino en el modo de [**Estructura **](#editing-a-template-structure-template-author).
+>El modo de **Contenido inicial** puede considerarse un modo de edición para las páginas creadas con esa plantilla. Por tanto, las políticas no se definen en el modo de **Contenido inicial**, sino en el modo de [**Estructura**](#editing-a-template-structure-template-author).
 
 * Se marcan los componentes desbloqueados que quedan disponibles para editarse. Cuando están seleccionados tienen un borde azul:
 
