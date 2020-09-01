@@ -2,7 +2,7 @@
 title: Proyectos
 description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 79%
@@ -72,7 +72,7 @@ Los recursos se cargan directamente en el mosaico. Además, si dispone del compl
 
 ### Colecciones de recursos {#asset-collections}
 
-Del mismo modo que con los recursos, puede agregar colecciones de recursos directamente al proyecto. Puede definir colecciones de recursos. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente al proyecto. Puede definir colecciones de recursos.
 
 ![Colección de recursos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ Desde este mosaico, así como el mosaico Equipo, se pueden asignar o eliminar mi
 
 ### Trabajo de traducción {#translation-job}
 
-En el mosaico Trabajo de traducción puede iniciar una traducción y también puede ver el estado de las traducciones. Para configurar la traducción, consulte Creación de proyectos de traducción. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+En el mosaico Trabajo de traducción puede iniciar una traducción y también puede ver el estado de las traducciones. Para configurar la traducción, consulte [Creación de proyectos de traducción](/help/assets/translate-assets.md).
 
 ![Trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
@@ -171,7 +171,7 @@ Las diferentes funciones de usuario se establecen en una plantilla de proyecto y
 
 Todos los proyectos admiten las siguientes funciones predeterminadas para que pueda administrar los permisos de seguridad y control:
 
-| Función | Descripción | Permisos  | Pertenencia a grupos |
+| Función | Descripción | Permisos    | Pertenencia a grupos |
 |---|---|---|---|
 | Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | `workflow-users` grupo |
 | Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de toma, una sesión fotográfica y revisar y aprobar recursos; escribir permiso en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
