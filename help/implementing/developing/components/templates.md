@@ -2,7 +2,7 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 8%
@@ -512,7 +512,7 @@ Páginas creadas a partir de plantillas editables:
 
    * `cq:templateType` - Proporciona una referencia al tipo de plantilla.
 
-![Interrelación entre plantillas, contenido y componentes](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![Interrelación entre plantillas, contenido y componentes](assets/templates-content-components.png)
 
 El diagrama anterior muestra cómo las plantillas, el contenido y los componentes se interrelacionan:
 
@@ -565,7 +565,7 @@ La evaluación funciona de la siguiente manera:
 
 El diagrama siguiente muestra el proceso de evaluación de la plantilla:
 
-![Proceso de evaluación de plantilla](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![Proceso de evaluación de plantilla](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
