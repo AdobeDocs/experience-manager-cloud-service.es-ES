@@ -2,20 +2,20 @@
 title: Uso del Asistente
 description: 'Uso del Asistente: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 40%
+source-wordcount: '146'
+ht-degree: 41%
 
 ---
 
 
-# Uso del Asistente para crear un proyecto de aplicación AEM {#using-wizard-to-create-an-aem-application-project}
+# Uso del Asistente {#using-wizard-to-create-an-aem-application-project}
 
 Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
 
 
-Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager:
+Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager mediante el asistente:
 
 1. Una vez que inicie sesión en Cloud Manager y se complete la configuración básica del programa, se mostrará una tarjeta de llamada a la acción especial en la pantalla **Información general**, si el repositorio está vacío.
 
