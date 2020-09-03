@@ -2,9 +2,9 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Una vez configurada la tubería de producción (repositorio, entorno y entorno d
    La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
-   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Generar detalles](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) de Entorno para obtener detalles sobre el entorno de compilación.
+   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Generar detalles](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) de Entorno para obtener detalles sobre el entorno de compilación.
    * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte Prueba [de calidad del](/help/implementing/cloud-manager/code-quality-testing.md) código para obtener más detalles sobre el proceso de prueba.
    * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para generar imágenes. Este proceso es responsable de transformar el contenido y los paquetes de despachante producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
    * Implementar en etapa
@@ -56,8 +56,8 @@ Consulte Prueba [funcional](/help/implementing/cloud-manager/functional-testing.
    * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.\
       Consulte Prueba [funcional](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizada para obtener más detalles.
 
-   * Auditoría de contenido: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de contenido después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
-Consulte [Explicación de los resultados](/help/implementing/cloud-manager/content-audit-testing.md) de la auditoría de contenido para obtener más detalles.
+   * Auditoría de experiencias: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencia después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
+Consulte [Explicación de los resultados](/help/implementing/cloud-manager/experience-audit-testing.md) de la auditoría de experiencias para obtener más detalles.
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    >[!NOTE]
    >
-   >Todos los artefactos AEM se implementan tanto en el autor como en los editores. Los modos de ejecución deben aprovecharse cuando se requieran configuraciones específicas de nodos. Para obtener más información sobre cómo los modos de ejecución le permiten ajustar la instancia de AEM para un propósito específico, consulte Run Modes (Modos de ejecución).
+   >Todos los artefactos AEM se implementan tanto en el autor como en los editores. Los modos de ejecución deben aprovecharse cuando se requieran configuraciones específicas de nodos. Para obtener más información sobre cómo los modos Ejecutar le permiten ajustar la instancia de AEM para un propósito específico, consulte los modos Ejecutar.
 
 1. El artefacto del despachante se implementa en cada distribuidor de la siguiente manera:
 
