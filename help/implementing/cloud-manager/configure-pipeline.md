@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -90,9 +90,6 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    Consulte [Explicación de los resultados](/help/implementing/cloud-manager/experience-audit-testing.md) de auditoría de experiencias para obtener más detalles.
 
    Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de experiencias. Una vez agregada la ruta, haga clic en **Guardar**.
-
-   >[!NOTE]
-   >Para activar el paso Auditoría de experiencias, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Consulte Problemas [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) conocidos para obtener más detalles.
 
    ![](assets/exp-audit2.png)
 
