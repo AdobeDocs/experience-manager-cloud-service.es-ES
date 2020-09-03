@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -78,21 +78,21 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
 
 
-1. La configuración de la canalización de producción incluye una tercera ficha etiquetada como Auditoría **del contenido**.
+1. La configuración de la canalización de producción incluye una tercera ficha con la etiqueta **Auditoria** de experiencias.
 
    ![](assets/content-audit-1.png)
 
-   Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de contenido. El usuario puede introducir manualmente una ruta URL para incluirla. Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de contenido como opción predeterminada.
+   Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de experiencias. El usuario puede introducir manualmente una ruta URL para incluirla. Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de experiencias de forma predeterminada.
 
    >[!NOTE]
    > Las páginas configuradas se enviarán al servicio y se evaluarán según las pruebas de rendimiento, accesibilidad, SEO (Optimización de motores de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva).
 
-   Consulte [Explicación de los resultados](/help/implementing/cloud-manager/content-audit-testing.md) de auditoría de contenido para obtener más detalles.
+   Consulte [Explicación de los resultados](/help/implementing/cloud-manager/experience-audit-testing.md) de auditoría de experiencias para obtener más detalles.
 
-   Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de contenido. Una vez agregada la ruta, haga clic en **Guardar**.
+   Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de experiencias. Una vez agregada la ruta, haga clic en **Guardar**.
 
    >[!NOTE]
-   >Para activar el paso Auditoría de contenido, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Consulte Problemas [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) conocidos para obtener más detalles.
+   >Para activar el paso Auditoría de experiencias, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Consulte Problemas [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) conocidos para obtener más detalles.
 
    ![](assets/content-audit2.png)
 
