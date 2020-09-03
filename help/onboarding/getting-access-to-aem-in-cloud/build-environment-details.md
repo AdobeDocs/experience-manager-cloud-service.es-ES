@@ -2,9 +2,9 @@
 title: Detalles del Entorno de compilación
 description: 'Detalles del Entorno de compilación: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,10 @@ Cloud Manager crea y prueba el código mediante un entorno de compilación espec
 
 * Se pueden instalar otros paquetes en el momento de la compilación, como se describe [a continuación](#installing-additional-system-packages).
 * Cada obra se construye sobre un entorno prístino; el contenedor de compilación no mantiene ningún estado entre las ejecuciones.
-* Maven siempre se ejecuta con el comando: *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package*
+* Maven siempre se ejecuta con los tres comandos siguientes:
+   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
 * Maven se configura a nivel de sistema con un archivo settings.xml que incluye automáticamente el repositorio público de Adobe **Artiact** . (Consulte Repositorio [de Maven Público de](https://repo.adobe.com/) Adobe para obtener más información).
 
 >[!NOTE]
