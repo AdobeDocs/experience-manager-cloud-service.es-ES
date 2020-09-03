@@ -2,7 +2,7 @@
 title: Prueba de auditoría de experiencias - Cloud Services
 description: Prueba de auditoría de experiencias - Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ El valor de la métrica Cambio puede ser uno de los siguientes:
 
 * **N/D** : no había ninguna puntuación anterior disponible para comparar
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### Puntuaciones de nivel de página {#page-level-scores}
 
@@ -59,5 +60,5 @@ Al explorar en profundidad cualquiera de las pruebas, se puede ver una puntuaci�
 
 Al hacer clic en los detalles de cualquier página individual se proporcionará información sobre los elementos de la página que se evaluaron y una guía para solucionar problemas si se detectan oportunidades de mejora. Los detalles de las pruebas y las directrices asociadas son proporcionados por Google Lighthouse.
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
