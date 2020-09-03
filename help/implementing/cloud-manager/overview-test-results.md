@@ -2,7 +2,7 @@
 title: 'Información general sobre los resultados de la prueba: Cloud Services'
 description: 'Información general sobre los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Existen tres categorías generales de pruebas admitidas por Cloud Manager for Cl
 
    La prueba funcional forma parte de la fase de prueba de una canalización de producción.
 
-1. [Prueba de auditoría de contenido](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [Prueba de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   La prueba de auditoría de contenido está habilitada en todas las tuberías de producción de Cloud Manager y no se puede omitir.
+   La prueba de auditoría de experiencias está habilitada en todas las tuberías de producción de Cloud Manager y no se puede omitir.
 
 Estas pruebas pueden ser:
 
