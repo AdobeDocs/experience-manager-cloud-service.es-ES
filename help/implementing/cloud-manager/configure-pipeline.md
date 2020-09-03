@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -58,11 +58,11 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 1. Aparece la pantalla **Configurar tubería** . Select the branch and click **Next**.
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. Configure las opciones de implementación.
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    Puede definir el activador para el inicio de la canalización:
 
@@ -80,7 +80,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 1. La configuración de la canalización de producción incluye una tercera ficha con la etiqueta **Auditoria** de experiencias.
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de experiencias. El usuario puede introducir manualmente una ruta URL para incluirla. Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de experiencias de forma predeterminada.
 
@@ -94,7 +94,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    >[!NOTE]
    >Para activar el paso Auditoría de experiencias, los usuarios deben editar la canalización y, opcionalmente, agregar páginas. Consulte Problemas [](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) conocidos para obtener más detalles.
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. Haga clic en **Guardar** en la pantalla **Editar tubería** . La página **Información general** ahora muestra la tarjeta **Implementar Programa** . Haga clic en el botón **Implementar** para implementar el programa.
 
