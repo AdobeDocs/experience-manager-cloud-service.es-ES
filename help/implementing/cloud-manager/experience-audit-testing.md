@@ -2,9 +2,9 @@
 title: Prueba de auditoría de experiencias - Cloud Services
 description: Prueba de auditoría de experiencias - Cloud Services
 translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,18 @@ La auditoría de experiencias en Cloud Manager garantiza que la experiencia digi
 
 La auditoría de experiencias proporciona resultados de prueba acumulados y detallados a nivel de página a través de la página de ejecución de la tubería de producción.
 
-* Las métricas de nivel acumulado miden la puntuación promedio en las páginas que fueron auditadas.
+* Las métricas de nivel acumulado miden la puntuación promedio en las páginas que fueron auditadas por rendimiento, accesibilidad, optimizaciones, SEO (Optimización de motores de búsqueda).
+   >[!NOTE]
+   >La puntuación de la aplicación web progresiva (PWA) no se incluye en la puntuación de resumen y solo se mostrará en la pantalla de detalles del informe a nivel de página.
 * Las puntuaciones de nivel de página individuales también están disponibles mediante el desglose.
 * Los detalles de las puntuaciones están disponibles para ver cuáles son los resultados de las pruebas individuales, junto con la guía sobre cómo solucionar cualquier problema que se identificó durante la auditoría de contenido.
 * Dentro del Administrador de nube se conserva un historial de los resultados de la prueba para que los clientes puedan ver si los cambios que se introducen en la ejecución de la canalización incluyen alguna regresión de la ejecución anterior.
 
 ### Puntuaciones acumuladas {#aggregate-scores}
 
-Hay una puntuación de nivel acumulada para cada tipo de prueba (rendimiento, accesibilidad, SEO, prácticas recomendadas y PWA).
+Hay una puntuación de nivel acumulada para cada tipo de prueba, como rendimiento, accesibilidad, SEO y prácticas recomendadas.
+>[!NOTE]
+>La puntuación de la aplicación web progresiva (PWA) no se incluye en la puntuación de resumen y solo se mostrará en la pantalla de detalles del informe a nivel de página.
 
 La puntuación de nivel acumulado toma la puntuación media de las páginas incluidas en la ejecución. El cambio en el nivel acumulado representa la puntuación media de las páginas en la ejecución actual en comparación con la media de las puntuaciones de la ejecución anterior, incluso si la colección de páginas configuradas para incluirse se ha modificado entre ejecuciones.
 
