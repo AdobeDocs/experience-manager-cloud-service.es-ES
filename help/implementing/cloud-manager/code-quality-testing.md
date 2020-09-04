@@ -2,7 +2,7 @@
 title: 'Prueba de calidad del código: Cloud Services'
 description: 'Prueba de calidad del código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -59,7 +59,7 @@ La siguiente tabla resume los umbrales de clasificación y error para cada una d
 
 ## Tratar con falsos positivos {#dealing-with-false-positives}
 
-El proceso de análisis de calidad no es perfecto y a veces identifica incorrectamente problemas que no son realmente problemáticos. Esto se denomina &quot;falso positivo&quot;.
+El proceso de análisis de calidad no es perfecto y a veces identifica incorrectamente problemas que no son realmente problemáticos. Esto se denomina *falso positivo*.
 
 En estos casos, el código fuente se puede anotar con la anotación estándar de Java `@SuppressWarnings` que especifica el ID de la regla como el atributo de anotación. Por ejemplo, un problema común es que la regla SonarQube para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
 
