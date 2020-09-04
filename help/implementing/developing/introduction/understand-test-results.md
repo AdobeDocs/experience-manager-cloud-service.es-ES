@@ -2,7 +2,7 @@
 title: 'Comprender los resultados de la prueba: Cloud Services'
 description: 'Comprender los resultados de la prueba: Cloud Services'
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 3%
@@ -130,7 +130,7 @@ Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de form
 
 Las pruebas funcionales escritas por el cliente deben empaquetarse como un archivo JAR independiente producido por la misma compilación Maven que los artefactos que se implementarán en AEM. Generalmente sería un módulo Maven independiente. El archivo JAR resultante debe contener todas las dependencias requeridas y generalmente se crearía usando el complemento maven-assembly-plugin usando el descriptor jar-con-dependencias.
 
-Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType establecido en integration-test. En el futuro, se espera que se admitan valores de encabezado adicionales. Una configuración de ejemplo para maven-assembly-plugin es:
+Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType definido en integration-test. En el futuro, se espera que se admitan valores de encabezado adicionales. Una configuración de ejemplo para maven-assembly-plugin es:
 
 ```java
 <build>
@@ -225,7 +225,7 @@ El valor de la métrica Cambio puede ser uno de los siguientes:
 
 * **N/D** : no había ninguna puntuación anterior disponible para comparar
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### Puntuaciones de nivel de página {#page-level-scores}
 
@@ -233,5 +233,5 @@ Al explorar en profundidad cualquiera de las pruebas, se puede ver una puntuaci�
 
 Al hacer clic en los detalles de cualquier página individual se proporcionará información sobre los elementos de la página que se evaluaron y una guía para solucionar problemas si se detectan oportunidades de mejora. Los detalles de las pruebas y las directrices asociadas son proporcionados por Google Lighthouse.
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
