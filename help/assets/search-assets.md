@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo encontrar los recursos necesarios 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4525'
 ht-degree: 7%
 
 ---
@@ -106,13 +106,13 @@ Puede mejorar la relevancia de las palabras clave para los recursos en particula
 
 1. En la interfaz de usuario de Assets, abra la página de propiedades del recurso. Haga clic en **[!UICONTROL Avanzadas]** y pulse o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave de búsqueda]**.
 1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
-1. Click/tap **[!UICONTROL Save &amp; Close]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
 Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Comprender cómo se clasifican los resultados de búsqueda y cómo se puede influir en la clasificación.*
+*Vídeo: Comprender cómo se clasifican los resultados de búsqueda y cómo se puede influir en la clasificación.*
 
 ## Advanced search {#scope}
 
@@ -241,7 +241,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[AEM server
 
 ![Examinar y seleccionar recursos en el selector de recursos](assets/assetpicker.png)
 
-Examinar y seleccionar recursos en el selector de recursos
+*Figura: Busque y seleccione un recurso en el selector de recursos.*
 
 ## Restricciones     {#limitations}
 
@@ -263,8 +263,8 @@ La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitac
 * Use el predicado de perspectivas para buscar recursos admitidos en función de las estadísticas de uso obtenidas de varias aplicaciones de Creative. Los datos de uso se agrupan en Puntuación de uso, Impresiones, Clics y canales de medios, donde los recursos aparecen como categorías.
 * Utilice la casilla de verificación para seleccionar todos los resultados de búsqueda o los resultados de búsqueda filtrados para operar en la selección. Selecciona todos los recursos buscados independientemente del número de recursos que se muestren en la vista de usuario actual. Por ejemplo, puede descargar todos los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para todos los recursos seleccionados o agregar recursos seleccionados a una colección.
 * Para buscar recursos que no contengan los metadatos obligatorios, consulte Metadatos [](#mandatorymetadata)obligatorios.
-* La búsqueda utiliza todos los campos de metadatos. Una búsqueda genérica, como la búsqueda de 12, generalmente devuelve muchos resultados. Para obtener mejores resultados, utilice comillas de doble (no simples) o asegúrese de que el número esté contiguo a una palabra sin carácter especial (por ejemplo, *shoe12*).
-* La búsqueda de texto completo admite operadores como -, ^, etc. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice &quot;Portátil - Belleza&quot; en lugar de Portátil - Belleza.
+* La búsqueda utiliza todos los campos de metadatos. Una búsqueda genérica, como la búsqueda de 12, generalmente devuelve muchos resultados. Para obtener mejores resultados, utilice comillas de doble (no simples) o asegúrese de que el número esté contiguo a una palabra sin carácter especial (por ejemplo `shoe12`).
+* La búsqueda de texto completo admite operadores como `-` y `^`. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice `"Notebook - Beauty"` en lugar de `Notebook - Beauty`.
 * Si los resultados de búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, un tipo de archivo específico, una ubicación específica, metadatos específicos, etc.
 
 * **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. AEM métodos de oferta para etiquetar automáticamente los recursos mediante Adobe Sensei, que  servicios inteligentes artificialmente que mejoran el etiquetado de los recursos con el uso y la formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
@@ -277,7 +277,7 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 ![Comportamiento de búsqueda con y sin comillas](assets/search_with_quotes.gif)
 
-Comportamiento de búsqueda con y sin comillas
+*Figura: Comportamiento de búsqueda con y sin comillas.*
 
 **Buscar con comodín** asterisco: Para ampliar la búsqueda, utilice un asterisco antes o después de la palabra de búsqueda para que coincida con cualquier número de caracteres. Por ejemplo, al buscar una ejecución sin un asterisco, no se devuelven recursos que contengan ninguna variación de la palabra (incluidos los metadatos). Un asterisco sustituye a cualquier número de caracteres. Por ejemplo,
 
@@ -288,7 +288,7 @@ Comportamiento de búsqueda con y sin comillas
 
 ![Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo](assets/search_with_asterisk_run.gif)
 
-Ilustración del uso de un comodín de asterisco en la búsqueda de recursos mediante un ejemplo
+*Figura: Ilustración del uso de caracteres comodín de asterisco en la búsqueda de recursos mediante un ejemplo.*
 
 **Buscar con comodín** de signo de interrogación: Para ampliar la búsqueda, utilice uno o varios &#39;?&#39; caracteres para que coincidan con el número exacto de caracteres. Por ejemplo, en la siguiente ilustración,
 
@@ -300,7 +300,7 @@ Ilustración del uso de un comodín de asterisco en la búsqueda de recursos med
 
 ![Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo](assets/search_with_questionmark_run.gif)
 
-Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo
+*Figura: Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo.*
 
 **Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` consulta devuelve recursos que contienen `camp` pero no `night`. Tenga en cuenta que `camp-night` la consulta devuelve recursos que contienen tanto `camp` como `night`.
 
@@ -312,6 +312,7 @@ Ilustración del uso del comodín del signo de interrogación en la búsqueda de
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -346,7 +347,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -361,8 +361,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -372,20 +373,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -463,6 +464,9 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 **El filtro o predicado de búsqueda no está disponible**: Si la interfaz de usuario no dispone de una personalización esperada de los filtros de búsqueda, póngase en contacto con el administrador para comprobar si la personalización se ha implementado para todos los autores y en el servidor de producción que esté utilizando. Es posible que la configuración fuera incorrecta.
 
 ## Solución de problemas relacionados con la búsqueda {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 Véanse los problemas y las posibles medidas que se indican a continuación:
 
