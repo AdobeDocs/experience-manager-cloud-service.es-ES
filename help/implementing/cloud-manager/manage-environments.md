@@ -2,10 +2,10 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 8%
+source-wordcount: '791'
+ht-degree: 7%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 En la sección siguiente se describen los tipos de entornos que puede crear un usuario y la forma en que puede crear un entorno.
 
-## Tipos de Entornos {#environment-types}
+## Tipos de entornos {#environment-types}
 
 Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
@@ -55,7 +55,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Al crear un entorno, se crean una o más *integraciones* en Adobe I/O. Son visibles para los usuarios clientes que tienen acceso a la consola de Adobe I/O y no deben eliminarse. Esto se rechaza en la descripción de la consola de Adobe I/O.
+   >Al crear un entorno, se crean una o más *integraciones* en E/S de Adobe. Son visibles para los usuarios clientes que tienen acceso a la consola de E/S de Adobe y no deben eliminarse. Esto se rechaza en la descripción de la consola de E/S de Adobe.
 
    ![](assets/add-environment-image1.png)
 
@@ -66,9 +66,9 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 
 ## Actualizando Entorno {#updating-dev-environment}
 
-Adobe administra automáticamente las actualizaciones de los entornos de fase y producción.
+Las actualizaciones de entornos de fase y producción se administran automáticamente mediante Adobe.
 
-Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible para el público, el estado de la tarjeta de Entornos en la pantalla de inicio mostrará **ACTUALIZACIÓN DISPONIBLE**.
+Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible al público, el estado de la tarjeta de Entornos en la pantalla principal mostrará la **ACTUALIZACIÓN DISPONIBLE**.
 
 ![](assets/update-environ-1.png)
 
@@ -97,6 +97,15 @@ La opción Eliminar también está disponible si hace clic en **Detalles** en la
 
 >[!NOTE]
 Esta función no está disponible para el entorno de producción/fase definido en un programa normal configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de Simulador para pruebas.
+
+## Administración del acceso {#managing-access}
+
+Seleccione **Administrar acceso** en el menú desplegable de la tarjeta de **Entornos** . Puede desplazarse directamente a la instancia de creación y administrar el acceso del entorno.
+
+Consulte [Administración del acceso a la instancia](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) de autor para obtener más información.
+
+![](assets/environ-manage-access.png)
+
 
 ## Acceso a Developer Console {#accessing-developer-console}
 
