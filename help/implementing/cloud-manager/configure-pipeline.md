@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 044d3498749ea79bbf920e7eb6354750a626ffc7
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
 
 
-1. La configuración de la canalización de producción incluye una tercera ficha con la etiqueta **Auditoria** de experiencias. Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de experiencias. El usuario debe completar el campo de entrada para definir su propio vínculo personalizado.
+1. La configuración de la canalización de producción incluye una tercera ficha con la etiqueta **Auditoria** de experiencias. Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de experiencias. El usuario debe hacer clic en **Añadir nueva página** para definir su propio vínculo personalizado.
 
    ![](assets/setup-3.png)
 
