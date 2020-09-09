@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -82,9 +82,9 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    ![](assets/setup-3.png)
 
-   Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de experiencias.
+   Haga clic en **Añadir nueva página** para proporcionar una ruta de URL que se incluirá en la auditoría de experiencias.
 
-   Por ejemplo, si desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `us/en/about-us.html` en este campo.
+   Por ejemplo, si desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `us/en/about-us.html` en este campo y haga clic en **Guardar**.
 
    ![](assets/exp-audit4.png)
 
