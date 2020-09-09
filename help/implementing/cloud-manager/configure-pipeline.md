@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CD/CI: Cloud Services'
 description: 'Configuración de la canalización de CD/CI: Cloud Services'
 translation-type: tm+mt
-source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
+source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -78,27 +78,23 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Esto es, esencialmente, emular a un usuario aprobando manualmente cada error.
 
 
-1. La configuración de la canalización de producción incluye una tercera ficha con la etiqueta **Auditoria** de experiencias.
+1. La configuración de la canalización de producción incluye una tercera ficha con la etiqueta **Auditoria** de experiencias. Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de experiencias. El usuario debe completar el campo de entrada para definir su propio vínculo personalizado.
 
    ![](assets/setup-3.png)
 
-   Esta opción proporciona una tabla para las rutas de URL que siempre deben incluirse en la auditoría de experiencias. El usuario debe completar el campo de entrada para definir su propio vínculo personalizado.
+   Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de experiencias.
 
    Por ejemplo, si desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `us/en/about-us.html` en este campo.
 
-   ![](assets/set-up-5.png)
+   ![](assets/exp-audit4.png)
 
-   La dirección URL que aparece en la tabla será `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`.
+   La dirección URL que aparece en la tabla será `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`.
 
-   ![](assets/set-up-4.png)
+   ![](assets/exp-audit5.png)
 
    Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de experiencias de forma predeterminada.
 
    Consulte [Explicación de los resultados](/help/implementing/cloud-manager/experience-audit-testing.md) de auditoría de experiencias para obtener más detalles.
-
-   Haga clic en **Añadir nueva anulación** de página para proporcionar una ruta de URL que se incluirá en la auditoría de experiencias. Una vez agregada la ruta, haga clic en **Guardar**.
-
-   ![](assets/exp-audit2.png)
 
    >[!NOTE]
    > Las páginas configuradas se enviarán al servicio y se evaluarán según las pruebas de rendimiento, accesibilidad, SEO (Optimización de motores de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva).
