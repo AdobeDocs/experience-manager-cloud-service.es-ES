@@ -2,7 +2,7 @@
 title: 'Notificaciones: Cloud Service'
 description: 'Notificaciones: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
@@ -37,5 +37,4 @@ Esto llevará al usuario a la pantalla Preferencias de notificaciones en el [!UI
 Los usuarios pueden activar las notificaciones por correo electrónico y (opcionalmente) seleccionar los tipos de notificaciones que desean recibir por correo electrónico.
 
 >[!NOTE]
->
 >También puede activar el compendio desde el [!UICONTROL Experience Cloud]de Adobe.
