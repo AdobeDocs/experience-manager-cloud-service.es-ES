@@ -3,7 +3,7 @@ title: API HTTP de recursos en [!DNL Adobe Experience Manager].
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API de HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
+source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-La API HTTP de Recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de [!DNL Experience Manager] contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/assets-api-content-fragments.md)de contenido.
+La API HTTP de Recursos permite crear-leer-actualizar-eliminar (CRUD) operaciones en recursos digitales, incluidos metadatos, representaciones y comentarios, junto con contenido estructurado mediante fragmentos de [!DNL Experience Manager] contenido. Se expone en `/api/assets` y se implementa como API de REST. Incluye [compatibilidad con fragmentos](/help/assets/content-fragments/assets-api-content-fragments.md)de contenido.
 
 Para acceder a la API:
 
@@ -34,13 +34,13 @@ Después del tiempo de [!UICONTROL inactividad], un recurso y sus representacion
 
 Un fragmento [de](/help/assets/content-fragments/content-fragments.md) contenido es un tipo especial de recurso. Puede utilizarse para acceder a datos estructurados, como textos, números, fechas, entre otros. Dado que hay varias diferencias con `standard` los recursos (como imágenes o documentos), algunas reglas adicionales se aplican a la gestión de fragmentos de contenido.
 
-Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de Experience Manager Assets.
+Para obtener más información, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP de Experience Manager Assets.
 
 ## modelo Data {#data-model}
 
 La API HTTP de Recursos expone dos elementos principales, carpetas y recursos (para recursos estándar).
 
-Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte Modelos [de datos de fragmento de contenido](/help/assets/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
+Además, expone elementos más detallados para los modelos de datos personalizados que describen el contenido estructurado en fragmentos de contenido. Consulte Modelos [de datos de fragmento de contenido](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obtener más información.
 
 ### Carpetas {#folders}
 
@@ -71,7 +71,7 @@ En [!DNL Experience Manager] un recurso contiene los siguientes elementos:
 * Varias representaciones, como la representación original (que es el recurso cargado originalmente), una miniatura y otras representaciones. Las representaciones adicionales pueden ser imágenes de diferentes tamaños, codificaciones de vídeo diferentes o páginas extraídas de archivos PDF o Adobe InDesign.
 * Comentarios opcionales.
 
-Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/assets-api-content-fragments.md)HTTP de Recursos Experience Manager.
+Para obtener información sobre los elementos de los fragmentos de contenido, consulte Compatibilidad con fragmentos [de contenido en la API](/help/assets/content-fragments/assets-api-content-fragments.md)HTTP de Recursos Experience Manager.
 
 En [!DNL Experience Manager] una carpeta tiene los siguientes componentes:
 
@@ -122,7 +122,7 @@ Recupera una representación sirena de una carpeta existente y de sus entidades 
 
 **Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con un `rel` de `self`.
 
-## Crear una carpeta {#create-a-folder}
+## Cree una carpeta  . {#create-a-folder}
 
 Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si `*` se proporciona un nombre en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud una representación sirena de la nueva carpeta o un conjunto de pares nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, que resulta útil para crear una carpeta directamente desde un formulario HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta URL.
 
