@@ -2,9 +2,9 @@
 title: Prueba de auditoría de experiencias - Cloud Services
 description: Prueba de auditoría de experiencias - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Prueba de auditoría de experiencias {#experience-audit-testing}
 
-La auditoría de experiencias es una función disponible en las canalizaciones de producción de Cloud Manager, una herramienta de código abierto de Google. Esta función está habilitada en todas las canalizaciones de producción de Cloud Manager.
+Experience Audit es una función disponible en los canales de producción de Cloud Manager Sites, con tecnología de Google Lighthouse, una herramienta de código abierto de Google. Esta función está habilitada en todas las canalizaciones de producción de Cloud Manager.
 
 Valida el proceso de implementación y ayuda a garantizar que los cambios implementados:
 
