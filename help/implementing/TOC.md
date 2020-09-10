@@ -3,10 +3,10 @@ sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 5eeecedae463f0d3308b0edd5bb3487def885666
+source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 70%
+source-wordcount: '387'
+ht-degree: 67%
 
 ---
 
@@ -74,6 +74,15 @@ ht-degree: 70%
       + [Iniciar integración](developing/spa/launch-integration.md)
       + [Representación del lado del servidor](developing/spa/ssr.md)
       + [Referencias de la API de Javascript](developing/spa/reference-materials.md)
++ Personalización {#personalization}
+   + [ContextHub](developing/personalization/contexthub.md)
+   + [Configuración de ContextHub](developing/personalization/configuring-contexthub.md)
+   + [Candidatos de tienda de muestra](developing/personalization/sample-stores.md)
+   + [Módulos de tiendas de muestra](developing/personalization/sample-modules.md)
+   + [Diagnósticos de ContextHub](developing/personalization/contexthub-diagnostics.md)
+   + [Ampliación de ContextHub](developing/personalization/extending-contexthub.md)
+   + [API de ContextHub](developing/personalization/contexthub-api.md)
+   + [Integración con Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
    + [Ampliar fragmentos de Experience](developing/extending/experience-fragments.md)
    + [Personalizar y ampliar fragmentos de contenido](developing/extending/content-fragments-customizing.md)
