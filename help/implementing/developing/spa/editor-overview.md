@@ -2,7 +2,7 @@
 title: Información general del editor de SPA
 description: Este artículo ofrece una descripción general completa del Editor de SPA y de cómo funciona, incluyendo flujos de trabajo detallados de la interacción del Editor de SPA dentro de AEM.
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 0%
@@ -36,7 +36,7 @@ El componente de página de un SPA no proporciona los elementos HTML de sus comp
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan en una `PageModel` biblioteca proporcionada. El SPA debe utilizar la biblioteca del modelo de página para inicializarse y ser creado por el editor de SPA. Biblioteca de modelo de página proporcionada indirectamente al componente de página de AEM a través de `cq-react-editable-components` npm. El modelo de página es un intérprete entre AEM y la SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se `cq.authoring.pagemodel.messaging` debe agregar una biblioteca adicional para habilitar la comunicación con el editor de páginas.
+La resolución y la administración del modelo de página se delegan en una `PageModel` biblioteca proporcionada. El SPA debe utilizar la biblioteca del modelo de página para inicializarse y ser creado por el editor de SPA. Biblioteca de modelo de página proporcionada indirectamente al componente de página de AEM a través de `aem-react-editable-components` npm. El modelo de página es un intérprete entre AEM y la SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se `cq.authoring.pagemodel.messaging` debe agregar una biblioteca adicional para habilitar la comunicación con el editor de páginas.
 
 Si el componente de página SPA hereda del componente principal de la página, hay dos opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
 
