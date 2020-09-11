@@ -2,7 +2,7 @@
 title: Modelo SPA
 description: En el presente documento se describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de la SPA para aplicar componentes de la SPA editables en AEM.
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -97,7 +97,7 @@ módulo npm: [@adobe/aem-response-editable-components](https://www.npmjs.com/pac
 
 #### Angular {#angular}
 
-módulo npm: [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+módulo npm: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Servicios principales y componentes {#main-services-and-components}
 
