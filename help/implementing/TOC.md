@@ -3,7 +3,7 @@ sub-product: Implementar para AEM as a Cloud Service
 user-guide-title: Implementar para AEM as a Cloud Service
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 67%
@@ -73,7 +73,7 @@ ht-degree: 67%
       + [Enrutamiento de modelo](developing/spa/routing.md)
       + [Iniciar integración](developing/spa/launch-integration.md)
       + [Representación del lado del servidor](developing/spa/ssr.md)
-      + [Referencias de la API de Javascript](developing/spa/reference-materials.md)
+      + [Documentos de referencia de SPA](developing/spa/reference-materials.md)
 + Personalización {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuración de ContextHub](developing/personalization/configuring-contexthub.md)
