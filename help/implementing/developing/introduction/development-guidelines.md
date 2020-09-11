@@ -1,11 +1,11 @@
 ---
 title: Directrices de desarrollo de AEM as a Cloud Service
-description: Para completar
+description: Directrices de desarrollo de AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
+source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 1%
+source-wordcount: '1953'
+ht-degree: 2%
 
 ---
 
@@ -175,7 +175,7 @@ El Adobe supervisa el rendimiento de la aplicación y toma medidas para corregir
 
 Si se solicita, AEM como Cloud Service proporcionará una dirección IP estática y dedicada para el tráfico saliente HTTP (puerto 80) y HTTPS (puerto 443) programado en el código Java.
 
-### Beneficios {#benefits}
+### Benefits {#benefits}
 
 Esta dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor de CRM) u otras integraciones fuera de AEM como Cloud Service que oferta una lista de permitidos de direcciones IP. Al agregar la dirección IP dedicada a la lista de permitidos, se asegura de que sólo el tráfico del Cloud Service de AEM del cliente pueda fluir al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
 
