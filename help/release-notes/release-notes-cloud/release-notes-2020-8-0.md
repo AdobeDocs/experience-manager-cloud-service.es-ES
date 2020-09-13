@@ -2,9 +2,9 @@
 title: Notas de la versión 2020.8.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: 5a3a8638bbb9fc8c0b28929bcc9c91c404d608d3
+source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1066'
 ht-degree: 7%
 
 ---
@@ -30,25 +30,24 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* Ahora se admite la transcodificación de vídeo con microservicios de recursos, con una nueva sección Vídeo en la pantalla Perfiles [!UICONTROL de] procesamiento que admite la configuración de dimensiones y velocidad de bits de vídeo (el formato de salida es MP4 con códec H.264). Para obtener más información, consulte [Gestión de recursos](/help/assets/manage-video-assets.md#transcode-video)de vídeo. Para obtener más opciones de transcodificación y envío de vídeo, se puede utilizar [!DNL Dynamic Media] el complemento.
+* La transcodificación de vídeo ahora se admite con los microservicios de recursos. Una nueva sección de la configuración de Perfiles [!UICONTROL de] procesamiento le permite definir la velocidad de bits y las dimensiones del vídeo. El formato de salida es MP4 con códec H.264. Para obtener más información, consulte [Gestión de recursos](/help/assets/manage-video-assets.md#transcode-video)de vídeo. Para obtener más opciones de transcodificación y envío de vídeo, utilice [!DNL Dynamic Media] Add-on.
 
 * En las nuevas [!DNL Experience Manager Assets] implementaciones, la funcionalidad de etiquetado inteligente ahora está configurada de forma predeterminada. No es necesario realizar la integración manualmente con [!DNL Adobe Developer Console]. En implementaciones existentes, los administradores [configuran la integración](/help/assets/smart-tags-configuration.md#aio-integration) de etiquetas inteligentes como antes.
 
 * Una nueva experiencia [de descarga de](/help/assets/download-assets-from-aem.md) recursos permite:
 
    * Descarga asincrónica para grandes descargas para que los usuarios no tengan que esperar.
-
    * Una nueva API modular para la extensibilidad del desarrollador.
 
-* [!DNL Experience Manager] ha mejorado el rendimiento de la extracción de metadatos para los microservicios de recursos. Aumenta el rendimiento general de ingestión de recursos.
+* La extracción de metadatos para los microservicios de recursos tiene un rendimiento mejorado. Aumenta el rendimiento general de ingestión de recursos.
 
-* Utilice el perfil de procesamiento para generar metadatos personalizados mediante el servicio de cómputo. Consulte Metadatos [personalizados con perfil de procesamiento](/help/assets/manage-metadata.md#metadata-compute-service)
+* Utilice un perfil de procesamiento para generar metadatos personalizados mediante el servicio de cómputo. Consulte Metadatos [personalizados con perfil](/help/assets/manage-metadata.md#metadata-compute-service)de procesamiento.
 
 * Una experiencia de descarga más sencilla para los usuarios de Brand Portal que los administradores pueden configurar. Consulte [Descripción general](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)de la experiencia de descarga.
 
 * Las previsualizaciones de documento en PDF nativas y de alta fidelidad ya están disponibles en Brand Portal. Consulte Descripción general [del visor de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documento.
 
-* Ahora puede invalidar la caché de CDN (red de Envío de contenido) directamente desde [!DNL Dynamic Media] en AEM como Cloud Service (en lugar de utilizar [!DNL Dynamic Media Classic]) para garantizar que los recursos más recientes se proporcionen en minutos en lugar de horas. Consulte [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* Ahora puede invalidar la caché de CDN (Red de Envío de contenido) directamente desde [!DNL Dynamic Media] en AEM como Cloud Service (en lugar de usar [!DNL Dynamic Media Classic]). Garantiza que los últimos recursos se proporcionen en minutos en lugar de horas. Consulte [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * La compatibilidad de accesibilidad mejorada se agrega a los controles de interfaz de usuario, la navegación, la exploración y la experiencia de búsqueda en [!DNL Assets].
 
@@ -57,7 +56,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
    * Los elementos de acordeones de la sección filtros de búsqueda se interpretan como acordeones estándar ampliables. <!-- via CQ-4273103 -->
    * Al aplicar una etiqueta a un recurso, el cuadro de diálogo muestra las etiquetas como elementos de árbol. Los atributos ARIA se aplican correctamente a los elementos de árbol para hacerlos accesibles ahora. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] Ya está disponible la versión 2.0.3, lo que mejora la compatibilidad con [!DNL AEM] 6.5.5 [!DNL Service Pack] y la actualización de la lista de compatibilidad con el SO del cliente (eliminando [!DNL Windows] 7 y [!DNL MacOS] versiones anteriores a 10.14).
+* [!DNL AEM Desktop app] Ya está disponible la versión 2.0.3. Mejora la compatibilidad con el Service Pack [!DNL Experience Manager] 6.5.5 y cuenta con una lista de compatibilidad con el sistema operativo cliente actualizada. [!DNL Windows] 7 y [!DNL macOS] versiones anteriores a 10.14 no son compatibles.
 
 ### Errores corregidos en [!DNL Assets] {#bugs-fixed}
 
