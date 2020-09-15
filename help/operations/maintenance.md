@@ -2,7 +2,7 @@
 title: Tareas de mantenimiento en AEM como Cloud Service
 description: 'Tareas de mantenimiento en AEM como Cloud Service '
 translation-type: tm+mt
-source-git-commit: e9ee1064c5fa62b56c822a18ad6ca8cc4d09fa75
+source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Tareas de mantenimiento en AEM como Cloud Service
 
-Las Tareas de mantenimiento son procesos que se ejecutan según una programación para optimizar el repositorio. Con AEM como Cloud Service, la necesidad de que los clientes configuren las propiedades operativas de las tareas de mantenimiento es mínima. Los clientes pueden concentrar sus recursos en las preocupaciones de nivel de aplicación, dejando las operaciones de infraestructura a Adobe.
+Las Tareas de mantenimiento son procesos que se ejecutan según una programación para optimizar el repositorio. Con AEM como Cloud Service, la necesidad de que los clientes configuren las propiedades operativas de las tareas de mantenimiento es mínima. Los clientes pueden concentrar sus recursos en los problemas de las aplicaciones, dejando las operaciones de infraestructura en Adobes.
 
 Para obtener información adicional sobre tareas de mantenimiento, consulte las páginas siguientes:
 
@@ -25,19 +25,19 @@ En versiones anteriores de AEM, se podían configurar tareas de mantenimiento me
 
 >[!CAUTION]
 >
->Adobe se reserva el derecho de anular la configuración de tarea de mantenimiento de un cliente para mitigar problemas como la degradación del rendimiento.
+>Adobe se reserva el derecho de anular la configuración de la tarea de mantenimiento de un cliente para mitigar problemas como la degradación del rendimiento.
 
 La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento de la publicación de AEM como Cloud Service.
 
 | Tarea de mantenimiento | Quién es el propietario de la configuración | Cómo configurar (opcional) |
 |---|---|---|
-| Recopilación de elementos no utilizados del almacén de datos | Adobe | N/D: propiedad total de Adobe |
-| Depuración de la versión | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar determinados parámetros. |
-| Depuración del registro de auditoría | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar determinados parámetros. |
+| Recopilación de elementos no utilizados del almacén de datos | Adobe | N/D: propiedad total del Adobe |
+| Depuración de la versión | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros. |
+| Depuración del registro de auditoría | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros. |
 | Limpieza de archivos binarios de Lucene | Adobe | No utilizado y, por lo tanto, desactivado por Adobe. |
-| Depuración de Tareas ad-hoc | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar en la sección `/libs` creando propiedades en la carpeta `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando otro nodo debajo del nodo anterior (asígnele el nombre `granite_TaskPurgeTask`) con las propiedades correspondientes. <br> Configure las propiedades de OSGI en la documentación de Tarea de mantenimiento de [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Depuración de flujo de trabajo | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar en la sección `/libs` creando propiedades en la carpeta`/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando otro nodo debajo del nodo anterior (asígnele el nombre `granite_WorkflowPurgeTask`) con las propiedades correspondientes. <br> Configuración de las propiedades de OSGI consulte la documentación de Tarea de mantenimiento de [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Depuración del proyecto | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar en la sección `/libs` creando propiedades en la carpeta `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando un nodo debajo del nodo anterior (asígnele el nombre `granite_ProjectPurgeTask`) con las propiedades correspondientes. <br> Configuración de las propiedades de OSGI consulte la documentación de Tarea de mantenimiento de [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Depuración de Tareas ad-hoc | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar en la sección `/libs` creando propiedades en la carpeta `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando otro nodo debajo del nodo anterior (asígnele el nombre `granite_TaskPurgeTask`) con las propiedades correspondientes. <br> Configure las propiedades de OSGI consulte la documentación de Tarea de mantenimiento de [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Depuración de flujo de trabajo | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar en la sección `/libs` creando propiedades en la carpeta`/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando otro nodo debajo del nodo anterior (asígnele el nombre `granite_WorkflowPurgeTask`) con las propiedades correspondientes. <br> Configure las propiedades de OSGI consulte la documentación de Tarea de mantenimiento de [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Depuración del proyecto | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar en la sección `/libs` creando propiedades en la carpeta `/apps/settings/granite/operations/maintenance/granite_weekly` o `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando un nodo debajo del nodo anterior (asígnele el nombre `granite_ProjectPurgeTask`) con las propiedades correspondientes. <br> Configuración de propiedades OSGI consulte [AEM documentación de Tarea de mantenimiento de 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Los clientes pueden programar cada una de las tareas de mantenimiento Depuración de flujo de trabajo, Depuración de Tareas ad hoc y Depuración de proyectos para que se ejecuten durante las ventanas de mantenimiento diario, semanal o mensual. Estas configuraciones deben editarse directamente en el control de código fuente. En la tabla siguiente se describen los parámetros de configuración disponibles para cada ventana.
 
@@ -94,7 +94,7 @@ Los clientes pueden programar cada una de las tareas de mantenimiento Depuració
   </tr>
 </table>
 
-Ejemplo de código 1
+Muestra de código 1
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
