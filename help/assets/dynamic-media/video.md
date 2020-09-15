@@ -2,9 +2,9 @@
 title: Vídeo
 description: Aprenda a trabajar con vídeo en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 10%
 
 ---
@@ -412,9 +412,9 @@ Dynamic Media recomienda el uso de ajustes preestablecidos de codificación de v
 
 ## Publicación de vídeos en YouTube {#publishing-videos-to-youtube}
 
-Puede publicar recursos de vídeo in situ AEM directamente en un canal de YouTube que haya creado anteriormente.
+Puede publicar recursos de vídeo administrados en AEM Assets directamente en un canal de YouTube que haya creado anteriormente.
 
-Para publicar recursos de vídeo en YouTube, configure AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo siempre que se utilice una etiqueta asociada.
+Para publicar recursos de vídeo en YouTube, etiquete los recursos de vídeo en AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo siempre que se utilice una etiqueta asociada.
 
 YouTube realiza su propia codificación. De este modo, el archivo de vídeo original que se cargó en AEM se publica en YouTube en lugar de en cualquier representación de vídeo que haya creado la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visor para la reproducción.
 
