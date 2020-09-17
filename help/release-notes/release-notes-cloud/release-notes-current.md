@@ -2,9 +2,9 @@
 title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
+source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 22%
 
 ---
@@ -60,7 +60,7 @@ Consulte esta sección para conocer las novedades y las actualizaciones de Cloud
 
 ### Novedades {#what-is-new-cra}
 
-* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra un botón explícito &quot;Generar informe&quot; en el que el usuario puede hacer clic para ejecutar el CRA.
+* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra un botón **Generar informe** explícito en el que el usuario puede hacer clic para ejecutar el CRA.
 
 * La interfaz de usuario de CRA muestra el progreso mientras se está ejecutando. Muestra los elementos que se analizan y los resultados encontrados durante la ejecución.
 
