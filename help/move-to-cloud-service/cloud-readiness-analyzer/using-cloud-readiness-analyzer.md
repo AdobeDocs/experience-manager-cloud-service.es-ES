@@ -2,10 +2,10 @@
 title: Uso de Cloud Readiness Analyzer
 description: Uso de Cloud Readiness Analyzer
 translation-type: tm+mt
-source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
+source-git-commit: b0ea504fe9b1f2d8eadb9fd263c983dae090cd1a
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 71%
+source-wordcount: '2209'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ El formato del informe es el siguiente:
 * **Información general del sistema**: datos sobre el sistema AEM en el que se ejecutó el CRA.
 * **Búsqueda de categorías**: varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: nombre de la categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
 
-Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
+Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción. Para obtener más información sobre cada Categoría de búsqueda, consulte Categorías del detector de [patrones](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
 
 Siga la tabla siguiente para comprender los niveles de importancia:
 
