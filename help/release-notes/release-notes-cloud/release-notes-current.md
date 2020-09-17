@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
+source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 24%
+source-wordcount: '390'
+ht-degree: 22%
 
 ---
 
@@ -53,3 +53,20 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03
 ### Corrección de errores {#bug-fixes-cm}
 
 * La ficha Auditoría de contenido mostraba incorrectamente la dirección URL base utilizando el dominio de autor en lugar del dominio de publicación.
+
+## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
+
+Consulte esta sección para conocer las novedades y las actualizaciones de Cloud Manager versión 1.1.0.
+
+### Novedades {#what-is-new-cra}
+
+* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra un botón explícito &quot;Generar informe&quot; en el que el usuario puede hacer clic para ejecutar el CRA.
+
+* La interfaz de usuario de CRA muestra el progreso mientras se está ejecutando. Muestra los elementos que se analizan y los resultados encontrados durante la ejecución.
+
+* El informe CRA muestra un resumen y el número de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Al hacer clic en el número de esa búsqueda, se desplazará automáticamente a la ubicación de esa búsqueda en el informe.
+
+### Corrección de errores {#cra-bug-fixes}
+
+* En algunos casos, el informe CRA no se actualizaba después de forzar una actualización. Esto se ha corregido en esta versión.
+
