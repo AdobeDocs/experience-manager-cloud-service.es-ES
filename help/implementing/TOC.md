@@ -4,9 +4,9 @@ user-guide-title: Implementar para AEM as a Cloud Service
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '391'
 ht-degree: 67%
 
 ---
@@ -84,6 +84,7 @@ ht-degree: 67%
    + [Ampliación de ContextHub](developing/personalization/extending-contexthub.md)
    + [API de ContextHub](developing/personalization/contexthub-api.md)
    + [Integración con Adobe Target](/help/sites-cloud/integrating/adobe-target.md)
+   + [Configuración de la segmentación con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
    + [Ampliar fragmentos de Experience](developing/extending/experience-fragments.md)
    + [Personalizar y ampliar fragmentos de contenido](developing/extending/content-fragments-customizing.md)
