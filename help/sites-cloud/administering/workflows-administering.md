@@ -2,7 +2,7 @@
 title: Administración de instancias de flujo de trabajo
 description: Obtenga información sobre cómo administrar instancias de flujo de trabajo
 translation-type: tm+mt
-source-git-commit: 85e4104c3c2dbe4b67005bab52edb7ab90767406
+source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
@@ -40,16 +40,16 @@ Hay una serie de consolas disponibles para administrar sus flujos de trabajo. Ut
 
 1. En el cuadro de diálogo Filtro, seleccione los criterios de búsqueda del flujo de trabajo. Puede realizar búsquedas en función de estas entradas:
 
-* Ruta de carga útil: Seleccionar una ruta específica
-* Modelo de flujo de trabajo: Seleccionar un modelo de flujo de trabajo
-* Usuario asignado: Seleccionar un usuario asignado de flujo de trabajo
-* Tipo: Tarea, elemento de flujo de trabajo o error de flujo de trabajo
-* Estado de tarea: Activo, Completo o Terminado
-* Dónde estoy: Propietario Y cesionario, solo propietario, solo cesionario
-* Fecha de inicio: Fecha de inicio antes o después de una fecha especificada
-* Fecha final: Fecha de finalización antes o después de una fecha especificada
-* Fecha de vencimiento: Fecha de vencimiento antes o después de una fecha especificada
-* Fecha de actualización: Fecha de actualización antes o después de una fecha especificada
+   * Ruta de carga útil: Seleccionar una ruta específica
+   * Modelo de flujo de trabajo: Seleccionar un modelo de flujo de trabajo
+   * Usuario asignado: Seleccionar un usuario asignado de flujo de trabajo
+   * Tipo: Tarea, elemento de flujo de trabajo o error de flujo de trabajo
+   * Estado de tarea: Activo, Completo o Terminado
+   * Dónde estoy: Propietario Y cesionario, solo propietario, solo cesionario
+   * Fecha de inicio: Fecha de inicio antes o después de una fecha especificada
+   * Fecha final: Fecha de finalización antes o después de una fecha especificada
+   * Fecha de vencimiento: Fecha de vencimiento antes o después de una fecha especificada
+   * Fecha de actualización: Fecha de actualización antes o después de una fecha especificada
 
 ## Suspensión, reanudación y finalización de una instancia de flujo de trabajo {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -65,12 +65,12 @@ Hay una serie de consolas disponibles para administrar sus flujos de trabajo. Ut
 ## Visualización de Flujos de trabajo archivados {#viewing-archived-workflows}
 
 1. Con Navegación, seleccione **Herramientas** y, a continuación, **Flujo de trabajo**.
+
 1. Seleccione **Archivar** para mostrar la lista de las instancias de flujo de trabajo que se completaron correctamente.
 
    ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
 
    >[!NOTE]
-   >
    >El estado de anulación se considera una finalización exitosa, ya que se produce como resultado de la acción del usuario; por ejemplo:
    >
    >* uso de la acción **Terminar**
@@ -91,12 +91,13 @@ Cuando un flujo de trabajo falla, AEM proporciona la consola **Errores** para pe
 * **Abrir historial** Muestra detalles del historial de flujo de trabajo.
 
 * **Paso** de reintento Ejecuta de nuevo la instancia del componente Paso de secuencia de comandos. Utilice el comando Reintentar etapa después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el paso de proceso.
-* **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconsiderable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede basarse en condiciones ambientales como la información del repositorio que ya no son válidas para la instancia de flujo de trabajo.
+* **Finalizar** Finalice el flujo de trabajo si el error ha causado una situación irreconciliable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede basarse en condiciones ambientales como la información del repositorio que ya no es válida para la instancia de flujo de trabajo.
 * **Terminar y reintentar** De forma similar a **Finalizar** , con la diferencia de que una nueva instancia de flujo de trabajo se inicia con la carga útil, el título y la descripción originales.
 
 Para investigar los errores y, a continuación, reanudar o finalizar el flujo de trabajo posteriormente, siga estos pasos:
 
 1. Con Navegación, seleccione **Herramientas** y, a continuación, **Flujo de trabajo**.
+
 1. Seleccione **Errores** para mostrar la lista de las instancias de flujo de trabajo que no se completaron correctamente.
 1. Seleccione un elemento específico y, a continuación, la acción adecuada:
 
@@ -110,16 +111,12 @@ Configure la configuración **de depuración de flujo de trabajo de granito de**
 
 También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan diferentes criterios. Por ejemplo, cree una configuración que purgue las instancias de un modelo de flujo de trabajo concreto cuando se estén ejecutando durante mucho más tiempo del esperado. Cree otra configuración que purgue todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
-Para configurar el servicio, puede configurar los archivos de configuración OSGI y ver los archivos [de configuración](/help/implementing/deploying/configuring-osgi.md)OSGi. En la tabla siguiente se describen las propiedades necesarias para cada método.
+Para configurar el servicio, puede configurar los archivos de configuración OSGi y ver los archivos [de configuración](/help/implementing/deploying/configuring-osgi.md)OSGi. En la tabla siguiente se describen las propiedades necesarias para cada método.
 
 >[!NOTE]
->
 >Para agregar la configuración al repositorio, el PID de servicio es:
->
 >`com.adobe.granite.workflow.purge.Scheduler`
->
 >Dado que el servicio es un servicio de fábrica, el nombre del `sling:OsgiConfig` nodo requiere un sufijo de identificador, por ejemplo:
->
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
 <table>
@@ -161,9 +158,7 @@ Para configurar el servicio, puede configurar los archivos de configuración OSG
 Puede configurar el tamaño máximo de la bandeja de entrada configurando el servicio **de flujo de trabajo** Adobe Granite; consulte [Agregar una configuración OSGi al repositorio](/help/implementing/deploying/configuring-osgi.md). En la tabla siguiente se describe la propiedad que se configura.
 
 >[!NOTE]
->
 >Para agregar la configuración al repositorio, el PID de servicio es:
->
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Nombre de propiedad (consola web) | Nombre de propiedad OSGi |
