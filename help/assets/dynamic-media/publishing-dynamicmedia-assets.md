@@ -3,7 +3,7 @@ title: Publicación de recursos de Dynamic Media
 description: Cómo publicar recursos de medios dinámicos
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Para publicar los recursos de Dynamic Media, seleccione los recursos que ya ha cargado y toque **[!UICONTROL Publicar]** o **[!UICONTROL Publicación]** rápida. Una vez publicados los recursos de Dynamic Media, estarán disponibles para su inclusión en una página web mediante una URL o mediante la incrustación de código en la página.
 
-También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. O bien, puede publicar estos recursos de forma selectiva. See [Configuring Dynamic Media](config-dm.md). O bien, puede publicar recursos en Dynamic Media de forma selectiva o en AEM, mutuamente excluyentes entre sí, mediante Publicación **** selectiva en el nivel de carpeta. See [Working with Selective Publish in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
+También puede publicar instantáneamente recursos que cargue, sin intervención del usuario. O bien, puede publicar estos recursos de forma selectiva. See [Configuring Dynamic Media.](config-dm.md) O bien, puede publicar recursos en Dynamic Media de forma selectiva o en AEM, mutuamente excluyentes entre sí, mediante Publicación **** selectiva en el nivel de carpeta. See [Working with Selective Publish in Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)
 
 En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
@@ -25,7 +25,7 @@ En la Vista **[!UICONTROL de]** tarjeta, aparece un pequeño icono de globo terr
 
 Si tiene intención de publicar recursos de vídeo inmediatamente después de codificarlos, asegúrese de que la codificación está completa. Cuando se siguen codificando los vídeos, el sistema le permite saber que hay un flujo de trabajo de procesamiento de vídeo en curso. Cuando haya terminado la codificación de vídeo, debería poder realizar la previsualización de las representaciones de vídeo. En ese momento, puede publicar los vídeos sin incurrir en errores de publicación.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
 Consulte también [Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web.](embed-code.md)
 
