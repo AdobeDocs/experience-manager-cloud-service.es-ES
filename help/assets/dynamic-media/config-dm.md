@@ -2,7 +2,7 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 9%
@@ -158,7 +158,9 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 Para abrir la página Configuración general de la aplicación, en la barra de navegación global de Dynamic Media Classic, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuración general.]**
 
 * **[!UICONTROL Servidores]** : Al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados para la compañía. Estos servidores se utilizan para construir cadenas URL para el sitio Web y las aplicaciones. Estas llamadas mediante URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que se indique explícitamente que lo haga AEM soporte técnico.
+
 * **[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: ya sea que reemplacen el original o se conviertan en duplicados. Se cambia el nombre de los recursos de duplicado por &quot;-1&quot; (por ejemplo, silla.tif se denomina silla-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la original o a los recursos con una extensión de nombre de archivo diferente a la original (como JPG, TIF o PNG).
+
 * **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión]** de imagen base: esta opción es la regla más estricta para reemplazar. Requiere que la imagen de sustitución se cargue en la misma carpeta que la imagen original y que la imagen de sustitución tenga la misma extensión de nombre de archivo que la imagen original. Si no se cumplen estos requisitos, se crea un duplicado.
 
    >[!NOTE]
@@ -166,7 +168,9 @@ Para abrir la página Configuración general de la aplicación, en la barra de n
    >Para mantener la coherencia con AEM, seleccione siempre esta configuración: **Sobrescribir en la carpeta actual, con el mismo nombre/extensión de imagen base**
 
 * **[!UICONTROL Sobrescribir en cualquier carpeta, con la misma extensión]** o nombre de recurso base: requiere que la imagen de sustitución tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, silla.jpg debe reemplazar a silla.jpg, no silla.tif). Sin embargo, puede cargar la imagen de reemplazo en una carpeta distinta a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se encuentra en su ubicación original.
+
 * **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión]** . Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de sustitución en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta en la que se cargó.
+
 * **[!UICONTROL Perfiles]** de color predeterminados: consulte [Configuración de la administración](#configuring-color-management) de color para obtener más información.
 
    >[!NOTE]
@@ -213,7 +217,7 @@ Puede definir qué tipos de recursos deben procesarse con Dynamic Media y person
 
 Consulte [Carga de recursos](/help/assets/add-assets.md).
 
-**Para configurar el procesamiento de recursos**
+Para configurar el procesamiento de recursos:
 
 1. En AEM, haga clic en el logotipo de AEM para acceder a la consola de navegación global y, a continuación, haga clic en **[!UICONTROL General > CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
@@ -230,7 +234,6 @@ Consulte [Carga de recursos](/help/assets/add-assets.md).
    * Haga clic con el botón doble en **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte Tipos [de MIME](/help/assets/file-format-support.md) admitidos para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
 1. Realice una de las acciones siguientes:
-
    * Repita los pasos del 3 al 4 para editar tipos de MIME adicionales.
    * En la barra de menús de la página CRXDE Lite, haga clic en **[!UICONTROL Guardar todo.]**
 
@@ -240,7 +243,7 @@ Consulte [Carga de recursos](/help/assets/add-assets.md).
 
 Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets. Para garantizar que AEM no elimina ningún nodo nuevo que agregue a CRXDE Lite, debe asegurarse de mover el tipo MIME antes de `image_` y de que su valor activado se establezca en **[!UICONTROL falso]**.
 
-**Adición de tipos MIME personalizados para formatos no admitidos**
+Para agregar tipos MIME personalizados para formatos no admitidos:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -306,7 +309,7 @@ Como alternativa, tenga en cuenta que puede utilizar el código **[!UICONTROL de
 
 Hay dos elementos disponibles para la definición: Coincidencia y Nombre base. Estos campos permiten definir todos los elementos de una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. La convención de nombres individual de una compañía puede utilizar una o varias líneas de definición para cada uno de estos elementos. Puede utilizar tantas líneas como desee para su definición única y agruparlas en elementos distintos, como imagen principal, elemento de color, elemento de Vista alternativa y elemento de muestra.
 
-**Para configurar la nomenclatura predeterminada**
+Para configurar la nominación predeterminada:
 
 1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -340,7 +343,7 @@ Puede crear, editar y administrar los ajustes preestablecidos de conjunto de lot
 
 Puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que le permite utilizar expresiones regulares. Como en Nombre predeterminado, puede elegir Código de Vista al mismo tiempo que define en la Vista Formulario y utilizar expresiones regulares para crear sus definiciones. También puede desactivar la vista para usar una u otra exclusivamente.
 
-**Creación de un ajuste preestablecido de conjunto por lotes**
+Para crear un ajuste preestablecido de conjunto por lotes:
 
 1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -503,7 +506,7 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, solía procesar vídeo con el flujo de trabajo de codificación de vídeo **[!UICONTROL de]** Dynamic Media.
 
-**Para actualizar la cola Granite Workflow**
+Para actualizar la cola Granite Workflow:
 
 1. Navegue hasta `https://<server>/system/console/configMgr` y busque la **cola: Cola** de flujo de trabajo de granito.
 
@@ -525,7 +528,7 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 
 La configuración de la conexión de carga de Scene7 sincroniza AEM recursos con los servidores de Dynamic Media Classic.
 
-**Para actualizar la conexión de carga de Scene7**
+Para actualizar la conexión de carga de Scene7:
 
 1. Ir a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el campo **[!UICONTROL Número de conexiones]** y/o el campo Tiempo de espera **[!UICONTROL del trabajo]** activo, cambie el número como desee.
@@ -538,7 +541,7 @@ La configuración de la conexión de carga de Scene7 sincroniza AEM recursos con
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Toque **[!UICONTROL Guardar.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
