@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 16%
+source-wordcount: '623'
+ht-degree: 17%
 
 ---
 
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* La marca de agua de una imagen PNG se admite para las representaciones generadas con los microservicios de recursos. Se puede configurar como un Perfil de procesamiento. &lt;!— TBD: Vínculo al artículo de ayuda.>
+* La marca de agua de una imagen PNG se admite para las representaciones generadas con los microservicios de recursos. Se puede configurar como un Perfil de procesamiento.
 
 * Mejoras en [!DNL Dynamic Media]
 
