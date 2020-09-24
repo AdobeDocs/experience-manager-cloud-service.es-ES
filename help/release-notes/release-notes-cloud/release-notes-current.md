@@ -2,10 +2,10 @@
 title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] as a Cloud Service Notas de la versión 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 20%
+source-wordcount: '629'
+ht-degree: 16%
 
 ---
 
@@ -14,11 +14,38 @@ ht-degree: 20%
 
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.9.0.
 
+## Fecha de la versión {#release-date}
+
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] como Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* El SDK de Javascript del Editor de aplicaciones de una sola página (SPA) [ahora es de código abierto.](/help/implementing/developing/spa/reference-materials.md)
+* El SDK de JavaScript del Editor de una sola página (SPA) [ahora es de código abierto.](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] como Cloud Service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* La marca de agua de una imagen PNG se admite para las representaciones generadas con los microservicios de recursos. Se puede configurar como un Perfil de procesamiento. &lt;!— TBD: Vínculo al artículo de ayuda.>
+
+* Mejoras en [!DNL Dynamic Media]
+
+   * Publicación selectiva: Ahora es posible que un equipo de marketing acceda a las imágenes de recorte [!DNL Dynamic Media] inteligente y a las representaciones dinámicas que se sincronizan para [!DNL Dynamic Media] que puedan crear materiales promocionales, sin necesidad de publicar dichos recursos en [!DNL Dynamic Media] para envío global. AEM y [!DNL Dynamic Media] publicación están disociadas y pueden llevarse a cabo por separado para lograrlo.
+   * Los administradores pueden restablecer la contraseña de [!DNL Dynamic Media] Cloud Service recibida al aprovisionarla directamente en AEM interfaz de usuario, sin necesidad de utilizar la aplicación de [!DNL Dynamic Media Classic] escritorio.
+
+* Para obtener información sobre las siguientes mejoras, consulte [las novedades de Brand Portal](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/introduction/whats-new.html).
+
+   * Previsualización PDF mejorada con la integración del SDK de Vista de Adobe Document Cloud.
+   * Funcionalidad de descarga con un solo clic.
+   * Nuevas configuraciones de administración para la experiencia de descarga.
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
