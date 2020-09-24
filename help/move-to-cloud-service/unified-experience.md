@@ -2,9 +2,9 @@
 title: Experiencia unificada para herramientas de refactorización de código
 description: Experiencia unificada para herramientas de refactorización de código
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ El `aio-cli-plugin-aem-cloud-service-migration` complemento consta de dos partes
 Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para conocer el uso y cómo puede contribuir a este código de complemento que es de código abierto en GitHub.
 
 >[!NOTE]
->Actualmente sólo Dispatcher Converter está integrado con el complemento.
+>Actualmente, el complemento está integrado con AEM Dispatcher Converter y el Modernizador de repositorio.
