@@ -2,7 +2,7 @@
 title: Prueba de auditoría de experiencias - Cloud Services
 description: Prueba de auditoría de experiencias - Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ La auditoría de experiencias proporciona resultados de prueba acumulados y deta
    >[!NOTE]
    >La puntuación de la aplicación web progresiva (PWA) no se incluye en la puntuación de resumen y solo se mostrará en la pantalla de detalles del informe a nivel de página.
 * Las puntuaciones de nivel de página individuales también están disponibles mediante el desglose.
-* Los detalles de las puntuaciones están disponibles para ver cuáles son los resultados de las pruebas individuales, junto con la guía sobre cómo solucionar cualquier problema que se identificó durante la auditoría de contenido.
+* Los detalles de las puntuaciones están disponibles para ver cuáles son los resultados de las pruebas individuales, junto con la guía sobre cómo solucionar cualquier problema que se identificó durante la auditoría de experiencia.
 * Dentro del Administrador de nube se conserva un historial de los resultados de la prueba para que los clientes puedan ver si los cambios que se introducen en la ejecución de la canalización incluyen alguna regresión de la ejecución anterior.
 
 ### Puntuaciones acumuladas {#aggregate-scores}
