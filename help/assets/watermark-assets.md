@@ -3,7 +3,7 @@ title: Marcar los recursos como agua
 description: Añada una marca de agua en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Para configurar Experience Manager en recursos de marca de agua, siga estos paso
 
 1. [Cree un perfil](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) de procesamiento para aprovechar los microservicios de recursos para aplicar la marca de agua.
 
-![Perfil de procesamiento de recursos para crear una marca de agua](assets/watermark-processing-profile.png)
+   ![Perfil de procesamiento de recursos para crear una marca de agua](assets/watermark-processing-profile.png)
 
 1. [Aplique los perfiles de procesamiento a una carpeta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para crear recursos con marcas de agua.
 
