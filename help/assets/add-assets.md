@@ -2,9 +2,9 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
+source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -30,18 +30,6 @@ También puede elegir que se realice un procesamiento adicional en los recursos 
 
 ## Upload assets {#upload-assets}
 
-Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritorio y arrastrarlos en la interfaz de usuario (navegador web) a la carpeta de destino. También puede iniciar la carga desde la interfaz de usuario.
-
-1. En la interfaz de usuario, navegue hasta la ubicación en la que desee agregar recursos digitales. [!DNL Assets]
-1. Para cargar los recursos, realice una de las siguientes acciones:
-
-   * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
-   * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets] . No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
-
-   ![create_menu](assets/create_menu.png)
-
-   Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
@@ -59,10 +47,6 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
-
-   Si cancela la operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,13 +57,29 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
+Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritorio y arrastrarlos en la interfaz de usuario (navegador web) a la carpeta de destino. También puede iniciar la carga desde la interfaz de usuario.
+
+1. En la interfaz de usuario, navegue hasta la ubicación en la que desee agregar recursos digitales. [!DNL Assets]
+1. Para cargar los recursos, realice una de las siguientes acciones:
+
+   * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
+   * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets] . No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+
+   ![create_menu](assets/create_menu.png)
+
+   Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
+
+1. Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+
+   Si cancela la operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
+
 1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
 
-Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
+   Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
 
 >[!NOTE]
 >
->Para cargar jerarquías de carpetas anidadas en AEM, consulte Carga [masiva de recursos](#bulk-upload).
+>Para cargar jerarquías de carpetas anidadas, consulte Carga [masiva de recursos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
