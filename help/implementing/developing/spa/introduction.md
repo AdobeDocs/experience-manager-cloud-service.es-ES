@@ -2,7 +2,7 @@
 title: Introducción y tutoriales de SPA
 description: Este artículo introduce los conceptos de una SPA y explora el uso de una aplicación básica de SPA para la creación, mostrando cómo se relaciona con el Editor de SPA de AEM subyacente.
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -151,7 +151,7 @@ Por lo tanto, si la página no se recarga al navegar por las páginas secundaria
 
 La siguiente sección, [Carga de una aplicación](#loading-a-spa-application)SPA, explora en profundidad la mecánica de carga del SPA y cómo se puede cargar el contenido sincrónica y asincrónicamente.
 
-### Carga de una aplicación SPA {#loading-an-spa-application}
+### Carga de una aplicación SPA {#loading-a-spa-application}
 
 1. Si aún no se ha cargado, cargue la aplicación de Historial We.Retail en el servidor de publicación o mediante la **Vista de opciones tal como se ha publicado** desde el menú Información **de** página del editor de páginas.
 
