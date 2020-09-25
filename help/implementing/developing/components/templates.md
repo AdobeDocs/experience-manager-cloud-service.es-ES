@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 8%
 
 ---
@@ -292,7 +292,7 @@ Al crear una nueva plantilla, debe especificar un tipo de plantilla:
 
    * Tipo de recurso del componente de página.
    * La directiva del nodo raíz, que define los componentes permitidos en el editor de plantillas.
-   * Se recomienda definir los puntos de interrupción para la cuadrícula adaptable y la configuración del emulador móvil en el tipo de plantilla. Esto es opcional, ya que la configuración también se puede definir en la plantilla individual (consulte la sección Tipo de [plantilla y Grupos](#p-template-type-and-mobile-device-groups-br-p)de dispositivos móviles).
+   * Se recomienda definir los puntos de interrupción para la cuadrícula adaptable y la configuración del emulador móvil en el tipo de plantilla.
 
 * AEM ofrece una pequeña selección de tipos de plantilla predeterminados, como Página HTML5 y Página de formulario adaptable.
 
@@ -476,7 +476,7 @@ Las políticas de página permiten definir la directiva [de](#content-policies) 
 
    Para poder usar una plantilla, debe habilitarla:
 
-   * [Activación de la plantilla](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor) desde la consola **Plantillas** .
+   * [Activación de la plantilla](/help/sites-cloud/authoring/features/templates.md) desde la consola **Plantillas** .
 
    * Definición de la propiedad status en el `jcr:content` nodo.
 
