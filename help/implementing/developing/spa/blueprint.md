@@ -2,7 +2,7 @@
 title: Modelo SPA
 description: En el presente documento se describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de la SPA para aplicar componentes de la SPA editables en AEM.
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
@@ -164,7 +164,7 @@ El componente SPA se asigna a un contenedor gráfico como la cuadrícula interac
 
 Por ejemplo:
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ Por ejemplo:
 
 La [`Component Mapping`](#componentmapping) biblioteca subyacente y su `MapTo` función se pueden encapsular y ampliar para proporcionar las funcionalidades relativas a la configuración de edición proporcionada junto con la clase de componente actual.
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 En la implementación anterior, el componente de proyecto se amplía con la funcionalidad de vacío antes de que se registre realmente en el almacén de asignación [de](#componentmapping) componentes. Esto se lleva a cabo encapsulando y ampliando la [`ComponentMapping`](#componentmapping) biblioteca para introducir la compatibilidad con el objeto de configuración `EditConfig` :
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ El siguiente fragmento ilustra la representación HTML típica de una estructura
 * El elemento de cuadrícula adaptable lleva nombres de clase con el prefijo `aem-Grid--`
 * El elemento de columna interactivo lleva nombres de clase con el prefijo `aem-GridColumn--`
 * Una cuadrícula adaptable que también es la columna de una cuadrícula principal está ajustada, como por ejemplo los dos prefijos anteriores no aparecen en el mismo elemento
-* Los elementos correspondientes a recursos editables llevan una `data-cq-data-path` propiedad. Consulte la sección [Contrato con el Editor](#contract-wtih-the-page-editor) de páginas de este documento.
+* Los elementos correspondientes a recursos editables llevan una `data-cq-data-path` propiedad. Consulte la sección [Contrato con el Editor](#contract-with-the-page-editor) de páginas de este documento.
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
