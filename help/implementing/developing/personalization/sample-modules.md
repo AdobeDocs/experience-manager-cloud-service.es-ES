@@ -2,9 +2,9 @@
 title: Tipos de módulos de interfaz de usuario de ContextHub de muestra
 description: ContextHub proporciona varios módulos de interfaz de usuario de muestra que puede utilizar en sus soluciones
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Las instancias del módulo de interfaz de usuario contexthub.browserinfo no requ
 
 ## Tipo de módulo de interfaz de usuario contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-El módulo `contexthub.datetime` UI muestra la fecha y la hora almacenadas en una tienda denominada datetime que se basa en el candidato del almacén [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) .
+El módulo `contexthub.datetime` UI muestra la fecha y la hora almacenadas en una tienda denominada datetime que se basa en el candidato de la `contexthub.datetime` tienda.
 
 ![módulo contexthub.datetime](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ Las instancias del módulo `contexthub.screen-orientation` UI no requieren un va
 
 ## Tipo de módulo de interfaz de usuario contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-El módulo `contexthub.tagcloud` UI muestra información sobre las etiquetas. En la barra de herramientas, el módulo UI muestra el número de etiquetas. La ventana emergente muestra un tagcloud y un cuadro de texto para agregar nuevas etiquetas. El módulo UI obtiene información de una tienda de ContextHub denominada tagcloud basada en el candidato a la tienda [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) .
+El módulo `contexthub.tagcloud` UI muestra información sobre las etiquetas. En la barra de herramientas, el módulo UI muestra el número de etiquetas. La ventana emergente muestra un tagcloud y un cuadro de texto para agregar nuevas etiquetas. El módulo UI obtiene información de una tienda de ContextHub denominada tagcloud basada en el candidato a la `contexthub.tagcloud` tienda.
 
 ![módulo ContextHub.tagcloud](assets/tagcloud-module.png)
 
