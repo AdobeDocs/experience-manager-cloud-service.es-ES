@@ -2,9 +2,9 @@
 title: SPA y procesamiento del lado del servidor
 description: El uso de la representación del lado del servidor (SSR) en el SPA puede acelerar la carga inicial de la página y, a continuación, pasar una representación posterior al cliente.
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # SPA y procesamiento del lado del servidor{#spa-and-server-side-rendering}
 
-Las aplicaciones de una sola página (SPA) pueden oferta al usuario de una experiencia dinámica y rica que reacciona y se comporta de maneras conocidas, a menudo como una aplicación nativa. [Esto se consigue confiando en que el cliente cargue el contenido por adelantado y, a continuación, lleve a cabo el trabajo pesado de gestionar la interacción](introduction.md#how-does-a-spa-work) del usuario y, de este modo, se minimiza la cantidad de comunicación necesaria entre el cliente y el servidor, lo que hace que la aplicación sea más reactiva.
+Las aplicaciones de una sola página (SPA) pueden oferta al usuario en una experiencia dinámica y rica que reacciona y se comporta de maneras conocidas, a menudo como una aplicación nativa. [Esto se consigue confiando en que el cliente cargue el contenido por adelantado y, a continuación, lleve a cabo el trabajo pesado de gestionar la interacción](introduction.md#how-does-a-spa-work) del usuario y, de este modo, se minimiza la cantidad de comunicación necesaria entre el cliente y el servidor, lo que hace que la aplicación sea más reactiva.
 
 Sin embargo, esto puede llevar a tiempos de carga iniciales más largos, especialmente si el SPA es grande y rico en su contenido. Para optimizar los tiempos de carga, parte del contenido se puede representar en el servidor. El uso del procesamiento en el lado del servidor (SSR) puede acelerar la carga inicial de la página y, a continuación, pasar el procesamiento al cliente.
 
@@ -47,7 +47,7 @@ Las siguientes secciones detallan cómo se puede utilizar Adobe I/O Runtime para
 >
 >Adobe recomienda una instancia de Adobe I/O Runtime independiente para cada entorno de AEM (autor, publicación, etapa, etc.).
 
-## Configuración del procesador remoto {#remote-renderer-configuration}
+## Configuración del procesador remoto {#remote-content-renderer-configuration}
 
 AEM saber dónde se puede recuperar el contenido procesado de forma remota. Independientemente del modelo [que elija implementar para SSR,](#adobe-i-o-runtime) deberá especificar AEM cómo acceder a este servicio de procesamiento remoto.
 
@@ -67,8 +67,6 @@ Los siguientes campos están disponibles para la configuración:
 >[!NOTE]
 >
 >Independientemente de si decide implementar el flujo [de comunicación impulsado por](#aem-driven-communication-flow) AEM o por [Adobe I/O Runtime,](#adobe-i-o-runtime-driven-communication-flow) debe definir una configuración de procesador de contenido remoto.
->
->Esta configuración también debe definirse si elige [utilizar un servidor Node.js personalizado.](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ Los siguientes campos están disponibles para la configuración:
 
 ## Flujo de comunicación AEM {#aem-driven-communication-flow}
 
-Al utilizar SSR, el flujo de trabajo [de interacción de](introduction.md#workflow) componentes de las SPA de AEM incluye una fase en la que el contenido inicial de la aplicación se genera en Adobe I/O Runtime.
+Al utilizar SSR, el flujo de trabajo [de interacción de](introduction.md#interaction-with-the-spa-editor) componentes de las SPA de AEM incluye una fase en la que el contenido inicial de la aplicación se genera en Adobe I/O Runtime.
 
 1. El explorador solicita el contenido de SSR a AEM.
 1. AEM publica el modelo en Adobe I/O Runtime.
@@ -164,7 +162,7 @@ El `RemoteContentRendererRequestHandlerServlet` se puede utilizar para configura
 
 Para agregar un controlador de solicitud personalizado, implemente la `RemoteContentRendererRequestHandler` interfaz. Asegúrese de establecer la propiedad del `Constants.SERVICE_RANKING` componente en un entero mayor que 100, que es la clasificación del `DefaultRemoteContentRendererRequestHandlerImpl`.
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ Para que un servlet recupere y devuelva contenido que se puede insertar en la p�
 
 Normalmente, la plantilla HTL de un componente de página es el destinatario principal de dicha función.
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
