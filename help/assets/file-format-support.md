@@ -1,11 +1,11 @@
 ---
-title: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service
+title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '813'
 ht-degree: 9%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 9%
 
 # Assets supported file formats {#supported-file-formats}
 
-Adobe Experience Manager como Cloud Service admite capacidades básicas de gestor de contenido — almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Adobe Experience Manager Assets admite una amplia gama de formatos de archivo y cada función de producto admite diversos formatos.
+Adobe Experience Manager como Cloud Service admite funciones básicas de gestor de contenido: almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. Adobe Experience Manager Assets admite una amplia gama de formatos de archivo y cada función de producto admite diversos formatos.
 
 Además, Experience Manager Assets ofrece una mayor compatibilidad para generar previsualizaciones y representaciones, así como para extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
 
 Los aspectos destacados de la conversión de recursos mediante los microservicios de recursos son:
 
-* Formatos [de archivo clave de](#adobe-formats) Adobe producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension y Adobe Acrobat o PDF.
+* Formatos [de archivo de](#adobe-formats) Adobe clave producidos por aplicaciones y servicios de Adobe, incluidos Adobe Photoshop, Adobe InDesign, Adobe Illustrator, Adobe XD, Adobe Dimension y Adobe Acrobat o PDF.
 * Formatos [de archivo de](#image-formats)imágenes clave.
-* [Formatos](#camera-raw-formats) de archivo de Camera Raw para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
+* [Formatos](#camera-raw-formats) de archivo Camera Raw para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
 * Formatos [de](#document-formats)documento comunes, incluidos los formatos Microsoft Office y Open Documento.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
@@ -35,7 +35,7 @@ La leyenda siguiente describe el nivel de asistencia.
 
 ## Formatos de Adobe {#adobe-formats}
 
-| Formato de archivo | Generación de miniaturas | extracción de texto completo | Extracción de metadatos | Anchura/Altura |
+| Formato de archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
@@ -65,7 +65,7 @@ La leyenda siguiente describe el nivel de asistencia.
 
 ## Formatos de imagen en [!DNL Dynamic Media] {#image-support-dynamic-media}
 
-| Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de Previsualización | Entregar representación dinámica | Descargar representación dinámica |
+| Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de previsualización | Entregar representación dinámica | Descargar representación dinámica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -91,9 +91,9 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada que no se a
 
 Se admite la siguiente lista de formatos 3D.
 
-Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
+| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Previsualización de miniaturas | previsualización 3D | Envío de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -122,23 +122,23 @@ Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-me
 | MFW | ✓ | ✓ | ✓ |
 | MOS | ✓ | ✓ | ✓ |
 | MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
+| NF | ✓ | ✓ | ✓ |
 | NRW | ✓ | ✓ | ✓ |
 | ORF | ✓ | ✓ | ✓ |
 | PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
 | RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
 | SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
-## Formatos de Documento {#document-formats}
+## Formatos de documento {#document-formats}
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes.
 
-| Formato de archivo | Generación de miniaturas | extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+| Formato de archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -147,7 +147,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | PPT | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
+| F | ✓ | ✓ | ✓ | - | - |
 | OFG | ✓ | ✓ | ✓ | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - |
 | ODP | ✓ | ✓ | ✓ | - | - |
@@ -160,9 +160,9 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | TXT | - | ✓ | - | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## Formatos de Documento en [!DNL Dynamic Media] {#document-support-dynamic-media}
+## Formatos de documento en [!DNL Dynamic Media] {#document-support-dynamic-media}
 
-| Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de Previsualización | Entregar representación dinámica | Descargar representación dinámica |
+| Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de previsualización | Entregar representación dinámica | Descargar representación dinámica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -201,7 +201,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 |------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) |  |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 y HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animación de Apple |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectorial) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectorial) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
