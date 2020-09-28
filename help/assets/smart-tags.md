@@ -1,11 +1,11 @@
 ---
-title: Etiquete imágenes con servicios artificialmente inteligentes.
+title: Etiquetar imágenes con servicios inteligentes
 description: Etiquete imágenes con servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante los servicios de Adobe Sensei.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2424'
 ht-degree: 6%
 
 ---
