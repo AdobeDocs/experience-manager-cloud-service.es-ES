@@ -4,9 +4,9 @@ user-guide-title: Implementar para AEM as a Cloud Service
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '398'
 ht-degree: 66%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 66%
    + [Configuración de RTE para crear sitios accesibles](/help/implementing/developing/extending/rte-accessible-content.md)
 + Implementar en AEM as a Cloud Service {#deploying}
    + [Implementar en AEM as a Cloud Service](deploying/overview.md)
+   + [Actualizaciones de la versión de AEM](deploying/aem-version-updates.md)
    + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Nivel de Author {#author-tier}
    + [Acceso al nivel de Author](/help/implementing/author-tier/accessing-the-author-tier.md)
