@@ -1,12 +1,12 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL Sites]
 description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 44%
+source-wordcount: '2080'
+ht-degree: 45%
 
 ---
 
@@ -32,16 +32,16 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
    |  | [!DNL Sites] como Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sobre AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] in situ |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]como Cloud Service ** | Compatible | Compatible | Compatible |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]sobre AMS ** | Compatible | Compatible | Compatible |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]in situ ** | No compatible | No compatible | No compatible |
+   | **[!DNL Experience Manager Assets]como Cloud Service** | Compatible | Compatible | Compatible |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]sobre AMS** | Compatible | Compatible | Compatible |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]in situ** | No compatible | No compatible | No compatible |
 
 ### Formatos de archivo compatibles {#mimetypes}
 
-Los autores buscan imágenes y los siguientes tipos de documentos en el Buscador de contenido y utilizan los recursos buscados en el Editor de páginas. Se añaden Documentos al `Download` componente y a las imágenes al `Image` componente. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Los formatos admitidos son:
+Los autores buscan imágenes y los siguientes tipos de documentos en el Buscador de contenido y utilizan los recursos buscados en el Editor de páginas. Se añaden documentos al `Download` componente y a las imágenes al `Image` componente. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Los formatos admitidos son:
 
 * **Formatos** de imagen: Formatos que admite el componente [](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html) Imagen. [!DNL Dynamic Media] las imágenes no son compatibles.
-* **Formatos** de Documento: Consulte los formatos [de documento](file-format-support.md#document-formats)admitidos.
+* **Formatos** de documento: Consulte los formatos [de documento](file-format-support.md#document-formats)admitidos.
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
 
