@@ -1,11 +1,11 @@
 ---
-title: Configure y utilice microservicios de recursos para el procesamiento de recursos.
+title: Configuración y uso de microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2527'
 ht-degree: 1%
 
 ---
