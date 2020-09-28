@@ -1,11 +1,11 @@
 ---
-title: Arquitectura de Recursos Adobe Experience Manager como servicio de nube
-description: Arquitectura de Recursos Adobe Experience Manager como servicio de nube
+title: Arquitectura de [!DNL Assets]
+description: Arquitectura de Adobe Experience Manager Assets como Cloud Service
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '103'
 ht-degree: 7%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Architecture of Assets as a Cloud Service solution {#assets-architecture}
 
-Recursos AEM como servicio de nube se basa en Adobe Experience Manager y se compara bien con la última oferta de Experience Manager 6.5. La oferta de servicios en la nube tiene una arquitectura y funcionalidad ajustadas para ser un servicio nativo de la nube. Los cambios en la arquitectura subyacente no permiten que toda la funcionalidad de Experience Manager 6.5 forme parte del servicio de nube.
+AEM Assets como Cloud Service se basa en Adobe Experience Manager y se compara bien con la última oferta Experience Manager 6.5. La oferta de Cloud Service tiene una arquitectura y funcionalidad ajustadas que ofrece un servicio nativo de nube. Los cambios en la arquitectura subyacente no permiten que toda la funcionalidad de Experience Manager 6.5 forme parte del Cloud Service.
 
 Para ver la descripción general de la arquitectura de los microservicios de activos, consulte esta descripción general [de los microservicios de](asset-microservices-overview.md#asset-microservices-architecture)activos.
 
