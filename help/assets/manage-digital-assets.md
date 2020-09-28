@@ -1,12 +1,12 @@
 ---
-title: Administración de recursos digitales en Experience Manager
+title: Administre recursos digitales
 description: Obtenga información sobre varios métodos de edición y administración de recursos.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a088aa3cd5fda428477c985d1edacf59cfe71a67
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4431'
 ht-degree: 12%
 
 ---
@@ -259,7 +259,7 @@ Asimismo, desactive el botón de forzar eliminación mediante una superposición
 
    >[!NOTE]
    >
-   >Para poder eliminar un recurso, se requieren permisos de eliminación en la represa o el recurso. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
+   >Para poder eliminar un recurso, es necesario disponer de permisos de eliminación en la represa o el recurso. Si solo tiene permisos de modificación, solo puede editar los metadatos del recurso y agregar anotaciones al recurso. Sin embargo, no puede eliminar el recurso ni sus metadatos.
 
    >[!NOTE]
    >
@@ -544,11 +544,11 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
 1. Descargue o imprima el PDF con las opciones de la parte superior derecha.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la configuración **[!UICONTROL de PDF de]** anotación desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
