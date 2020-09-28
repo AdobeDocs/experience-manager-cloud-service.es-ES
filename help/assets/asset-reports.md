@@ -1,11 +1,11 @@
 ---
-title: Informes sobre el uso y uso compartido de los recursos digitales.
+title: Informes sobre uso y uso compartido
 description: Informes sobre los recursos [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab9a3bfa3536e25243e9752f9f034e31a57e136c
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 11%
 
 ---
