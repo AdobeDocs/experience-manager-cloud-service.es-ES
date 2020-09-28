@@ -1,11 +1,11 @@
 ---
-title: Referencias de desarrollador para la administración de recursos digitales [!DNL Adobe Experience Manager] como Cloud Service.
+title: Referencias de desarrollador para [!DNL Assets]
 description: Las API de [!DNL Assets] y el contenido de referencia del desarrollador le permiten administrar recursos, incluidos archivos binarios, metadatos, representaciones, comentarios y [!DNL Content Fragments].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1236'
 ht-degree: 1%
 
 ---
