@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management [!DNL Adobe Experience Manager Assets] usa un servicio de nube.
-description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia [!DNL Experience Manager] en un servicio de nube.
+title: Digital Rights Management en [!DNL Assets]
+description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia [!DNL Experience Manager] en un Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1347'
 ht-degree: 7%
 
 ---
@@ -21,8 +21,8 @@ La caducidad de los activos es una forma eficaz de aplicar los requisitos de lic
 
 Puede vista del estado de caducidad de un recurso en los siguientes lugares:
 
-* **vista** de tarjeta: Para un recurso caducado, un indicador de la tarjeta indica que ha caducado.
-* **vista** de Lista: En el caso de recursos caducados, la columna **[!UICONTROL Estado]** muestra la pancarta **[!UICONTROL Caducado]** .
+* **Vista** de tarjeta: Para un recurso caducado, un indicador de la tarjeta indica que ha caducado.
+* **Vista** de lista: En el caso de recursos caducados, la columna **[!UICONTROL Estado]** muestra la pancarta **[!UICONTROL Caducado]** .
 * **Cronología**: Puede vista del estado de caducidad de un recurso en la línea de tiempo. Seleccione el recurso y elija Línea de tiempo.
 * **Carril** de referencias: También puede vista el estado de caducidad de los recursos en el carril **[!UICONTROL Referencias]** . Gestiona los estados de caducidad de los recursos y las relaciones entre los recursos compuestos y los subrecursos, colecciones y proyectos a los que se hace referencia.
 
@@ -77,7 +77,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
 1. En la interfaz de usuario, seleccione un recurso. [!DNL Assets]
 
-1. Haga clic en **[!UICONTROL Publicar]** en la barra de herramientas. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
+1. Click **[!UICONTROL Publish]** from the toolbar. Si no ve **Publicar** en la barra de herramientas, haga clic en **[!UICONTROL Más]** en la barra de herramientas y busque la opción **[!UICONTROL Publicar]** .
 
 1. Elija **[!UICONTROL Publicar]** en el menú y, a continuación, cierre el cuadro de diálogo de confirmación.
 1. Salga del modo de selección. El estado de publicación del recurso aparece en la parte inferior de la miniatura del recurso en la vista de tarjeta. En la vista de lista, la columna Publicado muestra la hora en que se publicó el recurso.
@@ -104,7 +104,7 @@ La [!DNL Assets] consola puede mostrar varios estados para los recursos. Según 
 
 1. También puede buscar recursos en función de una combinación de estados en varias facetas de búsqueda. Por ejemplo, puede buscar recursos publicados que hayan sido aprobados en una tarea de revisión y que aún no hayan caducado seleccionando las opciones correspondientes en las facetas de búsqueda.
 
-## Administración de derechos digitales en [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Digital Rights Management en [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 Esta función fuerza la aceptación del contrato de licencia antes de poder descargar un recurso con licencia desde [!DNL Adobe Experience Manager Assets].
 
