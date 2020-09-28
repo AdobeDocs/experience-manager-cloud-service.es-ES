@@ -2,9 +2,9 @@
 title: Actualizaciones de la versión de AEM
 description: 'Actualizaciones de la versión de AEM '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,12 @@ AEM como Cloud Service ahora utiliza la integración continua y el Envío contin
 
 AEM actualizaciones de versión son de dos tipos:
 
-* **Actualizaciones push**
+* **AEM actualizaciones push**
 
    * Se puede liberar diariamente.
    * Principalmente mantenimiento, incluidas las últimas correcciones de errores y actualizaciones de seguridad.
 
-   A medida que los cambios se aplican con regularidad, el impacto es incremental, lo que reduce el impacto en el servicio.
-
->[!NOTE]
->Para obtener más información sobre AEM actualizaciones push, consulte el documento técnico de [Adobe Experience Manager como modelo de Envío continuo Cloud Service](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      A medida que los cambios se aplican con regularidad, el impacto es incremental, lo que reduce el impacto en el servicio.
 
 * **Nuevas actualizaciones de funciones**
 
