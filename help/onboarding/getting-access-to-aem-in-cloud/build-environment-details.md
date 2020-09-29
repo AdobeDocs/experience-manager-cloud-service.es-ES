@@ -2,9 +2,9 @@
 title: Detalles del Entorno de compilación
 description: 'Detalles del Entorno de compilación: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,10 @@ Para ello, en el archivo pom.xml, agregue una `<plugin>` entrada con este aspect
 ```
 
 >[!NOTE]
->Los valores de proveedor admitidos son `oracle` y `sun`.
->
->Los valores de versión admitidos son `1.8`, `1.11`y `11`.
+>Los valores de proveedor admitidos son `oracle` y `sun`y los valores de versión admitidos son `1.8`, `1.11`y `11`.
+
+>[!NOTE]
+>La compilación del proyecto de Cloud Manager sigue usando Java 8 para invocar Maven, por lo tanto la comprobación o aplicación de la versión de Java configurada en el complemento toolchain a través de complementos como el complemento [](https://maven.apache.org/enforcer/maven-enforcer-plugin/) Apache Maven Enforcer no funciona y estos complementos no deben utilizarse.
 
 ## Variables de entorno {#environment-variables}
 
