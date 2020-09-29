@@ -2,9 +2,9 @@
 title: Actualizaciones de la versión de AEM
 description: 'Actualizaciones de la versión de AEM '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ AEM actualizaciones pasan por un proceso de validación de productos intensivo y
 
 [Las pruebas de producto y las pruebas](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funcionales del cliente que impiden que las actualizaciones de productos y los impulsos de código del cliente rompan la producción también se validan durante una actualización de la versión de AEM.
 
->[NOTA]
+>[!NOTE]
+>
 >Si el código personalizado se insertó en el entorno de ensayo y luego fue rechazado por usted, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta git de la última versión correcta del cliente a producción.
 
 ## Almacenamiento de nodos compuesto {#composite-node-store}
