@@ -3,10 +3,10 @@ title: Accesibilidad en [!DNL Experience Manager Assets].
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1823'
+ht-degree: 2%
 
 ---
 
@@ -172,7 +172,7 @@ Para las operaciones de metadatos que normalmente realizan funciones como los es
 * La funcionalidad de arrastrar mediante el teclado funciona correctamente en el Editor de Esquemas de metadatos en el modo de exploración del lector de pantalla.
 * Un usuario puede mover el enfoque mediante el teclado al campo Añadir usuario o grupo en Grupo cerrado de usuarios en la ficha Permisos de Propiedades de la carpeta.
 
-## Buscar recursos digitales {#search}
+## Buscar recursos digitales {#search-assets}
 
 Una experiencia de búsqueda de recursos rápida y fluida aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido son parte de la funcionalidad principal [!DNL Assets] . Para realizar el inicio de una búsqueda desde la barra de Omniture, los usuarios pueden utilizar la combinación de teclas `/` o utilizar junto `Tab` con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como Botón [!UICONTROL de] búsqueda cuando el enfoque está en la opción ![de](assets/do-not-localize/search_icon.png)búsqueda de opciones de búsqueda. Los usuarios pueden presionar `Return` para abrir el cuadro Omniture Search. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias de autocompletar ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha `Return`, y `Tab` acceder a las distintas opciones para activar una búsqueda.
 
