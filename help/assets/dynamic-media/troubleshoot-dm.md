@@ -2,9 +2,9 @@
 title: Solución de problemas de Dynamic Media
 description: Solución de problemas de Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 2%
 
 # Solución de problemas de Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
-El siguiente documento describe la solución de problemas de Dynamic Media.
+En el siguiente tema se describe la solución de problemas de Dynamic Media.
+
+## Nueva configuración de Dynamic Media {#new-dm-config}
+
+Consulte [Solución de problemas de una nueva configuración de Dynamic Media.](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## General (Todos los recursos) {#general-all-assets}
 
@@ -31,15 +35,7 @@ Las siguientes propiedades de recurso se pueden revisar en CRXDE Lite para confi
 
 ### Registro de sincronización {#synchronization-logging}
 
-Los errores y problemas de sincronización se registran `error.log` (directorio del servidor AEM `/crx-quickstart/logs/`). Hay suficiente registro para determinar la causa raíz de la mayoría de los problemas, pero puede aumentar el registro en DEBUG en el `com.adobe.cq.dam.ips` paquete a través de la consola de Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para recopilar más información.
-
-### Mover, copiar, eliminar {#move-copy-delete}
-
-Antes de realizar una operación de movimiento, copia o eliminación, haga lo siguiente:
-
-* Para imágenes y vídeos, confirme que existe un `<object_node>/jcr:content/metadata/dam:scene7ID` valor antes de realizar operaciones de movimiento, copia o eliminación.
-* Para los ajustes preestablecidos de imagen y visor, confirme que existe un `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` valor antes de realizar operaciones de movimiento, copia o eliminación.
-* Si falta el valor de metadatos superior, deberá volver a cargar los recursos antes de mover, copiar o eliminar operaciones.
+Los errores y problemas de sincronización se registran `error.log` (AEM directorio de servidor `/crx-quickstart/logs/`). Hay suficiente registro para determinar la causa raíz de la mayoría de los problemas, pero puede aumentar el registro en DEBUG en el `com.adobe.cq.dam.ips` paquete a través de la consola de Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para recopilar más información.
 
 ### Control de versión {#version-control}
 
@@ -66,7 +62,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
     <ol>
      <li><p>Vaya a CRX/DE:</p>
       <ul>
-       <li>Compruebe si el ajuste preestablecido del JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado AEM 6.x a 6.4 y ha exclusión la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Compruebe si el ajuste preestablecido del JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado de AEM 6.x a 6.4 y ha exclusión la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Asegúrese de que el recurso del JCR está <code>dam:scene7FileStatus</code><strong> en la sección Metadatos se muestra como </strong><code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
@@ -75,16 +71,6 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
      <li>Publicar recurso.</li>
      <li>Vuelva a cargar el recurso y publíquelo.</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>Selector de recursos en el editor de conjuntos atascado en la carga permanente</td>
-   <td><p>Problema conocido que se va a solucionar en 6.4</p> </td>
-   <td><p>Cierre el selector y vuelva a abrirlo.</p> </td>
-  </tr>
-  <tr>
-   <td><strong>El botón Seleccionar</strong> no está activo después de seleccionar un recurso como parte de la edición de un conjunto</td>
-   <td><p> </p> <p>Problema conocido que se va a solucionar en 6.4</p> <p> </p> </td>
-   <td><p>Haga clic primero en otra carpeta del Selector de recursos y vuelva para seleccionar el recurso.</p> </td>
   </tr>
   <tr>
    <td>La zona interactiva de carrusel se desplaza después de cambiar entre diapositivas</td>
@@ -151,7 +137,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
     </ul> </td>
    <td>
     <ol>
-     <li>Compruebe que la configuración de Dynamic Media en Cloud Services está correctamente configurada.</li>
+     <li>Compruebe que la Configuración de Dynamic Media en Cloud Services está correctamente configurada.</li>
      <li>Compruebe que la carpeta tiene un perfil de vídeo. Además, compruebe el perfil del vídeo.</li>
     </ol> </td>
   </tr>
@@ -160,7 +146,6 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
    <td><p>Para determinar si la codificación de vídeo sigue en curso o si ha entrado en un estado de error:</p>
     <ul>
      <li>Compruebe el estado del vídeo <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>Monitoree el vídeo desde las fichas Consola de flujo de trabajo <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instancias, Archivar, Errores.</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -220,19 +205,16 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
     </ol> </td>
    <td><p>Si los recursos de muestra o la ilustración de ajustes preestablecidos de visor no se han sincronizado o publicado, reinicie todo el proceso de copia/sincronización:</p>
     <ol>
-     <li>Vaya a CRXDE Lite.
-      <ul>
-       <li>Eliminar <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Vaya al administrador de paquetes de CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Ir a <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
+     </li>
+     <li>Seleccione las siguientes acciones en orden:
       <ol>
-       <li>Buscar el paquete de visor en la lista (inicio con <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Haga clic en <strong>Reinstalar</strong>.</li>
+       <li>Eliminar carpetas de sincronización.</li>
+       <li>Eliminar carpeta de ajustes preestablecidos (debajo <code>/conf</code>).
+       <li>Activar el trabajo asincrónico de la configuración de DM.</li>
       </ol> </li>
-     <li>En Cloud Services, vaya a la página de configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de Dynamic Media - S7.
-      <ul>
-       <li>No realice cambios, haga clic en <strong>Guardar</strong>. Esto desencadena la lógica de nuevo para crear y sincronizar los recursos de muestra, el ajuste preestablecido de visor CSS y la ilustración.<br />  </li>
-      </ul> </li>
+     <li>Espere a que se notifique la sincronización correcta en la Bandeja de entrada de AEM.
+     </li>
     </ol> </td>
   </tr>
  </tbody>
