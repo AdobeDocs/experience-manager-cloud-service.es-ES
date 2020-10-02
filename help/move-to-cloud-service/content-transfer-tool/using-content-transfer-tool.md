@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
+source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
 workflow-type: tm+mt
-source-wordcount: '1667'
-ht-degree: 84%
+source-wordcount: '1688'
+ht-degree: 79%
 
 ---
 
@@ -20,15 +20,15 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * La herramienta de transferencia de contenido se puede utilizar con los siguientes tipos de almacén de datos: Almacén de datos de archivos, almacén de datos S3, almacén de datos compartido S3 y almacén de datos del almacén de blob de Azure.
 
-* Si utiliza un *entorno limitado*, asegúrese de que el entorno se actualice a la versión del 10 de junio de 2020 o posterior. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
+* Si está utilizando un Entorno *de* Simulador para pruebas, asegúrese de que el entorno está actualizado y se ha actualizado a la versión más reciente. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
 
-* Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en su instancia de origen y pertenecer al grupo de administradores de AEM en la instancia de Cloud Service a la que esté transfiriendo el contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
+* Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en la instancia de origen y pertenecer al grupo de administradores de AEM locales en la instancia de Cloud Service a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
 * La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción.
 
-* El límite superior recomendado para el tamaño del repositorio que la herramienta de transferencia de contenido puede admitir a la vez es de 20 GB.
+* Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
 
 ## Disponibilidad {#availability}
 
