@@ -3,9 +3,9 @@ title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Saber cómo las funciones de accesibilidad [!DNL Adobe Experience Manager] inas a un Cloud Service ayudan a los usuarios con discapacidades.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b866d9317ba1795b34f7e308426240c44bd1131c
+source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1840'
 ht-degree: 2%
 
 ---
@@ -175,7 +175,7 @@ Para las operaciones de metadatos que normalmente realizan funciones como los es
 
 ## Buscar recursos digitales {#search-assets}
 
-Una experiencia de búsqueda de recursos rápida y fluida aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido son parte de la funcionalidad principal [!DNL Assets] . Para realizar el inicio de una búsqueda desde la barra de Omniture, los usuarios pueden utilizar la combinación de teclas `/` o utilizar junto `Tab` con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como Botón [!UICONTROL de] búsqueda cuando el enfoque está en la opción ![de](assets/do-not-localize/search_icon.png)búsqueda de opciones de búsqueda. Los usuarios pueden presionar `Return` para abrir el cuadro Omniture Search. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias de autocompletar ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha `Return`, y `Tab` acceder a las distintas opciones para activar una búsqueda.
+Una experiencia de búsqueda de recursos rápida y fluida aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido son parte de la funcionalidad principal [!DNL Assets] . Para realizar el inicio de una búsqueda desde la barra de Omniture, los usuarios pueden utilizar la combinación de teclas `/` o utilizar junto `Tab` con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como Botón [!UICONTROL de] búsqueda cuando el enfoque está en la opción ![de](assets/do-not-localize/search_icon.png)búsqueda de opciones de búsqueda. Los usuarios pueden presionar `Return` para abrir el cuadro Omniture Search. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha `Return`, y `Tab` acceder a las distintas opciones para activar una búsqueda.
 
 La funcionalidad de búsqueda se hace más accesible gracias a las siguientes funciones:
 
@@ -187,7 +187,7 @@ La funcionalidad de búsqueda se hace más accesible gracias a las siguientes fu
 
 Al filtrar los resultados de búsqueda:
 
-* La página de resultados de la búsqueda tiene títulos informativos para comprender mejor a los usuarios de lectores de pantalla.
+* La página de resultados de la búsqueda tiene un título informativo para comprender mejor a los usuarios del lector de pantalla.
 * Un lector de pantalla anuncia las opciones del filtro de búsqueda como acordeones ampliables.
 * Los lectores de pantalla anuncian los predicados con botones de estado mixto.
 
@@ -203,8 +203,8 @@ Al compartir recursos, las siguientes funciones mejoran la accesibilidad:
 * En el cuadro de diálogo de uso compartido de vínculos, al navegar en el modo Examinar, los lectores de pantalla,
 
    * No anote la información de la tabla en cuanto se cargue el cuadro de diálogo.
-   * Puede navegar a todas las sugerencias automáticas de la lista.
-   * Narre las sugerencias automáticas que se muestran para Añadir la dirección de correo electrónico y los campos de búsqueda.
+   * Puede navegar a todas las sugerencias de la lista.
+   * Narre las sugerencias que se muestran para Añadir la dirección de correo electrónico y los campos de búsqueda.
 
 ## Accesibilidad en [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
