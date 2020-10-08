@@ -2,7 +2,7 @@
 title: Imágenes interactivas
 description: Aprenda a trabajar con imágenes interactivas en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '4238'
 ht-degree: 2%
@@ -22,11 +22,11 @@ Consulte las imágenes [interactivas en acción](https://marketing.adobe.com/res
 
 ## Ver cómo se crean los letreros de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
-Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a previsualización, edición y distribución de letreros de imagen interactivos.
+Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a crear previsualizaciones, editar y distribuir letreros de imagen interactivos.
 
 ## Inicio rápido: Imágenes interactivas {#quick-start-interactive-images}
 
-La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle en el uso inicial de imágenes interactivas en Recursos AEM.
+La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle en el uso inicial de las imágenes interactivas en AEM Assets.
 
 Busque el encabezado **Ejemplo** en algunas de las tareas de Inicio rápido. Contiene un breve tutorial basado en un ejemplo de página [web que aún no contiene imágenes interactivas](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
 
@@ -36,8 +36,8 @@ El tutorial ayuda a ilustrar los pasos para integrar imágenes interactivas en s
 
 Pasos de imágenes interactivas:
 
-1. **(Opcional) Identificación de variables** de puntos interactivos: si utiliza Recursos AEM y Medios dinámicos independientes, puede realizar inicios identificando las variables dinámicas utilizadas en la implementación de vista rápida existente para que pueda introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables](#optional-identifying-hotspot-variables)de puntos interactivos.
-Sin embargo, si utiliza AEM Sites, AEM eCommerce o ambos, este paso no es necesario.
+1. **(Opcional) Identificación de variables** de puntos interactivos: si utiliza AEM Assets y Dynamic Media de forma independiente, inicio identificando las variables dinámicas utilizadas en la implementación de QuickView existente para que pueda introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables](#optional-identifying-hotspot-variables)de puntos interactivos.
+Sin embargo, si utiliza AEM Sites, AEM comercio electrónico o ambos, este paso no es necesario.
 
 1. **(Opcional) Creación de un ajuste preestablecido** de visor de imágenes interactivo: personalice la imagen gráfica que se utiliza para representar zonas interactivas. No es necesario crear su propio ajuste preestablecido de visor de imagen interactiva si desea utilizar el ajuste preestablecido de visor de imagen interactiva incorporado `Shoppable_Banner` .
 Consulte [(Opcional) Creación de un ajuste preestablecido](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)de visor de imágenes interactivo.
@@ -50,8 +50,8 @@ Consulte [Añadir zonas interactivas en un letrero](#adding-hotspots-to-an-image
 Consulte [Vista previa de imágenes](#optional-previewing-interactive-images) interactivas: opcional. Si lo desea, puede realizar una vista de la representación de la pancarta de ventas y probar su interactividad.
 Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
 
-1. **Añadir una imagen interactiva en el sitio web o en el sitio web de AEM**. Si utiliza AEM Sites, AEM eCommerce, o ambos, puede añadir la imagen interactiva directamente a una página web de AEM arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-Si utiliza Recursos AEM y Medios dinámicos independientes, debe copiar el código incrustado en el sitio web y, a continuación, integrarlo con la vista rápida existente. Consulte [Integración de una imagen interactiva con el sitio Web](#integrating-an-interactive-image-with-your-website).
+1. **Añadir una imagen interactiva en el sitio web o en el sitio web en AEM** Si utiliza AEM Sites, AEM comercio electrónico o ambos, puede agregar la imagen interactiva directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Si utiliza AEM Assets y Dynamic Media de forma independiente, debe copiar el código incrustado en el sitio web y luego integrarlo con la vista rápida existente. Consulte [Integración de una imagen interactiva con el sitio Web](#integrating-an-interactive-image-with-your-website).
 Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de una imagen interactiva con una vista rápida](#integrating-an-interactive-image-with-an-existing-quickview)existente.
 
 ## (Opcional) Identificación de variables de puntos interactivos {#optional-identifying-hotspot-variables}
@@ -61,15 +61,15 @@ Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el n
 >Esta tarea solo es necesaria si se cumple lo siguiente:
 >
 >* Para agregar interactividad a la imagen, active las vistas rápidas.
->* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos en AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, híbris o Intershop.
+>* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos a AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, hibris o intershop.
 
 >
 >
-Si su implementación de AEM utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
+Si la implementación de AEM utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente tarea.
 
 Inicio identificando las variables dinámicas utilizadas por la implementación de vista rápida existente para que pueda introducir datos de puntos interactivos y crear la imagen interactiva.
 
-Al añadir zonas interactivas a una imagen de pancarta en Recursos AEM, debe asignar un SKU (unidad de almacenamiento de información; un identificador único para cada producto o servicio distintivo que oferta) y variables adicionales opcionales para cada zona interactiva. Estas variables de puntos interactivos se utilizan más adelante para hacer coincidir puntos interactivos con el contenido de vista rápida.
+Cuando agrega zonas interactivas a una imagen de pancarta en AEM Assets, debe asignar un SKU (unidad de almacenamiento de información; un identificador único para cada producto o servicio distintivo que oferta) y variables adicionales opcionales para cada zona interactiva. Estas variables de puntos interactivos se utilizan más adelante para hacer coincidir puntos interactivos con el contenido de vista rápida.
 
 Es importante identificar correctamente el número y el tipo de variables que se asociarán con los datos de puntos interactivos. Cada zona interactiva agregada a una imagen de pancarta debe contener suficiente información para identificar sin ambigüedades el producto en el sistema back-end existente.
 
@@ -98,11 +98,11 @@ Cuando la supervisión de red está activada en el explorador, active la vista r
 
 Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una parte o ruta de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml`o `text/javascript`.
 
-Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
+Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU es la única pieza de datos que necesita para agregar zonas interactivas a la imagen de la pancarta.
 
-Sin embargo, en casos complejos, la URL de vista rápida tiene distintos elementos además del SKU, como ID de categoría, código de color, código de tamaño, etc. En estos casos, cada elemento es una variable independiente en la definición de datos de puntos interactivos de la función de imagen interactiva de ventas de Recursos AEM.
+Sin embargo, en casos complejos, la URL de vista rápida tiene distintos elementos además del SKU, como ID de categoría, código de color, código de tamaño, etc. En estos casos, cada elemento es una variable independiente en la definición de datos de puntos interactivos de la función de imagen interactiva de ventas de AEM Assets.
 
 Considere los siguientes ejemplos de direcciones URL de Quickview y sus variables de puntos interactivos resultantes:
 
@@ -166,15 +166,15 @@ Dada esta información, toda la URL de vista rápida tiene el siguiente patrón:
 
 En base a esa análisis, usted usaría `categoryId` y `SKU` para zonas interactivas.
 
-Ya puede cargar una pancarta de imagen y agregarle zonas interactivas mediante la función de imagen interactiva de ventas en Recursos AEM.
+Ya está listo para cargar una pancarta de imagen y agregarle zonas interactivas mediante la función de imagen interactiva de ventas de AEM Assets.
 
 ## (Opcional) Creación de un ajuste preestablecido de visor de imágenes interactivo {#optional-creating-an-interactive-image-viewer-preset}
 
-Puede optar por utilizar el ajuste preestablecido de visor de imágenes interactivo predeterminado, denominado `Shoppable_Banner` que se incluye con Recursos AEM. También puede crear su propio ajuste preestablecido de visor personalizado para utilizarlo con imágenes interactivas.
+Puede optar por utilizar el ajuste preestablecido de visor de imágenes interactivas predeterminado, denominado `Shoppable_Banner` que se incluye con AEM Assets. También puede crear su propio ajuste preestablecido de visor personalizado para utilizarlo con imágenes interactivas.
 
 Al crear un ajuste preestablecido de visor de imágenes interactivo personalizado, puede determinar el aspecto de las zonas interactivas en la pancarta de imágenes. Como parte de la creación del ajuste preestablecido de visor, puede elegir utilizar un gráfico de puntos interactivos de una galería de imágenes predefinidas.
 
-Después de guardar el ajuste preestablecido de visor, se activa automáticamente (se activa) en la página de lista de ajustes preestablecidos de visor en Recursos AEM. Esta funcionalidad significa que está visible en el componente Medios interactivos y siempre que se vista un recurso. Sin embargo, para *entregar un letrero interactivo con este ajuste preestablecido de visor, *también debe publicar *el ajuste preestablecido de visor (esto es válido para los ajustes preestablecidos de visor personalizados o predeterminados).
+Después de guardar el ajuste preestablecido de visor, se activa automáticamente (se activa) en la página de lista de ajustes preestablecidos de visor de AEM Assets. Esta funcionalidad significa que está visible en el componente Medios interactivos y siempre que se vista un recurso. Sin embargo, para *entregar un letrero interactivo con este ajuste preestablecido de visor, *también debe publicar *el ajuste preestablecido de visor (esto es válido para los ajustes preestablecidos de visor personalizados o predeterminados).
 
 **Para crear un ajuste preestablecido de visor de imágenes interactivo**
 
@@ -222,7 +222,7 @@ Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
 >[!NOTE]
 >
->Tenga en cuenta que las herramientas de uso compartido de medios sociales en Imagen interactiva no son compatibles cuando incrusta el visor en un fragmento de experiencia.  Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+>Tenga en cuenta que las herramientas de uso compartido de medios sociales en Imagen interactiva no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -233,7 +233,7 @@ Consulte [(Opcional) Vista previa de imágenes](#optional-previewing-interactive
 >[!NOTE]
 >
 >Cuando se agregan zonas interactivas a una imagen en una imagen interactiva o una pancarta de carrusel, la información de las zonas interactivas se almacena en la misma ubicación de metadatos (en relación con la ubicación de la imagen), independientemente de si se trata de una imagen interactiva o de una pancarta de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con los datos de puntos interactivos definidos) en cualquier visor.
-
+>
 >Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
 >
 >Consulte también Pancartas [de carrusel](/help/assets/dynamic-media/carousel-banners.md).
@@ -266,15 +266,15 @@ Consulte [(Opcional) Vista previa de imágenes](#optional-previewing-interactive
 
    * Toque **[!UICONTROL Vista]** rápida.
 
-      * Si es cliente de AEM Sites o eCommerce, toque o haga clic en el icono del selector de productos (lupa) para abrir la página Seleccionar producto. Toque o haga clic en el producto que desee utilizar y, a continuación, toque **Seleccionar **en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
-      * Si *no es* cliente de AEM Sites o eCommerce
+      * Si es cliente de AEM Sites o de comercio electrónico, toque o haga clic en el icono Selector de producto (lupa) para abrir la página Seleccionar producto. Toque o haga clic en el producto que desee utilizar y, a continuación, toque **Seleccionar **en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
+      * Si *no es* cliente de AEM Sites o de comercio electrónico
 
          * Consulte [Identificación de variables](#optional-identifying-hotspot-variables)de puntos interactivos; deberá definir estas variables.
          * A continuación, introduzca manualmente el valor de SKU. En el campo de texto Valor de SKU, escriba el SKU del producto (Unidad de mantenimiento de existencias), que es un identificador único para cada producto o servicio distinto que oferta. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa asociar la zona interactiva tocada con una vista rápida de SKU concreta.
          * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto, toque **[!UICONTROL Añadir variable]** genérica. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable agregada.
    * Toque **[!UICONTROL Hipervínculo]**.
 
-      * Si es cliente de AEM Sites, toque o haga clic en el icono (carpeta) Selector de sitio para ir a una URL. Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de AEM Sites.
+      * Si es cliente de AEM Sites, toque o haga clic en el icono (carpeta) Selector de sitio para navegar a una dirección URL. Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
       * Si es un cliente independiente, en el campo de texto HREF, especifique la ruta de URL completa a una página web vinculada.
 
    Asegúrese de especificar si desea abrir el vínculo en una nueva ficha del explorador (opción predeterminada recomendada) o en la misma ficha.
@@ -290,7 +290,7 @@ Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
          >[!NOTE]
          >
-         >Tenga en cuenta que las herramientas de uso compartido de medios sociales en Imagen interactiva no son compatibles cuando incrusta el visor en un fragmento de experiencia.  Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+         >Tenga en cuenta que las herramientas de uso compartido de medios sociales en Imagen interactiva no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
 
 
 
@@ -309,14 +309,14 @@ Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
 ### (Opcional) Vista previa de imágenes interactivas {#optional-previewing-interactive-images}
 
-Puede utilizar la Previsualización para ver cómo se verá la imagen interactiva para los clientes y para probar las zonas interactivas de la imagen para asegurarse de que se comportan de la forma esperada.
+Puede utilizar la Previsualización para ver cómo se verá la imagen interactiva para los clientes y probar las zonas interactivas de la imagen para asegurarse de que se comportan de la forma esperada.
 
 Cuando esté satisfecho con la imagen interactiva, puede publicarla.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de AEM Sites.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-**previsualización de imágenes interactivas**
+**Previsualización de imágenes interactivas**
 
 1. En la vista Recursos, desplácese hasta una imagen interactiva existente que haya creado y toque para abrirla en Previsualización.
 1. Cerca de la esquina superior izquierda de la página de Previsualización, en la lista desplegable Contenido, toque **[!UICONTROL Visores]**.
@@ -331,9 +331,9 @@ Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynami
 
 Una vez que haya cargado una imagen de letrero, agregado zonas interactivas a la imagen y publicado la imagen interactiva, estará listo para agregarla a la página del sitio web.
 
-Si es cliente de AEM Sites, puede añadir la imagen interactiva arrastrando el componente de medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Si es cliente de AEM Sites, puede agregar la imagen interactiva arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-Si es cliente independiente de Recursos AEM, puede añadir manualmente la imagen interactiva a su sitio web, tal como se describe en esta sección.
+Si es cliente independiente de AEM Assets, puede agregar manualmente la imagen interactiva a su sitio web, tal como se describe en esta sección.
 
 1. Copie el código incrustado de la imagen interactiva publicada.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
@@ -349,7 +349,7 @@ Usando el sitio web de [demostración como ejemplo](https://marketing.adobe.com/
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-La integración es tan sencilla como quitar la `IMG` etiqueta y reemplazarla por el código incrustado copiado de Recursos AEM. Puede ver el resultado [que muestra la imagen interactiva de ventas en la página con tres puntos interactivos](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)de círculo.
+La integración es tan sencilla como quitar la `IMG` etiqueta y reemplazarla por el código incrustado copiado de AEM Assets. Puede ver el resultado [que muestra la imagen interactiva de ventas en la página con tres puntos interactivos](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)de círculo.
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ Ya está listo para integrar la imagen interactiva con una vista rápida existen
 
 >[!NOTE]
 >
->Esta tarea solo se aplica si es cliente independiente de Recursos AEM.
+>Esta tarea solo se aplica si es cliente independiente de AEM Assets.
 
 El último paso de este proceso es integrar la imagen interactiva con una implementación de vista rápida existente en el sitio web. No existe una solución para la integración que funcione en todos los casos. Cada implementación de QuickView es única y se necesita un enfoque específico que muy probablemente involucre la asistencia de una persona de TI de front-end.
 
@@ -383,7 +383,7 @@ La implementación de vista rápida existente normalmente representa una cadena 
 
 Es posible que estas llamadas no representen llamadas de API públicas independientes a las que la lógica de página web puede llamar de forma arbitraria. En su lugar, es una llamada encadenada donde cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
 
-Al mismo tiempo que la imagen interactiva de ventas sustituye al paso 1 y, en parte, al paso 2, cuando un usuario hace clic en un punto interactivo dentro de la imagen de ventas, el visor gestiona esta interacción del usuario. El visor devuelve un evento a la página web que contiene todos los datos de puntos interactivos añadidos anteriormente a Recursos AEM.
+Al mismo tiempo que la imagen interactiva de ventas sustituye al paso 1 y, en parte, al paso 2, cuando un usuario hace clic en un punto interactivo dentro de la imagen de ventas, el visor gestiona esta interacción del usuario. El visor devuelve un evento a la página web que contiene todos los datos de puntos interactivos añadidos anteriormente a AEM Assets.
 
 En un controlador de evento de este tipo, el código front-end hace lo siguiente:
 
@@ -391,7 +391,7 @@ En un controlador de evento de este tipo, el código front-end hace lo siguiente
 * Construye una URL de vista rápida basada en los datos de zona interactiva.
 * Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
 
-El código incrustado devuelto por Recursos AEM ya tiene un controlador de eventos listo para usar en su lugar con comentarios, como se muestra en el siguiente fragmento de código resaltado:
+El código incrustado devuelto por AEM Assets ya tiene un controlador de evento listo para usar en su lugar, que se comenta, como se muestra en el siguiente fragmento de código resaltado:
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -498,6 +498,6 @@ El siguiente es el código fuente completo:
 
 El sitio web de demostración [final con la imagen](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)interactiva completamente integrada.
 
-## Usar las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+## Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
 See [Using Quickviews to create custom pop-ups](/help/assets/dynamic-media/custom-pop-ups.md).
