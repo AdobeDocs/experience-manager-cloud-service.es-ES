@@ -2,7 +2,7 @@
 title: Modernizador de repositorio
 description: Modernizador de repositorio
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 4%
@@ -40,4 +40,5 @@ El Modernizador de repositorio crea una estructura de proyecto AEM Cloud Service
    Consulte Recurso **[Git: Modernizador](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** de repositorio para aprender a utilizar esta herramienta.
 
    >[!NOTE]
+   >
    >El Modernizador de repositorio se desarrolla mediante NodeJS. Se recomienda tener instalado NodeJS 10.0 o posterior.
