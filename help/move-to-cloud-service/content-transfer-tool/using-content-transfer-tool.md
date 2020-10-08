@@ -2,7 +2,7 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 1. Vaya a la página *Información general* y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior. Aparece el cuadro de diálogo **extracción de conjunto de migración** .
 
    >[!IMPORTANT]
+   >
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### Proceso de Ingesta en transferencia de contenido {#ingestion-process}
 
@@ -151,17 +153,16 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. Una vez finalizada la ingestión, el estado del campo **PUBLISH INGESTION** se actualiza a **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### Ingesta superior {#top-up-ingestion-process}
 
 La herramienta de transferencia de contenido tiene una función que permite *agregar* contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
 >[!NOTE]
+>
 >Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
 
 Una vez completado el proceso de ingesta, se puede usar el contenido delta mediante el método de ingesta superior. Complete los siguientes pasos:
@@ -169,8 +170,10 @@ Una vez completado el proceso de ingesta, se puede usar el contenido delta media
 1. Vaya a la página *Información general* y seleccione el conjunto de migración para el que desea realizar la ingesta superior. Haga clic en **Ingesta** para iniciar la extracción superior. Aparece el cuadro de diálogo **ingesta de conjunto de migración** .
 
    >[!IMPORTANT]
+   >
    >Debe desactivar la opción **Borrar contenido existente en la instancia de Cloud antes de la ingestión** , para evitar que se elimine el contenido existente de la actividad de ingestión anterior.
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### Visualización de registros del conjunto de migraciones {#viewing-logs-migration-set}
 
