@@ -2,9 +2,9 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2219'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ AEM como Cloud Service es una plataforma para que los clientes incluyan código 
 Los niveles de registro y registro de AEM se administran en archivos de configuración que se almacenan como parte del proyecto de AEM en Git y se implementan como parte del proyecto de AEM mediante Cloud Manager. El inicio de sesión en AEM como Cloud Service se puede dividir en dos conjuntos lógicos:
 
 * Registro de AEM, que realiza el registro en el nivel de aplicación AEM
-* El registro de Apache HTTPD Web Server/Dispatcher, que realiza el registro del servidor web y Dispatcher en el nivel de publicación.
+* El registro Apache HTTPD Web Server/Dispatcher, que realiza el registro del servidor web y Dispatcher en el nivel Publicar.
 
 ## Registro de AEM {#aem-loggin}
 
@@ -29,7 +29,7 @@ El registro en el nivel de aplicación AEM se administra mediante tres registros
 
 >[!NOTE]
 >
->Las solicitudes HTTP que se envían desde la caché de Dispatcher del nivel de publicación o desde la CDN de flujo ascendente no se reflejan en estos registros.
+>Las solicitudes HTTP que se envían desde la caché Dispatcher del nivel de publicación o desde la CDN de flujo ascendente no se reflejan en estos registros.
 
 ## Registro de Java AEM {#aem-java-logging}
 
@@ -38,7 +38,7 @@ AEM como Cloud Service proporciona acceso a las sentencias de registro de Java. 
 <table>
 <tr>
 <td>
-<b>Entorno AEM</b></td>
+<b>entorno AEM</b></td>
 <td>
 <b>Nivel de registro</b></td>
 <td>
@@ -95,7 +95,7 @@ Cuando el registro de ERROR está activo, solo se registran las sentencias que i
 
 Aunque el registro de Java admite otros niveles de granularidad de registro, AEM como un Cloud Service recomienda usar los tres niveles descritos anteriormente.
 
-AEM Los niveles de registro se establecen por tipo de entorno mediante la configuración OSGi, que a su vez se asignan a Git, y se implementan mediante Cloud Manager para AEM como Cloud Service. Debido a esto, lo mejor es mantener las declaraciones de registro coherentes y bien conocidas para los tipos de entornos, a fin de garantizar que los registros disponibles a través de AEM, como Cloud Service, estén disponibles en el nivel de registro óptimo sin necesidad de reimplementar la aplicación con la configuración de nivel de registro actualizada.
+AEM Los niveles de registro se establecen por tipo de entorno mediante la configuración OSGi, que a su vez se asignan a Git, y se implementan mediante Cloud Manager para AEM como Cloud Service. Debido a esto, lo mejor es mantener las declaraciones de registro coherentes y bien conocidas para los tipos de entornos, a fin de garantizar que los registros disponibles a través de AEM como Cloud Service estén disponibles en el nivel de registro óptimo sin necesidad de reimplementar la aplicación con la configuración actualizada del nivel de registro.
 
 **Ejemplo de salida de registro**
 
@@ -319,11 +319,11 @@ AEM como Cloud Service proporciona tres registros para los servidores web Apache
 
 Tenga en cuenta que estos registros solo están disponibles para el nivel Publicar.
 
-Este conjunto de registros proporciona perspectivas sobre las solicitudes HTTP al AEM como un nivel de publicación Cloud Service antes de que dichas solicitudes lleguen a la aplicación AEM. Esto es importante de comprender, ya que, idealmente, la mayoría de las solicitudes HTTP a los servidores del nivel Publicar se proporcionan con contenido almacenado en caché por el servidor web Apache HTTPD y AEM Dispatcher, y nunca llegan a la aplicación AEM misma. Por lo tanto, no hay instrucciones de registro para estas solicitudes en los registros de Java, solicitud o acceso AEM.
+Este conjunto de registros proporciona perspectivas sobre las solicitudes HTTP al AEM como un nivel de publicación Cloud Service antes de que dichas solicitudes lleguen a la aplicación AEM. Esto es importante de comprender, ya que, idealmente, la mayoría de las solicitudes HTTP a los servidores del nivel Publicar se proporcionan con contenido almacenado en caché por Apache HTTPD Web Server y AEM Dispatcher, y nunca llegan a la aplicación AEM misma. Por lo tanto, no hay instrucciones de registro para estas solicitudes en los registros de Java, solicitud o acceso AEM.
 
 ### Registro de acceso al servidor web Apache HTTPD {#apache-httpd-web-server-access-log}
 
-El registro de acceso al servidor web Apache HTTP proporciona instrucciones para cada solicitud HTTP que llega al servidor web o Dispatcher del nivel de publicación. Tenga en cuenta que las solicitudes que se proporcionan desde una CDN de flujo ascendente no se reflejan en estos registros.
+El registro de acceso al servidor web HTTP Apache proporciona instrucciones para cada solicitud HTTP que llega al servidor web o al despachante del nivel de publicación. Tenga en cuenta que las solicitudes que se proporcionan desde una CDN de flujo ascendente no se reflejan en estos registros.
 
 Consulte la información sobre el formato de registro de errores en la documentación [](https://httpd.apache.org/docs/2.4/logs.html#accesslog)oficial de apache.
 
@@ -392,7 +392,7 @@ Este registro no se puede configurar en AEM como Cloud Service.
 
 ## Registro de errores del servidor web Apache HTTPD {#apache-httpd-web-server-error-log}
 
-El registro de errores de Apache HTTP Web Server proporciona instrucciones para cada error en el servidor Web de la capa Publicar/Dispatcher.
+El registro de errores del servidor web HTTP Apache proporciona instrucciones para cada error en el servidor web o distribuidor del nivel de publicación.
 
 Consulte la información sobre el formato de registro de errores en la documentación [](https://httpd.apache.org/docs/2.4/logs.html#errorlog)oficial de apache.
 
@@ -413,7 +413,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <td>Jul. vie. 17 02:16:42.608913 2020</td>
 </tr>
 <tr>
-<td>Nivel de Evento</td>
+<td>Nivel de evento</td>
 <td>[mpm_worker:notice]</td>
 </tr>
 <tr>
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Registro de Dispatcher {#dispatcher-log}
+## Registro del despachante {#dispatcher-log}
 
 **Ejemplo**
 
@@ -515,7 +515,7 @@ Los niveles de registro del despachante están definidos por la variable DISP_LO
 
 Se puede establecer en Error, Advertir, Información, Depurar y Rastrear1, con un valor predeterminado de Advertir.
 
-Aunque el registro de Dispatcher admite otros niveles de granularidad de registro, el AEM como Cloud Service recomienda usar los niveles que se describen a continuación.
+Aunque el registro de Dispatcher admite varios otros niveles de granularidad de registro, el AEM como Cloud Service recomienda usar los niveles que se describen a continuación.
 
 Para establecer el nivel de registro por entorno, utilice la rama condicional adecuada en el `global.var` archivo, como se describe a continuación:
 
@@ -550,7 +550,7 @@ Los registros de AEM se encuentran en la carpeta `crx-quickstart/logs`, donde se
 * Registro de solicitud HTTP AEM: `request.log`
 * Registro de acceso HTTP AEM: `access.log`
 
-Los registros de capas de Apache, incluido el despachante, se encuentran en el contenedor de Docker que alberga el Dispatcher. Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher para obtener información sobre cómo realizar el inicio de Dispatcher.
+Los registros de capas de Apache, incluido el despachante, se encuentran en el contenedor de Docker que contiene el despachante. Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) Dispatcher para obtener información sobre cómo inicio del despachante.
 
 Para recuperar los registros:
 
@@ -588,7 +588,7 @@ El ancho de banda de red asociado con los registros enviados a Splunk se conside
 
 En la solicitud de soporte, los clientes deben indicar:
 
-* El host Splunk
+* Dirección del extremo HEC del fragmento
 * El índice Splunk
 * El puerto Splunk
 * El token HEC del fragmento. Consulte [esta página](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obtener más información.
@@ -603,21 +603,21 @@ A continuación encontrará una muestra de la solicitud de asistencia al cliente
 
 Programa 123, Env de producción
 
-* Host de fragmento: `splunk-hec-ext.acme.com`
+* Dirección del extremo HEC del fragmento: `splunk-hec-ext.acme.com`
 * Índice de fragmentos: acme_123prod (el cliente puede elegir la convención de nombres que desee)
 * Puerto de fragmento: 443
 * Distintivo HEC de fragmento: ABC123
 
 Programa 123, Etapa Env
 
-* Host de fragmento: `splunk-hec-ext.acme.com`
+* Dirección del extremo HEC del fragmento: `splunk-hec-ext.acme.com`
 * Índice de fragmentos: acme_123stage
 * Puerto de fragmento: 443
 * Distintivo HEC de fragmento: ABC123
 
 Programa 123, Dev Envs
 
-* Host de fragmento: `splunk-hec-ext.acme.com`
+* Dirección del extremo HEC del fragmento: `splunk-hec-ext.acme.com`
 * Índice de fragmentos: acme_123dev
 * Puerto de fragmento: 443
 * Distintivo HEC de fragmento: ABC123
