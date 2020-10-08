@@ -1,8 +1,8 @@
 ---
-title: Inicio de sesión por primera vez - Servicio de nube
-description: Inicio de sesión por primera vez - Servicio de nube
+title: 'Inicio de sesión por primera vez: Cloud Service'
+description: 'Inicio de sesión por primera vez: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], v
 
 >[!NOTE]
 >
->Los Programas que se encuentran en el servicio de nube se indican con el subtítulo **Experience Manager Cloud** (en lugar de con los programas de **Experience Manager** para AMS), como se muestra a continuación.
+>Los programas que se encuentran en el Cloud Service se indican mediante el subtítulo **Experience Manager Cloud** (a diferencia de los programas **Experience Manager** para AMS), como se muestra a continuación.
 
 ![](assets/first_timelogin1.png)
 
@@ -33,23 +33,23 @@ En función de sus circunstancias, verá cualquiera de las dos opciones:
 
 * **No existen programas en Cloud Manager**
 
-* **Ya existen Programas en Cloud Manager**
+* **Ya existen programas en Cloud Manager**
 
-## Añadir un nuevo Programa en el servicio de nube sin Programas existentes {#no-program}
+## Añadir un nuevo Programa en Cloud Service sin Programas existentes {#no-program}
 
 
 La página de aterrizaje le indica que cree su primer programa, como se muestra en la figura siguiente.
 ![](assets/first_timelogin0.png)
 
 
-## Añadir un nuevo Programa en el servicio de nube con Programas existentes {#existing-program}
+## Añadir un nuevo Programa en Cloud Service con Programas existentes {#existing-program}
 
 
-1. Inicie sesión en **Adobe[!UICONTROL Experience Cloud ]**y verá la lista de**Programas y productos **.
+1. Inicie sesión en el **Adobe[!UICONTROL Experience Cloud]** y verá la lista de **Programas y productos**.
 
    ![](assets/first_timelogin1.png)
 
-   Los Programas que se encuentran en el servicio de nube se indican con el subtítulo **Experience Manager Cloud** (a diferencia de los programas de **Experience Manager** para AMS).
+   Los programas que se encuentran en el Cloud Service se indican mediante el subtítulo **Experience Manager Cloud** (a diferencia de los programas **Experience Manager** para AMS).
 
    >[!NOTE]
    >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
