@@ -2,7 +2,7 @@
 title: Banner de carrusel
 description: Aprenda a trabajar con letreros de carrusel en Dynamic Media
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 4%
@@ -242,7 +242,8 @@ Consulte Fragmento [de experiencias](/help/sites-cloud/authoring/fundamentals/ex
 >[!NOTE]
 >
 >Tenga en cuenta que las herramientas de uso compartido en medios sociales de la pancarta de carrusel no son compatibles cuando incrusta el visor en un fragmento de experiencia.
-Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+>
+>Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
 
 Cuando agregue zonas interactivas o mapas de imagen a una imagen, recuerde guardar el trabajo. Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -292,6 +293,7 @@ Si está editando imágenes interactivas con zonas interactivas y recortando la 
    * Toque **[!UICONTROL Hipervínculo]**.
 
       * Si es cliente de AEM Sites, toque el icono (carpeta) Selector de sitio para navegar a una dirección URL.
+
          >[!NOTE]
          El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
@@ -310,7 +312,7 @@ Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/e
 
          >[!NOTE]
          Tenga en cuenta que las herramientas de uso compartido en medios sociales de la pancarta de carrusel no son compatibles cuando incrusta el visor en un fragmento de experiencia.
-Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+         Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    También puede realizar una previsualización del aspecto que tendrá la pancarta de carrusel. Consulte [(Opcional) Vista previa de letreros](#optional-previewing-carousel-banners)de carrusel.
