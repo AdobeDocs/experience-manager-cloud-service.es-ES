@@ -4,9 +4,9 @@ description: Obtenga información sobre los tipos de metadatos y [!DNL Adobe Exp
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1932'
 ht-degree: 4%
 
 ---
@@ -213,7 +213,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
 * PDF y PDF/X: Adobe PDF y aplicaciones de terceros.
-* PRISM: requisitos de [publicación para metadatos](https://www.prismstandard.org)estándar del sector.
+* PRISM: requisitos de [publicación para metadatos](https://www.idealliance.org/prism-metadata)estándar del sector.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadatos para texto paginado.
 
