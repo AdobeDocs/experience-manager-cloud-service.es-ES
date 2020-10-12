@@ -2,7 +2,7 @@
 title: SPA y procesamiento del lado del servidor
 description: El uso de la representación del lado del servidor (SSR) en el SPA puede acelerar la carga inicial de la página y, a continuación, pasar una representación posterior al cliente.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Ambos modelos son válidos y son compatibles con AEM. Sin embargo, hay que tener
     </ul> </td>
    <td>
     <ul>
-     <li>Los recursos de la biblioteca de clientes requeridos por la aplicación, como CSS y JavaScript, deberán estar disponibles para el desarrollador de AEM mediante la <code>allowProxy</code> propiedad<br /> </li>
+     <li>Los recursos de la biblioteca de clientes requeridos por la aplicación, como CSS y JavaScript, deberán estar disponibles para el desarrollador de AEM mediante la <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> propiedad<br /> </li>
      <li>Los recursos deben sincronizarse entre AEM y Adobe I/O Runtime<br /> </li>
      <li>Para habilitar la creación de SPA, puede ser necesario un servidor proxy para Adobe I/O Runtime</li>
     </ul> </td>
