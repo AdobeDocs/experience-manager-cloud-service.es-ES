@@ -93,9 +93,10 @@ Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el n
 ## (Opcional) Identificación de variables de Quickview {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Esta tarea solo es necesaria si se cumple lo siguiente:
-* Desea agregar interactividad al vídeo activando las vistas rápidas.
-* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos a AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, hibris o intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+>
+>Esta tarea solo es necesaria si se cumple lo siguiente:
+>* Desea agregar interactividad al vídeo activando las vistas rápidas.
+>* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos a AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, hibris o intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 Si la implementación de AEM utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente tarea.
 
@@ -256,10 +257,12 @@ Después de agregar segmentos de línea de tiempo, agregue imágenes en miniatur
 Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+>
+>Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
 
 >[!NOTE]
-El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
+>
+>El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -480,7 +483,8 @@ Para añadir interactividad al vídeo:
    Cuando haya terminado, toque **[!UICONTROL Guardar]**.
 
    >[!NOTE]
-   Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo de `.vtt`se guarda en la carpeta `_VTT` situada en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
+   >
+   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo de `.vtt`se guarda en la carpeta `_VTT` situada en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
 
 1. Publique el vídeo interactivo. La publicación crea el código incrustado o la dirección URL que, finalmente, copiará y pegará en las experiencias del sitio web.
 
@@ -489,7 +493,8 @@ Para añadir interactividad al vídeo:
    Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
+   >
+   >Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
 
    Después de agregar segmentos de línea de tiempo y publicar el vídeo interactivo, estará listo para agregarlo a la página de aterrizaje de sitio web existente. Consulte [Integración de vídeos interactivos con el sitio web.](#integrating-an-interactive-video-with-your-website)
 
@@ -514,8 +519,9 @@ Si ha añadido interactividad con las vistas de preguntas y respuestas rápidas,
 El código incrustado copiado se establece para un entorno interactivo, por lo que debe ajustarse automáticamente al área ocupada anteriormente por el vídeo estático.
 
 >[!NOTE]
-En este punto, si ha agregado interactividad solo con páginas web con hipervínculos, ya no estará.
-Sin embargo, si ha agregado interactividad para activar una vista rápida, las miniaturas adyacentes al vídeo interactivo solo se muestran con fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas de ciclo de vida existentes en su sitio web.
+>
+>En este punto, si ha agregado interactividad solo con páginas web con hipervínculos, ya no estará.
+>Sin embargo, si ha agregado interactividad para activar una vista rápida, las miniaturas adyacentes al vídeo interactivo solo se muestran con fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas de ciclo de vida existentes en su sitio web.
 
 **Ejemplo**
 
@@ -557,7 +563,8 @@ La integración es tan sencilla como eliminar el código incrustado de vídeo y 
 ## Integración de un vídeo interactivo con una vista rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Esta tarea solo se aplica si es cliente independiente de AEM Assets.
+>
+>Esta tarea solo se aplica si es cliente independiente de AEM Assets.
 
 El último paso de este proceso es integrar el vídeo interactivo con una implementación de vista rápida existente que se utiliza en el sitio web. No existe una solución para la integración que funcione en todos los casos. Cada implementación de QuickView es única. Como tal, se necesita un enfoque específico que muy probablemente implique la asistencia de una persona de TI de primer nivel.
 

@@ -97,10 +97,11 @@ El modelo de fragmento de contenido define eficazmente la estructura de los frag
    ![propiedades de campo](assets/cfm-models-05.png)
 
    >[!NOTE]
-   Para el tipo de datos **Texto multilínea** es posible definir el **tipo predeterminado** como:
-   * **Texto enriquecido**
-   * **Markdown**
-   * **Texto sin formato**
+   >
+   >Para el tipo de datos **Texto multilínea** es posible definir el **tipo predeterminado** como:
+   >* **Texto enriquecido**
+   >* **Markdown**
+   >* **Texto sin formato**
 
    Si no se especifica, se utiliza el valor predeterminado **Texto** enriquecido para este campo.
    Cambiar el **tipo predeterminado** en un modelo de fragmento de contenido solo surtirá efecto en un fragmento de contenido existente relacionado después de que dicho fragmento se abra en el editor y se guarde.
@@ -118,7 +119,8 @@ El modelo de fragmento de contenido define eficazmente la estructura de los frag
 ## Eliminación de un modelo de fragmento de contenido {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
-La eliminación de un modelo de fragmento de contenido puede afectar a los fragmentos dependientes.
+>
+>La eliminación de un modelo de fragmento de contenido puede afectar a los fragmentos dependientes.
 
 Para eliminar un modelo de fragmento de contenido:
 
@@ -128,7 +130,8 @@ Para eliminar un modelo de fragmento de contenido:
 1. Seleccione el modelo, seguido de **Eliminar** de la barra de herramientas.
 
    >[!NOTE]
-   Si se hace referencia al modelo, se mostrará una advertencia. Tome las medidas adecuadas.
+   >
+   >Si se hace referencia al modelo, se mostrará una advertencia. Tome las medidas adecuadas.
 
 ## Publicación de un modelo de fragmento de contenido {#publishing-a-content-fragment-model}
 
@@ -142,4 +145,5 @@ Para publicar un modelo de fragmento de contenido:
 1. Seleccione el modelo, seguido de **Publicar** en la barra de herramientas.
 
    >[!NOTE]
-   Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
+   >
+   >Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.

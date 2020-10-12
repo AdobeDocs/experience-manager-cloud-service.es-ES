@@ -146,7 +146,8 @@ Debe iniciar la solicitud para utilizar imágenes inteligentes; no se habilita a
 Las solicitudes se procesan en el orden en que son recibidas por la asistencia técnica, según la Lista de espera.
 
 >[!NOTE]
-Puede haber un largo tiempo de espera, ya que la activación de las imágenes inteligentes implica que Adobe borre la caché. Por lo tanto, sólo se pueden gestionar unas pocas transiciones de clientes en un momento dado.
+>
+>Puede haber un largo tiempo de espera, ya que la activación de las imágenes inteligentes implica que Adobe borre la caché. Por lo tanto, sólo se pueden gestionar unas pocas transiciones de clientes en un momento dado.
 
 ## ¿Cuáles son los riesgos de pasar a utilizar las imágenes inteligentes? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -168,7 +169,8 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 1. Repita esta prueba en diferentes exploradores y condiciones de usuario.
 
 >[!NOTE]
-No se convierten todas las imágenes. La imagen inteligente decide si la conversión es necesaria para mejorar el rendimiento. En algunos casos, cuando no hay una ganancia de rendimiento esperada o el formato no es JPEG o PNG, la imagen no se convierte.
+>
+>No se convierten todas las imágenes. La imagen inteligente decide si la conversión es necesaria para mejorar el rendimiento. En algunos casos, cuando no hay una ganancia de rendimiento esperada o el formato no es JPEG o PNG, la imagen no se convierte.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
