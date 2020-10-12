@@ -2,7 +2,7 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 13%
@@ -63,7 +63,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 + El `ui.apps` paquete contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del `ui.apps` paquete incluyen, entre otros:
    + [Definiciones de componentes y secuencias de comandos HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
       + `/apps/my-app/components`
-   + JavaScript y CSS (a través de bibliotecas de clientes)
+   + JavaScript y CSS (a través de [bibliotecas](/help/implementing/developing/introduction/clientlibs.md)de cliente)
       + `/apps/my-app/clientlibs`
    + [Superposiciones](/help/implementing/developing/introduction/overlays.md) de `/libs`
       + `/apps/cq`, `/apps/dam/`, etc.
