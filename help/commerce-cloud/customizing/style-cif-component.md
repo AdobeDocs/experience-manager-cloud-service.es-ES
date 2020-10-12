@@ -10,10 +10,10 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 34%
+source-wordcount: '2592'
+ht-degree: 33%
 
 ---
 
@@ -67,7 +67,7 @@ Clonaremos el proyecto [Venia](https://github.com/adobe/aem-cif-guides-venia) y 
 
 ## Bibliotecas de clientes y módulo ui.frontender {#introduction-to-client-libraries}
 
-CSS y JavaScript responsables de procesar el tema o los estilos de la tienda se gestionan en AEM en una [biblioteca de cliente](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html) o clientlibs para abreviar. Las bibliotecas de cliente proporcionan un mecanismo para organizar CSS y Javascript en el código de un proyecto y luego distribuirlas en la página.
+CSS y JavaScript responsables de procesar el tema o los estilos de la tienda se gestionan en AEM en una [biblioteca de cliente](/help/implementing/developing/introduction/clientlibs.md) o clientlibs para abreviar. Las bibliotecas de cliente proporcionan un mecanismo para organizar CSS y Javascript en el código de un proyecto y luego distribuirlas en la página.
 
 Los estilos específicos de la marca se pueden aplicar a AEM componentes principales de CIF añadiendo y anulando la CSS gestionada por estas bibliotecas de clientes. Es fundamental comprender cómo se estructuran e incluyen las bibliotecas de cliente en la página.
 
@@ -77,7 +77,7 @@ El `ui.frontend` módulo es también un módulo Maven e integrado con el proyect
 
 ![ui.frontender a la arquitectura ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*CSS y Javascript compilados se copian del`ui.frontend`módulo en el`ui.apps`módulo como una biblioteca de cliente durante una compilación de Maven*
+*CSS y Javascript compilados se copian del `ui.frontend` módulo en el `ui.apps` módulo como una biblioteca de cliente durante una compilación de Maven*
 
 ## Actualizar el estilo de teaser {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ Luego verifique la inclusión de las bibliotecas de cliente en la página.
    </html>
    ```
 
-   Las bibliotecas de clientes que se entregan a la página llevan el prefijo `/etc.clientlibs` y se proporcionan a través de un [proxy](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) para evitar exponer cualquier elemento sensible en `/apps` o `/libs`.
+   Las bibliotecas de clientes que se entregan a la página llevan el prefijo `/etc.clientlibs` y se proporcionan a través de un [proxy](/help/implementing/developing/introduction/clientlibs.md) para evitar exponer cualquier elemento sensible en `/apps` o `/libs`.
 
    Aviso `venia/clientlibs/clientlib-site.min.css` y `venia/clientlibs/clientlib-site.min.js`. Estos son los archivos CSS y Javascript compilados derivados del `ui.frontend` módulo.
 
@@ -482,6 +482,6 @@ Utilice el [sistema de estilos de AEM](https://docs.adobe.com/content/help/es-ES
 * [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
 * [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
 * [Configuración de un Entorno de desarrollo de AEM local](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Bibliotecas de cliente](https://docs.adobe.com/content/help/es-ES/experience-manager-65/developing/introduction/clientlibs.html)
+* [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md)
 * [Introducción a AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Desarrollo con el sistema de estilos](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
