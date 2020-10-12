@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 8%
 
 ---
@@ -115,8 +115,8 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 >La biblioteca de cliente del editor asume la presencia de la `cq.shared` Área de nombres en las páginas de contenido y, si no se encuentra, se `Uncaught TypeError: Cannot read property 'shared' of undefined` producirá el error de JavaScript.
 >
 >Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir la `cq.shared` Área de nombres.
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>Consulte [Uso de bibliotecas](/help/implementing/developing/introduction/clientlibs.md) del lado del cliente para obtener más información.
 
 >[!CAUTION]
 >
