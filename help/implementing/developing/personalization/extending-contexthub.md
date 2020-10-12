@@ -2,7 +2,7 @@
 title: Ampliación de ContextHub
 description: Defina nuevos tipos de almacenes y módulos de ContextHub cuando los proporcionados no cumplan con los requisitos de la solución
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -18,9 +18,7 @@ Defina nuevos tipos de almacenes y módulos de ContextHub cuando los proporciona
 
 Las tiendas de ContextHub se crean a partir de los candidatos de las tiendas registradas. Para crear una tienda personalizada, debe crear y registrar un candidato a la tienda.
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-El archivo javascript que incluye el código que crea y registra al candidato de la tienda debe incluirse en una carpeta de la biblioteca del cliente. La categoría de la carpeta debe coincidir con el siguiente patrón:
+El archivo javascript que incluye el código que crea y registra al candidato de la tienda debe incluirse en una carpeta [de biblioteca de](/help/implementing/developing/introduction/clientlibs.md)cliente. La categoría de la carpeta debe coincidir con el siguiente patrón:
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ Cree y registre la clase de procesador en una función anónima de ejecución au
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-El archivo javascript que incluye el código que crea y registra el procesador debe incluirse en una carpeta de la biblioteca del cliente. La categoría de la carpeta debe coincidir con el siguiente patrón:
+El archivo javascript que incluye el código que crea y registra el procesador debe incluirse en una carpeta [de biblioteca de](/help/implementing/developing/introduction/clientlibs.md)cliente. La categoría de la carpeta debe coincidir con el siguiente patrón:
 
 ```javascript
 contexthub.module.[moduleType]
