@@ -2,9 +2,9 @@
 title: Perfiles de imagen de Dynamic Media
 description: Cree Perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 11%
 
 ---
@@ -16,7 +16,7 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 >[!IMPORTANT]
 >
->Los perfiles de imagen no son aplicables a archivos PDF, GIF o INDD (Adobe InDesign).
+>Los perfiles de imagen no son aplicables a archivos PDF, GIF animado o INDD (Adobe InDesign).
 
 ## Crop options {#crop-options}
 
