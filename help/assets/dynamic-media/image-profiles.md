@@ -1,10 +1,10 @@
 ---
 title: Perfiles de imagen de Dynamic Media
-description: Cree Perfiles de imagen de Dynamic Media que contengan la configuración de máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
+description: Cree Perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2737'
 ht-degree: 11%
 
 ---
@@ -16,13 +16,13 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 >[!IMPORTANT]
 >
->Los perfiles de imagen no son aplicables a los archivos PDF.
+>Los perfiles de imagen no son aplicables a archivos PDF, GIF o INDD (Adobe InDesign).
 
 ## Crop options {#crop-options}
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un Perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el Perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda utilizar el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el Perfil de imágenes.
+Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un Perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el Perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda que utilice el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el Perfil de imágenes.
 
 Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Como puede aplicar recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
 
@@ -38,7 +38,7 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
   <tr>
    <td>Recorte de píxeles</td>
    <td>Recorte masivo de imágenes solo en función de las dimensiones.</td>
-   <td><p>Para utilizar esta opción, seleccione Recorte de <strong>píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar de los lados de una imagen, introduzca el número de píxeles que recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorte depende del ajuste ppp (píxeles por pulgada) del archivo de imagen.</p> <p>El recorte de píxeles de un Perfil de imagen se representa de la siguiente manera:<br /> </p>
+   <td><p>Para utilizar esta opción, seleccione Recorte de <strong>píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar de los lados de una imagen, introduzca el número de píxeles que recortar de cualquier lado o de cada lado de la imagen. La cantidad de imagen que se recorta depende de la configuración de ppp (píxeles por pulgada) en el archivo de imagen.</p> <p>El recorte de píxeles de un Perfil de imagen se representa de la siguiente manera:<br /> </p>
     <ul>
      <li>Los valores son Superior, Inferior, Izquierda y Derecha.</li>
      <li>La parte superior izquierda se considera 0,0 y el recorte de píxeles se calcula a partir de ahí.</li>
@@ -55,7 +55,7 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
   <tr>
    <td>Muestra de color e imagen</td>
    <td>Genera de forma masiva una muestra de imagen para cada imagen.</td>
-   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione Recorte <strong>inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los letreros de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una <code>req=userdata</code> solicitud con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la <code>req=userdata</code> URL correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> respuesta es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione Recorte <strong>inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización de la muestra utilizada en las pancartas de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una <code>req=userdata</code> solicitud con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la <code>req=userdata</code> URL correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La <code>req=userdata</code> respuesta es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -167,7 +167,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 ### Aplicación global de un Perfil de imagen de Dynamic Media {#applying-an-image-profile-globally}
 
-Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de AEM de cualquier carpeta tenga el perfil seleccionado aplicado.
+Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en AEM recursos de cualquier carpeta tenga el perfil seleccionado aplicado.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
@@ -179,7 +179,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
-   * Vaya a CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`.
+   * Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`.
 
       Añada la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y toque **[!UICONTROL Guardar todo]**.
 
@@ -279,7 +279,7 @@ You can remove an Image Profile from a folder from within the **[!UICONTROL Tool
 
 ### Eliminación de Perfiles de imagen de Dynamic Media de las carpetas mediante Propiedades {#removing-image-profiles-from-folders-via-properties}
 
-1. Toque el logotipo de AEM, desplácese por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desea quitar un Perfil de imagen.
+1. Toque el logotipo de AEM, navegue por **[!UICONTROL Recursos]** y, a continuación, por la carpeta desde la que desee quitar un Perfil de imagen.
 1. En la carpeta, toque la marca de verificación para seleccionarla y, a continuación, **[!UICONTROL Propiedades]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
 1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
