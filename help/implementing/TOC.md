@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -62,20 +62,20 @@ ht-degree: 66%
    + [Sin cabezal e híbrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activación de la exportación de JSON para un componente](developing/components/enabling-json-exporter.md)
    + Aplicaciones de una sola página {#spa}
-      + [Introducción y tutoriales de SPA](developing/spa/introduction.md)
-      + [Tutorial de WKND de SPA](developing/spa/wknd-tutorial.md)
+      + [SPA Introducción y Tutorial](developing/spa/introduction.md)
+      + [Tutorial de SPA WKND](developing/spa/wknd-tutorial.md)
       + [Introducción a React](developing/spa/getting-started-react.md)
       + [Introducción a Angular](developing/spa/getting-started-angular.md)
-      + [Buceos profundos de SPA](developing/spa/deep-dives.md)
+      + [SPA buzos profundos](developing/spa/deep-dives.md)
       + [Desarrollo de SPA para AEM](developing/spa/developing.md)
       + [Información general del editor de SPA](developing/spa/editor-overview.md)
-      + [Modelo SPA](developing/spa/blueprint.md)
-      + [Componente de página de SPA](developing/spa/page-component.md)
+      + [SPA modelo](developing/spa/blueprint.md)
+      + [Componente de página SPA](developing/spa/page-component.md)
       + [Asignación dinámica de modelos a componentes](developing/spa/model-to-component-mapping.md)
       + [Enrutamiento de modelo](developing/spa/routing.md)
       + [Iniciar integración](developing/spa/launch-integration.md)
       + [Representación del lado del servidor](developing/spa/ssr.md)
-      + [Documentos de referencia de SPA](developing/spa/reference-materials.md)
+      + [documentos de referencia de SPA](developing/spa/reference-materials.md)
 + Personalización {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [Configuración de ContextHub](developing/personalization/configuring-contexthub.md)
