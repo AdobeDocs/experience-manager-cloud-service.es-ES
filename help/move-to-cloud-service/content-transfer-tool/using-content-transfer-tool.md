@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 79%
+source-wordcount: '1710'
+ht-degree: 78%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 79%
 En la sección siguiente se comprenden las consideraciones importantes al ejecutar la herramienta de transferencia de contenido:
 
 * El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3+ y JAVA 8. Si dispone de una versión anterior de AEM, deberá actualizar el repositorio de contenido a AEM 6.5 para usar la herramienta de transferencia de contenido.
+
+* Java debe configurarse en el entorno de AEM para que el `java` comando pueda ser ejecutado por el usuario que AEM inicio.
 
 * La herramienta de transferencia de contenido se puede utilizar con los siguientes tipos de almacén de datos: Almacén de datos de archivos, almacén de datos S3, almacén de datos compartido S3 y almacén de datos del almacén de blob de Azure.
 
