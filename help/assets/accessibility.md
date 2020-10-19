@@ -3,9 +3,9 @@ title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Saber cómo las funciones de accesibilidad [!DNL Adobe Experience Manager] inas a un Cloud Service ayudan a los usuarios con discapacidades.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en l
 
 ### Métodos abreviados de teclado en Recursos {#keyboard-shortcuts}
 
-Las siguientes acciones en Recursos funcionan con los métodos abreviados de teclado enumerados. La mayoría de los métodos abreviados de teclado que se aplican a las [!DNL Experience Manager] consolas también se aplican a los recursos. See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). Consulte cómo [habilitar o deshabilitar los métodos abreviados](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)de teclado.
+Las siguientes acciones en Recursos funcionan con los métodos abreviados de teclado enumerados. La mayoría de los métodos abreviados de teclado que se aplican a las [!DNL Experience Manager] consolas también se aplican a los recursos. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). Consulte cómo [habilitar o deshabilitar los métodos abreviados](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)de teclado.
 
 | Interfaz de usuario o escenario | Método abreviado de teclado | Acción |
 |---|---|---|
@@ -192,7 +192,7 @@ Al filtrar los resultados de búsqueda:
 
 ## Compartir recursos {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 Al compartir recursos, las siguientes funciones mejoran la accesibilidad:
