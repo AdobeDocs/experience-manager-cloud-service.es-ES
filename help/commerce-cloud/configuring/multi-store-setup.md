@@ -1,11 +1,11 @@
 ---
 title: Configuración de varias tiendas
 description: Configuración de varias tiendas
-translation-type: ht
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ Los componentes principales del CIF de AEM se pueden utilizar en varias estructu
 
 Un tutorial en vídeo que detalla las opciones para integrar varias vistas de la tienda de Magento con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 Las funciones de administración de varios sitios de AEM de Live Copy y de copia de idioma se utilizan junto con Commerce Integration Framework para administrar globalmente los sitios en las regiones y las configuraciones regionales.
 
@@ -32,7 +32,7 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * En AEM vaya a Herramientas -> General -> Explorador de configuración
+   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado.
    * Cree una nueva configuración siguiendo los pasos descritos en el punto 2 anterior.
 
