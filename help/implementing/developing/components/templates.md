@@ -2,7 +2,7 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -156,7 +156,7 @@ Se crea una lista de todas las entradas permitidas. Si alguna configuración se 
 Para crear una nueva carpeta, puede hacer lo siguiente:
 
 * Programáticamente o con CRXDE Lite
-* Uso del navegador de configuración
+* Uso del explorador [de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Uso de CRXDE Lite {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ Para crear una nueva carpeta, puede hacer lo siguiente:
 
 ### Uso del navegador de configuración {#using-the-configuration-browser}
 
-1. Vaya a Navegación **** global -> **Herramientas** > Navegador **** de configuración.
+1. Vaya a Navegación **** global -> **Herramientas** > Navegador [**** de configuración.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    Las carpetas existentes se muestran a la izquierda, incluida la `global` carpeta.
 
@@ -203,7 +203,7 @@ Para crear una nueva carpeta, puede hacer lo siguiente:
 
 >[!NOTE]
 >
->En el navegador de configuración, puede editar la carpeta global y activar la opción Plantillas **** editables si desea crear plantillas dentro de esta carpeta, aunque no se recomienda hacerlo.
+>En el Explorador [de configuración,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) puede editar la carpeta global y activar la opción Plantillas **** editables si desea crear plantillas dentro de esta carpeta, aunque no se recomienda hacerlo.
 
 ### ACL y grupos {#acls-and-groups}
 
