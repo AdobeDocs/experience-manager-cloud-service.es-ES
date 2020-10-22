@@ -2,9 +2,9 @@
 title: Conceptos de creación
 description: Conceptos sobre la creación de contenido en AEM
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -27,10 +27,6 @@ El entorno de creación ofrece mecanismos para crear, actualizar y revisar el co
 ![Diagrama del creador, el editor y los distribuidores](/help/sites-cloud/authoring/assets/author-publish.png)
 
 En el entorno de creación, las funciones de AEM están disponibles mediante la IU de creación de AEM. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
-
->[!NOTE]
->
->AEM se utiliza para publicar la documentación de AEM.
 
 ## Entorno de creación {#author-environment}
 
@@ -65,4 +61,4 @@ Para obtener más información sobre la publicación y cancelación de publicaci
 
 ## Dispatcher {#dispatcher}
 
-A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](/help/implementing/dispatcher/overview.md)**implementa almacenamiento en caché y equilibrio de carga.
+A fin de optimizar el rendimiento para los usuarios que visiten su sitio web, **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa almacenamiento en caché y equilibrio de carga.
