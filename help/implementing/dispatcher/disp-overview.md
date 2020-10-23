@@ -2,9 +2,9 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4082'
 ht-degree: 9%
 
 ---
@@ -34,18 +34,19 @@ Las herramientas de Dispatcher forman parte del AEM general como SDK de Cloud Se
 
 ## Descarga y extracción de las herramientas {#extracting-the-sdk}
 
-Las Herramientas de Dispatcher se pueden descargar desde un archivo zip en el portal de distribución [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con AEM Managed Services o AEM como entornos de Cloud Service. Cualquier nueva configuración disponible en esa nueva versión de herramientas de distribuidor se puede utilizar para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
+Las herramientas de Dispatcher, que forman parte del [AEM como SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)de Cloud Service, se pueden descargar desde un archivo zip en el portal de distribución [de](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) software. Cualquier nueva configuración disponible en esa nueva versión de herramientas de distribuidor puede utilizarse para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdDescomprima el SDK, que agrupa las herramientas del despachante tanto para macOS/Linux como para Windows.
 
-**Para macOS y Linux**, descargue la secuencia de comandos shell en una carpeta de su equipo, haga que sea ejecutable y ejecútela. Se extraerán los archivos de herramientas de despachante debajo del directorio en el que se almacenó (donde `version` es la versión de las herramientas de despachante).
+**Para macOS/Linux**, haga ejecutable el artefacto de la herramienta dispatcher y ejecútelo. Se extraerán los archivos de herramientas de despachante debajo del directorio en el que se almacenó (donde `version` es la versión de las herramientas de despachante).
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Para Windows**, descargue el archivo zip y extráigalo.
+**Para Windows**, extraiga el archivo zip Dispatcher Tooling.
 
 ## Estructura de archivos {#file-structure}
 
@@ -379,7 +380,7 @@ La secuencia de comandos hace lo siguiente:
 
 También es posible probar la configuración local de Apache y Dispatcher. Requiere que el acoplador se instale localmente y que su configuración pase la validación como se describe anteriormente.
 
-Ejecute la herramienta de validación, utilizando el parámetro &quot;`-d`&quot; que genera una carpeta con todos los archivos de configuración que necesita el despachante. A continuación, la `docker_run.sh` secuencia de comandos puede apuntar a esa carpeta. Al proporcionar el número de puerto (en el ejemplo siguiente, 8080) para exponer el extremo del despachante, se inicio el contenedor con la configuración.
+Ejecute la herramienta de validación (tenga en cuenta que es diferente de la `validator.sh` mencionada anteriormente), utilizando el `-d` parámetro que genera una carpeta con todos los archivos de configuración del despachante. A continuación, ejecute la `docker_run.sh` secuencia de comandos, pasando esa carpeta como un argumento. Proporcionando el número de puerto (aquí: 8080) para exponer el punto final del despachante, se inicia un contenedor de Docker, ejecutando el despachante con la configuración.
 
 ```
 $ validator full -d out src/dispatcher
