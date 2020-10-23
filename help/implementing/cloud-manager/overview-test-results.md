@@ -1,6 +1,6 @@
 ---
 title: '"Información general sobre los resultados de la prueba: Cloud Services"'
-description: 'Información general sobre los resultados de la prueba: Cloud Services'
+description: '"Información general sobre los resultados de la prueba: Cloud Services"'
 translation-type: tm+mt
 source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt

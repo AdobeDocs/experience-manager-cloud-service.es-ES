@@ -1,6 +1,6 @@
 ---
 title: '"Prueba funcional: Cloud Services"'
-description: 'Prueba funcional: Cloud Services'
+description: '"Prueba funcional: Cloud Services"'
 translation-type: tm+mt
 source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt

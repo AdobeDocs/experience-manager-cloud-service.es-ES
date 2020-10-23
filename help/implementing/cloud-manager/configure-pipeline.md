@@ -1,6 +1,6 @@
 ---
 title: '"Configuración de la canalización de CD/CI: Cloud Services"'
-description: 'Configuración de la canalización de CD/CI: Cloud Services'
+description: '"Configuración de la canalización de CD/CI: Cloud Services"'
 translation-type: tm+mt
 source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt

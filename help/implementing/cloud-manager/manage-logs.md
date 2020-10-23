@@ -1,6 +1,6 @@
 ---
 title: '"Administrar registros: Cloud Service"'
-description: 'Administrar registros: Cloud Service'
+description: '"Administrar registros: Cloud Service"'
 translation-type: tm+mt
 source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt

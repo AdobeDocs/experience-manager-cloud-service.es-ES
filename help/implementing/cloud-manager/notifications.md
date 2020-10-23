@@ -1,6 +1,6 @@
 ---
 title: '"Notificaciones: Cloud Service"'
-description: 'Notificaciones: Cloud Service'
+description: '"Notificaciones: Cloud Service"'
 translation-type: tm+mt
 source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
