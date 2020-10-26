@@ -2,9 +2,9 @@
 title: Usar los adaptadores de Sling
 description: Sling oferta un patrón de adaptador para traducir convenientemente objetos que implementan la interfaz adaptable
 translation-type: tm+mt
-source-git-commit: 4201207acb48ab61892f4dd5de05d7f5f9f7ba83
+source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -358,4 +358,4 @@ Aún no hay destinatarios, pero implementa Adaptable y se puede usar como fuente
 
 #### Otras {#other}
 
-Además, Sling / JCR / OCM también proporciona un ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` para objetos OCM ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)) personalizados.
+Además, Sling / JCR / OCM también proporciona un [`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory) para objetos OCM ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)) personalizados.
