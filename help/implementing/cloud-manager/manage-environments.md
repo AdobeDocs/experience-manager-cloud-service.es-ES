@@ -1,10 +1,10 @@
 ---
-title: '"Administrar Entornos: Cloud Service"'
-description: '"Administrar Entornos: Cloud Service"'
+title: 'Administrar Entornos: Cloud Service'
+description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '830'
 ht-degree: 7%
 
 ---
@@ -64,9 +64,19 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    >[!NOTE]
    >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
 
+
+### Visualización de los Entornos {#viewing-environment}
+
+La tarjeta de **Entornos** de la página Información general lista hasta tres entornos.
+
+El usuario puede seleccionar el botón **Mostrar todo** para desplazarse a la página de resumen de **Entorno** y realizar la vista de una tabla con una lista completa de entornos.
+
+![](assets/environment-view1.png)
+
+
 ## Actualizando Entorno {#updating-dev-environment}
 
-Las actualizaciones de entornos de fase y producción se administran automáticamente mediante Adobe.
+Las actualizaciones de los entornos de fase y producción se gestionan automáticamente mediante Adobe.
 
 Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible al público, el estado de la tarjeta de Entornos en la pantalla principal mostrará la **ACTUALIZACIÓN DISPONIBLE**.
 
