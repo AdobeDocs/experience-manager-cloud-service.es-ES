@@ -2,7 +2,7 @@
 title: Desarrollo y diferencia de página
 description: Comprender cómo funciona la función Diferencia de página y cómo puede afectar a un desarrollador
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 11%
@@ -30,7 +30,7 @@ Cuando se compara el contenido, todo el árbol hasta la página que comparar se 
 
 Una tarea de limpieza se ejecuta automáticamente para limpiar este contenido temporal.
 
-## Permisos    {#permissions}
+## Restricciones     {#limitations}
 
 La diferencia se produce en el lado del cliente mediante la comparación DOM, lo que simplifica el proceso de diferencias; sin embargo, hay una serie de limitaciones que el desarrollador debe tener en cuenta.
 
