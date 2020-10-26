@@ -3,9 +3,9 @@ title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Saber cómo las funciones de accesibilidad [!DNL Adobe Experience Manager] inas a un Cloud Service ayudan a los usuarios con discapacidades.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Las funciones principales de [!DNL Assets] son más accesibles que antes y se ac
 
 ## Compatibilidad con el uso del teclado {#keyboard-use}
 
-Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en los que se puede realizar una acción con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar una acción adecuada. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para activar un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y activarlos con el teclado. Por ejemplo, los usuarios pueden abrir la línea de tiempo de un recurso en el lado izquierdo navegando hasta el control de la interfaz de usuario mediante un teclado, pulsando Retorno y pulsando `alt + 2` el método abreviado de teclado.
+Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en los que se puede realizar una acción con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar una acción adecuada. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para activar un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y activarlos con el teclado. Por ejemplo, los usuarios pueden abrir la línea de tiempo de un recurso en el lado izquierdo navegando hasta el control de la interfaz de usuario mediante un teclado, pulsando `Return` y `Alt + 2` el método abreviado de teclado.
 
 <!-- TBD items:
 
