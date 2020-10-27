@@ -2,9 +2,9 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 7%
 
 ---
@@ -37,8 +37,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    >[!NOTE]
    >La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.  El usuario no podrá crear solo la fase o solo el entorno de producción.
 
-## Añadir un Entorno {#adding-environments}
-
+## Añadir Entorno {#adding-environments}
 
 1. Haga clic en **Añadir Entorno** para agregar un entorno. Se puede acceder a este botón desde la pantalla **Entornos** .
    ![](assets/environments-tab.png)
@@ -65,7 +64,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
 
 
-### Visualización de Entornos {#viewing-environment}
+## Ver Entorno {#viewing-environment}
 
 La tarjeta de **Entornos** de la página Información general lista hasta tres entornos.
 
