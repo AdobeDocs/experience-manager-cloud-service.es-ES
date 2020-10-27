@@ -1,6 +1,6 @@
 ---
-title: 'Aprovisionamiento de Entornos: lo que se necesita'
-description: 'Aprovisionamiento de Entornos: lo que se necesita'
+title: '"Aprovisionamiento de Entornos: lo que se necesita"'
+description: '"Aprovisionamiento de Entornos: lo que se necesita"'
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt

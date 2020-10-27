@@ -1,5 +1,5 @@
 ---
-title: 'Metadatos: Propiedades del fragmento'
+title: '"Metadatos: Propiedades del fragmento"'
 description: Puede vista y edición de los metadatos (propiedades) de los fragmentos de contenido.
 translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6

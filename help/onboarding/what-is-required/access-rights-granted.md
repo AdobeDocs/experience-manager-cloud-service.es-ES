@@ -1,6 +1,6 @@
 ---
-title: 'Derechos de acceso concedidos: lo que se requiere'
-description: 'Derechos de acceso concedidos: lo que se requiere'
+title: '"Derechos de acceso concedidos: lo que se requiere"'
+description: '"Derechos de acceso concedidos: lo que se requiere"'
 translation-type: tm+mt
 source-git-commit: 1511e24cbc4a845b1d7673438b8b7c4171d173e6
 workflow-type: tm+mt

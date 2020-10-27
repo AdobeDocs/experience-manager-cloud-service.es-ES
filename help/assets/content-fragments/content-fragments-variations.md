@@ -1,5 +1,5 @@
 ---
-title: 'Variaciones: Crear contenido de fragmentos'
+title: '"Variaciones: Crear contenido de fragmentos"'
 description: Las variaciones permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
 translation-type: tm+mt
 source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f

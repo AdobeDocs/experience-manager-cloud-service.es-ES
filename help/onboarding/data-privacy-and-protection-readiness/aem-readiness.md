@@ -1,5 +1,5 @@
 ---
-title: 'Regulaciones de protección de datos y privacidad de datos: Adobe Experience Manager como preparación para el servicio en la nube'
+title: '"Regulaciones de protección de datos y privacidad de datos: Adobe Experience Manager como preparación para el servicio en la nube"'
 description: 'Obtenga información sobre la compatibilidad de Adobe Experience Manager como servicio de nube para las distintas normativas de protección de datos y privacidad de datos; incluyendo el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Privacidad del Consumidor de California y cómo cumplir al implementar un nuevo proyecto de AEM como servicio de nube. '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247

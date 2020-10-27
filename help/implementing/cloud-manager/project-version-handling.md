@@ -1,6 +1,6 @@
 ---
 title: Administrar versiones del proyecto de Maven
-description: 'Administración de versiones del proyecto de Maven: servicios de nube'
+description: '"Administración de versiones del proyecto de Maven: servicios de nube"'
 translation-type: tm+mt
 source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 workflow-type: tm+mt
