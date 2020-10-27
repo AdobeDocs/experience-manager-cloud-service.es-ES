@@ -1,10 +1,10 @@
 ---
-title: '"Administrar Entornos: Cloud Service"'
-description: '"Administrar Entornos: Cloud Service"'
+title: 'Administrar Entornos: Cloud Service'
+description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '850'
 ht-degree: 7%
 
 ---
@@ -68,9 +68,17 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
 
 La tarjeta de **Entornos** de la página Información general lista hasta tres entornos.
 
-El usuario puede seleccionar el botón **Mostrar todo** para desplazarse a la página de resumen de **Entorno** y realizar la vista de una tabla con una lista completa de entornos.
+1. Seleccione el botón **Mostrar todo** para desplazarse a la página de resumen de **Entorno** y realizar la vista de una tabla con una lista completa de entornos.
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. La página **Entornos** muestra la lista de todos los entornos existentes.
+
+   ![](assets/environment-view-2.png)
+
+1. Seleccione cualquiera de los entornos de la lista para vista de los detalles del entorno.
+
+   ![](assets/environment-view-3.png)
 
 
 ## Actualizando Entorno {#updating-dev-environment}
