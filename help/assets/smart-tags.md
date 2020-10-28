@@ -1,17 +1,17 @@
 ---
-title: Etiquetar imágenes con servicios inteligentes
-description: Etiquete imágenes con servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante los servicios de Adobe Sensei.
+title: Etiquetado automático de imágenes con etiquetas generadas por AI
+description: Etiquete imágenes utilizando servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas [!DNL Adobe Sensei] mediante servicios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2433'
 ht-degree: 6%
 
 ---
 
 
-# Servicio de etiquetas inteligentes de formación y etiquetado de imágenes {#train-service-tag-assets}
+# Servicio de contenido inteligente de formación y etiquetado automático de imágenes {#train-service-tag-assets}
 
 Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a sus recursos digitales y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
 
@@ -19,7 +19,7 @@ En comparación con los vocabularios del lenguaje natural, el etiquetado basado 
 
 In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ Para utilizar el etiquetado inteligente, complete las siguientes tareas:
 
 Las etiquetas inteligentes solo se aplican a [!DNL Adobe Experience Manager Assets] los clientes. The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## Integrate [!DNL Experience Manager] with Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->Las nuevas [!DNL Experience Manager Assets] implementaciones se integran [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores pueden [configurar manualmente la integración](/help/assets/smart-tags-configuration.md#aio-integration)de etiquetas inteligentes.
+>Las nuevas [!DNL Experience Manager Assets] implementaciones se integran [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En implementaciones anteriores, los administradores pueden [configurar manualmente la integración](/help/assets/smart-tags-configuration.md#aio-integration)de etiquetas inteligentes.
 
 Puede realizar la integración [!DNL Adobe Experience Manager] con las etiquetas inteligentes mediante [!DNL Adobe Developer Console]. Utilice esta configuración para acceder al servicio Etiquetas inteligentes desde dentro [!DNL Experience Manager]. Consulte [Configuración del Experience Manager para el etiquetado inteligente de recursos](smart-tags-configuration.md) para tareas a fin de configurar las etiquetas inteligentes. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
@@ -154,28 +154,36 @@ Una vez que haya formado el servicio Etiquetas inteligentes, puede activar el fl
 1. Haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si los recursos están etiquetados correctamente. Para obtener más información, consulte [Gestión de etiquetas](#manage-smart-tags-and-searches)inteligentes.
 
 >[!NOTE]
->
+
 >En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas.Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los últimos y los actuales ciclos de etiquetado del flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
 
 ### Etiquetado de recursos cargados {#tag-uploaded-assets}
 
 El Experience Manager puede etiquetar automáticamente los recursos que los usuarios cargan en DAM. Para ello, los administradores configuran un flujo de trabajo para agregar un paso disponible de a los recursos de etiquetas inteligentes. Consulte [cómo habilitar el etiquetado inteligente para los recursos](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)cargados.
 
-## Administrar etiquetas inteligentes y búsquedas de imágenes {#manage-smart-tags-and-searches}
+## Administración de etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
-Puede depurar las etiquetas inteligentes para eliminar cualquier etiqueta incorrecta que se haya asignado a las imágenes de su marca, de modo que solo se muestren las etiquetas más relevantes.
+Puede depurar etiquetas inteligentes para eliminar cualquier etiqueta incorrecta que se haya asignado a los recursos de marca, de modo que solo se muestren las etiquetas más relevantes.
 
-La moderación de las etiquetas inteligentes también ayuda a restringir las búsquedas de imágenes basadas en etiquetas, ya que garantiza que la imagen aparezca en los resultados de búsqueda de las etiquetas más relevantes. Básicamente, ayuda a eliminar las posibilidades de que las imágenes no relacionadas aparezcan en los resultados de búsqueda.
+La moderación de las etiquetas inteligentes también ayuda a restringir las búsquedas de recursos basadas en etiquetas, ya que garantiza que los recursos aparezcan en los resultados de búsqueda de las etiquetas más relevantes. Básicamente, ayuda a eliminar las posibilidades de que los recursos no relacionados se muestren en los resultados de búsqueda.
 
-También puede asignar una clasificación superior a una etiqueta para aumentar su relevancia con respecto a una imagen. La promoción de una etiqueta para una imagen aumenta las posibilidades de que la imagen aparezca en los resultados de búsqueda cuando se realiza una búsqueda en función de la etiqueta en particular.
+También puede asignar una clasificación superior a una etiqueta para aumentar su relevancia con respecto a un recurso. La promoción de una etiqueta para un recurso aumenta las posibilidades de que el recurso aparezca en los resultados de búsqueda cuando se realiza una búsqueda en función de la etiqueta en particular.
 
-1. En el cuadro Omniture, busque recursos basados en una etiqueta.
-1. Inspect muestra los resultados de la búsqueda para identificar una imagen que no le parece relevante para la búsqueda.
-1. Seleccione la imagen y, a continuación, haga clic en el icono **[!UICONTROL Administrar etiquetas]** de la barra de herramientas.
-1. En la página **[!UICONTROL Administrar etiquetas]** , inspeccione las etiquetas. Si no desea que la imagen se busque en función de una etiqueta específica, seleccione la etiqueta y haga clic en el icono Eliminar de la barra de herramientas. También puede hacer clic en `X` símbolo que aparece junto a la etiqueta.
-1. Para asignar una clasificación superior a una etiqueta, selecciónela y haga clic en el icono de promoción de la barra de herramientas. La etiqueta promocionada se mueve a la sección **[!UICONTROL Etiquetas]** .
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
-1. Vaya a la página de propiedades de la imagen. Observe que la etiqueta promocionada tiene una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
+Para moderar las etiquetas inteligentes de los recursos:
+
+1. En el campo Omniture busque recursos basados en una etiqueta.
+
+1. Inspect muestra los resultados de la búsqueda para identificar los recursos que no considera relevantes para la búsqueda.
+
+1. Seleccione el recurso y, a continuación, seleccione el icono ![](assets/do-not-localize/manage-tags-icon.png) Administrar etiquetas en la barra de herramientas.
+
+1. En la página **[!UICONTROL Administrar etiquetas]** , inspeccione las etiquetas. Si no desea buscar el recurso en función de una etiqueta específica, seleccione la etiqueta y seleccione el icono ![](assets/do-not-localize/delete-icon.png) Eliminar en la barra de herramientas. También puede seleccionar `X` un símbolo junto a la etiqueta.
+
+1. Para asignar una clasificación superior a una etiqueta, seleccione la etiqueta y el icono ![](assets/do-not-localize/promote-icon.png) Promocionar en la barra de herramientas. La etiqueta promocionada se mueve a la sección **[!UICONTROL Etiquetas]** .
+
+1. Seleccione **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo [!UICONTROL Éxito] .
+
+1. Vaya a la página [!UICONTROL Propiedades] del recurso. Observe que la etiqueta promocionada tiene una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
 ### Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understandsearch}
 
@@ -210,4 +218,5 @@ Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice la 
 >
 >* [Configurar Experience Manager para etiquetado inteligente](smart-tags-configuration.md)
 >* [Comprender cómo las etiquetas inteligentes ayudan a administrar recursos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Etiquetado inteligente de recursos de vídeo](smart-tags-video-assets.md)
 
