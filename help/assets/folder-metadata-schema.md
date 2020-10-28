@@ -1,9 +1,9 @@
 ---
 title: Esquema de metadatos de carpeta
-description: Obtenga información sobre cómo crear esquemas de metadatos para carpetas de recursos en Recursos AEM
+description: Obtenga información sobre cómo crear esquemas de metadatos para carpetas de recursos en AEM Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2394ce2b5ebbd3e0e7229a98b5f500312b82dbd7
+source-git-commit: dc5cec192a70413e0ebcc27eb5e58577079ae93b
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 10%
@@ -13,15 +13,15 @@ ht-degree: 10%
 
 # Esquema de metadatos de carpeta {#folder-metadata-schema}
 
-Recursos Adobe Experience Manager (AEM) le permite crear esquemas de metadatos para las carpetas de recursos, que definen la presentación y los metadatos que se muestran en las páginas de propiedades de las carpetas.
+Recursos Adobe Experience Manager (AEM) permite crear esquemas de metadatos para las carpetas de recursos, que definen la presentación y los metadatos que se muestran en las páginas de propiedades de las carpetas.
 
 ## Añadir un formulario de esquema de metadatos de carpeta {#add-a-folder-metadata-schema-form}
 
-Utilice el editor Esquema de formularios de metadatos de carpeta para crear y editar esquemas de metadatos para las carpetas.
+Utilice el editor de Forms de Esquema de metadatos de carpeta para crear y editar esquemas de metadatos para las carpetas.
 
 1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos de carpeta]**.
-1. En la página Esquema de formularios de metadatos de carpeta, toque o haga clic en **[!UICONTROL Crear]**.
-1. Especifique un nombre para el formulario y toque o haga clic en **[!UICONTROL Crear]**. El nuevo formulario de esquema se muestra en la página Formularios de Esquema.
+1. En la página Forms Esquema de metadatos de la carpeta, toque o haga clic en **[!UICONTROL Crear]**.
+1. Especifique un nombre para el formulario y toque o haga clic en **[!UICONTROL Crear]**. El nuevo formulario de esquema se muestra en la página de Esquema Forms.
 
 ## Edit folder metadata schema forms {#edit-folder-metadata-schema-forms}
 
@@ -32,7 +32,7 @@ Puede editar un formulario de esquema de metadatos recién agregado o existente,
 
 Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio de CRX. Puede agregar nuevas fichas o elementos de formulario al formulario de esquema de metadatos.
 
-1. En la página Formularios de Esquema, seleccione el formulario que ha creado y, a continuación, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
+1. En la página Esquema Forms, seleccione el formulario que ha creado y, a continuación, toque o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
 1. En la página Editor de Esquemas de metadatos de carpeta, toque o haga clic en el icono **[!UICONTROL +]** para agregar una ficha al formulario. Para cambiar el nombre de la ficha, toque o haga clic en el nombre predeterminado y especifique el nuevo nombre en **[!UICONTROL Configuración]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -93,7 +93,7 @@ La ficha **[!UICONTROL Generar formulario]** lista los elementos de formulario q
   </tr>
   <tr>
    <td><p>Campo oculto</p> </td>
-   <td><p> Añada un campo oculto. Se envía como parámetro POST cuando se guarda el recurso.</p> </td>
+   <td><p> Añada un campo oculto. Se envía como parámetro de POST cuando se guarda el recurso.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -104,7 +104,7 @@ Para editar las propiedades de los elementos de formulario, toque o haga clic en
 
 **[!UICONTROL Etiqueta]** de campo: Nombre de la propiedad de metadatos que se muestra en la página de propiedades de la carpeta.
 
-**[!UICONTROL Asignar a propiedad]**: Esta propiedad especifica la ruta relativa del nodo de la carpeta en el repositorio de CRX donde se guarda. inicio con &quot;**./**&quot;, que indica que la ruta está debajo del nodo de la carpeta.
+**[!UICONTROL Asignar a propiedad]**: Esta propiedad especifica la ruta relativa del nodo de la carpeta en el repositorio de CRX donde se guarda. Inicio con &quot;**./**&quot;, que indica que la ruta está debajo del nodo de la carpeta.
 
 Los siguientes son los valores válidos para esta propiedad:
 
@@ -126,20 +126,20 @@ Para asegurarse de que el componente se muestra correctamente en el formulario d
 
 ## Delete folder metadata schema forms {#delete-folder-metadata-schema-forms}
 
-Puede eliminar formularios esquema de metadatos de carpeta desde la página Esquema de formularios de metadatos de carpeta. Para eliminar un formulario, selecciónelo y toque o haga clic en el icono Eliminar de la barra de herramientas.
+Puede eliminar los formularios de esquema de metadatos de la carpeta desde la página de Forms Esquema de metadatos de la carpeta. Para eliminar un formulario, selecciónelo y toque o haga clic en el icono Eliminar de la barra de herramientas.
 
 ![delete_form](assets/delete_form.png)
 
 ## Asignación de un esquema de metadatos de carpeta {#assign-a-folder-metadata-schema}
 
-Puede asignar un esquema de metadatos de carpeta a una carpeta desde la página Esquema de formularios de metadatos de carpeta o al crear una carpeta.
+Puede asignar un esquema de metadatos de carpeta a una carpeta desde la página de Forms Esquema de metadatos de carpeta o al crear una carpeta.
 
 Si configura un esquema de metadatos para una carpeta, la ruta al formulario de esquema se almacena en la propiedad del nodo de la carpeta en la `folderMetadataSchema` .*/jcr:content*.
 
 ### Asignar a un esquema desde la página Esquema de metadatos de la carpeta {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]**> **[!UICONTROL Esquemas de metadatos de carpeta]**.
-1. En la página Esquema de formularios de metadatos de carpeta, seleccione el formulario de esquema que desee aplicar a una carpeta.
+1. En la página Forms Esquema de metadatos de carpeta, seleccione el formulario de esquema que desea aplicar a una carpeta.
 1. En la barra de herramientas, toque o haga clic en **[!UICONTROL Aplicar a carpetas]**.
 
 1. Seleccione la carpeta en la que desea aplicar el esquema y toque o haga clic en **[!UICONTROL Aplicar]**. Si ya se ha aplicado un esquema de metadatos a la carpeta, aparecerá un mensaje de advertencia para informarle de que va a sobrescribir el esquema de metadatos existente. Toque o haga clic en **[!UICONTROL Sobrescribir]**.
@@ -155,7 +155,7 @@ Si configura un esquema de metadatos para una carpeta, la ruta al formulario de 
 
 Puede asignar un esquema de metadatos de carpeta al crear una carpeta. Si existe al menos un esquema de metadatos de carpeta en el sistema, se muestra una lista adicional en el cuadro de diálogo **[!UICONTROL Crear carpeta]** . Puede seleccionar el esquema que desee. De forma predeterminada, no hay ningún esquema seleccionado.
 
-1. En la interfaz de usuario de Recursos AEM, toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
+1. Desde la interfaz de usuario de AEM Assets, toque o haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
 1. Especifique un título y un nombre para la carpeta.
 1. En la lista Esquema de metadatos de carpeta, seleccione el esquema que desee. Then, tap/click **[!UICONTROL Create]**.
 
@@ -171,4 +171,3 @@ Abra las propiedades de una carpeta configurada con un esquema de metadatos de c
 Introduzca valores de metadatos en los distintos campos y toque o haga clic en **[!UICONTROL Guardar]** para almacenar los valores. Los valores que especifique se almacenan en el nodo de la carpeta en el repositorio de CRX.
 
 ![folder_metadata_properties-1](assets/folder_metadata_properties-1.png)
-
