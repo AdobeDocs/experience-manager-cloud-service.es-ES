@@ -1,16 +1,17 @@
 ---
 title: Diseño de los componentes principales del CIF de AEM
 description: Aprenda a aplicar estilo a AEM componentes principales de CIF. El tutorial explica cómo se utilizan las bibliotecas del lado del cliente o los clientes para implementar y administrar CSS y Javascript para una implementación de comercio de Adobe Experience Manager (AEM). Este tutorial también explicará cómo se integran el módulo ui.front y un proyecto de webpack en el proceso de generación de extremo a extremo.
-sub-product: comercio
-topics: front-end-development
+sub-product: Comercio
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 33%
