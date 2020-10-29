@@ -2,7 +2,7 @@
 title: Creación de contenido orientado mediante el modo de Orientación
 description: El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
 workflow-type: tm+mt
 source-wordcount: '5348'
 ht-degree: 75%
@@ -25,7 +25,7 @@ Contenido orientado por el autor mediante el modo de Orientación de AEM. El mod
 
 Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. See the instructions for integrating with Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
-![Contenido de objetivo](/help/sites-cloud/authoring/assets/targeted-content.png)
+![Contenido de objetivo](../assets/targeted-content.png)
 
 The activities and experiences that you see in Target mode reflect the [Activities console](/help/sites-cloud/authoring/personalization/activities.md):
 
@@ -53,11 +53,11 @@ Para cambiar al modo de Target:
 1. Abra la página para la que desea crear contenido orientado.
 1. En la barra de herramientas situada en la parte superior de la página, toque o haga clic en el menú desplegable de modo para mostrar los tipos de modo disponibles.
 
-   ![Modo Targeting](/help/sites-cloud/authoring/assets/targeted-mode.png)
+   ![Modo Targeting](../assets/targeted-mode.png)
 
 1. Click or tap **Targeting**. Las opciones de orientación se muestran en la parte superior de la página.
 
-   ![Barra de herramientas Objetivo](/help/sites-cloud/authoring/assets/targeted-toolbar.png)
+   ![Barra de herramientas Objetivo](../assets/targeted-toolbar.png)
 
 ## Adición de una actividad con el modo de Orientación {#adding-an-activity-using-targeting-mode}
 
@@ -118,7 +118,7 @@ Para añadir una actividad:
 1. En el menú desplegable **Actividad**, seleccione la actividad para la que está creando contenido orientado.
 1. Para mostrar los controles que lo guiarán a través del proceso de orientación, toque o haga clic en **Iniciar orientación**.
 
-   ![Targeting de Inicio](/help/sites-cloud/authoring/assets/targeted-start-targeting.png)
+   ![Targeting de inicio](../assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
@@ -142,15 +142,15 @@ Después de [iniciar el proceso de orientación](#the-targeting-process-create-t
 
 Las experiencias se muestran en el panel Audiencies. En el siguiente ejemplo, las experiencias incluyen **Predeterminado**, **Mujer**, **Mujer mayor de 30 años** y **Mujer menor de 30 años**. Este ejemplo muestra la oferta predeterminada de un componente de **imagen** segmentado.
 
-![Componente de imagen de destino](/help/sites-cloud/authoring/assets/targeted-image-component.png)
+![Componente de imagen de destino](../assets/targeted-image-component.png)
 
 Al seleccionar una experiencia distinta, el componente Imagen muestra la oferta para esa experiencia.
 
-![Se cambió el componente de imagen de destino](/help/sites-cloud/authoring/assets/targeted-image-different.png)
+![Se cambió el componente de imagen de destino](../assets/targeted-image-different.png)
 
 Cuando se selecciona una experiencia y el componente segmentado no incluye una oferta para esa experiencia, el componente muestra la opción **Agregar oferta** superpuesta a la oferta predeterminada semitransparente. Cuando no se ha creado ninguna oferta para una experiencia, se muestra la oferta **predeterminada** para el segmento asignado a la experiencia.
 
-![Agregar oferta](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
+![Agregar oferta](../assets/targeted-add-offer.png)
 
 La experiencia predeterminada también se muestra cuando las propiedades del visitante no coinciden con ningún segmento asignado a las experiencias. See [Adding Experiences using Targeting Mode](#adding-and-removing-experiences-using-targeting-mode).
 
@@ -158,11 +158,11 @@ La experiencia predeterminada también se muestra cuando las propiedades del vis
 
 Las ofertas que [se crean en la página](#adding-a-custom-offer) y se utilizan para una experiencia única se denominan ofertas personalizadas. La imagen siguiente está superpuesta al contenido de una oferta personalizada:
 
-![Icono de oferta personalizada](/help/sites-cloud/authoring/assets/targeted-custom-offer-icon.png)
+![Icono de oferta personalizada](../assets/targeted-custom-offer-icon.png)
 
 Las ofertas que [se añaden desde una biblioteca de ofertas](#adding-an-offer-from-an-offer-library) se superponen a la imagen siguiente:
 
-![Icono de oferta de biblioteca](/help/sites-cloud/authoring/assets/targeted-library-offer-icon.png)
+![Icono de oferta de biblioteca](../assets/targeted-library-offer-icon.png)
 
 Puede guardar ofertas personalizadas en una biblioteca de ofertas si decide que quiere volver a utilizarlas. También puede convertir una oferta de la biblioteca en una oferta personalizada si desea modificar el contenido de una experiencia. Tras la edición, puede volver a guardar la oferta en la biblioteca.
 
@@ -174,7 +174,7 @@ Con el paso Crear del [proceso de orientación](#the-targeting-process-create-ta
 
 Para añadir una experiencia:
 
-1. To add an experience, click or tap **+** **Add Experience Targeting **that appears below existing experiences in the **Audiences** pane.
+1. To add an experience, click or tap **+** **Add Experience Targeting** that appears below existing experiences in the **Audiences** pane.
 1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Toque o haga clic en **OK**.
 
 #### Eliminar experiencias con el modo de Orientación {#removing-experiences-using-targeting-mode}
@@ -183,7 +183,7 @@ Para eliminar una experiencia:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
 
-   ![Eliminar y experiencia](/help/sites-cloud/authoring/assets/targeted-delete-experiene.png)
+   ![Eliminar y experiencia](../assets/targeted-delete-experiene.png)
 
 1. Haga clic en **Eliminar**.
 
@@ -239,11 +239,11 @@ Lleve a cabo el procedimiento siguiente después de [iniciar el proceso de orien
 
 1. Toque o haga clic en el componente que se va a orientar. Se muestra la barra de herramientas para el componente, similar a la del ejemplo siguiente.
 
-   ![Componente de objetivo](/help/sites-cloud/authoring/assets/targeted-component.png)
+   ![Componente de objetivo](../assets/targeted-component.png)
 
 1. Toque o haga clic en el icono Target.
 
-   ![Botón Destinatario](/help/sites-cloud/authoring/assets/targeted-target-button.png)
+   ![Botón destinatario](../assets/targeted-target-button.png)
 
    El contenido del componente es la oferta para la experiencia predeterminada. Cuando se establece un objetivo para un componente, su nodo predeterminado se replicará para cada experiencia. Esto es necesario para editar el nodo de contenido adecuado durante la creación específica de la experiencia. For these non-default experiences, either [add a custom offer](#adding-a-custom-offer) or [add a library offer](#adding-an-offer-from-an-offer-library).
 
@@ -261,21 +261,21 @@ Dado que el componente Target es un contenedor, aparece como un área de colocac
 
 En el modo de Target, el componente Target tiene un borde azul y el mensaje de destino indica la naturaleza de la orientación.
 
-![Zona de colocación de Destinatario](/help/sites-cloud/authoring/assets/targeted-drop-target.png)
+![Zona de colocación de destinatario](../assets/targeted-drop-target.png)
 
 En el modo de Edición, el componente Target tiene un icono de diana.
 
-![Icono de la zona de colocación del destinatario](/help/sites-cloud/authoring/assets/targeted-drop-target-icon.png)
+![Icono de la zona de colocación del destinatario](../assets/targeted-drop-target-icon.png)
 
 Los componentes que arrastra al componente Target son componentes orientados.
 
-![Zona de colocación con destinatarios](/help/sites-cloud/authoring/assets/targeted-drop-zone-populated.png)
+![Zona de colocación con destinatarios](../assets/targeted-drop-zone-populated.png)
 
 Al añadir un componente al componente Target, proporciona contenido para una experiencia determinada. Para especificar la experiencia, debe seleccionarla antes de añadir los componentes.
 
 Puede añadir un componente Target a la página en modo de Edición o en modo de Target. Puede añadir componentes al componente Target solo en modo de Target. El componente Target pertenece al grupo de componentes de personalización.
 
-Si edita contenido de destino, debe tocar o hacer clic en **Objetivo de Inicio **antes de poder hacerlo.
+Antes de poder editar contenido orientado, debe tocar o hacer clic en **Iniciar orientación**.
 
 1. Arrastre el componente Target a la página en la que desea que aparezca la oferta.
 1. De forma predeterminada, no se establece ningún identificador de ubicación. Toque o haga clic en la rueda de engranaje de configuración para definir la ubicación.
@@ -303,7 +303,7 @@ If you decide that the offer can be used for other experiences, you can create a
 1. Seleccione la experiencia a la que añade la oferta.
 1. Para mostrar el menú de componentes, toque o haga clic en el componente orientado al que va a añadir la oferta.
 
-   ![Añadir una oferta](/help/sites-cloud/authoring/assets/targeted-component-menu.png)
+   ![Añadir una oferta](../assets/targeted-component-menu.png)
 
 1. Toque o haga clic en el icono +.
 
@@ -311,7 +311,7 @@ If you decide that the offer can be used for other experiences, you can create a
 
 1. Toque o haga clic en la oferta para mostrar el menú Oferta y, a continuación, toque o haga clic en el icono Editar.
 
-   ![Barra de herramientas del componente Destinatario](/help/sites-cloud/authoring/assets/targeted-offer-menu.png)
+   ![Barra de herramientas del componente destinatario](../assets/targeted-offer-menu.png)
 
 1. Edite el contenido del componente.
 
@@ -324,33 +324,33 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 1. Seleccione la experiencia a la que añade la oferta.
 1. Para mostrar el menú de componentes, toque o haga clic en el componente orientado al que va a añadir la oferta.
 
-   ![oferta de objetivo](/help/sites-cloud/authoring/assets/targeted-add-offer-large.png)
+   ![Oferta de objetivo](../assets/targeted-add-offer-large.png)
 
 1. Toque o haga clic en el icono Carpeta.
 
-   ![Icono de carpeta](/help/sites-cloud/authoring/assets/targeted-folder-button.png)
+   ![Icono de carpeta](../assets/targeted-folder-button.png)
 
 1. Seleccione la oferta de la biblioteca y, a continuación, toque o haga clic en el icono de la marca.
 
-   ![Biblioteca de Ofertas](/help/sites-cloud/authoring/assets/targeted-select-content.png)
+   ![Biblioteca de ofertas](../assets/targeted-select-content.png)
 
    El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica la cantidad de ofertas que están disponibles en la biblioteca actual.
 
    * Click or tap **Browse** to navigate to another folder. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Click or tap **Browse** again to close the navigation pane.
 
-   ![Examinar contenido](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
+   ![Examinar contenido](../assets/targeted-select-content-browse.png)
 
    * Toque o haga clic en **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Vuelva a tocar o hacer clic en **Filtrar** para cerrar el panel de filtrado.
 
-   ![Filtrar contenido](/help/sites-cloud/authoring/assets/targeted-filter.png)
+   ![Filtrar contenido](../assets/targeted-filter.png)
 
-   * Para cambiar la manera de ordenar las ofertas, toque o haga clic en la flecha al lado de **La más reciente a la más antigua**. Las Ofertas se pueden ordenar de más reciente a más antigua o de más antigua a más reciente.
+   * Para cambiar la manera de ordenar las ofertas, toque o haga clic en la flecha al lado de **La más reciente a la más antigua**. Las ofertas se pueden ordenar de más reciente a más antigua o de más antigua a más reciente.
 
-   ![Orden de clasificación de filtro](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
+   ![Orden de clasificación de filtro](../assets/targeted-filter-sort.png)
 
    Toque o haga clic en el icono junto a **Ver como** para ver las ofertas como mosaicos o como una lista.
 
-   ![Vista como botón](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
+   ![Vista como botón](../assets/targeted-view-as-button.png)
 
 #### Adición de una oferta personalizada a una biblioteca {#adding-a-custom-offer-to-a-library}
 
@@ -361,7 +361,7 @@ For information about using the Offers console to create a reusable offer, see [
 1. Seleccione la experiencia para mostrar la oferta personalizada.
 1. Toque o haga clic en la oferta personalizada para ver el menú Oferta y, a continuación, toque o haga clic en el icono **Guardar oferta en biblioteca de ofertas**.
 
-   ![Guardar oferta en la biblioteca de ofertas](/help/sites-cloud/authoring/assets/targeted-save-offer-library-button.png)
+   ![Guardar oferta en la biblioteca de ofertas](../assets/targeted-save-offer-library-button.png)
 
 1. Escriba un nombre para la oferta, seleccione la biblioteca a la que va a añadir la oferta y, a continuación, toque o haga clic en el icono de la marca.
 
@@ -372,7 +372,7 @@ Convierta una oferta de la biblioteca en una oferta personalizada para cambiar l
 1. Seleccione la experiencia para mostrar la oferta de la biblioteca.
 1. Toque o haga clic en la oferta de la biblioteca para ver el menú Oferta y, a continuación, toque o haga clic en el icono Convertir a oferta en línea.
 
-   ![Convertir en oferta en línea](/help/sites-cloud/authoring/assets/targeted-convert-inline.png)
+   ![Convertir en oferta en línea](../assets/targeted-convert-inline.png)
 
 #### Edición de una oferta de la biblioteca {#editing-a-library-offer}
 
@@ -388,11 +388,11 @@ Abra una oferta de la biblioteca de una experiencia en modo de Orientación para
 
 El paso Target del [proceso de orientación](#the-targeting-process-create-target-and-goals-settings) implica la asignación de públicos a las experiencias con que ha trabajado en el paso Crear. En la página Target se muestran los públicos a que se orienta cada experiencia. Puede especificar o cambiar el público para cada experiencia. Si utiliza Adobe Target, también puede crear pruebas A/B que le permiten orientar un porcentaje del tráfico de un público a una experiencia concreta.
 
-### Si usa la orientación de AEM o Adobe Target (orientación de experiencias)… {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### If you are using AEM targeting or Adobe Target (experience targeting) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Los públicos aparecen en el lado izquierdo del diagrama de asignación, y las experiencias en el lado derecho.
 
-![Asignación de audiencias](/help/sites-cloud/authoring/assets/targeted-diagram.png)
+![Asignación de audiencias](../assets/targeted-diagram.png)
 
 Defina un público con un segmento. La configuración de nube de la página determina los segmentos que están disponibles para usted. Cuando la página no está asociada a una configuración de nube de Adobe Target, los segmentos de AEM están disponibles para definir públicos. Cuando la página se asocie a una configuración de nube de Adobe Target, use los segmentos de Target.
 
@@ -400,7 +400,7 @@ Para obtener información sobre los motores de orientación, consulte [Motor de 
 
 Una experiencia no debe utilizar más de un público. Un símbolo de advertencia se muestra al lado de una experiencia cuando se asigna a un público asignado a otra experiencia.
 
-![Icono de advertencia](/help/sites-cloud/authoring/assets/targeted-warn.png)
+![Icono de advertencia](../assets/targeted-warn.png)
 
 ### Asociación de experiencias a públicos (AEM o Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -410,13 +410,13 @@ Utilice el procedimiento siguiente para asociar una experiencia a un público al
 1. (Optional) Click or tap **Edit** and then type a keyword to search for the desired segment.
 1. En la lista de públicos, seleccione el público y toque o haga clic en **OK**.
 
-### Si utiliza la prueba A/B (Adobe Target)… {#if-you-are-using-a-b-testing-adobe-target}
+### If you are using A/B Testing (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 Si tiene una actividad de prueba A/B, los públicos se encuentran a la izquierda, el porcentaje de visualización de cada experiencia se muestra en la mitad y las experiencias están a la derecha.
 
 Puede cambiar los porcentajes, siempre que sumen el cien por ciento. En una prueba A/B, varias experiencias pueden utilizar a un público.
 
-![Orientación A/B](/help/sites-cloud/authoring/assets/targeted-ab.png)
+![Orientación A/B](../assets/targeted-ab.png)
 
 ### Asociación de públicos y porcentajes de tráfico a la prueba A/B {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
@@ -436,15 +436,15 @@ Las métricas de objetivo se miden solo para la campaña publicada.
 
 Si utiliza AEM como motor de orientación:
 
-![AEM como motor de destinatario](/help/sites-cloud/authoring/assets/targeted-goals.png)
+![AEM como motor de destinatario](../assets/targeted-goals.png)
 
 Si utiliza Adobe Target como motor de orientación:
 
-![Adobe Target como motor de destinatario](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![Adobe Target como motor de destinatario](../assets/targeted-engine.png)
 
 Si utiliza Adobe Target como motor de determinación de objetivos y tiene A4T Analytics configurado en la cuenta, tiene un menú desplegable de **Fuente de informes** adicional:
 
-![A4T](/help/sites-cloud/authoring/assets/targeted-source.png)
+![A4T](../assets/targeted-source.png)
 
 Las métricas de éxito siguientes están disponibles (se utilizan para publicar únicamente):
 
@@ -501,7 +501,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
    Si selecciona **Adobe Analytics**, seleccione la empresa y el grupo de informes. Si selecciona **Adobe Target**, no hace falta que haga nada.
 
-   ![Origen del Sistema de informes](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
+   ![Origen del sistema de informes](../assets/targeted-reporting-source.png)
 
 1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) sobre las métricas de éxito.
 
@@ -515,7 +515,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
    >
    >Debe tener un objetivo definido como mínimo.
 
-   ![Métrica de objetivo](/help/sites-cloud/authoring/assets/targeted-goal-metric.png)
+   ![Métrica de objetivo](../assets/targeted-goal-metric.png)
 
    >[!NOTE]
    >
@@ -523,7 +523,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
 1. Haga clic en **Añadir nueva métrica** para configurar métricas de éxito adicionales.
 
-   ![Métricas adicionales](/help/sites-cloud/authoring/assets/targeted-additional-metrics.png)
+   ![Métricas adicionales](../assets/targeted-additional-metrics.png)
 
    >[!NOTE]
    >
@@ -560,11 +560,11 @@ Para simular la experiencia del visitante, utilice las herramientas siguientes:
 1. To switch to Preview mode, on the toolbar click or tap **Preview**.
 1. En la barra de herramientas, toque o haga clic en el icono de ContextHub.
 
-   ![Botón ContextHub](/help/sites-cloud/authoring/assets/targeted-contexthub-button.png)
+   ![Botón ContextHub](../assets/targeted-contexthub-button.png)
 
 1. Utilice ContextHub para cambiar las propiedades del contexto. Por ejemplo, toque o haga clic en la propiedad Perfil para seleccionar a un usuario diferente.
 
-   ![Barra de herramientas de ContextHub](/help/sites-cloud/authoring/assets/targeted-contexthub-toolbar.png)
+   ![Barra de herramientas de ContextHub](../assets/targeted-contexthub-toolbar.png)
 
    La página cambia para mostrar el contenido orientado al contexto actual.
 
@@ -576,19 +576,19 @@ Para personalizar el componente Target, acceda a las opciones del componente de 
 
 1. Una vez que haya segmentado el componente, en el componente Destinatario, toque o haga clic en el componente y, a continuación, en el icono de configuración (engranaje).
 
-   ![Configuración de componentes](/help/sites-cloud/authoring/assets/targeted-component-settings.png)
+   ![Configuración de componentes](../assets/targeted-component-settings.png)
 
    AEM muestra la ventana de opciones del componente Target.
 
-   ![Cuadro de diálogo Destinatario](/help/sites-cloud/authoring/assets/targeted-dialog.png)
+   ![Cuadro de diálogo destinatario](../assets/targeted-dialog.png)
 
 1. Como alternativa, para acceder a estas configuraciones en modo de pantalla completa, en la ventana de opciones del componente Target, toque o haga clic en el icono de pantalla completa.
 
-   ![Botón Pantalla completa](/help/sites-cloud/authoring/assets/targeted-fullscreen.png)
+   ![Botón Pantalla completa](../assets/targeted-fullscreen.png)
 
    AEM muestra la ventana de opciones del componente Target a pantalla completa.
 
-   ![Componente en pantalla completa](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+   ![Componente en pantalla completa](../assets/targeted-target-as-enging.png)
 
 1. Configure el componente Target tal y como se describe en las tablas siguientes.
 
@@ -599,13 +599,13 @@ Para personalizar el componente Target, acceda a las opciones del componente de 
 
 Si selecciona Adobe Target como motor:
 
-![Destinatario como motor](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+![Destinatario como motor](../assets/targeted-target-as-enging.png)
 
 | Opción | Descripción |
 |---|---|
 | Direccionamiento preciso | Si se habilita la determinación precisa de objetivos, el componente espera a que los datos de contexto o de concentrador de contexto estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está activada. Si selecciona la casilla de verificación Establecimiento de objetivos preciso, el mbox realiza primero un mboxDefine y después un mboxUpdate que genera una solicitud de Ajax una vez que los datos están disponibles. Si no selecciona la casilla de verificación Establecimiento de objetivos preciso, el mbox realiza un mboxCreate que resulta en una solicitud sincrónica de inmediato (en este caso, es posible que no todos los datos de contexto estén disponibles aún). Nota: La activación o desactivación de la segmentación precisa en un componente específico no afecta a la configuración que haya definido de forma global. Siempre puede seleccionar Orientación precisa en el componente para anular la configuración global. |
-| Incluir segmentos resueltos | Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco. Esto solo funciona en situaciones con la API XML en las que se sincronizan segmentos de AEM. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo. |
-| Parámetros heredados de contexto | Parámetros de contexto de Listas heredados del marco de Adobe Target, si los hay, asociados a la página seleccionada. |
+| Incluir segmentos resueltos | Al seleccionar esta casilla de verificación, se incluyen todos los segmentos resueltos en la llamada de mbox y todos los parámetros configurados en la página y en el marco. Esto solo funciona en situaciones con la API XML en las que está sincronizando AEM segmentos. Si dispone de segmentos en AEM que Adobe Target no controla (como segmentos de script), esta opción le permite resolver el segmento en AEM y enviar información a Adobe Target de que el segmento está activo. |
+| Parámetros heredados de contexto | Parámetros de contexto de listas heredados del marco de trabajo de Adobe Target, si los hay, asociados a la página seleccionada. |
 | Parámetros de contexto | Toque o haga clic en el campo Añadir para configurar parámetros de contexto adicionales (igual que el que está disponible en Destinatario framework). Los parámetros de contexto agregados al componente se aplican únicamente al componente y no a otro componente, como sucedería si se añadieran parámetros de contexto directamente al marco. |
 | Parámetros estáticos | Toque o haga clic en el campo Añadir para configurar parámetros estáticos adicionales (igual que los disponibles en el marco de Destinatario). Los parámetros estáticos agregados al componente se aplican solamente al componente y no a otro componente, como ocurriría si agregara parámetros estáticos directamente al marco. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub). |
 
