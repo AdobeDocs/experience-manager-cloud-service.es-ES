@@ -1,11 +1,19 @@
 ---
 title: Configuraciones de URL avanzadas
-description: Configuraciones de URL avanzadas
-translation-type: ht
-source-git-commit: 3a235e3d8e2d97e413f445df1f0bfe52e97024b3
-workflow-type: ht
-source-wordcount: '768'
-ht-degree: 100%
+description: Obtenga información sobre cómo personalizar las direcciones URL para las páginas de productos y categorías. Esto permite que las implementaciones optimicen las direcciones URL para los motores de búsqueda y promuevan el descubrimiento.
+sub-product: Comercio
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 4933
+thumbnail: 34350.jpg
+translation-type: tm+mt
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +22,7 @@ ht-degree: 100%
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan configuraciones avanzadas para personalizar las direcciones URL de las páginas de productos y categorías. Muchas implementaciones personalizan estas direcciones URL con fines de optimización de los motores de búsqueda (SEO). En el siguiente vídeo se explica cómo configurar el `UrlProvider` servicio y las funciones de las [Asignaciones de Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar las direcciones URL de las páginas de productos y categorías.
 
->[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuración {#configuration}
 
