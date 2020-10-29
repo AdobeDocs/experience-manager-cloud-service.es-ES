@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: e96ffc15849baa306fae8839476fa453ace69ef5
+source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 78%
+source-wordcount: '1855'
+ht-degree: 71%
 
 ---
 
@@ -26,11 +26,18 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en la instancia de origen y pertenecer al grupo de administradores de AEM locales en la instancia de Cloud Service a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
 
+* Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
+
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción.
+* Después de completar la fase de *Extracción* del proceso de transferencia de contenido y antes de iniciar la fase *de* ingesta de contenido en su AEM como *etapa* de Cloud Service o instancias de *producción* , deberá registrar una entrada de soporte para notificar al Adobe su intención de ejecutar la *ingestión* ** de modo que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso de ingestiónde documentos. Tendrá que registrar el ticket de asistencia 1 semana antes de la fecha prevista de *ingestión* . Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
+   * Registre un ticket de asistencia técnica con los siguientes detalles:
+   1. Fecha exacta y hora estimada (con su huso horario) cuando planea realizar el inicio de la fase de *ingestión* .
+   2. Tipo de entorno (fase o producción) en el que se van a ingestar datos.
+   3. ID de programa
 
-* Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
+* La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción. Asegúrese también de que no se ejecuten tuberías del Administrador de nube mientras está ejecutando la fase de *ingesta* .
+
 
 ## Disponibilidad {#availability}
 
