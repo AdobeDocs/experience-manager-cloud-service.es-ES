@@ -1,11 +1,11 @@
 ---
 title: Almacenamiento en caché y rendimiento
-description: Almacenamiento en caché y rendimiento
-translation-type: ht
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
-workflow-type: ht
-source-wordcount: '830'
-ht-degree: 100%
+description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de la implementación comercial.
+translation-type: tm+mt
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+workflow-type: tm+mt
+source-wordcount: '848'
+ht-degree: 97%
 
 ---
 
