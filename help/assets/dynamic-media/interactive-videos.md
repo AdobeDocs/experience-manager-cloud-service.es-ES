@@ -2,7 +2,7 @@
 title: Vídeos interactivos
 description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dynamic Media
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 5%
@@ -93,10 +93,9 @@ Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el n
 ## (Opcional) Identificación de variables de Quickview {#optional-identifying-quickview-variables}
 
 >[!NOTE]
->
->Esta tarea solo es necesaria si se cumple lo siguiente:
->* Desea agregar interactividad al vídeo activando las vistas rápidas.
->* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos a AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, hibris o intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+Esta tarea solo es necesaria si se cumple lo siguiente:
+* Desea agregar interactividad al vídeo activando las vistas rápidas.
+* La implementación de AEM *no utiliza* un marco de integración de comercio electrónico para extraer datos de productos a AEM desde cualquier solución de comercio electrónico, como comercio de esfera web de IBM, ruta elástica, hibris o intershop. <!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 Si la implementación de AEM utiliza el comercio electrónico, puede omitir esta tarea y continuar con la siguiente tarea.
 
@@ -121,7 +120,7 @@ Normalmente no es necesario que utilice ninguna herramienta de depuración espec
 
 * Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse **F12** (Windows) o **Comando+Opciones+I** (Mac) para abrir el panel Herramientas del desarrollador y, a continuación, haga clic en la ficha **Red** .
 
-* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **[Net]** tab, or you can use the built-in Inspector tool and its Network tab.
+* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **[!UICONTROL Net]** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * En Internet Explorer, active la herramienta de depuración pulsando **F12**.
 
@@ -129,11 +128,11 @@ Cuando la supervisión de red está activada en el explorador, active la vista r
 
 Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una parte o ruta de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml`o `text/javascript`.
 
-Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
+Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU del producto es la única pieza de datos necesaria para agregar miniaturas a un segmento de tiempo en el vídeo interactivo de AEM.
 
-Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable independiente en la definición de datos en miniatura en AEM.
+Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU del producto, como ID de categoría, código de color, etc. En estos casos, cada elemento de este tipo se convierte en una variable separada en la definición de datos en miniatura en AEM.
 
 Considere los siguientes ejemplos de URL de vista rápida y sus variables de miniatura resultantes:
 
@@ -257,12 +256,10 @@ Después de agregar segmentos de línea de tiempo, agregue imágenes en miniatur
 Consulte Fragmentos [de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
+Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.
 
 >[!NOTE]
->
->El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
+El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -344,7 +341,7 @@ Para añadir interactividad al vídeo:
 
    Captura de pantalla C
 
-   En la captura de pantalla C anterior, el ajuste Escala de línea de tiempo se movió a 8 segundos. Observe cómo los segmentos que contienen miniaturas de productos se han reducido. El alejamiento de este modo resulta útil si tiene un vídeo largo y desea ver una descripción general de más segmentos que normalmente se ajustarían al ancho de la página.
+   En la captura de pantalla C anterior, el ajuste Escala de línea de tiempo se movió a 8 segundos. Observe cómo los segmentos que contienen miniaturas de productos se han reducido. El alejamiento de este modo resulta útil si tiene un vídeo largo y desea ver una descripción general de más segmentos que normalmente caben en el ancho de la página.
 
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
@@ -432,7 +429,7 @@ Para añadir interactividad al vídeo:
        </ul><strong>Nota</strong>: Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.</p></tr>&lt; 
       <tr> 
       <td>Para editar una acción ya asignada a una imagen en miniatura</td> 
-      <td>En un segmento de línea de tiempo, toque una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le asigna una acción. Toque la ficha <strong>Acciones</strong> para realizar los cambios.</td> 
+      <td>Dentro de un segmento de línea de tiempo, toque una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le asigna una acción. Toque la ficha <strong>Acciones</strong> para realizar los cambios.</td> 
       </tr> 
       <tr> 
       <td>Cambio de la etiqueta de texto de una imagen en miniatura</td> 
@@ -483,8 +480,7 @@ Para añadir interactividad al vídeo:
    Cuando haya terminado, toque **[!UICONTROL Guardar]**.
 
    >[!NOTE]
-   >
-   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo de `.vtt`se guarda en la carpeta `_VTT` situada en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
+   Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo de `.vtt`se guarda en la carpeta `_VTT` situada en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
 
 1. Publique el vídeo interactivo. La publicación crea el código incrustado o la dirección URL que, finalmente, copiará y pegará en las experiencias del sitio web.
 
@@ -493,8 +489,7 @@ Para añadir interactividad al vídeo:
    Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
+   Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
 
    Después de agregar segmentos de línea de tiempo y publicar el vídeo interactivo, estará listo para agregarlo a la página de aterrizaje de sitio web existente. Consulte [Integración de vídeos interactivos con el sitio web.](#integrating-an-interactive-video-with-your-website)
 
@@ -519,9 +514,8 @@ Si ha añadido interactividad con las vistas de preguntas y respuestas rápidas,
 El código incrustado copiado se establece para un entorno interactivo, por lo que debe ajustarse automáticamente al área ocupada anteriormente por el vídeo estático.
 
 >[!NOTE]
->
->En este punto, si ha agregado interactividad solo con páginas web con hipervínculos, ya no estará.
->Sin embargo, si ha agregado interactividad para activar una vista rápida, las miniaturas adyacentes al vídeo interactivo solo se muestran con fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas de ciclo de vida existentes en su sitio web.
+En este punto, si ha agregado interactividad solo con páginas web con hipervínculos, ya no estará.
+Sin embargo, si ha agregado interactividad para activar una vista rápida, las miniaturas adyacentes al vídeo interactivo solo se muestran con fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas de ciclo de vida existentes en su sitio web.
 
 **Ejemplo**
 
@@ -563,8 +557,7 @@ La integración es tan sencilla como eliminar el código incrustado de vídeo y 
 ## Integración de un vídeo interactivo con una vista rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->Esta tarea solo se aplica si es cliente independiente de AEM Assets.
+Esta tarea solo se aplica si es cliente independiente de AEM Assets.
 
 El último paso de este proceso es integrar el vídeo interactivo con una implementación de vista rápida existente que se utiliza en el sitio web. No existe una solución para la integración que funcione en todos los casos. Cada implementación de QuickView es única. Como tal, se necesita un enfoque específico que muy probablemente implique la asistencia de una persona de TI de primer nivel.
 
