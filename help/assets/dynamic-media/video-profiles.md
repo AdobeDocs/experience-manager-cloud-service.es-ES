@@ -2,9 +2,9 @@
 title: Perfiles de vídeo de Dynamic Media
 description: Dynamic Media ya incluye un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil incorporado están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede añadir recortes inteligentes a los vídeos.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3680'
 ht-degree: 17%
 
 ---
@@ -98,7 +98,7 @@ Los formatos de vídeo compatibles para el recorte inteligente son MP4, MKV, MOV
 El tamaño máximo de archivo de vídeo admitido para el recorte inteligente es el siguiente criterio:
 
 * Duración de cinco minutos.
-* 30 fotogramas por segundo (FPS).
+* 30 cuadros por segundo (FPS).
 * Tamaño de archivo de 300 MB.
 
 Tenga en cuenta que Adobe Sensei está actualmente limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS. Si el vídeo tiene un FPS más alto, la duración máxima del vídeo admitido disminuye. Por ejemplo, un vídeo de 60 FPS debe durar dos minutos y medio para que sea compatible con Adobe Sensai y con el recorte inteligente.
@@ -424,6 +424,6 @@ You can remove a Video Profile from a folder from within the **[!UICONTROL Tools
 ### Eliminación de un Perfil de vídeo de las carpetas mediante Propiedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toque o haga clic en el logotipo de AEM, vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta desde la que desee quitar un Perfil de vídeo.
-1. En la carpeta, toque o haga clic en la marca de verificación para seleccionarla y, a continuación, toque o haga clic en **[Propiedades]**.
+1. En la carpeta, toque o haga clic en la marca de verificación para seleccionarla y, a continuación, toque **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]** y seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
