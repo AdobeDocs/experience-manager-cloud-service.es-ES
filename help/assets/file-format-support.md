@@ -3,9 +3,9 @@ title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,6 @@ La leyenda siguiente describe el nivel de asistencia.
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## Formatos de imagen en [!DNL Dynamic Media] {#image-support-dynamic-media}
@@ -122,16 +121,16 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/a
 | MFW | ✓ | ✓ | ✓ |
 | MOS | ✓ | ✓ | ✓ |
 | MRW | ✓ | ✓ | ✓ |
-| NF | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
 | NRW | ✓ | ✓ | ✓ |
 | ORF | ✓ | ✓ | ✓ |
 | PEF | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
 | RAW | ✓ | ✓ | ✓ |
 | RW2 | ✓ | ✓ | ✓ |
 | RWL | ✓ | ✓ | ✓ |
 | SRF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
 | X3F | ✓ | ✓ | ✓ |
 
 ## Formatos de documento {#document-formats}
@@ -147,7 +146,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | PPT | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
-| F | ✓ | ✓ | ✓ | - | - |
+| ODF | ✓ | ✓ | ✓ | - | - |
 | OFG | ✓ | ✓ | ✓ | - | - |
 | ODM | ✓ | ✓ | ✓ | - | - |
 | ODP | ✓ | ✓ | ✓ | - | - |
