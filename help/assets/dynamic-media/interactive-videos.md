@@ -2,9 +2,9 @@
 title: Vídeos interactivos
 description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6016'
 ht-degree: 5%
 
 ---
@@ -88,7 +88,7 @@ Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynami
 1. **Añadir un vídeo interactivo en el sitio web o en el sitio web en AEM** Si utiliza AEM Sites, AEM comercio electrónico o ambos, puede agregar el vídeo interactivo directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 Utilice el código incrustado o la URL para integrar el vídeo interactivo con las experiencias del sitio web. Consulte [Integración de vídeos interactivos con el sitio web](#integrating-an-interactive-video-with-your-website).
 Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de un vídeo interactivo con una vista rápida](#integrating-an-interactive-video-with-an-existing-quickview)existente.
-   [](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## (Opcional) Identificación de variables de Quickview {#optional-identifying-quickview-variables}
 
