@@ -3,9 +3,9 @@ title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos por Experience Manager Assets como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
+source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '828'
 ht-degree: 9%
 
 ---
@@ -61,6 +61,9 @@ La leyenda siguiente describe el nivel de asistencia.
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | - | - |
+
+* Actualmente, la compatibilidad con WebP es para compresión con pérdida y admite valores de 0 a 100 para cambiar la calidad de la imagen.
 
 ## Formatos de imagen en [!DNL Dynamic Media] {#image-support-dynamic-media}
 
