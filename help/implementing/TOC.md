@@ -4,10 +4,10 @@ user-guide-title: Implementar para AEM as a Cloud Service
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 66%
+source-wordcount: '408'
+ht-degree: 64%
 
 ---
 
@@ -45,7 +45,6 @@ ht-degree: 66%
    + [Uso de bibliotecas del lado del cliente](developing/introduction/clientlibs.md)
    + [Configuraciones y el navegador de configuración](developing/introduction/configurations.md)
    + [Registro](developing/introduction/logging.md)
-   + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Diferencias de página](/help/implementing/developing/introduction/page-diff.md)
    + [Limitaciones del editor](/help/implementing/developing/introduction/editor-limitations.md)
    + [Convenciones de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)
