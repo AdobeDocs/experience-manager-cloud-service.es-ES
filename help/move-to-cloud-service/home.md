@@ -2,7 +2,7 @@
 title: El paso de AEM as a Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager as a Cloud Service El paso de AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 98%
