@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Experience Manager permite los siguientes niveles de procesamiento.
 
 | Opción | Descripción | Casos de uso cubiertos |
 |---|---|---|
-| [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles) </li> <li> Previsualización grande (representación web - 1280 px) </li><li> Metadatos y extracción de texto.</li></ul> |
+| [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Miniaturas estándar utilizadas por la interfaz [!DNL Assets] de usuario (48, 140 y 319 píxeles) </li> <li> Previsualización grande (representación web: 1280 píxeles) </li><li> Metadatos y extracción de texto.</li></ul> |
 | [Configuración personalizada](#standard-config) | Configurado por los administradores mediante la interfaz de usuario. Proporciona más opciones para la generación de representaciones ampliando la opción predeterminada. Amplíe la opción lista para usar para proporcionar diferentes formatos y representaciones. | <ul><li>Representación de FPO. </li> <li>Cambiar el formato de archivo y la resolución de las imágenes</li> <li> Se aplica condicionalmente a los tipos de archivo configurados. </li> </ul> |
 | [Perfil personalizado](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para utilizar código personalizado a través de aplicaciones personalizadas para llamar al servicio [de cómputo de](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)recursos. Admite requisitos más complejos en un método escalable y nativo de la nube. | Consulte casos [de uso](#custom-config)permitidos. |
 
@@ -78,9 +78,9 @@ Para crear un perfil de procesamiento estándar, siga estos pasos:
 1. Para generar otras representaciones, haga clic en **[!UICONTROL Añadir nuevo]** y proporcione la siguiente información:
 
    * Nombre de archivo de cada representación.
-   * Formato de archivo (PNG, JPEG o GIF) de cada representación.
+   * Formato de archivo (PNG, JPEG, GIF o WebP) de cada representación.
    * Anchura y altura en píxeles de cada representación. Si no se especifican los valores, se utiliza el tamaño de píxel completo de la imagen original.
-   * Calidad en porcentaje de cada representación JPEG.
+   * Calidad en porcentaje de cada representación JPEG y WebP.
    * Se han incluido y excluido tipos MIME para definir la aplicabilidad de un perfil.
 
    ![proceso-perfiles-adición](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ La integración del servicio de cómputo de recursos permite al Experience Manag
 
 ![custom-processing-perfil](assets/custom-processing-profile.png)
 
-*Figura: Utilice el campo Parámetrosde servicio para pasar información agregada a los parámetros predefinidos generados en la aplicación personalizada. En este ejemplo, cuando se cargan imágenes de campaña, las imágenes se actualizan con`Jumanji`texto en la`Arial-BoldMT`fuente.*
+*Figura: Utilice el campo Parámetros  de servicio para pasar información agregada a los parámetros predefinidos generados en la aplicación personalizada. En este ejemplo, cuando se cargan imágenes de campaña, las imágenes se actualizan con `Jumanji` texto en la `Arial-BoldMT` fuente.*
 
 ## Uso de perfiles de procesamiento para procesar recursos {#use-profiles}
 
