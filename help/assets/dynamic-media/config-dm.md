@@ -2,9 +2,9 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5598'
 ht-degree: 8%
 
 ---
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de la compañía. |
    | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**: Cuando se cargan recursos, el sistema los ingesta y proporciona la URL o incrustación instantáneamente. No es necesaria la intervención del usuario para publicar recursos.<br>**[!UICONTROL Tras la Activación]**: Debe publicar explícitamente el recurso primero antes de proporcionar un vínculo URL/Incrustar.<br>**[!UICONTROL Publicación ]**selectiva: Los recursos se publican automáticamente solo para previsualización segura y se pueden publicar explícitamente en AEM sin publicarlos en DMS7 para envío de dominio público. En el futuro, Adobe mejorará esta opción para publicar recursos para AEM y publicarlos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en AEM para la vista previa; estos mismos recursos no se publican en DMS7 para envío de dominio público. |
    | Servidor de previsualización segura | Permite especificar la ruta de URL del servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe Systems recomienda que deje esta configuración como se especificó. |
-   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic MediaHabilitar de forma predeterminada]**<br>****: La configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]**: La configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, toque **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]** , en la lista desplegable del modo **[!UICONTROL de sincronización de medios]** dinámicos, elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el contenido**antes.* Consulte también [Uso de la publicación selectiva en el nivel de carpeta en Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Heredado ]**: No hay ningún valor de sincronización explícita en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]**: Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: Excluya todo lo que haya en este subárbol de la sincronización con Dynamic Media. |
+   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic MediaHabilitar de forma predeterminada]**<br>****: La configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]**: La configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, toque **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]** , en la lista desplegable del modo **[!UICONTROL de sincronización de medios]** dinámicos, elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el contenido**antes.* Consulte también [Uso de la publicación selectiva en el nivel de carpeta en Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Heredado ]**: No hay ningún valor de sincronización explícita en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]**: Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: Excluya todo lo que haya en este subárbol de la sincronización con Dynamic Media. |
 
    >[!NOTE]
    >
@@ -254,14 +254,14 @@ Al hacerlo, se haría lo siguiente:
 * Las representaciones dinámicas que devuelven salida RGB la devolverán en el espacio de color *sRGB* .
 * Las representaciones dinámicas que devuelven una salida CMYK la devolverán en el espacio de color *WebCoated* .
 
-#### Configuración del procesamiento de recursos {#configuring-asset-processing}
+#### Edición de tipos MIME para formatos admitidos {#configuring-asset-processing}
 
-Puede definir qué tipos de recursos deben procesarse con Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
+Puede definir qué tipos de recursos se procesan con Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
 
 * Convertir un Adobe PDF en un recurso de catálogo electrónico.
 * Convertir un Documento de Adobe Photoshop (.PSD) en un recurso de plantilla de letrero para su personalización.
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo PostScript encapsulado de Adobe Photoshop (.EPS).
-* Nota: Los Perfiles de vídeo y los Perfiles de imagen se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
+* [Se pueden utilizar Perfiles](/help/assets/dynamic-media/video-profiles.md) de vídeo y Perfiles [de](/help/assets/dynamic-media/image-profiles.md) imagen para definir el procesamiento de vídeos e imágenes, respectivamente.
 
 Consulte [Carga de recursos](/help/assets/add-assets.md).
 
@@ -277,7 +277,7 @@ Para configurar el procesamiento de recursos:
 1. En la carpeta mimeTypes, seleccione un tipo de MIME.
 1. A la derecha de la página CRXDE Lite, en la parte inferior:
 
-   * Haga clic con el doble en el campo **[!UICONTROL habilitado]** . De forma predeterminada, todos los tipos de MIME de recursos están activados (definidos como **[!UICONTROL true]**), lo que significa que los recursos se sincronizarán con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo de MIME de recurso, cambie esta configuración a **[!UICONTROL false]**.
+   * Haga clic con el doble en el campo **[!UICONTROL habilitado]** . De forma predeterminada, todos los tipos de MIME de recursos están activados (definidos como **[!UICONTROL true]**), lo que significa que los recursos se sincronizarán con Dynamic Media para su procesamiento. Si desea excluir este tipo de MIME de recurso para que no se procese, cambie esta configuración a **[!UICONTROL false]**.
 
    * Haga clic con el botón doble en **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte Tipos [de MIME](/help/assets/file-format-support.md) admitidos para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
@@ -287,11 +287,11 @@ Para configurar el procesamiento de recursos:
 
 1. En la esquina superior izquierda de la página, toque **[!UICONTROL CRXDE Lite]** para volver a AEM.
 
-#### Añadir tipos MIME personalizados para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
+#### Añadir tipos MIME para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
 
 Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets. Para garantizar que AEM no elimina ningún nodo nuevo que agregue a CRXDE Lite, debe asegurarse de mover el tipo MIME antes de `image_` y de que su valor activado se establezca en **[!UICONTROL falso]**.
 
-Para agregar tipos MIME personalizados para formatos no admitidos:
+Para agregar tipos MIME para formatos no admitidos:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -305,7 +305,7 @@ Para agregar tipos MIME personalizados para formatos no admitidos:
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. En la página Servicio **MIME de tipo Scene7 Asset de** Adobe CQ, haga clic en el icono de signo más &lt;+>. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de MIME es trivial.
+1. En la página **Adobe CQ Scene7 Asset MIME type Service** , haga clic en cualquier icono de signo más &lt;+>. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de MIME es trivial.
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
@@ -453,7 +453,7 @@ Para crear un ajuste preestablecido de conjunto por lotes para la generación au
 
    Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. En la barra de navegación situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Ajustes > Ajustes]de aplicación > Ajustes preestablecidos[!UICONTROL de conjuntos de]lotes > Ajuste preestablecido[!UICONTROL de conjuntos de]** lotes.
+1. En la barra de navegación situada cerca de la parte superior de la página, haga clic en **[!UICONTROL Ajustes > Ajustes] de aplicación > Ajustes preestablecidos [!UICONTROL de conjuntos de] lotes > Ajuste preestablecido [!UICONTROL de conjuntos de]** lotes.
 
    Tenga en cuenta que Formulario **[!UICONTROL de]** Vista, tal como se define en la esquina superior derecha de la página Detalles, es la vista predeterminada.
 
