@@ -2,9 +2,9 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager Cloud Service.
 translation-type: tm+mt
-source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
+source-git-commit: 9719a440a85b150599efa3eb9dc2bd443a917217
 workflow-type: tm+mt
-source-wordcount: '5598'
+source-wordcount: '5619'
 ht-degree: 8%
 
 ---
@@ -193,8 +193,8 @@ Las tareas de configuración y configuración incluyen lo siguiente:
 * [Configuración de publicación para Image Server](#publishing-setup-for-image-server)
 * [Configuración de la configuración general de la aplicación](#configuring-application-general-settings)
 * [Configuración de la administración de color](#configuring-color-management)
-* [Configuración del procesamiento de recursos](#configuring-asset-processing)
-* [Añadir tipos MIME personalizados para formatos no admitidos](#adding-custom-mime-types-for-unsupported-formats)
+* [Edición de tipos MIME para formatos admitidos](#editing-mime-types-for-supported-formats)
+* [Añadir tipos MIME para formatos no admitidos](#adding-mime-types-for-unsupported-formats)
 * [Creación de ajustes preestablecidos de conjunto de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuración de publicación para Image Server {#publishing-setup-for-image-server}
@@ -254,7 +254,7 @@ Al hacerlo, se haría lo siguiente:
 * Las representaciones dinámicas que devuelven salida RGB la devolverán en el espacio de color *sRGB* .
 * Las representaciones dinámicas que devuelven una salida CMYK la devolverán en el espacio de color *WebCoated* .
 
-#### Edición de tipos MIME para formatos admitidos {#configuring-asset-processing}
+#### Edición de tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
 
 Puede definir qué tipos de recursos se procesan con Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
 
@@ -265,7 +265,7 @@ Puede definir qué tipos de recursos se procesan con Dynamic Media y personaliza
 
 Consulte [Carga de recursos](/help/assets/add-assets.md).
 
-Para configurar el procesamiento de recursos:
+**Para editar los tipos MIME para los formatos admitidos**
 
 1. En AEM, haga clic en el logotipo de AEM para acceder a la consola de navegación global y, a continuación, haga clic en **[!UICONTROL General > CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
@@ -287,11 +287,11 @@ Para configurar el procesamiento de recursos:
 
 1. En la esquina superior izquierda de la página, toque **[!UICONTROL CRXDE Lite]** para volver a AEM.
 
-#### Añadir tipos MIME para formatos no admitidos {#adding-custom-mime-types-for-unsupported-formats}
+#### Añadir tipos MIME para formatos no admitidos {#adding-mime-types-for-unsupported-formats}
 
 Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets. Para garantizar que AEM no elimina ningún nodo nuevo que agregue a CRXDE Lite, debe asegurarse de mover el tipo MIME antes de `image_` y de que su valor activado se establezca en **[!UICONTROL falso]**.
 
-Para agregar tipos MIME para formatos no admitidos:
+**Para agregar tipos MIME a formatos no admitidos**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -357,7 +357,7 @@ Como alternativa, tenga en cuenta que puede utilizar el código **[!UICONTROL de
 
 Hay dos elementos disponibles para la definición: Coincidencia y Nombre base. Estos campos permiten definir todos los elementos de una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. La convención de nombres individual de una compañía puede utilizar una o varias líneas de definición para cada uno de estos elementos. Puede utilizar tantas líneas como desee para su definición única y agruparlas en elementos distintos, como imagen principal, elemento de color, elemento de Vista alternativa y elemento de muestra.
 
-Para configurar la nominación predeterminada:
+**Para configurar la nomenclatura predeterminada**
 
 1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -391,7 +391,7 @@ Puede crear, editar y administrar los ajustes preestablecidos de conjunto de lot
 
 Puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que le permite utilizar expresiones regulares. Como en Nombre predeterminado, puede elegir Código de Vista al mismo tiempo que define en la Vista Formulario y utilizar expresiones regulares para crear sus definiciones. También puede desactivar la vista para usar una u otra exclusivamente.
 
-Para crear un ajuste preestablecido de conjunto por lotes:
+**Creación de un ajuste preestablecido de conjunto por lotes**
 
 1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -447,7 +447,7 @@ La agrupación de la parte del nombre de recurso compartido del conjunto de giro
 
 Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmula de conjunto de giros 2D que aparece en **Ajustes preestablecidos de conjunto de lotes** en el cuadro de diálogo **Opciones de carga de trabajo**.
 
-Para crear un ajuste preestablecido de conjunto por lotes para la generación automática de un conjunto de giros 2D:
+**Creación de un ajuste preestablecido de conjunto de lotes para la generación automática de un conjunto de giros 2D**
 
 1. Inicie sesión en su cuenta de Dynamic Media Classic (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -542,11 +542,13 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 1. En el campo **[!UICONTROL Número máximo de trabajos]** paralelos, cambie el número al valor deseado.
 
-   De forma predeterminada, el número máximo de trabajos paralelos depende del número de núcleos de CPU disponibles. Por ejemplo, en un servidor de 4 núcleos, asigna dos subprocesos de trabajo. (Un valor entre 0,0 y 1,0 está basado en la proporción, o cualquier número bueno que no sea 1 asignará el número de subprocesos de trabajo).
+   Puede aumentar los trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinados escenarios (es decir, una migración inicial o una carga masiva única) puede utilizar un valor grande. Sin embargo, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, debe probar y ajustar el valor en función de su caso de uso particular.
 
-   Adobe recomienda configurar 32 trabajos **[!UICONTROL paralelos]** máximos para admitir correctamente la carga pesada de archivos en Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Toque **[!UICONTROL Guardar]**.
 
