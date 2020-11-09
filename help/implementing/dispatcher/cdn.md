@@ -2,9 +2,9 @@
 title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
+source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -20,10 +20,10 @@ La CDN administrada por AEM satisfará la mayoría de los requisitos de rendimie
 
 Siga estos pasos para prepararse para el envío de contenido mediante la CDN predeterminada del Adobe:
 
-1. Proporcione el certificado SSL firmado y la clave secreta para Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea.
+1. Proporcione el certificado SSL firmado y la clave secreta para Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea. Adobe admite hasta 10 certificados SSL para un programa.
    **Nota:** Aem como Cloud Service no admite certificados de dominio validados (DV). Además, debe ser un certificado X.509 TLS de una entidad de certificación de confianza (CA) con una clave privada RSA de 2048 bits que coincida.
 1. Informar a la asistencia al cliente:
-   * qué dominio personalizado debe asociarse con un determinado entorno, tal como se define en la identificación del programa y en la identificación del entorno. Tenga en cuenta que los dominios personalizados del lado del autor no son compatibles.
+   * qué dominios personalizados deben asociarse con un determinado entorno, tal como se define en la identificación del programa y la identificación del entorno. Se admiten hasta 100 dominios para un entorno determinado y los dominios no pueden contener comodines. Tenga en cuenta que los dominios personalizados del lado del autor no son compatibles.
    * si se necesita alguna inclusión en la lista de permitidos IP para restringir el tráfico a un entorno determinado.
 1. Coordine con el servicio de atención al cliente la temporización de los cambios necesarios en los registros DNS. Las instrucciones son diferentes en función de si se necesita un registro de apex:
    * si no se necesita un registro apex, los clientes deben establecer el registro DNS CNAME para que apunte a su FQDN `cdn.adobeaemcloud.com`.
