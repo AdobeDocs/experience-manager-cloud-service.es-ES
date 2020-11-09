@@ -1,11 +1,11 @@
 ---
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: 'Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service. '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ La adaptabilidad de las instancias de cada inquilino del servicio puede ser auto
 ## Entornos {#environments}
 
 >[!NOTE]
->
 >Para obtener más información, consulte [Implementación: modos de ejecución](/help/implementing/deploying/overview.md#runmodes)
 
-AEM as a Cloud Service está disponible como instancias individuales y cada instancia representa un entorno AEM completo. Existen cuatro tipos de entornos disponibles con AEM as a Cloud Service:
+AEM as a Cloud Service está disponible como instancias individuales y cada instancia representa un entorno AEM completo.
+
+Hay tres tipos de entornos disponibles con AEM como Cloud Service:
 
 * **Entorno de producción**: aloja las aplicaciones para usuarios empresariales.
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service está disponible como instancias individuales y cada inst
 
 * **Entorno de desarrollo**: permite a los desarrolladores implementar aplicaciones de AEM en las mismas condiciones de tiempo de ejecución que los entornos de ensayo y producción.
 
-* **Entorno de demostración**: puede utilizarse con fines de evaluación, demostración, creación de prototipos y aprendizaje.
-
-Los entornos de desarrollo y demostración suelen denominarse entornos *no productivos*.
+   Consulte [Administración de Entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obtener más detalles.
 
 ## Programas {#programs}
 
