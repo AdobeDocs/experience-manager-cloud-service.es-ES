@@ -3,9 +3,9 @@ title: Marcar como agua los recursos
 description: Añada una marca de agua en los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
+source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Para configurar [!DNL Experience Manager] los recursos de marca de agua, siga es
 
 1. Un archivo PNG se aplica como marca de agua. Cargue este archivo en el repositorio de DAM.
 
-1. Acceda al repositorio de [!DNL Cloud Manager] Git asociado con su entorno. Transfiera un archivo denominado `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` en su repositorio [!DNL Cloud Manager] Git con el siguiente contenido. Para obtener más información, consulte [cómo realizar la configuración de OSGi [!DNL Experience Manager] en un Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. Acceda al repositorio de [!DNL Cloud Manager] Git asociado con su entorno. Transfiera un archivo denominado `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` en el repositorio con el siguiente contenido. Para obtener instrucciones, consulte [cómo realizar la configuración de OSGi [!DNL Experience Manager] en un Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
    ```json
    {
