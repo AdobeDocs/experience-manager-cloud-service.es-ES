@@ -2,10 +2,10 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 2%
+source-wordcount: '1312'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +130,7 @@ Sin embargo, no se admiten los siguientes caracteres (lista separada por espacio
 Para cargar un mayor número de archivos, especialmente si existen en una jerarquía de carpetas anidada en disco, se pueden utilizar los siguientes métodos:
 
 * Utilice un script o una herramienta de carga personalizada que aproveche las API [de carga de](developer-reference-material-apis.md#asset-upload-technical)recursos. Una herramienta personalizada de este tipo puede añadir una gestión adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de los archivos), si es necesario.
-* Utilice la aplicación [de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) Experience Manager para cargar jerarquías de carpetas anidadas.
+* Utilice la aplicación [de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) Experience Manager para cargar jerarquías de carpetas anidadas.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Para cargar un mayor número de archivos, especialmente si existen en una jerarq
 Además de la interfaz de usuario del navegador web, Experience Manager admite otros clientes en el escritorio. También proporcionan una experiencia de carga sin necesidad de ir al navegador web.
 
 * [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) proporciona acceso a los recursos desde [!DNL Experience Manager] las aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
-* [La aplicación](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) de escritorio Experience Manager simplifica el trabajo con los recursos en el escritorio, independientemente del tipo de archivo o la aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del navegador solo admite la carga de listas de archivos planos.
+* [La aplicación](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de escritorio Experience Manager simplifica el trabajo con los recursos en el escritorio, independientemente del tipo de archivo o la aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del navegador solo admite la carga de listas de archivos planos.
 
 ## Procesamiento adicional {#additional-processing}
 
@@ -171,7 +171,7 @@ Los detalles técnicos de las API y el protocolo de carga, así como los víncul
 
 >[!MORELIKETHIS]
 >
->* [Aplicación de escritorio de Adobe Experience Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html)
+>* [Aplicación de escritorio de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Documentación de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload-technical)
