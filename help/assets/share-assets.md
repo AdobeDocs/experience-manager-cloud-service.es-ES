@@ -3,10 +3,10 @@ title: Compartir recursos, carpetas y colecciones como vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos Experience Manager como un hipervínculo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 4%
+source-wordcount: '898'
+ht-degree: 3%
 
 ---
 
@@ -113,7 +113,7 @@ Users can download the required assets and share these outside of [!DNL Experien
 
 Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente los recursos aprobados con sus profesionales creativos mediante,
 
-* **AEM aplicación** de escritorio: La aplicación funciona en Windows y Mac. Consulte Descripción general [de la aplicación](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html)de escritorio. Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [Examinar, buscar y previsualización de recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y compartirlos con sus homólogos que son usuarios AEM, por ejemplo, cargando imágenes nuevas. Consulte [Carga de recursos mediante la aplicación](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)de escritorio.
+* **AEM aplicación** de escritorio: La aplicación funciona en Windows y Mac. Consulte Descripción general [de la aplicación](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)de escritorio. Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [Examinar, buscar y previsualización de recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y compartirlos con sus homólogos que son usuarios AEM, por ejemplo, cargando imágenes nuevas. Consulte [Carga de recursos mediante la aplicación](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)de escritorio.
 
 * **Vínculo** de recurso de Adobe: Los profesionales creativos pueden buscar y utilizar recursos directamente desde Adobe InDesign, Adobe Illustrator y Adobe Photoshop.
 
@@ -167,7 +167,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Habilitar acciones de escritorio para usar con la aplicación de escritorio {#desktop-actions}
 
-Desde la interfaz de usuario de Recursos en un navegador, puede explorar las ubicaciones de los recursos o el cierre de compra y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y para habilitarlas, consulte [Habilitar acciones de escritorio en AEM interfaz](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)web.
+Desde la interfaz de usuario de Recursos en un navegador, puede explorar las ubicaciones de los recursos o el cierre de compra y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y para habilitarlas, consulte [Habilitar acciones de escritorio en AEM interfaz](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)web.
 
 ![Activar acciones de escritorio para usar como método abreviado al trabajar con una aplicación de escritorio](assets/enable_desktop_actions.png)
 
