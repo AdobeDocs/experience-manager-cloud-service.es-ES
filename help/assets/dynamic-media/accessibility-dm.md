@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 7af8ddda4aee093b22147db9be9f65cd0c131c04
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 
 Dynamic Media admite tecnologías de control de teclado y asistencia, como lectores de pantalla JAWS y NVDA, en la interfaz de usuario de creación.
 
+
+
 ## Compatibilidad de accesibilidad de teclado en Dynamic Media
 
 Las pulsaciones de teclas admitidas por los elementos individuales de la interfaz de usuario son, en la mayoría de los casos, obvias y fáciles de detectar. El control de teclado en Dynamic Media es de lo siguiente:
@@ -25,8 +27,8 @@ Las pulsaciones de teclas admitidas por los elementos individuales de la interfa
 El uso del enfoque de entrada `Tab` avanza al siguiente elemento de interfaz de usuario en el orden de tabulación; el uso `Shift+Tab` devuelve el enfoque de entrada al elemento de interfaz de usuario anterior.
 El recorrido de enfoque sigue la ubicación del elemento de interfaz de usuario natural en la pantalla y se mueve de izquierda a derecha y, a continuación, de arriba abajo.
 * Posibilidad de utilizar la `Spacebar` tecla y `Enter` para activar elementos de la interfaz de usuario estándar, como botones, lista desplegable, etc.
-* Posibilidad de utilizar algunas pulsaciones de teclas personalizadas para interactuar con elementos de interfaz de usuario complejos, como las teclas de flecha del Editor de zonas interactivas.
 * Posibilidad de ver el resaltado del enfoque del teclado en el elemento activo. El elemento de interfaz de usuario que tiene foco de entrada puede recibir una indicación de enfoque visual como borde representado alrededor del elemento de interfaz de usuario.
+* Posibilidad de utilizar algunas pulsaciones de teclas personalizadas para interactuar con elementos de interfaz de usuario complejos, como las teclas de flecha del Editor de zonas interactivas. En el editor Recorte de imagen/Recorte inteligente, puede utilizar las teclas de flecha para recortar el tamaño del marco, cambiar la posición de la imagen o ambas opciones.
 
 Dado que Dynamic Media es un complemento de AEM Assets, la mayor parte del comportamiento de control de teclado es exactamente el mismo que en AEM Assets. Por ejemplo, el `Cancel` botón de Dynamic Media tiene el mismo resaltado de enfoque que en AEM Assets y reacciona a la `Spacebar` clave que en AEM Assets. Consulte Métodos abreviados [de teclado en Recursos](/help/assets/accessibility.md#keyboard-shortcuts). Las excepciones son el editor de puntos interactivos y los editores de recorte de imagen/recorte inteligente.
 
