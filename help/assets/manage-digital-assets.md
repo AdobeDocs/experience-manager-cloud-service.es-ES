@@ -4,9 +4,9 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Consulte [Adición de recursos digitales a Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un usuario de DAM carga uno o varios recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y lo notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede afectar al rendimiento en función del tamaño del repositorio y del número de recursos cargados. Para habilitar la función, configure el detector [!UICONTROL de duplicación de recursos de]Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
+Si un usuario de DAM carga uno o varios recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y lo notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede afectar al rendimiento en función del tamaño del repositorio y del número de recursos cargados. Para habilitar la función, configure el detector [!UICONTROL de duplicación de recursos de]Adobe AEM Cloud. Consulte [cómo realizar las configuraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)de OSGi. La detección de duplicación se basa en el valor único `dam:sha1` almacenado en `jcr:content/metadata/dam:sha1`. Esto significa que los recursos de duplicado se detectan aunque los nombres de archivo sean diferentes.
 
 ![Detectar la configuración OSGi del recurso de duplicado](assets/duplicate-detection.png)
 
@@ -544,7 +544,7 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
 1. Descargue o imprima el PDF con las opciones de la parte superior derecha.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la configuración **[!UICONTROL de PDF de]** anotación desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
