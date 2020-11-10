@@ -2,9 +2,9 @@
 title: Banner de carrusel
 description: Aprenda a trabajar con letreros de carrusel en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4605'
+source-wordcount: '4620'
 ht-degree: 4%
 
 ---
@@ -273,7 +273,7 @@ Si está editando imágenes interactivas con zonas interactivas y recortando la 
    * Para zonas interactivas: En la imagen, toque una ubicación en la que desee que aparezca el punto interactivo.
    * Para mapas de imagen: En la imagen, haga clic en y arrastre desde la parte superior izquierda a la parte inferior derecha para crear el área del mapa de imagen. Puede ajustar el tamaño del mapa de imagen arrastrando las esquinas.
 
-   Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. Añada zonas interactivas o mapas de imagen adicionales según sea necesario.
+   Si es necesario, arrastre el punto interactivo o el mapa de imagen a una nueva ubicación. O bien, utilice las teclas de flecha del teclado para controlar la posición de un punto interactivo seleccionado. Añada zonas interactivas o mapas de imagen adicionales según sea necesario.
 
    Para eliminar una zona interactiva o un mapa de imagen, pulse la pestaña **[!UICONTROL Acciones]**. En el encabezado **[!UICONTROL Mapas y zonas interactivas]**, del menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione el nombre del punto interactivo o del mapa de imagen que desea eliminar. Pulse el icono **[!UICONTROL Papelera]** situado junto al menú y, a continuación, pulse **[!UICONTROL Eliminar]**.
 
