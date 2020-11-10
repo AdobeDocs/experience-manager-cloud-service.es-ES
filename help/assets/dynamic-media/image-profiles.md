@@ -2,9 +2,9 @@
 title: Perfiles de imagen de Dynamic Media
 description: Cree Perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2754'
 ht-degree: 11%
 
 ---
@@ -195,7 +195,7 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
 Consulte también [Edición del recorte inteligente o muestra inteligente de varias imágenes](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
-**Para editar el recorte inteligente o la muestra inteligente de una sola imagen**:
+**Edición del recorte inteligente o la muestra inteligente de una sola imagen**
 
 1. Toque el logotipo de AEM y vaya a **[!UICONTROL Recursos]** y, a continuación, a la carpeta que tenga un recorte inteligente o un Perfil de imagen de muestra inteligente aplicado.
 
@@ -209,6 +209,7 @@ Consulte también [Edición del recorte inteligente o muestra inteligente de var
    * En la imagen, arrastre un controlador de esquina para ajustar el tamaño del área visible del recorte o muestra.
    * En la imagen, arrastre el cuadro/muestra a una nueva ubicación. Solo puede editar muestras de imagen; las muestras de color son estáticas.
    * Por encima de la imagen, toque **[!UICONTROL Revertir]** para deshacer todas las ediciones y restaurar el recorte o muestra original.
+   * Utilice las teclas de flecha del teclado para recortar el tamaño del marco, o para cambiar la posición de la imagen, o ambas.
 
 1. Cerca de la esquina superior derecha de la página, toque **[!UICONTROL Guardar]** y, a continuación, **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
@@ -220,7 +221,7 @@ Después de editar un recorte inteligente y guardarlo, el cambio se propaga dond
 
 Puede volver a ejecutar el recorte inteligente para generar los cultivos adicionales de nuevo, si es necesario.
 
-**Para editar el recorte inteligente o la muestra inteligente de varias imágenes**:
+**Edición del recorte inteligente o la muestra inteligente de varias imágenes**
 
 1. Toque el logotipo de AEM y vaya a **[!UICONTROL Recursos]** y, a continuación, a una carpeta que tenga un recorte inteligente o un Perfil de imagen de muestra inteligente aplicado.
 1. En la carpeta, toque el icono **[!UICONTROL Más acciones]** (...) y luego **[!UICONTROL Recorte]** inteligente.
