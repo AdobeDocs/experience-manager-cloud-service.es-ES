@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Administre recursos en [!DNL Assets].'
 description: Buscar, recuperar, licenciar y [!DNL Adobe Stock] administrar recursos desde dentro [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '984'
 ht-degree: 5%
 
 ---
@@ -78,7 +78,7 @@ Como alternativa, escriba `Location: Adobe Stock` inicio en la barra de búsqued
 
 ![Buscar filtros en los recursos de Adobe Stock resaltados y Experience Manager en los resultados de búsqueda](assets/aem-search-filters2.jpg)
 
-*Figura: Buscar filtros[!DNL Experience Manager]y recursos resaltados[!DNL Adobe Stock]en los resultados de búsqueda.*
+*Figura: Buscar filtros [!DNL Experience Manager] y recursos resaltados [!DNL Adobe Stock] en los resultados de búsqueda.*
 
 ### Guardar y vista de los recursos necesarios {#saveassets}
 
@@ -96,7 +96,7 @@ Los usuarios pueden obtener licencias de [!DNL Adobe Stock] recursos mediante la
 
 ![Cuadro de diálogo para obtener licencias y guardar recursos de Adobe Stock en Recursos Experience Manager](assets/aem-stock_licenseandsave.jpg)
 
-*Figura: Cuadro de diálogo para obtener la licencia y guardar[!DNL Adobe Stock]recursos en[!DNL Experience Manager Assets].*
+*Figura: Cuadro de diálogo para obtener la licencia y guardar [!DNL Adobe Stock] recursos en [!DNL Experience Manager Assets].*
 
 ### Acceso a metadatos y propiedades de recursos {#access-metadata-and-asset-properties}
 
@@ -118,7 +118,7 @@ Los usuarios pueden ver las propiedades de los recursos con y sin licencia.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con recursos de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Tutorial de vídeo sobre el uso de recursos de Adobe Stock con recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [Ayuda del plan empresarial de Adobe Stock](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Preguntas más frecuentes sobre Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
