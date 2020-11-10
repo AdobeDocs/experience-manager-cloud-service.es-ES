@@ -3,9 +3,9 @@ title: Etiquetado automático de imágenes con etiquetas generadas por AI
 description: Etiquete imágenes utilizando servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas [!DNL Adobe Sensei] mediante servicios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 6%
 
 ---
@@ -205,7 +205,7 @@ Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imág
 
 * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
 * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
-* El etiquetado se admite en las configuraciones regionales en las que se AEM. Para obtener una lista de idiomas, consulte las notas de la versión de las etiquetas [inteligentes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* El etiquetado se admite en los idiomas compatibles con Experience Manager. Para obtener una lista de idiomas, consulte las notas de la versión de [Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice la búsqueda de recursos Omniture (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 
