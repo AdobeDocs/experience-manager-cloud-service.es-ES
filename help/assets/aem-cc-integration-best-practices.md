@@ -4,9 +4,9 @@ description: Las prácticas recomendadas integran una implementación Experience
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 18%
 
 ---
@@ -26,7 +26,6 @@ Siga leyendo para saber qué integraciones elegir entre el escritorio y el DAM d
 
 ## Necesidad de colaboración de creativos, especialistas en mercadotecnia y usuarios de DAM {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | Requisitos | Caso de uso | Superficies involucradas |
 |---|---|---|
 | Simplifique la experiencia para creativos en equipos de escritorio | Racionalice el acceso a los recursos desde un DAM (AEM Assets) para los profesionales creativos o, en términos más generales, para los usuarios de escritorio que trabajan en aplicaciones nativas de creación de recursos. Necesitan una forma sencilla y sencilla de descubrir, utilizar (abrir), editar y guardar los cambios en AEM, así como cargar nuevos archivos. | Win o Mac Desktop; Aplicaciones Creative Cloud |
@@ -38,7 +37,7 @@ Siga leyendo para saber qué integraciones elegir entre el escritorio y el DAM d
 | Propuesta de valor para las personas involucradas | Oferta de Adobe | Superficies involucradas |
 |---|---|---|
 | Los usuarios creativos descubren recursos de AEM, los abren y utilizan, editan y cargan cambios en AEM, así como cargan nuevos archivos en AEM sin salir de las aplicaciones Creative Cloud. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator y InDesign |
-| Los usuarios empresariales simplifican la apertura y el uso de recursos, la edición y la carga de cambios en AEM y la carga de nuevos archivos en AEM desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no son de Adobe. | [Aplicación de escritorio de AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | AEM aplicación de escritorio en el escritorio de Windows y Mac |
+| Los usuarios empresariales simplifican la apertura y el uso de recursos, la edición y la carga de cambios en AEM y la carga de nuevos archivos en AEM desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no son de Adobe. | [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | AEM aplicación de escritorio en el escritorio de Windows y Mac |
 | Los especialistas en marketing y los usuarios empresariales descubren, previsualización, otorgan licencias y guardan y gestionan los recursos de Adobe Stock desde AEM. Los recursos con licencia y guardados proporcionan metadatos de Adobe Stock seleccionados para una mejor gestión. | [Integración de Experience Manager y Adobe Stock](aem-assets-adobe-stock.md) | AEM interfaz web |
 
 Este artículo se centra principalmente en los dos primeros aspectos de las necesidades de colaboración. La distribución y el abastecimiento de activos a escala se mencionan brevemente como un caso de uso. Para estas necesidades, considere Adobe Brand Portal o Asset Share Commons. Las soluciones alternativas como [AEM Assets Brand Portal](https://helpx.adobe.com/es/experience-manager/brand-portal/user-guide.html), las soluciones que se pueden crear en función de los componentes de [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](share-assets.md), mediante la interfaz de usuario [web de Recursos](/help/assets/manage-digital-assets.md) AEM deben revisarse en función de requisitos específicos.
