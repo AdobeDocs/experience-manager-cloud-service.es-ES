@@ -2,9 +2,9 @@
 title: Imágenes interactivas
 description: Aprenda a trabajar con imágenes interactivas en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
 workflow-type: tm+mt
-source-wordcount: '4238'
+source-wordcount: '4253'
 ht-degree: 2%
 
 ---
@@ -256,10 +256,10 @@ Consulte [(Opcional) Vista previa de imágenes](#optional-previewing-interactive
 1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Agregar zona interactiva]** (icono con el dedo) para abrir la página de administración de puntos interactivos.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
 
-1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, toque **[!UICONTROL Zona interactiva]**.
-1.  En la imagen, pulse una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación.
-1. Añada zonas interactivas adicionales según sea necesario mediante la repetición de los pasos a y b.
-1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, toque **[!UICONTROL Eliminar]** (icono de papelera) en el encabezado **[!UICONTROL Zonas]** interactivas.
+   1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, toque **[!UICONTROL Zona interactiva]**.
+   1.  En la imagen, pulse una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación. O bien, utilice las teclas de flecha del teclado para controlar la posición de un punto interactivo seleccionado.
+   1. Añada zonas interactivas adicionales según sea necesario mediante la repetición de los pasos a y b.
+   1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, toque **[!UICONTROL Eliminar]** (icono de papelera) en el encabezado **[!UICONTROL Zonas]** interactivas.
 
 1. En el campo de texto Nombre, escriba el nombre de la zona interactiva. Este nombre también aparece en la lista desplegable Zona interactiva seleccionada.
 1. Realice una de las acciones siguientes:
