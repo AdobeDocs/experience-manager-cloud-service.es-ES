@@ -3,10 +3,10 @@ title: Procesar recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '835'
+ht-degree: 1%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager se puede configurar para que active automáticamente lo
 >* [Introducción a los microservicios de recursos](asset-microservices-configure-and-use.md)
 >* [Formatos de archivo compatibles](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
->* [Aplicación de escritorio de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-desktop-app/using/introduction.translate.html)
+>* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Documentación de Apache Oak sobre acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
