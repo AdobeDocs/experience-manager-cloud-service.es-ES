@@ -2,10 +2,10 @@
 title: Cambios notables en Adobe Experience Manager Assets como Cloud Service
 description: Cambios notables en Adobe Experience Manager Assets en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 19%
+source-wordcount: '626'
+ht-degree: 18%
 
 ---
 
@@ -29,7 +29,7 @@ Las principales diferencias con respecto al Experience Manager 6.5 se encuentran
 >* La [arquitectura](/help/core-concepts/architecture.md) de Adobe Experience Manager as a Cloud Service
 >* [Cambios importantes en AEM as a Cloud Service (Notas de la versión)](/help/release-notes/aem-cloud-changes.md)
 >* [Cambios importantes en AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutoriales de Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/overview.html)
+>* [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Carga e ingestión de recursos {#asset-ingestion}
