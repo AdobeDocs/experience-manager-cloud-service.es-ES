@@ -3,9 +3,9 @@ title: Descargar recursos
 description: Descargue recursos [!DNL Adobe Experience Manager Assets] desde y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 4%
 
 ---
@@ -26,16 +26,16 @@ Puede descargar recursos de Experience Manager mediante los siguientes métodos:
 * [interfaz de usuario de Experience Manager](#download-in-aem)
 * Interfaz de usuario de uso compartido de vínculos de recursos
 * [Uso compartido de recursos comunes](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [Aplicación de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Descargar recursos mediante AEM interfaz {#download-in-aem}
 
-El servicio de descarga asincrónico proporciona un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan de la interfaz de usuario en tiempo real. Los archivos de gran tamaño se descargan de forma asíncrona y se informa a los usuarios de la finalización mediante notificaciones de Experience Manager en la Bandeja de entrada. Consulte [Descripción de la bandeja de entrada](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)del Experience Manager.
+El servicio de descarga asincrónico proporciona un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan de la interfaz de usuario en tiempo real. Los archivos de gran tamaño se descargan de forma asíncrona y se informa a los usuarios de la finalización mediante notificaciones de Experience Manager en la Bandeja de entrada. Consulte [Descripción de la bandeja de entrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)del Experience Manager.
 
 ![Descargar notificación](assets/download-notification.png)
 
-*Figura: Descargue la notificación a través de la[!DNL Experience Manager]Bandeja de entrada.*
+*Figura: Descargue la notificación a través de la [!DNL Experience Manager] Bandeja de entrada.*
 
 Las descargas asincrónicas se activan en cualquiera de los casos siguientes:
 
@@ -86,7 +86,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, cuando se utiliza 
 
 El `Asset Download Servlet` se puede deshabilitar en instancias de [!DNL Experience Manager] publicación actualizando la configuración del despachante para bloquear las solicitudes de descarga de recursos. El servlet también se puede desactivar manualmente directamente mediante la consola OSGi.
 
-1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)filtros.
+1. Para bloquear las solicitudes de descarga de recursos mediante una configuración de distribuidor, edite la `dispatcher.any` configuración y agregue una nueva regla a la sección [de](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)filtros.
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
