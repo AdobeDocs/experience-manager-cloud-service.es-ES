@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 3f27193ea4533e700800fccfe75b123f6480bc69
+source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 71%
+source-wordcount: '1902'
+ht-degree: 70%
 
 ---
 
@@ -28,6 +28,8 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
 
+* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El proceso de *Extracción* copia todo `/home` el conjunto de migración y el proceso de *introducción* copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migrado.
+
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
 * Después de completar la fase de *Extracción* del proceso de transferencia de contenido y antes de iniciar la fase *de* ingesta de contenido en su AEM como *etapa* de Cloud Service o instancias de *producción* , deberá registrar una entrada de soporte para notificar al Adobe su intención de ejecutar la *ingestión* ** de modo que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso de ingestiónde documentos. Tendrá que registrar el ticket de asistencia 1 semana antes de la fecha prevista de *ingestión* . Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
@@ -49,6 +51,7 @@ La herramienta de transferencia de contenido se puede descargar como archivo zip
 ## Ejecución de la herramienta de transferencia de contenido {#running-tool}
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+
 
 Siga esta sección para aprender a utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación):
 
