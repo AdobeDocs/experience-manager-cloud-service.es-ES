@@ -2,7 +2,7 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 6%
@@ -87,13 +87,13 @@ Las actualizaciones de entornos de fase y producción se administran automática
 
 Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible al público, el estado de la tarjeta de Entornos en la pantalla principal mostrará la **ACTUALIZACIÓN DISPONIBLE**.
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 La opción **Actualizar** está disponible en la tarjeta de **Entornos** .
 Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Actualizar**, como se muestra en la figura siguiente:
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 Al seleccionar esta opción, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la versión más reciente y, a continuación, ejecutar la canalización.
 
@@ -109,7 +109,7 @@ La opción **Eliminar** está disponible en el menú desplegable de la tarjeta d
 
 La opción Eliminar también está disponible si hace clic en **Detalles** en la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Eliminar**, como se muestra en la figura siguiente:
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Seleccione **Administrar acceso** en el menú desplegable de la tarjeta de **Ent
 
 Consulte [Administración del acceso a la instancia](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) de autor para obtener más información.
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## Acceso a Developer Console {#accessing-developer-console}
@@ -134,7 +134,7 @@ Solo un usuario de la función de desarrollador tendrá acceso a **Developer Con
 Consulte Entornos [de Simulador para pruebas de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) hibernación y deshibernación para obtener más detalles.
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado un entorno, haga clic en **...** y seleccione **Developer Console**.
 
