@@ -2,10 +2,10 @@
 title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.11.0
 description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.11.0
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '179'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.11.0 es el 
 
 ### Novedades {#what-is-new}
 
-* Ahora los usuarios pueden acceder a una nueva opción de menú **Iniciar sesión localmente** desde las opciones de menú entorno de las páginas de resumen de Entornos y tarjeta de Entorno.
+* Ahora los usuarios pueden acceder a una nueva opción de menú Inicio de sesión **** local desde las opciones de menú entorno de las páginas de resumen de Entornos y tarjetas de Entorno.
 
-* La ficha **Aprender** de Cloud Manager se ha actualizado con nuevas imágenes en la interfaz de usuario
+* La ficha **Aprender** de Cloud Manager se ha actualizado con nuevas imágenes en la interfaz de usuario.
 
 ### Corrección de errores {#bug-fixes-cloud-manager}
 
