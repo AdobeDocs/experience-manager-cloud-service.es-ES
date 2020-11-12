@@ -2,7 +2,7 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 5f57e7ead9dc461188895e6428c386af96d53a53
+source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
 workflow-type: tm+mt
 source-wordcount: '1902'
 ht-degree: 70%
@@ -34,9 +34,9 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Después de completar la fase de *Extracción* del proceso de transferencia de contenido y antes de iniciar la fase *de* ingesta de contenido en su AEM como *etapa* de Cloud Service o instancias de *producción* , deberá registrar una entrada de soporte para notificar al Adobe su intención de ejecutar la *ingestión* ** de modo que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso de ingestiónde documentos. Tendrá que registrar el ticket de asistencia 1 semana antes de la fecha prevista de *ingestión* . Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
    * Registre un ticket de asistencia técnica con los siguientes detalles:
-   1. Fecha exacta y hora estimada (con su huso horario) cuando planea realizar el inicio de la fase de *ingestión* .
-   2. Tipo de entorno (fase o producción) en el que se van a ingestar datos.
-   3. ID de programa
+      * Fecha exacta y hora estimada (con su huso horario) cuando planea realizar el inicio de la fase de *ingestión* .
+      * Tipo de entorno (fase o producción) en el que se van a ingestar datos.
+      * ID de programa.
 
 * La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción. Asegúrese también de que no se ejecuten tuberías del Administrador de nube mientras está ejecutando la fase de *ingesta* .
 
