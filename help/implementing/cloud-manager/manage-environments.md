@@ -2,10 +2,10 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
+source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 7%
+source-wordcount: '880'
+ht-degree: 6%
 
 ---
 
@@ -142,5 +142,9 @@ Esta opción también está disponible si hace clic en **Detalles** desde la tar
 
 Seleccione Inicio de sesión **** local en el menú desplegable de la tarjeta de **Entornos** para iniciar sesión localmente en Adobe Experience Manager
 
-![](assets/environ-login.png)
+![](assets/environ-login-locally.png)
+
+Además, puede iniciar sesión localmente desde la página de resumen de **Entornos** .
+
+![](assets/environ-login-locally-2.png)
 
