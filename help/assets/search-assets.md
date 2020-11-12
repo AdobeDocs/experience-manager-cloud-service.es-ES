@@ -1,57 +1,59 @@
 ---
-title: Buscar recursos digitales
-description: Obtenga información sobre cómo encontrar los recursos necesarios en AEM mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
+title: Busque recursos digitales e imágenes en [!DNL Adobe Experience Manager].
+description: Obtenga información sobre cómo encontrar los recursos necesarios [!DNL Adobe Experience Manager] mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 7f9384b08df70aac2f425b830337e97d711b709e
 workflow-type: tm+mt
-source-wordcount: '4523'
-ht-degree: 7%
+source-wordcount: '4743'
+ht-degree: 5%
 
 ---
 
 
-# Buscar recursos en AEM {#search-assets-in-aem}
+# Buscar recursos en [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
-Puede lograr una mayor velocidad de contenido mediante las opciones de detección de recursos fáciles de usar en Experience Manager. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda inteligente y sin fisuras mediante la funcionalidad lista para usar y los métodos personalizados. La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM. Las búsquedas simples, avanzadas y personalizadas que puede realizar a través de la interfaz de usuario de AEM Assets u otras aplicaciones y superficies ayudan a cumplir estos casos de uso.
+[!DNL Adobe Experience Manager Assets] proporciona métodos de detección de recursos sólidos que le ayudan a lograr una mayor velocidad de contenido. Sus equipos pueden reducir el tiempo de salida al mercado con una experiencia de búsqueda inteligente y sin fisuras mediante la funcionalidad lista para usar y los métodos personalizados. La búsqueda de recursos es fundamental para el uso de un sistema de gestión de activos digitales, ya sea para su uso ulterior por parte de los creativos, para una gestión sólida de los recursos por parte de los usuarios y especialistas en marketing del negocio o para la administración por parte de los administradores de DAM. Las búsquedas simples, avanzadas y personalizadas que puede realizar mediante la interfaz de usuario u otras aplicaciones y superficies ayudan a cumplir estos casos de uso. [!DNL Assets]
 
-AEM admite los siguientes casos de uso y este artículo describe el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas para estos casos de uso.
+[!DNL Experience Manager Assets] admite los siguientes casos de uso y este artículo describe el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
 
 | Buscar recursos | Configuración y administración | Trabajar con resultados de búsqueda |
-|--- |--- |--- |
+|---|---|---|
 | [Búsquedas básicas](#searchbasics) | [Índice de búsqueda](#searchindex) | [Ordenar resultados](#sort) |
 | [Comprender la IU de búsqueda](#searchui) |  | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
 | [Sugerencias de búsqueda](#searchsuggestions) | [Metadatos obligatorios](#mandatorymetadata) | [Descargar](#download) |
 | [Comprender los resultados y el comportamiento de la búsqueda](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
 | [Buscar clasificación y aumentar](#searchrank) | [Extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
-| [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender los resultados](#unexpectedresults) inesperados y [solucionar problemas](#troubleshoot) |
-| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch): <br />     [Aplicación Asset Link](#aal) <br />Desktop [para escritorio](#desktopapp) <br />     [Imágenes de Adobe Stock](#adobestock) <br />     [Recursos de Dynamic Media](#dynamicmedia) |  |  |
-| [Selector/selector de recursos](#assetselector) |  |  |
+| [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender y solucionar problemas relacionados con los resultados inesperados](#unexpectedresults) |
+| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos de Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Selector de recursos](#assetselector) |  |  |
 | [Limitaciones](#tips) y [sugerencias](#limitations) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
 
-Busque recursos utilizando el campo Omniture en la parte superior de la interfaz Web AEM. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en AEM, haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca la palabra clave de búsqueda y pulse return. Alternativamente, utilice el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. Puede realizar búsquedas avanzadas para aumentar o limitar el [alcance de la búsqueda](#scope).
+Busque recursos utilizando el campo Omniture en la parte superior de la interfaz [!DNL Experience Manager] Web. Vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]** en [!DNL Experience Manager], haga clic en ![search_icon](assets/do-not-localize/search_icon.png) en la barra superior, introduzca la palabra clave de búsqueda y pulse return. Alternativamente, utilice el método abreviado de palabra clave `/` (barra diagonal) para abrir el campo Omnisearch. `Location:Assets` está preseleccionado para limitar las búsquedas a los recursos DAM. [!DNL Experience Manager] proporciona sugerencias a medida que el inicio escribe una palabra clave de búsqueda.
 
-Utilice el panel **[!UICONTROL Filtros]** para buscar recursos, carpetas, etiquetas y metadatos. Puede filtrar los resultados de la búsqueda en función de las distintas opciones (predicados), como el tipo de archivo, el tamaño del archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas [de](/help/assets/search-facets.md)búsqueda.
+Utilice el panel **[!UICONTROL Filtros]** para buscar recursos, carpetas, etiquetas y metadatos. Puede filtrar los resultados de la búsqueda en función de las distintas opciones (predicados), como el tipo de archivo, el tamaño del archivo, la fecha de la última modificación, el estado del recurso, los datos de perspectivas y las licencias de Adobe Stock. Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante facetas [de](/help/assets/search-facets.md)búsqueda. El filtro Tipo [!UICONTROL de] archivo del panel [!UICONTROL Filtros] tiene casillas de verificación de varios estados. Por lo tanto, a menos que seleccione todos los predicados anidados (o formatos), las casillas de verificación de primer nivel se marcan parcialmente.
 
-AEM capacidad de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
+[!DNL Experience Manager] la función de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [Buscar colecciones](/help/assets/manage-collections.md).
 
 ## Comprender la interfaz de búsqueda {#searchui}
 
 Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
-![Explicación de partes de la interfaz](assets/aem_search_results.png)de resultados de búsqueda de recursos *Figura:* Explicación de partes de la interfaz de resultados de búsqueda de recursos
+![Comprender la interfaz de resultados de búsqueda de Recursos Experience Manager](assets/aem_search_results.png)
 
-**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros (predicados) para reducir los resultados de búsqueda. **C.** Muestre archivos, carpetas o ambos en los resultados de la búsqueda. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Casilla de verificación para seleccionar todos los resultados de búsqueda **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda **I.** Cierre la búsqueda **J.** Cambie entre la vista de tarjeta y la vista de lista
+*Figura: Comprender la interfaz de resultados [!DNL Experience Manager Assets] de búsqueda.*
+
+**A.** Guarde la búsqueda como una colección inteligente. **B.** Filtros o predicados para reducir los resultados de búsqueda. **C.** Mostrar archivos, carpetas o ambos. **D.** Haga clic en Filtros para abrir o cerrar el carril izquierdo. **E.** La ubicación de búsqueda es DAM. **F.** Campo Omnisearch con palabra clave de búsqueda proporcionada por el usuario. **G.** Seleccione los resultados de búsqueda cargados. **H.** Número de resultados de búsqueda mostrados del total de resultados de búsqueda. **I.** Cierre la búsqueda. **J.** Cambie entre la vista de la tarjeta y la vista de la lista.
 
 ### Facetas de búsqueda dinámica {#dynamicfacets}
 
-Puede descubrir los recursos deseados más rápido desde la página de resultados de búsqueda utilizando el número de resultados de búsqueda esperados que se ha actualizado dinámicamente en las facetas de búsqueda. El número esperado de recursos se actualiza incluso antes de aplicar el filtro de búsqueda. Ver el recuento esperado con el filtro le ayuda a navegar por los resultados de búsqueda de manera rápida y eficiente. Para obtener más información, consulte [Buscar recursos en AEM](/help/assets/search-assets.md).
+Puede descubrir los recursos deseados más rápido desde la página de resultados de búsqueda utilizando el número de resultados de búsqueda esperados que se ha actualizado dinámicamente en las facetas de búsqueda. El número esperado de recursos se actualiza incluso antes de aplicar el filtro de búsqueda. Ver el recuento esperado con el filtro le ayuda a navegar por los resultados de búsqueda de manera rápida y eficiente.
 
 ![Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.](assets/asset_search_results_in_facets_filters.png)
 
-Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.
+*Figura: Ver el número aproximado de recursos sin filtrar los resultados de búsqueda en las facetas de búsqueda.*
 
 ## Search suggestions as you type {#searchsuggestions}
 
@@ -67,11 +69,13 @@ Cuando escribe una palabra clave en inicio, AEM sugiere las posibles palabras cl
 
 ### Términos y resultados de búsqueda básicos {#searchbasics}
 
-Puede ejecutar búsquedas de palabras clave desde el campo OmniSearch. La búsqueda de palabras clave no distingue entre mayúsculas y minúsculas y es una búsqueda de texto completo (en los campos de metadatos populares). Si se utiliza más de una palabra clave, `AND` es el operador predeterminado entre las palabras clave. Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas. Para varias palabras clave, los resultados más relevantes son los recursos que contienen ambos términos en sus metadatos. Dentro de los metadatos, las palabras clave que aparecen como etiquetas inteligentes se clasifican más que las palabras clave que aparecen en otros campos de metadatos.
+Puede ejecutar búsquedas de palabras clave desde el campo OmniSearch. La búsqueda de palabras clave no distingue entre mayúsculas y minúsculas y es una búsqueda de texto completo (en los campos de metadatos populares). Si se utiliza más de una palabra clave, `AND` es el operador predeterminado entre las palabras clave.
 
-AEM permite dar un peso mayor a un término de búsqueda en particular. Además, es posible aumentar la clasificación de unos pocos recursos de destino para términos de búsqueda específicos. Los administradores de AEM pueden realizar estas configuraciones como se describe a continuación.
+Los resultados se ordenan por relevancia, empezando por las coincidencias más cercanas. Para varias palabras clave, los resultados más relevantes son los recursos que contienen ambos términos en sus metadatos. Dentro de los metadatos, las palabras clave que aparecen como etiquetas inteligentes se clasifican más que las palabras clave que aparecen en otros campos de metadatos. [!DNL Experience Manager] permite dar un mayor peso a un término de búsqueda particular. Además, es posible [aumentar la clasificación](#searchrank) de unos pocos recursos objetivo para términos de búsqueda específicos.
 
 Para encontrar rápidamente los recursos relevantes, la interfaz enriquecida proporciona mecanismos de filtrado, clasificación y selección. Puede filtrar los resultados en función de varios criterios y ver el número de recursos buscados para varios filtros. De lo contrario, puede volver a ejecutar la búsqueda cambiando la consulta en el campo Omniture Search. Al cambiar los términos o filtros de búsqueda, los demás filtros permanecen aplicados para preservar el contexto de búsqueda.
+
+Cuando los resultados son muchos recursos, [!DNL Experience Manager] muestra los primeros 100 en la vista de tarjeta y los 200 en la vista de lista. A medida que los usuarios se desplazan, se cargan más recursos. Esto sirve para mejorar el rendimiento. Vea una demostración en vídeo del [número de recursos mostrados](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
 A veces, puede ver algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte Resultados [inesperados](#unexpectedresults).
 
@@ -104,11 +108,11 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 
 Puede mejorar la relevancia de las palabras clave para los recursos en particular a fin de mejorar las búsquedas basadas en las palabras clave. En otras palabras, las imágenes para las que promociona palabras clave específicas aparecen en la parte superior de los resultados de búsqueda cuando realiza una búsqueda en base a estas palabras clave.
 
-1. En la interfaz de usuario de Assets, abra la página de propiedades del recurso. Haga clic en **[!UICONTROL Avanzadas]** y pulse o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para las palabras clave de búsqueda]**.
-1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee aumentar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. En el cuadro **[!UICONTROL Buscar promoción]** , especifique una palabra clave para la que desee impulsar la búsqueda de la imagen y, a continuación, haga clic en **[!UICONTROL Añadir]**. Puede especificar varias palabras clave de la misma manera.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**. El recurso que promocionó para esta palabra clave aparece entre los principales resultados de búsqueda.
 
-Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+Esto se puede utilizar en su beneficio al aumentar la clasificación de algunos recursos en los resultados de búsqueda de la palabra clave de objetivo. Consulte el siguiente vídeo de ejemplo. Para obtener información detallada, consulte [Buscar en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -195,11 +199,11 @@ Con Adobe Asset Link, los profesionales creativos ahora pueden acceder al conten
 
 ### Buscar recursos en AEM aplicación de escritorio {#desktopapp}
 
-Los profesionales creativos utilizan la aplicación de escritorio para que el AEM Assets sea fácil de buscar y esté disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en Mac Finder o el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, * y ? comodines y operador AND. Consulte [Examinar, buscar y previsualización de recursos](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
+Los profesionales creativos utilizan la aplicación de escritorio para que el AEM Assets sea fácil de buscar y esté disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en Mac Finder o el Explorador de Windows, abrirse en aplicaciones de escritorio y cambiarse localmente; los cambios se guardan de nuevo en AEM con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, * y ? comodines y operador AND. Consulte [Examinar, buscar y previsualización de recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
 
 ### Search assets in Brand Portal {#brandportal}
 
-Los usuarios de la línea de negocios y los especialistas en marketing utilizan Brand Portal para compartir de forma eficaz y segura los recursos digitales aprobados con sus equipos, socios y distribuidores internos ampliados. See [search assets on Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
+Los usuarios de la línea de negocios y los especialistas en marketing utilizan Brand Portal para compartir de forma eficaz y segura los recursos digitales aprobados con sus equipos, socios y distribuidores internos ampliados. See [search assets on Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Buscar imágenes de Adobe Stock {#adobestock-1}
 
@@ -237,7 +241,7 @@ Puede pasar los siguientes parámetros de solicitud en una URL para iniciar el s
 | assettype (S) | imágenes, documentos, multimedia, archivos | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilice esta opción para filtrar los tipos de recursos en función del valor pasado. |
 | raíz | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Utilice esta opción para especificar la carpeta raíz del selector de recursos. En este caso, el selector de recursos permite seleccionar solo recursos secundarios (directos/indirectos) en la carpeta raíz. |
 
-Para acceder a la interfaz del selector de recursos, vaya a `https://[AEM server]:[port]/aem/assetpicker`. Vaya a la carpeta que desee y seleccione uno o varios recursos. También puede buscar el recurso deseado en el cuadro Omniture, aplicar el filtro según sea necesario y luego seleccionarlo.
+Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server]:[port]/aem/assetpicker`. Vaya a la carpeta que desee y seleccione uno o varios recursos. También puede buscar el recurso deseado en el cuadro Omniture, aplicar el filtro según sea necesario y luego seleccionarlo.
 
 ![Examinar y seleccionar recursos en el selector de recursos](assets/assetpicker.png)
 
@@ -245,29 +249,33 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[AEM server
 
 ## Restricciones     {#limitations}
 
-La capacidad de búsqueda de AEM Assets tiene las siguientes limitaciones:
+La capacidad de búsqueda en [!DNL Experience Manager Assets] tiene las siguientes limitaciones:
 
 * No introduzca un espacio de interlineado en la consulta de búsqueda; de lo contrario, la búsqueda no funcionará.
-* AEM puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso de los resultados de búsqueda y luego cancelar la búsqueda (CQ-4273540).
+* [!DNL Experience Manager] puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso en los resultados de búsqueda y luego cancelar la búsqueda. <!-- (CQ-4273540) -->
 * Al buscar carpetas o archivos y carpetas, los resultados de la búsqueda no se pueden ordenar según ningún parámetro.
-* Si presiona el comando return sin vincular nada en la barra de Omniture, AEM devuelve una lista de sólo archivos y no carpetas. Si busca carpetas de forma específica sin utilizar una palabra clave, no AEM ningún resultado.
+* Si presiona Retorno sin escribir en la barra de Omniture, devuelve una lista de sólo archivos y no carpetas. [!DNL Experience Manager] Si busca carpetas específicamente sin usar una palabra clave, [!DNL Experience Manager] no devuelve ningún resultado.
 
 La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitaciones:
 
 * La búsqueda visual funciona mejor con repositorios más grandes. Aunque no se requiere un número mínimo de imágenes para obtener buenos resultados, la calidad de las coincidencias con unas pocas imágenes puede no ser tan buena como las coincidencias de un repositorio grande.
-* No se puede cambiar el modelo o el AEM de tren para encontrar imágenes similares. Por ejemplo, la adición o eliminación de etiquetas inteligentes a algunos recursos no cambia el modelo. Los recursos se excluyen de los resultados de búsqueda visualmente similares.
+* No se puede cambiar el modelo o el tren [!DNL Experience Manager] para encontrar imágenes similares. Por ejemplo, la adición o eliminación de etiquetas inteligentes a algunos recursos no cambia el modelo. Los recursos se excluyen de los resultados de búsqueda visualmente similares.
+
+La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los siguientes escenarios:
+
+* La vista de tarjetas tiene un tiempo de carga más rápido que la vista de listas para mostrar los resultados de la búsqueda.
 
 ## Sugerencias de búsqueda {#tips}
 
 * Cuando supervise el estado de revisión de los recursos, utilice la opción adecuada para encontrar los recursos aprobados o los que están pendientes de aprobación.
 * Use el predicado de perspectivas para buscar recursos admitidos en función de las estadísticas de uso obtenidas de varias aplicaciones de Creative. Los datos de uso se agrupan en Puntuación de uso, Impresiones, Clics y canales de medios, donde los recursos aparecen como categorías.
-* Utilice la casilla de verificación para seleccionar todos los resultados de búsqueda o los resultados de búsqueda filtrados para operar en la selección. Selecciona todos los recursos buscados independientemente del número de recursos que se muestren en la vista de usuario actual. Por ejemplo, puede descargar todos los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para todos los recursos seleccionados o agregar recursos seleccionados a una colección.
+* Utilice la casilla de verificación **[!UICONTROL Seleccionar todo]** para seleccionar los recursos buscados. [!DNL Experience Manager] inicialmente muestra 100 recursos en la vista de tarjetas y 200 en la vista de listas. Se cargan más recursos a medida que se desplazan los resultados de la búsqueda. Puede seleccionar más recursos que los recursos cargados. El recuento de los recursos seleccionados se muestra en la esquina superior derecha de la página de resultados de la búsqueda. Puede operar en la selección, por ejemplo, descargar los recursos seleccionados, actualizar las propiedades de metadatos de forma masiva para los recursos seleccionados o agregar los recursos seleccionados a una colección. Cuando se seleccionan más recursos de los que se muestran, se aplica una acción a todos los recursos seleccionados o aparece un cuadro de diálogo con el número de recursos en los que se aplica. Para aplicar una acción a los recursos que no se han cargado, asegúrese de que todos los recursos están explícitamente seleccionados.
 * Para buscar recursos que no contengan los metadatos obligatorios, consulte Metadatos [](#mandatorymetadata)obligatorios.
 * La búsqueda utiliza todos los campos de metadatos. Una búsqueda genérica, como la búsqueda de 12, generalmente devuelve muchos resultados. Para obtener mejores resultados, utilice comillas de doble (no simples) o asegúrese de que el número esté contiguo a una palabra sin carácter especial (por ejemplo `shoe12`).
 * La búsqueda de texto completo admite operadores como `-` y `^`. Para buscar estas letras como literales de cadena, encierre la expresión de búsqueda entre comillas de doble. Por ejemplo, utilice `"Notebook - Beauty"` en lugar de `Notebook - Beauty`.
 * Si los resultados de búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, un tipo de archivo específico, una ubicación específica, metadatos específicos, etc.
 
-* **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. AEM métodos de oferta para etiquetar automáticamente los recursos mediante Adobe Sensei, que  servicios inteligentes artificialmente que mejoran el etiquetado de los recursos con el uso y la formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
+* **Etiquetado**: Las etiquetas le ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] oferta métodos para etiquetar automáticamente los recursos mediante Adobe Sensei, que  servicios inteligentes artificialmente que mejoran el etiquetado de los recursos con uso y formación. Cuando se buscan recursos, las etiquetas inteligentes se incluyen si la función está activada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte Comportamiento [de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [aumentar la clasificación](#searchrank) de la búsqueda de algunos recursos seleccionados.
 
 * **Indexación**: En los resultados de búsqueda solo se devuelven los metadatos y recursos indexados. Para obtener una mejor cobertura y rendimiento, asegúrese de que la indexación sea correcta y siga las optimizaciones. Consulte [indización](#searchindex).
 
@@ -302,9 +310,11 @@ Utilice las comillas de doble alrededor de las palabras clave para buscar recurs
 
 *Figura: Ilustración del uso del comodín del signo de interrogación en la búsqueda de recursos mediante un ejemplo.*
 
-**Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` consulta devuelve recursos que contienen `camp` pero no `night`. Tenga en cuenta que `camp-night` la consulta devuelve recursos que contienen tanto `camp` como `night`.
+**Excluir una palabra clave**: Utilice dash para buscar recursos que no contengan una palabra clave. Por ejemplo, `running -shoe` consulta devuelve recursos que contienen `running`, pero no `shoe`. Del mismo modo, `camp -night` consulta devuelve recursos que contienen `camp` pero no `night`. La consulta `camp-night` devuelve recursos que contienen tanto `camp` como `night`.
 
-![Uso del guión para buscar recursos que no contengan una palabra clave](assets/search_dash_exclude_keyword.gif)excluida *Figura: Uso del guión para buscar recursos que no contengan una palabra clave excluida*
+![Uso del guión para buscar recursos que no contengan una palabra clave excluida](assets/search_dash_exclude_keyword.gif)
+
+*Figura: Uso del guión para buscar recursos que no contengan una palabra clave excluida.*
 
 <!--
 ## Configuration and administration tasks related to search functionality {#configadmin}
@@ -317,7 +327,7 @@ Asset discovery relies on indexing of DAM contents, including the metadata. Fast
 <!--
 ### Visual or similarity search {#configvisualsearch}
 
-Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After configuring smart tagging functionality, follow these steps.
+Visual search uses smart tags. After configuring smart tagging functionality, follow these steps.
 
 1. In AEM CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
 
@@ -342,7 +352,7 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html).
+1. Apply Smart Tags to the assets in your AEM repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
@@ -392,7 +402,7 @@ You can search for digital assets based on one or more of the following properti
 
 ## Trabajar con resultados de búsqueda de recursos {#aftersearch}
 
-Una vez que vea algunos recursos buscados que coinciden con sus criterios, puede realizar las siguientes tareas típicas con estos resultados de búsqueda o realizar las siguientes acciones:
+Puede hacer lo siguiente con los recursos en los que ha buscado [!DNL Experience Manager]:
 
 * Propiedades de metadatos de vista y otra información.
 * Descargue uno o varios recursos.
@@ -401,7 +411,7 @@ Una vez que vea algunos recursos buscados que coinciden con sus criterios, puede
 
 ### Ordenar resultados de búsqueda {#sort}
 
-La ordenación de los resultados de búsqueda ayuda a descubrir los recursos necesarios con mayor rapidez. La ordenación de los resultados de búsqueda funciona en la vista de lista y solo cuando se selecciona **[[!UICONTROL Archivos]](#searchui)** en el panel **[!UICONTROL Filtros]**. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+Ordene los resultados de la búsqueda para descubrir los recursos necesarios con mayor rapidez. You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
 En la vista de listas, puede ordenar los resultados de la búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: nombre, título, estado, Dimension, tamaño, clasificación, uso, (fecha) de creación, (fecha) de modificación, (fecha) de publicación, flujo de trabajo y desprotección.
 
@@ -417,7 +427,7 @@ Para comprobar los comentarios de un recurso o del historial de versiones de un 
 
 ![Ordenar entradas de línea de tiempo para un recurso de búsqueda](assets/sort_timeline_search_results.gif)
 
-Ordenar entradas de línea de tiempo para un recurso de búsqueda
+*Figura: Ordene las entradas de línea de tiempo para un recurso de búsqueda.*
 
 ### Descargar recursos buscados {#download}
 
@@ -427,7 +437,7 @@ Puede descargar los recursos buscados y sus representaciones del mismo modo que 
 
 Es posible realizar actualizaciones masivas en los campos de metadatos comunes de varios recursos. En los resultados de la búsqueda, seleccione uno o varios recursos. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas y actualice los metadatos según sea necesario. Haga clic en **[!UICONTROL Guardar y cerrar]** cuando termine. Los metadatos existentes anteriormente en los campos actualizados se sobrescriben.
 
-Para los recursos disponibles en una única carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/manage-metadata.md#manage-assets-metadata). Para los recursos que están disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
+Para los recursos disponibles en una sola carpeta o colección, es más fácil [actualizar los metadatos de forma masiva](/help/assets/manage-metadata.md#manage-assets-metadata) sin utilizar la funcionalidad de búsqueda. Para los recursos que están disponibles en varias carpetas o que cumplen un criterio común, es más rápido actualizar los metadatos de forma masiva mediante la búsqueda.
 
 ### Colecciones inteligentes {#collections-1}
 
@@ -438,38 +448,27 @@ Una colección es un conjunto ordenado de recursos que puede incluir recursos de
 
 Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/manage-collections.md).
 
-## Resultados de búsqueda inesperados {#unexpectedresults}
-
-**Buscar metadatos** que faltan: Al buscar recursos que no tengan los metadatos obligatorios, AEM puede mostrar algunos recursos que tengan metadatos válidos. Los metadatos que faltan se detectan e informan en función de la propiedad de metadatos indizados. Aunque los metadatos del recurso se corrijan, siguen mostrándose como metadatos faltantes hasta que se vuelve a indexar. Consulte metadatos [](/help/assets/metadata-schemas.md#defining-mandatory-metadata)obligatorios.
-
-**Demasiados resultados** de búsqueda: Para evitar obtener demasiados resultados de búsqueda, considere limitar los resultados de búsqueda. Por ejemplo: para buscar recursos en DAM, seleccione `Location:Assets` en la barra de Omniture Search. Para obtener más filtros de búsqueda, consulte [el ámbito de búsqueda](#scope).
-
-<!-- Another reason to get more than expected search results can be use of smarts tags. See [search behavior with smart tags](#withsmarttags). 
--->
+## Resultados y problemas de búsqueda inesperados {#unexpectedresults}
 
 <!--
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
-**No hay sugerencias de autocompletar para los recursos** cargados recientemente: Los metadatos (títulos, etiquetas, etc.) de los recursos cargados recientemente no están disponibles inmediatamente como sugerencias cuando se escribe una palabra clave de búsqueda en la barra de Omniture. AEM Assets espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos recién cargados o actualizados y, a continuación, agrega los metadatos a la lista de sugerencias.
+| Error, problemas, síntomas | Motivo posible | Posible solución o comprensión del problema |
+|---|---|---|
+| Resultados incorrectos al buscar recursos con metadatos que faltan. | Al buscar recursos que no tengan los metadatos obligatorios, es posible que [!DNL Experience Manager] se muestren algunos recursos con metadatos válidos. Los resultados se basan en la propiedad de metadatos indexados. | Una vez actualizados los metadatos, es necesario volver a indexarlos para reflejar el estado correcto de los metadatos de los recursos. Consulte metadatos [](metadata-schemas.md#define-mandatory-metadata)obligatorios. |
+| Demasiados resultados de búsqueda. | Parámetro de búsqueda amplia. | Considere limitar el [alcance de la búsqueda](#scope). El uso de etiquetas inteligentes puede proporcionarle más resultados de búsqueda de los esperados. Consulte Comportamiento [de búsqueda con etiquetas](#withsmarttags)inteligentes. |
+| Resultados de búsqueda no relacionados o parcialmente relacionados. | El comportamiento de búsqueda cambia con el etiquetado inteligente. | Comprender [cómo cambia la búsqueda después del etiquetado](#withsmarttags)inteligente. |
+| No hay sugerencias de autocompletar para los recursos. | Los recursos recién cargados no se han indizado todavía. Los metadatos no están disponibles de inmediato como sugerencias cuando se inicio escribir una palabra clave de búsqueda en la barra de Omniture. | [!DNL Assets] espera hasta la expiración de un período de tiempo de espera (una hora de forma predeterminada) antes de ejecutar un trabajo en segundo plano para indexar los metadatos de todos los recursos cargados o actualizados recientemente y, a continuación, agrega los metadatos a la lista de sugerencias. |
+| No hay resultados de la búsqueda. | <ul><li>Los recursos que coinciden con la consulta no existen. </li><li> Se agregó espacio en blanco antes de la consulta de búsqueda. </li><li> El campo de metadatos no admitido contiene la palabra clave que buscó.</li><li> Búsqueda realizada durante el tiempo de inactividad de un recurso. </li></ul> | <ul><li>Buscar usando una palabra clave diferente. También puede utilizar el etiquetado inteligente o la búsqueda por similitudes para mejorar los resultados de la búsqueda. </li><li>[Limitaciones](#limitations)conocidas.</li><li>No se tienen en cuenta todos los campos de metadatos para las búsquedas. Consulte [ámbito](#scope).</li><li>Busque más tarde o modifique los recursos necesarios a tiempo y sin conexión.</li></ul> |
+| El filtro de búsqueda o un predicado no está disponible. | <ul><li>El filtro de búsqueda no está configurado.</li><li>No está disponible para su inicio de sesión.</li><li>(Menos probable) Las opciones de búsqueda no están personalizadas en la implementación que esté utilizando.</li></ul> | <ul><li>Póngase en contacto con el administrador para comprobar si las personalizaciones de búsqueda están disponibles o no.</li><li>Póngase en contacto con el administrador para comprobar si su cuenta tiene los privilegios y permisos necesarios para utilizar la personalización.</li><li>Póngase en contacto con el administrador y compruebe las personalizaciones disponibles para la [!DNL Assets] implementación que está utilizando.</li></ul> |
+| Al buscar imágenes visualmente similares, falta una imagen esperada. | <ul><li>La imagen no está disponible en [!DNL Experience Manager].</li><li>La imagen no está indizada. Normalmente, cuando se carga recientemente.</li><li>La imagen no está etiquetada de forma inteligente.</li></ul> | <ul><li>Añada la imagen a [!DNL Assets].</li><li>Póngase en contacto con el administrador para volver a indexar el repositorio. Además, asegúrese de que está utilizando el índice adecuado.</li><li>Póngase en contacto con el administrador para etiquetar los recursos relevantes de forma inteligente.</li></ul> |
+| Al buscar imágenes visualmente similares, se muestra una imagen irrelevante. | Comportamiento de búsqueda visual. | [!DNL Experience Manager] muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se agregan a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen a medida que se desplaza hacia abajo por los resultados de la búsqueda. |
+| Al seleccionar y operar en los resultados de búsqueda, no se realizan operaciones con todos los recursos buscados. | La opción [!UICONTROL Seleccionar todo] sólo selecciona los primeros 100 resultados de búsqueda en la vista de tarjetas y los primeros 200 resultados de búsqueda en la vista de listas. |  |
 
-**No hay resultados** de búsqueda: Si AEM y muestra una página vacía para una consulta de búsqueda, puede que los siguientes sean los motivos:
+>[!MORELIKETHIS]
+>
+>* [[!DNL Experience Manager] guía de implementación de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Configuración avanzada para aumentar los resultados de búsqueda](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Configurar la búsqueda de traducción inteligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
-* No existen recursos que coincidan con la consulta.
-* Agregue un espacio en blanco antes de la consulta de búsqueda. Es una limitación [conocida](#limitations).
-
-* Un campo de metadatos no admitido contiene la palabra clave que busca. No todos los campos de metadatos se consideran para las búsquedas. Consulte [ámbito](#scope).
-* Tiempo de activación y tiempo de inactividad se configura para el recurso y la búsqueda se realizó durante el tiempo de inactividad del recurso.
-
-**El filtro o predicado de búsqueda no está disponible**: Si la interfaz de usuario no dispone de una personalización esperada de los filtros de búsqueda, póngase en contacto con el administrador para comprobar si la personalización se ha implementado para todos los autores y en el servidor de producción que esté utilizando. Es posible que la configuración fuera incorrecta.
-
-## Solución de problemas relacionados con la búsqueda {#troubleshoot}
-
-<!-- TBD: Expand this section.
--->
-
-Véanse los problemas y las posibles medidas que se indican a continuación:
-
-* Si un filtro o predicado de búsqueda esperado no está visible, póngase en contacto con el administrador.
-* Al buscar imágenes visualmente similares, a veces puede que falte una imagen esperada en los resultados de búsqueda. Compruebe si dichos recursos están indexados y etiquetados de forma inteligente.
-* Al buscar imágenes visualmente similares, a veces se puede mostrar una imagen aparentemente irrelevante en los resultados de búsqueda. AEM muestra tantos recursos potencialmente relevantes como sea posible. Las imágenes menos relevantes, si las hay, se agregan a los resultados pero con una clasificación de búsqueda más baja. La calidad de las coincidencias y la relevancia de los recursos buscados disminuyen a medida que se desplaza hacia abajo por los resultados de la búsqueda.
