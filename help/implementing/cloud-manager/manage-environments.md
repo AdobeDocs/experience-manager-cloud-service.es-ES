@@ -1,10 +1,10 @@
 ---
-title: '"Administrar Entornos: Cloud Service"'
-description: '"Administrar Entornos: Cloud Service"'
+title: 'Administrar Entornos: Cloud Service'
+description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
+source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '870'
 ht-degree: 7%
 
 ---
@@ -137,4 +137,10 @@ Consulte Entornos [de Simulador para pruebas de](https://docs.adobe.com/content/
 ![](assets/environ-dev-console.png)
 
 Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado un entorno, haga clic en **...** y seleccione **Developer Console**.
+
+## Iniciar sesión localmente {#login-locally}
+
+Seleccione Inicio de sesión **** local en el menú desplegable de la tarjeta de **Entornos** para iniciar sesión localmente en Adobe Experience Manager
+
+![](assets/environ-login.png)
 
