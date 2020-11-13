@@ -2,7 +2,7 @@
 title: 'Administrar registros: Cloud Service'
 description: 'Administrar registros: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 22%
@@ -28,7 +28,7 @@ O bien, la página **Entornos** :
 ![](assets/download-logs2.png)
 
 
-## Registros a través de API {#logs-thorugh-api}
+## Registros a través de API {#logs-through-api}
 
 Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
 
