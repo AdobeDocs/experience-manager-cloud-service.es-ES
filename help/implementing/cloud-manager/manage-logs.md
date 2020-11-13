@@ -1,8 +1,8 @@
 ---
-title: '"Administrar registros: Cloud Service"'
-description: '"Administrar registros: Cloud Service"'
+title: 'Administrar registros: Cloud Service'
+description: 'Administrar registros: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 22%
@@ -14,9 +14,9 @@ ht-degree: 22%
 
 Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
 
-Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** .
+Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** :
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 O bien, la página **Entornos** :
 
@@ -25,7 +25,7 @@ O bien, la página **Entornos** :
 >[!NOTE]
 >Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## Registros a través de API {#logs-thorugh-api}
