@@ -3,7 +3,7 @@ title: Etiquetado automático de imágenes con etiquetas generadas por AI
 description: Etiquete imágenes utilizando servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas [!DNL Adobe Sensei] mediante servicios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 6%
@@ -154,7 +154,7 @@ Una vez que haya formado el servicio Etiquetas inteligentes, puede activar el fl
 1. Haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si los recursos están etiquetados correctamente. Para obtener más información, consulte [Gestión de etiquetas](#manage-smart-tags-and-searches)inteligentes.
 
 >[!NOTE]
-
+>
 >En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas.Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los últimos y los actuales ciclos de etiquetado del flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
 
 ### Etiquetado de recursos cargados {#tag-uploaded-assets}
