@@ -2,9 +2,9 @@
 title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
+source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1481'
 ht-degree: 1%
 
 ---
@@ -25,12 +25,12 @@ En esta página también se describe cómo se invalida la caché del despachante
 * se puede anular para todo el contenido HTML/Texto definiendo la `EXPIRATION_TIME` variable en `global.vars` el uso de la AEM como herramienta de Dispatcher del SDK de Cloud Service.
 * se puede anular en un nivel más fino mediante las siguientes directivas apache mod_headers:
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
 Tenga cuidado al configurar encabezados de control de caché globales o aquéllos que coinciden con un regex amplio, de modo que no se apliquen al contenido que pueda tener la intención de mantener como privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de manera precisa. Dicho esto, AEM como Cloud Service quitará el encabezado de la memoria caché si detecta que se ha aplicado a lo que detecta que el despachante no puede almacenar en caché, tal como se describe en la documentación del despachante. Para obligar a AEM a aplicar siempre almacenamiento en caché, se puede agregar la opción &quot;siempre&quot; de la siguiente manera:
 
@@ -48,15 +48,16 @@ Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la 
 { /glob "*" /type "allow" }
 ```
 
-* Para evitar que se almacene en caché contenido específico, establezca el encabezado Cache-Control en &quot;private&quot;. Por ejemplo, lo siguiente impediría que el contenido HTML de un directorio llamado &quot;myfolder&quot; se almacene en caché:
+* Para evitar que se almacene en caché contenido específico, establezca el encabezado Cache-Control en *privado*. Por ejemplo, lo siguiente impediría que el contenido HTML de un directorio llamado **myfolder** se almacene en caché:
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* Tenga en cuenta que otros métodos, incluido el proyecto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, no anularán correctamente los valores.
+   >[!NOTE]
+   >Los demás métodos, incluido el proyecto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, no anularán correctamente los valores.
 
 ### Bibliotecas del lado del cliente (js,css) {#client-side-libraries}
 
@@ -68,12 +69,12 @@ Debe asegurarse de que un archivo debajo `src/conf.dispatcher.d/cache` tiene la 
 * de forma predeterminada, no en caché
 * puede establecerse a un nivel más preciso mediante las siguientes directivas de apache `mod_headers` :
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
 
 Consulte la discusión en la sección html/text de arriba para tener cuidado de no almacenar demasiado en caché y también para forzar a AEM a aplicar siempre la caché con la opción &quot;siempre&quot;.
 
@@ -86,7 +87,8 @@ Es necesario asegurarse de que un archivo en src/conf.dispatcher.d/cache tiene l
 
 Asegúrese de que los recursos destinados a ser guardados en privado en lugar de en caché no forman parte de los filtros de directiva LocationMatch.
 
-* Tenga en cuenta que otros métodos, incluido el proyecto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, no anularán correctamente los valores.
+>[!NOTE]
+>Los demás métodos, incluido el proyecto [](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)dispatcher-ttl AEM ACS Commons, no anularán correctamente los valores.
 
 ### Otros tipos de archivos de contenido en el almacén de nodos {#other-content}
 
