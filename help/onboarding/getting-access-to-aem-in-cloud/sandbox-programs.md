@@ -1,10 +1,10 @@
 ---
-title: '"Programas de Simulador para pruebas: Cloud Service"'
-description: '"Programas de Simulador para pruebas: Cloud Service"'
+title: 'Programas de Simulador para pruebas: Cloud Service'
+description: 'Programas de Simulador para pruebas: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1184'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Los entornos creados en un Simulador para pruebas no están configurados para es
 
 Los programas del Simulador para pruebas incluyen Sitios y Recursos y se rellenan automáticamente con un repositorio Git, un entorno de desarrollo y un canalizador que no es de producción.  El repositorio Git se rellena con un proyecto de muestra basado en el arquetipo de proyecto AEM.
 
-Consulte [Explicación de los tipos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) de Programas y Programas para obtener más información sobre los tipos de Programas.
+Consulte [Explicación de los tipos](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) de Programas y Programas para obtener más información sobre los tipos de Programas.
 
 ### Atributos de los Programas de Simulador para pruebas {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ Los Programas de Simulador para pruebas tienen los atributos siguientes:
 
 Un asistente para la creación de programas permite crear un Programa de Simulador para pruebas.
 
-Para obtener más información sobre cómo crear un Programa de Simulador para pruebas, consulte [Creación de un Programa](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) de Simulador para pruebas para pruebas.
+Para obtener más información sobre cómo crear un Programa de Simulador para pruebas, consulte [Creación de un Programa](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) de Simulador para pruebas para pruebas.
 
 ### Creación de Entornos de Simulador para pruebas {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ Los Programas del Simulador para pruebas se entregan a un entorno de desarrollo 
 
 El conjunto de entornos Producción-Fase se puede agregar manualmente al Programa Simulador para pruebas cuando el usuario esté listo para configurar una canalización de producción.
 
-Para obtener más información sobre cómo crear manualmente un entorno, consulte [Añadir Entornos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) para obtener más información.
+Para obtener más información sobre cómo crear manualmente un entorno, consulte [Añadir Entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información.
 
 ### Eliminación de Entornos de Simulador para pruebas {#deleting-sandbox-environments}
 
 El usuario con los permisos necesarios puede eliminar un entorno o conjuntos de desarrollo o producción o etapa.
 
-Para eliminar un entorno, consulte [Eliminación de Entornos](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) para obtener más información.
+Para eliminar un entorno, consulte [Eliminación de Entornos](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obtener más información.
 
 
 ## Hibernación y deshibernación de Entornos de Simulador para pruebas {#hibernating-introduction}
@@ -93,7 +93,7 @@ Puede hibernar manualmente el Programa de Simulador para pruebas desde la Consol
 Siga los pasos a continuación para hibernar manualmente los entornos de Programa del Simulador para pruebas:
 
 1. Vaya a **Developer Console**.
-Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
+Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
    >[!IMPORTANT]
    >Vincular la consola **de** desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
 
@@ -119,7 +119,7 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 ### Deshibernación {#de-hibernation-introduction}
 
 1. Vaya a **Developer Console**.
-Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
+Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
 
    >[!IMPORTANT]
    >Vincular la consola **de** desarrollador directamente desde Cloud Manager no le dará la opción de deshibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
@@ -157,8 +157,6 @@ Consulte [Acceso a la consola](https://docs.adobe.com/content/help/en/experience
 
 Cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service debe poder acceder a **Developer Console**, lo que le permitirá deshibernar el entorno.
 
-Consulte [Añadir usuarios y funciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) en Cloud Manager para obtener información sobre la configuración de los permisos de usuario.
-
 #### Acceso a un Entorno hibernado {#accessing-hibernated-environment}
 
 Al realizar cualquier solicitud de explorador en el nivel de autor o publicación de un entorno hibernado, el usuario encontrará una página de aterrizaje que describe el estado de hibernación del entorno, como se muestra en la figura siguiente:
@@ -178,11 +176,11 @@ Pocas consideraciones clave relacionadas con los entornos hibernados y deshibern
 
 ## AEM actualizaciones de Entornos de Simulador para pruebas {#aem-updates-sandbox}
 
-Consulte [AEM actualizaciones](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) de la versión para obtener más detalles.
+Consulte [AEM actualizaciones](/help/implementing/deploying/overview.md#version-updates) de la versión para obtener más detalles.
 
 Un usuario puede aplicar manualmente AEM actualizaciones a los entornos de un Programa de Simulador para pruebas.
 
-Consulte [Actualización de Entorno](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) para obtener información sobre cómo actualizar un entorno.
+Consulte [Actualización de Entorno](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) para obtener información sobre cómo actualizar un entorno.
 
 >[!NOTE]
 >* Una actualización manual solo se puede ejecutar cuando el entorno de destino tiene una canalización correctamente configurada.
