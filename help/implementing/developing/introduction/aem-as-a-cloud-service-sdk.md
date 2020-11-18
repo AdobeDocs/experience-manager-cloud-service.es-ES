@@ -2,9 +2,9 @@
 title: SDK de AEM as a Cloud Service
 description: Información general sobre el AEM como kit de desarrollo de software para Cloud Service
 translation-type: tm+mt
-source-git-commit: 1ebc4f833d4a01f1144c585dc71057f007031e43
+source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1181'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,17 @@ Además, algunos clientes que se implementaron anteriormente con AEM 6.5 o versi
 
 * **6.5 Java API Jar** , un conjunto adicional de interfaces que se han eliminado desde AEM 6.5
 * **6.5 Javadoc Jar** desaprobado: los javadocs para el conjunto adicional de interfaces
+
+## Creación para el SDK {#building-for-the-sdk}
+
+El SDK de AEM como Cloud Service se utiliza para generar e implementar código personalizado. Para obtener más información, consulte la documentación [sobre el arquetipo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)AEM. En un nivel superior, se realizan los siguientes pasos:
+
+* **Compile código**. Como se espera, se compila el código fuente, generando los paquetes de contenido resultantes
+* **Crear artefactos**. Los artefactos se crean durante este proceso
+* **Analizar paquetes**. Los paquetes se analizan mediante el complemento del analizador de Maven, que busca problemas en el proyecto de Maven, como la falta de dependencias
+* **Implementar artefactos**. Los artefactos se implementan en el servidor local.
+
+Cloud Manager ejecuta los mismos pasos al implementar en Entornos de nube. La realización de compilaciones localmente permite el desarrollo local y la realización de pruebas para que los desarrolladores puedan detectar de forma eficaz problemas estructurales o de código antes de comprometerse con el control de código fuente y activar las implementaciones de Cloud Manager, que pueden tardar más.
 
 ## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
 
