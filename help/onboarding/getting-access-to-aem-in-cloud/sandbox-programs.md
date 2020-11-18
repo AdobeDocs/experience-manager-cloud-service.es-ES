@@ -2,7 +2,7 @@
 title: 'Programas de Simulador para pruebas: Cloud Service'
 description: 'Programas de Simulador para pruebas: Cloud Service'
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -51,13 +51,13 @@ Los Programas del Simulador para pruebas se entregan a un entorno de desarrollo 
 
 El conjunto de entornos Producción-Fase se puede agregar manualmente al Programa Simulador para pruebas cuando el usuario esté listo para configurar una canalización de producción.
 
-Para obtener más información sobre cómo crear manualmente un entorno, consulte [Añadir Entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información.
+Para obtener más información sobre cómo crear manualmente un entorno, consulte [Añadir Entorno](/help/implementing/cloud-manager/manage-environments.md) para obtener más información.
 
 ### Eliminación de Entornos de Simulador para pruebas {#deleting-sandbox-environments}
 
 El usuario con los permisos necesarios puede eliminar un entorno o conjuntos de desarrollo o producción o etapa.
 
-Para eliminar un entorno, consulte [Eliminación de Entornos](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obtener más información.
+Para eliminar un entorno, consulte [Eliminar Entorno](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obtener más información.
 
 
 ## Hibernación y deshibernación de Entornos de Simulador para pruebas {#hibernating-introduction}
@@ -176,7 +176,7 @@ Pocas consideraciones clave relacionadas con los entornos hibernados y deshibern
 
 ## AEM actualizaciones de Entornos de Simulador para pruebas {#aem-updates-sandbox}
 
-Consulte [AEM actualizaciones](/help/implementing/deploying/overview.md#version-updates) de la versión para obtener más detalles.
+Consulte [AEM actualizaciones](/help/implementing/deploying/aem-version-updates.md) de la versión para obtener más detalles.
 
 Un usuario puede aplicar manualmente AEM actualizaciones a los entornos de un Programa de Simulador para pruebas.
 
