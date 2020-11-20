@@ -74,10 +74,9 @@ Junto con las funciones de exportación JSON de los componentes principales de A
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**son funciones distintas de AEM:
 >* **Los fragmentos** de contenido son contenido editorial que se puede utilizar para acceder a datos estructurados, incluidos textos, números y fechas, entre otros. Son contenidos puros, con definición y estructura, pero sin diseño visual y/o diseño adicional.
 >* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
-
 >
 >
-Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+>Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
 >
 >Para obtener más información, consulte también [Explicación de los fragmentos de contenido y los fragmentos de experiencia en AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
