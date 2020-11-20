@@ -2,7 +2,7 @@
 title: Banner de carrusel
 description: Aprenda a trabajar con letreros de carrusel en Dynamic Media
 translation-type: tm+mt
-source-git-commit: d992b68d4a015f8f947167b5b1d5f0a1ac5c09ec
+source-git-commit: 98a005dacc0bce0c03f0a58c50c6e85f12b1197f
 workflow-type: tm+mt
 source-wordcount: '4620'
 ht-degree: 4%
@@ -254,8 +254,7 @@ Consulte [(Opcional) Vista previa de letreros de carrusel.](#optional-previewing
 >[!NOTE]
 >
 >Cuando se agregan zonas interactivas a una imagen en una imagen [interactiva](/help/assets/dynamic-media/interactive-images.md) o una pancarta de carrusel, la información de puntos interactivos se almacena en la misma ubicación de metadatos, en relación con la ubicación y el mdashindependientemente de si se trata de una imagen interactiva o de una pancarta de carrusel. Esta funcionalidad significa que puede reutilizar fácilmente la misma imagen (junto con los datos de puntos interactivos definidos) en cualquier visor.
-
->Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
+Sin embargo, tenga en cuenta que los letreros de carrusel admiten mapas de imagen en imágenes que también pueden contener zonas interactivas; una imagen interactiva no. Tenga esto en cuenta si desea crear una imagen interactiva o una pancarta de carrusel que utilice la misma imagen. Puede que desee crear imágenes interactivas y letreros de carrusel con copias independientes de la misma imagen.
 
 >[!NOTE]
 Si está editando imágenes interactivas con zonas interactivas y recortando la imagen, las zonas interactivas se eliminan.
