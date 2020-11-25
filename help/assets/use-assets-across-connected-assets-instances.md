@@ -3,9 +3,9 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementación remota.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0fb84bb88e42f92e335460edca5041a0878f9dca
+source-git-commit: 79c8b5e038a58821b76da665f9342214312008e8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2244'
 ht-degree: 41%
 
 ---
@@ -19,7 +19,7 @@ Los usuarios pueden crear páginas web en [!DNL Experience Manager Sites]. [!DNL
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. Los administradores crean una integración única de una implementación de [!DNL Sites] con otra implementación (remota) de [!DNL Assets].
+Al editar páginas en el Editor [!UICONTROL de] [!DNL Assets] páginas como destino de destinatario, los autores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación diferente que actúa como fuente de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con [!DNL Sites] capacidad con otra implementación de [!DNL Experience Manager] con [!DNL Assets] capacidad.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. La función admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk.
 
@@ -154,7 +154,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 >[!CAUTION]
 >
->Once used in a web page, the fetched remote assets are searchable and usable by anyone who has permissions to access the local folder. The fetched assets are stored (`connectedassets` in the above walk-through). Los recursos también se pueden buscar y ver en el repositorio local mediante [!UICONTROL Buscador de contenido].
+>Una vez utilizados en una página web, los recursos remotos recuperados pueden ser buscados y utilizados por cualquier persona que tenga permiso para acceder a la carpeta local. Los recursos recuperados se almacenan en la carpeta local (`connectedassets` en la ruta anterior). Los recursos también se pueden buscar y ver en el repositorio local mediante [!UICONTROL Buscador de contenido].
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
