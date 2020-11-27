@@ -2,15 +2,21 @@
 title: Fase de planificación
 description: Fase de planificación
 translation-type: tm+mt
-source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
+source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 94%
+source-wordcount: '474'
+ht-degree: 91%
 
 ---
 
 
 # Planificación {#planning-phase}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_planning"
+>title="Planificación de la Transición"
+>abstract="Antes de comenzar el viaje de transición a Cloud Service, debe familiarizarse con AEM as a Cloud Service, revisar los cambios importantes que se le han realizado y también las funciones que se han sustituido o están en desuso."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="Analizador de prácticas recomendadas"
 
 Antes de comenzar el viaje de transición a Cloud Service, debe familiarizarse con AEM as a Cloud Service, revisar los cambios importantes que se le han realizado y también las funciones que se han sustituido o están en desuso.
 
