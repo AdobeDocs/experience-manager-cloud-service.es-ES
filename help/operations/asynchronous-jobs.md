@@ -1,9 +1,9 @@
 ---
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
