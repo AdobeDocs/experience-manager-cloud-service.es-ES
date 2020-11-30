@@ -1,6 +1,6 @@
 ---
 title: Explicación de los tipos de Programa y Programa
-description: 'Explicación de los tipos de Programa y Programa: servicios de nube'
+description: 'Explicación de los tipos de Programa y Programa: Cloud Services'
 translation-type: tm+mt
 source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 workflow-type: tm+mt
@@ -18,10 +18,10 @@ El diagrama siguiente muestra la jerarquía de entidades en Cloud Manager.
 
 ![image](assets/program-types1.png)
 
-## Tipos de Programas {#program-types}
+## Tipos de programas {#program-types}
 
 Un usuario puede crear un **Simulador para pruebas** o un programa **normal** .
 
-Generalmente, se crea un *Simulador para pruebas* para ofrecer los fines de formación, ejecución de demostraciones, habilitación, puntos de contacto o documentación. No se trata de transportar tráfico en directo y tendrá restricciones que un programa regular no tendrá. Incluirá Sitios y Recursos y se entregará automáticamente con una rama Git que incluye código de muestra, un entorno Dev y una canalización sin producción.
+Generalmente, se crea un *Simulador para pruebas* para ofrecer los fines de formación, ejecución de demostraciones, habilitación, puntos de interés o documentación. No se trata de transportar tráfico en directo y tendrá restricciones que un programa regular no tendrá. Incluirá Sitios y Recursos y se entregará automáticamente con una rama Git que incluye código de muestra, un entorno Dev y una canalización sin producción.
 
 Se crea un programa ** regular para habilitar el tráfico activo en el momento adecuado en el futuro.
