@@ -1,11 +1,11 @@
 ---
 title: Sitios de Adobe Experience Manager as a Cloud Service
-description: Recursos informativos y enlaces a la documentación sobre sitios de Adobe Experience Manager as a Cloud Service
+description: Recursos informativos y enlaces a la documentación sobre los sitios de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '414'
+ht-degree: 97%
 
 ---
 
@@ -32,11 +32,11 @@ En esta página se muestran los recursos informativos relacionados con Sites de 
 | Guía del usuario | Descripción |
 |---|---|
 | [Página principal de Experience Manager as a Cloud Service](/help/landing/home.md) | Para obtener una descripción general de la documentación de Experience Manager as a Cloud Service, comience aquí. |
-| [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluso una introducción, terminología, etc. |
+| [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología, etc. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de Experience Manager as a Cloud Service, incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
-| [Incorporación](/help/onboarding/home.md) | Esta guía proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
+| [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
 | [El paso de AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprender el viaje de transición a Cloud Service |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
