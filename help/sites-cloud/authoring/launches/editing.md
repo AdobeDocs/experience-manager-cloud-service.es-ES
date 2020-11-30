@@ -1,5 +1,5 @@
 ---
-title: Editar lanzamientos
+title: Edición de lanzamientos
 description: 'Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
@@ -10,7 +10,7 @@ ht-degree: 93%
 ---
 
 
-# Editar lanzamientos {#editing-launches}
+# Edición de lanzamientos {#editing-launches}
 
 ## Editar páginas de lanzamiento {#editing-launch-pages}
 
@@ -40,7 +40,7 @@ Consulte Cambiar el contenido de una Live Copy para obtener más información. <
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
 1. En la consola **Sitios**, [vaya a la página de origen del lanzamiento y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**y seleccione **Lanzamientos**.
+1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione un lanzamiento específico y la opción **Comparar con el origen**:
 
    ![Comparación entre inicio y origen](/help/sites-cloud/authoring/assets/launches-compare.png)
