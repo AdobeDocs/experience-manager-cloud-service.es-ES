@@ -23,7 +23,7 @@ Cloud Manager verificará la propiedad del dominio mediante el valor TXT y mostr
 
 * **Verificación del dominio en curso** Verificación en curso. Este estado suele aparecer después de seleccionar el icono &quot;verificar nuevamente&quot; junto al estado.
 
-* **Se ha verificado que la verificación de TXT ha fallado** la implementación. Sin embargo, la implementación de CDN falló. Se notificará automáticamente a un representante de Adobe.
+* **Se ha verificado que la verificación de TXT ha fallado** en la implementación. Sin embargo, la implementación de CDN falló. Se notificará automáticamente a un representante de Adobe.
 
 * **Dominio verificado e implementado** Este estado indica que el nombre de dominio personalizado está listo para usarse. Nota: En este punto, el nombre de dominio personalizado está listo para la prueba y se le dirigirá al nombre de dominio de Cloud Manager. Vaya a Configuración de DNS INSERT LINK para aprender a hacer esto.
 
