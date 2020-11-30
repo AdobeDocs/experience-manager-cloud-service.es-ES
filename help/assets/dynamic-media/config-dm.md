@@ -305,7 +305,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. En la página **Adobe CQ Scene7 Asset MIME type Service** , haga clic en cualquier icono de signo más &lt;+>. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de MIME es trivial.
+1. En la página Servicio **MIME de tipo Scene7 Asset de** Adobe CQ, haga clic en el icono de signo más &lt;+>. La ubicación en la tabla donde se hace clic en el signo más para agregar el nuevo tipo de MIME es trivial.
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
