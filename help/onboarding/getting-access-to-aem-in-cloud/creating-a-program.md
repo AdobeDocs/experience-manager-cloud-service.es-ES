@@ -1,11 +1,11 @@
 ---
-title: Creación de un Programa - Servicio de nube
-description: Creación de un Programa - Servicio de nube
+title: 'Creación de un Programa: Cloud Service'
+description: 'Creación de un Programa: Cloud Service'
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -53,7 +53,7 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
    >Para obtener más información sobre el acceso y la administración del repositorio Git mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager, consulte [Acceso a Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Una vez creado el entorno de desarrollo, el usuario puede **acceder al vínculo de AEM** , como se muestra en la figura siguiente:
+1. Una vez creado el entorno de desarrollo, el usuario puede **acceder a AEM** vínculo, como se muestra en la figura siguiente:
 
    ![](assets/create-program-5.png)
 
@@ -68,10 +68,10 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
 ## Eliminación de un Programa de Simulador para pruebas {#delete-sandbox-program}
 
-Un usuario de un Programa de Simulador para pruebas en la función Propietario ** empresarial o Administrador *de* implementación en Cloud Manager puede eliminar el conjunto de entornos de producción y de fase mediante la interfaz de usuario del Administrador de nubes.
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->Al seleccionar la opción de eliminación en Producción o Etapa, también se elimina la otra del conjunto.
+>Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
 La opción Eliminar está disponible en la página de aterrizaje, como se muestra a continuación:
 
