@@ -1,6 +1,6 @@
 ---
-title: Implementar en AEM as a Cloud Service
-description: 'Implementar en AEM as a Cloud Service '
+title: Implementación en AEM as a Cloud Service
+description: 'Implementación en AEM as a Cloud Service '
 translation-type: tm+mt
 source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Implementar en AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
+# Implementación en AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
 ## Introducción {#introduction}
 
