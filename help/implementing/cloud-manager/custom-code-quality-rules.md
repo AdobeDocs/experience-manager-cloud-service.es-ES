@@ -1,6 +1,6 @@
 ---
-title: '"Reglas de calidad de código personalizado: Cloud Services"'
-description: '"Reglas de calidad de código personalizado: Cloud Services"'
+title: 'Reglas de calidad de código personalizado: Cloud Services'
+description: 'Reglas de calidad de código personalizado: Cloud Services'
 translation-type: tm+mt
 source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
