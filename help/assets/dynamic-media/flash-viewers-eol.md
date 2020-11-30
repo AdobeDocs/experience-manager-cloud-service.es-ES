@@ -12,7 +12,7 @@ ht-degree: 61%
 
 # Aviso de fin de vida útil para el visualizador Flash{#flash-viewers-end-of-life-notice}
 
-*A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejó de ofrecer asistencia técnica para la plataforma de visor Flash.*
+*A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejó de ofrecer asistencia técnica para la plataforma de visor de Flash.*
 
 *Para obtener más información sobre este cambio importante, consulte el siguiente sitio web de preguntas más frecuentes:*
 
