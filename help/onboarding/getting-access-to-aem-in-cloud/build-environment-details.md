@@ -1,6 +1,6 @@
 ---
 title: Detalles del Entorno de compilación
-description: '"Detalles del Entorno de compilación: Cloud Services"'
+description: 'Detalles del Entorno de compilación: Cloud Services'
 translation-type: tm+mt
 source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
