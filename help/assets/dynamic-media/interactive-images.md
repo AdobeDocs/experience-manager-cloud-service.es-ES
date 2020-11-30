@@ -116,7 +116,7 @@ Considere los siguientes ejemplos de direcciones URL de Quickview y sus variable
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena productId= de consulta y es claramente un valor de SKU. Por lo tanto, nuestras zonas interactivas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena de consulta productId= y es claramente un valor de SKU. Por lo tanto, nuestras zonas interactivas solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU único, que se encuentra en la ruta de URL.</p> </td>
