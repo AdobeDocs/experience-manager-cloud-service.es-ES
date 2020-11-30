@@ -103,7 +103,7 @@ Cuando caduca el certificado, ya no es de confianza. Para añadir un nuevo certi
 
    ![Eliminar la entrada similaritysearch existente en el almacén de claves para añadir un nuevo certificado de seguridad](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Imagen: Elimine la entrada`similaritysearch`en el almacén de claves para añadir un nuevo certificado de seguridad.*
+   *Imagen: Elimine la entrada `similaritysearch` en el almacén de claves para añadir un nuevo certificado de seguridad.*
 
 1. En la [!DNL Experience Manager] interfaz de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Abra la configuración de etiquetas inteligentes disponible. Para descargar un certificado público, haga clic en **[!UICONTROL Descargar certificado público]**.
 
