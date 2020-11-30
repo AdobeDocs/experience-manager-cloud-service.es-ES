@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Uso de la fusión de recursos de Sling en AEM como Cloud Service {#using-the-sling-resource-merger-in-aem}
+# Usar la fusión de recursos de Sling en AEM as a Cloud Service {#using-the-sling-resource-merger-in-aem}
 
 ## Función {#purpose}
 
 La fusión de recursos de Sling proporciona servicios para acceder a los recursos y combinarlos. Proporciona mecanismos diferentes (de diferenciación) para:
 
-* **[Superposiciones](/help/implementing/developing/introduction/overlays.md)**de recursos mediante las rutas[de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
+* **[Superposiciones](/help/implementing/developing/introduction/overlays.md)** de recursos mediante las rutas [de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
 
 * **Sobrescribe** los cuadros de diálogo de componentes para la IU táctil (`cq:dialog`) mediante la jerarquía de tipos de recursos (mediante la propiedad `sling:resourceSuperType`).
 
@@ -32,7 +32,7 @@ Con la fusión de recursos de Sling, los recursos y/o propiedades de superposici
 >
 >La fusión de recursos de Sling y los métodos relacionados solo se pueden usar con la IU táctil (que es la única IU disponible para AEM como Cloud Service).
 
-### Objetivos para AEM {#goals-for-aem}
+### Objetivos de AEM {#goals-for-aem}
 
 Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 
@@ -48,11 +48,12 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 >Esto se debe a que el contenido de `/libs` se puede sobrescribir cada vez que se apliquen actualizaciones a la instancia.
 >
 >* Las superposiciones dependen de las rutas [de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
+   >
+   >
+* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
 >
->* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
 >
->
->Sin embargo, las anulaciones se definen a menudo en `/apps`, ya que la práctica recomendada en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
+Sin embargo, las anulaciones suelen definirse en `/apps`, ya que la mejor práctica AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
 
 ### Propiedades {#properties}
 
