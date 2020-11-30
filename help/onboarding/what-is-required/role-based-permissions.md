@@ -25,17 +25,17 @@ Cada una de las funciones tiene permisos específicos, tareas preconfiguradas o 
 | Actualizar Entorno | Actualice los Entornos Prod+Stage, Dev y Playground. | x | x |  |  |
 | Eliminar Entorno | Elimine Entornos No Prod, Dev Y Playground. | x | x |  |  |
 | Eliminar Entorno | Eliminar Entorno Prod+Stage. |  |  |  |  |
-| Configuración de Programa | Configurar Programas (incluidos KPI). | x |  |  |  |
-| Configuración de Programa | Obtener acceso de confirmación. |  | x |  | x |
+| Configuración de programa | Configurar Programas (incluidos KPI). | x |  |  |  |
+| Configuración de programa | Obtener acceso de confirmación. |  | x |  | x |
 | Configuración de tubería | Configurar o editar tubería. |  | x |  |  |
 | Ejecución de canalización | Inicio de la tubería. | x | x |  |  |
 | Ejecución de canalización | Rechazar o aprobar errores importantes de tres niveles. | x | x | x |  |
-| Ejecución de canalización | Proporcione la aprobación de GoLive. | x | x | x |  |
+| Ejecución de canalización | Proporcionar aprobación de GoLive. | x | x | x |  |
 | Ejecución de canalización | Programar la implementación de producción. | x | x | x |  |
 | Ejecución de canalización | Reanudar tubería de producción. |  |  |  |  |
 | Eliminación de tubería | Permite la eliminación de una canalización. |  | x |  |  |
 | Cancelación de ejecución | Cancelar ejecución actual. |  | x |  |  |
 | Administrar Entorno | Añada el segmento Publish-Dispatcher desde la pantalla Administrar Entorno. | x | x |  |  |  |
-| Actualización push | Canalización de actualización de Inicio Push. |  |  |  |  |
+| Actualización push | Canalización de actualización de inicio Push. |  |  |  |  |
 | Generar Token de acceso personal | Acceso a Git. |  | x |  | x |
 
