@@ -30,20 +30,21 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 
 * XT: segmentación de la experiencia de Adobe Target
 * A/B: prueba de A/B de Adobe Target
-* AEM: segmentación de Adobe Experience Manager (por ejemplo, dirigido por ContextHub)
+* AEM: objetivos de Adobe Experience Manager (por ejemplo, dirigido por ContextHub)
 
-![Tipos de Actividad](/help/sites-cloud/authoring/assets/activities-types.png)
+![Tipos de actividad](/help/sites-cloud/authoring/assets/activities-types.png)
 
 >[!NOTE]
 >
 >Los tipos de actividades estarán disponibles dependiendo de lo siguiente:
 >
 >* Si la opción `xt_only` está habilitada en el inquilino de Adobe Target (clientcode) que se utiliza en AEM para conectarse a Adobe Target, puede crear **solo** actividades XT en AEM.
+   >
+   >
+* Si la `xt_only` opción **no está** activada en el inquilino de Adobe Target (clientcode), puede crear actividades **** XT o A/B en AEM.
 >
->* Si la `xt_only` opción **no está** activada en el inquilino de Adobe Target (clientcode), puede crear actividades **** XT o A/B en AEM.
 >
->
->**Nota adicional:**`xt_only` La opción es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+**Nota adicional:**`xt_only` La opción es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
 
 >[!CAUTION]
 >
@@ -76,7 +77,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Nombre:** Nombre de la actividad.
 * **Motor de segmentación:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) o [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) como motor del contenido segmentado.
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **Tipo** de Actividad: Tipo de actividad: Prueba A/B o segmentación de experiencias
+* **Tipo** de actividad: Tipo de actividad: Prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
 * **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
