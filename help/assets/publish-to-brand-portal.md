@@ -109,6 +109,7 @@ Puede publicar o cancelar la publicación de las carpetas de recursos inmediatam
          Haga clic en **Siguiente.**
 
       1. Confirme su selección en **[!UICONTROL Ámbito]** y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
 
 1. **Publicar carpetas más tarde**
