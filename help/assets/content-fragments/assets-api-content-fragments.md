@@ -31,7 +31,7 @@ La API le permite operar Adobe Experience Manager como Cloud Service como CMS (s
 
 Por ejemplo, las aplicaciones de una sola página (SPA), basadas en marcos o personalizadas, requieren contenido proporcionado a través de la API HTTP, a menudo en formato JSON.
 
-Si bien [AEM los componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí requieren AEM conocimientos técnicos de WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas basadas en plantillas AEM dedicadas. No todas las organizaciones de desarrollo de la EPA tienen acceso directo a esos conocimientos.
+Si bien [AEM los componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales proporcionan una API muy completa, flexible y personalizable que puede ofrecer las operaciones de lectura necesarias para este fin y cuya salida JSON se puede personalizar, sí requieren AEM conocimientos técnicos de WCM (Gestor de contenido web) para la implementación, ya que deben alojarse en páginas basadas en plantillas AEM dedicadas. No todas las organizaciones de desarrollo SPA tienen acceso directo a esos conocimientos.
 
 Es cuando se puede utilizar la API REST de Assets. Permite a los desarrolladores acceder a los recursos (por ejemplo, imágenes y fragmentos de contenido) directamente, sin necesidad de incrustarlos primero en una página y entregar su contenido en formato JSON serializado.
 
