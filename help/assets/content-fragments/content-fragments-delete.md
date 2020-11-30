@@ -1,6 +1,6 @@
 ---
-title: '"Fragmentos de contenido: Eliminar consideraciones"'
-description: '"Fragmentos de contenido: Eliminar consideraciones"'
+title: 'Fragmentos de contenido: Eliminar consideraciones'
+description: 'Fragmentos de contenido: Eliminar consideraciones'
 translation-type: tm+mt
 source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 workflow-type: tm+mt
