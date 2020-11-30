@@ -10,7 +10,7 @@ ht-degree: 13%
 ---
 
 
-# Distribuir imágenes optimizadas para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
+# Distribución de imágenes adaptables para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilice la función de código adaptable cuando desee compartir el código para la prestación de servicios interactivos con el desarrollador web. Copie el código interactivo (**[!UICONTROL RESS]**) en el portapapeles para poder compartirlo con el desarrollador web.
 
@@ -45,6 +45,6 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
 
 ## Uso de HTTP/2 para el envío de los recursos de Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. El Envío de recursos de Dynamic Media se admite mediante HTTP/2, que proporciona mejores tiempos de carga y respuesta.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. El envío de recursos de Dynamic Media se admite mediante HTTP/2, que proporciona mejores tiempos de carga y respuesta.
 
 Consulte Envío de contenido [](http2faq.md) HTTP2 para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
