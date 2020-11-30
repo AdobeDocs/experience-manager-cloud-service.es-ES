@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Materiales de referencia de SPA {#spa-reference-materials}
 
-## Referencias de la API de SPA Javascript para módulos NMP {#api-references}
+## Referencias de la API de Javascript de SPA para módulos NMP {#api-references}
 
 Las siguientes son las referencias de API de JavaScript disponibles de los módulos NPM para el marco del SDK del Editor de SPA de AEM.
 
@@ -29,4 +29,4 @@ Los siguientes son los repositorios de código abierto en GitHub para las biblio
 * [Administrador de modelos de página](https://github.com/adobe/aem-spa-page-model-manager)
 * [Componentes editables React](https://github.com/adobe/aem-react-editable-components)
 * [Componentes editables angulares](https://github.com/adobe/aem-angular-editable-components)
-* [Principal del proyecto de SPA](https://github.com/adobe/aem-spa-project-core)
+* [SPA principal del proyecto](https://github.com/adobe/aem-spa-project-core)
