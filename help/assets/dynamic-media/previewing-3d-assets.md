@@ -46,7 +46,7 @@ El tiempo que tarda en abrir un recurso 3D en la página de vista de detalles de
 
 Además, las capacidades del ordenador cliente, como una estación de trabajo, un portátil o un dispositivo táctil móvil, también son importantes para tener en cuenta al manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización interactiva en 3D sea más cómoda y agradable.
 
-**previsualización de recursos 3D en AEM**
+**Previsualización de recursos 3D en AEM**
 
 1. Asegúrese de que ha cargado los recursos 3D en AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
@@ -61,8 +61,8 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
 
 1. Toque la tarjeta del recurso 3D para abrirla en la página de vista de detalles del recurso.
 
-   ![previsualización 3D interactiva](/help/assets/dynamic-media/assets/3d-preview.png)
-   _previsualización interactiva de un recurso 3D en la página de vista de detalles del recurso._
+   ![Previsualización 3D interactiva](/help/assets/dynamic-media/assets/3d-preview.png)
+   _Previsualización interactiva de un recurso 3D en la página de vista de detalles del recurso._
 1. En la página de vista de detalles de recursos para el recurso 3D, realice una de las siguientes acciones:
    * **Gire la cámara**: ordene la vista alrededor de la escena y los objetos 3D.
       * _Ratón_: Haga clic y arrastre.
@@ -74,8 +74,8 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
       * _Ratón_: Rueda de desplazamiento.
       * _Pantalla_ táctil: Pellizque con dos dedos.
    * **Volver a introducir la cámara**: vuelva a introducir la cámara en un punto de la escena 3D.
-      * _Ratón_: Haga clic con el Doble.
-      * _Pantalla_ táctil: Toque el Doble.
+      * _Ratón_: Haga clic con el doble.
+      * _Pantalla_ táctil: Toque el doble.
    * **Restaurar**: cerca de la esquina inferior derecha de la página, toque el icono Restablecer para restaurar el punto de destinatario de vista al centro del recurso 3D. El reinicio también hace que la cámara se acerque o se aleje para mostrar el recurso en su totalidad y con un tamaño de visualización razonable.
    * **Modo** de pantalla completa: para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, toque el icono de pantalla completa.
 
