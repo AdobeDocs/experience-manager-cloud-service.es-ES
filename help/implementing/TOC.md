@@ -4,10 +4,10 @@ user-guide-title: Implementar para AEM as a Cloud Service
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 62%
+source-wordcount: '436'
+ht-degree: 61%
 
 ---
 
@@ -48,6 +48,9 @@ ht-degree: 62%
    + [Diferencias de página](/help/implementing/developing/introduction/page-diff.md)
    + [Limitaciones del editor](/help/implementing/developing/introduction/editor-limitations.md)
    + [Convenciones de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)
+   + [AEM marco de etiquetado](/help/implementing/developing/introduction/tagging-framework.md)
+   + [Creación de etiquetas en aplicaciones AEM](/help/implementing/developing/introduction/tagging-applications.md)
+   + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
 + Herramientas para desarrolladores {#developer-tools}
    + [Herramientas para desarrolladores de AEM para Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Complemento Maven del paquete de contenido](/help/implementing/developing/tools/maven-plugin.md)
@@ -100,8 +103,8 @@ ht-degree: 62%
    + [Configuración del editor de texto enriquecido](/help/implementing/developing/extending/rich-text-editor.md)
    + [Configuración de los complementos RTE](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [Configuración de RTE para crear sitios accesibles](/help/implementing/developing/extending/rte-accessible-content.md)
-+ Implementar en AEM as a Cloud Service {#deploying}
-   + [Implementar en AEM as a Cloud Service](deploying/overview.md)
++ Implementación en AEM as a Cloud Service {#deploying}
+   + [Implementación en AEM as a Cloud Service](deploying/overview.md)
    + [Actualizaciones de la versión de AEM](deploying/aem-version-updates.md)
    + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
 + Nivel de Author {#author-tier}
