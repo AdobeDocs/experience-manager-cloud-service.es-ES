@@ -161,7 +161,7 @@ En el primer caso, los javadocs pueden indicar lo que `adaptTo-targets` es posib
    <td>Si se trata de un recurso de nodo dam:Asset.</td>
   </tr>
   <tr>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">Representación</a></td>
+   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/dam/api/Rendition.html">Rendition</a></td>
    <td>Si se trata de una representación dam:Asset (nt:file en la carpeta de representación de un dam:Assert)</td>
   </tr>
   <tr>
