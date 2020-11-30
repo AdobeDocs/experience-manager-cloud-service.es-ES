@@ -1,6 +1,6 @@
 ---
 title: Información general del editor de SPA
-description: Este artículo ofrece una descripción general completa del Editor de SPA y de cómo funciona, incluyendo flujos de trabajo detallados de la interacción del Editor de SPA dentro de AEM.
+description: Este artículo ofrece una descripción general completa del Editor de SPA y cómo funciona, incluyendo flujos de trabajo detallados de la interacción del Editor de SPA dentro de AEM.
 translation-type: tm+mt
 source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
@@ -12,33 +12,33 @@ ht-degree: 0%
 
 # Información general del editor de SPA {#spa-editor-overview}
 
-Las aplicaciones de una sola página (SPA) pueden oferta experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido dentro de AEM sin problemas para un sitio creado con dichos marcos.
+Las aplicaciones de una sola página (SPA) pueden oferta de experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder crear sitios con marcos de SPA y los autores quieren editar contenido dentro de AEM sin problemas para un sitio creado con dichos marcos.
 
-El Editor de SPA oferta una solución completa para admitir SPA dentro de AEM. Esta página ofrece información general sobre cómo se estructura la compatibilidad con SPA en AEM, cómo funciona el Editor de SPA y cómo se AEM sincronizando el marco de SPA.
+El Editor SPA oferta una solución integral para admitir SPA dentro de AEM. Esta página proporciona información general sobre cómo se estructura SPA soporte en AEM, cómo funciona el Editor de SPA y cómo el marco SPA y AEM se mantienen sincronizados.
 
 ## Introducción {#introduction}
 
-Los sitios creados con marcos de SPA comunes como React y Angular cargan su contenido a través de JSON dinámico y no proporcionan la estructura HTML necesaria para que el Editor de páginas AEM pueda colocar controles de edición.
+Los sitios creados con marcos de SPA comunes como React y Angular cargan su contenido a través de JSON dinámico y no proporcionan la estructura HTML necesaria para que el Editor de páginas de AEM pueda colocar controles de edición.
 
-Para habilitar la edición de SPA dentro de AEM, se necesita una asignación entre la salida JSON de la SPA y el modelo de contenido en el repositorio de AEM para guardar los cambios en el contenido.
+Para habilitar la edición de SPA dentro de AEM, se necesita una asignación entre la salida JSON del SPA y el modelo de contenido en el repositorio AEM para guardar los cambios en el contenido.
 
-La compatibilidad con SPA en AEM introduce una capa de JS delgada que interactúa con el código JS de SPA cuando se carga en el Editor de páginas con el que se pueden enviar eventos y la ubicación de los controles de edición se puede activar para permitir la edición en contexto. Esta función se basa en el concepto de extremo de Content Services API, ya que el contenido del SPA debe cargarse a través de Content Services.
+SPA compatibilidad en AEM introduce una capa de JS delgada que interactúa con el código JS SPA cuando se carga en el Editor de páginas con el que se pueden enviar eventos y la ubicación de los controles de edición se puede activar para permitir la edición en contexto. Esta función se basa en el concepto de extremo de Content Services API, ya que el contenido de la SPA debe cargarse a través de Content Services.
 
-Para obtener más información sobre las ZPE en AEM, consulte los siguientes documentos:
+Para obtener más información sobre SPA en AEM, consulte los siguientes documentos:
 
-* [Modelo](blueprint.md) SPA para los requisitos técnicos de un SPA
-* [Introducción a los SPA en AEM uso de React](getting-started-react.md) para un rápido recorrido por un SPA simple con React
-* [Introducción a los SPA en AEM con Angular](getting-started-angular.md) para un rápido recorrido por un SPA sencillo con Angular
+* [SPA modelo](blueprint.md) para los requisitos técnicos de un SPA
+* [Introducción a la SPA en AEM con React](getting-started-react.md) para un rápido recorrido por un SPA simple con React
+* [Introducción a SPA en AEM con Angular](getting-started-angular.md) para un rápido recorrido por un SPA sencillo con Angular
 
 ## Diseño {#design}
 
-El componente de página de un SPA no proporciona los elementos HTML de sus componentes secundarios mediante el archivo JSP o HTL. Esta operación se delega en el marco de la EPA. La representación de los componentes o modelos secundarios se obtiene como una estructura de datos JSON del JCR. A continuación, los componentes de SPA se agregan a la página según esa estructura. Este comportamiento diferencia la composición de cuerpo inicial del componente de página de la de los homólogos que no son de SPA.
+El componente de página de un SPA no proporciona los elementos HTML de sus componentes secundarios mediante el archivo JSP o HTL. Esta operación se delega en el marco SPA. La representación de los componentes o modelos secundarios se obtiene como una estructura de datos JSON del JCR. Los componentes SPA se agregan a continuación a la página según esa estructura. Este comportamiento diferencia la composición del cuerpo inicial del componente de página de las contrapartidas que no son SPA.
 
 ### Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan en una `PageModel` biblioteca proporcionada. El SPA debe utilizar la biblioteca del modelo de página para inicializarse y ser creado por el editor de SPA. Biblioteca de modelo de página proporcionada indirectamente al componente de página de AEM a través de `aem-react-editable-components` npm. El modelo de página es un intérprete entre AEM y la SPA y, por lo tanto, siempre debe estar presente. Cuando se crea la página, se `cq.authoring.pagemodel.messaging` debe agregar una biblioteca adicional para habilitar la comunicación con el editor de páginas.
+La resolución y la administración del modelo de página se delegan en una `PageModel` biblioteca proporcionada. El SPA debe utilizar la biblioteca del modelo de página para inicializarse y ser creado por el editor de SPA. Biblioteca de modelo de página proporcionada indirectamente al componente de página de AEM a través de `aem-react-editable-components` npm. El Modelo de página es un intérprete entre AEM y el SPA y por lo tanto siempre debe estar presente. Cuando se crea la página, se `cq.authoring.pagemodel.messaging` debe agregar una biblioteca adicional para habilitar la comunicación con el editor de páginas.
 
-Si el componente de página SPA hereda del componente principal de la página, hay dos opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
+Si el componente de página SPA hereda del componente principal de página, hay dos opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
 
 * Si la plantilla es editable, agréguela a la directiva de página.
 * O bien, agregue las categorías mediante el `customfooterlibs.html`.
@@ -49,45 +49,45 @@ Para cada recurso del modelo exportado, el SPA asignará un componente real que 
 
 >[!CAUTION]
 >
->La inclusión de la `cq.authoring.pagemodel.messaging` categoría debe limitarse al contexto del Editor de la SPA.
+>La inclusión de la `cq.authoring.pagemodel.messaging` categoría debería limitarse al contexto del Editor de SPA.
 
 ### Tipo de datos de comunicación {#communication-data-type}
 
 Cuando se agrega la `cq.authoring.pagemodel.messaging` categoría a la página, se enviará un mensaje al Editor de páginas para establecer el tipo de datos de comunicación JSON. Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes de GET se comunicarán con los puntos finales del modelo de Sling de un componente. Una vez que se produce una actualización en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del modelo de páginas. A continuación, la biblioteca del modelo de página informa al SPA de las actualizaciones.
 
-![Comunicación de SPA](assets/communication.png)
+![SPA comunicación](assets/communication.png)
 
 ## Flujo de trabajo {#workflow}
 
-Puede comprender el flujo de la interacción entre la SPA y la AEM pensando en el Editor de SPA como un mediador entre ambos.
+Puede comprender el flujo de la interacción entre el SPA y el AEM pensando en el Editor de SPA como un mediador entre ambos.
 
 * La comunicación entre el editor de páginas y el SPA se realiza mediante JSON en lugar de HTML.
-* El editor de páginas proporciona la versión más reciente del modelo de página a la SPA mediante la API de mensajería y iframe.
+* El editor de páginas proporciona la versión más reciente del modelo de página al SPA mediante la API de mensajería y iframe.
 * El administrador de modelos de página notifica al editor que está listo para la edición y pasa el modelo de página como una estructura JSON.
 * El editor no modifica ni siquiera accede a la estructura DOM de la página que se está creando, sino que proporciona el modelo de página más reciente.
 
-![Flujo de trabajo de SPA](assets/workflow.png)
+![Flujo de trabajo SPA](assets/workflow.png)
 
-### Flujo de trabajo básico del editor de SPA {#basic-spa-editor-workflow}
+### Flujo de trabajo del Editor de SPA básico {#basic-spa-editor-workflow}
 
 Teniendo en cuenta los elementos clave del Editor de SPA, el autor verá el flujo de trabajo de alto nivel de edición de un SPA dentro de AEM de la siguiente manera.
 
-![Flujo de trabajo de SPA animado](assets/workflow.gif)
+![Flujo de trabajo SPA animado](assets/workflow.gif)
 
-1. Se carga el Editor de SPA.
+1. Se carga SPA Editor.
 1. SPA se carga en un marco independiente.
 1. SPA solicita contenido JSON y procesa componentes en el lado del cliente.
-1. El Editor de SPA detecta los componentes procesados y genera superposiciones.
+1. SPA Editor detecta los componentes procesados y genera superposiciones.
 1. El autor hace clic en una superposición y muestra la barra de herramientas de edición del componente.
-1. El Editor de SPA persiste en las ediciones con una solicitud de POST al servidor.
-1. El Editor de SPA solicita JSON actualizado al Editor de SPA, que se envía a la SPA con un Evento de DOM.
-1. SPA vuelve a procesar el componente correspondiente, actualizando su DOM.
+1. SPA Editor persiste en las ediciones con una solicitud de POST al servidor.
+1. SPA Editor solicita el JSON actualizado al Editor de SPA, que se envía al SPA con un Evento DOM.
+1. SPA vuelve a procesar el componente afectado, actualizando su DOM.
 
 >[!NOTE]
 >
 >Recuerde:
 >
->* El SPA siempre se encarga de su exposición.
+>* El SPA está siempre a cargo de su visualización.
 >* El Editor SPA está aislado del SPA mismo.
 >* En producción (publicación), el editor de SPA nunca se carga.
 
@@ -102,7 +102,7 @@ Esta es una descripción más detallada de la interacción cliente-servidor al e
 1. El exportador del modelo de Sling solicita los recursos que componen la página desde el repositorio.
 1. El repositorio devuelve los recursos.
 1. El exportador del modelo de Sling devuelve el modelo de la página.
-1. SPA crea una instancia de sus componentes en función del modelo de página.
+1. El SPA crea una instancia de sus componentes según el modelo de página.
 1. **6a** El contenido informa al editor de que está listo para la creación.
 
    **6b** El editor de páginas solicita las configuraciones de creación de componentes.
@@ -132,12 +132,12 @@ Esta es una descripción general más detallada que se centra en la experiencia 
 
 ![Flujo de trabajo de creación de SPA](assets/authoring-workflow.png)
 
-1. El SPA busca el modelo de página.
+1. El SPA obtiene el modelo de página.
 1. **2a** El modelo de página proporciona al editor los datos necesarios para la creación.
 
    **2b** Cuando se notifica, el organizador de componentes actualiza la estructura de contenido de la página.
 1. El orquestador de componentes consulta la asignación entre un tipo de recurso AEM y un componente SPA.
-1. El organizador de componentes crea una instancia dinámica del componente SPA en función del modelo de página y la asignación de componentes.
+1. El orquestador de componentes crea una instancia dinámica del componente SPA en función del modelo de página y la asignación de componentes.
 1. El editor de páginas actualiza el modelo de página.
 1. **6a** El modelo de página proporciona datos de creación actualizados al editor de páginas.
 
@@ -148,7 +148,7 @@ Esta es una descripción general más detallada que se centra en la experiencia 
 
 ## Requisitos y limitaciones {#requirements-limitations}
 
-Para permitir que el autor utilice el editor de páginas para editar el contenido de un SPA, la aplicación de SPA debe implementarse para interactuar con el SDK del Editor de SPA de AEM. Consulte el [Introducción a los SPA en AEM uso de React](getting-started-react.md) documento para obtener información mínima sobre cómo hacer que el suyo funcione.
+Para permitir que el autor utilice el editor de páginas para editar el contenido de un SPA, la aplicación SPA debe implementarse para interactuar con el SDK del Editor SPA de AEM. Por favor, consulte la sección [Introducción a la SPA en AEM uso de React](getting-started-react.md) documento para obtener información mínima sobre cómo hacer que el suyo funcione.
 
 ### Marcos admitidos {#supported-frameworks}
 
@@ -157,15 +157,15 @@ El SDK del Editor de SPA admite las siguientes versiones mínimas:
 * Reaccione 16.x y posterior
 * Angular 6.x y posterior
 
-Las versiones anteriores de estos marcos pueden funcionar con el SDK del Editor de SPA de AEM, pero no son compatibles.
+Las versiones anteriores de estos marcos pueden funcionar con el SDK del Editor SPA de AEM, pero no son compatibles.
 
 ### Marcos adicionales {#additional-frameworks}
 
-Se pueden implementar marcos de SPA adicionales para trabajar con el SDK del Editor de SPA de AEM. Consulte el documento de modelo de [SPA](blueprint.md) para conocer los requisitos que debe cumplir una estructura para crear una capa específica de la estructura compuesta de módulos, componentes y servicios para trabajar con el Editor de SPA de AEM.
+Se pueden implementar marcos de SPA adicionales para trabajar con el SDK del Editor de AEM SPA. Consulte el documento de modelo [SPA](blueprint.md) para conocer los requisitos que debe cumplir un módulo para crear un nivel específico del marco de trabajo compuesto de módulos, componentes y servicios que funcionen con el Editor de SPA de AEM.
 
 ### Uso de varios selectores {#multiple-selectors}
 
-Los selectores personalizados adicionales se pueden definir y utilizar como parte de un SPA desarrollado para el SDK de SPA de AEM. Sin embargo, esta compatibilidad requiere que el `model` selector sea el primer selector y que la extensión sea `.json` la requerida por el exportador JSON.
+Los selectores personalizados adicionales se pueden definir y utilizar como parte de una SPA desarrollada para el SDK de AEM SPA. Sin embargo, esta compatibilidad requiere que el `model` selector sea el primer selector y que la extensión sea `.json` la requerida por el exportador JSON.
 
 ### Requisitos del Editor de texto {#text-editor-requirements}
 
@@ -178,7 +178,7 @@ Para obtener información adicional sobre la propiedad `editElementQuery` y la c
 
 ### Restricciones     {#limitations}
 
-El SDK del Editor de SPA de AEM es totalmente compatible con Adobe y, como nueva función, se sigue ampliando y mejorando. El Editor de SPA aún no admite las siguientes funciones de AEM:
+El SDK AEM SPA Editor es totalmente compatible con Adobe y, como nueva función, se sigue ampliando y mejorando. El Editor de SPA aún no admite las siguientes funciones de AEM:
 
 * Modo destinatario
 * ContextHub
