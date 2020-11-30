@@ -1,6 +1,6 @@
 ---
-title: Modelo SPA
-description: En el presente documento se describe el contrato general independiente del marco de trabajo que debe cumplir cualquier marco de la SPA para aplicar componentes de la SPA editables en AEM.
+title: SPA modelo
+description: En el presente documento se describe el contrato general, independiente del marco, que debe cumplir cualquier marco SPA para aplicar componentes SPA editables en AEM.
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
@@ -10,13 +10,13 @@ ht-degree: 0%
 ---
 
 
-# Modelo SPA {#spa-blueprint}
+# SPA modelo {#spa-blueprint}
 
-Para permitir que el autor utilice el Editor de SPA de AEM para editar el contenido de un SPA, hay requisitos que debe cumplir el SPA.
+Para permitir que el autor utilice el Editor de SPA de AEM para editar el contenido de un SPA, hay requisitos que el SPA debe cumplir.
 
 ## Introducción {#introduction}
 
-El presente documento describe el contrato general que debe cumplir cualquier marco de SPA (es decir, el tipo de capa de soporte AEM) para implementar componentes de SPA editables dentro de AEM.
+En este documento se describe el contrato general que debe cumplir cualquier marco de trabajo SPA (es decir, el tipo de capa de soporte AEM) para implementar componentes SPA editables dentro de AEM.
 
 Para permitir que el autor utilice el Editor de páginas AEM para editar los datos expuestos por un marco de aplicación de una sola página, un proyecto debe poder interpretar la estructura del modelo que representa la semántica de los datos almacenados para una aplicación dentro del repositorio de AEM. Para lograr este objetivo, se proporcionan dos bibliotecas que no dependen del marco de trabajo: el `PageModelManager` y el `ComponentMapping`.
 
@@ -28,13 +28,13 @@ Para permitir que el autor utilice el Editor de páginas AEM para editar los dat
 
 >[!CAUTION]
 >
->Aunque las capacidades de SPA de AEM son independientes del marco, actualmente solo se admiten los marcos React y Angular.
+>Aunque las capacidades SPA de AEM son independientes del marco, actualmente solo se admiten los marcos React y Angular.
 
 ## PageModelManager {#pagemodelmanager}
 
 La `PageModelManager` biblioteca se proporciona como un paquete NPM para que lo utilice un proyecto SPA. Acompaña al SPA y sirve como administrador de modelos de datos.
 
-En nombre de la SPA, abstrae la recuperación y administración de la estructura JSON que representa la estructura de contenido real. También es responsable de la sincronización con la SPA para informarle de cuándo tiene que volver a procesar sus componentes.
+En nombre del SPA, abstrae la recuperación y administración de la estructura JSON que representa la estructura de contenido real. También es responsable de sincronizar con el SPA para informarle de cuándo tiene que volver a procesar sus componentes.
 
 Consulte el paquete NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
@@ -44,13 +44,13 @@ Al inicializar la `PageModelManager`, la biblioteca carga primero el modelo raí
 
 ### ComponentMapping {#componentmapping}
 
-El `ComponentMapping` módulo se proporciona como paquete NPM al proyecto front-end. Almacena componentes front-end y proporciona una manera de que el SPA asigne componentes front-end a AEM tipos de recursos. Esto permite una resolución dinámica de los componentes al analizar el modelo JSON de la aplicación.
+El `ComponentMapping` módulo se proporciona como paquete NPM al proyecto front-end. Almacena componentes front-end y proporciona una forma para que el SPA asigne componentes front-end a AEM tipos de recursos. Esto permite una resolución dinámica de los componentes al analizar el modelo JSON de la aplicación.
 
 Cada elemento presente en el modelo contiene un `:type` campo que expone un tipo de recurso AEM. Cuando se monta, el componente front-end puede procesarse utilizando el fragmento de modelo que ha recibido de las bibliotecas subyacentes.
 
 #### Asignación dinámica de modelos a componentes {#dynamic-model-to-component-mapping}
 
-Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en el SDK de Javascript para SPA, AEM consulte el artículo Asignación de modelos [dinámicos a componentes para SPA](model-to-component-mapping.md).
+Para obtener más información sobre cómo se produce la asignación de modelos dinámicos a componentes en el SDK de SPA de Javascript para AEM, consulte el artículo Asignación de modelos [dinámicos a componentes para SPA](model-to-component-mapping.md).
 
 ### Capa específica de marco {#framework-specific-layer}
 
@@ -62,9 +62,9 @@ En el resto del presente documento se describen los requisitos de este nivel int
 
 ### Modelo de página {#page-model}
 
-La estructura de contenido de la página se almacena en AEM. El modelo de la página se utiliza para asignar y crear instancias de los componentes de SPA. Los desarrolladores de SPA crean componentes de SPA que asignan a AEM componentes. Para ello, utilizan el tipo de recurso (o ruta al componente AEM) como clave única.
+La estructura de contenido de la página se almacena en AEM. El modelo de la página se utiliza para asignar y crear instancias de componentes de SPA. Los desarrolladores de SPA crean SPA componentes que asignan a AEM componentes. Para ello, utilizan el tipo de recurso (o ruta al componente AEM) como clave única.
 
-Los componentes de SPA deben estar sincronizados con el modelo de página y actualizarse con los cambios que se produzcan en su contenido. Se debe utilizar un patrón que aproveche los componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
+Los componentes de SPA deben estar sincronizados con el modelo de página y actualizarse con los cambios correspondientes en su contenido. Se debe utilizar un patrón que aproveche los componentes dinámicos para crear instancias de los componentes sobre la marcha siguiendo la estructura del modelo de página proporcionada.
 
 ### Campos meta {#meta-fields}
 
@@ -269,17 +269,17 @@ La [`PageModelManager`](#pagemodelmanager) biblioteca subyacente y su [`ModelRou
 
 Las dos entidades están relacionadas con la noción de enrutamiento, pero el [`ModelRouter`](routing.md) solo es responsable de cargar el [`PageModelManager`](#pagemodelmanager) con un modelo de datos estructurado en sincronización con el estado de la aplicación actual.
 
-Consulte el artículo Enrutamiento [del modelo](routing.md) SPA para obtener más información.
+Consulte el artículo [SPA Enrutamiento](routing.md) Modelo para obtener más información.
 
 ## SPA en acción {#spa-in-action}
 
-Vea cómo funciona una SPA sencilla y experimente con una SPA usted mismo continuando con los siguientes documentos:
+Vea cómo funciona un SPA simple y experimente con un SPA usted mismo continuando con los siguientes documentos:
 
-* [Introducción a los SPA en AEM con React](getting-started-react.md).
-* [Introducción a los SPA en AEM con Angular](getting-started-angular.md).
+* [Introducción a SPA en AEM con React](getting-started-react.md).
+* [Introducción a SPA en AEM con Angular](getting-started-angular.md).
 
 ## Lectura adicional {#further-reading}
 
-Para obtener más información sobre las SPA en AEM, consulte los siguientes documentos:
+Para obtener más información sobre SPA en AEM, consulte los siguientes documentos:
 
-* [Información general](editor-overview.md) del Editor de SPA para obtener información general sobre las SPA en AEM y el modelo de comunicación
+* [Información general](editor-overview.md) del Editor de SPA para obtener información general sobre SPA en AEM y el modelo de comunicación
