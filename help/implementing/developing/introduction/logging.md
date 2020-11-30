@@ -538,7 +538,7 @@ Define DISP_LOG_LEVEL Debug
 
 ### Entornos de nube {#cloud-environments}
 
-Se puede acceder a los registros de AEM como Cloud Service para los servicios en la nube mediante la descarga a través de la interfaz del Administrador de nubes o mediante los registros de cola en la línea de comandos mediante la interfaz de línea de comandos de E/S de Adobe. Para obtener más información, consulte la documentación [de registro de](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
+Se puede acceder a los registros de AEM como Cloud Service para los servicios en la nube descargándolos a través de la interfaz del Administrador de nube o adaptando los registros en la línea de comandos mediante la interfaz de la línea de comandos de Adobe I/O. Para obtener más información, consulte la documentación [de registro de](/help/implementing/cloud-manager/manage-logs.md)Cloud Manager.
 
 ### SDK local {#local-sdk}
 
