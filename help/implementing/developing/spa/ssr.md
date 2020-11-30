@@ -1,6 +1,6 @@
 ---
-title: SPA y procesamiento del lado del servidor
-description: El uso de la representación del lado del servidor (SSR) en el SPA puede acelerar la carga inicial de la página y, a continuación, pasar una representación posterior al cliente.
+title: Procesamiento en el lado de SPA y servidor
+description: El uso del procesamiento del lado del servidor (SSR) en el SPA puede acelerar la carga inicial de la página y, a continuación, pasar el procesamiento al cliente.
 translation-type: tm+mt
 source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# SPA y procesamiento del lado del servidor{#spa-and-server-side-rendering}
+# Procesamiento en el lado de SPA y servidor{#spa-and-server-side-rendering}
 
-Las aplicaciones de una sola página (SPA) pueden oferta al usuario en una experiencia dinámica y rica que reacciona y se comporta de maneras conocidas, a menudo como una aplicación nativa. [Esto se consigue confiando en que el cliente cargue el contenido por adelantado y, a continuación, lleve a cabo el trabajo pesado de gestionar la interacción](introduction.md#how-does-a-spa-work) del usuario y, de este modo, se minimiza la cantidad de comunicación necesaria entre el cliente y el servidor, lo que hace que la aplicación sea más reactiva.
+Las aplicaciones de una sola página (SPA) pueden oferta al usuario de una experiencia dinámica y enriquecida que reacciona y se comporta de maneras conocidas, a menudo como una aplicación nativa. [Esto se consigue confiando en que el cliente cargue el contenido por adelantado y, a continuación, lleve a cabo el trabajo pesado de gestionar la interacción](introduction.md#how-does-a-spa-work) del usuario y, de este modo, se minimiza la cantidad de comunicación necesaria entre el cliente y el servidor, lo que hace que la aplicación sea más reactiva.
 
 Sin embargo, esto puede llevar a tiempos de carga iniciales más largos, especialmente si el SPA es grande y rico en su contenido. Para optimizar los tiempos de carga, parte del contenido se puede representar en el servidor. El uso del procesamiento en el lado del servidor (SSR) puede acelerar la carga inicial de la página y, a continuación, pasar el procesamiento al cliente.
 
 ## Cuándo utilizar SSR {#when-to-use-ssr}
 
-No es necesaria la reforma del sector de la seguridad en todos los proyectos. Aunque AEM plenamente compatible con la SSR de JS para la SPA, Adobe no recomienda su aplicación sistemática en todos los proyectos.
+No es necesaria la reforma del sector de la seguridad en todos los proyectos. Aunque AEM pleno apoyo a la SSR de JS para SPA, Adobe no recomienda implementarla sistemáticamente en todos los proyectos.
 
 Al decidir implementar SSR, primero debe calcular qué complejidad adicional, esfuerzo y costo de adición de SSR representa de manera realista para el proyecto, incluido el mantenimiento a largo plazo. La arquitectura de SSR sólo debe elegirse cuando el valor añadido exceda claramente los costes estimados.
 
@@ -74,18 +74,18 @@ Los siguientes campos están disponibles para la configuración:
 
 ## Flujo de comunicación AEM {#aem-driven-communication-flow}
 
-Al utilizar SSR, el flujo de trabajo [de interacción de](introduction.md#interaction-with-the-spa-editor) componentes de las SPA de AEM incluye una fase en la que el contenido inicial de la aplicación se genera en Adobe I/O Runtime.
+Al utilizar SSR, el flujo de trabajo [de interacción de](introduction.md#interaction-with-the-spa-editor) componentes de SPA en AEM incluye una fase en la que el contenido inicial de la aplicación se genera en Adobe I/O Runtime.
 
 1. El explorador solicita el contenido de SSR a AEM.
 1. AEM publica el modelo en Adobe I/O Runtime.
 1. Adobe I/O Runtime devuelve el contenido generado.
 1. AEM proporciona el HTML devuelto por Adobe I/O Runtime a través de la plantilla HTL del componente de página de back-end.
 
-![E/S de Adobe de AEM SSE impulsado por CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
+![Adobe I/O basado en CMS SSE AEM](assets/ssr-cms-drivenaemnode-adobeio.png)
 
 ## Flujo de comunicación impulsado por Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
-En la sección anterior se describe la implementación estándar y recomendada del procesamiento del lado del servidor con respecto a los SPA en AEM, donde AEM realiza el arranque y el servicio del contenido.
+En la sección anterior se describe la implementación estándar y recomendada de la representación del lado del servidor con respecto a la SPA en AEM, donde AEM realiza la inicialización y el servicio del contenido.
 
 Como alternativa, SSR puede implementarse para que Adobe I/O Runtime sea responsable del arranque, revirtiendo efectivamente el flujo de comunicación.
 
@@ -107,7 +107,7 @@ Ambos modelos son válidos y son compatibles con AEM. Sin embargo, hay que tener
     </ul> </td>
    <td>
     <ul>
-     <li>Posiblemente no sea familiar para el desarrollador de SPA<br /> </li>
+     <li>Posiblemente no sea familiar para SPA programador<br /> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -120,7 +120,7 @@ Ambos modelos son válidos y son compatibles con AEM. Sin embargo, hay que tener
     <ul>
      <li>Los recursos de la biblioteca de clientes requeridos por la aplicación, como CSS y JavaScript, deberán estar disponibles para el desarrollador de AEM mediante la <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> propiedad<br /> </li>
      <li>Los recursos deben sincronizarse entre AEM y Adobe I/O Runtime<br /> </li>
-     <li>Para habilitar la creación de SPA, puede ser necesario un servidor proxy para Adobe I/O Runtime</li>
+     <li>Para habilitar la creación de la SPA, puede ser necesario un servidor proxy para Adobe I/O Runtime</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -130,27 +130,27 @@ Ambos modelos son válidos y son compatibles con AEM. Sin embargo, hay que tener
 
 Generalmente, solo una parte de una aplicación debe representarse en el servidor. El ejemplo común es que el contenido que se mostrará encima del pliegue en la carga inicial de la página se procesará en el servidor. Esto ahorra tiempo al enviar al cliente contenido ya procesado. A medida que el usuario interactúa con el SPA, el cliente procesa el contenido adicional.
 
-A medida que considere implementar el procesamiento del lado del servidor para su SPA, debe revisar qué partes de la aplicación serán necesarias.
+A medida que considere la implementación del procesamiento del lado del servidor para su SPA, debe revisar qué partes de la aplicación serán necesarias.
 
-## Desarrollo de un SPA mediante SSR {#developing-an-spa-using-ssr}
+## Desarrollo de un SPA con SSR {#developing-an-spa-using-ssr}
 
-Los componentes de SPA pueden ser procesados por el cliente (en el navegador) o por el servidor. Cuando se procesa en el servidor, las propiedades del navegador, como el tamaño y la ubicación de la ventana, no están presentes. Por lo tanto, los componentes de la SPA deben ser isomórficos, sin suponer dónde se representarán.
+SPA componentes pueden ser procesados por el cliente (en el navegador) o por el servidor. Cuando se procesa en el servidor, las propiedades del navegador, como el tamaño y la ubicación de la ventana, no están presentes. Por lo tanto, SPA componentes deben ser isomórficos, sin dar por sentado dónde se representarán.
 
 Para aprovechar SSR, deberá implementar el código en AEM y en Adobe I/O Runtime, que es responsable del procesamiento en el servidor. La mayoría del código será el mismo, aunque las tareas específicas del servidor diferirán.
 
 ## SSR para SPA en AEM {#ssr-for-spas-in-aem}
 
-Los SSR para SPA en AEM requieren Adobe I/O Runtime, que se llama para la representación del servidor de contenido de la aplicación. En el HTML de la aplicación, se llama a un recurso de Adobe I/O Runtime para procesar el contenido.
+El SSR para SPA en AEM requiere Adobe I/O Runtime, que se llama para la representación del servidor de contenido de la aplicación. En el HTML de la aplicación, se llama a un recurso de Adobe I/O Runtime para procesar el contenido.
 
-De la misma manera que AEM admite los marcos de SPA angulares y de reacción predeterminados, el procesamiento del lado del servidor también es compatible con las aplicaciones Angular y React. Consulte la documentación de NPM para conocer ambos marcos para obtener más detalles.
+De la misma manera que AEM admite los marcos SPA Angular y Reaccionar de forma predeterminada, el procesamiento del lado del servidor también es compatible con las aplicaciones Angular y Reaccionar. Consulte la documentación de NPM para conocer ambos marcos para obtener más detalles.
 
 ## Procesador de contenido remoto {#remote-content-renderer}
 
-La configuración [del procesador de contenido](#remote-content-renderer-configuration) remoto que se requiere para utilizar SSR con el SPA AEM toca en un servicio de procesamiento más generalizado que se puede ampliar y personalizar para satisfacer sus necesidades.
+La Configuración [del procesador de contenido](#remote-content-renderer-configuration) remoto que se requiere para utilizar SSR con su SPA en AEM toca en un servicio de procesamiento más generalizado que se puede ampliar y personalizar para satisfacer sus necesidades.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` es un servicio OSGi para recuperar contenido procesado en un servidor remoto, como por ejemplo, desde E/S de Adobe. El contenido enviado al servidor remoto se basa en el parámetro de solicitud pasado.
+`RemoteContentRenderingService` es un servicio OSGi para recuperar contenido procesado en un servidor remoto, como por ejemplo, de Adobe I/O. El contenido enviado al servidor remoto se basa en el parámetro de solicitud pasado.
 
 `RemoteContentRenderingService` se puede insertar mediante la inversión de dependencias en un modelo Sling personalizado o en un servlet cuando se requiera una manipulación de contenido adicional.
 
