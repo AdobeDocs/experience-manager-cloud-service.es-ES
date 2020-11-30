@@ -1,6 +1,6 @@
 ---
 title: Cómo editar o agregar metadatos
-description: Obtenga información sobre los metadatos de los recursos en Recursos AEM y las distintas formas de editar los metadatos de los recursos.
+description: Obtenga información sobre los metadatos de los recursos en AEM Assets y las distintas formas de editar los metadatos de los recursos.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Los metadatos son información adicional sobre el recurso que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
-Dado que las compañías necesitan vocabularios de metadatos fiables y controlados, AEM Assets no permite añadir ad hoc nuevas propiedades de metadatos. Aunque los autores no pueden agregar campos de metadatos nuevos para los recursos, los desarrolladores sí pueden hacerlo. Consulte [Creación de nuevas propiedades de metadatos para recursos](meta-edit.md#editing-metadata-schema).
+Dado que las compañías necesitan vocabularios de metadatos fiables y controlados, AEM Assets no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar campos de metadatos nuevos para los recursos, los desarrolladores sí pueden hacerlo. Consulte [Creación de nuevas propiedades de metadatos para recursos](meta-edit.md#editing-metadata-schema).
 
 ## Edición de metadatos de un recurso {#editing-metadata-for-an-asset}
 
@@ -27,7 +27,7 @@ Para editar metadatos:
    * En la miniatura del recurso, seleccione la acción rápida Propiedades de la **[!UICONTROL Vista]** .
    * En la página de recursos, toque o haga clic en Propiedades **[!UICONTROL de]** Vista en la barra de herramientas.
 
-   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extrajeron automáticamente al cargarse (ingeridos) en Recursos AEM.
+   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extrajeron automáticamente al cargarse (ingeridos) en AEM Assets.
 
 1. Edite los metadatos de las distintas pestañas, según sea necesario, y cuando termine, pulse o haga clic en **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Pulse o haga clic en **[!UICONTROL Cerrar]** para volver a la interfaz web de Assets.
 
@@ -35,7 +35,7 @@ Para editar metadatos:
    >
    >Si un campo de texto está vacío, no hay ningún conjunto de metadatos existente. Puede introducir un valor en el campo y guardarlo para agregar esa propiedad de metadatos.
 
-Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. Esto se realiza mediante el flujo de trabajo de reescritura de metadatos de AEM. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades creadas recientemente (incluidas las propiedades personalizadas como `cq:tags`) se agregan junto con el esquema.
+Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. Esto se realiza mediante AEM flujo de trabajo de escritura de metadatos. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades creadas recientemente (incluidas las propiedades personalizadas como `cq:tags`) se agregan junto con el esquema.
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -45,7 +45,7 @@ Para obtener más información sobre cómo editar el esquema de metadatos, consu
 
 ## Registro de una Área de nombres personalizada en AEM {#registering-a-custom-namespace-within-aem}
 
-Puede añadir sus propias Áreas de nombres dentro de AEM. Al igual que hay Áreas de nombres predefinidas como cq, jcr y sling, puede tener una Área de nombres para los metadatos del repositorio y el procesamiento de XML.
+Puede agregar sus propias Áreas de nombres dentro de AEM. Al igual que hay Áreas de nombres predefinidas como cq, jcr y sling, puede tener una Área de nombres para los metadatos del repositorio y el procesamiento de XML.
 
 1. Vaya a la página de administración del tipo de nodo *https://&lt;host>:&lt;puerto>/crx/explorer/nodetypes/index.jsp*.
 1. Toque o haga clic en **[!UICONTROL Áreas de nombres]** en la parte superior de la página. La página Administración de Áreas de nombres se muestra en una ventana.
