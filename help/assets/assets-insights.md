@@ -25,7 +25,7 @@ Para permitir que Asset Insights muestre las estadísticas de uso de los recurso
 >
 >Las perspectivas solo son compatibles y se proporcionan para imágenes.
 
-## Estadísticas de Vista de una imagen {#viewing-statistics-for-an-image}
+## Estadísticas de vista de una imagen {#viewing-statistics-for-an-image}
 
 Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la página de metadatos.
 
@@ -62,7 +62,7 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-## Estadísticas acumuladas de Vista para imágenes {#viewing-aggregate-statistics-for-images}
+## Estadísticas acumuladas de vista para imágenes {#viewing-aggregate-statistics-for-images}
 
 Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente mediante la **[!UICONTROL Vista de la información]**.
 
@@ -72,7 +72,7 @@ Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente
 
 ## Programar trabajo en segundo plano {#scheduling-background-job}
 
-Asset Insights obtiene datos de uso de recursos de los grupos de informes de Adobe Analytics de forma periódica. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos de]** Adobe CQ DAM desde la consola web.
+Asset Insights obtiene de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ desde la consola web.
 
 1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
 1. Abra la configuración del servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ.
@@ -83,7 +83,7 @@ Asset Insights obtiene datos de uso de recursos de los grupos de informes de Ado
 
 ## Configurar perspectivas de recursos {#configure-asset-insights}
 
-Recursos Adobe Experience Manager (AEM) obtiene datos de uso de los recursos de AEM utilizados por sitios web de terceros desde Adobe Analytics. Para habilitar Asset Insights para recuperar estos datos y generar perspectivas, primero configure la función para integrarla con Adobe Analytics.
+Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso de AEM recursos utilizados por sitios web de terceros. Para habilitar Asset Insights para recuperar estos datos y generar perspectivas, primero configure la función para integrarla con Adobe Analytics.
 
 >[!NOTE]
 >
@@ -96,16 +96,16 @@ Recursos Adobe Experience Manager (AEM) obtiene datos de uso de los recursos de 
 1. Haga clic en la tarjeta **[!UICONTROL Configuración de información]**.
 1. En el asistente, seleccione un centro de datos y proporcione sus credenciales, incluido el nombre de su organización, el nombre de usuario y Shared Secret.
 
-   ![Configuración de Adobe Analytics para perspectivas de recursos en AEM](assets/insights_config2.png)
+   ![Configuración de Adobe Analytics para Assets Insights en AEM](assets/insights_config2.png)
 
-   *Figura: Configuración de Adobe Analytics para perspectivas de recursos en AEM*
+   *Figura: Configuración de Adobe Analytics para Assets Insights en AEM*
 
-1. Pulse o haga clic en **[!UICONTROL Autenticar]**. Una vez que AEM haya autenticado las credenciales, en la lista Grupo **[!UICONTROL de]** informes, elija un grupo de informes de Adobe Analytics desde el que desee que Asset Insights recupere datos. Haga clic en **[!UICONTROL Agregar]**.
-1. Una vez que AEM haya configurado el grupo de informes, toque **[!UICONTROL Listo]**.
+1. Pulse o haga clic en **[!UICONTROL Autenticar]**. Después de autenticar AEM las credenciales, en la lista Grupo **[!UICONTROL de]** informes, elija un grupo de informes de Adobe Analytics desde donde desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Después de AEM configurar el grupo de informes, toque **[!UICONTROL Listo]**.
 
 ### Rastreador de páginas {#page-tracker}
 
-Después de configurar la cuenta de Adobe Analytics, se genera el código de rastreador de páginas. Para habilitar Assets Insights a fin de rastrear los recursos de AEM utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de Recursos AEM para generar el código de seguimiento de páginas. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Después de configurar la cuenta de Adobe Analytics, se genera el código Rastreador de páginas. Para permitir que Assets Insights rastree AEM recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad Rastreador de páginas de AEM Assets para generar el código del rastreador de páginas. <!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
 1. En AEM, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]**.
 
