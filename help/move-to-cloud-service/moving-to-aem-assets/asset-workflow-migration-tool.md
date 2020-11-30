@@ -1,9 +1,9 @@
 ---
 title: Herramienta de Migración del flujo de trabajo de recursos
 description: 'Herramienta de Migración del flujo de trabajo de recursos '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
