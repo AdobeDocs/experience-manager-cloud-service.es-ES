@@ -1,6 +1,6 @@
 ---
-title: '"Inicio de sesión por primera vez: Cloud Service"'
-description: '"Inicio de sesión por primera vez: Cloud Service"'
+title: 'Inicio de sesión por primera vez: Cloud Service'
+description: 'Inicio de sesión por primera vez: Cloud Service'
 translation-type: tm+mt
 source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
@@ -45,7 +45,7 @@ La página de aterrizaje le indica que cree su primer programa, como se muestra 
 ## Añadir un nuevo Programa en Cloud Service con Programas existentes {#existing-program}
 
 
-1. Inicie sesión en el **Adobe[!UICONTROL Experience Cloud]** y verá la lista de **Programas y productos**.
+1. Inicie sesión en el **Adobe [!UICONTROL Experience Cloud]** y verá la lista de **Programas y productos**.
 
    ![](assets/first_timelogin1.png)
 
