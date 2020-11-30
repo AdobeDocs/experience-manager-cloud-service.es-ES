@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Configure RTE to create accessible sites {#configure-rte-accessible-sites}
+# Configuración de RTE para crear sitios accesibles {#configure-rte-accessible-sites}
 
 [!DNL Adobe Experience Manager] admite funciones de accesibilidad estándar, como texto alternativo para imágenes, y funciones adicionales a las que se puede acceder al crear contenido. Los autores de contenido utilizan estas funciones con componentes que utilizan el editor de texto enriquecido (RTE). Las funciones incluyen la adición de texto alternativo, información estructural a través de encabezados y elementos de párrafo, etc.
 
@@ -34,9 +34,9 @@ Para obtener instrucciones sobre cómo configurar RTE, consulte [Configuración 
 * [Activar un complemento y configurar la propiedad features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurar otras funcionalidades del RTE](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Para activar algunas o todas las funciones de un complemento, configure el complemento dentro de la `rtePlugins` subrama correspondiente en CRXDE Lite.
+Para activar algunas o todas las características de un complemento, configure el complemento dentro de la `rtePlugins` subrama correspondiente en CRXDE Lite.
 
-![CRXDE Lite muestra un ejemplo de rtePlugin](assets/example-rteplugin-crxde-lite.png)
+![CRXDE Lite que muestra un ejemplo rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
 ### Ejemplo para especificar formatos de párrafo disponibles en el campo de selección RTE {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
