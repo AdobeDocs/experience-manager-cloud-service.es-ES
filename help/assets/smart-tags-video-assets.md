@@ -18,7 +18,7 @@ Los formatos de archivo de vídeo (y sus códecs) admitidos para el etiquetado i
 
 ## Etiquetado inteligente de vídeos durante la carga {#smart-tag-assets-on-ingestion}
 
-Al [cargar recursos](add-assets.md#upload-assets) de vídeo a [!DNL Adobe Experience Manager] como Cloud Service, los vídeos se ![procesan](assets/do-not-localize/assetprocessing.png). Una vez completado el procesamiento, consulte la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] del recurso. Las etiquetas inteligentes se agregan automáticamente al vídeo en Etiquetas [!UICONTROL inteligentes]. Asset Compute Service aprovecha Adobe Sensei para crear estas etiquetas inteligentes.
+Al [cargar recursos](add-assets.md#upload-assets) de vídeo a [!DNL Adobe Experience Manager] como Cloud Service, los vídeos se ![procesan](assets/do-not-localize/assetprocessing.png). Una vez completado el procesamiento, consulte la ficha [!UICONTROL Básico] de la página [!UICONTROL Propiedades] del recurso. Las etiquetas inteligentes se agregan automáticamente al vídeo en Etiquetas [!UICONTROL inteligentes]. El servicio de asset compute aprovecha Adobe Sensei para crear estas etiquetas inteligentes.
 
 ![Las etiquetas inteligentes se agregan a los vídeos y se ven en la ficha Básico de las propiedades del recurso](assets/smart-tags-added-to-videos.png)
 
