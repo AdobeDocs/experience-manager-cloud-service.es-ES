@@ -1,23 +1,23 @@
 ---
-title: Importación y exportación masiva de metadatos de recursos
+title: Importe y exporte metadatos de recursos de manera masiva
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 823925be9d0777f7d501d9a64e84937172b1028d
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 10%
+ht-degree: 12%
 
 ---
 
 
-# Importación y exportación masiva de metadatos de recursos {#import-and-export-asset-metadata-in-bulk}
+# Importe y exporte metadatos de recursos de manera masiva {#import-and-export-asset-metadata-in-bulk}
 
-Recursos AEM permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas para los recursos cargados recientemente o los recursos existentes mediante la importación de un archivo CSV. También puede ingerir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
+AEM Assets permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas para los recursos cargados recientemente o los recursos existentes mediante la importación de un archivo CSV. También puede ingerir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
 
 ## Importación de metadatos {#import-metadata}
 
-La importación de metadatos es asincrónica y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos debido a la actividad de reescritura XMP si se marca el indicador de flujo de trabajo. Planifique una importación de este tipo durante el uso del servidor liso para que el rendimiento de otros usuarios no se vea afectado.
+La importación de metadatos es asincrónica y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos debido a XMP actividad de reescritura si se marca el indicador de flujo de trabajo. Planifique una importación de este tipo durante el uso del servidor liso para que el rendimiento de otros usuarios no se vea afectado.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ La importación de metadatos es asincrónica y no impide el rendimiento del sist
    | Tamaño del lote | Número de recursos de un lote para el que se van a importar metadatos. El valor predeterminado es 50. El valor máximo es 100. |
    | Separador de campos | El valor predeterminado es `,` (coma). Puede especificar cualquier otro carácter. |
    | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada del iniciador está en vigor para el flujo de trabajo WriteBack de metadatos DAM (que escribe metadatos en los datos XMP binarios). Al habilitar los flujos de trabajo de inicio se ralentiza el sistema. |
+   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada del iniciador está en vigor para el flujo de trabajo WriteBack de metadatos DAM (que escribe metadatos en los datos de XMP binarios). Al habilitar los flujos de trabajo de inicio se ralentiza el sistema. |
    | Nombre de columna de ruta de activos | Define el nombre de la columna para el archivo CSV con recursos. |
 
 1. Toque o haga clic en **[!UICONTROL Importar]** desde la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
@@ -46,7 +46,7 @@ Para agregar la fecha y la marca de hora al importar metadatos, utilice `YYYY-MM
 
 ## Exportar metadatos {#export-metadata}
 
-Puede exportar menús para varios recursos en formato CSV. Los metadatos se exportan asincrónicamente y no afectan al rendimiento del sistema. Para exportar metadatos, AEM atraviesa las propiedades del nodo de recursos `jcr:content/metadata` y sus nodos secundarios y exporta las propiedades de metadatos en un archivo CSV.
+Puede exportar menús para varios recursos en formato CSV. Los metadatos se exportan asincrónicamente y no afectan al rendimiento del sistema. Para exportar metadatos, AEM las propiedades del nodo de recursos `jcr:content/metadata` y sus nodos secundarios y exporta las propiedades de metadatos en un archivo CSV.
 
 Algunos casos de uso para exportar metadatos de forma masiva son:
 
