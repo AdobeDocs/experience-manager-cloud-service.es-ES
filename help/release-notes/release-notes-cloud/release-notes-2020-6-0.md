@@ -4,8 +4,8 @@ description: Notas de la versión de Experience Manager para 2020.6.0
 translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1955'
+ht-degree: 99%
 
 ---
 
