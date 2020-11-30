@@ -1,6 +1,6 @@
 ---
-title: Asignación dinámica de modelos a componentes para SPA
-description: En este artículo se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de Javascript SPA para AEM.
+title: Asignación dinámica de modelo a componente para SPA
+description: En este artículo se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de SPA de JavaScript para AEM.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 0%
 ---
 
 
-# Asignación dinámica de modelos a componentes para SPA {#dynamic-model-to-component-mapping-for-spas}
+# Asignación dinámica de modelo a componente para SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Este documento describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de Javascript SPA para AEM.
+En este documento se describe cómo se produce la asignación de modelos dinámicos a componentes en el SDK de SPA de Javascript para AEM.
 
 ## Módulo ComponentMapping {#componentmapping-module}
 
@@ -20,13 +20,13 @@ El `ComponentMapping` módulo se proporciona como paquete NPM al proyecto front-
 
 Cada elemento presente en el modelo contiene un `:type` campo que expone un tipo de recurso AEM. Cuando se monta, el componente front-end puede procesarse utilizando el fragmento de modelo que ha recibido de las bibliotecas subyacentes.
 
-Consulte el documento de modelo [SPA](blueprint.md) para obtener más información sobre el análisis de modelos y el acceso de componentes front-end al modelo.
+Consulte el documento [SPA modelo](blueprint.md) para obtener más información sobre el análisis de modelos y el acceso de componentes front-end al modelo.
 
 Consulte también el paquete npm: [@adobe/aem-spa-mapeo de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Aplicación de página única basada en modelo {#model-driven-single-page-application}
 
-Las aplicaciones de una sola página que utilizan el SDK de Javascript SPA para AEM están basadas en modelos:
+Las aplicaciones de una sola página que utilizan el SDK de SPA de Javascript para AEM están basadas en modelos:
 
 1. Los componentes front-end se registran en el almacén de asignación de [componentes](#componentmapping-module).
 1. A continuación, el [Contenedor](blueprint.md#container), una vez que el proveedor [del](blueprint.md#the-model-provider)modelo le proporciona un modelo, se repite sobre su contenido del modelo (`:items`).
