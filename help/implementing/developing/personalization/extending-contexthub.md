@@ -18,7 +18,7 @@ Defina nuevos tipos de almacenes y módulos de ContextHub cuando los proporciona
 
 Las tiendas de ContextHub se crean a partir de los candidatos de las tiendas registradas. Para crear una tienda personalizada, debe crear y registrar un candidato a la tienda.
 
-El archivo javascript que incluye el código que crea y registra al candidato de la tienda debe incluirse en una carpeta [de biblioteca de](/help/implementing/developing/introduction/clientlibs.md)cliente. La categoría de la carpeta debe coincidir con el siguiente patrón:
+El archivo javascript que incluye el código que crea y registra al candidato de la tienda debe incluirse en una carpeta [de la biblioteca del](/help/implementing/developing/introduction/clientlibs.md)cliente. La categoría de la carpeta debe coincidir con el siguiente patrón:
 
 ```xml
 contexthub.store.[storeType]
