@@ -54,7 +54,7 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Al crear un entorno, se crean una o más *integraciones* en E/S de Adobe. Son visibles para los usuarios clientes que tienen acceso a la consola de E/S de Adobe y no deben eliminarse. Esto se rechaza en la descripción de la consola de E/S de Adobe.
+   >Al crear un entorno, se crean una o más *integraciones* en Adobe I/O. Son visibles para los usuarios clientes que tienen acceso a la consola de Adobe I/O y no deben eliminarse. Esto se rechaza en la descripción de la consola de Adobe I/O.
 
    ![](assets/add-environment-image1.png)
 
