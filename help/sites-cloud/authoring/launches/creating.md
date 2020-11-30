@@ -81,8 +81,8 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    Si vuelve a la consola (con **Hecho**), puede ver el lanzamiento (y acceder a él) desde:
 
-   * The [**Launches **console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References **in the** Sites **console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
