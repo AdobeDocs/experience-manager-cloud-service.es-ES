@@ -1,6 +1,6 @@
 ---
 title: Fragmentos de experiencias
-description: Extender el Adobe Experience Manager como fragmentos de experiencias Cloud Service.
+description: Amplíe Adobe Experience Manager como fragmentos de experiencias Cloud Service.
 translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 workflow-type: tm+mt
@@ -52,7 +52,7 @@ El selector de representación sin formato utiliza un transformador en lugar de 
 
 ## Variaciones sociales {#social-variations}
 
-Las variantes sociales se pueden publicar en los medios sociales (texto e imagen). En AEM, estas variantes sociales pueden contener componentes; por ejemplo, componentes de texto, componentes de imagen.
+Las variantes sociales se pueden publicar en los medios sociales (texto e imagen). En AEM estas variantes sociales pueden contener componentes; por ejemplo, componentes de texto, componentes de imagen.
 
 La imagen y el texto del anuncio social se pueden tomar de cualquier tipo de recurso de imagen o de recurso de texto en cualquier nivel de profundidad (en el bloque de creación o en el contenedor de diseño).
 
@@ -124,10 +124,10 @@ The only additional configuration is to ensure that the components are [allowed 
 
 ## El proveedor de la reescritura de los vínculos de los fragmentos de experiencia: HTML {#the-experience-fragment-link-rewriter-provider-html}
 
-En AEM puede crear fragmentos de experiencia. Un fragmento de experiencia:
+En AEM tiene la posibilidad de crear fragmentos de experiencias. Un fragmento de experiencia:
 
 * consiste en un grupo de componentes junto con una presentación,
-* puede existir independientemente de una página de AEM.
+* puede existir independientemente de una página AEM.
 
 Uno de los casos de uso de estos grupos es para incrustar contenido en puntos de contacto de terceros, como Adobe Target.
 
@@ -148,7 +148,7 @@ Esta función se puede activar en una instancia de autor de AEM. Requiere una co
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-El Externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión HTML de la Oferta de Destinatario, que se envía posteriormente a Adobe Target. Esto es necesario, ya que Adobe Target requiere que todos los vínculos dentro de la Oferta HTML de Destinatario puedan ser accesibles al público; esto significa que los recursos a los que hacen referencia los vínculos y el propio fragmento de experiencias deben publicarse antes de poder utilizarse.
+El Externalizador de vínculos se utiliza para determinar las direcciones URL correctas necesarias al crear la versión HTML de la Oferta de Destinatario, que se envía posteriormente a Adobe Target. Esto es necesario, ya que Adobe Target requiere que todos los vínculos dentro de la Oferta HTML de Destinatario sean accesibles al público; esto significa que los recursos a los que hacen referencia los vínculos y el propio fragmento de experiencias deben publicarse antes de poder utilizarse.
 
 De forma predeterminada, cuando se crea una Oferta HTML de Destinatario, se envía una solicitud a un selector de Sling personalizado en AEM. Se llama a este selector `.nocloudconfigs.html`. Como su nombre lo indica, crea una representación HTML sin formato de un fragmento de experiencias, pero no incluye configuraciones de nube (que sería información superflua).
 
@@ -158,7 +158,7 @@ Después de generar la página HTML, la canalización de Sling Rewriter realiza 
 
    Esto se realiza para garantizar que la Oferta de Destinatario HTML se puede incluir en Actividades de Destinatario.
 
-2. AEM modifica los vínculos internos presentes en el HTML para que señalen a un recurso publicado.
+2. AEM modifica los vínculos internos presentes en el HTML para que apunten a un recurso publicado.
 
    Para determinar los vínculos que se van a modificar, AEM sigue este patrón para los atributos de los elementos HTML:
 
@@ -169,20 +169,20 @@ Después de generar la página HTML, la canalización de Sling Rewriter realiza 
 
    >[!NOTE]
    >
-   >En la mayoría de los casos, los vínculos internos en el HTML son vínculos relativos, pero puede haber casos en los que los componentes personalizados proporcionen direcciones URL completas en el HTML. De forma predeterminada, AEM omite estas direcciones URL completas y no realiza ninguna modificación.
+   >En la mayoría de los casos, los vínculos internos en el HTML son vínculos relativos, pero puede haber casos en los que los componentes personalizados proporcionen direcciones URL completas en el HTML. De forma predeterminada, AEM ignora estas direcciones URL completas y no realiza ninguna modificación.
 
-   Los vínculos de estos atributos se ejecutan a través del Externalizador de vínculos de AEM `publishLink()` para recrear la dirección URL como si estuviera en una instancia publicada y, como tal, disponible públicamente.
+   Los vínculos de estos atributos se ejecutan a través del AEM Externalizador de vínculos `publishLink()` para recrear la dirección URL como si estuviera en una instancia publicada y, como tal, disponible públicamente.
 
 Al utilizar una implementación lista para usar, el proceso descrito anteriormente debería ser suficiente para generar la Oferta de Destinatario a partir del fragmento de experiencias y luego exportarla a Adobe Target. Sin embargo, hay algunos casos de uso que no se tienen en cuenta en este proceso; entre ellos se incluyen:
 
 * Asignación de Sling disponible solo en la instancia de publicación
 * Redirecciones de Dispatcher
 
-En estos casos de uso, AEM proporciona la interfaz del proveedor de reescritores de vínculos.
+Para estos casos de uso AEM proporciona la interfaz del proveedor de reescritores de vínculos.
 
 ### Vincular interfaz de proveedor de reescritores {#link-rewriter-provider-interface}
 
-Para casos más complicados, no cubiertos por la [opción predeterminada](#default-link-rewriting), AEM oferta la interfaz del proveedor de reescritores de vínculos. Se trata de una `ConsumerType` interfaz que puede implementar en los paquetes, como un servicio. Omite las modificaciones que AEM realiza en los vínculos internos de una oferta HTML tal como se representa desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de los vínculos HTML internos para adaptarlos a sus necesidades comerciales.
+Para casos más complicados, no cubiertos por el [valor predeterminado](#default-link-rewriting), AEM oferta la interfaz del proveedor de reescritores de vínculos. Se trata de una `ConsumerType` interfaz que puede implementar en los paquetes, como un servicio. Omite las modificaciones AEM realiza en los vínculos internos de una oferta HTML como se representa desde un fragmento de experiencia. Esta interfaz le permite personalizar el proceso de reescritura de los vínculos HTML internos para adaptarlos a sus necesidades comerciales.
 
 Algunos ejemplos de casos de uso para implementar esta interfaz como servicio son:
 
@@ -354,7 +354,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 #### Prioridades - getPriority {#priorities-getpriority}
 
-No es raro necesitar varios servicios para atender diferentes tipos de fragmentos de experiencia, o incluso para tener un servicio genérico que gestione la externalización y la asignación de todos los fragmentos de experiencia. En estos casos, surgen conflictos sobre qué servicio utilizar, por lo que AEM ofrece la posibilidad de definir **prioridades** para distintos servicios. Las prioridades se especifican mediante el método:
+No es raro necesitar varios servicios para atender diferentes tipos de fragmentos de experiencia, o incluso para tener un servicio genérico que gestione la externalización y la asignación de todos los fragmentos de experiencia. En estos casos, surgen conflictos acerca del servicio que se puede utilizar, de modo que AEM ofrece la posibilidad de definir **las prioridades** para los diferentes servicios. Las prioridades se especifican mediante el método:
 
 * `getPriority()`
 
