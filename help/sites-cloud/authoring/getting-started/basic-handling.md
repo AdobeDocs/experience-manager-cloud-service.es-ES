@@ -187,7 +187,7 @@ Hay varios medios de ayuda disponibles:
 
    Desplácese por esta descripción general como haría en la [descripción general de navegación de producto](#product-navigation) al acceder por primera vez a una consola.
 
-   En el menú [**Información de página **puede seleccionar** Ayuda **](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)para que se vuelva a mostrar esto en cualquier momento.
+   En el menú [**Información de página** puede seleccionar **Ayuda**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) para que se vuelva a mostrar esto en cualquier momento.
 
 * **Consola Herramientas**
 
