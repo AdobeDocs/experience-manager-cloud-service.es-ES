@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
 source-wordcount: '1981'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Para editar el contenido dentro de una página, abra el contenido con un doble l
 
 *Figura: Edición en línea con opciones básicas en la barra de herramientas.*
 
-### Full-screen editing {#full-screen-editing}
+### Edición en pantalla completa{#full-screen-editing}
 
 [!DNL Experience Manager] los componentes se pueden abrir en una vista de pantalla completa que oculta el contenido de la página y ocupa la pantalla disponible. Considere la posibilidad de editar a pantalla completa con una versión detallada de la edición en línea, ya que oferta la mayoría de las opciones de edición. Se puede abrir haciendo clic en ![Icono para abrir RTE en pantalla](assets/rte_fullscreen.png)completa, desde la barra de herramientas compacta cuando se utiliza el modo de edición en línea.
 
@@ -131,6 +131,7 @@ El [modo de edición RTE y la interfaz](#editingmodes) que se proporciona a los 
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
+
 >
 >
 No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
@@ -160,6 +161,7 @@ El componente [de texto Componentes](https://docs.adobe.com/content/help/en/expe
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
