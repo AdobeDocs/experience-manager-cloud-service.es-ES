@@ -242,7 +242,7 @@ A continuación se muestra un ejemplo de cómo se produce este problema:
 
 1. El despachante almacena en la caché la respuesta en `/my-page.html` y le devuelve la respuesta al usuario.
 1. Un autor de contenido hace un cambio en esta página y la activa.
-1. El agente de vaciado del despachante envía una solicitud de anulación para `/content/my-brand/my-page`**.**Dado que el despachante no tiene una página en la caché en esta ruta, el contenido antiguo permanece en la caché y estará obsoleto.
+1. El agente de vaciado del despachante envía una solicitud de anulación para `/content/my-brand/my-page`**.** Dado que el despachante no tiene una página en la caché en esta ruta, el contenido antiguo permanece en la caché y estará obsoleto.
 
 Existen maneras de configurar reglas de vaciado de despacho personalizadas que asignarán la URL más corta a la URL más larga para invalidar la caché.
 
@@ -364,8 +364,8 @@ Para generar un mapa del sitio mediante programación, registre un servlet Sling
 >
 >Puede registrar un Sling Servlet para buscar el selector `sitemap` con la extensión `xml`. Esto hará que el servlet procese la solicitud cada vez que se solicite una URL que termine en:
 >    `/<path-to>/page.sitemap.xml`
->Luego, puede obtener el recurso solicitado de la solicitud y generar un mapa del sitio a partir de ese punto en el árbol de contenido mediante las API de JCR.
->El beneficio de un enfoque como este es cuando se proporcionan múltiples sitios desde la misma instancia. Una solicitud para `/content/siteA.sitemap.xml` generaría un mapa del sitio para `siteA` mientras que una solicitud para `/content/siteB.sitemap.xml` generaría un mapa del sitio para `siteB` sin la necesidad de escribir un código adicional.
+Luego, puede obtener el recurso solicitado de la solicitud y generar un mapa del sitio a partir de ese punto en el árbol de contenido mediante las API de JCR.
+El beneficio de un enfoque como este es cuando se proporcionan múltiples sitios desde la misma instancia. Una solicitud para `/content/siteA.sitemap.xml` generaría un mapa del sitio para `siteA` mientras que una solicitud para `/content/siteB.sitemap.xml` generaría un mapa del sitio para `siteB` sin la necesidad de escribir un código adicional.
 
 ### Crear redirecciones 301 para URL heredadas {#creating-redirects-for-legacy-urls}
 
