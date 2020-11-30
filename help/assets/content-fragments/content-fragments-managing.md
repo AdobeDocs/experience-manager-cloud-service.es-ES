@@ -220,12 +220,12 @@ Puede vista y edición de las propiedades de un fragmento mediante la ficha [Met
 
 Además de las opciones estándar, la [línea de tiempo](/help/assets/manage-digital-assets.md#timeline) proporciona información y acciones específicas de los fragmentos de contenido:
 
-* Información de Vista sobre versiones, comentarios y anotaciones
+* Información de vista sobre versiones, comentarios y anotaciones
 * Acciones para versiones
 
-   * **[Revertir a esta versión](#reverting-to-a-version)**(seleccione un fragmento existente y, a continuación, una versión específica)
+   * **[Revertir a esta versión](#reverting-to-a-version)** (seleccione un fragmento existente y, a continuación, una versión específica)
 
-   * **[Comparar con actual](#comparing-fragment-versions)**(seleccione un fragmento existente y, a continuación, una versión específica)
+   * **[Comparar con actual](#comparing-fragment-versions)** (seleccione un fragmento existente y, a continuación, una versión específica)
 
    * Añadir una **etiqueta** o un **comentario** (seleccione un fragmento existente y, a continuación, una versión específica)
 
@@ -236,11 +236,10 @@ Además de las opciones estándar, la [línea de tiempo](/help/assets/manage-dig
    * **Eliminar**
 
 >[!NOTE]
->
->Los comentarios son:
->* Funcionalidad estándar para todos los recursos
->* Realizado en la línea de tiempo
->* Relacionado con el recurso de fragmento
+Los comentarios son:
+* Funcionalidad estándar para todos los recursos
+* Realizado en la línea de tiempo
+* Relacionado con el recurso de fragmento
 
 Las anotaciones (para fragmentos de contenido) son:
 * Introducido en el editor de fragmentos
@@ -275,8 +274,7 @@ Se mostrarán en paralelo, donde:
 * **Listo** le devolverá a la consola
 
 >[!NOTE]
->
->No se puede editar el contenido del fragmento al comparar fragmentos.
+No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![comparar](assets/cfm-managing-06.png)
 
@@ -293,9 +291,8 @@ Puede volver a una versión específica del fragmento:
 ## Publicación y referencia de un fragmento {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->Si el fragmento se basa en un modelo, debe asegurarse de que el [modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
+Si el fragmento se basa en un modelo, debe asegurarse de que el [modelo se ha publicado](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Pueden publicarse:
 
@@ -303,8 +300,7 @@ Los fragmentos de contenido deben publicarse para su uso en el entorno de public
 * Al [publicar una página que utilice el fragmento](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); el fragmento se enumerará en las referencias de página.
 
 >[!CAUTION]
->
->Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
+Después de publicar un fragmento o de hacer referencia a él, AEM mostrará una advertencia cuando un autor abra el fragmento para editarlo de nuevo. Esto sirve para advertir que los cambios en el fragmento también afectarán a las páginas a las que se hace referencia.
 
 ## Eliminación de un fragmento {#deleting-a-fragment}
 
@@ -314,12 +310,10 @@ Para eliminar un fragmento:
 2. Seleccione el fragmento.
 
    >[!NOTE]
-   >
-   >The **Delete** action is not available as a quick action.
+   The **Delete** action is not available as a quick action.
 
 3. Select **Delete** from the toolbar.
 4. Confirme la acción **Eliminar** .
 
    >[!CAUTION]
-   >
-   >Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
+   Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
