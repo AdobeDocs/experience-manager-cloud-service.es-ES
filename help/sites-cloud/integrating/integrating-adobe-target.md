@@ -83,7 +83,7 @@ Una propiedad es un contenedor que se rellenará con extensiones, reglas y eleme
 
 1. Seleccione la opción Catálogo de extensiones y busque Destinatarios en el filtro.
 2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar.
-   ![Búsqueda de Destinatario](assets/search_ext1.png "SearchTarget")
+   ![Búsqueda de destinatario](assets/search_ext1.png "SearchTarget")
 3. Select the **Configure** button. Observe la ventana de configuración con las credenciales de cuenta de Destinatario importadas y la versión de at.js para esta extensión.
 4. Seleccione **Guardar** para agregar la Extensión de grupo de destinatarios a la propiedad Launch. Debería poder ver la Extensión de grupo de destinatarios en la lista Extensiones **** instaladas.
    ![Guardar extensión](assets/configure_extension1.png "ExtensionSave")
