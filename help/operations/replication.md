@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Replicación {#replication}
 
-Adobe Experience Manager como Cloud Service utiliza la función [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido a un servicio de canalización que se ejecute en E/S de Adobe que esté fuera del tiempo de ejecución de AEM.
+Adobe Experience Manager como Cloud Service utiliza la función [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido que se va a replicar a un servicio de canalización que se ejecuta en Adobe I/O y que está fuera del tiempo de ejecución de AEM.
 
 >[!NOTE]
 >
