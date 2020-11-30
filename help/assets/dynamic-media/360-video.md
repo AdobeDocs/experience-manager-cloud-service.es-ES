@@ -20,7 +20,7 @@ En esta sección se describe cómo trabajar con el visor de vídeo de 360/VR par
 
 Actualmente no se admite el audio espacial; si el audio se mezcla en estéreo, el equilibrio (L/R) no cambia a medida que el cliente cambia el ángulo de visualización de la cámara.
 
-Consulte [Uso de vídeos de Dynamic Media 360 y Miniatura de vídeo personalizada con Recursos](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)AEM.
+Consulte [Uso de vídeos de Dynamic Media 360 y Miniatura de vídeo personalizada con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
 
 See also [Managing Viewer Presets](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -30,7 +30,7 @@ Toque [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360V
 
 ![360 Fotograma de vídeo de muestra](assets/6_5_360videoiss_simplified.png)*de vídeo de la estación espacial 360*
 
-## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## Video y Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
 
 Puede utilizar Adobe Premier Pro para la vista y edición de material de archivo 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
@@ -54,7 +54,7 @@ Los 360 recursos de vídeo que se cargan en AEM se etiquetan como **multimedia**
    * Idealmente, el contenido de vídeo original de 360 debería tener una de las siguientes resoluciones:
 
       * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD o,
-      * 2160p - 3840 x 2160, conocida como resolución 4K, UHD o Ultra HD. Esta resolución de pantalla muy grande se encuentra con frecuencia en los televisores de alta calidad y en los monitores de ordenador. La resolución de 2160p se denomina a menudo &quot;4K&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, oferta cuatro veces los píxeles de 1080p.
+      * 2160p - 3840 x 2160, conocida como resolución de 4 K, UHD o HD Ultra. Esta resolución de pantalla muy grande se encuentra con frecuencia en los televisores de alta calidad y en los monitores de ordenador. La resolución de 2160p se denomina a menudo &quot;4K&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, oferta cuatro veces los píxeles de 1080p.
    * [Cree un Perfil](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) de vídeo adaptable personalizado con representaciones de mayor calidad. Por ejemplo, es posible que desee crear un Perfil de vídeo adaptable que contenga los tres ajustes siguientes:
 
       * width=auto; height=720; velocidad de bits=2500 kbps
@@ -96,7 +96,7 @@ Consulte también [Edición de ajustes preestablecidos](/help/assets/dynamic-med
 Cuando esté satisfecho con el vídeo de 360, puede publicarlo.
 
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de AEM Sites.
+See [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 See [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Para previsualización De Videos 360**
@@ -132,5 +132,5 @@ Debe publicar el vídeo 360 para utilizarlo. La publicación de un vídeo de 360
 
 Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) de medios dinámicos para obtener más información sobre cómo publicar vídeos de 360°.
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/dynamic-media/embed-code.md).
-See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de AEM Sites.
+See also [Linking URLs to your web application](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 See also [Adding Dynamic Media Assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
