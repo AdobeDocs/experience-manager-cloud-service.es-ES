@@ -28,7 +28,7 @@ Consulte [Adobe Extension](https://docs.adobe.com/content/help/en/launch/using/e
 * La integración de inicio de Adobe para visores de medios dinámicos no es compatible con el modo de operación &quot;emergente&quot;, donde la URL del visor se obtiene mediante el botón &quot;URL&quot; de la página Detalles del recurso.
 * La integración de inicio de Adobe no se puede usar simultáneamente con la integración de Analytics de visores heredados (a través del `config2=` parámetro).
 * La compatibilidad con el seguimiento de vídeo está limitada al seguimiento de reproducción principal únicamente, tal como se describe en Información general [de seguimiento](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). En concreto, no se admite el seguimiento de QoS, anuncios, capítulos/segmentos o errores.
-* La configuración de duración de Almacenamiento para elementos de datos no es compatible con elementos de datos mediante la extensión Visores *de medios* dinámicos. La duración del Almacenamiento debe establecerse en **[!UICONTROL Ninguno]**.
+* La configuración de duración de almacenamiento para elementos de datos no es compatible con elementos de datos mediante la extensión Visores *de medios* dinámicos. La duración del almacenamiento debe establecerse en **[!UICONTROL Ninguno]**.
 
 ### Casos de uso para la integración {#use-cases-for-the-integration}
 
@@ -68,7 +68,7 @@ Consulte Elementos [](https://docs.adobe.com/content/help/es-ES/launch/using/ref
 
 Una regla en Inicio de Adobe es una configuración agnóstica que define tres áreas que conforman una regla: *Eventos*, *condiciones* y *acciones*:
 
-* *Los Eventos* (si) indican a Adobe Launch cuándo activar una regla.
+* *Los eventos* (si) indican a Adobe Launch cuándo activar una regla.
 * *Las condiciones* (si) indican a Adobe Launch qué restricciones adicionales se permiten o no al activar una regla.
 * *Las acciones* (entonces) indican a Adobe Launch qué hacer cuando se activa una regla.
 
@@ -116,7 +116,7 @@ La siguiente configuración de muestra en Inicio de Adobe muestra cómo rastrear
 
    ![image2019-4](assets/image2019-4.png)
 
-### Acerca de Adobe Analytics para audio y vídeo {#about-adobe-analytics-for-audio-and-video}
+### About Adobe Analytics for Audio and Video {#about-adobe-analytics-for-audio-and-video}
 
 Cuando se suscribe una cuenta de Experience Cloud para utilizar Adobe Analytics para audio y vídeo, basta con activar el seguimiento de vídeo en la configuración de la extensión de visores *de medios* dinámicos. Las métricas de vídeo están disponibles en Adobe Analytics. El seguimiento de vídeo depende de la presencia de Adobe Media Analytics para la extensión de audio y vídeo.
 
@@ -408,7 +408,7 @@ La integración se configurará en los siguientes productos de Adobe:
 
 Además, si esta solución de integración se utiliza con AEM Sites, también se debe realizar la siguiente configuración:
 
-* Consola de E/S de Adobe: la integración se crea para el lanzamiento de Adobe.
+* Adobe I/O Console: la integración se crea para Adobe Launch.
 * AEM nodo de creación: configuración de IMS y configuración de nube de inicio de Adobe.
 
 Como parte de la configuración, asegúrese de tener acceso a una compañía en Adobe Experience Cloud que ya tenga Adobe Analytics y Adobe Launch activados.
@@ -472,7 +472,7 @@ Consulte también Guía [de implementación de Analytics](https://docs.adobe.com
 
 1. En general, la configuración de un informe en Adobe Analytics depende de las necesidades específicas del proyecto. Como tal, la configuración detallada del informe está fuera del alcance de esta integración.
 
-   Sin embargo, es suficiente para saber que los informes de tráfico personalizado estarán disponibles automáticamente en Adobe Analytics después de configurar las variables de tráfico personalizado en la **[configuración de las variables](#setting-up-adobe-analytics-variables)**de Adobe Analytics.
+   Sin embargo, es suficiente para saber que los informes de tráfico personalizado estarán disponibles automáticamente en Adobe Analytics después de configurar las variables de tráfico personalizado en la **[configuración de las variables](#setting-up-adobe-analytics-variables)** de Adobe Analytics.
 
    Por ejemplo: el informe para la variable de **[!UICONTROL recurso del visualizador (prop 30)]** está disponible en el menú Informes en **[!UICONTROL Tráfico personalizado > Tráfico personalizado 21-30 > Recurso del visualizador (prop 30)]**.
 
@@ -671,7 +671,7 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    Se muestra el siguiente mensaje de información:
 
-   *Para recuperar un token de acceso válido, la clave pública del nuevo certificado debe agregarse a la cuenta técnica de E/S de Adobe!*.
+   *Para recuperar un token de acceso válido, la clave pública del nuevo certificado debe agregarse a la cuenta técnica de Adobe I/O!*.
 
    Click **[!UICONTROL OK]** to dismiss the Info dialog box.
 
@@ -685,9 +685,9 @@ La configuración AEM consta de los dos pasos principales siguientes:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. En una nueva ficha del explorador, navegue hasta la consola [de E/S de](https://console.adobe.io/integrations)Adobe.
+1. En una nueva ficha del explorador, desplácese hasta la consola [de](https://console.adobe.io/integrations)Adobe I/O.
 
-1. En la página Integraciones **[!UICONTROL de la consola de E/S de]** Adobe, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Nueva integración]**.
+1. En la página Integraciones **[!UICONTROL de la consola de]** Adobe I/O, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Nueva integración]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear una nueva integración]**, compruebe que está seleccionado la opción **[!UICONTROL Acceder a una API]** y, a continuación, haga clic en **[!UICONTROL Continuar]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -835,4 +835,4 @@ Sin embargo, se admite en el nodo de publicación AEM. Con la configuración pre
 
 Es posible solucionar esta limitación especificando la URL de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe en la configuración de Adobe Launch Cloud para AEM publicación anterior. Al hacer esto, el nodo de publicación AEM utiliza la versión de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe.
 
-Consulte [Integración de AEM con inicio de Adobe mediante E/S](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) de Adobe para obtener más información sobre la configuración de la nube de inicio de Adobe.
+Consulte [Integración de AEM con el lanzamiento de Adobe mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obtener más información sobre la configuración de la nube de inicio de Adobe.
