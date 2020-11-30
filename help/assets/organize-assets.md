@@ -1,6 +1,6 @@
 ---
 title: Organización de recursos digitales
-description: Organice los recursos digitales mediante varios métodos que se proporcionan en Recursos de Adobe Experience Manager.
+description: Organice los recursos digitales utilizando los distintos métodos que se proporcionan en Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
@@ -15,15 +15,15 @@ ht-degree: 1%
 
 Todos los recursos digitales, los metadatos y el contenido de los documentos de Microsoft Office y PDF se extraen y permiten realizar búsquedas. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos en Digital Asset Management.
 
-Los AEM Assets admiten varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
+AEM Assets admite varias formas de organizar el contenido. Puede organizarlas jerárquicamente mediante carpetas o bien puede organizarlas de forma no ordenada y ad hoc, por ejemplo mediante etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos de DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 ## Crear carpetas {#create-folders}
 
-Al organizar una colección de recursos, por ejemplo, todas las imágenes de *Naturaleza* , puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. Los AEM Assets no requieren que organice los recursos en carpetas para que funcionen mejor.
+Al organizar una colección de recursos, por ejemplo, todas las imágenes de *Naturaleza* , puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. AEM Assets no requiere que organice los recursos en carpetas para que funcionen mejor.
 
 >[!NOTE]
 >
->No se admite el uso compartido de una carpeta de recursos (en Marketing Cloud) del tipo `sling:OrderedFolder`. Si desea compartir una carpeta, no seleccione Pedido al crear una carpeta.
+>No se puede compartir una carpeta de recursos (en Marketing Cloud) del tipo `sling:OrderedFolder`. Si desea compartir una carpeta, no seleccione Pedido al crear una carpeta.
 
 1. Vaya al lugar de la carpeta de recursos digitales en el que desea crear una nueva carpeta.
 1. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.
