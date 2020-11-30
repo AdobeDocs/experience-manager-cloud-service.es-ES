@@ -1,6 +1,6 @@
 ---
 title: Integración con Git
-description: 'Integración con Git: Cloud Service'
+description: 'Integración con Git: Cloud Services'
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Integrar Git con Adobe Cloud Manager {#git-integration}
 
-Adobe Cloud Manager se suministra con un único repositorio de Git que se utiliza para implementar código mediante las canalizaciones CI/CD de Cloud Manager. Los clientes pueden utilizar el repositorio de Git del Administrador de nube de forma predeterminada. Los clientes también tienen la opción de integrar un repositorio Git local o gestionado por el **cliente** con Cloud Manager.
+Adobe Cloud Manager se aprovisiona con un único repositorio Git que se utiliza para implementar código mediante las canalizaciones CI/CD de Cloud Manager. Los clientes pueden utilizar el repositorio de Git del Administrador de nube de forma predeterminada. Los clientes también tienen la opción de integrar un repositorio Git local o gestionado por el **cliente** con Cloud Manager.
 
 ## Información general sobre la integración de Git {#git-integration-overview}
 
@@ -65,5 +65,5 @@ Sincronice las etiquetas de lanzamiento de un repositorio de Git de Cloud Manage
 ## Recursos adicionales {#additional-resources}
 
 * [Recursos de GitHub](https://try.github.io)
-* [Tutoriales de Atlassian Git](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [Tutorials Atlassianos Git](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Hoja de Chrome de Git](https://education.github.com/git-cheat-sheet-education.pdf)
