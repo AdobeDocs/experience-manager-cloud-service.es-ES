@@ -1,6 +1,6 @@
 ---
-title: Incorporación de Adobe Experience Manager as a Cloud Service
-description: Recursos informativos y enlaces a la documentación sobre la incorporación de Adobe Experience Manager as a Cloud Service
+title: Integración de Adobe Experience Manager as a Cloud Service
+description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
 source-git-commit: c843240b419fe1c40292e6cdb44b9811bc809bf3
 workflow-type: tm+mt
@@ -10,9 +10,9 @@ ht-degree: 97%
 ---
 
 
-# Incorporación de Experience Manager as a Cloud Service {#aem-onboarding-guide}
+# Integración de Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
-En esta página se muestran los recursos informativos para la incorporación de Experience Manager as a Cloud Service.
+En esta página se muestran los recursos informativos para la integración de Experience Manager as a Cloud Service.
 
 ## Artículos clave sobre incorporación {#key-articles}
 
@@ -29,7 +29,7 @@ Esta sección muestra algunos de los artículos más importantes centrados en:
 | Guía del usuario | Descripción |
 |---|---|
 | [Página principal de Experience Manager as a Cloud Service](/help/landing/home.md) | Para obtener una descripción general de la documentación de Experience Manager as a Cloud Service, comience aquí. |
-| [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluso una introducción, terminología, etc. |
+| [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología, etc. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de Experience Manager as a Cloud Service, incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
