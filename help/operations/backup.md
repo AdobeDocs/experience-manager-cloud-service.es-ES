@@ -23,7 +23,7 @@ Si la implementación de un cliente, lo que significa que el código de la aplic
 
 Los clientes deben presentar un ticket de asistencia técnica en el que se describa el problema que se está experimentando. Esto conducirá a una investigación por parte del personal de apoyo al Adobe, quien determinará si es necesaria una restauración.
 
-AEM como Cloud Service admite:
+AEM as a Cloud Service supports:
 
 * 24 horas de recuperación de tiempo, lo que significa que el sistema puede restaurarse en cualquier momento en las últimas 24 horas.
 * Restaure desde una marca de tiempo específica definida por Adobes una vez al día durante los últimos 7 días.  Se conservarán todos los mensajes de replicación (eliminaciones, actualizaciones, creaciones).
