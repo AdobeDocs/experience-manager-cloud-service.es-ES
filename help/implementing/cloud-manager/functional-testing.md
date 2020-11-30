@@ -1,6 +1,6 @@
 ---
-title: '"Prueba funcional: Cloud Services"'
-description: '"Prueba funcional: Cloud Services"'
+title: 'Prueba funcional: Cloud Services'
+description: 'Prueba funcional: Cloud Services'
 translation-type: tm+mt
 source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
@@ -39,7 +39,7 @@ Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de form
 
 Las pruebas funcionales escritas por el cliente deben empaquetarse como un archivo JAR independiente producido por la misma compilación Maven que los artefactos que se implementarán en AEM. Generalmente sería un módulo Maven independiente. El archivo JAR resultante debe contener todas las dependencias requeridas y generalmente se crearía usando el complemento maven-assembly-plugin usando el descriptor jar-con-dependencias.
 
-Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType establecido en integration-test. En el futuro, se espera que se admitan valores de encabezado adicionales. Una configuración de ejemplo para maven-assembly-plugin es:
+Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType definido en integration-test. En el futuro, se espera que se admitan valores de encabezado adicionales. Una configuración de ejemplo para maven-assembly-plugin es:
 
 ```java
 <build>
