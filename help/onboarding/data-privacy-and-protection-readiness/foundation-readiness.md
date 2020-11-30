@@ -1,6 +1,6 @@
 ---
-title: Regulaciones de protección de datos y privacidad de datos - Adobe Experience Manager como preparación de base para Cloud Service
-description: 'Obtenga información sobre el Adobe Experience Manager como Cloud Service Foundation y la compatibilidad con las diversas normas de protección de datos y protección de datos; incluido el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Protección de los Consumidores de California y la manera de cumplir con la implementación de un nuevo proyecto de AEM como Cloud Service. '
+title: 'Regulaciones de protección de datos y privacidad de datos: Adobe Experience Manager como Cloud Service de preparación para bases'
+description: 'Obtenga información sobre la compatibilidad de Adobe Experience Manager como Cloud Service Foundation con las diversas normas de protección de datos y privacidad de datos; incluyendo el Reglamento General de Protección de Datos de la UE (RGPD), la Ley de Privacidad del Consumidor de California y cómo cumplir con la implementación de un nuevo AEM como proyecto Cloud Service. '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 5%
 ---
 
 
-# Adobe Experience Manager como Cloud Service Base Preparada para la Protección de Datos y Regulaciones de Privacidad de Datos {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager como Cloud Service está preparado para la protección de datos y las normas de privacidad de datos {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,11 +20,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Para obtener más información sobre la respuesta de Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte el Centro [de privacidad de](https://www.adobe.com/privacy.html)Adobe.
+>Para obtener más información sobre la respuesta del Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte el Centro de privacidad del [Adobe](https://www.adobe.com/privacy.html).
 
-## Compatibilidad con Protección y privacidad de datos de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
+## Soporte de protección y privacidad de datos de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-A nivel de AEM Foundation, los datos personales almacenados se guardan en el Perfil de usuarios. Por lo tanto, la información de este artículo trata principalmente de cómo acceder y eliminar perfiles de usuario, para abordar las solicitudes de acceso y eliminación respectivamente.
+En el nivel de base de AEM, los datos personales almacenados se conservan en el Perfil del usuario. Por lo tanto, la información de este artículo trata principalmente de cómo acceder y eliminar perfiles de usuario, para abordar las solicitudes de acceso y eliminación respectivamente.
 
 ## Acceso a un Perfil de usuario {#accessing-a-user-profile}
 
@@ -40,13 +40,13 @@ A nivel de AEM Foundation, los datos personales almacenados se guardan en el Per
 
    ![buscar cuenta](assets/dpp-foundation-01.png)
 
-1. Por último, abra el perfil del usuario haciendo clic en él y, a continuación, marque la casilla de verificación en la ficha **[!UICONTROL Detalles]** .
+1. Finalmente, abra el perfil del usuario haciendo clic en él y, a continuación, marque la casilla de verificación en la ficha **[!UICONTROL Detalles]** .
 
    ![perfil del usuario](assets/dpp-foundation-02.png)
 
 ### HTTP API {#http-api}
 
-Como se mencionó anteriormente, Adobe proporciona API para acceder a los datos de usuario, con el fin de facilitar la automatización. Existen varios tipos de API que puede utilizar:
+Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usuario, con el fin de facilitar la automatización. Existen varios tipos de API que puede utilizar:
 
 **API UserProperties**
 
@@ -79,7 +79,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Deshabilitar usuario {#disable-user}
 
-1. Abra la consola Administración de usuarios y busque al usuario en cuestión, tal como se describe más arriba.
+1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se describe más arriba.
 2. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil se pondrá gris para indicar que está seleccionado.
 
 3. Pulse el botón **Deshabilitar** en el menú superior para deshabilitar el usuario:
