@@ -31,7 +31,7 @@ También se puede realizar lo siguiente:
 This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
 
 * [Creación de lanzamientos](/help/sites-cloud/authoring/launches/creating.md)
-* [Edición de lanzamientos](/help/sites-cloud/authoring/launches/editing.md) 
+* [Edición de lanzamientos](/help/sites-cloud/authoring/launches/editing.md)
 * [Promoción de lanzamientos](/help/sites-cloud/authoring/launches/promoting.md) 
 
 ## Lanzamientos: orden de eventos {#launches-the-order-of-events}
