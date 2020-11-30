@@ -1,5 +1,5 @@
 ---
-title: Promocionar lanzamientos
+title: Promoción de lanzamientos
 description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
 translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
@@ -10,7 +10,7 @@ ht-degree: 83%
 ---
 
 
-# Promocionar lanzamientos {#promoting-launches}
+# Promoción de lanzamientos {#promoting-launches}
 
 Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles para promocionar una página de lanzamiento:
 
@@ -98,7 +98,7 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
 1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 1. Introduzca la información necesaria:
    * **Destino**
-      * **destinatario** de promoción: puede promocionarse a cualquiera de las fuentes.
+      * **Destinatario** de promoción: puede promocionarse a cualquiera de las fuentes.
       * **Eliminar inicio después de la promoción** : después de promocionar el lanzamiento seleccionado, se eliminará cualquier inicio anidado dentro de él.
    * **Ámbito** : aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
       * **Promocionar lanzamiento completo**
