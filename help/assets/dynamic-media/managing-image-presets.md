@@ -128,7 +128,7 @@ Con los argumentos de proceso predeterminados, la primera página de un document
 
 La anchura máxima y la altura máxima limitan la resolución en la que se rasterizará. Por ejemplo, si los máximos no cambian y la resolución se establece en 300 ppp, un documento de carta de EE. UU. se rasteriza a 186 ppp. Es decir, el documento es de 1581 x 2046 píxeles.
 
-El componente de `Rasterize PDF/AI Image Preview Rendition` proceso tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes de gran tamaño pueden desbordar la memoria proporcionada a la JVM (Máquina virtual Java). Se debe tener cuidado de proporcionar a la JVM memoria suficiente para administrar el número configurado de flujos de trabajo paralelos, y cada uno de ellos puede crear una imagen con el tamaño máximo configurado.
+El componente de `Rasterize PDF/AI Image Preview Rendition` proceso tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes de gran tamaño pueden desbordar la memoria proporcionada a la JVM (Máquina virtual Java). Se debe tener cuidado de proporcionar al JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, y cada uno de ellos tiene la posibilidad de crear una imagen con el tamaño máximo configurado.
 
 ### Formato de archivo InDesign (INDD) {#indesign-indd-file-format}
 
