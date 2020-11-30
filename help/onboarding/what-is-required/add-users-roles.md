@@ -1,6 +1,6 @@
 ---
-title: '"Añadir usuarios y funciones: lo que se necesita"'
-description: '"Añadir usuarios y funciones: lo que se necesita"'
+title: 'Añadir usuarios y funciones: lo que se necesita'
+description: 'Añadir usuarios y funciones: lo que se necesita'
 translation-type: tm+mt
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 workflow-type: tm+mt
@@ -30,7 +30,7 @@ Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos p
 
 >[!NOTE]
 >
->El personaje de desarrollador en Admin Console no está relacionado con el rol de desarrollador en [!UICONTROL Cloud Manager].
+>La persona desarrolladora en Admin Console no está relacionada con la función de desarrollador en [!UICONTROL Cloud Manager].
 
 La siguiente tabla resume los roles:
 
@@ -40,4 +40,4 @@ La siguiente tabla resume los roles:
 | Administrador de programa | Utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado y los KPI de vista. Puede aprobar errores importantes de tres niveles. |
 | Administrador de implementación | Gestiona las operaciones de implementación. Utiliza [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase/producción. Puede editar las tuberías de CD/CI. Puede aprobar errores importantes de tres niveles. Puede obtener acceso al repositorio Git. |
 | Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Utiliza principalmente [!UICONTROL Cloud Manager] para obtener el estado de vista. Puede obtener acceso al repositorio Git para la confirmación de código. |
-| Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el conmutador de Programas [!UICONTROL Cloud Manager] (tras haber navegado desde [!UICONTROL Experience Cloud]) para acceder a AEM. |
+| Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el conmutador de Programas [!UICONTROL Cloud Manager] (después de haber navegado desde el [!UICONTROL Experience Cloud]) para acceder a AEM. |
