@@ -1,6 +1,6 @@
 ---
-title: '"Qué es diferente y qué es lo nuevo: Adobe Experience Manager como Cloud Service"'
-description: '"Qué es diferente y Qué es nuevo: Adobe Experience Manager (AEM) como Cloud Service. "'
+title: 'Qué es diferente y qué es lo nuevo: Adobe Experience Manager como Cloud Service'
+description: 'Qué es diferente y Qué es nuevo: Adobe Experience Manager (AEM) como Cloud Service. '
 translation-type: tm+mt
 source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
 workflow-type: tm+mt
