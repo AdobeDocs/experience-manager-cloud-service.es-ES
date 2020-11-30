@@ -1,9 +1,9 @@
 ---
 title: Conectores de Adobe Experience Manager as a Cloud Service
 description: Recursos de autoayuda y enlaces a documentación sobre conectores de Adobe Experience Manager as a Cloud Service Connectors
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ En esta página se muestran los recursos de autoayuda sobre conectores para Expe
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
 | [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de Experience Manager as a Cloud Service, incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
-| [Incorporación](/help/onboarding/home.md) | Esta guía proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
+| [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
 | [El paso de AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprender el viaje de transición a Cloud Service |
