@@ -40,7 +40,7 @@ Al analizar la segmentación, se emplea la siguiente terminología:
    * Interés en el sitio web, incluyendo las páginas y los productos comprados
    * Interés en el sitio web de referencia, incluyendo los términos de búsqueda utilizados o los anuncios en los que se ha hecho clic
    * Interés en otros sitios; se determina con herramientas como Spyjax
-   * lealtad al Visitante; duración de la visita, frecuencia de las visitas
+   * lealtad al visitante; duración de la visita, frecuencia de las visitas
 * **Características** demográficas: Son características de población seleccionadas, entre ellas:
    * Edad
    * Ingresos
