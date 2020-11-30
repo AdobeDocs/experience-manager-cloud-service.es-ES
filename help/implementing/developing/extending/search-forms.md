@@ -1,6 +1,6 @@
 ---
 title: Configurar formularios de búsqueda
-description: Configuración de formularios de búsqueda para Adobe Experience Manager como Cloud Service.
+description: Configuración de la búsqueda de Forms para Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Configurar formularios de búsqueda {#configuring-search-forms}
 
-Adobe Experience Manager como Cloud Service viene con un poderoso mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
+Adobe Experience Manager como Cloud Service viene con un potente mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
 
 En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar el contenido. Éstas contienen facetas predefinidas como Fecha **de** modificación, Estado **de** publicación o Estado **de** Live Copy para ayudarle a explorar rápidamente los recursos que necesita.
 
@@ -28,9 +28,9 @@ Juntos, estos objetivos le ayudan a localizar su contenido de forma rápida y se
 >
 >Puede configurar el servicio de indexación [y búsqueda de](/help/operations/indexing.md) contenido subyacente.
 
-Mediante **Buscar formularios**, puede personalizar y ampliar estos paneles según sus necesidades específicas.
+Con **Buscar en Forms**, puede personalizar y ampliar estos paneles según sus necesidades específicas.
 
-Los formularios **de** búsqueda proporcionan una selección lista para usar de [predicados](#predicates-and-their-settings) que se pueden combinar y definir. Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) mediante:
+El Forms **de** búsqueda proporciona una selección lista para usar de [predicados](#predicates-and-their-settings) que puede combinar y definir. Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) mediante:
 
 * **Herramientas**
 
@@ -38,9 +38,9 @@ Los formularios **de** búsqueda proporcionan una selección lista para usar de 
 
       * **Formularios de búsqueda**
 
-## Formularios predeterminados {#default-forms}
+## Forms predeterminado {#default-forms}
 
-Cuando accede por primera vez a la consola **Buscar formularios** , puede ver que todas las configuraciones tienen un símbolo de cerrojo. Esto indica que la configuración correspondiente es la configuración predeterminada (lista para usar) y no se puede eliminar. Una vez que haya personalizado y guardado, desaparecerá una configuración del bloqueo. Volverá a aparecer cuando [elimine la configuración](#deleting-a-configuration-to-reinstate-the-default)personalizada, en cuyo caso se restablecerá la configuración predeterminada (y el indicador de cerrojo).
+Cuando accede por primera vez a la consola **Buscar en Forms** , puede ver que todas las configuraciones tienen un símbolo de cerrojo. Esto indica que la configuración correspondiente es la configuración predeterminada (lista para usar) y no se puede eliminar. Una vez que haya personalizado y guardado, desaparecerá una configuración del bloqueo. Volverá a aparecer cuando [elimine la configuración](#deleting-a-configuration-to-reinstate-the-default)personalizada, en cuyo caso se restablecerá la configuración predeterminada (y el indicador de cerrojo).
 
 ![configuración general de formularios de búsqueda](assets/csf-overview.png)
 
@@ -556,11 +556,11 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
 * &amp;ast; en las etiquetas de campo de la ficha **Configuración** , los campos son obligatorios y, si se dejan en blanco, aparecerá un mensaje de error.
 
-## Configuración de los formularios de búsqueda {#configuring-your-search-forms}
+## Configuración de la búsqueda en Forms {#configuring-your-search-forms}
 
 ### Creación/apertura de una configuración personalizada {#creating-opening-a-customized-configuration}
 
-1. Vaya a **Herramientas**, **General**, Formularios **de búsqueda**.
+1. Vaya a **Herramientas**, **General**, **Buscar en Forms**.
 
 1. Seleccione la configuración que desee personalizar.
 1. Utilice el icono **Editar** para abrir la configuración y actualizarla.
@@ -638,7 +638,7 @@ La eliminación de una configuración personalizada se realiza desde la consola:
 
 1. Se eliminará la configuración personalizada y se restablecerá la configuración predeterminada (esto se indica con la reaparición del símbolo de cerrojo en la consola).
 
-### Predicados de opciones de Añada {#adding-options-predicates}
+### Predicados de opciones de añada {#adding-options-predicates}
 
 Los predicados de opciones (Opciones, Propiedad de opciones) permiten configurar un elemento que se va a buscar. Normalmente se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de página.
 
@@ -668,7 +668,7 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
    >1. Realice los cambios en `/apps.`
 
 
-1. Abra la consola **Buscar formularios** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda. A continuación, seleccione **Editar**.
+1. Abra la consola **Buscar en Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda. A continuación, seleccione **Editar**.
 
 1. En función de la configuración, agregue una propiedad **Options** o **Options** a la configuración.
 1. Actualice los campos, en particular:
