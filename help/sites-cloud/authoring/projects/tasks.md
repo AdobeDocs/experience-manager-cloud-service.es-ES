@@ -34,7 +34,7 @@ Si un proyecto contiene tareas relacionadas, en el proyecto se muestra un mosaic
 * Porcentaje de tareas activas
 * Porcentaje de tareas caducadas
 
-![Mosaico de Tarea](/help/sites-cloud/authoring/assets/projects-tasks.png)
+![Mosaico de tarea](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ### Ver o modificar las tareas en un proyecto {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -50,7 +50,7 @@ Haga clic en los puntos suspensivos (…) en el mosaico Tareas para mostrar la l
 
 Para obtener más información sobre una tarea en particular, en la Lista Tarea, toque o haga clic en la tarea y **Detalles de Tarea **abrir.
 
-![Detalles de Tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
+![Detalles de tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
 ### Ver y modificar los comentarios de la tarea {#viewing-and-modifying-task-comments}
 
@@ -79,4 +79,4 @@ Otra forma de acceder a las tareas es desde la bandeja de entrada. Puede abrir e
 
 Para completar una tarea, selecciónela y haga clic en **Completada**. Añada información a la tarea y, a continuación, haga clic en **Hecho**. Consulte la [bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
 
-![Notificaciones de Tarea](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
+![Notificaciones de tarea](/help/sites-cloud/authoring/assets/projects-task-notifications.png)
