@@ -36,7 +36,7 @@ Después de la publicación, puede incluir los recursos de vídeo en una página
 
 ![Crear Perfil de procesamiento para la transcodificación de vídeo en Experience Manager](assets/video-processing-profile-for-mp4.png)
 
-*Figura: Un Perfil de procesamiento para la transcodificación de vídeo en[!DNL Experience Manager].*
+*Figura: Un Perfil de procesamiento para la transcodificación de vídeo en [!DNL Experience Manager].*
 
 Si solo se proporciona anchura o altura y se deja el otro campo en blanco, las representaciones mantienen la proporción de aspecto. Actualmente, solo está disponible el códec h264 para la transcodificación.
 
