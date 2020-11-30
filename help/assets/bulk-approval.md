@@ -47,7 +47,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
    ![review_name](assets/review_name.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en Recursos AEM como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
+1. Inicie sesión en AEM Assets como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
 
    ![notificación](assets/notification.png)
 
@@ -91,7 +91,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
    ![tarea_details-collection](assets/task_details-collection.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en Recursos AEM como aprobador y vaya a la consola Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
+1. Inicie sesión en AEM Assets como Aprobador y vaya a la consola Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
 1. En la página **[!UICONTROL Revisar tarea]**, examine los detalles de la tarea de revisión y, a continuación, pulse o haga clic en **[!UICONTROL Revisar]**.
 1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y toque o haga clic en el icono **[!UICONTROL Aprobar/Rechazar]** para aprobarlos o rechazarlos, según corresponda.
 
