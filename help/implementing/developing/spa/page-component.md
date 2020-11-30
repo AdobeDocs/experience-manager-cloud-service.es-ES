@@ -1,5 +1,5 @@
 ---
-title: Componente de página de SPA
+title: Componente de página SPA
 description: En un SPA, el componente de página no proporciona los elementos HTML de sus componentes secundarios, sino que los delega en el marco de SPA. Este documento explica cómo esto hace que el componente de página de un SPA sea único.
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# Componente de página de SPA {#spa-page-component}
+# Componente de página SPA {#spa-page-component}
 
-El componente de página de un SPA no proporciona los elementos HTML de sus componentes secundarios mediante un archivo JSP o HTL y objetos de recursos. Esta operación se delega en el marco de la EPA. La representación de componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo). A continuación, los componentes de SPA se agregan a la página según el modelo JSON proporcionado. Por lo tanto, la composición del cuerpo inicial del componente de página difiere de sus homólogos HTML procesados previamente.
+El componente de página de un SPA no proporciona los elementos HTML de sus componentes secundarios mediante un archivo JSP o HTL y objetos de recursos. Esta operación se delega en el marco SPA. La representación de componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo). Los componentes SPA se agregan a continuación a la página según el modelo JSON proporcionado. Por lo tanto, la composición del cuerpo inicial del componente de página difiere de sus homólogos HTML procesados previamente.
 
 ## Administración de modelos de página {#page-model-management}
 
-La resolución y la administración del modelo de página se delegan en un [`PageModelManager`](blueprint.md#pagemodelmanager) módulo proporcionado. El SPA debe interactuar con el `PageModelManager` módulo cuando se inicializa para recuperar el modelo de página inicial y registrarse para actualizaciones de modelo, que se producen principalmente cuando el autor edita la página a través del Editor de páginas. El proyecto SPA `PageModelManager` es accesible como paquete npm. Como intérprete entre AEM y la SPA, el objetivo `PageModelManager` es acompañar a la SPA.
+La resolución y la administración del modelo de página se delegan en un [`PageModelManager`](blueprint.md#pagemodelmanager) módulo proporcionado. El SPA debe interactuar con el `PageModelManager` módulo cuando se inicializa para recuperar el modelo de página inicial y registrarse para actualizaciones de modelo, principalmente producidas cuando el autor está editando la página a través del Editor de páginas. SPA proyecto `PageModelManager` puede acceder a él como paquete npm. Como intérprete entre AEM y el SPA, el `PageModelManager` objetivo es acompañar al SPA.
 
-Para permitir la creación de la página, se debe agregar una biblioteca de cliente denominada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre la SPA y el editor de páginas. Si el componente de página SPA hereda del componente de página wcm/core de la página, hay las siguientes opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
+Para permitir la creación de la página, se debe agregar una biblioteca de cliente denominada `cq.authoring.pagemodel.messaging` para proporcionar un canal de comunicación entre el SPA y el editor de páginas. Si el componente de página SPA hereda del componente de página wcm/core, entonces hay las siguientes opciones para que la categoría de biblioteca del `cq.authoring.pagemodel.messaging` cliente esté disponible:
 
 * Si la plantilla es editable, agregue la categoría de biblioteca de cliente a la directiva de página.
 * Añada la categoría de la biblioteca del cliente mediante el uso `customfooterlibs.html` del componente de página.
@@ -27,7 +27,7 @@ No olvide limitar la inclusión de la `cq.authoring.pagemodel.messaging` categor
 
 ## Tipo de datos de comunicación {#communication-data-type}
 
-El tipo de datos de comunicación se define como un elemento HTML dentro del componente Página de AEM mediante el `data-cq-datatype` atributo . Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes de GET llegan a los extremos del modelo de Sling de un componente. Una vez que se produce una actualización en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del modelo de páginas. A continuación, la biblioteca del modelo de página advierte al SPA de las actualizaciones.
+El tipo de datos de comunicación se define como un elemento HTML dentro del componente Página de AEM mediante el `data-cq-datatype` atributo . Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes de GET llegan a los extremos del modelo de Sling de un componente. Una vez que se produce una actualización en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del modelo de páginas. A continuación, la biblioteca del modelo de página advierte del SPA de actualizaciones.
 
 **Componente de página SPA -`body.html`**
 
@@ -77,7 +77,7 @@ La sincronización de las superposiciones está garantizada por el mismo Observa
 
 ## Configuración de la estructura exportada de JSON del modelo Sling {#sling-model-json-exported-structure-configuration}
 
-Cuando las funciones de enrutamiento están habilitadas, se supone que la exportación JSON del SPA contiene las distintas rutas de la aplicación gracias a la exportación JSON del componente de navegación AEM. La salida JSON del componente de navegación AEM se puede configurar en la directiva de contenido de página raíz del SPA mediante las dos propiedades siguientes:
+Cuando las funciones de enrutamiento están habilitadas, se supone que la exportación JSON de la SPA contiene las distintas rutas de la aplicación gracias a la exportación JSON del componente de navegación AEM. La salida JSON del componente de navegación AEM se puede configurar en la directiva de contenido de la página raíz SPA mediante las dos propiedades siguientes:
 
 * `structureDepth`:: Número correspondiente a la profundidad del árbol exportado
 * `structurePatterns`:: Resto de la matriz de anexos correspondientes a la página que se va a exportar
