@@ -97,7 +97,7 @@ Existen cuatro versiones del mismo sitio en función del área geográfica:
 Cada sitio comparte el contenido personalizado en zonas geográficas:
 
 * Canadá comparte el área principal con los Estados Unidos.
-* La Buena Gran Bretaña está vinculada a la zona europea y hereda de la zona maestra.
+* La buena Gran Bretaña está vinculada a la zona europea y hereda de la zona maestra.
 * Australia, porque se encuentra en el hemisferio sur y los productos de temporada no se aplicarían; además, tiene su propio contenido personalizado.
 
 ![Diagrama multisitio](/help/sites-cloud/authoring/assets/multisite-diagram.png)
@@ -271,7 +271,7 @@ Para cancelar la herencia del contenido de destino en una actividad:
 1. Seleccione **Separar Live Copy** en el menú desplegable de la barra de herramientas. AEM confirma que desea separar la Live Copy.
 1. Haga clic o pulse **Desasociar** para separar la Live Copy de la actividad. Después de quitarla, el menú desplegable de la herencia deja de visualizarse. La actividad es ahora una actividad local.
 
-   ![actividad local](/help/sites-cloud/authoring/assets/multisite-winter.png)
+   ![Actividad local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
 ## Restaurar la herencia del contenido de destino {#restoring-inheritance-of-targeted-content}
 
