@@ -44,7 +44,7 @@ Las etapas para iniciar y completar flujos de trabajo no son las mismas, indepen
 
 Un flujo de trabajo se inicia directamente en Proyectos (excepto Crear copia de idioma DAM y Crear y traducir copia de idioma DAM). La información sobre cualquier tarea pendiente de un proyecto aparece en el mosaico **Tareas**. Las notificaciones para las tareas que se deben completar aparecen junto al icono de usuario.
 
-Para obtener más información sobre el trabajo con flujos de trabajo en AEM, consulte lo siguiente:
+Para obtener más información sobre cómo trabajar con flujos de trabajo en AEM, consulte lo siguiente:
 
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
