@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles de vídeo de Dynamic Media
-description: Sugerencias y prácticas recomendadas para nombrar, organizar y administrar archivos de recursos de imagen y vídeo de Dynamic Media.
+description: Sugerencias y prácticas recomendadas para nombrar, organizar y administrar archivos de recursos de vídeo e imágenes de Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
@@ -39,5 +39,5 @@ A continuación se ofrecen consejos sobre prácticas recomendadas para organizar
    * **Carpetas** basadas en fecha: contiene recursos digitales basados en una fecha de creación o en una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que los perfiles asignados no se rompan.
-* Si ya se ha publicado un recurso, utilice AEM para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación original del recurso publicado seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se &quot;pierde&quot; en AEM y no se puede cancelar la publicación. Por lo tanto, se recomienda cancelar la publicación de los recursos antes de moverlos a una carpeta diferente.
+* Si un recurso ya está publicado, utilice AEM para moverlo a otra carpeta y volver a publicarlo desde su nueva ubicación, la ubicación del recurso publicado original seguirá estando disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se &quot;pierde&quot; por AEM y no se puede cancelar su publicación. Por lo tanto, se recomienda cancelar la publicación de los recursos antes de moverlos a una carpeta diferente.
 
