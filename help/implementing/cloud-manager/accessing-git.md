@@ -22,7 +22,7 @@ Utilice el botón **Administrar Git** disponible en la interfaz de usuario de Cl
 
 1. Vaya a la página Información general *de su* Programa y a la tarjeta de tuberías.
 
-1. vista la opción **Administrar Git** para acceder y administrar su repositorio Git.
+1. Vista la opción **Administrar Git** para acceder y administrar su repositorio Git.
 
    ![](assets/manage-git1.png)
 
