@@ -1,5 +1,5 @@
 ---
-title: Trabajar con Dynamic Media
+title: Trabajo con Dynamic Media
 description: Dynamic Media ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento
 translation-type: tm+mt
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
@@ -10,7 +10,7 @@ ht-degree: 66%
 ---
 
 
-# Trabajar con Dynamic Media{#working-with-dynamic-media}
+# Trabajo con Dynamic Media{#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
