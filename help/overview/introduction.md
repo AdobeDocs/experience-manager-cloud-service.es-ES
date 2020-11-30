@@ -1,9 +1,9 @@
 ---
 title: Introducción a Adobe Experience Manager as a Cloud Service
 description: 'Introducción a Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ Todas estas ayudas:
 >
 >Consulte [Terminología](terminology.md) para conocer algunos de los nuevos términos que se han añadido con AEM as a Cloud Service.
 
-## Valor añadido como Cloud Service {#value-added-as-a-cloud-service}
+## Value Added as a Cloud Service {#value-added-as-a-cloud-service}
 
 AEM logra estos objetivos adoptando las principales características de los servicios en la nube modernos:
 
