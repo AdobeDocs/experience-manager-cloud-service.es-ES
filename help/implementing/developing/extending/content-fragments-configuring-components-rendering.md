@@ -25,14 +25,16 @@ Se recomienda utilizar los componentes principales.
 
 >[!CAUTION]
 >
->* **Si no necesita los servicios[](#definition-of-advanced-services-that-need-configuration)**avanzados que se describen a continuación, puede omitir esta configuración.
+>* **Si no necesita los servicios [](#definition-of-advanced-services-that-need-configuration)** avanzados que se describen a continuación, puede omitir esta configuración.
+   >
+   >
+* **Al ampliar o utilizar los componentes listos para usar**, no se recomienda cambiar la configuración de OSGi.
+   >
+   >
+* **Puede escribir un componente desde cero que utilice únicamente la API de fragmentos de contenido, sin servicios** avanzados. Sin embargo, en este caso, tendrá que desarrollar el componente para que gestione el procesamiento adecuado.
 >
->* **Al ampliar o utilizar los componentes listos para usar**, no se recomienda cambiar la configuración de OSGi.
 >
->* **Puede escribir un componente desde cero que utilice únicamente la API de fragmentos de contenido, sin servicios** avanzados. Sin embargo, en este caso, tendrá que desarrollar el componente para que gestione el procesamiento adecuado.
->
->
->Por lo tanto, se recomienda utilizar los componentes principales.
+Por lo tanto, se recomienda utilizar los componentes principales.
 
 ## Definición de servicios avanzados que requieren configuración {#definition-of-advanced-services-that-need-configuration}
 
