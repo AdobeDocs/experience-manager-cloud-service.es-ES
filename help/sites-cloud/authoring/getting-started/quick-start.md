@@ -43,7 +43,7 @@ Antes de comenzar la guía de inicio rápido, aquí hay una pequeña colección 
    * **No se puede navegar con vínculos** cuando se está en el modo **Edición**. Para navegar con vínculos debe [acceder a una vista previa de la página](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) mediante una de las acciones siguientes:
 
       * [Modo de vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
-      * [Ver tal y como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
+      * [Ver como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
 * Las versiones no se inician ni se crean en el editor de páginas; ahora se realiza desde la consola **Sitios** (a través de la opción **Crear** o la [cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) de un recurso seleccionado).
 
@@ -288,7 +288,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 Para crear una [versión](/help/sites-cloud/authoring/features/page-versions.md) de la página:
 
-1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**con el icono de la barra de herramientas (antes o después de[seleccionar su página](#selecting-your-page-for-further-action)):
+1. Para abrir el raíl de cronología, seleccione **[Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** con el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![Opción de vista Cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -302,7 +302,7 @@ Para crear una [versión](/help/sites-cloud/authoring/features/page-versions.md)
 
 Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan versiones de su página:
 
-1. Seleccione **[Línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**mediante el icono de la barra de herramientas (antes o después de[seleccionar su página](#selecting-your-page-for-further-action)):
+1. Seleccione **[Línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![Opción de vista Cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
