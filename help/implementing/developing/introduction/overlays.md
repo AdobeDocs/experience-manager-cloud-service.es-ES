@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Overlays in AEM as a Cloud Service {#overlays-in-aem}
+# Superposiciones en AEM as a Cloud Service {#overlays-in-aem}
 
 Adobe Experience Manager como Cloud Service utiliza el principio de superposiciones para permitirle ampliar y personalizar las consolas y otras funciones (por ejemplo, la creación de páginas).
 
@@ -18,7 +18,7 @@ Adobe Experience Manager como Cloud Service utiliza el principio de superposicio
 Adobe Experience Manager as a Cloud Service uses the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
 -->
 
-Overlay es un término que se puede utilizar en muchos contextos. En este contexto (la ampliación de AEM como Cloud Service), una superposición significa tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
+Overlay es un término que se puede utilizar en muchos contextos. En este contexto (extendiendo AEM como Cloud Service), una superposición significa tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
 
 En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` y se recomienda definir la superposición (personalizaciones) en la `/apps` rama (mediante una ruta [de](#search-paths) búsqueda para resolver los recursos).
 
@@ -49,7 +49,7 @@ Las superposiciones son el método recomendado para realizar muchos cambios, com
 Overlays are the recommended method for many changes, such as [configuring your consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) or [creating your selection category to the asset browser in the side panel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (used when authoring pages). They are required as:
 -->
 
-* No ***debe *realizar cambios en la`/libs`rama **. Es posible que se pierdan los cambios que realice, ya que esta rama puede sufrir cambios cada vez que se apliquen actualizaciones a la instancia.
+* No ***debe* realizar cambios en la `/libs` rama **. Es posible que se pierdan los cambios que realice, ya que esta rama puede sufrir cambios cada vez que se apliquen actualizaciones a la instancia.
 
 * Concentran los cambios en un solo lugar; facilitando el seguimiento, la migración, la copia de seguridad y/o la depuración de los cambios según sea necesario.
 
