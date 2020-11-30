@@ -82,7 +82,7 @@ Utilice el selector de sitios para elegir una página Web cuando desee que un pu
 
 1. En el modo de **[!UICONTROL Previsualización]** , si toca el punto interactivo o el mapa de imagen, navegará a la página del sitio AEM que especificó.
 
-## Selección de recursos en Dynamic Media {#selecting-assets}
+## Selecting assets in Dynamic Media {#selecting-assets}
 
 Utilice este selector para elegir imágenes que se utilizarán en letreros de carrusel, vídeos interactivos, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En vídeo interactivo, el selector de recursos está disponible cuando toca **[!UICONTROL Seleccionar recursos]** en la ficha **[!UICONTROL Contenido]** . En Conjuntos de carrusel, el selector de recursos está disponible al crear una nueva diapositiva. En los conjuntos de imágenes, los conjuntos de medios mixtos y los conjuntos de giros, el selector de recursos está disponible al crear un nuevo conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
 
