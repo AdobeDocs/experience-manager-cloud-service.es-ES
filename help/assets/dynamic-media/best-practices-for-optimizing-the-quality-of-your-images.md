@@ -19,7 +19,7 @@ AEM incluye más de 100 comandos de envío de imágenes de Dynamic Media para aj
 ## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
-* Si no se proporciona ningún comando de formato en la dirección URL, el Envío de imágenes de Dynamic Media utiliza de forma predeterminada JPG para envío.
+* Si no se proporciona ningún comando de formato en la URL, el Envío de imagen de Dynamic Media tiene el valor predeterminado JPG para envío.
 * JPG comprime a una proporción de 10:1 y normalmente produce archivos de imagen más pequeños. PNG se comprime a una proporción de aproximadamente 2:1, excepto en algunos casos, como cuando las imágenes contienen un fondo blanco. Normalmente, los tamaños de archivo PNG son mayores que los archivos JPG.
 * JPG utiliza compresión con pérdida, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. Por otro lado, PNG utiliza compresión sin pérdida.
 * JPG a menudo comprime imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
@@ -38,13 +38,13 @@ Como práctica recomendada para cambiar el tamaño, el uso `&wid=<value>&hei=<va
 
 ## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
-El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para conocer mejor cómo funciona el enfoque y la máscara de enfoque en AEM, haciendo referencia a los siguientes recursos útiles:
+El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a los siguientes recursos útiles:
 
-Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) de imágenes también se aplica a AEM.
+El [enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) de imágenes también se aplica a AEM.
 
 En Adobe TV, vea [Enfoque de imágenes con máscara](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)de enfoque.
 
-Con AEM, puede enfocar imágenes durante la ingesta, en envío o en ambos. En la mayoría de los casos, sin embargo, debe enfocar las imágenes utilizando solo un método o el otro, pero no ambos. El enfoque de imágenes en un envío, en una URL, generalmente proporciona los mejores resultados.
+Con AEM, puede enfocar imágenes durante la ingestión, en el envío o en ambos. En la mayoría de los casos, sin embargo, debe enfocar las imágenes utilizando solo un método o el otro, pero no ambos. El enfoque de imágenes en un envío, en una URL, generalmente proporciona los mejores resultados.
 
 Existen dos métodos de enfoque de imagen que puede utilizar:
 
@@ -63,7 +63,7 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
          Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
       Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
 
-      Tema de ayuda de AEM sobre cómo enfocar una imagen.
+      AEM tema de ayuda sobre cómo enfocar una imagen.
 
       Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor de imágenes.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
@@ -111,13 +111,13 @@ Como práctica recomendada, para lograr una alta calidad de imagen y un tamaño 
 
 Esta combinación de configuraciones produce excelentes resultados en la mayoría de las circunstancias.
 
-Si la imagen requiere optimización adicional, ajuste gradualmente los parámetros de enfoque (máscara de enfoque) comenzando con un radio definido en 0,2 o 0,3. A continuación, aumente gradualmente la cantidad de 1,75 a un máximo de 4 (equivalente al 400 % en Photoshop). Compruebe que se ha logrado el resultado deseado.
+Si la imagen requiere optimización adicional, ajuste gradualmente los parámetros de enfoque (máscara de enfoque) comenzando con un radio definido en 0,2 o 0,3. A continuación, aumente gradualmente la cantidad de 1,75 a un máximo de 4 (equivalente al 400% en Photoshop). Compruebe que se ha logrado el resultado deseado.
 
 Si los resultados de enfoque siguen siendo insatisfactorios, aumente el radio en incrementos decimales. Para cada incremento decimal, reinicie la cantidad a 1,75 y aumente gradualmente a 4. Repita este proceso hasta que alcance el resultado deseado. Aunque los valores anteriores son un enfoque que los estudios creativos han validado, recuerde que puede establecer inicios con otros valores y seguir otras estrategias. Si los resultados son satisfactorios para usted o no es un asunto subjetivo, por lo tanto la experimentación estructurada es clave.
 
 A medida que experimenta, también puede encontrar las siguientes sugerencias generales útiles para optimizar el flujo de trabajo:
 
-* Pruebe distintos parámetros en tiempo real, ya sea directamente en una URL o mediante la función de ajuste de imagen de Scene7 Publishing System, que proporciona previsualizaciones en tiempo real para las operaciones de ajuste.
-* La práctica recomendada es agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
-* AEM también ofrece métodos más avanzados para ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. En los casos de uso avanzado en los que esta opción puede mejorar y optimizar los resultados del procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
+* Pruebe distintos parámetros en tiempo real, ya sea directamente en una URL o mediante la funcionalidad de ajuste de imagen de Scene7 Publishing System, que proporciona previsualizaciones en tiempo real para las operaciones de ajuste.
+* Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
+* AEM también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que esta opción puede ser una opción para perfeccionar y optimizar aún más los resultados del procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
 
