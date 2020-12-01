@@ -2,7 +2,7 @@
 title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.9.0.'
 translation-type: tm+mt
-source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
+source-git-commit: 701d9ff3c9553c28bce0ef417487facedb22373f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 11%
@@ -12,30 +12,30 @@ ht-degree: 11%
 
 # Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+La siguiente sección describe las Notas de revisión generales para [!DNL Experience Manager] como Cloud Service 2020.9.0.
 
 ## Fecha de la versión {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2020.9.0 es el 24 de septiembre de 2020.
 
-## [!DNL Adobe Experience Manager Sites] como Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] como Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Novedades en [!DNL Sites] {#what-is-new-sites}
 
-* El SDK de JavaScript para la aplicación de una sola página (SPA) [ahora es de código abierto.](/help/implementing/developing/spa/reference-materials.md)
+* El SDK de JavaScript para la aplicación de una sola página (SPA) [ahora es de código abierto.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] como Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] como Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Novedades en [!DNL Assets] {#what-is-new-assets}
 
 * Los archivos de imagen de marca de agua son compatibles con las representaciones generadas con los microservicios de recursos. Se puede configurar como un Perfil de procesamiento y utiliza un archivo PNG como marca de agua. Consulte [marca de agua de los recursos](/help/assets/watermark-assets.md).
 
 * Mejoras en [!DNL Dynamic Media]
 
-   * Publicación selectiva: Ahora es posible que un equipo de marketing acceda a las imágenes de recorte [!DNL Dynamic Media] inteligente y a las representaciones dinámicas sincronizadas con [!DNL Dynamic Media] fin de que puedan crear materiales promocionales, todo sin necesidad de publicar dichos recursos en [!DNL Dynamic Media] para envío global. [!DNL Experience Manager] y [!DNL Dynamic Media] la publicación está disociada y puede producirse por separado para lograrlo. Consulte Publicación [selectiva](/help/assets/dynamic-media/selective-publishing.md).
-   * Los administradores ahora pueden restablecer la contraseña de [!DNL Dynamic Media] Cloud Service que se recibe al aprovisionar. El restablecimiento se puede realizar en la interfaz [!DNL Experience Manager] de usuario, sin necesidad de utilizar la aplicación de [!DNL Dynamic Media Classic] escritorio.
+   * Publicación selectiva: Ahora es posible que un equipo de mercadotecnia acceda a [!DNL Dynamic Media] imágenes de recorte inteligente y representaciones dinámicas sincronizadas con [!DNL Dynamic Media] para que puedan crear materiales promocionales, todo sin necesidad de publicar esos recursos en [!DNL Dynamic Media] para envío global. [!DNL Experience Manager] y la  [!DNL Dynamic Media] publicación está disociada y puede producirse por separado para lograrlo. Consulte [publicación selectiva](/help/assets/dynamic-media/selective-publishing.md).
+   * Los administradores ahora pueden restablecer la [!DNL Dynamic Media] contraseña de Cloud Service que se recibe al aprovisionar. El restablecimiento se puede realizar en la interfaz de usuario [!DNL Experience Manager], sin necesidad de utilizar la aplicación de escritorio [!DNL Dynamic Media Classic].
 
-* Para obtener información sobre las siguientes mejoras, consulte [las novedades de Brand Portal](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Para obtener información sobre las siguientes mejoras, consulte [novedades en Brand Portal](https://docs.adobe.com/content/help/es-ES/experience-manager-brand-portal/using/introduction/whats-new.html).
 
    * Previsualización PDF mejorada con la integración del SDK de Vista de Adobe Document Cloud.
    * Funcionalidad de descarga con un solo clic.
@@ -51,7 +51,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Novedades {#what-is-new-commerce}
 
-* Componentes principales de CIF v1.3.0. Consulte Componentes [principales de](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) CIF para obtener más detalles.
+* Componentes principales de CIF v1.3.0. Consulte [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) para obtener más detalles.
 
 * Ya está disponible la capacidad de previsualización con plantillas de producto/categoría para productos y categorías. Esto permite a los usuarios/especialistas en marketing de AEM negocios realizar vistas de las plantillas de producto/categoría con datos reales.
 
@@ -69,7 +69,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Fecha de la versión {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.9.0 is September 03, 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.9.0 es el 3 de septiembre de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 
@@ -87,7 +87,7 @@ Consulte esta sección para conocer las novedades y las actualizaciones de Cloud
 
 ### Novedades {#what-is-new-cra}
 
-* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra un botón **Generar informe** explícito en el que el usuario puede hacer clic para ejecutar el CRA.
+* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra un botón explícito **Generar informe** para que el usuario haga clic para ejecutar el CRA.
 
 * La interfaz de usuario de CRA muestra el progreso mientras se está ejecutando. Muestra los elementos que se analizan y los resultados encontrados durante la ejecución.
 
@@ -107,9 +107,9 @@ Siga esta sección para conocer las novedades y las actualizaciones de la versi�
 
 * La interfaz de usuario de CTT tiene una función de recarga automática que vuelve a cargar la página de información general cada 30 segundos.
 
-* Botón añadido a la interfaz de usuario de CTT para recuperar fácilmente el *Token de acceso* .
+* Botón agregado a la interfaz de usuario de CTT para recuperar *Token de acceso* fácilmente.
 
-* Se agregó un mensaje de validación descriptivo para la *URL* y el nombre del conjunto *de migración*.
+* Se agregó un mensaje de validación descriptivo para *URL* y *Nombre del conjunto de migración*.
 
 ## Herramientas de refactorización de código {#code-refactoring}
 
@@ -119,9 +119,9 @@ Siga esta sección para conocer las novedades y las actualizaciones de las herra
 
 * El complemento AIO-CLI admite el Modernizador de repositorio y permite a los usuarios ejecutar la herramienta mediante el complemento.
 
-   Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
+   Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
 
 * La utilidad Modernizer del repositorio se puede utilizar para reestructurar los paquetes de proyectos existentes en paquetes compatibles con la estructura de proyectos definida para AEM como Cloud Service.
 
-   Consulte Recurso [Git: Modernizador](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) de repositorio para obtener más detalles.
+   Consulte [Recurso de Git: Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obtener más detalles.
 
