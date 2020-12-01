@@ -2,9 +2,9 @@
 title: Conjuntos de imágenes
 description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2069'
 ht-degree: 19%
 
 ---
@@ -26,48 +26,50 @@ Por ejemplo, supongamos que desea presentar imágenes de gorras con diferentes l
 
 >[!NOTE]
 >
->Para obtener información sobre la interfaz de usuario de Recursos, consulte [Gestión de recursos con la IU](/help/assets/manage-digital-assets.md)táctil.
+>Para obtener información sobre la interfaz de usuario de Assets, consulte [Administración de recursos con la IU táctil](/help/assets/manage-digital-assets.md).
 
 ## Inicio rápido: Conjuntos de imágenes {#quick-start-image-sets}
 
 Para ayudarle a ponerse en marcha rápidamente:
 
-1. [Cargue las imágenes de origen principales para varias vistas.](#uploading-assets-in-image-sets)
+1. Opcional. [Cree un ](/help/assets/dynamic-media/batch-set-presets-dm.md) ajuste preestablecido de conjunto de lotes y aplíquelo a una nueva carpeta en la que se cargarán las imágenes del conjunto de giros.
 
-   Inicio cargando las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. AEM Assets admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
-
-1. [Crear conjuntos de imágenes.](#creating-image-sets)
-
-   En los conjuntos de imágenes, los usuarios hacen clic en las imágenes en miniatura en el visor de conjuntos de imágenes.
-
-   Para crear un conjunto de imágenes en Recursos, toque o haga clic en **[!UICONTROL Crear > Conjuntos]** de imágenes. A continuación, agregue imágenes y haga clic en **[!UICONTROL Guardar]**.
-
-   You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   Un ajuste preestablecido de conjunto de lotes puede ayudarle a automatizar la creación del conjunto de imágenes.
 
    >[!IMPORTANT]
    >
    >Los conjuntos de lotes son creados por IPS (Image Production System) como parte de la ingesta de recursos.
 
+1. [Cargue las imágenes de origen principales para varias vistas.](#uploading-assets-in-image-sets)
+
+   Cargue las imágenes para los conjuntos de imágenes. Dado que los usuarios pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes, tenga en cuenta el zoom al elegir las imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. AEM Assets admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
+
+1. [Crear conjuntos de imágenes.](#creating-image-sets)
+
+   En los conjuntos de imágenes, los usuarios hacen clic en las imágenes en miniatura en el visor de conjuntos de imágenes.
+
+   Para crear un conjunto de imágenes en Recursos, toque o haga clic en **[!UICONTROL Crear > Conjuntos de imágenes]**. A continuación, agregue imágenes y haga clic en **[!UICONTROL Guardar]**.
+
    Consulte [Preparación de recursos de conjuntos de imágenes para cargar y Carga de archivos](#uploading-assets-in-image-sets).
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   Consulte [Uso de selectores.](/help/assets/dynamic-media/working-with-selectors.md)
 
-1. Añada los ajustes preestablecidos [del visor de conjuntos de](/help/assets/dynamic-media/managing-viewer-presets.md)imágenes según sea necesario.
+1. Añada [ajustes preestablecidos del visor de conjuntos de imágenes](/help/assets/dynamic-media/managing-viewer-presets.md) según sea necesario.
 
-   Los administradores pueden crear o modificar ajustes preestablecidos de visor de conjuntos de imágenes. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Los administradores pueden crear o modificar ajustes preestablecidos de visor de conjuntos de imágenes. Para ver el conjunto de imágenes con un ajuste preestablecido de visor, seleccione el conjunto de imágenes y, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visores]**.
 
-   Consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos]** de visor para crear o editar ajustes preestablecidos de visor.
+   Consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visor]** para crear o editar ajustes preestablecidos de visor.
 
-1. (Opcional) [Visualización de conjuntos](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) de imágenes creados mediante ajustes preestablecidos de conjunto por lotes.
+1. (Opcional) [Visualización de conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) que se crearon mediante ajustes preestablecidos de conjunto por lotes.
 1. [Conjuntos de imágenes de previsualización.](/help/assets/dynamic-media/previewing-assets.md)
 
-   Seleccione el conjunto de imágenes y puede previsualización. Haga clic en los iconos de miniaturas para examinar el conjunto de imágenes en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]** , disponible en el menú desplegable del carril izquierdo.
+   Seleccione el conjunto de imágenes y puede previsualización. Haga clic en los iconos de miniaturas para examinar el conjunto de imágenes en el visor seleccionado. Puede elegir diferentes visores en el menú **[!UICONTROL Visores]**, disponible en el menú desplegable del carril izquierdo.
 
 1. [Publicar conjuntos de imágenes.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
-   Al publicar un conjunto de imágenes, se activa la URL y la cadena Incrustar. Además, debe [publicar cualquier ajuste preestablecido](/help/assets/dynamic-media/managing-viewer-presets.md) de visor personalizado que haya creado. Los ajustes preestablecidos de visor predeterminados ya están publicados.
+   Al publicar un conjunto de imágenes, se activa la URL y la cadena Incrustar. Además, debe [publicar cualquier ajuste preestablecido de visor personalizado](/help/assets/dynamic-media/managing-viewer-presets.md) que haya creado. Los ajustes preestablecidos de visor predeterminados ya están publicados.
 
-1. [Vincule las direcciones URL a la Aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste el visor](/help/assets/dynamic-media/embed-code.md)de vídeo o de imágenes.
+1. [Vincule las direcciones URL a la ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) aplicación web o  [incruste el visor](/help/assets/dynamic-media/embed-code.md) de vídeo o de imágenes.
 
    AEM Assets crea llamadas mediante URL para conjuntos de imágenes y los activa después de publicar los conjuntos de imágenes. Puede copiar estas direcciones URL cuando previsualización recursos. Como alternativa, puede incrustarlos en su sitio Web.
 
@@ -75,7 +77,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
    Consulte [Vinculación de un conjunto de imágenes a una página web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
 
-Para editar conjuntos de imágenes, consulte [Edición de conjuntos de imágenes.](#editing-image-sets) Además, puede realizar vistas y editar las propiedades [del conjunto](/help/assets/manage-digital-assets.md#editing-properties)de imágenes.
+Para editar conjuntos de imágenes, consulte [edición de conjuntos de imágenes.](#editing-image-sets) Además, puede realizar vistas y editar las propiedades [ del conjunto ](/help/assets/manage-digital-assets.md#editing-properties)de imágenes.
 
 Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
@@ -85,9 +87,9 @@ Inicio cargando las imágenes para los conjuntos de imágenes. Dado que los usua
 
 Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
-Puede cargar imágenes para los conjuntos de imágenes como lo haría con cualquier otro [recurso en Recursos](/help/assets/manage-digital-assets.md#uploading-assets).
+Puede cargar imágenes para conjuntos de imágenes como [cargará cualquier otro recurso en Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
-### Preparación de recursos de conjuntos de imágenes para la carga {#preparing-image-set-assets-for-upload}
+### Preparación de recursos de conjunto de imágenes para la carga {#preparing-image-set-assets-for-upload}
 
 Antes de crear conjuntos de imágenes, asegúrese de que las imágenes tienen el tamaño y el formato adecuados.
 
@@ -111,7 +113,7 @@ Puede crear conjuntos de imágenes a través de la interfaz de usuario o de la A
 
 >[!NOTE]
 >
->You can also create image sets automatically through [batch set presets](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>También puede crear conjuntos de imágenes automáticamente mediante [ajustes preestablecidos de conjunto por lotes](/help/assets/dynamic-media/batch-set-presets-dm.md).
 >**Importante:** IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos.
 
 Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alfanumérico. Puede volver a ordenar o ordenar manualmente los recursos después de agregarlos.
@@ -128,7 +130,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. En la página Editor de conjuntos de imágenes, en el campo **[!UICONTROL Título]** , introduzca un nombre para el conjunto de imágenes. El nombre aparece en la pancarta del conjunto de imágenes. De forma opcional, introduzca una descripción.
+1. En la página Editor de conjuntos de imágenes, en el campo **[!UICONTROL Título]**, introduzca un nombre para el conjunto de imágenes. El nombre aparece en la pancarta del conjunto de imágenes. De forma opcional, introduzca una descripción.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
@@ -136,12 +138,12 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
    * Cerca de la esquina superior izquierda de la página Editor de conjuntos de imágenes, toque **[!UICONTROL Añadir recurso]**.
 
-   * Cerca del centro de la página Editor de conjuntos de imágenes, toque **[!UICONTROL Tocar para abrir el Selector]** de recursos.
-   Toque para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
+   * Cerca del centro de la página Editor de conjuntos de imágenes, toque **[!UICONTROL Tocar para abrir el Selector de recursos]**.
+   Toque para seleccionar los recursos que desea incluir en el conjunto de imágenes. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
-   See [Working with Selectors.](/help/assets/dynamic-media/working-with-selectors.md)
+   Consulte [Uso de selectores.](/help/assets/dynamic-media/working-with-selectors.md)
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
@@ -157,7 +159,7 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
    * Para eliminar una imagen, selecciónela y toque **[!UICONTROL Eliminar recurso]**.
 
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
+   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, toque **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicar a todos los recursos a la vez.
    >[!NOTE]
    >
    >Al crear el conjunto de imágenes, puede cambiar la miniatura del conjunto de imágenes o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de imágenes. Para seleccionar una miniatura, pulse **[!UICONTROL Cambiar miniatura]** sobre el campo Título en la página Editor de conjuntos de imágenes y, a continuación, seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que sea AEM quien genere una del conjunto de imágenes, seleccione **[!UICONTROL Cambiar a]** **[!UICONTROL Miniatura automática]**.
@@ -166,31 +168,31 @@ Cuando se agregan recursos al conjunto, se añaden automáticamente en orden alf
 
 ## Visualización de conjuntos de imágenes {#viewing-image-sets}
 
-Puede crear conjuntos de imágenes en la interfaz de usuario o automáticamente mediante ajustes preestablecidos [de conjunto de](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)lotes.
+Puede crear conjuntos de imágenes en la interfaz de usuario o automáticamente mediante [ajustes preestablecidos de conjunto por lotes](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 >[!IMPORTANT]
 >
->Batch sets are created by the IPS [Image Production System] as part of asset ingestion.
+>Los conjuntos de lotes son creados por IPS [Image Production System] como parte de la ingesta de recursos.
 
-Sin embargo, los conjuntos creados con ajustes preestablecidos de conjunto de lotes *no aparecen* en la interfaz de usuario. Puede realizar la vista de estos conjuntos de tres formas diferentes. (Estos métodos están disponibles aunque haya creado los conjuntos de imágenes en la interfaz de usuario).
+Sin embargo, los conjuntos creados con ajustes preestablecidos de conjunto de lotes, no *a1/> aparecen en la interfaz de usuario.* Puede realizar la vista de estos conjuntos de tres formas diferentes. (Estos métodos están disponibles aunque haya creado los conjuntos de imágenes en la interfaz de usuario).
 
 * Abra las propiedades de un recurso individual. Las propiedades indican los conjuntos de los que se hace referencia al recurso seleccionado o un miembro. Haga clic en el nombre del conjunto para ver el conjunto completo.
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* Desde una imagen de miembro de cualquier conjunto. Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
+* Desde una imagen de miembro de cualquier conjunto. Seleccione el menú **[!UICONTROL Conjuntos]** para mostrar los conjuntos de los que es miembro el recurso.
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
+* Desde la búsqueda, puede seleccionar **[!UICONTROL Filtro]**, luego expandir **[!UICONTROL Medios dinámicos]** y seleccionar **[!UICONTROL Conjuntos]**.
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de búsqueda &quot;Inicios con&quot; que son diferentes de AEM búsqueda basada en el uso de criterios de búsqueda &quot;Contiene&quot;. Definir el filtro en **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
+   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de búsqueda &quot;Inicios con&quot; que son diferentes de AEM búsqueda basada en el uso de criterios de búsqueda &quot;Contiene&quot;. Definir el filtro como **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->Los conjuntos de vistas se pueden realizar mediante la interfaz de usuario, tal como se describe en [Edición de conjuntos](#editing-image-sets)de imágenes.
+>Los conjuntos de vistas se pueden realizar mediante la interfaz de usuario, tal como se describe en [Edición de conjuntos de imágenes](#editing-image-sets).
 
 ## Edición de conjuntos de imágenes {#editing-image-sets}
 
@@ -214,13 +216,13 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
 
    * Para reordenar recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
-   * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y, a continuación, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
+   * Para agregar un recurso o actualizar uno existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
 
       >[!NOTE]
       >
       >Si elimina la imagen que AEM utiliza para la miniatura reemplazándola por otra imagen, el recurso original seguirá mostrándose.
    * Para eliminar un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar recurso]**.
-   * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
+   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, toque **[!UICONTROL Ajuste preestablecido]** y seleccione un ajuste preestablecido de visor.
    * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya al nuevo recurso de miniatura o muestra, selecciónelo y toque **[!UICONTROL Seleccionar]**.
    * Para eliminar un conjunto de imágenes completo, desplácese hasta el conjunto de imágenes, selecciónelo y toque **[!UICONTROL Eliminar]**.
 
@@ -234,6 +236,6 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
 
 Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicación de conjuntos de imágenes {#publishing-image-sets}
+## Conjuntos de imágenes de publicación {#publishing-image-sets}
 
-Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
