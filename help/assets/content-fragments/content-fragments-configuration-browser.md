@@ -1,0 +1,65 @@
+---
+title: 'Fragmentos de contenido: navegador de configuración'
+description: Obtenga información sobre cómo habilitar ciertas funciones de fragmento de contenido en el navegador de configuración.
+translation-type: tm+mt
+source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 20%
+
+---
+
+
+# Fragmentos de contenido - Navegador de configuración{#content-fragments-configuration-browser}
+
+>[!CAUTION]
+>
+>La API de AEM GraphQL, para el Envío de fragmentos de contenido, se lanzará a principios de 2021.
+>
+>La documentación relacionada ya está disponible para fines de previsualización.
+
+## Habilitar la funcionalidad de fragmento de contenido para su instancia {#enable-content-fragment-functionality-instance}
+
+Antes de utilizar fragmentos de contenido, debe utilizar el **Navegador de configuración** para habilitar:
+
+* **Modelos**  de fragmento de contenido: obligatorio
+* **Consultas**  persistentes de GraphQL: opcional
+
+>[!CAUTION]
+>
+>Si no habilita **Modelos de fragmento de contenido**, la opción **Crear** no estará disponible para crear nuevos modelos.
+
+Para habilitar la funcionalidad de fragmento de contenido, debe:
+
+* Habilitar el uso de la funcionalidad de fragmento de contenido mediante el navegador de configuración
+* Aplicar la configuración a la carpeta Assets
+
+### Habilitar la funcionalidad de fragmento de contenido en el navegador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
+
+Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-content-fragment-model) **primero debe** habilitarlos mediante el **Explorador de configuración**:
+
+>[!NOTE]
+>
+>Para obtener más información, consulte también [Navegador de configuración:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+
+1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
+2. Seleccione la ubicación adecuada para el sitio web.
+3. Utilice **Crear** para abrir el cuadro de diálogo, donde:
+
+   1. Especifique un **Título**.
+   2. Para habilitar su uso, seleccione
+      * **Modelos de fragmento de contenido**
+      * **Consultas persistentes de GraphQL**
+
+      ![Definir configuración](assets/cfm-conf-01.png)
+
+
+4. Seleccione **Crear** para guardar la definición.
+
+### Aplicar la configuración a la carpeta de recursos {#apply-the-configuration-to-your-assets-folder}
+
+Cuando la configuración **global** está habilitada para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de recursos.
+
+Para utilizar otras configuraciones (es decir, excluyendo global) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
+
+![Aplicar configuración](assets/cfm-conf-02.png)
