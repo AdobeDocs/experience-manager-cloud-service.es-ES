@@ -5,19 +5,19 @@ breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 78%
 
 ---
 
 
-# [!DNL Assets] Guía {#assets}
+# [!DNL Assets] Guía  {#assets}
 
 + [[!DNL Assets] como Cloud Service](/help/assets/home.md)
 + [Información general y novedades](overview.md)
-+ [Cambios notables [!DNL Assets] como Cloud Service](assets-cloud-changes.md)
++ [Cambios notables  [!DNL Assets] como Cloud Service](assets-cloud-changes.md)
 + [[!DNL Assets] arquitectura](architecture.md)
 + [Formatos de archivo compatibles](file-format-support.md)
 + [Información general sobre los microservicios de recursos](asset-microservices-overview.md)
@@ -46,7 +46,7 @@ ht-degree: 78%
    + [Insertar y sacar recursos para editar](check-out-and-submit-assets.md)
    + [Digital Rights Management para recursos](drm.md)
    + [Recursos de marca de agua](watermark-assets.md)
-+ Configure, administer and extend [!DNL Assets] {#admin}
++ Configurar, administrar y ampliar [!DNL Assets] {#admin}
    + [Documentos de desarrollador y referencias de API](developer-reference-material-apis.md)
    + [Carpeta de esquema de metadatos](folder-metadata-schema.md)
    + [Trabajar con perfiles de imagen y vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -82,12 +82,15 @@ ht-degree: 78%
    + [Administrar recursos de Dynamic Media](dynamic-media/managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Prácticas recomendadas para administrar archivos](dynamic-media/best-practices-for-file-management.md)
-   + [Administrar ajustes preestablecidos del visualizador de Dynamic Media](dynamic-media/managing-viewer-presets.md)
-   + [Aplicar ajustes preestablecidos de visualizador de Dynamic Media](dynamic-media/viewer-presets.md)
-   + [Administrar ajustes preestablecidos de imagen de Dynamic Media](dynamic-media/managing-image-presets.md)
-   + [Aplicar ajustes preestablecidos de imagen de Dynamic Media](dynamic-media/image-presets.md)
    + [Perfiles de imagen](dynamic-media/image-profiles.md)
    + [Perfiles de vídeo](dynamic-media/video-profiles.md)
+   + [Administrar ajustes preestablecidos de imagen de Dynamic Media](dynamic-media/managing-image-presets.md)
+   + [Aplicar ajustes preestablecidos de imagen de Dynamic Media](dynamic-media/image-presets.md)
+   + [Administrar ajustes preestablecidos del visualizador de Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Aplicar ajustes preestablecidos de visualizador de Dynamic Media](dynamic-media/viewer-presets.md)
+   + [Valores preestablecidos de conjunto por lotes](dynamic-media/batch-set-presets-dm.md)
+   + [Invalidación de la caché de CDN mediante Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidación de la caché de CDN mediante Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imágenes inteligentes](dynamic-media/imaging-faq.md)
    + [Entrega de recursos de Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
    + [Activar la protección de los vínculos interactivos de Dynamic Media](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 78%
    + [Usar conjuntos de reglas para transformar URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Uso de la publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
-   + [Invalidación de la caché de CDN mediante Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidación de la caché de CDN mediante Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Trabajar con selectores](dynamic-media/working-with-selectors.md)
    + [Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Aviso de fin de vida útil para el visualizador Flash](dynamic-media/flash-viewers-eol.md)
