@@ -2,10 +2,10 @@
 title: Contenido asociado
 description: El contenido asociado proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 25%
+source-wordcount: '227'
+ht-degree: 15%
 
 ---
 
@@ -20,20 +20,24 @@ El contenido asociado proporciona la conexión para que los recursos (es decir, 
 >
 >Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
-Para crear la asociación, primero debe [agregar los recursos de medios a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede:
+Para hacer la asociación, primero debe [agregar sus recursos de medios a una colección](/help/assets/manage-collections.md). Una vez hecho esto, puede:
 
 1. Abra el fragmento y seleccione **Contenido asociado** en el panel lateral.
 
    ![Contenido asociado](assets/cfm-assoc-content-01.png)
 
-2. Seleccione **Asociar contenido** o **Asociar colección** (según corresponda, dependiendo de si alguna colección ya se ha asociado o no).
-3. Seleccione la colección requerida.
+1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione una de estas opciones:
+
+   * **Asociar contenido** : será la primera colección asociada
+   * **Colección**  asociada: las colecciones asociadas ya están configuradas
+
+1. Seleccione la colección requerida.
 
    Si lo desea, puede añadir el propio fragmento a la colección seleccionada; esto ayuda al seguimiento.
 
    ![Seleccionar colección](assets/cfm-assoc-content-02.png)
 
-4. Confirmar (con la marca de verificación). La colección se mostrará como asociada.
+1. Confirmar (con **Seleccionar**). La colección se mostrará como asociada.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
@@ -41,7 +45,7 @@ Para crear la asociación, primero debe [agregar los recursos de medios a una co
 
 Una vez asociada una colección, puede:
 
-* **Elimine** la asociación.
-* **Añadir recursos** a la colección.
+* **** Elimine la asociación.
+* **Añadir recursos** en la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
