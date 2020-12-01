@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 91%
+source-wordcount: '819'
+ht-degree: 90%
 
 ---
 
@@ -28,10 +28,12 @@ También se puede realizar lo siguiente:
 * Crear lanzamientos para varias ramas de raíz. Si bien puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), este método es poco práctico, ya que es necesario copiar todo el sitio. Cuando se trata de cientos o incluso miles de páginas, los requisitos del sistema y el rendimiento de este se ven afectados tanto por la acción de copia como por las comparaciones posteriores necesarias para las tareas de promoción.
 * Crear lanzamientos anidados (un lanzamiento dentro de otro lanzamiento). Esto permite crear un lanzamiento a partir de un lanzamiento existente, de modo que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
+Esta sección describe cómo crear, editar y promocionar (y, si es necesario, [eliminar](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) páginas de inicio desde la consola Sitios o [la consola Lanzamientos](#the-launches-console):
 
 * [Creación de lanzamientos](/help/sites-cloud/authoring/launches/creating.md)
 * [Edición de lanzamientos](/help/sites-cloud/authoring/launches/editing.md)
+* [Administración de páginas dentro de los inicios](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Uso de Deformación de tiempo para la Previsualización del contenido en función de los inicios](/help/sites-cloud/authoring/launches/preview.md)
 * [Promoción de lanzamientos](/help/sites-cloud/authoring/launches/promoting.md) 
 
 ## Lanzamientos: orden de eventos {#launches-the-order-of-events}
@@ -78,7 +80,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La creación y edición de inicios requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 
