@@ -2,10 +2,10 @@
 title: Edición de lanzamientos
 description: 'Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 93%
+source-wordcount: '521'
+ht-degree: 85%
 
 ---
 
@@ -19,12 +19,16 @@ Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede 
 1. Acceda a [Lanzamiento desde las referencias (consola de sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Ir a página** para abrir la página para editarla.
 
+Al editar la página verá una indicación en la barra de herramientas superior, junto con las opciones **Leave** y **Navegar**:
+
+![Abandonar y navegar por el inicio desde el Editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 Si el lanzamiento se basa en una Live Copy, deberá hacer lo siguiente: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
 
 * Consulte Bloqueo de símbolos (pequeños candados) al editar un componente (contenido y/o propiedades).
-* See the **Live Copy** tab in **Page Properties**
+* Consulte la ficha **Live Copy** en **Propiedades de la página**
 
 Se utiliza una Live Copy para sincronizar contenido *desde* la rama de origen *a* la rama de lanzamiento (para mantener el lanzamiento actualizado con los cambios realizados en la fuente).
 
@@ -39,7 +43,7 @@ Consulte Cambiar el contenido de una Live Copy para obtener más información. <
 
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
-1. En la consola **Sitios**, [vaya a la página de origen del lanzamiento y selecciónela](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. En la consola **Sites**, [navegue a las páginas de origen del lanzamiento y seleccione una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione un lanzamiento específico y la opción **Comparar con el origen**:
 
@@ -54,7 +58,7 @@ Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias*
 Puede añadir en cualquier momento las páginas en el rango de páginas de origen para el lanzamiento, o eliminarlas: 
 
 1. Acceda y seleccione el lanzamiento de:
-   * The [Launches console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * La [consola de inicios](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Seleccione **Editar**.
    * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar lanzamiento**. 
@@ -65,7 +69,7 @@ Puede añadir en cualquier momento las páginas en el rango de páginas de orige
 >
 >Para añadir páginas a un lanzamiento, deben estar bajo una raíz de idioma común; es decir, dentro de un solo sitio.
 
-## Editar una configuración de lanzamiento {#editing-a-launch-configuration}
+## Editar una configuración de lanzamiento  {#editing-a-launch-configuration}
 
 Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
@@ -78,7 +82,7 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
 1. Realice los cambios necesarios y confirme haciendo clic en **Guardar**.
    * Consulte [Lanzamientos: orden de eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obtener información sobre la finalidad y la interacción de los campos **Fecha de inicio** y **Producción lista**.
 
-## Detección del estado de lanzamiento de una página {#discovering-the-launch-status-of-a-page}
+## Detección del estado de lanzamiento de una página  {#discovering-the-launch-status-of-a-page}
 
 Se muestra el estado cuando se selecciona un lanzamiento específico en la ficha de referencias (consulte [Lanzamientos en las referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
