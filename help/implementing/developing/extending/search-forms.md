@@ -2,19 +2,19 @@
 title: Configurar formularios de búsqueda
 description: Configuración de la búsqueda de Forms para Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: c48274f76db764e1cbad459e644d5fb4b753a086
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 16%
+source-wordcount: '2043'
+ht-degree: 17%
 
 ---
 
 
 # Configurar formularios de búsqueda {#configuring-search-forms}
 
-Adobe Experience Manager como Cloud Service viene con un potente mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md) .
+Adobe Experience Manager como Cloud Service viene con un poderoso mecanismo [de búsqueda](/help/sites-cloud/authoring/getting-started/search.md).
 
-En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar el contenido. Éstas contienen facetas predefinidas como Fecha **de** modificación, Estado **de** publicación o Estado **de** Live Copy para ayudarle a explorar rápidamente los recursos que necesita.
+En combinación con esto, también hay un conjunto de opciones predefinidas para ayudarle a filtrar el contenido. Éstos contienen facetas predefinidas como **Fecha de modificación**, **Estado de publicación** o **Estado de Live Copy** para ayudarle a explorar rápidamente los recursos que necesita.
 
 ![buscar y filtrar el uso](assets/csf-usage.png)
 
@@ -22,63 +22,50 @@ Juntos, estos objetivos le ayudan a localizar su contenido de forma rápida y se
 
 * [Buscar y filtrar](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
 * [Selector de raíl](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
-* el [navegador](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) de recursos (al editar páginas)
+* el [Explorador de recursos](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) (al editar páginas)
 
 >[!NOTE]
 >
->Puede configurar el servicio de indexación [y búsqueda de](/help/operations/indexing.md) contenido subyacente.
+>Puede configurar el servicio subyacente [Búsqueda de contenido e indización](/help/operations/indexing.md).
 
-Con **Buscar en Forms**, puede personalizar y ampliar estos paneles según sus necesidades específicas.
+Al utilizar **Buscar en Forms**, puede personalizar y ampliar estos paneles según sus necesidades específicas.
 
-El Forms **de** búsqueda proporciona una selección lista para usar de [predicados](#predicates-and-their-settings) que puede combinar y definir. Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) mediante:
+El **Buscar en Forms** proporciona una selección lista para usar de [predicados](#predicates-and-their-settings) que puede combinar y definir. Se puede acceder a los [cuadros de diálogo para configurar estos formularios](#configuring-your-search-forms) mediante:
 
 * **Herramientas**
-
    * **General**
-
       * **Formularios de búsqueda**
 
 ## Forms predeterminado {#default-forms}
 
-Cuando accede por primera vez a la consola **Buscar en Forms** , puede ver que todas las configuraciones tienen un símbolo de cerrojo. Esto indica que la configuración correspondiente es la configuración predeterminada (lista para usar) y no se puede eliminar. Una vez que haya personalizado y guardado, desaparecerá una configuración del bloqueo. Volverá a aparecer cuando [elimine la configuración](#deleting-a-configuration-to-reinstate-the-default)personalizada, en cuyo caso se restablecerá la configuración predeterminada (y el indicador de cerrojo).
+Cuando accede por primera vez a la consola **Buscar en Forms**, puede ver que todas las configuraciones tienen un símbolo de cerrojo. Esto indica que la configuración correspondiente es la configuración predeterminada (lista para usar) y no se puede eliminar. Una vez que haya personalizado y guardado, desaparecerá una configuración del bloqueo. Volverá a aparecer cuando [elimine su configuración personalizada](#deleting-a-configuration-to-reinstate-the-default), en cuyo caso se restablecerá la configuración predeterminada (y el indicador de cerrojo).
 
 ![configuración general de formularios de búsqueda](assets/csf-overview.png)
 
 Las configuraciones predeterminadas (enumeradas alfabéticamente) disponibles son:
 
-* **Carril de búsqueda de administración de recursos:**
-
-* **Editor de páginas (búsqueda de documentos):**
-
-* **Editor de página (búsqueda de fragmentos de experiencias):**
-
-* **Editor de páginas (búsqueda de imágenes):**
-
-* **Editor de páginas (búsqueda de manuscritos):**
-
-* **Editor de páginas (búsqueda de páginas):**
-
-* **Editor de páginas (búsqueda de párrafos):**
-
-* **Editor de páginas (búsqueda de productos):**
-
-* **Editor de páginas (búsqueda de Scene7)**:
-
-* **Editor de páginas (búsqueda de vídeos)**:
-
-* **Carril de búsqueda de administración de proyecto:**
-
-* **Carril de búsqueda de traducción del proyecto:**
-
-* **Carril de búsqueda de administración de sitios**:
-
-* **Carril de búsqueda de administración de fragmentos de código**:
-
-* **Carril de búsqueda de administración de Stock**:
+* **Carril de búsqueda de administración de recursos**
+* **Editor de páginas (búsqueda de documentos)**
+* **Editor de página (búsqueda de fragmentos de experiencias)**
+* **Editor de páginas (búsqueda de imágenes)**
+* **Editor de páginas (búsqueda de manuscritos)**
+* **Editor de páginas (búsqueda de páginas)**
+* **Editor de páginas (búsqueda de párrafos)**
+* **Editor de páginas (búsqueda de productos)**
+* **Editor de páginas (búsqueda de Scene7)**
+* **Editor de páginas (búsqueda de vídeos)**
+* **Carril de búsqueda de administración de proyecto**
+* **Carril de búsqueda de traducción del proyecto**
+* **Carril de búsqueda de administración de sitios**
+* **Carril de búsqueda de administración de fragmentos de código**
+* **Carril de búsqueda de administración de Stock**
+* **Carril de búsqueda de modelos de fragmentos de contenido**
+* **Carril de búsqueda de administración de proyecto**
+* **Carril de búsqueda de traducción del proyecto**
 
 >[!NOTE]
 >
->Para obtener más información sobre los formularios de búsqueda relacionados con recursos, consulte [Recursos: Facetas de búsqueda](/help/assets/search-facets.md)
+>Para obtener más información sobre los formularios de búsqueda relacionados con los recursos, consulte [Recursos - Facetas de búsqueda](/help/assets/search-facets.md)
 
 
 ## Predicados y su configuración {#predicates-and-their-settings}
@@ -149,7 +136,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Componentes</td>
-   <td>Permite que un autor busque o filtre páginas que tengan un componente específico. For example an image gallery.<br /> </td>
+   <td>Permite que un autor busque o filtre páginas que tengan un componente específico. Por ejemplo, una galería de imágenes.<br /> </td>
    <td>
     <ul>
      <li>Marcador de posición</li>
@@ -270,7 +257,7 @@ Los siguientes predicados están disponibles, según la configuración:
   </tr>
   <tr>
    <td>Opciones</td>
-   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Añadir un predicado</a> de opciones para obtener más información.</p> </td>
+   <td><p>Las opciones son nodos de contenido creados por el usuario.</p> <p>Consulte <a href="#addinganoptionspredicate">Añadir un predicado de opciones</a> para obtener más información.</p> </td>
    <td>
     <ul>
      <li>Etiqueta de campo</li>
@@ -521,9 +508,9 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
 * **Nombre de propiedad**
 
-   La propiedad en la que se buscará. Utiliza una ruta de acceso relativa y los comodines `*/*/*` especifican la profundidad de la propiedad en relación con el `jcr:content` nodo (cada asterisco representa un nivel de nodo).
+   La propiedad en la que se buscará. Utiliza una ruta de acceso relativa y los comodines `*/*/*` especifican la profundidad de la propiedad en relación con el nodo `jcr:content` (cada asterisco representa un nivel de nodo).
 
-   Si solo desea buscar en un nodo secundario de primer nivel del recurso que tenga la `x` propiedad en el `jcr:content` nodo, use `*/jcr:content/x`
+   Si solo desea buscar en un nodo secundario de primer nivel del recurso que tenga la propiedad `x` en el nodo `jcr:content`, utilice `*/jcr:content/x`
 
 * **Profundidad de la propiedad**
 
@@ -537,35 +524,38 @@ Según el predicado, hay una selección de opciones disponibles para la configur
 
 * **Texto de rango**
 
-   Etiqueta del campo de intervalo en el predicado **Intervalo** de fechas.
+   Etiqueta del campo de intervalo en el predicado **Intervalo de fecha**.
 
 * **Ruta de opción**
 
-   El usuario puede seleccionar la ruta mediante el Explorador de rutas en la ficha de configuración del predicado. Después de seleccionar el icono **+** se utiliza para agregar la selección a la lista de opciones válidas (a continuación, el icono **-** para eliminar si es necesario).
+   El usuario puede seleccionar la ruta mediante el Explorador de rutas en la ficha de configuración del predicado. Después de seleccionar el icono **+** se utiliza para agregar la selección a la lista de opciones válidas (luego el icono **-** para eliminar si es necesario).
 
    Las opciones son nodos de contenido creados por el usuario, con la siguiente estructura:
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **La ruta** del nodo de opciones es igual que la del 
+* **Options node**
+pathEfectivamente igual que el 
 **Ruta** de opciones, solo que se encuentra en el campo predicado común, mientras que el otro es específico para recursos.
 
-* **Selección**&#x200B;única Si está activada, las opciones se procesan como casillas de verificación que solo permiten una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
+* **Una sola**
+selecciónSi está activada, las opciones se procesan como casillas de verificación que solo permiten una selección. Si se selecciona por error, se puede anular la selección de una casilla de verificación.
 
-* **Nombre(s) de la propiedad Publicar y Live Copy** Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico Sitios.
+* **Nombre(s) de la propiedad Publicar y Live Copy**
+Las etiquetas de las casillas de verificación de publicación y Live Copy para el predicado específico Sitios.
 
-* &amp;ast; en las etiquetas de campo de la ficha **Configuración** , los campos son obligatorios y, si se dejan en blanco, aparecerá un mensaje de error.
+* &amp;ast; en las etiquetas de campo de la ficha **Configuración** significa que los campos son obligatorios y, si se dejan en blanco, aparecerá un mensaje de error.
 
-## Configuración de la búsqueda en Forms {#configuring-your-search-forms}
+## Configuración de la búsqueda de Forms {#configuring-your-search-forms}
 
-### Creación/apertura de una configuración personalizada {#creating-opening-a-customized-configuration}
+### Creación/Apertura de una Configuración Personalizada {#creating-opening-a-customized-configuration}
 
 1. Vaya a **Herramientas**, **General**, **Buscar en Forms**.
 
 1. Seleccione la configuración que desee personalizar.
-1. Utilice el icono **Editar** para abrir la configuración y actualizarla.
-1. Si se trata de una nueva personalización, es probable que desee [agregar nuevos campos de predicado y definir la configuración](#add-edit-a-predicate-field-and-define-field-settings) según sea necesario. Si ya existe una personalización, puede seleccionar un campo existente y [actualizar la configuración](#add-edit-a-predicate-field-and-define-field-settings).
-1. Select **Done** to save the configuration. Los cambios se pueden ver la próxima vez que se utilice la configuración.
+1. Utilice el icono **Editar** para abrir la configuración y actualizar.
+1. Si desea una nueva personalización, probablemente desee [agregar nuevos campos de predicado y definir la configuración](#add-edit-a-predicate-field-and-define-field-settings) según sea necesario. Si ya existe una personalización, puede seleccionar un campo existente y [actualizar la configuración](#add-edit-a-predicate-field-and-define-field-settings).
+1. Seleccione **Listo** para guardar la configuración. Los cambios se pueden ver la próxima vez que se utilice la configuración.
 
    >[!NOTE]
    >
@@ -575,12 +565,12 @@ Según el predicado, hay una selección de opciones disponibles para la configur
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### Añadir/editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
+### Añadir/Editar un campo predicado y definir la configuración de los campos {#add-edit-a-predicate-field-and-define-field-settings}
 
 Puede agregar o editar campos y definir o actualizar su configuración:
 
-1. [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.
-1. Si desea agregar un nuevo campo, abra la ficha **Seleccionar predicado** y arrastre el predicado requerido a la ubicación requerida. Por ejemplo, el predicado **Intervalo de fechas**:
+1. [Abra la ](#creating-opening-a-customized-configuration) configuración personalizada para la actualización.
+1. Si desea agregar un nuevo campo, abra la ficha **Seleccionar predicado** y arrastre el predicado requerido a la ubicación requerida. Por ejemplo, el **predicado de intervalo de fechas**:
 
    ![agregar un predicado](assets/csf-add-predicate.png)
 
@@ -592,12 +582,12 @@ Puede agregar o editar campos y definir o actualizar su configuración:
 
    * Desea actualizar un predicado existente:
 
-      Seleccione el campo de predicado (a la derecha) y, a continuación, abra la ficha **Configuración** .
-   Por ejemplo, la configuración del predicado **Intervalo de fechas**:
+      Seleccione el campo de predicado (a la derecha) y, a continuación, abra la ficha **Configuración**.
+   Por ejemplo, la configuración del **Predicado de intervalo de fechas**:
 
    ![modificar predicado](assets/csf-modify-predicate.png)
 
-1. Realice los cambios necesarios y confirme con **Finalizado**. Los cambios se pueden ver la próxima vez que se utilice la configuración.
+1. Realice los cambios necesarios y confirme con **Listo**. Los cambios se pueden ver la próxima vez que se utilice la configuración.
 
 ### Vista preliminar de la configuración de búsqueda {#previewing-the-search-configuration}
 
@@ -609,18 +599,18 @@ Puede agregar o editar campos y definir o actualizar su configuración:
 
    ![Formulario de previsualización](assets/csf-preview-form.png)
 
-1. **Cierre** la previsualización para volver y finalizar la configuración.
+1. **** Cierre la previsualización para devolver y finalizar la configuración.
 
 ### Eliminación de un campo predicado {#deleting-a-predicate-field}
 
-1. [Abra la configuración](#creating-opening-a-customized-configuration) personalizada para la actualización.
-1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y, a continuación, seleccione el icono **Eliminar** (abajo a la izquierda).
+1. [Abra la ](#creating-opening-a-customized-configuration) configuración personalizada para la actualización.
+1. Seleccione el campo de predicado (a la derecha), abra la ficha **Configuración** y luego seleccione el icono **Eliminar** (abajo a la izquierda).
 
    ![icono Eliminar](assets/csf-delete-icon.png)
 
 1. Un cuadro de diálogo solicitará la confirmación de la acción de eliminar.
 
-1. Confirme este y cualquier otro cambio con **Finalizado**.
+1. Confirme este y cualquier otro cambio con **Listo**.
 
 ### Eliminación de una configuración (para restablecer el valor predeterminado) {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -632,13 +622,13 @@ Una vez que haya personalizado una configuración, se anularán los valores pred
 
 La eliminación de una configuración personalizada se realiza desde la consola:
 
-1. Seleccione la configuración requerida (por ejemplo, Editor **de páginas (búsqueda de párrafos)**) y, a continuación, el icono **Eliminar** de la barra de herramientas:
+1. Seleccione la configuración requerida (por ejemplo, **Editor de páginas (búsqueda de párrafos)**) y, a continuación, el icono **Eliminar** en la barra de herramientas:
 
    ![restaurar predeterminado](assets/csf-restore-default.png)
 
 1. Se eliminará la configuración personalizada y se restablecerá la configuración predeterminada (esto se indica con la reaparición del símbolo de cerrojo en la consola).
 
-### Predicados de opciones de añada {#adding-options-predicates}
+### Añadir predicados de opciones {#adding-options-predicates}
 
 Los predicados de opciones (Opciones, Propiedad de opciones) permiten configurar un elemento que se va a buscar. Normalmente se utilizan para buscar algo directamente debajo de la página; por ejemplo, una propiedad en el nodo de página.
 
@@ -657,20 +647,20 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
 
    >[!NOTE]
    >
-   >No ***debe*** cambiar nada en la `/libs` ruta.
+   >Usted ***no debe*** cambiar nada en la ruta `/libs`.
    >
-   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
+   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y bien puede sobrescribirse al aplicar una revisión o un paquete de funciones).
    >
    >El método recomendado para la configuración y otros cambios es:
    >
-   >1. Volver a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso, de:
+   >1. Vuelva a crear el elemento requerido, tal como existe en `/libs`, en `/apps`. En este caso, de:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Realice los cambios en `/apps.`
+   >1. Realice cualquier cambio dentro de `/apps.`
 
 
-1. Abra la consola **Buscar en Forms** y seleccione la configuración que desee actualizar. Por ejemplo, **Sitio Administración Barra** de búsqueda. A continuación, seleccione **Editar**.
+1. Abra la consola **Buscar en Forms** y seleccione la configuración que desee actualizar. Por ejemplo: **Barra de búsqueda de administración del sitio**. A continuación, seleccione **Editar**.
 
-1. En función de la configuración, agregue una propiedad **Options** o **Options** a la configuración.
+1. Según la configuración, agregue una **Propiedad** u **Opciones** a la configuración.
 1. Actualice los campos, en particular:
 
    * **Nombre de propiedad**
@@ -686,8 +676,8 @@ El siguiente ejemplo (para buscar según la plantilla utilizada para crear una p
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![Predicados de opciones](assets/csf-options-predicate-02.png)
 
-1. Select **Done** to save your configuration.
-1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar - Filtros** . Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
+1. Seleccione **Listo** para guardar la configuración.
+1. Vaya a la consola adecuada (en este ejemplo, **Sitios**) y abra el carril **Buscar - Filtros**. Los formularios de búsqueda recién definidos, junto con las diversas opciones, serán visibles. Seleccione la opción requerida para ver los resultados de la búsqueda.
 
    ![opciones utilizadas](assets/csf-options-usage.png)
 
@@ -706,15 +696,15 @@ La siguiente tabla lista los permisos necesarios para realizar acciones de edici
  <tbody>
   <tr>
    <td>Editar </td>
-   <td>Permisos de lectura y escritura en el <code>/apps </code>nodo.</td>
+   <td>Permisos de lectura y escritura en el nodo <code>/apps </code>.</td>
   </tr>
   <tr>
    <td>Eliminar</td>
-   <td>Permisos de lectura, escritura y eliminación en el <code>/apps</code> nodo</td>
+   <td>Permisos de lectura, escritura y eliminación en el nodo <code>/apps</code></td>
   </tr>
   <tr>
    <td>Vista previa</td>
-   <td>Permisos de lectura, escritura y eliminación en el <code>/var/dam/content</code> nodo.<br /> Permisos de lectura y escritura en el <code>/apps</code> nodo.</td>
+   <td>Permisos de lectura, escritura y eliminación en el nodo <code>/var/dam/content</code>.<br /> Permisos de lectura y escritura en el  <code>/apps</code> nodo.</td>
   </tr>
  </tbody>
 </table>
