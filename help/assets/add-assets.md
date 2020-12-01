@@ -1,10 +1,10 @@
 ---
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
-description: Añada los recursos digitales [!DNL Adobe Experience Manager] como Cloud Service.
+description: Añada los recursos digitales a [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 9c42bd216edd0174c9a4c9b706c0e08ca36428f6
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ Se proporcionan varios métodos de carga. Además de la carga del navegador que 
 
 Nos centraremos en los métodos de carga para los usuarios finales aquí y proporcionaremos vínculos a artículos que describen los aspectos técnicos de la carga y la ingesta de recursos mediante API y SDK de Experience Manager.
 
-Aunque puede cargar y administrar cualquier archivo binario en Experience Manager, los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de previsualizaciones y representaciones. Consulte los formatos [de archivo](file-format-support.md) admitidos para obtener más información.
+Aunque puede cargar y administrar cualquier archivo binario en Experience Manager, los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de previsualizaciones y representaciones. Consulte [formatos de archivo admitidos](file-format-support.md) para obtener más información.
 
-También puede elegir que se realice un procesamiento adicional en los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte Procesamiento [](#additional-processing) adicional a continuación para obtener más información.
+También puede elegir que se realice un procesamiento adicional en los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para agregar metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte [Procesamiento adicional](#additional-processing) a continuación para obtener más información.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ También puede elegir que se realice un procesamiento adicional en los recursos 
 >
 >El código de carga personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
 
-## Upload assets {#upload-assets}
+## Carga de recursos {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -59,27 +59,25 @@ También puede elegir que se realice un procesamiento adicional en los recursos 
 
 Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritorio y arrastrarlos en la interfaz de usuario (navegador web) a la carpeta de destino. También puede iniciar la carga desde la interfaz de usuario.
 
-1. En la interfaz de usuario, navegue hasta la ubicación en la que desee agregar recursos digitales. [!DNL Assets]
+1. En la interfaz de usuario [!DNL Assets], navegue a la ubicación donde desee agregar recursos digitales.
 1. Para cargar los recursos, realice una de las siguientes acciones:
 
-   * En la barra de herramientas, toque el icono **[!UICONTROL Crear]** . A continuación, en el menú, toque **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
-   * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets] . No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
+   * En la barra de herramientas, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Archivos]**. Si es necesario, puede cambiar el nombre del archivo en el cuadro de diálogo presentado.
+   * En un navegador compatible con HTML5, arrastre los recursos directamente en la interfaz de usuario [!DNL Assets]. No se muestra el cuadro de diálogo para cambiar el nombre del archivo.
 
    ![create_menu](assets/create_menu.png)
 
-   Para seleccionar varios archivos, pulse la tecla Ctrl o Comando y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
+   Para seleccionar varios archivos, seleccione la tecla `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-1. Para cancelar una carga en curso, haga clic en Cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+Si cancela una operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
-   Si cancela la operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
-
-1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de los archivos cargados correctamente y los archivos que no se pudieron cargar.
-
-   Además, la interfaz de usuario de Recursos muestra el recurso más reciente que se ha cargado o la carpeta que se ha creado primero.
+1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de archivos cargados correctamente y los archivos que no se pudieron cargar.
+Además, la interfaz de usuario [!DNL Assets] muestra el recurso más reciente que ha cargado o la carpeta que ha creado primero.
 
 >[!NOTE]
 >
->Para cargar jerarquías de carpetas anidadas, consulte Carga [masiva de recursos](#bulk-upload).
+>Para cargar jerarquías de carpetas anidadas, consulte [carga masiva de recursos](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -100,15 +98,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### Gestión de cargas cuando el recurso ya existe {#handling-upload-existing-file}
+### Administración de cargas cuando el recurso ya existe {#handling-upload-existing-file}
 
 Si carga un recurso con el mismo nombre que el de un recurso ya disponible en la ubicación donde está cargando el recurso, se muestra un cuadro de diálogo de advertencia.
 
-Puede elegir reemplazar un recurso existente, crear otra versión o mantener ambos cambiando el nombre del nuevo recurso que se carga. Si sustituye un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, anotaciones, recortes, etc.) que haya realizado en el recurso existente. Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` que se añadirá al nombre.
+Puede elegir reemplazar un recurso existente, crear otra versión o mantener ambos cambiando el nombre del nuevo recurso que se carga. Si sustituye un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, anotaciones, recortes, etc.) que haya realizado en el recurso existente. Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` anexado al nombre.
 
 >[!NOTE]
 >
->Al seleccionar **[!UICONTROL Reemplazar]** en el cuadro de diálogo Conflicto [!UICONTROL de] nombres, el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
+>Cuando selecciona **[!UICONTROL Reemplazar]** en el cuadro de diálogo [!UICONTROL Conflicto de nombres], el ID de recursos se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
 >
 >Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
 
@@ -116,32 +114,51 @@ Para conservar el recurso de duplicado en [!DNL Assets], haga clic en **[!UICONT
 
 ### Administración de nombres de archivo y caracteres prohibidos {#filename-handling}
 
-[!DNL Experience Manager Assets] evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la carga con un nombre permitido.
+[!DNL Experience Manager Assets] evita que se carguen recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o varios caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimine estos caracteres o la cargue con un nombre permitido.
 
 Para adaptarse a las convenciones de nombres de archivo específicas de su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que cargue.
 
 Sin embargo, no se admiten los siguientes caracteres (lista separada por espacios):
 
-* el nombre del archivo de recurso no debe contener `* / : [ \\ ] | # % { } ? &`
+* el nombre del archivo de recursos no debe contener `* / : [ \\ ] | # % { } ? &`
 * el nombre de la carpeta de recursos no debe contener `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Carga masiva de recursos {#bulk-upload}
 
-Para cargar un mayor número de archivos, especialmente si existen en una jerarquía de carpetas anidada en disco, se pueden utilizar los siguientes métodos:
+Para cargar un mayor número de archivos, utilice uno de los siguientes métodos. Consulte también los [casos y métodos de uso](#upload-methods-comparison)
 
-* Utilice un script o una herramienta de carga personalizada que aproveche las API [de carga de](developer-reference-material-apis.md#asset-upload-technical)recursos. Una herramienta personalizada de este tipo puede añadir una gestión adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de los archivos), si es necesario.
-* Utilice la aplicación [de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) Experience Manager para cargar jerarquías de carpetas anidadas.
+* [API](developer-reference-material-apis.md#asset-upload-technical) de carga de recursos: Utilice un script o una herramienta de carga personalizada que utilice las API para añadir un control adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de los archivos), si es necesario.
+* [Aplicación](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de escritorio Experience Manager: Útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícelo para cargar carpetas anidadas disponibles localmente.
+* [Herramienta](#bulk-ingestion-tool) de ingestión masiva: Se utiliza para la ingestión de grandes cantidades de recursos de forma ocasional o inicial al realizar la implementación  [!DNL Experience Manager].
+
+### Herramienta de ingesta masiva de recursos {#bulk-ingestion-tool}
+
+Añada los siguientes detalles:
+
+* Caso de uso de cuándo utilizar este método.
+* Personas aplicables
+* Pasos de configuración
+* Cómo administrar los trabajos de inserción y ver estados.
+* Señala que hay que recordar la gestión o el mantenimiento de los recursos que se van a ingestar.
+
+Para configurar la herramienta, siga estos pasos:
+
+1. Cree una configuración de importación masiva.  Vaya a Herramientas > Recurso > Importación masiva > seleccione el botón Crear.
+
+![Configuración del importador a granel](assets/bulk-import-config.png)
+
+1. Proporcione los detalles adecuados.
 
 >[!NOTE]
 >
->La carga masiva como parte de la migración de contenido desde otros sistemas cuando se configura e implementa en Experience Manager requiere una planificación, consideración y elección cuidadosas de las herramientas. Consulte la guía [de](/help/implementing/deploying/overview.md) implementación para obtener instrucciones sobre los enfoques de migración de contenido.
+>La carga masiva como parte de la migración de contenido desde otros sistemas cuando se configura e implementa en Experience Manager requiere una planificación, consideración y elección cuidadosas de las herramientas. Consulte la [guía de implementación](/help/implementing/deploying/overview.md) para obtener instrucciones sobre los enfoques de migración de contenido.
 
 ## Carga de recursos mediante clientes de escritorio {#upload-assets-desktop-clients}
 
 Además de la interfaz de usuario del navegador web, Experience Manager admite otros clientes en el escritorio. También proporcionan una experiencia de carga sin necesidad de ir al navegador web.
 
-* [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) proporciona acceso a los recursos desde [!DNL Experience Manager] las aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
-* [La aplicación](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) de escritorio Experience Manager simplifica el trabajo con los recursos en el escritorio, independientemente del tipo de archivo o la aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del navegador solo admite la carga de listas de archivos planos.
+* [Adobe Asset ](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) Link proporciona acceso a los recursos desde  [!DNL Experience Manager] las aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto en [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
+* [La aplicación de escritorio Experience Manager ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifica el trabajo con los recursos en el escritorio, independientemente del tipo de archivo o la aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del navegador solo admite la carga de listas de archivos planos.
 
 ## Procesamiento adicional {#additional-processing}
 
@@ -151,28 +168,40 @@ Para realizar un procesamiento adicional en los recursos cargados, puede utiliza
 
 Están disponibles los siguientes perfiles:
 
-* [Los perfiles](metadata-profiles.md) de metadatos permiten aplicar propiedades de metadatos predeterminadas a los recursos cargados en esa carpeta
-* [Los perfiles](asset-microservices-configure-and-use.md) de procesamiento permiten generar más representaciones de las que son posibles de forma predeterminada.
+* [Los ](metadata-profiles.md) perfiles de metadatos permiten aplicar propiedades de metadatos predeterminadas a los recursos cargados en esa carpeta
+* [El procesamiento de ](asset-microservices-configure-and-use.md) perfiles le permite generar más representaciones de las posibles de forma predeterminada.
 
 Además, si Dynamic Media está habilitado en el entorno:
 
-* [Los perfiles](dynamic-media/image-profiles.md) de imagen de Dynamic Media permiten aplicar a los recursos cargados un recorte específico (recorte **** inteligente y recorte de píxeles) y una configuración de enfoque.
-* [Los perfiles](dynamic-media/video-profiles.md) de vídeo de Dynamic Media permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
+* [Los ](dynamic-media/image-profiles.md) perfiles de imagen de Dynamic Media permiten aplicar a los recursos cargados un recorte específico (recorte **[!UICONTROL inteligente]** y recorte de píxeles) y una configuración de enfoque.
+* [Los ](dynamic-media/video-profiles.md) perfiles de vídeo de Dynamic Media le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
 
 >[!NOTE]
 >
 >El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para recortar o transformar los medios que se deben realizar al entregar los recursos
 
-Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna Perfil **[!UICONTROL de]** procesamiento.
+Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna **[!UICONTROL Perfil de procesamiento]**.
 
 ## Carga o ingesta de recursos mediante API {#upload-using-apis}
 
-Los detalles técnicos de las API y el protocolo de carga, así como los vínculos al SDK de código abierto y a los clientes de muestra, se proporcionan en la sección de carga [de](developer-reference-material-apis.md#asset-upload-technical) recursos de la referencia del desarrollador.
+En la sección [carga de recursos](developer-reference-material-apis.md#asset-upload-technical) de la referencia del desarrollador, se proporcionan detalles técnicos de las API y el protocolo de carga y vínculos al SDK de código abierto y a los clientes de muestra.
+
+## Métodos de carga basados en escenarios {#upload-methods-comparison}
+
+| Método de carga | ¿Cuándo usar? | Persona principal (administrador, desarrollador, usuario creativo, especialista en marketing) |
+|---------------------|-------------------------------------------------------------------------------------------|------------|
+| Consola de recursos/interfaz de usuario | Carga ocasional, facilidad de pulsar y arrastrar, carga del buscador. No para grandes ingestas masivas. | Todos |
+| API de carga | Para la toma dinámica de decisiones de recursos durante la carga | Desarrollador |
+| Aplicación de escritorio | Consumo de recursos de bajo volumen, pero para migración | Administrador, especialista en marketing |
+| Vínculo de recurso | Para que los creativos y los especialistas en marketing colaboren en los recursos desde las aplicaciones de escritorio de Creative Cloud admitidas. | Creativo, especialista en marketing |
+| Herramienta de ingestión masiva | Ingesta masiva de recursos desde almacenes de datos.  Recomendado para migraciones y compras masivas ocasionales. | Administrador, Desarrollador |
+
+Describa cuándo utilizar el método.
 
 >[!MORELIKETHIS]
 >
 >* [Aplicación de escritorio de Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Documentación de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
+>* [Documentación de Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload-technical)
 
