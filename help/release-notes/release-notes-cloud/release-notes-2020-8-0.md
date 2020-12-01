@@ -2,7 +2,7 @@
 title: Notas de la versión 2020.8.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.8.0.'
 translation-type: tm+mt
-source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
+source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 6%
@@ -15,48 +15,48 @@ ht-degree: 6%
 En la siguiente sección se describen las notas de la versión generales de Experience Manager as a Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] como Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] como Cloud Service  {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### Novedades en [!DNL Sites] {#what-is-new-sites}
 
-* Capacidad para [restaurar páginas y subpáginas (árboles de páginas) a una versión](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)anterior.
+* Capacidad para [restaurar páginas y subpáginas (árboles de páginas) a una versión anterior](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Posibilidad de [crear inicios](/help/sites-cloud/authoring/launches/overview.md) en AEM [SPA editor.](/help/implementing/developing/spa/introduction.md)
+* Capacidad para [crear inicios](/help/sites-cloud/authoring/launches/overview.md) en AEM [SPA Editor.](/help/implementing/developing/hybrid/introduction.md)
 
 
-## [!DNL Adobe Experience Manager Assets] como Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] como Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Novedades en [!DNL Assets] {#what-is-new-assets}
 
-* La transcodificación de vídeo ahora se admite con los microservicios de recursos. Una nueva sección de la configuración de Perfiles [!UICONTROL de] procesamiento le permite definir la velocidad de bits y las dimensiones del vídeo. El formato de salida es MP4 con códec H.264. Para obtener más información, consulte [Gestión de recursos](/help/assets/manage-video-assets.md#transcode-video)de vídeo. Para obtener más opciones de transcodificación y envío de vídeo, utilice [!DNL Dynamic Media] Add-on.
+* La transcodificación de vídeo ahora se admite con los microservicios de recursos. Una nueva sección de la configuración [!UICONTROL Perfiles de procesamiento] permite definir la velocidad de bits y las dimensiones del vídeo. El formato de salida es MP4 con códec H.264. Para obtener más información, consulte [administración de recursos de vídeo](/help/assets/manage-video-assets.md#transcode-video). Para obtener más opciones de transcodificación y envío de vídeo, utilice el complemento [!DNL Dynamic Media].
 
-* En las nuevas [!DNL Experience Manager Assets] implementaciones, la funcionalidad de etiquetado inteligente ahora está configurada de forma predeterminada. No es necesario realizar la integración manualmente con [!DNL Adobe Developer Console]. En implementaciones existentes, los administradores [configuran la integración](/help/assets/smart-tags-configuration.md#aio-integration) de etiquetas inteligentes como antes.
+* En las nuevas [!DNL Experience Manager Assets] implementaciones, la funcionalidad de etiquetado inteligente ahora se configura de forma predeterminada. No es necesario realizar la integración manual con [!DNL Adobe Developer Console]. En implementaciones existentes, los administradores [configuran la integración de etiquetas inteligentes](/help/assets/smart-tags-configuration.md#aio-integration) como antes.
 
-* Una nueva experiencia [de descarga de](/help/assets/download-assets-from-aem.md) recursos permite:
+* Una nueva [experiencia de descarga de recursos](/help/assets/download-assets-from-aem.md) permite:
 
    * Descarga asincrónica para grandes descargas para que los usuarios no tengan que esperar.
    * Una nueva API modular para la extensibilidad del desarrollador.
 
 * La extracción de metadatos para los microservicios de recursos tiene un rendimiento mejorado. Aumenta el rendimiento general de ingestión de recursos.
 
-* Utilice un perfil de procesamiento para generar metadatos personalizados mediante el servicio de cómputo. Consulte Metadatos [personalizados con perfil](/help/assets/manage-metadata.md#metadata-compute-service)de procesamiento.
+* Utilice un perfil de procesamiento para generar metadatos personalizados mediante el servicio de cómputo. Consulte [Metadatos personalizados con el perfil de procesamiento](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Una experiencia de descarga más sencilla para los usuarios de Brand Portal que los administradores pueden configurar. Consulte [Descripción general](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)de la experiencia de descarga.
+* Una experiencia de descarga más sencilla para los usuarios de Brand Portal que los administradores pueden configurar. Consulte [descripción general de la experiencia de descarga](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations).
 
-* Las previsualizaciones de documento en PDF nativas y de alta fidelidad ya están disponibles en Brand Portal. Consulte Descripción general [del visor de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)documento.
+* Las previsualizaciones de documento en PDF nativas y de alta fidelidad ya están disponibles en Brand Portal. Consulte [Información general del visor de documento](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* Ahora puede invalidar la caché de CDN (Red de Envío de contenido) directamente desde [!DNL Dynamic Media] en AEM como Cloud Service (en lugar de usar [!DNL Dynamic Media Classic]). Garantiza que los últimos recursos se proporcionen en minutos en lugar de horas. Consulte [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* Ahora puede invalidar la caché de CDN (Red de Envío de contenido) directamente desde [!DNL Dynamic Media] en AEM como Cloud Service (en lugar de utilizar [!DNL Dynamic Media Classic]). Garantiza que los últimos recursos se proporcionen en minutos en lugar de horas. Consulte [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
-* La compatibilidad de accesibilidad mejorada se agrega a los controles de interfaz de usuario, la navegación, la exploración y la experiencia de búsqueda en [!DNL Assets].
+* Se ha agregado compatibilidad de accesibilidad mejorada a los controles de interfaz de usuario, la navegación, la exploración y la experiencia de búsqueda en [!DNL Assets].
 
-   * Si pulsa la tecla Escape después de seleccionar la opción [!UICONTROL Añadir representación] , el enfoque vuelve a la barra de herramientas. <!-- via CQ-4293594-->
+   * Si pulsa la tecla Escape después de seleccionar la opción [!UICONTROL Añadir representación], el enfoque vuelve a la barra de herramientas. <!-- via CQ-4293594-->
    * El enfoque del teclado funciona correctamente al utilizar el cuadro combinado Correo electrónico. <!-- via CQ-4286215 -->
    * Los elementos de acordeones de la sección filtros de búsqueda se interpretan como acordeones estándar ampliables. <!-- via CQ-4273103 -->
    * Al aplicar una etiqueta a un recurso, el cuadro de diálogo muestra las etiquetas como elementos de árbol. Los atributos ARIA se aplican correctamente a los elementos de árbol para hacerlos accesibles ahora. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] Ya está disponible la versión 2.0.3. Mejora la compatibilidad con el Service Pack [!DNL Experience Manager] 6.5.5 y cuenta con una lista de compatibilidad con el sistema operativo cliente actualizada. [!DNL Windows] 7 y [!DNL macOS] versiones anteriores a 10.14 no son compatibles.
+* [!DNL AEM Desktop app] Ya está disponible la versión 2.0.3. Mejora la compatibilidad con el Service Pack [!DNL Experience Manager] 6.5.5 y tiene una lista de compatibilidad con el SO del cliente actualizada. [!DNL Windows] 7 y  [!DNL macOS] versiones anteriores a 10.14 no son compatibles.
 
-### Errores corregidos en [!DNL Assets] {#bugs-fixed}
+### Corrección de errores en [!DNL Assets] {#bugs-fixed}
 
 * La opción Relacionar y desrelacionar no responde cuando se hace clic en ella por primera vez. (CQ-4299022)
 * Al descargar un recurso, si selecciona la opción de recibirlo por correo electrónico, el correo electrónico no se envía. (CQ-4299146)
@@ -73,21 +73,21 @@ En la siguiente sección se describen las notas de la versión generales de Expe
 
 ### Fecha de la versión {#release-date-cm}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2020.
+La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es el 06 de agosto de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 
-* La auditoría de contenido es una función habilitada en Cloud Manager Sites Producines. La configuración de la tubería de producción para programas con sitios ahora incluye una tercera ficha denominada Auditoría **del contenido**. Siempre que se ejecute un flujo de producción, se incluirá un nuevo paso de auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
+* La auditoría de contenido es una función habilitada en Cloud Manager Sites Producines. La configuración de la tubería de producción para programas con sitios ahora incluye una tercera ficha denominada **Auditoría de contenido**. Siempre que se ejecute un flujo de producción, se incluirá un nuevo paso de auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
 
 
    >[!NOTE]
    >La auditoría de contenido se ha cambiado a Auditoría de experiencias.
 
-   Consulte Prueba de auditoría de [experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
+   Consulte [Prueba de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
 
 * Los entornos recién creados en programas de Recursos ahora se configurarán automáticamente con Smart Content Services.
 
-* Los entornos hibernados se pueden eliminar de la hibernación desde la página **Información general** del Administrador de nubes.
+* Los entornos hibernados se pueden deshibernar desde la página **Información general** del Administrador de nube.
 
 * Capacidad para realizar comprobaciones de experiencias en páginas, con tecnología de Google Lighthouse. Como parte de la canalización de Cloud Manager, se pueden comprobar y validar hasta 25 páginas con KPI de experiencia, y las puntuaciones se muestran en la interfaz de usuario del Cloud Manager.
 
@@ -99,7 +99,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.8.0 is August 06, 2
 
 * En algunos casos, las ejecuciones de los trámites terminados no se registraban correctamente por haberse completado, lo que impedía la ejecución de los nuevos trámites.
 
-* Ocasionalmente, las ejecuciones por tuberías se *quedaban atascadas* debido a problemas de comunicación interna.
+* Las ejecuciones de tuberías ocasionalmente se *atascaran* debido a problemas de comunicación interna.
 
 * Al aprovisionar una nueva organización, a algunos usuarios con funciones administrativas distintas de los administradores del sistema se les daba acceso erróneamente a Cloud Manager.
 
@@ -139,8 +139,8 @@ Siga esta sección para conocer las novedades y las actualizaciones de las herra
 
 ### Novedades {#what-is-new-refactoring}
 
-* Complemento AIO-CLI lanzado para unificar las herramientas de refactorización de código para permitir que los desarrolladores invoquen y ejecuten las herramientas de refactorización de código desde un solo lugar. Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
+* Complemento AIO-CLI lanzado para unificar las herramientas de refactorización de código para permitir que los desarrolladores invoquen y ejecuten las herramientas de refactorización de código desde un solo lugar. Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
 
-* AEM Dispatcher Converter se ha ampliado para admitir conversiones de configuraciones de On-premise y Adobe Managed Services Dispatcher en AEM como configuraciones de Dispatcher compatibles con Cloud Service. Consulte Recurso [Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obtener más información.
+* AEM Dispatcher Converter se ha ampliado para admitir conversiones de configuraciones de On-premise y Adobe Managed Services Dispatcher en AEM como configuraciones de Dispatcher compatibles con Cloud Service. Consulte [Recurso de Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obtener más información.
 
-* AEM Dispatcher Converter se reescribe ` node.js ` e integra con el complemento AIO-CLI.
+* AEM Dispatcher Converter se volvió a escribir en ` node.js ` e integrado con el complemento AIO-CLI.
