@@ -14,11 +14,11 @@ ht-degree: 1%
 
 Hemos desarrollado herramientas para automatizar algunas de las tareas de refactorización de código necesarias para ser compatibles con AEM como Cloud Service. Para reducir la complejidad asociada con la instalación y configuración de diferentes herramientas de refactorización de código, hemos desarrollado un complemento para unificar las herramientas que funcionan en código y repositorios.
 
-## Benefits {#benefits}
+## Beneficios {#benefits}
 
 El complemento Experiencia unificada ofrece las siguientes ventajas:
 
-* Unifica las herramientas que trabajan en el código fuente en una `node.js` aplicación expuesta como `aio-cli ` complemento para proporcionar una experiencia de usuario coherente al usuario.
+* Unifica las herramientas que trabajan en el código fuente en una aplicación `node.js` expuesta como complemento `aio-cli ` para proporcionar una experiencia de usuario consistente al usuario.
 
 * Proporciona la capacidad de ejecutar todas las herramientas mediante un único comando, al tiempo que proporciona la flexibilidad necesaria para ejecutar herramientas específicas según sea necesario.
 
@@ -26,7 +26,7 @@ El complemento Experiencia unificada ofrece las siguientes ventajas:
 
 ## Explicación del complemento {#understanding-plugin}
 
-El `aio-cli-plugin-aem-cloud-service-migration` complemento consta de dos partes principales:
+El complemento `aio-cli-plugin-aem-cloud-service-migration` consta de dos partes principales:
 
 * **Interfaz de usuario**
 
@@ -43,7 +43,7 @@ El `aio-cli-plugin-aem-cloud-service-migration` complemento consta de dos partes
 
 ## Disponibilidad {#availability}
 
-Consulte Recurso [Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para conocer el uso y cómo puede contribuir a este código de complemento que es de código abierto en GitHub.
+Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener información sobre el uso y cómo puede contribuir a este código de complemento de código abierto en GitHub.
 
 >[!NOTE]
 >Actualmente, el complemento está integrado con AEM Dispatcher Converter y el Modernizador de repositorio.
