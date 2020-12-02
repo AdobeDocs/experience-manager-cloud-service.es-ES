@@ -69,7 +69,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    Para seleccionar varios archivos, seleccione la tecla `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 Si cancela una operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
 1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de archivos cargados correctamente y los archivos que no se pudieron cargar.
