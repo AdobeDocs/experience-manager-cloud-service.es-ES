@@ -20,7 +20,7 @@ ht-degree: 86%
    + [Ejecución](/help/move-to-cloud-service/execution.md)
    + [Publicar Go-live](/help/move-to-cloud-service/post-go-live.md)
 + Herramientas de Transición de nube {#cloud-migration}
-   + Analizador de prácticas recomendadas {#best-practices-analyzer}
+   + Analizador de optimizaciones {#best-practices-analyzer}
       + [Información general](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [Uso del Analizador de optimizaciones](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + Herramienta de transferencia de contenido {#content-transfer-tool}
