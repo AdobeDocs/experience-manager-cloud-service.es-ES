@@ -2,9 +2,9 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 9%
 
 ---
@@ -381,6 +381,8 @@ La secuencia de comandos hace lo siguiente:
 
 1. Ejecuta el validador de la sección anterior para asegurarse de que solo se incluyen las directivas admitidas. Si la configuración no es válida, la secuencia de comandos fallará.
 2. Ejecuta el `httpd -t command` para probar si la sintaxis es correcta, de modo que apache httpd puede inicio. Si se realiza correctamente, la configuración debe estar lista para la implementación
+
+Durante una implementación de Cloud Manager, la comprobación `httpd -t syntax` también se ejecutará y cualquier error se incluirá en el registro de Cloud Manager `Build Images step failure`.
 
 ## Prueba de la configuración de Apache y Dispatcher localmente {#testing-apache-and-dispatcher-configuration-locally}
 
