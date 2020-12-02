@@ -35,15 +35,15 @@ AEM actualizaciones de versión son de dos tipos:
 
 AEM actualizaciones pasan por un proceso de validación de productos intensivo y completamente automatizado, que implica varios pasos para garantizar que no se interrumpa el servicio para ningún sistema en producción. Los controles de estado se utilizan para supervisar el estado de la aplicación. Si estas comprobaciones fallan durante una AEM como actualización de Cloud Service, la versión no continuará y Adobe investigará por qué la actualización provocó este comportamiento inesperado.
 
-[Las pruebas de producto y las pruebas](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) funcionales del cliente que impiden que las actualizaciones de productos y los impulsos de código del cliente rompan la producción también se validan durante una actualización de la versión de AEM.
+[Las pruebas del producto y ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) las pruebas funcionales del cliente que impiden que las actualizaciones del producto y los impulsos del código del cliente rompan la producción también se validan durante una actualización de la versión de AEM.
 
 >[!NOTE]
 >
 >Si el código personalizado se insertó en el entorno de ensayo y luego fue rechazado por usted, la siguiente actualización de AEM eliminará esos cambios para reflejar la etiqueta git de la última versión correcta del cliente a producción.
 
-## Almacenamiento de nodos compuesto {#composite-node-store}
+## Almacenamiento de nodos compuestos {#composite-node-store}
 
-Como se mencionó anteriormente, las actualizaciones en la mayoría de los casos no producirán ningún tiempo de inactividad, incluso para el autor, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a la función de almacén *de nodos* compuestos de Oak.
+Como se mencionó anteriormente, las actualizaciones en la mayoría de los casos no producirán ningún tiempo de inactividad, incluso para el autor, que es un clúster de nodos. Las actualizaciones móviles son posibles debido a la función *almacén de nodos compuestos* en Oak.
 
-Esta función permite AEM varios repositorios a la vez. En una implementación móvil, la nueva versión de Green AEM contiene su propio `/libs` (el repositorio inmutable basado en TarMK), distinto de la versión anterior de Blue AEM, aunque ambos hacen referencia a un repositorio mutable compartido basado en DocumentMK que contiene áreas como `/content` , `/conf` , `/etc` y otras. Dado que tanto el Azul como el Verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, ambos tomando tráfico hasta que el azul sea completamente reemplazado por el verde.
+Esta función permite AEM varios repositorios a la vez. En una implementación móvil, la nueva versión de Green AEM contiene su propio `/libs` (repositorio inmutable basado en TarMK), distinto de la versión anterior de Blue AEM, aunque ambos hacen referencia a un repositorio mutable basado en DocumentMK compartido que contiene áreas como `/content` , `/conf` , `/etc` y otras. Dado que tanto el Azul como el Verde tienen sus propias versiones de `/libs`, ambos pueden estar activos durante la actualización móvil, lo que provoca tráfico hasta que el azul se reemplaza por el verde.
 
