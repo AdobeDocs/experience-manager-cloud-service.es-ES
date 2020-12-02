@@ -31,36 +31,36 @@ Como práctica recomendada para el formato de imagen, inicio con la configuraci�
 
 La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Implica especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
 
-* Para cambiar el tamaño de la imagen, el mejor método y el más sencillo es usar `&wid=<value>` y `&hei=<value>,`o simplemente `&hei=<value>`. Estos parámetros establecen automáticamente la anchura de la imagen según la proporción de aspecto.
-* `&resMode=<value>`controla el algoritmo utilizado para la disminución de resolución. Inicio con `&resMode=sharp2`. Este valor proporciona la mejor calidad de imagen. Aunque el uso de la disminución de resolución `value =bilin` es más rápido, a menudo resulta en el solapamiento de artefactos.
+* Para el tamaño de imagen, el mejor método y el más sencillo es utilizar `&wid=<value>` y `&hei=<value>,`o sólo `&hei=<value>`. Estos parámetros establecen automáticamente la anchura de la imagen según la proporción de aspecto.
+* `&resMode=<value>`controla el algoritmo utilizado para la disminución de resolución. Inicio con `&resMode=sharp2`. Este valor proporciona la mejor calidad de imagen. Aunque el uso de la disminución de resolución `value =bilin` es más rápido, a menudo resulta en el alias de artefactos.
 
-Como práctica recomendada para cambiar el tamaño, el uso `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
+Se recomienda utilizar `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2` para cambiar el tamaño de la imagen
 
 ## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
 El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a los siguientes recursos útiles:
 
-El [enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) de imágenes también se aplica a AEM.
+El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) también se aplica a AEM.
 
-En Adobe TV, vea [Enfoque de imágenes con máscara](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)de enfoque.
+En Adobe TV, vea [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
 Con AEM, puede enfocar imágenes durante la ingestión, en el envío o en ambos. En la mayoría de los casos, sin embargo, debe enfocar las imágenes utilizando solo un método o el otro, pero no ambos. El enfoque de imágenes en un envío, en una URL, generalmente proporciona los mejores resultados.
 
 Existen dos métodos de enfoque de imagen que puede utilizar:
 
 * Enfoque simple ( `&op_sharpen`): similar al filtro de enfoque utilizado en Photoshop, el enfoque simple aplica enfoque básico a la vista final de la imagen tras el cambio de tamaño dinámico. Sin embargo, este método no es configurable por el usuario. La práctica recomendada es no utilizar &amp;op_sharpen a menos que sea necesario.
-* Máscara de enfoque ( `&op_USM`): la máscara de enfoque es un filtro de enfoque estándar del sector. Lo mejor es enfocar imágenes con máscaras de enfoque siguiendo las directrices que se describen a continuación. La máscara de enfoque permite controlar los tres parámetros siguientes:
+* Enmascaramiento de enfoque ( `&op_USM`): la máscara de enfoque es un filtro de enfoque estándar del sector. Lo mejor es enfocar imágenes con máscaras de enfoque siguiendo las directrices que se describen a continuación. La máscara de enfoque permite controlar los tres parámetros siguientes:
 
    * `&op_sharpen=`cantidad,radio,umbral
 
       * **[!UICONTROL cantidad]** (0-5, intensidad del efecto).
-      * **[!UICONTROL radio]** (0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles).
+      * **[!UICONTROL radius]** (0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles).
 
          Tenga en cuenta que el radio y la cantidad de parámetros funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. Radio permite un control más preciso, ya que un valor inferior enfoca solo los píxeles del borde, mientras que un valor superior enfoca una banda más ancha de píxeles.
 
       * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto).
 
-         Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
+         Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL threshold]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
       Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
 
       AEM tema de ayuda sobre cómo enfocar una imagen.
@@ -84,24 +84,24 @@ Deje la configuración del parámetro monocromo en 0.
 ### Prácticas recomendadas para la compresión JPEF (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Este parámetro controla la calidad de codificación JPG. Un valor mayor significa una imagen de mayor calidad pero un tamaño de archivo grande; de forma alternativa, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El intervalo para este parámetro es 0-100.
-* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 ó 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen sean demasiado grandes, establezca el valor `qlt= value` en 90 o 95.
-* Para optimizar un tamaño de archivo de imagen pequeño pero mantener la calidad de imagen en un nivel aceptable, defina el valor `qlt= value` en 80. Los valores por debajo de 70 a 75 degradan significativamente la calidad de imagen.
-* Como práctica recomendada, para quedarse en el medio, `qlt= value` a 85 para quedarse en el medio.
+* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 ó 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen sean demasiado grandes, establezca `qlt= value` en 90 o 95.
+* Para optimizar un tamaño de archivo de imagen pequeño pero mantener la calidad de imagen en un nivel aceptable, establezca `qlt= value` en 80. Los valores por debajo de 70 a 75 degradan significativamente la calidad de imagen.
+* Como práctica recomendada, para permanecer en el medio, establezca `qlt= value` en 85 para permanecer en el medio.
 * Uso del indicador de croma en `qlt=`
 
-   * El `qlt=` parámetro tiene un segundo ajuste que le permite activar la disminución de resolución de cromaticidad RGB utilizando el valor `,1` o desactivando mediante el valor `,0`.
-   * Para que sea sencillo, el inicio con disminución de resolución de cromaticidad RGB se desactiva (`,0`). Este ajuste suele dar como resultado una mejor calidad de imagen, especialmente para imágenes sintéticas con muchos bordes nítidos y contraste.
+   * El parámetro `qlt=` tiene un segundo ajuste que le permite activar la disminución de resolución de cromaticidad RGB utilizando el valor `,1` o desactivarla utilizando el valor `,0`.
+   * Para que sea sencillo, el inicio con disminución de resolución de cromaticidad RGB está desactivado (`,0`). Este ajuste suele dar como resultado una mejor calidad de imagen, especialmente para imágenes sintéticas con muchos bordes nítidos y contraste.
 
-Como práctica recomendada para el uso de compresión JPG `&qlt=85,0`.
+Como práctica recomendada para la compresión JPG, utilice `&qlt=85,0`.
 
 ## Prácticas recomendadas para el tamaño JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para el envío a dispositivos con memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para el envío de imágenes.
-* `&jpegSize=` interactúa con el parámetro de compresión JPG `&qlt=`. Si la respuesta JPG con el parámetro de compresión JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con la `&qlt=` definición definida. De lo contrario, `&qlt=` se reduce gradualmente hasta que la imagen se ajuste al tamaño máximo permitido o hasta que el sistema determine que no cabe y devuelva un error.
+* `&jpegSize=` interactúa con el parámetro de compresión JPG  `&qlt=`. Si la respuesta JPG con el parámetro de compresión JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` tal como está definida. De lo contrario, `&qlt=` se reduce gradualmente hasta que la imagen se ajuste al tamaño máximo permitido o hasta que el sistema determine que no cabe y devuelva un error.
 
-Como práctica recomendada, establezca `&jpegSize=` y agregue el parámetro `&qlt=` si va a enviar imágenes JPG a dispositivos con memoria limitada.
+Como práctica recomendada, configure `&jpegSize=` y agregue el parámetro `&qlt=` si está enviando imágenes JPG a dispositivos con memoria limitada.
 
 ## Resumen de prácticas recomendadas {#best-practices-summary}
 
@@ -119,5 +119,5 @@ A medida que experimenta, también puede encontrar las siguientes sugerencias ge
 
 * Pruebe distintos parámetros en tiempo real, ya sea directamente en una URL o mediante la funcionalidad de ajuste de imagen de Scene7 Publishing System, que proporciona previsualizaciones en tiempo real para las operaciones de ajuste.
 * Como práctica recomendada, recuerde que puede agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
-* AEM también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que esta opción puede ser una opción para perfeccionar y optimizar aún más los resultados del procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
+* AEM también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que esta opción puede ser una opción para optimizar y perfeccionar aún más los resultados de procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
 
