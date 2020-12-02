@@ -3,9 +3,9 @@ title: Procesar recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Visión general de la ingestión y el procesamiento de activos con microservicios de activos {#asset-microservices-overview}
 
-Adobe Experience Manager como Cloud Service proporciona un método nativo de la nube para aprovechar las aplicaciones y capacidades de los Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos. Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios en la nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los beneficios clave de los microservicios de recursos nativos de la nube son:
+Adobe Experience Manager como [!DNL Cloud Service] proporciona un método nativo de la nube para aprovechar las aplicaciones y capacidades Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos. Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios en la nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los beneficios clave de los microservicios de recursos nativos de la nube son:
 
 * Arquitectura escalable que permite un procesamiento sin problemas para operaciones con gran cantidad de recursos.
 * Extracciones de texto e indexación eficaces que no afectan al rendimiento de los entornos de Experience Manager.
