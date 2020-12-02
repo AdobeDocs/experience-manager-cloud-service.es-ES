@@ -12,13 +12,13 @@ ht-degree: 1%
 
 # Explicar notificaciones {#notifications}
 
-[!UICONTROL Cloud Manager] permite al usuario recibir notificaciones cuando la canalización de producción se inicio y se completa (con éxito o sin éxito), en el inicio de una implementación de producción. Estas notificaciones se envían a través del sistema de notificaciones de [!UICONTROL Experience Cloud] de Adobe.
+[!UICONTROL Cloud ] Manager permite al usuario recibir notificaciones cuando la canalización de producción se inicio y se completa (con éxito o sin éxito), en el inicio de una implementación de producción. Estas notificaciones se envían a través del sistema de notificaciones Adobe [!UICONTROL Experience Cloud].
 
 >[!NOTE]
 >
 >Las notificaciones programadas y de aprobación solo se envían a los usuarios en las funciones Propietario de la empresa, Administrador de Programas y Administrador de implementación.
 
-Las notificaciones aparecen en una barra lateral en la interfaz de usuario del Administrador [!UICONTROL de] nube (interfaz de usuario) y en todo el [!UICONTROL Experience Cloud]de Adobe.
+Las notificaciones aparecen en una barra lateral en la [!UICONTROL interfaz de usuario de Cloud Manager] (interfaz de usuario) y en todo el Adobe [!UICONTROL Experience Cloud].
 ![](assets/notify-1.png)
 
 Haga clic en el icono de campana del encabezado para abrir la barra lateral y vista las notificaciones, como se muestra en la figura siguiente:
@@ -30,11 +30,11 @@ La barra lateral lista las notificaciones más recientes.
 
 ## Notificaciones de correo electrónico {#email-notifications}
 
-De forma predeterminada, las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL Experience Cloud] . Los usuarios individuales también pueden optar por que estas notificaciones se envíen por correo electrónico, ya sea de forma inmediata o mediante compendio.
+De forma predeterminada, las notificaciones están disponibles en la interfaz de usuario web en todas las soluciones de Adobe [!UICONTROL Experience Cloud]. Los usuarios individuales también pueden optar por que estas notificaciones se envíen por correo electrónico, ya sea de forma inmediata o mediante compendio.
 
-Esto llevará al usuario a la pantalla Preferencias de notificaciones en el [!UICONTROL Experience Cloud]de Adobe.
+Esto llevará al usuario a la pantalla Preferencias de notificaciones en el Adobe [!UICONTROL Experience Cloud].
 
 Los usuarios pueden activar las notificaciones por correo electrónico y (opcionalmente) seleccionar los tipos de notificaciones que desean recibir por correo electrónico.
 
 >[!NOTE]
->También puede activar el compendio desde el [!UICONTROL Experience Cloud]de Adobe.
+>También puede habilitar el compendio desde el Adobe [!UICONTROL Experience Cloud].
