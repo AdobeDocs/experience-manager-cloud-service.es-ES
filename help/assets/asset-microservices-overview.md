@@ -21,7 +21,7 @@ Adobe Experience Manager como Cloud Service proporciona un método nativo de la 
 * Se ha mejorado la resiliencia del procesamiento de recursos. Los posibles problemas al gestionar archivos atípicos, como archivos dañados o archivos extremadamente grandes, ya no afectan al rendimiento de la implementación.
 * Configuración simplificada del procesamiento de recursos para los administradores.
 * Adobe administra y mantiene la configuración de procesamiento de recursos para proporcionar la configuración más conocida para el manejo de representaciones, metadatos y extracción de texto para diversos tipos de archivos
-* Los servicios nativos de procesamiento de archivos Adobe se utilizan cuando corresponde, proporcionando una salida de alta fidelidad y una gestión [eficiente de los formatos](file-format-support.md)propietarios de Adobe.
+* Los servicios nativos de procesamiento de archivos Adobe se utilizan cuando corresponde, proporcionando una salida de alta fidelidad y [administración eficiente de los formatos propietarios de Adobe](file-format-support.md).
 * Capacidad de configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
 
 Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la transcodificación de ImageMagick y FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan una funcionalidad lista para usar para tipos de archivos comunes.
@@ -35,7 +35,7 @@ Un diagrama de arquitectura de alto nivel muestra los elementos clave de la inge
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Ingesta y procesamiento de activos con](assets/asset-microservices-overview.png "microservicios de activosToma y procesamiento de activos con microservicios de activos")
+![Ingesta y procesamiento de activos con ](assets/asset-microservices-overview.png "microservicios de activosToma y procesamiento de activos con microservicios de activos")
 
 Los pasos clave de la ingestión y el procesamiento mediante microservicios de activos son:
 
@@ -62,9 +62,9 @@ Puede utilizar herramientas de carga personalizadas, que funcionan directamente 
 * [Biblioteca de carga de código abierto](https://github.com/adobe/aem-upload)
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
 
-Para obtener más información, consulte [Carga de recursos](add-assets.md).
+Para obtener más información, consulte [carga de recursos](add-assets.md).
 
-## Añadir postprocesamiento de recursos personalizados {#add-custom-asset-post-processing}
+## Añadir posprocesamiento de recursos personalizados {#add-custom-asset-post-processing}
 
 Aunque la mayoría de los clientes deben obtener todos sus requisitos de procesamiento de recursos de los microservicios de recursos configurables, algunos podrían necesitar un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en base a la información proveniente de otros sistemas a través de integraciones. En casos como este, se pueden utilizar flujos de trabajo de postprocesamiento personalizados.
 
