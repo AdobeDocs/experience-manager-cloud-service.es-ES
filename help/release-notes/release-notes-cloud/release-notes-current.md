@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8ee5f7c0c5690dd21291261e5e2ad01599c0c174
+source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1234'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ La siguiente versión (2020.12.0) será el 17 de diciembre de 2020
 
 ### Novedades en [!DNL Assets] y [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Ingesta** masiva de recursos: Brinde a los clientes un servicio de ingestión escalable y nativo de la nube que aprovecha  [!DNL Experience Manager] como arquitectura Cloud Service, incluidos los microservicios de recursos. Entre los casos de uso clave se incluyen la ingestión a escala con supervisión, sistema de informes y programación, mientras que se permite la transferencia inicial de recursos a almacenes de datos en la nube mediante herramientas comunes de carga en la nube. Consulte [herramienta de importación masiva](/help/assets/add-assets.md#bulk-ingestion-tool).
+* **Ingesta** masiva de recursos: Brinde a los clientes un servicio de ingestión escalable y nativo de la nube que aprovecha  [!DNL Experience Manager] como arquitectura Cloud Service, incluidos los microservicios de recursos. Entre los casos de uso clave se incluyen la ingestión a escala con supervisión, sistema de informes y programación, mientras que se permite la transferencia inicial de recursos a almacenes de datos en la nube mediante herramientas comunes de carga en la nube. Consulte [herramienta de ingestor masivo de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 Esta herramienta está destinada a administradores del sistema, consultores o asociados de implementación. Esta función permite la ingestión a gran escala y se utiliza de forma ideal durante la ingestión inicial o durante la ingestión ocasional de gran tamaño. Para trabajos de ingestión más pequeños, utilice la [[!DNL Experience Manager] carga de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=en) o [mediante la interfaz de usuario de Assets](/help/assets/add-assets.md#upload-assets).
 
    ![Configuración del importador a granel](/help/assets/assets/bulk-import-config-low-res.png)
