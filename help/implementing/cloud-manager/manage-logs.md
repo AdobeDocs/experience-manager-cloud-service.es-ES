@@ -14,11 +14,11 @@ ht-degree: 22%
 
 Los usuarios pueden acceder a una lista de los archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de Entorno.  Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
 
-Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general** :
+Estos archivos se pueden descargar a través de la interfaz de usuario, ya sea desde la página **Información general**:
 
 ![](assets/download-logs1.png)
 
-O bien, la página **Entornos** :
+O bien, la página **Entornos**:
 
 ![](assets/download-logs.png)
 
@@ -28,7 +28,7 @@ O bien, la página **Entornos** :
 ![](assets/download-logs2.png)
 
 
-## Registros a través de API {#logs-through-api}
+## Registros mediante API {#logs-through-api}
 
 Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
 
