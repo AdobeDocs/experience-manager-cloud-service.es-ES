@@ -64,4 +64,4 @@ Con el almacenamiento en caché basado en TTL, un desarrollador suele definir un
 
 - [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuración de almacenamiento en caché de GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [Dispatcher de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
+- [Dispatcher de AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
