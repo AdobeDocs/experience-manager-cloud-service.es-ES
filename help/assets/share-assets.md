@@ -3,9 +3,9 @@ title: Compartir recursos, carpetas y colecciones como vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de Recursos Experience Manager como un hipervínculo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Compartir y distribuir recursos administrados en Experience Manager {#share-assets-from-aem}
 
-Recursos Adobe Experience Manager (AEM) permite compartir recursos, carpetas y colecciones con miembros de la organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de Recursos Experience Manager como Cloud Service:
+Recursos Adobe Experience Manager (AEM) permite compartir recursos, carpetas y colecciones con miembros de la organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de Recursos Experience Manager como [!DNL Cloud Service]:
 
 * Compartir como vínculo.
 * Descargue recursos y compártalos por separado.
@@ -187,6 +187,5 @@ Consulte [cómo configurar AEM para usar con Adobe Asset Link](https://helpx.ado
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
