@@ -270,7 +270,7 @@ Hay dos métodos para añadir y/o editar contenido en los componentes:
 * Abra el [cuadro de diálogo del componente para editarlo](#component-edit-dialog).
 * [Arrastre y coloque un recurso](#drag-and-drop-assets-into-component) desde el navegador de recursos para agregar contenido directamente.
 
-### Cuadro de diálogo de edición de contenido   {#component-edit-dialog}
+### Cuadro de diálogo de edición de contenido    {#component-edit-dialog}
 
 Puede abrir un componente para editar su contenido mediante el icono de [edición (lápiz) de la barra de herramientas de componentes](#component-toolbar).
 
@@ -394,7 +394,7 @@ Puede cambiar fácilmente al [editor de plantillas](/help/sites-cloud/authoring/
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) o en la [vista Lista](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## Estado de Live Copy   {#live-copy-status}
+## Estado de Live Copy    {#live-copy-status}
 
 El [modo de la página de estado de Live Copy](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) le permite echar un vistazo al estado de la Live Copy y ver los componentes que se han heredado o no:
 
@@ -409,7 +409,7 @@ Por ejemplo:
 
 [Las anotaciones](/help/sites-cloud/authoring/fundamentals/annotations.md) permiten que los revisores y otros autores hagan comentarios sobre el contenido. A menudo se utilizan para revisiones y validaciones.
 
-## Previsualizar páginas   {#previewing-pages}
+## Previsualizar páginas    {#previewing-pages}
 
 Existen dos métodos para visualizar la vista previa de una página:
 
@@ -443,7 +443,7 @@ Al crear proyectos, el modo de vista previa está disponible mediante el icono s
 
 La opción **Ver tal y como aparece publicado** se muestra disponible en el menú [Información de página](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). Esta opción abre la página en una nueva pestaña, actualiza el contenido y muestra la página exactamente como aparecerá en el entorno de publicación.
 
-## Bloquear una página   {#locking-a-page}
+## Bloquear una página    {#locking-a-page}
 
 AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esta función es útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página durante un rato.
 
