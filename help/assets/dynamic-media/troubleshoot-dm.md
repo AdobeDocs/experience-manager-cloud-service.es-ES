@@ -22,20 +22,20 @@ Consulte [Solución de problemas de una nueva configuración de Dynamic Media.](
 
 Los siguientes son algunos trucos y sugerencias generales para todos los recursos.
 
-### Propiedades del estado de sincronización de recursos {#asset-synchronization-status-properties}
+### Propiedades de estado de sincronización de recursos {#asset-synchronization-status-properties}
 
 Las siguientes propiedades de recurso se pueden revisar en CRXDE Lite para confirmar la sincronización correcta del recurso de AEM a Dynamic Media:
 
 | **Propiedad** | **Ejemplo** | **Descripción** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicador general de que el nodo está vinculado a Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** o texto de error | Estado de la carga de recursos a Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **** PublicarCompletar o texto de error | Estado de la carga de recursos a Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Debe rellenarse para poder generar direcciones URL en un recurso remoto de Dynamic Media. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **success** o **failed:`<error text>`** | Estado de sincronización de conjuntos (conjuntos de giros, conjuntos de imágenes, etc.), ajustes preestablecidos de imagen, ajustes preestablecidos de visor, actualizaciones de mapas de imagen para un recurso o imágenes editadas. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **** sucesor  **fallido:`<error text>`** | Estado de sincronización de conjuntos (conjuntos de giros, conjuntos de imágenes, etc.), ajustes preestablecidos de imagen, ajustes preestablecidos de visor, actualizaciones de mapas de imagen para un recurso o imágenes editadas. |
 
 ### Registro de sincronización {#synchronization-logging}
 
-Los errores y problemas de sincronización se registran `error.log` (AEM directorio de servidor `/crx-quickstart/logs/`). Hay suficiente registro para determinar la causa raíz de la mayoría de los problemas, pero puede aumentar el registro en DEBUG en el `com.adobe.cq.dam.ips` paquete a través de la consola de Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para recopilar más información.
+Los errores y problemas de sincronización se registran en `error.log` (directorio de servidor AEM `/crx-quickstart/logs/`). Hay suficiente registro para determinar la causa raíz de la mayoría de los problemas, pero puede aumentar el registro en DEBUG en el paquete `com.adobe.cq.dam.ips` a través de la Consola de Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para recopilar más información.
 
 ### Control de versión {#version-control}
 
@@ -62,8 +62,8 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
     <ol>
      <li><p>Vaya a CRX/DE:</p>
       <ul>
-       <li>Compruebe si el ajuste preestablecido del JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> está definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado de AEM 6.x a 6.4 y ha exclusión la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
-       <li>Asegúrese de que el recurso del JCR está <code>dam:scene7FileStatus</code><strong> en la sección Metadatos se muestra como </strong><code>PublishComplete</code>.</li>
+       <li>Compruebe si el ajuste preestablecido en el JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado de AEM 6.x a 6.4 y ha exclusión la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Compruebe que el recurso del JCR tenga <code>dam:scene7FileStatus</code><strong> </strong>en Metadatos se muestra como <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
    <td><p>Actualice la página/navegue a otra página y regrese (es necesario volver a compilar JSP del carril lateral)</p> <p>Si eso no funciona:</p>
@@ -88,14 +88,14 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
    <td><p>Compruebe que todos los recursos han terminado de procesarse.</p> </td>
   </tr>
   <tr>
-   <td>La vista de pancarta muestra <strong>Nuevo</strong> cuando el recurso no ha comenzado a procesarse</td>
-   <td>Marque el recurso <code>jcr:content</code> &gt; <code>dam:assetState</code> = si el flujo de trabajo no <code>unprocessed</code> lo recogió.</td>
+   <td>La vista de pancarta de la tarjeta muestra <strong>Nuevo</strong> cuando el recurso no ha comenzado a procesarse</td>
+   <td>Compruebe que el recurso <code>jcr:content</code> &gt; <code>dam:assetState</code> = si <code>unprocessed</code> no lo recogió el flujo de trabajo.</td>
    <td>Espere hasta que el flujo de trabajo recoja el recurso.</td>
   </tr>
   <tr>
    <td>Las imágenes o los conjuntos no muestran la dirección URL del visor ni el código incrustado</td>
    <td>Compruebe si se ha publicado el ajuste preestablecido de visor.</td>
-   <td><p>Vaya a <strong>Herramientas</strong> &gt; <strong>Recursos</strong> &gt; Ajustes preestablecidos <strong></strong> de visor y publique el ajuste preestablecido de visor.</p> </td>
+   <td><p>Vaya a <strong>Herramientas</strong> &gt; <strong>Recursos</strong> &gt; <strong>Ajustes preestablecidos de visor</strong> y publique el ajuste preestablecido de visor.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -117,7 +117,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
     <ul>
      <li>Compruebe que la carpeta tiene un perfil de vídeo asignado a ella (si el formato de archivo no es compatible). Si no se admite, solo se muestra una imagen.</li>
      <li>El perfil de vídeo debe contener más de un ajuste preestablecido de codificación para generar un conjunto AVS (las codificaciones únicas se tratan como contenido de vídeo para archivos MP4; para los archivos no admitidos, se trata igual que los archivos no procesados).</li>
-     <li>Compruebe que el vídeo ha terminado de procesarse confirmando <code>dam:scene7FileAvs</code> de <code>dam:scene7File</code> los metadatos.</li>
+     <li>Compruebe que el vídeo ha terminado de procesarse confirmando <code>dam:scene7FileAvs</code> de <code>dam:scene7File</code> en los metadatos.</li>
     </ul> </td>
    <td>
     <ol>
@@ -145,7 +145,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
    <td>El procesamiento de vídeo tarda demasiado</td>
    <td><p>Para determinar si la codificación de vídeo sigue en curso o si ha entrado en un estado de error:</p>
     <ul>
-     <li>Compruebe el estado del vídeo <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
+     <li>Compruebe el estado del video <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -154,7 +154,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
    <td><p>Cuando se carga el vídeo, pero no hay representaciones codificadas:</p>
     <ul>
      <li>Compruebe que la carpeta tiene un perfil de vídeo asignado.</li>
-     <li>Compruebe que el vídeo ha terminado de procesarse confirmando <code>dam:scene7FileAvs</code> los metadatos.</li>
+     <li>Compruebe que el vídeo ha terminado de procesarse confirmando <code>dam:scene7FileAvs</code> en los metadatos.</li>
     </ul> </td>
    <td>
     <ol>
@@ -179,11 +179,11 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
   <tr>
    <td>Los ajustes preestablecidos de visor no se publican</td>
    <td><p>Vaya a la página de diagnóstico del administrador de muestra: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe los valores calculados. Cuando funcione correctamente, debería ver:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos desactivados permanecen, haga clic en cualquiera de los botones de <strong>Lista de todos los recursos</strong> no activados para ver los detalles.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos inactivados permanecen, haga clic en cualquiera de los botones <strong>Lista de todos los recursos inactivados</strong> para ver los detalles.</p> </td>
    <td>
     <ol>
      <li>Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleccione todos los ajustes preestablecidos de visor y, a continuación, haga clic en <strong>Publicar</strong>.</li>
+     <li>Seleccione todos los ajustes preestablecidos de visor y haga clic en <strong>Publicar</strong>.</li>
      <li>Vuelva al administrador de muestra y observe que el recuento de recursos no activado es ahora cero.</li>
     </ol> </td>
   </tr>
@@ -191,9 +191,9 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
    <td>La ilustración de Ajustes preestablecidos de visor devuelve 404 desde la previsualización en los detalles del recurso o desde la URL de copia o el código incrustado</td>
    <td><p>En CRXDE Lite, haga lo siguiente:</p>
     <ol>
-     <li>Vaya a <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> la carpeta de sincronización de Dynamic Media (por ejemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
+     <li>Vaya a la carpeta <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> dentro de la carpeta de sincronización de Dynamic Media (por ejemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Busque el nodo de metadatos del recurso problemático (por ejemplo, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Compruebe la presencia de <code>dam:scene7*</code> propiedades. Si el recurso se ha sincronizado y publicado correctamente, verá que el <code>dam:scene7FileStatus</code> conjunto es <strong>PublishComplete</strong>.</li>
+     <li>Compruebe la presencia de propiedades <code>dam:scene7*</code>. Si el recurso se sincronizó y publicó correctamente, verá que el <code>dam:scene7FileStatus</code> conjunto es <strong>PublishComplete</strong>.</li>
      <li>Intente solicitar la ilustración directamente desde Dynamic Media concatenando los valores de las siguientes propiedades y literales de cadena
       <ul>
        <li><code>dam:scene7Domain</code></li>
@@ -210,7 +210,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
      <li>Seleccione las siguientes acciones en orden:
       <ol>
        <li>Eliminar carpetas de sincronización.</li>
-       <li>Eliminar carpeta de ajustes preestablecidos (debajo <code>/conf</code>).
+       <li>Eliminar carpeta de ajustes preestablecidos (debajo de <code>/conf</code>).
        <li>Activar el trabajo asincrónico de la configuración de DM.</li>
       </ol> </li>
      <li>Espere a que se notifique la sincronización correcta en la Bandeja de entrada de AEM.
