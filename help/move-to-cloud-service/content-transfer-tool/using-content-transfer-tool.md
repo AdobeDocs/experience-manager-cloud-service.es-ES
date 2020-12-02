@@ -18,32 +18,32 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3+ y JAVA 8. Si dispone de una versión anterior de AEM, deberá actualizar el repositorio de contenido a AEM 6.5 para usar la herramienta de transferencia de contenido.
 
-* Java debe configurarse en el entorno de AEM para que el `java` comando pueda ser ejecutado por el usuario que AEM inicio.
+* Java debe configurarse en el entorno de AEM para que el comando `java` pueda ser ejecutado por el usuario que AEM inicio.
 
 * La herramienta de transferencia de contenido se puede utilizar con los siguientes tipos de almacén de datos: Almacén de datos de archivos, almacén de datos S3, almacén de datos compartido S3 y almacén de datos del almacén de blob de Azure.
 
-* Si está utilizando un Entorno *de* Simulador para pruebas, asegúrese de que el entorno está actualizado y se ha actualizado a la versión más reciente. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
+* Si utiliza un *Entorno de Simulador para pruebas*, asegúrese de que el entorno esté actualizado y de que se actualice a la última versión. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
 
 * Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en la instancia de origen y pertenecer al grupo de administradores de AEM locales en la instancia de Cloud Service a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
 
 * Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
 
-* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El proceso de *Extracción* copia todo `/home` el conjunto de migración y el proceso de *introducción* copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migrado.
+* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El proceso *Extracción* copia todo el `/home` en el conjunto de migración y el proceso *Ingestion* copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migrado.
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* Después de completar la fase de *Extracción* del proceso de transferencia de contenido y antes de iniciar la fase *de* ingesta de contenido en su AEM como *etapa* de Cloud Service o instancias de *producción* , deberá registrar una entrada de soporte para notificar al Adobe su intención de ejecutar la *ingestión* ** de modo que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso de ingestiónde documentos. Tendrá que registrar el ticket de asistencia 1 semana antes de la fecha prevista de *ingestión* . Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
+* Después de completar la fase *Extracción* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingestión* para ingerir contenido en su AEM como Cloud Service *Fase* o *Producción*, deberá registrar un ticket de soporte para notificar al Adobe su intención de ejecutar *Ingestion&lt;a79/> para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso* Ingestión *.* Tendrá que registrar el ticket de soporte una semana antes de la fecha planificada *de ingestión*. Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
    * Registre un ticket de asistencia técnica con los siguientes detalles:
-      * Fecha exacta y hora estimada (con su huso horario) cuando planea realizar el inicio de la fase de *ingestión* .
+      * Fecha exacta y hora estimada (con su huso horario) cuando planea realizar el inicio de la fase *de ingestión*.
       * Tipo de entorno (fase o producción) en el que se van a ingestar datos.
       * ID de programa.
 
-* La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción. Asegúrese también de que no se ejecuten tuberías del Administrador de nube mientras está ejecutando la fase de *ingesta* .
+* La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción. Asegúrese también de que no se ejecuten las canalizaciones del Administrador de nubes mientras está ejecutando la fase *de ingestión*.
 
 
 ## Disponibilidad {#availability}
 
-La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)de la versión.
+La herramienta de transferencia de contenido se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM). Asegúrese de descargar la versión más reciente. Para obtener más información sobre la versión más reciente, consulte [Notas de la versión](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
 >[!NOTE]
 >Descargue Content Transfer Tool desde el portal de [distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html).
@@ -84,7 +84,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Token de acceso**: introduzca el token de acceso.
 
       >[!NOTE]
-      >Puede recuperar el token de acceso mediante el botón **Abrir token de acceso** . Debe asegurarse de pertenecer al grupo de administradores de AEM en la instancia de destinatario Cloud Service.
+      >Puede recuperar el token de acceso mediante el botón **Abrir token de acceso**. Debe asegurarse de pertenecer al grupo de administradores de AEM en la instancia de destinatario Cloud Service.
 
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
@@ -120,7 +120,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
 Siga los pasos a continuación para extraer el conjunto de migración de la herramienta de transferencia de contenido:
 
-1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Extracción** para empezar la extracción. The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
+1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Extracción** para empezar la extracción. Aparece el cuadro de diálogo **extracción del conjunto de migración** y haga clic en **Extraer** para inicio de la fase de extracción.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
@@ -161,11 +161,11 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
 
-1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para empezar la extracción. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Click on **Ingest** to start the ingestion phase. Para fines de demostración, se desactiva la opción **Ingesta de contenido de Autor** . Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
+1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para empezar la extracción. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para inicio de la fase de ingestión. Para fines de demostración, se desactiva la opción **Ingesta de contenido de Autor** . Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. Una vez finalizada la ingestión, el estado del campo **PUBLISH INGESTION** se actualiza a **FINISHED**.
+1. Una vez finalizada la ingestión, el estado en el campo **PUBLISH INGESTION** se actualiza a **FINISHED**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -183,7 +183,7 @@ Una vez completado el proceso de ingesta, se puede usar el contenido delta media
 
    >[!IMPORTANT]
    >
-   >Debe desactivar la opción **Borrar contenido existente en la instancia de Cloud antes de la ingestión** , para evitar que se elimine el contenido existente de la actividad de ingestión anterior.
+   >Debe desactivar la opción **Borrar el contenido existente en la instancia de Cloud antes de la ingestión**, para evitar que se elimine el contenido existente de la actividad de ingestión anterior.
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
