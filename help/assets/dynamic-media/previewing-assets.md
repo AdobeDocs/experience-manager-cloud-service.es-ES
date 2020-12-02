@@ -10,7 +10,7 @@ ht-degree: 3%
 ---
 
 
-# Previewing assets{#previewing-assets}
+# Vista previa de recursos{#previewing-assets}
 
 Puede utilizar la Previsualización para ver el aspecto que tendrá un recurso digital cargado cuando lo vea un cliente en su propio explorador web. El visor predeterminado incrustado entre dispositivos que se asigna al recurso se utiliza para la Previsualización.
 
@@ -23,16 +23,16 @@ Además de utilizar la función de Previsualización dedicada para vídeo, conju
 
 >[!NOTE]
 >
->Cuando se encuentra en una página web (Sites) en AEM, no puede obtener una vista previa de los recursos en el modo de **edición**. You need to go to **Preview** mode by clicking **Preview** in the upper right-hand corner of the page.
+>Cuando se encuentra en una página web (Sites) en AEM, no puede obtener una vista previa de los recursos en el modo de **edición**. Debe ir al modo **Previsualización** haciendo clic en **Previsualización** en la esquina superior derecha de la página.
 
-Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usuario, consulte [Gestión de ajustes preestablecidos](/help/assets/dynamic-media/managing-viewer-presets.md)de visor.
+Para habilitar o deshabilitar los ajustes preestablecidos de visor en la interfaz de usuario, consulte [Administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 **Para previsualización de recursos**
 
-1. From **[!UICONTROL Adobe Experience Manager]**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]**, then **[!UICONTROL Files]** to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
-1. (Opcional) Utilice la columna **[!UICONTROL Tipo]** para ordenar los recursos según el tipo de previsualización.
-1. En la columna **[!UICONTROL Título]** , haga clic en el nombre del título (no en la imagen en miniatura) del recurso que desea previsualización.
+1. Desde **[!UICONTROL Adobe Experience Manager]**, en la página **[!UICONTROL Navegación]**, toque **[!UICONTROL Recursos]** y luego **[!UICONTROL Archivos]** para acceder a los recursos.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Vista]**, toque **[!UICONTROL Vista de Lista]**.
+1. (Opcional) Utilice la columna **[!UICONTROL Tipo]** para ordenar los recursos según el tipo que desee previsualización.
+1. En la columna **[!UICONTROL Título]**, haga clic en el nombre del título (no en la imagen en miniatura) del recurso que desea previsualización.
 1. Según el tipo de recurso en el que haya hecho clic, realice una de las siguientes acciones:
 
    <table>
@@ -54,10 +54,10 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
       </ul>
       <p><strong>Navegación por la escena 3D</strong></p>
       <ul>
-      <li><p><strong>Gire la cámara</strong> 3D: ordene la vista alrededor de la escena y los objetos 3D.</p> Ratón: Haga clic en + Arrastrar. </p> Pantalla táctil: Pulse + Arrastrar.</p></li>
+      <li><p><strong>Gire su cámara</strong>  3D: ordene su vista alrededor de la escena y los objetos 3D.</p> Ratón: Haga clic en + Arrastrar. </p> Pantalla táctil: Pulse + Arrastrar.</p></li>
       <li><p><strong>Recorra la cámara</strong> : deslice la vista hacia la izquierda, hacia la derecha, hacia arriba y hacia abajo.</p> Ratón: Haga clic con el botón derecho y arrastre. </p> Pantalla táctil: Pulse dos dedos y arrastre.</p></li>
       <li><p><strong>Zoom en la cámara</strong> : haga zoom en la cámara para entrar y salir de las áreas de la escena 3D.</p> Ratón: Rueda de desplazamiento. </p> Pantalla táctil: Pellizque el dedo.</p></li>
-      <li><p><strong>Volver a introducir la cámara</strong> : ordene la vista alrededor de la escena y los objetos 3D.</p> Ratón: Haga clic con el doble. </p> Pantalla táctil: Toque el doble.</li></ul></td>
+      <li><p><strong>Vuelva a introducir la cámara</strong> : ordene la vista alrededor de la escena y los objetos 3D.</p> Ratón: Haga clic con el doble. </p> Pantalla táctil: Toque el doble.</li></ul></td>
       </tr>
       <tr>
       <td><p>Imagen</p> </td>
@@ -69,7 +69,7 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
         </ul> <p><strong>Previsualización de recursos en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Haga clic en <strong>Visores</strong> en la lista y, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice los <strong>+</strong> y <strong>- </strong>iconos para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Multimedia</td>
@@ -90,7 +90,7 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
       <td><p><strong>Previsualización de un recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Haga clic en <strong>Visores</strong> en la lista y, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice los <strong>+</strong> y <strong>- </strong>iconos para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de giros</td>
@@ -99,7 +99,7 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
       <td><p><strong>Previsualización de un recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Haga clic en <strong>Visores</strong> en la lista y, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice los <strong>+</strong> y <strong>- </strong>iconos para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de medios mixtos</td>
@@ -108,7 +108,7 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
       <td><p><strong>Previsualización de un recurso en un visor concreto</strong></p>
         <ul>
         <li>Cerca de la esquina superior izquierda de la página, haga clic en el icono para que aparezca la lista desplegable. Haga clic en <strong>Visores</strong> en la lista y, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice los <strong>+</strong> y <strong>- </strong>iconos para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de carruseles</td>
@@ -125,11 +125,11 @@ Para activar o desactivar ajustes preestablecidos de visor en la interfaz de usu
       <td>Sí</td>
       <td><p><strong>Previsualización de recursos en una representación concreta</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, toque el icono para que aparezca la lista desplegable. Seleccione <strong>Representaciones</strong>y, a continuación, seleccione la representación que desea previsualización.</li>
+        <li>Cerca de la esquina superior izquierda de la página, toque el icono para que aparezca la lista desplegable. Seleccione <strong>Representaciones</strong> y, a continuación, seleccione la representación que desee previsualización.</li>
         </ul> <p><strong>Previsualización de recursos en un visor concreto</strong></p>
         <ul>
-        <li>Cerca de la esquina superior izquierda de la página, toque el icono para que aparezca la lista desplegable. Seleccione <strong>Visores</strong>y, a continuación, seleccione un visor que desee aplicar al recurso.</li>
-        </ul> <p>Utilice los <strong>+</strong> y <strong>- </strong>iconos para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
+        <li>Cerca de la esquina superior izquierda de la página, toque el icono para que aparezca la lista desplegable. Seleccione <strong>Visores</strong> y, a continuación, seleccione un visor que desee aplicar al recurso.</li>
+        </ul> <p>Utilice los iconos <strong>+</strong> y <strong>- </strong>para aumentar o reducir el zoom de la imagen seleccionada, respectivamente. Haga clic en <strong>Restablecer</strong> para devolver la imagen al zoom original.<br /> Si está en una pantalla táctil, toque con el doble la imagen para acercarla mediante pasos. Cuando alcance el zoom máximo, toque con el doble la imagen de nuevo para restablecer el estado de zoom. Arrastre la imagen para desplazarse.</p> </td>
       </tr>
     </tbody>
     </table>
