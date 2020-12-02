@@ -10,7 +10,7 @@ ht-degree: 48%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.10.0 {#release-notes}
 
 Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.10.0.
 
@@ -30,8 +30,8 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.10.0 es el 
 
 * Se aumentó el número de variables de entorno por entorno a 200.
 
-* La tarjeta de Entorno de la página Información general ahora lista hasta tres entornos. Los usuarios pueden seleccionar el botón **Mostrar todo** para navegar hasta la página de resumen de Entornos y realizar la vista de una tabla con una lista completa de entornos.
-Consulte [Ver Entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
+* La tarjeta de Entorno de la página Información general ahora lista hasta tres entornos. Los usuarios pueden seleccionar el botón **Mostrar todo** para navegar a la página de resumen de Entorno y realizar la vista de una tabla con una lista completa de entornos.
+Consulte [Visualización de Entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más detalles.
 
 
 ### Corrección de errores {#bug-fixes-cloud-manager}
