@@ -230,8 +230,9 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
    >
    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar componentes** Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
-**Mostrar la opción de componentes** ocultos. En este ejemplo, hay dos componentes ocultos.
+   * **Mostrar**
+componentesSeleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
+**Mostrar** componentes ocultos, opción. En este ejemplo, hay dos componentes ocultos.
 
       ![Mostrar componentes](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
