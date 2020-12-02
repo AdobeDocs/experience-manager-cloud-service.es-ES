@@ -46,7 +46,7 @@ El primer paso en la fase de planificación es evaluar la preparación para pasa
 
 Deberá realizar una evaluación completa del código origen actual de AEM en relación con los cambios notables y las funciones en desuso para determinar el nivel de esfuerzo esperado en el viaje de transición.
 
-Puede acelerar el paso de la evaluación ejecutando el Analizador de optimizaciones en la versión AEM actual. Para obtener más información, consulte [Analizador](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)de optimizaciones.
+Puede acelerar el paso de la evaluación ejecutando el Analizador de optimizaciones en la versión AEM actual. Para obtener más información, consulte [Analizador de optimizaciones](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Si ya tiene acceso a Cloud Manager y a un entorno de servicios en la nube, se recomienda ejecutar el código actual en una canalización de calidad de código de Cloud Manager para evaluar los cambios de código necesarios y que sean compatibles con Cloud Service.
