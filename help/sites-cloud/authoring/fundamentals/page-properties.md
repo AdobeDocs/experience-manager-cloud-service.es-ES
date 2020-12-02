@@ -66,17 +66,17 @@ Las propiedades se distribuyen entre varias pestañas.
 
       >[!NOTE]
       >
-      > Consulte [Tiempo de activación y Tiempo de inactividad: Configuración](/help/operations/replication.md#on-and-off-times-trigger-configuration) del activador para obtener detalles sobre cómo configurar la replicación automática relacionada.
+      > Consulte [Tiempos de activación y desactivación: configuración](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
 
-      * Si ya se ha [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) , esta página se mantendrá inactiva (oculta) hasta que se procese a la hora especificada.
+      * Si ya [se ha publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
       * Si no se publica y no se configura para la replicación automática, la página no se publicará automáticamente, por lo que se verá un 404 cuando se intente acceder a la página.
-   * Deje vacíos estos campos (**Tiempo** de activación y Tiempo de **desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
+   * Deje vacíos estos campos (**Tiempo de activación** y **Tiempo de desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
 * **Tiempo de inactividad**
 
-   * En paralelo a **Tiempo** de activación, define la hora a la que la página publicada se ocultará en el entorno de publicación.
-   * Deje vacíos estos campos (**Tiempo** de activación y Tiempo de **desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
+   * En paralelo a **Tiempo de activación** esto define la hora a la que la página publicada se ocultará en el entorno de publicación.
+   * Deje vacíos estos campos (**Tiempo de activación** y **Tiempo de desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
 * **URL de vanidad**
 
@@ -156,7 +156,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * Especificar una configuración de exportación.
 
-### Miniatura    {#thumbnail}
+### Miniatura     {#thumbnail}
 
 Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
@@ -211,7 +211,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    >[!NOTE]
    >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
 
-### Permisos    {#permissions}
+### Permisos     {#permissions}
 
 * **Permisos**
 
@@ -236,14 +236,14 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
    * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
 
-### Live Copy    {#live-copy}
+### Live Copy     {#live-copy}
 
 * **Live Copy**
 
    * Defina propiedades para una página Live Copy en un entorno de administración de varios sitios. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio    {#site-structure}
+### Estructura del sitio     {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
