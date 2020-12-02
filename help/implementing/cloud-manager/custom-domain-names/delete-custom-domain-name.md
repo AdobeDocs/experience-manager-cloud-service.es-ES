@@ -19,7 +19,7 @@ ht-degree: 0%
 
 1. Vaya a la página Configuración de dominio desde la pantalla Entornos
 1. Identifique la fila donde se muestra el nombre de dominio personalizado que desea eliminar
-1. Seleccione el **...** desde el extremo derecho de la fila
+1. Seleccione **...** desde el extremo derecho de la fila
 1. Seleccione la opción Eliminar
 1. Confirmar envío
 
@@ -28,6 +28,6 @@ ht-degree: 0%
 
 1. Desde la página Entornos, navegue a la pantalla de detalles del Entorno del entorno de interés
 1. En la tabla Nombres de dominio, identifique la fila donde se muestra el nombre de dominio personalizado que desea eliminar
-1. Seleccione el **...** desde el extremo derecho de la fila
+1. Seleccione **...** desde el extremo derecho de la fila
 1. Seleccione la opción Eliminar
 1. Confirmar envío
