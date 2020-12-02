@@ -181,7 +181,7 @@ Para editar la página:
    >
    >Para navegar mediante los vínculos en el contenido debe utilizar el [modo de vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### Editar las Propiedades de la página   {#editing-the-page-properties}
+### Editar las Propiedades de la página    {#editing-the-page-properties}
 
 Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
@@ -233,7 +233,7 @@ Existen dos métodos principales para [publicar su página](/help/sites-cloud/au
 
    Consulte [Publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) para obtener más información.
 
-### Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar y pegar o eliminar su página    {#move-copy-and-paste-or-delete-your-page}
 
 Todas estas acciones pueden activarse del siguiente modo:
 
@@ -284,7 +284,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 1. Haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando sea adecuado) poder llevar a cabo otras acciones.
 
-### Crear una versión de su página   {#creating-a-version-of-your-page}
+### Crear una versión de su página    {#creating-a-version-of-your-page}
 
 Para crear una [versión](/help/sites-cloud/authoring/features/page-versions.md) de la página:
 
