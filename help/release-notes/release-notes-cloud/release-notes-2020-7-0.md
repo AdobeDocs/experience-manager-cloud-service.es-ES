@@ -30,11 +30,11 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 * Las configuraciones ahora se almacenan en `/conf` lugar de `/etc/cloudsettings` en el repositorio de Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] como Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] como Cloud Service  {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### Novedades en [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] es un servicio escalable y ampliable para procesar activos. Administrators can configure [!DNL Experience Manager] to invoke custom applications created using the [!DNL Asset Compute Service]. Los desarrolladores pueden utilizar el servicio para crear aplicaciones personalizadas especializadas que se ocupen de casos de uso complejos. This web service can generate thumbnails for different file types, high-quality image renderings from Adobe file formats, encode videos (future), extract metadata, extract full text as precursor for indexing, and run an asset through all available [!DNL Sensei] services. see [use asset microservices and processing profiles](/help/assets/asset-microservices-configure-and-use.md).
+* [!DNL Asset Compute Service] es un servicio escalable y ampliable para procesar activos. Los administradores pueden configurar [!DNL Experience Manager] para invocar aplicaciones personalizadas creadas con [!DNL Asset Compute Service]. Los desarrolladores pueden utilizar el servicio para crear aplicaciones personalizadas especializadas que se ocupen de casos de uso complejos. Este servicio Web puede generar miniaturas para diferentes tipos de archivos, representaciones de imágenes de alta calidad a partir de formatos de archivo Adobe, codificar vídeos (futuros), extraer metadatos, extraer texto completo como precursor para la indexación y ejecutar un recurso a través de todos los servicios [!DNL Sensei] disponibles. consulte [usar microservicios de recursos y perfiles de procesamiento](/help/assets/asset-microservices-configure-and-use.md).
 
 * Se ha mejorado la configuración inicial de [!DNL Dynamic Media] en [!DNL Experience Manager] as a Cloud Service para que sea más robusta. Ahora proporciona el progreso de los procesos a los administradores.
 
@@ -44,7 +44,7 @@ Conectores de [!DNL Experience Manager] as a Cloud Service para [!DNL Adobe Targ
 
 * Los modelos de flujo de trabajo creados por clientes que son implementados `/conf/global`[!DNL Cloud Manager] en el proyecto Git asociado con el entorno en se implementan automáticamente en `/var` y, por lo tanto, están disponibles en [!DNL Experience Manager]. Los modelos de flujo de trabajo de productos en los `/libs` que el cliente cambió no se implementan automáticamente en `/var`.
 
-### Corrección de errores {#assets-bugs-fixed}
+### Errores corregidos {#assets-bugs-fixed}
 
 * El Asistente para mover recursos no se carga del modo esperado para los recursos incluidos en las colecciones. (CQ-4296756)
 * Los valores de `dam:size` y `dam:sha1` se excluyen de XMP reescritura. (CQ-4237355)
@@ -94,7 +94,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.7.0 es 9 de jul
 * Ahora se admiten repositorios privados de Maven enlazados a autenticación.
 
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
-Consulte [Uso de la compatibilidad](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) con Java 11 para obtener más detalles.
+Consulte [Uso de la compatibilidad con Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) para obtener más detalles.
 
 ### Corrección de errores {#bug-fixes-cm}
 
