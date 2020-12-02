@@ -43,7 +43,7 @@ Desde cualquiera de las consolas, en el encabezado se mostrará el número actua
 >
 >Algunas acciones también se mostrarán en la [vista de tarjeta del recurso adecuado](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Apertura de la bandeja de entrada    {#opening-the-inbox}
+## Apertura de la bandeja de entrada     {#opening-the-inbox}
 
 Para abrir la bandeja de entrada de notificaciones AEM:
 
@@ -183,7 +183,7 @@ Desde la bandeja de entrada, puede crear tareas:
 
 1. Seleccione **Enviar**.
 
-## Creación de un proyecto    {#creating-a-project}
+## Creación de un proyecto     {#creating-a-project}
 
 Para determinadas tareas, puede crear un [proyecto](/help/sites-cloud/authoring/projects/overview.md) basado en dicha tarea:
 
@@ -215,7 +215,7 @@ Para determinadas tareas, puede crear un [proyecto](/help/sites-cloud/authoring/
 
 1. Seleccione **Crear** para confirmar la acción.
 
-## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
+## Filtrado de elementos en la bandeja de entrada AEM     {#filtering-items-in-the-aem-inbox}
 
 Puede filtrar los elementos enumerados:
 
