@@ -18,8 +18,7 @@ En la sección siguiente se describen los tipos de entornos que puede crear un u
 
 Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
 
-* **Entorno**de producción y etapa:
-La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.
+* **Entorno** de producción y etapa: La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.
 
 * **Desarrollo**: Se puede crear un entorno de desarrollo con fines de desarrollo y ensayo y se asociará únicamente a los oleoductos que no sean de producción.
 
@@ -37,12 +36,12 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    >[!NOTE]
    >La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.  El usuario no podrá crear solo la fase o solo el entorno de producción.
 
-## Añadir Entorno {#adding-environments}
+## Añadiendo Entorno {#adding-environments}
 
-1. Haga clic en **Añadir Entorno** para agregar un entorno. Se puede acceder a este botón desde la pantalla **Entornos** .
+1. Haga clic en **Añadir Entorno** para agregar un entorno. Se podrá acceder a este botón desde la pantalla **Entornos**.
    ![](assets/environments-tab.png)
 
-   La opción **Añadir Entorno** también está disponible en la tarjeta de **Entornos** cuando hay cero entornos en el programa.
+   La opción **Añadir Entorno** también está disponible en la tarjeta **Entornos** cuando hay cero entornos en el programa.
 
    ![](assets/no-environments.png)
 
@@ -64,11 +63,11 @@ La producción y la fase están disponibles como dúo y se utilizan con fines de
    >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
 
 
-## Ver Entorno {#viewing-environment}
+## Viendo Entorno {#viewing-environment}
 
-La tarjeta de **Entornos** de la página Información general lista hasta tres entornos.
+La tarjeta **Entornos** de la página Información general lista hasta tres entornos.
 
-1. Seleccione el botón **Mostrar todo** para desplazarse a la página de resumen de **Entorno** y realizar la vista de una tabla con una lista completa de entornos.
+1. Seleccione el botón **Mostrar todo** para navegar a la página de resumen **Entorno** para vista de una tabla con una lista completa de entornos.
 
    ![](assets/environment-view-1.png)
 
@@ -85,13 +84,13 @@ La tarjeta de **Entornos** de la página Información general lista hasta tres e
 
 Las actualizaciones de entornos de fase y producción se administran automáticamente mediante Adobe.
 
-Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible al público, el estado de la tarjeta de Entornos en la pantalla principal mostrará la **ACTUALIZACIÓN DISPONIBLE**.
+Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible públicamente, el estado de la tarjeta de Entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
 ![](assets/environ-update.png)
 
 
-La opción **Actualizar** está disponible en la tarjeta de **Entornos** .
-Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Actualizar**, como se muestra en la figura siguiente:
+La opción **Actualizar** está disponible en la tarjeta **Entornos**.
+Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta **Entornos**. Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Actualizar**, como se muestra en la figura siguiente:
 
 ![](assets/environ-update2.png)
 
@@ -99,15 +98,15 @@ Al seleccionar esta opción, un administrador de implementación podrá actualiz
 
 Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la canalización.
 
-## Eliminación de Entorno {#deleting-environment}
+## Eliminando Entorno {#deleting-environment}
 
 El usuario con los permisos necesarios podrá eliminar un entorno de desarrollo.
 
-La opción **Eliminar** está disponible en el menú desplegable de la tarjeta de **Entornos** . Haga clic en **...** para un entorno de desarrollo que desee eliminar.
+La opción **Eliminar** está disponible en el menú desplegable de la tarjeta **Entornos**. Haga clic en **...** para un entorno de desarrollo que desee eliminar.
 
 ![](assets/environ-delete.png)
 
-La opción Eliminar también está disponible si hace clic en **Detalles** en la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Eliminar**, como se muestra en la figura siguiente:
+La opción Eliminar también está disponible si hace clic en **Detalles** de la tarjeta **Entornos**. Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Eliminar**, como se muestra en la figura siguiente:
 
 ![](assets/environ-delete2.png)
 
@@ -118,33 +117,33 @@ La opción Eliminar también está disponible si hace clic en **Detalles** en la
 
 ## Administración del acceso {#managing-access}
 
-Seleccione **Administrar acceso** en el menú desplegable de la tarjeta de **Entornos** . Puede desplazarse directamente a la instancia de creación y administrar el acceso del entorno.
+Seleccione **Administrar acceso** en el menú desplegable de la tarjeta **Entornos**. Puede desplazarse directamente a la instancia de creación y administrar el acceso del entorno.
 
-Consulte [Administración del acceso a la instancia](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) de autor para obtener más información.
+Consulte [Administración de acceso a la instancia de autor](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) para obtener más información.
 
 ![](assets/environ-access.png)
 
 
 ## Acceso a Developer Console {#accessing-developer-console}
 
-Seleccione **Developer Console** en el menú desplegable de la tarjeta de **Entornos** . Se abrirá una nueva ficha en el navegador con la página de inicio de sesión en **Developer Console**.
+Seleccione **Consola de desarrollador** en el menú desplegable de la tarjeta **Entornos**. Se abrirá una nueva ficha en el explorador con la página de inicio de sesión en **Consola de programadores**.
 
-Solo un usuario de la función de desarrollador tendrá acceso a **Developer Console**. Excepción para los Programas de Simulador para pruebas, en los que cualquier usuario con acceso al Programa de Simulador para pruebas de Cloud Manager tendrá acceso a **Developer Console**.
+Solo un usuario en la función de desarrollador tendrá acceso a **Developer Console**. Excepción para los Programas de Simulador para pruebas, en los que cualquier usuario con acceso al Programa de Simulador para pruebas de Cloud Manager tendrá acceso a **Consola de desarrollador**.
 
-Consulte Entornos [de Simulador para pruebas de](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) hibernación y deshibernación para obtener más detalles.
+Consulte [Entornos de Simulador para pruebas de hibernación y deshibernación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obtener más detalles.
 
 
 ![](assets/environ-devconsole.png)
 
-Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta de **Entornos** . Se abre la página **Entornos** y una vez seleccionado un entorno, haga clic en **...** y seleccione **Developer Console**.
+Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta **Entornos**. Se abre la página **Entornos** y una vez seleccionado un entorno, haga clic en **...** y seleccione **Consola de desarrollador**.
 
 ## Iniciar sesión localmente {#login-locally}
 
-Seleccione Inicio de sesión **** local en el menú desplegable de la tarjeta de **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
+Seleccione **Inicio de sesión local** en el menú desplegable de la tarjeta **Entornos** para iniciar sesión localmente en Adobe Experience Manager.
 
 ![](assets/environ-login-locally.png)
 
-Además, puede iniciar sesión localmente desde la página de resumen de **Entornos** .
+Además, puede iniciar sesión localmente desde la página de resumen **Entornos**.
 
 ![](assets/environ-login-locally-2.png)
 
