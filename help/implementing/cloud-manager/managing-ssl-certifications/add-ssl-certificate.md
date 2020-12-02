@@ -33,7 +33,7 @@ Siga los pasos a continuación para convertir el formato de sus archivos SSL a P
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## Añadir el certificado {#adding-certificate}
+## Añadiendo el certificado {#adding-certificate}
 
 >[!NOTE]
 >* Un usuario debe estar en la función Propietario de la empresa o Administrador de implementación para poder instalar un certificado SSL en Cloud Manager.
@@ -55,9 +55,9 @@ Siga los pasos a continuación para convertir el formato de sus archivos SSL a P
 
 ## Errores de certificado {#certificate-errors}
 
-### Corregir orden de certificados {#correct-certificate-order}
+### Corrección del pedido de certificado {#correct-certificate-order}
 
-El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto. Específicamente, los archivos de certificados intermedios deben terminar con el certificado raíz o el certificado más cercano a la raíz y estar en orden descendente desde el `main/server` certificado hasta la raíz.
+El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto. Específicamente, los archivos de certificados intermedios deben terminar con el certificado raíz o el certificado más cercano a la raíz y estar en orden descendente desde el certificado `main/server` a la raíz.
 
 Puede determinar el orden de los archivos intermedios mediante el siguiente comando:
 
@@ -70,7 +70,7 @@ Puede comprobar que la clave privada y el certificado `main/server` coinciden ut
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->El resultado de estos dos comandos debe ser exactamente el mismo. Si no puede encontrar una clave privada coincidente en el certificado, se le solicitará que vuelva a escribir el certificado generando un nuevo CSR y/o solicitando un certificado actualizado a su proveedor SSL. `main/server`
+>El resultado de estos dos comandos debe ser exactamente el mismo. Si no puede encontrar una clave privada coincidente en el certificado `main/server`, se le solicitará que vuelva a escribir la clave del certificado generando un nuevo CSR o solicitando un certificado actualizado a su proveedor SSL.
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 
