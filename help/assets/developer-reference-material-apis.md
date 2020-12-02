@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# [!DNL Assets] API y material de referencia para desarrolladores {#assets-cloud-service-apis}
+# [!DNL Assets] API y material de referencia para desarrolladores  {#assets-cloud-service-apis}
 
 El artículo contiene material de referencia y recursos para desarrolladores de [!DNL Assets] como Cloud Service. Incluye nuevo método de carga, referencia de API e información sobre la compatibilidad proporcionada en los flujos de trabajo de postprocesamiento.
 
@@ -19,31 +19,31 @@ El artículo contiene material de referencia y recursos para desarrolladores de 
 
 [!DNL Experience Manager] como Cloud Service proporciona un nuevo método para cargar recursos en el repositorio. Los usuarios pueden cargar directamente los recursos en el almacenamiento de la nube mediante la API HTTP. Los pasos para cargar un archivo binario son:
 
-1. [Envíe una solicitud](#initiate-upload)HTTP. Informa [!DNL Experience Manage]o implementa su intención de cargar un nuevo binario.
-1. [POST el contenido del archivo binario](#upload-binary) a uno o más URI proporcionados por la solicitud de inicio.
-1. [Envíe una solicitud](#complete-upload) HTTP para informar al servidor de que el contenido del binario se cargó correctamente.
+1. [Envíe una solicitud](#initiate-upload) HTTP. Informa a [!DNL Experience Manage]o implementación de su intención de cargar un nuevo binario.
+1. [POST el contenido del ](#upload-binary) binario en uno o más URI proporcionados por la solicitud de inicio.
+1. [Envíe una ](#complete-upload) solicitud HTTP para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
 
-Este método ofrece una gestión escalable y más eficaz de las cargas de recursos. Las diferencias con respecto a [!DNL Experience Manager] 6.5 son:
+Este método ofrece una gestión escalable y más eficaz de las cargas de recursos. Las diferencias en comparación con [!DNL Experience Manager] 6.5 son:
 
-* Los binarios no pasan por [!DNL Experience Manager], lo que ahora es simplemente coordinar el proceso de carga con el almacenamiento de nube binario configurado para la implementación.
+* Los binarios no pasan por [!DNL Experience Manager], que ahora simplemente está coordinando el proceso de carga con el almacenamiento de nube binario configurado para la implementación.
 * El almacenamiento de nube binaria funciona con una red de Envío de contenido (CDN) o una red de Edge. Un CDN selecciona un punto final de carga más cercano para un cliente. Cuando los datos pasan una distancia más corta a un punto final cercano, el rendimiento de carga y la experiencia del usuario mejoran, especialmente para equipos distribuidos geográficamente.
 
 >[!NOTE]
 >
->Consulte el código de cliente para implementar este método en la biblioteca [de carga de](https://github.com/adobe/aem-upload)aem de código abierto.
+>Consulte el código de cliente para implementar este método en la [biblioteca de carga de recursos abierta](https://github.com/adobe/aem-upload).
 
 ### Iniciar carga {#initiate-upload}
 
 Envíe una solicitud de POST HTTP a la carpeta deseada. Los recursos se crean o actualizan en esta carpeta. Incluya el selector `.initiateUpload.json` para indicar que la solicitud es iniciar la carga de un archivo binario. Por ejemplo, la ruta a la carpeta en la que se debe crear el recurso es `/assets/folder`. La solicitud del POST es `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`.
 
-El tipo de contenido del cuerpo de la solicitud deben ser datos `application/x-www-form-urlencoded` de formulario, que contengan los campos siguientes:
+El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contengan los siguientes campos:
 
-* `(string) fileName`: Requerido. Nombre del recurso tal como aparece en [!DNL Experience Manager].
+* `(string) fileName`: Requerido. El nombre del recurso tal como aparece en [!DNL Experience Manager].
 * `(number) fileSize`: Requerido. El tamaño de archivo, en bytes, del recurso que se está cargando.
 
-Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, siempre que cada binario contenga los campos obligatorios. Si se realiza correctamente, la solicitud responde con un código `201` de estado y un cuerpo que contiene datos JSON en el siguiente formato:
+Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, siempre que cada binario contenga los campos obligatorios. Si se realiza correctamente, la solicitud responde con un código de estado `201` y un cuerpo que contiene datos JSON en el siguiente formato:
 
 ```json
 {
@@ -62,13 +62,13 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 }
 ```
 
-* `completeURI` (cadena): Llame a este URI cuando termine de cargarse el binario. El URI puede ser un URI absoluto o relativo y los clientes deben poder gestionar cualquiera de los dos. Es decir, el valor puede ser `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Ver carga [completa](#complete-upload).
+* `completeURI` (cadena): Llame a este URI cuando termine de cargarse el binario. El URI puede ser un URI absoluto o relativo y los clientes deben poder gestionar cualquiera de los dos. Es decir, el valor puede ser `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Véase [carga completa](#complete-upload).
 * `folderPath` (cadena): Ruta de acceso completa a la carpeta en la que se carga el binario.
 * `(files)` (matriz): Una lista de elementos cuya longitud y orden coinciden con la longitud y el orden de la lista de información binaria proporcionada en la solicitud de inicio.
 * `fileName` (cadena): El nombre del binario correspondiente, tal como se indica en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
 * `mimeType` (cadena): El tipo MIME del binario correspondiente, tal como se proporciona en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
 * `uploadToken` (cadena): Un distintivo de carga para el binario correspondiente. Este valor debe incluirse en la solicitud completa.
-* `uploadURIs` (matriz): Una lista de cadenas cuyos valores son URIs completos a las que se debe cargar el contenido del binario (consulte [Cargar binario](#upload-binary)).
+* `uploadURIs` (matriz): Una lista de cadenas cuyos valores son URIs completos a las que se debe cargar el contenido del binario (consulte  [Cargar binario](#upload-binary)).
 * `minPartSize` (número): Longitud mínima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
 * `maxPartSize` (número): Longitud máxima, en bytes, de los datos que se pueden proporcionar a cualquiera de los URIs de carga, si hay más de un URI.
 
@@ -82,11 +82,11 @@ Un método posible para lograr esto es calcular el tamaño de la pieza en funci�
 * Intervalo de bytes del POST 0-9,999 del binario al primer URI en la lista de URI de carga.
 * Intervalo de bytes POST 10.000 - 19.999 del binario al segundo URI en la lista de URI de carga.
 
-Si la carga se realiza correctamente, el servidor responde a cada solicitud con un código `201` de estado.
+Si la carga se realiza correctamente, el servidor responde a cada solicitud con un código de estado `201`.
 
 ### Carga completa {#complete-upload}
 
-Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de POST HTTP al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser datos `application/x-www-form-urlencoded` de formulario, que contengan los campos siguientes.
+Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de POST HTTP al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contengan los siguientes campos.
 
 | Fields | Tipo | Obligatorio o no | Descripción |
 |---|---|---|---|
@@ -96,47 +96,47 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de
 | `createVersion` | Booleano | Opcional | Si `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] crea una nueva versión del recurso. |
 | `versionLabel` | Cadena | Opcional | Si se crea una nueva versión, la etiqueta asociada con la nueva versión de un recurso. |
 | `versionComment` | Cadena | Opcional | Si se crea una nueva versión, los comentarios asociados a ella. |
-| `replace` | Booleano | Opcional | Si `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] elimina el recurso y vuelve a crearlo. |
+| `replace` | Booleano | Opcional | Si `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] elimina el recurso y lo vuelve a crear. |
 
 >!![NOTE]
-Si el recurso existe `createVersion` y no `replace` se especifica, [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
+Si el recurso existe y no se especifica `createVersion` ni `replace`, [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
 
 Al igual que el proceso de inicio, los datos completos de la solicitud pueden contener información para más de un archivo.
 
 El proceso de carga de un binario no se realiza hasta que se invoque la dirección URL completa para el archivo. Un recurso se procesa una vez finalizado el proceso de carga. El procesamiento no tiene inicios aunque el archivo binario del recurso se haya cargado completamente, pero el proceso de carga no se haya completado.
 
-Si se realiza correctamente, el servidor responde con un código `200` de estado.
+Si se realiza correctamente, el servidor responde con un código de estado `200`.
 
 ### Biblioteca de carga de código abierto {#open-source-upload-library}
 
 Para obtener más información sobre los algoritmos de carga o para crear sus propias herramientas y secuencias de comandos de carga, Adobe proporciona bibliotecas y herramientas de código abierto:
 
-* [Biblioteca](https://github.com/adobe/aem-upload)de carga de aem de código abierto.
-* [Herramienta](https://github.com/adobe/aio-cli-plugin-aem)de línea de comandos de código abierto.
+* [Biblioteca](https://github.com/adobe/aem-upload) de carga de aem de código abierto.
+* [Herramienta](https://github.com/adobe/aio-cli-plugin-aem) de línea de comandos de código abierto.
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-El nuevo método de carga solo se admite [!DNL Adobe Experience Manager] como Cloud Service. Las API de [!DNL Adobe Experience Manager] 6.5 están en desuso. Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están obsoletos en las siguientes API:
+El nuevo método de carga solo se admite para [!DNL Adobe Experience Manager] como Cloud Service. Las API de [!DNL Adobe Experience Manager] 6.5 están en desuso. Los métodos relacionados con la carga o actualización de recursos o representaciones (cualquier carga binaria) están obsoletos en las siguientes API:
 
 * [API HTTP de Experience Manager Assets](mac-api-assets.md)
-* `AssetManager` API de Java, como `AssetManager.createAsset(..)`
+* `AssetManager` API de Java, como  `AssetManager.createAsset(..)`
 
 >[!MORELIKETHIS]
-* [Biblioteca](https://github.com/adobe/aem-upload)de carga de aem de código abierto.
-* [Herramienta](https://github.com/adobe/aio-cli-plugin-aem)de línea de comandos de código abierto.
+* [Biblioteca](https://github.com/adobe/aem-upload) de carga de aem de código abierto.
+* [Herramienta](https://github.com/adobe/aio-cli-plugin-aem) de línea de comandos de código abierto.
 
 
 ## Flujos de trabajo de procesamiento y postprocesamiento de recursos {#post-processing-workflows}
 
-En [!DNL Experience Manager], el procesamiento de recursos se basa en la configuración **[!UICONTROL de Perfiles]** de procesamiento que utiliza [los microservicios](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)de recursos. El procesamiento no requiere extensiones de desarrollador.
+En [!DNL Experience Manager], el procesamiento de recursos se basa en la configuración **[!UICONTROL Perfiles de procesamiento]** que utiliza [microservicios de recursos](asset-microservices-configure-and-use.md#get-started-using-asset-microservices). El procesamiento no requiere extensiones de desarrollador.
 
 Para la configuración del flujo de trabajo posterior al procesamiento, utilice los flujos de trabajo estándar con extensiones con pasos personalizados.
 
 ## Compatibilidad con los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
-Los clientes que actualicen desde versiones anteriores de [!DNL Experience Manager] pueden utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y utilizar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo de recursos [!UICONTROL de actualización de] DAM de la versión anterior.
+Los clientes que actualicen desde versiones anteriores de [!DNL Experience Manager] pueden utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y utilizar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL Recurso de actualización de DAM] de la versión anterior.
 
 [!DNL Experience Manager] como Cloud Service admite los siguientes pasos del flujo de trabajo:
 
