@@ -28,7 +28,7 @@ El contenido se puede dirigir específicamente a las necesidades e intereses del
 
 Los segmentos se definen en Configurar segmentación. Se utilizan para dirigir el contenido real que visualiza un público objetivo concreto.<!--Segments are defined in [Configuring Segmentation](/help/sites-administering/campaign-segmentation.md). They are used to steer the actual content seen by a specific target audience.-->
 
-## Segmentation Terminology {#segmentation-terminology}
+## Terminología de segmentación {#segmentation-terminology}
 
 Al analizar la segmentación, se emplea la siguiente terminología:
 
@@ -36,22 +36,22 @@ Al analizar la segmentación, se emplea la siguiente terminología:
 * **Usuario** : un usuario es un visitante que se registra en el sitio web para recibir un perfil de cuenta. Para generar su perfil, proporcionan identificación adicional como, por ejemplo, una dirección de correo electrónico y el género, entre otros datos. La información adicional también se puede recopilar, incluyendo la actividad de la comunidad y los modelos de compra, entre otros datos. En función de la información proporcionada en el perfil, se puede crear un perfil demográfico.
 * **Característica** : una característica es una propiedad o característica de un visitante que se puede utilizar para determinar la pertenencia a un segmento específico.
 * **Segmento** : un segmento es una colección de visitantes que comparten ciertas características. Los segmentos deben ser distintivos, con un mínimo de superposición con otros segmentos.
-* **Características** del comportamiento: las características del comportamiento son aquellas que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
+* **Características**  del comportamiento: las características del comportamiento son aquellas que se relacionan con el comportamiento de un visitante en el sitio web. Entre estas características se incluyen:
    * Interés en el sitio web, incluyendo las páginas y los productos comprados
    * Interés en el sitio web de referencia, incluyendo los términos de búsqueda utilizados o los anuncios en los que se ha hecho clic
    * Interés en otros sitios; se determina con herramientas como Spyjax
    * lealtad al visitante; duración de la visita, frecuencia de las visitas
-* **Características** demográficas: Son características de población seleccionadas, entre ellas:
+* **Características**  demográficas: Son características de población seleccionadas, entre ellas:
    * Edad
    * Ingresos
    * Tamaño familiar
    * Estado civil
    * Sexo
    * Lugar de residencia
-* **Características** derivadas: Algunas características demográficas son difíciles de determinar sin registrarse, pero se pueden derivar combinando características demográficas y de comportamiento.
+* **Características**  derivadas: Algunas características demográficas son difíciles de determinar sin registrarse, pero se pueden derivar combinando características demográficas y de comportamiento.
    * Por ejemplo, la combinación de la dirección URL de referencia (como característica de comportamiento) con datos demográficos (adquiridos con herramientas como [Google Ad Planner](https://www.google.com/adplanner/)) permite que los propietarios del sitio obtengan características demográficas de los visitantes.
 * **Subsegmento** : un segmento se puede subdividir en varios subsegmentos. Esto se lleva a cabo definiendo características adicionales.
-* **Página** de teaser: una página de teaser se dirige a una audiencia específica. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
-* **Campaña** : una campaña es una colección de páginas de teaser y páginas de mercadotecnia de correo electrónico, como newsletters o invitaciones. Normalmente, una campaña se ejecuta durante un período limitado y se reemplaza por otra campaña.
-* **Párrafo** de teaser: es un párrafo que extrae contenido de otra página en función de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
-* **Lista** : se extrae una lista de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
+* **Página**  de teaser: una página de teaser se dirige a una audiencia específica. Incluye contenido reutilizable que se puede emplear en el párrafo de teaser.
+* **Campaña** : una campaña es una colección de páginas de teaser y páginas de mercadotecnia por correo electrónico, como newsletters o invitaciones. Normalmente, una campaña se ejecuta durante un período limitado y se reemplaza por otra campaña.
+* **Párrafo**  de teaser: es un párrafo que extrae contenido de otra página en función de una estrategia de selección. Esta estrategia de selección puede tener en cuenta segmentos y campañas.
+* **Lista** : una lista se extrae de un segmento de usuarios registrados. Por ejemplo, la ubicación se utiliza para dirigir los contenidos del párrafo de teaser.
