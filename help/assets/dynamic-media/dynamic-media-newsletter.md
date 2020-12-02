@@ -18,7 +18,7 @@ En este boletín informativo de una sola publicación, descubra los valiosos rec
 
 ## Siéntase inspirado. Manténgase informado.
 
-[Regístrese](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para recibir el boletín de Dynamic Media mensualmente en su bandeja de entrada.
+[Regístrese ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para recibir el boletín de Dynamic Media mensualmente en su bandeja de entrada.
 
 ## ¿Ha perdido un número del boletín de Dynamic Media?
 
@@ -154,7 +154,7 @@ En este boletín informativo de una sola publicación, descubra los valiosos rec
    Bienvenido al número de inauguración del boletín de Dynamic Media, nuestro nuevo boletín mensual lleno de noticias, eventos y recursos para los usuarios de Dynamic Media dentro de Adobe Experience Manager Assets y Adobe Dynamic Media Classic.
 
    En este número:
-   * Regístrese en nuestro seminario web de funciones ocultas de Dynamic Media Classic.
+   * Regístrese en nuestro seminario web sobre las funciones ocultas de Dynamic Media Classic.
    * Conozca nuestra serie de seminarios web a petición para ayudarle a desarrollar su estrategia de medios enriquecidos.
    * Obtenga información sobre los casos clave de uso de medios enriquecidos y nuestras soluciones para ellos.
    * ... y mucho más!
