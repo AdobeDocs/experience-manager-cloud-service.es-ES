@@ -10,7 +10,7 @@ ht-degree: 14%
 ---
 
 
-# Naming Conventions{#naming-conventions}
+# Asignar nombres a las convenciones{#naming-conventions}
 
 Los nodos del repositorio están sujetos a las convenciones de nomenclatura del Repositorio de contenidos de Java. Sin embargo, AEM impone otras convenciones para el nombre de los nodos de página.
 
@@ -18,13 +18,13 @@ Los nodos del repositorio están sujetos a las convenciones de nomenclatura del 
 
 Estas convenciones de nombres se implementan en varios niveles:
 
-* JcrUtil: la implementación AEM de las utilidades [](#jcr-utilities)JCR.
-* PageManager: el Administrador [de páginas](#page-manager) proporciona métodos para las operaciones de nivel de página.
-* En la interfaz de usuario AEM {#ui-behavior}
+* JcrUtil: la implementación AEM de las [utilidades JCR](#jcr-utilities).
+* PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para las operaciones de nivel de página.
+* Dentro de la IU AEM {#ui-behavior}
 
-### Utilidades de JCR {#jcr-utilities}
+### Utilidades JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) es la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) JcrUtiliza la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
    * Comprueba si el nombre no está vacío y solo contiene caracteres válidos.
@@ -35,7 +35,7 @@ Estas convenciones de nombres se implementan en varios niveles:
 
 ### Administrador de páginas {#page-manager}
 
-[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) proporciona métodos para las operaciones de nivel de página, basados en [JCRUtil](#jcr-utilities).
+[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager proporciona métodos para las operaciones de nivel de página, según  [JCRUtil](#jcr-utilities).
 
 ### Comportamiento de la interfaz de usuario de AEM {#ui-behavior}
 
