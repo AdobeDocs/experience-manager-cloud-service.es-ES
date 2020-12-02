@@ -16,7 +16,7 @@ La segmentación es una consideración clave al crear una campaña. Consulte [Ex
 
 En función de la información que ya haya recopilado sobre los visitantes del sitio y los objetivos que desee alcanzar, deberá definir los segmentos y estrategias necesarios para el contenido objetivo.
 
-Estos segmentos se utilizan para proporcionar un visitante con contenido dirigido específicamente. [Las actividades](activities.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
+Estos segmentos se utilizan para proporcionar un visitante con contenido dirigido específicamente. [Las ](activities.md) actividades definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
 AEM permite personalizar fácilmente las experiencias de los usuarios. También le permite verificar los resultados de las definiciones de segmentos.
 
@@ -31,21 +31,21 @@ Para acceder a los segmentos, en la navegación global seleccione **Navegación 
 ## Editor de segmentos {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-El Editor **** de segmentos le permite modificar fácilmente un segmento. Para editar un segmento, seleccione un segmento en la lista de segmentos y haga clic en el botón **Editar** .
+El **Editor de segmentos** permite modificar fácilmente un segmento. Para editar un segmento, seleccione un segmento en la lista de segmentos y haga clic en el botón **Editar**.
 
 ![Editor de segmentos](../assets/contexthub-segment-editor.png)
 
-Con el navegador de componentes, puede agregar contenedores **Y** y **O** para definir la lógica del segmento, luego agregar componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar el segmento.
+Con el navegador de componentes puede agregar contenedores **AND** y **OR** para definir la lógica del segmento, luego agregar componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar el segmento.
 
-Cuando toda la instrucción se evalúa como true, el segmento se ha resuelto. En el evento de que se apliquen varios segmentos, también se utiliza el factor de **ampliación** . Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener más información sobre el factor de ampliación.
+Cuando toda la instrucción se evalúa como true, el segmento se ha resuelto. En el evento de que se apliquen varios segmentos, también se utiliza el factor **Ampliación**. Consulte [Creación de un nuevo segmento](#creating-a-new-segment) para obtener detalles sobre el factor de ampliación.
 
 >[!CAUTION]
 >
 >El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al segmento A. Debe asegurarse de que los segmentos no contengan referencias circulares.
 
-### Containers {#containers}
+### Contenedores {#containers}
 
-Los siguientes contenedores están disponibles de forma predeterminada y permiten agrupar comparaciones y referencias para la evaluación booleana. Se pueden arrastrar del navegador de componentes al editor. Consulte la siguiente sección [Uso de los Contenedores](#using-and-and-or-containers) Y y O para obtener más información.
+Los siguientes contenedores están disponibles de forma predeterminada y permiten agrupar comparaciones y referencias para la evaluación booleana. Se pueden arrastrar del navegador de componentes al editor. Consulte la siguiente sección [Uso de los Contenedores Y y O](#using-and-and-or-containers) para obtener más información.
 
 |  |  |
 |---|---|
@@ -70,9 +70,9 @@ Las siguientes comparaciones de segmentos están disponibles de forma predetermi
 >
 >`null < 30 // will return true`
 >
->Por lo tanto, al [crear un segmento](#creating-a-new-segment), debe seleccionar un tipo **de** datos siempre que se conozcan los tipos de valores comparados. Por ejemplo:
+>Por lo tanto, cuando [cree un segmento](#creating-a-new-segment), debe seleccionar un **tipo de datos** siempre que se conozcan los tipos de valores comparados. Por ejemplo:
 >
->Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado será **número**, por lo que incluso si no `profile/age` se establece, una comparación `profile/age` menor que 30 devolverá **falso**, como es de esperar.
+>Al comparar la propiedad `profile/age`, ya sabe que el tipo comparado será **número**, por lo que incluso si `profile/age` no está establecido, una comparación `profile/age` menor que 30 devolverá **false**, como es de esperar.
 
 ### Referencias {#references}
 
@@ -81,26 +81,26 @@ Las siguientes referencias están disponibles de forma predeterminada para vincu
 |  |  |
 |---|---|
 | Referencia del segmento | Evaluar el segmento al que se hace referencia |
-| Referencia de script | Evalúe la secuencia de comandos a la que se hace referencia. Consulte la siguiente sección [Uso de referencias](#using-script-references) de secuencias de comandos para obtener más información. |
+| Referencia de script | Evalúe la secuencia de comandos a la que se hace referencia. Consulte la siguiente sección [Uso de referencias de script](#using-script-references) para obtener más información. |
 
-## Creating a New Segment {#creating-a-new-segment}
+## Creación de un nuevo segmento {#creating-a-new-segment}
 
 Para definir el nuevo segmento:
 
-1. Después de [acceder a los segmentos](#accessing-segments), [navegue a la carpeta](#organizing-segments) en la que desee crear el segmento o déjelo en la raíz.
+1. Después de [acceder a los segmentos](#accessing-segments), [navegue a la carpeta](#organizing-segments) donde desee crear el segmento o déjelo en la raíz.
 
-1. Toque o haga clic en el botón **Crear** y seleccione **Crear segmento** de ContextHub.
+1. Toque o haga clic en el botón **Crear** y seleccione **Crear segmento de ContextHub**.
 
    ![Añadir segmento](../assets/contexthub-create-segment.png)
 
-1. En el **nuevo segmento** de ContextHub, escriba un título para el segmento, así como un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
+1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento, así como un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
 
    ![Nuevo segmento](../assets/contexthub-new-segment.png)
 
    Cada segmento tiene un parámetro de ampliación que se utiliza como factor de ponderación. Un número mayor indica que el segmento se seleccionará en lugar de un segmento con un número menor en las instancias en las que varios segmentos son válidos.
 
-   * Minimum value: `0`
-   * Maximum value: `1000000`
+   * Valor mínimo: `0`
+   * Valor máximo: `1000000`
 
 1. Desde la consola de segmentos, edite el segmento recién creado para abrirlo en el editor de segmentos.
 1. Arrastre una comparación o referencia al editor de segmentos que aparecerá en el contenedor Y predeterminado.
@@ -108,10 +108,10 @@ Para definir el nuevo segmento:
 
    ![Pruebas para personas en Basilea](../assets/contexthub-comparing-property-value.png)
 
-   Configure siempre un tipo **de** datos si es posible para asegurarse de que las comparaciones se evalúan correctamente. Consulte [Comparaciones](#comparisons) para obtener más información.
+   Siempre configure un **Tipo de datos** si es posible, para asegurarse de que las comparaciones se evalúen correctamente. Consulte [Comparaciones](#comparisons) para obtener más información.
 
-1. Click **Done** to save your definition:
-1. Agregue más componentes según sea necesario. Puede formular expresiones booleanas utilizando los componentes de contenedor para las comparaciones Y y O (consulte [Uso de Contenedores](#using-and-and-or-containers) Y y O más adelante). Con el editor de segmentos puede eliminar componentes que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
+1. Haga clic en **Listo** para guardar la definición:
+1. Agregue más componentes según sea necesario. Puede formular expresiones booleanas utilizando los componentes de contenedor para las comparaciones Y y O (consulte [Uso de Y y O Contenedores](#using-and-and-or-containers) más adelante). Con el editor de segmentos puede eliminar componentes que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
 
 ### Uso de Contenedores Y y O {#using-and-and-or-containers}
 
@@ -142,7 +142,7 @@ Mediante el componente Referencia de secuencia de comandos, la evaluación de un
 
 #### Definición de una secuencia de comandos para referencia {#defining-a-script-to-reference}
 
-1. Añadir archivo a `contexthub.segment-engine.scripts` clientlib.
+1. Añada el archivo a `contexthub.segment-engine.scripts` clientlib.
 1. Implemente una función que devuelva un valor. Por ejemplo:
 
    ```javascript
@@ -176,23 +176,23 @@ Mediante el componente Referencia de secuencia de comandos, la evaluación de un
 
 1. Registre la secuencia de comandos con `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Si la secuencia de comandos depende de propiedades adicionales, la secuencia de comandos debe llamar `this.dependOn()`. Por ejemplo, si la secuencia de comandos depende de `profile/age`:
+Si la secuencia de comandos depende de propiedades adicionales, la secuencia de comandos debe llamar a `this.dependOn()`. Por ejemplo, si la secuencia de comandos depende de `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 ```
 
-#### Referencia a un script {#referencing-a-script}
+#### Referencia a una secuencia de comandos {#referencing-a-script}
 
 1. Cree un segmento de ContextHub.
-1. Añada el componente Referencia **de** secuencia de comandos en el lugar deseado del segmento.
-1. Abra el cuadro de diálogo de edición del componente Referencia **de** secuencia de comandos. Si está [correctamente configurado](#defining-a-script-to-reference), la secuencia de comandos debe estar disponible en la lista desplegable de nombres **de** secuencia de comandos.
+1. Añada el componente **Referencia de secuencia de comandos** en el lugar deseado del segmento.
+1. Abra el cuadro de diálogo de edición del componente **Referencia de secuencia de comandos**. Si [está configurado correctamente](#defining-a-script-to-reference), la secuencia de comandos debe estar disponible en la lista desplegable **Nombre de la secuencia de comandos**.
 
 ## Organización de segmentos {#organizing-segments}
 
 Si tiene muchos segmentos, pueden resultar difíciles de administrar como una lista plana. En estos casos, puede resultar útil crear carpetas para administrar los segmentos.
 
-### Create a New Folder {#create-folder}
+### Crear una nueva carpeta {#create-folder}
 
 1. Después de [acceder a los segmentos](#accessing-segments), toque o haga clic en el botón **Crear** y seleccione **Carpeta**.
 
@@ -200,8 +200,8 @@ Si tiene muchos segmentos, pueden resultar difíciles de administrar como una li
 
 1. Proporcione un **Título** y un **Nombre** para la carpeta.
    * El **Título** debe ser descriptivo.
-   * El **nombre** se convertirá en el nombre del nodo en el repositorio.
-      * Se generará automáticamente en función del título y se ajustará según las convenciones de nombres [AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * El **Nombre** se convertirá en el nombre del nodo en el repositorio.
+      * Se generará automáticamente en función del título y se ajustará en función de [convenciones de nombres de AEM.](/help/implementing/developing/introduction/naming-conventions.md)
       * Puede ajustarse si es necesario.
 
    ![Crear carpeta](../assets/contexthub-create-folder.png)
@@ -223,7 +223,7 @@ Si tiene muchos segmentos, pueden resultar difíciles de administrar como una li
 
 1. Toque o haga clic en **Cambiar nombre** en la barra de herramientas para cambiar el nombre de la carpeta.
 
-1. Proporcione un nuevo título **de** carpeta y toque o haga clic en **Guardar**.
+1. Proporcione un nuevo **Título de la carpeta** y toque o haga clic en **Guardar**.
 
    ![Cambiar el nombre de la carpeta](../assets/contexthub-rename-folder.png)
 
@@ -259,7 +259,7 @@ Si tiene muchos segmentos, pueden resultar difíciles de administrar como una li
 
 ## Prueba de la aplicación de un segmento {#testing-the-application-of-a-segment}
 
-Una vez definido el segmento, los posibles resultados se pueden probar con la ayuda de **[ContextHub](contexthub.md).**
+Una vez definido el segmento, los resultados potenciales se pueden probar con la ayuda de **[ContextHub](contexthub.md).**
 
 1. Previsualización de una página
 1. Haga clic en el icono de ContextHub para mostrar la barra de herramientas de ContextHub
@@ -278,9 +278,9 @@ O si no se resuelve:
 >
 >Todas las características se resuelven inmediatamente, aunque la mayoría solo cambia al volver a cargar la página.
 
-Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido de destino y **Actividades** y **experiencias** relacionadas.
+Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido dirigido y **Actividades** y **Experiencias** relacionadas.
 
-Si ha configurado una actividad y experiencia, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación relacionada con la creación de contenido](targeted-content.md)de destino.
+Si ha configurado una actividad y experiencia, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación relacionada sobre la creación de contenido de destino](targeted-content.md).
 
 1. En el modo de edición de una página en la que haya configurado contenido de destino, puede ver que el contenido se dirige mediante un icono de flecha en el contenido.
 1. Cambie al modo de previsualización y, con el concentrador de contexto, cambie a una persona que no coincida con la segmentación configurada para la experiencia.
@@ -288,4 +288,4 @@ Si ha configurado una actividad y experiencia, puede probar fácilmente el segme
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan para controlar el contenido real que ven audiencias de destinatario específicas. Consulte [Administración de Audiencias](audiences.md) para obtener más información sobre audiencias y segmentos y [Creación de contenido](targeted-content.md) de destino sobre el uso de audiencias y segmentos para destinatario de contenido.
+Los segmentos se utilizan para controlar el contenido real que ven audiencias de destinatario específicas. Consulte [Administración de Audiencias](audiences.md) para obtener más información sobre audiencias y segmentos y [Creación de contenido de destino](targeted-content.md) sobre el uso de audiencias y segmentos para contenido de destinatario.
