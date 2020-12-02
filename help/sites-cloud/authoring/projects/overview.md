@@ -12,11 +12,11 @@ ht-degree: 79%
 
 # Proyectos {#projects}
 
-Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, como se describe en detalle en [Mosaico del proyecto.](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on `/home/users` and `/home/groups`. The easiest way to implement this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
+>Para que los usuarios de los proyectos puedan ver otros usuarios o grupos mientras utilizan la funcionalidad Proyectos, como crear proyectos, crear tareas o flujos de trabajo, ver y administrar el equipo, esos usuarios necesitan tener acceso de lectura en `/home/users` y `/home/groups`. La manera más fácil de implementar esto es darle al grupo **projects-users** acceso de lectura a `/home/users` y `/home/groups`.
 
 Como usuario, puede hacer lo siguiente:
 
@@ -78,7 +78,7 @@ Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/he
 
 Para añadir una colección, haga clic en **Agregar colección** y seleccione la colección adecuada de la lista.
 
-### Experiencias {#experiences}
+### Experiencias  {#experiences}
 
 El mosaico **Experiencias** permite añadir aplicación móvil, un sitio web o una publicación al proyecto.
 
@@ -116,7 +116,7 @@ En el mosaico Trabajo de traducción puede iniciar una traducción y también pu
 
 ![Trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
+Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Trabajo de traducción** para vista de los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
 
 ![Detalle del trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -148,7 +148,7 @@ El mosaico Lanzamientos muestra los lanzamientos que se hayan solicitado con un 
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Tasks are covered in detail at [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md).
+En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Uso de Tareas](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Tareas](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -162,7 +162,7 @@ En AEM se incluyen tres plantillas predefinidas de fábrica:
 
 En función de la plantilla seleccionada, dispone de distintas opciones en relación con las funciones de usuario y los flujos de trabajo.
 
-## Funciones de usuario en un proyecto {#user-roles-in-a-project}
+## Funciones de usuario en un proyecto  {#user-roles-in-a-project}
 
 Las diferentes funciones de usuario se establecen en una plantilla de proyecto y se utilizan por dos motivos principales:
 
@@ -175,7 +175,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
 |---|---|---|---|
 | Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | `workflow-users` grupo |
 | Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de toma, una sesión fotográfica y revisar y aprobar recursos; escribir permiso en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
-| Propietario | Un usuario con esta función puede iniciar un proyecto. Un propietario puede crear un proyecto, iniciar el trabajo en un proyecto y también mover los recursos aprobados a la carpeta Producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Write permission on `/etc/commerce` | `dam-users` grupo (para poder crear un proyecto) grupo de administradores de proyectos (para poder mover recursos) |
+| Propietario | Un usuario con esta función puede iniciar un proyecto. Un propietario puede crear un proyecto, iniciar el trabajo en un proyecto y también mover los recursos aprobados a la carpeta Producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo (para poder crear un proyecto) grupo de administradores de proyectos (para poder mover recursos) |
 
 >[!NOTE]
 >
