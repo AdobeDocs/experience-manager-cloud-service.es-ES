@@ -10,25 +10,25 @@ ht-degree: 47%
 ---
 
 
-# Uso del Analizador de optimizaciones {#using-best-practices-analyzer}
+# Uso de Best Practices Analyzer {#using-best-practices-analyzer}
 
-## Consideraciones importantes sobre el uso del Analizador de optimizaciones {#imp-considerations}
+## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
 Siga la sección siguiente para comprender las consideraciones importantes para ejecutar el Analizador de optimizaciones (BPA):
 
-* The BPA report is built using the output of the Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/es-ES/experience-manager-65/deploying/upgrading/pattern-detector.html). La versión del detector de patrones utilizado por BPA se incluye en el paquete de instalación de BPA.
+* El informe BPA se crea utilizando el resultado del detector de patrones (AEM) [Data](https://docs.adobe.com/content/help/es-ES/experience-manager-65/deploying/upgrading/pattern-detector.html) de Adobe Experience Manager. La versión del detector de patrones utilizado por BPA se incluye en el paquete de instalación de BPA.
 
-* BPA may only be run by the **admin** user or a user in the **administrators** group.
+* BPA sólo puede ser ejecutado por el usuario **admin** o un usuario del grupo **administradores**.
 
 * BPA se admite en instancias de AEM con la versión 6.1 o superior.
 
    >[!NOTE]
-   > Please see [Installing on AEM 6.1](#installing-on-aem61) for special requirements for installing BPA on AEM 6.1.
+   > Consulte [Instalación en AEM 6.1](#installing-on-aem61) para conocer los requisitos especiales para instalar BPA en AEM 6.1.
 
-* BPA can run on any environment, but it is preferred to have it run on a *Stage* environment.
+* BPA puede ejecutarse en cualquier entorno, pero es preferible que se ejecute en un entorno *Stage*.
 
    >[!NOTE]
-   >In order to avoid an impact on business critical instances, it is recommended that you run BPA on an *Author* environment that is as close as possible to the *Production* environment in the areas of customizations, configurations, content and user applications. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
+   >Para evitar un impacto en instancias críticas del negocio, se recomienda ejecutar BPA en un entorno *Autor* que esté lo más cerca posible del entorno *Producción* en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
 
 * La generación del contenido del informe BPA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
 
@@ -39,7 +39,7 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Download the Best Practices Analyzer from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) portal.
+>Descargue el Analizador de optimizaciones del portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html).
 
 ## Visualización del informe del Analizador de optimizaciones {#viewing-report}
 
@@ -47,7 +47,7 @@ El Analizador de optimizaciones se puede descargar como archivo zip desde el por
 
 Siga esta sección para obtener información sobre la vista del informe del Analizador de optimizaciones:
 
-1. Select Adobe Experience Manager and navigate to tools -> **Operations** -> **Best Practices Analyzer**.
+1. Seleccione Adobe Experience Manager y vaya a Herramientas -> **Operaciones** -> **Analizador de optimizaciones**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -68,12 +68,12 @@ Siga esta sección para obtener información sobre la vista del informe del Anal
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. Tiene la opción de descargar el informe en un formato de valores separados por comas (CSV) haciendo clic en **CSV**, como se muestra en la figura siguiente.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >You may force the BPA to clear its cache and regenerate the report by clicking **Refresh Report**.
+   >Puede forzar el BPA para que borre su caché y vuelva a generar el informe haciendo clic en **Actualizar informe**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -109,7 +109,7 @@ El formato del informe es el siguiente:
 Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
 
 >[!NOTE]
->Para obtener más información sobre cada Categoría de búsqueda, consulte Categorías [del detector de](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)patrones.
+>Para obtener más información sobre cada Categoría de búsqueda, consulte [Categorías del detector de patrones](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Siga la tabla siguiente para comprender los niveles de importancia:
 
@@ -123,7 +123,7 @@ Siga la tabla siguiente para comprender los niveles de importancia:
 
 ## Interpretación del informe CSV del Analizador de optimizaciones {#cra-csv-report}
 
-When you click the **CSV** option from your AEM instance, the CSV format of the Best Practices Analyzer report is built from the content cache and returned to your browser. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`.
+Al hacer clic en la opción **CSV** de la instancia de AEM, el formato CSV del informe del Analizador de procedimientos recomendados se genera desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`.
 
 Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
 
@@ -147,7 +147,7 @@ El valor &quot;\N&quot; en una columna para una búsqueda individual indica que 
 
 El BPA proporciona una interfaz HTTP que puede utilizarse como alternativa a su interfaz de usuario dentro de AEM. La interfaz admite comandos HEAD y GET. Puede utilizarse para generar el informe BPA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
 
-The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+Las siguientes direcciones URL están disponibles para el acceso HTTP, donde `<host>` es el nombre de host y, si es necesario, el puerto del servidor en el que está instalado el BPA:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` para el formato JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` para el formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` para el formato TSV
@@ -173,10 +173,10 @@ Esta interfaz utiliza los siguientes encabezados HTTP:
 
 Los siguientes parámetros de consulta HTTP están disponibles para determinar cuándo es posible que los encabezados HTTP no se utilicen fácilmente:
 
-* `max-age` (número, opcional): Especifica la duración de la actualización de la caché en segundos. Este número debe ser 0 o más. La duración de la actualización predeterminada es 86400 segundos. Sin este parámetro o el encabezado correspondiente, se utilizará una nueva caché para atender solicitudes durante 24 horas, momento en el cual se deberá volver a generar la caché. El uso `max-age=0` fuerza la eliminación de la caché e inicia una regeneración del informe, usando la duración de actualización anterior distinta de cero para la caché recién generada.
-* `respond-async` (booleano, opcional): Especifica que la respuesta debe proporcionarse de forma asíncrona. Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. Si la caché es nueva, este parámetro no tiene ningún efecto. The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` (booleano, opcional): Especifica que el servidor puede actualizar la caché en respuesta a una solicitud si la caché actual está vacía, obsoleta o pronto estará obsoleta. Si `may-refresh-cache=true`o no se especifica, el servidor puede iniciar una tarea en segundo plano que invoque el detector de patrones y actualice la caché. Si `may-refresh-cache=false` entonces el servidor no iniciará ninguna tarea de actualización que de otro modo se hubiera realizado si la caché está vacía o está obsoleta, en cuyo caso el informe estará vacío. Este parámetro no afectará a ninguna tarea de actualización que ya esté en curso.
-* `return-minimal` (booleano, opcional): Especifica que la respuesta del servidor solo debe incluir el estado que contiene la indicación de progreso y el estado de caché en el formato JSON. Si `return-minimal=true`, el cuerpo de respuesta se limitará al objeto status. Si `return-minimal=false`o no se especifica, se proporcionará una respuesta completa.
+* `max-age` (número, opcional): Especifica la duración de la actualización de la caché en segundos. Este número debe ser 0 o más. La duración de la actualización predeterminada es 86400 segundos. Sin este parámetro o el encabezado correspondiente, se utilizará una nueva caché para atender solicitudes durante 24 horas, momento en el cual se deberá volver a generar la caché. El uso de `max-age=0` fuerza la eliminación de la caché e inicia una regeneración del informe, usando la duración de actualización anterior distinta de cero para la caché recién generada.
+* `respond-async` (booleano, opcional): Especifica que la respuesta debe proporcionarse de forma asíncrona. El uso de `respond-async=true` cuando la caché esté obsoleta hará que el servidor devuelva una respuesta de `202 Accepted` sin esperar a que se actualice la caché y se genere el informe. Si la caché es nueva, este parámetro no tiene ningún efecto. El valor predeterminado es `false`. Sin este parámetro o el encabezado correspondiente, el servidor responderá sincrónicamente, lo que puede requerir una cantidad de tiempo considerable y un ajuste del tiempo de respuesta máximo para el cliente HTTP.
+* `may-refresh-cache` (booleano, opcional): Especifica que el servidor puede actualizar la caché en respuesta a una solicitud si la caché actual está vacía, obsoleta o pronto estará obsoleta. Si `may-refresh-cache=true`, o si no se especifica, el servidor puede iniciar una tarea en segundo plano que invoque el detector de patrones y actualice la caché. Si `may-refresh-cache=false` el servidor no iniciará ninguna tarea de actualización que de otra manera se hubiera realizado si la caché está vacía o está obsoleta, en cuyo caso el informe estará vacío. Este parámetro no afectará a ninguna tarea de actualización que ya esté en curso.
+* `return-minimal` (booleano, opcional): Especifica que la respuesta del servidor solo debe incluir el estado que contiene la indicación de progreso y el estado de caché en el formato JSON. Si `return-minimal=true`, el cuerpo de respuesta se limitará al objeto de estado. Si `return-minimal=false`, o si no se especifica, se proporcionará una respuesta completa.
 * `log-findings` (booleano, opcional): Especifica que el servidor debe registrar el contenido de la caché cuando se crea o actualiza por primera vez. Cada búsqueda de la caché se registrará como una cadena JSON. Este registro solo se producirá si `log-findings=true` y la solicitud genera una nueva caché.
 
 Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta correspondiente, el parámetro de consulta tendrá prioridad.
@@ -191,8 +191,8 @@ Una vez realizada una solicitud, el cliente no necesita permanecer activo para q
 Los siguientes valores de respuesta son posibles:
 
 * `200 OK`:: Indica que la respuesta contiene los resultados del detector de patrones que se generaron durante la duración de la actualización de la caché.
-* `202 Accepted`:: Se utiliza para indicar que la caché está obsoleta. Cuando `respond-async=true` y `may-refresh-cache=true` esta respuesta indica que hay una tarea de actualización en curso. Cuando `may-refresh-cache=false` esta respuesta indica simplemente que la caché está obsoleta.
-* `400 Bad Request`: indica que se produjo un error con la solicitud. A message in Problem Details format (see [RFC 7807](https://tools.ietf.org/html/rfc7807)) provides more details.
+* `202 Accepted`:: Se utiliza para indicar que la caché está obsoleta. Cuando `respond-async=true` y `may-refresh-cache=true` esta respuesta indica que hay una tarea de actualización en curso. Cuando `may-refresh-cache=false` esta respuesta simplemente indica que la caché está obsoleta.
+* `400 Bad Request`: indica que se produjo un error con la solicitud. Un mensaje en formato Detalles del problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) proporciona más detalles.
 * `401 Unauthorized`:: Indica que la solicitud no está autorizada.
 * `500 Internal Server Error`: indica que se ha producido un error de servidor interno. El mensaje en formato Detalles del problema proporciona más detalles.
 * `503 Service Unavailable`: indica que el servidor está ocupado con otra respuesta y no puede atender esta solicitud de forma oportuna. Esto solo es probable cuando se realizan solicitudes sincrónicas. El mensaje en formato Detalles del problema proporciona más detalles.
@@ -210,7 +210,7 @@ El valor de esta propiedad es la duración de la caché en segundos. Un administ
 
 ### Instalar en AEM 6.1 {#installing-on-aem61}
 
-BPA utilizes a system service user account named `repository-reader-service` to execute the Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. On AEM 6.1, this account must be created *prior to* installation of BPA by taking the following steps:
+BPA utiliza una cuenta de usuario del servicio del sistema denominada `repository-reader-service` para ejecutar el detector de patrones. Esta cuenta está disponible en AEM 6.2 y posteriores. En AEM 6.1, esta cuenta debe crearse *antes de* la instalación de BPA siguiendo los pasos siguientes:
 
 1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
 
