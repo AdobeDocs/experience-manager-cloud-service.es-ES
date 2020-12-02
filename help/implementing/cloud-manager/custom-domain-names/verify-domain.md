@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Comprobando dominio {#verify-domain-name}
+# Verificación del dominio {#verify-domain-name}
 
 Un registro TXT DNS autoriza a un dominio a alojarse en un servicio CDN. El cliente debe crear un registro TXT DNS en la zona que autorice a Cloud Manager a implementar el servicio CDN con el dominio personalizado y asociarlo al servicio back-end. Esta asociación está totalmente bajo el control del cliente y autoriza a Cloud Manager a ofrecer contenido desde el servicio a un dominio. Dicha autorización podrá concederse y retirarse. El registro TXT es específico del dominio y del entorno del administrador de la nube.
 
@@ -18,4 +18,4 @@ Un registro TXT DNS autoriza a un dominio a alojarse en un servicio CDN. El clie
 1. Copie y pegue la entrada TXT en la zona DNS donde se encuentra el dominio personalizado, tal como aparece. Si necesita un &quot;nombre&quot; para su entrada, indíquelo `@`.
 
 >[!NOTE]
->Varias herramientas de búsqueda DNS, como Herramienta [de búsqueda](https://www.ultratools.com/tools/dnsLookup)DNS, Google DoH, se pueden usar para buscar entradas de registros TXT e identificar si falta el registro TXT o si es erróneo.
+>Varias herramientas de búsqueda DNS como [Herramienta de búsqueda DNS](https://www.ultratools.com/tools/dnsLookup), Google DoH se pueden usar para buscar entradas de registros TXT e identificar si falta el registro TXT o si es erróneo.
