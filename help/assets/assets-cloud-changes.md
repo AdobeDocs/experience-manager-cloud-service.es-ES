@@ -1,18 +1,18 @@
 ---
-title: Cambios notables en Adobe Experience Manager Assets como Cloud Service
-description: Cambios notables en Adobe Experience Manager Assets en AEM Cloud Service en comparación con Adobe Experience Manager 6.5.
+title: Cambios notables en Adobe Experience Manager Assets como [!DNL Cloud Service]
+description: Cambios notables en Adobe Experience Manager Assets en AEM [!DNL Cloud Service] en comparación con Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 18%
+source-wordcount: '601'
+ht-degree: 8%
 
 ---
 
 
-# Cambios notables en Recursos Experience Manager como Cloud Service {#notable-changes}
+# Cambios notables en Recursos Experience Manager como [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades para gestionar sus Proyectos AEM. Sin embargo, existen muchas diferencias entre los Experience Manager de Recursos in situ o en el servicio administrado por Adobe en comparación con el Experience Manager como Cloud Service. Este documento destaca las importantes diferencias que existen entre las capacidades de Recursos.
+Adobe Experience Manager como [!DNL Cloud Service] ofrece muchas nuevas características y posibilidades para administrar sus proyectos AEM. Sin embargo, existen muchas diferencias entre los Experience Manager de Recursos in situ o en el servicio administrado por Adobe en comparación con el Experience Manager como [!DNL Cloud Service]. Este documento destaca las importantes diferencias que existen entre las capacidades de Recursos.
 
 Las principales diferencias con respecto al Experience Manager 6.5 se encuentran en los siguientes ámbitos:
 
@@ -22,14 +22,14 @@ Las principales diferencias con respecto al Experience Manager 6.5 se encuentran
 
 >[!NOTE]
 >
->Este documento destaca los cambios notables que se han producido en AEM Assets. Para ver los cambios generales a AEM como Cloud Service y otros módulos, consulte:
+>Este documento destaca los cambios notables que se han producido en AEM Assets. Para ver los cambios generales a Experience Manager como [!DNL Cloud Service] y otros módulos, consulte:
 >
->* [Introducción a Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
->* Una [descripción general de AEM as a Cloud Service: novedades y diferencias](/help/overview/what-is-new-and-different.md)
->* La [arquitectura](/help/core-concepts/architecture.md) de Adobe Experience Manager as a Cloud Service
->* [Cambios importantes en AEM as a Cloud Service (Notas de la versión)](/help/release-notes/aem-cloud-changes.md)
->* [Cambios importantes en AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
->* [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Introducción a Adobe Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md)
+>* Una [información general de AEM como [!DNL Cloud Service] - Qué es lo nuevo y Qué es diferente](/help/overview/what-is-new-and-different.md)
+>* La [arquitectura](/help/core-concepts/architecture.md) de Adobe Experience Manager as a [!DNL Cloud Service]
+>* [Cambios notables en AEM como a [!DNL Cloud Service] (Notas de la versión)](/help/release-notes/aem-cloud-changes.md)
+>* [Cambios notables en AEM Sites como [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager como  [!DNL Cloud Service] tutoriales](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## Carga y ingesta de recursos {#asset-ingestion}
@@ -56,4 +56,4 @@ Para llevar a cabo una validación end-to-end del código y el proceso, incluyen
 
 ## Eliminación de la IU clásica {#classic-ui}
 
-La IU clásica ya no está disponible en Experience Manager como Cloud Service. La interfaz estándar es la IU táctil.
+La IU clásica ya no está disponible en Experience Manager como [!DNL Cloud Service]. La interfaz estándar es la IU táctil.
