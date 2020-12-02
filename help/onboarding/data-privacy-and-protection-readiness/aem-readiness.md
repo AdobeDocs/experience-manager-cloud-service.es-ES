@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Para obtener más información sobre la respuesta del Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte el Centro de privacidad del [Adobe](https://www.adobe.com/privacy.html).
+>Para obtener más información sobre la respuesta del Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
 
 Adobe proporciona documentación y procedimientos (con API cuando están disponibles), para que el administrador de privacidad del cliente o AEM administrador se encargue de la protección de datos y las solicitudes de privacidad de datos y ayude a nuestros clientes a cumplir con estas normativas. Los procedimientos documentados permitirán a los clientes ejecutar las solicitudes reglamentarias manualmente o llamando a las API, cuando estén disponibles, desde un portal o servicio externo.
 
@@ -30,7 +30,7 @@ Adobe proporciona documentación y procedimientos (con API cuando están disponi
 >
 >Los datos de otro servicio a petición de Adobe, junto con las solicitudes de privacidad relacionadas, requerirán que se realicen acciones en ese servicio.
 >
->Para obtener más información, consulte el Centro [de privacidad de](https://www.adobe.com/privacy.html)Adobe.
+>Para obtener más información, consulte [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
 
 ## Introducción {#introduction}
 
@@ -78,19 +78,19 @@ El diagrama siguiente ilustra el aspecto que podría tener un flujo de trabajo d
 
 ![Protección de datos y privacidad](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager como Cloud Service y listo para la regulación {#aem-as-a-cloud-service-and-regulatory-readiness}
+## Adobe Experience Manager como Cloud Service y preparación para la regulación {#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Consulte las secciones a continuación para obtener documentación reglamentaria sobre las áreas de producto de AEM como Cloud Service.
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#aem-foundation}
 
-See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
+Consulte [AEM Foundation Readiness for Data Protection and Data Privacy Regulation](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
 
 ## Sitios de Adobe Experience Manager as a Cloud Service {#aem-sites}
 
-See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
+Consulte [AEM Sites Readiness for Data Protection and Data Privacy Regulation.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
-## Adobe Experience Manager como Cloud Service integrado con Adobe Target y Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
+## Integración de Adobe Experience Manager como Cloud Service con Adobe Target y Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
 Estas integraciones de Adobe Experience Manager como Cloud Service están con servicios listos para protección de datos y privacidad (por ejemplo, RGPD). No se almacenan datos personales de Adobe Target o Adobe Analytics en AEM en relación con las integraciones.
 Para obtener más información, consulte:
