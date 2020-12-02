@@ -1,5 +1,5 @@
 ---
-title: Desproteger y proteger archivos [!DNL Assets]
+title: Desproteger y proteger archivos en [!DNL Assets]
 description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
@@ -25,11 +25,11 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-468](assets/chlimage_1-468.png)
 
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Cierre de compra]** .
+1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Cierre de compra]**.
 
    ![chlimage_1-469](assets/chlimage_1-469.png)
 
-   Observe que el icono **[!UICONTROL Cierre]** de compra se desplaza al icono **[!UICONTROL Proteger]** con el candado abierto.
+   Observe que el icono **[!UICONTROL Cierre de compra]** conmuta al icono **[!UICONTROL Proteger]** con el bloqueo abierto.
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
@@ -41,7 +41,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sin embargo, puede tocar o hacer clic en el icono Propiedades **[!UICONTROL de la]** Vista para editar los metadatos del recurso bloqueado.
+   Sin embargo, puede tocar o hacer clic en el icono **[!UICONTROL Propiedades de la Vista]** para editar los metadatos del recurso bloqueado.
 
 1. Toque o haga clic en el icono Editar para abrir el recurso en modo de edición.
 
@@ -68,6 +68,6 @@ Los administradores pueden proteger recursos que otros usuarios han extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Soltar bloqueo]** . El recurso se vuelve a registrar y se puede editar para otros usuarios.
+1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Soltar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)
