@@ -15,26 +15,26 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] admite funciones de accesibilidad estándar, como texto alternativo para imágenes, y funciones adicionales a las que se puede acceder al crear contenido. Los autores de contenido utilizan estas funciones con componentes que utilizan el editor de texto enriquecido (RTE). Las funciones incluyen la adición de texto alternativo, información estructural a través de encabezados y elementos de párrafo, etc.
 
-Para conocer las configuraciones típicas de RTE, consulte [Configuración de RTE](rich-text-editor.md) y [configuración de complementos RTE para funcionalidad](configure-rich-text-editor-plug-ins.md)específica.
+Para conocer las configuraciones típicas de RTE, consulte [configurar los complementos RTE](rich-text-editor.md) y [configurar los complementos RTE para una funcionalidad específica](configure-rich-text-editor-plug-ins.md).
 
-Utilice la configuración de complementos RTE para configurar y personalizar las funciones relacionadas con la accesibilidad. Por ejemplo, utilice `paraformat` para agregar elementos semánticos de nivel de bloque adicionales, incluida la ampliación del número de niveles de encabezado admitidos más allá de los básicos `H1`, `H2` y `H3` proporcionados de forma predeterminada. La edición de texto enriquecido es posible con muchos componentes de la interfaz de usuario de creación. Los componentes más utilizados son texto, imagen, descarga, etc.
+Utilice la configuración de complementos RTE para configurar y personalizar las funciones relacionadas con la accesibilidad. Por ejemplo, utilice `paraformat` para agregar elementos semánticos de nivel de bloque adicionales, incluida la ampliación del número de niveles de encabezado admitidos más allá de los `H1`, `H2` y `H3` básicos proporcionados de manera predeterminada. La edición de texto enriquecido es posible con muchos componentes de la interfaz de usuario de creación. Los componentes más utilizados son texto, imagen, descarga, etc.
 
-La funcionalidad RTE puede estar disponible en muchos componentes. El componente principal es el `Text` componente.
+La funcionalidad RTE puede estar disponible en muchos componentes. El componente principal es el componente `Text`.
 
-Para el `Text` componente de [!DNL Experience Manager], la siguiente captura de pantalla muestra el editor de texto enriquecido con una serie de complementos activados, entre los que se incluyen `paraformat`:
+Para el componente `Text` en [!DNL Experience Manager], la siguiente captura de pantalla muestra el editor de texto enriquecido con una serie de complementos habilitados, incluido `paraformat`:
 
 ![Componente Texto RTE en modo de pantalla completa](assets/rte-toolbar-full-screen-mode.png)
 
-## Configuración de las características del complemento {#configuring-the-plugin-features}
+## Configurar las características del complemento {#configuring-the-plugin-features}
 
-Para obtener instrucciones sobre cómo configurar RTE, consulte [Configuración de la página Editor](rich-text-editor.md) de texto enriquecido. El artículo cubre:
+Para obtener instrucciones sobre cómo configurar RTE, consulte [configuración de la página Editor de texto enriquecido](rich-text-editor.md). El artículo cubre:
 
 * [Complementos y sus funciones](rich-text-editor.md#aboutplugins)
 * [Ubicaciones de configuración](rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [Activar un complemento y configurar la propiedad features](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Configurar otras funcionalidades del RTE](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Para activar algunas o todas las características de un complemento, configure el complemento dentro de la `rtePlugins` subrama correspondiente en CRXDE Lite.
+Para activar algunas o todas las características de un complemento, configure el complemento dentro de la subrama `rtePlugins` correspondiente en el CRXDE Lite.
 
 ![CRXDE Lite que muestra un ejemplo rtePlugin](assets/example-rteplugin-crxde-lite.png)
 
@@ -42,20 +42,20 @@ Para activar algunas o todas las características de un complemento, configure e
 
 Hay nuevos formatos de bloques semánticos disponibles para la selección.
 
-1. Según el RTE, determine y navegue a la ubicación [de](rich-text-editor.md#understand-the-configuration-paths-and-locations)configuración.
-1. [Habilite el campo](rich-text-editor.md) de selección de párrafos [activando el complemento](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Especifique los formatos que desea que estén disponibles en el campo](rich-text-editor.md)de selección de párrafos.
+1. Según el RTE, determine y navegue a la [ubicación de configuración](rich-text-editor.md#understand-the-configuration-paths-and-locations).
+1. [Habilite el ](rich-text-editor.md) campo de selección de párrafos  [activando el complemento](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Especifique los formatos que desea que estén disponibles en el campo](rich-text-editor.md) de selección de párrafos.
 1. Los formatos de párrafo están disponibles para el autor del contenido desde los campos de selección en RTE.
 
-Con los elementos estructurales disponibles en RTE a través de las opciones de formato de párrafo, [!DNL Experience Manager] proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente o a los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, los autores pueden seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos en la opción Estilos, para garantizar la limpieza del marcado y las buenas opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
+Con los elementos estructurales disponibles en RTE mediante las opciones de formato de párrafo, [!DNL Experience Manager] proporciona una buena base para el desarrollo de contenido accesible. Los autores de contenido no pueden utilizar RTE para dar formato al tamaño de fuente o a los colores u otros atributos relacionados, lo que impide la creación de formato en línea. En su lugar, los autores pueden seleccionar los elementos estructurales adecuados, como encabezados y utilizar estilos globales elegidos en la opción Estilos, para garantizar la limpieza del marcado y las buenas opciones para los usuarios que exploran con sus propias hojas de estilo y contenido correctamente estructurado.
 
 ## Uso de la función Editar origen {#use-of-the-source-edit-feature}
 
-En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente HTML creado mediante RTE. Por ejemplo, un fragmento de contenido creado dentro del editor de texto enriquecido puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción de edición [de](rich-text-editor.md#aboutplugins) origen de RTE. Puede especificar la [`sourceedit` función en el `misctools` complemento](rich-text-editor.md#aboutplugins).
+En algunos casos, los autores de contenido encontrarán necesario examinar y ajustar el código fuente HTML creado mediante RTE. Por ejemplo, un fragmento de contenido creado dentro del editor de texto enriquecido puede requerir más marcado para garantizar el cumplimiento de WCAG 2.0. Esto se puede hacer con la opción [de edición de origen](rich-text-editor.md#aboutplugins) de RTE. Puede especificar la función [`sourceedit` en el complemento `misctools`](rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
->Utilice la `sourceedit` función con cuidado. Cualquier error de escritura y las funciones no compatibles pueden presentar problemas.
+>Utilice la función `sourceedit` con cuidado. Cualquier error de escritura y las funciones no compatibles pueden presentar problemas.
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
