@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* The title appears in the [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) rail, from where authors can access them to work on them.
+* El título aparece en el carril [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), desde donde los autores pueden acceder a ellos para trabajar en ellos.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
 * De forma predeterminada, Live Copy actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
@@ -81,8 +81,8 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    Si vuelve a la consola (con **Hecho**), puede ver el lanzamiento (y acceder a él) desde:
 
-   * The [**Launches** console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * The [**References** in the **Sites** console](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * La consola [**Lanzamientos**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * La [**Referencias** en la consola **Sitios**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
@@ -107,7 +107,7 @@ Al seleccionar esto, ocurrirá lo siguiente:
 >
 >Este mecanismo se puede utilizar para cambiar la plantilla de una [página existente](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page): sin embargo, debe tenerse en cuenta la pérdida de contenido.
 
-### Creación de un lanzamiento anidado {#creating-a-nested-launch}
+### Creación de un lanzamiento anidado  {#creating-a-nested-launch}
 
 Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofrece la posibilidad de crear un lanzamiento a partir de un lanzamiento existente de modo que los autores pueden aprovechar los cambios que ya se hayan realizado, en lugar de tener que realizar los mismos cambios varias veces en cada lanzamiento.
 
@@ -117,7 +117,7 @@ Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofre
 
 #### Creación de un lanzamiento anidado: consola Lanzamientos {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+Crear un inicio anidado desde la consola **Lanzamientos** es básicamente lo mismo que crear cualquier otra forma de inicio, con la excepción de que necesita navegar a la rama `/content/launches` de lanzamientos:
 
 1. En la consola **Lanzamientos**, seleccione **Crear**.
 1. Seleccione **Agregar páginas** y, a continuación, vaya a la rama de lanzamientos especificando `/content/launches` en el filtro. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
