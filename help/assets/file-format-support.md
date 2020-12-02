@@ -1,11 +1,11 @@
 ---
 title: Formatos de archivo y tipos MIME admitidos
-description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como Cloud Service.
+description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '783'
 ht-degree: 10%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # [!DNL Assets] formatos de archivo admitidos  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] como Cloud Service admite funciones básicas de gestor de contenido: almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
+[!DNL Adobe Experience Manager] como  [!DNL Cloud Service] compatible con las capacidades básicas del gestor de contenido — almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
 
 Además, [!DNL Experience Manager Assets] proporciona soporte ampliado para generar previsualizaciones y representaciones y extraer metadatos y texto para indexar texto completo. Este soporte ampliado se proporciona mediante [microservicios de recursos](asset-microservices-configure-and-use.md).
 
@@ -221,7 +221,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de audio {#audio-formats}
 
-[!DNL Assets] como Cloud Service proporciona compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+[!DNL Assets] como  [!DNL Cloud Service] proporciona compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
 
 >[!MORELIKETHIS]
 >
