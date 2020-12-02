@@ -17,17 +17,18 @@ Un usuario debe ser propietario de una empresa o administrador de implementació
 >[!NOTE]
 >Antes de agregar un nombre de dominio personalizado, se debe instalar en el Programa un certificado SSL válido que contenga el nombre de dominio personalizado. Consulte Instalación de un certificado SSL (INSERT LINK) para obtener más información.
 
-Solo se puede agregar un nombre de dominio a la vez. Sin embargo, los usuarios pueden añadir caracteres comodín, por ejemplo, `*.wknd.com` como nombre de dominio, lo que permitiría alojar varios subdominios con un único registro TXT.
+Solo se puede agregar un nombre de dominio a la vez. Sin embargo, los usuarios pueden agregar caracteres comodín, por ejemplo, `*.wknd.com` como nombre de dominio, lo que permitiría que varios subdominios se alojaran con un único registro TXT.
 Cada Entorno de Cloud Manager puede alojar hasta un máximo de 50 dominios personalizados por entorno.
 El mismo nombre de dominio no se puede usar en más de un entorno.
 
-## Añadir un nombre de dominio personalizado desde la página Configuración de dominio {#adding-cdn-settings}
+## Añadir un nombre de dominio personalizado de la página Configuración de dominio {#adding-cdn-settings}
 
 Siga los pasos a continuación para agregar un nombre de dominio personalizado desde la página Configuración de dominio:
 
 1. En la página Entornos, vaya a la página Configuración de dominio.
 
-1. Seleccionar Añadir nombre de dominio personalizadoSe iniciará el asistente para agregar nombre de dominio personalizado INSERTAR IMAGEN
+1. Seleccionar Añadir nombre de dominio personalizado
+Se iniciará el asistente para agregar nombres de dominio personalizados INSERTAR IMAGEN
 
 1. Escriba el nombre de dominio personalizado. Nota: No incluya &#39;http://&#39;, &#39;https://&#39; o espacios al introducir en el dominio.
 
@@ -51,7 +52,7 @@ Siga las instrucciones proporcionadas para probar la propiedad del dominio para 
 1. Vaya a la página Detalle de Entorno para ver el entorno de intereses.
 1. Utilice los campos de entrada en la parte superior de la tabla Nombres de dominio para enviar el nombre de dominio personalizado, certificado SSL. A continuación, seleccione Añadir.
 1. Se iniciará el asistente para Añadir el nombre de dominio personalizado con el nombre de Entorno previamente rellenado.
-1. Escriba el nombre de dominio personalizado. Nota: No incluya `http://`ni `https://`espacios al introducir en el dominio. Seleccione Continuar.
+1. Escriba el nombre de dominio personalizado. Nota: No incluya `http://`, `https://` ni espacios al ingresar en el dominio. Seleccione Continuar.
 1. Esto lo llevará a la pantalla Verificación del nombre de dominio para su Entorno. Vaya a Verificación de dominio (Añadir registro TXT) para obtener más información. INSERTAR IMAGEN
 
 Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno:
