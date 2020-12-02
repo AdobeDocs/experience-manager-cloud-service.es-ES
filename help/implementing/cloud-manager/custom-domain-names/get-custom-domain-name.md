@@ -17,4 +17,4 @@ Puede comprar un nombre de dominio de un registrador de nombres de dominio, una 
 >[!NOTE]
 >Cloud Manager no es un registrador de nombres de dominio y no proporciona servicios DNS.
 
-DNS es lo que nos permite tener dominios personalizados con marca adjuntos a sitios web mediante la traducción de direcciones de equipos legibles por máquina, como `184.33.123.64` a direcciones memorables como `www.wknd.com`.
+DNS es lo que nos permite tener dominios personalizados con marca adjuntos a sitios web, traduciendo direcciones de equipos legibles por máquina, como `184.33.123.64` a direcciones memorables como `www.wknd.com`.
