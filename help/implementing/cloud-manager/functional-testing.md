@@ -23,7 +23,7 @@ Las pruebas funcionales del producto son un conjunto de pruebas de integración 
 
 Las pruebas funcionales del producto se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager y no se pueden omitir.
 
-Consulte las pruebas [funcionales](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) del producto para obtener pruebas de muestra.
+Consulte [Pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para obtener pruebas de muestra.
 
 ## Prueba funcional personalizada {#custom-functional-testing}
 
@@ -74,11 +74,11 @@ Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType defin
 
 Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se van a ejecutar deben terminar en TI.
 
-Por ejemplo, se ejecutaría una clase denominada `com.myco.tests.aem.ExampleIT` , pero no una clase denominada `com.myco.tests.aem.ExampleTest` .
+Por ejemplo, se ejecutaría una clase denominada `com.myco.tests.aem.ExampleIT` pero no una clase denominada `com.myco.tests.aem.ExampleTest`.
 
-Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de pruebas aem-testing-customers. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obtener más detalles.
+Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de pruebas aem-testing-customers. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Vínculo Git](https://github.com/adobe/aem-testing-clients) para obtener más detalles.
 
-### Ejecución de pruebas locales {#local-test-execution}
+### Ejecución de prueba local {#local-test-execution}
 
 Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java convencionales como Eclipse, IntelliJ, NetBeans, etc.
 
