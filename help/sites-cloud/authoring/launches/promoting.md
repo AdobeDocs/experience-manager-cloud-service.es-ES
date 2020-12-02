@@ -25,7 +25,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 >[!CAUTION]
 >
->Un solo lanzamiento no se puede promocionar de forma simultánea. This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>Un solo lanzamiento no se puede promocionar de forma simultánea. Esto significa que dos acciones de promoción en el mismo lanzamiento al mismo tiempo pueden resultar en un error - `Launch could not be promoted` (junto con errores de conflicto en el registro).
 
 >[!CAUTION]
 >
@@ -47,12 +47,12 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **Lanzamientos**:
 
 1. Abra:
-   * The **Sites** console:
-      1. Open the [references rail](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) and select the required source page using [selection mode](/help/sites-cloud/authoring/getting-started/basic-handling.md) (or select and open the references rail, the order is not important). Todas las referencias se mostrarán.
+   * La consola **Sites**:
+      1. Abra el [carril de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen requerida utilizando [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no es importante). Todas las referencias se mostrarán.
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos [1]) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
-   * The **Launches** console:
+   * La consola **Lanzamientos**:
       1. Seleccione su lanzamiento (toque o haga clic en la miniatura).
       1. Seleccione **Promocionar**.
 1. En el primer paso, puede especificar:
@@ -88,7 +88,7 @@ Cuando está editando una página de lanzamiento, la acción **Promocionar lanza
 >
 >Esto se encuentra disponible para los [lanzamientos anidados](#promoting-a-nested-launch) y únicos.
 
-## Promocionar un lanzamiento anidado {#promoting-a-nested-launch}
+## Promocionar un lanzamiento anidado  {#promoting-a-nested-launch}
 
 Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de los orígenes, incluido el origen raíz (producción).
 
@@ -98,9 +98,9 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
 1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 1. Introduzca la información necesaria:
    * **Destino**
-      * **Destinatario** de promoción: puede promocionarse a cualquiera de las fuentes.
-      * **Eliminar inicio después de la promoción** : después de promocionar el lanzamiento seleccionado, se eliminará cualquier inicio anidado dentro de él.
-   * **Ámbito** : aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
+      * **Destinatario**  de promoción: puede promocionarse a cualquiera de las fuentes.
+      * **Eliminar inicio después de la promoción** : después de la promoción, se eliminará el lanzamiento seleccionado y todos los lanzamientos anidados dentro de él.
+   * **Ámbito** : Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
       * **Promocionar lanzamiento completo**
       * **Promocionar las páginas modificadas**
       * **Promocionar página actual**
