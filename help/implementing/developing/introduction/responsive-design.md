@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Diseño adaptable {#responsive-design}
+# Diseño interactivo {#responsive-design}
 
 Diseñe las experiencias para que se adapten a la ventanilla del cliente en la que se muestran. Con el diseño interactivo, las mismas páginas se pueden mostrar eficazmente en varios dispositivos en ambas orientaciones. La siguiente imagen muestra algunas formas en que una página puede responder a los cambios en el tamaño de la ventanilla:
 
@@ -36,7 +36,7 @@ Consulte los siguientes temas para obtener información sobre la implementación
 * [Cuadrículas fluidas](#developing-a-fluid-grid)
 * [Imágenes adaptables](#using-adaptive-images)
 
-A medida que diseña, utilice la barra de herramientas del **emulador** para la previsualización de las páginas en diferentes tamaños de pantalla.
+A medida que diseña, utilice la barra de herramientas **Emulador** para previsualización de las páginas para distintos tamaños de pantalla.
 
 ## Antes de desarrollar {#before-you-develop}
 
@@ -50,25 +50,25 @@ Antes de desarrollar la aplicación de AEM que admite las páginas web, se deben
 
 La estructura típica de la aplicación AEM admite todas las implementaciones de diseño adaptables:
 
-* Los componentes de página residen debajo `/apps/<application_name>/components`
-* Las plantillas residen debajo `/apps/<application_name>/templates`
+* Los componentes de página residen debajo de `/apps/<application_name>/components`
+* Las plantillas residen debajo de `/apps/<application_name>/templates`
 
 ## Uso de Consultas de medios {#using-media-queries}
 
 Las consultas de medios permiten el uso selectivo de estilos CSS para la representación de páginas. AEM herramientas y funciones de desarrollo le permiten implementar de forma eficaz y eficiente consultas de medios en sus aplicaciones.
 
-El grupo W3C proporciona la recomendación Consultas [de](https://www.w3.org/TR/css3-mediaqueries/) medios que describe esta función CSS3 y la sintaxis.
+El grupo W3C proporciona la recomendación [Consultas de medios](https://www.w3.org/TR/css3-mediaqueries/) que describe esta función de CSS3 y la sintaxis.
 
 ### Creación del archivo CSS {#creating-the-css-file}
 
 En el archivo CSS, defina consultas de medios en función de las propiedades de los dispositivos que vaya a utilizar. La siguiente estrategia de implementación es eficaz para administrar estilos en cada consulta de medios:
 
-* Utilice una carpeta [Biblioteca de](clientlibs.md) clientes para definir la CSS que se ensamblará cuando se procese la página.
+* Utilice una [carpeta Biblioteca de clientes](clientlibs.md) para definir la CSS que se ensamblará cuando se procese la página.
 * Defina cada consulta de medios y los estilos asociados en archivos CSS independientes. Es útil utilizar nombres de archivo que representen las características del dispositivo de la consulta de medios.
 * Defina estilos comunes a todos los dispositivos en un archivo CSS independiente.
 * En el archivo css.txt de la carpeta Biblioteca de clientes, ordene los archivos CSS de lista como se requiere en el archivo CSS ensamblado.
 
-El tutorial [](develop-wknd-tutorial.md) WKND utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por WKND se encuentra en `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+El [tutorial de WKND](develop-wknd-tutorial.md) utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por WKND se encuentra en `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
