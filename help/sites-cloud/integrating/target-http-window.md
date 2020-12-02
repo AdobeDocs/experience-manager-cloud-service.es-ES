@@ -16,7 +16,7 @@ Esta página describe los parámetros configurables presentes en la ventana HTTP
 
 ## Parámetros {#parameters}
 
-![Ventana HTTP de destinatario](assets/httpwindow.png "Ventana HTTP de Target")
+![Ventana HTTP de destinatario ](assets/httpwindow.png "Ventana HTTP de Target")
 
 La ventana contiene los siguientes parámetros configurables:
 
