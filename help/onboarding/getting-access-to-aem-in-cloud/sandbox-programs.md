@@ -16,34 +16,34 @@ ht-degree: 0%
 
 Un programa de Simulador para pruebas es uno de los dos tipos de programas disponibles en AEM Cloud Service; el otro es un programa normal.
 
-Normalmente, un Simulador para pruebas se crea para servir los fines de capacitación, administración de demostraciones, habilitación o Prueba de conceptos (POC). No tienen la intención de transportar tráfico en directo. No están sujetos al [AEM como compromisos](https://www.adobe.com/legal/service-commitments.html)Cloud Service.
+Normalmente, un Simulador para pruebas se crea para servir los fines de capacitación, administración de demostraciones, habilitación o Prueba de conceptos (POC). No tienen la intención de transportar tráfico en directo. No están sujetos a los [AEM como Cloud Service Compromisos](https://www.adobe.com/legal/service-commitments.html).
 
 Los entornos creados en un Simulador para pruebas no están configurados para escalar automáticamente. Por lo tanto, no son adecuadas para el rendimiento o las pruebas de carga.
 
 Los programas del Simulador para pruebas incluyen Sitios y Recursos y se rellenan automáticamente con un repositorio Git, un entorno de desarrollo y un canalizador que no es de producción.  El repositorio Git se rellena con un proyecto de muestra basado en el arquetipo de proyecto AEM.
 
-Consulte [Explicación de los tipos](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) de Programas y Programas para obtener más información sobre los tipos de Programas.
+Consulte [Explicación de los tipos de Programas y Programas](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) para obtener más información sobre los tipos de Programas.
 
 ### Atributos de los Programas de Simulador para pruebas {#attributes-sandbox}
 
 Los Programas de Simulador para pruebas tienen los atributos siguientes:
 
-1. **Creación de programas:** La creación del programa del Simulador para pruebas incluye:
+1. **Creación de programas:** La creación de programas de Simulador para pruebas incluye:
    * configuración del proyecto con código de muestra y contenido
    * creación de entornos de desarrollo
    * creación de una canalización sin producción que se implementa en el entorno de desarrollo (implementación de ramificaciones maestras en el entorno de desarrollo)
 
-1. **Soluciones:** Los programas del Simulador para pruebas incluyen AEM Sites y Recursos.
+1. **Soluciones: los programas de** Simulador para pruebas incluyen AEM Sites y Recursos.
 
-1. **AEM actualizaciones:** AEM actualizaciones se pueden aplicar manualmente a entornos en un programa de Simulador para pruebas y no se insertan automáticamente.
+1. **Actualizaciones de AEM:** AEM las actualizaciones se pueden aplicar manualmente a los entornos de un programa de Simulador para pruebas y no se insertan automáticamente.
 
-1. **Hibernación:** Los entornos de un programa de Simulador para pruebas se hibernan automáticamente si no se detecta ninguna actividad durante un período de tiempo determinado. Los entornos hibernados se pueden deshibernar manualmente.
+1. **Hibernación:** los Entornos de un programa de Simulador para pruebas se hibernan automáticamente si no se detecta ninguna actividad durante un período de tiempo determinado. Los entornos hibernados se pueden deshibernar manualmente.
 
 ### Creación de un Programa de Simulador para pruebas {#creating-sandbox-program}
 
 Un asistente para la creación de programas permite crear un Programa de Simulador para pruebas.
 
-Para obtener más información sobre cómo crear un Programa de Simulador para pruebas, consulte [Creación de un Programa](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) de Simulador para pruebas para pruebas.
+Para obtener más información sobre cómo crear un Programa de Simulador para pruebas, consulte [Creación de un Programa de Simulador para pruebas](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) para obtener más información.
 
 ### Creación de Entornos de Simulador para pruebas {#creating-sandbox-environments}
 
@@ -57,30 +57,30 @@ Para obtener más información sobre cómo crear manualmente un entorno, consult
 
 El usuario con los permisos necesarios puede eliminar un entorno o conjuntos de desarrollo o producción o etapa.
 
-Para eliminar un entorno, consulte [Eliminar Entorno](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obtener más información.
+Para eliminar un entorno, consulte [Eliminación de Entorno](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) para obtener más información.
 
 
 ## Hibernación y deshibernación de Entornos de Simulador para pruebas {#hibernating-introduction}
 
-Los entornos de Programa de Simulador para pruebas entran en un modo *de* hibernación si no se detecta ninguna actividad durante un período de tiempo determinado.
+Los entornos de Programa de Simulador para pruebas entran en un *modo de hibernación* si no se detecta ninguna actividad durante un período de tiempo determinado.
 
 >[!NOTE]
 >La hibernación es exclusiva de los entornos de Programa de Simulador para pruebas. Los entornos de programa normales no hibernan.
 
 ### Hibernación {#hibernation-introduction}
 
-La hibernación puede producirse de forma automática o manual. Los entornos de Programa de Simulador para pruebas pueden tardar hasta unos minutos en entrar en un modo *de* hibernación. Los datos se conservan durante la hibernación.
+La hibernación puede producirse de forma automática o manual. Los entornos de Programa de Simulador para pruebas pueden tardar hasta unos minutos en entrar en un *modo de hibernación*. Los datos se conservan durante la hibernación.
 
 La hibernación se clasifica como:
 
-* **Los entornos de Programa automático** de Simulador para pruebas se hibernan automáticamente tras ocho horas de inactividad, lo que significa que ni el autor ni los servicios de publicación reciben solicitudes.
+* **Los entornos de Programa**  AutomaticSandbox se hibernan automáticamente tras ocho horas de inactividad, lo que significa que ni el autor ni los servicios de publicación reciben solicitudes.
 
 * **Manual**: Como usuario, puede hibernar manualmente un entorno de Programa de Simulador para pruebas, aunque no es necesario hacerlo, ya que la hibernación se producirá automáticamente tras un período determinado (ocho horas) de inactividad.
 
 >[!CAUTION]
->En la última versión, la vinculación a la consola de desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
+>En la última versión, la vinculación a la consola de desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la Consola de programadores, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su *ID de Programa* y 5678 es su *ID de Entorno*.
 
-#### Uso de la hibernación manual {#using-manual-hibernation}
+#### Uso de hibernación manual {#using-manual-hibernation}
 
 Puede hibernar manualmente el Programa de Simulador para pruebas desde la Consola de programadores de dos maneras diferentes, mediante:
 
@@ -93,17 +93,17 @@ Puede hibernar manualmente el Programa de Simulador para pruebas desde la Consol
 Siga los pasos a continuación para hibernar manualmente los entornos de Programa del Simulador para pruebas:
 
 1. Vaya a **Developer Console**.
-Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
+Consulte [Acceso a la Consola de programadores](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener información sobre cómo acceder a la **Consola de programadores** desde la tarjeta **Entornos**.
    >[!IMPORTANT]
-   >Vincular la consola **de** desarrollador directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
+   >Vincular la **Consola de desarrollador** directamente desde Cloud Manager no le dará la opción de hibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la Consola de programadores, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su *ID de Programa* y 5678 es su *ID de Entorno*.
 
-1. Click **Hibernate**, as shown in the figure below:
+1. Haga clic en **Hibernar**, como se muestra en la figura siguiente:
 
    ![](assets/hibernate-1.png)
 
    O bien,
 
-   Haga clic en el vínculo **Entornos** en la parte superior izquierda para realizar la vista de la lista de entornos y, a continuación, haga clic en **Hibernar**, como se muestra en la figura siguiente:
+   Haga clic en el vínculo **Entornos** en la parte superior izquierda para vista de la lista de entornos y, a continuación, haga clic en **Hibernar**, como se muestra en la figura siguiente:
 
    ![](assets/hibernate-1b.png)
 
@@ -111,7 +111,7 @@ Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environme
 
    ![](assets/hibernate-2.png)
 
-1. Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para el entorno en la pantalla de la consola **** del desarrollador.
+1. Cuando la hibernación se realice correctamente, verá la notificación de finalización del proceso de hibernación para su entorno en la pantalla **Consola de desarrollador**.
 
    ![](assets/hibernate-4.png)
 
@@ -119,16 +119,16 @@ Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environme
 ### Deshibernación {#de-hibernation-introduction}
 
 1. Vaya a **Developer Console**.
-Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) de desarrollador para obtener información sobre cómo acceder a la consola **de** desarrollador desde la tarjeta de **Entornos** .
+Consulte [Acceso a la Consola de programadores](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obtener información sobre cómo acceder a la **Consola de programadores** desde la tarjeta **Entornos**.
 
    >[!IMPORTANT]
-   >Vincular la consola **de** desarrollador directamente desde Cloud Manager no le dará la opción de deshibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la consola de desarrollador, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su ID *de* Programa y 5678 es su ID *de* Entorno.
+   >Vincular la **Consola de desarrollador** directamente desde Cloud Manager no le dará la opción de deshibernar un entorno de Programa de Simulador para pruebas. La solución alternativa se encuentra una vez en la Consola de programadores, agregue el siguiente patrón al final de la URL `#release-cm-p1234-e5678 where 1234` 1234 es su *ID de Programa* y 5678 es su *ID de Entorno*.
 
    >[!NOTE]
-   >Como alternativa, puede desplazarse a la consola **de** desarrollador para anular la hibernación intentando acceder al servicio de creación o publicación de un entorno ya en estado de hibernación; en ese caso, aparecerá una página de aterrizaje con un vínculo a la consola de desarrollador. Consulte la sección Acceso a un Entorno hibernado más abajo.
+   >Como alternativa, puede desplazarse a la **Consola de programador** para anular la hibernación si intenta acceder al servicio de creación o publicación de un entorno ya en estado de hibernación; en ese caso, aparecerá una página de aterrizaje con un vínculo a la consola de desarrollador. Consulte la sección Acceso a un Entorno hibernado más abajo.
 
    >[!IMPORTANT]
-   >El acceso a la consola de desarrollador está definido por la función **de desarrollador de** Cloud Manager en el **Admin Console**. Un usuario con permiso de función de desarrollador puede anular la hibernación de un entorno de Programa de Simulador para pruebas.
+   >El acceso a la consola de desarrollador está definido por la **Función de desarrollador del Administrador de nube** en el **Admin Console**. Un usuario con permiso de función de desarrollador puede anular la hibernación de un entorno de Programa de Simulador para pruebas.
 
 1. Haga clic en **Deshibernar**, como se muestra en la figura siguiente:
 
@@ -136,7 +136,7 @@ Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environme
 
    O bien,
 
-   Haga clic en el vínculo **Entornos** en la parte superior izquierda para vista de la lista de entornos y, a continuación, haga clic en **Deshibernar**, como se muestra en la figura siguiente
+   Haga clic en el vínculo **Entornos** en la parte superior izquierda para realizar la vista de la lista de entornos y, a continuación, haga clic en **Deshibernar**, como se muestra en la figura siguiente
 
    ![](assets/de-hibernate-1b.png)
 
@@ -155,7 +155,7 @@ Consulte [Acceso a la consola](/help/implementing/cloud-manager/manage-environme
 
 #### Permisos para deshibernar {#permissions-de-hibernate}
 
-Cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service debe poder acceder a **Developer Console**, lo que le permitirá deshibernar el entorno.
+Cualquier usuario con un perfil de producto que le permita acceder a AEM como Cloud Service debe poder acceder a la **Consola de programadores**, lo que le permitirá deshibernar el entorno.
 
 #### Acceso a un Entorno hibernado {#accessing-hibernated-environment}
 
@@ -176,7 +176,7 @@ Pocas consideraciones clave relacionadas con los entornos hibernados y deshibern
 
 ## AEM actualizaciones de Entornos de Simulador para pruebas {#aem-updates-sandbox}
 
-Consulte [AEM actualizaciones](/help/implementing/deploying/aem-version-updates.md) de la versión para obtener más detalles.
+Consulte [Actualizaciones de la versión de AEM](/help/implementing/deploying/aem-version-updates.md) para obtener más detalles.
 
 Un usuario puede aplicar manualmente AEM actualizaciones a los entornos de un Programa de Simulador para pruebas.
 
@@ -184,7 +184,7 @@ Consulte [Actualización de Entorno](/help/implementing/cloud-manager/manage-env
 
 >[!NOTE]
 >* Una actualización manual solo se puede ejecutar cuando el entorno de destino tiene una canalización correctamente configurada.
->* Una actualización manual del entorno *de producción* o de *fase* se actualizará automáticamente al otro. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
+>* Una actualización manual del entorno *Production* o *Stage* actualizará automáticamente el otro. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
 
 
 
