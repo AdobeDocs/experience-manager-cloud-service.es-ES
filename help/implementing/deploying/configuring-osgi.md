@@ -12,19 +12,19 @@ ht-degree: 1%
 
 # Configurar OSGI para AEM as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/) es un elemento fundamental en la pila de tecnología de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y sus configuraciones.
+[](https://www.osgi.org/) OSGi es un elemento fundamental en la pila de tecnología de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y sus configuraciones.
 
-OSGi proporciona los primitivos estandarizados que permiten construir aplicaciones a partir de componentes pequeños, reutilizables y de colaboración. Estos componentes se pueden componer en una aplicación y se pueden implementar. Esto permite administrar fácilmente los paquetes OSGi, ya que se pueden detener, instalar e iniciar individualmente. Las interdependencias se gestionan automáticamente. Cada componente OSGi está contenido en uno de los distintos paquetes. Para obtener más información, consulte la especificación [OSGi](https://www.osgi.org/Specifications/HomePage).
+OSGi proporciona los primitivos estandarizados que permiten construir aplicaciones a partir de componentes pequeños, reutilizables y de colaboración. Estos componentes se pueden componer en una aplicación y se pueden implementar. Esto permite administrar fácilmente los paquetes OSGi, ya que se pueden detener, instalar e iniciar individualmente. Las interdependencias se gestionan automáticamente. Cada componente OSGi está contenido en uno de los distintos paquetes. Para obtener más información, consulte la [especificación OSGi](https://www.osgi.org/Specifications/HomePage).
 
 Puede administrar la configuración de los componentes de OSGi mediante archivos de configuración que formen parte de un proyecto de código de AEM.
 
 ## Archivos de configuración OSGi {#osgi-configuration-files}
 
-Los cambios de configuración se definen en los paquetes de código (`ui.apps`) del proyecto de AEM como archivos de configuración (`.cfg.json`) en carpetas de configuración específicas del modo de ejecución:
+Los cambios de configuración se definen en los paquetes de código del proyecto de AEM (`ui.apps`) como archivos de configuración (`.cfg.json`) en carpetas de configuración específicas del modo de ejecución:
 
 `/apps/example/config.<runmode>`
 
-El formato de los archivos de configuración OSGi se basa en JSON utilizando el `.cfg.json` formato definido por el proyecto Apache Sling.
+El formato de los archivos de configuración OSGi se basa en JSON con el formato `.cfg.json` definido por el proyecto Apache Sling.
 
 Las configuraciones de OSGi destinatario los componentes de OSGi a través de su Identidad persistente (PID), que se establece de forma predeterminada en el nombre de clase Java del componente OSGi. Por ejemplo, para proporcionar la configuración OSGi para un servicio OSGi implementado por:
 
@@ -42,13 +42,13 @@ siguiendo el formato de configuración cfg.json OSGi.
 
 ## Resolución de modo de ejecución {#runmode-resolution}
 
-Las configuraciones de OSGi específicas se pueden dirigir a instancias de AEM específicas mediante modos de ejecución. Para utilizar el modo de ejecución, cree carpetas de configuración en `/apps/example` (donde el ejemplo es el nombre del proyecto), en el formato:
+Las configuraciones de OSGi específicas se pueden dirigir a instancias de AEM específicas mediante modos de ejecución. Para utilizar runmode, cree carpetas de configuración en `/apps/example` (donde ejemplo es el nombre del proyecto), en el formato:
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
 Se utilizará cualquier configuración OSGi en dichas carpetas si los modos de ejecución definidos en el nombre de la carpeta de configuración coinciden con los modos de ejecución utilizados por AEM.
 
-Por ejemplo, si AEM utiliza el autor y el dev de los modos de ejecución, se aplicarán los nodos de configuración en `/apps/example/config.author/` y `/apps/example/config.author.dev/` , mientras que los nodos de configuración en `/apps/example/config.publish/` y `/apps/example/config.author.stage/` no se aplicarán.
+Por ejemplo, si AEM utiliza el autor y el dev de los modos de ejecución, se aplicarán los nodos de configuración en `/apps/example/config.author/` y `/apps/example/config.author.dev/`, mientras que los nodos de configuración en `/apps/example/config.publish/` y `/apps/example/config.author.stage/` no se aplicarán.
 
 Si se aplican varias configuraciones para el mismo PID, se aplica la configuración con el mayor número de modos de ejecución coincidentes.
 
@@ -76,7 +76,7 @@ Existen tres variedades de valores de configuración OSGi que pueden utilizarse 
    } 
    ```
 
-1. **Los valores** específicos de entorno, que son valores que varían entre los entornos de desarrollo y, por lo tanto, no se pueden definir correctamente como objetivos en el modo de ejecución (ya que hay un solo `dev` modo de ejecución en AEM como Cloud Service). Por ejemplo:
+1. **Los valores** específicos de entorno, que son valores que varían entre los entornos de desarrollo y, por lo tanto, no se pueden definir correctamente como objetivos en el modo de ejecución (ya que hay un solo  `dev` modo de ejecución en AEM como Cloud Service). Por ejemplo:
 
    ```json
    {
@@ -94,7 +94,7 @@ Existen tres variedades de valores de configuración OSGi que pueden utilizarse 
    }
    ```
 
-## Cómo elegir el tipo de valor de configuración de OSGi adecuado {#how-to-choose-the-appropriate-osgi-configuration-value-type}
+## Cómo elegir el tipo de valor de configuración de OSGi apropiado {#how-to-choose-the-appropriate-osgi-configuration-value-type}
 
 El caso común para OSGi utiliza valores de configuración OSGi en línea. Las configuraciones específicas del entorno se utilizan solamente para casos de uso específicos en los que un valor difiere entre entornos de desarrollo.
 
@@ -104,7 +104,7 @@ Las configuraciones específicas de entorno amplían las configuraciones OSGi tr
 
 La siguiente guía indica cuándo utilizar configuraciones no secretas y específicas de entorno secreto:
 
-### Cuándo utilizar los valores de configuración en línea {#when-to-use-inline-configuration-values}
+### Cuándo usar valores de configuración en línea {#when-to-use-inline-configuration-values}
 
 Los valores de configuración en línea se consideran el método estándar y deben utilizarse cuando sea posible. Las configuraciones en línea proporcionan los beneficios de:
 
@@ -121,9 +121,9 @@ Utilice únicamente configuraciones específicas de entorno (`$[env:ENV_VAR_NAME
 * Utilice únicamente configuraciones no secretas específicas de entorno para valores de configuración que difieran entre entornos de desarrollo, incluidas las instancias de desarrollo local.
 * En su lugar, utilice los valores en línea estándar en las configuraciones OSGi para valores no secretos de fase y producción.  En relación con esto, no se recomienda utilizar configuraciones específicas de entorno para facilitar la realización de cambios de configuración en tiempo de ejecución a entornos de fase y producción; estos cambios deben introducirse mediante la administración del código fuente.
 
-### Cuándo utilizar valores de configuración específicos de entorno secreto {#when-to-use-secret-environment-specific-configuration-values}
+### Cuándo utilizar valores de configuración específicos del entorno secreto {#when-to-use-secret-environment-specific-configuration-values}
 
-AEM como Cloud Service requiere el uso de configuraciones específicas de entorno (`$[secret:SECRET_VAR_NAME]`) para cualquier valor de configuración OSGi secreto, como contraseñas, claves de API privadas o cualquier otro valor que no pueda almacenarse en Git por motivos de seguridad.
+AEM como Cloud Service requiere el uso de configuraciones específicas del entorno (`$[secret:SECRET_VAR_NAME]`) para cualquier valor de configuración OSGi secreto, como contraseñas, claves de API privadas o cualquier otro valor que no pueda almacenarse en Git por motivos de seguridad.
 
 Utilice configuraciones secretas específicas de entorno para almacenar el valor de los secretos en todos los AEM como entornos de Cloud Service, incluidos el escenario y la producción.
 
@@ -172,17 +172,17 @@ Existen dos maneras de crear nuevas configuraciones de OSGi, como se describe a 
 
 Los archivos de configuración OSGi con formato JSON se pueden escribir a mano directamente en el proyecto de AEM. Esta es la forma más rápida de crear configuraciones OSGi para componentes OSGi conocidos, y especialmente componentes OSGi personalizados que han sido diseñados y desarrollados por el mismo desarrollador que define las configuraciones. Este método también se puede aprovechar para copiar/pegar y actualizar configuraciones para el mismo componente OSGi en varias carpetas de modo de ejecución.
 
-1. En su IDE, abra el `ui.apps` proyecto, ubique o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que destinatario los modos de ejecución que debería aplicar la nueva configuración OSGi
-1. En esta carpeta de configuración, cree un nuevo `<PID>.cfg.json` archivo. El PID es la identidad persistente del componente OSGi que suele ser el nombre completo de la clase de la implementación del componente OSGi. Por ejemplo:
+1. En su IDE, abra el proyecto `ui.apps`, busque o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que destinatario los modos de ejecución que la nueva configuración OSGi debe aplicar
+1. En esta carpeta de configuración, cree un nuevo archivo `<PID>.cfg.json`. El PID es la identidad persistente del componente OSGi que suele ser el nombre completo de la clase de la implementación del componente OSGi. Por ejemplo:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan la convención de `<PID>-<factory-name>.cfg.json` nomenclatura
-1. Abra el nuevo `.cfg.json` archivo y defina las combinaciones de clave y valor para los pares de propiedades y valores OSGi, siguiendo el formato [de configuración OSGi de](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)JSON.
-1. Guarde los cambios en el nuevo `.cfg.json` archivo
+Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan la convención de  `<PID>-<factory-name>.cfg.json` nomenclatura
+1. Abra el nuevo archivo `.cfg.json` y defina las combinaciones de clave y valor para los pares de propiedades y valores OSGi, siguiendo el formato de configuración [JSON OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
+1. Guarde los cambios en el nuevo archivo `.cfg.json`
 1. Añada y envíe su nuevo archivo de configuración OSGi a Git
 
 ### Generación de configuraciones de OSGi mediante el inicio rápido del SDK de AEM
 
-La consola web AEM del SDK de AEM Quickstart Jar se puede utilizar para configurar componentes OSGi y exportar configuraciones OSGi como JSON. Esto resulta útil para configurar componentes OSGi proporcionados por AEM cuyas propiedades OSGi y sus formatos de valor pueden no ser bien entendidos por el desarrollador que define las configuraciones OSGi en el proyecto AEM. Tenga en cuenta que el uso de la interfaz de usuario de configuración de la consola web de AEM sí escribe `.cfg.json` archivos en el repositorio, por lo que debe tener en cuenta este hecho para evitar un posible comportamiento inesperado durante el desarrollo local, cuando las configuraciones de OSGi definidas por AEM proyecto pueden diferir de las configuraciones generadas.
+La consola web AEM del SDK de AEM Quickstart Jar se puede utilizar para configurar componentes OSGi y exportar configuraciones OSGi como JSON. Esto resulta útil para configurar componentes OSGi proporcionados por AEM cuyas propiedades OSGi y sus formatos de valor pueden no ser bien entendidos por el desarrollador que define las configuraciones OSGi en el proyecto AEM. Tenga en cuenta que el uso de la interfaz de usuario de configuración de la consola web de AEM sí escribe `.cfg.json` archivos en el repositorio, por lo que tenga en cuenta esto para evitar un comportamiento inesperado potencial durante el desarrollo local, cuando las configuraciones de OSGi definidas por el AEM proyecto pueden diferir de las configuraciones generadas.
 
 1. Inicie sesión en la consola web AEM de AEM SDK Quickstart Jar como usuario administrador
 1. Vaya a OSGi > Configuración
@@ -196,10 +196,10 @@ La consola web AEM del SDK de AEM Quickstart Jar se puede utilizar para configur
 1. Toque Imprimir,
 1. La configuración OSGi en formato JSON se mostrará en la sección Propiedades de configuración serializadas
    ![Impresora de configuración del instalador OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
-1. En su IDE, abra el `ui.apps` proyecto, ubique o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que destinatario los modos de ejecución en los que debería aplicarse la nueva configuración OSGi.
-1. En esta carpeta de configuración, cree un nuevo `<PID>.cfg.json` archivo. El PID es el mismo valor del paso 5.
-1. Pegue las Propiedades de configuración serializada del paso 10 en el `.cfg.json` archivo.
-1. Guarde los cambios en el nuevo `.cfg.json` archivo.
+1. En su IDE, abra el proyecto `ui.apps`, ubique o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que destinatario los modos de ejecución en los que debería aplicarse la nueva configuración de OSGi.
+1. En esta carpeta de configuración, cree un nuevo archivo `<PID>.cfg.json`. El PID es el mismo valor del paso 5.
+1. Pegue las Propiedades de configuración serializadas del paso 10 en el archivo `.cfg.json`.
+1. Guarde los cambios en el nuevo archivo `.cfg.json`.
 1. Añada y envíe su nuevo archivo de configuración OSGi a Git.
 
 
@@ -235,7 +235,7 @@ La configuración OSGi debe asignar un marcador de posición para el secreto que
 use $[secret:SECRET_VAR_NAME]
 ```
 
-### Asignación de nombres a variables {#variable-naming}
+### Nombre de variable {#variable-naming}
 
 Lo siguiente se aplica tanto a los valores de configuración secreta como a los específicos del entorno.
 
@@ -273,14 +273,14 @@ Se recomienda escribir una secuencia de comandos bash simple que establezca las 
 
 Los valores de los secretos se leen de los archivos. Por lo tanto, para cada marcador de posición que utilice un secreto debe crearse un archivo de texto que contenga el valor secreto.
 
-Por ejemplo, si `$[secret:server_password]` se utiliza, se debe crear un archivo de texto llamado **server_password** . Todos estos archivos secretos deben almacenarse en el mismo directorio y la propiedad framework `org.apache.felix.configadmin.plugin.interpolation.secretsdir` debe configurarse con ese directorio local.
+Por ejemplo, si se utiliza `$[secret:server_password]`, se debe crear un archivo de texto con el nombre **server_password**. Todos estos archivos secretos deben almacenarse en el mismo directorio y la propiedad `org.apache.felix.configadmin.plugin.interpolation.secretsdir` del marco de trabajo debe configurarse con ese directorio local.
 
-### Configuración de creación vs. publicación {#author-vs-publish-configuration}
+### Configuración de creación y publicación {#author-vs-publish-configuration}
 
 Si una propiedad OSGI requiere valores diferentes para el autor y para la publicación:
 
-* se deben utilizar carpetas separadas `config.author` y `config.publish` OSGi, tal como se describe en la sección [Resolución del](#runmode-resolution)modo de ejecución.
-* se deben utilizar nombres de variables independientes. Se recomienda utilizar un prefijo como `author_<variablename>` y `publish_<variablename>` donde los nombres de las variables sean los mismos
+* deben utilizarse carpetas `config.author` y `config.publish` OSGi independientes, tal como se describe en la sección [Resolución del modo de ejecución](#runmode-resolution).
+* se deben utilizar nombres de variables independientes. Se recomienda utilizar un prefijo como `author_<variablename>` y `publish_<variablename>` donde los nombres de las variables son los mismos
 
 ### Ejemplos de configuración {#configuration-examples}
 
@@ -305,7 +305,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -315,7 +319,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -323,7 +331,7 @@ config.dev
 
 **Ejemplo 2**
 
-La intención es que el valor de la propiedad OSGI `my_var1` difiera para stage, prod y para cada uno de los 3 entornos dev. Por lo tanto, será necesario llamar a la API de Cloud Manager para establecer el valor `my_var1` para cada env de desarrollo.
+La intención es que el valor de la propiedad OSGI `my_var1` difiera para stage, prod y para cada uno de los 3 entornos dev. Por lo tanto, será necesario llamar a la API de Cloud Manager para establecer el valor de `my_var1` para cada env de desarrollo.
 
 <table>
 <tr>
@@ -340,7 +348,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -350,7 +362,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val2",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -360,7 +376,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -368,7 +388,7 @@ config.dev
 
 **Ejemplo 3**
 
-La intención es que el valor de la propiedad OSGi `my_var1` sea el mismo para la etapa, la producción y sólo uno de los entornos de desarrollo, pero para que difiera en los otros dos entornos de desarrollo. En este caso, será necesario llamar a la API de Cloud Manager para establecer el valor de `my_var1` para cada uno de los entornos de desarrollo, incluso para el entorno de desarrollo que debe tener el mismo valor que stage y production. No heredará el valor establecido en la **configuración** de la carpeta.
+El propósito es que el valor de la propiedad OSGi `my_var1` sea el mismo para la etapa, la producción y sólo uno de los entornos de desarrollo, pero difiera para los otros dos entornos de desarrollo. En este caso, será necesario llamar a la API de Cloud Manager para establecer el valor de `my_var1` para cada uno de los entornos de desarrollo, incluso para el entorno de desarrollo que debería tener el mismo valor que stage y production. No heredará el valor establecido en la carpeta **config**.
 
 <table>
 <tr>
@@ -385,7 +405,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -395,13 +419,17 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
 </table>
 
-Otra manera de lograrlo sería establecer un valor predeterminado para el token de reemplazo en la carpeta config.dev de manera que sea el mismo valor que en la carpeta **config** .
+Otra manera de lograrlo sería establecer un valor predeterminado para el token de reemplazo en la carpeta config.dev de manera que sea el mismo valor que en la carpeta **config**.
 
 <table>
 <tr>
@@ -418,7 +446,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -428,7 +460,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+{ 
+ "my_var1": "$[env:my_var1;default=val1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
