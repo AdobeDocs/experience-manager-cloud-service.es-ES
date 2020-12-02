@@ -11,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# Preguntas más frecuentes de AEM Assets y AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
+# Preguntas frecuentes de AEM Assets y AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager (AEM) Assets es una parte integral de la plataforma AEM. Esta integración suave se considera una ventaja importante de la AEM y garantiza la consistencia en gestor de contenido y alta productividad para los autores de contenido.
 
@@ -62,7 +62,7 @@ Puede eliminar todos los flujos de trabajo, componentes, taxonomías, opciones e
 
 En este caso de uso no es necesario comprar AEM Assets, incluso el uso de la biblioteca de medios no es necesario para utilizar imágenes en un sitio web, ya que el componente de imagen inteligente permite cargar imágenes directamente en la página.
 
-## Una lista detallada de las funciones disponibles en AEM Assets y en la biblioteca de medios {#listoffeatures}
+## Una lista detallada de las funciones disponibles en AEM Assets vs. Biblioteca de medios {#listoffeatures}
 
 **AEM Assets**
 
