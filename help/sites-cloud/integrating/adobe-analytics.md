@@ -47,8 +47,8 @@ Las páginas que se enumeran a continuación pueden ayudarle a configurar la int
 
 Consulte:
 
-* [Ampliación de la integración](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics. Tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y su creación no funciona en AEM como Cloud Service porque requiere la IU clásica. En su lugar, se debe utilizar el Launch by Adobe, tanto para la asignación de variables como para la implementación de bibliotecas JS en páginas.
-* El artículo de la base de conocimientos, Integración con [Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración con Adobe Analytics.
+* [Ampliación de la ](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) integración de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics. Tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y su creación no funciona en AEM como Cloud Service porque requiere la IU clásica. En su lugar, se debe utilizar el Launch by Adobe, tanto para la asignación de variables como para la implementación de bibliotecas JS en páginas.
+* El artículo de la base de conocimientos, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración con Adobe Analytics.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Consulte:
    >  por ejemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Configuración** proxy de componentes HTTP de Apache para configurar la API 4.x;
+* **Configuración del proxy de componentes HTTP de Apache** para configurar la API 4.x;
    >  por ejemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
 >
