@@ -2,9 +2,9 @@
 title: Etiquetado inteligente de recursos de vídeo
 description: El etiquetado inteligente de recursos de vídeo automatiza el etiquetado de recursos mediante la aplicación de etiquetas contextuales y descriptivas mediante los servicios de Adobe Sensei.
 translation-type: tm+mt
-source-git-commit: 68fe67617f0d63872f13427b3fbc7b58f2497aca
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Etiquetado inteligente de los recursos de vídeo {#video-smart-tags}
 
-La creciente necesidad de nuevo contenido exige reducir los esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] como Cloud Service admite el etiquetado automático de recursos de vídeo asistidos por inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo con tecnología Adobe Sensei utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y añadir etiquetas a los recursos de vídeo. De este modo, se reduce el tiempo de los usuarios de DAM para ofrecer experiencias ricas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto se refiere a acciones como beber, correr y trotar.
+La creciente necesidad de nuevo contenido exige reducir los esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] como  [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo asistidos por inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo con tecnología Adobe Sensei utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y añadir etiquetas a los recursos de vídeo. De este modo, se reduce el tiempo de los usuarios de DAM para ofrecer experiencias ricas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto se refiere a acciones como beber, correr y trotar.
 
-Los formatos de archivo de vídeo (y sus códecs) admitidos para el etiquetado inteligente son MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) y WMV WMV2). Además, la funcionalidad permite el etiquetado de vídeos de hasta 300 MB. El etiquetado automático de recursos de vídeo se produce como procesamiento de recursos estándar (junto con la creación de miniaturas y la extracción de metadatos) después de cargar un vídeo o cuando se activa un reprocesamiento. Las etiquetas inteligentes se muestran en orden descendente de su [puntuación de confianza](#confidence-score-video-tag) en el recurso [!UICONTROL Propiedades]. El etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como Cloud Service. Sin embargo, puede [desactivar el etiquetado inteligente de vídeo](#opt-out-video-smart-tagging) en una carpeta.
+Los formatos de archivo de vídeo (y sus códecs) admitidos para el etiquetado inteligente son MP4 (H264/AVC), MKV (H264/AVC), MOV (H264/AVC, Motion JPEG), AVI (indeo4), FLV (H264/AVC, vp6f) y WMV WMV2). Además, la funcionalidad permite el etiquetado de vídeos de hasta 300 MB. El etiquetado automático de recursos de vídeo se produce como procesamiento de recursos estándar (junto con la creación de miniaturas y la extracción de metadatos) después de cargar un vídeo o cuando se activa un reprocesamiento. Las etiquetas inteligentes se muestran en orden descendente de su [puntuación de confianza](#confidence-score-video-tag) en el recurso [!UICONTROL Propiedades]. El etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Sin embargo, puede [desactivar el etiquetado inteligente de vídeo](#opt-out-video-smart-tagging) en una carpeta.
 
 ## Etiquetado inteligente de vídeos al cargar {#smart-tag-assets-on-ingestion}
 
-Cuando [carga recursos de vídeo](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] como Cloud Service, los vídeos se procesan ![](assets/do-not-localize/assetprocessing.png). Una vez completado el procesamiento, consulte la ficha [!UICONTROL Básico] de la página Propiedades] del recurso. [!UICONTROL  Las etiquetas inteligentes se agregan automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. El servicio de asset compute aprovecha Adobe Sensei para crear estas etiquetas inteligentes.
+Cuando [carga recursos de vídeo](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] como [!DNL Cloud Service], los vídeos se procesan ![a5/>. ](assets/do-not-localize/assetprocessing.png) Una vez completado el procesamiento, consulte la ficha [!UICONTROL Básico] de la página Propiedades] del recurso. [!UICONTROL  Las etiquetas inteligentes se agregan automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. El servicio de asset compute aprovecha Adobe Sensei para crear estas etiquetas inteligentes.
 
 ![Las etiquetas inteligentes se agregan a los vídeos y se ven en la ficha Básico de las propiedades del recurso](assets/smart-tags-added-to-videos.png)
 
@@ -106,7 +106,7 @@ Para exclusión la generación automatizada de etiquetas inteligentes de vídeo 
 
 El umbral predeterminado para las etiquetas action y object en [!DNL Adobe Experience Manager] es 0,7 (debe ser un valor entre 0 y 1). Si algunos recursos de vídeo no están etiquetados con una etiqueta específica, indica que el algoritmo tiene menos del 70 % de confianza en las etiquetas predichas. Es posible que el umbral predeterminado no siempre sea óptimo para todos los usuarios. Por lo tanto, puede cambiar el valor de puntuación de confianza en la configuración OSGI.
 
-Para agregar la configuración OSGI de puntuación de confianza al proyecto implementado en [!DNL Adobe Experience Manager] como Cloud Service a través de Cloud Manager:
+Para agregar la configuración OSGI de puntuación de confianza al proyecto implementado en [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a [!DNL Cloud Manager]:
 
 * En el proyecto [!DNL Adobe Experience Manager] (`ui.config` desde Archetype 24, o anteriormente `ui.apps`) la configuración OSGi de `config.author`, incluya un archivo de configuración denominado `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con el siguiente contenido:
 
