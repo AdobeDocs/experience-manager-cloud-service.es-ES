@@ -16,15 +16,15 @@ ht-degree: 2%
 
 La fusión de recursos de Sling proporciona servicios para acceder a los recursos y combinarlos. Proporciona mecanismos diferentes (de diferenciación) para:
 
-* **[Superposiciones](/help/implementing/developing/introduction/overlays.md)** de recursos mediante las rutas [de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
+* **[](/help/implementing/developing/introduction/overlays.md)** Superposiciones de recursos que utilizan las rutas [ de ](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
 
-* **Sobrescribe** los cuadros de diálogo de componentes para la IU táctil (`cq:dialog`) mediante la jerarquía de tipos de recursos (mediante la propiedad `sling:resourceSuperType`).
+* **** Información general sobre los cuadros de diálogo de componentes para la IU táctil (`cq:dialog`), mediante la jerarquía de tipos de recursos (mediante la propiedad  `sling:resourceSuperType`).
 
 Con la fusión de recursos de Sling, los recursos y/o propiedades de superposición/anulación se combinan con los recursos/propiedades originales:
 
-* El contenido de la definición personalizada tiene una prioridad mayor que el del original (es decir, *se superpone* o *anula* ).
+* El contenido de la definición personalizada tiene una prioridad mayor que la del original (es decir, *se superpone* o *lo reemplaza*).
 
-* Cuando sea necesario, [las propiedades](#properties) definidas en la personalización indican cómo se va a utilizar el contenido combinado del original.
+* Cuando sea necesario, [propiedades](#properties) definidas en la personalización, indique cómo se utilizará el contenido combinado del original.
 
 <!-- Still links to reference material in 6.5 -->
 
@@ -32,34 +32,34 @@ Con la fusión de recursos de Sling, los recursos y/o propiedades de superposici
 >
 >La fusión de recursos de Sling y los métodos relacionados solo se pueden usar con la IU táctil (que es la única IU disponible para AEM como Cloud Service).
 
-### Objetivos de AEM {#goals-for-aem}
+### Objetivos para AEM {#goals-for-aem}
 
 Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 
 * asegúrese de que los cambios de personalización no se realicen en `/libs`.
-* reducir la estructura desde la que se replica `/libs`.
+* reduzca la estructura que se replica desde `/libs`.
 
-   Al utilizar la fusión de recursos Sling no se recomienda copiar toda la estructura de `/libs` porque esto resultaría en que se retuviera demasiada información en la personalización (normalmente `/apps`). La duplicación de información aumenta innecesariamente la posibilidad de problemas cuando el sistema se actualiza de alguna manera.
+   Al utilizar la fusión de recursos de Sling no se recomienda copiar toda la estructura de `/libs`, ya que esto provocaría que se retuviera demasiada información en la personalización (generalmente `/apps`). La duplicación de información aumenta innecesariamente la posibilidad de problemas cuando el sistema se actualiza de alguna manera.
 
 >[!CAUTION]
 >
->No ***debe*** cambiar nada en la `/libs` ruta.
+>Usted ***no debe*** cambiar nada en la ruta `/libs`.
 >
->Esto se debe a que el contenido de `/libs` se puede sobrescribir cada vez que se apliquen actualizaciones a la instancia.
+>Esto se debe a que el contenido de `/libs` puede sobrescribirse cada vez que se apliquen actualizaciones a la instancia.
 >
->* Las superposiciones dependen de las rutas [de](/help/implementing/developing/introduction/overlays.md#search-paths)búsqueda.
+>* Las superposiciones dependen de [rutas de búsqueda](/help/implementing/developing/introduction/overlays.md#search-paths).
    >
    >
-* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para establecer la conexión.
+* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para realizar la conexión.
 >
 >
-Sin embargo, las anulaciones suelen definirse en `/apps`, ya que la mejor práctica AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada debajo de `/libs`.
+Sin embargo, las sobrescrituras se definen generalmente en `/apps`, ya que lo más recomendable en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada en `/libs`.
 
 ### Propiedades {#properties}
 
 La combinación de recursos proporciona las siguientes propiedades:
 
-* `sling:hideProperties` ( `String` o `String[]`)
+* `sling:hideProperties` (  `String` o  `String[]`)
 
    Especifica la propiedad, o lista de propiedades, que se va a ocultar.
 
@@ -69,21 +69,21 @@ La combinación de recursos proporciona las siguientes propiedades:
 
    Indica si los recursos deben estar completamente ocultos, incluidos sus elementos secundarios.
 
-* `sling:hideChildren` ( `String` o `String[]`)
+* `sling:hideChildren` (  `String` o  `String[]`)
 
    Contiene el nodo secundario, o lista de nodos secundarios, que se va a ocultar. Se mantendrán las propiedades del nodo.
 
    El comodín `*` oculta todo.
 
-* `sling:orderBefore` ( `String`)
+* `sling:orderBefore` (  `String`)
 
    Contiene el nombre del nodo del mismo nivel en el que se debe colocar el nodo actual delante de.
 
-Estas propiedades afectan al modo en que los recursos/propiedades (desde `/libs`) correspondientes/originales se utilizan en la superposición/anulación (a menudo en `/apps`).
+Estas propiedades afectan al modo en que los recursos/propiedades correspondientes/originales (de `/libs`) se utilizan en la superposición/sobrescritura (a menudo en `/apps`).
 
 ### Creación de la estructura {#creating-the-structure}
 
-Para crear una superposición o sobrescritura, debe volver a crear el nodo original, con la estructura equivalente, en el destino (normalmente `/apps`). Por ejemplo:
+Para crear una superposición o sobrescritura, debe volver a crear el nodo original, con la estructura equivalente, en el destino (generalmente `/apps`). Por ejemplo:
 
 * Superposición
 
@@ -107,7 +107,7 @@ Para crear una superposición o sobrescritura, debe volver a crear el nodo origi
 
       `/apps/the-project/components/text/cq:dialog`
 
-Para crear cualquiera de estos elementos solo necesita volver a crear la estructura del esqueleto. Para simplificar la recreación de la estructura, todos los nodos intermediarios pueden ser de tipo `nt:unstructured` (no tienen que reflejar el tipo de nodo original; por ejemplo, en `/libs`).
+Para crear cualquiera de estos elementos solo necesita volver a crear la estructura del esqueleto. Para simplificar la recreación de la estructura, todos los nodos intermediarios pueden ser del tipo `nt:unstructured` (no tienen que reflejar el tipo de nodo original; por ejemplo, en `/libs`).
 
 Por lo tanto, en el ejemplo de superposición anterior, se necesitan los nodos siguientes:
 
@@ -122,25 +122,25 @@ Por lo tanto, en el ejemplo de superposición anterior, se necesitan los nodos s
 
 >[!NOTE]
 >
->Al utilizar la fusión de recursos Sling (es decir, al trabajar con la IU estándar con capacidad táctil) no se recomienda copiar toda la estructura desde `/libs` ya que se conservaría demasiada información `/apps`. Esto puede causar problemas cuando el sistema se ha actualizado de alguna manera.
+>Cuando se utiliza la fusión de recursos Sling (es decir, cuando se trata de la IU estándar con capacidad táctil), no se recomienda copiar toda la estructura de `/libs`, ya que se obtendría demasiada información en `/apps`. Esto puede causar problemas cuando el sistema se ha actualizado de alguna manera.
 
-### Use Cases {#use-cases}
+### Casos de uso {#use-cases}
 
 Estos, junto con la funcionalidad estándar, le permiten:
 
 * **Añadir una propiedad**
 
-   La propiedad no existe en la `/libs` definición, pero es necesaria en la `/apps` superposición/anulación.
+   La propiedad no existe en la definición `/libs`, pero se requiere en la superposición/sobrescritura `/apps`.
 
    1. Cree el nodo correspondiente dentro de `/apps`
    1. Cree la nueva propiedad en este nodo &quot;
 
 * **Redefinir una propiedad (no propiedades creadas automáticamente)**
 
-   La propiedad se define en `/libs`, pero se requiere un nuevo valor en la `/apps` superposición/anulación.
+   La propiedad se define en `/libs`, pero se requiere un nuevo valor en la superposición/sobrescritura `/apps`.
 
    1. Cree el nodo correspondiente dentro de `/apps`
-   1. Crear la propiedad coincidente en este nodo (en / `apps`)
+   1. Cree la propiedad coincidente en este nodo (en / `apps`)
 
       * La propiedad tendrá una prioridad basada en la configuración de Sling Resource Resolver.
       * Se admite el cambio del tipo de propiedad.
@@ -152,16 +152,16 @@ Estos, junto con la funcionalidad estándar, le permiten:
 
 * **Redefinición de una propiedad creada automáticamente**
 
-   De forma predeterminada, las propiedades creadas automáticamente (como `jcr:primaryType`) no están sujetas a una superposición o anulación para garantizar que se respete el tipo de nodo que se encuentra actualmente bajo `/libs` . Para imponer una superposición o anulación, debe volver a crear el nodo en `/apps`, ocultar explícitamente la propiedad y redefinirla:
+   De forma predeterminada, las propiedades creadas automáticamente (como `jcr:primaryType`) no están sujetas a una superposición o anulación para garantizar que se respete el tipo de nodo que se encuentra actualmente en `/libs`. Para imponer una superposición/sobrescritura, debe volver a crear el nodo en `/apps`, ocultar explícitamente la propiedad y redefinirla:
 
-   1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType`
+   1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType` deseado
    1. Cree la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en el de la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
 
       Esta propiedad, definida en `/apps`, ahora tendrá prioridad sobre la definida en `/libs`
 
 * **Redefinir un nodo y sus elementos secundarios**
 
-   El nodo y sus elementos secundarios se definen en `/libs`, pero se requiere una nueva configuración en la `/apps` superposición/sobrescritura.
+   El nodo y sus elementos secundarios se definen en `/libs`, pero se requiere una nueva configuración en la superposición/sobrescritura `/apps`.
 
    1. Combinar acciones de:
 
@@ -170,7 +170,7 @@ Estos, junto con la funcionalidad estándar, le permiten:
 
 * **Ocultar una propiedad**
 
-   La propiedad se define en `/libs`, pero no es necesaria en la `/apps` superposición/anulación.
+   La propiedad se define en `/libs`, pero no es necesaria en la superposición/anulación `/apps`.
 
    1. Cree el nodo correspondiente dentro de `/apps`
    1. Cree una propiedad `sling:hideProperties` de tipo `String` o `String[]`. Utilice esta opción para especificar las propiedades que se van a ocultar o ignorar. También se pueden utilizar comodines. Por ejemplo:
@@ -182,17 +182,17 @@ Estos, junto con la funcionalidad estándar, le permiten:
 
 * **Ocultar un nodo y sus elementos secundarios**
 
-   El nodo y sus elementos secundarios se definen en `/libs`, pero no son obligatorios en la `/apps` superposición/anulación.
+   El nodo y sus elementos secundarios se definen en `/libs`, pero no se requieren en la superposición/sobrescritura `/apps`.
 
    1. Cree el nodo correspondiente en /apps
-   1. Creación de una propiedad `sling:hideResource`
+   1. Crear una propiedad `sling:hideResource`
 
       * tipo: `Boolean`
       * seleccionado: `true`
 
 * **Ocultar elementos secundarios de un nodo (manteniendo las propiedades del nodo)**
 
-   El nodo, sus propiedades y sus elementos secundarios se definen en `/libs`. El nodo y sus propiedades son obligatorios en la `/apps` superposición/sobrescritura, pero algunos o todos los nodos secundarios no son necesarios en la `/apps` superposición/sobrescritura.
+   El nodo, sus propiedades y sus elementos secundarios se definen en `/libs`. El nodo y sus propiedades son obligatorios en la superposición/sobrescritura `/apps`, pero algunos o todos los nodos secundarios no son necesarios en la superposición/sobrescritura `/apps`.
 
    1. Cree el nodo correspondiente en `/apps`
    1. Cree la propiedad `sling:hideChildren`:
@@ -205,9 +205,9 @@ Estos, junto con la funcionalidad estándar, le permiten:
 
 * **Reordenar nodos**
 
-   El nodo y sus hermanos se definen en `/libs`. Se requiere una nueva posición para que el nodo se vuelva a crear en la `/apps` superposición/sobrescritura, donde la nueva posición se define en referencia al nodo del mismo nivel apropiado en `/libs`.
+   El nodo y sus hermanos se definen en `/libs`. Se requiere una nueva posición para que el nodo se vuelva a crear en la superposición/sobrescritura `/apps`, donde la nueva posición se define en referencia al nodo del mismo nivel apropiado en `/libs`.
 
-   * Utilice la `sling:orderBefore` propiedad:
+   * Utilice la propiedad `sling:orderBefore`:
 
       1. Cree el nodo correspondiente en `/apps`
       1. Cree la propiedad `sling:orderBefore`:
@@ -217,7 +217,7 @@ Estos, junto con la funcionalidad estándar, le permiten:
          * tipo: `String`
          * seleccionado: `<before-SiblingName>`
 
-### Invocación de la fusión de recursos Sling desde el código {#invoking-the-sling-resource-merger-from-your-code}
+### Invocación de la fusión de recursos Sling desde su código {#invoking-the-sling-resource-merger-from-your-code}
 
 La fusión de recursos de Sling incluye dos proveedores de recursos personalizados: uno para superposiciones y otro para anulaciones. Cada una de ellas se puede invocar en el código mediante un punto de montaje:
 
@@ -225,7 +225,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 >
 >Al acceder al recurso, se recomienda utilizar el punto de montaje adecuado.
 >
->Esto garantiza que se invoque la fusión de recursos Sling y se devuelva el recurso completamente combinado (lo que reduce la estructura desde la que se debe replicar `/libs`).
+>Esto garantiza que se invoque la fusión de recursos Sling y se devuelva el recurso completamente combinado (lo que reduce la estructura que debe replicarse desde `/libs`).
 
 * Superposición:
 
@@ -240,7 +240,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
    * propósito: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * uso: `mount point + absolute path`
    * ejemplo:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
