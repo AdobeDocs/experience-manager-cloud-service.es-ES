@@ -16,5 +16,5 @@ Las empresas utilizan certificados SSL para proteger sus sitios web y permitir a
 
 Cuando una entidad solicita un certificado de una entidad emisora de certificados (CA), esta completa un proceso de verificación. Esto puede ir desde la verificación del control de nombres de dominio hasta la recopilación de documentos de registro de compañías y acuerdos de suscriptor.
 
-Una vez verificada la información de una entidad, la CA firmará su clave pública utilizando la clave privada de la CA. Dado que todas las autoridades de certificados principales tienen certificados raíz en los exploradores web, el certificado de la entidad se vinculará a través de una *cadena de confianza* y el explorador web lo reconocerá como un certificado de confianza.
+Una vez verificada la información de una entidad, la CA firmará su clave pública utilizando la clave privada de la CA. Dado que todas las autoridades de certificados principales tienen certificados raíz en los exploradores Web, el certificado de la entidad se vinculará a través de una *cadena de confianza* y el explorador Web lo reconocerá como un certificado de confianza.
 
