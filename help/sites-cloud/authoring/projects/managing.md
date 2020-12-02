@@ -32,17 +32,17 @@ En la versión básica, AEM proporciona estas plantillas para elegir al crear un
 El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Para crear un nuevo proyecto:
 
 1. En **Proyectos**, pulse o haga clic en **Crear** y abrirá el asistente **Crear proyecto**:
-1. Select a template and click **Next**.
+1. Seleccione una plantilla y haga clic en **Siguiente**.
 
    ![Creación de un proyecto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
+1. Defina el **Título** y la **Descripción** y agregue una **Imagen en miniatura** si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
 
    ![Añadir detalles del proyecto](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el proyecto nuevo o regresar a la consola.
 
-### Asociación de recursos al proyecto {#associating-resources-with-your-project}
+### Asociación de recursos al proyecto  {#associating-resources-with-your-project}
 
 Dado que los proyectos le permiten agrupar los recursos en una entidad, puede asociar recursos al proyecto. Estos recursos se denominan **Mosaicos**. Los tipos de recursos que puede añadir se describen en [Mosaicos de proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
@@ -83,7 +83,7 @@ En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, p
 
 Para añadir elementos a un mosaico:
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. En **Proyectos**, vaya al proyecto y haga clic en el icono Añadir + del mosaico al que desee agregar un elemento.
 
    ![Añadir elemento en un mosaico](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
@@ -107,19 +107,19 @@ Para abrir un mosaico para que pueda ver o modificar elementos:
 
 ## Visualización de estadísticas del proyecto {#viewing-project-statistics}
 
-Para ver las estadísticas del proyecto, en la consola **Proyectos**, haga clic en **Mostrar vista de estadísticas**. Se muestra el nivel de finalización de cada proyecto. Click **Show Statistics View** again to go to the **Projects** console.
+Para ver las estadísticas del proyecto, en la consola **Proyectos**, haga clic en **Mostrar vista de estadísticas**. Se muestra el nivel de finalización de cada proyecto. Haga clic en **Mostrar Vista de estadísticas** nuevamente para ir a la consola **Proyectos**.
 
 ![Estadísticas de proyectos](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### Visualización de una línea de tiempo del proyecto {#viewing-a-project-timeline}
 
-La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Los recursos se muestran en el panel izquierdo. Click/tap **Timeline** to return to the **Projects** console.
+La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. Para realizar la vista de la línea de tiempo del proyecto, toque o haga clic en **Línea de tiempo**, luego ingrese al modo de selección y seleccione el proyecto. Los recursos se muestran en el panel izquierdo. Toque o haga clic **Línea de tiempo** para volver a la consola **Proyectos**.
 
 ![Línea de tiempo del proyecto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Visualización de proyectos activos/inactivos {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. Si el icono tiene una marca de verificación junto a él, muestra los proyectos activos.
+Para alternar entre los proyectos activos e inactivos, en la consola **Proyectos**, haga clic en **Alternar proyectos activos**. Si el icono tiene una marca de verificación junto a él, muestra los proyectos activos.
 
 ![Botón Alternar proyectos activos](/help/sites-cloud/authoring/assets/projects-active.png)
 
@@ -138,7 +138,7 @@ Para hacer que un proyecto sea inactivo (o activo):
    >[!NOTE]
    Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
-1. Tap/click **Edit**.
+1. Toque o haga clic **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
 
    ![Activación de un proyecto](/help/sites-cloud/authoring/assets/projects-activate.png)
