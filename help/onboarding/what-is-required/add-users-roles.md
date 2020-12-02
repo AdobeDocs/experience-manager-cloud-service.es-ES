@@ -15,7 +15,7 @@ ht-degree: 8%
 
 Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos para funcionar. Por ejemplo, solo algunos usuarios pueden establecer los Indicadores de rendimiento clave (KPI) para un programa. Estos permisos se agrupan lógicamente en funciones.
 
-[!UICONTROL Cloud Manager] define actualmente cuatro funciones para los usuarios que rigen la disponibilidad de funciones específicas:
+[!UICONTROL Cloud ] Manager define actualmente cuatro funciones para los usuarios que rigen la disponibilidad de funciones específicas:
 
 * Propietario del negocio
 * Administrador de programa
@@ -24,9 +24,9 @@ Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos p
 
 >[!CAUTION]
 >
->Para utilizar [!UICONTROL Cloud Manager], debe tener un Adobe ID y el contexto de producto de los servicios gestionados de Adobe.
+>Para utilizar [!UICONTROL Cloud Manager], debe tener un Adobe ID y el contexto de producto de los servicios administrados de Adobe.
 
-## Definiciones de funciones {#role-definitions}
+## Definiciones de roles {#role-definitions}
 
 >[!NOTE]
 >
@@ -34,10 +34,10 @@ Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos p
 
 La siguiente tabla resume los roles:
 
-| [!UICONTROL Funciones del Administrador] de nube | Descripción |
+| [!UICONTROL Cloud ] ManagerFunciones | Descripción |
 |--- |--- |
 | Propietario del negocio | Responsable de definir KPI, aprobar implementaciones de producción y anular errores importantes de tres niveles. |
-| Administrador de programa | Utiliza [!UICONTROL Cloud Manager] para realizar la configuración del equipo, revisar el estado y los KPI de vista. Puede aprobar errores importantes de tres niveles. |
-| Administrador de implementación | Gestiona las operaciones de implementación. Utiliza [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase/producción. Puede editar las tuberías de CD/CI. Puede aprobar errores importantes de tres niveles. Puede obtener acceso al repositorio Git. |
-| Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Utiliza principalmente [!UICONTROL Cloud Manager] para obtener el estado de vista. Puede obtener acceso al repositorio Git para la confirmación de código. |
-| Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el conmutador de Programas [!UICONTROL Cloud Manager] (después de haber navegado desde el [!UICONTROL Experience Cloud]) para acceder a AEM. |
+| Administrador de programa | Utiliza [!UICONTROL Administrador de nube] para realizar la configuración del equipo, revisar el estado y los KPI de vista. Puede aprobar errores importantes de tres niveles. |
+| Administrador de implementación | Gestiona las operaciones de implementación. Utiliza [!UICONTROL Cloud Manager] para ejecutar implementaciones de etapa/producción. Puede editar las tuberías de CD/CI. Puede aprobar errores importantes de tres niveles. Puede obtener acceso al repositorio Git. |
+| Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Utiliza principalmente [!UICONTROL Administrador de nube] para el estado de vista. Puede obtener acceso al repositorio Git para la confirmación de código. |
+| Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el conmutador de Programa [!UICONTROL Administrador de nube] (habiendo navegado desde [!UICONTROL Experience Cloud]) para acceder a AEM. |
