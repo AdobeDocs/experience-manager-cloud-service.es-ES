@@ -39,7 +39,7 @@ La barra de herramientas de ContextHub está disponible en modo de Vista previa.
 
 Cada módulo de IU proporciona un conjunto diferente de funciones, pero los siguientes tipos de funciones son comunes. Dado que los módulos de IU son ampliables, el desarrollador puede implementar otras funciones según sea necesario.
 
-### Contenido de la barra de herramientas {#toolbar-content}
+### Contenido de la barra de herramientas  {#toolbar-content}
 
 Los módulos de IU pueden mostrar datos de uno o más almacenes de ContextHub en la barra de herramientas. Los módulos de interfaz de usuario utilizan un icono y un título para identificarse.
 
@@ -55,7 +55,7 @@ Algunos módulos de interfaz de usuario muestran una superposición emergente cu
 
 La superposición emergente de un módulo puede incluir elementos de formulario que le permiten cambiar los datos del almacén de ContextHub. Si el contenido de la página viene determinado por los datos del almacén, puede utilizar el formulario y observar los cambios en el contenido de la página.
 
-### Modo de pantalla completa {#fullscreen-mode}
+### Modo de pantalla completa  {#fullscreen-mode}
 
 Las superposiciones emergentes pueden incluir un icono que toca o en el que hace clic para expandir el contenido emergente para cubrir toda la ventana o la pantalla del navegador.
 
