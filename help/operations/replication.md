@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Replicación {#replication}
 
-Adobe Experience Manager como Cloud Service utiliza la función [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido que se va a replicar a un servicio de canalización que se ejecuta en Adobe I/O y que está fuera del tiempo de ejecución de AEM.
+Adobe Experience Manager como Cloud Service utiliza la capacidad [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido que se va a replicar a un servicio de canalización que se ejecuta en Adobe I/O y que está fuera del tiempo de ejecución de AEM.
 
 >[!NOTE]
 >
@@ -26,9 +26,9 @@ Estas funciones AEM estándar para los autores no cambian con AEM Cloud Service.
 
 ### Horas de activación y desactivación: Configuración de activación {#on-and-off-times-trigger-configuration}
 
-Las posibilidades adicionales de Tiempo de **activación** y Tiempo de **desactivación** están disponibles en la ficha [Básico de Propiedades](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)de página.
+Las posibilidades adicionales de **Tiempo de activación** y **Tiempo de inactividad** están disponibles en la ficha [Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Para realizar la replicación automática para esto, debe habilitar la replicación **** automática en la configuración [de](/help/implementing/deploying/configuring-osgi.md) OSGi **Activada la configuración** del activador apagado:
+Para realizar la replicación automática para esto, debe habilitar **Replicar automáticamente** en la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuración del activador apagado**:
 
 ![Configuración del activador de activación de OSGi](/help/operations/assets/replication-on-off-trigger.png)
 
