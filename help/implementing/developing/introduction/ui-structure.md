@@ -65,7 +65,7 @@ El carril izquierdo se puede abrir u ocultar según sea necesario para mostrar:
 * **Referencias**
 * **Filtro**
 
-El valor predeterminado es Solo **** contenido (carril oculto).
+El valor predeterminado es **Solo contenido** (carril oculto).
 
 ![Carril izquierdo](assets/ui-left-rail.png)
 
@@ -81,7 +81,7 @@ El marco de contenido se encuentra en la sección derecha de la ventana, debajo 
 
 ![Marco de contenido](assets/ui-content-frame.png)
 
-### Marco del editor {#editor-frame}
+### Marco de editor {#editor-frame}
 
 El marco del editor activa las funciones de edición.
 
@@ -96,7 +96,7 @@ El marco del editor es un contenedor (abstracto) para todos los elementos de cre
 
 ### Panel lateral {#side-panel}
 
-Contiene tres fichas predeterminadas. Las fichas **Recursos** y **Componentes** permiten seleccionar dichos elementos y arrastrarlos desde el panel y colocarlos en la página. La ficha **Árbol** de contenido permite inspeccionar la jerarquía de contenido de la página.
+Contiene tres fichas predeterminadas. Las fichas **Recursos** y **Componentes** le permiten seleccionar dichos elementos y arrastrarlos desde el panel y colocarlos en la página. La ficha **Árbol de contenido** permite inspeccionar la jerarquía de contenido en la página.
 
 El panel lateral está oculto de forma predeterminada. Cuando se selecciona, se muestra en el lado izquierdo o se desliza para cubrir toda la ventana cuando el tamaño de la ventana es inferior a una anchura de 1024 píxeles; como, por ejemplo, en un dispositivo móvil.
 
@@ -120,7 +120,7 @@ En la ficha Componentes puede seleccionar entre el rango de componentes. Tambié
 
 ![Ficha Componentes](assets/ui-side-panel-components.png)
 
-### Panel lateral: árbol de contenido {#side-panel-content-tree}
+### Panel lateral - Árbol de contenido {#side-panel-content-tree}
 
 En la ficha Árbol de contenido puede vista la jerarquía de contenido de la página. Al hacer clic en una entrada de la ficha, se le salta y se selecciona el elemento de la página dentro del editor.
 
@@ -169,4 +169,4 @@ Según el espacio disponible, las barras de herramientas del componente se coloc
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obtener más información técnica, consulte el conjunto [de documentación de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) JS para el editor de páginas.
+Para obtener más información técnica, consulte el [conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para el editor de páginas.
