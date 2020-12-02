@@ -16,7 +16,7 @@ La solución nativa de la nube proporciona al usuario los permisos necesarios y 
 
 Un asistente para la creación de programas pedirá al usuario que envíe detalles, según el objetivo del usuario de crear el programa dentro de los límites de lo que está disponible para el cliente o la organización en cuestión.
 
-En el evento del acceso por primera vez a Cloud Manager o si no hay programas en el inquilino, el usuario verá **Crear su primera pantalla de Programa** . Si el usuario selecciona *Esc* o hace clic fuera del cuadro de diálogo, se muestra la siguiente pantalla:
+En el evento del acceso por primera vez a Cloud Manager o si no hay programas en el inquilino, el usuario verá **Crear su primera pantalla de Programa**. Si el usuario selecciona *Esc* o hace clic fuera del cuadro de diálogo, se muestra la siguiente pantalla:
 
 ![](assets/create-program1.png)
 
@@ -28,7 +28,7 @@ Según el objetivo del usuario de crear el programa dentro de los límites de lo
 ![](assets/create-sandbox.png)
 
 >[!NOTE]
->If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
+>Si ya existe un programa, verá **Añadir Programa** en la parte superior derecha de la página de aterrizaje, como se muestra en la figura siguiente.
 
 ![](assets/create-program-add.png)
 
@@ -44,7 +44,7 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
    ![](assets/program-create-setupdemo2.png)
 
-1. Una vez que se haya configurado el programa y se haya completado el paso de creación del proyecto, el usuario podrá acceder al vínculo **Administrar Git** , como se muestra en la figura siguiente:
+1. Una vez que se complete la configuración del programa y el paso de creación del proyecto, el usuario puede acceder al vínculo **Administrar Git**, como se muestra en la figura siguiente:
 
    ![](assets/create-program4.png)
 
@@ -53,7 +53,7 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
    >Para obtener más información sobre el acceso y la administración del repositorio Git mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager, consulte [Acceso a Git](/help/implementing/cloud-manager/accessing-git.md).
 
 
-1. Una vez creado el entorno de desarrollo, el usuario puede **acceder a AEM** vínculo, como se muestra en la figura siguiente:
+1. Una vez creado el entorno de desarrollo, el usuario puede **AEM** vincular, como se muestra en la figura siguiente:
 
    ![](assets/create-program-5.png)
 
@@ -68,7 +68,7 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
 ## Eliminación de un Programa de Simulador para pruebas {#delete-sandbox-program}
 
-A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
+Un usuario de Programa de Simulador para pruebas en *Business Owner* o *Deployment Manager* en Cloud Manager puede eliminar el conjunto de entornos de producción y etapa mediante la interfaz de usuario de Cloud Manager.
 
 >[!NOTE]
 >Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
@@ -79,14 +79,14 @@ La opción Eliminar está disponible en la página de aterrizaje, como se muestr
 
 O bien,
 
-Seleccione **Eliminar Programa** en la página Información general **de** Programa para eliminar el Programa del Simulador para pruebas.
+Seleccione **Eliminar Programa** en la página **Información general de Programa** para eliminar el Programa del Simulador para pruebas.
 
 ![](assets/delete-sandbox2.png)
 
 
-## Creación de un Programa normal {#create-regular-program}
+## Creación de un Programa regular {#create-regular-program}
 
-Un programa *regular* está dirigido a un usuario que esté familiarizado con AEM y Cloud Manager y esté listo para escribir, crear y probar código con el objetivo de implementarlo en Producción.
+Un programa *Regular* está destinado a un usuario que esté familiarizado con AEM y Cloud Manager y esté listo para escribir, crear y probar código con el objetivo de implementarlo en Producción.
 
 Siga los pasos a continuación para crear un programa normal:
 
@@ -108,7 +108,7 @@ Siga los pasos a continuación para crear un programa normal:
 
    ![](assets/set-up-prod3.png)
 
-1. Una vez que vea la tarjeta de programa en la página de aterrizaje, pase el ratón sobre ella para seleccionar el icono Administrador de nube y navegar hasta la página **Información general** del Administrador de nube.
+1. Una vez que vea la tarjeta de programa en la página de aterrizaje, pase el ratón por encima para seleccionar el icono Administrador de nube para navegar a la página Administrador de nube **Información general**.
 
    ![](assets/set-up-prod4.png)
 
@@ -118,7 +118,7 @@ Siga los pasos a continuación para crear un programa normal:
 
    >[!NOTE]
    >
-   >A regular program does not have **Auto-setup** feature.
+   >Un programa normal no tiene la función **Configuración automática**.
 
 
 
