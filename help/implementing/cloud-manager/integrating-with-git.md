@@ -12,9 +12,9 @@ ht-degree: 2%
 
 # Integrar Git con Adobe Cloud Manager {#git-integration}
 
-Adobe Cloud Manager se aprovisiona con un único repositorio Git que se utiliza para implementar código mediante las canalizaciones CI/CD de Cloud Manager. Los clientes pueden utilizar el repositorio de Git del Administrador de nube de forma predeterminada. Los clientes también tienen la opción de integrar un repositorio Git local o gestionado por el **cliente** con Cloud Manager.
+Adobe Cloud Manager se aprovisiona con un único repositorio Git que se utiliza para implementar código mediante las canalizaciones CI/CD de Cloud Manager. Los clientes pueden utilizar el repositorio de Git del Administrador de nube de forma predeterminada. Los clientes también tienen la opción de integrar un repositorio Git **administrado por el cliente** con Cloud Manager.
 
-## Información general sobre la integración de Git {#git-integration-overview}
+## Información general de integración de Git {#git-integration-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
@@ -26,7 +26,7 @@ Esta serie de vídeos explora varios casos de uso cuando se trata de integrar un
 * [Implementación de producción](#production-deployment)
 * [Sincronización de etiquetas de versión](#sync-tags)
 
-La serie de vídeos asume un conocimiento básico de la gestión de la entrada y el control de fuentes. Consulte los recursos [adicionales a continuación](#additional-resources) para obtener más detalles sobre Git.
+La serie de vídeos asume un conocimiento básico de la gestión de la entrada y el control de fuentes. Consulte los [recursos adicionales a continuación](#additional-resources) para obtener más detalles sobre git.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Prepare el código para una versión de producción en un repositorio de Git ges
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## Sincronización de etiquetas de versión {#sync-tags}
+## Sincronizando etiquetas de versión {#sync-tags}
 
 Sincronice las etiquetas de lanzamiento de un repositorio de Git de Cloud Manager con un repositorio de Git gestionado por el cliente para proporcionar visibilidad sobre qué código se ha implementado en los entornos de ensayo y producción.
 
