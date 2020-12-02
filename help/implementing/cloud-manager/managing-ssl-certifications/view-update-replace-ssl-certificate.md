@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Visualización de la actualización y sustitución de un certificado SSL  {#view-update-replace-ssl-certificate}
+# Visualización de la actualización y reemplazo de un certificado SSL {#view-update-replace-ssl-certificate}
 
 ## Visualización y actualización de un certificado SSL {#view-update}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 1. También puede cambiar el nombre que se ha utilizado para hacer referencia a un certificado desde esta pantalla. Nota Solo los usuarios con los permisos adecuados pueden realizar actualizaciones.
 1. Un certificado existente está a punto de caducar. El usuario ha renovado el certificado con el proveedor de certificados y desea reemplazar el certificado existente que está a punto de caducar. Nota Solo los usuarios con los permisos adecuados pueden realizar actualizaciones.
 
-## Sustitución de un certificado SSL {#replace-ssl-certificate}
+## Reemplazo de un certificado SSL {#replace-ssl-certificate}
 
 >[!NOTE]
 >Un usuario debe estar en la función Propietario de la empresa o Administrador de implementación para poder actualizar o reemplazar un certificado SSL en Cloud Manager.
