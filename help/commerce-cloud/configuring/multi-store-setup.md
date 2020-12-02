@@ -40,7 +40,7 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * En AEM vaya a Herramientas -> General -> [Navegador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado.
    * Cree una nueva configuración siguiendo los pasos descritos en el punto 2 anterior.
 
