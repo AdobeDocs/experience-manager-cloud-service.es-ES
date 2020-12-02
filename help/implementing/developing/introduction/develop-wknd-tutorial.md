@@ -22,7 +22,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador que
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[El Tutorial para desarrolladores de WKND está disponible aquí](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) y le guiará a través de la creación de un proyecto AEM con las últimas tecnologías y prácticas recomendadas.
+[El Tutorial para desarrolladores de WKND está disponible ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) aquí y le guía a través de la creación de un proyecto AEM utilizando las tecnologías y prácticas recomendadas más recientes.
 
 ## Conceptos principales {#core-concepts}
 
