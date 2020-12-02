@@ -26,17 +26,17 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Opcional) En la lista **[!UICONTROL Proyecto]** , seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, está seleccionada la opción **[!UICONTROL Ninguno]** . Si no desea asociar ningún proyecto con la tarea de revisión, mantenga esta selección.
+1. (Opcional) En la lista **[!UICONTROL Proyecto]**, seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, la opción **[!UICONTROL Ninguno]** está seleccionada. Si no desea asociar ningún proyecto con la tarea de revisión, mantenga esta selección.
 
    >[!NOTE]
    >
-   >En la lista **[!UICONTROL Proyectos]** solo están visibles los proyectos para los que tiene permisos de nivel Editor (o superior).
+   >En la lista **[!UICONTROL Projects]** solo se pueden ver los proyectos para los que tiene permisos de nivel de editor (o superior).
 
-1. Introduzca un nombre para la tarea de revisión y seleccione un aprobador en la lista **[!UICONTROL Asignar a]** .
+1. Escriba un nombre para la tarea de revisión y seleccione un aprobador en la lista **[!UICONTROL Asignar a]**.
 
    >[!NOTE]
    >
-   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en la lista **[!UICONTROL Asignar a]** .
+   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en la lista **[!UICONTROL Asignar a]**.
 
 1. Introduzca una descripción, la prioridad de tarea y la fecha de vencimiento de la tarea de revisión.
 
@@ -47,7 +47,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
    ![review_name](assets/review_name.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en AEM Assets como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
+1. Inicie sesión en AEM Assets como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y seleccione la tarea de revisión en la lista.
 
    ![notificación](assets/notification.png)
 
@@ -56,7 +56,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![review_tarea](assets/review_task.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, escriba un comentario y toque o haga clic en **[!UICONTROL Completar]** para confirmar.
+1. Toque o haga clic en el icono **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, escriba un comentario y toque/haga clic **[!UICONTROL Completar]** para confirmar.
 1. Vaya a la interfaz de usuario de Recursos y abra la carpeta. Los iconos de estado de aprobación de los recursos aparecen en las vistas Tarjeta y Lista.
 
    **Vista de tarjeta**
@@ -74,17 +74,17 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Opcional) En la lista **[!UICONTROL Proyecto]** , seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, está seleccionada la opción **[!UICONTROL Ninguno]** . Si no desea asociar ningún proyecto con la tarea de revisión, mantenga esta selección.
+1. (Opcional) En la lista **[!UICONTROL Proyecto]**, seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, la opción **[!UICONTROL Ninguno]** está seleccionada. Si no desea asociar ningún proyecto con la tarea de revisión, mantenga esta selección.
 
    >[!NOTE]
    >
-   >En la lista **[!UICONTROL Proyectos]** solo están visibles los proyectos para los que tiene permisos de nivel Editor (o superior).
+   >En la lista **[!UICONTROL Projects]** solo se pueden ver los proyectos para los que tiene permisos de nivel de editor (o superior).
 
-1. Introduzca un nombre para la tarea de revisión y seleccione un aprobador en la lista **[!UICONTROL Asignar a]** .
+1. Escriba un nombre para la tarea de revisión y seleccione un aprobador en la lista **[!UICONTROL Asignar a]**.
 
    >[!NOTE]
    >
-   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en la lista **[!UICONTROL Asignar a]** .
+   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en la lista **[!UICONTROL Asignar a]**.
 
 1. Introduzca una descripción, la prioridad de tarea y la fecha de vencimiento de la tarea de revisión.
 
@@ -93,11 +93,11 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
 1. Inicie sesión en AEM Assets como Aprobador y vaya a la consola Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
 1. En la página **[!UICONTROL Revisar tarea]**, examine los detalles de la tarea de revisión y, a continuación, pulse o haga clic en **[!UICONTROL Revisar]**.
-1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y toque o haga clic en el icono **[!UICONTROL Aprobar/Rechazar]** para aprobarlos o rechazarlos, según corresponda.
+1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y toque o haga clic en el icono **[!UICONTROL Aprobar/Rechazar]** para aprobar o rechazar los recursos, según corresponda.
 
    ![review_tarea_collection](assets/review_task_collection.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, escriba un comentario y toque o haga clic en **[!UICONTROL Completar]** para confirmar.
+1. Toque o haga clic en el icono **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, escriba un comentario y toque/haga clic **[!UICONTROL Completar]** para confirmar.
 1. Vaya a la consola Colecciones y abra la colección. Los iconos de estado de aprobación de los recursos aparecen en las vistas Tarjeta y Lista.
 
    **Vista de tarjeta**
