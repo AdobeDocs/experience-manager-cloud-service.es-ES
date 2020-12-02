@@ -12,7 +12,7 @@ ht-degree: 41%
 
 # Uso del Asistente {#using-wizard-to-create-an-aem-application-project}
 
-Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)del Proyecto.
+Para ayudar a que los nuevos clientes se inicien, Cloud Manager ahora puede crear un proyecto de AEM mínimo como punto de partida. Este proceso se basa en el [**AEM Arquetipo de proyecto**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Siga los pasos a continuación para crear un proyecto de aplicación AEM en Cloud Manager mediante el asistente:
@@ -25,7 +25,7 @@ Siga los pasos a continuación para crear un proyecto de aplicación AEM en Clou
 
    ![](assets/create-wizard2.png)
 
-1. El mosaico Creación de **proyectos en curso** se muestra en la pantalla Información general *de* Programa.
+1. El mosaico **Creación del proyecto en curso** se muestra en la pantalla *Información general del Programa*.
 
    ![](assets/create-wizard3.png)
 
