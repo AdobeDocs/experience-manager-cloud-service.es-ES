@@ -2,9 +2,9 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales a [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    Para seleccionar varios archivos, seleccione la tecla `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 Si cancela una operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
 1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de archivos cargados correctamente y los archivos que no se pudieron cargar.
@@ -178,10 +178,6 @@ Para configurar la herramienta, siga estos pasos:
    * [!UICONTROL Detener]: Finalice una configuración activa.
    * [!UICONTROL Estado] del trabajo: Vista el estado de la configuración cuando se utiliza en un trabajo de importación en curso o para un trabajo completado.
    * [!UICONTROL Recursos] de vista: Vista la carpeta destinatario si existe.
-
->[!NOTE]
->
->La carga masiva como parte de la migración de contenido desde otros sistemas cuando se configura e implementa en [!DNL Experience Manager] requiere una planificación, consideración y elección cuidadosas de las herramientas. Consulte la [guía de implementación](/help/implementing/deploying/overview.md) para obtener instrucciones sobre los enfoques de migración de contenido.
 
 ## Carga de recursos mediante clientes de escritorio {#upload-assets-desktop-clients}
 
