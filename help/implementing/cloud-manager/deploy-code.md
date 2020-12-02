@@ -16,12 +16,12 @@ ht-degree: 1%
 
 Una vez configurada la tubería de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
-1. Haga clic en **Implementar** desde el Administrador de nube para realizar el inicio del proceso de implementación.
+1. Haga clic en **Implementar** desde el Administrador de la nube para inicio del proceso de implementación.
 
    ![](assets/deploy-code1.png)
 
 
-1. Aparece la pantalla Ejecución **de la canalización** .
+1. Aparece la pantalla **Ejecución de tubería**.
 
    Haga clic en **Generar** para inicio del proceso.
 
@@ -42,8 +42,8 @@ Una vez configurada la tubería de producción (repositorio, entorno y entorno d
    La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la ramificación configurada exista, que los entornos estén disponibles.
-   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Generar detalles](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) de Entorno para obtener detalles sobre el entorno de compilación.
-   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte Prueba [de calidad del](/help/implementing/cloud-manager/code-quality-testing.md) código para obtener más detalles sobre el proceso de prueba.
+   * Prueba de generación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Detalles del Entorno de compilación](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
+   * Análisis de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener detalles sobre el proceso de prueba.
    * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para generar imágenes. Este proceso es responsable de transformar el contenido y los paquetes de despachante producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
    * Implementar en etapa
 
@@ -51,13 +51,13 @@ Una vez configurada la tubería de producción (repositorio, entorno y entorno d
    La **prueba de fase** incluye los siguientes pasos:
 
    * Prueba funcional del producto: Las ejecuciones de canalizaciones del Administrador de nube admitirán la ejecución de pruebas que se ejecuten con el entorno de la fase.
-Consulte Prueba [funcional](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) del producto para obtener más detalles.
+Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obtener más detalles.
 
    * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.\
-      Consulte Prueba [funcional](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) personalizada para obtener más detalles.
+      Consulte [Prueba funcional personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más detalles.
 
    * Auditoría de experiencias: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencia después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
-Consulte [Explicación de los resultados](/help/implementing/cloud-manager/experience-audit-testing.md) de la auditoría de experiencias para obtener más detalles.
+Consulte [Explicación de los resultados de la auditoría de experiencia](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
 
       ![](assets/testing-tab.png)
 
@@ -94,7 +94,7 @@ Cuando Cloud Manager se implementa en topologías que no son de producción, el 
 
    1. Se realiza una copia de seguridad de las configuraciones actuales y se copian en una ubicación temporal
    1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de despachante para obtener más detalles. Esto borra los directorios para asegurarse de que no quedan archivos huérfanos.
-   1. El artefacto se extrae en el `httpd` directorio.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
+   1. El artefacto se extrae en el directorio `httpd`.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de distribución de AMS y no se pueden cambiar.
    1. Apache realiza una prueba de configuración. Si no se encuentran errores, se vuelve a cargar el servicio. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve al Administrador de nube.
    1. Cada ruta especificada en la configuración de la canalización se invalida o se borra de la caché del despachante.
 
