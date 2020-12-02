@@ -261,7 +261,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
-## Modos de página   {#page-modes}
+## Modos de página    {#page-modes}
 
 Al editar una página, existen modos que permiten acciones diferentes:
 
@@ -283,6 +283,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
 >* Existe un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
+
 >
 
 
@@ -291,7 +292,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 
 A menudo, durante la creación, es necesario seleccionar otro recurso, como cuando se define un vínculo a otra página o recurso o bien cuando se selecciona una imagen. Para poder seleccionar una ruta con facilidad, los [campos de rutas](#path-fields) ofrecen la opción de completado automático y el [navegador de rutas](#path-browser) permite una selección más sólida.
 
-### Campos de rutas   {#path-fields}
+### Campos de rutas    {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-cloud/authoring/fundamentals/components.md).
 
