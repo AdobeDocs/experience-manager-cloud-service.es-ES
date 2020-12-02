@@ -17,15 +17,15 @@ Los metadatos son información adicional sobre el recurso que se puede buscar. S
 
 Dado que las compañías necesitan vocabularios de metadatos fiables y controlados, AEM Assets no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar campos de metadatos nuevos para los recursos, los desarrolladores sí pueden hacerlo. Consulte [Creación de nuevas propiedades de metadatos para recursos](meta-edit.md#editing-metadata-schema).
 
-## Edición de metadatos de un recurso {#editing-metadata-for-an-asset}
+## Edición de metadatos para un recurso {#editing-metadata-for-an-asset}
 
 Para editar metadatos:
 
 1. Realice una de las acciones siguientes:
 
-   * En la interfaz de usuario de Recursos, seleccione el recurso y toque o haga clic en el icono Propiedades **[!UICONTROL de la]** Vista de la barra de herramientas.
-   * En la miniatura del recurso, seleccione la acción rápida Propiedades de la **[!UICONTROL Vista]** .
-   * En la página de recursos, toque o haga clic en Propiedades **[!UICONTROL de]** Vista en la barra de herramientas.
+   * En la interfaz de usuario de Recursos, seleccione el recurso y toque o haga clic en el icono **[!UICONTROL Propiedades de la Vista]** de la barra de herramientas.
+   * En la miniatura del recurso, seleccione la acción rápida **[!UICONTROL Propiedades de la Vista]**.
+   * En la página de recursos, toque o haga clic en **[!UICONTROL Propiedades de la Vista]** en la barra de herramientas.
 
    La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extrajeron automáticamente al cargarse (ingeridos) en AEM Assets.
 
@@ -41,9 +41,9 @@ Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binar
 
 ## Edición del Esquema de metadatos {#editing-metadata-schema}
 
-Para obtener más información sobre cómo editar el esquema de metadatos, consulte [Edición de formularios](metadata-schemas.md#edit-metadata-schema-forms)de esquema de metadatos.
+Para obtener más información sobre cómo editar el esquema de metadatos, consulte [Edición de formularios de esquema de metadatos](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registro de una Área de nombres personalizada en AEM {#registering-a-custom-namespace-within-aem}
+## Registro de una Área de nombres personalizada dentro de AEM {#registering-a-custom-namespace-within-aem}
 
 Puede agregar sus propias Áreas de nombres dentro de AEM. Al igual que hay Áreas de nombres predefinidas como cq, jcr y sling, puede tener una Área de nombres para los metadatos del repositorio y el procesamiento de XML.
 
