@@ -4,9 +4,9 @@ description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Ado
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1930'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Recursos de Enterprise Manager le permite editar los metadatos de varios recurso
 
 ## Metadatos personalizados mediante el perfil de procesamiento {#metadata-compute-service}
 
-Los recursos como Cloud Service pueden generar metadatos personalizados para un recurso mediante servicios nativos de nube. Configure un perfil de procesamiento para generar metadatos personalizados. Consulte [cómo utilizar el perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
+Los recursos como [!DNL Cloud Service] pueden generar metadatos personalizados para un recurso mediante servicios nativos de nube. Configure un perfil de procesamiento para generar metadatos personalizados. Consulte [cómo utilizar el perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ![Representación de metadatos en el perfil de procesamiento](assets/processing-profile-metadata.png)
 
