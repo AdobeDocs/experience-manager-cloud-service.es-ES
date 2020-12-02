@@ -57,7 +57,7 @@ La navegación global dispone de dos paneles, representados por iconos en el lad
 
 Las opciones disponibles en estos paneles se describen a continuación.
 
-### Panel de navegación    {#navigation-panel}
+### Panel de navegación     {#navigation-panel}
 
 El panel Navegación:
 
@@ -226,7 +226,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >
 >Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas    {#quick-actions}
+## Acciones rápidas     {#quick-actions}
 
 En la [vista de tarjeta](#card-view), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -248,7 +248,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 >
 >De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos    {#selecting-resources}
+### Selección de recursos     {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -340,7 +340,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](#the-header).
 
-### Vista de lista    {#list-view}
+### Vista de lista     {#list-view}
 
 ![Vista de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
