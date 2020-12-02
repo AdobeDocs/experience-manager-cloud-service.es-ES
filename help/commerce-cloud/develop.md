@@ -32,7 +32,7 @@ Se recomienda contar con un entorno de desarrollo local para trabajar con proyec
 
 El complemento CIF se proporciona como un archivo de funciones Sling. El archivo zip disponible en el portal de distribución de software incluye dos archivos de archivo de funciones Sling, uno para el Autor de AEM y otro para las instancias de AEM Publish.
 
-**¿Es novato en el uso de AEM as a Cloud Service?** Consulte [una guía más detallada sobre la configuración de un entorno de desarrollo local con el AEM como SDK](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)de Cloud Service.
+**¿Es novato en el uso de AEM as a Cloud Service?** Consulte  [una guía más detallada sobre la configuración de un entorno de desarrollo local con el AEM como SDK](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) de Cloud Service.
 
 ### Software necesario
 
@@ -47,7 +47,7 @@ Lo siguiente debe instalarse de manera local:
 
 ### Acceso al complemento CIF.
 
-El complemento CIF se puede descargar como archivo zip desde el [portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html). The zip file contains the CIF add-on as **Sling Feature archive**, it is not an AEM package. Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con una licencia de AEM as a Cloud Service.
+El complemento CIF se puede descargar como archivo zip desde el [portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). El archivo zip contiene el complemento CIF como **archivo de características de Sling**, no es un paquete de AEM. Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con una licencia de AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -89,7 +89,7 @@ Para el desarrollo del complemento CIF local mediante el uso del SDK de AEM as a
 
 7. Inicio del servidor proxy GraphQL local
 
-   Para que el extremo de Magento GraphQL esté disponible localmente para el complemento CIF y los componentes CIF, utilice el siguiente comando. El punto final de GraphQL estará disponible en `http://localhost:3002/graphql`.
+   Para que el extremo de Magento GraphQL esté disponible localmente para el complemento CIF y los componentes CIF, utilice el siguiente comando. El extremo GraphQL estará disponible a continuación en `http://localhost:3002/graphql`.
 Ejemplo con Mac OSX:
 
    ```bash
@@ -109,7 +109,7 @@ Ejemplo con Mac OSX:
 
    Vaya a la configuración del Cloud Service CIF (Herramientas > Cloud Services > Configuración CIF). Abra la vista de propiedades de la configuración utilizada por el proyecto.
 
-   Para la `GraphQL Proxy Path` propiedad, utilice el extremo del servidor proxy local `http://localhost:3002/graphql`. Guarde la configuración.
+   Para la propiedad `GraphQL Proxy Path` utilice el extremo del servidor proxy local `http://localhost:3002/graphql`. Guarde la configuración.
 
 >[!NOTE]
 >
@@ -187,4 +187,4 @@ Para comenzar con la Tienda de referencia de Venia, simplemente clone el reposit
 
 - [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
 - [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia)
-- [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)
+- [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
