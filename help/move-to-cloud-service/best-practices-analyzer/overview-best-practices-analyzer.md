@@ -33,4 +33,4 @@ Se proporciona información adicional sobre las categorías y posibles implicaci
 >[!NOTE]
 >El informe del Analizador de optimizaciones acelera el proceso de estimación del tiempo y el costo que se requiere para realizar la transición a AEM como Cloud Service al proporcionar información que de otra manera tendría que recopilarse y evaluarse manualmente.
 
-También puede descargar el informe del Analizador de optimizaciones desde la instancia de AEM. Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+También puede descargar el informe del Analizador de optimizaciones desde la instancia de AEM. Consulte [Visualización del informe del Analizador de optimizaciones](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más detalles.
