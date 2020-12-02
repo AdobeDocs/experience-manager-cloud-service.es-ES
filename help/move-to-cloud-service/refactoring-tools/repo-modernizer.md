@@ -16,28 +16,28 @@ Repository Modernizer es una utilidad desarrollada para reestructurar los paquet
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager como Cloud Service aporta muchas nuevas funciones y posibilidades a sus proyectos AEM. Sin embargo, es necesario realizar algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de **contenido** y **código** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM Estructura](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) del proyecto para obtener más detalles sobre la nueva estructura del proyecto AEM para Cloud Service.
+Adobe Experience Manager como Cloud Service aporta muchas nuevas funciones y posibilidades a sus proyectos AEM. Sin embargo, es necesario realizar algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de **contenido** y **código** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [Estructura del proyecto de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) para obtener más detalles sobre la nueva estructura del proyecto de AEM para Cloud Service.
 
 El Modernizador de repositorio crea una estructura de proyecto AEM Cloud Service compatible creando la siguiente estructura de implementación:
 
-* `ui.apps` se implementa en `/apps` y contiene todo el código
+* `ui.apps` el paquete se implementa  `/apps` y contiene todo el código
 
-* `ui.content` se implementa en áreas de tiempo de ejecución (p. ej. `/content`, `/conf`, `/home`, o cualquier cosa que no `/apps`) y contiene todo el contenido y la configuración.
+* `ui.content` se implementa en áreas de tiempo de ejecución (p. ej.  `/content`,  `/conf`,  `/home`, o cualquier cosa que no  `/apps`) y contiene todo el contenido y la configuración.
 
-* `all` es un paquete de contenedor que contiene los subpaquetes `ui.apps` y `ui.content`.
+* `all` es un paquete de contenedor que contiene los subpaquetes  `ui.apps` y  `ui.content`.
 
 >[!NOTE]
->La estructura del proyecto se basa en *Archetype 24* para paquetes y sus `pom.xml/filter.xml files`. Consulte [Archetype 24](https://github.com/adobe/aem-project-archetype) para obtener más información.
+>La estructura del proyecto se basa en *Archetype 24* para paquetes y sus `pom.xml/filter.xml files`. Consulte [Archetype 24](https://github.com/adobe/aem-project-archetype) para obtener más detalles.
 
-## Uso del modernizador de repositorio {#using-repo-modernizer}
+## Uso del Modernizador de repositorio {#using-repo-modernizer}
 
 * Mediante Adobe I/O CLI: Se recomienda utilizar el Modernizador de repositorio mediante `aio-cli-plugin-aem-cloud-service-migration` (AEM como un complemento de refactorización de código de Cloud Service para Adobe I/O CLI).
 
-   Consulte Recurso **[Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para aprender a instalar y utilizar el complemento.
+   Consulte **[Recurso de Git: aio-cli-plugin-aem-cloud-service-Migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para aprender a instalar y utilizar el complemento.
 
 * Como utilidad independiente: El Modernizador de repositorio también se puede ejecutar como una utilidad independiente.
 
-   Consulte Recurso **[Git: Modernizador](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** de repositorio para aprender a utilizar esta herramienta.
+   Consulte **[Recurso de Git: Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** para aprender a utilizar esta herramienta.
 
    >[!NOTE]
    >
