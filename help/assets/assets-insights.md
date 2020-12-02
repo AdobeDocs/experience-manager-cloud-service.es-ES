@@ -19,25 +19,25 @@ Assets Insights captura los detalles de la actividad del usuario, como el númer
 
 Para que Assets Insights capture estadísticas de uso de imágenes de un sitio web, debe incluir el código incrustado de la imagen en el código del sitio web.
 
-Para permitir que Asset Insights muestre las estadísticas de uso de los recursos, primero configure la función para recuperar datos de sistema de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de perspectivas](#configure-asset-insights)de recursos.
+Para permitir que Asset Insights muestre las estadísticas de uso de los recursos, primero configure la función para recuperar datos de sistema de informes de Adobe Analytics. Para obtener más información, consulte [Configuración de perspectivas de recursos](#configure-asset-insights).
 
 >[!NOTE]
 >
 >Las perspectivas solo son compatibles y se proporcionan para imágenes.
 
-## Estadísticas de vista de una imagen {#viewing-statistics-for-an-image}
+## Estadísticas de vista para una imagen {#viewing-statistics-for-an-image}
 
 Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la página de metadatos.
 
-1. En la interfaz de usuario de Recursos, seleccione la imagen y, a continuación, toque **[!UICONTROL Propiedades]** en la barra de herramientas.
+1. En la interfaz de usuario de Recursos (IU), seleccione la imagen y, a continuación, toque **[!UICONTROL Propiedades]** en la barra de herramientas.
 1. En la página Propiedades, toque **[!UICONTROL Perspectivas]**.
-1. Revise los detalles de uso del recurso en la ficha **[!UICONTROL Perspectivas]** . La sección **[!UICONTROL Puntuación]** describe el uso total de recursos y las recuperaciones de rendimiento de un recurso.
+1. Revise los detalles de uso del recurso en la ficha **[!UICONTROL Perspectivas]**. La sección **[!UICONTROL Puntuación]** describe el uso total de los recursos y las recuperaciones de rendimiento de un recurso.
 
    La puntuación de uso describe la cantidad de veces que se utiliza el recurso en varias soluciones.
 
-   La puntuación de **[!UICONTROL impresiones]** es el número de veces que el recurso se carga en el sitio web. El número que se muestra en **[!UICONTROL Clics]** es el número de veces que se hace clic en el recurso.
+   La puntuación **[!UICONTROL Impresiones]** es el número de veces que el recurso se carga en el sitio Web. El número que se muestra en **[!UICONTROL Clics]** es el número de veces que se hace clic en el recurso.
 
-1. Revise la sección Estadísticas **[!UICONTROL de]** uso para saber de qué entidades formaba parte el recurso y qué soluciones creativas lo utilizaron recientemente. Cuanto mayor sea el uso, buenas serán las posibilidades de que el recurso sea popular entre los usuarios. Los datos de uso se muestran en los siguientes encabezados:
+1. Revise la sección **[!UICONTROL Estadísticas de uso]** para saber de qué entidades formaba parte el recurso y qué soluciones creativas lo utilizaron recientemente. Cuanto mayor sea el uso, buenas serán las posibilidades de que el recurso sea popular entre los usuarios. Los datos de uso se muestran en los siguientes encabezados:
 
    * **[!UICONTROL Recurso]**: Número de veces que el recurso formaba parte de una colección o un recurso compuesto.
    * **[!UICONTROL Web y móvil]**: El número de veces que el recurso formaba parte de sitios web y aplicaciones.
@@ -58,7 +58,7 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
    >
    >A diferencia de los datos de la sección Soluciones, la sección Estadísticas de rendimiento muestra los datos más recientes.
 
-1. Para obtener el código incrustado del recurso que incluye en los sitios web con el fin de obtener datos de rendimiento, toque o haga clic en **[!UICONTROL Obtener código]** incrustado debajo de la miniatura del recurso. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. Para obtener el código incrustado del recurso que incluye en los sitios web con el fin de obtener datos de rendimiento, toque o haga clic en **[!UICONTROL Obtener código incrustado]** debajo de la miniatura del recurso. <!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -67,15 +67,15 @@ Puede realizar la vista de las puntuaciones de perspectivas de recursos desde la
 Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente mediante la **[!UICONTROL Vista de la información]**.
 
 1. En la interfaz de usuario de Recursos, desplácese a la carpeta que contenga los recursos para los que desee realizar la vista.
-1. Toque o haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija **[!UICONTROL Vista]** de perspectivas.
+1. Toque o haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija **[!UICONTROL Vista de perspectivas]**.
 1. La página muestra las puntuaciones de uso de los recursos. Compare las clasificaciones de los distintos recursos y obtenga perspectivas.
 
 ## Programar trabajo en segundo plano {#scheduling-background-job}
 
-Asset Insights obtiene de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ desde la consola web.
+Asset Insights obtiene de forma periódica los datos de uso de los recursos de los grupos de informes de Adobe Analytics. De forma predeterminada, Asset Insights ejecuta un trabajo en segundo plano cada 24 horas a las 2 de la madrugada para recuperar datos. Sin embargo, puede modificar tanto la frecuencia como la hora configurando el servicio de sincronización de **[!UICONTROL Informe de rendimiento de recursos de Adobe CQ DAM]** desde la consola web.
 
 1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-1. Abra la configuración del servicio Trabajo **[!UICONTROL de sincronización de informes de rendimiento de recursos DAM de]** Adobe CQ.
+1. Abra la configuración del servicio **[!UICONTROL Trabajo de sincronización de informes de rendimiento de recursos DAM de Adobe CQ]**.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -100,8 +100,8 @@ Adobe Experience Manager (AEM) Assets obtiene de Adobe Analytics datos de uso de
 
    *Figura: Configuración de Adobe Analytics para Assets Insights en AEM*
 
-1. Pulse o haga clic en **[!UICONTROL Autenticar]**. Después de autenticar AEM las credenciales, en la lista Grupo **[!UICONTROL de]** informes, elija un grupo de informes de Adobe Analytics desde donde desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
-1. Después de AEM configurar el grupo de informes, toque **[!UICONTROL Listo]**.
+1. Pulse o haga clic en **[!UICONTROL Autenticar]**. Después de AEM autenticar las credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes de Adobe Analytics desde el que desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Después de AEM configure el grupo de informes, toque **[!UICONTROL Listo]**.
 
 ### Rastreador de páginas {#page-tracker}
 
