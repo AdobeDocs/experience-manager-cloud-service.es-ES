@@ -38,7 +38,7 @@ Generalmente, la barra de herramientas ofrece las siguientes opciones:
 
 Para los componentes basados en texto, haga clic en el botón de modo de pantalla completa ![RTE de pantalla completa](/help/sites-cloud/authoring/assets/editing-full-screen.png) desde la [barra de herramientas](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) para abrir el editor de texto enriquecido y ocultar el resto del contenido de la página.
 
-El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la fase de creación. The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la fase de creación. La disponibilidad de las opciones [depende de la configuración](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![RTE en modo de pantalla completa](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
