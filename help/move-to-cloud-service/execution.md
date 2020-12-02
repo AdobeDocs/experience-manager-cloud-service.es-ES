@@ -61,7 +61,7 @@ Consulte la [Estructura del paquete recomendado](https://docs.adobe.com/content/
 
 Existen algunas directrices de desarrollo adicionales que debe tener en cuenta al desarrollar AEM as a Cloud Service. Consulte las [Directrices de desarrollo de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/development-guidelines.html) para obtener más información.
 
-Desde la fase de planificación, debe tener una lista de áreas que deben refactorizarse para ser compatibles con Cloud Service. También debería revisar las [Directrices de desarrollo](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/development-guidelines.html) para obtener más detalles sobre cómo refactorizar y optimizar el código para pasar a Cloud Service.
+Desde la fase de planificación, debe tener una lista de áreas que deben refactorizarse para ser compatibles con Cloud Service. También debería revisar las [Directrices de desarrollo](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) para obtener más detalles sobre cómo refactorizar y optimizar el código para pasar a Cloud Service.
 
 Para acelerar algunas de las tareas de refactorización de código, puede utilizar las siguientes herramientas:
 
