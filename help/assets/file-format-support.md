@@ -1,6 +1,6 @@
 ---
 title: Formatos de archivo y tipos MIME admitidos
-description: Formatos de archivo y tipos MIME admitidos [!DNL Experience Manager Assets] por el Cloud Service.
+description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
@@ -11,25 +11,25 @@ ht-degree: 10%
 ---
 
 
-# [!DNL Assets] formatos de archivo admitidos {#supported-file-formats}
+# [!DNL Assets] formatos de archivo admitidos  {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] como Cloud Service admite funciones básicas de gestor de contenido: almacenamiento, administración de metadatos en línea, creación de versiones, carga y descarga, etc. — para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto admite distintos formatos.
 
-Además, [!DNL Experience Manager Assets] ofrece una mayor compatibilidad para generar previsualizaciones y representaciones y extraer metadatos y texto para la indexación de texto completo. Este apoyo ampliado se presta mediante [los microservicios](asset-microservices-configure-and-use.md)de activos.
+Además, [!DNL Experience Manager Assets] proporciona soporte ampliado para generar previsualizaciones y representaciones y extraer metadatos y texto para indexar texto completo. Este soporte ampliado se proporciona mediante [microservicios de recursos](asset-microservices-configure-and-use.md).
 
 Los aspectos destacados de la conversión de recursos mediante los microservicios de recursos son:
 
-* Formatos [de archivo de](#adobe-formats) Adobe clave producidos por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]y [!DNL Adobe Acrobat] o PDF.
-* Formatos [de archivo de](#image-formats)imágenes clave.
-* [Formatos](#camera-raw-formats) de archivo Camera Raw para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Formatos [de](#document-formats)documento comunes, incluidos los formatos Microsoft Office y Open Documento.
+* Formatos de archivo clave [Adobe](#adobe-formats) producidos por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] y [!DNL Adobe Acrobat] o PDF.
+* Formatos de archivo de imágenes [clave](#image-formats).
+* [Camera Raw ](#camera-raw-formats) formatos de archivo para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
+* Formatos comunes de [documento](#document-formats), incluidos los formatos de Microsoft Office y Documento abierto.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
 La leyenda siguiente describe el nivel de asistencia.
 
 | Nivel de asistencia | Descripción |
 | ------------- | --------------------------- |
-| ✓ | Compatible |
+| xib | Compatible |
 | * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
 
@@ -37,49 +37,49 @@ La leyenda siguiente describe el nivel de asistencia.
 
 | Formato de archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | ✓ | - | ✓ | ✓ |
-| COLLAGE | - | - | ✓ | - |
-| DN | ✓ | - | ✓ | ✓ |
-| IDEAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ * |
-| INDT | - | - | ✓ | - |
-| PDF | ✓ | ✓ | ✓ | ✓ |
-| PROTO | - | - | ✓ | - |
-| PSB | ✓ | - | ✓ | ✓ |
-| PSD | ✓ | - | ✓ | ✓ |
-| XD | ✓ | - | ✓ | ✓ |
+| AI | xib | - | xib | xib |
+| COLLAGE | - | - | xib | - |
+| DN | xib | - | xib | xib |
+| IDEAS | - | - | xib | - |
+| INDD | xib | - | xib | xib |
+| INDT | - | - | xib | - |
+| PDF | xib | xib | xib | xib |
+| PROTO | - | - | xib | - |
+| PSB | xib | - | xib | xib |
+| PSD | xib | - | xib | xib |
+| XD | xib | - | xib | xib |
 
-\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de Previsualización con Documentos, Tamaño]** de Previsualización) para incrustar una representación más grande.
+\* Para archivos [!DNL Adobe InDesign] (INDD), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de Previsualización con Documentos, Tamaño de Previsualización]**) para incrustar una representación más grande.
 
 ## Formatos de imagen {#image-formats}
 
 | Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura | Recortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | ✓ | - | ✓ | ✓ |
-| EPS | - | ✓ | - | - |
-| GIF | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ |
-| PNG | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | - |
-| SVG | ✓ | - | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
-| RGB | ✓ | ✓ | ✓ | ✓ |
-| RGBA | ✓ | ✓ | ✓ | ✓ |
+| BMP | xib | - | xib | xib |
+| EPS | - | xib | - | - |
+| GIF | xib | xib | xib | xib |
+| JPEG | xib | xib | xib | xib |
+| PNG | xib | xib | xib | xib |
+| TIFF | xib | xib | xib | - |
+| SVG | xib | - | xib | xib |
+| SGI | xib | xib | xib | xib |
+| RGB | xib | xib | xib | xib |
+| RGBA | xib | xib | xib | xib |
 
 ## Formatos de imagen en [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de previsualización | Entregar representación dinámica | Descargar representación dinámica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | - | - | - | - |
-| PSD* | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
+| PNG | xib | xib | xib | xib | xib |
+| GIF | xib | xib | xib | xib | xib |
+| TIFF | xib | xib | xib | xib | xib |
+| JPEG | xib | xib | xib | xib | xib |
+| BMP | xib | - | - | - | - |
+| PSD   answer | xib | - | - | - | - |
+| EPS | xib | xib | xib | xib | xib |
+| PICT | xib | - | - | - | - |
 
-† La imagen combinada se extrae del archivo PSD. Es una imagen generada por [!DNL Adobe Photoshop] y incluida en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
+† La imagen combinada se extrae del archivo PSD. Es una imagen generada por [!DNL Adobe Photoshop] y que se incluye en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
 Los siguientes subtipos de formatos de archivo de imagen rasterizada que no se admiten en [!DNL Dynamic Media]:
 
@@ -94,48 +94,48 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada que no se a
 
 Se admite la siguiente lista de formatos 3D.
 
-See also [Working with 3D assets in Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Previsualización de miniaturas | previsualización 3D | Envío de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | xib | xib | xib | - | xib | xib | - | - |
+| gLB | xib | xib | xib | xib | xib | - | xib | xib |
+| gLTF | xib | xib | xib | - | xib | - | xib | - |
+| OBJ | xib | xib | xib | xib | xib | - | xib | xib |
+| STL | xib | xib | xib | xib | xib | - | xib | xib |
+| USDz | xib | xib | xib | xib | xib | - | - | xib |
 
-## [!DNL Camera RAW] formatos {#camera-raw-formats}
+## [!DNL Camera RAW] formatos  {#camera-raw-formats}
 
 | Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | ✓ | ✓ | ✓ |
-| ARW | ✓ | ✓ | ✓ |
-| CR2 | ✓ | ✓ | ✓ |
-| CR3 | ✓ | ✓ | ✓ |
-| CRW | ✓ | ✓ | ✓ |
-| DCR | ✓ | ✓ | ✓ |
-| DNG | ✓ | ✓ | ✓ |
-| FEDER | ✓ | ✓ | ✓ |
-| FFF | ✓ | ✓ | ✓ |
-| GPR | ✓ | ✓ | ✓ |
-| IIQ | ✓ | ✓ | ✓ |
-| KDC | ✓ | ✓ | ✓ |
-| MEF | ✓ | ✓ | ✓ |
-| MFW | ✓ | ✓ | ✓ |
-| MOS | ✓ | ✓ | ✓ |
-| MRW | ✓ | ✓ | ✓ |
-| NEF | ✓ | ✓ | ✓ |
-| NRW | ✓ | ✓ | ✓ |
-| ORF | ✓ | ✓ | ✓ |
-| PEF | ✓ | ✓ | ✓ |
-| RAF | ✓ | ✓ | ✓ |
-| RAW | ✓ | ✓ | ✓ |
-| RW2 | ✓ | ✓ | ✓ |
-| RWL | ✓ | ✓ | ✓ |
-| SRF | ✓ | ✓ | ✓ |
-| SRW | ✓ | ✓ | ✓ |
-| X3F | ✓ | ✓ | ✓ |
+| 3FR | xib | xib | xib |
+| ARW | xib | xib | xib |
+| CR2 | xib | xib | xib |
+| CR3 | xib | xib | xib |
+| CRW | xib | xib | xib |
+| DCR | xib | xib | xib |
+| DNG | xib | xib | xib |
+| FEDER | xib | xib | xib |
+| FFF | xib | xib | xib |
+| GPR | xib | xib | xib |
+| IIQ | xib | xib | xib |
+| KDC | xib | xib | xib |
+| MEF | xib | xib | xib |
+| MFW | xib | xib | xib |
+| MOS | xib | xib | xib |
+| MRW | xib | xib | xib |
+| NEF | xib | xib | xib |
+| NRW | xib | xib | xib |
+| ORF | xib | xib | xib |
+| PEF | xib | xib | xib |
+| RAF | xib | xib | xib |
+| RAW | xib | xib | xib |
+| RW2 | xib | xib | xib |
+| RWL | xib | xib | xib |
+| SRF | xib | xib | xib |
+| SRW | xib | xib | xib |
+| X3F | xib | xib | xib |
 
 ## Formatos de documento {#document-formats}
 
@@ -143,62 +143,62 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 | Formato de archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| DOC | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| PDF | xib | xib | xib | xib | xib |
+| DOCX | xib | xib | xib | xib | xib |
+| DOC | - | - | - | xib | xib |
+| PPTX | xib | xib | xib | xib | xib |
+| PPT | - | - | - | xib | xib |
+| XLSX | xib | xib | xib | xib | xib |
+| XLS | - | - | - | xib | xib |
+| ODF | xib | xib | xib | - | - |
+| OFG | xib | xib | xib | - | - |
+| ODM | xib | xib | xib | - | - |
+| ODP | xib | xib | xib | - | - |
+| ODS | xib | xib | xib | - | - |
+| ODT | xib | xib | xib | xib | xib |
+| EPUB | - | xib | - | - | - |
+| HTML | - | xib | - | xib | xib |
+| PS | - | - | xib | - | - |
+| RTF | - | xib | - | xib | xib |
+| TXT | - | xib | - | xib | xib |
+| XML | - | xib | - | - | - |
 
 ## Formatos de documento en [!DNL Dynamic Media] {#document-support-dynamic-media}
 
 | Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de previsualización | Entregar representación dinámica | Descargar representación dinámica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| INDD | ✓ | - | - | - | - |
+| AI | xib | - | - | - | - |
+| PDF | xib | xib | xib | xib | xib |
+| INDD | xib | - | - | - | - |
 
 ## Formatos de vídeo {#video-formats}
 
 | Formato de archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | ✓ | - |
-| 3GP | - | ✓ | - |
-| AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ | - | ✓ |
-| F4V | ✓ | ✓ | ✓ |
-| FLV | ✓ | ✓ | ✓ |
-| M2T | ✓ | - | ✓ |
-| M2TS | ✓ | - | ✓ |
-| M2V | ✓ | - | ✓ |
-| M4V | ✓ | ✓ | ✓ |
-| MKV | ✓ | - | ✓ |
-| MOV | ✓ | ✓ | ✓ |
-| MP4 | ✓ | ✓ | ✓ |
-| MPEG | ✓ | ✓ | ✓ |
-| MPG | ✓ | ✓ | ✓ |
-| MTS | ✓ | - | ✓ |
-| OGV | ✓ | - | ✓ |
-| QT | ✓ | - | ✓ |
-| R3D | - | ✓ | ✓ |
-| SWF | ✓ | - | ✓ |
-| WebM | ✓ | - | ✓ |
-| WMV | ✓ | ✓ | ✓ |
+| 3G2 | - | xib | - |
+| 3GP | - | xib | - |
+| AVI | xib | xib | xib |
+| DIVX | xib | - | xib |
+| F4V | xib | xib | xib |
+| FLV | xib | xib | xib |
+| M2T | xib | - | xib |
+| M2TS | xib | - | xib |
+| M2V | xib | - | xib |
+| M4V | xib | xib | xib |
+| MKV | xib | - | xib |
+| MOV | xib | xib | xib |
+| MP4 | xib | xib | xib |
+| MPEG | xib | xib | xib |
+| MPG | xib | xib | xib |
+| MTS | xib | - | xib |
+| OGV | xib | - | xib |
+| QT | xib | - | xib |
+| R3D | - | xib | xib |
+| SWF | xib | - | xib |
+| WebM | xib | - | xib |
+| WMV | xib | xib | xib |
 
-## Formatos de vídeo para [!DNL Dynamic Media] transcodificación {#video-dynamic-media-transcoding}
+## Formatos de vídeo en [!DNL Dynamic Media] para la transcodificación {#video-dynamic-media-transcoding}
 
 | Extensión de archivo de vídeo | Contenedor | Códecs de vídeo recomendados | Códecs de vídeo no compatibles |
 |------------------------|--------------------|--------|-------|
