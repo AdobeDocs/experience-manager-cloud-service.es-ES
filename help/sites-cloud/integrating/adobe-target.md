@@ -28,7 +28,7 @@ Integre sus sitios AEM con Adobe Target para personalizar el contenido de sus p�
 
 Para realizar la integración con Destinatario, realice las siguientes tareas:
 
-* [Realizar tareas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)previas: Regístrese con Adobe Target y configure determinados aspectos de la instancia de creación de AEM. Su cuenta de Adobe Target debe tener permisos de **nivel de aprobador** como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
+* [Realizar tareas](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html) previas: Regístrese con Adobe Target y configure determinados aspectos de la instancia de creación de AEM. Su cuenta de Adobe Target debe tener **permisos de nivel de aprobador** como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
 
 * Launch by Adobe es la herramienta de facto para instrumentar un sitio AEM con capacidades de Destinatario (bibliotecas JS). Por lo tanto, la integración de AEM como Cloud Service con Launch y Adobe Target va de la mano (vea los vínculos a continuación).
 
@@ -45,7 +45,7 @@ Para realizar la integración con Destinatario, realice las siguientes tareas:
 
 >[!CAUTION]
 >
->En AEM como Cloud Service, el agente de replicación que sincroniza Ofertas y Actividades de AEM a Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de soporte [de](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) Adobe si necesita volver a habilitar el agente de replicación.
+>En AEM como Cloud Service, el agente de replicación que sincroniza Ofertas y Actividades de AEM a Adobe Target está deshabilitado de forma predeterminada. Póngase en contacto con el equipo de [Soporte de Adobe](https://helpx.adobe.com/contact/enterprise-support.ec.html#experience-manager) si necesita volver a habilitar el agente de replicación.
 
 >[!NOTE]
 >
@@ -60,11 +60,11 @@ Para realizar la integración con Destinatario, realice las siguientes tareas:
 
 >[!CAUTION]
 >
->You must secure the activity settings node **cq:ActivitySettings** on the publish instance so that it is inaccessible to normal users. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Debe proteger el nodo de configuración de actividad **cq:ActivitySettings** en la instancia de publicación para que los usuarios normales no puedan acceder a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
->See [Prerequisites for Integrating with Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) for detailed information.
+>Consulte [Requisitos previos para la integración con Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) para obtener información detallada.
 
-Una vez completada la integración, puede [crear contenido](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html) de destino que envíe datos de visitante a Adobe Target. Tenga en cuenta que los componentes de página requieren código específico para habilitar la segmentación de contenido. (Consulte [Desarrollo de contenido](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html)de destino.
+Una vez completada la integración, puede [crear contenido de destino](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html) que envíe datos de visitante a Adobe Target. Tenga en cuenta que los componentes de página requieren código específico para habilitar la segmentación de contenido. (Consulte [Desarrollo para contenido de objetivo](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html).
 
 >[!NOTE]
 >
@@ -74,9 +74,9 @@ Una vez completada la integración, puede [crear contenido](https://docs.adobe.c
 
 La integración de AEM como Cloud Service con Adobe Target requiere conocimientos de Adobe Target, administración de Actividades de AEM y administración de Audiencias de AEM. Debe estar familiarizado con la siguiente información:
 
-* Adobe Target (consulte la documentación [de](https://docs.adobe.com/content/help/en/target/using/target-home.html)Adobe Target).
+* Adobe Target (consulte la [documentación de Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
 * Consola de Actividades AEM (consulte [Administración de Actividades](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html).
-* AEM Audiencias (Consulte [Administración de Audiencias](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html).
+* audiencias AEM (Consulte [Administración de Audiencias](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html).
 
 >[!NOTE]
 >
