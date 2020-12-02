@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.8.0 {#release-notes}
+# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.8.0 {#release-notes}
 
 Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.8.0.
 
@@ -20,17 +20,17 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.8.0 es el 0
 
 ## Novedades {#whats-new-cloud-manager}
 
-* La auditoría de contenido es una función habilitada en Cloud Manager Sites Producines. La configuración de la tubería de producción para programas con sitios ahora incluye una tercera ficha denominada Auditoría **del contenido**. Siempre que se ejecute un flujo de producción, se incluirá un nuevo paso de auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
+* La auditoría de contenido es una función habilitada en Cloud Manager Sites Producines. La configuración de la tubería de producción para programas con sitios ahora incluye una tercera ficha denominada **Auditoría de contenido**. Siempre que se ejecute un flujo de producción, se incluirá un nuevo paso de auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
 
 
    >[!NOTE]
    >La auditoría de contenido se ha cambiado a Auditoría de experiencias.
 
-   Consulte Prueba de auditoría de [experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
+   Consulte [Prueba de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
 
 * Los entornos recién creados en programas de Recursos ahora se configurarán automáticamente con Smart Content Services.
 
-* Los entornos hibernados se pueden eliminar de la hibernación desde la página **Información general** del Administrador de nubes.
+* Los entornos hibernados se pueden deshibernar desde la página **Información general** del Administrador de nube.
 
 * Capacidad para realizar comprobaciones de experiencias en páginas, con tecnología de Google Lighthouse. Como parte de la canalización de Cloud Manager, se pueden comprobar y validar hasta 25 páginas con KPI de experiencia, y las puntuaciones se muestran en la interfaz de usuario del Cloud Manager.
 
@@ -42,7 +42,7 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.8.0 es el 0
 
 * En algunos casos, las ejecuciones de los trámites terminados no se registraban correctamente por haberse completado, lo que impedía la ejecución de los nuevos trámites.
 
-* Ocasionalmente, las ejecuciones por tuberías se *quedaban atascadas* debido a problemas de comunicación interna.
+* Las ejecuciones de tuberías ocasionalmente se *atascaran* debido a problemas de comunicación interna.
 
 * Al aprovisionar una nueva organización, a algunos usuarios con funciones administrativas distintas de los administradores del sistema se les daba acceso erróneamente a Cloud Manager.
 
