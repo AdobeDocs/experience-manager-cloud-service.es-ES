@@ -43,9 +43,9 @@ La puntuación de nivel acumulado toma la puntuación media de las páginas incl
 
 El valor de la métrica Cambio puede ser uno de los siguientes:
 
-* **Valor** positivo: las páginas han mejorado en la prueba seleccionada desde la última ejecución de la canalización de producción
+* **Valor**  positivo: las páginas han mejorado en la prueba seleccionada desde la última ejecución de la canalización de producción
 
-* **Valor** negativo: las páginas han retrocedido en la prueba seleccionada desde la última ejecución de la canalización de producción
+* **Valor**  negativo: las páginas han retrocedido en la prueba seleccionada desde la última ejecución de la canalización de producción
 
 * **Sin cambios** : las páginas tienen el mismo puntaje desde la última ejecución del flujo de producción
 
