@@ -18,20 +18,20 @@ El visor interactivo 3D está disponible en la página de información de recurs
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos admitidos para la previsualización 3D en AEM{#supported-3d-previewing-assets}
+## Formatos admitidos para previsualización 3D en AEM{#supported-3d-previewing-assets}
 
 La previsualización 3D interactiva en AEM admite los siguientes formatos de archivo:
 
 | Extensión de archivo 3D | Formato de archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria de GL | model/gltf-binary |  |
-| GLTF | Formato de transmisión de GL | modelo/gltf+json | Consulte la **Nota** a continuación. |
+| GLTF | Formato de transmisión de GL | modelo/gltf+json | Consulte **Nota** a continuación. |
 | OBJ | Archivo de objeto WaveFront 3D | application/x-tgif |  |
 | STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Apoyo a la ingestión únicamente; previsualización no disponible. |
 | USDZ | Archivo zip de descripción de escena universal | model/vnd.usdz+zip | Apoyo a la ingestión únicamente; previsualización no disponible. |
 
-**Nota**: Si los materiales no se representan en previsualización de un modelo gLTF, asegúrese de que su nombre sea correcto y se encuentren en una `textures` carpeta de la misma carpeta raíz que el modelo, de forma similar a la siguiente:
+**Nota**: Si los materiales no se representan en previsualización de un modelo gLTF, asegúrese de que su nombre sea correcto y se encuentren en una  `textures` carpeta de la misma carpeta raíz que el modelo, de forma similar a la siguiente:
 
     Recurso (carpeta)
     modelo.
@@ -49,8 +49,8 @@ Además, las capacidades del ordenador cliente, como una estación de trabajo, u
 **Previsualización de recursos 3D en AEM**
 
 1. Asegúrese de que ha cargado los recursos 3D en AEM.
-See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-digital-assets.md#uploading-assets).
-1. En AEM, en la página **[!UICONTROL Navegación]** , toque **[!UICONTROL Recursos > Archivos]**.
+Consulte [Formatos admitidos para previsualización 3D](#supported-3d-previewing-assets) y [Carga de recursos](/help/assets/manage-digital-assets.md#uploading-assets).
+1. Desde AEM, en la página **[!UICONTROL Navegación]**, toque **[!UICONTROL Recursos > Archivos]**.
 
    ![Página de navegación](/help/assets/dynamic-media/assets/navigation-assets.png)
 
@@ -79,4 +79,4 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
    * **Restaurar**: cerca de la esquina inferior derecha de la página, toque el icono Restablecer para restaurar el punto de destinatario de vista al centro del recurso 3D. El reinicio también hace que la cámara se acerque o se aleje para mostrar el recurso en su totalidad y con un tamaño de visualización razonable.
    * **Modo** de pantalla completa: para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, toque el icono de pantalla completa.
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
+1. Cuando haya terminado, toque **[!UICONTROL Cerrar]** cerca de la esquina superior derecha de la página.
