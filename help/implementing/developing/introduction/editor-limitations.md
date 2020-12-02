@@ -20,13 +20,13 @@ Un autor puede encontrar las siguientes limitaciones funcionales al utilizar el 
 
 ### Vínculos no activos {#links-not-active}
 
-Al [editar una página](/help/sites-cloud/authoring/fundamentals/editing-content.md), los vínculos no están activos.
+Cuando [edita una página](/help/sites-cloud/authoring/fundamentals/editing-content.md), los vínculos no están activos.
 
-* [Cambie al modo **Previsualización**](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) para navegar con los vínculos del contenido.
+* [Cambie a  **** ](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) Vista previa para navegar con los vínculos del contenido.
 
 ### Páginas de estructura {#structure-pages}
 
-No se pueden asignar nombres a las páginas `structure`. Las páginas con nombre `structure` no se podrán editar en el editor de páginas.
+No se puede asignar un nombre a las páginas `structure`. Las páginas con el nombre `structure` no se podrán editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 
@@ -46,9 +46,9 @@ Los elementos con posición absoluta pueden causar problemas en la posición de 
 
 Es posible que las imágenes de fondo fijas no se muestren como fijas al desplazarse debido a que están incrustadas en un iframe.
 
-* Si selecciona **Vista de página como Publicada** en las acciones de la barra de encabezado, se muestra la página correctamente.
+* Si selecciona **Página de Vista como Publicada** en las acciones de la barra de encabezado, la página se muestra correctamente.
 
-### 100% Height {#height}
+### Altura del 100% {#height}
 
 El elemento body de una página no admite una altura del 100 %.
 
