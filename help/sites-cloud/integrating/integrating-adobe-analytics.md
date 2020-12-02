@@ -15,7 +15,7 @@ ht-degree: 4%
 La integración de Adobe Analytics y AEM como Cloud Service le permite rastrear la actividad de su página web. La integración requiere:
 
 * uso de la IU táctil para crear una configuración de Analytics en AEM como Cloud Service.
-* agregar y configurar Adobe Analytics como una extensión en [Adobe Launch](#analytics-launch). Para obtener más información sobre Inicio de Adobe, consulte [esta página](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* agregar y configurar Adobe Analytics como una extensión en [Inicio de Adobe](#analytics-launch). Para obtener más información sobre Inicio de Adobe, consulte [esta página](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
 En comparación con las versiones anteriores de AEM, la configuración de Analytics no ofrece compatibilidad con framework en AEM como Cloud Service. En su lugar, ahora se realiza a través de Adobe Launch, que es la herramienta de facto para instrumentar un sitio AEM con capacidades de Analytics (bibliotecas JS). En Inicio de Adobe, se crea una propiedad en la que se puede configurar la extensión Adobe Analytics y se crean reglas para enviar datos a Adobe Analytics. Inicio de Adobe ha reemplazado la tarea de análisis proporcionada por sitecatalyst.
 
@@ -27,15 +27,15 @@ En comparación con las versiones anteriores de AEM, la configuración de Analyt
 
 1. Vaya a **Herramientas** → **Cloud Services**.
 2. Seleccione **Adobe Analytics**.
-   ![Ventana](assets/analytics_screen2.png "de Adobe AnalyticsVentana de Adobe Analytics")
-3. Seleccione el botón **Crear** .
-4. Complete los detalles (véase más abajo) y haga clic en **Connect**.
+   ![Ventana ](assets/analytics_screen2.png "de Adobe AnalyticsVentana de Adobe Analytics")
+3. Seleccione el botón **Crear**.
+4. Complete los detalles (véase más adelante) y haga clic en **Conectar**.
 
 ### Parámetros de configuración {#configuration-parameters}
 
 Los campos de configuración presentes en la ventana Configuración de Adobe Analytics son:
 
-![Parámetros](assets/properties_field1.png "de configuración Parámetros de configuración")
+![Parámetros ](assets/properties_field1.png "de configuración Parámetros de configuración")
 
 | Propiedad | Descripción |
 |---|---|
@@ -48,7 +48,7 @@ Los campos de configuración presentes en la ventana Configuración de Adobe Ana
 
 ### Añadir una configuración en un sitio {#add-configuration}
 
-Para aplicar una configuración de IU táctil a un sitio, vaya a: **Sitios** → **Seleccione cualquier página** del sitio → **Propiedades** → **Avanzadas** → **Configuración** → seleccione el inquilino de configuración.
+Para aplicar una configuración de IU táctil a un sitio, vaya a: **Sitios** → **Seleccione cualquier página del sitio** → **Propiedades** → **Avanzadas** → **Configuración** → Seleccione el inquilino de configuración.
 
 ## Integración de Adobe Analytics en sitios AEM mediante Adobe Launch {#analytics-launch}
 
