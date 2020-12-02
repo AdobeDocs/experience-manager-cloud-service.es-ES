@@ -25,7 +25,7 @@ La funcionalidad Etiquetas inteligentes está disponible para su compra como com
 
 >[!IMPORTANT]
 >
->Las nuevas [!DNL Experience Manager Assets] implementaciones se integran [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores siguen estos pasos para configurarlas.
+>Las nuevas [!DNL Experience Manager Assets] implementaciones se integran con [!DNL Adobe Developer Console] de manera predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores siguen estos pasos para configurarlas.
 
 ## Integración con Adobe Developer Console {#aio-integration}
 
