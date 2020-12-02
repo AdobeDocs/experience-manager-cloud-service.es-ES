@@ -10,7 +10,7 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Manager como Cloud Service está preparado para la protección de datos y las normas de privacidad de datos {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager como Cloud Service está preparado para la protección de datos y las regulaciones de privacidad de datos {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,23 +20,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Para obtener más información sobre la respuesta del Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte el Centro de privacidad del [Adobe](https://www.adobe.com/privacy.html).
+>Para obtener más información sobre la respuesta del Adobe a los problemas de privacidad y lo que esto significa para usted como cliente de Adobe, consulte [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
 
 Adobe Experience Manager como Cloud Service de sitios está listo para ayudar a los clientes con sus obligaciones de cumplimiento de protección y privacidad de datos. Esta página guía a los clientes a través de los procedimientos para gestionar dichas solicitudes en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o con código.
 
-Para obtener más información, consulte el Centro de privacidad de [Adobe](https://www.adobe.com/privacy.html).
+Para obtener más información, consulte el [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->Consulte [Adobe Experience Manager como Cloud Service listo para la protección de datos y las normas](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) de privacidad de datos para obtener más información.
+>Consulte [Adobe Experience Manager como Cloud Service listo para la protección de datos y las normas de privacidad de datos](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) para obtener más información.
 
 ## Nivel de AEM Author {#aem-author-tier}
 
-Las cuentas de usuario y el contenido UGC del servidor de creación se tratan en la documentación [de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+Las cuentas de usuario y el contenido UGC del servidor de creación se tratan en la [documentación de AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 ## Nivel de AEM Publish {#aem-publish-tier}
 
-Las cuentas de usuario utilizadas para autenticar visitantes en el sitio y el contenido UGC en el servidor de publicación se tratan en la documentación [de](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)AEM Foundation.
+Las cuentas de usuario utilizadas para autenticar visitantes en el sitio y el contenido de UGC en el servidor de publicación se tratan en la [documentación de AEM Foundation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
 
 De forma predeterminada, los componentes de AEM Sites no almacenan datos de formulario introducidos por visitantes en el servidor de publicación. Se recomienda reenviar los datos a un sistema de terceros o a Adobe Campaign para un procesamiento posterior.
 
@@ -53,7 +53,7 @@ Para la exclusión:
 1. Ir a:
    [Centro de privacidad de Adobe: exclusión](https://www.adobe.com/privacy/opt-out.html)
 
-1. Desplácese hacia abajo hasta **Servicios** : datos **de uso del servicio de** Experience Cloud.
+1. Desplácese hacia abajo hasta **Servicios** - **datos de uso del servicio de Experience Cloud**.
 
 1. Seleccione el vínculo al que se hace referencia; se titula **aquí**.
 
@@ -63,20 +63,20 @@ Para la exclusión:
 
       Si elimina la cookie de exclusión, o si cambia de equipo o de explorador Web, tendrá que volver a optar por la exclusión.
 
-      Opción de exclusión: Excluirme de la agregación y análisis de sesiones de visitante (instalar la cookie de `amcglobal.sc.omtrdc.net` exclusión) - Haga clic aquí.
+      Opción de exclusión: Excluirme de la agregación y análisis de sesiones de visitante (instalar la cookie de exclusión `amcglobal.sc.omtrdc.net`) - Haga clic aquí.
 
-      Inclusión: Incluirme en la agregación y análisis de sesiones de visitante (no instalar la cookie de `amcglobal.sc.omtrdc.net` exclusión). Haga clic aquí.
+      Inclusión: Incluirme en la agregación y análisis de sesiones de visitante (no instalar la cookie de exclusión `amcglobal.sc.omtrdc.net`) - Haga clic aquí.
    Siga los pasos anteriores para acceder a los vínculos reales.
 
    >[!NOTE]
    >
-   > Hay una descripción adicional en el **2. Privacidad.** de las Condiciones de uso [generales del](https://www.adobe.com/legal/terms.html)Adobe.
+   > Hay otra descripción en el **2. Privacidad.** de las Condiciones de uso [ generales del ](https://www.adobe.com/legal/terms.html)Adobe.
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites incluye una integración opcional con Analytics Foundation que utiliza la funcionalidad del servicio a petición de Adobe Analytics.
 
-Para obtener más información sobre la administración de solicitudes de asunto de datos relacionadas con Adobe Analytics, consulte [Adobe Analytics y Privacidad](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)de datos.
+Para obtener más información sobre la administración de solicitudes de asunto de datos relacionadas con Adobe Analytics, consulte [Adobe Analytics y Privacidad de datos](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
 
 ## Personalización por Destinatario {#personalization-foundation-by-target}
 
