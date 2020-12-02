@@ -10,23 +10,23 @@ ht-degree: 1%
 ---
 
 
-# The AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
+# El AEM como un SDK de Cloud Service {#aem-as-a-cloud-service-sdk}
 
 El SDK de AEM como Cloud Service consta de los siguientes artefactos:
 
-* **Jar** Quickstart: tiempo de ejecución de AEM utilizado para el desarrollo local
+* **Jar**  de inicio rápido: el tiempo de ejecución de AEM utilizado para el desarrollo local
 * **Java API Jar** : la dependencia Java Jar/Maven que expone todas las API de Java permitidas que se pueden usar para desarrollarse contra AEM como Cloud Service. Anteriormente denominado Uberjar
-* **Javadoc Jar** - Los javadocs para Java API Jar
-* **Herramientas** de despachante: conjunto de herramientas utilizadas para desarrollar con Dispatcher localmente. Objetos independientes para unix y ventanas
+* **Javadoc Jar** - Los javadocs para la API de Java Jar
+* **Herramientas**  de despachante: conjunto de herramientas utilizadas para desarrollar con Dispatcher localmente. Objetos independientes para unix y ventanas
 
 Además, algunos clientes que se implementaron anteriormente con AEM 6.5 o versiones anteriores utilizarán los artefactos siguientes. Si la compilación local no funciona con el tarro de inicio rápido y sospecha que se debe a interfaces que se han eliminado de AEM implementadas como Cloud Service, póngase en contacto con el servicio de asistencia al cliente para determinar si necesita acceso. Esto requerirá cambios en el servidor.
 
-* **6.5 Java API Jar** , un conjunto adicional de interfaces que se han eliminado desde AEM 6.5
-* **6.5 Javadoc Jar** desaprobado: los javadocs para el conjunto adicional de interfaces
+* **6.5 Jar**  de API de Java obsoleto: un conjunto adicional de interfaces que se han eliminado desde AEM 6.5
+* **6.5 Javadoc Jar**  desaprobado: el Javadocs para el conjunto adicional de interfaces
 
-## Creación para el SDK {#building-for-the-sdk}
+## Generación para el SDK {#building-for-the-sdk}
 
-El SDK de AEM como Cloud Service se utiliza para generar e implementar código personalizado. Para obtener más información, consulte la documentación [sobre el arquetipo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)AEM. En un nivel superior, se realizan los siguientes pasos:
+El SDK de AEM como Cloud Service se utiliza para generar e implementar código personalizado. Para obtener más información, consulte la [documentación del arquetipo del proyecto de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en). En un nivel superior, se realizan los siguientes pasos:
 
 * **Compile código**. Como se espera, se compila el código fuente, generando los paquetes de contenido resultantes
 * **Crear artefactos**. Los artefactos se crean durante este proceso
@@ -35,10 +35,10 @@ El SDK de AEM como Cloud Service se utiliza para generar e implementar código p
 
 Cloud Manager ejecuta los mismos pasos al implementar en Entornos de nube. La realización de compilaciones localmente permite el desarrollo local y la realización de pruebas para que los desarrolladores puedan detectar de forma eficaz problemas estructurales o de código antes de comprometerse con el control de código fuente y activar las implementaciones de Cloud Manager, que pueden tardar más.
 
-## Accessing the AEM as a Cloud Service SDK {#accessing-the-aem-as-a-cloud-service-sdk}
+## Acceso al AEM como SDK de Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
-* Puede consultar el icono de AEM Admin Console **Acerca de Adobe Experience Manager** para conocer la versión de AEM que está ejecutando en producción.
-* El archivo jar y Dispatcher Tools de inicio rápido se pueden descargar como archivo zip desde el portal [de distribución de](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)software. Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con AEM Managed Services o AEM como entornos de Cloud Service.
+* Puede consultar el icono del Admin Console de AEM **Acerca de Adobe Experience Manager** para averiguar la versión de AEM que está ejecutando en producción.
+* El archivo jar y Dispatcher Tools de inicio rápido se pueden descargar como archivo zip desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html). Tenga en cuenta que el acceso a los listados de SDK está limitado a aquellos con AEM Managed Services o AEM como entornos de Cloud Service.
 * El Jar de la API de Java y Javadoc Jar se pueden descargar mediante herramientas muevas, ya sea con la línea de comandos o con su IDE preferido.
 * Las páginas de proyecto principales deben hacer referencia al siguiente paquete de Jar de API. Esta dependencia también se debe hacer referencia a ella en cualquier página de subpaquete.
 
@@ -60,7 +60,7 @@ Cloud Manager ejecuta los mismos pasos al implementar en Entornos de nube. La re
 
 ¿Cuándo se recomienda actualizar el proyecto local con un nuevo SDK?
 
-Se *recomienda* actualizarla al menos después de una versión de mantenimiento mensual.
+Se *recomienda* actualizarla al menos después de una revisión de mantenimiento mensual.
 
 Es *opcional* actualizarla después de cualquier revisión de mantenimiento diaria. Se informará a los clientes cuando la instancia de producción se haya actualizado correctamente a una nueva versión de AEM. Para las versiones de mantenimiento diarias, no se espera que el nuevo SDK haya cambiado significativamente, si es que ha cambiado. Sin embargo, se recomienda actualizar ocasionalmente el entorno de desarrollador de AEM local con el SDK más reciente y, a continuación, volver a compilar y probar la aplicación personalizada. La versión de mantenimiento mensual generalmente incluye cambios más impactantes y, por lo tanto, los desarrolladores deben actualizar, reconstruir y probar inmediatamente.
 
@@ -69,7 +69,7 @@ A continuación se muestra el procedimiento recomendado para actualizar un entor
 1. Asegúrese de que cualquier contenido útil esté comprometido con el proyecto en el control de código fuente o disponible en un paquete de contenido mutable para su posterior importación
 1. El contenido de la prueba de desarrollo local debe almacenarse por separado para que no se implemente como parte de la compilación del flujo de Cloud Manager. Esto se debe a que sólo se debe usar para el desarrollo local
 1. Detener el inicio rápido que se está ejecutando
-1. Mover la `crx-quickstart` carpeta a otra carpeta para protegerla
+1. Mover la carpeta `crx-quickstart` a otra carpeta para protegerla
 1. Tenga en cuenta la nueva versión de AEM, que se indica en Cloud Manager (se utilizará para identificar la nueva versión de Jar de QuickStart para descargar más adelante)
 1. Descargue el JAR de QuickStart cuya versión coincida con la versión de AEM de producción desde el portal de distribución de software
 1. Cree una nueva carpeta y coloque la nueva barra de inicio rápido dentro
@@ -84,13 +84,13 @@ Si hay contenido que debe instalarse con cada nueva versión AEM de inicio rápi
 
 La recomendación es actualizar el SDK con frecuencia (por ejemplo, cada dos semanas) y disponer de un estado local completo todos los días para no depender accidentalmente de los datos de estado de la aplicación.
 
-En caso de que dependa de CryptoSupport ([ya sea configurando las credenciales de Cloudservices o del servicio de correo SMTP en AEM o utilizando la API CryptoSupport en la aplicación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente en el primer inicio de un entorno de AEM. Aunque la configuración de nube se encarga de reutilizar automáticamente la clave CryptoKey específica del entorno, es necesario inyectar la clave criptográfica en el entorno de desarrollo local.
+En caso de que dependa de CryptoSupport ([configurando las credenciales de Cloudservices o del servicio de correo SMTP en AEM o utilizando la API CryptoSupport en su aplicación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente en el primer inicio de un entorno AEM. Aunque la configuración de nube se encarga de reutilizar automáticamente la clave CryptoKey específica del entorno, es necesario inyectar la clave criptográfica en el entorno de desarrollo local.
 
-De forma predeterminada, AEM está configurado para almacenar los datos clave dentro de la carpeta de datos de una carpeta, pero para facilitar su reutilización en el desarrollo, el proceso de AEM puede inicializarse al primer inicio con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Esto generará los datos de cifrado en &quot;`/etc/key`&quot;.
+De forma predeterminada, AEM está configurado para almacenar los datos clave dentro de la carpeta de datos de una carpeta, pero para facilitar su reutilización en el desarrollo, el proceso de AEM se puede inicializar al iniciar por primera vez con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Esto generará los datos de cifrado en &quot;`/etc/key`&quot;.
 
 Para poder reutilizar paquetes de contenido que contengan los valores cifrados, debe seguir estos pasos:
 
 * Cuando inicialmente inicio el archivo local quickstart.jar, asegúrese de agregar el parámetro siguiente: &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Se recomienda, pero es opcional, agregarla siempre.
 * La primera vez que inició una instancia, cree un paquete que contenga un filtro para la raíz &quot;`/etc/key`&quot;. Esto mantendrá el secreto para que se reutilice en todos los entornos para los que se desea que se reutilicen
-* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para agregarlo al paquete que se reutilizará en todas las instalaciones
+* Exporte cualquier contenido mutable que contenga secretos o busque los valores cifrados mediante `/crx/de` para agregarlos al paquete que se reutilizará en todas las instalaciones
 * Siempre que gire una instancia nueva (ya sea para reemplazarla con una nueva versión o cuando varios entornos de desarrollo deben compartir las credenciales para la prueba), instale el paquete producido en los pasos 2 y 3 para poder reutilizar el contenido sin necesidad de volver a configurarlo manualmente. Esto se debe a que ahora la criptoclave está sincronizada.
