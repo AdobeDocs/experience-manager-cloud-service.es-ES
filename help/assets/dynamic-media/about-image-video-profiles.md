@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# Acerca de los Perfiles de imágenes y Perfiles de vídeo de Dynamic Media{#about-dm-image-video-profiles}
+# Acerca de los Perfiles de imagen y Perfiles de vídeo de Dynamic Media{#about-dm-image-video-profiles}
 
 Un Perfil de imagen o un Perfil de vídeo es una fórmula para determinar las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué codificación de vídeo se aplicará a los recursos de vídeo de Dynamic Media que cargue. O bien, qué Perfil de imagen aplicar a los recursos de imagen de Dynamic Media para que se recorten correctamente.
 
@@ -19,13 +19,13 @@ En Dynamic Media, puede crear dos tipos de perfiles, que se tratan en detalle en
 * [Perfiles de imagen de Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
 * [Perfiles de vídeo de Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
-Consulte también perfiles [de metadatos](/help/assets/metadata-profiles.md).
+Consulte también [perfiles de metadatos](/help/assets/metadata-profiles.md).
 
 Debe tener derechos de administrador para crear, editar y eliminar Perfiles de imagen de Dynamic Media o Perfiles de vídeo de Dynamic Media.
 
 Después de crear el Perfil de imágenes o el Perfil de vídeo, se asigna a una o varias carpetas que se utilizan como destino para los recursos de Dynamic Media recién cargados.
 
-Consulte también [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles](/help/assets/dynamic-media/best-practices-for-file-management.md)de vídeo.
+Consulte también [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles de vídeo](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 >[!NOTE]
 >
@@ -37,13 +37,13 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un Perfil de imágenes de Dynamic Media o un Perfil de vídeo de Dynamic Media que haya cambiado posteriormente.
 
-Por ejemplo, supongamos que ha creado un Perfil de imagen de Dynamic Media y lo ha asignado a una carpeta. Los recursos de imagen que haya cargado en la carpeta se aplicarán automáticamente al Perfil de imagen. Sin embargo, posteriormente se decide añadir una nueva proporción de recorte inteligente al Perfil de imágenes. Ahora, en lugar de volver a seleccionar y cargar los recursos en la carpeta, simplemente ejecute el *Scene7: Flujo de trabajo de reprocesamiento de recursos* .
+Por ejemplo, supongamos que ha creado un Perfil de imagen de Dynamic Media y lo ha asignado a una carpeta. Los recursos de imagen que haya cargado en la carpeta se aplicarán automáticamente al Perfil de imagen. Sin embargo, posteriormente se decide añadir una nueva proporción de recorte inteligente al Perfil de imágenes. Ahora, en lugar de volver a seleccionar y cargar los recursos en la carpeta, simplemente ejecute el *Scene7: Volver a procesar el flujo de trabajo de Assets*.
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Por lo tanto, aunque no haya editado un Perfil de imagen o un perfil de vídeo, o haya aplicado ya un Perfil de imagen o un Perfil de vídeo, podrá seguir ejecutando el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Opcionalmente, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos a 1000. Al ejecutar el _Scene7: Volver a procesar el flujo de trabajo de recursos_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Opcionalmente, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos a 1000. Al ejecutar el _Scene7: Volver a procesar el flujo de trabajo de Recursos_ en una carpeta, los recursos se agrupan en lotes y luego se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
-Consulte [Ajuste del tamaño de lote del flujo de trabajo](#adjusting-load)de reprocesamiento.
+Consulte [Ajuste del tamaño de lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Para volver a procesar los recursos de Dynamic Media en una carpeta**:
-1. En AEM, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el **Scene7: Flujo de trabajo de reprocesamiento de recursos** ,
+1. En AEM, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el **Scene7: Flujo de trabajo de reprocesamiento de recursos**,
 
    Las carpetas que ya tienen un Perfil de imagen o un Perfil de vídeo asignado a él se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta en la Vista de tarjetas.
 
@@ -69,19 +69,19 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Se recomienda evitar ejecutar este flujo de trabajo en una jerarquía de carpetas con más de 1000 recursos.
 
 1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología]**.
-1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario, haga clic en el icono de carro ( **^** ) .
+1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario, haga clic en el icono del carro ( **^** ) .
 
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. Haga clic en Flujo de trabajo **[!UICONTROL de Inicio]**.
-1. En la lista desplegable Flujo de trabajo **[!UICONTROL de]** Inicio, elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
-1. (Opcional) En el campo **Introduzca el título del texto del flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
+1. Haga clic en **[!UICONTROL Flujo de trabajo de Inicio]**.
+1. En la lista desplegable **[!UICONTROL Flujo de trabajo de Inicio]**, elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
+1. (Opcional) En el campo de texto **Escriba el título del flujo de trabajo**, escriba un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
    ![Volver a procesar los recursos 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, en **[!UICONTROL Confirmar]**.
+1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, haga clic en **[!UICONTROL Confirmar]**.
 
-   Para supervisar el flujo de trabajo o comprobar su progreso, en la AEM página de la consola principal, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo]**. En la página Instancias de flujo de trabajo, seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo.
+   Para supervisar el flujo de trabajo o comprobar su progreso, en la página de la consola principal de AEM, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo]**. En la página Instancias de flujo de trabajo, seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo.
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
@@ -100,19 +100,19 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![Componente de carga por lotes de Scene7](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
-1. En el cuadro de diálogo Cargar **[!UICONTROL por lotes a Scene7: Propiedades]** de la etapa, establezca lo siguiente:
-   * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
-   * Seleccione **[!UICONTROL Handler Advance]** si su controlador avanzará al paso siguiente.
-   * En el campo **[!UICONTROL Tiempo de espera]** , introduzca el tiempo de espera del proceso externo (segundos).
-   * En el campo **[!UICONTROL Período]** , introduzca un intervalo de sondeo (segundos) para comprobar si se ha completado el proceso externo.
-   * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
+1. En el cuadro de diálogo **[!UICONTROL Carga por lotes en Scene7—Step Properties]**, establezca lo siguiente:
+   * En los campos de texto **[!UICONTROL Título]** y **[!UICONTROL Descripción]**, introduzca un nuevo título y una descripción para el trabajo, si lo desea.
+   * Seleccione **[!UICONTROL Avance del controlador]** si el controlador avanzará al paso siguiente.
+   * En el campo **[!UICONTROL Tiempo de espera]**, introduzca el tiempo de espera del proceso externo (segundos).
+   * En el campo **[!UICONTROL Período]**, introduzca un intervalo de sondeo (segundos) para probar la finalización del proceso externo.
+   * En el campo **[!UICONTROL Lote]**, introduzca el número máximo de recursos (50-1000) que se procesarán en un trabajo de carga por lotes del servidor de Dynamic Media.
    * Seleccione **[!UICONTROL Avanzar al tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
 
    ![Cuadro de diálogo Propiedades](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo Cargar **[!UICONTROL por lotes a Scene7 - Propiedades]** de la etapa, toque **[!UICONTROL Listo]**.
+1. En la esquina superior derecha del cuadro de diálogo **[!UICONTROL Carga por lotes en Scene7 - Propiedades del paso]**, toque **[!UICONTROL Listo]**.
 
-1. En la esquina superior derecha del Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, toque **[!UICONTROL Sincronizar]**. Cuando se ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución de flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha del Scene7: Volver a procesar la página del modelo de flujo de trabajo de Recursos, toque **[!UICONTROL Sincronizar]**. Cuando ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución del flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
 
    ![Sincronización del modelo de flujo de trabajo](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
