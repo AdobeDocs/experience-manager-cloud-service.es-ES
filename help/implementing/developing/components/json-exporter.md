@@ -10,7 +10,7 @@ ht-degree: 7%
 ---
 
 
-# JSON Exporter for Content Services {#json-exporter-for-content-services}
+# Exportador JSON para Content Services {#json-exporter-for-content-services}
 
 Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío del contenido desde/hacia AEM fuera del enfoque de las páginas web.
 
@@ -26,7 +26,7 @@ Con los fragmentos de contenido que utilizan contenido estructurado, puede propo
 
 Con el exportador JSON de AEM puede entregar el contenido de una(y) página AEM en formato de modelo de datos JSON. Esto puede ser consumido por sus propias aplicaciones.
 
-Dentro de AEM el envío se logra mediante el selector `model` y la `.json` extensión.
+Dentro de AEM el envío se logra mediante la extensión `model` y `.json` del selector.
 
 `.model.json`
 
@@ -42,7 +42,7 @@ Dentro de AEM el envío se logra mediante el selector `model` y la `.json` exten
 
 También puede ofrecer el contenido de un fragmento de contenido estructurado segmentándolo específicamente.
 
-Esto se realiza utilizando toda la ruta del fragmento (a través del `jcr:content`); por ejemplo, con un sufijo como.
+Esto se realiza mediante la ruta completa del fragmento (mediante `jcr:content`); por ejemplo, con un sufijo como.
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -60,11 +60,11 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
    >[!NOTE]
    >
-   >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder a estos datos y utilizarlos.
+   >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder y utilizar estos datos.
 
    >[!NOTE]
    >
-   >Aunque no es una implementación estándar, se admiten [varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
+   >Aunque no es una implementación estándar, [se admiten varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
@@ -77,11 +77,11 @@ Consulte también:
 * AEM con JSON:
    * [Activación de la exportación de JSON para un componente](enabling-json-exporter.md)
 
-## Related Documentation {#related-documentation}
+## Documentación relacionada {#related-documentation}
 
 Para obtener más información, consulte:
 
 * [Fragmentos de contenido en la guía del usuario Recursos](/help/assets/content-fragments/content-fragments.md)
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Componentes](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) principales y el componente Fragmento [de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componentes principales ](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) y el componente Fragmento  [de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
