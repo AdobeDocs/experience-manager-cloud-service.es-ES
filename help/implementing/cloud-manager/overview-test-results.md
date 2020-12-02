@@ -18,7 +18,7 @@ Existen tres categorías generales de pruebas admitidas por Cloud Manager for Cl
 
    La prueba de calidad del código evalúa la calidad del código de la aplicación. El flujo de calidad del código se ejecuta inmediatamente después del paso de generación en todos los gasoductos que no sean de producción y producción.
 
-   Las reglas [de calidad de código](/help/implementing/cloud-manager/custom-code-quality-rules.md) personalizado ejecutadas por Cloud Manager se crean en función de las prácticas recomendadas de ingeniería de AEM.
+   Las [Reglas de calidad de código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md) ejecutadas por Cloud Manager se crean en base a las optimizaciones de AEM ingeniería.
 
 1. [Prueba funcional](/help/implementing/cloud-manager/functional-testing.md)
 
