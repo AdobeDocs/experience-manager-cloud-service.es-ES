@@ -20,8 +20,8 @@ El diagrama siguiente muestra la jerarquía de entidades en Cloud Manager.
 
 ## Tipos de programas {#program-types}
 
-Un usuario puede crear un **Simulador para pruebas** o un programa **normal** .
+Un usuario puede crear un **Simulador para pruebas** o un programa **Regular**.
 
-Generalmente, se crea un *Simulador para pruebas* para ofrecer los fines de formación, ejecución de demostraciones, habilitación, puntos de interés o documentación. No se trata de transportar tráfico en directo y tendrá restricciones que un programa regular no tendrá. Incluirá Sitios y Recursos y se entregará automáticamente con una rama Git que incluye código de muestra, un entorno Dev y una canalización sin producción.
+Generalmente se crea un *Simulador para pruebas* para cumplir los propósitos de capacitación, ejecución de demostraciones, habilitación, puntos de contacto o documentación. No se trata de transportar tráfico en directo y tendrá restricciones que un programa regular no tendrá. Incluirá Sitios y Recursos y se entregará automáticamente con una rama Git que incluye código de muestra, un entorno Dev y una canalización sin producción.
 
-Se crea un programa ** regular para habilitar el tráfico activo en el momento adecuado en el futuro.
+Se crea un *programa regular* para habilitar el tráfico activo en el momento adecuado en el futuro.
