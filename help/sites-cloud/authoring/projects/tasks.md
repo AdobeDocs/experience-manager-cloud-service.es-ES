@@ -26,7 +26,7 @@ Para realizar un seguimiento del progreso del proyecto, fíjese en las tareas ac
 
 Las tareas de flujo de trabajo de la lista, así como las tareas que cree directamente en el mosaico **Tareas**.
 
-### Mosaico Tareas {#task-tile}
+### Mosaico Tareas  {#task-tile}
 
 Si un proyecto contiene tareas relacionadas, en el proyecto se muestra un mosaico Tareas. En el mosaico Tareas se muestra el estado actual del proyecto. Esto se basa en tareas existentes en el flujo de trabajo y no incluye ninguna tarea que se genere en el futuro al ritmo del progreso del flujo de trabajo. La información siguiente está visible en el mosaico Tareas:
 
@@ -40,7 +40,7 @@ Si un proyecto contiene tareas relacionadas, en el proyecto se muestra un mosaic
 
 Además de realizar un seguimiento del progreso, puede que también desee ver más información sobre el proyecto o modificarlo.
 
-#### Lista de tareas {#task-list}
+#### Lista de tareas  {#task-list}
 
 Haga clic en los puntos suspensivos (…) en el mosaico Tareas para mostrar la lista de las tareas relacionadas con el proyecto. Las tareas se dividen por flujos de trabajo principales. Los detalles de la tarea se muestran junto con metadatos como la fecha de caducidad, el usuario asignado, la prioridad y el estado.
 
@@ -71,7 +71,7 @@ Para añadir una tarea:
 
 1. Toque o haga clic en **Crear**.
 
-## Trabajo con tareas en la bandeja de entrada {#working-with-tasks-in-the-inbox}
+## Trabajo con tareas en la bandeja de entrada  {#working-with-tasks-in-the-inbox}
 
 Otra forma de acceder a las tareas es desde la bandeja de entrada. Puede abrir el contenido de la bandeja de entrada para implementar los cambios necesarios. Cuando haya terminado, cambie el estado de la tarea a Completada. Las tareas también aparecen en la bandeja de entrada cuando se asignen a un grupo de usuarios al que pertenece. En ese caso, cualquier miembro del grupo puede realizar el trabajo y completar la tarea.
 
