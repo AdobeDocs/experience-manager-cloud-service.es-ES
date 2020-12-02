@@ -67,7 +67,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 1. Configure las clases CSS que desea poner a disposición de los autores de contenido, tal como se describe en la sección [Como autor de plantillas](#as-a-template-author).
 1. A continuación, los autores de contenido pueden utilizar los estilos, tal como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
-### Como autor de contenido    {#as-a-content-author}
+### Como autor de contenido     {#as-a-content-author}
 
 1. Después de instalar el proyecto WKND, vaya a la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en` y edite la página.
 1. Seleccione un componente del **Título** más abajo en la página
@@ -82,7 +82,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    >
    >En este ejemplo, los estilos **Colores** (**Negro**, **Blanco** y **Gris**) se excluyen mutuamente, mientras que las opciones **Estilo** (**Subrayado**, **Alinear a la derecha** y **Miniespaciado**) se pueden combinar. Esto se puede [configurar en la plantilla como el autor de la misma](#as-a-template-author).
 
-### Como autor de plantillas    {#as-a-template-author}
+### Como autor de plantillas     {#as-a-template-author}
 
 1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página -> Editar plantilla**.
 
@@ -105,7 +105,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
+>Las clases CSS (así como cualquier JavaScript necesario) configuradas como propiedades de estilo de la directiva de un componente deben implementarse como [bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para poder funcionar.
 
 ## Configuración {#setup}
 
@@ -141,7 +141,7 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 >
 >La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
 
-### Estilos con nombres de elemento       {#styles-with-element-names}
+### Estilos con nombres de elemento        {#styles-with-element-names}
 
 Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la política, dentro del cuadro de diálogo de diseño, el creador de plantillas también puede elegir un nombre de elemento para cada estilo. Esto definirá el nombre de elemento del elemento envolvente.
 
