@@ -36,11 +36,11 @@ Para configurar la forma en que los sitios comparten el contenido personalizado,
 
 Puede suspender o restaurar en cualquier momento la herencia. Además, si no desea suspender la herencia, también puede crear experiencias locales. De forma predeterminada, todas las páginas usan el área principal, a menos que se especifique lo contrario.
 
-## Introducción a la compatibilidad multisitio del contenido de destino {#introduction-to-multisite-support-for-targeted-content}
+## Introducción a la compatibilidad multisitio del contenido de destino  {#introduction-to-multisite-support-for-targeted-content}
 
 La compatibilidad multisitio del contenido de destino ya está disponible y le permite enviar contenido de destino desde la página maestra que administra a través de MSM a una local de tipo Live Copy, o le permite administrar modificaciones globales y locales de dicho contenido.
 
-You manage this in an **Area**. Las áreas separan el contenido de destino (actividades, experiencias y ofertas) que se usa en diferentes sitios y proporcionan un mecanismo basado en MSM para crear y administrar la herencia del contenido de destino junto a la herencia del sitio. De este modo evitará la necesidad de recrear el contenido de destino en sitios heredados, como sucedía en AEM antes de la versión 6.2.
+Esto se administra en un **Área**. Las áreas separan el contenido de destino (actividades, experiencias y ofertas) que se usa en diferentes sitios y proporcionan un mecanismo basado en MSM para crear y administrar la herencia del contenido de destino junto a la herencia del sitio. De este modo evitará la necesidad de recrear el contenido de destino en sitios heredados, como sucedía en AEM antes de la versión 6.2.
 
 En un área, solo las actividades vinculadas a ella se añaden a las Live Copies. De forma predeterminada, se selecciona el área principal. Después de crear las áreas adicionales, se pueden vincular a sus sitios o páginas para indicar qué contenido de destino se ha usado.
 
@@ -57,9 +57,9 @@ Un sitio o Live Copy que vincula a un área que contiene las actividades que deb
 
 
 
-## Casos de uso {#use-cases}
+## Casos de uso  {#use-cases}
 
-Puede configurar la compatibilidad multisitio para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. In addition, in [Example: Targeting Content Based on Geography](#example-targeting-content-based-on-geography), you can see a real-world application of targeting content in multiple sites.
+Puede configurar la compatibilidad multisitio para el contenido de destino de varias formas, según el caso de uso. En esta sección se describe cómo puede funcionar esta opción, en teoría, con una marca. Además, en [Ejemplo: Al dirigir el contenido en función de la geografía](#example-targeting-content-based-on-geography), puede ver una aplicación real de dirigir el contenido en varios sitios.
 
 El contenido de destino se agrupa en tales áreas, las cuales definen el ámbito de los sitios o las páginas. Estas áreas se definen en el nivel de la marca. Una marca puede contener varias áreas. Las áreas pueden ser diferentes entre marcas. Si bien una marca solo puede contener el área principal y, por lo tanto, se comparte entre todas las marcas, otra marca puede contener varias marcas (por ejemplo, según la región). Las marcas, por tanto, no necesitan duplicar el conjunto de áreas entre ellas.
 
@@ -71,7 +71,7 @@ Gracias a la compatibilidad multisitio del contenido de destino puede, por ejemp
 * Un conjunto *compartido* de contenido de destino: editar en uno tiene un impacto directo en ambos sitios; puede configurar esto teniendo dos sitios que se refieren a la misma área. Los sitios vinculados a la misma área comparten el contenido dirigido del área. Por ejemplo:
    * El sitio A está vinculado al área X
    * El sitio B está vinculado al área X
-* A distinct set of targeted content *inherited* from another site via MSM - Content can be unidirectionally rolled out from master to live copy. Por ejemplo:
+* Un conjunto distinto de contenido objetivo *heredado* de otro sitio a través de MSM: el contenido se puede distribuir unidireccionalmente de una copia maestra a una Live Copy. Por ejemplo:
    * El sitio A está vinculado al área X
    * El sitio B está vinculado al área X (que es una Live Copy del área X)
 
@@ -81,7 +81,7 @@ Asimismo, también puede tener **varias** marcas para usarlas en un sitio, aunqu
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md).
+>Para obtener una visión más técnica de esta función, consulte [Cómo se estructura la administración de múltiples sitios para contenido dirigido](/help/sites-cloud/authoring/personalization/multisite-structure.md).
 
 ## Ejemplo: segmentación del contenido según el área geográfica {#example-targeting-content-based-on-geography}
 
@@ -122,7 +122,7 @@ Puede suspender en cualquier momento la herencia o desasociarla completamente Ta
 
 >[!NOTE]
 >
->For a more technical look at this feature, see [How Multisite Management for Targeted Content is Structured](/help/sites-cloud/authoring/personalization/multisite-structure.md).
+>Para obtener una visión más técnica de esta función, consulte [Cómo se estructura la administración de múltiples sitios para contenido dirigido](/help/sites-cloud/authoring/personalization/multisite-structure.md).
 
 ### Crear una nueva área frente a crear una nueva área como Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -145,7 +145,7 @@ Para lograr esto en AEM, haga lo siguiente:
 * El sitio C está vinculado al área heredada, la cual es una Live Copy del área principal; cree un área como Live Copy en el lugar donde cree una Live Copy basada en el área principal. El área heredada hereda las actividades del área principal una vez realizado el despliegue.
 * El sitio D está vinculado a su propia área aislada; cree el área donde creó un área completa sin actividades definidas. El área aislada no compartirá las actividades con ningún otro sitio.
 
-## Crear nuevas áreas {#creating-new-areas}
+## Crear nuevas áreas  {#creating-new-areas}
 
 Las áreas pueden abarcar actividades y ofertas. Una vez que haya creado un área en alguno de ellos (por ejemplo, actividades), también tendrá el área disponible en la otra (por ejemplo, ofertas).
 
@@ -211,7 +211,7 @@ Cuando establezca un vínculo, solo las actividades, experiencias y ofertas del 
 
 >[!NOTE]
 >
->Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. Si edita una actividad, experiencia u oferta que compartan varios sitios, esto afectará a todos los sitios.
+>Las páginas o los sitios que hacen referencia a la misma área utilizan el *mismo* conjunto compartido de actividades, experiencias y ofertas. Si edita una actividad, experiencia u oferta que compartan varios sitios, esto afectará a todos los sitios.
 
 Para vincular un sitio a un área:
 
@@ -245,7 +245,7 @@ Una actividad que se hereda de otro sitio aparece en color verde junto al nombre
 
 
 
-### Suspender la herencia {#suspending-inheritance}
+### Suspender la herencia  {#suspending-inheritance}
 
 Para suspender o desasociar la herencia del contenido de destino en una actividad:
 
@@ -258,7 +258,7 @@ Para suspender o desasociar la herencia del contenido de destino en una activida
 
    ![Suspender Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Tap or click **Suspend** to suspend the activity. Las actividades suspendidas están marcadas en rojo.
+1. Toque o haga clic en **Suspender** para suspender la actividad. Las actividades suspendidas están marcadas en rojo.
 
    ![Copia en directo suspendida](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -279,7 +279,7 @@ Si suspendió la herencia del contenido de destino en una actividad, puede resta
 
 Para restaurar la herencia del contenido de destino en una actividad:
 
-1. Navigate to the page where you want to restore inheritance and tap or click **Targeting** in the mode drop-down menu.
+1. Vaya a la página donde desee restaurar la herencia y toque o haga clic en **Objetivo** en el menú desplegable de modo.
 1. Haga clic o pulse **Iniciar segmentación**.
 1. Seleccione **Reanudar Live Copy** en el menú desplegable de la barra de herramientas.
 
@@ -287,12 +287,12 @@ Para restaurar la herencia del contenido de destino en una actividad:
 
 1. Haga clic o pulse **Reanudar** para confirmar que desea reanudar la herencia de Live Copy. Si se reanuda la herencia, se pierden las modificaciones realizadas en la actividad actual.
 
-## Eliminar áreas {#deleting-areas}
+## Eliminar áreas  {#deleting-areas}
 
 Cuando elimine un área, deberá eliminar todas las actividades de la misma. AEM le advierte antes de poder eliminar un área. Si elimina un área a la que está vinculado un sitio, la asignación de esta marca se reasignará automáticamente al área maestra.
 
 Para eliminar un área:
 
-1. Navigate to **Personalization** > **Activities** or **Offers** and then your brand.
+1. Vaya a **Personalización** > **Actividades** o **Ofertas** y luego a su marca.
 1. Haga clic o pulse el icono que está al lado del área que desee eliminar.
 1. Haga clic o pulse **Eliminar** y confirme que desea eliminar el área.
