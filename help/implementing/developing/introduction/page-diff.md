@@ -16,11 +16,11 @@ ht-degree: 11%
 
 La creación de contenido es un proceso iterativo. La creación con eficiencia de contenido requiere poder ver qué ha cambiado de una iteración a otra. Visualizar una versión de la página y luego otra es un proceso poco eficaz y propenso a errores. Un autor desea poder comparar la página actual con una versión anterior en paralelo con las diferencias resaltadas.
 
-La diferencia de página permite al usuario comparar la página actual con los inicios, las versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte Diferencia [de página](/help/sites-cloud/authoring/features/page-diff.md).
+La diferencia de página permite al usuario comparar la página actual con los inicios, las versiones anteriores, etc. Para obtener más información sobre esta función de usuario, consulte [Dif. de página](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Detalles de la operación {#operation-details}
 
-Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear con AEM en segundo plano para facilitar la diferencia. Esto es necesario para poder representar el contenido [para una comparación](/help/sites-cloud/authoring/features/page-diff.md)paralela.
+Al comparar versiones de una página, la versión anterior que el usuario desea comparar se vuelve a crear con AEM en segundo plano para facilitar la diferencia. Esto es necesario para poder representar el contenido [para la comparación en paralelo](/help/sites-cloud/authoring/features/page-diff.md).
 
 Esta operación de recreación la realiza AEM internamente y es transparente para el usuario y no requiere ninguna intervención. Sin embargo, un administrador que visualiza el repositorio, por ejemplo, en CRX DE Lite, vería estas versiones recreadas dentro de la estructura de contenido.
 
