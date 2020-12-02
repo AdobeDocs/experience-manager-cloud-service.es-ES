@@ -11,7 +11,7 @@ ht-degree: 36%
 ---
 
 
-# Registros de operaciones de recursos de vista en el flujo de actividades {#activity-stream-in-timeline}
+# Registros de operaciones de recursos de vista en el flujo de actividad {#activity-stream-in-timeline}
 
 Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en Recursos Adobe Experience Manager (AEM), la función de flujo de Actividad actualiza la línea de tiempo para reflejar la actividad.
 
