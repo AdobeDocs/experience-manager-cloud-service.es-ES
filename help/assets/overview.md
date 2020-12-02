@@ -21,13 +21,13 @@ La ingestión simultánea de muchos recursos o recursos complejos requiere una t
 
 Las empresas necesitan soporte para una amplia variedad de formatos de archivo y resoluciones de contenido para casos de uso multilingüe, multidispositivo y geografía. Los requerimientos de procesamiento y almacenamiento de recursos requieren recursos y capacidades que pueden sobrecargar una solución tradicional. A veces, las limitaciones técnicas del procesamiento de los activos no producen los resultados deseados y, en otros momentos, el costo del almacenamiento es un impedimento para los márgenes de beneficio.
 
-Para empezar, comprenda los [beneficios de una oferta](#solution-benefits)nativa de nube. Consulte los notables [cambios de AEM como Cloud Service](/help/release-notes/aem-cloud-changes.md) que también afectan a los activos Experience Manager y que siguieron los notables [cambios de los activos](/help/assets/assets-cloud-changes.md).
+Para empezar, comprenda los [beneficios de una oferta nativa de la nube](#solution-benefits). Consulte los [cambios notables en AEM como Cloud Service](/help/release-notes/aem-cloud-changes.md) que también afectan a Experience Manager Assets, siguieron los [cambios notables en Assets](/help/assets/assets-cloud-changes.md).
 
-Siga leyendo para conocer los [detalles de las nuevas capacidades](#whats-new-assets) de Recursos y los problemas [](/help/release-notes/known-issues.md)conocidos. Consulte una lista de la funcionalidad [](/help/release-notes/deprecated-removed-features.md) obsoleta o eliminada para saber qué se elimina en esta versión y vea esta [lista de las funciones](/help/release-notes/known-issues.md#upcoming-assets-capabilities) futuras para saber lo que se avecina en breve. Por último, comprenda los términos AEM con la ayuda de este [glosario](/help/overview/terminology.md).
+Lea para conocer los [detalles de las nuevas capacidades de Recursos](#whats-new-assets) y los [problemas conocidos](/help/release-notes/known-issues.md). Consulte una lista de [funcionalidad obsoleta o eliminada](/help/release-notes/deprecated-removed-features.md) para saber qué se elimina en esta versión y vea esta [lista de las próximas funcionalidades](/help/release-notes/known-issues.md#upcoming-assets-capabilities) para saber qué ocurrirá en breve. Por último, comprenda los términos AEM con la ayuda de este [glosario](/help/overview/terminology.md).
 
 ## Beneficios de la solución {#solution-benefits}
 
-Los siguientes son los beneficios clave de Assets como Cloud Service. Para obtener más información, consulte [Información general sobre Experience Manager como Cloud Service](/help/overview/introduction.md).
+Los siguientes son los beneficios clave de Assets como Cloud Service. Para obtener más información, consulte [información general de Experience Manager como Cloud Service](/help/overview/introduction.md).
 
 * **Cloud Service moderno para el procesamiento** de recursos: Los nuevos microservicios de recursos son un servicio de procesamiento de recursos basado en la nube, escalable, fiable y sin complicaciones.
 * **Altamente escalable**: Escalabilidad elástica en todos los tipos de implementaciones. Recursos prácticamente ilimitados disponibles a petición, según y cuando sea necesario. Guarda el costo del diseño excesivo en comparación con un sistema tradicional.
