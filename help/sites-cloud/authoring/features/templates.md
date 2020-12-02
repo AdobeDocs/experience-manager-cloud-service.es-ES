@@ -29,7 +29,7 @@ El **Editor de plantillas** permite a los autores de plantillas:
 
 En este documento se explica cómo un **autor de plantillas** puede utilizar la consola y el editor de plantillas para crear y gestionar plantillas editables.
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+Para obtener información detallada sobre cómo funcionan las plantillas editables a nivel técnico, consulte el documento para desarrolladores [Plantillas de página](/help/implementing/developing/components/templates.md) para obtener más información.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
-Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Se trata de una tarea de administración y se describe en el documento [Plantillas de página](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
@@ -114,7 +114,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 
    >[!NOTE]
    >
-   >Los tipos de plantilla son diseños de plantilla predefinidos y se pueden concebir como plantillas para una plantilla. Los responsables de predefinirlos son los desarrolladores o el administrador del sistema. More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
+   >Los tipos de plantilla son diseños de plantilla predefinidos y se pueden concebir como plantillas para una plantilla. Los responsables de predefinirlos son los desarrolladores o el administrador del sistema. Encontrará más información en el documento para desarrolladores [Plantillas de página](/help/implementing/developing/components/templates.md#template-type).—>
 
 1. Complete los **detalles de la plantilla**:
 
@@ -127,7 +127,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >
    >Cuando se crea una plantilla nueva, se marca como **Borrador** en la consola; esto indica que aún no está disponible para que los autores de páginas la utilicen.
 
-### Definición de las propiedades de la plantilla: autor de plantillas   {#defining-template-properties-template-author}
+### Definición de las propiedades de la plantilla: autor de plantillas    {#defining-template-properties-template-author}
 
 Una plantilla puede tener las propiedades siguientes:
 
@@ -162,7 +162,7 @@ Para definir la miniatura de plantilla:
    * Si el resultado no es satisfactorio, toque o haga clic en **Borrar** para cargar otra imagen o volver a generar la miniatura.
 1. Cuando esté satisfecho con la miniatura, toque o haga clic en **Guardar y cerrar**.
 
-### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
+### Activación y autorización de una plantilla: autor de plantillas    {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
@@ -204,7 +204,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
    >
-   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >Consulte [Disponibilidad de la plantilla](/help/implementing/developing/components/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -221,7 +221,7 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 1. Seleccione las **Políticas de contenido** que deben publicarse en combinación.
 1. Seleccione **Publicar** en la barra de herramientas para completar la acción.
 
-## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
+## Edición de plantillas: autores de plantillas    {#editing-templates-template-authors}
 
 Al crear o editar una plantilla, hay distintas proporciones que se pueden definir. Editar plantillas es similar a crear páginas.
 
@@ -527,7 +527,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 >
 >El contenido inicial está diseñado para preparar componentes y el diseño de página que sirve como punto de partida para crear el contenido. No se prevé que el contenido real permanezca tal cual. Por este motivo, no se puede traducir el contenido inicial.
 >
->Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/get-started/localization.html).
+>Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
 
 ### Edición de una plantilla: diseño, autor de plantillas {#editing-a-template-layout-template-author}
 
@@ -616,7 +616,7 @@ Con la opción **Propiedades de la página inicial**, puede definir las [propied
 
 1. Confirme las definiciones con **Listo**.
 
-## Prácticas recomendadas   {#best-practices}
+## Prácticas recomendadas    {#best-practices}
 
 Al crear plantillas debe tener en cuenta:
 
