@@ -3,10 +3,10 @@ title: Informes sobre uso y uso compartido
 description: Informes sobre los recursos en [!DNL Adobe Experience Manager Assets] que ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 11%
+source-wordcount: '928'
+ht-degree: 7%
 
 ---
 
@@ -48,17 +48,19 @@ Cuando se genera un informe, <!-- through an email (optional) and --> se le noti
 
    ![Seleccionar tipo de informe](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >Antes de generar un informe de **[!UICONTROL descarga de recursos]**, compruebe que el servicio de descarga de recursos está habilitado. En la consola web (`https://[aem_server]:[port]/system/console/configMgr`), abra la configuración del **[!UICONTROL grabador de eventos de CQ DAM de día]** y seleccione la opción **[!UICONTROL Recurso descargado (DESCARGADO)]** en Tipos de eventos si no está seleccionada.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >De forma predeterminada, los fragmentos de contenido y los recursos compartidos de vínculos se incluyen en el informe Recurso [!UICONTROL Descargar]. Seleccione la opción adecuada para crear un informe de recursos compartidos de vínculos o para excluir fragmentos de contenido del informe de descarga.
+>[!NOTE]
+>
+>De forma predeterminada, los fragmentos de contenido y los recursos compartidos de vínculos se incluyen en el informe Recurso [!UICONTROL Descargar]. Seleccione la opción adecuada para crear un informe de recursos compartidos de vínculos o para excluir fragmentos de contenido del informe de descarga.
 
-   >[!NOTE]
-   >
-   >El informe [!UICONTROL Descargar] muestra detalles de sólo los recursos que se descargan después de seleccionarse individualmente o que se descargan mediante Acción rápida. Sin embargo, no incluye los detalles de los recursos que se encuentran dentro de una carpeta descargada.
+>[!NOTE]
+>
+>El informe [!UICONTROL Descargar] muestra detalles de sólo los recursos que se descargan después de seleccionarse individualmente o que se descargan mediante Acción rápida. Sin embargo, no incluye los detalles de los recursos que se encuentran dentro de una carpeta descargada.
 
 1. Configure los detalles del informe, como título, descripción, miniatura y ruta de carpeta, en el repositorio de CRX donde se almacena el informe. De forma predeterminada, la ruta de la carpeta es `/content/dam`. Puede especificar una ruta diferente.
 
@@ -139,11 +141,18 @@ Para agregar columnas personalizadas a estos informes, siga estos pasos:
 
 1. Haga clic en **[!UICONTROL Crear]** desde la barra de herramientas. Un mensaje notifica que se ha iniciado la generación de informes.
 
-## Configurar el servicio de depuración {#configure-purging-service}
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-Para eliminar los informes que ya no necesite, configure el servicio Depuración de informes DAM desde la consola web para purgar los informes existentes en función de su cantidad y antigüedad.
+## Configure purging service {#configure-purging-service}
 
-1. Acceda a la consola web (administrador de configuración) desde `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra la configuración **[!UICONTROL DAM Report Purge Service]**.
-1. Especifique la frecuencia (intervalo de tiempo) del servicio de depuración en el campo `scheduler.expression.name`. También puede configurar la edad y el umbral de cantidad para los informes.
-1. Guarde los cambios.
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## Información, sugerencias y limitaciones para la resolución de problemas {#best-practices-and-limitations}
+
+* Si el informe Uso de disco no se genera y utiliza [!DNL Dynamic Media], asegúrese de que todos los recursos se realicen correctamente. Para resolverlo, vuelva a procesar los recursos y, a continuación, vuelva a generar el informe.
