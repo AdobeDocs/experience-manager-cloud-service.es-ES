@@ -2,9 +2,9 @@
 title: Conjuntos de giros
 description: Aprenda a trabajar con conjuntos de giros en Dynamic Media
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '1829'
 ht-degree: 12%
 
 ---
@@ -76,7 +76,7 @@ Si lo necesita, puede [editar conjuntos de giros](#editing-spin-sets). Además, 
 
 ## Carga de recursos para conjuntos de giros {#uploading-assets-for-spin-sets}
 
-Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el elemento está rotando y volteando. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
+Como mínimo, necesita entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el elemento está rotando y volteando. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
 
 Puede cargar imágenes para los conjuntos de giros del mismo modo que [carga cualquier otro recurso en AEM Assets](/help/assets/manage-digital-assets.md).
 
