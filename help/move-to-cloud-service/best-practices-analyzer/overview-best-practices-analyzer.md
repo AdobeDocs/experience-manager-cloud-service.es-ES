@@ -2,15 +2,20 @@
 title: Información general sobre el Analizador de optimizaciones
 description: Información general sobre el Analizador de optimizaciones
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # Información general {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="Visión general del Analizador de optimizaciones"
+>abstract="El Analizador de optimizaciones proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen AEM optimizaciones. También proporciona orientación sobre los próximos pasos para adoptar AEM mejores prácticas. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación existente de Adobe Experience Manager (AEM) a AEM como Cloud Service."
 
 El Analizador de optimizaciones proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen AEM optimizaciones. También proporciona orientación sobre los próximos pasos para adoptar AEM mejores prácticas. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación existente de Adobe Experience Manager (AEM) a AEM como Cloud Service.
 
