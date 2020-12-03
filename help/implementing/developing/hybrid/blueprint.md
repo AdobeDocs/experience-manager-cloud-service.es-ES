@@ -2,7 +2,7 @@
 title: SPA modelo
 description: En el presente documento se describe el contrato general, independiente del marco, que debe cumplir cualquier marco SPA para aplicar componentes SPA editables en AEM.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: d70f531087cccd45793f091b9fab7e8a25143c1e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 0%
