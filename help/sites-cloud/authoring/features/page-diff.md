@@ -2,10 +2,10 @@
 title: 'Diferencias de página  '
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 100%
+source-wordcount: '622'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ La creación de contenido es un proceso iterativo. La creación con eficiencia d
 
 La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 
->[!CAUTION]
+>[!NOTE]
 >
 >El usuario debe tener el permiso para **Modificar/Crear/Eliminar** en el nodo `/content/versionhistory` para poder utilizar la función.
 >
@@ -54,10 +54,6 @@ La comparación de diferencias detecta los cambios en el nivel de componente y d
 
 * Verde claro: componente añadido
 * Rosa: componente eliminado
-* Azul: componente modificado
-* Azul: componente movido
-
-Tenga en cuenta que los colores de componente modificado y movido son los mismos.
 
 **Cambios en HTML** 
 
@@ -93,9 +89,7 @@ Puede salir de la comparación de diferencias en paralelo en cualquier momento h
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
 * Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
-* Para las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
-* Si se realizan cambios en una imagen, como la modificación de los atributos alt, title o src, estos se resaltan en azul como modificados. Sin embargo, en algunos casos, la imagen tiene una representación Base64 del atributo src y ambas imágenes tienen el mismo aspecto. La comparación diferencia una de otra debido a los atributos src dispares.
-* La comparación de diferencias no puede detectar la rotación de la imagen.
+* Para las versiones, la diferencia no vuelve a crear la directiva de control de acceso ni las relaciones de Live Copy.
 * Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
    * Si tiene problemas con una diferencia, compruebe la [línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ver si la página se ha movido.
 
