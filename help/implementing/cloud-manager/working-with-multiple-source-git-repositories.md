@@ -2,9 +2,9 @@
 title: Trabajar con varios repositorios Git de origen
 description: 'Trabajar con varios repositorios Git de origen: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Siga los pasos a continuación para agregar un nuevo (tercer) origen o repositor
 1. Añada una referencia al nuevo directorio en la página raíz Maven del repositorio Git del Administrador de nube.
 
 
-## Apéndice A: Ejemplo de acción de GitHub {#sample-github-action}
+## Ejemplo de acción de GitHub {#sample-github-action}
 
 Se trata de una acción de ejemplo de GitHub desencadenada por una notificación push a la rama principal y luego introducida en un subdirectorio del repositorio Git del Administrador de nube. Las acciones de GitHub deben proporcionarse con dos secretos, `MAIN_USER` y `MAIN_PASSWORD`, para poder conectarse al repositorio Git del Administrador de nube y enviarlas al mismo.
 
@@ -117,7 +117,7 @@ Como se muestra arriba, el uso de una acción GitHub es muy flexible. Se puede r
 >[!NOTE]
 >La secuencia de comandos anterior utiliza `git add` para actualizar el repositorio, lo que supone que se incluyen eliminaciones, según la configuración predeterminada de Git, esto debe reemplazarse por `git add --all`.
 
-## Apéndice B: Ejemplo de trabajo de Jenkins {#sample-jenkins-job}
+## Ejemplo de trabajo de Jenkins {#sample-jenkins-job}
 
 Este es un script de ejemplo que se puede utilizar en un trabajo de Jenkins o similar. Se activa por un cambio en un repositorio Git. El trabajo de Jenkins comprueba el estado más reciente de ese proyecto o ramificación y luego activa este script.
 
