@@ -2,15 +2,21 @@
 title: Uso del Analizador de optimizaciones
 description: Uso del Analizador de optimizaciones
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 47%
+source-wordcount: '2362'
+ht-degree: 46%
 
 ---
 
 
 # Uso de Best Practices Analyzer {#using-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_using"
+>title="Uso del Analizador de optimizaciones"
+>abstract="Revise la documentación para utilizar el Analizador de procedimientos recomendados (antes Cloud Readiness Analyzer) y el informe generado. El informe Analizador de optimizaciones se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -23,12 +29,12 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 * BPA se admite en instancias de AEM con la versión 6.1 o superior.
 
    >[!NOTE]
-   > Consulte [Instalación en AEM 6.1](#installing-on-aem61) para conocer los requisitos especiales para instalar BPA en AEM 6.1.
+Consulte  [Instalación en AEM 6.1](#installing-on-aem61) para conocer los requisitos especiales para instalar BPA en AEM 6.1.
 
 * BPA puede ejecutarse en cualquier entorno, pero es preferible que se ejecute en un entorno *Stage*.
 
    >[!NOTE]
-   >Para evitar un impacto en instancias críticas del negocio, se recomienda ejecutar BPA en un entorno *Autor* que esté lo más cerca posible del entorno *Producción* en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
+Para evitar un impacto en instancias críticas del negocio, se recomienda ejecutar BPA en un entorno  ** de autorización lo más cercano posible al entorno de  ** producción en las áreas de personalización, configuración, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
 
 * La generación del contenido del informe BPA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
 
@@ -36,10 +42,15 @@ Siga la sección siguiente para comprender las consideraciones importantes para 
 
 ## Disponibilidad {#availability}
 
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_download"
+title="Descargar el Analizador de optimizaciones"
+abstract="El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
+
 El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
->Descargue el Analizador de optimizaciones del portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html).
+Descargue el Analizador de optimizaciones del portal  [de ](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) distribución de software.
 
 ## Visualización del informe del Analizador de optimizaciones {#viewing-report}
 
@@ -73,12 +84,12 @@ Siga esta sección para obtener información sobre la vista del informe del Anal
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >Puede forzar el BPA para que borre su caché y vuelva a generar el informe haciendo clic en **Actualizar informe**.
+Puede forzar el BPA para que borre su caché y vuelva a generar el informe haciendo clic en  **Actualizar informe**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-   >Mientras el informe se está regenerando, muestra el progreso en términos de porcentaje completado como se muestra en la imagen a continuación.
+Mientras el informe se está regenerando, muestra el progreso en términos de porcentaje completado como se muestra en la imagen a continuación.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
@@ -90,9 +101,15 @@ La herramienta Analizador de optimizaciones está limitada en Adobe Experience M
 Para Adobe Experience Manager 6.1, la herramienta no funciona y solo se puede utilizar la interfaz HTTP.
 
 >[!NOTE]
->En todas las versiones, Pattern Detector puede ejecutarse de forma independiente.
+En todas las versiones, Pattern Detector puede ejecutarse de forma independiente.
 
 ## Interpretación del informe del Analizador de optimizaciones {#cra-report}
+
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_interpreting"
+title="Interpretación del informe del Analizador de optimizaciones"
+abstract="Existen dos opciones para ver los resultados de los informes de BPA: UI y CSV. Cuando se ejecuta la herramienta Analizador de procedimientos recomendados en la instancia de AEM, el informe de la interfaz de usuario se muestra como resultados en la ventana de herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes del Analizador de optimizaciones"
 
 Cuando la herramienta Analizador de optimizaciones se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
 
@@ -109,7 +126,7 @@ El formato del informe es el siguiente:
 Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
 
 >[!NOTE]
->Para obtener más información sobre cada Categoría de búsqueda, consulte [Categorías del detector de patrones](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
+Para obtener más información sobre cada Categoría de búsqueda, consulte Categorías [ del detector de ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)patrones.
 
 Siga la tabla siguiente para comprender los niveles de importancia:
 
