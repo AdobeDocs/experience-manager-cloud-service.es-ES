@@ -3,7 +3,7 @@ title: Valores preestablecidos de conjunto por lotes
 description: Descubra cómo automatizar la creación de conjuntos de imágenes y conjuntos de giros mediante ajustes preestablecidos de conjuntos de lotes en Dynamic Media.
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
+source-git-commit: c7a2fbb4fa6e81caabab829b876741ecf393a2c3
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Utilice **[!UICONTROL Valores preestablecidos de conjunto por lotes]** para faci
 1. Cree un ajuste preestablecido de conjunto de lotes. Consulte [Creación de un ajuste preestablecido de conjunto de lotes para un conjunto de imágenes o un conjunto de giros](#creating-bsp).
 1. Cree una nueva carpeta de recursos o utilice una carpeta de recursos existente y asegúrese de sincronizarla con [!DNL Dynamic Media]. Consulte [Creación de carpetas](/help/assets/manage-digital-assets.md#creating-folders).
 1. Aplique el ajuste preestablecido de conjunto de lotes a la carpeta de recursos. Consulte [Acerca de la aplicación de ajustes preestablecidos de conjunto de lotes a carpetas](#apply-bsp).
-1. Cargue imágenes en la carpeta de recursos. Consulte [Carga de recursos para conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Carga de recursos para conjuntos de giros](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Añadir recursos digitales a Adobe Experience Manager](#add-assets-to-experience-manager).
+1. Cargue imágenes en la carpeta de recursos. Consulte [Carga de recursos para conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Carga de recursos para conjuntos de giros](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Añadir recursos digitales a Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Cree el conjunto de imágenes o giros. Consulte [Conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md) o [Conjuntos de giros](/help/assets/dynamic-media/spin-sets.md).
 1. Publique el conjunto de imágenes o giros. Consulte [Publicación de recursos de medios dinámicos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
