@@ -4,9 +4,9 @@ description: Comprender el concepto de colección en Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85f949e405ee3e7527f49d61c368b79ee2d0743b
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2396'
 ht-degree: 20%
 
 ---
@@ -140,7 +140,7 @@ La función Buscar dentro de Colecciones admite tanto [Buscar colecciones](#sear
 
 ### Buscar colecciones {#search-collections}
 
-Puede buscar colecciones desde la consola Colecciones. Al buscar palabras clave en el cuadro Omniture, AEM Assets busca los nombres de las colecciones, los metadatos y las etiquetas agregadas a las colecciones.
+Puede buscar colecciones desde la consola Colecciones. Cuando realiza una búsqueda con palabras clave en el cuadro Omniture, [!DNL Experience Manager Assets] busca los nombres de la colección, los metadatos y las etiquetas agregadas a las colecciones.
 
 Si busca colecciones desde el nivel superior, solo se devuelven colecciones individuales en los resultados de búsqueda. Se excluyen los recursos o las carpetas de las colecciones. En todos los demás casos (por ejemplo, dentro de una colección individual o en una jerarquía de carpetas), se devuelven todos los recursos, carpetas y colecciones relevantes.
 
@@ -148,7 +148,7 @@ Si busca colecciones desde el nivel superior, solo se devuelven colecciones indi
 
 En la consola Colecciones, toque o haga clic en una colección para abrirla.
 
-Dentro de una colección, AEM búsqueda de recursos está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos y las carpetas secundarias que coinciden con la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, las carpetas y otras colecciones que coinciden con los miembros directos de la colección.
+Dentro de una colección, la búsqueda [!DNL Experience Manager] está restringida a los recursos (y sus etiquetas y metadatos) dentro de la colección que está viendo. Al buscar dentro de una carpeta, se devuelven todos los recursos y las carpetas secundarias que coinciden con la carpeta actual. Al buscar dentro de una colección, solo se devuelven los recursos, las carpetas y otras colecciones que coinciden con los miembros directos de la colección.
 
 ## Editar la configuración de la colección {#edit-collection-settings}
 
@@ -179,7 +179,7 @@ Al descargar una colección, se descarga toda la jerarquía de recursos de la co
 
 ## Editar propiedades de metadatos de varias colecciones {#editing-metadata-properties-of-multiple-collections}
 
-Recursos de Adobe Enterprise Manager (AEM) permite editar de forma masiva los metadatos de muchas colecciones. Utilice la página [!UICONTROL Propiedades] para realizar cambios en los metadatos de varias colecciones; por ejemplo, cambiar las propiedades de los metadatos a un valor común o agregar o modificar etiquetas.
+Recursos de Adobe Enterprise Manager le permite editar los metadatos de muchas colecciones de forma masiva. Utilice la página [!UICONTROL Propiedades] para realizar cambios en los metadatos de varias colecciones; por ejemplo, cambiar las propiedades de los metadatos a un valor común o agregar o modificar etiquetas.
 
 Para personalizar la página [!UICONTROL Propiedades] de metadatos, incluida la adición, modificación y eliminación de propiedades de metadatos, utilice el editor de Esquema.
 
