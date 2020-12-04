@@ -2,13 +2,12 @@
 title: Notas de la versión 2020.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.10.0.'
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1044'
 ht-degree: 18%
 
 ---
-
 
 
 # Notas de la versión [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
@@ -32,8 +31,6 @@ La siguiente versión (2020.11.0) será el 1 de diciembre de 2020.
 
 ## [!DNL Adobe Experience Manager Assets] como Cloud Service  {#assets}
 
-### Novedades en [!DNL Assets] {#what-is-new-assets}
-
 * **[!DNL Adobe Sensei]etiquetado** inteligente de vídeo con tecnología: Al aprovechar los modelos de AI para analizar el contenido de vídeo de etiquetas específicas de objetos y acciones, los usuarios de DAM pueden dedicar menos tiempo a añadir etiquetas y más tiempo a utilizar la información enriquecida expuesta para ofrecer la experiencia adecuada a los clientes. Consulte [Recursos de vídeo de etiquetas inteligentes](/help/assets/smart-tags-video-assets.md).
 
 * **Mejoras** de Brand Portal: Las siguientes funciones nuevas y más están disponibles en  [!DNL Brand Portal]. Para obtener más información, consulte [[!DNL Brand Portal] notas de la versión](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
@@ -45,13 +42,7 @@ La siguiente versión (2020.11.0) será el 1 de diciembre de 2020.
 
 * **[!DNL Adobe Asset Link]versión 2.1**: Hay una nueva versión de  [Adobe Asset ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) Linkextension disponible para  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]y  [!DNL Adobe InDesign] está disponible. Agrega compatibilidad con las últimas [!DNL Adobe Creative Cloud] aplicaciones con la versión 2021, publicada en octubre de 2020.
 
-* **[!DNL Assets]Compatibilidad** con archivos WebP:  [!DNL Assets] como Cloud Service ahora admite el formato de imagen WebP. WebP es un formato de imagen emergente creado por Google. Las imágenes en formato de archivo WebP no se distinguen visualmente de los archivos JPG o PNG y los archivos son mucho más pequeños. El menor tamaño de archivo de los recursos mejora los tiempos de carga de las páginas y ayuda a los creadores de contenido a ofrecer una experiencia web más rápida.
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]Compatibilidad** con archivos WebP:  [!DNL Assets] como Cloud Service ahora admite el formato de imagen WebP. WebP es un formato de imagen emergente creado por Google. Las imágenes en formato de archivo WebP no se distinguen visualmente de los archivos JPG o PNG y los archivos son mucho más pequeños. El menor tamaño de archivo de los recursos mejora los tiempos de carga de las páginas y ayuda a los creadores de contenido a ofrecer una experiencia web más rápida. Consulte cómo utilizar WebP en [crear perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.10.0 es el 
 * Cuando están en hibernación, los entornos en hibernación ahora muestran un estado discreto en Cloud Manager.
 
 * El contenedor de compilación de Cloud Manager ahora admite la compilación de proyectos con Java 8 o Java 11. El sistema de cadenas de herramientas Maven proporciona compatibilidad con Java 11.
-
 
 * Se aumentó el número de variables de entorno por entorno a 200.
 
@@ -122,4 +112,3 @@ Siga esta sección para conocer las novedades y las actualizaciones de la versi�
 ### Corrección de errores {#ctt-bug-fixes}
 
 * La herramienta de transferencia de contenido omitía los archivos de contenido si el conjunto de migración contenía rutas con nombres de archivo parcialmente similares. Esto se ha solucionado.
-
