@@ -3,9 +3,9 @@ title: Procesar recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -50,14 +50,14 @@ Este es el flujo básico de procesamiento e ingesta de recursos. Si está config
 
 La ingestión y el flujo de procesamiento son conceptos clave de la arquitectura de microservicios de recursos para Experience Manager.
 
-* **Acceso** binario directo: Los recursos se transportan (y se cargan) a la Tienda binaria de la nube una vez configurados para entornos de Experience Manager y, a continuación, se AEM los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
-* **Procesamiento** externo: El procesamiento de los recursos se realiza fuera de AEM entorno y guarda sus recursos (CPU, memoria) para proporcionar funcionalidades clave de la administración de recursos digitales y para admitir el trabajo interactivo con el sistema para los usuarios finales
+* **Acceso** binario directo: Los recursos se transportan (y se cargan) al almacén binario de la nube una vez configurados para entornos de Experience Manager y, a continuación,  [!DNL Experience Manager]los microservicios de recursos, y finalmente los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
+* **Procesamiento** externo: El procesamiento de los recursos se realiza fuera del  [!DNL Experience Manager] entorno y guarda sus recursos (CPU, memoria) para proporcionar funcionalidades clave de la administración de recursos digitales y para admitir el trabajo interactivo con el sistema para los usuarios finales
 
 ## Carga de recursos con acceso binario directo {#asset-upload-with-direct-binary-access}
 
-Los clientes Experience Manager, que forman parte de la oferta de productos, admiten la carga con acceso binario directo de forma predeterminada. Estas incluyen la carga mediante la interfaz web, el vínculo de recursos de Adobe y AEM aplicación de escritorio.
+Los clientes Experience Manager, que forman parte de la oferta de productos, admiten la carga con acceso binario directo de forma predeterminada. Estas incluyen la carga mediante la interfaz web, el vínculo de recursos de Adobe y la aplicación de escritorio [!DNL Experience Manager].
 
-Puede utilizar herramientas de carga personalizadas, que funcionan directamente con las API de HTTP AEM. Puede utilizar estas API directamente o utilizar y ampliar los siguientes proyectos de código abierto que implementan el protocolo de carga:
+Puede utilizar herramientas de carga personalizadas, que funcionan directamente con [!DNL Experience Manager] API HTTP. Puede utilizar estas API directamente o utilizar y ampliar los siguientes proyectos de código abierto que implementan el protocolo de carga:
 
 * [Biblioteca de carga de código abierto](https://github.com/adobe/aem-upload)
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
@@ -68,7 +68,7 @@ Para obtener más información, consulte [carga de recursos](add-assets.md).
 
 Aunque la mayoría de los clientes deben obtener todos sus requisitos de procesamiento de recursos de los microservicios de recursos configurables, algunos podrían necesitar un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en base a la información proveniente de otros sistemas a través de integraciones. En casos como este, se pueden utilizar flujos de trabajo de postprocesamiento personalizados.
 
-Los flujos de trabajo posteriores al procesamiento son modelos AEM de flujo de trabajo habituales, creados y administrados en AEM editor de flujo de trabajo. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados y flujos de trabajo personalizados disponibles.
+Los flujos de trabajo posteriores al procesamiento son modelos de flujo de trabajo [!DNL Experience Manager] normales, creados y administrados en [!DNL Experience Manager] editor de flujo de trabajo. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados y flujos de trabajo personalizados disponibles.
 
 Adobe Experience Manager se puede configurar para que active automáticamente los flujos de trabajo posteriores al procesamiento una vez finalizado el procesamiento de recursos.
 
