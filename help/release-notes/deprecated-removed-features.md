@@ -2,10 +2,10 @@
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ En esta sección se enumeran las funciones que se han eliminado de AEM con Exper
 | Área | Función | Reemplazo |
 | ------------ | ------------------ | ----------- |
 | IU | Aunque algunos cuadros de diálogo de la interfaz de usuario clásica permanecen por el momento en algunas funciones concretas, como Verificador de vínculos, Depuración de versiones y algunas configuraciones de Cloud Service, el acceso a la IU clásica en general se ha eliminado en la interfaz de usuario del producto de AEM. | IU estándar |
-| Dynamic Media | Las integraciones anteriores con [Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/scene7.html) y el [modo híbrido de Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html) no están disponibles en AEM as a Cloud Service. | Utilice [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) proporcionados con Experience Manager as a Cloud Service. |
+| Dynamic Media | Las integraciones anteriores con [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) y [modo híbrido de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) no están disponibles en AEM como Cloud Service. | Utilice [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) proporcionados con Experience Manager as a Cloud Service. |
 | Sites | Portal Director y componentes Portlet | Estas funciones quedaron obsoletas en AEM 6.4 y ahora se han eliminado de AEM. |
 | Sitios | Importador de diseños | Esta capacidad se ha eliminado porque no se puede acceder a las secciones inmutables del repositorio de AEM durante la ejecución. |
 | Recursos | [El uso compartido de AEM Assets con el servicio principal de Experience Cloud Assets y Creative Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) no está disponible. | Para la integración con Creative Cloud, utilice [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html). |
