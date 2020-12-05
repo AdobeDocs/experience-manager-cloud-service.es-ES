@@ -2,7 +2,7 @@
 title: Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch
 description: La extensión de visores de Dynamic Media para Adobe Launch, junto con la versión 5.13 de visores de Dynamic Media, permite a los clientes de Dynamic Media, Adobe Analytics y Adobe Launch utilizar eventos y datos específicos para los visores de Dynamic Media en su configuración de Adobe Launch.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
 source-wordcount: '6647'
 ht-degree: 18%
@@ -646,7 +646,7 @@ La publicación de una biblioteca implica los dos pasos siguientes:
 
 ## Configuración de Adobe Experience Manager para la integración {#configuring-adobe-experience-manager-for-the-integration}
 
-<!-- Prerequisites lost below should be verified by Sasha -->
+<!-- Prerequisites list below should be verified by Sasha -->
 
 Requisitos previos:
 
