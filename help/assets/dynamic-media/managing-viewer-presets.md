@@ -2,9 +2,9 @@
 title: Administración de ajustes preestablecidos de visor
 description: Cómo crear y gestionar ajustes preestablecidos de visor
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4258'
 ht-degree: 16%
 
 ---
@@ -51,7 +51,7 @@ Puede agregar, editar, eliminar, publicar, cancelar la publicación y los ajuste
 
 Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor HTML5 en una ventana separada del navegador. En otros casos, puede ser necesario incrustar el visor HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O bien, puede ser &quot;interactivo&quot; y mostrarse de forma diferente en diferentes dispositivos o en diferentes tamaños de ventana del explorador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos y listos para usar que vienen con Dynamic Media admiten páginas web estáticas y páginas web diseñadas con capacidad de respuesta.
 
-Consulte [Biblioteca de imágenes interactivas](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) en la *Ayuda de la API de servicio de imágenes de Scene7* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
+Consulte [Biblioteca de imágenes estáticas interactivas](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) en la *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
 
 >[!NOTE]
 >
