@@ -1,11 +1,11 @@
 ---
 title: Cómo editar o agregar metadatos
-description: Obtenga información sobre los metadatos de los recursos en AEM Assets y las distintas formas de editar los metadatos de los recursos.
+description: Obtenga información sobre los metadatos de los recursos en [!DNL Experience Manager Assets] varias formas de editar los metadatos de los recursos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '422'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Los metadatos son información adicional sobre el recurso que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
-Dado que las compañías necesitan vocabularios de metadatos fiables y controlados, AEM Assets no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar campos de metadatos nuevos para los recursos, los desarrolladores sí pueden hacerlo. Consulte [Creación de nuevas propiedades de metadatos para recursos](meta-edit.md#editing-metadata-schema).
+Debido a que las compañías necesitan vocabularios de metadatos fiables y controlados, [!DNL Experience Manager Assets] no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar campos de metadatos nuevos para los recursos, los desarrolladores sí pueden hacerlo. Consulte [Creación de nuevas propiedades de metadatos para recursos](meta-edit.md#editing-metadata-schema).
 
 ## Edición de metadatos para un recurso {#editing-metadata-for-an-asset}
 
