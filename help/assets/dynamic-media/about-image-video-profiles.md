@@ -2,9 +2,9 @@
 title: Acerca de los Perfiles de imágenes y Perfiles de vídeo de Dynamic Media
 description: Un Perfil de imagen o un Perfil de vídeo es una fórmula para determinar las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué codificación de vídeo se aplicará a los recursos de vídeo de Dynamic Media que cargue. O bien, qué Perfil de imagen aplicar a los recursos de imagen de Dynamic Media para que se recorten correctamente.
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1301'
 ht-degree: 2%
 
 ---
@@ -47,7 +47,7 @@ Consulte [Ajuste del tamaño de lote del flujo de trabajo de reprocesamiento](#a
 
 >[!NOTE]
 >
->Si está realizando una migración masiva de recursos de Dynamic Media Classic a AEM, debe habilitar el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
+>Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, debe habilitar el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
 >
 >El agente de publicación de migración debe estar deshabilitado en el servidor de Dynamic Media para que el flujo de trabajo de reprocesamiento funcione según lo esperado.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Para volver a procesar los recursos de Dynamic Media en una carpeta**:
-1. En AEM, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el **Scene7: Flujo de trabajo de reprocesamiento de recursos**,
+1. En Adobe Experience Manager, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el **Scene7: Flujo de trabajo de reprocesamiento de recursos**,
 
    Las carpetas que ya tienen un Perfil de imagen o un Perfil de vídeo asignado a él se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta en la Vista de tarjetas.
 
@@ -81,11 +81,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Haga clic en **[!UICONTROL Inicio]** y, a continuación, haga clic en **[!UICONTROL Confirmar]**.
 
-   Para supervisar el flujo de trabajo o comprobar su progreso, en la página de la consola principal de AEM, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo]**. En la página Instancias de flujo de trabajo, seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo.
+   Para supervisar el flujo de trabajo o comprobar su progreso, en la página de la consola principal del Experience Manager, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo]**. En la página Instancias de flujo de trabajo, seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo.
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño de lote predeterminado en el flujo de trabajo de reprocesamiento es de 50 recursos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos mínimos de recursos en los que se ejecuta el reprocesamiento. Un valor más alto significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. En consecuencia, la pancarta de procesamiento permanece en AEM recursos durante más tiempo. Sin embargo, si el tamaño medio del archivo es pequeño-1 MB o menos-Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes de Adobe, se recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño de lote predeterminado en el flujo de trabajo de reprocesamiento es de 50 recursos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos mínimos de recursos en los que se ejecuta el reprocesamiento. Un valor más alto significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. En consecuencia, la pancarta de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño medio del archivo es pequeño-1 MB o menos-Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes de Adobe, se recomienda reducir el tamaño del lote hasta 10.
 
 **Ajuste opcional del tamaño del lote del flujo de trabajo de reprocesamiento**
 
@@ -137,7 +137,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
