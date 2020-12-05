@@ -3,9 +3,9 @@ title: Descargar recursos
 description: Descargue recursos de [!DNL Adobe Experience Manager Assets] y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Puede descargar recursos de Experience Manager mediante los siguientes métodos:
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Descargar recursos mediante AEM interfaz {#download-in-aem}
+## Descargar recursos mediante la interfaz [!DNL Experience Manager] {#download-in-aem}
 
 El servicio de descarga asincrónico proporciona un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan de la interfaz de usuario en tiempo real. Los archivos de gran tamaño se descargan de forma asíncrona y se informa a los usuarios de la finalización mediante notificaciones de Experience Manager en la Bandeja de entrada. Consulte [explicación de la bandeja de entrada del Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
 
