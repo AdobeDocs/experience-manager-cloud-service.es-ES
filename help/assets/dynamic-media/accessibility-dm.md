@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dynamic Media admite tecnologías de control de teclado y asistencia, como lecto
 
 ## Compatibilidad de accesibilidad de teclado en Dynamic Media
 
-Dado que Dynamic Media es un complemento de AEM Assets, la mayor parte del comportamiento de control de teclado es exactamente el mismo que en AEM Assets. Por ejemplo, el botón `Cancel` de Dynamic Media tiene el mismo resaltado de enfoque que en AEM Assets y reacciona a la tecla `Spacebar` que en AEM Assets. Consulte [Métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dado que Dynamic Media es un complemento de Recursos Experience Manager, la mayor parte del control de teclado es exactamente igual que en Recursos Experience Manager. Por ejemplo, el botón `Cancel` de Dynamic Media tiene el mismo resaltado de enfoque que en Recursos Experience Manager y reacciona a la clave `Spacebar` que en Recursos Experience Manager. Consulte [Métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Las pulsaciones de teclas admitidas por los elementos individuales de la interfaz de usuario en Dynamic Media son, en la mayoría de los casos, obvias y fáciles de detectar. El control de teclado en Dynamic Media es de lo siguiente:
 
