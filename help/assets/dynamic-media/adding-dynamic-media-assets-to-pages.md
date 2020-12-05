@@ -1,11 +1,11 @@
 ---
 title: Adición de recursos de Dynamic Media a las páginas
-description: Cómo agregar componentes de Dynamic Media a una página de AEM
+description: Cómo agregar componentes de Dynamic Media a una página en Experience Manager
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
 workflow-type: tm+mt
-source-wordcount: '3121'
-ht-degree: 32%
+source-wordcount: '3134'
+ht-degree: 30%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 32%
 
 Para añadir la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar directamente en la página el componente **Dynamic Media**, **Interactive Media**, **Panoramic Media** o **Video 360 Media**. Para ello, indique el modo Diseño y active los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
-Puede añadir recursos de Dynamic Media directamente a la página si utiliza AEM como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/dynamic-media/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
+Puede agregar recursos de Dynamic Media directamente a la página si utiliza Experience Manager como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/dynamic-media/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Debe publicar los recursos antes de agregarlos a las páginas de AEM. Consulte [Publicación de recursos de medios dinámicos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Debe publicar los recursos antes de agregarlos a las páginas en Experience Manager. Consulte [Publicación de recursos de medios dinámicos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Añadir un componente de Dynamic Media en una página {#adding-a-dynamic-media-component-to-a-page}
 
@@ -26,7 +26,7 @@ Añadir un componente de medios 3D, medios dinámicos, medios interactivos, medi
 
 **Añadir un componente de Dynamic Media en una página**
 
-1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
+1. En Experience Manager, abra la página donde desee agregar el componente Dynamic Media.
 1. En el panel izquierdo, toque el icono **[!UICONTROL Componentes]** y, a continuación, filtre para Dynamic Media.
 
    Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba activar los componentes de Dynamic Media que desee utilizar. Consulte [Activación de componentes de Dynamic Media](#enabling-dynamic-media-components).
@@ -53,7 +53,7 @@ Añadir un componente de medios 3D, medios dinámicos, medios interactivos, medi
 
 Si no hay componentes de Dynamic Media disponibles para agregar a una página, es probable que primero deba habilitar los componentes que desee utilizar.
 
-1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
+1. En Experience Manager, abra la página donde desee agregar el componente Dynamic Media.
 1. En la parte izquierda de la barra de herramientas, cerca de la parte superior de la página, toque el icono Información de página y, a continuación, toque **[!UICONTROL Editar plantilla]** en la lista desplegable.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -103,7 +103,7 @@ Los componentes de Dynamic Media disponibles son los siguientes:
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de su uso. Una vez que estén disponibles en el editor de plantillas, puede agregar los componentes a la página como lo haría con cualquier otro componente AEM.
+>Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de su uso. Una vez que estén disponibles en el editor de plantillas, puede agregar los componentes a la página como lo haría con cualquier otro componente de Experience Manager.
 
 ![6_5_dynamicmediawcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -210,7 +210,7 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
 
 Utilice el componente Dynamic Media para añadir recursos de imagen de recorte inteligente a sus páginas web. Cuando edita el componente, tiene la opción de usar un ajuste preestablecido de visor de vídeo predefinido para reproducir el vídeo en la página.
 
-Consulte [Uso de Smart Crop con AEM Assets Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
+Consulte [Uso del recorte inteligente con medios dinámicos de recursos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 
 Consulte también [Perfiles de imagen](/help/assets/dynamic-media/image-profiles.md).
 
@@ -337,10 +337,10 @@ Consulte [Envío HTTP2 de contenido](/help/assets/dynamic-media/http2faq.md) par
 
 >[!MORELIKETHIS]
 >
->* [Uso del reproductor de vídeo en AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Uso de vídeo interactivo con medios dinámicos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Información sobre el visor de recursos con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Uso de miniaturas de vídeo personalizadas con medios dinámicos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Explicación de la administración de color con medios dinámicos AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Uso del enfoque de imágenes con AEM Dynamic Media](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Uso del reproductor de vídeo en medios dinámicos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Uso de vídeo interactivo con medios dinámicos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Información sobre el visor de recursos con Dynamic Media Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Uso de miniaturas de vídeo personalizadas con medios dinámicos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Explicación de la administración de color con medios dinámicos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Uso del enfoque de imágenes con medios dinámicos Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
