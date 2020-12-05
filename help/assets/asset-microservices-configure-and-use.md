@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Para comprobar que los recursos se procesan, previsualización las representacio
 
 En el caso de que sea necesario un procesamiento adicional de los recursos que no se pueda lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo adicionales posteriores al procesamiento a la configuración. Esto permite agregar un procesamiento totalmente personalizado además del procesamiento configurable mediante microservicios de recursos.
 
-Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por AEM una vez finalizado el procesamiento de los microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para activarlos. Los ejemplos incluyen:
+Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para activarlos. Los ejemplos incluyen:
 
 * Pasos personalizados del flujo de trabajo para procesar recursos.
 * Integraciones para agregar metadatos o propiedades a recursos de sistemas externos, por ejemplo, información de productos o procesos.
@@ -195,7 +195,7 @@ Añadir una configuración de flujo de trabajo posterior al procesamiento en Exp
 
 ### Crear modelos de flujo de trabajo posteriores al procesamiento {#create-post-processing-workflow-models}
 
-Los modelos de flujo de trabajo de postprocesamiento son modelos AEM de flujo de trabajo habituales. Cree distintos modelos si necesita un procesamiento diferente para distintas ubicaciones de repositorio o tipos de recursos.
+Los modelos de flujo de trabajo posteriores al procesamiento son modelos de flujo de trabajo [!DNL Experience Manager] normales. Cree distintos modelos si necesita un procesamiento diferente para distintas ubicaciones de repositorio o tipos de recursos.
 
 Los pasos de procesamiento deben agregarse en función de las necesidades. Puede utilizar los pasos admitidos disponibles, así como cualquier paso de flujo de trabajo personalizado.
 
@@ -213,7 +213,7 @@ El servicio Ejecutor de flujo de trabajo personalizado (`com.adobe.cq.dam.proces
 >[!NOTE]
 >
 >La configuración del Ejecutor de flujo de trabajo personalizado es una configuración de un servicio OSGi. Consulte [implementación en Experience Manager](/help/implementing/deploying/overview.md) para obtener información sobre cómo implementar una configuración OSGi.
->La consola web OSGi, a diferencia de las implementaciones de servicios locales y gestionados de AEM, no está disponible directamente en las implementaciones de servicios en la nube.
+>La consola web OSGi, a diferencia de las implementaciones de servicios locales y administrados de [!DNL Experience Manager], no está disponible directamente en las implementaciones de servicios en la nube.
 
 Para obtener más información sobre qué paso de flujo de trabajo estándar se puede utilizar en el flujo de trabajo posterior al procesamiento, consulte [pasos de flujo de trabajo en el flujo de trabajo posterior al procesamiento](developer-reference-material-apis.md#post-processing-workflows-steps) en la referencia del desarrollador.
 
