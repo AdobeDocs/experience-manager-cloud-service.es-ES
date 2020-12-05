@@ -3,9 +3,9 @@ title: Revisar recursos en carpetas y colecciones
 description: Configure flujos de trabajo de revisión para los recursos de una carpeta o colección y compártalos con revisores o socios creativos para obtener comentarios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '793'
 ht-degree: 24%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 24%
 
 # Revisar recursos en carpetas y colecciones {#review-folder-assets-and-collections}
 
-Con Recursos Adobe Experience Manager (AEM), puede definir flujos de trabajo de revisión específicos para los recursos que se encuentran en una carpeta o en una colección. Puede compartirlo con revisores o socios creativos para obtener sus comentarios. Puede asociar un flujo de trabajo de revisión con un proyecto o crear una tarea de revisión independiente.
+Con Adobe Experience Manager Assets, puede definir flujos de trabajo de revisión específicos para los recursos que se encuentran en una carpeta o en una colección. Puede compartirlo con revisores o socios creativos para obtener sus comentarios. Puede asociar un flujo de trabajo de revisión con un proyecto o crear una tarea de revisión independiente.
 
 Después de compartir los recursos, los revisores pueden aprobarlos o rechazarlos. Las notificaciones se envían en varias etapas del flujo de trabajo para notificar a los destinatarios previstos la finalización de diversas tareas. Por ejemplo, cuando comparte una carpeta o colección, el revisor recibe una notificación de que se ha compartido una carpeta o colección para su revisión.
 
@@ -47,7 +47,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
    ![review_name](assets/review_name.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en AEM Assets como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y seleccione la tarea de revisión en la lista.
+1. Inicie sesión en [!DNL Experience Manager Assets] como aprobador y vaya a la interfaz de usuario de Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y seleccione la tarea de revisión en la lista.
 
    ![notificación](assets/notification.png)
 
@@ -91,7 +91,7 @@ Una vez que el revisor haya completado la revisión (aprueba o rechaza recursos)
    ![tarea_details-collection](assets/task_details-collection.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en AEM Assets como Aprobador y vaya a la consola Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
+1. Inicie sesión en [!DNL Experience Manager Assets] como Aprobador y navegue a la consola Recursos. Para aprobar recursos, toque o haga clic en el icono **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión en la lista.
 1. En la página **[!UICONTROL Revisar tarea]**, examine los detalles de la tarea de revisión y, a continuación, pulse o haga clic en **[!UICONTROL Revisar]**.
 1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y toque o haga clic en el icono **[!UICONTROL Aprobar/Rechazar]** para aprobar o rechazar los recursos, según corresponda.
 
