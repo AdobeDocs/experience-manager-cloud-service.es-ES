@@ -4,9 +4,9 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '4408'
+source-wordcount: '4407'
 ht-degree: 12%
 
 ---
@@ -95,7 +95,7 @@ Para realizar la previsualización de un recurso, siga estos pasos.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y pulse la tecla Intro. La nueva etiqueta se guarda en [!DNL Experience Manager].
+1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y seleccione la clave `Enter`. La nueva etiqueta se guarda en [!DNL Experience Manager].
 
    YouTube requiere que las etiquetas publiquen y tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
 
