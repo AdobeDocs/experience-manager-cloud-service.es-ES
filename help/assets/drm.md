@@ -3,9 +3,9 @@ title: Digital Rights Management en [!DNL Assets]
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información de los recursos con licencia en [!DNL Experience Manager] como [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1343'
 ht-degree: 7%
 
 ---
@@ -37,7 +37,7 @@ Puede buscar recursos caducados, incluidos los subrecursos caducados, en el pane
 
 1. En la consola [!DNL Assets], haga clic en **[!UICONTROL Buscar]** en la barra de herramientas para mostrar el cuadro de búsqueda de Omniture.
 
-1. Con el cursor en el cuadro Omniture Search, presione la tecla Intro para mostrar la página de resultados de la búsqueda.
+1. Con el cursor en el cuadro Omniture, seleccione la tecla `Enter` para mostrar la página de resultados de búsqueda.
 
 1. Haga clic en el icono de GlobalNav para mostrar el panel Buscar.
 
@@ -95,7 +95,7 @@ La consola [!DNL Assets] puede mostrar varios estados para los recursos. Según 
 
 1. Para buscar recursos en función de su estado, haga clic en **[!UICONTROL Buscar]** para mostrar la barra de Omniture Search.
 
-1. Pulse Volver y haga clic en [!DNL Experience Manager] para mostrar el panel de búsqueda.
+1. Seleccione `Return` y haga clic en [!DNL Experience Manager] para mostrar el panel de búsqueda.
 1. En el panel de búsqueda, haga clic en **[!UICONTROL Estado de publicación]** y seleccione **[!UICONTROL Publicado]** para buscar recursos publicados en [!DNL Assets].
 
 1. Haga clic en **[!UICONTROL Estado de aprobación]** y haga clic en la opción adecuada para buscar recursos aprobados o rechazados.
