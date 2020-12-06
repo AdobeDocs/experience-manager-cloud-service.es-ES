@@ -2,7 +2,7 @@
 title: Facetas de búsqueda.
 description: Este artículo describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
 ht-degree: 23%
@@ -33,9 +33,9 @@ Para las búsquedas de texto completo, agregue el predicado `Fulltext` al formul
 
 1. En la página Editar búsqueda en Forms, arrastre un predicado de la ficha **[!UICONTROL Seleccionar predicado]** al panel principal. Por ejemplo, arrastre **[!UICONTROL Predicado de propiedades]**.
 
-   ![Pulse y mueva un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
+   ![Seleccionar y mover un predicado para personalizar los filtros de búsqueda](assets/drag_predicate.png)
 
-   *Figura: Pulse y mueva un predicado para personalizar los filtros de búsqueda.*
+   *Figura: Seleccione y mueva un predicado para personalizar los filtros de búsqueda.*
 
 1. En la ficha Configuración, introduzca una etiqueta de campo, un texto de marcador de posición y una descripción para el predicado. Especifique un nombre válido para la propiedad de metadatos que desea asociar con el predicado. La etiqueta de encabezado de la ficha Configuración identifica el tipo del predicado seleccionado.
 
