@@ -4,9 +4,9 @@ description: Comprender el concepto de colección en Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2393'
 ht-degree: 20%
 
 ---
@@ -73,7 +73,7 @@ Puede arrastrar recursos de la interfaz de usuario de Recursos a una colección.
 Una colección inteligente utiliza criterios de búsqueda para rellenar recursos de forma dinámica. Puede crear una colección inteligente utilizando solo archivos y no carpetas o archivos y carpetas.
 
 1. Vaya a la interfaz de usuario de Assets y pulse o haga clic en el icono **[!UICONTROL Buscar]**.
-1. Escriba la palabra clave de búsqueda en el cuadro de búsqueda Omni y pulse Intro. Toque o haga clic en el icono de GlobalNav para mostrar el panel Filtros y aplicar un filtro de búsqueda desde el panel Buscar.
+1. Escriba la palabra clave de búsqueda en el cuadro de búsqueda Omni y seleccione `Enter`. Toque o haga clic en el icono de GlobalNav para mostrar el panel Filtros y aplicar un filtro de búsqueda desde el panel Buscar.
 1. En la lista **[!UICONTROL Files &amp; Folders]**, seleccione **[!UICONTROL Files]**.
 1. Toque o haga clic en **[!UICONTROL Guardar colección inteligente]**.
 1. Especifique un nombre para la colección. Seleccione **[!UICONTROL Público]** para agregar el grupo Usuarios de DAM con la función Visor a la colección inteligente.
@@ -103,7 +103,7 @@ Puede agregar recursos a una colección que contenga una lista de los recursos o
 Las colecciones inteligentes se crean al guardar una búsqueda para que pueda modificar su contenido modificando los parámetros de búsqueda de la [búsqueda guardada](#saved-searches).
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en el icono **[!UICONTROL Buscar]** de la barra de herramientas.
-1. Con el cursor en el cuadro Omniture search, presione la tecla Intro.
+1. Con el cursor en el cuadro Omniture search, seleccione la tecla `Enter`.
 1. Toque o haga clic en el icono de GlobalNav para mostrar el panel Filtros.
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, seleccione la colección inteligente que desee modificar. El panel Buscar aparecen los filtros configurados para la búsqueda guardada.
 1. En la lista **[!UICONTROL Files &amp; Folders]**, seleccione **[!UICONTROL Files]**.
@@ -238,7 +238,7 @@ Para eliminar las búsquedas guardadas, siga estos pasos:
 
 1. En la interfaz de usuario de Recursos, toque o haga clic en el icono de búsqueda de la barra de herramientas.
 
-1. Con el cursor en el campo Omniture search, presione la tecla Intro.
+1. Con el cursor en el campo Omniture search, seleccione la tecla `Enter`.
 1. Toque o haga clic en el icono de GlobalNav para mostrar el panel Filtros.
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, pulse o haga clic en **[!UICONTROL Eliminar]** al lado de la colección inteligente que desee eliminar.
 1. En el cuadro de diálogo, toque o haga clic en **[!UICONTROL Eliminar]** para eliminar la búsqueda guardada.
@@ -249,7 +249,7 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 
 1. En la consola Colecciones, seleccione una colección en la que desee ejecutar un flujo de trabajo.
 1. Toque o haga clic en el icono de GlobalNav y elija **[!UICONTROL Línea de tiempo]** en la lista.
-1. En la cronología, pulse o haga clic en el icono del circunflejo invertido en la parte inferior y, a continuación, pulse o haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
+1. En la línea de tiempo, seleccione o toque el icono de acento circunflejo en la parte inferior y, a continuación, toque o haga clic en **[!UICONTROL Flujo de trabajo de Inicio]**.
 1. En la sección **[!UICONTROL Iniciar flujo de trabajo]**, seleccione un modelo de flujo de trabajo de la lista. Por ejemplo, seleccione el modelo **[!UICONTROL Recurso de actualización DAM]**.
 1. Escriba un título para el flujo de trabajo y toque o haga clic en **[!UICONTROL Inicio]**.
 1. En el cuadro de diálogo, toque o haga clic **[!UICONTROL Continuar]**. El flujo de trabajo se ejecuta en todos los recursos de la colección.
