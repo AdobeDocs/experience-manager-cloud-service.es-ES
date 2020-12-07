@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * [Buscar](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Botón Buscar](/help/sites-cloud/authoring/assets/search-button.png)
+   ![Icono de búsqueda](/help/sites-cloud/authoring/assets/search-icon.png)
 
    También puede utilizar la [tecla de método abreviado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
