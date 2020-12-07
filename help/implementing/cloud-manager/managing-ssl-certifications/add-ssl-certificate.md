@@ -2,9 +2,9 @@
 title: Añadir un certificado SSL - Administración de certificados SSL
 description: Añadir un certificado SSL - Administración de certificados SSL
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: b6911f0b8674550713bd4ec1e34be5d0a14cc427
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 # Añadir un certificado SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->El certificado tarda unos días en proporcionarse y se recomienda que se aprovisione el certificado incluso con meses de anticipación. Ir a Cómo obtener un certificado SSL para obtener más información.INSERTAR VÍNCULO
+>AEM como Cloud Service solo aceptará certificados OV (validación de organización) o EV (validación extendida). No se aceptarán los certificados DV (validación de dominio).
+
+El certificado tarda unos días en proporcionarse y se recomienda que se aprovisione el certificado incluso con meses de anticipación. Consulte Obtención de un certificado SSL para obtener más información.
 
 ## Formato de certificado {#certificate-format}
 
-Los archivos SSL deben tener formato PEM para poder instalarse en Cloud Manager. Las extensiones de archivo comunes que están dentro del formato PEM incluyen .pem, .crt, .cer y .cert.
+Los archivos SSL deben tener formato PEM para poder instalarse en Cloud Manager. Las extensiones de archivo comunes que están dentro del formato PEM incluyen `.pem,` .`crt`,  `.cer`, y  `.cert`.
 
 Siga los pasos a continuación para convertir el formato de sus archivos SSL a PEM:
 
@@ -37,21 +39,22 @@ Siga los pasos a continuación para convertir el formato de sus archivos SSL a P
 
 >[!NOTE]
 >* Un usuario debe estar en la función Propietario de la empresa o Administrador de implementación para poder instalar un certificado SSL en Cloud Manager.
->* En cualquier momento dado, Cloud Manager permitirá un máximo de 5 certificados SSL que se pueden asociar con uno o más entornos en el Programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario del Administrador de nube permitirá instalar hasta 50 certificados SSL en el programa con esta restricción.
+>* En cualquier momento dado, Cloud Manager permitirá un máximo de 10 certificados SSL que se pueden asociar con uno o más entornos en el Programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario del Administrador de nube permitirá instalar hasta 50 certificados SSL en el programa con esta restricción.
 
+
+Siga los pasos a continuación para agregar un certificado:
 
 1. Inicie sesión en Cloud Manager.
 1. Acceda a la pantalla Entornos desde la página Información general.
-1. Acceda a la pantalla Certificados SSL desde el menú de navegación de la izquierda. En esta pantalla se mostrará una tabla con los detalles de los certificados SSL existentes.INSERTAR IMAGEN
+1. Acceda a la pantalla Certificados SSL desde el menú de navegación de la izquierda. En esta pantalla se mostrará una tabla con detalles de los certificados SSL existentes.
 1. Seleccione el botón **Añadir certificado** para iniciar un asistente.
-1. Escriba un nombre para el certificado. Puede ser cualquier nombre que le ayude a hacer referencia fácilmente a su certificado.
-1. Pegue el contenido de Certificado, Clave privada y Cadena en sus respectivos campos. Utilice el icono de pegado a la derecha del cuadro de entrada.
-1. Seleccione **Guardar**.
+   1. Proporcione un nombre para el certificado. Puede ser cualquier nombre que le ayude a hacer referencia fácilmente a su certificado.
+   1. Pegue el contenido de Certificado, Clave privada y Cadena en sus respectivos campos. Utilice el icono de pegado a la derecha del cuadro de entrada.
 
-   >[!NOTE]
-   >Se mostrarán todos los errores detectados. Debe corregir todos los errores antes de guardar el certificado. Consulte Errores del VÍNCULO INSERT del certificado para obtener más información sobre cómo solucionar errores comunes.
+      >[!NOTE]
+      >Los tres campos no son opcionales y deben incluirse.
+1. Una vez que envíe el certificado, lo verá como una nueva fila en la tabla.
 
-   Una vez que envíe el certificado, lo verá como una nueva fila en la tabla.
 
 ## Errores de certificado {#certificate-errors}
 
