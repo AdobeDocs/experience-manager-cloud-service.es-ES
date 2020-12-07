@@ -2,10 +2,10 @@
 title: 'Búsqueda  '
 description: Encuentre contenido más rápidamente con una búsqueda detallada
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en funci
 
 La función de búsqueda está disponible en la barra de herramientas superior:
 
-![Botón Buscar](/help/sites-cloud/authoring/assets/search-button.png)
+![Icono de búsqueda](/help/sites-cloud/authoring/assets/search-icon.png)
 
 Con el carril de búsqueda puede:
 
