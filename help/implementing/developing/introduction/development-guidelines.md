@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
+source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
 workflow-type: tm+mt
-source-wordcount: '2237'
+source-wordcount: '2239'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ Los niveles de registro son los siguientes:
 
 Los volcados de subprocesos en entornos de la nube se recopilan de forma continua, pero no se pueden descargar de forma automática en este momento. Mientras tanto, póngase en contacto con el servicio de soporte AEM si se necesitan volcados de subprocesos para depurar un problema, especificando la hora exacta.
 
-## CRX/DE Lite y la consola del sistema {#crxde-lite-and-system-console}
+## CRX/DE Lite y la consola de desarrollador {#crxde-lite-and-developer-console}
 
 ### Desarrollo local {#local-development}
 
@@ -132,7 +132,7 @@ Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la 
 
 ### AEM como herramientas de desarrollo de Cloud Service {#aem-as-a-cloud-service-development-tools}
 
-Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo, pero no en fase o producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en tiempo de ejecución, por lo que intentar hacerlo provocará errores.
+Los clientes pueden acceder a la lista CRXDE en el entorno de desarrollo de la capa de creación, pero no en fase ni en producción. El repositorio inmutable (`/libs`, `/apps`) no se puede escribir en tiempo de ejecución, por lo que intentar hacerlo provocará errores.
 
 Hay un conjunto de herramientas para depurar AEM como entornos de desarrollador Cloud Service disponibles en la consola de desarrollador para entornos de desarrollo, etapa y producción. La dirección URL se puede determinar ajustando las direcciones URL del servicio Autor o Publicación de la siguiente manera:
 
