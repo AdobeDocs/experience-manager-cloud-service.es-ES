@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 90%
+source-wordcount: '878'
+ht-degree: 83%
 
 ---
 
@@ -84,22 +84,31 @@ Los lanzamientos permiten realizar lo siguiente:
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 
-### Consola Lanzamientos {#the-launches-console}
-
-En la consola Lanzamientos se proporciona información general sobre los lanzamientos. La consola se puede utilizar para tomar medidas sobre los lanzamiento indicados. Se puede acceder a la consola desde: 
-
-* La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
-
-* O directamente con `https://<host>:<port>/libs/launches/content/launches.html`
-
 ## Lanzamientos en las referencias (consola Sitios) {#launches-in-references-sites-console}
 
 1. En la consola **Sitios**, vaya al origen de los lanzamientos.
 1. Abra el carril **Referencias** y seleccione la página de origen.
-1. Seleccione **Lanzamientos**. Se mostrarán los lanzamientos existentes:
+1. Seleccione **Lanzamientos**, se enumerarán los lanzamientos existentes, junto con el acceso a la **Consola de lanzamientos**:
 
    ![Referencias de inicios en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Pulse o haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
 
    ![Acciones para realizar inicios en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## Consola Lanzamientos {#the-launches-console}
+
+En la consola Lanzamientos se proporciona información general sobre los lanzamientos. La consola se puede utilizar para tomar medidas sobre los lanzamiento indicados. Se puede acceder a la consola desde: 
+
+* La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
+
+* **Inicia** Consolación en la parte inferior de la sección  **** Lanzamientos del carril de  **** referencia al navegar por el contenido de origen en la consola Sitios.
+
+   ![Inicia la consola en Referencias de inicios en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* El botón **Inicia** en la parte superior derecha, al navegar por el contenido de inicio en la consola Sitios:
+
+   ![Lanzamientos, opción en la consola Sitios](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* O directamente; por ejemplo, con:
+   `https://<host>:<port>/libs/launches/content/launches.html`
