@@ -2,9 +2,9 @@
 title: Administración de páginas en el lanzamiento
 description: 'Puede crear nuevas páginas dentro de su lanzamiento. También puede eliminar páginas no deseadas. '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,8 @@ Todos estos puntos de entrada abrirán el lanzamiento en la consola Sitios, dond
 * Seleccione las páginas existentes y tome medidas; por ejemplo, **Editar**, abra **Propiedades**, **Bloquear**, **Copiar**, **Pegar** y **Eliminar**
 
    ![Navegar por el inicio en la consola Sitios desde Administrar contenido](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* Utilice el carril **References** para volver a las páginas **Launch Source**:
+   ![Consola Sitios - Origen de inicio](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## Añadir páginas a su lanzamiento {#add-pages-to-launch}
 
