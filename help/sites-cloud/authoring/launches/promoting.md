@@ -2,10 +2,10 @@
 title: Promoción de lanzamientos
 description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 83%
+source-wordcount: '799'
+ht-degree: 80%
 
 ---
 
@@ -47,11 +47,14 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **Lanzamientos**:
 
 1. Abra:
-   * La consola **Sites**:
+   * La consola **Sitios** al navegar por las páginas de origen:
       1. Abra el [carril de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen requerida utilizando [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no es importante). Todas las referencias se mostrarán.
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos [1]) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
+   * La consola **Sitios** al navegar por las páginas de inicio:
+      1. Seleccione la página de inicio requerida utilizando [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. La acción **Promocionar** estará disponible en la barra de herramientas.
    * La consola **Lanzamientos**:
       1. Seleccione su lanzamiento (toque o haga clic en la miniatura).
       1. Seleccione **Promocionar**.
