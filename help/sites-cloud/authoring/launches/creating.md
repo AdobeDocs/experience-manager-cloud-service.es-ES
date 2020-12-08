@@ -2,10 +2,10 @@
 title: Creación de lanzamientos
 description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 87%
+source-wordcount: '998'
+ht-degree: 85%
 
 ---
 
@@ -120,13 +120,15 @@ Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofre
 Crear un inicio anidado desde la consola **Lanzamientos** es básicamente lo mismo que crear cualquier otra forma de inicio, con la excepción de que necesita navegar a la rama `/content/launches` de lanzamientos:
 
 1. En la consola **Lanzamientos**, seleccione **Crear**.
-1. Seleccione **Agregar páginas** y, a continuación, vaya a la rama de lanzamientos especificando `/content/launches` en el filtro. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
+1. Seleccione **Añadir páginas** y, a continuación, desplácese a la rama de inicios especificando `/content/launches` en el carril **Filtros**. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
 
    ![Creación de un lanzamiento anidado](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. Continúe con **Siguiente** y complete las **Propiedades** como con cualquier otro lanzamiento.
+1. Continúe con **Siguiente**.
 
-   ![Seleccionar origen para inicio anidado](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. Complete las **Propiedades** como con cualquier otro inicio.
+
+1. Complete con **Crear**.
 
 #### Creación de un lanzamiento anidado: consola Sitios {#creating-a-nested-launch-sites-console}
 
