@@ -1,8 +1,8 @@
 ---
 title: Acerca de la administración de recursos de Dynamic Media
-description: Aprenda a trabajar con recursos de Dynamic Media
+description: Aprenda a trabajar con recursos de Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 13%
@@ -22,6 +22,6 @@ Los siguientes temas describen lo que debe hacer para administrar los recursos d
 
 * [Práctica recomendada para optimizar la calidad de las imágenes](best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Vista previa de recursos de Dynamic Media](previewing-assets.md)
-* [Publicación de recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
+* [Publicación de Dynamic Media Assets](publishing-dynamicmedia-assets.md)
 * [Trabajar con selectores](working-with-selectors.md)
 
