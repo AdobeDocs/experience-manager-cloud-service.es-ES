@@ -2,10 +2,10 @@
 title: Promoción de lanzamientos
 description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 76%
 
 ---
 
@@ -64,6 +64,7 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
    * **Ámbito**
       * **Promocionar lanzamiento completo**
       * **Promocionar las páginas modificadas**
+      * **Promocione las páginas**  aprobadas según el flujo de trabajo de aprobación del lanzamiento
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
@@ -75,7 +76,7 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
       >
       >Esto abarca un lanzamiento único, si ha anidado lanzamientos consulte [Promocionar un lanzamiento anidado](#promoting-a-nested-launch).
 1. Seleccione **Siguiente** para continuar.
-1. Puede revisar las páginas que se promocionarán, que dependerán del intervalo de páginas que haya elegido:
+1. Puede revisar las páginas que desee promocionar; esto dependerá del intervalo de páginas que haya elegido:
 
    ![Revisar promoción](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -106,6 +107,7 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
    * **Ámbito** : Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
       * **Promocionar lanzamiento completo**
       * **Promocionar las páginas modificadas**
+      * **Promocione las páginas**  aprobadas según el flujo de trabajo de aprobación del lanzamiento
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
