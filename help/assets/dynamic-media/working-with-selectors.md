@@ -1,10 +1,10 @@
 ---
 title: Trabajar con selectores
-description: Selección de recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel
+description: Obtenga información sobre los métodos que puede utilizar para seleccionar recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '748'
 ht-degree: 18%
 
 ---
