@@ -1,8 +1,8 @@
 ---
 title: Vincular URL en la aplicación web
-description: Cómo vincular direcciones URL a la aplicación web en medios dinámicos
+description: Cómo vincular direcciones URL a la aplicación web en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 11%
@@ -16,7 +16,7 @@ Los sitios web y las aplicaciones acceden a los servicios de Dynamic Media media
 
 Sólo se vincula a direcciones URL si se utiliza *no* como AEM WCM. La vinculación frente a la incrustación se utiliza cuando se desea distribuir un reproductor de vídeo como ventana emergente o modal. Si está utilizando AEM como WCM, [agregue los recursos directamente en la página.](adding-dynamic-media-assets-to-pages.md)
 
-Para colocar estas cadenas URL en las páginas web y las aplicaciones, cópielas desde Dynamic Media.
+Para colocar estas cadenas URL en las páginas web y aplicaciones, cópielas desde Dynamic Media.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
     </tbody>
    </table>
 
-1. Copie la ruta completa del recurso de vídeo en AEM, tal como lo procesa Dynamic Media. Necesitará esta ruta de recursos de vídeo copiada más adelante en estos pasos.
+1. Copie la ruta completa del recurso de vídeo en AEM, tal como lo ha procesado Dynamic Media. Necesitará esta ruta de recursos de vídeo copiada más adelante en estos pasos.
 
    Por ejemplo:
 
@@ -206,7 +206,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Uso de HTTP/2 para distribuir los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Uso de HTTP/2 para entregar los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. Ahora, el envío de recursos de Dynamic Media puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
