@@ -1,8 +1,8 @@
 ---
 title: Aplicación de ajustes preestablecidos de visor de Dynamic Media
-description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media
+description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 25%
@@ -19,7 +19,7 @@ Si es un administrador y necesita administrar, crear, ordenar y eliminar ajustes
 Consulte también [Ajustes preestablecidos de visor de publicaciones](managing-viewer-presets.md#publishing-viewer-presets).
 
 Es posible que no necesite publicar ajustes preestablecidos de visor en función del modo de publicación que esté utilizando.
-Cualquier problema con los ajustes preestablecidos de visor, consulte [Resolución de problemas de Dynamic Media](troubleshoot-dm.md#viewers).
+Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución de problemas de Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Aplicación de un ajuste preestablecido de visor de Dynamic Media a un recurso {#applying-a-viewer-preset-to-an-asset}
 
