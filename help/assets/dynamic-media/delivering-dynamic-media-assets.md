@@ -1,8 +1,8 @@
 ---
 title: Envío de recursos de Dynamic Media
-description: Aprenda a distribuir recursos de medios dinámicos
+description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 15%
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # Envío de recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
-El modo de distribuir los recursos de medios dinámicos, tanto de vídeo como de imágenes, depende de cómo se implemente el sitio web.
+El modo de distribuir los recursos de Dynamic Media (vídeo e imágenes) depende de la implementación del sitio web.
 
 Con Dynamic Media dispone de varias opciones:
 
@@ -29,7 +29,7 @@ Con Dynamic Media dispone de varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Añadir recursos de Dynamic Media en páginas Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Añadir Dynamic Media Assets a páginas Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incrustación del visor de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md)
 * [Activar la protección de los vínculos interactivos de Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Vinculación de direcciones URL a la Aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
