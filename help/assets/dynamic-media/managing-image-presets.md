@@ -1,8 +1,8 @@
 ---
 title: Administración de ajustes preestablecidos de imagen
-description: Conozca los ajustes preestablecidos de imagen y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen
+description: Conozca los ajustes preestablecidos de imagen y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen.
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3608'
 ht-degree: 11%
@@ -173,7 +173,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
 ### Configuración del tamaño de miniatura de la imagen {#configuring-image-thumbnail-size}
 
-Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (**[!UICONTROL Dynamic Media Process Image Assets]**) para los recursos de imagen dinámica y el otro (**[!UICONTROL Process Thumbnails]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
+Puede configurar el tamaño de las miniaturas configurando dicha configuración en el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**. Hay dos pasos en el flujo de trabajo donde puede configurar el tamaño de las miniaturas de los recursos de imagen. Aunque se utiliza uno (**[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**) para recursos de imagen dinámica y el otro (**[!UICONTROL Miniaturas de proceso]**) para la generación de miniaturas estáticas o cuando todos los demás procesos no pueden generar miniaturas, *ambos* deben tener la misma configuración.
 
 Con el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]**, el servidor de imágenes genera miniaturas y esta configuración es independiente de la configuración aplicada al paso **[!UICONTROL Procesar miniaturas]**. La generación de miniaturas a través del paso **[!UICONTROL Miniaturas de proceso]** es la forma más lenta y con mayor consumo de memoria para crear miniaturas.
 
@@ -193,7 +193,7 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
 **Para configurar el tamaño de las miniaturas de imágenes**
 
 1. Puntee **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización de DAM > Editar]**.
-1. Toque el paso **[!UICONTROL Dynamic Media Process Image Assets]** y toque la ficha **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Toque el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]** y toque la ficha **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -410,7 +410,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Servicios de Dynamic Media no principales: SVG, procesamiento de imágenes y impresión virtual</li>
+     <li>Servicios no principales de Dynamic Media: SVG, procesamiento de imágenes y impresión virtual</li>
     </ul> </td>
   </tr>
  </tbody>
