@@ -2,9 +2,9 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
+source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4050'
 ht-degree: 9%
 
 ---
@@ -19,10 +19,10 @@ En esta sección se describe cómo estructurar el AEM como una configuración de
 >[!NOTE]
 >
 >Los usuarios de Windows necesitarán utilizar Windows 10 Professional u otras distribuciones que admitan Docker. Se trata de un requisito previo para ejecutar y depurar Dispatcher en un equipo local. Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux del SDK, pero el SDK de Windows se puede utilizar de forma similar.
-
+<!--
 >[!WARNING]
 >
->Usuarios de Windows: la versión actual de AEM como Cloud Service local Dispatcher Tools (v2.0.20) no es compatible con Windows. Póngase en contacto con [Soporte técnico de Adobe](https://daycare.day.com/home.html) para recibir actualizaciones sobre la compatibilidad con Windows.
+>Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## Herramientas del despachante {#dispatcher-sdk}
 
