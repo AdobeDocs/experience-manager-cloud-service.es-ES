@@ -2,10 +2,10 @@
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
 translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 83%
+source-wordcount: '907'
+ht-degree: 81%
 
 ---
 
@@ -20,6 +20,11 @@ Por ejemplo, las páginas de productos de temporada de un almacén en línea se 
 
 * Cambios en las páginas de origen que se producen como resultado de tareas de mantenimiento normales. Estos cambios se duplican automáticamente en las páginas de lanzamiento.
 * Ediciones que se realizan en las páginas de lanzamiento directamente en preparación para el trimestre siguiente.
+
+También puede:
+
+* Navegue por el contenido de la rama de lanzamiento; agregar o eliminar páginas según sea necesario.
+* Previsualización cómo se verá el contenido publicado en una fecha/hora específica en el futuro.
 
 Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan de forma que se puedan publicar las páginas de origen (que contienen el contenido actualizado). Puede promocionar todas las páginas o solamente aquellas que se han modificado. 
 
