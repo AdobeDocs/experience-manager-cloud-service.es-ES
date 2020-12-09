@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de medios mixtos
-description: Aprenda a trabajar con conjuntos de medios mixtos en Dynamic Media
+description: Aprenda a trabajar con conjuntos de medios mixtos en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 28%
@@ -64,7 +64,7 @@ Si lo necesita, puede editar [Conjuntos de medios mixtos](#editing-mixed-media-s
 
 >[!NOTE]
 >
->Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
+>Si tiene problemas al crear conjuntos, consulte [Solución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 ## Carga de recursos {#uploading-assets}
 
