@@ -1,10 +1,10 @@
 ---
 title: Administración de ajustes preestablecidos de visor
-description: Cómo crear y gestionar ajustes preestablecidos de visor
+description: Cómo crear y administrar ajustes preestablecidos de visor en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '4258'
+source-wordcount: '4261'
 ht-degree: 16%
 
 ---
@@ -51,7 +51,7 @@ Puede agregar, editar, eliminar, publicar, cancelar la publicación y los ajuste
 
 Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor HTML5 en una ventana separada del navegador. En otros casos, puede ser necesario incrustar el visor HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O bien, puede ser &quot;interactivo&quot; y mostrarse de forma diferente en diferentes dispositivos o en diferentes tamaños de ventana del explorador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos y listos para usar que vienen con Dynamic Media admiten páginas web estáticas y páginas web diseñadas con capacidad de respuesta.
 
-Consulte [Biblioteca de imágenes estáticas interactivas](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) en la *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
+Consulte [Biblioteca de imágenes estáticas interactivas](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) en la *Ayuda de la API de procesamiento y servicio de imágenes de Dynamic Media* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 ### Lista de ajustes preestablecidos de visor predeterminados {#list-of-out-of-the-box-viewer-presets}
 
-En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos e integrados con Dynamic Media.
+En la tabla siguiente se identifican todos los ajustes preestablecidos de visor predefinidos y predeterminados que se incluyen con Dynamic Media.
 
 Consulte también [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -389,7 +389,7 @@ AEM muestra una amplia variedad de ajustes preestablecidos de visor al ver un re
 
 La creación de ajustes preestablecidos de visor permite aplicar varios ajustes a la vista e interactuar con los recursos. Sin embargo, no es necesario crear nuevos ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visor predeterminados y listos para usar que ya vienen con AEM Assets.
 
-Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (definido como **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Interactive Media y siempre que se previsualización una imagen o un vídeo.
+Si decide crear un nuevo ajuste preestablecido de visor, después de guardarlo, el estado del visor se activa automáticamente (definido como **[!UICONTROL Activado]**) en la página Ajustes preestablecidos de visor. Este estado significa que está visible en el componente Dynamic Media y en el componente Medios interactivos y siempre que se previsualización una imagen o un vídeo.
 
 Algunos ajustes preestablecidos de visor tienen una configuración exclusiva que puede afectar al uso y al comportamiento general del visor. Según el ajuste preestablecido de visor que esté creando, es posible que desee tener en cuenta estas consideraciones especiales.
 
@@ -530,7 +530,7 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
 ## Ajustes preestablecidos del visor de publicaciones {#publishing-viewer-presets}
 
-Al activar (o activar) el estado de un ajuste preestablecido de visor, se muestra visible en el componente Dynamic Media, en el componente Interactive Media y siempre que se vista un recurso.
+Al activar (o activar) el estado de un ajuste preestablecido de visor, se hace visible en el componente Dynamic Media, el componente de medios interactivos y siempre que se vista un recurso.
 
 Sin embargo, para entregar* *un recurso con un ajuste preestablecido de visualizador, también se debe publicar el ajuste preestablecido de visualizador. Todos los ajustes preestablecidos de visualizador se deben activar *y *publicar para obtener la URL o el código incrustado de un recurso. Debe activar y publicar todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
@@ -597,4 +597,4 @@ Si ya ha publicado el recurso y el visualizador seleccionado, los botones **[!UI
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a su Aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Consulte también [Incrustación del visor de vídeos en una página Web](/help/assets/dynamic-media/embed-code.md).
 
-Si utiliza AEM como WCM, puede añadir recursos con los ajustes preestablecidos de visor directamente en la página. Consulte [Añadir recursos de Dynamic Media en páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Si utiliza AEM como WCM, puede añadir recursos con los ajustes preestablecidos de visor directamente en la página. Consulte [Añadir recursos de Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
