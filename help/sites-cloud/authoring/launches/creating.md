@@ -2,10 +2,10 @@
 title: Creación de lanzamientos
 description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro.
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 85%
+source-wordcount: '1045'
+ht-degree: 81%
 
 ---
 
@@ -19,6 +19,18 @@ Cree un lanzamiento para poder actualizar las páginas web existentes a una vers
 * De forma predeterminada, Live Copy actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para establecer cuándo se promocionarán y activarán las páginas. Sin embargo, la **fecha de lanzamiento** solo funciona en combinación con el indicador **Producción lista** (consulte [Edición de la configuración de un lanzamiento](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); para que las acciones se produzcan de forma automática, se deben configurar ambas.
+
+>[!NOTE]
+>
+>Al crear un lanzamiento, las páginas superiores de la jerarquía no son copias de las páginas de origen. Son marcadores de posición, creados con la plantilla:
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+Estas páginas no se pueden editar. Verá el mensaje:
+>
+>* **Esta página no forma parte del lanzamiento. Ir a la página de producción**
+
 
 ## Creación de un lanzamiento {#creating-a-launch}
 
