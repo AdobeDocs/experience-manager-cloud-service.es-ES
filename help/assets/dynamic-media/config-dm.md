@@ -1,10 +1,10 @@
 ---
 title: Configuración de Dynamic Media Cloud Service
-description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager Cloud Service.
+description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3855'
 ht-degree: 8%
 
 ---
@@ -12,17 +12,17 @@ ht-degree: 8%
 
 # Acerca de la configuración de Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode}
 
-Si utiliza la configuración de Adobe Experience Manager para distintos entornos, como uno para desarrollo, uno para ensayo y otro para producción en directo, deberá configurar Cloud Services de Dynamic Media para cada uno de esos entornos.
+Si utiliza la configuración de Adobe Experience Manager para diferentes entornos, como uno para desarrollo, uno para ensayo y otro para producción en directo, debe configurar Cloud Services de Dynamic Media para cada uno de esos entornos.
 
 ## Diagrama de arquitectura de Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}
 
-El siguiente diagrama de arquitectura describe el funcionamiento de Dynamic Media.
+El siguiente diagrama de arquitectura describe cómo funciona Dynamic Media.
 
 Con la nueva arquitectura, AEM es responsable de los recursos de origen principales y de las sincronizaciones con Dynamic Media para el procesamiento y la publicación de recursos:
 
 1. Cuando el recurso de origen principal se carga en AEM, se replica en Dynamic Media. En ese momento, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
-1. Una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelve ningún binario a la instancia de AEM).
-1. Una vez que el contenido está listo para publicarse y aprobarse, activa el servicio Dynamic Media para insertar el contenido en los servidores envío y almacenar el contenido en caché en la CDN.
+1. Una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar la previsualización de ellas de forma segura (no se devuelve ningún binario a la instancia de AEM).
+1. Una vez que el contenido está listo para publicarse y aprobarse, activa el servicio de Dynamic Media para insertar contenido en los servidores envío y almacenar en caché el contenido en la CDN.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -70,7 +70,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    La nueva contraseña se guarda cuando toca **[!UICONTROL Guardar]** en la esquina superior derecha de la página **[!UICONTROL Crear configuración de Dynamic Media]**.
 
-   Si tocó **[!UICONTROL Cancelar]** en el cuadro de diálogo **[!UICONTROL Cambiar contraseña]**, deberá introducir una nueva contraseña cuando toque **[!UICONTROL Guardar]** para guardar la configuración de Dynamic Media recién creada.
+   Si tocó **[!UICONTROL Cancelar]** en el cuadro de diálogo **[!UICONTROL Cambiar contraseña]**, aún tendrá que introducir una nueva contraseña cuando toque **[!UICONTROL Guardar]** para guardar la configuración de Dynamic Media recién creada.
 
    Consulte también [Cambio de la contraseña a Dynamic Media](#change-dm-password).
 
@@ -78,11 +78,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propiedad | Descripción |
    |---|---|
-   | Empresa | Nombre de la cuenta de Dynamic Media. Es posible que tenga varias cuentas de Dynamic Media para distintas submarcas, divisiones o entornos de ensayo y producción. |
+   | Empresa | El nombre de la cuenta de Dynamic Media. Es posible que tenga varias cuentas de Dynamic Media para distintas submarcas, divisiones o diferentes entornos de ensayo y producción. |
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de la compañía. |
-   | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**: Cuando se cargan recursos, el sistema los ingesta y proporciona la URL o incrustación instantáneamente. No es necesaria la intervención del usuario para publicar recursos.<br>**[!UICONTROL Tras la Activación]**: Debe publicar explícitamente el recurso primero antes de proporcionar un vínculo URL/Incrustar.<br>**[!UICONTROL Publicación ]**selectiva: Los recursos se publican automáticamente solo para previsualización segura y se pueden publicar explícitamente en AEM sin publicarlos en DMS7 para envío de dominio público. En el futuro, Adobe mejorará esta opción para publicar recursos para AEM y publicarlos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en AEM para la vista previa; estos mismos recursos no se publican en DMS7 para envío de dominio público. |
-   | Servidor de previsualización segura | Permite especificar la ruta de URL del servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe Systems recomienda que deje esta configuración como se especificó. |
-   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**: La configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]**: La configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, toque  **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el**contenido anteriormente.* Consulte también  [Uso de la publicación selectiva en el nivel de carpeta en Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Heredado ]**: No hay ningún valor de sincronización explícita en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]**: Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: Excluya todo lo que haya en este subárbol de la sincronización con Dynamic Media. |
+   | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**: Cuando se cargan recursos, el sistema los ingesta y proporciona la URL o incrustación instantáneamente. No es necesaria la intervención del usuario para publicar recursos.<br>**[!UICONTROL Tras la Activación]**: Debe publicar explícitamente el recurso primero antes de proporcionar un vínculo URL/Incrustar.<br>**[!UICONTROL Publicación ]**selectiva: Los recursos se publican automáticamente solo para previsualización segura y se pueden publicar explícitamente en AEM sin publicarlos en DMS7 para envío de dominio público. En el futuro, Adobe mejorará esta opción para publicar recursos para AEM y publicar recursos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en AEM para la vista previa; estos mismos recursos no se publican en DMS7 para envío de dominio público. |
+   | Servidor de previsualización segura | Permite especificar la ruta de URL del servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, AEM acceder a las representaciones remotas de Dynamic Media y realizar su previsualización de forma segura (no se devuelven los binarios a la instancia de AEM).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe Systems recomienda que deje esta configuración como se especificó. |
+   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir recursos de la sincronización con Dynamic Media de forma selectiva. Si anula la selección de esta opción, podrá elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**: La configuración se aplica a todas las carpetas de forma predeterminada, a menos que se marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]**: La configuración no se aplica a ninguna carpeta hasta que se marca explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, toque  **[!UICONTROL Propiedades]**. En la ficha **[!UICONTROL Detalles]**, en la lista desplegable **[!UICONTROL modo de sincronización de Dynamic Media]**, elija una de las tres opciones siguientes. Cuando haya terminado, toque **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si seleccionó&#x200B;**Sincronizar todo el**contenido anteriormente.* Consulte también  [Uso de Publicación selectiva en el nivel de carpeta de Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Heredado ]**: No hay ningún valor de sincronización explícita en la carpeta; en su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]**: Incluya todo en este subárbol para sincronizarlo con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: Excluya todo lo que haya en este subárbol de la sincronización con Dynamic Media. |
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2update](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. Toque **[!UICONTROL Guardar]**. Se guarda la nueva configuración y contraseña de Dynamic Media. Si tocó **[!UICONTROL Cancelar]** en su lugar, no se producirá ninguna actualización de contraseña.
+1. Toque **[!UICONTROL Guardar]**. Se guarda la nueva contraseña y configuración de Dynamic Media. Si tocó **[!UICONTROL Cancelar]** en su lugar, no se producirá ninguna actualización de contraseña.
 1. En el cuadro de diálogo **[!UICONTROL Configuración de Dynamic Media]**, toque **[!UICONTROL Aceptar]** para comenzar la configuración.
 
    >[!IMPORTANT]
@@ -103,7 +103,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Esta notificación de bandeja de entrada le informa si la configuración se ha realizado correctamente o no.
    > Consulte [Solución de problemas de una nueva configuración de Dynamic Media](#troubleshoot-dm-config) y [Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
 
-1. Para realizar una previsualización segura del contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; de la instancia de creación de AEM para conectarse a Dynamic Media. Para configurarlo, haga lo siguiente:
+1. Para realizar una previsualización segura del contenido de Dynamic Media antes de que se publique, debe &quot;lista de permitidos&quot; de la instancia de creación de AEM para conectarse a Dynamic Media. Para configurarlo, haga lo siguiente:
 
    * Inicie sesión en su cuenta de Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación situada cerca de la parte superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes]**.
@@ -173,7 +173,7 @@ La contraseña modificada se guarda cuando toca **[!UICONTROL Guardar]** en la e
 
 Si desea personalizar aún más la configuración y la configuración de Dynamic Media, o optimizar su rendimiento, puede completar una o más de las siguientes *tareas opcionales*:
 
-* [Configuración y configuración de los ajustes de Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [Configuración y configuración de la configuración de Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Opcional) Ajuste del rendimiento de Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -182,7 +182,7 @@ Si desea personalizar aún más la configuración y la configuración de Dynamic
 
 -->
 
-### (Opcional) Configuración y configuración de los ajustes de Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
+### (Opcional) Configuración y configuración de la configuración de Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
 Utilice la interfaz de usuario de Dynamic Media Classic (Scene7) para realizar cambios en la configuración de Dynamic Media.
 
@@ -200,7 +200,7 @@ Las tareas de configuración y configuración incluyen lo siguiente:
 
 #### Configuración de publicación para el servidor de imágenes {#publishing-setup-for-image-server}
 
-La configuración de configuración de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Medios dinámicos envía un recurso según la configuración predeterminada definida en Ajuste de publicación. Por ejemplo, una solicitud para entregar una imagen que no incluye un atributo resolution genera una imagen con la configuración de Resolución de objeto predeterminada.
+La configuración de Ajuste de publicación determina cómo se envían los recursos de forma predeterminada desde Dynamic Media. Si no se especifica ninguna configuración, Dynamic Media envía un recurso según la configuración predeterminada definida en Ajuste de publicación. Por ejemplo, una solicitud para entregar una imagen que no incluye un atributo resolution genera una imagen con la configuración de Resolución de objeto predeterminada.
 
 Para configurar Ajuste de publicación: en Dynamic Media Classic, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes]**.
 
@@ -257,7 +257,7 @@ Al hacerlo, se haría lo siguiente:
 
 #### Edición de tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
 
-Puede definir qué tipos de recursos se procesan con Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
+Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para realizar lo siguiente:
 
 * Convertir un Adobe PDF en un recurso de catálogo electrónico.
 * Convertir un Documento de Adobe Photoshop (.PSD) en un recurso de plantilla de letrero para su personalización.
@@ -278,7 +278,7 @@ Consulte [Carga de recursos](/help/assets/add-assets.md).
 1. En la carpeta mimeTypes, seleccione un tipo de MIME.
 1. A la derecha de la página CRXDE Lite, en la parte inferior:
 
-   * Haga clic con el doble en el campo **[!UICONTROL enabled]**. De forma predeterminada, todos los tipos de MIME de recursos están activados (definidos como **[!UICONTROL true]**), lo que significa que los recursos se sincronizarán con Dynamic Media para su procesamiento. Si desea excluir este tipo de MIME de recurso para que no se procese, cambie esta configuración a **[!UICONTROL false]**.
+   * Haga clic con el doble en el campo **[!UICONTROL enabled]**. De forma predeterminada, todos los tipos de MIME de recursos están habilitados (definidos como **[!UICONTROL true]**), lo que significa que los recursos se sincronizarán con Dynamic Media para su procesamiento. Si desea excluir este tipo de MIME de recurso para que no se procese, cambie esta configuración a **[!UICONTROL false]**.
 
    * Haga clic con el doble **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos de MIME admitidos](/help/assets/file-format-support.md) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
@@ -344,7 +344,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en AEM Assets
 
 ### (Opcional) Ajuste del rendimiento de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Para que Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> siga funcionando sin problemas, Adobe recomienda los siguientes consejos de ajuste del rendimiento y la escalabilidad de la sincronización:
+Para mantener Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> funcionando sin problemas, Adobe recomienda los siguientes consejos de ajuste de escalabilidad/rendimiento de sincronización:
 
 * Actualización de los parámetros de trabajo predefinidos para el procesamiento de diferentes formatos de archivo.
 * Actualización de los subprocesos de trabajo de la cola de Granite (recursos de vídeo) predefinidos.
@@ -367,7 +367,7 @@ Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;optimizado
 
 #### Actualización de la cola Granite Transient Workflow {#updating-the-granite-transient-workflow-queue}
 
-La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de trabajo **[!UICONTROL recurso de actualización de DAM]**. En Dynamic Media, se utiliza para la ingesta y el procesamiento de imágenes.
+La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de trabajo **[!UICONTROL recurso de actualización de DAM]**. En Dynamic Media, se utiliza para la ingestión y el procesamiento de imágenes.
 
 **Para actualizar la cola Granite Transient Workflow**
 
@@ -379,7 +379,7 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 1. En el campo **[!UICONTROL Número máximo de trabajos paralelos]**, cambie el número al valor deseado.
 
-   Puede aumentar **[!UICONTROL Número máximo de trabajos paralelos]** para admitir correctamente la carga pesada de archivos en Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinados escenarios (es decir, una migración inicial o una carga masiva única) puede utilizar un valor grande. Sin embargo, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, debe probar y ajustar el valor en función de su caso de uso particular.
+   Puede aumentar **[!UICONTROL Número máximo de trabajos paralelos]** para admitir adecuadamente la carga pesada de archivos a Dynamic Media. El valor exacto depende de la capacidad del hardware. En determinados escenarios (es decir, una migración inicial o una carga masiva única) puede utilizar un valor grande. Sin embargo, tenga en cuenta que el uso de un valor grande (por ejemplo, dos veces el número de núcleos) puede tener efectos negativos en otras actividades simultáneas. Como tal, debe probar y ajustar el valor en función de su caso de uso particular.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -391,7 +391,7 @@ La cola de flujo de trabajo de tránsito de granito se utiliza para el flujo de 
 
 #### Actualizando la cola de Granite Workflow {#updating-the-granite-workflow-queue}
 
-La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, solía procesar vídeo con el flujo de trabajo **[!UICONTROL Codificación de vídeo de Dynamic Media]**.
+La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, solía procesar vídeo con el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]**.
 
 Para actualizar la cola Granite Workflow:
 
