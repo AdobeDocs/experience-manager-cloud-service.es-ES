@@ -1,11 +1,11 @@
 ---
 title: Accesibilidad en [!DNL Dynamic Media]
-description: Obtenga información sobre la accesibilidad en Dynamic Media y los visores de Dynamic Media
+description: Obtenga información sobre la accesibilidad en los visores de Dynamic Media y Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Dynamic Media admite tecnologías de control de teclado y asistencia, como lectores de pantalla JAWS y NVDA, en la interfaz de usuario de creación.
 
-## Compatibilidad de accesibilidad de teclado en Dynamic Media
+## Compatibilidad con accesibilidad de teclado en Dynamic Media
 
-Dado que Dynamic Media es un complemento de Recursos Experience Manager, la mayor parte del control de teclado es exactamente igual que en Recursos Experience Manager. Por ejemplo, el botón `Cancel` de Dynamic Media tiene el mismo resaltado de enfoque que en Recursos Experience Manager y reacciona a la clave `Spacebar` que en Recursos Experience Manager. Consulte [Métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dado que Dynamic Media es un complemento de Recursos Experience Manager, la mayoría del comportamiento de control de teclado es exactamente el mismo que en Recursos Experience Manager. Por ejemplo, el botón `Cancel` de Dynamic Media tiene el mismo resaltado de enfoque que en Recursos Experience Manager y reacciona a la clave `Spacebar` que en Recursos Experience Manager. Consulte [Métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Las pulsaciones de teclas admitidas por los elementos individuales de la interfaz de usuario en Dynamic Media son, en la mayoría de los casos, obvias y fáciles de detectar. El control de teclado en Dynamic Media es de lo siguiente:
 
@@ -46,7 +46,7 @@ Consulte [Edición del recorte inteligente o muestra inteligente de una sola ima
 
 ## Soporte de tecnología de asistencia en Dynamic Media {#assistive-technology=support-for-dm}
 
-Los elementos de la interfaz de usuario de Dynamic Media funcionan con tecnologías de asistencia como lectores de pantalla. Por ejemplo, reconoce los puntos de referencia en una página cuando se navega por los puntos de referencia mediante el método abreviado de teclado `D` o las regiones mediante el método abreviado de teclado `R`. También narra el encabezado al navegar mediante el método abreviado de teclado de encabezado `H`.
+Los elementos de la interfaz de usuario de Dynamic Media funcionan con tecnologías de asistencia, como lectores de pantalla. Por ejemplo, reconoce los puntos de referencia en una página cuando se navega por los puntos de referencia mediante el método abreviado de teclado `D` o las regiones mediante el método abreviado de teclado `R`. También narra el encabezado al navegar mediante el método abreviado de teclado de encabezado `H`.
 
 ## Compatibilidad de accesibilidad de teclado en visores de Dynamic Media {#keyboard-accessibility-for-dm-viewers}
 
