@@ -3,17 +3,65 @@ title: Referencias de desarrollador para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 1%
+source-wordcount: '1400'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Assets] API y material de referencia para desarrolladores  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API y material de referencia para desarrolladores  {#assets-cloud-service-apis}
 
-El artículo contiene material de referencia y recursos para desarrolladores de [!DNL Assets] como [!DNL Cloud Service]. Incluye nuevo método de carga, referencia de API e información sobre la compatibilidad proporcionada en los flujos de trabajo de postprocesamiento.
+El artículo contiene recomendaciones, materiales de referencia y recursos para desarrolladores de [!DNL Assets] como [!DNL Cloud Service]. Incluye un nuevo módulo de carga de recursos, una referencia de API e información sobre la compatibilidad proporcionada en los flujos de trabajo posteriores al procesamiento.
+
+## [!DNL Experience Manager Assets] API y operaciones  {#use-cases-and-apis}
+
+[!DNL Assets] como  [!DNL Cloud Service] proporciona varias API para interactuar mediante programación con recursos digitales. Cada API admite casos de uso específicos, como se indica en la tabla siguiente. La interfaz de usuario [!DNL Assets], la aplicación de escritorio [!DNL Experience Manager] y [!DNL Adobe Asset Link] admiten todas o algunas de las operaciones.
+
+>[!CAUTION]
+>
+>Algunas API siguen existiendo, pero no se admiten activamente (se indican con una ×) y no deben utilizarse.
+
+| Nivel de asistencia | Descripción |
+| ------------- | --------------------------- |
+| xib | Compatible |
+| × | No se admite. No usar. |
+| - | No disponible |
+
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [API de AEM/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) de Sling | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(Previsualización)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **binario original** |  |  |  |  |  |  |
+| Crear original | xib | × | - | × | × | - |
+| Leer original | - | × | xib | xib | xib | - |
+| Actualizar original | xib | × | xib | × | × | - |
+| Eliminar original | - | xib | - | xib | xib | - |
+| Copiar original | - | xib | - | xib | xib | - |
+| Mover original | - | xib | - | xib | xib | - |
+| **Metadatos** |  |  |  |  |  |  |
+| Creación de metadatos | - | xib | xib | xib | xib | - |
+| Leer metadatos | - | xib | - | xib | xib | - |
+| Actualizar metadatos | - | xib | xib | xib | xib | - |
+| Eliminar metadatos | - | xib | xib | xib | xib | - |
+| Copiar metadatos | - | xib | - | xib | xib | - |
+| Mover metadatos | - | xib | - | xib | xib | - |
+| **Fragmentos de contenido (CF)** |  |  |  |  |  |  |
+| Crear CF | - | xib | - | xib | - | - |
+| Leer CF | - | xib | - | xib | - | xib |
+| Actualizar CF | - | xib | - | xib | - | - |
+| Eliminar CF | - | xib | - | xib | - | - |
+| Copiar CF | - | xib | - | xib | - | - |
+| Mover CF | - | xib | - | xib | - | - |
+| **Versiones** |  |  |  |  |  |  |
+| Crear versión | xib | xib | - | - | - | - |
+| Leer versión | - | xib | - | - | - | - |
+| Eliminar versión | - | xib | - | - | - | - |
+| **Carpetas** |  |  |  |  |  |  |
+| Crear carpeta | xib | xib | - | xib | - | - |
+| Leer carpeta | - | xib | - | xib | - | - |
+| Eliminar carpeta | xib | xib | - | xib | - | - |
+| Copiar carpeta | xib | xib | - | xib | - | - |
+| Mover carpeta | xib | xib | - | xib | - | - |
 
 ## Carga de recursos {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ Este método ofrece una gestión escalable y más eficaz de las cargas de recurs
 * El almacenamiento de nube binaria funciona con una red de Envío de contenido (CDN) o una red de Edge. Un CDN selecciona un punto final de carga más cercano para un cliente. Cuando los datos pasan una distancia más corta a un punto final cercano, el rendimiento de carga y la experiencia del usuario mejoran, especialmente para equipos distribuidos geográficamente.
 
 >[!NOTE]
->
->Consulte el código de cliente para implementar este método en la [biblioteca de carga de recursos abierta](https://github.com/adobe/aem-upload).
+Consulte el código de cliente para implementar este método en la [biblioteca de carga de recursos abierta](https://github.com/adobe/aem-upload).
 
 ### Iniciar carga {#initiate-upload}
 
