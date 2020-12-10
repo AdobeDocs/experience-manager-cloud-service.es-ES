@@ -2,9 +2,9 @@
 title: 'Desaplicar Lista de permitidos IP '
 description: Desaplicar Lista de permitidos IP
 translation-type: tm+mt
-source-git-commit: e92fc7bac289481d046eb6bc27da833f17b29c7e
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ La anulación de la aplicación de una Lista de permitidos IP es el proceso medi
 
 Siga los pasos a continuación para CancelarAplicar una Lista de permitidos IP:
 
-1. Vaya a la página Detalles del Entorno específica desde la pantalla Entornos y vaya a la tabla Lista de permitidos IP.
+1. Vaya a la página Detalles del Entorno específica desde la pantalla **Entornos** y vaya a la tabla de Lista de permitidos IP.
 1. Identifique la fila en la que se muestra la regla de Lista de permitidos IP que desea anular de la aplicación.
 1. Seleccione **...** desde el extremo derecho de la fila.
-1. Seleccione la opción No aplicar y confirme el envío.
+1. Seleccione la opción **No aplicar** y confirme el envío.
