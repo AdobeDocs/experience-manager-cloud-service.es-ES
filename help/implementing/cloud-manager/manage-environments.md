@@ -2,10 +2,10 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 6%
+source-wordcount: '1254'
+ht-degree: 5%
 
 ---
 
@@ -146,4 +146,45 @@ Seleccione **Inicio de sesión local** en el menú desplegable de la tarjeta **E
 Además, puede iniciar sesión localmente desde la página de resumen **Entornos**.
 
 ![](assets/environ-login-locally-2.png)
+
+## Administración de nombres de dominio personalizados {#manage-cdn}
+
+Acceda a la página de detalles del Entorno desde la página Resumen de Entornos.
+
+Las siguientes acciones se pueden realizar en el servicio de publicación de su entorno como se describe a continuación:
+
+1. **Añadir un nombre** de dominio personalizado: Consulte  [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **Visualización y actualización del nombre** de dominio personalizado: Consulte  [Visualización y actualización de certificados SSL y nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **Eliminando nombre** de dominio personalizado: Consulte  [Eliminación de certificados SSL y nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## Administración de listas de permitidos de IP {#manage-ip-allow-lists}
+
+Acceda a la página de detalles del Entorno desde la página Resumen de Entornos. Puede realizar las siguientes acciones en los servicios Publicar y/o Autor para su entorno aquí.
+
+### Aplicación de una lista de permisiones de IP {#apply-ip-allow-list}
+
+La aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los intervalos de IP incluidos en la definición de la lista de permitidos están asociados a un servicio de creación o publicación en un entorno. Para poder aplicar una Lista de permitidos IP, debe haber iniciado sesión un usuario con la función Propietario de la empresa o Administrador de implementación.
+
+>[!NOTE]
+>La Lista de permitidos IP debe existir en Cloud Manager para poder aplicarla a un servicio de entorno. Para obtener más información sobre las listas de permisiones de IP en Cloud Manager, navegue a [Introducción a las listas de permisiones de IP en el Administrador de descargas](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
+Complete los siguientes pasos:
+
+1. Vaya a la página Detalles del Entorno específica desde la pantalla Entornos y vaya a la tabla Lista de permitidos IP.
+1. Utilice los campos de entrada en la parte superior de la tabla de Lista de permitidos IP para seleccionar la Lista de permitidos IP y el servicio de creación o publicación al que desee aplicarla.
+1. A continuación, seleccione Aplicar y confirme el envío.
+
+### Anular la aplicación de una lista de permisiones de IP {#unapply-ip-allow-list}
+
+La anulación de la aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los rangos de IP incluidos en la definición de la lista de permitidos se desasocian de un servicio Autor/o Publicador en un entorno.  Un usuario con la función Propietario de la empresa o Administrador de implementación debe iniciar sesión para poder anular la aplicación de una Lista de permitidos IP.
+
+Complete los siguientes pasos:
+
+1. Vaya a la página Detalles del Entorno específica desde la pantalla Entornos y vaya a la tabla Lista de permitidos IP.
+1. Identifique la fila en la que se muestra la regla de Lista de permitidos IP que desea anular de la aplicación.
+1. Seleccione **...** desde el extremo derecho de la fila.
+1. Seleccione la opción No aplicar y confirme el envío.
+
 
