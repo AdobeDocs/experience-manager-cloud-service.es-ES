@@ -2,7 +2,7 @@
 title: 'Visualización de la actualización y sustitución de un certificado SSL - Administración de SSL '
 description: Visualización de la actualización y sustitución de un certificado SSL - Administración de certificados SSL
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Cuándo utilizar estas opciones en la interfaz de usuario del Administrador de n
 
 ## Actualizando un certificado SSL a punto de caducar {#update-ssl-certificate}
 
-Cuando un certificado caduca, ya no funcionará ningún dominio que esté en uso con el certificado caducado. Para actualizar un certificado caducado, debe seguir los pasos que se indican a continuación. Esto garantizará que su dominio siga funcionando como desee. Para añadir un nuevo certificado, será necesario actualizar el nombre de dominio personalizado con el nuevo certificado antes de que los dominios funcionen como se desee. Consulte [Visualización, actualización y reemplazo de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)para obtener más información
+Cuando un certificado caduca, ya no funcionará ningún dominio que esté en uso con el certificado caducado. Para actualizar un certificado caducado, debe seguir los pasos que se indican a continuación. Esto garantizará que su dominio siga funcionando como desee. Para añadir un nuevo certificado, será necesario actualizar el nombre de dominio personalizado con el nuevo certificado antes de que los dominios funcionen como se desee. Consulte [Visualización, actualización y reemplazo de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) para obtener más detalles.
 
 Siga los pasos a continuación para actualizar un certificado SSL:
 
