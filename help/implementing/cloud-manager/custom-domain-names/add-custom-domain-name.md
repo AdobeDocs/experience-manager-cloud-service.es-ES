@@ -2,9 +2,9 @@
 title: Añadir un nombre de dominio personalizado
 description: Añadir un nombre de dominio personalizado
 translation-type: tm+mt
-source-git-commit: 9d5f7d633ac8dfaadf315e85666479c87a0afa04
+source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -20,29 +20,37 @@ Un usuario debe ser propietario de una empresa o administrador de implementació
 
 * Solo se puede agregar un nombre de dominio a la vez. Sin embargo, los usuarios pueden agregar caracteres comodín, por ejemplo, `*.wknd.com` como nombre de dominio, lo que permitiría que varios subdominios se alojaran con un único registro TXT.
 
-* Cada Entorno de Cloud Manager puede alojar hasta un máximo de 100 dominios personalizados por entorno. El mismo nombre de dominio no se puede usar en más de un entorno.
+* Cada Entorno de Cloud Manager puede alojar hasta un máximo de 100 dominios personalizados por entorno.
+
+* El mismo nombre de dominio no se puede usar en más de un entorno.
 
 ## Añadir un nombre de dominio personalizado de la página Configuración de dominio {#adding-cdn-settings}
 
 Siga los pasos a continuación para agregar un nombre de dominio personalizado desde la página Configuración de dominio:
 
-1. Vaya a la página Configuración de dominio desde la **Página Entornos**
+1. Vaya a la pantalla **Entornos** desde la página **Información general**.
 
-1. Seleccione **Añadir nombre de dominio personalizado** para iniciar el asistente para agregar nombre de dominio personalizado.
+1. Haga clic en **Configuración de dominio** en el menú de navegación de la izquierda.
 
-1. Escriba el nombre de dominio personalizado.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
+
+1. Haga clic en el botón **Añadir dominio** para abrir el cuadro de diálogo **Añadir nombre de dominio**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+
+1. Escriba el nombre de dominio personalizado en **Nombre de dominio**.
 
    >[!NOTE]
    >No debe incluir `http://`, `https://` ni espacios al ingresar en el dominio.
 
-1. Seleccione el Entorno cuyo servicio de publicación se asociará al nombre de dominio.
+1. Seleccione el **Entorno** cuyo servicio de publicación se asociará con el nombre de dominio.
 
-1. Seleccione el certificado SSL en la lista desplegable y seleccione Continuar.
+1. Seleccione el **Certificado SSL de dominio** en la lista desplegable y seleccione **Continuar**.
 
-1. Esto lo llevará a la pantalla Verificación del nombre de dominio para su Entorno. Consulte [Añadir un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información.
+1. **Aparece el cuadro de diálogo añadir** nombre de dominio. Esto lo llevará a la pantalla Verificación del nombre de dominio para su Entorno. Consulte [Añadir un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información.
 Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno.
 
-1. Seleccione Continuar.
+1. Haga clic en **Crear**.
 1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
 1. Vaya a Comprobación del estado del nombre de dominio personalizado para obtener más información sobre los distintos estados y la dirección.
 
@@ -56,8 +64,7 @@ Siga las instrucciones proporcionadas para probar la propiedad del dominio para 
 1. Se iniciará el asistente para Añadir el nombre de dominio personalizado con el nombre de Entorno previamente rellenado.
 1. Escriba el nombre de dominio personalizado. Nota: No incluya `http://`, `https://` ni espacios al ingresar en el dominio. Seleccione Continuar.
 1. Esto lo llevará a la pantalla Verificación del nombre de dominio para su Entorno. Consulte [Verificación del dominio](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información. Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno.
-
-1. Seleccione Continuar.
+1. Seleccione **Continuar**.
 1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
 
 En este punto, el nombre de dominio personalizado está listo para la prueba y `CNAME` para señalarlo. Consulte Estado del nombre de dominio para obtener más información sobre los distintos estados y la dirección.
