@@ -2,9 +2,9 @@
 title: Añadir un certificado SSL - Administración de certificados SSL
 description: Añadir un certificado SSL - Administración de certificados SSL
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Los archivos SSL deben tener formato PEM para poder instalarse en Cloud Manager.
 
 Siga los pasos a continuación para convertir el formato de sus archivos SSL a PEM:
 
-1. Convertir PFX a PEM
+* Convertir PFX a PEM
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. Convertir P7B a PEM
+* Convertir P7B a PEM
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. Convertir DER a PEM
+* Convertir DER a PEM
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## Consideraciones importantes {#important-considerations}
 
@@ -50,9 +50,11 @@ Siga los pasos a continuación para agregar un certificado:
 1. Haga clic en **Certificados SSL** en el menú de navegación de la izquierda. En esta pantalla se mostrará una tabla con detalles de los certificados SSL existentes.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. Seleccione el botón **Añadir certificado** para abrir el cuadro de diálogo **Añadir certificado SSL**.
+
+1. Haga clic en **Añadir certificado SSL** para abrir el cuadro de diálogo **Añadir certificado SSL**.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. Escriba un nombre para el certificado en **Nombre del certificado**. Puede ser cualquier nombre que le ayude a hacer referencia fácilmente a su certificado.
    1. Pegue la **cadena de certificados**, **clave privada** y **cadena de certificados** en sus respectivos campos. Utilice el icono de pegado a la derecha del cuadro de entrada.
 Los tres campos no son opcionales y deben incluirse.
@@ -84,6 +86,4 @@ Puede comprobar que la clave privada y el certificado `main/server` coinciden ut
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 
-Cloud Manager espera que el certificado SSL sea válido durante al menos 90 días en el futuro
-
-Compruebe la validez de la cadena de certificados.
+Cloud Manager espera que el certificado SSL sea válido durante al menos 90 días en el futuro. Debe comprobar la validez de la cadena de certificados.
