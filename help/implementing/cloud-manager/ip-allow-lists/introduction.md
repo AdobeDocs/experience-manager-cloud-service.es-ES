@@ -2,9 +2,9 @@
 title: 'Introducción: Listas de permitidos IP en el Administrador de posibles clientes'
 description: 'Introducción: Listas de permitidos IP en el Administrador de posibles clientes'
 translation-type: tm+mt
-source-git-commit: ef7d8c340d4c6c47ede89552e6c4bfab49251d79
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM como un servicio en la nube está abierto a Internet y la seguridad se gesti
 Las Listas de permitidos IP pueden agregarse una vez y aplicarse/no varias veces como una unidad o entidad a un servicio Autor y/o Publicador en un entorno.
 
 >[!NOTE]
->Los nombres de las listas de permisiones de IP son compatibles con Cloud Manager para autores o servicios de publicación en un entorno.
+>Los nombres de las Listas de permitidos IP son compatibles con Cloud Manager para autores y/o servicio de publicación en un entorno.
 
 Mediante la página de Lista de permitidos IP de la interfaz de usuario del Administrador de la nube o la página de detalles del Entorno, un usuario con permisos puede realizar varias tareas para administrar las Listas de permitidos IP de sus entornos, entre las que se incluyen:
 
