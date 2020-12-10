@@ -2,9 +2,9 @@
 title: Añadir un certificado SSL - Administración de certificados SSL
 description: Añadir un certificado SSL - Administración de certificados SSL
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Añadir un certificado SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM como Cloud Service solo aceptará certificados OV (validación de organización) o EV (validación extendida). No se aceptarán los certificados DV (validación de dominio).
+>AEM como Cloud Service solo aceptará certificados OV (validación de organización) o EV (validación extendida). No se aceptarán los certificados DV (validación de dominio). Además, cualquier certificado debe ser un certificado X.509 TLS de una entidad de certificación de confianza (CA) con una clave privada RSA de 2048 bits que coincida.
 
 El certificado tarda unos días en proporcionarse y se recomienda que se aprovisione el certificado incluso con meses de anticipación. Consulte [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obtener más detalles.
 
@@ -59,11 +59,12 @@ Siga los pasos a continuación para agregar un certificado:
    1. Pegue la **cadena de certificados**, **clave privada** y **cadena de certificados** en sus respectivos campos. Utilice el icono de pegado a la derecha del cuadro de entrada.
 Los tres campos no son opcionales y deben incluirse.
 
+      >[!NOTE]
+      >Se mostrarán todos los errores detectados. Debe corregir todos los errores antes de guardar el certificado. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
+
 1. Haga clic en **Guardar** para enviar el certificado. Verá que se muestra como una fila nueva en la tabla.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >Se mostrarán todos los errores detectados. Debe corregir todos los errores antes de guardar el certificado. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
 
 ## Errores de certificado {#certificate-errors}
 
