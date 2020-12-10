@@ -2,9 +2,9 @@
 title: 'Introducción: Administración de certificados SSL'
 description: 'Introducción: Administración de certificados SSL'
 translation-type: tm+mt
-source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
+source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Cloud Manager ofrece a los clientes la capacidad de autoservicio de instalar certificados SSL mediante la interfaz de usuario del Administrador de nube. Cloud Manager utiliza un servicio TLS de plataforma para administrar los certificados SSL y las claves privadas que son propiedad de los clientes y que normalmente se obtienen de terceros emisores de certificados, por ejemplo, Let’s Encrypt.
 
 >[!IMPORTANT]
->Cloud Manager no proporciona certificados SSL ni claves privadas. Estos deben obtenerse de entidades emisoras de certificados de terceros. Consulte Cómo obtener un certificado SSL para obtener más información. INSERTAR VÍNCULO
+>Cloud Manager no proporciona certificados SSL ni claves privadas. Estos deben obtenerse de entidades emisoras de certificados de terceros. Consulte [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obtener más información.
 
 >[!NOTE]
 >AEM como Cloud Service solo admite sitios https seguros. Los clientes con varios dominios personalizados no querrán cargar un certificado cada vez que añadan un dominio. Por lo tanto, estos clientes se beneficiarán al obtener un certificado con varios dominios.
