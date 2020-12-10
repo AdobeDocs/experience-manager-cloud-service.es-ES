@@ -2,9 +2,9 @@
 title: 'Visualización y actualización: Listas de permitidos IP en el Administrador de podría'
 description: 'Visualización y actualización: Listas de permitidos IP en el Administrador de podría'
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,10 @@ Para poder actualizar una Lista de permitidos IP, debe iniciar sesión un usuari
 
 Siga los pasos a continuación para actualizar una Lista de permitidos IP:
 
-1. Vaya a la página de Lista de permitidos IP desde la pantalla Entornos.
+1. Vaya a la página **Listas de permitidos IP** desde la pantalla **Entornos**.
 1. Identifique la fila donde se muestra la regla de Lista de permitidos IP que desea vista o actualización.
 1. Seleccione **...** desde el extremo derecho de la fila.
-1. Seleccione la opción Vista y actualización.
+1. Seleccione la opción **Vista y actualización**.
 1. Realice cambios en el nombre o las IP y confirme el envío.
 
 ## Consideraciones importantes al Añadir, actualizar o eliminar Listas de permitidos IP {#considerations}
@@ -41,4 +41,4 @@ Siga los pasos a continuación para actualizar una Lista de permitidos IP:
 * Al eliminar un intervalo de IP de la Lista de permitidos de IP automáticamente se anulará su aplicación de todos los servicios de entorno correspondientes.
 * No se pueden realizar actualizaciones en una Lista de permitidos IP mientras una actualización anterior esté en curso y no se haya completado.
 * No se pueden realizar actualizaciones en una Lista de permitidos IP si existe algún error de una actualización anterior. Se debe borrar cualquier error al intentar volver a intentar la actualización.
-Consulte Comprobación del estado de Lista de permitidos de IP para obtener más información.
+Consulte [Comprobación del estado de Lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) para obtener más información.
