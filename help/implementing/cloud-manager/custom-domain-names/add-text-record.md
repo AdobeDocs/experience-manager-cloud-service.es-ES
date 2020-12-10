@@ -2,7 +2,7 @@
 title: Añadir un registro TXT
 description: Añadir un nombre de dominio personalizado
 translation-type: tm+mt
-source-git-commit: 8d97bedc8c473c13e3378849741104b2c85492e2
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Debe seguir los pasos a continuación antes de crear un registro TXT:
 * Tener la capacidad de modificar los registros DNS del dominio de su organización o ponerse en contacto con la persona adecuada que pueda hacerlo.
 * Identifique su host de dominio o registrador si aún no lo conoce.
 
-Al iniciar la verificación de dominio, el Administrador de nube le proporciona el nombre y el valor TXT que se utilizarán para la verificación. Añada un registro TXT en el servidor DNS de su dominio mediante el nombre y el valor especificados.
+Al iniciar la verificación de dominio, Cloud Manager le proporciona el nombre y el valor TXT que se utilizarán para la verificación. Añada un registro TXT en el servidor DNS de su dominio mediante el nombre y el valor especificados.
 
 1. Inicie sesión en el host de dominio y visite la sección de registros DNS.
 1. Añada `_aemverification.[yourdomainname]` como Nombre y agregue el valor TXT tal como aparece.
