@@ -2,10 +2,10 @@
 title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 4%
+source-wordcount: '462'
+ht-degree: 7%
 
 ---
 
@@ -18,21 +18,16 @@ La CDN administrada por AEM satisfará la mayoría de los requisitos de rendimie
 
 ## CDN administrado por AEM {#aem-managed-cdn}
 
-Siga estos pasos para prepararse para el envío de contenido mediante la CDN predeterminada del Adobe:
+Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager y prepararse para el envío de contenido mediante la CDN integrada de Adobe:
 
-1. Proporcione el certificado SSL firmado y la clave secreta para Adobe compartiendo un vínculo a un formulario seguro que contenga esta información. Coordine con la asistencia al cliente esta tarea. Adobe admite hasta 10 certificados SSL para un programa.
-   **Nota:** Aem como Cloud Service no admite certificados con validación de dominio (DV). Además, debe ser un certificado X.509 TLS de una entidad de certificación de confianza (CA) con una clave privada RSA de 2048 bits que coincida.
-1. Informar a la asistencia al cliente:
-   * qué dominios personalizados deben asociarse con un determinado entorno, tal como se define en la identificación del programa y la identificación del entorno. Se admiten hasta 100 dominios para un entorno determinado y los dominios no pueden contener comodines. Tenga en cuenta que los dominios personalizados del lado del autor no son compatibles.
-   * si se necesita alguna inclusión en la lista de permitidos IP para restringir el tráfico a un entorno determinado.
-1. Coordine con el servicio de atención al cliente la temporización de los cambios necesarios en los registros DNS. Las instrucciones son diferentes en función de si se necesita un registro de apex:
-   * si no se necesita un registro apex, los clientes deben establecer el registro DNS CNAME para que señale su FQDN a `cdn.adobeaemcloud.com`.
-   * si se necesita un registro apex, cree un registro A que apunte a las siguientes IP: 151.101.3.10, 151.101.67.10, 151.101.131.10, 151.101.195.10. Los clientes necesitan un registro apex si el FQDN deseado coincide con la zona DNS. Esto se puede probar usando el comando Unix dig para ver si el valor SOA de la salida coincide con el dominio. Por ejemplo, el comando `dig anything.dev.adobeaemcloud.com` devuelve un SOA (Inicio de Autoridad, es decir, la zona) de `dev.adobeaemcloud.com`, de modo que no es un registro APEX, mientras que `dig dev.adobeaemcloud.com` devuelve un SOA de `dev.adobeaemcloud.com`, por lo que es un registro apex.
-1. Se le notificará cuando los certificados SSL caduquen para que pueda volver a enviar los nuevos certificados SSL.
+1. [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Restricción del tráfico**
 
-De forma predeterminada, para una configuración de CDN administrada por Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), debe trabajar con la asistencia al cliente para configurar estas restricciones.
+De forma predeterminada, para una configuración de CDN administrada por Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), puede hacerlo de forma automática mediante la interfaz de usuario del Administrador de nube.
+
+Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para obtener más información.
 
 ## CDN de cliente señala a AEM CDN administrada {#point-to-point-CDN}
 
