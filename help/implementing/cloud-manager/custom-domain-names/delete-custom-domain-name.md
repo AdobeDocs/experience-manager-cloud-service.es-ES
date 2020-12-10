@@ -2,7 +2,7 @@
 title: Eliminación de un nombre de dominio personalizado
 description: Eliminación de un nombre de dominio personalizado
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -12,15 +12,16 @@ ht-degree: 0%
 
 # Eliminación de un nombre de dominio personalizado {#deleting-cdn}
 
->[!NOTE]
->Un usuario debe estar en la función Propietario de la empresa o Administrador de implementación para poder eliminar un nombre de dominio personalizado en Cloud Manager.
+Un usuario debe estar en la función Propietario de la empresa o Administrador de implementación para poder eliminar un nombre de dominio personalizado en Cloud Manager.
 
 ## Eliminación de un nombre de dominio personalizado de todos los Entornos asociados {#delete-cdn-all}
 
-1. Vaya a la página Configuración de dominio desde la pantalla Entornos.
+1. Vaya a la página **Configuración de dominio** desde la pantalla **Entornos**.
 1. Identifique la fila donde se muestra el nombre de dominio personalizado que desea eliminar.
 1. Seleccione **...** desde el extremo derecho de la fila.
-1. Seleccione la opción Eliminar.
+1. Seleccione la opción **Eliminar**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 1. Confirme el envío.
 
 
