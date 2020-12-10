@@ -4,10 +4,10 @@ user-guide-title: Incorporación a AEM as a Cloud Service
 breadcrumb-title: Guía de incorporación
 user-guide-description: Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos.
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,12 +63,12 @@ ht-degree: 62%
       + [Eliminación del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Administración de listas de permitidos de IP {#ip-allow-lists}
       + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [Añadir una lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [Visualización y actualización de una lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [Aplicación de lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [Anulación de la aplicación de una lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [Eliminación de una lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [Comprobación de un estado de lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [Añadir una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [Visualización y actualización de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [Aplicación de Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [Desaplicación de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [Eliminación de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [Comprobación del estado de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Notas de la versión de Cloud Manager {#release-notes-cloud-manager}
       + [Notas de la versión actual (2020.12.0)](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [Notas de la versión 2020.11.0](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
