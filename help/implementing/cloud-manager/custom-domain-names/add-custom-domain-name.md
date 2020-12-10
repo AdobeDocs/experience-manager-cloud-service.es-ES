@@ -2,9 +2,9 @@
 title: Añadir un nombre de dominio personalizado
 description: Añadir un nombre de dominio personalizado
 translation-type: tm+mt
-source-git-commit: 68a62be11f711e30b87dfc60a85627dceaf06caa
+source-git-commit: 27e96d66d93f2fa0e67e607c75f37efda17a13b7
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -52,22 +52,39 @@ Siga las instrucciones proporcionadas para probar la propiedad del dominio para 
 
 1. Haga clic en **Crear**.
 1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
-1. Vaya a Comprobación del estado del nombre de dominio personalizado para obtener más información sobre los distintos estados y la dirección.
+Vaya a [Comprobación del estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información acerca de los distintos estados y la dirección.
 
    >[!NOTE]
    >La prueba de DNS puede tardar hasta unas horas en reconocerse debido a retrasos en la propagación de DNS. Cloud Manager verificará la propiedad y actualizará el estado, que se puede ver en la tabla de configuración de dominio. Consulte Comprobación del estado del nombre de dominio para obtener más detalles.
 
 ## Añadir un nombre de dominio personalizado de la página Entornos {#adding-cdn-environments}
 
-1. Vaya a la página Detalle de Entorno para ver el entorno de intereses.
-1. Utilice los campos de entrada en la parte superior de la tabla Nombres de dominio para enviar el nombre de dominio personalizado, certificado SSL. A continuación, seleccione Añadir.
-1. Se iniciará el asistente para Añadir el nombre de dominio personalizado con el nombre de Entorno previamente rellenado.
-1. Escriba el nombre de dominio personalizado. Nota: No incluya `http://`, `https://` ni espacios al ingresar en el dominio. Seleccione Continuar.
-1. Esto lo llevará a la pantalla Verificación del nombre de dominio para su Entorno. Consulte [Verificación del dominio](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información. Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno.
-1. Seleccione **Continuar**.
-1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
+1. Acceda a la página Detalles de Entornos para ver el entorno de intereses.
 
-En este punto, el nombre de dominio personalizado está listo para la prueba y `CNAME` para señalarlo. Consulte Estado del nombre de dominio para obtener más información sobre los distintos estados y la dirección.
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
+
+1. Utilice los campos de entrada en la parte superior de la tabla Nombres de dominio para enviar el nombre de dominio personalizado y seleccionar el certificado SSL en la lista desplegable. Haga clic en **+ Añadir**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
+
+1. Marque los campos en el cuadro de diálogo **Añadir nombre de dominio** y haga clic en **Continuar**.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
+
+   >[!NOTE]
+   >No incluya `http://`, `https://` ni espacios al ingresar en el dominio.
+
+1. Se abre la pantalla Verificación del nombre de dominio para el Entorno.
+
+   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+
+   Consulte [Verificación del dominio](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información. Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno.
+
+1. Haga clic en **Crear**.
+
+1. La implementación del nombre de dominio personalizado requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
+
+En este punto, el nombre de dominio personalizado está listo para la prueba y `CNAME` para señalarlo. Consulte [Estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre los distintos estados y la forma de direccionar.
 
 >[!NOTE]
 >La prueba de DNS puede tardar hasta unas horas en reconocerse debido a retrasos en la propagación de DNS. Cloud Manager verificará la propiedad y actualizará el estado, que se puede ver en la tabla de configuración de dominio. Consulte Comprobación del estado del nombre de dominio para obtener más información.
