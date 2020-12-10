@@ -2,9 +2,9 @@
 title: Comprobación del estado de un certificado SSL - Administración de certificados SSL
 description: Comprobación del estado de un certificado SSL - Administración de certificados SSL
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Comprobando el estado de un certificado SSL {#checking-status-an-ssl-certificate}
 
-El estado de los certificados SSL se puede comprender de un vistazo desde la página de certificados SSL o desde la página de detalles del Entorno.
+El estado de los certificados SSL se puede entender de un vistazo desde la página de certificados SSL.
 
 Puede identificar el estado de un certificado SSL desde los siguientes esquemas de color:
 
