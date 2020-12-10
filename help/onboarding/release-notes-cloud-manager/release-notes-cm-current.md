@@ -2,10 +2,10 @@
 title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.12.0
 description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.12.0
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.12.0 es el 
 
 * Administración automática de [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* Administración de autoservicio de [listas de permisiones de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+* Administración de autoservicio de [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 * La página de detalles **Entorno** actualizada ahora permite a los usuarios administrar nombres de dominio personalizados y listas de permisiones de IP en sus entornos.
 
