@@ -4,9 +4,9 @@ user-guide-title: Incorporación a AEM as a Cloud Service
 breadcrumb-title: Guía de incorporación
 user-guide-description: Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos.
 translation-type: tm+mt
-source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '359'
 ht-degree: 62%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 62%
       + [Visualización y actualización o sustitución de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [Comprobación del estado de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [Eliminación de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
-   + Nombres de dominio personalizados {#custom-domain-names}
+   + Administración de nombres de dominio personalizados {#custom-domain-names}
       + [Introducción](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [Obtención de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
@@ -61,7 +61,7 @@ ht-degree: 62%
       + [Visualización y actualización del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [Actualización del certificado SSL del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [Eliminación del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   + Listas de permitidos de IP {#ip-allow-lists}
+   + Administración de listas de permitidos de IP {#ip-allow-lists}
       + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Añadir una lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [Visualización y actualización de una lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
