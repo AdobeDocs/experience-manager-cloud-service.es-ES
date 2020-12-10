@@ -2,9 +2,9 @@
 title: Comprobación del estado de Lista de permitidos IP
 description: Comprobación del estado de Lista de permitidos IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Las siguientes son las definiciones de estado que aparecerán en una Lista de pe
 
 * **Error**: Error en uno o varios procesos de aplicación o anulación de la aplicación en una actualización. Se enumerarán todas las opciones Aplicar y No aplicar junto con Completado o Fallido.
    * El estado será Error, aunque se produzca un error al aplicar o anular la aplicación en la actualización.
-   * El estado seguirá siendo Fallido hasta que se borren todos los errores.El usuario debe seleccionar el icono de reintento situado junto al estado para borrar el error.
+   * El estado seguirá siendo Fallido hasta que se borren todos los errores. El usuario debe seleccionar el icono de reintento junto al estado para borrar el error.
    * El usuario no podrá actualizar o eliminar la Lista de permitidos IP mientras el estado sea Fallado.
 
 * **Eliminando**: La solicitud de eliminación está en curso. Esto implica no aplicar todos los servicios. Cada Unapply aparecerá junto con Not Started/In Progress/Complete o Failed.
