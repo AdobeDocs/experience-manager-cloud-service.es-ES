@@ -4,9 +4,9 @@ user-guide-title: Implementar para AEM as a Cloud Service
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 translation-type: tm+mt
-source-git-commit: b927992107d7e7e4df5511a366c71449ff73ec93
+source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '579'
 ht-degree: 53%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 53%
          + [Editor de imágenes](developing/components/image-editor.md)
          + [Etiquetas de decoración](developing/components/decoration-tag.md)
          + [Uso de Ocultar condiciones](developing/components/hide-conditions.md)
+         + [Guía de referencia de componentes](developing/components/reference.md)
       + [AEM marco de etiquetado](/help/implementing/developing/introduction/tagging-framework.md)
       + [Creación de etiquetas en aplicaciones AEM](/help/implementing/developing/introduction/tagging-applications.md)
       + Búsqueda {#search}
