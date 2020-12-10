@@ -2,7 +2,7 @@
 title: Comprobación del estado del registro DNS
 description: Comprobación del estado del registro DNS
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 Para determinar si el nombre de dominio se resuelve correctamente en el AEM como sitio web de un Cloud Service, haga clic en el icono Estado del registro DNS en la tabla de los Entornos de la página Configuración de dominio.
 
->[!NOTE]
->El Administrador de nube activará automáticamente una búsqueda DNS cuando el nombre de dominio personalizado se verifique e implemente por primera vez correctamente. Para los intentos posteriores, debe seleccionar activamente el icono **resolver de nuevo** junto al estado.
+El Administrador de nube activará automáticamente una búsqueda DNS cuando el nombre de dominio personalizado se verifique e implemente por primera vez correctamente. Para los intentos posteriores, debe seleccionar activamente el icono **resolver de nuevo** junto al estado.
 
 Cloud Manager realiza una búsqueda DNS del nombre de dominio y muestra uno de los siguientes mensajes de estado:
 
