@@ -2,15 +2,15 @@
 title: 'Visualización de la actualización y sustitución de un certificado SSL - Administración de SSL '
 description: Visualización de la actualización y sustitución de un certificado SSL - Administración de certificados SSL
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
-# Visualización de la actualización y reemplazo de un certificado SSL {#view-update-replace-ssl-certificate}
+# Visualización y actualización y reemplazo de un certificado SSL {#view-update-replace-ssl-certificate}
 
 ## Visualización y actualización de un certificado SSL {#view-update}
 
