@@ -1,35 +1,36 @@
 ---
-title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.11.0
-description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.11.0
+title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.12.0
+description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.12.0
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 4%
+source-wordcount: '128'
+ht-degree: 6%
 
 ---
 
 
-# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.11.0 {#release-notes}
+# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.12.0 {#release-notes}
 
-Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.11.0.
+Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.12.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.11.0 es el 12 de noviembre de 2020.
+La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.12.0 es el 10 de diciembre de 2020.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novedades {#what-is-new}
 
-* Ahora los usuarios pueden acceder a una nueva opción de menú **Inicio de sesión local** desde las opciones del menú entorno de las páginas de resumen de Entornos y tarjetas de Entorno.
-Consulte [Administración de Entornos](/help/implementing/cloud-manager/manage-environments.md##login-locally) para obtener más detalles.
+* Administración automática de [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
-* La ficha **Learn** de Cloud Manager se ha actualizado con nuevas imágenes en la interfaz de usuario.
+* Administración de autoservicio de [listas de permisiones de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
-### Corrección de errores {#bug-fixes-cloud-manager}
+* La página de detalles **Entorno** actualizada ahora permite a los usuarios administrar nombres de dominio personalizados y listas de permisiones de IP en sus entornos.
 
-* La carga de dependencias realizada antes de la ejecución de la compilación requería la descarga de un complemento de Maven.
-* El vínculo del pie de página del Administrador de nubes para seleccionar un idioma ahora se desplazará a la ubicación correcta.
-* A veces, durante la digitalización del código, el proceso SonarQube no se inicio. Esto se detectará automáticamente y se intentará reiniciar.
-* Todas las tuberías de producción existentes se habilitarán automáticamente con el paso Auditoría de experiencias.
+
+### Corrección de errores {#bug-fixes}
+
+* Algunas ocurrencias de errores en la etapa de análisis de código sin proporcionar resultados resueltos.
+
+* La tarjeta de entorno no mostraba de forma consistente el botón **Añadir**.
