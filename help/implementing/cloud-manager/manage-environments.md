@@ -2,9 +2,9 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1264'
 ht-degree: 5%
 
 ---
@@ -82,7 +82,7 @@ La tarjeta **Entornos** de la página Información general lista hasta tres ento
 
 ## Actualizando Entorno {#updating-dev-environment}
 
-Las actualizaciones de entornos de fase y producción se administran automáticamente mediante Adobe.
+Las actualizaciones de los entornos de fase y producción se gestionan automáticamente mediante Adobe.
 
 Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible públicamente, el estado de la tarjeta de Entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
@@ -149,21 +149,28 @@ Además, puede iniciar sesión localmente desde la página de resumen **Entornos
 
 ## Administración de nombres de dominio personalizados {#manage-cdn}
 
-Acceda a la página de detalles del Entorno desde la página Resumen de Entornos.
+Vaya a la página de detalles **Entornos** desde la página Resumen de Entornos.
 
 Las siguientes acciones se pueden realizar en el servicio de publicación de su entorno como se describe a continuación:
 
-1. **Añadir un nombre** de dominio personalizado: Consulte  [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **Añadir un**
+nombre de dominio personalizadoConsulte  [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **Visualización y actualización del nombre** de dominio personalizado: Consulte  [Visualización y actualización de certificados SSL y nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **Visualización y actualización del nombre de dominio personalizado y**
+los certificados SSLconsulte
+   * [Visualización y actualización de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [Visualización y actualización de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **Eliminando nombre** de dominio personalizado: Consulte  [Eliminación de certificados SSL y nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **Eliminación del nombre de dominio personalizado y**
+los certificados SSLconsulte
+   * [Eliminación de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [Certificados SSL](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-## Administración de listas de permitidos de IP {#manage-ip-allow-lists}
+## Administración de Listas de permitidos IP {#manage-ip-allow-lists}
 
 Acceda a la página de detalles del Entorno desde la página Resumen de Entornos. Puede realizar las siguientes acciones en los servicios Publicar y/o Autor para su entorno aquí.
 
-### Aplicación de una lista de permisiones de IP {#apply-ip-allow-list}
+### Aplicación de Listas de permitidos IP {#apply-ip-allow-list}
 
 La aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los intervalos de IP incluidos en la definición de la lista de permitidos están asociados a un servicio de creación o publicación en un entorno. Para poder aplicar una Lista de permitidos IP, debe haber iniciado sesión un usuario con la función Propietario de la empresa o Administrador de implementación.
 
