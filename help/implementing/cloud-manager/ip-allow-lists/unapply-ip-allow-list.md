@@ -2,15 +2,15 @@
 title: 'Desaplicar Lista de permitidos IP '
 description: Desaplicar Lista de permitidos IP
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
 
 
-# Anulación de la aplicación de la Lista de permitidos IP {#apply-allow-list}
+# Desaplicación de una Lista de permitidos IP {#apply-allow-list}
 
 La anulación de la aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los rangos de IP incluidos en la definición de Allow-List se desasocian de un servicio de Autor/o Publicador en un entorno.
 
