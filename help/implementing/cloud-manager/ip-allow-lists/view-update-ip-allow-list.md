@@ -2,15 +2,15 @@
 title: 'Visualización y actualización: Listas de permitidos IP en el Administrador de podría'
 description: 'Visualización y actualización: Listas de permitidos IP en el Administrador de podría'
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 
-# Visualización y actualización de Listas de permitidos IP {#view-update}
+# Visualización y actualización de una Lista de permitidos IP {#view-update}
 
 Puede realizar la vista y actualización de Listas de permitidos IP en los siguientes escenarios:
 
