@@ -2,7 +2,7 @@
 title: Comprobación del estado de Lista de permitidos IP
 description: Comprobación del estado de Lista de permitidos IP
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ Las siguientes son las definiciones de estado que aparecerán en una Lista de pe
 
 * **Eliminando**: La solicitud de eliminación está en curso. Esto implica no aplicar todos los servicios. Cada Unapply aparecerá junto con Not Started/In Progress/Complete o Failed.
 Una vez finalizada la operación de eliminación, la Lista de permitidos IP:
-   * Ya no aparece en la tabla de Lista de permitidos IP * Ya no se aplica en ningún servicio del programa en Cloud Manager
+   * Ya no aparece en la tabla de Lista de permitidos IP.
+   * Ya no se aplica a ningún servicio del programa en Cloud Manager.
 
 * **Error** al eliminar: Error en uno o varios procesos de anulación de la aplicación en una operación de eliminación. Cada Unapply aparecerá junto con Complete o Failed.
 
