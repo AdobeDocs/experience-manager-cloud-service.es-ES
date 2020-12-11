@@ -2,9 +2,9 @@
 title: 'Introducción: Listas de permitidos IP en el Administrador de posibles clientes'
 description: 'Introducción: Listas de permitidos IP en el Administrador de posibles clientes'
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Las Listas de permitidos IP pueden agregarse una vez y aplicarse/no varias veces
 
 Mediante la página de Lista de permitidos IP de la interfaz de usuario del Administrador de la nube o la página de detalles del Entorno, un usuario con permisos puede realizar varias tareas para administrar las Listas de permitidos IP de sus entornos, entre las que se incluyen:
 
-* Añadir Lista de permitidos IP
+* [Añadir una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > Puede Añadir una vez y volver a utilizar o aplicar la regla varias veces en los servicios de entorno del programa.
-* Visualización o actualización de una Lista de permitidos IP
-* Aplicación o cancelación de la aplicación de una Lista de permitidos IP
-* Eliminación de una Lista de permitidos IP
+* [Visualización o actualización de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [Aplicación o cancelación de la aplicación de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [Eliminación de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
