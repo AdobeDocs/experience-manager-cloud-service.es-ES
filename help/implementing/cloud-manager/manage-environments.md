@@ -2,9 +2,9 @@
 title: 'Administrar Entornos: Cloud Service'
 description: 'Administrar Entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 4%
 
 ---
@@ -168,7 +168,7 @@ Acceda a la página de detalles del Entorno desde la página Resumen de Entornos
 La aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los intervalos de IP incluidos en la definición de la lista de permitidos están asociados a un servicio de creación o publicación en un entorno. Para poder aplicar una Lista de permitidos IP, debe haber iniciado sesión un usuario con la función Propietario de la empresa o Administrador de implementación.
 
 >[!NOTE]
->La Lista de permitidos IP debe existir en Cloud Manager para poder aplicarla a un servicio de entorno. Para obtener más información sobre las listas de permisiones de IP en Cloud Manager, vaya a [Introducción a las Listas de permitidos de IP en Podría Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>La Lista de permitidos IP debe existir en Cloud Manager para poder aplicarla a un servicio de entorno. Para obtener más información sobre las Listas de permitidos IP en Cloud Manager, vaya a [Introducción a las Listas de permitidos IP en Podría Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Siga los pasos a continuación para aplicar una Lista de permitidos IP:
 
