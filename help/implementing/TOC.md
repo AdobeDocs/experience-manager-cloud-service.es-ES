@@ -4,9 +4,9 @@ user-guide-title: Implementar para AEM as a Cloud Service
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 translation-type: tm+mt
-source-git-commit: da1ca193b38657f78ff3e5e0cfffef0ab9e8a9a0
+source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '694'
 ht-degree: 45%
 
 ---
@@ -44,8 +44,8 @@ ht-degree: 45%
       + [Configuración de la configuración DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [Comprobación del estado del registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [Visualización, actualización y reemplazo de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [Actualización del certificado SSL del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [Eliminación del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [Actualización del certificado SSL de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [Eliminación de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + Administración de Listas de permitidos IP {#ip-allow-lists}
       + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [Añadir una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
