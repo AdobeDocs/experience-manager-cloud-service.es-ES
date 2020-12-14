@@ -2,9 +2,9 @@
 title: SPA Introducción y Tutorial
 description: En este artículo se introducen los conceptos de SPA y se pasa por una aplicación básica de SPA para la creación, mostrando cómo se relaciona con el AEM SPA Editor subyacente.
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ La siguiente sección, [Carga de una aplicación SPA](#loading-a-spa-application
 
 ### Cargando una aplicación SPA {#loading-a-spa-application}
 
-1. Si aún no se ha cargado, cargue la aplicación de Historial We.Retail en el servidor de publicación o utilizando la opción **Vista tal y como se publica** del menú **Información de página** del editor de páginas.
+1. Si aún no se ha cargado, cargue la aplicación WKND SPA Project en el servidor de publicación o con la opción **Vista tal como se publica** del menú **Información de página** del editor de páginas.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -254,7 +254,7 @@ La siguiente sección, [Carga de una aplicación SPA](#loading-a-spa-application
 
 1. El modelo también puede agrupar las páginas para que se carguen sincrónicamente, reduciendo el número de recargas de página necesarias.
 
-   En el ejemplo de We.Retail Historial, las páginas `home`, `page-1`, `page-2` y `page-3` se cargan sincrónicamente, ya que los visitantes suelen visitar todas esas páginas.
+   En el ejemplo de la aplicación WKND SPA Project, las páginas `home`, `page-1`, `page-2` y `page-3` se cargan sincrónicamente, ya que los visitantes suelen visitar todas esas páginas.
 
    Este comportamiento no es obligatorio y es totalmente definible.
 
