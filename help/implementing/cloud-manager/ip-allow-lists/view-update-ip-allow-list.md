@@ -1,8 +1,8 @@
 ---
-title: 'Visualización y actualización: Listas de permitidos IP en el Administrador de podría'
-description: 'Visualización y actualización: Listas de permitidos IP en el Administrador de podría'
+title: 'Visualización y actualización: Listas de permitidos IP en Cloud Manager'
+description: 'Visualización y actualización: Listas de permitidos IP en Cloud Manager'
 translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+source-git-commit: 7fdfa626147a72f3d7fb98b89a19a871fc7a13ca
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
