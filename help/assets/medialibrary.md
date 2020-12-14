@@ -3,9 +3,9 @@ title: AEM Assets y Biblioteca de medios de AEM
 description: Preguntas más frecuentes sobre AEM Assets y. Biblioteca de medios AEM, incluidas las diferencias entre los dos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '694'
 ht-degree: 3%
 
 ---
@@ -44,7 +44,7 @@ Si planea editar metadatos que no sean título, descripción y etiquetas, es nec
 
 ## Quiero usar el predicado de categoría en mi sitio web. ¿Necesito AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Sí, el predicado de categoría, junto con todos los demás componentes utilizados en Geometrixx Press Center son parte de AEM Assets y requieren una licencia de AEM Assets.
+Sí, el predicado de categoría, junto con todos los demás componentes son parte de AEM Assets y requieren una licencia de AEM Assets.
 
 ## Deseo cambiar automáticamente el tamaño de las imágenes al importarlas. ¿Necesito AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
