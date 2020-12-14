@@ -2,7 +2,7 @@
 title: Creación de una carpeta de recursos Guía de Inicio rápido sin encabezado
 description: Los modelos de fragmento de contenido definen la estructura de los fragmentos de contenido. Los fragmentos de contenido se almacenan en carpetas de recursos.
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -53,5 +53,6 @@ Si utiliza una estructura de sitio localizada, puede [crear una raíz de idioma]
 
 Ahora que ha creado una carpeta para sus fragmentos de contenido, puede pasar a la cuarta parte de la guía de introducción y [crear fragmentos de contenido.](create-content-fragment.md)
 
->!![TIP]
-Para obtener información detallada sobre la administración de fragmentos de contenido, consulte la [documentación de fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Para obtener información detallada sobre la administración de fragmentos de contenido, consulte la [documentación de fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
