@@ -2,7 +2,7 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 8%
@@ -555,7 +555,7 @@ La evaluación funciona de la siguiente manera:
 
 * Si `T` tiene una propiedad `allowedPaths` no vacía, pero ninguno de los valores coincide con la ruta de `P`, se rechaza `T`.
 
-* Si las dos propiedades anteriores están vacías o no existen, `T` se rechaza a menos que pertenezca a la misma aplicación que `P`. `T` pertenece a la misma aplicación que  `P` si el nombre del segundo nivel de la ruta de acceso  `T` es el mismo que el nombre del segundo nivel de la ruta de acceso de  `P`. Por ejemplo, la plantilla `/apps/geometrixx/templates/foo` pertenece a la misma aplicación que la página `/content/geometrixx`.
+* Si las dos propiedades anteriores están vacías o no existen, `T` se rechaza a menos que pertenezca a la misma aplicación que `P`. `T` pertenece a la misma aplicación que  `P` si el nombre del segundo nivel de la ruta de acceso  `T` es el mismo que el nombre del segundo nivel de la ruta de acceso de  `P`. Por ejemplo, la plantilla `/apps/wknd/templates/foo` pertenece a la misma aplicación que la página `/content/wknd`.
 
 * Si `T` tiene una propiedad `allowedParents` no vacía, pero ninguno de los valores coincide con la ruta de `P`, se rechaza `T`.
 
