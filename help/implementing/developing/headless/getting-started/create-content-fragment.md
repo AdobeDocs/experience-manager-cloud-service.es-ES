@@ -2,7 +2,7 @@
 title: Creación de fragmentos de contenido Guía de Inicio rápido sin encabezado
 description: Los fragmentos de contenido le permiten diseñar, crear, depurar y utilizar contenido independiente de la página que se puede distribuir sin problemas mediante AEM.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 1%
@@ -53,5 +53,6 @@ Los fragmentos de contenido también pueden hacer referencia a otros recursos de
 
 Ahora que ha creado un fragmento de contenido, puede pasar a la parte final de la guía de introducción y [crear solicitudes de API para acceder y entregar fragmentos de contenido.](create-api-request.md)
 
->!![TIP]
-Para obtener información detallada sobre la administración de fragmentos de contenido, consulte la [documentación de fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
+>[!TIP]
+>
+>Para obtener información detallada sobre la administración de fragmentos de contenido, consulte la [documentación de fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
