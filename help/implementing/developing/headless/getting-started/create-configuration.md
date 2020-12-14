@@ -2,7 +2,7 @@
 title: Creación de una guía de Inicio rápido sin encabezado de configuración
 description: Como primer paso para empezar con AEM sin cabeza como Cloud Service, debe crear una configuración.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
@@ -42,12 +42,14 @@ Un administrador solo tendría que crear una configuración una vez, o muy raram
 
 Si es necesario, puede crear varias configuraciones. Las configuraciones también se pueden anidar.
 
->!![NOTE]
-Las opciones de configuración, además de **Modelos de fragmento de contenido** y **Consultas persistentes de GraphQL**, pueden ser necesarias según los requisitos de implementación.
+>[!NOTE]
+>
+>Las opciones de configuración, además de **Modelos de fragmento de contenido** y **Consultas persistentes de GraphQL**, pueden ser necesarias según los requisitos de implementación.
 
 ## Próximos pasos {#next-steps}
 
 Con esta configuración, ahora puede pasar a la segunda parte de la guía de introducción y [crear modelos de fragmentos de contenido.](create-content-model.md)
 
->!![TIP]
-Para obtener más información sobre el Explorador de configuración, [consulte la documentación del Explorador de configuración.](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>Para obtener más información sobre el Explorador de configuración, [consulte la documentación del Explorador de configuración.](/help/implementing/developing/introduction/configurations.md)
