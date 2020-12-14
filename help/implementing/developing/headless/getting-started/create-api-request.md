@@ -2,7 +2,7 @@
 title: Acceso y entrega de fragmentos de contenido Guía de Inicio rápido sin encabezado
 description: La API de REST de Recursos permite administrar fragmentos de contenido y la API de GraphQL permite un envío sencillo y directo del contenido del fragmento de contenido.
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Los arquitectos de la información necesitarán diseñar consultas para los extr
 
 1. Suponiendo que el modelo que hemos creado se denominó `person` con los campos `firstName`, `lastName` y `position`, podemos crear una consulta simple para recuperar el contenido de nuestro fragmento de contenido.
 
-   ```
+   ```text
    query {
      persons {
        items {
