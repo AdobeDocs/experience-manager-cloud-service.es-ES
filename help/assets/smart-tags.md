@@ -3,9 +3,9 @@ title: Etiquetado automático de imágenes con etiquetas generadas por AI
 description: Etiquete imágenes utilizando servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante [!DNL Adobe Sensei] servicios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
+source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2431'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ En segundo plano, las Etiquetas inteligentes utilizan un marco de inteligencia a
 
 Para utilizar el etiquetado inteligente, complete las siguientes tareas:
 
-* [Integrar Experience Manager con Adobe Developer Console](#integrate-aem-with-aio).
+* [ [!DNL Adobe Experience Manager] Integración con Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprender los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
 * [Entrena al modelo](#train-model).
 * [Etiquete sus recursos](#tag-assets) digitales.
@@ -105,6 +105,9 @@ Para crear y capacitar un modelo para las etiquetas específicas de su empresa, 
 1. Haga clic en **[!UICONTROL Crear]**. Proporcione un **[!UICONTROL Título]**, **[!UICONTROL Descripción]**.
 1. Explore y seleccione las etiquetas de las etiquetas existentes en `cq:tags` para las que desea entrenar el modelo. Haga clic en **[!UICONTROL Siguiente]**. 
 1. En el cuadro de diálogo **[!UICONTROL Seleccionar recursos]**, haga clic en **[!UICONTROL Añadir recursos]** con cada etiqueta. Busque en el repositorio DAM o navegue hasta el repositorio para seleccionar al menos 10 y 50 imágenes. Seleccione los recursos y no la carpeta. Una vez que haya seleccionado las imágenes, haga clic en **[!UICONTROL Seleccionar]**.
+
+   ![Estado de la formación de vista](assets/smart-tags-training-status.png)
+
 1. Para previsualización de las miniaturas de las imágenes seleccionadas, haga clic en el acordeón delante de una etiqueta. Puede modificar su selección haciendo clic en **[!UICONTROL Añadir recursos]**. Una vez que esté satisfecho con la selección, haga clic en **[!UICONTROL Enviar]**. La interfaz de usuario muestra una notificación en la parte inferior de la página que indica que se ha iniciado la formación.
 1. Compruebe el estado de la formación en la columna **[!UICONTROL Estado]** para cada modelo de etiquetas. Los estados posibles son [!UICONTROL Pendiente], [!UICONTROL Entrenado] y [!UICONTROL Fallido].
 
@@ -116,13 +119,13 @@ Para crear y capacitar un modelo para las etiquetas específicas de su empresa, 
 
 Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobre sus etiquetas en el conjunto de recursos de formación, consulte el informe del flujo de trabajo de formación desde la consola Informes.
 
-1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Recursos > Informes]**.
+1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas] > **[!UICONTROL Recursos] > **[!UICONTROL Informes]**.
 1. En la página **[!UICONTROL Informes de recursos]**, haga clic en **[!UICONTROL Crear]**.
 1. Seleccione el informe **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, haga clic en **[!UICONTROL Crear]** desde la barra de herramientas.
 1. En la página **[!UICONTROL Informes de recursos]**, seleccione el informe que ha generado. Para vista del informe, haga clic en **[!UICONTROL Vista]** en la barra de herramientas.
 1. Revise los detalles del informe. El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde de la columna **[!UICONTROL Estado de formación]** indica que el servicio Etiquetas inteligentes está entrenado para la etiqueta. El color amarillo indica que el servicio no está completamente entrenado para una etiqueta en particular. En este caso, agregue más imágenes con la etiqueta en concreto y ejecute el flujo de trabajo de formación para que el servicio se imparta completamente en la etiqueta. Si no ve las etiquetas en este informe, vuelva a ejecutar el flujo de trabajo de formación para estas etiquetas.Etiquetas
-1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como una hoja de cálculo de Microsoft Excel.
+1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como una hoja de cálculo [!DNL Microsoft Excel].
 
 ## Etiquetar recursos {#tag-assets}
 
