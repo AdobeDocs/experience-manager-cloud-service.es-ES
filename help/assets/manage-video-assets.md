@@ -3,10 +3,10 @@ title: Administrar recursos de vídeo
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 7%
+source-wordcount: '616'
+ht-degree: 6%
 
 ---
 
@@ -28,17 +28,17 @@ Obtenga información sobre cómo administrar y editar los recursos de vídeo en 
 
 ## Publicación de recursos de vídeo {#publish-video-assets}
 
-Después de la publicación, puede incluir los recursos de vídeo en una página web como URL o incrustar directamente los recursos. Para obtener más información, consulte [publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Después de la publicación, puede incluir los recursos de vídeo en una página web como URL o incrustar directamente los recursos. Para obtener más información, consulte [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Transcodificar mediante el Perfil de procesamiento {#transcode-video}
 
 [!DNL Experience Manager] como  [!DNL Cloud Service] le permite realizar la transcodificación básica de archivos de vídeo MP4 mediante Perfiles de procesamiento. La funcionalidad le permite no solo cargar, sino también previsualización y escalado de un archivo de vídeo MP4.
 
-![Crear Perfil de procesamiento para la transcodificación de vídeo en Experience Manager](assets/video-processing-profile-for-mp4.png)
+![Crear Perfil de procesamiento para la transcodificación de vídeo en  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *Figura: Un Perfil de procesamiento para la transcodificación de vídeo en  [!DNL Experience Manager].*
 
-Si solo se proporciona anchura o altura y se deja el otro campo en blanco, las representaciones mantienen la proporción de aspecto. Actualmente, solo está disponible el códec h264 para la transcodificación.
+Si solo se proporciona anchura o altura y se deja el otro campo en blanco, las representaciones mantienen la proporción de aspecto. El códec de vídeo H.264 está disponible para la transcodificación.
 
 Para procesar recursos con un perfil de procesamiento, agregue un perfil a una carpeta. Consulte [uso de perfiles de procesamiento para procesar recursos](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
@@ -52,8 +52,18 @@ Para procesar recursos con un perfil de procesamiento, agregue un perfil a una c
 
 ## Prácticas recomendadas y limitaciones {#tips-limitations}
 
-* Sin la licencia de Dynamic Media, solo puede procesar archivos MP4 mediante perfiles de procesamiento.
-* Para la transcodificación básica mediante
+* Sin la licencia [!DNL Dynamic Media], solo puede procesar archivos MP4 mediante perfiles de procesamiento.
+* Al transcodificar archivos MP4 mediante Perfiles de procesamiento, se aplican las siguientes directrices y limitaciones:
+
+   * Los archivos Apple ProRes solo pueden transcodificarse a una resolución máxima de 1080p.
+   * Si el archivo de origen tiene una velocidad de bits superior a 200 Mbps, sólo puede transcodificar a una resolución máxima de 1080p.
+   * Si la velocidad de fotogramas de origen es >= 60 fps, el tamaño máximo del archivo de origen que puede utilizar es
+
+      * 400 MB para transcodificación de 4 k.
+      * 800 MB para la transcodificación de 1080p.
+      * 8 GB para transcodificación de 720p.
+   * El tamaño máximo de archivo que se puede transcodificar a 4 k de resolución es de 2,55 GB de archivo MP4 con resolución de 4 k, velocidad de bits de 12 Mbps y 23 fps.
+
 
 >[!MORELIKETHIS]
 >
