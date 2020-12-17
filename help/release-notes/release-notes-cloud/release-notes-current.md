@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 984914c6147d0ee96575c93496cbdfc4bb9bc094
+source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 5%
 
 ---
@@ -18,6 +18,10 @@ La siguiente sección describe las Notas de revisión generales para [!DNL Exper
 
 La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2020.12.0 es el 17 de diciembre de 2020.
 La siguiente versión (2021.1.0) será el 28 de enero de 2020.
+
+## [!DNL Adobe Experience Manager Sites] como Cloud Service  {#sites}
+
+* **[Content Fragment HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**: Añada la capacidad de agregar/actualizar y eliminar variaciones de fragmento de contenido mediante la API HTTP.
 
 ## [!DNL Adobe Experience Manager Assets] como un  [!DNL Cloud Service] {#assets}
 
