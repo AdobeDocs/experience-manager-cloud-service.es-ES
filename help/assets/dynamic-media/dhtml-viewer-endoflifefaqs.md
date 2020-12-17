@@ -2,7 +2,7 @@
 title: Final de vida útil del visor DHTML
 description: A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará de funcionar oficialmente.
 translation-type: tm+mt
-source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -16,7 +16,7 @@ A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará de funcio
 
 Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) para obtener información sobre los últimos visores admitidos.
 
-<!-- **What is the change?**
+<!-- OBSOLETE CONTENT **What is the change?**
 
 Effective January 31, 2014, Scene7 will officially end-of-life support for the DHTML viewer platform.
 
