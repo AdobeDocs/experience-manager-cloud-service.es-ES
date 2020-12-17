@@ -3,7 +3,7 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
 workflow-type: tm+mt
 source-wordcount: '2240'
 ht-degree: 41%
@@ -157,6 +157,16 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 >Una vez utilizados en una página web, los recursos remotos recuperados pueden ser buscados y utilizados por cualquier persona que tenga permiso para acceder a la carpeta local. Los recursos recuperados se almacenan en la carpeta local (`connectedassets` en la ruta anterior). Los recursos también se pueden buscar y ver en el repositorio local mediante [!UICONTROL Buscador de contenido].
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+### Check use of an asset across other pages {#asset-usage-references}
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+
+Users can view incoming references of the assets and move or delete the asset.
+
+-->
 
 ## Restricciones          y prácticas recomendadas {#tip-and-limitations}
 
