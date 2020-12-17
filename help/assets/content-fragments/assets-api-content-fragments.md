@@ -2,9 +2,9 @@
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager como Cloud Service en la API HTTP de Assets
 description: Obtenga información sobre Adobe Experience Manager como compatibilidad con fragmentos de contenido Cloud Service en la API HTTP de Assets.
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -66,6 +66,7 @@ Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, s
 
 >[!NOTE]
 >Acceso sobre:
+>
 >* `/api/assets` **no** necesita el uso del  `.model` selector.
 >* `/content/path/to/page` **** requiere el uso del  `.model` selector.
 
@@ -306,32 +307,27 @@ El uso se realiza mediante:
 
 Existen algunas limitaciones:
 
-* **Las variaciones no se pueden escribir ni actualizar.** Si estas variaciones se agregan a una carga útil (por ejemplo, para actualizaciones), se ignorarán. Sin embargo, la variación se enviará mediante envío ( `GET`).
-
 * **Actualmente no se admiten** los modelos de fragmentos de contenido: no se pueden leer ni crear. Para poder crear un fragmento de contenido nuevo o actualizar uno existente, los desarrolladores deben conocer la ruta correcta al modelo de fragmento de contenido. Actualmente, el único método para obtener una descripción general de estos es a través de la interfaz de usuario de administración.
 * **Las referencias se omiten**. Actualmente no hay comprobaciones para comprobar si se hace referencia a un fragmento de contenido existente. Por lo tanto, por ejemplo, si elimina un fragmento de contenido, se podrían producir problemas en una página que contenga una referencia al fragmento de contenido eliminado.
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## Códigos de estado y mensajes de error {#status-codes-and-error-messages}
 
 Los siguientes códigos de estado se pueden ver en las circunstancias pertinentes:
 
-* **200** (Aceptar)
-
-   Se devuelve cuando:
+* **200** (OK) Devuelto cuando:
 
    * solicitud de un fragmento de contenido mediante `GET`
-
    * actualización satisfactoria de un fragmento de contenido mediante `PUT`
 
-* **201** (Creado)
-
-   Se devuelve cuando:
+* **201** (Creado) Devuelto cuando:
 
    * crear correctamente un fragmento de contenido mediante `POST`
 
-* **404** (No encontrado)
-
-   Se devuelve cuando:
+* **404** (No encontrado) Se devuelve cuando:
 
    * el fragmento de contenido solicitado no existe
 
@@ -341,8 +337,8 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
    >
    >Se devuelve este error:
    >
-   >    * cuando se produce un error que no se puede identificar con un código específico
-   >    * cuando la carga útil dada no era válida
+   >* cuando se produce un error que no se puede identificar con un código específico
+   >* cuando la carga útil dada no era válida
 
 
    Las siguientes listas son escenarios comunes cuando se devuelve este estado de error, junto con el mensaje de error (monospace) generado:
@@ -384,6 +380,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 ## Referencia de API {#api-reference}
 
 Consulte aquí las referencias de API detalladas:
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
