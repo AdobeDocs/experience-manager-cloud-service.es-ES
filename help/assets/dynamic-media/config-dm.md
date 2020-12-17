@@ -2,19 +2,19 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3853'
 ht-degree: 8%
 
 ---
 
 
-# Acerca de la configuración de Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode}
+# Acerca de la configuración de Dynamic Media Cloud Service {#configuring-dynamic-media}
 
 Si utiliza la configuración de Adobe Experience Manager para diferentes entornos, como uno para desarrollo, uno para ensayo y otro para producción en directo, debe configurar Cloud Services de Dynamic Media para cada uno de esos entornos.
 
-## Diagrama de arquitectura de Dynamic Media {#architecture-diagram-of-dynamic-media-scene-mode}
+## Diagrama de arquitectura de Dynamic Media {#architecture-diagram-of-dynamic-media}
 
 El siguiente diagrama de arquitectura describe cómo funciona Dynamic Media.
 
@@ -184,9 +184,9 @@ Si desea personalizar aún más la configuración y la configuración de Dynamic
 
 ### (Opcional) Configuración y configuración de la configuración de Dynamic Media {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
-Utilice la interfaz de usuario de Dynamic Media Classic (Scene7) para realizar cambios en la configuración de Dynamic Media.
+Utilice la interfaz de usuario de Dynamic Media Classic para realizar cambios en la configuración de Dynamic Media.
 
-Algunas de las tareas anteriores requieren que inicie sesión en Dynamic Media Classic (Scene7) aquí: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Algunas de las tareas anteriores requieren que inicie sesión en Dynamic Media Classic aquí: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 Las tareas de configuración y configuración incluyen lo siguiente:
 
