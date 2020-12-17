@@ -3,9 +3,9 @@ title: Procesar recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager como [!DNL Cloud Service] proporciona un método nativo
 * Los servicios nativos de procesamiento de archivos Adobe se utilizan cuando corresponde, proporcionando una salida de alta fidelidad y [administración eficiente de los formatos propietarios de Adobe](file-format-support.md).
 * Capacidad de configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
 
-Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la transcodificación de ImageMagick y FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan una funcionalidad lista para usar para tipos de archivos comunes.
+Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la transcodificación ImageMagick y FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan funcionalidad básica para tipos de archivos comunes de forma predeterminada.
 
 ## Arquitectura de alto nivel {#asset-microservices-architecture}
 
