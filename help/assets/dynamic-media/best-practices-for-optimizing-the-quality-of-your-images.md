@@ -2,9 +2,9 @@
 title: Práctica recomendada para optimizar la calidad de las imágenes
 description: Conozca las prácticas recomendadas que puede utilizar en Dynamic Media para optimizar la calidad de sus recursos de imagen.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1475'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ Se recomienda utilizar `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>
 
 El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a los siguientes recursos útiles:
 
-El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) también se aplica a AEM.
+El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a AEM.
 
 En Adobe TV, vea [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,7 +65,7 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
 
       AEM tema de ayuda sobre cómo enfocar una imagen.
 
-      Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Scene7 Publishing System y en el servidor de imágenes.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+      Documento técnico de prácticas recomendadas [Calidad de imagen y prácticas recomendadas de enfoque de Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) de Adobe.
 
    * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
 
@@ -117,7 +117,7 @@ Si los resultados de enfoque siguen siendo insatisfactorios, aumente el radio en
 
 A medida que experimenta, también puede encontrar las siguientes sugerencias generales útiles para optimizar el flujo de trabajo:
 
-* Pruebe distintos parámetros en tiempo real, ya sea directamente en una URL o mediante la funcionalidad de ajuste de imagen de Scene7 Publishing System, que proporciona previsualizaciones en tiempo real para las operaciones de ajuste.
+* Pruebe distintos parámetros en tiempo real, directamente en una URL.
 * La práctica recomendada es agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
 * AEM también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que esta opción puede ser una opción para optimizar y perfeccionar aún más los resultados de procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
 
