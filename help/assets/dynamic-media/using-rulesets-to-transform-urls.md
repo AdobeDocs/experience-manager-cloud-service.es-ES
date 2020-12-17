@@ -2,9 +2,9 @@
 title: Uso de conjuntos de reglas para transformar direcciones URL
 description: Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 5%
 
 ---
@@ -17,11 +17,11 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 * Añadiendo un sufijo de tipo MIME. Muchos servicios y sitios Web requieren sufijos de imagen, como agregar `.jpg` a una dirección URL.
 * Creación de una ruta de carpeta a la dirección URL para fines de optimización de motores de búsqueda (SEO).
 
-   Consulte [Compatibilidad de Adobe Scene7 Publishing System con SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Consulte [Compatibilidad de Dynamic Media Classic con SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Añadir metadatos a la dirección URL para fines de optimización de motores de búsqueda (SEO).
 
-   Consulte [Compatibilidad de Adobe Scene7 Publishing System con SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+   Consulte [Compatibilidad de Dynamic Media Classic con SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Configuración de la disposición del contenido para activar una descarga.
 * Simplifique las direcciones URL de plantilla del servicio de imágenes para su personalización. Por ejemplo: convierta `rgb{XX,YY,ZZ}` en el `\redXX\greenYY\blueZZ` listo para RTF
@@ -30,7 +30,7 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 
    Consulte [Eliminación de caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de recursos pueden cargar archivos XML a Dynamic Media. Puede designar uno de estos archivos como archivo de conjunto de reglas de preprocesamiento para proporcionar recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica empresarial de los sistemas integrados con Dynamic Media. Especifique un archivo XML que sirva como ruta de archivo de definiciones de conjunto de reglas.
+En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de los recursos pueden cargar archivos XML a Dynamic Media. Puede designar uno de estos archivos como archivo de conjunto de reglas de preprocesamiento para servir recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica comercial de los sistemas que se integran con Dynamic Media. Especifique un archivo XML que sirva como ruta de archivo de definiciones de conjunto de reglas.
 
 >[!CAUTION]
 >
