@@ -2,9 +2,9 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores sobre los detalles de los componentes y su estructura
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3464'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,6 @@ Esta lógica (opcional) se puede implementar de diferentes maneras y se invoca d
 * El uso de Java - [La Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) de Java HTL permite que un archivo HTL tenga acceso a los métodos de ayuda en una clase Java personalizada. Esto le permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
 * El uso de JavaScript - [La Use-API de JavaScript de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que un archivo HTL tenga acceso al código de ayuda escrito en JavaScript. Esto le permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
 * Uso de bibliotecas del lado del cliente: los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código JavaScript y CSS complejo. Consulte el documento [Uso de bibliotecas del lado del cliente en AEM como Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
-
-### Desarrollo de sus propios componentes {#developing-your-own-components}
-
-¿Aquí tiene contenido para desarrolladores?
 
 ## Estructura de componentes {#structure}
 
@@ -409,6 +405,14 @@ Con la siguiente configuración, la página se actualiza después de eliminar, e
 ### Validación de campo {#field-validation}
 
 La validación de campos en la interfaz de usuario de Granite y los widgets de la interfaz de usuario de Granite se realiza mediante la API `foundation-validation`. Consulte la [`foundation-valdiation` documentación de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) para obtener más información.
+
+### Detección de la disponibilidad del cuadro de diálogo {#dialog-ready}
+
+Si tiene un JavaScript personalizado que sólo debe ejecutarse cuando el cuadro de diálogo esté disponible y listo, debe escuchar el evento `dialog-ready`.
+
+Este evento se activa cada vez que se carga (o recarga) el cuadro de diálogo y está listo para usarse, lo que significa que siempre que haya un cambio (crear/actualizar) en el DOM del cuadro de diálogo.
+
+`dialog-ready` puede utilizarse para enlazar el código personalizado de JavaScript que realiza personalizaciones en los campos dentro de un cuadro de diálogo o tareas similares.
 
 ## Comportamiento de previsualización {#preview-behavior}
 
