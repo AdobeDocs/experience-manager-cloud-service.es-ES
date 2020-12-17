@@ -2,10 +2,10 @@
 title: 'Fragmentos de contenido: navegador de configuración'
 description: Obtenga información sobre cómo habilitar ciertas funciones de fragmento de contenido en el navegador de configuración.
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 20%
+source-wordcount: '263'
+ht-degree: 19%
 
 ---
 
@@ -42,19 +42,25 @@ Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-conte
 >
 >Para obtener más información, consulte también [Navegador de configuración:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
+>[!CAUTION]
+>
+>Las subconfiguraciones (una configuración anidada en una configuración) no son compatibles para su uso con fragmentos de contenido.
+
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
-2. Seleccione la ubicación adecuada para el sitio web.
-3. Utilice **Crear** para abrir el cuadro de diálogo, donde:
+
+1. Utilice **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
-   2. Para habilitar su uso, seleccione
+   1. Para habilitar su uso, seleccione
       * **Modelos de fragmento de contenido**
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuración](assets/cfm-conf-01.png)
 
 
-4. Seleccione **Crear** para guardar la definición.
+1. Seleccione **Crear** para guardar la definición.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Aplicar la configuración a la carpeta de recursos {#apply-the-configuration-to-your-assets-folder}
 
