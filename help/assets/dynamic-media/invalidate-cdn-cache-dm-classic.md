@@ -1,10 +1,10 @@
 ---
 title: Invalidación de la caché de CDN mediante Dynamic Media Classic
-description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que se entregan mediante Dynamic Media, en lugar de esperar a que caduque la caché.
+description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
 translation-type: tm+mt
-source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
+source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 26%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 26%
 
 # Invalidación de la caché de CDN mediante Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-La CDN almacena en caché los recursos de Dynamic Media para un envío rápido. Sin embargo, cuando realice actualizaciones en un recurso, es posible que desee que esos cambios surtan efecto inmediatamente. La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que se entregan mediante Dynamic Media, en lugar de esperar a que caduque la caché.
+Los recursos de Dynamic Media son almacenados en la caché por CDN para un envío rápido. Sin embargo, cuando realice actualizaciones en un recurso, es posible que desee que esos cambios surtan efecto inmediatamente. La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
 
 >[!IMPORTANT]
 >
 >Estos pasos solo se aplican a Dynamic Media en AEM 6.5, Service Pack 5 o anterior. <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-Consulte también [Descripción general de caché en Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+Consulte también [Información general de caché en Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
 **Para invalidar la caché de CDN mediante Dynamic Media Classic:**
 
@@ -30,7 +30,7 @@ Consulte también [Descripción general de caché en Dynamic Media Classic (Scen
 
       Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-   * Abra la aplicación de Dynamic Media Classic e inicie sesión en su cuenta.
+   * Abra la aplicación Dynamic Media Classic e inicie sesión en su cuenta.
 
 1. Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**.
 1. En la página Configuración general de la aplicación, bajo el encabezado del grupo Servidores, busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.
