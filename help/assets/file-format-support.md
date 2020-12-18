@@ -3,9 +3,9 @@ title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '807'
 ht-degree: 10%
 
 ---
@@ -96,7 +96,7 @@ Se admite la siguiente lista de formatos 3D.
 
 Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
-| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Previsualización de miniaturas | previsualización 3D | Envío de Dynamic Media |
+| Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Previsualización de miniaturas | previsualización 3D | Dynamic Media envío |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | xib | xib | xib | - | xib | xib | - | - |
 | gLB | xib | xib | xib | xib | xib | - | xib | xib |
@@ -222,6 +222,10 @@ Los formatos de documento admitidos para las funciones de administración de rec
 ## Formatos de audio {#audio-formats}
 
 [!DNL Assets] como  [!DNL Cloud Service] proporciona compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+
+## Sugerencias y limitaciones {#limitations-and-tips}
+
+* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 10 GB. Al cargar recursos muy grandes, a veces falla la operación de extracción de metadatos.
 
 >[!MORELIKETHIS]
 >
