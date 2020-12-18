@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2532'
 ht-degree: 1%
 
 ---
@@ -221,6 +221,7 @@ Para obtener más información sobre qué paso de flujo de trabajo estándar se 
 
 * Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine el paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio en almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede quitar las representaciones manualmente de la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y volver a cargarlos.
 * Actualmente, la compatibilidad está limitada a la generación de representaciones. No se admite la generación de recursos nuevos.
+* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 10 GB. Al cargar recursos muy grandes, a veces falla la operación de extracción de metadatos.
 
 >[!MORELIKETHIS]
 >
