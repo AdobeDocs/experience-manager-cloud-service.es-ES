@@ -2,9 +2,9 @@
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager como Cloud Service en la API HTTP de Assets
 description: Obtenga información sobre Adobe Experience Manager como compatibilidad con fragmentos de contenido Cloud Service en la API HTTP de Assets.
 translation-type: tm+mt
-source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
+source-git-commit: c86dac828eabe28ee62748bff64fc091491303b0
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1877'
 ht-degree: 2%
 
 ---
@@ -381,9 +381,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias pertinente
 
 Consulte aquí las referencias de API detalladas:
 
-<!--
-* [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
--->
+* [API de Adobe Experience Manager Assets: fragmentos de contenido](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
 
