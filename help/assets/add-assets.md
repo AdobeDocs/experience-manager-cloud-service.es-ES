@@ -2,9 +2,9 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales a [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
+source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1903'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ Para adaptarse a las convenciones de nombres de archivo específicas de su organ
 
 ## Carga masiva de recursos {#bulk-upload}
 
-El inversor de recursos masivo puede gestionar miles de recursos de forma eficaz. Sin embargo, una ingestión a gran escala no es sólo una descarga de archivos amplia y grande o una migración ciega. Para que sea un proyecto significativo que sirva a su propósito comercial, planificar y depurar los activos lleva a una ingestión mucho más eficiente. Todas las ingestas no son iguales y no se pueden realizar generalizaciones sin tener en cuenta la composición del repositorio con matices y las necesidades comerciales. Las siguientes son sugerencias generales para planificar y ejecutar una ingesta masiva:
+El inversor de recursos masivo puede gestionar un gran número de recursos de forma eficaz. Sin embargo, una ingestión a gran escala no es sólo un vertido de archivos amplio o una migración casual. Para que una ingestión a gran escala sea un proyecto significativo que satisfaga sus objetivos comerciales y sea eficaz, planifique la migración y organice la organización de activos. Todas las ingestas son diferentes, por lo que en lugar de generalizar, tienen en cuenta la composición del repositorio con matices y las necesidades comerciales. A continuación se presentan algunas sugerencias generales para planificar y ejecutar una ingesta masiva:
 
 * Depurar recursos: Elimine los recursos que no sean necesarios en DAM. Considere la posibilidad de eliminar recursos no utilizados, obsoletos o de duplicado. Esto reduce la transferencia de datos y la ingesta de recursos, lo que lleva a una mayor rapidez de las ingestas.
 * Organización de recursos: Considere la posibilidad de organizar el contenido en algún orden lógico, por ejemplo, por tamaño de archivo, formato de archivo, caso de uso o prioridad. En general, los archivos complejos de gran tamaño requieren más procesamiento. También puede considerar la posibilidad de ingerir archivos grandes por separado mediante la opción de filtrado de tamaño de archivo (que se describe a continuación).
@@ -149,7 +149,7 @@ Para cargar un mayor número de archivos, utilice uno de los siguientes métodos
 
 ### Herramienta de ingestor masivo de recursos {#asset-bulk-ingestor}
 
-La herramienta se proporciona únicamente al grupo de administradores para su uso en la ingestión a gran escala de recursos de los almacenes de datos de Azure o S3.
+La herramienta se proporciona únicamente al grupo de administradores para su uso en la ingestión a gran escala de recursos de los almacenes de datos de Azure o S3. Vea un vídeo explicativo de la configuración y la ingestión.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
