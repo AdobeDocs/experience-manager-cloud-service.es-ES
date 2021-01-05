@@ -236,7 +236,7 @@ Consulte [Creación de un nuevo ajuste preestablecido de visor](/help/assets/dyn
 
 Si ya ha cargado los recursos de vídeo y miniaturas, continúe [Añadiendo la interactividad en el vídeo](#adding-interactivity-to-your-video).
 
-Si ha cargado los vídeos o las imágenes incorrectos o desea eliminar los vídeos o las imágenes cargados que ya no necesita, consulte [Eliminación de recursos](/help/assets/manage-digital-assets.md#delete-assets).
+Si ha cargado los vídeos o imágenes incorrectos o desea eliminar los vídeos o imágenes cargados que ya no necesita, consulte [Eliminación de recursos](/help/assets/manage-digital-assets.md#delete-assets).
 
 Para cargar un vídeo y sus recursos de miniaturas asociados:
 
@@ -467,7 +467,7 @@ Para añadir interactividad al vídeo:
       En la línea de tiempo, toque un segmento que desee dividir por la mitad y luego toque **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividir un segmento seleccionado de diez segundos en dos segmentos de cinco segundos cada uno.
 
