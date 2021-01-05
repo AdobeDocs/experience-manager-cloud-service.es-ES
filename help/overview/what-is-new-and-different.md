@@ -262,7 +262,7 @@ Para obtener más información, consulte la descripción general de [Cambios en 
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets como Cloud Service oferta una solución SaaS nativa de la nube para que las empresas no solo realicen sus operaciones de administración de activos digitales y de Dynamic Media con rapidez e impacto, sino que también utilicen las funciones inteligentes de próxima generación, como AI/ML, desde un sistema siempre actual, siempre disponible y siempre en aprendizaje.
+Adobe Experience Manager Assets como Cloud Service oferta una solución SaaS nativa de la nube para que las empresas no solo realicen sus operaciones de administración de activos digitales y Dynamic Media con rapidez e impacto, sino que también utilicen las funciones inteligentes de próxima generación, como AI/ML, desde un sistema siempre actual, siempre disponible y siempre en aprendizaje.
 
 La oferta de recursos incluye el procesamiento de recursos de próxima generación en la nube y la búsqueda y la ingesta de recursos de alto rendimiento.
 
