@@ -4,8 +4,8 @@ description: Referencia de predicado para la API de Consulta Builder.
 translation-type: tm+mt
 source-git-commit: 90b635cb31af910e08bdee7925cec0c7beb05318
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2221'
+ht-degree: 1%
 
 ---
 
@@ -96,7 +96,7 @@ Este predicado admite la extracción de facetas y proporciona bloques para cada 
 
 ### contentfragment {#contentfragment}
 
-Este predicado restringe el resultado a fragmentos de contenido.
+Este predicado restringe el resultado a los fragmentos de contenido.
 
 * No admite el filtrado.
 * No admite la extracción de facetas.
