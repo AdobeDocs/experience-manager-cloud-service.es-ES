@@ -450,7 +450,7 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. V
    * **** Nombre puede especificar el nombre, pero debe reflejar el rango de caracteres; por ejemplo, lápices.
    * **Tipo** `nt:unstructured`
 
-1. En este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
+1. Bajo este nodo (cuyo nombre depende del rango de caracteres especial) agregue las dos propiedades siguientes:
 
    * **Nombre** `rangeStart`
 
