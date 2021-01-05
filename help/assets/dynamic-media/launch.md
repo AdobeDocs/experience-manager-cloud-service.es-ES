@@ -81,7 +81,7 @@ Para el seguimiento de Adobe Analytics, se deben instalar varias extensiones adi
 
 Para rastrear los visores de Dynamic Media es posible utilizar cualquier tipo de lo siguiente:
 
-* Eventos de la extensión de visores de Dynamic Media, de la extensión Core o de cualquier otra extensión.
+* Eventos de la extensión de visores de Dynamic Media, la extensión Core o cualquier otra extensión.
 * Condiciones de la definición de regla. O bien, puede dejar el área de condiciones vacío.
 
 En la sección Acciones, es necesario que tenga una acción *Establecer variables*. Esta acción indica a Adobe Analytics cómo rellenar las variables de seguimiento con datos. Al mismo tiempo, la acción *Establecer variables* no envía nada al servidor de seguimiento.
