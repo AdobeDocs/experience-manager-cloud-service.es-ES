@@ -1,6 +1,6 @@
 ---
 title: Vídeo 360/VR
-description: Aprenda a trabajar con vídeos de 360 y Realidad virtual (VR) en Dynamic Media.
+description: Aprenda a trabajar con los vídeos 360 y Realidad virtual (VR) en Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
@@ -99,7 +99,7 @@ Cuando esté satisfecho con el vídeo de 360, puede publicarlo.
 
 Consulte [Incrustación del visor de imágenes o vídeos en una página Web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vinculación de direcciones URL a la aplicación Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de sitios Experience Manager.
-Consulte [Añadir recursos de Dynamic Media en páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Añadir Dynamic Media Assets a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 **Para previsualización De Videos 360**
 
@@ -130,9 +130,9 @@ Consulte [Añadir recursos de Dynamic Media en páginas.](/help/assets/dynamic-m
 
 ## Publicación de vídeo 360 {#publishing-video}
 
-Debe publicar el vídeo 360 para utilizarlo. La publicación de un vídeo de 360 activa la URL y el código incrustado. También publica el vídeo 360 en la nube de medios dinámicos, que está integrada con una CDN para un envío escalable y de rendimiento.
+Debe publicar el vídeo 360 para utilizarlo. La publicación de un vídeo de 360 activa la URL y el código incrustado. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para un envío escalable y de rendimiento.
 
-Consulte [Publicación de recursos de medios dinámicos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo 360.
+Consulte [Publicación de Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar Video 360.
 Consulte también [Incrustación del visor de imágenes o vídeos en una página Web](/help/assets/dynamic-media/embed-code.md).
 Consulte también [Vinculación de direcciones URL a la aplicación Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, en particular vínculos a páginas de sitios Experience Manager.
-Consulte también [Añadir recursos de Dynamic Media en páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte también [Añadir Dynamic Media Assets a páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
