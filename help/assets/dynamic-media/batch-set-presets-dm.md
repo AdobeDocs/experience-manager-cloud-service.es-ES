@@ -26,7 +26,7 @@ Utilice **[!UICONTROL Valores preestablecidos de conjunto por lotes]** para faci
 1. Aplique el ajuste preestablecido de conjunto de lotes a la carpeta de recursos. Consulte [Acerca de la aplicación de ajustes preestablecidos de conjunto de lotes a carpetas](#apply-bsp).
 1. Cargue imágenes en la carpeta de recursos. Consulte [Carga de recursos para conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Carga de recursos para conjuntos de giros](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) o [Añadir recursos digitales a Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. Cree el conjunto de imágenes o giros. Consulte [Conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md) o [Conjuntos de giros](/help/assets/dynamic-media/spin-sets.md).
-1. Publique el conjunto de imágenes o giros. Consulte [Publicación de recursos de medios dinámicos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Publique el conjunto de imágenes o giros. Consulte [Publicación de Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Creación de un ajuste preestablecido de conjunto de lotes para un conjunto de imágenes o un conjunto de giros {#creating-bsp}
 
@@ -153,7 +153,7 @@ Es posible que sea necesario volver a procesar los recursos de una carpeta si se
 1. Vaya a la carpeta a la que desee aplicar uno o varios valores preestablecidos de conjunto de lotes.
 1. En la página, a la izquierda de la columna **[!UICONTROL Nombre]**, seleccione la casilla de verificación de la.
 1. En la barra de herramientas, toque **[!UICONTROL Propiedades]**.
-1. En la página Propiedades de la carpeta, toque la ficha **[!UICONTROL Procesamiento de medios dinámicos]**.
+1. En la página Propiedades de la carpeta, toque la ficha **[!UICONTROL Procesamiento de Dynamic Media]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -230,7 +230,7 @@ Existen dos métodos que puede utilizar para quitar los ajustes preestablecidos 
 1. Vaya a la carpeta en la que desee quitar uno o varios valores preestablecidos de conjunto de lotes.
 1. En la página, a la izquierda de la columna **[!UICONTROL Nombre]**, active la casilla de verificación de una carpeta.
 1. En la barra de herramientas, toque **[!UICONTROL Propiedades]**.
-1. En la página Propiedades de la carpeta, toque **[!UICONTROL Procesamiento de medios dinámicos]**.
+1. En la página Propiedades de la carpeta, toque **[!UICONTROL Procesamiento de Dynamic Media]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -240,7 +240,7 @@ Existen dos métodos que puede utilizar para quitar los ajustes preestablecidos 
 
 ## Eliminando ajustes preestablecidos de conjunto de lotes {#delete-bsp}
 
-Puede eliminar los ajustes preestablecidos de conjunto de lotes para quitarlos de forma permanente de [!DNL Dynamic Media]. Es decir, ya no se mostrarán en la página [!UICONTROL Valor preestablecido de conjunto por lotes] ni se mostrarán en la lista desplegable **[!UICONTROL Valores preestablecidos de conjunto por lotes]** de la ficha **[!UICONTROL Procesamiento de medios dinámicos]** de la página **[!UICONTROL Propiedades]** de la carpeta. Como tal, el ajuste preestablecido no se aplicará a los recursos existentes en un proceso de reprocesamiento de carpetas ni cuando se carguen nuevos recursos en la carpeta.
+Puede eliminar los ajustes preestablecidos de conjunto de lotes para quitarlos de forma permanente de [!DNL Dynamic Media]. Es decir, ya no se mostrarán en la página [!UICONTROL Valor preestablecido de conjunto por lotes] ni se mostrarán en la lista desplegable **[!UICONTROL Valores preestablecidos de conjunto por lotes]** de la ficha **[!UICONTROL Procesamiento de Dynamic Media]** de la página **[!UICONTROL Propiedades]** de la carpeta. Como tal, el ajuste preestablecido no se aplicará a los recursos existentes en un proceso de reprocesamiento de carpetas ni cuando se carguen nuevos recursos en la carpeta.
 
 Si elimina un ajuste preestablecido aplicado anteriormente a una o varias carpetas, los conjuntos de imágenes o conjuntos de giros creados a partir de recursos de esas carpetas seguirán mostrándose tal cual.
 
@@ -264,5 +264,5 @@ Si sólo desea *quitar* ajustes preestablecidos de carpetas, consulte [Eliminaci
 >
 >* [Conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md)
 >* [Conjuntos de giros](/help/assets/dynamic-media/spin-sets.md)
->* [Configuración de la publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) : consulte &quot;Modo de sincronización&quot; en el tema para obtener más información sobre la sincronización de una sola carpeta a  [!DNL Dynamic Media].
+>* [Configuración de la publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) : consulte &quot;Modo de sincronización&quot; en el tema para obtener más información sobre la sincronización de una sola carpeta en  [!DNL Dynamic Media].
 >* [Creación de una nueva configuración de Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) : consulte &quot;Modo de sincronización de Dynamic Media&quot; en el tema para obtener más información sobre la sincronización de todas las carpetas en  [!DNL Dynamic Media].
