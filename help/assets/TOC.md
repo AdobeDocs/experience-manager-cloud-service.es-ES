@@ -120,7 +120,7 @@ ht-degree: 72%
    + [Vincular URL en la aplicación web](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Usar conjuntos de reglas para transformar URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Uso de la publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
+   + [Uso de Publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
    + [Trabajar con selectores](dynamic-media/working-with-selectors.md)
    + [Preguntas frecuentes sobre el fin de vida útil del visualizador DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Aviso de fin de vida útil para el visualizador Flash](dynamic-media/flash-viewers-eol.md)
