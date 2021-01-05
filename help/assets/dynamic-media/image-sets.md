@@ -16,7 +16,7 @@ Los conjuntos de imágenes proporcionan a los usuarios una experiencia de visual
 
 Los conjuntos de imágenes se designan mediante una pancarta con la palabra `IMAGESET`. Además, si se publica el conjunto de imágenes, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 Dentro del conjunto de imágenes, también puede crear muestras creando un conjunto de imágenes y agregando miniaturas.
 
@@ -201,30 +201,30 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
 * Añada imágenes al conjunto de imágenes.
 * Vuelva a ordenar las imágenes en el conjunto de imágenes.
 * Elimine recursos del conjunto de imágenes.
-* Aplique ajustes preestablecidos del visor.
+* Aplicación de ajustes preestablecidos de visor.
 * Elimine el conjunto de imágenes.
 
 **Para editar conjuntos de imágenes**
 
 1. Realice una de las siguientes acciones:
 
-   * Pase el ratón por encima de un recurso de conjunto de imágenes y, a continuación, toque **[!UICONTROL Editar]** (icono de lápiz).
-   * Pase el ratón por encima de un activo de conjunto de imágenes, toque **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, a continuación, toque **[!UICONTROL Editar]** en la barra de herramientas.
+   * Pase el ratón sobre un recurso de conjunto de imágenes y, a continuación, toque **[!UICONTROL Editar]** (icono de lápiz).
+   * Pase el ratón sobre un recurso de conjunto de imágenes, toque **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, a continuación, toque **[!UICONTROL Editar]** en la barra de herramientas.
    * Toque en un recurso de conjunto de imágenes y, a continuación, toque **[!UICONTROL Editar]** (icono de lápiz) en la barra de herramientas.
 
-1. Para editar las imágenes del conjunto de imágenes, realice una de las acciones siguientes:
+1. Para editar las imágenes en el conjunto de imágenes, realice una de las siguientes acciones:
 
-   * Para reordenar los recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
+   * Para reordenar recursos, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
-   * Para agregar un activo o actualizar uno existente, haga clic en **[!UICONTROL Agregar activo]**. Vaya a un activo, selecciónelo y, a continuación, toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
+   * Para agregar un recurso o actualizar uno existente, haga clic en **[!UICONTROL Añadir recurso]**. Vaya a un recurso, selecciónelo y toque **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
 
       >[!NOTE]
       >
-      >Si elimina la imagen que AEM para la miniatura reemplazándola por otra imagen, el recurso original seguirá apareciendo.
-   * Para eliminar un activo, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar activo]**.
+      >Si elimina la imagen que AEM utiliza para la miniatura reemplazándola por otra imagen, el recurso original seguirá mostrándose.
+   * Para eliminar un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, toque **[!UICONTROL Ajuste preestablecido]** y seleccione un ajuste preestablecido de visor.
-   * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del activo. Desplácese hasta la nueva miniatura o recurso de muestra, selecciónelo y, a continuación, toque **[!UICONTROL Seleccionar]**.
-   * Para eliminar un conjunto de imágenes completo, vaya al conjunto de imágenes, selecciónelo y toque **[!UICONTROL Eliminar]**.
+   * Para añadir o cambiar una miniatura, seleccione el icono de miniatura situado junto a la derecha del recurso. Vaya al nuevo recurso de miniatura o muestra, selecciónelo y toque **[!UICONTROL Seleccionar]**.
+   * Para eliminar un conjunto de imágenes completo, desplácese hasta el conjunto de imágenes, selecciónelo y toque **[!UICONTROL Eliminar]**.
 
    >[!NOTE]
    >
@@ -232,10 +232,10 @@ Puede realizar varias tareas de edición en los conjuntos de imágenes, como las
 
 1. Toque **[!UICONTROL Guardar]** cuando haya terminado de editar.
 
-## Previsualización de conjuntos de imágenes {#previewing-image-sets}
+## Vista previa de conjuntos de imágenes {#previewing-image-sets}
 
-Consulte [Previsualización de recursos](/help/assets/dynamic-media/previewing-assets.md).
+Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets.md).
 
 ## Conjuntos de imágenes de publicación {#publishing-image-sets}
 
-Consulte [Publicación de activos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publishing Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
