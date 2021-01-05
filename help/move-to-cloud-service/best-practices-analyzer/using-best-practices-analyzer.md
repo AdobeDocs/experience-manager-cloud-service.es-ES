@@ -16,7 +16,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de optimizaciones"
 >abstract="Revise la documentación para utilizar el Analizador de procedimientos recomendados (antes Cloud Readiness Analyzer) y el informe generado. El informe Analizador de optimizaciones se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -42,10 +42,10 @@ Para evitar un impacto en instancias críticas del negocio, se recomienda ejecut
 
 ## Disponibilidad {#availability}
 
->[!CONTEXTUALHELP]
->id="aemcloud_bpa_download"
->title="Descargar el Analizador de optimizaciones"
->abstract="El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede >instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_download"
+title="Descargar el Analizador de optimizaciones"
+abstract="El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
 
 El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
@@ -105,11 +105,11 @@ En todas las versiones, Pattern Detector puede ejecutarse de forma independiente
 
 ## Interpretación del informe del Analizador de optimizaciones {#cra-report}
 
->[!CONTEXTUALHELP]
->id="aemcloud_bpa_interpreting"
->title="Interpretación del informe del Analizador de optimizaciones"
->abstract="Existen dos opciones para ver los resultados de los informes de BPA: UI y CSV. Cuando se ejecuta la herramienta Analizador de procedimientos recomendados en la instancia de AEM, el informe de la interfaz de usuario se muestra como resultados en la ventana de herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes del Analizador de optimizaciones"
+[!CONTEXTUALHELP]
+id="aemcloud_bpa_interpreting"
+title="Interpretación del informe del Analizador de optimizaciones"
+abstract="Existen dos opciones para ver los resultados de los informes de BPA: UI y CSV. Cuando se ejecuta la herramienta Analizador de procedimientos recomendados en la instancia de AEM, el informe de la interfaz de usuario se muestra como resultados en la ventana de herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes del Analizador de optimizaciones"
 
 Cuando la herramienta Analizador de optimizaciones se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
 
