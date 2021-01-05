@@ -4,7 +4,7 @@ description: La funcionalidad del Generador de Consultas de uso compartido de re
 translation-type: tm+mt
 source-git-commit: cfd54f0cd84cef72b6f2fad1a85132c312a19348
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2069'
 ht-degree: 0%
 
 ---
