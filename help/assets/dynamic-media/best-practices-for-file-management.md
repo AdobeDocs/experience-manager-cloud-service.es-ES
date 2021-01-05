@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles de vídeo de Dynamic Media
-description: Sugerencias y prácticas recomendadas para nombrar, organizar y administrar archivos de recursos de vídeo e imágenes de Dynamic Media.
+description: Sugerencias y prácticas recomendadas para nombrar, organizar y administrar archivos de recursos de imagen y vídeo de Dynamic Media.
 translation-type: tm+mt
 source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
