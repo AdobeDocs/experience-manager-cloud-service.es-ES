@@ -1,5 +1,5 @@
 ---
-title: Acerca de los Perfiles de imágenes y Perfiles de vídeo de Dynamic Media
+title: Acerca de los Perfiles de imagen y los Perfiles de vídeo de Dynamic Media
 description: Un Perfil de imagen o un Perfil de vídeo es una fórmula para determinar las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué codificación de vídeo se aplicará a los recursos de vídeo de Dynamic Media que cargue. O bien, qué Perfil de imagen aplicar a los recursos de imagen de Dynamic Media para que se recorten correctamente.
 translation-type: tm+mt
 source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
@@ -16,14 +16,14 @@ Un Perfil de imagen o un Perfil de vídeo es una fórmula para determinar las op
 
 En Dynamic Media, puede crear dos tipos de perfiles, que se tratan en detalle en los siguientes vínculos:
 
-* [Perfiles de imagen de Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
-* [Perfiles de vídeo de Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
+* [perfiles de imagen de Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+* [perfiles de vídeo de Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
 Consulte también [perfiles de metadatos](/help/assets/metadata-profiles.md).
 
 Debe tener derechos de administrador para crear, editar y eliminar Perfiles de imagen de Dynamic Media o Perfiles de vídeo de Dynamic Media.
 
-Después de crear el Perfil de imágenes o el Perfil de vídeo, se asigna a una o varias carpetas que se utilizan como destino para los recursos de Dynamic Media recién cargados.
+Después de crear el Perfil de imágenes o el Perfil de vídeo, se asigna a una o varias carpetas que se utilizan como destino para los recursos de Dynamic Media que se acaban de cargar.
 
 Consulte también [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles de vídeo](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -41,13 +41,13 @@ Por ejemplo, supongamos que ha creado un Perfil de imagen de Dynamic Media y lo 
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Por lo tanto, aunque no haya editado un Perfil de imagen o un perfil de vídeo, o haya aplicado ya un Perfil de imagen o un Perfil de vídeo, podrá seguir ejecutando el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Opcionalmente, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos a 1000. Al ejecutar el _Scene7: Volver a procesar el flujo de trabajo de Recursos_ en una carpeta, los recursos se agrupan en lotes y luego se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Opcionalmente, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos a 1000. Al ejecutar el _Scene7: Volver a procesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y luego se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajuste del tamaño de lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
 >[!NOTE]
 >
->Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, debe habilitar el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
+>Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, debe habilitar el agente de replicación de migración en el servidor Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
 >
 >El agente de publicación de migración debe estar deshabilitado en el servidor de Dynamic Media para que el flujo de trabajo de reprocesamiento funcione según lo esperado.
 
@@ -58,7 +58,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Para volver a procesar los recursos de Dynamic Media en una carpeta**:
-1. En Adobe Experience Manager, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el **Scene7: Flujo de trabajo de reprocesamiento de recursos**,
+1. En Adobe Experience Manager, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el Scene7 **: Flujo de trabajo de reprocesamiento de recursos**,
 
    Las carpetas que ya tienen un Perfil de imagen o un Perfil de vídeo asignado a él se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta en la Vista de tarjetas.
 
@@ -105,7 +105,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Seleccione **[!UICONTROL Avance del controlador]** si el controlador avanzará al paso siguiente.
    * En el campo **[!UICONTROL Tiempo de espera]**, introduzca el tiempo de espera del proceso externo (segundos).
    * En el campo **[!UICONTROL Período]**, introduzca un intervalo de sondeo (segundos) para probar la finalización del proceso externo.
-   * En el campo **[!UICONTROL Lote]**, introduzca el número máximo de recursos (50-1000) que se procesarán en un trabajo de carga por lotes del servidor de Dynamic Media.
+   * En el campo **[!UICONTROL Lote]**, introduzca el número máximo de recursos (50-1000) que se procesarán en un trabajo de carga de procesamiento por lotes de Dynamic Media Server.
    * Seleccione **[!UICONTROL Avanzar al tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
 
    ![Cuadro de diálogo Propiedades](/help/assets/dynamic-media/assets/reprocess-assets3.png)
