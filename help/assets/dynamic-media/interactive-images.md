@@ -22,7 +22,7 @@ Consulte [imágenes interactivas en acción](https://marketing.adobe.com/resourc
 
 ## Observe cómo se crean los letreros de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
-Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los letreros de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a previsualización, edición y distribución de letreros de imagen interactivos.
+Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los letreros de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a crear previsualizaciones, editar y distribuir letreros de imagen interactivos.
 
 ## Inicio rápido: Imágenes interactivas {#quick-start-interactive-images}
 
