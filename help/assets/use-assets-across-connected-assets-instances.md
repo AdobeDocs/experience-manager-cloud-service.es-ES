@@ -3,9 +3,9 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
+source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2704'
 ht-degree: 28%
 
 ---
@@ -105,6 +105,10 @@ Para configurar los recursos conectados y la conectividad [!DNL Sites] local, si
    >Todas las representaciones disponibles en la implementación remota de se recuperan cuando los autores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. El flujo de trabajo [!UICONTROL Recurso de actualización de DAM] se activa y crea más representaciones. Estas representaciones solo están disponibles en la implementación local [!DNL Sites] y no en la implementación remota de DAM.
 
 1. Añada la implementación [!DNL Sites] como un origen permitido en la configuración de CORS en la implementación [!DNL Assets]. Para obtener más información, consulte [Comprender CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
+
+Puede comprobar la conectividad entre las [!DNL Sites] implementaciones configuradas y la [!DNL Assets] implementación.
+
+![Prueba de conexión de recursos conectados configurada  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
