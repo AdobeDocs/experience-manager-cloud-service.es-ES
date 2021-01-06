@@ -3,10 +3,10 @@ title: Metadatos XMP
 description: Obtenga información sobre el estándar de metadatos XMP (Extensible Metadata Platform) para la administración de metadatos. La utiliza AEM como formato estandarizado para la creación, el procesamiento y el intercambio de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 21%
+source-wordcount: '899'
+ht-degree: 18%
 
 ---
 
@@ -72,11 +72,11 @@ XMP le oferta la capacidad de agregar una propiedad `xml:lang` a las propiedades
 
 ## Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
-Esta función de XMP escritura en marcha atrás en Adobe Experience Manager (AEM) Assets replica los cambios de metadatos de los recursos en las representaciones del recurso.
+Esta función de reescritura XMP en Recursos Adobe Experience Manager (AEM) replica los cambios de metadatos de los recursos en las representaciones del recurso.
 
 Al cambiar los metadatos de un recurso desde AEM Assets o al cargarlo, los cambios se almacenan inicialmente en el nodo de recurso en CRXDE.
 
-La función de XMP escritura en marcha hace que los cambios de metadatos se propaguen a todas las representaciones del recurso o a determinadas representaciones del recurso.
+La función de reescritura XMP propaga los cambios de metadatos en todas las representaciones del recurso o en determinadas representaciones del recurso.
 
 Considere un escenario en el que modifique la propiedad [!UICONTROL Title] del recurso titulada `Classic Leather` a `Nylon`.
 
@@ -88,39 +88,43 @@ En este caso, AEM Assets guarda los cambios en la propiedad **[!UICONTROL Title]
 
 Sin embargo, AEM Assets no propaga automáticamente ningún cambio de metadatos en las representaciones de un recurso.
 
-La función de XMP escritura en marcha permite propagar los cambios de metadatos a todas las representaciones del recurso o a determinadas representaciones del recurso. Sin embargo, los cambios no se almacenan en el nodo de metadatos de la jerarquía de recursos. En su lugar, esta función incrusta los cambios en los archivos binarios para las representaciones.
+La función de reescritura XMP permite propagar los cambios de metadatos a todas las representaciones del recurso o a determinadas representaciones del recurso. Sin embargo, los cambios no se almacenan en el nodo de metadatos de la jerarquía de recursos. En su lugar, esta función incrusta los cambios en los archivos binarios para las representaciones.
 
-### Habilitar XMP devolución de escritura {#enable-xmp-writeback}
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
+### Enable XMP writeback {#enable-xmp-writeback}
 -->
 
-Para permitir que los cambios de metadatos se propaguen a las representaciones del recurso al cargarlo, modifique la configuración de **[!UICONTROL Adobe CQ DAM Rendition Maker]** en Configuration Manager.
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
 
-1. Para abrir Configuration Manager, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
-1. Abra la configuración **[!UICONTROL Adobe CQ DAM Rendition Maker]**.
-1. Seleccione la opción **[!UICONTROL Propagar XMP]** y, a continuación, guarde los cambios.
+<!-- 
+To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
-### Habilitar XMP devolución de escritura para representaciones específicas {#enable-xmp-writeback-for-specific-renditions}
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
-Para permitir que la función XMP de escritura en marcha propague los cambios de metadatos para seleccionar representaciones, especifique estas representaciones en el paso de flujo de trabajo [!UICONTROL Proceso de escritura en XMP] del flujo de trabajo de escritura de metadatos DAM. De forma predeterminada, este paso se configura con la representación original.
+### Enable XMP write-back for specific renditions {#enable-xmp-writeback-for-specific-renditions}
 
-Para que la función de XMP escritura en marcha atrás propague metadatos a las miniaturas de representación 140.100.png y 319.319.png, lleve a cabo estos pasos.
+To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. By default, this step is configured with the original rendition.
 
-1. Pulse o haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En la página Modelos, abra el modelo de flujo de trabajo **[!UICONTROL Reescritura de metadatos DAM]**.
-1. En la página de **[!UICONTROL propiedades de escritura de metadatos DAM]**, abra el paso **[!UICONTROL Proceso de escritura XMP]**.
-1. En el cuadro de diálogo **[!UICONTROL Propiedades del paso]**, pulse o haga clic en la pestaña **[!UICONTROL Proceso]**.
-1. En el cuadro **[!UICONTROL Argumentos]**, agregue `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` y, a continuación, toque o haga clic en **[!UICONTROL Aceptar]**.
+For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
+
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
+1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
+1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, and then tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. Guarde los cambios.
-1. Para volver a generar las representaciones TIFF (PTIFF) piramidales para imágenes de Dynamic Media con los nuevos atributos, agregue el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]** al flujo de trabajo de reescritura de metadatos DAM. Las representaciones PTIFF solo se crean y almacenan localmente en una implementación híbrida de Dynamic Media.
+1. Save the changes.
+1. To regenerate the Pyramid TIFF (PTIFF) renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata write-back workflow. PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
 
-1. Guarde el flujo de trabajo.
+1. Save the workflow.
 
-Los cambios en los metadatos se propagan a las representaciones thumbnail.140.100.png y thumbnail.319.319.png del recurso, y no a los demás.
+The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+-->
 
 >[!MORELIKETHIS]
 >
