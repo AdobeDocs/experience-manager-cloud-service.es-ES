@@ -48,12 +48,10 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 >Esto se debe a que el contenido de `/libs` puede sobrescribirse cada vez que se apliquen actualizaciones a la instancia.
 >
 >* Las superposiciones dependen de [rutas de búsqueda](/help/implementing/developing/introduction/overlays.md#search-paths).
-   >
-   >
-* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para realizar la conexión.
 >
+>* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para realizar la conexión.
 >
-Sin embargo, las sobrescrituras se definen generalmente en `/apps`, ya que lo más recomendable en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada en `/libs`.
+>Sin embargo, las sobrescrituras se definen generalmente en `/apps`, ya que lo más recomendable en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada en `/libs`.
 
 ### Propiedades {#properties}
 
