@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: f3a4fdf57dc84bba9811530fccb2fe6a4404376f
+source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 70%
+source-wordcount: '2018'
+ht-degree: 66%
 
 ---
 
@@ -25,6 +25,8 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * Si utiliza un *Entorno de Simulador para pruebas*, asegúrese de que el entorno esté actualizado y de que se actualice a la última versión. Si utiliza un *Entorno de producción*, se actualiza automáticamente.
 
 * Para utilizar la herramienta de transferencia de contenido, deberá ser un usuario administrador en la instancia de origen y pertenecer al grupo de administradores de AEM locales en la instancia de Cloud Service a la que esté transfiriendo contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
+
+* El token de acceso puede caducar periódicamente después de un período de tiempo específico o después de actualizar el entorno del Cloud Service. Si token de acceso ha caducado, no podrá conectarse a la instancia de Cloud Service y tendrá que recuperar el nuevo token de acceso. El icono de estado asociado a un conjunto de migración existente cambiará a una nube roja y mostrará un mensaje cuando pase el ratón por encima.
 
 * Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
 
@@ -162,6 +164,9 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
 
 1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para empezar la extracción. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para inicio de la fase de ingestión. Para fines de demostración, se desactiva la opción **Ingesta de contenido de Autor** . Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
+
+   >[!IMPORTANT]
+   >Cuando la opción **Borrar el contenido existente en la instancia de Cloud antes de la ingestión** está activada, elimina todo el repositorio existente y crea un nuevo repositorio en el que se ingesta contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de destinatario Cloud Service.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
