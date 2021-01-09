@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 7af431be9817c5d5fda933e4697a63ab1085276f
+source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 66%
+source-wordcount: '1915'
+ht-degree: 64%
 
 ---
 
@@ -257,12 +257,6 @@ Los archivos creados en *OUT_DIR* especificados anteriormente para mantener la c
 ### Comportamiento de la IU {#ui-behavior}
 
 Como usuario, es posible que vea los siguientes cambios de comportamiento en la IU (IU) para la herramienta de transferencia de contenido:
-
-* El usuario crea un conjunto de migraciones para una URL de creación (Desarrollo, fase, producción) y realiza correctamente la extracción y la ingesta.
-
-* A continuación, el usuario crea un nuevo conjunto de migración para la misma URL de creación y realiza la extracción y la ingesta en el nuevo conjunto de migración. La IU muestra que el estado de ingesta del primer conjunto de migración cambia a **ERRÓNEO** y que no hay registros disponibles.
-
-* Esto no significa que se haya producido un error en la ingesta del primer conjunto de migración. Este comportamiento se observa porque cuando se inicia un nuevo trabajo de ingesta, se elimina el trabajo de ingesta anterior. Por lo tanto, se debe ignorar el estado de los cambios en el primer conjunto de migración.
 
 * Es posible que los iconos de la IU de la herramienta de transferencia de contenido sean diferentes de las capturas de pantalla que se muestran en esta guía o que no se muestren en absoluto según la versión de la instancia de origen de AEM.
 
