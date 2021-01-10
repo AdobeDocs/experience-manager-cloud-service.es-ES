@@ -2,7 +2,7 @@
 title: Añadir un nombre de dominio personalizado
 description: Añadir un nombre de dominio personalizado
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ Siga los pasos a continuación para agregar un nombre de dominio personalizado d
 1. Seleccione el **Certificado SSL de dominio** en la lista desplegable y seleccione **Continuar**.
 
 1. **Aparece el cuadro de diálogo añadir** nombre de dominio. Esto lo llevará a la pantalla Verificación del nombre de dominio para su Entorno. Consulte [Añadir un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información.
-Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno.
+
+   Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno:
 
 1. Haga clic en **Crear**.
 1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
