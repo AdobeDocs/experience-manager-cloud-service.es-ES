@@ -2,9 +2,9 @@
 title: Añadir un nombre de dominio personalizado
 description: Añadir un nombre de dominio personalizado
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Un usuario debe ser propietario de una empresa o administrador de implementació
 ## Consideraciones importantes {#important-considerations}
 
 * Antes de agregar un nombre de dominio personalizado, se debe instalar en el Programa un certificado SSL válido que contenga el nombre de dominio personalizado. Consulte [Añadir un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
+
+* Los nombres de dominio no se pueden agregar a entornos mientras haya una canalización en ejecución asociada a esos entornos.
 
 * Solo se puede agregar un nombre de dominio a la vez. Sin embargo, los dominios no pueden contener caracteres comodín. No se admiten los dominios personalizados del lado del autor.
 
