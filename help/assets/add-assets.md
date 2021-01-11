@@ -2,9 +2,9 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales a [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -44,17 +44,13 @@ Assets como [!DNL Cloud Service] proporciona los siguientes métodos de carga. A
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -79,7 +75,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    Para seleccionar varios archivos, seleccione la tecla `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 Si cancela una operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
 1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de archivos cargados correctamente y los archivos que no se pudieron cargar.
@@ -97,7 +93,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -190,23 +186,23 @@ Además de la interfaz de usuario del explorador Web, [!DNL Experience Manager] 
 
 ## Procesar recursos al cargarse {#process-when-uploaded}
 
-Para realizar un procesamiento adicional en los recursos cargados, puede aplicar perfiles de procesamiento en las carpetas de carga. Los perfiles están disponibles en la página **[!UICONTROL Propiedades]** de una carpeta en [!DNL Assets].
+Para realizar un procesamiento adicional en los recursos cargados, puede aplicar perfiles de procesamiento en las carpetas de carga. Los perfiles están disponibles en la página **[!UICONTROL Propiedades]** de una carpeta en [!DNL Assets]. Un recurso digital sin extensión o con una extensión incorrecta no se procesa como desee. Por ejemplo, al cargar estos recursos, puede que no suceda nada o que se aplique un perfil de procesamiento incorrecto al recurso. Los usuarios aún pueden almacenar los archivos binarios en DAM.
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![Propiedades de una carpeta de recursos con opciones para agregar un perfil de procesamiento](assets/assets-folder-properties.png)
 
 Están disponibles las fichas siguientes:
 
-* [Los ](metadata-profiles.md) perfiles de metadatos permiten aplicar propiedades de metadatos predeterminadas a los recursos cargados en esa carpeta
+* [Los ](metadata-profiles.md) perfiles de metadatos permiten aplicar propiedades de metadatos predeterminadas a los recursos cargados en esa carpeta.
 * [El procesamiento de ](asset-microservices-configure-and-use.md) perfiles le permite generar más representaciones de las posibles de forma predeterminada.
 
 Además, si [!DNL Dynamic Media] está habilitado en la implementación, estarán disponibles las fichas siguientes:
 
-* [Los ](dynamic-media/image-profiles.md) perfiles de imagen de Dynamic Media le permiten aplicar a los recursos cargados un recorte específico (recorte **[!UICONTROL inteligente]** y recorte de píxeles) y una configuración de enfoque.
-* [Los ](dynamic-media/video-profiles.md) perfiles de vídeo de Dynamic Media le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
+* [[!DNL Dynamic Media] Los ](dynamic-media/image-profiles.md) perfiles de imagen permiten aplicar a los recursos cargados un recorte específico (recorte **[!UICONTROL inteligente]** y recorte de píxeles) y una configuración de enfoque.
+* [[!DNL Dynamic Media] Los ](dynamic-media/video-profiles.md) perfiles de vídeo le permiten aplicar perfiles de codificación de vídeo específicos (resolución, formato, parámetros).
 
 >[!NOTE]
 >
->El recorte de Dynamic Media y otras operaciones en los recursos no son destructivos, es decir, no cambian el original cargado, sino que proporcionan parámetros para el recorte o la transformación de medios que se debe realizar al entregar los recursos
+>[!DNL Dynamic Media] el recorte y otras operaciones en los recursos no son destructivas, es decir, las operaciones no cambian el original cargado. En su lugar, proporciona parámetros para recortar o transformar al entregar los recursos.
 
 Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna **[!UICONTROL Perfil de procesamiento]**.
 
