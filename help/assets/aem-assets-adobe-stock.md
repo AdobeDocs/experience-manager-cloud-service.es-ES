@@ -3,7 +3,7 @@ title: Administrar [!DNL Adobe Stock] recursos en [!DNL Assets].
 description: Busque, busque, licencie y administre [!DNL Adobe Stock] recursos desde  [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
@@ -32,7 +32,7 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 1. Haga clic en **[!UICONTROL Crear certificado]**. Una vez creada, descargue la clave pública. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Añada la clave pública descargada en su cuenta de [!DNL Adobe Developer Console] servicio. Haga clic en **[!UICONTROL Siguiente]**. Deje abierta la pantalla [!UICONTROL Configuración de cuenta técnica de IMS de Adobe] para proporcionar los valores en breve.
 1. Acceda a [Adobe Developer Console](https://console.adobe.io). Asegúrese de que su cuenta tenga permisos de administrador para la organización para la que se requiere la integración.
-1. Haga clic en **[!UICONTROL Crear nuevo proyecto]** y haga clic en **[!UICONTROL Añadir API]**. Seleccione **[!UICONTROL Adobe Stock]** de la lista de API disponibles para usted. Seleccione [!UICONTROL OAUTH 2.0 Web]. Configure y copie los distintos valores presentados.
+1. Haga clic en **[!UICONTROL Crear nuevo proyecto]** y haga clic en **[!UICONTROL Añadir API]**. Seleccione **[!UICONTROL Adobe Stock]** en la lista de las API disponibles para usted. Seleccione [!UICONTROL OAUTH 2.0 Web]. Configure y copie los distintos valores presentados.
 1. En [!DNL Experience Manager] proporcione los valores en los campos titulados **[!UICONTROL Título]**, **[!UICONTROL Servidor de autorización]**, **[!UICONTROL Clave de API]**, **[!UICONTROL Secreto del cliente]** y **[!UICONTROL Carga útil]**. Consulte [inicio rápido de autenticación JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) para obtener información detallada sobre estos valores.
 
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
@@ -48,7 +48,7 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 
 >[!NOTE]
 >
->Si hay varias configuraciones [!DNL Adobe Stock], seleccione la configuración que desee en el panel Preferencias del usuario. Para acceder al panel desde la página de inicio de Experience Manager, haga clic en el icono de usuario y, a continuación, haga clic en **[!UICONTROL Preferencias de usuario]** > **[!UICONTROL Configuración de almacenamiento]**).
+>Si hay varias configuraciones [!DNL Adobe Stock], seleccione la configuración que desee en el panel Preferencias del usuario. Para acceder al panel desde la página de inicio de Experience Manager, haga clic en el icono de usuario y, a continuación, haga clic en **[!UICONTROL Preferencias de usuario]** > **[!UICONTROL Configuración de almacenamiento]**.
 
 ## Utilizar y administrar [!DNL Adobe Stock] recursos en [!DNL Experience Manager] {#usemanage}
 
