@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
+source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '694'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ La siguiente sección describe las Notas de revisión generales para [!DNL Exper
 ## Fecha de la versión {#release-date}
 
 La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2020.12.0 es el 17 de diciembre de 2020.
-La siguiente versión (2021.1.0) será el 28 de enero de 2020.
+La siguiente versión (2021.1.0) será el 28 de enero de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] como Cloud Service  {#sites}
 
@@ -74,3 +74,20 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.12.0 es el 
 ### Corrección de errores {#crt-bug-fixes}
 
 * Se han realizado varias correcciones de errores en las herramientas AEM Dispatcher Converter y el Modernizador de repositorio. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Repositorio de repositorios](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+## Herramientas de Transición de nube {#code-transition-tools}
+
+### Fecha de la versión {#release-date-ctt}
+
+La fecha de versión de la herramienta de transferencia de contenido v1.1.20 es el 8 de enero de 2021.
+
+### Novedades en [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Ahora los usuarios pueden saber si su Token de acceso ha caducado al pasar el ratón por el icono de estado en la interfaz de usuario de la Herramienta de transferencia de contenido (CTT). También se les notificará en la interfaz de usuario de Detalles del conjunto de migración que no pueden conectarse a su instancia de Cloud Service.
+
+### Corrección de errores {#ctt-bug-fixes}
+
+* El estado de la interfaz de usuario de la Herramienta de transferencia de contenido (CTT) para un conjunto de migración no se mantuvo y cambió tras un período de inactividad. Esto se ha solucionado.
+* La opción para los registros de vista se desactivaba si los registros no estaban disponibles. Esto se ha solucionado y se han agregado mensajes para notificar al usuario por qué faltan registros.
+* El estado de la interfaz de usuario de la herramienta de transferencia de contenido mostraba FAILED cuando el usuario detenía una ingestión. Esto se ha solucionado para mostrar *STOPPED* en su lugar.
+
