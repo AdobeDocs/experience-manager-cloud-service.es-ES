@@ -3,7 +3,7 @@ title: Configuración y uso de microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Con la configuración predeterminada, solo se configura el perfil de procesamien
 
 El perfil de procesamiento puede incluir una representación FPO (solo para ubicación). Consulte [!DNL Adobe Asset Link] [documentación](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber si necesita activarla para su perfil de procesamiento. Para obtener más información, consulte la [documentación completa de Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
-### Crear perfil estándar {#create-standard-profile}
+### Crear un perfil estándar {#create-standard-profile}
 
 Para crear un perfil de procesamiento estándar, siga estos pasos:
 
@@ -108,7 +108,7 @@ El [!DNL Asset Compute Service] admite una variedad de casos de uso como el proc
 
 Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, y archivos.
 
-Los desarrolladores pueden utilizar [!DNL Asset Compute Service] para [crear aplicaciones personalizadas](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) que se adapten a los casos de uso admitidos. [!DNL Experience Manager] Puede llamar a estas aplicaciones personalizadas desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
+Los desarrolladores pueden utilizar [!DNL Asset Compute Service] para [crear aplicaciones personalizadas](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) para los casos de uso admitidos. [!DNL Experience Manager] Puede llamar a estas aplicaciones personalizadas desde la interfaz de usuario mediante perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
 
 * Utilice la [!DNL Adobe Photoshop] [API de ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) y guarde el resultado como representación.
 * Llame a sistemas de terceros para actualizar los datos, por ejemplo, un sistema PIM.
@@ -123,7 +123,7 @@ Los desarrolladores pueden utilizar [!DNL Asset Compute Service] para [crear apl
 
 Para crear un perfil personalizado, siga estos pasos:
 
-1. Los administradores acceden a **[!UICONTROL Herramientas > Recursos > Perfiles de procesamiento]**. Haga clic en **[!UICONTROL Crear]**.
+1. Los administradores acceden a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de procesamiento]**. Haga clic en **[!UICONTROL Crear]**.
 1. Haga clic en la ficha **[!UICONTROL Personalizado]**. Haga clic en **[!UICONTROL Añadir nuevo]**. Proporcione el nombre de archivo que desee para la representación.
 1. Proporcione la siguiente información.
 
@@ -145,6 +145,8 @@ Las aplicaciones personalizadas son aplicaciones [Project Firefly](https://githu
 Para ilustrar el uso personalizado del perfil, consideremos un caso de uso para aplicar texto personalizado a las imágenes de campaña. Puede crear un perfil de procesamiento que aproveche la API de Photoshop para editar las imágenes.
 
 La integración del servicio de asset compute permite al Experience Manager pasar estos parámetros a la aplicación personalizada mediante el campo [!UICONTROL Parámetros de servicio]. La aplicación personalizada llama a la API de Photoshop y pasa estos valores a la API. Por ejemplo, puede pasar el nombre de la fuente, el color del texto, el peso del texto y el tamaño del texto para agregar el texto personalizado a las imágenes de campaña.
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![custom-processing-perfil](assets/custom-processing-profile.png)
 
@@ -180,7 +182,7 @@ Para comprobar que los recursos se procesan, previsualización las representacio
 
 En el caso de que sea necesario un procesamiento adicional de los recursos que no se pueda lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo adicionales posteriores al procesamiento a la configuración. Esto permite agregar un procesamiento totalmente personalizado además del procesamiento configurable mediante microservicios de recursos.
 
-Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para activarlos. Los ejemplos incluyen:
+Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para déclencheur. Los ejemplos incluyen:
 
 * Pasos personalizados del flujo de trabajo para procesar recursos.
 * Integraciones para agregar metadatos o propiedades a recursos de sistemas externos, por ejemplo, información de productos o procesos.
