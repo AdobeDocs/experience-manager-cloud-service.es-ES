@@ -3,7 +3,7 @@ title: Configurar AEM Assets como [!DNL Cloud Service] con Brand Portal
 description: Configurar AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 20%
@@ -71,7 +71,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
    ![Crear certificado](assets/ims-config2.png)
 
-1. Haga clic en el icono **[!UICONTROL Descargar clave pública]** y guarde el archivo de clave pública (.crt) en su equipo.
+1. Haga clic en el icono **[!UICONTROL Descargar clave pública]** y guarde el archivo de clave pública (CRT) en su equipo.
 
    La clave pública se utilizará más adelante para configurar la API para el inquilino de Brand Portal y generar las credenciales de cuenta de servicio en Adobe Developer Console.
 
@@ -295,7 +295,7 @@ Por ejemplo, hemos publicado un recurso de AEM Assets a Brand Portal para valida
 
 El agente de distribución ha generado los siguientes registros:
 
-* INFORMACIÓN: Es un registro generado por el sistema que se activa en la configuración correcta del agente de distribución.
+* INFORMACIÓN: Es un registro generado por el sistema que déclencheur en una configuración correcta del agente de distribución.
 * DSTRQ1 (Solicitud 1): Se activa en comprobar la conexión.
 
 Al publicar el recurso, se generan los siguientes registros de solicitud y respuesta:
@@ -303,7 +303,7 @@ Al publicar el recurso, se generan los siguientes registros de solicitud y respu
 **Solicitud del agente de distribución**:
 
 * DSTRQ2 (Solicitud 2): Se activa la solicitud de publicación de recursos.
-* DSTRQ3 (Solicitud 3): El sistema activa otra solicitud para publicar la carpeta AEM Assets (en la que el recurso existe) y replica la carpeta en Brand Portal.
+* DSTRQ3 (Solicitud 3): El sistema déclencheur otra solicitud para publicar la carpeta AEM Assets (en la que el recurso existe) y replica la carpeta en Brand Portal.
 
 **Respuesta del agente de distribución**:
 
