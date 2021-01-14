@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '692'
 ht-degree: 5%
 
 ---
@@ -45,21 +45,15 @@ La siguiente versión (2021.1.0) será el 28 de enero de 2021.
 
 ### Fecha de la versión {#release-date-cm}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.12.0 es el 10 de diciembre de 2020.
-
-### Novedades en [!DNL Cloud Manager] {#what-is-new-cm}
-
-* Administración automática de [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Administración de autoservicio de [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* La página de detalles **Entorno** actualizada ahora permite a los usuarios administrar nombres de dominio personalizados y Listas de permitidos IP en sus entornos.
+La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.1.0 es el 14 de enero de 2021.
 
 ### Corrección de errores {#bug-fixes-cloud-manager}
 
-* Algunas ocurrencias de errores en la etapa de análisis de código sin proporcionar resultados resueltos.
+* En ocasiones, la instancia de Producción de recursos puede mostrar el estado de Brand Portal en la página de detalles **Entornos** como *Pendiente* sin permitir al usuario realizar ninguna acción.
 
-* La tarjeta de entorno no mostraba de forma consistente el botón **Añadir**.
+* Al activar una deshibernación desde Cloud Manager, a veces se mostraba un mensaje de error incluso cuando la deshibernación se iniciaba correctamente.
+
+* Se han abordado casos raros de fallo en la creación o eliminación de entornos.
 
 ## Herramientas de refactorización de código {#code-refactoring-tools}
 
