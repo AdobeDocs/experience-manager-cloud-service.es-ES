@@ -2,9 +2,9 @@
 title: Plantillas de página
 description: Las plantillas de página se utilizan al crear una página que se utilizará como base para la nueva página
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 8%
 
 ---
@@ -61,7 +61,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener más información sobre cómo define un autor de plantilla la estructura, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Para obtener información técnica sobre la estructura, consulte [Estructura](#structure) en este documento.
+   Para obtener detalles técnicos sobre la estructura, consulte [Estructura](#structure) en este documento.
 
    **Políticas**
 
@@ -72,7 +72,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener más información sobre cómo define las políticas un autor de plantilla, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
 
-   Para obtener información técnica sobre las políticas, consulte [Políticas de contenido](#content-policies) en este documento.
+   Para obtener detalles técnicos sobre las políticas, consulte [Políticas de contenido](#content-policies) en este documento.
 
    **Contenido inicial**
 
@@ -99,7 +99,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener más información sobre cómo un autor de plantilla habilita una plantilla, consulte [Creación de plantillas de página](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Para obtener información técnica sobre cómo habilitar una plantilla, consulte [Activación y autorización de una plantilla para nosotros](#enabling-and-allowing-a-template-for-use)e en este documento
+   Para obtener detalles técnicos sobre cómo habilitar una plantilla, consulte [Habilitación y autorización de una plantilla para nosotros](#enabling-and-allowing-a-template-for-use)e en este documento
 
 1. Utilícelo para crear páginas de contenido.
 
@@ -110,6 +110,16 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
    Para obtener detalles técnicos sobre la creación de páginas con plantillas editables, consulte [Páginas de contenido resultantes](#resultant-content-pages) en este documento.
 
+>[!TIP]
+>
+>No introduzca nunca en una plantilla información que deba internacionalizarse. Para fines de internalización, se recomiendan las [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+
+>[!NOTE]
+>
+>Las plantillas son herramientas poderosas para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden abrumar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>
+>Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
+
 >[!NOTE]
 >
 >La biblioteca de cliente del editor asume la presencia de la Área de nombres `cq.shared` en las páginas de contenido y, si no se encuentra, se producirá el error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -118,9 +128,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 >
 >Consulte [Uso de bibliotecas del lado del cliente](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
 
->[!CAUTION]
->
->No introduzca nunca en una plantilla información que deba internacionalizarse.
+
 
 ## Carpetas de plantilla {#template-folders}
 
@@ -254,7 +262,7 @@ En la tabla siguiente se detallan los permisos necesarios para editar plantillas
    <td>Creadores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en el espacio específico del sitio <code>/conf</code></td>
   </tr>
   <tr>
-   <td>Usuario Web anónimo</td>
+   <td>Usuario web anónimo</td>
    <td>read</td>
    <td>El usuario web anónimo debe leer las directivas al procesar una página</td>
   </tr>
