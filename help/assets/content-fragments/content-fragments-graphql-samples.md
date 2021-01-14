@@ -2,9 +2,9 @@
 title: 'Aprender a utilizar GraphQL con AEM: Contenido y Consultas de muestra'
 description: 'Aprender a utilizar GraphQL con AEM: contenido y Consultas de muestra.'
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->La API de AEM GraphQL, para el Envío de fragmentos de contenido, se lanzará a principios de 2021.
+>El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
 >
->La documentación relacionada ya está disponible para fines de previsualización.
+>Póngase en contacto con [Soporte técnico de Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar la API para su AEM como programa de Cloud Service.
 
 Para empezar con las consultas de GraphQL y cómo funcionan con fragmentos de contenido de AEM ayuda ver algunos ejemplos prácticos.
 
