@@ -1,36 +1,29 @@
 ---
-title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.12.0
-description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.12.0
+title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2021.1.0
+description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2021.1.0
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
 
-# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.12.0 {#release-notes}
+# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2021.1.0 {#release-notes}
 
-Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.12.0.
+Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2021.1.0
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.12.0 es el 10 de diciembre de 2020.
+La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.1.0 es el 14 de enero de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-### Novedades {#what-is-new}
-
-* Administración automática de [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
-
-* Administración de autoservicio de [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-* La página de detalles **Entorno** actualizada ahora permite a los usuarios administrar nombres de dominio personalizados y Listas de permitidos IP en sus entornos.
-
-
 ### Corrección de errores {#bug-fixes}
 
-* Algunas ocurrencias de errores en la etapa de análisis de código sin proporcionar resultados resueltos.
+* En ocasiones, la instancia de Producción de recursos puede mostrar el estado de Brand Portal en la página de detalles **Entornos** como *Pendiente* sin permitir al usuario realizar ninguna acción.
 
-* La tarjeta de entorno no mostraba de forma consistente el botón **Añadir**.
+* Al activar una deshibernación desde Cloud Manager, a veces se mostraba un mensaje de error incluso cuando la deshibernación se iniciaba correctamente.
+
+* Se han abordado casos raros de fallo en la creación o eliminación de entornos.
