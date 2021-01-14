@@ -2,9 +2,9 @@
 title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido de Adobe Experience Manager (AEM) como Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de la página.
 translation-type: tm+mt
-source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '2012'
 ht-degree: 6%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 6%
 
 # Trabajar con fragmentos de contenido{#working-with-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->La API de AEM GraphQL, para el Envío de fragmentos de contenido, se lanzará a principios de 2021.
->
->La documentación relacionada ya está disponible para fines de previsualización.
+>Póngase en contacto con [Soporte técnico de Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar la API para su AEM como programa de Cloud Service.
 
 Con Adobe Experience Manager (AEM) como Cloud Service, los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de la página](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Permiten preparar contenido listo para su uso en varias ubicaciones o en varios canales.
 
