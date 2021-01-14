@@ -2,10 +2,10 @@
 title: 'Creación de plantillas de página  '
 description: La plantilla define la estructura de la página resultante y con el editor de plantillas, crear y mantener plantillas ya no es una tarea solo de desarrollador
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 98%
+source-wordcount: '4600'
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 >
 >A menudo, las **plantillas permitidas** se predefinen cuando su sitio web se configura inicialmente.
 
->[!CAUTION]
+>[!TIP]
 >
 >No introduzca nunca en una plantilla información que deba internacionalizarse. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -126,6 +126,12 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >[!NOTE]
    >
    >Cuando se crea una plantilla nueva, se marca como **Borrador** en la consola; esto indica que aún no está disponible para que los autores de páginas la utilicen.
+
+>[!NOTE]
+>
+>Las plantillas son herramientas poderosas para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden abrumar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>
+>Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
 ### Definición de las propiedades de la plantilla: autor de plantillas    {#defining-template-properties-template-author}
 
