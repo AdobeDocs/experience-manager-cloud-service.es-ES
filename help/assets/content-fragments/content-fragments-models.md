@@ -2,9 +2,9 @@
 title: Modelos de fragmento de contenido
 description: Los modelos de fragmentos de contenido se utilizan para crear fragmentos de contenido con contenido estructurado.
 translation-type: tm+mt
-source-git-commit: 287e2cec425c2fd7e80618d247dc658ae1280066
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 10%
 
 ---
@@ -12,21 +12,11 @@ ht-degree: 10%
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->La API de AEM GraphQL, para el Envío de fragmentos de contenido, se lanzará a principios de 2021.
->
->La documentación relacionada ya está disponible para fines de previsualización.
+>Póngase en contacto con [Soporte técnico de Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar la API para su AEM como programa de Cloud Service.
 
 Los modelos de fragmento de contenido definen la estructura del contenido para los [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md).
 
