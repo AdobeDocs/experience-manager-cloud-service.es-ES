@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ El código no podrá descargar archivos binarios en tiempo de ejecución ni modi
 
 Se debe acceder a los binarios a través de la CDN, que servirá binarios fuera de los servicios principales de AEM.
 
-Por ejemplo, no utilice `asset.getOriginal().getStream()`, lo que desencadena la descarga de un binario en el disco efímero del servicio de AEM.
+Por ejemplo, no utilice `asset.getOriginal().getStream()`, que déclencheur descargar un binario en el disco efímero del servicio de AEM.
 
 ## No hay agentes de replicación inversa {#no-reverse-replication-agents}
 
@@ -222,8 +222,8 @@ AEM como Cloud Service requiere que el correo saliente esté cifrado. Las seccio
 De forma predeterminada, el correo electrónico saliente está desactivado. Para activarlo, envíe un ticket de asistencia técnica con:
 
 1. El nombre de dominio completo para el servidor de correo (por ejemplo, `smtp.sendgrid.net`)
-1. El puerto que se va a utilizar. Debe ser el puerto 465 si es compatible con el servidor de correo; de lo contrario, puerto 587 Tenga en cuenta que el puerto 587 solo se puede usar si el servidor de correo requiere y aplica TLS en ese puerto
-1. ID de programa y ID de entorno de los entornos de los que les gustaría enviar por correo
+1. El puerto que se va a utilizar. Debe ser el puerto 465 si es compatible con el servidor de correo, de lo contrario puerto 587. Tenga en cuenta que el puerto 587 solo se puede usar si el servidor de correo requiere y aplica TLS en ese puerto
+1. El ID de programa y el ID de entorno de los entornos de los que les gustaría enviar por correo
 1. Si se necesita acceso SMTP en el autor, la publicación o ambos.
 
 ### Envío de correos electrónicos {#sending-emails}
@@ -240,16 +240,16 @@ AEM CS requiere que el correo se envíe a través del puerto 465. Si un servidor
 
 Los correos electrónicos de AEM deben enviarse mediante el servicio OSGi [Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte la [documentación de AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) para obtener más información sobre la configuración de la configuración de correo electrónico. Para AEM CS, se deben realizar los siguientes ajustes en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte la [documentación de AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) para obtener más información sobre la configuración de la configuración de correo electrónico. Para AEM como Cloud Service, se deben realizar los siguientes ajustes en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
 
 Si se ha solicitado el puerto 465:
 
 * set `smtp.port` to `465`
 * set `smtp.ssl` to `true`
-* set `smtp.starttls` to `false`
 
 Si se ha solicitado el puerto 587 (solo se permite si el servidor de correo no admite el puerto 465):
 
 * set `smtp.port` to `587`
 * set `smtp.ssl` to `false`
-* set `smtp.starttls` to `true`
+
+La propiedad `smtp.starttls` se establecerá automáticamente por AEM como Cloud Service en tiempo de ejecución con un valor adecuado. Será `false` para el puerto 465 y `true` para el puerto 587. Esto es independientemente de los valores `smtp.starttls` establecidos en la configuración OSGI.
