@@ -2,7 +2,7 @@
 title: Generación de Tokenes de acceso para las API del servidor
 description: Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y AEM como Cloud Service mediante la generación de un autentificador JWT seguro
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -67,7 +67,7 @@ La aplicación no AEM que realiza llamadas a AEM debería poder acceder a la AEM
 
 Utilice las credenciales para crear un token de JWT en una llamada al servicio IMS de Adobe para recuperar un token de acceso válido durante 24 horas.
 
-Las credenciales de servicio de AEM-CS se pueden intercambiar por un token de acceso mediante bibliotecas de cliente diseñadas para este fin. Las bibliotecas de cliente están disponibles en el repositorio público de GitHub](https://github.com/adobe/aemcs-api-client-lib) del [Adobe, que contiene información más detallada y más reciente.
+Las credenciales de servicio de AEM-CS pueden intercambiarse por un token de acceso mediante bibliotecas de cliente diseñadas para este fin. Las bibliotecas de cliente están disponibles en el repositorio público de GitHub](https://github.com/adobe/aemcs-api-client-lib) del [Adobe, que contiene información más detallada y más reciente.
 
 ```
 /*jshint node:true */
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## Flujo de desarrollador {#developer-flow}
 
-Es probable que los desarrolladores deseen realizar pruebas con una instancia de desarrollo de su aplicación no AEM (ya sea ejecutándose en su ordenador portátil o alojada) que realiza solicitudes a un AEM de desarrollo como entorno de desarrollo Cloud Service. Sin embargo, dado que los desarrolladores no necesariamente tienen acceso de rol de administrador al AEM como entorno de desarrollo de Cloud Service, no podemos asumir que pueden generar el portador de JWT descrito en el flujo regular de servidor a servidor. Por lo tanto, proporcionamos un mecanismo para que un desarrollador genere un token de acceso directamente que pueda utilizarse en solicitudes para AEM como entornos Cloud Service a los que tienen acceso. Consulte la [documentación de las directrices para desarrolladores](/help/implementing/developing/introduction/development-guidelines.md) para obtener información sobre los permisos necesarios para utilizar la AEM como una consola para desarrolladores de Cloud Service.
+Es probable que los desarrolladores deseen realizar pruebas con una instancia de desarrollo de su aplicación no AEM (ya sea ejecutándose en su ordenador portátil o alojada) que realiza solicitudes a un AEM de desarrollo como entorno de desarrollo Cloud Service. Sin embargo, dado que los desarrolladores no necesariamente tienen acceso de rol de administrador al AEM como entorno de desarrollo de Cloud Service, no podemos asumir que pueden generar el portador de JWT descrito en el flujo regular de servidor a servidor. Por lo tanto, proporcionamos un mecanismo para que un desarrollador genere un token de acceso directamente que pueda utilizarse en solicitudes para AEM como entornos Cloud Service a los que tienen acceso.
+
+Consulte la [documentación de las directrices para desarrolladores](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) para obtener información sobre los permisos necesarios para utilizar la AEM como una consola para desarrolladores de Cloud Service.
 
 >[!NOTE]
 >
