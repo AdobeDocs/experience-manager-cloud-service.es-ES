@@ -2,7 +2,7 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 5%
@@ -84,4 +84,3 @@ La fecha de versión de la herramienta de transferencia de contenido v1.1.20 es 
 * El estado de la interfaz de usuario de la Herramienta de transferencia de contenido (CTT) para un conjunto de migración no se mantuvo y cambió tras un período de inactividad. Esto se ha solucionado.
 * La opción para los registros de vista se desactivaba si los registros no estaban disponibles. Esto se ha solucionado y se han agregado mensajes para notificar al usuario por qué faltan registros.
 * El estado de la interfaz de usuario de la herramienta de transferencia de contenido mostraba FAILED cuando el usuario detenía una ingestión. Esto se ha solucionado para mostrar *STOPPED* en su lugar.
-
