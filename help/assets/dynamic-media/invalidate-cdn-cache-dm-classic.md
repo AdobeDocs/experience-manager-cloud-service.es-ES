@@ -2,9 +2,9 @@
 title: Invalidación de la caché de CDN mediante Dynamic Media Classic
 description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '663'
 ht-degree: 26%
 
 ---
@@ -22,15 +22,9 @@ Consulte también [Información general de caché en Dynamic Media Classic](http
 
 **Para invalidar la caché de CDN mediante Dynamic Media Classic:**
 
-1. Realice una de las acciones siguientes:
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
 
-   * En el navegador web, inicie sesión en su cuenta de Dynamic Media Classic:
-
-      [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-      Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
-
-   * Abra la aplicación Dynamic Media Classic e inicie sesión en su cuenta.
+   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
 1. Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**.
 1. En la página Configuración general de la aplicación, bajo el encabezado del grupo Servidores, busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.
