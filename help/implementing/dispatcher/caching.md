@@ -2,9 +2,9 @@
 title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
+source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1535'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,15 @@ En esta página también se describe cómo se invalida la caché del despachante
 
 ### HTML/Texto {#html-text}
 
-* de forma predeterminada, el explorador almacena en caché durante cinco minutos, según el encabezado de control de caché emitido por la capa apache. La CDN también respeta este valor.
+* de forma predeterminada, el explorador almacena en caché durante cinco minutos, según el encabezado `cache-control` emitido por la capa apache. La CDN también respeta este valor.
+* la configuración predeterminada de almacenamiento en caché HTML/Texto se puede deshabilitar definiendo la variable `DISABLE_DEFAULT_CACHING` en `global.vars`:
+
+```
+Define DISABLE_DEFAULT_CACHING
+```
+
+Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere un ajuste preciso del encabezado de edad (con un valor basado en el día natural), ya que de forma predeterminada el encabezado de edad está establecido en 0. Dicho esto, **tenga cuidado al desactivar el almacenamiento en caché predeterminado.**
+
 * se puede anular para todo el contenido HTML/Texto definiendo la variable `EXPIRATION_TIME` en `global.vars` mediante el uso de la AEM como herramienta de Dispatcher de SDK para Cloud Service.
 * se puede anular en un nivel más fino mediante las siguientes directivas apache mod_headers:
 
