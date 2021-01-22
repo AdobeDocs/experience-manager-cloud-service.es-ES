@@ -2,9 +2,9 @@
 title: Uso de conjuntos de reglas para transformar direcciones URL
 description: Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '767'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 
    Consulte [Compatibilidad de Adobe Dynamic Media Classic con SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
-* Configuración de la disposición del contenido para activar una descarga.
+* Configuración de la disposición del contenido para el déclencheur de una descarga.
 * Simplifique las direcciones URL de plantilla del servicio de imágenes para su personalización. Por ejemplo: convierta `rgb{XX,YY,ZZ}` en el `\redXX\greenYY\blueZZ` listo para RTF
 
 * Solicite que se codifiquen determinados caracteres, como `$`, `{` y `}`, y que se descodifiquen determinados caracteres para ImageServer. Por ejemplo, Facebook no funciona bien con las direcciones URL que contienen caracteres especiales.
@@ -55,11 +55,9 @@ Consulte también [Uso de la imagen &#39;asset&#39; en lugar de &#39;is&#39; en 
 
 **Para implementar conjuntos de reglas XML:**
 
-1. Inicie sesión en su cuenta de Dynamic Media Classic:
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
-
-   Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
 1. Cargue el archivo del conjunto de reglas haciendo lo siguiente:
 
