@@ -2,9 +2,9 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3869'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ Con la nueva arquitectura, AEM es responsable de los recursos de origen principa
 
 1. Cuando el recurso de origen principal se carga en AEM, se replica en Dynamic Media. En ese momento, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
 1. Una vez generadas las representaciones, AEM acceder a las representaciones de Dynamic Media remotas y realizar la previsualización de ellas de forma segura (no se devuelve ningún binario a la instancia de AEM).
-1. Una vez que el contenido está listo para publicarse y aprobarse, activa el servicio de Dynamic Media para insertar contenido en los servidores envío y almacenar en caché el contenido en la CDN.
+1. Una vez que el contenido está listo para publicarse y aprobarse, déclencheur al servicio Dynamic Media para insertar el contenido en los servidores de envío y almacenar el contenido en caché en la CDN.
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -48,7 +48,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Creación de una nueva configuración de Dynamic Media en Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. En AEM, toque el logotipo AEM para acceder a la consola de navegación global.
 1. En el lado izquierdo de la consola, toque el icono Herramientas y luego **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Para realizar una previsualización segura del contenido de Dynamic Media antes de que se publique, debe &quot;lista de permitidos&quot; de la instancia de creación de AEM para conectarse a Dynamic Media. Para configurarlo, haga lo siguiente:
 
-   * Inicie sesión en su cuenta de Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
    * En la barra de navegación situada cerca de la parte superior derecha de la página, haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Ajustes de publicación > Servidor de imágenes]**.
 
    * En la lista desplegable Contexto de publicación de la página Servidor de imágenes, seleccione **[!UICONTROL Probar servicio de imágenes]**.
@@ -186,7 +186,7 @@ Si desea personalizar aún más la configuración y la configuración de Dynamic
 
 Utilice la interfaz de usuario de Dynamic Media Classic para realizar cambios en la configuración de Dynamic Media.
 
-Algunas de las tareas anteriores requieren que inicie sesión en Dynamic Media Classic aquí: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Algunas de las tareas anteriores requieren que abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
 Las tareas de configuración y configuración incluyen lo siguiente:
 
@@ -231,7 +231,8 @@ La administración dinámica de color de los medios le permite colorear los recu
 
 Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:
 
-1. [Inicie sesión en las credenciales de ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) clasificación de Dynamic Media proporcionadas durante el aprovisionamiento. Vaya a **[!UICONTROL Ajustes > Ajustes de aplicación]**.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta con las credenciales proporcionadas durante el aprovisionamiento.
+1. Vaya a **[!UICONTROL Ajustes > Ajustes de aplicación]**.
 1. Expanda el área **[!UICONTROL Ajustes de publicación]** y seleccione **[!UICONTROL Servidor de imágenes]**. Configure **[!UICONTROL Publicar contexto]** en **[!UICONTROL Servicio de imágenes]** cuando establezca los valores predeterminados para las instancias de publicación.
 1. Desplácese a la propiedad que necesite cambiar, por ejemplo, una propiedad en el área **[!UICONTROL Atributos de administración de color]**.
 Puede establecer las siguientes propiedades de corrección de color:
