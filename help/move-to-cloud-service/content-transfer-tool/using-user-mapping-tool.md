@@ -2,10 +2,10 @@
 title: Uso de la herramienta Asignación de usuarios
 description: Uso de la herramienta Asignación de usuarios
 translation-type: tm+mt
-source-git-commit: 664c278494a5ac88362b994946060ab3baa846d8
+source-git-commit: 410b7900981596590fa80b286b40a965700f108e
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '750'
+ht-degree: 1%
 
 ---
 
@@ -42,3 +42,39 @@ Siga estos pasos para configurar esta configuración:
 1. Generar un par de claves o Cargar una clave pública (rsa no es buena)
 1. Genere un token de acceso (o token JWT o token de portador).
 1. Guarde toda esta información (ID de cliente, Secreto de cliente, ID de cuenta técnica, Correo electrónico de cuenta técnica, ID de organización, Token de acceso) en un lugar seguro.
+
+## Interfaz de usuario {#user-interface}
+
+La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde el portal de distribución de software. Para obtener más información sobre la versión más reciente, consulte las Notas de la versión.
+
+1. Seleccione el Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Transferencia de contenido**.
+1. Haga clic en **Crear configuración de asignación de usuarios**.
+
+   >[!NOTE]
+   >Si omite este paso, la asignación de usuarios y grupos se omitirá durante la fase de Extracción.
+
+   Rellene los campos de la Configuración de la API de administración de usuarios como se describe a continuación:
+
+   * **ID** de organización: Introduzca el identificador de organización de IMS de la organización a la que se están migrando los usuarios.
+
+      >[!NOTE]
+      >Para obtener el identificador de organización, inicie sesión en el [Admin Console](https://adminconsole.adobe.com/) y elija su organización (en el área superior derecha) si pertenece a más de una. El identificador de organización estará en la dirección URL de esa página, en el formato `xx@AdobeOrg`, donde xx es el identificador de organización de IMS.  También puede encontrar el identificador de organización en la página [Consola de desarrollador de Adobe](https://console.adobe.io) donde se genera el Token de acceso.
+
+   * **ID** del cliente: Introduzca el ID de cliente que guardó en el paso Configuración
+
+   * **token de acceso**: Introduzca el Token de acceso guardado en el paso Configuración
+
+      >[!NOTE]
+      >El Token de acceso caduca cada 24 horas y es necesario crear uno nuevo. Para crear un nuevo token, vuelva a [Consola de desarrollador de Adobe](https://console.adobe.io), elija el proyecto, haga clic en API de administración de usuarios y pegue la misma clave privada en el cuadro.
+
+1. Después de introducir la información anterior, haga clic en Guardar.
+
+1. Para crear un conjunto de migración, haga clic en Crear conjunto de migración, rellene los campos y, a continuación, haga clic en Guardar. Para obtener más información, consulte Ejecución de la herramienta de transferencia de contenido.
+
+   >[!NOTE]
+   >El conmutador para incluir usuarios de asignaciones de usuarios y grupos de IMS está activado de forma predeterminada. Con esta configuración, cuando se realice la Extracción en este conjunto de migración, la herramienta de asignación de usuarios se ejecutará como parte de la fase de Extracción. Esta es la forma recomendada de ejecutar la fase de Extracción de la herramienta de transferencia de contenido. Si esta opción está desactivada y/o no se crea la configuración de asignación de usuarios, la asignación de usuarios y grupos se omitirá durante la fase de Extracción.
+
+1. Para ejecutar la fase de Extracción, consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
+
+
+
