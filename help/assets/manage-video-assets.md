@@ -3,9 +3,9 @@ title: Administrar recursos de vídeo
 description: Cargue, previsualización, anote y publique recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 6%
 
 ---
@@ -53,11 +53,11 @@ Para procesar recursos con un perfil de procesamiento, agregue un perfil a una c
 ## Prácticas recomendadas y limitaciones {#tips-limitations}
 
 * Sin la licencia [!DNL Dynamic Media], solo puede procesar archivos MP4 mediante perfiles de procesamiento.
-* Al transcodificar archivos MP4 mediante Perfiles de procesamiento, se aplican las siguientes directrices y limitaciones:
+* Al transcodificar archivos MP4 con Perfiles de procesamiento, se aplican las siguientes directrices y limitaciones:
 
    * Los archivos Apple ProRes solo pueden transcodificarse a una resolución máxima de 1080p.
    * Si el archivo de origen tiene una velocidad de bits superior a 200 Mbps, sólo puede transcodificar a una resolución máxima de 1080p.
-   * Si la velocidad de fotogramas de origen es >= 60 fps, el tamaño máximo del archivo de origen que puede utilizar es
+   * Si la velocidad de fotogramas de origen >= 60 fps entonces, el tamaño máximo del archivo de origen que puede utilizar es,
 
       * 400 MB para transcodificación de 4 k.
       * 800 MB para la transcodificación de 1080p.
