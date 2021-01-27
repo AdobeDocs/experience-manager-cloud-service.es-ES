@@ -2,7 +2,7 @@
 title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 translation-type: tm+mt
-source-git-commit: 38a589297caf3b28c7be569a819bd104a5079066
+source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
 workflow-type: tm+mt
 source-wordcount: '4050'
 ht-degree: 9%
@@ -195,15 +195,15 @@ Las secciones a continuación describen cómo validar la configuración localmen
 
 La herramienta de validación está disponible en el SDK en `bin/validator` como archivo binario de Mac OS, Linux o Windows, lo que permite a los clientes ejecutar la misma validación que Cloud Manager realizará durante la creación e implementación de una versión.
 
-Se invoca como: `validator full [-d folder] [-w whitelist] zip-file | src folder`
+Se invoca como: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
 La herramienta valida que la configuración del despachante está utilizando las directivas adecuadas admitidas por AEM como servicio de nube, analizando todos los archivos con el patrón `conf.d/enabled_vhosts/*.vhost`. Las directivas permitidas en los archivos de configuración de Apache se pueden enumerar ejecutando el comando de lista de permitidos del validador:
 
 ```
-$ validator whitelist
+$ validator allowlist
 Cloud manager validator 2.0.4
  
-Whitelisted directives:
+Allowlisted directives:
   <Directory>
   ...
   
@@ -249,7 +249,7 @@ Cuando se ejecuta con el artefacto mecanizado o con el subdirectorio `dispatcher
 ```
 $ validator full dispatcher/src
 Cloud manager validator 1.0.4
-2019/06/19 15:41:37 Apache configuration uses non-whitelisted directives:
+2019/06/19 15:41:37 Apache configuration uses non-allowlisted directives:
   conf.d/enabled_vhosts/aem_publish.vhost:46: LogLevel
 2019/06/19 15:41:37 Dispatcher configuration validation failed:
   conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
