@@ -2,9 +2,9 @@
 title: Uso de la herramienta Asignación de usuarios
 description: Uso de la herramienta Asignación de usuarios
 translation-type: tm+mt
-source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
+source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '757'
 ht-degree: 1%
 
 ---
@@ -35,17 +35,17 @@ La herramienta de asignación de usuarios utiliza una API que le permite buscar 
 Siga estos pasos para configurar esta configuración:
 
 1. Vaya a [Consola de programadores de Adobe](https://console.adobe.io) con su Adobe ID.
-1. Crear un proyecto nuevo o abrir un proyecto existente
-1. Añadir una API
-1. Elija la API de administración de usuarios
-1. Crear una credencial JWT
-1. Generar un par de claves o Cargar una clave pública (rsa no es buena)
+1. Cree un proyecto nuevo o abra un proyecto existente.
+1. Añada una API.
+1. Elija la API de administración de usuarios.
+1. Cree una credencial JWT.
+1. Genere un par de claves o Cargue una clave pública (rsa no es buena).
 1. Genere un token de acceso (o token JWT o token de portador).
-1. Guarde toda esta información (ID de cliente, Secreto de cliente, ID de cuenta técnica, Correo electrónico de cuenta técnica, ID de organización, Token de acceso) en un lugar seguro.
+1. Guarde toda esta información, como **ID de cliente**, **Secreto de cliente**, **ID de cuenta técnica**, **Correo electrónico de cuenta técnica**, **ID de organización** y **Token de acceso** de forma segura.
 
 ## Interfaz de usuario {#user-interface}
 
-La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde el portal de distribución de software. Para obtener más información sobre la versión más reciente, consulte las Notas de la versión.
+La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde el portal de distribución de software. Para obtener más información sobre la versión más reciente, consulte las [Notas de la versión actuales](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Seleccione el Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Transferencia de contenido**.
 1. Haga clic en **Crear configuración de asignación de usuarios**.
