@@ -2,9 +2,9 @@
 title: Uso de la herramienta Asignación de usuarios
 description: Uso de la herramienta Asignación de usuarios
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,11 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
    >[!NOTE]
    >Si omite este paso, la asignación de usuarios y grupos se omitirá durante la fase de Extracción.
 
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    Rellene los campos de la Configuración de la API de administración de usuarios como se describe a continuación:
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **ID** de organización: Introduzca el identificador de organización de IMS de la organización a la que se están migrando los usuarios.
 
@@ -67,12 +71,17 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
       >[!NOTE]
       >El Token de acceso caduca cada 24 horas y es necesario crear uno nuevo. Para crear un nuevo token, vuelva a [Consola de desarrollador de Adobe](https://console.adobe.io), elija el proyecto, haga clic en API de administración de usuarios y pegue la misma clave privada en el cuadro.
 
-1. Después de introducir la información anterior, haga clic en Guardar.
+1. Después de escribir la información anterior, haga clic en **Guardar**.
 
-1. Para crear un conjunto de migración, haga clic en Crear conjunto de migración, rellene los campos y, a continuación, haga clic en Guardar. Para obtener más información, consulte Ejecución de la herramienta de transferencia de contenido.
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. Para crear un conjunto de migración, haga clic en **Crear conjunto de migración**, rellene los campos y, a continuación, haga clic en **Guardar**. Para obtener más información, consulte Ejecución de la herramienta de transferencia de contenido.
 
    >[!NOTE]
    >El conmutador para incluir usuarios de asignaciones de usuarios y grupos de IMS está activado de forma predeterminada. Con esta configuración, cuando se realice la Extracción en este conjunto de migración, la herramienta de asignación de usuarios se ejecutará como parte de la fase de Extracción. Esta es la forma recomendada de ejecutar la fase de Extracción de la herramienta de transferencia de contenido. Si esta opción está desactivada y/o no se crea la configuración de asignación de usuarios, la asignación de usuarios y grupos se omitirá durante la fase de Extracción.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Para ejecutar la fase de Extracción, consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
 
