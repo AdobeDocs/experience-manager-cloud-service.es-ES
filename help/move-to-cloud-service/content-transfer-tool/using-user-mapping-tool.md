@@ -2,9 +2,9 @@
 title: Uso de la herramienta Asignación de usuarios
 description: Uso de la herramienta Asignación de usuarios
 translation-type: tm+mt
-source-git-commit: dcba197624b6a7ae668b11f43f60b13a9da0080e
+source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-Como parte del recorrido de transición para AEM como Cloud Service, debe mover usuarios y grupos del sistema de AEM existente a AEM como Cloud Service. Esto lo realiza la Herramienta de transferencia de contenido.
+Como parte del recorrido de transición a Adobe Experience Manager (AEM) como Cloud Service, debe mover usuarios y grupos del sistema de AEM existente a AEM como Cloud Service. Esto lo realiza la Herramienta de transferencia de contenido.
 
 Un cambio importante en AEM como Cloud Service es el uso completamente integrado de ID de Adobe para acceder al nivel de autor.  Esto requiere el uso de Adobe Admin Console para administrar usuarios y grupos de usuarios. La información de usuario-perfil está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona el inicio de sesión único en todas las aplicaciones de nube de Adobe. Para obtener más información, consulte Identity Management. Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar los usuarios y grupos de duplicado en la instancia de creación de Cloud Service.
 
@@ -22,17 +22,17 @@ Un cambio importante en AEM como Cloud Service es el uso completamente integrado
 
 Hay algunos casos excepcionales que hay que considerar. Se registrarán los siguientes casos específicos y no se asignará al usuario o grupo en cuestión:
 
-1. Si un usuario no tiene una dirección de correo electrónico en el campo `profile/email` de su nodo jcr.
+1. Si un usuario no tiene una dirección de correo electrónico en el campo `profile/email` de su nodo *jcr*.
 
-1. Si no se encuentra un correo electrónico determinado en el sistema IMS para el identificador de organización utilizado (o si el identificador IMS no se puede recuperar por otro motivo).
+1. Si no se encuentra un correo electrónico determinado en el sistema Identity Management System de Adobe (IMS) para el identificador de organización utilizado (o si el identificador IMS no se puede recuperar por otro motivo).
 
-1. Si el usuario está deshabilitado actualmente, se trata de la misma manera que si no estuviera deshabilitado.  Se asignará y migrará como de costumbre, y permanecerá deshabilitado en la instancia de nube.
+1. Si el usuario está deshabilitado actualmente, se trata igual que si no estuviera deshabilitado. Se asignará y migrará como de costumbre, y permanecerá deshabilitado en la instancia de nube.
 
 ## Uso de la herramienta de asignación de usuarios {#using-user-mapping-tool}
 
-La herramienta de asignación de usuarios utiliza una API que le permite buscar usuarios de IMS por correo electrónico y devolver sus ID de IMS. Esta API requiere que el usuario cree un ID de cliente para su organización, un secreto de cliente y un autentificador de Token de acceso/portador.
+La herramienta de asignación de usuarios utiliza una API que le permite buscar usuarios de Adobe Identity Management System (IMS) por correo electrónico y devolver sus ID de IMS. Esta API requiere que el usuario cree un ID de cliente para su organización, un secreto de cliente y un autentificador de acceso o portador.
 
-Siga estos pasos para configurar esta configuración:
+Siga los pasos a continuación para configurar esta configuración:
 
 1. Vaya a [Consola de programadores de Adobe](https://console.adobe.io) con su Adobe ID.
 1. Cree un proyecto nuevo o abra un proyecto existente.
@@ -41,7 +41,7 @@ Siga estos pasos para configurar esta configuración:
 1. Cree una credencial JWT.
 1. Genere un par de claves o Cargue una clave pública (rsa no es buena).
 1. Genere un token de acceso (o token JWT o token de portador).
-1. Guarde toda esta información, como **ID de cliente**, **Secreto de cliente**, **ID de cuenta técnica**, **Correo electrónico de cuenta técnica**, **ID de organización** y **Token de acceso** de forma segura.
+1. Guarde toda esta información como **ID de cliente**, **Secreto de cliente**, **ID de cuenta técnica**, **Correo electrónico de cuenta técnica**, **ID de organización** y **Token de acceso** de forma segura.
 
 ## Interfaz de usuario {#user-interface}
 
@@ -59,31 +59,31 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
-   * **ID** de organización: Introduzca el identificador de organización de IMS de la organización a la que se están migrando los usuarios.
+   * **ID** de organización: Introduzca el ID de organización de Adobe Identity Management System (IMS) para la organización a la que se están migrando los usuarios.
 
       >[!NOTE]
       >Para obtener el identificador de organización, inicie sesión en el [Admin Console](https://adminconsole.adobe.com/) y elija su organización (en el área superior derecha) si pertenece a más de una. El identificador de organización estará en la dirección URL de esa página, en el formato `xx@AdobeOrg`, donde xx es el identificador de organización de IMS.  También puede encontrar el identificador de organización en la página [Consola de desarrollador de Adobe](https://console.adobe.io) donde se genera el Token de acceso.
 
-   * **ID** del cliente: Introduzca el ID de cliente que guardó en el paso Configuración
+   * **ID** del cliente: Introduzca el ID de cliente que guardó en el paso Configuración.
 
-   * **token de acceso**: Introduzca el Token de acceso guardado en el paso Configuración
+   * **token de acceso**: Introduzca el Token de acceso que guardó en el paso Configuración.
 
       >[!NOTE]
-      >El Token de acceso caduca cada 24 horas y es necesario crear uno nuevo. Para crear un nuevo token, vuelva a [Consola de desarrollador de Adobe](https://console.adobe.io), elija el proyecto, haga clic en API de administración de usuarios y pegue la misma clave privada en el cuadro.
+      >El Token de acceso caduca cada 24 horas y es necesario crear uno nuevo. Para crear un nuevo token, vuelva a [Consola de desarrollador de Adobe](https://console.adobe.io), elija el proyecto, haga clic en **API de administración de usuarios** y pegue la misma clave privada en el cuadro.
 
 1. Después de escribir la información anterior, haga clic en **Guardar**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
 
 
-1. Para crear un conjunto de migración, haga clic en **Crear conjunto de migración**, rellene los campos y, a continuación, haga clic en **Guardar**. Para obtener más información, consulte Ejecución de la herramienta de transferencia de contenido.
+1. Para crear un conjunto de migración, haga clic en **Crear conjunto de migración**, rellene los campos y, a continuación, haga clic en **Guardar**. Para obtener más información, consulte [Ejecución de la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
 
    >[!NOTE]
    >El conmutador para incluir usuarios de asignaciones de usuarios y grupos de IMS está activado de forma predeterminada. Con esta configuración, cuando se realice la Extracción en este conjunto de migración, la herramienta de asignación de usuarios se ejecutará como parte de la fase de Extracción. Esta es la forma recomendada de ejecutar la fase de Extracción de la herramienta de transferencia de contenido. Si esta opción está desactivada y/o no se crea la configuración de asignación de usuarios, la asignación de usuarios y grupos se omitirá durante la fase de Extracción.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
-1. Para ejecutar la fase de Extracción, consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool).
+1. Para ejecutar la fase de Extracción, consulte [Ejecución de la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
 
 
 
