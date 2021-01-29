@@ -2,10 +2,10 @@
 title: Uso de la herramienta Asignación de usuarios
 description: Uso de la herramienta Asignación de usuarios
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '783'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Como parte del recorrido de transición a Adobe Experience Manager (AEM) como Cloud Service, debe mover usuarios y grupos del sistema de AEM existente a AEM como Cloud Service. Esto lo realiza la Herramienta de transferencia de contenido.
 
-Un cambio importante en AEM como Cloud Service es el uso completamente integrado de ID de Adobe para acceder al nivel de autor.  Esto requiere el uso de Adobe Admin Console para administrar usuarios y grupos de usuarios. La información de usuario-perfil está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona el inicio de sesión único en todas las aplicaciones de nube de Adobe. Para obtener más información, consulte Identity Management. Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar los usuarios y grupos de duplicado en la instancia de creación de Cloud Service.
+Un cambio importante en AEM como Cloud Service es el uso completamente integrado de ID de Adobe para acceder al nivel de autor.  Esto requiere el uso de [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de usuario-perfil está centralizada en el sistema Identity Management de Adobe (IMS), que proporciona el inicio de sesión único en todas las aplicaciones de nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar los usuarios y grupos de duplicado en la instancia de creación de Cloud Service.
 
 ## Consideraciones importantes {#important-considerations}
 
@@ -45,7 +45,7 @@ Siga los pasos a continuación para configurar esta configuración:
 
 ## Interfaz de usuario {#user-interface}
 
-La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde el portal de distribución de software. Para obtener más información sobre la versión más reciente, consulte las [Notas de la versión actuales](/help/release-notes/release-notes-cloud/release-notes-current.md).
+La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html). Para obtener más información sobre la versión más reciente, consulte las [Notas de la versión actuales](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Seleccione el Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Transferencia de contenido**.
 1. Haga clic en **Crear configuración de asignación de usuarios**.
