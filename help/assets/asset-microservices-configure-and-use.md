@@ -3,9 +3,9 @@ title: Configuración y uso de microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2576'
 ht-degree: 1%
 
 ---
@@ -180,18 +180,18 @@ Para comprobar que los recursos se procesan, previsualización las representacio
 
 ## Flujos de trabajo posteriores al procesamiento {#post-processing-workflows}
 
-En el caso de que sea necesario un procesamiento adicional de los recursos que no se pueda lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo adicionales posteriores al procesamiento a la configuración. Esto permite agregar un procesamiento totalmente personalizado además del procesamiento configurable mediante microservicios de recursos.
+En una situación en la que se requiere un procesamiento adicional de los recursos que no se puede lograr con los perfiles de procesamiento, se pueden agregar flujos de trabajo adicionales posteriores al procesamiento a la configuración. Esto permite agregar un procesamiento totalmente personalizado además del procesamiento configurable mediante microservicios de recursos.
 
-Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario agregar los iniciadores de flujo de trabajo manualmente para déclencheur. Los ejemplos incluyen:
+Los flujos de trabajo posteriores al procesamiento, si se configuran, son ejecutados automáticamente por [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario agregar iniciadores de flujo de trabajo manualmente para déclencheur de los flujos de trabajo. Los ejemplos incluyen:
 
 * Pasos personalizados del flujo de trabajo para procesar recursos.
 * Integraciones para agregar metadatos o propiedades a recursos de sistemas externos, por ejemplo, información de productos o procesos.
 * Procesamiento adicional realizado por servicios externos.
 
-Añadir una configuración de flujo de trabajo posterior al procesamiento en Experience Manager consta de los siguientes pasos:
+Para agregar una configuración de flujo de trabajo posterior al procesamiento a [!DNL Experience Manager], siga estos pasos:
 
-* Cree uno o varios modelos de flujo de trabajo. Los documentos lo mencionan como *modelos de flujo de trabajo posteriores al procesamiento*, pero son modelos de flujo de trabajo de Experience Manager normales.
-* Añada pasos específicos del flujo de trabajo a estos modelos. Los pasos se ejecutan en los recursos según una configuración de modelo de flujo de trabajo.
+* Cree uno o varios modelos de flujo de trabajo. Estos modelos personalizados se conocen como *modelos de flujo de trabajo posteriores al procesamiento* en esta documentación. Son modelos de flujo de trabajo [!DNL Experience Manager] normales.
+* Añada los pasos necesarios del flujo de trabajo a estos modelos. Revise los pasos del flujo de trabajo predeterminado y agregue todos los pasos predeterminados necesarios al flujo de trabajo personalizado. Los pasos se ejecutan en los recursos según una configuración de modelo de flujo de trabajo. Por ejemplo, si desea que el etiquetado inteligente se produzca automáticamente tras la carga de recursos, agregue el paso al modelo de flujo de trabajo personalizado posterior al procesamiento.
 * Añada el paso [!UICONTROL Flujo de trabajo completado de recursos de actualización de DAM] al final. Añadir este paso garantiza que el Experience Manager sepa cuándo finaliza el procesamiento y el recurso se puede marcar como procesado, es decir, *New* se muestra en el recurso.
 * Cree una configuración para el servicio de ejecución de flujo de trabajo personalizado que permita configurar la ejecución de un modelo de flujo de trabajo posterior al procesamiento mediante una ruta (ubicación de carpeta) o una expresión normal.
 
@@ -207,7 +207,7 @@ Asegúrese de que el último paso de cada flujos de trabajo posterior al procesa
 
 Para configurar los modelos de flujo de trabajo posteriores al procesamiento que se van a ejecutar para los recursos cargados o actualizados en el sistema una vez finalizado el procesamiento de los microservicios de recursos, es necesario configurar el servicio de ejecución de flujo de trabajo personalizado.
 
-El servicio Ejecutor de flujo de trabajo personalizado (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) es un servicio OSGi y proporciona dos opciones de configuración:
+El Ejecutor de flujo de trabajo personalizado de Adobe CQ DAM (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) es un servicio OSGi y proporciona dos opciones de configuración:
 
 * Flujos de trabajo posteriores al procesamiento por ruta (`postProcWorkflowsByPath`): Se pueden enumerar varios modelos de flujo de trabajo, basados en diferentes rutas de repositorio. Las rutas y los modelos deben separarse con dos puntos. Se admiten rutas de repositorio simples que deben asignarse a un modelo de flujo de trabajo en la ruta `/var`. Por ejemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Flujos de trabajo posteriores al procesamiento por expresión (`postProcWorkflowsByExpression`): Se pueden enumerar varios modelos de flujo de trabajo, basados en diferentes expresiones regulares. Las expresiones y los modelos deben separarse con dos puntos. La expresión regular debe apuntar directamente al nodo Recurso y no a una de las representaciones o archivos. Por ejemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
