@@ -2,10 +2,10 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,11 @@ Existen dos fases asociadas con la transferencia de contenido:
 
    Consulte el Proceso de [Extracción en Transferencia](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) de contenido para obtener más detalles.
 
-2. **Ingesta**: la ingesta hace referencia a la ingesta de contenido del conjunto *de migración* en la instancia de Cloud Service del destinatario.
+>[!NOTE]
+>
+> Se recomienda ejecutar la herramienta de asignación de usuarios como parte de la fase de Extracción. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) para obtener más información.
+
+1. **Ingesta**: la ingesta hace referencia a la ingesta de contenido del conjunto *de migración* en la instancia de Cloud Service del destinatario.
 
    Consulte el Proceso de [Ingesta en Transferencia](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) de contenido para obtener más detalles.
 
