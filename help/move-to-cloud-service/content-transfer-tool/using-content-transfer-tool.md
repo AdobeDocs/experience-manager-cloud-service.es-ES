@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1906'
 ht-degree: 64%
 
 ---
@@ -28,13 +28,11 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * El token de acceso puede caducar periódicamente después de un período de tiempo específico o después de actualizar el entorno del Cloud Service. Si token de acceso ha caducado, no podrá conectarse a la instancia de Cloud Service y tendrá que recuperar el nuevo token de acceso. El icono de estado asociado a un conjunto de migración existente cambiará a una nube roja y mostrará un mensaje cuando pase el ratón por encima.
 
-* Actualmente, el tamaño predeterminado de MongoDB para una AEM como instancia de Cloud Service Author es de 32 GB. Se recomienda enviar un ticket de soporte técnico para aumentar el tamaño de MongoDB para el almacenamiento de segmentos de buenos 20 GB.
-
-* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El proceso *Extracción* copia todo el `/home` en el conjunto de migración y el proceso *Ingestion* copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migrado.
+* Los usuarios y grupos transferidos por la herramienta de transferencia de contenido son solo aquellos que el contenido requiere para satisfacer los permisos. El proceso *Extracción* copia todo el `/home` en el conjunto de migración y el proceso *Ingestion* copia todos los usuarios y grupos a los que se hace referencia en las ACL de contenido migrado. Para asignar automáticamente los usuarios y grupos existentes a sus ID de IMS, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration).
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* Después de completar la fase *Extracción* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingestión* para ingerir contenido en su AEM como Cloud Service *Fase* o *Producción*, deberá registrar un ticket de soporte para notificar al Adobe su intención de ejecutar *Ingestion&lt;a79/> para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso* Ingestión *.* Tendrá que registrar el ticket de soporte una semana antes de la fecha planificada *de ingestión*. Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
+* Después de completar la fase *Extracción* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingestión* para ingerir contenido en su AEM como Cloud Service *Fase* o *Producción*, deberá registrar un ticket de soporte para notificar al Adobe su intención de ejecutar *Ingestion* para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso *Ingestión*. Tendrá que registrar el ticket de soporte una semana antes de la fecha planificada *de ingestión*. Una vez que haya enviado el ticket de soporte técnico, el equipo de soporte técnico le proporcionará orientación sobre los próximos pasos.
    * Registre un ticket de asistencia técnica con los siguientes detalles:
       * Fecha exacta y hora estimada (con su huso horario) cuando planea realizar el inicio de la fase *de ingestión*.
       * Tipo de entorno (fase o producción) en el que se van a ingestar datos.
