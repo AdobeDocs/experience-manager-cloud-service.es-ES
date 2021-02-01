@@ -2,9 +2,9 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,6 @@ Para editar la configuración de Destinatario, siga estos pasos:
 1. Seleccione una configuración existente y haga clic en **Propiedades**.
 2. Edite las propiedades.
 3. Seleccione **Volver a conectar con Adobe Target**.
-   ![Volver a ](assets/edit_config_page1.png "conectarVolver a conectar")
 4. Seleccione **Guardar y cerrar**.
 
 ### Añadir una configuración en un sitio {#add-configuration}
