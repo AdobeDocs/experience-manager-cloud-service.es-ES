@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '649'
 ht-degree: 5%
 
 ---
@@ -73,14 +73,10 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.1.0 es el 1
 
 ### Fecha de la versión {#release-date-ctt}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.1.20 es el 8 de enero de 2021.
+La fecha de versión de la herramienta de transferencia de contenido v1.2.20 es el 1 de febrero de 2021.
 
 ### Novedades en [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Ahora los usuarios pueden saber si su Token de acceso ha caducado al pasar el ratón por el icono de estado en la interfaz de usuario de la Herramienta de transferencia de contenido (CTT). También se les notificará en la interfaz de usuario de Detalles del conjunto de migración que no pueden conectarse a su instancia de Cloud Service.
-
-### Corrección de errores {#ctt-bug-fixes}
-
-* El estado de la interfaz de usuario de la Herramienta de transferencia de contenido (CTT) para un conjunto de migración no se mantuvo y cambió tras un período de inactividad. Esto se ha solucionado.
-* La opción para los registros de vista se desactivaba si los registros no estaban disponibles. Esto se ha solucionado y se han agregado mensajes para notificar al usuario por qué faltan registros.
-* El estado de la interfaz de usuario de la herramienta de transferencia de contenido mostraba FAILED cuando el usuario detenía una ingestión. Esto se ha solucionado para mostrar *STOPPED* en su lugar.
+* Nueva capacidad e interfaz de usuario agregada a la herramienta de transferencia de contenido: herramienta de asignación de usuarios. Esta función asigna automáticamente los usuarios y grupos existentes a sus ID de sistema de Identity Management de Adobe como parte de la actividad de migración de contenido. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
+* La herramienta de transferencia de contenido ahora migra todos los grupos y usuarios a los que se hace referencia en el conjunto de migración, incluidos los elementos secundarios.
+* Los usuarios pueden seleccionar determinadas rutas en `/etc` al crear conjuntos de migración.
