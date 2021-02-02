@@ -2,7 +2,7 @@
 title: Administración de ajustes preestablecidos de visor
 description: Cómo crear y administrar ajustes preestablecidos de visor en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '4246'
 ht-degree: 16%
@@ -51,7 +51,7 @@ Puede agregar, editar, eliminar, publicar, cancelar la publicación y los ajuste
 
 Las diferentes páginas Web tienen diferentes necesidades. Por ejemplo, a veces se desea una página web que proporcione un vínculo que abra el visor HTML5 en una ventana separada del navegador. En otros casos, puede ser necesario incrustar el visor HTML5 directamente en la página de alojamiento. En este último caso, la página web puede tener un diseño estático. O bien, puede ser &quot;interactivo&quot; y mostrarse de forma diferente en diferentes dispositivos o en diferentes tamaños de ventana del explorador. Para satisfacer estas necesidades, todos los visores HTML5 predefinidos y listos para usar que vienen con Dynamic Media admiten páginas web estáticas y páginas web diseñadas con capacidad de respuesta.
 
-Consulte [Biblioteca de imágenes estáticas interactivas](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) en la *Ayuda de la API de procesamiento y servicio de imágenes de Dynamic Media* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
+Consulte [Biblioteca de imágenes estáticas interactivas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library) en la *Ayuda de la API de procesamiento y servicio de imágenes de Dynamic Media* para obtener más información sobre cómo incrustar visores interactivos en sus páginas web.
 
 >[!NOTE]
 >
