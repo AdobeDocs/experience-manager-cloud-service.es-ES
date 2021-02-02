@@ -2,7 +2,7 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Información sobre cómo configurar Dynamic Media en Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 8%
@@ -212,7 +212,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 **[!UICONTROL Valores predeterminados para los campos]** del catálogo: esta configuración se refiere a la resolución y al tipo de miniatura predeterminada de las imágenes.
 **[!UICONTROL Atributos]**  de administración de color: esta configuración determina qué perfiles de color ICC se utilizan.
 **[!UICONTROL Atributos]**  de compatibilidad: Esta configuración permite que los párrafos al inicio y al final de las capas de texto se traten como en la versión 3.6 para lograr compatibilidad con versiones anteriores.
-**[!UICONTROL Compatibilidad]**  con localizaciones: Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas sugerencias de herramientas en los visores. Para obtener más información sobre la configuración de **[!UICONTROL Soporte para Localizaciones]**, consulte [Consideraciones al configurar la localización de recursos](https://experienceleague.corp.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+**[!UICONTROL Compatibilidad]**  con localizaciones: Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas sugerencias de herramientas en los visores. Para obtener más información sobre la configuración de **[!UICONTROL Soporte para Localizaciones]**, consulte [Consideraciones al configurar la localización de recursos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
 
 #### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
 
