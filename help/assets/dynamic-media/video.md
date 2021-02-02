@@ -2,7 +2,7 @@
 title: Vídeo
 description: Aprenda a trabajar con vídeo en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 10%
@@ -1058,7 +1058,7 @@ El reproductor de vídeo que utilice debe admitir la visualización de rótulos.
 
 Dynamic Media tiene la capacidad de convertir archivos de subtítulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos se puedan descubrir más fácilmente y proporcionar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Servicio de contenido estático (sin imagen)](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Servicio de contenido estático (sin imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 **Para agregar subtítulos o subtítulos a un vídeo:**
 
