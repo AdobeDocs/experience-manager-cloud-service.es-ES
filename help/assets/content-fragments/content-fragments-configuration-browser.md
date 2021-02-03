@@ -2,21 +2,15 @@
 title: 'Fragmentos de contenido: navegador de configuración'
 description: Obtenga información sobre cómo habilitar ciertas funciones de fragmento de contenido en el navegador de configuración.
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 18%
+source-wordcount: '241'
+ht-degree: 21%
 
 ---
 
 
 # Fragmentos de contenido - Navegador de configuración{#content-fragments-configuration-browser}
-
->[!CAUTION]
->
->El Envío API de GraphQL de AEM para fragmentos de contenido está disponible bajo petición.
->
->Póngase en contacto con [Soporte técnico de Adobe](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support) para habilitar la API para su AEM como programa de Cloud Service.
 
 ## Habilitar la funcionalidad de fragmento de contenido para su instancia {#enable-content-fragment-functionality-instance}
 
