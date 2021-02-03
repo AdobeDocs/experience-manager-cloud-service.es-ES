@@ -2,7 +2,7 @@
 title: Notas de la versión 2020.11.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] como Cloud Service Notas de la versión 2020.11.0.'
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 4%
@@ -91,7 +91,7 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.11.0 es el 
 ### Novedades en [!DNL Cloud Manager] {#what-is-new-cm}
 
 * Ahora los usuarios pueden acceder a una nueva opción de menú **Inicio de sesión local** desde las opciones de menú de entorno de las páginas de resumen **Entornos** y **Entornos**.
-Consulte [Administración de Entornos](/help/implementing/cloud-manager/manage-environments.md##login-locally) para obtener más detalles.
+Consulte [Administración de Entornos](/help/implementing/cloud-manager/manage-environments.md#login-locally) para obtener más detalles.
 
 * La ficha **Learn** de Cloud Manager se ha actualizado con nuevas imágenes en la interfaz de usuario.
 
