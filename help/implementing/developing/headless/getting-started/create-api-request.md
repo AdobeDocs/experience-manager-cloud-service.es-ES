@@ -2,9 +2,9 @@
 title: Acceso y entrega de fragmentos de contenido Guía de Inicio rápido sin encabezado
 description: La API de REST de Recursos permite administrar fragmentos de contenido y la API de GraphQL permite un envío sencillo y directo del contenido del fragmento de contenido.
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,14 @@ El resto de esta guía se centrará en el acceso a GraphQL y en el envío de fra
 
 Los arquitectos de la información necesitarán diseñar consultas para los extremos de canal a fin de ofrecer contenido. Estas consultas sólo tendrán que considerarse una vez por punto final por modelo. Para los fines de esta guía de introducción solo necesitamos crear una.
 
-1. Inicie sesión en AEM como Cloud Service y, en el menú principal, seleccione **Herramientas -> Recursos -> GraphQL**
-   * También puede abrir la página directamente en `https://<host>:<port>/content/graphiql.html`.
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. Inicie sesión en AEM como Cloud Service y acceda a la interfaz de GraphiQL:
+   * Por ejemplo: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL es un editor de consultas en el navegador para GraphQL. Puede utilizarla para crear consultas para recuperar fragmentos de contenido y distribuirlos de forma directa como JSON.
    * El panel izquierdo le permite crear su consulta.
@@ -39,8 +45,9 @@ Los arquitectos de la información necesitarán diseñar consultas para los extr
 1. Suponiendo que el modelo que hemos creado se denominó `person` con los campos `firstName`, `lastName` y `position`, podemos crear una consulta simple para recuperar el contenido de nuestro fragmento de contenido.
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
