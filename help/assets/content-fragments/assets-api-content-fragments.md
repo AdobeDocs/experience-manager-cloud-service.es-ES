@@ -2,9 +2,9 @@
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager como Cloud Service en la API HTTP de Assets
 description: Obtenga información sobre Adobe Experience Manager como compatibilidad con fragmentos de contenido Cloud Service en la API HTTP de Assets.
 translation-type: tm+mt
-source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
+source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1931'
 ht-degree: 2%
 
 ---
@@ -305,6 +305,7 @@ Existen algunas limitaciones:
 
 * **Actualmente no se admiten** los modelos de fragmentos de contenido: no se pueden leer ni crear. Para poder crear un fragmento de contenido nuevo o actualizar uno existente, los desarrolladores deben conocer la ruta correcta al modelo de fragmento de contenido. Actualmente, el único método para obtener una descripción general de estos es a través de la interfaz de usuario de administración.
 * **Las referencias se omiten**. Actualmente no hay comprobaciones para comprobar si se hace referencia a un fragmento de contenido existente. Por lo tanto, por ejemplo, si elimina un fragmento de contenido, se podrían producir problemas en una página que contenga una referencia al fragmento de contenido eliminado.
+* **Tipo de datos JSON** El resultado de la API REST del  *tipo de datos JSON* es actualmente una salida *basada en* cadenas.
 
 ## Códigos de estado y mensajes de error {#status-codes-and-error-messages}
 
