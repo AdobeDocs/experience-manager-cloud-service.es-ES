@@ -1,29 +1,54 @@
 ---
-title: Etiquetado automático de imágenes con etiquetas generadas por AI
-description: Etiquete imágenes utilizando servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante [!DNL Adobe Sensei] servicios.
+title: Etiquetado automático de recursos con etiquetas generadas por AI
+description: Etiquete recursos con servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante el servicio [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
+source-wordcount: '2557'
 ht-degree: 6%
 
 ---
 
 
-# Servicio de contenido inteligente de formación y etiquetado automático de imágenes {#train-service-tag-assets}
+# Añada etiquetas inteligentes a sus recursos para realizar búsquedas más rápidas {#smart-tag-assets-for-faster-search}
 
-Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a sus recursos digitales y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
+Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a sus recursos digitales y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente en las búsquedas.
 
 En comparación con los vocabularios del lenguaje natural, el etiquetado basado en la taxonomía empresarial ayuda a alinear los activos con el negocio de una compañía y garantiza que los activos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de automóviles puede etiquetar imágenes de autos con nombres de modelo para que solo se muestren las imágenes relevantes cuando se busque para diseñar una campaña de promoción.
 
-En segundo plano, las Etiquetas inteligentes utilizan un marco de inteligencia artificial de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía del negocio. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
+En segundo plano, las Etiquetas inteligentes utilizan el marco inteligente artificial de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Para utilizar el etiquetado inteligente, complete las siguientes tareas:
+## Tipos de recursos admitidos {#smart-tags-supported-file-formats}
+
+Las etiquetas inteligentes solo se aplican a los tipos de archivo admitidos que generan representaciones en formato JPG y PNG. La funcionalidad es compatible con los siguientes tipos de recursos:
+
+| Imágenes (tipos MIME) | Recursos basados en texto (formatos de archivo) | Recursos de vídeo (formatos de archivo y códecs) |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV (H264/AVC, JPEG en movimiento) |
+| image/bmp | XML | AVI (indeo4) |
+| image/gif | JSON | FLV (H264/AVC, vp6f) |
+| image/pjpeg | DOC | WMV (WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] agrega automáticamente las etiquetas inteligentes a los recursos basados en texto y a los vídeos de forma predeterminada. Para agregar automáticamente etiquetas inteligentes a las imágenes, complete las siguientes tareas.
 
 * [ [!DNL Adobe Experience Manager] Integración con Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprender los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
@@ -31,7 +56,9 @@ Para utilizar el etiquetado inteligente, complete las siguientes tareas:
 * [Etiquete sus recursos](#tag-assets) digitales.
 * [Administre las etiquetas y las búsquedas](#manage-smart-tags-and-searches).
 
-Las etiquetas inteligentes solo se aplican a clientes [!DNL Adobe Experience Manager Assets]. Las etiquetas inteligentes están disponibles para su compra como complemento de [!DNL Experience Manager].
+>[!TIP]
+>
+>Las etiquetas inteligentes solo se aplican a clientes [!DNL Adobe Experience Manager Assets]. Las etiquetas inteligentes están disponibles para su compra como complemento de [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ Las imágenes del conjunto de formación deben cumplir las siguientes directrice
    * modelo de etiquetas que incluye modelos de automóvil publicados en 2019 y 2020.
    * varios modelos de etiquetas que incluyen los mismos modelos de automóvil.
 
-**Imágenes utilizadas para entrenar**: Puede utilizar las mismas imágenes para entrenar distintos modelos de etiquetas. Sin embargo, no asocia una imagen con más de una etiqueta en un modelo de etiquetas. Por lo tanto, es posible etiquetar la misma imagen con etiquetas diferentes que pertenecen a modelos de etiquetas diferentes.
+**Imágenes utilizadas para entrenar**: Puede utilizar las mismas imágenes para entrenar distintos modelos de etiquetas. Sin embargo, no asocie una imagen a más de una etiqueta en un modelo de etiquetas. Es posible etiquetar la misma imagen con etiquetas diferentes que pertenecen a modelos de etiquetas diferentes.
 
 No se puede deshacer la formación. Las directrices anteriores le ayudarán a elegir buenas imágenes para entrenar.
 
@@ -129,7 +156,7 @@ Para comprobar si el servicio Etiquetas inteligentes ha recibido formación sobr
 
 ## Etiquetar recursos {#tag-assets}
 
-Una vez que haya formado el servicio Etiquetas inteligentes, puede activar el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas a un conjunto diferente de recursos similares. Puede aplicar el flujo de trabajo de etiquetado de forma periódica o siempre que sea necesario. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
+Una vez que haya formado el servicio Etiquetas inteligentes, puede aplicar el déclencheur del flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas correspondientes a un conjunto diferente de recursos similares. Puede aplicar el flujo de trabajo de etiquetado de forma periódica o siempre que sea necesario. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
 
 ### Etiquetar recursos desde la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
@@ -154,15 +181,17 @@ Una vez que haya formado el servicio Etiquetas inteligentes, puede activar el fl
    ![inicio_workflow](assets/start_workflow.png)
 
 1. Seleccione el flujo de trabajo **[!UICONTROL Recursos de etiquetas inteligentes DAM]** y especifique un título para el flujo de trabajo.
-1. Haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar si los recursos están etiquetados correctamente. Para obtener más información, consulte [administración de etiquetas inteligentes](#manage-smart-tags-and-searches).
+1. Haga clic en **[!UICONTROL Inicio]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar que los recursos están etiquetados correctamente. Para obtener más información, consulte [administración de etiquetas inteligentes](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas.Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los últimos y los actuales ciclos de etiquetado del flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
+>En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas. Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los ciclos de etiquetado más recientes y más recientes para el flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
 
 ### Etiquetar recursos cargados {#tag-uploaded-assets}
 
 El Experience Manager puede etiquetar automáticamente los recursos que los usuarios cargan en DAM. Para ello, los administradores configuran un flujo de trabajo para agregar un paso disponible de a los recursos de etiquetas inteligentes. Consulte [cómo habilitar el etiquetado inteligente para los recursos cargados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## Administrar etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
@@ -190,7 +219,7 @@ Para moderar las etiquetas inteligentes de los recursos:
 
 ### Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understandsearch}
 
-De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. Por ejemplo: considere buscar `woman running`. Los recursos con sólo `woman` o `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
+De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo: considere buscar `woman running`. Los recursos con sólo `woman` o `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
 
 * recursos con palabras clave `woman` y `running` en los metadatos.
 
@@ -209,6 +238,8 @@ Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imág
 * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
 * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
 * El etiquetado se admite en los idiomas compatibles con Experience Manager. Para obtener una lista de idiomas, consulte [Notas de la versión de Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice la búsqueda de recursos Omniture (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 
