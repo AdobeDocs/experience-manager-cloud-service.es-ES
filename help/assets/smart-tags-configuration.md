@@ -3,10 +3,10 @@ title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ La funcionalidad Etiquetas inteligentes está disponible para su compra como com
 
 >[!IMPORTANT]
 >
->Las nuevas [!DNL Experience Manager Assets] implementaciones se integran con [!DNL Adobe Developer Console] de manera predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores siguen estos pasos para configurarlas.
+>Las nuevas [!DNL Experience Manager Assets] implementaciones se integran con [!DNL Adobe Developer Console] de manera predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores siguen estos pasos para configurar la integración.
 
 ## Integración con Adobe Developer Console {#aio-integration}
 
