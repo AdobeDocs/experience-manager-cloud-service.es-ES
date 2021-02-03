@@ -3,9 +3,9 @@ title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 10%
 
 ---
@@ -60,24 +60,24 @@ La leyenda siguiente describe el nivel de asistencia.
 | GIF | xib | xib | xib | xib |
 | JPEG | xib | xib | xib | xib |
 | PNG | xib | xib | xib | xib |
-| TIFF | xib | xib | xib | - |
-| SVG | xib | - | xib | xib |
-| SGI | xib | xib | xib | xib |
 | RGB | xib | xib | xib | xib |
 | RGBA | xib | xib | xib | xib |
+| SGI | xib | xib | xib | xib |
+| SVG | xib | - | xib | xib |
+| TIFF | xib | xib | xib | - |
 
 ## Formatos de imagen en [!DNL Dynamic Media] {#image-support-dynamic-media}
 
 | Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de previsualización | Entregar representación dinámica | Descargar representación dinámica |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | xib | xib | xib | xib | xib |
-| GIF | xib | xib | xib | xib | xib |
-| TIFF | xib | xib | xib | xib | xib |
-| JPEG | xib | xib | xib | xib | xib |
 | BMP | xib | - | - | - | - |
-| PSD   answer | xib | - | - | - | - |
 | EPS | xib | xib | xib | xib | xib |
+| GIF | xib | xib | xib | xib | xib |
+| JPEG | xib | xib | xib | xib | xib |
 | PICT | xib | - | - | - | - |
+| PNG | xib | xib | xib | xib | xib |
+| PSD   answer | xib | - | - | - | - |
+| TIFF | xib | xib | xib | xib | xib |
 
 † La imagen combinada se extrae del archivo PSD. Es una imagen generada por [!DNL Adobe Photoshop] y que se incluye en el archivo PSD. Según la configuración, la imagen combinada puede ser o no la imagen real.
 
@@ -92,7 +92,7 @@ Los siguientes subtipos de formatos de archivo de imagen rasterizada que no se a
 
 ## Formatos 3D {#support-3d-formats}
 
-Se admite la siguiente lista de formatos 3D.
+Se admiten los siguientes formatos 3D.
 
 Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
 
@@ -143,24 +143,24 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 | Formato de archivo | Generación de miniaturas | Extracción de texto completo | Anchura/Altura | Gestión de metadatos | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | xib | xib | xib | xib | xib |
-| DOCX | xib | xib | xib | xib | xib |
 | DOC | - | - | - | xib | xib |
-| PPTX | xib | xib | xib | xib | xib |
-| PPT | - | - | - | xib | xib |
-| XLSX | xib | xib | xib | xib | xib |
-| XLS | - | - | - | xib | xib |
+| DOCX | xib | xib | xib | xib | xib |
+| EPUB | - | xib | - | - | - |
+| HTML | - | xib | - | xib | xib |
 | ODF | xib | xib | xib | - | - |
-| OFG | xib | xib | xib | - | - |
 | ODM | xib | xib | xib | - | - |
 | ODP | xib | xib | xib | - | - |
 | ODS | xib | xib | xib | - | - |
 | ODT | xib | xib | xib | xib | xib |
-| EPUB | - | xib | - | - | - |
-| HTML | - | xib | - | xib | xib |
+| OFG | xib | xib | xib | - | - |
+| PDF | xib | xib | xib | xib | xib |
+| PPT | - | - | - | xib | xib |
+| PPTX | xib | xib | xib | xib | xib |
 | PS | - | - | xib | - | - |
 | RTF | - | xib | - | xib | xib |
 | TXT | - | xib | - | xib | xib |
+| XLS | - | - | - | xib | xib |
+| XLSX | xib | xib | xib | xib | xib |
 | XML | - | xib | - | - | - |
 
 ## Formatos de documento en [!DNL Dynamic Media] {#document-support-dynamic-media}
@@ -168,8 +168,8 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | Formato | Cargar (formato de entrada) | Creación de ajustes preestablecidos de imagen (formato de salida) | Representación dinámica de previsualización | Entregar representación dinámica | Descargar representación dinámica |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | xib | - | - | - | - |
-| PDF | xib | xib | xib | xib | xib |
 | INDD | xib | - | - | - | - |
+| PDF | xib | xib | xib | xib | xib |
 
 ## Formatos de vídeo {#video-formats}
 
@@ -191,6 +191,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | MPEG | xib | xib | xib |
 | MPG | xib | xib | xib |
 | MTS | xib | - | xib |
+| MXF | xib | - | xib |
 | OGV | xib | - | xib |
 | QT | xib | - | xib |
 | R3D | - | xib | xib |
