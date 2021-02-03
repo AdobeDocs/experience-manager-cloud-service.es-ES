@@ -2,10 +2,10 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
+source-git-commit: 7ce352515b375d553cd00802204274c3c6774bb4
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,23 +23,38 @@ La siguiente versión (2021.1.0) será el 28 de enero de 2021.
 
 * **[Content Fragment HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**: Añada la capacidad de agregar/actualizar y eliminar variaciones de fragmento de contenido mediante la API HTTP.
 
+* **[Envío](/help/assets/content-fragments/graphql-api-content-fragments.md)** de la API de GraphQL para fragmentos de contenido: Capacidad de consulta de fragmentos de contenido mediante la sintaxis de GraphQL y esquemas basados en modelos de fragmentos de contenido para su salida en formato JSON.
+
+* **[Compatibilidad de autenticación para solicitudes](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** de API de GraphQL: Capacidad para autenticar solicitudes de API de GraphQL con tokenes de acceso para API de servidor.
+
+* Salida JSON mejorada de la API de GraphQL, incluida la capacidad de generar texto enriquecido en formato JSON y configuraciones regionales.
+
+* Compatibilidad con la anidación de modelos de fragmento de contenido para permitir la creación de estructuras de fragmento de contenido anidadas mediante tipos de datos de referencia de fragmento de contenido dedicados o referencias de fragmento de contenido en línea en campos de texto multilínea.
+
+* Hay reglas de validación adicionales disponibles en los tipos de datos del modelo de fragmento de contenido, incluidos &quot;único&quot;, &quot;obligatorio&quot; y &quot;traducible&quot;.
+
+* Posibilidad de etiquetar modelos de fragmento de contenido y permitir la creación de fragmentos de contenido en una carpeta con directivas por etiquetas o rutas.
+
+* Mejoras de uso en el editor de fragmentos de contenido, incluida la acción de publicación y la visualización del modelo en el que se basa un fragmento.
+
+* Posibilidad de previsualización de salida JSON directamente en el editor de fragmentos de contenido.
+
+
 ## [!DNL Adobe Experience Manager Assets] como un  [!DNL Cloud Service] {#assets}
 
-* La integración con [!DNL Adobe InDesign Server] ya está disponible para [!DNL Experience Manager] como [!DNL Cloud Service]. Proporciona automatización para procesar [!DNL Adobe InDesign] archivos mediante [!DNL Adobe InDesign Server] secuencias de comandos y permite a los usuarios utilizar la interfaz de usuario de plantillas [!DNL Assets] para crear folletos o publicidades. Sólo [!DNL InDesign Server] hospedado por [!DNL Adobe Managed Services] se admite para [!DNL Experience Manager as a Cloud Service]. <!-- TBD: Add link to article. -->
+* [!DNL Experience Manager] como  [!DNL Cloud Service] amplía la funcionalidad Etiquetas inteligentes para admitir la identificación de palabras clave y entidades en recursos basados en texto. El texto se identifica, se indexa y se pone a disposición como metadatos para mejorar la experiencia de búsqueda sin necesidad de ninguna configuración. Consulte [Etiquetas inteligentes](/help/assets/smart-tags.md).
 
-* [!DNL Experience Manager] se mejora para realizar el seguimiento y mostrar referencias de recursos cuando se utiliza un recurso en una  [!DNL Experience Manager Sites] implementación remota mediante la funcionalidad Recursos conectados. Una nueva ficha [!UICONTROL Referencias] de la página [!UICONTROL Propiedades] del recurso ahora lista referencias locales y remotas del recurso. Las referencias permiten a los usuarios de DAM rastrear el uso de recursos en [!DNL Sites] páginas y en activos compuestos en [!DNL Assets]. Consulte [configurar y utilizar recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
-
-* [!DNL Dynamic Media] ahora se puede acceder a las funciones mediante los componentes principales basados en  [!DNL Sites] imágenes. Los autores pueden configurar rápidamente componentes para utilizar ajustes preestablecidos de imagen, recorte inteligente y modificadores de imagen al crear páginas web. Consulte [Versión de Componentes principales 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
-
-* [!DNL Experience Manager] la aplicación de escritorio permite a los usuarios cargar archivos y carpetas arrastrándolos desde el Explorador de Windows o el Buscador de Mac en la interfaz de la aplicación de escritorio. Consulte [adición de recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* Ahora se admite el formato de archivo MXF. Consulte [formatos de archivo admitidos](/help/assets/file-format-support.md#video-formats).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Novedades {#what-is-new-commerce}
 
-* Sitio de referencia de CIF Venia publicado - 2020.12.01 que incluye la versión más reciente de componentes principales de CIF v1.6.0. Consulte [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01) para obtener más detalles.
+* Administración de experiencia del producto: Nueva ficha de propiedades &quot;Comercio&quot; para Recursos y Fragmentos de experiencia. Esta ficha le permite vincular productos/categorías a Recursos y Fragmentos de experiencia. La ficha también muestra datos en tiempo real de productos o categorías vinculados y un vínculo para mostrar detalles en la consola de productos.
 
-* Componentes principales de CIF v1.6.0. Consulte [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0) para obtener más detalles.
+* Sitio de referencia de CIF Venia publicado - 2021.02.02 que incluye la versión más reciente de componentes principales de CIF v1.7.0. Consulte [CIF Venia Reference Site](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) para obtener más detalles.
+
+* Componentes principales de CIF v1.7.0. Consulte [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) para obtener más detalles.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -68,6 +83,23 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.1.0 es el 1
 ### Corrección de errores {#crt-bug-fixes}
 
 * Se han realizado varias correcciones de errores en las herramientas AEM Dispatcher Converter y el Modernizador de repositorio. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Repositorio de repositorios](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+## AEM como Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
+
+### Novedades {#what-is-new-foundation}
+
+* Llamadas de API autenticadas de servidor a servidor: genere los tokenes de acceso adecuados para realizar llamadas de API autenticadas de servidor a servidor entre sus aplicaciones externas y AEM como entornos de Cloud Service. Obtenga más información leyendo [la documentación](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) o consultando el [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+
+### SDK Build Analyzers {#sdk-build-analyzers}
+
+El AEM como Cloud Service SDK Build Analyzer Maven Plugin detecta problemas en un proyecto determinado, incluyendo dependencias que faltan. Ofrece a los desarrolladores la oportunidad de descubrir problemas durante el desarrollo local, mucho antes de implementarlos en Cloud entornos con Cloud Manager.
+
+Se han agregado dos nuevos analizadores para esta versión:
+
+* analizador de informes
+* bundle-nativecode
+
+Para obtener más información, consulte la documentación [aquí](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing).
 
 ## Herramientas de Transición de nube {#code-transition-tools}
 
