@@ -2,10 +2,10 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
+source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 4%
+source-wordcount: '678'
+ht-degree: 5%
 
 ---
 
@@ -20,8 +20,6 @@ La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2021.
 La siguiente versión (2021.2.0) será el 25 de febrero de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] como Cloud Service  {#sites}
-
-* **[Content Fragment HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**: Añada la capacidad de agregar/actualizar y eliminar variaciones de fragmento de contenido mediante la API HTTP.
 
 * **[Envío](/help/assets/content-fragments/graphql-api-content-fragments.md)** de la API de GraphQL para fragmentos de contenido: Capacidad de consulta de fragmentos de contenido mediante la sintaxis de GraphQL y esquemas basados en modelos de fragmentos de contenido para su salida en formato JSON.
 
@@ -69,20 +67,6 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.1.0 es el 1
 * Al activar una deshibernación desde Cloud Manager, a veces se mostraba un mensaje de error incluso cuando la deshibernación se iniciaba correctamente.
 
 * Se han abordado casos raros de fallo en la creación o eliminación de entornos.
-
-## Herramientas de refactorización de código {#code-refactoring-tools}
-
-### Novedades en [!DNL Code Refactoring Tools] {#what-is-new-crt}
-
-* Se ha lanzado la nueva versión del complemento AIO-CLI. La versión más reciente de este complemento incluye correcciones de errores para AEM Dispatcher Converter y el Modernizer de Repositorio y también admite una nueva utilidad: Convertidor de índices. Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
-
-* Index Converter es una utilidad que se puede utilizar para transformar las definiciones de índice OAK personalizadas de un cliente para AEM como definiciones de índice OAK compatibles con el Cloud Service. Consulte [Convertidor de índices](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obtener más detalles.
-
-* Se agregó una nueva función al [Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) que crea un paquete independiente `ui.config` para contener todas las configuraciones de OSGi.
-
-### Corrección de errores {#crt-bug-fixes}
-
-* Se han realizado varias correcciones de errores en las herramientas AEM Dispatcher Converter y el Modernizador de repositorio. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Repositorio de repositorios](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM como Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
