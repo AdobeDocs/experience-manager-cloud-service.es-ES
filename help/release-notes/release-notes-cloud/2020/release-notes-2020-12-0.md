@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6ea94126d29a470820ee1dc39b239bb10951afac
+source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '691'
 ht-degree: 5%
 
 ---
@@ -74,3 +74,17 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.12.0 es el 
 ### Corrección de errores {#crt-bug-fixes}
 
 * Se han realizado varias correcciones de errores en las herramientas AEM Dispatcher Converter y el Modernizador de repositorio. Consulte [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) y [Repositorio de repositorios](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+
+### Fecha de la versión {#release-date-ctt}
+
+La fecha de versión de la herramienta de transferencia de contenido v1.1.20 es el 8 de enero de 2021.
+
+### Novedades en [!DNL Content Transfer Tool] {#what-is-new-ctt}
+
+* Ahora los usuarios pueden saber si su Token de acceso ha caducado al pasar el ratón por el icono de estado en la interfaz de usuario de la Herramienta de transferencia de contenido (CTT). También se les notificará en la interfaz de usuario de Detalles del conjunto de migración que no pueden conectarse a su instancia de Cloud Service.
+
+### Corrección de errores {#ctt-bug-fixes}
+
+* El estado de la interfaz de usuario de la Herramienta de transferencia de contenido (CTT) para un conjunto de migración no se mantuvo y cambió tras un período de inactividad. Esto se ha solucionado.
+* La opción para los registros de vista se desactivaba si los registros no estaban disponibles. Esto se ha solucionado y se han agregado mensajes para notificar al usuario por qué faltan registros.
+* El estado de la interfaz de usuario de la herramienta de transferencia de contenido mostraba *FALLADO* cuando el usuario detenía una ingesta. Esto se ha solucionado para mostrar *STOPPED* en su lugar.
