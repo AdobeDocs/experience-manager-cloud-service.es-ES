@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 5%
 
 ---
@@ -21,9 +21,13 @@ La siguiente versión (2021.2.0) será el 25 de febrero de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] como Cloud Service  {#sites}
 
+### Administración de contenido sin encabezado {#headless}
+
 * **[Envío](/help/assets/content-fragments/graphql-api-content-fragments.md)** de la API de GraphQL para fragmentos de contenido: Capacidad de consulta de fragmentos de contenido mediante la sintaxis de GraphQL y esquemas basados en modelos de fragmentos de contenido para su salida en formato JSON.
 
 * **[Compatibilidad de autenticación para solicitudes](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** de API de GraphQL: Capacidad para autenticar solicitudes de API de GraphQL con tokenes de acceso para API de servidor.
+
+* [El ](/help/implementing/developing/hybrid/remote-page.md) componente RemotePage ofrece compatibilidad para ver y editar SPA externos dentro de AEM uso.
 
 * Salida JSON mejorada de la API de GraphQL, incluida la capacidad de generar texto enriquecido en formato JSON y configuraciones regionales.
 
@@ -37,6 +41,9 @@ La siguiente versión (2021.2.0) será el 25 de febrero de 2021.
 
 * Posibilidad de previsualización de salida JSON directamente en el editor de fragmentos de contenido.
 
+### Aplicaciones Web progresivas (PWA) {#pwa}
+
+* [Una versión de aplicación web progresiva (PWA) de un ](/help/sites-cloud/authoring/features/enable-pwa.md)  sitecan ahora se habilita en el nivel de proyecto mediante una configuración simple.
 
 ## [!DNL Adobe Experience Manager Assets] como un  [!DNL Cloud Service] {#assets}
 
