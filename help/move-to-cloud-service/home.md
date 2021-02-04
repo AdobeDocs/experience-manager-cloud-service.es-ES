@@ -2,10 +2,10 @@
 title: El paso de AEM as a Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager as a Cloud Service El paso de AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 80aa4881bf3e6ee01e84eb4096d24fcb749419c6
+source-git-commit: f275b9f8a1c6cbc188e75be435a4efc9394fa140
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 91%
+source-wordcount: '565'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 91%
 >title="Acerca del Administrador de aceleración de la nube"
 >abstract="Cloud Acceleration Manager es su propia guía personal a lo largo de todo el proceso de pasar a AEM como Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Cambios importantes en AEM Sites as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html#how-to-use" text="Configurar la canalización de CD/CI"
 
 ## Beneficios del paso de AEM as a Cloud Service {#benefits-aem-moving-to-aem-guide}
 
