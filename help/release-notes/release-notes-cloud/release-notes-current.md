@@ -2,10 +2,10 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
+source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 5%
+source-wordcount: '745'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,9 @@ La siguiente versión (2021.2.0) será el 25 de febrero de 2021.
 
 * **[Compatibilidad de autenticación para solicitudes](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** de API de GraphQL: Capacidad para autenticar solicitudes de API de GraphQL con tokenes de acceso para API de servidor.
 
-* [El ](/help/implementing/developing/hybrid/remote-page.md) componente RemotePage ofrece compatibilidad para ver y editar SPA externos dentro de AEM uso.
+* **[Componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: Se añadió la compatibilidad con la visualización y edición de SPA externos en AEM uso.
+
+* **[Edición de un SPA externo en AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Se ha añadido la capacidad de cargar una aplicación independiente de una sola página en una instancia de AEM, añadir secciones de contenido editables y activar la creación.
 
 * Salida JSON mejorada de la API de GraphQL, incluida la capacidad de generar texto enriquecido en formato JSON y configuraciones regionales.
 
