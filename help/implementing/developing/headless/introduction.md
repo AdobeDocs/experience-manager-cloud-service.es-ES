@@ -2,10 +2,10 @@
 title: Desarrollo sin cabeza para AEM Sites como Cloud Service
 description: El uso de potentes funciones como modelos de contenido, fragmentos de contenido y la API de GraphQL, AEM como Cloud Service, le permite administrar sus experiencias de forma centralizada y ofrecerlas en distintos canales.
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 3%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
@@ -21,6 +21,14 @@ La implementación sin objetivos se está volviendo cada vez más importante par
 La implementación sin cabezales evita la administración de páginas y componentes, al igual que las soluciones híbridas y de pila completas tradicionales, y se centra en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío entre canales. Es un modelo de desarrollo moderno y dinámico para la implementación de experiencias web.
 
 ![Modelos de implementación de AEM](assets/aem-implementation-models.png)
+
+## Comparación de encabezados y sin cabeza {#headful-headless}
+
+Este documento se centra en el modelo completo de implementación sin cabeza de AEM. Sin embargo, la cabeza contra la cabeza no tiene por qué ser una opción binaria en AEM. Las funciones sin encabezado se pueden utilizar para administrar y entregar el contenido a una variedad de extremos, a la vez que se permite a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
+
+>[!TIP]
+>
+>Consulte el documento [Encabezado y sin cabeza en AEM](/help/implementing/developing/headful-headless.md) para obtener más información.
 
 ## AEM como Cloud Service y sin cabeza {#aem-headless}
 
