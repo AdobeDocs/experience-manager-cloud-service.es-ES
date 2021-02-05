@@ -3,9 +3,9 @@ title: Formatos de archivo y tipos MIME admitidos
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '818'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Los aspectos destacados de la conversión de recursos mediante los microservicio
 * Formatos comunes de [documento](#document-formats), incluidos los formatos de Microsoft Office y Documento abierto.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
-La leyenda siguiente describe el nivel de asistencia.
+La leyenda siguiente describe el nivel de compatibilidad con cada formato.
 
 | Nivel de asistencia | Descripción |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ Los formatos de documento admitidos para las funciones de administración de rec
 >[!MORELIKETHIS]
 >
 >* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md)
+>* [Formatos de archivo admitidos para el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
