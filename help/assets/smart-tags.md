@@ -3,9 +3,9 @@ title: Etiquetado automático de recursos con etiquetas generadas por AI
 description: Etiquete recursos con servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante el servicio [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Puede etiquetar los siguientes tipos de recursos:
 
 * **Imágenes**: Las imágenes en muchos formatos se etiquetan mediante los servicios de contenido inteligente de Adobe Sensei. Usted [crea un modelo de capacitación](#train-model) y luego [aplica etiquetas inteligentes](#tag-assets) a las imágenes.
 * **Recursos** de vídeo: El etiquetado de vídeo está habilitado de forma predeterminada  [!DNL Adobe Experience Manager] como  [!DNL Cloud Service]. [Los vídeos se ](/help/assets/smart-tags-video-assets.md) etiquetan automáticamente al cargar vídeos nuevos o volver a procesar los existentes.
-* **Recursos** basados en texto:  [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto admitidos al cargarlos.
+* **Recursos** basados en texto:  [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto admitidos al cargarlos. Obtenga más información sobre [etiquetado inteligente de recursos basados en texto](#smart-tag-text-based-assets).
 
 ## Tipos de recursos admitidos {#smart-tags-supported-file-formats}
 
