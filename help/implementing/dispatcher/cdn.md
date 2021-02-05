@@ -2,9 +2,9 @@
 title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '604'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,10 @@ Siga las secciones a continuación para utilizar la interfaz de usuario de autos
 De forma predeterminada, para una configuración de CDN administrada por Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), puede hacerlo de forma automática mediante la interfaz de usuario del Administrador de nube.
 
 Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para obtener más información.
+
+>[!CAUTION]
+>
+>Solo las solicitudes de las IP permitidas serán atendidas por la CDN administrada de AEM. Si señala su propia CDN a la CDN administrada de AEM, asegúrese de que las IP de su CDN se incluyen en la lista de permitidos.
 
 ## CDN de cliente señala a AEM CDN administrada {#point-to-point-CDN}
 
