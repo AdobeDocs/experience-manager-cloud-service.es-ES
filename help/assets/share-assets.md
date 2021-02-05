@@ -3,9 +3,9 @@ title: Compartir recursos, carpetas y colecciones como vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de [!DNL Experience Manager Assets] como un hipervínculo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '681'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Para generar la URL de los recursos que desea compartir con los usuarios, utilic
 >[!NOTE]
 >
 >* Necesita el permiso Editar ACL en la carpeta o el recurso que desea compartir como vínculo.
->* Antes de compartir un vínculo con los usuarios, asegúrese de que el servicio de correo de CQ de día está configurado. De lo contrario, se producirá un error.
+>* Antes de compartir un vínculo con los usuarios, asegúrese de que [el correo electrónico saliente esté habilitado](/help/implementing/developing/introduction/development-guidelines.md#sending-email). De lo contrario, se producirá un error.
 
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desea compartir como vínculo.
