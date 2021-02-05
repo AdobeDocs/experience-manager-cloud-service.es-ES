@@ -3,10 +3,10 @@ title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ La funcionalidad Etiquetas inteligentes está disponible para su compra como com
 
 >[!IMPORTANT]
 >
->Las nuevas [!DNL Experience Manager Assets] implementaciones se integran con [!DNL Adobe Developer Console] de manera predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En las implementaciones existentes, los administradores siguen estos pasos para configurar la integración.
+>[!DNL Experience Manager Assets] las implementaciones creadas después  [de la versión de agosto de 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) se integran  [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En implementaciones anteriores, los administradores pueden seguir los pasos siguientes para configurar la integración.
 
 ## Integración con Adobe Developer Console {#aio-integration}
 
@@ -109,7 +109,7 @@ Cuando caduca el certificado, ya no es de confianza. Para añadir un nuevo certi
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya al servicio existente en el proyecto. Cargue el nuevo certificado y configúrelo. Para obtener más información sobre la configuración, consulte las instrucciones de [Creación de la integración de Adobe Developer Console.](#create-aio-integration)
 
-## Habilitar el etiquetado inteligente para los recursos recientemente cargados (opcional) {#enable-smart-tagging-for-uploaded-assets}
+## Habilitar el etiquetado automático cuando se carguen recursos (opcional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el modelo de flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**.
