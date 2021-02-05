@@ -3,15 +3,15 @@ title: Etiquetado automático de recursos con etiquetas generadas por AI
 description: Etiquete recursos con servicios artificialmente inteligentes que apliquen etiquetas comerciales contextuales y descriptivas mediante el servicio [!DNL Adobe Sensei] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
+source-wordcount: '2799'
 ht-degree: 6%
 
 ---
 
 
-# Añada etiquetas inteligentes a sus recursos para realizar búsquedas más rápidas {#smart-tag-assets-for-faster-search}
+# Añada etiquetas inteligentes a sus recursos para mejorar la experiencia de búsqueda {#smart-tag-assets-for-faster-search}
 
 Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a sus recursos digitales y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente en las búsquedas.
 
@@ -23,25 +23,31 @@ En segundo plano, las Etiquetas inteligentes utilizan el marco inteligente artif
 ![flowchart](assets/flowchart.gif) 
 -->
 
+Puede etiquetar los siguientes tipos de recursos:
+
+* **Imágenes**: Las imágenes en muchos formatos se etiquetan mediante los servicios de contenido inteligente de Adobe Sensei. Usted [crea un modelo de capacitación](#train-model) y luego [aplica etiquetas inteligentes](#tag-assets) a las imágenes.
+* **Recursos** de vídeo: El etiquetado de vídeo está habilitado de forma predeterminada  [!DNL Adobe Experience Manager] como  [!DNL Cloud Service]. [Los vídeos se ](/help/assets/smart-tags-video-assets.md) etiquetan automáticamente al cargar vídeos nuevos o volver a procesar los existentes.
+* **Recursos** basados en texto:  [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto admitidos al cargarlos.
+
 ## Tipos de recursos admitidos {#smart-tags-supported-file-formats}
 
-Las etiquetas inteligentes solo se aplican a los tipos de archivo admitidos que generan representaciones en formato JPG y PNG. La funcionalidad es compatible con los siguientes tipos de recursos:
+Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG. La funcionalidad es compatible con los siguientes tipos de recursos:
 
 | Imágenes (tipos MIME) | Recursos basados en texto (formatos de archivo) | Recursos de vídeo (formatos de archivo y códecs) |
 |----|-----|------|
-| image/jpeg | TXT | MP4 (H264/AVC) |
-| image/tiff | RTF | MKV (H264/AVC) |
-| image/png | DITA | MOV (H264/AVC, JPEG en movimiento) |
-| image/bmp | XML | AVI (indeo4) |
+| image/jpeg | CSV | MP4 (H264/AVC) |
+| image/tiff | DOC | MKV (H264/AVC) |
+| image/png | DOCX | MOV (H264/AVC, JPEG en movimiento) |
+| image/bmp | HTML | AVI (indeo4) |
 | image/gif | JSON | FLV (H264/AVC, vp6f) |
-| image/pjpeg | DOC | WMV (WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV (WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ Las etiquetas inteligentes solo se aplican a los tipos de archivo admitidos que 
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## Etiquetado inteligente de recursos basados en texto {#smart-tag-text-based-assets}
+
+Los recursos basados en texto admitidos se etiquetan automáticamente con [!DNL Experience Manager Assets] al cargarse. Está habilitado de forma predeterminada. La eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. En el caso de los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave en el texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad que se utiliza para mejorar la detección de recursos en comparación con el índice de búsqueda completa.
+
+En comparación, para imágenes y vídeos, las etiquetas inteligentes se derivan en función de un aspecto visual.
+
 ## Integrar [!DNL Experience Manager] con Adobe Developer Console {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ Puede integrar [!DNL Adobe Experience Manager] con las etiquetas inteligentes me
 
 ## Comprender los modelos de etiquetas y las directrices {#understand-tag-models-guidelines}
 
-Un modelo de etiqueta es un grupo de etiquetas relacionadas que se basan en un aspecto visual de la imagen. Por ejemplo, una colección de zapatos puede tener etiquetas diferentes, pero todas las etiquetas están relacionadas con zapatos y pueden pertenecer al mismo modelo de etiquetas. Las etiquetas solo pueden relacionarse con los distintos aspectos visuales de las imágenes. Para comprender la representación de contenido de un modelo de formación en [!DNL Experience Manager], visualice un modelo de formación como una entidad de nivel superior compuesta por un grupo de etiquetas agregadas manualmente e imágenes de ejemplo para cada etiqueta. Cada etiqueta se puede aplicar exclusivamente a una imagen.
-
-Las etiquetas que no se pueden controlar de forma realista están relacionadas con:
-
-* Aspectos no visuales, abstractos como el año o la temporada de lanzamiento de un producto, estado de ánimo o emoción evocados por una imagen.
-* Diferencias visuales finas en productos como camisas con y sin collares o logotipos de productos pequeños incorporados en productos.
+Un modelo de etiqueta es un grupo de etiquetas relacionadas que están asociadas con diversos aspectos visuales de las imágenes que se están etiquetando. Las etiquetas se relacionan con los distintos aspectos visuales de las imágenes, de modo que cuando se aplican, las etiquetas ayudan a buscar tipos específicos de imágenes. Por ejemplo, una colección de zapatos puede tener etiquetas diferentes, pero todas las etiquetas están relacionadas con zapatos y pueden pertenecer al mismo modelo de etiquetas. Cuando se aplican, las etiquetas ayudan a encontrar diferentes tipos de zapatos, por ejemplo, por color, por diseño o por uso. Para comprender la representación de contenido de un modelo de formación en [!DNL Experience Manager], visualice un modelo de formación como una entidad de nivel superior compuesta por un grupo de etiquetas agregadas manualmente e imágenes de ejemplo para cada etiqueta. Cada etiqueta se puede aplicar exclusivamente a una imagen.
 
 Antes de crear un modelo de etiquetas y entrenar el servicio, identifique un conjunto de etiquetas únicas que describan mejor los objetos de las imágenes en el contexto de su negocio. Asegúrese de que los recursos del conjunto depurado se ajustan a [las directrices de formación](#training-guidelines).
 
@@ -189,9 +196,7 @@ Una vez que haya formado el servicio Etiquetas inteligentes, puede aplicar el d�
 
 ### Etiquetar recursos cargados {#tag-uploaded-assets}
 
-El Experience Manager puede etiquetar automáticamente los recursos que los usuarios cargan en DAM. Para ello, los administradores configuran un flujo de trabajo para agregar un paso disponible de a los recursos de etiquetas inteligentes. Consulte [cómo habilitar el etiquetado inteligente para los recursos cargados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] puede etiquetar automáticamente los recursos que los usuarios cargan en DAM. Para ello, los administradores configuran un flujo de trabajo para agregar un paso disponible de a los recursos de etiquetas inteligentes. Consulte [cómo habilitar el etiquetado inteligente para los recursos cargados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 
 ## Administrar etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 1. coincidencias de `woman running` en las etiquetas inteligentes.
 1. coincidencias de `woman` o de `running` en las etiquetas inteligentes.
 
-### Limitaciones de etiquetado {#limitations}
+## Limitaciones de etiquetado y prácticas recomendadas {#limitations}
 
-Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imágenes de marca y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de Etiquetas inteligentes tiene las siguientes limitaciones:
+El etiquetado inteligente mejorado se basa en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de Etiquetas inteligentes tiene las siguientes limitaciones:
 
 * Incapacidad para reconocer diferencias sutiles en las imágenes. Por ejemplo, camisas delgadas contra las tradicionales.
 * Imposibilidad de identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisetas.
-* El etiquetado se admite en los idiomas compatibles con Experience Manager. Para obtener una lista de idiomas, consulte [Notas de la versión de Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* El etiquetado se admite en los idiomas que admite [!DNL Experience Manager]. Para obtener una lista de idiomas, consulte [Notas de la versión de Smart Content Service](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* Las etiquetas que no se manejan de forma realista están relacionadas con:
+
+   * Aspectos no visuales, abstractos como el año o la temporada de lanzamiento de un producto, el estado de ánimo o la emoción que evoca una imagen, la connotación subjetiva de un vídeo, etc.
+   * Diferencias visuales finas en productos como camisas con y sin collares o logotipos de productos pequeños incorporados en productos.
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-Para buscar recursos con etiquetas inteligentes (normal o mejorada), utilice la búsqueda de recursos Omniture (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
+Para buscar recursos con etiquetas inteligentes (normales o mejoradas), utilice la [!DNL Assets] búsqueda Omniture (búsqueda de texto completo). No hay ningún predicado de búsqueda independiente para las etiquetas inteligentes.
 
 >[!NOTE]
 >
