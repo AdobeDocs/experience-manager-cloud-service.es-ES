@@ -2,9 +2,9 @@
 title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
+source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '607'
 ht-degree: 5%
 
 ---
@@ -18,14 +18,14 @@ La CDN administrada por AEM satisfará la mayoría de los requisitos de rendimie
 
 ## CDN administrado por AEM {#aem-managed-cdn}
 
-Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager y prepararse para el envío de contenido mediante la CDN integrada de Adobe:
+Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager y prepararse para el envío de contenido mediante la CDN integrada de AEM:
 
 1. [Administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **Restricción del tráfico**
 
-De forma predeterminada, para una configuración de CDN administrada por Adobe, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), puede hacerlo de forma automática mediante la interfaz de usuario del Administrador de nube.
+De forma predeterminada, para una configuración de CDN administrada por AEM, todo el tráfico público puede llegar al servicio de publicación, tanto para entornos de producción como de no producción (desarrollo y fase). Si desea limitar el tráfico al servicio de publicación para un entorno determinado (por ejemplo, limitar el ensayo por un rango de direcciones IP), puede hacerlo de forma automática mediante la interfaz de usuario del Administrador de nube.
 
 Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para obtener más información.
 
@@ -35,7 +35,7 @@ Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-m
 
 ## CDN de cliente señala a AEM CDN administrada {#point-to-point-CDN}
 
-Si un cliente debe utilizar su CDN existente, puede administrarlo y señalarlo a la CDN administrada por el Adobe, siempre que se satisfagan los siguientes requisitos:
+Si un cliente debe utilizar su CDN existente, puede administrarlo y señalarlo a la CDN administrada de AEM, siempre que se satisfagan los siguientes requisitos:
 
 * El cliente debe tener una CDN existente que sea onerosa de reemplazar.
 * El cliente debe administrarlo.
@@ -46,19 +46,19 @@ Si un cliente debe utilizar su CDN existente, puede administrarlo y señalarlo a
 Instrucciones de configuración:
 
 1. Establezca el encabezado `X-Forwarded-Host` con el nombre de dominio.
-1. Establezca el encabezado Host con el dominio de origen, que es la entrada de CDN de Adobe. El valor debe proceder del Adobe.
+1. Establezca el encabezado Host con el dominio de origen, que es la entrada de AEM CDN. El valor debe proceder del Adobe.
 1. Envíe el encabezado SNI al origen. Al igual que el encabezado Host, el encabezado sni debe ser el dominio de origen.
 1. Establezca `X-Edge-Key`, que es necesario para enrutar el tráfico correctamente a los servidores AEM. El valor debe proceder del Adobe.
 
 Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
 
-Existe potencialmente una pequeña visita de rendimiento debido al salto adicional, aunque es probable que los saltos de la CDN del cliente a la CDN administrada por el Adobe sean eficientes.
+Existe potencialmente una pequeña visita de rendimiento debido al salto adicional, aunque es probable que los saltos desde la CDN del cliente hasta la CDN administrada de AEM sean eficientes.
 
 Tenga en cuenta que esta configuración de CDN de cliente es compatible con el nivel de publicación, pero no con el nivel de autor.
 
 ## Encabezados de geolocalización {#geo-headers}
 
-La CDN administrada por Adobe agregará encabezados a cada solicitud con:
+La CDN administrada de AEM agregará encabezados a cada solicitud con:
 
 * código de país: `x-aem-client-country`
 * código de continente: `x-aem-client-continent`
