@@ -40,7 +40,7 @@ Una aplicación de una sola página (SPA) difiere de una página convencional en
 
 Esto reduce la necesidad de actualizar la página y presenta al usuario una experiencia que es fluida, rápida y se parece más a una experiencia nativa de la aplicación.
 
-El Editor de SPA de AEM permite a los desarrolladores de front-end crear SPA que se pueden integrar en un sitio AEM, permitiendo a los autores de contenido editar el contenido SPA tan fácilmente como cualquier otro contenido AEM.
+El Editor de SPA de AEM permite a los desarrolladores de front-end crear SPA que se pueden integrar en un sitio AEM, lo que permite a los autores de contenido editar el contenido SPA con la misma facilidad que cualquier otro contenido AEM.
 
 ### ¿Por qué un SPA? {#why-a-spa}
 
