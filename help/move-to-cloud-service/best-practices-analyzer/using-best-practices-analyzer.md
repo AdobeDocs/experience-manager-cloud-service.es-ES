@@ -16,7 +16,7 @@ ht-degree: 46%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de optimizaciones"
 >abstract="Revise la documentación para utilizar el Analizador de procedimientos recomendados (antes Cloud Readiness Analyzer) y el informe generado. El informe Analizador de optimizaciones se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
