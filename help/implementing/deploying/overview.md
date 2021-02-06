@@ -98,7 +98,7 @@ Después de cambiar a la nueva versión de la aplicación:
    * Carpetas (agregar, modificar, quitar)
    * Plantillas editables (agregar, modificar, eliminar)
    * Configuración según el contexto (cualquier elemento en `/conf`) (agregar, modificar, eliminar)
-   * Secuencias de comandos (los paquetes pueden activar los enlaces de instalación en varias etapas del proceso de instalación del paquete)
+   * Secuencias de comandos (los paquetes pueden déclencheur Instalar ganchos en varias etapas del proceso de instalación del paquete
 
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. Los detalles se pueden encontrar en la [documentación de AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) en torno a la reestructuración recomendada del proyecto.
 
