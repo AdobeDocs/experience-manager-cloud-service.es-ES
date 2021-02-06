@@ -32,7 +32,7 @@ A continuación, se muestran los recursos informativos de Experience Manager Ass
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a [!DNL Cloud Service]. |
 | [Incorporación](/help/onboarding/home.md) | Empiece con Experience Manager como [!DNL Cloud Service] — obtenga acceso y proteja los datos importantes. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a [!DNL Cloud Service]. |
-| [Pasar al Experience Manager como [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprender el viaje de transición al Experience Manager como [!DNL Cloud Service]. |
+| [Pasar al Experience Manager como [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprenda el recorrido de transición al Experience Manager como [!DNL Cloud Service]. |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Personalice, desarrolle e implemente Experience Manager as a [!DNL Cloud Service]. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a [!DNL Cloud Service]. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de Experience Manager como [!DNL Cloud Service], como indexación y tareas de mantenimiento. |
