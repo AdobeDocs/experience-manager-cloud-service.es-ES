@@ -4,8 +4,8 @@ description: Notas de la versión de Cloud Manager en AEM como Cloud Service, ve
 translation-type: tm+mt
 source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '130'
+ht-degree: 4%
 
 ---
 
