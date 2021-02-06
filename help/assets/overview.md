@@ -33,7 +33,7 @@ Los siguientes son los beneficios clave de Assets como [!DNL Cloud Service]. Par
 * **Altamente escalable**: Escalabilidad elástica en todos los tipos de implementaciones. Recursos prácticamente ilimitados disponibles a petición, según y cuando sea necesario. Guarda el costo del diseño excesivo en comparación con un sistema tradicional.
 * **Último software**: Siempre actualizado y siempre actualizado. Todos los usuarios solo tienen el software más reciente con todos los parches, funciones, seguridad y correcciones de errores disponibles. Los desarrolladores y los integradores trabajan con el último conjunto de API sin problemas de compatibilidad con varias versiones.
 * **Siempre en línea**: Sin downtime (0dt), gracias a la instancia implementada en un clúster con backups y redundancia. Las actualizaciones también son 0dt.
-* **Monitoreo** constante: La supervisión del sistema es automatizada y las comprobaciones y activadores integrados ayudan a mantener el rendimiento, la disponibilidad y la solidez general.
+* **Monitoreo** constante: La supervisión del sistema es automatizada y las comprobaciones y déclencheur integrados ayudan a mantener el rendimiento, la disponibilidad y la solidez general.
 * **Implementaciones** sin complicaciones: Las AEM de las operaciones de Cloud están totalmente automatizadas y no requieren intervención manual. Para implementaciones automatizadas, el componente Cloud Manager (CM) automatiza la creación de imágenes de Docker implementables que contengan su código personalizado.
 
 ## Nuevas capacidades de Recursos {#whats-new-assets}
