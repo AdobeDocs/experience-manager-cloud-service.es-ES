@@ -3,9 +3,9 @@ title: Creación y gestión de recursos digitales en varios idiomas
 description: Aprenda a automatizar flujos de trabajo para traducir recursos, incluidos binarios, metadatos y etiquetas en varios idiomas.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2587'
 ht-degree: 24%
 
 ---
@@ -186,11 +186,14 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
 
 1. Vaya a la consola Recursos y abra la página Propiedades de cada uno de los recursos traducidos para vista de los metadatos traducidos.
 
-Para obtener sugerencias sobre la traducción eficiente de metadatos para recursos, consulte [5 pasos para traducir metadatos de forma eficaz](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## Crear proyectos de traducción {#creating-translation-projects}
 
-Para crear una copia de idioma, active uno de los siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario de Recursos:
+Para crear una copia de idioma, déclencheur uno de los siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario de Assets:
 
 **Crear y traducir**
 
