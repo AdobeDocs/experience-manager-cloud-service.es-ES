@@ -2,7 +2,7 @@
 title: Markdown
 description: Cuando se está creando, el editor de fragmentos de contenido utiliza la sintaxis de restricción para permitir escribir contenido fácilmente.
 translation-type: tm+mt
-source-git-commit: 2ab82c18fedd5e49a9aa1bcb0a774f55327d9b56
+source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 4%
@@ -186,24 +186,24 @@ Puede utilizar los escapes de barra invertida para generar caracteres literales 
 
 Los escapes de barra invertida están disponibles para los siguientes caracteres:
 
-    `\ backslash`
+    ` \ backslash`
 
     `` ` backtick``
 
-    `* asterisk`
+    ` * asterisk`
 
-    `_ underscore`
+    ` _ underscore`
 
-    `{} curly braces`
+    ` {} curly braces`
 
-    `[] square brackets`
+    ` [] square brackets`
 
-    `() parentheses`
+    ` () parentheses`
 
-    `# hash mark`
+    ` # hash mark`
 
-    `+ plus sign`
+    ` + plus sign`
 
-    `- minus sign (hyphen)`
+    ` - minus sign (hyphen)`
 
-    `. dot`
+    ` . dot`
