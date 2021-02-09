@@ -2,9 +2,9 @@
 title: 'Pruebas de IU: Cloud Services'
 description: 'Pruebas de IU: Cloud Services'
 translation-type: tm+mt
-source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
+source-git-commit: ea0c9675ca03b1d247c7e5fd13e03072fb4a13ae
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -12,12 +12,11 @@ ht-degree: 0%
 
 # Prueba de UI {#ui-testing}
 
->[!CAUTION]
->
->Esta función aún no está disponible para todo el mundo.
-
-
 Las pruebas de interfaz de usuario son pruebas basadas en selenio empaquetadas en una imagen de Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco de trabajo y tecnología creados en Selenium). La imagen del Docker se puede crear con herramientas estándar, pero debe respetar ciertas convenciones durante su ejecución. Al ejecutar la imagen del Docker, se aprovisiona automáticamente un servidor Selenium. Las convenciones de tiempo de ejecución que se describen a continuación permiten que el código de prueba acceda tanto al servidor de Selenium como a las instancias de AEM que se están probando.
+
+>[!NOTE]
+> Las canalizaciones de fase y producción creadas antes del 10 de febrero de 2012 deben actualizarse para utilizar las pruebas de interfaz de usuario tal como se describe en esta página.
+> Consulte [Configuración de la canalización CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) para obtener información sobre la configuración de la canalización.
 
 ## Generando pruebas de IU {#building-ui-tests}
 
