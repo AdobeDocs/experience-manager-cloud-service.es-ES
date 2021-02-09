@@ -2,10 +2,10 @@
 title: Uso del contenido de destino de varios sitios
 description: Si necesita administrar el contenido de destino, como actividades, experiencias y ofertas entre sus sitios, puede aprovechar la compatibilidad multisitio integrada de AEM, para el contenido de destino.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 89%
+source-wordcount: '2915'
+ht-degree: 88%
 
 ---
 
@@ -52,6 +52,7 @@ Un sitio o Live Copy que vincula a un área que contiene las actividades que deb
 >
 >* Cuando utilice lanzamientos o Live Copies, necesitará una licencia MSM.
 >* Cuando utilice la función de sincronización a Adobe Target, necesitará una licencia de Adobe Target.
+
 >
 
 
@@ -131,7 +132,7 @@ Sin embargo, si configuró la herencia mediante MSM entre los dos sitios, puede 
 
 >[!NOTE]
 >
->La implementación predeterminada desencadena despliegues posteriores del contenido de destino siempre que una página sea una Live Copy que se vincule a un área que en sí es una Live Copy del área vinculada al modelo de Páginas.
+>El despliegue predeterminado déclencheur los posteriores lanzamientos del contenido de destino siempre que una página sea una Live Copy que se vincule a un área que en sí es una Live Copy del área vinculada al modelo de Páginas.
 
 Por ejemplo, en el siguiente diagrama, hay cuatro sitios donde dos de ellos comparten el área principal (y todas las actividades que forman parte de esa área), uno que tiene un área que es una Live Copy de un área, por lo que comparte las actividades durante el despliegue, y un sitio que es completamente independiente (y que, por lo tanto, requiere un área para sus actividades).
 
@@ -188,9 +189,9 @@ Para crear un área como una Live Copy:
 
 1. En el menú desplegable, seleccione **Lanzar configuración** y escoja la configuración adecuada.
 
-   Consulte Configuración de despliegue instalada para obtener descripciones acerca de cada opción. <!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   Consulte [Configuración de despliegue instalada](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations) para obtener descripciones acerca de cada opción.
 
-   Consulte Crear y sincronizar copias de Live Copy para obtener más información sobre copias de Live Copy. <!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   Consulte [Crear y sincronizar copias de Live Copy](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html) para obtener más información sobre copias de Live Copy.
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ Una actividad que se hereda de otro sitio aparece en color verde junto al nombre
 >
 >* Solo se pueden suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender o desasociar Live Copies para expandir una actividad heredada. También puede crear **nuevas** experiencias y ofertas locales para dicha actividad. Si desea modificar una actividad existente, deberá suspender la herencia.
+
 >
 
 
