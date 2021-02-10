@@ -2,9 +2,9 @@
 title: Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch
 description: La extensión de visores de Dynamic Media para Adobe Launch, junto con la versión 5.13 de visores de Dynamic Media, permite a los clientes de Dynamic Media, Adobe Analytics y Adobe Launch utilizar eventos y datos específicos para los visores de Dynamic Media en su configuración de Adobe Launch.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
+source-wordcount: '6626'
 ht-degree: 17%
 
 ---
@@ -68,7 +68,7 @@ Consulte [Elementos de datos](https://experienceleague.adobe.com/docs/launch/usi
 
 Una regla en Inicio de Adobe es una configuración agnóstica que define tres áreas que conforman una regla: *Eventos*, *Condiciones* y *Acciones*:
 
-* *Los eventos*  (si) indican a Adobe Launch cuándo activar una regla.
+* *Los eventos*  (si) indican a Inicio de Adobe cuándo se debe déclencheur una regla.
 * *Las condiciones*  (si) indican a Adobe Launch qué restricciones adicionales se permiten o no al activar una regla.
 * *Las acciones*  (entonces) indican a Adobe Launch qué hacer cuando se activa una regla.
 
@@ -81,7 +81,7 @@ Para el seguimiento de Adobe Analytics, se deben instalar varias extensiones adi
 
 Para rastrear los visores de Dynamic Media es posible utilizar cualquier tipo de lo siguiente:
 
-* Eventos de la extensión de visores de Dynamic Media, la extensión Core o cualquier otra extensión.
+* Eventos de la extensión de visores de Dynamic Media, de la extensión Core o de cualquier otra extensión.
 * Condiciones de la definición de regla. O bien, puede dejar el área de condiciones vacío.
 
 En la sección Acciones, es necesario que tenga una acción *Establecer variables*. Esta acción indica a Adobe Analytics cómo rellenar las variables de seguimiento con datos. Al mismo tiempo, la acción *Establecer variables* no envía nada al servidor de seguimiento.
@@ -207,12 +207,12 @@ El valor exacto que devuelve el elemento de datos depende del contexto. Si el el
 * **[!UICONTROL El elemento]** ZoomScaleData señala al  **** evento ZOOM y su argumento &quot;scale&quot;.
 * **** TrackPanRule con lo siguiente:
 
-   * Utiliza el evento de Dynamic Media Viewer **[!UICONTROL PAN]** como activador.
+   * Utiliza el evento de Dynamic Media Viewer **[!UICONTROL PAN]** como déclencheur.
    * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
 
 * **** TrackKeyRule con lo siguiente:
 
-   * Utiliza el evento de prensa clave de la extensión Inicio de Adobe principal como activador.
+   * Utiliza el evento de prensa clave de la extensión Inicio de Adobe principal como déclencheur.
    * Envía el valor del elemento de datos **[!UICONTROL ZoomScale]** a Adobe Analytics.
 
 Ahora, supongamos que el usuario final carga la página web con los dos visores. En *viewer1*, se amplía al 50% de la escala; a continuación, en *viewer2*, se acercan a una escala del 25 %. En *viewer1*, recorren la imagen y finalmente presionan una tecla en el teclado.
@@ -257,7 +257,7 @@ Sin embargo, es posible utilizar un enfoque alternativo y evitar la creación de
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-Tenga en cuenta que existe una diferencia importante entre el uso de elementos de datos y la referencia directa de argumentos de evento. Para el elemento de datos, no importa qué evento desencadene la acción Definir variables, el evento que activa la regla puede no estar relacionado con el visor dinámico (como un clic del ratón en la página web desde la extensión Core). Sin embargo, al utilizar una referencia de argumento directa es importante asegurarse de que el evento que activa la regla corresponde al argumento de evento al que hace referencia.
+Tenga en cuenta que existe una diferencia importante entre el uso de elementos de datos y la referencia directa de argumentos de evento. Para el elemento de datos, no importa qué evento déclencheur la acción Definir variables, el evento que déclencheur la regla puede no estar relacionado con el visor dinámico (como un clic del ratón en la página web desde la extensión Core). Sin embargo, al utilizar una referencia de argumento directa es importante asegurarse de que el evento que déclencheur la regla corresponde al argumento de evento al que hace referencia.
 
 Por ejemplo, la referencia `%event.detail.dm.LOAD.asset%` devuelve el nombre de recurso correcto si la regla se activa mediante el evento **[!UICONTROL LOAD]** de la extensión del visualizador de Dynamic Media. Sin embargo, devuelve un valor vacío para cualquier otro evento.
 
@@ -485,7 +485,7 @@ Después de configurar Inicio de Adobe, se configurará lo siguiente para la int
 
 * La creación de una nueva propiedad para mantener todas las configuraciones juntas.
 * Instalación y configuración de extensiones. El código de cliente de todas las extensiones instaladas en la propiedad se compila en una biblioteca. Esta biblioteca se utiliza más adelante en la página web.
-* Configuración de elementos de datos y reglas. Esta configuración define los datos que se van a capturar desde los visores de Dynamic Media, cuándo se debe activar la lógica de seguimiento y dónde se deben enviar los datos del visor en Adobe Analytics.
+* Configuración de elementos de datos y reglas. Esta configuración define los datos que se van a capturar desde los visores de Dynamic Media, cuándo se va a realizar el déclencheur de la lógica de seguimiento y dónde se deben enviar los datos del visor en Adobe Analytics.
 * Publicación de la biblioteca.
 
 **Para configurar Adobe Launch para la integración**:
@@ -835,4 +835,4 @@ Sin embargo, se admite en el nodo de publicación AEM. Con la configuración pre
 
 Es posible solucionar esta limitación especificando la URL de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe en la configuración de Adobe Launch Cloud para AEM publicación anterior. Al hacer esto, el nodo de publicación AEM utiliza la versión de desarrollo o ensayo de la biblioteca de lanzamiento de Adobe.
 
-Consulte [Integración de AEM con Adobe Launch mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html) para obtener más información sobre la configuración de la nube de Adobe Launch.
+Consulte [Integrar Experience Platform Launch y AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations) para obtener más información sobre la configuración de Adobe Launch Cloud Configuration.
