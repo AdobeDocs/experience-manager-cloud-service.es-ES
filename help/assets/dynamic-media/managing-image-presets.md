@@ -2,9 +2,9 @@
 title: Administración de ajustes preestablecidos de imagen
 description: Conozca los ajustes preestablecidos de imagen y aprenda a crear, modificar y gestionar ajustes preestablecidos de imagen.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
+source-wordcount: '3647'
 ht-degree: 11%
 
 ---
@@ -381,7 +381,7 @@ Al crear o editar ajustes preestablecidos de imagen, tiene las opciones descrita
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Enfoque de imágenes</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Uso del enfoque de imagen con AEM vídeo Dynamic Media</a>, en <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Enfoque de una imagen</a> tema de ayuda en línea y en <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Prácticas recomendadas para enfocar imágenes en PDF descargables de Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
