@@ -3,10 +3,10 @@ title: Integración de AEM y Magento con Commerce Integration Framework
 description: AEM y Magento se integran perfectamente con Commerce Integration Framework (CIF). CIF permite a AEM acceder a una instancia de Magento y comunicarse con Magento a través de GraphQL. También permite a los autores de AEM utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Magento. Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '456'
+ht-degree: 88%
 
 ---
 
@@ -14,6 +14,14 @@ ht-degree: 100%
 # Integración de AEM y Magento con Commerce Integration Framework {#aem-magento-framework}
 
 AEM y Magento se integran perfectamente con Commerce Integration Framework (CIF). CIF permite a AEM acceder a una instancia de Magento y comunicarse con Magento a través de GraphQL. También permite a los autores de AEM utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Magento. Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
+
+>[!NOTE]
+>
+>GraphQL se utiliza actualmente en dos escenarios (independientes) de Adobe Experience Manager (AEM) como Cloud Service:
+>
+>* AEM Commerce consume datos de una plataforma comercial a través de GraphQL.
+>* [AEM fragmentos de contenido trabajan junto con la API de GraphQL AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en las aplicaciones](/help/assets/content-fragments/graphql-api-content-fragments.md).
+
 
 ## Información general sobre la arquitectura {#overview}
 
