@@ -2,9 +2,9 @@
 title: Acerca de los Perfiles de imagen y los Perfiles de vídeo de Dynamic Media
 description: Un Perfil de imagen o un Perfil de vídeo es una fórmula para determinar las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué codificación de vídeo se aplicará a los recursos de vídeo de Dynamic Media que cargue. O bien, qué Perfil de imagen aplicar a los recursos de imagen de Dynamic Media para que se recorten correctamente.
 translation-type: tm+mt
-source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
+source-git-commit: dfaaafce8e9a7f0d90e4c3d6967c8236d48e6e40
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1278'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Consulte también [perfiles de metadatos](/help/assets/metadata-profiles.md).
 
 Debe tener derechos de administrador para crear, editar y eliminar Perfiles de imagen de Dynamic Media o Perfiles de vídeo de Dynamic Media.
 
-Después de crear el Perfil de imágenes o el Perfil de vídeo, se asigna a una o varias carpetas que se utilizan como destino para los recursos de Dynamic Media que se acaban de cargar.
+Después de crear el Perfil de imágenes o el Perfil de vídeo, se asigna a una o varias carpetas que se utilizan para los recursos de Dynamic Media que se acaban de cargar.
 
 Consulte también [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles de vídeo](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
@@ -39,15 +39,15 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un Perfil de im
 
 Por ejemplo, supongamos que ha creado un Perfil de imagen de Dynamic Media y lo ha asignado a una carpeta. Los recursos de imagen que haya cargado en la carpeta se aplicarán automáticamente al Perfil de imagen. Sin embargo, posteriormente se decide añadir una nueva proporción de recorte inteligente al Perfil de imágenes. Ahora, en lugar de volver a seleccionar y cargar los recursos en la carpeta, simplemente ejecute el *Scene7: Volver a procesar el flujo de trabajo de Assets*.
 
-Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Por lo tanto, aunque no haya editado un Perfil de imagen o un perfil de vídeo, o haya aplicado ya un Perfil de imagen o un Perfil de vídeo, podrá seguir ejecutando el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
+Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Incluso si no ha editado un Perfil de imagen o un perfil de vídeo, o si ya ha aplicado un Perfil de imagen o un Perfil de vídeo, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Opcionalmente, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos a 1000. Al ejecutar el _Scene7: Volver a procesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y luego se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Opcionalmente, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos a 1000. Al ejecutar el _Scene7: Volver a procesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y luego se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O bien, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajuste del tamaño de lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
 >[!NOTE]
 >
->Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, debe habilitar el agente de replicación de migración en el servidor Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
+>Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, habilite el agente de replicación de migración en el servidor Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
 >
 >El agente de publicación de migración debe estar deshabilitado en el servidor de Dynamic Media para que el flujo de trabajo de reprocesamiento funcione según lo esperado.
 
@@ -60,16 +60,16 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 **Para volver a procesar los recursos de Dynamic Media en una carpeta**:
 1. En Adobe Experience Manager, en la página Recursos, navegue a una carpeta de recursos de Dynamic Media que tenga un Perfil de imagen o un Perfil de vídeo asignado y para la que desee aplicar el Scene7 **: Flujo de trabajo de reprocesamiento de recursos**,
 
-   Las carpetas que ya tienen un Perfil de imagen o un Perfil de vídeo asignado a él se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta en la Vista de tarjetas.
+   Las carpetas que tienen asignado un Perfil de imagen o un Perfil de vídeo tienen el nombre del perfil que aparece directamente debajo del nombre de la carpeta en la Vista de tarjetas.
 
 1. Seleccione una carpeta.
 
    * El flujo de trabajo tiene en cuenta todos los archivos de la carpeta seleccionada de forma recursiva.
-   * Si hay una o varias subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo volverá a procesar todos los recursos en la jerarquía de carpetas.
-   * Se recomienda evitar ejecutar este flujo de trabajo en una jerarquía de carpetas con más de 1000 recursos.
+   * Si hay una o varias subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo vuelve a procesar todos los recursos en la jerarquía de carpetas.
+   * Como práctica recomendada, evite ejecutar este flujo de trabajo en una jerarquía de carpetas que tenga más de 1000 recursos.
 
 1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología]**.
-1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario, haga clic en el icono del carro ( **^** ) .
+1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo [!UICONTROL Comentario], toque el icono del carro ( **^** ).
 
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -85,9 +85,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño de lote predeterminado en el flujo de trabajo de reprocesamiento es de 50 recursos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos mínimos de recursos en los que se ejecuta el reprocesamiento. Un valor más alto significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. En consecuencia, la pancarta de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño medio del archivo es pequeño-1 MB o menos-Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes de Adobe, se recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño de lote predeterminado en el flujo de trabajo de reprocesamiento es de 50 recursos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor más alto significa que tiene muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, la pancarta de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño medio del archivo es pequeño-1 MB o menos-Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes de Adobe, se recomienda reducir el tamaño del lote hasta 10.
 
-**Ajuste opcional del tamaño del lote del flujo de trabajo de reprocesamiento**
+**Para ajustar de forma opcional el tamaño del lote del flujo de trabajo** de reprocesamiento:
 
 1. En Experience Manager, pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
 1. En la página Modelos de flujo de trabajo, en Vista de tarjeta o Vista de Lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
