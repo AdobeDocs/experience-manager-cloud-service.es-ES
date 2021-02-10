@@ -2,7 +2,7 @@
 title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
+source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * se puede anular en un nivel más fino mediante las siguientes directivas apache mod_headers:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -43,7 +43,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    Tenga cuidado al configurar encabezados de control de caché globales o aquéllos que coinciden con un regex amplio, de modo que no se apliquen al contenido que pueda tener la intención de mantener como privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de manera precisa. Dicho esto, AEM como Cloud Service quitará el encabezado de la memoria caché si detecta que se ha aplicado a lo que detecta que el despachante no puede almacenar en caché, tal como se describe en la documentación del despachante. Para obligar a AEM a aplicar siempre almacenamiento en caché, se puede agregar la opción &quot;siempre&quot; de la siguiente manera:
 
    ```
-   <LocationMatch "\.(html)$">
+   <LocationMatch "^/content/.*\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -59,7 +59,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * Para evitar que se almacene en caché contenido específico, establezca el encabezado Cache-Control en *private*. Por ejemplo, lo siguiente impediría que el contenido HTML de un directorio llamado **myfolder** se almacene en caché:
 
    ```
-      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
       Header set Cache-Control “private”
      </LocationMatch>
    ```
@@ -78,7 +78,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * puede establecerse en un nivel más fino mediante las siguientes directivas apache `mod_headers`:
 
    ```
-      <LocationMatch "^\.*.(jpeg|jpg)$">
+      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
         Header set Cache-Control "max-age=222"
         Header set Age 0
       </LocationMatch>
