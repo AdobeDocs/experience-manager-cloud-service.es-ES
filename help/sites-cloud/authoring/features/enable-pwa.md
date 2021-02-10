@@ -1,8 +1,10 @@
 ---
 title: Activación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido activar las funciones de aplicación web progresiva en cualquier sitio mediante una configuración sencilla en lugar de codificar.
+hide: true
+hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ba014bb90b1cb08630455b3ac72895272ae8ed5b
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 0%
@@ -179,23 +181,23 @@ Esta configuración permite que el sitio se comporte como una aplicación nativa
 Esta configuración hace que partes de este sitio estén disponibles sin conexión y localmente en el dispositivo del visitante. Esto permite controlar la caché de la aplicación web para optimizar las solicitudes de red y admitir experiencias sin conexión.
 
 * **Estrategia de almacenamiento en caché y frecuencia de actualización**  de contenido: esta configuración define el modelo de almacenamiento en caché para el PWA.
-   * **Moderadamente** :  [este ](https://web.dev/stale-while-revalidate/) ajuste es el caso de la mayoría de los sitios y es el valor predeterminado.
-      * Con esta configuración, el contenido que el usuario ve por primera vez se cargará desde la caché y, mientras el usuario esté consumiendo dicho contenido, el resto del contenido de la caché se revalidará.
+   * **Moderadamente** :  [Esta ](https://web.dev/stale-while-revalidate/) configuración es el caso de la mayoría de los sitios y es el valor predeterminado.
+      * Con esta configuración, el contenido que el usuario ve por primera vez se carga desde la caché y, mientras que el usuario está consumiendo ese contenido, el resto del contenido de la caché se vuelve a validar.
    * **Frecuentemente** - Este es el caso de los sitios que necesitan actualizaciones para ser muy rápidos, como las casas de subastas.
       * Con este ajuste, la aplicación buscará primero el contenido más reciente a través de la red y, si no está disponible, volverá a la caché local.
-   * **Raramente** : este es el caso de sitios que son casi estáticos, como páginas de referencia.
-      * Con este ajuste, la aplicación buscará primero el contenido de la caché y, si no está disponible, volverá a la red para recuperarlo.
-* **Almacenamiento previo**  en caché de archivos: estos archivos alojados en AEM se guardarán en la caché del navegador local cuando el trabajador del servicio esté instalando y antes de utilizarlo. Esto garantiza que la aplicación web funcione completamente sin conexión.
-* **Inclusiones**  de rutas: las solicitudes de red para las rutas definidas se interceptan y el contenido almacenado en caché se devuelve de acuerdo con la estrategia de  **almacenamiento en caché configurada y la frecuencia de actualización** del contenido.
-* **Exclusiones**  de caché: estos archivos nunca se almacenarán en caché, independientemente de la configuración de  **Archivo anterior al** almacenamiento en caché y de las inclusiones  **de ruta**.
+   * **Raramente** : este es el caso de los sitios que son casi estáticos, como las páginas de referencia.
+      * Con este ajuste, la aplicación buscará primero el contenido en la caché y, si no está disponible, volverá a la red para recuperarlo.
+* **Almacenamiento previo**  de archivos: estos archivos alojados en AEM se guardarán en la caché del explorador local cuando se instale el programa de trabajo del servicio y antes de que se utilice. Esto garantiza que la aplicación web funcione completamente cuando esté sin conexión.
+* **Inclusiones**  de rutas: las solicitudes de red para las rutas definidas se interceptan y el contenido en caché se devuelve de acuerdo con la estrategia de  **almacenamiento en caché configurada y la frecuencia de actualización** de contenido.
+* **Exclusiones**  de caché: estos archivos nunca se almacenarán en la caché, independientemente de la configuración de  **Archivo anterior al** almacenamiento en caché e inclusiones  **de ruta**.
 
 >[!TIP]
 >
->Es probable que el equipo de desarrolladores tenga una valiosa información sobre cómo se debe configurar la configuración sin conexión.
+>Es probable que el equipo de desarrolladores tenga una valiosa información sobre cómo configurar la configuración sin conexión.
 
 ## Restricciones     {#limitations}
 
 No todas las funciones de PWA están disponibles para AEM Sites. Estas son algunas limitaciones notables.
 
-* Un usuario debe examinar la página al menos una vez antes de almacenarla en caché sin conexión.
-* Las páginas no se sincronizan o actualizan automáticamente si el usuario no utiliza la aplicación.
+* Un usuario debe explorar la página al menos una vez antes de almacenarla en la caché sin conexión.
+* Las páginas no se sincronizan ni actualizan automáticamente si el usuario no utiliza la aplicación.
