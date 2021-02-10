@@ -2,19 +2,19 @@
 title: Adición de recursos de Dynamic Media a las páginas
 description: Cómo agregar componentes de Dynamic Media a una página en Adobe Experience Manager como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: d1f2315de6b96a912b38d4b81f5ea0a672f6c168
 workflow-type: tm+mt
-source-wordcount: '3128'
-ht-degree: 30%
+source-wordcount: '3123'
+ht-degree: 29%
 
 ---
 
 
 # Adición de recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
 
-Para añadir la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar directamente en la página el componente **Dynamic Media**, **Interactive Media**, **Panoramic Media** o **Video 360 Media**. Para ello, indique el modo Diseño y active los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
+Para añadir la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar directamente en la página el componente **Dynamic Media**, **Interactive Media**, **Panoramic Media** o **Video 360 Media**. Puede acceder al modo Diseño y activar los componentes de Dynamic Media. A continuación, agregue estos componentes a la página y agregue recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
-Puede agregar recursos de Dynamic Media directamente a la página si utiliza Experience Manager como WCM. Si utiliza un tercero para su WCM, [vincule](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/dynamic-media/embed-code.md) los recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
+Puede agregar recursos de Dynamic Media directamente a la página si utiliza Experience Manager como WCM. Si está utilizando un tercero para su WCM, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [embed](/help/assets/dynamic-media/embed-code.md) sus recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de v
 
 Cuando se añade el componente de Dynamic Media y la opción **[!UICONTROL Configuración de Dynamic Media]** está vacía o no puede añadir un recurso correctamente, compruebe lo siguiente:
 
-* La imagen tiene un archivo TIFF piramidal. Las imágenes importadas antes de la activación de Dynamic Media no tienen un archivo TIFF piramidal.
+* La imagen tiene un archivo TIFF piramidal. Las imágenes importadas antes de habilitar Dynamic Media no tienen un archivo tiff piramidal.
 
 #### Uso de imágenes {#when-working-with-images}
 
