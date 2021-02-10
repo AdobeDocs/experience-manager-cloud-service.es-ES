@@ -2,9 +2,9 @@
 title: Práctica recomendada para optimizar la calidad de las imágenes
 description: Conozca las prácticas recomendadas que puede utilizar en Dynamic Media para optimizar la calidad de sus recursos de imagen.
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 5%
 
 ---
@@ -40,9 +40,9 @@ Se recomienda utilizar `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>
 
 El enfoque de imágenes es el aspecto más complejo del control de imágenes en el sitio web y en el que se cometen muchos errores. Tómese el tiempo para obtener más información sobre el funcionamiento del enfoque y la máscara de enfoque en la AEM haciendo referencia a los siguientes recursos útiles:
 
-El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a AEM.
+* El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a AEM.
 
-En Adobe TV, vea [Enfoque de una imagen con máscara de enfoque](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+* Vea [Uso del enfoque de imagen con AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Con AEM, puede enfocar imágenes durante la ingestión, en el envío o en ambos. En la mayoría de los casos, sin embargo, debe enfocar las imágenes utilizando solo un método o el otro, pero no ambos. El enfoque de imágenes en un envío, en una URL, generalmente proporciona los mejores resultados.
 
