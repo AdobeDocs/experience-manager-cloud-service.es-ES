@@ -2,9 +2,9 @@
 title: Vídeo 360/VR
 description: Aprenda a trabajar con los vídeos 360 y Realidad virtual (VR) en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ En esta sección se describe cómo trabajar con el visor de vídeo de 360/VR par
 
 Actualmente no se admite el audio espacial; si el audio se mezcla en estéreo, el equilibrio (L/R) no cambia a medida que el cliente cambia el ángulo de visualización de la cámara.
 
-Consulte [Uso de vídeos y miniaturas de vídeo personalizadas de Dynamic Media 360 con AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html).
+Consulte [Uso de vídeos y miniaturas de vídeo personalizadas de Dynamic Media 360 con AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media).
 
 Consulte también [Administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
