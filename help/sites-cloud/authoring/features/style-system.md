@@ -121,7 +121,6 @@ Para que un componente funcione con el sistema de estilos de AEM y se muestre la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Con el componente configurado, AEM insertará automáticamente en el elemento de decoración que AEM ajusta automáticamente en cada componente editable los estilos que los autores de páginas hayan configurado. El componente en sí no tiene que hacer nada más para que esto ocurra.
@@ -136,7 +135,6 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >Utiliza [superposiciones](/help/implementing/developing/introduction/overlays.md) mediante la fusión de recursos de [Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
@@ -158,6 +156,7 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 >1. HTL tiene prioridad sobre todo: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`.
 >1. A continuación, entre diversos estilos activos, se toma el primer estilo de la lista de estilos configurados en la política del componente.
 >1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
+
 >
 
 
