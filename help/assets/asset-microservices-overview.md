@@ -70,7 +70,7 @@ Aunque la mayoría de los clientes deben obtener todos sus requisitos de procesa
 
 Los flujos de trabajo posteriores al procesamiento son modelos de flujo de trabajo [!DNL Experience Manager] normales, creados y administrados en [!DNL Experience Manager] editor de flujo de trabajo. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados y flujos de trabajo personalizados disponibles.
 
-Adobe Experience Manager se puede configurar para que active automáticamente los flujos de trabajo posteriores al procesamiento una vez finalizado el procesamiento de recursos.
+Adobe Experience Manager se puede configurar para que déclencheur automáticamente los flujos de trabajo posteriores al procesamiento una vez finalizado el procesamiento de recursos.
 
 <!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
