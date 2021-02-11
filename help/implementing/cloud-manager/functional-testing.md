@@ -2,9 +2,9 @@
 title: 'Prueba funcional: Cloud Services'
 description: 'Prueba funcional: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '469'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ Las pruebas funcionales se clasifican en dos tipos:
 
 * Prueba funcional del producto
 * Prueba funcional personalizada
+* Prueba de IU personalizada
 
 ## Prueba funcional del producto {#product-functional-testing}
 
@@ -33,6 +34,12 @@ Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de form
 
 >[!NOTE]
 >El botón **Descargar registro** permite acceder a un archivo ZIP que contiene el formulario detallado de la ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución de AEM real; se puede acceder a ellos mediante la funcionalidad de los registros de descargas o de colas. Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más detalles.
+
+## Prueba de IU personalizada {#custom-ui-testing}
+
+Se pueden escribir pruebas de IU personalizadas y permite a los clientes crear rápidamente grupos de prueba de automatización para validar aplicaciones web y móviles creadas en AEM.
+
+Para obtener más información sobre cómo escribir pruebas de IU personalizadas, consulte [Generación de pruebas de IU](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests).
 
 
 ### Escritura de pruebas funcionales {#writing-functional-tests}
