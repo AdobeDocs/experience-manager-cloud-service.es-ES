@@ -4,8 +4,8 @@ description: Puede vista y edición de los metadatos (propiedades) de los fragme
 translation-type: tm+mt
 source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '111'
+ht-degree: 10%
 
 ---
 
