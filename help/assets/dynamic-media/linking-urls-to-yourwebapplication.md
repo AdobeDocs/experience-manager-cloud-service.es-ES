@@ -196,7 +196,7 @@ Dynamic Media admite el envío de recursos estáticos, que son recursos adiciona
 
 1. Combine todos los fragmentos copiados anteriormente para crear una cadena en el siguiente orden:
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    Por ejemplo, si se utiliza la información copiada de los ejemplos de estos pasos, la cadena aparecerá de la siguiente manera:
 
