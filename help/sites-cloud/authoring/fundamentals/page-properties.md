@@ -66,7 +66,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
       >[!NOTE]
       >
-      > Consulte [Tiempos de activación y desactivación: configuración](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
+      > Consulte [Tiempo de activación y desactivación: Configuración de Déclencheur](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
 
       * Si ya [se ha publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
