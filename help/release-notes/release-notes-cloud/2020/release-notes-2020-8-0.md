@@ -87,7 +87,7 @@ La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.8.0 es el 06 de
 
 * Los entornos recién creados en programas de Recursos ahora se configurarán automáticamente con Smart Content Services.
 
-* Los entornos hibernados se pueden deshibernar desde la página **Información general** del Administrador de nube.
+* Los entornos hibernados se pueden deshibernar desde la página **Información general** del Administrador de la nube.
 
 * Capacidad para realizar comprobaciones de experiencias en páginas, con tecnología de Google Lighthouse. Como parte de la canalización de Cloud Manager, se pueden comprobar y validar hasta 25 páginas con KPI de experiencia, y las puntuaciones se muestran en la interfaz de usuario del Cloud Manager.
 
