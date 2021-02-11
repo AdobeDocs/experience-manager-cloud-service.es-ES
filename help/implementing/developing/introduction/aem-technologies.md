@@ -16,7 +16,7 @@ AEM es una plataforma sólida basada en tecnologías probadas, ampliables y flex
 
 >[!TIP]
 >
->Antes de sumergirse en las tecnologías principales de AEM, Adobe recomienda completar el [Tutorial de &lt;a0/>Introducción al desarrollo de AEM Sites - WKND.](develop-wknd-tutorial.md)
+>Antes de sumergirse en las tecnologías principales de AEM, Adobe recomienda completar el [Tutorial de Introducción al desarrollo de AEM Sites - WKND.](develop-wknd-tutorial.md)
 
 ## Aspectos básicos {#fundamentals}
 
