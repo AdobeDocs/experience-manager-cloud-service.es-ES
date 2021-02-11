@@ -24,13 +24,13 @@ Adobe Experience Manager como Cloud Service utiliza la capacidad [Sling Content 
 
 Estas funciones AEM estándar para los autores no cambian con AEM Cloud Service.
 
-### Horas de activación y desactivación: Configuración de activación {#on-and-off-times-trigger-configuration}
+### Horas de activación y desactivación: Configuración de Déclencheur {#on-and-off-times-trigger-configuration}
 
 Las posibilidades adicionales de **Tiempo de activación** y **Tiempo de inactividad** están disponibles en la ficha [Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Para realizar la replicación automática para esto, debe habilitar **Replicar automáticamente** en la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuración del activador apagado**:
+Para realizar la replicación automática para esto, debe habilitar **Replicar automáticamente** en la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuración de Déclencheur desactivada**:
 
-![Configuración del activador de activación de OSGi](/help/operations/assets/replication-on-off-trigger.png)
+![Configuración de OSGi On Off Déclencheur](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Activación de árbol {#tree-activation}
 
