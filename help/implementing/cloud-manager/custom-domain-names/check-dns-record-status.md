@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Para determinar si el nombre de dominio se resuelve correctamente en el AEM como sitio web de un Cloud Service, haga clic en el icono Estado del registro DNS en la tabla de los Entornos de la página Configuración de dominio.
 
-El Administrador de nube activará automáticamente una búsqueda DNS cuando el nombre de dominio personalizado se verifique e implemente por primera vez correctamente. Para los intentos posteriores, debe seleccionar activamente el icono **resolver de nuevo** junto al estado.
+Cloud Manager déclencheur automáticamente una búsqueda DNS cuando el nombre de dominio personalizado se verifique e implemente por primera vez correctamente. Para los intentos posteriores, debe seleccionar activamente el icono **resolver de nuevo** junto al estado.
 
 Cloud Manager realiza una búsqueda DNS del nombre de dominio y muestra uno de los siguientes mensajes de estado:
 
