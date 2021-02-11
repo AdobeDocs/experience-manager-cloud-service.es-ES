@@ -211,7 +211,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
       <ol>
        <li>Eliminar carpetas de sincronización.</li>
        <li>Eliminar carpeta de ajustes preestablecidos (debajo de <code>/conf</code>).
-       <li>Activar el trabajo asincrónico de la configuración de DM.</li>
+       <li>Trabajo asincrónico de la configuración de déclencheur DM.</li>
       </ol> </li>
      <li>Espere a que se notifique la sincronización correcta en la Bandeja de entrada de AEM.
      </li>
