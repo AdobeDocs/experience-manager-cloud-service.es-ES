@@ -48,10 +48,12 @@ Los objetivos para utilizar la fusión de recursos Sling en AEM son:
 >Esto se debe a que el contenido de `/libs` puede sobrescribirse cada vez que se apliquen actualizaciones a la instancia.
 >
 >* Las superposiciones dependen de [rutas de búsqueda](/help/implementing/developing/introduction/overlays.md#search-paths).
+   >
+   >
+* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para realizar la conexión.
 >
->* Las anulaciones no dependen de las rutas de búsqueda, sino que utilizan la propiedad `sling:resourceSuperType` para realizar la conexión.
 >
->Sin embargo, las sobrescrituras se definen generalmente en `/apps`, ya que lo más recomendable en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada en `/libs`.
+Sin embargo, las sobrescrituras se definen generalmente en `/apps`, ya que lo más recomendable en AEM como Cloud Service es definir las personalizaciones en `/apps`; esto se debe a que no debe cambiar nada en `/libs`.
 
 ### Propiedades {#properties}
 
@@ -95,7 +97,7 @@ Para crear una superposición o sobrescritura, debe volver a crear el nodo origi
 
       A continuación, actualice la propiedad `jcr:title` según sea necesario.
 
-* Ignorar
+* Omitir
 
    * La definición del cuadro de diálogo táctil para la consola Textos se define en:
 
@@ -234,7 +236,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* Anular:
+* Omitir:
 
    * propósito: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`
