@@ -1,10 +1,11 @@
 ---
 title: Configuración de Dynamic Media
 description: Para configurar Dynamic Media, debe configurar Dynamic Media y administrar los ajustes preestablecidos de imagen y visor.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '179'
 ht-degree: 3%
 
 ---
@@ -40,4 +41,4 @@ Consulte también los siguientes temas:
 >
 >**Si está actualizando:**
 >
->* Una vez que el Experience Manager esté en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si está en una instancia actualizada de Experience Manager y es nuevo en Dynamic Media, es posible que tenga que volver a procesar los recursos para habilitarlos para Dynamic Media.
+>* Una vez que el Experience Manager esté en funcionamiento, cualquier recurso que cargue tendrá Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si está en una instancia actualizada de Experience Manager y es nuevo en Dynamic Media, es probable que deba volver a procesar los recursos para habilitarlos para Dynamic Media. Consulte [Reprocesamiento de recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
