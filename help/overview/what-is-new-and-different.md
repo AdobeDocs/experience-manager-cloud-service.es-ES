@@ -2,7 +2,7 @@
 title: 'Qué es diferente y qué es lo nuevo: Adobe Experience Manager como Cloud Service'
 description: 'Qué es diferente y Qué es nuevo: Adobe Experience Manager (AEM) como Cloud Service. '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 10%
@@ -93,7 +93,7 @@ AEM actualizaciones de versión son de dos tipos:
 
 Adobe Cloud Manager es una parte integral del enfoque de actualización continua de AEM como Cloud Service, ya que controla todas las actualizaciones de las instancias. Esto es obligatorio.
 
-Adobe puede activar las actualizaciones cuando hay una nueva versión del servicio en la nube disponible. También puede activar las actualizaciones de la aplicación mediante las canalizaciones proporcionadas por Cloud Manager.
+Adobe puede activar las actualizaciones cuando hay una nueva versión del servicio en la nube disponible. Como alternativa, puede realizar el déclencheur de las actualizaciones de la aplicación mediante las canalizaciones proporcionadas por Cloud Manager.
 
 Cloud Manager es:
 
@@ -262,7 +262,7 @@ Para obtener más información, consulte la descripción general de [Cambios en 
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets como Cloud Service oferta una solución SaaS nativa de la nube para que las empresas no solo realicen sus operaciones de administración de activos digitales y Dynamic Media con rapidez e impacto, sino que también utilicen las funciones inteligentes de próxima generación, como AI/ML, desde un sistema siempre actual, siempre disponible y siempre en aprendizaje.
+Adobe Experience Manager Assets como Cloud Service oferta una solución PaaS nativa de la nube para que las empresas no solo realicen sus operaciones de administración de activos digitales y Dynamic Media con rapidez e impacto, sino que también utilicen las funciones inteligentes de próxima generación, como AI/ML, desde un sistema siempre actual, siempre disponible y siempre en aprendizaje.
 
 La oferta de recursos incluye el procesamiento de recursos de próxima generación en la nube y la búsqueda y la ingesta de recursos de alto rendimiento.
 
