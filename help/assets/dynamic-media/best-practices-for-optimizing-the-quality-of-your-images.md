@@ -1,10 +1,11 @@
 ---
 title: Práctica recomendada para optimizar la calidad de las imágenes
 description: Conozca las prácticas recomendadas que puede utilizar en Dynamic Media para optimizar la calidad de sus recursos de imagen.
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1452'
 ht-degree: 5%
 
 ---
@@ -20,7 +21,7 @@ AEM incluye más de 100 comandos de envío de imágenes de Dynamic Media para aj
 
 * JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
 * Si no se proporciona ningún comando de formato en la dirección URL, el Envío de imágenes de Dynamic Media utiliza de forma predeterminada JPG para envío.
-* JPG comprime a una proporción de 10:1 y normalmente produce archivos de imagen más pequeños. PNG se comprime a una proporción de aproximadamente 2:1, excepto en algunos casos, como cuando las imágenes contienen un fondo blanco. Normalmente, los tamaños de archivo PNG son mayores que los archivos JPG.
+* JPG comprime a una proporción de 10:1 y normalmente produce archivos de imagen más pequeños. PNG comprime en una proporción de aproximadamente 2:1, excepto cuando las imágenes contienen un fondo blanco. Normalmente, los tamaños de archivo PNG son mayores que los archivos JPG.
 * JPG utiliza compresión con pérdida, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. Por otro lado, PNG utiliza compresión sin pérdida.
 * JPG a menudo comprime imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
 * Si las imágenes contienen transparencia, utilice PNG porque JPG no admite transparencia.
@@ -44,7 +45,7 @@ El enfoque de imágenes es el aspecto más complejo del control de imágenes en 
 
 * Vea [Uso del enfoque de imagen con AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Con AEM, puede enfocar imágenes durante la ingestión, en el envío o en ambos. En la mayoría de los casos, sin embargo, debe enfocar las imágenes utilizando solo un método o el otro, pero no ambos. El enfoque de imágenes en un envío, en una URL, generalmente proporciona los mejores resultados.
+Con AEM, puede enfocar imágenes durante la ingestión, en el envío o en ambos. Sin embargo, normalmente es mejor enfocar las imágenes utilizando solo un método o el otro, pero no ambos. El enfoque de imágenes en un envío, en una URL, generalmente proporciona los mejores resultados.
 
 Existen dos métodos de enfoque de imagen que puede utilizar:
 
@@ -56,18 +57,19 @@ Existen dos métodos de enfoque de imagen que puede utilizar:
       * **[!UICONTROL cantidad]** (0-5, intensidad del efecto).
       * **[!UICONTROL radius]** (0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles).
 
-         Tenga en cuenta que el radio y la cantidad de parámetros funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. Radio permite un control más preciso, ya que un valor inferior enfoca solo los píxeles del borde, mientras que un valor superior enfoca una banda más ancha de píxeles.
+      Tenga en cuenta que el radio y la cantidad de parámetros funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. Radio permite un control más preciso, ya que un valor inferior enfoca solo los píxeles del borde, mientras que un valor superior enfoca una banda más ancha de píxeles.
 
       * **[!UICONTROL umbral]** (0-255, sensibilidad del efecto).
+      Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL threshold]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
 
-         Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL threshold]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
       Para obtener más información sobre cómo se configuran estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
 
       AEM tema de ayuda sobre cómo enfocar una imagen.
 
       Documento técnico de prácticas recomendadas [Calidad de imagen y prácticas recomendadas de enfoque de Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) de Adobe.
 
-   * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
+      * AEM también le permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen con el valor 1.
+
 
 
 Se recomienda utilizar el inicio con el parámetro de radio de máscara de enfoque. Los ajustes de radio con los que puede realizar inicios son los siguientes:
@@ -96,7 +98,7 @@ Como práctica recomendada para la compresión JPG, utilice `&qlt=85,0`.
 
 ## Prácticas recomendadas para el tamaño JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-jpegSize es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para el envío a dispositivos con memoria limitada.
+`jpegSize` es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para el envío a dispositivos con memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para el envío de imágenes.
 * `&jpegSize=` interactúa con el parámetro de compresión JPG  `&qlt=`. Si la respuesta JPG con el parámetro de compresión JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` tal como está definida. De lo contrario, `&qlt=` se reduce gradualmente hasta que la imagen se ajuste al tamaño máximo permitido o hasta que el sistema determine que no cabe y devuelva un error.
@@ -115,9 +117,9 @@ Si la imagen requiere optimización adicional, ajuste gradualmente los parámetr
 
 Si los resultados de enfoque siguen siendo insatisfactorios, aumente el radio en incrementos decimales. Para cada incremento decimal, reinicie la cantidad a 1,75 y aumente gradualmente a 4. Repita este proceso hasta que alcance el resultado deseado. Aunque los valores anteriores son un enfoque que los estudios creativos han validado, recuerde que puede establecer inicios con otros valores y seguir otras estrategias. Si los resultados son satisfactorios para usted o no es un asunto subjetivo, por lo tanto la experimentación estructurada es clave.
 
-A medida que experimenta, también puede encontrar las siguientes sugerencias generales útiles para optimizar el flujo de trabajo:
+A medida que experimenta, las siguientes sugerencias generales son útiles para optimizar el flujo de trabajo:
 
 * Pruebe distintos parámetros en tiempo real, directamente en una URL.
-* La práctica recomendada es agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
-* AEM también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que esta opción puede ser una opción para optimizar y perfeccionar aún más los resultados de procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
+* La práctica recomendada es agrupar comandos de servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta de URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para los distintos patrones de uso de imágenes en el sitio web y acorta la longitud total de las direcciones URL.
+* Experience Manager también ofrece formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de enfoque durante la ingesta. Para ajustar y optimizar los resultados del procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
 
