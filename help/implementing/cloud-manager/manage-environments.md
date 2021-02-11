@@ -82,7 +82,7 @@ La tarjeta **Entornos** de la página Información general lista hasta tres ento
 
 ## Actualizando Entorno {#updating-dev-environment}
 
-Las actualizaciones de los entornos de fase y producción se gestionan automáticamente mediante Adobe.
+Las actualizaciones de entornos de fase y producción se administran automáticamente mediante Adobe.
 
 Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible públicamente, el estado de la tarjeta de Entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
