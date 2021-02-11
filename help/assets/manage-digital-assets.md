@@ -387,7 +387,7 @@ Las herramientas de edición de la interfaz [!DNL Experience Manager Assets] le 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Seleccione el área que desea recortar y cambie su tamaño o posición en la imagen.
-1. Utilice el icono **Finalizar** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finalizar** también se desencadena la regeneración de las representaciones.
+1. Utilice el icono **Finalizar** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finalizar** también se déclencheur la regeneración de las representaciones.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
