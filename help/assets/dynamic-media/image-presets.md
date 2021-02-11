@@ -31,8 +31,9 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
    >[!NOTE]
    >
    >* Las representaciones estáticas aparecen en la mitad superior del panel. Las representaciones dinámicas aparecen en la mitad inferior. Solo con las representaciones dinámicas, puede utilizar la URL para mostrar la imagen. El botón **[!UICONTROL URL]** sólo aparece si selecciona una representación dinámica. El botón **[!UICONTROL RESS]** sólo aparece si selecciona un ajuste preestablecido de imagen interactivo.
-   >
-   >* El sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** en la vista de detalles de un recurso. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+      >
+      >
+   * El sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** en la vista de detalles de un recurso. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
