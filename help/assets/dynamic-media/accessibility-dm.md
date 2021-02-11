@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 75caf21c399271b23e71c7c0045e3a41cda8a851
+source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Las pulsaciones de teclas admitidas por los elementos de interfaz de usuario ind
 * Posibilidad de utilizar pulsaciones de tecla `Tab` y `Shift+Tab` para navegar entre los elementos interactivos de la página.
 Al utilizar `Tab` se pasa el enfoque de entrada al siguiente elemento de interfaz de usuario en el orden de tabulación; el uso de `Shift+Tab` devuelve el enfoque de entrada al elemento de interfaz de usuario anterior.
 El recorrido de enfoque sigue la ubicación del elemento de interfaz de usuario natural en la pantalla y se mueve de izquierda a derecha y, a continuación, de arriba abajo. Además, si algún campo tiene un error, puede presionar `Tab` para mover el enfoque a él.
-* Posibilidad de utilizar la clave `Spacebar` y `Enter` para activar elementos de interfaz de usuario estándar, como botones, lista desplegable, etc.
+* Posibilidad de utilizar la clave `Spacebar` y `Enter` para activar elementos de interfaz de usuario estándar, como botones y listas desplegables.
 * Posibilidad de ver el resaltado del enfoque del teclado en el elemento activo. El elemento de interfaz de usuario que tiene foco de entrada recibió una indicación de enfoque visual como borde representado alrededor del elemento de interfaz de usuario.
 * En el editor de zonas interactivas, puede utilizar algunas pulsaciones de teclas personalizadas, como las teclas de flecha, para interactuar con elementos complejos de la interfaz de usuario y cambiar la posición de las zonas interactivas.
 * En el editor de vídeo interactivo, puede utilizar `Spacebar` para seleccionar una imagen y agregarla a un segmento. Además, puede utilizar la clave `Backspace` para eliminar el elemento seleccionado de la ficha **[!UICONTROL Contenido]**. Además, al pulsar `Tab` se actúa como se desea para navegar entre los elementos interactivos de la página.
