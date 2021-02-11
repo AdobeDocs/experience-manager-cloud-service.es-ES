@@ -4,8 +4,8 @@ description: Vista previa de la representación JSON del fragmento.
 translation-type: tm+mt
 source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
