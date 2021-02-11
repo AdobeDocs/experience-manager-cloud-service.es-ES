@@ -2,7 +2,7 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functi
    * Auditoría de experiencias: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencia después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
 Consulte [Explicación de los resultados de la auditoría de experiencia](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
 
-      ![](assets/testing-tab.png)
+      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
