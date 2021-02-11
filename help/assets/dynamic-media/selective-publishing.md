@@ -34,7 +34,7 @@ Si posteriormente decide cambiar la configuración de **[!UICONTROL Publicación
 
 La opción de nivel de carpeta **[!UICONTROL modo de publicación de Dynamic Media]** siempre establece de forma predeterminada el valor que se encuentra en la configuración **[!UICONTROL Publicar recursos]** de la configuración de **[!UICONTROL Dynamic Media.]** Sin embargo, los pasos siguientes en este tema muestran cómo cambiar manualmente este valor predeterminado en el nivel de carpeta (como se describe en los pasos siguientes) para anular el valor de  **[!UICONTROL Dynamic Media]** Configuration.
 
-Independientemente de si confía en el valor **[!UICONTROL Publicar recursos]** establecido en **[!UICONTROL Configuración de Dynamic Media]** o en el valor **[!UICONTROL modo Publicar de Dynamic Media]** establecido en las propiedades de nivel de carpeta, aún puede elegir **[!UICONTROL Inmediatamente]**, **[!UICONTROL Tras la Activación]** o &lt;a10000/>Publicación selectiva.**** Por ejemplo, puede establecer el valor  **[!UICONTROL Publicar]** recursos en la configuración de  **[!UICONTROL Dynamic Media en]** Al realizar la Activación **[!UICONTROL , pero establecer el valor del modo]** Dynamic Media  **[!UICONTROL Publishmode en el nivel de carpeta en Publicación]**   **** selectiva, viceversa, etc.
+Independientemente de si confía en el valor **[!UICONTROL Publicar recursos]** establecido en **[!UICONTROL Configuración de Dynamic Media]** o en el valor **[!UICONTROL modo Publicar de Dynamic Media]** establecido en las propiedades de nivel de carpeta, aún puede elegir **[!UICONTROL Inmediatamente]**, **[!UICONTROL Tras la Activación]** o **[!UICONTROL Publicación selectiva.]** Por ejemplo, puede establecer el valor  **[!UICONTROL Publicar]** recursos en la configuración de  **[!UICONTROL Dynamic Media en]** Al realizar la Activación **[!UICONTROL , pero establecer el valor del modo]** Dynamic Media  **[!UICONTROL Publishmode en el nivel de carpeta en Publicación]**   **** selectiva, viceversa, etc.
 
 Después de configurar la publicación selectiva en una carpeta, puede realizar cualquiera de las siguientes acciones:
 
@@ -185,7 +185,7 @@ Puede utilizar **[!UICONTROL Publicación rápida]** para casos de activación d
 
 ## Publicar o cancelar selectivamente la publicación de recursos mediante los resultados de búsqueda {#selective-publish-unpublish-search-results}
 
-Los resultados de la búsqueda pueden mostrar recursos de distintas carpetas de recursos con diferentes configuraciones de publicación de Dynamic Media. Si ha seleccionado uno o varios recursos de los resultados de búsqueda y los recursos tienen diferentes ajustes del modo de publicación de Dynamic Media, puede activar **[!UICONTROL Administrar publicación]** desde la barra de herramientas para publicar o cancelar la publicación.
+Los resultados de la búsqueda pueden mostrar recursos de distintas carpetas de recursos con diferentes configuraciones de publicación de Dynamic Media. Si ha seleccionado uno o varios recursos de los resultados de búsqueda y los recursos tienen diferentes ajustes del modo de publicación de Dynamic Media, puede déclencheur **[!UICONTROL Administrar publicación]** desde la barra de herramientas para publicar o cancelar la publicación.
 
 Consulte también [Buscar recursos en AEM.](/help/assets/search-assets.md)
 
