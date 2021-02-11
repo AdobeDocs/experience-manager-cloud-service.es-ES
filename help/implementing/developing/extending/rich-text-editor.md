@@ -131,18 +131,20 @@ El modo [de edición RTE y la interfaz](#editingmodes) que proporciona a los aut
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
+
 >
->No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
+>
+No asigne un nombre al nodo de configuración RTE como `config`. De lo contrario, las configuraciones de RTE surtirán efecto únicamente para los administradores y no para los usuarios del grupo `content-author`.
 
 Configure las siguientes propiedades que se aplican en el modo de edición de cuadro de diálogo:
 
-* `useFixedInlineToolbar`:: Puede hacer que la barra de herramientas RTE sea fija en lugar de flotante. Establezca esta propiedad booleana definida en el nodo RTE con sling:resourceType= `cq/gui/components/authoring/dialog/richtext` en `True`. Cuando esta propiedad se establece en `True`, la edición de texto enriquecido se inicia en el evento `foundation-contentloaded`. Para evitarlo, establezca la propiedad `customStart` en `True` y active el evento `rte-start` en la edición RTE de inicio. Cuando esta propiedad es `true`, RTE no tiene el inicio de hacer clic y este es el comportamiento predeterminado.
+* `useFixedInlineToolbar`:: Puede hacer que la barra de herramientas RTE sea fija en lugar de flotante. Establezca esta propiedad booleana definida en el nodo RTE con sling:resourceType= `cq/gui/components/authoring/dialog/richtext` en `True`. Cuando esta propiedad se establece en `True`, la edición de texto enriquecido se inicia en el evento `foundation-contentloaded`. Para evitarlo, establezca la propiedad `customStart` en `True` y déclencheur el evento `rte-start` en la edición RTE de inicio. Cuando esta propiedad es `true`, RTE no tiene el inicio de hacer clic y este es el comportamiento predeterminado.
 
 * `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en  `True`, para controlar cuándo se debe activar el inicio RTE activando el evento  `rte-start`.
 
-* `rte-start`:: Activar este evento en el  `contenteditable-div` editor de texto enriquecido, al editar inicio RTE. Funciona sólo si `customStart` se ha establecido en `true`.
+* `rte-start`:: Déclencheur este evento en el  `contenteditable-div` editor de texto enriquecido, cuándo editar el inicio RTE. Funciona sólo si `customStart` se ha establecido en `true`.
 
-Cuando se utiliza RTE en el cuadro de diálogo táctil, establezca la propiedad `useFixedInlineToolbar` en `true` para evitar problemas.
+Cuando se utiliza RTE en el cuadro de diálogo táctil habilitado, establezca la propiedad `useFixedInlineToolbar` en `true` para evitar problemas.
 
 ## Habilitar las funcionalidades RTE mediante la activación de complementos {#enable-rte-functionalities-by-activating-plug-ins}
 
@@ -159,8 +161,10 @@ El [componente de texto Componentes principales](https://docs.adobe.com/content/
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
->Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
+>
+Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
 
 ## Configurar la barra de herramientas RTE {#dialogfullscreen}
 
