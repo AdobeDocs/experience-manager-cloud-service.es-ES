@@ -2,7 +2,7 @@
 title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2021.2.0
 description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2021.2.0
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -34,7 +34,7 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.2.0 es el 1
 
 * La interfaz de usuario del Administrador de nube informará al usuario que no pueda agregar o actualizar temporalmente el nombre de dominio porque el entorno asociado tiene una canalización en ejecución conectada a él o está esperando el paso de aprobación.
 
-* Las propiedades configuradas en los archivos `pom.xml` del cliente con el prefijo sonar y ahora se eliminarán dinámicamente para evitar errores de compilación y de análisis de calidad.
+* Las propiedades configuradas en los archivos `pom.xml` del cliente con el prefijo Sonar ahora se eliminarán dinámicamente para evitar errores de compilación y de exploración de calidad.
 
 * La interfaz de usuario del Administrador de nube informará al usuario que no pueda seleccionar temporalmente un certificado SSL si está siendo utilizado por un nombre de dominio que se está implementando actualmente.
 
