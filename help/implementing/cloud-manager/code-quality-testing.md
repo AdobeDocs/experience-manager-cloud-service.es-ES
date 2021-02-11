@@ -2,7 +2,7 @@
 title: 'Prueba de calidad del código: Cloud Services'
 description: 'Prueba de calidad del código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Consulte [Configuración de la canalización CI-CD](/help/implementing/cloud-man
 En la prueba de calidad del código, se analiza el código fuente para asegurarse de que cumple ciertos criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en base a las optimizaciones de AEM ingeniería y se denominan [Reglas de calidad de código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->Puede descargar la lista completa de las reglas [aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+>Puede descargar la lista completa de las reglas [aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
 **Puerta de tres niveles**
 
