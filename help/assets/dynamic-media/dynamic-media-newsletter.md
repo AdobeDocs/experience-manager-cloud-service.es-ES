@@ -112,7 +112,7 @@ En este boletín informativo de una sola publicación, descubra los valiosos rec
 
    * Explore las valiosas funciones disponibles solo cuando actualice a Dynamic Media.
    * Obtenga información sobre una serie de seminarios web diseñados para ayudarle en Adobe Experience Manager Assets y Dynamic Media.
-   * Inicio tu viaje obteniendo valor de Dynamic Media en Experience League.
+   * Inicio que tu recorrido obtenga valor de Dynamic Media en Experience League.
    * Eche un vistazo a la poderosa integración que se producirá en septiembre y que le permitirá analizar cómo interactúan los visitantes con sus medios enriquecidos.
    * Conozca a PieterJan Pieper, técnico de Dynamic Media con asistencia técnica.
 
