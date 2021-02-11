@@ -120,16 +120,16 @@ La mayoría de las implementaciones de vista rápida utilizan el siguiente parad
 * Los datos de vista rápida se traducen al contenido como preparación para su procesamiento en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-El método consiste en visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida, activar la vista rápida y capturar la URL de Ajax enviada por la página web para cargar los datos o el contenido de vista rápida.
+El método consiste en visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida, déclencheur de la vista rápida y captura la URL de Ajax enviada por la página web para cargar los datos o el contenido de vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. Estos son algunos ejemplos de exploradores Web que incluyen inspectores Web:
 
 * Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 (Windows) o Comando-Opción-I (Mac) para abrir el panel Herramientas del desarrollador y, a continuación, toque la ficha Red.
 * En Firefox, puede activar el complemento Firebug pulsando F12 (Windows) o Comando-Opción-I (Mac) y utilizar su ficha Red, o puede utilizar la herramienta Inspector integrada y su ficha Red.
 
-Cuando la supervisión de red está activada en el explorador, active la vista rápida en la página.
+Cuando se activa la supervisión de red en el navegador, se déclencheur la vista rápida en la página.
 
-Encuentre ahora la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para futuras análisis. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
+Encuentre ahora la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para futuras análisis. En la mayoría de los casos, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
 Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. La razón es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
@@ -422,7 +422,7 @@ El último paso en este proceso es integrar la pancarta de carrusel con una impl
 
 La implementación de vista rápida existente normalmente representa una cadena de acciones interrelacionadas que se producen en la página web en el siguiente orden:
 
-1. Un usuario activa un elemento en la interfaz de usuario del sitio web.
+1. Un usuario déclencheur un elemento en la interfaz de usuario del sitio web.
 1. El código front-end obtiene una URL de vista rápida basada en el elemento de interfaz de usuario que se activó en el paso 1.
 1. El código front-end envía una solicitud de Ajax utilizando la dirección URL obtenida en el paso 2.
 1. La lógica back-end devuelve los datos o el contenido de vista rápida correspondientes al código front-end.
@@ -438,7 +438,7 @@ En un controlador de evento de este tipo, el código front-end hace lo siguiente
 
 * Escucha un evento emitido por la pancarta de carrusel.
 * Construye una URL de vista rápida en función de los datos de puntos interactivos o mapas de imagen.
-* Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
+* Déclencheur el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
 
 El código incrustado devuelto por AEM Assets ya tiene un controlador de eventos listo para usar en su lugar con comentarios.
 
@@ -448,7 +448,7 @@ El proceso de construir la URL de vista rápida es básicamente opuesto al proce
 
 Consulte [Identificación de variables de zona interactiva y mapa de imagen](#identifying-hotspot-and-image-map-variables).
 
-El último paso para activar la dirección URL de vista rápida y activar el panel de vista rápida requiere, muy probablemente, la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo activar con precisión la implementación de vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
+El último paso para realizar el déclencheur de la URL de vista rápida y activar el panel de vista rápida requiere, probablemente, la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo déclencheur con precisión la implementación rápida de vistas desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
 ## Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
