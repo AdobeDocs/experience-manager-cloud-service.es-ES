@@ -4,9 +4,9 @@ description: Las prácticas recomendadas integran una implementación Experience
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
+source-wordcount: '3294'
 ht-degree: 18%
 
 ---
@@ -70,7 +70,7 @@ Decidir qué capacidad utilizar
 
 Para admitir casos de uso de distribución de recursos, se deben considerar otras soluciones:
 
-* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal para un complemento configurable de SaaS en AEM Assets para publicar recursos.
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal para un complemento configurable de Recursos para publicar recursos.
 
 * Las soluciones personalizadas se crean en base al código [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/).
 * AEM [link share](/help/assets/share-assets.md) para compartir recursos ad hoc mediante vínculos.
@@ -141,89 +141,89 @@ A menudo, no es deseable almacenar todos los recursos y las actualizaciones. Por
 
 #### Cuando los recursos se almacenan en DAM {#when-assets-are-stored-in-dam}
 
-Los equipos creativos (y las organizaciones) no suelen estar interesados en almacenar recursos en cada etapa del ciclo vital de los recursos. Por ejemplo, evitan almacenar recursos en los siguientes casos:
+Los equipos creativos (y las organizaciones) no suelen estar interesados en almacenar recursos en cada etapa del ciclo vital de los recursos. Por ejemplo, evitan almacenar activos en los siguientes casos:
 
-* Recursos que aún no se han finalizado o que están sujetos a experimentación
-* Recursos que no superan el ciclo de revisión creativo/interno del equipo
+* Activos que aún no se han finalizado o que están sujetos a experimentación
+* Recursos que no superan el ciclo de revisión creativa/interna del equipo
 * En comparación con el activo en cuestión, el equipo tiene mejores candidatos para representar su trabajo en equipos externos
 
-Normalmente, los siguientes recursos de clases se almacenan en DAM:
+Normalmente, los activos de las clases siguientes se almacenan en DAM:
 
-* Activos que alcanzaron un cierto vencimiento y se consideran listos para compartirse
+* Activos que alcanzaron un cierto vencimiento y se consideran listos para compartir
 * Recursos preseleccionados por el equipo creativo
-* Formatos de recurso específicos que se pueden utilizar o se solicitan en la mercadotecnia, según un contrato o acuerdo específico (por ejemplo, archivos JPG convertidos a partir de archivos RAW, TIFF/imágenes de originales PSD)
+* Formatos de activos específicos que se pueden utilizar o solicitar mediante marketing, dependiendo de un contrato o acuerdo específico (por ejemplo, archivos JPG convertidos a partir de archivos RAW, TIFF/imágenes de originales PSD)
 
-#### Cuando las actualizaciones de los recursos se almacenan en DAM {#when-updates-to-assets-are-stored-in-dam}
+#### Cuando las actualizaciones de los activos se almacenan en DAM {#when-updates-to-assets-are-stored-in-dam}
 
-Como regla general, solo las actualizaciones de los recursos que son relevantes para el conjunto más amplio de usuarios de DAM deben almacenarse en DAM. Garantiza que los usuarios (funciones de marketing y similares) solo vean versiones relevantes en la línea de tiempo de recursos de DAM.
+Por regla general, solo las actualizaciones de los activos que sean relevantes para el conjunto más amplio de usuarios de DAM deben almacenarse en DAM. Garantiza que los usuarios (marketing y funciones similares) solo vean las versiones relevantes en la línea de tiempo de activos de DAM.
 
-Generalmente, los cambios se relacionan con hitos principales en el ciclo de vida de los recursos. Por ejemplo, el recurso listo para la comercialización inicial o una actualización oficial basada en una solicitud o revisión proporcionada por el equipo creativo deben almacenarse y crearse versiones en DAM.
+Normalmente, los cambios se relacionan con los principales hitos del ciclo de vida de los activos. Por ejemplo, el activo inicial listo para la comercialización o una actualización oficial basada en una solicitud/revisión proporcionada por el equipo creativo deben almacenarse y crearse versiones en DAM.
 
-La actualización del equipo creativo para su revisión por parte del equipo de marketing tras una solicitud de cambio en el recurso existente en DAM es un ejemplo de una actualización relevante. Debe almacenarse y crearse una versión en DAM para consulta adicional o para volver a la versión anterior.
+La actualización del equipo creativo para su revisión por el equipo de marketing tras una solicitud de cambio en el activo existente en DAM es un ejemplo de actualización relevante. Debe almacenarse y almacenarse en DAM para su posterior referencia o para volver a la versión anterior.
 
-Los siguientes son ejemplos de actualizaciones que normalmente no son relevantes:
+A continuación se muestran ejemplos de actualizaciones que normalmente no son relevantes:
 
-* Versiones iniciales de los recursos cargados antes de que estén listos para la revisión de marketing
-* Cambios creativos frecuentes en el recurso en la fase de trabajo en curso antes de que los equipos creativos y de marketing decidan que el recurso está listo
+* Versiones anteriores de los activos cargados antes de que estén listos para la revisión de marketing
+* Cambios creativos frecuentes en el activo en la fase de trabajo en curso antes de que los equipos creativos y de marketing decidan que el activo está listo
 
-### Acceso del usuario a DAM {#user-access-to-dam}
+### Acceso de usuario a DAM {#user-access-to-dam}
 
-AEM Assets admite dos tipos de usuarios en función de su acceso a la implementación de AEM Assets. Normalmente, los usuarios dentro de la red empresarial (servidor de seguridad) tienen acceso directo a DAM. Otros usuarios fuera de la red empresarial no tendrían acceso directo. El tipo de usuario determina qué integraciones se pueden utilizar desde el punto de vista técnico.
+AEM Assets admite dos tipos de usuarios en función de su acceso a la implementación de AEM Assets. Normalmente, los usuarios de la red empresarial (firewall) tienen acceso directo a DAM. Otros usuarios fuera de la red empresarial no tendrían acceso directo. El tipo de usuario determina qué integraciones se pueden utilizar desde el punto de vista técnico.
 
 #### Usuarios creativos con acceso directo a DAM {#creative-users-with-direct-access-to-dam}
 
-Generalmente, los equipos creativos internos o las agencias o los profesionales creativos integrados en la red interna tienen acceso a la instancia de DAM, incluido AEM inicio de sesión. Se puede configurar una infraestructura de red y AEM para permitir el acceso directo a partes externas -generalmente organizaciones de confianza como las agencias que trabajan para un cliente- para tener acceso a AEM a través de la red, por ejemplo, a través de una lista de permitidos VPN o IP.
+Normalmente, los equipos creativos internos o las agencias/profesionales creativos incorporados a la red interna tienen acceso a la instancia de DAM, incluido AEM inicio de sesión. Se puede configurar la infraestructura de AEM y de red para permitir el acceso directo a partes externas (generalmente organizaciones de confianza como agencias que trabajan para un cliente) para tener acceso a AEM a través de la red, por ejemplo, mediante VPN o lista de IP permitidas.
 
-En estos casos, el vínculo de recursos de Adobe o AEM aplicación de escritorio proporciona un acceso sencillo a los recursos finales o aprobados y le permite guardar en DAM los recursos listos para la creación.
+En estos casos, Adobe Asset Link o AEM aplicación de escritorio proporciona acceso fácil a los activos finales o aprobados y le permite guardar los activos listos para la creación en DAM.
 
 #### Usuarios creativos sin acceso a DAM {#creative-users-without-access-to-dam}
 
-Es posible que las agencias externas y los autónomos que no tienen acceso directo a la instancia de DAM necesiten acceder a los recursos aprobados o deseen añadir sus nuevos diseños al DAM.
+Las agencias externas y los freelancers sin acceso directo a la instancia de DAM pueden requerir acceso a activos aprobados o querer agregar sus nuevos diseños al DAM.
 
 Utilice las siguientes estrategias para proporcionar acceso a los activos finales o aprobados:
 
 * Utilice la aplicación de escritorio si Asset Link no funciona.
-* Utilice [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) para distribuir recursos de forma segura a socios externos
-* Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Utilice Control de acceso configurado en la infraestructura de red AEM y necesaria (por ejemplo, VPN e IP permitidas en la lista) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar AEM interfaz de usuario web para obtener recursos y cargar contenido nuevo en su DAM.
+* Utilice [Portal de marca de AEM Assets](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) para distribuir activos de forma segura a socios externos
+* Utilizar una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
+* Utilice Control de acceso configurado en AEM infraestructura de red necesaria (por ejemplo, lista de VPN e IP permitidas) para proporcionar a las partes externas acceso a un área dedicada de contenido en su DAM. Pueden utilizar AEM interfaz de usuario web para obtener activos y cargar contenido nuevo en su DAM.
 
-#### Trabajos en curso sobre los activos de AEM {#work-in-progress-on-assets-from-aem}
+#### Trabajo en curso sobre activos de AEM {#work-in-progress-on-assets-from-aem}
 
-Como se explica en este documento, se recomienda llevar a cabo actualizaciones importantes de los recursos, a veces denominadas trabajo en curso, sin que todas las ediciones guardadas en el archivo local se carguen también en AEM como cambios. Esto acelera el trabajo de un usuario de escritorio, limita el ancho de banda de red utilizado y mantiene la línea de tiempo de los recursos limpia y centrada en actualizaciones importantes y controladas.
+Como se explica en este documento, se recomienda realizar actualizaciones importantes de los activos, a veces denominados trabajos en curso, sin tener que guardar todas las ediciones en el archivo local y cargarlas también como cambios en AEM. Esto acelera el trabajo de un usuario de escritorio, limita el ancho de banda de la red utilizado y mantiene la línea de tiempo de los activos limpia y centrada en actualizaciones importantes y controladas.
 
-Adobe Asset Link oferta una buena compatibilidad para este caso de uso:
+Adobe Asset Link ofrece una buena compatibilidad con este caso de uso:
 
-* Cuando los usuarios de Photoshop, InDesign o Illustrator intentan editar un archivo, ejecutan una operación de desprotección en el recurso determinado
-* El recurso se descarga en segundo plano, se coloca en la cuenta de Creative Cloud del usuario sincronizada con el disco por la aplicación de escritorio de Creative Cloud y el indicador de cierre de compra se activa en AEM del recurso para minimizar los conflictos de edición
-* A partir de ahí, el usuario trabaja en un archivo almacenado localmente en la ubicación sincronizada y puede seguir trabajando y guardando los cambios necesarios con cualquier frecuencia necesaria
-* Además, como el recurso está en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, puede abrirse o editarse en una aplicación móvil de Creative Cloud dedicada) y puede compartirse con otros usuarios de Creative Cloud con fines de colaboración.
-* Cuando el usuario creativo ha terminado con los cambios, puede ejecutar una operación de protección en ese archivo en la aplicación Creative Cloud, con un comentario opcional. El recurso correspondiente de AEM se crea en versiones y se actualiza con el nuevo binario. Los usuarios de AEM, como los especialistas en marketing o los usuarios de LOB, tienen acceso a los principales cambios de recursos o hitos a través de AEM interfaz de usuario de la línea de tiempo de recursos.
+* Cuando los usuarios de Photoshop, InDesign o Illustrator intentan editar un archivo, ejecutan una operación de retirada en el recurso
+* El recurso se descarga en segundo plano, se coloca en la cuenta de Creative Cloud de los usuarios sincronizada en el disco por la aplicación de escritorio de Creative Cloud y el indicador de retirada se activa AEM en el recurso para minimizar los conflictos de edición
+* A partir de ahí, el usuario trabaja en un archivo almacenado localmente en la ubicación sincronizada y puede seguir trabajando y guardando los cambios necesarios en cualquier frecuencia necesaria
+* Además, dado que el recurso está en la cuenta de Creative Cloud, también está disponible en otros dispositivos que el usuario pueda tener (por ejemplo, se puede abrir o editar en una aplicación móvil de Creative Cloud dedicada) y se puede compartir con otros usuarios de Creative Cloud con fines de colaboración.
+* Cuando el usuario creativo haya terminado con los cambios, puede ejecutar una operación de protección en ese archivo en su aplicación Creative Cloud, con un comentario opcional. El recurso correspondiente en AEM se crea en versiones y se actualiza con el nuevo binario. Los usuarios de AEM, como los responsables de marketing o los usuarios de LOB, tienen acceso a los principales cambios de activos o a los hitos a través de AEM interfaz de usuario de la línea de tiempo de activos.
 
-AEM aplicación de escritorio proporciona un recurso compartido de red para los recursos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan en AEM automáticamente después de un breve tiempo. Con una configuración de este tipo, los ahorros frecuentes durante la fase de trabajo en curso se cargarían en AEM y versiones, lo que crearía muchos desafíos de tráfico de red y escalabilidad potencial, sin mencionar versiones innecesarias en AEM.
+AEM aplicación de escritorio proporciona un recurso compartido de red para los activos abiertos en la aplicación nativa. De forma predeterminada, todos los cambios realizados localmente se cargan en AEM automáticamente después de un breve tiempo. Con esta configuración, los ahorros frecuentes durante la fase de trabajo en curso se cargarían en AEM y se versionarían, lo que crearía muchos desafíos de tráfico de red y escalabilidad potencial, por no hablar de versiones innecesarias en AEM.
 
-El método recomendado aquí es utilizar una opción en AEM aplicación de escritorio para desactivar las actualizaciones automatizadas y cargar cambios en los recursos para AEM manualmente, aprovechando la acción de cambios de carga en la interfaz de usuario de estado de recursos de la aplicación.
+El método recomendado aquí es utilizar una opción en AEM aplicación de escritorio para desactivar las actualizaciones automatizadas y cargar los cambios en los activos para AEM manualmente, aprovechando la acción de cambios de carga en la interfaz de usuario de estado de activos de la aplicación.
 
 #### Carga masiva a DAM {#bulk-upload-to-dam}
 
-Es posible que tenga que cargar simultáneamente un número mayor de archivos en DAM en algunos casos, por ejemplo:
+Puede que tenga que cargar simultáneamente un mayor número de archivos en DAM en algunos casos, por ejemplo:
 
-* Carga de los resultados de la sesión fotográfica o de proyectos más grandes
+* Carga de resultados de fotografías o proyectos más grandes
 * Carga de recursos proporcionados por agencias creativas
-* Carga de recursos seleccionados de un conjunto más grande si la selección se realiza fuera de DAM
+* Cargar los activos seleccionados de un conjunto mayor si la selección se realiza fuera de DAM
 
-Tenga en cuenta que esta descripción se refiere a la carga operativa de archivos (por ejemplo, cada semana o con cada sesión fotográfica), como parte normal del flujo de trabajo del usuario del escritorio. Las migraciones de recursos grandes no se cubren aquí.
+Tenga en cuenta que esta descripción se refiere a la carga operativa de archivos (por ejemplo, cada semana o con cada sesión fotográfica), como parte normal del flujo de trabajo del usuario de escritorio. Aquí no se tratan las migraciones de activos grandes.
 
-Puede aprovechar las siguientes funciones de carga:
+Puede aprovechar las siguientes capacidades de carga:
 
-* Para cargar carpetas grandes o jerárquicas de forma masiva, utilice AEM aplicación de escritorio que proporcione la funcionalidad [carga de carpetas](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload). También puede cargar estructuras de carpetas jerárquicas. Los recursos se cargan en segundo plano y, por lo tanto, no están vinculados a una sesión de explorador Web
-* Para cargar algunos archivos desde una sola carpeta, arrástrelos directamente a la interfaz web o utilice la opción Crear de la interfaz web de AEM Assets.
-* Según los requisitos comerciales, también puede utilizar el cargador personalizado.
+* Para cargar carpetas grandes o jerárquicas en bloque, utilice AEM aplicación de escritorio que proporcione la funcionalidad [de carga de carpetas](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html#bulkupload). También puede cargar estructuras jerárquicas de carpetas. Los activos se cargan en segundo plano y, por lo tanto, no se asocian a una sesión del navegador web
+* Para cargar algunos archivos desde una sola carpeta, arrastre los archivos directamente a la interfaz web o utilice la opción Crear de la interfaz web de AEM Assets.
+* Dependiendo de los requisitos de su empresa, también puede utilizar el cargador personalizado.
 
-#### Administración de recursos digitales directamente desde el escritorio {#managing-digital-assets-directly-from-desktop}
+#### Administración de activos digitales directamente desde el escritorio {#managing-digital-assets-directly-from-desktop}
 
-Si utiliza Compartidos de archivos de red para administrar recursos digitales, el uso del recurso compartido de red asignado por AEM aplicación de escritorio podría considerarse un sustituto conveniente. Al realizar la transición desde los recursos compartidos de archivos de red, AEM interfaz web proporciona un completo conjunto de funciones de administración de recursos digitales que van mucho más allá de lo posible en un recurso compartido de red (búsqueda, colecciones, metadatos, colaboración, previsualizaciones, etc.) y AEM aplicación de escritorio proporciona un vínculo práctico para conectar el repositorio DAM del lado del servidor con el trabajo en el escritorio.
+Si utiliza recursos compartidos de archivos de red para administrar activos digitales, el uso del recurso compartido de red asignado por AEM aplicación de escritorio podría considerarse un sustituto conveniente. Cuando se realiza la transición desde archivos compartidos de red, AEM interfaz web proporciona un conjunto completo de funciones de administración de activos digitales que van mucho más allá de lo posible en un recurso compartido de red (búsqueda, colecciones, metadatos, colaboración, vistas previas, etc.), y AEM aplicación de escritorio proporciona un vínculo útil para conectar el repositorio DAM del lado del servidor con el trabajo en el escritorio.
 
-Evite utilizar AEM aplicación de escritorio para administrar recursos directamente en el recurso compartido de red de AEM Assets. Por ejemplo, evite utilizar AEM aplicación de escritorio para mover o copiar varios archivos. En su lugar, utilice la interfaz de usuario web de AEM Assets para arrastrar carpetas desde Finder/Explorer al recurso compartido de red o utilice la función de carga de carpetas de AEM Assets.
+Evite utilizar AEM aplicación de escritorio para administrar los activos directamente en el recurso compartido de red de AEM Assets. Por ejemplo, evite utilizar AEM aplicación de escritorio para mover/copiar varios archivos. En su lugar, utilice la IU web de AEM Assets para arrastrar carpetas desde Finder/Explorer al recurso compartido de red o utilice la función Carga de carpetas de AEM Assets.
 
 <!-- 
 #### Asset migration {#asset-migration}
