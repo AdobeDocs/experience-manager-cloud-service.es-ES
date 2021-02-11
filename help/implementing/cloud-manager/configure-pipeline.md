@@ -28,7 +28,7 @@ En Cloud Manager, hay dos tipos de Canalización:
 
 >[!NOTE]
 >Para configurar la canalización, debe:
-> * defina el activador que hará inicio a la canalización.
+> * defina el déclencheur que va a inicio de la canalización.
 > * defina los parámetros que controlan la implementación de producción.
 > * configure los parámetros de prueba de rendimiento.
 
@@ -64,7 +64,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    ![](assets/setup-2.png)
 
-   Puede definir el activador para el inicio de la canalización:
+   Puede definir el déclencheur para el inicio de la canalización:
 
    * **Manual** : el uso manual de la interfaz de usuario inicio la canalización.
    * **Al cambiar**  Git: inicio la canalización CI/CD cada vez que haya confirmaciones agregadas a la rama git configurada. Incluso si selecciona esta opción, siempre puede realizar el inicio de la canalización manualmente.
@@ -121,7 +121,7 @@ En la pantalla de inicio, estos oleoductos se muestran en una tarjeta nueva:
 
 1. Haga clic en el botón **Añadir** para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
 
-   Además, también puede configurar Activador de implementación y Comportamiento de error importante desde Opciones de tubería.
+   Además, también puede configurar el Déclencheur de implementación y el comportamiento de error importante desde Opciones de tubería.
 
    ![](assets/non-prod-pipe1.png)
 
