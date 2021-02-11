@@ -61,7 +61,7 @@ Por ejemplo, la propiedad **Creator** en dos esquemas de diseño independiente p
 
 XMP pueden incluir propiedades de uno o varios de los esquemas. Por ejemplo, un subconjunto típico utilizado por muchas aplicaciones Adobe puede incluir lo siguiente:
 
-* Esquema central de Dublín: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`, &lt;a4/>
+* Esquema central de Dublín: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`, 
 * XMP esquema básico: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
 * esquema de gestión de derechos de XMP: `xmpRights:WebStatement`, `xmpRights:Marked`
 * esquema de administración de medios XMP: `xmpMM:DocumentID`
