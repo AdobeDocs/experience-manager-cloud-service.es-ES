@@ -393,8 +393,7 @@ Los formatos de párrafo están disponibles para su selección mediante:
    Repita los pasos para cada formato requerido.
 
 >[!CAUTION]
->
->Si define formatos personalizados, se eliminarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>` ya que es el formato predeterminado.
+Si define formatos personalizados, se eliminarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>` ya que es el formato predeterminado.
 
 ## Configurar caracteres especiales {#spchar}
 
@@ -403,8 +402,7 @@ En una instalación estándar [!DNL Experience Manager], cuando el complemento `
 Puede configurar el RTE para que su selección de caracteres esté disponible; definiendo caracteres distintos o una secuencia completa.
 
 >[!CAUTION]
->
->Añadir los caracteres especiales anula la selección predeterminada. Si es necesario, redefina estos caracteres en la selección.
+Añadir los caracteres especiales anula la selección predeterminada. Si es necesario, redefina estos caracteres en la selección.
 
 ### Definir un solo carácter {#definesinglechar}
 
@@ -479,12 +477,10 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. V
 Los estilos se suelen aplicar al texto, pero también se puede aplicar un conjunto independiente de estilos a una tabla o a unas pocas celdas de la tabla. Estos estilos están disponibles para los autores en el cuadro de selección Estilo del cuadro de diálogo Propiedades de celda o Propiedades de tabla. Los estilos están disponibles al editar una tabla dentro de un componente Texto (o derivado) y no en el componente Tabla estándar.
 
 >[!NOTE]
->
->Puede definir estilos para tablas y celdas solo para la IU clásica.
+Puede definir estilos para tablas y celdas solo para la IU clásica.
 
 >[!NOTE]
->
->La copia y pegado de tablas en o desde el componente RTE depende del explorador. No se admite de forma predeterminada para todos los exploradores. Puede obtener resultados variados según la estructura de tabla y el explorador. Por ejemplo, al copiar y pegar una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, no se conserva el diseño de la tabla.
+La copia y pegado de tablas en o desde el componente RTE depende del explorador. No se admite de forma predeterminada para todos los exploradores. Puede obtener resultados variados según la estructura de tabla y el explorador. Por ejemplo, al copiar y pegar una tabla en un componente RTE en Mozilla Firefox en la IU clásica y la IU táctil, no se conserva el diseño de la tabla.
 
 1. Dentro del componente, navegue al nodo `<rtePlugins-node>/table`. Cree los nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
 1. Cree la propiedad `features` en el nodo `table`:
@@ -494,9 +490,8 @@ Los estilos se suelen aplicar al texto, pero también se puede aplicar un conjun
    * **Valor** `*`
 
    >[!NOTE]
-   >
-   >Si no desea habilitar todas las funciones de tabla, puede crear la propiedad `features` como:
-   >* **Tipo** `String[]`
+   Si no desea habilitar todas las funciones de tabla, puede crear la propiedad `features` como:
+   * **Tipo** `String[]`
 
    * **Los valores** son uno o ambos de los siguientes, según sea necesario:
       * `table` permitir la edición de propiedades de tabla; incluidos los estilos.
@@ -562,8 +557,7 @@ Si especifica la cadena CSS y la cadena de estilo en el código, la clase CSS ti
 Cuando se activa el complemento de revisión de ortografía, RTE utiliza diccionarios para cada idioma adecuado. A continuación, se seleccionan según el idioma del sitio web tomando la propiedad language del subárbol o extrayendo el idioma de la dirección URL; por ejemplo. la rama `/en/` se marca como Inglés, la rama `/de/` como Alemán.
 
 >[!NOTE]
->
->El mensaje &quot;Error al revisar la ortografía&quot;. se ve si se intenta comprobar un idioma que no está instalado.
+El mensaje &quot;Error al revisar la ortografía&quot;. se ve si se intenta comprobar un idioma que no está instalado.
 
 Una instalación de Experience Manager estándar incluye los diccionarios para:
 
@@ -571,8 +565,7 @@ Una instalación de Experience Manager estándar incluye los diccionarios para:
 * Inglés británico (en_gb)
 
 >[!NOTE]
->
->Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos Léame correspondientes. No modifique los archivos.
+Los diccionarios estándar se encuentran en `/libs/cq/spellchecker/dictionaries`, junto con los archivos Léame correspondientes. No modifique los archivos.
 
 Para agregar más diccionarios, si es necesario, siga estos pasos.
 
@@ -580,17 +573,15 @@ Para agregar más diccionarios, si es necesario, siga estos pasos.
 1. Seleccione el idioma requerido y descargue el archivo ZIP con las definiciones de ortografía. Extraiga el contenido del archivo en su sistema de archivos.
 
    >[!CAUTION]
-   >
-   >Solo se admiten los diccionarios en formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Dado que los diccionarios ahora son archivos de archivo, se recomienda que verifique el archivo después de descargarlo.
+   Solo se admiten los diccionarios en formato `MySpell` para OpenOffice.org v2.0.1 o anterior. Dado que los diccionarios ahora son archivos de archivo, se recomienda que verifique el archivo después de descargarlo.
 
 1. Busque los archivos .aff y .dic. Mantenga el nombre del archivo en minúsculas. Por ejemplo, `de_de.aff` y `de_de.dic`.
 1. Cargue los archivos .aff y .dic en el repositorio en `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
->
->El corrector ortográfico RTE está disponible a petición. No se ejecuta automáticamente al escribir texto con inicio.
->Para ejecutar el corrector ortográfico, toque o haga clic en el botón Corrector ortográfico de la barra de herramientas. RTE comprueba la ortografía de las palabras y resalta las palabras mal escritas.
->Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas ya no se resaltan. Para ejecutar el corrector ortográfico, toque o haga clic de nuevo en el botón Corrector ortográfico.
+El corrector ortográfico RTE está disponible a petición. No se ejecuta automáticamente al escribir texto con inicio.
+Para ejecutar el corrector ortográfico, toque o haga clic en el botón Corrector ortográfico de la barra de herramientas. RTE comprueba la ortografía de las palabras y resalta las palabras mal escritas.
+Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas ya no se resaltan. Para ejecutar el corrector ortográfico, toque o haga clic de nuevo en el botón Corrector ortográfico.
 
 ## Configurar el tamaño del historial para las acciones de deshacer y rehacer {#undohistory}
 
@@ -625,8 +616,7 @@ Para definir el tamaño de la ficha:
 Cuando la sangría está activada (opción predeterminada), puede definir el tamaño de la sangría:
 
 >[!NOTE]
->
->Este tamaño de sangría solo se aplica a los párrafos (bloques) de texto; no afecta a la sangría de listas reales.
+Este tamaño de sangría solo se aplica a los párrafos (bloques) de texto; no afecta a la sangría de listas reales.
 
 1. Dentro del componente, navegue al nodo `<rtePlugins-node>/lists`. Cree estos nodos si no existen. Para obtener más información, consulte [activación de un complemento](#activateplugin).
 1. En el nodo `lists`, cree el parámetro `identSize`:
@@ -658,11 +648,10 @@ Al agregar vínculos en [!DNL Experience Manager], puede definir los estilos CSS
    * **Tipo** `nt:unstructured`
 
    >[!NOTE]
-   >
-   >El nodo `../items/text` tiene la propiedad:
-   >* **Nombre** `xtype`
-   >* **Tipo** `String`
-   >* **Valor** `richtext`
+   El nodo `../items/text` tiene la propiedad:
+   * **Nombre** `xtype`
+   * **Tipo** `String`
+   * **Valor** `richtext`
 
    La ubicación del nodo `../items/text` puede variar según la estructura del cuadro de diálogo. Dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
