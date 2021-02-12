@@ -96,7 +96,7 @@ Este predicado admite la extracción de facetas y proporciona bloques para cada 
 
 ### contentfragment {#contentfragment}
 
-Este predicado restringe el resultado a los fragmentos de contenido.
+Este predicado restringe el resultado a fragmentos de contenido.
 
 * No admite el filtrado.
 * No admite la extracción de facetas.
