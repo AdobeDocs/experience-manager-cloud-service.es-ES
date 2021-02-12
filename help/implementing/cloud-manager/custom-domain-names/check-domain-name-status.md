@@ -15,7 +15,7 @@ ht-degree: 0%
 Puede determinar si el nombre de dominio se ha comprobado correctamente haciendo clic en el icono Estado del nombre de dominio en la tabla de Entornos de la página Configuración de dominio.
 
 >[!NOTE]
->Cloud Manager activará automáticamente una verificación TXT cuando seleccione Guardar en el paso de verificación del asistente Añadir dominio personalizado. Para las verificaciones posteriores, debe seleccionar activamente el icono **verificar nuevamente** junto al estado.
+>Cloud Manager déclencheur automáticamente una verificación TXT cuando seleccione Guardar en el paso de verificación del asistente Añadir dominio personalizado. Para las verificaciones posteriores, debe seleccionar activamente el icono **verificar nuevamente** junto al estado.
 
 Cloud Manager verificará la propiedad del dominio mediante el valor TXT y mostrará uno de los siguientes mensajes de estado:
 
