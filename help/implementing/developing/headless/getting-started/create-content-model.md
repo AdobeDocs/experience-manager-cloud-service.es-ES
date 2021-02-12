@@ -4,7 +4,7 @@ description: Los modelos de fragmento de contenido definen la estructura del con
 translation-type: tm+mt
 source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
