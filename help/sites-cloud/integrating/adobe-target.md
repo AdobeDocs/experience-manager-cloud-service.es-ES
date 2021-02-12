@@ -53,6 +53,7 @@ Para realizar la integración con Destinatario, realice las siguientes tareas:
 >
 >* 3.x está configurado con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x está configurado con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -85,6 +86,7 @@ La integración de AEM como Cloud Service con Adobe Target requiere conocimiento
 >* 2.000 experiencias
 >* 50 métricas
 >* 50 segmentos de sistema de informes
+
 >
 
 
