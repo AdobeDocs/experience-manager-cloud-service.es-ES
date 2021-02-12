@@ -169,7 +169,7 @@ Pocas consideraciones clave relacionadas con los entornos hibernados y deshibern
 
 * Un usuario puede utilizar una canalización para implementar código personalizado en entornos hibernados. El entorno permanecerá en estado de hibernación y el nuevo código aparecerá en el entorno una vez que se haya deshibernado.
 
-* AEM actualizaciones se pueden aplicar a entornos hibernados, que los clientes pueden activar manualmente desde Cloud Manager. El entorno permanecerá en estado de hibernación y la nueva versión aparecerá en el entorno una vez que se haya deshibernado.
+* Las actualizaciones de AEM se pueden aplicar a entornos hibernados, que los clientes pueden déclencheur manualmente desde Cloud Manager. El entorno permanecerá en estado de hibernación y la nueva versión aparecerá en el entorno una vez que se haya deshibernado.
 
 >[!NOTE]
 >Actualmente, Cloud Manager no indica si un entorno está hibernado.
