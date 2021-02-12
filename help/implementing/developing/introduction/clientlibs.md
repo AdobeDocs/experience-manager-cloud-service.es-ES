@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Bibliotecas de clientes en Autor y Publicación {#clientlibs-author-publish}
 
-La mayoría de los clientes serán obligatorios en la instancia de publicación de AEM. Es decir, la mayoría de los objetivos de clientlibs son producir la experiencia del usuario final del contenido. Para clientlibs en instancias de publicación, [herramientas de compilación front-end](#fed-for-aemaacs) se pueden utilizar e implementar mediante [carpetas de biblioteca de cliente como se describe más arriba.](#creating-clientlib-folders)
+La mayoría de los clientes serán obligatorios en la instancia de publicación de AEM. Es decir, la mayoría de los objetivos de clientlibs son producir la experiencia del usuario final del contenido. Para clientlibs en instancias de publicación, [herramientas de compilación front-end](#fed-for-aemaacs) se pueden utilizar e implementar mediante [carpetas de biblioteca de cliente como se describe anteriormente.](#creating-clientlib-folders)
 
 Sin embargo, en algunas ocasiones es posible que las bibliotecas de cliente sean necesarias para personalizar la experiencia de creación. Por ejemplo, la personalización de un cuadro de diálogo puede requerir la implementación de pequeños fragmentos de CSS o JS en la instancia de creación de AEM.
 
