@@ -2,7 +2,7 @@
 title: Añada los recursos digitales a [!DNL Adobe Experience Manager].
 description: Añada los recursos digitales a [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Assets como [!DNL Cloud Service] proporciona los siguientes métodos de carga. A
 
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-   The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
+   The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** option appears.
 
    To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
@@ -75,7 +75,7 @@ Para cargar un archivo (o varios archivos), puede seleccionarlos en el escritori
 
    Para seleccionar varios archivos, seleccione la tecla `Ctrl` o `Command` y seleccione los recursos en el cuadro de diálogo del selector de archivos. Al utilizar un iPad, solo puede seleccionar un archivo a la vez.
 
-1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+1. Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 Si cancela una operación de carga antes de que se carguen los archivos, [!DNL Assets] detiene la carga del archivo actual y actualiza el contenido. Sin embargo, los archivos que ya se han cargado no se eliminan.
 
 1. El cuadro de diálogo de progreso de carga de [!DNL Assets] muestra el recuento de archivos cargados correctamente y los archivos que no se pudieron cargar.
