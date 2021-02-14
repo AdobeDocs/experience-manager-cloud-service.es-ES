@@ -1,106 +1,109 @@
 ---
-title: AEM Assets y Biblioteca de medios de AEM
-description: Preguntas más frecuentes sobre AEM Assets y. Biblioteca de medios AEM, incluidas las diferencias entre los dos.
+title: Comparar [!DNL Assets] y ofertas de la biblioteca de medios
+description: Compare [!DNL Experience Manager Assets] y las funciones de la biblioteca de medios y conozca las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
+source-git-commit: 3a7af5fa5889c74eb74e12dead1df0494c2c6386
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 3%
+source-wordcount: '608'
+ht-degree: 0%
 
 ---
 
 
-# Preguntas frecuentes de AEM Assets y AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
+# [!DNL Experience Manager Assets] frente a  [!DNL Experience Manager] Media Library  {#aem-assets-vs-aem-medialibrary}
 
-Adobe Experience Manager (AEM) Assets es una parte integral de la plataforma AEM. Esta integración suave se considera una ventaja importante de la AEM y garantiza la consistencia en gestor de contenido y alta productividad para los autores de contenido.
+[!DNL Adobe Experience Manager Assets] es una parte integral de la  [!DNL Experience Manager] plataforma. Esta integración suave se considera una ventaja importante de [!DNL Experience Manager] y asegura la consistencia en gestor de contenido y alta productividad para los creadores de contenido.
 
-## ¿Qué es AEM Assets? {#what-is-aem-assets}
+## ¿Qué es [!DNL Assets]? {#what-is-aem-assets}
 
-AEM Assets es una aplicación de la Plataforma de AEM que permite a nuestros clientes gestionar sus recursos digitales (imágenes, vídeos, documentos y clips de audio) en un repositorio basado en web. AEM Assets incluye compatibilidad con metadatos, representaciones, el buscador de Digital Asset Management y administración a través de la interfaz de usuario.
+[!DNL Assets] es una función de  [!DNL Experience Manager] que le permite administrar recursos digitales (imágenes, vídeos, documentos, clips de audio, etc.) en un repositorio basado en la Web. [!DNL Assets] incluye compatibilidad con metadatos, representaciones, buscador de recursos y la interfaz de administración. Incluye microservicios nativos de la nube para procesar recursos.
 
-## ¿Qué es la biblioteca de medios AEM? {#what-is-the-aem-media-library}
+## ¿Qué es la [!DNL Experience Manager] biblioteca de medios? {#what-is-the-aem-media-library}
 
-La biblioteca de medios de AEM es una parte designada del repositorio de contenido de WCM AEM donde se almacenan las imágenes y otros recursos compartidos. La biblioteca de medios utiliza las funciones de administración de recursos digitales de AEM WCM.
+La [!DNL Experience Manager] biblioteca de medios es una parte designada del repositorio de contenido [!DNL Experience Manager] WCM donde se almacenan las imágenes y otros recursos compartidos. La biblioteca de medios proporciona funciones básicas de administración de recursos digitales a WCM.
 
-## ¿Qué obtengo de AEM Assets que no forma parte de AEM WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## ¿Qué puedo obtener de [!DNL Assets] que no forma parte de WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
-Las funciones únicas que solo están disponibles para los clientes de AEM Assets son:
+Las funciones únicas que solo están disponibles para los clientes de [!DNL Assets] son:
 
-1. La capacidad para extraer y editar metadatos que no sean título, etiquetas y descripción.
-1. El administrador de AEM Assets, disponible en la pantalla de bienvenida haciendo clic en la segunda opción junto a `siteadmin`.
-1. Todos los pasos del flujo de trabajo relacionados con la administración de recursos digitales, a saber, AEM Assets Ingestion, AEM Assets Delete, AEM Assets Sub-Asset-Handling, AEM Assets metadata extracción.
-1. Bibliotecas que incluyen &quot;dam&quot; en el espacio del paquete.
+* La capacidad para extraer y editar metadatos que no sean título, etiquetas y descripción.
+* El administrador [!DNL Assets], disponible en la pantalla de bienvenida.
+* Todos los pasos del flujo de trabajo relacionados con la administración de recursos digitales, como la carga y la ingesta, la eliminación, la gestión de subrecursos, la gestión de metadatos y los perfiles de procesamiento.
+* Bibliotecas que incluyen `dam` en el espacio del paquete.
 
-El uso de estas funciones requiere una licencia válida de AEM Assets.
+El uso de estas características requiere una licencia válida de [!DNL Assets].
 
-## ¿AEM Assets está disponible como paquete independiente? {#is-aem-assets-available-as-a-separate-package}
+## ¿[!DNL Assets] está disponible como paquete separado? {#is-aem-assets-available-as-a-separate-package}
 
-No. Para facilitar la instalación e implementación, todas las aplicaciones y complementos AEM se entregan en un único paquete con todas las funcionalidades incluidas. Esto no implica que tenga permiso para utilizar todas las funciones del paquete.
+No. Para facilitar la instalación e implementación, todas las [!DNL Experience Manager] aplicaciones y complementos se entregan en un solo paquete con todas las funcionalidades incluidas. Esto no implica que tenga permiso para utilizar todas las funciones del paquete.
 
-## Quiero editar metadatos de recursos digitales. ¿Necesito AEM Assets? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+## Quiero editar metadatos de recursos digitales. ¿Necesito [!DNL Assets]? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
-Si planea editar metadatos que no sean título, descripción y etiquetas, es necesario otorgar licencias de AEM Assets.
+Si planea editar metadatos que no sean el título, la descripción y las etiquetas, se requiere la licencia [!DNL Assets].
 
-## Quiero usar el predicado de categoría en mi sitio web. ¿Necesito AEM Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+## Quiero usar el predicado de categoría en mi sitio web. ¿Necesito [!DNL Assets]? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Sí, el predicado de categoría, junto con todos los demás componentes son parte de AEM Assets y requieren una licencia de AEM Assets.
+Sí, el predicado de categoría forma parte de [!DNL Assets] y requiere una licencia [!DNL Assets].
 
-## Deseo cambiar automáticamente el tamaño de las imágenes al importarlas. ¿Necesito AEM Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+## Deseo cambiar automáticamente el tamaño de las imágenes al importarlas. ¿Necesito [!DNL Assets]? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Sí. El cambio de tamaño de la imagen y la transformación automática impulsada por el flujo de trabajo, así como la capacidad de administrar representaciones, forman parte de AEM Assets y requieren una licencia de AEM Assets.
+Sí. El cambio de tamaño de la imagen y la transformación automática impulsada por el flujo de trabajo, así como la capacidad de administrar representaciones, forman parte de [!DNL Assets] y requieren una licencia [!DNL Experience Manager Assets].
 
-## Quiero cambiar el tamaño de las imágenes con un componente de imagen personalizado. ¿Necesito AEM Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+## Quiero cambiar el tamaño de las imágenes con un componente de imagen personalizado. ¿Necesito [!DNL Assets]? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
-El componente de imagen forma parte de AEM WCM. La biblioteca de gráficos que utiliza el componente de imagen (pero también AEM Assets) forma parte de la plataforma de AEM y no requiere una licencia de AEM Assets.
+El componente de imagen forma parte de WCM. La biblioteca de gráficos que utiliza el componente de imagen (pero también [!DNL Assets]) forma parte de la plataforma [!DNL Experience Manager] y no requiere una licencia [!DNL Assets].
 
-## ¿Cómo puedo evitar que mis usuarios utilicen AEM Assets si no he obtenido la licencia de AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+## ¿Cómo puedo evitar que mis usuarios utilicen [!DNL Assets] si no he obtenido la licencia [!DNL Assets]? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Puede eliminar todos los flujos de trabajo, componentes, taxonomías, opciones específicos de AEM Assets y el administrador de AEM Assets de AEM. Al hacerlo, evita que los usuarios utilicen accidentalmente las funciones de AEM Assets que no obtuvo la licencia.
+Puede eliminar todos los flujos de trabajo, componentes, taxonomías, opciones específicos de [!DNL Assets] y el [!DNL Assets] administrador de [!DNL Experience Manager]. Al hacerlo, evita que los usuarios utilicen accidentalmente las [!DNL Assets] funciones que no obtuvo la licencia.
 
-## Quiero añadir imágenes a una página y recortar y cambiar el tamaño de estas imágenes. ¿Necesito AEM Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+## Quiero añadir imágenes a una página y recortar y cambiar el tamaño de estas imágenes. ¿Necesito [!DNL Assets]? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-En este caso de uso no es necesario comprar AEM Assets, incluso el uso de la biblioteca de medios no es necesario para utilizar imágenes en un sitio web, ya que el componente de imagen inteligente permite cargar imágenes directamente en la página.
+En este caso de uso no es necesario comprar [!DNL Assets], ni siquiera es necesario utilizar la biblioteca de medios para usar imágenes en un sitio web, ya que el componente de imagen inteligente permite cargar imágenes directamente en la página.
 
-## Una lista detallada de las funciones disponibles en AEM Assets vs. Biblioteca de medios {#listoffeatures}
+## Una lista detallada de las funciones disponibles en [!DNL Assets] frente a la biblioteca de medios {#listoffeatures}
 
-**AEM Assets**
+[!DNL Experience Manager Assets]
 
 * Colecciones y caja de luz
 * Administración y propiedades avanzadas de metadatos
 * Vínculo de recurso de Adobe (conexión con Creative Cloud para empresas)
-* Aplicación de escritorio de AEM
-* Perfiles de procesamiento
-* Integración del servidor InDesign
+* [!DNL Experience Manager] aplicación de escritorio
+* Perfiles de procesamiento y microservicios de recursos nativos en la nube
+* [!DNL Adobe InDesign Server] integración
 * Plantillas de activos y marco de productores de catálogos
-* Recursos vinculados a Adobe Photoshop, Illustrator y InDesign
+* [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]e  [!DNL Adobe InDesign] integración
 * Administración de activos multilingües
 * Integración de PIM
-* Rights Management
+* Gestión de derechos
 * Asistencia Camera Raw
 * Administración y configuración de facetas de búsqueda
 * Flujos de trabajo DAM previamente compilados (por ejemplo, sesión fotográfica)
-* Sistema de informes de recursos y análisis: Perspectivas de recursos
-* Administración de activos 3D
+* Sistema de informes y análisis de recursos llamados perspectivas
+* Gestión de activos 3D
 * Recursos conectados
 * Brand Portal
 * Acceso de autoservicio
 * Explorar, buscar y descargar
 * Colecciones y uso compartido de carpetas
-* Herramientas de administración
-* Etiquetas inteligentes
+* Herramientas de administración e interfaz
+* Etiquetado inteligente
 * Búsqueda visual
-* Interfaz de usuario del administrador de recursos
 
 **Biblioteca de medios**
 
 * Propiedades de metadatos básicas
 * Administración de etiquetas
-* Control de versión
+* Control de versiones
 * Representaciones estáticas
-* Proyectos, Tareas, creación de flujos de trabajo
+* Proyectos, tareas, creación de flujos de trabajo
 * Flujo de actividad (escala de tiempo)
 * Consulta Builder (API)
 * Integración de Marketing Cloud
 * Personalización y extensión de la interfaz de usuario
 * Comentarios y anotaciones
+
+>[!MORELIKETHIS]
+>
+>*[Experience Manager como descripción del producto Cloud Service](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
