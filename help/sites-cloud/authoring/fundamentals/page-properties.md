@@ -2,10 +2,10 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 88%
+source-wordcount: '1894'
+ht-degree: 60%
 
 ---
 
@@ -20,49 +20,43 @@ Las propiedades se distribuyen entre varias pestañas.
 
 ### Básico {#basic}
 
-* **Título**
+* **Título y etiquetas**
 
-   * El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
-   * Es un campo obligatorio.
+   * **Título** : el título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de  **** página Web y las vistas  **** de tarjeta de sitio/lista.
+      * Es un campo obligatorio.
+   * **Etiquetas** - Aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
+      * Tras seleccionar una etiqueta, esta se muestra bajo el cuadro de selección. Para eliminar una etiqueta de esta lista, utilice la x.
+      * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
+         * La nueva etiqueta se creará cuando pulse Intro.
+         * A continuación, la nueva etiqueta se mostrará con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
+      * Con la función de lista desplegable, puede seleccionar etiquetas existentes.
+      * Aparece una x cuando pasa el puntero sobre una entrada de etiqueta en el cuadro de selección; esto puede usarse para quitar esa etiqueta para esta página.
+      * Para obtener más información sobre las etiquetas, consulte [Utilizar etiquetas](/help/sites-cloud/authoring/features/tags.md).
+   * **Ocultar en navegación** - Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
 
-* **Etiquetas**
+* **Marca**
 
-   * Aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
-   * Tras seleccionar una etiqueta, esta se muestra bajo el cuadro de selección. Para eliminar una etiqueta de esta lista, utilice la x.
-   * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
-      * La nueva etiqueta se creará cuando pulse Intro.
-      * A continuación, la nueva etiqueta se mostrará con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
-   * Con la función de lista desplegable, puede seleccionar etiquetas existentes.
-   * Aparece una x cuando pasa el puntero sobre una entrada de etiqueta en el cuadro de selección; esto puede usarse para quitar esa etiqueta para esta página.
-   * Para obtener más información sobre las etiquetas, consulte [Utilizar etiquetas](/help/sites-cloud/authoring/features/tags.md).
+   Aplique una identidad de marca uniforme en todas las páginas agregando una indicación de marca a cada título de página. Esta funcionalidad requiere el uso del componente Página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-* **Ocultar en navegación**
-
-   * Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
+   * **Anular** : marque esta opción para definir la indicación de marca en esta página.
+      * El valor será heredado por cualquier página secundaria a menos que también tengan sus valores **Override** establecidos.
+   * **Valor**  de anulación: el texto de la indicación de marca que se va a anexar al título de la página.
+      * El valor se anexa al título de la página después de un carácter de barra vertical, como &quot;Ciclo de la Toscana&quot; | Siempre listo para la WKND&quot;
 
 * **ID de HTML**
 
-   * ID de HTML que se aplicará al componente.
+   * **ID** : ID HTML que se aplicará al componente.
 
-* **Título de página**
+* **Títulos y descripción de Más**
 
-   * Un título que se usará en la página. Normalmente, lo utilizan los componentes del título. Si la opción se deja vacía, se utilizará el **Título**.
+   * **Título**  de página: un título que se utilizará en la página. Normalmente, lo utilizan los componentes del título. Si la opción se deja vacía, se utilizará el **Título**.
+   * **Título**  de navegación: puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, se utilizará el  **** título.
+   * **Subtítulo** : subtítulo que se utilizará en la página.
+   * **Descripción** : su descripción de la página, su propósito o cualquier otro detalle que desee agregar.
 
-* **Título de navegación**
+* **Tiempo de activación/desactivación**
 
-   * Puede especificar un título diferente para utilizarlo en la navegación (por ejemplo, si requiere un título más conciso). Si la opción se deja vacía, se utilizará el **Título**.
-
-* **Subtítulo**
-
-   * Un subtítulo para usar en la página.
-
-* **Descripción**
-
-   * Aquí puede indicar una descripción de la página, su propósito o cualquier otro detalle.
-
-* **Tiempo de activación**
-
-   * La fecha y la hora a las que la página publicada estará visible (representada) en el entorno de publicación. La página debe publicarse de forma manual o mediante replicación automática preconfigurada.
+   * **Tiempo**  de activación: la fecha y la hora a las que se hará visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse de forma manual o mediante replicación automática preconfigurada.
 
       >[!NOTE]
       >
@@ -71,12 +65,10 @@ Las propiedades se distribuyen entre varias pestañas.
       * Si ya [se ha publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
       * Si no se publica y no se configura para la replicación automática, la página no se publicará automáticamente, por lo que se verá un 404 cuando se intente acceder a la página.
+   * **Tiempo**  de desactivación: similar a la hora **de publicación y a menudo se utiliza en combinación con** Tiempo de activación, esto define la hora a la que la página publicada se ocultará en el entorno de publicación.
+
    * Deje vacíos estos campos (**Tiempo de activación** y **Tiempo de desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
-* **Tiempo de inactividad**
-
-   * En paralelo a **Tiempo de activación** esto define la hora a la que la página publicada se ocultará en el entorno de publicación.
-   * Deje vacíos estos campos (**Tiempo de activación** y **Tiempo de desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
 
 * **URL de vanidad**
 
@@ -92,31 +84,24 @@ Las propiedades se distribuyen entre varias pestañas.
    >* No debe configurarse en una página existente.
 
 
-* **Redirigir URL de vanidad**
+   * **Añadir** : toque o haga clic para mostrar un campo para definir una URL de vanidad para la página.
+      * Toque o haga clic de nuevo para agregar varios.
+      * Toque o haga clic en el icono **Eliminar** para eliminar la URL de vanidad.
+   * **Redirigir URL**  de vanidad: indica si desea que la página utilice la URL de vanidad.
 
-   * Indica si desea que la página use la URL de vanidad.
+
+
 
 ### Avanzado  {#advanced}
 
-* **Idioma**
+* **Configuración**
 
-   * El idioma de la página.
+   * **Idioma** : el idioma de la página
+   * **Raíz**  del idioma: debe comprobarse si la página es la raíz de una copia del idioma
+   * **Redireccionamiento** : indica la página a la que esta página debe redireccionarse automáticamente
+   * **Diseño** : indica si la página se muestra u oculta en la navegación de la página del sitio resultante
+   * **Alias** : Especifica un alias que se usará con esta página
 
-* **Raíz del idioma**
-
-   * Si la página es la raíz de una copia en un idioma, es necesario marcar esta opción.
-
-* **Redirigir**
-
-   * Indique la página a la cual esta página debería redirigirse automáticamente.
-
-* **Diseño**
-
-   * Indica si se muestra o se oculta la página en la navegación por páginas del sitio resultante.
-
-* **Alias**
-
-   * Especifique un alias para usar con esta página.
    >[!NOTE]
    >
    >Alias establece la propiedad `sling:alias` para definir un nombre de alias para el recurso (esto solo afecta al recurso, no a la ruta).
@@ -129,52 +114,36 @@ Las propiedades se distribuyen entre varias pestañas.
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **Heredado de &lt;path>**
+* **Configuración**
 
-   * Indica si la página se ha heredado y dónde.
+   * **Configuración**  de nube: la ruta a la configuración
 
-* **Configuración de nube**
+* **Configuración de plantilla**
 
-   * La ruta de acceso de la configuración.
+   * **Plantillas**  permitidas:  [define la lista de las plantillas que estarán ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) disponibles en esta subrama
 
-* **Plantillas permitidas**
+* **Requisito de autenticación**
 
-   * [Defina la lista de plantillas disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta rama secundaria.
+   * **Habilitar** : habilitar el uso de la autenticación para acceder a la página
 
-* **Habilitar** (requisito de autenticación)
+      >[!NOTE]
+      >
+      >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
 
-   * Habilite (o deshabilite) el uso de la autenticación para acceder a la página.
-   >[!NOTE]
-   >
-   >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
+   * **Página**  de inicio de sesión: la página que se utilizará para iniciar sesión
 
-* **Página de inicio de sesión**
+* **Exportar**
 
-   * La página que se usará para iniciar sesión.
-
-* **Configuración de exportación**
-
-   * Especificar una configuración de exportación.
+   * **Configuración**  de exportación: especifica una configuración de exportación
 
 ### Miniatura     {#thumbnail}
 
-Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
+Configurar la miniatura de la página
 
-* **Generar vista previa**
-
-   * Genere una vista previa de la página para utilizarla como miniatura.
-
-* **Cargar imagen**
-
-   * Cargue una imagen para utilizarla como miniatura.
-
-* **Seleccionar imagen**
-
-   * Seleccione un recurso existente para utilizarlo como miniatura.
-
-* **Revertir**
-
-   * Esta opción está disponible después de realizar un cambio en la miniatura. Si no desea mantener el cambio, puede revertirlo antes de guardar.
+* **Generar Previsualización** : genere una previsualización de la página para utilizarla como miniatura
+* **Cargar imagen** : cargue una imagen para utilizarla como miniatura
+* **Seleccionar imagen** : seleccione un recurso existente para utilizarlo como miniatura
+* **Revertir** : esta opción está disponible después de realizar un cambio en la miniatura. Si no desea mantener el cambio, puede revertirlo antes de guardar.
 
 ### Redes sociales {#social-media}
 
@@ -189,9 +158,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 ### Cloud Services{#cloud-services}
 
-* **Configuraciones de Cloud Service**
-
-   * Defina propiedades para Cloud Services.
+* **Configuraciones de Cloud Service** - Defina propiedades para Cloud Services
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -200,16 +167,14 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 * **Configuración de ContextHub**
 
-   * Seleccione la configuración de ContextHub y la ruta de acceso de los segmentos.
-
-   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
-  -->
+   * **Ruta**  de ContextHub: definir la configuración de  [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Ruta**  de segmentos: defina la ruta de  [segmentos](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Configuración de ámbito**
 
-   * Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   * **Marca** : define una  [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
    >[!NOTE]
-   >Esta opción requiere una cuenta de usuario en el grupo `Target Adminstrators`.
+   >Esta opción requiere una cuenta de usuario en el grupo `Target Administrators`.
 
 ### Permisos     {#permissions}
 
@@ -227,25 +192,33 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
 ### Modelo {#blueprint}
 
-* **Modelo**
+Esta ficha solo está visible para páginas que sirven como modelos.
 
-   * Defina propiedades para una página de modelo en un entorno de administración de varios sitios.
+* **Copias**  en vivo actuales: páginas de Listas basadas en (es decir, Live Copies de) esta página de modelo
 
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
-
-   * Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
-
+* **Configuración**  de despliegue: controla las circunstancias en las que se propagarán las modificaciones a Live Copy
 
 ### Live Copy     {#live-copy}
 
-* **Live Copy**
+* **Sincronizar** : sincronizar Live Copy con modelo, manteniendo las modificaciones locales
+* **Restablecer**  - Restablecer Live Copy al estado del modelo, eliminando las modificaciones locales
+* **Suspender** : Suspender Live Copy de nuevas modificaciones de implementación
+* **Desasociar** : desasociar Live Copy del modelo
 
-   * Defina propiedades para una página Live Copy en un entorno de administración de varios sitios. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
-   * Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
+* **Origen**
 
-### Estructura del sitio     {#site-structure}
+   * Muestra la ruta del modelo para esta Live Copy
 
-* Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
+* **Estado**
+
+   * Lista el estado actual de Live Copy de la página
+
+* **Configuración**
+
+   * **Herencia**  de Live Copy: si está activada, la configuración de Live Copy es efectiva en todos los elementos secundarios
+   * **Heredar configuraciones de despliegue desde padre** : si está activada, la configuración de despliegue se hereda del elemento principal de la página
+   * **Elegir configuración**  de despliegue: define las circunstancias en las que las modificaciones se propagarán desde el modelo y solo estarán disponibles cuando no se haya seleccionado la opción  **Heredar configuraciones de despliegue desde** padres.
 
 ## Edición de las propiedades de página {#editing-page-properties-1}
 
