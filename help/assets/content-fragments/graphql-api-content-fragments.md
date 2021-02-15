@@ -2,9 +2,9 @@
 title: API de AEM GraphQL para usar con fragmentos de contenido
 description: Descubra cómo usar fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service con el Envío de contenido sin encabezado de la API de GraphQL de AEM.
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3296'
 ht-degree: 1%
 
 ---
@@ -307,7 +307,7 @@ Dentro del esquema hay campos individuales, de dos categorías básicas:
 
    Se utiliza una selección de [Tipos de campo](#field-types) para crear campos en función de cómo configure el modelo de fragmento de contenido. Los nombres de campo se toman del campo **Nombre de propiedad** del **Tipo de datos**.
 
-   * También hay que tener en cuenta la propiedad **Representar como**, ya que los usuarios pueden configurar determinados tipos de datos; por ejemplo, como un texto de una sola línea o un campo múltiple.
+   * También hay que tener en cuenta la propiedad **Representar como**, ya que los usuarios pueden configurar determinados tipos de datos; por ejemplo, como texto de una sola línea o como un campo múltiple.
 
 * GraphQL para AEM también genera un número de [campos de ayuda](#helper-fields).
 
@@ -725,23 +725,90 @@ Estos son los pasos necesarios para mantener una consulta determinada:
 
 ## Consulta del extremo de GraphQL desde un sitio Web externo {#query-graphql-endpoint-from-external-website}
 
+Para acceder al punto final de GraphQL desde un sitio web externo, debe configurar:
+
+* [Filtro CORS](#cors-filter)
+* [Filtro remitente del reenvío](#referrer-filter)
+
+### Filtro CORS {#cors-filter}
+
 >[!NOTE]
 >
 >Para obtener una descripción detallada de la política de uso compartido de recursos CORS en AEM, consulte [Comprender el uso compartido de recursos entre Orígenes (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
 
-Para permitir que un sitio web de terceros consuma salida JSON, se debe configurar una directiva CORS en el repositorio Git del cliente. Esto se realiza agregando un archivo de configuración OSGi CORS apropiado para el extremo deseado. Esta configuración debe especificar un nombre de sitio web (o regex) de confianza para el cual se debe conceder acceso.
+Para acceder al extremo de GraphQL, se debe configurar una directiva CORS en el repositorio Git del cliente. Esto se realiza agregando un archivo de configuración OSGi CORS apropiado para los extremos deseados.
 
-* Acceso al extremo GraphQL:
+Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para el cual se debe otorgar acceso.
 
-   * allowOriginal: [su dominio] o allow originregexp: [su dominio regex]
-   * métodos admitidos: [POST]
-   * paths permitidos: [&quot;/content/graphql/global/endpoint.json&quot;]
+Por ejemplo, para conceder acceso al extremo GraphQL y al extremo de consultas persistentes para `https://my.domain` puede utilizar:
 
-* Acceso al extremo de consultas persistentes de GraphQL:
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * allowOriginal: [su dominio] o allow originregexp: [su dominio regex]
-   * métodos admitidos: [GET]
-   * paths permitidos: [&quot;/graphql/execute.json/.*&quot;]
+Si ha configurado una ruta de vanidad para el extremo, también puede utilizarla en `allowedpaths`.
+
+### Filtro de remitente del reenvío {#referrer-filter}
+
+Además de la configuración de CORS, se debe configurar un filtro de Remitente del reenvío para permitir el acceso desde hosts de terceros.
+
+Esto se lleva a cabo agregando un archivo de configuración del filtro Remitente del reenvío OSGi adecuado que:
+
+* especifica un nombre de host de sitio web de confianza; ya sea `allow.hosts` o `allow.hosts.regexp`,
+* otorga acceso para este nombre de host.
+
+Por ejemplo, para otorgar acceso a solicitudes con el Remitente del reenvío `my.domain` puede:
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
