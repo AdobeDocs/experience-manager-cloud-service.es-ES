@@ -2,9 +2,9 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '1048'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,33 @@ Adobe Launch es necesario para administrar las propiedades del lado del cliente 
 4. Rellene los detalles (véase a continuación) y seleccione **Conectar**.
    ![](assets/open_screen1.png "ConnectConnect")
 
-### Configuración de IMS
+### Configuración de IMS {#ims-configuration}
 
 Se necesita una configuración IMS tanto para Launch como para Destinatario para integrar correctamente Destinatario con AEM y Launch. Mientras que la configuración de IMS para Launch está preconfigurada en AEM como Cloud Service, se debe crear la configuración de IMS de Destinatario (después de aprovisionar Destinatario). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) y [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para obtener información sobre cómo crear la configuración de IMS de Destinatario.
+
+### Adobe Target Tenant ID y Adobe Target Client Code {#tenant-client}
+
+Al configurar los campos Adobe Target Tenant ID y Adobe Target Client Code, tenga en cuenta lo siguiente:
+
+1. Para la mayoría de los clientes, el ID del inquilino y el código del cliente son los mismos. Esto significa que ambos campos contienen la misma información y son idénticos. Asegúrese de introducir el ID del inquilino en ambos campos.
+2. Para fines heredados, también puede introducir valores diferentes en los campos Id. de inquilino y Código de cliente.
+
+En ambos casos, tenga en cuenta que:
+
+* De forma predeterminada, el código del cliente (si se agrega primero) también se copiará automáticamente en el campo ID del inquilino.
+* Tiene la opción de cambiar el ID de inquilino predeterminado.
+* En consecuencia, las llamadas de servidor a Destinatario se basarán en el ID del inquilino y las llamadas de cliente a Destinatario se basarán en el código del cliente.
+
+Como se ha indicado anteriormente, el primer caso es el más común para AEM como Cloud Service. De cualquier forma, asegúrese de que los campos **ambos** contienen la información correcta según sus necesidades.
+
+>[!NOTE]
+>
+> Si desea editar una configuración de Destinatario ya existente:
+>
+> 1. Vuelva a introducir el ID del inquilino.
+> 2. Vuelva a conectarse a Destinatario.
+> 3. Guarde la configuración.
+
 
 ### Edición de la configuración de Destinatario {#edit-target-configuration}
 
