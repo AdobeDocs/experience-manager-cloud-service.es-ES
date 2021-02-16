@@ -2,9 +2,9 @@
 title: Cambios notables en [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service]
 description: Cambios notables en [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] en comparación con [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '697'
 ht-degree: 3%
 
 ---
@@ -31,10 +31,14 @@ La carga de recursos se optimiza para lograr una mayor eficacia al permitir una 
 * El flujo de trabajo predeterminado de **[!UICONTROL actualización de recursos DAM]** en versiones anteriores de ya no está disponible. [!DNL Experience Manager] En su lugar, los microservicios de recursos proporcionan un servicio escalable y fácilmente disponible que cubre la mayor parte del procesamiento de recursos predeterminado (representaciones, extracción de metadatos y extracción de texto para indexación).
    * Consulte [configurar y utilizar microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
    * Para tener pasos personalizados del flujo de trabajo en el procesamiento, se pueden utilizar [flujos de trabajo de postprocesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
+* No se admite la reescritura de metadatos.
 * Los recursos que se cargan mediante el Administrador de paquetes requieren un reprocesamiento manual mediante la acción **[!UICONTROL Volver a procesar recurso]** de la interfaz [!DNL Assets].
-* Un recurso digital sin extensión o con una extensión incorrecta no se procesa como desee. Por ejemplo, al cargar estos recursos, puede que no suceda nada o que se aplique un perfil de procesamiento incorrecto al recurso. Los usuarios aún pueden almacenar los archivos binarios en DAM.
+* Un recurso digital sin extensión o con una extensión incorrecta no se procesa como desee. [No está disponible ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) la detección automática de tipos MIME. Por ejemplo, al cargar estos recursos, puede que no suceda nada o que se aplique un perfil de procesamiento incorrecto al recurso. Los usuarios pueden almacenar los archivos binarios sin extensión en DAM.
+* [[!DNL Assets] La ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) experiencia de página de inicio no está disponible.
+* La detección de recursos de duplicado funciona de forma distinta a [en Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
+* Para las representaciones solo de colocación (FPO), las representaciones se generan de forma diferente en comparación con su funcionamiento en versiones anteriores [!DNL Experience Manager]. Consulte [Representación de FPO para Experience Manager como Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
 
-Las representaciones estándar generadas con los microservicios de recursos se almacenan de forma compatible con versiones anteriores en los nodos del repositorio de recursos (las mismas convenciones de nombres).
+Las representaciones estándar generadas con los microservicios de recursos se almacenan de forma compatible en los nodos del repositorio de recursos utilizando las mismas convenciones de nombres.
 
 ## Desarrollar y probar microservicios de activos {#asset-microservices}
 
