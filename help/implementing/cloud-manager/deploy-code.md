@@ -2,9 +2,9 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
+source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -56,13 +56,9 @@ Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functi
    * Prueba funcional personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.\
       Consulte [Prueba funcional personalizada](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más detalles.
 
-   * Prueba de IU personalizada: Este paso en la canalización siempre está presente y no se puede omitir. Se pueden escribir pruebas de IU personalizadas y permite a los clientes crear rápidamente grupos de prueba de automatización para validar aplicaciones web y móviles creadas en AEM.
-Consulte [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más detalles.
 
    * Auditoría de experiencias: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencia después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre la puntuación actual y la anterior. Esta perspectiva es valiosa para determinar si existe una regresión que se introducirá con la implementación actual.
 Consulte [Explicación de los resultados de la auditoría de experiencia](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más detalles.
-
-      ![](/help/implementing/cloud-manager/assets/deploy-testingscreen.png)
 
 
 
