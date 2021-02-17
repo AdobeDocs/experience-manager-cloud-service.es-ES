@@ -2,9 +2,9 @@
 title: Cambios notables en [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service]
 description: Cambios notables en [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] en comparación con [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
+source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '714'
 ht-degree: 3%
 
 ---
@@ -34,6 +34,7 @@ La carga de recursos se optimiza para lograr una mayor eficacia al permitir una 
 * No se admite la reescritura de metadatos. Consulte [reescritura de metadatos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html).
 * Los recursos que se cargan mediante el Administrador de paquetes requieren un reprocesamiento manual mediante la acción **[!UICONTROL Volver a procesar recurso]** de la interfaz de usuario [!DNL Assets].
 * [!DNL Assets] no detecta automáticamente el tipo MIME de los recursos cargados. Un recurso digital sin extensión o con una extensión incorrecta no se procesa como desee. Por ejemplo, al cargar estos recursos, puede que no suceda nada o que se aplique un perfil de procesamiento incorrecto al recurso. Los usuarios pueden almacenar los archivos binarios sin extensión en DAM. Consulte [Detección de tipo MIME en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html).
+* [!DNL Experience Manager] como  [!DNL Cloud Service] no genera subrecursos para recursos compuestos. Consulte [creación de subrecursos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets).
 * [!DNL Assets] La experiencia de página de inicio no está disponible. Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html).
 * La detección de recursos de duplicado funciona de manera distinta a [en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html).
 * Las representaciones de solo colocación (FPO) se generan de forma diferente en comparación con las versiones anteriores de [!DNL Experience Manager]. Consulte [Representación de FPO para [!DNL Experience Manager] como [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html).
