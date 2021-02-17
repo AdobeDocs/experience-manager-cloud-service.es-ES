@@ -2,9 +2,9 @@
 title: Banner de carrusel
 description: Aprenda a trabajar con los letreros de carrusel en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: f5627a6e885a556700fbf56c4c63f0f4d6a89da0
+source-git-commit: a3482d4e22ceb11d18a693fe2975d5b78d843de3
 workflow-type: tm+mt
-source-wordcount: '4576'
+source-wordcount: '4575'
 ht-degree: 3%
 
 ---
@@ -224,7 +224,7 @@ Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/manage
    >    * Animación. De forma predeterminada, cada transición de diapositiva es un fundido. Puede cambiarlo a una transición de diapositivas.
    >    * Estilo de los botones. Los usuarios pueden rotar los letreros tocando cada punto o número. Puede cambiar dónde aparecen los botones del indicador de conjunto (y si son numéricos o de un estilo de puntos) y su tamaño.
    >    * Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
-   >    * Antes de editar un ajuste preestablecido de visor, elija el estilo en el que desea basar el ajuste preestablecido. Si no elige un estilo, cuando inicio editar el ajuste preestablecido de visor, perderá todos los cambios si decide cambiar a otro ajuste preestablecido.
+   >    * Antes de editar un ajuste preestablecido de visor, elija el estilo en el que desea basar el ajuste preestablecido. Si no elige un estilo, al editar el ajuste preestablecido de visor, perderá todos los cambios si cambia a otro ajuste preestablecido.
 
 
    También puede realizar una previsualización del aspecto de la pancarta de carrusel. Consulte [(Opcional) Vista previa de letreros de carrusel](#optional-previewing-carousel-banners).
