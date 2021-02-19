@@ -2,9 +2,9 @@
 title: Registro
 description: Obtenga información sobre cómo configurar los parámetros globales para el servicio de registro central, la configuración específica para los servicios individuales o cómo solicitar el registro de datos.
 translation-type: tm+mt
-source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
+source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2314'
 ht-degree: 3%
 
 ---
@@ -244,7 +244,7 @@ El registro de solicitud HTTP AEM no se puede configurar en AEM como Cloud Servi
 
 AEM como registro de acceso HTTP Cloud Service muestra las solicitudes HTTP en orden temporal. Cada entrada de registro representa la solicitud HTTP que accede a AEM.
 
-Este registro es útil para comprender rápidamente qué solicitudes HTTP se están realizando a AEM, si tienen éxito al consultar el código de estado de respuesta HTTP correspondiente y cuánto tiempo tardó en completarse la solicitud HTTP. Este registro también puede resultar útil para depurar la actividad de un usuario específico filtrando las entradas de registro por usuarios.
+Este registro es útil para comprender rápidamente qué solicitudes HTTP se están realizando a AEM, si tienen éxito al consultar el código de estado de respuesta HTTP que lo acompaña y cuánto tiempo tardó en completarse la solicitud HTTP. Este registro también puede resultar útil para depurar la actividad de un usuario específico filtrando las entradas de registro por usuarios.
 
 **Ejemplo de salida de registro**
 
@@ -598,6 +598,12 @@ Las propiedades anteriores deben especificarse para cada combinación de tipo de
 >[!NOTE]
 >
 >No se admite el reenvío de fragmentos para entornos de programa de entorno limitado.
+
+Debe asegurarse de que la solicitud inicial incluye todos los entornos dev que deben habilitarse, además de los entornos stage/prod.
+
+Si algún nuevo entorno de desarrollo creado después de la solicitud inicial tiene la intención de tener reenvío de fragmentos, pero no lo tiene habilitado, se debe realizar una solicitud adicional.
+
+También tenga en cuenta que si se han solicitado entornos dev, es posible que otros entornos dev que no estén en la solicitud o incluso entornos de simulación de pruebas tengan habilitado el reenvío de fragmentos y compartan un índice de fragmentos. Los clientes pueden utilizar el campo `aem_env_id` para distinguir entre estos entornos.
 
 A continuación encontrará una muestra de la solicitud de asistencia al cliente:
 
