@@ -2,15 +2,22 @@
 title: Acceso a KPI
 description: Acceso a KPI
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
 
 
 # ¿Estás midiendo las cosas que más importan?
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_assesskpis"
+>title="Evaluación de KPI"
+>abstract="Antes de comenzar el lanzamiento de Adobe Experience Manager, todos los que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué son importantes."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alineación de KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Elección del equipo adecuado"
 
 Antes de comenzar el lanzamiento de Adobe Experience Manager, todos los que tengan participación en el proyecto deben saber cuáles son los tres KPI principales y por qué son importantes.
 
