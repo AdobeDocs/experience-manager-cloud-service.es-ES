@@ -2,15 +2,22 @@
 title: Gente derecha, funciones correctas
 description: Gente derecha, funciones correctas
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 
 # **Primero, obtenga las personas adecuadas en los roles correctos**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="Elija el equipo adecuado"
+>abstract="Poner a las personas adecuadas en los trabajos adecuados para ayudar a llevar la implementación de Adobe Experience Manager al éxito."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alineación de KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="Evaluación de KPI"
 
 Es probable que en su organización varios departamentos posean diferentes aspectos de la experiencia digital. Sin gobierno, el escenario está preparado para un debate interminable, luchas internas y confusión.
 
