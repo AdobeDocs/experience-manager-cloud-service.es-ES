@@ -2,10 +2,10 @@
 title: Trabajo con Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 24%
+source-wordcount: '397'
+ht-degree: 22%
 
 ---
 
@@ -37,7 +37,7 @@ Las funciones solo para Dynamic Media incluyen lo siguiente:
 * [Vídeo](video.md)
 * [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de recursos](managing-assets.md)
-* [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
+* [Uso de vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 
 Consulte también [Configuración de Dynamic Media](administering-dynamic-media.md).
 
