@@ -2,7 +2,7 @@
 title: Incrustación del visor de vídeo o de imagen de Dynamic Media en una página web
 description: Obtenga información sobre cómo incrustar recursos de vídeo o de imagen de Dynamic Media en una página web.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 22%
@@ -42,7 +42,7 @@ Consulte [Entrega de imágenes optimizadas para un sitio interactivo.](responsiv
 
    Consulte [Ajustes preestablecidos de imagen de publicación](managing-image-presets.md#publishing-image-presets).
 
-1. En el carril izquierdo, seleccione el menú desplegable y toque **[!UICONTROL Visores]**.
+1. En el carril izquierdo, seleccione la lista desplegable y toque **[!UICONTROL Visores]**.
 1. En el carril izquierdo, toque un nombre de ajuste preestablecido de visor. El ajuste preestablecido de visor se aplica al recurso.
 1. Toque **[!UICONTROL Incrustar]**.
 1. En el cuadro de diálogo **[!UICONTROL Código incrustado]**, copie el código completo en el portapapeles y, a continuación, toque **[!UICONTROL Cerrar]**.
