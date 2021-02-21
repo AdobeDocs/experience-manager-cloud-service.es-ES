@@ -2,10 +2,10 @@
 title: Envío de recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 15%
+ht-degree: 13%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 El modo de distribuir los recursos de Dynamic Media (vídeo e imágenes) depende de la implementación del sitio web.
 
-Con Dynamic Media dispone de varias opciones:
+Con Dynamic Media, tiene varias opciones:
 
 * Si el sitio web se aloja en AEM, lo más recomendable es añadir recursos de Dynamic Media directamente a la página.
 * Si su sitio web no está en AEM, puede elegir entre:
@@ -25,7 +25,7 @@ Con Dynamic Media dispone de varias opciones:
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes. Utiliza inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) para obtener más información.
 
 Para obtener más información, consulte los temas siguientes:
 
@@ -43,4 +43,4 @@ Para obtener más información, consulte los temas siguientes:
 
 AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
 
-Consulte [HTTP/2 Envío de las preguntas más frecuentes sobre el contenido](/help/assets/dynamic-media/http2faq.md) para obtener más información.
+Para obtener más información, consulte [Envío HTTP/2 de las preguntas más frecuentes sobre el contenido](/help/assets/dynamic-media/http2faq.md).
