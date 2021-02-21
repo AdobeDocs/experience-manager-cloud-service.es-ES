@@ -2,7 +2,7 @@
 title: Final de vida útil del visor DHTML
 description: A partir del 31 de enero de 2014, la plataforma de visor DHTML dejará de funcionar oficialmente.
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
