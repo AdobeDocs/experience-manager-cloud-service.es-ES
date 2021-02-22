@@ -2,10 +2,10 @@
 title: Aplicar ajustes preestablecidos de imagen de Dynamic Media
 description: Aprenda a aplicar ajustes preestablecidos de imagen en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 15%
+source-wordcount: '305'
+ht-degree: 7%
 
 ---
 
@@ -16,17 +16,17 @@ Los ajustes preestablecidos de imagen permiten a los recursos distribuir dinámi
 
 Además, puede elegir un ajuste preestablecido de imagen que responda (designado por el botón **[!UICONTROL RESS]** después de seleccionarlo).
 
-En esta sección se describe cómo utilizar los ajustes preestablecidos de imagen. [Los administradores pueden crear y configurar ajustes preestablecidos](managing-image-presets.md) de imagen.
+[Los administradores pueden crear y configurar ajustes preestablecidos](managing-image-presets.md) de imagen.
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes y utilizan la inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes. Utiliza inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](imaging-faq.md) para obtener más información.
 
 Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualización.
 
 **Para aplicar ajustes preestablecidos de imagen de Dynamic Media**
 
-1. Abra el recurso y, en el carril izquierdo, toque el menú desplegable y, a continuación, toque **[!UICONTROL Representaciones]**.
+1. Abra el recurso y, en el carril izquierdo, toque la lista desplegable y, a continuación, toque **[!UICONTROL Representaciones]**.
 
    >[!NOTE]
    >
@@ -40,12 +40,12 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
 1. Realice una de las acciones siguientes:
 
-   * Seleccione una representación dinámica para previsualización del ajuste preestablecido de imagen.
-   * Toque **[!UICONTROL URL]**, **[!UICONTROL Incrustar]** o **[!UICONTROL RESS]** para mostrar la ventana emergente.
+   * Para previsualización del ajuste preestablecido de imagen, seleccione una representación dinámica.
+   * Para mostrar la ventana emergente, toque **[!UICONTROL URL]**, **[!UICONTROL Incrustar]** o **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
-   >Si el recurso *y* el ajuste preestablecido de imagen aún no se han publicado, el botón **[!UICONTROL URL]** (o los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]**, si corresponde) no están disponibles.
+   >Si el recurso *y* el ajuste preestablecido de imagen aún no se han publicado, el botón **[!UICONTROL URL]** (o los botones URL y RESS, si corresponde) no está disponible.
    >
    >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor Dynamic Media S7.
 
