@@ -1,11 +1,11 @@
 ---
 title: Perfiles de imagen de Dynamic Media
-description: Cree Perfiles de imagen de Dynamic Media que contengan la configuración de máscara de enfoque, recorte inteligente, muestra inteligente o ambas, y aplique el perfil a una carpeta de recursos de imagen.
+description: Cree Perfiles de imagen de Dynamic Media que contengan ajustes para la máscara de enfoque, el recorte inteligente o la muestra inteligente, o ambos. A continuación, aplique el perfil a una carpeta de recursos de imagen.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 11%
+source-wordcount: '2695'
+ht-degree: 9%
 
 ---
 
@@ -22,11 +22,11 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Es decir, para los distintos ajustes de recorte inteligente de un Perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el Perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Debido a esto, Adobe recomienda que utilice el mismo área de recorte. Al hacerlo, se asegurará de que no haya ningún impacto en las diferentes dimensiones utilizadas en el Perfil de imágenes.
+Las coordenadas de recorte inteligente dependen de la proporción de aspecto. Para los ajustes de recorte inteligente de un Perfil de imagen, si la proporción de aspecto es la misma para las dimensiones agregadas en el Perfil de imagen, se envía la misma proporción de aspecto a Dynamic Media. Adobe recomienda utilizar el mismo área de recorte. De este modo, se garantiza que no se produzca ningún impacto en las distintas dimensiones utilizadas en el Perfil de imágenes.
 
-Tenga en cuenta que cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos puede ser lenta. También puede causar un aumento de la carga en los sistemas. Dado que puede aplicar recorte inteligente a nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
+Cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de ingestión de recursos será lenta. También puede causar un aumento de la carga en los sistemas. Dado que puede aplicar recorte inteligente a nivel de carpeta, Adobe recomienda utilizarlo en carpetas *solo* donde sea necesario.
 
-Tiene dos opciones de recorte de imágenes de las que puede elegir. También tiene una opción para automatizar la creación de muestras de color e imagen.
+Tiene dos opciones de recorte de imágenes para elegir. También tiene una opción para automatizar la creación de muestras de color e imagen.
 
 <table>
  <tbody>
@@ -45,17 +45,17 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
      <li>Punto inicial de recorte: La izquierda es X y la superior es Y</li>
      <li>Cálculo horizontal: dimensión de píxeles horizontal de la imagen original menos Izquierda y, a continuación, menos Derecha.</li>
      <li>Cálculo vertical: altura vertical de píxel menos Superior y, a continuación, menos Inferior.</li>
-    </ul> <p>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Los valores se utilizan: Superior=250, Inferior=500, Izquierda=300, Derecha=700.</p> <p>Desde la parte superior izquierda (300.250), recorte utilizando el espacio de relleno de (4000-300-700, 3000-250-500 o 3000.2250).</p> </td>
+    </ul> <p>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Los valores se utilizan: Superior=250, Inferior=500, Izquierda=300, Derecha=700.</p> <p>Desde la esquina superior izquierda (300.250), recorte utilizando el espacio de relleno de (4000-300-700, 3000-250-500 o 3000,2250).</p> </td>
   </tr>
   <tr>
    <td>Recorte inteligente</td>
    <td>Recorte masivo de imágenes en función de su punto focal visual.</td>
-   <td><p>Smart Crop utiliza el poder de la inteligencia artificial en Adobe Sensei para automatizar rápidamente el recorte masivo de imágenes. El recorte inteligente detecta y recorta automáticamente al punto focal de cualquier imagen para capturar el punto de interés deseado, independientemente del tamaño de la pantalla.</p> <p>Para utilizar Recorte inteligente, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Recorte de imagen interactivo, habilite (active) la función.</p> <p>Los tamaños predeterminados de los puntos de interrupción Grande, Medio y Pequeño generalmente cubren toda la gama de tamaños que la mayoría de las imágenes se utilizan en dispositivos móviles y tabletas, equipos de escritorio y pancartas. Si lo desea, puede editar los nombres predeterminados de Grande, Medio y Pequeño.</p> <p>Para agregar más puntos de interrupción, haga clic en <strong>Añadir recorte</strong>; para eliminar un recorte, haga clic en el icono de papelera.</p> </td>
+   <td><p>Smart Crop utiliza el poder de la inteligencia artificial en Adobe Sensei para automatizar rápidamente el recorte masivo de imágenes. El recorte inteligente detecta y recorta automáticamente al punto focal de cualquier imagen para capturar el punto de interés deseado, independientemente del tamaño de la pantalla.</p> <p>Para utilizar Recorte inteligente, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Recorte de imagen interactivo, habilite (active) la función.</p> <p>Los tamaños predeterminados de los puntos de interrupción (grande, media y pequeña) cubren toda la gama de tamaños que la mayoría de las imágenes se utilizan en dispositivos móviles y tabletas, equipos de escritorio y pancartas. Si lo desea, puede editar los nombres predeterminados de Grande, Medio y Pequeño.</p> <p>Para agregar más puntos de interrupción, haga clic en <strong>Añadir recorte</strong>; para eliminar un recorte, haga clic en el icono de papelera.</p> </td>
   </tr>
   <tr>
    <td>Muestra de color e imagen</td>
-   <td>Genera de forma masiva una muestra de imagen para cada imagen.</td>
-   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Tenga en cuenta que debe utilizar su propio componente de visualización para representar la muestra en el sitio. (La excepción son las pancartas carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los letreros de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Esto es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una solicitud <code>req=userdata</code> con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la URL correspondiente del recurso de muestra <code>req=userdata</code>:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La respuesta <code>req=userdata</code> es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
+   <td>Bulk genera una muestra de imagen para cada imagen.</td>
+   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la muestra de color e imagen, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte. A continuación, a la derecha de Muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Anchura y Altura.</p> <p>Aunque todos los recortes de imagen están disponibles en el carril Representaciones, las muestras solo se utilizan mediante la función Copiar URL. Utilice su propio componente de visualización para representar la muestra en el sitio. La excepción a esta regla son las pancartas carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en las pancartas de carrusel.</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>Donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una solicitud <code>req=userdata</code> con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>Y aquí está la URL correspondiente del recurso de muestra <code>req=userdata</code>:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La respuesta <code>req=userdata</code> es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -64,11 +64,11 @@ Tiene dos opciones de recorte de imágenes de las que puede elegir. También tie
 
 ## Máscara de enfoque {#unsharp-mask}
 
-La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se omitirá. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Adobe Photoshop.
+La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Adobe Photoshop.
 
 >[!NOTE]
 >
->La máscara de enfoque solo se aplica a las representaciones a menor escala dentro del PTIFF (tiff piramidal) con una disminución de la resolución superior al 50 %. Esto significa que las representaciones de mayor tamaño dentro de la etiqueta no se ven afectadas por la máscara de enfoque, mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y mostrarán la máscara de enfoque).
+>La máscara de enfoque solo se aplica a las representaciones a menor escala dentro del PTIFF (tiff piramidal) con una disminución de la resolución superior al 50 %. Esto significa que las representaciones de mayor tamaño dentro de la etiqueta no se ven afectadas por la máscara de enfoque. Mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
 
 En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtrado:
 
@@ -106,10 +106,10 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 **Para crear Perfiles de imagen de Dynamic Media**
 
 1. Toque el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles de imagen]**.
-1. Toque **[!UICONTROL Crear]** para agregar un nuevo Perfil de imagen.
+1. Para agregar un Perfil de imagen, toque **[!UICONTROL Crear]**.
 1. Introduzca un nombre de perfil y valores para máscara de enfoque, recorte o muestra, o ambos.
 
-   Puede que le resulte útil utilizar un nombre de perfil que sea específico para su propósito. Por ejemplo, si desea crear un perfil que genere muestras únicamente (es decir, el recorte inteligente está desactivado y la muestra de color e imagen está activada), puede utilizar el nombre de perfil &quot;Muestras inteligentes&quot;.
+   Sugerencia: Utilice un nombre de perfil específico para su propósito. Por ejemplo, supongamos que desea crear un perfil que genere muestras únicamente. Es decir, el recorte inteligente está desactivado (desactivado) y la muestra de color e imagen está activada (activada). En estos casos, puede utilizar el nombre de perfil &quot;Muestras inteligentes&quot;.
 
    Consulte también [Opciones de recorte y muestra inteligente](#crop-options) y [Máscara de enfoque](#unsharp-mask).
 
@@ -128,11 +128,11 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 ## Aplicación de un Perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
 
-Al asignar un Perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de la carpeta principal. Esto significa que solo puede asignar un Perfil de imagen a una carpeta. Como tal, considere cuidadosamente la estructura de carpetas en la que carga, almacena, utiliza y archiva los recursos.
+Al asignar un Perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de la carpeta principal. Como tal, solo puede asignar un Perfil de imagen a una carpeta. Como tal, considere cuidadosamente la estructura de carpetas en la que carga, almacena, utiliza y archiva los recursos.
 
 Si ha asignado otro Perfil de imagen a una carpeta, el nuevo perfil anula el perfil anterior. Los recursos de carpeta existentes anteriormente permanecen sin cambios. El nuevo perfil se aplica a los recursos que se agregan a la carpeta más adelante.
 
-Las carpetas que tienen asignado un perfil se indican en la interfaz de usuario por el nombre del perfil que aparece en la tarjeta.
+Las carpetas que tienen asignado un perfil se indican en la interfaz de usuario, con el nombre del perfil que aparece en la tarjeta.
 
 <!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
@@ -142,7 +142,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un Perfil de im
 
 ### Aplicación de Perfiles de imagen de Dynamic Media a carpetas específicas {#applying-image-profiles-to-specific-folders}
 
-Puede aplicar un Perfil de imagen a una carpeta desde el menú **[!UICONTROL Herramientas]** o si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo aplicar Perfiles de imagen a las carpetas de ambos modos.
+Puede aplicar un Perfil de imagen a una carpeta desde el menú **[!UICONTROL Herramientas]** o si está en la carpeta, desde **[!UICONTROL Propiedades]**.
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
@@ -155,7 +155,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Toque **[!UICONTROL Aplicar Perfil de procesamiento a las carpetas]** y seleccione la carpeta o las carpetas que desee utilizar para recibir los recursos cargados recientemente y toque o haga clic **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Toque **[!UICONTROL Aplicar Perfil de procesamiento a carpetas]** y seleccione la carpeta o las carpetas que desee utilizar para recibir los recursos cargados recientemente y toque o haga clic **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
 #### Aplicación de Perfiles de imagen de Dynamic Media a las carpetas de Propiedades {#applying-image-profiles-to-folders-from-properties}
 
@@ -167,7 +167,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 ### Aplicación global de un Perfil de imagen de Dynamic Media {#applying-an-image-profile-globally}
 
-Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en AEM recursos de cualquier carpeta tenga el perfil seleccionado aplicado.
+Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global. Se ha aplicado el perfil seleccionado a cualquier contenido cargado en Recursos Experience Manager en cualquier carpeta.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
@@ -191,7 +191,7 @@ Puede realinear o cambiar el tamaño de la ventana de recorte inteligente de una
 
 Después de editar un recorte inteligente y guardarlo, el cambio se propaga dondequiera que utilice el recorte para las imágenes específicas.
 
-Puede volver a ejecutar el recorte inteligente para generar los cultivos adicionales de nuevo, si es necesario.
+Si es necesario, puede volver a ejecutar el recorte inteligente para volver a generar los cultivos adicionales.
 
 Consulte también [Edición del recorte inteligente o muestra inteligente de varias imágenes](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
@@ -199,7 +199,7 @@ Consulte también [Edición del recorte inteligente o muestra inteligente de var
 
 1. Toque el logotipo de AEM y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta que tenga un recorte inteligente o un Perfil de imagen de muestra inteligente aplicado.
 
-1. Toque la carpeta para abrir su contenido.
+1. Para abrir su contenido, toque la carpeta.
 1. Toque la imagen cuyo recorte inteligente o muestra inteligente desee ajustar.
 1. En la barra de herramientas, toque **[!UICONTROL Recorte inteligente]**.
 
@@ -209,7 +209,7 @@ Consulte también [Edición del recorte inteligente o muestra inteligente de var
    * En la imagen, arrastre un controlador de esquina para ajustar el tamaño del área visible del recorte o muestra.
    * En la imagen, arrastre el cuadro/muestra a una nueva ubicación. Solo puede editar muestras de imagen; las muestras de color son estáticas.
    * Por encima de la imagen, toque **[!UICONTROL Revertir]** para deshacer todos los cambios y restaurar el recorte o muestra original.
-   * Utilice las teclas de flecha del teclado para recortar el tamaño del marco, o para cambiar la posición de la imagen, o ambas.
+   * Utilice las teclas de flecha del teclado para recortar el tamaño del marco, cambiar la posición de la imagen o ambas.
 
 1. Cerca de la esquina superior derecha de la página, toque **[!UICONTROL Guardar]** y luego toque **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
@@ -219,7 +219,7 @@ Después de aplicar un Perfil de imagen (que contiene recorte inteligente) a una
 
 Después de editar un recorte inteligente y guardarlo, el cambio se propaga dondequiera que utilice el recorte para las imágenes específicas.
 
-Puede volver a ejecutar el recorte inteligente para generar los cultivos adicionales de nuevo, si es necesario.
+Si es necesario, puede volver a ejecutar el recorte inteligente para volver a generar los cultivos adicionales.
 
 **Edición del recorte inteligente o la muestra inteligente de varias imágenes**
 
@@ -242,8 +242,8 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
    * Cambie el tamaño del cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
-      * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
-      * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, toque o haga clic en la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
+      * Si la imagen solo tiene un recorte inteligente o una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte en la imagen. Ajuste el tamaño del área visible del recorte.
+      * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte en la imagen. Ajuste el tamaño del área visible del recorte. O bien, toque la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible de la muestra.
 
       ![Cambiar el tamaño del recorte inteligente de una imagen.](assets/edit_smart_crops-resize.png)
 
@@ -262,19 +262,19 @@ Puede volver a ejecutar el recorte inteligente para generar los cultivos adicion
 
 
 
-1. Cerca de la esquina superior derecha de la página, toque **[!UICONTROL Guardar]**. a continuación, toque **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
+1. Cerca de la esquina superior derecha de la página, toque **[!UICONTROL Guardar]** y luego toque **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
 ## Eliminación de un Perfil de imagen de las carpetas {#removing-an-image-profile-from-folders}
 
 Al quitar un Perfil de imagen de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de la carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
-Puede quitar un Perfil de imagen de una carpeta del menú **[!UICONTROL Herramientas]** o, si está en la carpeta, de **[!UICONTROL Propiedades]**. En esta sección se describe cómo quitar Perfiles de imagen de las carpetas de ambos modos.
+Puede quitar un Perfil de imagen de una carpeta del menú **[!UICONTROL Herramientas]** o, si está en la carpeta, de **[!UICONTROL Propiedades]**.
 
 ### Eliminación de Perfiles de imagen de Dynamic Media de las carpetas mediante la interfaz de usuario de Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Toque el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Recursos > Perfiles de imagen]**.
 1. Seleccione el Perfil de imagen que desea eliminar de una carpeta o de varias carpetas.
-1. Pulse **[!UICONTROL Eliminar perfil de procesamiento de las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para quitar el perfil. A continuación, pulse **[!UICONTROL Eliminar]**.
+1. Toque **[!UICONTROL Quitar Perfil de procesamiento de las carpetas]** y seleccione la carpeta o las carpetas múltiples que desee utilizar para quitar el perfil y toque **[!UICONTROL Quitar]**.
 
    Puede confirmar que el Perfil de imagen ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
