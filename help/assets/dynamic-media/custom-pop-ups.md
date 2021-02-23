@@ -1,20 +1,20 @@
 ---
-title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
+title: Uso de vistas rápidas para crear ventanas emergentes personalizadas
+description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, donde se muestra una ventana emergente con información del producto para dirigir una compra. Puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 2%
+source-wordcount: '1023'
+ht-degree: 1%
 
 ---
 
 
-# Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Uso de vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
-La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, por lo que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, esta funcionalidad permite a los usuarios hacer clic en un punto interactivo, una imagen en miniatura o en un mapa de imágenes para ver información o contenido relacionado.
+La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, donde se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede déclencheur el contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, los clientes pueden tocar una zona interactiva, una imagen en miniatura o un mapa de imágenes para ver información o contenido relacionado.
 
-Los siguientes visores de Dynamic Media admiten las vistas rápidas:
+Los siguientes visores de Dynamic Media admiten vistas rápidas:
 
 * Imágenes interactivas (zonas interactivas en las que se puede hacer clic)
 * Vídeo interactivo (imágenes en miniatura en las que se puede hacer clic durante la reproducción de vídeo)
@@ -22,9 +22,9 @@ Los siguientes visores de Dynamic Media admiten las vistas rápidas:
 
 Aunque la funcionalidad de cada visor es diferente, el proceso de creación de una vista rápida es el mismo en los tres visores admitidos.
 
-**Para utilizar las vistas rápidas para crear ventanas emergentes personalizadas**
+**Uso de vistas rápidas para crear ventanas emergentes personalizadas**
 
-1. Cree una vista rápida para un recurso cargado.
+1. Crear una vista rápida para un recurso cargado.
 
    Normalmente, se crea una vista rápida al mismo tiempo que se edita un recurso para utilizarlo con el visor que se utiliza.
 
@@ -32,7 +32,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     <tbody>
     <tr>
     <td><strong>Visor que está utilizando</strong></td>
-    <td><strong>Complete estos pasos para crear la vista rápida</strong></td>
+    <td><strong>Para crear la vista rápida, siga estos pasos</strong></td>
     </tr>
     <tr>
     <td>Imágenes interactivas</td>
@@ -55,7 +55,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     <tbody>
     <tr>
     <td><strong>Visor que está utilizando</strong><br /> </td>
-    <td><strong>Complete estos pasos para integrar el visor con el sitio web</strong></td>
+    <td><strong>Para integrar el visor con el sitio web, siga estos pasos</strong></td>
     </tr>
     <tr>
     <td>Imagen interactiva</td>
@@ -72,9 +72,9 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     </tbody>
    </table>
 
-1. El visor que está utilizando ahora necesita saber cómo utilizar la vista rápida.
+1. El visor que utilice debe saber cómo utilizar la vista rápida.
 
-   Para ello, el visor utiliza un controlador denominado `QuickViewActive`.
+   El visor utiliza un controlador denominado `QuickViewActive`.
 
    ****
 EjemploSupongamos que estaba utilizando el siguiente código incrustado de muestra en la página web para una imagen interactiva:
@@ -85,7 +85,7 @@ EjemploSupongamos que estaba utilizando el siguiente código incrustado de muest
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Utilizando el ejemplo de código incrustado de ejemplo de arriba, tenemos el siguiente código:**
+   **Con el ejemplo de código incrustado de ejemplo de arriba, tiene el siguiente código:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -103,12 +103,12 @@ EjemploSupongamos que estaba utilizando el siguiente código incrustado de muest
    * Visor de imágenes interactivo: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visor de vídeo interactivo: [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Ahora debe configurar el controlador `quickViewActivate`.
+1. Ahora configure el controlador `quickViewActivate`.
 
-   El controlador `quickViewActivate` controla las vistas rápidas del visor. El controlador contiene la lista de variable y las llamadas de función que se utilizarán con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida, así como una llamada de función `loadQuickView` de ejemplo.
+   El controlador `quickViewActivate` controla las vistas rápidas del visor. El controlador contiene la lista de variable y las llamadas de función que se utilizarán con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida. También realiza una llamada de función `loadQuickView` de muestra.
 
-   **Variable**
-mappingMap que se utilizará en la página web con el valor de SKU y las variables genéricas incluidas en la vista rápida:
+   **Asignación**
+de variablesAsigne variables para su uso en la página web al valor de SKU y a las variables genéricas incluidas en la vista rápida:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -116,7 +116,7 @@ mappingMap que se utilizará en la página web con el valor de SKU y las variabl
 
    `var sku=inData.sku`
 
-   Asigne variables adicionales desde la vista rápida también, como se muestra a continuación:
+   Asigne también otras variables desde la vista rápida, como se muestra a continuación:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -124,7 +124,7 @@ mappingMap que se utilizará en la página web con el valor de SKU y las variabl
    ```
 
    **Función**
-llamadaEl controlador también requiere una llamada a la función para que la vista rápida funcione. Se da por hecho que la página host tiene acceso a la función. El código incrustado proporciona una llamada de función de muestra:
+llamadaEl controlador también requiere una llamada de función para que funcione la vista rápida. Se da por hecho que la página host tiene acceso a la función. El código incrustado proporciona una llamada de función de muestra:
 
    `loadQuickView(sku)`
 
@@ -141,10 +141,10 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
    * Quite los comentarios de la sección setHandlers del código incrustado.
    * Asigne cualquier variable adicional contenida en la vista rápida.
 
-      * Actualice la llamada `loadQuickView(sku,*var1*,*var2*)` si va a agregar variables adicionales.
+      * Actualice la llamada `loadQuickView(sku,*var1*,*var2*)` si agrega más variables.
    * Cree una función `loadQuickView` () simple en la página, fuera del visor.
 
-      Por ejemplo, lo siguiente escribe el valor de sku en la consola del explorador:
+      Por ejemplo, lo siguiente escribe el valor de SKU en la consola del explorador:
 
    ```xml
    function loadQuickView(sku){
@@ -154,12 +154,12 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
 
    * Cargue una página HTML de prueba en un servidor web y ábrala.
 
-      Con las variables de la vista rápida asignadas y la llamada a la función establecida, la consola del explorador escribe el valor de la variable en la consola del explorador mediante la función de ejemplo proporcionada.
+      Se asignan las variables de la vista rápida. La llamada a la función está en su lugar. Y la consola del explorador escribe el valor de la variable en la consola del explorador. Para ello, se utiliza la función de muestra proporcionada.
 
 
 
 1. Ahora puede utilizar una función para abrir una ventana emergente sencilla en la vista rápida. El ejemplo siguiente utiliza un `DIV` para una ventana emergente.
-1. Defina el estilo de la ventana emergente `DIV` de la siguiente manera. Añada su propio estilo adicional como desee.
+1. Defina el estilo de la ventana emergente `DIV` de la siguiente manera. Añada estilos adicionales como desee.
 
    ```xml
    <style type="text/css">
@@ -173,7 +173,7 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
 
 1. Coloque la ventana emergente `DIV` en el cuerpo de la página HTML.
 
-   Uno de los elementos se establece con un ID que se actualiza con un valor de sku cuando el usuario invoca una vista rápida. El ejemplo también incluye un botón sencillo para volver a ocultar la ventana emergente después de que esté visible.
+   Uno de los elementos se establece con un ID que se actualiza con el valor SKU cuando el usuario invoca una vista rápida. El ejemplo también incluye un botón sencillo para volver a ocultar la ventana emergente después de que esté visible.
 
    ```xml
    <div id="quickview_div" >
@@ -184,7 +184,7 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
    </div>
    ```
 
-1. Añada una función para actualizar el valor de sku en la ventana emergente; haga visible la ventana emergente reemplazando la función simple creada en el paso 5. con lo siguiente:
+1. Para actualizar el valor de SKU en la ventana emergente, agregue una función. Haga visible la ventana emergente reemplazando la función simple creada en el paso 5 por la siguiente:
 
    ```xml
    <script type="text/javascript">
@@ -200,7 +200,7 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
 
    Algunos visores, como el visor de vídeo interactivo, admiten la visualización en modo de pantalla completa. Sin embargo, el uso de la ventana emergente como se describe en los pasos anteriores hace que se muestre detrás del visor mientras se encuentra en modo de pantalla completa.
 
-   Para que la pantalla emergente se muestre tanto en modo estándar como en modo de pantalla completa, debe adjuntar la ventana emergente al contenedor del visor. Para lograrlo, puede utilizar un segundo método de controlador, `initComplete`.
+   Para que la ventana emergente se muestre en los modos estándar y de pantalla completa, conecte la ventana emergente al contenedor del visor. En este caso, utilice un segundo método de controlador, `initComplete`.
 
    El controlador `initComplete` se invoca una vez inicializado el visor.
 
@@ -225,14 +225,14 @@ llamadaEl controlador también requiere una llamada a la función para que la vi
    }
    ```
 
-   En el código anterior, hemos hecho lo siguiente:
+   En el código anterior, ha hecho lo siguiente:
 
-   * Identificó la ventana emergente personalizada.
+   * Se identificó la ventana emergente personalizada.
    * Se ha eliminado del DOM.
    * Se ha identificado el contenedor del visor.
    * Se adjuntó la ventana emergente al contenedor del visor.
 
-1. El código setHandlers completo debe tener ahora un aspecto similar al siguiente (se ha utilizado el visor de vídeo interactivo):
+1. El código setHandlers completo es similar al siguiente (se utilizó el visor de vídeo interactivo):
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -260,5 +260,5 @@ EjemploEn este ejemplo se utiliza el visor de imágenes interactivo.
 
    `s7interactiveimageviewer.init()`
 
-   Después de incrustar el visor en la página de host, asegúrese de que se crea la instancia del visor y que los controladores se cargan antes de que se invoque el visor con `init()`.
+   Después de incrustar el visor en la página de host, asegúrese de que se crea la instancia del visor. Además, asegúrese de que los controladores se cargan antes de que se invoque el visor mediante `init()`.
 
