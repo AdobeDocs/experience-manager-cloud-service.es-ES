@@ -2,9 +2,9 @@
 title: 'Aprender a utilizar GraphQL con AEM: Contenido y Consultas de muestra'
 description: 'Aprender a utilizar GraphQL con AEM: contenido y Consultas de muestra.'
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1707'
 ht-degree: 5%
 
 ---
@@ -59,7 +59,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          * Consulte [Consulta de muestra para metadatos: Lista de los metadatos de los premios con el título GB](#sample-metadata-awards-gb)
       * `_model` :: permitir consultas para un modelo de fragmento de contenido (ruta y título)
          * Consulte [Consulta de muestra para un modelo de fragmento de contenido de un modelo](#sample-wknd-content-fragment-model-from-model)
-      * `_path` :: la ruta de su fragmento de contenido dentro del repositorio
+      * `_path` :: la ruta al fragmento de contenido dentro del repositorio
          * Consulte [Consulta de muestra: un solo fragmento de ciudad específico](#sample-single-specific-city-fragment)
       * `_reference` :: revelar referencias; incluir referencias en línea en el Editor de texto enriquecido
          * Consulte [Consulta de muestra para varios fragmentos de contenido con referencias recuperadas previamente](#sample-wknd-multiple-fragments-prefetched-references)
