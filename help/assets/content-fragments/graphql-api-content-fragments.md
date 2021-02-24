@@ -2,7 +2,7 @@
 title: API de AEM GraphQL para usar con fragmentos de contenido
 description: Descubra cómo usar fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service con el Envío de contenido sin encabezado de la API de GraphQL de AEM.
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 1%
@@ -275,7 +275,7 @@ Por ejemplo, si un usuario ha creado un modelo de fragmento de contenido denomin
 
    * Tres de ellos han sido controlados por el usuario: `author`, `main` y `referencearticle`.
 
-   * Los otros campos fueron agregados automáticamente por AEM y representan métodos útiles para proporcionar información sobre un determinado fragmento de contenido; en este ejemplo, `_path`, `_metadata`, `_variations`. Estos [campos de ayuda](#helper-fields) están marcados con un antecedente `_` para distinguir entre lo que el usuario ha definido y lo que se ha generado automáticamente.
+   * Los otros campos fueron agregados automáticamente por AEM y representan métodos útiles para proporcionar información sobre un determinado fragmento de contenido; en este ejemplo, `_path`, `_metadata`, `_variations`. Estos [campos de ayuda](#helper-fields) están marcados con un `_` anterior para distinguir entre lo que el usuario ha definido y lo que se ha generado automáticamente.
 
 1. Después de que un usuario crea un fragmento de contenido basado en el modelo de artículo, se puede interrogarlo a través de GraphQL. Para obtener ejemplos, consulte las [Consultas de muestra](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (basadas en una [estructura de fragmento de contenido de muestra para su uso con GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -322,7 +322,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Modelo de fragmento de contenido: tipo de datos | Tipo GraphQL | Descripción |
 |--- |--- |--- |
 | Texto de una sola línea | Cadena, [Cadena] |  Se utiliza para cadenas sencillas como nombres de autor, nombres de ubicación, etc. |
-| Texto de varias líneas | Cadena |  Se utiliza para escribir texto de salida, como el cuerpo de un artículo |
+| Texto de varias líneas | Cadena |  Se utiliza para introducir texto como el cuerpo de un artículo |
 | Número |  Flotante, [Flotante] | Se utiliza para mostrar números de coma flotante y números regulares |
 | Booleano |  Booleano |  Se utiliza para mostrar casillas de verificación → afirmaciones simples true/false |
 | Fecha Y Hora | Calendario |  Se utiliza para mostrar la fecha y la hora en formato ISO 8086 |
