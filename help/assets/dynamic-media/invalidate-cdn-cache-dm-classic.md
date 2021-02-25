@@ -2,17 +2,21 @@
 title: Invalidación de la caché de CDN mediante Dynamic Media Classic
 description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 26%
+source-wordcount: '691'
+ht-degree: 25%
 
 ---
 
 
 # Invalidación de la caché de CDN mediante Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Los recursos de Dynamic Media son almacenados en la caché por CDN para un envío rápido. Sin embargo, cuando realice actualizaciones en un recurso, es posible que desee que esos cambios surtan efecto inmediatamente. La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
+Los recursos de Dynamic Media se almacenan en la caché mediante la red de Envío de contenido (CDN) para un envío rápido. Sin embargo, cuando realice actualizaciones en un recurso, es posible que desee que esos cambios surtan efecto inmediatamente. La invalidación del contenido en caché de CDN permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
+
+>[!NOTE]
+>
+>Esta función requiere que utilice el CDN incorporado con Adobe Experience Manager Dynamic Media. Esta función no admite ningún otro CDN personalizado.
 
 >[!IMPORTANT]
 >
