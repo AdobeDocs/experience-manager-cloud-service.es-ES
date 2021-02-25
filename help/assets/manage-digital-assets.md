@@ -4,9 +4,9 @@ description: Obtenga información sobre varios métodos de edición y administra
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
+source-git-commit: 61e3f77b7d503b252a00178cebe654038ac6df83
 workflow-type: tm+mt
-source-wordcount: '4358'
+source-wordcount: '4336'
 ht-degree: 12%
 
 ---
@@ -473,13 +473,13 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >Puede agregar varias anotaciones antes de guardarlas.
 
 1. Toque o haga clic en **[!UICONTROL Cerrar]** para salir del modo de anotación.
-1. Para vista de la notificación, inicie sesión en Recursos con las credenciales de Aaron MacDonald&#39;s y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
+1. Para vista de la notificación, inicie sesión en Assets with Aaron MacDonald&#39;s dentials (Recursos con las credenciales de Aaron MacDonald) y haga clic en el icono **[!UICONTROL Notificaciones]** para vista de la notificación.
 
    >[!NOTE]
    >
    >Las anotaciones también se pueden agregar a los recursos de vídeo. Al realizar anotaciones en vídeos, el reproductor se pausa para permitirle realizar anotaciones en un marco. Para obtener más información, consulte [administración de recursos de vídeo](manage-video-assets.md).
 
-1. Para elegir un color diferente y diferenciarlo de los usuarios, toque o haga clic en el icono de Perfil y toque o haga clic en **[!UICONTROL Mis preferencias]**.
+1. Para elegir un color diferente y así poder diferenciar entre usuarios, toque o haga clic en el icono de Perfil y toque o haga clic en **[!UICONTROL Mis preferencias]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -541,11 +541,7 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    Puede elegir otros ajustes en función de la posición en la que desea que aparezcan las anotaciones o el estado en el PDF impreso. Si desea que las anotaciones o el estado aparezcan en una página independiente del recurso impreso, elija **[!UICONTROL Página siguiente]**.
 
-   >[!NOTE]
-   >
-   >Es posible que las anotaciones largas no se representen correctamente en el archivo PDF. Para una representación óptima, Adobe recomienda limitar las anotaciones a 50 palabras.
-
-1. Pulse o haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda**, la salida generada se parece al archivo PDF que se muestra aquí.
+1. Haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda**, la salida generada se parece al archivo PDF que se muestra aquí.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -555,7 +551,7 @@ Para imprimir las anotaciones y revisar el estado, toque o haga clic en el icono
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** desde Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
