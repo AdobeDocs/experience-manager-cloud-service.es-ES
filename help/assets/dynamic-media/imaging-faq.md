@@ -2,9 +2,9 @@
 title: Imágenes inteligentes
 description: Las imágenes inteligentes aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes correctas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1856'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 ## ¿Qué es &quot;Imágenes inteligentes&quot;? {#what-is-smart-imaging}
 
 La tecnología Smart Imaging aplica las capacidades de Adobe Sensei AI y funciona con los &quot;ajustes preestablecidos de imagen&quot; existentes. Funciona para mejorar el rendimiento del envío de imágenes optimizando automáticamente el formato, el tamaño y la calidad de las imágenes en función de las capacidades del navegador del cliente.
+
+>[!NOTE]
+>
+>Esta función requiere que utilice el CDN incorporado con Adobe Experience Manager Dynamic Media. Esta función no admite ningún otro CDN personalizado.
 
 Smart Imaging también se beneficia del aumento de rendimiento añadido que supone la integración total con el servicio CDN (Content Envío Network) de calidad superior de Adobe. Este servicio encuentra la ruta óptima de Internet entre servidores, redes y puntos de interrelación. Busca la latencia más baja, o la tasa de pérdida de paquetes más baja, o ambas, en lugar de simplemente usar la ruta predeterminada en Internet.
 
