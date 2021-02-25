@@ -2,10 +2,10 @@
 title: Activar la protección de los vínculos interactivos de Dynamic Media
 description: Información sobre cómo activar la protección de los enlaces directos en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 7%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -16,4 +16,8 @@ La vinculación interactiva se produce cuando un sitio web de terceros utiliza c
 
 [Adobe Customer ](https://helpx.adobe.com/support.html) Carecan puede configurar un filtro de remitente del reenvío en el nivel CDN. De este modo, se garantiza que el contenido de Dynamic Media solo se muestre a los sitios web de la lista de sitios web permitidos para el dominio.
 
-La protección de Hotlink requiere que utilice la CDN integrada de Adobe. Para activar la protección mediante hotlink, un administrador debe crear un ticket de asistencia para solicitar el cambio de configuración en su cuenta de Dynamic Media. No hay costo adicional para activar la protección de los enlaces interactivos.
+>[!NOTE]
+>
+>Esta función requiere que utilice el CDN incorporado con Adobe Experience Manager Dynamic Media. Esta función no admite ningún otro CDN personalizado.
+
+Para activar la protección de vínculos interactivos, un administrador debe crear un ticket de asistencia para solicitar el cambio de configuración en su cuenta de Dynamic Media. No hay costo adicional para activar la protección de los vínculos interactivos.
