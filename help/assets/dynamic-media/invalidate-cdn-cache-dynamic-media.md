@@ -2,9 +2,9 @@
 title: Invalidación de la caché de CDN mediante Dynamic Media
 description: La invalidación del contenido en caché de CDN (Red de Envío de contenido) permite actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1305'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Los recursos de Dynamic Media son almacenados en la caché por la red de Envío de contenido (CDN) para un envío rápido a sus clientes. Sin embargo, cuando actualice estos recursos, es posible que desee que los cambios surtan efecto inmediatamente en el sitio web. La depuración o invalidación de la caché de CDN permite actualizar rápidamente los recursos que Dynamic Media entrega. En lugar de esperar a que la caché caduque con un valor TTL (tiempo de vida) (el valor predeterminado es 10 horas), puede enviar una solicitud desde la interfaz de usuario de Dynamic Media para que la caché caduque en cuestión de minutos.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Esta función requiere que utilice la CDN integrada con AEM Dynamic Media; no se admite ningún otro CDN personalizado. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>Esta función requiere que utilice el CDN incorporado con Adobe Experience Manager Dynamic Media. Esta función no admite ningún otro CDN personalizado.
 
 Consulte también [Información general del almacenamiento en caché en Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
