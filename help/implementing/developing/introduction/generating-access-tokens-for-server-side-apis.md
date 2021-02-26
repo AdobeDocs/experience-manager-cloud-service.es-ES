@@ -2,9 +2,9 @@
 title: Generación de Tokenes de acceso para las API del servidor
 description: Obtenga información sobre cómo facilitar la comunicación entre un servidor de terceros y AEM como Cloud Service mediante la generación de un autentificador JWT seguro
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ Realice las llamadas de API de servidor a servidor correspondientes desde la apl
 
 ## Revocación de credenciales de servicio {#service-credentials-revocation}
 
-Envíe una solicitud a la asistencia al cliente si es necesario revocar el token del portador de JWT.
+Si es necesario revocar las credenciales, debe enviar una solicitud al servicio de atención al cliente siguiendo estos pasos:
+
+1. Desactive el usuario de cuenta técnica del Adobe Admin Console en la interfaz de usuario:
+   * En Cloud Manager, presione **...** al lado del entorno. Se abrirá la página perfiles del producto
+   * Ahora, haga clic en el perfil **AEM Usuarios** para mostrar una lista de los usuarios
+   * Haga clic en la ficha **Credenciales de API** y, a continuación, busque el usuario de la cuenta técnica correspondiente y elimínelo
+2. Póngase en contacto con el servicio de asistencia al cliente y solicite que se eliminen las credenciales de servicio de ese entorno específico
+3. Por último, puede volver a generar las credenciales, tal como se describe en esta documentación. Asegúrese también de que el nuevo usuario técnico de cuenta que se ha creado tiene los permisos correspondientes.
