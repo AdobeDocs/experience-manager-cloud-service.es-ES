@@ -2,10 +2,10 @@
 title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 96%
+source-wordcount: '832'
+ht-degree: 90%
 
 ---
 
@@ -65,11 +65,10 @@ La consola Web, utilizada en versiones anteriores de AEM para cambiar la configu
 
 ## No se permiten los cambios en el repositorio de publicación {#changes-to-publish-repo}
 
-No se permiten cambios directos en el repositorio de publicación en AEM Cloud Service. En versiones anteriores de AEM local o AEM en AMS, los cambios de código se podían realizar directamente en el repositorio de publicación; por ejemplo, para crear usuarios, actualizar el perfil de usuario y crear nodos. Esto ya no es posible y puede solucionarse de las siguientes formas:
+Aparte de los cambios realizados en la carpeta `/home` del nivel de publicación, AEM Cloud Service no permite realizar cambios directos en el repositorio de publicación. En versiones anteriores de AEM in situ o AEM en AMS, los cambios de código se podían realizar directamente en el repositorio de publicación. Algunas limitaciones se pueden mitigar de las siguientes maneras:
 
 * Para la configuración de contenido o basada en contenido: realice los cambios en la instancia de creación y publíquelos.
 * Para el código y la configuración: realice los cambios en el repositorio de GIT y ejecute la canalización CI/CD para implementarlos.
-* Para datos relacionados con el usuario, como envíos de formularios o datos de perfil: utilice el servicio de perfil unificado (Unified Profile Service) de Experience Cloud Platform u otro almacén de reconocimiento de sesiones de terceros.
 
 ## No se permiten los modos de ejecución personalizados {#custom-runmodes}
 
