@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
+source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 80%
+source-wordcount: '657'
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,7 @@ La incorporación de AEM Commerce as a Cloud Service es un proceso de dos pasos:
 1. Obtenga AEM Commerce as a Cloud Service habilitado y el complemento CIF aprovisionado.
 2. Conecte AEM Commerce as a Cloud Service en su entorno Magento.
 
-El primer paso lo realiza Adobe. Deberá proporcionar información como la organización IMS, la dirección URL del extremo GraphQL del entorno del Magento, etc. como parte del proceso de aprovisionamiento. Para obtener más información sobre precios y aprovisionamiento, debe ponerse en contacto con su representante de ventas.
+El primer paso de integración se realiza por Adobe. Para obtener más información sobre precios y aprovisionamiento, debe ponerse en contacto con su representante de ventas.
 
 Una vez que haya sido aprovisionado con el complemento CIF, se aplicará a cualquier programa existente de Cloud Manager. En caso de que no tenga un programa de Cloud Manager, deberá crear uno nuevo. Para obtener más información, consulte [Configuración del programa](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/getting-started/setting-up-program.html).
 
@@ -82,7 +82,7 @@ Con esto, está listo para usar AEM Commerce as a Cloud Service y puede implemen
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
    ```
 
-   Consulte [Conexión de AEM Commerce con Magento](#magento) sobre cómo configurar Adobe I/O CLI para Cloud Manager.
+   Consulte [Conexión de AEM Commerce con Magento](#magento) sobre cómo configurar la CLI de Adobe I/O para Cloud Manager.
 
 ## Integraciones de comercio de terceros {#integrations}
 
