@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1017'
 ht-degree: 4%
 
 ---
@@ -53,22 +53,18 @@ La siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 ## Novedades en [!DNL Assets] {#what-is-new-assets}
 
-* Los recursos se pueden obtener mediante [!DNL Experience Manager Assets Brand Portal]. Ayuda a obtener recursos de los usuarios de la agencia para nuevas campañas de marketing, fotografías y proyectos.
+* En [!DNL Brand Portal], se introduce una nueva configuración de descarga que permite crear carpetas independientes para cada recurso al descargar carpetas, colecciones, etc. consulte [configuración de descarga](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## Correcciones de errores en [!DNL Assets] {#bug-fixes-assets}
 
 * Cuando se crea una nueva versión de un recurso existente después de resolver el conflicto de nombres, se sobrescriben los metadatos del recurso original. (CQ-4313594)
 * Cuando se imprime un recurso con texto de anotación largo, el texto de la anotación se recorta, aunque haya espacio disponible. (CQ-4314101)
+* Cuando se seleccionan varios recursos para actualizar las propiedades, a veces se produce un error o se actualizan las propiedades de un recurso no seleccionado. (CQ-4316532)
+* Al intentar abrir [!UICONTROL Raíl de búsqueda de administración de recursos], la página permanece en blanco y al hacer clic en [!UICONTROL Editar] > [!UICONTROL Configuración] se genera un error. (CQ-4315079)
 
 ## Cloud Manager {#cloud-manager}
 
