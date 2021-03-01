@@ -2,7 +2,7 @@
 title: 'Diferencias de página  '
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
@@ -29,9 +29,9 @@ La función Diferencias de página permite realizar una cómoda comparación en 
 La comparación de diferencias en paralelo permite comparar lo siguiente:
 
 * [Versiones](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page): versión anterior de una página con el estado actual.
-* Live Copies: Live Copy con su modelo.<!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)Live Copies: Live Copy con su modelo.
 * [Lanzamientos](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page): lanzamiento con su origen.
-* Copias de idioma: una página antes y después de la traducción.<!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)Copias de idioma: una página antes y después de la traducción.
 
 Consulte los temas correspondientes sobre cómo iniciar la comparación de diferencias en esos contextos.
 
@@ -89,7 +89,7 @@ Puede salir de la comparación de diferencias en paralelo en cualquier momento h
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 
 * Al realizar la comparación de diferencias de versiones y lanzamientos, no se tienen en cuenta componentes dinámicos como rutas de exploración, menús, listas de productos o logotipos (componentes que se basan en la estructura del sitio para procesar su contenido).
-* Para las versiones, la diferencia no vuelve a crear la directiva de control de acceso ni las relaciones de Live Copy.
+* En las versiones, la comparación de diferencias no vuelve a crear la política de control de acceso ni las relaciones de Live Copy.
 * Si se mueve una página, ya no se puede realizar una diferencia con ninguna versión hecha antes del movimiento.
    * Si tiene problemas con una diferencia, compruebe la [línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ver si la página se ha movido.
 
