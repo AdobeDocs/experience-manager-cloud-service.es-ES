@@ -2,7 +2,7 @@
 title: Uso de flujos de trabajo de proyecto
 description: Hay varios flujos de trabajo de proyectos disponibles de forma integrada.
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 78%
@@ -14,9 +14,9 @@ ht-degree: 78%
 
 Entre los flujos de trabajo de proyecto disponibles de fábrica se incluye lo siguiente:
 
-* **Flujo de trabajo**  de aprobación de proyectos: este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
-* **Inicio**  de solicitud: flujo de trabajo que solicita un inicio.
-* **Página de aterrizaje**  de solicitudes: este flujo de trabajo solicita una página de aterrizaje.
+* **Flujo de trabajo de aprobación del proyecto** : este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Solicitar lanzamiento** : un flujo de trabajo solicita un lanzamiento.
+* **Solicitar página de aterrizaje** : este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Crear y traducir copia DAM y Crear copia de idioma DAM**: crea elementos binarios, metadatos y etiquetas traducidos para los recursos y las carpetas.
 
@@ -30,25 +30,22 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Solicitar lanzamiento | x |  |  |
 | Solicitar página de aterrizaje | x |  |  |
 | Solicitar correo electrónico | x |  |  |
-| DAM Crear copia&amp;amp de idioma;último; |  |  | x |
-| DAM Crear y traducir copia y registro de idioma;último; |  |  | x |
+| Crear copia y amp de idioma DAM;ast; |  |  | x |
+| Crear y traducir copia y amp de idioma DAM;ast; |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Projects. Consulte Creación de copias de idioma para recursos. 
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md). 
 
 Las etapas para iniciar y completar flujos de trabajo no son las mismas, independientemente del flujo de trabajo que se elija. Solo las etapas cambian.
 
 Un flujo de trabajo se inicia directamente en Proyectos (excepto Crear copia de idioma DAM y Crear y traducir copia de idioma DAM). La información sobre cualquier tarea pendiente de un proyecto aparece en el mosaico **Tareas**. Las notificaciones para las tareas que se deben completar aparecen junto al icono de usuario.
 
-Para obtener más información sobre cómo trabajar con flujos de trabajo en AEM, consulte lo siguiente:
+Para obtener más información sobre el trabajo con flujos de trabajo en AEM, consulte lo siguiente:
 
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
-* Configuración de flujos de trabajo<!--* [Configuring workflows](/help/sites-administering/workflows.md)--> 
+* [Configuración de flujos de trabajo](/help/sites-cloud/administering/workflows-administering.md) 
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
@@ -59,24 +56,24 @@ Este flujo de trabajo permite solicitar un manuscrito de un usuario y, a continu
 1. En el proyecto de medios, seleccione el signo **+** en el mosaico **Flujos de trabajo** y seleccione **Solicitar copia del flujo de trabajo**.
 1. Introduzca un título para el manuscrito y un breve resumen de lo que se solicita. Si fuera necesario, introduzca un recuento de palabras de destino, la prioridad de las tareas y una fecha de vencimiento.
 
-   ![Flujo de trabajo de copia de solicitudes](/help/sites-cloud/authoring/assets/projects-request-copy.png)
+   ![Flujo de trabajo de copia de solicitud](/help/sites-cloud/authoring/assets/projects-request-copy.png)
 
 1. Haga clic en **Crear**. Se inicia el flujo de trabajo. La tarea aparece en el mosaico **Tareas**.
 
-   ![Se agregó la copia de solicitud](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
+   ![Copia de solicitud agregada](/help/sites-cloud/authoring/assets/projects-request-copy-add.png)
 
 ## Flujo de trabajo Aprobación del proyecto {#project-approval-workflow}
 
 En el flujo de trabajo Aprobación del proyecto, se asigna contenido a un usuario, el contenido se revisa y luego se aprueba.
 
-1. En el proyecto simple, seleccione el **`+`** inicio de sesión en el mosaico **Flujos de trabajo** y seleccione **Flujo de trabajo de aprobación del proyecto**.
+1. En el proyecto simple, seleccione el signo **`+`** en el mosaico **Flujos de trabajo** y seleccione **Flujo de trabajo de aprobación del proyecto**.
 1. Introduzca un título y seleccione a quién asignarlo de la lista del equipo. Si fuera necesario, introduzca una descripción, ruta de contenido, prioridad de las tareas y una fecha de vencimiento.
 
-   ![Solicitud de aprobación](/help/sites-cloud/authoring/assets/projects-approval.png)
+   ![Aprobación de solicitud](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. Haga clic en **Crear**. Se inicia el flujo de trabajo. La tarea aparece en el mosaico **Tareas**.
 
-   ![Se agregó la aprobación de solicitud](/help/sites-cloud/authoring/assets/projects-approval-add.png)
+   ![Se agregó la aprobación de la solicitud](/help/sites-cloud/authoring/assets/projects-approval-add.png)
 
 ## Flujo de trabajo Solicitar lanzamiento {#request-launch-workflow}
 
