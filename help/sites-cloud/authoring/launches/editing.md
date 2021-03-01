@@ -2,10 +2,10 @@
 title: Edición de lanzamientos
 description: 'Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas. '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -19,16 +19,16 @@ Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede 
 1. Acceda a [Lanzamiento desde las referencias (consola de sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Ir a página** para abrir la página para editarla.
 
-Al editar la página verá una indicación en la barra de herramientas superior, junto con las opciones **Leave** y **Navegar**:
+Al editar la página, verá una indicación en la barra de herramientas superior, junto con las opciones **Dejar** y **Navegar**:
 
-![Abandonar y navegar por el inicio desde el Editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+![Abandonar y navegar por el inicio desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Si el lanzamiento se basa en una Live Copy, deberá hacer lo siguiente: <!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+Si el lanzamiento se basa en una [Live Copy](/help/sites-cloud/administering/msm/overview.md), deberá:
 
-* Consulte Bloqueo de símbolos (pequeños candados) al editar un componente (contenido y/o propiedades).
-* Consulte la ficha **Live Copy** en **Propiedades de la página**
+* Consulte símbolos de bloqueo (pequeños candados) cuando edite un componente (contenido y/o propiedades).
+* Consulte la pestaña **Live Copy** en **Propiedades de página**
 
 Se utiliza una Live Copy para sincronizar contenido *desde* la rama de origen *a* la rama de lanzamiento (para mantener el lanzamiento actualizado con los cambios realizados en la fuente).
 
@@ -37,28 +37,28 @@ Puede realizar cambios, del mismo modo que puede editar una Live Copy estándar;
 * Al hacer clic en un candado cerrado interrumpirá la sincronización y podrá utilizar nuevas actualizaciones de contenido en el lanzamiento. Una vez que se desbloquea (icono del candado abierto), los cambios no se sobrescriben con ningún cambio que se realice en la misma ubicación de la rama de origen.
 * **Suspender** (y **reanudar**) la herencia de una página específica.
 
-Consulte Cambiar el contenido de una Live Copy para obtener más información. <!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+Consulte [Cambiar el contenido de una Live Copy](/help/sites-cloud/administering/msm/creating-live-copies.md) para obtener más información.
 
 ## Comparar una página de lanzamiento con su página de origen {#comparing-a-launch-page-to-its-source-page}
 
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
-1. En la consola **Sites**, [navegue a las páginas de origen del lanzamiento y seleccione una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. En la consola **Sites**, [vaya a las páginas de origen del lanzamiento y seleccione una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione un lanzamiento específico y la opción **Comparar con el origen**:
 
-   ![Comparación entre inicio y origen](/help/sites-cloud/authoring/assets/launches-compare.png)
+   ![Comparación entre el lanzamiento y el origen](/help/sites-cloud/authoring/assets/launches-compare.png)
 
 1. Las dos páginas (lanzamiento y origen) se abrirán en paralelo.
 
    Para obtener información completa sobre el uso de esta característica, consulte la [diferencia de la página](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Cambiar las páginas de origen utilizadas {#changing-the-source-pages-used}
+## Cambiar las páginas de origen utilizadas  {#changing-the-source-pages-used}
 
 Puede añadir en cualquier momento las páginas en el rango de páginas de origen para el lanzamiento, o eliminarlas: 
 
 1. Acceda y seleccione el lanzamiento de:
-   * La [consola de inicios](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * La consola [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Seleccione **Editar**.
    * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar lanzamiento**. 
