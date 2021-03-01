@@ -1,8 +1,9 @@
 ---
 product: adobe experience manager
+description: estos son los metadatos necesarios para las páginas de documentación de AEMaaCS
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.es-ES
 index: y
-type: Documentation
+type: Documentación
 solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html
 getting-started-title: Introducción
@@ -10,10 +11,10 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: Tutoriales
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 10%
+source-wordcount: '120'
+ht-degree: 14%
 
 ---
 
@@ -26,9 +27,9 @@ Los metadatos en el sistema de creación de GitHub son jerárquicos y se definen
 1. ToC
 1. Artículo
 
-Los metadatos definidos en el archivo metadata.md se aplican a toda la repo, pero se pueden anular en los niveles de ToC y de artículo. Cualquier anulación de los metadatos debe realizarse en el nivel más bajo posible.
+Los metadatos definidos en el archivo metadata.md se aplican a todo el repositorio, pero se pueden sobrescribir en los niveles de ToC y de artículo. Cualquier anulación de los metadatos debe realizarse en el nivel más bajo posible.
 
-Los metadatos de la repo experience-manager-cloud-service.en son los mínimos requeridos.
+Los metadatos del repositorio de experience-manager-cloud-service.en son los mínimos requeridos.
 
 metadata.md
 
@@ -51,4 +52,4 @@ Artículo
 
 * `title`
 * `description`
-* `contentOwner` (solo en el contenido de recursos principales en `/help/assets`)
+* `contentOwner` (solo en el contenido de recursos principales de  `/help/assets`)
