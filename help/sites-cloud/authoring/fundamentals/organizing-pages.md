@@ -2,7 +2,7 @@
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -93,7 +93,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 
-Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y el JCR.
+Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -130,10 +130,7 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM validará el nomb
 >
 >Evite utilizar un código de dos letras como nombre de página, tal como se indica en la norma ISO-639-1, a menos que sea la raíz de un idioma.
 >
->Consulte Preparación de contenido para su traducción para obtener más información.
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>Consulte [Preparación de contenido para su traducción](/help/sites-cloud/administering/translation/preparation.md) para obtener más información.
 
 ### Plantillas {#templates}
 
@@ -362,7 +359,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
 >[!NOTE]
 >
->Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. Consulte [Disponibilidad de la plantilla](/help/implementing/developing/components/templates.md#template-availability) para obtener más información.
+>Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability) para obtener más información.
 
 #### Acciones asincrónicas {#asynchronous-actions}
 
