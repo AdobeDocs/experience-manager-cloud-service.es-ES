@@ -2,7 +2,7 @@
 title: Edición del contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-cl
 
 La herencia es el mecanismo por el que el contenido se puede insertar automáticamente de un componente a otro. Los componentes heredados pueden ser el producto de distintos escenarios, como por ejemplo:
 
-* Administración de varios sitios <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [Administración de varios sitios](/help/sites-cloud/administering/msm/overview.md)
 * [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md) (cuando se basan en una Live Copy).
 
 Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto puede estar disponible en la barra de herramientas del componente, si el componente está en una página que forma parte de una Live Copy o Launch (basado en una Live Copy).
