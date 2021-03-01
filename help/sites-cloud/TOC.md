@@ -59,7 +59,7 @@ ht-degree: 90%
    + Lanzamientos {#launches}
       + [Uso de lanzamientos](authoring/launches/overview.md)
       + [Creación de lanzamientos](authoring/launches/creating.md)
-      + [Administración de páginas en inicios](authoring/launches/managing-pages.md)
+      + [Administración de páginas en lanzamientos](authoring/launches/managing-pages.md)
       + [Edición de lanzamientos](authoring/launches/editing.md)
       + [Vista previa de lanzamientos con Deformación de tiempo](authoring/launches/preview.md)
       + [Promoción de lanzamientos](authoring/launches/promoting.md)
@@ -78,9 +78,9 @@ ht-degree: 90%
       + [Creación y administración de ofertas](authoring/personalization/offers.md)
       + [Información acerca de la segmentación](authoring/personalization/segmentation.md)
       + [Configuración de la segmentación con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-      + [Registro, inicio de sesión y Perfil del usuario](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + [Registro, inicio de sesión y perfil de usuario](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administración {#administering}
-   + [Administración de Flujos de trabajo](administering/workflows-administering.md)
+   + [Administración de flujos de trabajo](administering/workflows-administering.md)
 + Integración con AEM as a Cloud Service {#integrations}
    + [Integración con Adobe Analytics](integrating/integrating-adobe-analytics.md)
    + [Integración con Adobe Target](integrating/integrating-adobe-target.md)
