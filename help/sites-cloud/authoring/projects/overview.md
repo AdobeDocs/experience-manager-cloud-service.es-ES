@@ -2,21 +2,21 @@
 title: Proyectos
 description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 79%
+ht-degree: 78%
 
 ---
 
 
 # Proyectos {#projects}
 
-Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, como se describe en detalle en [Mosaico del proyecto.](#project-tiles)
+Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
 
 >[!CAUTION]
 >
->Para que los usuarios de los proyectos puedan ver otros usuarios o grupos mientras utilizan la funcionalidad Proyectos, como crear proyectos, crear tareas o flujos de trabajo, ver y administrar el equipo, esos usuarios necesitan tener acceso de lectura en `/home/users` y `/home/groups`. La manera más fácil de implementar esto es darle al grupo **projects-users** acceso de lectura a `/home/users` y `/home/groups`.
+>Para que los usuarios de los proyectos puedan ver otros usuarios/grupos mientras utilizan la funcionalidad Proyectos , como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, dichos usuarios deben tener acceso de lectura en `/home/users` y `/home/groups`. La manera más sencilla de implementar esto es dar al grupo **projects-users** acceso de lectura a `/home/users` y `/home/groups`.
 
 Como usuario, puede hacer lo siguiente:
 
@@ -64,7 +64,7 @@ Puede tener los siguientes mosaicos asociados al proyecto. Cada uso de ellos se 
 
 En el mosaico **Recursos**, puede reunir todos los recursos que utilice para un proyecto determinado.
 
-![Mosaico de recursos](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
+![Icono de recursos](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
 Los recursos se cargan directamente en el mosaico. Además, si dispone del complemento Dynamic Media, puede crear conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -74,7 +74,7 @@ Los recursos se cargan directamente en el mosaico. Además, si dispone del compl
 
 Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente al proyecto. Puede definir colecciones de recursos.
 
-![Colección de recursos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
+![Recopilación de recursos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
 Para añadir una colección, haga clic en **Agregar colección** y seleccione la colección adecuada de la lista.
 
@@ -98,7 +98,7 @@ El mosaico Vínculos permite asociar vínculos externos al proyecto.
 
 Puede asignar al vínculo un nombre fácil de reconocer, así como cambiar la miniatura.
 
-![Añadir vínculo](/help/sites-cloud/authoring/assets/projects-add-link.png)
+![Agregar vínculo](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ### Información del proyecto {#project-info}
 
@@ -108,7 +108,7 @@ El mosaico Información del proyecto proporciona información general sobre el p
 
 Desde este mosaico, así como el mosaico Equipo, se pueden asignar o eliminar miembros, así como cambiar la función de estos.
 
-![Añadir miembros del equipo al proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
+![Agregar integrantes del equipo al proyecto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 ### Trabajo de traducción {#translation-job}
 
@@ -116,19 +116,19 @@ En el mosaico Trabajo de traducción puede iniciar una traducción y también pu
 
 ![Trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Trabajo de traducción** para vista de los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
+Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Translation Job** para ver los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
 
-![Detalle del trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
+![Detalles del trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
 ### Equipo {#team}
 
 En este mosaico puede especificar los miembros del equipo del proyecto. Durante la edición puede introducir el nombre del miembro del equipo y asignar la función de usuario.
 
-![Mosaico de equipo](/help/sites-cloud/authoring/assets/projects-team-tile.png)
+![Título de equipo](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
 Puede añadir y eliminar miembros en el equipo. Además, puede editar la [función de usuario](#user-roles-in-a-project) asignada al miembro.
 
-![Añadir equipo de lista](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
+![Agregar equipo de la lista](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
 
 ### Flujos de trabajo {#workflows}
 
@@ -148,7 +148,7 @@ El mosaico Lanzamientos muestra los lanzamientos que se hayan solicitado con un 
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Uso de Tareas](/help/sites-cloud/authoring/projects/tasks.md).
+En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Trabajo con Tareas](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Tareas](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -156,9 +156,9 @@ En Tareas puede supervisar el estado de cualquier tarea relacionada con el proye
 
 En AEM se incluyen tres plantillas predefinidas de fábrica:
 
-* Un proyecto simple: muestra de referencia para cualquier proyecto que no encaje en otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
-* Un proyecto de medios: un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
-* Proyecto de traducción: una muestra de referencia para la administración de las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* Un proyecto simple: una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
+* Un proyecto de medios : un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Sesión fotográfica del producto (para administrar la fotografía relacionada con el producto)
+* Un [proyecto de traducción](/help/sites-cloud/administering/translation/overview.md): una muestra de referencia para administrar las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
 En función de la plantilla seleccionada, dispone de distintas opciones en relación con las funciones de usuario y los flujos de trabajo.
 
@@ -171,10 +171,10 @@ Las diferentes funciones de usuario se establecen en una plantilla de proyecto y
 
 Todos los proyectos admiten las siguientes funciones predeterminadas para que pueda administrar los permisos de seguridad y control:
 
-| Función | Descripción | Permisos    | Pertenencia a grupos |
+| Función | Descripción | Permisos | Pertenencia a grupos |
 |---|---|---|---|
 | Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | `workflow-users` grupo |
-| Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de toma, una sesión fotográfica y revisar y aprobar recursos; escribir permiso en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
+| Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de tomas, sesión fotográfica y revisar y aprobar recursos; permiso de escritura en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
 | Propietario | Un usuario con esta función puede iniciar un proyecto. Un propietario puede crear un proyecto, iniciar el trabajo en un proyecto y también mover los recursos aprobados a la carpeta Producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo (para poder crear un proyecto) grupo de administradores de proyectos (para poder mover recursos) |
 
 >[!NOTE]
