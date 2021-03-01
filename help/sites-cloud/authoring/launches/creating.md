@@ -2,7 +2,7 @@
 title: Creación de lanzamientos
 description: Puede crear un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro.
 translation-type: tm+mt
-source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 81%
@@ -14,15 +14,15 @@ ht-degree: 81%
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* El título aparece en el carril [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), desde donde los autores pueden acceder a ellos para trabajar en ellos.
+* El título aparece en el carril [References](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references), desde el cual los autores pueden acceder a ellos para trabajar en ellos.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
-* De forma predeterminada, Live Copy actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos. <!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* De forma predeterminada, [Live Copy](/help/sites-cloud/administering/msm/overview.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
 De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para establecer cuándo se promocionarán y activarán las páginas. Sin embargo, la **fecha de lanzamiento** solo funciona en combinación con el indicador **Producción lista** (consulte [Edición de la configuración de un lanzamiento](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)); para que las acciones se produzcan de forma automática, se deben configurar ambas.
 
 >[!NOTE]
 >
->Al crear un lanzamiento, las páginas superiores de la jerarquía no son copias de las páginas de origen. Son marcadores de posición, creados con la plantilla:
+>Cuando crea un lanzamiento, las páginas superiores en la jerarquía no son copias de las páginas de origen. Son marcadores de posición creados con la plantilla:
 >
 >* `/libs/launches/templates/outofscope`
 >
@@ -61,7 +61,7 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    Repita el proceso tantas veces como sea necesario.
 
-   ![Seleccionar origen de inicio](/help/sites-cloud/authoring/assets/launches-select-source.png)
+   ![Seleccionar origen de lanzamiento](/help/sites-cloud/authoring/assets/launches-select-source.png)
 
    >[!NOTE]
    >
@@ -77,24 +77,24 @@ Puede crear un lanzamiento desde las consolas Sitios o Lanzamientos:
 
    Continúe con **Siguiente**.
 
-   ![Seleccionar origen de inicio](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
+   ![Seleccionar origen de lanzamiento](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
 
 1. En el paso **Propiedades** del asistente, puede especificar:
 
    * **Título del lanzamiento**: el nombre del lanzamiento. El nombre debería tener sentido para los autores.
    * **con contenido existente**: el contenido original se utilizará para crear el lanzamiento.
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
-   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Esta opción logra esto haciendo que el lanzamiento sea una Live Copy. De forma predeterminada, está opción está seleccionada.<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Esta opción logra esto convirtiendo el lanzamiento en [Live Copy](/help/sites-cloud/administering/msm/overview.md). De forma predeterminada, esta opción está seleccionada.—>
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
-   ![Propiedades de lanzamiento](/help/sites-cloud/authoring/assets/launches-properties.png)
+   ![Propiedades de Launch](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. Utilice **Crear** para completar el proceso y crear el lanzamiento nuevo. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
 
    Si vuelve a la consola (con **Hecho**), puede ver el lanzamiento (y acceder a él) desde:
 
    * La consola [**Lanzamientos**](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * La [**Referencias** en la consola **Sitios**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * Las [**Referencias** en la consola **Sitios**](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
@@ -104,12 +104,12 @@ Al crear un lanzamiento, puede seleccionar si desea utilizar una plantilla nueva
 >
 >Esta opción solo está disponible al crear un lanzamiento desde la consola **Sitios**. No está disponible al crear un lanzamiento desde la consola **Lanzamientos**.
 
-![Creación de un lanzamiento con una nueva plantilla](/help/sites-cloud/authoring/assets/launches-create-new-template.png)
+![Creación de un lanzamiento con una plantilla nueva](/help/sites-cloud/authoring/assets/launches-create-new-template.png)
 
 Al seleccionar esto, ocurrirá lo siguiente:
 
 * Actualice las demás opciones disponibles,
-* Incluya un nuevo paso en el que puede seleccionar la plantilla requerida.
+* Incluya un nuevo paso en el que pueda seleccionar la plantilla requerida.
 
 ![Selección de una nueva plantilla](/help/sites-cloud/authoring/assets/launches-select-template.png)
 
@@ -129,18 +129,18 @@ Crear un lanzamiento anidado (un lanzamiento dentro de otro lanzamiento) le ofre
 
 #### Creación de un lanzamiento anidado: consola Lanzamientos {#creating-a-nested-launch-launches-console}
 
-Crear un inicio anidado desde la consola **Lanzamientos** es básicamente lo mismo que crear cualquier otra forma de inicio, con la excepción de que necesita navegar a la rama `/content/launches` de lanzamientos:
+La creación de un lanzamiento anidado desde la consola **Lanzamientos** es básicamente la misma que la creación de cualquier otra forma de lanzamiento, con la excepción de que debe navegar a la rama de lanzamientos `/content/launches`:
 
 1. En la consola **Lanzamientos**, seleccione **Crear**.
-1. Seleccione **Añadir páginas** y, a continuación, desplácese a la rama de inicios especificando `/content/launches` en el carril **Filtros**. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
+1. Seleccione **Agregar páginas** y, a continuación, vaya a la rama de lanzamientos especificando `/content/launches` en el carril **Filtros**. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
 
    ![Creación de un lanzamiento anidado](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
 1. Continúe con **Siguiente**.
 
-1. Complete las **Propiedades** como con cualquier otro inicio.
+1. Complete las **Properties** como con cualquier otro lanzamiento.
 
-1. Complete con **Crear**.
+1. Complete con **Create**.
 
 #### Creación de un lanzamiento anidado: consola Sitios {#creating-a-nested-launch-sites-console}
 
