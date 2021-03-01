@@ -3,15 +3,15 @@ title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 83%
 
 ---
 
 
-# Configuración de Experience Manager para el etiquetado inteligente de recursos {#configure-aem-for-smart-tagging}
+# Configurar [!DNL Experience Manager] para el etiquetado inteligente de recursos {#configure-aem-for-smart-tagging}
 
 El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas. Adobe proporciona etiquetas inteligentes que utilizan inteligencia artificial y algoritmos de aprendizaje automático para formar imágenes. Las etiquetas inteligentes utilizan un marco de inteligencia artificial de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial.
 
@@ -25,7 +25,7 @@ La funcionalidad Etiquetas inteligentes está disponible para su compra como com
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] las implementaciones creadas después  [de la versión de agosto de 2020 ](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) se integran  [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de etiquetas inteligentes más rápido. En implementaciones anteriores, los administradores pueden seguir los pasos siguientes para configurar la integración.
+>Si las implementaciones de [!DNL Experience Manager Assets] se crearon después de la [versión de agosto de 2020](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets), [!DNL Adobe Developer Console] se integra de forma predeterminada. Ayuda a configurar la funcionalidad de las etiquetas inteligentes más rápido. En las implementaciones anteriores, los administradores pueden configurar manualmente la integración con las instrucciones siguientes.
 
 ## Integración con Adobe Developer Console {#aio-integration}
 
@@ -56,7 +56,7 @@ El certificado público permite autenticar el perfil en Adobe Developer Console.
 
 1. Haga clic en **[!UICONTROL Descargar clave pública]**.
 
-   ![Experience Manager Smart Tags crear clave pública](assets/aem_smarttags-config1.png)
+   ![[!DNL Experience Manager] Etiquetas inteligentes crear clave pública](assets/aem_smarttags-config1.png)
 
 ### Creación de una integración {#create-aio-integration}
 
@@ -64,10 +64,10 @@ Para utilizar etiquetas inteligentes, cree una integración en Adobe Developer C
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io/) en el explorador. Seleccione la cuenta adecuada y compruebe que la función de organización asociada sea administrador del sistema.
 1. Cree un proyecto con el nombre que desee. Haga clic en **[!UICONTROL Añadir API]**.
-1. En la página **[!UICONTROL Añadir una API]** , seleccione **[!UICONTROL Experience Cloud]** y **[!UICONTROL Contenido inteligente]**. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En la página **[!UICONTROL Add an API]**, seleccione **[!UICONTROL Experience Cloud]** y, a continuación, **[!UICONTROL Smart Content]**. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione **[!UICONTROL Cargar la clave pública]**. Proporcione el archivo de certificado descargado de [!DNL Experience Manager]. Se muestra un mensaje con las [!UICONTROL claves públicas cargadas correctamente]. Haga clic en **[!UICONTROL Siguiente]**. 
-1. La página [!UICONTROL Crear una nueva página de credenciales de cuenta de servicio (JWT)] muestra la clave pública de la cuenta de servicio que se acaba de configurar. Haga clic en **[!UICONTROL Siguiente]**. 
-1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Haga clic en **[!UICONTROL Guardar API configurada]**. La página muestra más información sobre la configuración. Mantenga esta página abierta para copiar y añadir estos valores en Experience Manager al configurar las etiquetas inteligentes en [!DNL Experience Manager].
+1. [!UICONTROL La página de ] credenciales Crear una nueva cuenta de servicio (JWT) muestra la clave pública de la cuenta de servicio. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Haga clic en **[!UICONTROL Guardar API configurada]**. La página muestra más información sobre la configuración. Mantenga esta página abierta para copiar y añadir estos valores en [!DNL Experience Manager] al configurar las etiquetas inteligentes en [!DNL Experience Manager].
 
    ![En la pestaña Información general, puede revisar la información proporcionada para la integración.](assets/integration_details.png)
 
@@ -94,22 +94,22 @@ Después de completar la configuración, siga estos pasos para validarla.
 
 ### Volver a configurar si un certificado caduca {#certrenew}
 
-Cuando caduca el certificado, ya no es de confianza. Para añadir un nuevo certificado, siga estos pasos. No puede renovar un certificado caducado.
+Cuando caduca el certificado, ya no es de confianza. Para agregar un certificado, siga estos pasos. No puede renovar un certificado caducado.
 
 1. Inicie sesión en la implementación [!DNL Experience Manager] como administrador. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
 
-1. Busque y haga clic en el usuario **[!UICONTROL dam-update-service]**. Haga clic en la pestaña **[!UICONTROL Almacén de claves.]**
+1. Busque y haga clic en el usuario **[!UICONTROL dam-update-service]**. Haga clic en la pestaña **[!UICONTROL Almacén de claves]**.
 1. Elimine el almacén de claves **[!UICONTROL similaritysearch]** y el certificado caducado. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-   ![Eliminar la entrada similaritysearch existente en el almacén de claves para añadir un nuevo certificado de seguridad](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Eliminar la entrada de búsqueda por similitudes existente en el almacén de claves para agregar un nuevo certificado de seguridad](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Imagen: Elimine la entrada `similaritysearch` en el almacén de claves para añadir un nuevo certificado de seguridad.*
+   *Figura: Elimine la  `similaritysearch` entrada existente en el almacén de claves para agregar un certificado de seguridad.*
 
 1. En la [!DNL Experience Manager] interfaz de usuario, acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Abra la configuración de etiquetas inteligentes disponible. Para descargar un certificado público, haga clic en **[!UICONTROL Descargar certificado público]**.
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya al servicio existente en el proyecto. Cargue el nuevo certificado y configúrelo. Para obtener más información sobre la configuración, consulte las instrucciones de [Creación de la integración de Adobe Developer Console.](#create-aio-integration)
 
-## Habilitar el etiquetado automático cuando se carguen recursos (opcional) {#enable-smart-tagging-for-uploaded-assets}
+## Habilitar el etiquetado automático cuando se cargan recursos (opcional) {#enable-smart-tagging-for-uploaded-assets}
 
 1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el modelo de flujo de trabajo de **[!UICONTROL recursos de actualización de DAM]**.
@@ -126,7 +126,7 @@ Cuando caduca el certificado, ya no es de confianza. Para añadir un nuevo certi
 
 1. En la pestaña **[!UICONTROL Argumentos]**, seleccione **[!UICONTROL Omitir errores]** si desea que el flujo de trabajo ignore errores al predecir etiquetas. Para etiquetar recursos al cargarlos, independientemente de si el etiquetado inteligente está activado en las carpetas, seleccione **[!UICONTROL Omitir indicador de etiqueta inteligente]**.
 
-1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el paso del proceso y, a continuación, guarde el flujo de trabajo. Haga clic en **[!UICONTROL Sincronizar]**.
+1. Haga clic en **[!UICONTROL Aceptar]**. Cierra el paso del proceso. Guarde el flujo de trabajo. Haga clic en **[!UICONTROL Sincronizar]**.
 
 >[!MORELIKETHIS]
 >
