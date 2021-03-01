@@ -2,10 +2,10 @@
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Si hace clic en el componente, se resalta en el editor de páginas. Las acciones
 
    ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Una página que forma parte de una Live Copy, donde los componentes se heredan de otra página, cuenta con una selección reducida de opciones, incluidas las opciones de herencia. <!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* Página que forma parte de una [Live Copy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página.
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ Seleccione el tipo de referencia apropiado para obtener más información. En de
 * La opción **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como un acceso directo a la opción **Editar** de una de esas páginas, al seleccionar un vínculo específico
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
 * [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md), que proporciona acceso a lanzamientos relacionados.
-* Live Copies muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado. <!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* Modelo proporciona detalles y diversas acciones. <!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* Copias de idiomas proporciona detalles y diversas acciones. <!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)Live Copies muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
+* [Modelo](/help/sites-cloud/administering/msm/best-practices.md), proporciona detalles y diversas acciones
+* [Copias de idiomas](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), proporciona detalles y diversas acciones
 
 ## Eventos: línea de tiempo {#events-timeline}
 
@@ -248,7 +248,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 ![Opción Información de página](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [Abrir propiedades](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* Desplegar página <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [Desplegar página](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [Iniciar flujo de trabajo](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Bloquear página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Publicar página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
 >* Existe un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
+
 >
 
 
