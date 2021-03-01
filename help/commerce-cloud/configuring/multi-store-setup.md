@@ -1,6 +1,6 @@
 ---
 title: Configuración de varias tiendas
-description: Obtenga información sobre cómo asignar varias vistas de almacén de Magento a AEM. Esto permite que los proyectos admitan casos de uso multilingüe y de varios inquilinos.
+description: Aprenda a asignar varias vistas de tiendas de Magento a AEM. Esto permite que los proyectos admitan casos de uso multilingües y de inquilinos múltiples.
 sub-product: Comercio
 version: cloud-service
 doc-type: technical-video
@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 92%
+source-wordcount: '350'
+ht-degree: 91%
 
 ---
 
@@ -40,7 +40,7 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * En AEM vaya a Herramientas -> General -> [Navegador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * En AEM, vaya a Herramientas -> General -> [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado.
    * Cree una nueva configuración siguiendo los pasos descritos en el punto 2 anterior.
 
@@ -59,4 +59,4 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
 * [Sitios web, tiendas y vistas de Magento](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [Componentes principales del CIF de AEM: configuración de varias tiendas y sitios](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Uso del administrador de varios sitios](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [Reutilización del contenido: administrador de varios sitios y Live Copy](https://helpx.adobe.com/es-ES/experience-manager/6-5/sites/administering/using/msm.html)
+* [Reutilización del contenido: administrador de varios sitios y Live Copy](/help/sites-cloud/administering/msm/overview.md)
