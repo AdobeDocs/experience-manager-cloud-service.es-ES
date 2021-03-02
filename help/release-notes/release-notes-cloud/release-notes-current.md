@@ -2,10 +2,10 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c631e23f714b58c3b906e9ab521f9e88b638d044
+source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 4%
 
 ---
 
@@ -28,27 +28,9 @@ La siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service  {#sites}
 
-### Administración de contenido sin encabezado {#headless}
-
-* **[API de GraphQL para la entrega de fragmentos de contenido](/help/assets/content-fragments/graphql-api-content-fragments.md)**: Capacidad para consultar fragmentos de contenido mediante la sintaxis de GraphQL y esquemas basados en modelos de fragmento de contenido para obtener resultados en formato JSON.
-
-* **[Compatibilidad de autenticación para solicitudes](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** de API de GraphQL: Posibilidad de autenticar solicitudes de API de GraphQL con tokens de acceso para API del lado del servidor.
-
 * **[El componente](/help/implementing/developing/hybrid/remote-page.md)** RemotePage: Se ha agregado compatibilidad con la visualización y edición de SPA externas dentro de AEM mediante .
 
 * **[Edición de un SPA externo en AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: Se ha añadido la capacidad de cargar una aplicación independiente de una sola página en una instancia de AEM, añadir secciones de contenido editables y habilitar la creación.
-
-* Se ha mejorado la salida JSON de la API de GraphQL, incluida la capacidad de generar texto enriquecido en formato JSON y configuraciones regionales.
-
-* Compatibilidad para anidar modelos de fragmento de contenido para permitir la creación de estructuras de fragmento de contenido anidadas, a través de tipos de datos de referencia de fragmento de contenido o referencias de fragmento de contenido en línea en campos de texto multilínea.
-
-* Reglas de validación adicionales disponibles en los tipos de datos del modelo de fragmento de contenido, incluidos &quot;únicos&quot;, &quot;obligatorios&quot; y &quot;traducibles&quot;.
-
-* Posibilidad de etiquetar modelos de fragmento de contenido y permitir la creación de fragmentos de contenido en una carpeta con directivas por etiquetas o rutas.
-
-* Mejoras de uso en el editor de fragmentos de contenido, incluida la acción de publicación y la visualización del modelo en el que se basa un fragmento.
-
-* Capacidad para previsualizar la salida JSON directamente en el editor de fragmentos de contenido.
 
 <!--
 ### Progressive Web Apps (PWAs) {#pwa}
@@ -56,7 +38,7 @@ La siguiente versión (2021.3.0) será el 25 de marzo de 2021.
 * [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
 -->
 
-## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## Novedades de [!DNL Assets] {#what-is-new-assets}
 
@@ -76,6 +58,18 @@ Customers using the Connected Assets feature can now easily view and track asset
 * Cuando se imprime un recurso con texto de anotación largo, el texto de la anotación se recorta aunque haya espacio disponible. (CQ-4314101)
 * Cuando se seleccionan varios recursos para actualizar las propiedades, a veces se produce un error o se actualizan las propiedades de un recurso no seleccionado. (CQ-4316532)
 * Al intentar abrir [!UICONTROL Carril de búsqueda de administración de Assets], la página permanece en blanco y al hacer clic en [!UICONTROL Editar] > [!UICONTROL Configuración] se genera un error. (CQ-4315079)
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### Novedades {#what-is-new-commerce}
+
+* Administración de experiencia del producto: Enriquezca las páginas del catálogo de productos individualmente con fragmentos de experiencias.
+
+* Se han ampliado las propiedades de la consola de producto para mostrar los recursos vinculados y los fragmentos de experiencia, incluida la acción para navegar rápidamente al contenido asociado.
+
+* Sitio de referencia de Venia del CIF publicado - 2021.02.24 que incluye la versión más reciente de los componentes principales del CIF v1.8.0. Consulte [Sitio de referencia de Venia del CIF](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obtener más información.
+
+* Componentes principales de CIF v1.8.0. Consulte [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obtener más información.
 
 ## Cloud Manager {#cloud-manager}
 
