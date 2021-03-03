@@ -2,10 +2,10 @@
 title: Edición de lanzamientos
 description: 'Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas. '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 83%
+source-wordcount: '555'
+ht-degree: 78%
 
 ---
 
@@ -22,6 +22,13 @@ Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede 
 Al editar la página, verá una indicación en la barra de herramientas superior, junto con las opciones **Dejar** y **Navegar**:
 
 ![Abandonar y navegar por el inicio desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>No se le permite mover una página dentro de un lanzamiento. Si se intenta esta acción, se activará un mensaje de advertencia:
+>
+>* Advertencia: Esta página es el origen de un lanzamiento. No se permite mover la página.
+
 
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
