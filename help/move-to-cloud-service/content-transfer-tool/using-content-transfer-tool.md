@@ -2,7 +2,7 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 58%
@@ -178,7 +178,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    >[!IMPORTANT]
    >Cuando la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. Una vez finalizada la ingesta, el estado en el campo **PUBLISH INGESTION** se actualiza a **FINISHED**.
