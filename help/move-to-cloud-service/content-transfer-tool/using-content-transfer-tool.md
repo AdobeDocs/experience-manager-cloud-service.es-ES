@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
+source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 63%
+source-wordcount: '1969'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,8 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3+ y JAVA 8. Si dispone de una versión anterior de AEM, deberá actualizar el repositorio de contenido a AEM 6.5 para usar la herramienta de transferencia de contenido.
 
 * Java debe configurarse en el entorno de AEM para que el usuario que inicia AEM pueda ejecutar el comando `java`.
+
+* Se recomienda desinstalar las versiones anteriores de la herramienta de transferencia de contenido al instalar la versión 1.3.0, ya que se ha producido un cambio importante en la arquitectura de la herramienta. Con 1.3.0, también debe crear nuevos conjuntos de migración y volver a ejecutar la extracción y la ingesta en los nuevos conjuntos de migración.
 
 * La herramienta de transferencia de contenido se puede utilizar con los siguientes tipos de almacén de datos: Almacén de datos de archivos, almacén de datos S3, almacén de datos compartido S3 y almacén de datos del blob de Azure.
 
@@ -101,7 +103,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc`
+         >* `/etc` (se permite seleccionar algunas  `/etc` rutas en CTT)
 
 
 1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **del conjunto de migraciones de contenido**.
