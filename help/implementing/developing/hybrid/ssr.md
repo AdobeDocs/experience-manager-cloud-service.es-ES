@@ -2,7 +2,7 @@
 title: SPA y procesamiento en el servidor
 description: El uso del procesamiento del lado del servidor (SSR) en la SPA puede acelerar la carga inicial de la página y, a continuación, pasar el procesamiento adicional al cliente.
 translation-type: tm+mt
-source-git-commit: 10012f6dc75da0c199dd5452ceef16ec7f29389b
+source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Sin embargo, esto puede provocar tiempos de carga iniciales más largos, especia
 
 ## Cuándo se utiliza SSR {#when-to-use-ssr}
 
-La SSR no es necesaria en todos los proyectos. Aunque AEM es totalmente compatible con JS SSR para SPA, Adobe no recomienda implementarlo sistemáticamente para cada proyecto.
+La SSR no es necesaria en todos los proyectos. Aunque AEM admite totalmente JS SSR para SPA, Adobe no recomienda implementarlo sistemáticamente para cada proyecto.
 
 Al decidir implementar SSR, primero debe estimar qué complejidad adicional, esfuerzo y costo de agregar SSR representa de manera realista para el proyecto, incluido el mantenimiento a largo plazo. Una arquitectura SSR solo debe elegirse cuando el valor añadido exceda claramente los costes estimados.
 
