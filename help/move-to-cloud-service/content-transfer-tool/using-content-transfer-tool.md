@@ -2,7 +2,7 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 57%
@@ -112,7 +112,7 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
          >* `/etc` (se permite seleccionar algunas  `/etc` rutas en CTT)
 
 
-1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **del conjunto de migraciones de contenido**.
+1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **Crear conjunto de migración**.
 
 1. La vista del conjunto de migraciones se realizará en la página de *Información general*.
 
