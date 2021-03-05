@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 58%
+source-wordcount: '2049'
+ht-degree: 59%
 
 ---
 
@@ -76,13 +76,9 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
    Además, haga clic en **Crear configuración de asignación de usuarios** para acceder a la [Herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
 
-1. Rellene los campos de la pantalla **Content Migration Set** como se describe a continuación.
+1. Rellene los campos de la pantalla **Crear conjunto de migración** como se describe a continuación.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >Seleccione **Incluir asignación de usuarios y grupos** de IMS, tal como se indica en la figura anterior. Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
-
 
    1. **Nombre**: introduzca el nombre del conjunto de migración.
       >[!NOTE]
@@ -102,6 +98,8 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
       1. **Incluir versión**: seleccione la opción que desee.
+
+      1. **Incluir asignación de usuarios y grupos de IMS**: Seleccione la opción . Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
 
       1. **Rutas que se incluyen**: utilice el explorador para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas mediante escritura o selección.
 
@@ -178,7 +176,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
    >[!IMPORTANT]
    >Cuando la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. Una vez finalizada la ingesta, el estado en el campo **PUBLISH INGESTION** se actualiza a **FINISHED**.
