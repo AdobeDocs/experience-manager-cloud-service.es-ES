@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
+source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2065'
 ht-degree: 58%
 
 ---
@@ -202,7 +202,7 @@ Una vez completado el proceso de ingesta, se puede usar el contenido delta media
    >
    >Debe desactivar la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** para evitar que se elimine el contenido existente de la actividad de ingesta anterior.
 
-   Además, consulte [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para obtener información sobre cómo agregar al ticket de atención al cliente.
+   Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura anterior. Consulte también [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para obtener más información.
 
 ### Visualización de registros del conjunto de migraciones {#viewing-logs-migration-set}
 
