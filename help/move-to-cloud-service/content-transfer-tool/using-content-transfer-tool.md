@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 58%
 
 ---
@@ -172,13 +172,14 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
 
-1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para empezar la extracción. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para iniciar la fase de ingesta. Para fines de demostración, se desactiva la opción **Ingesta de contenido de Autor** . Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
+1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para empezar la extracción. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para iniciar la fase de ingesta. Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
 
    >[!IMPORTANT]
    >Cuando la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura anterior. Consulte también [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para obtener más información.
 
 1. Una vez finalizada la ingesta, el estado en el campo **PUBLISH INGESTION** se actualiza a **FINISHED**.
 
@@ -199,10 +200,8 @@ Una vez completado el proceso de ingesta, se puede usar el contenido delta media
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >Debe desactivar la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** para evitar que se elimine el contenido existente de la actividad de ingesta anterior.
 
-   Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura anterior. Consulte también [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para obtener más información.
 
 ### Visualización de registros del conjunto de migraciones {#viewing-logs-migration-set}
 
