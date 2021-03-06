@@ -1,11 +1,11 @@
 ---
-title: Compartir recursos, carpetas y colecciones como vínculo
+title: Compartir recursos, carpetas y colecciones como un vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de [!DNL Experience Manager Assets] como un hipervínculo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
+source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '739'
 ht-degree: 1%
 
 ---
@@ -13,26 +13,26 @@ ht-degree: 1%
 
 # Compartir y distribuir recursos administrados en [!DNL Experience Manager] {#share-assets-from-aem}
 
-[!DNL Adobe Experience Manager Assets] permite compartir recursos, carpetas y colecciones con miembros de la organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de [!DNL Experience Manager Assets] como [!DNL Cloud Service]:
+[!DNL Adobe Experience Manager Assets] permite compartir recursos, carpetas y colecciones con miembros de su organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de [!DNL Experience Manager Assets] como [!DNL Cloud Service]:
 
 * Compartir como vínculo.
-* Descargue recursos y compártalos por separado.
-* Compartir mediante AEM aplicación de escritorio.
+* Descargue recursos y comparta por separado.
+* Compartir mediante la aplicación de escritorio de AEM.
 * Compartir mediante Adobe Asset Link.
 * (Próxima funcionalidad) Comparta con Brand Portal.
 
 ## Compartir recursos como un vínculo {#sharelink}
 
-Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden realizar la vista de los vínculos compartidos con ellos. El uso compartido de recursos a través de un vínculo es una manera conveniente de poner los recursos a disposición de terceros externos sin tener que iniciar sesión en [!DNL Assets].
+Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets].
 
 >[!NOTE]
 >
 >* Necesita el permiso Editar ACL en la carpeta o el recurso que desea compartir como vínculo.
->* Antes de compartir un vínculo con los usuarios, asegúrese de que [el correo electrónico saliente esté habilitado](/help/implementing/developing/introduction/development-guidelines.md#sending-email). De lo contrario, se producirá un error.
+>* Antes de compartir un vínculo con los usuarios, asegúrese de que el [correo electrónico saliente esté habilitado](/help/implementing/developing/introduction/development-guidelines.md#sending-email). De lo contrario, se produce un error.
 
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, haga clic en el **[!UICONTROL Vínculo compartido]**. Se crea automáticamente un vínculo de recurso en el campo **[!UICONTROL Vínculo compartido]**. Copie este vínculo y compártalo con los usuarios. El tiempo de caducidad predeterminado para el vínculo es un día.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**. Se crea automáticamente un vínculo de recurso en el campo **[!UICONTROL Compartir vínculo]**. Copie este vínculo y compártalo con los usuarios. El tiempo de caducidad predeterminado del vínculo es de un día.
 
    >[!NOTE]
    >
@@ -109,13 +109,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!DNL Experience Manager]. Para obtener más información, consulte [cómo buscar recursos](/help/assets/search-assets.md), [cómo descargar recursos](/help/assets/download-assets-from-aem.md) y [cómo descargar colecciones](manage-collections.md#download-a-collection)
 
-## Comparta recursos con profesionales creativos {#share-with-creatives}
+## Compartir recursos con profesionales creativos {#share-with-creatives}
 
-Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente los recursos aprobados con sus profesionales creativos mediante,
+Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente los recursos aprobados con sus profesionales creativos mediante
 
-* **Aplicación** de escritorio Experience Manager: La aplicación funciona en Windows y Mac. Consulte [descripción general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [exploración, búsqueda y previsualización de recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y compartirlos con sus homólogos que son usuarios AEM, por ejemplo, cargando imágenes nuevas. Consulte [carga de recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Aplicación de escritorio de Experience Manager**: La aplicación funciona en Windows y Mac. Consulte [información general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios de AEM, por ejemplo, cargando nuevas imágenes. Consulte [carga de recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Vínculo** de recurso de Adobe: Los profesionales creativos pueden buscar y utilizar recursos directamente desde dentro  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator]y  [!DNL Adobe Photoshop].
+* **Adobe Asset Link**: Los profesionales creativos pueden buscar y utilizar recursos directamente desde  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator] y  [!DNL Adobe Photoshop].
 
 ## Configuración del uso compartido de recursos {#configure-sharing}
 
@@ -125,11 +125,11 @@ Las diferentes opciones para compartir los recursos requieren una configuración
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Para generar la URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden realizar la vista de los vínculos compartidos con ellos. El uso compartido de recursos a través de un vínculo es una manera conveniente de poner los recursos a disposición de terceros externos sin tener que iniciar sesión en [!DNL Assets].
+Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets].
 
 >[!NOTE]
 >
->Si desea compartir vínculos de la instancia de Autor con entidades externas, asegúrese de exponer solo las siguientes direcciones URL para solicitudes `GET`. Bloquee otras direcciones URL para asegurarse de que la instancia de Autor es segura.
+>Si desea compartir vínculos de la instancia de Autor con entidades externas, asegúrese de exponer solo las siguientes direcciones URL para solicitudes `GET`. Bloquee otras direcciones URL para garantizar que la instancia de Autor sea segura.
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -167,22 +167,24 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Habilitar acciones de escritorio para usar con la aplicación de escritorio {#desktop-actions}
+### Habilite las acciones de escritorio para usarlas con la aplicación de escritorio {#desktop-actions}
 
-Desde la interfaz de usuario [!DNL Assets] en un navegador, puede explorar las ubicaciones de los recursos o el cierre de compra y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y para habilitarlas, consulte [habilitar acciones de escritorio en AEM interfaz Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+Desde la interfaz de usuario [!DNL Assets] en un explorador, puede explorar las ubicaciones de los recursos o retirarse y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y para habilitarlas, consulte [habilitar acciones de escritorio en [!DNL Assets] interfaz web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Activar acciones de escritorio para usar como método abreviado al trabajar con una aplicación de escritorio](assets/enable_desktop_actions.png)
+![Habilitar las acciones de escritorio para usarlas como método abreviado al trabajar con una aplicación de escritorio](assets/enable_desktop_actions.png)
 
 ### Configuraciones para utilizar [!DNL Adobe Asset Link] {#configure-asset-link}
 
-Adobe Asset Link simplifica la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Se conecta [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] aplicaciones de escritorio [!DNL Adobe InDesign], [!DNL Adobe Photoshop] y [!DNL Adobe Illustrator]. El panel [!DNL Adobe Asset Link] permite a los creativos acceder y modificar el contenido almacenado en [!DNL Assets] sin tener que abandonar las aplicaciones creativas con las que están más familiarizados.
+Adobe Asset Link optimiza la colaboración entre creativos y especialistas en marketing en el proceso de creación de contenido. Se conecta [!DNL Adobe Experience Manager Assets] con [!DNL Creative Cloud] aplicaciones de escritorio [!DNL Adobe InDesign], [!DNL Adobe Photoshop] y [!DNL Adobe Illustrator]. El panel [!DNL Adobe Asset Link] permite a los creativos acceder y modificar el contenido almacenado en [!DNL Assets] sin salir de las aplicaciones creativas con las que están más familiarizados.
 
-Consulte [cómo configurar [!DNL Assets] para usarla con [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
+Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
-## Prácticas recomendadas y solución de problemas {#bestpractices}
+## Prácticas recomendadas y resolución de problemas {#bestpractices}
 
-* Es posible que las carpetas de recursos o las colecciones que contengan un espacio en blanco en su nombre no se compartan.
-* Si los usuarios no pueden descargar los recursos compartidos, consulte con el administrador AEM cuáles son los [límites de descarga](#maxdatasize).
+* Es posible que las carpetas de recursos o las colecciones que contienen un espacio en blanco en su nombre no se compartan.
+* Si los usuarios no pueden descargar los recursos compartidos, consulte con su administrador de AEM cuáles son los [límites de descarga](#maxdatasize).
+* Para que un usuario pueda previsualizar un vídeo compartido mediante vínculos, el vídeo debe tener una representación de vídeo estático disponible en la ubicación `/jcr:content/renditions` del nodo del vídeo en el repositorio. La vista previa no depende de la disponibilidad de una representación [!DNL Dynamic Media].
+* Al descargar un recurso de vídeo mediante el uso compartido de vínculos, las [!DNL Dynamic Media] representaciones no se incluyen en el archivo descargado.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
