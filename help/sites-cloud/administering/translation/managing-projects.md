@@ -2,9 +2,9 @@
 title: Administración de proyectos de traducción
 description: Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '3799'
+source-wordcount: '3825'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,10 @@ Cree proyectos de traducción para poder ejecutar y administrar el flujo de trab
 Puede especificar que las páginas secundarias de la página seleccionada también estén seleccionadas. En este caso, también se agregan copias de las páginas secundarias a cada proyecto para que se traduzcan. Cuando alguna página secundaria está asociada con diferentes configuraciones del marco de integración de traducción, AEM crea proyectos adicionales.
 
 También puede [crear manualmente proyectos de traducción](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Para crear un proyecto, la cuenta debe ser miembro del grupo `project-administrators` .
 
 ### Traducciones iniciales y actualización de traducciones {#initial-and-updating}
 
@@ -208,6 +212,10 @@ Utilice los botones comandos y elipsis de la parte superior e inferior de los mo
 ### Creación de un proyecto de traducción mediante la consola Proyectos {#creating-a-translation-project-using-the-projects-console}
 
 Puede crear manualmente un proyecto de traducción si prefiere usar la consola de proyectos en lugar de la consola Sitios .
+
+>[!NOTE]
+>
+>Para crear un proyecto, la cuenta debe ser miembro del grupo `project-administrators` .
 
 Cuando cree manualmente un proyecto de traducción, debe proporcionar valores para las siguientes propiedades relacionadas con la traducción, además de las [propiedades básicas](/help/sites-cloud/authoring/projects/managing.md#creating-a-project):
 
