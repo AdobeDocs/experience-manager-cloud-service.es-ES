@@ -2,9 +2,9 @@
 title: Proyectos
 description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
 translation-type: tm+mt
-source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1273'
 ht-degree: 78%
 
 ---
@@ -29,7 +29,7 @@ Consulte los siguientes temas adicionales:
 
 * [Administración de proyectos](/help/sites-cloud/authoring/projects/managing.md)
 * [Uso de tareas](/help/sites-cloud/authoring/projects/tasks.md)
-* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md)
+* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
 
 ## Consola Proyectos {#projects-console}
 
@@ -175,7 +175,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
 |---|---|---|---|
 | Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | `workflow-users` grupo |
 | Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de tomas, sesión fotográfica y revisar y aprobar recursos; permiso de escritura en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
-| Propietario | Un usuario con esta función puede iniciar un proyecto. Un propietario puede crear un proyecto, iniciar el trabajo en un proyecto y también mover los recursos aprobados a la carpeta Producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo (para poder crear un proyecto) grupo de administradores de proyectos (para poder mover recursos) |
+| Propietario | Un usuario con esta función puede iniciar un proyecto. Un propietario puede crear un proyecto, iniciar el trabajo en un proyecto y también mover los recursos aprobados a la carpeta Producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo (para poder crear un proyecto) grupo de administradores de proyectos (para poder crear un proyecto y mover recursos) |
 
 >[!NOTE]
 >
