@@ -3,9 +3,9 @@ title: Informes sobre uso y uso compartido
 description: Informes sobre los recursos en [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6586dfeeef1732ae115eea433a665191773ed283
+source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 6%
 
 ---
@@ -92,13 +92,13 @@ Cuando se genera un informe, se le notifica mediante <!-- through an email (opti
 
 1. Haga clic en **[!UICONTROL Next]** en la barra de herramientas.
 
-1. En la página **[!UICONTROL Configurar columnas]**, se seleccionan algunas columnas para que aparezcan en el informe de forma predeterminada. Puede seleccionar más columnas. Anule la selección de una columna seleccionada para excluirla en el informe.
+1. En la página **[!UICONTROL Configurar columnas]**, se seleccionan algunas columnas para que aparezcan en el informe de forma predeterminada. Puede seleccionar más columnas. Cancelar la selección de una columna para excluirla en el informe.
 
-   ![Seleccionar o deseleccionar columnas de informe](assets/configure_columns.png)
+   ![Seleccionar o cancelar la selección de columnas de informes](assets/configure_columns.png)
 
    Para mostrar un nombre de columna personalizado o una ruta de propiedad, configure las propiedades del binario de recursos bajo el nodo `jcr:content` en CRX. También puede agregarlo mediante el selector de rutas de propiedad.
 
-   ![Seleccionar o deseleccionar columnas de informe](assets/custom_columns.png)
+   ![Seleccionar o cancelar la selección de columnas de informes](assets/custom_columns.png)
 
 1. Haga clic en **[!UICONTROL Crear]** en la barra de herramientas. Un mensaje notifica que se ha iniciado la generación del informe.
 1. En la página [!UICONTROL Informes de recursos], el estado de generación de informes se basa en el estado actual del trabajo del informe, por ejemplo [!UICONTROL Éxito], [!UICONTROL Fallido], [!UICONTROL En cola] o [!UICONTROL Programado]. El mismo estado aparece en la bandeja de entrada de notificaciones. Para ver la página del informe, haga clic en el vínculo del informe. Como alternativa, seleccione el informe y haga clic en **[!UICONTROL Ver]** en la barra de herramientas.
