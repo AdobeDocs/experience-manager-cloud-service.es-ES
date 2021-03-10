@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: Funciones y responsabilidades
+description: Funciones y responsabilidades
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 18%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service: Funciones y responsabilidades
+
+# Adobe Experience Manager as a Cloud Service: Funciones y responsabilidades {#roles-responsibilities}
 
 <br></br>
 Adobe proporciona un conjunto de servicios relacionados con el aprovisionamiento, el desarrollo, el ensayo y la producción de Experience Manager as a Cloud Service. Para que el desarrollo y la implementación de la solución se lleven a cabo de la manera más eficiente posible, es importante que el cliente y el cliente comprendan y cumplan sus funciones, tal como se describe a continuación.
@@ -49,5 +52,8 @@ Adobe proporciona un conjunto de servicios relacionados con el aprovisionamiento
 | Producción | Actualizaciones en la aplicación de AEM as a Cloud Service |  |  | Propietario |  |
 | Producción | Backup de producción y recuperación ante desastres |  |  | Propietario |  |
 
-<br></br>
-Lo anterior supone que se incluye el soporte Premier. La tabla puede estar sujeta a modificación por acuerdo entre el cliente y el cliente. Le recomendamos que trabaje con sus equipos de ventas y personalización de Adobe si necesita aclaraciones sobre cualquiera de los aspectos anteriores. Los clientes que no deseen gestionar la personalización por sí mismos deben obtener los servicios del equipo de Servicios profesionales de Adobe o de un socio de Experience Manager. Para mantener niveles de alta calidad, Adobe requiere que los socios que participan en proyectos de desarrollo de Experience Manager as a Cloud Service cuenten con al menos una persona que haya obtenido la certificación de desarrollador avanzado para el software de Experience Manager.
+>[!NOTE]
+>
+> Lo anterior supone que se incluye el soporte Premier. La tabla puede estar sujeta a modificación por acuerdo entre el cliente y el cliente. Le recomendamos que trabaje con sus equipos de ventas y personalización de Adobe si necesita aclaraciones sobre cualquiera de los aspectos anteriores.
+> Los clientes que no deseen gestionar la personalización por sí mismos deben obtener los servicios del equipo de Servicios profesionales de Adobe o de un socio de Experience Manager.
+>Para mantener niveles de alta calidad, Adobe requiere que los socios que participan en proyectos de desarrollo de Experience Manager as a Cloud Service cuenten con al menos una persona que haya obtenido la certificación de desarrollador avanzado para el software de Experience Manager.
