@@ -2,10 +2,10 @@
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 translation-type: tm+mt
-source-git-commit: 238ce5ea4327947694851bd0fae5be84614501c9
+source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 2%
+source-wordcount: '404'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 1
 
 ### Novedades {#what-is-new}
 
-* Los clientes con entornos con configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL y nombres de dominio personalizados verán el siguiente mensaje y podrán autoabastecerse mediante la interfaz de usuario.
+* Los clientes con entornos con configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL y nombres de dominio personalizados verán un mensaje sobre sus configuraciones anteriores y podrán autoabastecerse mediante la interfaz de usuario.
 
 * Los usuarios con los permisos necesarios ahora pueden editar el programa, lo que les permite hacer lo siguiente de forma autoservicio.
 
