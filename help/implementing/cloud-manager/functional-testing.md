@@ -1,45 +1,74 @@
 ---
-title: 'Prueba funcional: Cloud Services'
-description: 'Prueba funcional: Cloud Services'
+title: 'Pruebas funcionales: Cloud Services'
+description: 'Pruebas funcionales: Cloud Services'
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 4%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
 
-# Prueba funcional {#functional-testing}
+# Pruebas funcionales {#functional-testing}
 
 Las pruebas funcionales se clasifican en dos tipos:
 
 * Prueba funcional del producto
-* Prueba funcional personalizada
+* Pruebas funcionales personalizadas
+* Pruebas de IU personalizadas
 
 ## Prueba funcional del producto {#product-functional-testing}
 
-Las pruebas funcionales del producto son un conjunto de pruebas de integración HTTP (TI) estables en torno a la funcionalidad básica en AEM (por ejemplo, creación y replicación) que impiden que se implementen los cambios de cliente en el código de la aplicación si rompe esta funcionalidad básica.
+Las pruebas funcionales del producto son un conjunto de pruebas de integración HTTP (TI) estables en torno a la funcionalidad principal de AEM (por ejemplo, creación y replicación) que impiden que los cambios del cliente en su código de aplicación se implementen si rompe esta funcionalidad principal.
 
-Las pruebas funcionales del producto se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager y no se pueden omitir.
+Las pruebas funcionales de producto se ejecutan automáticamente cada vez que un cliente implementa un nuevo código en Cloud Manager y no se puede omitir.
 
-Consulte [Pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para obtener pruebas de muestra.
+Consulte [Pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para ver las pruebas de ejemplo.
 
 ## Prueba funcional personalizada {#custom-functional-testing}
 
-El paso de prueba funcional personalizada de la canalización siempre está presente y no se puede omitir.
+El paso Prueba funcional personalizada de la canalización siempre está presente y no se puede omitir.
 
-Sin embargo, si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.
+Sin embargo, si la compilación no produce ningún JAR de prueba, la prueba pasa de forma predeterminada.
 
 >[!NOTE]
->El botón **Descargar registro** permite acceder a un archivo ZIP que contiene el formulario detallado de la ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución de AEM real; se puede acceder a ellos mediante la funcionalidad de los registros de descargas o de colas. Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más detalles.
+>El botón **Descargar registro** permite acceder a un archivo ZIP que contiene el formulario detallado de la ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución de AEM real; se puede acceder a ellos mediante la funcionalidad regular Descargar o Registros de cola . Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más información.
 
+## Pruebas de IU personalizadas {#custom-ui-testing}
+
+AEM proporciona a sus clientes un conjunto integrado de puertas de calidad de Cloud Manager para garantizar actualizaciones sin problemas de sus aplicaciones. En particular, las puertas de prueba de TI ya permiten a los clientes crear y automatizar sus propias pruebas que usan API de AEM.
+
+La función de prueba de IU personalizada es una función opcional que permite a nuestros clientes crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium). Puede obtener más información sobre cómo crear IU y escribir pruebas de IU desde aquí. Además, un proyecto de pruebas de interfaz de usuario se puede generar fácilmente mediante el tipo de archivo del proyecto AEM.
+
+Los clientes pueden crear (a través de GIT) pruebas personalizadas y conjuntos de pruebas para la interfaz de usuario. La prueba de la interfaz de usuario se ejecutará como parte de una puerta de calidad específica para cada canalización de Cloud Manager con su información específica de comentarios y pasos. Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permitirá detectar errores y crear informes de ellos en el contexto del cliente.
+
+Las pruebas de la interfaz de usuario del cliente se ejecutan automáticamente en la canalización de producción, en el paso &quot;Pruebas de la interfaz de usuario personalizada&quot;.
+
+A diferencia de las pruebas funcionales personalizadas que son pruebas HTTP escritas en Java, las pruebas de interfaz de usuario pueden ser una imagen de docker con pruebas escritas en cualquier idioma, siempre y cuando sigan las convenciones definidas en [Building UI Tests](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+
+>[!NOTE]
+>Se recomienda seguir la estructura y el idioma *(js y wdio)* que se proporciona convenientemente en el [AEM tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) como punto de partida.
+
+### Inclusión del cliente {#customer-opt-in}
+
+Para crear y ejecutar sus pruebas de interfaz de usuario, los clientes deben &quot;incluirse&quot; añadiendo un archivo a su repositorio de código, en el submódulo maven para pruebas de interfaz de usuario (junto al archivo pom.xml del submódulo de pruebas de interfaz de usuario) y asegurarse de que este archivo se encuentra en la raíz del archivo `tar.gz` creado.
+
+*Nombre de archivo*: `testing.properties`
+
+*Contenido*:  `one line: ui-tests.version=1`
+
+Si esto no está en el archivo `tar.gz` creado, las pruebas de interfaz de usuario se crean y las ejecuciones se omiten
+
+>[!NOTE]
+>Las canalizaciones de producción creadas antes del 10 de febrero de 2021 deberán actualizarse para utilizar las pruebas de IU tal como se describe en esta sección. Esto significa que el usuario debe editar la canalización de producción y hacer clic en **Guardar** en la interfaz de usuario aunque no se hayan realizado cambios.
+>Consulte [Configuración de la canalización CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para obtener más información sobre la configuración de la canalización.
 
 ### Escritura de pruebas funcionales {#writing-functional-tests}
 
-Las pruebas funcionales escritas por el cliente deben empaquetarse como un archivo JAR independiente producido por la misma compilación Maven que los artefactos que se implementarán en AEM. Generalmente sería un módulo Maven independiente. El archivo JAR resultante debe contener todas las dependencias requeridas y generalmente se crearía usando el complemento maven-assembly-plugin usando el descriptor jar-con-dependencias.
+Las pruebas funcionales escritas por el cliente deben empaquetarse como un archivo JAR independiente producido por la misma compilación de Maven que los artefactos que se implementarán en AEM. Generalmente sería un módulo Maven separado. El archivo JAR resultante debe contener todas las dependencias requeridas y generalmente se crearía usando el complemento maven-assembly-plugin usando el descriptor jar-with-dependencias.
 
-Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType definido en integration-test. En el futuro, se espera que se admitan valores de encabezado adicionales. Una configuración de ejemplo para maven-assembly-plugin es:
+Además, el JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType establecido en integration-test. En el futuro, se espera que se admitan valores de encabezado adicionales. Un ejemplo de configuración para maven-assembly-plugin es:
 
 ```java
 <build>
@@ -72,17 +101,17 @@ Además, JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType defin
     </plugins>
 ```
 
-Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se van a ejecutar deben terminar en TI.
+Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se van a ejecutar deben finalizar en TI.
 
 Por ejemplo, se ejecutaría una clase denominada `com.myco.tests.aem.ExampleIT` pero no una clase denominada `com.myco.tests.aem.ExampleTest`.
 
-Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de pruebas aem-testing-customers. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Vínculo Git](https://github.com/adobe/aem-testing-clients) para obtener más detalles.
+Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de prueba aem-testing-client. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obtener más información.
 
 ### Ejecución de prueba local {#local-test-execution}
 
 Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java convencionales como Eclipse, IntelliJ, NetBeans, etc.
 
-Sin embargo, al ejecutar estas pruebas, será necesario establecer una serie de propiedades del sistema que esperan los clientes de prueba de problemas (y los clientes de prueba de Sling subyacentes).
+Sin embargo, al ejecutar estas pruebas, será necesario establecer una variedad de propiedades del sistema que esperan los clientes de prueba de aem (y los clientes de prueba de Sling subyacentes).
 
 Las propiedades del sistema son las siguientes:
 
