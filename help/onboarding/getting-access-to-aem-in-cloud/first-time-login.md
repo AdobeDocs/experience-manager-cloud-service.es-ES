@@ -2,9 +2,9 @@
 title: Página principal de Cloud Manager
 description: Página principal de Cloud Manager
 translation-type: tm+mt
-source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
+source-git-commit: 2f5b15a4fcd46114f923a387fa71da22d143dfc1
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,10 @@ Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], e
 Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], la página de aterrizaje mostrará la tarjeta de cualquier programa existente que se encuentre en su organización.
 
 >[!NOTE]
->
->Los programas que se encuentran en el Cloud Service se indican mediante el subtítulo **Experience Manager Cloud** (a diferencia de **Experience Manager** para los programas AMS), como se muestra a continuación.
+>Los programas que se encuentran en el Cloud Service se indican mediante el subtítulo **Nube de Experience Manager** (a diferencia de **Experience Manager** para los programas AMS).
+>Por ejemplo, en la figura siguiente, **We.Retail Global** es un programa de AMS y **We.Retail-Prod Program - Prod** es un programa disponible mediante Cloud Service.
 
 ![](assets/first_timelogin1.png)
-
 
 En función de sus circunstancias, verá cualquiera de estas dos opciones:
 
@@ -54,9 +53,6 @@ Si los programas ya existen en su organización, la página de aterrizaje le ped
 
 ![](assets/first_timelogin1.png)
 
->[!NOTE]
->Los programas que se encuentran en el Cloud Service se indican mediante el subtítulo **Nube de Experience Manager** (a diferencia de **Experience Manager** para los programas AMS).
->Por ejemplo, en la figura anterior, **We.Retail Global** es un programa de AMS y **We.Retail-Prod Program - Prod** es un programa disponible mediante Cloud Service.
 
 Para aprender a añadir un programa en Cloud Manager, consulte:
 
