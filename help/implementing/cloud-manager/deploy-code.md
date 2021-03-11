@@ -2,9 +2,9 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1065'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functi
       Consulte [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
 
    * **Pruebas** de IU personalizadas: Este paso es una función opcional que permite a nuestros clientes crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium).
-Consulte Pruebas de IU personalizadas para obtener más información.
+Consulte [Pruebas de IU personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) para obtener más información.
 
 
    * **Auditoría de experiencias**: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre las puntuaciones actual y anterior. Esta perspectiva es valiosa para determinar si hay una regresión que se introducirá con la implementación actual.
