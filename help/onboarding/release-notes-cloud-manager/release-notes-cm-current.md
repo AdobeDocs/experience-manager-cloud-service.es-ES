@@ -1,51 +1,59 @@
 ---
-title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2021.2.0
-description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2021.2.0
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 238ce5ea4327947694851bd0fae5be84614501c9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '400'
 ht-degree: 2%
 
 ---
 
 
-# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2021.2.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
 
-Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2021.2.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.3.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2021.2.0 es el 11 de febrero de 2021.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 11 de marzo de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novedades {#what-is-new}
 
-* Los clientes de Assets ahora podrán elegir cuándo y dónde implementar la instancia de Brand Portal de forma automática mediante la interfaz de usuario de Cloud Manager. Para un programa normal (sin simulación de pruebas) con la solución Assets, Brand Portal ahora se puede aprovisionar en el entorno de producción. El aprovisionamiento solo se puede realizar una vez en el entorno de producción.
+* Los clientes con entornos con configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL y nombres de dominio personalizados verán el siguiente mensaje y podrán autoabastecerse mediante la interfaz de usuario.
 
-* El arquetipo del proyecto AEM utilizado en la creación de proyectos y Simuladores para pruebas se ha actualizado a la versión 25.
+* Los usuarios con los permisos necesarios ahora pueden editar el programa, lo que les permite hacer lo siguiente de forma autoservicio.
 
-* La lista de las API obsoletas identificadas durante el análisis de código se ha refinado para incluir clases y métodos adicionales que ya no se utilizan en las últimas versiones del SDK de Cloud Service.
+* AEM etiqueta &quot;Actualización push&quot; ahora se mostrará para las pantallas Ejecución de canalización y Actividad.
 
-* SonarQube perfil para Cloud Manager actualizado para eliminar Sonar rule squid:S2142. Esto ya no entrará en conflicto con las comprobaciones de interrupción del subproceso.
+* Si un entorno está en hibernación pero también hay una actualización AEM disponible, el estado &quot;Hibernado&quot; tendrá prioridad sobre &quot;Actualizar disponible&quot;.
 
-* La interfaz de usuario del Administrador de nube informará al usuario que no pueda agregar o actualizar temporalmente el nombre de dominio porque el entorno asociado tiene una canalización en ejecución conectada a él o está esperando el paso de aprobación.
+* Los usuarios ahora pueden ver sus funciones de Cloud Manager seleccionando la opción &quot;Ver funciones de Cloud Manager&quot; después de navegar al icono de perfil de usuario (parte superior derecha) del shell unificado.
 
-* Las propiedades configuradas en los archivos `pom.xml` del cliente con el prefijo sonar ahora se eliminarán dinámicamente para evitar errores de compilación y de análisis de calidad.
+* La etiqueta &quot;Solicitud de aprobación&quot; se ha vuelto a etiquetar como &quot;Aprobación de producción&quot; para una buena claridad.
 
-* La interfaz de usuario del Administrador de nube informará al usuario que no pueda seleccionar temporalmente un certificado SSL si está siendo utilizado por un nombre de dominio que se está implementando actualmente.
+* La etiqueta &quot;Versión&quot; se ha vuelto a etiquetar como &quot;Etiqueta Git&quot; en la pantalla de ejecución de la canalización de producción.
 
-* Se han agregado reglas de calidad de código adicionales para cubrir los problemas de compatibilidad con Cloud Service.
+* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: Cancelar inmediatamente y Aprobar inmediatamente.
+
+* Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
+
+* La canalización de producción de Cloud Manager ahora incluirá la capacidad de prueba de la IU personalizada.
 
 ### Corrección de errores {#bug-fixes}
 
-* El certificado SSL que coincide con un nombre de dominio ya no distingue entre mayúsculas y minúsculas.
+* En algunos casos, las versiones de paquetes se omitían durante AEM actualización push.
 
-* La interfaz de usuario del Administrador de nube ahora informará al usuario si las claves privadas del certificado no cumplen el límite de 2048 bits con un mensaje de error adecuado.
+* Algunos problemas de calidad no se descubrieron correctamente cuando los paquetes estaban incrustados en otros paquetes.
 
-* La interfaz de usuario del Administrador de nube informará al usuario que no pueda seleccionar temporalmente un certificado SSL si está siendo utilizado por un nombre de dominio que se está implementando actualmente.
+* En situaciones oscuras, el nombre predeterminado del programa generado al abrir el cuadro de diálogo Agregar programa podría ser un duplicado de un nombre de programa existente.
 
-* En algunos casos, un problema interno puede hacer que la eliminación de entornos se quede atascada.
+* En ocasiones, si el usuario sale de la página de ejecución de la canalización inmediatamente después de iniciar una canalización, aparece un mensaje de error que indica que la acción ha fallado, aunque la ejecución realmente se inicia.
 
-* Algunos errores de canalización se notificaron incorrectamente como errores de canalización.
+* El paso de compilación se reinició innecesariamente cuando las compilaciones de clientes generaron paquetes no válidos.
+
+* En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
+
+* Todas las canalizaciones de producción existentes se habilitarán automáticamente con el paso Auditoría de experiencias .
