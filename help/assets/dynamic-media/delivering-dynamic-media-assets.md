@@ -2,45 +2,45 @@
 title: Envío de recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 13%
+ht-degree: 6%
 
 ---
 
 
 # Envío de recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
-El modo de distribuir los recursos de Dynamic Media (vídeo e imágenes) depende de la implementación del sitio web.
+El modo de distribuir los recursos de Dynamic Media (vídeos e imágenes) depende de cómo se implemente el sitio web.
 
 Con Dynamic Media, tiene varias opciones:
 
-* Si el sitio web se aloja en AEM, lo más recomendable es añadir recursos de Dynamic Media directamente a la página.
-* Si su sitio web no está en AEM, puede elegir entre:
+* Si el sitio web está alojado en AEM, quiere agregar los recursos de Dynamic Media directamente a la página.
+* Si el sitio web no está AEM, puede elegir una de las opciones siguientes:
 
-   * Incrustación de vídeo o imagen en el sitio web.
-   * Vincular direcciones URL a la aplicación web. Utilice la vinculación cuando desee distribuir un reproductor de vídeo como ventana emergente o modal.
-   * Si el sitio responde, puede [entregar imágenes optimizadas.](/help/assets/dynamic-media/responsive-site.md)
+   * Incrustar el vídeo o la imagen en el sitio web.
+   * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee enviar un reproductor de vídeo como ventana emergente o modal.
+   * Si el sitio es interactivo, puede [entregar imágenes optimizadas.](/help/assets/dynamic-media/responsive-site.md)
 
 >[!NOTE]
 >
->Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes. Utiliza inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del navegador. Consulte [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) para obtener más información.
+>Las imágenes inteligentes funcionan con los ajustes preestablecidos de imagen existentes. Utiliza inteligencia en el último milisegundo de envío para reducir aún más el tamaño del archivo de imagen en función de la velocidad de conexión de red o del explorador. Consulte [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) para obtener más información.
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Añadir Dynamic Media Assets a páginas Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [Incrustación del visor de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md)
+* [Adición de recursos de Dynamic Media a páginas web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md)
 * [Activar la protección de los vínculos interactivos de Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
-* [Vinculación de direcciones URL a la Aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [Envío de imágenes optimizadas para un sitio interactivo](/help/assets/dynamic-media/responsive-site.md)
-* [ENVÍO de contenido HTTP2](/help/assets/dynamic-media/http2faq.md)
+* [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [Entrega de imágenes optimizadas para un sitio interactivo](/help/assets/dynamic-media/responsive-site.md)
+* [Entrega HTTP2 de contenido](/help/assets/dynamic-media/http2faq.md)
 * [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [Uso de conjuntos de reglas para transformar direcciones URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## ENVÍO HTTP/2 de los recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
+## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ahora admite el envío de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o código incrustado para la imagen o el vídeo está disponible para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega a través del protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite una mejor respuesta y tiempos de carga de todos los recursos de Dynamic Media.
+AEM ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o un código incrustado para la imagen o el vídeo están disponibles para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite mejorar los tiempos de respuesta y carga de todos los recursos de Dynamic Media.
 
-Para obtener más información, consulte [Envío HTTP/2 de las preguntas más frecuentes sobre el contenido](/help/assets/dynamic-media/http2faq.md).
+Para obtener más información, consulte [HTTP/2 Entrega de contenido preguntas más frecuentes](/help/assets/dynamic-media/http2faq.md).
