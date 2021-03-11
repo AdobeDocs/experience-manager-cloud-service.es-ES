@@ -2,9 +2,9 @@
 title: 'Edición de un programa de espacio aislado '
 description: 'Edición de un programa de espacio aislado '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ Los usuarios con los permisos necesarios ahora pueden editar un programa de prod
 
 Siga los pasos a continuación para editar un programa de espacio aislado:
 
-1. Vaya a la página **Editar programa**.
+1. Vaya a la página **Editar programa** desde la página *Información general* de Cloud Manager.
 
 1. La página **Editar Programa** muestra dos fichas (General y Soluciones) tanto para los programas de producción como para los de entornos limitados.
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >Aunque se mostrarán tanto Sitios como Recursos, uno de ellos puede deshabilitarse según lo que se haya comprado y no se use. Específicamente, si la organización no tiene derechos no utilizados para una solución en particular, se mostrará esa solución, pero se deshabilitará.
 
 ## Consideraciones al editar un programa {#considerations-editing}
 
