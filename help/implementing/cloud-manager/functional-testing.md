@@ -2,9 +2,9 @@
 title: 'Pruebas funcionales: Cloud Services'
 description: 'Pruebas funcionales: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 1e0765e6bf2818754c5603c08f055a7c7453bc33
+source-git-commit: 765334cff443d56e37f578647af4bcd133509481
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '847'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Pruebas funcionales {#functional-testing}
 
-Las pruebas funcionales se clasifican en dos tipos:
+Las pruebas funcionales se clasifican en tres tipos:
 
 * Prueba funcional del producto
 * Pruebas funcionales personalizadas
@@ -39,7 +39,7 @@ Sin embargo, si la compilación no produce ningún JAR de prueba, la prueba pasa
 
 AEM proporciona a sus clientes un conjunto integrado de puertas de calidad de Cloud Manager para garantizar actualizaciones sin problemas de sus aplicaciones. En particular, las puertas de prueba de TI ya permiten a los clientes crear y automatizar sus propias pruebas que usan API de AEM.
 
-La función de prueba de IU personalizada es una función opcional que permite a nuestros clientes crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium). Puede obtener más información sobre cómo crear IU y escribir pruebas de IU desde aquí. Además, un proyecto de pruebas de interfaz de usuario se puede generar fácilmente mediante el tipo de archivo del proyecto AEM.
+La función de prueba de IU personalizada es una función opcional [Inclusión del cliente](#customer-opt-in) que permite a nuestros clientes crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium). Puede obtener más información sobre cómo crear IU y escribir pruebas de IU desde aquí. Además, un proyecto de pruebas de interfaz de usuario se puede generar fácilmente mediante el tipo de archivo del proyecto AEM.
 
 Los clientes pueden crear (a través de GIT) pruebas personalizadas y conjuntos de pruebas para la interfaz de usuario. La prueba de la interfaz de usuario se ejecutará como parte de una puerta de calidad específica para cada canalización de Cloud Manager con su información específica de comentarios y pasos. Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permitirá detectar errores y crear informes de ellos en el contexto del cliente.
 
