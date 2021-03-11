@@ -2,7 +2,7 @@
 title: 'Entornos de espacio aislado en hibernación y dehibernación '
 description: 'Entornos de espacio aislado en hibernación y dehibernación '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 Los entornos de programa de espacio aislado especifican un *modo de hibernación* si no se detecta ninguna actividad durante un período determinado.
 
 >[!NOTE]
->La hibernación es única para los entornos de programa de espacio aislado. Los entornos de programa normales no hibernan.
+>La hibernación es única para los entornos de programa de espacio aislado. Los entornos de programas de producción no hibernan.
 
 ## Hibernación {#hibernation-introduction}
 
