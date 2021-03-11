@@ -2,7 +2,7 @@
 title: Vincular URL en la aplicación web
 description: Cómo vincular direcciones URL a la aplicación web en Dynamic Media.
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Sus sitios web y aplicaciones acceden a los servicios de Dynamic Media mediante llamadas URL. Después de publicar un recurso, Dynamic Media activa una cadena URL que hace referencia al recurso. Puede pegar estas direcciones URL en un navegador web para realizar pruebas.
 
-Solo se vincula a las direcciones URL si está *no* utilizando AEM como WCM. La vinculación frente a la incrustación se utiliza cuando se desea enviar un reproductor de vídeo como ventana emergente o modal. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página.](adding-dynamic-media-assets-to-pages.md)
+El vínculo a las direcciones URL solo se realiza si está *no* usando AEM como WCM. La vinculación frente a la incrustación se utiliza cuando se desea enviar un reproductor de vídeo como ventana emergente o modal. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página.](adding-dynamic-media-assets-to-pages.md)
 
 Para colocar estas cadenas URL en sus páginas web y aplicaciones, cópielas desde Dynamic Media.
 
@@ -116,11 +116,11 @@ Dynamic Media admite la entrega de recursos estáticos, que son otros recursos a
 
 ## Obtención de una URL de vídeo para una representación de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. En AEM, vaya a **[!UICONTROL Herramientas > Implementación > Cloud > Cloud Services]**.
+1. En AEM, vaya a **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
 1. En la página **[!UICONTROL Cloud Services]**, desplácese hacia abajo hasta el encabezado de **[!UICONTROL Servicios de Dynamic Media Cloud]** y, a continuación, pulse **[!UICONTROL Mostrar configuraciones]**.
 1. En **[!UICONTROL Configuraciones disponibles]**, pulse el nombre de la configuración que desee.
 
-1. En la página **[!UICONTROL Configuración de Dynamic Media Cloud]**, en **[!UICONTROL URL del servicio de vídeo]**, copie toda la ruta URL. Necesita la ruta de URL copiada más adelante en los pasos.
+1. En la página **[!UICONTROL Configuración de Dynamic Media Cloud]**, en **[!UICONTROL URL del servicio de vídeo]**, copie toda la ruta de URL. Necesita la ruta de URL copiada más adelante en los pasos.
 
    Por ejemplo, la ruta de URL podría aparecer de forma similar a la siguiente:
 
@@ -132,7 +132,7 @@ Dynamic Media admite la entrega de recursos estáticos, que son otros recursos a
 
    Por ejemplo, si el ID de registro es `87654321|MyCompany`, el nombre del cliente es `MyCompany`.
 
-1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Cloud Services]**, pulse el icono de AEM y vaya a **[!UICONTROL General > CRXDE Lite]**.
+1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Cloud Services]**, luego pulse el icono de AEM y vaya a **[!UICONTROL General > CRXDE Lite]**.
 1. Copie toda la ruta de representación de vídeo desde el JCR (Repositorio de contenido Java).
 
    Por ejemplo, la ruta de representación del vídeo podría aparecer de forma similar a la siguiente:
@@ -153,10 +153,10 @@ Dynamic Media admite la entrega de recursos estáticos, que son otros recursos a
 
 ## Obtención de una URL de vídeo para flujo adaptable (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. En AEM, vaya a **[!UICONTROL Herramientas > Implementación > Cloud > Cloud Services]**.
+1. En AEM, vaya a **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
 1. En la página **[!UICONTROL Cloud Services]**, desplácese hacia abajo hasta el encabezado de **[!UICONTROL Servicios de Dynamic Media Cloud]** y, a continuación, pulse **[!UICONTROL Mostrar configuraciones]**.
 1. En **[!UICONTROL Configuraciones disponibles]**, pulse el nombre de la configuración que desee.
-1. En la página **[!UICONTROL Configuración de los servicios de Dynamic Media Cloud]**, haga lo siguiente:
+1. En la página **[!UICONTROL Configuración de Cloud Services de Dynamic Media]**, haga lo siguiente:
 
    * En **[!UICONTROL URL del servicio de vídeo]**, copie toda la ruta de URL. Necesitará la ruta de URL copiada más adelante en estos pasos. Por ejemplo, la ruta de URL podría aparecer de forma similar a la siguiente:
 
