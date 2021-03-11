@@ -1,8 +1,8 @@
 ---
-title: 'Administrar Entornos: Cloud Service'
-description: 'Administrar Entornos: Cloud Service'
+title: 'Administrar entornos: Cloud Service'
+description: 'Administrar entornos: Cloud Service'
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 4%
@@ -12,62 +12,62 @@ ht-degree: 4%
 
 # Administración de entornos {#manage-environments}
 
-En la sección siguiente se describen los tipos de entornos que puede crear un usuario y la forma en que puede crear un entorno.
+En la siguiente sección se describen los tipos de entorno que un usuario puede crear y cómo puede hacerlo.
 
-## Tipos de entornos {#environment-types}
+## Tipos de entorno {#environment-types}
 
-Un usuario con los permisos necesarios puede crear los siguientes tipos de entornos (dentro de los límites de lo que está disponible para el inquilino específico).
+Un usuario con los permisos necesarios puede crear los siguientes tipos de entorno (dentro de los límites de lo que está disponible para el inquilino específico).
 
-* **Entorno** de producción y etapa: La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.
+* **Entorno** de producción y fase: Producción y fase está disponible como dúo y se utiliza para pruebas y producciones.
 
-* **Desarrollo**: Se puede crear un entorno de desarrollo con fines de desarrollo y ensayo y se asociará únicamente a los oleoductos que no sean de producción.
+* **Desarrollo**: Se puede crear un entorno de desarrollo para fines de desarrollo y prueba, y solo se asociará con canalizaciones que no sean de producción.
 
    >[!NOTE]
-   >Se configurará un entorno de desarrollo que se crea automáticamente en un programa de Simulador para pruebas para que incluya las soluciones Sitios y Recursos.
+   >Se configurará un entorno de desarrollo creado automáticamente en un programa de espacio aislado para pruebas para que incluya las soluciones de Sites y Assets.
 
-   La siguiente tabla resume los tipos de Entornos y sus atributos:
+   La tabla siguiente resume los tipos de entorno y sus atributos:
 
-   | Nombre | Nivel de Author | Publicar nivel | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con entorno |
+   | Nombre | Nivel de Author | Nivel de publicación | El usuario puede crear | El usuario puede eliminar | Canalización que puede asociarse con el entorno |
    |--- |--- |--- |--- |---|---|
-   | Producción | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
-   | Escenario | Sí | Sí si los sitios están incluidos | Sí | No | Canalización de producción |
-   | Desarrollo | Sí | Sí si los sitios están incluidos | Sí | Sí | Canalización sin producción |
+   | Producción | Sí | Sí si se incluyen sitios | Sí | No | Canalización de producción |
+   | Escenario | Sí | Sí si se incluyen sitios | Sí | No | Canalización de producción |
+   | Desarrollo | Sí | Sí si se incluyen sitios | Sí | Sí | Canalización que no es de producción |
 
    >[!NOTE]
-   >La producción y la fase están disponibles como dúo y se utilizan con fines de prueba y producción.  El usuario no podrá crear solo la fase o solo el entorno de producción.
+   >Producción y fase está disponible como dúo y se utiliza para pruebas y producciones.  El usuario no podrá crear solo entorno de fase o de producción.
 
-## Añadiendo Entorno {#adding-environments}
+## Adición de entorno {#adding-environments}
 
-1. Haga clic en **Añadir Entorno** para agregar un entorno. Se podrá acceder a este botón desde la pantalla **Entornos**.
+1. Haga clic en **Agregar entorno** para agregar un entorno. Se puede acceder a este botón desde la pantalla **Environments**.
    ![](assets/environments-tab.png)
 
-   La opción **Añadir Entorno** también está disponible en la tarjeta **Entornos** cuando hay cero entornos en el programa.
+   La opción **Agregar entorno** también está disponible en la tarjeta **Entornos** cuando no hay ningún entorno en el programa.
 
    ![](assets/no-environments.png)
 
    >[!NOTE]
-   >La opción **Añadir Entorno** se desactivará por falta de permisos o por lo que se pueda contratar.
+   >La opción **Agregar entorno** se deshabilitará por falta de permisos o por lo que se pueda contratar.
 
 1. Aparece el cuadro de diálogo **Agregar entorno**. El usuario debe enviar detalles como **Tipo de entorno**, **Nombre de entorno** y **Descripción de entorno** (según el objetivo del usuario al crear el entorno dentro de los límites de lo que está disponible para el inquilino específico).
 
    ![](assets/add-environment2.png)
 
    >[!NOTE]
-   >Al crear un entorno, se crean una o más *integraciones* en Adobe I/O. Son visibles para los usuarios clientes que tienen acceso a la consola de Adobe I/O y no deben eliminarse. Esto se rechaza en la descripción de la consola de Adobe I/O.
+   >Al crear un entorno, se crean una o más *integraciones* en Adobe I/O. Son visibles para los usuarios clientes que tienen acceso a la consola de Adobe I/O y no deben eliminarse. Esto se rechaza en la descripción de la Consola de Adobe I/O.
 
    ![](assets/add-environment-image1.png)
 
 1. Haga clic en **Guardar** para agregar un entorno con los criterios rellenados.  Ahora, la pantalla *Información general* muestra la tarjeta desde la que puede configurar la canalización.
 
    >[!NOTE]
-   >En caso de que aún no haya configurado la canalización sin producción, la pantalla *Información general* muestra la tarjeta desde la que puede crear la canalización sin producción.
+   >En caso de que aún no haya configurado la canalización que no es de producción, la pantalla *Overview* muestra la tarjeta desde la que puede crear la canalización que no es de producción.
 
 
-## Viendo Entorno {#viewing-environment}
+## Entorno de visualización {#viewing-environment}
 
-La tarjeta **Entornos** de la página Información general lista hasta tres entornos.
+La tarjeta **Environments** de la página Información general enumera hasta tres entornos.
 
-1. Seleccione el botón **Mostrar todo** para navegar a la página de resumen **Entorno** para vista de una tabla con una lista completa de entornos.
+1. Seleccione el botón **Show All** para navegar a la página de resumen **Environment** para ver una tabla con una lista completa de entornos.
 
    ![](assets/environment-view-1.png)
 
@@ -75,67 +75,67 @@ La tarjeta **Entornos** de la página Información general lista hasta tres ento
 
    ![](assets/environment-view-2.png)
 
-1. Seleccione cualquiera de los entornos de la lista para vista de los detalles del entorno.
+1. Seleccione cualquiera de los entornos de la lista para ver los detalles del entorno.
 
    ![](assets/environment-view-3.png)
 
 
-## Actualizando Entorno {#updating-dev-environment}
+## Actualización del entorno {#updating-dev-environment}
 
-Las actualizaciones de entornos de fase y producción se administran automáticamente mediante Adobe.
+Las actualizaciones de los entornos de fase y producción se administran automáticamente mediante Adobe.
 
-Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no está ejecutando la última versión de AEM disponible públicamente, el estado de la tarjeta de Entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
+Los usuarios del programa administran las actualizaciones de los entornos de desarrollo. Cuando un entorno no ejecuta la última versión de AEM disponible públicamente, el estado de la tarjeta de entornos en la pantalla principal mostrará **ACTUALIZACIÓN DISPONIBLE**.
 
 ![](assets/environ-update.png)
 
 
-La opción **Actualizar** está disponible en la tarjeta **Entornos**.
-Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta **Entornos**. Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Actualizar**, como se muestra en la figura siguiente:
+La opción **Update** está disponible en la tarjeta **Environments**.
+Esta opción también está disponible si hace clic en **Details** en la tarjeta **Environments**. Se abre la página **Entornos** y una vez que seleccione el entorno de desarrollo, haga clic en **...** y seleccione **Actualizar**, como se muestra en la figura siguiente:
 
 ![](assets/environ-update2.png)
 
-Al seleccionar esta opción, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la versión más reciente y, a continuación, ejecutar la canalización.
+Al seleccionar esta opción, un administrador de implementación podrá actualizar la canalización asociada con este entorno a la última versión y luego ejecutar la canalización.
 
-Si la canalización ya se ha actualizado, se solicita al usuario que ejecute la canalización.
+Si la canalización ya se ha actualizado, se solicita al usuario que la ejecute.
 
-## Eliminando Entorno {#deleting-environment}
+## Eliminación del entorno {#deleting-environment}
 
-El usuario con los permisos necesarios podrá eliminar un entorno de desarrollo.
+Los usuarios con los permisos necesarios podrán eliminar un entorno de desarrollo.
 
 La opción **Eliminar** está disponible en el menú desplegable de la tarjeta **Entornos**. Haga clic en **...** para un entorno de desarrollo que desee eliminar.
 
 ![](assets/environ-delete.png)
 
-La opción Eliminar también está disponible si hace clic en **Detalles** de la tarjeta **Entornos**. Se abre la página **Entornos** y una vez seleccionado el entorno de desarrollo, haga clic en **...** y seleccione **Eliminar**, como se muestra en la figura siguiente:
+La opción Eliminar también está disponible si hace clic en **Details** en la tarjeta **Environments**. Se abre la página **Entornos** y una vez que seleccione el entorno de desarrollo, haga clic en **...** y seleccione **Eliminar**, como se muestra en la figura siguiente:
 
 ![](assets/environ-delete2.png)
 
 
 >[!NOTE]
 >
->Esta función no está disponible para el entorno de producción/fase definido en un programa normal configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de Simulador para pruebas.
+>Esta función no está disponible para entornos de producción/fase establecidos en un programa de producción configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de espacio aislado.
 
 ## Administración del acceso {#managing-access}
 
-Seleccione **Administrar acceso** en el menú desplegable de la tarjeta **Entornos**. Puede desplazarse directamente a la instancia de creación y administrar el acceso del entorno.
+Seleccione **Administrar acceso** en el menú desplegable de la tarjeta **Entornos**. Puede navegar a la instancia de autor directamente y administrar el acceso para su entorno.
 
-Consulte [Administración de acceso a la instancia de autor](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) para obtener más información.
+Consulte [Administración del acceso a la instancia de autor](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) para obtener más información.
 
 ![](assets/environ-access.png)
 
 
 ## Acceso a Developer Console {#accessing-developer-console}
 
-Seleccione **Consola de desarrollador** en el menú desplegable de la tarjeta **Entornos**. Se abrirá una nueva ficha en el explorador con la página de inicio de sesión en **Consola de programadores**.
+Seleccione **Developer Console** en el menú desplegable de la tarjeta **Environments**. Se abrirá una nueva pestaña en el explorador con la página de inicio de sesión en **Developer Console**.
 
-Solo un usuario en la función de desarrollador tendrá acceso a **Developer Console**. Excepción para los Programas de Simulador para pruebas, en los que cualquier usuario con acceso al Programa de Simulador para pruebas de Cloud Manager tendrá acceso a **Consola de desarrollador**.
+Solo los usuarios con la función de desarrollador tendrán acceso a **Developer Console**. La excepción es para los Programas de espacio aislado, donde cualquier usuario con acceso al programa de espacio aislado de Cloud Manager tendrá acceso a **Developer Console**.
 
-Consulte [Entornos de Simulador para pruebas de hibernación y deshibernación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obtener más detalles.
+Consulte [Entorno de espacio aislado en hibernación y dehibernación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obtener más información.
 
 
 ![](assets/environ-devconsole.png)
 
-Esta opción también está disponible si hace clic en **Detalles** desde la tarjeta **Entornos**. Se abre la página **Entornos** y una vez seleccionado un entorno, haga clic en **...** y seleccione **Consola de desarrollador**.
+Esta opción también está disponible si hace clic en **Details** en la tarjeta **Environments**. La página **Entornos** se abre y una vez que seleccione un entorno, haga clic en **...** y seleccione **Developer Console**.
 
 ## Iniciar sesión localmente {#login-locally}
 
@@ -143,17 +143,17 @@ Seleccione **Inicio de sesión local** en el menú desplegable de la tarjeta **E
 
 ![](assets/environ-login-locally.png)
 
-Además, puede iniciar sesión localmente desde la página de resumen **Entornos**.
+Además, puede iniciar sesión localmente desde la página de resumen **Environments**.
 
 ![](assets/environ-login-locally-2.png)
 
 ## Administración de nombres de dominio personalizados {#manage-cdn}
 
-Vaya a la página de detalles **Entornos** desde la página Resumen de Entornos.
+Vaya a la página de detalles **Entornos** en la página Resumen de Entornos.
 
-Las siguientes acciones se pueden realizar en el servicio de publicación de su entorno como se describe a continuación:
+Se pueden realizar las siguientes acciones en el servicio Publicar para su entorno, como se describe a continuación:
 
-1. [Añadir un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [Adición de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
 1. [Visualización y actualización de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
@@ -161,30 +161,30 @@ Las siguientes acciones se pueden realizar en el servicio de publicación de su 
 
 ## Administración de Listas de permitidos IP {#manage-ip-allow-lists}
 
-Acceda a la página de detalles del Entorno desde la página Resumen de Entornos. Puede realizar las siguientes acciones en los servicios Publicar y/o Autor para su entorno aquí.
+Vaya a la página Detalles del entorno desde la página Resumen de entornos . Aquí puede realizar las siguientes acciones en los servicios Publicar o Autor para su entorno.
 
 ### Aplicación de una Lista de permitidos IP {#apply-ip-allow-list}
 
-La aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los intervalos de IP incluidos en la definición de la lista de permitidos están asociados a un servicio de creación o publicación en un entorno. Para poder aplicar una Lista de permitidos IP, debe haber iniciado sesión un usuario con la función Propietario de la empresa o Administrador de implementación.
+La aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los rangos de IP incluidos en la definición de la lista de permitidos están asociados a un servicio de Autor o Publicación en un entorno. Un usuario con la función Propietario empresarial o Administrador de implementación debe haber iniciado sesión para poder aplicar una Lista de permitidos IP.
 
 >[!NOTE]
->La Lista de permitidos IP debe existir en Cloud Manager para poder aplicarla a un servicio de entorno. Para obtener más información sobre las Listas de permitidos IP en Cloud Manager, vaya a [Introducción a las Listas de permitidos IP en Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>La Lista de permitidos IP debe existir en Cloud Manager para aplicarla a un servicio de entorno. Para obtener más información sobre las Listas de permitidos IP en Cloud Manager, vaya a [Introducción a las Listas de permitidos IP en Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
 Siga los pasos a continuación para aplicar una Lista de permitidos IP:
 
-1. Vaya al entorno específico desde la página de detalles **Entornos** y vaya a la tabla **Listas de permitidos IP**.
-1. Utilice los campos de entrada en la parte superior de la tabla de Lista de permitidos IP para seleccionar la Lista de permitidos IP y el servicio de creación o publicación al que desee aplicarla.
-1. Haga clic en **Aplicar** y confirme su envío.
+1. Vaya al entorno específico desde la página de detalles **Environments** y vaya a la tabla **IP Lista de permitidos** .
+1. Utilice los campos de entrada de la parte superior de la tabla de Lista de permitidos IP para seleccionar la Lista de permitidos IP y el servicio Autor o Publicación al que desea aplicarla.
+1. Haga clic en **Aplicar** y confirme el envío.
 
-### Anulación de la aplicación de una Lista de permitidos IP {#unapply-ip-allow-list}
+### Desaplicación de una Lista de permitidos IP {#unapply-ip-allow-list}
 
-La anulación de la aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los intervalos de IP incluidos en la definición de la Lista de permitidos se desasocian de un servicio de autor o editor en un entorno. Un usuario con la función Propietario de la empresa o Administrador de implementación debe iniciar sesión para poder anular la aplicación de una Lista de permitidos IP.
+La cancelación de la aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los rangos de IP incluidos en la definición de la Lista de permitidos se desasocian de un servicio Autor o Editor en un entorno. Un usuario con la función Propietario empresarial o Administrador de implementación debe haber iniciado sesión para poder anular la aplicación de una Lista de permitidos IP.
 
 Siga los pasos a continuación para anular la aplicación de una Lista de permitidos IP:
 
-1. Vaya a la página de detalles **Entornos** específica desde la pantalla Entornos y vaya a la tabla **Listas de permitidos IP**.
-1. Identifique la fila en la que se muestra la regla de Lista de permitidos IP que desea anular de la aplicación.
-1. Seleccione **...** desde el extremo derecho de la fila.
-1. Seleccione la opción **No aplicar** y confirme el envío.
+1. Vaya a la página de detalles **Environments** específica desde la pantalla Environments y vaya a la tabla **IP Lista de permitidos** .
+1. Identifique la fila en la que se muestra la regla de Lista de permitidos IP que desea anular la aplicación.
+1. Seleccione el **...** desde el extremo derecho de la fila.
+1. Seleccione la opción **Unapply** y confirme el envío.
 
 
