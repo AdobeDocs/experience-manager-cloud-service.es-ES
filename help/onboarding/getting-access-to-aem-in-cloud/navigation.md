@@ -2,9 +2,9 @@
 title: Obtener acceso a Cloud Manager para AEM as a Cloud Service
 description: Obtener acceso a Cloud Manager para AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
+source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,10 @@ Si ya es cliente de AMS (Adobe Managed Services) y tiene acceso a Cloud Service,
 
 Si no ve el botón **Agregar programa** y tiene preguntas sobre el acceso al Cloud Service, póngase en contacto con el representante del Adobe.
 
-Consulte [Añadir un nuevo programa en Cloud Service con programas existentes](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) para obtener más información.
-
 ## Para nuevos clientes Cloud Service {#new-cloud-services}
 
 Si es un nuevo cliente Cloud Service, verá el botón **Agregar programa** en la esquina superior derecha de una página de aterrizaje vacía. Desea agregar un nuevo programa a su Cloud Service.
 
-Consulte [Añadir un nuevo programa en Cloud Service sin programas existentes](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) para obtener más información.
-
+Para aprender a añadir un programa en Cloud Manager, consulte:
+* [Creación de un programa de producción](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [Creación de un programa de espacio aislado](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
