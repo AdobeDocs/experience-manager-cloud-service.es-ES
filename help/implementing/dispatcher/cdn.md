@@ -2,17 +2,17 @@
 title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
+source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 4%
+source-wordcount: '695'
+ht-degree: 7%
 
 ---
 
 
 # CDN en AEM as a Cloud Service {#cdn}
 
-AEM como Cloud Service se envía con una CDN integrada. Su principal propósito es reducir la latencia mediante el envío de contenido procesable desde los nodos CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
+AEM como Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
 
 La CDN administrada AEM satisfará la mayoría de los requisitos de rendimiento y seguridad del cliente. Para el nivel de publicación, los clientes pueden opcionalmente apuntar a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función de cumplir ciertos requisitos previos, incluido, entre otros, el cliente que tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
 
@@ -31,7 +31,7 @@ Consulte [Administración de Listas de permitidos IP](/help/implementing/cloud-m
 
 >[!CAUTION]
 >
->Solo las solicitudes de las IP permitidas serán atendidas por la CDN administrada de AEM. Si dirige su propia CDN a la CDN administrada de AEM, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
+>Solo las solicitudes de las IP permitidas serán atendidas por la CDN administrada de AEM. Si señala su propia CDN a la CDN administrada de AEM, asegúrese de que las IP de su CDN estén incluidas en la lista de permitidos.
 
 ## La CDN del cliente apunta a AEM CDN administrada {#point-to-point-CDN}
 
@@ -47,7 +47,7 @@ Instrucciones de configuración:
 
 1. Establezca el encabezado `X-Forwarded-Host` con el nombre de dominio.
 1. Establezca el encabezado del host con el dominio de origen, que es la entrada de la CDN de AEM. El valor debe proceder del Adobe.
-1. Envíe el encabezado SNI al origen. Al igual que el encabezado Host, el encabezado sni debe ser el dominio de origen.
+1. Envíe el encabezado SNI al origen. Al igual que el encabezado Host, el encabezado SNI debe ser el dominio de origen.
 1. Establezca el `X-Edge-Key` o el `X-AEM-Edge-Key` (si su CDN elimina X-Edge-*), que es necesario para enrutar el tráfico correctamente a los servidores de AEM. El valor debe proceder del Adobe. Informe a Adobe si desea acceder directamente a la entrada de la CDN de Adobe (para bloquearla cuando `X-Edge-Key` no esté presente).
 
 Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia al cliente de Adobe que el enrutamiento de tráfico de extremo a extremo funciona correctamente.
@@ -62,7 +62,7 @@ Tenga en cuenta que esta configuración de CDN de cliente es compatible con el n
 
 ## Encabezados de geolocalización {#geo-headers}
 
-La CDN administrada AEM agregará encabezados a cada solicitud con:
+La CDN administrada de AEM agrega encabezados a cada solicitud con:
 
 * código de país: `x-aem-client-country`
 * código de continente: `x-aem-client-continent`
