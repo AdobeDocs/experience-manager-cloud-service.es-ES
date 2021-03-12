@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
+source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1667'
 ht-degree: 3%
 
 ---
@@ -210,13 +210,20 @@ La fecha de versión de Best Practices Analyzer v2.1.2 es el 18 de febrero de 20
 
 ### Novedades de las herramientas de refactorización de código {#what-is-new-crt}
 
-* Se ha lanzado una nueva versión del complemento AIO-CLI. La última versión de este complemento incluye varias correcciones de errores para el Modernizador de repositorio.
-Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
+* Se ha lanzado una nueva versión del complemento AIO-CLI. La última versión de este complemento incluye varias funciones nuevas y correcciones de errores para el Modernizador de repositorio y Dispatcher Converter.    Consulte [Experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits) para obtener más información sobre este complemento.
 
-### Corrección de errores {#bug-fixes-crt}
+* Nuevas funciones y mejoras para el Modernizador de repositorios. Consulte [Recurso de GitHub: Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para la versión más reciente.
+   * Normalice las configuraciones de OSGi (excepto las configuraciones de RepoInit) con el formato preferido .cfg.json .
+   * Cambie el nombre de las carpetas de configuración de OSGi al formato especificado.
+   * Genere el proyecto ui.apps.structure .
+   * Cree el módulo de análisis.
 
-* Se han hecho varias correcciones de errores en el Modernizador de repositorio.
-Consulte [Recurso de GitHub: aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obtener más información.
+* Nuevas funciones y mejoras para Dispatcher Converter. Consulte [Recurso de GitHub: Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+   * Creación de archivos independientes para diferentes inclusiones en lugar de alinear el contenido.
+   * Capacidad para gestionar la ruta de carpeta de vhosts y la ruta a los archivos vhost.
+   * Generación de archivos de granja con grandes configuraciones de cliente en un rango de 600 o más.
+
+
 
 
 
