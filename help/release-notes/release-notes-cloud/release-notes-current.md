@@ -2,7 +2,7 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
+source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Customers using the Connected Assets feature can now easily view and track asset
 
 ## Cloud Manager {#cloud-manager}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.3.0.
+Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.3.0.
 
 ## Fecha de la versión {#release-date-cm-march}
 
