@@ -2,9 +2,9 @@
 title: Compatibilidad con cookies del mismo sitio para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con cookies del mismo sitio para Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: e51d9c3e4691fb58f3c4b6a2565cc8cad2a1acb0
+source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -28,3 +28,5 @@ Para ello, siga los siguientes pasos:
 1. Haga clic en Guardar
 1. Genere las configuraciones de formato JSON para esta configuración en particular siguiendo los pasos descritos en [Generación de configuraciones OSGi mediante el inicio rápido del SDK de AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Aplique la configuración siguiendo los pasos de la documentación de OSGi [Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties).
+
+Una vez que esta configuración se actualice y los usuarios cierren la sesión y vuelvan a iniciarla, las cookies `login-token` tendrán el atributo `None` establecido y se incluirán en las solicitudes entre sitios.
