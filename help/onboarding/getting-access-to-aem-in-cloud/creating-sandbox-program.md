@@ -2,9 +2,9 @@
 title: 'Creación de un programa de espacio aislado '
 description: 'Creación de un programa de espacio aislado '
 translation-type: tm+mt
-source-git-commit: 5773683a75254855687266929a3e1876c8f06e61
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,13 @@ ht-degree: 0%
 # Creación de un programa de espacio aislado {#create-sandbox-program}
 
 Siga los pasos a continuación para crear un programa de simulación de pruebas:
+
+1. Inicie la página de aterrizaje de Cloud Manager y haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Para obtener más información sobre cómo acceder a Cloud Manager, consulte [Página de aterrizaje de Cloud Manager](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md) para obtener más información.
 
 1. En el asistente de creación de programa, seleccione **Configurar un simulador de pruebas**. El usuario envía el nombre del programa antes de seleccionar **Crear**.
 
