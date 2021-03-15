@@ -2,9 +2,9 @@
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,16 @@ Esta página describe las notas de la versión de Cloud Manager en AEM as a Clou
 ## Fecha de la versión {#release-date}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 11 de marzo de 2021.
+La próxima versión está planificada para el 08 de abril de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
 ### Novedades {#what-is-new}
 
-* Los clientes con entornos con configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL y nombres de dominio personalizados verán un mensaje sobre sus configuraciones anteriores y podrán autoabastecerse mediante la interfaz de usuario.
+* Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán autoabastecerse mediante la interfaz de usuario. Los usuarios ahora pueden:
+   * Agregar la solución Sitios a un programa existente con Assets (o viceversa).
+   * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
+   * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
 * Los usuarios con los permisos necesarios ahora pueden editar el programa, lo que les permite hacer lo siguiente de forma autoservicio.
 
