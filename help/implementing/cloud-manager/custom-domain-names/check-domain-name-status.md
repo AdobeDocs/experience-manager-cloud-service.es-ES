@@ -2,9 +2,9 @@
 title: Comprobación del estado del nombre de dominio
 description: Comprobación del estado del nombre de dominio
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,11 @@ el nombre de dominio personalizado. Debe volver a intentarlo. Consulte [Eliminac
 
 ## Configuraciones preexistentes de CDN para Listas de permitidos IP {#pre-existing-cdn}
 
-Los clientes con entornos que incluyen configuraciones de CDN preexistentes para Listas de permitidos IP (certificados SSL o nombres de dominio personalizados) verán el siguiente mensaje en la **Lista de permitidos IP** y en la página de detalles **Entorno**.
+Los clientes con entornos que incluyan configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL o nombres de dominio personalizados verán el siguiente mensaje en la página de detalles **IP Lista de permitidos** y **Environment**.
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
-Para ver y administrar las configuraciones preexistentes, deben agregarse mediante la interfaz de usuario de .
+>[!NOTE]
+>Para ver y administrar las configuraciones preexistentes, deben agregarse a través de la interfaz de usuario, como se muestra en la figura siguiente.
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
