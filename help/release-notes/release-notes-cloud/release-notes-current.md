@@ -2,7 +2,7 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 3%
@@ -87,8 +87,8 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 * Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente de forma autoservicio:
 
-   * Agregar la solución Sitios a un programa existente con Assets (o viceversa).
-   * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
+   * Agregar la solución Sitios a un programa existente con Assets o viceversa.
+   * Elimine Sitios o Recursos de un programa existente con Sitios y Recursos.
    * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
 * **AEM** actualización push ahora se mostrará para las pantallas  *Ejecución de la* canalización y  ** Actividad.
