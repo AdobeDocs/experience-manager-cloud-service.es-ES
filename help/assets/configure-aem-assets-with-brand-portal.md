@@ -3,10 +3,10 @@ title: Configurar AEM Assets como a [!DNL Cloud Service] con Brand Portal
 description: Configurar AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
+source-git-commit: 4a22ef2913e88b037a65746f782e4c6a20afdddb
 workflow-type: tm+mt
-source-wordcount: '2248'
-ht-degree: 14%
+source-wordcount: '2411'
+ht-degree: 13%
 
 ---
 
@@ -17,7 +17,7 @@ La configuración de Adobe Experience Manager Assets Brand Portal permite public
 
 ## Activar Brand Portal mediante Cloud Manager {#activate-brand-portal}
 
-El usuario de Cloud Manager activa Brand Portal para una instancia de AEM Assets as a0/> . [!DNL Cloud Service] El flujo de trabajo de activación crea las configuraciones necesarias (token de autorización, configuración de IMS y servicio en la nube de Brand Portal) en el servidor y refleja el estado del inquilino de Brand Portal en Cloud Manager.
+El usuario de Cloud Manager activa Brand Portal para una instancia de AEM Assets as a0/> . [!DNL Cloud Service] El flujo de trabajo de activación crea las configuraciones necesarias (token de autorización, configuración de IMS y servicio en la nube de Brand Portal) en el servidor y refleja el estado del inquilino de Brand Portal en Cloud Manager. Al activar Brand Portal, los usuarios de AEM Assets pueden publicar recursos en Brand Portal y distribuirlos a los usuarios de Brand Portal.
 
 **Requisitos previos**
 
@@ -28,7 +28,7 @@ Para activar Brand Portal en AEM Assets como instancia de [!DNL Cloud Service], 
 
 >[!NOTE]
 >
->Una instancia de AEM Assets as a [!DNL Cloud Service] tiene derecho a conectar solo un inquilino de Brand Portal. Puede crear varios entornos (desarrollo, producción y etapa) para AEM Assets como instancia [!DNL Cloud Service], donde Brand Portal solo se activa en un entorno.
+>Una instancia de AEM Assets as a [!DNL Cloud Service] tiene derecho a conectarse únicamente con un inquilino de Brand Portal. Puede tener varios entornos (desarrollo, producción y etapa) para su AEM Assets como instancia [!DNL Cloud Service], donde Brand Portal se activa en un entorno.
 
 **Pasos para activar Brand Portal**
 
@@ -46,9 +46,18 @@ Puede activar Brand Portal al crear los entornos para su AEM Assets como instanc
 
    ![Activar Brand Portal](assets/create-environment4.png)
 
-1. Puede tardar unos minutos en activarse el inquilino de Brand Portal, ya que el flujo de trabajo de activación crea las configuraciones necesarias en el servidor. Una vez activado el inquilino de Brand Portal, el estado cambia a Activado.
+1. Se tardan unos minutos en activar el inquilino de Brand Portal, ya que el flujo de trabajo de activación crea las configuraciones necesarias en el servidor. Una vez activado el inquilino de Brand Portal, el estado cambia a Activado.
 
    ![Ver estado](assets/create-environment5.png)
+
+
+>[!NOTE]
+>
+>Brand Portal debe activarse en la misma organización de IMS que en AEM Assets como instancia [!DNL Cloud Service].
+>
+>Si tiene una configuración de nube de Brand Portal existente ([configurada manualmente mediante Adobe Developer Console](#manual-configuration)) para una organización de IMS (ya existente en organización1) y la instancia de AEM Assets as a2/> está configurada para otra organización de IMS (org2-new), al activar Brand Portal desde Cloud Manager se restablece la organización de IMS de Brand Portal a `org2-new`. [!DNL Cloud Service] Aunque la configuración de nube configurada manualmente en `org1-existing` será visible en la instancia de autor de AEM Assets, pero ya no estará en uso después de activar Brand Portal desde Cloud Manager.
+>
+>Si la configuración de nube existente de Brand Portal y AEM Assets as a [!DNL Cloud Service] están utilizando la misma organización de IMS (org1), solo debe activar Brand Portal desde Cloud Manager.
 
 **Consulte también**:
 * [Agregar usuarios y funciones en AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
@@ -62,13 +71,15 @@ Después de activar el inquilino de Brand Portal en Cloud Manager, puede iniciar
 
 La dirección URL predeterminada del inquilino de Brand Portal es: `https://<tenant-id>.brand-portal.adobe.com/`.
 
+En este caso, el ID del inquilino es la organización de IMS.
+
 Siga estos pasos si no está seguro de la URL de Brand Portal:
 
 1. Inicie sesión en [Admin Console](http://adminconsole.adobe.com/) y vaya a **[!UICONTROL Productos]**.
 1. En el carril izquierdo, seleccione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Haga clic en **[!UICONTROL Vaya a Brand Portal]** para abrir Brand Portal directamente en el explorador.
 
-   O bien, copie la dirección URL del inquilino de Brand Portal y péguela en el explorador para abrir la interfaz de Brand Portal.
+   O bien, copie la dirección URL del inquilino de Brand Portal del enlace **[!UICONTROL Vaya a Brand Portal]** y péguela en el explorador para abrir la interfaz de Brand Portal.
 
    ![Acceso a Brand Portal](assets/access-bp-on-cloud.png)
 
@@ -130,16 +141,16 @@ Consulte la [documentación de Brand Portal](https://docs.adobe.com/content/help
 
 Puede controlar los registros del agente de distribución para el flujo de trabajo de publicación de recursos.
 
-Por ejemplo, hemos publicado un recurso de AEM Assets en Brand Portal para validar la configuración.
+Ahora vamos a publicar un recurso de AEM Assets en Brand Portal y a ver los registros.
 
-1. Siga los pasos (del 1 al 4) que se muestran en la sección [Probar configuración](#test-configuration) y vaya a la página del agente de distribución.
+1. Siga los pasos (del 1 al 4) que se muestran en la sección **Test connection** y vaya a la página del agente de distribución.
 1. Haga clic en **[!UICONTROL Logs]** para ver los registros de procesamiento y error.
 
    ![](assets/test-bpconfig5.png)
 
 El agente de distribución ha generado los siguientes registros:
 
-* INFORMACIÓN: Este es un registro generado por el sistema que déclencheur en una configuración correcta del agente de distribución.
+* INFORMACIÓN: Es un registro generado por el sistema que déclencheur en una configuración correcta del agente de distribución.
 * DSTRQ1 (Solicitud 1): Se activa en comprobar la conexión.
 
 Al publicar el recurso, se generan los siguientes registros de solicitud y respuesta:
@@ -164,7 +175,7 @@ Junto con el flujo de trabajo de automatización para activar Brand Portal en AE
 
 >[!NOTE]
 >
->Debe ponerse en contacto con la asistencia de Adobe si tiene algún problema al activar el inquilino de Brand Portal.
+>Póngase en contacto con el servicio de asistencia al Adobe si tiene algún problema al activar el inquilino de Brand Portal.
 
 ## Configuración manual mediante Adobe Developer Console {#manual-configuration}
 
@@ -225,7 +236,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. Haga clic en el icono **[!UICONTROL Descargar clave pública]** y guarde el archivo de clave pública (CRT) en el equipo.
 
-   La clave pública se utilizará más adelante para configurar la API para el inquilino de Brand Portal y generar credenciales de cuenta de servicio en Adobe Developer Console.
+   La clave pública se utiliza más adelante para configurar la API para el inquilino de Brand Portal y generar credenciales de cuenta de servicio en Adobe Developer Console.
 
    ![Descargar certificado](assets/ims-config3.png)
 
