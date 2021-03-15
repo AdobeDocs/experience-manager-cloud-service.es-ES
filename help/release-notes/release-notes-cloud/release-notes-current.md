@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 612885895dda73afb3406f73e59ef3eec6202f5d
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1677'
 ht-degree: 3%
 
 ---
@@ -78,28 +78,29 @@ Esta sección describe las notas de la versión de Cloud Manager en AEM as a Clo
 ## Fecha de la versión {#release-date-cm-march}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 11 de marzo de 2021.
+La próxima versión está planificada para el 08 de abril de 2021.
 
 
 ### Novedades {#what-is-new-march}
 
-* Los clientes con entornos con configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL y nombres de dominio personalizados verán un mensaje sobre sus configuraciones anteriores y podrán autoabastecerse mediante la interfaz de usuario. Los usuarios ahora pueden:
+* Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán autoabastecerse mediante la interfaz de usuario. Los usuarios ahora pueden:
    * Agregar la solución Sitios a un programa existente con Assets (o viceversa).
    * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
    * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
-* Los usuarios con los permisos necesarios ahora pueden editar el programa, lo que les permite hacer lo siguiente de forma autoservicio.
+* Los usuarios con los permisos necesarios ahora pueden editar Programa, lo que les permite hacer lo siguiente de forma autoservicio.
 
-* AEM etiqueta &quot;Actualización push&quot; ahora se mostrará para las pantallas Ejecución de canalización y Actividad.
+* **AEM** actualización push ahora se mostrará para las pantallas  *Ejecución de la* canalización y  ** Actividad.
 
-* Si un entorno está en hibernación pero también hay una actualización AEM disponible, el estado &quot;Hibernado&quot; tendrá prioridad sobre &quot;Actualizar disponible&quot;.
+* Si un entorno está en hibernación pero también hay una actualización AEM disponible, el estado **Hibernated** tendrá prioridad sobre **Update available**.
 
 * Los usuarios ahora pueden ver sus funciones de Cloud Manager seleccionando la opción &quot;Ver funciones de Cloud Manager&quot; después de navegar al icono de perfil de usuario (parte superior derecha) del shell unificado.
 
-* La etiqueta &quot;Solicitud de aprobación&quot; se ha vuelto a etiquetar como &quot;Aprobación de producción&quot; para una buena claridad.
+* La etiqueta **Application for Approval** se ha vuelto a etiquetar como **Production Approval** para una buena claridad.
 
-* La etiqueta &quot;Versión&quot; se ha vuelto a etiquetar como &quot;Etiqueta Git&quot; en la pantalla de ejecución de la canalización de producción.
+* La etiqueta **Version** se ha vuelto a etiquetar como **Git Tag** en la pantalla de ejecución de la canalización de producción.
 
-* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: Cancelar inmediatamente y Aprobar inmediatamente.
+* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: **Cancelar inmediatamente** y **Aprobar inmediatamente**.
 
 * Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
 
