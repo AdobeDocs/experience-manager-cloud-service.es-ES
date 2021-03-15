@@ -2,7 +2,7 @@
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -26,8 +26,8 @@ La próxima versión está planificada para el 08 de abril de 2021.
 * Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán autoabastecerse mediante la interfaz de usuario.
 
 * Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente de forma autoservicio:
-   * Agregar la solución Sitios a un programa existente con Assets (o viceversa).
-   * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
+   * Agregar la solución Sitios a un programa existente con Assets o viceversa.
+   * Elimine Sitios o Recursos de un programa existente con Sitios y Recursos.
    * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
 * **AEM** actualización push ahora se mostrará para las pantallas Ejecución de canalización y Actividad .
