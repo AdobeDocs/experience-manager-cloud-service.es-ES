@@ -1,16 +1,16 @@
 ---
-title: Comprobación del estado de un certificado SSL - Administración de certificados SSL
-description: Comprobación del estado de un certificado SSL - Administración de certificados SSL
+title: 'Comprobación del estado de un certificado SSL: Administración de certificados SSL'
+description: 'Comprobación del estado de un certificado SSL: Administración de certificados SSL'
 translation-type: tm+mt
-source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
+source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
 
-# Comprobando el estado de un certificado SSL {#checking-status-an-ssl-certificate}
+# Comprobación del estado de un certificado SSL {#checking-status-an-ssl-certificate}
 
 El estado de los certificados SSL se puede entender de un vistazo desde la página de certificados SSL.
 
@@ -24,3 +24,14 @@ NaranjaIndica que el certificado caducará en menos de 60 días. Es hora de aseg
 
 * ****
 RojoIndica que, a pesar de varias notificaciones, el certificado SSL ha caducado.
+
+## Configuraciones preexistentes de CDN para Listas de permitidos IP {#pre-existing-cdn}
+
+Los clientes con entornos que incluyan configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL o nombres de dominio personalizados verán el siguiente mensaje en la página de detalles **IP Lista de permitidos** y **Environment**.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+>[!NOTE]
+>Para ver y administrar las configuraciones preexistentes, deben agregarse a través de la interfaz de usuario, como se muestra en la figura siguiente.
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
