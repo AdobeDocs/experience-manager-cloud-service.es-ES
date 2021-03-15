@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
+source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1675'
 ht-degree: 3%
 
 ---
@@ -83,12 +83,13 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 ### Novedades {#what-is-new-march}
 
-* Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán autoabastecerse mediante la interfaz de usuario. Los usuarios ahora pueden:
+* Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán autoabastecerse mediante la interfaz de usuario.
+
+* Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente de forma autoservicio:
+
    * Agregar la solución Sitios a un programa existente con Assets (o viceversa).
    * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
    * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
-
-* Los usuarios con los permisos necesarios ahora pueden editar Programa, lo que les permite hacer lo siguiente de forma autoservicio.
 
 * **AEM** actualización push ahora se mostrará para las pantallas  *Ejecución de la* canalización y  ** Actividad.
 
