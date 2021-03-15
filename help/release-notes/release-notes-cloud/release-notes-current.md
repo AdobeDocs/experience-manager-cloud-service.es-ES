@@ -2,7 +2,7 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '1675'
 ht-degree: 3%
@@ -105,7 +105,7 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 * Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
 
-* La canalización de producción de Cloud Manager ahora incluirá la capacidad de prueba de la IU personalizada.
+* La canalización de producción de Cloud Manager ahora incluirá la capacidad [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Corrección de errores {#bug-fixes-cm-march}
 
