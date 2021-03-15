@@ -2,7 +2,7 @@
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
 translation-type: tm+mt
-source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
+source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -30,21 +30,21 @@ La próxima versión está planificada para el 08 de abril de 2021.
    * Elimine Sitios (o Recursos) de un programa existente con Sitios y Recursos.
    * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
 
-* AEM etiqueta &quot;Actualización push&quot; ahora se mostrará para las pantallas Ejecución de canalización y Actividad.
+* **AEM** actualización push ahora se mostrará para las pantallas Ejecución de canalización y Actividad .
 
-* Si un entorno está en hibernación pero también hay una actualización AEM disponible, el estado &quot;Hibernado&quot; tendrá prioridad sobre &quot;Actualizar disponible&quot;.
+* Si un entorno está en hibernación pero también hay una actualización AEM disponible, el estado **Hibernated** tendrá prioridad sobre **Update available**.
 
 * Los usuarios ahora pueden ver sus funciones de Cloud Manager seleccionando la opción &quot;Ver funciones de Cloud Manager&quot; después de navegar al icono de perfil de usuario (parte superior derecha) del shell unificado.
 
-* La etiqueta &quot;Solicitud de aprobación&quot; se ha vuelto a etiquetar como &quot;Aprobación de producción&quot; para una buena claridad.
+* La etiqueta **Application for Approval** se ha vuelto a etiquetar como **Production Approval** para una buena claridad.
 
-* La etiqueta &quot;Versión&quot; se ha vuelto a etiquetar como &quot;Etiqueta Git&quot; en la pantalla de ejecución de la canalización de producción.
+* La etiqueta **Version** se ha vuelto a etiquetar como **Git Tag** en la pantalla de ejecución de la canalización de producción.
 
-* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: Cancelar inmediatamente y Aprobar inmediatamente.
+* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: **Cancelar inmediatamente** y **Aprobar inmediatamente**.
 
 * Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
 
-* La canalización de producción de Cloud Manager ahora incluirá la capacidad de prueba de la IU personalizada.
+* La canalización de producción de Cloud Manager ahora incluirá la capacidad [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
 
 ### Corrección de errores {#bug-fixes}
 
