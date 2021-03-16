@@ -1,8 +1,8 @@
 ---
-title: 'Prueba de calidad del código: Cloud Services'
-description: 'Prueba de calidad del código: Cloud Services'
+title: 'Prueba de calidad de código: Cloud Services'
+description: 'Prueba de calidad de código: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 2%
@@ -10,43 +10,43 @@ ht-degree: 2%
 ---
 
 
-# Prueba de calidad del código {#code-quality-testing}
+# Prueba de calidad de código {#code-quality-testing}
 
-La prueba de calidad del código evalúa la calidad del código de la aplicación. Es el objetivo central de una tubería de sólo calidad de código y se ejecuta inmediatamente después del paso de construcción en todos los gasoductos que no sean de producción y producción.
+La prueba de calidad del código evalúa la calidad del código de la aplicación. Es el objetivo central de una canalización solo de calidad de código y se ejecuta inmediatamente después del paso de compilación en todas las canalizaciones que no sean de producción y producción.
 
 Consulte [Configuración de la canalización CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) para obtener más información sobre los distintos tipos de canalizaciones.
 
-## Explicación de las reglas de calidad del código {#understanding-code-quality-rules}
+## Comprender las reglas de calidad de código {#understanding-code-quality-rules}
 
-En la prueba de calidad del código, se analiza el código fuente para asegurarse de que cumple ciertos criterios de calidad. Actualmente, esto se implementa mediante una combinación de SonarQube y un examen a nivel de paquete de contenido con OakPAL. Existen más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas de AEM se crean en base a las optimizaciones de AEM ingeniería y se denominan [Reglas de calidad de código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+En la prueba de calidad del código, se analiza el código fuente para asegurarse de que cumple determinados criterios de calidad. Actualmente, esto es implementado por una combinación de SonarQube y el examen de nivel de paquete de contenido usando OakPAL. Hay más de 100 reglas que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas del AEM se crean en función de las prácticas recomendadas de AEM ingeniería y se denominan [Reglas de calidad de código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
->Puede descargar la lista completa de las reglas [aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
+>Puede descargar la lista completa de reglas [aquí](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx).
 
 **Puerta de tres niveles**
 
 Hay una estructura de tres niveles en este paso de prueba de calidad de código para los problemas identificados:
 
-* **Crítico**: Estos son problemas identificados por la puerta que causan un fallo inmediato de la tubería.
+* **Importante**: Estos son problemas identificados por la puerta que causan un fallo inmediato de la tubería.
 
-* **Importante**: Estos son problemas identificados por la puerta que hacen que la tubería entre en estado de pausa. Un administrador de implementación, un jefe de proyecto o un propietario de empresa pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+* **Importante**: Estos son problemas identificados por la puerta que hacen que la canalización introduzca un estado pausado. Un administrador de implementación, un administrador de proyectos o un propietario de empresa pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
 
-* **Información**: Estos son problemas identificados por la puerta que se proporcionan exclusivamente con fines informativos y no tienen impacto en la ejecución de la tubería
+* **Información**: Estos son problemas identificados por la puerta que se proporcionan exclusivamente con fines informativos y no tienen impacto en la ejecución de la canalización
 
 Los resultados de este paso se entregan como *Clasificaciones*.
 
-La siguiente tabla resume los umbrales de clasificación y error para cada una de las categorías críticas, importantes y de información:
+La siguiente tabla resume las clasificaciones y los umbrales de error para cada una de las categorías Crítica, Importante e Información:
 
 | Nombre | Definición | Categoría | Umbral de error |
 |--- |--- |--- |--- |
-| Clasificación de seguridad | A = 0 Vulnerabilidad <br/>B = al menos 1 vulnerabilidad menor<br/> C = al menos 1 vulnerabilidad mayor <br/>D = al menos 1 vulnerabilidad crítica <br/>E = al menos 1 vulnerabilidad de bloqueador | Crítico | &lt; B |
-| Clasificación de confiabilidad | A = 0 Error <br/>B = al menos 1 Error menor <br/>C = al menos 1 Error mayor <br/>D = al menos 1 Error crítico E = al menos 1 Error de bloqueador | Importante | &lt; C |
-| Clasificación de mantenimiento | El costo de corrección sobresaliente de los olores de código es: <br/><ul><li>&lt;> </li><li>entre el 6 y el 10 % la calificación es B </li><li>entre el 11 y el 20 % la calificación es una C </li><li>entre el 21 y el 50 % la calificación es una D</li><li>cualquier cosa superior al 50% es una E</li></ul> | Importante | &lt; A |
-| Cobertura | Combinación de cobertura de la línea de prueba unitaria y cobertura de condición mediante esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` <br/>donde: CT = condiciones que se han evaluado en &#39;true&#39; al menos una vez mientras se ejecutan pruebas unitarias <br/>CF = condiciones que se han evaluado en &#39;false&#39; al menos una vez mientras se ejecutan pruebas unitarias <br/>LC = líneas cubiertas = líneas_to_cover - líneas_descubiertas <br/><br/> B = número total de condiciones <br/>EL = número total de líneas ejecutables (lines_to_cover) | Importante | &lt; 50% |
+| Clasificación de seguridad | A = 0 Vulnerabilidad <br/>B = al menos 1 Vulnerabilidad menor<br/> C = al menos 1 Vulnerabilidad mayor <br/>D = al menos 1 Vulnerabilidad crítica <br/>E = al menos 1 Vulnerabilidad del bloqueador | Importante | &lt; B |
+| Clasificación de fiabilidad | A = 0 Error <br/>B = al menos 1 Error menor <br/>C = al menos 1 Error mayor <br/>D = al menos 1 Error crítico E = al menos 1 Error del bloqueador | Importante | &lt; C |
+| Puntuación de mantenimiento | El coste de corrección pendiente de los olores de código es: <br/><ul><li>&lt;> </li><li>entre el 6% y el 10% la calificación es a B </li><li>entre el 11% y el 20% la calificación es C </li><li>entre el 21 y el 50 % la calificación es D</li><li>cualquier valor superior al 50% es una E</li></ul> | Importante | &lt; A |
+| Cobertura | Una combinación de cobertura de línea de prueba unitaria y cobertura de condición utilizando esta fórmula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)` <br/>donde: CT = condiciones que se han evaluado en &#39;true&#39; al menos una vez al ejecutar pruebas unitarias <br/>CF = condiciones que se han evaluado en &#39;false&#39; al menos una vez al ejecutar pruebas unitarias <br/>LC = líneas cubiertas = líneas_to_cover - uncovered_lines <br/><br/> B = número total de condiciones <br/>EL = número total de líneas ejecutables (lines_to_cover) | Importante | &lt; 50% |
 | Pruebas unitarias omitidas | Número de pruebas unitarias omitidas. | Información | > 1 |
 | Problemas abiertos | Tipos de problemas generales: Vulnerabilidades, errores y huecos de código | Información | > 0 |
-| Líneas duplicadas | Número de líneas involucradas en bloques duplicados. <br/>Para que un bloque de código se considere como duplicado:  <br/><ul><li>**Proyectos que no son de Java:**</li><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse al menos en: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li><li>**Proyectos de Java:**</li><li> Debe haber al menos 10 declaraciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul> <br/>Las diferencias en sangría y en literales de cadena se omiten al detectar duplicaciones. | Información | > 1% |
-| Compatibilidad con Cloud Service | Número de problemas de compatibilidad con Cloud Service identificados. | Información | > 0 |
+| Líneas duplicadas | Número de líneas involucradas en bloques duplicados. <br/>Para que un bloque de código se considere duplicado:  <br/><ul><li>**Proyectos que no son de Java:**</li><li>Debe haber al menos 100 tokens sucesivos y duplicados.</li><li>Estos tokens deben propagarse al menos en: </li><li>30 líneas de código para COBOL </li><li>20 líneas de código para ABAP </li><li>10 líneas de código para otros idiomas</li><li>**Proyectos Java:**</li><li> Debe haber al menos 10 afirmaciones sucesivas y duplicadas, independientemente del número de tokens y líneas.</li></ul> <br/>Las diferencias en la sangría y en los literales de cadena se ignoran al detectar duplicados. | Información | > 1% |
+| Compatibilidad del Cloud Service | Número de problemas de compatibilidad con Cloud Service identificados. | Información | > 0 |
 
 >[!NOTE]
 >
@@ -59,9 +59,9 @@ La siguiente tabla resume los umbrales de clasificación y error para cada una d
 
 ## Tratamiento de falsos positivos {#dealing-with-false-positives}
 
-El proceso de análisis de calidad no es perfecto y a veces identifica incorrectamente problemas que no son realmente problemáticos. Esto se conoce como *falso positivo*.
+El proceso de digitalización de la calidad no es perfecto y a veces identifica incorrectamente los problemas que no son realmente problemáticos. Esto se conoce como *falso positivo*.
 
-En estos casos, el código fuente se puede anotar con la anotación estándar Java `@SuppressWarnings` que especifica el ID de regla como el atributo de anotación. Por ejemplo, un problema común es que la regla SonarQube para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
+En estos casos, el código fuente se puede anotar con la anotación estándar Java `@SuppressWarnings` que especifica el ID de regla como atributo de anotación. Por ejemplo, un problema común es que la regla SonarQube para detectar contraseñas codificadas puede ser agresiva sobre cómo se identifica una contraseña codificada.
 
 Para ver un ejemplo específico, este código sería bastante común en un proyecto AEM que tiene código para conectarse a algún servicio externo:
 
@@ -70,7 +70,7 @@ Para ver un ejemplo específico, este código sería bastante común en un proye
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube generará una vulnerabilidad de bloqueador. Después de revisar el código, se identifica que no se trata de una vulnerabilidad y se puede anotar con la identificación de regla adecuada.
+SonarQube entonces generará una vulnerabilidad Blocker. Después de revisar el código, identifique que esta no es una vulnerabilidad y pueda anotarla con el id de regla adecuado.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -78,7 +78,7 @@ SonarQube generará una vulnerabilidad de bloqueador. Después de revisar el có
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-Sin embargo, por otro lado, si el código era en realidad esto:
+Sin embargo, por otro lado, si el código era realmente así:
 
 ```java
 @Property(label = "Service Password", value = "mysecretpassword")
@@ -89,7 +89,7 @@ A continuación, la solución correcta es quitar la contraseña codificada.
 
 >[!NOTE]
 >
->Aunque es recomendable que la anotación `@SuppressWarnings` sea lo más específica posible, es decir, que solo haga anotaciones en la sentencia o bloque específico que causa el problema, es posible realizar anotaciones en un nivel de clase.
+>Aunque se recomienda hacer que la anotación `@SuppressWarnings` sea lo más específica posible, es decir, anotar solo la sentencia o bloque específico que causa el problema, es posible realizar anotaciones a nivel de clase.
 
 >[!NOTE]
->Aunque no hay un paso explícito de la prueba de seguridad, todavía hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte [Información general de seguridad para AEM como Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
+>Aunque no hay ningún paso explícito de Prueba de seguridad, aún hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
