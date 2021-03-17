@@ -3,9 +3,9 @@ title: Metadatos XMP
 description: Obtenga información sobre el estándar de metadatos XMP (Plataforma de metadatos extensible) para la administración de metadatos. La utiliza AEM como formato estandarizado para la creación, el procesamiento y el intercambio de metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '979'
 ht-degree: 16%
 
 ---
@@ -72,7 +72,10 @@ XMP le ofrece la posibilidad de agregar una propiedad `xml:lang` a las propiedad
 
 ## Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
-Esta función XMP reescritura en [!DNL Adobe Experience Manager Assets] duplica los cambios de metadatos en las representaciones del recurso original. Cuando cambia los metadatos de un recurso desde [!DNL Assets] o mientras carga el recurso, los cambios se almacenan inicialmente dentro del nodo del recurso en el repositorio. Sin embargo, [!DNL Assets] no propaga automáticamente ningún cambio en los metadatos de las representaciones de un recurso. La función XMP reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas de ellas. Las actualizaciones se almacenan en el nodo de metadatos de la jerarquía de recursos. Esta función también incrusta las actualizaciones en los archivos binarios de las representaciones. La función solo vuelve a escribir las propiedades de metadatos que utilizan un espacio de nombres `jcr`.
+Esta función XMP reescritura en [!DNL Adobe Experience Manager Assets] duplica los cambios de metadatos en las representaciones del recurso original.
+Al cambiar los metadatos de un recurso desde Assets o al cargarlo, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
+
+La función XMP reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas de ellas. La función solo recupera las propiedades de metadatos que utilizan el espacio de nombres `jcr`, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero no una propiedad denominada `mytitle`.
 
 Por ejemplo, imaginemos un escenario en el que se modifica la propiedad [!UICONTROL Title] del recurso titulada `Classic Leather` a `Nylon`.
 
