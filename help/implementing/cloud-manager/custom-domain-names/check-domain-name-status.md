@@ -2,7 +2,7 @@
 title: Comprobación del estado del nombre de dominio
 description: Comprobación del estado del nombre de dominio
 translation-type: tm+mt
-source-git-commit: f3df4b23dc4542e7a194c979a7894bda1b728572
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -49,6 +49,6 @@ Los clientes con entornos que incluyan configuraciones de CDN preexistentes para
 >[!NOTE]
 >Para ver y administrar las configuraciones preexistentes, deben agregarse mediante la interfaz de usuario de . Consulte [Adición de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obtener más información.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
