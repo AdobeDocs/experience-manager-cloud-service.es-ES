@@ -2,9 +2,9 @@
 title: Fase de Publicar Go-live
 description: Fase de Publicar Go-live
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '233'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Los clientes pueden acceder a la lista CRX/DE Lite en el entorno de desarrollo, 
 >[!IMPORTANT]
 >No se puede escribir en el repositorio inmutable `/libs` y `/apps` durante la ejecución, por lo que al intentar hacerlo se generan errores. Además, los clientes no tendrán acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-Consulte [Desarrollo de CRX/DE Lite](https://docs.adobe.com/help/es-ES/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) para obtener información sobre cómo desarrollar la aplicación AEM con CRX/DE Lite.
+Consulte [Desarrollo de CRX/DE Lite](/help/implementing/developing/tools/crxde.md) para obtener información sobre cómo desarrollar la aplicación AEM con CRX/DE Lite.
 
 ## Administración de registros {#managing-logs}
 
