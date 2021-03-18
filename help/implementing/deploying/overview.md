@@ -2,9 +2,9 @@
 title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3246'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Configuración según el contexto (cualquier configuración en `/conf`) (añadir, modificar, quitar)
    * Secuencias de comandos (los paquetes pueden almacenar en déclencheur los enlaces Instalar en varias etapas del proceso de instalación del paquete
 
-Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. Puede encontrar más información en [AEM documentación](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html) sobre la reestructuración recomendada del proyecto.
+Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y los detalles sobre la reestructuración de proyectos recomendada se pueden encontrar en la documentación de la [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere la instalación manual mediante el Administrador de paquetes.
@@ -111,7 +111,7 @@ Además, no hay ningún mecanismo para revertir los cambios del paquete de conte
 
 Cualquier paquete de terceros incluido debe validarse como compatible con el servicio de Cloud Service AEM como compatible; de lo contrario, su inclusión dará como resultado un error de implementación.
 
-Como se ha mencionado anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración de repositorios descrito en [AEM documentación](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html).
+Como se ha mencionado anteriormente, los clientes con bases de código existentes deben ajustarse al ejercicio de reestructuración de repositorios que requieren los cambios del repositorio 6.5 descritos en la documentación de [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## Informe {#repoinit}
 
