@@ -2,9 +2,9 @@
 title: Configuración del marco de integración de traducción
 description: Aprenda a configurar el marco de integración de traducción para integrarlo con servicios de traducción de terceros.
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1381'
 ht-degree: 2%
 
 ---
@@ -12,19 +12,19 @@ ht-degree: 2%
 
 # Configuración del marco de integración de traducción {#configuring-the-translation-integration-framework}
 
-El marco de integración de traducción se integra con los servicios de traducción de terceros para organizar la traducción del contenido de AEM. Requiere tres pasos básicos.
+El marco de integración de traducción se integra con los servicios de traducción de terceros para organizar la traducción de AEM contenido. Requiere tres pasos básicos.
 
 1. [Conéctese a su proveedor de servicios de traducción.](#connecting-to-a-translation-service-provider)
 1. [Cree una configuración del marco de integración de traducción.](#creating-a-translation-integration-configuration)
 1. [Asocie las configuraciones de nube con sus páginas.](#configuring-pages-for-translation)
 
-Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
+Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
 
 ## Conexión a un proveedor de servicios de traducción {#connecting-to-a-translation-service-provider}
 
-Cree una configuración de nube que conecte AEM a su proveedor de servicios de traducción. AEM incluye la capacidad de [conectarse a Microsoft Translator](connect-ms-translator.md) de forma predeterminada.
+Cree una configuración de nube que se conecte AEM con su proveedor de servicios de traducción. AEM incluye la capacidad de [conectarse a Microsoft Translator](connect-ms-translator.md) de forma predeterminada.
 
-Los siguientes proveedores de traducción proporcionan una implementación de la API de AEM para los proyectos de traducción.
+Los siguientes proveedores de traducción proporcionan una implementación de la API de AEM para proyectos de traducción.
 
 * [Microsoft Translator](connect-ms-translator.md)
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)  (Adobe Exchange Premier Partner)
@@ -37,7 +37,6 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 Después de instalar un paquete de conector, puede crear una configuración de nube para el conector. Normalmente, debe proporcionar sus credenciales para autenticarse con el servicio de traducción. Para obtener información sobre cómo agregar una configuración de nube para el conector de Microsoft Translator, consulte [Integración con Microsoft Translator](connect-ms-translator.md).
 
@@ -61,7 +60,7 @@ Después de configurar un marco de integración de traducción, puede [asociarlo
 
 >[!TIP]
 >
->Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
+>Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
 
 Una sola configuración del marco controla cómo traducir el contenido de la página y los recursos.
 
@@ -69,7 +68,7 @@ Una sola configuración del marco controla cómo traducir el contenido de la pá
 
 Para crear una nueva configuración de traducción:
 
-1. En el [menú de navegación global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) toque o haga clic en **Herramientas -> Cloud Services -&amp; Translation Cloud Services**.
+1. En el [menú de navegación global,](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) toque o haga clic en **Herramientas -> Cloud Services -&amp; Cloud Services de traducción**.
 1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. A menudo se basa en un sitio en particular o puede ser global.
 1. Proporcione la siguiente información en los campos y, a continuación, toque o haga clic en **Crear**:
    1. Seleccione **Tipo de configuración** en la lista desplegable.
@@ -108,7 +107,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
 
 Para configurar la traducción de las páginas de origen a otros idiomas, asocie las páginas con las siguientes configuraciones de nube:
 
-* La configuración de nube que conecta AEM con su proveedor de traducción.
+* La configuración de nube que se conecta AEM con su proveedor de traducción.
 * Marco de integración de traducción que configura los detalles de la traducción.
 
 Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para conectarse al proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
