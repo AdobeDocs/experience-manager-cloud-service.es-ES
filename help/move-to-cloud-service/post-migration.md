@@ -2,10 +2,10 @@
 title: Fase posterior a la migración
 description: Fase posterior a la migración
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Los clientes pueden acceder a la lista **CRXDE Lite** en el entorno de desarroll
 >[!IMPORTANT]
 >No se puede escribir en el repositorio inmutable `/libs` y `/apps` durante la ejecución, por lo que al intentar hacerlo se generan errores. Además, los clientes no tendrán acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-Consulte [Desarrollo de CRXDE Lite](https://docs.adobe.com/help/es-ES/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) para obtener información sobre cómo desarrollar la aplicación AEM con CRXDE Lite.
+Consulte [Desarrollo de CRXDE Lite](/help/implementing/developing/tools/crxde.md) para obtener información sobre cómo desarrollar la aplicación AEM con CRXDE Lite.
 
 ## Administración de registros {#managing-logs}
 
