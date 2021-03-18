@@ -2,9 +2,9 @@
 title: 'Reglas de calidad de código personalizadas: Cloud Services'
 description: 'Reglas de calidad de código personalizadas: Cloud Services'
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 4%
 
 ---
@@ -747,7 +747,7 @@ Los clientes que utilizan la replicación inversa deben ponerse en contacto con 
 
 **Desde**: Versión 2021.2.0
 
-AEM bibliotecas cliente pueden contener recursos estáticos como imágenes y fuentes. Como se describe en [Uso de preprocesadores](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors), al utilizar bibliotecas de cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada resources para que se haga referencia a ellos de forma efectiva en las instancias de publicación.
+AEM bibliotecas cliente pueden contener recursos estáticos como imágenes y fuentes. Como se describe en [Uso de preprocesadores](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), al utilizar bibliotecas de cliente proxy, estos recursos estáticos deben estar contenidos en una carpeta secundaria denominada resources para que se haga referencia a ellos de forma efectiva en las instancias de publicación.
 
 #### Código no compatible {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ Con el paso a los microservicios de recursos para el procesamiento de recursos e
 
 **Desde**: Versión 2021.2.0
 
-Aunque históricamente el uso de plantillas estáticas ha sido muy común en AEM proyectos, se recomiendan las plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las plantillas estáticas. Encontrará más información en [Plantillas de página: editables](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en). La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las [AEM Herramientas de modernización](https://opensource.adobe.com/aem-modernize-tools/).
+Aunque históricamente el uso de plantillas estáticas ha sido muy común en AEM proyectos, se recomiendan las plantillas editables, ya que proporcionan la mayor flexibilidad y admiten funciones adicionales que no están presentes en las plantillas estáticas. Encontrará más información en [Plantillas de página.](/help/implementing/developing/components/templates.md) La migración de plantillas estáticas a editables se puede automatizar en gran medida mediante las  [AEM Herramientas](https://opensource.adobe.com/aem-modernize-tools/) de modernización.
 
 ### OakPAL: se desaconseja el uso de componentes de base heredados {#oakpal-usage-legacy}
 
