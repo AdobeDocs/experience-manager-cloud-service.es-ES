@@ -1,22 +1,23 @@
 ---
-title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.7.0
-description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.7.0
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.7.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.7.0
+feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 73%
 
 ---
 
 
-# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.7.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2020.7.0 {#release-notes}
 
-Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.7.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2020.7.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.7.0 es el 9 de julio de 2020.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.7.0 es el 9 de julio de 2020.
 
 ## Novedades {#whats-new-cloud-manager}
 
@@ -30,10 +31,10 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.7.0 es el 9
 
    Consulte [Variables de canalización](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables) para obtener más detalles.
 
-* Ahora se admiten repositorios privados de Maven enlazados a autenticación.
+* Ahora se admiten repositorios Maven privados enlazados a autenticación.
 
 * El contenedor de generación de Cloud Manager ahora admite Java 8 y Java 11.
-Consulte [Uso de la compatibilidad con Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) para obtener más detalles.
+Consulte [Uso de la compatibilidad con Java 11](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) para obtener más información.
 
 ### Corrección de errores {#bug-fixes-cm}
 
