@@ -1,18 +1,18 @@
 ---
 title: Creación de páginas de múltiples productos y categorías
-description: Aprenda a enriquecer las páginas de detalles de producto y aterrizaje de Categoría con contenido de mercadotecnia de destino.
+description: Aprenda a enriquecer las páginas de aterrizaje y detalles del producto de categorías con contenido de marketing dirigido.
 sub-product: Comercio
 version: cloud-service
 doc-type: feature-video
 activity: use
 audience: marketer
-feature: Commerce Integration Framework
+feature: Marco de integración de Commerce
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '105'
 ht-degree: 86%
 
 ---
