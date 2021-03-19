@@ -1,10 +1,12 @@
 ---
 title: Creación y sincronización de Live Copies
 description: Aprenda a crear y sincronizar Live Copies para reutilizar el contenido en el sitio.
+feature: Administrador de varios sitios
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4188'
+source-wordcount: '4192'
 ht-degree: 1%
 
 ---
@@ -208,7 +210,7 @@ Hay varias formas de sincronizar tu Live Copy.
 
 ### Despliegue de un modelo {#rolling-out-a-blueprint}
 
-Despliegue una página de modelo para insertar los cambios de contenido en Live Copies. Una acción **Rollout** ejecuta las configuraciones de lanzamiento que utilizan el activador [On Rollout](live-copy-sync-config.md#rollout-triggers).
+Despliegue una página de modelo para insertar los cambios de contenido en Live Copies. Una acción **Rollout** ejecuta las configuraciones de lanzamiento que utilizan el déclencheur [On Rollout](live-copy-sync-config.md#rollout-triggers).
 
 >[!NOTE]
 >
@@ -288,7 +290,7 @@ Sincronice una Live Copy para extraer cambios del origen a la Live Copy.
 
 >[!NOTE]
 >
->La sincronización ejecuta las configuraciones de lanzamiento que utilizan el activador [On Rollout](live-copy-sync-config.md#rollout-triggers).
+>La sincronización ejecuta las configuraciones de lanzamiento que utilizan el déclencheur [On Rollout](live-copy-sync-config.md#rollout-triggers).
 
 1. En la consola **Sitios**, seleccione la página Live Copy y abra las propiedades.
 1. Abra la pestaña **Live Copy**.
