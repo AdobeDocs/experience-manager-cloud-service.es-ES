@@ -1,18 +1,20 @@
 ---
 title: Conexión a Microsoft Translator
 description: Obtenga información sobre cómo conectar AEM a Microsoft Translator de forma predeterminada para automatizar el flujo de trabajo de traducción.
+feature: Copiar idioma
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 2%
+source-wordcount: '479'
+ht-degree: 3%
 
 ---
 
 
 # Conexión a Microsoft Translator {#connecting-to-microsoft-translator}
 
-Cree una configuración para el servicio en la nube [Microsoft Translator](https://hub.microsofttranslator.com) para utilizar su cuenta de Microsoft Translation para traducir contenido o recursos de páginas de AEM.
+Cree una configuración para el servicio en la nube [Microsoft Translator](https://hub.microsofttranslator.com) para utilizar su cuenta de Microsoft Translation para traducir AEM contenido de página o recursos.
 
 >[!NOTE]
 >
@@ -29,12 +31,12 @@ Después de crear la configuración, debe [activarla](#activating-the-translator
 
 El siguiente procedimiento crea una configuración de Microsoft Translator.
 
-1. En el panel de navegación [,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) toque o haga clic en **Herramientas** -> **Cloud Services** -> **Servicios de nube de traducción**.
+1. En el [panel de navegación,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
 1. Vaya a donde desea crear la configuración. Normalmente, esto se encuentra en la raíz del sitio o puede ser una configuración global predeterminada.
 1. Toque o haga clic en el botón **Create**.
 1. Defina la configuración.
    1. Seleccione **Microsoft Translator** en la lista desplegable.
-   1. Escriba un título para la configuración. El título identifica la configuración en la consola de Cloud Services, así como en las listas desplegables de propiedades de página.
+   1. Escriba un título para la configuración. El título identifica la configuración en la consola Cloud Services, así como en las listas desplegables de propiedades de página.
    1. Opcionalmente, escriba un nombre para usar para el nodo del repositorio que almacena la configuración.
 
    ![Crear configuración de traducción](../assets/create-translation-config.png)
@@ -51,7 +53,7 @@ El siguiente procedimiento crea una configuración de Microsoft Translator.
 
 Las páginas de configuración de Microsoft Translation proporcionan un práctico vínculo al sitio web de Microsoft para obtener una suscripción de cuenta adecuada para los sistemas de producción.
 
-1. En el panel de navegación [,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) toque o haga clic en **Herramientas** -> **Cloud Services** -> **Servicios de nube de traducción**.
+1. En el panel de navegación [,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
 1. Toque o haga clic en la configuración existente de Microsoft Translator.
 1. Toque o haga clic en **Editar**.
 1. En la ventana **Editar configuración**, pulse o haga clic en **Actualizar suscripción**. Se abre una página web de Microsoft con más detalles sobre el servicio.
@@ -60,7 +62,7 @@ Las páginas de configuración de Microsoft Translation proporcionan un práctic
 
 Las páginas de configuración de Microsoft Translation proporcionan un práctico vínculo al sitio web de Microsoft para personalizar el motor de Microsoft Translator.
 
-1. En el panel de navegación [,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) toque o haga clic en **Herramientas** -> **Cloud Services** -> **Servicios de nube de traducción**.
+1. En el panel de navegación [,](/help/sites-cloud/authoring/getting-started/basic-handling.md#first-steps) toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
 1. Toque o haga clic en la configuración existente de Microsoft Translator.
 1. Toque o haga clic en **Editar**.
 1. En la ventana **Editar configuración**, pulse o haga clic en **Personalizar traductor**. Utilice la página web de Microsoft que se abre para personalizar el servicio.
