@@ -1,10 +1,12 @@
 ---
 title: Imágenes interactivas
 description: Aprenda a trabajar con imágenes interactivas en Dynamic Media.
+feature: Imágenes interactivas
+topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4249'
 ht-degree: 1%
 
 ---
@@ -36,8 +38,8 @@ El tutorial ayuda a ilustrar los pasos para integrar imágenes interactivas en s
 
 Pasos de imágenes interactivas:
 
-1. **(Opcional) Identificación de variables de puntos interactivos**. Si utiliza Recursos Adobe Experience Manager y Dynamic Media independientes, identifique las variables dinámicas que utiliza en la implementación de vista rápida existente. De este modo, se garantiza que puede introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables).
-Sin embargo, si utiliza AEM Sites, AEM eCommerce, o ambos, este paso no es necesario.
+1. **(Opcional) Identificación de variables de puntos interactivos**. Si utiliza Adobe Experience Manager Assets y Dynamic Media de forma independiente, identifique las variables dinámicas que utiliza en la implementación de vista rápida existente. De este modo, se garantiza que puede introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables).
+Sin embargo, si utiliza AEM Sites, AEM comercio electrónico o ambos, este paso no es necesario.
 
 1. **(Opcional) Creación de un ajuste preestablecido de visualizador de imagen interactiva**. Personalice la imagen gráfica que se utiliza para representar zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imagen interactiva si quiere usar el ajuste preestablecido de visualizador de imagen interactiva predeterminado, denominado `Shoppable_Banner` en su lugar.
 Consulte [(Opcional) Creación de un ajuste preestablecido de visualizador de imagen interactivo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -51,7 +53,7 @@ Consulte [Vista previa de imágenes interactivas](#optional-previewing-interacti
 Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
 
 1. **Añadir una imagen interactiva al sitio web o al sitio web en Experience Manager**. Si utiliza Sitios, Comercio electrónico o ambos, puede agregar imágenes interactivas directamente a una página web en Experience Manager. Arrastre el componente Medios interactivos a la página. Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-Si utiliza Experience Manager Assets y Dynamic Media de forma independiente, copie el código incrustado en el sitio web. A continuación, inclúyalo con la vista rápida existente. Consulte [Integración de una imagen interactiva con su sitio web](#integrating-an-interactive-image-with-your-website).
+Si utiliza Experience ManagerAssets y Dynamic Media de forma independiente, copie el código incrustado en el sitio web. A continuación, inclúyalo con la vista rápida existente. Consulte [Integración de una imagen interactiva con su sitio web](#integrating-an-interactive-image-with-your-website).
 Si utiliza un WCM de terceros (Web Content Manager), integre el nuevo vídeo interactivo con la vista rápida existente que se utiliza en el sitio web. Consulte [Integración de una imagen interactiva con una vista rápida](#integrating-an-interactive-image-with-an-existing-quickview) existente.
 
 ## (Opcional) Identificación de variables de puntos interactivos {#optional-identifying-hotspot-variables}
@@ -61,15 +63,15 @@ Si utiliza un WCM de terceros (Web Content Manager), integre el nuevo vídeo int
 >Esta tarea solo es necesaria si los siguientes son verdaderos:
 >
 >* Desea agregar interactividad a la imagen activando las vistas rápidas.
->* La implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico. Estas soluciones incluyen IBM WebSphere® Commerce, Elastic Path, hybris o Intershop.
+>* Su implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico. Estas soluciones incluyen IBM WebSphere® Commerce, Elastic Path, hybris o Intershop.
 
 >
 >
-Si su implementación de AEM utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
+Si la implementación de AEM utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
 
 Comience identificando las variables dinámicas que usa la implementación de vista rápida existente, de modo que pueda introducir datos de puntos interactivos para crear la imagen interactiva.
 
-Cuando agregue zonas interactivas a una imagen de titular en Experience Manager Assets, asigne un SKU (unidad de mantenimiento de stock). El SKU es un identificador único para cada producto o servicio distinto que ofrezca. Y, agregue cualquier variable opcional adicional a cada zona interactiva. Estas variables de puntos interactivos se utilizan más adelante para hacer coincidir puntos interactivos con el contenido de la vista rápida.
+Cuando agregue zonas interactivas a una imagen de titular en Recursos de Experience Manager, asigne un SKU (unidad de mantenimiento de existencias). El SKU es un identificador único para cada producto o servicio distinto que ofrezca. Y, agregue cualquier variable opcional adicional a cada zona interactiva. Estas variables de puntos interactivos se utilizan más adelante para hacer coincidir puntos interactivos con el contenido de la vista rápida.
 
 Es importante identificar correctamente el número y el tipo de variables que se asociarán con los datos de puntos interactivos. Cada zona interactiva agregada a una imagen de banner debe contener suficiente información para identificar el producto de forma inequívoca en el sistema back-end existente.
 
@@ -84,7 +86,7 @@ La mayoría de las implementaciones de la vista rápida utilizan el siguiente pa
 * Los datos de vista rápida se traducen al contenido como preparación para su renderización en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-El método entonces es visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida. A continuación, active la vista rápida y capture la URL de Ajax que envía la página web para cargar los datos o el contenido de la vista rápida.
+El método entonces es visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida. A continuación, déclencheur la vista rápida y capture la URL de Ajax que envía la página web para cargar los datos o el contenido de la vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. A continuación se indican algunos ejemplos de exploradores web que incluyen inspectores web:
 
@@ -94,15 +96,15 @@ En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarro
 * En Firefox, puede activar el complemento Firebug pulsando F12 y utilizando su pestaña Red. O bien, puede utilizar la herramienta Inspector integrada y su pestaña Red.
 En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, haga clic en la ficha Inspector.
 
-Cuando la supervisión de red está activada en el explorador, active la vista rápida en la página.
+Cuando la supervisión de red está activada en el explorador, ponga en déclencheur la vista rápida en la página.
 
-Ahora, busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para su análisis futuro. Por lo general, cuando se activa la vista rápida, hay muchas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de una cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
+Ahora, busque la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para su análisis futuro. Por lo general, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de una cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
 Durante este proceso, es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada. Sin embargo, solo cambian si se visita un área diferente del sitio web.
 
 En el caso más simple, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor SKU es la única pieza de datos que necesita para agregar zonas interactivas a la imagen del banner.
 
-Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU. Por ejemplo, los distintos elementos pueden incluir el ID de categoría, el código de color y el código de tamaño. En estos casos, cada elemento es una variable independiente en la definición de datos de puntos interactivos de la función de imagen interactiva de ventas de Experience Manager Assets.
+Sin embargo, en casos complejos, la URL de vista rápida tiene diferentes elementos además del SKU. Por ejemplo, los distintos elementos pueden incluir el ID de categoría, el código de color y el código de tamaño. En estos casos, cada elemento es una variable independiente en la definición de datos de puntos interactivos de la función de imagen interactiva de ventas en Recursos Experience Manager.
 
 Veamos los siguientes ejemplos de direcciones URL de vista rápida y las variables de puntos interactivos resultantes:
 
@@ -166,15 +168,15 @@ Dada esta información, toda la URL de vista rápida tiene el siguiente patrón:
 
 En función de este análisis, utilizaría `categoryId` y `SKU` para las zonas interactivas.
 
-Ya está listo para cargar un titular de imagen y agregarle zonas interactivas mediante la función de imagen interactiva de ventas en AEM Assets.
+Ya está listo para cargar un titular de imagen y agregarle zonas interactivas mediante la función de imagen interactiva de ventas de AEM Assets.
 
 ## (Opcional) Creación de un ajuste preestablecido de visualizador de imagen interactivo {#optional-creating-an-interactive-image-viewer-preset}
 
-Puede elegir utilizar el ajuste preestablecido predeterminado y listo para usar del visualizador de imagen interactiva llamado `Shoppable_Banner` que se incluye con AEM Assets. O puede crear su propio ajuste preestablecido de visualizador personalizado para utilizarlo con imágenes interactivas.
+Puede elegir utilizar el ajuste preestablecido predeterminado y listo para usar del visualizador de imágenes interactivo llamado `Shoppable_Banner` que viene con AEM Assets. O puede crear su propio ajuste preestablecido de visualizador personalizado para utilizarlo con imágenes interactivas.
 
 Al crear un ajuste preestablecido personalizado del visualizador de imagen interactiva, puede determinar el aspecto de las zonas interactivas en el banner de imagen. Como parte de la creación del ajuste preestablecido de visualizador, puede elegir utilizar un gráfico de zona interactiva de una galería de imágenes predefinidas.
 
-Después de guardar el ajuste preestablecido de visualizador, se activa automáticamente (se activa) en la página de lista Ajustes preestablecidos de visualizador en AEM Assets. Esta funcionalidad significa que está visible en el componente de Medios interactivos y siempre que se vea un recurso. Sin embargo, para *entregar* un banner interactivo con este ajuste preestablecido de visualizador, *publique* también el ajuste preestablecido de visualizador. Esta regla es verdadera para los ajustes preestablecidos de visor personalizados o predeterminados.
+Después de guardar el ajuste preestablecido de visualizador, se activa automáticamente (se activa) en la página de lista Ajustes preestablecidos de visualizador de AEM Assets. Esta funcionalidad significa que está visible en el componente de Medios interactivos y siempre que se vea un recurso. Sin embargo, para *entregar* un banner interactivo con este ajuste preestablecido de visualizador, *publique* también el ajuste preestablecido de visualizador. Esta regla es verdadera para los ajustes preestablecidos de visor personalizados o predeterminados.
 
 **Para crear un ajuste preestablecido de visualizador de imagen interactivo**
 
@@ -263,15 +265,15 @@ Si edita imágenes interactivas con zonas interactivas y recorta la imagen, se e
 
    * Pulse **[!UICONTROL Vista rápida]**.
 
-      * Si es cliente de AEM Sites o eCommerce, toque o haga clic en el icono Selector de productos (lupa) para abrir la página Seleccionar producto . Pulse el producto que desee utilizar y, a continuación, pulse **Seleccionar** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
-      * Si es *no* cliente de Experience Manager Sites o eCommerce
+      * Si es cliente de AEM Sites o de comercio electrónico, toque o haga clic en el icono Selector de productos (lupa) para abrir la página Seleccionar producto . Pulse el producto que desee utilizar y, a continuación, pulse **Seleccionar** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
+      * Si es *no* cliente de Sites Experience Manager o comercio electrónico
 
          * Consulte [Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables); debe definir estas variables.
          * A continuación, introduzca manualmente el valor de SKU. En el campo de texto Valor de SKU , escriba el SKU del producto. El valor SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida. Garantiza que el sistema sepa asociar la zona interactiva utilizada con la vista rápida de un SKU concreto.
          * (Opcional) Si hay otras variables dentro de la vista rápida que se utilizan para identificar un producto, pulse **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable agregada.
    * Toque **[!UICONTROL Hipervínculo]**.
 
-      * Si es cliente de Experience Manager Sites, pulse el icono Selector de sitio (carpeta). Vaya a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios de Experience Manager.
+      * Si es cliente de Sites de Experience Manager, pulse el icono Selector de sitio (carpeta). Vaya a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
       * Si es cliente independiente, en el campo de texto HREF especifique la ruta de URL completa a una página web vinculada.
 
    Asegúrese de especificar si desea abrir el vínculo en una nueva pestaña del explorador (opción predeterminada recomendada) o en la misma pestaña.
@@ -280,7 +282,7 @@ Si edita imágenes interactivas con zonas interactivas y recorta la imagen, se e
 
    * Pulse **[!UICONTROL Fragmento de experiencias]**.
 
-      * Si es cliente de AEM Sites, toque o haga clic en el icono de búsqueda (lupa) para abrir la página Fragmento de experiencias . Puntee en el fragmento de experiencia que desee utilizar. A continuación, pulse **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
+      * Si es cliente de AEM Sites, toque o haga clic en el icono de búsqueda (lupa) para abrir la página Fragmento de experiencia . Puntee en el fragmento de experiencia que desee utilizar. A continuación, pulse **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página. Volverá a la página de administración de puntos interactivos.
 Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
       * Especifique la anchura y la altura del fragmento de experiencia tal como desea que aparezca en el banner.
@@ -328,7 +330,7 @@ Después de cargar una imagen de banner, agregar zonas interactivas a ella y pub
 
 Si es cliente de AEM Sites, puede agregar la imagen interactiva arrastrando el componente de Medios interactivos a su página. Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
-Si es cliente independiente de AEM Assets, puede añadir manualmente la imagen interactiva a su sitio web como se describe en esta sección.
+Si es cliente independiente de AEM Assets, puede agregar manualmente la imagen interactiva a su sitio web como se describe en esta sección.
 
 1. Copie el código incrustado de la imagen interactiva publicada.
 Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
@@ -366,7 +368,7 @@ El último paso de este proceso es integrar la imagen interactiva con una implem
 
 La implementación de vista rápida existente representa normalmente una cadena de acciones interrelacionadas que se producen en la página web en el siguiente orden:
 
-1. Un usuario activa un elemento en la interfaz de usuario del sitio web.
+1. Un usuario déclencheur un elemento en la interfaz de usuario del sitio web.
 1. El código front-end obtiene una URL de vista rápida basada en el elemento de la interfaz de usuario que se activó en el paso 1.
 1. El código front-end envía una solicitud de Ajax utilizando la URL obtenida en el paso 2.
 1. La lógica back-end devuelve los datos o el contenido de vista rápida correspondientes al código front-end.
@@ -376,15 +378,15 @@ La implementación de vista rápida existente representa normalmente una cadena 
 
 Estas llamadas no representan necesariamente llamadas de API públicas independientes a las que la lógica de página web llama desde un paso arbitrario. En su lugar, se trata de una llamada encadenada en la que cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
 
-Cuando la imagen interactiva de la tabla de ventas sustituye al paso 1 y, en parte, al paso 2, un usuario toca una zona interactiva dentro de la imagen de la tabla de compras. El visor gestiona esta interacción de usuario. El visor devuelve un evento a la página web que contiene todos los datos de puntos interactivos añadidos anteriormente a AEM Assets.
+Cuando la imagen interactiva de la tabla de ventas sustituye al paso 1 y, en parte, al paso 2, un usuario toca una zona interactiva dentro de la imagen de la tabla de compras. El visor gestiona esta interacción de usuario. El visor devuelve un evento a la página web que contiene todos los datos de zona interactiva añadidos anteriormente a AEM Assets.
 
 En un controlador de eventos de este tipo, el código front-end hace lo siguiente:
 
 * Escucha un evento emitido por la imagen interactiva de ventas.
 * Crea una URL de vista rápida basada en los datos de zona interactiva.
-* Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
+* Déclencheur el proceso de carga de la vista rápida desde el servidor y de renderización en la pantalla para su visualización.
 
-El código incrustado devuelto por Experience Manager Assets tiene un controlador de eventos listo para usar que se comenta, como se ve en el siguiente fragmento de código resaltado:
+El código incrustado devuelto por Recursos de Experience Manager tiene un controlador de eventos listo para usar que se comenta, como se ve en el siguiente fragmento de código resaltado:
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
@@ -445,7 +447,7 @@ En los ejemplos anteriores de URL de vista rápida se puede ver en los ejemplos 
  </tbody>
 </table>
 
-El último paso para activar la URL de vista rápida y activar el panel de vista rápida requiere la asistencia de una persona de TI de front-end de su empresa. Tienen conocimientos para saber mejor cómo activar con precisión la implementación de la vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
+El último paso para almacenar en déclencheur la URL de vista rápida y activar el panel de vista rápida requiere la asistencia de una persona de TI de front-end de su empresa. Tienen conocimientos para saber mejor cómo realizar déclencheur precisas de la implementación de la vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
 Puede ver cómo se aplican estos pasos al sitio web de demostración para integrar completamente una imagen interactiva de ventas con el código de vista rápida. Anteriormente, la estructura de la URL de vista rápida se identificaba como la siguiente:
 
