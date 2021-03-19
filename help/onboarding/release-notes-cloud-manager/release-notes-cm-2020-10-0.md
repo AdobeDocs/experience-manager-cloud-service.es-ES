@@ -1,22 +1,23 @@
 ---
-title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.10.0
-description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.10.0
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.10.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.10.0
+feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 48%
 
 ---
 
 
-# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.10.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
 
-Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.10.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2020.10.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.10.0 es el 1 de octubre de 2020.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.10.0 es el 1 de octubre de 2020.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -26,12 +27,12 @@ La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.10.0 es el 
 
 * Cuando están en hibernación, los entornos en hibernación ahora muestran un estado discreto en Cloud Manager.
 
-* El contenedor de compilación de Cloud Manager ahora admite la compilación de proyectos con Java 8 o Java 11. El sistema de cadenas de herramientas Maven proporciona compatibilidad con Java 11.
+* El contenedor de compilación de Cloud Manager ahora es compatible con la compilación de proyectos mediante Java 8 o Java 11. El sistema de herramientas Maven proporciona compatibilidad con Java 11.
 
 * Se aumentó el número de variables de entorno por entorno a 200.
 
-* La tarjeta de Entorno de la página Información general ahora lista hasta tres entornos. Los usuarios pueden seleccionar el botón **Mostrar todo** para navegar a la página de resumen de Entorno y realizar la vista de una tabla con una lista completa de entornos.
-Consulte [Visualización de Entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más detalles.
+* La tarjeta Entorno de la página Información general ahora enumera hasta tres entornos. Los usuarios pueden seleccionar el botón **Mostrar todo** para ir a la página de resumen de entorno y ver una tabla con una lista completa de entornos.
+Consulte [Entorno de visualización](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
 
 
 ### Corrección de errores {#bug-fixes-cloud-manager}
@@ -40,7 +41,7 @@ Consulte [Visualización de Entorno](/help/implementing/cloud-manager/manage-env
 
 * El vínculo a la consola de desarrollador directamente desde Cloud Manager no mostraba la opción de anular la hibernación o hibernar el entorno de un programa simulador para pruebas.
 
-* Los botones Cancelar y Guardar de la página Editar tubería no de producción no siempre estaban visibles.
+* Los botones Cancelar y Guardar de la página Edición de canalización no de producción no siempre estaban visibles.
 
 * Ciertos errores en el proceso de calidad del código podrían ocasionar que el archivo de registro no se genere correctamente.
 
