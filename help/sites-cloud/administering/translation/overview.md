@@ -1,18 +1,20 @@
 ---
 title: Traducción de contenido para sitios multilingües
 description: Obtenga información general sobre cómo traducir contenido para sitios multilingües.
+feature: Copiar idioma
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
 
 # Traducción de contenido para sitios multilingües {#translating-content-for-multilingual-sites}
 
-Automatice la traducción del contenido de la página y los recursos para crear y mantener sitios web multilingües. Para automatizar los flujos de trabajo de traducción, integre los proveedores de servicios de traducción con AEM y cree proyectos para traducir contenido a varios idiomas. AEM admite flujos de trabajo de traducción automática y humana.
+Automatice la traducción del contenido de la página y los recursos para crear y mantener sitios web multilingües. Para automatizar los flujos de trabajo de traducción, se integran los proveedores de servicios de traducción con AEM y se crean proyectos para traducir contenido a varios idiomas. AEM admite flujos de trabajo de traducción automática y humana.
 
 * **Traducción humana:** el contenido se envía a su proveedor de traducción y lo traducen traductores profesionales. Cuando se completa, el contenido traducido se devuelve e importa en AEM. Cuando el proveedor de traducción está integrado con AEM, el contenido se envía automáticamente entre AEM y el proveedor de traducción.
 * **Traducción automática:** El servicio de traducción automática traduce inmediatamente su contenido.
