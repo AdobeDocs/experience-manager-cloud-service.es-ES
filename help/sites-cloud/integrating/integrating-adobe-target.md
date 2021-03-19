@@ -2,9 +2,9 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -12,135 +12,135 @@ ht-degree: 2%
 
 # Integración con Adobe Target{#integrating-with-adobe-target}
 
-Como parte del Adobe Marketing Cloud, Adobe Target le permite aumentar la relevancia del contenido mediante la determinación de objetivos y la medición en todos los canales. La integración de Adobe Target y AEM como Cloud Service requiere:
+Como parte de Adobe Marketing Cloud, Adobe Target le permite aumentar la relevancia del contenido mediante la determinación de objetivos y efectuando mediciones en todos los canales. La integración de Adobe Target y AEM como Cloud Service requiere:
 
-* uso de la IU táctil para crear una configuración de Destinatario en AEM como Cloud Service (se requiere la configuración IMS).
-* agregar y configurar Adobe Target como una extensión en [Inicio de Adobe](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
+* uso de la interfaz de usuario táctil para crear una configuración de Target en AEM como Cloud Service (se requiere la configuración de IMS).
+* agregar y configurar Adobe Target como extensión en [Adobe Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html).
 
-Adobe Launch es necesario para administrar las propiedades del lado del cliente tanto para Analytics como para Destinatario en páginas AEM (bibliotecas/etiquetas de JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencia a Destinatario solo necesita la configuración de Adobe Target y el IMS.
+Adobe Launch es necesario para administrar las propiedades del lado del cliente tanto para Analytics como para Target en páginas AEM (bibliotecas/etiquetas JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencias a Target, solo necesita la configuración de Adobe Target y el IMS.
 
 >[!NOTE]
 >
->Adobe Experience Manager, como cliente Cloud Service que no tiene una cuenta de Destinatario existente, puede solicitar acceso al Destinatario Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del Destinatario por volumen.
+>Los clientes de Adobe Experience Manager como Cloud Service que no tengan una cuenta de Target existente pueden solicitar acceso a Target Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del volumen de Target.
 
 ## Creación de la configuración de Adobe Target {#create-configuration}
 
-1. Vaya a **Herramientas** → **Cloud Services**.
-   ![](assets/cloudservice1.png "NavegaciónNavegación")
+1. Vaya a **Tools** → **Cloud Services**.
+   ![](assets/cloudservice1.png "Navegación")
 2. Seleccione **Adobe Target**.
-3. Seleccione el botón **Crear**.
+3. Seleccione el botón **Create**.
    ![](assets/tenant1.png "CreateCreate")
-4. Rellene los detalles (véase a continuación) y seleccione **Conectar**.
-   ![](assets/open_screen1.png "ConnectConnect")
+4. Complete los detalles (ver abajo) y seleccione **Connect**.
+   ![](assets/open_screen1.png "Connect")
 
 ### Configuración de IMS {#ims-configuration}
 
-Se necesita una configuración IMS tanto para Launch como para Destinatario para integrar correctamente Destinatario con AEM y Launch. Mientras que la configuración de IMS para Launch está preconfigurada en AEM como Cloud Service, se debe crear la configuración de IMS de Destinatario (después de aprovisionar Destinatario). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) y [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para obtener información sobre cómo crear la configuración de IMS de Destinatario.
+Se necesita una configuración IMS tanto para Launch como para Target para integrar correctamente Target con AEM y Launch. Aunque la configuración de IMS para Launch está preconfigurada en AEM como Cloud Service, se debe crear la configuración de IMS de Target (después de aprovisionar Target). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) y [esta página](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para aprender a crear la configuración de IMS de Target.
 
-### Adobe Target Tenant ID y Adobe Target Client Code {#tenant-client}
+### ID de inquilino de Adobe Target y código de cliente de Adobe Target {#tenant-client}
 
-Al configurar los campos Adobe Target Tenant ID y Adobe Target Client Code, tenga en cuenta lo siguiente:
+Al configurar los campos ID de inquilino de Adobe Target y Código de cliente de Adobe Target , tenga en cuenta lo siguiente:
 
-1. Para la mayoría de los clientes, el ID del inquilino y el código del cliente son los mismos. Esto significa que ambos campos contienen la misma información y son idénticos. Asegúrese de introducir el ID del inquilino en ambos campos.
-2. Para fines heredados, también puede introducir valores diferentes en los campos Id. de inquilino y Código de cliente.
+1. Para la mayoría de los clientes, el ID del inquilino y el código de cliente son los mismos. Esto significa que ambos campos contienen la misma información y son idénticos. Asegúrese de introducir el ID del inquilino en ambos campos.
+2. Para fines heredados, también puede introducir valores diferentes en los campos ID de inquilino y Código de cliente .
 
 En ambos casos, tenga en cuenta que:
 
-* De forma predeterminada, el código del cliente (si se agrega primero) también se copiará automáticamente en el campo ID del inquilino.
-* Tiene la opción de cambiar el ID de inquilino predeterminado.
-* En consecuencia, las llamadas de servidor a Destinatario se basarán en el ID del inquilino y las llamadas de cliente a Destinatario se basarán en el código del cliente.
+* De forma predeterminada, el código de cliente (si se agrega primero) también se copia automáticamente en el campo ID de inquilino .
+* Tiene la opción de cambiar el conjunto de ID de inquilino predeterminado.
+* En consecuencia, las llamadas de servidor a Target se basarán en el ID del inquilino y las llamadas del lado del cliente a Target se basarán en el código del cliente.
 
-Como se ha indicado anteriormente, el primer caso es el más común para AEM como Cloud Service. De cualquier forma, asegúrese de que los campos **ambos** contienen la información correcta según sus necesidades.
+Como se ha dicho anteriormente, el primer caso es el más común para AEM como Cloud Service. En cualquier caso, asegúrese de que **ambos campos** contienen la información correcta según sus necesidades.
 
 >[!NOTE]
 >
-> Si desea cambiar una configuración de Destinatario existente:
+> Si desea cambiar una configuración de Target existente:
 >
 > 1. Vuelva a introducir el ID del inquilino.
-> 2. Vuelva a conectarse a Destinatario.
+> 2. Vuelva a conectarse a Target.
 > 3. Guarde la configuración.
 
 
-### Edición de la configuración de Destinatario {#edit-target-configuration}
+### Edición de la configuración de Target {#edit-target-configuration}
 
-Para editar la configuración de Destinatario, siga estos pasos:
+Para editar la configuración de Target, siga estos pasos:
 
-1. Seleccione una configuración existente y haga clic en **Propiedades**.
+1. Seleccione una configuración existente y haga clic en **Properties**.
 2. Edite las propiedades.
 3. Seleccione **Volver a conectar con Adobe Target**.
 4. Seleccione **Guardar y cerrar**.
 
-### Añadir una configuración en un sitio {#add-configuration}
+### Adición de una configuración a un sitio {#add-configuration}
 
 Para aplicar una configuración de IU táctil a un sitio, vaya a: **Sitios** → **Seleccione cualquier página del sitio** → **Propiedades** → **Avanzadas** → **Configuración** → Seleccione el inquilino de configuración.
 
 ## Integración de Adobe Target en sitios AEM mediante Adobe Launch {#integrate-target-launch}
 
-AEM ofertas y la integración lista para usar con Experience Platform Launch. Al agregar la extensión de Adobe Target al Experience Platform Launch, puede utilizar las funciones de Adobe Target en AEM página web. Las bibliotecas de Destinatario solo se procesarán con Launch.
+AEM ofrece una integración predeterminada con Experience Platform Launch. Al agregar la extensión de Adobe Target al Experience Platform Launch, puede utilizar las funciones de Adobe Target en AEM páginas web. Las bibliotecas de Target solo se procesarán mediante Launch.
 
 >[!NOTE]
 >
->Los marcos existentes (heredados) siguen funcionando, pero no se pueden configurar en la IU táctil. Es aconsejable volver a compilar las configuraciones de asignación de variables en Launch.
+>Los marcos existentes (heredados) siguen funcionando, pero no pueden configurarse en la interfaz de usuario táctil. Se recomienda reconstruir las configuraciones de asignación de variables en Launch.
 
-Como información general, los pasos de integración son:
+Como descripción general, los pasos de integración son:
 
-1. Crear una propiedad de inicio
+1. Crear una propiedad de Launch
 2. Añadir las extensiones requeridas
-3. Creación de un elemento de datos (para capturar parámetros de concentrador de contexto)
+3. Crear un elemento de datos (para capturar los parámetros de Context Hub)
 4. Crear una regla de página
 5. Generar y publicar
 
-### Creación de una propiedad de inicio {#create-property}
+### Creación de una propiedad de Launch {#create-property}
 
-Una propiedad es un contenedor que se rellenará con extensiones, reglas y elementos de datos.
+Una propiedad es un contenedor que se rellena con extensiones, reglas y elementos de datos.
 
-1. Seleccione el botón **Nueva propiedad**.
-2. Proporcione un nombre para la propiedad.
-3. Como dominio, introduzca la dirección IP/host en la que desea cargar la biblioteca de inicio.
-4. Seleccione el botón **Guardar**.
+1. Seleccione el botón **New Property**.
+2. Asigne un nombre a la propiedad.
+3. Como dominio, introduzca la IP/host en la que desea cargar la biblioteca de launch.
+4. Seleccione el botón **Save**.
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
-### Añadiendo las extensiones requeridas {#add-extension}
+### Añadir las extensiones requeridas {#add-extension}
 
-**** Extensión es el contenedor que administra la configuración de la biblioteca principal. La extensión Adobe Target admite implementaciones de cliente mediante el uso del SDK de JavaScript de Destinatario para la web moderna, at.js. Debe agregar las extensiones **Adobe Target** y **Adobe ContextHub**.
+**** La extensión es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target es compatible con implementaciones del lado del cliente mediante el uso del SDK de JavaScript de Target para la web moderna, at.js. Debe añadir las extensiones **Adobe Target** y **Adobe ContextHub**.
 
-1. Seleccione la opción Catálogo de extensiones y busque Destinatarios en el filtro.
-2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar.
-   ![Búsqueda de destinatario ](assets/search_ext1.png "SearchTarget")
-3. Seleccione el botón **Configurar**. Observe la ventana de configuración con las credenciales de cuenta de Destinatario importadas y la versión de at.js para esta extensión.
-4. Seleccione **Guardar** para agregar la Extensión de grupo de destinatarios a la propiedad Launch. Debería poder ver la Extensión de grupo de destinatarios enumerada en la lista **Extensiones instaladas**.
+1. Seleccione la opción Catálogo de extensiones y busque Target en el filtro .
+2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar .
+   ![Búsqueda de ](assets/search_ext1.png "SearchTarget de Target")
+3. Seleccione el botón **Configure**. Observe la ventana de configuración con las credenciales de la cuenta de Target importadas y la versión de at.js para esta extensión.
+4. Seleccione **Save** para añadir la extensión de Target a la propiedad de Launch. Debería poder ver la extensión de Target en la lista **Installed Extensions**.
    ![Guardar extensión ](assets/configure_extension1.png "ExtensionSave")
-5. Repita los pasos anteriores para buscar la extensión **Adobe ContextHub** e instalarla (esto es necesario para la integración con parámetros contexthub, según la cual se realizará la segmentación).
+5. Repita los pasos anteriores para buscar la extensión **Adobe ContextHub** e instalarla (esto es necesario para la integración con parámetros contexthub, en función de los cuales se realizará la segmentación).
 
 ### Creación de un elemento de datos {#data-element}
 
-**Los** elementos de datos son marcadores de posición a los que se pueden asignar parámetros de concentrador de contexto.
+**Los** elementos de datos son marcadores de posición a los que se pueden asignar parámetros de Context Hub.
 
 1. Seleccione **Elementos de datos**.
-2. Seleccione **Añadir elemento de datos**.
-3. Proporcione el nombre del elemento de datos y asígnelo a un parámetro de concentrador de contexto.
-4. seleccione **Guardar**.
+2. Seleccione **Agregar elemento de datos**.
+3. Proporcione el nombre del elemento de datos y asígnelo a un parámetro de Context Hub.
+4. Seleccione **Guardar**.
    ![Elemento Data ](assets/data_elem1.png "ElementData")
 
 ### Creación de una regla de página {#page-rule}
 
-En **Regla** definimos y ordenamos una secuencia de acciones, que se ejecutarán en el sitio, para lograr objetivos.
+En **Rule** definimos y ordenamos una secuencia de acciones, que se ejecutan en el sitio, para lograr el objetivo.
 
 1. Añada un conjunto de acciones como se muestra en la captura de pantalla.
    ![](assets/rules1.png "ActionsActions")
-2. En Añadir parámetros a todos los mboxes, agregue el elemento de datos configurado anteriormente (consulte el elemento de datos anterior) al parámetro que se enviará en la llamada de mbox.
+2. En Añadir parámetros a todos los mboxes , agregue el elemento de datos configurado anteriormente (consulte el elemento de datos anterior) al parámetro que se enviará en la llamada de mbox.
    ![](assets/map_data1.png "MboxActions")
 
 ### Generar y publicar {#build-publish}
 
-Para obtener más información sobre cómo crear y publicar, consulte esta [página](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
+Para aprender a crear y publicar, consulte esta [página](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html).
 
-## Cambios en la estructura de contenido entre las configuraciones de IU clásica y táctil {#changes-content-structure}
+## Cambios en la estructura de contenido entre las configuraciones Classic y Touch UI {#changes-content-structure}
 
 | **Cambiar** | **Configuración de IU clásica** | **Configuración de IU táctil** | **Consecuencias** |
 |---|---|---|---|
-| Ubicación de la Configuración de Destinatario. | /etc/cloudservices/testandtarget/ | /conf/inquilino/settings/cloudservices/destinatario | Anteriormente, había varias configuraciones presentes en /etc/cloudservices/testandtarget, pero ahora una sola configuración estará presente en un inquilino. |
+| Ubicación de la configuración de Target. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Anteriormente, había varias configuraciones presentes en /etc/cloudservices/testandtarget, pero ahora hay una sola configuración en un inquilino. |
 
 >[!NOTE]
 >
->Las configuraciones heredadas siguen siendo compatibles con los clientes existentes (sin la opción de editar o crear nuevas). Las configuraciones heredadas formarán parte de los paquetes de contenido cargados por el cliente mediante VSTS.
+>Las configuraciones heredadas siguen siendo compatibles con los clientes existentes (sin la opción de editar o crear nuevas). Las configuraciones heredadas formarán parte de paquetes de contenido cargados por clientes que utilicen VSTS.
