@@ -1,16 +1,16 @@
 ---
-title: 'Aprender a utilizar GraphQL con AEM: Contenido y Consultas de muestra'
-description: 'Aprender a utilizar GraphQL con AEM: contenido y Consultas de muestra.'
+title: 'Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas'
+description: 'Aprenda a utilizar GraphQL con AEM: contenido de muestra y consultas.'
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1742'
 ht-degree: 5%
 
 ---
 
 
-# Aprender a usar GraphQL con AEM: Contenido de muestra y Consultas {#learn-graphql-with-aem-sample-content-queries}
+# Aprender a utilizar GraphQL con AEM: Contenido de muestra y consultas {#learn-graphql-with-aem-sample-content-queries}
 
 >[!NOTE]
 >
@@ -18,61 +18,63 @@ ht-degree: 5%
 >
 >* [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 >* [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
->* [API de AEM GraphQL para usar con fragmentos de contenido](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [AEM API de GraphQL para su uso con fragmentos de contenido](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-Para empezar con las consultas de GraphQL y cómo funcionan con fragmentos de contenido de AEM ayuda ver algunos ejemplos prácticos.
+Para empezar a utilizar las consultas de GraphQL y cómo funcionan con AEM fragmentos de contenido, ayuda a ver algunos ejemplos prácticos.
 
-Para obtener ayuda con esto, consulte:
+Para ayudarle con esto, consulte:
 
 * Una [estructura de fragmento de contenido de muestra](#content-fragment-structure-graphql)
 
-* Y algunas [consultas GraphQL de muestra](#graphql-sample-queries), basadas en la estructura de fragmentos de contenido de muestra (Modelos de fragmento de contenido y fragmentos de contenido relacionados).
+* Y algunos [ejemplos de consultas de GraphQL](#graphql-sample-queries), basados en la estructura de fragmento de contenido de ejemplo (modelos de fragmento de contenido y fragmentos de contenido relacionados).
 
-## GraphQL para AEM - Resumen de extensiones {#graphql-extensions}
+## GraphQL para AEM: Resumen de extensiones {#graphql-extensions}
 
-El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la especificación GraphQL estándar. Para las consultas de GraphQL con AEM hay algunas extensiones:
+El funcionamiento básico de las consultas con GraphQL para AEM se adhiera a la especificación estándar de GraphQL. Para las consultas de GraphQL con AEM hay algunas extensiones:
 
-* Si necesita un único resultado:
-   * utilizar el nombre del modelo; eg city
+* Si necesita un solo resultado:
+   * utilizar el nombre del modelo; ciudad del ejemplo
 
-* Si espera una lista de los resultados:
-   * agregar `List` al nombre del modelo; por ejemplo, `cityList`
+* Si espera una lista de resultados:
+   * añada `List` al nombre del modelo; por ejemplo, `cityList`
    * Consulte [Consulta de muestra: toda la información sobre todas las ciudades](#sample-all-information-all-cities)
 
 * Si desea utilizar un OR lógico:
    * use ` _logOp: OR`
-   * Consulte [Consulta de muestra: Todas las personas que tienen el nombre &quot;Trabajos&quot; o &quot;Smith&quot;](#sample-all-persons-jobs-smith)
+   * Consulte [Consulta de muestra: todas las personas que tienen el nombre &quot;Trabajos&quot; o &quot;Smith&quot;](#sample-all-persons-jobs-smith)
 
-* AND lógico también existe, pero es (a menudo) implícito
+* AND lógico también existe, pero (a menudo) está implícito
 
-* Puede realizar consultas en los nombres de campo que se correspondan con los campos del modelo de fragmento de contenido
-   * Consulte [Consulta de muestra: Detalles completos del director ejecutivo y los empleados de una Compañía](#sample-full-details-company-ceos-employees)
+* Puede consultar los nombres de campo que se correspondan con los campos del modelo de fragmento de contenido
+   * Consulte [Consulta de muestra: detalles completos del CEO y los empleados de una empresa](#sample-full-details-company-ceos-employees)
 
-* Además de los campos del modelo, hay algunos campos generados por el sistema (precedidos de subrayado):
+* Además de los campos del modelo, hay algunos campos generados por el sistema (precedidos de guiones bajos):
 
-   * Para contenido:
+   * Para el contenido:
 
-      * `_locale` :: revelar el idioma; según el Administrador de idiomas
-         * Consulte [Consulta de muestra para varios fragmentos de contenido de una configuración regional determinada](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` :: para mostrar metadatos para el fragmento
-         * Consulte [Consulta de muestra para metadatos: Lista de los metadatos de los premios con el título GB](#sample-metadata-awards-gb)
-      * `_model` :: permitir consultas para un modelo de fragmento de contenido (ruta y título)
-         * Consulte [Consulta de muestra para un modelo de fragmento de contenido de un modelo](#sample-wknd-content-fragment-model-from-model)
-      * `_path` :: la ruta al fragmento de contenido dentro del repositorio
+      * `_locale` : revelar el idioma; basado en el Administrador de idiomas
+         * Consulte [Consulta de ejemplo para varios fragmentos de contenido de una configuración regional determinada](#sample-wknd-multiple-fragments-given-locale)
+      * `_metadata` : para mostrar metadatos del fragmento
+         * Consulte [Consulta de muestra para metadatos: enumere los metadatos de los premios titulados GB](#sample-metadata-awards-gb)
+      * `_model` : permitir la consulta de un modelo de fragmento de contenido (ruta y título)
+         * Consulte [Consulta de ejemplo para un modelo de fragmento de contenido de un modelo](#sample-wknd-content-fragment-model-from-model)
+      * `_path` : la ruta al fragmento de contenido dentro del repositorio
          * Consulte [Consulta de muestra: un solo fragmento de ciudad específico](#sample-single-specific-city-fragment)
-      * `_reference` :: revelar referencias; incluir referencias en línea en el Editor de texto enriquecido
-         * Consulte [Consulta de muestra para varios fragmentos de contenido con referencias recuperadas previamente](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` :: para revelar variaciones específicas dentro del fragmento de contenido
-         * Consulte [Consulta de muestra: Todas las ciudades con una variación con nombre](#sample-cities-named-variation)
+      * `_reference` : para revelar referencias; incluir referencias en línea en el Editor de texto enriquecido
+         * Consulte [Consulta de ejemplo para varios fragmentos de contenido con referencias de recuperación previa](#sample-wknd-multiple-fragments-prefetched-references)
+      * `_variation` : para mostrar variaciones específicas dentro del fragmento de contenido
+         * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](#sample-cities-named-variation)
    * Y operaciones:
 
-      * `_operator` :: aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
-         * Consulte [Consulta de muestra: Todas las personas que no tienen un nombre de &quot;Trabajos&quot;](#sample-all-persons-not-jobs)
-      * `_apply` :: aplicar condiciones específicas; por ejemplo,   `AT_LEAST_ONCE`
-         * Consulte [Consulta de muestra - Filtrar en una matriz con un elemento que debe producirse al menos una vez](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` :: para ignorar el caso al consultar
-         * Consulte [Consulta de muestra: Todas las ciudades con SAN en el nombre, independientemente del caso](#sample-all-cities-san-ignore-case)
+      * `_operator` : aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
+         * Consulte [Consulta de muestra: todas las personas que no tienen un nombre de &quot;Trabajos&quot;](#sample-all-persons-not-jobs)
+         * Consulte [Consulta de muestra: todas las aventuras cuyo `_path` comienza con un prefijo específico](#sample-wknd-all-adventures-cycling-path-filter)
+      * `_apply` : aplicar condiciones específicas; por ejemplo,   `AT_LEAST_ONCE`
+         * Consulte [Muestra de consulta - Filtrar en una matriz con un elemento que debe producirse al menos una vez](#sample-array-item-occur-at-least-once)
+      * `_ignoreCase` : para ignorar el caso al consultar
+         * Consulte [Consulta de muestra: todas las ciudades con SAN en el nombre, independientemente del caso](#sample-all-cities-san-ignore-case)
+
 
 
 
@@ -85,27 +87,27 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 * Se admiten los tipos de unión de GraphQL:
 
    * use `... on`
-      * Consulte [Consulta de muestra para un fragmento de contenido de un modelo específico con una referencia de contenido](#sample-wknd-fragment-specific-model-content-reference)
+      * Consulte [Consulta de ejemplo para un fragmento de contenido de un modelo específico con una referencia de contenido](#sample-wknd-fragment-specific-model-content-reference)
 
-## GraphQL: Consultas de muestra que usan la estructura de fragmentos de contenido de muestra {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL: consultas de ejemplo con la estructura de fragmentos de contenido de ejemplo {#graphql-sample-queries-sample-content-fragment-structure}
 
-Consulte estas consultas de muestra para ver ilustraciones de la creación de consultas, junto con resultados de muestra.
+Consulte estas consultas de ejemplo para ver ilustraciones de la creación de consultas, junto con resultados de ejemplo.
 
 >[!NOTE]
 >
->Según la instancia, puede acceder directamente a la interfaz [Graph *i* QL incluida con la API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) de AEM para enviar y probar consultas.
+>Según su instancia, puede acceder directamente a la interfaz [Graph *i* QL incluida con AEM API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) para enviar y probar consultas.
 >
 >Por ejemplo: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
 >
->Las consultas de muestra se basan en la [Estructura de fragmento de contenido de muestra para su uso con GraphQL](#content-fragment-structure-graphql)
+>Las consultas de ejemplo se basan en la [Estructura de fragmento de contenido de ejemplo para su uso con GraphQL](#content-fragment-structure-graphql)
 
-### Consulta de muestra: Todos los Esquemas y tipos de datos disponibles {#sample-all-schemes-datatypes}
+### Consulta de ejemplo: todos los esquemas y tipos de datos disponibles {#sample-all-schemes-datatypes}
 
-Esto devolverá todo `types` para todos los esquemas disponibles.
+Esto devolverá todos los `types` para todos los esquemas disponibles.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -194,10 +196,10 @@ Esto devolverá todo `types` para todos los esquemas disponibles.
 }
 ```
 
-### Consulta de muestra: Toda la información sobre todas las ciudades {#sample-all-information-all-cities}
+### Consulta de ejemplo: toda la información sobre todas las ciudades {#sample-all-information-all-cities}
 
-Para recuperar toda la información sobre todas las ciudades, puede utilizar la consulta básica:
-**Consulta de muestra**
+Para recuperar toda la información sobre todas las ciudades, puede utilizar la consulta muy básica:
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -207,7 +209,7 @@ Para recuperar toda la información sobre todas las ciudades, puede utilizar la 
 }
 ```
 
-Cuando se ejecuta, el sistema expandirá automáticamente la consulta para incluir todos los campos:
+Cuando se ejecuta, el sistema expande automáticamente la consulta para incluir todos los campos:
 
 ```xml
 {
@@ -277,11 +279,11 @@ Cuando se ejecuta, el sistema expandirá automáticamente la consulta para inclu
 }
 ```
 
-### Consulta de muestra - Nombres de todas las ciudades {#sample-names-all-cities}
+### Consulta de ejemplo: Nombres de todas las ciudades {#sample-names-all-cities}
 
 Se trata de una consulta directa para devolver el `name`de todas las entradas del esquema `city`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -327,11 +329,11 @@ query {
 }
 ```
 
-### Consulta de muestra: un solo fragmento de ciudad específico {#sample-single-specific-city-fragment}
+### Consulta de ejemplo: un solo fragmento de ciudad específico {#sample-single-specific-city-fragment}
 
-Se trata de una consulta para devolver los detalles de una sola entrada de fragmento en una ubicación específica del repositorio.
+Esta es una consulta para devolver los detalles de una sola entrada de fragmento en una ubicación específica del repositorio.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -368,11 +370,11 @@ Se trata de una consulta para devolver los detalles de una sola entrada de fragm
 }
 ```
 
-### Consulta de muestra: Todas las ciudades con una variación con nombre {#sample-cities-named-variation}
+### Consulta de ejemplo: Todas las ciudades con una variación con nombre {#sample-cities-named-variation}
 
-Si crea una nueva variación, denominada &quot;Centro de Berlín&quot; (`berlin_centre`), para la `city` Berlín, puede utilizar una consulta para devolver detalles de la variación.
+Si crea una nueva variación, denominada &quot;Berlin Center&quot; (`berlin_centre`), para `city` Berlín, puede utilizar una consulta para devolver detalles de la variación.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -411,11 +413,11 @@ Si crea una nueva variación, denominada &quot;Centro de Berlín&quot; (`berlin_
 }
 ```
 
-### Consulta de muestra: Detalles completos del director ejecutivo y los empleados de una Compañía {#sample-full-details-company-ceos-employees}
+### Consulta de muestra: Detalles completos del CEO y los empleados de una empresa {#sample-full-details-company-ceos-employees}
 
-Utilizando la estructura de los fragmentos anidados, esta consulta devuelve todos los detalles del director general de una compañía y de todos sus empleados.
+Utilizando la estructura de los fragmentos anidados, esta consulta devuelve todos los detalles del CEO de una empresa y de todos sus empleados.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -539,11 +541,11 @@ query {
 }
 ```
 
-### Consulta de muestra: Todas las personas que tienen un nombre de &quot;Trabajos&quot; o &quot;Smith&quot; {#sample-all-persons-jobs-smith}
+### Consulta de muestra: todas las personas que tienen el nombre &quot;Jobs&quot; o &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
 Esto filtrará todos los `persons` para aquellos que tengan el nombre `Jobs`o `Smith`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -593,11 +595,11 @@ query {
 }
 ```
 
-### Consulta de muestra: Todas las personas que no tienen un nombre de &quot;Trabajos&quot; {#sample-all-persons-not-jobs}
+### Consulta de muestra: todas las personas que no tienen un nombre de &quot;Trabajos&quot; {#sample-all-persons-not-jobs}
 
 Esto filtrará todos los `persons` para aquellos que tengan el nombre `Jobs`o `Smith`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -660,11 +662,56 @@ query {
 }
 ```
 
-### Consulta de muestra: Todas las ciudades situadas en Alemania o Suiza con una población entre 400000 y 999999 {#sample-all-cities-d-ch-population}
+### Consulta de muestra: todas las aventuras cuyo `_path` comienza con un prefijo específico {#sample-wknd-all-adventures-cycling-path-filter}
 
-Aquí se filtra una combinación de campos. Se utiliza un `AND` (implícito) para seleccionar el rango `population`mientras que se utiliza un `OR` (explícito) para seleccionar las ciudades requeridas.
+Todos los `adventures` cuyo `_path` comienza con un prefijo específico (`/content/dam/wknd/en/adventures/cycling`).
 
-**Consulta de muestra**
+**Consulta de ejemplo**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**Resultados de muestra**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Consulta de muestra: todas las ciudades ubicadas en Alemania o Suiza con una población entre 40000 y 999999 {#sample-all-cities-d-ch-population}
+
+Aquí se filtra una combinación de campos. Se utiliza un `AND` (implícito) para seleccionar el rango `population`, mientras que se utiliza un `OR` (explícito) para seleccionar las ciudades requeridas.
+
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -723,11 +770,11 @@ query {
 }
 ```
 
-### Consulta de muestra: Todas las ciudades con SAN en el nombre, independientemente del caso {#sample-all-cities-san-ignore-case}
+### Consulta de muestra: todas las ciudades con SAN en el nombre, independientemente del caso {#sample-all-cities-san-ignore-case}
 
-Esta consulta interroga a todas las ciudades que tengan `SAN` en el nombre, independientemente del caso.
+Esta consulta interroga para todas las ciudades que tienen `SAN` en el nombre, independientemente del caso.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -774,11 +821,11 @@ query {
 }
 ```
 
-### Consulta de muestra: filtre en una matriz con un elemento que debe producirse al menos una vez {#sample-array-item-occur-at-least-once}
+### Consulta de muestra: filtre una matriz con un elemento que debe producirse al menos una vez {#sample-array-item-occur-at-least-once}
 
-Esta consulta filtros en una matriz con un elemento (`city:na`) que debe producirse al menos una vez.
+Esta consulta filtra en una matriz con un elemento (`city:na`) que debe producirse al menos una vez.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -832,11 +879,11 @@ query {
 }
 ```
 
-### Consulta de muestra: filtre un valor de matriz exacto {#sample-array-exact-value}
+### Consulta de ejemplo: filtre un valor de matriz exacto {#sample-array-exact-value}
 
-Esta consulta filtros en un valor de matriz exacto.
+Esta consulta filtra con un valor de matriz exacto.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -884,11 +931,11 @@ query {
 }
 ```
 
-### Consulta de muestra para fragmentos de contenido anidados: todas las compañías que tienen al menos un empleado con el nombre &quot;Smith&quot; {#sample-companies-employee-smith}
+### Consulta de ejemplo para fragmentos de contenido anidados: todas las empresas que tienen al menos un empleado con el nombre &quot;Smith&quot; {#sample-companies-employee-smith}
 
-Esta consulta ilustra el filtrado para cualquier `person` de `name` &quot;Smith&quot;, devolviendo información de dos fragmentos anidados: `company` y `employee`.
+Esta consulta ilustra el filtrado para cualquier `person` de `name` &quot;Smith&quot;, que devuelve información de entre dos fragmentos anidados: `company` y `employee`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -950,11 +997,11 @@ query {
 }
 ```
 
-### Consulta de muestra para fragmentos de contenido anidado: todas las compañías donde todos los empleados han ganado el premio &quot;Gamestar&quot; {#sample-all-companies-employee-gamestar-award}
+### Ejemplo de consulta para fragmentos de contenido anidados: todas las empresas en las que todos los empleados han ganado el premio &quot;Gamestar&quot; {#sample-all-companies-employee-gamestar-award}
 
-Esta consulta ilustra el filtrado en tres fragmentos anidados: `company`, `employee` y `award`.
+Esta consulta ilustra el filtrado entre tres fragmentos anidados: `company`, `employee` y `award`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -1042,11 +1089,11 @@ query {
 }
 ```
 
-### Consulta de muestra para metadatos: Lista de los metadatos para los premios con el título GB {#sample-metadata-awards-gb}
+### Consulta de ejemplo para metadatos: enumera los metadatos de los premios titulados GB {#sample-metadata-awards-gb}
 
-Esta consulta ilustra el filtrado en tres fragmentos anidados: `company`, `employee` y `award`.
+Esta consulta ilustra el filtrado entre tres fragmentos anidados: `company`, `employee` y `award`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 query {
@@ -1102,9 +1149,9 @@ query {
 }
 ```
 
-## Consultas de muestra que utilizan el proyecto WKND {#sample-queries-using-wknd-project}
+## Ejemplo de consultas con el proyecto WKND {#sample-queries-using-wknd-project}
 
-Estas consultas de muestra se basan en el proyecto WKND. Esto tiene:
+Estas consultas de ejemplo se basan en el proyecto WKND. Esto tiene:
 
 * Modelos de fragmento de contenido disponibles en:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1114,16 +1161,16 @@ Estas consultas de muestra se basan en el proyecto WKND. Esto tiene:
 
 >[!NOTE]
 >
->Como los resultados pueden ser amplios, no se reproducen aquí.
+>Como los resultados pueden ser extensos, no se reproducen aquí.
 
-### Consulta de muestra para todos los fragmentos de contenido de un modelo determinado con las propiedades especificadas {#sample-wknd-all-model-properties}
+### Consulta de ejemplo para todos los fragmentos de contenido de un determinado modelo con las propiedades especificadas {#sample-wknd-all-model-properties}
 
-Esta consulta de muestra interroga:
+Esta consulta de ejemplo interroga:
 
 * para todos los fragmentos de contenido de tipo `article`
 * con las propiedades `path`y `author`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1136,14 +1183,14 @@ Esta consulta de muestra interroga:
 }
 ```
 
-### Consulta de muestra para metadatos {#sample-wknd-metadata}
+### Consulta de ejemplo para metadatos {#sample-wknd-metadata}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para todos los fragmentos de contenido de tipo `adventure`
 * metadata
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1197,18 +1244,18 @@ Esta consulta cuestiona:
 }
 ```
 
-### Consulta de muestra para un solo fragmento de contenido de un modelo determinado {#sample-wknd-single-content-fragment-of-given-model}
+### Consulta de ejemplo para un solo fragmento de contenido de un modelo determinado {#sample-wknd-single-content-fragment-of-given-model}
 
-Esta consulta de muestra interroga:
+Esta consulta de ejemplo interroga:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de esto, todos los formatos de contenido:
+   * dentro de él, todos los formatos de contenido:
       * HTML
       * Markdown
       * Texto sin formato
       * JSON
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1227,14 +1274,14 @@ Esta consulta de muestra interroga:
 }
 ```
 
-### Consulta de muestra para un modelo de fragmento de contenido de un modelo {#sample-wknd-content-fragment-model-from-model}
+### Consulta de ejemplo para un modelo de fragmento de contenido de un modelo {#sample-wknd-content-fragment-model-from-model}
 
-Esta consulta de muestra interroga:
+Esta consulta de ejemplo interroga:
 
 * para un solo fragmento de contenido
    * detalles del modelo de fragmento de contenido subyacente
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1251,18 +1298,18 @@ Esta consulta de muestra interroga:
 }
 ```
 
-### Consulta de muestra para un fragmento de contenido anidado - Tipo de modelo único{#sample-wknd-nested-fragment-single-model}
+### Consulta de ejemplo para un fragmento de contenido anidado: tipo de modelo único{#sample-wknd-nested-fragment-single-model}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de ella, la ruta y el autor del fragmento al que se hace referencia (anidado)
+   * dentro de él, la ruta y el autor del fragmento al que se hace referencia (anidado)
 
 >[!NOTE]
 >
 >El campo `referencearticle` tiene el tipo de datos `fragment-reference`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1279,9 +1326,9 @@ Esta consulta cuestiona:
 }
 ```
 
-### Consulta de muestra para un fragmento de contenido anidado - Tipo de modelo múltiple{#sample-wknd-nested-fragment-multiple-model}
+### Consulta de ejemplo para un fragmento de contenido anidado: tipo de modelo múltiple{#sample-wknd-nested-fragment-multiple-model}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para varios fragmentos de contenido de tipo `bookmark`
    * con referencias de fragmento a otros fragmentos de los tipos de modelo específicos `article` y `adventure`
@@ -1309,7 +1356,7 @@ Esta consulta cuestiona:
 }
 ```
 
-### Consulta de muestra para un fragmento de contenido de un modelo específico con referencias de contenido{#sample-wknd-fragment-specific-model-content-reference}
+### Consulta de ejemplo para un fragmento de contenido de un modelo específico con referencias de contenido{#sample-wknd-fragment-specific-model-content-reference}
 
 Esta consulta tiene dos sabores:
 
@@ -1321,9 +1368,9 @@ Estas consultas interrogan:
 * para varios fragmentos de contenido de tipo `bookmark`
    * con referencias de contenido a otros fragmentos
 
-#### Consulta de muestra para varios fragmentos de contenido con referencias de recuperación previa {#sample-wknd-multiple-fragments-prefetched-references}
+#### Consulta de ejemplo para varios fragmentos de contenido con referencias de recuperación previa {#sample-wknd-multiple-fragments-prefetched-references}
 
-La siguiente consulta devuelve todas las referencias de contenido mediante `_references`:
+La siguiente consulta devuelve todas las referencias de contenido utilizando `_references`:
 
 ```xml
 {
@@ -1357,9 +1404,9 @@ La siguiente consulta devuelve todas las referencias de contenido mediante `_ref
 }
 ```
 
-#### Consulta de muestra para varios fragmentos de contenido con datos adjuntos {#sample-wknd-multiple-fragments-attachments}
+#### Consulta de ejemplo para varios fragmentos de contenido con archivos adjuntos {#sample-wknd-multiple-fragments-attachments}
 
-La siguiente consulta devuelve todo `attachments` - un campo específico (subgrupo) de tipo `content-reference`:
+La siguiente consulta devuelve todos los `attachments`: un campo específico (subgrupo) de tipo `content-reference`:
 
 >[!NOTE]
 >
@@ -1396,18 +1443,18 @@ La siguiente consulta devuelve todo `attachments` - un campo específico (subgru
 }
 ```
 
-### Consulta de muestra para un único fragmento de contenido con referencia en línea RTE {#sample-wknd-single-fragment-rte-inline-reference}
+### Consulta de ejemplo para un solo fragmento de contenido con referencia en línea RTE {#sample-wknd-single-fragment-rte-inline-reference}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para un solo fragmento de contenido de tipo `bookmark` en una ruta específica
-   * dentro de esto, referencias en línea RTE
+   * dentro de eso, referencias en línea RTE
 
 >[!NOTE]
 >
->Las referencias en línea RTE están hidratadas en `_references`.
+>Las referencias en línea RTE se hidratan en `_references`.
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1442,14 +1489,14 @@ Esta consulta cuestiona:
 }
 ```
 
-### Consulta de muestra para una única variación de fragmento de contenido de un modelo determinado {#sample-wknd-single-fragment-given-model}
+### Consulta de ejemplo para una única variación de fragmento de contenido de un modelo determinado {#sample-wknd-single-fragment-given-model}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para un solo fragmento de contenido de tipo `article` en una ruta específica
-   * dentro de ella, los datos relacionados con la variación: `variation1`
+   * dentro de él, los datos relacionados con la variación: `variation1`
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1468,13 +1515,13 @@ Esta consulta cuestiona:
 }
 ```
 
-### Consulta de muestra para una variación con nombre de varios fragmentos de contenido de un modelo determinado {#sample-wknd-variation-multiple-fragment-given-model}
+### Consulta de ejemplo para una variación con nombre de varios fragmentos de contenido de un modelo determinado {#sample-wknd-variation-multiple-fragment-given-model}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para fragmentos de contenido de tipo `article` con una variación específica: `variation1`
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 {
@@ -1493,13 +1540,13 @@ Esta consulta cuestiona:
 }
 ```
 
-### Consulta de muestra para varios fragmentos de contenido de una configuración regional determinada {#sample-wknd-multiple-fragments-given-locale}
+### Consulta de ejemplo para varios fragmentos de contenido de una configuración regional determinada {#sample-wknd-multiple-fragments-given-locale}
 
-Esta consulta cuestiona:
+Esta consulta interroga:
 
 * para fragmentos de contenido de tipo `article` dentro de la configuración regional `fr`
 
-**Consulta de muestra**
+**Consulta de ejemplo**
 
 ```xml
 { 
@@ -1518,19 +1565,19 @@ Esta consulta cuestiona:
 }
 ```
 
-## Estructura de fragmento de contenido de muestra (utilizada con GraphQL) {#content-fragment-structure-graphql}
+## La estructura de fragmentos de contenido de ejemplo (utilizada con GraphQL) {#content-fragment-structure-graphql}
 
-Las consultas de muestra se basan en la siguiente estructura, que utiliza:
+Las consultas de ejemplo se basan en la siguiente estructura, que utiliza:
 
-* Uno o más modelos de fragmento de contenido de muestra [](#sample-content-fragment-models-schemas) - forman la base para los esquemas de GraphQL
+* Uno o más [Modelos de fragmento de contenido de muestra](#sample-content-fragment-models-schemas): forman la base de los esquemas de GraphQL
 
 * [Ejemplo de ](#sample-content-fragments) fragmentos de contenido basados en los modelos anteriores
 
-### Modelos de fragmento de contenido de muestra (Esquemas) {#sample-content-fragment-models-schemas}
+### Modelos de fragmento de contenido de ejemplo (Esquemas) {#sample-content-fragment-models-schemas}
 
-Para las consultas de muestra, utilizaremos los siguientes modelos de contenido y sus interrelaciones (referencias ->):
+Para las consultas de ejemplo, utilizaremos los siguientes modelos de contenido y sus interrelaciones (referencias ->):
 
-* [Compañía](#model-company)
+* [Empresa](#model-company)
 ->  [Persona](#model-person)
     ->  [Premio](#model-award)
 
@@ -1538,17 +1585,17 @@ Para las consultas de muestra, utilizaremos los siguientes modelos de contenido 
 
 #### Empresa {#model-company}
 
-Los campos básicos que definen la compañía son:
+Los campos básicos que definen a la empresa son:
 
 | Nombre del campo | Tipo de datos | Referencia |
 |--- |--- |--- |
-| Nombre de compañía | Texto de línea única |  |
-| CEO | Referencia de fragmento (única) | [Person](#model-person) |
+| Nombre de la empresa | Texto de línea única |  |
+| CEO | Referencia de fragmento (único) | [Person](#model-person) |
 | Empleados | Referencia de fragmento (multicampo) | [Persona](#model-person) |
 
 #### Person {#model-person}
 
-Campos que definen a una persona, que también puede ser un empleado:
+Los campos que definen a una persona, que también puede ser empleado:
 
 | Nombre del campo | Tipo de datos | Referencia |
 |--- |--- |--- |
@@ -1582,10 +1629,10 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 
 #### Empresa {#fragment-company}
 
-| Nombre de compañía | CEO | Empleados |
+| Nombre de la empresa | CEO | Empleados |
 |--- |--- |--- |
-| Apple | Steve Jobs | Mármoles de duelo<br>Máx. |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slave |
+| Apple | Steve Jobs | Marsh<br>Max Caulfield |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Esclavija de corte |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Persona {#fragment-person}
@@ -1594,7 +1641,7 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 |--- |--- |--- |
 | Lincoln |  Abe |  |
 | Smith | Adam |   |
-| Esclavo |  Cutter |  Gameblitz<br>Gamestar |
+| Enclavado |  Cortador |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |
 |  Smith |  Joe |   |
 | Recortar |  Lara | Gamestar |
@@ -1614,9 +1661,9 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 | Nombre | País | Población | Categorías |
 |--- |--- |--- |--- |
 | Basilea | Suiza | 172258 | ciudad:emea |
-| Berlín | Alemania | 3669491 | ciudad:capital<br>ciudad:emea |
-| Bucarest | Rumanía | 1821000 |  ciudad:capital<br>ciudad:emea |
-| San Francisco |  EE.UU. |  883306 |  ciudad:playa<br>ciudad:na |
-| San José |  EE.UU. |  102635 |  ciudad:na |
+| Berlín | Alemania | 3669491 | city:capital<br>ciudad:emea |
+| Bucarest | Rumanía | 1821000 |  city:capital<br>ciudad:emea |
+| San Francisco |  EE. UU. |  883306 |  ciudad:playa<br>ciudad:na |
+| San José |  EE. UU. |  102635 |  ciudad:na |
 | Stuttgart |  Alemania |  634830 |  ciudad:emea |
-|  Zúrich |  Suiza |  415367 |  ciudad:capital<br>ciudad:emea |
+|  Zúrich |  Suiza |  415367 |  city:capital<br>ciudad:emea |
