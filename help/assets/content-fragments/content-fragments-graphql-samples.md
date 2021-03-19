@@ -2,9 +2,9 @@
 title: 'Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas'
 description: 'Aprenda a utilizar GraphQL con AEM: contenido de muestra y consultas.'
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiera a la 
 
       * `_operator` : aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
          * Consulte [Consulta de muestra: todas las personas que no tienen un nombre de &quot;Trabajos&quot;](#sample-all-persons-not-jobs)
-         * Consulte [Consulta de muestra: todas las aventuras cuyo `_path` comienza con un prefijo específico](#sample-wknd-all-adventures-cycling-path-filter)
+         * Consulte [Consulta de muestra: todas las aventuras en las que el `_path` comienza con un prefijo específico](#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : aplicar condiciones específicas; por ejemplo,   `AT_LEAST_ONCE`
          * Consulte [Muestra de consulta - Filtrar en una matriz con un elemento que debe producirse al menos una vez](#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : para ignorar el caso al consultar
@@ -664,7 +664,7 @@ query {
 
 ### Consulta de muestra: todas las aventuras cuyo `_path` comienza con un prefijo específico {#sample-wknd-all-adventures-cycling-path-filter}
 
-Todos los `adventures` cuyo `_path` comienza con un prefijo específico (`/content/dam/wknd/en/adventures/cycling`).
+Todos los `adventures` donde `_path` comienza con un prefijo específico (`/content/dam/wknd/en/adventures/cycling`).
 
 **Consulta de ejemplo**
 
