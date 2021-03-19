@@ -1,10 +1,12 @@
 ---
 title: Configuración de la sincronización de Live Copy
 description: Obtenga información sobre las potentes opciones de sincronización de Live Copy disponibles y cómo puede configurarlas y personalizarlas según las necesidades de su proyecto.
+feature: Administrador de varios sitios
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 30%
 
 ---
@@ -37,19 +39,19 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 >[!NOTE]
 >
->El uso del activador **On Modification** puede afectar al rendimiento. Consulte [las prácticas recomendadas de MSM](best-practices.md#onmodify) para obtener más información.
+>El uso del déclencheur **On Modification** puede afectar al rendimiento. Consulte [las prácticas recomendadas de MSM](best-practices.md#onmodify) para obtener más información.
 
 ### Opciones de configuración del lanzamiento {#rollout-configurations}
 
-En la tabla siguiente se enumeran las configuraciones de lanzamiento que se proporcionan listas para usar con AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de lanzamiento instaladas no cumplen los requisitos, puede [crear una nueva configuración de lanzamiento](#creating-a-rollout-configuration).
+En la tabla siguiente se enumeran las configuraciones de lanzamiento que se proporcionan de forma predeterminada con AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de lanzamiento instaladas no cumplen los requisitos, puede [crear una nueva configuración de lanzamiento](#creating-a-rollout-configuration).
 
 | Nombre | Descripción | Activador | [Acciones de sincronización](#synchronization-actions) |
 |---|---|---|---|
 | Configuración de lanzamiento estándar | La configuración de lanzamiento estándar permite iniciar procesos de lanzamiento con el activador de lanzamientos, y ejecuta acciones como crear, actualizar, eliminar contenido y ordenar nodos secundarios | En el lanzamiento | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`productUpdate`<br>`orderChildren` |
 | Activar si se activa el modelo | Publica Live Copy cuando se publica el origen | En la activación | `targetActivate` |
 | Desactivar si se desactiva el modelo | Desactiva Live Copy cuando se desactiva el origen | Al desactivar | `targetDeactivate` |
-| Insertar al modificar | Inserta el contenido en Live Copy cuando se modifica el origen<br>Utilice esta configuración de lanzamiento con moderación, ya que utiliza el activador On Modification. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Insertar al modificar (superficial) | Inserta contenido en Live Copy cuando se modifica la página del modelo sin actualizar referencias (por ejemplo, para copias superficiales)<br>Utilice esta configuración de lanzamiento con moderación, ya que utiliza el activador On Modification. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Insertar al modificar | Inserta el contenido en Live Copy cuando se modifica el origen<br>Utilice esta configuración de lanzamiento con moderación, ya que utiliza el déclencheur On Modification. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
+| Insertar al modificar (superficial) | Inserta contenido en Live Copy cuando se modifica la página del modelo sin actualizar referencias (por ejemplo, para copias superficiales)<br>Utilice esta configuración de lanzamiento con moderación, ya que utiliza el déclencheur On Modification. | En la modificación | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Lanzamiento de promoción | Configuración del lanzamiento estándar para promocionar páginas de inicio con dicho fin. | En el lanzamiento | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Acciones de sincronización {#synchronization-actions}
@@ -93,7 +95,7 @@ The new rollout configuration is then available to you when configuring rollout 
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes para que no afecten a los tipos de nodos y propiedades específicos. Por ejemplo, muchas propiedades y subnodos relacionados con el funcionamiento interno de AEM no deben incluirse en una Live Copy. Solo se debe copiar el contenido relevante para el usuario de la página.
 
-Al trabajar con AEM, existen varios métodos para administrar los ajustes de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 En la tabla siguiente se enumeran las acciones de sincronización para las que se pueden especificar los nodos que se excluirán. La tabla proporciona los nombres de los servicios que se configuran mediante la consola web y el PID para configurar el uso de un nodo del repositorio.
 
@@ -132,7 +134,7 @@ Por ejemplo, si quiere que el **título** de la página se incluya en los cambio
 
 Puede configurar varios servicios de OSGi que admitan las acciones de sincronización correspondientes relacionadas con la actualización de referencias.
 
-Al trabajar con AEM, existen varios métodos para administrar los ajustes de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
 En la siguiente tabla se enumeran las acciones de sincronización para las que se puede especificar la actualización de referencia. La tabla proporciona los nombres de los servicios que se configuran mediante la consola web y el PID para configurar el uso de un nodo del repositorio.
 
