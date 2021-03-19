@@ -1,10 +1,12 @@
 ---
 title: Administración de ajustes preestablecidos de visor
-description: Cómo crear y administrar ajustes preestablecidos de visualizador en Dynamic Media.
+description: Aprenda a crear y administrar ajustes preestablecidos de visor en Dynamic Media.
+feature: Ajustes preestablecidos de visualizador, visualizadores
+topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4239'
+source-wordcount: '4245'
 ht-degree: 13%
 
 ---
@@ -60,7 +62,7 @@ Consulte [Biblioteca de imágenes estáticas interactivas](https://experiencelea
 
 ### Compatibilidad del sistema con ajustes preestablecidos de visor {#viewer-preset-system-compatibility}
 
-Todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media son totalmente compatibles con los siguientes sistemas:
+Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynamic Media son totalmente compatibles con los siguientes sistemas:
 
 * Computadoras de escritorio
 * Apple iPhone
@@ -148,7 +150,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
 
 ### Lista de ajustes preestablecidos de visor predeterminados {#list-of-out-of-the-box-viewer-presets}
 
-La siguiente tabla identifica todos los ajustes preestablecidos de visualizador predefinidos y listos para usar que se incluyen con Dynamic Media.
+La siguiente tabla identifica todos los ajustes preestablecidos de visor predefinidos y listos para usar que se incluyen con Dynamic Media.
 
 Consulte también [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -158,7 +160,7 @@ Consulte &quot;Notas de la versión de los visores&quot; en la tabla de contenid
 
 >[!NOTE]
 >
->Todos los ajustes preestablecidos de visualizador integrados en Dynamic Media están activados (activados), pero debe publicarlos.
+>Todos los ajustes preestablecidos de visualizador integrados en Dynamic Media se activan (activan), pero es necesario publicarlos.
 >Consulte [Ajustes preestablecidos del visualizador de publicaciones](#publishing-viewer-presets).
 >
 >Los ajustes preestablecidos de visor nuevos que cree y agregue deben activarse *y *publicarse.
@@ -368,11 +370,11 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
 
 ## Aumento del número de ajustes preestablecidos de visualizador que se muestran {#increasing-the-number-of-viewer-presets-that-display}
 
-Experience Manager muestra una amplia variedad de ajustes preestablecidos de visor al ver recursos desde **[!UICONTROL Vista de detalles > Visualizadores]**. Puede aumentar o disminuir el número de visualizadores que se muestran.
+El Experience Manager muestra una amplia variedad de ajustes preestablecidos de visor al ver recursos desde **[!UICONTROL Vista de detalles > Visualizadores]**. Puede aumentar o disminuir el número de visualizadores que se muestran.
 
 **Para aumentar el número de ajustes preestablecidos de visor que se muestran**:
 
-1. Vaya a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Vaya al CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Vaya al nodo de listado de ajustes preestablecidos de visor en `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
@@ -387,9 +389,9 @@ Experience Manager muestra una amplia variedad de ajustes preestablecidos de vis
 
 ## Creación de un ajuste preestablecido de visualizador {#creating-a-new-viewer-preset}
 
-La creación de ajustes preestablecidos de visualizador le permite aplicar distintos ajustes para ver e interactuar con los recursos. Sin embargo, no es necesario crear ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visualizador predeterminados que ya se incluyen con Experience Manager Assets.
+La creación de ajustes preestablecidos de visualizador le permite aplicar distintos ajustes para ver e interactuar con los recursos. Sin embargo, no es necesario crear ajustes preestablecidos de visor. Si lo prefiere, puede utilizar los ajustes preestablecidos de visualizador predeterminados que ya se incluyen con Recursos de Experience Manager.
 
-Si elige crear un ajuste preestablecido de visualizador, después de guardarlo, el estado del visualizador se activa automáticamente (establecido en **[!UICONTROL On]**) en la página Ajustes preestablecidos de visualizador. Este estado significa que está visible en el componente de Dynamic Media y en el componente de Medios interactivos y siempre que se obtiene una vista previa de una imagen o un vídeo.
+Si elige crear un ajuste preestablecido de visualizador, después de guardarlo, el estado del visualizador se activa automáticamente (establecido en **[!UICONTROL On]**) en la página Ajustes preestablecidos de visualizador. Este estado significa que está visible en el componente Dynamic Media y en el componente Medios interactivos y siempre que se obtiene una vista previa de una imagen o un vídeo.
 
 Algunos ajustes preestablecidos de visualizador tienen una configuración exclusiva que puede afectar al uso y al comportamiento general del visualizador. Según el ajuste preestablecido de visualizador que cree, debe tener en cuenta estas consideraciones especiales.
 
@@ -399,7 +401,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
 **Para crear un ajuste preestablecido** de visualizador:
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo de Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -421,7 +423,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
       Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en el tema de ayuda &quot;Personalización del *`<viewer name>`* visualizador&quot; de la [Guía de referencia del visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
 
-   * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en Experience Manager Assets. Para buscar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador, pulse **[!UICONTROL Importar CSS]** debajo del menú desplegable **[!UICONTROL Tipo seleccionado]** (si es necesario, desplácese hacia arriba el editor visual para verlo).
+   * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en Recursos Experience Manager. Para buscar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador, pulse **[!UICONTROL Importar CSS]** debajo del menú desplegable **[!UICONTROL Tipo seleccionado]** (si es necesario, desplácese hacia arriba el editor visual para verlo).
 
       Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS que importe deben definirse con su nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
@@ -523,14 +525,14 @@ Los ajustes preestablecidos de visor disponibles en la interfaz de usuario depen
 
 **Para activar o desactivar ajustes preestablecidos** de visualizador:
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo de Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. En la página Ajuste preestablecido de visualizador, en el encabezado de columna **[!UICONTROL Estado]**, pulse el botón de alternancia para activar o desactivar un ajuste preestablecido de visualizador.
 
    Los ajustes preestablecidos de visor que se activan tienen el botón de alternancia a la derecha, dentro de un cuadro azul; los ajustes preestablecidos de visualizador desactivados tienen la opción que aparece a la izquierda, dentro de un cuadro gris claro.
 
 ## Ajustes preestablecidos del visualizador de publicaciones {#publishing-viewer-presets}
 
-Activar (o activar) el estado de un ajuste preestablecido de visualizador significa que está visible en el componente de Dynamic Media, en el componente de Medios interactivos y siempre que se vea un recurso.
+Activar (o activar) el estado de un ajuste preestablecido de visualizador significa que está visible en el componente Dynamic Media, en el componente de Medios interactivos y siempre que se vea un recurso.
 
 Sin embargo, para *entregar* un recurso con un ajuste preestablecido de visualizador, también se debe publicar el ajuste preestablecido de visualizador. Todos los ajustes preestablecidos de visualizador deben activarse *y* publicarse para obtener la URL o el código incrustado de un recurso. Active y publique todos los ajustes preestablecidos de visualizador integrados que se incluyen con Dynamic Media. Los ajustes preestablecidos de visualizador personalizado que cree y agregue se activan automáticamente, pero también se deben publicar.
 
@@ -540,13 +542,13 @@ Consulte también [Vista previa de recursos](/help/assets/dynamic-media/previewi
 
 **Para publicar ajustes preestablecidos de visor**:
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo de Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. Seleccione uno o varios ajustes preestablecidos de visor que desee publicar.
 1. En la barra de herramientas, pulse el icono **[!UICONTROL Publicar]**.
 
 ## Ordenar ajustes preestablecidos de visor {#sorting-viewer-presets}
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo de Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. Haga clic en **[!UICONTROL Título preestablecido]**, **[!UICONTROL Tipo]**, **[!UICONTROL Publicado]** o **[!UICONTROL Estado]** para ordenar por ese encabezado de la columna. Por ejemplo, haga clic en **[!UICONTROL Tipo]** para ordenar los tipos de ajustes preestablecidos de visualizador en orden alfabético o alfabético inverso.
 
 ## Edición de ajustes preestablecidos de visor {#editing-viewer-presets}
@@ -555,7 +557,7 @@ La edición de *ajustes preestablecidos de visor predefinidos y listos para usar
 
 **Para editar ajustes preestablecidos** de visualizador:
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo de Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recurso] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recurso] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. Seleccione un ajuste preestablecido marcando la casilla a la izquierda del título del ajuste preestablecido de visualizador.
 1. En la barra de herramientas, pulse **[!UICONTROL Editar]**.
 1. En la página **[!UICONTROL Editor de ajustes preestablecidos de visualizador]**, realice los cambios que desee con el ajuste preestablecido de visualizador, utilizando las opciones que se encuentran en las pestañas **[!UICONTROL Aspecto]** y **[!UICONTROL Comportamiento]**.
@@ -573,7 +575,7 @@ Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a
 
 **Para eliminar ajustes preestablecidos de visor personalizado**:
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo de Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. En la página Ajustes preestablecidos de visor , marque un Título preestablecido y, a continuación, pulse el icono **[!UICONTROL Papelera]**.
 1. Toque **[!UICONTROL Eliminar]**.
 
@@ -597,4 +599,4 @@ Si ya ha publicado el recurso y el visualizador seleccionado, los botones **[!UI
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). Consulte también [Incrustación del visualizador de vídeo en una página web](/help/assets/dynamic-media/embed-code.md).
 
-Si utiliza Experience Manager como WCM, puede añadir recursos utilizando los ajustes preestablecidos de visor directamente en la página. Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Si utiliza Experience Manager como WCM, puede añadir recursos utilizando los ajustes preestablecidos de visor directamente en la página. Consulte [Adición de recursos de Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
