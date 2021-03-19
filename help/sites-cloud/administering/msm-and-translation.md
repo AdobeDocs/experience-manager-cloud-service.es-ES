@@ -1,10 +1,12 @@
 ---
 title: Traducción y administrador de varios sitios
 description: Aprenda a reutilizar el contenido en su proyecto y a administrar sitios web multilingües en AEM.
+feature: Administración
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '374'
 ht-degree: 2%
 
 ---
@@ -45,7 +47,7 @@ El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no
 En este, y comparable, escenarios MSM no administra las diferentes versiones de idioma como tales.
 
 * [](msm/overview.md) MSM administra la implementación de contenido traducido de un modelo (es decir, un maestro global) a Live Copies (es decir, los sitios locales), dentro de los límites de un idioma.
-* Las [capacidades de integración de traducción](translation/overview.md) de AEM, junto con los servicios de administración de traducciones de terceros, administran los idiomas y traducen el contenido a estos idiomas.
+* Las capacidades de integración de [translation](translation/overview.md) de AEM, junto con los servicios de administración de traducciones de terceros, administran los idiomas y traducen el contenido a estos diferentes idiomas.
 
 Para casos de uso más avanzados, también se pueden usar MSM entre maestros de idioma.
 
