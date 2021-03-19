@@ -1,10 +1,12 @@
 ---
 title: Conjuntos de medios mixtos
 description: Aprenda a trabajar con conjuntos de medios mixtos en Dynamic Media.
+feature: Conjuntos de medios mixtos
+topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 25%
 
 ---
@@ -54,7 +56,7 @@ Para poner en marcha rápidamente los conjuntos de medios mixtos, siga estos pas
 
 1. [Vincule las URL a su ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) aplicación web o  [incruste el visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
 
-   Recursos Adobe Experience Manager crea llamadas de URL para conjuntos de medios mixtos y los activa después de publicar los conjuntos de medios mixtos. Puede copiar estas direcciones URL cuando obtiene una vista previa de los recursos. También puede incrustarlos en el sitio web.
+   Adobe Experience Manager Assets crea llamadas URL para conjuntos de medios mixtos y los activa después de publicar los conjuntos de medios mixtos. Puede copiar estas direcciones URL cuando obtiene una vista previa de los recursos. También puede incrustarlos en el sitio web.
 
    Seleccione el conjunto de medios mixtos y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores]**.
 
@@ -90,7 +92,7 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 
    >[!NOTE]
    >
-   >Al crear el conjunto de medios mixtos, puede cambiar la miniatura del conjunto de medios mixtos o permitir que Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de medios mixtos. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que desea que Experience Manager genere una del conjunto de medios mixtos, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
+   >Al crear el conjunto de medios mixtos, puede cambiar la miniatura del conjunto de medios mixtos o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de medios mixtos. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura, y luego decide que desea que el Experience Manager genere una del conjunto de medios mixtos, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
 
 1. Para seleccionar recursos que desea incluir en su conjunto de medios mixtos, pulse el Selector de recursos. Selecciónelos y haga clic en **[!UICONTROL Select]**.
 
@@ -154,7 +156,7 @@ Puede realizar varias tareas de edición en los recursos de los conjuntos de med
 
    >[!NOTE]
    >
-   >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Toque (no seleccione) el conjunto para abrirlo en la página Vista previa de conjunto de Experience Manager. En el carril izquierdo, haga clic en el circunflejo invertido para abrir la lista desplegable y, a continuación, pulse **[!UICONTROL Definir miembros]**. En la página Definir miembros, pase el ratón sobre un recurso y, a continuación, pulse **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
+   >* Para editar los recursos de un conjunto de medios mixtos, vaya al conjunto de medios mixtos. Toque (no seleccione) el conjunto para abrirlo en la página Vista previa del conjunto de Experience Manager . En el carril izquierdo, haga clic en el circunflejo invertido para abrir la lista desplegable y, a continuación, pulse **[!UICONTROL Definir miembros]**. En la página Definir miembros, pase el ratón sobre un recurso y, a continuación, pulse **[!UICONTROL Editar]** (icono de lápiz) para abrir la página de edición.
       >
       >
    * Para eliminar un conjunto de medios mixtos completo, en cualquier modo de visualización (como la vista de tarjeta o la vista de columna), vaya al conjunto de medios mixtos. Pase el ratón sobre el conjunto y, a continuación, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). Pulse **[!UICONTROL Retroceso]** en el teclado o pulse **[!UICONTROL Más]** (fila de tres puntos) y, a continuación, pulse **[!UICONTROL Eliminar]**.
