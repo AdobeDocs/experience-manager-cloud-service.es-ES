@@ -1,10 +1,12 @@
 ---
 title: Administración de ajustes preestablecidos de imagen
-description: Conozca los ajustes preestablecidos de imagen y aprenda a crear, modificar y administrar los mismos.
+description: '"Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos."'
+feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
+topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3646'
 ht-degree: 10%
 
 ---
@@ -12,7 +14,7 @@ ht-degree: 10%
 
 # Administrar ajustes preestablecidos de imagen{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten a los recursos de Adobe Experience Manager entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para la entrega de imágenes. También puede elegir los comandos de formato para que el aspecto de la imagen se optimice cuando la imagen se entregue para su visualización.
+Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para la entrega de imágenes. También puede elegir los comandos de formato para que el aspecto de la imagen se optimice cuando la imagen se entregue para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido cuando exportan imágenes, lo que también permite cambiar el formato de las imágenes según las especificaciones del administrador.
 
@@ -28,7 +30,7 @@ En esta sección se describe cómo crear, modificar y administrar los ajustes pr
 
 Al igual que una macro, un ajuste preestablecido de imagen es una colección predefinida de comandos de tamaño y formato guardados con un nombre. Para comprender cómo funcionan los ajustes preestablecidos de imagen, supongamos que el sitio web requiere que cada imagen de producto aparezca en diferentes tamaños, formatos diferentes y tasas de compresión para la entrega por equipos de escritorio y dispositivos móviles.
 
-Puede crear dos ajustes preestablecidos de imagen: uno con 500 x 500 píxeles para la versión de escritorio y 150 x 150 píxeles para la versión móvil. Puede crear dos ajustes preestablecidos de imagen, uno llamado `Enlarge` para mostrar imágenes a 500x500 píxeles y otro llamado `Thumbnail` para mostrar imágenes a 150 x 150 píxeles. Para enviar imágenes con los tamaños `Enlarge` y `Thumbnail` , Experience Manager busca la definición del ajuste preestablecido Ampliar imagen y el ajuste preestablecido de imagen en miniatura. A continuación, Experience Manager genera dinámicamente una imagen con las especificaciones de tamaño y formato de cada ajuste preestablecido de imagen.
+Puede crear dos ajustes preestablecidos de imagen: uno con 500 x 500 píxeles para la versión de escritorio y 150 x 150 píxeles para la versión móvil. Puede crear dos ajustes preestablecidos de imagen, uno llamado `Enlarge` para mostrar imágenes a 500x500 píxeles y otro llamado `Thumbnail` para mostrar imágenes a 150 x 150 píxeles. Para enviar imágenes con los tamaños `Enlarge` y `Thumbnail` , el Experience Manager busca en la definición del ajuste preestablecido Ampliar imagen y el ajuste preestablecido de imagen en miniatura. A continuación, el Experience Manager genera dinámicamente una imagen con las especificaciones de tamaño y formato de cada ajuste preestablecido de imagen.
 
 Las imágenes con un tamaño reducido cuando se entregan de forma dinámica pueden perder nitidez y detalle. Por este motivo, cada ajuste preestablecido de imagen contiene controles de formato para optimizar una imagen cuando se entrega a un tamaño concreto. Estos controles garantizan que las imágenes sean nítidas y claras cuando se envían al sitio web o a la aplicación.
 
@@ -36,7 +38,7 @@ Los administradores pueden crear ajustes preestablecidos de imagen. Para crear u
 
 ## Administración de ajustes preestablecidos de imagen {#managing-image-presets-1}
 
-Para administrar los ajustes preestablecidos de imagen en Experience Manager, toque o haga clic en el logotipo de Experience Manager para acceder a la consola de navegación global y, a continuación, toque o haga clic en el icono Herramientas y vaya a **[!UICONTROL Assets > Ajustes preestablecidos de imagen]**.
+Para administrar los ajustes preestablecidos de imagen en el Experience Manager, toque o haga clic en el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, toque o haga clic en el icono Herramientas y vaya a **[!UICONTROL Assets > Ajustes preestablecidos de imagen]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -52,11 +54,11 @@ Para administrar los ajustes preestablecidos de imagen en Experience Manager, to
 >
 >El sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista de detalles de un recurso. Puede aumentar o disminuir el número de ajustes preestablecidos de imagen que se muestran. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formatos de archivo de Adobe Illustrator (AI), PostScript® (EPS) y PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Formatos de archivo Adobe Illustrator (AI), PostScript® (EPS) y PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 Si tiene intención de admitir la ingesta de archivos AI, EPS y PDF para poder generar representaciones dinámicas de estos formatos de archivo, revise la siguiente información antes de crear ajustes preestablecidos de imagen.
 
-El formato de archivo de Adobe Illustrator es una variante de PDF. Las principales diferencias, en el contexto de Experience Manager Assets, son las siguientes:
+El formato de archivo de Adobe Illustrator es una variante de PDF. Las principales diferencias, en el contexto de los recursos del Experience Manager, son las siguientes:
 
 * Los documentos de Adobe Illustrator constan de una sola página con varias capas. Cada capa se extrae como un subrecurso PNG bajo el recurso principal de Illustrator.
 * Los documentos PDF constan de una o varias páginas. Cada página se extrae como un subrecurso PDF de una sola página en el documento PDF principal de varias páginas.
@@ -86,7 +88,7 @@ Para utilizar Dynamic Media para obtener una vista previa y generar representaci
 
 Puede acceder a las opciones de los componentes de proceso `Rasterize PDF/AI Image Preview Rendition` mediante el flujo de trabajo `DAM Update Asset`.
 
-Pulse en Adobe Experience Manager en la esquina superior izquierda, vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página Modelos de flujo de trabajo , seleccione **[!UICONTROL Recurso de actualización de DAM]** y, en la barra de herramientas, pulse **[!UICONTROL Editar]**. En la página de flujo de trabajo de recursos de actualización de DAM , pulse dos veces el componente de proceso `Rasterize PDF/AI Image Preview Rendition` para abrir su cuadro de diálogo Propiedades de los pasos .
+Toque en Adobe Experience Manager en la parte superior izquierda, vaya a **[!UICONTROL Herramientas > Flujo de trabajo > Modelos]**. En la página Modelos de flujo de trabajo , seleccione **[!UICONTROL Recurso de actualización de DAM]** y, en la barra de herramientas, pulse **[!UICONTROL Editar]**. En la página de flujo de trabajo de recursos de actualización de DAM , pulse dos veces el componente de proceso `Rasterize PDF/AI Image Preview Rendition` para abrir su cuadro de diálogo Propiedades de los pasos .
 
 #### Rasterizar las opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -134,17 +136,17 @@ El componente de proceso `Rasterize PDF/AI Image Preview Rendition` tiene un má
 
 Si tiene intención de admitir la ingesta de archivos INDD para poder generar una representación dinámica de este formato de archivo, revise la siguiente información antes de crear ajustes preestablecidos de imagen.
 
-En el caso de los archivos de InDesign, los subrecursos solo se extraen si Adobe InDesign Server está integrado con Experience Manager. Los recursos a los que se hace referencia están vinculados según sus metadatos. InDesign Server no es necesario para la vinculación. Sin embargo, los recursos a los que se hace referencia deben estar presentes en Experience Manager antes de que se procesen los archivos de InDesign para que se creen los vínculos entre los archivos de InDesign y los recursos a los que se hace referencia.
+Para los archivos de InDesign, los subrecursos se extraen solo si Adobe InDesign Server está integrado con Experience Manager. Los recursos a los que se hace referencia están vinculados según sus metadatos. No se requiere InDesign Server para la vinculación. Sin embargo, los recursos a los que se hace referencia deben estar presentes en Experience Manager antes de que se procesen los archivos de InDesign para que se creen los vínculos entre los archivos de InDesign y los recursos a los que se hace referencia.
 
 <!-- See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
-El componente de proceso Extracción de medios del flujo de trabajo `DAM Update Asset` ejecuta varios scripts extend preconfigurados para procesar archivos InDesign.
+El componente de proceso Extracción de medios del flujo de trabajo `DAM Update Asset` ejecuta varios scripts extend preconfigurados para procesar archivos de InDesign.
 
-![Las rutas ExtendScript en los argumentos del proceso de extracción de medios](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![Las rutas de ExtendScript en los argumentos del proceso de Extracción de medios](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Las rutas ExtendScript en los argumentos del componente de proceso Extracción de medios en el flujo de trabajo de recursos de actualización DAM.
+Las rutas de ExtendScript en los argumentos del componente de proceso Extracción de medios en el flujo de trabajo de recursos de actualización de DAM.
 
-La integración de Dynamic Media utiliza los siguientes scripts:
+La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
 
 <table>
  <tbody>
@@ -161,7 +163,7 @@ La integración de Dynamic Media utiliza los siguientes scripts:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Sí</td>
-   <td>Genera un subrecurso JPEG de 300 ppi para cada página. El subrecurso JPEG es un recurso real almacenado en el recurso InDesign. También está optimizado y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br /> </td>
+   <td>Genera un subrecurso JPEG de 300 ppi para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso de InDesign. También está optimizado y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,7 +195,7 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
 **Para configurar el tamaño de las miniaturas de la imagen**
 
 1. Pulse **[!UICONTROL Herramientas > Flujo de trabajo > Modelos > Recurso de actualización DAM > Editar]**.
-1. Pulse el paso **[!UICONTROL Recursos de imagen de proceso de Dynamic Media]** y pulse la pestaña **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
+1. Pulse el paso **[!UICONTROL Dynamic Media Process Image Assets]** y pulse la pestaña **[!UICONTROL Miniaturas]**. Cambie el tamaño de la miniatura, según sea necesario, y pulse **[!UICONTROL Aceptar]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -207,11 +209,11 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
 
 ### Aumento o disminución del número de ajustes preestablecidos de imagen que se muestran {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas cuando se previsualizan los recursos. Experience Manager muestra varias representaciones dinámicas al ver un recurso desde **[!UICONTROL Vista de detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
+Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas cuando se previsualizan los recursos. El Experience Manager muestra varias representaciones dinámicas al ver un recurso desde **[!UICONTROL Vista de detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
 
 **Para aumentar o reducir el número de ajustes preestablecidos de imagen mostrados**:
 
-1. Vaya a CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Vaya al CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Vaya al nodo de listado de ajustes preestablecidos de imagen en `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
 
    ![Increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -241,7 +243,7 @@ Consulte [Formato de archivo de InDesign (INDD)](#indesign-indd-file-format).
 
 **Para crear un ajuste preestablecido** de imagen:
 
-1. En Experience Manager, pulse el logotipo de Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de imagen]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de imagen]**.
 1. Haga clic en **[!UICONTROL Crear]**. Se abre la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -260,7 +262,7 @@ Consulte [Formato de archivo de InDesign (INDD)](#indesign-indd-file-format).
 
 Para crear un ajuste preestablecido de imagen interactivo, realice los pasos en [Creación de ajustes preestablecidos de imagen](#creating-image-presets). Cuando introduzca la altura y la anchura en la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**, borre los valores y déjelos en blanco.
 
-Dejarlos en blanco indica a Experience Manager que este ajuste preestablecido de imagen es interactivo. Puede ajustar los demás valores según corresponda.
+Dejarlos en blanco indica al Experience Manager que este ajuste preestablecido de imagen es interactivo. Puede ajustar los demás valores según corresponda.
 
 >[!NOTE]
 >
@@ -382,7 +384,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Uso del enfoque de imagen con el vídeo de Dynamic Media</a> de Experience Manager, en el tema de ayuda en línea <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Enfoque de una imagen</a> y en <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Prácticas recomendadas para enfocar las imágenes en el archivo PDF descargable de Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">Uso del enfoque de imagen con el vídeo Dynamic Media</a> Experience Manager, en el tema de ayuda en línea <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Enfoque de una imagen</a> y en <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Prácticas recomendadas para enfocar las imágenes en el archivo PDF descargable de Dynamic Media Classic</a>.
     </div> </td>
   </tr>
   <tr>
@@ -411,7 +413,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Servicios de Dynamic Media no principales: SVG, procesamiento de imágenes e impresión virtual</li>
+     <li>Servicios Dynamic Media no principales: SVG, procesamiento de imágenes e impresión virtual</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -419,13 +421,13 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
 
 ### Definición de opciones de ajustes preestablecidos de imagen con modificadores de imagen {#defining-image-preset-options-with-image-modifiers}
 
-Además de las opciones disponibles en las pestañas Básico y Avanzado , puede definir modificadores de imagen para ofrecerle más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de renderización de imágenes de Dynamic Media y se define en detalle en la [Referencia del protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
+Además de las opciones disponibles en las pestañas Básico y Avanzado , puede definir modificadores de imagen para ofrecerle más opciones al definir ajustes preestablecidos de imagen. El procesamiento de imágenes se basa en la API de procesamiento de imágenes de Dynamic Media y se define en detalle en la [Referencia del protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api).
 
 A continuación se presentan algunos ejemplos básicos de lo que puede hacer con los modificadores de imagen.
 
 >[!NOTE]
 >
->Algunos modificadores de imagen [no se pueden usar en Experience Manager](#advanced-tab-options).
+>Algunos modificadores de imagen [no se pueden usar en el Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) : invierte cada componente de color para obtener un efecto de imagen negativo.
 
@@ -469,7 +471,7 @@ A continuación se presentan algunos ejemplos básicos de lo que puede hacer con
 
 ### Edición de ajustes preestablecidos de imagen {#modifying-image-presets}
 
-1. En Experience Manager, pulse el logotipo de Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de imagen]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de imagen]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -482,5 +484,5 @@ Los ajustes preestablecidos de imagen se publican automáticamente.
 
 ### Eliminación de ajustes preestablecidos de imagen {#deleting-image-presets}
 
-1. En Experience Manager, pulse el logotipo de Experience Manager para acceder a la consola de navegación global, pulse o haga clic en el icono Herramientas y vaya a **[!UICONTROL Assets > Ajustes preestablecidos de imagen]**.
+1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global, pulse o haga clic en el icono Herramientas y vaya a **[!UICONTROL Assets > Ajustes preestablecidos de imagen]**.
 1. Seleccione un ajuste preestablecido y, a continuación, haga clic en **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Toque **[!UICONTROL Eliminar]** para eliminar o toque **[!UICONTROL Cancelar]** para anular la operación.
