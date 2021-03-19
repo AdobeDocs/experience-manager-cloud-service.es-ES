@@ -1,22 +1,23 @@
 ---
-title: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.2.0
-description: Notas de la versión de Cloud Manager en AEM como Cloud Service, versión 2020.2.0
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.2.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.2.0
+feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 66%
+source-wordcount: '201'
+ht-degree: 67%
 
 ---
 
 
-# Notas de la versión de Cloud Manager en Adobe Experience Manager como Cloud Service 2020.2.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2020.2.0 {#release-notes}
 
-Esta página describe las Notas de la versión de Cloud Manager en AEM como Cloud Service 2020.2.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2020.2.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM como Cloud Service 2020.2.0 es el 13 de febrero de 2020.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.2.0 es el 13 de febrero de 2020.
 
 ## Cloud Manager {#cloud-manager}
 
