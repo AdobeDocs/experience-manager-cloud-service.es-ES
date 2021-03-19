@@ -1,10 +1,12 @@
 ---
 title: Prácticas recomendadas de MSM
-description: Conozca las prácticas recomendadas recopiladas por los equipos de ingeniería y consultoría de Adobe para ayudarle a poner en marcha el administrador de varios sitios de AEM.
+description: Conozca las prácticas recomendadas recopiladas por los equipos de consultoría e ingeniería de Adobe para ayudarle a poner en marcha el administrador de varios sitios de AEM.
+feature: Administrador de varios sitios
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
@@ -20,7 +22,7 @@ MSM es un marco configurable para automatizar la implementación de contenido. L
 * **Personalice tanto como sea necesario, pero tan poco como sea posible.** Aunque MSM admite un alto grado de personalización (p. ej., configuraciones de implementación), la práctica recomendada para el rendimiento, la fiabilidad y la actualización del sitio web es minimizar la personalización.
 * Establezca un modelo de **administración** antes y capacite a los usuarios en consecuencia para garantizar el éxito. Una práctica recomendada desde el punto de vista del gobierno es **minimizar la autoridad que los productores de contenido local tienen** para asignar/conectar contenido a otros usuarios locales y sus respectivas Live Copies. Esto se debe a que las herencias encadenadas y no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
 * Una vez que existe un plan para su estructura, flujos de contenido, automatización y administración, **prototipo y pruebe a fondo su sistema** antes de iniciar una implementación activa.
-* Tenga en cuenta que **Adobe Consulting y los integradores de sistemas líderes** tienen una planificación de experiencia profunda e implementan la automatización de contenido con MSM, de modo que pueden ayudarle a empezar con su proyecto MSM y a lo largo de toda su implementación.
+* Tenga en cuenta que los **asesores de Adobe y los integradores de sistemas líderes** tienen una planificación profunda de la experiencia e implementan la automatización de contenido con MSM, de modo que pueden ayudarle a empezar con su proyecto MSM y a lo largo de toda su implementación.
 
 ## Configuraciones de fuentes y modelos de Live Copy {#live-copy-sources-and-blueprint-configurations}
 
@@ -63,7 +65,7 @@ A continuación se indican algunas consideraciones que se deben tener en cuenta 
 
 * Para crear un nuevo sitio, necesita una [configuración de modelo](creating-live-copies.md#managing-blueprint-configurations).
 * Para permitir la selección de rutas de idioma para crear en un sitio nuevo, las raíces de idioma correspondientes deben existir en el modelo (fuente).
-* Una vez que se ha creado un [nuevo sitio como Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (con **Crear** y, a continuación, **Sitio**), los dos primeros niveles de esta Live Copy son *superficial*. Los elementos secundarios de la página no pertenecen a la relación de vida activa, pero se seguirá desplegando si se encuentra una relación de vida que coincida con el activador.
+* Una vez que se ha creado un [nuevo sitio como Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (con **Crear** y, a continuación, **Sitio**), los dos primeros niveles de esta Live Copy son *superficial*. Los elementos secundarios de la página no pertenecen a la relación de vida, pero se seguirá desplegando si se encuentra una relación de vida que coincida con el déclencheur.
 
 Es útil evitar:
 
@@ -80,7 +82,7 @@ Al crear maestros de idiomas, tenga en cuenta lo siguiente:
    * MSM le permite cancelar la herencia en el nivel de página o componente. Esto ayuda a evitar sobrescribir el contenido traducido (de una Live Copy, con contenido aún no traducido de un modelo) en la próxima implementación.
       * Algunos conectores de traducción de terceros automatizan esta administración de las heredaciones de MSM.
       * Consulte a su proveedor de servicios de traducción para obtener más información.
-      * Un enfoque alternativo para crear y traducir maestros de idiomas es usar copias de idiomas junto con el marco de integración de traducción predeterminado de AEM.
+      * Un enfoque alternativo para crear y traducir maestros de idiomas es usar copias de idiomas junto con AEM marco de integración de traducción listo para usar.
 
 Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) y las [Prácticas recomendadas de traducción.](/help/sites-cloud/administering/translation/best-practices.md)
 
@@ -101,7 +103,7 @@ Cuando considere la posibilidad de mover páginas en una Live Copy, considere la
 
 >[!NOTE]
 >
->Lo siguiente solo funcionará con el [activador de lanzamiento de activación](live-copy-sync-config.md#rollout-triggers).
+>Lo siguiente solo funcionará con el [déclencheur de lanzamiento de activación](live-copy-sync-config.md#rollout-triggers).
 
 1. Cree una configuración de lanzamiento personalizada.
    * Esta nueva configuración debe incluir la acción `PageMoveAction`.
@@ -116,22 +118,22 @@ Cuando considere la posibilidad de mover páginas en una Live Copy, considere la
 
 Las configuraciones de implementación de MSM son altamente personalizables. Debe tener en cuenta que la automatización de las implementaciones puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar con mucho cuidado antes de realizar las siguientes actividades:
 
-* Automatización de lanzamientos como con [activadores onModify](#onmodify)
+* Automatización de lanzamientos como con [déclencheur onModify](#onmodify)
 * Personalización de [tipos de nodo/propiedades](#node-types-properties)
 * Inicio de flujos de trabajo subsiguientes
 * Activación de contenido como parte de lanzamientos
 
 ### onModify {#onmodify}
 
-Al utilizar el [activador de despliegue](live-copy-sync-config.md#rollout-triggers) `onModify` debe tener en cuenta que:
+Al utilizar el [déclencheur de implementación](live-copy-sync-config.md#rollout-triggers) `onModify` debe tener en cuenta que:
 
-* La automatización de lanzamientos con `onModify` activadores puede tener un impacto negativo en el rendimiento de la creación, ya que activan despliegues después de cada modificación de página.
+* La automatización de los lanzamientos con déclencheur `onModify` puede tener un impacto negativo en el rendimiento de la creación, ya que déclencheur los lanzamientos después de cada modificación de página.
 * El resultado de la implementación puede diferir del esperado, ya que:
    * No se puede especificar el orden de los eventos de modificación resultantes.
    * La arquitectura basada en eventos no puede garantizar la secuencia de eventos pasados al administrador de implementación.
 * El uso de una configuración de lanzamiento de este tipo podría provocar conflictos de confirmación si se producen actualizaciones simultáneas del mismo recurso.
 
-Por lo tanto, se recomienda utilizar únicamente `onModify` activadores si los beneficios del inicio de implementación automático superan cualquier problema de rendimiento potencial.
+Por lo tanto, se recomienda utilizar únicamente déclencheur `onModify` si los beneficios del inicio automático de la implementación superan cualquier posible problema de rendimiento.
 
 ### Tipos de nodo/Propiedades {#node-types-properties}
 
