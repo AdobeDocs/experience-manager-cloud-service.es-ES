@@ -1,11 +1,13 @@
 ---
 title: Despliegue de conflictos
 description: Obtenga información sobre cómo administrar y resolver conflictos de implementación del administrador de varios sitios.
+feature: Administrador de varios sitios
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +26,7 @@ Para garantizar que el despliegue no esté bloqueado, las definiciones posibles 
 * ¿Qué páginas se cambiarán de nombre (y cómo)?
 * Cómo afectará esto a cualquier contenido publicado
 
-El comportamiento predeterminado de AEM es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, dicho contenido se publicará después de la gestión y el despliegue del conflicto.
+El comportamiento predeterminado de AEM listo para usar es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, dicho contenido se publicará después de la gestión y el despliegue del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
@@ -116,7 +118,7 @@ Los controladores de conflictos personalizados pueden:
 
 ### Comportamiento cuando el manejo de conflictos está desactivado {#behavior-when-conflict-handling-deactivated}
 
-Si desactiva manualmente [la gestión de conflictos,](#rollout-manager-and-conflict-handling) AEM no realiza ninguna acción en ninguna página en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
+Si desactiva manualmente [la gestión de conflictos,](#rollout-manager-and-conflict-handling) no AEM ninguna acción en las páginas en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
 
 >[!CAUTION]
 >
