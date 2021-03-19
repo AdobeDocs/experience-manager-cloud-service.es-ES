@@ -1,10 +1,12 @@
 ---
 title: Identificación del contenido para traducir
 description: Descubra cómo las reglas de traducción identifican el contenido que necesita traducción.
+feature: Copiar idioma
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -35,7 +37,7 @@ Por ejemplo, puede crear una regla que traduzca el contenido que los autores añ
 
 Hay una [consola](#translation-rules-ui) que se ha agregado para configurar las reglas de traducción. Las definiciones de la IU rellenarán el archivo por usted.
 
-Para obtener una descripción general de las funciones de traducción de contenido en AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
+Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](overview.md).
 
 >[!NOTE]
 >
@@ -218,7 +220,7 @@ El resultado en el xml tendrá este aspecto:
 
 El archivo `translation_rules.xml` que se instala con AEM contiene un conjunto predeterminado de reglas de traducción. Puede editar el archivo para satisfacer los requisitos de sus proyectos de traducción. Por ejemplo, puede agregar reglas para que se traduzca el contenido de los componentes personalizados.
 
-Si edita el archivo `translation_rules.xml`, mantenga una copia de seguridad en un paquete de contenido. La reinstalación de ciertos paquetes AEM puede reemplazar el archivo `translation_rules.xml` actual por el original. Para restaurar las reglas en esta situación, puede instalar el paquete que contiene la copia de seguridad.
+Si edita el archivo `translation_rules.xml`, mantenga una copia de seguridad en un paquete de contenido. La reinstalación de ciertos paquetes de AEM puede reemplazar el archivo `translation_rules.xml` actual por el original. Para restaurar las reglas en esta situación, puede instalar el paquete que contiene la copia de seguridad.
 
 >[!NOTE]
 >
