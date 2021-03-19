@@ -4,18 +4,19 @@ user-guide-title: Guía de Assets as a Cloud Service
 breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
 
 # [!DNL Assets] Guía  {#assets}
 
-+ [[!DNL Assets] como [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Información general y novedades](overview.md)
 + [Cambios importantes  [!DNL Assets] en [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] arquitectura](architecture.md)
@@ -56,8 +57,8 @@ ht-degree: 68%
    + [API de HTTP de Assets](mac-api-assets.md)
    + [Compatibilidad con fragmentos de contenido en la API HTTP de Assets](content-fragments/assets-api-content-fragments.md)
    + [API de AEM GraphQL para fragmentos de contenido](content-fragments/graphql-api-content-fragments.md)
-   + [Autenticación para consultas remotas de AEM GraphQL en fragmentos de contenido](content-fragments/graphql-authentication-content-fragments.md)
-   + [API de AEM GraphQL con fragmentos de contenido: contenido de muestra y consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [Autenticación para consultas de GraphQL remotas en fragmentos de contenido](content-fragments/graphql-authentication-content-fragments.md)
+   + [AEM API de GraphQL con fragmentos de contenido: contenido de muestra y consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Recursos conectados](use-assets-across-connected-assets-instances.md)
    + [Informes de Asset](asset-reports.md)
    + [Metadatos en cascada](cascading-metadata.md)
@@ -122,8 +123,8 @@ ht-degree: 68%
    + [Vincular URL en la aplicación web](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [Usar conjuntos de reglas para transformar URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Uso de la publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
+   + [Uso de Publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
    + [Trabajar con selectores](dynamic-media/working-with-selectors.md)
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](dynamic-media/http2faq.md)
-   + [Fin de vida útil de los visores Flash](dynamic-media/flash-viewers-eol.md)
+   + [Fin de vida útil de los visualizadores de Flash](dynamic-media/flash-viewers-eol.md)
    + [Fin de vida útil de los visores DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
