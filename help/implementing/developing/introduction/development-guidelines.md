@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: ce797518714a4919bcdb6187aeaaf35dd1cb76b4
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2283'
 ht-degree: 1%
 
 ---
@@ -128,7 +128,7 @@ Los volcados de subprocesos en entornos de Cloud se recopilan de forma continua,
 
 Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Lite (`/crx/de`) y a la Consola Web AEM (`/system/console`).
 
-Tenga en cuenta que en el desarrollo local (con el inicio rápido listo para la nube), `/apps` y `/libs` se pueden escribir directamente en , lo que es diferente de los entornos de Cloud en los que esas carpetas de nivel superior son inmutables.
+Tenga en cuenta que en el desarrollo local (con el SDK), `/apps` y `/libs` se pueden escribir directamente en , lo que es diferente de los entornos de Cloud en los que esas carpetas de nivel superior son inmutables.
 
 ### Herramientas de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
