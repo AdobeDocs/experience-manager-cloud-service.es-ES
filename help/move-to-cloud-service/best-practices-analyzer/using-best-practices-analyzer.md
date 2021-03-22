@@ -1,11 +1,11 @@
 ---
-title: Uso del Analizador de optimizaciones
-description: Uso del Analizador de optimizaciones
+title: Uso del Analizador de prácticas recomendadas
+description: Uso del Analizador de prácticas recomendadas
 translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+source-git-commit: 3d1aa714bacc74f77672ce2d7265da5239a6c6ff
 workflow-type: tm+mt
-source-wordcount: '2362'
-ht-degree: 46%
+source-wordcount: '2512'
+ht-degree: 43%
 
 ---
 
@@ -14,29 +14,29 @@ ht-degree: 46%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
->title="Uso del Analizador de optimizaciones"
->abstract="Revise la documentación para utilizar el Analizador de procedimientos recomendados (antes Cloud Readiness Analyzer) y el informe generado. El informe Analizador de optimizaciones se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>title="Uso del Analizador de prácticas recomendadas"
+>abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
-Siga la sección siguiente para comprender las consideraciones importantes para ejecutar el Analizador de optimizaciones (BPA):
+Siga la sección siguiente para comprender las consideraciones importantes para ejecutar el Analizador de prácticas recomendadas (BPA):
 
-* El informe BPA se crea utilizando el resultado del detector de patrones (AEM) [Data](https://docs.adobe.com/content/help/es-ES/experience-manager-65/deploying/upgrading/pattern-detector.html) de Adobe Experience Manager. La versión del detector de patrones utilizado por BPA se incluye en el paquete de instalación de BPA.
+* El informe de BPA se crea con la salida de Adobe Experience Manager (AEM) [Pattern Detector](https://docs.adobe.com/content/help/es-ES/experience-manager-65/deploying/upgrading/pattern-detector.html). La versión de Pattern Detector utilizada por BPA se incluye en el paquete de instalación de BPA.
 
-* BPA sólo puede ser ejecutado por el usuario **admin** o un usuario del grupo **administradores**.
+* Solo puede ejecutar BPA el usuario **admin** o un usuario del grupo **administradores**.
 
-* BPA se admite en instancias de AEM con la versión 6.1 o superior.
-
-   >[!NOTE]
-Consulte  [Instalación en AEM 6.1](#installing-on-aem61) para conocer los requisitos especiales para instalar BPA en AEM 6.1.
-
-* BPA puede ejecutarse en cualquier entorno, pero es preferible que se ejecute en un entorno *Stage*.
+* BPA se admite en instancias AEM con la versión 6.1 o posterior.
 
    >[!NOTE]
-Para evitar un impacto en instancias críticas del negocio, se recomienda ejecutar BPA en un entorno  ** de autorización lo más cercano posible al entorno de  ** producción en las áreas de personalización, configuración, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
+Consulte  [Instalar en AEM 6.1](#installing-on-aem61)  para conocer los requisitos especiales para instalar BPA en AEM 6.1.
 
-* La generación del contenido del informe BPA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
+* BPA puede ejecutarse en cualquier entorno, pero se prefiere que se ejecute en un entorno *Stage*.
+
+   >[!NOTE]
+Para evitar un impacto en las instancias críticas para el negocio, se recomienda ejecutar BPA en un entorno de  ** autorización lo más cercano posible al entorno de  ** producción en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de *Author* de producción.
+
+* La generación del contenido de los informes de BPA puede llevar una cantidad de tiempo considerable, de varios minutos a pocas horas. La cantidad de tiempo necesaria depende en gran medida del tamaño y la naturaleza del contenido del repositorio de AEM, la versión de AEM y otros factores.
 
 * Debido al tiempo considerable que puede ser necesario para generar el contenido del informe, se generan mediante un proceso en segundo plano y se guardan en la caché. Ver y descargar el informe debería ser relativamente rápido, ya que utiliza la caché de contenido hasta que caduque o hasta que el informe se actualice de forma explícita. Durante la generación del contenido del informe, puede cerrar la pestaña del explorador y regresar más tarde para ver el informe una vez que su contenido esté disponible en la caché.
 
@@ -44,34 +44,34 @@ Para evitar un impacto en instancias críticas del negocio, se recomienda ejecut
 
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_download"
-title="Descargar el Analizador de optimizaciones"
-abstract="El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
+title="Descargar el Analizador de prácticas recomendadas"
+abstract="El Analizador de prácticas recomendadas se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM)."
 
-El Analizador de optimizaciones se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
+El Analizador de prácticas recomendadas se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante el Administrador de paquetes en la instancia de origen de Adobe Experience Manager (AEM).
 
 >[!NOTE]
-Descargue el Analizador de optimizaciones del portal  [de ](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) distribución de software.
+Descargue el Analizador de prácticas recomendadas del portal de  [distribución de ](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) software.
 
-## Visualización del informe del Analizador de optimizaciones {#viewing-report}
+## Visualización del informe de Best Practices Analyzer {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 y versiones posteriores {#aem-later-versions}
 
-Siga esta sección para obtener información sobre la vista del informe del Analizador de optimizaciones:
+Siga esta sección para obtener información sobre cómo ver el informe del Analizador de prácticas recomendadas:
 
-1. Seleccione Adobe Experience Manager y vaya a Herramientas -> **Operaciones** -> **Analizador de optimizaciones**.
+1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Analizador de prácticas recomendadas**.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. Haga clic en **Generar informe** para ejecutar el Analizador de optimizaciones.
+1. Haga clic en **Generar informe** para ejecutar el Analizador de prácticas recomendadas.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Mientras el BPA está generando el informe, puede ver el progreso realizado por la herramienta en la pantalla. Muestra el número de elementos analizados y también el número de hallazgos encontrados.
+1. Mientras el BPA está generando el informe, puede ver el progreso realizado por la herramienta en la pantalla. Muestra el número de elementos analizados y también el número de resultados encontrados.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
-1. Una vez generado el informe BPA, muestra un resumen y el número de hallazgos en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Para obtener más detalles sobre una búsqueda en particular, puede hacer clic en el número que corresponde al tipo de búsqueda en la tabla.
+1. Una vez generado el informe de BPA, muestra un resumen y el número de conclusiones en un formato de tabla organizado por el tipo de búsqueda y el nivel de importancia. Para obtener más información sobre una búsqueda en particular, puede hacer clic en el número que corresponde al tipo de búsqueda en la tabla.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -79,7 +79,7 @@ Siga esta sección para obtener información sobre la vista del informe del Anal
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. Tiene la opción de descargar el informe en un formato de valores separados por comas (CSV) haciendo clic en **CSV**, como se muestra en la figura siguiente.
+1. Tiene la opción de descargar el informe en formato de valores separados por comas (CSV) haciendo clic en **Exportar a CSV**, como se muestra en la figura siguiente.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -89,29 +89,48 @@ Puede forzar el BPA para que borre su caché y vuelva a generar el informe hacie
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]
-Mientras el informe se está regenerando, muestra el progreso en términos de porcentaje completado como se muestra en la imagen a continuación.
+Mientras el informe se está regenerando, muestra el progreso en términos de porcentaje completado como se muestra en la imagen siguiente.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
+#### Uso de filtros en el informe de Best Practices Analyzer {#bpa-filters}
+
+Para filtrar los resultados relacionados con [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), siga los pasos a continuación:
+
+1. Haga clic en el icono del carril izquierdo en el lado izquierdo de la página. Se mostrará el **ACS Commons Filter**. Haga clic en **ACS Commons Filter** para mostrar la casilla interactiva como se muestra en la imagen siguiente.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+
+   >[!NOTE]
+El icono del carril izquierdo aparecerá únicamente si el BPA detecta el uso de ACS Commons.
+
+1. Desmarque la casilla para filtrar todos los hallazgos relacionados con ACS Commons. Debería ver un **Recuento de búsqueda filtrado** en el informe como se muestra en la imagen siguiente. El filtro también se aplica al informe cuando se exporta en formato CSV (valores separados por comas).
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+
+   >[!NOTE]
+Los hallazgos de ACS Commons no deben ser ignorados. Consulte la [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM como Cloud Service.
+
+
 ### Adobe Experience Manager 6.2 y 6.1 {#aem-specific-versions}
 
-La herramienta Analizador de optimizaciones está limitada en Adobe Experience Manager 6.2 a un vínculo que genera y descarga el informe CSV.
+La herramienta Analizador de prácticas recomendadas está limitada en Adobe Experience Manager 6.2 a un vínculo que genera y descarga el informe CSV.
 
 Para Adobe Experience Manager 6.1, la herramienta no funciona y solo se puede utilizar la interfaz HTTP.
 
 >[!NOTE]
 En todas las versiones, Pattern Detector puede ejecutarse de forma independiente.
 
-## Interpretación del informe del Analizador de optimizaciones {#cra-report}
+## Interpretación del informe de Best Practices Analyzer {#cra-report}
 
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_interpreting"
-title="Interpretación del informe del Analizador de optimizaciones"
-abstract="Existen dos opciones para ver los resultados de los informes de BPA: UI y CSV. Cuando se ejecuta la herramienta Analizador de procedimientos recomendados en la instancia de AEM, el informe de la interfaz de usuario se muestra como resultados en la ventana de herramientas. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes del Analizador de optimizaciones"
+title="Interpretación del informe de Best Practices Analyzer"
+abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe Interfaz de usuario se muestra como resultados en la ventana de la herramienta. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes de Best Practices Analyzer"
 
-Cuando la herramienta Analizador de optimizaciones se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
+Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
 
 El formato del informe es el siguiente:
 
@@ -120,13 +139,13 @@ El formato del informe es el siguiente:
    * **Hora de caducidad**: cuando caduque la caché de contenido del informe.
    * **Período de tiempo de generación**: tiempo empleado por el proceso de generación de contenido del informe.
    * **Recuento de búsqueda**: número total de conclusiones incluidas en el informe.
-* **Información general** del sistema: Información sobre el sistema de AEM en el que se ejecutó el BPA.
+* **Información general del sistema**: Información sobre el sistema AEM en el que se ejecutó el BPA.
 * **Búsqueda de categorías**: varias secciones en las que cada una de ellas aborda uno o más resultados de la misma categoría. Cada sección incluye lo siguiente: nombre de la categoría, subtipos, número de búsquedas e importancia, resumen, vínculo a la documentación de la categoría e información de búsqueda individual.
 
 Se asigna un nivel de importancia a cada resultado para indicar una prioridad aproximada para la acción.
 
 >[!NOTE]
-Para obtener más información sobre cada Categoría de búsqueda, consulte Categorías [ del detector de ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)patrones.
+Para obtener más información sobre cada categoría de búsqueda, consulte  [Categorías de detector de patrones](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html).
 
 Siga la tabla siguiente para comprender los niveles de importancia:
 
@@ -138,9 +157,9 @@ Siga la tabla siguiente para comprender los niveles de importancia:
 | CRÍTICO | Es muy probable que este hallazgo sea un problema de actualización que debe solucionarse para evitar la pérdida de funciones o rendimiento. |
 
 
-## Interpretación del informe CSV del Analizador de optimizaciones {#cra-csv-report}
+## Interpretación del informe CSV de Best Practices Analyzer {#cra-csv-report}
 
-Al hacer clic en la opción **CSV** de la instancia de AEM, el formato CSV del informe del Analizador de procedimientos recomendados se genera desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`.
+Al hacer clic en la opción **CSV** desde la instancia de AEM, el formato CSV del informe del Analizador de prácticas recomendadas se crea desde la caché de contenido y se devuelve al explorador. Según la configuración del explorador, este informe se descargará automáticamente como archivo con un nombre predeterminado de `results.csv`.
 
 Si la caché ha caducado, el informe se regenerará antes de crear y descargar el archivo CSV.
 
@@ -162,9 +181,9 @@ El valor &quot;\N&quot; en una columna para una búsqueda individual indica que 
 
 ## Interfaz HTTP {#http-interface}
 
-El BPA proporciona una interfaz HTTP que puede utilizarse como alternativa a su interfaz de usuario dentro de AEM. La interfaz admite comandos HEAD y GET. Puede utilizarse para generar el informe BPA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
+El BPA proporciona una interfaz HTTP que puede utilizarse como alternativa a su interfaz de usuario en AEM. La interfaz admite comandos HEAD y GET. Puede utilizarse para generar el informe de BPA y devolverlo en uno de los tres formatos siguientes: JSON, CSV y valores separados por tabuladores (TSV).
 
-Las siguientes direcciones URL están disponibles para el acceso HTTP, donde `<host>` es el nombre de host y, si es necesario, el puerto del servidor en el que está instalado el BPA:
+Las siguientes direcciones URL están disponibles para el acceso HTTP, donde `<host>` es el nombre de host y el puerto, si es necesario, del servidor en el que está instalado el BPA:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` para el formato JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` para el formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` para el formato TSV
@@ -184,16 +203,16 @@ A continuación se muestra un ejemplo de cómo se puede realizar esto:
 
 Esta interfaz utiliza los siguientes encabezados HTTP:
 
-* `Cache-Control: max-age=<seconds>`:: Especifica la duración de la actualización de la caché en segundos. (Consulte [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
-* `Prefer: respond-async`:: Especifica que el servidor debe responder asincrónicamente. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)).
-* `Prefer: return=minimal`:: Especifica que el servidor debe devolver una respuesta mínima. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)).
+* `Cache-Control: max-age=<seconds>`: Especifica la duración de la actualización de la caché en segundos. (Consulte [RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8).)
+* `Prefer: respond-async`: Especifica que el servidor debe responder asincrónicamente. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1)).
+* `Prefer: return=minimal`: Especifica que el servidor debe devolver una respuesta mínima. (Consulte [RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2)).
 
 Los siguientes parámetros de consulta HTTP están disponibles para determinar cuándo es posible que los encabezados HTTP no se utilicen fácilmente:
 
-* `max-age` (número, opcional): Especifica la duración de la actualización de la caché en segundos. Este número debe ser 0 o más. La duración de la actualización predeterminada es 86400 segundos. Sin este parámetro o el encabezado correspondiente, se utilizará una nueva caché para atender solicitudes durante 24 horas, momento en el cual se deberá volver a generar la caché. El uso de `max-age=0` fuerza la eliminación de la caché e inicia una regeneración del informe, usando la duración de actualización anterior distinta de cero para la caché recién generada.
-* `respond-async` (booleano, opcional): Especifica que la respuesta debe proporcionarse de forma asíncrona. El uso de `respond-async=true` cuando la caché esté obsoleta hará que el servidor devuelva una respuesta de `202 Accepted` sin esperar a que se actualice la caché y se genere el informe. Si la caché es nueva, este parámetro no tiene ningún efecto. El valor predeterminado es `false`. Sin este parámetro o el encabezado correspondiente, el servidor responderá sincrónicamente, lo que puede requerir una cantidad de tiempo considerable y un ajuste del tiempo de respuesta máximo para el cliente HTTP.
-* `may-refresh-cache` (booleano, opcional): Especifica que el servidor puede actualizar la caché en respuesta a una solicitud si la caché actual está vacía, obsoleta o pronto estará obsoleta. Si `may-refresh-cache=true`, o si no se especifica, el servidor puede iniciar una tarea en segundo plano que invoque el detector de patrones y actualice la caché. Si `may-refresh-cache=false` el servidor no iniciará ninguna tarea de actualización que de otra manera se hubiera realizado si la caché está vacía o está obsoleta, en cuyo caso el informe estará vacío. Este parámetro no afectará a ninguna tarea de actualización que ya esté en curso.
-* `return-minimal` (booleano, opcional): Especifica que la respuesta del servidor solo debe incluir el estado que contiene la indicación de progreso y el estado de caché en el formato JSON. Si `return-minimal=true`, el cuerpo de respuesta se limitará al objeto de estado. Si `return-minimal=false`, o si no se especifica, se proporcionará una respuesta completa.
+* `max-age` (número, opcional): Especifica la duración de la actualización de la caché en segundos. Este número debe ser 0 o más. La duración de la actualización predeterminada es de 86 400 segundos. Sin este parámetro o el encabezado correspondiente, se utilizará una nueva caché para servir solicitudes durante 24 horas, momento en el cual se debe volver a generar la caché. El uso de `max-age=0` fuerza a que se borre la caché e inicia una regeneración del informe, usando la duración de la actualización no nula anterior para la caché recién generada.
+* `respond-async` (booleano, opcional): Especifica que la respuesta se debe proporcionar de forma asíncrona. Si utiliza `respond-async=true` cuando la caché está obsoleta, el servidor devolverá una respuesta de `202 Accepted` sin esperar a que se actualice la caché y se genere el informe. Si la caché es nueva, este parámetro no tiene ningún efecto. El valor predeterminado es `false`. Sin este parámetro o el encabezado correspondiente, el servidor responderá sincrónicamente, lo que puede requerir una cantidad de tiempo considerable y un ajuste del tiempo de respuesta máximo para el cliente HTTP.
+* `may-refresh-cache` (booleano, opcional): Especifica que el servidor puede actualizar la caché en respuesta a una solicitud si la caché actual está vacía, obsoleta o pronto estará obsoleta. Si `may-refresh-cache=true`, o si no se especifica, el servidor puede iniciar una tarea en segundo plano que invoque Pattern Detector y actualice la caché. Si `may-refresh-cache=false`, el servidor no iniciará ninguna tarea de actualización que de otra manera se hubiera realizado si la caché está vacía o obsoleta, en cuyo caso el informe estará vacío. Cualquier tarea de actualización que ya esté en proceso no se verá afectada por este parámetro.
+* `return-minimal` (booleano, opcional): Especifica que la respuesta del servidor solo debe incluir el estado que contiene la indicación de progreso y el estado de caché en el formato JSON. Si es `return-minimal=true`, el cuerpo de respuesta se limitará al objeto de estado. Si `return-minimal=false`, o si no se especifica, se proporcionará una respuesta completa.
 * `log-findings` (booleano, opcional): Especifica que el servidor debe registrar el contenido de la caché cuando se crea o actualiza por primera vez. Cada búsqueda de la caché se registrará como una cadena JSON. Este registro solo se producirá si `log-findings=true` y la solicitud genera una nueva caché.
 
 Cuando están presentes tanto un encabezado HTTP como el parámetro de consulta correspondiente, el parámetro de consulta tendrá prioridad.
@@ -207,10 +226,10 @@ Una vez realizada una solicitud, el cliente no necesita permanecer activo para q
 
 Los siguientes valores de respuesta son posibles:
 
-* `200 OK`:: Indica que la respuesta contiene los resultados del detector de patrones que se generaron durante la duración de la actualización de la caché.
-* `202 Accepted`:: Se utiliza para indicar que la caché está obsoleta. Cuando `respond-async=true` y `may-refresh-cache=true` esta respuesta indica que hay una tarea de actualización en curso. Cuando `may-refresh-cache=false` esta respuesta simplemente indica que la caché está obsoleta.
+* `200 OK`: Indica que la respuesta contiene los resultados del detector de patrones que se generaron durante la duración de la actualización de la caché.
+* `202 Accepted`: Se utiliza para indicar que la caché está obsoleta. Cuando `respond-async=true` y `may-refresh-cache=true` esta respuesta indica que se está realizando una tarea de actualización. Cuando `may-refresh-cache=false` esta respuesta simplemente indica que la caché está obsoleta.
 * `400 Bad Request`: indica que se produjo un error con la solicitud. Un mensaje en formato Detalles del problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) proporciona más detalles.
-* `401 Unauthorized`:: Indica que la solicitud no está autorizada.
+* `401 Unauthorized`: Indica que la solicitud no está autorizada.
 * `500 Internal Server Error`: indica que se ha producido un error de servidor interno. El mensaje en formato Detalles del problema proporciona más detalles.
 * `503 Service Unavailable`: indica que el servidor está ocupado con otra respuesta y no puede atender esta solicitud de forma oportuna. Esto solo es probable cuando se realizan solicitudes sincrónicas. El mensaje en formato Detalles del problema proporciona más detalles.
 
@@ -227,7 +246,7 @@ El valor de esta propiedad es la duración de la caché en segundos. Un administ
 
 ### Instalar en AEM 6.1 {#installing-on-aem61}
 
-BPA utiliza una cuenta de usuario del servicio del sistema denominada `repository-reader-service` para ejecutar el detector de patrones. Esta cuenta está disponible en AEM 6.2 y posteriores. En AEM 6.1, esta cuenta debe crearse *antes de* la instalación de BPA siguiendo los pasos siguientes:
+BPA utiliza una cuenta de usuario de servicio del sistema denominada `repository-reader-service` para ejecutar Pattern Detector. Esta cuenta está disponible en AEM 6.2 y posteriores. En AEM 6.1, esta cuenta debe crearse *antes de la* instalación de BPA siguiendo los pasos siguientes:
 
 1. Siga las instrucciones en [Crear un nuevo usuario de servicio](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para crear un usuario. Establezca el UserID en `repository-reader-service` y deje la ruta intermedia vacía y luego haga clic en la marca de verificación verde.
 
