@@ -1,11 +1,11 @@
 ---
 title: Uso de conjuntos de reglas para transformar direcciones URL
-description: Aprenda a implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
+description: Aprenda a implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript™) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
 topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Uso de conjuntos de reglas para transformar direcciones URL {#using-rulesets-to-transform-urls}
 
-Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. Cada regla consta de al menos una condición y una acción. Una regla evalúa los datos XML comparándolos con las condiciones y, si se cumple una condición, toma la acción adecuada. Algunos ejemplos de conjuntos de reglas son los siguientes:
+Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript™) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. Cada regla consta de al menos una condición y una acción. Una regla evalúa los datos XML comparándolos con las condiciones y, si se cumple una condición, toma la acción adecuada. Algunos ejemplos de conjuntos de reglas son los siguientes:
 
 * Añadir un sufijo de tipo MIME. Muchos servicios y sitios web requieren sufijos de imagen, como agregar `.jpg` a una dirección URL.
 * Creación de una ruta de carpeta a la dirección URL con fines de SEO (Optimización del motor de búsqueda).
@@ -67,7 +67,7 @@ Consulte también [Uso de la imagen &quot;asset&quot; en lugar de la imagen &quo
    * En el cuadro de diálogo **[!UICONTROL Abrir]**, busque el archivo del conjunto de reglas (XML).
    * Seleccione el archivo y haga clic en **[!UICONTROL Open]**.
    * A la derecha de la página **[!UICONTROL Upload]**, seleccione una carpeta de destino para el archivo del conjunto de reglas.
-   * Cerca de la parte inferior de la página, asegúrese de que **[!UICONTROL Publicar después de cargar]** está marcado.
+   * Cerca de la parte inferior de la página, asegúrese de que Publicar después de la carga está marcada.
    * En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Enviar carga]**.
    * En la barra de navegación global, haga clic en **[!UICONTROL Trabajos]** para comprobar el estado del trabajo de carga. Cuando la columna **[!UICONTROL Status]** de la página **[!UICONTROL Job]** indique Upload Done, continúe con los pasos siguientes.
 
@@ -79,5 +79,5 @@ Consulte también [Uso de la imagen &quot;asset&quot; en lugar de la imagen &quo
 
    Las condiciones del conjunto de reglas se aplican en las solicitudes a los servidores de imágenes de Dynamic Media activos.
 
-   Si realiza cambios en el archivo del conjunto de reglas, los cambios se aplican inmediatamente cuando vuelve a cargar y publicar el archivo del conjunto de reglas actualizado.
+   Si cambia el archivo del conjunto de reglas, los cambios se aplican inmediatamente cuando vuelve a cargar y publicar el archivo del conjunto de reglas actualizado.
 
