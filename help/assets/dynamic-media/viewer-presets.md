@@ -2,9 +2,9 @@
 title: Aplicación de ajustes preestablecidos de visor de Dynamic Media
 description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media.
 feature: Ajustes preestablecidos de visualizador, visualizadores
-topic: Profesional empresarial
+topic: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 24%
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 Un ajuste preestablecido de visor es una colección de ajustes que determinan cómo ven los usuarios los recursos de medios enriquecidos en sus pantallas de equipo y dispositivos móviles. Puede aplicar cualquier ajuste preestablecido de visualizador creado por el administrador a un recurso.
 
-Si es administrador y necesita administrar, crear, ordenar y eliminar ajustes preestablecidos de visualizador, consulte [Administración de ajustes preestablecidos de visualizador](managing-viewer-presets.md).
+Si es un administrador y debe administrar, crear, ordenar y eliminar ajustes preestablecidos de visualizador, consulte [Administración de ajustes preestablecidos de visualizador](managing-viewer-presets.md).
 
 Consulte también [Ajustes preestablecidos del visualizador de publicaciones](managing-viewer-presets.md#publishing-viewer-presets).
 
