@@ -4,9 +4,9 @@ description: Aprenda a trabajar con conjuntos de giros en Dynamic Media.
 feature: Conjuntos de giros
 topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,7 @@ Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTR
 
 >[!NOTE]
 >
->Para obtener información sobre la interfaz de usuario de Assets, consulte [Administración de recursos con la IU táctil](/help/assets/manage-digital-assets.md) y aplicarla a una nueva carpeta en la que se cargarán los recursos del conjunto de imágenes.
+>Para obtener información sobre la interfaz de usuario de Assets, consulte [Administración de recursos con la IU táctil](/help/assets/manage-digital-assets.md) y aplicarla a una nueva carpeta en la que se cargan los recursos del conjunto de imágenes.
 
 ## Inicio rápido: Conjuntos de giros {#quick-start-spin-sets}
 
@@ -40,7 +40,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
 1. [Cargue las imágenes para varias vistas.](#uploading-assets-for-spin-sets)
 
-   Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
+   Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30° (360/12) para cada toma.
 
 1. [Crear conjuntos de giros.](#creating-spin-sets)
 
@@ -52,7 +52,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Los administradores pueden crear o modificar ajustes preestablecidos de visualizador de conjuntos de giros. Para ver el conjunto de giros con un ajuste preestablecido de visualizador, seleccione el conjunto de giros y, en el menú desplegable del carril izquierdo, seleccione **Visualizadores**.
 
-   Consulte **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de visor]** para crear o editar ajustes preestablecidos de visor.
+   Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visualizador]**.
 
    Consulte [Adición y edición de ajustes preestablecidos de visualizador.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
@@ -68,29 +68,29 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
 1. [Vincule las URL a su ](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) aplicación web o  [incruste el visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
 
-   AEM Assets crea llamadas de URL para conjuntos de giros y los activa después de publicar los conjuntos de giros. Puede copiar estas direcciones URL cuando obtiene una vista previa de los recursos. También puede incrustarlos en el sitio web.
+   Adobe Experience Manager Assets crea llamadas URL para conjuntos de giros y las activa después de publicar los conjuntos de giros. Puede copiar estas direcciones URL cuando obtiene una vista previa de los recursos. También puede incrustarlos en el sitio web.
 
    Seleccione el conjunto de giros y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores]**.
 
    Consulte [Vinculación de un conjunto de giros a una página web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
 
-Si lo necesita, puede [editar Conjuntos de giros](#editing-spin-sets). Además, puede ver y modificar [Propiedades del conjunto de giros](/help/assets/manage-digital-assets.md#editing-properties).
+Si es necesario, puede [editar los conjuntos de giros](#editing-spin-sets). Además, puede ver y modificar [Propiedades del conjunto de giros](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Carga de recursos para conjuntos de giros {#uploading-assets-for-spin-sets}
 
-Como mínimo, se necesitan 8-12 tomas de un elemento para un conjunto de giros unidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
+Como mínimo, se necesitan 8-12 tomas de un elemento para un conjunto de giros unidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30° (360/12) para cada toma.
 
-Puede cargar imágenes para los conjuntos de giros del mismo modo que [cargaría cualquier otro recurso en AEM Assets](/help/assets/manage-digital-assets.md).
+Puede cargar imágenes para los conjuntos de giros del mismo modo que [cargaría cualquier otro recurso en Recursos de Experience Manager](/help/assets/manage-digital-assets.md).
 
 ### Pautas para capturar imágenes para el conjunto de giros {#guidelines-for-shooting-spin-set-images}
 
-A continuación se indican algunas prácticas recomendadas en relación con las imágenes de conjuntos de giros. En general, cuantas más imágenes haya en un conjunto de giros, mejor será el efecto giratorio de la imagen. Sin embargo, al incluir muchas imágenes en el conjunto, también aumenta el tiempo que tardan las imágenes en cargarse. AEM recomienda estas directrices para la toma de imágenes para su uso en Conjuntos de giros:
+A continuación se indican algunas prácticas recomendadas en relación con las imágenes de conjuntos de giros. En general, cuantas más imágenes haya en un conjunto de giros, mejor será el efecto giratorio de la imagen. Sin embargo, al incluir muchas imágenes en el conjunto, también aumenta el tiempo que tardan las imágenes en cargarse. Experience Manager recomienda estas directrices para la toma de imágenes para su uso en Conjuntos de giros:
 
-* Como mínimo, utilice entre 8 y 12 imágenes en un conjunto de giros unidimensional y entre 16 y 24 imágenes en un conjunto de giros bidimensional. Se necesita un mínimo de 8 imágenes para poder girar 360 grados. Los conjuntos de giros unidimensionales son más comunes, ya que la creación de conjuntos de giros bidimensionales requiere mucho trabajo.
+* Como mínimo, utilice entre 8 y 12 imágenes en un conjunto de giros unidimensional y entre 16 y 24 imágenes en un conjunto de giros bidimensional. Se necesita un mínimo de 8 imágenes para poder girar 360°. Los conjuntos de giros unidimensionales son más comunes, ya que la creación de conjuntos de giros bidimensionales requiere mucho trabajo.
 * Utilizar un formato sin pérdidas; Se recomiendan TIFF y PNG.
 * Enmascara todas las imágenes para que el elemento aparezca sobre un fondo blanco puro u otro de alto contraste. De forma opcional, agregue sombras.
 * Asegúrese de que los detalles del producto estén bien iluminados y enfocados.
-* Toma imágenes de giro para ropa de moda con un maniquí o modelo. A menudo el maniquí está completamente enmascarado (usando un maniquí de vidrio) o un maniquí/forma estilizada se muestra en la imagen. Puede crear un conjunto de giros en modelo definiendo el número de ángulos. Marque cada ángulo con cinta en el suelo para guiar al modelo hacia el paso y mirar en la dirección de cada toma.
+* Toma imágenes de giro para ropa de moda con un maniquí o modelo. A menudo el maniquí está enmascarado (usando un maniquí de vidrio) o un maniquí estilizado/forma de vestir se muestra en la imagen. Puede crear un conjunto de giros en modelo definiendo el número de ángulos. Marque cada ángulo con cinta en el suelo para guiar al modelo hacia el paso y mirar en la dirección de cada toma.
 
 ## Creación de conjuntos de giros {#creating-spin-sets}
 
@@ -118,7 +118,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 
    >[!NOTE]
    >
-   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que AEM generar una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
+   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que desea que el Experience Manager genere una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
 
 1. Realice una de las siguientes acciones:
 
@@ -133,7 +133,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Cuando se añaden recursos al conjunto, estos se añaden automáticamente en orden alfanumérico. Después de agregarlos, puede volver a ordenar u ordenar los recursos manualmente.
+1. Cuando se añaden recursos al conjunto, estos se añaden automáticamente en orden alfanumérico. Después de agregarlos, puede reordenar u ordenar los recursos manualmente.
 
    Si es necesario, arrastre el icono Reordenar de un recurso a la derecha del nombre del archivo del recurso para reordenar las imágenes hacia arriba o hacia abajo en la lista de conjunto.
 
@@ -159,7 +159,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 
 **Visualización de conjuntos de giros**
 
-1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de miembros del recurso seleccionado (en **[!UICONTROL Member of Sets]**). Haga clic en el nombre del conjunto para ver todo el conjunto.
+1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de miembros del recurso seleccionado (en **[!UICONTROL Member of Sets]**). Para ver el conjunto completo, pulse el nombre del conjunto.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -169,16 +169,16 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 
 1. Desde la búsqueda, puede seleccionar **[!UICONTROL Filtros]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos]**.
 
-   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza utilizando `Starts with` criterios de búsqueda diferentes de AEM búsqueda que se basa en el uso de `Contains` criterios de búsqueda. Definir el filtro como **[!UICONTROL Sets]** es la única manera de buscar conjuntos automatizados.
+   La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza utilizando `Starts with` criterios de búsqueda que son diferentes de la búsqueda de Experience Manager, que se basa en el uso de `Contains` criterios de búsqueda. Definir el filtro como **[!UICONTROL Sets]** es la única manera de buscar conjuntos automatizados.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
 ## Edición de conjuntos de giros {#editing-spin-sets}
 
-Puede realizar diversas tareas de edición en los conjuntos de giros, como las siguientes:
+Puede realizar varias tareas de edición en los conjuntos de giros, como las siguientes:
 
 * Agregue imágenes al conjunto de giros.
-* Vuelva a ordenar las imágenes en el conjunto de giros.
+* Reordenar imágenes en el conjunto de giros.
 * Eliminar recursos del conjunto de giros.
 * Aplicar ajustes preestablecidos de visor.
 * Elimine el conjunto de giros.
@@ -197,7 +197,7 @@ Puede realizar diversas tareas de edición en los conjuntos de giros, como las s
    * Para reordenar las imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
    * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y pulse **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
-Si elimina la imagen que AEM usa para la miniatura reemplazándola por otra imagen, el recurso original seguirá apareciendo.
+Si elimina la imagen que usa el Experience Manager para la miniatura reemplazándola por otra imagen, el recurso original seguirá apareciendo.
    * Para eliminar un recurso, selecciónelo y pulse o haga clic en **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, pulse o haga clic en el icono Ajuste preestablecido y seleccione un ajuste preestablecido.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
