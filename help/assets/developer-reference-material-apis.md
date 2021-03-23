@@ -3,9 +3,9 @@ title: Referencias del desarrollador para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77b4d9f07626419ddab3a7363b06c382447ec982
+source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1388'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 
 >[!CAUTION]
 >
->Algunas API siguen existiendo, pero no se admiten de forma activa (indicada con una ×) y no deben utilizarse.
+>Algunas API siguen existiendo, pero no se admiten de forma activa (indicada con una ×). En la medida de lo posible, no utilice estas API.
 
 | Nivel de asistencia | Descripción |
 | ------------- | --------------------------- |
@@ -65,7 +65,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 
 ## Carga de recursos {#asset-upload-technical}
 
-[!DNL Experience Manager] as a  [!DNL Cloud Service] proporciona un nuevo método para cargar recursos en el repositorio. Los usuarios pueden cargar directamente los recursos al almacenamiento en la nube mediante la API HTTP. Los pasos para cargar un archivo binario son:
+En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos en el almacenamiento en la nube mediante la API HTTP. Los pasos para cargar un archivo binario son:
 
 1. [Enviar una solicitud](#initiate-upload) HTTP. Informa a la implementación [!DNL Experience Manage]r de su intención de cargar un nuevo binario.
 1. [POST el contenido del ](#upload-binary) binario a uno o más URI proporcionados por la solicitud de inicio.
@@ -116,8 +116,8 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 * `mimeType` (cadena): Tipo mime del binario correspondiente, tal como se suministra en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
 * `uploadToken` (cadena): Un token de carga para el binario correspondiente. Este valor debe incluirse en la solicitud completa.
 * `uploadURIs` (matriz): Una lista de cadenas cuyos valores son URIs completas a las que se debe cargar el contenido del binario (consulte  [Cargar binario](#upload-binary)).
-* `minPartSize` (número): Longitud mínima, en bytes, de los datos que se pueden proporcionar a cualquiera de los uploadURIs, si hay más de un URI.
-* `maxPartSize` (número): Longitud máxima, en bytes, de los datos que se pueden proporcionar a cualquiera de los uploadURIs, si hay más de un URI.
+* `minPartSize` (número): Longitud mínima, en bytes, de los datos que se pueden proporcionar a cualquiera de los  `uploadURIs`, si hay más de un URI.
+* `maxPartSize` (número): Longitud máxima, en bytes, de los datos que se pueden proporcionar a cualquiera de los  `uploadURIs`, si hay más de un URI.
 
 ### Cargar binario {#upload-binary}
 
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [El Experience Cloud como  [!DNL Cloud Service] un SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
