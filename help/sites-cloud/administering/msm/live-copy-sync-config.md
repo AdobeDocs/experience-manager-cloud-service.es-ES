@@ -4,10 +4,10 @@ description: Obtenga información sobre las potentes opciones de sincronización
 feature: Administrador de varios sitios
 role: Administrador
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 30%
+source-wordcount: '2340'
+ht-degree: 29%
 
 ---
 
@@ -43,7 +43,11 @@ Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace 
 
 ### Opciones de configuración del lanzamiento {#rollout-configurations}
 
-En la tabla siguiente se enumeran las configuraciones de lanzamiento que se proporcionan de forma predeterminada con AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento. Si las acciones de configuración de lanzamiento instaladas no cumplen los requisitos, puede [crear una nueva configuración de lanzamiento](#creating-a-rollout-configuration).
+En la tabla siguiente se enumeran las configuraciones de lanzamiento que se proporcionan de forma predeterminada con AEM. La tabla incluye las acciones de activación y sincronización de cada configuración de lanzamiento.
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | Nombre | Descripción | Activador | [Acciones de sincronización](#synchronization-actions) |
 |---|---|---|---|
