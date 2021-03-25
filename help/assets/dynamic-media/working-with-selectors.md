@@ -3,7 +3,7 @@ title: Trabajar con selectores
 description: Obtenga información sobre los métodos que puede utilizar para seleccionar recursos para imágenes interactivas, vídeos interactivos y banners de carrusel en Dynamic Media.
 topic: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 14%
@@ -17,7 +17,7 @@ Al trabajar con una imagen interactiva, un vídeo interactivo o un titular de ca
 
 En este tema se explica cómo utilizar los selectores de producto, sitio y recurso, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
 
-Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear imágenes y vídeos interactivos.
+Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear vídeos e imágenes interactivos.
 
 Por ejemplo, en este titular de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida. Utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando cree una diapositiva.
 
@@ -87,7 +87,7 @@ Utilice el selector del sitio para elegir una página web cuando desee que un pu
 
 Utilice este selector para elegir imágenes que se utilizarán en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible al pulsar **[!UICONTROL Seleccionar recursos]** en la pestaña **[!UICONTROL Contenido]**. En Conjuntos de carrusel, el selector de recursos está disponible al crear una diapositiva. En Conjuntos de imágenes, Conjuntos de medios mixtos y Conjuntos de giros, el selector de recursos está disponible al crear un conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
 
-Consulte también [Selector de recursos](/help/assets/search-assets.md#assetselector) para obtener más información.
+Consulte también [Selector de recursos](/help/assets/search-assets.md#asset-selector) para obtener más información.
 
 1. Vaya al conjunto de carrusel y cree una diapositiva. O bien, vaya al Vídeo interactivo, vaya a la pestaña **[!UICONTROL Contenido]** y seleccione recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
 1. Pulse el icono **[!UICONTROL Selector de recursos]** (carpeta con lupa) y navegue hasta un recurso.
