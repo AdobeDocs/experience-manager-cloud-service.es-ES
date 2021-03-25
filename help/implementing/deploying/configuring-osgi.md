@@ -3,9 +3,9 @@ title: Configuración de OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuración de OSGi con valores secretos y valores específicos de entorno '
 feature: Implementación
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Los valores de las configuraciones en línea se consideran el enfoque estándar 
 * Los valores están implícitamente vinculados a las implementaciones de código
 * No requieren ninguna consideración o coordinación de despliegue adicional
 
-Siempre que defina un valor de configuración OSGi, comience con valores en línea, cualquier solo seleccionar configuraciones secretas o específicas del entorno si es necesario para el caso de uso.
+Siempre que defina un valor de configuración OSGi, comience con valores en línea y seleccione únicamente configuraciones secretas o específicas del entorno si es necesario para el caso de uso.
 
 ### Cuándo usar valores de configuración específicos de entorno no secreto {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -194,6 +194,10 @@ use $[env:ENV_VAR_NAME]
 ```
 
 Los clientes solo deben utilizar esta técnica para las propiedades de configuración OSGI relacionadas con su código personalizado; no debe utilizarse para anular la configuración OSGI definida por Adobe.
+
+>[!NOTE]
+>
+>Los marcadores de posición no se pueden usar en [instrucciones de informe](/help/implementing/deploying/overview.md#repoinit).
 
 ### Valores de configuración secreta {#secret-configuration-values}
 
