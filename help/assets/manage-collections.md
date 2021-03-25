@@ -1,10 +1,10 @@
 ---
 title: Administrar colecciones de recursos digitales
-description: Comprenda el concepto de recopilación en Adobe Experience Manager Assets. Aprenda a recopilar, administrar, editar y recopilar con otros usuarios.
+description: Comprenda el concepto de colección en Adobe Experience Manager Assets. Aprenda a recopilar, administrar, editar y recopilar con otros usuarios.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 19%
@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Administrar colecciones {#manage-collections}
 
-Una colección es un conjunto de recursos de Adobe Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios. El conjunto puede ser una colección estática o una colección dinámica basada en los resultados de la búsqueda.
+Una colección es un conjunto de recursos dentro de Adobe Experience Manager Assets. Utilice las colecciones para compartir recursos entre los usuarios. El conjunto puede ser una colección estática o una colección dinámica basada en los resultados de la búsqueda.
 
 A diferencia de las carpetas, una colección puede incluir recursos de distintas ubicaciones. Puede compartir colecciones con varios usuarios a los que se asignan distintos niveles de privilegios, como ver, editar, etc.
 
@@ -30,7 +30,7 @@ Las colecciones son de los siguientes tipos, según la forma en que recopilan lo
 
 Para abrir la consola **[!UICONTROL Collections]**:
 
-Para abrir **[!UICONTROL Collections]**, toque o haga clic en el logotipo de Experience Manager. Desde la página de navegación, vaya a **[!UICONTROL Assets]** > **[!UICONTROL Colecciones]**.
+Para abrir las **[!UICONTROL Colecciones]**, toque o haga clic en el logotipo del Experience Manager. Desde la página de navegación, vaya a **[!UICONTROL Assets]** > **[!UICONTROL Colecciones]**.
 
 ## Crear una colección {#create-a-collection}
 
@@ -54,7 +54,7 @@ Puede crear una colección con referencias estáticas, por ejemplo, una colecci�
 
    >[!NOTE]
    >
-   >Experience Manager Assets permite crear tareas de revisión para una colección de forma similar a como se crean tareas de revisión para una carpeta de recursos.
+   >Recursos de Experience Manager permite crear tareas de revisión para una colección de forma similar a como se crean tareas de revisión para una carpeta de recursos.
 
    Para añadir recursos a la colección, vaya a la interfaz de usuario de Assets. Para obtener más información, consulte [Agregar recursos a una colección](#add-assets-to-a-collection).
 
@@ -185,7 +185,7 @@ Para personalizar la página [!UICONTROL Properties] de metadatos, incluyendo la
 
 >[!NOTE]
 >
->Los métodos de edición por lotes funcionan con los recursos disponibles en una colección. Para los recursos disponibles en todas las carpetas o que coinciden con criterios comunes, es posible [actualizar los metadatos de forma masiva después de buscar](/help/assets/search-assets.md#metadataupdates).
+>Los métodos de edición por lotes funcionan con los recursos disponibles en una colección. Para los recursos disponibles en todas las carpetas o que coinciden con criterios comunes, es posible [actualizar los metadatos de forma masiva después de buscar](/help/assets/search-assets.md#metadata-updates).
 
 1. En la consola de colecciones, seleccione las colecciones que desee editar.
 1. En la barra de herramientas, pulse o haga clic en **[!UICONTROL Propiedades]** para abrir la página [!UICONTROL Propiedades] de las colecciones seleccionadas.
