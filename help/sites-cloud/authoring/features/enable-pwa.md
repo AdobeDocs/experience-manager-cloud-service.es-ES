@@ -1,10 +1,8 @@
 ---
 title: Activación de las funciones progresivas de la aplicación web
 description: AEM Sites permite al autor del contenido habilitar las funciones progresivas de la aplicación web en cualquier sitio mediante una configuración sencilla en lugar de codificar.
-hide: true
-hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
+source-git-commit: f130fe34e5c57b9fc78697374a5a9772da3c4c17
 workflow-type: tm+mt
 source-wordcount: '2032'
 ht-degree: 0%
