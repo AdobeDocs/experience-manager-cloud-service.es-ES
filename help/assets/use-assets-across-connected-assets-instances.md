@@ -3,10 +3,10 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 29%
+source-wordcount: '2898'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ Antes de usar o configurar esta capacidad, asegúrese de lo siguiente:
 
 Los autores buscan imágenes y los siguientes tipos de documentos en el buscador de contenido y utilizan los recursos buscados en el editor de páginas. Los documentos se añaden al componente `Download` y las imágenes al componente `Image`. Los autores también agregan los recursos remotos en cualquier componente personalizado [!DNL Experience Manager] que amplía los componentes predeterminados `Download` o `Image`. Los formatos admitidos son:
 
-* **Formatos** de imagen: Los formatos compatibles con el  [componente ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) Imagen. [!DNL Dynamic Media] las imágenes no son compatibles.
+* **Formatos** de imagen: Los formatos compatibles con el  [componente ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) Imagen.
 * **Formatos** de documento: Consulte los formatos de documento  [admitidos](file-format-support.md#document-formats).
 
 ### Usuarios y grupos implicados {#users-and-groups-involved}
@@ -111,6 +111,23 @@ Puede comprobar la conectividad entre las implementaciones configuradas [!DNL Si
 ![Prueba de conexión de los recursos conectados configurados  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## Configurar una conexión entre las implementaciones [!DNL Sites] y [!DNL Dynamic Media] {#sites-dynamic-media-connected-assets}
+
+Puede configurar una conexión entre la implementación [!DNL Sites] y la implementación [!DNL Dynamic Media] que permita que los autores de las páginas web utilicen imágenes [!DNL Dynamic Media] en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones [!DNL Dynamic Media] remotas sigue siendo la misma. Esto le permite aprovechar la funcionalidad [!DNL Dynamic Media] mediante la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
+
+Para configurar esta conexión, siga estos pasos.
+
+1. Cree la configuración de los recursos conectados como se ha descrito anteriormente. Seleccione la casilla de verificación **[!UICONTROL Buscar representación original para [!DNL Dynamic Media] Recursos conectados]** en el cuadro de diálogo.
+
+1. Configure [!DNL Dynamic Media] en implementaciones locales [!DNL Sites] y remotas [!DNL Assets]. Siga las instrucciones para [configurar [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+
+   * Utilice el mismo nombre de empresa en todas las configuraciones.
+   * En [!DNL Sites] local, en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La implementación de Sites solo necesita acceso de solo lectura a la cuenta [!DNL Dynamic Media] .
+   * En [!DNL Sites] local, en la opción **[!UICONTROL Publicar recursos]**, seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
+   * En la implementación remota [!DNL Assets], en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
+
+1. Habilite la compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta función permite que el componente de imagen predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local [!DNL Sites].
 
 ## Usar recursos remotos {#use-remote-assets}
 
@@ -184,7 +201,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 * Los recursos locales no se sincronizan con los recursos originales en la implementación remota. Las ediciones, eliminaciones o revocaciones de permisos en la implementación de DAM no se propagan de forma descendente.
 * Los recursos locales son copias de solo lectura. [!DNL Experience Manager]Los componentes de realizan ediciones no destructivas en los recursos. No se permiten otras ediciones.
 * Los recursos recuperados localmente solo están disponibles para la creación. Los flujos de trabajo de actualización de recursos no se pueden aplicar y los metadatos no se pueden editar.
-* Solo se admiten las imágenes y los formatos de documento enumerados. [!DNL Dynamic Media]Los recursos de , los fragmentos de contenido y los fragmentos de experiencia no son admitidos.
+* Solo se admiten las imágenes y los formatos de documento enumerados. Los fragmentos de contenido y los fragmentos de experiencias no son compatibles.
 * [!DNL Experience Manager] no recupera los esquemas de metadatos. Significa que es posible que no se muestren todos los metadatos recuperados. Si el esquema se actualiza por separado, se muestran todas las propiedades.
 * Todos los autores [!DNL Sites] tienen permisos de lectura en las copias recuperadas, incluso si los autores no pueden acceder a la implementación remota de DAM.
 * No se admiten las API para personalizar la integración.
