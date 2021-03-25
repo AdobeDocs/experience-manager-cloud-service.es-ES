@@ -2,9 +2,9 @@
 title: Agregue los recursos digitales a [!DNL Adobe Experience Manager].
 description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2017'
 ht-degree: 1%
 
 ---
@@ -174,8 +174,20 @@ Para configurar la herramienta, siga estos pasos:
    * [!UICONTROL Ensayo]: Invoque una ejecución de prueba de la ingesta masiva.
    * [!UICONTROL Ejecutar]: Ejecute la configuración seleccionada.
    * [!UICONTROL Detener]: Finalice una configuración activa.
+   * [!UICONTROL Programación]: Defina una programación recurrente o única para la ingesta de recursos.
    * [!UICONTROL Estado] del trabajo: Ver el estado de la configuración cuando se utiliza en un trabajo de importación en curso o se utiliza para un trabajo completado.
+   * [!UICONTROL Historial] de trabajos: Instancias anteriores del trabajo.
    * [!UICONTROL Ver recursos]: Ver la carpeta de destino si existe.
+
+   ![Opciones de barra de herramientas para configuraciones de ingestor](assets/bulk-ingest-toolbar-options.png)
+
+Para programar una importación masiva única o recurrente, siga estos pasos:
+
+1. Cree una configuración de importación masiva.
+1. Seleccione la configuración y seleccione **[!UICONTROL Schedule]** en la barra de herramientas.
+1. Establezca una ingesta única o programe una programación por hora, diaria o semanal. Haga clic en **[!UICONTROL Submit]**.
+
+   ![Programar trabajo de ingesta masiva](assets/bulk-ingest-schedule1.png)
 
 ## Carga de recursos mediante clientes de escritorio {#upload-assets-desktop-clients}
 
