@@ -3,9 +3,9 @@ title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4169'
 ht-degree: 6%
 
 ---
@@ -198,7 +198,21 @@ La herramienta de validación está disponible en el SDK en `bin/validator` como
 
 Se invoca como: `validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-La herramienta valida que la configuración de Dispatcher está utilizando las directivas adecuadas admitidas por AEM as a Cloud Service al analizar todos los archivos con el patrón `conf.d/enabled_vhosts/*.vhost`. Las directivas permitidas en los archivos de configuración de Apache se pueden enumerar ejecutando el comando de lista de permitidos del validador:
+La herramienta valida que la configuración de Dispatcher está utilizando las directivas adecuadas admitidas por AEM as a Cloud Service al analizar todos los archivos con el patrón `conf.d/enabled_vhosts/*.vhost`.
+
+En Windows, el validador de Dispatcher distingue entre mayúsculas y minúsculas. Como tal, puede no validar la configuración si no respeta el uso de mayúsculas en la ruta en la que reside la configuración, por ejemplo:
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+Evite este error copiando y pegando la ruta desde el Explorador de Windows y luego en el símbolo del sistema utilizando un comando `cd` en esa ruta.
+
+Las directivas permitidas en los archivos de configuración de Apache se pueden enumerar ejecutando el comando de lista de permitidos del validador:
 
 ```
 $ validator allowlist
