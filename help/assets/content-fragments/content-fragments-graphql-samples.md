@@ -2,10 +2,10 @@
 title: 'Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas'
 description: 'Aprenda a utilizar GraphQL con AEM: contenido de muestra y consultas.'
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 5%
+source-wordcount: '1396'
+ht-degree: 6%
 
 ---
 
@@ -29,65 +29,6 @@ Para ayudarle con esto, consulte:
 
 * Y algunos [ejemplos de consultas de GraphQL](#graphql-sample-queries), basados en la estructura de fragmento de contenido de ejemplo (modelos de fragmento de contenido y fragmentos de contenido relacionados).
 
-## GraphQL para AEM: Resumen de extensiones {#graphql-extensions}
-
-El funcionamiento básico de las consultas con GraphQL para AEM se adhiera a la especificación estándar de GraphQL. Para las consultas de GraphQL con AEM hay algunas extensiones:
-
-* Si necesita un solo resultado:
-   * utilizar el nombre del modelo; ciudad del ejemplo
-
-* Si espera una lista de resultados:
-   * añada `List` al nombre del modelo; por ejemplo, `cityList`
-   * Consulte [Consulta de muestra: toda la información sobre todas las ciudades](#sample-all-information-all-cities)
-
-* Si desea utilizar un OR lógico:
-   * use ` _logOp: OR`
-   * Consulte [Consulta de muestra: todas las personas que tienen el nombre &quot;Trabajos&quot; o &quot;Smith&quot;](#sample-all-persons-jobs-smith)
-
-* AND lógico también existe, pero (a menudo) está implícito
-
-* Puede consultar los nombres de campo que se correspondan con los campos del modelo de fragmento de contenido
-   * Consulte [Consulta de muestra: detalles completos del CEO y los empleados de una empresa](#sample-full-details-company-ceos-employees)
-
-* Además de los campos del modelo, hay algunos campos generados por el sistema (precedidos de guiones bajos):
-
-   * Para el contenido:
-
-      * `_locale` : revelar el idioma; basado en el Administrador de idiomas
-         * Consulte [Consulta de ejemplo para varios fragmentos de contenido de una configuración regional determinada](#sample-wknd-multiple-fragments-given-locale)
-      * `_metadata` : para mostrar metadatos del fragmento
-         * Consulte [Consulta de muestra para metadatos: enumere los metadatos de los premios titulados GB](#sample-metadata-awards-gb)
-      * `_model` : permitir la consulta de un modelo de fragmento de contenido (ruta y título)
-         * Consulte [Consulta de ejemplo para un modelo de fragmento de contenido de un modelo](#sample-wknd-content-fragment-model-from-model)
-      * `_path` : la ruta al fragmento de contenido dentro del repositorio
-         * Consulte [Consulta de muestra: un solo fragmento de ciudad específico](#sample-single-specific-city-fragment)
-      * `_reference` : para revelar referencias; incluir referencias en línea en el Editor de texto enriquecido
-         * Consulte [Consulta de ejemplo para varios fragmentos de contenido con referencias de recuperación previa](#sample-wknd-multiple-fragments-prefetched-references)
-      * `_variation` : para mostrar variaciones específicas dentro del fragmento de contenido
-         * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](#sample-cities-named-variation)
-   * Y operaciones:
-
-      * `_operator` : aplicar operadores específicos;  `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,  `STARTS_WITH`
-         * Consulte [Consulta de muestra: todas las personas que no tienen un nombre de &quot;Trabajos&quot;](#sample-all-persons-not-jobs)
-         * Consulte [Consulta de muestra: todas las aventuras en las que el `_path` comienza con un prefijo específico](#sample-wknd-all-adventures-cycling-path-filter)
-      * `_apply` : aplicar condiciones específicas; por ejemplo,   `AT_LEAST_ONCE`
-         * Consulte [Muestra de consulta - Filtrar en una matriz con un elemento que debe producirse al menos una vez](#sample-array-item-occur-at-least-once)
-      * `_ignoreCase` : para ignorar el caso al consultar
-         * Consulte [Consulta de muestra: todas las ciudades con SAN en el nombre, independientemente del caso](#sample-all-cities-san-ignore-case)
-
-
-
-
-
-
-
-
-
-
-* Se admiten los tipos de unión de GraphQL:
-
-   * use `... on`
-      * Consulte [Consulta de ejemplo para un fragmento de contenido de un modelo específico con una referencia de contenido](#sample-wknd-fragment-specific-model-content-reference)
 
 ## GraphQL: consultas de ejemplo con la estructura de fragmentos de contenido de ejemplo {#graphql-sample-queries-sample-content-fragment-structure}
 
