@@ -2,9 +2,9 @@
 title: Agregue los recursos digitales a [!DNL Adobe Experience Manager].
 description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager] enriquece el contenido binario de los archivos digitales cargados con metadatos enriquecidos, etiquetas inteligentes, representaciones y otros servicios de administración de recursos digitales (DAM). Puede cargar varios tipos de archivos, como imágenes, documentos y archivos de imagen sin procesar, desde la carpeta local o una unidad de red a [!DNL Experience Manager Assets].
 
-Se proporcionan varios métodos de carga. Además de la carga del explorador más utilizada, existen otros métodos para agregar recursos al repositorio [!DNL Experience Manager], incluidos clientes de escritorio, como Adobe Asset Link o la aplicación de escritorio [!DNL Experience Manager], scripts de carga e ingesta que los clientes podrían crear e integraciones de ingesta automatizada agregadas como [!DNL Experience Manager] extensiones.
+Se proporcionan varios métodos de carga. Además de la carga del explorador más utilizada, existen otros métodos para agregar recursos al repositorio [!DNL Experience Manager], incluidos los clientes de escritorio, como Adobe Asset Link o la aplicación de escritorio [!DNL Experience Manager], los scripts de carga e ingesta que los clientes podrían crear y las integraciones de ingesta automatizada añadidas como [!DNL Experience Manager] extensiones.
 
 Nos centraremos en los métodos de carga para los usuarios finales aquí y proporcionaremos vínculos a artículos que describen aspectos técnicos de la carga y la ingesta de recursos mediante [!DNL Experience Manager] API y SDK.
 
@@ -28,7 +28,7 @@ También puede optar por realizar un procesamiento adicional en los recursos car
 >
 >El código de carga personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
 
-Assets as a [!DNL Cloud Service] proporciona los siguientes métodos de carga. Adobe recomienda que conozca su caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
+Assets as a [!DNL Cloud Service] proporciona los siguientes métodos de carga. Adobe recomienda comprender el caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
 | Método de carga | ¿Cuándo usar? | Personal principal |
 |---------------------|----------------|-----------------|
@@ -118,7 +118,7 @@ Puede cargar un recurso con la misma ruta (el mismo nombre y ubicación) que el 
 >
 >Si Asset Insights está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
 
-Para conservar el recurso duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso duplicado que ha cargado, pulse o haga clic en **[!UICONTROL Eliminar]**.
+Para conservar el recurso duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
 
 ### Administración de nombres de archivo y caracteres prohibidos {#filename-handling}
 
