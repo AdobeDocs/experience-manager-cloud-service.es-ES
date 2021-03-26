@@ -2,9 +2,9 @@
 title: 'Derechos de acceso concedidos: ¿Qué es necesario?'
 description: 'Derechos de acceso concedidos: ¿Qué es necesario?'
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '576'
 ht-degree: 11%
 
 ---
@@ -41,8 +41,6 @@ Una vez que Adobe haya creado una organización para su empresa, el administrado
 
 Con estos derechos concedidos, el administrador ahora se configura con un inicio de sesión único (mediante Adobe ID) para acceder a los servicios de [!UICONTROL Experience Cloud], iniciar sesión en los entornos de nube AEM y utilizar [!UICONTROL Cloud Manager].
 
-## Usuarios y funciones {#users-roles}
-
 Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos para funcionar.
 
 [!UICONTROL Cloud ] Manager define actualmente cuatro funciones para los usuarios que rigen la disponibilidad de funciones específicas:
@@ -53,7 +51,6 @@ Muchas funciones de [!UICONTROL Cloud Manager] requieren permisos específicos p
 * Desarrollador
 
 >[!CAUTION]
->
 >Para utilizar [!UICONTROL Cloud Manager], debe tener un Adobe ID y Adobe Experience Manager as a Cloud Service Product Context.
 
 ### Definiciones de funciones {#role-definitions}
