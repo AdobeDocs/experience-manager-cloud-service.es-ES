@@ -2,7 +2,7 @@
 title: Cambios importantes en [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
 description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] en comparación con [!DNL Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 5%
@@ -56,7 +56,7 @@ Para realizar una validación completa del código y el proceso, incluido el pro
 | Detección de tipo MIME | No se admite. | Si carga un recurso digital sin extensión o con una extensión incorrecta, es posible que no se procese como desee. Los usuarios aún pueden almacenar los archivos binarios sin una extensión en DAM. Consulte [Detección de tipo MIME en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Generación de subrecursos para recursos compuestos | No se admite. | No se cumplen los casos de uso dependientes. Por ejemplo, la anotación de archivos PDF de varias páginas se ve afectada. Consulte [creación de subactivos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Página principal | No se admite. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
-| Extraer recursos del archivo ZIP | No se admite. | Consulte [Extracción ZIP en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip). |
+| Extraer recursos del archivo ZIP | No se admite. | Consulte [Extracción ZIP en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | IU clásica | No se admite. | Solo está disponible la IU táctil. |
 
 >[!MORELIKETHIS]
