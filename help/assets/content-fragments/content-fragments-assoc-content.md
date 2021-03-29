@@ -1,18 +1,18 @@
 ---
 title: Contenido asociado
-description: El contenido asociado proporciona la conexión para que los recursos se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
+description: Comprender cómo AEM función de contenido asociada proporciona la conexión para que los recursos se puedan utilizar opcionalmente con el fragmento cuando se añada a una página de contenido, añadiendo flexibilidad adicional a la entrega de contenido sin encabezado.
 translation-type: tm+mt
-source-git-commit: 29ce1175e3fcc606d12dd4f1ef7b6d8f26c1d47a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 15%
+source-wordcount: '244'
+ht-degree: 14%
 
 ---
 
 
 # Contenido asociado{#associated-content}
 
-El contenido asociado proporciona la conexión para que los recursos (es decir, los) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
+AEM función Contenido asociado proporciona la conexión para que los recursos se puedan utilizar de forma opcional con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad para el envío de contenido sin encabezado al [proporcionar una serie de recursos a los que acceder al utilizar el fragmento de contenido en una página,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), mientras que también ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
 ## Añadir contenido asociado {#adding-associated-content}
 
@@ -26,18 +26,18 @@ Para hacer la asociación, primero debe [agregar sus recursos de medios a una co
 
    ![Contenido asociado](assets/cfm-assoc-content-01.png)
 
-1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione una de estas opciones:
+1. Dependiendo de si alguna colección ya se ha asociado o no, seleccione:
 
    * **Asociar contenido** : será la primera colección asociada
-   * **Colección**  asociada: las colecciones asociadas ya están configuradas
+   * **Colección asociada** : las colecciones asociadas ya están configuradas
 
 1. Seleccione la colección requerida.
 
-   Si lo desea, puede añadir el propio fragmento a la colección seleccionada; esto ayuda al seguimiento.
+   Si lo desea, puede añadir el fragmento a la colección seleccionada; esto ayuda al seguimiento.
 
    ![Seleccionar colección](assets/cfm-assoc-content-02.png)
 
-1. Confirmar (con **Seleccionar**). La colección se mostrará como asociada.
+1. Confirmar (con **Select**). La colección se enumerará como asociada.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
@@ -46,6 +46,6 @@ Para hacer la asociación, primero debe [agregar sus recursos de medios a una co
 Una vez asociada una colección, puede:
 
 * **** Elimine la asociación.
-* **Añadir recursos** en la colección.
+* **Agregue** recursos a la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
