@@ -1,16 +1,18 @@
 ---
 title: Administrar fragmentos de contenido
-description: Los fragmentos de contenido se almacenan como recursos, por lo que se administran principalmente desde la consola Recursos.
+description: Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1640'
 ht-degree: 9%
 
 ---
 
 
-# Administrar fragmentos de contenido{#managing-content-fragments}
+# Administrar fragmentos de contenido {#managing-content-fragments}
+
+Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
 
 Los fragmentos de contenido se almacenan como **Assets**, por lo que se administran principalmente desde la consola **Assets**.
 
