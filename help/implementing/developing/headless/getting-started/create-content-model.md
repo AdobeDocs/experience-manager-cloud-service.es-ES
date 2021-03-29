@@ -1,18 +1,18 @@
 ---
-title: Creación de modelos de fragmentos de contenido Guía de Inicio rápido sin encabezado
-description: Los modelos de fragmento de contenido definen la estructura del contenido que creará y ofrecerá mediante AEM funciones sin encabezado.
+title: Creación de modelos de fragmento de contenido Guía de inicio rápido sin encabezado
+description: Defina la estructura del contenido que creará y servirá con AEM capacidades sin encabezado mediante modelos de fragmento de contenido.
 translation-type: tm+mt
-source-git-commit: d37342feb794b9f1385bb5edd38b2d9bb6e7dff9
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 
-# Creación de modelos de fragmento de contenido Guía de Inicio rápido sin encabezado {#creating-content-fragment-models}
+# Creación de modelos de fragmento de contenido Guía de inicio rápido sin encabezado {#creating-content-fragment-models}
 
-Los modelos de fragmento de contenido definen la estructura del contenido que creará y ofrecerá mediante AEM funciones sin encabezado.
+Defina la estructura del contenido que creará y servirá con AEM capacidades sin encabezado mediante modelos de fragmento de contenido.
 
 ## ¿Qué son los modelos de fragmento de contenido? {#what-are-content-fragment-models}
 
@@ -22,36 +22,36 @@ Los modelos de fragmento de contenido definen la estructura de los datos y el co
 
 ## Cómo crear un modelo de fragmento de contenido {#how-to-create-a-content-fragment-model}
 
-Un arquitecto de la información realizará estas tareas sólo esporádicamente a medida que se requieran nuevos modelos. Para los fines de esta guía de introducción, sólo necesitamos crear un modelo.
+Un arquitecto de la información realizaría estas tareas sólo esporádicamente, ya que se necesitan nuevos modelos. Para los fines de esta guía de introducción, solo necesitamos crear un modelo.
 
 1. Inicie sesión en AEM como Cloud Service y, en el menú principal, seleccione **Herramientas -> Recursos -> Modelos de fragmento de contenido**.
-1. Toque o haga clic en la carpeta que se creó al crear la configuración.
+1. Toque o haga clic en la carpeta que se creó creando la configuración.
 
    ![La carpeta de modelos](../assets/models-folder.png)
 1. Haga clic o pulse **Crear**.
-1. Proporcione un **Título del modelo**, **Etiquetas** y **Descripción**. También puede seleccionar o anular la selección de **Habilitar modelo** para controlar si el modelo se activa inmediatamente después de la creación.
+1. Proporcione un **Título de modelo**, **Etiquetas** y **Descripción**. También puede seleccionar o deseleccionar **Enable model** para controlar si el modelo se activa inmediatamente tras la creación.
 
-   ![Crear un modelo](../assets/models-create.png)
-1. En la ventana de confirmación, toque o haga clic en **Abrir** para configurar el modelo.
+   ![Creación de un modelo](../assets/models-create.png)
+1. En la ventana de confirmación, pulse o haga clic en **Abrir** para configurar el modelo.
 
-   ![Ventana Confirmación](../assets/models-confirmation.png)
+   ![Ventana de confirmación](../assets/models-confirmation.png)
 1. Con el **Editor del modelo de fragmento de contenido**, cree el modelo de fragmento de contenido arrastrando y soltando los campos de la columna **Tipos de datos**.
 
    ![Arrastrar y soltar campos](../assets/models-drag-and-drop.png)
 
-1. Una vez colocado un campo, debe configurar sus propiedades. El editor cambiará automáticamente a la ficha **Propiedades** del campo agregado, donde puede proporcionar los campos obligatorios.
+1. Una vez colocado un campo, se deben configurar sus propiedades. El editor cambiará automáticamente a la pestaña **Properties** del campo añadido, donde puede proporcionar los campos obligatorios.
 
    ![Configuración de propiedades](../assets/models-configure-properties.png)
 1. Cuando haya terminado de crear el modelo, toque o haga clic en **Guardar**. El modelo recién creado se guarda en modo **Borrador**.
 
    ![Modelo en modo borrador](../assets/models-draft.png)
-1. El modelo debe estar activado para poder utilizarlo (si no está activado). Seleccione el modelo que acaba de crear y toque o haga clic en **Habilitar**.
+1. El modelo debe estar habilitado para utilizarlo (si no está activado). Seleccione el modelo que acaba de crear y, a continuación, toque o haga clic en **Habilitar**.
 
    ![Activación del modelo](../assets/models-enable.png)
-1. Confirme la habilitación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.
+1. Confirme la activación del modelo tocando o haciendo clic en **Habilitar** en el cuadro de diálogo de confirmación.
 
    ![Activación del cuadro de diálogo de confirmación](../assets/models-enabling.png)
-1. El modelo está ahora habilitado y listo para usarse.
+1. El modelo está ahora habilitado y listo para usar.
 
    ![Modelo habilitado](../assets/models-enabled.png)
 
@@ -59,10 +59,10 @@ El **Editor del modelo de fragmento de contenido** admite muchos tipos de datos 
 
 Puede crear varios modelos. Los modelos pueden hacer referencia a otros fragmentos de contenido. Utilice [configuraciones](create-configuration.md) para organizar los modelos.
 
-## Próximos pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
-Ahora que ha definido las estructuras de los fragmentos de contenido mediante la creación de modelos, puede pasar a la tercera parte de la guía de introducción y [crear carpetas en las que almacenará los propios fragmentos.](create-assets-folder.md)
+Ahora que ha definido las estructuras de los fragmentos de contenido creando modelos, puede pasar a la tercera parte de la guía de introducción y [crear carpetas donde almacenará los propios fragmentos.](create-assets-folder.md)
 
 >[!TIP]
 >
->Para obtener información detallada sobre los modelos de fragmentos de contenido, consulte la documentación de [Modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-models.md)
+>Para obtener más información sobre los modelos de fragmento de contenido, consulte la [documentación de los modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
