@@ -1,18 +1,18 @@
 ---
 title: 'Variaciones: Crear contenido de fragmentos'
-description: Las variaciones le permiten crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito (si es necesario).
+description: Comprender cómo las variaciones pueden hacer que el contenido sin encabezado en AEM sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 13%
+source-wordcount: '2255'
+ht-degree: 12%
 
 ---
 
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Las variaciones son una característica importante de los fragmentos de contenido, ya que le permiten crear y editar copias del contenido principal para utilizarlas en canales o escenarios específicos.
+[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Las variaciones son una característica importante de AEM fragmentos de contenido, ya que le permiten crear y editar copias del contenido principal para utilizarlas en canales específicos o escenarios, lo que hace que la entrega de contenido sin encabezado sea aún más flexible.
 
 Desde la pestaña **Variations** puede:
 
