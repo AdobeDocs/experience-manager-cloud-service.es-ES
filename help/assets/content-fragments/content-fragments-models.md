@@ -1,10 +1,10 @@
 ---
 title: Modelos de fragmento de contenido
-description: Los modelos de fragmento de contenido se utilizan para crear fragmentos de contenido con contenido estructurado.
+description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2199'
 ht-degree: 7%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-Los modelos de fragmento de contenido definen la estructura de contenido para los [fragmentos de contenido](/help/assets/content-fragments/content-fragments.md).
+Los modelos de fragmento de contenido de AEM definen la estructura de contenido para los fragmentos de contenido [y](/help/assets/content-fragments/content-fragments.md) que sirven como base del contenido sin encabezado.
 
 Para usar modelos de fragmento de contenido:
 
