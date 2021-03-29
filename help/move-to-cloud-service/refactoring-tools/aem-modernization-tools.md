@@ -2,17 +2,17 @@
 title: Herramientas de modernización de AEM
 description: 'Herramientas de modernización de AEM '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
 
 # Herramientas de modernización de AEM{#aem-moderization-tools}
 
-El conjunto de herramientas de modernización de AEM proporciona a los equipos de desarrollo de AEM las herramientas para convertir las funciones actuales de AEM heredadas a las funciones compatibles actuales.
+Las herramientas de modernización de AEM proporcionan un conjunto de utilidades que se pueden utilizar para convertir funciones de AEM heredadas a las funciones modernas y compatibles de AEM como Cloud Service.
 
 
 ## Introducción {#introduction}
