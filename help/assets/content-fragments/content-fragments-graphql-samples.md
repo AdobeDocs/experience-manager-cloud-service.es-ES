@@ -1,16 +1,18 @@
 ---
 title: 'Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas'
-description: 'Aprenda a utilizar GraphQL con AEM: contenido de muestra y consultas.'
+description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin problemas explorando contenido de muestra y consultas.
 translation-type: tm+mt
-source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1418'
 ht-degree: 6%
 
 ---
 
 
 # Aprender a utilizar GraphQL con AEM: Contenido de muestra y consultas {#learn-graphql-with-aem-sample-content-queries}
+
+Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin problemas explorando contenido de muestra y consultas.
 
 >[!NOTE]
 >
