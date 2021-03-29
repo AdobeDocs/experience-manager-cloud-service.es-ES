@@ -1,23 +1,25 @@
 ---
 title: 'Fragmentos de contenido: navegador de configuración'
-description: Obtenga información sobre cómo habilitar ciertas funciones de fragmento de contenido en el navegador de configuración.
+description: Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 19%
 
 ---
 
 
-# Fragmentos de contenido - Navegador de configuración{#content-fragments-configuration-browser}
+# Fragmentos de contenido: navegador de configuración{#content-fragments-configuration-browser}
+
+Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 
 ## Habilitar la funcionalidad de fragmento de contenido para su instancia {#enable-content-fragment-functionality-instance}
 
-Antes de utilizar fragmentos de contenido, debe utilizar el **Navegador de configuración** para habilitar:
+Antes de utilizar los fragmentos de contenido, debe utilizar el **Navegador de configuración** para habilitar:
 
-* **Modelos**  de fragmento de contenido: obligatorio
-* **Consultas**  persistentes de GraphQL: opcional
+* **Modelos de fragmento de contenido** : obligatorio
+* **Consultas persistentes de GraphQL** : opcional
 
 >[!CAUTION]
 >
@@ -26,19 +28,19 @@ Antes de utilizar fragmentos de contenido, debe utilizar el **Navegador de confi
 Para habilitar la funcionalidad de fragmento de contenido, debe:
 
 * Habilitar el uso de la funcionalidad de fragmento de contenido mediante el navegador de configuración
-* Aplicar la configuración a la carpeta Assets
+* Aplique la configuración a la carpeta Assets
 
 ### Habilitar la funcionalidad de fragmento de contenido en el navegador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-content-fragment-model) **primero debe** habilitarlos mediante el **Explorador de configuración**:
+Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-content-fragment-model) debe **habilitarlos primero** mediante el **Explorador de configuración**:
 
 >[!NOTE]
 >
->Para obtener más información, consulte también [Navegador de configuración:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Para obtener más información, consulte también [Explorador de configuración:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!CAUTION]
 >
->Las subconfiguraciones (una configuración anidada en una configuración) no son compatibles para su uso con fragmentos de contenido.
+>Las subconfiguraciones (una configuración anidada en una configuración) no se admiten para su uso con fragmentos de contenido.
 
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
 
@@ -52,13 +54,13 @@ Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-conte
       ![Definir configuración](assets/cfm-conf-01.png)
 
 
-1. Seleccione **Crear** para guardar la definición.
+1. Seleccione **Create** para guardar la definición.
 
 <!-- 1. Select the location appropriate to your website. -->
 
 ### Aplicar la configuración a la carpeta de recursos {#apply-the-configuration-to-your-assets-folder}
 
-Cuando la configuración **global** está habilitada para la funcionalidad de fragmento de contenido, se aplica a cualquier carpeta de recursos.
+Cuando la configuración **global** está habilitada para la funcionalidad de fragmentos de contenido, se aplica a cualquier carpeta de Assets.
 
 Para utilizar otras configuraciones (es decir, excluyendo global) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
 
