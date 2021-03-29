@@ -1,35 +1,37 @@
 ---
 title: 'Metadatos: Propiedades del fragmento'
-description: Puede vista y edición de los metadatos (propiedades) de los fragmentos de contenido.
+description: Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 10%
+source-wordcount: '140'
+ht-degree: 8%
 
 ---
 
 
-# Metadatos: Propiedades del fragmento{#metadata-fragment-properties}
+# Metadatos: Propiedades del fragmento {#metadata-fragment-properties}
+
+Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
 
 ## Edición de propiedades/metadatos {#editing-properties-meta-data}
 
-Puede vista y edición de los metadatos (propiedades) de los fragmentos de contenido:
+Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
 
-1. En la consola **Assets** navegue a la ubicación del fragmento de contenido.
+1. En la consola **Assets** vaya a la ubicación del fragmento de contenido.
 2. O bien:
 
-   * Seleccione [**Propiedades de Vista** para abrir los cuadros de diálogo](/help/assets/manage-digital-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
+   * Seleccione [**Ver propiedades** para abrir los cuadros de diálogo](/help/assets/manage-digital-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
    * Abra el fragmento de contenido para editarlo y, a continuación, seleccione **Metadatos** en el panel lateral.
 
    ![metadata](assets/cfm-metadata-01.png)
 
-3. La ficha **Basic** proporciona opciones que puede editar o vista:
+3. La pestaña **Básico** proporciona opciones que puede ver o editar:
 
    * Miniatura, para la cual puede **Cargar imagen**
-   * **El** modelo de fragmento de contenido indica el modelo utilizado para crear el fragmento actual
+   * **El** modo de fragmento de contenido indica el modelo utilizado para crear el fragmento actual
    * **Título**
    * **Descripción**
    * **Etiquetas**
    * Creado (solo visualización)
-   ![metadatos](assets/cfm-metadata-02.png)
+   ![metadata](assets/cfm-metadata-02.png)
