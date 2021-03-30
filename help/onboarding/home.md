@@ -2,31 +2,46 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 89%
+source-wordcount: '642'
+ht-degree: 53%
 
 ---
 
 
 # Integración de Experience Manager as a Cloud Service {#aem-onboarding-guide}
 
-En esta página se muestran los recursos informativos para la integración de Experience Manager as a Cloud Service.
+¡Felicidades por comenzar su recorrido con AEM como Cloud Service! Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service.
 
 ## Artículos clave sobre incorporación {#key-articles}
 
-Esta sección muestra algunos de los artículos más importantes centrados en:
+Esta sección cubre los artículos clave centrados en su recorrido al comenzar con AEM como Cloud Service:
 
-* Introducción a AEM as a Cloud Service
+**Expectativas durante la incorporación**
 
-* Explicación de las funciones de los usuarios que rigen la disponibilidad de funciones específicas
+Una vez firmado el contrato, se llevarán a cabo los siguientes eventos:
 
-* Configuración del repositorio de Git de Cloud Manager
+1. El administrador del sistema de su organización recibirá un mensaje de correo electrónico de bienvenida que le permitirá realizar [tareas de administrador](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), incluida la adición de usuarios, la asignación de funciones y, de este modo, proporcionarles el acceso adecuado a Cloud Manager.
 
-* Acceso a Experience Manager as a Cloud Service
+1. Los usuarios añadidos por el administrador del sistema recibirán a su vez un mensaje de correo electrónico de bienvenida en el que se les notificará que tienen acceso a Cloud Manager. Los usuarios ahora pueden empezar su recorrido con Cloud Manager desde aquí.
 
-* Fundamentos para la protección de datos y normas de privacidad
+1. Los usuarios también pueden tener [acceso a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fines de desarrollo.
+
+**Equipos, funciones y permisos**
+
+El administrador del sistema puede agregar usuarios y asignarlos a funciones de Cloud Manager. Esta sección le ayuda a comprender cuáles son las *funciones de Cloud Manager* y los permisos asociados a ellas antes de comenzar.
+
+**Tareas del administrador del sistema**
+
+Los administradores de sistemas administran todos los aspectos de sus usuarios, desde el acceso a los permisos. Las siguientes páginas de documentación incluyen información que describe tareas organizativas básicas, es decir, [Añadir usuarios y asignar usuarios a funciones y permisos de Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
+
+
+**Vaya a Cloud Manager**
+
+Acceda a Cloud Manager para comenzar con su recorrido de Cloud con AEM. Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, está listo para realizar varias tareas, como crear un programa, añadir un entorno, administrar Git, configurar una canalización e implementar código.
+
+**Acceso a una instancia de AEM**
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
 
