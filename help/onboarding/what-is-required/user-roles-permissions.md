@@ -2,10 +2,10 @@
 title: Roles y permisos de usuario
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 11%
+source-wordcount: '624'
+ht-degree: 9%
 
 ---
 
@@ -18,6 +18,10 @@ Adobe creará un identificador de **Organización** para su empresa en el sistem
 
 Muchas funciones de Cloud Manager requieren permisos específicos para funcionar.
 
+Muchas funciones de Cloud Manager requieren permisos específicos para funcionar y limitan las acciones que realiza en la interfaz de usuario en función de las funciones y los permisos asignados. En algunos casos, si no tiene el permiso para realizar una acción, el control de interfaz está presente, pero deshabilitado.
+
+Si desea realizar una acción, pero no puede, marque [permisos asociados con definiciones de funciones](#permissions). En función de su objetivo, puede ponerse en contacto con el administrador del sistema y solicitar la función que necesita.
+
 Cloud Manager define actualmente cuatro funciones para los usuarios que rigen la disponibilidad de funciones específicas:
 
 * Propietario del negocio
@@ -28,6 +32,8 @@ Cloud Manager define actualmente cuatro funciones para los usuarios que rigen la
 >[!NOTE]
 >El perfil de desarrollador en Admin Console no está relacionado con la función de desarrollador en [!UICONTROL Cloud Manager].
 
+## Definiciones de funciones {#role-definitions}
+
 La siguiente tabla resume las funciones:
 
 | [!UICONTROL Funciones de Cloud ] Manager | Descripción |
@@ -37,6 +43,12 @@ La siguiente tabla resume las funciones:
 | Administrador de implementación | Gestiona las operaciones de implementación. Utiliza [!UICONTROL Cloud Manager] para ejecutar implementaciones de fase/producción. Puede editar canalizaciones de CI/CD. Pueden aprobar errores importantes de tres niveles. Puede obtener acceso al repositorio de Git. |
 | Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Se utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado. Puede obtener acceso al repositorio de Git para la confirmación de código. |
 | Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el [!UICONTROL Cloud Manager] conmutador de programas (habiendo navegado desde [!UICONTROL Experience Cloud]) para acceder a AEM. |
+
+### Visualización de las funciones {#view-roles}
+
+Para ver su función en Cloud Manager, inicie sesión en la interfaz de usuario de Cloud Manager, seleccione el icono de perfil en la esquina superior derecha y seleccione **Funciones de usuario**, como se muestra en la figura siguiente.
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### El perfil de producto de integración {#integration-product-profile}
 
