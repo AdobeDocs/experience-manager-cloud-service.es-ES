@@ -2,10 +2,10 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6721940f2260cf61c83f01106fa2781e2f35b1f
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 51%
+source-wordcount: '695'
+ht-degree: 49%
 
 ---
 
@@ -36,14 +36,13 @@ El administrador del sistema puede agregar usuarios y asignarlos a funciones de 
 
 Los administradores de sistemas administran todos los aspectos de sus usuarios, desde el acceso a los permisos. Las siguientes páginas de documentación incluyen información que describe tareas organizativas básicas, es decir, [Añadir usuarios y asignar usuarios a funciones y permisos de Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)
 
-
 **[Vaya a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Acceda a Cloud Manager para comenzar con su recorrido de Cloud con AEM. Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, está listo para realizar varias tareas como [crear un programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [agregar un entorno](/help/implementing/cloud-manager/manage-environments.md), [acceder a Git](/help/implementing/cloud-manager/accessing-git.md), [configurar una canalización](/help/implementing/cloud-manager/configure-pipeline.md) e [implementar código](/help/implementing/cloud-manager/deploy-code.md).
+Siga esta sección para obtener información sobre cómo acceder a Cloud Manager para empezar a usar el recorrido de Cloud con AEM. Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, está listo para realizar varias tareas como [crear un programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [agregar un entorno](/help/implementing/cloud-manager/manage-environments.md), [acceder a Git](/help/implementing/cloud-manager/accessing-git.md), [configurar una canalización](/help/implementing/cloud-manager/configure-pipeline.md) e [implementar código](/help/implementing/cloud-manager/deploy-code.md).
 
-**[Acceso a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+**[Conceder acceso a un usuario a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-Un administrador del sistema puede otorgar a los usuarios acceso a una instancia de AEM desde la interfaz de usuario de Cloud Manager o desde el Admin Console.
+Siga esta sección para obtener información sobre cómo un administrador del sistema puede otorgar a los usuarios acceso a una instancia de AEM o si un usuario que ha creado un entorno puede otorgar acceso a otra instancia de AEM.
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
 
