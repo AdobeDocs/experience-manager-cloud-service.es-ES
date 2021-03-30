@@ -2,7 +2,7 @@
 title: Navegar a Cloud Manager
 description: Siga esta página para conocer cómo navegar a la página de aterrizaje de Cloud Manager
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Verá una de las tres opciones que se describen a continuación:
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-Desde aquí, un usuario con los permisos adecuados, como una función de propietario empresarial en Cloud Manager, puede seleccionar **Agregar programa** para iniciar el asistente.
+Desde aquí, un usuario con los permisos adecuados, como una función de propietario empresarial en Cloud Manager, puede seleccionar **Agregar programa** para iniciar el [asistente](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md).
 
 Para aprender a añadir un programa en Cloud Manager, consulte:
 
