@@ -1,18 +1,18 @@
 ---
-title: 'Acceso a instancias de AEM '
-description: Siga esta página para obtener información sobre cómo acceder a una instancia de AEM
+title: 'Conceder acceso a un usuario a una instancia de AEM '
+description: Siga esta página para conocer cómo un administrador del sistema concede acceso a un usuario de una instancia de AEM
 translation-type: tm+mt
-source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
 
-# Acceso a una instancia de AEM {#accessing-aem-instance}
+# Conceder acceso a un usuario a una instancia de AEM {#accessing-aem-instance}
 
-Siga los pasos a continuación para acceder a una instancia de AEM desde Cloud Manager:
+Como administrador del sistema, siga los pasos a continuación para conceder al usuario acceso a una instancia de AEM:
 
 1. Vaya a Cloud Manager y haga clic en el botón **Administrar acceso** en la tarjeta **Entornos** como se muestra a continuación.
 
