@@ -7,9 +7,9 @@ feature-set: Experience Manager Sites
 feature: Implementación
 role: Arquitecto, Desarrollador
 translation-type: tm+mt
-source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '671'
 ht-degree: 29%
 
 ---
@@ -19,9 +19,10 @@ ht-degree: 29%
 
 + [Incorporación a AEM as a Cloud Service](/help/onboarding/home.md)
 + Introducción a AEM como Cloud Service {#what-is-required}
-   + [Obtención de Adobe ID](what-is-required/get-your-adobe-id.md)
-   + [Añadir usuarios y asignar a funciones de Cloud Manager](what-is-required/add-users-assign-cm-roles.md)
-   + [Navegar a Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
+   + [Obtenga su Adobe ID](what-is-required/get-your-adobe-id.md)
+   + [Roles y permisos de usuario](what-is-required/user-roles-permissions.md)
+   + [Tareas del administrador del sistema](what-is-required/add-users-assign-cm-roles.md)
+   + [Vaya a Cloud Manager](what-is-required/navigate-to-cloud-manager.md)
    + [Acceso a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Programas de Cloud Manager {#getting-access}
    + [Explicación de programas y tipos de programas](getting-access-to-aem-in-cloud/understand-program-types.md)
