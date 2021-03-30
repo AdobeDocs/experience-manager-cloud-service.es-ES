@@ -1,73 +1,62 @@
 ---
-title: Desproteger y proteger archivos en [!DNL Assets]
-description: Obtenga información sobre cómo retirar recursos para editarlos y volver a protegerlos una vez completados los cambios.
+title: Insertar y extraer archivos en [!DNL Assets]
+description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 8db9f899cee8f01a4c2aac93ccecc052f9780bc0
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 4%
+source-wordcount: '431'
+ht-degree: 0%
 
 ---
 
 
-# Archivos de ingreso y salida en Assets {#check-in-and-check-out-files-in-assets}
+# Archivos de desprotección y registro en [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Recursos de Adobe Experience Manager (AEM) permite retirar recursos para editarlos y volver a protegerlos una vez que haya completado los cambios. Después de retirar un recurso, solo podrá editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Al retirar un recurso, éste se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que lo vuelva a registrar en AEM Assets. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
+[!DNL Adobe Experience Manager Assets] permite extraer recursos para editarlos y volver a protegerlos después de completar los cambios. Después de retirar un recurso, solo puede editarlo, anotarlo, publicarlo, moverlo o eliminarlo. Si se retira un recurso, este se bloquea. Otros usuarios no pueden realizar ninguna de estas operaciones en el recurso hasta que vuelva a proteger el recurso en [!DNL Assets]. Sin embargo, aún pueden cambiar los metadatos del recurso bloqueado.
 
-Para poder extraer o registrar recursos, necesita tener acceso de escritura en ellos.
+Para poder extraer o incorporar recursos, debe disponer de acceso de escritura.
 
 Esta función ayuda a evitar que otros usuarios anulen los cambios realizados por un autor en los que varios usuarios colaboran en la edición de flujos de trabajo entre equipos.
 
-## Comprobación de recursos {#checking-out-assets}
+## Consulte los recursos {#checking-out-assets}
 
-1. En la interfaz de usuario de Recursos, seleccione el recurso que desee desproteger. También puede seleccionar varios recursos para retirarlos.
+1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desee extraer. También puede seleccionar varios recursos para desproteger.
 
-   ![chlimage_1-468](assets/chlimage_1-468.png)
+1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**. La opción **[!UICONTROL Checkout]** cambia a **[!UICONTROL Checkin]**.
+Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión como un usuario diferente. El icono ![bloqueo de cierre de compra](assets/do-not-localize/checkout_lock.png) aparece en la miniatura del recurso que ha extraído.
 
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Cierre de compra]**.
-
-   ![chlimage_1-469](assets/chlimage_1-469.png)
-
-   Observe que el icono **[!UICONTROL Cierre de compra]** conmuta al icono **[!UICONTROL Proteger]** con el bloqueo abierto.
-
-   ![chlimage_1-470](assets/chlimage_1-470.png)
-
-   Para comprobar si otros usuarios pueden editar el recurso que ha extraído, inicie sesión como un usuario diferente. Aparece un icono de candado en la miniatura del recurso que ha extraído.
-
-   ![chlimage_1-471](assets/chlimage_1-471.png)
+   ![icono de cierre de compra en la vista de tarjeta](assets/checkout-icon-card-view.png)
 
    Seleccione el recurso. Observe que la barra de herramientas no muestra ninguna opción que le permita editar, anotar, publicar o eliminar el recurso.
 
-   ![chlimage_1-472](assets/chlimage_1-472.png)
+   ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 
-   Sin embargo, puede tocar o hacer clic en el icono **[!UICONTROL Propiedades de la Vista]** para editar los metadatos del recurso bloqueado.
+   Para editar los metadatos del recurso bloqueado, haga clic en **[!UICONTROL Ver propiedades]**.
 
-1. Toque o haga clic en el icono Editar para abrir el recurso en modo de edición.
+1. Haga clic en **[!UICONTROL Editar]** para abrir el recurso en modo de edición.
 
-   ![chlimage_1-473](assets/chlimage_1-473.png)
+1. Edite el recurso y guarde los cambios. Por ejemplo, recorte la imagen y guárdela. También puede elegir anotar o publicar el recurso.
 
-1. Edite el recurso y guarde los cambios. Por ejemplo, recorte la imagen y guárdela.
+1. Seleccione el recurso editado en la interfaz [!DNL Assets] y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para que lo editen otros usuarios.
 
-   ![chlimage_1-474](assets/chlimage_1-474.png)
+## Registro forzado en {#forced-check-in}
 
-   También puede elegir anotar o publicar el recurso.
+Los administradores pueden proteger los recursos que han extraído otros usuarios.
 
-1. Seleccione el recurso editado en la interfaz de usuario de Assets y pulse o haga clic en el icono **[!UICONTROL Proteger]** de la barra de herramientas.
-
-   ![chlimage_1-475](assets/chlimage_1-475.png)
-
-   El recurso modificado está registrado en AEM Assets y está disponible para su edición por otros usuarios.
-
-## Registro forzado {#forced-check-in}
-
-Los administradores pueden proteger recursos que otros usuarios han extraído.
-
-1. Inicie sesión en AEM Assets como administrador.
-1. En la interfaz de usuario de Recursos, seleccione uno o varios recursos que hayan sido retirados por otros usuarios.
+1. Inicie sesión en [!DNL Assets] como administrador.
+1. En la interfaz de usuario [!DNL Assets] seleccione uno o varios recursos que otros usuarios hayan extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. En la barra de herramientas, toque o haga clic en el icono **[!UICONTROL Soltar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Liberar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
 
-   ![chlimage_1-477](assets/chlimage_1-477.png)
+## Prácticas recomendadas y limitaciones {#tips-limitations}
+
+* Es posible eliminar una *carpeta* que contenga archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
+
+>[!MORELIKETHIS]
+>
+>* [Comprender la entrada y la salida en la aplicación de  [!DNL Experience Manager] escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Tutorial de vídeo para comprender cómo registrar y registrar [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+
