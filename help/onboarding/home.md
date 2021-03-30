@@ -2,9 +2,9 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 99417790e5770d7b340baf78539f5985056dc0f7
+source-git-commit: 834d41cfb9b2988b5e7ffa03ad0f45d78c53f915
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '691'
 ht-degree: 49%
 
 ---
@@ -22,23 +22,27 @@ Esta sección cubre los artículos clave centrados en su recorrido al comenzar c
 
 Una vez firmado el contrato, se llevarán a cabo los siguientes eventos:
 
-1. El administrador del sistema de su organización recibirá un mensaje de correo electrónico de bienvenida que le permitirá realizar [tareas de administrador](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), incluida la adición de usuarios, la asignación de funciones y, de este modo, proporcionarles el acceso adecuado a Cloud Manager.
+1. El Adobe completará el aprovisionamiento de su organización, de modo que el administrador del sistema de su organización recibirá un mensaje de correo electrónico de bienvenida que le permitirá realizar [tareas de administrador](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), incluida la adición de usuarios, la asignación de funciones y, por lo tanto, les proporcionará el [acceso apropiado a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
 
-1. Cuando un administrador del sistema agrega un usuario, este recibirá a su vez un correo electrónico de bienvenida en el que se le notificará que tiene acceso a Cloud Manager. Los usuarios ahora pueden usar su [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) para iniciar sesión y comenzar su recorrido con Cloud Manager desde aquí.
+1. Los usuarios añadidos por el administrador del sistema recibirán a su vez un correo electrónico de bienvenida en el que se les notificará que tienen [acceso a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md). Los usuarios ahora pueden usar su [Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md) para iniciar sesión y comenzar su recorrido con Cloud Manager desde aquí.
+
 
 1. Los usuarios también pueden tener [acceso a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fines de desarrollo.
 
-**[Equipos, funciones y permisos](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Roles y permisos de usuario](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
-El administrador del sistema puede agregar usuarios y asignarlos a funciones de Cloud Manager. Esta sección le ayuda a comprender cuáles son las [funciones de Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles) y los [permisos](/help/onboarding/what-is-required/user-roles-permissions.md#permissions) asociados a las funciones antes de comenzar.
+El administrador del sistema puede agregar usuarios y asignarlos a funciones de Cloud Manager. Esta sección le ayuda a comprender qué son las *funciones de Cloud Manager* y los permisos asociados a las funciones antes de comenzar.
 
 **[Tareas del administrador del sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-Los administradores de sistemas administran todos los aspectos de sus usuarios, desde el acceso a los permisos. Las siguientes páginas de documentación incluyen información que describe tareas organizativas básicas, es decir, [agregar usuarios y asignar usuarios a funciones y permisos de Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md).
+Los administradores de sistemas administran todos los aspectos de sus usuarios, desde el acceso a los permisos. Las siguientes páginas de documentación incluyen información que describe tareas organizativas básicas:
+
+* Adición de usuarios
+* Asignación de usuarios a funciones y permisos de Cloud Manager
 
 **[Vaya a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Siga esta sección para obtener información sobre cómo acceder a Cloud Manager para empezar a usar el recorrido de Cloud con AEM. Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, está listo para realizar varias tareas como [crear un programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [agregar un entorno](/help/implementing/cloud-manager/manage-environments.md), [acceder a Git](/help/implementing/cloud-manager/accessing-git.md), [configurar una canalización](/help/implementing/cloud-manager/configure-pipeline.md) e [implementar código](/help/implementing/cloud-manager/deploy-code.md).
+Acceda a Cloud Manager para comenzar con su recorrido de Cloud con AEM. Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, está listo para realizar varias tareas como [crear un programa](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md), [agregar un entorno](/help/implementing/cloud-manager/manage-environments.md), [acceder a Git](/help/implementing/cloud-manager/accessing-git.md), [configurar una canalización](/help/implementing/cloud-manager/configure-pipeline.md) e [implementar código](/help/implementing/cloud-manager/deploy-code.md).
 
 **[Conceder acceso a un usuario a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
