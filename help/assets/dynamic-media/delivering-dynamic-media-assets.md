@@ -3,11 +3,12 @@ title: Envío de recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
 feature: Administración de activos
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 6%
+source-wordcount: '321'
+ht-degree: 7%
 
 ---
 
