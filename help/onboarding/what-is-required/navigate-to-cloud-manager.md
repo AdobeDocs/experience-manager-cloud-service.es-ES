@@ -2,10 +2,10 @@
 title: Navegar a Cloud Manager
 description: Siga esta página para conocer cómo navegar a la página de aterrizaje de Cloud Manager
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
+source-wordcount: '445'
+ht-degree: 6%
 
 ---
 
@@ -14,24 +14,22 @@ ht-degree: 7%
 
 Cloud Manager es una parte importante de AEM como Cloud Service. Permite a las organizaciones administrar su Experience Manager en la nube. Incluye un marco de trabajo de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad. Mediante la interfaz de usuario, puede configurar y poner en marcha la canalización de CD/CI.
 
-Una vez que el administrador del sistema le conceda acceso a Cloud Manager, recibirá un correo electrónico que le llevará a la página de inicio de sesión de Cloud Manager a la que también se puede acceder mediante [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
+Una vez que el administrador del sistema le conceda acceso a Cloud Manager, recibirá un correo electrónico que le llevará a la [página principal de Adobe Experience Cloud](https://experience.adobe.com).
 
 >[!NOTE]
->El administrador del sistema debe agregarlo como usuario y asignarlo a una función de Cloud Manager (perfil de producto en Admin Console).
+>Debe agregarlo como usuario y el administrador del sistema debe asignarlo al menos a una función de Cloud Manager (perfil de producto en Admin Console).
 
-1. En el correo electrónico de bienvenida, haga clic en **Introducción**, como se muestra en la figura siguiente.
+1. Desde el correo electrónico de bienvenida, haga clic en **Introducción**, como se muestra en la figura siguiente.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   O bien,
+   >[!NOTE]
+   >También puede navegar directamente a la página de inicio de sesión de Cloud Manager desde [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la interfaz de usuario de [!UICONTROL Cloud Manager]. Consulte la sección siguiente, [Página de aterrizaje de Cloud Manager](#cloud-manager-landing) para obtener más información.
 
-   1. Vaya a la página de inicio de sesión de Cloud Manager desde [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
+1. Seleccione **Experience Manager**.
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
-   1. Seleccione **Experience Manager**.
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
-
-   1. Haga clic en **Launch** desde la tarjeta de Cloud Manager.
-Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU).
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU).
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Página de aterrizaje de Cloud Manager {#cloud-manager-landing}
