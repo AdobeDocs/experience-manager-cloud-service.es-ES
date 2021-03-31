@@ -2,10 +2,10 @@
 title: Roles y permisos de usuario
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 11%
+source-wordcount: '449'
+ht-degree: 10%
 
 ---
 
@@ -14,11 +14,9 @@ ht-degree: 11%
 
 ## Roles del usuario {#user-roles}
 
-Muchas funciones de Cloud Manager requieren permisos específicos para funcionar.
-
 Muchas funciones de Cloud Manager requieren permisos específicos para funcionar y limitan las acciones que realiza en la interfaz de usuario en función de las funciones y los permisos asignados. En algunos casos, si no tiene el permiso para realizar una acción, el control de interfaz está presente, pero deshabilitado.
 
-Si desea realizar una acción, pero no puede, marque [permisos asociados con definiciones de funciones](#permissions). En función de su objetivo, puede ponerse en contacto con el administrador del sistema y solicitar la función que necesita.
+Si desea realizar una acción, pero no puede, compruebe la sección siguiente, [Funciones de usuario y permisos](#permissions). En función de su objetivo, puede ponerse en contacto con el administrador del sistema y solicitar la función que necesita.
 
 Cloud Manager define actualmente cuatro funciones para los usuarios que rigen la disponibilidad de funciones específicas:
 
@@ -34,6 +32,9 @@ Cloud Manager define actualmente cuatro funciones para los usuarios que rigen la
 
 Para ver su función en Cloud Manager, inicie sesión en la interfaz de usuario de Cloud Manager, seleccione el icono de perfil en la esquina superior derecha y seleccione **Funciones de usuario**, como se muestra en la figura siguiente.
 
+>[!NOTE]
+>Consulte [Navegar a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) para obtener más información sobre el inicio de sesión en Cloud Manager.
+
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### El perfil de producto de integración {#integration-product-profile}
@@ -41,7 +42,7 @@ Para ver su función en Cloud Manager, inicie sesión en la interfaz de usuario 
 Además de lo anterior, Cloud Manager creará automáticamente un perfil de producto denominado &quot;Integraciones - Cloud Service&quot;. Este perfil de producto se utiliza para las integraciones entre Adobe Experience Manager y otros productos de Adobe. Este perfil de producto **no debe** eliminarse. Si elimina accidentalmente este perfil, deberá volver a crearlo manualmente. El nombre para mostrar de este perfil **debe** ser `CM_CS_DEFAULT`.
 
 
-## Permisos asociados con definiciones de roles {#permissions}
+## Roles y permisos de usuario {#permissions}
 
 [!UICONTROL Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. ] Por ejemplo, un desarrollador desarrolla código y tiene permiso para insertar el código en el **Repositorio de Git**. Alternativamente, un propietario de una empresa tiene diferentes permisos que les permiten agregar y editar programas, agregar entornos y aprobar implementaciones.
 
