@@ -2,7 +2,7 @@
 title: Roles y permisos de usuario
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 9%
@@ -44,7 +44,7 @@ La siguiente tabla resume las funciones:
 | Desarrollador | Desarrolla y prueba el código de aplicación personalizado. Se utiliza principalmente [!UICONTROL Cloud Manager] para ver el estado. Puede obtener acceso al repositorio de Git para la confirmación de código. |
 | Autor de contenido | Generalmente no interactúa con [!UICONTROL Cloud Manager]. Puede utilizar el [!UICONTROL Cloud Manager] conmutador de programas (habiendo navegado desde [!UICONTROL Experience Cloud]) para acceder a AEM. |
 
-### Visualización de las funciones {#view-roles}
+## Visualización de las funciones {#view-roles}
 
 Para ver su función en Cloud Manager, inicie sesión en la interfaz de usuario de Cloud Manager, seleccione el icono de perfil en la esquina superior derecha y seleccione **Funciones de usuario**, como se muestra en la figura siguiente.
 
