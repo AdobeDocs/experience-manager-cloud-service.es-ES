@@ -2,13 +2,13 @@
 title: Organizar recursos digitales
 description: Organice los recursos digitales mediante varios métodos proporcionados en Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Administración de activos
-topic: '"Administrador, profesional empresarial"'
+feature: Administración de recursos,Etiquetado,Distribución de recursos
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 1%
+source-wordcount: '452'
+ht-degree: 2%
 
 ---
 
