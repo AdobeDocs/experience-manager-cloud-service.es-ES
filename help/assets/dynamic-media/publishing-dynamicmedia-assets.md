@@ -4,11 +4,12 @@ description: Obtenga información sobre cómo publicar recursos de Dynamic Media
 contentOwner: Rick Brough
 feature: Administración de activos
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 5%
 
 ---
 
