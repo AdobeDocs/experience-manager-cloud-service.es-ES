@@ -2,7 +2,7 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: 175cddb9e36422b3896efc76ac58183829b364b3
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 40%
@@ -28,11 +28,11 @@ Esta sección cubre los artículos clave centrados en su recorrido al comenzar c
 
 Una vez firmado el contrato, se llevarán a cabo los siguientes eventos:
 
-1. El Adobe completará el aprovisionamiento para su organización, de modo que el administrador del sistema de su organización recibirá un correo electrónico de bienvenida que le permitirá realizar [tareas del administrador del sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), incluida la adición de usuarios, la asignación de funciones y, por lo tanto, proporcionarles el [acceso apropiado a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md).
+1. El Adobe completará el aprovisionamiento de su organización, de modo que el administrador del sistema de su organización recibirá un correo electrónico de bienvenida que le permitirá realizar [tareas del administrador del sistema](/help/onboarding/what-is-required/add-users-assign-cm-roles.md), incluida la adición de usuarios, la asignación de funciones y, por lo tanto, proporcionarles el acceso adecuado a Cloud Manager.
 
 1. Los usuarios añadidos por el administrador del sistema recibirán a su vez un correo electrónico de bienvenida que les permitirá [Navegar a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) correctamente. Los usuarios ahora pueden usar su Adobe ID para iniciar sesión y comenzar su recorrido con Cloud Manager desde aquí.
 
-1. Un administrador del sistema puede [conceder a los usuarios acceso a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) con fines de desarrollo.
+1. Un administrador del sistema puede [Conceder acceso a los usuarios a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fines de desarrollo.
 
 **[Obtenga su Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
 
