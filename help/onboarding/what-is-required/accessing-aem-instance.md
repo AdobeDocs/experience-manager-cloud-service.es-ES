@@ -2,9 +2,9 @@
 title: 'Conceder acceso a un usuario a una instancia de AEM '
 description: Siga esta página para conocer cómo un administrador del sistema concede acceso a un usuario de una instancia de AEM
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Como administrador del sistema, siga los pasos a continuación para conceder al 
 1. Vaya a Cloud Manager y haga clic en el botón **Administrar acceso** en la tarjeta **Entornos** como se muestra a continuación.
 
    >[!NOTE]
-   >Debe ser administrador del sistema o usuario que haya creado el entorno para poder agregar un usuario al Admin Console. Solo las funciones Propietario empresarial o Administrador de implementación tienen permisos para crear un entorno. Consulte [Adición de usuarios y Asignación de funciones de Cloud Manager](/help/onboarding/what-is-required/add-users-assign-cm-roles.md) para obtener más información sobre las funciones y los permisos asociados.
+   >Debe ser administrador del sistema o usuario que haya creado el entorno para poder agregar un usuario al Admin Console. Solo las funciones Propietario empresarial o Administrador de implementación tienen permisos para crear un entorno. Consulte [Funciones de usuario y permisos](/help/onboarding/what-is-required/user-roles-permissions.md) para obtener más información sobre las funciones y los permisos asociados. Además, consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre los entornos.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
