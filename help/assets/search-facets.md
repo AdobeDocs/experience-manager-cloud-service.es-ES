@@ -1,10 +1,12 @@
 ---
 title: Facetas de búsqueda.
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
+feature: Buscar,Metadatos
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2381'
 ht-degree: 23%
 
 ---
