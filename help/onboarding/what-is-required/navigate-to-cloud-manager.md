@@ -2,15 +2,17 @@
 title: Navegar a Cloud Manager
 description: Siga esta página para conocer cómo navegar a la página de aterrizaje de Cloud Manager
 translation-type: tm+mt
-source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
 
 # Vaya a Cloud Manager {#cloud-manager}
+
+Cloud Manager es una parte importante de AEM como Cloud Service. Permite a las organizaciones administrar su Experience Manager en la nube. Incluye un marco de trabajo de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad. Mediante la interfaz de usuario, puede configurar y poner en marcha la canalización de CD/CI.
 
 Una vez que el administrador del sistema le conceda acceso a Cloud Manager, recibirá un correo electrónico que le llevará a la página de inicio de sesión de Cloud Manager a la que también se puede acceder mediante [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/).
 
