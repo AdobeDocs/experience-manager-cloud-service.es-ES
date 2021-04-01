@@ -3,10 +3,11 @@ title: Integración de visores de Dynamic Media con Adobe Analytics y Experience
 description: Obtenga información sobre la extensión de visores de Dynamic Media para Platform launch y visores de Dynamic Media 5.13. Permite a los clientes de Adobe Analytics y Platform launch utilizar eventos y datos específicos para los visualizadores en su configuración de Platform launch.
 feature: Informes del recurso
 topic: '"Ingeniero de datos, administrador, profesional empresarial"'
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '6668'
+source-wordcount: '6671'
 ht-degree: 10%
 
 ---
