@@ -2,10 +2,12 @@
 title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Conozca cómo las funciones de accesibilidad de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ayudan a los usuarios con discapacidades.
 contentOwner: AG
+feature: Accesibilidad, Administración de activos
+role: Profesional empresarial,Arquitecto,Líder
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1919'
 ht-degree: 2%
 
 ---
@@ -66,7 +68,7 @@ Las funciones principales de [!DNL Assets] son más accesibles que antes y se ac
 
 ## Compatibilidad con el uso del teclado {#keyboard-use}
 
-Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en los que se puede actuar con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar una acción adecuada. Los usuarios pueden utilizar directamente los métodos abreviados del teclado para activar un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y activarlos mediante el teclado. Por ejemplo, los usuarios pueden abrir la línea de tiempo de un recurso en el lado izquierdo navegando hasta el control de interfaz de usuario mediante un teclado, seleccionando `Return` y seleccionando `Alt + 2` acceso directo del teclado.
+Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en los que se puede actuar con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar una acción adecuada. Los usuarios pueden utilizar directamente los métodos abreviados del teclado para almacenar en déclencheur un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y colocarlos en déclencheur mediante el teclado. Por ejemplo, los usuarios pueden abrir la línea de tiempo de un recurso en el lado izquierdo navegando hasta el control de interfaz de usuario mediante un teclado, seleccionando `Return` y seleccionando `Alt + 2` acceso directo del teclado.
 
 <!-- TBD items:
 
@@ -175,7 +177,7 @@ Para las operaciones de metadatos que suelen realizar funciones como especialist
 
 ## Buscar recursos digitales {#search-assets}
 
-Una experiencia de búsqueda de recursos rápida y sin problemas aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido forman parte de la funcionalidad principal [!DNL Assets]. Para iniciar una búsqueda desde la barra Omnisearch, los usuarios pueden utilizar el método abreviado de teclado `/` o utilizar `Tab` junto con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como &quot;Botón de búsqueda&quot; cuando el foco está en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png). Los usuarios pueden seleccionar `Return` para abrir el cuadro Omnisearch. El lector de pantalla no solo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias que ofrece [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha, `Return` y `Tab` para acceder a las distintas opciones y activar una búsqueda.
+Una experiencia de búsqueda de recursos rápida y sin problemas aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido forman parte de la funcionalidad principal [!DNL Assets]. Para iniciar una búsqueda desde la barra Omnisearch, los usuarios pueden utilizar el método abreviado de teclado `/` o utilizar `Tab` junto con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como &quot;Botón de búsqueda&quot; cuando el foco está en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png). Los usuarios pueden seleccionar `Return` para abrir el cuadro Omnisearch. El lector de pantalla no solo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias que ofrece [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha, `Return` y `Tab` para acceder a las distintas opciones y almacenar en déclencheur una búsqueda.
 
 La funcionalidad de búsqueda es accesible a través de la siguiente funcionalidad:
 
@@ -208,7 +210,7 @@ Al compartir recursos, las siguientes funcionalidades mejoran la accesibilidad:
 
 ## Documentación accesible {#accessible-docs}
 
-[!DNL Experience Manager] proporciona documentación accesible para uso de las personas con discapacidades. A continuación se indica cómo hacer accesible la oferta de contenido por ahora, mientras que Adobe continúa mejorando la plantilla y el contenido:
+[!DNL Experience Manager] proporciona documentación accesible para uso de las personas con discapacidades. Lo siguiente ayuda a que la oferta de contenido sea accesible por ahora, mientras que el Adobe sigue mejorando la plantilla y el contenido:
 
 * Los lectores de pantalla pueden leer el texto.
 * Las imágenes y las ilustraciones tienen texto alternativo disponible.
