@@ -2,9 +2,9 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 826c15ecca494f98fbe7a4c3ef129a45bd4cea7c
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 40%
 
 ---
@@ -38,7 +38,7 @@ Una vez firmado el contrato, se llevarán a cabo los siguientes eventos:
 
 Necesitará la ayuda de su Adobe ID y del administrador del sistema para que los usuarios se agreguen a Cloud Manager a sus funciones asignadas.
 
-**[Roles y permisos de usuario](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**[Funciones de Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 El administrador del sistema puede agregar usuarios y asignarlos a funciones de Cloud Manager. Esta sección le ayuda a comprender qué son las *funciones de Cloud Manager* y los permisos asociados a las funciones antes de comenzar.
 
