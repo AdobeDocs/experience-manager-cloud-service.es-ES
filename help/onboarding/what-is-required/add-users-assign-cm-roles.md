@@ -2,9 +2,9 @@
 title: 'Tareas del administrador del sistema '
 description: Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager como administrador del sistema
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ Un administrador del sistema realiza las siguientes tareas organizativas:
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >Consulte las secciones anteriores, [Roles de usuario y permisos](#user-roles) y [permisos asociados con definiciones de rol](#permissions) para asegurarse de que a los usuarios adecuados se les asignen las funciones correctas en el **Admin Console**.
+   >Consulte [Roles de usuario y permisos](#user-roles) y [permisos asociados con definiciones de rol](#permissions) para asegurarse de que a los usuarios adecuados se les asignen las funciones correctas en el **Admin Console**.
 
    Ahora, ha agregado usuarios a Adobe Experience Manager as a Cloud Service Product Context y está configurado con las funciones o perfiles de producto adecuados.
 
-   Por ejemplo, si tiene la función de:
-
-   * ***Propietario empresarial***, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, añadir, editar o eliminar la canalización y ejecutar cualquier canalización, e implementar código en AEM entorno o calidad de código.
-
-   * ***Administrador de implementación***, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en AEM entorno o calidad del código.
-
-   * ***Desarrollador***, tiene permiso para generar un token de acceso personal para acceder a Git.
-
-      >[!NOTE]
-      > Se puede asignar a un usuario varias funciones. Por ejemplo, si asigna las funciones Propietario empresarial y Administrador de implementación a un usuario, se le proporcionará la combinación o suma de estos permisos.
