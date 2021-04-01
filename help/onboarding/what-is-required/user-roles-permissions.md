@@ -2,7 +2,7 @@
 title: Funciones de Cloud Manager
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 8%
@@ -65,7 +65,7 @@ La siguiente tabla resume las funciones junto con sus permisos asociados dentro 
 | Agregar programa<br>Editar programa | Agregar un nuevo programa.<br>Editar un programa: Agregar o quitar soluciones o complementos | x |  |  |  |
 | Crear entorno | Crear Prod+Stage, Dev, Entornos. | x | x |  |  |
 | Entorno de actualización | Actualice Prod+Stage, Dev, Entornos. | x | x |  |  |
-| Eliminar entorno | Elimine Entornos Que No Sean De Prod, Dev Y . | x | x |  |  |
+| Eliminar entorno de desarrollo | Eliminar entornos de desarrollo. | x | x |  |  |
 | Configuración de canalización | Configurar o editar canalización. |  | x |  |  |
 | Ejecución de canalización | Inicie la canalización. | x | x |  |  |
 | Ejecución de canalización | Rechazar/Aprobar Errores Importantes de Tres Niveles. | x | x | x |  |
