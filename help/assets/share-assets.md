@@ -2,10 +2,12 @@
 title: Compartir recursos, carpetas y colecciones como un vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de [!DNL Experience Manager Assets] como un hipervínculo.
 contentOwner: AG
+feature: Administración de activos,Colaboración,Distribución de activos
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 1%
 
 * Compartir como vínculo.
 * Descargue recursos y comparta por separado.
-* Compartir mediante la aplicación de escritorio de AEM.
+* Compartir mediante AEM aplicación de escritorio.
 * Compartir mediante Adobe Asset Link.
 * (Próxima funcionalidad) Comparta con Brand Portal.
 
@@ -113,7 +115,7 @@ Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!
 
 Los especialistas en marketing y los usuarios de la línea de negocios pueden compartir fácilmente los recursos aprobados con sus profesionales creativos mediante
 
-* **Aplicación de escritorio de Experience Manager**: La aplicación funciona en Windows y Mac. Consulte [información general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios de AEM, por ejemplo, cargando nuevas imágenes. Consulte [carga de recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **aplicación de escritorio de Experience Manager**: La aplicación funciona en Windows y Mac. Consulte [información general de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Para saber cómo cualquier usuario de escritorio autorizado puede acceder fácilmente a los recursos compartidos, consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Los usuarios de escritorio pueden crear recursos y volver a compartirlos con sus homólogos que sean usuarios AEM, por ejemplo, cargando nuevas imágenes. Consulte [carga de recursos mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: Los profesionales creativos pueden buscar y utilizar recursos directamente desde  [!DNL Adobe InDesign],  [!DNL Adobe Illustrator] y  [!DNL Adobe Photoshop].
 
@@ -182,7 +184,7 @@ Consulte [cómo configurar [!DNL Assets] para utilizarlo con [!DNL Adobe Asset L
 ## Prácticas recomendadas y resolución de problemas {#bestpractices}
 
 * Es posible que las carpetas de recursos o las colecciones que contienen un espacio en blanco en su nombre no se compartan.
-* Si los usuarios no pueden descargar los recursos compartidos, consulte con su administrador de AEM cuáles son los [límites de descarga](#maxdatasize).
+* Si los usuarios no pueden descargar los recursos compartidos, compruebe con su administrador de AEM cuáles son los [límites de descarga](#maxdatasize).
 * Para que un usuario pueda previsualizar un vídeo compartido mediante vínculos, el vídeo debe tener una representación de vídeo estático disponible en la ubicación `/jcr:content/renditions` del nodo del vídeo en el repositorio. La vista previa no depende de la disponibilidad de una representación [!DNL Dynamic Media].
 * Al descargar un recurso de vídeo mediante el uso compartido de vínculos, las [!DNL Dynamic Media] representaciones no se incluyen en el archivo descargado.
 
