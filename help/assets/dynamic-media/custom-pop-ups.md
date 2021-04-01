@@ -2,10 +2,12 @@
 title: Uso de vistas rápidas para crear ventanas emergentes personalizadas
 description: '"Descubra cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, a través de la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes".'
 topic: '"Desarrollador, administrador, profesional"'
+feature: Imágenes interactivas,Vídeos interactivos,Banners de carrusel
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1041'
 ht-degree: 1%
 
 ---
