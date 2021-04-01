@@ -2,10 +2,12 @@
 title: Etiquetado automático de recursos con etiquetas generadas por AI
 description: Etiquete los recursos utilizando servicios inteligentes artificialmente que apliquen etiquetas comerciales contextuales y descriptivas mediante el servicio  [!DNL Adobe Sensei] .
 contentOwner: AG
+feature: Etiquetas inteligentes,Etiquetado
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2806'
 ht-degree: 6%
 
 ---
@@ -98,7 +100,7 @@ Asegúrese de que las imágenes del conjunto de formación cumplen las siguiente
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coherence.png)
 
-**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que AEM aprenda a centrarse en lo correcto. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de capacitación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
+**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que AEM aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de capacitación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coverage_1.png)
 
@@ -114,7 +116,7 @@ Asegúrese de que las imágenes del conjunto de formación cumplen las siguiente
 
 **Número de ejemplos**: Para cada etiqueta, añada al menos diez ejemplos. Sin embargo, Adobe recomienda unos 30 ejemplos. Se admite un máximo de 50 ejemplos por etiqueta.
 
-**Prevención de falsos positivos y conflictos**: Adobe recomienda crear un modelo de etiqueta único para un aspecto visual único. Organice los modelos de etiquetas de forma que se eviten las etiquetas superpuestas entre los modelos. Por ejemplo, no utilice etiquetas comunes como `sneakers` en dos modelos de etiquetas diferentes: `shoes` y `footwear`. El proceso de formación sobrescribe un modelo de etiquetas entrenado con el otro para una palabra clave común.
+**Prevención de falsos positivos y conflictos**: Adobe recomienda crear un modelo de etiqueta única para un aspecto visual único. Organice los modelos de etiquetas de forma que se eviten las etiquetas superpuestas entre los modelos. Por ejemplo, no utilice etiquetas comunes como `sneakers` en dos modelos de etiquetas diferentes: `shoes` y `footwear`. El proceso de formación sobrescribe un modelo de etiquetas entrenado con el otro para una palabra clave común.
 
 **Ejemplos**: Algunos ejemplos más para obtener instrucciones son:
 
@@ -163,7 +165,7 @@ Para comprobar si el servicio Etiquetas inteligentes está formado sobre las eti
 
 ## Etiquetar recursos {#tag-assets}
 
-Una vez que haya formado el servicio Etiquetas inteligentes, puede activar el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas en un conjunto diferente de recursos similares. Puede aplicar el flujo de trabajo de etiquetado periódicamente o siempre que sea necesario. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
+Una vez que haya formado el servicio Etiquetas inteligentes, puede almacenar en déclencheur el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas en un conjunto diferente de recursos similares. Puede aplicar el flujo de trabajo de etiquetado periódicamente o siempre que sea necesario. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
 
 ### Etiquetar recursos de la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
@@ -210,7 +212,7 @@ Para moderar las etiquetas inteligentes de los recursos:
 
 1. En el campo de búsqueda, busque recursos basados en una etiqueta .
 
-1. Inspeccione los resultados de búsqueda para identificar los recursos que no considere relevantes para la búsqueda.
+1. Inspect muestra los resultados de la búsqueda para identificar los recursos que no considera relevantes para la búsqueda.
 
 1. Seleccione el recurso y, a continuación, seleccione ![Administrar etiquetas ](assets/do-not-localize/manage-tags-icon.png) en la barra de herramientas.
 
@@ -222,9 +224,9 @@ Para moderar las etiquetas inteligentes de los recursos:
 
 1. Vaya a la página [!UICONTROL Propiedades] del recurso. Observe que a la etiqueta que promocionó se le asigna una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
-### Comprender los resultados de búsqueda de AEM con etiquetas inteligentes {#understandsearch}
+### Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understandsearch}
 
-De forma predeterminada, la búsqueda de AEM combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con `woman` o `running` etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
+De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con `woman` o `running` etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
 
 * recursos con palabras clave `woman` y `running` en los metadatos.
 
