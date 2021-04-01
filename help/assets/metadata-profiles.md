@@ -2,10 +2,12 @@
 title: Perfiles de metadatos
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
+feature: Metadatos
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1230'
 ht-degree: 20%
 
 ---
