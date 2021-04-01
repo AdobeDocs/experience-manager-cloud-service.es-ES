@@ -2,10 +2,11 @@
 title: Solución de problemas de Dynamic Media
 description: Sugerencias de solución de problemas al usar Dynamic Media.
 topic: '"Administrador, profesional empresarial"'
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '996'
 ht-degree: 2%
 
 ---
