@@ -1,10 +1,10 @@
 ---
-title: Roles y permisos de usuario
+title: Funciones de Cloud Manager
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 8%
 
 ---
