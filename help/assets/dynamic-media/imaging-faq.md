@@ -3,10 +3,11 @@ title: Imágenes inteligentes
 description: '"Aprenda cómo las imágenes inteligentes aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación".'
 feature: Administración de recursos,Representaciones
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1865'
 ht-degree: 2%
 
 ---
@@ -200,7 +201,7 @@ Sí. Puede desactivar las imágenes inteligentes añadiendo el modificador `bfc=
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? (#tuning-settings)
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que pueda establecer? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? (#Minimum-maximum)
 
