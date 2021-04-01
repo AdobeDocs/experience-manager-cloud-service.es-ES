@@ -1,10 +1,12 @@
 ---
 title: Trabajar con fragmentos de contenido
 description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para envíos sin periféricos.
+feature: Fragmentos de contenido
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2039'
 ht-degree: 6%
 
 ---
