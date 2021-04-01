@@ -2,11 +2,12 @@
 title: Trabajar con selectores
 description: Obtenga información sobre los métodos que puede utilizar para seleccionar recursos para imágenes interactivas, vídeos interactivos y banners de carrusel en Dynamic Media.
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 14%
+source-wordcount: '755'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +18,7 @@ Al trabajar con una imagen interactiva, un vídeo interactivo o un titular de ca
 
 En este tema se explica cómo utilizar los selectores de producto, sitio y recurso, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
 
-Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear vídeos e imágenes interactivos.
+Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear imágenes y vídeos interactivos.
 
 Por ejemplo, en este titular de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida. Utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando cree una diapositiva.
 
