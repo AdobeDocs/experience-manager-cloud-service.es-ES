@@ -1,76 +1,78 @@
 ---
-title: Procesar recursos mediante microservicios de recursos
+title: Procesamiento de recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
+feature: Microservicios de asset compute,Flujo de trabajo,Información de versión,Procesamiento de recursos
+role: Arquitecto,Administrador
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
 
-# Visión general de la ingestión y el procesamiento de activos con microservicios de activos {#asset-microservices-overview}
+# Información general sobre la ingesta y el procesamiento de recursos con microservicios de recursos {#asset-microservices-overview}
 
-Adobe Experience Manager como [!DNL Cloud Service] proporciona un método nativo de la nube para aprovechar las aplicaciones y capacidades Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingestión y el procesamiento de activos, impulsados por microservicios de activos. Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios en la nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Los beneficios clave de los microservicios de recursos nativos de la nube son:
+Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo de la nube para aprovechar las aplicaciones y capacidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingesta y el procesamiento de recursos, con tecnología de microservicios de recursos. Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Las ventajas clave de los microservicios de recursos nativos de la nube son:
 
-* Arquitectura escalable que permite un procesamiento sin problemas para operaciones con gran cantidad de recursos.
-* Extracciones de texto e indexación eficaces que no afectan al rendimiento de los entornos de Experience Manager.
-* Minimice la necesidad de flujos de trabajo para gestionar el procesamiento de recursos en el entorno del Experience Manager. Esto libera recursos, minimiza la carga en el Experience Manager y proporciona escalabilidad.
-* Se ha mejorado la resiliencia del procesamiento de recursos. Los posibles problemas al gestionar archivos atípicos, como archivos dañados o archivos extremadamente grandes, ya no afectan al rendimiento de la implementación.
+* Arquitectura escalable que permite un procesamiento sin problemas para operaciones que requieren muchos recursos.
+* La indexación eficaz y las extracciones de texto que no afectan al rendimiento de los entornos de Experience Manager.
+* Minimice la necesidad de flujos de trabajo para gestionar el procesamiento de recursos en el entorno de Experience Manager. Esto libera recursos, minimiza la carga en el Experience Manager y proporciona escalabilidad.
+* Mejora de la flexibilidad del procesamiento de recursos. Los problemas potenciales al gestionar archivos atípicos, como archivos dañados o archivos extremadamente grandes, ya no afectan al rendimiento de la implementación.
 * Configuración simplificada del procesamiento de recursos para los administradores.
-* Adobe administra y mantiene la configuración de procesamiento de recursos para proporcionar la configuración más conocida para el manejo de representaciones, metadatos y extracción de texto para diversos tipos de archivos
-* Los servicios nativos de procesamiento de archivos Adobe se utilizan cuando corresponde, proporcionando una salida de alta fidelidad y [administración eficiente de los formatos propietarios de Adobe](file-format-support.md).
-* Capacidad de configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
+* La configuración del procesamiento de recursos se administra y mantiene en Adobe para proporcionar la configuración más conocida para administrar representaciones, metadatos y extracción de texto para varios tipos de archivo
+* Los servicios nativos de procesamiento de archivos de Adobe se utilizan cuando corresponde, proporcionando salida de alta fidelidad y [manejo eficiente de formatos propietarios de Adobe](file-format-support.md).
+* Capacidad para configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
 
 Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la transcodificación ImageMagick y FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan funcionalidad básica para tipos de archivos comunes de forma predeterminada.
 
 ## Arquitectura de alto nivel {#asset-microservices-architecture}
 
-Un diagrama de arquitectura de alto nivel muestra los elementos clave de la ingesta y el procesamiento y flujo de recursos en todo el sistema.
+Un diagrama de arquitectura de alto nivel representa los elementos clave de la ingesta y el procesamiento de recursos y el flujo de recursos a través del sistema.
 
 <!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Ingesta y procesamiento de activos con ](assets/asset-microservices-overview.png "microservicios de activosToma y procesamiento de activos con microservicios de activos")
+![Ingesta y procesamiento de recursos con ](assets/asset-microservices-overview.png "microservicios de recursosIngesta y procesamiento de recursos con microservicios de recursos")
 
-Los pasos clave de la ingestión y el procesamiento mediante microservicios de activos son:
+Los pasos clave de la ingesta y el procesamiento mediante los microservicios de recursos son:
 
-* Los clientes, como los exploradores web o Adobe Asset Link, envían una solicitud de carga al Experience Manager y al inicio que cargan el binario directamente en el almacenamiento de nube binario.
-* Cuando se completa la carga binaria directa, el cliente notifica al Experience Manager.
-* Experience Manager envía una solicitud de procesamiento a los microservicios de recursos. El contenido de la solicitud depende de la configuración de perfiles de procesamiento del Experience Manager que especifique, qué representaciones se generarán.
-* Assets microservices back-end recibe la solicitud, la envía a uno o varios microservicios en función de la solicitud. Cada microservicio accede al binario original directamente desde el almacén de nube binario.
-* Los resultados del procesamiento, como las representaciones, se almacenan en el almacenamiento de nube binaria.
-* Se notifica al Experience Manager que el procesamiento se ha completado junto con punteros directos a los binarios generados (representaciones). Las representaciones generadas están disponibles en Experience Manager para el recurso cargado.
+* Los clientes, como los navegadores web o Adobe Asset Link, envían una solicitud de carga al Experience Manager y comienzan a cargar el binario directamente al almacenamiento en la nube binaria.
+* Cuando la carga binaria directa se completa, el cliente notifica al Experience Manager.
+* El Experience Manager envía una solicitud de procesamiento a los microservicios de recursos. El contenido de la solicitud depende de la configuración de perfiles de procesamiento del Experience Manager que especifique, qué representaciones generar.
+* El back-end de los microservicios de recursos recibe la solicitud y la envía a uno o varios microservicios en función de la solicitud. Cada microservicio accede al binario original directamente desde el almacén de nube binario.
+* Los resultados del procesamiento, como las representaciones, se almacenan en el almacenamiento en la nube binaria.
+* Se notifica al Experience Manager de que el procesamiento se ha completado junto con punteros directos a los binarios generados (representaciones). Las representaciones generadas están disponibles en Experience Manager para el recurso cargado.
 
-Este es el flujo básico de procesamiento e ingesta de recursos. Si está configurado, el Experience Manager también puede realizar el inicio de un modelo de flujo de trabajo personalizado para realizar el procesamiento posterior del recurso. Por ejemplo, ejecute pasos personalizados que sean específicos de su entorno, como recuperar información de un sistema empresarial y agregarla a las propiedades del recurso.
+Este es el flujo básico de consumo y procesamiento de recursos. Si está configurado, el Experience Manager también puede iniciar un modelo de flujo de trabajo personalizado para realizar el posprocesamiento del recurso. Por ejemplo, ejecute pasos personalizados específicos de su entorno, como recuperar información de un sistema empresarial y agregarla a propiedades de recursos.
 
-La ingestión y el flujo de procesamiento son conceptos clave de la arquitectura de microservicios de recursos para Experience Manager.
+La ingesta y el flujo de procesamiento son conceptos clave de la arquitectura de microservicios de recursos para Experience Manager.
 
-* **Acceso** binario directo: Los recursos se transportan (y se cargan) al almacén binario de la nube una vez configurados para entornos de Experience Manager y, a continuación,  [!DNL Experience Manager]los microservicios de recursos, y finalmente los clientes obtienen acceso directo a ellos para realizar su trabajo. Esto minimiza la carga en las redes y la duplicación de binarios almacenados
-* **Procesamiento** externo: El procesamiento de los recursos se realiza fuera del  [!DNL Experience Manager] entorno y guarda sus recursos (CPU, memoria) para proporcionar funcionalidades clave de la administración de recursos digitales y para admitir el trabajo interactivo con el sistema para los usuarios finales
+* **Acceso binario directo**: Los recursos se transportan (y se cargan) a la tienda binaria de la nube una vez configurados para entornos de Experience Manager y, a continuación,  [!DNL Experience Manager], los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para llevar a cabo su trabajo. Esto minimiza la carga en redes y la duplicación de binarios almacenados
+* **Procesamiento** externalizado: El procesamiento de los recursos se realiza fuera del  [!DNL Experience Manager] entorno y guarda sus recursos (CPU, memoria) para proporcionar funciones clave de administración de recursos digitales y admitir el trabajo interactivo con el sistema para los usuarios finales
 
 ## Carga de recursos con acceso binario directo {#asset-upload-with-direct-binary-access}
 
 Los clientes Experience Manager, que forman parte de la oferta de productos, admiten la carga con acceso binario directo de forma predeterminada. Estas incluyen la carga mediante la interfaz web, el vínculo de recursos de Adobe y la aplicación de escritorio [!DNL Experience Manager].
 
-Puede utilizar herramientas de carga personalizadas, que funcionan directamente con [!DNL Experience Manager] API HTTP. Puede utilizar estas API directamente o utilizar y ampliar los siguientes proyectos de código abierto que implementan el protocolo de carga:
+Puede utilizar herramientas de carga personalizadas que funcionen directamente con [!DNL Experience Manager] API HTTP. Puede utilizar estas API directamente o utilizar y ampliar los siguientes proyectos de código abierto que implementan el protocolo de carga:
 
 * [Biblioteca de carga de código abierto](https://github.com/adobe/aem-upload)
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem)
 
 Para obtener más información, consulte [carga de recursos](add-assets.md).
 
-## Añadir posprocesamiento de recursos personalizados {#add-custom-asset-post-processing}
+## Agregar posprocesamiento de recursos personalizado {#add-custom-asset-post-processing}
 
-Aunque la mayoría de los clientes deben obtener todos sus requisitos de procesamiento de recursos de los microservicios de recursos configurables, algunos podrían necesitar un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en base a la información proveniente de otros sistemas a través de integraciones. En casos como este, se pueden utilizar flujos de trabajo de postprocesamiento personalizados.
+Aunque la mayoría de los clientes deben obtener todos los servicios de procesamiento de recursos que necesitan los microservicios de recursos configurables, es posible que algunos necesiten un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en función de la información proveniente de otros sistemas a través de integraciones. En casos como este, se pueden utilizar flujos de trabajo personalizados posteriores al procesamiento.
 
-Los flujos de trabajo posteriores al procesamiento son modelos de flujo de trabajo [!DNL Experience Manager] normales, creados y administrados en [!DNL Experience Manager] editor de flujo de trabajo. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados y flujos de trabajo personalizados disponibles.
+Los flujos de trabajo posteriores al procesamiento son modelos de flujo de trabajo [!DNL Experience Manager] normales, creados y administrados en el editor de flujo de trabajo [!DNL Experience Manager]. Los clientes pueden configurar los flujos de trabajo para realizar pasos de procesamiento adicionales en un recurso, incluido el uso de los pasos de flujo de trabajo predeterminados disponibles y los flujos de trabajo personalizados.
 
-Adobe Experience Manager se puede configurar para que déclencheur automáticamente los flujos de trabajo posteriores al procesamiento una vez finalizado el procesamiento de recursos.
+Adobe Experience Manager se puede configurar para que déclencheur automáticamente los flujos de trabajo posteriores al procesamiento una vez finalizado el procesamiento de los recursos.
 
 <!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
@@ -80,6 +82,6 @@ Adobe Experience Manager se puede configurar para que déclencheur automáticame
 >* [Introducción a los microservicios de recursos](asset-microservices-configure-and-use.md)
 >* [Formatos de archivo compatibles](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Documentación de Apache Oak sobre acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
