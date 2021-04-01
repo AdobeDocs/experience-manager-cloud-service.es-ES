@@ -1,19 +1,21 @@
 ---
-title: Flujo de actividad en la línea de tiempo
-description: En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo.
+title: Flujo de actividad en la cronología
+description: Este artículo describe cómo mostrar los registros de actividad de los recursos en la cronología.
 contentOwner: AG
+feature: Informes de activos,Administración de activos
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 24%
+source-wordcount: '216'
+ht-degree: 23%
 
 ---
 
 
-# Registros de operaciones de recursos de vista en el flujo de actividad {#activity-stream-in-timeline}
+# Ver registros de operaciones de recursos en el flujo de actividades {#activity-stream-in-timeline}
 
-Esta función muestra los registros de actividades de los recursos en la línea de tiempo. Si realiza cualquiera de las siguientes operaciones relacionadas con los recursos en [!DNL Experience Manager Assets], la función de flujo de Actividad actualiza la línea de tiempo para reflejar la actividad.
+Esta función muestra los registros de actividad de los recursos en la cronología. Si realiza cualquiera de las siguientes operaciones relacionadas con recursos en [!DNL Experience Manager Assets], la función Flujo de actividad actualiza la cronología para reflejar la actividad.
 
 Las siguientes operaciones se registran en el flujo de actividad:
 
@@ -26,17 +28,17 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la línea de tiempo se registra cuando se cargan nuevos recursos o cuando se modifican los recursos existentes y se registran en [!DNL Experience Manager] mediante [Vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
+Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la cronología se registra cuando se cargan nuevos recursos o cuando se modifican y se registran en [!DNL Experience Manager] los recursos existentes mediante [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) o [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
 
 >[!NOTE]
 >
->Los flujos de trabajo transitorios no se muestran en la línea de tiempo, ya que no se guarda la información del historial de estos flujos de trabajo.
+>Los flujos de trabajo transitorios no se muestran en la cronología, ya que no se guarda información de historial para estos flujos de trabajo.
 
-Para realizar la vista del flujo de actividad, realice una o varias de las operaciones en el recurso, selecciónelo y, a continuación, elija **[!UICONTROL Línea de tiempo]** en la lista de GlobalNav.
+Para ver el flujo de actividad, realice una o más de las operaciones en el recurso, seleccione el recurso y, a continuación, elija **[!UICONTROL Línea de tiempo]** en la lista Navegador global.
 
 <!-- ![timeline-2](assets/timeline-2.png) -->
 
-La línea de tiempo muestra el flujo de actividad de las operaciones que realiza en los recursos.
+La cronología muestra el flujo de actividad de las operaciones que realiza en los recursos.
 
 <!-- ![activity_stream](assets/activity_stream.png) -->
 
