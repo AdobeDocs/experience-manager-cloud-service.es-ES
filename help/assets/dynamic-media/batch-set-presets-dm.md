@@ -4,11 +4,12 @@ description: Descubra cómo automatizar la creación de conjuntos de imágenes y
 contentOwner: Rick Brough
 feature: Ajustes preestablecidos de imagen, Ajustes preestablecidos de visor
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '3433'
-ht-degree: 1%
+source-wordcount: '3435'
+ht-degree: 2%
 
 ---
 
@@ -204,7 +205,7 @@ Si copia un ajuste preestablecido existente al que hacen referencia las carpetas
 
 ## Acerca de la eliminación de los ajustes preestablecidos de conjuntos de lotes de las carpetas {#remove-bsp-from-folder}
 
-Al quitar los ajustes preestablecidos de conjuntos de lotes de las carpetas, los recursos nuevos que cargue en estas carpetas no tendrán el ajuste preestablecido de conjuntos de lotes aplicado. Los recursos existentes en la carpeta que ya se habían agregado al conjunto de imágenes o al conjunto de giros basado en el ajuste preestablecido de conjunto de lotes que se aplicó a la carpeta siguen mostrándose tal cual.
+Al quitar los ajustes preestablecidos de conjuntos de lotes de las carpetas, los recursos nuevos que cargue en estas carpetas no tendrán el ajuste preestablecido de conjuntos de lotes aplicado. Los recursos existentes en la carpeta que ya se habían agregado al conjunto de imágenes o al conjunto de giros en función del ajuste preestablecido de conjunto de lotes que se aplicó a la carpeta siguen mostrándose tal cual.
 
 Si desea *eliminar* ajustes preestablecidos de carpetas, consulte [Eliminación de ajustes preestablecidos de conjuntos de lotes](#delete-bsp).
 
