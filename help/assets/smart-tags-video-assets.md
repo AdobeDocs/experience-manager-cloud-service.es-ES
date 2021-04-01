@@ -1,10 +1,12 @@
 ---
 title: Etiquetado inteligente de recursos de vídeo
-description: Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante [!DNL Adobe Sensei].
+description: El Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante [!DNL Adobe Sensei].
+feature: Etiquetas inteligentes,Etiquetado
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -12,69 +14,69 @@ ht-degree: 0%
 
 # Etiquetado inteligente de los recursos de vídeo {#video-smart-tags}
 
-La creciente necesidad de nuevo contenido exige reducir los esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] como  [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo mediante inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de [!DNL Adobe Sensei] vídeo con tecnología compatible utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y agregar etiquetas a los recursos de vídeo. De este modo, se reduce el tiempo de los usuarios de DAM para ofrecer experiencias ricas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto se refiere a acciones como beber, correr y trotar.
+La creciente necesidad de nuevo contenido exige reducir los esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] como  [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo mediante inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo con tecnología [!DNL Adobe Sensei] utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y añadir etiquetas a los recursos de vídeo. De este modo, se reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto está relacionado con acciones como beber, correr y correr.
 
-El etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Sin embargo, puede [desactivar el etiquetado inteligente de vídeo](#opt-out-video-smart-tagging) en una carpeta. Los vídeos se etiquetan automáticamente al cargar vídeos nuevos o al volver a procesar los existentes. [!DNL Experience Manager] también crea las miniaturas y extrae los metadatos de los archivos de vídeo. Las etiquetas inteligentes se muestran en orden descendente de su [puntuación de confianza](#confidence-score-video-tag) en el recurso [!UICONTROL Propiedades].
+El etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. Sin embargo, puede [excluir el etiquetado inteligente de vídeo](#opt-out-video-smart-tagging) en una carpeta. Los vídeos se etiquetan automáticamente al cargar nuevos vídeos o al volver a procesar los existentes. [!DNL Experience Manager] también crea las miniaturas y extrae metadatos de los archivos de vídeo. Las etiquetas inteligentes se muestran en orden descendente de su [puntuación de confianza](#confidence-score-video-tag) en el recurso [!UICONTROL Propiedades].
 
 ## Etiquetado inteligente de vídeos al cargar {#smart-tag-assets-on-ingestion}
 
-Al [cargar recursos de vídeo](add-assets.md#upload-assets) a [!DNL Adobe Experience Manager] como [!DNL Cloud Service], se procesan los vídeos. Una vez completado el procesamiento, consulte la ficha [!UICONTROL Básico] de la página Propiedades] del recurso. [!UICONTROL  Las etiquetas inteligentes se agregan automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos aprovechan [!DNL Adobe Sensei] para crear estas etiquetas inteligentes.
+Cuando [carga recursos de vídeo](add-assets.md#upload-assets) en [!DNL Adobe Experience Manager] como [!DNL Cloud Service], los vídeos se procesan. Una vez completado el procesamiento, consulte la pestaña [!UICONTROL Basic] de la página [!UICONTROL Properties] del recurso. Las etiquetas inteligentes se añaden automáticamente al vídeo en [!UICONTROL Etiquetas inteligentes]. Los microservicios de recursos aprovechan [!DNL Adobe Sensei] para crear estas etiquetas inteligentes.
 
-![Las etiquetas inteligentes se agregan a los vídeos y se ven en la ficha Básico de las propiedades del recurso](assets/smart-tags-added-to-videos.png)
+![Las etiquetas inteligentes se añaden a los vídeos y se ven en la pestaña Básico de las propiedades de recursos](assets/smart-tags-added-to-videos.png)
 
 Las etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score-video-tag), combinadas para etiquetas de objeto y acción, dentro de [!UICONTROL Etiquetas inteligentes].
 
 >[!IMPORTANT]
 >
->Se recomienda revisar estas etiquetas generadas automáticamente para asegurarse de que se ajustan a su marca y a sus valores.
+>Se recomienda revisar estas etiquetas generadas automáticamente para asegurarse de que se ajustan a la marca y a sus valores.
 
 ## Etiquetado inteligente de vídeos existentes en DAM {#smart-tag-existing-videos}
 
-Los recursos de vídeo existentes en DAM no se etiquetan de forma inteligente automáticamente. Debe [!UICONTROL volver a procesar los recursos] manualmente para generar etiquetas inteligentes para ellos.
+Los recursos de vídeo existentes en DAM no se etiquetan automáticamente como inteligentes. Debe [!UICONTROL Reprocesar los recursos] manualmente para generar etiquetas inteligentes para ellos.
 
-Para etiquetar recursos de vídeo o carpetas (incluidas subcarpetas) de recursos que ya existen en el repositorio de recursos, siga estos pasos:
+Para etiquetar de forma inteligente los recursos de vídeo o las carpetas (incluidas las subcarpetas) de recursos que ya existen en el repositorio de recursos, siga estos pasos:
 
 1. Seleccione el logotipo [!DNL Adobe Experience Manager] y, a continuación, seleccione recursos en la página [!UICONTROL Navegación].
 
-1. Seleccione [!UICONTROL Archivos] para mostrar la interfaz de Recursos.
+1. Seleccione [!UICONTROL Files] para mostrar la interfaz de Assets.
 
-1. Vaya a la carpeta a la que desea aplicar las etiquetas inteligentes.
+1. Vaya a la carpeta a la que desea aplicar etiquetas inteligentes.
 
-1. Seleccione la carpeta completa o los recursos de vídeo específicos.
+1. Seleccione toda la carpeta o recursos de vídeo específicos.
 
-1. Seleccione el icono ![Volver a procesar recursos](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Volver a procesar recursos] y seleccione la opción [!UICONTROL Proceso completo].
+1. Seleccione el icono ![Reprocesar recursos](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocesar recursos] y seleccione la opción [!UICONTROL Procesamiento completo].
 
 <!-- TBD: Limit size -->
 
-![Volver a procesar los recursos para agregar etiquetas a los vídeos del repositorio DAM existente](assets/reprocess.gif)
+![Volver a procesar recursos para agregar etiquetas a los vídeos del repositorio DAM existente](assets/reprocess.gif)
 
-Una vez completado el proceso, navegue a la página [!UICONTROL Propiedades] de cualquier recurso de vídeo de la carpeta. Las etiquetas agregadas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la ficha [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente por [puntuación de confianza](#confidence-score-video-tag).
+Una vez completado el proceso, vaya a la página [!UICONTROL Properties] de cualquier recurso de vídeo de la carpeta. Las etiquetas añadidas automáticamente se ven en la sección [!UICONTROL Etiquetas inteligentes] de la pestaña [!UICONTROL Básico]. Estas etiquetas inteligentes aplicadas se ordenan en orden descendente de [puntuación de confianza](#confidence-score-video-tag).
 
 ## Buscar vídeos etiquetados {#search-smart-tagged-videos}
 
-Para buscar recursos de vídeo basados en etiquetas inteligentes generadas automáticamente, utilice [Omnisearch](search-assets.md#search-assets-in-aem):
+Para buscar los recursos de vídeo en función de las etiquetas inteligentes generadas automáticamente, utilice [Omnisearch](search-assets.md#search-assets-in-aem):
 
-1. Seleccione el icono de búsqueda ![icono de búsqueda](assets/do-not-localize/search_icon.png) para mostrar el campo Omnisearch.
+1. Seleccione el icono de búsqueda ![search icon](assets/do-not-localize/search_icon.png) para mostrar el campo Omnisearch .
 
-1. Especifique una etiqueta, en el campo Omniture Search, que no haya agregado explícitamente a un video.
+1. Especifique una etiqueta, en el campo Omnisearch , que no haya agregado explícitamente a un vídeo.
 
-1. Búsqueda basada en la etiqueta .
+1. Busque en función de la etiqueta .
 
 Los resultados de la búsqueda muestran los recursos de vídeo en función de la etiqueta especificada.
 
-Los resultados de la búsqueda son una combinación de recursos de vídeo con palabras clave buscadas en los metadatos y los recursos de vídeo con etiquetas inteligentes con las palabras clave buscadas. Sin embargo, los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. Para obtener más información, consulte [Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes](smart-tags.md#understandsearch).
+Los resultados de búsqueda son una combinación de recursos de vídeo con palabras clave buscadas en los metadatos y los recursos de vídeo que están etiquetados de forma inteligente con las palabras clave buscadas. Sin embargo, los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. Para obtener más información, consulte [Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes](smart-tags.md#understandsearch).
 
 ## Moderar etiquetas inteligentes de vídeo {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] le permite depurar las etiquetas inteligentes para:
+[!DNL Adobe Experience Manager] permite depurar las etiquetas inteligentes para:
 
 * elimine las etiquetas inexactas asignadas a los vídeos de marca.
 
-* refinar las búsquedas de vídeos basadas en etiquetas asegurándose de que el vídeo aparece en los resultados de búsqueda para las etiquetas más relevantes. Por lo tanto, elimina las posibilidades de que los vídeos no relacionados se muestren en los resultados de búsqueda.
+* refinar las búsquedas de vídeos basadas en etiquetas, asegurándose de que el vídeo aparezca en los resultados de búsqueda para las etiquetas más relevantes. Por lo tanto, elimina las posibilidades de que los vídeos no relacionados se muestren en los resultados de búsqueda.
 
-* asigne una clasificación superior a una etiqueta para aumentar su relevancia con respecto a un vídeo. La promoción de una etiqueta para un vídeo aumenta las posibilidades de que el vídeo aparezca en los resultados de búsqueda cuando se realiza una búsqueda en función de esa etiqueta.
+* asignar una clasificación superior a una etiqueta para aumentar su relevancia con respecto a un vídeo. La promoción de una etiqueta para un vídeo aumenta las posibilidades de que el vídeo aparezca en los resultados de búsqueda cuando se realiza una búsqueda basada en esa etiqueta.
 
-Para obtener más información sobre cómo moderar las etiquetas inteligentes de los recursos, consulte [Administrar etiquetas inteligentes](smart-tags.md#manage-smart-tags-and-searches).
+Para obtener más información sobre cómo moderar las etiquetas inteligentes para los recursos, consulte [Administrar etiquetas inteligentes](smart-tags.md#manage-smart-tags-and-searches).
 
 ![Moderar etiquetas inteligentes de vídeo](assets/manage-video-smart-tags.png)
 
@@ -82,35 +84,35 @@ Para obtener más información sobre cómo moderar las etiquetas inteligentes de
 >
 >Las etiquetas moderadas mediante los pasos de [Administrar etiquetas inteligentes](smart-tags.md#manage-smart-tags-and-searches) no se recuerdan al reprocesar el recurso. El conjunto original de etiquetas se muestra de nuevo.
 
-## Exclusión el etiquetado inteligente de vídeo {#opt-out-video-smart-tagging}
+## Exclusión del etiquetado inteligente de vídeo {#opt-out-video-smart-tagging}
 
-Como el etiquetado automático de vídeos se ejecuta en paralelo a otras tareas de procesamiento de recursos, como la creación de miniaturas y la extracción de metadatos, puede llevar mucho tiempo. Para acelerar el procesamiento de recursos, puede exclusión el etiquetado inteligente de vídeo al cargarlo en el nivel de carpeta.
+Como el etiquetado automático de vídeos se ejecuta en paralelo a otras tareas de procesamiento de recursos, como la creación de miniaturas y la extracción de metadatos, puede requerir mucho tiempo. Para acelerar el procesamiento de recursos, puede desactivar el etiquetado inteligente de vídeo en la carga a nivel de carpeta.
 
-Para exclusión la generación automatizada de etiquetas inteligentes de vídeo para los recursos cargados en una carpeta específica:
+Para desactivar la generación automatizada de etiquetas inteligentes de vídeo para los recursos cargados en una carpeta específica:
 
-1. Abra la ficha [!UICONTROL Procesamiento de recursos] en la carpeta [!UICONTROL Propiedades].
+1. Abra la pestaña [!UICONTROL Asset Processing] en la carpeta [!UICONTROL Properties].
 
-1. En el menú [!UICONTROL Etiquetas inteligentes para vídeos], la opción [!UICONTROL Heredada] está seleccionada de forma predeterminada y la etiqueta inteligente de vídeo está activada.
+1. En el menú [!UICONTROL Etiquetas inteligentes para vídeos], la opción [!UICONTROL Heredada] está seleccionada de forma predeterminada y la etiqueta inteligente de vídeo está habilitada.
 
-   Cuando se selecciona la opción [!UICONTROL Heredada], la ruta de la carpeta heredada también se muestra visible junto con la información de si está configurada en [!UICONTROL Habilitar] o [!UICONTROL Deshabilitar].
+   Cuando se selecciona la opción [!UICONTROL Heredada], la ruta de la carpeta heredada también está visible junto con la información si está configurada como [!UICONTROL Habilitar] o [!UICONTROL Deshabilitar].
 
-   ![Deshabilitar etiquetado inteligente de vídeo](assets/disable-video-tagging.png)
+   ![Desactivación del etiquetado inteligente de vídeo](assets/disable-video-tagging.png)
 
-1. Seleccione [!UICONTROL Deshabilitar] para exclusión el etiquetado inteligente de los vídeos cargados en la carpeta.
+1. Seleccione [!UICONTROL Disable] para desactivar el etiquetado inteligente de los vídeos cargados en la carpeta.
 
 >[!IMPORTANT]
 >
->Si ha exclusión de etiquetar vídeos en una carpeta en el momento de la carga y desea etiquetar los vídeos de forma inteligente después de la carga, **[!UICONTROL Active Etiquetas inteligentes para vídeos]** desde la ficha [!UICONTROL Procesamiento de recursos] de la carpeta [!UICONTROL Propiedades] y utilice la opción [[!UICONTROL Volver a procesar recurso] para agregar etiquetas inteligentes a la vídeo.](#smart-tag-existing-videos)
+>Si ha optado por no etiquetar vídeos en una carpeta en el momento de la carga y desea etiquetar los vídeos de forma inteligente después de la carga, **[!UICONTROL Habilitar etiquetas inteligentes para vídeos]** en la pestaña [!UICONTROL Procesamiento de recursos] de la carpeta [!UICONTROL Propiedades] y utilice la opción [[!UICONTROL Reprocesar recursos]](#smart-tag-existing-videos) para agregar etiquetas inteligentes el vídeo.
 
 ## Puntuación de confianza {#confidence-score-video-tag}
 
-[!DNL Adobe Experience Manager] aplica un umbral de confianza mínimo a las etiquetas inteligentes de objetos y acciones para evitar tener demasiadas etiquetas para cada recurso de vídeo, lo que ralentiza la indexación. Los resultados de la búsqueda de recursos se clasifican según las puntuaciones de confianza, lo que generalmente mejora los resultados de la búsqueda más allá de lo que sugiere una inspección de las etiquetas asignadas a cualquier recurso de vídeo. Las etiquetas imprecisas suelen tener puntuaciones de confianza bajas, por lo que rara vez aparecen en la parte superior de la lista Etiquetas inteligentes para los recursos.
+[!DNL Adobe Experience Manager] aplica un umbral de confianza mínimo para las etiquetas inteligentes de objeto y acción para evitar tener demasiadas etiquetas para cada recurso de vídeo, lo que ralentiza la indexación. Los resultados de la búsqueda de recursos se clasifican según las puntuaciones de confianza, lo que generalmente mejora los resultados de la búsqueda más allá de lo que sugiere una inspección de las etiquetas asignadas a cualquier recurso de vídeo. Las etiquetas inexactas suelen tener puntuaciones de confianza bajas, por lo que rara vez aparecen en la parte superior de la lista de etiquetas inteligentes para los recursos.
 
-El umbral predeterminado para las etiquetas action y object en [!DNL Adobe Experience Manager] es 0,7 (debe ser un valor entre 0 y 1). Si algunos recursos de vídeo no están etiquetados con una etiqueta específica, indica que el algoritmo tiene menos del 70 % de confianza en las etiquetas predichas. Es posible que el umbral predeterminado no siempre sea óptimo para todos los usuarios. Por lo tanto, puede cambiar el valor de puntuación de confianza en la configuración OSGI.
+El umbral predeterminado para las etiquetas de objeto y acción en [!DNL Adobe Experience Manager] es 0,7 (debe ser un valor entre 0 y 1). Si algunos recursos de vídeo no están etiquetados con una etiqueta específica, entonces indica que el algoritmo tiene menos del 70 % de confianza en las etiquetas predichas. Es posible que el umbral predeterminado no sea siempre óptimo para todos los usuarios. Por lo tanto, puede cambiar el valor de puntuación de confianza en la configuración OSGI.
 
 Para agregar la configuración OSGI de puntuación de confianza al proyecto implementado en [!DNL Adobe Experience Manager] como [!DNL Cloud Service] a [!DNL Cloud Manager]:
 
-* En el proyecto [!DNL Adobe Experience Manager] (`ui.config` desde Archetype 24, o anteriormente `ui.apps`) la configuración OSGi de `config.author`, incluya un archivo de configuración denominado `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con el siguiente contenido:
+* En el proyecto [!DNL Adobe Experience Manager] (`ui.config` desde Tipo de archivo 24 o anteriormente `ui.apps`) la configuración `config.author` OSGi, incluya un archivo de configuración denominado `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` con el siguiente contenido:
 
 ```json
 {
@@ -121,20 +123,20 @@ Para agregar la configuración OSGI de puntuación de confianza al proyecto impl
 
 >[!NOTE]
 >
->A las etiquetas manuales se les asigna una confianza del 100 % (máxima confianza). Por lo tanto, si hay recursos de vídeo con etiquetas manuales que coinciden con la consulta de búsqueda, se muestran antes que las etiquetas inteligentes que coinciden con la consulta de búsqueda.
+>A las etiquetas manuales se les asigna una confianza del 100 % (confianza máxima). Por lo tanto, si hay recursos de vídeo con etiquetas manuales que coinciden con la consulta de búsqueda, se muestran antes que las etiquetas inteligentes que coinciden con la consulta de búsqueda.
 
 ## Restricciones     {#video-smart-tagging-limitations}
 
-* No puede entrenar el servicio que aplica etiquetas inteligentes a vídeos con vídeos específicos. Funciona con la configuración predeterminada [!DNL Adobe Sensei].
+* No puede entrenar el servicio que aplica etiquetas inteligentes a vídeos mediante vídeos específicos. Funciona con la configuración predeterminada [!DNL Adobe Sensei].
 
-* No se muestra el progreso del etiquetado.
+* El progreso del etiquetado no se muestra.
 
-* Solo se etiquetan automáticamente los vídeos con un tamaño de archivo inferior a 300 MB. El servicio [!DNL Adobe Sensei] omite los archivos de vídeo de mayor tamaño.
+* Solo se etiquetan automáticamente los vídeos menores de 300 MB en tamaño de archivo. El servicio [!DNL Adobe Sensei] omite los archivos de vídeo de mayor tamaño.
 
-* Solo se etiquetan los vídeos en los formatos de archivo y los códecs admitidos mencionados en [Etiquetas inteligentes](/help/assets/smart-tags.md#smart-tags-supported-file-formats).
+* Solo se etiquetan los vídeos en los formatos de archivo y los códecs compatibles mencionados en [Etiquetas inteligentes](/help/assets/smart-tags.md#smart-tags-supported-file-formats).
 
 >[!MORELIKETHIS]
 >
 >* [Administración de etiquetas inteligentes y búsquedas de recursos](smart-tags.md#manage-smart-tags-and-searches)
->* [Servicio de etiquetas inteligentes de formación y etiquetado de imágenes](smart-tags.md)
+>* [Capacite el servicio de etiquetas inteligentes y etiquete sus imágenes](smart-tags.md)
 
