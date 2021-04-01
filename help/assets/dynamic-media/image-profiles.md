@@ -3,11 +3,12 @@ title: Perfiles de imagen de Dynamic Media
 description: '"Aprenda a crear perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente o muestra inteligente, o ambos. A continuación, aplique el perfil a una carpeta de recursos de imagen."'
 feature: Administración de recursos,Perfiles de imagen,Representaciones
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 9%
+source-wordcount: '2707'
+ht-degree: 10%
 
 ---
 
