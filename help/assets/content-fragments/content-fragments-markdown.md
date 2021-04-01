@@ -1,11 +1,13 @@
 ---
 title: Markdown
 description: Comprender cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
+feature: Fragmentos de contenido
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 4%
+source-wordcount: '524'
+ht-degree: 5%
 
 ---
 
