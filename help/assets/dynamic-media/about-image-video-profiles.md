@@ -2,9 +2,9 @@
 title: Acerca de los perfiles de imagen de Dynamic Media y los perfiles de vídeo
 description: Un perfil de imagen o un perfil de vídeo es una fórmula para las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar la codificación de vídeo que se aplicará a los recursos de vídeo de Dynamic Media que cargue. O bien, qué perfil de imagen aplicar a los recursos de imagen de Dynamic Media para recortarlos correctamente.
 feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
-topic: '"Administrador, profesional empresarial"'
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 2%
