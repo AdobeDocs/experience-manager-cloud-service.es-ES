@@ -3,10 +3,12 @@ title: Administración de metadatos de recursos digitales
 description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Administración de recursos,Metadatos
+role: Profesional empresarial,Arquitecto,Administrador
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
