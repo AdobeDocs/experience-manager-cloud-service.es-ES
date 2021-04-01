@@ -3,10 +3,11 @@ title: Vídeo
 description: Aprenda a trabajar con vídeo en Dynamic Media.
 feature: Perfiles de vídeo
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9514'
 ht-degree: 6%
 
 ---
@@ -404,9 +405,9 @@ Por ejemplo, suponga que el vídeo de origen es de 1920 x 1080. En la tabla sigu
 
 | Tipo de vídeo | Anchura x Altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920x1080 | 1 | 3 |
+| Origen | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 1 |
+| Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
 
 ### Formato de archivo de vídeo codificado {#encoded-video-file-format}
