@@ -2,9 +2,9 @@
 title: 'Conceder acceso a un usuario a una instancia de AEM '
 description: Siga esta página para conocer cómo un administrador del sistema concede acceso a un usuario de una instancia de AEM
 translation-type: tm+mt
-source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ Como administrador del sistema, siga los pasos a continuación para conceder acc
 1. Vaya a Cloud Manager y haga clic en el botón **Administrar acceso** en la tarjeta **Entornos** como se muestra a continuación.
 
    >[!NOTE]
-   >Debe ser administrador del sistema o usuario que haya creado el entorno para poder agregar un usuario al Admin Console. Solo las funciones Propietario empresarial o Administrador de implementación tienen permisos para crear un entorno. Consulte [Funciones de usuario y permisos](/help/onboarding/what-is-required/user-roles-permissions.md) para obtener más información sobre las funciones y los permisos asociados. Además, consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre los entornos.
+   >Debe ser administrador del sistema o usuario que haya creado el entorno para poder agregar un usuario al Admin Console. Solo las funciones Propietario empresarial o Administrador de implementación tienen permisos para crear un entorno. Consulte [Funciones de Cloud Manager](/help/onboarding/what-is-required/user-roles-permissions.md) para obtener más información sobre las funciones y los permisos asociados. Además, consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre los entornos.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
    O bien,
 
-   **Administrar** acceso también disponible en el  **** botón Administrar , si hace clic en  **** Detalles en la tarjeta  **** Entornos .
+   En la página **Entornos**, seleccione **Administrar** —> **Administrar acceso**.
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin4.png)
 
