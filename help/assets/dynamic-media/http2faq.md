@@ -2,10 +2,11 @@
 title: Preguntas frecuentes sobre la entrega de contenido HTTP2
 description: Obtenga información sobre la entrega de contenido HTTP2.
 topic: '"Administrador, profesional empresarial"'
+role: Administrador, profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '792'
 ht-degree: 3%
 
 ---
