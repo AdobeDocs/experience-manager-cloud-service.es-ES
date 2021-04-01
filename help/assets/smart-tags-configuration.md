@@ -2,10 +2,12 @@
 title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
+feature: Etiquetas inteligentes, etiquetado
+role: Administrador
 translation-type: tm+mt
-source-git-commit: a1213a1694a50d174b4ad1e7e4ba7c71944b861a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 83%
 
 ---
@@ -64,7 +66,7 @@ Para utilizar etiquetas inteligentes, cree una integración en Adobe Developer C
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io/) en el explorador. Seleccione la cuenta adecuada y compruebe que la función de organización asociada sea administrador del sistema.
 1. Cree un proyecto con el nombre que desee. Haga clic en **[!UICONTROL Añadir API]**.
-1. En la página **[!UICONTROL Add an API]**, seleccione **[!UICONTROL Experience Cloud]** y, a continuación, **[!UICONTROL Smart Content]**. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En la página **[!UICONTROL Add an API]**, seleccione **[!UICONTROL Experience Cloud]** y, a continuación, seleccione **[!UICONTROL Contenido inteligente]**. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione **[!UICONTROL Cargar la clave pública]**. Proporcione el archivo de certificado descargado de [!DNL Experience Manager]. Se muestra un mensaje con las [!UICONTROL claves públicas cargadas correctamente]. Haga clic en **[!UICONTROL Siguiente]**. 
 1. [!UICONTROL La página de ] credenciales Crear una nueva cuenta de servicio (JWT) muestra la clave pública de la cuenta de servicio. Haga clic en **[!UICONTROL Siguiente]**. 
 1. En la página **[!UICONTROL Seleccionar perfiles de producto]**, seleccione **[!UICONTROL Servicios de contenido inteligente]**. Haga clic en **[!UICONTROL Guardar API configurada]**. La página muestra más información sobre la configuración. Mantenga esta página abierta para copiar y añadir estos valores en [!DNL Experience Manager] al configurar las etiquetas inteligentes en [!DNL Experience Manager].
