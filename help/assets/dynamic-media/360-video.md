@@ -3,10 +3,11 @@ title: Vídeo 360/VR
 description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dynamic Media.
 feature: Vídeo de RV 360
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
