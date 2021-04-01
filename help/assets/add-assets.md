@@ -1,10 +1,12 @@
 ---
 title: Agregue los recursos digitales a [!DNL Adobe Experience Manager].
 description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
+feature: Administración de recursos,Cargar
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2023'
 ht-degree: 1%
 
 ---
