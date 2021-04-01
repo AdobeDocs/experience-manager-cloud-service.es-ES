@@ -3,10 +3,11 @@ title: Administración de ajustes preestablecidos de imagen
 description: '"Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos."'
 feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3648'
 ht-degree: 10%
 
 ---
