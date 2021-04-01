@@ -3,10 +3,11 @@ title: Banner de carrusel
 description: Aprenda a trabajar con los titulares de carrusel en Dynamic Media.
 feature: Banner de carrusel
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4567'
 ht-degree: 3%
 
 ---
