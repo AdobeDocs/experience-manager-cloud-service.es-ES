@@ -2,15 +2,15 @@
 title: Roles y permisos de usuario
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 10%
+source-wordcount: '568'
+ht-degree: 8%
 
 ---
 
 
-# Roles y permisos de usuario {#user-roles-permissions}
+# Funciones de Cloud Manager {#user-roles-permissions}
 
 ## Roles del usuario {#user-roles}
 
@@ -44,13 +44,25 @@ Además de lo anterior, Cloud Manager creará automáticamente un perfil de prod
 
 ## Roles y permisos de usuario {#permissions}
 
-[!UICONTROL Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. ] Por ejemplo, un desarrollador desarrolla código y tiene permiso para insertar el código en el **Repositorio de Git**. Alternativamente, un propietario de una empresa tiene diferentes permisos que les permiten agregar y editar programas, agregar entornos y aprobar implementaciones.
+[!UICONTROL Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. ] Por ejemplo, un desarrollador desarrolla código y tiene permiso para insertar el código en el repositorio de Git. Alternativamente, un propietario de una empresa tiene diferentes permisos que les permiten agregar y editar programas, agregar entornos y aprobar implementaciones.
 
-Cada una de las funciones tiene permisos específicos asociados a cada función. En la tabla siguiente se resumen las funciones, se enumeran las funciones disponibles y las funciones que pueden ejecutar la función.
+Cada una de las funciones tiene permisos específicos asociados a ella. Por ejemplo, si tiene la función de:
+
+* ***Propietario empresarial***, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, añadir, editar o eliminar la canalización y ejecutar cualquier canalización, e implementar código en AEM entorno o calidad de código.
+
+* ***Administrador de implementación***, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en AEM entorno o calidad del código.
+
+* ***Desarrollador***, tiene permiso para generar un token de acceso personal para acceder a Git.
+
+   >[!NOTE]
+   > Se puede asignar a un usuario varias funciones. Por ejemplo, si asigna las funciones Propietario empresarial y Administrador de implementación a un usuario, se le proporcionará la combinación o suma de estos permisos.
+
+
+La siguiente tabla resume las funciones junto con sus permisos asociados dentro de Cloud Manager.
 
 | Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programa | Desarrollador |
 |--- |--- |--- |--- |--- |--- |
-| Agregar programa | Agregar un nuevo programa. | x |  |  |  |
+| Agregar programa<br>Editar programa | Agregar un nuevo programa.<br>Editar un programa: Agregar o quitar soluciones o complementos | x |  |  |  |
 | Crear entorno | Crear Prod+Stage, Dev, Entornos. | x | x |  |  |
 | Entorno de actualización | Actualice Prod+Stage, Dev, Entornos. | x | x |  |  |
 | Eliminar entorno | Elimine Entornos Que No Sean De Prod, Dev Y . | x | x |  |  |
@@ -62,3 +74,4 @@ Cada una de las funciones tiene permisos específicos asociados a cada función.
 | Eliminación de canalización | Permite eliminar una canalización. |  | x |  |  |
 | Cancelación de ejecución | Cancelar ejecución actual. |  | x |  |  |
 | Generar token de acceso personal | Acceda a Git. |  | x |  | x |
+
