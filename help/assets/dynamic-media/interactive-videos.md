@@ -3,10 +3,11 @@ title: Vídeos interactivos
 description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dynamic Media.
 feature: Vídeos interactivos
 topic: Profesional empresarial
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6068'
 ht-degree: 4%
 
 ---
@@ -468,7 +469,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
       En la línea de tiempo, pulse un segmento que desee dividir por la mitad y, a continuación, pulse **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividir un segmento de diez segundos seleccionado en dos segmentos de cinco segundos cada uno.
 
