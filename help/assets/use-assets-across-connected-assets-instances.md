@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Administración de recursos,Recursos conectados,Distribución de recursos
 role: Administrador,Profesional empresarial,Arquitecto
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
+source-wordcount: '2902'
 ht-degree: 27%
 
 ---
@@ -120,9 +120,9 @@ Puede configurar una conexión entre la implementación [!DNL Sites] y la implem
 
 Para configurar esta conexión, siga estos pasos.
 
-1. Cree la configuración de los recursos conectados como se ha descrito anteriormente. Seleccione la casilla de verificación **[!UICONTROL Buscar representación original para [!DNL Dynamic Media] Recursos conectados]** en el cuadro de diálogo.
+1. Cree la configuración de los recursos conectados como se ha descrito anteriormente. Al configurar la funcionalidad, seleccione la opción **[!UICONTROL Buscar representación original para Dynamic Media Connected Assets]**.
 
-1. Configure [!DNL Dynamic Media] en implementaciones locales [!DNL Sites] y remotas [!DNL Assets]. Siga las instrucciones para [configurar [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services).
+1. Configure [!DNL Dynamic Media] en implementaciones locales [!DNL Sites] y remotas [!DNL Assets]. Siga las instrucciones para [configurar [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Utilice el mismo nombre de empresa en todas las configuraciones.
    * En [!DNL Sites] local, en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La implementación de Sites solo necesita acceso de solo lectura a la cuenta [!DNL Dynamic Media] .
