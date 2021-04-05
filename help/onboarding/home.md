@@ -1,16 +1,21 @@
 ---
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
+exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 translation-type: tm+mt
-source-git-commit: 6ce8b5c53de45d6466c5a835eea27a5acfff0a40
+source-git-commit: 486e60c0287d6693de028b8b5457814e36b32185
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 40%
+source-wordcount: '982'
+ht-degree: 38%
 
 ---
 
-
 # Integración de Experience Manager as a Cloud Service {#aem-onboarding-guide}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_onboarding_overview"
+>title="Información general sobre la incorporación"
+>abstract="Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service. Necesitará la ayuda de su Adobe ID y del administrador del sistema para que los usuarios se agreguen a Cloud Manager con las funciones asignadas y los permisos asociados."
 
 ¡Felicidades por comenzar su recorrido con AEM como Cloud Service! Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service.
 
