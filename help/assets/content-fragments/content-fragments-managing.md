@@ -3,20 +3,30 @@ title: Administrar fragmentos de contenido
 description: Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
 feature: Fragmentos de contenido
 role: Profesional empresarial
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1748'
 ht-degree: 9%
 
 ---
-
 
 # Administrar fragmentos de contenido {#managing-content-fragments}
 
 Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
 
-Los fragmentos de contenido se almacenan como **Assets**, por lo que se administran principalmente desde la consola **Assets**.
+Después de definir los [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlos para [crear sus fragmentos de contenido](#creating-a-content-fragment).
+
+El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona varios [modos](#modes-in-the-content-fragment-editor) que le permiten:
+
+* [Edite el ](#editing-the-content-of-your-fragment) contenido y  [administre Variaciones](#creating-and-managing-variations-within-your-fragment)
+* [Anotar el fragmento](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Asociar contenido al fragmento](#associating-content-with-your-fragment)
+* [Configuración de los metadatos](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Ver el árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Vista previa de la representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ Los fragmentos de contenido se almacenan como **Assets**, por lo que se administ
 >* al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
 >* para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
+
+>[!NOTE]
+>
+>Los fragmentos de contenido se almacenan como **Assets**, por lo que se administran principalmente desde la consola **Assets**.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -135,11 +149,15 @@ Para abrir el fragmento para editarlo:
 
    ![editor de fragmentos](assets/cfm-managing-03.png)
 
-1. Después de realizar los cambios, utilice **Guardar y cerrar** o **Cancelar** según sea necesario.
+1. Después de realizar los cambios, utilice **Guardar**, **Guardar y cerrar** o **Cerrar** según sea necesario.
 
    >[!NOTE]
    >
-   >Tanto **Guardar y cerrar** como **Cancelar** abandonarán el editor; consulte [Guardar, Cancelar y Versiones](#save-cancel-and-versions) para obtener información completa sobre cómo funcionan ambas opciones para los fragmentos de contenido.
+   >**Guardar y cerrar está** disponible a través de  **** Savedropdown.
+
+   >[!NOTE]
+   >
+   >Tanto **Guardar y cerrar** como **Cerrar** abandonarán el editor; consulte [Guardar, cerrar y versiones](#save-close-and-versions) para obtener información completa sobre cómo funcionan las distintas opciones para los fragmentos de contenido.
 
 ## Modos y acciones en el editor de fragmentos de contenido {#modes-actions-content-fragment-editor}
 
@@ -181,21 +199,29 @@ Algunas funciones de la barra de herramientas superior están disponibles en var
    * **Modificado**: naranja
    * **Desactivado**: rojo
 
+* **** Saveproporciona acceso a la opción  **Guardar y** cerrar.
+
 * Los tres puntos (**...**) proporciona acceso a acciones adicionales:
+   * **Actualizar referencias de página**
+      * Esto actualiza cualquier referencia de página.
    * **[Publicación rápida](#publishing-and-referencing-a-fragment)**
    * **[Administrar publicación](#publishing-and-referencing-a-fragment)**
 
-## Guardar, cancelar y versiones {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## Guardar, cerrar y versiones {#save-close-and-versions}
 
 >[!NOTE]
 >
 >Las versiones también se pueden [crear, comparar y revertir desde la línea de tiempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-El editor tiene dos opciones:
+El editor tiene varias opciones:
 
-* **Guardar**
+* **** Guardar y  **cerrar**
 
-   Guardará los cambios más recientes y cerrará el editor.
+   * **** Guardar guardará los cambios más recientes y permanecerá en el editor.
+   * **Guardar y** cerrar guardarán los cambios más recientes y saldrán del editor.
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ El editor tiene dos opciones:
 
    >[!NOTE]
    >
-   >Es posible permanecer en el editor haciendo una serie de cambios antes de seleccionar **Guardar**.
+   >Es posible permanecer en el editor, realizando una serie de cambios, antes de guardar.
 
    >[!CAUTION]
    >
-   >Además de guardar los cambios simplemente, **Save** también actualiza las referencias y garantiza que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
+   >Además de guardar los cambios, las acciones actualizan también las referencias y garantizan que Dispatcher se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
    >
-   >
-   >Tenga esto en cuenta al utilizar **Guardar** y luego volver a introducir rápidamente el editor de fragmentos para realizar y guardar más cambios.
+   >Tenga esto en cuenta al utilizar **Guardar y cerrar** y luego volver a introducir rápidamente el editor de fragmentos para realizar y guardar más cambios.
 
-* **Cancelar**
+* **Cerrar**
 
-   Saldrá del editor sin guardar los cambios más recientes.
+   Saldrá del editor sin guardar los cambios más recientes (es decir, realizados desde la última **Guardar**).
 
-Al editar el fragmento de contenido AEM crea automáticamente versiones para garantizar que el contenido anterior se pueda restaurar si **Cancelar** los cambios:
+Al editar el fragmento de contenido AEM crea automáticamente versiones para garantizar que el contenido anterior se pueda restaurar si cancela los cambios (mediante **Cerrar** sin guardar):
 
 1. Cuando se abre un fragmento de contenido para editarlo AEM comprueba la existencia del token basado en cookies que indica si existe una *sesión de edición*:
 
@@ -232,7 +257,7 @@ Al editar el fragmento de contenido AEM crea automáticamente versiones para gar
    >Valor predeterminado, consulte:
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Si el usuario selecciona **Cancelar** la edición, la versión creada al principio de la sesión de edición se restaura y se elimina el token para finalizar la sesión de edición.
+3. Si el usuario cancela la edición, se restaura la versión creada al principio de la sesión de edición y se elimina el token para finalizar la sesión de edición.
 4. Si el usuario selecciona **Guardar** las ediciones, los elementos/variaciones actualizados se mantienen y el token se elimina para finalizar la sesión de edición.
 
 ## Edición del contenido del fragmento {#editing-the-content-of-your-fragment}
@@ -296,7 +321,7 @@ Se abrirá:
 
 * la versión seleccionada **v&lt;*x.y*** (derecha)
 
-Se mostrarán en paralelo, donde:
+Se mostrarán una al lado de la otra, donde:
 
 * Se resaltan todas las diferencias
 
