@@ -1,45 +1,45 @@
 ---
 title: Tareas de mantenimiento en AEM como Cloud Service
-description: 'Tareas de mantenimiento en AEM como Cloud Service '
+description: Tareas de mantenimiento en AEM como Cloud Service
+exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
 
-
 # Tareas de mantenimiento en AEM como Cloud Service
 
-Las Tareas de mantenimiento son procesos que se ejecutan según una programación para optimizar el repositorio. Con AEM como Cloud Service, la necesidad de que los clientes configuren las propiedades operativas de las tareas de mantenimiento es mínima. Los clientes pueden concentrar sus recursos en los problemas de las aplicaciones, dejando las operaciones de infraestructura en Adobes.
+Las tareas de mantenimiento son procesos que se ejecutan según una programación para optimizar el repositorio. Con AEM como Cloud Service, la necesidad de que los clientes configuren las propiedades operativas de las tareas de mantenimiento es mínima. Los clientes pueden concentrar sus recursos en preocupaciones a nivel de aplicación, dejando las operaciones de infraestructura en Adobe.
 
-Para obtener información adicional sobre tareas de mantenimiento, consulte las páginas siguientes:
+Para obtener información adicional sobre las tareas de mantenimiento, consulte las páginas siguientes:
 
 * [Guía de mantenimiento de AEM](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [Tareas de mantenimiento de Panel de operaciones](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+* [Tareas de mantenimiento del panel de operaciones](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
 
 ## Configuración de tareas de mantenimiento
 
-En versiones anteriores de AEM, se podían configurar tareas de mantenimiento mediante la tarjeta de mantenimiento (Herramientas > Operaciones > Mantenimiento). Para AEM como Cloud Service, la tarjeta de mantenimiento ya no está disponible, por lo que las configuraciones deben comprometerse con el control de código fuente e implementarse mediante el Administrador de nube. Adobe administrará tareas de mantenimiento que no requieren decisiones de cliente (por ejemplo, Recopilación de elementos no utilizados del almacén de datos) mientras que el cliente puede configurar otras tareas de mantenimiento (consulte la tabla siguiente).
+En versiones anteriores de AEM, se podían configurar tareas de mantenimiento mediante la tarjeta de mantenimiento (Herramientas > Operaciones > Mantenimiento). Para AEM como Cloud Service, la tarjeta de mantenimiento ya no está disponible, por lo que las configuraciones deben comprometerse con el control de código fuente e implementarse mediante Cloud Manager. Adobe gestionará las tareas de mantenimiento que no requieran decisiones de cliente (por ejemplo, la colección de residuos del almacén de datos), mientras que el cliente puede configurar otras tareas de mantenimiento (consulte la tabla siguiente).
 
 >[!CAUTION]
 >
->Adobe se reserva el derecho de anular la configuración de la tarea de mantenimiento de un cliente para mitigar problemas como la degradación del rendimiento.
+>Adobe se reserva el derecho de anular los ajustes de configuración de tareas de mantenimiento de un cliente para mitigar problemas como la degradación del rendimiento.
 
-La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento de la publicación de AEM como Cloud Service.
+La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento del lanzamiento de AEM como Cloud Service.
 
-| Tarea de mantenimiento | Quién es el propietario de la configuración | Cómo configurar (opcional) |
+| Tarea de mantenimiento | Quién es el propietario de la configuración | Configuración (opcional) |
 |---|---|---|
-| Recopilación de elementos no utilizados del almacén de datos | Adobe | N/D: propiedad total del Adobe |
+| Colección de residuos del almacén de datos | Adobe | N/D: propiedad total del Adobe |
 | Depuración de la versión | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros. |
-| Depuración del registro de auditoría | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros. |
-| Limpieza de archivos binarios de Lucene | Adobe | No utilizado y, por lo tanto, desactivado por Adobe. |
-| Depuración de Tareas ad-hoc | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar  `/libs` creando propiedades en la carpeta  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando otro nodo debajo del nodo anterior (asígnele el nombre  `granite_TaskPurgeTask`) con las propiedades correspondientes. <br> Configure las propiedades de OSGI consulte la documentación de Tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Depuración de flujo de trabajo | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar  `/libs` creando propiedades en la `/apps/settings/granite/operations/maintenance/granite_weekly` carpeta  `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando otro nodo debajo del nodo anterior (asígnele el nombre  `granite_WorkflowPurgeTask`) con las propiedades correspondientes. <br> Configure las propiedades de OSGI consulte la documentación de Tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| Depuración del proyecto | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento lista para usar  `/libs` creando propiedades en la carpeta  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Consulte la tabla Ventana de mantenimiento siguiente para obtener más detalles de configuración. <br> Habilite la tarea de mantenimiento agregando un nodo debajo del nodo anterior (asígnele el nombre  `granite_ProjectPurgeTask`) con las propiedades correspondientes. <br> Configuración de propiedades OSGI consulte  [AEM documentación de Tarea de mantenimiento de 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Purga de registro de auditoría | Adobe | Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros. |
+| Limpieza de archivos binarios de Lucene | Adobe | No se utiliza y, por lo tanto, se desactiva mediante el Adobe. |
+| Depuración de tarea ad hoc | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento predeterminado en  `/libs` creando propiedades en la carpeta  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. <br> Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo anterior (asígnele el nombre  `granite_TaskPurgeTask`) con las propiedades adecuadas. <br> Configure las propiedades de OSGI consulte la documentación de la tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Depuración de flujo de trabajo | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento integrado en  `/libs` creando propiedades en la `/apps/settings/granite/operations/maintenance/granite_weekly` carpeta  `granite_daily`. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. <br> Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo anterior (asígnele el nombre  `granite_WorkflowPurgeTask`) con las propiedades adecuadas. <br> Configure las propiedades de OSGI consulte la documentación de la tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| Depuración del proyecto | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento predeterminado en  `/libs` creando propiedades en la carpeta  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. <br> Habilite la tarea de mantenimiento añadiendo un nodo bajo el nodo anterior (asígnele el nombre  `granite_ProjectPurgeTask`) con las propiedades adecuadas. <br> Configurar las propiedades de OSGI consulte la documentación de la tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Los clientes pueden programar cada una de las tareas de mantenimiento Depuración de flujo de trabajo, Depuración de Tareas ad hoc y Depuración de proyectos para que se ejecuten durante las ventanas de mantenimiento diario, semanal o mensual. Estas configuraciones deben editarse directamente en el control de código fuente. En la tabla siguiente se describen los parámetros de configuración disponibles para cada ventana.
+Los clientes pueden programar cada una de las tareas de Purga de flujo de trabajo, Depuración de tareas ad hoc y Mantenimiento de purga de proyectos para que se ejecuten durante las ventanas de mantenimiento diario, semanal o mensual. Estas configuraciones deben editarse directamente en el control de código fuente. La tabla siguiente describe los parámetros de configuración disponibles para cada una de las ventanas.
 
 <table>
   <tr>
@@ -54,13 +54,13 @@ Los clientes pueden programar cada una de las tareas de mantenimiento Depuració
     <td>Cada día</td>
     <td>Cliente</td>
     <td>Definición de nodo JCR</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>Consulte el ejemplo de código 1 a continuación</td>
+    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
+    <td>Consulte el ejemplo de código 1 panel</td>
    <td>
     <ul>
-    <li><strong>windowSchedule</strong> = diario (este valor no debe cambiarse)</li>
-    <li><strong>windowStartTime</strong> = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las Tareas de mantenimiento asociadas con la ventana de mantenimiento diario.</li>
-    <li><strong>windowEndTime</strong> = HH:MM usando como reloj de 24 horas. Define cuándo las Tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.</li>
+    <li><strong>windowSchedule</strong> = daily (este valor no debe cambiarse)</li>
+    <li><strong>windowStartTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.</li>
+    <li><strong>windowEndTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.</li>
     </ul> </td> 
   </tr>
   <tr>
@@ -68,13 +68,13 @@ Los clientes pueden programar cada una de las tareas de mantenimiento Depuració
     <td>Cliente</td>
     <td>Definición de nodo JCR</td>
     <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
-    <td>Véase el ejemplo de código 2 a continuación</td>
+    <td>Consulte el ejemplo de código 2 a continuación</td>
      <td>
     <ul>
     <li><strong>windowSchedule</strong> = semanal (este valor no debe cambiarse)</li>
-    <li><strong>windowStartTime</strong> = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las Tareas de mantenimiento asociadas con la ventana de mantenimiento semanal.</li>
-    <li><strong>windowEndTime</strong> = HH:MM usando como reloj de 24 horas. Define cuándo las Tareas de mantenimiento asociadas con la ventana de mantenimiento semanal deben dejar de ejecutarse si aún no se han completado.</li>
-    <li><strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7. p. ej. [5,5].</strong> El primer valor de la matriz es el día de inicio en el que se programa el trabajo y el segundo valor es el día final en el que se detendrá el trabajo. La hora exacta del inicio y del final se rige por windowStartTime y windowEndTime respectivamente.</li>
+    <li><strong>windowStartTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal.</li>
+    <li><strong>windowEndTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal deben dejar de ejecutarse si aún no se han completado.</li>
+    <li><strong>windowScheduleWeekdays = Matriz de 2 valores entre 1 y 7. p. ej. [5,5].</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y del final se rige por windowStartTime y windowEndTime respectivamente.</li>
     </ul> </td> 
   </tr>
   <tr>
@@ -82,19 +82,19 @@ Los clientes pueden programar cada una de las tareas de mantenimiento Depuració
     <td>Cliente</td>
     <td>Definición de nodo JCR</td>
     <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
-    <td>Véase el ejemplo de código 3 a continuación</td>
+    <td>Consulte la muestra de código 3 a continuación</td>
      <td>
     <ul>
-    <li><strong>windowSchedule</strong> = diario (este valor no debe cambiarse)</li>
-    <li><strong>windowStartTime</strong> = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las Tareas de mantenimiento asociadas con la ventana de mantenimiento mensual.</li>
-    <li><strong>windowEndTime</strong> = HH:MM usando como reloj de 24 horas. Define cuándo las Tareas de mantenimiento asociadas con la ventana de mantenimiento mensual deben dejar de ejecutarse si aún no se han completado.</li>
-    <li><strong>windowScheduleWeekdays = Matriz de 2 valores de 1 a 7. p. ej. [5,5].</strong> El primer valor de la matriz es el día de inicio en el que se programa el trabajo y el segundo valor es el día final en el que se detendrá el trabajo. La hora exacta del inicio y del final se rige por windowStartTime y windowEndTime respectivamente.</li>
-    <li><strong>windowFirstLastStartDay - 0/1</strong> 0 para programar la primera semana del mes o 1 para programar la última semana del mes. La ausencia de un valor programaría los trabajos de forma efectiva todos los días, según lo regido por windowScheduleWeekdays cada mes.</li>
+    <li><strong>windowSchedule</strong> = daily (este valor no debe cambiarse)</li>
+    <li><strong>windowStartTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual.</li>
+    <li><strong>windowEndTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento mensual deben dejar de ejecutarse si aún no se han completado.</li>
+    <li><strong>windowScheduleWeekdays = Matriz de 2 valores entre 1 y 7. p. ej. [5,5].</strong> El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y del final se rige por windowStartTime y windowEndTime respectivamente.</li>
+    <li><strong>windowFirstLastStartDay - 0/1</strong> 0 para programar la primera semana del mes o 1 para la última semana del mes. La ausencia de un valor programaría los trabajos todos los días según windowScheduleWeekdays cada mes.</li>
     </ul> </td> 
   </tr>
 </table>
 
-Muestra de código 1
+Ejemplo de código 1
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,7 +109,7 @@ Muestra de código 1
  />
 ```
 
-Muestra de código 2
+Ejemplo de código 2
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -124,7 +124,7 @@ Muestra de código 2
    windowStartTime="14:30"/>
 ```
 
-Muestra de código 3
+Ejemplo de código 3
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
