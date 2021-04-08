@@ -1,14 +1,14 @@
 ---
 title: 'Edición de un programa de producción '
-description: 'Edición de un programa de producción '
+description: Edición de un programa de producción
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # Edición de un programa de producción {#create-production-program}
 
@@ -25,12 +25,10 @@ Siga los pasos a continuación para editar un programa de producción:
 
 1. Vaya a la página **Editar programa** desde la página *Información general* de Cloud Manager
 
-1. La página **Editar programa** mostrará dos fichas (General y Soluciones) tanto para los programas de producción como para los de entornos limitados.
+1. La página **Editar programa** mostrará tres opciones (**Sitios**, **Comercio** y **Recursos**) tanto para los programas de producción como para los de entornos limitados.
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >Aunque se mostrarán tanto Sitios como Recursos, uno de ellos puede deshabilitarse según lo que se haya comprado y no se use. Específicamente, si la organización no tiene derechos no utilizados para una solución en particular, se mostrará esa solución, pero se deshabilitará.
 
 ## Consideraciones al editar un programa {#considerations-editing}
 
