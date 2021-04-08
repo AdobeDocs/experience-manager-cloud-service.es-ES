@@ -3,25 +3,25 @@ title: Incrustación del visualizador de imágenes o vídeos de Dynamic Media en
 description: Aprenda a incrustar recursos de imagen o vídeo de Dynamic Media en una página web.
 feature: Administración de activos
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '376'
 ht-degree: 22%
 
 ---
-
 
 # Incrustación del vídeo de Dynamic Media, el visor de imágenes o el visor dimensional en una página web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilice la función **[!UICONTROL Código incrustado]** cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código incrustado]**.
 
-Las direcciones URL incrustadas solo se pueden incrustar si está _no_ usando AEM como WCM. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página.](adding-dynamic-media-assets-to-pages.md)
+Las direcciones URL incrustadas solo se pueden incrustar si está _no_ usando AEM como WCM. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página](adding-dynamic-media-assets-to-pages.md).
 
-Consulte [Vinculación de URL a la aplicación web.](linking-urls-to-yourwebapplication.md)
+Consulte [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
-Consulte [Entrega de imágenes optimizadas para un sitio interactivo.](responsive-site.md)
+Consulte [Entrega de imágenes optimizadas para un sitio interactivo](responsive-site.md).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Consulte [Entrega de imágenes optimizadas para un sitio interactivo.](responsiv
 
    Recuerde que el código incrustado solo está disponible para copiar *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de visualizador o de imagen.
 
-   Consulte [Publicación de recursos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
    Consulte [Ajustes preestablecidos del visualizador de publicaciones](managing-viewer-presets.md#publishing-viewer-presets).
 
