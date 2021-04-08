@@ -6,9 +6,9 @@ topic: Profesional empresarial
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1924'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Mejoras en la última versión de imágenes inteligentes:
 
 * Se ha mejorado la clasificación SEO de Google para páginas web que utilizan las últimas imágenes inteligentes.
 * Proporciona contenido optimizado inmediatamente (durante la ejecución).
-* Utiliza la tecnología de Adobe Sensei para realizar la conversión según la calidad (qlt) especificada en la solicitud de imagen.
-* Las imágenes inteligentes se pueden desactivar utilizando el parámetro de URL &quot;bfc&quot;.
+* Utiliza la tecnología Adobe Sensei para convertir según la calidad (`qlt`) especificada en la solicitud de imagen.
+* Las imágenes inteligentes se pueden desactivar utilizando el parámetro de URL `bfc`.
 * TTL (Tiempo de vida) independiente. Anteriormente, para que funcionara la imagen inteligente era obligatorio un TTL mínimo de 12 horas.
 * Anteriormente, las imágenes originales y las imágenes derivadas se almacenaban en caché y era un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de caché de un solo paso.
-* Clientes que utilizan encabezados personalizados en su conjunto de reglas. Por ejemplo, &quot;Origen de permiso de temporización&quot;, &quot;Robot X&quot; como se sugiere en [Añadir un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) se benefician de las últimas imágenes inteligentes. Estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes.
+* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de las últimas imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Origen de permiso de temporización&quot;, &quot;Robot X&quot;, tal como se sugiere en [Adición de un valor de encabezado personalizado a las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
