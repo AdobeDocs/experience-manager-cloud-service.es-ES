@@ -3,9 +3,9 @@ title: 'Edición de un programa de producción '
 description: Edición de un programa de producción
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,20 @@ Siga los pasos a continuación para editar un programa de producción:
 
 1. Vaya a la página **Editar programa** desde la página *Información general* de Cloud Manager
 
-1. La página **Editar programa** mostrará tres opciones (**Sitios**, **Comercio** y **Recursos**) tanto para los programas de producción como para los de entornos limitados.
+1. La página **Editar programa** mostrará tres opciones (**Sitios** y **Recursos**) tanto para los programas de producción como para los de espacio aislado. Además, puede seleccionar la opción de complemento **Comercio**, que está disponible en **Sitios**, como se muestra en la figura siguiente.
 
    ![](assets/edit-prg.png)
+
+   >[!NOTE]
+   >Se debe seleccionar al menos una solución para un programa, es decir, el usuario no podrá anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
+
+1. Haga clic en **Guardar** para completar el proceso de edición del programa.
 
 
 ## Consideraciones al editar un programa {#considerations-editing}
 
 Al editar un programa, deben revisarse algunas consideraciones:
 
-* Se debe seleccionar al menos una solución para un programa que, por lo tanto, no se permitirá que el usuario anule la selección de todas las soluciones durante el flujo de trabajo Editar programa .
+* Se debe seleccionar al menos una solución para un programa que, es decir, el usuario no podrá anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
 
 * Al hacer clic en el botón **Save**, si las soluciones seleccionadas han cambiado, las actualizaciones de la solución para los entornos surtirán efecto tras la siguiente implementación.
