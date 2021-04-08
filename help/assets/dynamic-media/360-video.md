@@ -3,15 +3,15 @@ title: Vídeo 360/VR
 description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dynamic Media.
 feature: Vídeo de RV 360
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
-
 
 # Vídeo 360/VR {#vr-video}
 
@@ -102,7 +102,7 @@ Cuando esté satisfecho con el vídeo 360, puede publicarlo.
 
 Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
-Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Para previsualizar los vídeos 360**
 
@@ -138,4 +138,4 @@ Para usar el vídeo 360, debe publicarlo. Al publicar un vídeo de 360 se activa
 Consulte [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeos de 360.
 Consulte también [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
 Consulte también [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
-Consulte también [Adición de recursos de Dynamic Media a las páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte también [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
