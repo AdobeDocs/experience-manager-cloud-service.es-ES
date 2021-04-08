@@ -4,15 +4,15 @@ description: '"Sugerencias y prácticas recomendadas para nombrar, organizar y a
 contentOwner: Rick Brough
 feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
 topic: Profesional empresarial
-role: Administrador, profesional empresarial
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles de imagen o perfiles de vídeo{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ A continuación se indican las prácticas recomendadas para organizar los archiv
 
 * Organice los archivos en función de los metadatos que les agregue en lugar de hacerlo en las carpetas en las que residan. Puede realizar esta práctica añadiendo perfiles de metadatos.
 
-   * Consulte [Perfiles de metadatos.](/help/assets/metadata-profiles.md)
+   * Consulte [Perfiles de metadatos](/help/assets/metadata-profiles.md).
    * Consulte [Metadatos para Digital Asset Management](/help/assets/manage-metadata.md).
 
 * Normalmente, su colección de recursos digitales siempre está creciendo. Por lo tanto, es importante (anteriormente) formalizar el uso de los metadatos, la estructura de carpetas y la asignación de nombres a los archivos entre todos los recursos cargados. La estandarización en estos elementos garantiza que, a medida que crezca su grupo de recursos digitales, puede aplicar perfiles de procesamiento a las carpetas con buena precisión y coherencia.
@@ -44,4 +44,3 @@ A continuación se indican las prácticas recomendadas para organizar los archiv
 
 * Cree un directorio de carpetas que no es probable que cambien para que no se rompan los perfiles asignados.
 * Supongamos que un recurso ya está publicado y, a continuación, utiliza Adobe Experience Manager para mover el recurso a otra carpeta y volver a publicarlo desde su nueva ubicación. La ubicación del recurso publicado originalmente aún está disponible, junto con el recurso recién republicado. Sin embargo, el recurso publicado original se &quot;pierde&quot; para el Experience Manager y no se puede cancelar su publicación. Por lo tanto, se recomienda cancelar la publicación de los recursos primero antes de moverlos a una carpeta diferente.
-
