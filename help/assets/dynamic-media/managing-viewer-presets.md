@@ -3,15 +3,15 @@ title: Administración de ajustes preestablecidos de visor
 description: Aprenda a crear y administrar ajustes preestablecidos de visor en Dynamic Media.
 feature: Ajustes preestablecidos de visualizador, visualizadores
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4245'
 ht-degree: 13%
 
 ---
-
 
 # Administrar ajustes preestablecidos de visor{#managing-viewer-presets}
 
@@ -59,7 +59,7 @@ Consulte [Biblioteca de imágenes estáticas interactivas](https://experiencelea
 >[!NOTE]
 >
 >Publique todos los visores integrados antes de utilizarlos para los primeros.
->Consulte [Ajustes preestablecidos del visualizador de publicaciones.](#publishing-viewer-presets)
+>Consulte [Ajustes preestablecidos del visualizador de publicaciones](#publishing-viewer-presets).
 
 ### Compatibilidad del sistema con ajustes preestablecidos de visor {#viewer-preset-system-compatibility}
 
