@@ -3,9 +3,9 @@ title: 'Edición de un programa de espacio aislado '
 description: Edición de un programa de espacio aislado
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
+source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,17 @@ Los usuarios con los permisos necesarios ahora pueden editar un programa de prod
 
 Siga los pasos a continuación para editar un programa de espacio aislado:
 
-1. Vaya a la página **Editar programa** desde la página *Información general* de Cloud Manager.
+1. Haga clic en la opción **Editar programa** de la página *Información general* de Cloud Manager
 
-1. La página **Editar programa** mostrará tres opciones (**Sitios** y **Recursos**) tanto para los programas de producción como para los de espacio aislado. Además, puede seleccionar la opción de complemento **Comercio**, que está disponible en **Sitios**, como se muestra en la figura siguiente.
+   ![](assets/edit-program-overview.png)
+
+1. La página **Editar Programa** muestra dos fichas **General** y **Soluciones y complementos**.
+
+   Vaya a la pestaña **General** para editar la descripción del programa.
+
+   ![](assets/edit-program-general.png)
+
+   La pestaña **Solutions &amp; Add-ons** muestra dos opciones, como **Sites** y **Assets** para los programas de producción y Sandbox. Además, puede seleccionar la opción de complemento **Comercio**, que está disponible en **Sitios**, como se muestra en la figura siguiente.
 
    ![](assets/edit-prg.png)
 
