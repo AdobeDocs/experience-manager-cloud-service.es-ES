@@ -1,64 +1,53 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.3.0
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.4.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.4.0
 feature: Información de la versión
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '327'
 ht-degree: 2%
 
 ---
 
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.4.0 {#release-notes}
 
-# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.3.0 {#release-notes}
-
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.3.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.4.0.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.3.0 es el 11 de marzo de 2021.
-La próxima versión está planificada para el 08 de abril de 2021.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.4.0 es el 8 de abril de 2021.
+La próxima versión está planificada para el 06 de mayo de 2021.
 
-## Cloud Manager {#cloud-manager}
+### Novedades {#what-is-new-april}
 
-### Novedades {#what-is-new}
+* Actualizaciones de la interfaz de usuario de los flujos de trabajo Añadir y editar programa para que sea más intuitivo.
 
-* Los clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verán un mensaje sobre las configuraciones existentes anteriormente y podrán autoabastecerse mediante la interfaz de usuario.
+* Un usuario con los permisos necesarios ahora puede enviar el punto final del comercio a través de la interfaz de usuario.
 
-* Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente de forma autoservicio:
-   * Agregar la solución Sitios a un programa existente con Assets o viceversa.
-   * Elimine Sitios o Recursos de un programa existente con Sitios y Recursos.
-   * Agregue el derecho a una solución no utilizada a un programa existente o como un nuevo programa.
+* Ahora, las variables de entorno se pueden vincular a un servicio específico, ya sea de autor o publicación. Requiere AEM versión `2021.03.5104.20210328T185548Z` o superior.
 
-* **AEM** actualización push ahora se mostrará para las pantallas Ejecución de canalización y Actividad .
+* El botón **Administrar Git** se muestra en la tarjeta Canalizaciones aunque no se hayan configurado canalizaciones.
 
-* Si un entorno está en hibernación pero también hay una actualización AEM disponible, el estado **Hibernated** tendrá prioridad sobre **Update available**.
+* La versión del arquetipo de proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 27.
 
-* Los usuarios ahora pueden ver sus funciones de Cloud Manager seleccionando la opción &quot;Ver funciones de Cloud Manager&quot; después de navegar al icono de perfil de usuario (parte superior derecha) del shell unificado.
+* Los proyectos de la consola de desarrollador de Adobe I/O creados por Cloud Manager ya no se pueden editar ni eliminar de forma involuntaria.
 
-* La etiqueta **Application for Approval** se ha vuelto a etiquetar como **Production Approval** para una buena claridad.
+* Cuando un usuario agrega un nuevo entorno, se les informará de que una vez que se haya creado un entorno, no se puede mover a otra región.
 
-* La etiqueta **Version** se ha vuelto a etiquetar como **Git Tag** en la pantalla de ejecución de la canalización de producción.
+* Ahora, las variables de entorno se pueden vincular a un servicio específico, ya sea de autor o publicación. Requiere AEM versión 2021.03.5104.20210328T185548Z o superior.
 
-* Las etiquetas que definen el comportamiento cuando métricas importantes no alcanzan el umbral definido se han vuelto a etiquetar para reflejar su verdadero comportamiento: **Cancelar inmediatamente** y **Aprobar inmediatamente**.
+* Se ha aclarado el mensaje de error al iniciar una canalización cuando se eliminaba un entorno.
 
-* Las listas de deprecación de clases y métodos se han actualizado en función de la versión `2021.3.4997.20210303T022849Z-210225` del SDK del Cloud Service de AEM.
+* Los paquetes OSGi proporcionados por los proyectos de Eclipse ahora se excluyen de la regla `CQBP-84--dependencies`.
 
-* La canalización de producción de Cloud Manager ahora incluirá la capacidad [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).
+### Corrección de errores {#bug-fixes-cm-april}
 
-### Corrección de errores {#bug-fixes}
+* Al editar la página Auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no dará como resultado que el paso se bloquee en estado pendiente.
 
-* En algunos casos, las versiones de paquetes se omitían durante AEM actualización push.
+* Cuando se crea una nueva canalización de producción, si el usuario no agrega ninguna anulación de auditoría de contenido, la página principal predeterminada no se auditó.
 
-* Algunos problemas de calidad no se descubrieron correctamente cuando los paquetes estaban incrustados en otros paquetes.
+* Los problemas para `CloudServiceIncompatibleWorkflowProcess` tenían la gravedad incorrecta en el archivo CSV del problema descargable.
 
-* En situaciones oscuras, el nombre predeterminado del programa generado al abrir el cuadro de diálogo Agregar programa podría ser un duplicado de un nombre de programa existente.
-
-* En ocasiones, si el usuario sale de la página de ejecución de la canalización inmediatamente después de iniciar una canalización, aparece un mensaje de error que indica que la acción ha fallado, aunque la ejecución realmente se inicia.
-
-* El paso de compilación se reinició innecesariamente cuando las compilaciones de clientes generaron paquetes no válidos.
-
-* En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
-
-* Todas las canalizaciones de producción existentes se habilitarán automáticamente con el paso Auditoría de experiencias .
+* La comprobación `Runmode` estaba produciendo falsos positivos en nodos que no son de carpeta.
