@@ -3,15 +3,15 @@ title: Banner de carrusel
 description: Aprenda a trabajar con los titulares de carrusel en Dynamic Media.
 feature: Banner de carrusel
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 3%
 
 ---
-
 
 # Banner de carrusel{#carousel-banners}
 
@@ -74,11 +74,11 @@ Para ponerle en marcha rápidamente:
 
    Para crear un conjunto de carrusel en Assets, pulse **[!UICONTROL Crear]** y, a continuación, seleccione **[!UICONTROL Conjuntos de carrusel]**. Agregue recursos a las diapositivas y pulse **[!UICONTROL Guardar]**. También puede editar el aspecto y el comportamiento del carrusel directamente en el editor.
 
-1. [Agregue zonas interactivas o mapas de imágenes a un banner de imagen.](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [Agregue zonas interactivas o mapas de imágenes a un banner](#adding-hotspots-or-image-maps-to-an-image-banner) de imagen.
 
    Agregue una o más zonas interactivas o mapas de imágenes a un banner de imagen. A continuación, asocie cada uno de ellos a una acción, como un vínculo, una vista rápida o un fragmento de experiencia. Después de agregar zonas interactivas o mapas de imágenes, para finalizar esta tarea, publique el conjunto de carrusel. La publicación crea el código incrustado que puede utilizar para copiar y aplicar a la página de aterrizaje del sitio web.
 
-   Consulte [(Opcional) Vista previa de banners de carrusel.](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
+   Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-carousel-banners) - Opcional. Si lo desea, puede ver una representación del conjunto de carrusel y probar su interactividad.
 
 1. [Publicar letreros de carrusel](#publishing-carousel-banners).
 
@@ -92,7 +92,7 @@ Para ponerle en marcha rápidamente:
    * [Agregue un banner de carrusel a su sitio web en Experience Manager](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md). Si es cliente de Sitios Experience Manager, puede agregar el conjunto de carrusel directamente a la página mediante el componente Medios interactivos.
 
 
-Si debe editar Conjuntos de carrusel, consulte [edición de Conjuntos de carrusel.](#editing-carousel-sets) Además, puede ver y editar las  [propiedades](/help/assets/manage-digital-assets.md#editing-properties) del conjunto de carrusel.
+Si debe editar Conjuntos de carrusel, consulte [edición de Conjuntos de carrusel](#editing-carousel-sets). Además, puede ver y editar [Propiedades del conjunto de carrusel](/help/assets/manage-digital-assets.md#editing-properties).
 
 ## Identificación de variables de zona interactiva y mapa de imagen {#identifying-hotspot-and-image-map-variables}
 
@@ -252,7 +252,7 @@ Cuando agregue zonas interactivas o mapas de imágenes a una imagen, recuerde gu
 
 Cuando termine de crear el banner de carrusel, puede usar la opción Vista previa para ver una representación de cómo el banner de carrusel aparece para los clientes.
 
-Consulte [(Opcional) Vista previa de banners de carrusel.](#optional-previewing-carousel-banners)
+Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
@@ -370,7 +370,7 @@ Puede utilizar Vista previa para ver el aspecto que tendrá el banner de carruse
 Cuando esté satisfecho con el banner de carrusel, puede publicarlo.
 Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
 Consulte [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
-Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Puede obtener una vista previa de los banners de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visualizadores]**.
 
@@ -407,7 +407,7 @@ Consulte [Publicación de Dynamic Media Assets](/help/assets/dynamic-media/publi
 Después de cargar imágenes de banner para crear un carrusel, agregar zonas interactivas, mapas de imágenes o ambos, al banner. Se ha publicado el conjunto de carrusel. Ya está listo para agregarlo a la página de sitio web existente.
 
 >[!NOTE]
-Si es cliente de AEM Sites, puede agregar el banner de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+Si es cliente de AEM Sites, puede agregar el banner de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Adición de recursos de Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Sin embargo, si es cliente de Recursos Experience Manager independientes, puede añadir manualmente el banner de carrusel a la página de aterrizaje del sitio web.
 
