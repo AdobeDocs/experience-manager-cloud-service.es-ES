@@ -3,7 +3,7 @@ title: 'Edición de un programa de producción '
 description: Edición de un programa de producción
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Siga los pasos a continuación para editar un programa de producción:
    ![](assets/edit-prg.png)
 
    >[!NOTE]
-   >Se debe seleccionar al menos una solución para un programa, es decir, el usuario no podrá anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
+   >Se debe seleccionar al menos una solución para un programa, es decir, el usuario no puede anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
 
 1. Haga clic en **Guardar** para completar el proceso de edición del programa.
 
