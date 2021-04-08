@@ -3,7 +3,7 @@ title: 'Edición de un programa de espacio aislado '
 description: Edición de un programa de espacio aislado
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
+source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,13 +40,13 @@ Siga los pasos a continuación para editar un programa de espacio aislado:
    >[!NOTE]
    >Se debe seleccionar al menos una solución para un programa, es decir, el usuario no puede anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
 
-1. Haga clic en **Guardar** para completar el proceso de edición del programa.
+1. Haga clic en **Save** para completar el flujo de trabajo del programa de edición.
 
 
 ## Consideraciones al editar un programa {#considerations-editing}
 
 Al editar un programa, deben revisarse algunas consideraciones:
 
-* Se debe seleccionar al menos una solución para un programa que, es decir, el usuario no puede anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
+* Se debe seleccionar al menos una solución para un programa, es decir, el usuario no puede anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
 
 * Al hacer clic en el botón **Save**, si las soluciones seleccionadas han cambiado, las actualizaciones de la solución para los entornos surtirán efecto tras la siguiente implementación.
