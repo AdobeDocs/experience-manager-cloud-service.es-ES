@@ -6,7 +6,7 @@ topic: Profesional empresarial
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 2%
@@ -137,7 +137,7 @@ El primer dominio personalizado no tiene coste adicional con una licencia de Dyn
 
 Se inicia la solicitud para utilizar imágenes inteligentes; no se activa automáticamente.
 
-1. [Utilice el Admin Console para crear un caso de asistencia.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia.
 1. Proporcione la siguiente información en su caso de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
