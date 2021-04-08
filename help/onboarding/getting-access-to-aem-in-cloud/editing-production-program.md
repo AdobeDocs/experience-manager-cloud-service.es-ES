@@ -3,9 +3,9 @@ title: 'Edición de un programa de producción '
 description: Edición de un programa de producción
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
+source-git-commit: 87d4e7d17b6a035a1127b8f8599214bfd763644a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,6 @@ Siga los pasos a continuación para editar un programa de producción:
 
 Al editar un programa, deben revisarse algunas consideraciones:
 
-* Se debe seleccionar al menos una solución para un programa que, es decir, el usuario no podrá anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
+* Se debe seleccionar al menos una solución para un programa que, es decir, el usuario no puede anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
 
 * Al hacer clic en el botón **Save**, si las soluciones seleccionadas han cambiado, las actualizaciones de la solución para los entornos surtirán efecto tras la siguiente implementación.
