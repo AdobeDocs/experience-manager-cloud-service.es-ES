@@ -3,15 +3,15 @@ title: Perfiles de vídeo de Dynamic Media
 description: Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede agregar un recorte inteligente a los vídeos.
 feature: Administración de recursos,Perfiles de vídeo,Representaciones
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 10%
 
 ---
-
 
 # Perfiles de vídeo de Dynamic Media{#video-profiles}
 
@@ -37,7 +37,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 >
 >Los metadatos son útiles cuando se buscan recursos. Las miniaturas son imágenes de vídeo estáticas que se generan durante la codificación. El sistema de Experience Manager los necesita y los utiliza en la interfaz de usuario para ayudarle a identificar visualmente los vídeos en la vista Tarjetas, la vista Resultados de la búsqueda y la vista Lista de recursos. Puede ver las miniaturas generadas al pulsar el icono Representaciones (paleta de un pintor) de un vídeo codificado.
 
-Cuando haya terminado de crear el perfil de vídeo, debe aplicarlo a una o varias carpetas. Consulte [Aplicación de un perfil de vídeo a carpetas.](#applying-a-video-profile-to-folders)
+Cuando haya terminado de crear el perfil de vídeo, debe aplicarlo a una o varias carpetas. Consulte [Aplicación de un perfil de vídeo a las carpetas](#applying-a-video-profile-to-folders).
 
 Para definir parámetros de procesamiento avanzados para otros tipos de recursos, consulte [Configuración del procesamiento de recursos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -429,4 +429,3 @@ Puede quitar un perfil de vídeo de una carpeta desde el menú **[!UICONTROL Her
 1. Toque o haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de vídeo.
 1. En la carpeta, pulse o haga clic en la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]** y seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
-
