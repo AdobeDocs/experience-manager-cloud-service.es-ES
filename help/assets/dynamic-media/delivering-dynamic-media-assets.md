@@ -3,15 +3,15 @@ title: Envío de recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
 feature: Administración de activos
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 7%
 
 ---
-
 
 # Envío de recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Con Dynamic Media, tiene varias opciones:
 
    * Incrustar el vídeo o la imagen en el sitio web.
    * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee enviar un reproductor de vídeo como ventana emergente o modal.
-   * Si el sitio es interactivo, puede [entregar imágenes optimizadas.](/help/assets/dynamic-media/responsive-site.md)
+   * Si su sitio es interactivo, puede [entregar imágenes optimizadas](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
