@@ -3,15 +3,15 @@ title: Entrega de imágenes optimizadas para un sitio interactivo
 description: Aprenda a utilizar la función de código interactivo para ofrecer imágenes optimizadas de Dynamic Media.
 feature: Administración de activos
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 14%
+source-wordcount: '326'
+ht-degree: 13%
 
 ---
-
 
 # Distribución de imágenes adaptables para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
 
@@ -19,9 +19,9 @@ Utilice la función de código interactivo cuando desee compartir el código par
 
 Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en AEM, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
 
-Consulte también [Incrustación del visualizador de vídeo en una página web.](embed-code.md)
+Consulte también [Incrustación del visualizador de vídeo en una página web](embed-code.md).
 
-Consulte también [Vinculación de URL a la aplicación web.](linking-urls-to-yourwebapplication.md)
+Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
 **Para ofrecer imágenes optimizadas para un sitio interactivo**:
 
