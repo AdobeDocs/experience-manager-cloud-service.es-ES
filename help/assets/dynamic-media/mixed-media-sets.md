@@ -3,15 +3,15 @@ title: Conjuntos de medios mixtos
 description: Aprenda a trabajar con conjuntos de medios mixtos en Dynamic Media.
 feature: Conjuntos de medios mixtos
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1469'
 ht-degree: 25%
 
 ---
-
 
 # Conjuntos de medios mixtos{#mixed-media-sets}
 
@@ -33,11 +33,11 @@ Para poner en marcha rápidamente los conjuntos de medios mixtos, siga estos pas
 
    Comience por cargar las imágenes y los vídeos de los conjuntos de medios mixtos. Si es necesario, cree los [conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md) y los [conjuntos de giros](/help/assets/dynamic-media/spin-sets.md). Dado que los usuarios pueden aplicar zoom a las imágenes en el visualizador de conjuntos de medios mixtos, asegúrese de tener en cuenta el zoom al elegir las imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande.
 
-1. [Crear conjuntos de medios mixtos.](#creating-mixed-media-sets)
+1. [Crear conjuntos de medios mixtos](#creating-mixed-media-sets).
 
    Para crear un conjunto de medios mixtos, en la página Assets, pulse **[!UICONTROL Crear > Conjunto de medios mixtos]** y, a continuación, asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
-   Consulte [Uso de selectores.](/help/assets/dynamic-media/working-with-selectors.md)
+   Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Configure los [ajustes preestablecidos del visualizador de medios mixtos](/help/assets/dynamic-media/managing-viewer-presets.md) según sea necesario.
 
@@ -45,13 +45,13 @@ Para poner en marcha rápidamente los conjuntos de medios mixtos, siga estos pas
 
    Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visualizador]**.
 
-   Consulte [Adición y edición de ajustes preestablecidos de visualizador.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Consulte [Adición y edición de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-1. [Vista previa de conjuntos de medios mixtos.](#previewing-mixed-media-sets)
+1. [Vista previa de conjuntos de medios mixtos](#previewing-mixed-media-sets).
 
    Seleccione el conjunto de medios mixtos y podrá previsualizarlo. Para examinar el conjunto de medios mixtos en el visualizador seleccionado, haga clic en los iconos de miniaturas. Puede elegir diferentes visores desde el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Publicar Conjuntos De Medios Mixtos.](#publishing-mixed-media-sets)
+1. [Publicar conjuntos de medios mixtos](#publishing-mixed-media-sets).
 
    Al publicar un conjunto de medios mixtos, se activa la dirección URL y la cadena de incrustación. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -174,4 +174,3 @@ Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynami
 >[!NOTE]
 >
 >Si el conjunto de medios mixtos no termina completamente en el servicio de envío la primera vez que lo publica, publique el conjunto de medios mixtos una segunda vez.
-
