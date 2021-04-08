@@ -3,15 +3,15 @@ title: Conjuntos de imágenes
 description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media.
 feature: Conjuntos de imágenes
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2051'
 ht-degree: 9%
 
 ---
-
 
 # Conjuntos de imágenes {#image-sets}
 
@@ -43,11 +43,11 @@ Para ponerle en marcha rápidamente:
    >
    >IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos.
 
-1. [Cargue las imágenes de origen principales para varias vistas.](#uploading-assets-in-image-sets)
+1. [Cargue las imágenes de origen principales para varias vistas](#uploading-assets-in-image-sets).
 
    Cargue las imágenes para sus conjuntos de imágenes. Recuerde que los usuarios pueden hacer zoom en las imágenes en el visor de conjuntos de imágenes. Como tal, elija sus imágenes con cuidado. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Recursos de Experience Manager admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
-1. [Crear conjuntos de imágenes.](#creating-image-sets)
+1. [Crear conjuntos de imágenes](#creating-image-sets).
 
    En los conjuntos de imágenes, los usuarios hacen clic en las imágenes en miniatura en el visor de conjuntos de imágenes.
 
@@ -55,7 +55,7 @@ Para ponerle en marcha rápidamente:
 
    Consulte [Preparación de recursos de conjuntos de imágenes para cargar y cargar los archivos](#uploading-assets-in-image-sets).
 
-   Consulte [Uso de selectores.](/help/assets/dynamic-media/working-with-selectors.md)
+   Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Agregue [Ajustes preestablecidos del visualizador de conjuntos de imágenes](/help/assets/dynamic-media/managing-viewer-presets.md) según sea necesario.
 
@@ -64,11 +64,11 @@ Para ponerle en marcha rápidamente:
    Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visualizador]**.
 
 1. (Opcional) [Visualización de conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md#viewing-image-sets) que se crearon mediante ajustes preestablecidos de conjuntos de lotes.
-1. [Vista previa de conjuntos de imágenes.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Vista previa de conjuntos de imágenes](/help/assets/dynamic-media/previewing-assets.md).
 
    Seleccione el conjunto de imágenes y podrá previsualizarlo. Para examinar el conjunto de imágenes en el visualizador seleccionado, pulse los iconos de miniaturas. Puede elegir diferentes visores desde el menú **[!UICONTROL Visualizadores]**, disponible en la lista desplegable del carril izquierdo.
 
-1. [Publicar conjuntos de imágenes.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de imágenes](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Al publicar un conjunto de imágenes, se activa la dirección URL y la cadena de incrustación. Además, debe [publicar cualquier ajuste preestablecido de visualizador personalizado](/help/assets/dynamic-media/managing-viewer-presets.md) que haya creado. Ya se han publicado los ajustes preestablecidos del visor integrado.
 
@@ -80,7 +80,7 @@ Para ponerle en marcha rápidamente:
 
    Consulte [Vinculación de un conjunto de imágenes a una página web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
 
-Para editar los conjuntos de imágenes, consulte [edición de conjuntos de imágenes.](#editing-image-sets) Además, puede ver y editar las  [propiedades](/help/assets/manage-digital-assets.md#editing-properties) del conjunto de imágenes.
+Para editar los conjuntos de imágenes, consulte [edición de conjuntos de imágenes](#editing-image-sets). Además, puede ver y editar [Propiedades del conjunto de imágenes](/help/assets/manage-digital-assets.md#editing-properties).
 
 Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Solución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets).
 
@@ -147,7 +147,7 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filter]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
-   Consulte [Uso de selectores.](/help/assets/dynamic-media/working-with-selectors.md)
+   Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
