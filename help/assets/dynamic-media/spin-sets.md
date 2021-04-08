@@ -3,15 +3,15 @@ title: Conjuntos de giros
 description: Aprenda a trabajar con conjuntos de giros en Dynamic Media.
 feature: Conjuntos de giros
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 12%
 
 ---
-
 
 # Conjuntos de giros{#spin-sets}
 
@@ -39,11 +39,11 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
    >
    >IPS (Image Production System) crea los conjuntos de lotes como parte de la ingesta de recursos.
 
-1. [Cargue las imágenes para varias vistas.](#uploading-assets-for-spin-sets)
+1. [Cargue las imágenes para varias vistas](#uploading-assets-for-spin-sets).
 
    Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30° (360/12) para cada toma.
 
-1. [Crear conjuntos de giros.](#creating-spin-sets)
+1. [Crear conjuntos de giros](#creating-spin-sets).
 
    Para crear un conjunto de giros, seleccione **[!UICONTROL Crear > Conjunto de giros]** y asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
@@ -55,15 +55,15 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visualizador]**.
 
-   Consulte [Adición y edición de ajustes preestablecidos de visualizador.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   Consulte [Adición y edición de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    Puede ver y acceder a los conjuntos creados mediante ajustes preestablecidos de conjuntos de lotes de tres formas diferentes. (Los conjuntos creados con ajustes preestablecidos de conjuntos de lotes no *no* aparecen en la interfaz de usuario).
 
-1. [Vista previa de conjuntos de giros.](/help/assets/dynamic-media/previewing-assets.md)
+1. [Vista previa de conjuntos de giros](/help/assets/dynamic-media/previewing-assets.md).
 
    Seleccione el conjunto de giros y podrá previsualizarlo. Rotar el conjunto de giros. Puede elegir diferentes visores desde el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Publicar conjuntos de giros.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de giros](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Al publicar un conjunto de giros, se activa la dirección URL y la cadena Incrustar. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -138,7 +138,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 
    Si es necesario, arrastre el icono Reordenar de un recurso a la derecha del nombre del archivo del recurso para reordenar las imágenes hacia arriba o hacia abajo en la lista de conjunto.
 
-   ![Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación.](assets/6_5_spinset-reorderassets.png)
+   ![Reorganización del fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación](assets/6_5_spinset-reorderassets.png)
 
    Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación.
 
