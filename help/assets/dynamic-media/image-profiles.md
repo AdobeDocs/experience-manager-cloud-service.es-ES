@@ -3,15 +3,15 @@ title: Perfiles de imagen de Dynamic Media
 description: '"Aprenda a crear perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente o muestra inteligente, o ambos. A continuación, aplique el perfil a una carpeta de recursos de imagen."'
 feature: Administración de recursos,Perfiles de imagen,Representaciones
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2705'
 ht-degree: 10%
 
 ---
-
 
 # Perfiles de imagen de Dynamic Media {#image-profiles}
 
@@ -96,7 +96,7 @@ En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtra
  </tbody>
 </table>
 
-El enfoque se describe en [Imágenes de enfoque.](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+El enfoque se describe en [Imágenes de enfoque](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Creación de perfiles de imagen de Dynamic Media {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ Si es necesario, puede volver a ejecutar el recorte inteligente para volver a ge
       * Si la imagen tiene un recorte inteligente o solo una muestra inteligente, arrastre en la imagen el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible del recorte.
       * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre en la imagen el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible del recorte. O bien, toque la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte. Ajuste el tamaño del área visible de la muestra.
 
-      ![Cambiar el tamaño del recorte inteligente de una imagen.](assets/edit_smart_crops-resize.png)
+      ![Cambiar el tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png).
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
