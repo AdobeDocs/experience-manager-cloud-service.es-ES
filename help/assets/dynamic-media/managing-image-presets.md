@@ -3,15 +3,15 @@ title: Administración de ajustes preestablecidos de imagen
 description: '"Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos."'
 feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
 topic: Profesional empresarial
-role: Profesional empresarial
+role: Business Practitioner
+exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3646'
 ht-degree: 10%
 
 ---
-
 
 # Administrar ajustes preestablecidos de imagen{#managing-image-presets}
 
@@ -49,7 +49,7 @@ Para administrar los ajustes preestablecidos de imagen en el Experience Manager,
 >
 >*no* necesita publicar ajustes preestablecidos de imagen, ya que los ajustes preestablecidos de imagen se publican automáticamente.
 >
->Consulte [Publicar ajustes preestablecidos de imagen.](#publishing-image-presets)
+>Consulte [Publicar ajustes preestablecidos de imagen](#publishing-image-presets).
 
 >[!NOTE]
 >
