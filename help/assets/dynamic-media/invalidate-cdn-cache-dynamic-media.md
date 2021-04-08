@@ -3,15 +3,15 @@ title: Invalidación de la caché de CDN mediante Dynamic Media
 description: '"Aprenda a invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido) para permitirle actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché".'
 feature: Administración de activos
 topic: Profesional empresarial
-role: Administrador, profesional empresarial
+role: Administrator,Business Practitioner
+exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1303'
 ht-degree: 1%
 
 ---
-
 
 # Invalidación de la caché de CDN mediante Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
@@ -27,7 +27,7 @@ Consulte también [Información general del almacenamiento en caché en Dynamic 
 
 *Parte 1 de 2: Creación de una plantilla de invalidación de CDN*
 
-1. En AEM como Cloud Service, pulse **[!UICONTROL Herramientas > Assets > Plantilla de invalidación de CDN.]**
+1. En AEM como Cloud Service, pulse **[!UICONTROL Herramientas > Assets > Plantilla de invalidación de CDN]**.
 
    ![Función de validación de CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -40,12 +40,12 @@ Consulte también [Información general del almacenamiento en caché en Dynamic 
 
    ![Plantilla de invalidación de CDN: Crear](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. En la esquina superior derecha de la página **[!UICONTROL Plantilla de invalidación de CDN]**, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Aceptar.]**<br>
+1. En la esquina superior derecha de la página **[!UICONTROL Plantilla de invalidación de CDN]**, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Aceptar]**.<br>
 
    *Parte 2 de 2: Configuración de las opciones de invalidación de CDN*
    <br>
 
-1. En AEM como Cloud Service, pulse **[!UICONTROL Herramientas > Assets > Invalidación de CDN.]**
+1. En AEM como Cloud Service, pulse **[!UICONTROL Herramientas > Assets > Invalidación de CDN]**.
 
    ![Función de validación de CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
@@ -65,7 +65,7 @@ Consulte también [Información general del almacenamiento en caché en Dynamic 
    | **[!UICONTROL Añadir recursos]** | Utilice el Selector de recursos para seleccionar los recursos que desea invalidar. Puede seleccionar recursos publicados o no publicados.<br>El almacenamiento en caché en la CDN se basa en URL, no en recursos. Por lo tanto, es necesario que conozca las direcciones URL completas que se encuentran en el sitio web. Después de determinar esas direcciones URL, puede agregarlas a la plantilla. A continuación, puede seleccionar y añadir esos recursos e invalidar las direcciones URL en un solo paso. <br>Utilice esta opción con  **[!UICONTROL Invalidar ajustes preestablecidos de imagen asociados al recurso en CDN]**, o  **[!UICONTROL Invalidación basada en plantilla]**, o ambas opciones. |
    | **[!UICONTROL Añadir URL]** | Agregue o pegue manualmente rutas de URL completas a los recursos de Dynamic Media cuya caché de CDN desee invalidar. Utilice esta opción si no ha creado una plantilla de invalidación de CDN en ***Parte 1 de 2: Creación de una plantilla de invalidación de CDN*** y solo hay algunos recursos que invalidar.<br>**Importante:** Cada URL que agregue debe estar en su propia línea.<br>Puede invalidar hasta 1000 direcciones URL a la vez. Si el número de direcciones URL en el campo de texto **[!UICONTROL Agregar URL]** es bueno a 1000, no puede tocar **[!UICONTROL Siguiente]**. En estos casos, debe pulsar **[!UICONTROL X]** a la derecha de un recurso seleccionado o una URL añadida manualmente para eliminarlo de la lista de invalidación.<br>Especifique las direcciones URL para los cultivos inteligentes de imagen en la plantilla Invalidación de CDN o en este campo  **[!UICONTROL Añadir]** URLtext . |
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Siguiente.]**
+1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Siguiente]**.
 1. En la página **[!UICONTROL Invalidación de CDN]** - **[!UICONTROL Confirmar]**, en el cuadro de lista **[!UICONTROL URL]**, verá una lista de una o más direcciones URL generadas a partir de la plantilla de invalidación de CDN creada anteriormente y los recursos que acaba de añadir.
 
    Por ejemplo, si utiliza el ejemplo de Plantilla de invalidación de CDN que se mostró en los pasos anteriores, supongamos que ha añadido un único recurso denominado `spinset`. Al pulsar **[!UICONTROL Herramientas > Assets > Invalidación de CDN]**, se generan las siguientes cinco direcciones URL en la interfaz de usuario **[!UICONTROL Invalidación de CDN - Confirmar]**:
@@ -85,7 +85,7 @@ En todos los casos, se procesa todo el lote para su invalidación o se produce u
 | *No se pudieron recuperar las direcciones URL de los recursos seleccionados.* | Se produce si se cumple cualquiera de los siguientes escenarios:<br>- No se encuentra una configuración de Dynamic Media.<br>: Hay una excepción al recuperar un usuario de servicio a través del cual se lee la configuración de Dynamic Media.<br>- Falta el servidor de publicación o la raíz de empresa que se usa para formar las URL en la configuración de Dynamic Media. |
 | *Algunas direcciones URL no están definidas correctamente. Corregir y volver a enviar.* | Se produce si la API de invalidación de caché de la CDN de IPS devuelve un error. El error indica que la dirección URL hace referencia a una empresa diferente o que la dirección URL no es válida según la validación realizada por la API de IPS cdnCacheInvalidation. |
 | *No se pudo invalidar la caché de la CDN.* | Se produce si la solicitud de invalidación de caché de CDN falla por cualquier otro motivo. |
-| *No se ha introducido ninguna dirección URL para invalidar.* | Se produce si no hay direcciones URL presentes en la página **[!UICONTROL Invalidación de CDN]** - **[!UICONTROL Confirmar]** y toca **[!UICONTROL Enviar.]** |
+| *No se ha introducido ninguna dirección URL para invalidar.* | Se produce si no hay direcciones URL presentes en la página **[!UICONTROL Invalidación de CDN]** - **[!UICONTROL Confirmar]** y toca **[!UICONTROL Enviar]**. |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
