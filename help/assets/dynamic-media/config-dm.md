@@ -2,15 +2,15 @@
 title: Configuración de Dynamic Media Cloud Service
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 topic: Administrador
-role: Administrador, profesional empresarial
+role: Administrator,Business Practitioner
+exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
-
 
 # Acerca de la configuración del Cloud Service de Dynamic Media {#configuring-dynamic-media}
 
@@ -80,7 +80,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    Si es necesario, puede revisar la ortografía de una contraseña que ha escrito o reescrito pulsando el icono de la vista de contraseña para mostrar la contraseña. Toque de nuevo el icono para ocultar la contraseña.
 
-1. En el campo **[!UICONTROL Repetir contraseña]**, vuelva a escribir la nueva contraseña y, a continuación, pulse **[!UICONTROL Listo.]**
+1. En el campo **[!UICONTROL Repetir contraseña]**, vuelva a escribir la nueva contraseña y, a continuación, pulse **[!UICONTROL Listo]**.
 
    La nueva contraseña se guarda al pulsar **[!UICONTROL Guardar]** en la esquina superior derecha de la página **[!UICONTROL Crear configuración de Dynamic Media]**.
 
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de su empresa. |
    | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**: Cuando se cargan los recursos, el sistema los incorpora y proporciona la URL o la Incrustar al instante. No es necesario que el usuario intervenga para publicar recursos.<br>**[!UICONTROL Tras la activación]**: Debe publicar el recurso explícitamente primero antes de proporcionar un vínculo de URL/incrustación.<br>**[!UICONTROL Publicación ]**selectiva: Los recursos se publican automáticamente solo para vista previa segura. También pueden publicarse explícitamente en Experience Manager como Cloud Service sin publicarse en DMS7 para su envío en el dominio público. En el futuro, esta opción pretende publicar recursos en Experience Manager como Cloud Service y publicar recursos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en Experience Manager como Cloud Service para la vista previa; esos mismos recursos no se publican en DMS7 para su envío en el dominio público. |
    | Servidor de previsualización segura | Permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager como Cloud Service puede acceder y previsualizar de forma segura las representaciones de Dynamic Media remotas (no se envían binarios al Experience Manager como instancia de Cloud Service).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe recomienda que deje esta configuración como se ha especificado. |
-   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir selectivamente recursos de la sincronización con Dynamic Media. Al anular la selección de esta opción, puede elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**: La configuración se aplica a todas las carpetas de forma predeterminada, a menos que marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]**: La configuración no se aplica a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, pulse  **[!UICONTROL Propiedades]**. En la pestaña **[!UICONTROL Details]**, en la lista desplegable **[!UICONTROL Dynamic Media sync mode]**, elija una de las tres opciones siguientes. Cuando haya terminado, pulse **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si ha seleccionado **Sincronizar todo el**contenido anteriormente.* Consulte también  [Uso de la publicación selectiva en el nivel de carpeta en Dynamic Media.](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL Heredado ]**: No hay ningún valor de sincronización explícito en la carpeta. En su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]**: Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: Excluya todo lo que hay en este subárbol de la sincronización con Dynamic Media. |
+   | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir selectivamente recursos de la sincronización con Dynamic Media. Al anular la selección de esta opción, puede elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**: La configuración se aplica a todas las carpetas de forma predeterminada, a menos que marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]**: La configuración no se aplica a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, pulse  **[!UICONTROL Propiedades]**. En la pestaña **[!UICONTROL Details]**, en la lista desplegable **[!UICONTROL Dynamic Media sync mode]**, elija una de las tres opciones siguientes. Cuando haya terminado, pulse **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si ha seleccionado **Sincronizar todo el**contenido anteriormente.* Consulte también  [Uso de la publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Heredado ]**: No hay ningún valor de sincronización explícito en la carpeta. En su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]**: Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: Excluya todo lo que hay en este subárbol de la sincronización con Dynamic Media. |
 
    >[!NOTE]
    >
@@ -169,18 +169,18 @@ Si es necesario, puede revisar la ortografía de una contraseña que ha escrito 
 La contraseña modificada se guarda al pulsar **[!UICONTROL Guardar]** en la esquina superior derecha de la página **[!UICONTROL Editar configuración de Dynamic Media]**.
 
 1. En Experience Manager como Cloud Service, pulse el logotipo del Experience Manager como Cloud Service para acceder a la consola de navegación global.
-1. A la izquierda de la consola, pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services > Configuración de Dynamic Media.]**
-1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]**. No toque ni seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**. A continuación, pulse **[!UICONTROL Editar.]**
-1. En la página **[!UICONTROL Editar configuración de Dynamic Media]**, directamente debajo del campo **[!UICONTROL Contraseña]**, pulse **[!UICONTROL Cambiar contraseña.]**
+1. A la izquierda de la consola, pulse el icono Herramientas y, a continuación, pulse **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
+1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, pulse **[!UICONTROL global]**. No toque ni seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**. A continuación, pulse **[!UICONTROL Editar]**.
+1. En la página **[!UICONTROL Editar configuración de Dynamic Media]**, directamente debajo del campo **[!UICONTROL Contraseña]**, pulse **[!UICONTROL Cambiar contraseña]**.
 1. En el cuadro de diálogo **[!UICONTROL Cambiar contraseña]**, haga lo siguiente:
 
    * En el campo **[!UICONTROL Nueva contraseña]**, introduzca una nueva contraseña.
 
       El campo **[!UICONTROL Contraseña actual]** se ha rellenado previamente de forma intencionada y se oculta de la interacción.
 
-   * En el campo **[!UICONTROL Repetir contraseña]**, vuelva a escribir la nueva contraseña y, a continuación, pulse **[!UICONTROL Listo.]**
+   * En el campo **[!UICONTROL Repetir contraseña]**, vuelva a escribir la nueva contraseña y, a continuación, pulse **[!UICONTROL Listo]**.
 
-1. En la esquina superior derecha de la página **[!UICONTROL Editar configuración de Dynamic Media]**, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Aceptar.]**
+1. En la esquina superior derecha de la página **[!UICONTROL Editar configuración de Dynamic Media]**, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Aceptar]**.
 
 ## (Opcional) Configuración avanzada en Dynamic Media{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -229,7 +229,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 
 #### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
 
-Para abrir la página Configuración general de la aplicación , en la barra de navegación global de Dynamic Media Classic, haga clic en **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general.]**
+Para abrir la página Configuración general de la aplicación , en la barra de navegación global de Dynamic Media Classic, haga clic en **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**.
 
 **[!UICONTROL Servidores]** : al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas URL para su sitio web y aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que el Experience Manager le indique explícitamente que lo haga como soporte de Cloud Service.
 **[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: si reemplazan el original o se convierten en duplicados. Se cambia el nombre de los recursos duplicados por &quot;-1&quot; (por ejemplo, el nombre de chair.tif cambia a chair-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la carpeta original o a los recursos con una extensión de archivo diferente a la original.
@@ -255,7 +255,7 @@ Puede establecer las siguientes propiedades de corrección de color:
    | Espacio de color predeterminado CMYK | Nombre del perfil de color CMYK predeterminado. |
    | Espacio de color predeterminado de escala de grises | Nombre del perfil de color gris predeterminado. |
    | Espacio de color predeterminado RGB | Nombre del perfil de color RGB predeterminado. |
-   | Interpretación de la conversión de color | Especifica la interpretación. Los valores aceptables son: **[!UICONTROL perceptual]**, **[!UICONTROL colométrico relativo]**, **[!UICONTROL saturación]**, **[!UICONTROL colométrico absoluto.]** Adobe recomienda  **** relativamente como valor predeterminado. |
+   | Interpretación de la conversión de color | Especifica la interpretación. Los valores aceptables son: **[!UICONTROL perceptual]**, **[!UICONTROL colométrico relativo]**, **[!UICONTROL saturación]**, **[!UICONTROL colométrico absoluto]**. Adobe recomienda **[!UICONTROL relativo]** como valor predeterminado. |
 
 1. Toque **[!UICONTROL Guardar]**.
 
@@ -298,7 +298,7 @@ Consulte [Carga de recursos](/help/assets/add-assets.md).
 
 1. Realice una de las acciones siguientes:
    * Repita los pasos del 3 al 4 para editar más tipos MIME.
-   * En la barra de menú de la página CRXDE Lite, haga clic en **[!UICONTROL Guardar todo.]**
+   * En la barra de menús de la página CRXDE Lite, haga clic en **[!UICONTROL Guardar todo]**.
 
 1. En la esquina superior izquierda de la página, pulse **[!UICONTROL CRXDE Lite]** para volver al Experience Manager como Cloud Service.
 
@@ -308,7 +308,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos
 
 **Adición de tipos MIME para formatos no admitidos**
 
-1. En Experience Manager como Cloud Service, pulse **[!UICONTROL Herramientas > Operaciones > Consola web.]**
+1. En Experience Manager como Cloud Service, pulse **[!UICONTROL Herramientas > Operaciones > Consola web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -450,7 +450,7 @@ Para actualizar la conexión de carga de Scene7:
 
    ![Chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Toque **[!UICONTROL Guardar.]**
+1. Toque **[!UICONTROL Guardar]**.
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
@@ -554,4 +554,3 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
