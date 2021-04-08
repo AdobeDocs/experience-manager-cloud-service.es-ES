@@ -3,15 +3,15 @@ title: Formatos de archivo compatibles y tipos MIME
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
 feature: Administración de recursos,Representaciones
-role: Profesional empresarial, administrador
+role: Business Practitioner,Administrator
+exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 10%
 
 ---
-
 
 # [!DNL Assets] formatos de archivo compatibles  {#supported-file-formats}
 
@@ -96,7 +96,7 @@ Los siguientes subtipos de formatos de archivo de imagen de trama que no se admi
 
 Se admiten los siguientes formatos 3D.
 
-Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/dynamic-media/assets-3d.md)
+Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Formato | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Vista previa de miniatura | Vista previa 3D | Entrega de Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
