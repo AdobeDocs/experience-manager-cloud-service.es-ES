@@ -1,14 +1,14 @@
 ---
 title: Introducción a Adobe Experience Manager as a Cloud Service
-description: 'Introducción a Adobe Experience Manager (AEM) as a Cloud Service. '
+description: Introducción a Adobe Experience Manager (AEM) as a Cloud Service.
+exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # Introducción a Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
