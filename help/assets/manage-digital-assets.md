@@ -7,10 +7,10 @@ feature: Administración de recursos,Publicación,Colaboración,Procesamiento de
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
+source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 12%
+source-wordcount: '4508'
+ht-degree: 11%
 
 ---
 
@@ -624,4 +624,24 @@ Una colección es un conjunto ordenado de recursos. Utilice las colecciones para
 * Una colección puede incluir recursos de distintas ubicaciones porque solo contienen referencias a estos recursos. Cada colección mantiene la integridad referencial de los recursos.
 * Puede compartir colecciones con varios usuarios con diferentes niveles de privilegios, como editar, ver, etc.
 
-Consulte [Administración de colecciones](/help/assets/manage-collections.md) para obtener más información sobre la administración de colecciones.
+Para obtener más información sobre la administración de colecciones, consulte [administrar colecciones](/help/assets/manage-collections.md).
+
+## Ocultar recursos caducados al ver recursos en la aplicación de escritorio o en el Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] la aplicación de escritorio permite acceder al repositorio DAM desde Windows o Mac Desktop. Adobe Asset Link permite acceder a los recursos desde las aplicaciones de escritorio [!DNL Creative Cloud] compatibles.
+
+Al examinar recursos desde la interfaz de usuario [!DNL Experience Manager], no se muestran los recursos caducados. Para evitar la visualización, búsqueda y captura de recursos caducados al examinar recursos desde la aplicación de escritorio y Asset Link, los administradores pueden realizar la siguiente configuración. La configuración funciona para todos los usuarios, independientemente del privilegio de administrador.
+
+Ejecute el siguiente comando CURL. Asegúrese de tener acceso de lectura en `/conf/global/settings/dam/acpapi/` para los usuarios que acceden a los recursos. Los usuarios que forman parte del grupo `dam-user` tienen el permiso de forma predeterminada.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+Para obtener más información, consulte cómo [examinar los recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo usar Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
