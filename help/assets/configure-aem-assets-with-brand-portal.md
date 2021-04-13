@@ -2,16 +2,16 @@
 title: Configurar AEM Assets como a [!DNL Cloud Service] con Brand Portal
 description: Configurar AEM Assets con Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Brand Portal
-role: Administrador
+feature: Brand Portal,Distribución de recursos,Configuración
+role: Administrator
+exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2416'
 ht-degree: 13%
 
 ---
-
 
 # Configurar AEM Assets como [!DNL Cloud Service] con Brand Portal {#configure-aem-assets-with-brand-portal}
 
