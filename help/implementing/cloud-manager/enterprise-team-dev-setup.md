@@ -2,9 +2,9 @@
 title: 'Configuración de desarrollo de equipo empresarial: Cloud Services'
 description: Siga esta página para obtener más información sobre la configuración de desarrollo de Enterprise Team
 translation-type: tm+mt
-source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
+source-git-commit: 8197defd4a73173106e1f013627547a085e51dab
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -82,8 +82,10 @@ Esta configuración del mundo real puede utilizarse como modelo y luego personal
 
 ### Consideraciones para una configuración de varios equipos {#considerations}
 
-El modelo descrito anteriormente para una configuración de varios equipos permite escalar en un mayor número de equipos. Con el repositorio de Git de Cloud Manager y la canalización de producción, siempre se ejecuta el código de producción completo a través de todas las puertas de calidad, tratándolo como una unidad de implementación. De esta manera, el sistema de producción se mantiene *siempre activo* sin interrupciones ni downtime.
-Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación será mucho más complejo y rápidamente inmanejable.
-Si se detecta un problema en las puertas de calidad, la producción no se ve afectada y el problema puede detectarse y solucionarse sin que el Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden provocar interrupciones que requieran una solicitud de reversión o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también podrían dar lugar a otros problemas que luego deberían solucionarse después de que el Adobe volviera a requerir coordinación y apoyo.
+>[!NOTE]
+>Para cualquier configuración de varios equipos es crucial definir un modelo de gobernanza y un conjunto de estándares que todos los equipos deben seguir. El modelo descrito anteriormente para una configuración de varios equipos permite escalar un número mayor de equipos y puede utilizar este modelo como punto de partida.
 
-Para cualquier configuración de varios equipos es crucial definir un modelo de gobernanza y un conjunto de estándares que todos los equipos deben seguir. Puede utilizar el modelo como punto de partida.
+Con el repositorio de Git de Cloud Manager y la canalización de producción, siempre se ejecuta el código de producción completo a través de todas las puertas de calidad, tratándolo como una unidad de implementación. De esta manera, el sistema de producción se mantiene *siempre activo* sin interrupciones ni downtime.
+Por el contrario, sin un sistema de este tipo, ya que cada equipo puede realizar implementaciones por separado, existe el riesgo de que una actualización de un equipo único pueda provocar problemas de estabilidad de la producción. Además, requiere coordinación y tiempo de inactividad planificado para implementar actualizaciones. Con un número cada vez mayor de equipos, el esfuerzo de coordinación será mucho más complejo y rápidamente inmanejable.
+
+Si se detecta un problema en las puertas de calidad, la producción no se ve afectada y el problema puede detectarse y solucionarse sin que el Adobe tenga que intervenir. Sin Cloud Service y sin probar siempre toda la implementación, las implementaciones parciales pueden provocar interrupciones que requieran una solicitud de reversión o incluso una restauración completa desde una copia de seguridad. Las pruebas parciales también podrían dar lugar a otros problemas que luego deberían solucionarse después de que el Adobe volviera a requerir coordinación y apoyo.
