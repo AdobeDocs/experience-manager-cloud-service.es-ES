@@ -2,9 +2,9 @@
 title: 'Configuración de desarrollo de equipo empresarial: Cloud Services'
 description: Siga esta página para obtener más información sobre la configuración de desarrollo de Enterprise Team
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ La configuración del repositorio de Git de Cloud Manager tiene dos ramas:
 * Una *rama de versión estable*, que contiene el código de producción de todos los equipos
 * Una *rama de desarrollo* que contiene el código de desarrollo de todos los equipos
 
-Cada inserción en el repositorio de Git de un equipo en el desarrollo o en la rama estable activa una [acción github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos los proyectos siguen la misma configuración para la rama estable: Se inserta automáticamente una rama estable de un proyecto en la rama estable del repositorio de Git de Cloud Manager. La canalización de producción en Cloud Manager está configurada para activarse mediante una inserción en la rama estable. Por lo tanto, la canalización de producción se ejecuta mediante cada inserción de cualquier equipo en una rama estable y la implementación de producción se actualiza si pasan todas las puertas de calidad.
+Cada inserción en el repositorio de Git de un equipo en el desarrollo o en la rama estable activa una [acción github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos los proyectos siguen la misma configuración para la rama estable. Una inserción en la rama estable de un proyecto se inserta automáticamente en la rama estable del repositorio de Git de Cloud Manager. La canalización de producción en Cloud Manager está configurada para activarse mediante una inserción en la rama estable. Por lo tanto, la canalización de producción se ejecuta mediante cada inserción de cualquier equipo en una rama estable y la implementación de producción se actualiza si pasan todas las puertas de calidad.
 
 ![](assets/team-setup2.png)
 
