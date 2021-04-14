@@ -2,9 +2,9 @@
 title: 'Configuración de desarrollo de equipo empresarial: Cloud Services'
 description: Siga esta página para obtener más información sobre la configuración de desarrollo de Enterprise Team
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cloud Manager admite configuraciones flexibles de varios equipos que se pueden a
 
 Cada empresa tiene diferentes requisitos, incluida la configuración de equipos, los procesos y los flujos de trabajo de desarrollo. Adobe utiliza la configuración que se describe a continuación para varios proyectos que ofrecen experiencias además de AEM como Cloud Service.
 
-Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, muestras y guías disponibles para los usuarios finales. Este contenido lo consumen las aplicaciones cliente que utilizan AEM como Cloud Service de forma *headless*, realizando llamadas de API al nivel de publicación de AEM Cloud para recuperar el contenido estructurado como flujos JSON y aprovechando el CDN de Cloud Service de AEM para proporcionar contenido estructurado y no estructurado con un rendimiento óptimo.
+Por ejemplo, las aplicaciones de Adobe Creative Cloud, como Adobe Photoshop o Adobe Illustrator, incluyen recursos de contenido como tutoriales, muestras y guías disponibles para los usuarios finales. Este contenido lo consumen las aplicaciones cliente mediante AEM como Cloud Service de forma *headless*, realizando llamadas API al nivel de publicación de AEM Cloud para recuperar el contenido estructurado como flujos JSON y aprovechando la [Content Delivery Network (CDN) en AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=en#content-delivery) para proporcionar contenido estructurado y no estructurado con un rendimiento óptimo.
 
 Los equipos que contribuyen a este proyecto siguen el proceso que se describe a continuación.
 
@@ -68,13 +68,13 @@ La configuración del repositorio de Git de Cloud Manager tiene dos ramas:
 * Una *rama de versión estable*, que contiene el código de producción de todos los equipos
 * Una *rama de desarrollo* que contiene el código de desarrollo de todos los equipos
 
-Cada inserción en el repositorio de Git de un equipo en el desarrollo o en la rama estable activa una [acción github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos los proyectos siguen la misma configuración para la rama estable. Una inserción en la rama estable de un proyecto se inserta automáticamente en la rama estable del repositorio Git de Cloud Manager. La canalización de producción en Cloud Manager está configurada para activarse mediante una inserción en la rama estable. Por lo tanto, la canalización de producción se ejecuta mediante cada inserción de cualquier equipo en una rama estable y la implementación de producción se actualiza si pasan todas las puertas de calidad.
+Cada inserción en el repositorio de Git de un equipo en el desarrollo o en la rama estable activa una [acción github](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code). Todos los proyectos siguen la misma configuración para la rama estable. Un push a la rama estable de un proyecto se inserta automáticamente en la rama estable del repositorio Git de Cloud Manager. La canalización de producción en Cloud Manager está configurada para activarse mediante una inserción en la rama estable. Por lo tanto, la canalización de producción se ejecuta mediante cada inserción de cualquier equipo en una rama estable y la implementación de producción se actualiza si pasan todas las puertas de calidad.
 
 ![](assets/team-setup2.png)
 
 Los empujones a la rama de desarrollo se gestionan de forma diferente. Mientras que una inserción en una rama de desarrollador en el repositorio de Git de un equipo está activando una acción de GitHub y el código se inserta automáticamente en la rama de desarrollo en el repositorio de Git de Cloud Manager, la canalización que no es de producción no se activa automáticamente mediante la inserción de código. Se activa mediante una llamada a la api de Cloud Manager.
 La ejecución de la canalización de producción incluye la comprobación del código de todos los equipos a través de las puertas de calidad proporcionadas. Una vez implementado el código en la fase, las pruebas y auditorías se ejecutan para garantizar que todo funciona según lo esperado. Una vez pasadas todas las puertas, los cambios se implementan en producción sin interrupciones ni downtime.
-Para el desarrollo local, se utiliza el SDK para Cloud Service. El SDK permite configurar un autor, publicación y Dispatcher local. Esto permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza autor para el desarrollo, pero la configuración rápida de Dispatcher y Publish permite probar todo localmente antes de entrar en el repositorio de Git. Los miembros de cada equipo generalmente retiran el código del Git compartido para , así como su propio código de proyecto. No hay necesidad de retirar otros proyectos ya que los proyectos son independientes.
+Para el desarrollo local, se utiliza el [SDK para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing). El SDK permite configurar un autor, publicación y Dispatcher local. Esto permite el desarrollo sin conexión y tiempos de respuesta rápidos. A veces solo se utiliza autor para el desarrollo, pero la configuración rápida de Dispatcher y Publish permite probar todo localmente antes de entrar en el repositorio de Git. Los miembros de cada equipo generalmente retiran el código del Git compartido para , así como su propio código de proyecto. No hay necesidad de retirar otros proyectos ya que los proyectos son independientes.
 
 ![](assets/team-setup3.png)
 
