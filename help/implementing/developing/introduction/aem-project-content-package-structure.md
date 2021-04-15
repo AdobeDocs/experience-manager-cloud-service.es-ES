@@ -3,7 +3,7 @@ title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
+source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
 ht-degree: 13%
@@ -46,7 +46,7 @@ Por este motivo, aunque los índices Oak son mutables en tiempo de ejecución, d
 
 >[!TIP]
 >
->Para obtener más información sobre la indexación en AEM como Cloud Service, consulte el documento [Content Search and Indexing](/help/operations/indexing.md).
+>Para obtener más información sobre la indexación en AEM como Cloud Service, consulte el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md).
 
 ## Estructura del paquete recomendada {#recommended-package-structure}
 
@@ -89,7 +89,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 
 >[!NOTE]
 >
->El mismo código debe implementarse en todos los entornos. Esto es necesario para garantizar que también se esté produciendo un nivel de validaciones de confianza en el entorno de ensayo. Para obtener más información, consulte [Conservative Coding for Rollbacks](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks).
+>El mismo código debe implementarse en todos los entornos. Esto es necesario para garantizar que también se esté produciendo un nivel de validaciones de confianza en el entorno de ensayo. Para obtener más información, consulte la sección sobre [Modos de ejecución](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Paquetes de contenido
