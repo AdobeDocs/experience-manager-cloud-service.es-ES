@@ -2,15 +2,15 @@
 title: Creación y sincronización de Live Copies
 description: Aprenda a crear y sincronizar Live Copies para reutilizar el contenido en el sitio.
 feature: Administrador de varios sitios
-role: Administrador
+role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 1%
 
 ---
-
 
 # Creación y sincronización de Live Copies {#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ Los lanzamientos se procesan como trabajos asincrónicos y se pueden comprobar e
 
 #### Despliegue un modelo desde el carril de referencia {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. En la consola **Sitios**, seleccione la página en el modelo y abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (en la barra de herramientas).
+1. En la consola **Sitios**, seleccione la página en la Live Copy y abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** (en la barra de herramientas).
 1. Seleccione la opción **Blueprint** de la lista para mostrar los modelos asociados con esta página.
 1. Seleccione el modelo requerido de la lista.
 1. Toque o haga clic en **Despliegue**.
