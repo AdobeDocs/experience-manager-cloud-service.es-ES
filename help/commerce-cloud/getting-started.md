@@ -9,10 +9,10 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 translation-type: tm+mt
-source-git-commit: e34592d24c8f6c17e6959db1d5c513feaf6381c8
+source-git-commit: 08e258d4e9cd67de3da2aa57c058036bd104472d
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 52%
+source-wordcount: '1071'
+ht-degree: 31%
 
 ---
 
@@ -36,25 +36,33 @@ El segundo paso es el autoservicio para cada entorno de AEM as a Cloud Service. 
 ## Conexión de AEM con una solución de comercio {#magento}
 
 Para conectar el complemento CIF y los [AEM componentes principales del CIF](https://github.com/adobe/aem-core-cif-components) con una solución de comercio, debe proporcionar la URL del extremo de GraphQL a través de una variable de entorno de Cloud Manager. El nombre de la variable es `COMMERCE_ENDPOINT`. Se debe configurar una conexión segura mediante un HTTPS.
+
+Esta variable de entorno se utiliza en dos lugares:
+
+- GraphQL realiza llamadas desde AEM hasta el back-end de comercio, a través de algunos clientes comunes que se pueden compartir con GraphQl, y que utilizan los componentes principales del CIF de AEM y los componentes del proyecto del cliente.
+- Configure una URL proxy de GraphQL en cada entorno AEM la variable esté disponible en `/api/graphql`. Esto lo utilizan las herramientas de creación de comercio de AEM (complemento CIF) y los componentes del cliente CIF.
+
 Se puede usar una dirección URL de extremo de GraphQL diferente para cada entorno de AEM as a Cloud Service. De este modo, los proyectos pueden conectar AEM entornos de ensayo con sistemas de ensayo comerciales y AEM entorno de producción a un sistema de producción comercial. El extremo de GraphQL debe estar disponible para el público, no se admiten conexiones privadas VPN o locales. Opcionalmente, se puede proporcionar un encabezado de autenticación para utilizar funciones de CIF adicionales que requieran autenticación.
+
+Opcional y solo para Adobe Commerce Enterprise / Cloud, el complemento CIF admite el uso de datos de catálogo clasificados para autores AEM. Esto requiere configurar un token de autorización. El token de autorización configurado solo está disponible y se utiliza en AEM instancias de autor por motivos de seguridad. AEM instancias de publicación no pueden mostrar datos clasificados.
 
 Hay dos opciones para configurar el extremo:
 
-### 1) A través de la interfaz de usuario de Cloud Manager (predeterminada)
+### A través de la IU de Cloud Manager (predeterminada) {#cm-ui}
 
 Esto se puede hacer mediante un cuadro de diálogo en la página Detalles del entorno . Al ver esta página para un programa habilitado para comercio, se mostrará un botón si el extremo no está configurado actualmente:
 
-![Implementación Final De Distintivo Compatible Con Eco](/help/commerce-cloud/assets/commerce-cmui.png)
+![Información sobre el entorno de CM](/help/commerce-cloud/assets/commerce-cmui.png)
 
 Al hacer clic en este botón, se abre un cuadro de diálogo:
 
-![Implementación Final De Distintivo Compatible Con Eco](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![Punto final de comercio de CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Una vez configurado el punto final (y, opcionalmente, el token), el punto final se mostrará en la página de detalles. Al hacer clic en el icono Editar se abrirá el mismo cuadro de diálogo en el que el punto final se puede modificar si es necesario.
+Una vez configurado el punto final (opcionalmente, un token de autenticación para la compatibilidad con el catálogo por etapas), el punto final se mostrará en la página de detalles. Al hacer clic en el icono Editar se abrirá el mismo cuadro de diálogo en el que el punto final se puede modificar si es necesario.
 
-![Implementación Final De Distintivo Compatible Con Eco](/help/commerce-cloud/assets/commerce-cmui-done.png)
+![Información sobre el entorno de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### 2) Mediante CLI de Adobe I/O
+### Mediante CLI de Adobe I/O {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -62,7 +70,7 @@ Para conectar AEM con una solución de comercio a través de la CLI de Adobe I/O
 
 1. Obtenga la CLI de Adobe I/O con el complemento Cloud Manager
 
-   Consulte la [documentación de Adobe Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) sobre cómo descargar, configurar y utilizar la [CLI de Adobe I/O](https://github.com/adobe/aio-cli) con el [complemento CLI de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Consulte la [documentación de Adobe Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) sobre cómo descargar, configurar y utilizar el [Adobe I/O CLI](https://github.com/adobe/aio-cli) con el [complemento CLI de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Autentique la CLI de Adobe I/O con el programa AEM as a Cloud Service
 
@@ -76,28 +84,58 @@ Para conectar AEM con una solución de comercio a través de la CLI de Adobe I/O
 
    La dirección URL de extremo de Commerce GraphQL debe apuntar al servicio de GraphQl del comercio y utilizar una conexión HTTPS segura. Por ejemplo: `https://demo.magentosite.cloud/graphql`.
 
+4. Habilitar las funciones del catálogo por etapas que requieren autenticación (opcional)
+
+   >[!NOTE]
+   >
+   >Esta función solo está disponible con Adobe Commerce Enterprise o Cloud Edition. Consulte [Autenticación basada en token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) para obtener más información.
+
+   Configure la variable secreta `COMMERCE_AUTH_HEADER` en Cloud Manager:
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
+   ```
+
 >[!TIP]
 >
 >Puede realizar la lista de todas las variables de Cloud Manager usando el siguiente comando para comprobarlas: `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
 Con esto, está listo para usar AEM Commerce as a Cloud Service y puede implementar su proyecto a través de Cloud Manager.
 
-## Habilitar características que requieren autenticación (opcional) {#staging}
+## Configuración de tiendas y catálogos {#catalog}
 
->[!NOTE]
->
->Esta función solo está disponible con Magento Enterprise Edition o Magento Cloud.
+El complemento CIF y los [componentes principales del CIF](https://github.com/adobe/aem-core-cif-components) se pueden usar en varias estructuras de sitios AEM conectadas a diferentes tiendas de comercio (o vistas de tiendas, etc.). De forma predeterminada, el complemento CIF se implementa con una configuración predeterminada que se conecta al catálogo y almacén predeterminados de Adobe Commerce (Magento).
 
-1. Inicie sesión en el Magento y cree un token de integración. Consulte [Autenticación basada en token](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) para obtener más información. Asegúrese de que el token de integración *solo* tiene acceso a `Content -> Staging` recursos. Copie el valor `Access Token` .
+Esta configuración se puede ajustar para el proyecto mediante la configuración del Cloud Service del CIF siguiendo estos pasos:
 
-1. Configure la variable secreta `COMMERCE_AUTH_HEADER` en Cloud Manager:
+1. En AEM vaya a Herramientas -> Cloud Services -> Configuración del CIF
 
-   ```bash
-   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
-   ```
+2. Seleccione la configuración de comercio que desee cambiar
 
-   Consulte [Conexión AEM comercio con el Magento](#magento) sobre cómo configurar la CLI de Adobe I/O para Cloud Manager.
+3. Abra las propiedades de configuración mediante la barra de acciones
 
-## Integraciones de comercio de terceros {#integrations}
+![Configuración de Cloud Services del CIF](/help/commerce-cloud/assets/cif-cloud-service-config.png)
 
-Para integraciones de comercio de terceros, se necesita una [capa de asignación de API](architecture/third-party.md) para conectar AEM Commerce as a Cloud Service y los componentes principales del CIF con su sistema comercial. Esta capa de asignación de API suele implementarse en Adobe I/O Runtime. Póngase en contacto con su representante de ventas para obtener integraciones disponibles y acceso a Adobe I/O Runtime.
+Se pueden configurar las siguientes propiedades:
+
+- Cliente de GraphQL: seleccione el cliente de GraphQL configurado para la comunicación de back-end de comercio. Esto suele permanecer de forma predeterminada.
+- Vista de almacén: el identificador de vista de almacén (Magento). Si está vacía, se utilizará la vista de tienda predeterminada.
+- Ruta de proxy de GraphQL: la ruta de URL del proxy GraphQL AEM usar para solicitudes de proxy al extremo de comercio back-end GraphQL.
+   >[!NOTE]
+   >
+   > En la mayoría de las configuraciones no se debe cambiar el valor predeterminado `/api/graphql`. Solo la configuración avanzada que no utilice el proxy de GraphQL proporcionado debe cambiar esta configuración.
+- Habilitar compatibilidad con UID de catálogo : habilite la compatibilidad con UID en lugar de con ID en las llamadas de GraphQL de comercio back-end.
+   >[!NOTE]
+   >
+   > La compatibilidad con los UID se ha introducido en Adobe Commerce (Magento) 2.4.2. Habilite esta opción solo si su servidor de comercio admite un esquema de GraphQL de la versión 2.4.2 o posterior.
+- Identificador de categoría raíz del catálogo: el identificador (UID o ID) de la raíz del catálogo del almacén
+
+La configuración que se muestra arriba es para referencia. Los proyectos deben proporcionar sus propias configuraciones.
+
+Para configuraciones más complejas que utilizan varias estructuras de sitios de AEM combinadas con diferentes catálogos de comercio, consulte el tutorial [Configuración de varias tiendas de comercio](configuring/multi-store-setup.md).
+
+## Recursos adicionales {#additional-resources}
+
+- [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype)
+- [Tienda de referencia de Venia de AEM](https://github.com/adobe/aem-cif-guides-venia)
+- [Configuración de varias tiendas de comercio](configuring/multi-store-setup.md)
