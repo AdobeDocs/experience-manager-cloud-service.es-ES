@@ -1,22 +1,22 @@
 ---
 title: Configuraciones de URL avanzadas
-description: Obtenga información sobre cómo personalizar las direcciones URL para las páginas de productos y categorías. Esto permite que las implementaciones optimicen las direcciones URL para los motores de búsqueda y promuevan el descubrimiento.
+description: Obtenga información sobre cómo personalizar las direcciones URL para páginas de productos y categorías. Esto permite que las implementaciones optimicen las direcciones URL de los motores de búsqueda y promuevan la detección.
 sub-product: Comercio
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Marco de integración de Commerce
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '792'
+ht-degree: 95%
 
 ---
-
 
 # Configuraciones de URL avanzadas {#url}
 
@@ -32,7 +32,7 @@ Para configurar el servicio `UrlProvider` según los requisitos de SEO y las nec
 >
 > El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia) que se muestra a continuación, incluye configuraciones de muestra para demostrar el uso de direcciones URL personalizadas para páginas de productos y categorías.
 
-### Plantilla URL de la página de producto {#product}
+### Plantilla de dirección URL de la página del producto {#product}
 
 Esto configura las direcciones URL de las páginas de productos con las siguientes propiedades:
 
@@ -43,7 +43,7 @@ Esto configura las direcciones URL de las páginas de productos con las siguient
 * **Ubicación del identificador de producto**: define la ubicación del identificador que se utilizará para recuperar los datos del producto. El valor predeterminado es `SELECTOR`, el otro valor posible es `SUFFIX`. Con la URL del ejemplo anterior, esto significa que el identificador `chaz-kangeroo-hoodie` se utilizará para recuperar los datos del producto.
 * **Tipo del identificador de producto**: define el tipo del identificador que se utiliza para recuperar los datos del producto. El valor predeterminado es `URL_KEY`, el otro valor posible es `SKU`. Con la URL del ejemplo anterior, esto significa que los datos del producto se recuperarán con un filtro de Magento GraphQL como `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Plantilla de la página de la lista de productos {#product-list}
+### Plantilla URL de la página de lista de productos {#product-list}
 
 Esto configura las direcciones URL de las páginas de categorías o listas de productos con las siguientes propiedades:
 
