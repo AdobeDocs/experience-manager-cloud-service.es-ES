@@ -1,18 +1,18 @@
 ---
 title: Almacenamiento en caché y rendimiento
-description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de la implementación comercial.
+description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de la implementación de comercio.
+exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
 source-wordcount: '848'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
-
 # Almacenamiento en caché y rendimiento {#caching}
 
-## Almacenamiento en caché adaptable de Componente y GraphQL {#graphql}
+## Almacenamiento en caché de respuestas de Componente y GraphQL {#graphql}
 
 Los componentes principales del CIF de AEM ya cuentan con una compatibilidad integrada para almacenar en caché las respuestas de GraphQL para los componentes individuales. Esta función se puede utilizar para reducir en gran medida el número de llamadas de back-end de GraphQL. Se puede lograr un almacenamiento en caché efectivo, especialmente para las consultas repetidas como recuperar el árbol de categorías de un componente de navegación o recuperar todos los valores de facetas/acumulados disponibles que se muestran en las páginas de categoría y búsqueda de productos.
 
