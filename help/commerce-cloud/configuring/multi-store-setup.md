@@ -1,24 +1,24 @@
 ---
-title: Configuración de varias tiendas
-description: Aprenda a asignar varias vistas de tiendas de Magento a AEM. Esto permite que los proyectos admitan casos de uso multilingües y de inquilinos múltiples.
+title: Configuración de varias tiendas de comercio
+description: Obtenga información sobre cómo asignar varias vistas de tienda de Magento a AEM. Esto permite que los proyectos admitan casos de uso multilingües y de inquilinos múltiples.
 sub-product: Comercio
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Marco de integración de Commerce
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 91%
+source-wordcount: '382'
+ht-degree: 83%
 
 ---
 
-
-# Configuración de varias tiendas {#multi-store}
+# Configuración de varias tiendas de comercio {#multi-store}
 
 Los componentes principales del CIF de AEM se pueden utilizar en varias estructuras del sitio de AEM y la implementación de cliente de GraphQL subyacente se puede conectar a diferentes tiendas de Magento o vistas de la tienda. Esto permite que los proyectos implementen configuraciones complejas de varias tiendas y sitios.
 
@@ -40,11 +40,15 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
 
 3. Cree una configuración secundaria de la configuración del CIF de Cloud Service siguiendo estos pasos:
 
-   * En AEM, vaya a Herramientas -> General -> [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * En AEM vaya a Herramientas -> General -> [Explorador de configuración](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Seleccione la configuración base que ha creado.
    * Cree una nueva configuración siguiendo los pasos descritos en el punto 2 anterior.
 
    Esta nueva configuración se creará como una configuración secundaria de la base. Ahora puede ir a Herramientas -> General -> Explorador de configuración y crear los ajustes de configuración.
+
+   >[!TIP]
+   >
+   > Los catálogos comerciales se pueden abordar mediante el uso de ID o UID. Los UID se introdujeron en el Magento 2.4.2. Solo debe habilitarse si el servidor de comercio admite un esquema de GraphQL de la versión 2.4.2 o posterior.
 
 4. Asigne la configuración secundaria a un sitio de AEM.
 
