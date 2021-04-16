@@ -10,14 +10,14 @@ audience: developer
 feature: Marco de integración de Commerce
 kt: 3456
 thumbnail: 3456-style-cif.jpg
+exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
 workflow-type: tm+mt
-source-wordcount: '2566'
-ht-degree: 33%
+source-wordcount: '2567'
+ht-degree: 32%
 
 ---
-
 
 # Diseño de los componentes principales del CIF de AEM {#style-aem-cif-core-components}
 
@@ -82,7 +82,7 @@ El módulo `ui.frontend` también es un módulo Maven e integrado con el proyect
 
 ## Actualizar el estilo del teaser {#ui-frontend-module}
 
-A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo funcionan el módulo `ui.frontend` y las bibliotecas de clientes. Utilice [el IDE de su elección](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar el proyecto de Venia. Las capturas de pantalla utilizadas son de [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo funcionan el módulo `ui.frontend` y las bibliotecas de cliente. Utilice [el IDE de su elección](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar el proyecto de Venia. Las capturas de pantalla utilizadas son de [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
 1. Navegue y expanda el módulo **ui.frontend** y expanda la jerarquía de carpetas a: `ui.frontend/src/main/styles/commerce`:
 
@@ -136,7 +136,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo f
 
    ![CSS del sitio compilado](../assets/style-cif-component/comiled-site-css.png)
 
-   El archivo es la versión resumida y en coma de todos los archivos Sass del proyecto.
+   El archivo es la versión compilada y minificada de todos los archivos Sass del proyecto.
 
    >[!NOTE]
    >
@@ -254,7 +254,7 @@ A continuación, verifique la inclusión de las bibliotecas de cliente en la pá
 
    Aviso `venia/clientlibs/clientlib-site.min.css` y `venia/clientlibs/clientlib-site.min.js`. Estos son los archivos CSS y Javascript compilados derivados del módulo `ui.frontend` .
 
-## Inclusión de la biblioteca de clientes con plantillas de página {#client-library-inclusion-pagetemplates}
+## Inclusión de la biblioteca de cliente con plantillas de página {#client-library-inclusion-pagetemplates}
 
 Existen varias opciones para incluir una biblioteca del lado del cliente. A continuación, revise cómo el proyecto generado incluye las bibliotecas `clientlib-site` a través de [Plantillas de página](/help/implementing/developing/components/templates.md).
 
@@ -287,7 +287,7 @@ Existen varias opciones para incluir una biblioteca del lado del cliente. A cont
 
    La ventaja de utilizar las plantillas y las directivas de página para administrar la inclusión de bibliotecas de cliente es que puede cambiar la directiva por plantilla. Por ejemplo: quizás esté administrando dos marcas diferentes dentro de la misma instancia de AEM. Cada marca tendrá su propio estilo o *tema* único, pero las bibliotecas base y el código serán los mismos. Otro ejemplo: si tiene una biblioteca de cliente más grande que solo desea que aparezca en determinadas páginas, puede crear una directiva de página única solo para esa plantilla.
 
-## Desarrollo de webpack local {#local-webpack-development}
+## Desarrollo de Webpack local {#local-webpack-development}
 
 En el ejercicio anterior, se actualizó un archivo Sass en el módulo `ui.frontend` y, después de realizar una compilación de Maven, los cambios se implementan en AEM. A continuación, analizaremos cómo aprovechar un webpack-dev-server para desarrollar rápidamente los estilos front-end.
 
