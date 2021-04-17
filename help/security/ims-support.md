@@ -1,14 +1,14 @@
 ---
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
+exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 translation-type: tm+mt
-source-git-commit: 70726c373d88f36cdcc9a4a1a944bc8d4c99238c
+source-git-commit: 460cefde9a203b4237aedf01b01e026d37eadfe6
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 100%
+source-wordcount: '1952'
+ht-degree: 95%
 
 ---
-
 
 # Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service {#ims-support-for-aem-as-a-cloud-service}
 
@@ -125,15 +125,15 @@ A continuación, se muestran las configuraciones de OSGI clave que deben modific
 
 ### Administración de productos y acceso de usuarios en Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Cuando el administrador de productos inicia sesión en Admin Console, puede ver varias instancias del contexto de producto de AEM Managed Services, como se muestra a continuación:
+Cuando el administrador de productos inicia sesión en el Admin Console, verá varias instancias del AEM como un contexto de producto de Cloud Service, como se muestra a continuación. Por ejemplo, seleccione cualquiera de los productos de la página **Información general**:
 
 ![Inicio de sesión en instancias](/help/security/assets/ims6.png)
 
-En este ejemplo, la organización **AEM-MS-Onboard** tiene 32 instancias que abarcan diferentes topologías y entornos como ensayo o producción.
+Verá una lista de instancias existentes:
 
 ![Inicio de sesión en instancias 2](/help/security/assets/ims7.png)
 
-En cada instancia de contexto de producto, hay perfiles de producto asociados. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con el privilegio requerido.
+En cada instancia de contexto de producto, habrá instancias que abarquen los servicios Autor o Publicación en los entornos de producción, fase o desarrollo. Cada instancia se asociará a los perfiles de producto o a las funciones de Cloud Manager. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con los privilegios necesarios.
 
 El perfil **Administrator_xxx** se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada, mientras que el perfil **User_xxx** se utiliza para añadir usuarios habituales.
 
@@ -241,4 +241,3 @@ Para obtener acceso a las instancias de AEM, el usuario deberá agregarse a un g
 Cada instancia de autor tendrá un Perfil de administradores de AEM y usuarios de AEM, y cada instancia de publicación tendrá un Perfil de usuarios de AEM. Puede agregar otros perfiles según sea necesario.
 
 Para obtener acceso a nivel de administrador a la instancia de AEM, añada el usuario al Perfil de administradores de AEM para ese producto en particular.
-
