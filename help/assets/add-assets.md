@@ -2,15 +2,15 @@
 title: Agregue los recursos digitales a [!DNL Adobe Experience Manager].
 description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 feature: Administración de recursos,Cargar
-role: Profesional empresarial, administrador
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2059'
 ht-degree: 1%
 
 ---
-
 
 # Agregar recursos digitales a Adobe Experience Manager {#add-assets-to-experience-manager}
 
@@ -223,6 +223,10 @@ Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del 
 ## Cargar o ingerir recursos mediante API {#upload-using-apis}
 
 Los detalles técnicos de las API de carga y el protocolo, así como los vínculos al SDK de código abierto y a los clientes de muestra, se proporcionan en la sección [carga de recursos](developer-reference-material-apis.md#asset-upload-technical) de la referencia del desarrollador.
+
+## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
+
+* Adobe recomienda añadir hasta 1000 activos en cada carpeta en [!DNL Experience Manager Assets]. Aunque puede agregar más recursos a una carpeta, es posible que vea problemas de rendimiento como una navegación más lenta a dichas carpetas.
 
 >[!MORELIKETHIS]
 >
