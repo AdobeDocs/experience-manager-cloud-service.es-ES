@@ -1,9 +1,9 @@
 ---
 title: Cambios importantes del complemento Commerce Integration Framework (CIF)
 description: Cambios importantes del marco de integración comercial (CIF) en comparación con las versiones anteriores del CIF.
-exl-id: c136763f-56aa-450e-8796-bc84bf6c205d
+exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades para gestionar sus Proyectos AEM. Para obtener más información sobre estas funcionalidades, siga el enlace para [cambios a Experience Manager como Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-Este documento destaca las importantes diferencias entre el complemento Commerce Integration Framework (CIF) y las versiones anteriores del CIF, conocidas principalmente como CIF Classic (Quickstart) a CIF Open-source.
+Este documento destaca las importantes diferencias entre el complemento Commerce Integration Framework (CIF) y las versiones anteriores del CIF, conocidas principalmente como CIF Classic (Quickstart) y CIF Open-source.
 
 ## Instalación y actualizaciones
 
