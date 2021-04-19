@@ -7,9 +7,9 @@ feature: Administración de recursos,Publicación,Colaboración,Procesamiento de
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 11%
 
 ---
@@ -47,8 +47,6 @@ Consulte [añadir recursos digitales al Experience Manager](add-assets.md).
 
 Si un usuario de DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede tener un impacto en el rendimiento en función del tamaño del repositorio y el número de recursos cargados. Para habilitar la función, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Consulte [cómo hacer configuraciones de OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La detección de duplicaciones se basa en el valor `dam:sha1` único almacenado en `jcr:content/metadata/dam:sha1`. Significa que se detectan recursos duplicados aunque los nombres de archivo sean diferentes.
 
-![Detectar la configuración OSGi de activos duplicados](assets/duplicate-detection.png)
-
 Puede agregar el archivo de configuración `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` en código personalizado y el archivo puede contener lo siguiente:
 
 ```json
@@ -58,7 +56,7 @@ Puede agregar el archivo de configuración `/apps/example/config.author/com.adob
 }
 ```
 
-Una vez activado, el Experience Manager envía notificaciones de recursos duplicados a la bandeja de entrada. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
+Una vez activado, el Experience Manager envía notificaciones de recursos duplicados a la bandeja de entrada del Experience Manager. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
 
 ![Notificación de bandeja de entrada para recursos duplicados](assets/duplicate-detect-inbox-notification.png)
 
@@ -528,7 +526,7 @@ Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** en el Administrador de configuración y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
