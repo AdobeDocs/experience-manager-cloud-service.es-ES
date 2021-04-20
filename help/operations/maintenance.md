@@ -3,7 +3,7 @@ title: Tareas de mantenimiento en AEM como Cloud Service
 description: Tareas de mantenimiento en AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 2%
@@ -57,11 +57,10 @@ Los clientes pueden programar cada una de las tareas de Purga de flujo de trabaj
     <td>Véase la ubicación 1 a continuación</td>
     <td>Consulte el ejemplo de código 1 a continuación</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily (este valor no debe cambiarse)</li>
-    <li><strong>windowStartTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.</li>
-    <li><strong>windowEndTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily (este valor no debe cambiarse) 
+    <strong>windowStartTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.
+    <strong>windowEndTime</strong>  = HH:MM usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.
+    </td> 
   </tr>
   <tr>
     <td>Cada semana</td>
