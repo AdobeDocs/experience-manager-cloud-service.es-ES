@@ -2,14 +2,14 @@
 title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 feature: Implementación
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
-
 
 # Implementación en AEM as a Cloud Service {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Carpetas (añadir, modificar, quitar)
    * Plantillas editables (añadir, modificar, quitar)
    * Configuración según el contexto (cualquier configuración en `/conf`) (añadir, modificar, quitar)
-   * Secuencias de comandos (los paquetes pueden almacenar en déclencheur los enlaces Instalar en varias etapas del proceso de instalación del paquete
+   * Scripts (los paquetes pueden déclencheur Instalar enlaces en varias etapas del proceso de instalación del paquete. Consulte la [documentación de Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre los enlaces de instalación, que incluyen usuarios permitidos para ejecutarlos).
 
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y los detalles sobre la reestructuración de proyectos recomendada se pueden encontrar en la documentación de la [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
