@@ -1,8 +1,8 @@
 ---
 title: Solución de problemas y preguntas más frecuentes sobre MSM
 description: Descubra cómo solucionar los problemas más comunes relacionados con MSM y obtenga respuestas a las preguntas más comunes relacionadas con MSM.
-feature: Administrador de varios sitios
-role: Administrador
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

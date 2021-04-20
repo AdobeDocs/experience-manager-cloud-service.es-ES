@@ -1,9 +1,9 @@
 ---
 title: Newsletter de Dynamic Media
 description: 'El boletín Dynamic Media de Experience League es un boletín mensual. Está diseñado para ayudarle a ponerse al día con Dynamic Media y Dynamic Media Classic, de modo que pueda obtener ventajas de inmediato. En este boletín informativo de una sola sede encontrará valiosos recursos para la creación de conocimientos. Por ejemplo, hay vídeos explicativos y descripciones generales de soluciones. Obtenga información sobre algunas de las funciones y capacidades clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo y mucho más. '
-feature: Administración de activos
-topic: '"Administrador, profesional empresarial"'
-role: Profesional empresarial
+feature: Asset Management
+topic: "Administrator,Business Practitioner"
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

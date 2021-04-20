@@ -2,8 +2,8 @@
 title: Valores preestablecidos de conjunto por lotes
 description: Descubra cómo automatizar la creación de conjuntos de imágenes y conjuntos de giros mediante valores preestablecidos de conjunto por lotes en Dynamic Media.
 contentOwner: Rick Brough
-feature: Ajustes preestablecidos de imagen, Ajustes preestablecidos de visor
-topic: Profesional empresarial
+feature: Image Presets,Viewer Presets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt

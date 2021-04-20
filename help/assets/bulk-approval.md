@@ -2,8 +2,8 @@
 title: Revisar recursos en carpetas y colecciones
 description: Configure flujos de trabajo de revisión para recursos dentro de una carpeta o una colección y compártalos con revisores o socios creativos para buscar comentarios.
 contentOwner: AG
-feature: Colecciones,Colaboración
-role: Profesional empresarial
+feature: Collections,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

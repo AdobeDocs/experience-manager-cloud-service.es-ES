@@ -1,8 +1,8 @@
 ---
 title: Administración de proyectos de traducción
 description: Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
-feature: Copiar idioma
-role: Administrador
+feature: Language Copy
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

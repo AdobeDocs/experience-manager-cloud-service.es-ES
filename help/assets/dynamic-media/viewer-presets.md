@@ -1,9 +1,9 @@
 ---
 title: Aplicación de ajustes preestablecidos de visor de Dynamic Media
 description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media.
-feature: Ajustes preestablecidos de visualizador, visualizadores
-topic: Administrador, profesional empresarial
-role: Profesional empresarial
+feature: Viewer Presets,Viewers
+topic: Administrator,Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

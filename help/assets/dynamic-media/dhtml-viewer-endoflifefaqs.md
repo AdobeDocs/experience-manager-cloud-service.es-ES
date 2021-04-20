@@ -1,8 +1,8 @@
 ---
 title: Fin de vida útil del visualizador DHTML
 description: A partir del 31 de enero de 2014, la plataforma del visor DHTML finaliza oficialmente su vida útil.
-topic: Profesional empresarial
-role: Administrador, profesional empresarial
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

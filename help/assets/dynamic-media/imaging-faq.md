@@ -1,8 +1,8 @@
 ---
 title: Imágenes inteligentes
 description: '"Aprenda cómo las imágenes inteligentes aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación".'
-feature: Administración de recursos,Representaciones
-topic: Profesional empresarial
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

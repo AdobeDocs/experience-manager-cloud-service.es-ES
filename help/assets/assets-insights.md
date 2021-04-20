@@ -2,7 +2,7 @@
 title: 'Información sobre Assets '
 description: Rastree las clasificaciones de usuarios y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y las soluciones creativas del Adobe.
 contentOwner: AG
-feature: Información sobre Assets, Informes de Asset
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

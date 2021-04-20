@@ -1,8 +1,8 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] Guía'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] recursos de autoayuda y vínculos a documentación'
-feature: Administración de activos
-role: Profesional empresarial, Líder
+feature: Asset Management
+role: Business Practitioner,Leader
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

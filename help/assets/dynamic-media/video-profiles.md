@@ -1,8 +1,8 @@
 ---
 title: Perfiles de vídeo de Dynamic Media
 description: Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede agregar un recorte inteligente a los vídeos.
-feature: Administración de recursos,Perfiles de vídeo,Representaciones
-topic: Profesional empresarial
+feature: Asset Management,Video Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt

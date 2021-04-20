@@ -2,9 +2,9 @@
 title: Adición de recursos de Dynamic Media a las páginas
 description: Aprenda a añadir componentes de Dynamic Media a una página en Adobe Experience Manager as a Cloud Service.
 contentOwner: Rick Brough
-feature: Administración de activos
-topic: Profesional empresarial
-role: Profesional empresarial
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

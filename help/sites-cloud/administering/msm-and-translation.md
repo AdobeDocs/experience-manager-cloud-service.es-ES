@@ -1,8 +1,8 @@
 ---
 title: Traducción y administrador de varios sitios
 description: Aprenda a reutilizar el contenido en su proyecto y a administrar sitios web multilingües en AEM.
-feature: Administración
-role: Administrador
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

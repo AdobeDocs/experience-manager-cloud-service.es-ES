@@ -1,8 +1,8 @@
 ---
 title: Incrustación del visualizador de imágenes o vídeos de Dynamic Media en una página web
 description: Aprenda a incrustar recursos de imagen o vídeo de Dynamic Media en una página web.
-feature: Administración de activos
-topic: Profesional empresarial
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt

@@ -1,8 +1,8 @@
 ---
 title: Envío de recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
-feature: Administración de activos
-topic: Profesional empresarial
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

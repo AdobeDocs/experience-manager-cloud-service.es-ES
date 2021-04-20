@@ -2,8 +2,8 @@
 title: Compartir recursos, carpetas y colecciones como un vínculo
 description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de [!DNL Experience Manager Assets] como un hipervínculo.
 contentOwner: AG
-feature: Administración de activos,Colaboración,Distribución de activos
-role: Profesional empresarial, administrador
+feature: Asset Management,Collaboration,Asset Distribution
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt

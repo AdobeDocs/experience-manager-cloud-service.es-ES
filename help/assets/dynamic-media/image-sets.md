@@ -1,8 +1,8 @@
 ---
 title: Conjuntos de imágenes
 description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media.
-feature: Conjuntos de imágenes
-topic: Profesional empresarial
+feature: Image Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt

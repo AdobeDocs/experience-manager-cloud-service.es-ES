@@ -1,8 +1,8 @@
 ---
 title: Etiquetado inteligente de recursos de vídeo
 description: El Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante [!DNL Adobe Sensei].
-feature: Etiquetas inteligentes,Etiquetado
-role: Administrador, profesional empresarial
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

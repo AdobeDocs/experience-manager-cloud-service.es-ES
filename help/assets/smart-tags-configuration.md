@@ -2,8 +2,8 @@
 title: Etiquetas inteligentes mejoradas
 description: Aplique etiquetas comerciales contextuales y descriptivas mediante el servicio AI y ML de Adobe Sensei para mejorar la detección de recursos y la velocidad de contenido.
 contentOwner: AG
-feature: Etiquetas inteligentes, etiquetado
-role: Administrador
+feature: Smart Tags, Tagging
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

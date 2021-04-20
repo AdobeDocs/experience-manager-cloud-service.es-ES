@@ -3,8 +3,8 @@ title: Administrar colecciones de recursos digitales
 description: Comprenda el concepto de colección en Adobe Experience Manager Assets. Aprenda a recopilar, administrar, editar y recopilar con otros usuarios.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Colecciones,Administración de activos
-role: Profesional empresarial
+feature: Collections,Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

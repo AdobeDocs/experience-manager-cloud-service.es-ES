@@ -2,8 +2,8 @@
 title: Procesamiento de recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
-feature: Microservicios de asset compute,Flujo de trabajo,Información de versión,Procesamiento de recursos
-role: Arquitecto,Administrador
+feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

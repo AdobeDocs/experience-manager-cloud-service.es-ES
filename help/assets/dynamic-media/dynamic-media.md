@@ -1,8 +1,8 @@
 ---
 title: Trabajo con Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
-topic: '"Administrador, profesional empresarial"'
-role: Administrador, profesional empresarial
+topic: "Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

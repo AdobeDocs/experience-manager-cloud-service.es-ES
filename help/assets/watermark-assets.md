@@ -2,8 +2,8 @@
 title: Marca de agua de los recursos
 description: Agregue una marca de agua a los recursos digitales.
 contentOwner: AG
-feature: Administración de recursos,Publicación
-role: Profesional empresarial, administrador
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

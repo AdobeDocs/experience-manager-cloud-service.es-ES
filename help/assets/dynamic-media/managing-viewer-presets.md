@@ -1,8 +1,8 @@
 ---
 title: Administración de ajustes preestablecidos de visor
 description: Aprenda a crear y administrar ajustes preestablecidos de visor en Dynamic Media.
-feature: Ajustes preestablecidos de visualizador, visualizadores
-topic: Profesional empresarial
+feature: Viewer Presets,Viewers
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt

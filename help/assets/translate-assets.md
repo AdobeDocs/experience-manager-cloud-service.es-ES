@@ -2,8 +2,8 @@
 title: Crear y administrar recursos digitales en varios idiomas
 description: Aprenda a automatizar los flujos de trabajo para traducir recursos, incluidos binarios, metadatos y etiquetas a varios idiomas.
 contentOwner: AG
-feature: Administración de activos,Traducción
-role: Administrador, profesional empresarial
+feature: Asset Management,Translation
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

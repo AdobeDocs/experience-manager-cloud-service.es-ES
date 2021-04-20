@@ -2,8 +2,8 @@
 title: Insertar y extraer archivos en [!DNL Assets]
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
-feature: Administración de activos
-role: Profesional empresarial
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

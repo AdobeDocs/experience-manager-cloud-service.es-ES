@@ -1,8 +1,8 @@
 ---
 title: Trabajar con selectores
 description: Obtenga información sobre los métodos que puede utilizar para seleccionar recursos para imágenes interactivas, vídeos interactivos y banners de carrusel en Dynamic Media.
-topic: Profesional empresarial
-role: Profesional empresarial
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

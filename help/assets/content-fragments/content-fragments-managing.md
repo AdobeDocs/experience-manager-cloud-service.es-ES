@@ -1,8 +1,8 @@
 ---
 title: Administrar fragmentos de contenido
 description: Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
-feature: Fragmentos de contenido
-role: Profesional empresarial
+feature: Content Fragments
+role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562

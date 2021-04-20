@@ -2,8 +2,8 @@
 title: Importe y exporte metadatos de recursos de manera masiva
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
-feature: Metadatos
-role: Profesional empresarial, administrador
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

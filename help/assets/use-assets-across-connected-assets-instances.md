@@ -2,7 +2,7 @@
 title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL Sites]
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
-feature: Administración de activos,Recursos conectados,Distribución de activos,Usuarios y grupos
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt

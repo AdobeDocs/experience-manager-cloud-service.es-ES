@@ -2,8 +2,8 @@
 title: Descargar recursos
 description: Descargue recursos de [!DNL Adobe Experience Manager Assets] y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: AG
-feature: Administración de activos
-role: Profesional empresarial
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

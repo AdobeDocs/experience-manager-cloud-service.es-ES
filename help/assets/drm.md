@@ -2,7 +2,7 @@
 title: Digital Rights Management en [!DNL Assets]
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información para los recursos con licencia en [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Administración de recursos,DRM
+feature: Asset Management,DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt

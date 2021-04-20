@@ -3,7 +3,7 @@ title: Administre recursos digitales
 description: Obtenga información sobre varios métodos de edición y administración de recursos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Administración de recursos,Publicación,Colaboración,Procesamiento de recursos
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt

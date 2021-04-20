@@ -1,9 +1,9 @@
 ---
 title: Aplicar ajustes preestablecidos de imagen de Dynamic Media
 description: Aprenda a aplicar ajustes preestablecidos de imagen en Dynamic Media.
-feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
-topic: Profesional empresarial
-role: Profesional empresarial
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Etiquetado automático de recursos con etiquetas generadas por AI
 description: Etiquete los recursos utilizando servicios inteligentes artificialmente que apliquen etiquetas comerciales contextuales y descriptivas mediante el servicio  [!DNL Adobe Sensei] .
 contentOwner: AG
-feature: Etiquetas inteligentes,Etiquetado
-role: Administrador, profesional empresarial
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

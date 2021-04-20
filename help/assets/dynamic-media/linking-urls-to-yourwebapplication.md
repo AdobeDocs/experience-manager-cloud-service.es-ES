@@ -1,8 +1,8 @@
 ---
 title: Vincular URL en la aplicación web
 description: Aprenda a vincular direcciones URL a la aplicación web en Dynamic Media.
-topic: Profesional empresarial
-role: Profesional empresarial
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

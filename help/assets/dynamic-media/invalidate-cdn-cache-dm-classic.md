@@ -1,9 +1,9 @@
 ---
 title: Invalidación de la caché de CDN mediante Dynamic Media Classic
 description: '"Aprenda a invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido) para permitirle actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché".'
-feature: Administración de recursos,Dynamic Media Classic
-topic: Profesional empresarial
-role: Administrador, profesional empresarial
+feature: Asset Management,Dynamic Media Classic
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

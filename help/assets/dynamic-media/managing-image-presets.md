@@ -1,8 +1,8 @@
 ---
 title: Administración de ajustes preestablecidos de imagen
 description: '"Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos."'
-feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
-topic: Profesional empresarial
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

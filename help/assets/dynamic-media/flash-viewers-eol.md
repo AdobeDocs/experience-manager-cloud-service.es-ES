@@ -1,8 +1,8 @@
 ---
 title: Aviso de fin de vida útil para el visualizador Flash
 description: A partir del 31 de enero de 2017, la compatibilidad con la plataforma del visor de Flash finaliza oficialmente.
-topic: Profesional empresarial
-role: Administrador, profesional empresarial
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

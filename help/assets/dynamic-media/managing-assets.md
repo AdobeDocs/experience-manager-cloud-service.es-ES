@@ -1,9 +1,9 @@
 ---
 title: Acerca de la administración de recursos de Dynamic Media
 description: Obtenga información sobre cómo trabajar con recursos de Dynamic Media.
-feature: Administración de activos
-topic: Profesional empresarial
-role: Administrador, profesional empresarial
+feature: Asset Management
+topic: Business Practitioner
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

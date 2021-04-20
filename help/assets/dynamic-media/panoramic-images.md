@@ -1,9 +1,9 @@
 ---
 title: Imágenes panorámicas
 description: Aprenda a trabajar con imágenes panorámicas en Dynamic Media.
-feature: Imágenes panorámicas
-topic: Profesional empresarial
-role: Profesional empresarial
+feature: Panoramic Images
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

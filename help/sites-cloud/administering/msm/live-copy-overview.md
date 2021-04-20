@@ -1,8 +1,8 @@
 ---
 title: Consola de información general de Live Copy
 description: Obtenga información sobre los conceptos básicos de la consola de información general de Live Copy para comprender rápidamente el estado de las Live Copies y sincronizar el contenido.
-feature: Administrador de varios sitios
-role: Administrador
+feature: Multi Site Manager
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt

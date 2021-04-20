@@ -2,8 +2,8 @@
 title: Flujo de actividad en la cronología
 description: Este artículo describe cómo mostrar los registros de actividad de los recursos en la cronología.
 contentOwner: AG
-feature: Informes de activos,Administración de activos
-role: Administrador, profesional empresarial
+feature: Asset Reports,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

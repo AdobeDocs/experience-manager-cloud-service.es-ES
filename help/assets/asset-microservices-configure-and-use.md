@@ -2,8 +2,8 @@
 title: Configuración y uso de los microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
-feature: Microservicios de asset compute,Flujo de trabajo,Procesamiento de recursos
-role: Arquitecto,Administrador
+feature: Asset Compute Microservices,Workflow,Asset Processing
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

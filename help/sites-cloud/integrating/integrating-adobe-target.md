@@ -1,8 +1,8 @@
 ---
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
-feature: Administración
-role: Administrador
+feature: Administering
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt

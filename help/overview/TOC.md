@@ -4,8 +4,8 @@ user-guide-title: Descripción general de AEM as a Cloud Service
 breadcrumb-title: Guía general
 user-guide-description: Haga clic aquí si desea acceder a una descripción general de Experience Manager as a Cloud Service, incluida una introducción, terminología, etc.
 feature-set: Experience Manager
-feature: Información de la versión
-role: Encabezado, Arquitecto, Desarrollador, Arquitecto de datos, Ingeniero de datos, Administrador, Profesional de negocios
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

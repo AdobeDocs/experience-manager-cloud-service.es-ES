@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as a Cloud Service en la API HTTP de Assets
 description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de AEM función de envío sin encabezado.
-feature: Fragmentos de contenido,API HTTP de recursos
+feature: Content Fragments,Assets HTTP API
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

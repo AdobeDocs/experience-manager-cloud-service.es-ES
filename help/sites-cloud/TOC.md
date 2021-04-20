@@ -5,8 +5,8 @@ user-guide-title: Creación de contenido en AEM as a Cloud Service
 breadcrumb-title: Guía de creación
 user-guide-description: Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service.
 feature-set: Experience Manager Sites
-feature: 'Creación  '
-role: Profesional empresarial
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

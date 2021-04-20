@@ -1,7 +1,7 @@
 ---
 title: Entrega de contenido sin objetivos mediante fragmentos de contenido con GraphQL
 description: Aprenda a utilizar AEM fragmentos de contenido con GraphQL para la entrega de contenido sin encabezado.
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: Business Practitioner
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 translation-type: tm+mt

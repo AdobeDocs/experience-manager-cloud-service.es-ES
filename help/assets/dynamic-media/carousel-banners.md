@@ -1,8 +1,8 @@
 ---
 title: Banner de carrusel
 description: Aprenda a trabajar con los titulares de carrusel en Dynamic Media.
-feature: Banner de carrusel
-topic: Profesional empresarial
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
