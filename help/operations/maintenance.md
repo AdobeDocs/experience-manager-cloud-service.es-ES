@@ -3,9 +3,9 @@ title: Tareas de mantenimiento en AEM como Cloud Service
 description: Tareas de mantenimiento en AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
+source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -147,4 +147,6 @@ Ejemplo de código 3
 
 | Configuración de la ventana de mantenimiento | Quién es el propietario de la configuración | Tipo de configuración | Lugar de residencia | Ejemplo | Parámetros |
 |---|---|---|---|---|---|
-| Cada día | Cliente | Definición de nodo JCR | Ver la ubicación 2 más abajo | Consulte el ejemplo de código 2 a continuación | `windowSchedule= daily` (este valor no debe cambiarse).  <br> `windowStartTime=HH:MM` usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario. <br> **windowEndTime= HH:** Usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado. |
+| Cada día | Cliente | Definición de nodo JCR | Véase la ubicación 1 a continuación | Consulte el ejemplo de código 1 a continuación | **windowSchedule= daily**  (este valor no debe cambiarse).  <br> **windowStartTime= HH:**  usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario. <br> **windowEndTime= HH:** Usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado. |
+| Cada semana | Cliente | Definición de nodo JCR | Ver la ubicación 2 más abajo | Consulte el ejemplo de código 2 a continuación | **windowSchedule= weekly**  (este valor no debe cambiarse).  <br> **windowStartTime= HH:**  usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal. <br> **windowEndTime= HH:** Usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento semanal deben dejar de ejecutarse si aún no se han completado. <br> **windowScheduleWeekdays= Matriz de 2 valores entre 1 y 7**  (por ejemplo,  [5,5]). El primer valor de la matriz es el día de inicio cuando se programa el trabajo y el segundo valor es el día de finalización cuando se detiene el trabajo. La hora exacta del inicio y del final se rige por windowStartTime y windowEndTime respectivamente. |
+
