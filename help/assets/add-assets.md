@@ -5,32 +5,26 @@ feature: Administración de recursos,Cargar
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '2059'
+source-wordcount: '2065'
 ht-degree: 1%
 
 ---
 
-# Agregar recursos digitales a Adobe Experience Manager {#add-assets-to-experience-manager}
+# Agregar recursos digitales a [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
+
+[!DNL Adobe Experience Manager Assets] acepta muchos tipos de recursos digitales de muchas fuentes. Almacena los binarios y las representaciones creadas, puede realizar el procesamiento de recursos mediante diversos flujos de trabajo y servicios [!DNL Adobe Sensei], lo que permite la distribución a través de muchos canales en muchas superficies.
 
 [!DNL Adobe Experience Manager] enriquece el contenido binario de los archivos digitales cargados con metadatos enriquecidos, etiquetas inteligentes, representaciones y otros servicios de administración de recursos digitales (DAM). Puede cargar varios tipos de archivos, como imágenes, documentos y archivos de imagen sin procesar, desde la carpeta local o una unidad de red a [!DNL Experience Manager Assets].
 
-Se proporcionan varios métodos de carga. Además de la carga del explorador más utilizada, existen otros métodos para agregar recursos al repositorio [!DNL Experience Manager], incluidos los clientes de escritorio, como Adobe Asset Link o la aplicación de escritorio [!DNL Experience Manager], los scripts de carga e ingesta que los clientes podrían crear y las integraciones de ingesta automatizada añadidas como [!DNL Experience Manager] extensiones.
-
-Nos centraremos en los métodos de carga para los usuarios finales aquí y proporcionaremos vínculos a artículos que describen aspectos técnicos de la carga y la ingesta de recursos mediante [!DNL Experience Manager] API y SDK.
+Además de la carga del explorador más utilizada, existen otros métodos para agregar recursos al repositorio [!DNL Experience Manager], incluidos los clientes de escritorio, como Adobe Asset Link o la aplicación de escritorio [!DNL Experience Manager], los scripts de carga e ingesta que los clientes podrían crear y las integraciones de ingesta automatizada añadidas como [!DNL Experience Manager] extensiones.
 
 Aunque puede cargar y administrar cualquier archivo binario en [!DNL Experience Manager], los formatos de archivo más utilizados son compatibles con servicios adicionales, como la extracción de metadatos o la generación de vista previa/representación. Consulte los [formatos de archivo compatibles](file-format-support.md) para obtener más información.
 
 También puede optar por realizar un procesamiento adicional en los recursos cargados. Se pueden configurar varios perfiles de procesamiento de recursos en la carpeta, en la que se cargan los recursos, para añadir metadatos, representaciones o servicios de procesamiento de imágenes específicos. Consulte [procesar recursos al cargarlos](#process-when-uploaded).
 
->[!NOTE]
->
->[!DNL Experience Manager] como a  [!DNL Cloud Service] aprovecha una nueva forma de cargar activos: carga binaria directa. De forma predeterminada, es compatible con las funcionalidades de producto y los clientes listos para usar, como la interfaz de usuario [!DNL Experience Manager], [!DNL Adobe Asset Link], la aplicación de escritorio [!DNL Experience Manager] y, por lo tanto, es transparente para los usuarios finales.
->
->El código de carga personalizado o ampliado por los equipos técnicos de los clientes debe utilizar las nuevas API y protocolos de carga.
-
-Assets as a [!DNL Cloud Service] proporciona los siguientes métodos de carga. Adobe recomienda comprender el caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
+[!DNL Assets] proporciona los siguientes métodos de carga. Adobe recomienda comprender el caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
 | Método de carga | ¿Cuándo usar? | Personal principal |
 |---------------------|----------------|-----------------|
@@ -112,19 +106,13 @@ Puede cargar un recurso con la misma ruta (el mismo nombre y ubicación) que el 
 
 * Reemplazar recurso existente: Si reemplaza un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, anotaciones, recorte, etc.) que haya realizado en el recurso existente.
 * Cree otra versión: Se crea una nueva versión del recurso existente en el repositorio. Puede ver las dos versiones en la [!UICONTROL Línea de tiempo] y puede revertir a la versión existente anteriormente si es necesario.
-* Mantenga ambos: Si decide mantener ambos recursos, se cambiará el nombre del nuevo recurso por el número `1` anexado a su nombre.
-
->[!NOTE]
->
->Cuando selecciona **[!UICONTROL Reemplazar]** en el cuadro de diálogo [!UICONTROL Conflicto de nombres], el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
->
->Si Asset Insights está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
+* Mantenga ambos: Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso.
 
 Para conservar el recurso duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
 
 ### Administración de nombres de archivo y caracteres prohibidos {#filename-handling}
 
-[!DNL Experience Manager Assets] intenta evitar cargar recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o más caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimina estos caracteres o carga con un nombre permitido. Algunos métodos de carga no le impiden cargar recursos con caracteres prohibidos en los nombres de archivo, sino que los sustituye por `-`.
+[!DNL Experience Manager Assets] intenta evitar cargar recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o más caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimina estos caracteres o carga con un nombre permitido.
 
 Para adaptarlo a convenciones específicas de nomenclatura de archivos para su organización, el cuadro de diálogo [!UICONTROL Cargar recursos] le permite especificar nombres largos para los archivos que carga. No se admiten los siguientes caracteres (lista de) separados por espacios:
 
@@ -226,7 +214,18 @@ Los detalles técnicos de las API de carga y el protocolo, así como los víncul
 
 ## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
 
+* La carga binaria directa es un nuevo método para cargar recursos. Se admite de forma predeterminada en las capacidades del producto y en los clientes, como la interfaz de usuario [!DNL Experience Manager], [!DNL Adobe Asset Link] y la aplicación de escritorio [!DNL Experience Manager]. Cualquier código personalizado que los equipos técnicos de los clientes personalicen o amplíen debe utilizar las nuevas API y protocolos de carga.
+
 * Adobe recomienda añadir hasta 1000 activos en cada carpeta en [!DNL Experience Manager Assets]. Aunque puede agregar más recursos a una carpeta, es posible que vea problemas de rendimiento como una navegación más lenta a dichas carpetas.
+
+* Cuando selecciona **[!UICONTROL Reemplazar]** en el cuadro de diálogo [!UICONTROL Conflicto de nombres], el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior. Si [Asset Insights](/help/assets/assets-insights.md) está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
+
+* Algunos métodos de carga no le impiden cargar recursos con [caracteres prohibidos](#filename-handling) en los nombres de archivo. Los caracteres se sustituyen por el símbolo `-`.
+
+* La carga de recursos mediante el explorador solo admite listas de archivos planos y no jerarquías de carpetas anidadas. Para cargar todos los recursos dentro de una carpeta anidada, considere la posibilidad de utilizar [aplicación de escritorio](#upload-assets-desktop-clients).
+
+<!-- TBD: Link to file name handling in DA docs when it is documented. 
+-->
 
 >[!MORELIKETHIS]
 >
