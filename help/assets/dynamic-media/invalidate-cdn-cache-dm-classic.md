@@ -1,17 +1,16 @@
 ---
 title: Invalidación de la caché de CDN mediante Dynamic Media Classic
 description: '"Aprenda a invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido) para permitirle actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché".'
-feature: Asset Management,Dynamic Media Classic
-topic: Business Practitioner
+feature: Administración de recursos,Dynamic Media Classic
 role: Administrator,Business Practitioner
+exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '688'
 ht-degree: 14%
 
 ---
-
 
 # Invalidación de la caché de CDN mediante Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
@@ -62,4 +61,3 @@ Consulte también [Información general de caché en Dynamic Media Classic](http
    >Al seleccionar recursos y, a continuación, pulsar **[!UICONTROL Archivo > Invalidar CDN]**, Dynamic Media utiliza una plantilla de CDN no válida para crear automáticamente direcciones URL que se van a invalidar desde la CDN. Si no hay nada en el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**, aparecerá una lista de URL en blanco. El almacenamiento en caché en la CDN no está basado en recursos; se basa en la URL. Por lo tanto, es necesario conocer las direcciones URL completas que se encuentran en el sitio web. Después de establecer dichas direcciones URL, puede agregarlas al cuadro de texto **[!UICONTROL Invalidar plantilla CDN]** en los pasos anteriores. A continuación, puede seleccionar esos recursos e invalidar las direcciones URL en un solo paso.
    >
    >Otra opción es agregar direcciones URL completas a la lista **[!UICONTROL Invalidar CDN]**. Si sigue este método, no es necesario seleccionar recursos en Dynamic Media Classic antes de ir a la opción **[!UICONTROL File > Invalidate CDN]**.
-
