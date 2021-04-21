@@ -1,17 +1,16 @@
 ---
 title: Previsualización de recursos
 description: Obtenga información sobre cómo previsualizar recursos en Dynamic Media.
-feature: Asset Management
-topic: Business Practitioner
+feature: Administración de activos
 role: Business Practitioner
+exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 2%
+source-wordcount: '1211'
+ht-degree: 1%
 
 ---
-
 
 # Vista previa de recursos{#previewing-assets}
 
