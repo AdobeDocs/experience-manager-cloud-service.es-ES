@@ -2,14 +2,13 @@
 title: Valores preestablecidos de conjunto por lotes
 description: Descubra cómo automatizar la creación de conjuntos de imágenes y conjuntos de giros mediante valores preestablecidos de conjunto por lotes en Dynamic Media.
 contentOwner: Rick Brough
-feature: Image Presets,Viewer Presets
-topic: Business Practitioner
+feature: Ajustes preestablecidos de imagen, Ajustes preestablecidos de visor
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3444'
 ht-degree: 1%
 
 ---
@@ -205,7 +204,7 @@ Si copia un ajuste preestablecido existente al que hacen referencia las carpetas
 
 ## Acerca de la eliminación de los ajustes preestablecidos de conjuntos de lotes de las carpetas {#remove-bsp-from-folder}
 
-Al quitar los ajustes preestablecidos de conjuntos de lotes de las carpetas, los recursos nuevos que cargue en estas carpetas no tendrán el ajuste preestablecido de conjuntos de lotes aplicado. Los recursos existentes en la carpeta que ya se habían agregado al conjunto de imágenes o al conjunto de giros basado en el ajuste preestablecido de conjunto de lotes que se aplicó a la carpeta siguen mostrándose tal cual.
+Al quitar los ajustes preestablecidos de conjuntos de lotes de las carpetas, los recursos nuevos que cargue en estas carpetas no tendrán el ajuste preestablecido de conjuntos de lotes aplicado. Los recursos existentes en la carpeta que ya se habían agregado al conjunto de imágenes o al conjunto de giros en función del ajuste preestablecido de conjunto de lotes que se aplicó a la carpeta siguen mostrándose tal cual.
 
 Si desea *eliminar* ajustes preestablecidos de carpetas, consulte [Eliminación de ajustes preestablecidos de conjuntos de lotes](#delete-bsp).
 
