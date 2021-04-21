@@ -2,16 +2,16 @@
 title: Perfiles de metadatos
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
-feature: Metadata
+feature: Metadatos
 role: Business Practitioner,Administrator
+exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 7ad68c071d9a4089ec8612a3c55067dc0b072fc8
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1236'
 ht-degree: 20%
 
 ---
-
 
 # Perfiles de metadatos {#metadata-profiles}
 
@@ -63,13 +63,11 @@ Edite las siguientes propiedades para el componente **[!UICONTROL Description]**
 
 ## Aplicar un perfil de metadatos a las carpetas {#applying-a-metadata-profile-to-folders}
 
-Al asignar un perfil de metadatos a una carpeta, las subcarpetas heredan automáticamente el perfil de su carpeta principal. Esto significa que solo puede asignar un perfil de metadatos a una carpeta. Como tal, considere detenidamente la estructura de carpetas en la que carga, almacena, utiliza y archiva recursos.
+Al asignar un perfil de metadatos a una carpeta, las subcarpetas heredan automáticamente el perfil de su carpeta principal. La herencia se detiene cuando se aplica un perfil diferente a una subcarpeta. Solo puede asignar un perfil de metadatos a una carpeta. Por lo tanto, considere detenidamente la estructura de carpetas en la que carga, almacena, utiliza y archiva recursos.
 
-Si ha asignado un perfil de metadatos diferente a una carpeta, el nuevo perfil anula el perfil anterior. Los recursos de carpeta existentes no cambian. El nuevo perfil se aplica a los recursos que se agregan a la carpeta más adelante.
+Si ha asignado un perfil de metadatos diferente a una carpeta, el nuevo perfil anula el perfil anterior. Los recursos de carpeta existentes no cambian. El nuevo perfil se aplica a los recursos que se agregan a la carpeta después del cambio. Puede aplicar perfiles de metadatos a carpetas específicas o globalmente a todos los recursos.
 
 Las carpetas que tienen un perfil asignado se indican en la interfaz de usuario por el nombre del perfil que aparece en el nombre de la tarjeta.
-
-Puede aplicar perfiles de metadatos a carpetas específicas o globalmente a todos los recursos.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de metadatos existente que haya cambiado posteriormente. <!-- See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile). -->
 
