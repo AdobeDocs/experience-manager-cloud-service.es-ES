@@ -9,10 +9,10 @@ feature: Recursos 3D
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 58d09d12ce2e8415eb50c288eeab3167a92fae57
 workflow-type: tm+mt
-source-wordcount: '2269'
-ht-degree: 4%
+source-wordcount: '2251'
+ht-degree: 5%
 
 ---
 
@@ -102,7 +102,7 @@ Además, las capacidades del equipo cliente (como una estación de trabajo, un p
 
 Consulte también [Vista previa de recursos mediante la interfaz de software](/help/assets/dynamic-media/previewing-assets.md).
 
-**Para ver e interactuar con un recurso 3D desde la página de detalles del recurso**
+**Para ver e interactuar con un recurso 3D desde la página de detalles del recurso:**
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 
@@ -114,20 +114,14 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
 1. Para abrir el recurso en la página Detalles , pulse la tarjeta del recurso 3D.
 1. En la página Detalles del recurso 3D, realice una de las acciones siguientes:
 
-   * **Girar la cámara** : Girar la vista alrededor de la escena 3D y los objetos.
-      * _Mouse_: Haga clic y arrastre con el botón izquierdo.
-      * _Pantalla_ táctil: Presione con un solo dedo y arrastre.
-   * **Panorre la cámara** : desplace la vista hacia la izquierda, hacia la derecha, hacia arriba o hacia abajo.
-      * _Mouse_: Haga clic con el botón derecho y arrastre.
-      * _Pantalla_ táctil: Presione con dos dedos y arrastre.
-   * **Zoom de la cámara** : Aumente el zoom de la cámara para moverse dentro y fuera de las áreas de la escena 3D.
-      * _Mouse_: Rueda de desplazamiento.
-      * _Pantalla_ táctil: Pellizque con dos dedos.
-   * **Vuelva a introducir la cámara** : vuelva a introducirla en un punto de un objeto de la escena 3D.
-      * _Mouse_: Haga doble clic en .
-      * _Pantalla_ táctil: Toque dos veces.
-   * **Restablecer** : cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable.
-   * **Modo de pantalla completa** : para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa.
+   | Ver | Descripción | Acción del ratón | Acción de pantalla táctil |
+   | --- | --- | --- | --- |
+   | **Gire la cámara** | Haga girar la vista alrededor de la escena 3D y de los objetos. | Haga clic y arrastre con el botón izquierdo. | Presione con un solo dedo y arrastre. |
+   | **Panorámica de la cámara** | Desplace la vista hacia la izquierda, hacia la derecha, hacia arriba o hacia abajo. | Haga clic con el botón derecho y arrastre. | Presione con dos dedos y arrastre. |
+   | **Ampliar la cámara** | Entrada y salida de áreas en la escena 3D. | Rueda de desplazamiento. | Pellizque con dos dedos. |
+   | **Vuelva a introducir la cámara** | Vuelva a introducir la cámara en un punto de un objeto de la escena 3D. | Hacer doble clic. | Toque dos veces. |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
+   | **Modo de pantalla completa** | Para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa . |  |  |
 
 1. En la esquina superior derecha de la página, toque **[!UICONTROL Cerrar]** para volver a la página Recursos.
 
@@ -141,7 +135,7 @@ Cuando una página web está en modo **[!UICONTROL Editar]**, no es posible inte
 
 Consulte también [Vista previa de recursos mediante la interfaz de software](/help/assets/dynamic-media/previewing-assets.md).
 
-**Para ver e interactuar con un recurso 3D dentro de un componente de medios 3D**
+**Para ver e interactuar con un recurso 3D dentro de un componente de medios 3D:**
 
 1. Mientras una página web está en modo **[!UICONTROL Edit]** , realice una de las siguientes acciones:
 
@@ -153,20 +147,14 @@ componente de medios 3D Un recurso 3D totalmente interactivo tal y como se muest
 
 1. Cuando esté en modo **[!UICONTROL Preview]**, realice una de las siguientes acciones:
 
-   * **Girar la cámara** : Girar la vista alrededor de la escena 3D y los objetos.
-      * _Mouse_: Haga clic y arrastre con el botón izquierdo.
-      * _Pantalla_ táctil: Presione con un solo dedo y arrastre.
-   * **Panorre la cámara** : desplace la vista hacia la izquierda, hacia la derecha, hacia arriba o hacia abajo.
-      * _Mouse_: Haga clic con el botón derecho y arrastre.
-      * _Pantalla_ táctil: Presione con dos dedos y arrastre.
-   * **Zoom de la cámara** : Aumente el zoom de la cámara para moverse dentro y fuera de las áreas de la escena 3D.
-      * _Mouse_: Rueda de desplazamiento.
-      * _Pantalla_ táctil: Pellizque con dos dedos.
-   * **Vuelva a introducir la cámara** : vuelva a introducirla en un punto de un objeto de la escena 3D.
-      * _Mouse_: Haga doble clic en .
-      * _Pantalla_ táctil: Toque dos veces.
-   * **Restablecer** : cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable.
-   * **Modo de pantalla completa** : para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa.
+   | Ver | Descripción | Acción del ratón | Acción de pantalla táctil |
+   | --- | --- | --- | --- |
+   | **Gire la cámara** | Haga girar la vista alrededor de la escena 3D y de los objetos. | Haga clic y arrastre con el botón izquierdo. | Presione con un solo dedo y arrastre. |
+   | **Panorámica de la cámara** | Desplace la vista hacia la izquierda, hacia la derecha, hacia arriba o hacia abajo. | Haga clic con el botón derecho y arrastre. | Presione con dos dedos y arrastre. |
+   | **Ampliar la cámara** | Entrada y salida de áreas en la escena 3D. | Rueda de desplazamiento. | Pellizque con dos dedos. |
+   | **Vuelva a introducir la cámara** | Vuelva a introducir la cámara en un punto de un objeto de la escena 3D. | Hacer doble clic. | Toque dos veces. |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
+   | **Modo de pantalla completa** | Para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa . |  |  |
 
 ## Acerca del trabajo con el componente multimedia 3D {#working-with-three-d-media-component}
 
@@ -176,7 +164,6 @@ Dynamic Media incluye un componente de medios 3D de Dynamic Media que puede util
 * [Adición del componente de medios 3D a una página web](#adding-the-three-d-media-component-to-a-web-page)
    * [Opcional: Configuración del componente de medios 3D](#configuring-the-three-d-component)
 * [Asignación de un recurso 3D al componente de medios 3D](#assigning-a-three-d-asset-to-the-component)
-
 
 ## Adición del componente de medios 3D a la plantilla de página {#adding-three-d-media-component-to-page-template}
 
@@ -261,7 +248,7 @@ Consulte también [Publicación de recursos de Dynamic Media](/help/assets/dynam
 
 Consulte también [Publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**Para publicar recursos estáticos de Dynamic Media 3D**
+**Para publicar recursos estáticos de Dynamic Media 3D:**
 
 1. Abra un recurso 3D (formato de archivo GLB, OBJ o STL) para verlo en la página Detalles .
 1. En la barra de herramientas, pulse **[!UICONTROL Publicación rápida]**.
