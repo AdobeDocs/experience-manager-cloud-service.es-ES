@@ -1,15 +1,14 @@
 ---
 title: Entrega de imágenes optimizadas para un sitio interactivo
 description: Aprenda a utilizar la función de código interactivo para ofrecer imágenes optimizadas de Dynamic Media.
-feature: Asset Management
-topic: Business Practitioner
+feature: Administración de activos
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 13%
+source-wordcount: '324'
+ht-degree: 12%
 
 ---
 
