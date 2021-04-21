@@ -3,14 +3,13 @@ sub-product: Notas de la versión de AEM as a Cloud Service
 user-guide-title: Notas de la versión de AEM as a Cloud Service
 breadcrumb-title: Notas de la versión
 user-guide-description: Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos.
-feature-set: Experience Manager
-feature: Release Information
+feature: Información de la versión
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 91%
+source-wordcount: '112'
+ht-degree: 100%
 
 ---
 
