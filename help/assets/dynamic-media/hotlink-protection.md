@@ -1,17 +1,16 @@
 ---
 title: Activar la protección de los vínculos interactivos de Dynamic Media
 description: Obtenga información sobre cómo activar la protección de los vínculos interactivos en Dynamic Media.
-feature: Asset Management
-topic: Business Practitioner
+feature: Administración de activos
 role: Business Practitioner
+exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 8%
+source-wordcount: '192'
+ht-degree: 6%
 
 ---
-
 
 # Activar la protección de los vínculos interactivos de Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
