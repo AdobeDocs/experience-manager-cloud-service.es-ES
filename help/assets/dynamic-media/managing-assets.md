@@ -1,17 +1,16 @@
 ---
 title: Acerca de la administración de recursos de Dynamic Media
 description: Obtenga información sobre cómo trabajar con recursos de Dynamic Media.
-feature: Asset Management
-topic: Business Practitioner
+feature: Administración de activos
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 14%
+source-wordcount: '121'
+ht-degree: 13%
 
 ---
-
 
 # Acerca de la administración de recursos de Dynamic Media {#managing-assets}
 
@@ -27,4 +26,3 @@ Los siguientes temas describen lo que puede hacer para administrar los recursos 
 * [Vista previa de recursos de Dynamic Media](previewing-assets.md)
 * [Publicación de recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
 * [Trabajar con selectores](working-with-selectors.md)
-
