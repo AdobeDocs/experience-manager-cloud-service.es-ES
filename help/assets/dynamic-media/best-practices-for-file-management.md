@@ -2,14 +2,13 @@
 title: Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de imagen o Perfiles de vídeo de Dynamic Media
 description: '"Sugerencias y prácticas recomendadas para nombrar, organizar y administrar archivos de imagen y archivos de recursos de vídeo de Dynamic Media".'
 contentOwner: Rick Brough
-feature: Asset Management,Image Profiles,Video Profiles
-topic: Business Practitioner
+feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
