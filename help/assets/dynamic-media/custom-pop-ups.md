@@ -1,17 +1,16 @@
 ---
 title: Uso de vistas rápidas para crear ventanas emergentes personalizadas
 description: '"Descubra cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, a través de la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes".'
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: Imágenes interactivas,Vídeos interactivos,Banners de carrusel
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 1%
 
 ---
-
 
 # Uso de vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
@@ -264,4 +263,3 @@ EjemploEste ejemplo utiliza el visualizador de imágenes interactivo.
    `s7interactiveimageviewer.init()`
 
    Después de incrustar el visor en la página host, asegúrese de que se crea la instancia del visor. Además, asegúrese de que los controladores se cargan antes de que se invoque el visor con `init()`.
-
