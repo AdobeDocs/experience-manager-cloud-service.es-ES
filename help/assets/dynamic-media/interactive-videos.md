@@ -1,14 +1,13 @@
 ---
 title: Vídeos interactivos
 description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dynamic Media.
-feature: Interactive Videos
-topic: Business Practitioner
+feature: Vídeos interactivos
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 4%
 
 ---
@@ -55,7 +54,7 @@ Mire este tutorial de 7 minutos y 30 segundos sobre [cómo se crean los vídeos 
 
 ### Seminario web de éxito del cliente de Adobe {#adobe-customer-success-webinar}
 
-El seminario web [Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en Recursos Experience Manager](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) le enseña a utilizar vídeo interactivo y otras funciones para enlazar eventos impulsados por conversión con el contenido de marketing de vídeo.
+El seminario web [Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en Recursos de Experience Manager](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) le enseña a utilizar vídeo interactivo y otras funciones para enlazar eventos impulsados por conversión con el contenido de marketing de vídeo.
 
 ## Inicio rápido: Vídeos interactivos {#quick-start-interactive-videos}
 
@@ -469,7 +468,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
       En la línea de tiempo, pulse un segmento que desee dividir por la mitad y, a continuación, pulse **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Dividir un segmento de diez segundos seleccionado en dos segmentos de cinco segundos cada uno.
 
