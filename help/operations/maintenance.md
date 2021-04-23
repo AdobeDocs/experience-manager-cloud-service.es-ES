@@ -3,9 +3,9 @@ title: Tareas de mantenimiento en AEM como Cloud Service
 description: Tareas de mantenimiento en AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
+source-git-commit: c7e954e3ed49d6189d050b2c33c04a9266853758
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '919'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
 | Depuración de flujo de trabajo | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento integrado en  `/libs` creando propiedades en la `/apps/settings/granite/operations/maintenance/granite_weekly` carpeta  `granite_daily`. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. <br> Habilite la tarea de mantenimiento añadiendo otro nodo bajo el nodo anterior (asígnele el nombre  `granite_WorkflowPurgeTask`) con las propiedades adecuadas. <br> Configure las propiedades de OSGI consulte la documentación de la tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 | Depuración del proyecto | Cliente | Debe hacerse en github. <br> Anule el nodo de configuración de la ventana de mantenimiento predeterminado en  `/libs` creando propiedades en la carpeta  `/apps/settings/granite/operations/maintenance/granite_weekly` o  `granite_daily`. Consulte la tabla Ventana de mantenimiento a continuación para obtener más información sobre la configuración. <br> Habilite la tarea de mantenimiento añadiendo un nodo bajo el nodo anterior (asígnele el nombre  `granite_ProjectPurgeTask`) con las propiedades adecuadas. <br> Configurar las propiedades de OSGI consulte la documentación de la tarea de mantenimiento de  [AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
-Los clientes pueden programar cada una de las tareas de Purga de flujo de trabajo, Depuración de tareas ad hoc y Mantenimiento de purga de proyectos para que se ejecuten durante las ventanas de mantenimiento diario, semanal o mensual. Estas configuraciones deben editarse directamente en el control de código fuente. La tabla siguiente describe los parámetros de configuración disponibles para cada una de las ventanas.
+Los clientes pueden programar cada una de las tareas de Purga de flujo de trabajo, Depuración de tareas ad hoc y Mantenimiento de purga de proyectos para que se ejecuten durante las ventanas de mantenimiento diario, semanal o mensual. Estas configuraciones deben editarse directamente en el control de código fuente. La tabla siguiente describe los parámetros de configuración disponibles para cada una de las ventanas. Además, consulte las ubicaciones y los ejemplos de código proporcionados después de la tabla.
 
 <table>
  <tbody>
@@ -85,15 +85,15 @@ Los clientes pueden programar cada una de las tareas de Purga de flujo de trabaj
     </tbody>
 </table>
 
-Ubicaciones:
+**Ubicaciones**:
 
-1. /apps/settings/granite/operations/maintenance/granite_daily
-2. /apps/settings/granite/operations/maintenance/granite_weekly
-3. /apps/settings/granite/operations/maintenance/granite_month
+* Diario: /apps/settings/granite/operations/maintenance/granite_daily
+* Semanal - /apps/settings/granite/operations/maintenance/granite_weekly
+* Mensual - /apps/settings/granite/operations/maintenance/granite_month
 
-Ejemplos de código:
+**Ejemplos** de código:
 
-Ejemplo de código 1
+Ejemplo de código 1 (diario)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -108,7 +108,7 @@ Ejemplo de código 1
  />
 ```
 
-Ejemplo de código 2
+Ejemplo de código 2 (semanal)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +123,7 @@ Ejemplo de código 2
    windowStartTime="14:30"/>
 ```
 
-Ejemplo de código 3
+Ejemplo de código 3 (mensual)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
