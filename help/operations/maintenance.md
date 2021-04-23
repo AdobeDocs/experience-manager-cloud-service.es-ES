@@ -3,9 +3,9 @@ title: Tareas de mantenimiento en AEM como Cloud Service
 description: Tareas de mantenimiento en AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -55,11 +55,11 @@ Los clientes pueden programar cada una de las tareas de Purga de flujo de trabaj
     <td>Cada día</td>
     <td>Cliente</td>
     <td>Definición de nodo JCR</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>Véase la ubicación 1 a continuación</td>
     <td>Consulte el ejemplo de código 1 a continuación</td>
-  <td><p><code>windowSchedule= daily</code></p> (este valor no debe cambiarse)
-  <p><code>windowStartTime= HH:MM</code> usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.</p>
-  <p><code>windowEndTime= HH:MM</code> usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.</p>
+  <td><p><strong>windowSchedule= daily</strong></p> (este valor no debe cambiarse)
+  <p><strong>windowStartTime= HH:</strong>  usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.</p>
+  <p><strong>windowEndTime= HH:</strong> Usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.</p>
   </td> 
   </tr>
   <tr>
