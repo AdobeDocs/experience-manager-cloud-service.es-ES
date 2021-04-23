@@ -6,10 +6,10 @@ user-guide-description: Obtenga información sobre cómo personalizar su impleme
 feature: Herramientas para desarrolladores
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 36%
+source-wordcount: '969'
+ht-degree: 33%
 
 ---
 
@@ -73,6 +73,18 @@ ht-degree: 36%
    + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Generación de tokens de acceso para las API del servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + Recorrido para desarrolladores sin encabezado {#headless-journey}
+      + [Comprender el sin encabezado en AEM](developing/headless-journey/overview.md)
+      + [Obtenga información sobre el desarrollo sin encabezado de CMS](developing/headless-journey/learn-about.md)
+      + [Introducción a AEM Headless como Cloud Service](developing/headless-journey/getting-started.md)
+      + [Ruta a la primera experiencia usando AEM sin encabezado](developing/headless-journey/path-to-first-experience.md)
+      + [Cómo modelar el contenido como modelos de contenido AEM](developing/headless-journey/model-your-content.md)
+      + [Cómo acceder al contenido a través de las API de envío de AEM](developing/headless-journey/access-your-content.md)
+      + [Actualización del contenido mediante las API de recursos de AEM](developing/headless-journey/update-your-content.md)
+      + [Cómo ponerlo todo juntos](developing/headless-journey/put-it-all-together.md)
+      + [Activación de la aplicación sin cabeza](developing/headless-journey/go-live.md)
+      + [Publicar lanzamiento](developing/headless-journey/post-launch.md)
+      + [Opcional: Cómo crear aplicaciones de una sola página con AEM](developing/headless-journey/create-spa.md)
    + [Encabezado y sin cabeza en AEM](developing/headful-headless.md)
    + Desarrollo de AEM de pila completa {#full-stack}
       + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
