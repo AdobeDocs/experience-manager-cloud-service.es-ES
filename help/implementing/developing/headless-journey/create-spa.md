@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
 
-En esta continuación opcional del [AEM Recorrido para desarrolladores sin encabezado,](#overview.md) aprenderá cómo AEM combinar el envío sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables utilizando AEM marco de edición de SPA, así como integrar SPA externas, habilitando las funciones de edición según sea necesario.
+En esta continuación opcional del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprenderá cómo AEM combinar el envío sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables utilizando AEM marco de edición de SPA, así como integrar SPA externas, habilitando las funciones de edición según sea necesario.
 
 ## La historia hasta ahora {#story-so-far}
 
