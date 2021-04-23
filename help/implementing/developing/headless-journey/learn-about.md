@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La complejidad de las dependencias dentro de la pila se hace evidente rápidamen
 
 ## Límites de entrega de pila completa {#limits}
 
-El método de pila completa crea inherentemente un silo donde todas las experiencias aterrizan en un sistema. Los cambios o adiciones en un nivel del silo requieren cambios en otras capas, lo que hace que los cambios requieran mucho tiempo y sean costosos.
+El método de pila completa crea inherentemente un silo donde todas las experiencias aterrizan en un sistema. Los cambios o adiciones del componente del silo requieren cambios de otros componentes que hagan que los cambios sean costosos y que requieran mucho tiempo.
 
 Esto es particularmente cierto en el caso de la capa de presentación, que en los sistemas tradicionales suele estar estrechamente ligada al CMS. Cualquier canal nuevo generalmente significa una actualización de la capa de presentación, que afecta a todos los demás canales.
 
@@ -80,7 +80,7 @@ La entrega sin objetivos es posible mediante la exposición de un conjunto de in
 
 Sin encabezado es un ejemplo de desvinculación del contenido de su presentación. O en un sentido más genérico, desacoplando el front-end del back-end de su pila de servicios. En una configuración sin encabezado, la capa de presentación (el cabezal) se desasocia de la administración de contenido (la cola). Los dos únicos interactúan mediante llamadas de API.
 
-Esta disociación significa que cada servicio consumidor (el front-end) puede crear su experiencia en función del mismo contenido que se entrega a través de las API, lo que garantiza la reutilización del contenido y la coherencia. Los servicios de consumo pueden implementar sus propias capas de presentación, lo que permite que la capa de administración de contenido (el back end) se escale fácilmente horizontalmente.
+Esta disociación significa que cada servicio consumidor (el front-end) puede crear su experiencia en función del mismo contenido que se entrega a través de las API, lo que garantiza la reutilización del contenido y la coherencia. Los servicios de consumo pueden implementar sus propias capas de presentación, lo que permite que la pila de administración de contenido (el back end) se escale fácilmente horizontalmente.
 
 ## Fundamentos tecnológicos {#technology}
 
