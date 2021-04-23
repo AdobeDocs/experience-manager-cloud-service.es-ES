@@ -3,9 +3,9 @@ title: Tareas de mantenimiento en AEM como Cloud Service
 description: Tareas de mantenimiento en AEM como Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '914'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ La siguiente tabla ilustra las tareas de mantenimiento disponibles en el momento
 Los clientes pueden programar cada una de las tareas de Purga de flujo de trabajo, Depuración de tareas ad hoc y Mantenimiento de purga de proyectos para que se ejecuten durante las ventanas de mantenimiento diario, semanal o mensual. Estas configuraciones deben editarse directamente en el control de código fuente. La tabla siguiente describe los parámetros de configuración disponibles para cada una de las ventanas.
 
 <table>
+ <tbody>
   <tr>
     <th>Configuración de la ventana de mantenimiento</th>
     <th>Quién es el propietario de la configuración</th>
@@ -54,12 +55,11 @@ Los clientes pueden programar cada una de las tareas de Purga de flujo de trabaj
     <td>Cada día</td>
     <td>Cliente</td>
     <td>Definición de nodo JCR</td>
-    <td>Véase la ubicación 1 a continuación</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>Consulte el ejemplo de código 1 a continuación</td>
-  <td>
-  <strong>windowSchedule= daily</strong>  (este valor no debe cambiarse) 
-  <strong>windowStartTime= HH:</strong> Musing as 24 hour despertador. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.
-  <strong>windowEndTime= HH:</strong> Usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.
+  <td><p><code>windowSchedule= daily</code></p> (este valor no debe cambiarse)
+  <p><code>windowStartTime= HH:MM</code> usando como reloj de 24 horas. Define cuándo deben comenzar a ejecutarse las tareas de mantenimiento asociadas con la ventana de mantenimiento diario.</p>
+  <p><code>windowEndTime= HH:MM</code> usando como reloj de 24 horas. Define cuándo las tareas de mantenimiento asociadas con la ventana de mantenimiento diario deben dejar de ejecutarse si aún no se han completado.</p>
   </td> 
   </tr>
   <tr>
@@ -89,6 +89,7 @@ Los clientes pueden programar cada una de las tareas de Purga de flujo de trabaj
     <strong>windowFirstLastStartDay= 0/1</strong> 0 para programar la primera semana del mes o 1 para programar la última semana del mes. La ausencia de un valor programaría los trabajos todos los días según windowScheduleWeekdays cada mes.
     </td> 
     </tr>
+    </tbody>
 </table>
 
 Ubicaciones:
