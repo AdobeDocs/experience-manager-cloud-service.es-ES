@@ -2,20 +2,20 @@
 title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL Sites]
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: Administración de activos,Recursos conectados,Distribución de activos,Usuarios y grupos
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
 # Utilice los recursos conectados para compartir recursos de DAM en [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Una razón puede ser la distribución geográfica de implementaciones existentes que se necesitan para trabajar en conjunto. Otra razón puede ser que las adquisiciones conducen a una infraestructura heterogénea que la empresa principal desea utilizar en conjunto.
+En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Una razón puede ser la distribución geográfica de implementaciones existentes que son necesarias para trabajar juntas. Otra razón puede ser que las adquisiciones conducen a una infraestructura heterogénea que la empresa principal desea utilizar en conjunto.
 
 Los usuarios pueden crear páginas web en [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] es el sistema de administración de recursos digitales (DAM) que proporciona los recursos necesarios para los sitios web. [!DNL Experience Manager] ahora es compatible con el caso de uso anterior mediante la integración  [!DNL Sites] y  [!DNL Assets].
 
@@ -53,7 +53,7 @@ A continuación se describen las distintas funciones que se usan para configurar
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | `admin` | Configure [!DNL Experience Manager] y configure la integración con la implementación remota [!DNL Assets]. |
 | Usuario DAM | Local | `Authors` | `ksaner` | Se utiliza para ver y duplicar los recursos recuperados en `/content/DAM/connectedassets/`. |
-| [!DNL Sites] author | Local | <ul><li>`Authors` (con acceso de lectura en el DAM remoto y acceso de autor en el local  [!DNL Sites]) </li> <li>`dam-users` en local  [!DNL Sites]</li></ul> | `ksaner` | Los usuarios finales son [!DNL Sites] autores que utilizan esta integración para mejorar la velocidad de contenido. Los autores buscan y exploran recursos en DAM remoto utilizando [!UICONTROL Buscador de contenido] y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
+| [!DNL Sites] author | Local | <ul><li>`Authors` (con acceso de lectura en el DAM remoto y acceso de autor en el local  [!DNL Sites]) </li> <li>`dam-users` en local  [!DNL Sites]</li></ul> | `ksaner` | Los usuarios finales son [!DNL Sites] autores que utilizan esta integración para mejorar la velocidad de contenido. Los autores pueden buscar y examinar recursos en DAM remoto mediante [!UICONTROL Buscador de contenido] y utilizando las imágenes necesarias en las páginas web locales. Se utilizan las credenciales del usuario de DAM `ksaner`. |
 | [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | `admin` en remoto  [!DNL Experience Manager] | Configurar el intercambio de recursos de origen cruzado (CORS). |
 | Usuario DAM | Remoto | `Authors` | `ksaner` en remoto  [!DNL Experience Manager] | Función de autor en la implementación remota [!DNL Experience Manager]. Busque y examine recursos en Recursos conectados mediante el [!UICONTROL Buscador de contenido]. |
 | Distribuidor DAM (usuario técnico) | Remoto | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` en remoto  [!DNL Experience Manager] | El servidor local [!DNL Experience Manager] (no la función de autor [!DNL Sites]) utiliza a este usuario presente en la implementación remota para recuperar los recursos remotos en nombre del autor [!DNL Sites]. Esta función no es la misma que las dos funciones `ksaner` anteriores y pertenece a un grupo de usuarios diferente. |
@@ -119,7 +119,7 @@ Puede comprobar la conectividad entre las implementaciones configuradas [!DNL Si
 
 ## Configurar una conexión entre las implementaciones [!DNL Sites] y [!DNL Dynamic Media] {#sites-dynamic-media-connected-assets}
 
-Puede configurar una conexión entre la implementación [!DNL Sites] y la implementación [!DNL Dynamic Media] que permita que los autores de las páginas web utilicen imágenes [!DNL Dynamic Media] en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones [!DNL Dynamic Media] remotas sigue siendo la misma. Esto le permite aprovechar la funcionalidad [!DNL Dynamic Media] mediante la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
+Puede configurar una conexión entre la implementación [!DNL Sites] y la implementación [!DNL Dynamic Media] que permita que los autores de las páginas web utilicen imágenes [!DNL Dynamic Media] en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones [!DNL Dynamic Media] remotas permanece igual. Esto le permite aprovechar la funcionalidad [!DNL Dynamic Media] mediante la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
 
 Para configurar esta conexión, siga estos pasos.
 
@@ -148,7 +148,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 1. Vaya a la interfaz [!DNL Assets] en la implementación remota accediendo a **[!UICONTROL Assets]** > **[!UICONTROL Files]** desde el espacio de trabajo [!DNL Experience Manager]. También puede acceder a `https://[assets_servername_ams]:[port]/assets.html/content/dam` en un explorador. Cargue los recursos que desee.
 1. En la implementación [!DNL Sites], en el activador de perfil en la esquina superior derecha, haga clic en **[!UICONTROL Suplantar como]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
-1. Abra una página web de We.Retail en **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` en un navegador para editar una página.
+1. Abra una página web `We.Retail` en **[!UICONTROL Sitios]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL es]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` en un navegador para editar una página.
 
    Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda de la página.
 
@@ -182,7 +182,7 @@ Los recursos recuperados se pueden usar como cualquier otro recurso local, pero 
 
 ### Comprobar el uso de un recurso en varias páginas web {#asset-usage-references}
 
-[!DNL Experience Manager] permite a los usuarios de DAM comprobar todas las referencias a un recurso. Ayuda a comprender y administrar el uso de un recurso en [!DNL Sites] remoto y en recursos compuestos. Muchos autores de páginas web en la implementación [!DNL Experience Manager Sites] pueden utilizar un recurso en un [!DNL Assets] remoto en diferentes páginas web. Para simplificar la administración de recursos y no provocar referencias rotas, es importante que los usuarios de DAM comprueben el uso de un recurso en las páginas web locales y remotas. La pestaña [!UICONTROL Referencias] de la página [!UICONTROL Propiedades] de un recurso muestra las referencias locales y remotas del recurso.
+[!DNL Experience Manager] permite a los usuarios de DAM comprobar todas las referencias a un recurso. Ayuda a comprender y administrar el uso de un recurso en [!DNL Sites] remoto y en recursos compuestos. Muchos autores de páginas web en la implementación [!DNL Experience Manager Sites] pueden utilizar un recurso en un DAM remoto en diferentes páginas web. Para simplificar la administración de recursos y no provocar referencias rotas, es importante que los usuarios de DAM comprueben el uso de un recurso en las páginas web locales y remotas. La pestaña [!UICONTROL Referencias] de la página [!UICONTROL Propiedades] de un recurso muestra las referencias locales y remotas del recurso.
 
 Para ver y administrar referencias en la implementación [!DNL Assets] , siga estos pasos:
 
@@ -227,7 +227,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 * Las ediciones simples que no son destructivas y que se admiten mediante el componente `Image`, se pueden realizar en los recursos recuperados. Los recursos son de solo lectura.
 * El único método para recuperar el recurso es arrastrarlo a una página. No hay compatibilidad con API ni otros métodos para recuperar un recurso y actualizarlo.
 * Si se retiran activos del DAM, estos seguirán utilizándose en las páginas [!DNL Sites].
-* Las entradas de referencia remotas de un recurso se recuperan asincrónicamente. Las referencias y el recuento total no son en tiempo real y puede haber alguna diferencia si un autor de Sites utiliza el recurso mientras un usuario de DAM está viendo la referencia. Los usuarios de DAM pueden actualizar la página e intentarlo de nuevo en unos minutos para obtener el recuento total.
+* Las entradas de referencia remotas de un recurso se recuperan asincrónicamente. Las referencias y el recuento total no están en tiempo real y puede haber alguna diferencia si un autor [!DNL Sites] utiliza el recurso mientras un usuario de DAM está viendo la referencia. Los usuarios de DAM pueden actualizar la página e intentarlo de nuevo en unos minutos para obtener el recuento total.
 
 ## Solución de problemas {#troubleshoot}
 
