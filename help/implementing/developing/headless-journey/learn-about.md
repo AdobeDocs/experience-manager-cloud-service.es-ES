@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
 
-En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](#overview.md) aprende sobre la tecnología sin encabezado y por qué la utilizaría.
+En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprende sobre la tecnología sin encabezado y por qué la utilizaría.
 
 ## Objetivo {#objective}
 
