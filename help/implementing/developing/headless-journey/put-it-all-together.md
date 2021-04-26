@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 >
 >TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
 
-En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](#overview.md) aprenda a utilizar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas a la API de REST y la aplicación, y a prepararlo para su lanzamiento.
+En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprenda a utilizar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas a la API de REST y la aplicación, y a prepararlo para su lanzamiento.
 
 ## La historia hasta ahora {#story-so-far}
 
