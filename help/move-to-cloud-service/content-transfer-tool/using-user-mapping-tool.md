@@ -1,18 +1,26 @@
 ---
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
+exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
 translation-type: tm+mt
-source-git-commit: 7c7ae680932849cf2ed0be3dc10618d55acc8366
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1185'
 ht-degree: 3%
 
 ---
 
-
 # Uso de la herramienta de asignación de usuarios {#user-mapping-tool}
 
 ## Información general {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_usermapping"
+>title="Herramienta de asignación de usuarios"
+>abstract="La herramienta de transferencia de contenido le ayuda a mover usuarios y grupos de su sistema AEM existente a AEM como Cloud Service. Los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar usuarios y grupos duplicados en la instancia de creación del Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="Consideraciones importantes sobre el uso de la herramienta de asignación de usuarios"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="Uso de la herramienta de asignación de usuarios"
+
 
 Como parte del recorrido de transición a Adobe Experience Manager (AEM) como Cloud Service, debe mover usuarios y grupos del sistema de AEM existente a AEM como Cloud Service. Esto lo hace la herramienta de transferencia de contenido.
 
@@ -102,4 +110,3 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. Para ejecutar la fase de Extracción, consulte [Ejecución de la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool).
-
