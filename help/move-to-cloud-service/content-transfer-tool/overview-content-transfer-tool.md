@@ -1,16 +1,23 @@
 ---
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
 
-
 # Información general {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="Información general"
+>abstract="Content Transfer Tool es una herramienta desarrollada por Adobe que puede utilizarse para mover contenido existente de una instancia de AEM de origen (local o AMS) a la instancia de Cloud Service de AEM de destino. Esta herramienta también transfiere las entidades principales (usuarios o grupos) automáticamente."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Proceso de extracción"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Proceso de Ingesta"
 
 La herramienta de transferencia de contenido es una herramienta desarrollada por Adobe que se puede utilizar para mover contenido existente de una instancia de AEM de origen (on-premise o AMS) a la instancia de destinatario de AEM de Cloud Service.
 
@@ -24,7 +31,7 @@ Existen dos fases asociadas con la transferencia de contenido:
 
 >[!NOTE]
 >
-> Se recomienda ejecutar la herramienta de asignación de usuarios como parte de la fase de Extracción. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) para obtener más información.
+> Se recomienda ejecutar la herramienta de asignación de usuarios como parte de la fase de extracción. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) para obtener más información.
 
 1. **Ingesta**: la ingesta hace referencia a la ingesta de contenido del conjunto *de migración* en la instancia de Cloud Service del destinatario.
 
@@ -49,6 +56,12 @@ En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual
 
 
 ## Directrices y prácticas recomendadas {#best-practices}
+
+>id=&quot;aemcloud_ctt_guides&quot;
+>title=&quot;Pautas y prácticas recomendadas&quot;
+>abstract=&quot;Revise las directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido, incluidas las tareas de limpieza de revisión, consideraciones sobre el espacio en disco y más&quot;.
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Consideraciones importantes sobre el uso de la herramienta de asignación de usuarios&quot;
 
 Siga esta sección para conocer las directrices y prácticas recomendadas para utilizar la herramienta de transferencia de contenido:
 
