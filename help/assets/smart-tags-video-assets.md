@@ -1,16 +1,16 @@
 ---
 title: Etiquetado inteligente de recursos de vídeo
 description: El Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante [!DNL Adobe Sensei].
-feature: Smart Tags,Tagging
+feature: Etiquetas inteligentes,Etiquetado
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
-
 
 # Etiquetado inteligente de los recursos de vídeo {#video-smart-tags}
 
@@ -64,7 +64,7 @@ Para buscar los recursos de vídeo en función de las etiquetas inteligentes gen
 
 Los resultados de la búsqueda muestran los recursos de vídeo en función de la etiqueta especificada.
 
-Los resultados de búsqueda son una combinación de recursos de vídeo con palabras clave buscadas en los metadatos y los recursos de vídeo que están etiquetados de forma inteligente con las palabras clave buscadas. Sin embargo, los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. Para obtener más información, consulte [Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes](smart-tags.md#understandsearch).
+Los resultados de búsqueda son una combinación de recursos de vídeo con palabras clave buscadas en los metadatos y los recursos de vídeo que están etiquetados de forma inteligente con las palabras clave buscadas. Sin embargo, los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. Para obtener más información, consulte [Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes](smart-tags.md#understand-search).
 
 ## Moderar etiquetas inteligentes de vídeo {#moderate-video-smart-tags}
 
