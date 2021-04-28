@@ -1,13 +1,13 @@
 ---
 title: Creación y sincronización de Live Copies
 description: Aprenda a crear y sincronizar Live Copies para reutilizar el contenido en el sitio.
-feature: Multi Site Manager
+feature: Administrador de varios sitios
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,15 @@ Después de crear la configuración de modelo, configure las siguientes propieda
 
 Cuando se utiliza la configuración del modelo, puede asociarla con una configuración de lanzamiento que determina cómo se sincronizan las Live Copies del origen/modelo. Consulte [Especificación de las opciones de configuración de lanzamiento para utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
-### Creación de una configuración de modelo {#creating-a-blueprint-configuration}
+### Creación y edición de configuraciones de modelo {#creating-editing-blueprint-configurations}
+
+Las configuraciones del modelo se consideran datos inmutables y, como tales, no se pueden editar durante la ejecución. Por este motivo, cualquier cambio en la configuración debe implementarse mediante Git utilizando la canalización CI/CD.
+
+Encontrará más información en el artículo [Cambios importantes en Adobe Experience Manager (AEM) como Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+
+Los siguientes pasos están disponibles para un administrador en una instancia de desarrollo local solo para fines de prueba y desarrollo. Estas opciones no están disponibles en ninguna instancia de nube AEMaaCS.
+
+#### Creación de una configuración de modelo localmente {#creating-a-blueprint-configuration}
 
 Para crear una configuración de modelo:
 
@@ -61,7 +69,7 @@ Para crear una configuración de modelo:
 
 1. **** Cree la configuración del modelo en función de su especificación.
 
-### Edición o eliminación de una configuración de modelo {#editing-or-deleting-a-blueprint-configuration}
+### Edición o eliminación de una configuración de modelo localmente{#editing-or-deleting-a-blueprint-configuration}
 
 Puede editar o eliminar una configuración de modelo existente:
 
