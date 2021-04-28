@@ -3,16 +3,21 @@ title: AEM Contenido y comercio
 description: Recursos informativos y enlaces a la documentación sobre contenido y comercio de AEM
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
+source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 82%
+source-wordcount: '377'
+ht-degree: 78%
 
 ---
 
 # AEM Contenido y comercio {#commerce-guide}
 
 En esta página se muestran los recursos informativos relacionados con AEM Contenido y comercio.
+
+>[!NOTE]
+>
+>Para AEM Contenido y comercio con AEM 6.5 y CIF clásico, consulte [AEM 6.5 Contenido y comercio](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+
 
 ## Artículos clave de contenido y comercio {#key-articles}
 
