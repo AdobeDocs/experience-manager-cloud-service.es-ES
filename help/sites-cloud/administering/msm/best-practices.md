@@ -1,16 +1,16 @@
 ---
 title: Prácticas recomendadas de MSM
 description: Conozca las prácticas recomendadas recopiladas por los equipos de consultoría e ingeniería de Adobe para ayudarle a poner en marcha el administrador de varios sitios de AEM.
-feature: Multi Site Manager
+feature: Administrador de varios sitios
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de MSM {#msm-best-practices}
 
@@ -37,6 +37,10 @@ Los beneficios adicionales de utilizar una configuración de modelo son que:
 En caso de que no se haga referencia a una configuración de modelo, las implementaciones solo se pueden iniciar desde las propias Live Copies, lo que básicamente elimina el contenido del origen.
 
 Al crear un nuevo sitio con Live Copy, resulta ventajoso crear configuraciones de modelo para garantizar la disponibilidad del conjunto de funciones MSM completo.
+
+>[!NOTE]
+>
+> Tenga en cuenta que los CUG de la ficha Permisos no se pueden desplegar en Live Copies desde modelos. Planee esto al configurar Live Copy.
 
 ## Sincronización de componentes y contenedores {#components-and-container-synchronization}
 
