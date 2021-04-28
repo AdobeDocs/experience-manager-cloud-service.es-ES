@@ -1,13 +1,14 @@
 ---
-title: Etiquetado automático de recursos con etiquetas generadas por AI
-description: Etiquete los recursos utilizando servicios inteligentes artificialmente que apliquen etiquetas comerciales contextuales y descriptivas mediante el servicio  [!DNL Adobe Sensei] .
+title: Etiquetar recursos automáticamente con [!DNL Adobe Sensei] servicio inteligente
+description: Etiquete los recursos con un servicio inteligente artificialmente que aplique etiquetas comerciales contextuales y descriptivas.
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: Etiquetas inteligentes,Etiquetado
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2709'
 ht-degree: 6%
 
 ---
@@ -19,21 +20,19 @@ Las organizaciones que se ocupan de los recursos digitales utilizan cada vez má
 
 En comparación con los vocabularios de lenguaje natural, el etiquetado basado en la taxonomía empresarial ayuda a alinear los activos con el negocio de una empresa y garantiza que los activos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de coches puede etiquetar imágenes de coche con nombres de modelo, de modo que solo se muestren imágenes relevantes cuando se realice una búsqueda para diseñar una campaña de promoción.
 
-En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos.
+En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. Las nuevas implementaciones [!DNL Experience Manager Assets] están integradas con [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de las etiquetas inteligentes más rápido. En las implementaciones anteriores, los administradores pueden [configurar manualmente la integración de etiquetas inteligentes](/help/assets/smart-tags-configuration.md#aio-integration).
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-Puede etiquetar los siguientes tipos de recursos:
-
-* **Imágenes**: Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente de Adobe Sensei. Usted [crea un modelo de capacitación](#train-model) y luego [aplica etiquetas inteligentes](#tag-assets) a las imágenes.
-* **Recursos de vídeo**: El etiquetado de vídeo está habilitado de forma predeterminada en  [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]. [Los vídeos se ](/help/assets/smart-tags-video-assets.md) etiquetan automáticamente cuando se cargan nuevos vídeos o se reprocesan los existentes.
-* **Recursos basados en texto**:  [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto compatibles al cargarlos. Obtenga más información sobre el [etiquetado de recursos basados en texto](#smart-tag-text-based-assets).
-
 ## Tipos de recursos admitidos {#smart-tags-supported-file-formats}
 
-Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG. La funcionalidad es compatible con los siguientes tipos de recursos:
+Puede etiquetar los siguientes tipos de recursos:
+
+* **Imágenes**: Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente de Adobe Sensei. Usted [crea un modelo de capacitación](#train-model) y luego [aplica etiquetas inteligentes](#tag-assets) a las imágenes. Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG.
+* **Recursos basados en texto**:  [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto compatibles al cargarlos. Obtenga más información sobre el [etiquetado de recursos basados en texto](#smart-tag-text-based-assets).
+* **Recursos de vídeo**: El etiquetado de vídeo está habilitado de forma predeterminada en  [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]. [Los vídeos se ](/help/assets/smart-tags-video-assets.md) etiquetan automáticamente cuando se cargan nuevos vídeos o se reprocesan los existentes.
 
 | Imágenes (tipos MIME) | Recursos basados en texto (formatos de archivo) | Recursos de vídeo (formatos de archivo y códecs) |
 |----|-----|------|
@@ -58,15 +57,10 @@ Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que gen
 
 [!DNL Experience Manager] agrega automáticamente las etiquetas inteligentes a los recursos basados en texto y a los vídeos de forma predeterminada. Para agregar automáticamente etiquetas inteligentes a imágenes, complete las siguientes tareas.
 
-* [ [!DNL Adobe Experience Manager] Integración con Adobe Developer Console](#integrate-aem-with-aio).
 * [Comprender los modelos y las directrices de etiquetas](#understand-tag-models-guidelines).
 * [Capacite al modelo](#train-model).
 * [Etiquete sus recursos digitales](#tag-assets).
 * [Administre las etiquetas y las búsquedas](#manage-smart-tags-and-searches).
-
->[!TIP]
->
->Las etiquetas inteligentes solo son aplicables a los clientes [!DNL Adobe Experience Manager Assets] . Las etiquetas inteligentes están disponibles para su compra como complemento de [!DNL Experience Manager].
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que gen
 Los recursos basados en texto compatibles se etiquetan automáticamente con [!DNL Experience Manager Assets] al cargarse. Está activada de forma predeterminada. La eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. En el caso de los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave del texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad que se utiliza para mejorar la detección de recursos en comparación con el índice de búsqueda completa.
 
 En comparación, para imágenes y vídeos, las etiquetas inteligentes se derivan de un aspecto visual.
-
-## Integrar [!DNL Experience Manager] con Adobe Developer Console {#integrate-aem-with-aio}
-
->[!IMPORTANT]
->
->Las nuevas implementaciones [!DNL Experience Manager Assets] están integradas con [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de las etiquetas inteligentes más rápido. En las implementaciones anteriores, los administradores pueden [configurar manualmente la integración de etiquetas inteligentes](/help/assets/smart-tags-configuration.md#aio-integration).
-
-Puede integrar [!DNL Adobe Experience Manager] con las etiquetas inteligentes mediante [!DNL Adobe Developer Console]. Utilice esta configuración para acceder al servicio de etiquetas inteligentes desde [!DNL Experience Manager]. Consulte [configurar [!DNL Experience Manager] para etiquetar recursos](smart-tags-configuration.md) para tareas de configuración de etiquetas inteligentes. En el back-end, el servidor [!DNL Experience Manager] autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio de etiquetas inteligentes.
 
 ## Comprender los modelos de etiquetas y las directrices {#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ Para crear y entrenar un modelo para etiquetas específicas de su empresa, siga 
 
 Para comprobar si el servicio Etiquetas inteligentes está formado sobre las etiquetas en el conjunto de recursos de formación, revise el informe del flujo de trabajo de formación desde la consola Informes .
 
-1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas] > **[!UICONTROL Recursos] > **[!UICONTROL Informes]**.
+1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 1. En la página **[!UICONTROL Informes de recursos]**, haga clic en **[!UICONTROL Crear]**.
 1. Seleccione el informe **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, haga clic en **[!UICONTROL Create]** en la barra de herramientas.
@@ -165,7 +151,7 @@ Para comprobar si el servicio Etiquetas inteligentes está formado sobre las eti
 
 ## Etiquetar recursos {#tag-assets}
 
-Una vez que haya formado el servicio Etiquetas inteligentes, puede almacenar en déclencheur el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas en un conjunto diferente de recursos similares. Puede aplicar el flujo de trabajo de etiquetado periódicamente o siempre que sea necesario. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
+Una vez que haya formado el servicio Etiquetas inteligentes, puede almacenar en déclencheur el flujo de trabajo de etiquetado para aplicar las etiquetas automáticamente en un conjunto diferente de recursos. Puede aplicar el flujo de trabajo de etiquetado bajo demanda o programarlo para que se ejecute periódicamente. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
 
 ### Etiquetar recursos de la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
@@ -224,7 +210,7 @@ Para moderar las etiquetas inteligentes de los recursos:
 
 1. Vaya a la página [!UICONTROL Propiedades] del recurso. Observe que a la etiqueta que promocionó se le asigna una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
-### Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understandsearch}
+### Comprender AEM resultados de búsqueda con etiquetas inteligentes {#understand-search}
 
 De forma predeterminada, AEM búsqueda combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con `woman` o `running` etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
 
