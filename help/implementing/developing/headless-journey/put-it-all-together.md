@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 ## Objetivo {#objective}
 
+* Comprender qué es el flujo de trabajo de desarrollo local para AEM
 * Instale el SDK de AEM para obtener un tiempo de ejecución de desarrollo local que pueda utilizar para probar el contenido en
-* Obtenga información sobre las herramientas de desarrollo que necesita
-* Pruebe el código y el contenido localmente antes de publicarlo
+* Obtenga información sobre las herramientas de desarrollo que debe tener para trabajar junto al tiempo de ejecución del desarrollo local
 
 ## Flujo de trabajo de desarrollo local {#the-local-development-workflow}
 
