@@ -4,14 +4,14 @@ description: En esta parte del Recorrido para desarrolladores sin encabezado de 
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-
 
 # Cómo poner en marcha su aplicación sin encabezado {#go-live}
 
@@ -63,6 +63,8 @@ El patrón de implementación más común con AEM aplicaciones sin periféricos 
 3. Configuración del almacenamiento en caché y la escalabilidad
 
 ## Implementar en producción {#deploy-to-production}
+
+Una vez que haya probado todo el código y el contenido localmente, ya estará listo para iniciar una implementación de producción con AEM.
 
 ### Estructura del modelo frente a salida de GraphQL {#structure-vs-output}
 
