@@ -4,14 +4,14 @@ description: En esta parte del Recorrido para desarrolladores sin encabezado de 
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '327'
 ht-degree: 1%
 
 ---
-
 
 # Cómo actualizar su contenido a través de las API de AEM Assets {#update-your-content}
 
@@ -23,12 +23,13 @@ En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido AEM sin encabezado, [Cómo acceder al contenido a través de las API de envío de AEM](access-your-content.md), ha aprendido a acceder al contenido sin encabezado en AEM mediante API y ahora debe:
+En el documento anterior del recorrido sin AEM encabezado, [Cómo acceder al contenido a través de las API de envío de AEM](access-your-content.md), ha aprendido a acceder al contenido sin encabezado en AEM a través de la API de AEM GraphQL y ahora debería:
 
-* Comprender qué es GraphQL y cómo funciona AEM API de GraphQL.
+* Conocer GraphQL de alto nivel.
+* Comprender cómo funciona la API de AEM GraphQL.
 * Comprender algunas consultas de ejemplo prácticas.
 
-Este artículo se basa en estos aspectos básicos para que pueda comprender cómo actualizar el contenido sin encabezado existente en AEM mediante API.
+Este artículo se basa en estos aspectos básicos para que pueda comprender cómo actualizar el contenido sin encabezado existente en AEM a través de la API de REST.
 
 ## Objetivo {#objective}
 
@@ -44,7 +45,7 @@ Este artículo se basa en estos aspectos básicos para que pueda comprender cóm
 Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabezado de AEM, debe:
 
 * Comprender la API HTTP de AEM Assets.
-* Comprenda cómo se admiten los fragmentos de contenido en la API.
+* Comprenda cómo se admiten los fragmentos de contenido en esta API.
 * Obtenga experiencia con código de muestra y conozca cómo funciona la API en la práctica.
 
 Debería continuar con su recorrido sin AEM al revisar el documento [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) donde aprenderá a tomar su proyecto sin encabezado de AEM y prepararlo para su lanzamiento.
