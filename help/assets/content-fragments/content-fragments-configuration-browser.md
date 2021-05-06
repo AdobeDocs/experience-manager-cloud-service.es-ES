@@ -1,16 +1,16 @@
 ---
 title: 'Fragmentos de contenido: navegador de configuración'
 description: Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
-feature: Content Fragments
+feature: Fragmentos de contenido
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 20%
+source-wordcount: '287'
+ht-degree: 18%
 
 ---
-
 
 # Fragmentos de contenido: navegador de configuración{#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ Antes de utilizar los fragmentos de contenido, debe utilizar el **Navegador de c
 
 >[!CAUTION]
 >
->Si no habilita **Modelos de fragmento de contenido**, la opción **Crear** no estará disponible para crear nuevos modelos.
+>Si no habilita **Modelos de fragmento de contenido**:
+>
+>* la opción **Crear** no estará disponible para crear nuevos modelos.
+>* no podrá [seleccionar el inquilino para crear el punto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+
 
 Para habilitar la funcionalidad de fragmento de contenido, debe:
 
