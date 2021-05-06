@@ -3,10 +3,10 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
 feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
+source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '386'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +35,11 @@ La próxima versión está planificada para el 3 de junio de 2021.
 
 * Ahora, el complemento Commerce se puede aplicar a los programas de Sandbox durante el flujo de trabajo Editar programa .
 
-* Se ha actualizado la experiencia Editar programa.
+* Se ha actualizado la experiencia *Edit program*.
 
 * La tabla Nombres de dominio de la página Detalles del entorno mostrará hasta 250 nombres de dominio a través de la paginación.
 
-* La pestaña Soluciones de los flujos de trabajo Añadir programa y Editar programa mostrará la solución, aunque solo haya una solución disponible para el Programa.
+* La pestaña **Solutions &amp; Add-ons** de los flujos de trabajo **Add Program** y **Edit Program** mostrará la solución, aunque solo haya una solución disponible para el Programa.
 
 * El mensaje de error en el registro de pasos de compilación cuando la compilación no produjo ningún paquete de contenido implementado no estaba claro.
 
