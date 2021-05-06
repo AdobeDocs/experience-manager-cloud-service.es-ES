@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2120'
 ht-degree: 1%
 
 ---
@@ -146,24 +146,6 @@ La **Referencia de fragmento**:
 ### Vista previa de JSON {#json-preview}
 
 Para ayudar a diseñar y desarrollar los modelos de fragmento de contenido, puede obtener una vista previa del resultado de JSON en el Editor de fragmentos de contenido.
-
-### Creación de modelos de fragmentos de contenido y fragmentos de contenido {#creating-content-fragment-models-and-content-fragments}
-
-En primer lugar, los modelos de fragmento de contenido están habilitados para su sitio, esto se hace en el Explorador de configuración:
-
-![Definir configuración](assets/cfm-configuration.png)
-
-A continuación, se pueden modelar los modelos de fragmentos de contenido:
-
-![Modelo de fragmento de contenido](assets/cfm-model.png)
-
-Después de seleccionar el modelo adecuado, se abre un fragmento de contenido para editarlo en el Editor de fragmentos de contenido:
-
-![Editor de fragmento de contenido](assets/cfm-editor.png)
-
->[!NOTE]
->
->Consulte Uso de fragmentos de contenido.
 
 ## Generación de esquemas de GraphQL a partir de fragmentos de contenido {#graphql-schema-generation-content-fragments}
 
