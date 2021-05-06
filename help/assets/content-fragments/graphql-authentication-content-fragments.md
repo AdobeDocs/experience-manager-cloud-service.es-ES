@@ -1,15 +1,15 @@
 ---
 title: Autenticación para consultas de GraphQL remotas en fragmentos de contenido
 description: Comprenda la autenticación necesaria para las consultas de Remote AEM GraphQL a fin de proteger la entrega de contenido sin encabezado.
-feature: Content Fragments,GraphQL API
+feature: Fragmentos de contenido, API de GraphQL
+exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Autenticación para consultas de GraphQL remotas en fragmentos de contenido {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
@@ -19,7 +19,7 @@ Un caso de uso principal de la API de [Adobe Experience Manager as a Cloud Servi
 >
 >Para pruebas y desarrollo también puede acceder a la API de AEM GraphQL directamente mediante la interfaz [GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface).
 
-Para la autenticación, el servicio de terceros debe utilizar un [Token de acceso](#access-token), que luego puede [utilizarse en la solicitud de GraphQL](#use-access-token-in-graphql-request).
+Para la autenticación, el servicio de terceros debe [recuperar un token de acceso](#retrieving-access-token), que luego puede [utilizarse en la solicitud de GraphQL](#use-access-token-in-graphql-request).
 
 ## Recuperación de un token de acceso {#retrieving-access-token}
 
