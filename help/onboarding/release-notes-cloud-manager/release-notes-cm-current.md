@@ -3,7 +3,7 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
 feature: Información de la versión
 translation-type: tm+mt
-source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
+source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -14,6 +14,9 @@ ht-degree: 0%
 # Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
 
 Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.5.0.
+
+>[!NOTE]
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
