@@ -1,14 +1,14 @@
 ---
 title: Cómo modelar el contenido
-description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a modelar el contenido para AEM envío sin encabezado mediante el modelado de datos con modelos de fragmentos de contenido y fragmentos de contenido.
+description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a modelar el contenido para AEM entrega sin encabezado mediante Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
+source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1686'
 ht-degree: 1%
 
 ---
@@ -38,10 +38,10 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 
 * **Audiencia**: Principiante
 * **Objetivo**: Aprenda a modelar la estructura de contenido y luego a comprender esa estructura utilizando AEM modelos de fragmentos de contenido y fragmentos de contenido:
-   * Introduzca conceptos y terminología relacionados con el [modelado de datos](#data-modeling).
-   * Aprenda [por qué se necesita el modelado de datos para el envío de contenido sin encabezado](#data-modeling-for-aem-headless).
-   * Aprenda [a realizar esta estructura utilizando AEM modelos de fragmento de contenido](#create-structure-content-fragment-models) (y cree contenido con [fragmentos de contenido](#use-content-to-author-content)).
-   * Aprenda [a modelar su contenido](#getting-started-examples); principios con muestras básicas.
+   * Introduzca conceptos y terminología relacionados con el modelado de datos/contenido.
+   * Descubra por qué se necesita el modelado de contenido para la entrega de contenido sin encabezado.
+   * Aprenda a realizar esta estructura utilizando AEM modelos de fragmento de contenido (y cree contenido con fragmentos de contenido).
+   * Aprenda a modelar el contenido; principios con muestras básicas.
 
 >[!NOTE]
 >
@@ -49,11 +49,15 @@ Este artículo se basa en estos fundamentos para que entienda cómo preparar su 
 >
 >Solo se tendrán en cuenta los aspectos que son de interés al modelar datos para su uso con AEM sin encabezado.
 
-## Modelado de datos {#data-modeling}
+## Modelado de contenido {#content-modeling}
 
 *Es un mundo grande, malo allá* afuera.
 
 Tal vez, quizás no, pero ciertamente es un mundo ***complicado*** y el modelado de datos se utiliza para definir una representación simplificada de una subsección muy (muy) pequeña, utilizando la información específica que se necesita para un determinado propósito.
+
+>[!NOTE]
+>
+>Como AEM trata del contenido, nos referimos a Modelado de datos como Modelado de contenido.
 
 Por ejemplo:
 
@@ -91,7 +95,7 @@ La información que queremos almacenar sobre ellos son los **Atributos** (propie
 
 Luego hay varias **Relaciones** entre las entidades. Por ejemplo, normalmente una escuela tiene un solo profesor jefe y muchos maestros (y normalmente el profesor jefe también es profesor).
 
-El proceso de análisis y definición de esta información, junto con las relaciones entre ellos, se denomina **Modelado de datos**.
+El proceso de análisis y definición de esta información, junto con las relaciones entre ellos, se denomina **Modelado de contenido**.
 
 ### Datos básicos {#basics}
 
@@ -128,9 +132,9 @@ Todo es un acto de equilibrio, pero la creación de una estructura demasiado com
 
 * Afecta gravemente al rendimiento si la consulta tiene que acceder a varios fragmentos de contenido anidados (referenciados) para recuperar el contenido requerido.
 
-## Modelado de datos para AEM sin encabezado {#data-modeling-for-aem-headless}
+## Modelado de contenido para AEM sin encabezado {#content-modeling-for-aem-headless}
 
-El Modelado de datos es un conjunto de técnicas establecidas, que a menudo se utilizan cuando se desarrollan bases de datos de relaciones, así que ¿qué significa para AEM sin encabezado?
+El modelado de datos es un conjunto de técnicas establecidas, que a menudo se utilizan cuando se desarrollan bases de datos de relaciones, por lo que ¿qué significa el modelado de contenido para AEM sin encabezado?
 
 ### ¿Por qué? {#why}
 
@@ -142,7 +146,7 @@ Esto significa que la aplicación conoce de antemano la forma de respuesta y, po
 
 AEM utiliza los fragmentos de contenido para proporcionar las estructuras necesarias para la entrega sin encabezado de su contenido a sus aplicaciones.
 
-La estructura del modelo de datos es:
+La estructura del modelo de contenido es:
 
 * realizado mediante la definición del modelo de fragmento de contenido,
 * se utiliza como base de los fragmentos de contenido utilizados para la generación de contenido.
@@ -173,7 +177,7 @@ Dentro de un modelo:
 1. **Los** tipos de datos permiten definir los atributos individuales.
 Por ejemplo, defina el campo que contiene el nombre de un profesor como **Text** y sus años de servicio como **Number**.
 1. Los tipos de datos **Content Reference** y **Fragment Reference** permiten crear relaciones con otro contenido dentro de AEM.
-1. El tipo de datos **Referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es vital para el modelado de datos.
+1. El tipo de datos **Referencia de fragmento** le permite obtener varios niveles de estructura anidando los fragmentos de contenido (según el tipo de modelo). Esto es vital para el modelado de contenido.
 
 Por ejemplo:
 ![Modelado de contenido con fragmentos de contenido](assets/headless-modeling-01.png "Modelado de contenido con fragmentos de contenido")
@@ -250,4 +254,4 @@ Ahora que ha aprendido a modelar su estructura y a crear contenido en función d
    * [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) : creación de fragmentos de contenido; esta página le llevará a otras secciones detalladas
 * [Esquemas de AEM GraphQL](/help/implementing/developing/headless-journey/access-your-content.md) : cómo GraphQL lleva a cabo los modelos
 * [La estructura de fragmento de contenido de ejemplo](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de datos y GraphQL.
+* [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de contenido y GraphQL.
