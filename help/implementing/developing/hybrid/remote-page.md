@@ -3,9 +3,9 @@ title: El componente RemotePage
 description: El componente RemotePage es un componente de página personalizado para editar SPA React remoto dentro de AEM.
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
+source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ Consulte el artículo [Edición de una SPA externa en AEM](editing-external-spa.
 
 ## Restricciones     {#limitations}
 
+* La implementación actual del componente RemotePage solo admite aplicaciones React remotas.
 * El CSS interno definido en el archivo HTML raíz de la aplicación, así como el CSS en línea en el nodo DOM raíz, no estarán disponibles al realizar el procesamiento remoto en AEM.
 
 ## Detalles técnicos {#technical-details}
