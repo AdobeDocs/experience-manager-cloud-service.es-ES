@@ -6,9 +6,9 @@ user-guide-description: Esta guía proporciona información importante sobre la 
 feature: Información de la versión
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '115'
 ht-degree: 100%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 100%
 + Notas de la versión {#release-notes}
    + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [Notas de la versión 2021.3.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [Notas de la versión 2021.2.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [Notas de la versión 2021.1.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
