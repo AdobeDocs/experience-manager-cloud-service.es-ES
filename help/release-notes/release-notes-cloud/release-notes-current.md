@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
+source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -140,14 +140,53 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 * El campo de categoría raíz no se mostraba en la pestaña de comercio de las propiedades de página de las páginas de categoría
 
+
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.4.0.
+Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.5.0 y 2021.4.0.
+
+### Fecha de la versión {#release-date-cm-may}
+
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
+La próxima versión está planificada para el 3 de junio de 2021.
+
+### Novedades {#what-is-new-may}
+
+* La regla de calidad PackageOverlaps ahora detecta casos en los que el mismo paquete se implementó varias veces, es decir, en varias ubicaciones incrustadas, en el mismo conjunto de paquetes implementado.
+
+* El extremo del repositorio en la API pública ahora incluye la URL de Git.
+
+* El registro de implementación descargado por un usuario de Cloud Manager será más profundo y ahora incluirá detalles sobre errores y escenarios de éxito.
+
+* Se han resuelto errores intermitentes encontrados al insertar el código en el Git de Adobe.
+
+* Ahora, el complemento Commerce se puede aplicar a los programas de Sandbox durante el flujo de trabajo Editar programa .
+
+* Se ha actualizado la experiencia Editar programa.
+
+* La tabla Nombres de dominio de la página Detalles del entorno mostrará hasta 250 nombres de dominio a través de la paginación.
+
+* La pestaña Soluciones de los flujos de trabajo Añadir programa y Editar programa mostrará la solución, aunque solo haya una solución disponible para el Programa.
+
+* El mensaje de error en el registro de pasos de compilación cuando la compilación no produjo ningún paquete de contenido implementado no estaba claro.
+
+### Corrección de errores {#bug-fixes-cm-may}
+
+* En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
+
+* En lugar de eliminar las variables &quot;eliminadas&quot;, la API de variables de canalización solo las marcaría con el estado **DELETED**.
+
+* Algunos problemas de calidad del tipo de hueso de código impactaban incorrectamente en la clasificación de fiabilidad.
+
+* Dado que los dominios comodín no son compatibles, la interfaz de usuario no permitirá que el usuario envíe un dominio comodín.
+
+* Cuando se inició la ejecución de una canalización entre la medianoche y la 01:00 UTC, la versión del artefacto generada por Cloud Manager no estaba buena a la versión creada el día anterior.
+
+* Durante la configuración del programa de espacio aislado, una vez que el proyecto con código de muestra se haya creado correctamente, Administrar Git aparecerá como un vínculo desde la tarjeta promocional en la página Información general .
 
 ### Fecha de la versión {#release-date-cm-april}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.4.0 es el 8 de abril de 2021.
-La próxima versión está planificada para el 06 de mayo de 2021.
 
 ### Novedades {#what-is-new-april}
 
