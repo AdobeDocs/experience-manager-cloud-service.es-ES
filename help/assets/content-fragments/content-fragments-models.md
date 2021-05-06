@@ -1,16 +1,16 @@
 ---
 title: Modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
-feature: Content Fragments
+feature: Fragmentos de contenido
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2309'
 ht-degree: 7%
 
 ---
-
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
@@ -61,7 +61,7 @@ El modelo de fragmento de contenido define efectivamente la estructura de los fr
    >
    >Cuando un campo es **obligatorio**, la **etiqueta** indicada en el panel izquierdo se marca con un asterisco (*****).
 
-   ![propiedades](assets/cfm-models-03.png)
+![propiedades](assets/cfm-models-03.png)
 
 1. **Adición de un campo**
 
@@ -111,6 +111,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
 * **Referencia de contenido**
    * Referencias a otros contenidos, de cualquier tipo; se puede usar para [crear contenido anidado](#using-references-to-form-nested-content)
+   * Si se hace referencia a una imagen, puede optar por mostrar una miniatura
 * **Referencia al fragmento**
    * Referencias a otros fragmentos de contenido; se puede usar para [crear contenido anidado](#using-references-to-form-nested-content)
    * El tipo de datos se puede configurar para que los autores de fragmentos puedan:
@@ -121,6 +122,13 @@ Hay disponible una selección de tipos de datos para definir el modelo:
       * Para permitir que AEM almacene el JSON directo que ha copiado/pegado desde otro servicio.
       * El JSON se pasará y se emitirá como JSON en GraphQL.
       * Incluye resaltado de sintaxis JSON, autocompletado y resaltado de errores en el editor de fragmentos de contenido.
+* **Marcador de posición de pestaña**
+   * Permite la introducción de fichas para utilizarlas al editar el contenido del fragmento de contenido.
+Esto se mostrará como un divisor en el editor de modelos, separando secciones de la lista de tipos de datos de contenido. Cada instancia representa el inicio de una nueva pestaña.
+En el editor de fragmentos, cada instancia aparecerá como una pestaña.
+
+      >[!NOTE]
+      Este tipo de datos se utiliza exclusivamente para dar formato; el esquema AEM GraphQL lo ignora.
 
 ## Propiedades {#properties}
 
@@ -165,6 +173,8 @@ TranslatableSi activa la casilla &quot;Translatable&quot; en un campo del editor
    * Asegúrese de que el nombre de propiedad del campo se agrega en la configuración de traducción, contexto `/content/dam/<tenant>`, si no está presente.
    * Para GraphQL: establezca una propiedad `<translatable>` en el campo Fragmento de contenido en `yes` para permitir que el filtro de consulta de GraphQL para la salida JSON con solo contenido traducible.
 
+* Consulte **[Content Reference](#content-reference)** para obtener más información sobre ese tipo de datos específico y sus propiedades.
+
 * Consulte **[Referencia de fragmento (fragmentos anidados)](#fragment-reference-nested-fragments)** para obtener más información sobre ese tipo de datos específico y sus propiedades.
 
 ## Validación {#validation}
@@ -181,12 +191,6 @@ Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de
    * Solo se puede hacer referencia a las imágenes con un intervalo predefinido de anchura y/o altura (en píxeles).
 * **Referencia al fragmento**
    * Pruebe un modelo de fragmento de contenido específico.
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## Uso de referencias para formar contenido anidado {#using-references-to-form-nested-content}
 
@@ -219,12 +223,14 @@ La referencia de contenido le permite procesar contenido de otra fuente; por eje
 
 Además de las propiedades estándar, puede especificar:
 
-* La **Ruta raíz** para cualquier contenido al que se haga referencia.
-* Tipos de contenido a los que se puede hacer referencia.
-* Limitaciones para los tamaños de archivo.
-* Restricciones de imagen.
-   <!-- Check screenshot - might need update -->
-   ![Referencia de contenido](assets/cfm-content-reference.png)
+* La **Ruta raíz** para cualquier contenido al que se hace referencia
+* Tipos de contenido a los que se puede hacer referencia
+* Limitaciones de los tamaños de archivo
+* Si se hace referencia a una imagen:
+   * Mostrar miniatura
+   * Restricciones de imagen de altura y anchura
+
+![Referencia de contenido](assets/cfm-content-reference.png)
 
 ### Referencia de fragmento (fragmentos anidados) {#fragment-reference-nested-fragments}
 
@@ -272,7 +278,6 @@ raízEspecifica una ruta raíz para los fragmentos a los que se hace referencia.
 
    * **fragmentreferencecomposite** : permite al autor del fragmento crear una composición, seleccionando varios fragmentos
 
-   <!-- Check screenshot - might need update -->
    ![Referencia al fragmento](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -405,17 +410,3 @@ Puede editar las **Propiedades** de un modelo de fragmento de contenido:
    * **Etiquetas**
    * **Descripción**
    * **Cargar imagen**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
