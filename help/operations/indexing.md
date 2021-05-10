@@ -3,9 +3,9 @@ title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---
@@ -57,6 +57,12 @@ Debe preparar un nuevo paquete de definición de índice que contenga la definic
 que luego debe ir en `ui.apps/src/main/content/jcr_root`. Las carpetas raíz secundarias no son compatibles desde ahora.
 
 El paquete del ejemplo anterior se crea como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+
+>[!NOTE]
+>
+>Cualquier paquete de contenido que contenga definiciones de índice debe tener la siguiente propiedad establecida en el archivo de propiedades del paquete de contenido, ubicado en `/META-INF/vault/properties.xml`:
+>
+>`noIntermediateSaves=true`
 
 ### Implementación de definiciones de índice {#deploying-index-definitions}
 
