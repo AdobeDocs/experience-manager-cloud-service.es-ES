@@ -97,7 +97,7 @@ Existen tres variedades de valores de configuración OSGi que se pueden usar con
 
 ## Cómo elegir el tipo de valor de configuración de OSGi apropiado {#how-to-choose-the-appropriate-osgi-configuration-value-type}
 
-El caso común de OSGi utiliza valores de configuración de OSGi en línea. Las configuraciones específicas del entorno se utilizan solo para casos de uso específicos en los que un valor difiere entre entornos de desarrollo.
+El caso común para OSGi utiliza valores de configuración de OSGi en línea. Las configuraciones específicas del entorno se utilizan solo para casos de uso específicos en los que un valor difiere entre entornos de desarrollo.
 
 ![](assets/choose-configuration-value-type_res1.png)
 
