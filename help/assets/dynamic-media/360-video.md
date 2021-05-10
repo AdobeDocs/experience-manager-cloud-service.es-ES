@@ -5,9 +5,9 @@ feature: Vídeo de RV 360
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Consulte también [Administración de ajustes preestablecidos de visualizador](/
 
 ## 360 Vídeo en acción {#video-in-action}
 
-Pulse [Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del navegador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
+Pulse [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del navegador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
 
 ![360 ](assets/6_5_360videoiss_simplified.png)
 *Ejemplo de vídeoFotograma de vídeo de la estación espacial 360*
@@ -93,7 +93,7 @@ Start by uploading 360 Videos.
 
 ## Vista previa del vídeo 360 {#previewing-video}
 
-Puede usar Vista previa para ver el aspecto que tendrá el vídeo 360 para los clientes y asegurarse de que se comporta según lo esperado.
+Puede utilizar Vista previa para ver cómo aparece el vídeo 360 para los clientes y asegurarse de que se comporta según lo esperado.
 
 Consulte también [Edición de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets).
 
