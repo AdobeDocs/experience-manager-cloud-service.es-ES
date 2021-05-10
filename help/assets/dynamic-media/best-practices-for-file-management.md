@@ -6,9 +6,9 @@ feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Un concepto importante con respecto al uso de Perfiles de imagen o Perfiles de vídeo de Dynamic Media es que se les asigna a carpetas. Dentro de un perfil hay ajustes para una imagen o un vídeo. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma en que se asignan nombres a archivos y carpetas, se organizan subcarpetas y se gestionan los archivos de estas carpetas afecta a la forma en que el perfil procesa esos recursos.
 
-Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la recopilación de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados.
+Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, aproveche al máximo la recopilación de recursos digitales y asegúrese de que el perfil correcto procesa los archivos adecuados.
 
 Consulte [Acerca del perfil de imagen de Dynamic Media y los perfiles de vídeo](about-image-video-profiles.md).
 
