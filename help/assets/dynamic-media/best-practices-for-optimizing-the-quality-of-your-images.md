@@ -1,14 +1,14 @@
 ---
 title: Práctica recomendada para optimizar la calidad de las imágenes
-description: Conozca las prácticas recomendadas que puede utilizar en Dynamic Media para optimizar la calidad de sus recursos de imagen.
+description: Conozca las prácticas recomendadas para optimizar la calidad de sus recursos de imagen mediante Dynamic Media.
 contentOwner: Rick Brough
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1478'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 La optimización de la calidad de la imagen puede ser un proceso largo, ya que muchos factores contribuyen a que se obtengan resultados aceptables. El resultado es en parte subjetivo porque las personas perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
 
-AEM incluye más de 100 comandos de envío de imágenes de Dynamic Media para ajustar y optimizar imágenes y procesar resultados. Las siguientes directrices pueden ayudarle a agilizar el proceso y a obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
+Adobe Experience Manager incluye más de 100 comandos de envío de imágenes de Dynamic Media para ajustar y optimizar imágenes y procesar resultados. Las siguientes directrices pueden ayudarle a agilizar el proceso y a obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
 
 ## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
 
@@ -41,13 +41,13 @@ Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&h
 
 ## Prácticas recomendadas para enfocar la imagen {#best-practices-for-image-sharpening}
 
-El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en AEM, refiriéndose a los siguientes recursos útiles:
+El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en el Experience Manager haciendo referencia a los siguientes recursos útiles:
 
-* El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) también se aplica a AEM.
+* El documento técnico de prácticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) se aplica también al Experience Manager.
 
-* Vea [Uso del enfoque de imagen con AEM Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Ver [Uso del enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-Con AEM, puede enfocar las imágenes sobre la ingesta, el envío o ambos. Por lo general, sin embargo, es mejor enfocar las imágenes utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
+Con Experience Manager, puede enfocar las imágenes en la ingesta, en la entrega o en ambos. Por lo general, sin embargo, es mejor enfocar las imágenes utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
 
 Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 
@@ -66,11 +66,11 @@ Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 
       Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
 
-      AEM tema de ayuda sobre cómo enfocar una imagen.
+      * El documento técnico de prácticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) se aplica también al Experience Manager.
 
-      Documento técnico de prácticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf).
+      * Ver [Uso del enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
-      * AEM también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
+      * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
 
 
@@ -100,7 +100,7 @@ Como práctica recomendada para la compresión JPG, utilice `&qlt=85,0`.
 
 ## Prácticas recomendadas para el tamaño de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize` es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos con memoria limitada.
+El parámetro `jpegSize` es útil si desea garantizar que una imagen no supere un tamaño determinado para su envío a dispositivos que tengan memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para la entrega de imágenes.
 * `&jpegSize=` interactúa con el parámetro de compresión JPG  `&qlt=`. Si la respuesta JPG con el parámetro de compresión JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` como se ha definido. De lo contrario, `&qlt=` se reduce gradualmente hasta que la imagen se ajusta al tamaño máximo permitido, o hasta que el sistema determine que no se puede ajustar y devuelva un error.
@@ -123,4 +123,4 @@ A medida que experimenta, las siguientes sugerencias generales son útiles para 
 
 * Pruebe diferentes parámetros en tiempo real, directamente en una dirección URL.
 * Como práctica recomendada, recuerde que puede agrupar los comandos de Dynamic Media Image Serving en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para diferentes patrones de uso de imágenes en su sitio web y acorta la longitud total de las direcciones URL.
-* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de nitidez durante la ingesta. Para ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con la perspectiva personalizada y las prácticas recomendadas.
+* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de nitidez durante la ingesta. Para ajustar y optimizar los resultados de procesamiento, los [servicios de consultoría de Adobe](https://business.adobe.com/customers/consulting-services/main.html) pueden ayudarle con la perspectiva personalizada y las prácticas recomendadas.
