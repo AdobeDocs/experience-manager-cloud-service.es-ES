@@ -4,14 +4,14 @@ description: En esta parte del Recorrido para desarrolladores AEM sin encabezado
 hide: true
 hidefromtoc: true
 index: false
+exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
-
 
 # Obtenga Más Información Sobre El Desarrollo Sin Cabeza De CMS {#learn-about}
 
@@ -50,15 +50,15 @@ La complejidad de las dependencias dentro de la pila se hace evidente rápidamen
 
 ## Límites de entrega de pila completa {#limits}
 
-El método de pila completa crea inherentemente un silo donde todas las experiencias aterrizan en un sistema. Los cambios o adiciones del componente del silo requieren cambios de otros componentes que hagan que los cambios sean costosos y que requieran mucho tiempo.
+El método de pila completa crea inherentemente un silo donde todas las experiencias aterrizan en un sistema. Los cambios o adiciones a un componente del silo requieren cambios en otros componentes que pueden hacer que los cambios requieran mucho tiempo y sean costosos.
 
-Esto es particularmente cierto en el caso de la capa de presentación, que en los sistemas tradicionales suele estar estrechamente ligada al CMS. Cualquier canal nuevo generalmente significa una actualización de la capa de presentación, que afecta a todos los demás canales.
+Esto es particularmente cierto en el caso del sistema de presentación, que en configuraciones tradicionales, a menudo está estrechamente vinculado al CMS. Cualquier canal nuevo generalmente significa una actualización del sistema de presentación, que puede afectar a todos los demás canales.
 
 ![La complejidad crece a medida que los canales se añaden a una pila](assets/presentation-complexity.png)
 
-Las limitaciones de este silo natural son evidentes a medida que se da cuenta del esfuerzo y el tiempo necesarios para coordinar los cambios en todos los componentes de la pila.
+Las limitaciones de este silo natural pueden hacerse evidentes a medida que se dedica más esfuerzo a coordinar los cambios en todos los componentes de la pila.
 
-Los usuarios esperan que haya participación independientemente de la plataforma o el punto de contacto, lo que requiere agilidad en la forma de ofrecer sus experiencias.  Este enfoque multicanal es el estándar de las experiencias digitales y, a veces, un enfoque de pila completa puede resultar inflexible.
+Los usuarios esperan que haya participación independientemente de la plataforma o el punto de contacto, lo que requiere agilidad en la forma de ofrecer sus experiencias.  Este enfoque multicanal es el estándar de las experiencias digitales y, en determinadas circunstancias, un enfoque de pila completa puede resultar inflexible.
 
 ## La cabeza en sin cabeza {#the-head}
 
@@ -72,15 +72,15 @@ Cuando hablamos de un CMS sin objetivos, el CMS administra el contenido y contin
 
 Los servicios que consumen, ya sean experiencias de AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin periféricos y proporcionan su propia renderización. Se ocupan de proporcionar sus propias cabezas para su contenido.
 
-Omitir la cabeza simplifica enormemente el CMS al eliminar una complejidad sustancial. Al hacerlo, también se traslada la responsabilidad de presentar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicha renderización.
+Omitir la cabeza simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicha renderización.
 
 ## Desacoplamiento {#decoupling}
 
 La entrega sin objetivos es posible mediante la exposición de un conjunto de interfaces de programación de aplicaciones (API) sólidas y flexibles que todas las experiencias pueden aprovechar. La API sirve como idioma común entre los servicios, y los une a nivel de contenido mediante una entrega de contenido estandarizada, pero permitiéndoles la flexibilidad para implementar sus propias soluciones.
 
-Sin encabezado es un ejemplo de desvinculación del contenido de su presentación. O en un sentido más genérico, desacoplando el front-end del back-end de su pila de servicios. En una configuración sin encabezado, la capa de presentación (el cabezal) se desasocia de la administración de contenido (la cola). Los dos únicos interactúan mediante llamadas de API.
+Sin encabezado es un ejemplo de desvinculación del contenido de su presentación. O en un sentido más genérico, desacoplando el front-end del back-end de su pila de servicios. En una configuración sin periféricos, el sistema de presentación (el cabezal) está disociado de la administración de contenido (el tamaño). Los dos únicos interactúan mediante llamadas de API.
 
-Esta disociación significa que cada servicio consumidor (el front-end) puede crear su experiencia en función del mismo contenido que se entrega a través de las API, lo que garantiza la reutilización del contenido y la coherencia. Los servicios de consumo pueden implementar sus propias capas de presentación, lo que permite que la pila de administración de contenido (el back end) se escale fácilmente horizontalmente.
+Esta disociación significa que cada servicio consumidor (el front-end) puede crear su experiencia en función del mismo contenido que se entrega a través de las API, lo que garantiza la reutilización del contenido y la coherencia. Los servicios de consumo pueden implementar sus propios sistemas de presentación, lo que permite que la pila de administración de contenido (el back end) se escale fácilmente horizontalmente.
 
 ## Fundamentos tecnológicos {#technology}
 
@@ -88,7 +88,7 @@ Un enfoque sin objetivos le permite crear un conjunto de tecnologías que se ada
 
 Las API para CMS en el pasado generalmente se basaban en REST. La transferencia de estado representativo (REST) proporciona recursos como texto de forma apátrida. Esto permite leer y modificar los recursos con un conjunto predefinido de operaciones. El REST permite una buena interoperabilidad entre los servicios de la web al garantizar la representación sin estado del contenido.
 
-Y aún existe la necesidad de API de REST sólidas. Sin embargo, las solicitudes REST pueden ser grandes y detalladas. Si tiene varios consumidores haciendo llamadas REST para todos sus canales, esta diversidad de compuestos y el rendimiento pueden verse afectados.
+Sigue siendo necesario contar con API de REST sólidas. Sin embargo, las solicitudes REST pueden ser grandes y detalladas. Si tiene varios consumidores haciendo llamadas REST para todos sus canales, esta diversidad de compuestos y el rendimiento pueden verse afectados.
 
 La entrega de contenido sin encabezado suele utilizar las API de GraphQL. GraphQL permite una transferencia sin estado similar, pero permite consultas más específicas, reduce el número total de consultas necesarias y mejora el rendimiento. Es común ver que las soluciones utilizan una mezcla de REST y GraphQL, eligiendo esencialmente la mejor herramienta para el trabajo en cuestión.
 
@@ -116,9 +116,9 @@ Es imposible predecir el futuro, pero no hay nadie que te dé la agilidad de rea
 
 A medida que continúe con este recorrido para desarrolladores, aprenderá cómo AEM admite la entrega sin objetivos junto con sus funciones de entrega de pila completa.
 
-Como líder del sector en la administración de experiencias digitales, Adobe se da cuenta de que la solución ideal para los desafíos reales que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida sin fisuras de los dos para ayudarle a servir mejor a los consumidores del contenido. Donde sea que estén.
+Como líder del sector en la administración de experiencias digitales, el Adobe se da cuenta de que la solución ideal a los desafíos del mundo real que enfrentan los creadores de experiencias rara vez es una opción binaria. Por este motivo, AEM no solo admite ambos modelos, sino que también permite de forma exclusiva la combinación híbrida sin fisuras de los dos, combinando las ventajas de la pila completa y sin periféricos, para ayudarle a servir mejor a los consumidores de su contenido, independientemente del lugar en que se encuentren.
 
-Este recorrido se centra en el modelo de envío de contenido sin periféricos. Sin embargo, una vez que haya sentado estos cimientos del conocimiento, puede explorar más a fondo cómo aprovechar el poder de ambos modelos.
+Este recorrido se centra en el modelo de envío de contenido sin periféricos. Sin embargo, una vez que tenga este conocimiento fundacional, puede explorar más a fondo cómo aprovechar el poder de ambos modelos.
 
 ## Siguientes {#what-is-next}
 
