@@ -3,9 +3,9 @@ title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
+source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
 workflow-type: tm+mt
-source-wordcount: '2731'
+source-wordcount: '2729'
 ht-degree: 46%
 
 ---
@@ -53,7 +53,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * La *fase de Ingesta* del autor reducirá la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción. Asegúrese también de que no se ejecutan canalizaciones de Cloud Manager mientras está ejecutando la fase *Ingesta*.
 
-* Al utilizar `Amazon S3` o `Azure` como almacén de datos en el sistema de AEM de origen, el almacén de datos debe configurarse de modo que los blobs almacenados no se puedan eliminar (se recopilará la basura). Esto sirve para garantizar la integridad de los datos de índice. Si no se configura de esta forma, es posible que se produzcan extracciones fallidas debido a la falta de integridad de estos datos de índice.
+* Al utilizar `Amazon S3` o `Azure` como almacén de datos en el sistema de AEM de origen, el almacén de datos debe configurarse de modo que los blobs almacenados no se puedan eliminar (se recopilará la basura). Esto garantiza la integridad de los datos de índice y si no se configuran de esta manera, pueden producirse extracciones fallidas debido a la falta de integridad de estos datos de índice.
 
 ## Disponibilidad {#availability}
 
