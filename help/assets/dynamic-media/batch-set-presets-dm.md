@@ -6,9 +6,9 @@ feature: Ajustes preestablecidos de imagen, Ajustes preestablecidos de visor
 role: Business Practitioner
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3435'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Para ayudarle a comprender la importancia de utilizar una convención de nombres
 
 La página **[!UICONTROL Ajuste preestablecido de conjunto de lotes]** de [!DNL Dynamic Media] permite crear, editar o eliminar ajustes preestablecidos de conjuntos de lotes y aplicar o quitar ajustes preestablecidos de conjuntos de lotes de las carpetas de recursos. Puede utilizar las listas desplegables de campos de formulario para definir un ajuste preestablecido de conjunto de lotes o el campo **[!UICONTROL Raw Code]**, que permite escribir la sintaxis de las expresiones regulares.
 
-Puede crear tantos ajustes preestablecidos de conjuntos de lotes como sea necesario para cubrir todos los trabajos de ingesta de recursos que necesite.
+Puede crear muchos ajustes preestablecidos de conjuntos de lotes para cubrir todos los trabajos de ingesta de recursos que necesite.
 
-**Acerca de la Convención de nomenclatura de recursos**
+### Acerca de la Convención de nomenclatura de recursos
 
 El área **[!UICONTROL Convención de nombres de recursos]** de la página **[!UICONTROL Ajuste preestablecido de conjunto de lotes]** tiene dos elementos que puede utilizar para definir el ajuste preestablecido de conjunto de lotes: **[!UICONTROL Coincidir]** y **[!UICONTROL Nombre base]**. Estos elementos permiten definir una convención de nombres e identificar la parte de la convención utilizada para asignar un nombre al conjunto en el que están contenidos. <!-- While **[!UICONTROL Match]** is required, **[!UICONTROL Base Name]** is mandatory only if the **[!UICONTROL Match]** field does not already specify a base name through the use of a bracket grouping. -->
 
@@ -51,7 +51,7 @@ Por ejemplo, la sintaxis de una expresión regular de coincidencia literal podr�
 
 `(\w+)-\w+-\w+`
 
-**Acerca del orden de secuencias**
+### Acerca del orden de secuencias
 
 Si lo desea, puede definir el orden en que se muestran las imágenes después de agrupar el conjunto de imágenes o el conjunto de giros en [!DNL Dynamic Media]. De forma predeterminada, los recursos se ordenan alfanuméricamente. Sin embargo, puede utilizar una lista de expresiones regulares separadas por coma para definir el orden.
 
@@ -67,7 +67,7 @@ Cuando termine de crear un ajuste preestablecido de conjunto de lotes, debe apli
 
 **Para crear un ajuste preestablecido de conjunto de lotes para un conjunto de imágenes o un conjunto de giros:**
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 
    ![bsp-create1.png](/help/assets/assets-dm/bsp-create1.png)
 
@@ -113,7 +113,7 @@ Consulte [Creación de un ajuste preestablecido de conjunto de lotes para un con
 | Incluir recursos derivados | Opcional. Para que el IPS de [!DNL Dynamic Media] (Image Production System) incluya imágenes generadas o &quot;derivadas&quot; con su conjunto de giros o conjunto de imágenes, seleccione **[!UICONTROL Yes]** (predeterminado). Un recurso derivado es una imagen que un usuario no ha cargado directamente. En su lugar, IPS produjo el recurso cuando se cargó un recurso maestro. Por ejemplo, un recurso de imagen que IPS generó a partir de una página en un PDF, en el momento en que el PDF se cargó en [!DNL Dynamic Media], se considera un recurso derivado. |
 | Carpeta de destino | Opcional. Si define un gran número de conjuntos de imágenes o conjuntos de giros, Adobe recomienda mantener estos conjuntos separados de las carpetas que contienen los propios recursos. Como tal, considere la posibilidad de crear una carpeta Conjuntos de imágenes o Conjuntos de giros y redirija la aplicación para colocar conjuntos de lotes generados aquí.<br>En este caso, especifique qué carpeta dentro de la estructura de carpetas de recursos de Experience Manager (`/content/dam`) tiene activo el ajuste preestablecido de conjunto de lotes. Asegúrese de que la carpeta está habilitada para la sincronización [!DNL Dynamic Media] para permitirla como carpeta de destino. Consulte [Configuración de la publicación selectiva a nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Si se aplica el ajuste preestablecido mediante las  **[!UICONTROL Propiedades]** de la carpeta, puede asignarse a más de una carpeta un conjunto de lotes determinado preestablecido. Consulte [Aplicación de ajustes preestablecidos de conjuntos de lotes desde la página Propiedades](#apply-bsp-to-folders-via-properties) de una carpeta de recursos.<br>Si no especifica ninguna carpeta, el conjunto de lotes preestablecido de conjunto de imágenes generado o el conjunto de giros se crea en la misma carpeta que la carpeta de recursos cargada en. |
 | **[!UICONTROL Establezca la convención de asignación de nombres]** |  |
-| Prefijo<br>o<br>Sufijo | Opcional. Introduzca un prefijo, un sufijo o ambos en los campos correspondientes.<br>Los campos prefijo y sufijo permiten crear tantos ajustes preestablecidos de conjuntos de lotes utilizando una convención de nomenclatura de archivos personalizada alternativa para un conjunto de contenido determinado. Este método es especialmente útil en casos en los que hay una excepción al esquema de nombres predeterminado definido por la empresa.<br>El prefijo o el sufijo se añaden al  **[!UICONTROL nombre]** base definido en el área  **[!UICONTROL Convenciones de nombres de]** recursos. Al agregar un prefijo o sufijo, se asegura de que el conjunto de imágenes o el conjunto de giros se creen de forma exclusiva e independiente de otros recursos. También puede servir para ayudar a otros a identificar tipos de archivos. Por ejemplo, para determinar un modo de color utilizado, puede agregar como prefijo o sufijo `rgb` o `cmyk`.<br>Aunque no es necesario especificar una convención de nombres de conjuntos para utilizar la funcionalidad preestablecida de conjuntos de lotes, se recomienda utilizar la convención de nombres de conjuntos. Esta práctica permite definir tantos elementos de la convención de nombres como desee agrupar en un conjunto para ayudar a optimizar la creación de conjuntos de lotes. |
+| Prefijo<br>o<br>Sufijo | Opcional. Introduzca un prefijo, un sufijo o ambos en los campos correspondientes.<br>Los campos prefijo y sufijo permiten crear muchos ajustes preestablecidos de conjuntos de lotes utilizando una convención de nombres de archivo personalizada y alternativa para un conjunto de contenido determinado. Este método es especialmente útil en casos en los que hay una excepción al esquema de nombres predeterminado definido por la empresa.<br>El prefijo o el sufijo se añaden al  **[!UICONTROL nombre]** base definido en el área  **[!UICONTROL Convenciones de nombres de]** recursos. Al agregar un prefijo o sufijo, se asegura de que el conjunto de imágenes o el conjunto de giros se creen de forma exclusiva e independiente de otros recursos. También puede servir para ayudar a otros a identificar tipos de archivos. Por ejemplo, para determinar un modo de color utilizado, puede agregar como prefijo o sufijo `rgb` o `cmyk`.<br>Aunque no es necesario especificar una convención de nombres de conjuntos para utilizar la funcionalidad preestablecida de conjuntos de lotes, se recomienda utilizar la convención de nombres de conjuntos. Esta práctica permite definir tantos elementos de la convención de nombres como desee agrupar en un conjunto para ayudar a optimizar la creación de conjuntos de lotes. |
 | **[!UICONTROL Resultados de la regla - RegX]** |  |
 | Convención de nomenclatura de recursos - Coincidencia | Solo lectura. Muestra la sintaxis de la expresión regular en función de las opciones de formulario de coincidencia que haya elegido o del código sin procesar que haya introducido. |
 | Convención de nombres de recursos - Nombre base | Solo lectura. Muestra la sintaxis de la expresión regular en función de las opciones de formulario Nombre base que haya elegido o del código sin procesar que haya introducido. |
@@ -143,7 +143,7 @@ Volver a procesar los recursos en una carpeta si se da alguna de las dos situaci
 
 ### Aplicación de ajustes preestablecidos de conjuntos de lotes a carpetas de recursos desde la página Ajustes preestablecidos de conjuntos de lotes {#apply-bsp-to-folders-via-bsp-page}
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla de verificación de cada ajuste preestablecido de conjunto de lotes que desee aplicar a las carpetas.
 1. En la barra de herramientas, pulse **[!UICONTROL Aplicar ajuste preestablecido de lote a las carpetas]**.
 1. En la página **[!UICONTROL Seleccionar carpetas]**, active la casilla de verificación de cada carpeta a la que desee aplicar los ajustes preestablecidos de conjuntos de lotes.
@@ -151,7 +151,7 @@ Volver a procesar los recursos en una carpeta si se da alguna de las dos situaci
 
 ### Aplicación de ajustes preestablecidos de conjuntos de lotes desde la página Propiedades de una carpeta de recursos {#apply-bsp-to-folders-via-properties}
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Desplácese a la carpeta a la que desee aplicar uno o varios ajustes preestablecidos de conjuntos de lotes.
 1. En la página, a la izquierda de la columna **[!UICONTROL Name]**, seleccione la casilla de verificación de una carpeta.
 1. En la barra de herramientas, pulse **[!UICONTROL Propiedades]**.
@@ -159,7 +159,7 @@ Volver a procesar los recursos en una carpeta si se da alguna de las dos situaci
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
-1. En **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, en el cuadro de lista desplegable **[!UICONTROL Nombre de ajuste preestablecido]**, seleccione el nombre de un ajuste preestablecido de conjunto de lotes que desea aplicar. La captura de pantalla anterior muestra dos ajustes preestablecidos de conjuntos de lotes seleccionados aplicados a la carpeta de recursos.
+1. En **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, en el cuadro de lista desplegable **[!UICONTROL Nombre de ajuste preestablecido]**, seleccione el nombre de un ajuste preestablecido de conjunto de lotes que desea aplicar. La captura de pantalla anterior muestra dos ajustes preestablecidos de conjuntos de lotes seleccionados que se aplican a la carpeta de recursos.
 
    Si no existen nombres de ajustes preestablecidos de conjuntos de lotes en el cuadro de lista desplegable **[!UICONTROL Nombre de ajustes preestablecidos]**, significa que aún no se ha creado ningún ajuste preestablecido de conjuntos de lotes. Consulte [Creación de un ajuste preestablecido de conjunto de lotes para un conjunto de imágenes o un conjunto de giros](#creating-bsp).
 
@@ -179,7 +179,7 @@ Si desea que el ajuste preestablecido recién editado se vuelva a aplicar a los 
 
 **Para editar un ajuste preestablecido de conjunto de lotes:**
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, compruebe el ajuste preestablecido de conjunto de lotes que desea cambiar.
 1. En la barra de herramientas, pulse **[!UICONTROL Editar ajuste preestablecido de conjunto de lotes]**.
 1. Edite el ajuste preestablecido según sea necesario.
@@ -193,7 +193,7 @@ Si copia un ajuste preestablecido existente al que hacen referencia las carpetas
 
 **Para copiar un ajuste preestablecido de conjunto de lotes existente:**
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, seleccione la casilla de verificación del ajuste preestablecido de conjunto de lotes que desea copiar.
 1. En la barra de herramientas, pulse **[!UICONTROL Copiar]**.
 1. En el cuadro de diálogo **[!UICONTROL Copiar ajuste preestablecido de conjunto de lotes]**, en el cuadro de texto **[!UICONTROL Título]**, escriba un nuevo nombre para el ajuste preestablecido.
@@ -204,7 +204,7 @@ Si copia un ajuste preestablecido existente al que hacen referencia las carpetas
 
 ## Acerca de la eliminación de los ajustes preestablecidos de conjuntos de lotes de las carpetas {#remove-bsp-from-folder}
 
-Al quitar los ajustes preestablecidos de conjuntos de lotes de las carpetas, los recursos nuevos que cargue en estas carpetas no tendrán el ajuste preestablecido de conjuntos de lotes aplicado. Los recursos existentes en la carpeta que ya se habían agregado al conjunto de imágenes o al conjunto de giros en función del ajuste preestablecido de conjunto de lotes que se aplicó a la carpeta siguen mostrándose tal cual.
+Al quitar los ajustes preestablecidos de conjuntos de lotes de las carpetas, los recursos nuevos que cargue en estas carpetas no tendrán el ajuste preestablecido de conjuntos de lotes aplicado. Los recursos existentes en la carpeta que ya se habían agregado al conjunto de imágenes o al conjunto de giros basado en el ajuste preestablecido de conjunto de lotes que se aplicó a la carpeta siguen mostrándose tal cual.
 
 Si desea *eliminar* ajustes preestablecidos de carpetas, consulte [Eliminación de ajustes preestablecidos de conjuntos de lotes](#delete-bsp).
 
@@ -215,7 +215,7 @@ Existen dos métodos que puede utilizar para eliminar los ajustes preestablecido
 
 ### Eliminación de los ajustes preestablecidos de conjuntos de lotes de las carpetas mediante la página Ajustes preestablecidos de conjuntos de lotes {#remove-bsp-from-folders-via-bsp-page}
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla de verificación de uno o varios ajustes preestablecidos de conjunto de lotes que desee eliminar de una o varias carpetas.
 1. En la barra de herramientas, pulse **[!UICONTROL Quitar ajuste preestablecido de lote de las carpetas]**.
 
@@ -228,7 +228,7 @@ Existen dos métodos que puede utilizar para eliminar los ajustes preestablecido
 
 ### Eliminación de los ajustes preestablecidos de conjuntos de lotes de la página Propiedades {#remove-bsp-from-folders-via-properties} de una carpeta
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Desplácese a la carpeta en la que desee eliminar uno o varios ajustes preestablecidos de conjuntos de lotes.
 1. En la página, a la izquierda de la columna **[!UICONTROL Name]**, seleccione la casilla de verificación de una carpeta.
 1. En la barra de herramientas, pulse **[!UICONTROL Propiedades]**.
@@ -250,7 +250,7 @@ Si desea *quitar los ajustes preestablecidos* de las carpetas, consulte [Elimina
 
 **Para eliminar los ajustes preestablecidos de conjuntos de lotes:**
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Batch Set Presets]**.
 1. En la página **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]**, a la izquierda de la columna **[!UICONTROL Nombre de ajuste preestablecido]**, active la casilla de verificación de uno o varios ajustes preestablecidos de conjunto de lotes que desee eliminar.
 1. En la barra de herramientas, pulse **[!UICONTROL Eliminar ajustes preestablecidos de conjunto de lotes]**.
 
