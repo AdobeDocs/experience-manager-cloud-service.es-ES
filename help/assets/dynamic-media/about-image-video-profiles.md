@@ -1,16 +1,16 @@
 ---
 title: Acerca de los perfiles de imagen de Dynamic Media y los perfiles de vídeo
 description: Un perfil de imagen o un perfil de vídeo es una fórmula para las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar la codificación de vídeo que se aplicará a los recursos de vídeo de Dynamic Media que cargue. O bien, qué perfil de imagen aplicar a los recursos de imagen de Dynamic Media para recortarlos correctamente.
-feature: Asset Management,Image Profiles,Video Profiles
+feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
 role: Administrator,Business Practitioner
+exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1282'
 ht-degree: 2%
 
 ---
-
 
 # Acerca de los perfiles de imagen de Dynamic Media y los perfiles de vídeo{#about-dm-image-video-profiles}
 
@@ -43,7 +43,7 @@ Por ejemplo, supongamos que ha creado un perfil de imagen de Dynamic Media y lo 
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Aunque no haya editado un perfil de imagen o un perfil de vídeo, o bien ya haya aplicado un perfil de imagen o un perfil de vídeo, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en Adobe Experience Manager. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
@@ -59,8 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**Para volver a procesar los recursos de Dynamic Media en una carpeta**:
-1. En Adobe Experience Manager, en la página Recursos, vaya a una carpeta de recursos de Dynamic Media que tenga un perfil de imagen o un perfil de vídeo asignado y para la que desee aplicar el **Scene7: Volver a procesar el flujo de trabajo de Asset**,
+**Para volver a procesar los recursos de Dynamic Media en una carpeta:**
+1. En Experience Manager, en la página Recursos, vaya a la carpeta Recursos que tenga un perfil de imagen o un perfil de vídeo asignado y para la que desee aplicar el **Scene7: Volver a procesar el flujo de trabajo de Asset**.
 
    Las carpetas que tienen asignado un perfil de imagen o un perfil de vídeo tienen el nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
 
@@ -87,7 +87,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño de lote óptimo se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor superior significa que tiene muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño promedio del archivo es de cientos de megabytes-Adobe, se recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño de lote óptimo se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor superior significa que tiene muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios 100, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes, Adobe recomienda reducir el tamaño del lote hasta 10.
 
 **Para ajustar de forma opcional el tamaño del lote del flujo** de trabajo de reprocesamiento:
 
