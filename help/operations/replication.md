@@ -36,7 +36,7 @@ Para realizar la replicación automática para esto, debe habilitar **Replicaci�
 
 Para realizar una activación de árbol:
 
-1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
+1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
 2. Seleccione la tarjeta **forwardPublisher**
 3. Una vez en la interfaz de usuario de la consola web de forwardPublisher, **seleccione Distribuir**
 
