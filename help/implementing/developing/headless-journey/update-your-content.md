@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -324,11 +324,10 @@ Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabe
 
 Debería continuar con su recorrido sin AEM al revisar el documento [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) donde aprenderá a tomar su proyecto sin encabezado de AEM y prepararlo para su lanzamiento.
 
+[Cómo crear aplicaciones de una sola página (SPA) con ](create-spa.md) AEM también mostrará cómo puede crear SPA editables con el marco SPA Editor de AEM, así como integrar SPA externas, habilitando las capacidades de edición según sea necesario.
+
 ## Recursos adicionales {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [Principio de HATEOEA](https://en.wikipedia.org/wiki/HATEOAS)
-* [Formato SIREN](https://github.com/kevinswiber/siren)
 * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
 * [API de REST de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
