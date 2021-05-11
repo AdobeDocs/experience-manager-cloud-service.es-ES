@@ -1,14 +1,14 @@
 ---
 title: 'Introducción a los programas de espacio aislado '
-description: 'Introducción a los programas de espacio aislado '
+description: Introducción a los programas de espacio aislado
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a los Programas de Sandbox {#sandbox-programs}
 
@@ -38,5 +38,7 @@ Los Programas del Simulador para pruebas tienen los siguientes atributos:
 1. **AEM actualizaciones:** AEM las actualizaciones se pueden aplicar manualmente a los entornos de un programa de espacio aislado para pruebas y no se insertan automáticamente.
 Consulte [AEM Actualizaciones a entornos de espacio aislado](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) para obtener más información.
 
-1. **Hibernación:** los entornos de un programa de espacio aislado hibernan automáticamente si no se detecta ninguna actividad durante un período de tiempo determinado. Los entornos en hibernación se pueden anular de hibernación manualmente.
+1. **Hibernación:** los entornos de un programa de espacio aislado hibernan automáticamente si no se detecta ninguna actividad durante un período de tiempo determinado. Los entornos limitados se colocan en un nodo de hibernación después de 8 horas de inactividad, tras las cuales se puede anular la hibernación. Los entornos en hibernación se pueden anular de hibernación manualmente.
 Consulte [Entorno de espacio aislado en hibernación y dehibernación](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md) para obtener más información.
+
+1. **Eliminación**: Los entornos limitados se eliminan después de 6 meses de estar en modo de hibernación continua, después de lo cual se pueden volver a crear.
