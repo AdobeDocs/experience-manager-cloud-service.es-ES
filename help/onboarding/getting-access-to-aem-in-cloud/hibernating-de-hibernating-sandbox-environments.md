@@ -1,14 +1,14 @@
 ---
 title: 'Entornos de espacio aislado en hibernación y dehibernación '
-description: 'Entornos de espacio aislado en hibernación y dehibernación '
+description: Entornos de espacio aislado en hibernación y dehibernación
+exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
-
 
 # Entornos de espacio aislado en hibernación y dehibernación {#hibernating-introduction}
 
@@ -121,8 +121,12 @@ Algunas consideraciones clave relacionadas con los entornos en hibernación y en
 
 * AEM actualizaciones se pueden aplicar a entornos en hibernación, que los clientes pueden almacenar en déclencheur manualmente desde Cloud Manager. El entorno permanecerá en hibernación y la nueva versión aparecerá en el entorno una vez que esté en desuso.
 
->[!NOTE]
->Actualmente, Cloud Manager no indica si un entorno está en hibernación.
+* Los entornos limitados se colocan en un nodo de hibernación después de 8 horas de inactividad, tras las cuales se puede anular la hibernación.
+
+* Los entornos limitados se eliminan después de 6 meses de estar en modo de hibernación continua, después de lo cual se pueden volver a crear.
+
+   >[!NOTE]
+   >Actualmente, Cloud Manager no indica si un entorno está en hibernación.
 
 ## Actualizaciones AEM en entornos de espacio aislado {#aem-updates-sandbox}
 
@@ -135,9 +139,4 @@ Consulte [Actualización del entorno](/help/implementing/cloud-manager/manage-en
 >[!NOTE]
 >* Una actualización manual solo se puede ejecutar cuando el entorno de destino tiene una canalización configurada correctamente.
 >* Una actualización manual del entorno *Production* o *Stage* actualizará automáticamente el otro. El conjunto de entornos Producción+Fase debe estar en la misma versión de AEM.
-
-
-
-
-
 
