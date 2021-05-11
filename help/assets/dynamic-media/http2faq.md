@@ -4,9 +4,9 @@ description: Obtenga información sobre la entrega de contenido HTTP2.
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -17,15 +17,13 @@ Adobe se complace en anunciar la disponibilidad de la entrega HTTP/2 de contenid
 
 >[!NOTE]
 >
->Esta función requiere que utilice la CDN predeterminada incluida con Adobe Experience Manager Dynamic Media. Esta función no admite ninguna otra CDN personalizada.
+>Esta función requiere que utilice la red de entrega de contenido lista para usar que está incluida con Adobe Experience Manager - Dynamic Media. Esta función no admite ninguna otra red de distribución de contenido personalizada.
 
 ## ¿Qué es HTTP/2? {#what-is-http}
 
 HTTP/2 mejora la forma en que se comunican los exploradores y los servidores, lo que permite una transferencia de información más rápida y, al mismo tiempo, reduce la cantidad de potencia de procesamiento necesaria.
 
-El siguiente sitio web describe HTTP/2 y sus ventajas de una manera breve y sencilla:
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+El artículo del sitio web [Lo que debe saber sobre HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html) describe HTTP/2 y sus ventajas de una manera breve y sencilla.
 
 ## ¿Cuáles son las ventajas clave del paso a HTTP/2 para la entrega de contenido? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
