@@ -4,16 +4,16 @@ description: Aprenda a utilizar Dynamic Media para distribuir recursos para cons
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 13%
 
 ---
 
 # Trabajo con Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
 Dynamic Media proporciona experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Dynamic Media incorpora de forma exclusiva los flujos de trabajo de la solución de administración de recursos digitales (Assets) de Adobe Experience Manager para simplificar y optimizar el proceso de administración de campañas digitales.
 
@@ -38,7 +38,7 @@ Las funciones solo de Dynamic Media incluyen lo siguiente:
 * [Vídeo](video.md)
 * [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de recursos](managing-assets.md)
-* [Uso de vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
+* [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 
 Consulte también [Configuración de Dynamic Media](administering-dynamic-media.md).
 
@@ -81,7 +81,7 @@ Los recursos habilitados para Dynamic Media incluyen `pyramid.tiffs`.
 
 ### Cambio en las vistas de recursos {#asset-views-change}
 
-Con Dynamic Media habilitado, puede acercar y alejar haciendo clic en los botones `+` y `-`. También puede tocar o hacer clic en para acercar cierta área. Revertir le lleva a la versión original y puede crear la imagen a pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
+Con Dynamic Media habilitado, puede acercar y alejar haciendo clic en los botones `+` y `-`. También puede tocar o hacer clic en para acercar cierta área. Revertir le lleva a la versión original y puede crear la imagen a pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado aparece de la siguiente manera:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
