@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 1%
+source-wordcount: '846'
+ht-degree: 2%
 
 ---
 
@@ -50,194 +50,198 @@ Con Adobe Experience Manager (AEM) como Cloud Service, puede acceder selectivame
 >
 >AEM API de GraphQL es una implementación personalizada, basada en la especificación estándar de la API de GraphQL.
 
-## GraphQL: Introducción {#graphql-introduction}
+<!--
+## GraphQL - An Introduction {#graphql-introduction}
 
-GraphQL es una especificación de código abierto que proporciona:
+GraphQL is an open-source specification that provides:
 
-* lenguaje de consulta que permite seleccionar contenido específico de objetos estructurados.
-* un tiempo de ejecución para realizar estas consultas con el contenido estructurado.
+* a query language that enables you to select specific content from structured objects.
+* a runtime to fulfill these queries with your structured content.
 
-GraphQL es una API con *tipos de inflexible*. Esto significa que el contenido de *todo* debe estar claramente estructurado y organizado por tipo, de modo que GraphQL *entienda* a qué acceder y cómo hacerlo. Los campos de datos se definen en los esquemas de GraphQL, que definen la estructura de los objetos de contenido.
+GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
 
-Los extremos de GraphQL proporcionan las rutas que responden a las consultas de GraphQL.
+GraphQL endpoints then provide the paths that respond to the GraphQL queries.
 
-Todo esto significa que la aplicación puede seleccionar de forma precisa, fiable y eficaz el contenido que necesita, justo lo que necesita cuando se utiliza con AEM.
-
->[!NOTE]
->
->Consulte *GraphQL*.org y *GraphQL*.com.
-
-## AEM y GraphQL {#aem-graphql}
-
-GraphQL se utiliza en varias ubicaciones de AEM; por ejemplo:
-
-* Fragmentos de contenido
-   * Se ha desarrollado una API personalizada para este caso de uso (entrega sin encabezado a su aplicación).
-      * Esta es la API de AEM GraphQL.
-* Comercio
-   * AEM Commerce consume datos de una plataforma de comercio a través de GraphQL.
-   * Existen integraciones de GraphQL entre AEM y varias soluciones de comercio de terceros, que se utilizan con los enlaces de extensión proporcionados por los componentes principales del CIF.
-      * Esto no utiliza la API de AEM GraphQL.
+All this means that your app can accurately, reliably and efficiently select the content that it needs - just what you need when used with AEM.
 
 >[!NOTE]
 >
->Este paso del Recorrido sin encabezado solo se refiere a la API de AEM GraphQL y a los fragmentos de contenido.
+>See *GraphQL*.org and *GraphQL*.com.
 
-## API de AEM GraphQL {#aem-graphql-api}
+## AEM and GraphQL {#aem-graphql}
 
-La API de AEM GraphQL es una versión personalizada basada en la especificación estándar de la API de GraphQL, especialmente configurada para permitirle realizar consultas (complejas) en los fragmentos de contenido.
+GraphQL is used in various locations in AEM; for example:
 
-Se utilizan fragmentos de contenido, ya que el contenido está estructurado según los modelos de fragmento de contenido. Esto cumple un requisito básico de GraphQL.
-
-* Un modelo de fragmento de contenido está formado por uno o más campos.
-   * Cada campo se define según un Tipo de datos.
-* Los modelos de fragmento de contenido se utilizan para generar los esquemas AEM de GraphQL correspondientes.
-
-Para acceder realmente a GraphQL para AEM (y el contenido) se utiliza un punto final para proporcionar la ruta de acceso.
-
-El contenido devuelto, a través de la API de AEM GraphQL, puede ser utilizado por sus aplicaciones.
+* Content Fragments
+  * A customized API has been developed for this use-case (Headless Delivery to your app).
+    * This is the AEM GraphQL API.
+* Commerce
+  * AEM Commerce consumes data from a Commerce platform via GraphQL.
+  * There are GraphQL integrations between AEM and various third-party commerce solutions, used with the extension hooks provided by the CIF Core Components.
+    * This does not use the AEM GraphQL API.
 
 >[!NOTE]
 >
->La implementación de la API de AEM GraphQL se basa en las bibliotecas Java de GraphQL.
+>This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
 
-### Casos de uso para entornos de autor y publicación {#use-cases-author-publish-environments}
+## AEM GraphQL API {#aem-graphql-api}
 
-Los casos de uso de la API de AEM GraphQL pueden depender del tipo de AEM como entorno de Cloud Service:
+The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
 
-* Entorno de publicación; se usa para:
-   * Contenido de consulta para la aplicación JS (caso de uso estándar)
+Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
 
-* Entorno de creación; se usa para:
-   * Contenido de la consulta para &quot;fines de administración de contenido&quot;:
-      * GraphQL en AEM as a Cloud Service es actualmente una API de solo lectura.
-      * La API de REST se puede utilizar para operaciones CR(u)D.
+* A Content Fragment Model is built up of one, or more, fields. 
+  * Each field is defined according to a Data Type.
+* Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
 
-## Fragmentos de contenido para usar con la API de AEM GraphQL {#content-fragments-use-with-aem-graphql-api}
+To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
 
-Los fragmentos de contenido se pueden usar como base para GraphQL para AEM esquemas y consultas como:
+The content returned, via the AEM GraphQL API, can then be used by your applications. 
 
-* Permiten diseñar, crear, depurar y publicar contenido independiente de las páginas.
-* Se basan en un modelo de fragmento de contenido, que predefine la estructura del fragmento resultante mediante tipos de datos definidos.
-* Se pueden lograr capas de estructura adicionales con el tipo de datos Referencia de fragmento , disponible al definir un modelo.
+>[!NOTE]
+>
+>The AEM GraphQL API implementation is based on the GraphQL Java libraries.
 
-### Modelos de fragmento de contenido {#content-fragments-models}
+### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
-Estos modelos de fragmento de contenido:
+The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
 
-* Se utilizan para generar los esquemas, una vez **Enabled**.
+* Publish environment; used to: 
+  * Query content for JS application (standard use-case)
 
-* Proporcione los tipos de datos y campos requeridos para GraphQL. Se aseguran de que la aplicación solo solicita lo que es posible y recibe lo que se espera.
+* Author environment; used to: 
+  * Query content for "content management purposes":
+    * GraphQL in AEM as a Cloud Service is currently a read-only API.
+    * The REST API can be used for CR(u)D operations.
 
-* El tipo de datos **Referencias de fragmento** se puede usar en el modelo para hacer referencia a otro fragmento de contenido y, por lo tanto, introducir niveles adicionales de estructura.
+## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
-### Referencias de fragmento {#fragment-references}
+Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
 
-La **Referencia de fragmento**:
+* They enable you to design, create, curate and publish page-independent content.
+* They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment by means of defined data types.
+* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
+ 
+### Content Fragment Models {#content-fragments-models}
 
-* Es un tipo de datos específico disponible al definir un modelo de fragmento de contenido.
+These Content Fragment Models:
 
-* Hace referencia a otro fragmento, según un modelo de fragmento de contenido específico.
+* Are used to generate the Schemas, once **Enabled**.
 
-* Permite crear y recuperar datos estructurados.
+* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
 
-   * Cuando se define como una **fuente múltiple**, el fragmento principal puede hacer referencia (recuperar) a varios subfragmentos.
+* The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
 
-### Vista previa de JSON {#json-preview}
+### Fragment References {#fragment-references}
 
-Para ayudar a diseñar y desarrollar los modelos de fragmento de contenido, puede obtener una vista previa del resultado de JSON en el Editor de fragmentos de contenido.
+The **Fragment Reference**:
 
-## Generación de esquemas de GraphQL a partir de fragmentos de contenido {#graphql-schema-generation-content-fragments}
+* Is a specific data type available when defining a Content Fragment Model.
 
-GraphQL es una API con establecimiento inflexible de tipos, lo que significa que el contenido debe estar claramente estructurado y organizado por tipo. La especificación de GraphQL proporciona una serie de directrices sobre cómo crear una API sólida para interrogar contenido en un determinado caso. Para ello, un cliente debe recuperar el Esquema , que contiene todos los tipos necesarios para una consulta.
+* References another fragment, dependent on a specific Content Fragment Model.
 
-Para los fragmentos de contenido, los esquemas (estructura y tipos) de GraphQL se basan en modelos de **Fragmento de contenido habilitado** y sus tipos de datos.
+* Allows you to create, and then retrieve, structured data.
+
+  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+
+### JSON Preview {#json-preview}
+
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
+
+## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
+
+GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
+
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 
 >[!CAUTION]
 >
->Todos los esquemas de GraphQL (derivados de los modelos de fragmento de contenido que han sido **Enabled**) se pueden leer a través del extremo de GraphQL.
+>All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
 >
->Esto significa que debe asegurarse de que no hay contenido confidencial disponible, para garantizar que no se expongan datos confidenciales a través de los extremos de GraphQL; por ejemplo, esto incluye información que podría estar presente como nombres de campo en la definición del modelo.
+>This means that you need to ensure that no sensitive content is available, to ensure that no sensitive data is exposed via GraphQL endpoints; for example, this includes information that could be present as field names in the model definition.
 
-Por ejemplo, si un usuario creó un Modelo de fragmento de contenido denominado `Article`, AEM genera el objeto `article` que es de un tipo `ArticleModel`. Los campos dentro de este tipo corresponden a los campos y tipos de datos definidos en el modelo.
+For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
 
-1. Un modelo de fragmento de contenido:
+1. A Content Fragment Model:
 
-   ![Modelo de fragmento de contenido para usar con el Modelo de fragmento de ](assets/graphqlapi-cfmodel.png "GraphQLContent para usar con GraphQL")
+   ![Content Fragment Model for use with GraphQL](assets/graphqlapi-cfmodel.png "Content Fragment Model for use with GraphQL")
 
-1. El esquema correspondiente de GraphQL (salida de la documentación automática de GraphiQL):
-   ![Esquema GraphQL basado en el ](assets/graphqlapi-cfm-schema.png "modelo de fragmento de contenidoEsquema de GraphQL basado en el modelo de fragmento de contenido")
+1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
+   ![GraphQL Schema based on Content Fragment Model](assets/graphqlapi-cfm-schema.png "GraphQL Schema based on Content Fragment Model")
 
-   Esto muestra que el tipo generado `ArticleModel` contiene varios [campos](#fields).
+   This shows that the generated type `ArticleModel` contains several [fields](#fields). 
+   
+   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
-   * Tres de ellos han sido controlados por el usuario: `author`, `main` y `referencearticle`.
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
-   * Los demás campos los agregó automáticamente AEM y representan métodos útiles para proporcionar información sobre un determinado fragmento de contenido; en este ejemplo, `_path`, `_metadata`, `_variations`. Estos [campos de ayuda](#helper-fields) están marcados con un `_` anterior para distinguir entre lo que ha definido el usuario y lo que se ha generado automáticamente.
+1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the Sample Queries.md#graphql-sample-queries) (based on a sample Content Fragment structure for use with GraphQL.
 
-1. Después de que un usuario crea un fragmento de contenido basado en el modelo de artículo, se puede interrogar a través de GraphQL. Para ver ejemplos, consulte Sample Queries.md#graphql-sample-queries) (basado en una estructura de fragmento de contenido de ejemplo para usar con GraphQL.
+In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
-En GraphQL para AEM, el esquema es flexible. Esto significa que se genera automáticamente cada vez que se crea, actualiza o elimina un modelo de fragmento de contenido. Las cachés del esquema de datos también se actualizan al actualizar el modelo de fragmento de contenido.
+The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
-El servicio Sites GraphQL escucha (en segundo plano) cualquier modificación realizada en un modelo de fragmento de contenido. Cuando se detectan actualizaciones, solo se regenera esa parte del esquema. Esta optimización ahorra tiempo y proporciona estabilidad.
+So for example, if you:
 
-Por ejemplo, si:
+1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
+ 
+   1. GraphQL types for `Model-1` and `Model-2` will be generated.
 
-1. Instale un paquete que contenga `Content-Fragment-Model-1` y `Content-Fragment-Model-2`:
+1. Then modify `Content-Fragment-Model-2`:
 
-   1. Se generarán los tipos de GraphQL para `Model-1` y `Model-2`.
+   1. Only the `Model-2` GraphQL type will get updated.
 
-1. A continuación, modifique `Content-Fragment-Model-2`:
-
-   1. Solo se actualizará el tipo `Model-2` GraphQL.
-
-   1. Mientras que `Model-1` permanecerá igual.
+   1. Whereas `Model-1` will remain the same. 
 
 >[!NOTE]
 >
->Esto es importante tener en cuenta en caso de que desee realizar actualizaciones masivas en los modelos de fragmento de contenido a través de la api de REST o de otro modo.
+>This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
-El esquema se sirve a través del mismo extremo que las consultas de GraphQL, con el cliente manejando el hecho de que se llama al esquema con la extensión `GQLschema`. Por ejemplo, si se realiza una solicitud `GET` simple en `/content/cq:graphql/global/endpoint.GQLschema`, el resultado del esquema será el tipo Content: `text/x-graphql-schema;charset=iso-8859-1`.
+The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
-### Generación de esquemas: modelos no publicados {#schema-generation-unpublished-models}
+### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
 
-Cuando los fragmentos de contenido están anidados, puede ocurrir que se publique un modelo de fragmento de contenido principal, pero no un modelo al que se hace referencia.
+When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
 
 >[!NOTE]
 >
->La interfaz de usuario de AEM evita que esto ocurra, pero si la publicación se realiza mediante programación o con paquetes de contenido, puede ocurrir.
+>The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
 
-Cuando esto sucede, AEM genera un esquema *incompleto* para el modelo de fragmento de contenido principal. Esto significa que la referencia de fragmento, que depende del modelo no publicado, se elimina del esquema.
+When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
 
-## Puntos finales de AEM GraphQL {#aem-graphql-endpoints}
+## AEM GraphQL Endpoints {#aem-graphql-endpoints}
 
-<!--
-need details/examples
+An endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schemas,
+* send your GraphQL queries,
+* receive the responses (to your GraphQL queries).
+
+AEM allows for:
+
+* A global endpoint - available for use by all sites.
+* Endpoints for specific Sites configurations - that you can configure (in the Configuration Browser), specific to a specified site/project.
+
+## Permissions {#permissions}
+
+The permissions are those required for accessing Assets.
+
+## The AEM GraphiQL Interface {#aem-graphiql-interface}
+
+To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
+
+>[!NOTE]
+>
+>GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
+
+It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
+
+![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 -->
 
-Un punto final es la ruta utilizada para acceder a GraphQL para AEM. Al utilizar esta ruta, usted (o su aplicación) pueden:
-
-* acceda a los esquemas de GraphQL,
-* envíe sus consultas de GraphQL,
-* reciba las respuestas (a sus consultas de GraphQL).
-
-AEM permite:
-
-* Un punto final global - disponible para su uso en todos los sitios.
-* Puntos finales del inquilino : que puede configurar, específicos de un sitio o proyecto especificado.
-
-## Permisos    {#permissions}
-
-Los permisos son los necesarios para acceder a Assets.
-
-## Interfaz de GraphiQL de AEM {#aem-graphiql-interface}
-
-Para ayudarle a introducir y probar consultas directamente, una implementación de la interfaz estándar de GraphiQL está disponible para su uso con AEM GraphQL. Esto se puede instalar con AEM.
-
-Proporciona funciones como resaltado de sintaxis, autocompletado, autosugerencia, junto con un historial y documentación en línea.
-
-![Interfaz ](assets/graphiql-interface.png "GraphiQL de GraphiQL")
-
 ## Uso real de la API de AEM GraphQL {#actually-using-aem-graphiql}
+
+### Configuración inicial {#initial-setup}
 
 Antes de comenzar con consultas sobre el contenido, debe:
 
@@ -246,6 +250,8 @@ Antes de comenzar con consultas sobre el contenido, debe:
 
 * Instale GraphiQL (si es necesario)
    * Instalado como un paquete dedicado
+
+### Estructura de muestra {#sample-structure}
 
 Para utilizar la API de AEM GraphQL en una consulta, podemos utilizar las dos estructuras básicas del Modelo de fragmento de contenido:
 
@@ -264,9 +270,13 @@ Se utilizarán los modelos de fragmento:
 * al crear el contenido en el editor de fragmentos de contenido
 * para generar los esquemas de GraphQL que vaya a consultar
 
+### Dónde probar las consultas {#where-to-test-your-queries}
+
 Las consultas se pueden introducir en la interfaz de GraphiQL, por ejemplo en:
 
 * `http://localhost:4502/content/graphiql.html `
+
+### Introducción a las consultas {#getting-Started-with-queries}
 
 Una consulta directa es devolver el nombre de todas las entradas del esquema Company. Aquí puede solicitar una lista de todos los nombres de compañía:
 
