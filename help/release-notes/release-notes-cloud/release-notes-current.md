@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 2%
 
 ---
@@ -223,6 +223,22 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.4.0 es el 8
 * Los problemas para `CloudServiceIncompatibleWorkflowProcess` tenían la gravedad incorrecta en el archivo CSV del problema descargable.
 
 * La comprobación `Runmode` estaba produciendo falsos positivos en nodos que no son de carpeta.
+
+## Herramienta de transferencia de contenido {#content-transfer-tool}
+
+### Fecha de la versión {#release-date-ctt}
+
+La fecha de versión de la herramienta de transferencia de contenido v1.4.0 es el 11 de mayo de 2021.
+
+### Novedades {#what-is-new-ctt-may}
+
+* Esta versión de la herramienta de transferencia de contenido crea representaciones de texto para los recursos que se migran a Cloud Service. Las representaciones de texto son necesarias para admitir la búsqueda de texto completo en recursos ingestados.
+* El número máximo de conjuntos de migración de la herramienta de transferencia de contenido que un usuario puede crear ha aumentado de 4 a 10.
+
+### Corrección de errores {#bug-fixes-ctt-may}
+
+* Varias correcciones de errores relacionadas con la función de actualización automática en la interfaz de usuario de la herramienta de transferencia de contenido.
+* La herramienta de transferencia de contenido con `wipe=true` daba como resultado un índice de contador incorrecto en el destino. Esto se ha solucionado.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
