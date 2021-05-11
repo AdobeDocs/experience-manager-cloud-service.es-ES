@@ -5,9 +5,9 @@ feature: Banner de carrusel
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4556'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ En su sitio web, un banner de carrusel puede tener el siguiente aspecto:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Aquí puede navegar por las imágenes haciendo clic en los números. Además, las diapositivas giran automáticamente en función de un intervalo de tiempo que se pueda personalizar. Las imágenes que agregue en el banner de carrusel admiten zonas interactivas y mapas de imágenes. Los usuarios pueden tocar o ir a un hipervínculo o acceder a una ventana de vista rápida.
+Aquí puede navegar por las imágenes haciendo clic en los números. Además, las diapositivas giran automáticamente en función de un intervalo de tiempo que se pueda personalizar. Las imágenes de un banner de carrusel admiten zonas interactivas y mapas de imágenes. Los usuarios pueden tocar o ir a un hipervínculo o acceder a una ventana de vista rápida.
 
 En este ejemplo, un usuario ha tocado o hecho clic en un mapa de imagen y ha accedido a la ventana Vista rápida para obtener guantes:
 
@@ -34,7 +34,7 @@ En este ejemplo, un usuario ha tocado o hecho clic en un mapa de imagen y ha acc
 
 ## Vea cómo se crean los titulares de carrusel {#watch-how-carousel-banners-are-created}
 
-Mire un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los banners de carrusel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a previsualizar, editar y enviar banners de carrusel.
+Mire un tutorial sobre [cómo se crean los banners de carrusel](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (Duración: 10 minutos y 33 segundos). También aprenderá a previsualizar, editar y enviar banners de carrusel.
 
 >[!NOTE]
 >
@@ -122,12 +122,12 @@ La mayoría de las implementaciones de la vista rápida utilizan el siguiente pa
 * Los datos de vista rápida se traducen al contenido como preparación para su renderización en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-El método entonces es visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida. A continuación, déclencheur la vista rápida y capture la URL de Ajax que envía la página web para cargar los datos o el contenido de la vista rápida.
+El método entonces es visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida. A continuación, déclencheur la vista rápida y adquiera la URL de Ajax que envía la página web para cargar los datos o el contenido de la vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. A continuación se indican algunos ejemplos de exploradores web que incluyen inspectores web:
 
-* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 (Windows) o Comando-Opción-I (Mac) para abrir el panel de herramientas para desarrolladores. Pulse la pestaña Red (Network).
-* En Firefox, puede activar el complemento Firebug pulsando F12 (Windows) o Comando-Opción-I (Mac). Utilice su ficha Red o la herramienta Inspector integrada y su pestaña Red.
+* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 (Windows®) o Comando-Opción-I (Mac) para abrir el panel de herramientas para desarrolladores. Pulse la pestaña Red (Network).
+* En Firefox, puede activar el complemento Firebug pulsando F12 (Windows®) o Comando-Opción-I (Mac). Utilice su ficha Red o la herramienta Inspector integrada y su pestaña Red.
 
 Cuando la supervisión de red está activada en el explorador, ponga en déclencheur la vista rápida en la página.
 
@@ -191,7 +191,7 @@ Para cargar titulares de imagen, consulte [Carga de recursos](/help/assets/manag
 >
 >Los usuarios no administrativos deben agregarse al grupo **[!UICONTROL dam-users]** para poder crear o editar banners de carrusel. Si tiene problemas para crear o editar, consulte con el administrador del sistema, que puede agregarlo al grupo **[!UICONTROL dam-users]**.
 
-**Para crear un conjunto de carrusel**
+**Para crear un conjunto de carrusel:**
 
 1. En Assets, vaya a la carpeta donde desee crear el conjunto de carrusel y pulse **[!UICONTROL Crear > Conjunto de carrusel]**.
 1. En la página Editor de letreros de carrusel, pulse **[!UICONTROL Toque para abrir Selector de recursos]** para seleccionar la imagen de la primera diapositiva.
@@ -217,19 +217,20 @@ Para cargar titulares de imagen, consulte [Carga de recursos](/help/assets/manag
    Para eliminar una diapositiva, toque o haga clic en la diapositiva y toque o haga clic en **[!UICONTROL Eliminar diapositiva]** en la barra de herramientas. Para mover una diapositiva, pulse el icono de reordenación y mantenga presionada la posición deseada.
 
 1. Después de agregar las imágenes en las diapositivas, puede agregar un punto interactivo, un mapa de imágenes o ambos a la imagen. Consulte [adición de zonas interactivas o mapas de imágenes](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. Puede cambiar el diseño visual y el comportamiento de los conjuntos de carrusel. Toque o haga clic en las pestañas Comportamiento y Aspecto y ajuste el aspecto del banner de carrusel o el comportamiento de componentes específicos. Consulte [administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/viewer-presets.md) para obtener más información sobre cómo utilizar el editor de visores.
+1. Puede cambiar el diseño visual y el comportamiento de los conjuntos de carrusel. Toque o haga clic en las pestañas **[!UICONTROL Behavior]** y **[!UICONTROL Aspecto]** y ajuste cómo aparece el banner de carrusel o cómo se comportan los componentes específicos. Consulte [administración de ajustes preestablecidos de visor](/help/assets/dynamic-media/viewer-presets.md) para obtener más información sobre cómo utilizar el editor de visores.
 
    >[!NOTE]
    >
    >Para los titulares de carrusel, puede ajustar lo siguiente:
-   >    * Duración que muestra una imagen. De forma predeterminada, cada imagen se muestra durante 9 segundos.
-   >    * Animación. De forma predeterminada, cada transición de diapositiva es un fundido. Puede cambiarlo a una transición de diapositiva.
-   >    * Estilo de los botones. Los usuarios pueden rotar por los banners tocando cada punto o número. Puede cambiar dónde aparecen los botones del indicador de conjunto (y si son numéricos o de un estilo punteado) y su tamaño.
-   >    * Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
-   >    * Antes de editar un ajuste preestablecido de visualizador, elija el estilo en el que desea basar el ajuste preestablecido. Si no elige un estilo, al comenzar a editar el ajuste preestablecido de visualizador, perderá todos los cambios si cambia a otro ajuste preestablecido.
+   >
+   >* Duración que muestra una imagen. De forma predeterminada, cada imagen se muestra durante 9 segundos.
+   >* Animación. De forma predeterminada, cada transición de diapositiva es un fundido. Puede cambiarlo a una transición de diapositiva.
+   >* Estilo de los botones. Los usuarios pueden rotar por los banners tocando cada punto o número. Puede cambiar dónde aparecen los botones del indicador de conjunto (y si son numéricos o de un estilo punteado) y su tamaño.
+   >* Cambie el estilo de resaltado de un mapa de imagen o el icono utilizado para las zonas interactivas.
+   >* Antes de editar un ajuste preestablecido de visualizador, elija el estilo en el que desea basar el ajuste preestablecido. Si no elige un estilo, al comenzar a editar el ajuste preestablecido de visualizador, perderá todos los cambios si cambia a otro ajuste preestablecido.
 
 
-   También puede previsualizar el aspecto del titular del carrusel. Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-carousel-banners).
+   También puede previsualizar el aspecto del banner de carrusel. Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-carousel-banners).
 
 1. Toque **[!UICONTROL Guardar]** cuando termine.
 
@@ -263,7 +264,7 @@ Si edita imágenes interactivas con zonas interactivas y recorta la imagen, se e
 
 <!-- See also [Adding Image Maps](/help/assets/image-maps.md). -->
 
-**Para agregar puntos interactivos o mapas de imagen a un titular de imagen**
+**Para agregar puntos interactivos o mapas de imagen a un titular de imagen:**
 
 1. En Assets, desplácese hasta el conjunto de carrusel que desee interactuar.
 1. Seleccione el conjunto de carrusel y pulse **[!UICONTROL Editar]**. Se abre el Editor del visualizador de carrusel.
@@ -316,7 +317,7 @@ Consulte [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/e
          Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido en redes sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencias.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   También puede previsualizar el aspecto del titular del carrusel. Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-carousel-banners).
+   También puede previsualizar el aspecto del banner de carrusel. Consulte [(Opcional) Vista previa de banners de carrusel](#optional-previewing-carousel-banners).
 
 1. Toque **[!UICONTROL Guardar]**.
 1. Publique el conjunto de carrusel. La publicación crea el código incrustado o la URL que puede usar en la página del sitio web. Si es cliente de Experience Manager Sites, agregue el conjunto de carrusel directamente a su página web.
@@ -339,7 +340,7 @@ Puede realizar varias tareas de edición en conjuntos de carrusel, como las sigu
 * Eliminar el conjunto de carrusel.
 * Agregue o edite zonas interactivas y mapas de imágenes. Consulte también [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
-**Edición de un conjunto de carrusel**
+**Para editar un conjunto de carrusel:**
 
 1. Realice una de las siguientes acciones:
 
@@ -364,7 +365,7 @@ Puede realizar varias tareas de edición en conjuntos de carrusel, como las sigu
 
 ## (Opcional) Vista previa de banners de carrusel {#optional-previewing-carousel-banners}
 
-Puede utilizar Vista previa para ver el aspecto que tendrá el banner de carrusel para los clientes. El uso de Vista previa también permite probar las zonas interactivas y los mapas de imágenes del banner de carrusel para asegurarse de que se comportan del modo esperado.
+Puede utilizar Vista previa para ver cómo aparece el banner de carrusel para los clientes. El uso de Vista previa también permite probar las zonas interactivas y los mapas de imágenes del banner de carrusel para asegurarse de que se comportan del modo esperado.
 
 Cuando esté satisfecho con el banner de carrusel, puede publicarlo.
 Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
@@ -373,7 +374,7 @@ Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dyn
 
 Puede obtener una vista previa de los banners de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visualizadores]**.
 
-**Para obtener una vista previa de los titulares de carrusel**
+**Para obtener una vista previa de los banners de carrusel:**
 
 1. En **[!UICONTROL Assets]**, vaya a un banner de carrusel existente que haya creado y pulse para abrirlo.
 1. Toque **[!UICONTROL Editar]**.
@@ -384,7 +385,7 @@ Puede obtener una vista previa de los banners de carrusel desde el Editor de car
 1. Toque **[!UICONTROL Preview]**.
 1. Para probar las acciones asociadas, pulse las zonas interactivas o los mapas de imágenes de la imagen.
 
-**Para obtener una vista previa de los banners de carrusel desde la lista Visualizadores**
+**Para previsualizar los banners de carrusel desde la lista Visualizadores:**
 
 1. En **[!UICONTROL Assets]**, vaya a un banner de carrusel existente que haya creado y pulse para abrirlo.
 1. Cerca de la esquina superior izquierda de la página Vista previa, haga clic en el icono Contenido .
@@ -452,6 +453,6 @@ Consulte [Identificación de variables de zona interactiva y mapa de imagen](#id
 
 El último paso para almacenar en déclencheur la URL de vista rápida y activar el panel de vista rápida requiere, muy probablemente, la asistencia de una persona de TI de front-end de su departamento de TI. Tienen conocimientos para saber mejor cómo realizar déclencheur precisas de la implementación de la vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
-## Uso de vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+## Uso de las vistas rápidas para crear ventanas emergentes personalizadas con Windows® {#using-quickviews-to-create-custom-pop-ups}
 
-Consulte [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](/help/assets/dynamic-media/custom-pop-ups.md).
+Consulte [Uso de las vistas rápidas para crear ventanas emergentes personalizadas con Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
