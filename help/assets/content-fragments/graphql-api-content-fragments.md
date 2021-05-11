@@ -4,9 +4,9 @@ description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience 
 feature: Fragmentos de contenido, API de GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 1%
 
 ---
@@ -121,20 +121,20 @@ Hay dos tipos de extremos en AEM:
 
 * Global
    * Disponible para su uso en todos los sitios.
-   * Este extremo puede utilizar todos los modelos de fragmento de contenido de todos los inquilinos.
-   * Si hay algún modelo de fragmento de contenido que deba compartirse entre los inquilinos, estos deben crearse en el inquilino global.
-* Usuario:
-   * Corresponde a una configuración de inquilino, tal como se define en el [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Este extremo puede utilizar todos los modelos de fragmento de contenido de todas las configuraciones de sitios (definidas en el [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Si hay algún modelo de fragmento de contenido que debería compartirse entre las configuraciones de Sitios, estos deberían crearse en las configuraciones globales de Sitios.
+* Configuraciones de sitios:
+   * Corresponde a una configuración de Sites, tal como se define en el [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
    * Específico de un sitio o proyecto especificado.
-   * Un extremo específico del inquilino usará los modelos de fragmento de contenido de ese inquilino específico junto con los del inquilino global.
+   * Un extremo específico de la configuración de Sitios usará los modelos de fragmento de contenido de esa configuración de Sitios específica junto con los de la configuración de Sitios global.
 
 >[!CAUTION]
 >
->El editor de fragmentos de contenido puede permitir que un fragmento de contenido de un inquilino haga referencia a un fragmento de contenido de otro inquilino (a través de políticas).
+>El editor de fragmentos de contenido puede permitir que un fragmento de contenido de una configuración de sitios haga referencia a un fragmento de contenido de otra configuración de sitios (a través de políticas).
 >
->En tal caso, no todo el contenido se podrá recuperar mediante un punto final específico del inquilino.
+>En tal caso, no todo el contenido se podrá recuperar mediante un punto final específico de configuración de Sites.
 >
->El autor del contenido debe controlar este escenario; por ejemplo, puede resultar útil considerar la posibilidad de colocar los modelos de fragmento de contenido compartido en el inquilino global.
+>El autor del contenido debe controlar este escenario; por ejemplo, puede resultar útil considerar la posibilidad de colocar los modelos de fragmento de contenido compartido en la configuración de sitios globales.
 
 La ruta del repositorio de GraphQL para AEM punto final global es:
 
@@ -196,6 +196,10 @@ Seleccione el nuevo extremo y **Publish** para que esté disponible en todos los
 ## Interfaz de GraphiQL {#graphiql-interface}
 
 La implementación de la interfaz estándar [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para su uso con AEM GraphQL. Esto se puede [instalar con AEM](#installing-graphiql-interface).
+
+>[!NOTE]
+>
+>GraphiQL está enlazado al extremo global (y no funciona con otros extremos para configuraciones de sitios específicas).
 
 Esta interfaz le permite introducir y probar directamente consultas.
 
@@ -587,21 +591,21 @@ Después de preparar una consulta con una solicitud de POST, esta se puede ejecu
 
 Esto es necesario, ya que las consultas de POST generalmente no se almacenan en caché y si se utiliza la GET con la consulta como parámetro, existe un riesgo significativo de que el parámetro sea demasiado grande para los servicios HTTP e intermediarios.
 
-Las consultas persistentes siempre deben utilizar el extremo relacionado con la configuración [adecuada (inquilino)](#graphql-aem-endpoint); para que puedan usar una o ambas:
+Las consultas persistentes siempre deben utilizar el extremo relacionado con la [configuración de sitios adecuada](#graphql-aem-endpoint); para que puedan usar una o ambas:
 
 * La configuración global y el punto final
 La consulta tiene acceso a todos los modelos de fragmento de contenido.
-* Configuraciones específicas del inquilino y puntos de conexión
-La creación de una consulta persistente para una configuración de inquilino específica requiere un extremo específico del inquilino correspondiente (para proporcionar acceso a los modelos de fragmento de contenido relacionados).
-Por ejemplo, para crear una consulta persistente específica para el inquilino WKND, se debe crear de antemano una configuración de inquilino específica de WKND y un extremo específico de WKND.
+* Configuraciones de sitios específicas y puntos de conexión
+La creación de una consulta persistente para una configuración de sitios específica requiere un punto final específico para la configuración de sitios (para proporcionar acceso a los modelos de fragmentos de contenido relacionados).
+Por ejemplo, para crear una consulta persistente específica para la configuración de WKND Sites, se debe crear de antemano una configuración de sitios específica de WKND y un extremo específico de WKND.
 
 >[!NOTE]
 >
 >Consulte [Habilitar la funcionalidad de fragmento de contenido en el navegador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obtener más información.
 >
->Las **Consultas de persistencia de GraphQL** deben habilitarse para la configuración apropiada del inquilino.
+>Las **Consultas de persistencia de GraphQL** deben habilitarse para la configuración de sitios adecuada.
 
-Por ejemplo, si hay una consulta en particular llamada `my-query`, que utiliza un modelo `my-model` de la configuración del inquilino `my-conf`:
+Por ejemplo, si hay una consulta concreta llamada `my-query`, que utiliza un modelo `my-model` de la configuración de Sites `my-conf`:
 
 * Puede crear una consulta utilizando el extremo específico `my-conf` y luego la consulta se guardará de la siguiente manera:
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
