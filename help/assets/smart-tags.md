@@ -6,9 +6,9 @@ feature: Etiquetas inteligentes,Etiquetado
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
+source-wordcount: '2401'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Las organizaciones que se ocupan de los recursos digitales utilizan cada vez má
 
 En comparación con los vocabularios de lenguaje natural, el etiquetado basado en la taxonomía empresarial ayuda a alinear los activos con el negocio de una empresa y garantiza que los activos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de coches puede etiquetar imágenes de coche con nombres de modelo, de modo que solo se muestren imágenes relevantes cuando se realice una búsqueda para diseñar una campaña de promoción.
 
-En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. Las nuevas implementaciones [!DNL Experience Manager Assets] están integradas con [!DNL Adobe Developer Console] de forma predeterminada. Ayuda a configurar la funcionalidad de las etiquetas inteligentes más rápido. En las implementaciones anteriores, los administradores pueden [configurar manualmente la integración de etiquetas inteligentes](/help/assets/smart-tags-configuration.md#aio-integration).
+En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. [!DNL Experience Manager Assets] las implementaciones de se integran con  [!DNL Adobe Developer Console] de forma predeterminada.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ Para comprobar si el servicio Etiquetas inteligentes está formado sobre las eti
 
 ## Etiquetar recursos {#tag-assets}
 
-Una vez que haya formado el servicio Etiquetas inteligentes, puede almacenar en déclencheur el flujo de trabajo de etiquetado para aplicar las etiquetas automáticamente en un conjunto diferente de recursos. Puede aplicar el flujo de trabajo de etiquetado bajo demanda o programarlo para que se ejecute periódicamente. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
+Una vez que haya formado el servicio Etiquetas inteligentes, los recursos cargados se etiquetarán automáticamente. [!DNL Experience Manager] aplica las etiquetas adecuadas en tiempo casi real. Puede aplicar el flujo de trabajo de etiquetado bajo demanda o programarlo para que se ejecute periódicamente. El flujo de trabajo de etiquetado se aplica tanto a los recursos como a las carpetas.
 
-### Etiquetar recursos de la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el flujo de trabajo **[!UICONTROL Recursos de etiquetas inteligentes DAM]** y haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Ejecutar flujo de trabajo]**, vaya a la carpeta de carga útil que contiene los recursos en los que desea aplicar las etiquetas automáticamente.
-1. Especifique un título para el flujo de trabajo y un comentario opcional. Haga clic en **[!UICONTROL Ejecutar]**.
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *Figura: Vaya a la carpeta de recursos y revise las etiquetas para comprobar si los recursos están etiquetados correctamente. Para obtener más información, consulte [administrar etiquetas inteligentes](#manage-smart-tags-and-searches).*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### Etiquetar recursos de la cronología {#tagging-assets-from-the-timeline}
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. En la interfaz de usuario [!DNL Assets], seleccione la carpeta que contiene los recursos o recursos específicos a los que desea aplicar las etiquetas inteligentes.
-1. En la esquina superior izquierda, abra la **[!UICONTROL Línea de tiempo]**.
-1. Abra las acciones desde la parte inferior de la barra lateral izquierda y haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. Seleccione el flujo de trabajo **[!UICONTROL DAM Smart Tag Assets]** y especifique un título para el flujo de trabajo.
-1. Haga clic en **[!UICONTROL Start]**. El flujo de trabajo aplica las etiquetas a los recursos. Vaya a la carpeta de recursos y revise las etiquetas para comprobar que los recursos están etiquetados correctamente. Para obtener más información, consulte [administrar etiquetas inteligentes](#manage-smart-tags-and-searches).
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas. Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los ciclos de etiquetado último y actual para el flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los seis meses.
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### Etiquetar recursos cargados {#tag-uploaded-assets}
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] puede etiquetar automáticamente los recursos que los usuarios cargan en DAM. Para ello, los administradores configuran un flujo de trabajo para añadir un paso disponible que etiquete los recursos. Consulte [cómo habilitar las etiquetas inteligentes para los recursos cargados](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## Administrar etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ Para buscar recursos con etiquetas inteligentes (normales o mejoradas), utilice 
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] Configurar para el etiquetado inteligente](smart-tags-configuration.md)
 >* [Comprender cómo las etiquetas inteligentes ayudan a administrar recursos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Etiquetado inteligente de recursos de vídeo](smart-tags-video-assets.md)
 
