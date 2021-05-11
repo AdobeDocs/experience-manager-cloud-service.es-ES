@@ -3,10 +3,10 @@ title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
+source-git-commit: 1fb9814f10ef8eae87a7eef9f390700f2f2127d8
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 81%
+source-wordcount: '865'
+ht-degree: 73%
 
 ---
 
@@ -39,10 +39,11 @@ Existen dos fases asociadas con la transferencia de contenido:
 
 El conjunto *de migraciones* tiene los siguientes atributos:
 
-* Se puede crear y mantener un máximo de cuatro conjuntos de migración a la vez durante la actividad de transferencia de contenido.
+* Se puede crear y mantener un máximo de diez conjuntos de migración a la vez durante la actividad de transferencia de contenido.
 * Cada conjunto de migración debe tener un nombre exclusivo.
 * Si un conjunto de migración ha estado inactivo durante más de 30 días, se elimina automáticamente.
 * Cada vez que se crea un conjunto de migraciones, se asocia a un entorno específico. Solo puede realizar la ingesta en una instancia de autor o publicación del mismo entorno.
+
 
 La herramienta de transferencia de contenido tiene una función que permite agregar contenido diferencial donde solo es posible transferir los cambios realizados desde la actividad de transferencia de contenido anterior.
 
@@ -81,3 +82,5 @@ La fórmula general para calcular el espacio en disco necesario es la siguiente:
    * *tamaño del almacén de datos*: la herramienta de transferencia de contenido utiliza 64 GB, incluso si el almacén de datos real es más grande.
    * *tamaño del almacén de nodos*: el tamaño del directorio del almacén de segmentos o el tamaño de la base de datos MongoDB.
 Por lo tanto, para un tamaño de almacén de segmentos de 20 GB, el espacio libre requerido en disco sería de 94 GB.
+
+* Es necesario mantener un conjunto de migraciones a lo largo de toda la actividad de transferencia de contenido para que admita las recargas de contenido. Dado que se puede crear y mantener un máximo de diez conjuntos de migración a la vez durante la actividad de transferencia de contenido, se recomienda dividir el repositorio de contenido en consecuencia para garantizar que no se queden sin conjuntos de migración.  durante la migración o estructura su conjunto de migración según corresponda.
