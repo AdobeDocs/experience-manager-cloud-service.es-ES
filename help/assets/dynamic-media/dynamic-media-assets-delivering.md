@@ -2,10 +2,10 @@
 title: Entrega de recursos de Dynamic Media
 description: Con Dynamic Media, tiene varias opciones para enviar los recursos de Dynamic Media, tanto vídeo como imágenes, a su sitio web.
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 37%
+source-wordcount: '108'
+ht-degree: 19%
 
 ---
 
@@ -16,8 +16,8 @@ El modo de distribuir los recursos de Dynamic Media (vídeos e imágenes) depend
 
 Con Dynamic Media, tiene varias opciones:
 
-* Si el sitio web está alojado en AEM, quiere agregar los recursos de Dynamic Media directamente a la página.
-* Si el sitio web no se aloja en AEM, consulte [Envío de recursos de Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) en la interfaz de usuario táctil.
+* Si el sitio web está alojado en Adobe Experience Manager, quiere agregar los recursos de Dynamic Media directamente a la página.
+* Si el sitio web no está en Experience Manager, consulte [Entrega de Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md) en la interfaz de usuario táctil.
 
 Para obtener más información, consulte los temas siguientes:
 
