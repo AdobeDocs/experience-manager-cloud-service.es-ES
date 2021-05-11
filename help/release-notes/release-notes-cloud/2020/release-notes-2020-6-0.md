@@ -1,14 +1,14 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 99%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
-
 
 # Notas de la versión de AEM as a Cloud Service 2020.6.0 {#release-notes}
 
@@ -110,7 +110,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 Las etiquetas inteligentes mejoradas permiten a las organizaciones formar modelos de etiquetado inteligente para reconocer imágenes basadas en etiquetas comerciales específicas del cliente, además de las etiquetas inteligentes genéricas.
 
 Con esta versión, existe una experiencia del usuario nueva y guiada que configura la formación sobre etiquetas inteligentes para conjuntos de etiquetas específicas del cliente y a formarlas con recursos que se deben reconocer y etiquetar con ellas en el futuro. La experiencia es ahora más intuitiva.
-Capacite las etiquetas inteligentes mejoradas para obtener una formación más intuitiva sobre las etiquetas inteligentes. Consulte [cómo añadir las etiquetas inteligentes a los recursos](/help/assets/smart-tags.md) y [configurar el etiquetado inteligente](/help/assets/smart-tags-configuration.md).
+Capacite las etiquetas inteligentes mejoradas para obtener una formación más intuitiva sobre las etiquetas inteligentes. Consulte [cómo añadir etiquetas inteligentes a los recursos](/help/assets/smart-tags.md).
 
 **Compatibilidad con la ingesta, previsualización y envío de contenido 3D**
 
@@ -190,4 +190,4 @@ Además de las nuevas funciones anteriores, la versión actual proporciona las s
 * Al descargar un recurso, si se selecciona la opción de correo electrónico e incluso si se proporciona un ID de correo electrónico válido, la opción de descarga no está disponible. (CQ-4296535)
 * Los filtros personalizados guardados como colecciones inteligentes no se aplican correctamente a los recursos. (CQ-4294942)
 * Varias mejoras en la búsqueda y la indexación y correcciones de errores para mejorar el rendimiento. (CQ-4286373)
-* No se puede acceder a la ficha Propiedades de la carpeta en Recursos y devuelve un error 500. (CQ-4295701)
+* No se puede acceder a la pestaña de propiedades de la carpeta en Assets y devuelve un error 500. (CQ-4295701)
