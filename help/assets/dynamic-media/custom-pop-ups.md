@@ -1,18 +1,18 @@
 ---
 title: Uso de vistas rápidas para crear ventanas emergentes personalizadas
-description: '"Descubra cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, a través de la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes".'
+description: '"Descubra cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, a través de la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en la ventana emergente de Windows®".'
 feature: Imágenes interactivas,Vídeos interactivos,Banners de carrusel
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 1%
 
 ---
 
-# Uso de vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Uso de las vistas rápidas para crear ventanas emergentes personalizadas con Windows® {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, los clientes pueden tocar una zona interactiva, una imagen en miniatura o un mapa de imagen para ver información o contenido relacionado.
 
@@ -24,7 +24,7 @@ Los siguientes visores de Dynamic Media admiten las vistas rápidas:
 
 Aunque la funcionalidad de cada visor es diferente, el proceso de creación de una vista rápida es el mismo en los tres visualizadores admitidos.
 
-**Para utilizar las vistas rápidas para crear ventanas emergentes personalizadas**
+**Para usar las vistas rápidas para crear ventanas emergentes personalizadas con Windows®:**
 
 1. Cree una vista rápida para un recurso cargado.
 
