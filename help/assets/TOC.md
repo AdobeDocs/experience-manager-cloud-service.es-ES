@@ -5,10 +5,10 @@ breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 70%
+source-wordcount: '482'
+ht-degree: 71%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 70%
    + [Documentación para desarrolladores y referencias de API](developer-reference-material-apis.md)
    + [Carpeta de esquema de metadatos](folder-metadata-schema.md)
    + [Trabajar con perfiles de imagen y vídeo](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [Configuración del etiquetado inteligente de imágenes](smart-tags-configuration.md)
    + [Recursos multilingües y traducción](translate-assets.md)
    + [Facetas de búsqueda](search-facets.md)
    + [API de HTTP de Assets](mac-api-assets.md)
