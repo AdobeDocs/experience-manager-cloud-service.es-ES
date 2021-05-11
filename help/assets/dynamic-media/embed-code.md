@@ -5,9 +5,9 @@ feature: Administración de activos
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 21%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 Utilice la función **[!UICONTROL Código incrustado]** cuando desee reproducir el vídeo o ver un recurso incrustado en una página web. El código incrustado se copia en el portapapeles para pegarlo en las páginas web. No se permite la edición del código en el cuadro de diálogo **[!UICONTROL Código incrustado]**.
 
-Las direcciones URL incrustadas solo se pueden incrustar si está _no_ usando AEM como WCM. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página](adding-dynamic-media-assets-to-pages.md).
+Las direcciones URL incrustadas solo se pueden incrustar si utiliza _no_ Adobe Experience Manager como WCM. Si utiliza Experience Manager como WCM, [los recursos se añaden directamente en la página](adding-dynamic-media-assets-to-pages.md).
 
 Consulte [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
@@ -32,7 +32,7 @@ Consulte [Entrega de imágenes optimizadas para un sitio interactivo](responsive
 >
 >Consulte [Publicar ajustes preestablecidos de imagen](managing-image-presets.md#publishing-image-presets).
 
-**Incrustación del visualizador de imágenes o vídeos de Dynamic Media en una página web**
+**Para incrustar el visualizador de imágenes o vídeo de Dynamic Media en una página web:**
 
 1. Vaya al vídeo o recurso de imagen *publicado* cuyo código incrustado desee copiar.
 
