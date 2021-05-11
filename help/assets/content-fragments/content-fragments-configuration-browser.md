@@ -5,9 +5,9 @@ feature: Fragmentos de contenido
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 18%
 
 ---
@@ -28,7 +28,7 @@ Antes de utilizar los fragmentos de contenido, debe utilizar el **Navegador de c
 >Si no habilita **Modelos de fragmento de contenido**:
 >
 >* la opción **Crear** no estará disponible para crear nuevos modelos.
->* no podrá [seleccionar el inquilino para crear el punto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* no podrá [seleccionar la configuración Sitios para crear el punto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 
 Para habilitar la funcionalidad de fragmento de contenido, debe:
