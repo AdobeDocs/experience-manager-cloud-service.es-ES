@@ -4,14 +4,14 @@ description: En esta parte del Recorrido para desarrolladores sin encabezado de 
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Ruta a la primera experiencia usando AEM sin encabezado {#path-to-first-experience}
 
@@ -137,7 +137,14 @@ Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabe
 * Conozca qué herramientas y configuraciones de AEM necesarias son necesarias.
 * Conozca las prácticas recomendadas para que su recorrido sin objetivos sea fluido, mantenga la eficiencia de la generación de contenido y asegúrese de que el contenido se entregue rápidamente.
 
-Debería continuar con su recorrido sin AEM al revisar el documento [Cómo modelar su contenido como modelos de contenido](model-your-content.md) donde aprenderá a modelar su estructura de contenido en AEM.
+Queremos que aproveche este conocimiento fundacional para comprender completamente el poder y la flexibilidad de AEM sin cabeza para que pueda aprovecharlo para sus propios proyectos. Para ello, tiene opciones.
+
+### Elija su propia aventura {#choose-your-path}
+
+Independientemente del estilo de aprendizaje que tenga, Adobe quiere que tenga éxito en la introducción de su proyecto sin encabezado AEM.
+
+* Si prefiere **continuar aprendiendo conceptos sin encabezado y AEM tecnologías sin encabezado**, debe continuar con su recorrido sin encabezado AEM revisando el documento [Cómo modelar su contenido como modelos de contenido AEM](model-your-content.md) donde aprenderá a modelar su estructura de contenido en AEM.
+* Si prefiere **aprender haciendo**, puede ir al [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html), donde saltará directamente a AEM desarrollo sin encabezado implementando un proyecto simple para exponer AEM contenido sin encabezado.
 
 ## Recursos adicionales {#additional-resources}
 
