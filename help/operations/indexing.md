@@ -2,10 +2,9 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -49,6 +48,10 @@ La definición de índices puede comprender los tres casos de uso siguientes:
 Para los puntos 1 y 2 anteriores, debe crear una nueva definición de índice como parte del código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte la [Implementación para AEM como Cloud Service documentación](/help/implementing/deploying/overview.md).
 
 ### Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>Si personaliza un índice predeterminado, por ejemplo `damAssetLucene-6`, copie la definición de índice más reciente de un *entorno de Cloud Service* y añada las personalizaciones en la parte superior, esto garantiza que las configuraciones requeridas no se eliminen de forma involuntaria. Por ejemplo, el nodo `tika` en `/oak:index/damAssetLucene-6/tika` es un nodo requerido y también debe formar parte del índice personalizado y no existe en el SDK de Cloud.
 
 Debe preparar un nuevo paquete de definición de índice que contenga la definición de índice real, siguiendo este patrón de nomenclatura:
 
