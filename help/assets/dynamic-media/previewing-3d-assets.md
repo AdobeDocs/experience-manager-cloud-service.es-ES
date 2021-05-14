@@ -1,10 +1,9 @@
 ---
 title: Vista previa de recursos 3D
 description: Obtenga información sobre cómo previsualizar recursos 3D en Dynamic Media.
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '562'
 ht-degree: 15%
 
 ---
@@ -25,7 +24,7 @@ La vista previa 3D interactiva en Experience Manager admite los siguientes forma
 | Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria de GL | model/gltf-binary |  |
-| GLTF | Formato de Transmisión GL | modelo/gltf+json | Consulte **Nota** a continuación. |
+| GLTF | Formato de Transmisión GL | modelo/gltf+json | Consulte la **Nota** a continuación. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Compatibilidad únicamente con la ingesta; vista previa no disponible. |
@@ -46,19 +45,19 @@ La vista previa 3D interactiva en Experience Manager admite los siguientes forma
 
 El tiempo que se tarda en abrir un recurso 3D en la página de vista de detalles del recurso depende de varios factores, como el ancho de banda, la complejidad de la imagen y las latencias del servidor.
 
-Además, las capacidades del equipo cliente (como una estación de trabajo, un portátil o un dispositivo táctil móvil) también son importantes de tener en cuenta al manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización interactiva en 3D sea más cómoda y agradable.
+Además, las capacidades del equipo cliente, como una estación de trabajo, un ordenador portátil o un dispositivo táctil móvil, también son importantes de tener en cuenta al manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización interactiva en 3D sea más cómoda y agradable.
 
 **Para previsualizar recursos 3D en el Experience Manager:**
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-assets) y [Carga de recursos](/help/assets/manage-digital-assets.md#uploading-assets).
-1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Assets > Archivos]**.
+1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 
    ![Página de navegación](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, pulse **[!UICONTROL Vista de tarjeta]** y, a continuación, desplácese hasta un recurso 3D que quiera previsualizar.
 
-   ![Selección de tarjeta 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![Selección de la tarjeta 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _En Vista de tarjeta, pulse la tarjeta del recurso 3D que desea previsualizar._
 
 1. Pulse la tarjeta del recurso 3D.
