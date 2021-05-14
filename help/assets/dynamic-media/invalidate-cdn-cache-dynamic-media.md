@@ -1,13 +1,12 @@
 ---
-title: Invalidación de la caché de CDN mediante Dynamic Media
+title: Invalidación de la caché de CDN (Red de entrega de contenido) mediante Dynamic Media
 description: '"Aprenda a invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido) para permitirle actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché".'
 feature: Administración de activos
 role: Administrator,Business Practitioner
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1308'
 ht-degree: 1%
 
 ---
@@ -22,11 +21,11 @@ La red de distribución de contenido (CDN) almacena en caché los recursos de Dy
 
 Consulte también [Información general del almacenamiento en caché en Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**Para invalidar la caché de CDN mediante Dynamic Media**
+**Para invalidar la caché de CDN mediante Dynamic Media:**
 
 *Parte 1 de 2: Creación de una plantilla de invalidación de CDN*
 
-1. En AEM como Cloud Service, pulse **[!UICONTROL Herramientas > Assets > Plantilla de invalidación de CDN]**.
+1. En Adobe Experience Manager como Cloud Service, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Plantilla de invalidación de CDN]**.
 
    ![Función de validación de CDN](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -35,7 +34,7 @@ Consulte también [Información general del almacenamiento en caché en Dynamic 
    | Situación | Opción |
    | --- | --- |
    | Ya he creado una plantilla de invalidación de CDN en el pasado utilizando Dynamic Media Classic. | El campo de texto **[!UICONTROL Crear plantilla]** se rellena previamente con los datos de la plantilla. En este caso, puede editar la plantilla o continuar con el siguiente paso. |
-   | Tengo que crear una plantilla. ¿En qué entran? | En el campo de texto **[!UICONTROL Crear plantilla]**, introduzca una URL de imagen (incluidos los modificadores o ajustes preestablecidos de imagen) que haga referencia a `<ID>`, en lugar de un ID de imagen específico, como en el siguiente ejemplo:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Si la plantilla contiene solo `<ID>`, Dynamic Media rellena `https://<publishserver_name>/is/image/<company_name>/<ID>` donde `<publishserver_name>` es el nombre del servidor de publicación que se define en Configuración general en Dynamic Media Classic. El `<company_name>` es el nombre de la raíz de su empresa asociada con esta instancia de AEM y `<ID>` es el recurso seleccionado a través del selector de recursos que se va a invalidar.<br>Los ajustes preestablecidos/modificadores que  `<ID>` se publiquen se copiarán tal cual en la definición de la dirección URL.<br>Solo las imágenes (es decir,  `/is/image`) se pueden crear automáticamente en función de la plantilla.<br>Por ejemplo,  `/is/content/`, al agregar recursos como vídeos o PDF utilizando el selector de recursos, no se generan automáticamente direcciones URL. En su lugar, debe especificar estos recursos en la plantilla Invalidación de CDN o puede añadir manualmente la URL a dichos activos en *Parte 2 de 2: Configuración de las opciones de invalidación de CDN*.<br>**Ejemplos:**<br> En este primer ejemplo, la plantilla de invalidación contiene  `<ID>` junto con la URL del recurso que tiene  `/is/content`. Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forma la dirección URL en función de esta ruta, siendo `<ID>` los recursos seleccionados mediante el selector de recursos que desea invalidar.<br>En este segundo ejemplo, la plantilla de invalidación contiene la dirección URL completa del recurso utilizado en las propiedades web con  `/is/content` (no depende del selector de recursos). Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` donde la mochila es el ID del recurso.<br>Los formatos de recurso compatibles con Dynamic Media pueden invalidarse. Los tipos de archivo de recursos *no* admitidos para la invalidación de CDN son: PostScript®, PostScript® encapsulada, Adobe Illustrator, Adobe InDesign, Microsoft Powerpoint, Microsoft Excel, Microsoft Word y formato de texto enriquecido.<br>Cuando cree la plantilla, pero asegúrese de prestar atención a la sintaxis y los errores de errores; Dynamic Media no valida ninguna plantilla.<br>Especifique direcciones URL para cultivos inteligentes de imagen en esta plantilla de invalidación de CDN o en el campo  **[!UICONTROL Añadir]** URLtext de la  *parte 2: Configuración de las opciones de Invalidación de CDN.*<br>**Importante:**Cada entrada de una plantilla de Invalidación de CDN debe estar en su propia línea.<br>*El siguiente ejemplo de plantilla es solo para fines ilustrativos.* |
+   | Tengo que crear una plantilla. ¿En qué entran? | En el campo de texto **[!UICONTROL Crear plantilla]**, introduzca una URL de imagen (incluidos los modificadores o ajustes preestablecidos de imagen) que haga referencia a `<ID>`, en lugar de un ID de imagen específico, como en el siguiente ejemplo:<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>Si la plantilla contiene solo `<ID>`, Dynamic Media rellena `https://<publishserver_name>/is/image/<company_name>/<ID>` donde `<publishserver_name>` es el nombre del servidor de publicación que se define en Configuración general en Dynamic Media Classic. El `<company_name>` es el nombre de la raíz de su empresa asociada con esta instancia de Experience Manager y `<ID>` es el recurso seleccionado a través del selector de recursos que se va a invalidar.<br>Los ajustes preestablecidos/modificadores que siguen  `<ID>` se copian tal cual en la definición de la URL.<br>Solo las imágenes (es decir,  `/is/image`) se pueden crear automáticamente en función de la plantilla.<br>Por ejemplo,  `/is/content/`, al agregar recursos como vídeos o PDF utilizando el selector de recursos, no se generan automáticamente direcciones URL. En su lugar, debe especificar estos recursos en la plantilla Invalidación de CDN o puede añadir manualmente la URL a dichos activos en *Parte 2 de 2: Configuración de las opciones de invalidación de CDN*.<br>**Ejemplos:**<br> En este primer ejemplo, la plantilla de invalidación contiene  `<ID>` junto con la URL del recurso que tiene  `/is/content`. Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>`. Dynamic Media forma la dirección URL en función de esta ruta, siendo `<ID>` los recursos seleccionados mediante el selector de recursos que desea invalidar.<br>En este segundo ejemplo, la plantilla de invalidación contiene la dirección URL completa del recurso utilizado en las propiedades web con  `/is/content` (no depende del selector de recursos). Por ejemplo, `http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` donde la mochila es el ID del recurso.<br>Los formatos de recurso compatibles con Dynamic Media pueden invalidarse. Los tipos de archivos de recursos *no* admitidos para la invalidación de CDN son: PostScript®, PostScript® encapsulada, Adobe Illustrator, Adobe InDesign, Microsoft® Powerpoint, Microsoft® Excel, Microsoft® Word y formato de texto enriquecido.<br>Cuando cree la plantilla, pero asegúrese de prestar atención a la sintaxis y los errores de errores; Dynamic Media no valida ninguna plantilla.<br>Especifique direcciones URL para cultivos inteligentes de imagen en esta plantilla de invalidación de CDN o en el campo  **[!UICONTROL Añadir]** URLtext de la  *parte 2: Configuración de las opciones de Invalidación de CDN.*<br>**Importante:**Cada entrada de una plantilla de Invalidación de CDN debe estar en su propia línea.<br>*El siguiente ejemplo de plantilla es solo para fines explicativos.* |
 
    ![Plantilla de invalidación de CDN: Crear](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
@@ -44,7 +43,7 @@ Consulte también [Información general del almacenamiento en caché en Dynamic 
    *Parte 2 de 2: Configuración de las opciones de invalidación de CDN*
    <br>
 
-1. En AEM como Cloud Service, pulse **[!UICONTROL Herramientas > Assets > Invalidación de CDN]**.
+1. En Experience Manager como Cloud Service, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Invalidación de CDN]**.
 
    ![Función de validación de CDN](/help/assets/assets-dm/cdn-invalidation-path.png)
 
