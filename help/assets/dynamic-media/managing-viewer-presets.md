@@ -4,10 +4,9 @@ description: Aprenda a crear y administrar ajustes preestablecidos de visor en D
 feature: Ajustes preestablecidos de visualizador, visualizadores
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '4243'
+source-wordcount: '4236'
 ht-degree: 13%
 
 ---
@@ -25,7 +24,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-Consulte también la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte también la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 En esta sección se describe cómo crear, editar y administrar ajustes preestablecidos de visualizador. Puede aplicar un ajuste preestablecido de visualizador a un recurso cada vez que lo previsualice. Consulte [Aplicación de ajustes preestablecidos de visor](#applying-a-viewer-preset-to-an-asset).
 
@@ -67,9 +66,9 @@ Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynami
 * Computadoras de escritorio
 * Apple iPhone
 * Apple iPad
-* Smartphone de Android
-* Android Tablet
-* Para vídeo, se proporciona compatibilidad adicional para la reproducción de MP4 para [BlackBerry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) y [Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
+* Smartphone Android™
+* Tableta Android™
+* Para vídeo, se proporciona compatibilidad adicional para la reproducción de MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) y [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx).
 
 ### Tipos de medios enriquecidos para ajustes preestablecidos de visor {#rich-media-types-for-viewer-presets}
 
@@ -79,7 +78,7 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
  <tbody>
   <tr>
    <td><strong>Conjunto de carrusel</strong><br /> </td>
-   <td><p>Las zonas interactivas, los mapas de imágenes o ambas se añaden a una serie de dos o más imágenes. Un cliente puede obtener una panorámica de las imágenes a la izquierda o a la derecha y, a continuación, hacer clic en un punto interactivo de una imagen para obtener más información o para realizar compras directamente desde las páginas de categoría, de inicio o de aterrizaje de un sitio web.</p> </td>
+   <td><p>Las zonas interactivas, los mapas de imágenes o ambas se añaden a una serie de dos o más imágenes. Un cliente puede obtener una panorámica de las imágenes a la izquierda o a la derecha y, a continuación, hacer clic en un punto interactivo de una imagen para obtener más información o para realizar compras directamente desde las páginas de aterrizaje, categoría o página de inicio de un sitio web.</p> </td>
   </tr>
     <tr>
    <td><strong>Dimensional</strong><br /> </td>
@@ -99,11 +98,11 @@ Los administradores pueden añadir y personalizar los siguientes tipos de medios
   </tr>
   <tr>
    <td><strong>Imagen interactiva</strong></td>
-   <td>Las zonas interactivas se añaden a partes de una imagen en las que un cliente puede hacer clic para obtener más información o para realizar compras directamente desde las páginas de destino, la página de inicio o la categoría de un sitio web.</td>
+   <td>Las zonas interactivas se añaden a partes de una imagen en las que un cliente puede hacer clic para obtener más información o para realizar compras directamente desde las páginas de aterrizaje, categoría o página de inicio de un sitio web.</td>
   </tr>
   <tr>
    <td><strong>Vídeo interactivo</strong></td>
-   <td>Las miniaturas se añaden a los segmentos de cronología de un vídeo en los que un cliente puede hacer clic para obtener más información o para realizar compras directamente desde las páginas de aterrizaje, inicio o categoría de un sitio web.</td>
+   <td>Las miniaturas se añaden a los segmentos de cronología de un vídeo en los que un cliente puede hacer clic para obtener más información o para realizar compras directamente desde las páginas de inicio, categoría o aterrizaje de un sitio web.</td>
   </tr>
   <tr>
    <td><strong>Medios mixtos</strong></td>
@@ -156,7 +155,7 @@ Consulte también [Demostraciones en directo](https://landing.adobe.com/en/na/dy
 
 Para obtener información sobre las versiones compatibles del navegador web y del sistema operativo de los visores, consulte las Notas de la versión de los visores.
 
-Consulte &quot;Notas de la versión de los visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Consulte &quot;Notas de la versión de los visores&quot; en la tabla de contenido de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 >[!NOTE]
 >
@@ -313,7 +312,7 @@ Consulte &quot;Notas de la versión de los visores&quot; en la tabla de contenid
 
 ### Matriz de gestos de visores móviles admitidos {#supported-mobile-viewers-gestures-matrix}
 
-La siguiente tabla identifica los gestos del visor móvil compatibles con los dispositivos iOS, Android 2.x y Android 3.x.
+La siguiente tabla identifica los gestos del visor móvil compatibles con los dispositivos iOS, Android™ 2.x y Android™ 3.x.
 
 <table>
  <tbody>
@@ -344,14 +343,14 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
   <tr>
    <td><p><strong>Abrir el lápiz</strong></p> </td>
    <td><p>No se aplica</p> </td>
-   <td><p>Amplía (solo iOS y Android 3x)</p> </td>
-   <td><p>Amplía (solo iOS y Android 3x)</p> </td>
+   <td><p>Amplía (solo iOS y Android™ 3x)</p> </td>
+   <td><p>Amplía (solo iOS y Android™ 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Pellizque</strong></p> </td>
    <td><p>No se aplica</p> </td>
-   <td><p>Reduce el tamaño de la página (solo iOS y Android 3x)</p> </td>
-   <td><p>Reduce el tamaño de la página (solo iOS y Android 3x)</p> </td>
+   <td><p>Reduce el tamaño de la página (solo iOS y Android™ 3x)</p> </td>
+   <td><p>Reduce el tamaño de la página (solo iOS y Android™ 3x)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Deslizar</strong></p> </td>
@@ -372,7 +371,7 @@ La siguiente tabla identifica los gestos del visor móvil compatibles con los di
 
 El Experience Manager muestra una amplia variedad de ajustes preestablecidos de visor al ver recursos desde **[!UICONTROL Vista de detalles > Visualizadores]**. Puede aumentar o disminuir el número de visualizadores que se muestran.
 
-**Para aumentar el número de ajustes preestablecidos de visor que se muestran**:
+**Para aumentar el número de ajustes preestablecidos de visor que se muestran:**
 
 1. Vaya al CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Vaya al nodo de listado de ajustes preestablecidos de visor en `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -399,7 +398,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de visu
 
 Consulte [Consideraciones especiales para crear un ajuste preestablecido de visor de banners de carrusel](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
-**Para crear un ajuste preestablecido** de visualizador:
+**Para crear un ajuste preestablecido de visualizador:**
 
 1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 
@@ -421,13 +420,13 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
       El editor visual permite ver qué efecto tiene una propiedad determinada en un estilo. Establezca o ajuste cualquier propiedad para ver instantáneamente qué efecto tiene en el visor con la muestra a la izquierda del editor.
 
-      Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en el tema de ayuda &quot;Personalización del *`<viewer name>`* visualizador&quot; de la [Guía de referencia del visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
+      Las propiedades de estilo CSS para cada tipo de ajuste preestablecido de visualizador se describen en el tema de ayuda &quot;Personalización del *`<viewer name>`* visualizador&quot; de la [Guía de referencia del visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si está creando un ajuste preestablecido de visualizador del tipo `Mixed_Media`, consulte [Personalización del visualizador de medios mixtos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obtener una lista y una descripción de cada propiedad.
 
    * Si ha definido la configuración de estilo en un archivo CSS independiente, puede cargar el archivo CSS en Recursos Experience Manager. Para buscar el archivo CSS cargado y asociarlo al ajuste preestablecido de visualizador, pulse **[!UICONTROL Importar CSS]** debajo del menú desplegable **[!UICONTROL Tipo seleccionado]** (si es necesario, desplácese hacia arriba el editor visual para verlo).
 
       Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS que importe deben definirse con su nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitraria hecha a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* Visor&quot; en la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea obtener información sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+      Puede importar CSS arbitraria hecha a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* Visor&quot; en la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por ejemplo, si desea obtener información sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, pulse **[!UICONTROL Mostrar/Ocultar CSS]** debajo del menú desplegable Tipo seleccionado (si es necesario, desplácese hacia arriba el editor visual para verlo).
@@ -459,7 +458,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
 ### Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
-**Acerca de los modos de visualización de las miniaturas de imagen en el panel**:
+**Acerca de los modos de visualización de las miniaturas de imagen en el panel:**
 
 Cuando crea o edita un ajuste preestablecido de visualizador de vídeo interactivo, tiene la opción de qué ajuste de modo de visualización utilizar. Esta opción se produce al seleccionar `InteractiveSwatches` en el menú desplegable **[!UICONTROL Componente seleccionado]** en la pestaña **[!UICONTROL Comportamiento]**. El modo de visualización que elija afecta a cómo y cuándo aparecerán las miniaturas mientras se reproduce el vídeo. Puede elegir un modo de visualización `segment` (predeterminado) o un modo de visualización `continuous`.
 
@@ -480,7 +479,7 @@ Cuando crea o edita un ajuste preestablecido de visualizador de vídeo interacti
  </tbody>
 </table>
 
-**Acerca del comportamiento de desplazamiento automático en el visualizador** de vídeo interactivo:
+**Acerca del comportamiento de desplazamiento automático en el visualizador de vídeo interactivo:**
 
 El comportamiento de desplazamiento automático de las miniaturas del visor de vídeo interactivo funciona independientemente del modo de visualización que haya elegido.
 
@@ -490,7 +489,7 @@ Si desactiva el **[!UICONTROL desplazamiento automático]** (desactive la casill
 
 Al activar (seleccionar) **[!UICONTROL Desplazamiento automático]** en el ajuste preestablecido de visualizador, durante la reproducción de vídeo, las imágenes en miniatura asignadas a un segmento de vídeo se desplazan hasta la vista al principio de un segmento. Sin embargo, hay instancias en las que ciertas miniaturas de un segmento se muestran el doble de tiempo que otras miniaturas antes o después de este segmento. Este comportamiento se produce porque el número de miniaturas de un segmento es mayor que el número visible en el panel y no se puede dividir de manera uniforme.
 
-Como ejemplo, supongamos que tiene un segmento de vídeo de 30 segundos. Además, hay un total de nueve miniaturas para mostrar durante los 30 segundos. El tamaño del navegador es tal que hay cuatro posiciones de miniaturas visibles en el panel de visualización. El segmento de vídeo de 30 segundos se divide en tres subsegmentos. La tabla siguiente muestra el desglose de las miniaturas que se muestran para un subsegmento de tiempo determinado:
+Como ejemplo, supongamos que tiene un segmento de vídeo de 30 segundos. Además, hay un total de nueve miniaturas para mostrar durante los 30 segundos. El tamaño del navegador es tal que hay cuatro posiciones de miniaturas visibles en el panel de visualización. El segmento de tiempo de vídeo de 30 segundos se divide en tres subsegmentos. La tabla siguiente muestra el desglose de las miniaturas que se muestran para un subsegmento de tiempo determinado:
 
 | **Subsegmento de vídeo** | **Tiempo de subsegmento en segundos** | **Miniaturas visibles en el panel** |
 |---|---|---|
@@ -523,7 +522,7 @@ Al crear ajustes preestablecidos de visor de titular de carrusel, se puede acced
 
 Los ajustes preestablecidos de visor disponibles en la interfaz de usuario dependen de los que estén activos en el modo Autor. De forma predeterminada, un ajuste preestablecido de visualizador es &quot;Activado&quot; después de crearlo. Si desactiva el ajuste preestablecido, no lo verá en modo Autor. Si se publica el ajuste preestablecido, siempre se publica independientemente de si está activado o desactivado. Desactive los ajustes preestablecidos de visualizador si la lista es demasiado complicada o si no desea que haya un ajuste preestablecido de visualizador disponible para su uso.
 
-**Para activar o desactivar ajustes preestablecidos** de visualizador:
+**Para activar o desactivar ajustes preestablecidos de visor:**
 
 1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. En la página Ajuste preestablecido de visualizador, en el encabezado de columna **[!UICONTROL Estado]**, pulse el botón de alternancia para activar o desactivar un ajuste preestablecido de visualizador.
@@ -540,7 +539,7 @@ Consulte [Activación o desactivación de ajustes preestablecidos de visor](#act
 
 Consulte también [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets.md).
 
-**Para publicar ajustes preestablecidos de visor**:
+**Para publicar ajustes preestablecidos de visor:**
 
 1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. Seleccione uno o varios ajustes preestablecidos de visor que desee publicar.
@@ -555,7 +554,7 @@ Consulte también [Vista previa de recursos](/help/assets/dynamic-media/previewi
 
 La edición de *ajustes preestablecidos de visor predefinidos y listos para usar* no es un escenario compatible. Si edita un ajuste preestablecido de visualizador incorporado, se le pedirá que lo guarde con un nuevo nombre.
 
-**Para editar ajustes preestablecidos** de visualizador:
+**Para editar ajustes preestablecidos de visor:**
 
 1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recurso] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. Seleccione un ajuste preestablecido marcando la casilla a la izquierda del título del ajuste preestablecido de visualizador.
@@ -573,7 +572,7 @@ La edición de *ajustes preestablecidos de visor predefinidos y listos para usar
 
 Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a Dynamic Media.
 
-**Para eliminar ajustes preestablecidos de visor personalizado**:
+**Para eliminar ajustes preestablecidos de visor personalizado:**
 
 1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos] > [!UICONTROL Ajustes preestablecidos de visualizador]**.
 1. En la página Ajustes preestablecidos de visor , marque un Título preestablecido y, a continuación, pulse el icono **[!UICONTROL Papelera]**.
@@ -583,7 +582,7 @@ Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a
 
 Si ya ha publicado el recurso y el visualizador seleccionado, los botones **[!UICONTROL URL]** e **[!UICONTROL Incrustar]** aparecerán después de seleccionar un ajuste preestablecido de visualizador.
 
-**Para aplicar un ajuste preestablecido de visualizador a un recurso**:
+**Para aplicar un ajuste preestablecido de visualizador a un recurso:**
 
 1. Abra el recurso y, cerca de la esquina superior izquierda de la página, pulse el menú desplegable y, a continuación, seleccione **[!UICONTROL Visualizadores]**.
 
