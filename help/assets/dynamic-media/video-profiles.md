@@ -4,10 +4,9 @@ description: Dynamic Media ya viene con un perfil de codificación de vídeo ada
 feature: Administración de recursos,Perfiles de vídeo,Representaciones
 role: Business Practitioner
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3665'
 ht-degree: 10%
 
 ---
@@ -211,7 +210,7 @@ Pulse el icono de información situado junto a cada opción para obtener más de
 1. Haga lo siguiente:
    * En el campo **[!UICONTROL Width]**, introduzca **[!UICONTROL auto]**.
    * En el campo **[!UICONTROL Height]**, introduzca un valor en píxeles.
-Para ayudarle a visualizar el tamaño del vídeo, pulse el icono de información Altura para abrir la página **[!UICONTROL Calculadora de tamaño]**. Utilice la página **[!UICONTROL Calculadora de tamaño]** para definir la dimensión de vídeo (cuadro azul) como desee. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, pulse **[!UICONTROL X]**.
+Para ayudarle a visualizar el tamaño del vídeo, pulse el icono de información Altura para abrir la página **[!UICONTROL Calculadora de tamaño]**. Utilice la página **[!UICONTROL Calculadora de tamaño]** para definir el tamaño del vídeo (cuadro azul) como desee. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, pulse **[!UICONTROL X]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
    * Pulse la pestaña **[!UICONTROL Advanced]** y asegúrese de que la casilla **[!UICONTROL Use Default Values]** está seleccionada (recomendado).
@@ -244,7 +243,7 @@ Ahora puede aplicar el perfil a las carpetas que contienen vídeos. Consulte [Ap
 
 Puede editar un perfil de codificación de vídeo existente para aprovechar los parámetros avanzados de codificación de vídeo que no se encuentran en la interfaz de usuario al crear o editar un perfil de vídeo en Experience Manager. Puede agregar de forma personalizada uno o más parámetros avanzados, como minBitrate y maxBitrate, a su perfil existente.
 
-**Para utilizar parámetros** de codificación de vídeo personalizados:
+**Para utilizar parámetros de codificación de vídeo personalizados:**
 
 1. Pulse el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En la página CRXDE Lite, en el panel Explorador de la izquierda, vaya a lo siguiente:
@@ -271,7 +270,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>El número de fotogramas de destino entre fotogramas clave. Calcule este valor para generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave es de 60-300.<br /> <br /> Los intervalos más bajos de los fotogramas clave mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos que tienen mucho movimiento. Sin embargo, debido a que los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave inferior generalmente da como resultado una menor calidad de vídeo general a una velocidad de bits determinada.</td>
+   <td>El número de fotogramas de destino entre fotogramas clave. Calcule este valor para poder generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave es de 60-300.<br /> <br /> Los intervalos más bajos de los fotogramas clave mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos que tienen mucho movimiento. Sin embargo, debido a que los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave inferior generalmente da como resultado una menor calidad de vídeo general a una velocidad de bits determinada.</td>
    <td><code>String</code></td>
    <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para HLS (HTTP Live Streaming) es 60-90.</p> </td>
   </tr>
@@ -316,7 +315,7 @@ Consulte también [Prácticas recomendadas para la codificación de vídeo](/hel
 
 Para definir parámetros de procesamiento avanzados para otros tipos de recursos, consulte [Configuración del procesamiento de recursos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Para editar un perfil de vídeo**:
+**Para editar un perfil de vídeo:**
 
 1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. En la página Perfiles de vídeo , marque un nombre de perfil de vídeo.
@@ -383,7 +382,7 @@ Puede [monitorizar el progreso de un trabajo de procesamiento de perfil de víde
 
 #### Aplicación de un perfil de vídeo a carpetas de Propiedades {#applying-video-profiles-to-folders-from-properties}
 
-1. Toque o haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desee aplicar un perfil de vídeo.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desee aplicar un perfil de vídeo.
 1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]**, seleccione el perfil en el menú desplegable y haga clic en **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
@@ -396,7 +395,7 @@ Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma gl
 
 Consulte también [Reprocesamiento de recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Para aplicar un perfil de vídeo globalmente**,
+**Para aplicar un perfil de vídeo globalmente:**
 
 * Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Agregue la propiedad `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` y pulse **[!UICONTROL Guardar todo]**.
 
