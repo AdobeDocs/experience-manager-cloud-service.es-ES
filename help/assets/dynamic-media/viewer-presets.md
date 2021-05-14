@@ -4,10 +4,9 @@ description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media
 feature: Ajustes preestablecidos de visualizador, visualizadores
 role: Business Practitioner
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 25%
 
 ---
@@ -20,7 +19,8 @@ Si es un administrador y debe administrar, crear, ordenar y eliminar ajustes pre
 
 Consulte también [Ajustes preestablecidos del visualizador de publicaciones](managing-viewer-presets.md#publishing-viewer-presets).
 
-Es posible que no necesite publicar ajustes preestablecidos de visualizador en función del modo de publicación que esté utilizando.
+No es necesario publicar ajustes preestablecidos de visualizador en función del modo de publicación que utilice.
+
 Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución de problemas de Dynamic Media](troubleshoot-dm.md#viewers).
 
 ## Aplicación de un ajuste preestablecido de visualizador de Dynamic Media a un recurso {#applying-a-viewer-preset-to-an-asset}
@@ -32,7 +32,7 @@ Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución
    * Los botones **[!UICONTROL URL]** e **[!UICONTROL Incrustar]** aparecen después de seleccionar un ajuste preestablecido de visualizador.
    * El sistema muestra numerosos ajustes preestablecidos de visualizador al seleccionar Visualizadores en la **[!UICONTROL vista de detalles de un recurso]**. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumento del número de ajustes preestablecidos de visor que se muestran](managing-viewer-presets.md).
 
-1. Seleccione un visualizador del panel izquierdo para aplicarlo al recurso como se ve en el panel derecho. También puede [copiar la URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
+1. Seleccione un visor del panel izquierdo para aplicarlo al recurso como se ve en el panel derecho. También puede [copiar la URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
 
 ## Obtención de direcciones URL preestablecidas de visor {#obtaining-viewer-preset-urls}
 
