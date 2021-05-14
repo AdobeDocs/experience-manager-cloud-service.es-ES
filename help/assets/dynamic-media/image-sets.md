@@ -4,11 +4,10 @@ description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media.
 feature: Conjuntos de imágenes
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2049'
-ht-degree: 9%
+source-wordcount: '2050'
+ht-degree: 8%
 
 ---
 
@@ -44,7 +43,7 @@ Para ponerle en marcha rápidamente:
 
 1. [Cargue las imágenes de origen principales para varias vistas](#uploading-assets-in-image-sets).
 
-   Cargue las imágenes para sus conjuntos de imágenes. Recuerde que los usuarios pueden hacer zoom en las imágenes en el visor de conjuntos de imágenes. Como tal, elija sus imágenes con cuidado. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Recursos de Experience Manager admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
+   Cargue las imágenes para sus conjuntos de imágenes. Recuerde que los usuarios pueden hacer zoom en las imágenes en el visor de conjuntos de imágenes. Como tal, elija sus imágenes con cuidado. Asegúrese de que las imágenes tengan al menos 2000 píxeles en el tamaño más grande. Recursos de Experience Manager admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
 1. [Crear conjuntos de imágenes](#creating-image-sets).
 
@@ -85,7 +84,7 @@ Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Soluci
 
 ## Carga de recursos para conjuntos de imágenes {#uploading-assets-in-image-sets}
 
-Comience por cargar los recursos de imagen para los conjuntos de imágenes. Recuerde que los usuarios pueden hacer zoom en las imágenes en el visor de conjuntos de imágenes. Como tal, elija sus imágenes con cuidado. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande para obtener un detalle de zoom óptimo. Dynamic Media puede procesar imágenes de hasta 25 megapíxeles cada una. Por ejemplo, puede utilizar una imagen de 5000 x 5000 megapíxeles o cualquier otra combinación de tamaño de hasta 25 megapíxeles.
+Comience por cargar los recursos de imagen para los conjuntos de imágenes. Recuerde que los usuarios pueden hacer zoom en las imágenes en el visor de conjuntos de imágenes. Como tal, elija sus imágenes con cuidado. Asegúrese de que las imágenes tengan al menos 2000 píxeles en el tamaño más grande para obtener un detalle de zoom óptimo. Dynamic Media puede procesar imágenes de hasta 25 megapíxeles cada una. Por ejemplo, puede utilizar una imagen de 5000 x 5000 megapíxeles o cualquier otra combinación de tamaño de hasta 25 megapíxeles.
 
 Los conjuntos de imágenes admiten muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
@@ -95,9 +94,9 @@ Puede cargar imágenes para conjuntos de imágenes del mismo modo que lo haría 
 
 Antes de crear conjuntos de imágenes, asegúrese de que las imágenes tengan el tamaño y el formato adecuados.
 
-Para crear un conjunto de imágenes de varias vistas, necesita imágenes que muestren un elemento desde diferentes puntos de vista o que muestren diferentes aspectos del mismo elemento. El objetivo es resaltar las características importantes de un elemento para que los espectadores tengan una imagen completa de cómo se ve o hace.
+Para crear un conjunto de imágenes de varias vistas, necesita imágenes que muestren un elemento desde diferentes puntos de vista o que muestren diferentes aspectos del mismo elemento. El objetivo es resaltar las características importantes de un elemento para que los espectadores tengan una imagen completa de cómo aparece o qué hace.
 
-Dado que los usuarios pueden hacer zoom en las imágenes en los conjuntos de imágenes, asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande. Recursos de Experience Manager admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
+Dado que los usuarios pueden hacer zoom en las imágenes en los conjuntos de imágenes, asegúrese de que las imágenes tengan al menos 2000 píxeles en el tamaño más grande. Recursos de Experience Manager admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
 >[!NOTE]
 >
@@ -124,7 +123,7 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 >
 >Los conjuntos de imágenes no son compatibles con los recursos con &quot;,&quot; (coma) en el nombre de archivo.
 
-**Para crear un conjunto de imágenes**
+**Para crear un conjunto de imágenes:**
 
 1. En Adobe Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global.
 1. Pulse **[!UICONTROL Navegación > Assets]**. Vaya a donde desee crear un conjunto de imágenes y, a continuación, pulse **[!UICONTROL Crear > Conjunto de imágenes]** para abrir la página Editor de conjuntos de imágenes.
@@ -207,7 +206,7 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
 * Aplicar ajustes preestablecidos de visor.
 * Eliminar el conjunto de imágenes.
 
-**Para editar conjuntos de imágenes**
+**Para editar conjuntos de imágenes:**
 
 1. Realice una de las siguientes acciones:
 
