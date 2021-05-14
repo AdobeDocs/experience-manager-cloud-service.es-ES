@@ -4,17 +4,16 @@ description: Aprenda a aplicar ajustes preestablecidos de imagen en Dynamic Medi
 feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
 role: Business Practitioner
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '306'
 ht-degree: 7%
 
 ---
 
 # Aplicar ajustes preestablecidos de imagen de Dynamic Media {#applying-image-presets}
 
-Los ajustes preestablecidos de imagen permiten a los recursos entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Puede elegir un ajuste preestablecido al exportar imágenes, que también redistribuye las imágenes según las especificaciones especificadas por el administrador.
+Los ajustes preestablecidos de imagen permiten a los recursos entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Puede elegir un ajuste preestablecido cuando exporte para cambiar el formato de las imágenes a las especificaciones que el administrador haya esbozado.
 
 Además, puede elegir un ajuste preestablecido de imagen que sea interactivo (designado por el botón **[!UICONTROL RESS]** después de seleccionarlo).
 
@@ -26,7 +25,7 @@ Además, puede elegir un ajuste preestablecido de imagen que sea interactivo (de
 
 Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la previsualice.
 
-**Para aplicar ajustes preestablecidos de imagen de Dynamic Media**
+**Para aplicar ajustes preestablecidos de imagen de Dynamic Media:**
 
 1. Abra el recurso y, en el carril izquierdo, pulse la lista desplegable y, a continuación, pulse **[!UICONTROL Representaciones]**.
 
