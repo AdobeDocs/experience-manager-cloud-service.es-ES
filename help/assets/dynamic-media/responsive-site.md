@@ -4,10 +4,9 @@ description: Aprenda a utilizar la función de código interactivo para ofrecer 
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 12%
 
 ---
@@ -16,13 +15,13 @@ ht-degree: 12%
 
 Utilice la función de código interactivo cuando desee compartir el código para la entrega interactiva con su desarrollador web. Copie el código adaptable (**[!UICONTROL RESS]**) en el portapapeles para poder compartirlo con el desarrollador web.
 
-Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en AEM, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
+Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en Adobe Experience Manager, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
 
 Consulte también [Incrustación del visualizador de vídeo en una página web](embed-code.md).
 
 Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
-**Para ofrecer imágenes optimizadas para un sitio interactivo**:
+**Para ofrecer imágenes optimizadas para un sitio interactivo:**
 
 1. Vaya a la imagen para la que desee proporcionar código interactivo y, en el menú desplegable, pulse **[!UICONTROL Representaciones]**.
 
@@ -42,8 +41,8 @@ Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-you
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Incrustar imagen interactiva]**, seleccione y copie el texto del código interactivo y péguelo en el sitio web para acceder al recurso interactivo.
-1. Edite los puntos de interrupción predeterminados en el código incrustado para que coincidan con los del sitio web interactivo directamente en el código. Además, pruebe las distintas resoluciones de imagen que se proporcionan en diferentes puntos de interrupción de página.
+1. En el cuadro de diálogo **[!UICONTROL Incrustar imagen interactiva]**, seleccione, copie el texto del código interactivo y péguelo en el sitio web para acceder al recurso interactivo.
+1. Edite los puntos de interrupción predeterminados en el código incrustado para que coincidan con lo que se encuentra en el sitio web adaptable, directamente en el código. Además, pruebe las distintas resoluciones de imagen que se proporcionan en diferentes puntos de interrupción de página.
 
 ## Uso de HTTP/2 para enviar los recursos de Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
