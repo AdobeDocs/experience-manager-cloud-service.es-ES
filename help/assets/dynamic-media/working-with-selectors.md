@@ -3,10 +3,9 @@ title: Trabajar con selectores
 description: Obtenga información sobre los métodos que puede utilizar para seleccionar recursos para imágenes interactivas, vídeos interactivos y banners de carrusel en Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 14%
 
 ---
@@ -59,7 +58,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En el modo **[!UICONTROL Vista previa]**, puede pulsar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
+1. En el modo **[!UICONTROL Vista previa]**, puede pulsar el punto interactivo o el mapa de imagen y ver cómo aparece la vista rápida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
