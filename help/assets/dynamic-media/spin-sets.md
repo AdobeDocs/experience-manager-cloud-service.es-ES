@@ -4,10 +4,9 @@ description: Aprenda a trabajar con conjuntos de giros en Dynamic Media.
 feature: Conjuntos de giros
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1830'
 ht-degree: 12%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 12%
 
 Un conjunto de giros simula el acto real de girar un objeto para examinarlo. Los conjuntos de giros permiten ver los elementos desde cualquier ángulo, obteniendo los detalles visuales clave desde cualquier ángulo.
 
-Un conjunto de giros simula una experiencia de visualización de 360 grados. Dynamic Media ofrece conjuntos de giros de un solo eje en los que los espectadores pueden rotar un elemento. Además, los usuarios pueden aplicar zoom &quot;de forma libre&quot; y recorrer cualquiera de las vistas con unos pocos clics sencillos del ratón. De este modo, los usuarios pueden examinar un elemento más de cerca desde un punto de vista particular.
+Un conjunto de giros simula una experiencia de visualización de 360°. Dynamic Media ofrece conjuntos de giros de un solo eje en los que los espectadores pueden rotar un elemento. Además, los usuarios pueden aplicar zoom &quot;de forma libre&quot; y recorrer cualquiera de las vistas con unos pocos clics sencillos del ratón. De este modo, los usuarios pueden examinar un elemento más de cerca desde un punto de vista particular.
 
 Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTROL SPINSET]**. Además, si se publica el conjunto de giros, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL World]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
@@ -44,7 +43,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
 1. [Crear conjuntos de giros](#creating-spin-sets).
 
-   Para crear un conjunto de giros, seleccione **[!UICONTROL Crear > Conjunto de giros]** y asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
+   Para crear un conjunto de giros, seleccione **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de giros]** y asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
    Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -52,7 +51,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Los administradores pueden crear o modificar ajustes preestablecidos de visualizador de conjuntos de giros. Para ver el conjunto de giros con un ajuste preestablecido de visualizador, seleccione el conjunto de giros y, en el menú desplegable del carril izquierdo, seleccione **Visualizadores**.
 
-   Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visualizador]**.
+   Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Ajustes preestablecidos de visualizador]**.
 
    Consulte [Adición y edición de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -90,7 +89,7 @@ A continuación se indican algunas prácticas recomendadas en relación con las 
 * Utilizar un formato sin pérdidas; Se recomiendan TIFF y PNG.
 * Enmascara todas las imágenes para que el elemento aparezca sobre un fondo blanco puro u otro de alto contraste. De forma opcional, agregue sombras.
 * Asegúrese de que los detalles del producto estén bien iluminados y enfocados.
-* Toma imágenes de giro para ropa de moda con un maniquí o modelo. A menudo el maniquí está enmascarado (usando un maniquí de vidrio) o un maniquí estilizado/forma de vestir se muestra en la imagen. Puede crear un conjunto de giros en modelo definiendo el número de ángulos. Marque cada ángulo con cinta en el suelo para guiar al modelo hacia el paso y mirar en la dirección de cada toma.
+* Toma imágenes de giro para ropa de moda con un maniquí o modelo. A menudo el maniquí está enmascarado (usando un maniquí de vidrio) o un maniquí estilizado/forma de vestir se muestra en la imagen. Puede crear un conjunto de giros en modelo definiendo el número de ángulos. Marque cada ángulo con cinta en el suelo para que pueda guiar al modelo para que se desplace y mire en la dirección de cada toma.
 
 ## Creación de conjuntos de giros {#creating-spin-sets}
 
@@ -106,7 +105,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 >
 >Orden en el que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlas para que el giro sea una vista suave de 360 grados.
 
-**Creación de conjuntos de giros**
+**Para crear conjuntos de giros:**
 
 1. En Assets, navegue hasta el lugar donde desee crear un conjunto de giros, haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Conjunto de giros]**. También puede crear el conjunto desde una carpeta que contenga los recursos. Aparece el Editor de conjuntos de giros.
 
@@ -157,7 +156,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 >
 >También puede ver los conjuntos mediante la interfaz de usuario que se describe en [Edición de conjuntos de giros](#editing-spin-sets).
 
-**Visualización de conjuntos de giros**
+**Para ver los conjuntos de giros:**
 
 1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de miembros del recurso seleccionado (en **[!UICONTROL Member of Sets]**). Para ver el conjunto completo, pulse el nombre del conjunto.
 
@@ -183,7 +182,7 @@ Puede realizar varias tareas de edición en los conjuntos de giros, como las sig
 * Aplicar ajustes preestablecidos de visor.
 * Elimine el conjunto de giros.
 
-**Para editar un conjunto de giros**
+**Para editar un conjunto de giros:**
 
 1. Realice una de las siguientes acciones:
 
