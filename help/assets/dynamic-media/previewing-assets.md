@@ -4,17 +4,16 @@ description: Obtenga información sobre cómo previsualizar recursos en Dynamic 
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1214'
 ht-degree: 1%
 
 ---
 
 # Vista previa de recursos{#previewing-assets}
 
-Puede utilizar Vista previa para ver el aspecto que tiene un recurso digital que ha cargado cuando lo ve un cliente en su propio navegador web. El visor predeterminado integrado entre dispositivos asignado al recurso se utiliza para la vista previa.
+Puede utilizar Vista previa para ver cómo aparece un recurso digital que ha cargado cuando un cliente lo ve en su propio explorador web. El visor predeterminado integrado entre dispositivos asignado al recurso se utiliza para la vista previa.
 
 Un visor es una colección de varios ajustes o &quot;ajustes preestablecidos&quot;. Por ejemplo, el tamaño de visualización del visor, el comportamiento de zoom, los esquemas de color, los bordes y las fuentes que determinan cómo ven los usuarios los recursos de medios enriquecidos en sus pantallas de equipos y dispositivos móviles.
 
@@ -25,11 +24,11 @@ Además de utilizar la función de vista previa dedicada para vídeo, conjuntos 
 
 >[!NOTE]
 >
->Cuando se encuentra en una página web (Sitios) en Adobe Experience Manager, no puede obtener una vista previa de los recursos en modo **Editar**. En su lugar, vaya al modo **Preview** haciendo clic en **Preview** en la esquina superior derecha de la página.
+>Cuando se encuentra en una página web (Sitios) en Adobe Experience Manager, no puede obtener una vista previa de los recursos en modo **[!UICONTROL Editar]**. En su lugar, vaya al modo Vista previa haciendo clic en **[!UICONTROL Vista previa]** en la esquina superior derecha de la página.
 
 Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la interfaz de usuario, consulte [Administración de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Para previsualizar recursos**
+**Para obtener una vista previa de los recursos:**
 
 1. Desde **[!UICONTROL Experience Manager]**, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Recursos]** y, a continuación, pulse **[!UICONTROL Archivos]** para acceder a los recursos.
 1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Ver]**, pulse **[!UICONTROL Vista de lista]**.
@@ -58,7 +57,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
       <ul>
       <li><p><strong>Girar la cámara 3D</strong> : Girar la vista alrededor de la escena 3D y los objetos.</p> Mouse: Haga clic con el botón izquierdo y arrastre.</p> Pantalla táctil: Pulse + Arrastre.</p></li>
       <li><p><strong>Panorre la cámara</strong> : desplace la vista hacia la izquierda, hacia la derecha, hacia arriba y hacia abajo.</p> Mouse: Haga clic con el botón derecho y arrastre.</p> Pantalla táctil: Presione con dos dedos y arrastre.</p></li>
-      <li><p><strong>Zoom de la cámara</strong> : Aumente el zoom de la cámara para desplazarse dentro y fuera de las áreas de la escena 3D.</p> Mouse: Rueda de desplazamiento.</p> Pantalla táctil: Pellizque el dedo.</p></li>
+      <li><p><strong>Zoom de la cámara</strong> : haga zoom en la cámara si desea moverse dentro y fuera de las áreas de la escena 3D.</p> Mouse: Rueda de desplazamiento.</p> Pantalla táctil: Pellizque el dedo.</p></li>
       <li><p><strong>Vuelva a introducir la cámara</strong> : ordene la vista alrededor de la escena 3D y los objetos.</p> Mouse: Haga doble clic en .</p> Pantalla táctil: Toque dos veces.</li></ul></td>
       </tr>
       <tr>
