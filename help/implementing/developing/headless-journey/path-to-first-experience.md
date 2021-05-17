@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -141,9 +140,9 @@ Queremos que aproveche este conocimiento fundacional para comprender completamen
 
 ### Elija su propia aventura {#choose-your-path}
 
-Independientemente del estilo de aprendizaje que tenga, Adobe quiere que tenga éxito en la introducción de su proyecto sin encabezado AEM.
+Independientemente del estilo de aprendizaje que tenga, Adobe quiere que tenga éxito a medida que comience con su proyecto sin objetivos AEM.
 
-* Si prefiere **continuar aprendiendo conceptos sin encabezado y AEM tecnologías sin encabezado**, debe continuar con su recorrido sin encabezado AEM revisando el documento [Cómo modelar su contenido como modelos de contenido AEM](model-your-content.md) donde aprenderá a modelar su estructura de contenido en AEM.
+* Si prefiere continuar **aprendiendo sobre conceptos sin encabezado y AEM tecnologías sin encabezado**, debe continuar con su recorrido sin encabezado AEM revisando el documento [Cómo modelar su contenido como modelos de contenido AEM](model-your-content.md) donde aprenderá a modelar su estructura de contenido en AEM.
 * Si prefiere **aprender haciendo**, puede ir al [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html), donde saltará directamente a AEM desarrollo sin encabezado implementando un proyecto simple para exponer AEM contenido sin encabezado.
 
 ## Recursos adicionales {#additional-resources}
