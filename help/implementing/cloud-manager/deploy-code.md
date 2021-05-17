@@ -1,18 +1,17 @@
 ---
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
 
-
 # Implementar el código {#deploy-your-code}
 
-## Implementación de código con Cloud Manager {#deploying-code-with-cloud-manager}
+## Implementación de código con Cloud Manager en AEM como Cloud Service {#deploying-code-with-cloud-manager}
 
 Una vez configurada la canalización de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
@@ -126,5 +125,3 @@ Las implementaciones de producción generalmente siguen los mismos pasos que se 
 1. Implemente AEM paquetes para publicar2 y el paquete de Dispatcher para dispatcher2, vacíe la caché de Dispatcher.
 1. Vuelva a colocar Dispatcher2 en el equilibrador de carga.
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
-
-
