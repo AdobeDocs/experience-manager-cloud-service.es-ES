@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,23 @@ Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabe
 * Obtenga información sobre cómo proteger y escalar la aplicación antes de Launch.
 * Obtenga información sobre cómo monitorizar los problemas de rendimiento y depuración.
 
-Debe continuar con su recorrido sin AEM al revisar el documento [Post Launch](post-launch.md) donde aprende a mantener su experiencia sin encabezado.
+## El Recorrido Termina, ¿O Sí? {#journey-ends}
+
+Felicitaciones! ¡Ha completado el Recorrido para desarrolladores AEM sin encabezado! Ahora debe comprender lo siguiente:
+
+* La diferencia entre la entrega de contenido sin encabezado y con encabezado.
+* AEM características sin periféricos.
+* Organizar y AEM proyecto sin encabezado.
+* Cómo crear contenido sin encabezado en AEM.
+* Cómo recuperar y actualizar contenido sin encabezado en AEM.
+* Cómo poner en marcha un proyecto AEM sin encabezado.
+* Qué hacer después del lanzamiento.
+
+Ya ha iniciado su primer proyecto AEM sin encabezado o ahora tiene todo el conocimiento que necesita para hacerlo. ¡bueno trabajo!
+
+Sin embargo, las tiendas sin periféricos de AEM no tienen que parar aquí. Es posible que recuerde en la parte [Introducción del recorrido](getting-started.md#integration-levels) que analizamos brevemente cómo AEM no solo admite envíos sin periféricos y modelos de pila completa tradicionales, sino que también puede admitir modelos híbridos que combinan las ventajas de ambos.
+
+Si este tipo de flexibilidad es algo que necesita para su proyecto, continúe con la parte opcional adicional del recorrido, [Cómo crear aplicaciones de una sola página (SPA) con AEM.](create-spa.md)
 
 ## Recursos adicionales {#additional-resources}
 
