@@ -4,14 +4,13 @@ description: En esta parte del Recorrido para desarrolladores sin encabezado de 
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a AEM sin encabezado como Cloud Service {#getting-started}
 
@@ -63,7 +62,8 @@ La replicación es el acto de transferir contenido de la instancia de autor a la
 En su nivel más sencillo, la creación de experiencias digitales en AEM requiere los siguientes pasos:
 
 1. Los autores de contenido crearán su contenido sin encabezado en la instancia de autor.
-1. Cuando este contenido está listo, se replica en la instancia de publicación. Luego se puede llamar a las API para recuperar este contenido.
+1. Cuando este contenido está listo, se replica en la instancia de publicación.
+1. Luego se puede llamar a las API para recuperar este contenido.
 
 AEM sin encabezado se basa en esta base técnica al ofrecer poderosas herramientas para administrar el contenido sin encabezado que se [describe en la siguiente sección.](#aem-headless-basics)
 
