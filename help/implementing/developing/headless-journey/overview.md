@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
+source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,13 @@ Esta guía le guiará por los temas más importantes para que al completarlo:
 * Comprender AEM funciones sin objetivos y cómo trabajan juntos para ofrecer una experiencia sin objetivos.
 * Tenga la capacidad de realizar los primeros pasos en la implementación de su primer proyecto AEM sin encabezado.
 
-## El Recorrido sin encabezado {#the-journey}
+## Audience {#audience}
+
+Este recorrido está diseñado para el desarrollador, que expone los requisitos, pasos y enfoque de un proyecto sin encabezado AEM desde la perspectiva del desarrollador. El recorrido definirá las personas adicionales con las que el desarrollador debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el del desarrollador.
+
+La información de este recorrido puede ser útil para otras personas, pero cierta información será superflua para ciertas funciones. Manténgase atento a los próximos recorridos que cubran funciones adicionales.
+
+## El Recorrido para desarrolladores sin encabezado {#the-journey}
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos de AEM y le permiten acceder a documentación técnica detallada.
 
