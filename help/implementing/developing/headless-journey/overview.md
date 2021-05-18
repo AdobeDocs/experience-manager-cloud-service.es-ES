@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 2%
 
 ---
@@ -55,8 +55,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 6 | [Actualización del contenido mediante las API de recursos de AEM](update-your-content.md) | Aprenda a utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido. |
 | 7 | [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) | Aprenda a tomar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas a la API de REST y la aplicación, y a prepararlo para su lanzamiento. |
 | 8 | [Activación de la aplicación sin cabeza](go-live.md) | Obtenga información sobre cómo implementar la aplicación en directo y tome el código local en Git y muévalo a Cloud Manager Git para la canalización CI/CD. |
-| 9 | [Publicar lanzamiento](post-launch.md) | Aprenda a mantener su experiencia sin encabezado. |
-| 10 | [Opcional: Cómo crear aplicaciones de una sola página (SPA) con AEM](create-spa.md) | Una vez que haya comprendido AEM funciones sin encabezado, explore cómo combinar envíos con encabezado y sin encabezado y aprenda a crear SPA editables con AEM marco SPA Editor. |
+| 9 | [Opcional: Cómo crear aplicaciones de una sola página (SPA) con AEM](create-spa.md) | Una vez que haya comprendido AEM funciones sin encabezado, explore cómo combinar envíos con encabezado y sin encabezado y aprenda a crear SPA editables con AEM marco SPA Editor. |
 
 ## Siguientes {#what-is-next}
 
