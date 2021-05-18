@@ -2,16 +2,15 @@
 title: Metadatos XMP
 description: Obtenga información sobre el estándar de metadatos XMP (Plataforma de metadatos extensible) para la administración de metadatos. La utiliza AEM como formato estandarizado para la creación, el procesamiento y el intercambio de metadatos.
 contentOwner: AG
-feature: Metadata
+feature: Metadatos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1000'
 ht-degree: 16%
 
 ---
-
 
 # Metadatos XMP {#xmp-metadata}
 
@@ -75,9 +74,7 @@ XMP le ofrece la posibilidad de agregar una propiedad `xml:lang` a las propiedad
 ## Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
 Esta función XMP reescritura en [!DNL Adobe Experience Manager Assets] duplica los cambios de metadatos en las representaciones del recurso original.
-Al cambiar los metadatos de un recurso desde Assets o al cargarlo, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
-
-La función XMP reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas de ellas. La función solo recupera las propiedades de metadatos que utilizan el espacio de nombres `jcr`, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero no una propiedad denominada `mytitle`.
+Cuando cambia los metadatos de un recurso desde [!DNL Assets] o mientras carga el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía del recurso. La función de reescritura permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas de ellas. La función solo recupera las propiedades de metadatos que utilizan el espacio de nombres `jcr`, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero no una propiedad denominada `mytitle`.
 
 Por ejemplo, imaginemos un escenario en el que se modifica la propiedad [!UICONTROL Title] del recurso titulada `Classic Leather` a `Nylon`.
 
@@ -93,7 +90,13 @@ En este caso, [!DNL Assets] guarda los cambios en la propiedad **[!UICONTROL Tit
 
 ### Habilitar XMP escritura {#enable-xmp-writeback}
 
-[!UICONTROL DAM Metadata ] Writebackworkflow se utiliza para reescribir los metadatos de un recurso. Para habilitar la reescritura, siga estos pasos:
+[!UICONTROL DAM Metadata ] Writebackworkflow se utiliza para reescribir los metadatos de un recurso. Para habilitar la reescritura, siga cualquiera de los tres métodos siguientes:
+
+* Utilice Lanzadores.
+* Inicie manualmente el flujo de trabajo `DAM MetaData Writeback`.
+* Configure el flujo de trabajo para que forme parte del posprocesamiento.
+
+Para utilizar lanzadores, siga estos pasos:
 
 1. Como administrador, acceda a **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 1. Seleccione [!UICONTROL Launcher] para el que la columna **[!UICONTROL Workflow]** muestra **[!UICONTROL DAM MetaData Writeback]**. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas.
@@ -102,16 +105,14 @@ En este caso, [!DNL Assets] guarda los cambios en la propiedad **[!UICONTROL Tit
 
 1. Seleccione **[!UICONTROL Activar]** en la página **[!UICONTROL Propiedades del iniciador]**. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 
-Para aplicar este flujo de trabajo a un recurso solo una vez, aplique el flujo de trabajo [!UICONTROL reescritura de metadatos DAM] desde el carril izquierdo. Para aplicar el flujo de trabajo a todos los recursos cargados, agregue el flujo de trabajo a un perfil posterior al procesamiento.
+Para aplicar manualmente el flujo de trabajo a un recurso una sola vez, aplique el flujo de trabajo [!UICONTROL reescritura de metadatos DAM] desde el carril izquierdo.
+
+Para aplicar el flujo de trabajo a todos los recursos cargados, agregue el flujo de trabajo a un perfil posterior al procesamiento.
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
