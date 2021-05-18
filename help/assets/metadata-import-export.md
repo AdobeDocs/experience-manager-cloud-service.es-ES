@@ -2,16 +2,15 @@
 title: Importe y exporte metadatos de recursos de manera masiva
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
-feature: Metadata
+feature: Metadatos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fb70a068-3ba3-4459-952d-79155d286c42
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '666'
 ht-degree: 12%
 
 ---
-
 
 # Importe y exporte metadatos de recursos de manera masiva {#import-and-export-asset-metadata-in-bulk}
 
@@ -19,7 +18,7 @@ AEM Assets permite importar metadatos de recursos de forma masiva mediante un ar
 
 ## Importar metadatos {#import-metadata}
 
-La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos, ya que XMP actividad de reescritura utiliza microservicios de recursos. Adobe recomienda planificar las operaciones masivas durante el uso del servidor liviano para que el rendimiento de otros usuarios no se vea afectado.
+La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos, ya que la actividad de reescritura de metadatos utiliza microservicios de recursos. Adobe recomienda planificar las operaciones masivas durante el uso del servidor liviano para que el rendimiento de otros usuarios no se vea afectado.
 
 >[!NOTE]
 >
