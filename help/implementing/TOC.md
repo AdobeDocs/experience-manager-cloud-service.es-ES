@@ -5,10 +5,9 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 33%
 
 ---
@@ -83,7 +82,6 @@ ht-degree: 33%
       + [Actualización del contenido mediante las API de recursos de AEM](developing/headless-journey/update-your-content.md)
       + [Cómo ponerlo todo juntos](developing/headless-journey/put-it-all-together.md)
       + [Activación de la aplicación sin cabeza](developing/headless-journey/go-live.md)
-      + [Publicar lanzamiento](developing/headless-journey/post-launch.md)
       + [Opcional: Cómo crear aplicaciones de una sola página con AEM](developing/headless-journey/create-spa.md)
    + [Encabezado y sin cabeza en AEM](developing/headful-headless.md)
    + Desarrollo de AEM de pila completa {#full-stack}
@@ -94,7 +92,7 @@ ht-degree: 33%
       + [Usar la fusión de recursos de Sling en AEM as a Cloud Service](developing/introduction/sling-resource-merger.md)
       + [Superposiciones en AEM as a Cloud Service](developing/introduction/overlays.md)
       + [Uso de bibliotecas del lado del cliente](developing/introduction/clientlibs.md)
-      + [Diferencias de página](/help/implementing/developing/introduction/page-diff.md)
+      + [Diferencias de página  ](/help/implementing/developing/introduction/page-diff.md)
       + [Limitaciones del editor](/help/implementing/developing/introduction/editor-limitations.md)
       + [Convenciones de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md)
       + Componentes y plantillas {#components-templates}
