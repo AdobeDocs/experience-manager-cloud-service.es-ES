@@ -3,26 +3,19 @@ title: Administración de metadatos de recursos digitales
 description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: Administración de recursos,Metadatos
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 3%
 
 ---
 
-
 # Administrar metadatos de los recursos digitales {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] conserva los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos, y ayuda a las personas que buscan un recurso específico. Con la capacidad de extraer metadatos de archivos cargados en [!DNL Experience Manager Assets], la administración de metadatos se integra con el flujo de trabajo creativo. Con la capacidad de mantener y administrar metadatos con los recursos, puede organizar y procesar automáticamente los recursos en función de sus metadatos.
-
->[!MORELIKETHIS]
->
->* [Metadatos XMP](xmp-metadata.md)
->* [Edición o adición de metadatos](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ La creación de flujos de trabajo impulsados por metadatos ayuda a automatizar a
 * El flujo de trabajo puede comprobar si una imagen tiene un título o no. Si no es así, el sistema notifica que debe añadir un título.
 * El flujo de trabajo puede comprobar si un aviso de copyright de un recurso permite la distribución o no. Por lo tanto, el sistema envía el recurso a un servidor o a otro.
 * Un flujo de trabajo puede comprobar los recursos sin metadatos predefinidos obligatorios ni con metadatos *no válidos*.
+
+>[!MORELIKETHIS]
+>
+>* [Metadatos XMP](xmp-metadata.md)
+* [Edición o adición de metadatos](meta-edit.md)
+
