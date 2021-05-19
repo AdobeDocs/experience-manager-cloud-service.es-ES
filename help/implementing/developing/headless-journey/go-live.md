@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ En esta parte del [AEM Recorrido para desarrolladores sin encabezado](overview.m
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido sin AEM encabezado, [How to Put it All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) ha aprendido a preparar su propio proyecto sin objetivos AEM para que se ponga en marcha y ahora debería:
+En el documento anterior del recorrido sin AEM encabezado, [How to Update Your Content via AEM Assets APIs](update-your-content.md), ha aprendido a actualizar el contenido sin encabezado existente en AEM mediante API y ahora debería:
 
-* Comprender los requisitos para ponerse en marcha.
+* Comprender la API HTTP de AEM Assets.
 
-Este artículo se basa en estos fundamentos para que entienda cómo llevar su proyecto sin encabezado de AEM en vivo.
+Este artículo se basa en estos fundamentos para que entienda cómo preparar su propio proyecto sin objetivos AEM para su lanzamiento.
 
 ## Objetivo {#objective}
 
@@ -151,13 +151,13 @@ Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicac
 * Verificar páginas de estado AEM para el estado actual de disponibilidad del servicio
 * Acceso a los informes de rendimiento
    * Rendimiento de entrega
-      * Finfinito (CDN): comprobar el número de llamadas, la tasa de caché, las tasas de error, el tráfico de carga útil
+      * Rendimiento de CDN (FIENTE): compruebe el número de llamadas, la tasa de caché, los índices de errores y el tráfico de carga útil
       * Servidores de origen: número de llamadas, tasas de error, cargas de CPU, tráfico de carga útil
    * Rendimiento del autor
       * Comprobar el número de usuarios, solicitudes y cargar
 * Acceso a informes de rendimiento específicos de aplicaciones y espacio
    * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes/naranjas/rojas y, a continuación, identifique los problemas específicos de la aplicación
-   * Abra los mismos informes filtrados arriba a app/space (es decir, escritorio de Photoshop, paywall, etc.)
+   * Abra los mismos informes filtrados arriba a la aplicación o al espacio (por ejemplo, escritorio de Photoshop, paywall).
    * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y la aplicación
    * Póngase en contacto con el servicio de atención al cliente en caso de que haya otros problemas.
 
@@ -181,15 +181,6 @@ Para registrar de forma eficaz un error con el servicio de asistencia en caso de
 * Documentar una manera de reproducir el problema
 * Documentar el contenido con el que se reproduce el problema
 * Registre un problema a través del portal de soporte AEM con la prioridad adecuada
-
-## Siguientes {#what-is-next}
-
-Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabezado de AEM, debe:
-
-* Comprender los conceptos básicos AEM replicación de contenido y almacenamiento en caché.
-* Obtenga información sobre cómo configurar las herramientas necesarias para simular go live para su aplicación sin periféricos.
-* Obtenga información sobre cómo proteger y escalar la aplicación antes de Launch.
-* Obtenga información sobre cómo monitorizar los problemas de rendimiento y depuración.
 
 ## El Recorrido Termina, ¿O Sí? {#journey-ends}
 
