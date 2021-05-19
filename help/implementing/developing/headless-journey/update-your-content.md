@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -322,7 +321,11 @@ Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabe
 * Have experience with sample code and know how the API works in practice.
 -->
 
-Debería continuar con su recorrido sin AEM al revisar el documento [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) donde aprenderá a tomar su proyecto sin encabezado de AEM y prepararlo para su lanzamiento.
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+Debería continuar con su recorrido sin AEM al revisar el documento [How to Go Live with Your Headless Application](go-live.md) en el que realmente se lleva su proyecto sin encabezado de AEM.
 
 [Cómo crear aplicaciones de una sola página (SPA) con ](create-spa.md) AEM también mostrará cómo puede crear SPA editables con el marco SPA Editor de AEM, así como integrar SPA externas, habilitando las capacidades de edición según sea necesario.
 
