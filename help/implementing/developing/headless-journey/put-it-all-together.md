@@ -5,13 +5,13 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 58617913f967abbab31054ea9cdb691a9b29415f
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # SDK sin AEM - Próximamente {#coming-soon}
 
-Esta página tiene como objetivo proporcionar instrucciones sobre cómo configurar un proyecto de desarrollo local mediante el nuevo SDK sin encabezado de AEM. Se actualizará cuando la primera versión del SDK esté disponible públicamente.
+Esta página tiene como objetivo proporcionar instrucciones sobre cómo configurar un proyecto de desarrollo local mediante el nuevo SDK sin encabezado de AEM. Manténgase atento a más contenido una vez que el SDK esté disponible públicamente.
