@@ -1,11 +1,11 @@
 ---
 title: Desarrollo sin encabezado para AEM Sites as a Cloud Service
 description: Descubra cómo AEM como potentes funcionalidades sin objetivos de un Cloud Service, como modelos de contenido, fragmentos de contenido y la API de GraphQL, trabajan juntos para permitirle administrar sus experiencias de forma centralizada y servirlas en todos los canales.
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 2%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
 
@@ -47,28 +47,12 @@ AEM as a Cloud Service es una herramienta flexible para el modelo de implementac
    * La API de REST de AEM Assets es compatible con las operaciones de CRUD de fragmento de contenido.
    * La entrega directa de contenido también es posible con la exportación JSON del [Componente principal del fragmento de contenido.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
-## Guías de introducción sin encabezado {#getting-started}
+## Sus primeros pasos con AEM sin encabezado {#first-steps}
 
-Las guías de introducción sin encabezado establecen una ruta sencilla para crear, administrar y ofrecer experiencias con AEM como Cloud Service en cinco pasos. Cada guía se basa en la anterior, por lo que se recomienda explorarlas a fondo y en orden.
+Hay varios recursos disponibles para que su usuario comience con AEM funciones sin encabezado. Están pensados para diferentes casos de uso, pero todos ofrecen una visión general sólida de AEM funciones sin encabezado.
 
-1. [Creación de una configuración](getting-started/create-configuration.md)
-1. [Creación de un modelo de fragmento de contenido](getting-started/create-content-model.md)
-1. [Creación de una carpeta de recursos](getting-started/create-assets-folder.md)
-1. [Creación de un fragmento de contenido](getting-started/create-content-fragment.md)
-1. [Acceso a fragmentos de contenido y envío](getting-started/create-api-request.md)
-
-## Audience {#audience}
-
-Las tareas descritas en las [Guías de introducción sin encabezado](#getting-started) son necesarias para una demostración completa básica de AEM capacidades sin encabezado. Cualquier persona con acceso de administrador a una instancia de AEM de prueba puede seguir estas guías para comprender la entrega sin objetivos en AEM, aunque es ideal alguien con experiencia de desarrollador.
-
-Sin embargo, en una situación de producción, las tareas las realizan diferentes personas varias veces. Por ejemplo:
-
-* **** Los administradores tendrán que configurar la configuración inicial y la estructura de carpetas para el contenido normalmente solo una vez o de forma esporádica.
-* **En general, los** arquitectos de la información agregarán nuevos modelos a medida que evolucionen las necesidades de la organización.
-* **Los** autores de contenido crearán continuamente nuevo contenido como fragmentos de contenido basados en los modelos definidos por los arquitectos.
-
-Las guías de introducción sin encabezado señalan quién realizaría generalmente las tareas descritas y con qué frecuencia.
-
-## Etapa siguiente {#next-step}
-
-¿Listo para obtener más información? A continuación, comience leyendo la primera parte de la Guía de introducción sin encabezado: [Creación de una configuración.](getting-started/create-configuration.md)
+| Medio | Descripción | Tipo | Audience | Este. Hora |
+|---|---|---|---|---|
+| [Recorrido para desarrolladores sin objetivos](/help/implementing/developing/headless-journey/overview.md) | Para obtener una visión general de AEM características sin objetivos de la teoría de la entrada sin objetivos con su primer proyecto sin cabeza, comience aquí. | Guía | Desarrolladores | 1 hora |
+| [Guía de introducción sin encabezado](/help/implementing/developing/headless/getting-started/introduction.md) | Para obtener un breve resumen de las funciones principales AEM sin encabezado, consulte esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores | 20 minutos |
+| [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Si prefiere un enfoque práctico, este tutorial se sumerge directamente en la creación de un proyecto sencillo sin encabezado. | Tutorial | Desarrolladores | 2 horas |
