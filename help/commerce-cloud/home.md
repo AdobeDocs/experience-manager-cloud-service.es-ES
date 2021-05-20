@@ -1,16 +1,15 @@
 ---
-title: AEM Contenido y comercio
+title: AEM Content and Commerce
 description: Recursos informativos y enlaces a la documentación sobre contenido y comercio de AEM
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-translation-type: tm+mt
-source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 78%
+source-wordcount: '402'
+ht-degree: 71%
 
 ---
 
-# AEM Contenido y comercio {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 En esta página se muestran los recursos informativos relacionados con AEM Contenido y comercio.
 
@@ -37,7 +36,8 @@ En esta página se muestran los recursos informativos relacionados con AEM Conte
 | [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo administrar Experience Manager Assets as a Cloud Service. |
-| [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de implementación de desarrollo. |
+| [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias utilizando AEM potentes funciones, explorando estos temas de desarrollo e implementación. |
+| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles características de AEM para prepararse para su primer proyecto sin objetivos. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Descubra cómo integrar soluciones en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de Experience Manager as a Cloud Service: tareas de indexación y mantenimiento. |
 
