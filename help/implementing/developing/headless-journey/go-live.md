@@ -1,13 +1,13 @@
 ---
-title: Cómo vivir con tu aplicación sin encabezado
+title: Cómo poner en marcha su aplicación sin encabezado
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a implementar una aplicación sin encabezado en vivo tomando su código local en Git y mudándolo a Cloud Manager Git para la canalización CI/CD.
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
+source-git-commit: bc717c544bd4f0449d358b831a5132f85fa85e86
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Un entorno de AEM completo está formado por un Autor, una Publicación y un Dis
 
 * **El servicio Autor** es donde los usuarios internos crean, administran y previsualizan contenido.
 
-* **El servicio de publicación** se considera el entorno &quot;activo&quot; y es normalmente lo que los usuarios finales interactúan con él. El contenido, después de editarse y aprobarse en el servicio Autor, se distribuye al servicio Publicar . El patrón de implementación más común con AEM aplicaciones sin periféricos es tener la versión de producción de la aplicación conectada a un servicio de AEM Publish.
+* **El servicio de publicación** se considera el entorno &quot;activo&quot; y es normalmente lo que los usuarios finales interactúan con él. El contenido, después de editarse y aplicar el servicio Autor, se distribuye en el servicio Publicar . El patrón de implementación más común con AEM aplicaciones sin periféricos es tener la versión de producción de la aplicación conectada a un servicio de AEM Publish.
 
 * **El** Dispatcher es un servidor web estático que se complementa con el módulo AEM Dispatcher. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
@@ -99,15 +99,15 @@ El entorno de desarrollo local consta de tres esferas principales:
 1. Local AEM Runtime: versiones locales de los servicios de publicación y autor de AEM que se utilizarán para implementar código del proyecto de AEM
 1. Tiempo de ejecución de Dispatcher local: versión local del servidor web Apache htttpd que incluye el módulo de Dispatcher.
 
-Una vez configurado el entorno de desarrollo local, puede simular el contenido que sirve en la aplicación React mediante la implementación local de un servidor Nodo estático.
+Una vez configurado el entorno de desarrollo local, puede simular el contenido que sirve en la aplicación React mediante la implementación local de un servidor de Nodo estático.
 
 Para obtener una vista más detallada de la configuración de un entorno de desarrollo local y todas las dependencias necesarias para la vista previa del contenido, consulte [Documentación de implementación de producción](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites).
 
-## Prepare su aplicación sin AEM para Go-Live {#prepare-your-aem-headless-application-for-golive}
+## Prepare su aplicación AEM sin encabezado para Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 Ahora, es el momento de preparar su aplicación sin AEM para el lanzamiento, siguiendo las prácticas recomendadas que se describen a continuación.
 
-### Proteja y escale su aplicación sin encabezado antes de iniciar {#secure-and-scale-before-launch}
+### Asegure y escale su aplicación sin encabezado antes de Launch {#secure-and-scale-before-launch}
 
 1. Configure [Autenticación basada en tokens](/help/assets/content-fragments/graphql-authentication-content-fragments.md) con sus solicitudes de GraphQL
 1. Configure el [almacenamiento en caché](/help/implementing/dispatcher/caching.md).
@@ -147,7 +147,7 @@ Puede empezar a implementar su código aprovechando la canalización de CD/CI de
 
 Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicación sin periféricos AEM, es importante que supervise las métricas clave de rendimiento, tal como se detalla a continuación:
 
-* Validar las versiones de producción y previsualización de la aplicación
+* Validar las versiones de previsualización y producción de la aplicación
 * Verificar páginas de estado AEM para el estado actual de disponibilidad del servicio
 * Acceso a los informes de rendimiento
    * Rendimiento de entrega
@@ -157,8 +157,8 @@ Para que los usuarios tengan la mejor experiencia posible al utilizar la aplicac
       * Comprobar el número de usuarios, solicitudes y cargar
 * Acceso a informes de rendimiento específicos de aplicaciones y espacio
    * Una vez que el servidor esté activo, compruebe si las métricas generales son verdes/naranjas/rojas y, a continuación, identifique los problemas específicos de la aplicación
-   * Abra los mismos informes filtrados arriba a la aplicación o al espacio (por ejemplo, escritorio de Photoshop, paywall).
-   * Utilice las API de registro de Splunk para acceder al rendimiento del servicio y la aplicación
+   * Abra los informes mencionados anteriormente, pero fíltrelos a la aplicación o el espacio (por ejemplo, Photoshop Desktop, paywall)
+   * [Utilice las ](/help/implementing/developing/introduction/logging.md#splunk-logs) API de registro de Splunk para acceder al rendimiento del servicio y la aplicación
    * Póngase en contacto con el servicio de atención al cliente en caso de que haya otros problemas.
 
 ## Solución de problemas {#troubleshooting}
@@ -169,7 +169,7 @@ Siga estas prácticas recomendadas como enfoque general de la depuración:
 
 * Validar la funcionalidad y el rendimiento con la versión de vista previa de la aplicación
 * Validar la funcionalidad y el rendimiento con la versión de producción de la aplicación
-* Validar con la vista previa JSON del Editor de fragmentos de contenido
+* Valide con la [vista previa JSON](/help/assets/content-fragments/content-fragments-json-preview.md) del editor de fragmentos de contenido
 * Inspect el JSON en la aplicación cliente para comprobar la presencia de problemas de entrega o de aplicaciones de cliente
 * Inspect el JSON mediante GraphQL para comprobar la presencia de problemas relacionados con contenido en caché o AEM
 
@@ -180,7 +180,7 @@ Para registrar de forma eficaz un error con el servicio de asistencia en caso de
 * Tome capturas de pantalla del problema, si es necesario.
 * Documentar una manera de reproducir el problema
 * Documentar el contenido con el que se reproduce el problema
-* Registre un problema a través del portal de soporte AEM con la prioridad adecuada
+* Registre un problema a través del portal de soporte AEM con la prioridad correspondiente de la aplicación
 
 ## El Recorrido Termina, ¿O Sí? {#journey-ends}
 
