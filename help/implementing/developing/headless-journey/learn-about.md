@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: d96f02b3-d650-4b9e-addf-409d31c80372
-translation-type: tm+mt
-source-git-commit: 7df3620e6f58336de2ac29dd496a888b17606d7f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
+>OBSOLETO : este contenido borrador ha sido reemplazado por la nueva [documentación de Recorrido para desarrolladores sin encabezado.](/help/journey-headless/developer/overview.md)
 
 En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprende sobre la tecnología sin encabezado y por qué la utilizaría.
 
@@ -106,7 +105,7 @@ Tener muchos canales diferentes puede significar que cada uno tiene sus propios 
 
 Al implementar sistemas de diseño cuidadosos, compartir bibliotecas de patrones y aprovechar componentes de diseño reutilizables, así como marcos abiertos y establecidos del lado del cliente, se pueden asegurar experiencias coherentes, pero esto debe planificarse.
 
-## El futuro no tiene objetivos y el futuro es ahora {#future}
+## El futuro no tiene rumbo y el futuro está ahora {#future}
 
 Las experiencias digitales seguirán definiendo la forma en que las marcas interactúan con los clientes. Lo que es interesante del diseño sin objetivos es la flexibilidad que nos proporciona para responder a las expectativas de los clientes en evolución.
 
