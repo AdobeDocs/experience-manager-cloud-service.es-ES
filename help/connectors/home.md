@@ -1,14 +1,13 @@
 ---
 title: Conectores de Adobe Experience Manager as a Cloud Service
 description: Recursos de autoayuda y enlaces a documentación sobre conectores de Adobe Experience Manager as a Cloud Service Connectors
-translation-type: tm+mt
-source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
+exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 90%
 
 ---
-
 
 # Implementación de conectores para Experience Manager as a Cloud Service {#aem-connectors-guide}
 
@@ -33,7 +32,8 @@ En esta página se muestran los recursos de autoayuda sobre conectores para Expe
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
 | [El paso de AEM as a Cloud Service](/help/move-to-cloud-service/home.md) | Comprender el viaje de transición a Cloud Service |
-| [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
+| [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias utilizando AEM potentes funciones, explorando estos temas de desarrollo e implementación. |
+| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles características de AEM para prepararse para su primer proyecto sin objetivos. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
 | [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
 
