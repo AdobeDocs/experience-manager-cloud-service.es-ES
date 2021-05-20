@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: a39877d9-f5a1-48f0-a021-cc9849bd8ecb
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3073'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
+>OBSOLETO : este contenido borrador ha sido reemplazado por la nueva [documentación de Recorrido para desarrolladores sin encabezado.](/help/journey-headless/developer/overview.md)
 
 En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) obtenga información sobre lo que se necesita para comenzar su propio proyecto con AEM sin encabezado.
 
