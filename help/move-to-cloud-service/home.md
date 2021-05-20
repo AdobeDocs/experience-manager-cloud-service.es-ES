@@ -1,20 +1,19 @@
 ---
 title: El paso de AEM as a Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager as a Cloud Service El paso de AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: f275b9f8a1c6cbc188e75be435a4efc9394fa140
+exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 92%
+source-wordcount: '589'
+ht-degree: 86%
 
 ---
-
 
 # El paso de AEM as a Cloud Service {#aem-moving-to-aem-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
->title="Acerca del Administrador de aceleración de la nube"
+>title="Acerca de Cloud Acceleration Manager"
 >abstract="Cloud Acceleration Manager es su propia guía personal a lo largo de todo el proceso de pasar a AEM como Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="Cambios importantes en AEM Sites as a Cloud Service"
 
@@ -53,7 +52,8 @@ Obtenga más información sobre las diferentes fases que intervienen en el viaje
 | [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
-| [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación. |
+| [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias utilizando AEM potentes funciones, explorando estos temas de desarrollo e implementación. |
+| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles características de AEM para prepararse para su primer proyecto sin objetivos. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones del servidor de Experience Manager as a Cloud Service, como tareas de indexación y mantenimiento. |
 | [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en AEM as a Cloud Service. |
