@@ -1,9 +1,9 @@
 ---
 title: recorrido para desarrolladores AEM sin encabezado
 description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '736'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 4 | [Cómo modelar el contenido](model-your-content.md) | Aprenda a modelar la estructura de contenido. A continuación, observe esa estructura para Adobe Experience Manager (AEM) mediante los modelos de fragmentos de contenido y los fragmentos de contenido, para reutilizarla en todos los canales. |
 | 5 | [Cómo acceder al contenido a través de las API de envío de AEM](access-your-content.md) | Aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido. |
 | 6 | [Actualización del contenido mediante las API de recursos de AEM](update-your-content.md) | Aprenda a utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido. |
-| 7 | [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) | Aprenda a tomar su proyecto de AEM, incluidos los fragmentos de contenido, las llamadas de GraphQL, las llamadas a la API de REST y la aplicación, y a prepararlo para su lanzamiento. |
+| 7 | [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin encabezado](put-it-all-together.md) | Aprenda a tomar su proyecto AEM y prepararlo para su lanzamiento con el SDK sin encabezado de AEM. |
 | 8 | [Activación de la aplicación sin cabeza](go-live.md) | Obtenga información sobre cómo implementar la aplicación en directo y tome el código local en Git y muévalo a Cloud Manager Git para la canalización CI/CD. |
 | 9 | [Opcional: Cómo crear aplicaciones de una sola página (SPA) con AEM](create-spa.md) | Una vez que haya comprendido AEM funciones sin encabezado, explore cómo combinar envíos con encabezado y sin encabezado y aprenda a crear SPA editables con AEM marco SPA Editor. |
 
