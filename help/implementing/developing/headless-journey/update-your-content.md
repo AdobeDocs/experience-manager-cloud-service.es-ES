@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1103'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
+>OBSOLETO : este contenido borrador ha sido reemplazado por la nueva [documentación de Recorrido para desarrolladores sin encabezado.](/help/journey-headless/developer/overview.md)
 
 En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprende a utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
 
