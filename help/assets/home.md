@@ -1,16 +1,15 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] Guía'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] recursos de autoayuda y vínculos a documentación'
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner,Leader
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 36%
+source-wordcount: '297'
+ht-degree: 32%
 
 ---
-
 
 # [!DNL Assets] como  [!DNL Cloud Service] guía  {#aem-assets-guide}
 
@@ -20,7 +19,7 @@ Los siguientes recursos de autoayuda están disponibles para [!DNL Experience Ma
 
 * [Información general y novedades](overview.md)
 * [Cambios importantes](/help/assets/assets-cloud-changes.md)
-* [Arquitectura  [!DNL Assets] de como [!DNL Cloud Service]](architecture.md)
+* [Arquitectura de [!DNL Assets] como a [!DNL Cloud Service]](architecture.md)
 * [Información general sobre los microservicios de recursos](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] guías  {#aem-guides}
@@ -34,8 +33,9 @@ Los siguientes recursos de autoayuda están disponibles para [!DNL Experience Ma
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Incorporación](/help/onboarding/home.md) | Empiece con [!DNL Experience Manager] como [!DNL Cloud Service]: obtenga acceso y proteja datos importantes. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear y administrar [!DNL Experience Manager Sites] como [!DNL Cloud Service]. |
+| [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias utilizando AEM potentes funciones, explorando estos temas de desarrollo e implementación. |
+| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles características de AEM para prepararse para su primer proyecto sin objetivos. |
 | [Mover  [!DNL Experience Manager] a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprenda el recorrido de transición a [!DNL Experience Manager] como [!DNL Cloud Service]. |
-| [Guía del usuario sobre implementación](/help/implementing/home.md) | Personalice, desarrolle e implemente [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Conectores en [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de [!DNL Experience Manager] como [!DNL Cloud Service], como las tareas de indexación y mantenimiento. |
 | [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en [!DNL Experience Manager] as a [!DNL Cloud Service]. |
