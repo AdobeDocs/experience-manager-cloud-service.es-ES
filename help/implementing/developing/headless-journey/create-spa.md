@@ -4,20 +4,19 @@ description: En esta continuación opcional del Recorrido para desarrolladores s
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+exl-id: 80b43aae-0027-45c8-b079-e3931d58597f
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
 
 # Cómo crear aplicaciones de una sola página (SPA) con AEM {#create-spa}
 
 >[!CAUTION]
 >
->TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
+>OBSOLETO : este contenido borrador ha sido reemplazado por la nueva [documentación de Recorrido para desarrolladores sin encabezado.](/help/journey-headless/developer/overview.md)
 
 En esta continuación opcional del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprenderá cómo AEM combinar el envío sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables utilizando AEM marco de edición de SPA, así como integrar SPA externas, habilitando las funciones de edición según sea necesario.
 
