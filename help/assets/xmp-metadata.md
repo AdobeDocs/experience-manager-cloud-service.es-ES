@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadatos
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '1016'
 ht-degree: 16%
 
 ---
@@ -84,9 +84,9 @@ En este caso, [!DNL Assets] guarda los cambios en la propiedad **[!UICONTROL Tit
 
 ![metadatos almacenados en el nodo de recursos en el repositorio](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->La función de reescritura no está habilitada de forma predeterminada en [!DNL Assets]. Consulte cómo [habilitar la reescritura de metadatos](#enable-xmp-writeback).
+>La función de reescritura no está habilitada de forma predeterminada en [!DNL Assets]. Consulte cómo [habilitar la reescritura de metadatos](#enable-xmp-writeback). MSM para recursos digitales no funciona con la reescritura de metadatos habilitada. Al reescribir, la herencia se rompe.
 
 ### Habilitar XMP escritura {#enable-xmp-writeback}
 
