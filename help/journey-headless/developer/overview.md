@@ -1,7 +1,7 @@
 ---
 title: recorrido para desarrolladores AEM sin encabezado
 description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
-source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
+source-git-commit: bec1e901e19abc9ae99dbf95878e51c9b000a5ee
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 2%
@@ -17,7 +17,7 @@ Empiece aquí por un recorrido guiado a través de las potentes y flexibles func
 
 La implementación sin objetivos es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal y dónde se encuentren.
 
-La implementación sin encabezado renuncia a la administración de páginas y componentes, como es tradicional en las soluciones de pila completas, y se centra en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío por canales cruzados. Es un patrón de desarrollo moderno y dinámico para implementar experiencias web.
+La implementación sin encabezado renuncia a la administración de páginas y componentes, como es tradicional en las soluciones de pila completas, y se centra en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío por canales cruzados. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
 Esta guía le guiará por los temas más importantes para que al completarlo:
 
