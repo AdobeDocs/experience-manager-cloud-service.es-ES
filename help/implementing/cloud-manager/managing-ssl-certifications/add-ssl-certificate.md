@@ -1,21 +1,20 @@
 ---
-title: Añadir un certificado SSL - Administración de certificados SSL
-description: Añadir un certificado SSL - Administración de certificados SSL
-translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+title: 'Adición de un certificado SSL: administración de certificados SSL'
+description: 'Adición de un certificado SSL: administración de certificados SSL'
+exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-
-# Añadir un certificado SSL {#adding-an-ssl-certificate}
+# Adición de un certificado SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM como Cloud Service solo aceptará certificados OV (validación de organización) o EV (validación extendida). No se aceptarán los certificados DV (validación de dominio). Además, cualquier certificado debe ser un certificado X.509 TLS de una entidad de certificación de confianza (CA) con una clave privada RSA de 2048 bits que coincida.
+>AEM como Cloud Service solo aceptará certificados OV(Organization Validation) o EV(Extended Validation). No se aceptarán los certificados DV(Domain Validation). Además, cualquier certificado debe ser un certificado X.509 TLS de una entidad de certificación (CA) de confianza con una clave privada RSA de 2048 bits que coincida. AEM como Cloud Service aceptará certificados SSL comodín para un dominio.
 
-El certificado tarda unos días en proporcionarse y se recomienda que se aprovisione el certificado incluso con meses de anticipación. Consulte [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obtener más detalles.
+Un certificado tarda unos días en proporcionarse y se recomienda que se aprovisione el certificado incluso con meses de antelación. Consulte [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obtener más información.
 
 ## Formato de certificado {#certificate-format}
 
@@ -37,41 +36,41 @@ Siga los pasos a continuación para convertir el formato de sus archivos SSL a P
 
 ## Consideraciones importantes {#important-considerations}
 
-* Un usuario debe estar en la función Propietario de la empresa o Administrador de implementación para poder instalar un certificado SSL en Cloud Manager.
+* Un usuario debe tener la función Propietario empresarial o Administrador de implementación para poder instalar un certificado SSL en Cloud Manager.
 
-* En cualquier momento dado, Cloud Manager permitirá un máximo de 10 certificados SSL que se pueden asociar con uno o más entornos en el Programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario del Administrador de nube permitirá instalar hasta 50 certificados SSL en el programa con esta restricción.
+* En cualquier momento dado, Cloud Manager permitirá un máximo de 10 certificados SSL que se pueden asociar con uno o más entornos en todo el programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario de Cloud Manager permitirá instalar hasta 50 certificados SSL en el programa con esta restricción.
 
-## Añadir un certificado {#adding-a-cert}
+## Adición de un certificado {#adding-a-cert}
 
-Siga los pasos a continuación para agregar un certificado:
+Siga los pasos a continuación para añadir un certificado:
 
 1. Inicie sesión en Cloud Manager.
-1. Vaya a la pantalla **Entornos** desde la página **Información general**.
-1. Haga clic en **Certificados SSL** en el menú de navegación de la izquierda. En esta pantalla se mostrará una tabla con detalles de los certificados SSL existentes.
+1. Vaya a la pantalla **Environments** desde la página **Overview**.
+1. Haga clic en **Certificados SSL** en el menú de navegación de la izquierda. En esta pantalla se mostrará una tabla con detalles de cualquier certificado SSL existente.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
-1. Haga clic en **Añadir certificado SSL** para abrir el cuadro de diálogo **Añadir certificado SSL**.
+1. Haga clic en **Agregar certificado SSL** para abrir el cuadro de diálogo **Agregar certificado SSL**.
 
-   * Escriba un nombre para el certificado en **Nombre del certificado**. Puede ser cualquier nombre que le ayude a hacer referencia fácilmente a su certificado.
-   * Pegue la **cadena de certificados**, **clave privada** y **cadena de certificados** en sus respectivos campos. Utilice el icono de pegado a la derecha del cuadro de entrada.
+   * Escriba un nombre para el certificado en **Nombre del certificado**. Puede ser cualquier nombre que le ayude a hacer referencia al certificado fácilmente.
+   * Pegue el **Certificado**, **Clave privada** y la **Cadena de certificados** en sus respectivos campos. Utilice el icono de pegado a la derecha del cuadro de entrada.
 Los tres campos no son opcionales y deben incluirse.
 
       ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
 
       >[!NOTE]
-      >Se mostrarán todos los errores detectados. Debe corregir todos los errores antes de guardar el certificado. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre cómo solucionar errores comunes.
+      >Se mostrarán todos los errores detectados. Debe corregir todos los errores antes de guardar el certificado. Consulte [Errores de certificado](#certificate-errors) para obtener más información sobre la solución de errores comunes.
 
-1. Haga clic en **Guardar** para enviar el certificado. Verá que se muestra como una fila nueva en la tabla.
+1. Haga clic en **Save** para enviar el certificado. Verá que se muestra como una fila nueva en la tabla.
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Errores de certificado {#certificate-errors}
 
-### Corrección del pedido de certificado {#correct-certificate-order}
+### Orden de certificado correcto {#correct-certificate-order}
 
-El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto. Específicamente, los archivos de certificados intermedios deben terminar con el certificado raíz o el certificado más cercano a la raíz y estar en orden descendente desde el certificado `main/server` a la raíz.
+El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto. En concreto, los archivos de certificado intermedios deben finalizar con el certificado raíz o el certificado más cercano a la raíz y estar en orden descendente desde el certificado `main/server` hasta la raíz.
 
 Puede determinar el orden de los archivos intermedios mediante el siguiente comando:
 
@@ -84,7 +83,7 @@ Puede comprobar que la clave privada y el certificado `main/server` coinciden ut
 `openssl rsa -noout -modulus -in ssl.key | openssl md5`
 
 >[!NOTE]
->El resultado de estos dos comandos debe ser exactamente el mismo. Si no puede encontrar una clave privada coincidente en el certificado `main/server`, se le solicitará que vuelva a escribir la clave del certificado generando un nuevo CSR o solicitando un certificado actualizado a su proveedor SSL.
+>El resultado de estos dos comandos debe ser exactamente el mismo. Si no encuentra una clave privada coincidente en su certificado `main/server`, deberá volver a escribir el certificado generando un nuevo CSR o solicitando un certificado actualizado a su proveedor SSL.
 
 ### Fechas de validez del certificado {#certificate-validity-dates}
 
