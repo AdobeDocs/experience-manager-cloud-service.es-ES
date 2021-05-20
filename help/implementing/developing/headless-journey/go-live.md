@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1815'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->TRABAJO EN CURSO - La creación de este documento está en curso y no debe entenderse como completo o definitivo ni debe utilizarse con fines de producción.
+>OBSOLETO : este contenido borrador ha sido reemplazado por la nueva [documentación de Recorrido para desarrolladores sin encabezado.](/help/journey-headless/developer/overview.md)
 
 En esta parte del [AEM Recorrido para desarrolladores sin encabezado](overview.md), aprenda a implementar una aplicación sin encabezado en vivo tomando su código local en Git y moviéndolo a Cloud Manager Git para la canalización CI/CD.
 
@@ -73,7 +73,7 @@ Un entorno de AEM completo está formado por un Autor, una Publicación y un Dis
 
 * **El servicio Autor** es donde los usuarios internos crean, administran y previsualizan contenido.
 
-* **El servicio de publicación** se considera el entorno &quot;activo&quot; y es lo que los usuarios finales interactúan con él. El contenido, después de editarse y aprobarse en el servicio Autor, se distribuye al servicio Publicar . El patrón de implementación más común con AEM aplicaciones sin periféricos es tener la versión de producción de la aplicación conectada a un servicio de AEM Publish.
+* **El servicio de publicación** se considera el entorno &quot;activo&quot; y es normalmente lo que los usuarios finales interactúan con él. El contenido, después de editarse y aprobarse en el servicio Autor, se distribuye al servicio Publicar . El patrón de implementación más común con AEM aplicaciones sin periféricos es tener la versión de producción de la aplicación conectada a un servicio de AEM Publish.
 
 * **El** Dispatcher es un servidor web estático que se complementa con el módulo AEM Dispatcher. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
