@@ -3,13 +3,12 @@ title: Administre recursos digitales
 description: Obtenga información sobre varios métodos de edición y administración de recursos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: Administración de recursos,Publicación,Colaboración,Procesamiento de recursos
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
+source-wordcount: '4502'
 ht-degree: 11%
 
 ---
@@ -97,7 +96,7 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 
 1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y seleccione la clave `Enter`. La nueva etiqueta se guarda en [!DNL Experience Manager].
 
-   YouTube requiere que las etiquetas publiquen y que tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
+   YouTube requiere que las etiquetas se publiquen y que tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
 
    >[!NOTE]
    >
@@ -251,9 +250,7 @@ Además, desactive el botón de forzar eliminación mediante una superposición 
 
 1. Navegue a la ubicación de los recursos que desee eliminar.
 
-1. Seleccione el recurso y pulse o haga clic en el icono **[!UICONTROL Eliminar]** de la barra de herramientas.
-
-   ![delete_icon](assets/delete_icon.png)
+1. Seleccione el recurso y haga clic en **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) en la barra de herramientas.
 
 1. En el cuadro de diálogo de confirmación, haga clic en:
 
@@ -261,7 +258,7 @@ Además, desactive el botón de forzar eliminación mediante una superposición 
    * Seleccione **[!UICONTROL Eliminar]** para confirmar la acción:
 
       * Si el recurso no tiene referencias, se eliminará.
-      * Si el recurso tiene referencias, un mensaje de error le informa de que **Se hace referencia a uno o más recursos.** Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
+      * Si el recurso tiene referencias, un mensaje de error le informa de que **[!UICONTROL Se hace referencia a uno o más recursos]**. Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
 
    >[!NOTE]
    >
@@ -269,14 +266,11 @@ Además, desactive el botón de forzar eliminación mediante una superposición 
 
    >[!NOTE]
    >
-   >Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso.
-   >
-   >
-   >Además, desactive el botón de forzar eliminación mediante una superposición para impedir que los usuarios eliminen los recursos a los que se hace referencia y dejen los vínculos rotos.
+   >Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso. No se puede permitir la eliminación de los recursos a los que se hace referencia, ya que provoca la interrupción de los vínculos. Desactive el botón de eliminación forzada mediante una superposición.
 
 ## Descargar recursos {#download-assets}
 
-Consulte [Descargar recursos desde [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Consulte [descarga de recursos desde [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publicar o cancelar la publicación de recursos {#publish-assets}
 
@@ -522,7 +516,7 @@ Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono
 
 1. Descargue o imprima el PDF con las opciones de la parte superior derecha.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** en el Administrador de configuración y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
