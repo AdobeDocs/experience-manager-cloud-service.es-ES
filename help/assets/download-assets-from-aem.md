@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Administración de activos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '921'
 ht-degree: 4%
 
 ---
@@ -24,14 +24,14 @@ Los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de me
 
 Puede descargar recursos de Experience Manager mediante los métodos siguientes:
 
-* [interfaz de usuario del Experience Manager](#download-in-aem)
+* [interfaz de usuario del Experience Manager](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## Descargar recursos mediante la interfaz [!DNL Experience Manager] {#download-in-aem}
+## Descargar recursos mediante la interfaz [!DNL Experience Manager] {#download-assets}
 
-El servicio de descarga asincrónica ofrece un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan desde la interfaz de usuario en tiempo real. Los archivos grandes se descargan de forma asíncrona y se informa a los usuarios de la finalización mediante notificaciones del Experience Manager en la Bandeja de entrada. Consulte [explicación de la bandeja de entrada del Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html).
+El servicio de descarga asincrónica ofrece un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan desde la interfaz de usuario en tiempo real. [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se descarga el archivo original. Esta funcionalidad permite descargas más rápidas. Los archivos grandes se descargan asincrónicamente y [!DNL Experience Manager] notifica la finalización mediante notificaciones en la bandeja de entrada. Consulte [Understanding [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
 ![Descargar notificación](assets/download-notification.png)
 
@@ -51,7 +51,7 @@ Para descargar recursos, siga estos pasos:
 
    *Figura: Opciones del cuadro de diálogo Descargar.*
 
-1. En el cuadro de diálogo Descargar, seleccione las opciones de descarga que desee.
+1. En el cuadro de diálogo de descarga, seleccione las opciones de descarga que desee.
 
    | Opción Descargar | Descripción |
    |---|---|
