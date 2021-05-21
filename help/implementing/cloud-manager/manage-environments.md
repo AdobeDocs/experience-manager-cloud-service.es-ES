@@ -1,14 +1,13 @@
 ---
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 4%
 
 ---
-
 
 # Administración de entornos {#manage-environments}
 
@@ -63,7 +62,7 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
    >En caso de que aún no haya configurado la canalización que no es de producción, la pantalla *Overview* muestra la tarjeta desde la que puede crear la canalización que no es de producción.
 
 
-## Entorno de visualización {#viewing-environment}
+## Detalles del entorno {#viewing-environment}
 
 La tarjeta **Environments** de la página Información general enumera hasta tres entornos.
 
@@ -112,7 +111,6 @@ La opción Eliminar también está disponible si hace clic en **Details** en la 
 
 
 >[!NOTE]
->
 >Esta función no está disponible para entornos de producción/fase establecidos en un programa de producción configurado para fines de producción. Sin embargo, la función está disponible para entornos de producción/fase en un programa de espacio aislado.
 
 ## Administración del acceso {#managing-access}
@@ -190,5 +188,3 @@ Siga los pasos a continuación para anular la aplicación de una Lista de permit
 1. Identifique la fila en la que se muestra la regla de Lista de permitidos IP que desea anular la aplicación.
 1. Seleccione el **...** desde el extremo derecho de la fila.
 1. Seleccione la opción **Unapply** y confirme el envío.
-
-
