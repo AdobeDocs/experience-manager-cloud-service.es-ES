@@ -5,10 +5,9 @@ contentOwner: AG
 feature: Administración de activos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-translation-type: tm+mt
-source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
+source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -26,7 +25,6 @@ Los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de me
 Puede descargar recursos de Experience Manager mediante los métodos siguientes:
 
 * [interfaz de usuario del Experience Manager](#download-in-aem)
-* Interfaz de usuario de Asset Link Share
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -95,6 +93,6 @@ Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar 
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos DRM](drm.md)
->* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Win o Mac local](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
->* [Descargar recursos mediante el vínculo de recursos de Adobe desde las aplicaciones de Adobe Creative Cloud compatibles](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Win o Mac local](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
+* [Descargar recursos mediante el vínculo de recursos de Adobe desde las aplicaciones de Adobe Creative Cloud compatibles](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
