@@ -2,10 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-translation-type: tm+mt
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 2%
 
 ---
@@ -55,19 +54,17 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 ### Novedades de [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se descarga el archivo original. Esta mejora permite descargas más rápidas.
+* [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se descarga el archivo original. Esta mejora permite descargas más rápidas. Consulte [descargar recursos](/help/assets/download-assets-from-aem.md).
 
-* Cuando se descarga un recurso mediante la opción linkshare , ahora puede elegir descargar o no las representaciones. Anteriormente, se descargaban todas las representaciones de recursos.
-
-* Los administradores pueden configurar [!DNL Experience Manager] para eliminar el origen de los recursos después de realizar una ingesta masiva de recursos. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Al descargar un recurso mediante una opción de linkshare, ahora puede elegir descargar o no las representaciones. Anteriormente, se descargaban todas las representaciones de recursos. Consulte [opciones de descarga](/help/assets/download-assets-from-aem.md).
 
 * Al ejecutar una comprobación de estado para importar recursos de forma masiva, el Experience Manager ahora proporciona más información sobre los motivos de los errores. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Al importar recursos mediante la herramienta de importación masiva, los administradores ahora tienen la opción de eliminar los archivos de origen una vez realizada la importación correctamente. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-* Al editar un esquema de metadatos, un nuevo campo selector de ruta raíz permite a los administradores realizar la selección de forma rápida y sencilla, lo que reduce el tiempo de configuración.
+* Al editar un esquema de metadatos, un nuevo campo selector de ruta raíz permite a los administradores realizar la selección de forma rápida y sencilla. Esta mejora ayuda a reducir el tiempo de configuración de los metadatos.
 
-* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un archivo CSV. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden aprovechar un formato diferente actualizando el encabezado de la columna. Por ejemplo, agregue `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
+* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un archivo CSV. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden aprovechar un formato diferente actualizando el encabezado de la columna. Por ejemplo, agregue `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`. Consulte [importar metadatos](/help/assets/metadata-import-export.md).
 
 * Al examinar los recursos en la vista Columna, un indicador visual muestra el estado aprobado o rechazado de cada recurso.
 
