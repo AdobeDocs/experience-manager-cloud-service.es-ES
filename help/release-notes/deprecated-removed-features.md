@@ -1,14 +1,13 @@
 ---
 title: Funciones en desuso y eliminadas
 description: Notas de la versión específicas de las funciones en desuso y eliminadas de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
-translation-type: tm+mt
-source-git-commit: e6ad571b7428f6fb7a11907e752ba670a722057c
+exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 42%
+source-wordcount: '448'
+ht-degree: 41%
 
 ---
-
 
 # Funciones en desuso y eliminadas {#deprecated-and-removed-features}
 
@@ -44,4 +43,4 @@ Esta sección enumera las funciones y capacidades que se han eliminado de [!DNL 
 | [!DNL Dynamic Media] | Las integraciones anteriores con [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration) y [Dynamic Media Hybrid mode](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic) no están disponibles en [!DNL Experience Manager] como [!DNL Cloud Service]. | Utilice [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) proporcionado con [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [!DNL Sites] | Portal Director y componentes Portlet | Estas funciones quedaron obsoletas en [!DNL Experience Manager] 6.4 y ahora se han eliminado de [!DNL Experience Manager]. |
 | [!DNL Sites] | Importador de diseños | Esta capacidad se ha eliminado porque las secciones inmutables del repositorio [!DNL Experience Manager] no son accesibles durante la ejecución. |
-| [!DNL Assets] | [[!DNL Assets] El uso compartido de con el servicio principal de Experience Cloud Assets y Creative Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/configure-assets-cc-integration.html) no está disponible. | Para la integración con [!DNL Adobe Creative Cloud], utilice [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html). |
+| [!DNL Assets] | [!DNL Assets]El uso compartido de con el servicio principal de Experience Cloud Assets y Creative Cloud Services no está disponible. | Para la integración con [!DNL Adobe Creative Cloud], utilice [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html). |
