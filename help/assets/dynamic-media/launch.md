@@ -4,9 +4,9 @@ description: Obtenga información sobre la extensión de visores de Dynamic Medi
 feature: Informes del recurso
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
 workflow-type: tm+mt
-source-wordcount: '6661'
+source-wordcount: '6662'
 ht-degree: 9%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 9%
 
 ## ¿Qué es la integración de los visualizadores de Dynamic Media con Adobe Analytics y Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
 La nueva extensión *Dynamic Media Viewers* para Platform launch y visores de Dynamic Media 5.13 permite a los clientes de Adobe Analytics y de Platform launch utilizar eventos y datos específicos para los visualizadores en su configuración de Platform launch.
 
@@ -668,7 +670,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. En la página Configuración de IMC de Adobe, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Crear]**.
-1. En la página **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**, en la lista desplegable **[!UICONTROL Solución de nube]**, haga clic en **[!UICONTROL Experience Platform Launch]**.
+1. En la página **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**, en la lista desplegable **[!UICONTROL Solución de nube]**, haga clic en **[!UICONTROL Recopilación de datos de Experience Platform]**.
 1. Active **[!UICONTROL Crear nuevo certificado]** y, a continuación, en el campo de texto, introduzca cualquier valor significativo para el certificado. Por ejemplo, *AdobeLaunchIMSCert*. Haga clic en **[!UICONTROL Crear certificado]**.
 
    Se muestra el siguiente mensaje de información:
