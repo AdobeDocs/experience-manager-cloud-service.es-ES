@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 21%
+source-wordcount: '3242'
+ht-degree: 20%
 
 ---
 
@@ -166,6 +165,17 @@ Puede editar la siguiente Configuración de Dynamic Media tocando el icono **[!U
 
    Puede editar la siguiente Configuración avanzada tocando **[!UICONTROL Editar]** en el componente.
 
+* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
+
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+
+   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+   * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado y **[!UICONTROL RESS_IP]** está seleccionado en la lista desplegable **[!UICONTROL Ajuste preestablecido de imagen]**.
+
+   ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
 * **[!UICONTROL Texto alternativo]** : agregue un título a la imagen para los usuarios que tengan los gráficos desactivados.
@@ -179,7 +189,6 @@ Puede editar la siguiente Configuración de Dynamic Media tocando el icono **[!U
 * **[!UICONTROL Anchura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
 * **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
-
 
 #### Uso de vídeos {#when-working-with-video}
 
@@ -233,6 +242,18 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
    Puede editar la siguiente Configuración avanzada haciendo clic en **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Habilitar coincidencia de relación de aspecto]** : para permitir que Dynamic Media elija una representación de recorte inteligente con una relación de aspecto que coincida mejor con la relación de aspecto de la imagen original, seleccione esta opción.
+
+* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
+
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+
+   Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+
+   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+
+   * En Tipo de ajuste preestablecido, la opción **[!UICONTROL Recorte inteligente]** está seleccionada.
+
+   ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
