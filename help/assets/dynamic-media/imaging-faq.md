@@ -4,7 +4,7 @@ description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplica
 feature: Administración de recursos,Representaciones
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Mejoras en la última versión de imágenes inteligentes:
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Las imágenes inteligentes se incluyen en la licencia existente. Esta regla se aplica tanto a Dynamic Media Classic como a Dynamic Media Experience Manager (local, AMS y Experience Manager como Cloud Service).
+No. Las imágenes inteligentes se incluyen en la licencia existente. Esta regla es verdadera para Dynamic Media Classic o Experience Manager: Dynamic Media (local, AMS y Experience Manager como Cloud Service).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Para utilizar imágenes inteligentes, la cuenta de Experience Manager de Dynamic
 
 Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-Pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si actualmente utiliza un dominio genérico, puede solicitar el cambio a su propio dominio personalizado. Realice esta solicitud de transición cuando envíe un ticket de asistencia técnica.
+Pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si actualmente utiliza un dominio genérico, puede solicitar el cambio a su propio dominio personalizado. Realice esta solicitud de transición cuando envíe un ticket de asistencia técnica.
 
 El primer dominio personalizado no tiene coste adicional con una licencia de Dynamic Media.
 
@@ -265,7 +265,7 @@ Sí. Para desactivar la optimización de la red y el RGPD en su empresa, cree un
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? {#tuning-settings}
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que pueda establecer? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? {#minimum-maximum}
 
