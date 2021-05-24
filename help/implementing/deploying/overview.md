@@ -3,10 +3,9 @@ title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 feature: Implementación
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3350'
 ht-degree: 1%
 
 ---
@@ -101,7 +100,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Carpetas (añadir, modificar, quitar)
    * Plantillas editables (añadir, modificar, quitar)
    * Configuración según el contexto (cualquier configuración en `/conf`) (añadir, modificar, quitar)
-   * Scripts (los paquetes pueden déclencheur Instalar enlaces en varias etapas del proceso de instalación del paquete. Consulte la [documentación de Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre los enlaces de instalación, que incluyen usuarios permitidos para ejecutarlos).
+   * Scripts (los paquetes pueden déclencheur Instalar enlaces en varias etapas del proceso de instalación del paquete. Consulte la [documentación de Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sobre los enlaces de instalación. Tenga en cuenta que AEM CS actualmente utiliza Filevault versión 3.4.0, que limita los enlaces de instalación a los usuarios administradores, usuarios del sistema y miembros del grupo de administradores).
 
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y los detalles sobre la reestructuración de proyectos recomendada se pueden encontrar en la documentación de la [AEM 6.5.](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
