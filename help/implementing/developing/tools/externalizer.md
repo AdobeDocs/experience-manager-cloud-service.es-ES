@@ -1,14 +1,13 @@
 ---
 title: Externalización de direcciones URL
 description: El externalizador es un servicio OSGi que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
-translation-type: tm+mt
-source-git-commit: 4c584ceadaa358120d1d4b4cabd7e21ced814b31
+exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
+source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
-
 
 # Externalización de direcciones URL {#externalizing-urls}
 
@@ -20,7 +19,7 @@ Este artículo explica cómo configurar el servicio externalizador y cómo utili
 
 ## Comportamiento predeterminado del externalizador y cómo anular {#default-behavior}
 
-De forma predeterminada, el servicio externalizador ya tiene valores como `author-p12345-e6789.adobeaemcloud.com` y `publish-p12345-e6789.adobeaemcloud.com` configurados para que, sin ninguna intervención, la instalación de AEM como Cloud Service utilice su dominio personalizado.
+De forma predeterminada, el servicio externalizador tiene valores como `author-p12345-e6789.adobeaemcloud.com` y `publish-p12345-e6789.adobeaemcloud.com`.
 
 Para anular estos valores, utilice variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM como Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y configure las variables predefinidas `AEM_CDN_DOMAIN_AUTHOR` y `AEM_CDN_DOMAIN_PUBLISH` .
 
