@@ -2,7 +2,7 @@
 title: Desarrollo sin encabezado para AEM Sites as a Cloud Service
 description: Descubra cómo AEM como potentes funcionalidades sin objetivos de un Cloud Service, como modelos de contenido, fragmentos de contenido y la API de GraphQL, trabajan juntos para permitirle administrar sus experiencias de forma centralizada y servirlas en todos los canales.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -53,6 +53,6 @@ Hay varios recursos disponibles para que su usuario comience con AEM funciones s
 
 | Medio | Descripción | Tipo | Audience | Este. Hora |
 |---|---|---|---|---|
-| [Recorrido para desarrolladores sin objetivos](/help/implementing/developing/headless-journey/overview.md) | Para obtener una visión general de AEM características sin objetivos de la teoría de la entrada sin objetivos con su primer proyecto sin cabeza, comience aquí. | Guía | Desarrolladores | 1 hora |
+| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Para obtener una visión general de AEM características sin objetivos de la teoría de la entrada sin objetivos con su primer proyecto sin cabeza, comience aquí. | Guía | Desarrolladores | 1 hora |
 | [Guía de introducción sin encabezado](/help/implementing/developing/headless/getting-started/introduction.md) | Para obtener un breve resumen de las funciones principales AEM sin encabezado, consulte esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores | 20 minutos |
 | [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | Si prefiere un enfoque práctico, este tutorial se sumerge directamente en la creación de un proyecto sencillo sin encabezado. | Tutorial | Desarrolladores | 2 horas |
