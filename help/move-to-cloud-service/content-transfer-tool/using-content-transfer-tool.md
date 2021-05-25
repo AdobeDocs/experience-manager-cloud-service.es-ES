@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
+source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 43%
+source-wordcount: '2833'
+ht-degree: 41%
 
 ---
 
@@ -54,6 +54,8 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * Al utilizar `Amazon S3` o `Azure` como almacén de datos en el sistema de AEM de origen, el almacén de datos debe configurarse de modo que los blobs almacenados no se puedan eliminar (se recopilará la basura). Esto garantiza la integridad de los datos de índice y si no se configuran de esta manera, pueden producirse extracciones fallidas debido a la falta de integridad de estos datos de índice.
 
 * Si está utilizando índices personalizados, debe asegurarse de configurar los índices personalizados con el nodo `tika` antes de ejecutar la herramienta de transferencia de contenido. Consulte [Preparación de la nueva definición del índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) para obtener más información.
+
+* Si tiene intención de realizar recargas, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 ## Disponibilidad {#availability}
 
@@ -189,6 +191,7 @@ La herramienta de transferencia de contenido tiene una función que permite agre
 
 >[!NOTE]
 >Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
+>Además, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior. Complete los siguientes pasos:
 
