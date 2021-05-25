@@ -1,16 +1,18 @@
 ---
 title: Requisitos previos para la herramienta de transferencia de contenido
 description: Requisitos previos para la herramienta de transferencia de contenido
-source-git-commit: ebe12a71df610a68c43048667136e331c1bd8f86
+source-git-commit: f70959efd9d0382c083ac05b9ccd63cf79947bc2
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 1%
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
 # Requisitos previos para la herramienta de transferencia de contenido {#prerequisites}
 
-En la tabla siguiente se resumen los requisitos previos para utilizar la herramienta de transferencia de contenido. Revise todas las consideraciones enumeradas a continuación:
+En la tabla siguiente se resumen los requisitos previos para utilizar la herramienta de transferencia de contenido.
+
+Revise todas las consideraciones enumeradas a continuación:
 
 | Consideraciones | ¿Qué es compatible actualmente? |
 |--- |--- |
@@ -18,3 +20,7 @@ En la tabla siguiente se resumen los requisitos previos para utilizar la herrami
 | Tamaño del almacén de segmentos | Actualmente, la herramienta de transferencia de contenido admite hasta 83 GB en *Author* y 31 GB en *Publish*. |
 | Tamaño total del repositorio de contenido <br>*(almacén de contenido + almacén de datos)* | La herramienta de transferencia de contenido está diseñada para transferir contenido de hasta 10 TB. Actualmente no se admite cualquier valor superior a 10 TB. Cree un ticket de asistencia con el Servicio de atención al cliente de Adobe para analizar las opciones de contenido de más de 10 TB. |
 | Contenido en rutas inmutables | La herramienta de transferencia de contenido no funciona para migrar el contenido en rutas inmutables como `“/etc”`. <br>Consulte  [Reestructuración común del repositorio ](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para obtener más información sobre los modelos de flujo de trabajo y reestructuración de repositorios. |
+
+## Siguientes {#whats-next}
+
+Una vez que haya revisado los requisitos previos, ahora puede aprender a ejecutar la herramienta de transferencia de contenido. Consulte [Uso de la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) para obtener más información.
