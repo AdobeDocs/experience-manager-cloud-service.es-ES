@@ -4,8 +4,7 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Administración de recursos,Cargar
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-translation-type: tm+mt
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -129,7 +128,7 @@ El importador masivo de recursos puede gestionar un gran número de recursos de 
 
 Para cargar un mayor número de archivos, utilice uno de los siguientes métodos. Además, consulte los [casos de uso y métodos](#upload-methods-comparison)
 
-* [API de carga de recursos](developer-reference-material-apis.md#asset-upload-technical): Utilice un script de carga personalizado o una herramienta que aproveche las API para agregar un control adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de archivos), si es necesario.
+* [API de carga de recursos](developer-reference-material-apis.md#asset-upload): Utilice un script de carga personalizado o una herramienta que aproveche las API para agregar un control adicional de los recursos (por ejemplo, traducir metadatos o cambiar el nombre de archivos), si es necesario.
 * [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícelo para cargar carpetas anidadas disponibles localmente.
 * [Herramienta](#asset-bulk-ingestor) de ingesta masiva: Se utiliza para la ingesta de grandes cantidades de recursos, ya sea ocasionalmente o inicialmente al implementar  [!DNL Experience Manager].
 
@@ -210,7 +209,7 @@ Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del 
 
 ## Cargar o ingerir recursos mediante API {#upload-using-apis}
 
-Los detalles técnicos de las API de carga y el protocolo, así como los vínculos al SDK de código abierto y a los clientes de muestra, se proporcionan en la sección [carga de recursos](developer-reference-material-apis.md#asset-upload-technical) de la referencia del desarrollador.
+Los detalles técnicos de las API de carga y el protocolo, así como los vínculos al SDK de código abierto y a los clientes de muestra, se proporcionan en la sección [carga de recursos](developer-reference-material-apis.md#asset-upload) de la referencia del desarrollador.
 
 ## Sugerencias, prácticas recomendadas y limitaciones {#tips-limitations}
 
@@ -232,5 +231,5 @@ Los detalles técnicos de las API de carga y el protocolo, así como los víncul
 >* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentación.](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload-technical)
+>* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)
 
