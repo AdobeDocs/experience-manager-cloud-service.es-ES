@@ -1,16 +1,22 @@
 ---
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
-description: 'Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service. '
-translation-type: tm+mt
-source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
+source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
 workflow-type: tm+mt
-source-wordcount: '1671'
-ht-degree: 98%
+source-wordcount: '1728'
+ht-degree: 95%
 
 ---
 
-
 # Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
+
+>[!CONTEXTUALHELP]
+>id="intro_aem_cloudservice_architecture"
+>title="Introducción a AEM as a Cloud Service Architecture"
+>abstract="En esta pestaña, puede ver la nueva arquitectura de AEM como Cloud Service y comprender los cambios. AEM ha resultado en una arquitectura dinámica con un número variable de imágenes, por lo que es importante tardar un tiempo en comprender.la arquitectura de la nube"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Información general sobre la arquitectura"
+
 
 Adobe Experience Manager (AEM) as a Cloud Service ha producido cambios en la arquitectura.
 
@@ -71,7 +77,7 @@ Hay tres tipos de entornos disponibles con AEM como Cloud Service:
 
 * **Entorno de desarrollo**: permite a los desarrolladores implementar aplicaciones de AEM en las mismas condiciones de tiempo de ejecución que los entornos de ensayo y producción.
 
-   Consulte [Administración de Entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obtener más detalles.
+   Consulte [Administración de entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) para obtener más información.
 
 ## Programas {#programs}
 
