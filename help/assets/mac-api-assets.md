@@ -2,13 +2,12 @@
 title: API de HTTP de Assets
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en [!DNL Experience Manager Assets].
 contentOwner: AG
-feature: Assets HTTP API,APIs
+feature: API HTTP de recursos, API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-translation-type: tm+mt
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -28,7 +27,7 @@ La respuesta de API es un archivo JSON para algunos tipos MIME y un código de r
 
 >[!NOTE]
 >
->Todas las llamadas a la API relacionadas con la carga o actualización de recursos o binarios en general (como las representaciones) quedan obsoletas para la implementación [!DNL Experience Manager] como [!DNL Cloud Service]. Para cargar binarios, utilice [API de carga binaria directa](developer-reference-material-apis.md#asset-upload-technical) en su lugar.
+>Todas las llamadas a la API relacionadas con la carga o actualización de recursos o binarios en general (como las representaciones) quedan obsoletas para la implementación [!DNL Experience Manager] como [!DNL Cloud Service]. Para cargar binarios, utilice [API de carga binaria directa](developer-reference-material-apis.md#asset-upload) en su lugar.
 
 ## Fragmentos de contenido {#content-fragments}
 
