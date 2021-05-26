@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API, API HTTP de Assets
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
+source-git-commit: 5243b02a8168da82674989b9f5abb65af6613096
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1420'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 
 ## Carga de recursos {#asset-upload}
 
-En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos en el almacenamiento en la nube mediante la API HTTP. Los pasos para cargar un archivo binario son:
+En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos en el almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud](#initiate-upload) HTTP. Informa a la implementación [!DNL Experience Manage]r de su intención de cargar un nuevo binario.
 1. [POST el contenido del ](#upload-binary) binario a uno o más URI proporcionados por la solicitud de inicio.
