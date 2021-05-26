@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3226'
 ht-degree: 20%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 20%
 
 Para añadir la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar directamente en la página el componente **Dynamic Media**, **Interactive Media**, **Panoramic Media** o **Video 360 Media**. Introduzca el modo Diseño y active los componentes de Dynamic Media. A continuación, agregue estos componentes a la página y agregue recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
-Los recursos de Dynamic Media se añaden directamente a la página si utiliza Experience Manager como WCM. Si utiliza un tercero para su WCM, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/dynamic-media/embed-code.md) sus recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
+Los recursos de Dynamic Media se agregan directamente a la página si utiliza [!DNL Adobe Experience Manager] como WCM. Si utiliza un tercero para su WCM, [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) o [incruste](/help/assets/dynamic-media/embed-code.md) sus recursos. Para ver un sitio web interactivo de terceros, consulte [Distribución de imágenes optimizadas en un sitio interactivo](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->Asegúrese de publicar los recursos antes de agregarlos a las páginas en el Experience Manager. Consulte [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+>Asegúrese de publicar los recursos antes de agregarlos a las páginas en [!DNL Experience Manager]. Consulte [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Adición de un componente Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios p
 
 **Para añadir un componente de Dynamic Media a una página:**
 
-1. En el Experience Manager, abra la página a la que desee añadir el componente Dynamic Media.
+1. En [!DNL Experience Manager], abra la página donde desee agregar el componente Dynamic Media.
 1. En el panel izquierdo, pulse el icono **[!UICONTROL Componentes]** y, a continuación, filtre para Dynamic Media.
 
    Si no hay ninguna lista de componentes de Dynamic Media disponible, es probable que deba habilitar los componentes de Dynamic Media que desee utilizar. Consulte [Habilitación de componentes de Dynamic Media](#enabling-dynamic-media-components).
@@ -55,7 +55,7 @@ Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios p
 
 Si no hay componentes de Dynamic Media disponibles para agregarlos a una página, es probable que deba habilitar los componentes que desee utilizar.
 
-1. En el Experience Manager, abra la página a la que desee añadir el componente Dynamic Media.
+1. En [!DNL Experience Manager], abra la página donde desee agregar el componente Dynamic Media.
 1. A la izquierda de la barra de herramientas, cerca de la parte superior de la página, pulse el icono Información de página y, a continuación, pulse **[!UICONTROL Editar plantilla]** en la lista desplegable.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ Los componentes de Dynamic Media disponibles son los siguientes:
 
 >[!NOTE]
 >
->Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de su uso. Una vez que estén disponibles en el editor de plantillas, puede añadir los componentes a la página como lo haría con cualquier otro componente de Experience Manager.
+>Estos componentes no están disponibles de forma predeterminada y deben estar disponibles mediante el editor de plantillas antes de su uso. Una vez que estén disponibles en el editor de plantillas, puede añadir los componentes a la página como lo haría con cualquier otro componente [!DNL Experience Manager].
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Puede editar la siguiente Configuración de Dynamic Media tocando el icono **[!U
 
    Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+   Tenga en cuenta que se omiten los valores del RGPD de imágenes inteligentes de Dynamic Media [!DNL Experience Manager].
 
    La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
    * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado y **[!UICONTROL RESS_IP]** está seleccionado en la lista desplegable **[!UICONTROL Ajuste preestablecido de imagen]**.
@@ -247,7 +247,7 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
 
    Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+   Tenga en cuenta que se omiten los valores del RGPD de imágenes inteligentes de Dynamic Media [!DNL Experience Manager].
 
    La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
 
