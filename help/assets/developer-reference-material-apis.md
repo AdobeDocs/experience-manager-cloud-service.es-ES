@@ -2,16 +2,15 @@
 title: Referencias del desarrollador para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: APIs,Assets HTTP API
+feature: API, API HTTP de Assets
 role: Developer,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1406'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] casos de uso para desarrolladores, API y material de referencia  {#assets-cloud-service-apis}
 
@@ -65,7 +64,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | Copiar carpeta | ✓ | ✓ | - | ✓ | - | - |
 | Mover carpeta | ✓ | ✓ | - | ✓ | - | - |
 
-## Carga de recursos {#asset-upload-technical}
+## Carga de recursos {#asset-upload}
 
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos en el almacenamiento en la nube mediante la API HTTP. Los pasos para cargar un archivo binario son:
 
@@ -74,6 +73,9 @@ En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directament
 1. [Envíe una ](#complete-upload) solicitud HTTP para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 El método proporciona una gestión escalable y más eficaz de las cargas de recursos. Las diferencias con respecto a [!DNL Experience Manager] 6.5 son:
 
