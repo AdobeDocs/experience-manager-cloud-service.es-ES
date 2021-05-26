@@ -3,10 +3,10 @@ title: Trabajar con selectores
 description: Obtenga información sobre los métodos que puede utilizar para seleccionar recursos para imágenes interactivas, vídeos interactivos y banners de carrusel en Dynamic Media.
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 14%
+source-wordcount: '731'
+ht-degree: 18%
 
 ---
 
@@ -16,13 +16,13 @@ Al trabajar con una imagen interactiva, un vídeo interactivo o un titular de ca
 
 En este tema se explica cómo utilizar los selectores de producto, sitio y recurso, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
 
-Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear imágenes y vídeos interactivos.
+Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear vídeos e imágenes interactivos.
 
 Por ejemplo, en este titular de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida. Utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando cree una diapositiva.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Cuando selecciona (en lugar de introducir manualmente) a dónde se dirigen los puntos interactivos o los mapas de imagen, está utilizando el selector. El selector de sitio solo funciona si es cliente de Adobe Experience Manager Sites. El selector de productos también requiere Experience Manager Commerce.
+Cuando selecciona (en lugar de introducir manualmente) a dónde se dirigen los puntos interactivos o los mapas de imagen, está utilizando el selector. El selector de sitio solo funciona si usted es [!DNL Adobe Experience Manager Sites] cliente. El selector de productos también requiere [!DNL Experience Manager Commerce].
 
 ## Selección de productos en Dynamic Media {#selecting-products}
 
@@ -42,11 +42,11 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Para cambiar el lugar donde el Experience Manager busca los datos del producto, pulse **[!UICONTROL Examinar]** y vaya a otra carpeta.
+   Para cambiar el lugar donde [!DNL Experience Manager] busca los datos del producto, pulse **[!UICONTROL Examinar]** y vaya a otra carpeta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque **[!UICONTROL Ordenar por]** para cambiar si el Experience Manager ordena por más reciente a más antiguo o de más antiguo a más reciente.
+   Toque **[!UICONTROL Ordenar por]** para cambiar si [!DNL Experience Manager] se ordena por más reciente a más antiguo o de más antiguo a más reciente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
 ## Selección de sitios en Dynamic Media {#selecting-sites}
 
-Utilice el selector del sitio para elegir una página web cuando desee que un punto interactivo o un mapa de imagen se vincule a una página web que se administra dentro de sitios de Experience Manager.
+Utilice el selector del sitio para elegir una página web cuando desee que un punto interactivo o mapa de imagen vincule a una página web que se administra en [!DNL Experience Manager] sitios.
 
 1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
@@ -72,7 +72,7 @@ Utilice el selector del sitio para elegir una página web cuando desee que un pu
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Pulse el icono **[!UICONTROL Selector de sitio]** (carpeta con lupa) y navegue a una página de los sitios de Experience Manager a la que desee vincular el punto interactivo o el mapa de imagen.
+1. Pulse el icono **[!UICONTROL Selector de sitio]** (carpeta con lupa) y navegue a una página de los sitios de a la que desee vincular el punto interactivo o el mapa de imagen.[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ Utilice el selector del sitio para elegir una página web cuando desee que un pu
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En el modo **[!UICONTROL Vista previa]** si toca el punto interactivo o el mapa de imagen, puede navegar a la página del sitio Experience Manager que especificó.
+1. En el modo **[!UICONTROL Vista previa]** si toca el punto interactivo o el mapa de imagen, puede navegar a la página del sitio [!DNL Experience Manager] que especificó.
 
 ## Selección de recursos en Dynamic Media {#selecting-assets}
 
@@ -97,7 +97,7 @@ Consulte también [Selector de recursos](/help/assets/search-assets.md#asset-sel
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Para cambiar el lugar donde el Experience Manager navega por los recursos, vaya a otra carpeta en el campo **[!UICONTROL Path]**.
+   Puede cambiar el lugar donde [!DNL Experience Manager] busca los recursos navegando a otra carpeta en el campo **[!UICONTROL Path]**.
 
    Toque **[!UICONTROL Collection]** para buscar solo recursos dentro de las colecciones.
 
