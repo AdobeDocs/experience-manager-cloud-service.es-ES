@@ -4,10 +4,9 @@ description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dyn
 feature: Vídeo de RV 360
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -41,7 +40,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit
 
 ## Carga de recursos para su uso con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
-Los 360 recursos de vídeo que se cargan en Experience Manager se etiquetan como **Multimedia** en una página de Asset, de forma similar al recurso de vídeo normal.
+Los 360 recursos de vídeo cargados en [!DNL Experience Manager] se etiquetan como **Multimedia** en una página de Asset, de forma similar al recurso de vídeo normal.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreviewRecurso de vídeo cargado 360 que se ve en la vista de tarjeta. El recurso está etiquetado como multimedia.*
@@ -100,7 +99,7 @@ Consulte también [Edición de ajustes preestablecidos de visualizador](/help/as
 Cuando esté satisfecho con el vídeo 360, puede publicarlo.
 
 Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
-Consulte [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
+Consulte [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas [!DNL Experience Manager Sites].
 Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Para previsualizar los vídeos 360**
@@ -136,5 +135,5 @@ Para usar el vídeo 360, debe publicarlo. Al publicar un vídeo de 360 se activa
 
 Consulte [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeos de 360.
 Consulte también [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md).
-Consulte también [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
+Consulte también [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas [!DNL Experience Manager Sites].
 Consulte también [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
