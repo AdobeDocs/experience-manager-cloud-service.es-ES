@@ -4,10 +4,10 @@ description: Un perfil de imagen o un perfil de vídeo es una fórmula para las 
 feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 2%
+source-wordcount: '1269'
+ht-degree: 1%
 
 ---
 
@@ -42,13 +42,13 @@ Por ejemplo, supongamos que ha creado un perfil de imagen de Dynamic Media y lo 
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Aunque no haya editado un perfil de imagen o un perfil de vídeo, o bien ya haya aplicado un perfil de imagen o un perfil de vídeo, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en Adobe Experience Manager. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en [!DNL Adobe Experience Manager]. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
 >[!NOTE]
 >
->Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, habilite el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
+>Si está realizando una migración masiva de recursos de Dynamic Media Classic a [!DNL Experience Manager], habilite el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
 >
 >El agente de publicación de migración debe estar deshabilitado en el servidor de Dynamic Media para que el flujo de trabajo de reprocesamiento funcione según lo esperado.
 
@@ -59,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **Para volver a procesar los recursos de Dynamic Media en una carpeta:**
-1. En Experience Manager, en la página Recursos, vaya a la carpeta Recursos que tenga un perfil de imagen o un perfil de vídeo asignado y para la que desee aplicar el **Scene7: Volver a procesar el flujo de trabajo de Asset**.
+1. En [!DNL Experience Manager], en la página Recursos, vaya a la carpeta Recursos que tenga un perfil de imagen o un perfil de vídeo asignado y para la que desee aplicar el **Scene7: Volver a procesar el flujo de trabajo de Asset**.
 
    Las carpetas que tienen asignado un perfil de imagen o un perfil de vídeo tienen el nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
 
@@ -82,15 +82,15 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Haga clic en **[!UICONTROL Start]** y, a continuación, haga clic en **[!UICONTROL Confirm]**.
 
-   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal del Experience Manager, haga clic en **[!UICONTROL Tools > Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
+   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal [!DNL Experience Manager], haga clic en **[!UICONTROL Tools > Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño de lote óptimo se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor superior significa que tiene muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios 100, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes, Adobe recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño de lote óptimo se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor superior significa que tiene muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en activos [!DNL Experience Manager] durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios 100, pero nunca más de 1000. Si el tamaño medio de archivo es de cientos de megabytes, Adobe recomienda reducir el tamaño del lote hasta 10.
 
 **Para ajustar opcionalmente el tamaño del lote del flujo de trabajo de reprocesamiento:**
 
-1. En Experience Manager, pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
+1. En [!DNL Experience Manager], pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
 1. En la página Modelos de flujo de trabajo , en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 
    ![Página Modelos de flujo de trabajo con Scene7: Flujo de trabajo de reprocesamiento de recursos seleccionado en Vista de tarjeta](/help/assets/dynamic-media/assets/reprocess-assets7.png)
