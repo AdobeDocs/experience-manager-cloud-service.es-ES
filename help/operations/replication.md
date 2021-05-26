@@ -2,10 +2,9 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-translation-type: tm+mt
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 2%
 
 ---
@@ -83,7 +82,7 @@ También puede conseguirlo creando un modelo de flujo de trabajo que utilice el 
 
 * `replicateAsParticipant` (valor booleano, predeterminado:  `false`). Si se configura como `true`, la replicación utiliza el `userid` del principal que realizó el paso del participante.
 * `enableVersion` (valor booleano, predeterminado:  `true`). Este parámetro determina si se crea una nueva versión tras la replicación.
-* `agentId` (valor de cadena, predeterminado significa que se utilizan todos los agentes habilitados).
+* `agentId` (valor de cadena, predeterminado significa que se utilizan todos los agentes habilitados). Se recomienda ser explícito sobre agentId; por ejemplo, si se establece el valor: publicar
 * `filters` (valor de cadena, predeterminado significa que todas las rutas están activadas). Los valores disponibles son:
    * `onlyActivated` - sólo se activarán las rutas que no estén marcadas como activadas.
    * `onlyModified` - activar solo las rutas que ya están activadas y que tienen una fecha de modificación posterior a la fecha de activación.
