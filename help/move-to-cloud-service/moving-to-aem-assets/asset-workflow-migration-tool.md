@@ -1,14 +1,13 @@
 ---
 title: Herramienta de Migración del flujo de trabajo de recursos
-description: 'Herramienta de Migración del flujo de trabajo de recursos '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: Herramienta de Migración del flujo de trabajo de recursos
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: a0fb2714bc74c620d90153746930757301e62fd7
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 74%
 
 ---
-
 
 # Herramienta de Migración del flujo de trabajo de recursos {#asset-workflow-migration}
 
@@ -33,6 +32,8 @@ Los flujos de trabajo tienen distintos niveles de compatibilidad de migración. 
 * `NUI_MIGRATED`: Se ha migrado a un [perfil de procesamiento para Asset Compute Service](/help/assets/asset-microservices-configure-and-use.md).
 * `UNSUPPORTED`: Actualmente no es compatible en [!DNL Experience Manager Assets] as a Cloud Service.
 
-## Instalación de la Herramienta de Migración del flujo de trabajo de recursos {#installing-tool}
+## Usar la herramienta de migración del flujo de trabajo de recursos {#use-workflow-migrator}
 
-Consulte el documento **[Recursos de Git: AEM Assets as a Cloud Service: migración del flujo de trabajo](https://github.com/adobe/aem-cloud-migration)** para obtener más información sobre la instalación y la creación de código desde el origen.
+* **[!DNL Adobe I/O]CLI**: Adobe recomienda utilizar la herramienta de migración del flujo de trabajo de recursos mediante  `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] como complemento de refactorización de  [!DNL Cloud Service] código para la  [!DNL Adobe I/O] CLI). Para obtener información sobre cómo instalar y utilizar el complemento, consulte [Git resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
+
+* **Utilidad** independiente: La herramienta de migración del flujo de trabajo de recursos también se puede ejecutar como una utilidad independiente. Para obtener más información sobre la instalación y la creación de código desde el origen, consulte **[Git resource: [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - workflow migration](https://github.com/adobe/aem-cloud-migration)**.
