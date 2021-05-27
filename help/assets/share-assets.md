@@ -1,23 +1,22 @@
 ---
-title: Compartir recursos, carpetas y colecciones como un vínculo
-description: En este artículo se describe cómo compartir recursos, carpetas y colecciones dentro de [!DNL Experience Manager Assets] como un hipervínculo.
+title: Distribuir y compartir recursos, carpetas y colecciones
+description: Distribuya sus recursos digitales mediante métodos como compartir como vínculo, descargar y a través de [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
-feature: Asset Management,Collaboration,Asset Distribution
+feature: Administración de activos,Colaboración,Distribución de activos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
-
 
 # Compartir y distribuir recursos administrados en [!DNL Experience Manager] {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] permite compartir recursos, carpetas y colecciones con miembros de su organización y entidades externas, incluidos socios y proveedores. Utilice los siguientes métodos para compartir recursos de [!DNL Experience Manager Assets] como [!DNL Cloud Service]:
 
-* Compartir como vínculo.
+* [Compartir como vínculo](#sharelink).
 * [Descargue ](/help/assets/download-assets-from-aem.md) recursos y comparta por separado.
 * Compartir con [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html).
 * Compartir usando [[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
@@ -27,10 +26,12 @@ ht-degree: 2%
 
 Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos. Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets].
 
+![Cuadro de diálogo Uso compartido de vínculos](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* Necesita el permiso Editar ACL en la carpeta o el recurso que desea compartir como vínculo.
->* Antes de compartir un vínculo con los usuarios, asegúrese de que el [correo electrónico saliente esté habilitado](/help/implementing/developing/introduction/development-guidelines.md#sending-email). De lo contrario, se produce un error.
+>* Antes de compartir un vínculo con los usuarios, [habilite los correos electrónicos salientes](/help/implementing/developing/introduction/development-guidelines.md#sending-email). De lo contrario, se produce un error.
 
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desea compartir como vínculo.
