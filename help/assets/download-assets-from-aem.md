@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Administración de activos
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '1016'
 ht-degree: 4%
 
 ---
 
 # Descargar recursos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-Puede descargar recursos, incluidas representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados están agrupados en un archivo ZIP. El archivo ZIP comprimido tiene un tamaño máximo de 1 GB para el trabajo de exportación. Se permite un máximo de 500 activos totales por trabajo de exportación.
+Puede descargar recursos, incluidas representaciones estáticas y dinámicas. También puede enviar correos electrónicos con vínculos a recursos directamente desde [!DNL Adobe Experience Manager Assets]. Los recursos descargados están agrupados en un archivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ Los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de me
 Puede descargar recursos de Experience Manager mediante los métodos siguientes:
 
 * [interfaz de usuario del Experience Manager](#download-assets)
+* [Vínculos compartidos](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [Aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
@@ -63,6 +64,16 @@ Para descargar recursos, siga estos pasos:
    | **[!UICONTROL Representaciones dinámicas]** | Seleccione esta opción para generar una serie de representaciones alternativas en tiempo real. Al seleccionar esta opción, también puede seleccionar las representaciones que desea crear dinámicamente seleccionando una de las [Ajustes preestablecidos de imagen](/help/assets/dynamic-media/image-presets.md). <br>Además, puede seleccionar el tamaño y la unidad de medida, el formato, el espacio de color, la resolución y cualquier modificador de imagen opcional, como invertir la imagen. La opción solo está disponible si tiene [!DNL Dynamic Media] habilitado. |
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
+
+## Descargar recursos compartidos mediante el uso compartido de vínculos {#link-share-download}
+
+El uso compartido de recursos mediante un vínculo es una forma práctica de ponerlo a disposición de las personas interesadas sin que tengan que iniciar sesión primero en [!DNL Assets]. Para generar una URL para compartir recursos, utilice la funcionalidad [Compartir vínculos](/help/assets/share-assets.md#sharelink).
+
+Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asincrónico que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para descargas muy grandes, la descarga se divide en archivos de 100 GB de tamaño.
+
+La bandeja de entrada muestra el estado de procesamiento de cada archivo. Una vez completado el procesamiento, puede descargar los archivos de la bandeja de entrada.
+
+![Descargar bandeja de entrada](assets/download-inbox.png)
 
 ## Habilitar el servlet de descarga de recursos {#enable-asset-download-servlet}
 
