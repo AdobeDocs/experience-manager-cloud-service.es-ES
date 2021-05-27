@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -61,9 +61,9 @@ La siguiente versión (2021.6.0) se publicará el 24 de junio de 2021.
 * Al cargar archivos muy grandes, se bloquea [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Las opciones de la barra de herramientas son diferentes cuando se selecciona la misma colección dentro de una carpeta y cuando se selecciona desde un resultado de búsqueda. (CQ-4321406)
 
-#### Novedades de Dynamic Media {#what-is-new-dm}
+#### Novedades de [!DNL Dynamic Media] {#what-is-new-dm}
 
-* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md).
+* La proporción de píxeles de dispositivos de imágenes inteligentes (DPR) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Consulte [preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ La siguiente versión (2021.6.0) se publicará el 24 de junio de 2021.
    * Asia-Pacífico 19 de julio de 2021.
 
 
-* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en la entrega de Dynamic Media (modificador de URL fmt).
+* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en el envío [!DNL Dynamic Media] (modificador de URL de fmt).
 
    >[!NOTE]
    >
