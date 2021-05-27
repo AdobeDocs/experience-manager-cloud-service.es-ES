@@ -6,11 +6,10 @@ breadcrumb-title: Guía de creación
 user-guide-description: Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service.
 feature: 'Creación  '
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 74%
+source-wordcount: '310'
+ht-degree: 73%
 
 ---
 
@@ -21,24 +20,25 @@ ht-degree: 74%
 + [Cambios importantes en AEM Sites en AEM Cloud Service](sites-cloud-changes.md)
 + Creación {#authoring}
    + Introducción {#getting-started}
-      + [Guía rápida para la creación de páginas](authoring/getting-started/quick-start.md)
-      + [Conceptos sobre la creación](authoring/getting-started/concepts.md)
+      + [Guía rápida de introducción para la creación de páginas](authoring/getting-started/quick-start.md)
+      + [Conceptos de creación](authoring/getting-started/concepts.md)
       + [Gestión básica](authoring/getting-started/basic-handling.md)
-      + [Buscar](authoring/getting-started/search.md)
+      + [Búsqueda  ](authoring/getting-started/search.md)
       + [Configuración del entorno de cuenta](authoring/getting-started/account-environment.md)
-      + [Su bandeja de entrada](authoring/getting-started/inbox.md)
+      + [Su bandeja de entrada  ](authoring/getting-started/inbox.md)
       + [Métodos abreviados del teclado](authoring/getting-started/keyboard-shortcuts.md)
    + Aspectos básicos de la creación {#fundamentals}
       + [Entorno y herramientas](authoring/fundamentals/environment-tools.md)
       + [Adición de anotaciones de página](authoring/fundamentals/annotations.md)
-      + [Creación y organización de páginas](authoring/fundamentals/organizing-pages.md)
+      + [Crear y organizar páginas](authoring/fundamentals/organizing-pages.md)
       + [Edición del contenido de una página](authoring/fundamentals/editing-content.md)
       + [Editor de texto enriquecido](authoring/fundamentals/rich-text-editor.md)
       + [Propiedades de página](authoring/fundamentals/page-properties.md)
-      + [Publicación de páginas](authoring/fundamentals/publishing-pages.md)
+      + [Vista previa del contenido](authoring/fundamentals/previewing-content.md)
+      + [Publicar páginas](authoring/fundamentals/publishing-pages.md)
       + [Fragmentos de contenido](authoring/fundamentals/content-fragments.md)
       + [Fragmentos de experiencias](authoring/fundamentals/experience-fragments.md)
-      + [Exportar a CSV](authoring/fundamentals/csv-export.md)
+      + [Exportar a CSV  ](authoring/fundamentals/csv-export.md)
       + [Componentes](authoring/fundamentals/components.md)
       + [Creación para dispositivos móviles](authoring/fundamentals/mobile.md)
       + [Crear contenido accesible (Conformidad con WCAG 2.1)](authoring/fundamentals/accessible-content.md)
@@ -48,10 +48,10 @@ ht-degree: 74%
       + [Plantillas de página](authoring/features/templates.md)
       + [Sistema de estilos](authoring/features/style-system.md)
       + [Versiones de página](authoring/features/page-versions.md)
-      + [Diferencias de página](authoring/features/page-diff.md)
-      + [Consola Componentes](authoring/features/components-console.md)
-      + [Diseño adaptable](authoring/features/responsive-layout.md)
-      + [Uso de etiquetas](authoring/features/tags.md)
+      + [Diferencias de página  ](authoring/features/page-diff.md)
+      + [La consola Componentes](authoring/features/components-console.md)
+      + [Diseño adaptable ](authoring/features/responsive-layout.md)
+      + [Uso de etiquetas  ](authoring/features/tags.md)
       + [Activación de las funciones progresivas de la aplicación web](authoring/features/enable-pwa.md)
    + Proyectos {#projects}
       + [Uso de proyectos](authoring/projects/overview.md)
@@ -71,8 +71,8 @@ ht-degree: 74%
       + [Participación en flujos de trabajo](authoring/workflows/participating.md)
    + Personalización {#personalization}
       + [Información general de personalización](authoring/personalization/overview.md)
-      + [Vista previa de páginas mediante datos de ContextHub](authoring/personalization/contexthub.md) 
-      + [Creación de contenido de destino con el modo Targeting](authoring/personalization/targeted-content.md) 
+      + [Obtención de vista previa de páginas mediante los datos de ContextHub](authoring/personalization/contexthub.md)
+      + [Creación de contenido orientado mediante el modo de Orientación](authoring/personalization/targeted-content.md)
       + [Uso del contenido de destino de varios sitios](authoring/personalization/multisite-targeted-content.md)
       + [Estructurar la administración de diversos sitios para el contenido segmentado](authoring/personalization/multisite-structure.md)
       + [Administración de actividades](authoring/personalization/activities.md)
