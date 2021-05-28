@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] como Cloud Service Canal de prelanzamiento'
 description: '[!DNL Adobe Experience Manager] como Cloud Service Canal de prelanzamiento'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] as a Cloud Service ofrece nuevas funciones en una cadencia mensual, según la programación de versiones de  [Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Para familiarizarse con las funciones programadas para entrar en funcionamiento el mes siguiente, los clientes pueden suscribirse al canal de prelanzamiento, al que se puede acceder configurando adecuadamente en entornos de desarrollo de programas estándar o en cualquier entorno de programa de simulación de pruebas. Los clientes pueden obtener una vista previa de los cambios realizados en la consola Sitios, así como crear código para cualquier API de versión preliminar nueva.
 
 La lista de características de la versión preliminar de un mes determinado se publica en las [notas de la versión mensuales](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+>[!VÍDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## Cómo habilitar la versión preliminar {#enable-prerelease}
 
@@ -110,8 +112,7 @@ Para compilar con el SDK de prelanzamiento:
 1. Si está seguro de que funciona como se espera localmente, confirme el código a una rama de desarrollo y utilice una canalización de no producción de Cloud Manager para implementar en un entorno que se suscriba al canal de prelanzamiento
 
 >[!CAUTION]
-> 
-> El `aem-prerelease-sdk-api` artifactId nunca debe utilizarse al implementar en fase o producción. Utilice siempre la api de aem-sdk al implementar mediante la canalización de producción. Del mismo modo, el código que hace referencia a las API de versión preliminar no debe implementarse mediante la canalización de producción.
+El `aem-prerelease-sdk-api` artifactId nunca debe utilizarse al implementar en fase o producción. Utilice siempre la api de aem-sdk al implementar mediante la canalización de producción. Del mismo modo, el código que hace referencia a las API de versión preliminar no debe implementarse mediante la canalización de producción.
 
 El [AEM analizador de compilaciones del SDK CS para maven plugin v1.0 y superior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) detectará si la api de prelanzamiento se utiliza en un proyecto inspeccionando las dependencias. Si el analizador lo encuentra, utilizará la api del sdk de prelanzamiento para analizar el proyecto.
 
