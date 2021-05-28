@@ -3,10 +3,9 @@ title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 6%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 6%
 
 ## Configuración y prueba de Apache y Dispatcher {#apache-and-dispatcher-configuration-and-testing}
 
-En esta sección se describe cómo estructurar el AEM como una configuración de Apache y Dispatcher Cloud Service, así como cómo validarlo y ejecutarlo localmente antes de implementarlo en entornos en la nube. También describe la depuración en entornos de Cloud. Para obtener más información sobre Dispatcher, consulte la [AEM documentación de Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html).
+En esta sección se describe cómo estructurar el AEM como una configuración de Apache y Dispatcher Cloud Service, así como cómo validarlo y ejecutarlo localmente antes de implementarlo en entornos en la nube. También describe la depuración en entornos de Cloud. Para obtener más información sobre Dispatcher, consulte la [AEM documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es).
 
 >[!NOTE]
 >Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este es un requisito previo para ejecutar y depurar Dispatcher en un equipo local. Las secciones siguientes incluyen comandos que utilizan las versiones Mac o Linux del SDK, pero el SDK de Windows se puede utilizar de forma similar.
@@ -527,7 +526,7 @@ La estructura de configuración de Dispatcher tiene diferencias entre Managed Se
 ## Conversión de AMS a una configuración de Dispatcher de AEM as a Cloud Service
 
 La siguiente sección proporciona instrucciones paso a paso sobre cómo convertir una configuración de AMS. Supone
-que tiene un archivo con una estructura similar a la descrita en la [configuración de Dispatcher de Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
+que tiene un archivo con una estructura similar a la descrita en la [configuración de Dispatcher de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)
 
 ### Extraer el archivo y eliminar un prefijo eventual
 
