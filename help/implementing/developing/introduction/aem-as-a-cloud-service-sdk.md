@@ -1,14 +1,13 @@
 ---
 title: SDK de AEM as a Cloud Service
 description: Información general sobre el Kit de desarrollo de software de AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
-
 
 # El SDK de AEM as a Cloud Service {#aem-as-a-cloud-service-sdk}
 
@@ -84,7 +83,7 @@ Si hay contenido que debe instalarse con cada nueva versión AEM inicio rápido,
 
 La recomendación es actualizar el SDK con frecuencia (por ejemplo, cada dos semanas) y disponer diariamente el estado local completo para que no dependa accidentalmente de los datos de estado de la aplicación.
 
-En caso de que dependa de CryptoSupport ([ya sea configurando las credenciales de Cloudservices o el servicio de correo SMTP en AEM o utilizando la API de CryptoSupport en la aplicación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente al primer inicio de un entorno de AEM. Aunque cloudsetup se encarga de reutilizar automáticamente la CryptoKey específica del entorno, es necesario introducir la criptoclave en el entorno de desarrollo local.
+En caso de que dependa de CryptoSupport ([ya sea configurando las credenciales de Cloudservices o el servicio de correo SMTP en AEM o utilizando la API de CryptoSupport en la aplicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)), las propiedades cifradas se cifrarán con una clave que se genere automáticamente al primer inicio de un entorno de AEM. Aunque cloudsetup se encarga de reutilizar automáticamente la CryptoKey específica del entorno, es necesario introducir la criptoclave en el entorno de desarrollo local.
 
 De forma predeterminada, AEM está configurado para almacenar los datos clave dentro de la carpeta de datos de una carpeta, pero para facilitar la reutilización en el desarrollo, el proceso de AEM se puede inicializar en el primer inicio con &quot;`-Dcom.adobe.granite.crypto.file.disable=true`&quot;. Esto generará los datos de cifrado en &quot;`/etc/key`&quot;.
 
