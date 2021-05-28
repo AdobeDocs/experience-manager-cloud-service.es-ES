@@ -2,10 +2,9 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2869'
 ht-degree: 13%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 13%
 
 >[!TIP]
 >
->Familiarícese con el [AEM tipo de archivo del proyecto básico use](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html), y con el [complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md), ya que este artículo se basa en estos conocimientos y conceptos.
+>Familiarícese con el [AEM tipo de archivo del proyecto básico use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), y con el [complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md), ya que este artículo se basa en estos conocimientos y conceptos.
 
 Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager Maven se AEM como Cloud Service compatibles, asegurándose de que respetan la división del contenido mutable e inmutable, las dependencias se establecen para crear implementaciones determinísticas y no conflictivas y que se empaquetan en una estructura implementable.
 
@@ -46,7 +45,7 @@ Por este motivo, aunque los índices Oak son mutables en tiempo de ejecución, d
 
 >[!TIP]
 >
->Para obtener más información sobre la indexación en AEM como Cloud Service, consulte el documento [Búsqueda de contenido e indexación](/help/operations/indexing.md).
+>Para obtener más información sobre la indexación en AEM como Cloud Service, consulte el documento [Content Search and Indexing](/help/operations/indexing.md).
 
 ## Estructura del paquete recomendada {#recommended-package-structure}
 
@@ -61,7 +60,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 + El archivo Jar del paquete OSGi se genera y se incrusta directamente en el proyecto completo.
 
 + El paquete `ui.apps` contiene todo el código que se va a implementar y solo se implementa en `/apps`. Los elementos comunes del paquete `ui.apps` incluyen, entre otros:
-   + [Definiciones de componentes y ](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) secuencias de comandos HTL
+   + [Definiciones de componentes y ](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es) secuencias de comandos HTL
       + `/apps/my-app/components`
    + JavaScript y CSS (a través de [Client Libraries](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
