@@ -1,7 +1,7 @@
 ---
 title: Cómo acceder al contenido a través de las API de envío de AEM
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de comenzar con consultas sobre el contenido, debe:
 
 * Habilitar el punto final
-   * Uso de herramientas -> Sitios -> GraphQL
+   * Uso de herramientas -> Recursos -> GraphQL
    * [Activación del extremo de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * Instale GraphiQL (si es necesario)
