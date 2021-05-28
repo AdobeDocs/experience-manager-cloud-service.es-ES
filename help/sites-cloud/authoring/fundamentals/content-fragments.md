@@ -1,14 +1,13 @@
 ---
 title: Fragmentos de contenido
 description: Los fragmentos de contenido de Adobe Experience Manager as a Cloud Service le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas.
-translation-type: tm+mt
-source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
+exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 100%
+source-wordcount: '1163'
+ht-degree: 99%
 
 ---
-
 
 # Fragmentos de contenido {#content-fragments}
 
@@ -24,8 +23,10 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
 >* Los **fragmentos de experiencias** son contenido plenamente diseñado y partes de una página web.
+
 >
->Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+>
+Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
 
 >[!CAUTION]
 >
@@ -70,8 +71,8 @@ Los fragmentos de contenido permiten hacer lo siguiente:
    >
    >Para obtener más información sobre otras funciones de edición, consulte también:
    >
-   >* [Diseño adaptable](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >* [Edición del contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [Diseño adaptable ](/help/sites-cloud/authoring/features/responsive-layout.md)
+   * [Edición del contenido de una página](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### Selección del elemento o la variación {#selecting-the-element-or-variation}
@@ -79,8 +80,7 @@ Los fragmentos de contenido permiten hacer lo siguiente:
 Abra el cuadro de diálogo **Configuración** del fragmento para configurar el fragmento que se va a utilizar en la página actual. El cuadro de diálogo puede depender del componente utilizado.
 
 >[!NOTE]
->
->Consulte también [los componentes principales y el componente de fragmento de contenido](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+Consulte también [los componentes principales y el componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 En el cuadro de diálogo de configuración adecuado, puede seleccionar los parámetros disponibles, entre los que se incluyen:
 
@@ -93,8 +93,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
    * Una selección estará disponible dependiendo del modelo utilizado.
 
    >[!NOTE]
-   >
-   >Los elementos disponibles dependen de la plantilla utilizada.
+   Los elementos disponibles dependen de la plantilla utilizada.
 
 * **Variación**
    * **Principal** siempre aparecerá como la opción predeterminada.
@@ -109,8 +108,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md). 
 
 >[!CAUTION]
->
->Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
+Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
 ### Añadir contenido intermedio        {#adding-in-between-content}
 
@@ -125,27 +123,21 @@ Para el contenido intermedio puede:
 * Utilizar [contenido asociado](#using-associated-content) como fuente para el contenido intermedio.
 
 >[!CAUTION]
->
->El contenido intermedio es contenido de página. No se almacena en el fragmento de contenido.
+El contenido intermedio es contenido de página. No se almacena en el fragmento de contenido.
 
 ![Insertar componente](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
->
->También puede [insertar recursos visuales (imágenes) en el propio fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
->
->Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo precedente. Si necesita este nivel de conexión, puede agregar la imagen al fragmento (como un [fragmento de medios mixtos](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
+También puede [insertar recursos visuales (imágenes) en el propio fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+Los recursos visuales insertados en el propio fragmento se adjuntan al párrafo anterior del fragmento. Esto significa que no puede colocar contenido intermedio entre un recurso visual y el párrafo precedente. Si necesita este nivel de conexión, puede agregar la imagen al fragmento (como un [fragmento de medios mixtos](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)).
 
 >[!CAUTION]
->
->Una vez añadido contenido intermedio a un fragmento de contenido en la página, al cambiar la estructura del fragmento de contenido subyacente (es decir, en el editor de fragmentos de contenido) se pueden generar resultados erróneos o inesperados.
->
->Cuando esto sucede, el contenido intermedio se mantiene tal cual:
->
->* Los componentes intermedios tienen una posición absoluta dentro de la secuencia de componentes en el flujo del fragmento. Esta posición no cambia, aunque varíe el contenido de los párrafos del fragmento.
->
->  Por este motivo, es posible que parezca que la posición relativa ha cambiado, ya que los párrafos intermedios no tienen relación contextual con los párrafos (del fragmento) junto a los que se sitúan.
->* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
+Una vez añadido contenido intermedio a un fragmento de contenido en la página, al cambiar la estructura del fragmento de contenido subyacente (es decir, en el editor de fragmentos de contenido) se pueden generar resultados erróneos o inesperados.
+Cuando esto sucede, el contenido intermedio se mantiene tal cual:
+* Los componentes intermedios tienen una posición absoluta dentro de la secuencia de componentes en el flujo del fragmento. Esta posición no cambia, aunque varíe el contenido de los párrafos del fragmento.
+
+Por este motivo, es posible que parezca que la posición relativa ha cambiado, ya que los párrafos intermedios no tienen relación contextual con los párrafos (del fragmento) junto a los que se sitúan.
+* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
 
 
 ### Uso de contenido asociado        {#using-associated-content}
@@ -153,12 +145,10 @@ Para el contenido intermedio puede:
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
->
->Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
+Hay varios métodos para agregar [recursos visuales (p. ej., imágenes)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) al fragmento o página.
 
 >[!NOTE]
->
->Si tiene varios fragmentos de contenido en la página, la pestaña **Contenido asociado** mostrará los recursos oportunos para todos los fragmentos.
+Si tiene varios fragmentos de contenido en la página, la pestaña **Contenido asociado** mostrará los recursos oportunos para todos los fragmentos.
 
 Una vez que haya añadido un fragmento con contenido asociado a la página, se abrirá una nueva pestaña (**Contenido asociado**) en el panel lateral.
 
