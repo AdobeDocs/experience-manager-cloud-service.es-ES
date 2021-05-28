@@ -1,14 +1,13 @@
 ---
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
-translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 60%
 
 ---
-
 
 # Edición de las propiedades de página {#editing-page-properties}
 
@@ -36,7 +35,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Marca**
 
-   Aplique una identidad de marca uniforme en todas las páginas adjuntando una marca de registro al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Aplique una identidad de marca uniforme en todas las páginas adjuntando una marca de registro al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
    * **Anular** : marque para definir el registro de marca en esta página.
       * Cualquier página secundaria heredará el valor a menos que también tenga configurados sus valores **Override**.
@@ -60,7 +59,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
       >[!NOTE]
       >
-      > Consulte [Tiempo de activación y desactivación: Configuración del activador](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener más información sobre cómo configurar la replicación automática relacionada.
+      > Consulte [Tiempo de activación y desactivación: Configuración de Déclencheur](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener más información sobre cómo configurar la replicación automática relacionada.
 
       * Si ya se ha publicado [(manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
@@ -136,7 +135,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    * **Configuración de exportación** : especifica una configuración de exportación
 
-### Miniatura     {#thumbnail}
+### Miniatura    {#thumbnail}
 
 Configurar la miniatura de la página
 
@@ -149,7 +148,7 @@ Configurar la miniatura de la página
 
 * **Compartir en redes sociales**
 
-   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/sharing.html).
+   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para el [componente principal de compartición](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html).
 
    * **Permitir al usuario que comparta en Facebook**
    * **Permitir al usuario que comparta en Pinterest**
@@ -176,7 +175,7 @@ Configurar la miniatura de la página
    >[!NOTE]
    >Esta opción requiere una cuenta de usuario en el grupo `Target Administrators`.
 
-### Permisos     {#permissions}
+### Permisos    {#permissions}
 
 * **Permisos**
 
@@ -198,7 +197,7 @@ Esta ficha solo está visible para páginas que sirven como modelos. Los modelos
 
 * **Configuración de lanzamiento** : controla las circunstancias dentro de las cuales se propagarán las modificaciones a Live Copy
 
-### Live Copy     {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Sincronizar** : Sincronizar Live Copy con modelo, manteniendo las modificaciones locales
 * **Restablecer** : restablecer Live Copy al estado del modelo, eliminando modificaciones locales
