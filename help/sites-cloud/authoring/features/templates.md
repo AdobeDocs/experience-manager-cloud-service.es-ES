@@ -1,14 +1,13 @@
 ---
 title: 'Creación de plantillas de página  '
 description: La plantilla define la estructura de la página resultante y con el editor de plantillas, crear y mantener plantillas ya no es una tarea solo de desarrollador
-translation-type: tm+mt
-source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
+exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 97%
 
 ---
-
 
 # Creación de plantillas de página   {#creating-page-templates}
 
@@ -92,11 +91,11 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 >
 >No introduzca nunca en una plantilla información que deba internacionalizarse. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de plantilla como encabezados y pies de página que se deben localizar, aproveche las características de [localización de los componentes principales.](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/get-started/localization.html)
+>Para elementos de plantilla como encabezados y pies de página que se deben localizar, aproveche las características de [localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
-Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Se trata de una tarea de administración y se describe en el documento [Plantillas de página](/help/implementing/developing/components/templates.md#template-folders).—>
+Se debe crear una carpeta de plantillas para su proyecto que contenga las plantillas específicas del proyecto. Se trata de una tarea de administración que se describe en el documento [Plantillas de página](/help/implementing/developing/components/templates.md#template-folders).—>
 
 ### Creación de una plantilla nueva: autor de plantillas {#creating-a-new-template-template-author}
 
@@ -129,7 +128,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 
 >[!NOTE]
 >
->Las plantillas son herramientas poderosas para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden abrumar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden sobrecargar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
 >
 >Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
@@ -210,7 +209,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
    >
-   >Consulte [Disponibilidad de la plantilla](/help/implementing/developing/components/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
+   >Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -533,7 +532,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 >
 >El contenido inicial está diseñado para preparar componentes y el diseño de página que sirve como punto de partida para crear el contenido. No se prevé que el contenido real permanezca tal cual. Por este motivo, no se puede traducir el contenido inicial.
 >
->Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Edición de una plantilla: diseño, autor de plantillas {#editing-a-template-layout-template-author}
 
