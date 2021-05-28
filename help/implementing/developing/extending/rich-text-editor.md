@@ -2,14 +2,13 @@
 title: Configure el Editor de texto enriquecido para que cree contenido en [!DNL Adobe Experience Manager] como Cloud Service.
 description: Configure el Editor de texto enriquecido para que cree contenido en [!DNL Adobe Experience Manager] como Cloud Service.
 contentOwner: AG
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del Editor de texto enriquecido {#configure-the-rich-text-editor}
 
@@ -155,7 +154,7 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-El [componente de texto Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE utilizando la interfaz de usuario como políticas de contenido, lo que elimina la necesidad de una configuración técnica. Las políticas de contenido pueden funcionar con las configuraciones de la interfaz de usuario de RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/features/templates.md) y la [documentación para desarrolladores de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+El [componente de texto Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE utilizando la interfaz de usuario como políticas de contenido, lo que elimina la necesidad de una configuración técnica. Las políticas de contenido pueden funcionar con las configuraciones de la interfaz de usuario de RTE como se describe en este documento. Para obtener más información, consulte [crear plantillas de página](/help/sites-cloud/authoring/features/templates.md) y la [documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fines de referencia, los componentes de texto predeterminados (entregados como parte de una instalación estándar) se pueden encontrar en:
 >
@@ -231,9 +230,9 @@ Las opciones disponibles en el flujo RTE descenden desde las configuraciones de 
 * Si la configuración de la interfaz de usuario del RTE se ha eliminado o no permite un elemento, la directiva de contenido no puede configurarlo.
 * Un autor solo tiene acceso a las funciones que están disponibles en las configuraciones de interfaz de usuario y en las políticas de contenido.
 
-A modo de ejemplo, puede ver la [documentación de los componentes principales de texto](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+A modo de ejemplo, puede ver la [documentación de los componentes principales de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
-## Personalización de la asignación entre iconos de barra de herramientas y comandos {#iconstoolbar}
+## Personalización de la asignación entre iconos y comandos de la barra de herramientas {#iconstoolbar}
 
 Puede personalizar la asignación entre los iconos de Coral que se muestran en la barra de herramientas de RTE y los comandos disponibles. No puede utilizar ningún otro icono aparte de los iconos de Coral.
 
@@ -285,6 +284,6 @@ A continuación se muestra un fragmento de ejemplo para asignar el comando `Bold
 >[!MORELIKETHIS]
 >
 >* [Configuración de complementos RTE](configure-rich-text-editor-plug-ins.md)
->* [Usar el Editor de texto enriquecido para la creación](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
->* [Configuración de RTE para sitios accesibles](rte-accessible-content.md)
+* [Usar el Editor de texto enriquecido para la creación](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+* [Configuración de RTE para sitios accesibles](rte-accessible-content.md)
 
