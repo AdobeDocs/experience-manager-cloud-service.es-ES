@@ -2,10 +2,9 @@
 title: 'Reglas de calidad de código personalizadas: Cloud Services'
 description: 'Reglas de calidad de código personalizadas: Cloud Services'
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-translation-type: tm+mt
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 4%
 
 ---
@@ -725,7 +724,7 @@ La documentación AEM Herramientas de modernización proporciona documentación 
 
 Para ser compatible con el modelo de implementación de Cloud Service, los paquetes de contenido individuales deben contener contenido para las áreas inmutables del repositorio (es decir, `/apps and /libs, although /libs` no debe ser modificado por el código del cliente y causará una infracción independiente) o el área mutable (es decir, todo lo demás), pero no ambos. Por ejemplo, un paquete que incluye `/apps/myco/components/text and /etc/clientlibs/myco` no es compatible con el Cloud Service y provocará que se informe de un problema.
 
-Consulte [AEM Estructura del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) para obtener más información.
+Consulte [AEM Estructura del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) para obtener más información.
 
 ### Los Agentes De Replicación Inversa No Deben Utilizarse {#oakpal-reverse-replication}
 
@@ -737,7 +736,7 @@ Consulte [AEM Estructura del proyecto](https://docs.adobe.com/content/help/es-ES
 
 **Desde**: Versión 2020.5.0
 
-La compatibilidad con la replicación inversa no está disponible en las implementaciones de Cloud Service, como se describe en las [Notas de la versión: Eliminación de agentes de replicación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+La compatibilidad con la replicación inversa no está disponible en las implementaciones de Cloud Service, como se describe en las [Notas de la versión: Eliminación de agentes de replicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 Los clientes que utilizan la replicación inversa deben ponerse en contacto con el Adobe para obtener soluciones alternativas.
 
