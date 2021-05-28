@@ -1,36 +1,35 @@
 ---
 title: 'Introducción al desarrollo de AEM Sites: Tutorial de WKND'
-description: ¿Nuevo en desarrollar AEM? ¿Necesita un repaso de las prácticas recomendadas? ¡Este es el lugar para el inicio! El objetivo de este tutorial en varias partes es enseñar a un desarrollador que es nuevo en AEM cómo implementar un sitio web en AEM usando los estándares y tecnologías más recientes.
-translation-type: tm+mt
-source-git-commit: 20a19c558be17631889f0253b3ad4e5a71ebcce2
+description: ¿Nuevo en desarrollar AEM? ¿Necesita un repaso sobre las prácticas recomendadas? ¡Este es el lugar para empezar! El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo a AEM cómo implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes.
+exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 22%
+source-wordcount: '242'
+ht-degree: 16%
 
 ---
-
 
 # Introducción al desarrollo de AEM Sites: Tutorial de WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Información general {#overview}
 
-¿Es nuevo desarrollar Adobe Experience Manager como Cloud Service? ¿Necesita un repaso sobre las prácticas más recientes? ¡Este es el lugar para el inicio!
+¿Es novato en desarrollar Adobe Experience Manager como Cloud Service? ¿Necesita un repaso sobre las prácticas más recientes? ¡Este es el lugar para empezar!
 
-El objetivo de este tutorial en varias partes es enseñar a un desarrollador que es nuevo en AEM cómo implementar un sitio web en AEM usando los estándares y tecnologías más recientes. La esperanza es que al final de este tutorial usted comprenderá la base básica de la plataforma AEM y el conocimiento de algunos de los patrones de diseño comunes.
+El objetivo de este tutorial en varias partes es enseñar a un desarrollador nuevo a AEM cómo implementar un sitio web en AEM utilizando los estándares y tecnologías más recientes. La esperanza es que al final de este tutorial usted comprenderá la base básica de la plataforma AEM y el conocimiento de algunos de los patrones de diseño comunes.
 
 ## Tutorial para desarrolladores de WKND {#wknd-developer-tutorial}
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-[El Tutorial para desarrolladores de WKND está disponible ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) aquí y le guía a través de la creación de un proyecto AEM utilizando las tecnologías y prácticas recomendadas más recientes.
+[El Tutorial para desarrolladores de WKND está disponible ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) aquí y le guía a través de la creación de un proyecto AEM con las últimas tecnologías y prácticas recomendadas.
 
 ## Conceptos principales {#core-concepts}
 
-La implementación del tutorial aprovecha muchas características poderosas de AEM. El sitio se implementará mediante:
+La implementación del tutorial aprovecha muchas funciones potentes de AEM. El sitio se implementará utilizando:
 
-* [Arquetipo del proyecto Maven AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
+* [Tipo de archivo del proyecto Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * [Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
-* [Plantillas editables](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Sistema de estilos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [Plantillas editables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
