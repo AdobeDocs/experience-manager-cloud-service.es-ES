@@ -1,20 +1,19 @@
 ---
 title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder.
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2217'
 ht-degree: 1%
 
 ---
-
 
 # Referencia del predicado del generador de consultas {#query-builder-predicate-reference}
 
 ## General {#general}
 
-### raíz {#root}
+### root {#root}
 
 Este es el grupo de predicados raíz. Admite todas las funciones de un grupo y permite configurar parámetros de consulta globales.
 
@@ -69,7 +68,7 @@ Conceptualmente es `fulltext AND ( (path AND type) OR (path AND type) )`. Tenga 
 * **`<predicate>`** - agrega predicados anidados
 * **`N_<predicate>`** - añade varios predicados anidados del mismo tiempo, como  `1_property, 2_property, ...`
 
-### pedido por {#orderby}
+### orderby {#orderby}
 
 Este predicado permite ordenar los resultados. Si se requiere ordenar por varias propiedades, este predicado debe agregarse varias veces utilizando el prefijo numérico, como `1_orderby=first`, `2_oderby=second`.
 
@@ -202,7 +201,7 @@ Admite la extracción de facetas y proporciona dos bloques para los recursos pri
 
 ### memberOf {#memberof}
 
-Este predicado encuentra elementos que son miembros de una [colección de recursos de sling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Este predicado encuentra elementos que son miembros de una [colección de recursos de sling](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
@@ -212,7 +211,7 @@ No admite la extracción de facetas.
 
 * **`memberOf`** - ruta de la recopilación de recursos de Sling
 
-### nombre de nodo {#nodename}
+### nodename {#nodename}
 
 Este predicado coincide con los nombres de nodos JCR.
 
