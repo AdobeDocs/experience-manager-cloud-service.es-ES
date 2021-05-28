@@ -1,15 +1,14 @@
 ---
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.6.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.6.0
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Información de la versión
+exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 89%
+source-wordcount: '606'
+ht-degree: 83%
 
 ---
-
 
 # Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2020.6.0 {#release-notes}
 
@@ -23,11 +22,11 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.6.0 es el 4
 
 * Un usuario con la función *Propietario empresarial* en Cloud Manager ahora puede eliminar un programa de espacio aislado para pruebas de la página de aterrizaje (con el botón de acción rápida en tarjeta de programa) o desde el programa.
 
-   Consulte [Eliminación de un programa de espacio aislado](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
+   Consulte [Eliminación de un programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
 
 * Un usuario de programa de espacio aislado en la función *Propietario empresarial* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
-   Consulte [Eliminación de un programa de espacio aislado](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
+   Consulte [Eliminación de un programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
 
 * Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
 
@@ -39,11 +38,11 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.6.0 es el 4
 
 * Un usuario con la función SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar las funciones de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Añadir Programa**.
 
-   Consulte [Tareas de SysAdmin](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obtener más información.
+   Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obtener más información.
 
 * Un usuario con la función SysAdmin ahora tiene acceso con un solo clic a la instancia de autor directamente desde Cloud Manager.
 
-   Consulte [Administración del acceso a la instancia de autor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para obtener más información.
+   Consulte [Administración del acceso a la instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para obtener más información.
 
 * El registro de compilación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
 
