@@ -2,11 +2,10 @@
 title: Modernizador de repositorio
 description: Modernizador de repositorio
 exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
-translation-type: tm+mt
-source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +15,7 @@ Modernizador de repositorio es una utilidad desarrollada para reestructurar los 
 
 ## Introducción {#introduction}
 
-Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades en sus proyectos AEM. Sin embargo, es necesario realizar algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de **content** y **code** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM Estructura del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) para obtener más información sobre la nueva estructura del proyecto de AEM para el Cloud Service.
+Adobe Experience Manager as a Cloud Service ofrece muchas nuevas funciones y posibilidades en sus proyectos AEM. Sin embargo, es necesario realizar algunos cambios en los proyectos de Adobe Experience Manager Maven para que sean compatibles con AEM Cloud Service. En un nivel superior, AEM requiere una separación de **content** y **code** en subpaquetes discretos para respetar la división entre contenido mutable e inmutable. Consulte [AEM Estructura del proyecto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) para obtener más información sobre la nueva estructura del proyecto de AEM para el Cloud Service.
 
 El Modernizador de repositorio crea una estructura de proyecto AEM Cloud Service compatible creando la siguiente estructura de implementación:
 
