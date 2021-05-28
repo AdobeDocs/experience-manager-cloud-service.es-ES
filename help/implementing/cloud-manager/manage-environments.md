@@ -2,9 +2,9 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 4%
 
 ---
@@ -128,7 +128,7 @@ Seleccione **Developer Console** en el menú desplegable de la tarjeta **Environ
 
 Solo los usuarios con la función de desarrollador tendrán acceso a **Developer Console**. La excepción es para los Programas de espacio aislado, donde cualquier usuario con acceso al programa de espacio aislado de Cloud Manager tendrá acceso a **Developer Console**.
 
-Consulte [Entorno de espacio aislado en hibernación y dehibernación](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obtener más información.
+Consulte [Entorno de espacio aislado en hibernación y dehibernación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) para obtener más información.
 
 
 ![](assets/environ-devconsole.png)
