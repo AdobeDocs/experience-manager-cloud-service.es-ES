@@ -1,14 +1,13 @@
 ---
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2552'
 ht-degree: 98%
 
 ---
-
 
 # Crear y organizar páginas {#creating-and-organizing-pages}
 
@@ -39,7 +38,7 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como un árbol que alberga las páginas de contenido. Los nombres de estas páginas de contenido se usan para formar las URL, y los títulos se muestran cuando se visualiza el contenido de la página.
 
-A continuación se muestra un ejemplo del sitio [WKND Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), donde se accede a un artículo sobre parques de patinaje (`la-skateparks`):
+A continuación se muestra un ejemplo del sitio [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), donde se accede a un artículo sobre parques de patinaje (`la-skateparks`):
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -93,7 +92,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 
-Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
+Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y el JCR.
 
 El mínimo permitido de caracteres es:
 
