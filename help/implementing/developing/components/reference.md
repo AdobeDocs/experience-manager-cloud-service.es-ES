@@ -1,14 +1,13 @@
 ---
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores sobre los detalles de los componentes y su estructura
-translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3657'
 ht-degree: 1%
 
 ---
-
 
 # Guía de referencia de componentes {#components-reference-guide}
 
@@ -241,9 +240,13 @@ Para obtener más información, consulte los siguientes recursos:
 
 ### Personalización de campos de cuadro de diálogo {#customizing-dialog-fields}
 
+<!--
+Content not found
+
 >[!TIP]
 >
->Consulte la [AEM sesión de Gems](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) sobre la personalización de campos de diálogo.
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 Para crear un nuevo widget para utilizarlo en un cuadro de diálogo de componentes, es necesario crear un nuevo componente de campo de Granite UI .
 
@@ -447,7 +450,7 @@ Este evento se activa cada vez que se carga (o recarga) el cuadro de diálogo y 
 
 ## Comportamiento de vista previa {#preview-behavior}
 
-La cookie [WCM Mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) se establece al cambiar al modo de vista previa incluso cuando la página no se actualiza.
+La cookie [WCM Mode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) se establece al cambiar al modo de vista previa incluso cuando la página no se actualiza.
 
 Para los componentes con una renderización que son sensibles al modo WCM, deben definirse para actualizarse específicamente y luego depender del valor de la cookie.
 
