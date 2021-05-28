@@ -1,12 +1,11 @@
 ---
 title: Almacenamiento en caché y rendimiento
 description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de la implementación de comercio.
-exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 96%
+source-wordcount: '842'
+ht-degree: 95%
 
 ---
 
@@ -48,11 +47,11 @@ El almacenamiento en caché de otros componentes debe definirse sobre la base de
 
 ## Almacenamiento en caché de Dispatcher {#dispatcher}
 
-El almacenamiento en caché de páginas de AEM o fragmentos en [AEM Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html) es una práctica recomendada para cualquier proyecto AEM. Generalmente, se basa en técnicas de invalidación que garantizan que cualquier cambio de contenido en AEM se actualice correctamente en Dispatcher. Esta es una característica central de la estrategia de almacenamiento en caché de AEM Dispatcher.
+El almacenamiento en caché de páginas de AEM o fragmentos en [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una práctica recomendada para cualquier proyecto AEM. Generalmente, se basa en técnicas de invalidación que garantizan que cualquier cambio de contenido en AEM se actualice correctamente en Dispatcher. Esta es una característica central de la estrategia de almacenamiento en caché de AEM Dispatcher.
 
 Además del CIF de contenido administrado de AEM puro, una página generalmente puede mostrar datos de comercio que se recuperan dinámicamente desde Magento a través de GraphQL. Aunque la estructura de la página en sí podría no cambiar nunca, el contenido comercial podría cambiar, por ejemplo, si algunos datos del producto (nombre, precio, etc.) cambian en Magento.
 
-Para asegurarse de que las páginas de CIF se pueden almacenar en caché durante una cantidad de tiempo limitada en AEM Dispatcher, recomendamos el uso de [Invalidación de caché basada en tiempo](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (también conocida como caché basada en TTL) al almacenar en caché las páginas del CIF en AEM Dispatcher. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+Para asegurarse de que las páginas de CIF se pueden almacenar en caché durante una cantidad de tiempo limitada en AEM Dispatcher, recomendamos el uso de [Invalidación de caché basada en tiempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (también conocida como caché basada en TTL) al almacenar en caché las páginas del CIF en AEM Dispatcher. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
 Con el almacenamiento en caché basado en TTL, un desarrollador suele definir una o varias duraciones de almacenamiento en caché para páginas de AEM seleccionadas. Esto garantiza que las páginas de CIF solo se almacenen en caché en AEM Dispatcher hasta la duración configurada y que el contenido se actualice con frecuencia.
 
@@ -64,4 +63,4 @@ Con el almacenamiento en caché basado en TTL, un desarrollador suele definir un
 
 - [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuración de almacenamiento en caché de GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [Dispatcher de AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+- [Dispatcher de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
