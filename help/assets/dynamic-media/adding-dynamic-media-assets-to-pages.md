@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
-ht-degree: 20%
+source-wordcount: '3084'
+ht-degree: 21%
 
 ---
 
@@ -112,7 +112,7 @@ Los componentes de Dynamic Media disponibles son los siguientes:
 
 ### Componente: Dynamic Media {#dynamic-media-component}
 
-El componente Dynamic Media es inteligente. Según si agrega una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes, como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visor es interactivo: el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores HTML5.
+El componente Dynamic Media es inteligente. Ya sea que añada una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes, como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visor es interactivo: el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores HTML5.
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Puede editar la siguiente Configuración de Dynamic Media tocando el icono **[!U
 
    Puede editar la siguiente Configuración avanzada tocando **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Tenga en cuenta que se omiten los valores del RGPD de imágenes inteligentes de Dynamic Media [!DNL Experience Manager].
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
-   * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado y **[!UICONTROL RESS_IP]** está seleccionado en la lista desplegable **[!UICONTROL Ajuste preestablecido de imagen]**.
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
@@ -243,17 +243,17 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
 
 * **[!UICONTROL Habilitar coincidencia de relación de aspecto]** : para permitir que Dynamic Media elija una representación de recorte inteligente con una relación de aspecto que coincida mejor con la relación de aspecto de la imagen original, seleccione esta opción.
 
-* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   Tenga en cuenta que se omiten los valores del RGPD de imágenes inteligentes de Dynamic Media [!DNL Experience Manager].
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * En Tipo de ajuste preestablecido, la opción **[!UICONTROL Recorte inteligente]** está seleccionada.
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
@@ -273,7 +273,7 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
 
 El componente de Medios interactivos es para los recursos que tienen elementos interactivos integrados en ellos, como puntos interactivos o mapas de imágenes. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el componente de **[!UICONTROL Medios interactivos]**.
 
-El componente de Medios interactivos es inteligente. Según si agrega una imagen o un vídeo, tiene varias opciones. Además, el visor es interactivo: el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores HTML5.
+El componente de Medios interactivos es inteligente. Ya sea que añada una imagen o un vídeo, tiene varias opciones. Además, el visor es interactivo: el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores HTML5.
 
 >[!NOTE]
 >
