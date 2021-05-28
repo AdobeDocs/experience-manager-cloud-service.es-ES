@@ -5,10 +5,10 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 36%
+source-wordcount: '900'
+ht-degree: 34%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 36%
    + [Registro](developing/introduction/logging.md)
    + [Configuraciones y el navegador de configuración](developing/introduction/configurations.md)
    + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [API de AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [Generación de tokens de acceso para las API del servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Encabezado y sin cabeza en AEM](developing/headful-headless.md)
    + Desarrollo de AEM de pila completa {#full-stack}
@@ -87,7 +87,7 @@ ht-degree: 36%
       + Componentes y plantillas {#components-templates}
          + [Información general sobre componentes](developing/components/overview.md)
          + [Plantillas](developing/components/templates.md)
-         + [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+         + [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
          + [Sistema de estilos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [Exportador JSON para servicios de contenido](developing/components/json-exporter.md)
          + [Activación de la exportación de JSON para un componente](developing/components/enabling-json-exporter.md)
