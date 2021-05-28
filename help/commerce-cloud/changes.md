@@ -2,11 +2,10 @@
 title: Cambios importantes del complemento Commerce Integration Framework (CIF)
 description: Cambios importantes del marco de integración comercial (CIF) en comparación con las versiones anteriores del CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-translation-type: tm+mt
-source-git-commit: 7a52e4b62f5a18f9c68e5afb0d464bd11be732d2
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 9%
+source-wordcount: '447'
+ht-degree: 5%
 
 ---
 
@@ -39,12 +38,12 @@ El extremo se configura y actualiza a través de la interfaz de usuario de Cloud
 
 ## Implementación del proyecto CIF Venia
 
-Proyecto disponible en [Repositorio Git de Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) e implementación realizada mediante [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/deploying/overview.html)
+Proyecto disponible en [Repositorio Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) e implementación realizada mediante [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html)
 
 **Versiones anteriores del CIF**
 
 * CIF Classic: A través de AEM instalación del paquete
-* CIF Open-source: A través de [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* CIF Open-source: A través de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es)
 
 ## Datos del catálogo de productos
 
