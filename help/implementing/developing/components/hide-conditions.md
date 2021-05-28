@@ -2,17 +2,16 @@
 title: Uso de Ocultar condiciones
 description: Las condiciones de ocultado se pueden utilizar para determinar si un recurso de componente se representa o no.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-translation-type: tm+mt
-source-git-commit: fa3280defb2a97954c5ab1b70e7600382e370606
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 4%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
 # Uso de Ocultar condiciones {#using-hide-conditions}
 
-Las condiciones de ocultado se pueden utilizar para determinar si un recurso de componente se representa o no. Un ejemplo de esto sería cuando un autor de plantillas configura el componente principal [list component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) en el [editor de plantillas](/help/sites-cloud/authoring/features/templates.md) y decide desactivar las opciones para crear la lista en función de las páginas secundarias. Al desactivar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que, cuando se procesa el componente de lista, se evalúe la condición de ocultado y no se muestre la opción para mostrar páginas secundarias.
+Las condiciones de ocultado se pueden utilizar para determinar si un recurso de componente se representa o no. Un ejemplo de esto sería cuando un autor de plantillas configura el componente principal [list component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) en el [editor de plantillas](/help/sites-cloud/authoring/features/templates.md) y decide desactivar las opciones para crear la lista en función de las páginas secundarias. Al desactivar esta opción en el cuadro de diálogo de diseño, se establece una propiedad de modo que, cuando se procesa el componente de lista, se evalúe la condición de ocultado y no se muestre la opción para mostrar páginas secundarias.
 
 ## Información general {#overview}
 
@@ -50,7 +49,7 @@ Al definir la expresión de ocultación, tenga en cuenta:
 
 ## Ejemplo {#example}
 
-Se pueden encontrar ejemplos de condiciones de ocultamiento en AEM y en los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en particular. Por ejemplo, considere el [componente principal de lista](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) tal como se ha implementado en el tutorial [WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Se pueden encontrar ejemplos de condiciones de ocultamiento en AEM y en los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere el [componente principal de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) tal como se ha implementado en el tutorial [WKND.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 [Con el editor](/help/sites-cloud/authoring/features/templates.md) de plantillas, el autor de plantillas puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Tales opciones como si se permite que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc. se puede activar o desactivar.
 
