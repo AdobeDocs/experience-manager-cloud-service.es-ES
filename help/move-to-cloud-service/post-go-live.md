@@ -2,10 +2,10 @@
 title: Fase de Publicar Go-live
 description: Fase de Publicar Go-live
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 73%
+source-wordcount: '314'
+ht-degree: 63%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 73%
 >id="aemcloud_golive_troubleshooting"
 >title="Solución de problemas AEM"
 >abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Acceder y administrar registros"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Acceder y administrar registros"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
 
 
 En la fase de Publicar Go-live, se debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
@@ -32,7 +32,7 @@ Las siguientes herramientas están disponibles para solucionar los problemas de 
 
 La depuración de los entornos de desarrollador de AEM as a Cloud Service está disponible en Developer Console para los entornos de desarrollo, fase y producción.
 
-Consulte [ Implementación para AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
+Consulte [ Implementación para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ Consulte [Desarrollo de CRX/DE Lite](/help/implementing/developing/tools/crxde.m
 
 Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
 
-Consulte [Acceso y administración de registros](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) para obtener información sobre cómo acceder y administrar los registros a través de la IU o desde la API de Cloud Manager.
+Consulte [Acceso y administración de registros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) para obtener información sobre cómo acceder y administrar los registros a través de la IU o desde la API de Cloud Manager.
 
 ### Asistencia técnica adicional {#additional-support}
 
