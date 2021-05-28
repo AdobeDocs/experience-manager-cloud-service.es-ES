@@ -2,11 +2,10 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: Utilice el complemento Maven del paquete de contenido para implementar aplicaciones AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-translation-type: tm+mt
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 7%
+source-wordcount: '1847'
+ht-degree: 5%
 
 ---
 
@@ -34,7 +33,7 @@ AEM como Cloud Service se adhiere a las prácticas recomendadas más recientes p
 
 >[!TIP]
 >
->Para obtener más información, consulte el artículo [AEM Project Structure](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en la documentación de AEM como Cloud Service, así como la documentación de [AEM Project Archetype](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html). Ambos son totalmente compatibles con la versión AEM 6.5.
+>Para obtener más información, consulte el artículo [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en la documentación de AEM como Cloud Service, así como la documentación de [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos son totalmente compatibles con la versión AEM 6.5.
 
 ## Obtención del complemento Maven del paquete de contenido {#obtaining-the-content-package-maven-plugin}
 
@@ -97,7 +96,7 @@ Los parámetros de la tabla siguiente son comunes para todos los objetivos excep
 | `userId` | `String` | Sí | `admin` | El nombre de usuario que se va a autenticar con AEM | Todos los objetivos excepto `package` |
 | `verbose` | `boolean` | No | `false` | Habilita o deshabilita el registro detallado | Todos los objetivos excepto `package` |
 
-### compilación {#build}
+### versión {#build}
 
 Crea un paquete de contenido que ya está definido en una instancia de AEM.
 
@@ -266,4 +265,4 @@ El último tipo de archivo del proyecto de AEM implementa la estructura de paque
 
 >[!TIP]
 >
->Para obtener más información, consulte el artículo [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en la documentación de AEM como Cloud Service, así como la documentación de [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html). Ambos son totalmente compatibles con la versión AEM 6.5.
+>Para obtener más información, consulte el artículo [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) en la documentación de AEM como Cloud Service, así como la documentación de [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html). Ambos son totalmente compatibles con la versión AEM 6.5.
