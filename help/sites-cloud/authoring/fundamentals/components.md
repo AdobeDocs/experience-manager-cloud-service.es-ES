@@ -1,14 +1,13 @@
 ---
 title: Componentes
 description: Los componentes son la base de la creación de páginas de contenido en AEM.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
-
 
 # Componentes {#components}
 
@@ -40,7 +39,7 @@ La [consola Componentes](/help/sites-cloud/authoring/features/components-console
 
 ## Componentes principales {#core-components}
 
-Los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
+Los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
 Se crean utilizando las prácticas recomendadas de AEM y constituyen la base de la experiencia de creación de AEM. Los desarrolladores pueden ampliar fácilmente los componentes principales para satisfacer necesidades específicas del proyecto.
 
