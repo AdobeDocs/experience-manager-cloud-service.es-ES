@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Administración de activos,Recursos conectados,Distribución de activos,Usuarios y grupos
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 26%
@@ -198,7 +198,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 
 ## Limitaciones y prácticas recomendadas {#tip-and-limitations}
 
-* Para obtener información sobre el uso de los recursos, configure la funcionalidad [Asset Insight](/help/assets/assets-insights.md) en la instancia [!DNL Sites] .
+* Para obtener información sobre el uso de los recursos, configure la funcionalidad [Insight de recursos](/help/assets/assets-insights.md) en la instancia [!DNL Sites] .
 
 ### Permisos y administración de recursos {#permissions-and-managing-assets}
 
