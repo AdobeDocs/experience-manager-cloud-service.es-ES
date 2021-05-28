@@ -2,10 +2,9 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
-source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2007'
 ht-degree: 92%
 
 ---
@@ -210,7 +209,7 @@ Para poder acceder a los entornos de Cloud Manager o AEM as a Cloud Service, deb
 Consulte Definiciones de funciones para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas en Cloud Manager.
 
 >[!NOTE]
->Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte Permisos [basados en roles](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte Permisos [basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
 
 **Pasos para Añadir un usuario**
 
