@@ -2,14 +2,13 @@
 title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
-
 
 # Introducción {#intro}
 
@@ -73,7 +72,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * al utilizar AEM marco de biblioteca del lado del cliente, el código JavaScript y CSS se generan de forma que los navegadores puedan almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única.  En otras palabras, el HTML que hace referencia a las bibliotecas de cliente se producirá según sea necesario para que los clientes puedan experimentar contenido nuevo a medida que se publique. El control de caché se establece en &quot;inmutable&quot; o 30 días para los exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
 * consulte la sección [Bibliotecas del lado del cliente y coherencia de la versión](#content-consistency) para obtener más información.
 
-### Imágenes y cualquier contenido lo suficientemente grande como para almacenarse en blob {#images}
+### Imágenes y cualquier contenido lo suficientemente grande como para almacenarlo en blob {#images}
 
 * de forma predeterminada, no está almacenado en caché
 * puede establecerse en un nivel más fino mediante las siguientes directivas apache `mod_headers` :
@@ -113,7 +112,7 @@ En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe
 
 Al igual que las versiones anteriores de AEM, la publicación o cancelación de la publicación de páginas borrará el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión.
 
-Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché del Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché del Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Invalidación explícita de caché de Dispatcher {#explicit-invalidation}
 
@@ -124,8 +123,8 @@ Antes de AEM como Cloud Service, había dos formas de invalidar la caché del de
 1. Invocar el agente de replicación, especificando el agente de vaciado del despachante de publicación
 2. Llamar directamente a la API `invalidate.cache` (por ejemplo, `POST /dispatcher/invalidate.cache`)
 
-El enfoque de la API `invalidate.cache` de Dispatcher ya no será compatible, ya que se dirige únicamente a un nodo de Dispatcher específico. AEM como Cloud Service funciona en el nivel de servicio, no en el nivel de nodo individual y, por lo tanto, las instrucciones de invalidación de la página [Invalidación de páginas en caché de AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html) ya no son válidas para AEM como Cloud Service .
-En su lugar, se debe utilizar el agente de vaciado de replicación. Esto se puede hacer mediante la API de replicación. La documentación de la API de replicación está disponible [aquí](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la [página de ejemplo de la API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) específicamente el ejemplo `CustomStep` que emite una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar, pero está preconfigurado para apuntar al despachante, coincide con el servicio de publicación que ejecuta el agente de vaciado. Normalmente, el agente de vaciado se puede activar mediante eventos o flujos de trabajo OSGi.
+El enfoque de la API `invalidate.cache` de Dispatcher ya no será compatible, ya que se dirige únicamente a un nodo de Dispatcher específico. AEM como Cloud Service funciona en el nivel de servicio, no en el nivel de nodo individual y, por lo tanto, las instrucciones de invalidación de la página [Invalidación de páginas en caché de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) ya no son válidas para AEM como Cloud Service .
+En su lugar, se debe utilizar el agente de vaciado de replicación. Esto se puede hacer mediante la API de replicación. La documentación de la API de replicación está disponible [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/replication/Replicator.html) y para ver un ejemplo de vaciado de la caché, consulte la [página de ejemplo de la API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) específicamente el ejemplo `CustomStep` que emite una acción de replicación de tipo ACTIVATE a todos los agentes disponibles. El extremo del agente de vaciado no se puede configurar, pero está preconfigurado para apuntar al despachante, coincide con el servicio de publicación que ejecuta el agente de vaciado. Normalmente, el agente de vaciado se puede activar mediante eventos o flujos de trabajo OSGi.
 
 El diagrama que se muestra a continuación ilustra esto.
 
