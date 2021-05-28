@@ -2,14 +2,13 @@
 title: Publicar recursos, carpetas y colecciones en Brand Portal
 description: Publicar recursos, carpetas y colecciones en Brand Portal.
 contentOwner: Vishabh Gupta
-feature: Brand Portal,Asset Distribution,Configuration
+feature: Brand Portal,Distribución de recursos,Configuración
 role: Business Practitioner
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 99%
+source-wordcount: '1159'
+ht-degree: 97%
 
 ---
 
@@ -227,11 +226,11 @@ A continuación se indican los pasos para cancelar la publicación de una colecc
 
 Además de lo anterior, también puede publicar esquemas de metadatos, ajustes preestablecidos de imagen, facetas de búsqueda y etiquetas de AEM Assets en Brand Portal.
 
-* [Publicar ajustes preestablecidos, esquemas y facetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publicar etiquetas en Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publicar ajustes preestablecidos, esquemas y facetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publicar etiquetas en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
 
-Consulte la documentación [de](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información.
+Consulte la documentación [de](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Brand Portal para obtener más información.
 
 
 <!--
