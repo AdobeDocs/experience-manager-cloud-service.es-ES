@@ -3,8 +3,7 @@ title: AEM API de GraphQL para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service con la API de AEM GraphQL para la entrega de contenido sin encabezado.
 feature: Fragmentos de contenido, API de GraphQL
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 1%
@@ -159,7 +158,7 @@ Para habilitar un extremo de GraphQL, primero debe tener una configuración adec
 
 Para habilitar el punto final correspondiente:
 
-1. Vaya a **Tools**, **Sites** y, a continuación, seleccione **GraphQL**.
+1. Vaya a **Tools**, **Assets** y seleccione **GraphQL**.
 1. Seleccione **Crear**.
 1. Se abrirá el cuadro de diálogo **Crear nuevo extremo de GraphQL**. Aquí puede especificar:
    * **Nombre**: nombre del extremo; puede escribir cualquier texto.
@@ -227,7 +226,7 @@ Los casos de uso pueden depender del tipo de AEM como entorno de Cloud Service:
       * GraphQL en AEM as a Cloud Service es actualmente una API de solo lectura.
       * La API de REST se puede utilizar para operaciones CR(u)D.
 
-## Permisos    {#permission}
+## Permisos {#permission}
 
 Los permisos son los necesarios para acceder a Assets.
 
@@ -920,7 +919,7 @@ Consulte [Autenticación para consultas de GraphQL remotas AEM fragmentos de con
 ## Paging {#paging}
 -->
 
-## Preguntas más frecuentes {#faqs}
+## Preguntas frecuentes {#faqs}
 
 Preguntas que han surgido:
 
@@ -929,6 +928,6 @@ Preguntas que han surgido:
    * **A**: &quot;*La API de AEM GraphQL ofrece control total sobre la salida JSON y es un estándar del sector para consultar contenido.
 En adelante, AEM tiene previsto invertir en la API de AEM GraphQL.*&quot;
 
-## Tutorial: Introducción a AEM Headless y GraphQL {#tutorial}
+## Tutorial: Introducción a AEM sin encabezado y GraphQL {#tutorial}
 
 ¿Busca un tutorial práctico? Consulte el tutorial completo [Introducción a AEM sin encabezado y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) que ilustra cómo crear y exponer contenido mediante las API de GraphQL de AEM y consumido por una aplicación externa, en un escenario de CMS sin encabezado.
