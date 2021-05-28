@@ -2,9 +2,9 @@
 title: Conceptos principales de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre los conceptos principales de Adobe Experience Manager as a Cloud Service
 exl-id: 79c5cf70-fc72-4d4d-9dc6-b987cf82ddbd
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '400'
 ht-degree: 87%
 
 ---
@@ -39,10 +39,10 @@ En esta página se muestran los recursos informativos que presentan los concepto
 
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)
-* [Documentación de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
-* [Documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [Documentación de Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
+* [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [Preparación para el RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Tutoriales de Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/cloud-service/overview.html)
+* [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
