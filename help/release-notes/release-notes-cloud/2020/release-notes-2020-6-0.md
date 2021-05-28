@@ -2,11 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.6.0
 description: Notas de la versión de Experience Manager para 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 98%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +23,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de AEM Sites
 
 ### Novedades {#whats-new-2020.6.0}
 
-La versión 2.9.0 de los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) ya está disponible como parte de AEM Sites, incluidos:
+La versión 2.9.0 de los [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) ya está disponible como parte de AEM Sites, incluidos:
 
 * Integración entre [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) y los componentes principales.
 * Atributos de ID HTML configurables para todos los componentes.
@@ -61,11 +60,11 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Un usuario con la función *Propietario empresarial* en Cloud Manager ahora puede eliminar un programa de espacio aislado para pruebas de la página de aterrizaje (con el botón de acción rápida en tarjeta de programa) o desde el programa.
 
-   Consulte [Eliminación de un programa de espacio aislado](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
+   Consulte [Eliminación de un programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
 
 * Un usuario de programa de espacio aislado en la función *Propietario empresarial* o *Administrador de implementación* en Cloud Manager ahora puede eliminar su conjunto de entornos de producción y ensayo en la interfaz de usuario de Cloud Manager. La opción Eliminar ya está disponible en la tarjeta de entorno de la página **Información general de Programas** y en la página **Entornos**. Al seleccionar la opción de eliminación en producción o fase también se eliminan las otras del conjunto.
 
-   Consulte [Eliminación de un programa de espacio aislado](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
+   Consulte [Eliminación de un programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) para obtener más información.
 
 * Marcas de entrenador en la página de aterrizaje para informar e instruir al usuario sobre la navegación básica.
 
@@ -77,11 +76,11 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 
 * Un usuario con la función SysAdmin ahora tiene acceso con un solo clic a la ubicación de Admin Console desde la que se pueden administrar las funciones de los usuarios o los permisos de Cloud Manager. Ahora está disponible el botón **Administrar acceso** en la página de aterrizaje junto al botón **Añadir Programa**.
 
-   Consulte [Tareas de SysAdmin](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obtener más información.
+   Consulte [Tareas de SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) para obtener más información.
 
 * Un usuario con la función SysAdmin ahora tiene acceso con un solo clic a la instancia de autor directamente desde Cloud Manager.
 
-   Consulte [Administración del acceso a la instancia de autor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para obtener más información.
+   Consulte [Administración del acceso a la instancia de autor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) para obtener más información.
 
 * El registro de compilación ahora incluye la lista de artefactos descubiertos, incluidos los paquetes de contenido omitido.
 
