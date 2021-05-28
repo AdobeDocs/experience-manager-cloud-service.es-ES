@@ -2,9 +2,9 @@
 title: Directrices de API de Java
 description: AEM está basado en una pila de software de código abierto que expone muchas API de Java para su uso.
 exl-id: 0be33ec9-a4c3-4400-99d3-ed8366c5b5f9
-source-git-commit: cbcc20e75e4a0cb6d0e060039f4945ff4a85ff5c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Experience Manager (AEM) se basa en una rica pila de software de código a
 
 AEM se basa en los cuatro conjuntos principales de API de Java siguientes en orden descendente de preferencia.
 
-1. **[Adobe Experience Manager (AEM)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)** : abstracciones de productos como páginas, recursos, flujos de trabajo, etc.
+1. **[Adobe Experience Manager (AEM)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)** : abstracciones de productos como páginas, recursos, flujos de trabajo, etc.
 1. **[Apache Sling Web Framework](https://sling.apache.org/apidocs/sling11/)** : REST y abstracciones basadas en recursos como recursos, mapas de valores y solicitudes HTTP.
 1. **[JCR (Apache Jackrabbit Oak)](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)** : abstracciones de datos y contenido, como nodos, propiedades y sesiones.
 1. **[OSGi (Apache Felix)](https://felix.apache.org)** : abstracciones de contenedor de aplicaciones OSGi como servicios y componentes (OSGi).
