@@ -1,14 +1,13 @@
 ---
 title: Crear contenido accesible para Adobe Experience Manager as a Cloud Service (conformidad con WCAG 2.1)
 description: Utilice AEM as a Cloud Service para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '14060'
+source-wordcount: '14050'
 ht-degree: 99%
 
 ---
-
 
 # Crear contenido accesible (Conformidad con WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
@@ -26,7 +25,7 @@ Además, consulte:
 
 * Nuestra [Guía rápida de WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
 * Los [Informes de conformidad de accesibilidad para las soluciones de Adobe](https://www.adobe.com/accessibility/compliance.html).
-* [Accesibilidad en recursos](/help/assets/accessibility.md)
+* [Accesibilidad en Assets](/help/assets/accessibility.md)
 * [Configurar el Editor de texto enriquecido para producir contenido accesible](/help/implementing/developing/extending/rte-accessible-content.md)
 
 Las directrices se clasifican según tres niveles de conformidad: Nivel A (el más bajo), Nivel AA y Nivel AAA (el más alto). Brevemente, los niveles se definen de la siguiente manera:
@@ -69,15 +68,15 @@ Un beneficio útil adicional es que las alternativas textuales permiten indexar 
 
 #### Cómo cumplir: Contenido no textual (1.1.1)      {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, el requisito principal es proporcionar una alternativa textual equivalente para el gráfico. Esto se puede hacer en el campo **Texto alternativo**. Por ejemplo, consulte la **[imagen](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/components/image.html)** del componente principal.
+Para gráficos estáticos, el requisito principal es proporcionar una alternativa textual equivalente para el gráfico. Esto se puede hacer en el campo **Texto alternativo**. Por ejemplo, consulte la **[imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)** del componente principal.
 
 >[!NOTE]
 >
->Algunos componentes principales listos para usar, como **[Carrusel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para todo el componente.
+>Algunos componentes principales listos para usar, como **[Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para todo el componente.
 >
 >Cuando se implementan versiones de estos componentes para su instancia de AEM, su equipo de desarrollo debe configurarlos para dar soporte al atributo `alt` y para que así los autores puedan añadirlo al contenido (consulte Añadir soporte para elementos y atributos HTML adicionales).
 >
->Algunos componentes principales listos para usar, como **[Carrusel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para todo el componente.
+>Algunos componentes principales listos para usar, como **[Carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, no proporcionan un campo **Texto alternativo** para agregar descripciones de texto alternativas a imágenes individuales, aunque existe el campo **Etiqueta** (pestaña **[Accesibilidad](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) para todo el componente.
 >
 >Cuando se implementan versiones de estos componentes para su instancia de AEM, su equipo de desarrollo debe configurarlos para dar soporte al atributo `alt`[ y para que así los autores puedan añadirlo al contenido (consulte Añadir soporte para elementos y atributos HTML adicionales](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
@@ -291,7 +290,7 @@ Siga las directrices que se proporcionan para la [Descripción del audio o medio
 * [Entender los criterios de éxito 1.2.5](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [Cumplir los criterios de éxito 1.2.5](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### Adaptable (1.3)      {#adaptable}
+### Adaptable (1.3)     {#adaptable}
 
 [Directrices 1.3 Adaptable: crear contenido que se pueda presentar de distintas maneras (por ejemplo en un diseño sencillo) sin que pierda información o estructura.](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -464,7 +463,7 @@ Asegúrese de que cualquier información relativa a las características visuale
 * [Entender los criterios de éxito 1.3.3](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [Cumplir los criterios de éxito 1.3.3](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### Distinguible (1.4)      {#distinguishable}
+### Distinguible (1.4)     {#distinguishable}
 
 [Directrices 1.4 Distinguible: Facilitar a los usuarios ver y oír el contenido incluyendo la posibilidad de separar el primer plano del fondo.](https://www.w3.org/TR/WCAG/#distinguishable)
 
