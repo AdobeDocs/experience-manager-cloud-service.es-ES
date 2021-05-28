@@ -1,11 +1,10 @@
 ---
 title: Fase posterior a la migración
 description: Fase posterior a la migración
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '222'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +24,7 @@ Las siguientes herramientas están disponibles para solucionar los problemas de 
 
 La depuración de los entornos de desarrollador de AEM as a Cloud Service está disponible en Developer Console para los entornos de desarrollo, fase y producción.
 
-Consulte [ Implementación para AEM as a Cloud Service](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
+Consulte [ Implementación para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools) para obtener más información sobre las herramientas de desarrollo.
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -40,7 +39,7 @@ Consulte [Desarrollo de CRXDE Lite](/help/implementing/developing/tools/crxde.md
 
 Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
 
-Consulte [Acceso y administración de registros](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) para obtener información sobre cómo acceder y administrar los registros a través de la IU o desde la API de Cloud Manager.
+Consulte [Acceso y administración de registros](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html) para obtener información sobre cómo acceder y administrar los registros a través de la IU o desde la API de Cloud Manager.
 
 ### Asistencia técnica adicional {#additional-support}
 
