@@ -1,14 +1,13 @@
 ---
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
-translation-type: tm+mt
-source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
-
 
 # Directrices de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
 
@@ -88,7 +87,7 @@ El contenido se duplica de Autor a Publicación a través de un mecanismo pub-su
 
 Para el desarrollo local, las entradas de registro se escriben en archivos locales de la carpeta `/crx-quickstart/logs` .
 
-En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrear los registros. <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrear los registros. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
 **Configuración del nivel de registro**
 
@@ -160,7 +159,7 @@ También resulta útil para la depuración, ya que la consola de desarrollador t
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-En el caso de los programas de producción, el acceso a Developer Console se define mediante la función de desarrollador de Cloud Manager en el Admin Console, mientras que para los programas de simulación de pruebas, Developer Console está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para todos los programas, &quot;Cloud Manager - Developer Role&quot; es necesario para los volcados de estado y los usuarios también deben definirse en el perfil de producto de los usuarios de AEM o de los administradores de AEM en los servicios de autor y publicación para ver los datos de volcado de estado de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte [Documentación de Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
+En el caso de los programas de producción, el acceso a Developer Console se define mediante la función de desarrollador de Cloud Manager en el Admin Console, mientras que para los programas de simulación de pruebas, Developer Console está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para todos los programas, &quot;Cloud Manager - Developer Role&quot; es necesario para los volcados de estado y los usuarios también deben definirse en el perfil de producto de los usuarios de AEM o de los administradores de AEM en los servicios de autor y publicación para ver los datos de volcado de estado de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
 ### Servicio de Ensayo y Producción de AEM {#aem-staging-and-production-service}
 
@@ -227,7 +226,7 @@ De forma predeterminada, el correo electrónico saliente está desactivado. Para
 
 ### Envío de correos electrónicos {#sending-emails}
 
-El [servicio OSGI del servicio de correo de CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) debe usarse y los correos electrónicos deben enviarse al servidor de correo indicado en la solicitud de asistencia, en lugar de enviarse directamente a los destinatarios.
+El [servicio OSGI del servicio de correo de CQ Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) debe usarse y los correos electrónicos deben enviarse al servidor de correo indicado en la solicitud de asistencia, en lugar de enviarse directamente a los destinatarios.
 
 AEM CS requiere que el correo se envíe a través del puerto 465. Si un servidor de correo no admite el puerto 465, se puede utilizar el puerto 587, siempre y cuando la opción TLS esté habilitada.
 
@@ -237,9 +236,9 @@ AEM CS requiere que el correo se envíe a través del puerto 465. Si un servidor
 
 ### Configuración {#email-configuration}
 
-Los correos electrónicos de AEM deben enviarse utilizando el [Day CQ Mail Service OSGi service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+Los correos electrónicos de AEM deben enviarse utilizando el [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte la [AEM documentación de 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html) para obtener más información sobre la configuración del correo electrónico. Para AEM como Cloud Service, se deben realizar los siguientes ajustes en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte la [AEM documentación de 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obtener más información sobre la configuración del correo electrónico. Para AEM como Cloud Service, se deben realizar los siguientes ajustes en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
 
 Si se ha solicitado el puerto 465:
 
