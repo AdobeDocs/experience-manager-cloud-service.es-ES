@@ -1,16 +1,23 @@
 ---
 title: Fase de Publicar Go-live
 description: Fase de Publicar Go-live
-translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 73%
 
 ---
 
-
 # Publicar Go-live {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="Solución de problemas AEM"
+>abstract="Revise las prácticas recomendadas para el desarrollo continuo y administre los registros junto con herramientas como Developer Console y CRXDE Lite para ayudar a solucionar problemas con AEM"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="Acceder y administrar registros"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Herramientas de desarrollo de AEM as a Cloud Service"
+
 
 En la fase de Publicar Go-live, se debe garantizar la limpieza de los archivos temporales, revisar las prácticas recomendadas para el desarrollo continuo y administrar los registros.
 
@@ -44,4 +51,10 @@ Consulte [Acceso y administración de registros](https://docs.adobe.com/content/
 
 ### Asistencia técnica adicional {#additional-support}
 
-Si surge alguna pregunta sobre el acceso a Cloud Service, ponte en contacto con el representante de Adobe o con el portal de asistencia de Adobe AEM CQ.
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="Ayuda y asistencia"
+>abstract="Póngase en contacto con nuestro equipo de asistencia AEM para obtener aclaraciones o para solucionar cualquier problema."
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con el Experience Cloud"
+
+Si tiene alguna pregunta sobre el acceso al Cloud Service, póngase en contacto con su representante de Adobes o [Soporte para Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obtener más información.
