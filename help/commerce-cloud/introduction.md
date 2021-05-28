@@ -2,12 +2,11 @@
 title: Introducción y descripción general
 description: Introducción y descripción general del contenido y el comercio. Experience Manager Commerce Integration Framework (CIF) es el patrón recomendado por el Adobe para integrar y ampliar los servicios de comercio de Magento y otras soluciones de comercio de terceros con el Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 74e832f9-f8ff-4901-b4c2-6a2862c51411
-translation-type: tm+mt
-source-git-commit: bc2f54d79a0e6138d551778f00fb19714d3adf74
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 3%
+source-wordcount: '874'
+ht-degree: 2%
 
 ---
 
@@ -59,7 +58,7 @@ Las potentes herramientas del CIF en AEM permiten a los creadores de contenido c
 
 ### Tiempo para el valor (TTV)
 
-Acelera el desarrollo de proyectos con [AEM Componentes principales](https://www.aemcomponents.dev/), [AEM tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia), [AEM tipo de archivo del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) y patrones de integración para PWA (comercio y contenido sin encabezado).
+Acelera el desarrollo de proyectos con [AEM Componentes principales](https://www.aemcomponents.dev/), [AEM tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia), [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) y patrones de integración para PWA (comercio y contenido sin encabezado).
 
 El CIF está diseñado para la innovación continua con un complemento siempre actualizado, que permite al cliente acceder a funciones nuevas y mejoradas.
 
