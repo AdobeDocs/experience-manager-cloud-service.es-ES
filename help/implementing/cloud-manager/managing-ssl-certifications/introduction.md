@@ -2,14 +2,22 @@
 title: 'Introducción: Administración de certificados SSL'
 description: 'Introducción: Administración de certificados SSL'
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Introducción {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_sslcert"
+>title="Administrar certificados SSL"
+>abstract="Cloud Manager proporciona a los clientes la capacidad de autoservicio para instalar certificados SSL a través de la interfaz de usuario de Cloud Manager. Cloud Manager utiliza un servicio de Platform TLS para administrar los certificados SSL y las claves privadas que son propiedad de los clientes y que normalmente se obtienen de entidades emisoras de certificados de terceros."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html" text="Ver, actualizar y reemplazar un certificado SSL"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="Comprobar el estado de un certificado SSL"
+
 
 Cloud Manager proporciona a los clientes la capacidad de autoservicio para instalar certificados SSL a través de la interfaz de usuario de Cloud Manager. Cloud Manager utiliza un servicio de Platform TLS para administrar los certificados SSL y las claves privadas que son propiedad de los clientes y que normalmente se obtienen de las autoridades de certificación de terceros, por ejemplo, *Vamos a cifrar*.
 
