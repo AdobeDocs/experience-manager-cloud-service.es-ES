@@ -2,14 +2,21 @@
 title: 'Introducción: Nombres de dominio personalizados'
 description: 'Introducción: Nombres de dominio personalizados'
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # Introducción {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_domains"
+>title="Administrar nombres de dominio personalizados"
+>abstract="Cloud Manager le permite agregar un dominio personalizado para identificar su sitio con un nombre único con marca de una manera autoservicio a través de la interfaz de usuario. Su Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en *.adobeaemcloud.com. Este nombre de dominio predeterminado permanece, incluso después de adjuntar nombres de dominio personalizados al sitio web."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html" text="Adición de un nombre de dominio personalizado"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html" text="Ver y actualizar nombre de dominio personalizado"
 
 Cloud Manager le permite agregar un dominio personalizado para identificar su sitio con un nombre único con marca de una manera autoservicio a través de la interfaz de usuario. Su Adobe Experience Manager as a Cloud Service se aprovisiona con un nombre de dominio predeterminado que termina en `*.adobeaemcloud.com`. Este nombre de dominio predeterminado permanece, incluso después de adjuntar nombres de dominio personalizados al sitio web.
 
