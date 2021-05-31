@@ -1,9 +1,9 @@
 ---
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a modelar el contenido para AEM entrega sin encabezado mediante Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1830'
 ht-degree: 2%
 
 ---
@@ -277,3 +277,4 @@ Ahora que ha aprendido a modelar su estructura y a crear contenido en función d
 * [Esquemas de AEM GraphQL](access-your-content.md) : cómo GraphQL lleva a cabo los modelos
 * [La estructura de fragmento de contenido de ejemplo](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de contenido y GraphQL.
+   * [Conceptos básicos del modelado de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) : Aprenda a definir y utilizar fragmentos de contenido en Adobe Experience Manager (AEM) para su uso con GraphQL.
