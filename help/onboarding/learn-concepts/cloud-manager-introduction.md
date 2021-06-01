@@ -1,7 +1,7 @@
 ---
 title: Descubra qué es Cloud Manager
 description: Siga esta página para obtener más información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
-source-git-commit: 58d4626da9fccd405cbc32d4a562641359352157
+source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Consulte [Introducción a los programas de espacio aislado](/help/onboarding/get
 Los entornos de nube se crearán, accederán y verán a través de Cloud Manager. Pueden ser entorno de producción, entorno de ensayo o entorno de desarrollo. Los distintos entornos admiten diferentes propósitos y se pueden utilizar con diferentes canalizaciones CI/CD. Los entornos están compuestos por servicios como:
 
 * [AEM Author Services](#author-services)
-* [AEM Publish Services](publish-services)
+* [AEM Publish Services](#publish-services)
 * [Servicios de Dispatcher](#dispatcher-services)
 
    >[!NOTE]
