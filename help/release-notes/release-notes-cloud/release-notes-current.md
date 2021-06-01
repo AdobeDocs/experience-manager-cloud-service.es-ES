@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1093'
 ht-degree: 3%
 
 ---
@@ -142,7 +142,23 @@ La próxima versión está planificada para el 10 de junio de 2021.
 
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
-### Fecha de la versión {#release-date-ctt}
+### Fecha de la versión {#release-date-ctt-latest}
+
+La fecha de versión de la herramienta de transferencia de contenido v1.4.6 es el 27 de mayo de 2021.
+
+### Novedades {#what-is-new-ctt-latest}
+
+* Se agregó una nueva instrucción de registro al registro de errores de inicio rápido si el usuario no tiene permiso de ejecución en el ejecutable de Java.
+
+* Cuando un usuario elimina un conjunto de migración de la interfaz de usuario de CTT, donde se realizó una extracción, la carpeta `tmp` asociada con ese conjunto de migración se eliminará para ahorrar espacio.
+
+### Corrección de errores {#bug-fixes-ctt-latest}
+
+* Al eliminar un conjunto de migraciones, en ocasiones aparecía un mensaje de error no útil en la interfaz de usuario de CTT. Esto se ha solucionado.
+
+* Al ejecutar la Asignación de usuarios, si los usuarios tenían la misma dirección de correo electrónico en el destino y el host pero nombres de usuario diferentes, se producía un error en toda la ingesta. Esto se ha solucionado. En este caso de conflicto, el usuario o grupo se omite y se registra como conflicto en el archivo de registro.
+
+### Fecha de la versión {#release-date-ctt-may}
 
 La fecha de versión de la herramienta de transferencia de contenido v1.4.0 es el 11 de mayo de 2021.
 
