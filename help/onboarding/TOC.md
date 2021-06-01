@@ -5,10 +5,9 @@ breadcrumb-title: Guía de incorporación
 user-guide-description: Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos.
 feature: Implementación
 role: Architect, Developer
-translation-type: tm+mt
-source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
+source-git-commit: 9d9cdcb1b7f08fbfbaa4b0ec19f1b039334329ee
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '703'
 ht-degree: 30%
 
 ---
@@ -17,6 +16,14 @@ ht-degree: 30%
 # Incorporación {#onboarding}
 
 + [Incorporación a AEM as a Cloud Service](/help/onboarding/home.md)
++ Obtenga información sobre los conceptos de incorporación {#onboarding-concepts}
+   + [Administrador del sistema](/help/onboarding/learn-concepts/system-administrator.md)
+   + [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+   + [Sistema Identity Management](/help/onboarding/learn-concepts/ims.md)
+   + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
+   + [Introducción a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+   + [AEM como equipo Cloud Service y perfiles de producto](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
+   + [Compatibilidad con Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + Introducción a AEM como Cloud Service {#what-is-required}
    + [Obtenga su Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Funciones de Cloud Manager](what-is-required/user-roles-permissions.md)
@@ -104,7 +111,7 @@ ht-degree: 30%
 + Metodología de migración {#migration-methodology}
    + [Migración a Adobe Experience Manager as a Cloud Service](migration-methodology/getting-started.md)
 + Prácticas recomendadas   {#best-practices}
-   + [Administración de direcciones SEO y URL ](best-practices/seo-and-url-management.md)
+   + [Administración de direcciones SEO y URL](best-practices/seo-and-url-management.md)
    + [Evaluación de los KPI](best-practices/assessing-kpis.md)
    + [Alineación de KPI](best-practices/aligning-kpis.md)
    + [Elija el equipo adecuado](best-practices/choose-right-team.md)
