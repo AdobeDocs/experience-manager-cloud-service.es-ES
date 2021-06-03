@@ -1,40 +1,39 @@
 ---
 title: Adición de anotaciones de página
-description: Muchos componentes directamente relacionados con contenido le permiten añadir una anotación
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas, ya que utilizaría notas adhesivas para ayudarle en el proceso de revisión de contenido
+exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 100%
+source-wordcount: '700'
+ht-degree: 35%
 
 ---
 
-
 # Adición de anotaciones de página {#adding-page-annotations}
 
-La adición de contenido a las páginas de un sitio web suele someterse a análisis antes de publicarse. Para ayudarle, muchos componentes directamente relacionados con el contenido (en vez de, por ejemplo, el diseño) permiten añadir anotaciones.
+La creación de contenido para la experiencia digital suele requerir análisis y comentarios antes de la publicación. Para facilitar este proceso de comentarios, AEM permite añadir anotaciones al contenido.
 
-Una anotación coloca un boceto o una nota adhesiva de colores en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
+Una anotación coloca un boceto simple o una nota (piensen en la nota adhesiva del mundo real) en la página. La anotación le permite dejar comentarios o preguntas para otros autores y revisores.
 
->[!NOTE]
+>[!TIP]
 >
 >No olvide que también dispone de los [comentarios](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para ofrecer opiniones sobre una página.
 
-## Anotaciones {#annotations}
-
 Se utiliza un modo [especial](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) para crear y ver anotaciones.
 
->[!CAUTION]
+>[!TIP]
 >
->Al eliminar un recurso (p. ej. un componente), se eliminan todas las anotaciones y bocetos relacionados con ese recurso (independientemente de su posición en la página en general).
+>Según sus necesidades, también puede desarrollar un [flujo de trabajo](/help/sites-cloud/authoring/workflows/overview.md) para enviar notificaciones cuando estas se añadan, actualicen o eliminen.
 
->[!NOTE]
->
->En función de sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando estas se añadan, actualicen o eliminen.
+## Indicador de anotaciones {#annotation-indicator}
 
-### Anotación de un componente {#annotating-a-component}
+Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
 
-El modo Anotar permite crear, editar, mover o eliminar anotaciones en el contenido:
+![Indicador de anotaciones](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+
+## Modo de anotación {#annotate-mode}
+
+Las anotaciones solo están visibles en el modo Anotar .
 
 1. Puede acceder al modo Anotar mediante el icono de la barra de herramientas (parte superior derecha) al editar una página:
 
@@ -42,17 +41,23 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    Ahora puede ver todas las anotaciones existentes.
 
-   >[!NOTE]
-   >
-   >Para salir del modo de anotación toque o haga clic en el icono Anotar (símbolo x), en la parte derecha de la barra de herramientas superior.
+   ![Ejemplos de anotaciones](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Haga clic o toque el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
+1. Toque o haga clic en la anotación para abrir el cuadro de diálogo de anotaciones y ver sus detalles.
 
-   >[!NOTE]
-   >
-   >Para dejar de añadir anotaciones (y volver a la visualización), toque o haga clic en el icono Cancelar (símbolo x en un círculo blanco), en la parte izquierda de la barra de herramientas superior.
+   ![Detalles de anotación](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
-1. Haga clic o toque el componente necesario (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
+1. Para salir del modo Anotar y volver al modo utilizado anteriormente, toque o haga clic en el botón x a la derecha de la barra de herramientas superior.
+
+## Adición y edición de anotaciones {#annotating-a-component}
+
+Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o eliminar anotaciones en el contenido
+
+1. [Inicie el ](#annotate-mode) modo Anotar en la página.
+
+1. Toque o haga clic en el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
+
+1. Toque o haga clic en el componente requerido (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
 
    ![Adición de una anotación](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -65,31 +70,22 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
       El cursor cambia a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
 
-   * Elegir o cambiar el color:
+   * Elija o cambie el color:
 
       ![Botón de muestra de color de anotación](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
-   * Eliminar la anotación.
-
-      ![Botón Eliminar anotación](/help/sites-cloud/authoring/assets/annotation-delete.png)
-
-1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se mostrará una vista truncada (la primara palabra) de la anotación, junto con los bocetos, si los hay:
+1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se muestra una vista truncada de la anotación, junto con los bocetos, si los hay:
 
    ![Bocetos de anotación](/help/sites-cloud/authoring/assets/annotation-sketches.png)
 
 1. Cuando haya terminado de editar una anotación concreta, puede:
 
-   * Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
-
-      * Los bocetos no pueden eliminarse independientemente de la anotación.
+   * Toque o haga clic en el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o [eliminar la anotación.](#deleting-annotations)
    * Cambiar la posición del marcador de texto.
-   * Tocar o hacer clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
-   * Desplazar o copiar un componente
+   * Toque o haga clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
+   * Mover o copiar un componente
+      * Las anotaciones relacionadas y sus bocetos también se moverán o copiarán, pero su posición en relación con el párrafo seguirá siendo la misma.
 
-      * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán; su posición en relación con el párrafo seguirá siendo la misma.
-
-
-1. Para salir del modo de anotación y volver al modo anterior, toque o haga clic en el icono Anotar (símbolo x), en la parte derecha de la barra de herramientas superior.
 
 >[!NOTE]
 >
@@ -99,11 +95,37 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 >
 >La definición de un tipo de componente individual determina si se puede añadir una anotación o no en instancias de dicho componente.
 
-## Indicador de anotaciones {#annotation-indicator}
+## Eliminación de anotaciones y bocetos {#deleting-annotations}
 
-Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
+Las anotaciones y sus bocetos asociados se pueden eliminar.
 
-![Indicador de anotaciones](/help/sites-cloud/authoring/assets/annotation-indicator.png)
+1. [Inicie el ](#annotate-mode) modo Anotar en la página.
+
+1. Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación.
+
+1. Toque o haga clic en el icono Eliminar .
+
+   ![Eliminar anotación](/help/sites-cloud/authoring/assets/annotation-delete.png)
+
+1. Se eliminan la anotación y todos los bocetos asociados.
+
+>[!NOTE]
+>
+>Al eliminar un componente, se eliminan todas las anotaciones y bocetos relacionados con ese recurso, independientemente de su posición en la página en general.
+
+## Eliminar sólo bocetos {#deleting-sketches}
+
+Solo puede eliminar bocetos específicos en lugar de toda la anotación con todos los bocetos asociados.
+
+1. [Inicie el ](#annotate-mode) modo Anotar en la página.
+
+1. Toque o haga clic en el boceto. AEM resalta con un cuadro azul más oscuro.
+
+   ![Seleccionar boceto para eliminación](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
+
+1. Presione la tecla Supr del teclado.
+
+1. El boceto se elimina, pero la anotación permanece.
 
 ## Anotación de otros recursos {#annotating-other-resources}
 
