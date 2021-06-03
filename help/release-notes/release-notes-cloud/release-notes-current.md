@@ -2,10 +2,10 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 3%
+source-wordcount: '1349'
+ht-degree: 2%
 
 ---
 
@@ -96,6 +96,29 @@ Consulte el vídeo [Información general de la versión de mayo de 2021](https:/
       >
    * Asia-Pacífico 24 de junio de 2021.
 
+
+## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+
+### Novedades de [!DNL Forms] {#what-is-new-forms}
+
+* **Ayuda contextual**: Se ha añadido ayuda contextual para el editor de formularios adaptables, el editor de plantillas y el editor de temas para ayudar a los autores a comprender mejor las distintas funciones de los editores.
+* **Mensajes de error en el navegador** de propiedades: Se han añadido mensajes de error para cada propiedad en el explorador de propiedades de Forms adaptable. Estos mensajes ayudan a comprender los valores permitidos para un campo.
+
+### Próxima función beta de [!DNL Forms] {#what-is-new-forms-prerelease}
+
+Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo por lotes sincrónico y asincrónico. El servicio de salida permite crear aplicaciones que le permitan:
+
+* Genere documentos de formulario finales rellenando archivos de plantilla con datos XML.
+* Genere formularios de salida en varios formatos, incluidas secuencias de impresión PDF no interactivas.
+* Genere PDFs de impresión a partir de PDFs de formulario XFA.
+
+Puede escribir en formscsbeta@adobe.com para inscribirse en el programa beta.
+
+### Errores corregidos en [!DNL Forms] {#forms-bugs-fixed}
+
+* En el paso Asignar tarea de los flujos de trabajo de AEM Forms, cuando se sustituye el icono predeterminado de los botones de acción por un icono de coral, el flujo de trabajo deja de funcionar y registra una excepción. El flujo de trabajo funciona como se espera cuando se utilizan iconos predeterminados.
+* En la capa de diseño, cuando cambie el número de columnas, abra la capa de edición y arrastre algunos componentes en un panel, los cuadros azules cuadrados empezarán a aparecer en el área de contenido del editor de formularios adaptables y el editor no responderá.
+* Mensaje de error de una opción de editor de reglas relacionada con el suministro de la URL de un recurso adaptable o externo es demasiado largo y no es fácil de usar.
 
 ## Cloud Manager {#cloud-manager}
 
