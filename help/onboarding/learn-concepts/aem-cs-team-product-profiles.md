@@ -1,9 +1,9 @@
 ---
 title: AEM como equipo Cloud Service y perfiles de producto
 description: Siga esta página para obtener más información sobre AEM como equipo Cloud Service y perfiles de producto.
-source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
+source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Perfiles de producto {#profiles}
 
-Al conceder a un usuario acceso a una solución de Adobe específica, no necesariamente desea proporcionarles acceso completo. Los perfiles de producto permiten que cada solución tenga su propio conjunto de permisos de usuario. Están disponibles y son accesibles a través de Adobe Admin Console.
+Al conceder a un usuario acceso a una solución de Adobe específica, no necesariamente desea proporcionarles acceso completo. Los perfiles de producto permiten que cada solución tenga su propio conjunto de permisos de usuario. Están disponibles y son accesibles a través de [Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md).
 
 Obtenga más información sobre [AEM as a Cloud Service product profiles](#aem-product-profiles) y [Cloud Manager product profiles](#cloud-manager-product-profiles) para comprender cómo funcionan de forma conjunta mientras su equipo está configurado.
 
@@ -40,13 +40,13 @@ Cloud Manager tiene perfiles de producto preconfigurados o, más simplemente, pe
 
 Cada uno de los perfiles de producto tiene permisos específicos asociados a él. Por ejemplo, si tiene la función de:
 
-* **Propietario empresarial**, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, añadir, editar o eliminar la canalización y ejecutar cualquier canalización, e implementar código en AEM entorno o calidad de código.
+* **Propietario empresarial**, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, agregar, editar o eliminar la canalización y ejecutar cualquier canalización, e implementar código en AEM entorno o calidad de código.
 
 * **Administrador de implementación**, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en AEM entorno o calidad del código.
 
 * **Desarrollador**, tiene permiso para generar un token de acceso personal para acceder a Git.
 
-* **Administrador de programas**, tiene permiso para acceder a Git.
+* **Administrador de programas**, tiene permiso para programar canalizaciones, anular puertas de calidad de tres niveles y proporcionar aprobación de producción.
 
 Se puede asignar un usuario a varios perfiles de producto. Por ejemplo, si asigna las funciones Propietario empresarial y Administrador de implementación a un usuario, obtendrá la combinación o suma de estos permisos.
 
@@ -57,4 +57,4 @@ Su equipo de Cloud Manager incluirá al menos:
 * Un desarrollador
 
    >[!NOTE]
-   >Para que se le conceda acceso a AEM como Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto `AEM Users-xxx` o `AEM Administrators-xxx`, debe tener permisos para la instancia. No bastarán los permisos para administrar el Cloud Manager asociado.
+   >Para que se le conceda acceso a AEM como Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto, como `AEM Users` o `AEM Administrators`. Debe tener permisos para la instancia, los permisos para administrar el Cloud Manager asociado no serán suficientes.
