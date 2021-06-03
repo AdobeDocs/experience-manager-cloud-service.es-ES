@@ -2,9 +2,9 @@
 title: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1496'
 ht-degree: 4%
 
 ---
@@ -85,6 +85,8 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 * Al actualizar y guardar el valor de los metadatos en un campo de texto de una sola línea, los valores del menú desplegable se eliminan, incluso si las ediciones están desactivadas en el menú desplegable. (CQ-4317077)
 
 * Los puntos suspensivos se pueden usar como anotaciones para revisar los recursos. Cuando se utiliza una elipse pequeña, la elipse se superpone con el número de la anotación en la versión de impresión. (CQ-4316792)
+
+* La opción de publicación rápida no se muestra cuando se selecciona un recurso en los resultados de búsqueda después de buscarlo. (CQ-4317748)
 
 ## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
