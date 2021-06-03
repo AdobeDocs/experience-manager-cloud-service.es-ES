@@ -1,7 +1,7 @@
 ---
 title: AEM como equipo Cloud Service y perfiles de producto
 description: Siga esta página para obtener más información sobre AEM como equipo Cloud Service y perfiles de producto.
-source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
+source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -26,6 +26,8 @@ Los integrantes del equipo de AEM como Cloud Service se añadirán y asignarán 
 * **AEM administrador**: Un administrador de AEM se suele asignar a desarrolladores, en particular a desarrolladores que necesitan tener acceso, por ejemplo, a los entornos de desarrollo. El perfil de producto de los administradores de AEM se utilizará para otorgar privilegios de administrador en la instancia de AEM asociada.
 
 * **AEM usuario**: AEM Los usuarios son los usuarios de su organización que utilizan AEM como Cloud Service como parte del acuerdo con Adobe. Estos miembros deberán acceder a AEM para realizar sus tareas. El perfil de producto AEM Usuarios suele asignarse a un autor de contenido AEM que crea y revisa el contenido (puede ser de varios tipos; por ejemplo: páginas, recursos, publicaciones, etc.) antes de publicarse en el sitio web. El perfil de producto AEM Usuarios que se muestra a continuación se asigna a estos miembros.
+
+   ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
    >[!NOTE]
    >Todos los usuarios asignados a un perfil de producto AEM as a Cloud Service tienen acceso (solo lectura) a Cloud Manager.
