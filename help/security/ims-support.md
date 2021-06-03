@@ -2,10 +2,10 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una ve
 
 >[!NOTE]
 >
->Cualquier usuario creado en IMS puede crearse con un Adobe ID o un Federated ID. Si un usuario está configurado con un Adobe ID, se autentica con el proveedor de identidad de su Compañía para iniciar sesión.
+>Cualquier usuario creado en IMS puede crearse con un Adobe ID o un Federated ID. Si un usuario está configurado con Federated ID, se autentica con el proveedor de identidad de su empresa para iniciar sesión.
 
 Luego se les redirige a la pantalla de inicio de sesión de IMS y deberán introducir sus credenciales:
 
