@@ -2,7 +2,7 @@
 title: Adición de anotaciones de página
 description: Utilice el modo de anotación para dejar anotaciones y bocetos en páginas, ya que utilizaría notas adhesivas para ayudarle en el proceso de revisión de contenido
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 35%
@@ -45,7 +45,7 @@ Las anotaciones solo están visibles en el modo Anotar .
 
 1. Toque o haga clic en la anotación para abrir el cuadro de diálogo de anotaciones y ver sus detalles.
 
-   ![Detalles de anotación](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![Detalles de anotación](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. Para salir del modo Anotar y volver al modo utilizado anteriormente, toque o haga clic en el botón x a la derecha de la barra de herramientas superior.
 
