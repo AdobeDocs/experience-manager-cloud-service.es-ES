@@ -2,9 +2,9 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores sobre los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3659'
 ht-degree: 1%
 
 ---
@@ -450,7 +450,7 @@ Este evento se activa cada vez que se carga (o recarga) el cuadro de diálogo y 
 
 ## Comportamiento de vista previa {#preview-behavior}
 
-La cookie [WCM Mode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) se establece al cambiar al modo de vista previa incluso cuando la página no se actualiza.
+La cookie [WCM Mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) se establece al cambiar al modo de vista previa incluso cuando la página no se actualiza.
 
 Para los componentes con una renderización que son sensibles al modo WCM, deben definirse para actualizarse específicamente y luego depender del valor de la cookie.
 
