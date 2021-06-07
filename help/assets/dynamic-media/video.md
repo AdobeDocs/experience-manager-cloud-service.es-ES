@@ -4,9 +4,9 @@ description: Aprenda a trabajar con vídeo en Dynamic Media.
 feature: Perfiles de vídeo
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
+source-wordcount: '9471'
 ht-degree: 6%
 
 ---
@@ -499,7 +499,7 @@ Google cambia periódicamente su interfaz de usuario. De este modo, los pasos pa
 
 1. Toque **[!UICONTROL ¿Qué credenciales necesito?]**
 1. En la página **[!UICONTROL Agregar credenciales al proyecto]**, paso 2, en el encabezado **[!UICONTROL Crear un ID de cliente de OAuth 2.0]**, introduzca un nombre único (si lo desea) en el campo Nombre. También puede utilizar el nombre predeterminado especificado por Google.
-1. En el encabezado **[!UICONTROL Authorized JavaScript™ origins]**, en el campo de texto, introduzca la siguiente ruta, sustituyendo su propio dominio y número de puerto en la ruta, luego presione **[!UICONTROL Enter]** para agregar la ruta a la lista:
+1. En el encabezado **[!UICONTROL Origen autorizado de JavaScript]**, en el campo de texto, introduzca la siguiente ruta, sustituyendo su propio dominio y número de puerto en la ruta, y luego pulse **[!UICONTROL Entrar]** para agregar la ruta a la lista:
 
    `https://<servername.domain>:<port_number>`
 
@@ -607,7 +607,7 @@ Deje abierta la página Crear configuración de YouTube . regresa a él en un mo
 1. Vuelva al cuadro de diálogo Configuración de cuenta de YouTube. En el campo **[!UICONTROL Configuración JSON]**, pegue el texto JSON.
 1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
 
-   Ahora configurará los canales de YouTube en Experience Manager.
+   Ahora, configure los canales de YouTube en Experience Manager.
 
 1. Toque **[!UICONTROL Agregar canal]**.
 1. En el campo Nombre del canal , introduzca el nombre del canal que ha creado en la tarea **[!UICONTROL Añadir uno o más canales a YouTube]** anteriormente.
@@ -623,7 +623,7 @@ Deje abierta la página Crear configuración de YouTube . regresa a él en un mo
 
 1. Toque **[!UICONTROL Permitir]**.
 
-   Ahora configurará las etiquetas para su publicación.
+   Ahora, configure las etiquetas para su publicación.
 
 1. **[!UICONTROL Configuración de etiquetas para publicación]** : en la página Cloud Services > YouTube, pulse el icono de lápiz para editar la lista de etiquetas que desea utilizar.
 1. Para mostrar la lista de etiquetas disponibles en el Experience Manager, pulse el icono de la lista desplegable (circunflejo invertido).
@@ -653,7 +653,7 @@ Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; regresa 
 1. Vuelva al cuadro de diálogo Configuración de cuenta de YouTube. En el campo **[!UICONTROL Configuración JSON]**, pegue el texto JSON.
 1. Pulse **[!UICONTROL Aceptar]**.
 
-   Ahora configurará los canales de YouTube en Experience Manager.
+   Ahora, configure los canales de YouTube en Experience Manager.
 
 1. A la derecha de **[!UICONTROL Canales disponibles]**, pulse **+** (icono del signo “más”).
 1. En el cuadro de diálogo Configuración de canal de YouTube, en el apartado Título, escriba el nombre del canal que creó en la tarea **[!UICONTROL Agregar uno o más canales a YouTube]** anteriormente.
@@ -669,7 +669,7 @@ Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; regresa 
 
 1. Toque **[!UICONTROL Permitir]**.
 
-   Ahora configurará las etiquetas para su publicación.
+   Ahora, configure las etiquetas para su publicación.
 
 1. **[!UICONTROL Configuración de etiquetas para publicación]** : en la página Cloud Services > YouTube, pulse el icono de lápiz para editar la lista de etiquetas que desea utilizar.
 1. Para mostrar la lista de etiquetas disponibles en el Experience Manager, pulse el icono de la lista desplegable (circunflejo invertido).
@@ -1057,7 +1057,7 @@ Los subtítulos también permiten una buena accesibilidad al usar subtítulos op
 >[!NOTE]
 El reproductor de vídeo que utilice debe admitir la visualización de subtítulos.
 
-Dynamic Media puede convertir archivos de rótulos al formato JSON (JavaScript™ Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear/indexar el contenido para que los vídeos se puedan descubrir más fácilmente y dar a los clientes más detalles sobre el contenido del vídeo.
+Dynamic Media puede convertir archivos de rótulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear/indexar el contenido para que los vídeos se puedan descubrir más fácilmente y dar a los clientes más detalles sobre el contenido del vídeo.
 
 Consulte [Servicio de contenido estático (no de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obtener más información sobre el uso de la función JSON en una URL.
 
