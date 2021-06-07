@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de AEM función de envío sin encabezado.
 feature: Fragmentos de contenido,API HTTP de recursos
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1956'
 ht-degree: 2%
 
 ---
@@ -258,7 +258,7 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 
 >[!NOTE]
 >
->Para obtener más información, consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En concreto, [API de Adobe Experience Manager Assets - Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Para obtener más información, consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En concreto, [API de Adobe Experience Manager Assets - Fragmentos de contenido](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
 
 ### Lectura/Entrega {#read-delivery}
 
@@ -376,7 +376,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias relevantes
 
 Consulte aquí las referencias de API detalladas:
 
-* [API de Adobe Experience Manager Assets: Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API de Adobe Experience Manager Assets: Fragmentos de contenido](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
 
