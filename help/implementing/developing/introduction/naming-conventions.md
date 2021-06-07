@@ -2,9 +2,9 @@
 title: Convenciones de nomenclatura
 description: Los nodos del repositorio están sujetos a las convenciones de nomenclatura del Repositorio de contenidos de Java
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '223'
 ht-degree: 15%
 
 ---
@@ -23,7 +23,7 @@ Estas convenciones de nomenclatura se implementan en varios niveles:
 
 ### Utilidades JCR {#jcr-utilities}
 
-[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtiliza la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtiliza la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
    * Comprueba si el nombre no está vacío y contiene solo caracteres válidos.
@@ -34,7 +34,7 @@ Estas convenciones de nomenclatura se implementan en varios niveles:
 
 ### Administrador de páginas {#page-manager}
 
-[](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager proporciona métodos para operaciones a nivel de página, basados en  [JCRUtil](#jcr-utilities).
+[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html) PageManager proporciona métodos para operaciones a nivel de página, basados en  [JCRUtil](#jcr-utilities).
 
 ### Comportamiento de la interfaz de usuario de AEM {#ui-behavior}
 
