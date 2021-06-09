@@ -4,7 +4,7 @@ description: En esta página se describe cómo crear y administrar canales en Sc
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 4%
@@ -33,7 +33,11 @@ Este documento le ayuda a comprender la creación y administración de canales p
 Siga los pasos a continuación para crear un nuevo canal de secuencia en Screens as a Cloud Service:
 
 1. Vaya al proveedor de contenido de Screens.
-1. Vaya al proyecto de AEM Screens, como San José Cafe.
+
+1. Vaya al proyecto de AEM Screens, como *FirstDigitalExperience*.
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. Seleccione la carpeta **Channels** de su proyecto, como SanJoséCafe —> Channels.
 1. Haga clic en **Crear** en la barra de acciones.
 1. Seleccione la plantilla, como **Sequence Channel** en el asistente **Create** y haga clic en **Next**.
