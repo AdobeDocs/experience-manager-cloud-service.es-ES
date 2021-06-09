@@ -2,18 +2,18 @@
 title: Registro para AEM como Cloud Service
 description: Obtenga información sobre cómo configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos en AEM como Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
 workflow-type: tm+mt
-source-wordcount: '2330'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
 
 # Registro para AEM como Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-AEM como Cloud Service es una plataforma en la que los clientes pueden incluir código personalizado para crear experiencias únicas para su base de clientes. Con esto en mente, el registro es una función crítica para depurar y comprender la ejecución del código en el desarrollo local y los entornos de nube, especialmente los entornos de desarrollo de AEM como Cloud Service.
+AEM como Cloud Service es una plataforma en la que los clientes pueden incluir código personalizado para crear experiencias únicas para su base de clientes. Con esto en mente, el servicio de registro es una función crítica para depurar y comprender la ejecución del código en el desarrollo local y los entornos de nube, especialmente el AEM como entornos de desarrollo de un Cloud Service.
 
-Los niveles de registro y registro de AEM se administran en archivos de configuración que se almacenan como parte del proyecto de AEM en Git y se implementan como parte del proyecto de AEM mediante Cloud Manager. El inicio de sesión en AEM como Cloud Service se puede dividir en dos conjuntos lógicos:
+AEM configuración de registro y los niveles de registro se administran en archivos de configuración que se almacenan como parte del proyecto de AEM en Git y se implementan como parte del proyecto de AEM mediante Cloud Manager. El inicio de sesión en AEM como Cloud Service se puede dividir en dos conjuntos lógicos:
 
 * Registro de AEM, que realiza el registro en el nivel de aplicación de AEM
 * Registro de Apache HTTPD Web Server/Dispatcher, que realiza el registro del servidor web y Dispatcher en el nivel de publicación.
