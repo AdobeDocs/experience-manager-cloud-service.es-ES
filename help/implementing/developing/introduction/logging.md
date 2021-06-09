@@ -2,9 +2,9 @@
 title: Registro para AEM como Cloud Service
 description: Obtenga información sobre cómo configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos en AEM como Cloud Service.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: a4b21fe922d7b4ff77b01425e0a8cf1c904d7922
+source-git-commit: 599f32afbee7514ddad6396bd35707cea5dcca14
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2305'
 ht-degree: 2%
 
 ---
@@ -253,28 +253,30 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-**Formato de registro**
+<!--
+
+**Log Format**
 
 <table>
 <tbody>
 <tr>
-<td>AEM como ID de nodo de Cloud Service</td>
+<td>AEM as a Cloud Service node ID</td>
 <td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
 </tr>
 <tr>
-<td>Dirección IP del cliente</td>
+<td>IP address of the Client</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Usuario</td>
+<td>User</td>
 <td>myuser@adobe.com</td>
 </tr>
 <tr>
-<td>Fecha y hora</td>
-<td>30/Abr/2020:17:37:14 +0000</td>
+<td>Date and time</td>
+<td>30/Apr/2020:17:37:14 +0000</td>
 </tr>
 <tr>
-<td>método HTTP</td>
+<td>HTTP method</td>
 <td>GET</td>
 </tr>
 <tr>
@@ -282,27 +284,42 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
 </tr>
 <tr>
-<td>Protocolo</td>
+<td>Protocol</td>
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>Estado de respuesta HTTP</td>
+<td>HTTP response status</td>
 <td>200</td>
 </tr>
 <tr>
-<td>Tiempo de solicitud HTTP en milisegundos</td>
+<td>HTTP request time in milliseconds</td>
 <td>1141</td>
 </tr>
 <tr>
-<td>Referencia</td>
+<td>Referrer</td>
 <td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
 </tr>
 <tr>
-<td>Agente de usuario</td>
-<td>"Mozilla/5.0 (Macintosh); Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>User agent</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
+
+-->
+
+| AEM como ID de nodo de Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+|---|---|
+| Dirección IP del cliente | - |
+| Usuario | myuser@adobe.com |
+| Fecha y hora | 30/Abr/2020:17:37:14 +0000 |
+| método HTTP | GET |
+| URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
+| Protocolo | HTTP/1.1 |
+| Estado de respuesta HTTP | 200 |
+| Tiempo de solicitud HTTP en milisegundos | 1141 |
+| Referencia | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| Agente de usuario | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
 ### Configuración del registro de acceso HTTP {#configuring-the-http-access-log}
 
