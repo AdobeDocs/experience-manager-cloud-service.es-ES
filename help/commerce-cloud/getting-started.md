@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 30%
@@ -81,7 +81,7 @@ Para conectar AEM con una solución de comercio a través de la CLI de Adobe I/O
 
    Consulte [los documentos sobre CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para obtener más detalles.
 
-   La dirección URL de extremo de Commerce GraphQL debe apuntar al servicio de GraphQl del comercio y utilizar una conexión HTTPS segura. Por ejemplo: `https://demo.magentosite.cloud/graphql`.
+   La dirección URL de extremo de Commerce GraphQL debe apuntar al servicio de GraphQl del comercio y utilizar una conexión HTTPS segura. Por ejemplo: `https://<yourmagentosystem>/graphql`.
 
 4. Habilitar las funciones del catálogo por etapas que requieren autenticación (opcional)
 
