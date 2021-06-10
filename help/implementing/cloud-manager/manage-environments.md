@@ -2,7 +2,7 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
+source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 3%
@@ -93,11 +93,11 @@ Obtenga una vista previa de la experiencia final de un sitio web antes de que ll
 
    Un usuario con los permisos necesarios debe realizar una de las siguientes acciones para *desbloquear* el acceso al servicio de vista previa y proporcionar el acceso deseado:
 
-   1. Cree una Lista de permitidos IP adecuada y aplíquela al servicio de vista previa. Siga esto inmediatamente anulando la aplicación `Preview Default [Env ID] IP Allow List` del servicio de vista previa.
+   * Cree una Lista de permitidos IP adecuada y aplíquela al servicio de vista previa. Siga esto inmediatamente anulando la aplicación `Preview Default [Env ID] IP Allow List` del servicio de vista previa.
 
-      O,
+      *O*,
 
-   1. Utilice el flujo de trabajo de actualización de la Lista de permitidos IP para eliminar la IP predeterminada y agregar las IP según corresponda. Consulte [Visualización y actualización de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)para obtener más información.
+   * Utilice el flujo de trabajo de actualización de la Lista de permitidos IP para eliminar la IP predeterminada y agregar las IP según corresponda. Consulte [Visualización y actualización de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md) para obtener más información.
 
       >[!NOTE]
       >Los pasos anteriores deben realizarse antes de compartir la URL del servicio de vista previa con cualquiera de sus equipos para garantizar que los miembros adecuados de su equipo puedan acceder a la URL de vista previa.
