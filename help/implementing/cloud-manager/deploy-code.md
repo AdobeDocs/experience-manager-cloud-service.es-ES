@@ -2,10 +2,10 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
+source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
@@ -70,46 +70,7 @@ Consulte [Explicación de los resultados de auditoría de experiencias](/help/im
 
 ## Proceso de implementación {#deployment-process}
 
-En la siguiente sección se describe cómo se implementan los paquetes AEM y Dispatcher en la fase de fase y en la fase de producción.
-
-Cloud Manager carga todos los archivos target/*.zip producidos por el proceso de compilación en una ubicación de almacenamiento.  Estos artefactos se recuperan de esta ubicación durante las fases de implementación de la canalización.
-
-Cuando Cloud Manager se implementa en topologías que no son de producción, el objetivo es completar la implementación lo antes posible y, por lo tanto, los artefactos se implementan en todos los nodos de forma simultánea de la siguiente manera:
-
-1. Cloud Manager determina si cada artefacto es un paquete AEM o dispatcher.
-1. Cloud Manager elimina todos los distribuidores del equilibrador de carga para aislar el entorno durante la implementación.
-
-   A menos que se configure lo contrario, puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y ensayo, es decir, separar y adjuntar pasos en ambas canalizaciones que no sean de producción, para entornos de desarrollo y para la canalización de producción, para entornos de ensayo.
-
-   >[!NOTE]
-   >
-   >Se espera que esta función la usen principalmente los clientes 1-1-1.
-
-1. Cada artefacto de AEM se implementa en cada instancia de AEM a través de las API del administrador de paquetes, con dependencias de paquete que determinan el orden de implementación.
-
-   Para obtener más información sobre cómo puede utilizar paquetes para instalar nuevas funciones, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio, consulte Cómo trabajar con paquetes.
-
-   >[!NOTE]
-   >
-   >Todos los artefactos AEM se implementan tanto en el autor como en los editores. Los modos de ejecución deben aprovecharse cuando se requieran configuraciones específicas de nodos. Para obtener más información sobre cómo los modos de ejecución permiten ajustar la instancia de AEM para un fin específico, consulte los modos de ejecución.
-
-1. El artefacto de Dispatcher se implementa en cada Dispatcher de la siguiente manera:
-
-   1. Las configuraciones actuales se respaldan y copian en una ubicación temporal
-   1. Todas las configuraciones se eliminan excepto los archivos inmutables. Consulte Administrar las configuraciones de Dispatcher para obtener más información. Esto borra los directorios para garantizar que no queden archivos huérfanos.
-   1. El artefacto se extrae en el directorio `httpd`.  Los archivos inmutables no se sobrescriben. Los cambios que realice en los archivos inmutables del repositorio de Git se ignorarán en el momento de la implementación.  Estos archivos son fundamentales para el marco de Dispatcher de AMS y no se pueden cambiar.
-   1. Apache realiza una prueba de configuración. Si no se encuentran errores, el servicio se vuelve a cargar. Si se produce un error, las configuraciones se restauran desde la copia de seguridad, el servicio se vuelve a cargar y el error se devuelve a Cloud Manager.
-   1. Cada ruta especificada en la configuración de la canalización se invalida o se vacía de la caché de Dispatcher.
-
-   >[!NOTE]
-   >
-   >Cloud Manager espera que el artefacto de Dispatcher contenga el conjunto completo de archivos.  Todos los archivos de configuración de Dispatcher deben estar presentes en el repositorio de Git. Si faltan archivos o carpetas, se producirá un error de implementación.
-
-1. Después de la implementación correcta de todos los paquetes de AEM y Dispatcher en todos los nodos, los distribuidores se vuelven a añadir al equilibrador de carga y la implementación se completa.
-
-   >[!NOTE]
-   >
-   >Puede omitir los cambios del equilibrador de carga en las implementaciones de desarrollo y fase, es decir, separar y adjuntar pasos en ambas canalizaciones que no sean de producción, para entornos de desarrollador y para la canalización de producción, para entornos de ensayo.
+Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya downtime. Consulte [Cómo funcionan las implementaciones móviles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) para obtener más información.
 
 ### Implementación en fase de producción {#deployment-production-phase}
 
