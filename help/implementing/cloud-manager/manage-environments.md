@@ -2,7 +2,7 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -87,7 +87,7 @@ La función de servicio de vista previa ofrece un servicio de vista previa (publ
 
 Obtenga una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente. Antes de poder ver y utilizar el servicio de vista previa, puede utilizar algunos punteros:
 
-1. **AEM versión**: El entorno debe estar en AEM versión  `2021.5.5343.20210542T070738Z` o superior. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para lograr esto.
+1. **AEM versión**: El entorno debe estar en AEM versión  `2021.05.5368.20210529T101701Z` o superior. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para lograr esto.
 
 1. **Bloqueo** de Lista de permitidos IP predeterminado: Una vez creado, el servicio de vista previa tendrá una Lista de permitidos IP predeterminada aplicada, etiquetada  `Preview Default [Env ID]`.
 
