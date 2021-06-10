@@ -2,9 +2,9 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,9 @@ Un usuario con los permisos necesarios debe realizar una de las siguientes accio
    >[!NOTE]
    >Los pasos anteriores deben realizarse antes de compartir la URL del servicio de vista previa con cualquiera de sus equipos para garantizar que los miembros adecuados de su equipo puedan acceder a la URL de vista previa.
 
-   Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de bloqueo.
+   Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de bloqueo, como se muestra a continuación.
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## Actualización del entorno {#updating-dev-environment}
 
