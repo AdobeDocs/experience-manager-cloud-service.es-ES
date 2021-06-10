@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2322'
 ht-degree: 1%
 
 ---
@@ -214,6 +214,10 @@ Para validar que el tráfico es realmente saliente en la dirección IP dedicada 
 ## Envío de correo electrónico {#sending-email}
 
 AEM como Cloud Service requiere que el correo saliente se encripte. Las secciones siguientes describen cómo solicitar, configurar y enviar correos electrónicos.
+
+>[!NOTE]
+>
+>El servicio de correo se puede configurar con compatibilidad con OAuth2. Para obtener más información, consulte [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md).
 
 ### Solicitud de acceso {#requesting-access}
 
