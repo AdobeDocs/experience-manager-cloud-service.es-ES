@@ -2,56 +2,58 @@
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
 feature: Información de la versión
-source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
+source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '394'
 ht-degree: 3%
 
 ---
 
 
-# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.5.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.6.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.5.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.6.0.
 
 >[!NOTE]
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
-La próxima versión está planificada para el 10 de junio de 2021.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 10 de junio de 2021.
+La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Novedades {#what-is-new}
 
-* La regla de calidad PackageOverlaps ahora detecta casos en los que el mismo paquete se implementó varias veces, es decir, en varias ubicaciones incrustadas, en el mismo conjunto de paquetes implementado.
+* El servicio de vista previa se implementará progresivamente en todos los programas. Se notificará al producto a los clientes cuando su programa esté habilitado para el servicio de vista previa. Consulte [Acceso al servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obtener más información.
 
-* El extremo del repositorio en la API pública ahora incluye la URL de Git.
+* Las dependencias de Maven descargadas durante el paso de compilación ahora se almacenan en caché entre ejecuciones de canalización. Esta función se habilitará para los clientes en las próximas semanas.
 
-* El registro de implementación descargado por un usuario de Cloud Manager será más profundo y ahora incluirá detalles sobre errores y escenarios de éxito.
+* El nombre del programa ahora se puede editar mediante el cuadro de diálogo editar programa .
 
-* Se han resuelto errores intermitentes encontrados al insertar el código en el Git de Adobe.
+* El nombre de rama predeterminado utilizado durante la creación del proyecto y en el comando push predeterminado mediante la administración de flujos de trabajo de Git se ha cambiado a `main`.
 
-* Ahora, el complemento Commerce se puede aplicar a los programas de Sandbox durante el flujo de trabajo Editar programa .
+* Se ha actualizado la edición de la experiencia del programa en la interfaz de usuario.
 
-* Se ha actualizado la experiencia *Edit program*.
+* La regla de calidad `ImmutableMutableMixCheck` se ha actualizado para clasificar los nodos `/oak:index` como inmutables.
 
-* La tabla Nombres de dominio de la página Detalles del entorno mostrará hasta 250 nombres de dominio a través de la paginación.
+* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una sola regla.
 
-* La pestaña **Solutions &amp; Add-ons** de los flujos de trabajo **Add Program** y **Edit Program** mostrará la solución, aunque solo haya una solución disponible para el Programa.
+* Para evitar confusiones, se han consolidado las filas de segmento Publicar AEM y Publicar Dispatcher en la página Detalles del entorno .
 
-* El mensaje de error en el registro de pasos de compilación cuando la compilación no produjo ningún paquete de contenido implementado no estaba claro.
+* Se ha agregado una nueva regla de calidad de código para validar la estructura de los índices `damAssetLucene`. Para obtener más información, consulte [Personalización de los índices Oak de DAM Asset Lucene](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+
+* La página de detalles del entorno ahora mostrará varios nombres de dominio para los servicios de publicación y vista previa (según corresponda). Consulte [Detalles del entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
 
 ### Corrección de errores {#bug-fixes}
 
-* En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
+* Las definiciones de nodo JCR que contenían una nueva línea después del nombre del elemento raíz no se analizaron correctamente.
 
-* En lugar de eliminar las variables &quot;eliminadas&quot;, la API de variables de canalización solo las marcaría con el estado **DELETED**.
+* La API de repositorios de lista no filtraba los repositorios eliminados.
 
-* Algunos problemas de calidad del tipo de hueso de código impactaban incorrectamente en la clasificación de fiabilidad.
+* Se mostraba un mensaje de error incorrecto cuando se proporcionaba un valor no válido para el paso de programación.
 
-* Dado que los dominios comodín no son compatibles, la interfaz de usuario no permitirá que el usuario envíe un dominio comodín.
+* En ocasiones, el usuario puede ver un estado *activo* verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
 
-* Cuando se inició la ejecución de una canalización entre la medianoche y la 01:00 UTC, la versión del artefacto generada por Cloud Manager no estaba buena a la versión creada el día anterior.
+* Algunas secuencias de edición de programas podrían resultar en la incapacidad de crear o editar la canalización de producción.
 
-* Durante la configuración del programa de espacio aislado, una vez que el proyecto con código de muestra se haya creado correctamente, Administrar Git aparecerá como un vínculo desde la tarjeta promocional en la página Información general .
+* Algunas secuencias de edición de programas podrían provocar que la página **Información general** muestre un mensaje engañoso para volver a ejecutar la configuración del programa.
