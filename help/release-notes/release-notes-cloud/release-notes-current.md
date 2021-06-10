@@ -2,9 +2,9 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
+source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1660'
 ht-degree: 2%
 
 ---
@@ -122,12 +122,55 @@ Puede escribir en formscsbeta@adobe.com para inscribirse en el programa beta.
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.5.0.
+Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.6.0 y 2021.5.0.
+
+## Fecha de la versión {#release-date-june-cm}
+
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 10 de junio de 2021.
+La próxima versión está planificada para el 15 de julio de 2021.
+
+### Novedades {#what-is-new-junecm}
+
+* El servicio de vista previa se implementará progresivamente en todos los programas. Se notificará al producto a los clientes cuando su programa esté habilitado para el servicio de vista previa. Consulte [Acceso al servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) para obtener más información.
+
+* Las dependencias de Maven descargadas durante el paso de compilación ahora se almacenan en caché entre ejecuciones de canalización. Esta función se habilitará para los clientes en las próximas semanas.
+
+* El nombre del programa ahora se puede editar mediante el cuadro de diálogo editar programa .
+
+* El nombre de rama predeterminado utilizado durante la creación del proyecto y en el comando push predeterminado mediante la administración de flujos de trabajo de Git se ha cambiado a `main`.
+
+* Se ha actualizado la edición de la experiencia del programa en la interfaz de usuario.
+
+* La regla de calidad `ImmutableMutableMixCheck` se ha actualizado para clasificar los nodos `/oak:index` como inmutables.
+
+* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una sola regla.
+
+* Para evitar confusiones, se han consolidado las filas de segmento Publicar AEM y Publicar Dispatcher en la página Detalles del entorno .
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* Se ha agregado una nueva regla de calidad de código para validar la estructura de los índices `damAssetLucene`. Para obtener más información, consulte [Personalización de los índices Oak de DAM Asset Lucene](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+
+* La página de detalles del entorno ahora mostrará varios nombres de dominio para los servicios de publicación y vista previa (según corresponda). Consulte [Detalles del entorno](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) para obtener más información.
+
+### Corrección de errores {#bug-fixes-junecm}
+
+* Las definiciones de nodo JCR que contenían una nueva línea después del nombre del elemento raíz no se analizaron correctamente.
+
+* La API de repositorios de lista no filtraba los repositorios eliminados.
+
+* Se mostraba un mensaje de error incorrecto cuando se proporcionaba un valor no válido para el paso de programación.
+
+* En ocasiones, el usuario puede ver un estado *activo* verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
+
+* Algunas secuencias de edición de programas podrían resultar en la incapacidad de crear o editar la canalización de producción.
+
+* Algunas secuencias de edición de programas podrían provocar que la página **Información general** muestre un mensaje engañoso para volver a ejecutar la configuración del programa.
+
 
 ### Fecha de la versión {#release-date-cm-may}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
-La próxima versión está planificada para el 10 de junio de 2021.
 
 ### Novedades {#what-is-new-may}
 
