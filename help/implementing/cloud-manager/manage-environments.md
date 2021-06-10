@@ -2,9 +2,9 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1652'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ Obtenga una vista previa de la experiencia final de un sitio web antes de que ll
 
    Un usuario con los permisos necesarios debe realizar una de las siguientes acciones para *desbloquear* el acceso al servicio de vista previa y proporcionar el acceso deseado:
 
-   * Cree una Lista de permitidos IP adecuada y aplíquela al servicio de vista previa. Siga esto inmediatamente anulando la aplicación `Preview Default [Env ID] IP Allow List` del servicio de vista previa.
+   * Cree una Lista de permitidos IP adecuada y aplíquela al servicio de vista previa. Siga esto inmediatamente anulando la aplicación `Preview Default [Env ID] IP Allow List` del servicio de vista previa. Consulte [Cancelar la aplicación de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) para obtener más información.
 
       *O*,
 
