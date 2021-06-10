@@ -2,8 +2,7 @@
 title: 'Edición de un programa de espacio aislado '
 description: Edición de un programa de espacio aislado
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-translation-type: tm+mt
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -31,7 +30,7 @@ Siga los pasos a continuación para editar un programa de espacio aislado:
 
    Vaya a la pestaña **General** para editar la descripción del programa.
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    La pestaña **Solutions &amp; Add-ons** muestra dos opciones, como **Sites** y **Assets** para los programas de producción y Sandbox. Además, puede seleccionar la opción de complemento **Comercio**, que está disponible en **Sitios**, como se muestra en la figura siguiente.
 
@@ -40,7 +39,7 @@ Siga los pasos a continuación para editar un programa de espacio aislado:
    >[!NOTE]
    >Se debe seleccionar al menos una solución para un programa, es decir, el usuario no puede anular la selección de todas las soluciones durante el flujo de trabajo Editar programa .
 
-1. Haga clic en **Save** para completar el flujo de trabajo del programa de edición.
+1. Haga clic en **Update** para completar el flujo de trabajo del programa de edición.
 
 
 ## Consideraciones al editar un programa {#considerations-editing}
