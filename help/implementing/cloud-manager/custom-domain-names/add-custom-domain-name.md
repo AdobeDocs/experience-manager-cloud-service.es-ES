@@ -2,9 +2,9 @@
 title: Adición de un nombre de dominio personalizado
 description: Adición de un nombre de dominio personalizado
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Un usuario debe ser propietario empresarial o administrador de implementación p
 
 * AEM como Cloud Service no admite dominios comodín.
 
-* Cada entorno de Cloud Manager puede alojar hasta un máximo de 100 dominios personalizados por entorno.
+* Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados por entorno.
 
 * No se puede usar el mismo nombre de dominio en más de un entorno.
 
@@ -39,7 +39,7 @@ Siga los pasos a continuación para agregar un nombre de dominio personalizado d
 
 1. Haga clic en el botón **Agregar dominio** para abrir el cuadro de diálogo **Agregar nombre de dominio**.
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. Introduzca el nombre de dominio personalizado en **Domain Name**.
 
@@ -47,6 +47,11 @@ Siga los pasos a continuación para agregar un nombre de dominio personalizado d
    >No debe incluir `http://`, `https://` ni espacios al introducir en el dominio.
 
 1. Seleccione el **Entorno** cuyo servicio de publicación estará asociado con el nombre de dominio.
+
+1. Seleccione el servicio como **Publish** o **Preview**.
+
+   >[!NOTE]
+   >Los nombres de dominio personalizados ahora se admiten en los programas de Cloud Manager para sitios tanto para los servicios de publicación como de vista previa. Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados por entorno. Para obtener más información sobre el servicio de vista previa, consulte [Servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. Seleccione el **Domain SSL Certificate** en la lista desplegable y seleccione **Continue**.
 
