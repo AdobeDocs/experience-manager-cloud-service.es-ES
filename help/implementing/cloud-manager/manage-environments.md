@@ -2,9 +2,9 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1642'
 ht-degree: 3%
 
 ---
@@ -89,9 +89,7 @@ Obtenga una vista previa de la experiencia final de un sitio web antes de que ll
 
 1. **AEM versión**: El entorno debe estar en AEM versión  `2021.5.5343.20210542T070738Z` o superior. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para lograr esto.
 
-1. **Bloqueo** de Lista de permitidos IP predeterminado: Una vez creado, el servicio de vista previa tendrá aplicada una Lista de permitidos IP predeterminada, etiquetada  `Preview Default [Env ID]`, como se muestra en la figura siguiente.
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **Bloqueo** de Lista de permitidos IP predeterminado: Una vez creado, el servicio de vista previa tendrá una Lista de permitidos IP predeterminada aplicada, etiquetada  `Preview Default [Env ID]`.
 
    >[!NOTE]
    >Al crearla por primera vez, debe anular la aplicación de la Lista de permitidos IP predeterminada del servicio de vista previa en su entorno para habilitar el acceso.
