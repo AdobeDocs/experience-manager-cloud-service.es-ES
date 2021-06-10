@@ -2,10 +2,10 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 4%
+source-wordcount: '1620'
+ht-degree: 3%
 
 ---
 
@@ -61,7 +61,6 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
    >[!NOTE]
    >En caso de que aún no haya configurado la canalización que no es de producción, la pantalla *Overview* muestra la tarjeta desde la que puede crear la canalización que no es de producción.
 
-
 ## Detalles del entorno {#viewing-environment}
 
 La tarjeta **Environments** de la página Información general enumera hasta tres entornos.
@@ -76,8 +75,36 @@ La tarjeta **Environments** de la página Información general enumera hasta tre
 
 1. Seleccione cualquiera de los entornos de la lista para ver los detalles del entorno.
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >El servicio de vista previa se implementará progresivamente en todos los programas. Se notificará al producto a los clientes cuando su programa esté habilitado para el servicio de vista previa. Consulte la sección [Acceso al servicio de vista previa](#access-preview-service) para obtener más información.
 
+   ![](assets/environ-preview1.png)
+
+
+### Acceso al servicio de vista previa {#access-preview-service}
+
+La función de servicio de vista previa ofrece un servicio de vista previa (publicación) adicional a cada AEM como entorno de Cloud Service a través de Cloud Manager.
+
+Obtenga una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente. Antes de poder ver y utilizar el servicio de vista previa, puede utilizar algunos punteros:
+
+1. **AEM versión**: El entorno debe estar en AEM versión  `2021.5.5343.20210542T070738Z` o superior. Asegúrese de que una canalización de actualización se haya ejecutado correctamente en su entorno para lograr esto.
+
+1. **Bloqueo** de Lista de permitidos IP predeterminado: Al crearla por primera vez, debe anular la aplicación de la Lista de permitidos IP predeterminada del servicio de vista previa en su entorno para habilitar el acceso.
+
+1. **Publicar contenido para vista previa**: Puede publicar contenido en el servicio de vista previa utilizando la interfaz de usuario Administrar publicación dentro de AEM. Consulte [Vista previa del contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en) para obtener más información.
+
+Un usuario con los permisos necesarios debe realizar una de las siguientes acciones para *desbloquear* el acceso al servicio de vista previa y proporcionar el acceso deseado:
+
+1. Cree una Lista de permitidos IP adecuada y aplíquela al servicio de vista previa. Siga esto inmediatamente anulando la aplicación `Preview Default [Env ID] IP Allow List` del servicio de vista previa.
+
+   O,
+
+1. Utilice el flujo de trabajo de actualización de la Lista de permitidos IP para eliminar la IP predeterminada y agregar las IP según corresponda. Consulte [Visualización y actualización de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)para obtener más información.
+
+   >[!NOTE]
+   >Los pasos anteriores deben realizarse antes de compartir la URL del servicio de vista previa con cualquiera de sus equipos para garantizar que los miembros adecuados de su equipo puedan acceder a la URL de vista previa.
+
+   Una vez desbloqueado el acceso al servicio de vista previa, ya no se mostrará el icono de bloqueo.
 
 ## Actualización del entorno {#updating-dev-environment}
 
@@ -145,9 +172,13 @@ Además, puede iniciar sesión localmente desde la página de resumen **Environm
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## Administración de nombres de dominio personalizados {#manage-cdn}
 
 Vaya a la página de detalles **Entornos** en la página Resumen de Entornos.
+
+>[!NOTE]
+>Los nombres de dominio personalizados ahora se admiten en los programas de Cloud Manager para sitios tanto para los servicios de publicación como de vista previa. Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados por entorno.
 
 Se pueden realizar las siguientes acciones en el servicio Publicar para su entorno, como se describe a continuación:
 
@@ -161,9 +192,13 @@ Se pueden realizar las siguientes acciones en el servicio Publicar para su entor
 
 1. [Comprobación del estado de una Lista de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## Administración de Listas de permitidos IP {#manage-ip-allow-lists}
 
 Vaya a la página Detalles del entorno desde la página Resumen de entornos . Aquí puede realizar las siguientes acciones en los servicios Publicar o Autor para su entorno.
+
+>[!NOTE]
+>La función de Lista de permitidos IP ahora es compatible con Cloud Manager para servicios de autor, publicación y vista previa (disponible en programas de Sites).
 
 ### Aplicación de una Lista de permitidos IP {#apply-ip-allow-list}
 
