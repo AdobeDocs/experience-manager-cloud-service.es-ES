@@ -2,37 +2,39 @@
 title: 'Administrar registros: Cloud Service'
 description: 'Administrar registros: Cloud Service'
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
+source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 13%
+source-wordcount: '235'
+ht-degree: 14%
 
 ---
 
 # Acceder y administrar registros {#manage-logs}
 
-Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de entorno.
+Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta **Environments** de la página **Overview** o la página Environment Details (Detalles del entorno).
 
 ## Descarga de registros {#download-logs}
 
-Siga los pasos a continuación para descargar registros:
+Siga los pasos a continuación para descargar registros.
 
-1. Puede descargar registros a través de la interfaz de usuario desde la tarjeta **Environments** de la página **Overview**:
-
-![](assets/download-logs1.png)
-
-O bien, desde la página Detalles del entorno :
-
-![](assets/download-logs.png)
-
->[!NOTE]
->Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
+1. Vaya a la tarjeta **Environments** desde la página **Overview**.
 
 1. Seleccione **Download Logs** de **...**.
 
-1. En el menú desplegable **Service**, seleccione opciones como **Preview** o **Preview Dispatcher**, seguido de hacer clic en el icono de descarga. Esta acción también se puede realizar desde la página de detalles del entorno.
+   ![](assets/download-logs1.png)
 
-![](assets/download-preview.png)
+   *O bien*,
+
+   Desde la página Detalles del entorno :
+
+   ![](assets/download-logs.png)
+
+   >[!NOTE]
+   >Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
+
+1. En el menú desplegable **Service**, seleccione opciones como **Preview** o **Preview Dispatcher**, seguido de hacer clic en el icono de descarga.
+
+   ![](assets/download-preview.png)
 
 
 ## Registros a través de la API {#logs-through-api}
