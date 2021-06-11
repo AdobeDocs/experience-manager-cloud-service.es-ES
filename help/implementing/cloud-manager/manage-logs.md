@@ -2,20 +2,22 @@
 title: 'Administrar registros: Cloud Service'
 description: 'Administrar registros: Cloud Service'
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 8a70a343be8a6843436f1df26adae5b1935ad4c3
+source-git-commit: fa1dd46798d2b8f9b0476e5ad8eb74679fb4beb7
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 16%
+source-wordcount: '245'
+ht-degree: 13%
 
 ---
 
 # Acceder y administrar registros {#manage-logs}
 
-Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de entorno. Los usuarios pueden acceder a una lista de archivos de registro para el entorno seleccionado.
+Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta de entorno.
 
 ## Descarga de registros {#download-logs}
 
-Estos archivos se pueden descargar a través de la interfaz de usuario desde la tarjeta **Environments** de la página **Overview**:
+Siga los pasos a continuación para descargar registros:
+
+1. Puede descargar registros a través de la interfaz de usuario desde la tarjeta **Environments** de la página **Overview**:
 
 ![](assets/download-logs1.png)
 
@@ -26,22 +28,11 @@ O bien, desde la página Detalles del entorno :
 >[!NOTE]
 >Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
 
-![](assets/download-logs2.png)
-
-## Descarga de registros para el servicio de vista previa {#download-preview-service}
-
-Siga los pasos a continuación para descargar los registros del servicio de vista previa
-
-1. Vaya a la tarjeta **Environments** desde la página **Overview** de Cloud Manager.
-
 1. Seleccione **Download Logs** de **...**.
 
-1. En el menú desplegable **Service**, seleccione **Preview** o **Preview Dispatcher**, seguido de hacer clic en el icono de descarga.
+1. En el menú desplegable **Service**, seleccione opciones como **Preview** o **Preview Dispatcher**, seguido de hacer clic en el icono de descarga. Esta acción también se puede realizar desde la página de detalles del entorno.
 
-   >[!NOTE]
-   >Esta acción también se puede realizar desde la página de detalles del entorno.
-
-   ![](assets/download-preview.png)
+![](assets/download-preview.png)
 
 
 ## Registros a través de la API {#logs-through-api}
