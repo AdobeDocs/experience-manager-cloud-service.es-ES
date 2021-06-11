@@ -2,10 +2,9 @@
 title: 'Introducción a los programas de espacio aislado '
 description: Introducción a los programas de espacio aislado
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-translation-type: tm+mt
-source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
+source-git-commit: 1ecadc0d2b45ee8c94af8d91b35dbd40b08e89b5
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,7 @@ Un Simulador para pruebas (Sandbox) se suele crear para servir a los fines de ca
 
 Los entornos creados en un Simulador para pruebas no están configurados para el escalado automático. Por lo tanto, estos entornos no son adecuados para pruebas de carga o rendimiento.
 
-Los programas de espacio aislado incluyen Sites y Assets y se rellenan automáticamente con un repositorio de Git, un entorno de desarrollo y una canalización que no es de producción.  El repositorio de Git se rellena con un proyecto de muestra basado en el tipo de archivo del proyecto AEM.
+Los programas de espacio aislado incluyen [!DNL Sites] y [!DNL Assets] y se rellenan automáticamente con un repositorio de Git, un entorno de desarrollo y una canalización que no es de producción.  El repositorio de Git se rellena con un proyecto de muestra basado en el tipo de archivo del proyecto AEM.
 
 Consulte [Explicación de los programas y tipos de programas](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) para obtener más información sobre los tipos de programas.
 
@@ -33,7 +32,7 @@ Los Programas del Simulador para pruebas tienen los siguientes atributos:
    * creación de un entorno de desarrollo
    * creación de canalización que no es de producción que se implementa en el entorno de desarrollo (implementación de la rama maestra en el entorno de desarrollo)
 
-1. **Soluciones:** los programas de espacio aislado incluyen AEM Sites y Recursos.
+1. **Soluciones:** los programas de espacio aislado incluyen AEM  [!DNL Sites] y  [!DNL Assets].
 
 1. **AEM actualizaciones:** AEM las actualizaciones se pueden aplicar manualmente a los entornos de un programa de espacio aislado para pruebas y no se insertan automáticamente.
 Consulte [AEM Actualizaciones a entornos de espacio aislado](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox) para obtener más información.
