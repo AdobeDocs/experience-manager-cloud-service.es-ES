@@ -4,9 +4,9 @@ description: Aprenda a trabajar con imágenes interactivas en Dynamic Media.
 feature: Imágenes interactivas
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
+source-wordcount: '4245'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ El siguiente es un banner de ventas con una ventana emergente de vista rápida. 
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-Consulte [imágenes interactivas en acción](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) en la página web que se muestra arriba.
+Consulte [imágenes interactivas en acción](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) en la página web que se muestra arriba.
 
 ## Vea cómo se crean los banners de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ Mire un tutorial sobre [cómo se crean los banners de imagen interactivos](https
 
 La siguiente descripción paso a paso del flujo de trabajo está diseñada para ayudarle a poner en marcha las imágenes interactivas con rapidez en Adobe Experience Manager Assets.
 
-Busque el encabezado **Example** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en un ejemplo de página web [que aún no tiene imágenes interactivas agregadas a ella](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+Busque el encabezado **Example** dentro de algunas de las tareas de inicio rápido. Contiene un breve tutorial basado en un ejemplo de página web [que aún no tiene imágenes interactivas agregadas a ella](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 
 
@@ -147,7 +147,7 @@ Veamos los siguientes ejemplos de direcciones URL de vista rápida y las variabl
 
 **Ejemplo**
 
-Puede aplicar el mismo enfoque utilizado en los tres ejemplos anteriores a la [página web de demostración](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+Puede aplicar el mismo enfoque utilizado en los tres ejemplos anteriores a la [página web de demostración](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
 
 La página web de demostración tiene varias miniaturas de producto, cada una con un botón de vista rápida etiquetado como &quot;Ver más&quot;. Con la herramienta de depuración del explorador web aún activada, haga clic en cada botón y anote las direcciones URL de vista rápida registradas. Después de activar las cuatro vistas rápidas del producto disponibles en la página, tiene la siguiente lista de solicitudes de vista rápida realizadas en el servidor:
 
@@ -339,13 +339,13 @@ El código incrustado copiado está configurado para un entorno interactivo, de 
 
 **Ejemplo**
 
-Con el sitio web de la [demostración como ejemplo](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html), observe que la imagen de las tres personas es una etiqueta estática `IMG`:
+Con el sitio web de la [demostración como ejemplo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), observe que la imagen de las tres personas es una etiqueta estática `IMG`:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-La integración es tan sencilla como eliminar la etiqueta `IMG` y sustituirla por el código incrustado copiado de los recursos de Experience Manager. Puede ver que el resultado [muestra la imagen interactiva de ventas en la página con tres puntos interactivos de círculo](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html).
+La integración es tan sencilla como eliminar la etiqueta `IMG` y sustituirla por el código incrustado copiado de los recursos de Experience Manager. Puede ver que el resultado [muestra la imagen interactiva de ventas en la página con tres puntos interactivos de círculo](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html).
 
 >[!NOTE]
 En este punto, las zonas interactivas de la imagen interactiva de ventas del sitio web de demostración solo tienen fines de visualización. Todavía no están integrados con las vistas rápidas existentes.
@@ -490,7 +490,7 @@ El siguiente es el código fuente completo:
  s7interactiveimageviewer.init();
 ```
 
-El sitio web de la [demostración final con la imagen interactiva completamente integrada](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html).
+El sitio web de la [demostración final con la imagen interactiva completamente integrada](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html).
 
 ## Uso de vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
