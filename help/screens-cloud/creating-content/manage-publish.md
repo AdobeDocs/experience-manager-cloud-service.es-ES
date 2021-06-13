@@ -4,9 +4,9 @@ description: En esta página se describe cómo publicar un canal en Screens como
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,22 @@ Este documento le ayuda a comprender la creación de un nuevo proyecto para su p
 
 Siga los pasos a continuación para publicar el canal:
 
-1. Desplácese y seleccione el canal de su proyecto, como **FirstDigitalExperience** —> Canales —> ChannelFood.
+1. Navegue y seleccione el canal de su proyecto, como **FirstDigitalExperience** —> **Channels** —> **LoopingChannelOne**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. Haga clic en **Administrar publicación** en la barra de acciones.
 
-1. Seleccione la acción como Publicar y Programar como ahora en el asistente Administrar publicación y haga clic en **Siguiente**.
+1. Seleccione **Action** como **Publish** y **Scheduling** como **Now** en el **Asistente para administrar publicación** y haga clic en **Next**.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >Haga clic en **+ Incluir elementos secundarios** en la barra de acciones y desmarque todas las opciones para publicar todos los módulos en el proyecto y haga clic en Agregar para publicar. De forma predeterminada, todas las casillas están marcadas y tendrá que desmarcar manualmente las casillas para publicar todos los módulos en el proyecto.
 
 1. Después de seleccionar el canal en el asistente **Administrar publicación**, haga clic en **Publicar** para publicar el canal.
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## Siguientes {#whats-next}
@@ -48,4 +57,4 @@ Ahora que ha publicado sus canales en el proyecto, puede:
 * Crear y administrar ubicaciones desde el proveedor de contenido de Screens
 * Crear y administrar reproductores desde el proveedor de servicios de Screens
 
-   Debe continuar con el recorrido de su administrador de Screens como Cloud Service de red revisando el documento.
+   Debe continuar con Screens como recorrido de Cloud Service revisando el documento.
