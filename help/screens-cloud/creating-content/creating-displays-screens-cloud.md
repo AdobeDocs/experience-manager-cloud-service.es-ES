@@ -4,7 +4,7 @@ description: En esta página se describe cómo crear y administrar visualizacion
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 14%
@@ -55,4 +55,4 @@ Seleccione la pantalla y haga clic en **Delete** en la parte inferior del panel,
 
 ## Siguientes {#whats-next}
 
-Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido Screens as a Cloud Service revisando el documento [Installing and Configuring Screens Player for AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Asignar canal a una pantalla en Screens como Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).
