@@ -1,14 +1,13 @@
 ---
 title: Comprobación del estado del nombre de dominio
 description: Comprobación del estado del nombre de dominio
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
-
 
 # Comprobación del estado del nombre de dominio {#check-status}
 
@@ -42,7 +41,7 @@ La eliminación del nombre de dominio personalizado está en proceso.
 el nombre de dominio personalizado. Debe volver a intentarlo. Consulte [Eliminación de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) para obtener más información.
 
 
-## Configuraciones preexistentes de CDN para Listas de permitidos IP {#pre-existing-cdn}
+## Configuraciones preexistentes de CDN para nombres de dominio personalizados {#pre-existing-cdn}
 
 Los clientes con entornos que incluyan configuraciones de CDN preexistentes para Listas de permitidos IP, certificados SSL o nombres de dominio personalizados verán el siguiente mensaje en la página de detalles **IP Lista de permitidos** y **Environment**. El mensaje mostrado en la interfaz de usuario desaparecerá una vez que el cliente haya migrado completamente todas las configuraciones de entorno preexistentes a través de la interfaz de usuario y puede tardar entre 1 y 2 días hábiles en desaparecer el mensaje.
 
