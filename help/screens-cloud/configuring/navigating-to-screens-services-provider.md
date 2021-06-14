@@ -1,18 +1,18 @@
 ---
-title: Configuración del proveedor de servicios de Screens
-description: Esta página describe la configuración del proveedor de servicios de Screens.
+title: Navegar al proveedor de servicios de Screens
+description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
 
-# Configuración del proveedor de servicios de Screens {#setup-screens-services-provider}
+# Navegar al proveedor de servicios de Screens {#setup-screens-services-provider}
 
 ## Introducción {#introduction}
 
@@ -44,5 +44,5 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
 ## Siguientes {#whats-next}
 
-Una vez que haya aprendido a configurar el proveedor de servicios de Screens, puede navegar a, el proveedor de contenido de Screens para obtener más información.
+Una vez que haya aprendido a configurar el proveedor de servicios de Screens, puede navegar a, [Usando el proveedor de contenido de Screens](/help/screens-cloud/configuring/using-screens-content-provider.md) para obtener más información.
 
