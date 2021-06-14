@@ -4,10 +4,10 @@ description: En esta página se describe cómo usar el proveedor de contenido de
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,11 @@ En la siguiente sección se describe cómo usar el proveedor de contenido de Scr
 >**Requisitos previos**
 >Antes de comenzar a leer esta sección, consulte [Configuración del proveedor de servicios de Screens](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) para aprender a navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
 
-Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya estará listo para crear el contenido en la reproducción del contenido.
+Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya estará listo para crear el contenido en la reproducción del contenido. Utilice el proveedor de contenido de Screens para crear y administrar:
+
+* Proyectos
+* Canales
+* Ubicaciones
 
 ## Siguientes {#whats-next}
 
