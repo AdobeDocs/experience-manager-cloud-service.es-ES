@@ -4,9 +4,9 @@ description: En esta página se describe cómo asignar un reproductor a una pant
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Una vez que se haya completado la configuración del proyecto, debe asignar el r
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo crear y administrar pantallas en el proveedor de servicios de Screens. Después de leer, debería poder aprender a asignar un reproductor a una pantalla.
+Este documento le ayuda a comprender cómo asignar un reproductor a una pantalla en el proveedor de servicios de Screens. Estos son los pasos obligatorios finales antes de que el contenido empiece a reproducirse en Screens como reproductor Cloud Service.
 
 ## Pasos para asignar un reproductor a una pantalla {#create-display}
 
@@ -36,7 +36,7 @@ Siga los pasos a continuación para asignar un reproductor a una pantalla:
 
 1. Una vez que haya hecho clic en Seleccionar, verá la pantalla asignada en el panel **PANTALLA ASIGNADA**.
 
-   Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debería descargar y comenzar a reproducir contenido. Felicitaciones!
+   Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debería descargar y comenzar a reproducir contenido. **Felicitaciones!**
 
    ![image](/help/screens-cloud/assets/player/output.gif)
 
