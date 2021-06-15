@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre la fase de prep
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Una vez que haya creado un proyecto en Cloud Acceleration Manager, ahora puede e
 
 La fase de preparación incluye:
 
-* Análisis de prácticas recomendadas
-* Planificación y configuración
+* [Análisis de prácticas recomendadas](#best-practices-analysis)
+* [Planificación y configuración](#planning-setup)
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## Uso del análisis de prácticas recomendadas {#best-practices-analysis}
+## Uso de la tarjeta de análisis de prácticas recomendadas {#best-practices-analysis}
 
-Siga los pasos a continuación para utilizar el análisis de prácticas recomendadas:
+Siga los pasos a continuación para utilizar la tarjeta de Análisis de prácticas recomendadas:
 
 1. Haga clic en el botón **Review** de la tarjeta **Best Practices Analysis**.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Siga estos pasos para descargar el Analizador de prácticas recomendadas y ejecutarlo en un clon de su sistema AEM.
+1. Siga estos pasos para descargar el Analizador de prácticas recomendadas (BPA) y ejecutarlo en un clon de su sistema AEM.
 
    1. Vaya al portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) y descargue el Analizador de prácticas recomendadas como archivo zip.
 
@@ -46,10 +46,10 @@ Siga los pasos a continuación para utilizar el análisis de prácticas recomend
 
 1. Revise y explore el tablero de Análisis de prácticas recomendadas en CAM.
 
-   * Al hacer clic en cada tarjeta se abrirá la ficha asociada
-   * Todas las pestañas del informe (incluido el filtrado) se pueden marcar para compartirlas o recuperarlas en el futuro
-   * Ver los detalles de cada búsqueda de informe a través del icono de detalle
-   * Al cargar un nuevo informe, se restablecerán todas las evaluaciones
+   * Haga clic en cada tarjeta para abrir su pestaña asociada
+   * Puede marcar todas las pestañas del informe (incluido el filtrado) para compartirlas o recuperarlas en el futuro
+   * Utilice el icono de detalles para ver los detalles de cada búsqueda de informe
+   * Al cargar un nuevo informe, se restablecen todas las evaluaciones
 
 ## Uso de Planning y Setup {#planning-setup}
 
@@ -66,8 +66,5 @@ Siga esta sección para explorar la tarjeta de actividad Planificación y config
 ## Siguientes {#whats-next}
 
 Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso, Uso de la fase de implementación.
-
-
-
 
 
