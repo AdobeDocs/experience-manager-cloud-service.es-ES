@@ -4,9 +4,9 @@ description: En esta página se describe cómo asignar un reproductor a una pant
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -34,9 +34,11 @@ Siga los pasos a continuación para asignar un reproductor a una pantalla:
 
    ![image](/help/screens-cloud/assets/player/register-player8.png)
 
-1. Una vez que haya hecho clic en Seleccionar, verá la pantalla asignada en el panel **PANTALLA ASIGNADA**.
+## Reproducción de contenido {#content-playback}
 
-   Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debería descargar y comenzar a reproducir contenido. **Felicitaciones!**
+Una vez que haya asignado una pantalla a un reproductor, como se muestra en la sección anterior, verá la pantalla asignada en el panel **PANTALLA ASIGNADA** .
 
-   ![image](/help/screens-cloud/assets/player/output.gif)
+Ahora, la pantalla se asigna al reproductor y el canal comienza a reproducir el contenido. El reproductor debería descargar y comenzar a reproducir contenido. **Felicitaciones!**
+
+![image](/help/screens-cloud/assets/player/output.gif)
 
