@@ -4,9 +4,9 @@ description: En esta página se describen los primeros pasos para empezar a util
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0cc505b7ed96ddf81cae1f92d50d6aa0c9eb7db8
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Haga clic aquí para descargar el paquete de funciones más reciente.
 
 ## Añadir usuarios a Adobe Admin Console {#admin-console}
 
-Una vez que se le haya proporcionado un ID de organización de Adobe Identity Management System (IMS), ahora puede estar integrado en [Adobe Admin Console](https://adminconsole.adobe.com/). Consulte [Usuarios de Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) para obtener más información sobre cómo agregar usuarios al Admin Console.
+Una vez que se le haya proporcionado un ID de organización de Adobe Identity Management System (IMS), ahora puede acceder a [Adobe Admin Console](https://adminconsole.adobe.com/). Consulte [Usuarios de Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html) para obtener más información sobre cómo agregar usuarios al Admin Console.
 
 >[!NOTE]
 >Los usuarios tienen acceso a AEM perfil de producto de Cloud Service para que puedan iniciar sesión en AEM con Adobe ID o el Federated ID.
 
 ## Siguientes {#whats-next}
 
-Ahora que se le ha proporcionado un ID de organización de IMS y se ha agregado como usuario a Adobe Admin Console, puede agregar el complemento Screens al programa nuevo o existente para Screens as a Cloud Service en Cloud Manager.
+Ahora que ha sido aprovisionado con un ID de organización de IMS y agregado como usuario a Adobe Admin Console, puede agregar [Complemento Screens al nuevo programa](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) o a [un programa existente](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) para Screens como Cloud Service en Cloud Manager.
