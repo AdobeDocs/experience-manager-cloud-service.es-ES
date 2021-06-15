@@ -4,7 +4,7 @@ description: En esta página se describe cómo ejecutar una canalización para S
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -59,4 +59,4 @@ En la siguiente sección se describe cómo configurar la canalización de CI/CD 
 
 ## Siguientes {#whats-next}
 
-Una vez que haya aprendido a ejecutar la canalización para su programa en Cloud Manager, ya está listo para pasar al siguiente paso. El siguiente paso es Configurar y configurar el proyecto de Screens.
+Una vez que haya aprendido a configurar un entorno para su programa en Cloud Manager, ya está listo para pasar al siguiente paso en el proceso de incorporación, es decir, [Navegar al proveedor de servicios de Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
