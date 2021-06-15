@@ -4,10 +4,10 @@ description: Esta página describe cómo registrar reproductores en Screens como
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,10 +18,10 @@ Una vez que haya instalado y configurado reproductores para Screens como Cloud S
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo se registran los reproductores en el proveedor de servicios de Screens. Después de leer, debe:
+Este documento le ayuda a comprender cómo se registran los reproductores en el proveedor de servicios de Screens. Después de leer, debe ser capaz de:
 
-* Obtenga información sobre cómo registrar jugadores.
-* Poder administrar los canales en un proyecto de AEM Screens, en términos de ámbito.
+* comprender cómo registrar reproductores
+* cómo completar el proceso de registro del proveedor de servicios de Screens
 
 ## Pasos para registrar un reproductor de Screens {#register-players}
 
@@ -66,3 +66,6 @@ Siga los pasos a continuación para registrar el reproductor:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
+## Siguientes {#whats-next}
+
+Ahora que ha instalado y configurado el reproductor en el modo de nube, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Assigning Player to a Display in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) del proveedor de servicios de Screens.
