@@ -4,9 +4,9 @@ description: En esta página se describe cómo publicar un canal en Screens como
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Puede publicar contenido desde AEM Screens. La función Administrar publicación
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender la creación de un nuevo proyecto para su proyecto de AEM Screens en el proveedor de contenido de Screens. Después de leer, debe:
+Este documento le ayuda a comprender la creación de un nuevo proyecto para su proyecto de AEM Screens en el proveedor de contenido de Screens. Después de leer, debe ser capaz de:
 
-* Obtenga información sobre cómo publicar un canal.
-* Poder administrar la publicación del canal en términos de ámbito.
+* comprenda cómo publicar un canal.
+* administrar publicación, en términos de ámbito
 
 ## Pasos para publicar un canal {#publish-channel}
 
