@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre la fase de prep
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
    * Utilice el icono de detalles para ver los detalles de cada búsqueda de informe
    * Al cargar un nuevo informe, se restablecen todas las evaluaciones
 
-## Uso de Planning y Setup {#planning-setup}
+## Uso de la tarjeta de planificación y configuración {#planning-setup}
 
 Siga esta sección para explorar la tarjeta de actividad Planificación y configuración .
 
