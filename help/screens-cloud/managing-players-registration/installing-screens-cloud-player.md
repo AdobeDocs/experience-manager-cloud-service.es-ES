@@ -4,17 +4,17 @@ description: En esta página se describe cómo instalar y configurar reproductor
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Instalación y configuración de reproductores en Screens as a Cloud Service {#installing-players-screens-cloud}
 
-La sección siguiente describe cómo instalar reproductores de AEM Screens que están registrados en instancias de AEM locales. Además, debe realizar un restablecimiento de fábrica del reproductor existente y, a continuación, registrar el reproductor nuevo con AEM Screens como Cloud Service.
+En esta sección se describe cómo instalar reproductores de AEM Screens que están registrados en instancias de AEM locales. Además, debe realizar un restablecimiento de fábrica del reproductor existente y, a continuación, registrar el nuevo reproductor en AEM Screens como Cloud Service.
 
 ## Objetivo {#objective}
 
