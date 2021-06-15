@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre cómo utilizar 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ Siga los pasos a continuación para navegar hasta Cloud Acceleration Manager (CA
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Creación de un proyecto en Cloud Acceleration Manager {#create-project}
+### Creación y administración de un proyecto en Cloud Acceleration Manager {#create-project}
 
 La página de aterrizaje de Cloud Acceleration Manager (CAM) le permite crear y editar varios proyectos.
 
