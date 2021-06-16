@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre la fase de prep
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
+source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '452'
 ht-degree: 3%
 
 ---
@@ -61,28 +61,35 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
 1. Revise y explore el tablero de Análisis de prácticas recomendadas en CAM. Consulte la sección siguiente [Revisión del informe de análisis de prácticas recomendadas](#analysis-report) para obtener más información.
 
+   >[!NOTE]
+   >Al cargar un nuevo informe, se restablecen todas las evaluaciones.
+
 ### Revisión del informe de análisis de prácticas recomendadas {#analysis-report}
 
-Explore las siguientes tarjetas disponibles en la página de informes:
+Explore las siguientes tarjetas disponibles en la página Informe de análisis de prácticas recomendadas :
 
 >[!NOTE]
->Al cargar un nuevo informe, se restablecen todas las evaluaciones.
+> Con cada tarjeta, tiene la capacidad de:
+>* haga clic en cada tarjeta para abrir su ficha asociada
+>* marque todas las fichas del informe (incluido el filtrado) para compartirlas o recuperarlas en el futuro
+>* utilice el icono de detalles para ver los detalles de cada búsqueda de informe
 
-1. **Propiedades** del informe: Esta tarjeta proporciona información en propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga, etc.
 
-1. **Información general del informe**:
+#### Propiedades del informe {#report-properties}
 
-   Esta tarjeta proporciona los resultados del informe
+Esta tarjeta proporciona información en propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga, etc.
 
-1. **Evaluación de prácticas recomendadas**
+#### Información general del informe {#report-overview}
 
-1. **Evaluación de la complejidad de la migración**
+Esta tarjeta proporciona los resultados del informe
 
-   >[!NOTE]
-   > Además, puede:
-   >* haga clic en cada tarjeta para abrir su ficha asociada
-   >* marque todas las fichas del informe (incluido el filtrado) para compartirlas o recuperarlas en el futuro
-   >* utilice el icono de detalles para ver los detalles de cada búsqueda de informe
+#### Evaluación de prácticas recomendadas {#best-practices-assessment}
+
+Esta tarjeta proporciona un
+
+#### Evaluación de la complejidad de la migración {#migration-complexity-assessment}
+
+Esta tarjeta proporciona
 
 
 ## Uso de la tarjeta de planificación y configuración {#planning-setup}
