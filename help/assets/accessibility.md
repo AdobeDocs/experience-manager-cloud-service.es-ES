@@ -2,16 +2,15 @@
 title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Conozca cómo las funciones de accesibilidad de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ayudan a los usuarios con discapacidades.
 contentOwner: AG
-feature: Accessibility,Asset Management
+feature: Accesibilidad, Administración de activos
 role: Business Practitioner,Architect,Leader
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1915'
 ht-degree: 2%
 
 ---
-
 
 <!--
 Possible topics to cover in this article are below.
@@ -87,7 +86,7 @@ Las siguientes acciones de [!DNL Assets] funcionan con los métodos abreviados d
 | Vista de columna en la interfaz de usuario [!DNL Assets] | Teclas de flecha arriba y abajo | Vaya a archivos y carpetas dentro de la misma jerarquía. |
 | Vista de columna en la interfaz de usuario [!DNL Assets] | Teclas de flecha izquierda y derecha | Vaya a los archivos y carpetas situados encima o debajo de la carpeta actual. |
 | Exploración de carpetas en [!DNL Assets] | `/` | Invocar la búsqueda abriendo el cuadro Omnisearch . |
-| [!DNL Assets] Consola | ` | Conmutar raíles laterales |
+| [!DNL Assets] Consola |  | Conmutar raíles laterales |
 | [!DNL Assets] Consola | `Alt + 1` | Abra el árbol de contenido. |
 | [!DNL Assets] Consola | `Alt + 2` | Abra el carril izquierdo [!UICONTROL Navigation]. |
 | [!DNL Assets] Consola | `Alt + 3` | Mostrar [!UICONTROL Línea de tiempo] de un recurso seleccionado. |
@@ -105,7 +104,7 @@ Las siguientes acciones de [!DNL Assets] funcionan con los métodos abreviados d
 | Páginas de propiedad de recursos | `Ctrl + S` | Guarde los cambios. |
 | [!DNL Assets] Consola | `?` | Consulte una lista de métodos abreviados del teclado. |
 
-## Iniciar sesión y navegar por la [!DNL Assets] interfaz de usuario {#login}
+## Iniciar sesión y navegar por la interfaz de usuario [!DNL Assets] {#login}
 
 Los usuarios pueden utilizar el teclado para desplazarse hasta el campo de inicio de sesión y rellenarlo para iniciar sesión. Los mensajes de error debido a combinaciones incorrectas de nombre de usuario y contraseña en la página de inicio de sesión son anunciados por los lectores de pantalla cada vez que se produce el error.
 
