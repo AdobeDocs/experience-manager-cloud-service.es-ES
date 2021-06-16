@@ -1,16 +1,15 @@
 ---
 title: Markdown
 description: Comprender cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
-feature: Content Fragments
+feature: Fragmentos de contenido
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
-
 
 # Markdown {#markdown}
 
@@ -166,7 +165,7 @@ Puede aplicar negrita al texto de la siguiente manera:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar un intervalo de código, encapsúltelo con comillas de rebote (`). A diferencia de los bloques de código preformateados, un intervalo de código indica el código dentro de un párrafo normal.
+Para indicar un intervalo de código, encapsúlelo con comillas de rebote (&amp;grave;). A diferencia de los bloques de código preformateados, un intervalo de código indica el código dentro de un párrafo normal.
 
 Por ejemplo:
 
