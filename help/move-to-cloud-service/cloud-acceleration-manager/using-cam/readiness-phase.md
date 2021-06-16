@@ -4,10 +4,10 @@ description: Esta página proporciona información general sobre la fase de prep
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
 Explore las siguientes tarjetas disponibles en la página Informe de análisis de prácticas recomendadas :
 
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > Con cada tarjeta, tiene la capacidad de:
 >* haga clic en cada tarjeta para abrir su ficha asociada
@@ -77,11 +79,26 @@ Explore las siguientes tarjetas disponibles en la página Informe de análisis d
 
 #### Propiedades del informe {#report-properties}
 
-Esta tarjeta proporciona información en propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga, etc.
+Esta tarjeta proporciona información sobre las propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager (AEM).
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Información general del informe {#report-overview}
 
 Esta tarjeta proporciona los resultados del informe
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+Al hacer clic en este informe se abre la pestaña **Informe** , tal como se muestra en la figura siguiente.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+Puede filtrar el informe en función de su importancia, subtipo o recuento.
+
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>Consulte [Interpretación del informe de Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) para obtener más información sobre las categorías de hallazgos y los niveles de importancia.
 
 #### Evaluación de prácticas recomendadas {#best-practices-assessment}
 
