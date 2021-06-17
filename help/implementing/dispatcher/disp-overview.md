@@ -3,9 +3,9 @@ title: Dispatcher en la nube
 description: 'Dispatcher en la nube '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6eb200fe661873374258a5953a07b38b2251da43
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4247'
 ht-degree: 6%
 
 ---
@@ -34,9 +34,9 @@ Las herramientas de Dispatcher forman parte del AEM general como SDK de Cloud Se
 
 ## Descarga y extracción de las herramientas {#extracting-the-sdk}
 
-Las herramientas de Dispatcher, que forman parte del [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), se pueden descargar desde un archivo zip en el portal [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Cualquier configuración nueva disponible en esa nueva versión de las herramientas de Dispatcher puede utilizarse para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
+Las herramientas de Dispatcher, que forman parte del [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md), se pueden descargar desde un archivo zip en el portal [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html). Cualquier configuración nueva disponible en esa nueva versión de las herramientas de Dispatcher se puede usar para implementar en entornos de nube que ejecuten esa versión de AEM en la nube o posterior.
 
-Descomprima el SDK, que agrupa las herramientas de Dispatcher tanto para macOS/Linux como para Windows.
+Descomprima el SDK, que agrupa las herramientas de Dispatcher para macOS, Linux y Windows.
 
 **Para macOS/Linux**, haga ejecutable el artefacto de la herramienta Dispatcher y ejecútelo. Extraerá los archivos de herramientas de Dispatcher debajo del directorio en el que los almacenó (donde `version` es la versión de las herramientas de Dispatcher).
 
@@ -112,7 +112,7 @@ Este archivo se incluye desde dentro de sus `.vhost` archivos. Tiene un conjunto
 
 * `conf.d/variables/custom.vars`
 
-Este archivo se incluye desde dentro de sus `.vhost` archivos. Puede colocar definir variables de Apache en esta ubicación.
+Este archivo se incluye desde dentro de sus `.vhost` archivos. Puede añadir definiciones para variables de Apache en esta ubicación.
 
 * `conf.d/variables/global.vars`
 
@@ -253,6 +253,7 @@ La tabla siguiente muestra los módulos Apache admitidos:
 | `mod_rewrite` | [https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) |
 | `mod_security` | [https://modsecurity.org/](https://modsecurity.org/) |
 | `mod_setenvif` | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
+| `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
