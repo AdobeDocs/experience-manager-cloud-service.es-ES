@@ -4,10 +4,10 @@ description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!
 feature: Información de la versión
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 6%
+source-wordcount: '830'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ Las principales diferencias en comparación con [Experience Manager] 6.5 se encu
 * [Microservicios de recursos para procesamiento nativo de la nube](#asset-microservices).
 * [Eliminación de la IU clásica](#classic-ui).
 
-## Ingesta y procesamiento de recursos {#asset-ingestion}
+## Ingesta, procesamiento y distribución de recursos {#asset-ingestion-distribution}
 
 La carga de recursos está optimizada para una mayor eficacia, ya que permite una mejor adaptación de la ingesta, cargas más rápidas, un procesamiento más rápido mediante microservicios y la ingesta masiva. Se actualizan las capacidades del producto (interfaces de usuario web, clientes de escritorio). Además, esto puede afectar a algunas personalizaciones existentes.
 
@@ -33,6 +33,8 @@ La carga de recursos está optimizada para una mayor eficacia, ya que permite un
    * Consulte [configurar y utilizar microservicios de recursos](/help/assets/asset-microservices-configure-and-use.md)
    * Para tener pasos de flujo de trabajo personalizados en el procesamiento, se pueden utilizar [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows).
 
+* Los componentes del sitio web que entregan un archivo binario sin ninguna transformación pueden utilizar la descarga directa. El servlet de Sling GET se actualiza para permitir que los desarrolladores lo hagan de forma predeterminada. Los componentes del sitio web que proporcionan un archivo binario con alguna transformación (por ejemplo, cambiar su tamaño mediante un servlet) pueden seguir funcionando tal cual.
+
 Las representaciones estándar generadas con los microservicios de recursos se almacenan de forma compatible con versiones anteriores en los nodos del repositorio de recursos utilizando las mismas convenciones de nomenclatura.
 
 ## Desarrollar y probar microservicios de recursos {#asset-microservices}
@@ -42,7 +44,6 @@ Los microservicios de recursos proporcionan un procesamiento escalable y flexibl
 Los microservicios de recursos son un servicio nativo de la nube que se aprovisiona automáticamente y se cablea a [!DNL Experience Manager] en programas de clientes y entornos administrados en Cloud Manager. Para ampliar o personalizar [!DNL Experience Manager], los desarrolladores pueden utilizar el contenido o los recursos existentes con representaciones generadas en un entorno de nube, para probar y validar su código utilizando, mostrando y descargando recursos.
 
 Para realizar una validación completa del código y el proceso, incluido el procesamiento e ingesta de recursos, implemente los cambios de código en un entorno de desarrollo en la nube mediante [la canalización](/help/implementing/cloud-manager/configure-pipeline.md) y pruebe con la ejecución completa del procesamiento de los microservicios de recursos.
-
 
 ## Paridad de características con [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 
