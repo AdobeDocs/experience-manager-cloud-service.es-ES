@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
+source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 30%
+source-wordcount: '1104'
+ht-degree: 29%
 
 ---
 
@@ -47,7 +47,7 @@ Opcional y solo para Adobe Commerce Enterprise / Cloud, el complemento CIF admit
 
 Hay dos opciones para configurar el extremo:
 
-### A través de la IU de Cloud Manager (predeterminada) {#cm-ui}
+### A través de la interfaz de usuario de Cloud Manager (predeterminada) {#cm-ui}
 
 Esto se puede hacer mediante un cuadro de diálogo en la página Detalles del entorno . Al ver esta página para un programa habilitado para comercio, se mostrará un botón si el extremo no está configurado actualmente:
 
@@ -61,7 +61,7 @@ Una vez configurado el punto final (opcionalmente, un token de autenticación pa
 
 ![Información sobre el entorno de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
-### Mediante CLI de Adobe I/O {#adobe-cli}
+### Mediante CLI de Adobe I/O  {#adobe-cli}
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -128,6 +128,9 @@ Se pueden configurar las siguientes propiedades:
    >
    > La compatibilidad con los UID se ha introducido en Adobe Commerce (Magento) 2.4.2. Habilite esta opción solo si su servidor de comercio admite un esquema de GraphQL de la versión 2.4.2 o posterior.
 - Identificador de categoría raíz del catálogo: el identificador (UID o ID) de la raíz del catálogo del almacén
+   >[!CAUTION]
+   >
+   > A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se eliminó y se reemplazó por `uid`. Si su proyecto utiliza los componentes principales del CIF versión 2.0.0, debe activar la compatibilidad con el UID del catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz del catálogo&quot;.
 
 La configuración que se muestra arriba es para referencia. Los proyectos deben proporcionar sus propias configuraciones.
 
