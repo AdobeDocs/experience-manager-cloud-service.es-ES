@@ -3,9 +3,9 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '891'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ AEM como Cloud Service se envía con una CDN integrada. Su objetivo principal es
 
 La CDN administrada AEM satisfará la mayoría de los requisitos de rendimiento y seguridad del cliente. Para el nivel de publicación, los clientes pueden opcionalmente apuntar a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función de cumplir ciertos requisitos previos, incluido, entre otros, el cliente que tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
 
-## AEM CDN administrado {#aem-managed-cdn}
+## AEM CDN gestionada  {#aem-managed-cdn}
 
 Siga las secciones a continuación para utilizar la interfaz de usuario de autoservicio de Cloud Manager para prepararse para la entrega de contenido mediante la CDN predeterminada de AEM:
 
@@ -69,6 +69,10 @@ Antes de aceptar el tráfico activo, debe validar con el servicio de asistencia 
 >[!NOTE]
 >
 >Los clientes que administran su propia CDN deben garantizar la integridad de los encabezados que se envían a AEM CDN. Por ejemplo, se recomienda que los clientes borren todos los encabezados `X-Forwarded-*` y los configuren en valores conocidos y controlados. Por ejemplo, `X-Forwarded-For` debe contener la dirección IP del cliente, mientras que `X-Forwarded-Host` debe contener el host del sitio.
+
+>[!NOTE]
+>
+>Los entornos de programa de espacio aislado no admiten una CDN proporcionada por el cliente.
 
 Existe potencialmente una pequeña visita de rendimiento debido al salto adicional, aunque es probable que los saltos de la CDN del cliente a la CDN administrada de AEM sean eficientes.
 
