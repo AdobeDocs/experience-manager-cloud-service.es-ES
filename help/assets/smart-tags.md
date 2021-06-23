@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Etiquetas inteligentes,Etiquetado
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 6%
@@ -61,7 +61,7 @@ Puede etiquetar los siguientes tipos de recursos:
 * [Etiquete sus recursos digitales](#tag-assets).
 * [Administre las etiquetas y las búsquedas](#manage-smart-tags-and-searches).
 
-## Comprender los modelos de etiquetas y las directrices {#understand-tag-models-guidelines}
+## Explicación de los modelos de etiquetas y las directrices {#understand-tag-models-guidelines}
 
 Un modelo de etiqueta es un grupo de etiquetas relacionadas que están asociadas con varios aspectos visuales de las imágenes que se están etiquetando. Las etiquetas están relacionadas con los aspectos visuales de las imágenes, que son claramente diferentes, de modo que, cuando se aplican, las etiquetas ayudan a buscar tipos específicos de imágenes. Por ejemplo, una colección de zapatos puede tener etiquetas diferentes, pero todas las etiquetas están relacionadas con zapatos y pueden pertenecer al mismo modelo de etiquetas. Cuando se aplican, las etiquetas ayudan a encontrar diferentes tipos de zapatos, por ejemplo por color, por diseño o por uso. Para comprender la representación de contenido de un modelo de formación en [!DNL Experience Manager], visualice un modelo de formación como una entidad de nivel superior compuesta por un grupo de etiquetas agregadas manualmente e imágenes de ejemplo para cada etiqueta. Cada etiqueta se puede aplicar exclusivamente a una imagen.
 
@@ -128,7 +128,7 @@ Para crear y entrenar un modelo para etiquetas específicas de su empresa, siga 
 
 *Figura: Pasos del flujo de trabajo de formación para formar el modelo de etiquetado.*
 
-### Ver el estado de la formación y el informe {#training-status}
+### Ver el estado y el informe de la formación {#training-status}
 
 Para comprobar si el servicio Etiquetas inteligentes está formado sobre las etiquetas en el conjunto de recursos de formación, revise el informe del flujo de trabajo de formación desde la consola Informes .
 
@@ -183,7 +183,7 @@ Para imágenes y vídeos, las etiquetas inteligentes se obtienen a partir de un 
 
 Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. En el caso de los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave del texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad que se utiliza para mejorar la detección de recursos en comparación con el índice de búsqueda completa.
 
-## Administrar etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
+## Administración de etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
 Puede depurar las etiquetas inteligentes para eliminar cualquier etiqueta incorrecta que se haya asignado a los recursos de su marca, de modo que solo se muestren las etiquetas más relevantes.
 
