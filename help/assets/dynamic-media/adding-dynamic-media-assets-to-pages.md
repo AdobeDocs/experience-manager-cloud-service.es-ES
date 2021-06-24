@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
+source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
 workflow-type: tm+mt
-source-wordcount: '3186'
-ht-degree: 21%
+source-wordcount: '3222'
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ Los recursos de Dynamic Media se agregan directamente a la página si utiliza [!
 >
 >Asegúrese de publicar los recursos antes de agregarlos a las páginas en [!DNL Experience Manager]. Consulte [Publicación de recursos de Dynamic Media](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Adición de un componente Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
+## Adición de un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
 Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios panorámicos, Recorte inteligente de vídeo o Vídeo 360 a una página es lo mismo que añadir un componente a cualquier página.
 
@@ -172,9 +172,9 @@ Puede editar la siguiente Configuración de Dynamic Media tocando el icono **[!U
 
    ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   Tenga en cuenta que se omiten los valores del RGPD de imágenes inteligentes de Dynamic Media [!DNL Experience Manager].
 
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
@@ -219,7 +219,7 @@ Puede editar la siguiente Configuración de Dynamic Media haciendo clic en **[!U
 
 * **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-#### Al trabajar con Recorte inteligente {#when-working-with-smart-crop}
+#### Trabajar con Recorte inteligente {#when-working-with-smart-crop}
 
 Utilice el componente Dynamic Media para añadir recursos de imagen de recorte inteligente a sus páginas web. Al editar el componente, puede elegir utilizar un ajuste preestablecido de visualizador de vídeo predefinido para reproducir el vídeo en la página.
 
@@ -251,9 +251,9 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
 
    ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   Tenga en cuenta que se omiten los valores del RGPD de imágenes inteligentes de Dynamic Media [!DNL Experience Manager].
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
