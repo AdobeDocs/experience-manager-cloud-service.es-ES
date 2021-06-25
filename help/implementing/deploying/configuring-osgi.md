@@ -3,15 +3,14 @@ title: Configuración de OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuración de OSGi con valores secretos y valores específicos de entorno '
 feature: Implementación
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-translation-type: tm+mt
-source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
+source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2927'
 ht-degree: 0%
 
 ---
 
-# Configuración de OSGi para Adobe Experience Manager como Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+# Configuración de OSGi para Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [](https://www.osgi.org/) OSGies un elemento fundamental de la pila de tecnología de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y sus configuraciones.
 
@@ -55,9 +54,13 @@ Si se aplican varias configuraciones para el mismo PID, se aplica la configuraci
 
 La granularidad de esta regla se encuentra en el nivel de PID. Esto significa que no puede definir algunas propiedades para el mismo PID en `/apps/example/config.author/` y otras más específicas en `/apps/example/config.author.dev/` para el mismo PID. La configuración con el mayor número de modos de ejecución coincidentes será efectiva para todo el PID.
 
+>[!NOTE]
+>
+>Una `config.preview` carpeta de configuración OSGI **no puede** declararse de la misma manera que una `config.publish` puede declararse una carpeta. En su lugar, el nivel de vista previa hereda su configuración OSGI de los valores del nivel de publicación.
+
 Al desarrollar localmente, se puede pasar un parámetro de inicio de modo de ejecución para dictar qué configuración de OSGI de modo de ejecución se utiliza.
 
-## Tipos de valores de configuración OSGi {#types-of-osgi-configuration-values}
+## Tipos de valores de configuración de OSGi {#types-of-osgi-configuration-values}
 
 Existen tres variedades de valores de configuración OSGi que se pueden usar con Adobe Experience Manager como Cloud Service.
 
@@ -97,7 +100,7 @@ Existen tres variedades de valores de configuración OSGi que se pueden usar con
 
 ## Cómo elegir el tipo de valor de configuración de OSGi apropiado {#how-to-choose-the-appropriate-osgi-configuration-value-type}
 
-El caso común para OSGi utiliza valores de configuración de OSGi en línea. Las configuraciones específicas del entorno se utilizan solo para casos de uso específicos en los que un valor difiere entre entornos de desarrollo.
+El caso común de OSGi utiliza valores de configuración de OSGi en línea. Las configuraciones específicas del entorno se utilizan solo para casos de uso específicos en los que un valor difiere entre entornos de desarrollo.
 
 ![](assets/choose-configuration-value-type_res1.png)
 
@@ -115,14 +118,14 @@ Los valores de las configuraciones en línea se consideran el enfoque estándar 
 
 Siempre que defina un valor de configuración OSGi, comience con valores en línea y seleccione únicamente configuraciones secretas o específicas del entorno si es necesario para el caso de uso.
 
-### Cuándo usar valores de configuración específicos de entorno no secreto {#when-to-use-non-secret-environment-specific-configuration-values}
+### Cuándo usar valores de configuración específicos de entornos no secretos {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Utilice únicamente configuraciones específicas del entorno (`$[env:ENV_VAR_NAME]`) para valores de configuración no secretos cuando los valores varían entre entornos de desarrollo. Esto incluye instancias de desarrollo locales y cualquier entorno de desarrollo de Adobe Experience Manager as a Cloud Service. Evite utilizar configuraciones específicas de entorno no secreto para Adobe Experience Manager como fase de Cloud Service o entornos de producción.
+Utilice únicamente configuraciones específicas del entorno (`$[env:ENV_VAR_NAME]`) para valores de configuración no secretos cuando los valores varían para el nivel de vista previa o varían entre entornos de desarrollo. Esto incluye instancias de desarrollo locales y cualquier entorno de desarrollo de Adobe Experience Manager as a Cloud Service. Aparte de establecer valores únicos para el nivel de vista previa, evite utilizar configuraciones específicas de entorno no secreto para Adobe Experience Manager como escenario de Cloud Service o entornos de producción.
 
-* Utilice únicamente configuraciones específicas del entorno no secreto para valores de configuración que difieran entre entornos de desarrollo, incluidas las instancias de desarrollo local.
-* En su lugar, utilice los valores en línea estándar en las configuraciones OSGi para los valores no secretos de fase y producción. En relación con esto, no se recomienda utilizar configuraciones específicas del entorno para facilitar la realización de cambios de configuración en tiempo de ejecución en entornos de fase y producción; estos cambios deben introducirse mediante la administración del código fuente.
+* Utilice únicamente configuraciones específicas de entorno no secreto para valores de configuración que difieran entre el nivel de publicación y vista previa, o para valores que difieran entre entornos de desarrollo, incluidas instancias de desarrollo local.
+* Además del escenario en el que el nivel de vista previa necesita variar desde el nivel de publicación, utilice los valores en línea estándar en las configuraciones OSGi para los valores no secretos de fase y producción. En relación con esto, no se recomienda utilizar configuraciones específicas del entorno para facilitar la realización de cambios de configuración en tiempo de ejecución en entornos de fase y producción; estos cambios deben introducirse mediante la administración del código fuente.
 
-### Cuándo usar valores de configuración específicos de entorno secreto {#when-to-use-secret-environment-specific-configuration-values}
+### Cuándo utilizar valores de configuración específicos de entornos secretos {#when-to-use-secret-environment-specific-configuration-values}
 
 Adobe Experience Manager como Cloud Service requiere el uso de configuraciones específicas del entorno (`$[secret:SECRET_VAR_NAME]`) para cualquier valor de configuración OSGi secreto, como contraseñas, claves de API privadas o cualquier otro valor que no se pueda almacenar en Git por motivos de seguridad.
 
@@ -144,7 +147,7 @@ Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi ut
 1. Guarde los cambios en el nuevo archivo `.cfg.json`
 1. Añadir y confirmar el nuevo archivo de configuración OSGi en Git
 
-### Generación de configuraciones de OSGi mediante el inicio rápido del SDK de AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Generación de configuraciones de OSGi mediante el inicio rápido AEM SDK {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 La consola web AEM del SDK de AEM Quickstart Jar se puede utilizar para configurar componentes OSGi y exportar configuraciones de OSGi como JSON. Esto resulta útil para configurar componentes OSGi proporcionados por AEM, cuyas propiedades OSGi y sus formatos de valor pueden no ser bien entendidos por el desarrollador que define las configuraciones OSGi en el proyecto AEM.
 
@@ -207,7 +210,7 @@ La configuración OSGi debe asignar un marcador de posición para el secreto que
 use $[secret:SECRET_VAR_NAME]
 ```
 
-### Nombre de variable {#variable-naming}
+### Asignación de nombres a variables {#variable-naming}
 
 Lo siguiente se aplica a los valores de configuración secreta y específica del entorno.
 
@@ -258,7 +261,7 @@ Si una propiedad OSGI requiere valores diferentes para autor y publicación:
 * Se deben utilizar carpetas OSGi separadas `config.author` y `config.publish`, tal como se describe en la sección [Resolución del modo de ejecución](#runmode-resolution).
 * Hay dos opciones para crear los nombres de variables independientes que deben usarse:
    * la primera opción, que se recomienda: en todas las carpetas OSGI (como `config.author` y `config.publish`) declaradas para definir valores diferentes, utilice el mismo nombre de variable. Por ejemplo
-      `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado de ese nivel (autor o publicación). Al configurar la variable de entorno mediante [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) o a través de un cliente, diferencie entre los niveles mediante el parámetro &quot;servicio&quot; como se describe en esta [documentación de referencia de API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGI apropiado.
+      `$[env:ENV_VAR_NAME;default=<value>]`, donde el valor predeterminado corresponde al valor predeterminado de ese nivel (autor o publicación). Al configurar la variable de entorno mediante [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) o a través de un cliente, diferencie entre los niveles mediante el parámetro &quot;servicio&quot; como se describe en esta [documentación de referencia de API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). El parámetro &quot;service&quot; enlazará el valor de la variable al nivel OSGI apropiado. Puede ser &quot;autor&quot;, &quot;publicación&quot; o &quot;previsualización&quot;.
    * la segunda opción, que es declarar variables distintas con un prefijo como `author_<samevariablename>` y `publish_<samevariablename>`
 
 ### Ejemplos de configuración {#configuration-examples}
@@ -449,7 +452,7 @@ config.dev
 </tr>
 </table>
 
-## Formato de API de Cloud Manager para establecer propiedades {#cloud-manager-api-format-for-setting-properties}
+## Formato de API de Cloud Manager para la configuración de propiedades {#cloud-manager-api-format-for-setting-properties}
 
 Consulte [esta página](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) sobre cómo se debe configurar la API.
 >[!NOTE]
