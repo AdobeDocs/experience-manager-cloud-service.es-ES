@@ -2,15 +2,15 @@
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
+source-git-commit: 344a42f31444d30e9304b3a2198b1a4df17aa9c0
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1663'
 ht-degree: 2%
 
 ---
 
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service {#release-notes}
+# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La siguiente sección describe las notas de la versión generales de la versión actual (más reciente) de [!DNL Experience Manager] como Cloud Service.
 
@@ -26,7 +26,7 @@ La siguiente sección describe las notas de la versión generales de la versión
 La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2021.5.0 es el 27 de mayo de 2021.
 La siguiente versión (2021.6.0) se publicará el 24 de junio de 2021.
 
-## Lanzamiento de vídeo {#release-video}
+## Vídeo de la versión {#release-video}
 
 Consulte el vídeo [Información general de la versión de mayo de 2021](https://video.tv.adobe.com/v/333602) para ver un resumen de las funciones agregadas.
 
@@ -69,33 +69,7 @@ Consulte el vídeo [Información general de la versión de mayo de 2021](https:/
 
 * La proporción de píxeles de dispositivos de imágenes inteligentes (DPR) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Consulte [preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >La cronología de versiones para las mejoras de imágenes inteligentes anteriores es:
-   >
-   >* América del Norte 24 de mayo de 2021 en NA,
-      >
-      >
-   * Europa, Oriente Medio y África 25 de junio de 2021,
-      >
-      >
-   * Asia-Pacífico 19 de julio de 2021.
-
-
-* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en el envío [!DNL Dynamic Media] (modificador de URL de fmt).
-
-   >[!NOTE]
-   >
-   >El calendario de versiones para la compatibilidad con AVIF es:
-   >
-   >* Norteamérica, 10 de mayo de 2021,
-      >
-      >
-   * Europa, Oriente Medio y África 24 de mayo de 2021,
-      >
-      >
-   * Asia-Pacífico 24 de junio de 2021.
-
+* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en el envío [!DNL Dynamic Media] (`fmt` modificador de URL). Para obtener más información y cronología, consulte [servicio de imágenes y renderización de API fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
