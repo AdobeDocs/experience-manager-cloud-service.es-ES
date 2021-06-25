@@ -1,13 +1,13 @@
 ---
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
-source-git-commit: 9b4ac173c55380cbc06de64677470818aa801df4
+exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
+source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Vista previa del contenido {#previewing-content}
 
@@ -19,7 +19,7 @@ AEM ofrece un servicio de vista previa de sitios diseñado para permitir que los
 
 Facilita la previsualización de experiencias de página que de otra manera no serían visibles desde el entorno de creación, como transiciones de página y otro contenido solo de publicación.
 
-## Publicar contenido para previsualizar {#publishing-content-to-preview}
+## Publicar contenido para previsualización {#publishing-content-to-preview}
 
 Puede publicar contenido en el servicio de vista previa utilizando la IU de publicación administrada de la siguiente manera:
 
@@ -38,3 +38,27 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 Consulte [Administrar los entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
 
+## Configuración de OSGi para el nivel de vista previa {#configuring-osgi-settings-for-the-preview-tier}
+
+Los valores de las propiedades OSGI de su capa de vista previa se heredan del nivel de publicación, pero los valores de este nivel se pueden distinguir del del de publicación mediante valores específicos del entorno que establecen el parámetro de servicio con el valor &quot;preview&quot;. Tomemos el ejemplo siguiente de una propiedad OSGI que determina la dirección URL de un extremo de integración:
+
+```
+[
+{
+"name":"INTEGRATION_URL",
+"type":"string",
+"value":"http://s2.integrationvendor.com",
+"service": "preview"
+}
+]
+```
+
+Para obtener más información, consulte [esta sección](/help/implementing/deploying/configuring-osgi.md#author-vs-publish-configuration) de la documentación de configuración de OSGi.
+
+## Depuración de la vista previa mediante Developer Console {#debugging-preview-using-the-developer-console}
+
+Siga estos pasos para depurar el nivel de vista previa mediante Developer Console:
+
+* En [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleccione **— Todas las previsualizaciones —** o un entorno de producción que incluya **prev** en su nombre
+* Generar la información relevante para la instancia de vista previa
+Consulte [Administrar los entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
