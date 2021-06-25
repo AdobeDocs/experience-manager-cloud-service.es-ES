@@ -2,10 +2,10 @@
 title: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service
 description: Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service.
 exl-id: fb169e85-ac19-4962-93d9-abaed812f948
-source-git-commit: 74b2720eae1fbc986cd1a252180a4b7f4187ed16
+source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 95%
+source-wordcount: '1782'
+ht-degree: 82%
 
 ---
 
@@ -99,7 +99,7 @@ Inicialmente, AEM as a Cloud Service dispone de dos tipos de programas:
 
 * AEM Cloud Assets Service
 
-Ambos permiten el acceso a una serie de funciones y características. La capa de creación contendrá todas las funciones de Sites y Assets para todos los programas, pero los programas de Assets no tendrán una capa de publicación de forma predeterminada.
+Ambos permiten el acceso a una serie de funciones y características. La capa de creación contendrá todas las funciones de Sites y Assets para todos los programas, pero los programas de Assets no tendrán una capa de publicación ni una capa de vista previa de forma predeterminada.
 
 ## Arquitectura de tiempo de ejecución {#runtime-architecture}
 
@@ -120,6 +120,8 @@ Hay varios componentes principales de esta nueva arquitectura:
       * El inicio de sesión en el nivel de creación se administra mediante Adobe Identity Management Services (IMS).
 
       * La integración y el procesamiento de recursos utilizan un servicio de procesamiento de Assets específico.
+   * El nivel de vista previa consta de un nodo de vista previa único. Se utiliza para garantizar la calidad del contenido antes de publicarlo en el nivel de publicación.
+
    * El nivel de publicación consta de dos o más nodos dentro de un único conjunto de servidores de publicación: pueden operar de forma independiente entre sí. Cada nodo consta de un editor de AEM y un servidor web equipado con el módulo de AEM Dispatcher. Se adapta automáticamente según las necesidades de tráfico del sitio.
 
       * Los usuarios finales, o los visitantes del sitio, visitan el sitio web a través del servicio de AEM Publish.
@@ -129,15 +131,15 @@ Hay varios componentes principales de esta nueva arquitectura:
 
    * La arquitectura solo incluye un entorno de creación.
 
-* Tanto el nivel de creación como el de publicación leen y conservan el contenido desde o hacia un servicio de repositorio de contenido.
+* Tanto el nivel de creación como el de vista previa y el de publicación leen y conservan el contenido desde/hacia un servicio de repositorio de contenido.
 
-   * El nivel de publicación solo lee contenido de la capa de persistencia.
+   * El nivel de publicación y el de vista previa solo leen contenido de la capa de persistencia.
 
    * El nivel de creación lee y escribe contenido desde y hacia la capa de persistencia.
 
-   * El almacenamiento de blobs se comparte en el nivel de publicación y en el de creación. Los archivos no se *mueven*.
+   * El almacenamiento de blobs se comparte en los niveles de publicación, vista previa y autor. los archivos no se *mueven*.
 
-   * Cuando el contenido se aprueba desde el nivel de creación, esto indica que se puede activar, por lo que se envía a la capa de persistencia del nivel de publicación. Esto sucede a través del servicio de replicación, un conducto de software intermedio. Esta canalización recibe el nuevo contenido y los nodos de servicio de publicación individuales se suscriben al contenido insertado en la canalización.
+   * Cuando el contenido se aprueba desde el nivel de creación, esto indica que se puede activar, por lo que se envía a la capa de persistencia del nivel de publicación; o, opcionalmente, al nivel de vista previa. Esto sucede a través del servicio de replicación, un conducto de software intermedio. Esta canalización recibe el nuevo contenido, con los nodos individuales del servicio de publicación (o servicio de vista previa) suscritos al contenido insertado en la canalización.
 
       >[!NOTE]
       >
@@ -147,15 +149,15 @@ Hay varios componentes principales de esta nueva arquitectura:
 
    * El acceso a los niveles de creación y publicación siempre se produce mediante un equilibrador de carga. Siempre está actualizado con los nodos activos de cada uno de los niveles.
 
-   * Para el nivel de publicación, también está disponible un servicio de red de entrega continua (CDN) como primer punto de entrada.
+   * Para el nivel de publicación y el de vista previa, también está disponible un servicio de red de entrega continua (CDN) como primer punto de entrada.
 
 * En el caso de instancias de demostración de AEM as a Cloud Service, la arquitectura se simplifica a un solo nodo de creación. Por lo tanto, no presenta todas las características del desarrollo, la fase o el entorno de producción estándar. Esto también significa que puede haber cierto tiempo de inactividad y que no hay soporte para operaciones de copia de seguridad y restauración.
 
 ## Arquitectura de implementación {#deployment-architecture}
 
-Cloud Manager administra todas las actualizaciones de las instancias de AEM as a Cloud Service. Es obligatorio, ya que es la única manera de crear, probar e implementar la aplicación del cliente, tanto para el creador como para los niveles de publicación. Estas actualizaciones las puede activar Adobe, cuando hay lista una nueva versión de AEM Cloud Service, o el cliente, cuando hay una nueva versión de su aplicación lista.
+Cloud Manager administra todas las actualizaciones de las instancias de AEM as a Cloud Service. Es obligatorio, ya que es la única forma de crear, probar e implementar la aplicación del cliente, tanto para el autor como para los niveles de vista previa y publicación. Estas actualizaciones las puede activar Adobe, cuando hay lista una nueva versión de AEM Cloud Service, o el cliente, cuando hay una nueva versión de su aplicación lista.
 
-Técnicamente, esto se lleva a cabo debido al concepto de una canalización de implementación, junto con cada entorno dentro de un programa. Cuando se está ejecutando una canalización de Cloud Manager, se crea una nueva versión de la aplicación del cliente, tanto para el nivel de creación como para el de publicación. Esto se logra combinando los últimos paquetes de clientes con la última imagen de línea base de Adobe. Cuando las nuevas imágenes se crean y prueban correctamente, Cloud Manager automatiza completamente el cambio a la última versión de la imagen mediante la actualización de todos los nodos de servicio mediante un patrón de actualización móvil. Esto no provoca que haya desconexiones ni para el creador ni para el servicio de publicación.
+Técnicamente, esto se lleva a cabo debido al concepto de una canalización de implementación, junto con cada entorno dentro de un programa. Cuando se está ejecutando una canalización de Cloud Manager, se crea una nueva versión de la aplicación del cliente, tanto para el nivel de autor como para el de vista previa y el de publicación. Esto se logra combinando los últimos paquetes de clientes con la última imagen de línea base de Adobe. Cuando las nuevas imágenes se crean y prueban correctamente, Cloud Manager automatiza completamente el cambio a la última versión de la imagen mediante la actualización de todos los nodos de servicio mediante un patrón de actualización móvil. Esto no provoca que haya desconexiones ni para el creador ni para el servicio de publicación.
 
 <!--- needs reworking -->
 
