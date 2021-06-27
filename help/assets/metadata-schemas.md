@@ -5,10 +5,9 @@ contentOwner: AG
 feature: Metadatos
 role: Business Practitioner,Administrator
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-translation-type: tm+mt
-source-git-commit: 855b8b1de11e5f986948d3144104d6b5226c2dd5
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2557'
 ht-degree: 9%
 
 ---
@@ -66,7 +65,7 @@ Para agregar un formulario de esquema de metadatos, siga estos pasos:
 
 1. En el cuadro de diálogo, proporcione el título del formulario de esquema y haga clic en **[!UICONTROL Create]** para completar el proceso de creación del formulario.
 
-## Editar formularios de esquema de metadatos {#edit-metadata-schema-forms}
+## Edición de formularios de esquema de metadatos {#edit-metadata-schema-forms}
 
 Puede editar un formulario de esquema de metadatos nuevo o existente. El formulario de esquema de metadatos incluye fichas y elementos de formulario en fichas. Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio CRX. Puede agregar fichas o elementos de formulario al formulario de esquema de metadatos. Las fichas y los elementos de formulario derivados del elemento principal están en estado bloqueado. No se pueden modificar en el nivel secundario.
 
@@ -98,8 +97,11 @@ La ficha **[!UICONTROL Generar formulario]** enumera los elementos de formulario
 | [!UICONTROL Recurso al que se hace referencia en] | Añada este componente para ver la lista de recursos a los que hace referencia el recurso. |
 | [!UICONTROL Referencia de recursos] | Agregar para mostrar una lista de recursos que hacen referencia al recurso. |
 | [!UICONTROL Referencias de productos] | Agregar para mostrar la lista de productos vinculados al recurso. |
-| [!UICONTROL Clasificación del recurso] | Añada para mostrar las opciones de clasificación del recurso. |
 | [!UICONTROL Metadatos de contexto] | Añadir para controlar la visualización de otras pestañas de metadatos en la página de propiedades de los recursos. |
+
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
+-->
 
 #### Editar el componente de metadatos {#edit-the-metadata-component}
 
@@ -137,11 +139,11 @@ Si agrega el componente Metadatos contextuales a cualquier ficha de cualquier fo
 
 Para mostrar cualquier pestaña en la página de propiedades además de la pestaña donde se aplica el componente Metadatos contextuales , seleccione la pestaña de la lista. La pestaña se agrega a la página de propiedades.
 
-### Especificar propiedades en el archivo JSON {#specify-properties-in-json-file}
+### Especificar propiedades en un archivo JSON {#specify-properties-in-json-file}
 
 En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTROL Configuración]**, puede definir las opciones de un archivo JSON especificando los pares de clave-valor correspondientes. Especifique la ruta del archivo JSON en el campo **[!UICONTROL Ruta de JSON]**.
 
-#### Agregar o eliminar una ficha en el formulario de esquema {#add-delete-a-tab-in-the-schema-form}
+#### Agregar o eliminar una ficha del formulario de esquema {#add-delete-a-tab-in-the-schema-form}
 
 El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]** y **[!UICONTROL IPTC Extension]**.
 
