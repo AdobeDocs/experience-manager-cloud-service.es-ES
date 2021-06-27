@@ -1,16 +1,15 @@
 ---
 title: Facetas de búsqueda.
 description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
-feature: Search,Metadata
+feature: Buscar,Metadatos
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2361'
 ht-degree: 23%
 
 ---
-
 
 # Facetas de búsqueda {#search-facets}
 
@@ -63,7 +62,7 @@ Para las búsquedas de texto completo, agregue el predicado `Fulltext` al formul
 1. Vaya al panel Buscar de la interfaz de usuario de Assets. El predicado Propiedad se agrega al panel.
 1. Escriba una descripción para el recurso que se buscará en el cuadro de texto. Por ejemplo, introduzca &quot;Adobe&quot;. Al realizar una búsqueda, los recursos con una descripción que coincida con &quot;Adobe&quot; se muestran en los resultados de la búsqueda.
 
-## Agregar un predicado de opciones {#adding-an-options-predicate}
+## Agregar un predicado Opciones {#adding-an-options-predicate}
 
 El predicado Opciones permite agregar varias opciones de búsqueda en el panel Filtros . Puede seleccionar una o varias de estas opciones en el panel Filtros para buscar recursos. Por ejemplo, para buscar recursos en función del tipo de archivo, configure las opciones, como Imágenes, Multimedia, Documentos y Archivos, en el formulario de búsqueda. Después de configurar estas opciones, la búsqueda se realiza en recursos de tipo GIF, JPEG, PNG, etc., al seleccionar la opción Imágenes en el panel Filtros .
 
@@ -128,7 +127,7 @@ El predicado `Multi Value Property` permite buscar recursos para varios valores.
 1. Vaya al panel Filtros de la interfaz de usuario de Assets. El predicado **[!UICONTROL Propiedad de varios valores]** se agrega al panel.
 1. Especifique varios valores en el campo Multi Value separados por los delimitadores y realice la búsqueda. El predicado busca una coincidencia de texto exacta para los valores especificados.
 
-## Agregar un predicado Etiquetas {#adding-a-tags-predicate}
+## Agregar un predicado de etiquetas {#adding-a-tags-predicate}
 
 El predicado `Tags` permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, AEM Assets busca en los recursos una o más etiquetas que coincidan en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción que coincida con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
@@ -146,7 +145,7 @@ El predicado `Tags` permite realizar búsquedas de recursos basadas en etiquetas
 1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccionar en la lista de sugerencias.
 1. Seleccione **[!UICONTROL Coincidir con todo]** para buscar coincidencias que incluyan todas las etiquetas que especifique.
 
-## Añadir otros predicados {#adding-other-predicates}
+## Adición de otros predicados {#adding-other-predicates}
 
 De forma similar a como se agrega un predicado Propiedad o un predicado Opciones, se pueden agregar los siguientes predicados adicionales al panel Buscar:
 
@@ -269,17 +268,6 @@ De forma similar a como se agrega un predicado Propiedad o un predicado Opciones
     <ul>
      <li>Etiqueta</li>
      <li>Nombre de la propiedad </li>
-     <li>Descripción</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Clasificación</td>
-   <td>Predicado de búsqueda para buscar recursos en función de su clasificación promedio </td>
-   <td>
-    <ul>
-     <li>Etiqueta</li>
-     <li>Nombre de la propiedad </li>
-     <li>Ruta de la opción</li>
      <li>Descripción</li>
     </ul> </td>
   </tr>
