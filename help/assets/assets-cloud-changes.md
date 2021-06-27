@@ -4,9 +4,9 @@ description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!
 feature: Información de la versión
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '850'
 ht-degree: 5%
 
 ---
@@ -59,6 +59,7 @@ Para realizar una validación completa del código y el proceso, incluido el pro
 | Generación de subrecursos para recursos compuestos | No se admite. | No se cumplen los casos de uso dependientes. Por ejemplo, la anotación de archivos PDF de varias páginas se ve afectada. Consulte [creación de subactivos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
 | Página principal | No se admite. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extraer recursos del archivo ZIP | No se admite. | Consulte [Extracción ZIP en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| Clasificación de activos | No se admite. | No se admite el widget del editor de esquemas de metadatos que proporcionó la opción de clasificación de recursos. |
 | IU clásica | No se admite. | Solo está disponible la IU táctil. |
 
 >[!MORELIKETHIS]
