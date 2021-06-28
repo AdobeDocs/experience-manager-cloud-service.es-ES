@@ -2,9 +2,9 @@
 title: Requisitos previos para la herramienta de transferencia de contenido
 description: Requisitos previos para la herramienta de transferencia de contenido
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 87fa7079388e7a125ed62577123959524390486c
+source-git-commit: bf69ee0a033412e632236975cc772b91c554fd87
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Revise todas las consideraciones enumeradas a continuación:
 |--- |--- |
 | Versión de AEM | La herramienta de transferencia de contenido solo se puede ejecutar en AEM versión 6.3 o posterior. Para poder usar la herramienta de transferencia de contenido con AEM versión 6.2 o anteriores, se requiere una actualización in situ del repositorio de contenido a AEM 6.5. No es necesario actualizar el código a AEM 6.5 para esto. |
 | Tamaño del almacén de segmentos | Actualmente se admiten hasta 83 GB en *Author* y 31 GB en *Publish*. Cree un ticket de asistencia técnica con el Servicio de atención al cliente de Adobe para analizar las opciones de tamaño del almacén de segmentos por encima de estos límites. |
-| Tamaño total del repositorio de contenido <br>*(almacén de segmentos + almacén de datos)* | La herramienta de transferencia de contenido está diseñada para transferir contenido de hasta 10 TB para el tipo de almacén de datos de archivos del almacén de datos. Actualmente no se admite cualquier valor superior a 10 TB. Cree un ticket de asistencia con el Servicio de atención al cliente de Adobe para analizar las opciones de contenido de más de 10 TB. <br>Para los tipos de almacén de datos de Amazon S3 y Azure Data Store, se puede utilizar un paso de precopia opcional para acelerar significativamente el proceso de transferencia de contenido y admitir un tamaño de almacén de datos bueno superior a 10 TB. |
+| Tamaño total del repositorio de contenido <br>*(almacén de segmentos + almacén de datos)* | La herramienta de transferencia de contenido está diseñada para transferir contenido de hasta 10 TB para el tipo de almacén de datos de archivos del almacén de datos. Actualmente no se admite cualquier valor superior a 10 TB. Cree un ticket de asistencia con el Servicio de atención al cliente de Adobe para analizar las opciones de contenido de más de 10 TB. <br>Para los tipos de almacén de datos de Amazon S3 y Azure Data Store, se puede utilizar un paso  [previo ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) opcional para acelerar significativamente el proceso de transferencia de contenido y admitir un tamaño de almacén de datos bueno a más de 10 TB. |
 | Contenido en rutas inmutables | La herramienta de transferencia de contenido no se puede usar para migrar contenido a rutas inmutables. Para transferir contenido de `/etc` solo se permite seleccionar ciertas `"/etc"` rutas, pero solo para admitir [AEM Forms en AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Para todos los demás casos de uso, consulte [Reestructuración común de repositorios](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para obtener más información sobre la reestructuración de repositorios. |
 
 ## Siguientes pasos {#whats-next}
