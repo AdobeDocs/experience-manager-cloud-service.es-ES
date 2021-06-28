@@ -1,10 +1,7 @@
 ---
 title: AEM Screens como Cloud Service
 description: Esta página sirve como introducción a AEM Screens as a Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -18,7 +15,7 @@ Con AEM Screens como Cloud Service, puede crear experiencias de señalización d
 
 AEM Screens as a Cloud Service es una solución de señalización digital que permite a los especialistas en marketing crear y administrar experiencias digitales dinámicas a escala. Además, implica diferentes tipos de pantallas físicas como parte de una estrategia de marketing digital integral. Amplía la oferta omnicanal del Adobe más allá de los canales web y móviles habituales, para incluir también canales de señalización digital que nos rodean. AEM Screens as a Cloud Service permite experiencias de usuario más relevantes, contextuales, productivas y previsoras mediante una comprensión profunda de la creación de contenido, el ensamblaje de contenido, la administración de eventos activada y la reproducción de contenido para todos los consumidores y visitantes de cualquier espacio público.
 
-## Explicación de los componentes en Screens como Cloud Service {#understanding-components}
+## Explicación de los componentes de Screens as a Cloud Service {#understanding-components}
 
 Las pantallas como Cloud Service tienen dos componentes principales:
 
