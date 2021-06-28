@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
+source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2918'
 ht-degree: 40%
 
 ---
@@ -37,11 +37,11 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* Después de completar la fase *Extraction* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* para introducir contenido en su AEM como Cloud Service *Stage* o *Production* instancias, deberá registrar un ticket de asistencia para notificar al Adobe su intención de ejecutar la *Ingesta&lt;a7&lt;a>9/> para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso* Ingesta *.* Tendrá que registrar el ticket de soporte 1 semana antes de la fecha planificada *Ingesta*. Una vez que haya enviado el ticket de soporte, el equipo de soporte le proporcionará instrucciones sobre los pasos siguientes.
-   * Registre un vale de soporte con los siguientes detalles:
-      * Fecha exacta y hora estimada (con su zona horaria) en la que planea iniciar la fase *Ingesta*.
-      * Tipo de entorno (fase o producción) en el que planea introducir datos.
-      * ID del programa.
+* Después de completar la fase *Extraction* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* para introducir contenido en su AEM como Cloud Service *Stage* o *Production* instancias, deberá registrar un ticket de asistencia para notificar al Adobe su intención de ejecutar la *Ingesta&lt;a7&lt;a>9/> para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso* Ingesta *.* Tendrá que registrar el ticket de soporte 1 semana antes de la fecha planificada *Ingesta*. Una vez que haya enviado el ticket de soporte, el equipo de soporte le proporcionará instrucciones sobre los pasos siguientes. Puede registrar un vale de soporte con los siguientes detalles:
+
+   * Fecha exacta y hora estimada (con su zona horaria) en la que planea iniciar la fase *Ingesta*.
+   * Tipo de entorno (fase o producción) en el que planea introducir datos.
+   * ID del programa.
 
 * La *Fase de ingesta* para el autor reduce la implementación de todo el autor. Esto significa que el autor de AEM no estará disponible durante todo el proceso de inserción. Asegúrese también de que no se ejecutan canalizaciones de Cloud Manager mientras está ejecutando la fase *Ingesta*.
 
@@ -159,7 +159,7 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
 
 Siga los pasos a continuación para extraer el conjunto de migración de la herramienta de transferencia de contenido:
 >[!NOTE]
->Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, deberá configurar un archivo azcopy.config antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido de gran tamaño] para obtener más información.
+>Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, debe configurar un archivo `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido de gran tamaño](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obtener más información.
 
 1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Extracción** para empezar la extracción. Aparece el cuadro de diálogo **Migration Set extraction** y haga clic en **Extract** para iniciar la fase de extracción.
 
