@@ -1,10 +1,7 @@
 ---
 title: Inicio de sesión por primera vez en Screens como Cloud Service
 description: En esta página se describen los primeros pasos para empezar a utilizar Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -31,6 +28,6 @@ Una vez que se le haya proporcionado un ID de organización de Adobe Identity Ma
 >[!NOTE]
 >Los usuarios tienen acceso a AEM perfil de producto de Cloud Service para que puedan iniciar sesión en AEM con Adobe ID o el Federated ID.
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Ahora que ha sido aprovisionado con un ID de organización de IMS y agregado como usuario a Adobe Admin Console, puede agregar [Complemento Screens al nuevo programa](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md) o a [un programa existente](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md) para Screens como Cloud Service en Cloud Manager.
