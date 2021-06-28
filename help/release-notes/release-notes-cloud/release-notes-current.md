@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
-mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
+mini-toc-levels: 1
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1107'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 La siguiente sección describe las notas de la versión generales de la versión actual (más reciente) de [!DNL Experience Manager] como Cloud Service.
 
 >[!NOTE]
+>
 >Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021 y así sucesivamente.
 
 >[!NOTE]
@@ -24,82 +25,25 @@ La siguiente sección describe las notas de la versión generales de la versión
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2021.5.0 es el 27 de mayo de 2021.
-La siguiente versión (2021.6.0) se publicará el 24 de junio de 2021.
+La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2021.6.0 es el 28 de junio de 2021.
+La siguiente versión (2021.7.0) será el 29 de julio de 2021.
 
 ## Vídeo de la versión {#release-video}
 
-Consulte el vídeo [Información general de la versión de mayo de 2021](https://video.tv.adobe.com/v/333602) para ver un resumen de las funciones agregadas.
+Consulte el vídeo [Información general de la versión de junio de 2021](https://video.tv.adobe.com/v/334296) para ver un resumen de las funciones agregadas.
 
-## AEM as a Cloud Service Foundation {#foundation}
+## Documentación XML para AEM as a cloud Service {#xml-documentation}
 
-### Novedades de AEM as a Cloud Service Foundation {#what-is-new-foundation}
+### Novedades {#what-is-new-xml-documentation}
 
-* [Canal](/help/release-notes/prerelease.md) previo al lanzamiento: Previsualice las próximas funciones durante un mes completo antes de publicarlas en producción.
-
-* [Desaprobación de API](/help/release-notes/deprecated-apis.md): hay disponible una lista de las API obsoletas más recientes de AEM as a Cloud Service.
-
-* [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html): Actualice sus proyectos de maven a la versión más reciente, que incluye una comprobación de API de Java obsoleta y otras mejoras.
-
-## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Novedades de [!DNL Sites] {#what-is-new-sites}
-
-* Pronto podrá verificar el contenido en un nuevo [Nivel de vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular el aspecto y la presentación finales de la experiencia como lo haría en el nivel de publicación. Esto lo habilita el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publicar o Vista previa. A continuación, se puede acceder a las experiencias en la vista previa a través de una URL dedicada. Después de la validación en la vista previa, el contenido se puede publicar desde Autor en Publicación como de costumbre. La activación del servicio de vista previa en entornos AEM as a Cloud Service se implementará gradualmente en las próximas semanas.
-
-## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
-
-### Nuevas funciones disponibles en el canal de prelanzamiento {#what-is-new-assets-prerelease}
-
-* Los esquemas de metadatos se pueden aplicar directamente a las propiedades de la carpeta.
-
-   ![Añadir esquema de metadatos de propiedades de carpeta](/help/assets/assets/metadata-schema-folder-properties.png)
-
-* La herramienta Ingesta masiva de recursos permite agregar metadatos durante una ingesta masiva.
-
-* Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra más de 1000.
-
-   ![El número de recursos de una carpeta se muestra en la interfaz](/help/assets/assets/browse-folder-number-of-assets.png)
-
-### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
-
-* Al cargar archivos muy grandes, se bloquea [!DNL Experience Manager desktop app]. (CQ-4320942)
-* Las opciones de la barra de herramientas son diferentes cuando se selecciona la misma colección dentro de una carpeta y cuando se selecciona desde un resultado de búsqueda. (CQ-4321406)
-
-#### Novedades de [!DNL Dynamic Media] {#what-is-new-dm}
-
-* La proporción de píxeles de dispositivos de imágenes inteligentes (DPR) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Consulte [preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md).
-
-* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en el envío [!DNL Dynamic Media] (`fmt` modificador de URL). Para obtener más información y cronología, consulte [servicio de imágenes y renderización de API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
-
-### Novedades de [!DNL Forms] {#what-is-new-forms}
-
-* **Ayuda contextual**: Se ha añadido ayuda contextual para el editor de formularios adaptables, el editor de plantillas y el editor de temas para ayudar a los autores a comprender mejor las distintas funciones de los editores.
-* **Mensajes de error en el navegador** de propiedades: Se han añadido mensajes de error para cada propiedad en el explorador de propiedades de Forms adaptable. Estos mensajes ayudan a comprender los valores permitidos para un campo.
-
-### Próxima función beta de [!DNL Forms] {#what-is-new-forms-prerelease}
-
-Output as a Cloud service: El servicio de salida le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo por lotes sincrónico y asincrónico. El servicio de salida permite crear aplicaciones que le permitan:
-
-* Genere documentos de formulario finales rellenando archivos de plantilla con datos XML.
-* Genere formularios de salida en varios formatos, incluidas secuencias de impresión PDF no interactivas.
-* Genere PDFs de impresión a partir de PDFs de formulario XFA.
-
-Puede escribir en formscsbeta@adobe.com para inscribirse en el programa beta.
-
-### Errores corregidos en [!DNL Forms] {#forms-bugs-fixed}
-
-* En el paso Asignar tarea de los flujos de trabajo de AEM Forms, cuando se sustituye el icono predeterminado de los botones de acción por un icono de coral, el flujo de trabajo deja de funcionar y registra una excepción. El flujo de trabajo funciona como se espera cuando se utilizan iconos predeterminados.
-* En la capa de diseño, cuando cambie el número de columnas, abra la capa de edición y arrastre algunos componentes en un panel, los cuadros azules cuadrados empezarán a aparecer en el área de contenido del editor de formularios adaptables y el editor no responderá.
-* Mensaje de error de una opción de editor de reglas relacionada con el suministro de la URL de un recurso adaptable o externo es demasiado largo y no es fácil de usar.
+* La documentación XML para AEM as a Cloud Service es ahora GA.
+* Esto permitirá a los clientes existentes de los Cloud Service de AEM adquirir un complemento de documentación XML para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos sitios de AEM
 
 ## Cloud Manager {#cloud-manager}
 
 Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.6.0 y 2021.5.0.
 
-## Fecha de la versión {#release-date-june-cm}
+### Fecha de la versión {#release-date-june-cm}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 10 de junio de 2021.
 La próxima versión está planificada para el 15 de julio de 2021.
@@ -142,85 +86,73 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 * Algunas secuencias de edición de programas podrían provocar que la página **Información general** muestre un mensaje engañoso para volver a ejecutar la configuración del programa.
 
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Fecha de la versión {#release-date-cm-may}
+### Nuevas funciones en [!DNL Assets] {#ga-features-assets}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6 de mayo de 2021.
+* La funcionalidad de automatización de contenido permite a [!DNL Experience Manager Assets] aprovechar las API [!DNL Adobe Creative Cloud] para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere ningún código y funciona desde DAM.
+* [!DNL Adobe Asset Link] Se ha lanzado la versión 3.0 para  [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator],  [!DNL Adobe InDesign] y  [!DNL Adobe Asset Link] v2.0 para  [!DNL Adobe XD] . Proporciona:
 
-### Novedades {#what-is-new-may}
+   * Compatibilidad con [!DNL Assets Essentials].
+   * Capacidad para conectarse automáticamente a [!DNL Experience Manager] como [!DNL Cloud Service] o [!DNL Assets Essentials].
 
-* La regla de calidad PackageOverlaps ahora detecta casos en los que el mismo paquete se implementó varias veces, es decir, en varias ubicaciones incrustadas, en el mismo conjunto de paquetes implementado.
+<!-- TBD: Checking with PMs if AAE release should be mentioned here.
+-->
 
-* El extremo del repositorio en la API pública ahora incluye la URL de Git.
+### Nuevas funciones disponibles en el canal de prelanzamiento [!DNL Assets] {#beta-features-assets}
 
-* El registro de implementación descargado por un usuario de Cloud Manager será más profundo y ahora incluirá detalles sobre errores y escenarios de éxito.
+* La configuración de vista se mejora para permitir a los usuarios elegir una vista predeterminada y un parámetro de ordenación predeterminado.
+* La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga.
+* Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
+* [!DNL Experience Manager Assets] incrusta el visor de PDF con tecnología de  [!DNL Adobe Document Cloud] para previsualizar los documentos admitidos. Esta función permite a los usuarios previsualizar archivos PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de características con [!DNL Experience Manager] 6.5.
 
-* Se han resuelto errores intermitentes encontrados al insertar el código en el Git de Adobe.
+### Errores corregidos en [!DNL Assets] {#bugs-fixed-assets}
 
-* Ahora, el complemento Commerce se puede aplicar a los programas de Sandbox durante el flujo de trabajo Editar programa .
+* Cuando agrega un propietario a una subcarpeta, [!DNL Assets] también agrega el mismo usuario que un propietario de la carpeta principal. (CQ-4323737)
+* Al agregar recursos a Colecciones, si un usuario aplica un filtro en la búsqueda Colecciones, el usuario no puede ver las Colecciones en la vista Lista. (CQ-4323181)
+* Al buscar archivos y carpetas, si el usuario aplica un filtro y selecciona [!UICONTROL Files &amp; Folders], solo se muestran los archivos pero no la carpeta. (CQ-4319543)
 
-* Se ha actualizado la experiencia Editar programa.
+## [!DNL Experience Manager Sites] como  [!DNL Cloud Service] {#sites}
 
-* La tabla Nombres de dominio de la página Detalles del entorno mostrará hasta 250 nombres de dominio a través de la paginación.
+### Nuevas funciones en [!DNL Sites] {#ga-features-sites}
 
-* La pestaña Soluciones de los flujos de trabajo Añadir programa y Editar programa mostrará la solución, aunque solo haya una solución disponible para el Programa.
+* Publicar en el nivel de vista previa ahora se muestra como estado de página en la interfaz de usuario del administrador de sitios
+* Publicar en el nivel de vista previa ahora muestra la URL de vista previa al final de la acción y mantiene la URL en las propiedades de la página para referencia posterior
 
-* El mensaje de error en el registro de pasos de compilación cuando la compilación no produjo ningún paquete de contenido implementado no estaba claro.
+## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
-### Corrección de errores {#bug-fixes-cm-may}
+### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
+* Se ha agregado la capacidad de filtrar columnas personalizadas en AEM bandeja de entrada.
+* Se ha añadido la capacidad de utilizar el editor de temas y la capa de estilo del editor de formularios adaptables para aplicar estilo al componente captcha.
+* Se ha mejorado la velocidad y la precisión para detectar automáticamente secciones lógicas en los PDF forms de origen y convertirlas en los paneles de formulario adaptables correspondientes.
+* Se ha añadido la acción de mover un archivo PDF o XDP de una carpeta a otra.
 
-* En lugar de eliminar las variables &quot;eliminadas&quot;, la API de variables de canalización solo las marcaría con el estado **DELETED**.
+### Función beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* Algunos problemas de calidad del tipo de hueso de código impactaban incorrectamente en la clasificación de fiabilidad.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: Las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones que le permitan:
+   * Genere documentos de formulario finales rellenando archivos de plantilla con datos XML.
+   * Genere formularios de salida en varios formatos, incluidas secuencias de impresión PDF no interactivas.
+   * Genere PDFs de impresión a partir de un formulario XFA PDF y un formulario Adobe Acrobat (AcroForm).
 
-* Dado que los dominios comodín no son compatibles, la interfaz de usuario no permitirá que el usuario envíe un dominio comodín.
+* **Externalizador de datos de variable**: Puede guardar datos de AEM variables de flujo de trabajo en un sistema de almacenamiento externo administrado por su organización.
 
-* Cuando se inició la ejecución de una canalización entre la medianoche y la 01:00 UTC, la versión del artefacto generada por Cloud Manager no estaba buena a la versión creada el día anterior.
+Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa beta.
 
-* Durante la configuración del programa de espacio aislado, una vez que el proyecto con código de muestra se haya creado correctamente, Administrar Git aparecerá como un vínculo desde la tarjeta promocional en la página Información general .
+### Errores corregidos en [!DNL Forms] {#forms-bugs-fixed}
 
-## Herramienta de transferencia de contenido {#content-transfer-tool}
+* Cuando se valida un campo antes de enviar datos al servicio back-end mediante el Modelo de datos de formulario (FDM), las validaciones se realizan correctamente, pero el servicio Modelo de datos de formulario no invoca la validación posterior.
+* Cuando se envía un formulario que contiene un campo de carga HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Este es un problema conocido en Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-### Fecha de la versión {#release-date-ctt-latest}
+## Complemento CIF {#cloud-services-cif}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.4.6 es el 27 de mayo de 2021.
+### Novedades {#what-is-new-cif}
 
-### Novedades {#what-is-new-ctt-latest}
+* Nuevos tipos de datos de referencia de productos y categorías del CIF para fragmentos de contenido (incl. compatibilidad con la interfaz de usuario del selector de productos/categorías)
+* Nuevo componente principal de fragmento de contenido de comercio
+* Búsqueda de comercio de texto completo compatible con AEM servidor
+* Los componentes principales de comercio admiten la recopilación de datos de Adobe Commerce Sensei Recs
+* Direcciones URL compatibles con SEO mejoradas para páginas de categoría
+* Compatibilidad con encabezados HTTP personalizados por sitio/configuración
 
-* Se agregó una nueva instrucción de registro al registro de errores de inicio rápido si el usuario no tiene permiso de ejecución en el ejecutable de Java.
 
-* Cuando un usuario elimina un conjunto de migración de la interfaz de usuario de CTT, donde se realizó una extracción, la carpeta `tmp` asociada con ese conjunto de migración se eliminará para ahorrar espacio.
-
-### Corrección de errores {#bug-fixes-ctt-latest}
-
-* Al eliminar un conjunto de migraciones, en ocasiones aparecía un mensaje de error no útil en la interfaz de usuario de CTT. Esto se ha solucionado.
-
-* Al ejecutar la Asignación de usuarios, si los usuarios tenían la misma dirección de correo electrónico en el destino y el host pero nombres de usuario diferentes, se producía un error en toda la ingesta. Esto se ha solucionado. En este caso de conflicto, el usuario o grupo se omite y se registra como conflicto en el archivo de registro.
-
-### Fecha de la versión {#release-date-ctt-may}
-
-La fecha de versión de la herramienta de transferencia de contenido v1.4.0 es el 11 de mayo de 2021.
-
-### Novedades {#what-is-new-ctt-may}
-
-* Esta versión de la herramienta de transferencia de contenido crea representaciones de texto para los recursos que se migran a Cloud Service. Las representaciones de texto son necesarias para admitir la búsqueda de texto completo en recursos ingestados.
-* El número máximo de conjuntos de migración de la herramienta de transferencia de contenido que un usuario puede crear ha aumentado de 4 a 10.
-
-### Corrección de errores {#bug-fixes-ctt-may}
-
-* Varias correcciones de errores relacionadas con la función de actualización automática en la interfaz de usuario de la herramienta de transferencia de contenido.
-* La herramienta de transferencia de contenido con `wipe=true` daba como resultado un índice de contador incorrecto en el destino. Esto se ha solucionado.
-
-## Complemento de comercio {#cloud-services-commerce}
-
-### Novedades {#what-is-new-commerce}
-
-* Compatibilidad de paginación para contenido asociado en propiedades de la consola del producto
-
-### Corrección de errores {#bug-fixes-commerce}
-
-* Las miniaturas de los recursos no se muestran en la ficha Recurso de las propiedades del producto
-
-* La ruta de navegación restablece los datos de vista previa en la consola del producto
