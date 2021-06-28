@@ -1,10 +1,7 @@
 ---
 title: Uso del proveedor de contenido de Screens
 description: En esta página se describe cómo usar el proveedor de contenido de Screens para crear contenido.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
+source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 3%
@@ -26,7 +23,7 @@ En la siguiente sección se describe cómo usar el proveedor de contenido de Scr
 
 >[!NOTE]
 >**Requisitos previos**
->Antes de comenzar a leer esta sección, consulte [Configuración del proveedor de servicios de Screens](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md) para aprender a navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
+>Antes de comenzar a leer esta sección, consulte Configuración del proveedor de servicios de Screens para obtener información sobre cómo navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
 
 Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya estará listo para crear el contenido en la reproducción del contenido. Utilice el proveedor de contenido de Screens para crear y administrar:
 
@@ -34,8 +31,8 @@ Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya es
 * Canales
 * Ubicaciones
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
-Ahora, ya ha aprendido a desplazarse hasta el proveedor de contenido de Screens, debe continuar con el recorrido de Screens como Cloud Service revisando el documento [Creación y administración de proyectos en Screens como Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+Ahora, ha aprendido a navegar al proveedor de contenido de Screens, debe continuar con el recorrido de Screens como Cloud Service revisando el documento, Creando y administrando proyectos en Screens como Cloud Service.
 
 
