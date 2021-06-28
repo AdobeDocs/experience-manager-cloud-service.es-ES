@@ -1,10 +1,7 @@
 ---
 title: Creación de una rama
 description: En esta página se describe la creación de una rama en Cloud Manager para Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -41,7 +38,7 @@ Una vez que la creación del proyecto se haya completado correctamente, verá la
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a configurar un entorno para su programa en Cloud Manager, ya está listo para pasar al siguiente paso en el proceso de incorporación, es decir, [Ejecución de la canalización](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
 
