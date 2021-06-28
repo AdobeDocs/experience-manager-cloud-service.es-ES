@@ -1,7 +1,7 @@
 ---
 title: Gestión de repositorios de contenido grandes
 description: Esta sección describe la administración de repositorios de contenido de gran tamaño
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -134,7 +134,6 @@ AzCopy omitirá automáticamente cualquier blobs que se haya copiado antes del e
 Con el lanzamiento de la herramienta de transferencia de contenido 1.5.4, hemos añadido la compatibilidad con AzCopy a la ingesta de Autores.
 
 >[!NOTE]
->
 > La recomendación es ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
 
 Para aprovechar AzCopy durante la ingesta, es necesario que esté en una AEM como versión de Cloud Service que sea al menos de la versión 2021.6.5561.
