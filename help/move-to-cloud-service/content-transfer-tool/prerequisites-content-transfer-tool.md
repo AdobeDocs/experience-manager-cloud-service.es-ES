@@ -1,9 +1,10 @@
 ---
 title: Requisitos previos para la herramienta de transferencia de contenido
 description: Requisitos previos para la herramienta de transferencia de contenido
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
+source-git-commit: 269ef355e10acd99e9cfcb9cac9e676b079a7ecb
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
@@ -24,10 +25,10 @@ Revise todas las consideraciones enumeradas a continuación:
 | Consideraciones | ¿Qué es compatible actualmente? |
 |--- |--- |
 | Versión de AEM | La herramienta de transferencia de contenido solo se puede ejecutar en AEM versión 6.3 o posterior. Para poder usar la herramienta de transferencia de contenido con AEM versión 6.2 o anteriores, se requiere una actualización in situ del repositorio de contenido a AEM 6.5. No es necesario actualizar el código a AEM 6.5 para esto. |
-| Tamaño del almacén de segmentos | Actualmente, la herramienta de transferencia de contenido admite hasta 83 GB en *Author* y 31 GB en *Publish*. |
-| Tamaño total del repositorio de contenido <br>*(almacén de segmentos + almacén de datos)* | La herramienta de transferencia de contenido está diseñada para transferir contenido de hasta 10 TB. Actualmente no se admite cualquier valor superior a 10 TB. Cree un ticket de asistencia con el Servicio de atención al cliente de Adobe para analizar las opciones de contenido de más de 10 TB. |
-| Contenido en rutas inmutables | La herramienta de transferencia de contenido no se puede usar para migrar contenido en rutas inmutables como `“/etc”`. Hay ciertas `"/etc"` rutas permitidas para seleccionarse, pero solo para admitir [AEM Forms a AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Para todos los demás casos de uso, consulte [Reestructuración común de repositorios](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para obtener más información sobre la reestructuración de repositorios. |
+| Tamaño del almacén de segmentos | Actualmente se admiten hasta 83 GB en *Author* y 31 GB en *Publish*. Cree un ticket de asistencia técnica con el Servicio de atención al cliente de Adobe para analizar las opciones de tamaño del almacén de segmentos por encima de estos límites. |
+| Tamaño total del repositorio de contenido <br>*(almacén de segmentos + almacén de datos)* | La herramienta de transferencia de contenido está diseñada para transferir contenido de hasta 10 TB para el tipo de almacén de datos de archivos del almacén de datos. Actualmente no se admite cualquier valor superior a 10 TB. Cree un ticket de asistencia con el Servicio de atención al cliente de Adobe para analizar las opciones de contenido de más de 10 TB. Para los tipos de almacén de datos de Amazon S3 y Azure Data Store, se puede utilizar un paso de precopia opcional para acelerar significativamente el proceso de transferencia de contenido y admitir un tamaño > 10 TB de almacén de datos. |
+| Contenido en rutas inmutables | La herramienta de transferencia de contenido no se puede usar para migrar contenido a rutas inmutables. Para transferir contenido de `/etc` solo se permite seleccionar ciertas `"/etc"` rutas, pero solo para admitir [AEM Forms en AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Para todos los demás casos de uso, consulte [Reestructuración común de repositorios](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para obtener más información sobre la reestructuración de repositorios. |
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya revisado los requisitos previos y haya determinado si puede utilizar la herramienta de transferencia de contenido en su proyecto de migración, consulte [Prácticas recomendadas adicionales y consideraciones](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) mientras utiliza la herramienta de transferencia de contenido.
