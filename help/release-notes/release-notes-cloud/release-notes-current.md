@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1254'
 ht-degree: 2%
 
 ---
@@ -154,5 +154,25 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 * Los componentes principales de comercio admiten la recopilación de datos de Adobe Commerce Sensei Recs
 * Direcciones URL compatibles con SEO mejoradas para páginas de categoría
 * Compatibilidad con encabezados HTTP personalizados por sitio/configuración
+
+## Herramienta de transferencia de contenido {#content-transfer-tool}
+
+### Fecha de la versión {#release-date-ctt-latest}
+
+La fecha de versión de la herramienta de transferencia de contenido v1.5.4 es el 28 de junio de 2021.
+
+### Novedades {#what-is-new-ctt-latest}
+
+* Compatibilidad con un paso [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) opcional añadido para su uso con CTT. El paso de precopia se puede utilizar para acelerar significativamente las fases de extracción e ingesta de la actividad de transferencia de contenido cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de almacenamiento de blob de Amazon S3 o Azure.
+
+* Se ha agregado protección a CTT para evitar que los usuarios detengan la ingesta y corrompa los datos una vez que hayan alcanzado el punto crítico durante la fase de ingesta.
+
+* Los registros de extracción son más descriptivos para ayudarle a solucionar el problema.
+
+* Se han añadido mensajes de estado de ingesta más descriptivos en la interfaz de usuario.
+
+### Corrección de errores {#bug-fixes-ctt-latest}
+
+* Al detener una ingesta en la instancia de Autor, la interfaz de usuario sobrescribió una ingesta previamente finalizada en la instancia de Publicación a `STOPPED` desde `FINISHED`. Esto se ha solucionado.
 
 
