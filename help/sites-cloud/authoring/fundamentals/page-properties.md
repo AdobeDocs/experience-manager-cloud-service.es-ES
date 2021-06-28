@@ -2,14 +2,14 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 60%
+source-wordcount: '1930'
+ht-degree: 59%
 
 ---
 
-# Edición de las propiedades de página {#editing-page-properties}
+# Edición de las propiedades de página   {#editing-page-properties}
 
 Puede definir las propiedades para una página. Estas pueden variar en función de la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 
@@ -155,9 +155,9 @@ Configurar la miniatura de la página
    * **Variación de XF preferida**
       * Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página.
 
-### Cloud Services{#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Configuraciones de Cloud Service** - Defina propiedades para Cloud Services
+* **Configuraciones de Cloud Service** : defina propiedades para servicios en la nube
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -218,7 +218,13 @@ Esta ficha solo está visible para páginas que sirven como modelos. Los modelos
    * **Heredar configuraciones de lanzamiento del elemento principal** : si se selecciona, la configuración de lanzamiento se hereda del elemento principal de la página
    * **Elegir configuración de lanzamiento** : define las circunstancias en las que las modificaciones se propagarán desde el modelo y solo estarán disponibles cuando no se haya seleccionado la opción  **Heredar configuraciones de lanzamiento de** padres.
 
-## Edición de las propiedades de página {#editing-page-properties-1}
+### Vista previa {#preview}
+
+Cuando un entorno de vista previa esté habilitado, verá:
+
+* URL de vista previa : la URL utilizada para acceder al contenido en el entorno de vista previa.
+
+## Edición de las propiedades de página   {#editing-page-properties-1}
 
 * Desde la consola **Sitios:**
    * [Creando una página nueva](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (un subconjunto de las propiedades)
