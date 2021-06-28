@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: f4d646e3898f568d17cfb09bd2974fc55a1260c4
+source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 46%
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 | Producto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versión | 2021.05.0 |
+| Versión | 2021.06.0 |
 | Tipo | Actualizaciones continuas |
 | Fecha de disponibilidad | Actualización continua |
 
@@ -35,7 +35,7 @@ Para prepararse para una versión:
 1. Marque sus calendarios: Compruebe las fechas clave de las versiones mensuales en la [hoja de ruta de las versiones del Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) y marque sus calendarios para prepararse para las actividades clave que se prepararán para la versión.
 1. Revise las notas de la versión: Lea las [notas de la versión actuales](/help/release-notes/release-notes-cloud/release-notes-current.md) para familiarizarse con las funciones de la versión y la versión preliminar.
 1. Acceda e pruebe las nuevas funciones: Habilite el [canal de prelanzamiento](/help/release-notes/prerelease.md) en los entornos que no sean de producción y comience a probar las funciones para evaluarlas en los entornos personalizados.
-1. Capacite a los usuarios: Utilice la documentación y los recursos de Experience League para poner a los usuarios al día y familiarizarse con las nuevas funciones.
+1. Capacite a los usuarios: Utilice los recursos de documentación y Experience League para que los usuarios estén al día con las nuevas funciones y estén al día con las últimas novedades.
 
 ## Información clave de la versión {#key-articles}
 
