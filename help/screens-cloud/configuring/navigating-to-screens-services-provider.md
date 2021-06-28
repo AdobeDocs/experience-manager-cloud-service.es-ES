@@ -1,10 +1,7 @@
 ---
 title: Navegar al proveedor de servicios de Screens
 description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
@@ -42,7 +39,7 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a configurar el proveedor de servicios de Screens, puede navegar a, [Usando el proveedor de contenido de Screens](/help/screens-cloud/configuring/using-screens-content-provider.md) para obtener más información.
 
