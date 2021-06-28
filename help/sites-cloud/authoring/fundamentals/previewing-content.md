@@ -2,9 +2,9 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ Puede publicar contenido en el servicio de vista previa utilizando la IU de publ
 
 1. Haga clic en **Siguiente** y luego en **Publicar** para confirmar.
 
-A continuación, verá el contenido de vista previa y anexe **preview** a la URL de publicación de la instancia de producción. La dirección URL debe crearse de esta manera:
+1. Un cuadro de diálogo mostrará las direcciones URL para acceder al contenido en el entorno de vista previa.
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   O para ver el contenido de vista previa, también puede anexar **preview** a la URL de publicación de la instancia de producción.
+
+   La dirección URL debe crearse de esta manera:
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 Consulte [Administrar los entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
 
