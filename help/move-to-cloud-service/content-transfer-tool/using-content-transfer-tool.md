@@ -2,9 +2,9 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d08fc076306c54f8551c9df499efa0ded7bcc131
+source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2929'
 ht-degree: 40%
 
 ---
@@ -209,7 +209,7 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
 >[!NOTE]
->Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy] para obtener más información.
+>Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obtener más información.
 
 1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para comenzar la ingesta. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para iniciar la fase de ingesta. Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
 
