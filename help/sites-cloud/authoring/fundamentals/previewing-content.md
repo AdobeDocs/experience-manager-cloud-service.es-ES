@@ -2,9 +2,9 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: 53a3fb91dcf093d55e80c7dfcdef3a7855731841
+source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 ```
 
 Consulte [Administrar los entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
+
+El contenido también se puede publicar para obtener una vista previa mediante un [Flujo de trabajo del árbol de contenido de publicación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow) con el parámetro agentId establecido para la vista previa o mediante la [API de replicación](/help/operations/replication.md#replication-api) con un AgentFilter configurado para la vista previa.
 
 ## Configuración de OSGi para el nivel de vista previa {#configuring-osgi-settings-for-the-preview-tier}
 
