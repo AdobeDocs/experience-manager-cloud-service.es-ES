@@ -1,10 +1,7 @@
 ---
 title: Añadir el complemento de Screens a un nuevo programa en Cloud Manager
 description: En esta página se describe cómo agregar un complemento de Screens a un nuevo programa en Cloud Manager para Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 1%
@@ -48,7 +45,7 @@ Siga los pasos a continuación para agregar Screens como complemento a un nuevo 
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a añadir Screens como complemento a un programa existente de Cloud Manager y vea su programa en Programas y productos de Cloud Manager, ahora está listo para pasar al siguiente paso del proceso de incorporación, es decir, [Creación de una rama para su proyecto en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
 
