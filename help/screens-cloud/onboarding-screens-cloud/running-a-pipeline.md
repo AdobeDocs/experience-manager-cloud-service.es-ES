@@ -1,10 +1,7 @@
 ---
 title: Ejecución de una canalización
 description: En esta página se describe cómo ejecutar una canalización para Screens como proyecto de Cloud Service en Cloud Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 2%
@@ -23,7 +20,7 @@ En esta sección se describe cómo ejecutar la canalización e implementar el c�
 
 En la siguiente sección se describe cómo configurar la canalización de CI/CD e implementar el código para el programa en Cloud Manager.
 
-## Pasos para ejecutar una canalización para su proyecto Screens en Cloud Manager {#steps-branch-creation}
+## Pasos para ejecutar una canalización para el proyecto de Screens en Cloud Manager {#steps-branch-creation}
 
 1. Una vez que la configuración del entorno se haya completado correctamente, verá la actualización de la tarjeta de llamada a la acción en la página **Información general** de Cloud Manager.
 
@@ -57,6 +54,6 @@ En la siguiente sección se describe cómo configurar la canalización de CI/CD 
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a configurar un entorno para su programa en Cloud Manager, ya está listo para pasar al siguiente paso en el proceso de incorporación, es decir, [Navegar al proveedor de servicios de Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
