@@ -1,10 +1,7 @@
 ---
 title: Asignación del reproductor a una pantalla en Screens como Cloud Service
 description: En esta página se describe cómo asignar un reproductor a una pantalla de Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 2%
