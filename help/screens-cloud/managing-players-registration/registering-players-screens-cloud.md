@@ -1,13 +1,10 @@
 ---
 title: Registro de reproductores en Screens como Cloud Service
 description: Esta página describe cómo registrar reproductores en Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
@@ -66,6 +63,6 @@ Siga los pasos a continuación para registrar el reproductor:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Ahora que ha instalado y configurado el reproductor en el modo de nube, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Assigning Player to a Display in Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) del proveedor de servicios de Screens.
