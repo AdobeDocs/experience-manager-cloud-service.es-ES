@@ -1,10 +1,7 @@
 ---
 title: Creación de una rama
 description: En esta página se describe la creación de una rama en Cloud Manager para Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f1a21aa8ff832bd8fa460a2ef8013b8e3d1acfde
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 2%
@@ -23,7 +20,7 @@ En esta sección se describe cómo crear una rama para el programa en Cloud Mana
 
 En la siguiente sección se describe cómo crear una rama para su programa en Cloud Manager, mediante el asistente.
 
-## Pasos para crear una rama para el proyecto Screens en Cloud Manager {#steps-branch-creation}
+## Pasos para crear una rama para el proyecto de Screens en Cloud Manager {#steps-branch-creation}
 
 1. Vaya a Cloud Manager y seleccione el icono para llegar a la página Información general de Cloud Manager .
 
@@ -43,6 +40,6 @@ En la siguiente sección se describe cómo crear una rama para su programa en Cl
 
    ![image](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a crear una rama para su proyecto en Cloud Manager, ya está listo para pasar al siguiente paso en el proceso de incorporación, es decir, [Creación y configuración del entorno](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md).
