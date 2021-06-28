@@ -1,7 +1,7 @@
 ---
 title: Gestión de repositorios de contenido grandes
 description: Esta sección describe la administración de repositorios de contenido de gran tamaño
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -38,13 +38,13 @@ Siga esta sección para aprender a configurar para utilizar AzCopy como paso pre
 
 ### 0. Determinar el tamaño total de todo el contenido del almacén de datos {#determine-total-size}
 
-#### Almacenamiento de datos de Azure Blob
+#### Almacenamiento de datos de Azure Blob {#azure-blob-storage}
 
 Desde la página de propiedades del contenedor en el portal de Azure, utilice el botón **Calcular tamaño** para determinar el tamaño de todo el contenido del contenedor. Por ejemplo:
 
 ![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Almacenamiento de datos de Amazon S3
+#### Almacenamiento de datos de Amazon S3 {#amazon-data}
 
 Puede utilizar la ficha Métricas del contenedor para determinar el tamaño de todo el contenido del contenedor. Por ejemplo:
 
@@ -67,7 +67,7 @@ En la instancia de AEM de origen, en crx-quickstart/cloud-migration , cree un nu
 
 El contenido de este archivo de configuración será diferente en función de si la instancia de AEM de origen utiliza un almacén de datos de Azure o Amazon S3.
 
-#### Almacenamiento de datos de Azure Blob
+#### Almacenamiento de datos de Azure Blob {#azure-blob-storage-data}
 
 El archivo azcopy.config debe incluir las siguientes propiedades (asegúrese de utilizar las propiedades azCopyPath y azureSas correctas para su instancia).
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Almacenamiento de datos de Amazon S3
+#### Almacenamiento de datos de Amazon S3 {#amazon-data-store}
 
 El archivo azcopy.config debe incluir las siguientes propiedades (asegúrese de utilizar los valores correctos para su instancia).
 
