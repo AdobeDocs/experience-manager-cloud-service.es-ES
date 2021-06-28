@@ -2,9 +2,9 @@
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
+source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2881'
 ht-degree: 98%
 
 ---
@@ -56,7 +56,7 @@ La navegación global dispone de dos paneles, representados por iconos en el lad
 
 Las opciones disponibles en estos paneles se describen a continuación.
 
-### Panel de navegación     {#navigation-panel}
+### Panel de navegación    {#navigation-panel}
 
 El panel Navegación:
 
@@ -162,7 +162,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    ![Pasar al contenido principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 Hay varios medios de ayuda disponibles:
 
@@ -224,7 +224,7 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 >[!NOTE]
 Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas     {#quick-actions}
+## Acciones rápidas    {#quick-actions}
 
 En la [vista de tarjeta](#card-view), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -245,7 +245,7 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 >[!NOTE]
 De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos     {#selecting-resources}
+### Selección de recursos    {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -315,7 +315,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * La plantilla de la página se basa en
    * Detalles de la modificación
    * Idioma de la página
-   * Detalles de la publicación
+   * Detalles de publicación y vista previa
 
 
 ### Vista de tarjeta {#card-view}
@@ -337,7 +337,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](#the-header).
 
-### Vista de lista     {#list-view}
+### Vista de lista    {#list-view}
 
 ![Vista de lista](/help/sites-cloud/authoring/assets/list-view.png)
 
@@ -361,6 +361,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * **Nombre**: nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia con el idioma
    * **Modificada**: fecha de la última modificación y el usuario que la efectuó
    * **Publicada**: estado de publicación
+   * **Vista previa** : estado de vista previa
    * **Plantilla**: plantilla en la que se basa la página
    * **Flujo de trabajo**: flujo de trabajo aplicado actualmente en la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
    * **Análisis de la página**
