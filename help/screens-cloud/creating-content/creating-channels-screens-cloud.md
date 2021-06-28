@@ -1,18 +1,15 @@
 ---
 title: Creación y administración de canales en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar canales en Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 7%
 
 ---
 
 
-# Creación y administración de canales en Screens como Cloud Service {#creating-channels-screens-cloud}
+# Creación y administración de canales en Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Una vez creado un proyecto de AEM Screens, debe crear los canales.
 ***Los canales*** muestran una secuencia de contenido (imágenes y vídeos), un sitio web o una aplicación de una sola página.
@@ -91,6 +88,6 @@ Las siguientes plantillas están disponibles mientras se utiliza el asistente de
 | Canal de pantalla dividida de barras L izquierda o derecha | Permite a los autores de contenido ver diferentes tipos de recursos en zonas de tamaño adecuado. |
 
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Ahora que ha configurado un canal de AEM Screens en el proyecto, debe publicar el canal. Consulte [Publicación de canales en Screens como Cloud Service](/help/screens-cloud/creating-content/manage-publish.md) antes de administrar los reproductores desde el proveedor de servicios de Screens.
