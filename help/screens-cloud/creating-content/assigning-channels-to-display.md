@@ -1,10 +1,7 @@
 ---
 title: Asignación de canales a una visualización en Screens como Cloud Service
 description: En esta página se describe cómo asignar un canal a una visualización en Screens como Cloud Service.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
@@ -69,6 +66,6 @@ Siga los pasos a continuación para asignar un canal a una visualización:
    ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Ahora que ha asignado el canal a una pantalla, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Installing and Configuring Screens Player for AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
