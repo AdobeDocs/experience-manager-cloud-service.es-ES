@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
+source-git-commit: 641fd1716555806311e62a020e70b799ab3c621d
 workflow-type: tm+mt
-source-wordcount: '2785'
-ht-degree: 42%
+source-wordcount: '2907'
+ht-degree: 40%
 
 ---
 
@@ -158,6 +158,8 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extracción superior"
 
 Siga los pasos a continuación para extraer el conjunto de migración de la herramienta de transferencia de contenido:
+>[!NOTE]
+>Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, deberá configurar un archivo azcopy.config antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido de gran tamaño] para obtener más información.
 
 1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Extracción** para empezar la extracción. Aparece el cuadro de diálogo **Migration Set extraction** y haga clic en **Extract** para iniciar la fase de extracción.
 
@@ -206,8 +208,13 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="Ingesta superior"
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
+>[!NOTE]
+>Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy] para obtener más información.
 
-1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para empezar la extracción. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para iniciar la fase de ingesta. Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
+1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Ingesta** para comenzar la ingesta. Aparece el cuadro de diálogo **ingesta de conjunto de migración** . Haga clic en **Ingesta** para iniciar la fase de ingesta. Es posible la ingesta del contenido al mismo tiempo en Autor y Publish.
+
+   >[!IMPORTANT]
+   >Si se utiliza la ingesta con precopia (para S3 o Azure Data Store), se recomienda ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
 
    >[!IMPORTANT]
    >Cuando la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** está habilitada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados al grupo **administradores**.
