@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Administración de activos,Recursos conectados,Distribución de activos,Usuarios y grupos
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2967'
 ht-degree: 26%
 
 ---
@@ -120,9 +120,9 @@ Puede comprobar la conectividad entre las implementaciones configuradas [!DNL Si
 
 Puede configurar una conexión entre la implementación [!DNL Sites] y la implementación [!DNL Dynamic Media] que permita que los autores de las páginas web utilicen imágenes [!DNL Dynamic Media] en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones [!DNL Dynamic Media] remotas permanece igual. Esto le permite aprovechar la funcionalidad [!DNL Dynamic Media] mediante la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
 
-Para configurar esta conexión, siga estos pasos.
+Para configurar la conexión, siga estos pasos:
 
-1. Cree la configuración de los recursos conectados como se ha descrito anteriormente. Al configurar la funcionalidad, seleccione la opción **[!UICONTROL Buscar representación original para Dynamic Media Connected Assets]**.
+1. Cree la configuración de los recursos conectados como se describe anteriormente, excepto al configurar la funcionalidad, seleccione la opción **[!UICONTROL Buscar representación original para los recursos conectados con Dynamic Media]**.
 
 1. Configure [!DNL Dynamic Media] en implementaciones locales [!DNL Sites] y remotas [!DNL Assets]. Siga las instrucciones para [configurar [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
@@ -179,7 +179,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-### Comprobar el uso de un recurso en varias páginas web {#asset-usage-references}
+### Comprobar el uso de un recurso en las páginas web {#asset-usage-references}
 
 [!DNL Experience Manager] permite a los usuarios de DAM comprobar todas las referencias a un recurso. Ayuda a comprender y administrar el uso de un recurso en [!DNL Sites] remoto y en recursos compuestos. Muchos autores de páginas web en la implementación [!DNL Experience Manager Sites] pueden utilizar un recurso en un DAM remoto en diferentes páginas web. Para simplificar la administración de recursos y no provocar referencias rotas, es importante que los usuarios de DAM comprueben el uso de un recurso en las páginas web locales y remotas. La pestaña [!UICONTROL Referencias] de la página [!UICONTROL Propiedades] de un recurso muestra las referencias locales y remotas del recurso.
 
@@ -205,7 +205,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 * Los recursos locales no se sincronizan con los recursos originales en la implementación remota. Las ediciones, eliminaciones o revocaciones de permisos en la implementación de DAM no se propagan de forma descendente.
 * Los recursos locales son copias de solo lectura. [!DNL Experience Manager]Los componentes de realizan ediciones no destructivas en los recursos. No se permiten otras ediciones.
 * Los recursos recuperados localmente solo están disponibles para la creación. Los flujos de trabajo de actualización de recursos no se pueden aplicar y los metadatos no se pueden editar.
-* Al utilizar [!DNL Dynamic Media] en páginas [!DNL Sites], el recurso original no se busca ni se almacena en la implementación local. El nodo `dam:Asset`, los metadatos y las representaciones generados por la implementación [!DNL Assets] se recuperan en la implementación [!DNL Sites].
+* Cuando se utiliza [!DNL Dynamic Media] en páginas [!DNL Sites], el recurso original no se busca ni se almacena en la implementación local. El nodo `dam:Asset`, los metadatos y las representaciones generados por la implementación [!DNL Assets] se recuperan en la implementación [!DNL Sites].
 * Solo se admiten las imágenes y los formatos de documento enumerados. [!DNL Content Fragments] y no  [!DNL Experience Fragments] son compatibles.
 * [!DNL Experience Manager] no recupera los esquemas de metadatos. Significa que es posible que no se muestren todos los metadatos recuperados. Si el esquema se actualiza por separado en la implementación [!DNL Sites] , se muestran todas las propiedades de los metadatos.
 * Todos los autores [!DNL Sites] tienen permisos de lectura en las copias recuperadas, incluso si los autores no pueden acceder a la implementación remota de DAM.
