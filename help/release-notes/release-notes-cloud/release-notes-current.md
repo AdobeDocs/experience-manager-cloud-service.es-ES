@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -143,6 +143,27 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 * Cuando se valida un campo antes de enviar datos al servicio back-end mediante el Modelo de datos de formulario (FDM), las validaciones se realizan correctamente, pero el servicio Modelo de datos de formulario no invoca la validación posterior.
 * Cuando se envía un formulario que contiene un campo de carga HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Este es un problema conocido en Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+Esta sección describe las notas de la versión de Screens como Cloud Service.
+
+### Fecha de la versión {#release-date-june-screens}
+
+La fecha de versión de AEM Screens as a Cloud Service es el 24 de junio de 2021.
+
+### Novedades {#what-is-new-screens-june}
+
+>[!NOTE]
+>Consulte la [Guía de AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en) para conocer los conocimientos básicos necesarios para instalar, configurar y ejecutar correctamente Screens as a Cloud Service y vincule la documentación técnica de conceptos detallados.
+
+* La administración del registro masivo de dispositivos significa que el aprovisionamiento de grandes cantidades de dispositivos del reproductor es más rápido y eficiente.
+
+* Se han mejorado las opciones de búsqueda y filtro para cada una de las vistas de inventario de Dispositivo, Pantalla y Canal.
+
+* La instantánea de la salud del dispositivo ahorra tiempo al proporcionar un estado crítico como un vistazo.
+
+* La página de detalles del objeto ofrece un resumen de la información más relevante para cada objeto del proyecto.
 
 ## Complemento CIF {#cloud-services-cif}
 
