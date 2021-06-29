@@ -4,9 +4,9 @@ description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dyn
 feature: Vídeo de RV 360
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -27,25 +27,25 @@ Consulte también [Administración de ajustes preestablecidos de visualizador](/
 
 ## 360 Vídeo en acción {#video-in-action}
 
-Pulse [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del navegador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
+Seleccione [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del navegador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
 
 ![360 ](assets/6_5_360videoiss_simplified.png)
 *Ejemplo de vídeoFotograma de vídeo de la estación espacial 360*
 
-## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## Vídeo y Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
 Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Carga de recursos para su uso con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
+## Cargar recursos para usarlos con el visor de vídeos 360 {#uploading-assets-for-use-with-the-video-viewer}
 
 Los 360 recursos de vídeo cargados en [!DNL Experience Manager] se etiquetan como **Multimedia** en una página de Asset, de forma similar al recurso de vídeo normal.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreviewRecurso de vídeo cargado 360 que se ve en la vista de tarjeta. El recurso está etiquetado como multimedia.*
 
-**Para cargar recursos para usarlos con el visor de vídeos 360:**
+**Cargue recursos para utilizarlos con el visor de vídeos 360:**
 
 1. Se ha creado una carpeta dedicada al recurso de vídeo 360.
 1. [Aplicar un perfil de vídeo adaptable a la carpeta](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
@@ -57,7 +57,7 @@ Los 360 recursos de vídeo cargados en [!DNL Experience Manager] se etiquetan co
    * Lo ideal es que el contenido de vídeo original de 360 tenga una de las siguientes resoluciones:
 
       * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD,
-      * 2160p - 3840 x 2160, conocida como resolución de alta definición en 4K, UHD o Ultra. Esta gran resolución de pantalla suele encontrarse en los televisores de gama alta y en los monitores de ordenador. La resolución 2160p a menudo se denomina &quot;4K&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
+      * 2160p - 3840 x 2160, conocida como resolución de alta definición de 4 k, UHD o Ultra. Esta gran resolución de pantalla suele encontrarse en los televisores de gama alta y en los monitores de ordenador. La resolución 2160p a menudo se denomina &quot;4k&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
    * [Cree un ](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) perfil de vídeo adaptable personalizado con representaciones de mayor calidad. Por ejemplo, puede crear un perfil de vídeo adaptable que contenga las tres configuraciones siguientes:
 
       * Width=auto; Altura=720; Velocidad de bits=2500 kbps
@@ -102,34 +102,34 @@ Consulte [Incrustación del visualizador de imágenes o vídeos en una página w
 Consulte [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas [!DNL Experience Manager Sites].
 Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
-**Para previsualizar los vídeos 360**
+**Para previsualizar los vídeos 360:**
 
-1. En **[!UICONTROL Assets]**, vaya a un vídeo 360 existente que haya creado. Para abrirlo en modo de vista previa, pulse el recurso de vídeo 360.
+1. En **[!UICONTROL Assets]**, vaya a un vídeo 360 existente que haya creado. Para abrirlo en modo de vista previa, seleccione el recurso de vídeo 360.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Para obtener una vista previa del vídeo, pulse el recurso de vídeo 360.
+   Para previsualizar el vídeo, seleccione el recurso de vídeo 360.
 
-1. En la página de vista previa, cerca de la esquina superior izquierda de la página, pulse la lista desplegable y, a continuación, seleccione **[!UICONTROL Visualizadores]**.
+1. En la página de vista previa, cerca de la esquina superior izquierda de la página, seleccione la lista desplegable y luego seleccione **[!UICONTROL Visualizadores]**.
 
    ![6_5_360visores de vista previa de vídeo](assets/6_5_360video-preview-viewers.png)
 
-   En la lista Visualizadores, pulse **[!UICONTROL Video360_social]** y, a continuación, realice una de las siguientes acciones:
+   En la lista Visualizadores, seleccione **[!UICONTROL Video360_social]** y, a continuación, realice una de las siguientes acciones:
 
    * Para modificar el ángulo de visualización de la escena estática, arrastre el puntero por el vídeo.
-   * Para comenzar la reproducción, pulse el botón **[!UICONTROL Play]** del vídeo. A medida que se reproduce el vídeo, arrastre el puntero por el vídeo para modificar su ángulo de visualización.
+   * Para comenzar la reproducción, seleccione el botón **[!UICONTROL Play]** del vídeo. A medida que se reproduce el vídeo, arrastre el puntero por el vídeo para modificar su ángulo de visualización.
 
    ![Captura de pantalla de vídeo de 6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360.*
 
-   * En la lista Visualizadores, pulse **[!UICONTROL Video360VR]**.
+   * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
       El vídeo de Realidad virtual (VR) es contenido de vídeo inmersivo al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, se crean vídeos VR al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un video de 360 VR.*
 
-1. Cerca de la parte superior derecha de la página de vista previa, pulse **[!UICONTROL Cerrar]**.
+1. Cerca de la parte superior derecha de la página de vista previa, seleccione **[!UICONTROL Cerrar]**.
 
-## Publicación de vídeo 360 {#publishing-video}
+## Publicar vídeo 360 {#publishing-video}
 
 Para usar el vídeo 360, debe publicarlo. Al publicar un vídeo de 360 se activa la dirección URL y el código incrustado. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
 
