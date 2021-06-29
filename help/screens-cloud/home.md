@@ -1,10 +1,10 @@
 ---
 title: AEM Screens como Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager Screens as a Cloud Service
-source-git-commit: 79eac4a2bf7d891dcd99c90f518fffeca279b3b7
+source-git-commit: 8d68844d67b6025b5dbb7351ed123765afe742bc
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 62%
+source-wordcount: '452'
+ht-degree: 60%
 
 ---
 
@@ -18,9 +18,11 @@ En esta página se muestran los recursos informativos relacionados con AEM Scree
 
 ## Contenido clave y artículos de AEM Screens as a Cloud Service {#key-articles}
 
-* [Introducción a AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
-* [Incorporación a AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
+* [Incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Configurar los servicios y el proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 * [Crear un proyecto en Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Instalar el reproductor Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
 
