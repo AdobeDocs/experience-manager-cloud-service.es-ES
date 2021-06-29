@@ -1,7 +1,7 @@
 ---
 title: Gestión de repositorios de contenido grandes
 description: Esta sección describe la administración de repositorios de contenido de gran tamaño
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 1%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Almacenamiento de datos de Amazon S3 {#amazon-data-store}
+#### Almacenamiento de datos de Amazon S3 {#amazon-sdata-store}
 
 El archivo azcopy.config debe incluir las siguientes propiedades (asegúrese de utilizar los valores correctos para su instancia).
 
@@ -134,7 +134,7 @@ AzCopy omitirá automáticamente cualquier blobs que se haya copiado antes del e
 Con el lanzamiento de la herramienta de transferencia de contenido 1.5.4, hemos añadido la compatibilidad con AzCopy a la ingesta de Autores.
 
 >[!NOTE]
-> La recomendación es ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
+>La recomendación es ejecutar la ingesta de Autor solo primero. Esto acelera la ingesta de Publicar cuando se ejecute más adelante.
 
 Para aprovechar AzCopy durante la ingesta, es necesario que esté en una AEM como versión de Cloud Service que sea al menos de la versión 2021.6.5561.
 
