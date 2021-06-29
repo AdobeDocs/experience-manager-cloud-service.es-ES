@@ -4,10 +4,10 @@ description: Para configurar Dynamic Media, debe configurar Dynamic Media y admi
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
@@ -28,9 +28,9 @@ ht-degree: 6%
 Si administra Dynamic Media, son de interés los temas siguientes:
 
 * [Configuración de Dynamic Media](config-dm.md)
-* [Administración de ajustes preestablecidos de imagen](managing-image-presets.md)
-* [Administración de ajustes preestablecidos de visor](managing-viewer-presets.md)
-* [Solución de problemas de Dynamic Media](troubleshoot-dm.md)
+* [Administrar ajustes preestablecidos de imagen](managing-image-presets.md)
+* [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
+* [Resolución de problemas de Dynamic Media](troubleshoot-dm.md)
 
 Consulte también los siguientes temas:
 
@@ -41,5 +41,5 @@ Consulte también los siguientes temas:
 >
 >**Si está actualizando:**
 >
->* Una vez que el Adobe [!DNL Experience Manager] está en funcionamiento, cualquier recurso que cargue tiene Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si se encuentra en una instancia actualizada de [!DNL Experience Manager] y es nuevo en Dynamic Media, es probable que deba volver a procesar los recursos para habilitarlos para Dynamic Media. Consulte [Volver a procesar recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Una vez que el Adobe [!DNL Experience Manager] está en funcionamiento, cualquier recurso que cargue tiene Dynamic Media habilitado automáticamente (a menos que el administrador del sistema lo haya deshabilitado explícitamente). Si se encuentra en una instancia actualizada de [!DNL Experience Manager] y es nuevo en Dynamic Media, es probable que deba volver a procesar los recursos para habilitarlos para Dynamic Media. Consulte [Reprocesar recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
