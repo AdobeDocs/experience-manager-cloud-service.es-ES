@@ -1,10 +1,10 @@
 ---
 title: Inicio de sesión por primera vez en Screens como Cloud Service
 description: En esta página se describen los primeros pasos para empezar a utilizar Screens como Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Después de firmar el contrato, Adobe Managed Services (AMS) inicia la incorpora
 
 ## Disponibilidad del Feature Pack {#availability}
 
-El paquete de funciones de AMS-Screens-Cloud está disponible a través del portal de distribución de software.
+El paquete de funciones de AMS-Screens-Cloud está disponible a través de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html).
 Haga clic aquí para descargar el paquete de funciones más reciente.
 
 ## Añadir usuarios a Adobe Admin Console {#admin-console}
