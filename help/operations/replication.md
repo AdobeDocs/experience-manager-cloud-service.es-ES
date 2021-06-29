@@ -2,7 +2,7 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -41,18 +41,18 @@ Para realizar la replicación automática para esto, debe habilitar **Replicaci�
 
 Para realizar una activación de árbol:
 
-1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
-2. Seleccione la tarjeta **forwardPublisher**
-3. Una vez en la interfaz de usuario de la consola web de forwardPublisher, **seleccione Distribuir**
+1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
+2. Seleccione la tarjeta **publish**
+3. Una vez en la interfaz de usuario de la consola web de publicación, **seleccione Distribuir**
 
-   ![](assets/distribute.png "DistribuirDistribuir")
+   ![](assets/publish-distribute.png "DistribuirDistribuir")
 4. Seleccione la ruta en el navegador de rutas, elija añadir un nodo, árbol o eliminar según sea necesario y seleccione **Submit**
 
 ### Flujo de trabajo del árbol de contenido de publicación {#publish-content-tree-workflow}
 
 Puede almacenar en déclencheur una replicación de árbol seleccionando **Tools - Workflow - Models** y copiando el modelo de flujo de trabajo **Publish Content Tree** listo para usar, como se muestra a continuación:
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 No modifique ni invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo y luego modificar o invocar esa copia.
 
@@ -190,14 +190,14 @@ Puede encontrar información más detallada sobre Administrar publicación en la
 
 Para solucionar problemas de replicación, vaya a las colas de replicación en la interfaz de usuario web del servicio de autor de AEM:
 
-1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
-2. Seleccione la tarjeta **forwardPublisher**
-   ![](assets/status.png "StatusStatus")
+1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
+2. Seleccione la tarjeta **publish**
+   ![](assets/publish-status.png "StatusStatus")
 3. Comprobar el estado de la cola que debería ser verde
 4. Puede probar la conexión con el servicio de replicación
 5. Seleccione la pestaña **Logs** que muestra el historial de publicaciones de contenido
 
-![](assets/logs.png "LogsLogs")
+![](assets/publish-logs.png "LogsLogs")
 
 Si no se pudo publicar el contenido, toda la publicación se revierte desde el servicio de publicación de AEM.
 En ese caso, las colas deben revisarse para identificar qué elementos causaron la cancelación de la publicación. Al hacer clic en una cola que muestra un estado rojo, se mostraría la cola con elementos pendientes, desde la cual se pueden borrar todos o uno de los elementos si es necesario.
