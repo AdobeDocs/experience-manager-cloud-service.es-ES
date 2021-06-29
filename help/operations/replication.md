@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 4%
 
 ---
@@ -35,9 +35,13 @@ Para realizar la replicación automática para esto, debe habilitar **Replicaci�
 
 ### Activación de árbol {#tree-activation}
 
+>[!NOTE]
+>
+>Este enfoque debe considerarse obsoleto, ya que no persiste en los estados y es menos escalable que otros enfoques. La recomendación del Adobe es utilizar en su lugar los métodos de gestión de publicación o flujo de trabajo
+
 Para realizar una activación de árbol:
 
-1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
+1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
 2. Seleccione la tarjeta **forwardPublisher**
 3. Una vez en la interfaz de usuario de la consola web de forwardPublisher, **seleccione Distribuir**
 
