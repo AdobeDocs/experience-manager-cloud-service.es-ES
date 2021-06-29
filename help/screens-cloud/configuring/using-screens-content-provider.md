@@ -1,9 +1,9 @@
 ---
 title: Uso del proveedor de contenido de Screens
 description: En esta página se describe cómo usar el proveedor de contenido de Screens para crear contenido.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Objetivo {#objective}
 
-En la siguiente sección se describe cómo usar el proveedor de contenido de Screens, una vez que haya configurado el proveedor de servicios de Screens.
+En la siguiente sección se describe cómo usar el proveedor de contenido de Screens, una vez que haya configurado el [proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en).
 
 ## Uso del proveedor de contenido de Screens {#screens-content-provider}
 
@@ -25,7 +25,9 @@ En la siguiente sección se describe cómo usar el proveedor de contenido de Scr
 >**Requisitos previos**
 >Antes de comenzar a leer esta sección, consulte [Configuración del proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) para aprender a navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
 
-Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya estará listo para crear el contenido en la reproducción del contenido. Utilice el proveedor de contenido de Screens para crear y administrar:
+Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya estará listo para crear el contenido en la reproducción del contenido.
+
+Debe utilizar el proveedor de contenido de Screens para crear y administrar:
 
 * Proyectos
 * Canales
