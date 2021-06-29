@@ -3,10 +3,10 @@ sub-product: AEM Screens como Cloud Service
 user-guide-title: AEM Screens como Cloud Service
 breadcrumb-title: AEM Screens como Cloud Service
 user-guide-description: Comprender AEM Screens como Cloud Service.
-source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
+source-git-commit: 38c749e76ae8bc6efa72beb6963b53311ec3817e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 2%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 0%
    + [Creación de una rama](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
    + [Creación de un entorno](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
    + [Ejecución de la canalización](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + Configuración de Screens como proyecto de Cloud Service {#configure-screens-cloud}
-      + [Navegar al proveedor de servicios de Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
-      + [Navegar al proveedor de contenido de Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
++ Configuración de Screens como proyecto de Cloud Service {#configure-screens-cloud}
+   + [Navegar al proveedor de servicios de Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
+   + [Navegar al proveedor de contenido de Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
 + Creación de contenido {#create-content}
    + [Creación y administración de un proyecto en el proveedor de contenido de Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
    + [Creación y administración de un canal en el proveedor de contenido de Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
    + [Administración de publicación](/help/screens-cloud/creating-content/manage-publish.md)
    + [Creación y administración de una visualización en el proveedor de servicios de Screens](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [Asignación de canales a una pantalla](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
-   + Administración del reproductor y el registro {#manage-player-registration}
-      + [Instalación del reproductor Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-      + [Registro del reproductor](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-      + [Asignación del reproductor a una pantalla](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
++ Administración del reproductor y el registro {#manage-player-registration}
+   + [Instalación del reproductor Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+   + [Registro del reproductor](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+   + [Asignación del reproductor a una pantalla](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
