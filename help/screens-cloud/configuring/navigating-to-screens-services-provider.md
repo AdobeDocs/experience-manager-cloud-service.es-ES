@@ -1,7 +1,7 @@
 ---
 title: Navegar al proveedor de servicios de Screens
 description: En esta página se describe cómo navegar al proveedor de servicios de Screens.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Siga los pasos a continuación para configurar el proveedor de servicios de Scre
 
 1. Vaya al proveedor de servicios de Screens desde [aquí](https://experience.adobe.com/screens).
 
-   >[!NOTE]
+   >[!CAUTION]
    >Si tiene acceso a varias organizaciones, asegúrese de haber iniciado sesión en la organización correcta. Para cambiar su organización, haga clic en el nombre de la organización en la esquina superior derecha de la pantalla y elija la organización a la que necesita acceder.
 
 1. Seleccione **Channels** en la barra de navegación izquierda y haga clic en **abrir en el proveedor de contenido**.
