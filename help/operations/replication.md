@@ -2,10 +2,10 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '1155'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service utiliza la capacidad [Sling Content 
 
 ### Cancelación/publicación rápida: cancelación/publicación planeada {#publish-unpublish}
 
-Estas funcionalidades de AEM estándar para los autores no cambian con AEM Cloud Service.
+Esto le permite publicar las páginas seleccionadas inmediatamente, sin las opciones adicionales posibles a través del enfoque Administrar publicación .
+
+Para obtener más información, consulte [Administrar publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Horas de activación y desactivación: configuración de Déclencheur {#on-and-off-times-trigger-configuration}
 
@@ -35,7 +37,7 @@ Para realizar la replicación automática para esto, debe habilitar **Replicaci�
 
 Para realizar una activación de árbol:
 
-1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
+1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
 2. Seleccione la tarjeta **forwardPublisher**
 3. Una vez en la interfaz de usuario de la consola web de forwardPublisher, **seleccione Distribuir**
 
@@ -172,11 +174,19 @@ Si no proporciona dicho filtro y solo utiliza el agente &quot;publicar&quot;, no
 
 El `ReplicationStatus` general de un recurso solo se modifica si la acción de replicación incluye al menos un agente que esté activo de forma predeterminada. En el ejemplo anterior, este no es el caso, ya que la replicación está utilizando el agente de &quot;vista previa&quot;. Por lo tanto, debe utilizar el nuevo método `getStatusForAgent()` , que permite consultar el estado de un agente específico. Este método también funciona para el agente &quot;publicar&quot;. Devuelve un valor no nulo si se ha realizado alguna acción de replicación con el agente proporcionado.
 
+### Administrar publicación     {#manage-publication}
+
+Administrar publicación ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
+
+Si se incluyen los elementos secundarios de una carpeta para la opción &quot;publicar más tarde&quot;, se invocará el flujo de trabajo Publicar árbol de contenido , descrito en este artículo.
+
+Puede encontrar información más detallada sobre Administrar publicación en la [documentación de Aspectos básicos de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+
 ## Solución de problemas {#troubleshooting}
 
 Para solucionar problemas de replicación, vaya a las colas de replicación en la interfaz de usuario web del servicio de autor de AEM:
 
-1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
+1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
 2. Seleccione la tarjeta **forwardPublisher**
    ![](assets/status.png "StatusStatus")
 3. Comprobar el estado de la cola que debería ser verde
