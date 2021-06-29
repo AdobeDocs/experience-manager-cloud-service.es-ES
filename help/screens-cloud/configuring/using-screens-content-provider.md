@@ -1,10 +1,10 @@
 ---
 title: Uso del proveedor de contenido de Screens
 description: En esta página se describe cómo usar el proveedor de contenido de Screens para crear contenido.
-source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 3%
+source-wordcount: '209'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ En la siguiente sección se describe cómo usar el proveedor de contenido de Scr
 
 >[!NOTE]
 >**Requisitos previos**
->Antes de comenzar a leer esta sección, consulte Configuración del proveedor de servicios de Screens para obtener información sobre cómo navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
+>Antes de comenzar a leer esta sección, consulte [Configuración del proveedor de servicios de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) para aprender a navegar a esta interfaz de usuario desde el proveedor de servicios de Screens.
 
 Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya estará listo para crear el contenido en la reproducción del contenido. Utilice el proveedor de contenido de Screens para crear y administrar:
 
@@ -33,6 +33,6 @@ Una vez que haya iniciado sesión en el proveedor de contenido de Screens, ya es
 
 ## Siguientes pasos {#whats-next}
 
-Ahora, ha aprendido a navegar al proveedor de contenido de Screens, debe continuar con el recorrido de Screens como Cloud Service revisando el documento, Creando y administrando proyectos en Screens como Cloud Service.
+Ahora, ya ha aprendido a desplazarse hasta el proveedor de contenido de Screens, debe continuar con el recorrido de Screens como Cloud Service revisando el documento [Creación y administración de un proyecto en Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en).
 
 
