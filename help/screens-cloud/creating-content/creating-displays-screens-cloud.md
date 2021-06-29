@@ -1,10 +1,10 @@
 ---
 title: Creación y administración de visualizaciones en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar visualizaciones en Screens como Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 14%
+source-wordcount: '292'
+ht-degree: 13%
 
 ---
 
@@ -52,4 +52,4 @@ Seleccione la pantalla y haga clic en **Delete** en la parte inferior del panel,
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Asignar canal a una pantalla en Screens como Cloud Service](/help/screens-cloud/creating-content/assigning-channels-to-display.md).
+Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Asignar canal a una pantalla en Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
