@@ -4,9 +4,9 @@ description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!
 feature: Información de la versión
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '970'
 ht-degree: 5%
 
 ---
@@ -61,6 +61,8 @@ Para realizar una validación completa del código y el proceso, incluido el pro
 | Extraer recursos del archivo ZIP | No se admite. | Consulte [Extracción ZIP en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Clasificaciones de activos | No se admite. | No se admite el widget de clasificación del editor de esquemas de metadatos. |
 | Filtro de distribución de contenido | No se admite. | Un caso de uso popular de `ContentDispositionFilter` es permitir que los administradores configuren [!DNL Experience Manager] para servir archivos HTML y abrir archivos PDF en línea en lugar de descargarlos. En las instancias de publicación, puede administrar la disposición mediante la configuración de Dispatcher. En las instancias de autor, el Adobe no recomienda la modificación del encabezado Disposición de contenido . Consulte [Filtro Disposición de contenido en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
+| [Descargar informe](/help/assets/asset-reports.md) | No se admite. | Por ahora, el informe de descarga que informa del uso de los recursos no está disponible. Consulte el [informe de descarga en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
+| Plantilla de sesión fotográfica del producto | No se admite. | Consulte [plantilla de sesión fotográfica del producto en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | IU clásica | No se admite. | Solo está disponible la interfaz de usuario táctil. |
 
 >[!MORELIKETHIS]
