@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Administración de recursos,Publicación,Colaboración,Procesamiento de recursos
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
 workflow-type: tm+mt
-source-wordcount: '4502'
+source-wordcount: '4550'
 ht-degree: 11%
 
 ---
@@ -40,7 +40,7 @@ No se admiten los siguientes caracteres (lista de) separados por espacios:
 
 Consulte [añadir recursos digitales al Experience Manager](add-assets.md).
 
-## Detectar activos duplicados {#detect-duplicate-assets}
+## Detectar recursos duplicados {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
@@ -462,6 +462,14 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 ### Ver anotaciones guardadas {#viewing-saved-annotations}
 
+Solo puede ver una anotación a la vez.
+
+>[!NOTE]
+>
+>Si selecciona varias anotaciones, la anotación más reciente estará visible en la interfaz de usuario.
+>
+>La selección múltiple solo es compatible para imprimir el recurso anotado como PDF.
+
 1. Para ver las anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
 1. Pulse o haga clic en el icono de navegación global y elija **[!UICONTROL Línea de tiempo]** en la lista.
@@ -483,6 +491,10 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar el estado como archivo PDF para su revisión sin conexión.
 
 También puede elegir imprimir solo las anotaciones o el estado de revisión.
+
+>[!NOTE]
+>
+>Puede seleccionar varias anotaciones al imprimir el recurso anotado como PDF.
 
 Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. El icono **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene asignado al menos una anotación o un estado de revisión.
 
@@ -516,7 +528,7 @@ Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono
 
 1. Descargue o imprima el PDF con las opciones de la parte superior derecha.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** en el Administrador de configuración y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
@@ -618,7 +630,7 @@ Una colección es un conjunto ordenado de recursos. Utilice las colecciones para
 
 Para obtener más información sobre la administración de colecciones, consulte [administrar colecciones](/help/assets/manage-collections.md).
 
-## Ocultar recursos caducados al ver recursos en la aplicación de escritorio o en el Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Ocultar recursos caducados al ver recursos en la aplicación de escritorio o en el vínculo de recursos de Adobe {#hide-expired-assets-via-acp-api}
 
 [!DNL Experience Manager] la aplicación de escritorio permite acceder al repositorio DAM desde Windows o Mac Desktop. Adobe Asset Link permite acceder a los recursos desde las aplicaciones de escritorio [!DNL Creative Cloud] compatibles.
 
