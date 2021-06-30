@@ -4,20 +4,19 @@ user-guide-title: Guía de Assets as a Cloud Service
 breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: ec5510d68c2c38be7755070e84b98d519c10e02a
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 71%
+source-wordcount: '484'
+ht-degree: 70%
 
 ---
 
 
-# [!DNL Assets] Guía  {#assets}
+# [!DNL Assets] Guía {#assets}
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Información general y novedades](overview.md)
-+ [Cambios importantes  [!DNL Assets] en [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Cambios importantes en [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] arquitectura](architecture.md)
 + [Formatos de archivo compatibles](file-format-support.md)
 + [Información general sobre los microservicios de recursos](asset-microservices-overview.md)
@@ -32,7 +31,7 @@ ht-degree: 71%
    + [Etiquetas inteligentes para imágenes](smart-tags.md)
    + [Etiquetado inteligente de recursos de vídeo](smart-tags-video-assets.md)
    + [Organizar recursos](organize-assets.md)
-   + [ [!DNL Adobe Stock] Uso de recursos en AEM](aem-assets-adobe-stock.md)
+   + [Usar  [!DNL Adobe Stock] recursos en AEM](aem-assets-adobe-stock.md)
    + [Administrar colecciones](manage-collections.md)
    + [Información general sobre metadatos](manage-metadata.md)
    + [Integrar con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -46,6 +45,7 @@ ht-degree: 71%
    + [Insertar y sacar recursos para editar](check-out-and-submit-assets.md)
    + [Digital Rights Management para recursos](drm.md)
    + [Recursos de marca de agua](watermark-assets.md)
+   + [Procesamiento de recursos mediante  [!DNL Creative Cloud] API](cc-api-integration.md)
 + Configurar, administrar y ampliar [!DNL Assets] {#admin}
    + [Documentación para desarrolladores y referencias de API](developer-reference-material-apis.md)
    + [Carpeta de esquema de metadatos](folder-metadata-schema.md)
@@ -64,7 +64,7 @@ ht-degree: 71%
    + [Funciones de MediaLibrary](medialibrary.md)
    + [Importación y exportación metadatos de recursos](metadata-import-export.md)
 + Compartir y distribuir recursos {#brand-portal}
-   + [ [!DNL Assets] Configurar con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar recursos en [!DNL Brand Portal]](publish-to-brand-portal.md)
    + [Publicar recursos  [!DNL Brand Portal] desde [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + Fragmentos de contenido {#content-fragments}
