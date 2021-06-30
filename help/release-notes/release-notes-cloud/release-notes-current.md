@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1544'
 ht-degree: 3%
 
 ---
@@ -111,7 +111,7 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
    ![Filtrado de carpetas de búsqueda mediante predicados de búsqueda](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] incrusta el visor de PDF para previsualizar los formatos de documento admitidos. Está alimentado por [!DNL Adobe Document Cloud]. Esta función permite a los usuarios previsualizar archivos PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de características con [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incrusta el visor de PDF para previsualizar los formatos de documento admitidos. Está alimentado por [!DNL Adobe Document Cloud]. Esta función permite a los usuarios previsualizar archivos PDF y otros archivos de varias páginas sin ningún procesamiento complejo. Esto mejora la paridad de las funciones con [!DNL Experience Manager] 6.5. Los controles disponibles en la vista previa son: zoom, navegación a páginas, desacoplamiento de controles y visualización en pantalla completa. El visor de PDF integrado es compatible con los formatos de archivo AI, DOCX, INDD, PDF y PSD. Puede realizar comentarios sobre el recurso en sí, pero no se admiten comentarios y anotaciones en el archivo PDF.
 
    ![Vista previa de archivos PDF en  [!DNL Experience Manager] el visor de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
