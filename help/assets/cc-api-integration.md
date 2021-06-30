@@ -4,9 +4,9 @@ description: Generar variaciones de los recursos mediante la integración del Cr
 contentOwner: AG
 feature: Cargar,Procesamiento de recursos,Publicación,Microservicios de Asset compute,Flujo de trabajo
 role: Business Practitioner,Administrator
-source-git-commit: 05f2bfac12d37b8ef9940e3381c709891cabe236
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -20,31 +20,37 @@ Para editar recursos en [!DNL Adobe Photoshop] y [!DNL Adobe Lightroom], no es n
 
 Los usuarios pueden crear perfiles de procesamiento para automatizar las siguientes operaciones creativas en sus recursos:
 
-**Tono** automático: Utiliza la inteligencia artificial para analizar el contenido de la imagen y realiza de forma inteligente correcciones de luz y color basadas en los atributos únicos de la imagen.
-**Auto-vertical**: Utiliza inteligencia artificial para analizar el contenido de la imagen y corregir la perspectiva sesgada en las imágenes. Por ejemplo, para crear horizontes de nivel.
-**Ajustes preestablecidos** de Lightroom: Aplica un aspecto definido por el usuario a las imágenes para lograr un aspecto uniforme mediante ajustes preestablecidos personalizados.
-**Recorte de imagen**: Utiliza la inteligencia artificial para crear la selección alrededor de los objetos salientes y eliminar el fondo con un solo comando.
-**Máscara** de imagen: Utiliza inteligencia artificial para crear máscara alrededor de objetos salientes con un solo comando.
-**Acciones** de Photoshop: Aplica una serie de tareas (en Photoshop) a un archivo o a un lote de archivos.
-**Sustitución** de objetos inteligentes: Realiza una personalización a escala, permitiéndole intercambiar imágenes manteniendo al mismo tiempo todos los efectos y ajustes aplicados dentro de un archivo PSD.
+* **Tono** automático: Utiliza la inteligencia artificial para analizar el contenido de la imagen y realiza de forma inteligente correcciones de luz y color basadas en los atributos únicos de la imagen.
+* **Auto-vertical**: Utiliza inteligencia artificial para analizar el contenido de la imagen y corregir la perspectiva sesgada en las imágenes. Por ejemplo, para crear horizontes de nivel.
+* **Ajustes preestablecidos** de Lightroom: Aplica un aspecto definido por el usuario a las imágenes para lograr un aspecto uniforme mediante ajustes preestablecidos personalizados.
+* **Recorte de imagen**: Utiliza la inteligencia artificial para crear la selección alrededor de los objetos salientes y eliminar el fondo con un solo comando.
+* **Máscara** de imagen: Utiliza inteligencia artificial para crear máscara alrededor de objetos salientes con un solo comando.
+* **Acciones** de Photoshop: Aplica una serie de tareas (en Photoshop) a un archivo o a un lote de archivos.
+* **Sustitución** de objetos inteligentes: Realiza una personalización a escala, permitiéndole intercambiar imágenes manteniendo al mismo tiempo todos los efectos y ajustes aplicados dentro de un archivo PSD.
 
 ## Uso de un perfil de procesamiento para procesar recursos {#process-assets}
 
 Para utilizar perfiles de procesamiento para crear variaciones automáticamente, siga estos pasos:
 
-1. Póngase en contacto con el servicio de atención al cliente de Adobe para adquirir la licencia.
-1. Vaya a Herramientas > Recursos > Perfiles de procesamiento.
-1. Seleccione Crear y especifique un Nombre.
-1. Seleccione la pestaña Creative . Especifique la carpeta de salida, seleccione [!UICONTROL Agregar nuevo] para agregar configuraciones creativas. Proporcione Nombre de representación (o nombre de salida), Extensión (o tipo de archivo), seleccione Calidad (o parámetros de salida), seleccione Incluye y excluye listas de tipo MIME (o filtro de recursos de entrada) y seleccione la operación creativa necesaria.
-1. Para algunas operaciones, se requiere un parámetro adicional (recurso). Proporcione valores para estos parámetros adicionales si se solicita.
+1. Póngase en contacto con [Adobe Customer Care](https://experienceleague.adobe.com/#support) para recibir la licencia.
+
+1. Vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
+
+1. Seleccione **[!UICONTROL Crear]** y especifique un **[!UICONTROL Nombre]**.
+
+1. Seleccione la pestaña **[!UICONTROL Creative]**, especifique la carpeta de salida, seleccione **[!UICONTROL Agregar nuevo]** para añadir una configuración creativa.
+
+1. Proporcione **[!UICONTROL Nombre de representación]** (o nombre de salida), **[!UICONTROL Extensión]** (o tipo de archivo), seleccione **[!UICONTROL Calidad]** (o parámetros de salida), seleccione Incluye y excluye listas de tipo MIME (o filtro de recursos de entrada) y seleccione la operación creativa necesaria.
+
+1. Algunas operaciones requieren un parámetro adicional (recurso). Proporcione valores para estos parámetros adicionales si es necesario.
 
 1. Agregue más operaciones creativas como parte del mismo perfil de procesamiento o guarde el perfil.
 
-1. Aplique el perfil de procesamiento a una carpeta. Seleccione Propiedades de la carpeta, Procesamiento de recursos y seleccione el perfil de procesamiento creado.
+1. Aplique el perfil de procesamiento a una carpeta. En la página **[!UICONTROL Properties]** de una carpeta, seleccione **[!UICONTROL Asset Processing]** y seleccione el perfil de procesamiento que desee aplicar.
 
-Una vez que el perfil de procesamiento se aplica a una carpeta DAM, todos los recursos cargados o actualizados en esta carpeta (o en subcarpetas, a menos que se sobrescriban) ejecutan las operaciones definidas además del procesamiento estándar.
+Una vez que el perfil de procesamiento se aplica a una carpeta DAM, todos los recursos cargados o actualizados en esta carpeta ejecutan las operaciones definidas además del procesamiento estándar. Las subcarpetas heredan los mismos perfiles que se aplican a las carpetas principales. Los usuarios pueden anular esta herencia.
 
-Para procesar los recursos existentes manualmente, seleccione los recursos y la opción **[!UICONTROL Reprocesar]** y, a continuación, seleccione el perfil de procesamiento necesario.
+Para procesar los recursos existentes, seleccione los recursos, la opción **[!UICONTROL Reprocesar]** y, a continuación, seleccione el perfil de procesamiento necesario.
 
 ## Sugerencias y limitaciones {#limitations-best-practices}
 
