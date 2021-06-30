@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Etiquetas inteligentes,Etiquetado
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2355'
 ht-degree: 6%
 
 ---
@@ -97,13 +97,16 @@ Asegúrese de que las imágenes del conjunto de formación cumplen las siguiente
 
 **Ejemplos**: Algunos ejemplos más para obtener instrucciones son:
 
-* Cree un modelo de etiqueta que incluya:
-   * solo las etiquetas relacionadas con los modelos de coche.
-   * sólo las etiquetas relacionadas con los colores de las camisas.
-   * solo las etiquetas relacionadas con las chaquetas para hombres y mujeres.
+* Cree un modelo de etiqueta que solo incluya:
+
+   * Las etiquetas relacionadas con los modelos de automóvil.
+   * Las etiquetas están relacionadas con los colores de las camisas.
+   * Las etiquetas están relacionadas con las chaquetas para hombres y mujeres.
+
 * No crear,
-   * modelo de etiqueta que incluye modelos de automóvil publicados en 2019 y 2020.
-   * varios modelos de etiquetas que incluyen los mismos modelos de coche.
+
+   * Modelo de etiqueta que incluye modelos de automóvil publicados en 2019 y 2020.
+   * Varios modelos de etiquetas que incluyen los mismos modelos de coche.
 
 **Imágenes usadas para entrenar**: Puede usar las mismas imágenes para entrenar diferentes modelos de etiquetas. Sin embargo, no asocie una imagen con más de una etiqueta en un modelo de etiquetas. Es posible etiquetar la misma imagen con etiquetas diferentes que pertenecen a modelos de etiquetas diferentes.
 
