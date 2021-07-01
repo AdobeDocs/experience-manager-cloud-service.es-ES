@@ -1,30 +1,29 @@
 ---
-title: Uso de vistas rápidas para crear ventanas emergentes personalizadas
-description: '"Descubra cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, a través de la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en la ventana emergente de Windows®".'
+title: Crear ventanas emergentes personalizadas con la vista rápida
+description: '"Aprenda cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, mediante la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en la ventana emergente de Windows®".'
 feature: Imágenes interactivas,Vídeos interactivos,Banners de carrusel
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-translation-type: tm+mt
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
 
-# Uso de las vistas rápidas para crear ventanas emergentes personalizadas con Windows® {#using-quickviews-to-create-custom-pop-ups}
+# Crear ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, los clientes pueden tocar una zona interactiva, una imagen en miniatura o un mapa de imagen para ver información o contenido relacionado.
+La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, los clientes pueden seleccionar una zona interactiva, una imagen en miniatura o un mapa de imagen para ver información o contenido relacionado.
 
-Los siguientes visores de Dynamic Media admiten las vistas rápidas:
+Quickview es compatible con los siguientes visores en Dynamic Media:
 
-* Imágenes interactivas (zonas interactivas en las que se puede hacer clic)
-* Vídeo interactivo (imágenes en miniatura en las que se puede hacer clic durante la reproducción del vídeo)
-* Banners de carrusel (zonas interactivas o mapas de imágenes en las que se puede hacer clic)
+* Imágenes interactivas (zonas interactivas seleccionables)
+* Vídeo interactivo (imágenes en miniatura seleccionables durante la reproducción del vídeo)
+* Banners de carrusel (zonas interactivas o mapas de imágenes seleccionables)
 
 Aunque la funcionalidad de cada visor es diferente, el proceso de creación de una vista rápida es el mismo en los tres visualizadores admitidos.
 
-**Para usar las vistas rápidas para crear ventanas emergentes personalizadas con Windows®:**
+**Para crear ventanas emergentes personalizadas con la vista rápida:**
 
 1. Cree una vista rápida para un recurso cargado.
 
@@ -74,7 +73,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     </tbody>
    </table>
 
-1. El visualizador que utilice debe saber cómo utilizar la vista rápida.
+1. El visor que utilice debe saber cómo utilizar la vista rápida.
 
    El visor utiliza un controlador denominado `QuickViewActive`.
 
@@ -107,10 +106,10 @@ Supongamos que utilizaba el siguiente código incrustado de ejemplo en la págin
 
 1. A continuación, configure el controlador `quickViewActivate`.
 
-   El controlador `quickViewActivate` controla las vistas rápidas en el visor. El controlador contiene la lista de variables y las llamadas de función que se utilizan con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida. También realiza una llamada de función `loadQuickView` de ejemplo.
+   El controlador `quickViewActivate` controla la vista rápida en el visor. El controlador contiene la lista de variables y las llamadas de función que se utilizan con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida. También realiza una llamada de función `loadQuickView` de ejemplo.
 
    **Variables**
-mappingMap para usar en la página web con el valor SKU y las variables genéricas contenidas en la vista rápida:
+mappingMap para usar en su página web con el valor SKU y las variables genéricas contenidas en Quickview:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -118,7 +117,7 @@ mappingMap para usar en la página web con el valor SKU y las variables genéric
 
    `var sku=inData.sku`
 
-   Asigne otras variables desde la vista rápida también, como se muestra a continuación:
+   Asigne también otras variables desde la vista rápida, como se muestra a continuación:
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
@@ -126,7 +125,7 @@ mappingMap para usar en la página web con el valor SKU y las variables genéric
    ```
 
    **Función**
-callEl controlador también requiere una llamada a la función para que funcione la vista rápida. Se supone que la página host puede acceder a la función. El código incrustado proporciona una llamada de función de ejemplo:
+callEl controlador también requiere una llamada a la función para que funcione Quickview. Se supone que la página host puede acceder a la función. El código incrustado proporciona una llamada de función de ejemplo:
 
    `loadQuickView(sku)`
 
@@ -156,11 +155,11 @@ callEl controlador también requiere una llamada a la función para que funcione
 
    * Cargue una página HTML de prueba en un servidor web y ábrala.
 
-      Las variables de la vista rápida están asignadas. La llamada a la función está en su lugar. Y la consola del explorador escribe el valor de la variable en la consola del explorador. Lo hace utilizando la función de ejemplo proporcionada.
+      Se asignan las variables de la vista rápida. La llamada a la función está en su lugar. Y la consola del explorador escribe el valor de la variable en la consola del explorador. Lo hace utilizando la función de ejemplo proporcionada.
 
 
 
-1. Ahora puede utilizar una función para invocar una ventana emergente sencilla en la vista rápida. El siguiente ejemplo utiliza un `DIV` para una ventana emergente.
+1. Ahora puede utilizar una función para invocar una ventana emergente simple en la vista rápida. El siguiente ejemplo utiliza un `DIV` para una ventana emergente.
 1. Establezca el estilo de la ventana emergente `DIV` de la siguiente manera. Agregue estilo adicional como desee.
 
    ```xml
