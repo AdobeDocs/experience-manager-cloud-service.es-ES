@@ -1,14 +1,13 @@
 ---
 title: Práctica recomendada para optimizar la calidad de las imágenes
-description: Conozca las prácticas recomendadas para optimizar la calidad de sus recursos de imagen mediante Dynamic Media.
+description: Conozca las prácticas recomendadas que le ayudan a optimizar la calidad de sus recursos de imagen mediante Dynamic Media.
 contentOwner: Rick Brough
 feature: Administración de activos
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 5%
 
 ---
@@ -30,7 +29,7 @@ Adobe Experience Manager incluye más de 100 comandos de envío de imágenes de 
 
 Como práctica recomendada para el formato de imagen, comience con la configuración más común `&fmt=JPG`.
 
-## Prácticas recomendadas para el tamaño de imagen {#best-practices-for-image-size}
+## Prácticas recomendadas para el tamaño de la imagen {#best-practices-for-image-size}
 
 La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Requiere especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
 
@@ -39,13 +38,13 @@ La reducción dinámica del tamaño de la imagen es una de las tareas más comun
 
 Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
-## Prácticas recomendadas para enfocar la imagen {#best-practices-for-image-sharpening}
+## Prácticas recomendadas para el perfeccionamiento de imágenes {#best-practices-for-image-sharpening}
 
 El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en el Experience Manager haciendo referencia a los siguientes recursos útiles:
 
 * El documento técnico de prácticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) se aplica también al Experience Manager.
 
-* Ver [Uso del enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Ver [Utilizar el enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
 Con Experience Manager, puede enfocar las imágenes en la ingesta, en la entrega o en ambos. Por lo general, sin embargo, es mejor enfocar las imágenes utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
 
@@ -68,7 +67,7 @@ Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 
       * El documento técnico de prácticas recomendadas [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) se aplica también al Experience Manager.
 
-      * Ver [Uso del enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+      * Ver [Utilizar el enfoque de imagen con el Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
