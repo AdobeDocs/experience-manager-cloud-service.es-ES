@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -211,5 +211,21 @@ La fecha de versión de la herramienta de transferencia de contenido v1.5.4 es e
 ### Corrección de errores {#bug-fixes-ctt-latest}
 
 * Al detener una ingesta en la instancia de Autor, la interfaz de usuario sobrescribió una ingesta previamente finalizada en la instancia de Publicación a `STOPPED` desde `FINISHED`. Esto se ha solucionado.
+
+## Analizador de prácticas recomendadas {#best-practices-analyzer}
+
+### Fecha de la versión {#release-date-bpa}
+
+La fecha de versión de Best Practices Analyzer v2.1.16 es el 30 de junio de 2021.
+
+### Novedades {#what-is-new-bpa-latest}
+
+* Capacidad para detectar y crear informes sobre nodos secundarios que faltan en carpetas en `/content/dam`.
+
+* Capacidad para detectar e informar sobre la versión de Best Practices Analyzer utilizada.
+
+### Corrección de errores {#bug-fixes-bpa-latest}
+
+* Se ha corregido un error de registro relacionado con la estructura de repositorio no admitida (URS).
 
 
