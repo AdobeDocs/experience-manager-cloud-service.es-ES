@@ -5,10 +5,9 @@ contentOwner: Rick Brough
 feature: Administración de recursos,Perfiles de imagen,Perfiles de vídeo
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -28,7 +27,7 @@ A continuación se indican las prácticas recomendadas para organizar los archiv
    * Consulte [Perfiles de metadatos](/help/assets/metadata-profiles.md).
    * Consulte [Metadatos para Digital Asset Management](/help/assets/manage-metadata.md).
 
-* Normalmente, su colección de recursos digitales siempre está creciendo. Por lo tanto, es importante (anteriormente) formalizar el uso de los metadatos, la estructura de carpetas y la asignación de nombres a los archivos entre todos los recursos cargados. La estandarización en estos elementos garantiza que, a medida que crezca su grupo de recursos digitales, puede aplicar perfiles de procesamiento a las carpetas con buena precisión y coherencia.
+* Normalmente, su colección de recursos digitales siempre está creciendo. Por lo tanto, es importante (antes) formalizar el uso de los metadatos, la estructura de carpetas y la nomenclatura de archivos entre todos los recursos cargados. La estandarización en estos elementos garantiza que, a medida que crezca su grupo de recursos digitales, puede aplicar perfiles de procesamiento a las carpetas con buena precisión y coherencia.
 * Utilice carpetas solo para imponer una estructura de almacenamiento coherente para sus recursos digitales. Por ejemplo, las estructuras de carpetas que pueden ayudarle a refinar qué perfiles asignar pueden incluir lo siguiente:
 
    * **Carpetas de desarrollo** : contiene recursos digitales en los que está trabajando.
