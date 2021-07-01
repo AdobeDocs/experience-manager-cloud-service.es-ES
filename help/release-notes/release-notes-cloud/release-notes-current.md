@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
+source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1545'
 ht-degree: 3%
 
 ---
@@ -140,15 +140,16 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* Se ha agregado la capacidad de filtrar columnas personalizadas en AEM bandeja de entrada.
-* Se ha añadido la capacidad de utilizar el editor de temas y la capa de estilo del editor de formularios adaptables para aplicar estilo al componente captcha.
-* Se ha mejorado la velocidad y la precisión para detectar automáticamente secciones lógicas en los PDF forms de origen y convertirlas en los paneles de formulario adaptables correspondientes.
-* Se ha añadido la acción de mover un archivo PDF o XDP de una carpeta a otra.
+* Los administradores de Forms pueden filtrar columnas personalizadas en AEM Bandeja de entrada.
+* Los desarrolladores de Forms pueden utilizar el editor de temas y la capa de estilo del editor de formularios adaptables para aplicar estilo al componente captcha.
+* Se ha mejorado la precisión para detectar automáticamente secciones lógicas en los formularios de origen y convertirlas en los paneles de formulario adaptables correspondientes.
+* Se ha añadido la acción de mover para ayudar a cambiar un archivo PDF o XDP de una carpeta a otra.
+* Se ha reducido el tiempo de carga y se ha mejorado el rendimiento del editor de formularios adaptables y del editor de temas.
 
 ### Función beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: Las API de comunicación le ayudan a combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones que le permitan:
-   * Genere documentos de formulario finales rellenando archivos de plantilla con datos XML.
+   * Genere documentos rellenando archivos de plantilla con datos XML.
    * Genere formularios de salida en varios formatos, incluidas secuencias de impresión PDF no interactivas.
    * Genere PDFs de impresión a partir de un formulario XFA PDF y un formulario Adobe Acrobat (AcroForm).
 
@@ -159,7 +160,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 ### Errores corregidos en [!DNL Forms] {#forms-bugs-fixed}
 
 * Cuando se valida un campo antes de enviar datos al servicio back-end mediante el Modelo de datos de formulario (FDM), las validaciones se realizan correctamente, pero el servicio Modelo de datos de formulario no invoca la validación posterior.
-* Cuando se envía un formulario que contiene un campo de carga HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Este es un problema conocido en Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Cuando se envía un formulario que contiene un campo de carga HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Adobe Experience Manager Screens] como  [!DNL Cloud Service] {#screens}
 
