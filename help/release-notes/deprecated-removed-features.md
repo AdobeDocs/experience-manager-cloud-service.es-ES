@@ -2,10 +2,10 @@
 title: Funciones en desuso y eliminadas
 description: Notas de la versión específicas de las funciones en desuso y eliminadas de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 38%
+source-wordcount: '483'
+ht-degree: 40%
 
 ---
 
@@ -36,7 +36,7 @@ Se aconseja a los clientes que comprueben si utilizan la función o la capacidad
 | ------------ | ------------------ | ----------- |
 | [!DNL Assets] | `DAM Asset Update` flujo de trabajo para procesar imágenes grabadas. | Ahora, el consumo de recursos utiliza [los microservicios](/help/assets/asset-microservices-overview.md) de recursos. |
 | [!DNL Assets] | Cargue recursos directamente a [!DNL Experience Manager]. Consulte [API de carga de recursos obsoletas](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilice la [carga binaria directa](/help/assets/add-assets.md). Para obtener más información técnica, consulte [API de carga directa](/help/assets/developer-reference-material-apis.md#upload-binary). |
-| [!DNL Assets] | [No se admiten determinados ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) pasos del  `DAM Asset Update` flujo de trabajo, incluida la llamada a herramientas de línea de comandos como ImageMagick. | [Los microservicios de recursos](/help/assets/asset-microservices-overview.md) sustituyen a muchos flujos de trabajo. Para el procesamiento personalizado, utilice [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
+| [!DNL Assets] | No se admiten [determinados pasos](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) en el flujo de trabajo `DAM Asset Update`, incluida la llamada a herramientas de línea de comandos como [!DNL ImageMagick]. | [Los microservicios de recursos](/help/assets/asset-microservices-overview.md) sustituyen a muchos flujos de trabajo. Para el procesamiento personalizado, utilice [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Fmpeg transcodificar vídeos. | Para la generación de miniaturas de FFmpeg, use los [microservicios de Asset](/help/assets/asset-microservices-overview.md). Para la transcodificación FFmpeg, utilice [Dynamic Media](/help/assets/manage-video-assets.md). |
 
 ## Funciones eliminadas {#removed-features}
