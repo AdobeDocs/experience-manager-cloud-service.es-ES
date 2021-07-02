@@ -2,18 +2,17 @@
 title: Procesamiento de recursos mediante microservicios de recursos
 description: Procese sus recursos digitales mediante microservicios de procesamiento de recursos escalables y nativos de la nube.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+feature: Microservicios de asset compute,Flujo de trabajo,Información de versión,Procesamiento de recursos
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '828'
 ht-degree: 2%
 
 ---
 
-
-# Información general sobre la ingesta y el procesamiento de recursos con microservicios de recursos {#asset-microservices-overview}
+# Descripción general de la ingesta y el procesamiento de recursos con los microservicios de recursos {#asset-microservices-overview}
 
 Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo de la nube para aprovechar las aplicaciones y capacidades de Experience Manager. Uno de los elementos clave de esta nueva arquitectura es la ingesta y el procesamiento de recursos, con tecnología de microservicios de recursos. Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos mediante servicios en la nube. Adobe administra los servicios de nube para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento. Las ventajas clave de los microservicios de recursos nativos de la nube son:
 
@@ -26,7 +25,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] proporciona un método nativo
 * Los servicios nativos de procesamiento de archivos de Adobe se utilizan cuando corresponde, proporcionando salida de alta fidelidad y [manejo eficiente de formatos propietarios de Adobe](file-format-support.md).
 * Capacidad para configurar el flujo de trabajo posterior al procesamiento para agregar acciones e integraciones específicas del usuario.
 
-Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la transcodificación ImageMagick y FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan funcionalidad básica para tipos de archivos comunes de forma predeterminada.
+Los microservicios de recursos ayudan a evitar la necesidad de herramientas y métodos de procesamiento de terceros (como la [!DNL ImageMagick] y la transcodificación FFmpeg) y simplifican las configuraciones, al tiempo que proporcionan funcionalidad básica para los formatos de archivo comunes de forma predeterminada.
 
 ## Arquitectura de alto nivel {#asset-microservices-architecture}
 
@@ -41,19 +40,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Los pasos clave de la ingesta y el procesamiento mediante los microservicios de recursos son:
 
-* Los clientes, como los navegadores web o Adobe Asset Link, envían una solicitud de carga al Experience Manager y comienzan a cargar el binario directamente al almacenamiento en la nube binaria.
-* Cuando la carga binaria directa se completa, el cliente notifica al Experience Manager.
-* El Experience Manager envía una solicitud de procesamiento a los microservicios de recursos. El contenido de la solicitud depende de la configuración de perfiles de procesamiento del Experience Manager que especifique, qué representaciones generar.
+* Los clientes, como los navegadores web o Adobe Asset Link, envían una solicitud de carga a [!DNL Experience Manager] y comienzan a cargar el binario directamente en el almacenamiento binario en la nube.
+* Cuando se completa la carga binaria directa, el cliente notifica a [!DNL Experience Manager].
+* [!DNL Experience Manager] envía una solicitud de procesamiento a los microservicios de recursos. El contenido de la solicitud depende de la configuración de perfiles de procesamiento de [!DNL Experience Manager] que especifique, qué representaciones generar.
 * El back-end de los microservicios de recursos recibe la solicitud y la envía a uno o varios microservicios en función de la solicitud. Cada microservicio accede al binario original directamente desde el almacén de nube binario.
 * Los resultados del procesamiento, como las representaciones, se almacenan en el almacenamiento en la nube binaria.
-* Se notifica al Experience Manager de que el procesamiento se ha completado junto con punteros directos a los binarios generados (representaciones). Las representaciones generadas están disponibles en Experience Manager para el recurso cargado.
+* Se notifica al Experience Manager de que el procesamiento se ha completado junto con punteros directos a los binarios generados (representaciones). Las representaciones generadas están disponibles en [!DNL Experience Manager] para el recurso cargado.
 
 Este es el flujo básico de consumo y procesamiento de recursos. Si está configurado, el Experience Manager también puede iniciar un modelo de flujo de trabajo personalizado para realizar el posprocesamiento del recurso. Por ejemplo, ejecute pasos personalizados específicos de su entorno, como recuperar información de un sistema empresarial y agregarla a propiedades de recursos.
 
 La ingesta y el flujo de procesamiento son conceptos clave de la arquitectura de microservicios de recursos para Experience Manager.
 
 * **Acceso binario directo**: Los recursos se transportan (y se cargan) a la tienda binaria de la nube una vez configurados para entornos de Experience Manager y, a continuación,  [!DNL Experience Manager], los microservicios de recursos y, finalmente, los clientes obtienen acceso directo a ellos para llevar a cabo su trabajo. Esto minimiza la carga en redes y la duplicación de binarios almacenados
-* **Procesamiento** externalizado: El procesamiento de los recursos se realiza fuera del  [!DNL Experience Manager] entorno y guarda sus recursos (CPU, memoria) para proporcionar funciones clave de administración de recursos digitales y admitir el trabajo interactivo con el sistema para los usuarios finales
+* **Procesamiento** externalizado: El procesamiento de los recursos se realiza fuera del  [!DNL Experience Manager] entorno y guarda sus recursos (CPU, memoria) para proporcionar funcionalidades clave de la administración de recursos digitales (DAM) y admitir el trabajo interactivo con el sistema para los usuarios finales
 
 ## Carga de recursos con acceso binario directo {#asset-upload-with-direct-binary-access}
 
@@ -66,7 +65,7 @@ Puede utilizar herramientas de carga personalizadas que funcionen directamente c
 
 Para obtener más información, consulte [carga de recursos](add-assets.md).
 
-## Agregar posprocesamiento de recursos personalizado {#add-custom-asset-post-processing}
+## Agregar procesamiento posterior de recursos personalizado {#add-custom-asset-post-processing}
 
 Aunque la mayoría de los clientes deben obtener todos los servicios de procesamiento de recursos que necesitan los microservicios de recursos configurables, es posible que algunos necesiten un procesamiento de recursos adicional. Esto es especialmente cierto si los recursos deben procesarse en función de la información proveniente de otros sistemas a través de integraciones. En casos como este, se pueden utilizar flujos de trabajo personalizados posteriores al procesamiento.
 
@@ -80,8 +79,8 @@ Adobe Experience Manager se puede configurar para que déclencheur automáticame
 >[!MORELIKETHIS]
 >
 >* [Introducción a los microservicios de recursos](asset-microservices-configure-and-use.md)
->* [Formatos de archivo compatibles](file-format-support.md)
->* [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
->* Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Documentación de Apache Oak sobre acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
+* [Formatos de archivo compatibles](file-format-support.md)
+* [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html)
+* Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+* [Documentación de Apache Oak sobre acceso binario directo](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
