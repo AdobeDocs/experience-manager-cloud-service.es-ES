@@ -5,18 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Distribución de recursos,Configuración
 role: Administrator
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9d219b8de11fd977dab4f75468836892cb13364a
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2409'
 ht-degree: 12%
 
 ---
 
-# Configure AEM Assets as a [!DNL Cloud Service] con Brand Portal {#configure-aem-assets-with-brand-portal}
+# Configuración de AEM Assets as a [!DNL Cloud Service] con Brand Portal {#configure-aem-assets-with-brand-portal}
 
 La configuración de Adobe Experience Manager Assets Brand Portal permite publicar recursos de marca aprobados de Adobe Experience Manager Assets como una instancia [!DNL Cloud Service] en Brand Portal y distribuirlos a los usuarios de Brand Portal.
 
-## Activar Brand Portal con Cloud Manager {#activate-brand-portal}
+## Activar Brand Portal mediante Cloud Manager {#activate-brand-portal}
 
 El usuario de Cloud Manager activa Brand Portal para una instancia de AEM Assets como [!DNL Cloud Service]. El flujo de trabajo de activación crea las configuraciones necesarias (token de autorización, configuración de IMS y servicio en la nube de Brand Portal) en el servidor y refleja el estado del inquilino de Brand Portal en Cloud Manager. Al activar Brand Portal, los usuarios de AEM Assets pueden publicar recursos en Brand Portal y distribuirlos a los usuarios de Brand Portal.
 
@@ -61,7 +61,7 @@ Puede activar Brand Portal al crear los entornos para su AEM Assets como instanc
 >Si la configuración de nube de Brand Portal existente y la instancia de AEM Assets as a0/> utilizan la misma organización de IMS (org1), solo debe activar Brand Portal desde Cloud Manager.[!DNL Cloud Service]
 
 **Consulte también**:
-* [Agregar usuarios y funciones en AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [Agregar usuarios y funciones en AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en)
 
 * [Administrar entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
 
