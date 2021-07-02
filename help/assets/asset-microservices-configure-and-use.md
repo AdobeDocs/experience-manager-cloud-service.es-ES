@@ -2,22 +2,21 @@
 title: Configuración y uso de los microservicios de recursos
 description: Configure y utilice los microservicios de recursos nativos de la nube para procesar los recursos a escala.
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Asset Processing
+feature: Microservicios de asset compute,Flujo de trabajo,Procesamiento de recursos
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2635'
 ht-degree: 1%
 
 ---
 
-
-# Usar microservicios de recursos y perfiles de procesamiento {#get-started-using-asset-microservices}
+# Uso de microservicios de recursos y perfiles de procesamiento {#get-started-using-asset-microservices}
 
 Los microservicios de recursos proporcionan un procesamiento escalable y flexible de los recursos que utilizan aplicaciones nativas de la nube (también denominadas trabajadores). Adobe administra los servicios para una gestión óptima de los distintos tipos de recursos y opciones de procesamiento.
 
-Los microservicios de recursos le permiten procesar una [amplia gama de tipos de archivo](/help/assets/file-format-support.md) que abarca más formatos predeterminados de lo que es posible con versiones anteriores de [!DNL Experience Manager]. Por ejemplo, la extracción en miniatura de los formatos PSD y PSB ahora es posible que antes se necesitaban soluciones de terceros como ImageMagick.
+Los microservicios de recursos le permiten procesar una [amplia gama de tipos de archivo](/help/assets/file-format-support.md) que abarca más formatos predeterminados de lo que es posible con versiones anteriores de [!DNL Experience Manager]. Por ejemplo, la extracción en miniatura de los formatos PSD y PSB ahora es posible, pero anteriormente requería soluciones de terceros como [!DNL ImageMagick].
 
 El procesamiento de recursos depende de la configuración de **[!UICONTROL Procesamiento de perfiles]**. Experience Manager proporciona una configuración predeterminada básica y permite que los administradores agreguen una configuración de procesamiento de recursos más específica. Los administradores crean, mantienen y modifican las configuraciones de los flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de los flujos de trabajo permite a los desarrolladores ampliar la oferta predeterminada.
 
@@ -34,7 +33,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## Comprender las opciones de procesamiento de recursos {#get-started}
 
-Experience Manager permite los siguientes niveles de procesamiento.
+[!DNL Experience Manager] permite los siguientes niveles de procesamiento.
 
 | Opción | Descripción | Casos de uso cubiertos |
 |---|---|---|
@@ -70,7 +69,7 @@ Con la configuración predeterminada, solo se configura el perfil de procesamien
 
 El perfil de procesamiento puede incluir una representación de FPO (solo para ubicación). Consulte [!DNL Adobe Asset Link] [documentación](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber si debe activarla para su perfil de procesamiento. Para obtener más información, consulte [Adobe Asset Link complete documentation](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
-### Crear un perfil estándar {#create-standard-profile}
+### Creación de un perfil estándar {#create-standard-profile}
 
 Para crear un perfil de procesamiento estándar, siga estos pasos:
 
@@ -142,7 +141,7 @@ Las aplicaciones personalizadas son aplicaciones [Project Firefly](https://githu
 >
 >Si la aplicación Firefly y la cuenta [!DNL Experience Manager] no pertenecen a la misma organización, la integración no funciona.
 
-### Un ejemplo de perfil personalizado {#custom-profile-example}
+### Ejemplo de perfil personalizado {#custom-profile-example}
 
 Para ilustrar el uso del perfil personalizado, consideremos un caso de uso para aplicar texto personalizado a las imágenes de campaña. Puede crear un perfil de procesamiento que aproveche la API de Photoshop para editar las imágenes.
 
@@ -154,7 +153,7 @@ La integración del servicio de asset compute permite que el Experience Manager 
 
 *Figura: Utilice  [!UICONTROL el ] campo Parámetros de servicio para pasar información añadida a los parámetros predefinidos incorporados en la aplicación personalizada. En este ejemplo, cuando se cargan imágenes de campaña, las imágenes se actualizan con `Jumanji` texto en `Arial-BoldMT` fuente.*
 
-## Usar perfiles de procesamiento para procesar recursos {#use-profiles}
+## Uso de perfiles de procesamiento para procesar recursos {#use-profiles}
 
 Cree y aplique perfiles de procesamiento personalizados adicionales a carpetas específicas para que el Experience Manager pueda procesar los recursos cargados o actualizados en estas carpetas. El perfil de procesamiento estándar predeterminado e integrado siempre se ejecuta, pero no es visible en la interfaz de usuario. Si agrega un perfil personalizado, ambos perfiles se utilizan para procesar los recursos cargados.
 
@@ -207,17 +206,26 @@ Asegúrese de que el último paso de cada flujo de trabajo posterior al procesam
 
 ### Configurar la ejecución del flujo de trabajo posterior al procesamiento {#configure-post-processing-workflow-execution}
 
-Para configurar los modelos de flujo de trabajo posteriores al procesamiento para que se ejecuten en los recursos cargados o actualizados en el sistema después de que termine el procesamiento de los microservicios de recursos, es necesario configurar el servicio de ejecución de flujo de trabajo personalizado.
+Una vez que los microservicios de recursos terminen de procesar los recursos cargados, puede definir el posprocesamiento para procesar algunos recursos. Para configurar el posprocesamiento mediante modelos de flujo de trabajo, puede realizar una de las siguientes acciones:
+
+* Configure el servicio Workflow Runner personalizado.
+* Aplique un modelo de flujo de trabajo en la carpeta [!UICONTROL Properties].
 
 El Adobe CQ DAM Custom Workflow Runner (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) es un servicio OSGi y proporciona dos opciones de configuración:
 
-* Flujos de trabajo posteriores al procesamiento por ruta (`postProcWorkflowsByPath`): Se pueden enumerar varios modelos de flujo de trabajo basados en diferentes rutas de repositorio. Las rutas y los modelos deben separarse con dos puntos. Las rutas de repositorio simples son compatibles y deben asignarse a un modelo de flujo de trabajo en la ruta `/var` . Por ejemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Flujos de trabajo posteriores al procesamiento por ruta (`postProcWorkflowsByPath`): Se pueden enumerar varios modelos de flujo de trabajo basados en diferentes rutas de repositorio. Separe las rutas y los modelos utilizando dos puntos. Se admiten rutas de repositorio simples. Asigne estos datos a un modelo de flujo de trabajo en la ruta `/var`. Por ejemplo: `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Flujos de trabajo posteriores al procesamiento por expresión (`postProcWorkflowsByExpression`): Se pueden enumerar varios modelos de flujo de trabajo basados en diferentes expresiones regulares. Las expresiones y los modelos deben separarse con dos puntos. La expresión regular debe señalar directamente al nodo Asset y no a una de las representaciones o archivos. Por ejemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 >[!NOTE]
 >
 >La configuración de Custom Workflow Runner es una configuración de un servicio OSGi. Consulte [implementar en Experience Manager](/help/implementing/deploying/overview.md) para obtener información sobre cómo implementar una configuración OSGi.
 >La consola web OSGi, a diferencia de las implementaciones de servicios locales y administrados de [!DNL Experience Manager], no está disponible directamente en las implementaciones de servicios en la nube.
+
+Para aplicar un modelo de flujo de trabajo en la carpeta [!UICONTROL Properties], siga estos pasos:
+
+1. Cree un modelo de flujo de trabajo.
+1. Seleccione una carpeta, haga clic en **[!UICONTROL Properties]** en la barra de herramientas y, a continuación, haga clic en la pestaña **[!UICONTROL Assets Processing]**.
+1. En **[!UICONTROL Flujo de trabajo de inicio automático]**, seleccione el flujo de trabajo requerido, proporcione un título para el flujo de trabajo y, a continuación, guarde los cambios.
 
 Para obtener más información sobre qué paso de flujo de trabajo estándar se puede utilizar en el flujo de trabajo posterior al procesamiento, consulte [pasos de flujo de trabajo en flujo de trabajo posterior al procesamiento](developer-reference-material-apis.md#post-processing-workflows-steps) en la referencia del desarrollador.
 
