@@ -2,18 +2,17 @@
 title: Edición o adición de metadatos
 description: Obtenga información sobre los metadatos de recursos en [!DNL Experience Manager Assets] y sobre varias formas de editarlos.
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Metadatos
+role: User,Admin
+exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 9%
 
 ---
 
-
-# Editar o agregar metadatos {#how-to-edit-or-add-metadata}
+# Edición o adición de metadatos {#how-to-edit-or-add-metadata}
 
 Los metadatos son información adicional sobre el recurso que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
