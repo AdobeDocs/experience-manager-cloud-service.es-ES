@@ -1,14 +1,13 @@
 ---
 title: Uso de flujos de trabajo de proyecto
 description: Hay varios flujos de trabajo de proyectos disponibles de forma integrada.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 78%
+source-wordcount: '542'
+ht-degree: 77%
 
 ---
-
 
 # Uso de flujos de trabajo de proyecto {#working-with-project-workflows}
 
@@ -25,7 +24,6 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 |  | **Proyecto simple** | **Proyecto multimedia** | **Proyecto de traducción** |
 |---|:-:|:-:|:-:|
 | Solicitar copia |  | x |  |
-| Sesión fotográfica del producto |  | x |  |
 | Aprobación del proyecto | x |  |  |
 | Solicitar lanzamiento | x |  |  |
 | Solicitar página de aterrizaje | x |  |  |
@@ -45,7 +43,7 @@ Para obtener más información sobre el trabajo con flujos de trabajo en AEM, co
 
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 * [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
-* [Configuración de flujos de trabajo](/help/sites-cloud/administering/workflows-administering.md) 
+* [Configuración de flujos de trabajo ](/help/sites-cloud/administering/workflows-administering.md)
 
 En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
