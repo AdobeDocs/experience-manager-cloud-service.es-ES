@@ -2,11 +2,10 @@
 title: Digital Rights Management en [!DNL Assets]
 description: Obtenga información sobre cómo administrar los estados de caducidad de recursos y la información para los recursos con licencia en [!DNL Experience Manager] as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,DRM
+feature: Administración de recursos,DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 7%
@@ -15,7 +14,7 @@ ht-degree: 7%
 
 # Digital Rights Management para los recursos {#digital-rights-management-in-assets}
 
-Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración del uso. Como [!DNL Adobe Experience Manager Assets] está totalmente integrado con la plataforma [!DNL Experience Manager], puede administrar de forma eficaz la información de caducidad de recursos y los estados de los recursos. También puede asociar información de licencias con recursos.
+Los recursos digitales suelen estar asociados a una licencia que especifica los términos y la duración del uso. Como [!DNL Adobe Experience Manager Assets] está completamente integrado con la plataforma [!DNL Experience Manager], puede administrar de forma eficaz la información de caducidad de recursos y los estados de los recursos. También puede asociar información de licencias con recursos.
 
 ## Caducidad del recurso {#asset-expiration}
 
@@ -73,7 +72,7 @@ Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de re
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-## Estados de recursos {#asset-states}
+## Estados de los recursos {#asset-states}
 
 La consola [!DNL Assets] puede mostrar varios estados para los recursos. En función del estado actual de un recurso concreto, su vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
