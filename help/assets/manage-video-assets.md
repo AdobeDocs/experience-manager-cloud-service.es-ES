@@ -2,16 +2,15 @@
 title: Administrar recursos de vídeo
 description: Cargar, previsualizar, anotar y publicar recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
-feature: Asset Management,Publishing,Collaboration,Video
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Administración de recursos,Publicación,Colaboración,Vídeo
+role: User
+exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
-
 
 # Administrar recursos de vídeo {#manage-video-assets}
 
@@ -32,7 +31,7 @@ Obtenga información sobre cómo administrar y editar los recursos de vídeo en 
 
 Después de la publicación, puede incluir los recursos de vídeo en una página web como URL o incrustar directamente los recursos. Para obtener más información, consulte [publish [!DNL Dynamic Media] assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Transcodificar con perfil de procesamiento {#transcode-video}
+## Transcodificar mediante un perfil de procesamiento {#transcode-video}
 
 [!DNL Experience Manager] as a  [!DNL Cloud Service] permite realizar la transcodificación básica de archivos de vídeo MP4 utilizando Perfiles de procesamiento. La funcionalidad permite no solo cargar, sino también previsualizar y escalar un archivo de vídeo MP4.
 
