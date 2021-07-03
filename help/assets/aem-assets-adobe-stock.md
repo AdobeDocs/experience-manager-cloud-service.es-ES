@@ -2,11 +2,10 @@
 title: Administrar  [!DNL Adobe Stock] recursos en [!DNL Assets].
 description: Busque, recupere, conceda licencias y administre  [!DNL Adobe Stock] recursos desde  [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
-feature: Search,Adobe Stock
-role: Administrator,Business Practitioner
+feature: Buscar,Adobe Stock
+role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-translation-type: tm+mt
-source-git-commit: 0da8eb0eac0c58b5212aa264c9042523460e474e
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 5%
@@ -40,7 +39,7 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
-### Crear [!DNL Adobe Stock] configuración en [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
+### Crear la configuración [!DNL Adobe Stock] en [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
 1. En [!DNL Experience Manager], vaya a **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Haga clic en **[!UICONTROL Crear]** para crear una configuración y asociarla a la configuración de IMS existente. Seleccione `PROD` como parámetro de entorno.
@@ -52,7 +51,7 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 >
 >Si hay varias configuraciones [!DNL Adobe Stock], seleccione la configuración que desee en el panel Preferencias de usuario. Para acceder al panel desde la página de inicio del Experience Manager, haga clic en el icono de usuario y, a continuación, haga clic en **[!UICONTROL Preferencias de usuario]** > **[!UICONTROL Configuración de stock]**.
 
-## Usar y administrar [!DNL Adobe Stock] activos en [!DNL Experience Manager] {#usemanage}
+## Usar y administrar [!DNL Adobe Stock] recursos en [!DNL Experience Manager] {#usemanage}
 
 Con esta capacidad, las organizaciones pueden permitir que sus usuarios trabajen con [!DNL Adobe Stock] recursos en [!DNL Experience Manager Assets]. Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden buscar [!DNL Adobe Stock] recursos y obtener una licencia para los recursos necesarios.
 
