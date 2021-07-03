@@ -3,9 +3,9 @@ title: Metadatos XMP
 description: Obtenga información sobre el estándar de metadatos XMP (Plataforma de metadatos extensible) para la administración de metadatos. La utiliza AEM como formato estandarizado para la creación, el procesamiento y el intercambio de metadatos.
 contentOwner: AG
 feature: Metadatos
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 16%
@@ -49,7 +49,7 @@ El XMP estándar está diseñado para ser extensible, lo que le permite añadir 
 >
 >XMP generalmente no permite incrustar tipos de datos binarios. Para cargar datos binarios en XMP, por ejemplo, imágenes en miniatura, deben codificarse en un formato compatible con XML como `Base64`.
 
-### XMP conceptos principales {#xmp-core-concepts}
+### XMP conceptos básicos {#xmp-core-concepts}
 
 **Espacios de nombres y esquemas**
 
@@ -88,7 +88,7 @@ En este caso, [!DNL Assets] guarda los cambios en la propiedad **[!UICONTROL Tit
 >
 >La función de reescritura no está habilitada de forma predeterminada en [!DNL Assets]. Consulte cómo [habilitar la reescritura de metadatos](#enable-xmp-writeback). MSM para recursos digitales no funciona con la reescritura de metadatos habilitada. Al reescribir, la herencia se rompe.
 
-### Habilitar XMP escritura {#enable-xmp-writeback}
+### Habilitar reescritura XMP {#enable-xmp-writeback}
 
 [!UICONTROL DAM Metadata ] Writebackworkflow se utiliza para reescribir los metadatos de un recurso. Para habilitar la reescritura, siga cualquiera de los tres métodos siguientes:
 
