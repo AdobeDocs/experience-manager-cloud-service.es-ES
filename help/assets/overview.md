@@ -2,16 +2,15 @@
 title: Introducción a Assets as a [!DNL Cloud Service]
 description: Novedades de Assets as a [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner,Leader,Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a Assets como [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
@@ -36,7 +35,7 @@ Las siguientes son las ventajas clave de Assets as a [!DNL Cloud Service]. Para 
 * **Último software**: Siempre actualizado y siempre actualizado. Todos los usuarios solo tienen el último software con todos los parches, funciones, seguridad y correcciones de errores disponibles. Los desarrolladores y los integradores trabajan con el último conjunto de API sin problemas de compatibilidad con varias versiones.
 * **Siempre en línea**: Sin downtime (0dt), gracias a la instancia implementada en un cluster con backups y redundancia. Las actualizaciones también son 0dt.
 * **Supervisión** constante: La supervisión del sistema es automatizada y las comprobaciones y déclencheur integrados ayudan a mantener el rendimiento, la disponibilidad y la solidez general.
-* **Implementaciones** sin complicaciones: AEM en las operaciones de Cloud están totalmente automatizadas y no requieren intervención manual. Para implementaciones automatizadas, el componente Cloud Manager (CM) automatiza la compilación de imágenes de Docker implementables que contienen su código personalizado.
+* **Implementaciones** sin complicaciones: AEM en las operaciones de Cloud están completamente automatizadas y no requieren intervención manual. Para implementaciones automatizadas, el componente Cloud Manager (CM) automatiza la compilación de imágenes de Docker implementables que contienen su código personalizado.
 
 ## Nuevas funciones de Assets {#whats-new-assets}
 
