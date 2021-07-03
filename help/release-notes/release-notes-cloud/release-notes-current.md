@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
+source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1586'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,9 @@ La próxima versión está planificada para el 15 de julio de 2021.
 
    ![Definir la vista predeterminada en Configuración de vista](/help/assets/assets/view-settings-for-defaults.png)
 
-* La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga.
+* La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga. Consulte [Descargar recursos compartidos mediante el uso compartido de vínculos](/help/assets/download-assets-from-aem.md#link-share-download).
+
+   ![Descargar bandeja de entrada](/help/assets/assets/download-inbox.png)
 
 * Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
 
