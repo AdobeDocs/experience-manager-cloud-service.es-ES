@@ -2,17 +2,16 @@
 title: Etiquetado inteligente de recursos de vídeo
 description: El Experience Manager agrega automáticamente etiquetas inteligentes contextuales y descriptivas a los vídeos mediante [!DNL Adobe Sensei].
 feature: Etiquetas inteligentes,Etiquetado
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-translation-type: tm+mt
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
 
 ---
 
-# Etiquetado inteligente de los recursos de vídeo {#video-smart-tags}
+# Etiquetado inteligente de recursos de vídeo {#video-smart-tags}
 
 La creciente necesidad de nuevo contenido exige reducir los esfuerzos manuales para ofrecer experiencias digitales atractivas en poco tiempo. [!DNL Adobe Experience Manager] como  [!DNL Cloud Service] admite el etiquetado automático de recursos de vídeo mediante inteligencia artificial. Etiquetar los vídeos manualmente puede llevar mucho tiempo. Sin embargo, la función de etiquetado inteligente de vídeo con tecnología [!DNL Adobe Sensei] utiliza modelos de inteligencia artificial para analizar el contenido de vídeo y añadir etiquetas a los recursos de vídeo. De este modo, se reduce el tiempo para que los usuarios de DAM entreguen experiencias enriquecidas a sus clientes. El servicio de aprendizaje automático de Adobe genera dos conjuntos de etiquetas para un vídeo. Mientras que un conjunto corresponde a objetos, escenas y atributos de ese vídeo; el otro conjunto está relacionado con acciones como beber, correr y correr.
 
@@ -138,5 +137,5 @@ Para agregar la configuración OSGI de puntuación de confianza al proyecto impl
 >[!MORELIKETHIS]
 >
 >* [Administración de etiquetas inteligentes y búsquedas de recursos](smart-tags.md#manage-smart-tags-and-searches)
->* [Capacite el servicio de etiquetas inteligentes y etiquete sus imágenes](smart-tags.md)
+* [Capacite el servicio de etiquetas inteligentes y etiquete sus imágenes](smart-tags.md)
 
