@@ -3,11 +3,10 @@ title: Prácticas recomendadas para la integración con [!DNL Adobe Creative Clo
 description: Las prácticas recomendadas integran una implementación de Experience Manager con Adobe Creative Cloud para optimizar los flujos de trabajo de transferencia de recursos y lograr la máxima eficacia.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
-role: Architect,Business Practitioner,Administrator
+feature: Colaboración,Adobe Asset Link,Aplicación de escritorio
+role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-translation-type: tm+mt
-source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '3300'
 ht-degree: 18%
@@ -34,7 +33,7 @@ Siga leyendo para saber qué integraciones escoger entre el escritorio y el DAM 
 | Proporcionar recursos listos para usar de Adobe Stock de alta calidad | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido mediante la asistencia en el abastecimiento y descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados directamente desde sus herramientas creativas. | AEM Assets; Adobe Stock Marketplace; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/las sucursales locales y los socios, distribuidores y agencias externos utilizan los recursos aprobados compartidos por la organización principal. La organización desea compartir de forma segura y transparente los recursos creados para una reutilización más amplia. | Brand Portal, Asset Share Commons |
 
-## Las ofertas de Adobe para soportar la colaboración necesitan {#adobe-offerings-to-support-the-collaboration-need}
+## Ofertas de Adobe para apoyar la necesidad de colaboración {#adobe-offerings-to-support-the-collaboration-need}
 
 | Propuesta de valor para las personas implicadas | oferta de Adobe | Superficies implicadas |
 |---|---|---|
@@ -94,7 +93,7 @@ Para admitir casos de uso de distribución de recursos, se deben considerar otra
 * **Usuario creativo:** Un profesional creativo que crea recursos digitales mediante las aplicaciones y los servicios de Creative Cloud. En algunos casos, un usuario creativo puede ser miembro de un equipo creativo que puede utilizar Creative Cloud, pero no crea recursos digitales (como un director creativo o un administrador de equipo creativo).
 * **Usuario de DAM:** Usuario típico de un sistema DAM. Según la organización, un usuario de DAM puede ser un usuario de marketing o no de marketing, por ejemplo un usuario de línea de negocios (LOB), bibliotecario, vendedor, etc.
 
-### Consideraciones al usar la integración de AEM y Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
+### Consideraciones al utilizar la integración de AEM y Creative Cloud {#considerations-when-using-aem-and-creative-cloud-integration}
 
 <!--incomplete and TBD: 
 
@@ -189,7 +188,7 @@ Utilice las siguientes estrategias para proporcionar acceso a los recursos final
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilice Control de acceso configurado en AEM infraestructura de red necesaria (por ejemplo, listas de IP y VPN permitidas) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar AEM interfaz de usuario web para obtener recursos y cargar contenido nuevo en su DAM.
 
-#### Trabajo en curso en recursos de AEM {#work-in-progress-on-assets-from-aem}
+#### Trabajo en curso sobre los activos de AEM {#work-in-progress-on-assets-from-aem}
 
 Como se explica en este documento, se recomienda llevar a cabo actualizaciones importantes de los recursos, a veces denominadas trabajo en curso, sin tener que cargar todas las ediciones guardadas en el archivo local a AEM como cambios. Esto acelera el trabajo de un usuario de escritorio, limita el ancho de banda de red utilizado y mantiene la línea de tiempo de los recursos limpia y centrada en actualizaciones importantes controladas.
 
