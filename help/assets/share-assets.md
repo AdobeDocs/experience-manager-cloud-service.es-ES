@@ -3,9 +3,9 @@ title: Distribuir y compartir recursos, carpetas y colecciones
 description: Distribuya sus recursos digitales mediante métodos como compartir como vínculo, descargar y a través de [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link].
 contentOwner: AG
 feature: Administración de activos,Colaboración,Distribución de activos
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 2%
@@ -124,7 +124,7 @@ Los especialistas en marketing y los usuarios de la línea de negocios pueden co
 
 Las diferentes opciones para compartir los recursos requieren una configuración específica y tienen requisitos previos específicos.
 
-### Configurar el uso compartido de vínculos de recursos {#asset-link-sharing}
+### Configuración del uso compartido de vínculos de recursos {#asset-link-sharing}
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
@@ -170,7 +170,7 @@ When you download assets from the link shared using the Link Sharing feature, AE
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### Habilite las acciones de escritorio para usarlas con la aplicación de escritorio {#desktop-actions}
+### Habilitar acciones de escritorio para usarlas con la aplicación de escritorio {#desktop-actions}
 
 Desde la interfaz de usuario [!DNL Assets] en un explorador, puede explorar las ubicaciones de los recursos o retirarse y abrir el recurso para editarlo en la aplicación de escritorio. Estas opciones se denominan acciones de escritorio y para habilitarlas, consulte [habilitar acciones de escritorio en [!DNL Assets] interfaz web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
