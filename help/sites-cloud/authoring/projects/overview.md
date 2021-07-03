@@ -1,14 +1,13 @@
 ---
 title: Proyectos
 description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
-translation-type: tm+mt
-source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
+exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 78%
+source-wordcount: '1256'
+ht-degree: 79%
 
 ---
-
 
 # Proyectos {#projects}
 
@@ -29,7 +28,7 @@ Consulte los siguientes temas adicionales:
 
 * [Administración de proyectos](/help/sites-cloud/authoring/projects/managing.md)
 * [Uso de tareas](/help/sites-cloud/authoring/projects/tasks.md)
-* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md).
+* [Uso de flujos de trabajo de proyecto](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## Consola Proyectos {#projects-console}
 
@@ -76,9 +75,9 @@ Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/he
 
 ![Recopilación de recursos](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
-Para añadir una colección, haga clic en **Agregar colección** y seleccione la colección adecuada de la lista.
+Agregue una colección haciendo clic en **Agregar colección** y seleccionando la colección adecuada en la lista.
 
-### Experiencias  {#experiences}
+### Experiencias {#experiences}
 
 El mosaico **Experiencias** permite añadir aplicación móvil, un sitio web o una publicación al proyecto.
 
@@ -157,12 +156,12 @@ En Tareas puede supervisar el estado de cualquier tarea relacionada con el proye
 En AEM se incluyen tres plantillas predefinidas de fábrica:
 
 * Un proyecto simple: una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
-* Un proyecto de medios : un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Sesión fotográfica del producto (para administrar la fotografía relacionada con el producto)
+* Un proyecto de medios : un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También solicita el flujo de trabajo Copiar para solicitar y revisar texto.
 * Un [proyecto de traducción](/help/sites-cloud/administering/translation/overview.md): una muestra de referencia para administrar las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
 En función de la plantilla seleccionada, dispone de distintas opciones en relación con las funciones de usuario y los flujos de trabajo.
 
-## Funciones de usuario en un proyecto  {#user-roles-in-a-project}
+## Funciones de usuario en un proyecto {#user-roles-in-a-project}
 
 Las diferentes funciones de usuario se establecen en una plantilla de proyecto y se utilizan por dos motivos principales:
 
@@ -174,7 +173,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
 | Función | Descripción | Permisos | Pertenencia a grupos |
 |---|---|---|---|
 | Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | `workflow-users` grupo |
-| Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de tomas, sesión fotográfica y revisar y aprobar recursos; permiso de escritura en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
+| Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados; privilegios para cargar una lista de tomas y revisar y aprobar recursos; permiso de escritura en /etc/commerce; modificar permisos en un proyecto específico | grupo de flujo de trabajo-usuarios |
 | Propietario | Un usuario con esta función puede iniciar un proyecto. Un propietario puede crear un proyecto, iniciar el trabajo en un proyecto y también mover los recursos aprobados a la carpeta Producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo (para poder crear un proyecto) grupo de administradores de proyectos (para poder crear un proyecto y mover recursos) |
 
 >[!NOTE]
