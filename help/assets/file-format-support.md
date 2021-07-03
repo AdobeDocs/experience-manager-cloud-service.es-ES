@@ -2,18 +2,17 @@
 title: Formatos de archivo compatibles y tipos MIME
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
-feature: Asset Management,Renditions
-role: Business Practitioner,Administrator
+feature: Administración de recursos,Representaciones
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 10%
 
 ---
 
-# [!DNL Assets] formatos de archivo compatibles  {#supported-file-formats}
+# [!DNL Assets] formatos de archivo compatibles {#supported-file-formats}
 
 [!DNL Adobe Experience Manager] como  [!DNL Cloud Service] admite capacidades básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto tiene compatibilidad variada con distintos formatos.
 
@@ -35,7 +34,7 @@ La leyenda siguiente describe el nivel de compatibilidad con cada formato.
 | * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
 
-## Formatos de Adobe {#adobe-formats}
+## formatos de Adobe {#adobe-formats}
 
 | Formato del archivo | Generación de miniaturas | Extracción de texto completo | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -107,7 +106,7 @@ Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/dynamic-med
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
-## [!DNL Camera RAW] formatos  {#camera-raw-formats}
+## [!DNL Camera RAW] formatos {#camera-raw-formats}
 
 | Formato del archivo | Generación de miniaturas | Extracción de metadatos | Anchura/Altura |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -233,5 +232,5 @@ Los formatos de documento admitidos para las funciones de administración de rec
 >[!MORELIKETHIS]
 >
 >* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md)
->* [Formatos de archivo compatibles para el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [Formatos de archivo compatibles para el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
