@@ -2,16 +2,15 @@
 title: Insertar y extraer archivos en [!DNL Assets]
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Administración de activos
+role: User
+exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # Archivos de desprotección y registro en [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
@@ -21,7 +20,7 @@ Para poder extraer o incorporar recursos, debe disponer de acceso de escritura.
 
 Esta función ayuda a evitar que otros usuarios anulen los cambios realizados por un autor en los que varios usuarios colaboran en la edición de flujos de trabajo entre equipos.
 
-## Consulte los recursos {#checking-out-assets}
+## Comprobar recursos {#checking-out-assets}
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desee extraer. También puede seleccionar varios recursos para desproteger.
 
@@ -42,7 +41,7 @@ Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, i
 
 1. Seleccione el recurso editado en la interfaz [!DNL Assets] y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para que lo editen otros usuarios.
 
-## Registro forzado en {#forced-check-in}
+## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger los recursos que han extraído otros usuarios.
 
