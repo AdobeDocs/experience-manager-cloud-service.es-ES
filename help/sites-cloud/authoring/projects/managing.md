@@ -1,14 +1,13 @@
 ---
 title: Administración de proyectos
-description: Los proyectos permiten organizar el proyecto agrupando los recursos en una entidad a la que se puede acceder y administrar en la consola Proyectos
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+description: Proyectos permite organizar el proyecto agrupando los recursos en una entidad a la que se puede acceder y administrar en la consola Proyectos
+exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 80%
 
 ---
-
 
 # Administración de proyectos {#managing-projects}
 
@@ -26,23 +25,26 @@ En la versión básica, AEM proporciona estas plantillas para elegir al crear un
 
 * Proyecto simple
 * Proyecto multimedia
-* Proyecto de sesión fotográfica del producto
 * Proyecto de traducción
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 El procedimiento para crear un proyecto es el mismo de un proyecto a otro. La diferencia entre los tipos de proyectos incluye las [funciones de usuario](/help/sites-cloud/authoring/projects/overview.md) y los [flujos de trabajo](/help/sites-cloud/authoring/projects/workflows.md) disponibles. Para crear un nuevo proyecto:
 
 1. En **Proyectos**, pulse o haga clic en **Crear** y abrirá el asistente **Crear proyecto**:
-1. Seleccione una plantilla y haga clic en **Siguiente**.
+1. Seleccione una plantilla y haga clic en **Next**.
 
    ![Creación de un proyecto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina el **Título** y la **Descripción** y agregue una **Imagen en miniatura** si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
+1. Defina el **Título** y **Descripción** y añada una **Miniatura** si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen. Además, puede hacer clic en **Avanzadas** para añadir un nombre utilizado en la dirección URL.
 
-   ![Añadir detalles del proyecto](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![Adición de detalles del proyecto](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el proyecto nuevo o regresar a la consola.
 
-### Asociación de recursos al proyecto  {#associating-resources-with-your-project}
+### Asociación de recursos al proyecto {#associating-resources-with-your-project}
 
 Dado que los proyectos le permiten agrupar los recursos en una entidad, puede asociar recursos al proyecto. Estos recursos se denominan **Mosaicos**. Los tipos de recursos que puede añadir se describen en [Mosaicos de proyecto](/help/sites-cloud/authoring/projects/overview.md#project-tiles).
 
@@ -51,7 +53,7 @@ Para asociar recursos al proyecto:
 1. Abra el proyecto en la consola **Proyectos**.
 1. Toque o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular al proyecto. Puede seleccionar varios tipos de mosaicos.
 
-   ![Añadir un mosaico en un proyecto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
+   ![Adición de un mosaico a un proyecto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
    >[!NOTE]
    >
@@ -75,7 +77,7 @@ Para eliminar un proyecto desde la consola o un recurso vinculado desde el proye
 
 >[!NOTE]
 >
->Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador tiene que eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
+>Al crear el proyecto y agregar usuarios a las distintas funciones, los grupos asociados con el proyecto se crean automáticamente para administrar los permisos asociados. Por ejemplo, un proyecto llamado Myproject tendría tres grupos: **Propietarios de Myproject**, **Editores de Myproject**, **Observadores de Myproject**. Sin embargo, si se elimina el proyecto, esos grupos no se eliminarán automáticamente. Un administrador debe eliminar manualmente los grupos en **Herramientas** > **Seguridad** > **Grupos**.
 
 ### Adición de elementos a un mosaico {#adding-items-to-a-tile}
 
@@ -83,13 +85,13 @@ En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, p
 
 Para añadir elementos a un mosaico:
 
-1. En **Proyectos**, vaya al proyecto y haga clic en el icono Añadir + del mosaico al que desee agregar un elemento.
+1. En **Proyectos**, vaya al proyecto y haga clic en el icono Agregar + del mosaico al que desee agregar un elemento.
 
-   ![Añadir elemento en un mosaico](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![Agregar elemento a un mosaico](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
 1. Añada un elemento al mosaico como lo haría al crear un mosaico nuevo. Los mosaicos de proyecto se describen [aquí](/help/sites-cloud/authoring/projects/overview.md#project-tiles). En este ejemplo, se ha añadido otro flujo de trabajo.
 
-   ![Otro elemento agregado al mosaico](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
+   ![Otro elemento agregado a un mosaico](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### Apertura de un mosaico {#opening-a-tile}
 
@@ -107,15 +109,15 @@ Para abrir un mosaico para que pueda ver o modificar elementos:
 
 ## Visualización de estadísticas del proyecto {#viewing-project-statistics}
 
-Para ver las estadísticas del proyecto, en la consola **Proyectos**, haga clic en **Mostrar vista de estadísticas**. Se muestra el nivel de finalización de cada proyecto. Haga clic en **Mostrar Vista de estadísticas** nuevamente para ir a la consola **Proyectos**.
+Para ver las estadísticas del proyecto, en la consola **Proyectos**, haga clic en **Mostrar vista de estadísticas**. Se muestra el nivel de finalización de cada proyecto. Haga clic **Mostrar vista de estadísticas** de nuevo para ir a la consola **Proyectos**.
 
-![Estadísticas de proyectos](/help/sites-cloud/authoring/assets/projects-stats.png)
+![Estadísticas del proyecto](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### Visualización de una línea de tiempo del proyecto {#viewing-a-project-timeline}
 
-La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. Para realizar la vista de la línea de tiempo del proyecto, toque o haga clic en **Línea de tiempo**, luego ingrese al modo de selección y seleccione el proyecto. Los recursos se muestran en el panel izquierdo. Toque o haga clic **Línea de tiempo** para volver a la consola **Proyectos**.
+La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. Para ver la línea de tiempo del proyecto, toque o haga clic en **Línea de tiempo**, luego introduzca el modo de selección y seleccione el proyecto. Los recursos se muestran en el panel izquierdo. Pulse o haga clic en **Línea de tiempo** para volver a la consola **Proyectos**.
 
-![Línea de tiempo del proyecto](/help/sites-cloud/authoring/assets/projects-timeline.png)
+![Cronología del proyecto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### Visualización de proyectos activos/inactivos {#viewing-active-inactive-projects}
 
@@ -138,7 +140,7 @@ Para hacer que un proyecto sea inactivo (o activo):
    >[!NOTE]
    Es posible que deba añadir este mosaico si aún no está en el proyecto. Consulte [Añadir mosaicos](#adding-items-to-a-tile).
 
-1. Toque o haga clic **Editar**.
+1. Toque o haga clic en **Editar**.
 1. Cambie el selector de **Activo** a **Inactivo** (o viceversa).
 
    ![Activación de un proyecto](/help/sites-cloud/authoring/assets/projects-activate.png)
