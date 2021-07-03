@@ -3,16 +3,16 @@ title: API de HTTP de Assets
 description: Cree, lea, actualice, elimine y administre recursos digitales mediante la API HTTP en [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: API HTTP de recursos, API
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] API HTTP  {#assets-http-api}
+# [!DNL Adobe Experience Manager Assets] API HTTP {#assets-http-api}
 
 ## Información general {#overview}
 
@@ -106,7 +106,7 @@ La API HTTP [!DNL Assets] incluye las siguientes funciones:
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 -->
 
-## Recupere una carpeta que enumere {#retrieve-a-folder-listing}
+## Recuperar una lista de carpetas {#retrieve-a-folder-listing}
 
 Recupera una representación sirena de una carpeta existente y de sus entidades secundarias (subcarpetas o recursos).
 
@@ -153,7 +153,7 @@ Consulte [carga de recursos](developer-reference-material-apis.md) para obtener 
 
 Consulte [carga de recursos](developer-reference-material-apis.md) para obtener información sobre cómo actualizar los binarios de recursos. No se puede actualizar un binario de recursos mediante la API HTTP.
 
-## Actualización de metadatos de un recurso {#update-asset-metadata}
+## Actualizar metadatos de un recurso {#update-asset-metadata}
 
 Actualiza las propiedades de metadatos de Asset. Si actualiza cualquier propiedad en el espacio de nombres `dc:`, la API actualiza la misma propiedad en el espacio de nombres `jcr`. La API no sincroniza las propiedades de las dos áreas de nombres.
 
