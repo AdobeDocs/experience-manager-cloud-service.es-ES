@@ -3,9 +3,9 @@ title: Crear y administrar recursos digitales en varios idiomas
 description: Aprenda a automatizar los flujos de trabajo para traducir recursos, incluidos binarios, metadatos y etiquetas a varios idiomas.
 contentOwner: AG
 feature: Administración de activos,Traducción
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 24%
@@ -48,7 +48,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 -->
 
-## Preparar recursos para su traducción {#prepare-assets-for-translation}
+## Preparación de recursos para su traducción {#prepare-assets-for-translation}
 
 Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües.
 
@@ -212,7 +212,7 @@ Ejecute este flujo de trabajo para traducir un grupo adicional de recursos e inc
 >
 >Si inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y archivos Adobe InDesign, sus subrecursos o representaciones (si hay) no se envían para su traducción.
 
-### Crear y traducir flujo de trabajo {#create-and-translate-workflow}
+### Creación y traducción de flujos de trabajo {#create-and-translate-workflow}
 
 Utilice el flujo de trabajo crear y traducir para generar copias de idioma para un idioma en particular por primera vez. El flujo de trabajo ofrece las siguientes opciones:
 
