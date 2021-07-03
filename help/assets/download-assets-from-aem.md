@@ -3,9 +3,9 @@ title: Descargar recursos
 description: Descargue recursos de [!DNL Adobe Experience Manager Assets] y habilite o deshabilite la funcionalidad de descarga.
 contentOwner: AG
 feature: Administración de activos
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 4%
@@ -96,7 +96,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, al usar algo como 
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
-## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
+## Deshabilitar el servlet de descarga de recursos {#disable-asset-download-servlet}
 
 Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar riesgos similares a DoS. El `Asset Download Servlet` se puede deshabilitar en una [!DNL Experience Manager] instancia de autor y publicación actualizando la configuración del despachante para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede deshabilitar manualmente a través de la consola OSGi directamente.
 
