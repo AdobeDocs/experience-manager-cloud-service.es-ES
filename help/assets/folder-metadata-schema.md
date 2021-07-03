@@ -2,16 +2,15 @@
 title: Esquema de metadatos de carpeta
 description: Obtenga información sobre cómo crear un esquema de metadatos para carpetas de recursos en [!DNL Experience Manager Assets]
 contentOwner: AG
-feature: Metadata
-role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+feature: Metadatos
+role: User,Admin
+exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1030'
 ht-degree: 10%
 
 ---
-
 
 # Esquema de metadatos de carpeta {#folder-metadata-schema}
 
