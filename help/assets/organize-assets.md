@@ -2,20 +2,19 @@
 title: Organizar recursos digitales
 description: Organice los recursos digitales mediante varios métodos proporcionados en Adobe Experience Manager Assets.
 contentOwner: AG
-feature: Asset Management,Tagging,Asset Distribution
+feature: Administración de recursos,Etiquetado,Distribución de recursos
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 1%
 
 ---
 
-
 # Organizar recursos digitales {#organize-digital-assets}
 
-Todos los recursos digitales, metadatos y contenido de documentos de Microsoft Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta plenamente los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
+Todos los recursos digitales, metadatos y contenido de documentos de Microsoft Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta por completo los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
 
 AEM Assets admite varias formas de organizar el contenido. Puede organizarlas de forma jerárquica mediante carpetas o puede organizarlas de forma desordenada y ad hoc mediante, por ejemplo, etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
 
