@@ -3,16 +3,15 @@ title: Administrar colecciones de recursos digitales
 description: Comprenda el concepto de colección en Adobe Experience Manager Assets. Aprenda a recopilar, administrar, editar y recopilar con otros usuarios.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collections,Asset Management
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Colecciones,Administración de activos
+role: User
+exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 20%
+source-wordcount: '2400'
+ht-degree: 19%
 
 ---
-
 
 # Administrar colecciones {#manage-collections}
 
@@ -28,7 +27,7 @@ Las colecciones son de los siguientes tipos, según la forma en que recopilan lo
 
 * Colección inteligente que incluye recursos de forma dinámica en función de criterios de búsqueda.
 
-## Acceda a la consola de colecciones {#navigate-the-collections-console}
+## Acceso a la consola de colecciones {#navigate-the-collections-console}
 
 Para abrir la consola **[!UICONTROL Collections]**:
 
@@ -60,7 +59,7 @@ Puede crear una colección con referencias estáticas, por ejemplo, una colecci�
 
    Para añadir recursos a la colección, vaya a la interfaz de usuario de Assets. Para obtener más información, consulte [Agregar recursos a una colección](#add-assets-to-a-collection).
 
-### Crear colecciones utilizando dropzone {#create-collections-using-dropzone}
+### Crear colecciones mediante dropzone {#create-collections-using-dropzone}
 
 Puede arrastrar recursos de la interfaz de usuario de Assets a una colección. También puede crear una copia de una colección y arrastrar los recursos allí.
 
@@ -122,7 +121,7 @@ Los metadatos de la colección comprenden datos sobre la colección, incluidas l
 1. En la página **[!UICONTROL Metadatos de la colección]**, consulte los metadatos de la colección desde las pestañas **[!UICONTROL Básico]** y **Avanzado**.
 1. Modifique los metadatos según sea necesario y, a continuación, toque o haga clic en **[!UICONTROL Guardar y cerrar]** en la barra de herramientas para guardar los cambios.
 
-### Editar metadatos de colección en masa {#edit-collection-metadata-in-bulk}
+### Editar metadatos de colección de forma masiva {#edit-collection-metadata-in-bulk}
 
 Puede editar los metadatos de varias colecciones simultáneamente. Esta funcionalidad le ayuda a duplicar rápidamente metadatos comunes en varias colecciones.
 
@@ -136,7 +135,7 @@ Puede editar los metadatos de varias colecciones simultáneamente. Esta funciona
    >
    >El modo Anexar solo funciona para campos que pueden contener varios valores. Para los campos que pueden contener un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
-## Búsqueda {#searching}
+## Búsqueda   {#searching}
 
 La función de búsqueda dentro de Colecciones admite [Buscar colecciones](#search-collections) y [Buscar recursos dentro de una colección](#search-within-collections).
 
@@ -245,7 +244,7 @@ Para eliminar las búsquedas guardadas, siga estos pasos:
 1. En la lista **[!UICONTROL Búsquedas guardadas]**, pulse o haga clic en **[!UICONTROL Eliminar]** al lado de la colección inteligente que desee eliminar.
 1. En el cuadro de diálogo, pulse o haga clic en **[!UICONTROL Eliminar]** para eliminar la búsqueda guardada.
 
-## Ejecutar un flujo de trabajo en una colección {#run-a-workflow-on-a-collection}
+## Ejecución de un flujo de trabajo en una colección {#run-a-workflow-on-a-collection}
 
 Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la colección contiene colecciones anidadas, el flujo de trabajo también se ejecuta en los recursos de las colecciones anidadas. Sin embargo, si la colección y la colección anidada contienen recursos duplicados, el flujo de trabajo solo se ejecuta una vez para estos recursos.
 
