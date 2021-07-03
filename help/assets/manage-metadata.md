@@ -4,9 +4,9 @@ description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Ado
 contentOwner: AG
 mini-toc-levels: 1
 feature: Administración de recursos,Metadatos
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 3%
@@ -21,7 +21,7 @@ ht-degree: 3%
 * [Metadata Schemata Reference](meta-ref.md)
 -->
 
-## Por qué necesitamos metadatos {#why-metadata}
+## ¿Por qué necesitamos metadatos? {#why-metadata}
 
 Metadatos significa datos sobre los datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
 
@@ -137,7 +137,7 @@ Recursos de Enterprise Manager le permite editar simultáneamente los metadatos 
    >
    >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
-## Metadatos personalizados con el perfil de procesamiento {#metadata-compute-service}
+## Metadatos personalizados con perfil de procesamiento {#metadata-compute-service}
 
 Assets as a [!DNL Cloud Service] puede generar metadatos personalizados para un recurso mediante servicios nativos de la nube. Configure un perfil de procesamiento para generar metadatos personalizados. Consulte [cómo utilizar el perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
