@@ -3,20 +3,20 @@ title: Referencias del desarrollador para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
 feature: API, API HTTP de Assets
-role: Developer,Architect,Administrator
+role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 9d0fbffa0f66deb230a85fa8d09f9f3be45db3f8
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 2%
 
 ---
 
-# [!DNL Adobe Experience Manager Assets] casos de uso para desarrolladores, API y material de referencia  {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] casos de uso para desarrolladores, API y material de referencia {#assets-cloud-service-apis}
 
 El artículo contiene recomendaciones, materiales de referencia y recursos para desarrolladores de [!DNL Assets] como [!DNL Cloud Service]. Incluye un nuevo módulo de carga de recursos, una referencia de API y información sobre la compatibilidad proporcionada en los flujos de trabajo posteriores al procesamiento.
 
-## [!DNL Experience Manager Assets] API y operaciones  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API y operaciones {#use-cases-and-apis}
 
 [!DNL Assets] as a  [!DNL Cloud Service] proporciona varias API para interactuar mediante programación con recursos digitales. Cada API admite casos de uso específicos, como se menciona en la tabla siguiente. La interfaz de usuario [!DNL Assets], la aplicación de escritorio [!DNL Experience Manager] y [!DNL Adobe Asset Link] admiten todas o algunas de las operaciones.
 
@@ -185,7 +185,7 @@ En [!DNL Experience Manager], el procesamiento de recursos se basa en la configu
 
 Para la configuración del flujo de trabajo posterior al procesamiento, utilice los flujos de trabajo estándar con extensiones con pasos personalizados.
 
-## Compatibilidad con los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
+## Compatibilidad de los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
 Los clientes que actualicen desde versiones anteriores de [!DNL Experience Manager] pueden utilizar microservicios de recursos para procesar recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior.
 
