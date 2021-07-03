@@ -3,9 +3,9 @@ title: Importe y exporte metadatos de recursos de manera masiva
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
 feature: Metadatos
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 12%
@@ -39,7 +39,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
 
 1. Haga clic **[!UICONTROL Import]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
 
-Para agregar fecha y marca de hora al importar metadatos, use el formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para fecha y hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos y `-00:00` es compensación de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es el 26 de marzo de 2020 a las 11:26:00.000 (hora PST).
+Para agregar fecha y marca de hora al importar metadatos, use el formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para fecha y hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos y `-00:00` es compensación de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es el 26 de marzo de 2020 a las 11:26:00.000 AM, hora del PST.
 
 >[!CAUTION]
 >
