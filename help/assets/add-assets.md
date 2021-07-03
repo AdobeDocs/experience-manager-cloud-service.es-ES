@@ -2,9 +2,9 @@
 title: Agregue los recursos digitales a [!DNL Adobe Experience Manager].
 description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
 feature: Administración de recursos,Cargar
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 1%
@@ -99,7 +99,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
-### Administración de cargas cuando el recurso ya existe {#handling-upload-existing-file}
+### Gestión de cargas cuando el recurso ya existe {#handling-upload-existing-file}
 
 Puede cargar un recurso con la misma ruta (el mismo nombre y ubicación) que el de un recurso existente. Sin embargo, se muestra un cuadro de diálogo de advertencia con las siguientes opciones:
 
@@ -109,7 +109,7 @@ Puede cargar un recurso con la misma ruta (el mismo nombre y ubicación) que el 
 
 Para conservar el recurso duplicado en [!DNL Assets], haga clic en **[!UICONTROL Mantener]**. Para eliminar el recurso duplicado que ha cargado, haga clic en **[!UICONTROL Eliminar]**.
 
-### Administración de nombres de archivo y caracteres prohibidos {#filename-handling}
+### Tratamiento de nombres de archivo y caracteres prohibidos {#filename-handling}
 
 [!DNL Experience Manager Assets] intenta evitar cargar recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o más caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimina estos caracteres o carga con un nombre permitido.
 
@@ -132,7 +132,7 @@ Para cargar un mayor número de archivos, utilice uno de los siguientes métodos
 * [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícelo para cargar carpetas anidadas disponibles localmente.
 * [Herramienta](#asset-bulk-ingestor) de ingesta masiva: Se utiliza para la ingesta de grandes cantidades de recursos, ya sea ocasionalmente o inicialmente al implementar  [!DNL Experience Manager].
 
-### Herramienta de ingesta masiva de activos {#asset-bulk-ingestor}
+### Herramienta de ingesta masiva de recursos {#asset-bulk-ingestor}
 
 La herramienta solo se proporciona al grupo de administradores para su uso en ingesta a gran escala de recursos de los almacenes de datos de Azure o S3. Consulte un vídeo de introducción a la configuración y la ingesta.
 
@@ -185,7 +185,7 @@ Además de la interfaz de usuario del explorador web, [!DNL Experience Manager] 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) proporciona acceso a los recursos desde  [!DNL Experience Manager] las aplicaciones de escritorio de Adobe Photoshop, Adobe Illustrator y Adobe InDesign. Puede cargar el documento abierto actualmente en [!DNL Experience Manager] directamente desde la interfaz de usuario de Adobe Asset Link desde estas aplicaciones de escritorio.
 * [[!DNL Experience Manager] las ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) aplicaciones de escritorio simplifican el trabajo con los recursos en el escritorio, independientemente de su tipo de archivo o aplicación nativa que los gestione. Resulta especialmente útil cargar archivos en jerarquías de carpetas anidadas desde el sistema de archivos local, ya que la carga del explorador solo admite la carga de listas de archivos planos.
 
-## Procesamiento de recursos al cargarse {#process-when-uploaded}
+## Procesar recursos al cargarlos {#process-when-uploaded}
 
 Para realizar un procesamiento adicional en los recursos cargados, puede aplicar perfiles de procesamiento en las carpetas de carga. Los perfiles están disponibles en la página **[!UICONTROL Properties]** de una carpeta en [!DNL Assets]. Un recurso digital sin extensión o con una extensión incorrecta no se procesa como desee. Por ejemplo, al cargar estos recursos, puede que no suceda nada o que se aplique un perfil de procesamiento incorrecto al recurso. Los usuarios aún pueden almacenar los archivos binarios en DAM.
 
@@ -207,7 +207,7 @@ Además, si [!DNL Dynamic Media] está habilitado en la implementación, están 
 
 Para las carpetas que tienen asignado un perfil de procesamiento, el nombre del perfil aparece en la miniatura de la vista de tarjeta. En la vista de lista, el nombre del perfil aparece en la columna **[!UICONTROL Perfil de procesamiento]**.
 
-## Cargar o ingerir recursos mediante API {#upload-using-apis}
+## Carga o ingesta de recursos mediante API {#upload-using-apis}
 
 Los detalles técnicos de las API de carga y el protocolo, así como los vínculos al SDK de código abierto y a los clientes de muestra, se proporcionan en la sección [carga de recursos](developer-reference-material-apis.md#asset-upload) de la referencia del desarrollador.
 
