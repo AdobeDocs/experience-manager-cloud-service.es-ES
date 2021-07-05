@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce como Cloud Service
 user-guide-title: AEM Content and Commerce como Cloud Service
 breadcrumb-title: Guía de AEM Content and Commerce
 user-guide-description: Descubra cómo utilizar y administrar Experience Manager Content and Commerce como Cloud Service.
-source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
+source-git-commit: 960fd1bc4731e180cea536ce5a835b15e42fe991
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 62%
+source-wordcount: '109'
+ht-degree: 60%
 
 ---
 
@@ -32,5 +32,6 @@ ht-degree: 62%
       + [Diseño de componentes del CIF](customizing/style-cif-component.md)
       + [Personalización de componentes CIF](customizing/customize-cif-components.md)
       + [Uso de selectores de catálogo del CIF](customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [Migración](migration.md)
 + [Preguntas más frecuentes](faq.md)
