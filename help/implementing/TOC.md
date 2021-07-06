@@ -5,9 +5,9 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '885'
 ht-degree: 34%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 34%
    + [Registro](developing/introduction/logging.md)
    + [Configuraciones y el navegador de configuración](developing/introduction/configurations.md)
    + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
-   + [API de AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)
+   + [Materiales de referencia de la API](/help/implementing/developing/reference-materials.md)
    + [Generación de tokens de acceso para las API del servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [Encabezado y sin cabeza en AEM](developing/headful-headless.md)
    + Desarrollo de AEM de pila completa {#full-stack}
@@ -103,7 +103,6 @@ ht-degree: 34%
          + [Implementación de un evaluador de predicados personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [Páginas de error personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
       + [Tipos de nodos AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Directrices de API de Java](/help/implementing/developing/introduction/java-api-guidelines.md)
    + Administración de experiencias sin objetivos {#headless}
       + [Sin encabezado y AEM](developing/headless/introduction.md)
       + [Recorrido para desarrolladores sin objetivos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
