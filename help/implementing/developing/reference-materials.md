@@ -1,9 +1,9 @@
 ---
 title: Materiales de referencia de la API
 description: AEM tiene API amplias y potentes que puede aprovechar para su proyecto de experiencia digital.
-source-git-commit: 4134d87ca40f7834605c7d3496f05ef80fbab554
+source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '665'
 ht-degree: 4%
 
 ---
@@ -58,15 +58,15 @@ Si AEM proporciona una API, preferirla a Sling, JCR y OSGi. Si AEM no proporcion
 
 AEM ofrece componentes personalizables y opciones de envío de contenido.
 
-| API | Descripción |
+| Función | Descripción |
 |---|---|
 | [Los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | Componentes estandarizados de administración de contenido web (WCM) para AEM acelerar el tiempo de desarrollo y reducir el costo de mantenimiento de los sitios web |
 | [Exportador JSON](/help/implementing/developing/components/json-exporter.md) | Enviar el contenido de cualquier página AEM en formato de modelo de datos JSON |
 | [Activación de la exportación de JSON para un componente](/help/implementing/developing/components/enabling-json-exporter.md) | Generar exportación JSON de contenido de componente basado en un marco de modelos |
-| [Assets](/help/assets/mac-api-assets.md) | Permite operaciones create-read-update-delete (CRUD) en recursos, incluidos binarios, metadatos, representaciones y comentarios. Consulte API HTTP de AEM Assets |
-| [Fragmentos de contenido HTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | Acceda al contenido del fragmento de contenido directamente a través de la API HTTP mediante operaciones CRUD |
-| [GraphQL de fragmento de contenido](/help/assets/content-fragments/graphql-api-content-fragments.md) | Habilitar la entrega eficiente de fragmentos de contenido a clientes JavaScript en implementaciones CMS sin encabezado |
-| [Fragmentos de contenido Recursos HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exacto de las solicitudes de recursos HTTP admitidas |
+| [API de recursos](/help/assets/mac-api-assets.md) | Permite operaciones create-read-update-delete (CRUD) en recursos, incluidos binarios, metadatos, representaciones y comentarios. Consulte API HTTP de AEM Assets |
+| [API HTTP de fragmentos de contenido](/help/assets/content-fragments/assets-api-content-fragments.md) | Acceda al contenido del fragmento de contenido directamente a través de la API HTTP mediante operaciones CRUD |
+| [API de GraphQL de fragmento de contenido](/help/assets/content-fragments/graphql-api-content-fragments.md) | Habilitar la entrega eficiente de fragmentos de contenido a clientes JavaScript en implementaciones CMS sin encabezado |
+| [Fragmentos de contenido API HTTP de recursos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exacto de las solicitudes de recursos HTTP admitidas |
 
 ## API específicas de SPA {#spa-apis}
 
