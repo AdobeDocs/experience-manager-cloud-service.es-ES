@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre la fase de prep
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
+source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,7 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
    >[!NOTE]
    >Al cargar un nuevo informe, se restablecen todas las evaluaciones.
 
-### Revisión del informe de análisis de prácticas recomendadas {#analysis-report}
+### Revisión del informe de Análisis de prácticas recomendadas {#analysis-report}
 
 Explore las siguientes tarjetas disponibles en la página Informe de análisis de prácticas recomendadas :
 
@@ -79,17 +79,17 @@ Explore las siguientes tarjetas disponibles en la página Informe de análisis d
 
 #### Propiedades del informe {#report-properties}
 
-Esta tarjeta proporciona información sobre las propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager (AEM).
+La tarjeta **Propiedades del informe** proporciona información sobre las propiedades del informe, como la fecha, la duración, los filtros, la fecha de carga y los detalles de Adobe Experience Manager (AEM).
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### Información general del informe {#report-overview}
 
-Esta tarjeta proporciona los resultados del informe
+Esta tarjeta **Información general de informe** proporciona los resultados del informe, como se muestra en la figura siguiente.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
-Al hacer clic en este informe se abre la pestaña **Informe** , tal como se muestra en la figura siguiente.
+Al hacer clic en este informe se abre la pestaña **Report**.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
@@ -121,7 +121,7 @@ Siga esta sección para explorar la tarjeta de actividad Planificación y config
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso, Uso de la fase de implementación.
 
