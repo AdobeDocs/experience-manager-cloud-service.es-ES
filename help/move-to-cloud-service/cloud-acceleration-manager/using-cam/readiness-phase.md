@@ -4,9 +4,9 @@ description: Esta página proporciona información general sobre la fase de prep
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Puede filtrar el informe en función de su importancia, subtipo o recuento.
 
 #### Evaluación de prácticas recomendadas {#best-practices-assessment}
 
-Esta tarjeta proporciona un
+La opción Evaluación de prácticas recomendadas proporciona una evaluación de la instancia de AEM actual y proporciona orientación sobre los pasos siguientes para adoptar AEM prácticas recomendadas. Puede revisar la siguiente información desde esta pestaña:
+
+* Información general de la instancia de AEM
+* Plantillas y componentes personalizados
+* Conclusiones adicionales
+* Consultas lentas
+* Tareas de mantenimiento
 
 #### Evaluación de la complejidad de la migración {#migration-complexity-assessment}
 
-Esta tarjeta proporciona
+La opción de evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de AEM existente a AEM como Cloud Service. Puede revisar la siguiente información desde esta pestaña:
 
+* Información general de la instancia de AEM
+* Evaluación
+* Consideraciones sobre la migración de contenido
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Uso de la tarjeta de planificación y configuración {#planning-setup}
 
@@ -119,10 +130,8 @@ Siga esta sección para explorar la tarjeta de actividad Planificación y config
 
 1. Se muestra un carrusel de contenido con información relevante para esta fase del recorrido de migración.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso, Uso de la fase de implementación.
-
-
