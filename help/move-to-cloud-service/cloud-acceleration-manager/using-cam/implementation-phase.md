@@ -4,7 +4,7 @@ description: Esta página proporciona información general sobre la fase de impl
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -75,7 +75,7 @@ Siga esta sección para explorar AEM como tarjeta de actividad de la tarjeta de 
 
 1. Se muestra un carrusel de contenido con información relevante para esta fase del recorrido de migración.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Uso de la tarjeta de transferencia de contenido {#content-transfer}
@@ -90,7 +90,7 @@ Siga esta sección para explorar la tarjeta de actividad de transferencia de con
 
 1. Se muestra un carrusel de contenido con información relevante para esta fase del recorrido de migración.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Revise los [requisitos previos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) y las [prácticas recomendadas y directrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) antes de utilizar la herramienta de transferencia de contenido.
@@ -103,6 +103,6 @@ Para calcular el tamaño del Repositorio AEM, puede ejecutar el informe Uso del 
 
 También puede estimar el tamaño de las rutas específicas del repositorio utilizando el parámetro `path`, por ejemplo, `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a utilizar la fase de implementación, ya está listo para pasar a revisar el siguiente paso, Uso de la fase de GoLive.
