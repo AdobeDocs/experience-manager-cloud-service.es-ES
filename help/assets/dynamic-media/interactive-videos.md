@@ -2,9 +2,9 @@
 title: Vídeos interactivos
 description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dynamic Media.
 feature: Vídeos interactivos
-role: Business Practitioner
+role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 4%
@@ -46,12 +46,12 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >Si crea un vídeo interactivo para iniciar una página web cuando un usuario toca una imagen en miniatura, algunos dispositivos impiden que se abra la página web emergente. En estos casos, cambie la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un iPhone 6 de Apple, pulse **[!UICONTROL Configuración > Safari > Bloquear ventanas emergentes]** y, a continuación, deslice el control a **[!UICONTROL Desactivado]**. Ahora, al reproducir un vídeo interactivo y hacer clic en una miniatura, se le pedirá que abra la ventana emergente. Si lo acepta, se abre la página web.
 
-### Vea cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
+### Ver cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
 
 Mire un tutorial sobre [cómo se crean los vídeos interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minutos y 30 segundos).
 (Aunque el tutorial de vídeo está marcado con Assets on Demand, los principios y pasos siguen aplicándose a Vídeo interactivo en Adobe Experience Manager Assets).
 
-### Seminario web de éxito del cliente de Adobe {#adobe-customer-success-webinar}
+### Seminario web sobre el éxito de los clientes de Adobe {#adobe-customer-success-webinar}
 
 El seminario web [Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en Recursos de Experience Manager](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/) le enseña a utilizar vídeo interactivo y otras funciones para enlazar eventos impulsados por conversión con el contenido de marketing de vídeo.
 
@@ -224,7 +224,7 @@ Puede omitir esta tarea y continuar con la siguiente si desea utilizar cualquier
 
 Cuando se toca una miniatura en el entorno de creación, aparece una vista previa del cuadro de diálogo Vista rápida .
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![imagen_1-21](assets/chlimage_1-127.png)
 
 Si lo desea, puede crear su propio ajuste preestablecido de visualizador de vídeo interactivo personalizado. Puede determinar, entre otras cosas, el estilo del reproductor de vídeo, las miniaturas interactivas y la vista de cuadrícula en miniatura que aparece al final del vídeo.
 
@@ -249,7 +249,7 @@ Consulte [Carga de recursos mediante la programación de trabajos mediante FTP](
 
    Ahora agregue interactividad al vídeo.
 
-## Añadir interactividad al vídeo {#adding-interactivity-to-your-video}
+## Adición de interactividad al vídeo {#adding-interactivity-to-your-video}
 
 Agregue segmentos de línea de tiempo a un vídeo mediante el editor visual local de la página Crear vídeo interactivo .
 
@@ -416,7 +416,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
       <td>Asociación de la imagen en miniatura seleccionada con un hipervínculo</td> 
       <td><p>En Tipo de acción, pulse <strong>Hipervínculo</strong> y, a continuación, realice una de las siguientes acciones:</p> 
        <ul> 
-       <li>Si es cliente de Sites Experience Manager, pulse el icono (carpeta) Selector de sitio para desplazarse a una página web. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.</li> 
+       <li>Si es cliente de Sites de Experience Manager, pulse el icono (carpeta) Selector de sitio para desplazarse a una página web. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.</li> 
        <li>Si es cliente independiente de Dynamic Media, en el campo de texto HREF especifique la ruta de URL completa a una página web vinculada.</li> 
        </ul> <p>Asegúrese de especificar si desea abrir el vínculo en una nueva pestaña del explorador o en la pestaña actual.</p> </td> 
       </tr> 
@@ -499,7 +499,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
 
 Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivos.
 
-## Integración de un vídeo interactivo con su sitio web {#integrating-an-interactive-video-with-your-website}
+## Integración de un vídeo interactivo con el sitio web {#integrating-an-interactive-video-with-your-website}
 
 Después de cargar un vídeo, añadir segmentos de cronología y publicar el vídeo interactivo, ya está listo para agregarlo al sitio web existente.
 
@@ -755,7 +755,7 @@ El sitio web de la demostración final con el vídeo interactivo totalmente inte
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Uso de las vistas rápidas para crear ventanas emergentes personalizadas con Windows® {#using-quickviews-to-create-custom-pop-ups}
+## Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
 Consulte [Uso de las vistas rápidas para crear ventanas emergentes personalizadas con Windows®](/help/assets/dynamic-media/custom-pop-ups.md).
 —>
