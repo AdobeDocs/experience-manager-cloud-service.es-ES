@@ -2,9 +2,9 @@
 title: Perfiles de imagen de Dynamic Media
 description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente o muestra inteligente, o ambos. A continuación, aplique el perfil a una carpeta de recursos de imagen.
 feature: Administración de recursos,Perfiles de imagen,Representaciones
-role: Business Practitioner
+role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2714'
 ht-degree: 9%
@@ -127,7 +127,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 1. Si está editando, guarde los cambios. Si elimina, confirme que desea eliminar el perfil.
 
-## Aplicación de un perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
+## Aplicación de un perfil de imagen de Dynamic Media a carpetas {#applying-an-image-profile-to-folders}
 
 Al asignar un perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de su carpeta principal. Como tal, solo puede asignar un perfil de imagen a una carpeta. Como tal, considere detenidamente la estructura de carpetas en la que carga, almacena, utiliza y archiva recursos.
 
