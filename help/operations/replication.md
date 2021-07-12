@@ -2,7 +2,7 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 225c47db1af35b29d79ebd16fa437681987b1372
+source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 4%
@@ -49,7 +49,7 @@ Puede encontrar información más detallada sobre Administrar publicación en la
 
 Para realizar una activación de árbol:
 
-1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
+1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
 2. Seleccione la tarjeta **publish**
 3. Una vez en la interfaz de usuario de la consola web de publicación, **seleccione Distribuir**
 
@@ -60,7 +60,7 @@ Para realizar una activación de árbol:
 
 Puede almacenar en déclencheur una replicación de árbol seleccionando **Tools - Workflow - Models** y copiando el modelo de flujo de trabajo **Publish Content Tree** listo para usar, como se muestra a continuación:
 
-![](/help/operations/assets/publish-distribute.png)
+![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 No modifique ni invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo y luego modificar o invocar esa copia.
 
