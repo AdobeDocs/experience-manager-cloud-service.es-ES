@@ -2,9 +2,9 @@
 title: Conjuntos de medios mixtos
 description: Aprenda a trabajar con conjuntos de medios mixtos en Dynamic Media.
 feature: Conjuntos de medios mixtos
-role: Business Practitioner
+role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 23%
