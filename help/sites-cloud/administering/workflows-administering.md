@@ -1,16 +1,15 @@
 ---
 title: Administración de instancias de flujo de trabajo
 description: Obtenga información sobre cómo administrar instancias de flujo de trabajo
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administración
+role: Admin
+exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
-
 
 # Administración de instancias de flujo de trabajo {#administering-workflow-instances}
 
@@ -36,7 +35,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
 1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
-1. Seleccione **Instances** para mostrar la lista de instancias de flujo de trabajo en curso. En el carril superior, en la esquina izquierda, seleccione **Filters**. Alternativamente, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
+1. Seleccione **Instances** para mostrar la lista de instancias de flujo de trabajo en curso. En el carril superior, en la esquina izquierda, seleccione **Filters**. Como alternativa, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
 
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
@@ -168,4 +167,3 @@ Puede configurar el tamaño máximo de la bandeja de entrada configurando el **A
 | Nombre de propiedad (consola web) | Nombre de propiedad OSGi |
 |---|---|
 | Tamaño máximo de consulta de la bandeja de entrada | granite.workflow.inboxQuerySize |
-
