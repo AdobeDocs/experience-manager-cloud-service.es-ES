@@ -2,9 +2,9 @@
 title: Imágenes interactivas
 description: Aprenda a trabajar con imágenes interactivas en Dynamic Media.
 feature: Imágenes interactivas
-role: Business Practitioner
+role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4245'
 ht-degree: 1%
@@ -21,7 +21,7 @@ El siguiente es un banner de ventas con una ventana emergente de vista rápida. 
 
 Consulte [imágenes interactivas en acción](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) en la página web que se muestra arriba.
 
-## Vea cómo se crean los banners de imagen interactivos {#watch-how-interactive-image-banners-are-created}
+## Ver cómo se crean los titulares de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
 Mire un tutorial sobre [cómo se crean los banners de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutos y 33 segundos). También aprenderá a previsualizar, editar y distribuir banners de imagen interactivos.
 
@@ -201,7 +201,7 @@ Después de guardar el ajuste preestablecido de visualizador, se activa automát
 
    Ya está listo para cargar un titular de imagen.
 
-## Carga de un titular de imagen {#uploading-an-image-banner}
+## Carga de un banner de imagen {#uploading-an-image-banner}
 
 Si ya ha cargado las imágenes que desea usar, avance al siguiente paso, [Añadir zonas interactivas a un titular de imagen](#adding-hotspots-to-an-image-banner).
 
@@ -323,7 +323,7 @@ Consulte [Adición de recursos de Dynamic Media a páginas](/help/assets/dynamic
 
 Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de imagen interactivos.
 
-## Integración de una imagen interactiva con su sitio web {#integrating-an-interactive-image-with-your-website}
+## Integración de una imagen interactiva con el sitio web {#integrating-an-interactive-image-with-your-website}
 
 Después de cargar una imagen de banner, agregar zonas interactivas a ella y publicar la imagen interactiva, está listo para agregarla a la página del sitio web.
 
