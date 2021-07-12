@@ -1,13 +1,12 @@
 ---
 title: Administrar fragmentos de contenido
 description: Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
-feature: Content Fragments
-role: Business Practitioner
+feature: Fragmentos de contenido
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-translation-type: tm+mt
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1746'
 ht-degree: 9%
 
 ---
@@ -127,7 +126,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 >
 >Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-digital-assets.md) o [AEM aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es).
 
-## Apertura del Editor de fragmentos {#opening-the-fragment-editor}
+## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
 Para abrir el fragmento para editarlo:
 
@@ -177,7 +176,7 @@ Desplácese por los distintos modos utilizando los iconos del panel lateral:
 
 ![modos](assets/cfm-managing-04.png)
 
-### Acciones de la barra de herramientas en el editor de fragmentos de contenido {#toolbar-actions-in-the-content-fragment-editor}
+### Acciones de barra de herramientas en el editor de fragmentos de contenido {#toolbar-actions-in-the-content-fragment-editor}
 
 Algunas funciones de la barra de herramientas superior están disponibles en varios modos:
 
@@ -268,7 +267,7 @@ Una vez abierto el fragmento, puede utilizar la pestaña [Variations](/help/asse
 
 Una vez creado el contenido principal, puede crear y administrar [Variaciones](/help/assets/content-fragments/content-fragments-variations.md) de dicho contenido.
 
-## Asociación del contenido con el fragmento {#associating-content-with-your-fragment}
+## Asociación del contenido al fragmento {#associating-content-with-your-fragment}
 
 También puede [asociar contenido](/help/assets/content-fragments/content-fragments-assoc-content.md) con un fragmento. Esto proporciona una conexión para que los recursos (es decir, las imágenes) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
 
@@ -338,7 +337,7 @@ No se puede editar el contenido del fragmento al comparar fragmentos.
 
 ![comparar](assets/cfm-managing-06.png)
 
-## Revertir a una versión {#reverting-to-a-version}
+## Reversión a una versión  {#reverting-to-a-version}
 
 Puede volver a una versión específica del fragmento:
 
