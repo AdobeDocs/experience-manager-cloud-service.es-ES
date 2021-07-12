@@ -2,9 +2,9 @@
 title: Aplicación de ajustes preestablecidos de visor de Dynamic Media
 description: Aprenda a aplicar ajustes preestablecidos de visor en Dynamic Media.
 feature: Ajustes preestablecidos de visualizador, visualizadores
-role: Business Practitioner
+role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 25%
@@ -34,6 +34,6 @@ Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución
 
 1. Seleccione un visor del panel izquierdo para aplicarlo al recurso como se ve en el panel derecho. También puede [copiar la URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
 
-## Obtención de direcciones URL preestablecidas de visor {#obtaining-viewer-preset-urls}
+## Obtención de direcciones URL preestablecidas del visor {#obtaining-viewer-preset-urls}
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la aplicación web](linking-urls-to-yourwebapplication.md).
