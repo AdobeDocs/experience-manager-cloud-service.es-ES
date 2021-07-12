@@ -2,9 +2,9 @@
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
 feature: Administración
-role: Administrator
+role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Adobe Launch es necesario para administrar las propiedades del lado del cliente 
 
 Se necesita una configuración IMS tanto para Launch como para Target para integrar correctamente Target con AEM y Launch. Aunque la configuración de IMS para Launch está preconfigurada en AEM como Cloud Service, se debe crear la configuración de IMS de Target (después de aprovisionar Target). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) y [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para aprender a crear la configuración de IMS de Target.
 
-### ID de inquilino de Adobe Target y código de cliente de Adobe Target {#tenant-client}
+### ID del inquilino de Adobe Target y código de cliente de Adobe Target {#tenant-client}
 
 Al configurar los campos ID de inquilino de Adobe Target y Código de cliente de Adobe Target , tenga en cuenta lo siguiente:
 
@@ -101,7 +101,7 @@ Una propiedad es un contenedor que se rellena con extensiones, reglas y elemento
 4. Seleccione el botón **Save**.
    ![](assets/properties_newproperty1.png "LaunchpropertyLaunchproperty")
 
-### Añadir las extensiones requeridas {#add-extension}
+### Añadir las extensiones necesarias {#add-extension}
 
 **** La extensión es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target es compatible con implementaciones del lado del cliente mediante el uso del SDK de JavaScript de Target para la web moderna, at.js. Debe añadir las extensiones **Adobe Target** y **Adobe ContextHub**.
 
