@@ -2,10 +2,9 @@
 title: Modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
 feature: Fragmentos de contenido
-role: Business Practitioner
+role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 7%
@@ -401,7 +400,7 @@ Para cancelar la publicación de un modelo de fragmento de contenido:
 1. Seleccione el modelo, seguido de **Cancelar publicación** en la barra de herramientas.
 El estado publicado se indica en la consola.
 
-## Modelo de fragmento de contenido: Propiedades {#content-fragment-model-properties}
+## Modelo de fragmento de contenido: propiedades {#content-fragment-model-properties}
 
 Puede editar las **Propiedades** de un modelo de fragmento de contenido:
 
