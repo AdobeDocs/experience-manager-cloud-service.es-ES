@@ -2,10 +2,9 @@
 title: 'Fragmentos de contenido: navegador de configuración'
 description: Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 feature: Fragmentos de contenido
-role: Business Practitioner
+role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-translation-type: tm+mt
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 18%
@@ -16,7 +15,7 @@ ht-degree: 18%
 
 Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 
-## Habilitar la funcionalidad de fragmento de contenido para su instancia {#enable-content-fragment-functionality-instance}
+## Habilitar la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
 Antes de utilizar los fragmentos de contenido, debe utilizar el **Navegador de configuración** para habilitar:
 
