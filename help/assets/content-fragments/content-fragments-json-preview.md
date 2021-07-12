@@ -1,16 +1,15 @@
 ---
 title: 'Vista previa: Representación JSON'
 description: Obtenga información sobre cómo previsualizar fácilmente la representación JSON de sus fragmentos de contenido al implementar su solución AEM sin encabezado.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de contenido
+role: User
+exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 5%
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
-
 
 # Vista previa: Representación JSON {#preview-json-representation}
 
