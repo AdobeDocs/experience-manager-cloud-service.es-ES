@@ -3,9 +3,9 @@ title: Publicación de recursos de Dynamic Media
 description: Obtenga información sobre cómo publicar recursos de Dynamic Media.
 contentOwner: Rick Brough
 feature: Administración de activos
-role: Business Practitioner
+role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 5%
