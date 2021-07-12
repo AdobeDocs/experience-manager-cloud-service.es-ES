@@ -1,18 +1,17 @@
 ---
 title: Solución de problemas y preguntas más frecuentes sobre MSM
 description: Descubra cómo solucionar los problemas más comunes relacionados con MSM y obtenga respuestas a las preguntas más comunes relacionadas con MSM.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administrador de varios sitios
+role: Admin
+exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
-
-# Solución de problemas de MSM y preguntas más frecuentes {#troubleshooting-msm}
+# Solución de problemas y preguntas más frecuentes sobre MSM {#troubleshooting-msm}
 
 ## Solución de problemas de los primeros pasos {#first-steps}
 
@@ -21,7 +20,7 @@ Si está experimentando lo que cree que es un comportamiento incorrecto o un err
 * Compruebe las [preguntas frecuentes de MSM](#faq) ya que es posible que sus problemas o preguntas ya se hayan solucionado allí.
 * Consulte el [artículo de prácticas recomendadas de MSM](best-practices.md) ya que allí se ofrecen varias sugerencias junto con aclaraciones de una serie de ideas erróneas.
 
-## Encontrar información avanzada sobre el modelo y el estado de Live Copy {#advanced-info}
+## Búsqueda de información avanzada sobre el modelo y el estado de Live Copy {#advanced-info}
 
 MSM registra varios servlets que se pueden solicitar con selectores en las direcciones URL de los recursos. Las utiliza la interfaz de usuario de , pero también se pueden solicitar directamente para ver estados de MSM calculados avanzados y directamente adicionales para sus páginas:
 
