@@ -1,18 +1,17 @@
 ---
 title: Entrega de contenido sin objetivos mediante fragmentos de contenido con GraphQL
 description: Aprenda a utilizar AEM fragmentos de contenido con GraphQL para la entrega de contenido sin encabezado.
-feature: Content Fragments
-role: Business Practitioner
+feature: Fragmentos de contenido
+role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-translation-type: tm+mt
-source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
 
 ---
 
-# Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
+# Entrega de contenido sin objetivos mediante fragmentos de contenido con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 Con Adobe Experience Manager (AEM) como Cloud Service, puede utilizar los fragmentos de contenido, junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar), para ofrecer sin problemas contenido estructurado para su uso en sus aplicaciones. La capacidad de personalizar una sola consulta de API le permite recuperar y entregar el contenido específico que desea o necesita procesar (como respuesta a la consulta de API única).
 
@@ -58,7 +57,7 @@ Para Adobe Experience as a Cloud Experience, se ha desarrollado una implementaci
 
 La implementación de la API de AEM GraphQL se basa en las [bibliotecas Java de GraphQL](https://graphql.org/code/#java).
 
-## Fragmentos de contenido para usar con la API de AEM GraphQL {#content-fragments-use-with-aem-graphql-api}
+## Fragmentos de contenido para su uso con la API de AEM GraphQL {#content-fragments-use-with-aem-graphql-api}
 
 [Los ](#content-fragments) fragmentos de contenido se pueden usar como base para GraphQL para AEM consultas como:
 
@@ -104,7 +103,7 @@ La **[Referencia de fragmento](/help/assets/content-fragments/content-fragments-
 
 Para ayudar a diseñar y desarrollar los modelos de fragmento de contenido, puede obtener una vista previa de [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md).
 
-## Aprender a utilizar GraphQL con AEM: Contenido de muestra y consultas {#learn-graphql-with-aem-sample-content-queries}
+## Aprender a utilizar GraphQL con AEM: contenido de muestra y consultas {#learn-graphql-with-aem-sample-content-queries}
 
 Consulte [Learning to use GraphQL with AEM - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md) para ver una introducción al uso de la API de AEM GraphQL.
 
