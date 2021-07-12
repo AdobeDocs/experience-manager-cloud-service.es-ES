@@ -2,10 +2,9 @@
 title: Prácticas recomendadas de MSM
 description: Conozca las prácticas recomendadas recopiladas por los equipos de consultoría e ingeniería de Adobe para ayudarle a poner en marcha el administrador de varios sitios de AEM.
 feature: Administrador de varios sitios
-role: Administrator
+role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-translation-type: tm+mt
-source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -24,7 +23,7 @@ MSM es un marco configurable para automatizar la implementación de contenido. L
 * Una vez que existe un plan para su estructura, flujos de contenido, automatización y administración, **prototipo y pruebe a fondo su sistema** antes de iniciar una implementación activa.
 * Tenga en cuenta que los **asesores de Adobe y los integradores de sistemas líderes** tienen una planificación profunda de la experiencia e implementan la automatización de contenido con MSM, de modo que pueden ayudarle a empezar con su proyecto MSM y a lo largo de toda su implementación.
 
-## Configuraciones de fuentes y modelos de Live Copy {#live-copy-sources-and-blueprint-configurations}
+## Fuentes de Live Copy y configuraciones de modelo {#live-copy-sources-and-blueprint-configurations}
 
 Tenga en cuenta que se puede crear una Live Copy utilizando [páginas normales](creating-live-copies.md#creating-a-live-copy-of-a-page) o una [configuración de modelo](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Ambos son casos de uso válidos.
 
@@ -90,7 +89,7 @@ Al crear maestros de idiomas, tenga en cuenta lo siguiente:
 
 Para obtener más información, consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) y las [Prácticas recomendadas de traducción.](/help/sites-cloud/administering/translation/best-practices.md)
 
-## Cambios de estructura y lanzamientos {#structure-changes-and-rollouts}
+## Cambios y lanzamientos de la estructura {#structure-changes-and-rollouts}
 
 Las modificaciones en la estructura de contenido de un modelo o árbol de origen se reflejan de forma diferente en una Live Copy. Esto depende del tipo de modificación:
 
