@@ -2,9 +2,9 @@
 title: Perfiles de vídeo de Dynamic Media
 description: Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. También puede agregar un recorte inteligente a los vídeos.
 feature: Administración de recursos,Perfiles de vídeo,Representaciones
-role: Business Practitioner
+role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3665'
 ht-degree: 10%
@@ -90,7 +90,7 @@ En la tabla siguiente se identifican los perfiles de codificación de prácticas
  </tbody>
 </table>
 
-## Acerca del uso del recorte inteligente en Perfiles de vídeo {#about-smart-crop-video}
+## Acerca del uso del recorte inteligente en perfiles de vídeo {#about-smart-crop-video}
 
 El recorte inteligente de vídeo es una función opcional disponible en Perfiles de vídeo. Es una herramienta que usa Adobe Sensei para detectar y recortar automáticamente el punto focal de cualquier vídeo adaptable o progresivo que haya cargado, independientemente de su tamaño.
 
@@ -389,7 +389,7 @@ Puede [monitorizar el progreso de un trabajo de procesamiento de perfil de víde
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Puede  [monitorizar el progreso de un trabajo](#monitoring-the-progress-of-an-encoding-job) de procesamiento de perfil de vídeo.
 
-### Aplicación global de un perfil de vídeo {#applying-a-video-profile-globally}
+### Aplicación de un perfil de vídeo globalmente {#applying-a-video-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de Experience Manager en cualquier carpeta tenga aplicado el perfil seleccionado.
 
@@ -408,7 +408,7 @@ Se muestra un indicador de procesamiento (o barra de progreso) para que pueda su
 
 También puede ver el archivo `error.log` para supervisar el progreso de un trabajo de codificación, para ver si la codificación ha finalizado o si se han producido errores en el trabajo. El `error.log` se encuentra en la carpeta `logs` donde está instalada la instancia de Experience Manager.
 
-## Eliminación de un perfil de vídeo de las carpetas {#removing-a-video-profile-from-folders}
+## Eliminación de un perfil de vídeo de carpetas {#removing-a-video-profile-from-folders}
 
 Al quitar un perfil de vídeo de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de su carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
@@ -422,7 +422,7 @@ Puede quitar un perfil de vídeo de una carpeta desde el menú **[!UICONTROL Her
 
    Puede confirmar que el perfil de vídeo ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
-### Eliminación de un perfil de vídeo de las carpetas mediante Propiedades {#removing-video-profiles-from-folders-by-way-of-properties}
+### Eliminación de un perfil de vídeo de carpetas mediante Propiedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Toque o haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de vídeo.
 1. En la carpeta, pulse o haga clic en la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
