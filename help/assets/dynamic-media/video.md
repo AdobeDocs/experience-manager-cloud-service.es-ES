@@ -2,9 +2,9 @@
 title: Vídeo
 description: Aprenda a trabajar con vídeo en Dynamic Media.
 feature: Perfiles de vídeo
-role: Business Practitioner
+role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '9471'
 ht-degree: 6%
@@ -385,7 +385,7 @@ Al elegir (o crear) un ajuste preestablecido de codificación de vídeo para el 
 | 720p | 720 | Pantalla grande |
 | 1080p | 1080 | Pantalla grande de alta definición |
 
-### Fps (Fotogramas por segundo) {#fps-frames-per-second}
+### Fps (fotogramas por segundo) {#fps-frames-per-second}
 
 En los Estados Unidos y Japón, la mayoría de los vídeos se graban a 29,97 fotogramas por segundo (fps); en Europa, la mayor parte del vídeo se toma a 25 fps. La película es filmada a 24 fps.
 
@@ -581,7 +581,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
 1. Click **[!UICONTROL OK]**. -->
 
-### Configuración de YouTube en el Experience Manager {#setting-up-youtube-in-aem}
+### Configuración de YouTube en Experience Manager {#setting-up-youtube-in-aem}
 
 A partir de Experience Manager 6.4, se introdujo un nuevo método de interfaz de usuario táctil para configurar la publicación de YouTube en Experience Manager. En función de la instancia instalada de Experience Manager que esté utilizando, realice una de las siguientes acciones:
 
@@ -804,7 +804,7 @@ Para vincular URL de YouTube a su aplicación web:
 1. Haga clic en la pestaña **[!UICONTROL Advanced]**.
 1. En el encabezado Publicación de YouTube , en la Lista de URL de YouTube, seleccione y copie el texto de la URL en el navegador web para obtener una vista previa del recurso o para agregarlo a la página de contenido web.
 
-### Cancelando la publicación de vídeos para eliminarlos de YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### Cancelación de la publicación de vídeos para eliminarlos de YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
 Cuando cancela la publicación de un recurso de vídeo en Experience Manager, el vídeo se elimina de YouTube.
 
@@ -828,7 +828,7 @@ Para cancelar la publicación de vídeos para eliminarlos de YouTube:
 
 Cuando se carga un nuevo vídeo en una carpeta a la que se ha aplicado la codificación de vídeo o, se publica el vídeo en YouTube, se supervisa cómo progresa (o falla) la codificación de vídeo/publicación de YouTube. El progreso real de publicación de YouTube solo está disponible mediante los registros. Sin embargo, tanto si falla como si tiene éxito, se enumera de otras maneras descritas en el siguiente procedimiento. Además, recibe notificaciones por correo electrónico cuando se completa o interrumpe un flujo de trabajo de publicación o una codificación de vídeo de YouTube.
 
-### Monitorización del progreso {#monitoring-progress}
+### Seguimiento del progreso {#monitoring-progress}
 
 **Para monitorizar el progreso, incluida la codificación/publicación fallida de YouTube:**
 
@@ -1048,7 +1048,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Adición de subtítulos al vídeo {#adding-captions-to-video}
+## Adición de subtítulos a vídeo {#adding-captions-to-video}
 
 Puede ampliar el alcance de sus vídeos a mercados globales añadiendo subtítulos a vídeos individuales o a conjuntos de vídeos adaptables. Al agregar subtítulos, evitará la necesidad de doblar el audio, o la necesidad de usar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Aparecen subtítulos en idiomas extranjeros para que personas de diferentes idiomas puedan entender la parte de audio.
 
@@ -1105,7 +1105,7 @@ Consulte [Servicio de contenido estático (no de imagen)](https://experienceleag
 
       Observe el `,1` al final de la ruta del rótulo. Inmediatamente después de la extensión de nombre de archivo VTT en la ruta, puede activar o desactivar (desactivar) el botón de subtítulos en la barra del reproductor de vídeo configurando en `,1` o `,0`, respectivamente.
 
-## Adición de marcadores de capítulo al vídeo {#adding-chapter-markers-to-video}
+## Adición de marcadores de capítulo a vídeo {#adding-chapter-markers-to-video}
 
 Puede hacer que los vídeos de formulario largos sean más fáciles de ver y navegar añadiendo marcadores de capítulo a vídeos individuales o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo en la cronología del vídeo (también conocida como la barra de desplazamiento del vídeo). Pueden navegar fácilmente a su punto de interés o ir de inmediato a contenido, formación y demostraciones nuevos.
 
