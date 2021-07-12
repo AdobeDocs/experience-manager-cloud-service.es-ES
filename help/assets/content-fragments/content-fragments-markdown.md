@@ -2,9 +2,9 @@
 title: Markdown
 description: Comprender cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
 feature: Fragmentos de contenido
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Puede definir:
 * [Bloques de código](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
 * [Fuentes de barra invertida](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
-## Notación de encabezado {#heading-notation}
+## Anotación de encabezado {#heading-notation}
 
 Para crear un encabezado, coloque una etiqueta (#) delante del encabezado. Se utiliza una etiqueta (#) para H1, dos etiquetas hash (##) para H2, etc. Se pueden usar hasta 6 etiquetas hash. Por ejemplo:
 
