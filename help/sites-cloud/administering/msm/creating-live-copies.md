@@ -2,10 +2,9 @@
 title: Creación y sincronización de Live Copies
 description: Aprenda a crear y sincronizar Live Copies para reutilizar el contenido en el sitio.
 feature: Administrador de varios sitios
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-translation-type: tm+mt
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 1%
@@ -226,7 +225,7 @@ Despliegue una página de modelo para insertar los cambios de contenido en Live 
 >
 >Estos [conflictos deben manejarse y resolverse en el momento del despliegue](rollout-conflicts.md).
 
-#### Despliegue de un modelo desde Propiedades de página {#rolling-out-a-blueprint-from-page-properties}
+#### Despliegue de un modelo desde las propiedades de página {#rolling-out-a-blueprint-from-page-properties}
 
 1. En la consola **Sites**, seleccione la página en el modelo y abra las propiedades.
 1. Abra la pestaña **Modelo**.
@@ -269,7 +268,7 @@ Los lanzamientos se procesan como trabajos asincrónicos y se pueden comprobar e
 
 Los lanzamientos se procesan como trabajos asincrónicos y se pueden comprobar en la página [**Estado de trabajos asincrónicos**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
 
-#### Despliegue un modelo desde la información general de Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
+#### Implementar un modelo desde la información general de Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
 La acción [**Despliegue** también está disponible en la Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview), cuando se selecciona una página de modelo.
 
@@ -373,7 +372,7 @@ Para suspender la herencia en una página:
 
 1. Seleccione **Suspender** en el cuadro de diálogo de confirmación.
 
-#### Suspender la herencia desde la información general de Live Copy {#suspending-inheritance-from-the-live-copy-overview}
+#### Suspender herencia de la información general de Live Copy {#suspending-inheritance-from-the-live-copy-overview}
 
 La acción [Suspender también está disponible en la Información general de Live Copy](live-copy-overview.md#using-the-live-copy-overview), cuando se selecciona una página de Live Copy.
 
@@ -539,7 +538,7 @@ Para habilitar la herencia para una propiedad, toque o haga clic en el icono **R
 
 ![Botón Revertir herencia](../assets/revert-inheritance-button.png)
 
-### Restablecimiento de una página de Live Copy {#resetting-a-live-copy-page}
+### Restablecer una página de Live Copy {#resetting-a-live-copy-page}
 
 Puede restablecer una página de Live Copy para:
 
