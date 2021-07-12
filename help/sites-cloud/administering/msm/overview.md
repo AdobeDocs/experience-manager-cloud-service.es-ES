@@ -1,16 +1,15 @@
 ---
 title: 'Reutilización del contenido: administrador de varios sitios y Live Copy'
 description: Obtenga una introducción para reutilizar contenido con AEM potentes Live Copies y las funciones del administrador de varios sitios.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administrador de varios sitios
+role: Admin
+exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2685'
 ht-degree: 1%
 
 ---
-
 
 # Reutilización del contenido: administrador de varios sitios y Live Copy {#multi-site-manager-and-live-copy}
 
@@ -192,7 +191,7 @@ En el ejemplo anterior, `/content/wknd/language-masters/en` es el sitio maestro 
 * Los autores realizan cambios en las páginas siguientes `/content/wknd/language-masters/en`.
 * Cuando se activa, MSM sincroniza estos cambios con Live Copies.
 
-### Live Copies - Composición {#live-copies-composition}
+### Live Copies: composición {#live-copies-composition}
 
 >[!NOTE]
 >
@@ -215,7 +214,7 @@ Los cambios pueden [sincronizarse](creating-live-copies.md#synchronizing-your-li
 
 ![Información general sobre la composición de Live Copy](../assets/live-copy-composition.png)
 
-#### Live Copy con páginas que no sean Live Copy {#live-copy-with-non-live-copy-pages}
+#### Live Copy con páginas que no sean de Live Copy {#live-copy-with-non-live-copy-pages}
 
 Cuando crea una Live Copy en AEM, puede ver y navegar por la rama de Live Copy y utilizar la funcionalidad de AEM normal en la rama de Live Copy. Esto significa que usted (o un proceso) puede crear nuevos recursos (páginas o párrafos) dentro de Live Copy. Por ejemplo, un producto para una región o país en particular.
 
