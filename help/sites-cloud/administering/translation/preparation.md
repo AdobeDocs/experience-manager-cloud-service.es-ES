@@ -1,18 +1,17 @@
 ---
 title: Preparación del contenido para su traducción
 description: Aprenda a preparar el contenido para la traducción.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Copiar idioma
+role: Admin
+exl-id: afc577a2-2791-481a-ac77-468011e4302e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
-
-# Preparación del contenido para la traducción {#preparing-content-for-translation}
+# Preparación del contenido para su traducción {#preparing-content-for-translation}
 
 Por lo general, los sitios web multilingües ofrecen contenido en varios idiomas. El sitio es creado en un idioma y luego traducido a otros idiomas. Por lo general, los sitios multilingües constan de ramas de páginas, donde cada rama contiene las páginas del sitio en un idioma diferente.
 
@@ -83,7 +82,7 @@ Puede utilizar cualquiera de los dos formatos, según la estructura que haya ele
 
 1. Haga clic o pulse **Crear**. En el cuadro de diálogo de confirmación, pulse o haga clic en **Listo** para volver a la consola Sitios o en **Abrir** para abrir la copia de idioma.
 
-## Visualización del estado de las raíces de idioma {#seeing-the-status-of-language-roots}
+## Ver el estado de las raíces de los idiomas {#seeing-the-status-of-language-roots}
 
 AEM proporciona un carril **References** que muestra una lista de las raíces de idioma que se han creado.
 
