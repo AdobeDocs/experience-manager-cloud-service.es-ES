@@ -2,10 +2,9 @@
 title: Incrustación del visualizador de imágenes o vídeos de Dynamic Media en una página web
 description: Aprenda a incrustar recursos de imagen o vídeo de Dynamic Media en una página web.
 feature: Administración de activos
-role: Business Practitioner
+role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 21%
@@ -50,7 +49,7 @@ Consulte [Entrega de imágenes optimizadas para un sitio interactivo](responsive
 1. En el cuadro de diálogo **[!UICONTROL Código incrustado]**, copie todo el código en el portapapeles y, a continuación, pulse **[!UICONTROL Cerrar]**.
 1. Pegue el código incrustado en las páginas web.
 
-## Uso de HTTP/2 para enviar los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Uso de HTTP/2 para distribuir los recursos de Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. La entrega de recursos de Dynamic Media ahora puede realizarse a través de HTTP/2, lo que proporciona una mejor respuesta y tiempos de carga.
 
