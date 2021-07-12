@@ -1,18 +1,17 @@
 ---
 title: Traducción y administrador de varios sitios
 description: Aprenda a reutilizar el contenido en su proyecto y a administrar sitios web multilingües en AEM.
-feature: Administering
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administración
+role: Admin
+exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
 
-
-# Administrador de varios sitios y traducción {#msm-and-translation}
+# Traducción y administrador de varios sitios {#msm-and-translation}
 
 Las herramientas de traducción y administrador de varios sitios integradas de Adobe Experience Manager simplifican la localización del contenido.
 
@@ -23,7 +22,7 @@ Las herramientas de traducción y administrador de varios sitios integradas de A
 
 Estas dos funciones se pueden combinar para satisfacer las necesidades de los sitios web que sean [multinacionales y multilingües](#multinational-and-multilingual-sites).
 
-## Sitios multilingües y multinacionales {#multinational-and-multilingual-sites}
+## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
 Puede crear contenido de forma eficaz para sitios multinacionales y multilingües mediante el uso combinado del administrador de varios sitios y el flujo de trabajo de traducción.
 
@@ -56,5 +55,5 @@ Para casos de uso más avanzados, también se pueden usar MSM entre maestros de 
 >Para todos los casos de uso, se recomienda leer las siguientes prácticas recomendadas:
 >
 >* [Prácticas recomendadas para MSM](msm/best-practices.md)
->* [Prácticas recomendadas para la traducción](translation/best-practices.md)
+* [Prácticas recomendadas para la traducción](translation/best-practices.md)
 
