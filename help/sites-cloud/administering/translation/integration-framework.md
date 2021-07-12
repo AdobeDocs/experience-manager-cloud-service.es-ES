@@ -1,16 +1,15 @@
 ---
 title: Configuración del marco de integración de traducción
 description: Aprenda a configurar el marco de integración de traducción para integrarlo con servicios de traducción de terceros.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Copiar idioma
+role: Admin
+exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1383'
 ht-degree: 2%
 
 ---
-
 
 # Configuración del marco de integración de traducción {#configuring-the-translation-integration-framework}
 
@@ -112,7 +111,7 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asocie
 * La configuración de nube que se conecta AEM con su proveedor de traducción.
 * Marco de integración de traducción que configura los detalles de la traducción.
 
-Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para conectarse al proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
+Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
 
 Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página `/content/wknd/language-masters/en/magazine` con un marco de integración de traducción, la página `magazine` y las páginas secundarias debajo de él se traducen según el marco.
 
@@ -127,7 +126,7 @@ Asocie una página al proveedor de traducción que esté utilizando para traduci
 1. En la lista desplegable **Add Configuration**, seleccione la configuración.
 1. Toque o haga clic en **Guardar y cerrar**.
 
-### Asociación de páginas con un marco de integración de traducción {#associating-pages-with-a-translation-integration-framework}
+### Asociación de páginas a un marco de integración de traducción {#associating-pages-with-a-translation-integration-framework}
 
 Asocie una página al marco de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
