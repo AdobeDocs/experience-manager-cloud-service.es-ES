@@ -1,16 +1,15 @@
 ---
 title: Consola de información general de Live Copy
 description: Obtenga información sobre los conceptos básicos de la consola de información general de Live Copy para comprender rápidamente el estado de las Live Copies y sincronizar el contenido.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administrador de varios sitios
+role: Admin
+exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 1%
 
 ---
-
 
 # Consola de información general de Live Copy {#live-copy-overview-console}
 
@@ -22,7 +21,7 @@ La consola **Información general de Live Copy** le permite:
    * Ver propiedades de modelo y Live Copy
 * Realice acciones de despliegue.
 
-## Apertura de la información general de Live Copy {#opening-the-live-copy-overview}
+## Información general sobre la apertura de Live Copy {#opening-the-live-copy-overview}
 
 Puede abrir la Información general de Live Copy desde:
 
@@ -58,7 +57,7 @@ La **Información general de Live Copy** se puede abrir al ver las propiedades d
 
 1. Utilice **Cerrar** para salir y volver a la consola **Sitios**.
 
-## Uso de la información general de Live Copy {#using-the-live-copy-overview}
+## Información general sobre el uso de Live Copy {#using-the-live-copy-overview}
 
 La ventana **Live Copy Overview** proporciona información general sobre el estado de las Live Copies relacionadas con la página seleccionada.
 
