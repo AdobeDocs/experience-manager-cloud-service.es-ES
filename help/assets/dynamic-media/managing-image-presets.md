@@ -2,16 +2,16 @@
 title: Administración de ajustes preestablecidos de imagen
 description: '"Obtenga información sobre los ajustes preestablecidos de imagen y cómo crearlos, modificarlos y administrarlos."'
 feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
-role: Business Practitioner
+role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3653'
+source-wordcount: '3652'
 ht-degree: 10%
 
 ---
 
-# Administrar ajustes preestablecidos de imagen{#managing-image-presets}
+# Administración de ajustes preestablecidos de imagen{#managing-image-presets}
 
 Los ajustes preestablecidos de imagen permiten a Adobe Experience Manager Assets entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para la entrega de imágenes. También puede elegir los comandos de formato para que el aspecto de la imagen se optimice cuando la imagen se entregue para su visualización.
 
@@ -89,7 +89,7 @@ Puede acceder a las opciones de los componentes de proceso `Rasterize PDF/AI Ima
 
 Toque en Adobe Experience Manager en la parte superior izquierda, vaya a **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. En la página Modelos de flujo de trabajo , seleccione **[!UICONTROL Recurso de actualización de DAM]** y, en la barra de herramientas, pulse **[!UICONTROL Editar]**. En la página de flujo de trabajo de recursos de actualización de DAM , pulse dos veces el componente de proceso `Rasterize PDF/AI Image Preview Rendition` para abrir su cuadro de diálogo Propiedades de los pasos .
 
-#### Rasterizar las opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterizar opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar el flujo de trabajo de PDF o AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -108,7 +108,7 @@ La anchura máxima y la altura máxima limitan la resolución a la que se debe r
 
 El componente de proceso `Rasterize PDF/AI Image Preview Rendition` tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes grandes pueden desbordarse la memoria proporcionada a la JVM (máquina virtual Java™). Se debe tener cuidado de proporcionar a la JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, con cada uno con el potencial de crear una imagen al tamaño máximo configurado.
 
-### Formato de archivo de InDesign (INDD) {#indesign-indd-file-format}
+### Formato del archivo InDesign (INDD) {#indesign-indd-file-format}
 
 Si tiene intención de admitir la ingesta de archivos INDD para poder generar una representación dinámica de este formato de archivo, revise la siguiente información antes de crear ajustes preestablecidos de imagen.
 
@@ -293,7 +293,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
  </tbody>
 </table>
 
-#### Opciones de pestaña avanzadas {#advanced-tab-options}
+#### Opciones de ficha avanzadas {#advanced-tab-options}
 
 <table>
  <tbody>
