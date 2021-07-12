@@ -1,16 +1,15 @@
 ---
 title: 'Variaciones: Crear contenido de fragmentos'
 description: Comprender cómo las variaciones pueden hacer que el contenido sin encabezado en AEM sea aún más flexible, ya que le permite crear contenido para el fragmento y, a continuación, crear variaciones de dicho contenido según el propósito.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de contenido
+role: User
+exl-id: af05aae6-d535-4007-ba81-7f41213ff152
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2257'
 ht-degree: 13%
 
 ---
-
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
@@ -195,7 +194,7 @@ Por ejemplo:
 
 ![estadísticas](assets/cfm-variations-04.png)
 
-### Cargar contenido {#uploading-content}
+### Carga de contenido {#uploading-content}
 
 Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto, preparado en un editor externo y añadirlo directamente al fragmento.
 
@@ -283,7 +282,7 @@ Para realizar anotaciones en un fragmento:
 
    ![anotar](assets/cfm-variations-07c.png)
 
-### Visualización, edición y eliminación de anotaciones {#viewing-editing-deleting-annotations}
+### Visualización, Edición, Eliminación De Anotaciones {#viewing-editing-deleting-annotations}
 
 Anotaciones:
 
