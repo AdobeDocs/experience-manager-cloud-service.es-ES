@@ -2,9 +2,9 @@
 title: Invalidación de la caché de CDN (Red de entrega de contenido) mediante Dynamic Media
 description: '"Aprenda a invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido) para permitirle actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché".'
 feature: Administración de activos
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Consulte también [Información general del almacenamiento en caché en Dynamic 
    | **[!UICONTROL Añadir URL]** | Agregue o pegue manualmente rutas de URL completas a los recursos de Dynamic Media cuya caché de CDN desee invalidar. Utilice esta opción si no ha creado una plantilla de invalidación de CDN en ***Parte 1 de 2: Creación de una plantilla de invalidación de CDN*** y solo hay algunos recursos que invalidar.<br>**Importante:** Cada URL que agregue debe estar en su propia línea.<br>Puede invalidar hasta 1000 direcciones URL a la vez. Si el número de direcciones URL en el campo de texto **[!UICONTROL Agregar URL]** es bueno a 1000, no puede tocar **[!UICONTROL Siguiente]**. En estos casos, debe pulsar **[!UICONTROL X]** a la derecha de un recurso seleccionado o una URL añadida manualmente para eliminarlo de la lista de invalidación.<br>Especifique las direcciones URL para los cultivos inteligentes de imagen en la plantilla Invalidación de CDN o en este campo  **[!UICONTROL Añadir]** URLtext . |
 
 1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Siguiente]**.
-1. En la página **[!UICONTROL Invalidación de CDN]** - **[!UICONTROL Confirmar]**, en el cuadro de lista **[!UICONTROL URL]**, verá una lista de una o más direcciones URL generadas a partir de la plantilla de invalidación de CDN creada anteriormente y los recursos que acaba de añadir.
+1. En la página **[!UICONTROL Invalidación de CDN]** - **[!UICONTROL Confirmar]**, en el cuadro de lista **[!UICONTROL URL]**, verá una lista de una o más direcciones URL generadas a partir de la plantilla de invalidación de CDN creada anteriormente y los recursos que acaba de agregar.
 
    Por ejemplo, si utiliza el ejemplo de Plantilla de invalidación de CDN que se mostró en los pasos anteriores, supongamos que ha añadido un único recurso denominado `spinset`. Al pulsar **[!UICONTROL Herramientas > Assets > Invalidación de CDN]**, se generan las siguientes cinco direcciones URL en la interfaz de usuario **[!UICONTROL Invalidación de CDN - Confirmar]**:
 
