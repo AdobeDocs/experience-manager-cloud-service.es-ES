@@ -2,9 +2,9 @@
 title: Conjuntos de giros
 description: Aprenda a trabajar con conjuntos de giros en Dynamic Media.
 feature: Conjuntos de giros
-role: Business Practitioner
+role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 12%
@@ -211,6 +211,6 @@ Si elimina la imagen que usa el Experience Manager para la miniatura reemplazán
 
 Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Conjuntos de giros de publicación {#publishing-spin-sets}
+## Publicación de conjuntos de giros {#publishing-spin-sets}
 
 Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
