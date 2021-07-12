@@ -1,16 +1,15 @@
 ---
 title: 'Metadatos: Propiedades del fragmento'
 description: Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
-feature: Content Fragments
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+feature: Fragmentos de contenido
+role: User
+exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 11%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
-
 
 # Metadatos: Propiedades del fragmento {#metadata-fragment-properties}
 
