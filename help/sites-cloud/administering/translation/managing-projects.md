@@ -1,16 +1,15 @@
 ---
 title: Administración de proyectos de traducción
 description: Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+feature: Copiar idioma
+role: Admin
+exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '3828'
+source-wordcount: '3827'
 ht-degree: 1%
 
 ---
-
 
 # Administración de proyectos de traducción {#managing-translation-projects}
 
@@ -91,7 +90,7 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
 
 1. Haga clic o pulse **Crear**.
 
-### Crear proyectos de traducción para una copia de idioma existente {#create-translation-projects-for-an-existing-language-copy}
+### Creación de proyectos de traducción para una copia de idioma existente {#create-translation-projects-for-an-existing-language-copy}
 
 1. Utilice la consola Sitios para seleccionar la página que está agregando a los proyectos de traducción.
 
@@ -285,7 +284,7 @@ Cuando se crea un proyecto utilizando el carril de referencias de una página, e
 
 ![Propiedades del proyecto de traducción](../assets/translation-project-properties.png)
 
-### Monitorización del estado de un trabajo de traducción {#monitoring-the-status-of-a-translation-job}
+### Supervisión del estado de un trabajo de traducción {#monitoring-the-status-of-a-translation-job}
 
 El mosaico de trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción, así como el número de páginas y recursos del trabajo.
 
