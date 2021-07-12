@@ -2,10 +2,9 @@
 title: Acerca de la administración de recursos de Dynamic Media
 description: Obtenga información sobre cómo trabajar con recursos de Dynamic Media.
 feature: Administración de activos
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 13%
