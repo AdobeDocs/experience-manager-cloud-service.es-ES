@@ -1,16 +1,15 @@
 ---
 title: Identificación del contenido para traducir
 description: Descubra cómo las reglas de traducción identifican el contenido que necesita traducción.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Copiar idioma
+role: Admin
+exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
-
 
 # Identificación del contenido para traducir {#identifying-content-to-translate}
 
@@ -87,7 +86,7 @@ El siguiente ejemplo traduce el contenido de todas las propiedades `text` y tamb
 </node>
 ```
 
-## Sintaxis de regla para extraer recursos de páginas {#rule-syntax-for-extracting-assets-from-pages}
+## Sintaxis de reglas para extraer recursos de páginas  {#rule-syntax-for-extracting-assets-from-pages}
 
 Utilice la siguiente sintaxis de regla para incluir recursos incrustados en componentes o a los que se hace referencia desde ellos:
 
