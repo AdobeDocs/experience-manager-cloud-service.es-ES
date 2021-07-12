@@ -1,16 +1,15 @@
 ---
 title: Traducción de contenido para sitios multilingües
 description: Obtenga información general sobre cómo traducir contenido para sitios multilingües.
-feature: Language Copy
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Copiar idioma
+role: Admin
+exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
-
 
 # Traducción de contenido para sitios multilingües {#translating-content-for-multilingual-sites}
 
