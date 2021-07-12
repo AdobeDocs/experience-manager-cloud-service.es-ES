@@ -1,16 +1,15 @@
 ---
 title: Despliegue de conflictos
 description: Obtenga información sobre cómo administrar y resolver conflictos de implementación del administrador de varios sitios.
-feature: Multi Site Manager
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: Administrador de varios sitios
+role: Admin
+exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 3%
+source-wordcount: '926'
+ht-degree: 2%
 
 ---
-
 
 # Despliegue de conflictos {#msm-rollout-conflicts}
 
@@ -44,7 +43,7 @@ En las secciones siguientes utilizamos el ejemplo de una nueva página `b`, crea
 
    * Se activa en la publicación como `/b`, junto con la página secundaria
 
-#### Antes del lanzamiento {#before-rollout}
+#### Antes de la implementación {#before-rollout}
 
 |  | Modelo antes de la implementación | Live Copy antes del lanzamiento | Publicar antes del lanzamiento |
 |---|---|---|---|
@@ -53,7 +52,7 @@ En las secciones siguientes utilizamos el ejemplo de una nueva página `b`, crea
 | Valor | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
 | Comentario |  | Creado manualmente en la rama de Live Copy | contiene el contenido de la página `child-level-1` que se creó manualmente en la rama de Live Copy |
 
-## Gestor de implementación y administración de conflictos {#rollout-manager-and-conflict-handling}
+## Gestor de implementación y gestión de conflictos {#rollout-manager-and-conflict-handling}
 
 El administrador de implementación le permite activar o desactivar la administración de conflictos.
 
@@ -61,7 +60,7 @@ Esto se realiza mediante la [configuración OSGi](/help/implementing/deploying/c
 
 AEM tiene [comportamiento predefinido cuando se ha desactivado la administración de conflictos.](#behavior-when-conflict-handling-deactivated)
 
-## Controlador de conflictos {#conflict-handlers}
+## Controladores de conflictos {#conflict-handlers}
 
 AEM utiliza controladores de conflictos para resolver cualquier conflicto de páginas que exista al implementar contenido desde un modelo a una Live Copy. Cambiar el nombre de las páginas es el método habitual (no solo) para resolver estos conflictos. Puede haber más de un controlador de conflictos en funcionamiento para permitir una selección de comportamientos diferentes.
 
@@ -94,7 +93,7 @@ Este controlador de conflicto da prioridad al modelo. Por ejemplo, la página Li
 
    * `bp-level-1` se incluye en Live Copy.
 
-#### Después del lanzamiento {#after-rollout}
+#### Después de la implementación {#after-rollout}
 
 |  | Modelo después de la implementación | Live Copy después del lanzamiento | Live Copy después del lanzamiento | Publicar después del lanzamiento |
 |---|---|---|---|---|
@@ -116,7 +115,7 @@ Los controladores de conflictos personalizados pueden:
    * **Service** Rankingdefine el orden relacionado con otros controladores de conflictos (  `service.ranking`).
       * El valor predeterminado es `0`.
 
-### Comportamiento cuando el manejo de conflictos está desactivado {#behavior-when-conflict-handling-deactivated}
+### Comportamiento cuando la administración de conflictos está desactivada {#behavior-when-conflict-handling-deactivated}
 
 Si desactiva manualmente [la gestión de conflictos,](#rollout-manager-and-conflict-handling) no AEM ninguna acción en las páginas en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
 
@@ -134,7 +133,7 @@ En este caso, Live Copy tiene prioridad. La página de modelo `/b` no se copia y
 
    Sigue igual.
 
-#### Después del lanzamiento {#after-rollout-no-conflict}
+#### Después de la implementación {#after-rollout-no-conflict}
 
 |  | Modelo después de la implementación | Live Copy después del lanzamiento | Publicar después del lanzamiento |
 |---|---|---|---|
