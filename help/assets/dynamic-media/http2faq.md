@@ -3,10 +3,10 @@ title: Preguntas frecuentes sobre la entrega de contenido HTTP2
 description: Obtenga información sobre la entrega de contenido HTTP2.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 3%
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
    Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo denominado **Published Server Name**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+   Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **Published Server Name**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
 ## ¿Cuál es el proceso para habilitar HTTP/2 para mi cuenta de Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
    Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo denominado **[!UICONTROL Published Server Name]**.
+   Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**.
 
    * Compruebe que utiliza HTTPS seguro para solicitudes de medios enriquecidos.
    * Compruebe que está utilizando la CDN a través de la Adobe y que no se administra con una relación directa.
@@ -68,7 +68,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
    Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+   Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
    1. La asistencia técnica le añade a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
    1. Cuando el Adobe esté listo para gestionar su solicitud, el Servicio de atención al cliente se pondrá en contacto con usted para coordinar la transición y establecer una fecha objetivo.
