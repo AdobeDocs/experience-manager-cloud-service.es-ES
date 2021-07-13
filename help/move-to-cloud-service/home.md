@@ -2,10 +2,10 @@
 title: El paso de AEM as a Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager as a Cloud Service El paso de AEM as a Cloud Service
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 64%
+source-wordcount: '694'
+ht-degree: 61%
 
 ---
 
@@ -27,10 +27,10 @@ Con AEM as a Cloud Service, los equipos pueden centrarse en la innovación en lu
 
 El recorrido de transición a Cloud Service incluye las siguientes fases:
 
-* Preparación
-* Implementación
+* [Preparación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
+* [Implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
 * Go Live
-* Publicar Go Live
+* [Publicar Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 Para una transición exitosa y sin problemas, se debe asegurar una planificación adecuada y atenerse a las prácticas recomendadas descritas en esta guía.
 
@@ -43,7 +43,7 @@ La figura siguiente muestra una representación pictórica del recorrido de tran
 
 Cloud Acceleration Manager es una aplicación basada en la nube diseñada para guiar a sus equipos de TI a lo largo del recorrido de transición, desde la planificación hasta la puesta en marcha del Cloud Service. Configure sus equipos para una migración correcta con prácticas recomendadas por el Adobe, sugerencias, documentación y herramientas que le ayudarán en cada fase del recorrido a AEM como Cloud Service.
 
-Consulte Introducción a Cloud Acceleration Manager para iniciar el recorrido de migración.
+Consulte [Introducción a Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en) para iniciar el recorrido de migración.
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
 
