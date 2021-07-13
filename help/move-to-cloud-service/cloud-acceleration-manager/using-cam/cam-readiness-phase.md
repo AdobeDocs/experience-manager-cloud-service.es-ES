@@ -1,17 +1,17 @@
 ---
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 177e24d20bc97e4a7f2be749771463d7e79005c4
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 4%
+source-wordcount: '670'
+ht-degree: 5%
 
 ---
 
 
 # Fase de preparación en Cloud Acceleration Manager {#readiness-phase-cam}
 
-Una vez que haya creado un proyecto en Cloud Acceleration Manager, ahora puede empezar a ejecutar las herramientas disponibles en la fase de preparación.
+Una vez que haya creado un proyecto en Cloud Acceleration Manager, ahora puede iniciar la evaluación de su implementación de AEM actual en la fase de preparación.
 
 La fase de preparación incluye:
 
@@ -39,7 +39,10 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. Siga estos pasos para descargar el Analizador de prácticas recomendadas (BPA) y ejecutarlo en un clon de su sistema AEM.
+1. Siga estos pasos para descargar el Analizador de prácticas recomendadas (BPA).
+
+   >[!NOTE]
+   >Para evitar un impacto en las instancias críticas para el negocio, se recomienda ejecutar BPA en un entorno de Author lo más cercano posible al entorno de producción en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de Author de producción.
 
    1. Vaya al portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) y descargue el Analizador de prácticas recomendadas como archivo zip.
 
@@ -82,7 +85,7 @@ La tarjeta **Propiedades del informe** proporciona información sobre las propie
 
 #### Información general del informe {#report-overview}
 
-Esta tarjeta **Información general de informe** proporciona los resultados del informe, como se muestra en la figura siguiente.
+Esta tarjeta **Información general de informe** proporciona los resultados del informe y los niveles de gravedad que se aplican al evaluar la preparación para pasar a AEM como Cloud Service, como se muestra en la figura siguiente.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -123,14 +126,14 @@ Puede revisar la siguiente información desde esta pestaña:
 
 Siga esta sección para explorar la tarjeta de actividad Planificación y configuración .
 
-1. Haga clic en el botón **View** de la tarjeta **Planning And Setup** que proporciona todo el contenido relevante que le ayudará a planificar y configurar su migración AEM.
+1. Haga clic en el botón **View** de la tarjeta **Planning And Setup**. Esta tarjeta proporciona todo el contenido relevante que le ayudará a planificar y configurar su migración AEM.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. Se muestra un carrusel de contenido con información relevante para esta fase del recorrido de migración.
+1. Un carrusel de contenido muestra toda la información relevante para esta fase del recorrido de migración.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso, utilizando la [fase de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
+Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el siguiente paso en la [fase de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en).
