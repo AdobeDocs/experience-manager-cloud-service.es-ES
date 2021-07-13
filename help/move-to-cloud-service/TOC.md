@@ -5,10 +5,10 @@ breadcrumb-title: Mover guía
 user-guide-description: Comprender el viaje de transición a Cloud Service
 feature: Implementación
 role: Architect, Developer
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 54%
+source-wordcount: '127'
+ht-degree: 53%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 54%
 + Fases del viaje de Transición {#phases}
    + [Preparación](/help/move-to-cloud-service/migration-readiness.md)
    + [Implementación](/help/move-to-cloud-service/migration-implementation.md)
+   + [Go Live](/help/move-to-cloud-service/migration-go-live.md)
    + [Publicar Go Live](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
    + Introducción a Cloud Acceleration Manager {#introduction-cam}
