@@ -1,7 +1,7 @@
 ---
 title: Fase posterior a la migración
 description: Fase posterior a la migración
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 93%
@@ -18,7 +18,6 @@ Las siguientes herramientas están disponibles para solucionar los problemas de 
 * **Developer Console**
 * **CRXDE Lite**
 * **Administración de registros**
-
 
 ## Developer Console {#developer-console}
 
