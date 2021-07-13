@@ -1,10 +1,7 @@
 ---
 title: Introducción a Cloud Acceleration Manager
 description: Esta página proporciona información general sobre cómo utilizar y empezar a usar Cloud Acceleration Manager.
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 3%
@@ -90,6 +87,6 @@ Siga los pasos a continuación para eliminar el proyecto:
 
 1. Haga clic en **Delete** para confirmar el paso.
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Una vez que haya aprendido a iniciar sesión en Cloud Acceleration Manager y a crear un proyecto, ya está listo para pasar a revisar el paso siguiente, Uso de la fase de preparación.
