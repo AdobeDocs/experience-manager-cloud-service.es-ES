@@ -1,16 +1,15 @@
 ---
-title: Entrega de recursos de Dynamic Media
+title: Enviar recursos de Dynamic Media
 description: Con Dynamic Media, tiene varias opciones para enviar los recursos de Dynamic Media, tanto vídeo como imágenes, a su sitio web.
-translation-type: tm+mt
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '108'
-ht-degree: 19%
+ht-degree: 6%
 
 ---
 
 
-# Entrega de recursos de Dynamic Media{#delivering-dynamic-media-assets}
+# Enviar recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
 El modo de distribuir los recursos de Dynamic Media (vídeos e imágenes) depende de cómo se implemente el sitio web.
 
@@ -21,5 +20,5 @@ Con Dynamic Media, tiene varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Agregar recursos de Dynamic Media a las páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Agregar recursos de Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
