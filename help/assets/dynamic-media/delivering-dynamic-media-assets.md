@@ -1,17 +1,17 @@
 ---
-title: Envío de recursos de Dynamic Media
+title: Enviar recursos de Dynamic Media
 description: Obtenga información sobre cómo distribuir recursos de Dynamic Media.
 feature: Administración de activos
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 6%
+ht-degree: 2%
 
 ---
 
-# Envío de recursos de Dynamic Media{#delivering-dynamic-media-assets}
+# Enviar recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
 El modo de distribuir los recursos de Dynamic Media (vídeos e imágenes) depende de cómo se implemente el sitio web.
 
@@ -30,15 +30,15 @@ Con Dynamic Media, tiene varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Adición de recursos de Dynamic Media a páginas web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md)
-* [Activar la protección de los vínculos interactivos de Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
-* [Vinculación de URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
-* [Entrega de imágenes optimizadas para un sitio interactivo](/help/assets/dynamic-media/responsive-site.md)
+* [Agregar recursos de Dynamic Media a páginas web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Incrustar el visualizador de imágenes o vídeos en una página web](/help/assets/dynamic-media/embed-code.md)
+* [Activar la protección de los vínculos interactivos en Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
+* [Vincular URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [Entregar imágenes optimizadas para un sitio interactivo](/help/assets/dynamic-media/responsive-site.md)
 * [Entrega HTTP2 de contenido](/help/assets/dynamic-media/http2faq.md)
-* [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Invalidación de la caché de CDN mediante Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-* [Uso de conjuntos de reglas para transformar direcciones URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
+* [Invalidar la caché de CDN mediante Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Invalidar la caché de CDN mediante Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [Usar conjuntos de reglas para transformar direcciones URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
