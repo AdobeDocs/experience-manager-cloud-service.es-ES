@@ -4,10 +4,10 @@ description: Aprenda a aplicar ajustes preestablecidos de imagen en Dynamic Medi
 feature: Ajustes preestablecidos de imagen, visualizadores, representaciones
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 7%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
 **Para aplicar ajustes preestablecidos de imagen de Dynamic Media:**
 
-1. Abra el recurso y, en el carril izquierdo, pulse la lista desplegable y, a continuación, pulse **[!UICONTROL Representaciones]**.
+1. Abra el recurso y, en el carril izquierdo, seleccione la lista desplegable y, a continuación, seleccione **[!UICONTROL Representaciones]**.
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 1. Realice una de las acciones siguientes:
 
    * Para previsualizar el ajuste preestablecido de imagen, seleccione una representación dinámica.
-   * Para mostrar la ventana emergente, pulse **[!UICONTROL URL]**, **[!UICONTROL Incrustar]** o **[!UICONTROL RESS]**.
+   * Para mostrar la ventana emergente, seleccione **[!UICONTROL URL]**, **[!UICONTROL Incrustar]** o **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >
