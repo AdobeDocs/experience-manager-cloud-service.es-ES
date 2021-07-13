@@ -2,9 +2,9 @@
 title: 'Adición de un certificado SSL: administración de certificados SSL'
 description: 'Adición de un certificado SSL: administración de certificados SSL'
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Un certificado tarda unos días en proporcionarse y se recomienda que se aprovisione el certificado incluso con meses de antelación. Consulte [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obtener más información.
 
-## Formato de certificado {#certificate-format}
+## Formato del certificado {#certificate-format}
 
 Los archivos SSL deben tener formato PEM para poder instalarse en Cloud Manager. Las extensiones de archivo comunes que están dentro del formato PEM incluyen `.pem,` .`crt`,  `.cer`, y  `.cert`.
 
@@ -38,7 +38,8 @@ Siga los pasos a continuación para convertir el formato de sus archivos SSL a P
 
 * Un usuario debe tener la función Propietario empresarial o Administrador de implementación para poder instalar un certificado SSL en Cloud Manager.
 
-* En cualquier momento dado, Cloud Manager permitirá un máximo de 10 certificados SSL que se pueden asociar con uno o más entornos en todo el programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario de Cloud Manager permitirá instalar hasta 50 certificados SSL en el programa con esta restricción.
+* En cualquier momento dado, Cloud Manager permitirá un máximo de 10 certificados SSL que se pueden asociar con uno o más entornos en todo el programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario de Cloud Manager permitirá instalar hasta 50 certificados SSL en el programa con esta restricción. Normalmente, un certificado puede abarcar varios dominios (hasta 100 SANs), por lo que puede considerar la posibilidad de agrupar varios dominios en el mismo certificado para permanecer dentro de este límite.
+
 
 ## Adición de un certificado {#adding-a-cert}
 
@@ -68,7 +69,7 @@ Los tres campos no son opcionales y deben incluirse.
 
 ## Errores de certificado {#certificate-errors}
 
-### Orden de certificado correcto {#correct-certificate-order}
+### Orden de certificados correcto {#correct-certificate-order}
 
 El motivo más común para que una implementación de certificado falle es que los certificados intermedios o de cadena no están en el orden correcto. En concreto, los archivos de certificado intermedios deben finalizar con el certificado raíz o el certificado más cercano a la raíz y estar en orden descendente desde el certificado `main/server` hasta la raíz.
 
