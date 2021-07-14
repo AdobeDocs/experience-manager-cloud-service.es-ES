@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1189'
 ht-degree: 4%
 
 ---
@@ -200,4 +200,4 @@ Para solucionar problemas de replicación, vaya a las colas de replicación en l
 ![](assets/publish-logs.png "LogsLogs")
 
 Si no se pudo publicar el contenido, toda la publicación se revierte desde el servicio de publicación de AEM.
-En ese caso, las colas deben revisarse para identificar qué elementos causaron la cancelación de la publicación. Al hacer clic en una cola que muestra un estado rojo, se mostraría la cola con elementos pendientes, desde la cual se pueden borrar todos o uno de los elementos si es necesario.
+En ese caso, la cola principal editable mostrará un estado rojo y debe revisarse para identificar qué elemento(s) provocó la cancelación de la publicación. Al hacer clic en esa cola, se mostrarán los elementos pendientes, desde los cuales se puede borrar un solo artículo o todos los elementos si es necesario.
