@@ -1,22 +1,22 @@
 ---
-title: Solución de problemas de Dynamic Media
+title: Resolución de problemas de Dynamic Media
 description: Sugerencias de solución de problemas al usar Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 1%
 
 ---
 
-# Solución de problemas de Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
+# Resolución de problemas de Dynamic Media {#troubleshooting-dynamic-media-scene-mode}
 
 En el siguiente tema se describe la solución de problemas para Dynamic Media.
 
 ## Nueva configuración de Dynamic Media {#new-dm-config}
 
-Consulte [Solución de problemas de una nueva configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
+Consulte [Resolución de problemas de una nueva configuración de Dynamic Media](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config).
 
 ## General (Todos los recursos) {#general-all-assets}
 
@@ -179,11 +179,11 @@ Si tiene problemas con los visualizadores, consulte las siguientes directrices p
   <tr>
    <td>Los ajustes preestablecidos de visor no se publican</td>
    <td><p>Continúe con la página de diagnóstico del administrador de muestras: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe los valores calculados. Cuando funciona correctamente, verá:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si quedan recursos desactivados, haga clic en cualquiera de los botones <strong>List all Unactivate Assets</strong> para ver los detalles.</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos desactivados permanecen, seleccione cualquiera de los botones <strong>List all Unactivate Assets</strong> para ver los detalles.</p> </td>
    <td>
     <ol>
      <li>Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleccione todos los ajustes preestablecidos de visor y haga clic en <strong>Publicar</strong>.</li>
+     <li>Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione <strong>Publicar</strong>.</li>
      <li>Vuelva al administrador de muestras y observe que el recuento de recursos no activados es ahora cero.</li>
     </ol> </td>
   </tr>
