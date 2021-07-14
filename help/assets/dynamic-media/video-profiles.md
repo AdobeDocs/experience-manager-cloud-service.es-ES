@@ -4,10 +4,10 @@ description: Dynamic Media ya viene con un perfil de codificación de vídeo ada
 feature: Administración de recursos,Perfiles de vídeo,Representaciones
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3665'
-ht-degree: 10%
+source-wordcount: '3661'
+ht-degree: 7%
 
 ---
 
@@ -27,15 +27,15 @@ A continuación se indican otros factores que determinan la calidad de los víde
 
 Consulte [Prácticas recomendadas para la codificación de vídeo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-Consulte también [Prácticas recomendadas para organizar los recursos digitales para utilizar perfiles de procesamiento](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consulte también [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar Perfiles de procesamiento](/help/assets/dynamic-media/best-practices-for-file-management.md).
 
 >[!NOTE]
 >
->Para generar los metadatos de un vídeo y las miniaturas de imágenes de vídeo asociadas, el propio vídeo debe pasar por el proceso de codificación en Dynamic Media. En Adobe Experience Manager, el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]** codifica el vídeo si ha habilitado Dynamic Media y ha configurado Cloud Services de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si ha habilitado Dynamic Media y ha configurado Cloud Services de vídeo, el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]** surte efecto automáticamente al cargar un vídeo. (Si no utiliza Dynamic Media, el flujo de trabajo **[!UICONTROL DAM Update Asset]** tiene efecto).
+>Para generar los metadatos de un vídeo y las miniaturas de imágenes de vídeo asociadas, el propio vídeo debe pasar por el proceso de codificación en Dynamic Media. En Adobe Experience Manager, el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]** codifica el vídeo si ha habilitado Dynamic Media y ha configurado Cloud Services de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Monitorización de la codificación de vídeo y progreso de publicación de YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si ha habilitado Dynamic Media y ha configurado Cloud Services de vídeo, el flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]** surte efecto automáticamente al cargar un vídeo. (Si no utiliza Dynamic Media, el flujo de trabajo **[!UICONTROL DAM Update Asset]** tiene efecto).
 >
->Los metadatos son útiles cuando se buscan recursos. Las miniaturas son imágenes de vídeo estáticas que se generan durante la codificación. El sistema de Experience Manager los necesita y los utiliza en la interfaz de usuario para ayudarle a identificar visualmente los vídeos en la vista Tarjetas, la vista Resultados de la búsqueda y la vista Lista de recursos. Puede ver las miniaturas generadas al pulsar el icono Representaciones (paleta de un pintor) de un vídeo codificado.
+>Los metadatos son útiles cuando se buscan recursos. Las miniaturas son imágenes de vídeo estáticas que se generan durante la codificación. El sistema de Experience Manager los necesita y los utiliza en la interfaz de usuario para ayudarle a identificar visualmente los vídeos en la vista Tarjetas, la vista Resultados de la búsqueda y la vista Lista de recursos. Puede ver las miniaturas generadas al seleccionar el icono Representaciones (la paleta de un pintor) de un vídeo codificado.
 
-Cuando haya terminado de crear el perfil de vídeo, debe aplicarlo a una o varias carpetas. Consulte [Aplicación de un perfil de vídeo a las carpetas](#applying-a-video-profile-to-folders).
+Cuando haya terminado de crear el perfil de vídeo, debe aplicarlo a una o varias carpetas. Consulte [Aplicar un perfil de vídeo a las carpetas](#applying-a-video-profile-to-folders).
 
 Para definir parámetros de procesamiento avanzados para otros tipos de recursos, consulte [Configuración del procesamiento de recursos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
@@ -112,13 +112,13 @@ Adobe Sensei está limitado a 9000 fotogramas. Es decir, cinco minutos a 30 FPS.
 
 Para utilizar el recorte inteligente para el vídeo, se crea un perfil de codificación de vídeo adaptable o progresivo. Como parte de su perfil, utilice la herramienta **[!UICONTROL Smart Crop Ratio]** para seleccionar relaciones de aspecto predefinidas. Por ejemplo, después de definir los ajustes preestablecidos de codificación de vídeo, puede añadir una definición de &quot;Horizontal móvil&quot; con una relación de aspecto de 16x9 y una definición de &quot;Vertical móvil&quot; con una relación de aspecto de 9x16. Otros aspectos o relaciones de recorte desde los que puede elegir incluyen 1x1, 4x3 y 4x5.
 
-![Edición de perfiles de codificación de vídeo con recorte inteligente](assets/edit-smart-crop-video2.png)
+![Edición de un perfil de codificación de vídeo con recorte inteligente](assets/edit-smart-crop-video2.png)
 
 Puede activar o desactivar el recorte inteligente de vídeo en el perfil de vídeo mediante el control deslizante situado a la derecha de **[!UICONTROL Proporción de recorte inteligente]** en la interfaz de usuario.
 
 Después de crear y guardar el perfil de vídeo, puede aplicarlo a las carpetas que desee.
 
-Consulte [Aplicación de perfiles de vídeo a carpetas específicas](#applying-video-profiles-to-specific-folders) o [Aplicación global de un perfil de vídeo](#applying-a-video-profile-globally).
+Consulte [Aplicar perfiles de vídeo a carpetas específicas](#applying-video-profiles-to-specific-folders) o [Aplicar un perfil de vídeo globalmente](#applying-a-video-profile-globally).
 
 Consulte también [Recorte inteligente para imágenes](image-profiles.md).
 
@@ -151,12 +151,12 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 
 **Para crear un perfil de vídeo para flujo adaptable**,
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
-1. Toque **[!UICONTROL Crear]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione **[!UICONTROL Crear]**.
 1. Introduzca un nombre y una descripción para el perfil.
-1. En la página Crear/Editar ajustes preestablecidos de codificación de vídeo , pulse **[!UICONTROL Agregar ajuste preestablecido de codificación de vídeo]**.
+1. En la página Crear/Editar ajustes preestablecidos de codificación de vídeo , seleccione **[!UICONTROL Agregar ajuste preestablecido de codificación de vídeo]**.
 1. En la pestaña **[!UICONTROL Básico]**, configure las opciones de vídeo y audio.
-Pulse el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
+Seleccione el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 1. Bajo el encabezado Tamaño del vídeo, asegúrese de que **[!UICONTROL Mantener relación de aspecto]** está marcada.
 1. Establezca la resolución del tamaño del fotograma de vídeo en píxeles. Utilice el valor **[!UICONTROL Auto]** para escalar automáticamente para que coincida con la proporción de aspecto del origen (relación ancho-alto). Por ejemplo, Automático x 480 o 640 x Automático.
 
@@ -164,16 +164,16 @@ Pulse el icono de información situado junto a cada opción para obtener más de
 
    * En el campo **[!UICONTROL Width]**, introduzca **[!UICONTROL auto]**. En el campo **[!UICONTROL Height]**, introduzca un valor en píxeles.
 
-   * Para ayudarle a visualizar el tamaño del vídeo, pulse el icono Información (i) a la derecha de **[!UICONTROL Altura]** para abrir la página Calculadora de tamaño. Utilice **[!UICONTROL Calculadora de tamaño]** para establecer las dimensiones de vídeo (representadas por el cuadro azul) que desee. Toque **[!UICONTROL X]** en la esquina superior derecha cuando haya terminado.
+   * Para ayudarle a visualizar el tamaño del vídeo, seleccione el icono Información (i) a la derecha de **[!UICONTROL Altura]** para abrir la página Calculadora de tamaño. Utilice **[!UICONTROL Calculadora de tamaño]** para establecer las dimensiones de vídeo (representadas por el cuadro azul) que desee. Seleccione **[!UICONTROL X]** en la esquina superior derecha cuando haya terminado.
 
-1. (Opcional) Pulse la pestaña **[!UICONTROL Avanzado]** y asegúrese de que la casilla **[!UICONTROL Usar valores predeterminados]** está seleccionada (recomendada). También puede modificar la configuración avanzada de vídeo y audio.
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
+1. (Opcional) Seleccione la pestaña **[!UICONTROL Advanced]** y asegúrese de que la casilla **[!UICONTROL Use Default Values]** está seleccionada (recomendado). También puede modificar la configuración avanzada de vídeo y audio.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
 1. Realice una de las acciones siguientes:
    * Repita los pasos 4-10 para crear más ajustes preestablecidos de codificación. (El flujo de vídeo adaptable requiere más de un ajuste preestablecido de vídeo).
    * Continúe con el paso siguiente.
 
 1. (Opcional) Para agregar un recorte inteligente de vídeo a los vídeos a los que se aplica este perfil, haga lo siguiente:
-   * En la página Editar perfil de vídeo , a la derecha del encabezado Proporción de recorte inteligente , pulse **[!UICONTROL Agregar nuevo]**.
+   * En la página Editar perfil de vídeo , a la derecha del encabezado Proporción de recorte inteligente , seleccione **[!UICONTROL Agregar nuevo]**.
    * En el campo Nombre , escriba un nombre para la proporción de recorte que le ayudará a identificarla fácilmente.
    * En la lista desplegable **[!UICONTROL Crop Ratio]**, seleccione la proporción que desee utilizar.
 
@@ -182,7 +182,7 @@ Pulse el icono de información situado junto a cada opción para obtener más de
    * Siga agregando nuevas relaciones de recorte según sea necesario.
    * Continúe con el paso siguiente.
 
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** de nuevo para guardar el perfil.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** de nuevo para guardar el perfil.
 
 Ahora puede aplicar el perfil a las carpetas que contienen vídeos. Consulte [Aplicación de un perfil de vídeo a carpetas](#applying-a-video-profile-to-folders) o [Aplicación global de un perfil de vídeo](#applying-a-video-profile-globally).
 
@@ -200,25 +200,25 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 
 **Para crear un perfil de vídeo para flujo progresivo:**
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
-1. Toque **[!UICONTROL Crear]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione **[!UICONTROL Crear]**.
 1. Introduzca un nombre y una descripción para el perfil.
-1. En la página Crear/Editar ajustes preestablecidos de codificación de vídeo , pulse **[!UICONTROL Agregar ajuste preestablecido de codificación de vídeo]**.
+1. En la página Crear/Editar ajustes preestablecidos de codificación de vídeo , seleccione **[!UICONTROL Agregar ajuste preestablecido de codificación de vídeo]**.
 1. En la pestaña **[!UICONTROL Básico]**, configure las opciones de vídeo y audio.
-Pulse el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
+Seleccione el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 1. (Opcional) En el encabezado Tamaño del vídeo, desmarque **[!UICONTROL Mantener relación de aspecto]**.
 1. Haga lo siguiente:
    * En el campo **[!UICONTROL Width]**, introduzca **[!UICONTROL auto]**.
    * En el campo **[!UICONTROL Height]**, introduzca un valor en píxeles.
-Para ayudarle a visualizar el tamaño del vídeo, pulse el icono de información Altura para abrir la página **[!UICONTROL Calculadora de tamaño]**. Utilice la página **[!UICONTROL Calculadora de tamaño]** para definir el tamaño del vídeo (cuadro azul) como desee. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, pulse **[!UICONTROL X]**.
+Para ayudarle a visualizar el tamaño del vídeo, seleccione el icono de información Altura para abrir la página **[!UICONTROL Calculadora de tamaño]**. Utilice la página **[!UICONTROL Calculadora de tamaño]** para definir el tamaño del vídeo (cuadro azul) como desee. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, seleccione **[!UICONTROL X]**.
 1. (Opcional) Realice una de las siguientes acciones:
 
-   * Pulse la pestaña **[!UICONTROL Advanced]** y asegúrese de que la casilla **[!UICONTROL Use Default Values]** está seleccionada (recomendado).
+   * Seleccione la pestaña **[!UICONTROL Advanced]** y asegúrese de que la casilla **[!UICONTROL Use Default Values]** está seleccionada (recomendado).
 
    * Desactive la casilla de verificación **[!UICONTROL Usar valores predeterminados]** y especifique la configuración de vídeo y audio que desee.
-Pulse el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
+Seleccione el icono de información situado junto a cada opción para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
 1. Realice una de las acciones siguientes:
 
    * Repita los pasos 4-9 para crear más ajustes preestablecidos de codificación.
@@ -226,7 +226,7 @@ Pulse el icono de información situado junto a cada opción para obtener más de
 
 1. (Opcional) Para agregar un recorte inteligente de vídeo a los vídeos a los que se aplica este perfil, haga lo siguiente:
 
-   * En la página Editar perfil de vídeo , a la derecha del encabezado Proporción de recorte inteligente , pulse **[!UICONTROL Agregar nuevo]**.
+   * En la página Editar perfil de vídeo , a la derecha del encabezado Proporción de recorte inteligente , seleccione **[!UICONTROL Agregar nuevo]**.
    * En el campo Nombre, escriba un nombre para la proporción de recorte que le ayudará a identificarla fácilmente.
    * En la lista desplegable **[!UICONTROL Crop Ratio]**, seleccione la proporción que desee utilizar.
 
@@ -235,17 +235,17 @@ Pulse el icono de información situado junto a cada opción para obtener más de
    * Siga agregando nuevas relaciones de recorte según sea necesario.
    * Continúe con el paso siguiente.
 
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** para almacenar el perfil.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el perfil.
 
-Ahora puede aplicar el perfil a las carpetas que contienen vídeos. Consulte [Aplicación de un perfil de vídeo a carpetas](#applying-a-video-profile-to-folders) o [Aplicación global de un perfil de vídeo](#applying-a-video-profile-globally).
+Ahora puede aplicar el perfil a las carpetas que contienen vídeos. Consulte [Aplicar un perfil de vídeo a las carpetas](#applying-a-video-profile-to-folders) o [Aplicar un perfil de vídeo globalmente](#applying-a-video-profile-globally).
 
-## Uso de parámetros de codificación de vídeo personalizados {#using-custom-added-video-encoding-parameters}
+## Usar parámetros de codificación de vídeo personalizados {#using-custom-added-video-encoding-parameters}
 
 Puede editar un perfil de codificación de vídeo existente para aprovechar los parámetros avanzados de codificación de vídeo que no se encuentran en la interfaz de usuario al crear o editar un perfil de vídeo en Experience Manager. Puede agregar de forma personalizada uno o más parámetros avanzados, como minBitrate y maxBitrate, a su perfil existente.
 
 **Para utilizar parámetros de codificación de vídeo personalizados:**
 
-1. Pulse el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Seleccione el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. En la página CRXDE Lite, en el panel Explorador de la izquierda, vaya a lo siguiente:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -297,15 +297,15 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Cerca de la esquina inferior derecha de la página, pulse **[!UICONTROL Agregar]**.
+1. Cerca de la esquina inferior derecha de la página, seleccione **[!UICONTROL Agregar]**.
 1. Realice una de las acciones siguientes:
 
    * Repita los pasos 3 y 4 para agregar otro parámetro al perfil de codificación de vídeo.
-   * Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Guardar todo]**.
+   * Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Guardar todo]**.
 
-1. En la esquina superior izquierda de la página CRXDE Lite, pulse el icono **[!UICONTROL Back Home]** para volver al Experience Manager.
+1. En la esquina superior izquierda de la página CRXDE Lite, seleccione el icono **[!UICONTROL Back Home]** para volver al Experience Manager.
 
-### Edición de un perfil de vídeo {#editing-a-video-encoding-profile}
+### Editar un perfil de vídeo {#editing-a-video-encoding-profile}
 
 Puede editar cualquier perfil de vídeo que haya creado para agregar, editar o eliminar ajustes preestablecidos de vídeo dentro de ese perfil.
 
@@ -317,39 +317,39 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 
 **Para editar un perfil de vídeo:**
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. En la página Perfiles de vídeo , marque un nombre de perfil de vídeo.
-1. En la barra de herramientas, pulse **[!UICONTROL Editar]**.
+1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 1. En la página Perfil de codificación de vídeo , edite el nombre y la descripción como desee.
 1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada.
-Pulse el icono de información para ver una descripción del flujo adaptable. (Si está editando un perfil de vídeo progresivo, no active esta casilla de verificación).
+Seleccione el icono de información para una descripción del flujo adaptable. (Si está editando un perfil de vídeo progresivo, no active esta casilla de verificación).
 1. En el encabezado Ajustes preestablecidos de codificación de vídeo , agregue, edite o elimine los ajustes preestablecidos de codificación de vídeo que conforman el perfil.
 
-   Pulse el icono de información situado junto a cada opción en las pestañas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]** para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
+   Seleccione el icono de información situado junto a cada opción en las pestañas **[!UICONTROL Básico]** y **[!UICONTROL Avanzado]** para obtener más descripciones o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
-### Copia de un perfil de vídeo {#copying-a-video-encoding-profile}
+### Copiar un perfil de vídeo {#copying-a-video-encoding-profile}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. En la página Perfiles de vídeo , marque un nombre de perfil de vídeo.
-1. En la barra de herramientas, pulse **[!UICONTROL Copiar]**.
+1. En la barra de herramientas, seleccione **[!UICONTROL Copiar]**.
 1. En la página Perfil de codificación de vídeo , introduzca un nuevo nombre para el perfil.
-1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada. Pulse el icono de información para ver una descripción del flujo adaptable. (Si está copiando un perfil de vídeo progresivo, no active la casilla de verificación).
+1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada. Seleccione el icono de información para una descripción del flujo adaptable. (Si está copiando un perfil de vídeo progresivo, no active la casilla de verificación).
 
    En Dynamic Media: modo híbrido, si un ajuste preestablecido de vídeo WebM forma parte del perfil de vídeo, no es posible **[!UICONTROL Codificar para flujo adaptable]** porque todos los ajustes preestablecidos deben ser MP4.
 1. En el encabezado Ajustes preestablecidos de codificación de vídeo , agregue, edite o elimine los ajustes preestablecidos de codificación de vídeo que conforman el perfil.
 
-   Pulse el icono de información situado junto a cada opción en las pestañas Básico y Avanzado para ver la configuración y las descripciones recomendadas.
+   Seleccione el icono de información situado junto a cada opción en las pestañas Básico y Avanzado para ver la configuración y las descripciones recomendadas.
 
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
-### Eliminación de un perfil de vídeo {#deleting-a-video-encoding-profile}
+### Eliminar un perfil de vídeo {#deleting-a-video-encoding-profile}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. En la página Perfiles de vídeo , marque uno o varios nombres de perfil de vídeo.
-1. En la barra de herramientas, pulse **[!UICONTROL Eliminar]**.
-1. Pulse **[!UICONTROL Aceptar]**.
+1. En la barra de herramientas, seleccione **[!UICONTROL Delete]**.
+1. Seleccione **[!UICONTROL OK]**.
 
 ## Aplicación de un perfil de vídeo a carpetas {#applying-a-video-profile-to-folders}
 
@@ -365,44 +365,44 @@ Puede aplicar Perfiles de vídeo a carpetas específicas o globalmente a todos l
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte [Volver a procesar recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-### Aplicación de un perfil de vídeo a carpetas específicas {#applying-video-profiles-to-specific-folders}
+### Aplicar un perfil de vídeo a carpetas específicas {#applying-video-profiles-to-specific-folders}
 
 Puede aplicar un perfil de vídeo a una carpeta desde el menú **[!UICONTROL Herramientas]** o si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo aplicar Perfiles de vídeo a las carpetas de ambos modos.
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-Consulte también [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+Consulte también [Reprocesar recursos en una carpeta después de editar su perfil de procesamiento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 #### Aplicación de un perfil de vídeo a carpetas mediante la interfaz de usuario Perfiles {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Seleccione el perfil de vídeo que desea aplicar a una o varias carpetas.
-1. Pulse **[!UICONTROL Aplicar perfil a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y pulse **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en el modo **[!UICONTROL Vista de tarjeta]**.
+1. Seleccione **[!UICONTROL Aplicar perfil a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y seleccione **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en el modo **[!UICONTROL Vista de tarjeta]**.
 Puede [monitorizar el progreso de un trabajo de procesamiento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 #### Aplicación de un perfil de vídeo a carpetas de Propiedades {#applying-video-profiles-to-folders-from-properties}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desee aplicar un perfil de vídeo.
-1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
-1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]**, seleccione el perfil en el menú desplegable y haga clic en **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desee aplicar un perfil de vídeo.
+1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **[!UICONTROL Properties]**.
+1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]** y seleccione el perfil en el menú desplegable y seleccione **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Puede  [monitorizar el progreso de un trabajo](#monitoring-the-progress-of-an-encoding-job) de procesamiento de perfil de vídeo.
 
-### Aplicación de un perfil de vídeo globalmente {#applying-a-video-profile-globally}
+### Aplicar un perfil de vídeo globalmente {#applying-a-video-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de Experience Manager en cualquier carpeta tenga aplicado el perfil seleccionado.
 
-Consulte también [Reprocesamiento de recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+Consulte también [Reprocesar recursos en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 **Para aplicar un perfil de vídeo globalmente:**
 
-* Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Agregue la propiedad `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` y pulse **[!UICONTROL Guardar todo]**.
+* Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Agregue la propiedad `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` y seleccione **[!UICONTROL Guardar todo]**.
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Puede [monitorizar el progreso de un trabajo de procesamiento de perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
-## Monitorización del progreso de un trabajo de procesamiento de perfil de vídeo {#monitoring-the-progress-of-an-encoding-job}
+## Monitorizar el progreso de un trabajo de procesamiento de perfil de vídeo {#monitoring-the-progress-of-an-encoding-job}
 
 Se muestra un indicador de procesamiento (o barra de progreso) para que pueda supervisar visualmente el progreso de un trabajo de procesamiento de perfil de vídeo.
 
@@ -416,14 +416,14 @@ Puede quitar un perfil de vídeo de una carpeta desde el menú **[!UICONTROL Her
 
 ### Eliminación de un perfil de vídeo de carpetas mediante la interfaz de usuario Perfiles {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Seleccione el perfil de vídeo que desea eliminar de una carpeta o varias carpetas.
-1. Pulse **[!UICONTROL Eliminar perfil de las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para quitar el perfil. A continuación, pulse **[!UICONTROL Quitar]**.
+1. Seleccione **[!UICONTROL Quitar perfil de las carpetas]** y seleccione la carpeta o carpetas que desee usar para quitar el perfil y seleccione **[!UICONTROL Quitar]**.
 
    Puede confirmar que el perfil de vídeo ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
-### Eliminación de un perfil de vídeo de carpetas mediante Propiedades {#removing-video-profiles-from-folders-by-way-of-properties}
+### Eliminación de un perfil de vídeo de carpetas mediante las propiedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Toque o haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de vídeo.
-1. En la carpeta, pulse o haga clic en la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
-1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]** y seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de vídeo.
+1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **[!UICONTROL Properties]**.
+1. Seleccione la pestaña **[!UICONTROL Perfiles de vídeo]** y seleccione **[!UICONTROL Ninguno]** en el menú desplegable y seleccione **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
