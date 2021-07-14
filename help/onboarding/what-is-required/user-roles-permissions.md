@@ -1,14 +1,13 @@
 ---
 title: Funciones de Cloud Manager
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
-translation-type: tm+mt
-source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
+exl-id: d1689134-044a-4d96-97a2-cd09f735a680
+source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '546'
 ht-degree: 8%
 
 ---
-
 
 # Funciones de Cloud Manager {#user-roles-permissions}
 
@@ -37,7 +36,7 @@ Para ver sus funciones en Cloud Manager, inicie sesión en la interfaz de usuari
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
-### El perfil de producto de integración {#integration-product-profile}
+### El perfil del producto de integración {#integration-product-profile}
 
 Además de lo anterior, Cloud Manager creará automáticamente un perfil de producto denominado &quot;Integraciones - Cloud Service&quot;. Este perfil de producto se utiliza para las integraciones entre Adobe Experience Manager y otros productos de Adobe. Este perfil de producto **no debe** eliminarse. Si elimina accidentalmente este perfil, deberá volver a crearlo manualmente. El nombre para mostrar de este perfil **debe** ser `CM_CS_DEFAULT`.
 
@@ -48,9 +47,9 @@ Además de lo anterior, Cloud Manager creará automáticamente un perfil de prod
 
 Cada una de las funciones tiene permisos específicos asociados a ella. Por ejemplo, si tiene la función de:
 
-* ***Propietario empresarial***, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno, añadir, editar o eliminar la canalización y ejecutar cualquier canalización, e implementar código en AEM entorno o calidad de código.
+* ***Propietario empresarial***, tiene permiso para agregar un nuevo programa o editar un programa, agregar o actualizar un entorno y ejecutar cualquier canalización.
 
-* ***Administrador de implementación***, tiene permiso para agregar o actualizar un entorno, ejecutar cualquier canalización e implementar código en AEM entorno o calidad del código.
+* ***Administrador de implementación***, tiene permiso para agregar o actualizar un entorno y ejecutar cualquier canalización.
 
 * ***Desarrollador***, tiene permiso para generar un token de acceso personal para acceder a Git.
 
@@ -74,4 +73,3 @@ La siguiente tabla resume las funciones junto con sus permisos asociados dentro 
 | Eliminación de canalización | Permite eliminar una canalización. |  | x |  |  |
 | Cancelación de ejecución | Cancelar ejecución actual. |  | x |  |  |
 | Generar token de acceso personal | Acceda a Git. |  | x |  | x |
-
