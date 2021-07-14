@@ -1,14 +1,13 @@
 ---
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
-translation-type: tm+mt
-source-git-commit: 97c3ddd5331d55c5d9b45a29251f584e4bac878b
+exl-id: d2024b42-9042-46a0-879e-110b214c7285
+source-git-commit: e3575278fbfd523a2727e4d659deb057bf2cff9e
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de la canalización de CI/CD {#configure-ci-cd-pipeline}
 
@@ -33,7 +32,7 @@ En Cloud Manager, hay dos tipos de Canalización:
 > * configure los parámetros de prueba de rendimiento.
 
 
-## Configuración de la canalización de producción {#setting-up-production-pipeline}
+## Configuración de canalización de producción {#setting-up-production-pipeline}
 
 El administrador de implementación es responsable de configurar la canalización de producción.
 
@@ -111,7 +110,7 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
 ## Canalizaciones de calidad de código y no producción {#non-production-pipelines}
 
-Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en el entorno de Adobe Managed Services.
+Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en AEM como entorno de Cloud Service.
 
 En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
