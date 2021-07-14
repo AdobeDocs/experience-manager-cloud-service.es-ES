@@ -4,7 +4,7 @@ description: Aprenda a trabajar con imágenes panorámicas en Dynamic Media.
 feature: Imágenes panorámicas
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 En esta sección se describe cómo trabajar con el visor de imágenes panorámicas para representar imágenes panorámicas esféricas y así obtener una experiencia de visualización de 360° inmersiva de una habitación, propiedad, ubicación o paisaje.
 
-Consulte también [Administración de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
+Consulte también [Administrar ajustes preestablecidos de visor](/help/assets/dynamic-media/managing-viewer-presets.md).
 
 ![imagen panorámica2](assets/panoramic-image2.png)
 
-## Carga de recursos para su uso con el visor de imágenes panorámicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Cargar recursos para utilizarlos con el visor de imágenes panorámicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Para que un recurso cargado pueda considerarse una imagen panorámica esférica que pretenda usar con el visor de imágenes panorámicas, el recurso debe tener una o ambas de las siguientes opciones:
 
@@ -27,11 +27,11 @@ Para que un recurso cargado pueda considerarse una imagen panorámica esférica 
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md).
+* Etiquetado con las palabras clave `equirectangular`, o `spherical`y `panorama`, o `spherical` y `panoramic`. Consulte [Usar etiquetas](/help/sites-cloud/authoring/features/tags.md).
 
 Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles del recurso y el componente WCM `Panoramic Media`.
 
-Para cargar recursos para usarlos con el visor de imágenes panorámicas, consulte [Carga de recursos](/help/assets/manage-digital-assets.md#uploading-assets).
+Para cargar recursos para usarlos con el visor de imágenes panorámicas, consulte [Cargar recursos](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -41,7 +41,7 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
@@ -60,9 +60,9 @@ For the Panoramic Image viewer to work properly within AEM, you must synchronize
 
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
+1. At the bottom of the Image Server Publish page, on the left side, select **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **[!UICONTROL Close]**.
+1. In the lower-right corner, select **[!UICONTROL Close]**.
 
 ### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -82,4 +82,4 @@ Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets
 
 ## Publicar imágenes panorámicas {#publishing-panoramic-images}
 
-Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
