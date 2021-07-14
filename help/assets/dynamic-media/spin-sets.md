@@ -4,10 +4,10 @@ description: Aprenda a trabajar con conjuntos de giros en Dynamic Media.
 feature: Conjuntos de giros
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 12%
+source-wordcount: '1818'
+ht-degree: 9%
 
 ---
 
@@ -45,7 +45,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Para crear un conjunto de giros, seleccione **[!UICONTROL Crear]** > **[!UICONTROL Conjunto de giros]** y asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
-   Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
+   Consulte [Trabajar con selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
 1. Configure los [ajustes preestablecidos del visualizador de conjuntos de giros](/help/assets/dynamic-media/managing-viewer-presets.md) según sea necesario.
 
@@ -53,7 +53,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Para crear o editar ajustes preestablecidos de visualizador, consulte **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Ajustes preestablecidos de visualizador]**.
 
-   Consulte [Adición y edición de ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
+   Consulte [Añadir y editar ajustes preestablecidos de visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
    Puede ver y acceder a los conjuntos creados mediante ajustes preestablecidos de conjuntos de lotes de tres formas diferentes. (Los conjuntos creados con ajustes preestablecidos de conjuntos de lotes no *no* aparecen en la interfaz de usuario).
 
@@ -71,11 +71,11 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Seleccione el conjunto de giros y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores]**.
 
-   Consulte [Vinculación de un conjunto de giros a una página web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
+   Consulte [Vincular un conjunto de giros a una página web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) e [Incrustar el visualizador de imágenes o vídeos](/help/assets/dynamic-media/embed-code.md).
 
 Si es necesario, puede [editar los conjuntos de giros](#editing-spin-sets). Además, puede ver y modificar [Propiedades del conjunto de giros](/help/assets/manage-digital-assets.md#editing-properties).
 
-## Carga de recursos para conjuntos de giros {#uploading-assets-for-spin-sets}
+## Cargar recursos para conjuntos de giros {#uploading-assets-for-spin-sets}
 
 Como mínimo, se necesitan 8-12 tomas de un elemento para un conjunto de giros unidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30° (360/12) para cada toma.
 
@@ -91,7 +91,7 @@ A continuación se indican algunas prácticas recomendadas en relación con las 
 * Asegúrese de que los detalles del producto estén bien iluminados y enfocados.
 * Toma imágenes de giro para ropa de moda con un maniquí o modelo. A menudo el maniquí está enmascarado (usando un maniquí de vidrio) o un maniquí estilizado/forma de vestir se muestra en la imagen. Puede crear un conjunto de giros en modelo definiendo el número de ángulos. Marque cada ángulo con cinta en el suelo para que pueda guiar al modelo para que se desplace y mire en la dirección de cada toma.
 
-## Creación de conjuntos de giros {#creating-spin-sets}
+## Crear conjuntos de giros {#creating-spin-sets}
 
 En esta sección se describe cómo crear conjuntos de giros.
 
@@ -107,7 +107,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 
 **Para crear conjuntos de giros:**
 
-1. En Assets, navegue hasta el lugar donde desee crear un conjunto de giros, haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Conjunto de giros]**. También puede crear el conjunto desde una carpeta que contenga los recursos. Aparece el Editor de conjuntos de giros.
+1. En Assets, vaya a donde desee crear un conjunto de giros, seleccione **[!UICONTROL Crear]** y, a continuación, seleccione **[!UICONTROL Conjunto de giros]**. También puede crear el conjunto desde una carpeta que contenga los recursos.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -117,18 +117,18 @@ En esta sección se describe cómo crear conjuntos de giros.
 
    >[!NOTE]
    >
-   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que desea que el Experience Manager genere una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
+   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que el Experience Manager seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, seleccione **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (también puede navegar a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que desea que el Experience Manager genere una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
 
 1. Realice una de las siguientes acciones:
 
-   * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, pulse **[!UICONTROL Agregar recurso]**.
+   * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Agregar recurso]**.
 
-   * Cerca de la mitad de la página Editor de conjuntos de giros, pulse **[!UICONTROL Toque para abrir el Selector de recursos]**.
-   Pulse para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, pulse **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
+   * Cerca del centro de la página Editor de conjuntos de giros, seleccione **[!UICONTROL Toque para abrir el Selector de recursos]**.
+   Seleccione los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
 
-   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
+   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, seleccione el icono **[!UICONTROL Filter]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
-   Consulte [Uso de selectores](/help/assets/dynamic-media/working-with-selectors.md).
+   Consulte [Trabajar con selectores](/help/assets/dynamic-media/working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
@@ -136,17 +136,17 @@ En esta sección se describe cómo crear conjuntos de giros.
 
    Si es necesario, arrastre el icono Reordenar de un recurso a la derecha del nombre del archivo del recurso para reordenar las imágenes hacia arriba o hacia abajo en la lista de conjunto.
 
-   ![Reorganización del fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación](assets/6_5_spinset-reorderassets.png)
+   ![Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación](assets/6_5_spinset-reorderassets.png)
 
    Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación.
 
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
-   * Para eliminar una imagen, seleccione la imagen y pulse **[!UICONTROL Eliminar recurso]**.
+   * Para eliminar una imagen, seleccione la imagen y seleccione **[!UICONTROL Eliminar recurso]**.
 
-   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicar a todos los recursos a la vez.
+   * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicar a todos los recursos a la vez.
 
-1. Haga clic en **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparece en la carpeta en la que lo creó.
+1. Seleccione **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparece en la carpeta en la que lo creó.
 
 ## Visualización de conjuntos de giros {#viewing-spin-sets}
 
@@ -154,11 +154,11 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 
 >[!NOTE]
 >
->También puede ver los conjuntos mediante la interfaz de usuario que se describe en [Edición de conjuntos de giros](#editing-spin-sets).
+>También puede ver los conjuntos mediante la interfaz de usuario que se describe en [Editar conjuntos de giros](#editing-spin-sets).
 
 **Para ver los conjuntos de giros:**
 
-1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de miembros del recurso seleccionado (en **[!UICONTROL Member of Sets]**). Para ver el conjunto completo, pulse el nombre del conjunto.
+1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de miembros del recurso seleccionado (en **[!UICONTROL Member of Sets]**). Para ver el conjunto completo, seleccione el nombre del conjunto.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -172,7 +172,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
-## Edición de conjuntos de giros {#editing-spin-sets}
+## Editar conjuntos de giros {#editing-spin-sets}
 
 Puede realizar varias tareas de edición en los conjuntos de giros, como las siguientes:
 
@@ -182,35 +182,35 @@ Puede realizar varias tareas de edición en los conjuntos de giros, como las sig
 * Aplicar ajustes preestablecidos de visor.
 * Elimine el conjunto de giros.
 
-**Para editar un conjunto de giros:**
+**Para editar los conjuntos de giros:**
 
 1. Realice una de las siguientes acciones:
 
-   * Pase el ratón sobre un recurso de conjunto de giros y, a continuación, pulse **[!UICONTROL Editar]** (icono de lápiz).
-   * Pase el ratón sobre un recurso de conjunto de giros, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, a continuación, pulse **[!UICONTROL Editar]** en la barra de herramientas.
+   * Pase el ratón sobre un recurso de conjunto de giros y, a continuación, seleccione **[!UICONTROL Editar]** (icono de lápiz).
+   * Pase el ratón sobre un recurso de conjunto de giros, seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación) y, a continuación, seleccione **[!UICONTROL Editar]** en la barra de herramientas.
 
-   * Pulse en un recurso de conjunto de giros y, a continuación, pulse **[!UICONTROL Editar]** (icono de lápiz) en la barra de herramientas.
+   * Seleccione un recurso de conjunto de giros y, a continuación, seleccione **[!UICONTROL Editar]** (icono de lápiz) en la barra de herramientas.
 
 1. Para editar el conjunto de giros, realice una de las acciones siguientes:
 
    * Para reordenar las imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
-   * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
-   * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y pulse **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
+   * Para ordenar los elementos en orden ascendente o descendente, seleccione el encabezado de la columna.
+   * Para agregar un recurso o actualizar un recurso existente, seleccione **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y seleccione **[!UICONTROL Select]** cerca de la esquina superior derecha.
 Si elimina la imagen que usa el Experience Manager para la miniatura reemplazándola por otra imagen, el recurso original seguirá apareciendo.
-   * Para eliminar un recurso, selecciónelo y pulse o haga clic en **[!UICONTROL Eliminar recurso]**.
-   * Para aplicar un ajuste preestablecido, pulse o haga clic en el icono Ajuste preestablecido y seleccione un ajuste preestablecido.
+   * Para eliminar un recurso, selecciónelo y seleccione **[!UICONTROL Eliminar recurso]**.
+   * Para aplicar un ajuste preestablecido, seleccione el icono Ajuste preestablecido y elija un ajuste preestablecido.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
 
    >[!NOTE]
    >
-   >Para editar las imágenes de un conjunto de giros, vaya al conjunto, pulse **[!UICONTROL Definir miembros]** en el carril izquierdo y, a continuación, pulse el icono Lápiz en un recurso individual para abrir la ventana de edición.
+   >Para editar las imágenes de un conjunto de giros, vaya al conjunto, seleccione **[!UICONTROL Definir miembros]** en el carril izquierdo y, a continuación, seleccione el icono Lápiz en un recurso individual para abrir la ventana de edición.
 
-1. Haga clic en **[!UICONTROL Guardar]** cuando termine de editar.
+1. Seleccione **[!UICONTROL Guardar]** cuando termine de editar.
 
 ## Vista previa de conjuntos de giros {#previewing-spin-sets}
 
 Consulte [Vista previa de recursos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicación de conjuntos de giros {#publishing-spin-sets}
+## Publicar conjuntos de giros {#publishing-spin-sets}
 
-Consulte [Publicación de recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
