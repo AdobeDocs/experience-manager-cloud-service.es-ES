@@ -1,29 +1,29 @@
 ---
-title: Entrega de imágenes optimizadas para un sitio interactivo
+title: Distribución de imágenes optimizadas para un sitio interactivo
 description: Aprenda a utilizar la función de código interactivo para ofrecer imágenes optimizadas de Dynamic Media.
 feature: Administración de activos
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
-# Distribución de imágenes adaptables para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
+# Distribución de imágenes optimizadas para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilice la función de código interactivo cuando desee compartir el código para la entrega interactiva con su desarrollador web. Copie el código adaptable (**[!UICONTROL RESS]**) en el portapapeles para poder compartirlo con el desarrollador web.
 
 Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en Adobe Experience Manager, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
 
-Consulte también [Incrustación del visualizador de vídeo en una página web](embed-code.md).
+Consulte también [Incrustar el visualizador de vídeo en una página web](embed-code.md).
 
-Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
+Consulte también [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
 **Para ofrecer imágenes optimizadas para un sitio interactivo:**
 
-1. Vaya a la imagen para la que desee proporcionar código interactivo y, en el menú desplegable, pulse **[!UICONTROL Representaciones]**.
+1. Vaya a la imagen para la que desee proporcionar código interactivo y, en el menú desplegable, seleccione **[!UICONTROL Representaciones]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-you
    >
    >Los ajustes preestablecidos de imagen se publican automáticamente.
 
-1. Toque **[!UICONTROL RESS]**.
+1. Seleccione **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
