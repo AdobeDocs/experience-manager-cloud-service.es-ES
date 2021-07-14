@@ -1,10 +1,13 @@
 ---
 title: Vista previa de recursos 3D
 description: Obtenga información sobre cómo previsualizar recursos 3D en Dynamic Media.
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+feature: Recursos 3D
+role: User
+exl-id: null
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 15%
+source-wordcount: '565'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +20,7 @@ El visor 3D interactivo está disponible en la página de detalles de recursos d
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos compatibles con la vista previa 3D en el Experience Manager{#supported-3d-previewing-assets}
+## Formatos admitidos para la vista previa 3D en el Experience Manager{#supported-3d-previewing-assets}
 
 La vista previa 3D interactiva en Experience Manager admite los siguientes formatos de archivo:
 
@@ -51,16 +54,16 @@ Además, las capacidades del equipo cliente, como una estación de trabajo, un o
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-assets) y [Carga de recursos](/help/assets/manage-digital-assets.md#uploading-assets).
-1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+1. Desde el Experience Manager, en la página **[!UICONTROL Navegación]**, vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 
    ![Página de navegación](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, pulse **[!UICONTROL Vista de tarjeta]** y, a continuación, desplácese hasta un recurso 3D que quiera previsualizar.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, seleccione **[!UICONTROL Vista de tarjeta]** y, a continuación, desplácese hasta un recurso 3D que quiera previsualizar.
 
    ![Selección de la tarjeta 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
-   _En Vista de tarjeta, pulse la tarjeta del recurso 3D que desea previsualizar._
+   _En Vista de tarjeta, seleccione la tarjeta del recurso 3D que desea previsualizar._
 
-1. Pulse la tarjeta del recurso 3D.
+1. Seleccione la tarjeta del recurso 3D.
 
    ![Vista previa interactiva en 3D](/help/assets/dynamic-media/assets/3d-preview.png)
    _Vista previa interactiva de un recurso 3D en la página de vista de detalles del recurso._
@@ -72,7 +75,7 @@ Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-a
    | **Panorámica de la cámara** | Desplace la vista hacia la izquierda, hacia la derecha, hacia arriba o hacia abajo. | Haga clic con el botón derecho y arrastre. | Presione con dos dedos y arrastre. |
    | **Ampliar la cámara** | Entrada y salida de áreas de la escena 3D. | Rueda de desplazamiento. | Pellizque con dos dedos. |
    | **Vuelva a introducir la cámara** | Vuelva a introducir la cámara en un punto de un objeto de la escena 3D. | Hacer doble clic. | Toque dos veces. |
-   | **Restablecer** | Cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
-   | **Modo de pantalla completa** | Para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa . |  |  |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
+   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa . |  |  |
 
-1. Cuando haya terminado, pulse **[!UICONTROL Cerrar]** cerca de la esquina superior derecha de la página.
+1. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Cerrar]**.
