@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
 workflow-type: tm+mt
-source-wordcount: '1586'
+source-wordcount: '1585'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ Consulte el vídeo [Información general de la versión de junio de 2021](https:
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.6.0 y 2021.5.0.
+Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.6.0.
 
 ### Fecha de la versión {#release-date-june-cm}
 
