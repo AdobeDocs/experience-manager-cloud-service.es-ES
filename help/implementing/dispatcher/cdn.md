@@ -3,7 +3,7 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
+source-git-commit: 12bcc10094151cc8666ed169c2b65e2b5379e616
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 8%
@@ -19,7 +19,6 @@ ht-degree: 8%
 >abstract="AEM como Cloud Service se envía con una CDN integrada. Su principal propósito es reducir la latencia mediante el envío de contenido procesable desde los nodos CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM."
 
 AEM como Cloud Service se envía con una CDN integrada. Su objetivo principal es reducir la latencia mediante la entrega de contenido procesable desde los nodos de CDN en el extremo, cerca del explorador. Está completamente administrado y configurado para un rendimiento óptimo de las aplicaciones AEM.
-
 
 La CDN administrada AEM satisfará la mayoría de los requisitos de rendimiento y seguridad del cliente. Para el nivel de publicación, los clientes pueden opcionalmente apuntar a él desde su propia CDN, que deberán administrar. Esto se permitirá caso por caso, en función de cumplir ciertos requisitos previos, incluido, entre otros, el cliente que tenga una integración heredada con su proveedor de CDN que sea difícil de abandonar.
 
