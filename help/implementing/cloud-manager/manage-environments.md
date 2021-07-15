@@ -2,7 +2,7 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Un usuario con los permisos necesarios puede crear los siguientes tipos de entor
    >[!NOTE]
    >Producción y fase está disponible como dúo y se utiliza para pruebas y producciones.  El usuario no podrá crear solo entorno de fase o de producción.
 
-## Adición de entorno {#adding-environments}
+## Añadir entorno {#adding-environments}
 
 1. Haga clic en **Agregar entorno** para agregar un entorno. Se puede acceder a este botón desde la pantalla **Environments**.
    ![](assets/environments-tab.png)
@@ -67,7 +67,7 @@ La tarjeta **Environments** de la página Información general enumera hasta tre
 
 1. Seleccione el botón **Show All** para navegar a la página de resumen **Environment** para ver una tabla con una lista completa de entornos.
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. La página **Entornos** muestra la lista de todos los entornos existentes.
 
@@ -129,7 +129,7 @@ Al seleccionar esta opción, un administrador de implementación podrá actualiz
 
 Si la canalización ya se ha actualizado, se solicita al usuario que la ejecute.
 
-## Eliminación del entorno {#deleting-environment}
+## Eliminación de entorno {#deleting-environment}
 
 Los usuarios con los permisos necesarios podrán eliminar un entorno de desarrollo.
 
@@ -218,7 +218,7 @@ Siga los pasos a continuación para aplicar una Lista de permitidos IP:
 1. Utilice los campos de entrada de la parte superior de la tabla de Lista de permitidos IP para seleccionar la Lista de permitidos IP y el servicio Autor o Publicación al que desea aplicarla.
 1. Haga clic en **Aplicar** y confirme el envío.
 
-### Desaplicación de una Lista de permitidos IP {#unapply-ip-allow-list}
+### Cancelación de la aplicación de una Lista de permitidos IP {#unapply-ip-allow-list}
 
 La cancelación de la aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los rangos de IP incluidos en la definición de la Lista de permitidos se desasocian de un servicio Autor o Editor en un entorno. Un usuario con la función Propietario empresarial o Administrador de implementación debe haber iniciado sesión para poder anular la aplicación de una Lista de permitidos IP.
 
