@@ -3,9 +3,9 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.7.0
 feature: Información de la versión
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
+source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '366'
 ht-degree: 4%
 
 ---
@@ -28,13 +28,15 @@ La próxima versión está planificada para el 12 de agosto de 2021.
 
 * La dirección IP de salida saliente ahora se registrará en el archivo de registro de paso de compilación.
 
-* Los entornos de fase y producción que ejecutan versiones anteriores de AEM ahora informarán del estado &quot;Actualizar disponible&quot;.
+* Los entornos de fase y producción que ejecutan versiones antiguas de AEM ahora informarán de un estado de **Actualización disponible**.
 
-* El máximo de certificados SSL admitidos ha aumentado a 20 por programa.
+* El número máximo de certificados SSL admitidos ha aumentado a 20 por programa.
 
-* Aumento El número máximo de dominios que se pueden configurar ha aumentado a 500 por entorno.
+* El número máximo de dominios que se pueden configurar ha aumentado a 500 por entorno.
 
-* Los botones Administrar Git se han cambiado a Acceso Información de Git y el cuadro de diálogo se ha actualizado visualmente.
+* Los botones **Administrar Git** se han cambiado a **Información de Git de acceso** y el cuadro de diálogo se ha actualizado visualmente.
+
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
 
 ### Corrección de errores {#bug-fixes}
 
