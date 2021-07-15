@@ -1,7 +1,7 @@
 ---
 title: Fase de implementación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de implementación en Cloud Acceleration Manager.
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -54,9 +54,9 @@ Siga esta sección para explorar la tarjeta de actividad Refactorización de có
 
 1. La página muestra la lista de actividades de refactorización de código organizadas por el nivel de gravedad. Para obtener más información, haga clic en los dos iconos resaltados.
 
-   La página muestra las consideraciones de refactorización de código en tres pestañas diferentes.
+   La página muestra las consideraciones de refactorización de código en tres pestañas diferentes:
 
-   * Información general:
+   * Información general
    * Dispatcher
    * Pruebas
 
