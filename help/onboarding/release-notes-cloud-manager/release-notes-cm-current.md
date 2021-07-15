@@ -3,9 +3,9 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.7.0
 feature: Información de la versión
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '349'
 ht-degree: 4%
 
 ---
@@ -46,11 +46,9 @@ La próxima versión está planificada para el 12 de agosto de 2021.
 
 * El mensaje de error que se muestra cuando se alcanza el número máximo de certificados SSL no es útil.
 
-* En algunas circunstancias, podría haber una discrepancia en la versión de la versión mostrada en la tarjeta de canalización de la página de información general.
+* En algunas circunstancias, podría haber una discrepancia en la versión de la versión mostrada en la tarjeta de canalización de la página **Información general**.
 
 * El asistente Agregar programa indicó incorrectamente que el nombre no se puede cambiar después de la creación.
-
-* En algunos casos, Vista previa no era una opción disponible al enlazar una Lista de permitidos IP a un entorno.
 
 ### Problemas conocidos {#known-issues}
 
