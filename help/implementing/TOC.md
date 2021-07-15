@@ -5,9 +5,9 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
+source-git-commit: 6176665d17432999409baca46c46503d20f8f06b
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 33%
 
 ---
@@ -180,6 +180,7 @@ ht-degree: 33%
    + [Implementación en AEM as a Cloud Service](deploying/overview.md)
    + [Actualizaciones en la versión AEM](deploying/aem-version-updates.md)
    + [Configurar OSGI para AEM as a Cloud Service](deploying/configuring-osgi.md)
+   + [API de configuración OSGi](deploying/osgi-configuration-api.md)
 + Nivel de Author {#author-tier}
    + [Acceso al nivel de Author](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [Protección del nivel de Author](/help/implementing/author-tier/securing-the-author-tier.md)
