@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1229'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Para realizar una activación de árbol:
 
    ![](assets/publish-distribute.png "DistribuirDistribuir")
 4. Seleccione la ruta en el navegador de rutas, elija añadir un nodo, árbol o eliminar según sea necesario y seleccione **Submit**
+
+Para obtener el mejor rendimiento, siga estas directrices al utilizar esta función:
+* El tamaño total del paquete de contenido generado para la replicación debe ser inferior a 5 MB.
+* Se recomienda duplicar menos de 100 rutas a la vez, con un límite de 500 rutas.
 
 ### Flujo de trabajo del árbol de contenido de publicación {#publish-content-tree-workflow}
 
