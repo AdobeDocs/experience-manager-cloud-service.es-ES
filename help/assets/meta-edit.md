@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadatos
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 9%
 
 ---
@@ -28,7 +28,7 @@ Para editar metadatos:
    * En la miniatura del recurso, seleccione la acción rápida **[!UICONTROL Ver propiedades]**.
    * En la página de recursos, pulse o haga clic en **[!UICONTROL Ver propiedades]** en la barra de herramientas.
 
-   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en AEM Assets.
+   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en Recursos de Experience Manager.
 
 1. Edite los metadatos de las distintas pestañas, según sea necesario, y cuando termine, pulse o haga clic en **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Pulse o haga clic en **[!UICONTROL Cerrar]** para volver a la interfaz web de Assets.
 
@@ -36,7 +36,7 @@ Para editar metadatos:
    >
    >Si un campo de texto está vacío, no hay ningún conjunto de metadatos existente. Puede introducir un valor en el campo y guardarlo para añadir esa propiedad de metadatos.
 
-Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. Esto se realiza mediante AEM flujo de trabajo de reescritura de metadatos. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades creadas recientemente (incluidas las propiedades personalizadas como `cq:tags`) se agregan junto con el esquema .
+Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. Esto se realiza a través del flujo de trabajo de reescritura de metadatos del Experience Manager. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades creadas recientemente (incluidas las propiedades personalizadas como `cq:tags`) se agregan junto con el esquema .
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binar
 
 Para obtener más información sobre cómo editar el esquema de metadatos, consulte [Edición de formularios de esquema de metadatos](metadata-schemas.md#edit-metadata-schema-forms).
 
-## Registro de un espacio de nombres personalizado en AEM {#registering-a-custom-namespace-within-aem}
+## Registro de un espacio de nombres personalizado en el Experience Manager {#registering-a-custom-namespace-within-aem}
 
-Puede agregar sus propias áreas de nombres dentro de AEM. Del mismo modo que hay áreas de nombres predefinidas como cq, jcr y sling, puede tener un espacio de nombres para los metadatos del repositorio y el procesamiento xml.
+Puede añadir sus propias áreas de nombres dentro de Experience Manager. Del mismo modo que hay áreas de nombres predefinidas como cq, jcr y sling, puede tener un espacio de nombres para los metadatos del repositorio y el procesamiento xml.
 
 1. Vaya a la página de administración del tipo de nodo *https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*.
 1. Toque o haga clic en **[!UICONTROL Espacios de nombres]** en la parte superior de la página. La página de administración del área de nombres se muestra en una ventana.
