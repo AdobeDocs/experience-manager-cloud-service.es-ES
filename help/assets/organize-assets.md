@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Administración de recursos,Etiquetado,Distribución de recursos
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 Todos los recursos digitales, metadatos y contenido de documentos de Microsoft Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta por completo los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
 
-AEM Assets admite varias formas de organizar el contenido. Puede organizarlas de forma jerárquica mediante carpetas o puede organizarlas de forma desordenada y ad hoc mediante, por ejemplo, etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
+Recursos de Experience Manager admite varias formas de organizar el contenido. Puede organizarlas de forma jerárquica mediante carpetas o puede organizarlas de forma desordenada y ad hoc mediante, por ejemplo, etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
 
 ## Crear carpetas {#create-folders}
 
-Al organizar una colección de recursos, por ejemplo, todas las imágenes *Nature*, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. AEM Assets no requiere que organice los recursos en carpetas para que funcionen mejor.
+Al organizar una colección de recursos, por ejemplo, todas las imágenes *Nature*, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. [!DNL Assets] no requiere que organice los recursos en carpetas para que funcionen mejor.
 
 >[!NOTE]
 >
