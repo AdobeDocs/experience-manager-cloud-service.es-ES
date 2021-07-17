@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadatos
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 9%
+source-wordcount: '2562'
+ht-degree: 8%
 
 ---
 
@@ -99,7 +99,7 @@ La ficha **[!UICONTROL Generar formulario]** enumera los elementos de formulario
 | [!UICONTROL Referencias de productos] | Agregar para mostrar la lista de productos vinculados al recurso. |
 | [!UICONTROL Metadatos de contexto] | Añadir para controlar la visualización de otras pestañas de metadatos en la página de propiedades de los recursos. |
 
-<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
@@ -155,7 +155,7 @@ Haga clic en `+` para añadir una pestaña en un formulario de esquema. De forma
 
 ## Eliminación de formularios de esquema de metadatos {#deleting-metadata-schema-forms}
 
-AEM permite eliminar solo los formularios de esquema personalizados. No permite eliminar los formularios o plantillas de esquema predeterminados. Sin embargo, puede eliminar cualquier cambio personalizado en estos formularios.
+Experience Manager permite eliminar solo los formularios de esquema personalizados. No permite eliminar los formularios o plantillas de esquema predeterminados. Sin embargo, puede eliminar cualquier cambio personalizado en estos formularios.
 
 Para eliminar un formulario, seleccione un formulario y haga clic en el icono de eliminación.
 
@@ -236,16 +236,16 @@ Puede definir campos obligatorios a nivel de carpeta, que se aplican a los recur
 
 >[!NOTE]
 >
->Un campo de metadatos se puede definir como obligatorio en función del valor de otro campo. En la vista Tarjetas, AEM no muestra el mensaje de advertencia sobre la falta de metadatos para estos campos de metadatos obligatorios.
+>Un campo de metadatos se puede definir como obligatorio en función del valor de otro campo. En la vista Tarjetas, el Experience Manager no muestra el mensaje de advertencia sobre la falta de metadatos para estos campos de metadatos obligatorios.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
+1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata schemas]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Guarde el formulario de metadatos predeterminado como un formulario personalizado. Por ejemplo, guárdelo como `my_default`.
 1. Edite el formulario personalizado. Añada un campo obligatorio. Por ejemplo, agregue un campo **[!UICONTROL Category]** y haga que el campo sea obligatorio.
 1. Haga clic en **[!UICONTROL Guardar]**. El formulario modificado se muestra en la página **[!UICONTROL Forms]** del esquema de metadatos. Seleccione el formulario y, a continuación, pulse o haga clic en **[!UICONTROL Aplicar a las carpetas]** en la barra de herramientas para aplicar los metadatos personalizados a una carpeta.
 1. Vaya a la carpeta y cargue algunos recursos con metadatos que faltan para el campo obligatorio que ha agregado al formulario personalizado. Se muestra un mensaje para los metadatos que faltan para el campo obligatorio en la vista de tarjeta del recurso.
-1. (Opcional) Acceda a `https://[server]:[port]/system/console/components/`. Configure y habilite el componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está deshabilitado de forma predeterminada. Establezca una frecuencia con la que AEM compruebe la validez de los metadatos en los recursos.
+1. (Opcional) Acceda a `https://[server]:[port]/system/console/components/`. Configure y habilite el componente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` que está deshabilitado de forma predeterminada. Establezca una frecuencia con la que el Experience Manager comprueba la validez de los metadatos en los recursos.
 
-   Esta configuración agrega una propiedad `hasValidMetadata` a `jcr:content` de recursos. Con esta propiedad, AEM filtrar los resultados en una búsqueda.
+   Esta configuración agrega una propiedad `hasValidMetadata` a `jcr:content` de recursos. Con esta propiedad, el Experience Manager puede filtrar los resultados en una búsqueda.
 
    >[!NOTE]
    >
