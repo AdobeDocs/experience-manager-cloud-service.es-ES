@@ -4,9 +4,9 @@ description: 'El boletín Dynamic Media Newsletter by Experience League es un bo
 feature: Administración de activos
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -123,15 +123,15 @@ Explore valiosos recursos de creación de conocimientos, como vídeos explicativ
    * Recursos e información que le permiten administrar correctamente sus recursos de alto valor para ofrecer experiencias que mantengan a los visitantes de vuelta.
    * Obtenga información sobre un próximo seminario web sobre la protección de recursos digitales.
    * A continuación, se detiene en el Adobe Insider Tour, lleno de información.
-   * Funciones interesantes disponibles cuando tiene Dynamic Media en Experience Manager Assets (AEM Assets).
+   * Funciones interesantes disponibles cuando tiene Dynamic Media en Recursos de Experience Manager (Recursos de Experience Manager).
    * Agregar vídeos de 360 grados y miniaturas de vídeo personalizadas al sitio web.
-   * Conozca a Andrew Hathaway, consultor de soluciones principales de Dynamic Media en AEM Assets.
+   * Conozca a Andrew Hathaway, consultor de soluciones principales de Dynamic Media en Recursos Experience Manager.
 
 * **[Junio de 2019, número 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    En este número:
 
-   * Disfrute de los vídeos que destacan la conciencia de la actualización a Dynamic Media dentro de AEM Assets.
+   * Disfrute de los vídeos que destacan la conciencia de la actualización a Dynamic Media dentro de Experience Manager Assets.
    * Vea vídeos explicativos en Experience League.
    * Obtenga más información sobre la próxima gira de Adobe Insider.
    * Obtenga información sobre cómo proteger los recursos digitales de la piratería.
