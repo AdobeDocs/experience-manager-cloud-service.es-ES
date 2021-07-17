@@ -4,9 +4,9 @@ description: Generar variaciones de los recursos mediante la integración del Cr
 contentOwner: AG
 feature: Cargar,Procesamiento de recursos,Publicación,Microservicios de Asset compute,Flujo de trabajo
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 El complemento de automatización de contenido integra las API [!DNL Adobe Experience Manager Assets as a Cloud Service] y [!DNL Adobe Creative Cloud] para procesar creativamente sus recursos a escala. [!DNL Experience Manager] utiliza microservicios de  [recursos basados en la nube ](/help/assets/asset-microservices-overview.md) para utilizar las  [!DNL Adobe Creative Cloud] funciones y automatizar la creación de recursos y la gestión de medios.
 
-Para editar recursos en [!DNL Adobe Photoshop] y [!DNL Adobe Lightroom], no es necesario descargar recursos de [!DNL Experience Manager Assets], editarlos y cargarlos de nuevo. Basta con crear y configurar un perfil de procesamiento en [!DNL Experience Manager], aplicar el perfil a una carpeta y cargar los recursos en la carpeta. Los recursos cargados se vuelven a procesar en función de los perfiles de procesamiento y se obtienen variaciones de estos recursos. El procesamiento masivo consistente y sin esfuerzo ahorra esfuerzos manuales y aumenta la velocidad de contenido, también sin necesidad de contar con excelentes habilidades creativas. Además, los desarrolladores y socios pueden ampliar los microservicios de recursos con acceso directo a estas API e incluir lógica personalizada.
+Para editar recursos en [!DNL Adobe Photoshop] y [!DNL Adobe Lightroom], no es necesario descargar recursos de [!DNL Experience Manager Assets], editarlos y cargarlos de nuevo. Puede crear y configurar un perfil de procesamiento en [!DNL Experience Manager], aplicar el perfil a una carpeta y cargar los recursos en la carpeta. Los recursos cargados se vuelven a procesar en función de los perfiles de procesamiento y se obtienen variaciones de estos recursos. El procesamiento masivo consistente y sin esfuerzo ahorra esfuerzos manuales y aumenta la velocidad de contenido, también sin necesidad de contar con excelentes habilidades creativas. Además, los desarrolladores y los socios pueden ampliar los microservicios de recursos con acceso directo a estas API e incluir lógica personalizada.
 
 Los usuarios pueden crear perfiles de procesamiento para automatizar las siguientes operaciones creativas en sus recursos:\
 ![automatizar las operaciones de Adobe Photoshop y Adobe Lightroom en los recursos](assets/content-automation.png)
