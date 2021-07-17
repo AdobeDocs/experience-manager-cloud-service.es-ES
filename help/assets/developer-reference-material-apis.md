@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API, API HTTP de Assets
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 3051475d20d5b534b74c84f9d541dcaf1a5492f9
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -69,7 +69,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos en el almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud](#initiate-upload) HTTP. Informa a la implementación [!DNL Experience Manage]r de su intención de cargar un nuevo binario.
-1. [POST el contenido del ](#upload-binary) binario a uno o más URI proporcionados por la solicitud de inicio.
+1. [PUT el contenido del ](#upload-binary) binario a uno o más URI proporcionados por la solicitud de inicio.
 1. [Envíe una ](#complete-upload) solicitud HTTP para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 }
 ```
 
-* `completeURI` (cadena): Llame a este URI cuando el binario termine de cargarse. El URI puede ser absoluto o relativo, y los clientes deben poder gestionar cualquiera de ellos. Es decir, el valor puede ser `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Consulte [carga completa](#complete-upload).
+* `completeURI` (cadena): Llame a este URI cuando el binario termine de cargarse. El URI puede ser absoluto o relativo, y los clientes deben poder gestionar cualquiera de ellos. Es decir, el valor puede ser `"https://[aem_server]:[port]/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Consulte [carga completa](#complete-upload).
 * `folderPath` (cadena): Ruta de acceso completa a la carpeta en la que se carga el binario.
 * `(files)` (matriz): Una lista de elementos cuya longitud y orden coinciden con la longitud y el orden de la lista de información binaria proporcionada en la solicitud de inicio.
 * `fileName` (cadena): El nombre del binario correspondiente, tal como se proporciona en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
@@ -125,7 +125,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 
 ### Cargar binario {#upload-binary}
 
-El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente divide el binario en partes y realiza una solicitud de POST de cada parte a cada URI, en orden. Utilice todas las URI. Asegúrese de que el tamaño de cada pieza esté dentro de los tamaños mínimo y máximo especificados en la respuesta de inicio. Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
+El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente divide el binario en partes y realiza solicitudes de PUT de cada parte a cada URI, en orden. Utilice todas las URI. Asegúrese de que el tamaño de cada pieza esté dentro de los tamaños mínimo y máximo especificados en la respuesta de inicio. Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
 
 Un método potencial para lograr esto es calcular el tamaño de la parte en función del número de URI de carga que proporcione la API. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes y el número de URI de carga es de 2. A continuación, siga estos pasos:
 
@@ -154,9 +154,7 @@ Si el recurso existe y no se especifica `createVersion` ni `replace`, [!DNL Expe
 
 Al igual que el proceso de inicio, los datos de solicitud completos pueden contener información para más de un archivo.
 
-El proceso de carga de un binario no se realiza hasta que se invoca la URL completa para el archivo. Un recurso se procesa una vez finalizado el proceso de carga. El procesamiento no se inicia aunque el archivo binario del recurso se cargue completamente, pero el proceso de carga no se haya completado.
-
-Si se realiza correctamente, el servidor responde con un código de estado `200`.
+El proceso de carga de un binario no se realiza hasta que se invoca la URL completa para el archivo. Un recurso se procesa una vez finalizado el proceso de carga. El procesamiento no se inicia aunque el archivo binario del recurso se cargue completamente, pero el proceso de carga no se haya completado. Si la carga se realiza correctamente, el servidor responde con un código de estado `200`.
 
 ### Biblioteca de carga de código abierto {#open-source-upload-library}
 
