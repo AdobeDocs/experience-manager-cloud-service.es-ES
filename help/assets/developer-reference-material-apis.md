@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API, API HTTP de Assets
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1436'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No se admite. No usar. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [API de AEM/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) de Sling | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(vista previa)_ |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [API de Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) de Sling | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(vista previa)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -69,7 +69,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 En [!DNL Experience Manager] como [!DNL Cloud Service], puede cargar directamente los recursos en el almacenamiento en la nube mediante la API HTTP. A continuación se indican los pasos para cargar un archivo binario. Ejecute estos pasos en una aplicación externa y no dentro de la JVM [!DNL Experience Manager].
 
 1. [Enviar una solicitud](#initiate-upload) HTTP. Informa a la implementación [!DNL Experience Manage]r de su intención de cargar un nuevo binario.
-1. [POST el contenido del ](#upload-binary) binario a uno o más URI proporcionados por la solicitud de inicio.
+1. [PUT el contenido del ](#upload-binary) binario a uno o más URI proporcionados por la solicitud de inicio.
 1. [Envíe una ](#complete-upload) solicitud HTTP para informar al servidor de que el contenido del binario se cargó correctamente.
 
 ![Descripción general del protocolo de carga binaria directa](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 }
 ```
 
-* `completeURI` (cadena): Llame a este URI cuando el binario termine de cargarse. El URI puede ser absoluto o relativo, y los clientes deben poder gestionar cualquiera de ellos. Es decir, el valor puede ser `"https://author.acme.com/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Consulte [carga completa](#complete-upload).
+* `completeURI` (cadena): Llame a este URI cuando el binario termine de cargarse. El URI puede ser absoluto o relativo, y los clientes deben poder gestionar cualquiera de ellos. Es decir, el valor puede ser `"https://[aem_server]:[port]/content/dam.completeUpload.json"` o `"/content/dam.completeUpload.json"` Consulte [carga completa](#complete-upload).
 * `folderPath` (cadena): Ruta de acceso completa a la carpeta en la que se carga el binario.
 * `(files)` (matriz): Una lista de elementos cuya longitud y orden coinciden con la longitud y el orden de la lista de información binaria proporcionada en la solicitud de inicio.
 * `fileName` (cadena): El nombre del binario correspondiente, tal como se proporciona en la solicitud de inicio. Este valor debe incluirse en la solicitud completa.
@@ -125,7 +125,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 
 ### Cargar binario {#upload-binary}
 
-El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente divide el binario en partes y realiza una solicitud de POST de cada parte a cada URI, en orden. Utilice todas las URI. Asegúrese de que el tamaño de cada pieza esté dentro de los tamaños mínimo y máximo especificados en la respuesta de inicio. Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
+El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente divide el binario en partes y realiza solicitudes de PUT de cada parte a cada URI, en orden. Utilice todas las URI. Asegúrese de que el tamaño de cada pieza esté dentro de los tamaños mínimo y máximo especificados en la respuesta de inicio. Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
 
 Un método potencial para lograr esto es calcular el tamaño de la parte en función del número de URI de carga que proporcione la API. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes y el número de URI de carga es de 2. A continuación, siga estos pasos:
 
@@ -154,9 +154,7 @@ Si el recurso existe y no se especifica `createVersion` ni `replace`, [!DNL Expe
 
 Al igual que el proceso de inicio, los datos de solicitud completos pueden contener información para más de un archivo.
 
-El proceso de carga de un binario no se realiza hasta que se invoca la URL completa para el archivo. Un recurso se procesa una vez finalizado el proceso de carga. El procesamiento no se inicia aunque el archivo binario del recurso se cargue completamente, pero el proceso de carga no se haya completado.
-
-Si se realiza correctamente, el servidor responde con un código de estado `200`.
+El proceso de carga de un binario no se realiza hasta que se invoca la URL completa para el archivo. Un recurso se procesa una vez finalizado el proceso de carga. El procesamiento no se inicia aunque el archivo binario del recurso se cargue completamente, pero el proceso de carga no se haya completado. Si la carga se realiza correctamente, el servidor responde con un código de estado `200`.
 
 ### Biblioteca de carga de código abierto {#open-source-upload-library}
 
@@ -187,21 +185,45 @@ Para la configuración del flujo de trabajo posterior al procesamiento, utilice 
 
 ## Compatibilidad de los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
-Los clientes que actualicen desde versiones anteriores de [!DNL Experience Manager] pueden utilizar microservicios de recursos para procesar recursos. Los microservicios de recursos nativos de la nube son mucho más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior.
-
-[!DNL Experience Manager] como  [!DNL Cloud Service] compatibilidad con los siguientes pasos del flujo de trabajo:
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+Si actualiza desde una versión anterior de [!DNL Experience Manager], puede utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior. Para obtener más información sobre las clases admitidas, consulte la [Referencia de API de Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 Los siguientes modelos técnicos de flujo de trabajo se sustituyen por microservicios de recursos o no hay compatibilidad disponible:
+
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+
+<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -235,7 +257,7 @@ Los siguientes modelos técnicos de flujo de trabajo se sustituyen por microserv
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
-* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+-->
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
