@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1338'
 ht-degree: 4%
 
 ---
@@ -55,6 +55,10 @@ Para realizar una activación de árbol:
 
    ![](assets/publish-distribute.png "DistribuirDistribuir")
 4. Seleccione la ruta en el navegador de rutas, elija añadir un nodo, árbol o eliminar según sea necesario y seleccione **Submit**
+
+Para obtener el mejor rendimiento, siga estas directrices al utilizar esta función:
+* Se recomienda duplicar menos de 100 rutas a la vez, con un límite de 500 rutas.
+* El tamaño total del contenido replicado debe ser inferior a 5 MB. Esto solo incluye los nodos y las propiedades, pero no cualquier binario, que incluya paquetes de flujo de trabajo y paquetes de contenido.
 
 ### Flujo de trabajo del árbol de contenido de publicación {#publish-content-tree-workflow}
 
@@ -185,6 +189,11 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 Si no proporciona dicho filtro y solo utiliza el agente &quot;publicar&quot;, no se utiliza el agente &quot;vista previa&quot; y la acción de replicación no afecta al nivel de vista previa.
 
 El `ReplicationStatus` general de un recurso solo se modifica si la acción de replicación incluye al menos un agente que esté activo de forma predeterminada. En el ejemplo anterior, este no es el caso, ya que la replicación está utilizando el agente de &quot;vista previa&quot;. Por lo tanto, debe utilizar el nuevo método `getStatusForAgent()` , que permite consultar el estado de un agente específico. Este método también funciona para el agente &quot;publicar&quot;. Devuelve un valor no nulo si se ha realizado alguna acción de replicación con el agente proporcionado.
+
+
+**Ruta de acceso y límites de tamaño de la API de replicación**
+
+Se recomienda duplicar menos de 100 rutas, siendo 500 el límite duro. Por encima del límite estricto, se lanzará una ReplicationException. Si la lógica de su aplicación no requiere replicación atómica, este límite se puede superar estableciendo ReplicationOptions.setUseAtomicCalls en false, que aceptará cualquier cantidad de rutas, pero creará bloques internamente para permanecer por debajo de este límite. La cantidad de contenido transmitido por llamada de replicación no debe superar los 5 MB, que incluyen los nodos y las propiedades, pero no ningún binario (los paquetes de flujo de trabajo y los paquetes de contenido se consideran binarios).
 
 ## Solución de problemas {#troubleshooting}
 
