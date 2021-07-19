@@ -5,20 +5,20 @@ contentOwner: AG
 feature: Administración de activos,Traducción
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2587'
 ht-degree: 24%
 
 ---
 
 # Recursos multilingües {#multilingual-assets}
 
-Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües. Adobe Experience Manager (AEM) Assets permite automatizar los flujos de trabajo de traducción en recursos (incluidos binarios, metadatos y etiquetas) para generar recursos en otros idiomas y utilizarlos en proyectos multilingües.
+Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües. Adobe Experience Manager Assets permite automatizar los flujos de trabajo de traducción en recursos (incluidos binarios, metadatos y etiquetas) para generar recursos en otros idiomas y utilizarlos en proyectos multilingües.
 
-Para automatizar los flujos de trabajo de traducción, se integran los proveedores de servicios de traducción con AEM y se crean proyectos para traducir recursos a varios idiomas. AEM admite flujos de trabajo de traducción automática y humana.
+Para automatizar los flujos de trabajo de traducción, integre los proveedores de servicios de traducción con el Experience Manager y cree proyectos para traducir recursos a varios idiomas. Experience Manager admite flujos de trabajo de traducción automática y humana.
 
-Traducción humana: Los recursos traducidos se devuelven y se importan en AEM. Cuando el proveedor de traducción está integrado con AEM, los recursos se envían automáticamente entre AEM y el proveedor de traducción.
+Traducción humana: Los recursos traducidos se devuelven y se importan al Experience Manager. Cuando el proveedor de traducción está integrado con el Experience Manager, los recursos se envían automáticamente entre el Experience Manager y el proveedor de traducción.
 
 Traducción automática: El servicio de traducción automática traduce inmediatamente los metadatos y las etiquetas de los recursos.
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües.
 
-En Adobe Experience Manager (AEM) Assets, los recursos multilingües se incluyen en las carpetas, donde cada carpeta contiene los recursos en un idioma diferente.
+En Adobe Experience Manager Assets, los recursos multilingües se incluyen en las carpetas, donde cada carpeta contiene los recursos en un idioma diferente.
 
 Cada carpeta de idioma se denomina copia de idioma. La carpeta raíz de una copia de idioma, conocida como raíz de idioma, identifica el idioma del contenido en la copia de idioma. Por ejemplo, `/content/dam/it` es la raíz del idioma italiano para la copia en idioma italiano. Las copias de idioma deben utilizar una [raíz de idioma configurada correctamente](#create-a-language-root) para que se oriente al idioma correcto cuando se realicen traducciones de recursos de origen.
 
@@ -89,7 +89,7 @@ Por ejemplo, la página raíz de la copia en idioma italiano de la jerarquía de
 
 ### Ver raíces de idioma {#view-language-roots}
 
-La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en AEM Assets.
+La IU táctil proporciona un panel Referencias que muestra una lista de las raíces de idioma que se han creado en [!DNL Assets].
 
 1. En la consola Assets, seleccione el idioma principal para el que desea crear copias de idioma.
 1. Toque o haga clic en el icono de navegación global y elija **[!UICONTROL Referencias]** para abrir el panel Referencia.
@@ -169,9 +169,9 @@ Si utiliza esta opción, el conjunto de recursos se agregará a un proyecto de t
 
 ### Crear copias de idioma temporales {#creating-temporary-language-copies}
 
-Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. AEM Assets almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma permanece sin cambios.
+Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia de idioma con versiones editadas de los recursos originales, la copia de idioma existente se conserva hasta que se aprueban los recursos traducidos. [!DNL Assets] almacena los recursos recién traducidos en una ubicación temporal y actualiza la copia de idioma existente después de aprobar explícitamente los recursos. Si rechaza los recursos, la copia de idioma permanece sin cambios.
 
-1. Pulse o haga clic en la carpeta raíz de origen en **[!UICONTROL Textos en idiomas]** para la que ya ha creado un texto en un idioma y, a continuación, pulse o haga clic en **[!UICONTROL Mostrar en Assets]** para abrir la carpeta en AEM Assets.
+1. Pulse o haga clic en la carpeta raíz de origen en **[!UICONTROL Textos en idiomas]** para la que ya ha creado un texto en un idioma y, a continuación, pulse o haga clic en **[!UICONTROL Mostrar en Assets]** para abrir la carpeta en [!DNL Assets].
 1. En la interfaz de usuario de Assets, seleccione un recurso que ya haya traducido y pulse o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas para abrir el recurso en modo de edición.
 1. Edite el recurso y, a continuación, guarde los cambios.
 1. Realice los pasos 2-14 del procedimiento [Add to existing translation project](#add-to-existing-translation-project) para actualizar la copia de idioma.
@@ -234,7 +234,7 @@ Utilice la opción **Crear solo estructura** para diseñar una jerarquía de car
 
 ## Aplicar servicios de nube de traducción a carpetas {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager (AEM) le permite utilizar los servicios de traducción basados en la nube del proveedor de traducción que elija para garantizar que los recursos se traduzcan según sus necesidades.
+Adobe Experience Manager le permite utilizar los servicios de traducción basados en la nube del proveedor de traducción que elija para garantizar que sus recursos se traduzcan según sus necesidades.
 
 Puede aplicar el servicio de nube de traducción directamente a la carpeta de recursos para que se puedan utilizar durante los flujos de trabajo de traducción.
 
@@ -263,7 +263,7 @@ La aplicación de servicios de traducción en la nube directamente a la carpeta 
 Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde el Administrador de paquetes. A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la pestaña Cloud Services que se describe en [Aplicación de los serviciosde traducción](#applying-the-translation-services). Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
 
 1. Instale el conector desde el Administrador de paquetes.
-1. Pulse o haga clic en el logotipo de AEM y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
+1. Pulse o haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
 1. Coloque el conector que instaló en **[!UICONTROL Servicios de terceros]** en la página **[!UICONTROL Cloud Services]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
