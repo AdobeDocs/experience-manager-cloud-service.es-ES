@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Buscar,Metadatos,Distribución de recursos
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '4911'
+source-wordcount: '4916'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ Puede descubrir los recursos que desee con mayor rapidez desde la página de res
 
 ## Buscar sugerencias a medida que escribe {#searchsuggestions}
 
-Cuando empieza a escribir una palabra clave, el Experience Manager sugiere las posibles palabras clave o frases de búsqueda. Las sugerencias se basan en los recursos del Experience Manager . Experience Manager indexa todos los campos de metadatos para ayudarle con la búsqueda. Para proporcionar sugerencias de búsqueda, el sistema utiliza los valores de los siguientes campos de metadatos. Para proporcionar sugerencias de búsqueda, considere rellenar los campos siguientes con palabras clave adecuadas:
+Cuando empieza a escribir una palabra clave, AEM sugiere las posibles palabras clave o frases de búsqueda. Las sugerencias se basan en los recursos de AEM. AEM indexa todos los campos de metadatos para ayudar con la búsqueda. Para proporcionar sugerencias de búsqueda, el sistema utiliza los valores de los siguientes campos de metadatos. Para proporcionar sugerencias de búsqueda, considere rellenar los campos siguientes con palabras clave adecuadas:
 
 * Etiquetas de recursos. (se asigna a `jcr:content/metadata/cq:tags`)
 * Título del recurso. (se asigna a `jcr:content/metadata/dc:title`)
@@ -281,7 +281,7 @@ La funcionalidad de búsqueda puede tener limitaciones de rendimiento en los sig
 * La búsqueda de texto completo admite operadores como `-` y `^`. Para buscar estas letras como literales de cadena, escriba la expresión de búsqueda entre comillas dobles. Por ejemplo, utilice `"Notebook - Beauty"` en lugar de `Notebook - Beauty`.
 * Si los resultados de búsqueda son demasiados, limite el [ámbito de búsqueda](#scope) a cero en los recursos deseados. Funciona mejor cuando tiene alguna idea de cómo buscar mejor los recursos deseados, por ejemplo, tipo de archivo específico, ubicación específica, metadatos específicos, etc.
 
-* **Etiquetado**: Las etiquetas ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] ofrece métodos para etiquetar recursos automáticamente mediante los servicios artificialmente inteligentes de Adobe Sensei que siguen mejorando el etiquetado de sus recursos con uso y formación. Al buscar recursos, se tienen en cuenta las etiquetas inteligentes. Funciona junto con la funcionalidad de búsqueda integrada. Consulte [comportamiento de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [mejorar la clasificación de la búsqueda](#searchrank) de algunos recursos seleccionados.
+* **Etiquetado**: Las etiquetas ayudan a categorizar los recursos que se pueden explorar y buscar de forma más eficaz. El etiquetado ayuda a propagar la taxonomía adecuada a otros usuarios y flujos de trabajo. [!DNL Experience Manager] ofrece métodos para etiquetar recursos automáticamente mediante los servicios artificialmente inteligentes de Adobe Sensei que siguen mejorando el etiquetado de sus recursos con uso y formación. Al buscar recursos, las etiquetas inteligentes se tienen en cuenta si la función está habilitada en la cuenta. Funciona junto con la funcionalidad de búsqueda integrada. Consulte [comportamiento de búsqueda](#searchbehavior). Para optimizar el orden en que se muestran los resultados de la búsqueda, puede [mejorar la clasificación de la búsqueda](#searchrank) de algunos recursos seleccionados.
 
 * **Indexación**: En los resultados de búsqueda solo se devuelven los metadatos y recursos indexados. Para obtener una mejor cobertura y un mejor rendimiento, asegúrese de realizar una indexación adecuada y siga las prácticas recomendadas. Consulte [indexación](#searchindex).
 
@@ -453,7 +453,7 @@ Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En e
 ## Resultados y problemas de búsqueda inesperados {#unexpected-results}
 
 <!--
-**Partially related or unrelated search results**: Experience Manager may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
+**Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
 -->
 
 | Error, problemas, síntomas | Motivo posible | Posible solución o comprensión del problema |
