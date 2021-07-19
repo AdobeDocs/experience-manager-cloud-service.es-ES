@@ -1,19 +1,19 @@
 ---
 title: Facetas de búsqueda.
-description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en AEM.
+description: En este artículo se describe cómo crear, modificar y utilizar facetas de búsqueda en Experience Manager.
 feature: Buscar,Metadatos
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 23%
+source-wordcount: '2362'
+ht-degree: 21%
 
 ---
 
 # Facetas de búsqueda {#search-facets}
 
-Una implementación de Adobe Experience Manager (AEM) Assets en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede ser complicado y llevar mucho tiempo si solo utiliza las capacidades de búsqueda genéricas de AEM.
+Una implementación de Adobe Experience Manager Assets en toda la empresa tiene la capacidad de almacenar muchos recursos. A veces, encontrar el recurso adecuado puede ser complicado y llevar mucho tiempo si solo utiliza las funciones de búsqueda genéricas de Experience Manager.
 
 Utilice las facetas de búsqueda en el panel Filtros para añadir más granularidad a la experiencia de búsqueda y hacer que la funcionalidad de búsqueda sea más eficiente y versátil. Las facetas de búsqueda añaden varias dimensiones (predicados) que permiten realizar búsquedas más intrincadas. El panel Filtros incluye algunas facetas estándar. También puede agregar facetas de búsqueda personalizadas.
 
@@ -27,7 +27,7 @@ Las facetas de búsqueda que aparecen en el panel Filtros se definen en el formu
 
 Para las búsquedas de texto completo, agregue el predicado `Fulltext` al formulario. Utilice el predicado Propiedad para buscar recursos que coincidan con una sola propiedad especificada. Utilice el predicado Opciones para buscar recursos que coincidan con uno o varios valores de una propiedad concreta. Agregue el predicado Intervalo de fechas para buscar recursos creados dentro de un intervalo de fechas especificado.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
+1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y, a continuación, pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Busque y seleccione el carril de búsqueda de administración de Assets](assets/assets_admin_searchrail.png)
@@ -96,7 +96,7 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 >
 >El predicado Opciones es un envoltorio personalizado que incluye predicados de propiedades para demostrar el comportamiento descrito. Actualmente, no hay ningún extremo de REST disponible para admitir la funcionalidad de forma nativa.
 
-1. Pulse el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Tools > General > Search Forms]**.
+1. Pulse el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools > General > Search Forms]**.
 1. En la página **[!UICONTROL Buscar formularios]**, seleccione **[!UICONTROL Carril de búsqueda de administración de Assets]** y pulse el icono Editar.
 1. En la página **[!UICONTROL Editar formulario de búsqueda]**, arrastre **[!UICONTROL Predicado de opciones]** desde la pestaña **[!UICONTROL Seleccionar predicado]** al panel principal.
 1. En la pestaña **[!UICONTROL Configuración]**, indique una etiqueta y un nombre para la propiedad. Por ejemplo, para buscar recursos en función de su formato, especifique un nombre práctico para la etiqueta, por ejemplo, **[!UICONTROL Tipo de archivo]**. Indique la propiedad en función de la cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:format.`
@@ -116,9 +116,9 @@ Si desea utilizar un nodo existente, especifíquelo mediante el cuadro de diálo
 
 ## Agregar un predicado de propiedad de varios valores {#adding-a-multi-value-property-predicate}
 
-El predicado `Multi Value Property` permite buscar recursos para varios valores. Imagine un escenario en el que tiene imágenes de varios productos en AEM Assets y en el que los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
+El predicado `Multi Value Property` permite buscar recursos para varios valores. Imagine un escenario en el que tiene imágenes de varios productos en [!DNL Assets] y los metadatos de cada imagen incluyen un número de SKU asociado al producto. Puede utilizar este predicado para buscar imágenes de producto basadas en varios números de SKU.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
+1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda, arrastre un **[!UICONTROL predicado de propiedades de varios valores]** desde la pestaña **[!UICONTROL Seleccionar predicado]** hasta el panel principal.
 1. En la pestaña **[!UICONTROL Settings]**, introduzca una etiqueta y un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/dc:value`. También puede utilizar el cuadro de diálogo de selección para seleccionar un nodo.
@@ -129,9 +129,9 @@ El predicado `Multi Value Property` permite buscar recursos para varios valores.
 
 ## Agregar un predicado de etiquetas {#adding-a-tags-predicate}
 
-El predicado `Tags` permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, AEM Assets busca en los recursos una o más etiquetas que coincidan en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción que coincida con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
+El predicado `Tags` permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca en los recursos una o más etiquetas que coincidan en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción que coincida con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
-1. Haga clic en el logotipo de AEM y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL Buscar formularios]**.
+1. Haga clic en el logotipo del Experience Manager y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y, a continuación, pulse **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. En la página Editar formulario de búsqueda , arrastre **[!UICONTROL Predicado de etiquetas]** desde la ficha Seleccionar predicado hasta el panel principal.
 1. En la ficha Configuración , introduzca un texto de marcador de posición para el predicado. Especifique el nombre de la propiedad en función del cual se realizará la búsqueda en el campo de propiedad, por ejemplo `jcr:content/metadata/cq:tags`. Como alternativa, puede seleccionar un nodo en CRXDE desde el cuadro de diálogo de selección.
