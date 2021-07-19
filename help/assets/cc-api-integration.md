@@ -4,9 +4,9 @@ description: Generar variaciones de los recursos mediante la integración del Cr
 contentOwner: AG
 feature: Cargar,Procesamiento de recursos,Publicación,Microservicios de Asset compute,Flujo de trabajo
 role: User,Admin
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -14,21 +14,23 @@ ht-degree: 0%
 
 # Generar variaciones de recursos mediante la integración [!DNL Adobe Creative Cloud] {#content-automation}
 
-El complemento de automatización de contenido integra Experience Manager Assets como Cloud Service y las API de Adobe Creative Cloud para procesar creativamente sus recursos a escala. Experience Manager utiliza [asset microservices](/help/assets/asset-microservices-overview.md) basados en la nube para aprovechar las funciones de Adobe Creative Cloud y automatizar la creación de recursos y la gestión de medios.
+El complemento de automatización de contenido integra las API [!DNL Adobe Experience Manager Assets as a Cloud Service] y [!DNL Adobe Creative Cloud] para procesar creativamente sus recursos a escala. [!DNL Experience Manager] utiliza microservicios de  [recursos basados en la nube ](/help/assets/asset-microservices-overview.md) para utilizar las  [!DNL Adobe Creative Cloud] funciones y automatizar la creación de recursos y la gestión de medios.
 
-Para editar recursos en [!DNL Adobe Photoshop] y [!DNL Adobe Lightroom], no es necesario descargar, editar ni cargar en [!DNL Experience Manager Assets]. Simplemente cree y configure un perfil de procesamiento, aplique el perfil a una carpeta y cargue los recursos en la carpeta . Los recursos cargados en la carpeta se procesan para crear distintas variaciones de ese recurso. El procesamiento masivo y la edición consistentes y sencilla de recursos ahorraron esfuerzos manuales y aumentan la velocidad de contenido. Además, los desarrolladores y socios pueden ampliar los microservicios de recursos con acceso directo a estas API e incluir lógica personalizada.
+Para editar recursos en [!DNL Adobe Photoshop] y [!DNL Adobe Lightroom], no es necesario descargar recursos de [!DNL Experience Manager Assets], editarlos y cargarlos de nuevo. Puede crear y configurar un perfil de procesamiento en [!DNL Experience Manager], aplicar el perfil a una carpeta y cargar los recursos en la carpeta. Los recursos cargados se vuelven a procesar en función de los perfiles de procesamiento y se obtienen variaciones de estos recursos. El procesamiento masivo consistente y sin esfuerzo ahorra esfuerzos manuales y aumenta la velocidad de contenido, también sin necesidad de contar con excelentes habilidades creativas. Además, los desarrolladores y los socios pueden ampliar los microservicios de recursos con acceso directo a estas API e incluir lógica personalizada.
 
-Los usuarios pueden crear perfiles de procesamiento para automatizar las siguientes operaciones creativas en sus recursos:
-
+Los usuarios pueden crear perfiles de procesamiento para automatizar las siguientes operaciones creativas en sus recursos:\
+![automatizar las operaciones de Adobe Photoshop y Adobe Lightroom en los recursos](assets/content-automation.png)
 * **Tono** automático: Utiliza la inteligencia artificial para analizar el contenido de la imagen y realiza de forma inteligente correcciones de luz y color basadas en los atributos únicos de la imagen.
 * **Auto-vertical**: Utiliza inteligencia artificial para analizar el contenido de la imagen y corregir la perspectiva sesgada en las imágenes. Por ejemplo, para crear horizontes de nivel.
 * **Ajustes preestablecidos** de Lightroom: Aplica un aspecto definido por el usuario a las imágenes para lograr un aspecto uniforme mediante ajustes preestablecidos personalizados.
-* **Recorte de imagen**: Utiliza la inteligencia artificial para crear la selección alrededor de los objetos salientes y eliminar el fondo con un solo comando.
-* **Máscara** de imagen: Utiliza inteligencia artificial para crear máscara alrededor de objetos salientes con un solo comando.
+* **Recorte de imagen**: Utiliza inteligencia artificial para crear una selección alrededor de los objetos salientes y eliminar el fondo con un solo comando.
+* **Máscara** de imagen: Utiliza inteligencia artificial para crear máscaras alrededor de objetos salientes con un solo comando.
 * **Acciones** de Photoshop: Aplica una serie de tareas (en Photoshop) a un archivo o a un lote de archivos.
-* **Sustitución** de objetos inteligentes: Realiza una personalización a escala, permitiéndole intercambiar imágenes manteniendo al mismo tiempo todos los efectos y ajustes aplicados dentro de un archivo PSD.
+* **Sustitución** de objetos inteligentes: Personaliza a escala permitiéndole intercambiar imágenes manteniendo al mismo tiempo todos los efectos y ajustes aplicados dentro de un archivo PSD.
 
-## Uso de un perfil de procesamiento para procesar recursos {#process-assets}
+
+
+## Utilice un perfil de procesamiento para editar los recursos creativos de forma masiva {#process-assets}
 
 Para utilizar perfiles de procesamiento para crear variaciones automáticamente, siga estos pasos:
 
@@ -40,9 +42,11 @@ Para utilizar perfiles de procesamiento para crear variaciones automáticamente,
 
 1. Seleccione la pestaña **[!UICONTROL Creative]**, especifique la carpeta de salida, seleccione **[!UICONTROL Agregar nuevo]** para añadir una configuración creativa.
 
-1. Proporcione **[!UICONTROL Nombre de representación]** (o nombre de salida), **[!UICONTROL Extensión]** (o tipo de archivo), seleccione **[!UICONTROL Calidad]** (o parámetros de salida), seleccione Incluye y excluye listas de tipo MIME (o filtro de recursos de entrada) y seleccione la operación creativa necesaria.
+1. Proporcione **[!UICONTROL Nombre de representación]** (o nombre de salida), **[!UICONTROL Extensión]** (o tipo de archivo), seleccione **[!UICONTROL Calidad]** (o parámetros de salida), seleccione **[!UICONTROL Incluye]** y **[!UICONTROL Excluye]** listas de tipo MIME (o filtro de recurso de entrada) y seleccione la operación creativa necesaria. 10/><br/>
 
-1. Algunas operaciones requieren un parámetro adicional (recurso). Proporcione valores para estos parámetros adicionales si es necesario.
+   ![ficha creativa en perfil de procesamiento](assets/creative-processing-profile.png)
+
+1. Algunas operaciones requieren parámetros adicionales (recurso). Proporcione valores para estos parámetros adicionales, si es necesario.
 
 1. Agregue más operaciones creativas como parte del mismo perfil de procesamiento o guarde el perfil.
 
@@ -61,4 +65,5 @@ Para procesar los recursos existentes, seleccione los recursos, la opción **[!U
 >
 >* [Configure y utilice microservicios de recursos mediante perfiles](/help/assets/asset-microservices-configure-and-use.md) de procesamiento.
 >* [ [!DNL Experience Manager] Integración con [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Ingesta y procesamiento de recursos con microservicios de recursos: Información general](/help/assets/asset-microservices-overview.md).
 
