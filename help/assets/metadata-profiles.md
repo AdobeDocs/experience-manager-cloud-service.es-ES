@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadatos
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1238'
 ht-degree: 20%
 
 ---
@@ -98,7 +98,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de me
 
 **Para aplicar un perfil de metadatos globalmente, realice una de las siguientes acciones:**
 
-* Vaya a `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, aplique el perfil adecuado y haga clic en **Guardar**.
+* Vaya a `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, aplique el perfil adecuado y haga clic en **[!UICONTROL Guardar]**.
 
 * Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`. Agregue la propiedad `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Haga clic en **Guardar todo**.
 
@@ -110,7 +110,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 
 ### Eliminación de perfiles de metadatos de carpetas mediante la interfaz de usuario de Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Haga clic en el logotipo de AEM y vaya a **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Seleccione el perfil de metadatos que desea eliminar de una carpeta o varias carpetas.
 1. Haga clic en **[!UICONTROL Quitar perfil de metadatos de las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para quitar un perfil y haga clic en **[!UICONTROL Listo]**.
 
@@ -118,6 +118,6 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **Herramientas
 
 ### Eliminación de perfiles de metadatos de carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Haga clic en el logotipo de AEM y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de metadatos.
+1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de metadatos.
 1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Properties]**.
 1. Seleccione la pestaña **[!UICONTROL Perfiles de metadatos]**, seleccione **[!UICONTROL Ninguno]** en el menú desplegable y haga clic en **[!UICONTROL Guardar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
