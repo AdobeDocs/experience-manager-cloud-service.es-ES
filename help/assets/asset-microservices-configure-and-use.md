@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Microservicios de asset compute,Flujo de trabajo,Procesamiento de recursos
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2709'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Para crear un perfil de procesamiento estándar, siga estos pasos:
 
 1. Los administradores acceden a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de procesamiento]**. Haga clic en **[!UICONTROL Crear]**.
 1. Proporcione un nombre que le ayude a identificar el perfil de forma única al aplicar a una carpeta.
-1. Para generar representaciones de FPO, en la pestaña **[!UICONTROL Standard]**, habilite **[!UICONTROL Crear representación de FPO]**. Introduzca un valor **[!UICONTROL Quality]** entre 1 y 100.
+1. Para generar representaciones de FPO, en la pestaña **[!UICONTROL Image]**, habilite **[!UICONTROL Create FPO Rendition]**. Introduzca un valor **[!UICONTROL Quality]** entre 1 y 100.
 1. Para generar otras representaciones, haga clic en **[!UICONTROL Agregar nuevo]** y proporcione la siguiente información:
 
    * Nombre de archivo de cada representación.
@@ -160,8 +160,10 @@ Cree y aplique perfiles de procesamiento personalizados adicionales a carpetas e
 Aplique perfiles de procesamiento a las carpetas mediante uno de los métodos siguientes:
 
 * Los administradores pueden seleccionar una definición de perfil de procesamiento en **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]** y utilizar la acción **[!UICONTROL Apply Profile to Folder(s)]**. Abre un navegador de contenido que le permite desplazarse a carpetas específicas, seleccionarlas y confirmar la aplicación del perfil.
-* Los usuarios pueden seleccionar una carpeta en la interfaz de usuario de Assets, utilizar la acción **[!UICONTROL Properties]** para abrir la pantalla de propiedades de la carpeta, hacer clic en la pestaña **[!UICONTROL Processing Profiles]** y, en la lista emergente, seleccionar el perfil de procesamiento adecuado para esa carpeta. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
+* Los usuarios pueden seleccionar una carpeta en la interfaz de usuario de Assets, utilizar la acción **[!UICONTROL Properties]** para abrir la pantalla de propiedades de la carpeta, hacer clic en la pestaña **[!UICONTROL Asset Processing]** y, en la lista [!UICONTROL Processing Profile], seleccionar el perfil de procesamiento adecuado para esa carpeta. Para guardar los cambios, haga clic en **[!UICONTROL Guardar y cerrar]**.
    ![Aplicar perfil de procesamiento a una carpeta desde la ficha Propiedades del recurso](assets/folder-properties-processing-profile.png)
+
+* Los usuarios pueden seleccionar carpetas o recursos específicos en la interfaz de usuario de Assets para aplicar un perfil de procesamiento y, a continuación, seleccionar la opción ![icono de reprocesamiento de recursos](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Reprocesar recursos]** en las opciones disponibles en la parte superior.
 
 >[!TIP]
 >
