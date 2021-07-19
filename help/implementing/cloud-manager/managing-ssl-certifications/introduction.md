@@ -2,9 +2,9 @@
 title: 'Introducción: Administración de certificados SSL'
 description: 'Introducción: Administración de certificados SSL'
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Cloud Manager proporciona a los clientes la capacidad de autoservicio para insta
 * AEM como Cloud Service solo aceptará certificados OV(Organization Validation) o EV(Extended Validation). No se aceptarán los certificados DV(Domain Validation). Además, cualquier certificado debe ser un certificado X.509 TLS de una entidad de certificación (CA) de confianza con una clave privada RSA de 2048 bits que coincida.
 
 * AEM como Cloud Service aceptará certificados SSL comodín para un dominio.
+
+* En cualquier momento dado, Cloud Manager permitirá un máximo de 20 certificados SSL que se pueden asociar con uno o más entornos en todo el programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario de Cloud Manager permitirá instalar hasta 50 certificados SSL en el programa con esta restricción. Normalmente, un certificado puede abarcar varios dominios (hasta 100 SANs), por lo que puede considerar la posibilidad de agrupar varios dominios en el mismo certificado para permanecer por debajo de este límite.
 
 Cloud Manager es compatible con los siguientes requisitos de certificado SSL de cliente:
 
