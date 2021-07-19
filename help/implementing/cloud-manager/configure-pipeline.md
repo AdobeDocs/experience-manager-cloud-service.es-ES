@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 8b8e65c68d8a835e19ddf34fe30981da7ad265d8
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
 1. Acceda al mosaico **Canalizaciones que no son de producción** desde la pantalla de inicio de Cloud Manager.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](assets/configure-pipeline6.png)
 
 1. Haga clic en el botón **Add** para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
 
@@ -124,15 +124,13 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
    ![](assets/non-prod-pipe1.png)
 
-1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con cinco acciones, como se muestra a continuación:
+1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con tres acciones, como se muestra a continuación:
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](assets/configure-pipeline8.png)
 
    * **Editar** : permite editar la configuración de la canalización
-   * **Detalles** : proporciona detalles de la ejecución de la canalización.
    * **Generar** : navega a la página de ejecución desde la que se puede ejecutar la canalización
-   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio de Git de Cloud Manager.
-   * **Más información** : navega para comprender el recurso de documentación de canalización de CI/CD.
+   * **Administrar Git** : permite al usuario obtener la información necesaria para acceder al repositorio Git de Cloud Manager
 
 ## Pasos siguientes {#the-next-steps}
 
