@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d30384566f08b8819d3263b12939217cafb3399e
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1586'
 ht-degree: 3%
 
 ---
@@ -41,44 +41,7 @@ Consulte el vídeo [Información general de la versión de junio de 2021](https:
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.7.0 y 2021.6.0.
-
-### Fecha de la versión {#release-cm-july}
-
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.7.0 es el 15 de julio de 2021.
-La próxima versión está planificada para el 12 de agosto de 2021.
-
-### Novedades {#what-is-new-cm-july}
-
-* Los clientes ahora pueden utilizar Azul 8 y 11 JDK para sus procesos de compilación de Cloud Manager y pueden seleccionar usar uno de estos JDK para complementos Maven compatibles con las cadenas de herramientas *o* para toda la ejecución del proceso Maven.
-
-* La dirección IP de salida saliente ahora se registrará en el archivo de registro de paso de compilación.
-
-* Los entornos de fase y producción que ejecutan versiones antiguas de AEM ahora informarán de un estado de **Actualización disponible**.
-
-* El número máximo de certificados SSL admitidos ha aumentado a 20 por programa.
-
-* El número máximo de dominios que se pueden configurar ha aumentado a 500 por entorno.
-
-* Los botones **Administrar Git** se han cambiado a **Información de Git de acceso** y el cuadro de diálogo se ha actualizado visualmente.
-
-* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
-
-### Corrección de errores {#bug-fixes-cm-july}
-
-* En algunos casos, Vista previa no era una opción disponible al enlazar una Lista de permitidos IP a un entorno.
-
-* La navegación manual a la página de detalles de ejecución para una ejecución no existente no mostraba un error, solo una pantalla de carga interminable.
-
-* El mensaje de error que se muestra cuando se alcanza el número máximo de certificados SSL no es útil.
-
-* En algunas circunstancias, podría haber una discrepancia en la versión de la versión mostrada en la tarjeta de canalización de la página **Información general**.
-
-* El asistente Agregar programa indicó incorrectamente que el nombre no se puede cambiar después de la creación.
-
-### Problemas conocidos {#known-issues-cm-july}
-
-Los clientes que cambien a utilizar Azul JDKs deben tener en cuenta que no todas las aplicaciones existentes se compilarán sin error en Azul JDK. Se recomienda realizar pruebas locales antes de cambiar.
+Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.6.0 y 2021.5.0.
 
 ### Fecha de la versión {#release-date-june-cm}
 
@@ -219,16 +182,6 @@ La fecha de versión de AEM Screens as a Cloud Service es el 24 de junio de 2021
 * La instantánea de la salud del dispositivo ahorra tiempo al proporcionar un estado crítico como un vistazo.
 
 * La página de detalles del objeto ofrece un resumen de la información más relevante para cada objeto del proyecto.
-
-## Cloud Acceleration Manager {#cam}
-
-### Fecha de la versión {#release-date-july-cam}
-
-La fecha de versión de Cloud Acceleration Manager es el 15 de julio de 2021.
-
-## Novedades {#what-is-new-cam}
-
-Cloud Acceleration Manager es una aplicación basada en la nube diseñada para guiar a sus equipos de TI a lo largo del recorrido de transición, desde la planificación hasta la puesta en marcha del Cloud Service. Configure sus equipos para una migración correcta con prácticas recomendadas por el Adobe, sugerencias, documentación y herramientas que le ayudarán en cada fase del recorrido a AEM como Cloud Service. Obtenga más información [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
 
 ## Complemento CIF {#cloud-services-cif}
 
