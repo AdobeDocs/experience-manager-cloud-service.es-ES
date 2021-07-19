@@ -2,7 +2,7 @@
 title: Adición de un nombre de dominio personalizado
 description: Adición de un nombre de dominio personalizado
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Un usuario debe ser propietario empresarial o administrador de implementación p
 
 * AEM como Cloud Service no admite dominios comodín.
 
-* Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados por entorno.
+* Cada entorno de Cloud Manager puede alojar hasta un máximo de 500 dominios personalizados por entorno.
 
 * No se puede usar el mismo nombre de dominio en más de un entorno.
 
