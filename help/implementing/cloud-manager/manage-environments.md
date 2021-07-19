@@ -2,7 +2,7 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 3%
@@ -67,7 +67,7 @@ La tarjeta **Environments** de la página Información general enumera hasta tre
 
 1. Seleccione el botón **Show All** para navegar a la página de resumen **Environment** para ver una tabla con una lista completa de entornos.
 
-   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
+   ![](assets/environment-view-1.png)
 
 1. La página **Entornos** muestra la lista de todos los entornos existentes.
 
