@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Administración de recursos,Perfiles de imagen,Representaciones
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2714'
 ht-degree: 7%
 
 ---
@@ -160,7 +160,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 #### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde Propiedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desea aplicar un perfil de imagen.
+1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Assets]**. A continuación, vaya a la carpeta principal de la carpeta a la que desea aplicar un perfil de imagen.
 1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **[!UICONTROL Properties]**.
 1. Seleccione la pestaña **[!UICONTROL Image Profiles]**. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione el perfil y, a continuación, seleccione **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
