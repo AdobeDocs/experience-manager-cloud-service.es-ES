@@ -2,15 +2,15 @@
 title: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
+source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 4%
+source-wordcount: '1535'
+ht-degree: 3%
 
 ---
 
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service {#release-notes}
+# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La siguiente sección describe las notas de la versión generales de la versión actual (más reciente) de [!DNL Experience Manager] como Cloud Service.
 
@@ -26,7 +26,7 @@ La siguiente sección describe las notas de la versión generales de la versión
 La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2021.4.0 es el 6 de mayo de 2021.
 La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
-## AEM como Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Novedades {#what-is-new-foundation}
 
@@ -65,6 +65,8 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 * Al importar recursos mediante la herramienta de importación masiva, los administradores ahora tienen la opción de eliminar los archivos de origen una vez realizada la importación correctamente. Consulte [ingesta masiva de recursos](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Al editar un esquema de metadatos, un nuevo campo selector de ruta raíz permite a los administradores realizar la selección de forma rápida y sencilla, lo que reduce el tiempo de configuración.
+
+* Al editar un esquema de metadatos, se agrega un tipo de datos que proporciona un área de texto de forma libre en el editor de metadatos. Los usuarios pueden utilizar este área de texto para introducir texto de forma libre como metadatos de un recurso. Consulte [editor de esquema de metadatos](/help/assets/metadata-schemas.md).
 
 * Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un archivo CSV. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden aprovechar un formato diferente actualizando el encabezado de la columna. Por ejemplo, agregue `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
 
