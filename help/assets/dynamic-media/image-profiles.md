@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Administración de recursos,Perfiles de imagen,Representaciones
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
+source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2762'
 ht-degree: 7%
 
 ---
@@ -160,9 +160,15 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 #### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde Propiedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Assets]**. A continuación, vaya a la carpeta principal de la carpeta a la que desea aplicar un perfil de imagen.
-1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **[!UICONTROL Properties]**.
-1. Seleccione la pestaña **[!UICONTROL Image Profiles]**. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione el perfil y, a continuación, seleccione **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]**.
+1. Vaya a una *carpeta* (no un recurso) a la que desee aplicar un perfil de imagen.
+1. En función de la vista en la que se encuentre, realice una de las siguientes acciones:
+   * En Vista de tarjeta, pase el puntero sobre la carpeta y, a continuación, seleccione la marca de verificación para seleccionarla.
+   * En Vista de columna o Vista de lista, seleccione la casilla de verificación situada a la izquierda del nombre de la carpeta.
+1. En la barra de herramientas, seleccione **[!UICONTROL Properties]**.
+1. Seleccione la pestaña **[!UICONTROL Dynamic Media Processing]**.
+1. En **[!UICONTROL Perfil de imagen]**, en la lista desplegable **[!UICONTROL Nombre de perfil]**, seleccione el perfil que desee aplicar.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
