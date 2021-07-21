@@ -4,9 +4,9 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Fragmentos de contenido
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2312'
 ht-degree: 7%
 
 ---
@@ -167,9 +167,10 @@ UniqueContent (para el campo específico) debe ser único en todos los fragmento
    Las variaciones pueden tener el mismo valor *único* que las variaciones del mismo fragmento, pero no el mismo valor que se utiliza en cualquier variación de otros fragmentos.
 
 * ****
-TranslatableSi activa la casilla &quot;Translatable&quot; en un campo del editor de modelos de CF,
+TranslatableComprobación de la variable 
+**** Translatablecheckbox de un campo en el editor del Modelo de fragmento de contenido:
 
-   * Asegúrese de que el nombre de propiedad del campo se agrega en la configuración de traducción, contexto `/content/dam/<sites-configuration>`, si no está presente.
+   * Asegúrese de que el nombre de propiedad del campo se agrega a la configuración de traducción, contexto `/content/dam/<sites-configuration>`, si no está presente.
    * Para GraphQL: establezca una propiedad `<translatable>` en el campo Fragmento de contenido en `yes` para permitir que el filtro de consulta de GraphQL para la salida JSON con solo contenido traducible.
 
 * Consulte **[Content Reference](#content-reference)** para obtener más información sobre ese tipo de datos específico y sus propiedades.
