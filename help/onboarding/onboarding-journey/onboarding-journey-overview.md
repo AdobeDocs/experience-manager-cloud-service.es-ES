@@ -4,10 +4,10 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '709'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | # | Artículo | Descripción |
 |---|---|---|
 | 0 | Recorrido de incorporación | Este documento |
-| 1 | Obtenga información sobre los conceptos de incorporación, como:<br>System Administrator<br>Admin Console<br>Adobe Identity Management System<br>Adobe ID<br>Introducción a Cloud Manager<br>AEM como equipo Cloud Service y perfiles de producto<br>Compatibilidad con Adobes | Obtenga información sobre los conceptos de incorporación. |
+| 1 | Obtenga información sobre los conceptos de incorporación, como:<br>[System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[Adobe Identity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[AEM como equipo Cloud Service y perfiles de producto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en) a12/>Compatibilidad con Adobes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en)<br>[ | Obtenga información sobre los conceptos de incorporación. |
 | 2 | Introducción a la incorporación | Obtenga información sobre cómo iniciar sesión en Admin Console y comprobar su perfil como administrador del sistema |
 | 3 | Asignar miembros del equipo a perfiles de producto de Cloud Manager | Revise los perfiles de producto de Cloud Manager y aprenda a asignar miembros del equipo a perfiles de producto de Cloud Manager. |
 | 4 | Configuración de recursos de Cloud mediante Cloud Manager | Descubra cómo se crean sus recursos de nube y quién puede hacerlo. Además, conozca cómo se crean el programa y los entornos de la nube. |
