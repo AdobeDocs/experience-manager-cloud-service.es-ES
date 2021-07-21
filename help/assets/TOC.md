@@ -4,10 +4,10 @@ user-guide-title: Guía de Assets as a Cloud Service
 breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 71%
+source-wordcount: '481'
+ht-degree: 66%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 71%
    + [Administrar recursos de vídeo](manage-video-assets.md)
    + [Descargar recursos](download-assets-from-aem.md)
    + [Insertar y sacar recursos para editar](check-out-and-submit-assets.md)
-   + [Digital Rights Management para recursos](drm.md)
+   + [Digital Rights Management para los recursos](drm.md)
    + [Recursos de marca de agua](watermark-assets.md)
    + [Procesamiento de recursos mediante  [!DNL Creative Cloud] API](cc-api-integration.md)
 + Configurar, administrar y ampliar [!DNL Assets] {#admin}
@@ -112,8 +112,8 @@ ht-degree: 71%
    + [Imágenes interactivas](dynamic-media/interactive-images.md)
    + [Vídeos interactivos](dynamic-media/interactive-videos.md)
    + [Vídeo de RV 360](dynamic-media/360-video.md)
-   + [Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](dynamic-media/launch.md)
-   + [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](dynamic-media/custom-pop-ups.md)
+   + [Integración de visores de Dynamic Media con etiquetas de Adobe Analytics y Adobe Experience Platform](dynamic-media/tags.md)
+   + [Uso de la vista rápida para crear ventanas emergentes personalizadas](dynamic-media/custom-pop-ups.md)
    + [Distribución de imágenes adaptables para un sitio interactivo](dynamic-media/responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](dynamic-media/previewing-assets.md)
    + [Agregar recursos de Dynamic Media a las páginas](dynamic-media/adding-dynamic-media-assets-to-pages.md)
