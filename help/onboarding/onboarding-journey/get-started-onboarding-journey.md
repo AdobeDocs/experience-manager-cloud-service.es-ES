@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -21,25 +21,19 @@ Como administrador del sistema, este documento resume los primeros pasos de su r
 
 Después de leer esta sección debe poder:
 
-* Comprender qué es el Admin Console
 * Acceso e inicio de sesión en el Admin Console
 * Revise sus privilegios como administrador del sistema a través del Admin Console
 
-## Explicación del Admin Console {#login-admin-console}
-
-Después de firmar el contrato, Adobe Managed Services (AMS) inicia la incorporación del cliente.
-
-Una vez firmado el contrato, el Adobe completará el aprovisionamiento de su organización, tras lo cual el administrador del sistema de su organización recibirá un correo electrónico de bienvenida que le permitirá realizar tareas de administrador del sistema, como agregar usuarios y asignarlos a funciones.
-
-La Admin Console de Adobe es un lugar central para administrar las licencias y los usuarios de los productos de Adobe. El administrador del sistema iniciará sesión en la consola de administración de Adobe para agregar o quitar usuarios y más. Haga clic [aquí](https://adminconsole.adobe.com/) para acceder a la consola de administración de Adobe.
+>[!NOTE]
+>Antes de iniciar el proceso de incorporación, asegúrese de obtener más información sobre Adobe Admin Console. La Admin Console de Adobe es un lugar central para administrar las licencias y los usuarios de los productos de Adobe. El administrador del sistema iniciará sesión en la consola de administración de Adobe para agregar o quitar usuarios y más. Consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) para obtener más información.
 
 
-## Pasos para iniciar sesión en el Admin Console {#steps-admin-console}
+## Inicio de sesión en el Admin Console {#steps-admin-console}
 
 Siga los pasos a continuación para ir al Admin Console y revisar la función del administrador del sistema desde el Admin Console:
 
 >[!NOTE]
->Debe ser administrador del sistema para poder completar correctamente los siguientes pasos.
+>Debe ser administrador del sistema para completar correctamente los siguientes pasos.
 
 1. Haga clic en **Introducción** desde el correo electrónico de bienvenida, como se muestra en la figura siguiente, para ir al Admin Console o navegar directamente al Admin Console desde [aquí](https://adminconsole.adobe.com).
 
