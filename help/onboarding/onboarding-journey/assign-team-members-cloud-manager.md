@@ -4,7 +4,7 @@ description: Siga esta página para obtener información sobre cómo asignar mie
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
+source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Los siguientes pasos le guían a través de esto:
    >[!NOTE]
    >Consulte [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) para asegurarse de que se asignen a los usuarios adecuados las funciones correctas en el Admin Console, como se ve a continuación.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >Asigne el usuario al menos a un perfil de producto para que el usuario pueda acceder a Cloud Manager. Recuerde asignarse a usted mismo (administrador del sistema) al propietario del negocio.
@@ -121,7 +121,7 @@ Felicitaciones! Ahora, se ha configurado su nuevo equipo de Cloud Manager, inclu
    >[!NOTE]
    >Consulte [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) para asegurarse de que se asignen a los usuarios adecuados las funciones correctas en el Admin Console, como se ve a continuación.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
    >[!IMPORTANT]
    >El usuario se puede agregar al perfil de producto de Deployment Manager después de crear los recursos de Cloud Manager.
@@ -147,7 +147,7 @@ Felicitaciones! Ahora, se ha configurado su nuevo equipo de Cloud Manager, inclu
    >[!NOTE]
    >Consulte [Cloud Manager product profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles) para asegurarse de que se asignen a los usuarios adecuados las funciones correctas en el Admin Console, como se ve a continuación.
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
 
    >[!IMPORTANT]
