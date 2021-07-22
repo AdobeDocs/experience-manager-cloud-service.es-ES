@@ -4,15 +4,15 @@ description: Siga esta página para obtener información sobre cómo asignar int
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
 
 
-# Asignación a AEM como perfiles de producto de Cloud Service {#assign-team-members-cloud-service}
+# Asignación de miembros del equipo a AEM como perfiles de producto del Cloud Service {#assign-team-members-cloud-service}
 
 ## Objetivo {#objective}
 
