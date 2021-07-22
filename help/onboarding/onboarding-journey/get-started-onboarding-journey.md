@@ -4,14 +4,14 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# Introducción al proceso de integración {#getting-started}
+# Introducción al proceso de incorporación {#getting-started}
 
 La incorporación es el proceso durante el cual un administrador del sistema designado se configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
