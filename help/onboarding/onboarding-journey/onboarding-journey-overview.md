@@ -4,10 +4,10 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 1%
+source-wordcount: '646'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-Esta guía le guiará por los temas más importantes para que, al completarse, el lector:
+Esta guía le guía por los temas más importantes, de modo que al completarse:
 
 * Comprender plenamente lo que cabe esperar durante el AEM como Cloud Service de recorrido de incorporación.
 * Han permitido a su equipo ponerse en marcha y dar los primeros pasos para aprender a crear y desarrollar contenido para su AEM como aplicación de Cloud Service.
@@ -31,18 +31,13 @@ Esto significa que:
 
 ## Audience {#audience}
 
-La incorporación es el proceso durante el cual un administrador del sistema designado se configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
+La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
 A continuación se ilustra el recorrido de incorporación y cada paso del recorrido se describe detalladamente en las secciones siguientes.
 
 ## Exploración del Recorrido de integración {#exploring-onboarding-journey}
 
-
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre los pasos de incorporación para AEM como Cloud Service. Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en la incorporación, le recomendamos que comience por el principio y avance secuencialmente.
-
-Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan los conocimientos básicos necesarios para el proceso de incorporación y le permiten acceder a documentación técnica detallada.
-
-Aunque puede ir directamente a una parte concreta del recorrido, muchos conceptos se basan en los de artículos anteriores. Por lo tanto, si es nuevo en la incorporación, le recomendamos que comience por revisar los artículos mencionados en la sección Conozca conceptos de incorporación de la Guía.
 
 | # | Artículo | Descripción |
 |---|---|---|
