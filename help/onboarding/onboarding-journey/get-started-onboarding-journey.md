@@ -1,17 +1,17 @@
 ---
-title: Introducción al Recorrido de integración
+title: Introducción al proceso de integración
 description: Siga esta página para obtener información sobre cómo empezar a utilizar el recorrido de incorporación
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
-# Introducción al Recorrido de integración {#getting-started}
+# Introducción al proceso de integración {#getting-started}
 
 La incorporación es el proceso durante el cual un administrador del sistema designado se configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
@@ -67,5 +67,5 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha iniciado sesión en el Admin Console y ha comprobado su perfil como administrador del sistema, debe continuar con el recorrido de integración revisando el documento Asignar miembros del equipo a perfiles de producto de Cloud Manager.
+Ahora que ha iniciado sesión en el Admin Console y ha comprobado su perfil como administrador del sistema, debe continuar con el recorrido de incorporación revisando el documento Asignar miembros del equipo a perfiles de producto de Cloud Manager.
 
