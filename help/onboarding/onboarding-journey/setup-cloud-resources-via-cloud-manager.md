@@ -4,25 +4,25 @@ description: Siga esta página para obtener información sobre cómo configurar 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
 # Configuración de recursos de Cloud mediante Cloud Manager {#setup-cloud-resources}
 
-El administrador del sistema asignado a la función &quot;Propietario empresarial&quot; debe acceder a Cloud Manager e iniciar sesión en él. A continuación, un miembro del equipo asignado al perfil de producto &quot;Propietario empresarial&quot; debe iniciar sesión en Cloud Manager y crear el programa y los entornos de la nube para que su equipo de expertos pueda empezar.
+El administrador del sistema asignado a la función *Propietario del negocio* debe acceder a Cloud Manager e iniciar sesión. A continuación, un miembro del equipo asignado al perfil de producto *Propietario empresarial* debe iniciar sesión en Cloud Manager y crear el programa y los entornos de la nube para que su equipo de expertos pueda empezar.
 
 ## Objetivo {#objective}
 
 Este documento le ayuda a comprender cómo se crean los recursos de la nube y quién puede hacerlo.
 
-Después de leer esta sección debe:
+Después de leer esta sección debe comprender:
 
-* Comprenda que un administrador del sistema asignado a la función &quot;Propietario empresarial&quot; debe ser el primero en acceder a Cloud Manager e iniciar sesión
-* Comprenda cómo se crean el programa y los entornos de la nube.
+* Un administrador del sistema asignado a la función *Propietario del negocio* debe ser el primero en acceder a Cloud Manager e iniciar sesión en él.
+* Cómo se crean el programa y los entornos de la nube.
 
 ## Introducción {#introduction}
 
@@ -32,34 +32,45 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
 
 ### Requisitos previos {#prerequisites}
 
-* El administrador del sistema asignado a la función &quot;Propietario empresarial&quot; debe acceder a Cloud Manager e iniciar sesión en él.
+* El administrador del sistema asignado a la función *Propietario del negocio* debe acceder a Cloud Manager e iniciar sesión.
 
-* Obtenga información sobre cómo navegar e iniciar sesión en Cloud Manager
+* Obtenga información sobre cómo [navegar e iniciar sesión en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en).
 
-* Familiarícese con los perfiles de producto de Cloud Manager
+* Familiarícese con los [perfiles de producto de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles).
 
 * Comprenda las consideraciones para crear su programa. Vea este vídeo para obtener más información.
 
-* Comprender los conceptos de los programas y entornos de Cloud Manager
+* Entender los conceptos de los [programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) y [entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) de Cloud Manager
 
 ## Navegar a Cloud Manager {#navigate-cloud-manager}
 
-1. El usuario &quot;Propietario del negocio&quot; recibirá un correo electrónico de bienvenida desde el que podrá empezar, o si no puede encontrarlo, vaya directamente a experience.adobe.com e inicie sesión con su Adobe ID.
+1. El usuario *Propietario del negocio* recibirá un correo electrónico de bienvenida desde el que podrá empezar, o si no puede encontrarlo, vaya directamente a [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) e inicie sesión con su Adobe ID.
 
-1. En la página de inicio del Experience Cloud, seleccione Experience Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. En la página de inicio de Adobe Experience Cloud, seleccione **Experience Manager**.
 
-1. Esto lo llevará a la página principal de AEM. Desde aquí, seleccione Cloud Manager:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. Esto lo llevará a la página principal de AEM. A partir de aquí, inicie **Cloud Manager** .
 
-1. Esto lo llevará a la página de aterrizaje de Cloud Manager como se muestra a continuación:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. Aparece la página de aterrizaje de Cloud Manager, como se muestra en la figura siguiente.
 
-1. Ahora compruebe que se le ha asignado el perfil de producto del propietario del negocio. Para ello, seleccione su perfil en la parte superior derecha como se muestra a continuación:
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. Compruebe que se le ha asignado el perfil de producto del propietario del negocio. Para ello, seleccione su perfil en la parte superior derecha, como se muestra a continuación.
 
-1. Ahora seleccione Funciones de usuario y asegúrese de que está asignado a Propietario empresarial.
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. Seleccione **Funciones de usuario** y asegúrese de que está asignado a Propietario empresarial.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. Esto confirma la función de usuario como propietario empresarial.
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
 
    ¡bueno trabajo! Ha iniciado sesión correctamente en Cloud Manager como propietario empresarial.
 
