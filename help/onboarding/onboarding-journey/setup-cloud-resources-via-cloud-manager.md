@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo configurar 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
 
 * Entender los conceptos de los [programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) y [entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) de Cloud Manager
 
-## Navegar a Cloud Manager {#navigate-cloud-manager}
+## Vaya a Cloud Manager {#navigate-cloud-manager}
 
 1. El usuario *Propietario del negocio* recibirá un correo electrónico de bienvenida desde el que podrá empezar, o si no puede encontrarlo, vaya directamente a [Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home) e inicie sesión con su Adobe ID.
 
@@ -74,8 +74,9 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
 
    ¡bueno trabajo! Ha iniciado sesión correctamente en Cloud Manager como propietario empresarial.
 
-## Creación del programa del Cloud Service {#create-cloud-service-program}
+## Crear programa de Cloud Service {#create-cloud-service-program}
 
+Siga los pasos a continuación para crear su programa de servicios en la nube desde Cloud Manager:
 
 1. Vaya a la página de aterrizaje de Cloud Manager como se muestra a continuación.
 
@@ -101,11 +102,13 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
    ¡bueno trabajo! Ahora que el programa se ha creado correctamente, el Git de Cloud Manager está disponible para que sus desarrolladores tengan acceso a él.
 
 
-## Creación de entornos de Cloud {#create-cloud-environments}
+## Crear entornos de Cloud {#create-cloud-environments}
+
+Siga los pasos a continuación para crear los entornos de nube desde Cloud Manager:
 
 1. Una vez que haya creado correctamente su programa de nube, cree sus entornos de nube navegando a la página de información general de Cloud Manager y seleccionando Agregar en la tarjeta de entorno.
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >Un usuario de Cloud Manager con la función Propietario empresarial o Administrador de implementación debe iniciar sesión para completar correctamente este paso.
 
    Además, vea el tutorial de vídeo rápido para obtener más información sobre los entornos de Cloud Manager y cómo puede añadirlos a su programa.
@@ -119,7 +122,9 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
 
 ## Siguientes pasos {#whats-next}
 
-Ahora los integrantes del equipo deben tener permisos para la instancia, ya que los permisos para administrar Cloud Manager no serán suficientes. Ahora que los recursos de la nube se han creado y están listos para que su equipo los pueda acceder, el administrador del sistema debe asignar los integrantes del equipo a AEM como perfiles de producto de Cloud Service de Admin Console.
+Los miembros del equipo deben tener permisos para la instancia, ya que los permisos para administrar Cloud Manager no serán suficientes. Ahora que los recursos de la nube se han creado y están listos para que su equipo los pueda acceder, el administrador del sistema debe asignar a los integrantes del equipo AEM como perfiles de producto de Cloud Service de Admin Console.
+
+Debe continuar con su recorrido de incorporación revisando el documento Asignando integrantes del equipo a AEM como perfiles de producto de Cloud Service.
 
 >[!NOTE]
 >Para que se le conceda acceso a AEM como Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto &quot;AEM usuarios&quot; o &quot;AEM administradores&quot;. Más información.
@@ -128,7 +133,7 @@ Ahora los integrantes del equipo deben tener permisos para la instancia, ya que 
 
 Siga los recursos adicionales para obtener más información:
 
-* Tipos de programas y adición de un programa
-* Tipos de entorno y adición de un entorno
-* Administración de Git de Cloud Manager
-* Configuración del acceso a AEM como Cloud Service desde el Admin Console
+* [Tipos de programas y adición de un programa](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [Tipos de entorno y adición de un entorno](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [Administración de Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Configuración del acceso a AEM como Cloud Service desde el Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
