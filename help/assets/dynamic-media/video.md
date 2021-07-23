@@ -4,9 +4,9 @@ description: Aprenda a trabajar con vídeo en Dynamic Media.
 feature: Perfiles de vídeo
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9459'
 ht-degree: 4%
 
 ---
@@ -151,7 +151,7 @@ El flujo de vídeo adaptable es compatible con varias plataformas iOS. Consulte 
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos BlackBerry® compatibles con este formato de vídeo en el siguiente enlace: [Formatos de vídeo compatibles con BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Puede encontrar los dispositivos Windows® compatibles con este formato de vídeo en el siguiente enlace: [Formatos de vídeo compatibles con Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)
+Puede encontrar dispositivos Windows® compatibles con este formato de vídeo en los siguientes [formatos de vídeo compatibles en Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 * Reproduzca el vídeo con los ajustes preestablecidos del visualizador de vídeo de Dynamic Media, que incluyen lo siguiente:
 
@@ -301,7 +301,7 @@ En la tabla siguiente se describe el tamaño recomendado, la proporción de aspe
 
 Puede obtener los metadatos de un archivo consultando sus metadatos con una herramienta de edición de vídeo o utilizando una aplicación diseñada para obtener metadatos. A continuación se indican las instrucciones para utilizar MediaInfo, una aplicación de terceros, para obtener los metadatos de un archivo de vídeo:
 
-1. Vaya a esta página web: [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
+1. Vaya a [Descarga de MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
 1. Seleccione y descargue el instalador para la versión GUI, y siga las instrucciones de instalación.
 1. Después de la instalación, haga clic con el botón derecho en el archivo de vídeo (solo Windows®) y seleccione MediaInfo, o abra MediaInfo y arrastre el archivo de vídeo a la aplicación. Verá todos los metadatos asociados con el archivo de vídeo, incluida su anchura, altura y fps.
 
