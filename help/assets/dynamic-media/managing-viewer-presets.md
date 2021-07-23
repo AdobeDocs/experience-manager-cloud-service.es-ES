@@ -4,9 +4,9 @@ description: Aprenda a crear y administrar ajustes preestablecidos de visor en D
 feature: Ajustes preestablecidos de visualizador, visualizadores
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4231'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,7 @@ Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynami
 * Apple iPad
 * Smartphone Android™
 * Tableta Android™
-* Para vídeo, se proporciona compatibilidad adicional para la reproducción de MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) y [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)).
+* Para vídeo, se proporciona compatibilidad adicional para la reproducción de MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) y [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Tipos de medios enriquecidos para ajustes preestablecidos de visor {#rich-media-types-for-viewer-presets}
 
