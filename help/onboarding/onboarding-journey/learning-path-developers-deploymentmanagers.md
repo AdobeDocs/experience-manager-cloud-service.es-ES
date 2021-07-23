@@ -4,9 +4,9 @@ description: Siga esta página para conocer los pasos siguientes después de obt
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Para obtener más información sobre este tema, vaya aquí
 
 ## Siguientes pasos {#whats-next}
 
-Los responsables de desarrollo e implementación ya están listos para familiarizarse con el desarrollo de código en AEMaaCS. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación.
+Los responsables de desarrollo e implementación ya están listos para familiarizarse con el desarrollo de código en AEM como Cloud Service. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación.
 
 ## Recursos adicionales {#additional-resources}
 
