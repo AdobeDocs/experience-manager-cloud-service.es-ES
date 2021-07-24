@@ -4,9 +4,9 @@ description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!
 feature: Información de la versión
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
+source-git-commit: bb4c1377da4bbca6c54ec2a0ec0a0b31f9182485
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '983'
 ht-degree: 5%
 
 ---
@@ -56,7 +56,7 @@ Para realizar una validación completa del código y el proceso, incluido el pro
 | Reescritura de metadatos | Funciona de forma diferente | Deshabilitado de forma predeterminada. Habilite el lanzador del flujo de trabajo correspondiente si es necesario. La reescritura se gestiona mediante microservicios de recursos. |
 | Procesamiento de recursos cargados mediante el Administrador de paquetes | Necesita una intervención manual. | Vuelva a procesar manualmente mediante la acción **[!UICONTROL Reprocesar recurso]**. |
 | Detección de tipo MIME | No se admite. | Si carga un recurso digital sin extensión o con una extensión incorrecta, es posible que no se procese como desee. Los usuarios aún pueden almacenar los archivos binarios sin una extensión en DAM. Consulte [Detección de tipo MIME en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
-| Generación de subconjuntos para o anotar recursos compuestos | No se admite. | Es posible que no se cumplan los casos de uso dependientes. Consulte [creación de subactivos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). |
+| Generación de subrecursos para un activo compuesto | No se admite. | Es posible que no se cumplan los casos de uso dependientes, como las anotaciones. Consulte [creación de subactivos en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). La vista previa en PDF de algunos tipos de archivo está disponible como función de [versión preliminar en la versión 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md#beta-features-assets). Consulte [cómo acceder al canal de prelanzamiento](/help/release-notes/prerelease.md). |
 | Página principal | No se admite. | Consulte [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extraer recursos del archivo ZIP | No se admite. | Consulte [Extracción ZIP en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Clasificaciones de activos | No se admite. | No se admite el widget de clasificación del editor de esquemas de metadatos. |
