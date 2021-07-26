@@ -4,10 +4,10 @@ description: Siga esta página para conocer los pasos siguientes después de obt
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '407'
+ht-degree: 3%
 
 ---
 
@@ -51,19 +51,19 @@ Los responsables de desarrollo e implementación ya están listos para familiari
 
 ## Recursos adicionales {#additional-resources}
 
-* Acceso a la administración de cuentas de Git y Git desde Cloud Manager
+* [Acceso a la administración de cuentas de Git y Git desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* Entorno de desarrollo local para AEM as a Cloud Service
+* [Entorno de desarrollo local para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* Introducción a AEM Sites (tutorial)
+* [Introducción a AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* Introducción al AEM SPA Editor y React | Adobe Experience Manager
+* [Introducción al AEM SPA Editor y React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* Introducción al Editor de SPA y Angular de AEM
+* [Introducción al Editor de SPA y Angular de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* Introducción a AEM sin encabezado: GraphQL
+* [Introducción a AEM sin encabezado: GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* Introducción a AEM SPA Editor para desarrolladores
+* [Introducción a AEM SPA Editor para desarrolladores](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 ### Cursos para Experience League {#experience-league-courses}
 
