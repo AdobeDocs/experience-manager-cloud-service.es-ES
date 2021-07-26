@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Buscar,Metadatos,Distribución de recursos
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '4911'
+source-wordcount: '4902'
 ht-degree: 6%
 
 ---
@@ -226,11 +226,7 @@ Los autores pueden utilizar el buscador de contenido para buscar en el repositor
 
 ## Selector de recursos {#asset-picker}
 
->[!NOTE]
->
->El selector de recursos se llamaba [selector de recursos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de [!DNL Adobe Experience Manager].
-
-El selector de recursos permite buscar, filtrar y examinar los recursos DAM de una forma especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos que seleccione mediante el selector de recursos. Puede iniciarlo con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selección única o múltiple). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda en particular y permanecen intactos durante toda la selección.
+El selector de recursos (denominado selector de recursos en versiones anteriores de [!DNL Adobe Experience Manager]) le permite buscar, filtrar y examinar los recursos de DAM de una forma especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos que seleccione mediante el selector de recursos. Puede iniciarlo con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selección única o múltiple). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda en particular y permanecen intactos durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. Solo funciona en el modo de exploración y solo con la página de resultados de Omnisearch.
 
