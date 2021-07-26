@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo configurar 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
 
 Siga los pasos a continuación para crear su programa de servicios en la nube desde Cloud Manager:
 
-1. Vaya a la página de aterrizaje de Cloud Manager como se muestra a continuación.
+1. Vaya a la página de aterrizaje de Cloud Manager, como se muestra a continuación.
 
    >[!NOTE]
    >Debe ser un miembro del equipo asignado al perfil de producto Propietario empresarial de Cloud Manager para completar correctamente este paso.
@@ -137,12 +137,13 @@ Siga los pasos a continuación para crear los entornos de nube desde Cloud Manag
 
 ## Siguientes pasos {#whats-next}
 
-Los miembros del equipo deben tener permisos para la instancia, ya que los permisos para administrar Cloud Manager no serán suficientes. Ahora que los recursos de la nube se han creado y están listos para que su equipo los pueda acceder, el administrador del sistema debe asignar a los integrantes del equipo AEM como perfiles de producto de Cloud Service de Admin Console.
+Los miembros del equipo deben tener permisos para la instancia, ya que los permisos para administrar Cloud Manager no serán suficientes. Ahora que los recursos de la nube se han creado y están listos para que su equipo los pueda acceder, el administrador del sistema debe asignar a los integrantes del equipo AEM como perfiles de producto de Cloud Service de Adobe Admin Console.
+
+>[!NOTE]
+>Para obtener acceso a AEM como Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto `AEM Users` o `AEM Administrators`. Consulte [Administración de productos y acceso de usuario en Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console) para obtener más información.
 
 Debe continuar con su recorrido de incorporación revisando el documento Asignando integrantes del equipo a AEM como perfiles de producto de Cloud Service.
 
->[!NOTE]
->Para que se le conceda acceso a AEM como Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto &quot;AEM usuarios&quot; o &quot;AEM administradores&quot;. Más información.
 
 ## Recursos adicionales {#additional-resources}
 
