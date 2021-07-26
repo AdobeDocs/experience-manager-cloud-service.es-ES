@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Administración de activos
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '1025'
+ht-degree: 3%
 
 ---
 
@@ -109,6 +109,6 @@ Si no necesita la funcionalidad de descarga, deshabilite el servlet para evitar 
 >[!MORELIKETHIS]
 >
 >* [Descargar recursos protegidos DRM](drm.md)
-* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Win o Mac local](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es)
+* [Descargar recursos mediante la aplicación de escritorio de Experience Manager en Win o Mac local](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 * [Descargar recursos mediante el vínculo de recursos de Adobe desde las aplicaciones de Adobe Creative Cloud compatibles](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
