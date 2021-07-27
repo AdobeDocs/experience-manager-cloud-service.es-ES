@@ -1,9 +1,9 @@
 ---
 title: Creación de representaciones de vídeo de Screens en Screens como Cloud Service
 description: En esta página se describe cómo crear representaciones de vídeo de Screens en Screens como Cloud Service.
-source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
+source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -39,20 +39,30 @@ Esta guía describe cómo crear representaciones de vídeo utilizadas en reprodu
 
 1. Vaya a la pestaña **Video** para añadir una codificación de vídeo y haga clic en **Add New**.
 
+   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+
+1. Introduzca el **Nombre de codificación** como , **screens-fullhd** y la **Velocidad de bits** como **2500**.
+
+   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Asegúrese de utilizar el nombre de codificación que empieza por &quot;screens-&quot;, solo se considerará que estas representaciones de vídeo reproducen la experiencia de vídeo en Screens As a Cloud Service. Introduzca la velocidad de bits que se adapte a sus vídeos (2500 kbps para vídeo de 720 px y 5000 kbps para 1080 px)
+   >Asegúrese de utilizar el nombre de codificación que empieza por &quot;screens-&quot;, solo se considerará que estas representaciones de vídeo reproducen la experiencia de vídeo en Screens como Cloud Service. Introduzca la velocidad de bits que funciona para sus vídeos (2500 kbps para vídeo de 720 px y 5000 kbps para 1080 px).
 
    >[!NOTE]
-   >Se pueden agregar varias representaciones de vídeo con distintos niveles de anchura, altura y velocidad de bits para adaptarlas a sus necesidades, pero recuerde que los dispositivos Screens descargarán todas las representaciones de vídeo de pantallas, aunque el dispositivo solo reproduzca vídeo.
+   >Se pueden agregar varias representaciones de vídeo con anchura/altura/velocidad de bits variables para trabajar en los vídeos. Recuerde que los dispositivos Screens descargarán todas las representaciones de pantallas, aunque el dispositivo solo reproduzca la representación de vídeo.
 
-1. Haga clic en Guardar
+1. Haga clic en **Save**.
 
-1. Seleccione el perfil de procesamiento y haga clic en &quot;Aplicar perfil a las carpetas&quot;
+1. Seleccione el perfil de procesamiento y haga clic en **Aplicar perfil a las carpetas**.
 
-1. Seleccione las carpetas en las que se guardan los vídeos de Screens y haga clic en Aplicar
+   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. Puede crear varios perfiles de procesamiento y aplicarlos a las carpetas correspondientes, de modo que los vídeos de esas carpetas obtengan las representaciones de vídeo específicas
+1. Seleccione las carpetas en las que se guardan los vídeos de Screens y haga clic en **Aplicar**.
 
-1. Al cargar cualquier vídeo en la carpeta donde se aplique el perfil de procesamiento, los vídeos se procesarán y se crearán representaciones configuradas, que los dispositivos Screens utilizarán para reproducir los vídeos.
+   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+
+   >[!NOTE]
+   >* Puede crear varios perfiles de procesamiento y aplicarlos a las carpetas correspondientes, de modo que los vídeos de esas carpetas obtengan las representaciones de vídeo específicas.
+   >* Cuando se cargan vídeos a la carpeta donde se aplica el perfil de procesamiento, estos se procesan y se crean representaciones configuradas, que los dispositivos Screens utilizan para reproducir los vídeos.
+
 
