@@ -5,21 +5,21 @@ contentOwner: AG
 feature: Etiquetas inteligentes,Etiquetado
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 6%
+source-wordcount: '2379'
+ht-degree: 5%
 
 ---
 
 
-# Agregue etiquetas inteligentes a los recursos para mejorar la experiencia de búsqueda {#smart-tag-assets-for-faster-search}
+# Agregue etiquetas inteligentes a los recursos y mejore la experiencia de búsqueda {#smart-tag-assets-for-faster-search}
 
 Las organizaciones que se ocupan de los recursos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Esencialmente, incluye una lista de palabras clave que los empleados, socios y clientes suelen utilizar para referirse a sus recursos digitales y buscarlos. El etiquetado de recursos con vocabulario controlado por taxonomía garantiza que los recursos se puedan identificar y recuperar fácilmente en las búsquedas.
 
 En comparación con los vocabularios de lenguaje natural, el etiquetado basado en la taxonomía empresarial ayuda a alinear los activos con el negocio de una empresa y garantiza que los activos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de coches puede etiquetar imágenes de coche con nombres de modelo, de modo que solo se muestren imágenes relevantes cuando se realice una búsqueda para diseñar una campaña de promoción.
 
-En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. [!DNL Experience Manager Assets] de forma predeterminada, aplica etiquetas inteligentes a los recursos cargados.
+En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. [!DNL Experience Manager Assets] de forma predeterminada, aplica etiquetas inteligentes a los recursos cargados.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -100,7 +100,7 @@ Asegúrese de que las imágenes del conjunto de formación cumplen las siguiente
 * Cree un modelo de etiqueta que solo incluya:
 
    * Las etiquetas relacionadas con los modelos de automóvil.
-   * Las etiquetas están relacionadas con las chaquetas para hombres y mujeres.
+   * Las etiquetas están relacionadas con las chaquetas para adultos y niños.
 
 * No crear,
 
@@ -139,8 +139,8 @@ Para comprobar si el servicio Etiquetas inteligentes está formado sobre las eti
 1. Seleccione el informe **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
 1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, haga clic en **[!UICONTROL Create]** en la barra de herramientas.
 1. En la página **[!UICONTROL Informes de recursos]**, seleccione el informe que ha generado. Para ver el informe, haga clic en **[!UICONTROL Ver]** en la barra de herramientas.
-1. Revise los detalles del informe. El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde de la columna **[!UICONTROL Estado de formación]** indica que el servicio Etiquetas inteligentes ha recibido formación para la etiqueta. El color amarillo indica que el servicio no está completamente entrenado para una etiqueta en particular. En este caso, agregue más imágenes con la etiqueta en concreto y ejecute el flujo de trabajo de formación para que el servicio se imparta completamente en la etiqueta. Si no ve las etiquetas en este informe, ejecute de nuevo el flujo de trabajo de formación para estas etiquetas.Etiquetas
-1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como una hoja de cálculo [!DNL Microsoft Excel].
+1. Revise los detalles del informe. El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde de la columna **[!UICONTROL Estado de formación]** indica que el servicio Etiquetas inteligentes ha recibido formación para la etiqueta. El color amarillo indica que el servicio está parcialmente entrenado para una etiqueta en particular. Para formar completamente el servicio para una etiqueta, añada más imágenes con la etiqueta en particular y ejecute el flujo de trabajo de formación. Si no ve las etiquetas en este informe, ejecute de nuevo el flujo de trabajo de formación para estas etiquetas.Etiquetas
+1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como hoja de cálculo.
 
 <!--
 ### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
@@ -183,7 +183,7 @@ Todos los tipos de recursos compatibles se etiquetan automáticamente con [!DNL 
 
 * Para imágenes y vídeos, las etiquetas inteligentes se basan en un aspecto visual.
 
-* Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. En el caso de los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave del texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad que se utiliza para mejorar la detección de recursos en comparación con el índice de búsqueda completa.
+* Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. En el caso de los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave del texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.
 
 ## Administración de etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
@@ -193,13 +193,13 @@ Moderar las etiquetas inteligentes también ayuda a refinar las búsquedas basad
 
 También puede asignar una clasificación superior a una etiqueta para aumentar la relevancia de la etiqueta para el recurso. La promoción de una etiqueta para un recurso aumenta las posibilidades de que el recurso aparezca en los resultados de búsqueda cuando se realiza una búsqueda basada en la etiqueta en particular.
 
-Para moderar las etiquetas inteligentes de los recursos:
+Para moderar las etiquetas inteligentes de los recursos digitales:
 
-1. En el campo de búsqueda, busque recursos basados en una etiqueta .
+1. En el campo de búsqueda, busque recursos digitales basados en una etiqueta .
 
-1. Inspect muestra los resultados de la búsqueda para identificar los recursos que no considera relevantes para la búsqueda.
+1. Para identificar los recursos digitales que no considere relevantes para la búsqueda, revise los resultados de la búsqueda.
 
-1. Seleccione el recurso y, a continuación, seleccione ![Administrar etiquetas ](assets/do-not-localize/manage-tags-icon.png) en la barra de herramientas.
+1. Seleccione un recurso y, a continuación, seleccione ![Administrar etiquetas ](assets/do-not-localize/manage-tags-icon.png) en la barra de herramientas.
 
 1. En la página **[!UICONTROL Administrar etiquetas]**, inspeccione las etiquetas. Si no desea que se busque el recurso en función de una etiqueta específica, seleccione la etiqueta y seleccione ![Eliminar icono](assets/do-not-localize/delete-icon.png) en la barra de herramientas. También puede seleccionar el símbolo `X` situado junto a la etiqueta.
 
@@ -213,9 +213,9 @@ Para moderar las etiquetas inteligentes de los recursos:
 
 De forma predeterminada, la búsqueda [!DNL Experience Manager] combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con `woman` o `running` etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
 
-* recursos con palabras clave `woman` y `running` en los metadatos.
+* Recursos con palabras clave `woman` y `running` en los metadatos.
 
-* activos con etiquetas inteligentes con cualquiera de las palabras clave.
+* Recursos inteligentes etiquetados con cualquiera de las palabras clave.
 
 Los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. En el ejemplo anterior, el orden aproximado de visualización de los resultados de búsqueda es:
 
@@ -223,21 +223,23 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 1. coincidencias de `woman running` en etiquetas inteligentes.
 1. coincidencias de `woman` o de `running` en las etiquetas inteligentes.
 
-## Limitaciones de etiquetado y prácticas recomendadas {#limitations}
+## Limitaciones relacionadas con el etiquetado y prácticas recomendadas {#limitations}
 
 El etiquetado inteligente mejorado se basa en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de las etiquetas inteligentes tiene las siguientes limitaciones:
 
 * Incapacidad para reconocer sutiles diferencias en imágenes. Por ejemplo, camisas ajustadas a la perfección frente a camisas ajustadas a la norma.
 * Incapacidad para identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisas.
 * El etiquetado es compatible con los idiomas compatibles con [!DNL Experience Manager]. Para obtener una lista de idiomas, consulte las [notas de la versión del servicio de contenido inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
-* Las etiquetas que no se gestionan de forma realista están relacionadas con:
+* Las etiquetas que no se gestionan están relacionadas con:
 
-   * Aspectos no visuales, abstractos. Por ejemplo, el año o la temporada de lanzamiento de un producto, estado de ánimo o emoción evocados por una imagen, la connotación subjetiva de un vídeo, etc.
+   * Aspectos no visuales, abstractos. Por ejemplo, el año o la temporada de lanzamiento de un producto, el estado de ánimo o la emoción que evoca una imagen y una connotación subjetiva de un vídeo.
    * Diferencias visuales finas en productos como camisas con y sin collares o logotipos de productos pequeños incrustados en productos.
 
-<!-- TBD: Add limitations related to text-based assets. -->
+Para entrenar el modelo, utilice las imágenes más adecuadas. La formación no se puede revertir o el modelo de formación no se puede eliminar. La precisión del etiquetado depende de la formación actual, por lo que debe hacerse con cuidado.
 
-Para buscar recursos con etiquetas inteligentes (normales o mejoradas), utilice la búsqueda [!DNL Assets] (búsqueda de texto completo). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
+<!-- TBD: Add limitations related to text files. -->
+
+Para buscar archivos con etiquetas inteligentes (normales o mejoradas), utilice la búsqueda [!DNL Assets] (búsqueda de texto completo). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
 
 >[!NOTE]
 >
@@ -246,6 +248,6 @@ Para buscar recursos con etiquetas inteligentes (normales o mejoradas), utilice 
 
 >[!MORELIKETHIS]
 >
->* [Comprender cómo las etiquetas inteligentes ayudan a administrar recursos](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [Etiquetado inteligente de recursos de vídeo](smart-tags-video-assets.md)
+>* [Comprender cómo las etiquetas inteligentes ayudan a administrar los archivos digitales](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [Uso de etiquetas inteligentes para vídeos](smart-tags-video-assets.md)
 
