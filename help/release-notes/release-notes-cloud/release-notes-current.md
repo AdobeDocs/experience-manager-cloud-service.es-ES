@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
+source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1286'
 ht-degree: 2%
 
 ---
@@ -140,17 +140,17 @@ La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!
 
 * `bulk-offline-update-service` faltaban todos los permisos para algunos entornos.
 
-* Actualice el vínculo de ayuda para que coincida con la nueva documentación de la nube de pantallas.
+* Se ha actualizado el vínculo Ayuda para que coincida con la nueva documentación de la nube de pantallas.
 
-* Anule la asignación de listas de reproducción y no permita la eliminación de listas de reproducción con reproductores asignados.
+* No asigne listas de reproducción y no permita quitar listas de reproducción con los reproductores asignados, ahora funciona.
 
-* El reproductor ahora vuelve a descargar Assets cuando se borra la caché &quot;ALL&quot;.
+* El reproductor ahora vuelve a descargar los recursos cuando se borra la caché &quot;ALL&quot;.
 
 * La programación repetida ahora funciona si la *Hora de finalización* está configurada para el día siguiente.
 
-* `Back&Forward` ahora funciona en la interfaz de usuario de la nube de Screens.
+* `Back&Forward` ahora funciona en Screens as a Cloud Service UI.
 
-* No se pudieron crear etiquetas con el mismo nombre pero con diferentes áreas de nombres.
+* Antes no se podían crear etiquetas con el mismo nombre pero con diferentes áreas de nombres.
 
 ## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
