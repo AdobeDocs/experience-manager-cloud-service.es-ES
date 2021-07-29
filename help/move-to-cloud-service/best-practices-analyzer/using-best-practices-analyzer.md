@@ -2,20 +2,20 @@
 title: Uso del Analizador de prácticas recomendadas
 description: Uso del Analizador de prácticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2522'
 ht-degree: 42%
 
 ---
 
-# Uso de Best Practices Analyzer {#using-best-practices-analyzer}
+# Uso del Analizador de prácticas recomendadas {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -127,6 +127,7 @@ En todas las versiones, Pattern Detector puede ejecutarse de forma independiente
 id="aemcloud_bpa_interpreting"
 title="Interpretación del informe de Best Practices Analyzer"
 abstract="Existen dos opciones para ver los resultados de los informes de BPA: IU y CSV. Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe Interfaz de usuario se muestra como resultados en la ventana de la herramienta. El formato CSV del informe incluye información que se genera a partir de los resultados de Pattern Detector, ordenados y organizados por tipo de categoría, subtipo y nivel de importancia."
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="Revisión del informe de Análisis de prácticas recomendadas"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="Explicación de las categorías de informes de Best Practices Analyzer"
 
 Cuando la herramienta Analizador de prácticas recomendadas se ejecuta en la instancia de AEM, el informe se muestra como resultados en la ventana de herramientas.
