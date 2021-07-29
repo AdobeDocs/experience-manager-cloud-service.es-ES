@@ -1,14 +1,13 @@
 ---
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 96%
+ht-degree: 85%
 
 ---
-
 
 # Publicar páginas {#publishing-pages}
 
@@ -20,7 +19,7 @@ Puede publicar una página (o cancelar su publicación) inmediatamente o en un m
 
 ## Terminología {#terminology}
 
-Puede encontrar diferentes términos relacionados con la publicación mientras trabaja con Adobe Experience Manager (AEM) como Cloud Service.
+Puede encontrar diferentes términos relacionados con la publicación al trabajar con Adobe Experience Manager (AEM) como Cloud Service.
 
 * **Publicar o cancelar la publicación**
    * Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
@@ -48,14 +47,9 @@ En función de su ubicación, puede publicar:
 >* Se mostrará brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
 
 
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
-
 >[!NOTE]
 >
-> Para obtener más información, consulte **Tiempo de activación** y **Tiempo de inactividad** en la ficha [Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Para obtener más información, consulte **Tiempo de activación** y **Tiempo de inactividad** en la pestaña [Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publicar desde el editor {#publishing-from-the-editor}
 
@@ -90,8 +84,8 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 En la consola Sitios hay dos opciones para la publicación:
 
-* [Publicación rápida](#quick-publish)
-* [Administrar publicación](#manage-publication)
+* [Publicación rápida ](#quick-publish)
+* [Administrar publicación    ](#manage-publication)
 
 #### Publicación rápida  {#quick-publish}
 
@@ -113,9 +107,9 @@ Para publicar una página con Publicación rápida:
 >
 >La Publicación rápida no es profunda; es decir, solo se publica la página o páginas seleccionadas, y no las páginas secundarias.
 
-#### Administrar publicación      {#manage-publication}
+#### Administrar publicación     {#manage-publication}
 
-**Administrar publicación** ofrece más opciones que Publicación rápida, pues permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de poder publicar en un momento posterior.
+**Administrar** publicación ofrece más opciones que Publicación  **rápida**, lo que permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de ofrecer la opción de publicar en un momento posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
@@ -125,46 +119,42 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
 1. Se inicia el asistente **Administrar publicación**. El primer paso, **Opciones**, le permite:
 
-   * Elija si publica o cancela la publicación de las páginas seleccionadas.
-   * Elija si la acción se realizará ahora o en una fecha posterior.
+   * **Acción**
 
-   Posponer la publicación inicia un flujo de trabajo que publicará la página o páginas seleccionadas en el momento especificado. Por su parte, cancelar la publicación inicia un flujo de trabajo para anular la publicación de la página o páginas seleccionadas en un momento especificado.
+      Elija si publica o cancela la publicación de las páginas seleccionadas.
 
-   Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la consola Flujo de trabajo para finalizar el flujo de trabajo correspondiente. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   * **Programación**
 
+      Elija si la acción se realizará ahora o en una fecha posterior.
+
+      Posponer la publicación inicia un flujo de trabajo que publicará la página o páginas seleccionadas en el momento especificado. Por su parte, cancelar la publicación inicia un flujo de trabajo para anular la publicación de la página o páginas seleccionadas en un momento especificado.
+
+      >[!NOTE]
+      >
+      >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
    ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   Haga clic en **Siguiente** para continuar.
+1. Haga clic en **Siguiente** para continuar.
 
 1. En el siguiente paso del asistente de Administrar publicación, **Ámbito**, puede definir el ámbito de la publicación o la cancelación de la publicación, por ejemplo, si se incluyen páginas secundarias o referencias.
 
    ![Administrar ámbito de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **Añadir contenido**
+
    Puede utilizar el botón **Añadir contenido** para añadir páginas adicionales a la lista de páginas que se publicarán, en caso de que olvidara seleccionar alguna antes de iniciar el asistente de Administrar publicación.
 
-   Al hacer clic en el botón Añadir contenido se inicia el [navegador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para que pueda seleccionar contenido.
+   Al seleccionar el botón **Añadir contenido** se inicia el [navegador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir la selección de contenido.
 
-   Seleccione las páginas requeridas y haga clic en **Seleccionar** para agregar el contenido al asistente o **Cancelar** para cancelar la selección y volver al asistente.
+   Seleccione las páginas necesarias y haga clic en **Seleccionar** para añadir el contenido al asistente o en **Cancelar** para cancelar la selección y volver al asistente.
 
-   De nuevo en el asistente, puede seleccionar un elemento de la lista para configurar las demás opciones, por ejemplo:
+   **Eliminar la selección**
 
-   * Incluir sus elementos secundarios.
-   * Eliminarlo de la selección.
-   * Gestionar sus referencias publicadas.
+   En el asistente, puede seleccionar un elemento de la lista para eliminarlo de la selección.
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   Al hacer clic en **Incluir elementos secundarios** se abre un cuadro de diálogo que le permite lo siguiente:
-
-   * Incluir solo los elementos secundarios inmediatos.
-   * Incluir solo las páginas modificadas.
-   * Incluir solo las páginas ya publicadas.
-
-   Haga clic en **Añadir** para añadir las páginas secundarias que se van a publicar o dejar de publicar, en función de las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
-
-   ![Administrar publicación, incluidos los elementos secundarios](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   Al volver al asistente verá las páginas añadidas en función de su elección de opciones en el cuadro de diálogo Incluir elementos secundarios.
+   **Referencias publicadas**
 
    Puede ver y modificar las referencias que se van a publicar o dejar de publicar para una página: haga clic en la página y, a continuación, haga clic en el botón **Referencias publicadas**.
 
@@ -178,30 +168,42 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **Incluir elementos secundarios**
+
+   >[!NOTE]
+   >
+   >Consulte [Publicación y cancelación de la publicación de un árbol](#publishing-and-unpublishing-a-tree)
+
+   Al hacer clic en **Incluir elementos secundarios** se abre un cuadro de diálogo que le permite:
+
+   * **Incluir elementos secundarios**
+   * **Incluir solo los elementos secundarios inmediatos**
+   * **Incluir solo las páginas modificadas**
+   * **Incluir solo las páginas ya publicadas**
+
+   Active las opciones necesarias y confirme con **OK** para agregar las páginas secundarias a la lista de páginas que se publicarán o cancelarán la publicación en función de las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
+
+   ![Administrar publicación, incluidos los elementos secundarios](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. Haga clic en **Publicar** para completar la acción.
 
    En la consola Sitios, un mensaje de notificación confirmará la publicación.
 
 1. Si las páginas publicadas están asociadas a flujos de trabajo, estos se pueden mostrar en un último paso, **Flujos de trabajo**, del asistente de publicación.
 
+   ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
+
    >[!NOTE]
    >
    >El paso **Flujos de trabajo** se muestra o no en función de los derechos del usuario. Para obtener más información, consulte la nota anterior en esta página respecto a los privilegios de publicación, así como Administración del acceso a los flujos de trabajo y [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md).
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    Los recursos se agrupan por los flujos de trabajo activados y cada uno ofrece opciones para:
 
    * Definir el título del flujo de trabajo.
    * Mantener el paquete del flujo de trabajo, siempre que este sea compatible con varios recursos.
-
-   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
 
-   Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
+1. Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 
@@ -212,24 +214,28 @@ De forma [similar a la publicación](#publishing-pages), se puede cancelar la p
 * [Desde el editor de páginas](#unpublishing-from-the-editor)
 * [Desde la consola Sitios](#unpublishing-from-the-console)
 
-### Cancelación de la publicación desde el editor      {#unpublishing-from-the-editor}
+### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
 
 Si desea cancelar la publicación de una página que está editando, seleccione **Cancelar publicación de página** en el menú **Información de página**, de un modo similar a como haría para [publicar la página](#publishing-from-the-editor).
 
-### Cancelación de la publicación desde la consola      {#unpublishing-from-the-console}
+### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 
 Al igual que [utiliza la opción Administrar publicación para publicar](#manage-publication), puede usarla para cancelar la publicación.
 
 1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
 1. Se inicia el asistente **Administrar publicación**. En el primer paso, **Opciones**, seleccione **Cancelar publicación** en lugar de la opción predeterminada **Publicar**.
 
-   ![Cancelando la publicación](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![Cancelación de la publicación: opciones](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    Igual que posponer la publicación inicia un flujo de trabajo para publicar esta versión de la página en el momento especificado, desactivar más tarde inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento concreto.
 
-   Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la consola Flujo de trabajo para finalizar el flujo de trabajo correspondiente. <!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para finalizar el flujo de trabajo correspondiente.
 
 1. Para completar la cancelación de la publicación, complete el asistente como haría para [publicar la página](#manage-publication).
+
+   ![Cancelación de la publicación: Ámbito](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## Publicar y cancelar la publicación de un árbol {#publishing-and-unpublishing-a-tree}
 
@@ -243,18 +249,18 @@ Para hacerlo, puede utilizar la opción [Administrar publicación](#manage-publi
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. En el cuadro de diálogo **Incluir elementos secundarios**, desmarque las siguientes opciones:
+1. En el cuadro de diálogo **Incluir elementos secundarios**:
 
-   * Incluir solo los elementos secundarios inmediatos
-   * Incluir solo las páginas ya publicadas
+   * seleccione **Incluir elementos secundarios**
+   * deseleccione **Incluir solo los elementos secundarios inmediatos**
+   * deseleccione **Incluir solo las páginas ya publicadas**
+   * configurar **Incluir solo páginas modificadas** según sea necesario
 
-   Estas opciones están seleccionadas de forma predeterminada, por lo que debe acordarse de anular su selección. Haga clic en **Añadir** para confirmar y añadir el contenido a la publicación o cancelación de publicación.
+   Estas opciones están seleccionadas de forma predeterminada, por lo que debe recordar configurarlas. Confirme la selección con **OK** para añadir el contenido a la publicación/cancelación de la publicación.
 
-   ![Inclusión de elementos secundarios al cancelar la publicación](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![Inclusión de elementos secundarios para la publicación de árboles](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. El asistente **Administrar publicación** enumera el contenido del árbol para su revisión. Puede personalizar aún más la selección añadiendo páginas adicionales o eliminando las seleccionadas.
-
-   ![Administrar opciones de publicación](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
+1. En el asistente **Administrar publicación** puede personalizar aún más la selección añadiendo páginas adicionales o eliminando las seleccionadas.
 
    Recuerde que también puede revisar las referencias que se publican mediante la opción **Referencias publicadas**.
 
