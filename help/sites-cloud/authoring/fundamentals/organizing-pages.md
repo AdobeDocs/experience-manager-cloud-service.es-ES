@@ -2,10 +2,10 @@
 title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
 workflow-type: tm+mt
-source-wordcount: '2552'
-ht-degree: 98%
+source-wordcount: '2560'
+ht-degree: 94%
 
 ---
 
@@ -261,27 +261,30 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
-   >[!NOTE]
-   >
-   >Si se encuentra en el modo de selección, se saldrá del mismo automáticamente en cuanto se copie la página.
-
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. El icono **Pegar** está disponible con una flecha desplegable directamente a la derecha:
+1. Toque o haga clic en el icono **Pegar** que está disponible.
 
    ![Pegar](/help/sites-cloud/authoring/assets/paste.png)
 
-   Puede:
+1. El cuadro de diálogo de pegado presenta un resumen de la transacción de pegado y la capacidad de:
+   * **Nuevo nombre del sitio:** cambie el nombre de la página pegada
+   * **Pegar sin elementos secundarios:** omita las páginas secundarias de la página seleccionada al pegar (de forma predeterminada, las páginas secundarias se pegan)
 
-   1. Seleccione el icono **Pegar** página: En esta ubicación, se creará una copia de la página original y de las páginas secundarias.
-   1. Seleccione la flecha desplegable para mostrar la opción **Pegar sin elementos secundarios**. Se creará una copia de la página original en esta ubicación; las páginas secundarias no se copiarán.
+   ![Pegar, cuadro de diálogo](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-   >[!NOTE]
-   >
-   >Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
+1. Toque o haga clic en el botón **Pegar** para confirmar la transacción de pegado y crear las nuevas páginas.
+
+>[!NOTE]
+>
+>Si copia la página en una ubicación en la que ya existe una página con el mismo nombre que el original, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `beach` ya existe, una nueva página con el nombre `beach` se convierte en `beach1`.
+
+>[!NOTE]
+>
+>Si inicia la acción de pegado en el modo de selección, esto se cierra automáticamente en cuanto se copia la página.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
-El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y se controla mediante el mismo asistente. Con este asistente puede:
+El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y el asistente para mover páginas controla ambas acciones. Con este asistente puede:
 
 * Cambiar el nombre de una página sin moverla
 * Mover la página sin cambiar su nombre
@@ -409,7 +412,7 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 >
 >Si la página ya se ha publicado, se cancela su publicación automáticamente antes de eliminarla.
 
-### Bloquear una página {#locking-a-page}
+### Bloquear una página   {#locking-a-page}
 
 Puede [bloquear o desbloquear una página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) desde una consola o bien editando una página en concreto. En ambas ubicaciones también se mostrará información sobre si una página está bloqueada o no.
 
