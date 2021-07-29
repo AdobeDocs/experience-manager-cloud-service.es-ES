@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -127,6 +127,30 @@ Los clientes que cambien a utilizar Azul JDKs deben tener en cuenta que no todas
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
 La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!DNL Experience Manager] como [!DNL Cloud Service]. (CQ-4326322)
+
+## [!DNL Experience Manager Screens] como  [!DNL Cloud Service] {#screens}
+
+### Corrección de errores {#bug-fixes-screens}
+
+* La configuración del proveedor de contenido ahora se valida durante la creación o actualización.
+
+* Todas las vistas de visualización tienen una columna de carpetas.
+
+* Puede expandir la estructura de contenido de Screens.
+
+* `bulk-offline-update-service` faltaban todos los permisos para algunos entornos.
+
+* Actualice el vínculo de ayuda para que coincida con la nueva documentación de la nube de pantallas.
+
+* Anule la asignación de listas de reproducción y no permita la eliminación de listas de reproducción con reproductores asignados.
+
+* El reproductor ahora vuelve a descargar Assets cuando se borra la caché &quot;ALL&quot;.
+
+* La programación repetida ahora funciona si la *Hora de finalización* está configurada para el día siguiente.
+
+* `Back&Forward` ahora funciona en la interfaz de usuario de la nube de Screens.
+
+* No se pudieron crear etiquetas con el mismo nombre pero con diferentes áreas de nombres.
 
 ## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
