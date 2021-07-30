@@ -10,9 +10,9 @@ feature: Marco de integración de Commerce
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
+source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 45%
 
 ---
@@ -41,7 +41,7 @@ Esto configura las direcciones URL de las páginas de producto y admite las sigu
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-donde, en el caso del [almacén de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
+En el caso del [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` se sustituye por  `/content/venia/us/en/products/product-page`
 * `{{sku}}` será reemplazado por el sku del producto, p. ej.  `VP09`
@@ -51,14 +51,14 @@ donde, en el caso del [almacén de referencia de Venia](https://github.com/adobe
 
 Con los datos del ejemplo anterior, la dirección URL de una variante de producto con formato de URL predeterminada será similar a `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
-### Formato de dirección url de la página de categoría {#product-list}
+### Formato de dirección URL de la página de categoría {#product-list}
 
 Esto configura las direcciones URL de las páginas de categorías o listas de productos y admite las siguientes opciones:
 
 * `{{page}}.html/{{url_path}}.html` (predeterminada)
 * `{{page}}.html/{{url_key}}.html`
 
-donde, en el caso del [almacén de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
+En el caso del [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` se sustituye por  `/content/venia/us/en/products/category-page`
 * `{{url_key}}` se reemplazará por la  `url_key` propiedad de la categoría
@@ -70,7 +70,7 @@ Con los datos del ejemplo anterior, la dirección URL de una página de categor�
 > 
 > El `url_path` es una concatenación de los `url_keys` antepasados de un producto o categoría y de los `url_key` del producto o categoría separados por `/` barra oblicua.
 
-## Formatos De Url Personalizados {#custom-url-format}
+## Formatos de URL personalizados {#custom-url-format}
 
 Para proporcionar un formato de URL personalizado, un proyecto puede implementar la [`UrlFormat` interfaz](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) y registrar la implementación como servicio OSGI, usándola como página de categoría o formato de URL de página de producto. La propiedad de servicio `UrlFormat#PROP_USE_AS` indica cuál de los formatos predefinidos configurados para reemplazar:
 
