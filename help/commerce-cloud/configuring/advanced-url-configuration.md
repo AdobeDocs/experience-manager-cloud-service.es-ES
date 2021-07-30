@@ -10,10 +10,10 @@ feature: Marco de integración de Commerce
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: dbf32230042f39760733b711ffe8b5b4143e0544
+source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 44%
+source-wordcount: '746'
+ht-degree: 45%
 
 ---
 
@@ -72,7 +72,7 @@ Con los datos del ejemplo anterior, la dirección URL de una página de categor�
 
 ## Formatos De Url Personalizados {#custom-url-format}
 
-Para proporcionar un formato de URL personalizado, un proyecto puede implementar la [`UrlFormat` interfaz](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) y registrar la implementación como servicio OSGI, usando el formato de página de categoría como o de URL de página de producto. La propiedad de servicio `UrlFormat#PROP_USE_AS` indica con uno de los formatos configurados y predefinidos que se va a reemplazar:
+Para proporcionar un formato de URL personalizado, un proyecto puede implementar la [`UrlFormat` interfaz](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) y registrar la implementación como servicio OSGI, usándola como página de categoría o formato de URL de página de producto. La propiedad de servicio `UrlFormat#PROP_USE_AS` indica cuál de los formatos predefinidos configurados para reemplazar:
 
 * `useAs=productPageUrlFormat`, reemplazará el formato de URL de la página de producto configurado
 * `useAs=categoryPageUrlFormat`, reemplazará el formato de dirección url de la página de categoría configurado
