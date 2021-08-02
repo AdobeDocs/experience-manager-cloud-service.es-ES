@@ -1,14 +1,13 @@
 ---
 title: Navegar a Cloud Manager
 description: Siga esta página para conocer cómo navegar a la página de aterrizaje de Cloud Manager
-translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 6%
 
 ---
-
 
 # Vaya a Cloud Manager {#cloud-manager}
 
@@ -26,10 +25,10 @@ Una vez que el administrador del sistema le conceda acceso a Cloud Manager, reci
    >También puede navegar directamente a la página de inicio de sesión de Cloud Manager desde [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la interfaz de usuario de [!UICONTROL Cloud Manager]. Consulte la sección siguiente, [Página de aterrizaje de Cloud Manager](#cloud-manager-landing) para obtener más información.
 
 1. Seleccione **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Página de aterrizaje de Cloud Manager {#cloud-manager-landing}
@@ -44,24 +43,23 @@ Verá una de las tres opciones que se describen a continuación:
 * **Cuando no hay programas en Cloud Manager**
 
    Si su organización no cuenta con ningún programa, la página de aterrizaje le indicará que cree su primer programa, tal como se muestra en la figura siguiente.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
 * **Cuando los programas ya existen en Cloud Manager**
 
    Si los programas ya existen en su organización, la página de aterrizaje le pedirá que agregue otro programa y también mostrará todos los programas existentes, como se muestra en la figura siguiente.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
 * **Cuando existe un programa y el usuario es administrador del sistema**
 
    Si los programas ya existen en su organización y usted es administrador del sistema, la página de aterrizaje muestra el botón **Administrar acceso** junto con la opción **Agregar programa**, como se muestra en la figura siguiente.
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 A partir de aquí, un usuario con los permisos adecuados, como una función Propietario empresarial en Cloud Manager, puede seleccionar **Agregar programa** para iniciar el [Asistente para agregar programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access).
 
 Para aprender a añadir un programa en Cloud Manager, consulte:
 
-* [Creación de un programa de producción](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-
-* [Creación de un programa de espacio aislado](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* Creación de un programa de producción
+* Creación de un programa de espacio aislado
