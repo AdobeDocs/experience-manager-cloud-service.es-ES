@@ -2,9 +2,9 @@
 title: Envío de un conector de AEM
 description: Envío de un conector de AEM
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: eb6aa8741a07e14727b4e74df66b9643936e9231
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '297'
 ht-degree: 11%
 
 ---
@@ -21,7 +21,7 @@ En soluciones AEM anteriores, el Administrador de paquetes se utilizaba para ins
 Existen varias opciones para incluir los paquetes en un proyecto:
 
 1. Repositorio público del socio: un socio alojaría el paquete de contenido en un repositorio maven accesible públicamente
-1. Repositorio protegido por contraseña de socio: un socio alojaría el paquete de contenido en un repositorio maven protegido por contraseña. Consulte repositorios maven protegidos por contraseña para obtener instrucciones.
+1. Repositorio protegido por contraseña de socio: un socio alojaría el paquete de contenido en un repositorio maven protegido por contraseña. Consulte [repositorios maven protegidos con contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) para obtener instrucciones.
 1. Artefacto agrupado : en este caso, el paquete conector se incluye localmente en el proyecto maven del cliente.
 
 Independientemente de dónde estén alojados, es necesario hacer referencia a los paquetes como dependencias en el archivo pom.xml, tal como lo proporciona el proveedor.
