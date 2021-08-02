@@ -4,9 +4,9 @@ description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplica
 feature: Administración de recursos,Representaciones
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2613'
 ht-degree: 1%
 
 ---
@@ -184,13 +184,13 @@ Se inicia la solicitud para utilizar imágenes inteligentes; no se activa autom�
 
 De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de la red están deshabilitados (desactivados) para una cuenta de empresa de Dynamic Media. Si desea habilitar (activar) una o ambas mejoras integradas, cree un caso de asistencia como se describe a continuación.
 
-La programación de versiones para la optimización del RGPD y la red de imágenes inteligentes es la siguiente:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
 
-| Región | Fecha objetivo |
+| Region | Target date |
 |---|---|
-| América del Norte | En directo |
-| Europa, Oriente Medio, África | 13 de agosto de 2021 |
-| Asia-Pacífico | 22 de julio de 2021 |
+| North America | Live | 
+| Europe, Middle East, Africa | 13 August 2021 | 
+| Asia-Pacific | 22 July 2021 | -->
 
 1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia.
 1. Proporcione la siguiente información en su caso de asistencia:
@@ -281,4 +281,4 @@ Las imágenes inteligentes determinan si la conversión es beneficiosa o no. Dev
 * Dado que el componente base de Dynamic Media está configurado de forma predeterminada para la optimización del RGPD, para evitar imágenes de tamaño excesivo debido a la optimización del RGPD de imágenes inteligentes en el servidor, `dpr=off` siempre se añade a las imágenes de los componentes de Dynamic Media Foundation. Aunque el cliente anule la selección de la optimización de RGPD en el componente de base de DM, el RGPD de imágenes inteligentes del lado del servidor no se inicia. En resumen, en el componente de base de DM, la optimización del RGPD entra en vigor solo en función de la configuración del nivel de componente de base de DM .
 * Cualquier optimización del RGPD del lado del visor funciona junto con la optimización del RGPD de imágenes inteligentes del lado del servidor y no genera imágenes de tamaño excesivo. En otras palabras, independientemente de dónde gestione el visor el RGPD, como la vista principal solo en un visor con zoom habilitado, no se activan los valores del RGPD de imágenes inteligentes del lado del servidor. Del mismo modo, siempre que los elementos del visualizador, como muestras y miniaturas, no tengan gestión de RGPD, se activa el valor RGPD de imágenes inteligentes del lado del servidor.
 
-Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop) —>.
+Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
