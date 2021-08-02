@@ -1,7 +1,7 @@
 ---
 title: Uso del proveedor de contenido de Screens
 description: En esta página se describe cómo usar el proveedor de contenido de Screens para crear contenido.
-source-git-commit: aea66e38a54c8e96b0dfe06cc7cb8f7733e8bc09
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
@@ -30,10 +30,10 @@ Siga los pasos a continuación para iniciar sesión en el proveedor de contenido
 1. Vaya a la página de inicio de [Adobe Experience Cloud](https://experience.adobe.com).
 
 1. Seleccione **Experience Manager**.
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU).
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 1. Seleccione el programa para Screens como Cloud Service y haga clic en el icono, como se muestra a continuación, para abrir la página **Información general** de Cloud Manager para ese programa específico.
 
