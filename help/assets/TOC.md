@@ -4,10 +4,10 @@ user-guide-title: Guía de Assets as a Cloud Service
 breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 66%
+source-wordcount: '484'
+ht-degree: 45%
 
 ---
 
@@ -81,11 +81,11 @@ ht-degree: 66%
    + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [Vista previa: Representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Newsletter sobre Dynamic Media de Experience League](dynamic-media/dynamic-media-newsletter.md)
+   + [Archivo de newsletter de Dynamic Media por Experience League](dynamic-media/dynamic-media-newsletter.md)
    + [Configuración de Dynamic Media](dynamic-media/administering-dynamic-media.md)
-   + [Trabajo con Dynamic Media](dynamic-media/dynamic-media.md)
+   + [Trabajar con Dynamic Media](dynamic-media/dynamic-media.md)
    + [Configuración de Dynamic Media](dynamic-media/config-dm.md)
-   + [Solución de problemas de Dynamic Media](dynamic-media/troubleshoot-dm.md)
+   + [Resolución de problemas de Dynamic Media](dynamic-media/troubleshoot-dm.md)
    + [Accesibilidad en Dynamic Media](dynamic-media/accessibility-dm.md)
    + [Administrar recursos de Dynamic Media](dynamic-media/managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -94,34 +94,34 @@ ht-degree: 66%
    + [Perfiles de vídeo](dynamic-media/video-profiles.md)
    + [Administrar ajustes preestablecidos de imagen de Dynamic Media](dynamic-media/managing-image-presets.md)
    + [Aplicar ajustes preestablecidos de imagen de Dynamic Media](dynamic-media/image-presets.md)
-   + [Administrar ajustes preestablecidos del visualizador de Dynamic Media](dynamic-media/managing-viewer-presets.md)
+   + [Administrar ajustes preestablecidos de visualizador de Dynamic Media](dynamic-media/managing-viewer-presets.md)
    + [Aplicar ajustes preestablecidos de visualizador de Dynamic Media](dynamic-media/viewer-presets.md)
    + [Valores preestablecidos de conjunto por lotes](dynamic-media/batch-set-presets-dm.md)
-   + [Invalidación de la caché de CDN mediante Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidación de la caché de CDN mediante Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Invalidar la caché de CDN mediante Dynamic Media](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidar la caché de CDN mediante Dynamic Media Classic](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [Imágenes inteligentes](dynamic-media/imaging-faq.md)
-   + [Entrega de recursos de Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
-   + [Activar la protección de los vínculos interactivos de Dynamic Media](dynamic-media/hotlink-protection.md)
+   + [Enviar recursos de Dynamic Media](dynamic-media/delivering-dynamic-media-assets.md)
+   + [Activar la protección de los vínculos interactivos en Dynamic Media](dynamic-media/hotlink-protection.md)
    + [Compatibilidad con 3D](dynamic-media/assets-3d.md)
    + [Conjuntos de imágenes](dynamic-media/image-sets.md)
    + [Imágenes panorámicas](dynamic-media/panoramic-images.md)
    + [Conjuntos de medios mixtos](dynamic-media/mixed-media-sets.md)
    + [Conjuntos de giros](dynamic-media/spin-sets.md)
-   + [Vídeo](dynamic-media/video.md)
+   + [Vídeo en Dynamic Media](dynamic-media/video.md)
    + [Banner de carrusel](dynamic-media/carousel-banners.md)
    + [Imágenes interactivas](dynamic-media/interactive-images.md)
    + [Vídeos interactivos](dynamic-media/interactive-videos.md)
    + [Vídeo de RV 360](dynamic-media/360-video.md)
    + [Integración de visores de Dynamic Media con etiquetas de Adobe Analytics y Adobe Experience Platform](dynamic-media/tags.md)
-   + [Uso de la vista rápida para crear ventanas emergentes personalizadas](dynamic-media/custom-pop-ups.md)
-   + [Distribución de imágenes adaptables para un sitio interactivo](dynamic-media/responsive-site.md)
+   + [Crear ventanas emergentes personalizadas con la vista rápida](dynamic-media/custom-pop-ups.md)
+   + [Distribución de imágenes optimizadas para un sitio interactivo](dynamic-media/responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](dynamic-media/previewing-assets.md)
-   + [Agregar recursos de Dynamic Media a las páginas](dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   + [Agregar recursos de Dynamic Media a páginas](dynamic-media/adding-dynamic-media-assets-to-pages.md)
    + [Incrustar Dynamic Video o el visualizador de imágenes en una página web](dynamic-media/embed-code.md)
-   + [Vincular URL en la aplicación web](dynamic-media/linking-urls-to-yourwebapplication.md)
-   + [Usar conjuntos de reglas para transformar URL](dynamic-media/using-rulesets-to-transform-urls.md)
+   + [Vincular URL a la aplicación web](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [Usar conjuntos de reglas para transformar direcciones URL](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Uso de Publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
+   + [Trabajar con publicación selectiva en Dynamic Media](dynamic-media/selective-publishing.md)
    + [Trabajar con selectores](dynamic-media/working-with-selectors.md)
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](dynamic-media/http2faq.md)
    + [Fin de vida útil de los visualizadores de Flash](dynamic-media/flash-viewers-eol.md)
