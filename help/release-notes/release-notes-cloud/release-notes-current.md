@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d977ff765accb650daff4c35f2668489454305cd
+source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1309'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ La siguiente versión (2021.8.0) es el 26 de agosto de 2021.
 
 Consulte el vídeo [Información general de la versión de julio de 2021](https://video.tv.adobe.com/v/335580) para ver un resumen de las funciones agregadas.
 
-## Experience Manager Foundation como Cloud Service {#foundation}
+## [!DNL Experience Manager] como  [!DNL Cloud Service] base {#foundation}
 
 ### Novedades {#what-is-new-foundation}
 
