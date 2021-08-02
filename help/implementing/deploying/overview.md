@@ -3,7 +3,7 @@ title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 feature: Implementación
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 1%
@@ -181,7 +181,7 @@ Cualquier paquete de contenido instalado mediante Cloud Manager (mutable e inmut
 
 ### Inclusión de paquetes de terceros {#including-third-party}
 
-Es habitual que los clientes incluyan paquetes pregenerados de fuentes de terceros, como proveedores de software como los socios de traducción de Adobe. La recomendación es alojar estos paquetes en un repositorio remoto y hacer referencia a ellos en el `pom.xml`. Esto es posible para repositorios públicos y también para repositorios privados con protección de contraseña, como se describe en [repositorios maven protegidos por contraseña](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
+Es habitual que los clientes incluyan paquetes pregenerados de fuentes de terceros, como proveedores de software como los socios de traducción de Adobe. La recomendación es alojar estos paquetes en un repositorio remoto y hacer referencia a ellos en el `pom.xml`. Esto es posible para repositorios públicos y también para repositorios privados con protección de contraseña, como se describe en [repositorios maven protegidos por contraseña](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
 Si no es posible almacenar el paquete en un repositorio remoto, los clientes pueden ubicarlo en un repositorio Maven local, basado en file system, que está comprometido con SCM como parte del proyecto y al que se hace referencia en función de su dependencia. El repositorio sería declarado en los pomas del proyecto que se ilustran a continuación:
 
@@ -271,11 +271,11 @@ Además, la versión antigua debe probarse para verificar la compatibilidad con 
 
 Cambiar los usuarios del servicio o las ACLs necesarias para acceder al contenido o al código podría provocar errores en las versiones AEM anteriores, lo que daría como resultado acceso a ese contenido o código con usuarios de servicios obsoletos. Para solucionar este comportamiento, se recomienda hacer cambios distribuidos en al menos 2 versiones, y la primera versión actúa como puente antes de limpiarla en la versión siguiente.
 
-### Cambios de índice {#index-changes}
+### Cambios en el índice {#index-changes}
 
 Si se realizan cambios en los índices, es importante que la versión azul siga utilizando sus índices hasta que finalice, mientras que la versión verde utiliza su propio conjunto modificado de índices. El desarrollador debe seguir las técnicas de administración de índices descritas [en este artículo](/help/operations/indexing.md).
 
-### Codificación conservadora para resúmenes {#conservative-coding-for-rollbacks}
+### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
 
 Si se informa o se detecta un error después de la implementación, es posible que se requiera una reversión a la versión azul. Sería aconsejable garantizar que el código azul sea compatible con cualquier estructura nueva creada por la versión verde, ya que las nuevas estructuras (cualquier contenido mutable) no se revertirán. Si el código antiguo no es compatible, será necesario aplicar correcciones en las versiones posteriores del cliente.
 
