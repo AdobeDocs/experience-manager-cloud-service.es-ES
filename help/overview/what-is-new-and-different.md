@@ -2,7 +2,7 @@
 title: 'Novedades y diferencias: Adobe Experience Manager as a Cloud Service'
 description: 'Novedades y diferencias: Adobe Experience Manager (AEM) como Cloud Service.'
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 10%
@@ -65,7 +65,7 @@ Esto permite adaptarse automáticamente a distintos patrones de uso:
 ![Adaptación automática para patrones de uso variables](assets/introduction-04.png "Adaptación automática para patrones de uso variables")
 
 
-## Actualizaciones de AEM {#aem-updates}
+## Actualizaciones AEM {#aem-updates}
 
 >[!NOTE]
 >Para obtener más información, consulte las [AEM Actualizaciones de la versión](/help/implementing/deploying/aem-version-updates.md).
@@ -112,7 +112,7 @@ En concreto, el número y el tipo de programas de AEM que se pueden crear desde 
 
 Cloud Manager ha evolucionado como un portal de autoservicio en el que se pueden crear y configurar los componentes principales de AEM como Cloud Service:
 
-* Creación y administración de nuevos programas. Consulte [Explicación de los programas y tipos de programas](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) para obtener más información.
+* Creación y administración de nuevos programas. Consulte [Explicación de los programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) para obtener más información.
 
 * Creación y administración de entornos AEM dentro de estos programas. Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información.
 
@@ -161,7 +161,7 @@ También es significativamente diferente, ya que ahora lo hay:
 
 La nueva arquitectura que admite AEM como Cloud Service implica algunos cambios clave en la experiencia general del desarrollador. Uno de los principales objetivos de AEM como Cloud Service es permitir que los clientes con experiencia (que han utilizado AEM on-premise o en el contexto de Adobe Managed Services) migren a AEM como Cloud Service lo antes posible, sin tener que reescribir la mayor parte de su código personalizado. Sin embargo, es posible que todavía se necesiten algunos ajustes.
 
-### Desarrollo de nube {#aem-as-a-cloud-service-developing-cloud-development}
+### Desarrollo en la nube {#aem-as-a-cloud-service-developing-cloud-development}
 
 Para que las aplicaciones de AEM existentes se ejecuten en AEM como Cloud Service, se esperan los siguientes pasos:
 
