@@ -1,13 +1,13 @@
 ---
 title: Descubra qué es Cloud Manager
 description: Siga esta página para obtener más información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
-source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
+exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a Cloud Manager {#intro-cloud-manager}
 
@@ -26,10 +26,10 @@ Los programas de Cloud Manager representan conjuntos de entornos de Cloud Manage
 Un usuario puede crear un **Simulador para pruebas** o un programa **Producción**.
 
 * Se crea un *Programa de producción* para habilitar el tráfico en directo en el momento adecuado en el futuro.
-Consulte [Introducción a los programas de producción](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obtener más información.
+Consulte Introducción a los programas de producción para obtener más información.
 
 * Generalmente, se crea un *Programa de espacio aislado* para que sirva a los fines de formación, ejecución de demostración, habilitación, POC o documentación. No está pensado para transportar tráfico en directo y tendrá restricciones que un programa de Producción no tendrá. Incluirá Sites y Assets y se entregará rellenando automáticamente con una rama de Git que incluya código de muestra, un entorno de desarrollo y una canalización que no sea de producción.
-Consulte [Introducción a los programas de espacio aislado](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obtener más información.
+Consulte Introducción a los programas de espacio aislado para obtener más información.
 
 ## Entornos de Cloud Manager {#cloud-manager-environments}
 
@@ -46,10 +46,10 @@ Los entornos de nube se crearán, accederán y verán a través de Cloud Manager
 
 El servicio de autor de AEM se incluye en un entorno en el que el contenido del sitio y los recursos digitales se crean, administran y actualizan. Normalmente, solo los usuarios internos tienen acceso al servicio de creación y están detrás de una pantalla de inicio de sesión. El servicio de creación está diseñado como entorno de creación y vista previa.
 
-### Servicio de publicación de AEM {#publish-services}
+### Servicio de AEM Publish {#publish-services}
 
 El servicio de publicación de AEM se incluye en un entorno que aloja la experiencia del usuario final, como un sitio web. Este es el servicio que los visitantes del sitio verán e interactuarán con él. Normalmente, el servicio de publicación está disponible para el público.
 
-### Servicio AEM Dispatcher {#dispatcher-services}
+### Servicio de Dispatcher AEM {#dispatcher-services}
 
 Dispatcher es un módulo `Apache HTTP Web server` que proporciona una capa de seguridad y rendimiento que se encuentra frente al servicio de publicación de AEM.
