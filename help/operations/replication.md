@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y Resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Puede encontrar información más detallada sobre Administrar publicación en la
 
 >[!NOTE]
 >
->Este enfoque debe considerarse obsoleto, ya que no persiste en los estados y es menos escalable que otros enfoques. La recomendación del Adobe es utilizar en su lugar los métodos de gestión de publicación o flujo de trabajo
+>Este enfoque debe considerarse obsoleto y se eliminará el 30 de septiembre de 2021 o después, ya que no mantiene los estados y es menos escalable que otros enfoques. La recomendación del Adobe es utilizar en su lugar los métodos de gestión de publicación o flujo de trabajo
 
 Para realizar una activación de árbol:
 
