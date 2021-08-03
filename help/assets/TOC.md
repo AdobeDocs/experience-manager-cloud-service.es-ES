@@ -4,10 +4,10 @@ user-guide-title: Guía de Assets as a Cloud Service
 breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 45%
+source-wordcount: '490'
+ht-degree: 44%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 45%
    + [Autenticación para consultas de Remote GraphQL en fragmentos de contenido](content-fragments/graphql-authentication-content-fragments.md)
    + [API de GraphQL con fragmentos de contenido: contenido de muestra y consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Recursos conectados](use-assets-across-connected-assets-instances.md)
+   + [Generar representaciones de FPO para Adobe InDesign](configure-fpo-renditions.md)
    + [Informes de Asset](asset-reports.md)
    + [Metadatos en cascada](cascading-metadata.md)
    + [Metadatos XMP](xmp-metadata.md)
