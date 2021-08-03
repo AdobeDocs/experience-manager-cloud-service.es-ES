@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Representaciones
 exl-id: null
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ A continuación se indican los pasos para generar representaciones de FPO:
 
 ## Crear un perfil de procesamiento {#create-processing-profile}
 
-Para generar representaciones de FPO, debe crear un **[!UICONTROL Perfil de procesamiento]**. Los perfiles utilizan microservicios de recursos nativos de la nube para el procesamiento. Para obtener instrucciones, consulte [crear perfiles de procesamiento para microservicios de recursos](asset-microservices-configure-and-use.md).
+Para generar representaciones de FPO, cree un **[!UICONTROL Perfil de procesamiento]**. Los perfiles utilizan microservicios de recursos nativos de la nube para el procesamiento. Para obtener instrucciones, consulte [crear perfiles de procesamiento para microservicios de recursos](asset-microservices-configure-and-use.md).
 
 Seleccione **[!UICONTROL Crear representación de FPO]** para generar la representación de FPO. Opcionalmente, haga clic en **[!UICONTROL Agregar nuevo]** para agregar otra configuración de representación al mismo perfil.
 
