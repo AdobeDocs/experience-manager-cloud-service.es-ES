@@ -2,9 +2,9 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1618'
 ht-degree: 3%
 
 ---
@@ -74,9 +74,6 @@ La tarjeta **Environments** de la página Información general enumera hasta tre
    ![](assets/environment-view-2.png)
 
 1. Seleccione cualquiera de los entornos de la lista para ver los detalles del entorno.
-
-   >[!NOTE]
-   >El servicio de vista previa se implementará progresivamente en todos los programas. Se notificará al producto a los clientes cuando su programa esté habilitado para el servicio de vista previa. Consulte la sección [Acceso al servicio de vista previa](#access-preview-service) para obtener más información.
 
    ![](assets/environ-preview1.png)
 
