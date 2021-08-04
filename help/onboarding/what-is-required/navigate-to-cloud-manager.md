@@ -2,9 +2,9 @@
 title: Navegar a Cloud Manager
 description: Siga esta página para conocer cómo navegar a la página de aterrizaje de Cloud Manager
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '506'
 ht-degree: 6%
 
 ---
@@ -66,7 +66,7 @@ Verá una de las tres opciones que se describen a continuación:
 
 A partir de aquí, un usuario con los permisos adecuados, como una función Propietario empresarial en Cloud Manager, puede seleccionar **Agregar programa** para iniciar el [Asistente para agregar programa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access).
 
-Para aprender a añadir un programa en Cloud Manager, consulte:
+Para obtener información sobre cómo añadir un programa en Cloud Manager, consulte creación:
 
-* Creación de un programa de producción
-* Creación de un programa de espacio aislado
+* [Programa de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [Programa de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
