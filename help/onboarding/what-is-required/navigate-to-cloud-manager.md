@@ -2,9 +2,9 @@
 title: Navegar a Cloud Manager
 description: Siga esta página para conocer cómo navegar a la página de aterrizaje de Cloud Manager
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '489'
 ht-degree: 6%
 
 ---
@@ -21,14 +21,21 @@ Una vez que el administrador del sistema le conceda acceso a Cloud Manager, reci
 1. Desde el correo electrónico de bienvenida, haga clic en **Introducción**, como se muestra en la figura siguiente.
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   >[!NOTE]
-   >También puede navegar directamente a la página de inicio de sesión de Cloud Manager desde [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Según las funciones asignadas en [!UICONTROL Cloud Manager] y el estado de la aplicación, verá diferentes pantallas mientras utiliza la interfaz de usuario de [!UICONTROL Cloud Manager]. Consulte la sección siguiente, [Página de aterrizaje de Cloud Manager](#cloud-manager-landing) para obtener más información.
+
+   >[!IMPORTANT]
+   >También puede navegar directamente a la página de inicio de sesión de Cloud Manager desde [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Marque esta página para el futuro y le ayude a navegar directamente a la página de aterrizaje de Cloud Manager.
+
+Además, también puede navegar a la página **Programas y productos** de Cloud Manager desde la página de inicio de Adobe Experience Cloud. Complete los siguientes pasos:
+
+1. Vaya directamente a [Adobe Experience Cloud](https://experience.adobe.com) e inicie sesión con su Adobe ID.
 
 1. Seleccione **Experience Manager**.
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
 1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en [!UICONTROL Cloud Manager], estará listo para usar la interfaz de usuario (IU).
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. Una vez que el inicio de sesión se haya realizado correctamente, se le dirigirá a la página de aterrizaje de Cloud Manager.
 
 
 ## Página de aterrizaje de Cloud Manager {#cloud-manager-landing}
