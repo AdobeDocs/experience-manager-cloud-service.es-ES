@@ -4,9 +4,9 @@ description: Siga esta página para conocer los pasos siguientes después de obt
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,8 @@ Se deben seguir los siguientes pasos para acceder a Author:
 
 ## Siguientes pasos {#whats-next}
 
-Ya está listo para empezar a iniciar la ruta de aprendizaje para la creación y publicación de páginas. Debe seguir la ruta, revisando el documento Ruta de aprendizaje para AEM usuarios.
+Ya está listo para crear y publicar páginas AEM. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación.
+
 
 ## Recursos adicionales {#additional-resources}
 
