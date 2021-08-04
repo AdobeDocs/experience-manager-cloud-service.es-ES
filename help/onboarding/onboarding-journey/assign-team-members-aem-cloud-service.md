@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo asignar int
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Los pasos siguientes deben ser seguidos por un administrador del sistema que tam
 
 ## Siguientes pasos {#whats-next}
 
-Los usuarios que asignó a AEM como perfiles de producto Cloud Service ahora están listos para aprender a acceder a Author y familiarizarse con la creación de páginas en AEM como Cloud Service. Debe seguir la ruta, revisando el documento Ruta de aprendizaje para AEM usuarios.
+Los usuarios que asignó a AEM como perfiles de producto Cloud Service ahora están listos para aprender a acceder a Author y familiarizarse con la creación de páginas en AEM como Cloud Service. Debe seguir la ruta, revisando el documento Ruta de aprendizaje para usuarios AEM o Ruta de aprendizaje para desarrolladores y administradores de implementación.
 
 ## Recursos adicionales {#additional-resources}
 
