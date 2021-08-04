@@ -4,9 +4,9 @@ description: Siga esta página para conocer los pasos siguientes después de obt
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 Este documento ayuda a los desarrolladores y a los gestores de implementación a acceder a Cloud Manager y a familiarizarse con cómo pueden prepararse para la ruta de aprendizaje.
 
-Después de leer, debe:
+Después de leer este documento, debe:
 
-* Como desarrollador, debería poder comprender cómo acceder y administrar Cloud Manager Git
-* Como administrador de implementación, debe ser capaz de comprender cómo configurar canalizaciones e implementar su código en Cloud Manager
+* Como desarrollador, puede comprender cómo acceder y administrar Cloud Manager Git
+* Como administrador de implementación, puede comprender cómo configurar canalizaciones e implementar su código en Cloud Manager
 
 ## Introducción {#introduction}
 
@@ -39,11 +39,13 @@ Conozca cómo navegar e iniciar sesión en Cloud Manager
 
 ## Administrar Git {#manage-git}
 
-Para obtener más información sobre este tema, vaya aquí.
+Puede acceder a su repositorio Git y administrarlo mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager.
+Para obtener más información sobre este tema, consulte [Acceso a Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
 
 ## Instalación de canalización {#setup-pipeline}
 
-Para obtener más información sobre este tema, vaya aquí
+Puede configurar la canalización de producción o no de producción desde la interfaz de usuario de Cloud Manager.
+Para obtener más información sobre este tema, consulte [Configuración de la canalización CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Siguientes pasos {#whats-next}
 
