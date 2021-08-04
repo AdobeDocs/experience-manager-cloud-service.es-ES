@@ -2,7 +2,7 @@
 title: 'Implementar el código: Cloud Services'
 description: 'Implementar el código: Cloud Services'
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Implementar el código {#deploy-your-code}
 
-## Implementación de código con Cloud Manager en AEM como Cloud Service {#deploying-code-with-cloud-manager}
+## Implementación de código con Cloud Manager en AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
 Una vez configurada la canalización de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
 
@@ -41,7 +41,7 @@ Una vez configurada la canalización de producción (repositorio, entorno y ento
    La **implementación por fases** incluye los siguientes pasos:
 
    * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la rama configurada exista, los entornos estén disponibles.
-   * Prueba de compilación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Detalles del entorno de compilación](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
+   * Prueba de compilación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Detalles del entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
    * Escaneo de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
    * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para crear imágenes. Este proceso es responsable de transformar el contenido y los paquetes de Dispatcher producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
    * Implementar en fase
