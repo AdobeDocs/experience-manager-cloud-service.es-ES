@@ -2,9 +2,9 @@
 title: Vista previa del contenido
 description: Aprenda a utilizar el servicio de vista previa de AEM para obtener una vista previa del contenido antes de publicarlo.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 78c5649c6b9c04cb459f5730161affeb452c916c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La función Vista previa forma parte de la versión 2021.5.0 y se implementará gradualmente en las próximas semanas.
+>Para habilitar la función de vista previa en entornos creados antes del 3 de agosto de 2021, asegúrese de que el entorno se encuentra en AEM versión 2021.05.5368.20210529T101701Z o posterior y, a continuación, ejecute una canalización iniciada por el cliente.
 
 AEM ofrece un servicio de vista previa de sitios diseñado para permitir que los desarrolladores y autores de contenido obtengan una vista previa de la experiencia final de un sitio web antes de que llegue al entorno de publicación y esté disponible públicamente.
 
 Facilita la previsualización de experiencias de página que de otra manera no serían visibles desde el entorno de creación, como transiciones de página y otro contenido solo de publicación.
+
+Lea también sobre [acceso al servicio de Vista previa](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Publicar contenido para previsualización {#publishing-content-to-preview}
 
@@ -40,7 +42,7 @@ Puede publicar contenido en el servicio de vista previa utilizando la IU de publ
    https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
    ```
 
-Consulte [Administrar los entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
+Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
 
 El contenido también se puede publicar para obtener una vista previa mediante un [Flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) con el parámetro agentId establecido para la vista previa o mediante la [API de replicación](/help/operations/replication.md#replication-api) con un AgentFilter configurado para la vista previa.
 
@@ -67,4 +69,4 @@ Siga estos pasos para depurar el nivel de vista previa mediante Developer Consol
 
 * En [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), seleccione **— Todas las previsualizaciones —** o un entorno de producción que incluya **prev** en su nombre
 * Generar la información relevante para la instancia de vista previa
-Consulte [Administrar los entornos](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
+Consulte [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md) para obtener más información sobre cómo obtener las direcciones URL de los entornos.
