@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] como Cloud Service Canal de prelanzamiento'
 description: '[!DNL Adobe Experience Manager] como Cloud Service Canal de prelanzamiento'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] como Cloud Service Canal de prelanzamiento  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] como Cloud Service Canal de prelanzamiento {#prerelease-channel}
 
 
 ## Introducción {#introduction}
@@ -20,7 +20,7 @@ La lista de características de la versión preliminar de un mes determinado se 
 
 >[!VÍDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
-## Cómo habilitar la versión preliminar {#enable-prerelease}
+## Activación de la versión preliminar {#enable-prerelease}
 
 Las funciones de la versión preliminar se pueden experimentar de diferentes maneras:
 
@@ -54,7 +54,7 @@ La variable se puede eliminar o volver a establecer en un valor diferente si des
 
 Puede ver nuevas funciones en la consola Sitios en el SDK local de Quickstart y código para las nuevas API en la versión preliminar. Para ello, haga que su proyecto maven haga referencia a la versión preliminar `API Jar` ubicada en Maven Central. También puede ver estas características de la versión preliminar en el equipo local iniciando el SDK de inicio rápido normal en modo de versión preliminar:
 
-* Descargue el SDK desde el portal de distribución de software e instálelo tal como se describe en [Acceso al AEM como SDK de Cloud Service](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)
+* Descargue el SDK desde el portal de distribución de software e instálelo tal como se describe en [Acceso al AEM como SDK de Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 * Al iniciar el inicio rápido del SDK, incluya el argumento `-r prerelease`.
 * El valor es *fijo*, por lo que solo se puede seleccionar en el primer inicio. Vuelva a instalar el SDK para cambiar la opción de la línea de comandos.
 
