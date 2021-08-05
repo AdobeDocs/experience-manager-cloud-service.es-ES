@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadatos
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 10%
+source-wordcount: '1061'
+ht-degree: 9%
 
 ---
 
@@ -101,13 +101,13 @@ La ficha **[!UICONTROL Generar formulario]** enumera los elementos de formulario
 
 ### Edición de elementos de formulario {#editing-form-items}
 
-Para editar las propiedades de los elementos de formulario, toque o haga clic en el componente y edite todas o un subconjunto de las siguientes propiedades en la ficha **[!UICONTROL Configuración]**.
+Para editar las propiedades de los elementos de formulario, toque o haga clic en el componente y edite todas o un subconjunto de las siguientes propiedades en la ficha **[!UICONTROL Configuración]**. Se recomienda asignar solo un campo a una propiedad determinada del esquema de metadatos. De lo contrario, el sistema selecciona el último campo añadido asignado a la propiedad.
 
 **[!UICONTROL Etiqueta]** de campo: Nombre de la propiedad de metadatos que se muestra en la página de propiedades de la carpeta.
 
 **[!UICONTROL Asignar a propiedad]**: Esta propiedad especifica la ruta relativa del nodo de carpeta en el repositorio CRX donde se guarda. Comienza con &quot;**./**&quot;, que indica que la ruta está bajo el nodo de la carpeta.
 
-Los siguientes son los valores válidos para esta propiedad:
+Los siguientes son ejemplos de valores válidos para una propiedad:
 
 * `./jcr:content/metadata/dc:title`: Almacena el valor en el nodo de metadatos de la carpeta como propiedad  `dc:title`.
 
