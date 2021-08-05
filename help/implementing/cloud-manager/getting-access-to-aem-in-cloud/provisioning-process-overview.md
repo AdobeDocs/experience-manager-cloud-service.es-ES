@@ -50,6 +50,7 @@ Para obtener más información, visite [Incorporación al Experience Manager com
 ### 2. Incorporar organizaciones a Adobe Admin Console:
 
 >   ![processoberview2.jpg](./assets/processOverview2.jpg)
+
 * Administrador del sistema:
    * Aprovisionar AEM programas y entornos.
    * Vaya al Admin Console para tareas administrativas.
