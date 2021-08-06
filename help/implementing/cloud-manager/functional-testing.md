@@ -2,9 +2,9 @@
 title: 'Pruebas funcionales: Cloud Services'
 description: 'Pruebas funcionales: Cloud Services'
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '900'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Las pruebas funcionales de producto se ejecutan automáticamente cada vez que un
 
 Consulte [Pruebas funcionales del producto](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) para ver las pruebas de ejemplo.
 
-## Prueba funcional personalizada {#custom-functional-testing}
+## Pruebas funcionales personalizadas {#custom-functional-testing}
 
 El paso Prueba funcional personalizada de la canalización siempre está presente y no se puede omitir.
 
@@ -62,9 +62,21 @@ Para crear y ejecutar sus pruebas de interfaz de usuario, los clientes deben &qu
 
 *Nombre de archivo*: `testing.properties`
 
-*Contenido*:  `one line: ui-tests.version=1`
+*Contenido*:  `ui-tests.version=1`
 
 Si esto no está en el archivo `tar.gz` creado, las pruebas de interfaz de usuario se crean y las ejecuciones se omiten
+
+Para añadir el archivo `testing.properties` en el artefacto creado, añada una instrucción `include` en el archivo `assembly-ui-test-docker-context.xml` (en el submódulo Pruebas de la interfaz de usuario):
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- módulo de prueba de inclusión en Cloud Manager —>
+    &lt;/include>
+    [...]
+    &quot;
 
 >[!NOTE]
 >Las canalizaciones de producción creadas antes del 10 de febrero de 2021 deberán actualizarse para utilizar las pruebas de IU tal como se describe en esta sección. Esto significa que el usuario debe editar la canalización de producción y hacer clic en **Guardar** en la interfaz de usuario aunque no se hayan realizado cambios.
@@ -113,7 +125,7 @@ Por ejemplo, se ejecutaría una clase denominada `com.myco.tests.aem.ExampleIT` 
 
 Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de prueba aem-testing-client. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Git Link](https://github.com/adobe/aem-testing-clients) para obtener más información.
 
-### Ejecución de prueba local {#local-test-execution}
+### Ejecución de pruebas locales {#local-test-execution}
 
 Como las clases de prueba son pruebas JUnit, se pueden ejecutar desde IDE de Java convencionales como Eclipse, IntelliJ, NetBeans, etc.
 
