@@ -2,7 +2,7 @@
 title: Conectores de Adobe Experience Manager as a Cloud Service
 description: Recursos de autoayuda y enlaces a documentación sobre conectores de Adobe Experience Manager as a Cloud Service Connectors
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 89%
@@ -44,7 +44,7 @@ En esta página se muestran los recursos de autoayuda sobre conectores para Expe
 * [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
 * [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es)
-* [Preparación para el RGPD](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
