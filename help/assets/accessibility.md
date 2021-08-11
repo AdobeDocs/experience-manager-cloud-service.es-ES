@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accesibilidad, Administración de activos
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Los usuarios con discapacidades suelen depender del hardware y el software para 
 
 En [!DNL Experience Manager], las funciones de accesibilidad tratan dos requisitos clave de los usuarios de [!DNL Experience Manager] y sus clientes.
 
-* Para los diseñadores y creadores de contenido, existen funciones para crear y publicar contenido accesible que sus clientes y visitantes del sitio web utilizan a su vez. El contenido puede ser utilizado por personas con discapacidades con la ayuda de tecnologías de asistencia. Para obtener más información, consulte [guías de accesibilidad web](/help/onboarding/accessibility/web-accessibility.md).
+* Para los diseñadores y creadores de contenido, existen funciones para crear y publicar contenido accesible que sus clientes y visitantes del sitio web utilizan a su vez. El contenido puede ser utilizado por personas con discapacidades con la ayuda de tecnologías de asistencia. Para obtener más información, consulte [guías de accesibilidad web](/help/compliance/accessibility/quick-guide-wcag.md).
 * [!DNL Experience Manager] también permite que sus usuarios y administradores con discapacidades accedan a la interfaz de usuario y a los controles para crear y administrar el contenido. Las personas con discapacidades pueden utilizar tecnologías de asistencia para desplazarse, utilizar y administrar la capacidad [!DNL Assets].
 
 Las funciones principales de [!DNL Assets] son más accesibles que antes y se actualizan periódicamente para mejorar el cumplimiento de los estándares globales. Las operaciones CRUD en [!DNL Assets] tienen un cierto grado de accesibilidad incorporada en ellas. Los flujos de trabajo de DAM, como agregar, administrar, buscar y distribuir recursos, son accesibles mediante métodos abreviados de teclado, texto del lector de pantalla, contraste de color, etc.
@@ -226,6 +226,6 @@ Para proporcionar comentarios, hacer preguntas y solicitar mejoras del producto 
 >[!MORELIKETHIS]
 >
 >* [Notas de la versión de las mejoras realizadas en cada versión](/help/release-notes/release-notes-cloud/release-notes-current.md).
->* [[!DNL Adobe Experience Manager] directrices de accesibilidad](/help/onboarding/accessibility/web-accessibility.md).
+>* [[!DNL Adobe Experience Manager] directrices de accesibilidad](/help/compliance/accessibility/web-accessibility.md).
 >* [Informes de conformidad (ACR) y listado de VPAT para soluciones](https://www.adobe.com/accessibility/compliance.html) de Adobe.
 
