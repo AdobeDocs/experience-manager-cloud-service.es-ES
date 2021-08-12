@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1406'
 ht-degree: 2%
 
 ---
@@ -182,6 +182,21 @@ La próxima versión está planificada para el 12 de agosto de 2021.
 ### Problemas conocidos {#known-issues-cm-july}
 
 Los clientes que cambien a utilizar Azul JDKs deben tener en cuenta que no todas las aplicaciones existentes se compilarán sin error en Azul JDK. Se recomienda realizar pruebas locales antes de cambiar.
+
+## Herramienta de transferencia de contenido {#content-transfer-tool}
+
+### Fecha de la versión {#release-date-ctt-latest}
+
+La fecha de versión de la herramienta de transferencia de contenido v1.5.6 es el 11 de agosto de 2021.
+
+### Corrección de errores {#bug-fixes-ctt}
+
+* En algunos casos, no todos los usuarios se migraron a la instancia de destino. Para obtener esta corrección, se requiere CTT v1.5.6 junto con aem-ethos-tools 1.2.354 o una versión posterior en el AEM de destino como instancia de Cloud Service.
+
+* El botón **Stop Ingestion** se deshabilitaba durante la ingesta a la instancia de publicación. Esto no es necesario porque no hay ningún paso de restauración de mongo durante la ingesta de Publicar.
+
+* CTT no limpió el directorio `/tmp` después de una extracción correcta. Esto a veces provocaba problemas de espacio en disco.
+
 
 ## Cloud Acceleration Manager {#cam}
 
