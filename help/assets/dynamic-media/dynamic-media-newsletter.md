@@ -4,9 +4,9 @@ description: 'El boletín Dynamic Media por Experience League es un boletín men
 feature: Administración de activos
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 352b615971329600a82a08c5b5b286877ecac322
+source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Obtenga más información sobre las auditorías gratuitas de Dynamic Media Classic de Adobe.
    * Conozca a John Monroe, Director de Programas Senior para Servicios de Éxito de Clientes.
 
-* **[Febrero de 2020, número 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
+* **[Febrero de 2020, número 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
    En este número:
 
