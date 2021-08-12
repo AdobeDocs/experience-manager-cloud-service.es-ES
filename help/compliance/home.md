@@ -2,7 +2,7 @@
 title: Compatibilidad
 description: Compatibilidad
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 83%
@@ -15,11 +15,11 @@ En esta página se muestran los recursos informativos que proporcionan informaci
 
 ## Artículos sobre la información general {#key-articles}
 
-* [Preparación de para la protección de datos y las normas de privacidad de datos](aem-readiness.md)
-* [Preparación de Foundation para la protección de datos y normas de privacidad de datos](foundation-readiness.md)
-* [Preparación de Sites para la protección de datos y las normas de privacidad de datos](sites-readiness.md)
-* [Directrices de accesibilidad web](web-accessibility.md)
-* [Guía rápida de WCAG 2.1](quick-guide-wcag.md)
+* [Preparación de para la protección de datos y las normas de privacidad de datos](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [Preparación de Foundation para la protección de datos y normas de privacidad de datos](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Preparación de Sites para la protección de datos y las normas de privacidad de datos](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Directrices de accesibilidad web](/help/compliance/accessibility/web-accessibility.md)
+* [Guía rápida de WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Guías de Experience Manager as a Cloud Service {#aem-guides}
 
