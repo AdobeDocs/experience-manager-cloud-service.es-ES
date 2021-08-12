@@ -2,7 +2,7 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 19%
@@ -56,7 +56,7 @@ Las siguientes páginas de documentación incluyen información que describe tar
 
 **[Vaya a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, puede acceder a Cloud Manager para comenzar con su recorrido de Cloud con AEM. Los usuarios están listos para realizar varias tareas, como crear un programa, agregar un entorno, [acceder a Git](/help/implementing/cloud-manager/accessing-git.md), [configurar una canalización](/help/implementing/cloud-manager/configure-pipeline.md) e [implementar código](/help/implementing/cloud-manager/deploy-code.md).
+Ahora que ha sido agregado como usuario y asignado a una función de Cloud Manager, puede acceder a Cloud Manager para comenzar con su recorrido de Cloud con AEM. Los usuarios están listos para realizar varias tareas, como crear un programa, agregar un entorno, acceder a Git, [configurar una canalización](/help/implementing/cloud-manager/configure-pipeline.md) e [implementar código](/help/implementing/cloud-manager/deploy-code.md).
 Cloud Manager es una parte importante de AEM como Cloud Service. Permite a las organizaciones administrar [!DNL Experience Manager] en la nube. Incluye un marco de trabajo de integración y entrega continuas (CI/CD) que permite a los equipo de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad. Mediante la interfaz de usuario, puede configurar y poner en marcha la canalización de CD/CI.
 
 **[Conceder acceso a un usuario a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)**
