@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API, API HTTP de Assets
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 2%
 
 ---
@@ -185,7 +185,7 @@ Para la configuración del flujo de trabajo posterior al procesamiento, utilice 
 
 ## Compatibilidad de los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
-Si actualiza desde una versión anterior de [!DNL Experience Manager], puede utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior. Para obtener más información sobre las clases admitidas, consulte la [Referencia de API de Java](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Si actualiza desde una versión anterior de [!DNL Experience Manager], puede utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior. Para obtener más información sobre las clases admitidas, consulte la [referencia de la API de Java o Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
 
 Los siguientes modelos técnicos de flujo de trabajo se sustituyen por microservicios de recursos o no hay compatibilidad disponible:
 
