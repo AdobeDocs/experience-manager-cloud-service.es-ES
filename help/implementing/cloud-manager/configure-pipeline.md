@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,35 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 
    ![](assets/configure-pipeline5.png)
 
+### Edición de una canalización de producción {#editing-prod-pipeline}
+
+Puede editar las configuraciones de canalización desde la página **Información general del programa**.
+
+Siga los pasos a continuación para editar la canalización configurada:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **Editar** en la tarjeta **Canalizaciones**.
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. La pestaña **Source Code** permite actualizar el repositorio. Haga clic en **Access Repo Info** para actualizar el repositorio.
+
+   >[!NOTE]
+   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. La pestaña **Environments** permite actualizar las opciones de fase y producción.
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. La opción **Auditoría de experiencias** permite actualizar o agregar nuevas páginas.
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. Haga clic en **Save** una vez que haya terminado de editar la canalización.
 
 ## Canalizaciones de calidad de código y no producción {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
    * **Generar** : navega a la página de ejecución desde la que se puede ejecutar la canalización
    * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio de Git de Cloud Manager.
    * **Más información** : navega para comprender el recurso de documentación de canalización de CI/CD.
+
+### Edición de una canalización que no es de producción {#editing-nonprod-pipeline}
+
+Puede editar las configuraciones de canalización desde la página **Información general del programa**.
+
+Siga los pasos a continuación para editar la canalización configurada que no sea de producción:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Seleccione la pestaña **Non-Production** y haga clic en **Edit** después de seleccionar las canalizaciones deseadas.
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. Seleccione el repositorio deseado y haga clic en **Guardar**.
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## Pasos siguientes {#the-next-steps}
 
