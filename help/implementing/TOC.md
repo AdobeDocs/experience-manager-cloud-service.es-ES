@@ -5,9 +5,9 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1043'
 ht-degree: 36%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 36%
 + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
 + Uso de Cloud Manager {#using-cloud-manager}
    + Notas de la versión para Cloud Manager {#release-notes-cloud-manager}
-      + [Notas de la versión actual (2021.7.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notas de la versión actual (2021.8.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Notas de la versión 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [Notas de la versión 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [Notas de la versión 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
          + [Notas de la versión 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
@@ -64,6 +65,7 @@ ht-degree: 36%
       + [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
       + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
    + [Acceder y administrar registros](cloud-manager/manage-logs.md)
+   + [Informes de SLA](cloud-manager/sla-reporting.md)
    + [Explicar notificaciones](cloud-manager/notifications.md)
    + Administración de certificados SSL {#manage-ssl-certificates}
       + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -94,7 +96,8 @@ ht-degree: 36%
    + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + Administrar el código {#managing-code}
    + [Administrar versiones del proyecto de Maven](cloud-manager/project-version-handling.md)
-   + [Acceder a Git](cloud-manager/accessing-git.md)
+   + [Repositorios en Cloud Manager](cloud-manager/cloud-manager-repositories.md)
+   + [Acceso a repositorios](cloud-manager/accessing-repos.md)
    + [Integrar Git con Adobe Cloud Manager](cloud-manager/integrating-with-git.md)
    + [Uso de repositorios Git de varias fuentes](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [Configuración de desarrollo de equipo empresarial para AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
