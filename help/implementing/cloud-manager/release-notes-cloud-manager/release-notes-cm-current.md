@@ -1,56 +1,51 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.7.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.7.0
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
 feature: Información de la versión
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 4%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
-# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.7.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.7.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.7.0 es el 15 de julio de 2021.
-La próxima versión está planificada para el 12 de agosto de 2021.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 12 de agosto de 2021.
+La próxima versión está planificada para el 9 de septiembre de 2021.
 
 ### Novedades {#what-is-new}
 
-* Los clientes ahora pueden utilizar Azul 8 y 11 JDK para sus procesos de compilación de Cloud Manager y pueden seleccionar usar uno de estos JDK para complementos Maven compatibles con las cadenas de herramientas *o* para toda la ejecución del proceso Maven.
+* Los clientes Cloud Service ahora pueden ver los informes de Acuerdo de nivel de servicio (SLA) en Cloud Manager. Esto estará disponible progresivamente en los próximos meses.
 
-* La dirección IP de salida saliente ahora se registrará en el archivo de registro de paso de compilación.
+* Se ha cambiado el tipo y la gravedad de las reglas de calidad IndexType y `IndexDamAssetLucene` . Estos son ahora errores del bloqueador *serverity*.
 
-* Los entornos de fase y producción que ejecutan versiones antiguas de AEM ahora informarán de un estado de **Actualización disponible**.
+* Se han introducido nuevas reglas de calidad de índice Oak para cubrir configuraciones asincrónicas y tika.
 
-* El número máximo de certificados SSL admitidos ha aumentado a 20 por programa.
+* Aumente el número máximo de certificados SSL por programa a 50.
 
-* El número máximo de dominios que se pueden configurar ha aumentado a 500 por entorno.
+* Capacidad de autoservicio para permitir a los usuarios crear y administrar varios repositorios a través de la interfaz de usuario de Cloud Manager.
 
-* Los botones **Administrar Git** se han cambiado a **Información de Git de acceso** y el cuadro de diálogo se ha actualizado visualmente.
+* SonarQube leía innecesariamente los datos del historial de Git. En bases de código grandes, esto podría provocar una penalización innecesaria del rendimiento de la compilación.
+
+* Ahora hay una API disponible para invalidar la caché de dependencias de Maven por canalización.
 
 * La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
 
 ### Corrección de errores {#bug-fixes}
 
-* En algunos casos, Vista previa no era una opción disponible al enlazar una Lista de permitidos IP a un entorno.
+* Actualizar el estado disponible no se debe mostrar cuando la última versión sea menor que la versión actual.
 
-* La navegación manual a la página de detalles de ejecución para una ejecución no existente no mostraba un error, solo una pantalla de carga interminable.
+* La incorporación inicial estaba fallando para nuevas organizaciones con nombres muy largos.
 
-* El mensaje de error que se muestra cuando se alcanza el número máximo de certificados SSL no es útil.
+* En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
 
-* En algunas circunstancias, podría haber una discrepancia en la versión de la versión mostrada en la tarjeta de canalización de la página **Información general**.
-
-* El asistente Agregar programa indicó incorrectamente que el nombre no se puede cambiar después de la creación.
-
-### Problemas conocidos {#known-issues}
-
-Los clientes que cambien a utilizar Azul JDKs deben tener en cuenta que no todas las aplicaciones existentes se compilarán sin error en Azul JDK. Se recomienda realizar pruebas locales antes de cambiar.
 
