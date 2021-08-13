@@ -3,7 +3,7 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
 feature: Información de la versión
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
@@ -39,7 +39,7 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 * Ahora hay una API disponible para invalidar la caché de dependencias de Maven por canalización.
 
-* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 29.
 
 ### Corrección de errores {#bug-fixes}
 
