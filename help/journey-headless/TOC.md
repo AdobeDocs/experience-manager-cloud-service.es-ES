@@ -5,7 +5,7 @@ breadcrumb-title: recorrido para desarrolladores AEM sin encabezado
 user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -38,9 +38,9 @@ ht-degree: 0%
    + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](architect/basics.md)
    + [Obtenga información sobre la creación de modelos de fragmento de contenido en AEM](architect/model-structure.md)
 + recorrido de traducción sin AEM {#translation}
-   + [Comprender la localización sin encabezado en AEM](translation/overview.md)
-   + [Introducción a AEM localización sin encabezado](translation/getting-started.md)
-   + [Obtenga información sobre el contenido sin encabezado y cómo localizar en AEM](translation/learn-about.md)
+   + [Comprender la traducción sin encabezado en AEM](translation/overview.md)
+   + [Introducción a AEM traducción sin encabezado](translation/getting-started.md)
+   + [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](translation/learn-about.md)
    + [Configuración del conector de traducción](translation/configure-connector.md)
    + [Configuración de reglas de traducción](translation/translation-rules.md)
    + [Traducir contenido](translation/translate-content.md)
