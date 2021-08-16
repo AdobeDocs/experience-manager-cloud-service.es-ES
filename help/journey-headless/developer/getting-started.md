@@ -1,14 +1,15 @@
 ---
 title: Introducción a AEM Headless como Cloud Service
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, obtenga información sobre AEM requisitos previos sin encabezado.
-source-git-commit: 8e96827f9353d6ffdf1e01645f2bc8bdaac2610f
+exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '3059'
+source-wordcount: '3058'
 ht-degree: 0%
 
 ---
 
-# Introducción a AEM sin encabezado como Cloud Service {#getting-started}
+# Introducción a AEM Headless como Cloud Service {#getting-started}
 
 En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) obtenga información sobre lo que se necesita para comenzar su propio proyecto con AEM sin encabezado.
 
@@ -49,11 +50,11 @@ Una vez creado el contenido en la instancia de autor, debe publicarse para que e
 
 La replicación es el acto de transferir contenido de la instancia de autor a la instancia de publicación. Esto se hace automáticamente AEM cuando un autor u otro usuario con los derechos adecuados publica contenido.
 
-### Resumen básico de AEM {#aem-basics-summary}
+### Resumen de fundamentos de AEM {#aem-basics-summary}
 
 En su nivel más sencillo, la creación de experiencias digitales en AEM requiere los siguientes pasos:
 
-1. Los autores de contenido crearán su contenido sin encabezado en la instancia de autor.
+1. Los autores de contenido crean su contenido sin encabezado en la instancia de autor.
 1. Cuando este contenido está listo, se replica en la instancia de publicación.
 1. Luego se puede llamar a las API para recuperar este contenido.
 
@@ -61,11 +62,11 @@ AEM sin encabezado se basa en esta base técnica al ofrecer poderosas herramient
 
 ## Conceptos básicos AEM sin encabezado {#aem-headless-basics}
 
-Las capacidades sin objetivos de AEM se basan en algunas funciones clave. Estas se explicarán en detalle en las partes posteriores del recorrido. Ahora sólo es importante conocer los conceptos básicos de lo que hacen y cómo se llaman.
+Las capacidades sin objetivos de AEM se basan en algunas funciones clave. Estos se explican en detalle en partes posteriores del recorrido. Ahora sólo es importante conocer los conceptos básicos de lo que hacen y cómo se llaman.
 
 ### Modelos de fragmento de contenido {#content-fragment-models}
 
-Los modelos de fragmento de contenido definen la estructura de los datos y el contenido que creará y administrará en AEM. Sirven como un tipo de andamiaje para el contenido. Al elegir crear contenido, los autores seleccionarán entre los modelos de fragmento de contenido que defina, que los guiarán en la creación de contenido.
+Los modelos de fragmento de contenido definen la estructura de los datos y el contenido que se crean y administran en AEM. Sirven como un tipo de andamiaje para el contenido. Al elegir crear contenido, los autores seleccionan entre los modelos de fragmento de contenido que defina, que los guían en la creación de contenido.
 
 ### Fragmentos de contenido {#content-fragments}
 
@@ -88,9 +89,9 @@ AEM admite todos los modelos sin encabezado y los modelos tradicionales de pila 
 
 Con el fin de garantizar su comprensión de los conceptos sin objetivos, este Recorrido para desarrolladores AEM sin objetivos se centra en el modelo sin objetivos para ponerle en marcha lo antes posible sin necesidad de utilizar código en AEM.
 
-Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda AEM características sin periféricos. Presentamos estos casos a continuación para su conciencia. Al final del recorrido, se le introducirá en estos conceptos con más detalle en caso de que se requiera dicha flexibilidad para su proyecto.
+Sin embargo, hay que tener en cuenta las posibilidades híbridas adicionales que se abren una vez que entienda AEM características sin periféricos. Estos casos se detallan a continuación para su sensibilización. Al final del recorrido, se le introducirán estos conceptos con más detalle en caso de que se requiera dicha flexibilidad para su proyecto.
 
-### Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de página única (SPA). {#already-have-a-spa}
+### Ya tiene un consumo externo de contenido sin encabezado, como una aplicación de una sola página (SPA). {#already-have-a-spa}
 
 Supongamos que su requisito básico es, como mínimo, entregar contenido de AEM a un servicio externo existente.
 
@@ -98,7 +99,7 @@ Supongamos que su requisito básico es, como mínimo, entregar contenido de AEM 
 
 Este nivel de integración es el modelo tradicional sin encabezado y permite a los autores de contenido crear contenido en AEM y ofrecerlo sin preocuparse por cualquier número de servicios externos mediante GraphQL o editarlos desde servicios externos mediante la API de Assets. No se requiere código en AEM.
 
-En este modelo, AEM solo se utiliza para crear y servir el contenido mediante el uso de fragmentos de contenido AEM. El procesamiento y la interacción con el contenido se delegan en la aplicación externa consumidora, a menudo en una aplicación de una sola página (SPA).
+En este modelo, AEM solo se utiliza para crear y servir el contenido mediante AEM fragmentos de contenido. El procesamiento y la interacción con el contenido se delegan en la aplicación externa consumidora, a menudo en una aplicación de una sola página (SPA).
 
 #### Nivel 2: Incrustar el SPA en AEM - Modelo híbrido {#level-2}
 
@@ -138,24 +139,24 @@ Para que cualquier proyecto tenga éxito, es importante definir claramente no s�
 
 ### Ámbito {#scope}
 
-Es muy importante tener un ámbito claramente definido para el proyecto. El ámbito informa los criterios de aceptación y le permite establecer una definición de hecho.
+Es importante tener un ámbito claramente definido para el proyecto. El ámbito informa los criterios de aceptación y le permite establecer una definición de hecho.
 
-La primera pregunta que debe hacerse es &quot;¿Qué estoy tratando de lograr con AEM sin cabeza?&quot; La respuesta debe ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no junto con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia de cara al cliente del usuario final. El objetivo de utilizar AEM sin encabezado es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con API de última generación que llamarían a AEM sin encabezado para recuperar contenido o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y encontrar la sección que mejor se adapte a lo que desea lograr.
+La primera pregunta que deben hacer es &quot;¿Qué estoy tratando de lograr con AEM sin cabeza?&quot; La respuesta debe ser, en general, que tiene o tendrá en el futuro una aplicación de experiencia que ha creado con sus propias herramientas de desarrollo, no con AEM. Esta aplicación de experiencia puede ser una aplicación móvil, un sitio web o cualquier otra aplicación de experiencia de cara al cliente del usuario final. El objetivo de utilizar AEM sin encabezado es alimentar su aplicación de experiencia con contenido creado, almacenado y administrado en AEM con API de última generación que llamarían a AEM sin encabezado para recuperar contenido o incluso contenido completamente CRUD directamente desde su aplicación de experiencia. Si esto no es lo que está buscando hacer, probablemente desee [volver a la documentación de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) y encontrar la sección que mejor se adapte a lo que desea lograr.
 
 ### Funciones y responsabilidades {#roles-responsibilities}
 
-Las funciones de cualquier proyecto individual variarán, pero las importantes que se deben tener en cuenta en el contenido de AEM desarrollo sin objetivos son:
+Las funciones de cualquier proyecto individual varían, pero las importantes que se deben tener en cuenta en el contenido de AEM desarrollo sin objetivos son:
 
 * [Administrador](#administrator)
 * [Autor de contenido](#content-author)
-* [Modelador de contenido](#content-modeler)
+* [Arquitecto de contenido](#content-architect)
 * [Desarrollador](#developer)
 
 #### Administrador {#administrator}
 
-El administrador es responsable de la configuración y configuración base de su sistema. Por ejemplo, el administrador configurará su organización dentro del sistema de administración de usuarios de Adobe, denominado Sistema Identity Management (IMS). El administrador será el primer usuario de la organización en recibir una invitación por correo electrónico de Adobe una vez que su organización haya sido creada por el Adobe dentro de IMS. El administrador podrá iniciar sesión en IMS y agregar usuarios de otras personas.
+El administrador es responsable de la configuración y configuración base de su sistema. Por ejemplo, el administrador configura su organización dentro del sistema de administración de usuarios de Adobe, denominado Sistema Identity Management (IMS). El administrador es el primer usuario de la organización que recibe una invitación por correo electrónico de Adobe una vez que su organización ha sido creada por el Adobe dentro de IMS. El administrador puede iniciar sesión en IMS y agregar usuarios de otras personas.
 
-Una vez que el administrador haya configurado los usuarios, se les otorgarán los permisos para acceder a todos los recursos de AEM para realizar su trabajo como contribuyentes a la entrega de la aplicación de experiencia mediante AEM sin encabezado.
+Una vez que el administrador ha configurado los usuarios, se les conceden los permisos para acceder a todos los recursos de AEM para realizar su trabajo como contribuyentes a la entrega de la aplicación de experiencia mediante AEM sin encabezado.
 
 El administrador debe ser el usuario que configure AEM y prepare el entorno de tiempo de ejecución para permitir a [autores de contenido](#content-author) crear y actualizar contenido y a [desarrolladores](#developer) utilizar API que recuperen o modifiquen contenido para sus aplicaciones de experiencia.
 
@@ -165,38 +166,38 @@ Los autores de contenido crean y administran el contenido que AEM entrega sin en
 
 Los autores de contenido deben tener en cuenta las siguientes prácticas recomendadas.
 
-#### Plan de localización {#localization}
+#### Plan de traducción {#translation}
 
-Planifique la traducción y localización al principio del proyecto. Considere &quot;Internationalization Project Manager&quot; como una persona independiente cuya responsabilidad es definir qué contenido debe traducirse y qué no, y qué contenido traducido pueden modificar los productores de contenido regionales o locales.
+Planifique la traducción al inicio del proyecto. Considere a &quot;especialista en traducción&quot; como una persona independiente cuya responsabilidad es definir qué contenido debe traducirse y qué no debe traducirse, y qué contenido traducido pueden modificar los productores de contenido regionales o locales.
 
-Cree un plan sobre la localización de contenido que necesitará.
+Cree un plan sobre la traducción de contenido que necesita.
 
-* ¿Solo necesita idiomas diferentes o también un idioma para adoptar los detalles regionales?
+* ¿Necesita idiomas diferentes o también un idioma para adoptar los detalles regionales?
 * ¿Necesita contenido multimedia enriquecido como imágenes o vídeos para que sea diferente en diferentes configuraciones regionales?
 
-Obtenga información clara sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que el sistema necesita admitir? ¿Se pueden aprovechar AEM flujos de trabajo para automatizar este proceso?
+Obtenga información clara sobre el flujo de trabajo de actualización de contenido. ¿Cuál es el proceso de aprobación que debe admitir el sistema? ¿Se pueden aprovechar AEM flujos de trabajo para automatizar este proceso?
 
-Tenga en cuenta que la [jerarquía de contenido](#content-hierarchy) se puede aprovechar para facilitar la localización.
+Tenga en cuenta que la [jerarquía de contenido](#content-hierarchy) se puede aprovechar para facilitar la traducción.
 
-Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre AEM flujos de trabajo y herramientas de localización.
+Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre AEM flujos de trabajo y herramientas de traducción, incluidos vínculos al Recorrido de traducción sin encabezado de AEM.
 
 ##### Aprovechar la jerarquía de contenido {#content-hierarchy}
 
 La jerarquía de carpetas puede abordar dos preocupaciones principales con respecto a la administración de contenido:
 
-* [Localización](#localization) : AEM administra la localización del contenido manteniendo copias del contenido en carpetas específicas de la configuración regional.
-* Organización: las carpetas se utilizan para definir la jerarquía de contenido necesaria para satisfacer las necesidades de localización, así como para administrar lógicamente los fragmentos de contenido.
+* [Traducción](#translation) : AEM administra la traducción del contenido manteniendo copias del contenido en carpetas específicas de la configuración regional.
+* Organización: las carpetas se utilizan para definir una jerarquía de contenido necesaria para satisfacer las necesidades de traducción, así como para administrar lógicamente los fragmentos de contenido.
 
-AEM permite una estructura de contenido muy flexible y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante darse cuenta de que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes que [dependen de la ruta de contenido.](#developer) Por lo tanto, una jerarquía bien definida y claramente establecida por adelantado, puede resultar extremadamente útil para los autores de contenido.
+AEM permite una estructura de contenido flexible y una jerarquía puede ser arbitrariamente grande. Sin embargo, es importante darse cuenta de que cualquier cambio en la estructura de carpetas puede tener consecuencias no deseadas para las consultas existentes que [dependen de la ruta de contenido.](#developer) Por lo tanto, una jerarquía bien definida y claramente establecida por adelantado, puede ser útil para los autores de contenido.
 
-Las carpetas también se pueden restringir para permitir solo ciertos tipos de contenido (según los modelos de fragmento de contenido). Por lo general, se recomienda especificar siempre explícitamente qué modelos se permiten para todas las carpetas de la jerarquía. Especificación del contenido permitido para una carpeta determinada:
+Las carpetas también se pueden restringir para permitir solo ciertos tipos de contenido (según los modelos de fragmento de contenido). Se recomienda especificar siempre explícitamente qué modelos se permiten para todas las carpetas de la jerarquía. Especificación del contenido permitido para una carpeta determinada:
 
 * Evita que los autores de contenido creen contenido que no pertenece a la carpeta.
 * Optimiza el proceso de creación de contenido filtrando los tipos de contenido permitidos en la carpeta durante la creación para mostrar solo tipos de contenido válidos.
 
-Al crear una estructura de contenido adecuada, resulta más fácil coordinar la creación de contenido sin encabezado en todos los canales para maximizar la reutilización de contenido. El aprovechamiento del contenido en varios canales mejorará considerablemente la eficacia de la producción de contenido y la administración de cambios.
+Al crear una estructura de contenido adecuada, resulta más fácil coordinar la creación de contenido sin encabezado en todos los canales para maximizar la reutilización de contenido. El aprovechamiento del contenido en varios canales mejora considerablemente la eficacia de la producción de contenido y la administración de cambios.
 
-##### Establecer convenciones de nombres correctos {#naming-conventions}
+##### Establecer convenciones de nombres adecuados {#naming-conventions}
 
 Los nombres de los fragmentos de contenido deben ser descriptivos para los autores de contenido. AEM gestiona de forma transparente la omisión o el truncamiento de los nombres que usan los ID en el nivel del repositorio. Por lo tanto, los nombres lógicos proporcionados por los autores de contenido siempre deben ser legibles y representar el contenido.
 
@@ -205,17 +206,17 @@ Los nombres de los fragmentos de contenido deben ser descriptivos para los autor
 
 Consulte la sección [recursos adicionales](#additional-resources) para obtener documentación adicional sobre AEM convenciones de nomenclatura de páginas.
 
-##### No amplíe el anidado de contenido {#content-nesting}
+##### No extender el anidado de contenido {#content-nesting}
 
-[Los ](#content-fragments) fragmentos de contenido se utilizan en AEM para crear contenido sin encabezado. AEM admite hasta diez niveles de anidación de contenido para fragmentos de contenido. Sin embargo, es importante tener en cuenta que AEM tendrá que resolver de forma iterativa cada referencia definida en el fragmento de contenido principal y, a continuación, comprobar si hay alguna referencia secundaria en todos los elementos del mismo nivel. Estas operaciones pueden sumarse rápidamente y convertirse en un problema de rendimiento.
+[Los ](#content-fragments) fragmentos de contenido se utilizan en AEM para crear contenido sin encabezado. AEM admite hasta diez niveles de anidación de contenido para fragmentos de contenido. Sin embargo, es importante tener en cuenta que AEM debe resolver de forma iterativa cada referencia definida en el fragmento de contenido principal y, a continuación, comprobar si hay alguna referencia secundaria en todos los elementos del mismo nivel. Estas operaciones pueden sumarse rápidamente y convertirse en un problema de rendimiento.
 
 Como regla general, las referencias de fragmento de contenido no deben anidarse más allá de cinco niveles.
 
-#### Modelador de contenido {#content-modeler}
+#### Arquitecto de contenido {#content-architect}
 
-Los modeladores de contenido analizan los requisitos de los datos que deben entregarse sin problemas y definen la estructura de estos datos. Estas estructuras se denominan [Modelos de fragmento de contenido](#content-fragment-models) en AEM. Los modelos de fragmento de contenido se utilizan como base para los fragmentos de contenido que crean los autores de contenido.
+Los arquitectos de contenido analizan los requisitos de los datos que deben entregarse sin interrupciones y definen la estructura de estos datos. Estas estructuras se denominan [Modelos de fragmento de contenido](#content-fragment-models) en AEM. Los modelos de fragmento de contenido se utilizan como base para los fragmentos de contenido que crean los autores de contenido.
 
-Un enfoque útil a la hora de definir modelos de fragmento de contenido es crear modelos que se asignen a los componentes UX de las aplicaciones que consuman el contenido.
+Un enfoque útil a la hora de definir modelos de fragmento de contenido es crear modelos que se asignen a los componentes de experiencia de usuario de las aplicaciones que consumen el contenido.
 
 Dado que los autores de contenido interactúan con los modelos de forma continua a medida que crean contenido nuevo, alinear los modelos con el usuario les ayuda a visualizar la experiencia digital resultante. Siguiendo con esta alineación, puede asignar iconos a los modelos de fragmento de contenido que representan el elemento UX para que los autores puedan seleccionar de forma intuitiva el modelo correcto en función de las indicaciones visuales.
 
@@ -231,7 +232,7 @@ Los desarrolladores deben tener en cuenta algunas recomendaciones básicas al pl
    * [Los autores de contenido tienen control total sobre la ](#content-hierarchy) jerarquía de fragmentos de contenido y podrían realizar cambios para romper dicha consulta.
    * Las consultas deben optar por referencias del modelo de fragmento de contenido con parámetros de consulta dinámicos para filtrar los resultados y generar la carga útil deseada.
 * Para obtener el mejor rendimiento de las consultas, utilice siempre consultas persistentes en AEM. Estos se discuten más adelante en el recorrido.
-* GraphQL está diseñado para ser declarativo siguiendo el lema &quot;Pide exactamente lo que necesitas, y consigue exactamente eso&quot;. Esto significa que, al crear consultas de GraphQL, evite siempre las consultas de tipo `select *` que pueda crear en una base de datos relacional.
+* GraphQL es declarativo siguiendo el lema &quot;Pide exactamente lo que necesitas, y consigue exactamente eso&quot;. Esto significa que, al crear consultas de GraphQL, evite siempre las consultas de tipo `select *` que pueda crear en una base de datos relacional.
 
 Para una [implementación típica sin encabezado que utiliza AEM,](#level-1) el desarrollador no necesita tener conocimientos de codificación de AEM.
 
@@ -250,16 +251,16 @@ Para comprender los patrones de tráfico y tráfico, comience por reunir lo que 
 * ¿Cuántos autores de contenido espera que trabajen simultáneamente?
 * ¿Cuál es la frecuencia de las actualizaciones de contenido?
 * ¿Cuántos modelos de contenido se necesitan?
-* ¿Cuántas instancias de modelos se necesitarán?
+* ¿Cuántas instancias de modelos se necesitan?
 
 #### Frecuencia de actualización {#update-frequency}
 
-Con mucha frecuencia, las secciones de experiencias diferentes tienen distintas frecuencias de actualizaciones de contenido. Comprender esto es importante para poder ajustar las configuraciones de CDN y caché. Esto también es importante para los [Modeladores de contenido](#content-modeler), ya que diseñan modelos para representar su contenido. Tenga en cuenta lo siguiente:
+A menudo, las diferentes secciones de experiencias tienen distintas frecuencias de actualizaciones de contenido. Comprender esto es importante para poder ajustar las configuraciones de CDN y caché. Esto también es importante para los [arquitectos de contenido](#content-architects), ya que diseñan modelos para representar el contenido. Tenga en cuenta lo siguiente:
 
 * ¿Deben caducar algunos tipos de contenido después de un período determinado?
 * ¿Hay elementos específicos del usuario que no se pueden almacenar en caché?
 
-## Siguientes {#what-is-next}
+## Siguientes pasos {#what-is-next}
 
 Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabezado de AEM, debe:
 
@@ -274,6 +275,7 @@ Debe continuar con el recorrido sin AEM al revisar el documento [Ruta a la prime
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Ruta a la primera experiencia usando AEM sin encabezado,](path-to-first-experience.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no es necesario que continúen en el recorrido sin encabezado.
 
+* [AEM Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) : este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin objetivos, cómo AEM contenido sin encabezado y cómo puede traducirlo.
 * [Introducción a la arquitectura de Adobe Experience Manager como Cloud Service](/help/core-concepts/architecture.md) : Comprender AEM como estructura de Cloud Service
 * [AEM Tutorials sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elija lo que es adecuado para usted.
 * [Administración de contenido sin objetivos mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : siga este curso para obtener información general sobre la API de GraphQL implementada en AEM. Se requiere autenticación mediante Adobe ID.
