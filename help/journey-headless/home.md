@@ -1,9 +1,9 @@
 ---
 title: recorridos sin AEM
 description: Comience aquí para obtener una descripción general de los recorridos guiados disponibles para comprender AEM potentes funciones sin encabezado.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -52,5 +52,7 @@ Los siguientes Recorridos de documentación están disponibles para temas sin en
 |---|---|---|
 | [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Obtenga información sobre las tecnologías sin encabezado, lo que aportan a la experiencia del usuario, cómo AEM admite modelos sin encabezado y cómo implementar su propio proyecto de desarrollo sin encabezado de A a Z. | Desarrolladores |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Obtenga información sobre las tecnologías sin encabezado, por qué podrían utilizarse en su proyecto y cómo crear y actualizar proyectos de traducción en AEM de A a Z. | Especialistas en traducción |
+| [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos. | Arquitectos |
+| [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager como Cloud Service y cómo modelar contenido para su proyecto. | Creadores y autores de contenido |
 
 Manténgase atento a los [recorridos que se presentarán próximamente y que abarquen funciones adicionales.](/help/journey-documentation/home.md#journeys)
