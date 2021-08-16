@@ -1,11 +1,11 @@
 ---
-sub-product: recorrido para desarrolladores AEM sin encabezado
-user-guide-title: recorrido para desarrolladores AEM sin encabezado
-breadcrumb-title: recorrido para desarrolladores AEM sin encabezado
+sub-product: recorridos sin AEM
+user-guide-title: recorridos sin AEM
+breadcrumb-title: recorridos sin AEM
 user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,8 +13,9 @@ ht-degree: 0%
 ---
 
 
-# recorrido sin AEM {#headless-journey}
+# recorridos sin AEM {#headless-journey}
 
++ [recorridos sin AEM](/help/journey-headless/home.md)
 + AEM Recorrido para desarrolladores sin encabezado {#developer}
    + [Comprender el sin encabezado en AEM](developer/overview.md)
    + [Obtenga información sobre el desarrollo sin encabezado de CMS](developer/learn-about.md)
