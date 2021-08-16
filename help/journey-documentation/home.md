@@ -1,9 +1,9 @@
 ---
 title: recorridos de documentación de AEM
 description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,8 @@ Ya tiene a su disposición varios Recorridos de documentación. Dado que cada re
 | Recorrido | Descripción |
 |---|---|
 | [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Comience aquí para ver cómo AEM admite modelos de desarrollo sin objetivos y cómo comenzar su proyecto desde la planificación, la implementación y la puesta en marcha. |
-| Recorrido de creación sin encabezado | Comience aquí para ver cómo crear y administrar contenido sin encabezado en AEM. |
+| [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos. |
+| [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager como Cloud Service y cómo modelar contenido para su proyecto. |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Comience aquí para ver cómo configurar y administrar sus proyectos de traducción sin encabezado en AEM. |
 | AEM Recorrido de incorporación | ¡Muy pronto! |
 | recorrido de comercio AEM | ¡Muy pronto! |
