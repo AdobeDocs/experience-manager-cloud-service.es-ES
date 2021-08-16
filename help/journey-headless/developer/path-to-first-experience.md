@@ -1,13 +1,13 @@
 ---
 title: Ruta a la primera experiencia usando AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, comprenderá los pasos para implementar su primera experiencia sin objetivos en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
+source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
-
 
 # Ruta a la primera experiencia usando AEM sin encabezado {#path-to-first-experience}
 
@@ -40,7 +40,7 @@ Antes de continuar con este documento, asegúrese de haber revisado el documento
 * Cumplir los requisitos enumerados.
 * Tenga en cuenta su propia definición de proyecto, que incluye ámbito, funciones y rendimiento.
 
-## Planificación del éxito {#planning-for-success}
+## Planificación para el éxito {#planning-for-success}
 
 Para iniciar su primer proyecto sin encabezado AEM debe asegurarse de que dispone de un modelo de contenido que admita la personalización y las actualizaciones que desee realizar en todos los canales.
 
@@ -50,7 +50,7 @@ Independientemente de AEM, también debe asegurarse de que tiene configurado un 
 
 Desea impulsar una experiencia coherente y administrar campañas personalizadas en todos los canales, de modo que pueda ver cada canal individual y cada superficie como su propia estructura de contenido distinta a la que enviar. Sin embargo, tener cada canal con su propio modelo de contenido será difícil de mantener.
 
-En su lugar, debe tener en cuenta cómo se relaciona el contenido en diferentes superficies basándose en principios de organización, como jerarquías de productos y marcas, categorías de bienes o superficies o pasos en el recorrido del cliente. Por ejemplo, si tiene un conjunto de superficies que admiten una marca específica de automóviles que fabrica, puede que desee comenzar con un modelo de contenido para obtener información general que sea verdadera para todo el coche y, a continuación, tener elementos más específicos de contexto, como el contenido necesario cuando el coche comienza a tener problemas de servicio. Este modelo aplicará una herencia del contenido general de la marca de un automóvil, al tiempo que permitirá cambios basados en el contexto específico necesario. También le ayudará a administrar en el futuro las actualizaciones de este contenido, ya que puede aplicar el control en función de funciones como el especialista en marketing general o el gestor de productos para toda la marca de automóvil, frente a un autor responsable de la experiencia de &quot;inicio de coche&quot;.
+En su lugar, debe tener en cuenta cómo se relaciona el contenido en diferentes superficies basándose en principios de organización, como jerarquías de productos y marcas, categorías de bienes o superficies o pasos en el recorrido del cliente. Por ejemplo, si tiene un conjunto de superficies que admiten una marca específica de automóviles que fabrica, puede que desee comenzar con un modelo de contenido para obtener información general que sea verdadera para todo el coche y que luego tenga elementos más específicos, como el contenido necesario, cuando el coche comience a funcionar cuando haya problemas de servicio. Este modelo aplicará la herencia del contenido general de la marca de un automóvil, al tiempo que permitirá cambios basados en el contexto específico necesario. También le ayudará a administrar en el futuro las actualizaciones de este contenido, ya que puede aplicar el control en función de funciones como el especialista en marketing general o el gestor de productos para toda la marca de automóvil, frente a un autor responsable de la experiencia de &quot;inicio de coche&quot;.
 
 Una vez que tenga el modelo de contenido y una vista clara de los distintos clientes a los que debe mostrarse el contenido, debe asegurarse de que GraphQL/API asociadas con el acceso a varios modelos de contenido se publiquen para todos los clientes que necesiten este contenido. Existen diferentes opciones para acceder a cierto contenido. Puede solicitar un contenido específico que sea estático y que permita el almacenamiento en caché del contenido y un rendimiento superior. También puede solicitar contenido que se genere dinámicamente y que requiera más procesamiento. Asegúrese de que los clientes aprovechan las API más eficientes para sus necesidades comerciales.
 
@@ -111,7 +111,7 @@ Un proyecto sin objetivos no sólo es exitoso debido a la tecnología implementa
 ### Creación de contenido {#authoring}
 
 * Para versiones específicas del canal de su contenido, considere la posibilidad de utilizar variaciones de fragmento de contenido. Las variaciones se sincronizan con el patrón de contenido para optimizar la administración del cambio de contenido.
-* Invite a otros productores de contenido a revisar contenido y proporcionar comentarios con anotaciones y comentarios, que están disponibles en el editor de fragmentos de contenido y globalmente en los fragmentos de la consola de administración de fragmentos de contenido.
+* Invite a otros productores de contenido a revisar contenido y proporcionar comentarios con anotaciones y comentarios, que están disponibles en el editor de fragmentos de contenido y globalmente en el Admin Console de fragmentos de contenido.
 * Mantenga las cosas en movimiento con el menor número posible de elementos obligatorios. Los elementos obligatorios pueden bloquear el flujo de trabajo.
 
 ### Creación de contenido global {#localization}
@@ -120,7 +120,7 @@ Un proyecto sin objetivos no sólo es exitoso debido a la tecnología implementa
 * Aproveche todas las funcionalidades proporcionadas por su sistema de tecnología de traducción que puede integrar con AEM, como la memoria de traducción.
 * Comprenda si el contenido multimedia enriquecido, como imágenes y vídeos, necesita localización.
 
-## Siguientes {#what-is-next}
+## Siguientes pasos {#what-is-next}
 
 Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabezado de AEM, debe:
 
@@ -142,6 +142,7 @@ Independientemente del estilo de aprendizaje que tenga, Adobe quiere que tenga �
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Cómo modelar su contenido como modelos de contenido AEM,](model-your-content.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no es necesario que continúen en el recorrido sin encabezado.
 
+* [AEM Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) : este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin objetivos, cómo AEM contenido sin encabezado y cómo puede traducirlo.
 * [Desarrollo sin objetivos para AEM Sites as a Cloud Service](/help/implementing/developing/headless/introduction.md) : una introducción rápida para orientar al desarrollador AEM sin objetivos con las funciones necesarias
 * [AEM Tutorials sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elija lo que es adecuado para usted.
 * [Administración de contenido sin objetivos mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : siga este curso para obtener información general sobre la API de GraphQL implementada en AEM. Se requiere autenticación mediante Adobe ID.
