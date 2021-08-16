@@ -1,13 +1,13 @@
 ---
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a modelar el contenido para AEM entrega sin encabezado mediante Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
-source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
+exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
+source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 2%
 
 ---
-
 
 # Cómo modelar el contenido {#model-your-content}
 
@@ -15,7 +15,7 @@ En esta parte del [AEM Recorrido para desarrolladores sin encabezado](overview.m
 
 ## La historia hasta ahora {#story-so-far}
 
-Al principio [Obtenga información sobre el desarrollo sin encabezado de CMS](learn-about.md) abarcaba el envío de contenido sin encabezado y por qué debería usarse. A continuación, [Introducción a AEM sin encabezado como Cloud Service](getting-started.md) describió AEM sin encabezado en el contexto de su propio proyecto
+Al principio [Obtenga información sobre el desarrollo sin encabezado de CMS](learn-about.md) abarcaba el envío de contenido sin encabezado y por qué debería usarse. A continuación, [Introducción a AEM sin encabezado como Cloud Service](getting-started.md) describió AEM sin encabezado en el contexto de su propio proyecto.
 
 En el documento anterior del recorrido sin AEM encabezado, [Ruta a la primera experiencia con AEM sin encabezado](path-to-first-experience.md), se han aprendido los pasos necesarios para implementar el primer proyecto. Después de leerlo, debe:
 
@@ -264,7 +264,7 @@ tbc...
 
 Para obtener una estructura básica como ejemplo, consulte La estructura del fragmento de contenido de ejemplo.
 
-## Siguientes {#whats-next}
+## Siguientes pasos {#whats-next}
 
 Ahora que ha aprendido a modelar su estructura y a crear contenido en función de eso, el siguiente paso es [Aprenda a utilizar las consultas de GraphQL para acceder y recuperar el contenido de los fragmentos de contenido](access-your-content.md). Esto presentará y analizará GraphQL, y luego verá algunas consultas de ejemplo para ver cómo funcionan las cosas en la práctica.
 
