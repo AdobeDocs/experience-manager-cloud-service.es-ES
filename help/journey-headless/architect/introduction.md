@@ -1,9 +1,10 @@
 ---
 title: recorrido de arquitecto de contenido sin encabezado de AEM
 description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service, y cómo modelar contenido para su proyecto.
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
