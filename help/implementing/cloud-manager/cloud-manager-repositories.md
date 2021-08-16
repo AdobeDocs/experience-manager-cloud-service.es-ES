@@ -2,9 +2,9 @@
 title: Repositorios de Cloud Manager
 description: Repositorios de Cloud Manager
 exl-id: Cloud Manager Repositories
-source-git-commit: cebc603aab9c558239588f574f52568d05081b34
+source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Los repositorios creados y disponibles en Cloud Manager se pueden ver y administrar a través de la página Repositorios .
 
 >[!NOTE]
->Hay un límite de 300 repositorios en todos los programas de una empresa determinada o [Identity Management System del Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)).
+>Hay un límite de 300 repositorios en todos los programas de una empresa determinada o en el sistema Identity Management ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html) de [Adobe.
 
 ## Adición y administración de repositorios {#add-manage-repos}
 
@@ -34,15 +34,12 @@ Siga los pasos a continuación para ver y administrar repositorios en Cloud Mana
 
    ![](assets/repos/repo-1.png)
 
-1. Seleccione **Guardar**. El repositorio recién creado se mostrará en la tabla, como se muestra a continuación.
+1. Seleccione **Guardar**. El repositorio recién creado se mostrará en la tabla, como se muestra a continuación. Los repositorios creados en Cloud Manager también estarán disponibles para su selección durante los pasos de adición o edición de canalización. Consulte [Configurar la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) para obtener más información.
 
    >[!NOTE]
    >Hay un único repositorio *primary* o una rama para cualquier canalización dada. Con [Compatibilidad con submódulos Git](#git-submodule-support), sin embargo, muchas ramas secundarias se pueden incluir en el momento de la compilación.
 
    ![](assets/repos/create-repo3.png)
-
-   >[!NOTE]
-   >Los repositorios creados en Cloud Manager también estarán disponibles para su selección durante los pasos de adición o edición de canalización. Consulte [Configurar la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) para obtener más información.
 
 1. Puede seleccionar el repositorio y hacer clic en las opciones de menú desde el extremo derecho de la tabla a **Copiar URL del repositorio**, **Ver y actualizar** o **Eliminar** su repositorio, como se muestra en la figura siguiente.
 
