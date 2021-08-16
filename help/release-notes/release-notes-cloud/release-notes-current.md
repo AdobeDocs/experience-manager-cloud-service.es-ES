@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
+source-git-commit: 2f08b1487c1a7fc7b94678e78f8fd72054ff51cb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1632'
 ht-degree: 2%
 
 ---
@@ -144,7 +144,39 @@ La documentación XML para Experience Manager como Cloud Service está disponibl
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.7.0.
+Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.8.0 y 2021.7.0.
+
+## Fecha de la versión {#release-date-cm-aug}
+
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 12 de agosto de 2021.
+La próxima versión está planificada para el 9 de septiembre de 2021.
+
+### Novedades {#what-is-new-aug}
+
+* Los clientes Cloud Service ahora pueden ver los informes de Acuerdo de nivel de servicio (SLA) en Cloud Manager. Esto estará disponible progresivamente en los próximos meses.
+Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) para obtener más información.
+
+* Se ha cambiado el tipo y la gravedad de las reglas de calidad IndexType y `IndexDamAssetLucene` . Estos son ahora errores del bloqueador *serverity*.
+
+* Se han introducido nuevas reglas de calidad de índice Oak para cubrir configuraciones asincrónicas y tika.
+
+* Aumente el número máximo de certificados SSL por programa a 50.
+
+* Capacidad de autoservicio para permitir a los usuarios crear y administrar varios repositorios a través de la interfaz de usuario de Cloud Manager.
+
+* SonarQube leía innecesariamente los datos del historial de Git. En bases de código grandes, esto podría provocar una penalización innecesaria del rendimiento de la compilación.
+
+* Ahora hay una API disponible para invalidar la caché de dependencias de Maven por canalización.
+
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 29.
+
+### Corrección de errores {#bug-fixes-aug}
+
+* Actualizar el estado disponible no se debe mostrar cuando la última versión sea menor que la versión actual.
+
+* La incorporación inicial estaba fallando para nuevas organizaciones con nombres muy largos.
+
+* En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
 
 ### Fecha de la versión {#release-cm-july}
 
