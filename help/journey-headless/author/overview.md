@@ -4,9 +4,9 @@ description: Comience aquí para obtener un recorrido guiado a través de las po
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '734'
 ht-degree: 2%
 
 ---
@@ -66,3 +66,14 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
+
+## Recursos adicionales {#additional-resources}
+
+Los recorridos de documentación muestran cómo AEM resuelve un problema comercial al proporcionar una narrativa que lo guía a través de procesos y funciones complejos e interrelacionados. Un recorrido ilustra cómo varias funciones trabajan juntas para satisfacer una sola necesidad empresarial.
+
+Como estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden relacionarse entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo funcionan juntas AEM potentes funciones.
+
+* [AEM Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) : este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin objetivos, cómo AEM contenido sin encabezado y cómo puede traducirlo.
+* [AEM Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) : Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
+* [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) : Empiece aquí para ver una introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y cómo modelar el contenido de su proyecto.
+* [AEM como Cloud Service de documentación técnica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) : si ya conoce las tecnologías AEM y sin objetivos, puede que desee consultar directamente nuestros documentos técnicos en profundidad.
