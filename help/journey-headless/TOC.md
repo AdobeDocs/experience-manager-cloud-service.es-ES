@@ -5,9 +5,9 @@ breadcrumb-title: recorrido para desarrolladores AEM sin encabezado
 user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '198'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,12 @@ ht-degree: 1%
    + [Cómo ponerlo todo juntos](developer/put-it-all-together.md)
    + [Activación de la aplicación sin cabeza](developer/go-live.md)
    + [Opcional: Cómo crear aplicaciones de una sola página con AEM](developer/create-spa.md)
++ recorrido de autor de contenido sin encabezado de AEM {#content-author}
+   + [recorrido del autor de contenido sin encabezado de AEM: información general](author/overview.md)
+   + [Creación para usuarios sin encabezado con AEM: una introducción](author/introduction.md)
+   + [Conceptos básicos de creación para usuarios sin encabezado con AEM](author/basics.md)
+   + [Obtenga información sobre el uso de referencias en fragmentos de contenido](author/references.md)
+   + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](author/metadata-tagging.md)
 + recorrido de traducción sin AEM {#translation}
    + [Comprender la localización sin encabezado en AEM](translation/overview.md)
    + [Introducción a AEM localización sin encabezado](translation/getting-started.md)
