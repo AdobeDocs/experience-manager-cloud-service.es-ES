@@ -1,0 +1,53 @@
+---
+title: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
+description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
+hide: true
+hidefromtoc: true
+source-git-commit: b860493d92e7886513fe08e3eb6c56bf88ca58c0
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 3%
+
+---
+
+
+# Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido {#author-headless-metadata-tagging}
+
+## La historia hasta ahora {#story-so-far}
+
+Al principio del [AEM Recorrido Autor de contenido sin encabezado](overview.md) [Introduction](introduction.md) abarcaba los conceptos básicos y la terminología relevantes para la creación sin encabezado.
+
+En el paso anterior se le introdujo el uso de referencias para la creación de CMS sin encabezado. Ha aprendido qué tipos de referencias están disponibles y cuáles son sus propósitos: Referencias de contenido, Referencias de recursos/medios y Referencias de fragmento.
+
+Este artículo se basa en estos elementos para que pueda comprender cómo usar metadatos y etiquetado para crear su propio contenido para su proyecto sin encabezado de AEM.
+
+## Objetivo {#objective}
+
+* **Audiencia**: Avanzadas
+* **Objetivo**: Introduzca el uso de metadatos y etiquetas para la creación de CMS sin encabezado.
+
+## Adición de metadatos y etiquetas {#adding-metadata-and-tags}
+
+Hay tres métodos que puede utilizar para agregar metadatos y etiquetas:
+
+* Al crear el fragmento por primera vez:
+
+   ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+* La pestaña **Metadata** del editor de fragmentos de contenido le permite añadir ambos campos de metadatos y etiquetas **Tags** predefinidas en el proyecto:
+
+   ![Editor de fragmentos de contenido: metadatos](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+
+   * También se puede acceder a ella directamente mediante la opción **Properties** de la barra de herramientas de la consola Assets.
+
+## Siguientes pasos {#whats-next}
+
+Ahora puede poner todo este conocimiento en uso y empezar a crear fragmentos de contenido para su proyecto.
+
+## Recursos adicionales {#additional-resources}
+
+* [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Uso de etiquetas  ](/help/sites-cloud/authoring/features/tags.md)
+
+* [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
