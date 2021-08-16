@@ -1,7 +1,10 @@
 ---
 title: recorrido de traducción AEM sin encabezado
 description: Comience aquí para obtener un recorrido guiado a través de la traducción de su contenido sin encabezado utilizando AEM poderosas herramientas de traducción.
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 2%
