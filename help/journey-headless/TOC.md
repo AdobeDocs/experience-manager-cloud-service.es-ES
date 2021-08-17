@@ -5,7 +5,7 @@ breadcrumb-title: recorridos sin AEM
 user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
 feature: Herramientas para desarrolladores
 role: Developer, Architect
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: fe1d8f29e59f1f54c4f8e3a419103926005c0e48
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -27,17 +27,17 @@ ht-degree: 0%
    + [Cómo ponerlo todo juntos](developer/put-it-all-together.md)
    + [Activación de la aplicación sin cabeza](developer/go-live.md)
    + [Opcional: Cómo crear aplicaciones de una sola página con AEM](developer/create-spa.md)
-+ recorrido de autor de contenido sin encabezado de AEM {#content-author}
++ recorrido de arquitectos de contenido sin encabezado de AEM {#architect}
+   + [Información general sobre el Recorrido de AEM arquitectos de contenido sin encabezado](architect/overview.md)
+   + [Modelado de contenido para usuarios sin encabezado con AEM: una introducción](architect/introduction.md)
+   + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](architect/basics.md)
+   + [Obtenga información sobre la creación de modelos de fragmento de contenido en AEM](architect/model-structure.md)
++ recorrido de autor de contenido sin encabezado de AEM {#author}
    + [recorrido del autor de contenido sin encabezado de AEM: información general](author/overview.md)
    + [Creación para usuarios sin encabezado con AEM: una introducción](author/introduction.md)
    + [Conceptos básicos de creación para usuarios sin encabezado con AEM](author/basics.md)
    + [Obtenga información sobre el uso de referencias en fragmentos de contenido](author/references.md)
    + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](author/metadata-tagging.md)
-+ recorrido de arquitectos de contenido sin encabezado de AEM {#content-architect}
-   + [Información general sobre el Recorrido de AEM arquitectos de contenido sin encabezado](architect/overview.md)
-   + [Modelado de contenido para usuarios sin encabezado con AEM: una introducción](architect/introduction.md)
-   + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](architect/basics.md)
-   + [Obtenga información sobre la creación de modelos de fragmento de contenido en AEM](architect/model-structure.md)
 + recorrido de traducción sin AEM {#translation}
    + [Comprender la traducción sin encabezado en AEM](translation/overview.md)
    + [Introducción a AEM traducción sin encabezado](translation/getting-started.md)
