@@ -4,9 +4,9 @@ description: 'El boletín Dynamic Media por Experience League es un boletín men
 feature: Administración de activos
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
+source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[Abril de 2020, número 3](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2020_April.html)**
+* **[Abril de 2020, número 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html)**
 
    En este número:
 
@@ -64,7 +64,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Obtenga información sobre la nueva interfaz de usuario de Dynamic Media Classic.
    * Conozca a `Georgia Myers`, el Administrador de éxito de los clientes para Adobe Experience Cloud.
 
-* **[Enero de 2020, número 1](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
+* **[Enero de 2020, número 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
    En este número:
 
@@ -74,7 +74,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Su guía para seleccionar un DAM (Digital Asset Manager) que satisfaga sus necesidades de hoy y le prepare para lo que será nuevo en medios enriquecidos mañana.
    * Conozca a `Mark Dean`, especialista en medios digitales.
 
-* **[Noviembre de 2019, número 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+* **[Noviembre de 2019, número 11](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
    En este número:
 
@@ -84,7 +84,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Comparta el boletín con sus colegas para crear experiencia en equipo.
    * Conozca a `Apoorva Gupta`, responsable sénior de productos de Dynamic Media.
 
-* **[Octubre de 2019, número 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[Octubre de 2019, número 10](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
    En este número:
 
@@ -95,7 +95,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Conozca a `Nick Peters`, Gerente, Ingeniería de Fiabilidad del Sitio, Adobe Experience Manager.
    * Póngase al día con Dynamic Media y Dynamic Media Classic en Experience League.
 
-* **[Septiembre de 2019, número 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[Septiembre de 2019, número 09](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
    En este número:
 
@@ -106,7 +106,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Conozca a `Bridget Roman`, el responsable de marketing de producto sénior para recursos de Experience Manager.
    * Póngase al día con Dynamic Media y Dynamic Media Classic en Experience League.
 
-* **[Agosto de 2019, número 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+* **[Agosto de 2019, número 08](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    En este número:
 
@@ -116,7 +116,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Eche un vistazo a una potente integración que se producirá este septiembre y que le permitirá analizar cómo interactúan los visitantes con sus medios enriquecidos.
    * Conozca a `PieterJan Pieper`, el soporte técnico de Dynamic Media con wiz.
 
-* **[Julio de 2019, número 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[Julio de 2019, número 07](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    En este número:
 
@@ -127,7 +127,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Agregar vídeos de 360 grados y miniaturas de vídeo personalizadas al sitio web.
    * Conozca a `Andrew Hathaway`, consultor de soluciones principales para Dynamic Media dentro de Recursos de Experience Manager.
 
-* **[Junio de 2019, número 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
+* **[Junio de 2019, número 06](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    En este número:
 
@@ -138,7 +138,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Obtenga información sobre el Recorte inteligente impulsado por IA para imágenes.
    * Conozca `Alex Thiers`, una de las fuerzas que impulsan muchas de las buenas funciones e innovaciones de Dynamic Media y Dynamic Media Classic.
 
-* **[Mayo de 2019, número 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
+* **[Mayo de 2019, número 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html)**
 
    En este número:
 
@@ -148,7 +148,7 @@ En este boletín archivado de una sola tienda, puede encontrar recursos valiosos
    * Para actualizar su estrategia de medios enriquecidos, lea una serie de blogs de tres partes.
    * Obtenga información sobre el recorte inteligente de vídeo impulsado por IA.
 
-* **[Abril de 2019, número 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
+* **[Abril de 2019, número 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html)**
 
    Le damos la bienvenida al número de inauguración del Boletín de Dynamic Media. El nuevo boletín mensual de Adobes está lleno de noticias, eventos y recursos. El contenido es para usuarios de Dynamic Media dentro de Experience Manager Assets y Adobe Dynamic Media Classic.
 
