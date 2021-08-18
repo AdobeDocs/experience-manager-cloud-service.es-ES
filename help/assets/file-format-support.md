@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Administración de recursos,Representaciones
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 10%
@@ -227,7 +227,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Sugerencias y limitaciones {#limitations-and-tips}
 
-* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 10 GB. Al cargar recursos muy grandes, a veces se produce un error en la operación de extracción de metadatos.
+* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos muy grandes, a veces se produce un error en la operación de extracción de metadatos.
 
 >[!MORELIKETHIS]
 >
