@@ -4,7 +4,7 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Introducción al proceso de incorporación {#getting-started}
 
-La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual, cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
+La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -55,11 +55,11 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. Una vez que haga clic en **Administradores** desde la tarjeta **Usuarios**, en el paso anterior, puede buscar introduciendo el correo electrónico, el nombre de usuario, el nombre o los apellidos de Adobe ID.
+1. Una vez que haga clic en **Administradores** desde la tarjeta **Usuarios**, puede buscar introduciendo el correo electrónico, el nombre de usuario, el nombre o los apellidos de Adobe ID.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. La búsqueda debe devolver correctamente el registro de correo electrónico con **System** en la columna etiquetada **ADMIN ROLE**, como se muestra a continuación. Esto confirma que es administrador del sistema.
+1. La búsqueda debe encontrar correctamente el registro de correo electrónico. Además, la **FUNCIÓN DE ADMINISTRACIÓN** debe mostrar **Sistema**, como se muestra a continuación. Esto confirma que es administrador del sistema. Esto confirma su función como administrador del sistema.
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
