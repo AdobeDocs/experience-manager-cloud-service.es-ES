@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Microservicios de asset compute,Flujo de trabajo,Procesamiento de recursos
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 1%
@@ -238,7 +238,7 @@ Para obtener información sobre cómo implementar una configuración OSGi, consu
 
 * Tenga en cuenta sus necesidades para todos los tipos de representaciones al diseñar flujos de trabajo. Si no prevé la necesidad de una representación en el futuro, elimine su paso de creación del flujo de trabajo. Las representaciones no se pueden eliminar de forma masiva posteriormente. Las representaciones no deseadas pueden ocupar mucho espacio de almacenamiento después de un uso prolongado de [!DNL Experience Manager]. Para recursos individuales, puede eliminar las representaciones manualmente desde la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y volver a cargarlos.
 * Actualmente, la compatibilidad se limita a la generación de representaciones. No se admite la generación de recursos nuevos.
-* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 10 GB. Al cargar recursos muy grandes, a veces se produce un error en la operación de extracción de metadatos.
+* Actualmente, el límite de tamaño de archivo para la extracción de metadatos es de aproximadamente 15 GB. Al cargar recursos muy grandes, a veces se produce un error en la operación de extracción de metadatos.
 
 >[!MORELIKETHIS]
 >
