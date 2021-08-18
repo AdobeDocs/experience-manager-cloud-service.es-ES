@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Administración de recursos,Representaciones
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '795'
 ht-degree: 10%
 
 ---
@@ -213,12 +213,8 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D, RM | Vídeo rojo sin procesar | MJPEG 2000 | - |
 | RAM, RM | RealVideo | No admitido | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Flac nativo | Códec de audio sin pérdidas gratuito | - |
 | MJ2 | Motion JPEG 2000 | Códec Motion JPEG 2000 | - |
 
 ## Formatos de audio {#audio-formats}
