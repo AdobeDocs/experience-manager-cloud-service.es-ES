@@ -2,18 +2,21 @@
 title: Integración de comercio de AEM y Adobe (Magento) mediante Commerce Integration Framework
 description: AEM y Adobe Commerce (Magento) se integran perfectamente con Commerce Integration Framework (CIF). CIF permite a AEM acceder a una instancia de Magento y comunicarse con Magento a través de GraphQL. También permite a los autores de AEM utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Magento. Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
 thumbnail: aem-magento-architecture.jpg
-exl-id: 1cdfda88-a728-432f-b24a-f81347572bcf
-translation-type: tm+mt
-source-git-commit: a4e53fdcb33eab8afabcb13d651155cd247bda1f
+exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
+source-git-commit: b6a9b515724b0a950fc399bec0d746fe273cfd33
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 37%
+source-wordcount: '413'
+ht-degree: 35%
 
 ---
 
-# Integración de comercio de AEM y Adobe (Magento) mediante Commerce Integration Framework {#aem-magento-framework}
+# Integración de AEM y Adobe Commerce (Magento) con Commerce Integration Framework {#aem-magento-framework}
 
 El Experience Manager y el Magento de comercio (Adobe Commerce) se integran perfectamente con Commerce Integration Framework (CIF). CIF permite a AEM acceder directamente a la instancia de comercio y comunicarse con ella mediante las [API de GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) de Adobe Commerce.
+
+>[!NOTE]
+>
+> La versión mínima de la API de GraphQL admitida es 2.3.5. Algunas funciones solo son compatibles con versiones más recientes o con la edición de Adobe Commerce.
 
 >[!NOTE]
 >
