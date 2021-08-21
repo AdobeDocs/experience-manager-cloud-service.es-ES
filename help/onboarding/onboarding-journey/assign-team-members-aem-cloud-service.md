@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo asignar int
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Después de leer esta sección debe comprender:
 
 ## Introducción {#introduction}
 
-Para obtener acceso a AEM como usuarios Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto, como `AEM Users` o `AEM Administrators`. Los integrantes del equipo deben tener permisos para la instancia de AEM, ya que los permisos para administrar Cloud Manager no serán suficientes. Más información.
+Para que se le conceda acceso a AEM como Cloud Service, los usuarios deben pertenecer a uno de los dos perfiles de producto:  `AEM Users` o `AEM Administrators`. Los integrantes del equipo deben tener permisos para la instancia de AEM, ya que los permisos para administrar Cloud Manager no serán suficientes. Más información.
 
 >[!NOTE]
 >Todos los usuarios asignados a AEM perfil de producto Usuario por el administrador del sistema tendrán acceso (solo lectura) a Cloud Manager.
