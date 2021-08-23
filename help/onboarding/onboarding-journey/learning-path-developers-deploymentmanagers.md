@@ -2,9 +2,8 @@
 title: Ruta de aprendizaje para desarrolladores y administradores de implementación
 description: Siga esta página para conocer los pasos siguientes después de obtener acceso, si es un desarrollador o un administrador de implementación
 hide: true
-hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
