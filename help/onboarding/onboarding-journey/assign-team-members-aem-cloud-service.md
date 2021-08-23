@@ -1,10 +1,10 @@
 ---
-title: 'Asignación de miembros del equipo a AEM como perfiles de producto del Cloud Service '
+title: 'Asignar miembros del equipo a AEM como perfiles de producto del Cloud Service '
 description: Siga esta página para obtener información sobre cómo asignar integrantes del equipo a AEM como perfiles de producto del Cloud Service
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
+source-git-commit: f0d7886c0bf88fe42d05a1cdd6eb03b07b165c52
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 ---
 
 
-# Asignación de miembros del equipo a AEM como perfiles de producto del Cloud Service {#assign-team-members-cloud-service}
+# Asignar miembros del equipo a AEM como perfiles de producto del Cloud Service {#assign-team-members-cloud-service}
 
 ## Objetivo {#objective}
 
