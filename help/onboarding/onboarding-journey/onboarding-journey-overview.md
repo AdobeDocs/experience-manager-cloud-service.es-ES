@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
+source-git-commit: ae7b9f45b0a50bf6816c85934997c7562718c2be
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '834'
 ht-degree: 2%
 
 ---
@@ -36,6 +36,17 @@ La incorporación es el proceso durante el cual un [administrador del sistema](h
 A continuación se ilustra el recorrido de incorporación y cada paso del recorrido se describe detalladamente en las secciones siguientes.
 
 ![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
+Este recorrido está diseñado para un administrador del sistema, que expone los requisitos, los pasos y el enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
+
+Las siguientes son las personalidades que interactúan en este recorrido.
+
+| Grupo de usuarios | Descripción | Función en el Recorrido |
+|---|---|---|
+| Administrador del sistema | Proporciona el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service. | Gestiona todos los aspectos de sus usuarios, desde el acceso a los permisos. |
+| AEM Author | Crea y revisa el contenido (que puede ser de varios tipos; por ejemplo, páginas, recursos y publicaciones) antes de publicarse en el sitio web. | Una vez concedidos los permisos, puede iniciar el recorrido de su propio administrador de implementación. |
+| Desarrollador | Tiene experiencia en el desarrollo de aplicaciones AEM que consumen contenido de diferentes fuentes | Una vez concedidos los permisos, puede iniciar su propio recorrido de desarrollador |
+| Administrador de implementación | Agrega o actualiza un entorno, ejecuta cualquier canalización e implementa código en AEM entorno o calidad de código. | Una vez concedidos los permisos, puede iniciar el recorrido de su propio administrador de implementación. |
 
 ## Exploración del Recorrido de integración {#exploring-onboarding-journey}
 
