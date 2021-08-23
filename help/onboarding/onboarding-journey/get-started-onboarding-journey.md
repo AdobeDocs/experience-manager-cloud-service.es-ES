@@ -3,7 +3,7 @@ title: Introducción al proceso de integración
 description: Siga esta página para obtener información sobre cómo empezar a utilizar el recorrido de incorporación
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha iniciado sesión en el Admin Console y ha comprobado su perfil como administrador del sistema, debe continuar con el recorrido de incorporación revisando el documento Asignar miembros del equipo a perfiles de producto de Cloud Manager.
+Ahora que ha iniciado sesión en el Admin Console y ha comprobado su perfil como administrador del sistema, debe continuar con el recorrido de incorporación revisando el documento [Asignar miembros del equipo a perfiles de producto de Cloud Manager](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md).
 
