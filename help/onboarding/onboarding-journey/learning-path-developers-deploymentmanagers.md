@@ -3,7 +3,7 @@ title: Ruta de aprendizaje para desarrolladores y administradores de implementac
 description: Siga esta página para conocer los pasos siguientes después de obtener acceso, si es un desarrollador o un administrador de implementación
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 3%
@@ -50,7 +50,7 @@ Para obtener más información sobre este tema, consulte [Configuración de la c
 
 ## Siguientes pasos {#whats-next}
 
-Los responsables de desarrollo e implementación ya están listos para familiarizarse con el desarrollo de código en AEM como Cloud Service. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación. Para obtener más información sobre el recorrido de aprendizaje para autores de contenido, consulte Ruta de aprendizaje para autores de AEM.
+Los responsables de desarrollo e implementación ya están listos para familiarizarse con el desarrollo de código en AEM como Cloud Service. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación. Para obtener más información sobre el recorrido de aprendizaje para autores de contenido, consulte [Ruta de aprendizaje para autores de AEM](/help/onboarding/onboarding-journey/learning-path-aem-users.md).
 
 ## Recursos adicionales {#additional-resources}
 
