@@ -3,7 +3,7 @@ title: 'Asignación de miembros del equipo a perfiles de producto de Cloud Manag
 description: Siga esta página para obtener información sobre cómo asignar miembros del equipo a perfiles de producto de Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 0%
@@ -157,7 +157,7 @@ Los siguientes pasos le guían a través de esto:
 
 ## Siguientes pasos {#whats-next}
 
-Ha aprendido sobre tres perfiles de producto de Cloud Manager diferentes, como Propietario empresarial, Administrador de implementación y Desarrollador. A continuación, asignó integrantes del equipo a perfiles de producto de Cloud Manager, como Propietario empresarial, Administrador de implementación y Desarrollador. Ya está listo para continuar con su recorrido de integración revisando el documento Configuración de recursos en la nube a través de Cloud Manager, donde aprenderá:
+Ha aprendido sobre tres perfiles de producto de Cloud Manager diferentes, como Propietario empresarial, Administrador de implementación y Desarrollador. A continuación, asignó integrantes del equipo a perfiles de producto de Cloud Manager, como Propietario empresarial, Administrador de implementación y Desarrollador. Ya está listo para continuar con el recorrido de integración revisando el documento [Configuración de recursos de la nube a través de Cloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md), donde aprenderá:
 
 1. Como administrador del sistema asignado a la función *Propietario empresarial*, debe acceder a Cloud Manager e iniciar sesión en él.
 
