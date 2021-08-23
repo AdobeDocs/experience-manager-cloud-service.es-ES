@@ -3,9 +3,9 @@ title: 'Asignar miembros del equipo a AEM como perfiles de producto del Cloud Se
 description: Siga esta página para obtener información sobre cómo asignar integrantes del equipo a AEM como perfiles de producto del Cloud Service
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
@@ -101,7 +101,7 @@ Los pasos siguientes deben ser seguidos por un administrador del sistema que tam
 
 ## Siguientes pasos {#whats-next}
 
-Los usuarios que asignó a AEM como perfiles de producto Cloud Service ahora están listos para aprender a acceder a Author y familiarizarse con la creación de páginas en AEM como Cloud Service. Debe seguir la ruta, revisando el documento Ruta de aprendizaje para usuarios AEM o Ruta de aprendizaje para desarrolladores y administradores de implementación.
+Los usuarios que asignó a AEM como perfiles de producto Cloud Service ahora están listos para aprender a acceder a Author y familiarizarse con la creación de páginas en AEM como Cloud Service. Debe seguir la ruta, revisando el documento Ruta de aprendizaje para [AEM usuarios](/help/onboarding/onboarding-journey/learning-path-aem-users.md) o para [desarrolladores y gestores de implementación](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md).
 
 ## Recursos adicionales {#additional-resources}
 
