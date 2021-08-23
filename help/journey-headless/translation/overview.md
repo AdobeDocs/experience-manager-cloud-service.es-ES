@@ -4,9 +4,9 @@ description: Comience aquí para obtener un recorrido guiado a través de la tra
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1044'
 ht-degree: 2%
 
 ---
@@ -87,3 +87,4 @@ Como estos recorridos están diseñados para mantenerse por su cuenta. Sin embar
 * [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) : Empiece aquí para ver una introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y cómo modelar el contenido de su proyecto.
 * [AEM Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) : Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 * [AEM como Cloud Service de documentación técnica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) : si ya conoce las tecnologías AEM y sin objetivos, puede que desee consultar directamente nuestros documentos técnicos en profundidad.
+* [AEM tutoriales sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : si prefiere aprender haciendo y con inclinación técnica, tome nuestros tutoriales prácticos organizados por API y framework, que exploran la creación y el uso de aplicaciones creadas en AEM sin encabezado.
