@@ -2,9 +2,9 @@
 title: Migración a Experience Manager como Cloud Service
 description: Migración a Experience Manager como Cloud Service
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c5b98c25ec8999c36e2aa44266ca42150c3b2906
+source-git-commit: 73c414ed636fea48c4c79a02e71d99fa8d16878f
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2103'
 ht-degree: 10%
 
 ---
@@ -79,7 +79,7 @@ Consulte los recursos de autoayuda sobre cómo configurar e implementar en entor
    * [Copia de seguridad y restauración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en)
 
 >[!TIP]
-> Consulte el tutorial sobre cómo [implementar WKND en el Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html?lang=en)
+> Consulte el tutorial sobre cómo [implementar WKND en el Experience Manager Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ### Ayuda y recursos
 
