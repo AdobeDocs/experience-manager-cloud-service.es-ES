@@ -3,7 +3,7 @@ title: Recorrido de incorporación
 description: Siga esta página para obtener información sobre cómo empezar a utilizar el recorrido de incorporación
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -64,4 +64,4 @@ Explorará muchos temas en este recorrido. Los siguientes artículos le proporci
 
 ## Siguientes pasos {#what-is-next}
 
-Ya está listo para empezar con su Recorrido de incorporación. Le recomendamos que continúe con la siguiente parte del recorrido y lea el artículo Introducción al proceso de incorporación .
+Ya está listo para empezar con su Recorrido de incorporación. Le recomendamos que continúe con la siguiente parte del recorrido y lea el artículo [Comenzar con el proceso de incorporación](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md).
