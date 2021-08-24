@@ -3,9 +3,9 @@ title: Ruta de aprendizaje para desarrolladores y administradores de implementac
 description: Siga esta página para conocer los pasos siguientes después de obtener acceso, si es un desarrollador o un administrador de implementación
 hide: true
 index: false
-source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
+source-git-commit: 53b98708044a7df8c4d24f25046c098f1a307743
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '566'
 ht-degree: 2%
 
 ---
@@ -68,3 +68,14 @@ Los responsables de desarrollo e implementación ya están listos para familiari
 
 * [Introducción a AEM SPA Editor para desarrolladores](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
+## Cursos para Experience League {#exp-league-courses}
+
+Siga los cursos de la liga de experiencia para obtener más información. Asegúrese de que está registrado para acceder a los cursos:
+
+* [Sitios tradicionales](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Editor SPA](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Sin encabezado](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+
+* [Comercio](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
