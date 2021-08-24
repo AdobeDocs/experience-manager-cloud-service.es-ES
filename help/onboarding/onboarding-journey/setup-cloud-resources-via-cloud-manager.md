@@ -3,9 +3,9 @@ title: Configuración de recursos de Cloud mediante Cloud Manager
 description: Siga esta página para obtener información sobre cómo configurar los recursos de Cloud a través de Cloud Manager
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Siga las secciones a continuación para aprender a crear sus [programas de servi
 
 ## Vaya a Cloud Manager {#navigate-cloud-manager}
 
-El usuario propietario del negocio recibirá un correo electrónico de bienvenida con un vínculo para empezar, o si no lo encuentra, vaya directamente a [Adobe Experience Cloud](https://experience.adobe.com) e inicie sesión con su Adobe ID.
+El usuario Propietario del negocio recibirá un correo electrónico de bienvenida con un vínculo para empezar o, si no lo encuentra, acceda a [Cloud Manager](https://my.cloudmanager.adobe.com/) directamente iniciando sesión con su Adobe ID.
 
 Siga los pasos a continuación para ir a Cloud Manager:
 
