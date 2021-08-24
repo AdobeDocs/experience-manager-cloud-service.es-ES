@@ -3,10 +3,10 @@ title: Ruta de aprendizaje para desarrolladores y administradores de implementac
 description: Siga esta página para conocer los pasos siguientes después de obtener acceso, si es un desarrollador o un administrador de implementación
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
@@ -68,9 +68,3 @@ Los responsables de desarrollo e implementación ya están listos para familiari
 
 * [Introducción a AEM SPA Editor para desarrolladores](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Cursos para Experience League {#experience-league-courses}
-
-* Sitios tradicionales
-* Editor SPA
-* Sin encabezado
-* Comercio
