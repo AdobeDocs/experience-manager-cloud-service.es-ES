@@ -1,9 +1,9 @@
 ---
 title: Instalación y configuración de reproductores en Screens as a Cloud Service
 description: En esta página se describe cómo instalar y configurar reproductores en Screens como Cloud Service.
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -74,6 +74,15 @@ En cada `ping` se incluyen las siguientes propiedades:
 >|—|—|
 >|isContentRendering {boolean}|true si la GPU puede confirmar que está reproduciendo contenido real (basado en el análisis de píxeles)|
 
+### Restricciones     {#limitations}
+
+A continuación se enumeran algunas limitaciones de la monitorización de reproducción básica:
+
+* Dado que el reproductor informa de su propio estado de reproducción al servidor, necesita una conexión activa.
+
+* La propiedad `isContentRendering` que comprueba la GPU consume actualmente muchos recursos para que esté habilitada de forma predeterminada y requiere la inclusión explícita de las preferencias del reproductor. Se recomienda no utilizarlo junto con los vídeos.
+
+* Compatible con canales de secuencia.
 
 ## Siguientes pasos {#whats-next}
 
