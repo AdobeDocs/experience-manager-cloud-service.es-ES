@@ -1,9 +1,9 @@
 ---
 title: Creación de un proyecto en Screens como Cloud Service
 description: En esta página se describe cómo crear un proyecto en Screens como Cloud Service.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Siga los pasos a continuación para crear un nuevo proyecto en Screens as a Clou
 1. Vaya al proveedor de contenido de Screens.
 
    >[!NOTE]
-   >Consulte [Uso del proveedor de contenido de Screens] para obtener información sobre cómo acceder al proveedor de contenido de Screens para crear su proyecto.
+   >Consulte [Uso del proveedor de contenido de Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en) para obtener información sobre cómo acceder al proveedor de contenido de Screens para crear su proyecto.
 
 1. Haga clic en **Crear proyecto de Screens** en la esquina superior derecha de la barra de acciones.
 
