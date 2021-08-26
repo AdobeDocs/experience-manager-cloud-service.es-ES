@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 46%
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 | Producto | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Versión | 2021.07.0 |
+| Versión | 2021.08.0 |
 | Tipo | Actualizaciones continuas |
 | Fecha de disponibilidad | Actualización continua |
 
