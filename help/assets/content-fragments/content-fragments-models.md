@@ -1,12 +1,12 @@
 ---
 title: Modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
+source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2256'
 ht-degree: 7%
 
 ---
@@ -100,7 +100,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Área de texto que puede ser Texto enriquecido, Texto sin formato o Marcado
 * **Número**
    * Agregar uno o más campos numéricos
-* **Booleano**
+* **Boolean**
    * Agregar una casilla de verificación booleana
 * **Fecha y hora**
    * Agregar una fecha y/o hora
@@ -213,7 +213,6 @@ Los fragmentos de contenido pueden formar contenido anidado mediante cualquiera 
 AEM tiene una protección contra recurrencias para:
 * Referencias de contenido
 Esto evita que el usuario agregue una referencia al fragmento actual. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia de fragmento.
-
 * Referencias de fragmento en GraphQL
 Si crea una consulta profunda que devuelve varios fragmentos de contenido a los que se hace referencia entre sí, devolverá un valor nulo en la primera incidencia.
 
@@ -284,6 +283,16 @@ raízEspecifica una ruta raíz para los fragmentos a los que se hace referencia.
 >[!NOTE]
 Existe un mecanismo de protección contra la recurrencia. Prohíbe que el usuario seleccione el fragmento de contenido actual en la Referencia de fragmento. Esto puede dar lugar a un cuadro de diálogo vacío del selector de referencia de fragmento.
 También existe una protección contra las recurrencias para las referencias de fragmento en GraphQL. Si crea una consulta profunda en dos fragmentos de contenido que se hacen referencia entre sí, devolverá un valor nulo.
+
+## Modelo de fragmento de contenido: propiedades {#content-fragment-model-properties}
+
+Puede editar las **Propiedades** de un modelo de fragmento de contenido:
+
+* **Básico**
+   * **Título de modelo**
+   * **Etiquetas**
+   * **Descripción**
+   * **Cargar imagen**
 
 ## Activación o desactivación de un modelo de fragmento de contenido {#enabling-disabling-a-content-fragment-model}
 
@@ -402,12 +411,28 @@ Para cancelar la publicación de un modelo de fragmento de contenido:
 1. Seleccione el modelo, seguido de **Cancelar publicación** en la barra de herramientas.
 El estado publicado se indica en la consola.
 
-## Modelo de fragmento de contenido: propiedades {#content-fragment-model-properties}
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-Puede editar las **Propiedades** de un modelo de fragmento de contenido:
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **Básico**
-   * **Título de modelo**
-   * **Etiquetas**
-   * **Descripción**
-   * **Cargar imagen**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->

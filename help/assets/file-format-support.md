@@ -2,12 +2,12 @@
 title: Formatos de archivo compatibles y tipos MIME
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Experience Manager Assets] como [!DNL Cloud Service].
 contentOwner: AG
-feature: Administración de recursos,Representaciones
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 10%
 
 ---
@@ -159,7 +159,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
 | RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
@@ -228,5 +228,5 @@ Los formatos de documento admitidos para las funciones de administración de rec
 >[!MORELIKETHIS]
 >
 >* [Procesamiento de recursos mediante microservicios de recursos](asset-microservices-overview.md)
-* [Formatos de archivo compatibles para el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formatos de archivo compatibles para el etiquetado inteligente de recursos basados en texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 

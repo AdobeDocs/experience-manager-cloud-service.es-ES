@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2f08b1487c1a7fc7b94678e78f8fd72054ff51cb
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1030'
 ht-degree: 2%
 
 ---
@@ -25,122 +25,66 @@ La siguiente sección describe las notas de la versión generales de la versión
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.7.0) es el 29 de julio de 2021.
-La siguiente versión (2021.8.0) es el 26 de agosto de 2021.
+La fecha de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.8.0) es el 26 de agosto de 2021.
+La siguiente versión (2021.9.0) es el 30 de septiembre de 2021.
 
 ## Vídeo de la versión {#release-video}
 
-Consulte el vídeo [Información general de la versión de julio de 2021](https://video.tv.adobe.com/v/335580) para ver un resumen de las funciones agregadas.
-
-## [!DNL Experience Manager] como  [!DNL Cloud Service] base {#foundation}
-
-### Novedades {#what-is-new-foundation}
-
-* Configuración de Dispatcher más flexible: Los proyectos se pueden organizar más fácilmente. Por ejemplo, ahora puede incluir varios archivos de reglas de reescritura que reflejen la estructura del sitio. [Obtenga información ](/help/implementing/dispatcher/disp-overview.md#validation-debug) sobre este modo flexible, incluida cómo estructurar la configuración de Dispatcher para aprovecharla.
-* La interfaz de usuario de replicación de árbol en la pestaña &quot;Distribuir&quot; del agente de replicación debe considerarse obsoleta y está planificado que se elimine después del 30 de septiembre. [Conozca ](/help/operations/replication.md#tree-activation) las estrategias de replicación alternativas.
-* Se ha eliminado el paquete `org.apache.sling.datasource-1.0.4.jar` para la compatibilidad con fuentes de datos de Sling, ya que tiene una funcionalidad obsoleta y los clientes no lo utilizan.
+Consulte el vídeo [Información general de la versión de agosto de 2021](https://video.tv.adobe.com/v/336277) para ver un resumen de las funciones agregadas.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones en [!DNL Assets] {#assets-features}
 
-* La funcionalidad de automatización de contenido permite a [!DNL Experience Manager Assets] aprovechar las API [!DNL Adobe Creative Cloud] para automatizar la producción de recursos a escala. Mejora la velocidad del contenido al reducir drásticamente el tiempo necesario y las iteraciones necesarias para crear variaciones del mismo recurso. La funcionalidad no requiere programación alguna y funciona desde DAM. Consulte [generación de variaciones de recursos mediante integración de Creative Cloud](/help/assets/cc-api-integration.md).
+* Al compartir recursos digitales como un vínculo, los usuarios pueden copiar la URL en el portapapeles de inmediato. La mejora permite compartir recursos de una forma más rápida y práctica. Esta funcionalidad permite un uso compartido de recursos más rápido y conveniente.
 
-* [!DNL Experience Manager Assets] incluye el visor de  [!DNL Document Cloud] PDF para previsualizar los documentos PDF de forma nativa. Esta función permite a los usuarios previsualizar archivos PDF de varias páginas sin necesidad de realizar ningún tipo de conversión o procesamiento de archivos. Esta función mejora la paridad con [!DNL Experience Manager] 6.5. Los controles disponibles en el visor incluyen zoom, navegación a páginas, controles de desacoplamiento y visualización en pantalla completa. El caso de los usuarios también permite obtener una vista previa y saltar a páginas y marcadores. Los comentarios sobre el archivo son compatibles y los comentarios y anotaciones sobre el contenido del archivo PDF se añadirán en una versión futura.
+   ![Opción Copiar URL al compartir un recurso como vínculo](/help/assets/assets/link-share-copy-URL-option.png)
+   *Figura: Al compartir un recurso como vínculo, ahora puede copiar la dirección URL para compartirlo por separado.*
 
-   ![Vista previa de archivos PDF en  [!DNL Experience Manager] el visor de PDF](/help/assets/assets/preview-pdf-file-viewer.png)
+* Al cargar archivos TXT, los microservicios de recursos generan automáticamente una miniatura. La miniatura PNG es una representación del archivo TXT que ayuda a los usuarios a identificar el contenido o los archivos en cierta medida, sin necesidad de abrir los archivos. Esta funcionalidad no requiere ninguna configuración y funciona de forma predeterminada.
 
-* La funcionalidad de descarga de Linkshare utiliza descargas asincrónicas que aumentan la velocidad de descarga. Consulte [Descargar recursos compartidos mediante el uso compartido de vínculos](/help/assets/download-assets-from-aem.md#link-share-download).
+   ![Una representación de un archivo TXT se genera automáticamente  [!DNL Assets] en formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+   *Figura: Se genera automáticamente una representación de un archivo TXT para ayudarle a identificar el archivo sin necesidad de abrirlo.*
 
-   ![Descargar bandeja de entrada](/help/assets/assets/download-inbox.png)
+### Nueva función en el canal de prelanzamiento [!DNL Assets] {#assets-prerelease-features}
 
-* La configuración de vista se mejora para permitir a los usuarios elegir una vista predeterminada y un parámetro de ordenación predeterminado.
+* Los usuarios ahora pueden ordenar los recursos mostrados en los resultados de búsqueda en las vistas Columna y Tarjeta. La ordenación funciona en las columnas Nombre, Creado, Modificado o Ninguno.
 
-   ![Definir la vista predeterminada en Configuración  [!UICONTROL de vista]](/help/assets/assets/view-settings-for-defaults.png)
-
-* Los usuarios pueden buscar y filtrar las carpetas en función de los predicados de propiedades.
-
-   ![Filtrado de carpetas de búsqueda mediante predicados de búsqueda](/help/assets/assets/search-folders-via-predicates.png)
-
-### Nuevas funciones disponibles en el canal de prelanzamiento [!DNL Assets] {#assets-prerelease-features}
-
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
-
-* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
-
-  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
--->
-
-* Cuando comparte recursos digitales como un vínculo, los usuarios pueden copiar la URL en el portapapeles. La mejora permite compartir recursos de una forma más rápida y práctica.
+   ![Ordene los resultados de búsqueda  [!DNL Assets] en las vistas Columna y Tarjeta](/help/assets/assets/sort-searched-assets.png)
+   *Figura: Ordene los resultados de búsqueda  [!DNL Assets] en las vistas Columna y Tarjeta.*
 
 ### Errores corregidos en [!DNL Assets] {#assets-bugs-fixed}
 
-La API `com.day.cq.dam.api.collection.SmartCollection` no está disponible en [!DNL Experience Manager] como [!DNL Cloud Service]. (CQ-4326322)
+* Cuando un miembro del grupo colaborador navega a la consola [!DNL Assets] , se genera una solicitud `POST` adicional para intentar crear una colección. Esta solicitud no es necesaria, falla debido a problemas de permisos y crea muchos errores en los registros. (CQ-4328856)
+* Cuando los usuarios ven un recurso y seleccionan la [!UICONTROL Línea de tiempo] en el menú emergente del panel izquierdo, se muestra un error. En los registros, se registran muchas advertencias debido a una consulta incorrecta. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* Ahora puede utilizar el servicio de Automated forms conversion para [convertir PDF forms en francés, alemán y español](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) a formularios adaptables.
-* Se ha agregado un panel independiente al editor de plantillas para mostrar los errores relacionados con los componentes de los formularios adaptables. Ayuda a consolidar todos los errores de formularios adaptables en una ubicación y a reducir el tiempo de resolución.
+* El servicio de automated forms conversion puede [convertir PDF forms en italiano y portugués](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) a Forms adaptable.
 
-### Nuevas funciones disponibles en el canal de prelanzamiento [!DNL Forms] {#beta-features-forms}
-
-* **[!DNL AEM Forms as a Cloud Service - Communications]**:  [Communication ](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) APIShelp permite combinar plantillas XDP y datos XML para generar documentos de impresión en varios formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones que le permitan:
-   * Genere documentos rellenando archivos de plantilla con datos XML.
-   * Genere formularios de salida en varios formatos, incluidas secuencias de impresión PDF no interactivas.
-   * Genere archivos PDF de impresión desde un formulario XFA PDF y un formulario Adobe Acrobat.
-
-* **Externalizador de datos de variable**: Puede guardar datos de AEM variables de flujo de trabajo en un sistema de almacenamiento externo administrado por su organización.
-
-* **Documento de registro basado en Acrobat**: También puede  [utilizar Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)  como plantilla para Documento de registro, además de la plantilla de formulario basada en XFA.
+* **Documento de registro basado en Acrobat**: AEM Forms as a Cloud Service admite el uso de  [Adobe Acrobat Form PDF (Acrobat PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)  como plantilla para Documento de registro además de la plantilla de formulario basada en XFA.
 
 * **Conector** del almacén de datos de Microsoft Azure: Ahora puede  [conectar el Modelo de datos de formulario al Almacenamiento](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html) de Microsoft Azure. Permite recuperar y almacenar datos de formulario adaptables en Microsoft Azure Storage as a BLOB.
+
+### Nuevas funciones disponibles en el canal de prelanzamiento [!DNL Forms] {#prerelease-features-forms}
+
+* **Uso de funciones de Adobe Sign en un formulario** adaptable: Adobe Sign para los niveles de servicio empresarial y empresarial tiene la opción de ampliar las funciones de los destinatarios del Acuerdo, más allá del Firmante, para que coincidan mejor con sus requisitos de flujo de trabajo. Ahora puede habilitar a cada destinatario del acuerdo para que configure su función en un formulario adaptable, siendo Signer la función predeterminada.
+
+* **Analytics para Forms adaptable**: Ahora puede capturar y rastrear el comportamiento del usuario final a través de Adobe Analytics for Adaptive Forms para recopilar perspectivas del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
+
+* **Conecte AEM Forms fácilmente con Microsoft Dynamics y Salesforce.com**: El servicio proporciona una configuración de origen de datos y modelos de datos predeterminados para Microsoft Dynamics y Salesforce.com, lo que facilita y agiliza la configuración de Microsoft Dynamics y Salesforce.com como fuentes de datos para un formulario adaptable.
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novedades {#what-is-new-cif}
 
-* Componentes principales de CIF v2
-   * Configuraciones simplificadas y mejoradas para URL PDP/PLP y SEO
-   * Indicador visual para datos de productos clasificados en modo de creación para una mejor visibilidad de los próximos cambios
-   * Nuevo componente de mapa del sitio para páginas de contenido y comercio
+* Nueva interfaz de usuario del selector de categorías para mejorar la experiencia del usuario, aumentar la eficacia y mejorar la compatibilidad con catálogos de productos complejos
 
-* Compatibilidad con la recomendación de producto [Adobe Commerce Sensei, con tecnología de Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) en AEM Tienda, con recomendaciones predefinidas o creadas sobre la marcha
+   ![Nuevo selector de categorías](/help/assets/CIF/category-picker.png)
 
-## [!DNL Experience Manager Screens] como  [!DNL Cloud Service] {#screens}
-
-### Corrección de errores {#bug-fixes-screens}
-
-* La configuración del proveedor de contenido ahora se valida durante la creación o actualización.
-
-* Todas las vistas de visualización tienen una columna de carpetas.
-
-* Puede expandir la estructura de contenido de Screens.
-
-* `bulk-offline-update-service` faltaban todos los permisos para algunos entornos.
-
-* Se ha actualizado el vínculo Ayuda para que coincida con la nueva documentación de la nube de pantallas.
-
-* No asigne listas de reproducción y no permita quitar listas de reproducción con los reproductores asignados, ahora funciona.
-
-* El reproductor ahora vuelve a descargar los recursos cuando se borra la caché &quot;ALL&quot;.
-
-* La programación repetida ahora funciona si la *Hora de finalización* está configurada para el día siguiente.
-
-* `Back&Forward` ahora funciona en Screens as a Cloud Service UI.
-
-* Antes no se podían crear etiquetas con el mismo nombre pero con diferentes áreas de nombres.
-
-## Documentación XML para Experience Manager as a Cloud Service {#xml-documentation}
-
-### Novedades {#what-is-new-xml-documentation}
-
-La documentación XML para Experience Manager como Cloud Service está disponible de forma general. Permite a los clientes Experience Manager como Cloud Service adquirir un complemento de documentación XML para importar, crear, administrar y entregar contenido técnico en varios canales, incluidos los sitios Experience Manager.
+* Mejor compatibilidad con A11Y para los componentes principales del CIF
 
 ## Cloud Manager {#cloud-manager}
 
@@ -178,43 +122,6 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 * En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
 
-### Fecha de la versión {#release-cm-july}
-
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.7.0 es el 15 de julio de 2021.
-La próxima versión está planificada para el 12 de agosto de 2021.
-
-### Novedades {#what-is-new-cm-july}
-
-* Los clientes ahora pueden utilizar Azul 8 y 11 JDK para sus procesos de compilación de Cloud Manager y pueden seleccionar usar uno de estos JDK para complementos Maven compatibles con las cadenas de herramientas *o* para toda la ejecución del proceso Maven.
-
-* La dirección IP de salida saliente ahora se registrará en el archivo de registro de paso de compilación.
-
-* Los entornos de fase y producción que ejecutan versiones antiguas de AEM ahora informarán de un estado de **Actualización disponible**.
-
-* El número máximo de certificados SSL admitidos ha aumentado a 20 por programa.
-
-* El número máximo de dominios que se pueden configurar ha aumentado a 500 por entorno.
-
-* Los botones **Administrar Git** se han cambiado a **Información de Git de acceso** y el cuadro de diálogo se ha actualizado visualmente.
-
-* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 28.
-
-### Corrección de errores {#bug-fixes-cm-july}
-
-* En algunos casos, Vista previa no era una opción disponible al enlazar una Lista de permitidos IP a un entorno.
-
-* La navegación manual a la página de detalles de ejecución para una ejecución no existente no mostraba un error, solo una pantalla de carga interminable.
-
-* El mensaje de error que se muestra cuando se alcanza el número máximo de certificados SSL no es útil.
-
-* En algunas circunstancias, podría haber una discrepancia en la versión de la versión mostrada en la tarjeta de canalización de la página **Información general**.
-
-* El asistente Agregar programa indicó incorrectamente que el nombre no se puede cambiar después de la creación.
-
-### Problemas conocidos {#known-issues-cm-july}
-
-Los clientes que cambien a utilizar Azul JDKs deben tener en cuenta que no todas las aplicaciones existentes se compilarán sin error en Azul JDK. Se recomienda realizar pruebas locales antes de cambiar.
-
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
 ### Fecha de la versión {#release-date-ctt-latest}
@@ -229,17 +136,3 @@ La fecha de versión de la herramienta de transferencia de contenido v1.5.6 es e
 
 * CTT no limpió el directorio `/tmp` después de una extracción correcta. Esto a veces provocaba problemas de espacio en disco.
 
-
-## Cloud Acceleration Manager {#cam}
-
-### Fecha de la versión {#release-date-july-cam}
-
-La fecha de versión de Cloud Acceleration Manager es el 15 de julio de 2021.
-
-### Novedades {#what-is-new-cam}
-
-Cloud Acceleration Manager es una aplicación basada en la nube diseñada para guiar a sus equipos de TI a lo largo del recorrido de transición, desde la planificación hasta la puesta en marcha del Cloud Service. Configure sus equipos para una migración correcta con prácticas recomendadas por el Adobe, sugerencias, documentación y herramientas que le ayudarán en cada fase del recorrido a AEM como Cloud Service. Obtenga más información [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en).
-
->[!NOTE]
->
-> Compruebe este [vídeo de demostración de Cloud Acceleration Manager](https://video.tv.adobe.com/v/335547).
