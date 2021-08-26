@@ -1,9 +1,9 @@
 ---
 title: Instalación y configuración de reproductores en Screens as a Cloud Service
 description: En esta página se describe cómo instalar y configurar reproductores en Screens como Cloud Service.
-source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
+source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ El reproductor informa de varias métricas de reproducción con cada `ping` cuyo
 
 La monitorización de reproducción básica en un reproductor AEM Screens le permite:
 
-* Monitorice de forma remota si un reproductor está reproduciendo contenido correctamente
+* Monitorice de forma remota si un reproductor reproduce contenido correctamente.
 
-* Mejore la reacción a pantallas en blanco o experiencias rotas en el campo
+* Mejore la reacción a pantallas en blanco o experiencias rotas en el campo .
 
-* Disminuya el riesgo de mostrar una experiencia rota al usuario final
+* Reduce el riesgo de mostrar una experiencia rota al usuario final.
 
 ### Explicación de las propiedades {#understand-properties}
 
@@ -78,11 +78,11 @@ En cada `ping` se incluyen las siguientes propiedades:
 
 A continuación se enumeran algunas limitaciones de la monitorización de reproducción básica:
 
-* Dado que el reproductor informa de su propio estado de reproducción al servidor, necesita una conexión activa.
+* El reproductor informa de su propio estado de reproducción al servidor, por lo que requiere una conexión activa.
 
 * La propiedad `isContentRendering` que comprueba la GPU consume actualmente muchos recursos para que esté habilitada de forma predeterminada y requiere la inclusión explícita de las preferencias del reproductor. Se recomienda no utilizarlo junto con los vídeos.
 
-* Compatible con canales de secuencia.
+* Esta función es compatible con los canales de secuencia.
 
 ## Siguientes pasos {#whats-next}
 
