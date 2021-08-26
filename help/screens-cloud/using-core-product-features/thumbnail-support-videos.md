@@ -3,9 +3,9 @@ title: Compatibilidad con miniaturas para vídeos en Screens as a Cloud Service
 description: En esta página se describe cómo agregar compatibilidad con miniaturas para vídeos en Screens como Cloud Service.
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ Siga los pasos a continuación para usar miniaturas en vídeos:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Edite las propiedades del componente de vídeo.
+1. Seleccione el vídeo y haga clic en el icono *llave inglesa* para abrir las propiedades del vídeo.
 
-1. Arrastre una imagen desde el selector de recursos a la zona de colocación Miniatura.
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Previsualice el canal.
+1. Se abre el cuadro de diálogo **Vídeo** donde verá la zona de colocación **Miniatura**.
 
-1. Si se establece un vídeo en el componente, se reproducirá el vídeo. Si no es así, y la miniatura está configurada, entonces se reproducirá la miniatura. De lo contrario, el componente se considera no configurado y se omitirá
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. Arrastre y suelte una imagen del selector de recursos en la zona de colocación **Miniatura** y haga clic en **Listo**.
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. Haga clic en **Preview**.
+
+1. Si se establece un vídeo en el componente, se reproducirá el vídeo. Si no es así, y la miniatura está configurada, entonces se reproducirá la miniatura. De lo contrario, el componente se considera no configurado y se omitirá.
 
 ## Casos de uso compatibles con el uso de miniaturas en vídeos {#understand-use-case}
 
