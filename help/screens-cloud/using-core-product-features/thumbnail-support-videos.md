@@ -1,11 +1,10 @@
 ---
 title: Compatibilidad con miniaturas para vídeos en Screens as a Cloud Service
 description: En esta página se describe cómo agregar compatibilidad con miniaturas para vídeos en Screens como Cloud Service.
-hide: true
-index: false
-source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
+index: true
+source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -63,14 +62,12 @@ Siga los pasos a continuación para usar miniaturas en vídeos:
 
 ## Casos de uso compatibles con el uso de miniaturas en vídeos {#understand-use-case}
 
-Consulte los siguientes casos de uso mientras utiliza miniaturas en vídeos.
+Las miniaturas de los vídeos son compatibles con los siguientes casos de uso:
 
-Un componente de vídeo con:
+* Se omitirá un componente de vídeo sin configurar nada.
 
-* *no se omitirá la* configuración de nada
+* Un componente de vídeo con solo el conjunto de miniaturas reproducirá la miniatura.
 
-* *solo el conjunto de miniaturas* reproducirá la miniatura
+* Un componente de vídeo con el vídeo y el conjunto de miniaturas reproducirán el vídeo.
 
-* *tanto el vídeo como la* configuración de miniaturas reproducirán el vídeo
-
-* *el* conjunto de vídeos reproduce la miniatura si hay un error de reproducción o simplemente pasa al siguiente elemento en caso de que la miniatura no esté configurada
+* Un componente de vídeo con el conjunto de vídeo reproducirá la miniatura, en caso de error de reproducción, o simplemente se saltará al siguiente elemento en caso de que la miniatura no esté configurada.
