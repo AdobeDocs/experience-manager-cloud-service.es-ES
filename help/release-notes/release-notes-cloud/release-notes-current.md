@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2451a29b71b113f28ffc00737ed825381dd5ad07
+source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -99,6 +99,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 Consulte [Monitorización de reproducción básica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) para obtener más información.
 
 * Compatibilidad con miniaturas para vídeos en ahora se admite en Screens as a Cloud Service. Un autor de contenido puede definir una miniatura para los vídeos, de modo que la imagen pueda utilizarse como marcador de posición y probar correctamente la reproducción y el destino del contenido, mientras el equipo adecuado está finalizando el vídeo en sí. También se puede utilizar la imagen en caso de que falle la reproducción del vídeo.
+Consulte [Compatibilidad con miniaturas para vídeos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en) para obtener más información.
 
 ### Corrección de errores {#bug-fixes-screens}
 
