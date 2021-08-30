@@ -1,12 +1,12 @@
 ---
 title: Conjuntos de giros
 description: Aprenda a trabajar con conjuntos de giros en Dynamic Media.
-feature: Conjuntos de giros
+feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1815'
 ht-degree: 9%
 
 ---
@@ -103,7 +103,7 @@ En esta sección se describe cómo crear conjuntos de giros.
 
 >[!NOTE]
 >
->Orden en el que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlas para que el giro sea una vista suave de 360 grados.
+>Orden en el que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlas para que el giro sea una vista suave de 360°.
 
 **Para crear conjuntos de giros:**
 

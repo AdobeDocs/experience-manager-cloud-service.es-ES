@@ -1,19 +1,19 @@
 ---
 title: Vídeo 360/VR
 description: Aprenda a trabajar con 360 y vídeo de realidad virtual (VR) en Dynamic Media.
-feature: Vídeo de RV 360
+feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
 
 # Vídeo 360/VR {#vr-video}
 
-Los vídeos de 360 grados graban una vista en todas las direcciones al mismo tiempo. Se graban con una cámara omnidireccional o con una colección de cámaras. Durante la reproducción, en una pantalla plana, el usuario tiene control del ángulo de visualización; reproducción en dispositivos móviles suele aplicar sus controles giroscópicos integrados.
+Los vídeos de 360° graban una vista en todas las direcciones al mismo tiempo. Se graban con una cámara omnidireccional o con una colección de cámaras. Durante la reproducción, en una pantalla plana, el usuario tiene control del ángulo de visualización; reproducción en dispositivos móviles suele aplicar sus controles giroscópicos integrados.
 
 Dynamic Media incluye compatibilidad nativa con la entrega de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se entrega con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
 
@@ -27,7 +27,7 @@ Consulte también [Administración de ajustes preestablecidos de visualizador](/
 
 ## 360 Vídeo en acción {#video-in-action}
 
-Seleccione [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del navegador y ver un vídeo de 360 grados. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
+Seleccione [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) para abrir una ventana del navegador y ver un vídeo de 360°. Durante la reproducción de vídeo, arrastre el puntero a una nueva ubicación para cambiar el ángulo de visualización.
 
 ![360 ](assets/6_5_360videoiss_simplified.png)
 *Ejemplo de vídeoFotograma de vídeo de la estación espacial 360*
@@ -123,7 +123,7 @@ Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/dyn
 
    * En la lista Visualizadores, seleccione **[!UICONTROL Video360VR]**.
 
-      El vídeo de Realidad virtual (VR) es contenido de vídeo inmersivo al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, se crean vídeos VR al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
+      El vídeo de Realidad virtual (VR) es contenido de vídeo inmersivo al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, se crean vídeos VR al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360°.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un video de 360 VR.*
 
