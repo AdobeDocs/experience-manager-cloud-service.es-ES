@@ -4,9 +4,9 @@ description: Obtenga información sobre los conceptos y la mecánica de creació
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: d925333421b4a9ec1e2a7c553b43e042bb1e6fbe
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1693'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ Dentro de la consola, puede seleccionar carpetas para desplazarse hasta el fragm
 
 La consola **Assets** tiene **Barras de herramientas de acción** dedicadas y **Acciones rápidas** que puede utilizar después de seleccionar un recurso (por ejemplo, una carpeta o un fragmento de contenido).
 
-Las Acciones rápidas están disponibles para un único recurso:
+Las Acciones rápidas están disponibles para un único recurso; consulte **Basel** en el ejemplo siguiente:
 
 ![Acciones rápidas   ](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,7 +101,7 @@ A menos que tenga muy pocos fragmentos de contenido, querrá organizarlos para q
 
 #### Creación de una carpeta {#creating-folder}
 
-Puede hacerlo creando una serie de carpetas en la sección **Files** de la consola Assets. Seleccione la opción **Crear** (parte superior derecha), seguida de **Crear carpeta**:
+Puede hacerlo creando una serie de carpetas en la sección **Files** de la consola Assets. Seleccione la opción **Create** (parte superior derecha), seguida de **Folder**:
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -113,7 +113,7 @@ Se abrirá un cuadro de diálogo en el que puede introducir los detalles y confi
 
 Esta sección está ligeramente más avanzada. Realmente no lo necesita si está empezando a probar cosas, pero es *muy* útil cuando tiene muchos fragmentos. Así que es bueno saber - incluso si todavía no lo usan.
 
-El arquitecto de contenido habrá creado todos los modelos de fragmento de contenido necesarios para el proyecto actual y tal vez también otros proyectos. Para ayudar a que las cosas sean sencillas para los autores, puede limitar la lista de modelos disponibles para una carpeta específica.
+El arquitecto de contenido habrá creado todos los modelos de fragmento de contenido necesarios para el proyecto actual y tal vez también otros proyectos. Para ayudarle a que las cosas sean sencillas para usted y para otros autores, puede limitar la lista de modelos disponibles para una carpeta específica.
 
 Después de crear la carpeta, puede abrir la carpeta **Properties**. Aquí hay varias pestañas con información y detalles de configuración sobre la carpeta. En particular para los fragmentos de contenido, puede utilizar la pestaña **Directivas** para definir rutas o etiquetas específicas para esta carpeta. Esto limita los modelos de fragmento de contenido disponibles para su uso en la carpeta, ya que significa que los modelos de fragmento de contenido deben cumplir estos requisitos antes de poder utilizarse para generar fragmentos en esta carpeta.
 
@@ -147,7 +147,7 @@ Esta vez se abre un asistente. El primer paso es seleccionar el modelo de fragme
 
 ![Crear fragmento de contenido: seleccione Modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Después de continuar con **Next** puede proporcionar los detalles del fragmento:
+Después de continuar con **Next** puede proporcionar los detalles (**Basic** y **Advanced**) para su fragmento:
 
 ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
