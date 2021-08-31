@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
+source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Las alternativas que se sabe que funcionan, pero que pueden requerir proporciona
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)  (no recomendado porque está obsoleto y reemplazado por la versión 4.x)
 * [OK Http](https://square.github.io/okhttp/)  (No proporcionado por AEM)
 
-## Ninguna personalización de IU clásica {#no-classic-ui-customizations}
+## Sin personalizaciones de la interfaz de usuario clásica {#no-classic-ui-customizations}
 
 AEM como Cloud Service solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
 
@@ -73,11 +73,11 @@ Se debe acceder a los binarios a través de la CDN, que servirá binarios fuera 
 
 Por ejemplo, no utilice `asset.getOriginal().getStream()`, que déclencheur descargar un binario en el disco efímero del servicio de AEM.
 
-## No hay agentes de replicación inversa {#no-reverse-replication-agents}
+## Sin agentes de replicación inversa {#no-reverse-replication-agents}
 
 La replicación inversa de Publicar en Autor no se admite en AEM como Cloud Service. Si se necesita dicha estrategia, puede utilizar un almacén de persistencia externa que se comparta entre el conjunto de instancias de publicación y, potencialmente, el clúster de creación.
 
-## Es posible que los agentes de replicación de reenvío necesiten portarse {#forward-replication-agents}
+## Es posible que los agentes de replicación de reenvío necesiten ser transferidos {#forward-replication-agents}
 
 El contenido se duplica de Autor a Publicación a través de un mecanismo pub-sub. No se admiten agentes de replicación personalizados.
 
@@ -161,11 +161,11 @@ También resulta útil para la depuración, ya que la consola de desarrollador t
 
 En el caso de los programas de producción, el acceso a Developer Console se define mediante la función de desarrollador de Cloud Manager en el Admin Console, mientras que para los programas de simulación de pruebas, Developer Console está disponible para cualquier usuario con un perfil de producto que les permita acceder a AEM como Cloud Service. Para todos los programas, &quot;Cloud Manager - Developer Role&quot; es necesario para los volcados de estado y los usuarios también deben definirse en el perfil de producto de los usuarios de AEM o de los administradores de AEM en los servicios de autor y publicación para ver los datos de volcado de estado de ambos servicios. Para obtener más información sobre la configuración de permisos de usuario, consulte [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
 
-### Servicio de Ensayo y Producción de AEM {#aem-staging-and-production-service}
+### Servicio de ensayo y producción de AEM {#aem-staging-and-production-service}
 
 Los clientes no tendrán acceso a las herramientas para desarrolladores para entornos de ensayo y producción.
 
-### Monitorización del rendimiento {#performance-monitoring}
+### Supervisión del rendimiento {#performance-monitoring}
 
 El Adobe supervisa el rendimiento de la aplicación y toma medidas para solucionar el problema si se observa deterioro. En este momento, no se pueden respetar las métricas de la aplicación.
 
@@ -183,13 +183,13 @@ Sin la función de dirección IP dedicada habilitada, el tráfico que sale de AE
 
 Para habilitar una dirección IP dedicada, envíe una solicitud al Servicio de atención al cliente, que proporcionará la información de la dirección IP. La solicitud debe especificar cada entorno y se deben realizar solicitudes adicionales si nuevos entornos necesitan la función después de la solicitud inicial. No se admiten entornos de programa de espacio aislado.
 
-### Uso de características {#feature-usage}
+### Uso de las funciones {#feature-usage}
 
 La función es compatible con el código Java o las bibliotecas que resultan en tráfico saliente, siempre que utilicen propiedades estándar del sistema Java para las configuraciones de proxy. En la práctica, esto debería incluir las bibliotecas más comunes.
 
 A continuación se muestra un ejemplo de código:
 
-```
+```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
@@ -203,11 +203,31 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 }
 ```
 
+Algunas bibliotecas requieren una configuración explícita para utilizar las propiedades estándar del sistema Java en las configuraciones de proxy.
+
+Ejemplo con Apache HttpClient, que requiere llamadas explícitas a
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) o use
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
 La misma IP dedicada se aplica a todos los programas de un cliente en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica tanto a los servicios de autor como de publicación.
 
 Solo se admiten puertos HTTP y HTTPS. Esto incluye HTTP/1.1, así como HTTP/2 cuando está cifrado.
 
-### Consideraciones de depuración {#debugging-considerations}
+### Consideraciones sobre la depuración {#debugging-considerations}
 
 Para validar que el tráfico es realmente saliente en la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, puede resultar útil llamar a un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devolverá la dirección IP que realiza la llamada.
 
@@ -256,6 +276,6 @@ Si se ha solicitado el puerto 587 (solo se permite si el servidor de correo no a
 
 La propiedad `smtp.starttls` se establecerá automáticamente AEM como Cloud Service en tiempo de ejecución con un valor apropiado. Por lo tanto, si `smtp.tls` se establece en true, `smtp.startls` se omite. Si `smtp.ssl` se establece en false, `smtp.starttls` se establece en true. Esto es independientemente de los valores `smtp.starttls` establecidos en la configuración OSGI.
 
-## [!DNL Assets] directrices de desarrollo y casos de uso  {#use-cases-assets}
+## [!DNL Assets] directrices de desarrollo y casos de uso {#use-cases-assets}
 
 Para obtener información sobre los casos de uso de desarrollo, las recomendaciones y los materiales de referencia para Assets como Cloud Service, consulte [Referencias del desarrollador para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
