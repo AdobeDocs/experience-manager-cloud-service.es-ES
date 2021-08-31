@@ -4,9 +4,9 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,12 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 >[!NOTE]
 >Debe ser administrador del sistema para completar correctamente los siguientes pasos.
 
-1. Haga clic en **Introducción** desde el correo electrónico de bienvenida para ir al Admin Console o navegar directamente al Admin Console desde [aquí](https://adminconsole.adobe.com).
+1. Haga clic en **Introducción** desde el correo electrónico de bienvenida, como se muestra en la figura siguiente, para ir al Admin Console o navegar directamente al Admin Console desde [aquí](https://adminconsole.adobe.com).
 
    >[!NOTE]
    >Como administrador del sistema, recibirá varios correos electrónicos. Busque el correo electrónico de bienvenida que le proporciona la información sobre el nombre de la organización a la que se le ha concedido acceso y haga clic en **Introducción**. Si no encuentra el correo electrónico, vaya directamente al [Admin Console](https://adminconsole.adobe.com/).
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Inicie sesión utilizando su [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Tras iniciar sesión correctamente, verá la página **Información general** de Adobe Admin Console, como se muestra a continuación.
 
