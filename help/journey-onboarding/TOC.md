@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: Recorrido de incorporación
 breadcrumb-title: Recorrido de incorporación
 user-guide-description: Comience aquí para obtener un recorrido guiado diseñado para un administrador del sistema, que exponga los requisitos, pasos y enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
