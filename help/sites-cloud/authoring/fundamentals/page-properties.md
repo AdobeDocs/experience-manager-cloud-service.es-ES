@@ -2,10 +2,10 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 59%
+source-wordcount: '1955'
+ht-degree: 58%
 
 ---
 
@@ -55,11 +55,14 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Tiempo de activación/desactivación**
 
-   * **Tiempo de activación** : fecha y hora a las que se hará visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
+   >[!NOTE]
+   >
+   > Consulte [Tiempo de activación y desactivación: Configuración de Déclencheur](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener más información sobre cómo configurar la replicación automática relacionada.
 
-      >[!NOTE]
-      >
-      > Consulte [Tiempo de activación y desactivación: Configuración de Déclencheur](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener más información sobre cómo configurar la replicación automática relacionada.
+   >[!NOTE]
+   >Si **Tiempo de activación** o **Tiempo de inactividad** están en el pasado y se ha configurado la replicación automática, la acción relevante se activará inmediatamente.
+
+   * **Tiempo de activación** : fecha y hora a las que se hará visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
 
       * Si ya se ha publicado [(manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
@@ -87,8 +90,6 @@ Las propiedades se distribuyen entre varias pestañas.
       * Toque o haga clic de nuevo para agregar varios.
       * Toque o haga clic en el icono **Remove** para eliminar la URL de vanidad.
    * **Redirigir URL de vanidad** : indica si desea que la página use la URL de vanidad.
-
-
 
 
 ### Avanzado  {#advanced}
