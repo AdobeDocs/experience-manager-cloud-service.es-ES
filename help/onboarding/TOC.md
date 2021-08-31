@@ -24,7 +24,7 @@ ht-degree: 42%
    + [Introducción a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM como equipo Cloud Service y perfiles de producto](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Compatibilidad con Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [Guía del Recorrido de integración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
++ [Guía del Recorrido de integración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target="_blank"}
 + Introducción a AEM como Cloud Service {#what-is-required}
    + [Obtenga su Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Funciones de Cloud Manager](what-is-required/user-roles-permissions.md)
