@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
+source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1427'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Puede escribir a [!DNL formscsbeta@adobe.com] para inscribirse en el programa be
 
 ### Novedades {#what-is-new-screens}
 
-* Como autor de contenido, ahora puede definir una miniatura para los vídeos, de modo que pueda utilizar esa imagen como marcador de posición y probar correctamente la reproducción y el destino del contenido, mientras el equipo adecuado está finalizando el vídeo en sí.
+* Screens como Cloud Service ahora es compatible con la supervisión básica de la reproducción. El reproductor ahora informará de varias métricas de reproducción con cada &quot;ping&quot; (el valor predeterminado es de 30 segundos). En función de las métricas, proporciona la capacidad de detectar varios casos extremos (experiencia atascada, pantalla en blanco, problema de programación, etc.). Esta función permite que el equipo supervise de forma remota si un reproductor reproduce contenido correctamente, mejora la reacción a pantallas en blanco o experiencias rotas en el campo y reduce el riesgo de mostrar una experiencia rota al usuario final.
 Consulte [Monitorización de reproducción básica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring) para obtener más información.
 
 * Compatibilidad con miniaturas para vídeos en ahora se admite en Screens as a Cloud Service. Un autor de contenido puede definir una miniatura para los vídeos, de modo que la imagen pueda utilizarse como marcador de posición y probar correctamente la reproducción y el destino del contenido, mientras el equipo adecuado está finalizando el vídeo en sí. También se puede utilizar la imagen en caso de que falle la reproducción del vídeo.
