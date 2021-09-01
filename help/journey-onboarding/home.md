@@ -1,10 +1,10 @@
 ---
 title: Recorrido de incorporación
 description: Comience aquí para obtener una descripción general del recorrido de incorporación guiada disponible para comprender la experiencia de integración.
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 2%
+source-wordcount: '462'
+ht-degree: 1%
 
 ---
 
@@ -24,6 +24,14 @@ Esto significa que:
 * Su equipo está configurado y tiene acceso a los recursos de la nube,
 * Los autores de AEM tendrán acceso a AEM como Cloud Service,
 * AEM desarrolladores y administradores de implementación tendrán acceso a AEM como Cloud Service.
+
+## recorridos de documentación de AEM {#documentation-journeys}
+
+[Una Documentación ](/help/journey-documentation/home.md) Journey reúne muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocio de principio a fin, mientras asume un tema previo mínimo o conocimiento AEM.
+
+Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
+
+Si desea saber cómo recomienda Adobe cómo poner en marcha su equipo para crear contenido para su AEM como aplicación Cloud Service, ¡aquí es donde debe empezar!
 
 ## Audiencias {#audiences}
 

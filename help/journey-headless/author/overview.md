@@ -1,13 +1,13 @@
 ---
 title: recorrido de autor de contenido sin encabezado de AEM
 description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo crear contenido para su proyecto.
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 0d7d1150e0156f08f4289054e8fb626713c7bc79
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 2%
+source-wordcount: '868'
+ht-degree: 1%
 
 ---
 
@@ -31,6 +31,14 @@ Esta guía le guiará por los temas más importantes para que al completarlo:
 * Conozca lo que es la entrega de contenido sin objetivos y sus ventajas.
 * Comprender AEM funciones sin objetivos y cómo trabajan juntos para ofrecer una experiencia sin objetivos.
 * Tenga la capacidad de crear contenido para su proyecto sin encabezado de AEM.
+
+## recorridos de documentación de AEM {#documentation-journeys}
+
+[Una Documentación ](/help/journey-documentation/home.md) Journey reúne muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocio de principio a fin, mientras asume un tema previo mínimo o conocimiento AEM.
+
+Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
+
+Si desea saber cómo recomienda el Adobe resolver los casos comerciales sin objetivos con AEM, [AEM Recorridos sin objetivos](/help/journey-headless/home.md) son dónde debe comenzar.
 
 ## Audience {#audience}
 

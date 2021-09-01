@@ -1,23 +1,29 @@
 ---
 title: Guía de introducción sin encabezado
 description: Con esta guía de inicio rápido, aprenda los aspectos básicos de AEM como las potentes capacidades sin objetivos de un Cloud Service, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL.
-source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
 
-
 # Guía de introducción sin encabezado {#introduction}
 
-Las guías de introducción sin encabezado establecen una ruta sencilla para crear, administrar y ofrecer experiencias con AEM como Cloud Service en cinco pasos. Cada guía se basa en la anterior, por lo que se recomienda explorarlas a fondo y en orden.
+Las guías de introducción sin encabezado establecen una ruta sencilla para crear, administrar y ofrecer experiencias con AEM como Cloud Service en cinco pasos para usuarios que ya están familiarizados con AEM tecnología sin encabezado. Cada guía se basa en la anterior, por lo que se recomienda explorarlas a fondo y en orden.
 
 1. [Creación de una configuración](create-configuration.md)
 1. [Creación de un modelo de fragmento de contenido](create-content-model.md)
 1. [Creación de una carpeta de recursos](create-assets-folder.md)
 1. [Creación de un fragmento de contenido](create-content-fragment.md)
 1. [Acceso a fragmentos de contenido y envío](create-api-request.md)
+
+>[!TIP]
+>
+>Esta guía de introducción asume el conocimiento de tecnologías AEM y sin encabezado.
+>
+>Si es nuevo en AEM o sin encabezado, consulte nuestros [Recorridos de documentación sin encabezado](/help/journey-headless/home.md) para obtener una introducción integral a ambos, sin encabezado y cómo AEM lo admite.
 
 ## Audience {#audience}
 

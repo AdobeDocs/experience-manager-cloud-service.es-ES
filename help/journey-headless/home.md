@@ -1,9 +1,9 @@
 ---
 title: recorridos sin AEM
 description: Comience aquí para obtener una descripción general de los recorridos guiados disponibles para comprender AEM potentes funciones sin encabezado.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,11 @@ Si desea saber cómo recomienda el Adobe resolver los casos empresariales sin ob
 
 ## Audiencias {#audiences}
 
-Los Recorridos sin objetivos están diseñados para varias personas, y establecen los requisitos, pasos y enfoques para implementar soluciones sin objetivos desde diferentes perspectivas. Un recorrido se define para una personalidad específica, pero también define personalidades adicionales con las que interactúa el lector.
+Los Recorridos sin objetivos están diseñados para distintas personas, exponiendo los requisitos, pasos y enfoques para implementar soluciones sin objetivos desde diferentes perspectivas.
 
-A continuación se indican las personas que interactúan en los Recorridos sin encabezado.
+Un recorrido individual se define para una personalidad o audiencia específica, pero también define personalidades adicionales con las que interactúa el lector.
 
-| Grupo de usuarios | Descripción | Función en el Recorrido |
-|---|---|---|
-| Desarrollador | Tiene experiencia en el desarrollo de aplicaciones sin periféricos que consumen contenido de diferentes fuentes | El desarrollador trabaja con autores, administradores y arquitectos para comprender los datos y construir una aplicación sin encabezado que consuma esos datos. |
-| Autor de contenido | Crea y gestiona el contenido que se entrega sin problemas | Los autores de contenido crean contenido que el desarrollador entrega sin problemas. |
-| Administrador | Gestiona la configuración y configuración base de AEM | El desarrollador trabaja con el administrador para realizar los cambios de configuración necesarios para el desarrollo. |
-| Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin interrupciones y define la estructura de estos datos | Los desarrolladores trabajan con el arquitecto de contenido para comprender la estructura de los datos y los requisitos para ofrecerlos sin problemas. |
-| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | El especialista en traducción trabaja con el arquitecto de contenido para definir la organización inicial del contenido y puede trabajar con el desarrollador para cualquier necesidad específica de traducción. |
-
-Por supuesto, la información contenida en estos recorridos puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones.
+La información en los recorridos puede ser útil para varias personas, pero un recorrido está dirigido a una persona específica y cierta información puede ser superflua a ciertas funciones.
 
 ## Recorridos sin encabezado {#headless-journeys}
 

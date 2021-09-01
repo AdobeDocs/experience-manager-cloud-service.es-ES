@@ -2,9 +2,9 @@
 title: recorrido para desarrolladores AEM sin encabezado
 description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d7d647e2114ed808ad29ed0802d838d257a9df03
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1201'
 ht-degree: 2%
 
 ---
@@ -15,11 +15,9 @@ Empiece aquí por un recorrido guiado a través de las potentes y flexibles func
 
 ## Introducción {#introduction}
 
-La implementación sin objetivos es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal y dónde se encuentren.
-
 La implementación sin encabezado renuncia a la administración de páginas y componentes, como es tradicional en las soluciones de pila completas, y se centra en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío por canales cruzados. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
-Esta guía le guiará por los temas más importantes para que al completarlo:
+Esta guía le guiará por los temas de implementación más importantes de AEM para que, al completarse:
 
 * Comprenda perfectamente qué es la entrega de contenido sin objetivos y sus ventajas.
 * Comprender AEM funciones sin objetivos y cómo trabajan juntos para ofrecer una experiencia sin objetivos.
@@ -31,11 +29,11 @@ Esta guía le guiará por los temas más importantes para que al completarlo:
 
 Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
 
-Si desea saber cómo recomienda el Adobe resolver los casos empresariales sin objetivos con AEM, AEM los Recorridos sin objetivos son el punto de partida.
+Si desea saber cómo recomienda el Adobe resolver los casos comerciales sin objetivos con AEM, [AEM Recorridos sin objetivos](/help/journey-headless/home.md) son dónde debe comenzar.
 
 >[!TIP]
 >
-> Si prefiere **aprender haciendo** y tiene inclinaciones técnicas, visite los tutoriales sin encabezado de AEM, que están organizados por API y marco y están disponibles en la sección [Recursos adicionales](#additional-resources) al final de este documento.
+> Si prefiere **aprender haciendo** y está técnicamente inclinado, visite los tutoriales sin encabezado de AEM, que están organizados por API y marco y están disponibles en la sección [Recursos adicionales](#additional-resources) al final de este documento.
 
 ## Audience {#audience}
 
@@ -43,13 +41,12 @@ Este recorrido está diseñado para el desarrollador, que expone los requisitos,
 
 Las siguientes son las personalidades que interactúan en este recorrido.
 
-| Grupo de usuarios | Descripción | Función en el Recorrido |
+| Grupo de usuarios | Descripción | Función en este Recorrido |
 |---|---|---|
-| Desarrollador | Tiene experiencia en el desarrollo de aplicaciones sin periféricos que consumen contenido de diferentes fuentes | Destinatarios objetivo de este recorrido |
+| Desarrollador (audiencia de destino) | Tiene experiencia en el desarrollo de aplicaciones sin periféricos que consumen contenido de diferentes fuentes | Destinatarios objetivo de este recorrido |
 | Autor de contenido | Crea y gestiona el contenido que se entrega sin problemas | Los autores de contenido crean contenido que el desarrollador entrega sin problemas. |
 | Administrador | Gestiona la configuración y configuración base de AEM | El desarrollador trabaja con el administrador para realizar los cambios de configuración necesarios para el desarrollo. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin interrupciones y define la estructura de estos datos | Los desarrolladores trabajan con el arquitecto de contenido para comprender la estructura de los datos y los requisitos para ofrecerlos sin problemas. |
-| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | El especialista en traducción trabaja con el arquitecto de contenido para definir la organización inicial de contenido y puede que necesite trabajar con el desarrollador para cualquier necesidad de traducción específica. |
 
 Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a los [recorridos que se presentarán próximamente y que abarquen funciones adicionales.](/help/journey-documentation/home.md#journeys)
 
