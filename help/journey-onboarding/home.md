@@ -1,7 +1,7 @@
 ---
 title: Recorrido de incorporación
 description: Comience aquí para obtener una descripción general del recorrido de incorporación guiada disponible para comprender la experiencia de integración.
-source-git-commit: 39dda310bbe3ca0a47e8d38f18200351730a5b4e
+source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -34,10 +34,10 @@ Las siguientes son las personalidades que interactúan en este recorrido.
 | Grupo de usuarios | Descripción | Función en el Recorrido |
 |---|---|---|
 | Administrador del sistema | Proporciona el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service. | Gestiona todos los aspectos de sus usuarios, desde el acceso a los permisos. |
-| AEM Author | Crea y revisa el contenido (que puede ser de varios tipos; por ejemplo, páginas, recursos y publicaciones) antes de publicarse en el sitio web. | Una vez concedidos los permisos, puede iniciar el recorrido de su propio administrador de implementación. |
-| Desarrollador | Tiene experiencia en el desarrollo de aplicaciones AEM que consumen contenido de diferentes fuentes | Una vez concedidos los permisos, puede iniciar su propio recorrido de desarrollador |
-| Administrador de implementación | Agrega o actualiza un entorno, ejecuta cualquier canalización e implementa código en AEM entorno o calidad de código. | Una vez concedidos los permisos, puede iniciar el recorrido de su propio administrador de implementación. |
+| AEM Author | Crea y revisa el contenido (que puede ser de varios tipos; por ejemplo, páginas, recursos y publicaciones) antes de publicarse en el sitio web. | Una vez concedidos los permisos, puede iniciar su propio recorrido. |
+| Desarrollador | Desarrolla aplicaciones AEM que consumen contenido de diferentes fuentes | Una vez concedidos los permisos, puede iniciar su propio recorrido de desarrollador |
+| Administrador de implementación | Agrega o actualiza un entorno, ejecuta la canalización e implementa código para AEM entorno o calidad de código. | Una vez concedidos los permisos, puede iniciar el recorrido de su propio administrador de implementación. |
 
 ## Exploración del Recorrido de integración {#exploring-onboarding-journey}
 
-Explore el [Recorrido de incorporación](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md) para obtener más información.
+Explore el primer paso para incorporar el Recorrido desde [aquí](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md) y comience.

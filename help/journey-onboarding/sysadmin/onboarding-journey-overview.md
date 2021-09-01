@@ -4,30 +4,14 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 2%
 
 ---
 
 # Recorrido de incorporación {#onboarding-jourrney}
-
-¡Felicidades por comenzar su recorrido con AEM como Cloud Service! Estamos emocionados de que esté aquí y no pueda esperar a que comience su recorrido de incorporación. Tanto si va a implementar una aplicación nueva como si va a migrar una existente, esta guía sirve como punto de partida para garantizar que los equipos estén configurados y tengan acceso a AEM como Cloud Service.
-
-## Introducción {#introduction}
-
-Esta guía le guiará por los temas más importantes para que, al completarse, tenga:
-
-* Comprensión completa de lo que cabe esperar durante el AEM como recorrido de incorporación de Cloud Service.
-* Habilitó a su equipo para que se pusiera en marcha y diera los primeros pasos para aprender a crear y desarrollar contenido para su AEM como aplicación de Cloud Service.
-
-Esto significa que:
-
-* Su equipo está configurado y tiene acceso a los recursos de la nube,
-* Los autores de AEM tendrán acceso a AEM como Cloud Service,
-* AEM desarrolladores y administradores de implementación tendrán acceso a AEM como Cloud Service.
-
 
 ## Experiencia de integración {#audience}
 
