@@ -2,9 +2,9 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e5d5e838a027af983db51a3292962200faaf3cfa
+source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '934'
 ht-degree: 19%
 
 ---
@@ -38,7 +38,7 @@ Una vez firmado el contrato, se llevarán a cabo los siguientes eventos:
 
 1. Un administrador del sistema puede [Conceder acceso a los usuarios a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md) para fines de desarrollo.
 
-**[Obtenga su Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
+**Obtenga su Adobe ID**
 
 Necesitará la ayuda de su Adobe ID y del administrador del sistema para que los usuarios se agreguen a Cloud Manager a sus funciones asignadas.
 
