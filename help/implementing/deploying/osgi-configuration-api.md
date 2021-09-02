@@ -1,10 +1,10 @@
 ---
 title: API de configuración OSGi
 description: Descripción del AEM como superficie de configuración OSGi Cloud Service
-feature: Implementación
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+feature: Deploying
+source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Puede encontrar información adicional sobre la configuración OSGI en [esta ubi
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Fecha del anuncio: 30/4/2021, Fecha de ejecución: 31/7/2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Fecha del anuncio: 30/4/2021, Fecha de ejecución: 31/7/2021)
 * **`org.apache.felix.http (Factory)`** (Fecha del anuncio: 30/4/2021, Fecha de ejecución: 31/7/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Fecha del anuncio: 25/8/2021, Fecha de ejecución: 26/11/2021)
 
 ## Configuraciones de OSGi sujetas a reglas de validación de compilación {#osgi-configurations-subject-to-build-validation-rules}
 
