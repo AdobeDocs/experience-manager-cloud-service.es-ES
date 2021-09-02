@@ -2,7 +2,7 @@
 title: Descubra qué es Cloud Manager
 description: Siga esta página para obtener más información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Además, también puede navegar a la página Programas y productos de Cloud Mana
 
 1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en Cloud Manager, estará listo para usar la interfaz de usuario (IU).
 
-Una vez que el inicio de sesión se haya realizado correctamente, se le dirigirá a la página de aterrizaje de Cloud Manager.
+   Una vez que el inicio de sesión se haya realizado correctamente, se le dirigirá a la página de aterrizaje de Cloud Manager.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 

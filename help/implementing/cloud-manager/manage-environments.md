@@ -2,9 +2,9 @@
 title: 'Administrar entornos: Cloud Service'
 description: 'Administrar entornos: Cloud Service'
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
+source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1608'
 ht-degree: 3%
 
 ---
@@ -145,8 +145,6 @@ La opción Eliminar también está disponible si hace clic en **Details** en la 
 ## Administración del acceso {#managing-access}
 
 Seleccione **Administrar acceso** en el menú desplegable de la tarjeta **Entornos**. Puede navegar a la instancia de autor directamente y administrar el acceso para su entorno.
-
-Consulte [Administración del acceso a la instancia de autor](/help/onboarding/what-is-required/accessing-aem-instance.md) para obtener más información.
 
 ![](assets/environ-access.png)
 

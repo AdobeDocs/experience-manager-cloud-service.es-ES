@@ -5,10 +5,10 @@ breadcrumb-title: Guía de incorporación
 user-guide-description: Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 46%
+source-wordcount: '99'
+ht-degree: 49%
 
 ---
 
@@ -28,4 +28,3 @@ ht-degree: 46%
 + Introducción a AEM como Cloud Service {#what-is-required}
    + [Funciones de Cloud Manager](what-is-required/user-roles-permissions.md)
    + [Tareas del administrador del sistema](what-is-required/add-users-assign-cm-roles.md)
-   + [Conceder acceso a un usuario a una instancia de AEM](/help/onboarding/what-is-required/accessing-aem-instance.md)
