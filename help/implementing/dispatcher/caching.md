@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1531'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Esta página también describe cómo se invalida la caché de Dispatcher, así c
 
 ## Almacenamiento en caché {#caching}
 
-### HTML/texto {#html-text}
+### HTML/Texto {#html-text}
 
 * de forma predeterminada, el explorador almacena en caché durante cinco minutos, según el encabezado `cache-control` emitido por la capa Apache. La CDN también respeta este valor.
 * la configuración predeterminada de almacenamiento en caché HTML/texto se puede deshabilitar definiendo la variable `DISABLE_DEFAULT_CACHING` en `global.vars`:
@@ -40,10 +40,12 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    </LocationMatch>
    ```
 
-   Tenga cuidado al configurar los encabezados de control de caché globales o los que coinciden con un regex amplio para que no se apliquen a contenido que pueda tener la intención de mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de forma precisa. Dicho esto, AEM como Cloud Service quitará el encabezado de la caché si detecta que se ha aplicado a lo que detecta que es inaccesible para Dispatcher, como se describe en la documentación de Dispatcher. Para obligar a los AEM a aplicar siempre el almacenamiento en caché, se puede añadir la opción &quot;siempre&quot; de la siguiente manera:
+   Tenga cuidado al configurar los encabezados de control de caché globales o los que coinciden con un regex amplio para que no se apliquen a contenido que pueda tener la intención de mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de forma precisa. Dicho esto, AEM como Cloud Service quitará el encabezado de la caché si detecta que se ha aplicado a lo que detecta que es inaccesible para Dispatcher, como se describe en la documentación de Dispatcher. Para forzar que los AEM siempre apliquen los encabezados de almacenamiento en caché, se puede añadir la opción **always** de la siguiente manera:
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
+        Header unset Cache-Control
+        Header unset Expires
         Header always set Cache-Control "max-age=200"
         Header set Age 0
    </LocationMatch>
@@ -56,11 +58,13 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    { /glob "*" /type "allow" }
    ```
 
-* Para evitar que se almacene contenido específico en caché, establezca el encabezado Cache-Control en *private*. Por ejemplo, lo siguiente impide que el contenido html de un directorio llamado **myfolder** se almacene en caché:
+* Para evitar que se almacene contenido específico en caché, establezca el encabezado Cache-Control en *private*. Por ejemplo, lo siguiente impide que el contenido html de un directorio llamado **secure** se almacene en caché:
 
    ```
-      <LocationMatch "/content/myfolder/.*\.(html)$">.  // replace with the right regex
-      Header set Cache-Control “private”
+      <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
+      Header unset Cache-Control
+      Header unset Expires
+      Header always set Cache-Control “private”
      </LocationMatch>
    ```
 
@@ -98,7 +102,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    >[!NOTE]
    >Los demás métodos, incluido el [Dispatcher-ttl AEM proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anularán correctamente los valores.
 
-### Otros tipos de archivos de contenido en el almacén de nodos {#other-content}
+### Otros tipos de archivo de contenido en el almacén de nodos {#other-content}
 
 * sin caché predeterminada
 * el valor predeterminado no se puede establecer con la variable `EXPIRATION_TIME` utilizada para los tipos de archivo html/text
@@ -144,7 +148,7 @@ Cuando se lanzan las nuevas versiones de las bibliotecas a la producción, las p
 
 El mecanismo para esto es un hash serializado, que se adjunta al vínculo de la biblioteca del cliente, lo que garantiza una url única y versionada para que el explorador almacene en caché CSS/JS. El hash serializado solo se actualiza cuando cambia el contenido de la biblioteca del cliente. Esto significa que si se producen actualizaciones no relacionadas (es decir, no se producen cambios en el css/js subyacente de la biblioteca del cliente) incluso con una nueva implementación, la referencia permanece igual, lo que garantiza menos interrupciones en la caché del explorador.
 
-### Activación de versiones de Longcache de bibliotecas del cliente: AEM como Cloud Service SDK Quickstart {#enabling-longcache}
+### Activación de versiones de Longcache de bibliotecas del cliente: AEM as a Cloud Service SDK Quickstart {#enabling-longcache}
 
 La clientlib predeterminada incluye en una página HTML con un aspecto similar al siguiente ejemplo:
 
