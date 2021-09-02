@@ -2,9 +2,9 @@
 title: Descubra qué es Cloud Manager
 description: Siga esta página para obtener más información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,17 @@ Para dar compatibilidad a los clientes con configuraciones de desarrollo empresa
 Para garantizar que los clientes puedan empezar rápidamente con AEM como Cloud Service, Cloud Manager proporciona todo lo necesario para comenzar de forma autoservicio, incluida la capacidad de crear los recursos y entornos de la nube. De este modo, los desarrolladores de AEM pueden acceder al repositorio de Git a través de Cloud Manager. Con Cloud Manager, los equipos de desarrollo pueden trabajar para confirmar los cambios con frecuencia de forma autoservicio.
 
 El administrador del sistema se encargará de configurar su equipo de Cloud Manager, que incluirá personas que crearán sus recursos y desarrolladores de cloud. Consulte [Configuración de desarrollo de equipo empresarial para AEM as a Cloud Service](/help/implementing/cloud-manager/enterprise-team-dev-setup.md) para obtener información sobre el soporte de Cloud Manager en la configuración de desarrollo de equipo empresarial.
+
+## Vaya a la página Información general de Cloud Manager {#navigate-cloud-manager}
+
+Siga los pasos a continuación para ir a Cloud Manager:
+
+1. Vaya directamente a la página de inicio de sesión de Cloud Manager desde [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+
+   >[!NOTE]
+   >Marque esta página para consultarla en el futuro y para ayudarle a navegar directamente a la página de aterrizaje de Cloud Manager.
+
+1. Seleccione el programa en la página **Programas y productos** de Cloud Manager para iniciar la página **Información general**.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 
