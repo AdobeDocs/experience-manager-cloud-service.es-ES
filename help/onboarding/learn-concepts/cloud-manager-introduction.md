@@ -2,10 +2,10 @@
 title: Descubra qué es Cloud Manager
 description: Siga esta página para obtener más información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
+source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
+source-wordcount: '756'
+ht-degree: 1%
 
 ---
 
@@ -29,6 +29,16 @@ Siga los pasos a continuación para ir a Cloud Manager:
    >Marque esta página para consultarla en el futuro y para ayudarle a navegar directamente a la página de aterrizaje de Cloud Manager.
 
 1. Seleccione el programa en la página **Programas y productos** de Cloud Manager para iniciar la página **Información general**.
+
+Además, también puede navegar a la página Programas y productos de Cloud Manager desde la página de inicio de Adobe Experience Cloud. Complete los siguientes pasos:
+
+1. Vaya directamente a [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) e inicie sesión con su Adobe ID.
+
+1. Seleccione **Experience Manager**.
+
+1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en Cloud Manager, estará listo para usar la interfaz de usuario (IU).
+
+Una vez que el inicio de sesión se haya realizado correctamente, se le dirigirá a la página de aterrizaje de Cloud Manager.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 
