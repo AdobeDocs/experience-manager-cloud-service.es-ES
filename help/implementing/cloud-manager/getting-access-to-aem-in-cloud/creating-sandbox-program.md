@@ -2,9 +2,9 @@
 title: 'Creación de un programa de espacio aislado '
 description: Creación de un programa de espacio aislado
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,6 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 1. Inicie la página de aterrizaje de Cloud Manager y haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >Para obtener más información sobre cómo acceder a Cloud Manager, consulte [Página de aterrizaje de Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) para obtener más información.
 
 1. En el asistente de creación de programa, seleccione **Configurar un simulador de pruebas**. El usuario envía el nombre del programa antes de seleccionar **Crear**.
 

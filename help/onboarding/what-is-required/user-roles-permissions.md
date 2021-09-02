@@ -2,10 +2,10 @@
 title: Funciones de Cloud Manager
 description: En esta página se describen los roles y permisos de usuario. Siga esta página para aprender a añadir usuarios y asignarlos a funciones de Cloud Manager.
 exl-id: d1689134-044a-4d96-97a2-cd09f735a680
-source-git-commit: a0edbaf650fdfbc271a000ab4827a4c414321613
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 8%
+source-wordcount: '533'
+ht-degree: 9%
 
 ---
 
@@ -30,9 +30,6 @@ Cloud Manager define actualmente cuatro funciones para los usuarios que rigen la
 ## Visualización de las funciones {#view-roles}
 
 Para ver sus funciones en Cloud Manager, inicie sesión en la interfaz de usuario de Cloud Manager, seleccione el icono de perfil en la esquina superior derecha y seleccione **Funciones de usuario**, como se muestra en la figura siguiente.
-
->[!NOTE]
->Consulte [Navegar a Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) para obtener más información sobre el inicio de sesión en Cloud Manager.
 
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 

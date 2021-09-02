@@ -2,9 +2,9 @@
 title: 'Creación de un programa de producción '
 description: Creación de un programa de producción
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ Siga los pasos a continuación para crear un programa de producción:
 
    ![](assets/first_timelogin1.png)
 
-   >[!NOTE]
-   >Para obtener más información sobre cómo acceder a Cloud Manager, consulte [Página de aterrizaje de Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) para obtener más información.
 
 1. Seleccione **Configurar para producción** en el asistente Crear programa para crear un programa de producción. El usuario puede aceptar el nombre de programa predeterminado o editarlo antes de seleccionar **Crear**.
 
