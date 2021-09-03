@@ -1,23 +1,27 @@
 ---
 title: Configuraciones de URL avanzadas
 description: Obtenga información sobre cómo personalizar las direcciones URL para páginas de productos y categorías. Esto permite que las implementaciones optimicen las direcciones URL de los motores de búsqueda y promuevan la detección.
-sub-product: Comercio
+sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Marco de integración de Commerce
+feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: fe0e93d6f9ab16bf469e52e2b758f5e3f8600413
+source-git-commit: c956aab4dbbbb7daede3e115616ae923f7a68b90
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 45%
+source-wordcount: '789'
+ht-degree: 46%
 
 ---
 
 # Configuraciones de URL avanzadas {#url}
+
+>[!NOTE]
+>
+> La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. En consecuencia, es necesario abordar las preocupaciones de SEO en muchos proyectos de Adobe Experience Manager (AEM) as a Cloud Service. Lea [Recomendaciones para la administración de direcciones URL y SEO](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) para obtener más información.
 
 Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) proporcionan configuraciones avanzadas para personalizar las direcciones URL de las páginas de productos y categorías. Muchas implementaciones personalizan estas direcciones URL con fines de optimización de los motores de búsqueda (SEO). En el siguiente vídeo se explica cómo configurar el `UrlProvider` servicio y las funciones de las [Asignaciones de Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar las direcciones URL de las páginas de productos y categorías.
 
