@@ -2,10 +2,10 @@
 title: Descubra qué es Cloud Manager
 description: Siga esta página para obtener más información sobre Cloud Manager, los programas de Cloud Manager y los entornos.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: a21116e9ea59e608590151dc2682ff6e73dde9ed
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '907'
+ht-degree: 4%
 
 ---
 
@@ -39,6 +39,26 @@ Además, también puede navegar a la página Programas y productos de Cloud Mana
 1. Haga clic en **Launch** desde la tarjeta de Cloud Manager. Una vez que haya iniciado sesión correctamente en Cloud Manager, estará listo para usar la interfaz de usuario (IU).
 
    Una vez que el inicio de sesión se haya realizado correctamente, se le dirigirá a la página de aterrizaje de Cloud Manager.
+
+## Permisos basados en roles en Cloud Manager {#role-based-permissions}
+
+| Permiso | Descripción | Propietario del negocio | Administrador de implementación | Administrador de programa | Desarrollador |
+|--- |--- |--- |--- |--- |--- |
+| Agregar programa<br>Editar programa | Agregar un nuevo programa.<br>Editar un programa: Agregar o quitar soluciones o complementos | x |  |  |  |
+| Crear entorno | Crear Prod+Stage, Dev, Entornos. | x | x |  |  |
+| Entorno de actualización | Actualice Prod+Stage, Dev, Entornos. | x | x |  |  |
+| Eliminar entorno de desarrollo | Eliminar entornos de desarrollo. | x | x |  |  |
+| Configuración de canalización | Configurar o editar canalización. |  | x |  |  |
+| Ejecución de canalización | Inicie la canalización. | x | x |  |  |
+| Ejecución de canalización | Rechazar/Aprobar Errores Importantes de Tres Niveles. | x | x | x |  |
+| Ejecución de canalización | Proporcionar aprobación de GoLive. | x | x | x |  |
+| Ejecución de canalización | Programar la implementación de producción. | x | x | x |  |
+| Eliminación de canalización | Permite eliminar una canalización. |  | x |  |  |
+| Cancelación de ejecución | Cancelar ejecución actual. |  | x |  |  |
+| Generar token de acceso personal | Acceda a Git. |  | x |  | x |
+
+>[!NOTE]
+>Se puede asignar a un usuario varias funciones. Por ejemplo, si asigna las funciones Propietario empresarial y Administrador de implementación a un usuario, se le proporcionará la combinación o suma de estos permisos.
 
 ## Programas de Cloud Manager {#cloud-manager-programs}
 
