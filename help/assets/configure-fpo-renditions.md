@@ -3,11 +3,10 @@ title: Generar solo para ubicación representaciones para Adobe InDesign
 description: Genere representaciones FPO de recursos nuevos y existentes mediante el flujo de trabajo Recursos Experience Manager e ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
-feature: Representaciones
-exl-id: null
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+feature: Renditions
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
