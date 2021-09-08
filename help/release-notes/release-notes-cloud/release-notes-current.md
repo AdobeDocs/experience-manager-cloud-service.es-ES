@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 2%
 
 ---
@@ -169,4 +169,20 @@ La fecha de versión de la herramienta de transferencia de contenido v1.5.6 es e
 * El botón **Stop Ingestion** se deshabilitaba durante la ingesta a la instancia de publicación. Esto no es necesario porque no hay ningún paso de restauración de mongo durante la ingesta de Publicar.
 
 * CTT no limpió el directorio `/tmp` después de una extracción correcta. Esto a veces provocaba problemas de espacio en disco.
+
+## Analizador de prácticas recomendadas {#best-practices-analyzer}
+
+### Fecha de la versión {#release-date-bpa-latest}
+
+La fecha de versión de Best Practices Analyzer v2.1.18 es el 2 de septiembre de 2021.
+
+### Novedades {#what-is-new}
+
+* Capacidad para detectar el recuento total de nodos e informar al respecto.
+
+* Capacidad para detectar y crear informes sobre el tipo y el tamaño del almacén de nodos.
+
+### Corrección de errores {#bug-fixes-bpa}
+
+* La BPA estaba detectando falsamente la presencia del marco de integración comercial.
 

@@ -5,10 +5,10 @@ breadcrumb-title: Guía de incorporación
 user-guide-description: Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos.
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 99c9fcf5e7593af5cca4999584d9c93c4ac8c030
+source-git-commit: f6d99949d562e16445ca5147e76d9006ebfe9974
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 57%
+source-wordcount: '82'
+ht-degree: 59%
 
 ---
 
@@ -24,4 +24,4 @@ ht-degree: 57%
    + [Introducción a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM como equipo Cloud Service y perfiles de producto](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Compatibilidad con Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [Guía del Recorrido de integración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
++ [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)
