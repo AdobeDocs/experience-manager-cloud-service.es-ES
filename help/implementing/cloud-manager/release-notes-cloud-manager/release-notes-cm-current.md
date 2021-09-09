@@ -1,52 +1,42 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
-feature: Información de la versión
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
+title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.9.0
+description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.9.0
+feature: Release Information
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 4%
+source-wordcount: '239'
+ht-degree: 5%
 
 ---
 
-# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.8.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.9.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.8.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.9.0.
 
 >[!NOTE]
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 12 de agosto de 2021.
-La próxima versión está planificada para el 9 de septiembre de 2021.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.9.0 es el 9 de septiembre de 2021.
+La próxima versión está planificada para el 7 de octubre de 2021.
 
 ### Novedades {#what-is-new}
 
-* Los clientes Cloud Service ahora pueden ver los informes de Acuerdo de nivel de servicio (SLA) en Cloud Manager. Esto estará disponible progresivamente en los próximos meses.
-Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) para obtener más información.
+* Se han actualizado las tarjetas de programa de la página de aterrizaje de Cloud Manager y la experiencia asociada.
 
-* Se ha cambiado el tipo y la gravedad de las reglas de calidad IndexType y `IndexDamAssetLucene` . Estos son ahora errores del bloqueador *serverity*.
+* El registro de pasos de calidad del código ahora incluye información detallada sobre el registro en el proceso de digitalización de OakPal.
 
-* Se han introducido nuevas reglas de calidad de índice Oak para cubrir configuraciones asincrónicas y tika.
+* Las opciones del menú de la página Actividad ahora incluirán una opción para **Descargar registro** para las ejecuciones completadas del Generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
 
-* Aumente el número máximo de certificados SSL por programa a 50.
+* Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página Información general de Cloud Manager .
 
-* Capacidad de autoservicio para permitir a los usuarios crear y administrar varios repositorios a través de la interfaz de usuario de Cloud Manager.
-
-* SonarQube leía innecesariamente los datos del historial de Git. En bases de código grandes, esto podría provocar una penalización innecesaria del rendimiento de la compilación.
-
-* Ahora hay una API disponible para invalidar la caché de dependencias de Maven por canalización.
-
-* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 29.
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 30.
 
 ### Corrección de errores {#bug-fixes}
 
-* Actualizar el estado disponible no se debe mostrar cuando la última versión sea menor que la versión actual.
+* El usuario ahora verá un mensaje más comprensible al intentar agregar una nueva Lista de permitidos IP en un programa que haya alcanzado el número máximo permitido de Listas de permitidos IP que se pueden configurar.
 
-* La incorporación inicial estaba fallando para nuevas organizaciones con nombres muy largos.
-
-* En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
+* Se copió una dirección URL incorrecta al seleccionar la opción de menú Copiar URL de la pantalla Repositorios.
 
 
