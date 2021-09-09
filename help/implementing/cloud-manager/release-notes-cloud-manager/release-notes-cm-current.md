@@ -3,7 +3,7 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 5%
@@ -24,6 +24,8 @@ La próxima versión está planificada para el 7 de octubre de 2021.
 
 ### Novedades {#what-is-new}
 
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 30.
+
 * Se han actualizado las tarjetas de programa de la página de aterrizaje de Cloud Manager y la experiencia asociada.
 
 * El registro de pasos de calidad del código ahora incluye información detallada sobre el registro en el proceso de digitalización de OakPal.
@@ -31,8 +33,6 @@ La próxima versión está planificada para el 7 de octubre de 2021.
 * Las opciones del menú de la página Actividad ahora incluirán una opción para **Descargar registro** para las ejecuciones completadas del Generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
 
 * Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página Información general de Cloud Manager .
-
-* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 30.
 
 ### Corrección de errores {#bug-fixes}
 
