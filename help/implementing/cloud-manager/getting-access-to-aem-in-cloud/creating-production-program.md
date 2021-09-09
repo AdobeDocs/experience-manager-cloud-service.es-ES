@@ -2,9 +2,9 @@
 title: 'Creación de un programa de producción '
 description: Creación de un programa de producción
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Siga los pasos a continuación para crear un programa de producción:
 
    ![](assets/setup-prod-commerce.png)
 
-1. Una vez que vea la tarjeta del programa en la página de aterrizaje, pase el ratón por encima para seleccionar el icono de Cloud Manager para navegar a la página **Información general** de Cloud Manager.
+1. Una vez que vea la tarjeta del programa en la página de aterrizaje, seleccione **...** para ver las opciones de menú disponibles. Seleccione **Cloud Manager**, como se muestra en la figura siguiente, para navegar a la página **Información general** de Cloud Manager.
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. La tarjeta de llamada a acción principal guiará al usuario para crear un entorno, crear una canalización que no sea de producción y, finalmente, una canalización de producción.
    ![](assets/set-up-prod5.png)
