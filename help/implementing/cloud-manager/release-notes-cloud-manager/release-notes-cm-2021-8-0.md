@@ -2,8 +2,7 @@
 title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 4%
@@ -48,5 +47,3 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 * La incorporación inicial estaba fallando para nuevas organizaciones con nombres muy largos.
 
 * En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
-
-

@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 2%
+source-wordcount: '1630'
+ht-degree: 3%
 
 ---
 
@@ -122,12 +122,34 @@ Consulte [Compatibilidad con miniaturas para vídeos](https://experienceleague.a
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.8.0 y 2021.7.0.
+Esta sección describe las Notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.9.0 y 2021.8.0.
+
+## Fecha de la versión {#release-date-cm-sept}
+
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.9.0 es el 9 de septiembre de 2021.
+La próxima versión está planificada para el 7 de octubre de 2021.
+
+### Novedades {#what-is-new-cm-sept}
+
+* Se han actualizado las tarjetas de programa de la página de aterrizaje de Cloud Manager y la experiencia asociada.
+
+* El registro de pasos de calidad del código ahora incluye información detallada sobre el registro en el proceso de digitalización de OakPal.
+
+* Las opciones del menú de la página Actividad ahora incluirán una opción para **Descargar registro** para las ejecuciones completadas del Generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
+
+* Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página Información general de Cloud Manager .
+
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 30.
+
+### Corrección de errores {#bug-fixes-sept}
+
+* El usuario ahora verá un mensaje más comprensible al intentar agregar una nueva Lista de permitidos IP en un programa que haya alcanzado el número máximo permitido de Listas de permitidos IP que se pueden configurar.
+
+* Se copió una dirección URL incorrecta al seleccionar la opción de menú Copiar URL de la pantalla Repositorios.
 
 ## Fecha de la versión {#release-date-cm-aug}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 12 de agosto de 2021.
-La próxima versión está planificada para el 9 de septiembre de 2021.
 
 ### Novedades {#what-is-new-aug}
 
