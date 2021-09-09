@@ -2,10 +2,10 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
+source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 27%
+source-wordcount: '542'
+ht-degree: 28%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 27%
 
 La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
-A continuación se ilustra el recorrido de incorporación y cada paso del recorrido se describe detalladamente en las secciones siguientes.
+A continuación se ilustra el recorrido de incorporación.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 Este recorrido está diseñado para un administrador del sistema, que expone los requisitos, los pasos y el enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
 
-Consulte [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para comenzar con la experiencia de incorporación.
+Consulte [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para comenzar con su experiencia de incorporación.
 
 ## [!DNL Experience Manager as a Cloud Service] Guías {#aem-guides}
 
