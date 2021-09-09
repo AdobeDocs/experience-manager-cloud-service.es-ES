@@ -2,7 +2,7 @@
 title: Personalizar y ampliar fragmentos de contenido
 description: Un fragmento de contenido amplía un recurso estándar.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 2%
@@ -16,10 +16,6 @@ En Adobe Experience Manager como Cloud Service, un fragmento de contenido amplí
 * [Creación y administración de ](/help/assets/content-fragments/content-fragments.md) fragmentos de contenido y  [creación de páginas con ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) fragmentos de contenido para obtener más información sobre los fragmentos de contenido.
 
 * [Administración de ](/help/assets/manage-digital-assets.md) recursos para obtener más información sobre los recursos estándar.
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## Arquitectura {#architecture}
 
@@ -129,13 +125,13 @@ Se puede hacer referencia a los fragmentos de contenido desde AEM páginas, igua
 >
 >Esto significa que si el modelo no se ha publicado en el momento de publicar la página, se marcará y el modelo se añadirá a los recursos que se publicarán con la página.
 
-### Integración con otros módulos {#integration-with-other-frameworks}
+### Integración con otros Marcos {#integration-with-other-frameworks}
 
 Los fragmentos de contenido se pueden integrar con:
 
 * **Traducciones**
 
-   Los fragmentos de contenido están totalmente integrados con el flujo de trabajo de traducción AEM. A nivel arquitectónico, esto significa:
+   Los fragmentos de contenido están totalmente integrados con el [AEM flujo de trabajo de traducción](/help/sites-cloud/administering/translation/overview.md). A nivel arquitectónico, esto significa:
 
    * Las traducciones individuales de un fragmento de contenido son en realidad fragmentos independientes; por ejemplo:
 
@@ -268,7 +264,7 @@ Cabe señalar que:
 
    * Si se eliminan variaciones existentes a través de un elemento mediante `ContentElement.removeVariation()`, no se actualizarán las estructuras de datos globales asignadas a la variación. Para garantizar que estas estructuras de datos se mantengan sincronizadas, utilice `ContentFragment.removeVariation()` en su lugar, lo que elimina una variación globalmente.
 
-## La API de administración de fragmentos de contenido - Lado del cliente {#the-content-fragment-management-api-client-side}
+## La API de administración de fragmentos de contenido: del lado del cliente {#the-content-fragment-management-api-client-side}
 
 >[!CAUTION]
 >
