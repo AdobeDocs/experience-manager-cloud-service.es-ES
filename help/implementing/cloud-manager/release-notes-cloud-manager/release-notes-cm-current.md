@@ -3,9 +3,9 @@ title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versió
 description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.9.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '257'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ La próxima versión está planificada para el 7 de octubre de 2021.
 
 * Las opciones del menú de la página Actividad ahora incluirán una opción para **Descargar registro** para las ejecuciones completadas del Generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
 
-* Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página Información general de Cloud Manager .
+* Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página **Información general** de Cloud Manager. Consulte [Creación de un programa de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) para obtener más información.
 
 ### Corrección de errores {#bug-fixes}
 
