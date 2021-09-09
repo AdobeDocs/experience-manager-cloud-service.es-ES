@@ -3,24 +3,15 @@ title: Recorrido de incorporación
 description: Siga esta página para obtener información sobre cómo empezar a utilizar el recorrido de incorporación
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
 
 # Recorrido de incorporación {#onboarding-jourrney}
-
-## Experiencia de integración {#audience}
-
-La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
-
-A continuación se ilustra el recorrido de incorporación y cada paso del recorrido se describe detalladamente en las secciones siguientes.
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-Este recorrido está diseñado para un administrador del sistema, que expone los requisitos, los pasos y el enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
 
 ## Exploración del Recorrido de integración {#exploring-onboarding-journey}
 

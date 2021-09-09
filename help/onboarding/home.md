@@ -2,10 +2,10 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 26%
+source-wordcount: '556'
+ht-degree: 27%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 26%
 
 ¡Felicidades por comenzar su recorrido con AEM como Cloud Service! Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service.
 
-Esta guía le ayudará a usted y a su equipo a empezar con Cloud Manager rápidamente. Necesitará la ayuda de su Adobe ID y del administrador del sistema para que los usuarios se agreguen a Cloud Manager con las funciones asignadas (denominadas perfiles de producto en Admin Console) y los permisos asociados. Se describen las instrucciones para que el administrador del sistema pueda hacerlo mediante el Admin Console. La lista de funciones de Cloud Manager, denominada Perfiles de producto en Admin Console y sus permisos asociados, se detalla para que pueda determinar qué funciones pueden ser necesarias para varios usuarios de su organización.
+## Experiencia de integración {#audience}
 
-La siguiente imagen ilustra su recorrido de incorporación, empezando por el correo electrónico de bienvenida recibido por su administrador del sistema y culminando en que los usuarios accedan a Cloud Manager para AEM como Cloud Service.
+La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+A continuación se ilustra el recorrido de incorporación y cada paso del recorrido se describe detalladamente en las secciones siguientes.
 
-Consulte [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html) para comenzar con la experiencia de incorporación.
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->Antes de profundizar en el recorrido de incorporación, se recomienda revisar la sección Conozca los conceptos de incorporación que cubre los siguientes temas:
->* [Administrador del sistema](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [Sistema Identity Management de Adobe](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Introducción a Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM como equipo Cloud Service y perfiles de producto](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Compatibilidad con Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+Este recorrido está diseñado para un administrador del sistema, que expone los requisitos, los pasos y el enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
 
+Consulte [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para comenzar con la experiencia de incorporación.
 
 ## [!DNL Experience Manager as a Cloud Service] Guías {#aem-guides}
 
