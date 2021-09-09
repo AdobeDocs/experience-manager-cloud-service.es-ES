@@ -2,7 +2,7 @@
 title: API obsoletas
 description: Notas de la versión específicas de las API obsoletas y eliminadas en [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
+source-git-commit: 70ca1cce6995634d330da68cf8bce8ee12c71f1e
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
@@ -40,7 +40,7 @@ A continuación se ofrece una lista exhaustiva de las API de AEM obsoletas y su 
     <td>com.day.cq.jcrclustersupport</td>
     <td>Usar la API de Discovery de Sling como alternativa</td>
     <td>2015</td>
-    <td>30/7/21</td>
+    <td>eliminado</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -58,7 +58,7 @@ A continuación se ofrece una lista exhaustiva de las API de AEM obsoletas y su 
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>5/3/21</td>
-    <td>6/6/21</td>
+    <td>eliminado</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -70,7 +70,7 @@ A continuación se ofrece una lista exhaustiva de las API de AEM obsoletas y su 
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>Los administradores de persistencia personalizados no son compatibles con AEM como Cloud Service.</td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>eliminado</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -88,7 +88,7 @@ A continuación se ofrece una lista exhaustiva de las API de AEM obsoletas y su 
     <td>org.apache.felix.systemready</td>
     <td>Se recomienda utilizar la API HealthCheck de Apache Felix en su lugar</td>
     <td>30/4/21</td>
-    <td>30/7/21</td>
+    <td>eliminado</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
