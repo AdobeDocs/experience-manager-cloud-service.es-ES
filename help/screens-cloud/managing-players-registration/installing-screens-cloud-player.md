@@ -1,13 +1,13 @@
 ---
 title: Instalación y configuración de reproductores en Screens as a Cloud Service
 description: En esta página se describe cómo instalar y configurar reproductores en Screens como Cloud Service.
-source-git-commit: d5970e27773433c9e6e7175a103768ae591e87ba
+exl-id: a022738a-c543-4629-a244-f70fa294fe7f
+source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
-
 
 # Instalación y configuración de reproductores en Screens as a Cloud Service {#installing-players-screens-cloud}
 
@@ -45,9 +45,9 @@ Siga los pasos a continuación para actualizar el reproductor:
 
 ## Monitorización de reproducción básica {#playback-monitoring}
 
-El reproductor informa de varias métricas de reproducción con cada `ping` cuyo valor predeterminado es de 30 segundos. En función de las métricas, puede detectar varios casos extremos, como experiencia atascada, pantalla en blanco y problemas de programación. Esto le permite comprender y solucionar problemas en el dispositivo y, por lo tanto, agiliza la investigación y las medidas correctivas.
+El reproductor informa de varias métricas de reproducción con cada `ping` cuyo valor predeterminado es de 30 segundos. En función de estas métricas, podemos detectar varios casos extremos, como experiencia atascada, pantalla en blanco y problemas de programación. Esto nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera la investigación y las medidas correctivas con usted.
 
-La monitorización de reproducción básica en un reproductor AEM Screens le permite:
+La monitorización de reproducción básica en un reproductor AEM Screens permite:
 
 * Monitorice de forma remota si un reproductor reproduce contenido correctamente.
 
@@ -80,9 +80,11 @@ A continuación se enumeran algunas limitaciones de la monitorización de reprod
 
 * El reproductor informa de su propio estado de reproducción al servidor, por lo que requiere una conexión activa.
 
-* La propiedad `isContentRendering` que comprueba la GPU consume actualmente muchos recursos para que esté habilitada de forma predeterminada y requiere la inclusión explícita de las preferencias del reproductor. Se recomienda no utilizarlo junto con los vídeos.
+* La propiedad `isContentRendering` que comprueba la GPU consume actualmente demasiados recursos para poder habilitarla de forma predeterminada y requiere la inclusión explícita de las preferencias del reproductor. Se recomienda no utilizarlo junto con los vídeos en producción.
 
-* Esta función es compatible con los canales de secuencia.
+* Esta función solo se admite para canales de secuencia y aún no cubre el caso de uso de canales interactivos (SPA).
+
+* Las métricas aún no están completamente expuestas a nuestros clientes, por lo que estamos trabajando duro en habilitar un mecanismo de alerta e informes similar al panel en un futuro próximo.
 
 ## Siguientes pasos {#whats-next}
 
