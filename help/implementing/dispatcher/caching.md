@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1572'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
    { /glob "*" /type "allow" }
    ```
 
-* Para evitar que se almacene contenido específico en caché, establezca el encabezado Cache-Control en *private*. Por ejemplo, lo siguiente impide que el contenido html de un directorio llamado **secure** se almacene en caché:
+* Para evitar que el contenido específico se almacene en caché **en la CDN**, establezca el encabezado Cache-Control en *private*. Por ejemplo, lo siguiente impide que el contenido html de un directorio llamado **secure** se almacene en caché en la CDN:
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 
    >[!NOTE]
    >Los demás métodos, incluido el [Dispatcher-ttl AEM proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anularán correctamente los valores.
+
+   >[!NOTE]
+   >Tenga en cuenta que Dispatcher puede seguir almacenando en caché el contenido de acuerdo con sus propias [reglas de almacenamiento en caché](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Para que el contenido sea realmente privado, debe asegurarse de que Dispatcher no lo almacene en caché.
 
 ### Bibliotecas de cliente (js, css) {#client-side-libraries}
 
