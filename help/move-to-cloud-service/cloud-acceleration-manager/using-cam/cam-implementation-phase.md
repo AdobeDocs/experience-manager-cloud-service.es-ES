@@ -1,13 +1,13 @@
 ---
 title: Fase de implementación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de implementación en Cloud Acceleration Manager.
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 2%
 
 ---
-
 
 # Fase de implementación en Cloud Acceleration Manager {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ Siga esta sección para explorar la tarjeta de actividad Refactorización de có
    * Dispatcher
    * Pruebas
 
-   La pestaña **Overview** muestra una lista de actividades de refactorización de código.
+>[!NOTE]
+>Revise el contenido de estas pestañas para comprender algunas áreas adicionales que no están cubiertas por el Analizador de prácticas recomendadas.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+La pestaña **Dispatcher** proporciona información sobre cómo estructurar el AEM como una configuración de Apache y Dispatcher Cloud Service, así como sobre cómo validarlo y ejecutarlo localmente antes de implementarlo en entornos en la nube. También describe la depuración en entornos de Cloud.
 
-   La pestaña **Dispatcher** proporciona información sobre cómo estructurar el AEM como una configuración de Apache y Dispatcher Cloud Service, así como sobre cómo validarlo y ejecutarlo localmente antes de implementarlo en entornos en la nube. También describe la depuración en entornos de Cloud.
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+La pestaña **Testing** proporciona información sobre las pruebas funcionales, de auditoría de experiencias y de interfaz de usuario.
 
-   La pestaña **Testing** proporciona información sobre las pruebas funcionales, de auditoría de experiencias y de interfaz de usuario.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >Además, revise el contenido de las pestañas de la página para comprender algunas áreas adicionales que no están cubiertas por el Analizador de prácticas recomendadas.
+![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Uso de AEM como tarjeta de implementación de Cloud Service {#aem-as-a-cloud-service-deployment}
