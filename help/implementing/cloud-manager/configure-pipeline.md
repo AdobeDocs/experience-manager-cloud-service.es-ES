@@ -2,7 +2,7 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Siga los pasos a continuación para editar la canalización configurada:
 1. La pestaña **Source Code** permite actualizar el repositorio. Haga clic en **Access Repo Info** para actualizar el repositorio.
 
    >[!NOTE]
-   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 

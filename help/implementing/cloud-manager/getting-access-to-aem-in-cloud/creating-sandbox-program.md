@@ -2,7 +2,7 @@
 title: 'Creación de un programa de espacio aislado '
 description: Creación de un programa de espacio aislado
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Siga los pasos a continuación para crear un programa de simulación de pruebas:
 
    >[!NOTE]
    >
-   >Para obtener más información sobre el acceso y la administración del repositorio de Git mediante la administración de cuentas de Git de autoservicio desde la interfaz de usuario de Cloud Manager, consulte [Acceso a Git](/help/implementing/cloud-manager/accessing-repos.md).
+   >Para obtener más información sobre el acceso y la administración del repositorio de Git mediante la administración de cuentas de Git de autoservicio desde la interfaz de usuario de Cloud Manager, consulte [Acceso a Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 
 1. Una vez creado el entorno de desarrollo, el usuario puede **Access AEM** vincular, como se muestra en la figura siguiente:
