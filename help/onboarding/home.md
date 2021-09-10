@@ -2,9 +2,9 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
+source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 28%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 28%
 
 La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM como Cloud Service de su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones adecuadas en función de sus responsabilidades de trabajo, tras lo cual cada miembro puede iniciar sesión y acceder a sus AEM como recursos de Cloud Service.
 
-A continuación se ilustra el recorrido de incorporación.
+El recorrido de incorporación que se muestra a continuación está diseñado para un administrador del sistema, que expone los requisitos, pasos y enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
-Este recorrido está diseñado para un administrador del sistema, que expone los requisitos, los pasos y el enfoque. El recorrido define las personas adicionales con las que el administrador del sistema debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el de un administrador.
+>[!NOTE]
+>Consulte [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para comenzar con su experiencia de incorporación.
 
-Consulte [Recorrido de incorporación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) para comenzar con su experiencia de incorporación.
 
 ## [!DNL Experience Manager as a Cloud Service] Guías {#aem-guides}
 
