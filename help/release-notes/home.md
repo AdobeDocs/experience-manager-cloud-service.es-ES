@@ -2,10 +2,10 @@
 title: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notas de la versión de Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 46%
+source-wordcount: '661'
+ht-degree: 47%
 
 ---
 
@@ -32,7 +32,7 @@ Además de la velocidad de la innovación, [!DNL Adobe Experience Manager] como 
 
 Para prepararse para una versión:
 
-1. Marque sus calendarios: Compruebe las fechas clave de las versiones mensuales en la [hoja de ruta de las versiones del Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service) y marque sus calendarios para prepararse para las actividades clave que se prepararán para la versión.
+1. Marque sus calendarios: Compruebe las fechas clave de las versiones mensuales en la [hoja de ruta de las versiones del Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) y marque sus calendarios para prepararse para las actividades clave que se prepararán para la versión.
 1. Revise las notas de la versión: Lea las [notas de la versión actuales](/help/release-notes/release-notes-cloud/release-notes-current.md) para familiarizarse con las funciones de la versión y la versión preliminar.
 1. Acceda e pruebe las nuevas funciones: Habilite el [canal de prelanzamiento](/help/release-notes/prerelease.md) en los entornos que no sean de producción y comience a probar las funciones para evaluarlas en los entornos personalizados.
 1. Capacite a los usuarios: Utilice los recursos de documentación y Experience League para que los usuarios estén al día con las nuevas funciones y estén al día con las últimas novedades.

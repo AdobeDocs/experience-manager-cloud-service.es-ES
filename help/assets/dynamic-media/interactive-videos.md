@@ -4,9 +4,9 @@ description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dyn
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '5936'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Para ver un vídeo interactivo y de ventas en acción, seleccione [Demostracione
 
 * Para pausar el vídeo y abrir la vista rápida del producto, seleccione la miniatura. Por ejemplo, seleccione la imagen en miniatura de KitchenAid en el vídeo para experimentar una vista de giro de 360° del mezclador o acerque para ver los detalles del mezclador.
 
-Consulte también [Uso de vídeo interactivo con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=en#dynamic-media)
+Consulte también [Uso de vídeo interactivo con Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
 
 <!-- 
 

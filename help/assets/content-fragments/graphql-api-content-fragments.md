@@ -1,17 +1,17 @@
 ---
 title: AEM API de GraphQL para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service con la API de AEM GraphQL para la entrega de contenido sin encabezado.
-feature: Fragmentos de contenido, API de GraphQL
+feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3935'
+source-wordcount: '3929'
 ht-degree: 1%
 
 ---
 
 
-# API de AEM GraphQL para usar con fragmentos de contenido {#graphql-api-for-use-with-content-fragments}
+# AEM API de GraphQL para su uso con fragmentos de contenido {#graphql-api-for-use-with-content-fragments}
 
 Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) como Cloud Service con la API de AEM GraphQL para la entrega de contenido sin encabezado.
 
@@ -148,7 +148,7 @@ Para habilitar un punto final para GraphQL para AEM, debe:
 * [Habilitar el extremo de GraphQL](#enabling-graphql-endpoint)
 * [Publicar el extremo de GraphQL](#publishing-graphql-endpoint)
 
-### Activación del extremo {#enabling-graphql-endpoint} de GraphQL
+### Activación del extremo de GraphQL {#enabling-graphql-endpoint}
 
 Para habilitar un extremo de GraphQL, primero debe tener una configuración adecuada. Consulte [Fragmentos de contenido - Navegador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
@@ -180,7 +180,7 @@ Para habilitar el punto final correspondiente:
    >
    >Puede configurar ACL, según su caso de uso, en el punto final.
 
-### Publicación del extremo {#publishing-graphql-endpoint} de GraphQL
+### Publicación del extremo de GraphQL {#publishing-graphql-endpoint}
 
 Seleccione el nuevo extremo y **Publish** para que esté disponible en todos los entornos.
 
@@ -210,11 +210,11 @@ Esto proporciona funciones como resaltado de sintaxis, autocompletado, autosuger
 
 ![Interfaz ](assets/cfm-graphiql-interface.png "GraphiQL de GraphiQL")
 
-### Instalación de la interfaz de AEM GraphiQL {#installing-graphiql-interface}
+### Instalación de la interfaz AEM GraphiQL {#installing-graphiql-interface}
 
 La interfaz de usuario de GraphiQL se puede instalar en AEM con un paquete dedicado: el paquete [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip).
 
-## Casos de uso para entornos de autor y publicación {#use-cases-author-publish-environments}
+## Casos de uso para entornos de creación y publicación {#use-cases-author-publish-environments}
 
 Los casos de uso pueden depender del tipo de AEM como entorno de Cloud Service:
 
@@ -314,12 +314,12 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Modelo de fragmento de contenido: tipo de datos | Tipo de GraphQL | Descripción |
 |--- |--- |--- |
 | Texto de una sola línea | Cadena, [Cadena] |  Se utiliza para cadenas simples como nombres de autor, nombres de ubicación, etc. |
-| Texto de varias líneas | Cadena |  Se utiliza para generar texto como el cuerpo de un artículo |
+| Texto de varias líneas | String |  Se utiliza para generar texto como el cuerpo de un artículo |
 | Número |  Flotante, [Flotante] | Se utiliza para mostrar números de coma flotante y números regulares |
 | Booleano |  Booleano |  Se utiliza para mostrar casillas de verificación → instrucciones simples true/false |
 | Fecha Y Hora | Calendario |  Se utiliza para mostrar la fecha y la hora en formato ISO 8086. Según el tipo seleccionado, hay tres sabores disponibles para usar en AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
-| Enumeración |  Cadena |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo. |
-|  Etiquetas |  [Cadena] |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
+| Enumeración |  String |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo. |
+|  Etiquetas |  [String] |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  Cadena |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
 | Referencia al fragmento |  *Un tipo de modelo* |  Se utiliza para hacer referencia a otro fragmento de contenido de un tipo de modelo determinado, definido cuando se creó el modelo |
 
@@ -812,7 +812,7 @@ Para acceder al extremo de GraphQL desde un sitio web externo, debe configurar:
 
 >[!NOTE]
 >
->Para obtener una descripción detallada de la política de uso compartido de recursos CORS en AEM, consulte [Comprender el uso compartido de recursos de origen cruzado (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors)).
+>Para obtener una descripción detallada de la política de uso compartido de recursos CORS en AEM, consulte [Comprender el uso compartido de recursos de origen cruzado (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
 Para acceder al extremo de GraphQL, se debe configurar una directiva CORS en el repositorio Git del cliente. Para ello, agregue un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados.
 

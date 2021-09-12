@@ -4,11 +4,11 @@ description: Obtenga información sobre la accesibilidad en los visores de Dynam
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accesibilidad
+feature: Accessibility
 role: Admin,User
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Consulte [Navegación y accesibilidad del teclado](https://experienceleague.adob
 ## Compatibilidad con tecnología de asistencia en los visores de Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
 Todos los componentes del visor de Dynamic Media admiten las funciones y atributos de ARIA (Aplicaciones de Internet enriquecidas accesibles) para mejorar la integración con tecnologías de asistencia, como lectores de pantalla.
-Consulte el tema de ayuda **Soporte técnico de asistencia** en cualquier tema de personalización del visor de la Guía de referencia de visores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) para el visor de imágenes interactivo.
+Consulte el tema de ayuda **Soporte técnico de asistencia** en cualquier tema de personalización del visor de la Guía de referencia de visores de Dynamic Media. Por ejemplo, consulte [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) para el visor de vídeo o [Compatibilidad con tecnología de asistencia](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) para el visor de imágenes interactivo.
 
 >[!MORELIKETHIS]
 >

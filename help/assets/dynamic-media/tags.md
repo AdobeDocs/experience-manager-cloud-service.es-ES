@@ -1,12 +1,12 @@
 ---
 title: Integración de visores de Dynamic Media con Adobe Analytics y etiquetas de Experience Platform
 description: Obtenga información sobre la extensión Visualizadores de Dynamic Media para etiquetas de Experience Platform y visores de Dynamic Media 5.13. Permite a los clientes de Adobe Analytics y Etiquetas de plataforma utilizar eventos y datos específicos para los visualizadores de Dynamic Media en la configuración de Etiquetas de Experience Platform.
-feature: Informes del recurso
+feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 13dbce0d8ad25fec47460a41c5ea3e355a4dd486
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '6681'
+source-wordcount: '6675'
 ht-degree: 7%
 
 ---
@@ -231,7 +231,7 @@ El ejemplo configurado anteriormente también afecta a la duración del valor de
 
 En cualquier caso, los valores de los elementos de datos impulsados por los visualizadores de Dynamic Media no se almacenan en el almacenamiento local ni en el servidor; en su lugar, solo se mantienen en la biblioteca de etiquetas del Experience Platform del lado del cliente. Los valores de dicho elemento de datos desaparecen cuando la página web se vuelve a cargar.
 
-Por lo general, el editor de elementos de datos admite la [selección de duración del almacenamiento](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element). Sin embargo, los elementos de datos que utilizan la extensión Visualizadores de Dynamic Media solo admiten la opción de duración del almacenamiento **[!UICONTROL None]**. Es posible establecer cualquier otro valor en la interfaz de usuario, pero el comportamiento del elemento de datos no está definido en este caso. La extensión administra el valor del elemento de datos por su cuenta: el elemento de datos que mantiene el valor del argumento de evento del visor durante todo el ciclo de vida del visor.
+Por lo general, el editor de elementos de datos admite la [selección de duración del almacenamiento](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element). Sin embargo, los elementos de datos que utilizan la extensión Visualizadores de Dynamic Media solo admiten la opción de duración del almacenamiento **[!UICONTROL None]**. Es posible establecer cualquier otro valor en la interfaz de usuario, pero el comportamiento del elemento de datos no está definido en este caso. La extensión administra el valor del elemento de datos por su cuenta: el elemento de datos que mantiene el valor del argumento de evento del visor durante todo el ciclo de vida del visor.
 
 ### Acerca de las reglas en la extensión Visualizadores de Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -443,7 +443,7 @@ Consulte también [Guía de implementación de Analytics](https://experienceleag
 
    Si no hay ningún grupo de informes disponible, usted o el administrador de Adobe Analytics deben crear uno antes de continuar con la configuración.
 
-   Consulte [Informes y grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) y [Crear un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en#manage-report-suites).
+   Consulte [Informes y grupos de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) y [Crear un grupo de informes](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html#manage-report-suites).
 
    En Adobe Analytics, los grupos de informes se administran en **[!UICONTROL Administración]** > **[!UICONTROL Grupos de informes]**.
 
@@ -730,17 +730,17 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _Página de detalles de la integración_
 
-1. Vuelva a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** que dejó abierta anteriormente. En la esquina superior derecha de la página, seleccione **[!UICONTROL Siguiente]** para abrir la página **[!UICONTROL Cuenta]** en la ventana **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**.
+1. Vuelva a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** que dejó abierta anteriormente. En la esquina superior derecha de la página, seleccione **[!UICONTROL Siguiente]** para abrir la página **[!UICONTROL Cuenta]** en la ventana **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**.
 
    (Si ha cerrado la página anteriormente, vuelva al autor del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Seleccione **[!UICONTROL Crear]**. En la lista desplegable **[!UICONTROL Cloud Solution]**, seleccione **[!UICONTROL Etiquetas de Experience Platform]**. En la lista desplegable **[!UICONTROL Certificado]**, seleccione el nombre del certificado creado anteriormente.
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
-   _Configuración de cuenta técnica de IMS de Adobe: página de certificado_
+   _Configuración de cuenta técnica de Adobe IMS: página Certificado_
 
 1. La página **[!UICONTROL Cuenta]** tiene cinco campos que requieren que rellene con información de la página de detalles de la integración del paso anterior.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
-   _Configuración de cuenta técnica de IMS de Adobe: página de cuenta_
+   _Configuración de cuenta técnica de Adobe IMS: página de cuenta_
 
 1. En la página **[!UICONTROL Cuenta]**, rellene los campos siguientes:
 

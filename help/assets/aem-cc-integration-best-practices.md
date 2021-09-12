@@ -3,12 +3,12 @@ title: Prácticas recomendadas para la integración con [!DNL Adobe Creative Clo
 description: Las prácticas recomendadas integran una implementación de Experience Manager con Adobe Creative Cloud para optimizar los flujos de trabajo de transferencia de recursos y lograr la máxima eficacia.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Colaboración,Adobe Asset Link,Aplicación de escritorio
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3443'
 ht-degree: 15%
 
 ---
@@ -39,7 +39,7 @@ Siga leyendo para saber qué integraciones escoger entre el escritorio y el DAM 
 | Propuesta de valor para las personas implicadas | oferta de Adobe | Superficies implicadas |
 |---|---|---|
 | Los usuarios creativos descubren recursos de [!DNL Experience Manager], los abren y usan, editan y cargan cambios en [!DNL Experience Manager], así como cargan nuevos archivos en [!DNL Experience Manager], sin salir de su aplicación [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator y InDesign. |
-| Los usuarios empresariales simplifican la apertura y el uso de recursos, editan y cargan cambios en [!DNL Experience Manager] y cargan nuevos archivos en [!DNL Experience Manager] desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no sean de Adobe. | Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | aplicación de escritorio de Experience Manager en Win y Mac |
+| Los usuarios empresariales simplifican la apertura y el uso de recursos, editan y cargan cambios en [!DNL Experience Manager] y cargan nuevos archivos en [!DNL Experience Manager] desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no sean de Adobe. | Aplicación de escritorio de [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | aplicación de escritorio de Experience Manager en Win y Mac |
 | Los especialistas en marketing y los usuarios empresariales descubren, previsualizan, otorgan licencias y guardan, y administran los recursos de Adobe Stock desde Experience Manager. Los recursos con licencia y guardados proporcionan metadatos de Adobe Stock seleccionados para un mejor gobierno. | [Integración de Experience Manager y Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaz web |
 | Mejore la colaboración entre diseñadores de productos digitales y especialistas en marketing. Permita que los diseñadores utilicen los recursos digitales en los modelos de diseño y de modelo de alambre en el lienzo de Adobe XD. | [[!DNL Adobe Asset Link] para [!DNL Adobe XD]](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
 | Los especialistas en marketing pueden crear automáticamente variaciones y derivados basados en recursos cargados y acciones predefinidas creadas mediante la personalización. Utilice esta automatización para mejorar la velocidad de contenido y reducir el esfuerzo manual. | [Automatización del contenido](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets] interfaz web |
@@ -57,7 +57,7 @@ Decidir qué capacidad utilizar
 | Discover: examinar carpetas | Sí | IU web de Experience Manager + acciones de escritorio | Al examinar el recurso compartido de red, desactive las miniaturas para evitar descargar archivos binarios de recursos. |
 | Discover: acceso a colecciones | Sí | IU web de Experience Manager + acciones de escritorio |  |
 | Discover : buscar recursos | Sí | IU web de Experience Manager + acciones de escritorio |  |
-| Usar - Abrir recurso | Sí | Sí - para cualquier aplicación | [Abrir desde interfaz web ](/help/assets/manage-digital-assets.md#previewing-assets) o desde Finder |
+| Usar - Abrir recurso | Sí | Sí: para cualquier aplicación | [Abrir desde interfaz web ](/help/assets/manage-digital-assets.md#previewing-assets) o desde Finder |
 | Uso: colocación de un recurso de un Experience Manager en un documento | Sí: incrustar | Sí: vinculación o incrustación | La aplicación de escritorio de Experience Manager proporciona acceso a los recursos como archivos en el sistema de archivos local. Estos vínculos en las aplicaciones nativas se representan mediante rutas locales. |
 | Editar: abrir para edición | Sí: acción de cierre de compra | Sí: acción abierta (en el recurso compartido de red) | [El registro en ](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) AAL guarda el recurso en la cuenta de almacenamiento de Creative Cloud del usuario (sincronizada por la aplicación de Creative Cloud) de forma predeterminada. |
 | Editar: trabajo en curso fuera del Experience Manager | Sí: el recurso está disponible en la cuenta de almacenamiento del Creative Cloud del usuario sincronizada con el escritorio. | Sí |  |
@@ -187,7 +187,7 @@ Las agencias externas y los trabajadores independientes sin acceso directo a la 
 Utilice las siguientes estrategias para proporcionar acceso a los recursos finales/aprobados:
 
 * Utilice la aplicación de escritorio si Asset Link no funciona.
-* Utilice [Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Experience Manager para distribuir los recursos de forma segura a socios externos
+* Utilice [Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Experience Manager para distribuir recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilice Access Control configurado en el Experience Manager y la infraestructura de red necesaria (por ejemplo, la lista de IP y VPN permitidas) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la interfaz de usuario web de Experience Manager para obtener recursos y cargar contenido nuevo en su DAM.
 

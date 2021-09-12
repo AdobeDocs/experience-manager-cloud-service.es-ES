@@ -1,12 +1,12 @@
 ---
 title: Vídeo en Dynamic Media
 description: Aprenda a trabajar con vídeo en Dynamic Media.
-feature: Perfiles de vídeo
+feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '9499'
+source-wordcount: '9497'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,6 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 >* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media y [Solución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 
 >
-
 
 
 1. **Cargue los** vídeos de Dynamic Media haciendo lo siguiente:
@@ -996,7 +995,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=en).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
