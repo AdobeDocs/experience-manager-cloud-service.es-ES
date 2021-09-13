@@ -1,12 +1,12 @@
 ---
 title: Administración de proyectos de traducción
 description: Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
-feature: Copiar idioma
+feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3863'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 1%
 # Administración de proyectos de traducción {#managing-translation-projects}
 
 Los proyectos de traducción permiten administrar la traducción de AEM contenido. Un proyecto de traducción es un tipo de AEM [proyecto](/help/sites-cloud/authoring/projects/overview.md) que contiene recursos que se deben traducir a otros idiomas. Estos recursos son las páginas y los recursos de las [copias de idioma](preparation.md) que se crean a partir del maestro de idioma.
+
+>[!TIP]
+>
+>Si es nuevo en traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es la ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia de traducción o AEM.
 
 Cuando se añaden recursos a un proyecto de traducción, se crea un trabajo de traducción para ellos. Los trabajos proporcionan comandos e información de estado que se utilizan para administrar los flujos de trabajo de traducción humana y traducción automática que se ejecutan en los recursos.
 

@@ -1,15 +1,15 @@
 ---
 solution: Experience Manager, Experience Manager Sites, Experience Manager as a Cloud Service
-sub-product: Creación de contenido en AEM as a Cloud Service
+sub-product: Authoring Content in AEM as a Cloud Service
 user-guide-title: Creación de contenido en AEM as a Cloud Service
 breadcrumb-title: Guía de creación
 user-guide-description: Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service.
-feature: 'Creación  '
+feature: Authoring
 role: User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 73%
+source-wordcount: '311'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 73%
       + [Guía rápida de introducción para la creación de páginas](authoring/getting-started/quick-start.md)
       + [Conceptos de creación](authoring/getting-started/concepts.md)
       + [Gestión básica](authoring/getting-started/basic-handling.md)
-      + [Búsqueda  ](authoring/getting-started/search.md)
+      + [Búsqueda](authoring/getting-started/search.md)
       + [Configuración del entorno de cuenta](authoring/getting-started/account-environment.md)
       + [Su bandeja de entrada  ](authoring/getting-started/inbox.md)
       + [Métodos abreviados del teclado](authoring/getting-started/keyboard-shortcuts.md)
@@ -94,6 +94,7 @@ ht-degree: 73%
          + [Prácticas recomendadas de MSM](administering/msm/best-practices.md)
          + [Solución de problemas y preguntas más frecuentes](administering/msm/troubleshooting.md)
       + Traducción {#translation}
+         + [Recorrido de documentación de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
          + [Traducción de contenido para sitios multilingües](administering/translation/overview.md)
          + [Preparación del contenido para su traducción](administering/translation/preparation.md)
          + [Administración de proyectos de traducción](administering/translation/managing-projects.md)

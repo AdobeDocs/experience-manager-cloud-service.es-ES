@@ -1,13 +1,13 @@
 ---
 title: Traducción y administrador de varios sitios
 description: Aprenda a reutilizar el contenido en su proyecto y a administrar sitios web multilingües en AEM.
-feature: Administración
+feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 2%
+source-wordcount: '410'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,10 @@ Las herramientas de traducción y administrador de varios sitios integradas de A
    * [Traducción de contenido para sitios multilingües](translation/overview.md)
 
 Estas dos funciones se pueden combinar para satisfacer las necesidades de los sitios web que sean [multinacionales y multilingües](#multinational-and-multilingual-sites).
+
+>[!TIP]
+>
+>Si es nuevo en traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es la ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia de traducción o AEM.
 
 ## Sitios multinacionales y multilingües {#multinational-and-multilingual-sites}
 
@@ -55,5 +59,5 @@ Para casos de uso más avanzados, también se pueden usar MSM entre maestros de 
 >Para todos los casos de uso, se recomienda leer las siguientes prácticas recomendadas:
 >
 >* [Prácticas recomendadas para MSM](msm/best-practices.md)
-* [Prácticas recomendadas para la traducción](translation/best-practices.md)
+>* [Prácticas recomendadas para la traducción](translation/best-practices.md)
 

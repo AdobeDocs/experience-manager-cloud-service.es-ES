@@ -2,10 +2,10 @@
 title: Proyectos
 description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 79%
+source-wordcount: '1259'
+ht-degree: 78%
 
 ---
 
@@ -83,7 +83,7 @@ El mosaico **Experiencias** permite añadir aplicación móvil, un sitio web o u
 
 ![Experiencias](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Los iconos indican qué tipo de experiencia se representa: sitio web, aplicación móvil o publicación. Para agregar experiencias, haga clic en el signo + o en **Agregar experiencia** y seleccione el tipo de experiencia.
+Los iconos indican qué tipo de experiencia se representa: sitio web, aplicación móvil o publicación. Para agregar experiencias, toque o haga clic en el protector inferior y pulse **Agregar experiencia** y seleccione el tipo de experiencia.
 
 ![Añadir una experiencia](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
