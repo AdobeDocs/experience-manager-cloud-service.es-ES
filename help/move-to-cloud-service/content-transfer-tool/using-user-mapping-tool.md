@@ -2,9 +2,9 @@
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
+source-git-commit: 3adbaf4735b65125178a24a223100d50e132967a
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1315'
 ht-degree: 2%
 
 ---
@@ -50,11 +50,10 @@ Se registrarán los siguientes casos específicos:
 
 * Cuando se realizan recargas de contenido, si el contenido no se transfiere porque no ha cambiado desde la transferencia anterior, los usuarios y grupos asociados con ese contenido tampoco se transferirán, aunque los usuarios y grupos hayan cambiado mientras tanto. Esto se debe a que los usuarios y grupos se migran junto con el contenido al que están asociados.
 
-* La ingesta fallará en los siguientes escenarios:
+* Si la instancia de Cloud Service de AEM de destino tiene un usuario con un nombre de usuario diferente pero la misma dirección de correo electrónico que uno de los usuarios de la instancia de AEM de origen y la Asignación de usuarios está habilitada, se escribirá un mensaje de error en los registros y el usuario de origen AEM no se transferirá, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
 
-1. Si la instancia de Cloud Service de AEM de destino tiene un usuario con un nombre de usuario diferente pero la misma dirección de correo electrónico que uno de los usuarios de la instancia de AEM de origen.
+* Si dos usuarios de la instancia de AEM de origen tienen la misma dirección de correo electrónico y la Asignación de usuarios está habilitada, se escribirá un mensaje de error en los registros y uno de los usuarios de origen AEM no se transferirá, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
 
-1. Si hay dos usuarios en la instancia de AEM de origen con nombres de usuario diferentes pero con la misma dirección de correo electrónico. AEM como Cloud Service no permite que dos usuarios tengan la misma dirección de correo electrónico.
 
 ## Uso de la herramienta de asignación de usuarios {#using-user-mapping-tool}
 
