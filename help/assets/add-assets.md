@@ -1,12 +1,12 @@
 ---
 title: Agregue los recursos digitales a [!DNL Adobe Experience Manager].
 description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] como a [!DNL Cloud Service].
-feature: Administración de recursos,Cargar
+feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2063'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ También puede optar por realizar un procesamiento adicional en los recursos car
 
 [!DNL Assets] proporciona los siguientes métodos de carga. Adobe recomienda comprender el caso de uso y la aplicabilidad de una opción de carga antes de utilizarla.
 
-| Método de carga | ¿Cuándo usar? | Personal principal |
+| Método de carga | Cuándo se usa? | Personal principal |
 |---------------------|----------------|-----------------|
 | [Interfaz de usuario de la consola Assets](#upload-assets) | Carga ocasional, facilidad de presionar y arrastrar, carga del buscador. No utilice para cargar un gran número de recursos. | Todos los usuarios |
 | [Cargar API](#upload-using-apis) | Para decisiones dinámicas durante la carga. | Desarrollador |
@@ -124,7 +124,7 @@ El importador masivo de recursos puede gestionar un gran número de recursos de 
 
 * Depurar recursos: Elimine los recursos que no sean necesarios en DAM. Considere la posibilidad de eliminar recursos no utilizados, obsoletos o duplicados. Esto reduce la transferencia de datos y la ingesta de recursos, lo que permite una ingesta más rápida.
 * Organizar recursos: Considere la posibilidad de organizar el contenido en un orden lógico, por ejemplo, por tamaño de archivo, formato de archivo, caso de uso o prioridad. En general, los archivos complejos de gran tamaño requieren más procesamiento. También puede considerar la ingesta de archivos grandes por separado utilizando la opción de filtrado de tamaño de archivo (que se describe a continuación).
-* Ingestas más grandes: Considere la posibilidad de dividir la ingesta en varios proyectos de ingesta masiva. Esto le permite ver el contenido antes y actualizar la ingesta según sea necesario. Por ejemplo, puede ingerir recursos con gran densidad de procesamiento durante las horas de menor actividad o de forma gradual en varios fragmentos. Sin embargo, puede ingerir recursos más pequeños y simples que no requieran mucho procesamiento de una sola vez.
+* Ingestas más grandes: Considere la posibilidad de dividir la ingesta en varios proyectos de ingesta masiva. Esto le permite ver el contenido antes y actualizar su ingesta según sea necesario. Por ejemplo, puede ingerir recursos con gran densidad de procesamiento durante las horas de menor actividad o de forma gradual en varios fragmentos. Sin embargo, puede ingerir recursos más pequeños y simples que no requieran mucho procesamiento de una sola vez.
 
 Para cargar un mayor número de archivos, utilice uno de los siguientes métodos. Además, consulte los [casos de uso y métodos](#upload-methods-comparison)
 
