@@ -2,10 +2,10 @@
 title: Guías del usuario de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación de Adobe Experience Manager as a Cloud Service
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 82%
+source-wordcount: '406'
+ht-degree: 76%
 
 ---
 
@@ -17,9 +17,8 @@ En esta página se muestran las guías del usuario para Experience Manager as a 
 
 | Guía del usuario | Descripción |
 |---|---|
-| [Información general](/help/overview/home.md) | Haga clic aquí si desea acceder a una descripción general de Experience Manager as a Cloud Service, incluida una introducción, terminología, etc. |
+| [Información general](/help/overview/home.md) | Para obtener información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología, arquitectura, etc., comience aquí. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
-| [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de Experience Manager as a Cloud Service, incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
 | [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |

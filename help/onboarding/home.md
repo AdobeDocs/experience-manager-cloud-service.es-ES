@@ -2,9 +2,9 @@
 title: Integración de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '521'
 ht-degree: 28%
 
 ---
@@ -35,9 +35,8 @@ El recorrido de incorporación que se muestra a continuación está diseñado pa
 | Guía del usuario | Descripción |
 |---|---|
 | [Página principal de Experience Manager as a Cloud Service](/help/landing/home.md) | Para obtener una descripción general de la documentación de Experience Manager as a Cloud Service, comience aquí. |
-| [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre [!DNL Experience Manager as a Cloud Service], incluida una introducción, terminología, etc. |
+| [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre [!DNL Experience Manager as a Cloud Service], incluida una introducción, terminología, arquitectura, etc. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de [!DNL Experience Manager as a Cloud Service], incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
-| [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de [!DNL Experience Manager as a Cloud Service], incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con [!DNL Experience Manager as a Cloud Service]. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear y administrar [!DNL Experience Manager Sites] como Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo utilizar y administrar [!DNL Experience Manager Assets as a Cloud Service]. |

@@ -2,10 +2,10 @@
 title: Conectores de Adobe Experience Manager as a Cloud Service
 description: Recursos de autoayuda y enlaces a documentación sobre conectores de Adobe Experience Manager as a Cloud Service Connectors
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 89%
+source-wordcount: '385'
+ht-degree: 84%
 
 ---
 
@@ -24,9 +24,8 @@ En esta página se muestran los recursos de autoayuda sobre conectores para Expe
 | Guía del usuario | Descripción |
 |---|---|
 | [Página principal de Experience Manager as a Cloud Service](/help/landing/home.md) | Para obtener una descripción general de la documentación de Experience Manager as a Cloud Service, comience aquí. |
-| [Información general](/help/overview/home.md) | Esta guía ofrece una introducción con información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología, etc. |
+| [Información general](/help/overview/home.md) | Esta guía proporciona información general introductoria sobre Experience Manager as a Cloud Service, incluida una introducción, terminología, arquitectura, etc. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
-| [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de Experience Manager as a Cloud Service, incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
 | [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |

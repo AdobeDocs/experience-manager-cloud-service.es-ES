@@ -2,10 +2,10 @@
 title: Compatibilidad
 description: Compatibilidad
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: 6569b98bafa98b3f85c55d95f5e6db0ec1de77f8
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 81%
+source-wordcount: '382'
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,6 @@ En esta página se muestran los recursos informativos que proporcionan informaci
 |---|---|
 | [Página principal de Experience Manager as a Cloud Service](/help/landing/home.md) | Para obtener una descripción general de la documentación de Experience Manager as a Cloud Service, comience aquí. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las novedades, las funciones en desuso y eliminadas, y los problemas conocidos. |
-| [Conceptos principales](/help/core-concepts/home.md) | Esta guía proporciona una introducción a los conceptos principales de Experience Manager as a Cloud Service, incluida la arquitectura del nuevo servicio. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |
 | [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |
