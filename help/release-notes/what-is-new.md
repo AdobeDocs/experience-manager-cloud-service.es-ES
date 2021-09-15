@@ -1,16 +1,15 @@
 ---
 title: ¿Qué hay de nuevo?
-description: 'Novedades de Adobe Experience Manager (AEM) as a Cloud Service. '
-translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+description: Novedades de Adobe Experience Manager (AEM) as a Cloud Service.
+exl-id: f854aaf8-e84d-4904-832f-f72433590920
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
 ---
 
-
-# ¿Qué hay de nuevo? {#what-is-new}
+# ¿Qué hay de nuevo?  {#what-is-new}
 
 <!-- For the pre-release of Adobe Experience Manager (AEM) as a Cloud Service everything is new. -->
 
@@ -18,7 +17,7 @@ Adobe Experience Manager (AEM) as a Cloud Service es una plataforma nativa de la
 
 Para obtener una descripción general del Adobe Experience Manager as a Cloud Service, consulte:
 * La [Introducción a AEM as a Cloud Service](/help/overview/introduction.md)
-* La [arquitectura](/help/core-concepts/architecture.md) de Adobe Experience Manager as a Cloud Service
+* La [arquitectura](/help/overview/architecture.md) de Adobe Experience Manager as a Cloud Service
 * Una [descripción general de AEM as a Cloud Service: novedades y diferencias](/help/overview/what-is-new-and-different.md)
 
 <!-- Please link to introduction or what's new of Sites. -->
