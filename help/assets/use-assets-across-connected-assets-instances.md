@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
+source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
 workflow-type: tm+mt
-source-wordcount: '3086'
-ht-degree: 25%
+source-wordcount: '2986'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,6 @@ La funcionalidad Recursos conectados admite el caso de uso anterior mediante la 
 Al editar páginas en [!UICONTROL Editor de páginas] como destino, los autores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación [!DNL Assets] diferente que actúa como fuente de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con capacidad [!DNL Sites] con otra implementación de [!DNL Experience Manager] con capacidad [!DNL Assets]. También puede utilizar imágenes de Dynamic Media en las páginas web de su sitio a través de los recursos conectados y aprovechar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de imagen y recorte inteligente.
 
 Para los autores [!DNL Sites], los recursos remotos están disponibles como recursos locales de solo lectura. La función admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en una implementación [!DNL Sites] en un solo uso, considere migrar los recursos de forma masiva.
-
-Puede configurar una conexión entre la implementación de Sitios y la implementación de Dynamic Media que permita que los autores de páginas web utilicen imágenes de Dynamic Media en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones remotas de Dynamic Media sigue siendo la misma. Esto le permite aprovechar la funcionalidad de Dynamic Media mediante la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
 
 ### Requisitos previos e implementaciones admitidas {#prerequisites}
 
@@ -148,24 +146,17 @@ Solo se recuperan las etiquetas de recursos remotos que tienen una etiqueta corr
 Utilice la configuración anterior para probar la experiencia de creación y comprender cómo se utiliza la funcionalidad. Utilice documentos o imágenes de su elección en la implementación remota de DAM.
 
 1. Vaya a la interfaz [!DNL Assets] en la implementación remota accediendo a **[!UICONTROL Assets]** > **[!UICONTROL Files]** desde el espacio de trabajo [!DNL Experience Manager]. También puede acceder a `https://[assets_servername_ams]:[port]/assets.html/content/dam` en un explorador. Cargue los recursos que desee.
-&lt;>
+
 1. En la implementación [!DNL Sites], en el activador de perfil en la esquina superior derecha, haga clic en **[!UICONTROL Suplantar como]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
-1. Abra una página web en **[!UICONTROL Navegación]** > **[!UICONTROL Sitios]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/<site page>` en un navegador para editar una página.
-=======
-1. En la implementación [!DNL Sites], en el activador de perfil en la esquina superior derecha, haga clic en **[!UICONTROL Suplantar como]**. Proporcione el nombre de usuario deseado y haga clic en **[!UICONTROL OK]**.
-1. Abra una página web desde **[!UICONTROL Navegación]** > **[Sitios]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/<page name>` en un navegador para editar una página.
->>>>>>>>>>Cambios almacenados
 
+1. Abra una página web `We.Retail` en **[!UICONTROL Sitios]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL es]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` en un navegador para editar una página.
 
-
-
-
-> 
-
-Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda de la página.
+   Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda de la página.
 
 1. Abra la pestaña [!UICONTROL Assets] y haga clic en **[!UICONTROL Iniciar sesión en los recursos conectados]**.
-1. Proporcione las credenciales adecuadas. Este usuario tiene permisos de creación en ambas implementaciones de [!DNL Experience Manager].
+
+1. Proporcione las credenciales (`ksaner` como nombre de usuario y `password` como contraseña). Este usuario tiene permisos de creación en ambas implementaciones de [!DNL Experience Manager].
+
 1. Busque el recurso que agregó a DAM. Los recursos remotos se muestran en el panel izquierdo. Filtre por imágenes o documentos y por tipos de documentos compatibles. Arrastre las imágenes a un componente `Image` y los documentos a un componente `Download`.
 
    Los recursos recuperados son de solo lectura en la implementación local [!DNL Sites]. Puede seguir utilizando las opciones proporcionadas por los componentes [!DNL Sites] para editar el recurso buscado. La edición por componentes no es destructiva.
@@ -183,10 +174,12 @@ Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izqu
 1. Al publicar una página, [!DNL Experience Manager] muestra una lista completa de los recursos que se utilizan en ella. Asegúrese de que los recursos remotos se recuperan correctamente en el momento de la publicación. Para comprobar el estado de cada recurso recuperado, consulte la interfaz de usuario [trabajos asincrónicos](/help/operations/asynchronous-jobs.md) .
 
    >[!NOTE]
-   Aunque no se recuperen uno o varios recursos remotos, la página se publicará. El componente que utiliza el recurso remoto se publica en blanco. El área de notificación [!DNL Experience Manager] muestra una notificación para los errores que se muestran en la página de trabajos asincrónicos.
+   >
+   >Aunque no se recuperen uno o varios recursos remotos, la página se publicará. El componente que utiliza el recurso remoto se publica en blanco. El área de notificación [!DNL Experience Manager] muestra una notificación para los errores que se muestran en la página de trabajos asincrónicos.
 
 >[!CAUTION]
-Una vez que se utilizan en una página web, cualquier persona que tenga permiso para acceder a la carpeta local puede buscar y utilizar los recursos remotos. Los recursos recuperados se almacenan en la carpeta local (`connectedassets` en el tutorial anterior). Los recursos también se pueden buscar y ver en el repositorio local mediante [!UICONTROL Buscador de contenido].
+>
+>Una vez que se utilizan en una página web, cualquier persona que tenga permiso para acceder a la carpeta local puede buscar y utilizar los recursos remotos. Los recursos recuperados se almacenan en la carpeta local (`connectedassets` en el tutorial anterior). Los recursos también se pueden buscar y ver en el repositorio local mediante [!UICONTROL Buscador de contenido].
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
