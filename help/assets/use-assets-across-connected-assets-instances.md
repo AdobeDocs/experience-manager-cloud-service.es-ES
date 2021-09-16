@@ -2,13 +2,13 @@
 title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL Sites]
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
-feature: Administración de activos,Recursos conectados,Distribución de activos,Usuarios y grupos
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 26%
+source-wordcount: '3046'
+ht-degree: 25%
 
 ---
 
@@ -20,9 +20,11 @@ La funcionalidad Recursos conectados admite el caso de uso anterior mediante la 
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
-Al editar páginas en [!UICONTROL Editor de páginas] como destino, los autores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación [!DNL Assets] diferente que actúa como fuente de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con capacidad [!DNL Sites] con otra implementación de [!DNL Experience Manager] con capacidad [!DNL Assets].
+Al editar páginas en [!UICONTROL Editor de páginas] como destino, los autores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación [!DNL Assets] diferente que actúa como fuente de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con capacidad [!DNL Sites] con otra implementación de [!DNL Experience Manager] con capacidad [!DNL Assets]. También puede utilizar imágenes de Dynamic Media en las páginas web de su sitio a través de los recursos conectados y aprovechar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de imagen y recorte inteligente.
 
 Para los autores [!DNL Sites], los recursos remotos están disponibles como recursos locales de solo lectura. La función admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en una implementación [!DNL Sites] en un solo uso, considere migrar los recursos de forma masiva.
+
+Puede configurar una conexión entre la implementación de Sitios y la implementación de Dynamic Media que permita que los autores de páginas web utilicen imágenes de Dynamic Media en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones remotas de Dynamic Media sigue siendo la misma. Esto le permite aprovechar la funcionalidad de Dynamic Media mediante la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
 
 ### Requisitos previos e implementaciones admitidas {#prerequisites}
 
@@ -147,7 +149,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 1. Vaya a la interfaz [!DNL Assets] en la implementación remota accediendo a **[!UICONTROL Assets]** > **[!UICONTROL Files]** desde el espacio de trabajo [!DNL Experience Manager]. También puede acceder a `https://[assets_servername_ams]:[port]/assets.html/content/dam` en un explorador. Cargue los recursos que desee.
 1. En la implementación [!DNL Sites], en el activador de perfil en la esquina superior derecha, haga clic en **[!UICONTROL Suplantar como]**. Utilice `ksaner` como nombre de usuario, seleccione la opción proporcionada y haga clic en **[!UICONTROL Aceptar]**.
-1. Abra una página web `We.Retail` en **[!UICONTROL Sitios]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL es]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` en un navegador para editar una página.
+1. Abra una página web en **[!UICONTROL Navegación]** > **[!UICONTROL Sitios]**. Edite la página. También puede acceder a `https://[aem_server]:[port]/editor.html/content/<site page>` en un navegador para editar una página.
 
    Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda de la página.
 
@@ -205,7 +207,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 * Los recursos locales no se sincronizan con los recursos originales en la implementación remota. Las ediciones, eliminaciones o revocaciones de permisos en la implementación de DAM no se propagan de forma descendente.
 * Los recursos locales son copias de solo lectura. [!DNL Experience Manager]Los componentes de realizan ediciones no destructivas en los recursos. No se permiten otras ediciones.
 * Los recursos recuperados localmente solo están disponibles para la creación. Los flujos de trabajo de actualización de recursos no se pueden aplicar y los metadatos no se pueden editar.
-* Cuando se utiliza [!DNL Dynamic Media] en páginas [!DNL Sites], el recurso original no se busca ni se almacena en la implementación local. El nodo `dam:Asset`, los metadatos y las representaciones generados por la implementación [!DNL Assets] se recuperan en la implementación [!DNL Sites].
+* Al utilizar [!DNL Dynamic Media] en páginas [!DNL Sites], el recurso original no se busca ni se almacena en la implementación local. El nodo `dam:Asset`, los metadatos y las representaciones generados por la implementación [!DNL Assets] se recuperan en la implementación [!DNL Sites].
 * Solo se admiten las imágenes y los formatos de documento enumerados. [!DNL Content Fragments] y no  [!DNL Experience Fragments] son compatibles.
 * [!DNL Experience Manager] no recupera los esquemas de metadatos. Significa que es posible que no se muestren todos los metadatos recuperados. Si el esquema se actualiza por separado en la implementación [!DNL Sites] , se muestran todas las propiedades de los metadatos.
 * Todos los autores [!DNL Sites] tienen permisos de lectura en las copias recuperadas, incluso si los autores no pueden acceder a la implementación remota de DAM.
