@@ -2,19 +2,22 @@
 title: Perfiles de metadatos
 description: Obtenga información sobre los perfiles de metadatos de los recursos. Obtenga información sobre cómo crear un perfil de metadatos y aplicarlo a los recursos de carpetas.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 20%
+source-wordcount: '1356'
+ht-degree: 18%
 
 ---
 
 # Perfiles de metadatos {#metadata-profiles}
 
 Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos de una carpeta. Crear un perfil de metadatos y aplicarlo a una carpeta. Cualquier recurso que cargue posteriormente en la carpeta heredará los metadatos predeterminados que haya configurado en el perfil de metadatos.
+
+Un concepto importante con respecto al uso de perfiles en recursos de Experience Manager es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos.
+Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, así como prácticas recomendadas en materia de metadatos, aproveche al máximo la recopilación de recursos digitales y asegúrese de que el perfil correcto procesa los archivos adecuados.
 
 ## Añadir un perfil de metadatos {#adding-a-metadata-profile}
 

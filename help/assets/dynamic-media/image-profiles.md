@@ -1,12 +1,12 @@
 ---
 title: Perfiles de imagen de Dynamic Media
 description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan ajustes para máscara de enfoque, recorte inteligente o muestra inteligente, o ambos. A continuación, aplique el perfil a una carpeta de recursos de imagen.
-feature: Administración de recursos,Perfiles de imagen,Representaciones
+feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 02af43ae7a8aa579f4679fbed4626718b895d453
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '2762'
+source-wordcount: '2757'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ Tiene dos opciones de recorte de imagen para elegir. También tiene la opción d
  <tbody>
   <tr>
    <td><strong>Opción</strong></td>
-   <td><strong>Cuándo se utiliza</strong></td>
+   <td><strong>Cuándo se usa</strong></td>
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 
 Consulte [Acerca de los perfiles de imagen y los perfiles de vídeo de Dynamic Media](/help/assets/dynamic-media/about-image-video-profiles.md).
 
-Consulte también [Prácticas recomendadas para organizar los recursos digitales para utilizar perfiles de procesamiento](/help/assets/dynamic-media/best-practices-for-file-management.md).
+Consulte también [Prácticas recomendadas para organizar los recursos digitales para utilizar perfiles de procesamiento](/help/assets/organize-assets.md).
 
 **Para crear perfiles de imagen de Dynamic Media:**
 

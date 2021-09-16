@@ -3,12 +3,12 @@ title: Administre recursos digitales
 description: Obtenga información sobre varios métodos de edición y administración de recursos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Administración de recursos,Publicación,Colaboración,Procesamiento de recursos
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4543'
 ht-degree: 11%
 
 ---
@@ -531,8 +531,6 @@ Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
    Para modificar el aspecto del archivo PDF procesado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** en el Administrador de configuración y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
