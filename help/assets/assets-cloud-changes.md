@@ -4,9 +4,9 @@ description: Cambios importantes en [!DNL Adobe Experience Manager Assets] in [!
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '997'
 ht-degree: 5%
 
 ---
@@ -64,6 +64,7 @@ Para realizar una validación completa del código y el proceso, incluido el pro
 | [Descargar informe](/help/assets/asset-reports.md) | No se admite. | Por ahora, el informe de descarga que informa del uso de los recursos no está disponible. Consulte el [informe de descarga en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html). |
 | Plantilla de sesión fotográfica del producto | No se admite. | Consulte [plantilla de sesión fotográfica del producto en [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html). |
 | Traducción inteligente | No se admite. | [La ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) traducción inteligente no es compatible en  [!DNL Experience Manager] as a  [!DNL Cloud Service]. |
+| WebDAV | No se admite. | Para obtener alternativas, consulte [[!DNL Creative Cloud] integración](/help/assets/aem-cc-integration-best-practices.md) o [Material de referencia para desarrolladores](/help/assets/developer-reference-material-apis.md). |
 | IU clásica | No se admite. | Solo está disponible la interfaz de usuario táctil. |
 
 >[!MORELIKETHIS]
