@@ -5,7 +5,7 @@ breadcrumb-title: recorridos de documentación de AEM
 user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
+source-git-commit: 737e03d283d5ae3d7df5b3c1ef85cf94e1e9cd45
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -60,13 +60,13 @@ Please note that all links to other guides need to be absolute references with l
       + [Traducir contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
       + [Publicar contenido traducido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
    + Recorrido de autor de contenido sin encabezado {#author}
-      + [recorrido del autor de contenido sin encabezado de AEM: información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
-      + [Creación para usuarios sin encabezado con AEM: una introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
-      + [Conceptos básicos de creación para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
-      + [Obtenga información sobre el uso de referencias en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
-      + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
+      + [recorrido del autor de contenido sin encabezado de AEM: información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.html)
+      + [Creación para usuarios sin encabezado con AEM: una introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.html)
+      + [Conceptos básicos de creación para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.html)
+      + [Obtenga información sobre el uso de referencias en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.html)
+      + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.html)
    + Recorrido de arquitectos de contenido sin encabezado {#architect}
-      + [Información general sobre el Recorrido de AEM arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
-      + [Modelado de contenido para usuarios sin encabezado con AEM: una introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
-      + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
-      + [Obtenga información sobre la creación de modelos de fragmento de contenido en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
+      + [Información general sobre el Recorrido de AEM arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.html)
+      + [Modelado de contenido para usuarios sin encabezado con AEM: una introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.html)
+      + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.html)
+      + [Obtenga información sobre la creación de modelos de fragmento de contenido en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.html)
