@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 5c5ddac1a3b948d1efbd06aa188ac6d8d897d37f
+source-git-commit: 2f811c5c6ccbb1d05aa1825dd110e0c9d5e6b219
 workflow-type: tm+mt
-source-wordcount: '2929'
-ht-degree: 40%
+source-wordcount: '3063'
+ht-degree: 38%
 
 ---
 
@@ -286,6 +286,23 @@ Complete los siguientes pasos:
 1. Haga clic en **Eliminar** del cuadro de diálogo **Eliminación del conjunto de migraciones** para confirmar la eliminación.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+
+
+## Ejecución de la herramienta de transferencia de contenido en una instancia de publicación {#running-ctt-on-publish}
+
+Se recomienda que, al mover contenido a una instancia de Publish, CTT se instale en la instancia de Publish de origen para mover contenido a la instancia de Publish de destino. Siga el enfoque recomendado como se describe a continuación:
+
+* Utilice la misma versión del CTT que se utilizó en la instancia de autor.
+
+* Solo es necesario migrar un nodo de publicación único. Debe eliminarse del equilibrador de carga antes de comenzar la extracción.
+
+* Al crear el conjunto de migración, utilice la URL del entorno AEMaaCS de autor.
+
+* Durante la ingesta para publicar, el nivel de publicación NO se reducirá (a diferencia del autor). Como precaución, evite cualquier operación de escritura iniciada por el usuario, como:
+
+   * Distribución de contenido de AEMaaCS Author para publicar en ese entorno
+   * Sincronización de usuarios entre instancias de publicación
+
 
 ## Solución de problemas {#troubleshooting}
 
