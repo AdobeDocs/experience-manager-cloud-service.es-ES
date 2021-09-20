@@ -2,16 +2,16 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
+source-git-commit: 8e978616bd1409c12e8a40eeeeb828c853faa408
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '2098'
 ht-degree: 2%
 
 ---
 
 # Buscar contenido e indexar {#indexing}
 
-## Cambios en AEM como Cloud Service {#changes-in-aem-as-a-cloud-service}
+## Cambios en AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
 Con AEM como Cloud Service, el Adobe está pasando de un modelo AEM centrado en instancias a una vista basada en servicios con contenedores de AEM n-x, impulsada por canalizaciones de CI/CD en Cloud Manager. En lugar de configurar y mantener los índices en instancias de AEM único, la configuración de Índice debe especificarse antes de una implementación. Los cambios de configuración en la producción claramente están rompiendo las políticas CI/CD. Lo mismo ocurre con los cambios de índice, ya que pueden afectar a la estabilidad y al rendimiento del sistema si no se especifica, se prueban y se reindexan antes de llevarlos a la producción.
 
@@ -87,7 +87,7 @@ Una vez añadida la nueva definición de índice, la nueva aplicación debe impl
 
 ## Administración de índices mediante implementaciones Blue-Green {#index-management-using-blue-green-deployments}
 
-### ¿Qué es la Administración de índices {#what-is-index-management}
+### ¿Qué es la administración de índices? {#what-is-index-management}
 
 La administración de índices consiste en agregar, quitar y cambiar índices. Cambiar la *definición* de un índice es rápido, pero la aplicación del cambio (a menudo denominada &quot;creación de un índice&quot; o, para los índices existentes, &quot;reindexación&quot;) requiere tiempo. No es instantánea: el repositorio debe analizarse para indizar los datos.
 
@@ -115,7 +115,7 @@ Las áreas de lectura y escritura del repositorio se comparten entre todas las v
 
 Durante el desarrollo o al utilizar instalaciones locales, los índices se pueden añadir, eliminar o cambiar durante la ejecución. Los índices se utilizan en cuanto están disponibles. Si se supone que un índice no debe utilizarse en la versión antigua de la aplicación todavía, el índice se crea normalmente durante un tiempo de inactividad programado. Lo mismo ocurre cuando se elimina un índice o se cambia un índice existente. Al eliminar un índice, deja de estar disponible en cuanto se elimina.
 
-### Administración de índices con implementación Blue-Green {#index-management-with-blue-green-deployment}
+### Administración De Índices Con Implementación Azul-Verde {#index-management-with-blue-green-deployment}
 
 Con las implementaciones en azul y verde, no hay tiempo de inactividad. Sin embargo, para la administración de índices, esto requiere que los índices solo los usen ciertas versiones de la aplicación. Por ejemplo, al añadir un índice en la versión 2 de la aplicación, no desea que lo utilice la versión 1 de la aplicación aún. Al contrario, cuando se elimina un índice: en la versión 1 sigue siendo necesario incluir un índice eliminado en la versión 2. Al cambiar una definición de índice, queremos que la versión antigua del índice solo se utilice para la versión 1, y la nueva versión del índice solo para la versión 2.
 
@@ -208,3 +208,12 @@ Si se va a eliminar un índice en una versión posterior de la aplicación, se p
 ```
 
 Si ya no es necesario tener una personalización de un índice predeterminado, debe copiar la definición de índice predeterminada. Por ejemplo, si ya ha implementado `damAssetLucene-8-custom-3`, pero ya no necesita las personalizaciones y desea volver al índice `damAssetLucene-8` predeterminado, debe agregar un índice `damAssetLucene-8-custom-4` que contenga la definición de índice de `damAssetLucene-8`.
+
+## Optimizaciones de índice
+
+Apache Jackrabbit Oak permite configuraciones de índice flexibles para gestionar de forma eficiente las consultas de búsqueda. Aunque las optimizaciones de índice pueden no desempeñar un papel importante en los proyectos pequeños o medianos, es imperativo que los proyectos con repositorios de contenido grandes y mayor velocidad de contenido realicen mejoras de eficiencia dirigidas para la indexación. Se deben evitar en la medida de lo posible los índices no optimizados y los índices de reserva. Se recomienda realizar pasos proactivos para garantizar que los índices adecuados y optimizados estén disponibles para todas las consultas de AEM. En ausencia de un índice adecuado, las consultas atraviesan todo el repositorio - estas consultas deben identificarse analizando los archivos de registro para optimizar las definiciones de índice en consecuencia, ya que una consulta de trasversal de repositorio es el método de consulta menos eficiente en AEM. Consulte [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) para obtener más información.
+
+### Índice de texto completo de Lucene en AEM como Cloud Service
+
+El índice de texto completo lucene2, indexa todo el contenido del repositorio de AEM de forma predeterminada y, por lo tanto, es extremadamente ineficiente debido a su tamaño dependiente del repositorio. El índice de texto completo de Lucene ha quedado obsoleto internamente y ya no se implementará en AEM como Cloud Service a partir de septiembre de 2021. Como tal, ya no se utiliza en el producto en AEM como Cloud Service y no debería ser necesario ejecutar el código de cliente. Para AEM entornos como Cloud Service con índices Lucene comunes, el Adobe está trabajando con los clientes de forma individual para un enfoque coordinado que compense por este índice y utilice índices mejores y optimizados. Si, contrariamente a todas las expectativas, se requiere un índice de texto completo para realizar consultas en código personalizado, la definición de índice analógica al índice Lucene debe crearse con un nombre diferente para evitar conflictos en el mantenimiento.
+Esta optimización no se aplica a otros entornos de AEM, que están alojados on-premise o administrados por Adobe Managed Services, a menos que Adobe indique lo contrario.
