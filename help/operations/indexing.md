@@ -2,9 +2,9 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2057'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,9 @@ A continuación se muestra una lista de los principales cambios en comparación 
 
 1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de creación de Cloud Manager y recibirán una notificación cuando la nueva versión esté lista para recibir tráfico.
 
-1. Limitaciones: actualmente, la administración de índices en AEM as a Cloud Service solo se admite para índices de tipo lucene.
+1. Restricciones:
+* Actualmente, la administración de índices en AEM como Cloud Service solo se admite para índices de tipo lucene.
+* Solo se admiten analizadores estándar (es decir, aquellos que se envían con el producto). Los analizadores personalizados no son compatibles.
 
 ## Usos {#how-to-use}
 
