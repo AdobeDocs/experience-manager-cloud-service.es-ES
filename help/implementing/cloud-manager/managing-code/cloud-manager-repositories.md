@@ -1,9 +1,9 @@
 ---
 title: Repositorios de Cloud Manager
 description: Repositorios de Cloud Manager
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,25 @@ Siga los pasos a continuación para ver y administrar repositorios en Cloud Mana
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Puede seleccionar el repositorio y hacer clic en las opciones de menú desde el extremo derecho de la tabla a **Copiar URL del repositorio**, **Ver y actualizar** o **Eliminar** su repositorio, como se muestra en la figura siguiente.
+1. Puede seleccionar el repositorio y hacer clic en las opciones de menú desde el extremo derecho de la tabla a **Copiar URL del repositorio** o **Ver y actualizar** o **Eliminar** su repositorio, como se muestra en la figura siguiente.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## Eliminación de un repositorio {#delete-repo}
+
+Siga los pasos a continuación para eliminar un repositorio en Cloud Manager:
+>[!NOTE]
+>Al eliminar un repositorio:
+>1. Hacer que el nombre del repositorio eliminado no se pueda utilizar para nuevos repositorios que se puedan crear en el futuro. En este caso se verá un mensaje de error como se muestra a continuación:
+   >*El nombre del repositorio debe ser único dentro de la organización.*
+>1. Hacer que el repositorio eliminado no esté disponible en Cloud Manager y, por lo tanto, no se puede vincular a una canalización.
+
+
+1. En la página **Program Overview** , haga clic en la pestaña **Repositorios** y vaya a la página **Repositorios**.
+
+1. Seleccione el repositorio y haga clic en las opciones de menú en el extremo derecho de la tabla. Haga clic en **Delete** para eliminar el repositorio, como se muestra en la figura siguiente.
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Compatibilidad con el submódulo Git {#git-submodule-support}
