@@ -1,13 +1,13 @@
 ---
 title: Notas de la versión 2021.5.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.5.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1355'
 ht-degree: 4%
 
 ---
-
 
 # Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -39,7 +39,7 @@ La siguiente versión (2021.6.0) se publicará el 28 de junio de 2021.
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
-* Pronto podrá verificar el contenido en un nuevo [Nivel de vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular el aspecto y la presentación finales de la experiencia como lo haría en el nivel de publicación. Esto lo habilita el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publicar o Vista previa. A continuación, se puede acceder a las experiencias en la vista previa a través de una URL dedicada. Después de la validación en la vista previa, el contenido se puede publicar desde Autor en Publicación como de costumbre. La activación del servicio de vista previa en entornos AEM as a Cloud Service se implementará gradualmente en las próximas semanas.
+* Pronto podrá verificar el contenido en un nuevo [Nivel de vista previa](/help/sites-cloud/authoring/fundamentals/previewing-content.md) para simular el aspecto y la impresión finales de la experiencia como lo haría en el nivel de publicación. Esto lo habilita el asistente de publicación administrada de AEM Sites, que ahora le permite elegir un destino de publicación entre Publicar o Vista previa. A continuación, se puede acceder a las experiencias en la vista previa a través de una URL dedicada. Después de la validación en la vista previa, el contenido se puede publicar desde Autor en Publicación como de costumbre. La activación del servicio de vista previa en entornos AEM as a Cloud Service se implementará gradualmente en las próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
 
@@ -68,35 +68,8 @@ La siguiente versión (2021.6.0) se publicará el 28 de junio de 2021.
 
 #### Novedades de Dynamic Media {#what-is-new-dm}
 
-* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md).
-
-   >[!NOTE]
-   >
-   >La cronología de versiones para las mejoras de imágenes inteligentes anteriores es:
-   >
-   >* América del Norte 24 de mayo de 2021 en NA,
-      >
-      >
-   * Europa, Oriente Medio y África 25 de junio de 2021,
-      >
-      >
-   * Asia-Pacífico 19 de julio de 2021.
-
-
+* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de red le permiten ofrecer imágenes de la mejor calidad de forma eficaz, en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) y [Optimización de imágenes con formatos de imagen de próxima generación WebP y AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en la entrega de Dynamic Media (modificador de URL fmt).
-
-   >[!NOTE]
-   >
-   >El calendario de versiones para la compatibilidad con AVIF es:
-   >
-   >* Norteamérica, 10 de mayo de 2021,
-      >
-      >
-   * Europa, Oriente Medio y África 24 de mayo de 2021,
-      >
-      >
-   * Asia-Pacífico 24 de junio de 2021.
-
 
 ## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
 

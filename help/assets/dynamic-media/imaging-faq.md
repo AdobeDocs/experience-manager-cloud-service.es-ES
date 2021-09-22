@@ -1,12 +1,12 @@
 ---
 title: Imágenes inteligentes
 description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que mejora el rendimiento y la participación.
-feature: Administración de recursos,Representaciones
+feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 771e6b021c4da68ac35437d45ea36bb38eae2f34
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '2613'
+source-wordcount: '2624'
 ht-degree: 1%
 
 ---
@@ -192,7 +192,7 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia.
+1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) de asistencia.
 1. Proporcione la siguiente información en su caso de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
@@ -282,3 +282,9 @@ Las imágenes inteligentes determinan si la conversión es beneficiosa o no. Dev
 * Cualquier optimización del RGPD del lado del visor funciona junto con la optimización del RGPD de imágenes inteligentes del lado del servidor y no genera imágenes de tamaño excesivo. En otras palabras, independientemente de dónde gestione el visor el RGPD, como la vista principal solo en un visor con zoom habilitado, no se activan los valores del RGPD de imágenes inteligentes del lado del servidor. Del mismo modo, siempre que los elementos del visualizador, como muestras y miniaturas, no tengan gestión de RGPD, se activa el valor RGPD de imágenes inteligentes del lado del servidor.
 
 Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+>[!MORELIKETHIS]
+>
+>* [Optimización de imágenes con los formatos de imagen de próxima generación WebP y AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
