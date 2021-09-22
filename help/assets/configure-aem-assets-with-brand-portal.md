@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2402'
 ht-degree: 12%
 
 ---
@@ -59,6 +59,8 @@ Puede activar Brand Portal al crear los entornos para su AEM Assets como instanc
 >Si tiene una configuración de nube de Brand Portal existente ([configurada manualmente mediante la Consola de desarrollador de Adobe](#manual-configuration)) para una organización de IMS (con organización1) y la instancia de AEM Assets as a [!DNL Cloud Service] está configurada para otra organización de IMS (org2-new), activar Brand Portal desde Cloud Manager restablece la organización de IMS de Brand Portal a `org2-new`. Aunque la configuración de nube configurada manualmente en `org1-existing` será visible en la instancia de autor de AEM Assets, pero ya no estará en uso después de activar Brand Portal desde Cloud Manager.
 >
 >Si la configuración de nube de Brand Portal existente y la instancia de AEM Assets as a0/> utilizan la misma organización de IMS (org1), solo debe activar Brand Portal desde Cloud Manager.[!DNL Cloud Service]
+>
+>No modifique ninguna configuración generada automáticamente.
 
 **Consulte también**:
 * [Agregar usuarios y funciones en AEM Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
@@ -243,7 +245,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. Haga clic en **[!UICONTROL Siguiente]**. 
 
-   En la pestaña **Account**, se crea la cuenta de Adobe IMS, que requiere las credenciales de cuenta de servicio que se generan en Adobe Developer Console. Mantenga esta página abierta por ahora.
+   En la pestaña **Account**, se crea la cuenta IMS de Adobe, que requiere las credenciales de cuenta de servicio que se generan en Adobe Developer Console. Mantenga esta página abierta por ahora.
 
    Abra una nueva pestaña y [cree una conexión de cuenta de servicio (JWT) en Adobe Developer Console](#createnewintegration) para obtener las credenciales y la carga útil JWT para configurar la cuenta de IMS.
 
