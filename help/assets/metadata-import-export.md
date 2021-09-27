@@ -2,12 +2,12 @@
 title: Importe y exporte metadatos de recursos de manera masiva
 description: Este artículo describe cómo importar y exportar metadatos de forma masiva.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '667'
 ht-degree: 12%
 
 ---
@@ -34,7 +34,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    | Tamaño del lote | Número de recursos de un lote para los que se van a importar metadatos. El valor predeterminado es 50. El valor máximo es 100. |
    | Separador de campos | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
    | Delimitador de varios valores | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada de Launch está en vigor para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos de XMP binarios). Al habilitar los flujos de trabajo de lanzamiento, el sistema se ralentiza. |
+   | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada está en vigor para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos de XMP binarios). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | Nombre de columna de ruta de activos | Define el nombre de columna del archivo CSV con recursos. |
 
 1. Haga clic **[!UICONTROL Import]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
