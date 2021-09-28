@@ -2,9 +2,9 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2880'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ Por este motivo, aunque los índices Oak son mutables en tiempo de ejecución, d
 >
 >Para obtener más información sobre la indexación en AEM como Cloud Service, consulte el documento [Content Search and Indexing](/help/operations/indexing.md).
 
-## Estructura del paquete recomendada {#recommended-package-structure}
+## Estructura del paquete recomendado {#recommended-package-structure}
 
 ![Estructura del paquete de proyecto del Experience Manager](assets/content-package-organization.png)
 
@@ -70,6 +70,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
       + `/apps/settings`
    + ACL (permisos)
       + Cualquier `rep:policy` para cualquier ruta en `/apps`
+   + [Secuencias de comandos agrupadas precompiladas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + El paquete `ui.config` contiene todas las [configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Carpeta organizativa que contiene definiciones de configuración de OSGi específicas del modo de ejecución
@@ -161,7 +162,7 @@ De forma predeterminada, Adobe Cloud Manager obtiene todos los paquetes producid
 >
 >Consulte la sección [Fragmentos XML de POM](#pom-xml-snippets) a continuación para obtener un fragmento completo.
 
-## Init. repo{#repo-init}
+## Punto de repo{#repo-init}
 
 Repo Init proporciona instrucciones, o secuencias de comandos, que definen estructuras JCR, desde estructuras de nodos comunes como árboles de carpetas, hasta usuarios, usuarios de servicios, grupos y definición de ACL.
 
@@ -234,7 +235,7 @@ Desglosar esta estructura de carpetas:
    >De forma predeterminada, las carpetas incrustadas de subpaquetes reciben el nombre del sufijo de `-packages`. Esto garantiza que el código de implementación y los paquetes de contenido **no se implementen** en las carpetas de destino de ningún subpaquete `/apps/<app-name>/...` que tenga como resultado un comportamiento de instalación destructivo y cíclico.
 
 + La carpeta de tercer nivel debe ser
-   `application`,  `content` o  `container`
+   `application`, `content` o `container`
    + La carpeta `application` contiene paquetes de código
    + La carpeta `content` contiene paquetes de contenido
    + La carpeta `container` contiene los [paquetes de aplicaciones adicionales](#extra-application-packages) que podría incluir la aplicación AEM.
@@ -256,7 +257,7 @@ Por ejemplo, una implementación que contenga AEM autor y publique paquetes espe
 >
 >Consulte la sección [Fragmentos XML de POM](#xml-embeddeds) a continuación para obtener un fragmento completo.
 
-### Definición de filtro del paquete de contenedor {#container-package-filter-definition}
+### Definición del filtro del paquete de contenedor {#container-package-filter-definition}
 
 Debido a la incrustación del código y los subpaquetes de contenido en el paquete de contenedor, las rutas de destino incrustadas deben agregarse al `filter.xml` del proyecto de contenedor para garantizar que los paquetes incrustados se incluyen en el paquete de contenedor cuando se crean.
 
@@ -282,7 +283,7 @@ Añadir dependencias Maven sigue las prácticas estándar de Maven, y la incrust
 >
 >Consulte la sección [Fragmentos XML de POM](#xml-3rd-party-maven-repositories) a continuación para obtener un fragmento completo.
 
-## Dependencias del paquete entre los `ui.apps` de `ui.content` paquetes {#package-dependencies}
+## Dependencias del paquete entre los `ui.apps` paquetes de `ui.content` {#package-dependencies}
 
 Para garantizar la correcta instalación de los paquetes, se recomienda establecer dependencias entre paquetes.
 
@@ -304,7 +305,7 @@ El caso simple define el paquete de contenido mutable `ui.content` para que depe
    + `ui.apps` no tiene dependencias
    + `ui.content` depende de  `ui.apps`
 
-### Dependencias complejas del paquete de implementación {#complex-deploxment-package-dependencies}
+### Dependencias de paquetes de implementación complejos {#complex-deploxment-package-dependencies}
 
 Las implementaciones complejas se expanden en el caso simple y establecen dependencias entre el contenido mutable correspondiente y los paquetes de código inmutables. Si es necesario, también se pueden establecer dependencias entre paquetes de código inmutables.
 
@@ -407,7 +408,7 @@ En todos los proyectos que generan un paquete, **excepto** en el proyecto de con
     ...
 ```
 
-### Init. repo{#snippet-repo-init}
+### Punto de repo{#snippet-repo-init}
 
 Las secuencias de comandos Repo Init que contienen las secuencias de comandos Repo Init se definen en la configuración de fábrica de OSGi `RepositoryInitializer` a través de la propiedad `scripts`. Tenga en cuenta que, dado que estas secuencias de comandos se definen dentro de las configuraciones de OSGi, se pueden crear ámbitos fácilmente mediante el modo de ejecución utilizando la semántica de carpeta habitual `../config.<runmode>`.
 
@@ -533,7 +534,7 @@ En `all/pom.xml`, agregue las siguientes `<embeddeds>` directivas a la declaraci
 ...
 ```
 
-### Definición de filtro del paquete de contenedor {#xml-container-package-filters}
+### Definición del filtro del paquete de contenedor {#xml-container-package-filters}
 
 En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`), **incluya** todas `-packages` las carpetas que contengan subpaquetes para implementar:
 
@@ -570,7 +571,7 @@ En el `pom.xml` del proyecto del reactor, agregue las directivas de repositorio 
 </repositories>
 ```
 
-### Dependencias del paquete entre los `ui.apps` de `ui.content` paquetes {#xml-package-dependencies}
+### Dependencias del paquete entre los `ui.apps` paquetes de `ui.content` {#xml-package-dependencies}
 
 En `ui.content/pom.xml`, agregue las siguientes `<dependencies>` directivas a la declaración del complemento `filevault-package-maven-plugin`.
 
