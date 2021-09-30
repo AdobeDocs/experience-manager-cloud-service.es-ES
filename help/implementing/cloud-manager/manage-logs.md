@@ -2,7 +2,7 @@
 title: 'Administrar registros: Cloud Service'
 description: 'Administrar registros: Cloud Service'
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: d44a4239205b88f05ab5ae9ef3263e6549f998fc
+source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 14%
@@ -37,11 +37,11 @@ Siga los pasos a continuación para descargar registros.
    ![](assets/download-preview.png)
 
 
-## Registros a través de la API {#logs-through-api}
+## Registros a través de API {#logs-through-api}
 
 Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
 
-Por ejemplo, para descargar los archivos de registro de un entorno específico, el comando sería algo más que las líneas de
+Por ejemplo, para descargar los archivos de registro de un entorno específico, el comando debería estar en las líneas de
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
