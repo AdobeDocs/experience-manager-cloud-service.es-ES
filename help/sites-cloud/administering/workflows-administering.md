@@ -1,13 +1,13 @@
 ---
 title: Administración de instancias de flujo de trabajo
 description: Obtenga información sobre cómo administrar instancias de flujo de trabajo
-feature: Administración
+feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 1%
+source-wordcount: '1118'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
 1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
-1. Seleccione **Instances** para mostrar la lista de instancias de flujo de trabajo en curso. En el carril superior, en la esquina izquierda, seleccione **Filters**. Como alternativa, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
+1. Seleccione **Instances** para mostrar la lista de instancias de flujo de trabajo en curso. En el carril superior, en la esquina izquierda, seleccione **Filters**. Alternativamente, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
 
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
@@ -167,3 +167,79 @@ Puede configurar el tamaño máximo de la bandeja de entrada configurando el **A
 | Nombre de propiedad (consola web) | Nombre de propiedad OSGi |
 |---|---|
 | Tamaño máximo de consulta de la bandeja de entrada | granite.workflow.inboxQuerySize |
+
+## Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente {#using-workflow-variables-customer-datastore}
+
+Los datos utilizados en flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. En esta sección se describe cómo configurar estas variables para el almacenamiento externo.
+
+### Establecer el modelo para que utilice el almacenamiento externo de metadatos {#set-model-for-external-storage}
+
+En el nivel del modelo de flujo de trabajo, se planea introducir un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Los metadatos de usuario no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
+
+Para activar esta función, debe habilitar el indicador de persistencia externa: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
+La propiedad *userMetadataPersistenceEnabled* se almacenará en el *nodo jcr:content* del modelo de flujo de trabajo. Este indicador se mantendrá en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
+
+La siguiente ilustración muestra que deben establecer el indicador en un flujo de trabajo.
+
+![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
+
+### API para metadatos en almacenamiento externo {#apis-for-metadata-external-storage}
+
+UserMetaDataPersistenceContext
+
+Los siguientes ejemplos muestran cómo utilizar la API.
+
+```
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+```
+
+UserMetaDataPersistenceProvider
+
+```
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+} 
+```
+
+
