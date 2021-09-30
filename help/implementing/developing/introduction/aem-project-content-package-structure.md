@@ -2,7 +2,7 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
+source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
 workflow-type: tm+mt
 source-wordcount: '2880'
 ht-degree: 13%
@@ -70,7 +70,7 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
       + `/apps/settings`
    + ACL (permisos)
       + Cualquier `rep:policy` para cualquier ruta en `/apps`
-   + [Secuencias de comandos agrupadas precompiladas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Secuencias de comandos agrupadas precompiladas](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + El paquete `ui.config` contiene todas las [configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Carpeta organizativa que contiene definiciones de configuración de OSGi específicas del modo de ejecución
