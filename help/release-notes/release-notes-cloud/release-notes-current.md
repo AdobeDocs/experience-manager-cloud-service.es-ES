@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
+source-git-commit: 29af6f91f5aeb6ad971a35637f1635e0b038a57f
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 3%
@@ -26,7 +26,7 @@ La siguiente sección describe las notas de la versión generales de la versión
 ## Fecha de la versión {#release-date}
 
 La fecha de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.8.0) es el 26 de agosto de 2021.
-La siguiente versión (2021.9.0) es el 30 de septiembre de 2021.
+La siguiente versión (2021.9.0) es el 4 de octubre de 2021.
 
 ## Vídeo de la versión {#release-video}
 
