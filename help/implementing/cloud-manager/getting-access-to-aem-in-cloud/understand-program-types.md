@@ -2,9 +2,9 @@
 title: Explicación de los tipos de programas y programas
 description: 'Explicación de los tipos de programas y programas: Cloud Services'
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -39,8 +39,8 @@ $ git clone {URL}
 Un usuario puede crear un **Simulador para pruebas** o un programa **Producción**.
 
 * Se crea un *Programa de producción* para habilitar el tráfico en directo en el momento adecuado en el futuro.
-Consulte Introducción a los programas de producción para obtener más información.
+Consulte [Introducción a los programas de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en) para obtener más información.
 
 
 * Generalmente, se crea un *Programa de espacio aislado* para que sirva a los fines de formación, ejecución de demostración, habilitación, POC o documentación. No está pensado para transportar tráfico en directo y tendrá restricciones que un programa de Producción no tendrá. Incluirá Sites y Assets y se entregará rellenando automáticamente con una rama de Git que incluya código de muestra, un entorno de desarrollo y una canalización que no sea de producción.
-Consulte Introducción a los programas de espacio aislado para obtener más información.
+Consulte [Introducción a los programas de espacio aislado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en) para obtener más información.

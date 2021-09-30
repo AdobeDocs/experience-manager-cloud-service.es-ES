@@ -2,9 +2,9 @@
 title: 'Introducción a los programas de espacio aislado '
 description: Introducción a los programas de espacio aislado
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ Los entornos creados en un Simulador para pruebas no están configurados para el
 
 Los programas de espacio aislado incluyen [!DNL Sites] y [!DNL Assets] y se rellenan automáticamente con un repositorio de Git, un entorno de desarrollo y una canalización que no es de producción.  El repositorio de Git se rellena con un proyecto de muestra basado en el tipo de archivo del proyecto AEM.
 
-Consulte Explicación de programas y tipos de programas para obtener más información sobre los tipos de programas.
+>[!NOTE]
+>Los dominios personalizados y las Listas de permitidos IP no están disponibles en los programas de simulación de pruebas.
+
+Consulte [Explicación de los programas y tipos de programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) para obtener más información sobre los tipos de programas.
 
 ### Atributos de los programas de Simulador para pruebas {#attributes-sandbox}
 
