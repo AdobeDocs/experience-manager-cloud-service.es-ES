@@ -2,12 +2,12 @@
 title: Referencias del desarrollador para [!DNL Assets]
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
 contentOwner: AG
-feature: API, API HTTP de Assets
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1430'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No se admite. No usar. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [API de Experience Manager/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava | [servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) de Sling | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(vista previa)_ |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [API de Experience Manager/Sling/](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava | [servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Servlets [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) de Sling | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(vista previa)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -141,7 +141,7 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de
 
 | Fields | Tipo | Requerido o no | Descripción |
 |---|---|---|---|
-| `fileName` | Cadena | Requerido | El nombre del recurso, tal como lo proporcionaron los datos de inicio. |
+| `fileName` | String | Requerido | El nombre del recurso, tal como lo proporcionaron los datos de inicio. |
 | `mimeType` | Cadena | Requerido | El tipo de contenido HTTP del binario, tal como proporcionaron los datos de inicio. |
 | `uploadToken` | Cadena | Requerido | Token de carga para el binario, tal como proporcionaban los datos de inicio. |
 | `createVersion` | Booleano | Opcional | Si `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] crea una nueva versión del recurso. |
@@ -185,7 +185,7 @@ Para la configuración del flujo de trabajo posterior al procesamiento, utilice 
 
 ## Compatibilidad de los pasos del flujo de trabajo en el flujo de trabajo posterior al procesamiento {#post-processing-workflows-steps}
 
-Si actualiza desde una versión anterior de [!DNL Experience Manager], puede utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior. Para obtener más información sobre las clases admitidas, consulte la [referencia de la API de Java o Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html).
+Si actualiza desde una versión anterior de [!DNL Experience Manager], puede utilizar los microservicios de recursos para procesar los recursos. Los microservicios de recursos nativos de la nube son más sencillos de configurar y usar. No se admiten algunos pasos de flujo de trabajo utilizados en el flujo de trabajo [!UICONTROL DAM Update Asset] en la versión anterior. Para obtener más información sobre las clases admitidas, consulte la [referencia de la API de Java o Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
 
 Los siguientes modelos técnicos de flujo de trabajo se sustituyen por microservicios de recursos o no hay compatibilidad disponible:
 

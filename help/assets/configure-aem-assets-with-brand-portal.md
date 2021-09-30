@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 12%
@@ -78,7 +78,7 @@ En este caso, el ID del inquilino es la organización de IMS.
 
 Siga estos pasos si no está seguro de la URL de Brand Portal:
 
-1. Inicie sesión en [Admin Console](http://adminconsole.adobe.com/) y vaya a **[!UICONTROL Productos]**.
+1. Inicie sesión en [Admin Console](https://adminconsole.adobe.com/) y vaya a **[!UICONTROL Productos]**.
 1. En el carril izquierdo, seleccione **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Haga clic en **[!UICONTROL Ir a Brand Portal]** para abrir directamente Brand Portal en el explorador.
 
@@ -230,7 +230,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. Inicie sesión en AEM Assets.
 1. En el panel **Herramientas**, vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**.
-1. En la página Configuraciones de IMS de Adobe, haga clic en **[!UICONTROL Crear]**. Se redirigirá a la página **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**. De forma predeterminada, se abre la pestaña **Certificate**.
+1. En la página Configuraciones de IMS de Adobe, haga clic en **[!UICONTROL Crear]**. Se redirigirá a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**. De forma predeterminada, se abre la pestaña **Certificate**.
 1. Seleccione **[!UICONTROL Adobe Brand Portal]** en la lista desplegable **[!UICONTROL Solución de nube]**.
 1. Seleccione la casilla **[!UICONTROL Create new certificate]** y especifique un **alias** para la clave pública. El alias sirve como nombre de la clave pública.
 1. Haga clic en **[!UICONTROL Crear certificado]**. A continuación, haga clic en **[!UICONTROL OK]** para generar la clave pública.
@@ -245,7 +245,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. Haga clic en **[!UICONTROL Siguiente]**. 
 
-   En la pestaña **Account**, se crea la cuenta IMS de Adobe, que requiere las credenciales de cuenta de servicio que se generan en Adobe Developer Console. Mantenga esta página abierta por ahora.
+   En la pestaña **Account**, se crea la cuenta de Adobe IMS, que requiere las credenciales de cuenta de servicio que se generan en Adobe Developer Console. Mantenga esta página abierta por ahora.
 
    Abra una nueva pestaña y [cree una conexión de cuenta de servicio (JWT) en Adobe Developer Console](#createnewintegration) para obtener las credenciales y la carga útil JWT para configurar la cuenta de IMS.
 

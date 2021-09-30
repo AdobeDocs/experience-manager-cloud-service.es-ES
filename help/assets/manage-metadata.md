@@ -3,12 +3,12 @@ title: Administración de metadatos de recursos digitales
 description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Administración de recursos,Metadatos
+feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1854'
 ht-degree: 3%
 
 ---
@@ -183,7 +183,7 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * Álbum - [!DNL Adobe Photoshop Album].
 * CQ - Utilizado por [!DNL Experience Manager Assets].
 * DAM - Utilizado por [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
+* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -231,5 +231,5 @@ La creación de flujos de trabajo impulsados por metadatos ayuda a automatizar a
 >[!MORELIKETHIS]
 >
 >* [Metadatos XMP](xmp-metadata.md)
-* [Edición o adición de metadatos](meta-edit.md)
+>* [Edición o adición de metadatos](meta-edit.md)
 
