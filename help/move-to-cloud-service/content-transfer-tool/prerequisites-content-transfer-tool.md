@@ -2,9 +2,9 @@
 title: Requisitos previos para la herramienta de transferencia de contenido
 description: Requisitos previos para la herramienta de transferencia de contenido
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ Revise todas las consideraciones enumeradas a continuación:
 | Tamaño total del índice | Actualmente se admite el tamaño total del índice de 25 GB como máximo. Cree un ticket de asistencia técnica con el Servicio de atención al cliente de Adobe para analizar las opciones de tamaño de índice por encima de este límite. |
 | Longitud del nombre del nodo | La longitud del nombre de un nodo debe ser de 150 bytes o menos. Los nombres de nodo superiores a 150 bytes deben abreviarse para que tengan un valor &lt;= 150 bytes para que el almacén de nodos del documento los admita en AEM como Cloud Service. Las entradas fallarán si no se corrigen estos nombres de nodo largos. |
 | Contenido en rutas inmutables | La herramienta de transferencia de contenido no se puede usar para migrar contenido a rutas inmutables. Para transferir contenido de `/etc` solo se permite seleccionar ciertas `/etc` rutas, pero solo para admitir [AEM Forms en AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets). Para todos los demás casos de uso, consulte [Reestructuración común de repositorios](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) para obtener más información sobre la reestructuración de repositorios. |
+| Valor de propiedad de nodo en MongoDB | Los valores de propiedad de nodo almacenados en MongoDB no pueden superar los 16 MB. Esto es aplicado por MongoDB. Las entradas fallarán si hay valores de propiedad superiores a este límite. Antes de ejecutar una extracción, ejecute este script [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar). Revise todos los valores de propiedad grandes y valide si son necesarios. Los que superen los 16 MB deberán convertirse a valores binarios. |
 
 ## Siguientes pasos {#whats-next}
 
