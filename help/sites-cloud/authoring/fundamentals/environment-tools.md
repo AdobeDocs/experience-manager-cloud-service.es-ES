@@ -1,18 +1,17 @@
 ---
 title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 99%
+source-wordcount: '2154'
+ht-degree: 98%
 
 ---
 
-
 # Herramientas y entorno de creación {#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
 
 ## Administración del sitio {#managing-your-site}
 
@@ -22,7 +21,7 @@ Por ejemplo, la vista de columna:
 
 ![Vista de columna](/help/sites-cloud/authoring/assets/column-view.png)
 
-## Editar el contenido de una página {#editing-page-content}
+## Edición del contenido de una página {#editing-page-content}
 
 Puede editar una página con el editor. Por ejemplo:
 
@@ -36,7 +35,7 @@ Puede editar una página con el editor. Por ejemplo:
 >
 >Si lo desea, puede omitir la visita y repetirla cuando le convenga seleccionando una opción del menú **Información de página**.
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
@@ -252,7 +251,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 * [Iniciar flujo de trabajo](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [Bloquear página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [Publicar página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
-* [Cancelar la publicación de página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
+* [Cancelar la publicación de la página](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [Editar plantilla](/help/sites-cloud/authoring/features/templates.md)
 * [Ver como aparece publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [Ver en administración](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
@@ -261,7 +260,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
-## Modos de página    {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página, existen modos que permiten acciones diferentes:
 
@@ -270,6 +269,7 @@ Al editar una página, existen modos que permiten acciones diferentes:
 * [Segmentación:](/help/sites-cloud/authoring/personalization/targeted-content.md) aumente la relevancia del contenido mediante la segmentación y efectuando mediciones en todos los canales.
 * [Deformación de tiempo](/help/sites-cloud/authoring/features/page-versions.md#timewarp): le permite ver el estado de las páginas en un punto específico en el tiempo.
 * [Estado de Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): le permite echar un vistazo al estado de la Live Copy y ver los componentes que se han heredado o no.
+* [Modo de desarrollador](/help/implementing/developing/tools/developer-mode.md)
 * [Vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): se utiliza para ver la página tal como se mostrará en el entorno de publicación; o para navegar mediante vínculos en el contenido. 
 * [Anotar:](/help/sites-cloud/authoring/fundamentals/annotations.md) se utiliza para añadir o ver anotaciones en la página.
 
@@ -287,12 +287,11 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >
 
 
-
 ## Selección de la ruta {#path-selection}
 
 A menudo, durante la creación, es necesario seleccionar otro recurso, como cuando se define un vínculo a otra página o recurso o bien cuando se selecciona una imagen. Para poder seleccionar una ruta con facilidad, los [campos de rutas](#path-fields) ofrecen la opción de completado automático y el [navegador de rutas](#path-browser) permite una selección más sólida.
 
-### Campos de rutas    {#path-fields}
+### Campos de rutas   {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-cloud/authoring/fundamentals/components.md).
 
