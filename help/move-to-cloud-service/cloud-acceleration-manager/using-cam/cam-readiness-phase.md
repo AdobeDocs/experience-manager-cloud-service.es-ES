@@ -2,9 +2,9 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 2436d7a7a0127219f3d7cb383b857431ba2a2bb4
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '751'
 ht-degree: 5%
 
 ---
@@ -66,6 +66,19 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
    >[!NOTE]
    >Al cargar un nuevo informe, se restablecen todas las evaluaciones.
+
+1. Haga clic en el icono **Vista previa de impresión**, como se muestra a continuación, para facilitar el uso compartido.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha con los informes mostrados en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato PDF para facilitar el uso compartido.
+
+   >[!IMPORTANT]
+   >* Se recomienda la opción **Guardar como PDF** y se admite para la funcionalidad anterior.
+   >* Si se utiliza el botón de impresión del navegador, se imprimirá una sola página.
+
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### Revisión del informe de Análisis de prácticas recomendadas {#analysis-report}
 

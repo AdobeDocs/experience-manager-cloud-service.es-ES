@@ -2,10 +2,10 @@
 title: Uso del Analizador de prácticas recomendadas
 description: Uso del Analizador de prácticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 41%
+source-wordcount: '2522'
+ht-degree: 42%
 
 ---
 
@@ -92,18 +92,6 @@ Mientras el informe se está regenerando, muestra el progreso en términos de po
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. Haga clic en el icono **Vista previa de impresión**, como se muestra a continuación, para facilitar el uso compartido.
-
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha con los informes mostrados en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato PDF para facilitar el uso compartido.
-
-   >[!IMPORTANT]
-   * Se recomienda la opción **Guardar como PDF** y se admite para la funcionalidad anterior.
-   * Si se utiliza el botón de impresión del navegador, se imprimirá una sola página.
-
-
-   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Uso de filtros en el informe de Best Practices Analyzer {#bpa-filters}
