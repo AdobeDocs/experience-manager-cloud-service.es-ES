@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] como Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1722'
 ht-degree: 3%
 
 ---
@@ -179,19 +179,35 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 * En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
 
+
+## Cloud Acceleration Manager {#cam}
+
+### Fecha de la versión {#release-date-october-cam}
+
+La fecha de versión de Cloud Acceleration Manager es el 4 de octubre de 2021.
+
+### Novedades {#what-is-new-cam}
+
+* Cloud Acceleration Manager ahora proporciona a los usuarios la capacidad de ver los informes de BPA en una vista previa imprimible, lo que permite imprimir o imprimir en formato PDF de forma sencilla para facilitar el uso compartido. Consulte los pasos 6 y 7 en [Uso de la tarjeta de análisis de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+
+
 ## Herramienta de transferencia de contenido {#content-transfer-tool}
 
 ### Fecha de la versión {#release-date-ctt-latest}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.5.6 es el 11 de agosto de 2021.
+La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es el 4 de octubre de 2021.
 
-### Corrección de errores {#bug-fixes-ctt}
+### Novedades {#what-is-new-ctt}
 
-* En algunos casos, no todos los usuarios se migraron a la instancia de destino. Para obtener esta corrección, se requiere CTT v1.5.6 junto con aem-ethos-tools 1.2.354 o una versión posterior en el AEM de destino como instancia de Cloud Service.
+* Se ha mejorado la asignación de usuarios con una experiencia de usuario simplificada, que incluye las siguientes funciones que se enumeran a continuación. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+   * Probar la conexión a la API de administración de usuarios antes de ejecutar la asignación de usuarios
+   * Omita correctamente los errores y continúe con la actividad de Asignación de usuarios
+   * La asignación de usuarios ya no falla si el token de acceso caduca (después de 24 horas). La asignación de usuarios se puede volver a ejecutar desde donde se detuvo por última vez.
 
-* El botón **Stop Ingestion** se deshabilitaba durante la ingesta a la instancia de publicación. Esto no es necesario porque no hay ningún paso de restauración de mongo durante la ingesta de Publicar.
+* Para aumentar la solidez de CTT, el contenido se puede ingerir a instancias de Autor o de Publicación a la vez.
 
-* CTT no limpió el directorio `/tmp` después de una extracción correcta. Esto a veces provocaba problemas de espacio en disco.
+* Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
+
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
