@@ -2,10 +2,10 @@
 title: Uso del Analizador de prácticas recomendadas
 description: Uso del Analizador de prácticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
+source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 42%
+source-wordcount: '2591'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -91,6 +91,19 @@ Puede forzar el BPA para que borre su caché y vuelva a generar el informe hacie
 Mientras el informe se está regenerando, muestra el progreso en términos de porcentaje completado como se muestra en la imagen siguiente.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+1. Haga clic en el icono **Vista previa de impresión**, como se muestra a continuación, para facilitar el uso compartido.
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha con los informes mostrados en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato PDF para facilitar el uso compartido.
+
+   >[!IMPORTANT]
+   * Se recomienda la opción **Guardar como PDF** y se admite para la funcionalidad anterior.
+   * Si se utiliza el botón de impresión del navegador, se imprimirá una sola página.
+
+
+   ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### Uso de filtros en el informe de Best Practices Analyzer {#bpa-filters}
