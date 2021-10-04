@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 85%
+source-wordcount: '1769'
+ht-degree: 82%
 
 ---
 
@@ -79,6 +79,10 @@ Si está editando una página, puede publicarla directamente desde el editor.
 >[!NOTE]
 >
 >La publicación desde el editor no es profunda; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
+
+>[!NOTE]
+>
+>Las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se pueden publicar. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Publicar desde la consola {#publishing-from-the-console}
 
@@ -217,6 +221,10 @@ De forma [similar a la publicación](#publishing-pages), se puede cancelar la p
 ### Cancelación de la publicación desde el editor     {#unpublishing-from-the-editor}
 
 Si desea cancelar la publicación de una página que está editando, seleccione **Cancelar publicación de página** en el menú **Información de página**, de un modo similar a como haría para [publicar la página](#publishing-from-the-editor).
+
+>[!NOTE]
+>
+>No se puede cancelar la publicación de las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 

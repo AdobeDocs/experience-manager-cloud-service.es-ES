@@ -2,10 +2,10 @@
 title: 'Edición de las propiedades de página  '
 description: Permite definir las propiedades de una página
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 58%
+source-wordcount: '1966'
+ht-degree: 55%
 
 ---
 
@@ -101,14 +101,9 @@ Las propiedades se distribuyen entre varias pestañas.
    * **Redirigir** : indica la página a la que esta página debe redirigir automáticamente
    * **Diseño** : indica si la página se muestra u oculta en la navegación por la página del sitio resultante
    * **Alias** : Especifica un alias que se utilizará con esta página
-
-   >[!NOTE]
-   >
-   >Alias establece la propiedad `sling:alias` para definir un nombre de alias para el recurso (esto solo afecta al recurso, no a la ruta).
-   >
-   >Por ejemplo: si define un alias de `latin-lang` para el nodo `/content/we-retail/spanish`, se puede acceder a esta página mediante `/content/we-retail/latin-language`.
-   >
-   >Para obtener más información, consulte Nombres de páginas localizados en Procedimientos recomendados para la administración de direcciones URL y SEO.
+      * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, también se puede acceder a esta página a través de `/content/wknd/us/en/magazine/private`
+      * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
+      * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. [Las ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
