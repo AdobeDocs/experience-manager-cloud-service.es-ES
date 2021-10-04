@@ -1,9 +1,9 @@
 ---
 title: Ampliación [!DNL Adobe Experience Manager] como Cloud Service mediante el Creador de aplicaciones para desarrolladores de Adobe.
 description: Ampliación [!DNL Adobe Experience Manager] como Cloud Service mediante el Creador de aplicaciones para desarrolladores de Adobe.
-source-git-commit: 32580d3e45747b71e959b137e99fdb8e64cdf4bb
+source-git-commit: 7b8d214ebba9e8dfc89f7787b0d442752650210e
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ App Builder (anteriormente conocido como Project Firefly) está disponible para 
 
 >[!NOTE]
 >
-> Para AEM clientes de 6.5 que deseen aprovechar el Creador de aplicaciones, vaya a [Ampliación de Adobe Experience Manager como Cloud Service mediante el Creador de aplicaciones para desarrolladores de Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> Para AEM clientes de 6.5 que deseen aprovechar el Creador de aplicaciones, vaya a [Ampliación de Adobe Experience Manager 6.5 mediante el Creador de aplicaciones para desarrolladores de Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Arquitectura {#architecture}
 
