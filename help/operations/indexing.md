@@ -2,9 +2,9 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
+source-git-commit: 8df5e800cd08fa0eb08edca06e98786a1864db84
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2139'
 ht-degree: 2%
 
 ---
@@ -219,3 +219,9 @@ Apache Jackrabbit Oak permite configuraciones de índice flexibles para gestiona
 
 El índice de texto completo `/oak:index/lucene-2` puede llegar a ser muy grande porque indexa todos los nodos del repositorio de AEM de forma predeterminada. El índice de texto completo de Lucene ha quedado obsoleto internamente y ya no se implementará en AEM como Cloud Service a partir de septiembre de 2021. Como tal, ya no se utiliza en el producto en AEM como Cloud Service y no debería ser necesario ejecutar el código de cliente. Para AEM entornos como Cloud Service con índices Lucene comunes, el Adobe está trabajando con los clientes de forma individual para un enfoque coordinado que compense por este índice y utilice índices mejores y optimizados. Si este índice es necesario para consultas personalizadas, como solución temporal, se debe crear una copia de este índice, utilizando un nombre diferente, por ejemplo, `/oak:index/acme.lucene-1-custom-1`, como se describe [aquí](/help/operations/indexing.md).
 Esta optimización no se aplica a otros entornos de AEM, que están alojados on-premise o administrados por Adobe Managed Services, a menos que Adobe indique lo contrario.
+
+## Optimizaciones de consultas
+
+La herramienta **Rendimiento de la consulta** le permite observar consultas JCR populares y lentas. Además, puede analizar consultas y mostrar información diversa sobre, especialmente si se está utilizando un índice para esta consulta o no.
+
+A diferencia de AEM locales, AEM como Cloud Service ya no muestra la herramienta **Rendimiento de la consulta** en la interfaz de usuario. Ahora está disponible a través de Developer Console (en Cloud Manager) en la pestaña **Consultas**.
