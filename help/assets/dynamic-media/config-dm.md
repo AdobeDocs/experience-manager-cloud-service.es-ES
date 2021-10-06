@@ -3,9 +3,9 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 6933f053e11320d8201922723879983084c52209
+source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
 workflow-type: tm+mt
-source-wordcount: '4057'
+source-wordcount: '4054'
 ht-degree: 4%
 
 ---
@@ -20,8 +20,8 @@ En el diagrama de arquitectura siguiente se describe cómo funciona Dynamic Medi
 
 Con la nueva arquitectura, Experience Manager es responsable de los recursos de origen principales y se sincroniza con Dynamic Media para el procesamiento y la publicación de recursos:
 
-1. Cuando el recurso de origen principal se carga en Adobe Experience Manager como Cloud Service, se replica en Dynamic Media. En este punto, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
-1. Una vez generadas las representaciones, el Experience Manager como Cloud Service puede acceder y previsualizar de forma segura las representaciones de Dynamic Media remotas (no se envían binarios al Experience Manager como una instancia de Cloud Service).
+1. Cuando el recurso de origen principal se carga en Adobe Experience Manager as a Cloud Service, se replica en Dynamic Media. En este punto, Dynamic Media gestiona todo el procesamiento de recursos y la generación de representaciones, como la codificación de vídeo y las variantes dinámicas de una imagen.
+1. Una vez generadas las representaciones, el Experience Manager as a Cloud Service puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se envían binarios a la instancia as a Cloud Service del Experience Manager).
 1. Una vez que el contenido está listo para publicarse y aprobarse, se déclencheur al servicio de Dynamic Media para enviar contenido a los servidores de entrega y almacenar en caché el contenido en la CDN (red de entrega de contenido).
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
@@ -31,11 +31,11 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 >La siguiente lista de funciones requiere que utilice la CDN predeterminada incluida con Adobe Experience Manager - Dynamic Media. Ninguna otra CDN personalizada es compatible con estas funciones.
 >
 >* [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md)
-* [Invalidación de caché](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Protección de Hotlink](/help/assets/dynamic-media/hotlink-protection.md)
-* [Entrega de contenido HTTP/2](/help/assets/dynamic-media/http2faq.md)
-* Redireccionamiento de URL a nivel de CDN
-* Akamai ChinaCDN (para una entrega óptima en China)
+>* [Invalidación de caché](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [Protección de Hotlink](/help/assets/dynamic-media/hotlink-protection.md)
+>* [Entrega de contenido HTTP/2](/help/assets/dynamic-media/http2faq.md)
+>* Redireccionamiento de URL a nivel de CDN
+>* Akamai ChinaCDN (para una entrega óptima en China)
 
 
 <!-- OBSOLETE CONTENT
@@ -62,10 +62,10 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
-1. En Experience Manager como Cloud Service, seleccione el logotipo del Experience Manager como Cloud Service para acceder a la consola de navegación global.
+1. En as a Cloud Service de Experience Manager, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global.
 1. A la izquierda de la consola, seleccione el icono Herramientas y vaya a **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]** (no seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**). A continuación, seleccione **[!UICONTROL Crear]**.
-1. En la página **[!UICONTROL Crear configuración de Dynamic Media]**, introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña y, a continuación, seleccione su región. Esta información se proporciona por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el Servicio de atención al cliente de Adobe si no ha recibido este correo electrónico.
+1. En la página **[!UICONTROL Crear configuración de Dynamic Media]**, introduzca un título, la dirección de correo electrónico de la cuenta de Dynamic Media y la contraseña y, a continuación, seleccione su región. Esta información se proporciona por Adobe en el correo electrónico de aprovisionamiento. Póngase en contacto con el servicio de atención al cliente de Adobe si no ha recibido este correo electrónico.
 1. Seleccione **[!UICONTROL Connect to Dynamic Media]**.
 1. En el cuadro de diálogo **[!UICONTROL Cambiar contraseña]**, en el campo **[!UICONTROL Nueva contraseña]**, introduzca una nueva contraseña que consista en 8-25 caracteres. La contraseña debe contener al menos una de las siguientes opciones:
 
@@ -92,13 +92,16 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | Empresa | Nombre de la cuenta de Dynamic Media. Es posible que tenga varias cuentas de Dynamic Media para diferentes submarcas, divisiones o entornos de ensayo/producción. |
    | Ruta de carpeta raíz de la empresa | Ruta de la carpeta raíz de su empresa. |
-   | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**- Cuando se cargan los recursos, el sistema los incorpora y proporciona la URL/Incrustar al instante. No es necesario que el usuario intervenga para publicar recursos.<br>**[!UICONTROL En la activación]** : debe publicar explícitamente el recurso primero antes de proporcionar un vínculo URL/incrustado.<br>**[!UICONTROL Publicación selectiva ]**: los recursos se publican automáticamente solo para vista previa segura. También pueden publicarse explícitamente en Experience Manager como Cloud Service sin publicarse en DMS7 para su envío en el dominio público. En el futuro, esta opción pretende publicar recursos en Experience Manager como Cloud Service y publicar recursos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en Experience Manager como Cloud Service para la vista previa; esos mismos recursos no se publican en DMS7 para su envío en el dominio público. |
-   | Servidor de previsualización segura | Permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager como Cloud Service puede acceder y previsualizar de forma segura las representaciones de Dynamic Media remotas (no se envían binarios al Experience Manager como instancia de Cloud Service).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe recomienda que deje esta configuración como se ha especificado. |
+   | Publicación de recursos | Puede elegir entre las tres opciones siguientes:<br>**[!UICONTROL Inmediatamente ]**- Cuando se cargan los recursos, el sistema los incorpora y proporciona la URL/Incrustar al instante. No es necesario que el usuario intervenga para publicar recursos.<br>**[!UICONTROL En la activación]** : debe publicar explícitamente el recurso primero antes de proporcionar un vínculo URL/incrustado.<br>**[!UICONTROL Publicación selectiva ]**: los recursos se publican automáticamente solo para vista previa segura. También pueden publicarse explícitamente en el Experience Manager as a Cloud Service sin publicarse en DMS7 para su envío en el dominio público. En el futuro, esta opción pretende publicar recursos en un Experience Manager as a Cloud Service y publicar recursos en Dynamic Media, mutuamente excluyentes entre sí. Es decir, puede publicar recursos en DMS7 para que pueda utilizar funciones como Recorte inteligente o representaciones dinámicas. O bien, puede publicar recursos exclusivamente en un Experience Manager as a Cloud Service para la vista previa; esos mismos recursos no se publican en DMS7 para su envío en el dominio público. |
+   | Servidor de previsualización segura | Permite especificar la ruta URL del servidor de vista previa de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager as a Cloud Service puede acceder y previsualizar de forma segura las representaciones remotas de Dynamic Media (no se devuelven binarios a la instancia as a Cloud Service del Experience Manager).<br>A menos que tenga una disposición especial para utilizar el servidor de su propia empresa o un servidor especial, Adobe recomienda que deje esta configuración como se ha especificado. |
    | Sincronizar todo el contenido | Seleccionado de forma predeterminada. Anule la selección de esta opción si desea incluir o excluir selectivamente recursos de la sincronización con Dynamic Media. Al anular la selección de esta opción, puede elegir entre los dos modos de sincronización de Dynamic Media siguientes:<br>**[!UICONTROL Modo de sincronización de Dynamic Media]**<br>**[!UICONTROL Habilitar de forma predeterminada ]**: la configuración se aplica a todas las carpetas de forma predeterminada, a menos que marque una carpeta específicamente para la exclusión. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Deshabilitado de forma predeterminada]** : la configuración no se aplica a ninguna carpeta hasta que marque explícitamente una carpeta seleccionada para sincronizar con Dynamic Media.<br>Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, seleccione una carpeta de recursos y, en la barra de herramientas, seleccione  **[!UICONTROL Propiedades]**. En la pestaña **[!UICONTROL Details]**, en la lista desplegable **[!UICONTROL Dynamic Media sync mode]**, elija una de las tres opciones siguientes. Cuando haya terminado, seleccione **[!UICONTROL Guardar]**. *Recuerde: estas tres opciones no están disponibles si ha seleccionado **Sincronizar todo el**contenido anteriormente.* Consulte también  [Trabajar con publicación selectiva en el nivel de carpeta en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Heredado ]**: no hay ningún valor de sincronización explícito en la carpeta. En su lugar, la carpeta hereda el valor de sincronización de una de sus carpetas antecesoras o del modo predeterminado en la configuración de la nube. El estado detallado de heredado se muestra mediante una información del objeto.<br>**[!UICONTROL Habilitar para subcarpetas]** : Incluya todo en este subárbol para sincronizar con Dynamic Media. La configuración específica de la carpeta anula el modo predeterminado en la configuración de la nube.<br>**[!UICONTROL Deshabilitado para subcarpetas ]**: excluya todo lo que hay en este subárbol de la sincronización con Dynamic Media. |
 
    >[!NOTE]
-   No se admite el control de versiones en Dynamic Media. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]**. Y, a continuación, solo hasta la primera vez que se activa el recurso.
-   Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
+   >
+   >No se admite el control de versiones en Dynamic Media. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]**. Y, a continuación, solo hasta la primera vez que se activa el recurso.
+   >
+   >
+   >Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
 
    ![dynamic mediaconfiguration2update](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
@@ -106,13 +109,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. En el cuadro de diálogo **[!UICONTROL Configuración de Dynamic Media]**, seleccione **[!UICONTROL Aceptar]** para comenzar la configuración.
 
    >[!IMPORTANT]
-   Cuando la nueva configuración de Dynamic Media termina de configurarse, recibe una notificación de estado en la bandeja de entrada de Experience Manager as a Cloud Service.
-   Esta notificación de la bandeja de entrada le informa de si la configuración se ha realizado correctamente o no.
-Consulte [Resolución de problemas de una nueva configuración de Dynamic Media](#troubleshoot-dm-config) y [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
+   >
+   >Cuando la nueva configuración de Dynamic Media finaliza su configuración, recibe una notificación de estado en la bandeja de entrada del Experience Manager as a Cloud Service.
+   >
+   >Esta notificación de la bandeja de entrada le informa de si la configuración se ha realizado correctamente o no.
+   > Consulte [Resolución de problemas de una nueva configuración de Dynamic Media](#troubleshoot-dm-config) y [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
 
-1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, Experience Manager como Cloud Service utiliza la validación basada en token de forma predeterminada. Sin embargo, también puede &quot;lista de permitidos&quot; de más IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción, haga lo siguiente: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, el Experience Manager as a Cloud Service utiliza la validación basada en token de forma predeterminada. Sin embargo, también puede &quot;lista de permitidos&quot; de más IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción, haga lo siguiente: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no tiene esta información, póngase en contacto con el Servicio de atención al cliente de Adobe.
+   * Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no tiene esta información, póngase en contacto con el servicio de atención al cliente de Adobe.
    * En la barra de navegación cerca de la esquina superior derecha de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
    * En la página Publicación del servidor de imágenes , en la lista desplegable **[!UICONTROL Publicar contexto]**, seleccione **[!UICONTROL Probar servicio de imágenes]**.
    * Para el filtro de direcciones de cliente, seleccione **[!UICONTROL Agregar]**.
@@ -125,7 +130,7 @@ Si desea personalizar aún más la configuración, puede completar opcionalmente
 
 ### Resolución de problemas de una nueva configuración de Dynamic Media {#troubleshoot-dm-config}
 
-Cuando finaliza la configuración de una nueva configuración de Dynamic Media, recibe una notificación de estado en la bandeja de entrada de Experience Manager as a Cloud Service. Esta notificación le informa de si la configuración se ha realizado correctamente o no, como se ve en las siguientes imágenes respectivas de la Bandeja de entrada.
+Cuando finaliza la configuración de una nueva Dynamic Media, recibe una notificación de estado en la bandeja de entrada del Experience Manager as a Cloud Service. Esta notificación le informa de si la configuración se ha realizado correctamente o no, como se ve en las siguientes imágenes respectivas de la Bandeja de entrada.
 
 ![Experience Manager Bandeja de entrada correcta](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
@@ -135,14 +140,14 @@ Consulte también [Su bandeja de entrada](/help/sites-cloud/authoring/getting-st
 
 **Para solucionar problemas de una nueva configuración de Dynamic Media:**
 
-1. Cerca de la esquina superior derecha del Experience Manager como página de Cloud Service, seleccione el icono de campana y, a continuación, seleccione **[!UICONTROL Ver todo]**.
+1. Cerca de la esquina superior derecha de la página as a Cloud Service del Experience Manager, seleccione el icono de campana y, a continuación, seleccione **[!UICONTROL Ver todo]**.
 1. En la página Bandeja de entrada, seleccione la notificación de éxito para leer una descripción general del estado y los registros de la configuración.
 
    Si la configuración falla, seleccione la notificación de error similar a la siguiente captura de pantalla.
 
    ![Error en la configuración de Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. En la página **[!UICONTROL DMSETUP]**, revise los detalles de configuración que describen el error. En particular, tome nota de cualquier mensaje de error o código de error. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener esta información.
+1. En la página **[!UICONTROL DMSETUP]**, revise los detalles de configuración que describen el error. En particular, tome nota de cualquier mensaje de error o código de error. Póngase en contacto con el servicio de asistencia al cliente de Adobe para obtener esta información.
 
    ![Página de configuración de Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -161,7 +166,7 @@ Si es necesario, puede revisar la ortografía de una contraseña que ha escrito 
 
 La contraseña modificada se guarda al seleccionar **[!UICONTROL Save]** en la esquina superior derecha de la página **[!UICONTROL Editar configuración de Dynamic Media]**.
 
-1. En Experience Manager como Cloud Service, seleccione el logotipo del Experience Manager como Cloud Service para acceder a la consola de navegación global.
+1. En as a Cloud Service de Experience Manager, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global.
 1. A la izquierda de la consola, seleccione el icono Herramientas y vaya a **[!UICONTROL Cloud Services > Configuración de Dynamic Media]**.
 1. En la página Explorador de configuración de Dynamic Media, en el panel izquierdo, seleccione **[!UICONTROL global]**. No seleccione el icono de carpeta a la izquierda de **[!UICONTROL global]**. A continuación, seleccione **[!UICONTROL Editar]**.
 1. En la página **[!UICONTROL Editar configuración de Dynamic Media]**, directamente debajo del campo **[!UICONTROL Contraseña]**, seleccione **[!UICONTROL Cambiar contraseña]**.
@@ -224,16 +229,16 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 
 Para abrir la página Configuración general de la aplicación , en la barra de navegación global de Dynamic Media Classic, vaya a **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**.
 
-**[!UICONTROL Servidores]** : al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas URL para su sitio web y aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de servidor a menos que el Experience Manager le indique explícitamente que lo haga como soporte de Cloud Service.
+**[!UICONTROL Servidores]** : al aprovisionar la cuenta, Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas URL para su sitio web y aplicaciones. Estas llamadas a URL son específicas de su cuenta. No cambie ninguno de los nombres de los servidores a menos que el soporte as a Cloud Service del Experience Manager le indique explícitamente que lo haga.
 **[!UICONTROL Sobrescribir imágenes]** : Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de URL de cada elemento (el nombre de archivo menos la extensión) debe ser único. Estas opciones especifican cómo se cargan los recursos de reemplazo: si reemplazan el original o se convierten en duplicados. Se cambia el nombre de los recursos duplicados por &quot;-1&quot; (por ejemplo, el nombre de chair.tif cambia a chair-1.tif). Estas opciones afectan a los recursos cargados en una carpeta diferente a la carpeta original o a los recursos con una extensión de archivo diferente a la original.
-**[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]** : esta opción es la regla más estricta para reemplazar. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que tenga la misma extensión de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado. Para mantener la coherencia con el Experience Manager como Cloud Service, seleccione siempre **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]**.
+**[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de imagen base]** : esta opción es la regla más estricta para reemplazar. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que tenga la misma extensión de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado. Para mantener la coherencia con el Experience Manager as a Cloud Service, seleccione siempre **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre/extensión de la imagen base]**.
 **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre/extensión de recurso base]** : requiere que la imagen de reemplazo tenga la misma extensión de archivo que la imagen original. Por ejemplo, chair.jpg debe reemplazar chair.jpg, no chair.tif. Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original.
 **[!UICONTROL Sobrescribir en cualquier carpeta, el mismo nombre de recurso base independientemente de la extensión]** : esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó.
 **[!UICONTROL Perfiles de color predeterminados]** : consulte  [Configuración de la ](#configuring-color-management) administración de color para obtener más información. De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumentar o reducir el número de ajustes preestablecidos de imagen que muestran](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumentar o reducir el número de ajustes preestablecidos de visor que muestran](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Configuración de la gestión de color {#configuring-color-management}
 
-La gestión de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configurar ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md).
+La gestión de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos ingestados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configurar ajustes preestablecidos de imagen](/help/assets/dynamic-media/managing-image-presets.md).
 
 Para configurar las propiedades de color predeterminadas para habilitar la corrección de color al solicitar imágenes:
 
@@ -247,7 +252,7 @@ Puede establecer las siguientes propiedades de corrección de color:
    |---|---|
    | Espacio de color predeterminado CMYK | Nombre del perfil de color CMYK predeterminado. |
    | Espacio de color predeterminado de escala de grises | Nombre del perfil de color gris predeterminado. |
-   | Espacio de color predeterminado RGB | Nombre del perfil de color RGB predeterminado. |
+   | Espacio de color predeterminado del RGB | Nombre del perfil de color del RGB predeterminado. |
    | Interpretación de la conversión de color | Especifica la interpretación. Los valores aceptables son: **[!UICONTROL perceptual]**, **[!UICONTROL colométrico relativo]**, **[!UICONTROL saturación]**, **[!UICONTROL colométrico absoluto]**. Adobe recomienda **[!UICONTROL relativo]** como valor predeterminado. |
 
 1. Seleccione **[!UICONTROL Guardar]**.
@@ -259,7 +264,7 @@ Al hacerlo, se haría lo siguiente:
 * Habilita la corrección de color para imágenes RGB y CMYK.
 * Se supone que las imágenes RGB que no tienen un perfil de color están en el espacio de color *sRGB*.
 * Las imágenes CMYK que no tienen un perfil de color se presuponen que están en *espacio de color WebCoated*.
-* Representaciones dinámicas que devuelven la salida RGB y la devuelven en el espacio de color *sRGB*.
+* Representaciones dinámicas que devuelven la salida del RGB, la devuelven en el espacio de color *sRGB*.
 * Representaciones dinámicas que devuelven la salida CMYK, la devuelven en el espacio de color *WebCoated*.
 
 #### Editar tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
@@ -268,14 +273,14 @@ Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los pa
 
 * Convierta una Adobe PDF en un recurso de catálogo electrónico.
 * Convierta un documento de Adobe Photoshop (.PSD) en un recurso de plantilla de banner para su personalización.
-* Rasterizar un archivo Adobe Illustrator (.AI) o un archivo de PostScript® encapsulado de Adobe Photoshop (.EPS).
+* Rasterizar un archivo Adobe Illustrator (.AI) o un archivo de PostScript® Encapsulado de Adobe Photoshop (.EPS).
 * [Los ](/help/assets/dynamic-media/video-profiles.md) perfiles de vídeo y los perfiles  [de ](/help/assets/dynamic-media/image-profiles.md) imagen se pueden utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
 
 Consulte [Cargar recursos](/help/assets/add-assets.md).
 
 **Para editar tipos MIME para formatos compatibles:**
 
-1. En Experience Manager como Cloud Service, seleccione el logotipo del Experience Manager como Cloud Service para acceder a la consola de navegación global y vaya a **[!UICONTROL General > CRXDE Lite]**.
+1. En Experience Manager as a Cloud Service, seleccione el logotipo as a Cloud Service del Experience Manager para acceder a la consola de navegación global y vaya a **[!UICONTROL General > CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -293,15 +298,15 @@ Consulte [Cargar recursos](/help/assets/add-assets.md).
    * Repita los pasos del 3 al 4 para editar más tipos MIME.
    * En la barra de menús de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
 
-1. En la esquina superior izquierda de la página, seleccione **[!UICONTROL CRXDE Lite]** para volver al Experience Manager como Cloud Service.
+1. En la esquina superior izquierda de la página, seleccione **[!UICONTROL CRXDE Lite]** para volver al Experience Manager as a Cloud Service.
 
 #### Añadir tipos MIME para formatos no compatibles {#adding-mime-types-for-unsupported-formats}
 
-Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos Experience Manager. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de `image_`. Además, asegúrese de que su valor habilitado esté establecido en **[!UICONTROL false]**.
+Puede añadir tipos MIME personalizados para formatos no compatibles en Experience Manager Assets. Para asegurarse de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite, mueva el tipo MIME antes de `image_`. Además, asegúrese de que su valor habilitado esté establecido en **[!UICONTROL false]**.
 
 **Para añadir tipos MIME para formatos no compatibles:**
 
-1. Desde Experience Manager como Cloud Service, vaya a **[!UICONTROL Tools > Operations > Web Console]**.
+1. Desde el Experience Manager as a Cloud Service, vaya a **[!UICONTROL Tools > Operations > Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -327,8 +332,8 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos
 
    En este punto, puede cerrar la ficha del explorador que tiene la página de configuración de la consola web de Adobe Experience Manager abierta.
 
-1. Vuelva a la pestaña del explorador que tenga el Experience Manager abierto como consola del Cloud Service.
-1. Desde Experience Manager como Cloud Service, vaya a **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. Vuelva a la ficha del explorador que tiene la consola as a Cloud Service del Experience Manager abierta.
+1. Desde el Experience Manager as a Cloud Service, vaya a **[!UICONTROL Tools > General > CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -360,13 +365,13 @@ Para mantener Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> funcion
 
 #### Actualizar los parámetros de trabajo predefinidos para el procesamiento de diferentes formatos de archivo
 
-Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si carga archivos PSD pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). En tal caso, el parámetro de trabajo ajustado aparece de la siguiente manera: `process=None&createTemplate=false`.
+Puede ajustar los parámetros de trabajo para un procesamiento más rápido al cargar archivos. Por ejemplo, si carga archivos de PSD, pero no desea procesarlos como plantillas, puede establecer la extracción de capas en false (desactivado). En tal caso, el parámetro de trabajo ajustado aparece de la siguiente manera: `process=None&createTemplate=false`.
 
 Si desea activar la creación de plantillas, utilice los siguientes parámetros: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;ajustados&quot; para archivos PDF, PostScript® y PSD:
+Adobe recomienda utilizar los siguientes parámetros de trabajo &quot;ajustados&quot; para archivos de PDF, PostScript® y PSD:
 
 | Tipo de archivo | Parámetros de trabajo recomendados |
 | ---| ---|
@@ -386,10 +391,12 @@ La cola Flujo de trabajo de Granite Transit se utiliza para el flujo de trabajo 
 
 **Para actualizar la cola de Granite Transient Workflow:**
 
-1. Vaya a [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) y busque **Cola: Cola de flujo de trabajo transitorio de granito**.
+1. Vaya a **Configuración de la consola web de Adobe Experience Manager** en `http://<host>:<port>/system/console/configMgr`
+1. Buscar **Cola: Cola de flujo de trabajo transitorio de granito**.
 
    >[!NOTE]
-   Es necesario buscar texto en lugar de una dirección URL directa porque el OSGi PID se genera dinámicamente.
+   >
+   >Es necesario buscar texto en lugar de una dirección URL directa porque el OSGi PID se genera dinámicamente.
 
 1. En el campo **[!UICONTROL Maximum Parallel Jobs]** , cambie el número al valor deseado.
 
@@ -412,7 +419,8 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 1. Vaya a `https://<server>/system/console/configMgr` y busque **Cola: Cola de flujo de trabajo de Granite**.
 
    >[!NOTE]
-   Es necesario buscar texto en lugar de una dirección URL directa porque el OSGi PID se genera dinámicamente.
+   >
+   >Es necesario buscar texto en lugar de una dirección URL directa porque el OSGi PID se genera dinámicamente.
 
 1. En el campo **[!UICONTROL Maximum Parallel Jobs]** , cambie el número al valor deseado.
 
@@ -430,7 +438,7 @@ La configuración de conexión de carga de Scene7 sincroniza los recursos de Exp
 
 **Para actualizar la conexión de carga de Scene7:**
 
-1. Ir a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el campo **[!UICONTROL Number of Connections]**, o en el campo **[!UICONTROL Active job timeout]**, o en ambos, cambie el número como desee.
 
    La configuración **[!UICONTROL Number of Connections]** controla el número máximo de conexiones HTTP permitidas para el Experience Manager en la carga de Dynamic Media. Normalmente, el valor predefinido de diez conexiones es suficiente.
