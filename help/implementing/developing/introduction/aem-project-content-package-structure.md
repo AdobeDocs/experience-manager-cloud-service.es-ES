@@ -2,9 +2,9 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 >
 >Familiarícese con el [AEM tipo de archivo del proyecto básico use](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), y con el [complemento Maven de contenido de FileVault](/help/implementing/developing/tools/maven-plugin.md), ya que este artículo se basa en estos conocimientos y conceptos.
 
-Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager Maven se AEM como Cloud Service compatibles, asegurándose de que respetan la división del contenido mutable e inmutable, las dependencias se establecen para crear implementaciones determinísticas y no conflictivas y que se empaquetan en una estructura implementable.
+Este artículo describe los cambios necesarios para que los proyectos de Adobe Experience Manager Maven sean AEM compatibles de forma as a Cloud Service, asegurándose de que respeten la división del contenido mutable e inmutable, de que las dependencias se establezcan para crear implementaciones determinísticas y no conflictivas y de que se empaqueten en una estructura implementable.
 
 AEM implementaciones de aplicaciones deben estar formadas por un único paquete de AEM. Este paquete debe a su vez contener subpaquetes que incluyan todo lo que requiere la aplicación para funcionar, incluyendo código, configuración y cualquier contenido de línea de base compatible.
 
@@ -39,13 +39,13 @@ Todo lo demás en el repositorio, `/content`, `/conf`, `/var`, `/etc`, `/oak:ind
 
 ### Índices Oak {#oak-indexes}
 
-Los índices Oak (`/oak:index`) son administrados específicamente por el AEM como proceso de implementación de Cloud Service. Esto se debe a que Cloud Manager debe esperar hasta que se implemente cualquier nuevo índice y se vuelva a indexar completamente antes de cambiar a la nueva imagen de código.
+Los índices Oak (`/oak:index`) se administran específicamente mediante el proceso de implementación as a Cloud Service de AEM. Esto se debe a que Cloud Manager debe esperar hasta que se implemente cualquier nuevo índice y se vuelva a indexar completamente antes de cambiar a la nueva imagen de código.
 
 Por este motivo, aunque los índices Oak son mutables en tiempo de ejecución, deben implementarse como código para que puedan instalarse antes de instalar cualquier paquete mutable. Por lo tanto, las configuraciones de `/oak:index` son parte del paquete de código y no del paquete de contenido [como se describe a continuación](#recommended-package-structure).
 
 >[!TIP]
 >
->Para obtener más información sobre la indexación en AEM como Cloud Service, consulte el documento [Content Search and Indexing](/help/operations/indexing.md).
+>Para obtener más información sobre la indexación en AEM as a Cloud Service, consulte el documento [Content Search and Indexing](/help/operations/indexing.md).
 
 ## Estructura del paquete recomendado {#recommended-package-structure}
 
@@ -75,9 +75,9 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 + El paquete `ui.config` contiene todas las [configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md):
    + Carpeta organizativa que contiene definiciones de configuración de OSGi específicas del modo de ejecución
       + `/apps/my-app/osgiconfig`
-   + Carpeta de configuración común de OSGi que contiene configuraciones de OSGi predeterminadas que se aplican a todos los AEM de destino como destinos de implementación de Cloud Service
+   + Carpeta de configuración común de OSGi que contiene configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de AEM de destino
       + `/apps/my-app/osgiconfig/config`
-   + Ejecute carpetas de configuración OSGi específicas del modo que contengan configuraciones OSGi predeterminadas que se aplican a todos los destinos de implementación de AEM como Cloud Service
+   + Ejecute carpetas de configuración OSGi específicas del modo que contengan configuraciones OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service AEM destino
       + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
    + Secuencias de comandos de configuración de Repo Init OSGi
       + [Repositorio ](#repo-init) Inicia la forma recomendada de implementar contenido (mutable) que forma parte lógicamente de la aplicación AEM. Las configuraciones de OSGi de Repo Init deben estar situadas en la carpeta `config.<runmode>` adecuada, tal como se describe más arriba, y deben utilizarse para definir:
@@ -269,7 +269,7 @@ Simplemente añada las entradas `<filter root="/apps/<my-app>-packages"/>` para 
 
 ## Incrustación de paquetes de terceros {#embedding-3rd-party-packages}
 
-Todos los paquetes deben estar disponibles a través del [repositorio público de artefactos Maven](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) del Adobe o a través de un repositorio público de artefactos Maven de terceros referenciable y accesible.
+Todos los paquetes deben estar disponibles a través del [repositorio público de artefactos Maven](https://repo1.maven.org/maven2/com/adobe/) del Adobe o a través de un repositorio público de artefactos Maven de terceros referenciable y accesible.
 
 Si los paquetes de terceros están en el repositorio **público de artefactos Maven de Adobe**, no se necesita ninguna configuración adicional para que Adobe Cloud Manager resuelva los artefactos.
 

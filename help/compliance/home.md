@@ -1,17 +1,16 @@
 ---
 title: Compatibilidad
 description: Compatibilidad
-exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 80%
 
 ---
 
-# Cumplimiento de normas en AEM como Cloud Service {#aem-compliance}
+# Cumplimiento de normas en AEM as a Cloud Service {#aem-compliance}
 
-En esta página se muestran los recursos informativos que proporcionan información sobre la conformidad en Experience Manager como Cloud Service.
+En esta página se muestran los recursos informativos que proporcionan información sobre el cumplimiento de las normas en Experience Manager as a Cloud Service.
 
 ## Artículos sobre la información general {#key-articles}
 

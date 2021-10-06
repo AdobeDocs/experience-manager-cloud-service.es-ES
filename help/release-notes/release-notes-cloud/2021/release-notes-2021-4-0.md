@@ -1,8 +1,7 @@
 ---
 title: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: e3540331e3194dce5dcd88e4f785f15ef682f062
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 3%
@@ -10,9 +9,9 @@ ht-degree: 3%
 ---
 
 
-# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión actuales para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La siguiente sección describe las notas de la versión generales de la versión actual (más reciente) de [!DNL Experience Manager] como Cloud Service.
+En la siguiente sección se describen las notas de la versión generales de la versión actual (más reciente) de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021 y así sucesivamente.
@@ -23,10 +22,10 @@ La siguiente sección describe las notas de la versión generales de la versión
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2021.4.0 es el 6 de mayo de 2021.
+La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 es el 6 de mayo de 2021.
 La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
-## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
+## Base as a Cloud Service AEM{#aem-as-a-cloud-service-foundation}
 
 ### Novedades {#what-is-new-foundation}
 
@@ -114,7 +113,7 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 * **Utilizar el entorno de desarrollo local para crear el documento de registro (DoR)**
 
-   Puede utilizar una plantilla XDP como documento de registro en instancias de Cloud Service y AEM Forms as a Cloud Service SDK (entorno de desarrollo local). Anteriormente, la compatibilidad se limitaba a instancias de Cloud Service únicamente.
+   Puede utilizar un XDP como plantilla de documento de registro en instancias de Cloud Service y el SDK as a Cloud Service de AEM Forms (entorno de desarrollo local). Anteriormente, la compatibilidad se limitaba a instancias de Cloud Service únicamente.
 
 ### Correcciones de errores en [!DNL Forms] {#bug-fixes-forms}
 
@@ -122,8 +121,8 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 ### Otras actualizaciones {#misc-2021-04-0-forms}
 
-* Con el fin de facilitar el reconocimiento del contenido, el servicio ahora genera miniaturas en vivo para archivos XDP, PDF dinámico y de esquema.
-* Añada la capacidad de mover un archivo PDF a una carpeta colocada en la interfaz de usuario de AEM Forms.
+* Con el fin de facilitar el reconocimiento del contenido, el servicio ahora genera miniaturas en vivo para archivos XDP, PDF dinámico y Esquema.
+* Añada la capacidad de mover un archivo PDF a una carpeta ubicada en la interfaz de usuario de AEM Forms.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

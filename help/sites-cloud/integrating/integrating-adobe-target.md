@@ -1,28 +1,28 @@
 ---
 title: Integración con Adobe Target
 description: 'Integración con Adobe Target '
-feature: Administración
+feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1035'
 ht-degree: 2%
 
 ---
 
 # Integración con Adobe Target{#integrating-with-adobe-target}
 
-Como parte de Adobe Marketing Cloud, Adobe Target le permite aumentar la relevancia del contenido mediante la determinación de objetivos y efectuando mediciones en todos los canales. La integración de Adobe Target y AEM como Cloud Service requiere:
+Como parte de Adobe Marketing Cloud, Adobe Target le permite aumentar la relevancia del contenido mediante la determinación de objetivos y efectuando mediciones en todos los canales. La integración de Adobe Target y AEM as a Cloud Service requiere:
 
-* uso de la interfaz de usuario táctil para crear una configuración de Target en AEM como Cloud Service (se requiere la configuración de IMS).
-* agregar y configurar Adobe Target como extensión en [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html).
+* uso de la interfaz de usuario táctil para crear una configuración de Target en AEM as a Cloud Service (se requiere la configuración de IMS).
+* agregar y configurar Adobe Target como extensión en [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
 
 Adobe Launch es necesario para administrar las propiedades del lado del cliente tanto para Analytics como para Target en páginas AEM (bibliotecas/etiquetas JS). Dicho esto, la integración con Launch es necesaria para la &quot;segmentación de experiencias&quot;. Para la exportación de fragmentos de experiencias a Target, solo necesita la configuración de Adobe Target y el IMS.
 
 >[!NOTE]
 >
->Los clientes de Adobe Experience Manager como Cloud Service que no tengan una cuenta de Target existente pueden solicitar acceso a Target Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del volumen de Target.
+>Los clientes de Adobe Experience Manager as a Cloud Service que no tengan una cuenta de Target existente, pueden solicitar acceso a Target Foundation Pack para Experience Cloud. Foundation Pack proporciona un uso limitado del volumen de Target.
 
 ## Creación de la configuración de Adobe Target {#create-configuration}
 
@@ -32,11 +32,11 @@ Adobe Launch es necesario para administrar las propiedades del lado del cliente 
 3. Seleccione el botón **Create**.
    ![](assets/tenant1.png "CreateCreate")
 4. Complete los detalles (ver abajo) y seleccione **Connect**.
-   ![](assets/open_screen1.png "Connect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### Configuración de IMS {#ims-configuration}
 
-Se necesita una configuración IMS tanto para Launch como para Target para integrar correctamente Target con AEM y Launch. Aunque la configuración de IMS para Launch está preconfigurada en AEM como Cloud Service, se debe crear la configuración de IMS de Target (después de aprovisionar Target). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) y [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para aprender a crear la configuración de IMS de Target.
+Se necesita una configuración IMS tanto para Launch como para Target para integrar correctamente Target con AEM y Launch. Aunque la configuración de IMS para Launch está preconfigurada en AEM as a Cloud Service, se debe crear la configuración de IMS de Target (una vez aprovisionado Target). Consulte [este vídeo](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) y [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html) para aprender a crear la configuración de IMS de Target.
 
 ### ID del inquilino de Adobe Target y código de cliente de Adobe Target {#tenant-client}
 
@@ -51,7 +51,7 @@ En ambos casos, tenga en cuenta que:
 * Tiene la opción de cambiar el conjunto de ID de inquilino predeterminado.
 * En consecuencia, las llamadas de servidor a Target se basarán en el ID del inquilino y las llamadas del lado del cliente a Target se basarán en el código del cliente.
 
-Como se ha dicho anteriormente, el primer caso es el más común para AEM como Cloud Service. En cualquier caso, asegúrese de que **ambos campos** contienen la información correcta según sus necesidades.
+Como se ha dicho anteriormente, el primer caso es el más común para AEM as a Cloud Service. En cualquier caso, asegúrese de que **ambos campos** contienen la información correcta según sus necesidades.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Una propiedad es un contenedor que se rellena con extensiones, reglas y elemento
 
 ### Añadir las extensiones necesarias {#add-extension}
 
-**** La extensión es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target es compatible con implementaciones del lado del cliente mediante el uso del SDK de JavaScript de Target para la web moderna, at.js. Debe añadir las extensiones **Adobe Target** y **Adobe ContextHub**.
+**** Extensión es el contenedor que administra la configuración de la biblioteca principal. La extensión de Adobe Target es compatible con implementaciones del lado del cliente mediante el uso del SDK de JavaScript de Target para la web moderna, at.js. Debe añadir las extensiones **Adobe Target** y **Adobe ContextHub**.
 
 1. Seleccione la opción Catálogo de extensiones y busque Target en el filtro .
 2. Seleccione **Adobe Target** at.js y haga clic en la opción Instalar .
@@ -128,7 +128,7 @@ Una propiedad es un contenedor que se rellena con extensiones, reglas y elemento
 En **Rule** definimos y ordenamos una secuencia de acciones, que se ejecutan en el sitio, para lograr el objetivo.
 
 1. Añada un conjunto de acciones como se muestra en la captura de pantalla.
-   ![](assets/rules1.png "ActionsActions")
+   ![](assets/rules1.png "Actions")
 2. En Añadir parámetros a todos los mboxes , agregue el elemento de datos configurado anteriormente (consulte el elemento de datos anterior) al parámetro que se enviará en la llamada de mbox.
    ![](assets/map_data1.png "MboxActions")
 
