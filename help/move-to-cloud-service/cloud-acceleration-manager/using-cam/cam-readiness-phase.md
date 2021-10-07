@@ -71,7 +71,7 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha en la que el informe se muestra en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato PDF para facilitar el uso compartido.
+1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha en la que el informe se muestra en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato de PDF para facilitar el uso compartido.
 
    >[!IMPORTANT]
    >* Se recomienda la opción **Guardar como PDF** y se admite para la funcionalidad anterior.
@@ -101,7 +101,7 @@ La tarjeta **Propiedades del informe** proporciona información sobre las propie
 
 #### Información general del informe {#report-overview}
 
-Esta tarjeta **Información general de informe** proporciona los resultados del informe y los niveles de gravedad que se aplican al evaluar la preparación para pasar a AEM como Cloud Service, como se muestra en la figura siguiente.
+Esta tarjeta **Información general de informe** proporciona los resultados del informe y los niveles de gravedad que se aplican al evaluar la preparación para pasar a AEM as a Cloud Service, como se muestra en la figura siguiente.
 
 ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ La opción Evaluación de prácticas recomendadas proporciona una evaluación de
 
 #### Evaluación de la complejidad de la migración {#migration-complexity-assessment}
 
-La opción de evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de AEM existente a AEM como Cloud Service.
+La opción de evaluación de la complejidad de la migración proporciona una evaluación de la complejidad para migrar la implementación de AEM existente a AEM as a Cloud Service.
 
 Puede revisar la siguiente información desde esta pestaña:
 

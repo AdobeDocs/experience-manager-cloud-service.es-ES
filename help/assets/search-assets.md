@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Utilice el panel **[!UICONTROL Filtros]** para buscar recursos, carpetas, etique
 
 Familiarícese con la interfaz de búsqueda y las acciones disponibles.
 
-![Comprender la interfaz de resultados de búsqueda de recursos Experience Manager](assets/aem_search_results.png)
+![Comprender la interfaz de resultados de búsqueda de Experience Manager Assets](assets/aem_search_results.png)
 
 *Figura: Comprender la interfaz de resultados de  [!DNL Experience Manager Assets] búsqueda.*
 
@@ -157,7 +157,7 @@ Puede buscar recursos en función de los valores exactos de los campos de metada
 | Creador | creador:John |
 | Lugar de residencia | ubicación:NA |
 | Descripción | description: &quot;Imagen de muestra&quot; |
-| Herramienta Creador | creatortool: &quot;Adobe Photoshop CC 2015&quot; |
+| Herramienta Creador | creatortool:&quot;Adobe Photoshop&quot; |
 | Propietario del copyright | copyright:&quot;Adobe Systems&quot; |
 | Colaborador | colaborador:John |
 | Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |
@@ -202,7 +202,7 @@ Al utilizar Adobe Asset Link, los profesionales creativos ahora pueden acceder a
 
 ### Buscar recursos en la aplicación de escritorio [!DNL Experience Manager] {#desktop-app}
 
-Los profesionales creativos utilizan la aplicación de escritorio para que el [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en el Buscador de Mac o en el Explorador de Windows, abrirlos en aplicaciones de escritorio y cambiarlos localmente. Los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, `*` y `?` comodines y el operador `AND`. Consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
+Los profesionales creativos utilizan la aplicación de escritorio para que [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en el Buscador de Mac o en el Explorador de Windows, abrirlos en aplicaciones de escritorio y cambiarlos localmente. Los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, `*` y `?` comodines y el operador `AND`. Consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
 
 ### Buscar recursos en [!DNL Brand Portal] {#brand-portal}
 
@@ -228,7 +228,7 @@ Los autores pueden utilizar el buscador de contenido para buscar en el repositor
 
 El selector de recursos (denominado selector de recursos en versiones anteriores de [!DNL Adobe Experience Manager]) le permite buscar, filtrar y examinar los recursos de DAM de una forma especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos que seleccione mediante el selector de recursos. Puede iniciarlo con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selección única o múltiple). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda en particular y permanecen intactos durante toda la selección.
 
-El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. Solo funciona en el modo de exploración y solo con la página de resultados de Omnisearch.
+El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar los datos del recurso seleccionado al destinatario. Solo funciona en el modo de exploración y solo con la página de resultados de Omnisearch.
 
 Pase los siguientes parámetros de solicitud en una dirección URL para iniciar el selector de recursos en un contexto determinado:
 

@@ -1,12 +1,12 @@
 ---
-title: Invalidar la caché de CDN (red de entrega de contenido) mediante Dynamic Media Classic
+title: Invalidar la caché de la CDN (red de distribución de contenido) mediante Dynamic Media Classic
 description: Aprenda a invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido) para permitirle actualizar rápidamente los recursos que Dynamic Media entrega, en lugar de esperar a que caduque la caché.
-feature: Administración de recursos,Dynamic Media Classic
+feature: Asset Management,Dynamic Media Classic
 role: Admin,User
 exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '693'
 ht-degree: 13%
 
 ---
@@ -27,9 +27,9 @@ Consulte también [Información general de caché en Dynamic Media Classic](http
 
 **Para invalidar la caché de la CDN mediante Dynamic Media Classic:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en su cuenta.
 
-   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el Servicio de atención al cliente.
 
 1. Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 1. En la página Configuración general de la aplicación , en el encabezado del grupo Servidores , busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.

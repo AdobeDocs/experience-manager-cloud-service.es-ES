@@ -37,7 +37,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Durante la fase de extracción, la herramienta de transferencia de contenido se ejecuta en una instancia de origen de AEM activa.
 
-* Después de completar la fase *Extraction* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* para introducir contenido en su AEM como Cloud Service *Stage* o *Production* instancias, deberá registrar un ticket de asistencia para notificar al Adobe su intención de ejecutar la *Ingesta&lt;a7&lt;a>9/> para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso* Ingesta *.* Tendrá que registrar el ticket de soporte 1 semana antes de la fecha planificada *Ingesta*. Una vez que haya enviado el ticket de soporte, el equipo de soporte le proporcionará instrucciones sobre los pasos siguientes. Puede registrar un vale de soporte con los siguientes detalles:
+* Después de completar la fase *Extraction* del proceso de transferencia de contenido y antes de iniciar la *Fase de ingesta* para introducir contenido en las instancias as a Cloud Service de *Stage* o *Production* de AEM, deberá registrar un ticket de asistencia para notificar al Adobe su intención de ejecutar la *Ingesta* para que el Adobe pueda garantizar que no se produzcan interrupciones durante el proceso *Ingestion*. Tendrá que registrar el ticket de soporte 1 semana antes de la fecha planificada *Ingesta*. Una vez que haya enviado el ticket de soporte, el equipo de soporte le proporcionará instrucciones sobre los pasos siguientes. Puede registrar un vale de soporte con los siguientes detalles:
 
    * Fecha exacta y hora estimada (con su zona horaria) en la que planea iniciar la fase *Ingesta*.
    * Tipo de entorno (fase o producción) en el que planea introducir datos.
@@ -70,7 +70,7 @@ La herramienta de transferencia de contenido se puede descargar como archivo zip
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Ejecución de la herramienta de transferencia de contenido"
->abstract="Aprenda a utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM como Cloud Service (autor/publicación)."
+>abstract="Aprenda a utilizar la herramienta de transferencia de contenido para migrar el contenido a AEM as a Cloud Service (autor/publicación)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte Demostración"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutorial: uso de la herramienta de transferencia de contenido"
 

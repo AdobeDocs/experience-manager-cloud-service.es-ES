@@ -13,7 +13,7 @@ ht-degree: 2%
 
 ## Cambios en AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Con AEM como Cloud Service, el Adobe está pasando de un modelo AEM centrado en instancias a una vista basada en servicios con contenedores de AEM n-x, impulsada por canalizaciones de CI/CD en Cloud Manager. En lugar de configurar y mantener los índices en instancias de AEM único, la configuración de Índice debe especificarse antes de una implementación. Los cambios de configuración en la producción claramente están rompiendo las políticas CI/CD. Lo mismo ocurre con los cambios de índice, ya que pueden afectar a la estabilidad y al rendimiento del sistema si no se especifica, se prueban y se reindexan antes de llevarlos a la producción.
+Con AEM as a Cloud Service, el Adobe se está alejando de un modelo AEM centrado en instancias a una vista basada en servicios con contenedores de AEM n-x, impulsada por canalizaciones de CI/CD en Cloud Manager. En lugar de configurar y mantener los índices en instancias de AEM único, la configuración de Índice debe especificarse antes de una implementación. Los cambios de configuración en la producción claramente están rompiendo las políticas CI/CD. Lo mismo ocurre con los cambios de índice, ya que pueden afectar a la estabilidad y al rendimiento del sistema si no se especifica, se prueban y se reindexan antes de llevarlos a la producción.
 
 A continuación se muestra una lista de los principales cambios en comparación con AEM 6.5 y versiones anteriores:
 
@@ -31,12 +31,12 @@ A continuación se muestra una lista de los principales cambios en comparación 
 
 1. La configuración del índice se cambia mediante implementaciones. Los cambios en la definición del índice se configuran como otros cambios en el contenido.
 
-1. En un nivel superior en AEM como Cloud Service, con la introducción del modelo de implementación [Blue-Green](#index-management-using-blue-green-deployments), existirán dos conjuntos de índices: un conjunto para la versión antigua (azul) y otro conjunto para la nueva versión (verde).
+1. En un nivel superior sobre AEM as a Cloud Service, con la introducción del [modelo de implementación Blue-Green](#index-management-using-blue-green-deployments), existirán dos conjuntos de índices: un conjunto para la versión antigua (azul) y otro conjunto para la nueva versión (verde).
 
 1. Los clientes pueden ver si el trabajo de indexación se ha completado en la página de creación de Cloud Manager y recibirán una notificación cuando la nueva versión esté lista para recibir tráfico.
 
 1. Restricciones:
-* Actualmente, la administración de índices en AEM como Cloud Service solo se admite para índices de tipo lucene.
+* Actualmente, la administración de índices en AEM as a Cloud Service solo se admite para índices de tipo lucene.
 * Solo se admiten analizadores estándar (es decir, aquellos que se envían con el producto). Los analizadores personalizados no son compatibles.
 
 ## Usos {#how-to-use}
@@ -47,7 +47,7 @@ La definición de índices puede comprender los tres casos de uso siguientes:
 1. Actualización de una definición de índice existente. Esto significa añadir una nueva versión de una definición de índice existente
 1. Eliminación de un índice existente redundante u obsoleto.
 
-Para los puntos 1 y 2 anteriores, debe crear una nueva definición de índice como parte del código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte la [Implementación para AEM como Cloud Service documentación](/help/implementing/deploying/overview.md).
+Para los puntos 1 y 2 anteriores, debe crear una nueva definición de índice como parte del código personalizado en la programación de versiones correspondiente de Cloud Manager. Para obtener más información, consulte [Implementación para AEM documentación as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ### Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
 
@@ -85,7 +85,7 @@ Una vez añadida la nueva definición de índice, la nueva aplicación debe impl
 
 >[!TIP]
 >
->Para obtener más información sobre la estructura del paquete necesaria para AEM como Cloud Service, consulte el documento [AEM Estructura del proyecto.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Para obtener más información sobre la estructura del paquete necesaria para AEM as a Cloud Service, consulte el documento [AEM Estructura del proyecto.](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## Administración de índices mediante implementaciones Blue-Green {#index-management-using-blue-green-deployments}
 
@@ -125,7 +125,7 @@ La tabla siguiente muestra cinco definiciones de índice: el índice `cqPageLuce
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` es necesario para que AEM como Cloud Service lo marque como reemplazo de un índice existente.
+>`<indexName>-custom-<customerVersionNumber>` es necesario para que AEM as a Cloud Service marque esto como reemplazo de un índice existente.
 
 | Índice | Índice predeterminado | Uso en la versión 1 | Uso en la versión 2 |
 |---|---|---|---|
@@ -176,7 +176,7 @@ La nueva versión de la aplicación utiliza la siguiente configuración (modific
 
 >[!NOTE]
 >
->Es posible que las definiciones de índice de AEM como Cloud Service no coincidan completamente con las definiciones de índice de una instancia de desarrollo local. La instancia de desarrollo no tiene una configuración de Tika, mientras que AEM como instancias de Cloud Service sí tiene una. Si personaliza un índice con una configuración de Tika, mantenga la configuración de Tika.
+>Es posible que las definiciones de índice de AEM as a Cloud Service no coincidan completamente con las definiciones de índice de una instancia de desarrollo local. La instancia de desarrollo no tiene una configuración de Tika, mientras que AEM instancias as a Cloud Service sí la tienen. Si personaliza un índice con una configuración de Tika, mantenga la configuración de Tika.
 
 ### Deshacer un cambio {#undoing-a-change}
 
@@ -215,13 +215,13 @@ Si ya no es necesario tener una personalización de un índice predeterminado, d
 
 Apache Jackrabbit Oak permite configuraciones de índice flexibles para gestionar de forma eficiente las consultas de búsqueda. Los índices son especialmente importantes para repositorios más grandes. Asegúrese de que todas las consultas estén respaldadas por un índice adecuado. Las consultas sin un índice adecuado pueden leer miles de nodos, que luego se registran como advertencia. Estas consultas deben identificarse analizando los archivos de registro para poder optimizar las definiciones de índice. Consulte [esta página](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) para obtener más información.
 
-### Índice de texto completo de Lucene en AEM como Cloud Service {#index-lucene}
+### Índice de texto completo de Lucene en AEM as a Cloud Service {#index-lucene}
 
-El índice de texto completo `/oak:index/lucene-2` puede llegar a ser muy grande porque indexa todos los nodos del repositorio de AEM de forma predeterminada.  Tras los planes de Adobe de retirar este índice, ya no se implementará en AEM como Cloud Service a partir de septiembre de 2021. Como tal, ya no se utiliza en el producto en AEM como Cloud Service y no debería ser necesario ejecutar el código de cliente. Para AEM entornos como Cloud Service con índices Lucene comunes, el Adobe está trabajando con los clientes de forma individual para un enfoque coordinado que compense por este índice y utilice índices mejores y optimizados. Los clientes no necesitan ninguna acción sin previo aviso del Adobe. AEM como Cloud Service, los clientes serán informados por Adobe cuando haya necesidad de actuar con respecto a esta optimización. Si este índice es necesario para consultas personalizadas, como solución temporal, se debe crear una copia de este índice, utilizando un nombre diferente, por ejemplo, `/oak:index/acme.lucene-1-custom-1`, como se describe [aquí](/help/operations/indexing.md).
+El índice de texto completo `/oak:index/lucene-2` puede llegar a ser muy grande porque indexa todos los nodos del repositorio de AEM de forma predeterminada.  Tras los planes de Adobe de retirar este índice, ya no se implementará en AEM as a Cloud Service a partir de septiembre de 2021. Como tal, ya no se utiliza en el lado del producto en AEM as a Cloud Service y no debería ser necesario ejecutar el código de cliente. Para AEM entornos as a Cloud Service con índices Lucene comunes, Adobe está trabajando con los clientes individualmente para un enfoque coordinado para compensar este índice y para utilizar índices mejores y optimizados. Los clientes no necesitan ninguna acción sin previo aviso del Adobe. AEM clientes as a Cloud Service serán informados por Adobe cuando haya necesidad de actuar con respecto a esta optimización. Si este índice es necesario para consultas personalizadas, como solución temporal, se debe crear una copia de este índice, utilizando un nombre diferente, por ejemplo, `/oak:index/acme.lucene-1-custom-1`, como se describe [aquí](/help/operations/indexing.md).
 Esta optimización no se aplica de forma predeterminada a otros entornos de AEM alojados in situ o administrados por Adobe Managed Services.
 
 ## Optimizaciones de consultas {#index-query}
 
 La herramienta **Rendimiento de la consulta** le permite observar consultas JCR populares y lentas. Además, puede analizar consultas y mostrar información diversa sobre, especialmente si se está utilizando un índice para esta consulta o no.
 
-A diferencia de AEM locales, AEM como Cloud Service ya no muestra la herramienta **Rendimiento de la consulta** en la interfaz de usuario. Ahora está disponible a través de Developer Console (en Cloud Manager) en la pestaña **Consultas**.
+A diferencia de AEM local, AEM as a Cloud Service ya no muestra la herramienta **Rendimiento de la consulta** en la interfaz de usuario. Ahora está disponible a través de Developer Console (en Cloud Manager) en la pestaña **Consultas**.

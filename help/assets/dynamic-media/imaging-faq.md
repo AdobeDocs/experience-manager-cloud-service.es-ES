@@ -4,7 +4,7 @@ description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplica
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Los siguientes ejemplos de recursos de imagen ilustran la optimización de imág
 | [Imagen 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44 % |
 |  |  |  |  | Media = 51% |
 
-De forma similar a lo anterior, Adobe también realizó una prueba con 7009 URL de sitios de clientes activos. Pudieron lograr una optimización promedio de un 38% más del tamaño de archivo para JPEG. Para PNG con formato WebP, fueron capaces de lograr un promedio de un 31% más de optimización del tamaño de archivo. Este tipo de optimización es posible debido a la capacidad de las imágenes inteligentes.
+De forma similar a lo anterior, Adobe también realizó una prueba con 7009 URL de sitios de clientes activos. Pudieron lograr una optimización promedio de un 38% más del tamaño de archivo para el JPEG. Para PNG con formato WebP, fueron capaces de lograr un promedio de un 31% más de optimización del tamaño de archivo. Este tipo de optimización es posible debido a la capacidad de las imágenes inteligentes.
 
 En la web móvil, los desafíos se ven agravados por dos factores:
 
@@ -80,7 +80,7 @@ Si lo desea, su empresa puede excluir la optimización del ancho de banda de la 
 
 >[!NOTE]
 >
->Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 e iPhone12 con DPR=3, ambos muestran DPR=2. Sin embargo, para los dispositivos de alta resolución, el envío del RGPD=2 es mejor que el envío del RGPD=1. Próximamente: Adobe está trabajando en código del lado del cliente para determinar con precisión el RGPD de un usuario final.
+>Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 y iPhone12 con DPR=3, ambos muestran DPR=2. Sin embargo, para los dispositivos de alta resolución, el envío del RGPD=2 es mejor que el envío del RGPD=1. Próximamente: Adobe está trabajando en código del lado del cliente para determinar con precisión el RGPD de un usuario final.
 
 ## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -88,7 +88,7 @@ Las imágenes constituyen la mayor parte del tiempo de carga de una página. De 
 
 Mejoras en la última versión de imágenes inteligentes:
 
-* Se ha mejorado la clasificación SEO de Google para páginas web que utilizan la última imagen inteligente.
+* Se ha mejorado la clasificación SEO de Google para las páginas web que utilizan las últimas imágenes inteligentes.
 * Proporciona contenido optimizado inmediatamente (durante la ejecución).
 * Utiliza la tecnología Adobe Sensei para convertir según la calidad (`qlt`) especificada en la solicitud de imagen.
 * Las imágenes inteligentes se pueden desactivar utilizando el parámetro de URL `bfc`.
@@ -98,7 +98,7 @@ Mejoras en la última versión de imágenes inteligentes:
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-No. Las imágenes inteligentes se incluyen en la licencia existente. Esta regla es verdadera para Dynamic Media Classic o Experience Manager: Dynamic Media (local, AMS y Experience Manager como Cloud Service).
+No. Las imágenes inteligentes se incluyen en la licencia existente. Esta regla es verdadera para Dynamic Media Classic o Experience Manager: Dynamic Media (local, AMS y as a Cloud Service por Experience Manager).
 
 >[!NOTE]
 >
@@ -213,10 +213,10 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
       Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
    1. Indique si desea que funcione a través de HTTP/2.
 
-1. El Servicio de atención al cliente de Adobe le agrega a la lista de espera de cliente de imágenes inteligentes en función del orden en que se envían las solicitudes.
+1. El servicio de asistencia al cliente de Adobe le agrega a la lista de espera de cliente de imágenes inteligentes en función del orden en que se envíen las solicitudes.
 1. Cuando el Adobe está listo para gestionar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo.
 1. **Opcional**: Si lo desea, puede probar las imágenes inteligentes en Ensayo antes de que el Adobe implemente la producción de la nueva función.
-1. El Servicio de atención al cliente le notifica una vez que la haya completado.
+1. El Servicio de atención al cliente le notifica cuando haya terminado.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo la CDN almacena en caché los recursos. Para cambiar esta configuración:
 
    1. Si utiliza Dynamic Media Classic, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**. Establezca el valor **[!UICONTROL Tiempo de caché de cliente predeterminado en activo]** en 24 o más.
@@ -224,7 +224,7 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
 
 ## ¿Cuándo puedo esperar que mi cuenta esté habilitada con imágenes inteligentes? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Las solicitudes se procesan en el orden en que se reciben en el Servicio de atención al cliente, según la lista de espera.
+Las solicitudes se procesan en el orden en que son recibidas por el Servicio de atención al cliente, según la lista de espera.
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Las imágenes inteligentes determinan si la conversión es beneficiosa o no. Dev
 
 ¿Cómo funciona la optimización del RGPD de imágenes inteligentes con los componentes de Adobe Experience Manager Sites y los visores de Dynamic Media?
 
-* Los componentes principales de Experience Manager Sites están configurados de forma predeterminada para la optimización del RGPD. Para evitar imágenes sobredimensionadas debido a la optimización del RGPD de imágenes inteligentes en el lado del servidor, `dpr=off` siempre se agrega a las imágenes de Dynamic Media de los componentes principales de los sitios del Experience Manager.
+* Los componentes principales de Experience Manager Sites están configurados de forma predeterminada para la optimización del RGPD. Para evitar imágenes sobredimensionadas debido a la optimización del RGPD de imágenes inteligentes en el lado del servidor, `dpr=off` siempre se añade a las imágenes de Dynamic Media de los componentes principales de Experience Manager Sites.
 * Dado que el componente base de Dynamic Media está configurado de forma predeterminada para la optimización del RGPD, para evitar imágenes de tamaño excesivo debido a la optimización del RGPD de imágenes inteligentes en el servidor, `dpr=off` siempre se añade a las imágenes de los componentes de Dynamic Media Foundation. Aunque el cliente anule la selección de la optimización de RGPD en el componente de base de DM, el RGPD de imágenes inteligentes del lado del servidor no se inicia. En resumen, en el componente de base de DM, la optimización del RGPD entra en vigor solo en función de la configuración del nivel de componente de base de DM .
 * Cualquier optimización del RGPD del lado del visor funciona junto con la optimización del RGPD de imágenes inteligentes del lado del servidor y no genera imágenes de tamaño excesivo. En otras palabras, independientemente de dónde gestione el visor el RGPD, como la vista principal solo en un visor con zoom habilitado, no se activan los valores del RGPD de imágenes inteligentes del lado del servidor. Del mismo modo, siempre que los elementos del visualizador, como muestras y miniaturas, no tengan gestión de RGPD, se activa el valor RGPD de imágenes inteligentes del lado del servidor.
 

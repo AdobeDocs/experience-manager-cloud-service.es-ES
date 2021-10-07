@@ -2,15 +2,15 @@
 title: Automatización de contenido para la integración de Creative Cloud
 description: Generar variaciones de los recursos mediante la integración del Creative Cloud
 contentOwner: AG
-feature: Cargar,Procesamiento de recursos,Publicación,Microservicios de Asset compute,Flujo de trabajo
+feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
-
 
 # Generar variaciones de recursos mediante la integración [!DNL Adobe Creative Cloud] {#content-automation}
 
@@ -32,7 +32,7 @@ Los usuarios pueden crear perfiles de procesamiento para automatizar las siguien
 
    ![Ajuste preestablecido de Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Figura: Ajuste preestablecido de Lightroom de Adobe para mejorar la calidad de la imagen de forma coherente para muchas imágenes.*
+   *Figura: Ajuste preestablecido de Adobe Lightroom para mejorar la calidad de la imagen de una manera uniforme para muchas imágenes.*
 
 * **Recorte de imagen**: Utiliza inteligencia artificial para crear una selección alrededor de los objetos salientes y eliminar el fondo con un solo comando.
 
@@ -54,7 +54,7 @@ Los usuarios pueden crear perfiles de procesamiento para automatizar las siguien
 
 Para utilizar perfiles de procesamiento para crear variaciones automáticamente, siga estos pasos:
 
-1. Póngase en contacto con [Adobe Customer Care](https://experienceleague.adobe.com/#support) para recibir la licencia.
+1. Póngase en contacto con [Adobe Customer Support](https://experienceleague.adobe.com/#support) para recibir la licencia.
 
 1. Vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
 

@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -110,7 +110,7 @@ El icono del carril izquierdo aparecerá únicamente si el BPA detecta el uso de
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-Los hallazgos de ACS Commons no deben ser ignorados. Consulte la [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM como Cloud Service.
+Los hallazgos de ACS Commons no deben ser ignorados. Consulte la [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM as a Cloud Service.
 
 
 ### Adobe Experience Manager 6.2 y 6.1 {#aem-specific-versions}
