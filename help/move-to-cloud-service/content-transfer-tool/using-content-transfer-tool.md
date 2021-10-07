@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 37%
+source-wordcount: '3216'
+ht-degree: 36%
 
 ---
 
@@ -50,6 +50,8 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * Si está utilizando índices personalizados, debe asegurarse de configurar los índices personalizados con el nodo `tika` antes de ejecutar la herramienta de transferencia de contenido. Consulte [Preparación de la nueva definición del índice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition) para obtener más información.
 
 * Si tiene intención de realizar recargas, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
+
+* Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
 ## Disponibilidad {#availability}
 
@@ -120,6 +122,8 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
       1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
+      >[!NOTE]
+      >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
       1. **Incluir asignación de usuarios y grupos de IMS**: Seleccione la opción para incluir la asignación de Usuarios y grupos de IMS.
 Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
@@ -132,6 +136,7 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
          >* `/libs`
          >* `/home`
          >* `/etc` (se permite seleccionar algunas  `/etc` rutas en CTT)
+
 
 
 1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **Crear conjunto de migración**.
