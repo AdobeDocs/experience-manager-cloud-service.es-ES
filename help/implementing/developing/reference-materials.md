@@ -1,9 +1,10 @@
 ---
 title: Materiales de referencia de la API
 description: AEM tiene API amplias y potentes que puede aprovechar para su proyecto de experiencia digital.
-source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
+exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '664'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ AEM se basa en varias API de código abierto adicionales.
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Marco web que utiliza un Repositorio de contenido Java (JCR) para almacenar y administrar contenido |
 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Implementación de un Repositorio de Contenido Java (JCR) jerárquico escalable y de alto rendimiento para su uso como base de sitios web modernos de nivel mundial |
-| [Repositorio de contenido Java](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Especificación para la versión 2.0 de JCR |
+| [Repositorio de contenido Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Especificación para la versión 2.0 de JCR |
 | [Apache Felix](https://felix.apache.org) | Implementación del marco y la plataforma de servicios de la iniciativa Open Services Gateway (OSGi) |
 
 ## Directrices de preferencia de API {#guidelines}
@@ -43,7 +44,7 @@ AEM se basa en los cuatro conjuntos principales de API de Java siguientes en ord
 
 | Prioridad | API | Descripción |
 |---|---|---|
-| 1 | [Adobe Experience Manager como Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstracciones de productos, como páginas, recursos, flujos de trabajo, etc. |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | abstracciones de productos, como páginas, recursos, flujos de trabajo, etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST y abstracciones basadas en recursos, como recursos, mapas de valores y solicitudes HTTP. |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstracciones de datos y contenido, como nodos, propiedades y sesiones. |
 | 4 | [Apache Felix](https://felix.apache.org/) | abstracciones de contenedores de aplicaciones OSGi como servicios y componentes (OSGi). |

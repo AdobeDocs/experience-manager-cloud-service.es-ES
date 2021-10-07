@@ -2,14 +2,14 @@
 title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2218'
 ht-degree: 1%
 
 ---
 
-# Referencia del predicado del generador de consultas {#query-builder-predicate-reference}
+# Referencia de predicados del generador de consultas {#query-builder-predicate-reference}
 
 ## General {#general}
 
@@ -167,7 +167,7 @@ No admite la extracción de facetas.
 
 ### hasPermission {#haspermission}
 
-Este predicado restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Este predicado restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda. No admite la extracción de facetas.
 

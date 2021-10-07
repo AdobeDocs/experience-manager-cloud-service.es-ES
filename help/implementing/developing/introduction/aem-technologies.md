@@ -2,9 +2,9 @@
 title: Fundamentos técnicos AEM
 description: Una visión general de los fundamentos técnicos de la AEM, incluyendo cómo AEM está estructurada y las tecnologías fundamentales como JCR, Sling y OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Las capas subyacentes del repositorio de contenido y la lógica empresarial se c
 
 ## Repositorio de contenido Java {#java-content-repository}
 
-El estándar del repositorio de contenido Java (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido. El responsable de la especificación es Adobe Research (Suiza) AG.
+El estándar del repositorio de contenido Java (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido. El responsable de la especificación es Adobe Research (Suiza) AG.
 
-El paquete [JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*` se utiliza para el acceso directo y la manipulación del contenido del repositorio.
+El paquete [JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*` se utiliza para el acceso directo y la manipulación del contenido del repositorio.
 
 AEM se basa en un JCR.
 
@@ -106,7 +106,7 @@ Podemos dividirla en sus partes compuestas:
 * **sufijo** : se puede utilizar para especificar información adicional
 * **param(s)** : cualquier parámetro necesario para el contenido dinámico
 
-#### De URL a contenido y scripts {#from-url-to-content-and-scripts}
+#### De URL a contenido y secuencias de comandos {#from-url-to-content-and-scripts}
 
 Uso de los principios de descomposición de URL:
 
@@ -129,7 +129,7 @@ La solicitud se desglosa y se extrae la información necesaria. Se busca en el r
 
 Sling también permite que otras cosas que no sean nodos JCR sean recursos, pero esta es una característica avanzada.
 
-### Localización del script {#locating-the-script}
+### Localización de la secuencia de comandos {#locating-the-script}
 
 Cuando se encuentra el recurso apropiado (nodo de contenido), se extrae el **tipo de recurso de sling**. Esta es una ruta, que localiza la secuencia de comandos que se utilizará para procesar el contenido.
 
@@ -280,7 +280,7 @@ Esto le permite realizar las siguientes acciones en cualquiera de los paquetes d
 * Ver el estado actual
 * Acceda a información más detallada (por ejemplo, nombre simbólico, versión, ubicación, etc.) sobre los paquetes específicos
 
-Consulte [Configuración de OSGi para AEM como Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obtener más información.
+Consulte [Configuración de OSGi para AEM](/help/implementing/deploying/configuring-osgi.md) as a Cloud Service para obtener más información.
 
 ## Estructura dentro del repositorio {#structure-within-the-repository}
 
