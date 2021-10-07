@@ -3,9 +3,9 @@ title: Preguntas frecuentes sobre la entrega de contenido HTTP2
 description: Obtenga información sobre la entrega de contenido HTTP2.
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 ## ¿Cuál es el proceso para habilitar HTTP/2 para mi cuenta de Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Utilice el Admin Console para crear un caso de asistencia ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) y solicitar cambiar a HTTP/2; no se realiza automáticamente.
+[Utilice el Admin Console para crear un caso de asistencia ](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) y solicitar cambiar a HTTP/2; no se realiza automáticamente.
 
 1. Proporcione la siguiente información en su caso de asistencia:
 
@@ -70,7 +70,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
    Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
-   1. La asistencia técnica le añade a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
+   1. La asistencia al cliente le agrega a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
    1. Cuando el Adobe esté listo para gestionar su solicitud, el Servicio de atención al cliente se pondrá en contacto con usted para coordinar la transición y establecer una fecha objetivo.
    1. Se le notificará una vez finalizada y podrá verificar que la transición a HTTP2 se ha realizado correctamente.
 
@@ -78,7 +78,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 ## ¿Cuándo puedo esperar que se pase a HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Las solicitudes se procesan en el orden en que son recibidas por el servicio de asistencia técnica.
+Las solicitudes se procesan en el orden en que reciben la asistencia al cliente.
 
 >[!NOTE]
 >

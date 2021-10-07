@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 12%
@@ -178,7 +178,7 @@ Junto con el flujo de trabajo de automatización para activar Brand Portal en AE
 
 >[!NOTE]
 >
->Póngase en contacto con el servicio de asistencia al Adobe si tiene algún problema al activar su inquilino de Brand Portal.
+>Póngase en contacto con el servicio de atención al cliente si tiene algún problema al activar su inquilino de Brand Portal.
 
 ## Configuración manual mediante Adobe Developer Console {#manual-configuration}
 

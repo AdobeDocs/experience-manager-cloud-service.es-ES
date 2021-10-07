@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 3%
+source-wordcount: '690'
+ht-degree: 2%
 
 ---
 
@@ -101,6 +101,10 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 >
 >Si un autor intenta publicar un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
 
+Tan pronto como se publica un modelo, está *bloqueado* en modo READ-ONLY en el autor. Esto tiene como objetivo evitar cambios que pudieran provocar errores en los esquemas y consultas de GraphQL existentes, especialmente en el entorno de publicación. Está indicado en la consola por **Locked**.
+
+Cuando el modelo está **bloqueado** (en modo READ-ONLY), puede ver el contenido y la estructura de los modelos, pero no puede editarlos directamente; aunque puede administrar modelos **bloqueados** desde la consola o el editor de modelos.
+
 ## Siguientes pasos {#whats-next}
 
 Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a crear sus propios modelos de fragmento de contenido.
@@ -126,6 +130,8 @@ Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a c
       * [Publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [Cancelación de la publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+
+      * [Modelos de fragmento de contenido bloqueados (publicados)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Guías de introducción
 

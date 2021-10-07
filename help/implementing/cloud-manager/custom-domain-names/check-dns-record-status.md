@@ -2,9 +2,9 @@
 title: Comprobación del estado de registro DNS
 description: Comprobación del estado de registro DNS
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager realiza una búsqueda DNS del nombre de dominio y muestra uno de l
 detectadoEl estado de DNS no se detectará hasta que el nombre de dominio personalizado se haya verificado e implementado correctamente. Este estado también se observa cuando el nombre de dominio personalizado está en proceso de eliminación.
 
 * **DNS resuelve**
-incorrectamenteIndica que la configuración de los registros DNS aún no se ha resuelto ni se ha señalado o que es errónea. Se notificará automáticamente a un representante de Adobe.
+incorrectamenteIndica que la configuración de los registros DNS aún no se ha resuelto ni se ha señalado o que es errónea.
 
    >[!NOTE]
    >Debe configurar un `CNAME` o `A-record` siguiendo las instrucciones correspondientes. Consulte Configuración de DNS para obtener más información. Cuando esté listo, debe seleccionar el icono **resolve again** junto al estado.
