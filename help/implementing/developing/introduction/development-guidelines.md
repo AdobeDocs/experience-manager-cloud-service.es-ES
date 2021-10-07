@@ -2,10 +2,10 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 2%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -169,6 +169,68 @@ Los clientes no tendrán acceso a las herramientas para desarrolladores para ent
 
 El Adobe supervisa el rendimiento de la aplicación y toma medidas para solucionar el problema si se observa deterioro. En este momento, no se pueden respetar las métricas de la aplicación.
 
+## Dirección IP de salida dedicada {#dedicated-egress-ip-address}
+
+Si se solicita, AEM as a Cloud Service proporcionará una dirección IP estática y dedicada para el tráfico saliente HTTP (puerto 80) y HTTPS (puerto 443) programado en el código Java.
+
+### Ventajas {#benefits}
+
+Esta dirección IP dedicada puede mejorar la seguridad al integrarse con proveedores de SaaS (como un proveedor CRM) u otras integraciones fuera de AEM as a Cloud Service que ofrecen una lista de permitidos de direcciones IP. Al agregar la dirección IP dedicada a la lista de permitidos, se garantiza que solo se permitirá el flujo del tráfico desde el AEM Cloud Service del cliente al servicio externo. Esto se suma al tráfico de cualquier otra IP permitida.
+
+Sin la función de dirección IP dedicada habilitada, el tráfico proveniente de AEM flujos as a Cloud Service a través de un conjunto de IP compartidas con otros clientes.
+
+### Configuración {#configuration}
+
+Para habilitar una dirección IP dedicada, envíe una solicitud al Servicio de atención al cliente, que proporcionará la información de la dirección IP. La solicitud debe especificar cada entorno y se deben realizar solicitudes adicionales si nuevos entornos necesitan la función después de la solicitud inicial. No se admiten entornos de programa de espacio aislado.
+
+### Uso de las funciones {#feature-usage}
+
+La función es compatible con el código Java o las bibliotecas que resultan en tráfico saliente, siempre que utilicen propiedades estándar del sistema Java para las configuraciones de proxy. En la práctica, esto debería incluir las bibliotecas más comunes.
+
+A continuación se muestra un ejemplo de código:
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+Algunas bibliotecas requieren una configuración explícita para utilizar las propiedades estándar del sistema Java en las configuraciones de proxy.
+
+Ejemplo con Apache HttpClient, que requiere llamadas explícitas a
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) o use
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
+
+```java
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpGet request = new HttpGet(finalUrl.toURI());
+  request.setHeader("Accept", "application/json");
+  request.setHeader("X-API-KEY", apiKey);
+  HttpResponse response = httpClient.execute(request);
+  String result = EntityUtils.toString(response.getEntity());
+}
+```
+
+La misma IP dedicada se aplica a todos los programas de un cliente en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica tanto a los servicios de autor como de publicación.
+
+Solo se admiten puertos HTTP y HTTPS. Esto incluye HTTP/1.1, así como HTTP/2 cuando está cifrado.
+
+### Consideraciones sobre la depuración {#debugging-considerations}
+
+Para validar que el tráfico es realmente saliente en la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, puede resultar útil llamar a un servicio de depuración como [https://ifconfig.me/ip](https://ifconfig.me/ip), que devolverá la dirección IP que realiza la llamada.
+
 ## Envío de correo electrónico {#sending-email}
 
 AEM as a Cloud Service requiere que el correo saliente esté cifrado. Las secciones siguientes describen cómo solicitar, configurar y enviar correos electrónicos.
@@ -177,19 +239,20 @@ AEM as a Cloud Service requiere que el correo saliente esté cifrado. Las seccio
 >
 >El servicio de correo se puede configurar con compatibilidad con OAuth2. Para obtener más información, consulte [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md).
 
-### Activación del correo electrónico saliente {#enabling-outbound-email}
+### Solicitud de acceso {#requesting-access}
 
-De forma predeterminada, los puertos utilizados para enviar están desactivados. Para activarlo, configure [red avanzada](/help/security/configuring-advanced-networking.md), asegurándose de establecer para cada entorno necesario las reglas de reenvío de puertos del extremo `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` para que el tráfico pueda pasar por el puerto 465 (si es compatible con el servidor de correo) o el puerto 587 (si el servidor de correo lo requiere y también aplica TLS en ese puerto).
+De forma predeterminada, el correo electrónico saliente está desactivado. Para activarlo, envíe un ticket de asistencia con:
 
-Se recomienda configurar redes avanzadas con un parámetro `kind` establecido en `flexiblePortEgress`, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible. Si es necesaria una dirección IP de salida única, elija un parámetro `kind` de `dedicatedEgressIp`. Si ya ha configurado VPN por otros motivos, también puede utilizar la dirección IP única que proporciona esa variación de red avanzada.
-
-Debe enviar un correo electrónico a través de un servidor de correo en lugar de enviarlo directamente a los clientes de correo electrónico. De lo contrario, los correos electrónicos podrían bloquearse.
+1. El nombre de dominio completo del servidor de correo (por ejemplo, `smtp.sendgrid.net`)
+1. El puerto que se va a utilizar. Debe ser puerto 465 si es compatible con el servidor de correo; de lo contrario, puerto 587. Tenga en cuenta que el puerto 587 solo se puede usar si el servidor de correo requiere y aplica TLS en ese puerto
+1. ID de programa e ID de entorno para los entornos desde los que desee enviar el correo
+1. Indica si se necesita acceso SMTP en el autor, la publicación o ambos.
 
 ### Envío de correos electrónicos {#sending-emails}
 
 El [servicio OSGI del servicio de correo de CQ Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) debe usarse y los correos electrónicos deben enviarse al servidor de correo indicado en la solicitud de asistencia, en lugar de enviarse directamente a los destinatarios.
 
-AEM as a Cloud Service requiere que el correo se envíe a través del puerto 465. Si un servidor de correo no admite el puerto 465, se puede utilizar el puerto 587, siempre y cuando la opción TLS esté habilitada.
+AEM CS requiere que el correo se envíe a través del puerto 465. Si un servidor de correo no admite el puerto 465, se puede utilizar el puerto 587, siempre y cuando la opción TLS esté habilitada.
 
 >[!NOTE]
 >
@@ -212,8 +275,6 @@ Si se ha solicitado el puerto 587 (solo se permite si el servidor de correo no a
 * establezca `smtp.ssl` en `false`
 
 La propiedad `smtp.starttls` se establecerá automáticamente mediante AEM as a Cloud Service durante la ejecución a un valor apropiado. Por lo tanto, si `smtp.tls` se establece en true, `smtp.startls` se omite. Si `smtp.ssl` se establece en false, `smtp.starttls` se establece en true. Esto es independientemente de los valores `smtp.starttls` establecidos en la configuración OSGI.
-
-El servicio de correo puede configurarse opcionalmente con compatibilidad con OAuth2. Para obtener más información, consulte [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md).
 
 ## [!DNL Assets] directrices de desarrollo y casos de uso {#use-cases-assets}
 

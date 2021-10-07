@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Los usuarios pueden crear perfiles de procesamiento para automatizar las siguien
 
 Para utilizar perfiles de procesamiento para crear variaciones automáticamente, siga estos pasos:
 
-1. Póngase en contacto con [Adobe Customer Support](https://experienceleague.adobe.com/#support) para recibir la licencia.
+1. Póngase en contacto con [Adobe Customer Care](https://experienceleague.adobe.com/#support) para recibir la licencia.
 
 1. Vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**.
 

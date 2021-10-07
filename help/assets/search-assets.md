@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4897'
+source-wordcount: '4898'
 ht-degree: 6%
 
 ---
@@ -157,7 +157,7 @@ Puede buscar recursos en función de los valores exactos de los campos de metada
 | Creador | creador:John |
 | Lugar de residencia | ubicación:NA |
 | Descripción | description: &quot;Imagen de muestra&quot; |
-| Herramienta Creador | creatortool:&quot;Adobe Photoshop&quot; |
+| Herramienta Creador | creatortool: &quot;Adobe Photoshop CC 2015&quot; |
 | Propietario del copyright | copyright:&quot;Adobe Systems&quot; |
 | Colaborador | colaborador:John |
 | Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |

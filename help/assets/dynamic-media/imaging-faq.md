@@ -4,7 +4,7 @@ description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplica
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 1%
@@ -213,10 +213,10 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
       Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
    1. Indique si desea que funcione a través de HTTP/2.
 
-1. El servicio de asistencia al cliente de Adobe le agrega a la lista de espera de cliente de imágenes inteligentes en función del orden en que se envíen las solicitudes.
+1. El Servicio de atención al cliente de Adobe le agrega a la lista de espera de cliente de imágenes inteligentes en función del orden en que se envían las solicitudes.
 1. Cuando el Adobe está listo para gestionar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo.
 1. **Opcional**: Si lo desea, puede probar las imágenes inteligentes en Ensayo antes de que el Adobe implemente la producción de la nueva función.
-1. El Servicio de atención al cliente le notifica cuando haya terminado.
+1. El Servicio de atención al cliente le notifica una vez que la haya completado.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo la CDN almacena en caché los recursos. Para cambiar esta configuración:
 
    1. Si utiliza Dynamic Media Classic, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**. Establezca el valor **[!UICONTROL Tiempo de caché de cliente predeterminado en activo]** en 24 o más.
@@ -224,7 +224,7 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
 
 ## ¿Cuándo puedo esperar que mi cuenta esté habilitada con imágenes inteligentes? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-Las solicitudes se procesan en el orden en que son recibidas por el Servicio de atención al cliente, según la lista de espera.
+Las solicitudes se procesan en el orden en que se reciben en el Servicio de atención al cliente, según la lista de espera.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ Sí. Para desactivar la optimización de la red y el RGPD en su empresa, cree un
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? {#tuning-settings}
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que pueda establecer? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? {#minimum-maximum}
 
