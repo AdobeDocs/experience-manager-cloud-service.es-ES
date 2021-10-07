@@ -1,9 +1,9 @@
 ---
 title: Consideraciones importantes sobre la herramienta de asignación de usuarios
 description: Consideraciones importantes sobre la herramienta de asignación de usuarios
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -35,3 +35,7 @@ Se registrarán los siguientes casos específicos:
 * Si la instancia de AEM Cloud Service de destino tiene un usuario con un nombre de usuario diferente pero la misma dirección de correo electrónico que uno de los usuarios de la instancia de AEM de origen y la Asignación de usuarios está habilitada, se escribirá un mensaje de error en los registros y el usuario de AEM de origen no se transferirá, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
 
 * Si dos usuarios de la instancia de AEM de origen tienen la misma dirección de correo electrónico y la Asignación de usuarios está habilitada, se escribirá un mensaje de error en los registros y uno de los usuarios de origen AEM no se transferirá, ya que solo se permite un usuario con una dirección de correo electrónico determinada en el sistema de destino.
+
+### Siguientes pasos {#whats-next}
+
+Una vez que conozca las consideraciones importantes y los casos excepcionales, ya estará listo para usar la herramienta. Consulte [Uso de la herramienta de asignación de usuarios](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) para obtener más información.

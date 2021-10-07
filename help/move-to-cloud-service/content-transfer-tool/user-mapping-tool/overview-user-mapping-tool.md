@@ -1,9 +1,9 @@
 ---
 title: Información general sobre la herramienta de asignación de usuarios
 description: Información general sobre la herramienta de asignación de usuarios
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '363'
 ht-degree: 1%
 
 ---
@@ -27,3 +27,7 @@ Un cambio importante en AEM as a Cloud Service es el uso completamente integrado
 ## Herramienta de asignación de usuarios {#mapping-tool}
 
 La herramienta de transferencia de contenido (sin asignación de usuarios) migrará todos los usuarios y grupos asociados con el contenido que se migra. La herramienta de asignación de usuarios forma parte de la herramienta de transferencia de contenido y su único propósito es modificar los usuarios y grupos de modo que IMS los reconozca correctamente, la funcionalidad de inicio de sesión único que utiliza AEM as a Cloud Service. Una vez realizadas estas modificaciones, la herramienta de transferencia de contenido migra los usuarios y grupos del contenido especificado de la forma habitual.
+
+### Siguientes pasos {#whats-next}
+
+Una vez que sepa qué es una herramienta de asignación de usuarios, ya estará listo para revisar consideraciones importantes y casos excepcionales antes de utilizar la herramienta de asignación de usuarios. Consulte [Consideraciones importantes para la herramienta de asignación de usuarios](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) para obtener más información.
