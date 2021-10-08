@@ -2,7 +2,7 @@
 title: Externalización de direcciones URL
 description: El externalizador es un servicio OSGi que le permite transformar mediante programación una ruta de recurso en una dirección URL externa y absoluta.
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 En AEM, **Externalizer** es un servicio OSGi que le permite transformar mediante programación una ruta de recursos (p. ej. `/path/to/my/page`) en una dirección URL externa y absoluta (por ejemplo, `https://www.mycompany.com/path/to/my/page`) añadiendo un prefijo a la ruta con un DNS preconfigurado.
 
-Dado que una instancia de AEM como Cloud Service no puede saber su URL visible externamente y que a veces se debe crear un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas URL externas y crearlas.
+Dado que una instancia as a Cloud Service AEM no puede saber su URL visible externamente y que a veces se debe crear un vínculo fuera del ámbito de la solicitud, este servicio proporciona un lugar central para configurar esas URL externas y crearlas.
 
-Este artículo explica cómo configurar el servicio externalizador y cómo utilizarlo. Para obtener detalles técnicos del servicio, consulte [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+Este artículo explica cómo configurar el servicio externalizador y cómo utilizarlo. Para obtener detalles técnicos del servicio, consulte [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).
 
-## Comportamiento predeterminado del externalizador y cómo anular {#default-behavior}
+## Comportamiento predeterminado del externalizador y cómo ignorarlo {#default-behavior}
 
 De forma predeterminada, el servicio externalizador tiene valores como `author-p12345-e6789.adobeaemcloud.com` y `publish-p12345-e6789.adobeaemcloud.com`.
 
-Para anular estos valores, utilice variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM como Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) y configure las variables predefinidas `AEM_CDN_DOMAIN_AUTHOR` y `AEM_CDN_DOMAIN_PUBLISH` .
+Para anular estos valores, utilice variables de entorno de Cloud Manager como se describe en el artículo [Configuración de OSGi para AEM ](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) as a Cloud Service y configuración de las variables predefinidas `AEM_CDN_DOMAIN_AUTHOR` y `AEM_CDN_DOMAIN_PUBLISH` .
 
 ## Configuración del servicio externalizador {#configuring-the-externalizer-service}
 
@@ -29,7 +29,7 @@ El servicio externalizador le permite definir de forma centralizada el dominio q
 
 >[!NOTE]
 >
->Al igual que al aplicar cualquier configuración [OSGi para AEM como Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) los siguientes pasos deben realizarse en una instancia de desarrollador local y luego comprometerse con el código del proyecto para su implementación.
+>Al igual que al aplicar cualquier configuración [OSGi para AEM as a Cloud Service,](/help/implementing/deploying/overview.md#osgi-configuration) los siguientes pasos deben realizarse en una instancia de desarrollador local y luego comprometerse con el código del proyecto para su implementación.
 
 Para definir una asignación de dominio para el servicio externalizador:
 
@@ -79,7 +79,7 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio ex
 
 >[!NOTE]
 >
->No se deben crear vínculos absolutos en el contexto de HTML. Por lo tanto, esta utilidad no debe utilizarse en tales casos.
+>No se deben crear vínculos absolutos en el contexto del HTML. Por lo tanto, esta utilidad no debe utilizarse en tales casos.
 
 * **Para externalizar una ruta con el dominio &quot;publicar&quot;:**
 
@@ -125,4 +125,4 @@ Esta sección muestra algunos ejemplos de cómo se puede utilizar el servicio ex
 
 >[!TIP]
 >
->Puede encontrar más ejemplos en [Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html).
+>Puede encontrar más ejemplos en [Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html).

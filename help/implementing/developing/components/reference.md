@@ -2,7 +2,7 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores sobre los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Antes de empezar a configurar o codificar realmente su componente, debe pregunta
 * ¿Necesitará lógica el componente para seleccionar o manipular el contenido?
    * La lógica debe mantenerse separada de la capa de la interfaz de usuario. HTL está diseñado para ayudar a garantizar que esto suceda.
 * ¿Necesitará su componente el formato CSS?
-   * El formato CSS debe mantenerse separado de las definiciones de componentes. Defina convenciones para asignar nombres a los elementos HTML de modo que pueda modificarlos a través de archivos CSS externos.
+   * El formato CSS debe mantenerse separado de las definiciones de componentes. Defina las convenciones para asignar un nombre a los elementos del HTML, de modo que pueda modificarlos a través de archivos CSS externos.
 * ¿Qué implicaciones de seguridad puede presentar su nuevo componente?
 
 ### Reutilización de componentes existentes {#reusing-components}
@@ -47,15 +47,15 @@ Los componentes principales también ofrecen [patrones de personalización claro
 
 Los componentes también se pueden redefinir con una [superposición](/help/implementing/developing/introduction/overlays.md) basada en la lógica de ruta de búsqueda. Sin embargo, en este caso, la [fusión de recursos de Sling](/help/implementing/developing/introduction/sling-resource-merger.md) no se activará y `/apps` debe definir la superposición completa.
 
-#### Ampliación de los cuadros de diálogo de componentes {#extending-component-dialogs}
+#### Ampliación de cuadros de diálogo de componentes {#extending-component-dialogs}
 
 También es posible anular un cuadro de diálogo de componente utilizando la fusión de recursos de Sling y definiendo la propiedad `sling:resourceSuperType`.
 
 Esto significa que solo necesita redefinir las diferencias necesarias, en lugar de redefinir todo el cuadro de diálogo.
 
-### Lógica de contenido y marcado de renderización {#content-logic-and-rendering-markup}
+### Lógica de contenido y marca de procesamiento  {#content-logic-and-rendering-markup}
 
-El componente se procesará con [HTML.](https://www.w3schools.com/htmL/html_intro.asp) El componente debe definir el HTML necesario para tomar el contenido requerido y luego procesarlo según sea necesario, tanto en el entorno de autor como de publicación.
+El componente se procesará con el HTML [.](https://www.w3schools.com/htmL/html_intro.asp) El componente debe definir el HTML necesario para tomar el contenido requerido y luego procesarlo según sea necesario, tanto en el entorno de autor como de publicación.
 
 Se recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
 
@@ -65,7 +65,7 @@ Esta lógica (opcional) se puede implementar de diferentes maneras y se invoca d
 
 * Al utilizar Java - [La HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. Esto le permite utilizar código Java para implementar la lógica de selección y configuración del contenido del componente.
 * Uso de JavaScript: [La API de uso de JavaScript de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que un archivo HTL acceda al código de ayuda escrito en JavaScript. Esto le permite utilizar código JavaScript para implementar la lógica de selección y configuración del contenido del componente.
-* Uso de bibliotecas del lado del cliente : los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Consulte el documento [Uso de bibliotecas del lado del cliente en AEM como Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
+* Uso de bibliotecas del lado del cliente : los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Consulte el documento [Uso de bibliotecas del lado del cliente en AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obtener más información.
 
 ## Estructura de componentes {#structure}
 
@@ -86,7 +86,7 @@ Un elemento clave de la estructura es el tipo de recurso.
 
 Esta es una abstracción que ayuda a garantizar que, incluso cuando la apariencia cambie con el tiempo, la intención se mantenga en el tiempo.
 
-### Definición de componente {#component-definition}
+### Definición de componentes {#component-definition}
 
 La definición de un componente se puede desglosar de la siguiente manera:
 
@@ -143,7 +143,7 @@ Para cancelar la herencia de los iconos de los supercomponentes, si se configura
 
 La [Consola de componentes](/help/sites-cloud/authoring/features/components-console.md#component-details) muestra cómo se define el icono de un componente en particular.
 
-#### Ejemplo de icono SVG {#svg-icon-example}
+#### Ejemplo de icono de SVG {#svg-icon-example}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -171,7 +171,7 @@ Un componente es un nodo de tipo `cq:Component` y tiene las siguientes propiedad
 | `cq:dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de edición para el componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta es la definición del cuadro de diálogo de diseño para el componente. |
 | `cq:editConfig` | `cq:EditConfig` | Esto define la [configuración de edición del componente.](#edit-behavior) |
-| `cq:htmlTag` | `nt:unstructured` | Esto devuelve atributos de etiqueta adicionales que se agregan a la etiqueta HTML que los rodea. Habilita la adición de atributos a los divs generados automáticamente. |
+| `cq:htmlTag` | `nt:unstructured` | Esto devuelve atributos de etiqueta adicionales que se agregan a la etiqueta de HTML circundante. Habilita la adición de atributos a los divs generados automáticamente. |
 | `cq:noDecoration` | `Boolean` | Si es true, el componente no se procesa con clases div y css generadas automáticamente. |
 | `cq:template` | `nt:unstructured` | Si se encuentra, este nodo se utilizará como plantilla de contenido cuando el componente se añada desde el explorador de componentes. |
 | `jcr:created` | `Date` | Esta es la fecha de creación del componente. |
@@ -219,7 +219,7 @@ Dentro del cuadro de diálogo, se definen los campos individuales:
 
 ![Campos de la definición de cuadro de diálogo del componente Título](assets/components-title-dialog-items.png)
 
-### Diálogo de diseño {#design-dialogs}
+### Cuadros de diálogo de diseño {#design-dialogs}
 
 Los cuadros de diálogo de diseño son similares a los cuadros de diálogo utilizados para editar y configurar contenido, pero proporcionan la interfaz para que los autores de plantillas proconfiguren y proporcionen detalles de diseño para ese componente en una plantilla de página. Los autores de contenido utilizan las plantillas de página para crear páginas de contenido. Consulte la [documentación de plantilla](/help/sites-cloud/authoring/features/templates.md) para obtener más información sobre cómo se crean las plantillas.
 
@@ -258,7 +258,7 @@ Más específicamente, la interfaz de usuario de Granite proporciona una serie d
 
 Una vez creado el tipo de recurso, puede crear una instancia del campo añadiendo un nuevo nodo en el cuadro de diálogo. La propiedad `sling:resourceType` hace referencia al tipo de recurso que acaba de introducir.
 
-#### Acceso a los campos de cuadro de diálogo {#access-to-dialog-fields}
+#### Acceso a campos de cuadro de diálogo {#access-to-dialog-fields}
 
 También puede utilizar condiciones de procesamiento (`rendercondition`) para controlar quién tiene acceso a pestañas/campos específicos en el cuadro de diálogo; por ejemplo:
 
@@ -322,13 +322,13 @@ Hay muchas configuraciones existentes en AEM. Puede buscar fácilmente propiedad
 Los componentes siempre deben representar algún HTML que sea visible para el autor, incluso cuando el componente no tenga contenido. De lo contrario, podría desaparecer visualmente de la interfaz del editor, haciendo que esté técnicamente presente pero invisible en la página y en el editor. En tal caso, los autores no podrán seleccionar ni interactuar con el componente vacío.
 
 Por este motivo, los componentes deben representar un marcador de posición siempre que no muestren ningún resultado visible cuando la página se procese en el editor de páginas (cuando el modo WCM sea `edit` o `preview`).
-El marcado HTML típico de un marcador de posición es el siguiente:
+El marcado de HTML típico de un marcador de posición es el siguiente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-El script HTL típico que procesa el marcador de posición HTML anterior es el siguiente:
+El script HTL típico que procesa el HTML de marcador de posición anterior es el siguiente:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -381,7 +381,7 @@ La siguiente configuración habilita la edición de entrada del componente y def
         editorType="plaintext"/>
 ```
 
-### Gestión de eventos de campo - cq:listeners {#cq-listeners}
+### Gestión de eventos de campo - cq:oyeners {#cq-listeners}
 
 El método para gestionar eventos en campos de diálogo se realiza con oyentes en una [biblioteca de cliente personalizada.](/help/implementing/developing/introduction/clientlibs.md)
 
@@ -440,7 +440,7 @@ Con la siguiente configuración, la página se actualiza después de que el comp
 
 La validación de campos en la interfaz de usuario de Granite y los widgets de la interfaz de usuario de Granite se realiza mediante la API `foundation-validation`. Consulte la [`foundation-valdiation` documentación de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html) para obtener más información.
 
-### Detección de disponibilidad del cuadro de diálogo {#dialog-ready}
+### Detección de la disponibilidad del cuadro de diálogo {#dialog-ready}
 
 Si tiene un JavaScript personalizado que debe ejecutarse únicamente cuando el cuadro de diálogo esté disponible y listo, debe escuchar el evento `dialog-ready` .
 
@@ -450,7 +450,7 @@ Este evento se activa cada vez que se carga (o recarga) el cuadro de diálogo y 
 
 ## Comportamiento de vista previa {#preview-behavior}
 
-La cookie [WCM Mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) se establece al cambiar al modo de vista previa incluso cuando la página no se actualiza.
+La cookie [WCM Mode](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) se establece al cambiar al modo de vista previa incluso cuando la página no se actualiza.
 
 Para los componentes con una renderización que son sensibles al modo WCM, deben definirse para actualizarse específicamente y luego depender del valor de la cookie.
 

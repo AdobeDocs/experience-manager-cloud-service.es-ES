@@ -2,7 +2,7 @@
 title: Referencia de predicados del generador de consultas
 description: Referencia de predicado para la API de Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 1%
@@ -201,7 +201,7 @@ Admite la extracción de facetas y proporciona dos bloques para los recursos pri
 
 ### memberOf {#memberof}
 
-Este predicado encuentra elementos que son miembros de una [colección de recursos de sling](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Este predicado encuentra elementos que son miembros de una [colección de recursos de sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 

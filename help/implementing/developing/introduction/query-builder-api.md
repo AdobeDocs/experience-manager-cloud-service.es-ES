@@ -2,7 +2,7 @@
 title: API del Generador de consultas
 description: La funcionalidad del Generador de consultas de Asset Share se expone a través de una API de Java y una API de REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 El Generador de consultas ofrece una forma sencilla de consultar el repositorio de contenido de AEM. La funcionalidad se expone a través de una API de Java y una API de REST. Este documento describe estas API.
 
-El generador de consultas del lado del servidor ([`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)) aceptará una descripción de consulta, creará y ejecutará una consulta XPath, opcionalmente filtrará el conjunto de resultados y también extraerá facetas, si lo desea.
+El generador de consultas del lado del servidor ([`QueryBuilder`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) aceptará una descripción de consulta, creará y ejecutará una consulta XPath, opcionalmente filtrará el conjunto de resultados y también extraerá facetas, si lo desea.
 
-La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la función `jcr:contains()` en XPath.
+La descripción de la consulta es simplemente un conjunto de predicados ([`Predicate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Algunos ejemplos son un predicado de texto completo, que corresponde a la función `jcr:contains()` en XPath.
 
-Para cada tipo de predicado, hay un componente evaluador ([`PredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe cómo manejar ese predicado específico para XPath, filtrado y extracción de facetas. Es muy fácil crear evaluadores personalizados, que están conectados a través del tiempo de ejecución del componente OSGi.
+Para cada tipo de predicado, hay un componente evaluador ([`PredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe cómo manejar ese predicado específico para XPath, filtrado y extracción de facetas. Es muy fácil crear evaluadores personalizados, que están conectados a través del tiempo de ejecución del componente OSGi.
 
 La API de REST proporciona acceso a exactamente las mismas funciones a través de HTTP con respuestas enviadas en JSON.
 
@@ -49,7 +49,7 @@ Para el servlet JSON `QueryBuilder`, cada ejemplo incluye un enlace de ejemplo a
 >
 >Para ver los datos JSON devueltos en su navegador, es posible que desee utilizar un complemento como JSONView para Firefox.
 
-### Devolución de todos los resultados {#returning-all-results}
+### Devolver todos los resultados {#returning-all-results}
 
 La siguiente consulta **devolverá diez resultados** (o, para ser precisos, un máximo de diez), pero le informará del **Número de visitas:** que están realmente disponibles:
 
@@ -125,7 +125,7 @@ De forma predeterminada, el Generador de consultas también proporcionaría el n
 
 Por ejemplo, la interfaz de usuario puede adaptar el siguiente enfoque:
 
-* Obtenga y muestre el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o total en la respuesta `querybuilder.json`) menor o igual que 100;
+* Obtenga y muestre el recuento preciso del número total de visitas ([SearchResult.getTotalMatches()](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) o total en la respuesta `querybuilder.json`) menor o igual que 100;
 * Establezca `guessTotal` en 100 mientras realiza la llamada al Generador de consultas.
 
 * La respuesta puede tener el siguiente resultado:
@@ -146,7 +146,7 @@ orderby=@jcr:content/jcr:lastModified
 orderby.sort=desc
 ```
 
-### Buscar todas las páginas y ordenarlas por última vez {#find-all-pages-and-order-them-by-last-modified}
+### Buscar todas las páginas y ordenarlas por última vez modificadas {#find-all-pages-and-order-them-by-last-modified}
 
 `http://<host>:<port>/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified`
 
@@ -252,7 +252,7 @@ type=cq:Page
 2_property.value=Cycling Tuscany
 ```
 
-### Buscar varios valores de propiedad {#search-for-multiple-property-values}
+### Buscar valores de varias propiedades {#search-for-multiple-property-values}
 
 Para evitar grupos grandes cuando desee buscar valores múltiples de una propiedad (`"A" or "B" or "C"`), puede proporcionar valores múltiples al predicado `property`:
 
@@ -347,13 +347,13 @@ p.nodedepth=5
 
 Para obtener más predicados, consulte la página [Referencia del predicado del generador de consultas](query-builder-predicates.md).
 
-También puede comprobar el [Javadoc para las `PredicateEvaluator` clases](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc para estas clases contiene la lista de propiedades que puede utilizar.
+También puede comprobar el [Javadoc para las `PredicateEvaluator` clases](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). El Javadoc para estas clases contiene la lista de propiedades que puede utilizar.
 
-El prefijo del nombre de clase (por ejemplo, `similar` en [`SimilarityPredicateEvaluator`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la *propiedad principal* de la clase. Esta propiedad también es el nombre del predicado que se va a usar en la consulta (en minúsculas).
+El prefijo del nombre de clase (por ejemplo, `similar` en [`SimilarityPredicateEvaluator`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) es la *propiedad principal* de la clase. Esta propiedad también es el nombre del predicado que se va a usar en la consulta (en minúsculas).
 
 Para estas propiedades principales, puede abreviar la consulta y utilizar `similar=/content/en` en lugar de la variante `similar.similar=/content/en` completa. El formulario completo debe utilizarse para todas las propiedades no principales de una clase.
 
-## Ejemplo de uso de API de Query Builder {#example-query-builder-api-usage}
+## Ejemplo de uso de la API de Query Builder {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -421,13 +421,13 @@ Las consultas se pueden almacenar en el repositorio para que pueda utilizarlas m
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Al utilizar el método [`QueryBuilder#storeQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), el `Query` dado se almacena en el repositorio como archivo o como propiedad según el valor del argumento `createFile`. El siguiente ejemplo muestra cómo guardar un `Query` en la ruta `/mypath/getfiles` como archivo:
+Al utilizar el método [`QueryBuilder#storeQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-), el `Query` dado se almacena en el repositorio como archivo o como propiedad según el valor del argumento `createFile`. El siguiente ejemplo muestra cómo guardar un `Query` en la ruta `/mypath/getfiles` como archivo:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Las consultas almacenadas anteriormente se pueden cargar desde el repositorio utilizando el método [`QueryBuilder#loadQuery`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
+Las consultas almacenadas anteriormente se pueden cargar desde el repositorio utilizando el método [`QueryBuilder#loadQuery`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#loadQuery-java.lang.String-javax.jcr.Session-):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
@@ -439,7 +439,7 @@ Por ejemplo, un `Query` almacenado en la ruta `/mypath/getfiles` se puede cargar
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 ```
 
-## Prueba y depuración {#testing-and-debugging}
+## Pruebas y depuración {#testing-and-debugging}
 
 Para reproducir y depurar consultas de Query Builder, puede utilizar la consola de Debugger de Query Builder en
 
@@ -458,13 +458,13 @@ o alternativamente, el servlet JSON de Query Builder en
 Explique las **todas** consultas durante el ciclo de desarrollo con respecto al conjunto de índices de destino.
 
 1. Habilite los registros DEBUG para QueryBuilder para obtener una consulta XPath subyacente y explicable
-   * Ir a `https://<host>:<port>/system/console/slinglog`. Cree un nuevo registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
+   * Vaya a `https://<host>:<port>/system/console/slinglog`. Cree un nuevo registrador para `com.day.cq.search.impl.builder.QueryImpl` en **DEBUG**.
 1. Una vez DEBUG esté habilitado para la clase anterior, los registros mostrarán el XPath generado por Query Builder.
 1. Copie la consulta XPath de la entrada de registro para la consulta asociada del Generador de consultas, por ejemplo:
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. Pegue la consulta XPath en Explicar consulta como XPath para obtener el plan de consulta.
 
-### Obtenga XPath explicable mediante Query Builder Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Obtener XPath explicable mediante Query Builder Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
 Utilice el depurador AEM Query Builder para generar una consulta XPath explicable.
 
@@ -479,7 +479,7 @@ Utilice el depurador AEM Query Builder para generar una consulta XPath explicabl
 >
 >Las consultas que no sean de Query Builder (XPath, JCR-SQL2) se pueden proporcionar directamente a Explicar consulta.
 
-## Depuración de consultas con Registro {#debugging-queries-with-logging}
+## Depuración de consultas con registro {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
@@ -521,10 +521,10 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 
 | **Javadoc** | **Descripción** |
 |---|---|
-| [com.day.cq.search](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/package-summary.html) | Query Builder básico y API de consulta |
-| [com.day.cq.search.result](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/result/package-summary.html) | API de resultado |
-| [com.day.cq.search.facets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
-| [com.day.cq.search.facets.buckets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Contenedores (contenidos dentro de facetas) |
-| [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | Predicar evaluadores |
-| [com.day.cq.search.facets.extractores](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extractores de facetas (para evaluadores) |
-| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | Escritor de visitas de resultados JSON para el servlet Query Builder (`/bin/querybuilder.json`) |
+| [com.day.cq.search](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/package-summary.html) | Query Builder básico y API de consulta |
+| [com.day.cq.search.result](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/package-summary.html) | API de resultado |
+| [com.day.cq.search.facets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/package-summary.html) | Facetas |
+| [com.day.cq.search.facets.buckets](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/buckets/package-summary.html) | Contenedores (contenidos dentro de facetas) |
+| [com.day.cq.search.eval](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/package-summary.html) | Predicar evaluadores |
+| [com.day.cq.search.facets.extractores](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Extractores de facetas (para evaluadores) |
+| [com.day.cq.search.writer](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/writer/package-summary.html) | Escritor de visitas de resultados JSON para el servlet Query Builder (`/bin/querybuilder.json`) |

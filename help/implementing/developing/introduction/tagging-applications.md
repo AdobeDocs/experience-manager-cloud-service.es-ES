@@ -2,7 +2,7 @@
 title: Creación del etiquetado en aplicaciones AEM
 description: Trabajo mediante programación con etiquetas o ampliación de etiquetas dentro de una aplicación AEM personalizada
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Para trabajar mediante programación con etiquetas o ampliar etiquetas dentro de una aplicación de AEM personalizada, este documento describe el uso de la variable
 
-* [API de etiquetado](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html)
+* [API de etiquetado](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
 que interactúa con el
 
@@ -26,7 +26,7 @@ Para información relacionada con el etiquetado:
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}
 
-La implementación del [marco de etiquetado](tagging-framework.md) en AEM permite la administración de etiquetas y contenido de etiquetas mediante la API de JCR. `TagManager` garantiza que las etiquetas introducidas como valores en la propiedad matriz de  `cq:tags` cadenas no se dupliquen, elimina  `TagID`las que apuntan a etiquetas no existentes y actualizaciones  `TagID`para etiquetas combinadas o movidas. `TagManager` utiliza un oyente de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/package-summary.html):
+La implementación del [marco de etiquetado](tagging-framework.md) en AEM permite la administración de etiquetas y contenido de etiquetas mediante la API de JCR. `TagManager` garantiza que las etiquetas introducidas como valores en la propiedad matriz de  `cq:tags` cadenas no se dupliquen, elimina  `TagID`las que apuntan a etiquetas no existentes y actualizaciones  `TagID`para etiquetas combinadas o movidas. `TagManager` utiliza un oyente de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html):
 
 * `JcrTagManagerFactory` : devuelve una implementación de  `TagManager` basada en JCR. Es la implementación de referencia de la API de etiquetado.
 * `TagManager` : permite resolver y crear etiquetas por rutas y nombres.
@@ -127,7 +127,7 @@ El recolector de residuos de etiquetas se ejecuta de forma predeterminada una ve
 
 `http://<host>:<port>/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector`
 
-## Búsqueda de etiquetas y listado de etiquetas {#tag-search-and-tag-listing}
+## Búsqueda de etiquetas y Lista de etiquetas {#tag-search-and-tag-listing}
 
 La búsqueda de etiquetas y la lista de etiquetas funcionan de la siguiente manera:
 
@@ -142,13 +142,13 @@ Por ejemplo, cuando la etiqueta **Animals** se agrega a la página **Products**,
 
 La API del lado del servidor ha localizado los métodos relacionados con `title`:
 
-* [`com.day.cq.tagging.Tag`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/Tag.html)
+* [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
    * `getLocalizedTitlePaths()`
    * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
-* [`com.day.cq.tagging.TagManager`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/tagging/TagManager.html)
+* [`com.day.cq.tagging.TagManager`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/TagManager.html)
    * `canCreateTagByTitle(String tagTitlePath, Locale locale)`
    * `createTagByTitle(String tagTitlePath, Locale locale)`
    * `resolveByTitle(String tagTitlePath, Locale locale)`
