@@ -3,9 +3,9 @@ title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager as
 description: Obtenga información sobre la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de AEM función de envío sin encabezado.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1951'
 ht-degree: 2%
 
 ---
@@ -26,9 +26,9 @@ Obtenga información sobre la compatibilidad con fragmentos de contenido en la A
 >
 >La implementación actual de la API HTTP de Assets se basa en el estilo arquitectónico [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
-La [API REST de recursos](/help/assets/mac-api-assets.md) permite a los desarrolladores de Adobe Experience Manager como Cloud Service acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, a través de operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
+La [API REST de recursos](/help/assets/mac-api-assets.md) permite a los desarrolladores de Adobe Experience Manager as a Cloud Service acceder al contenido (almacenado en AEM) directamente a través de la API HTTP, a través de operaciones CRUD (Crear, Leer, Actualizar, Eliminar).
 
-La API le permite operar Adobe Experience Manager como Cloud Service como CMS (sistema de administración de contenido) sin encabezado al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
+La API le permite operar Adobe Experience Manager as a Cloud Service como un CMS sin encabezado (Sistema de administración de contenido) al proporcionar servicios de contenido a una aplicación front-end de JavaScript. O cualquier otra aplicación que pueda ejecutar solicitudes HTTP y gestionar respuestas JSON.
 
 Por ejemplo, [Aplicaciones de una sola página (SPA)](/help/implementing/developing/hybrid/introduction.md), basadas en marcos o personalizadas, requieren contenido proporcionado a través de la API HTTP, a menudo en formato JSON.
 
@@ -256,7 +256,7 @@ El uso puede variar en función de si utiliza un entorno de publicación o autor
 
 >[!NOTE]
 >
->Para obtener más información, consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En concreto, [API de Adobe Experience Manager Assets - Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html).
+>Para obtener más información, consulte la [Referencia de API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En concreto, [API de Adobe Experience Manager Assets - Fragmentos de contenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 
 ### Lectura/Entrega {#read-delivery}
 
@@ -374,7 +374,7 @@ Los siguientes códigos de estado se pueden ver en las circunstancias relevantes
 
 Consulte aquí las referencias de API detalladas:
 
-* [API de Adobe Experience Manager Assets: Fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [API de Adobe Experience Manager Assets: Fragmentos de contenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
 
 * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
 
