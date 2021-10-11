@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
+source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1486'
 ht-degree: 3%
 
 ---
@@ -197,7 +197,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es e
 
 ### Novedades {#what-is-new-ctt}
 
-* Se ha mejorado la asignación de usuarios con una experiencia de usuario simplificada, que incluye las siguientes funciones que se enumeran a continuación. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool).
+* Se ha mejorado la asignación de usuarios con una experiencia de usuario simplificada, que incluye las siguientes funciones que se enumeran a continuación. Para obtener más información, consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * Probar la conexión a la API de administración de usuarios antes de ejecutar la asignación de usuarios
    * Omita correctamente los errores y continúe con la actividad de Asignación de usuarios
    * La asignación de usuarios ya no falla si el token de acceso caduca (después de 24 horas). La asignación de usuarios se puede volver a ejecutar desde donde se detuvo por última vez.
