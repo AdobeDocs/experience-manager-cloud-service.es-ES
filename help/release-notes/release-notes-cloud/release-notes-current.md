@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 3%
@@ -210,14 +210,13 @@ La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es e
 
 ### Fecha de la versión {#release-date-bpa-latest}
 
-La fecha de versión de Best Practices Analyzer v2.1.18 es el 2 de septiembre de 2021.
+La fecha de versión de Best Practices Analyzer v2.1.20 es el 5 de octubre de 2021.
 
 ### Novedades {#what-is-new}
 
-* Capacidad para detectar el recuento total de nodos e informar al respecto.
+* Capacidad para detectar y crear informes sobre la longitud del nombre del nodo.
 
-* Capacidad para detectar y crear informes sobre el tipo y el tamaño del almacén de nodos.
+* Capacidad para detectar el tamaño total del índice e informar al respecto.
 
-### Corrección de errores {#bug-fixes-bpa}
+* Capacidad para detectar y crear informes sobre los recursos que no tienen su representación original.
 
-* La BPA estaba detectando falsamente la presencia del marco de integración comercial.
