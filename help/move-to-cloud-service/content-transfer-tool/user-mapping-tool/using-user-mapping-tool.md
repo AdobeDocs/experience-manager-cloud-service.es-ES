@@ -1,10 +1,10 @@
 ---
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +71,10 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. Haga clic en **Inicio** en el cuadro de diálogo para iniciar el proceso de Asignación de usuarios.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. Una vez finalizada la asignación de usuarios, haga clic en **Results** para ver el resumen.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -79,12 +83,30 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
    >* Una vez finalizada la asignación de usuarios, puede volver a la página Migración de contenido mediante la ruta. La tarjeta Asignación de usuarios muestra el estado y la marca de tiempo. Haga clic en **Content Transfer** para crear un conjunto de migración para ejecutar la extracción. Consulte [Ejecución de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) para obtener más información.
 
 
-### Reanudación del proceso de asignación de usuarios {#resume-user-mapping}
+### Reanudación del proceso de asignación de usuarios {#resume-user-mapping-process}
 
 Si el proceso de asignación de usuarios se detiene por cualquiera de los siguientes motivos:
 
 * El usuario ha seleccionado **Detener asignación de usuarios**
 * el token de acceso expiró durante el proceso o,
-* alguna otra razón.
+* alguna otra razón
 
-El progreso se guarda desde donde se detuvo el proceso. Revise el registro de Asignación de usuarios para comprobar el progreso guardado. Vuelva a hacer clic en el botón **Iniciar asignación de usuarios** para reanudar desde donde lo dejó. Asegúrese de que, antes de reiniciar, el token de acceso sigue siendo válido o se ha actualizado.
+   >[!NOTE]
+   >El progreso se guarda desde donde se detuvo el proceso.
+
+Siga los pasos a continuación para reanudar el proceso de asignación de usuarios:
+
+1. Haga clic en **Ver registro** para revisar el registro de asignación de usuarios y comprobar el progreso guardado.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. Vuelva a hacer clic en el botón **Iniciar asignación de usuarios** para reanudar desde donde lo dejó.
+
+   >[!NOTE]
+   >Asegúrese de que, antes de reiniciar, el token de acceso sigue siendo válido o se ha actualizado.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. Haga clic en **Inicio** en el cuadro de diálogo para reanudar el proceso de Asignación de usuarios.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
