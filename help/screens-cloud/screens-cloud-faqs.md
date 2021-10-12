@@ -1,21 +1,21 @@
 ---
-title: Preguntas frecuentes sobre Screens as a Cloud Service
-description: En esta página se describen las preguntas más frecuentes de Screens como Cloud Service.
-source-git-commit: 7a26bb50a8b95a2358912249e21daeb9c5e9c1a3
+title: Preguntas frecuentes as a Cloud Service de Screens
+description: Esta página describe las preguntas más frecuentes as a Cloud Service de Screens.
+exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
+source-git-commit: cf091056bdb96917a6d22bf1197d9b34ebbf9610
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
+# Preguntas frecuentes as a Cloud Service de Screens {#screens-cloud-faqs}
 
-# Preguntas frecuentes sobre Screens as a Cloud Service {#screens-cloud-faqs}
+En la siguiente sección encontrará respuestas a las preguntas más frecuentes (FAQ) relacionadas con el proyecto as a Cloud Service de Screens.
 
-En la siguiente sección se ofrecen respuestas a las preguntas más frecuentes (FAQ) relacionadas con Screens como proyecto de Cloud Service.
+## ¿Qué debo hacer si el reproductor AEM Screens que señala a Screens as a Cloud Service no elige los clientlibs personalizados con el formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-## ¿Qué debo hacer si el reproductor AEM Screens que señala Screens como Cloud Service no elige los clientlibs personalizados con el formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
-
-AEM como Cloud Service cambia las claves de caché largas con cada implementación. AEM Screens genera las cachés sin conexión cuando se modifica el contenido, en lugar de cuando Cloud Manager ejecuta la implementación. Estas claves de caché largas en los manifiestos no son válidas, por lo que el reproductor no puede descargar estas *clientlibs*.
+AEM as a Cloud Service cambia las claves de caché largas con cada implementación. AEM Screens genera las cachés sin conexión cuando se modifica el contenido, en lugar de cuando Cloud Manager ejecuta la implementación. Estas claves de caché largas en los manifiestos no son válidas, por lo que el reproductor no puede descargar estas *clientlibs*.
 
 El uso de `longCacheKey="none"` en la carpeta `clientlib` elimina por completo las claves de caché largas para estos *clientlibs*.
 
@@ -35,3 +35,8 @@ scripts=[
         end
         "] 
 ```
+
+## ¿Qué formatos de imagen se recomiendan para una representación perfecta de imágenes en canales as a Cloud Service de AEM Screens?{#screens-cloud-image-format}
+
+Se recomienda utilizar imágenes con los formatos `.png` y `.jpeg` en un canal as a Cloud Service de AEM Screens para obtener la mejor experiencia de señalización digital.
+Las imágenes con el formato `*.tif` (formato de archivo de imagen de etiqueta) no son compatibles con AEM Screens as a Cloud Service. En caso de que un canal tenga este formato de imagen, la imagen no se procesará en el reproductor.
