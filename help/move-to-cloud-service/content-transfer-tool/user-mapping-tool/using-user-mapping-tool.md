@@ -1,9 +1,9 @@
 ---
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
-source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
+source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '734'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,11 @@ La herramienta de asignación de usuarios está integrada en la herramienta de t
 1. Haga clic en **Inicio** en el cuadro de diálogo para iniciar el proceso de Asignación de usuarios.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Muestra el **Estado** como **EJECUTANDO**.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
 
 1. Una vez finalizada la asignación de usuarios, haga clic en **Results** para ver el resumen.
 
