@@ -1,9 +1,9 @@
 ---
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
-source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
+source-git-commit: 09ab81364f0fd45ddedcd5f918e6ab5a4bdd1f0d
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -115,3 +115,7 @@ Siga los pasos a continuación para reanudar el proceso de asignación de usuari
 1. Haga clic en **Inicio** en el cuadro de diálogo para reanudar el proceso de Asignación de usuarios.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   Una vez completado el proceso de asignación de usuarios, verá el **Estado** como **FINALIZADO** para esa configuración específica.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)
