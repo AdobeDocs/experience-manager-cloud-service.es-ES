@@ -1,10 +1,10 @@
 ---
 title: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 26%
+source-wordcount: '1503'
+ht-degree: 25%
 
 ---
 
@@ -81,3 +81,7 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 * Si tiene intención de realizar recargas, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
 * Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
+
+## Siguientes pasos {#whats-next}
+
+Una vez que conozca las directrices, las prácticas recomendadas y las consideraciones importantes sobre el uso de la herramienta de transferencia de contenido, ya estará listo para instalar y utilizar la herramienta, empezando por la creación de un conjunto de migración. Consulte [Introducción a la transferencia de contenido a](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para obtener más información.
