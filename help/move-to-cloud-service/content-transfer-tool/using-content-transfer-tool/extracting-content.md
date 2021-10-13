@@ -1,10 +1,10 @@
 ---
 title: Extracción de contenido del origen en la herramienta de transferencia de contenido
 description: Extracción de contenido del origen en la herramienta de transferencia de contenido
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 0316ba8ee66695836a676ab764ce1f0cb415f95d
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 48%
+source-wordcount: '534'
+ht-degree: 41%
 
 ---
 
@@ -23,24 +23,27 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 >[!NOTE]
 >Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, debe configurar un archivo `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obtener más información.
 
-1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Extracción** para empezar la extracción. Aparece el cuadro de diálogo **Migration Set extraction** y haga clic en **Extract** para iniciar la fase de extracción.
+1. Seleccione un conjunto de migración del asistente **Content Transfer** y haga clic en **Extract** para iniciar la extracción.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
+
+1. Aparece el cuadro de diálogo **Migration Set extraction** y haga clic en **Extract** para iniciar la fase de extracción.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
    >Tiene la opción de sobrescribir el contenedor de ensayo durante la fase de extracción.
 
+1. El campo **Extraction** ahora muestra el estado **RUNNING** para indicar que la extracción está en curso.
 
-1. El campo **EXTRACTION** ahora muestra el estado **RUNNING** para indicar que la extracción está en curso.
-
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
    Una vez finalizada la extracción, el estado del conjunto de migración se actualiza a **FINALIZADO** y aparece un icono de nube *verde lisa* debajo del campo **INFORMACIÓN** .
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
-   >[!NOTE]
-   >La interfaz de usuario tiene una función de recarga automática que vuelve a cargar la página de información general cada 30 segundos.
+   >[!IMPORTANT]
+   >La interfaz de usuario tiene una función de recarga automática que vuelve a cargar el asistente de **Transferencia de contenido** cada 30 segundos.
    >Cuando se inicia la fase de extracción, el bloqueo de escritura se crea y se libera después de *60 segundos*. Por lo tanto, si se detiene una extracción, hay que esperar un minuto para que se libere el bloqueo antes de volver a iniciarla.
 
 ## Extracción superior {#top-up-extraction-process}
@@ -51,15 +54,20 @@ La herramienta de transferencia de contenido tiene una función que permite agre
 >Después de la transferencia de contenido inicial, se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
 >Además, es esencial que la estructura de contenido del contenido existente no cambie desde el momento en que se toma la extracción inicial hasta cuando se ejecuta la extracción superior. Las superposiciones no se pueden ejecutar en contenido cuya estructura haya cambiado desde la extracción inicial. Asegúrese de restringir esto durante el proceso de migración.
 
-Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior. Complete los siguientes pasos:
+Una vez completado el proceso de extracción, se puede transferir contenido delta mediante el método de extracción superior.
 
-1. Vaya a la página *Información general* y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior. Aparece el cuadro de diálogo **extracción de conjunto de migración** .
+Complete los siguientes pasos:
+
+1. Vaya al asistente de **Content Transfer** y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
+
+1. Aparece el cuadro de diálogo **extracción del conjunto de migración**. Haga clic en **Extract**.
 
    >[!IMPORTANT]
-   >
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
-   >
-   >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-06.png)
+
 
 ## Siguientes pasos {#whats-next}
 
