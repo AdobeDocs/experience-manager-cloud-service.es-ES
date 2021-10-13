@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 32%
@@ -103,7 +103,7 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
 
 1. Verá el conjunto de migraciones en el asistente de **Transferencia de contenido**, como se muestra en la figura siguiente.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    Todos los conjuntos de migración existentes se muestran en el asistente de **Transferencia de contenido** con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
 
