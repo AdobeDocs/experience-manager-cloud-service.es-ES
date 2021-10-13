@@ -2,9 +2,9 @@
 title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2022'
 ht-degree: 90%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->Consulte nuestro curso para Experience League [Configuración del acceso a AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) para obtener una introducción sobre cómo se autentican los usuarios con Adobe IMS para AEM como Cloud Service y cómo se utilizan los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto para controlar el acceso a AEM y sus características y funcionalidades. Se requiere Adobe ID.
+>Consulte nuestro curso para Experience League [Configuración del acceso a AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) para obtener una introducción sobre cómo se autentican los usuarios con Adobe IMS para AEM as a Cloud Service y cómo se utilizan los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto para controlar el acceso a AEM y sus características y funcionalidades. Se requiere Adobe ID.
 
 >[!NOTE]
 >
->El inicio de sesión de IMS para AEM como Cloud Service no admite grupos anidados en el Admin Console.
+>AEM no admite la asignación de grupos a perfiles. Los usuarios deben agregarse individualmente en su lugar.
 
 ## Puntos clave destacados {#key-highlights}
 
@@ -132,7 +132,7 @@ A continuación, se muestran las configuraciones de OSGI clave que deben modific
 
 ### Administración de productos y acceso de usuarios en Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Cuando el administrador de productos inicia sesión en el Admin Console, verá varias instancias del AEM como un contexto de producto de Cloud Service, como se muestra a continuación. Por ejemplo, seleccione cualquiera de los productos de la página **Información general**:
+Cuando el administrador de productos inicia sesión en el Admin Console, verá varias instancias del contexto de producto as a Cloud Service de AEM, como se muestra a continuación. Por ejemplo, seleccione cualquiera de los productos de la página **Información general**:
 
 ![Inicio de sesión en instancias](/help/security/assets/ims6.png)
 
