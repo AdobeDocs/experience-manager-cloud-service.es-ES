@@ -3,9 +3,9 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -208,7 +208,7 @@ La fecha de versión de la herramienta de transferencia de contenido v1.6.0 es e
    * Omita correctamente los errores y continúe con la actividad de Asignación de usuarios
    * La asignación de usuarios ya no falla si **Access Token** caduca a las 24 horas. La asignación de usuarios se puede volver a ejecutar desde donde se detuvo por última vez.
 
-* Para aumentar la solidez de la herramienta de transferencia de contenido, el contenido se puede ingerir a instancias de Autor o de Publicación a la vez. Consulte [Uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en) para obtener más información.
+* Para aumentar la solidez de la herramienta de transferencia de contenido, el contenido se puede ingerir a instancias de Autor o de Publicación a la vez. Consulte [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) para obtener más información.
 
 * Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
 

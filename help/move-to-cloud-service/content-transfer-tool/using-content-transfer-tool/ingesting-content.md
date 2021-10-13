@@ -1,7 +1,7 @@
 ---
 title: Ingesta de contenido en Target en la herramienta de transferencia de contenido
 description: Ingesta de contenido en Target en la herramienta de transferencia de contenido
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 34%
@@ -33,7 +33,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura anterior. Consulte también [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs) para obtener más información.
+   Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura anterior. Consulte también [Consideraciones importantes sobre el uso de la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) para obtener más información.
 
 1. Una vez finalizada la ingesta, el estado se actualiza a **FINISHED**.
 

@@ -1,7 +1,7 @@
 ---
 title: Extracción de contenido del origen en la herramienta de transferencia de contenido
 description: Extracción de contenido del origen en la herramienta de transferencia de contenido
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 48%
@@ -21,7 +21,7 @@ ht-degree: 48%
 
 Siga los pasos a continuación para extraer el conjunto de migración de la herramienta de transferencia de contenido:
 >[!NOTE]
->Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, debe configurar un archivo `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido de gran tamaño](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obtener más información.
+>Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, debe configurar un archivo `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obtener más información.
 
 1. Seleccione un conjunto de migraciones de la página *Información general* y haga clic en **Extracción** para empezar la extracción. Aparece el cuadro de diálogo **Migration Set extraction** y haga clic en **Extract** para iniciar la fase de extracción.
 

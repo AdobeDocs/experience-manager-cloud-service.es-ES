@@ -1,9 +1,9 @@
 ---
 title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 description: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '270'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de an
 
 Siga el enfoque recomendado como se describe a continuación:
 
-* Utilice la misma versión del CTT que se utilizó en la instancia de autor.
+* Utilice la misma versión de la herramienta de transferencia de contenido que se utilizó en la instancia de autor.
 
 * Solo es necesario migrar un nodo de publicación único. Debe eliminarse del equilibrador de carga antes de comenzar la extracción.
 
-* Al crear el conjunto de migración, utilice la URL del entorno AEMaaCS de autor.
+* Al crear el conjunto de migración, utilice la URL del entorno as a Cloud Service AEM autor.
 
 * Durante la ingesta para publicar, el nivel de publicación NO se reducirá (a diferencia del autor). Como precaución, evite cualquier operación de escritura iniciada por el usuario, como:
 
