@@ -2,10 +2,10 @@
 title: Uso de la herramienta de transferencia de contenido
 description: Uso de la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
+source-git-commit: 5243efa12fdca7e2e2d6ab23b38e8d09c6ea4945
 workflow-type: tm+mt
-source-wordcount: '3193'
-ht-degree: 36%
+source-wordcount: '3199'
+ht-degree: 35%
 
 ---
 
@@ -143,17 +143,19 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
 
 1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **Crear conjunto de migración**.
 
-1. La vista del conjunto de migraciones se realizará en la página de *Información general*.
+1. Verá el conjunto de migraciones en el asistente de **Transferencia de contenido**, como se muestra en la figura siguiente.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   Todos los conjuntos de migración existentes en esta pantalla se muestran en la página *Información general* con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
+   Todos los conjuntos de migración existentes se muestran en el asistente de **Transferencia de contenido** con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
 
    * La *nube roja* indica que no se puede completar el proceso de extracción.
    * La *nube verde* indica que se puede completar el proceso de extracción.
    * El *icono amarillo* indica que no se creó el conjunto de migración existente y que el específico lo crea otro usuario en la misma instancia.
 
-1. Seleccione un conjunto de migración de la página de información general y haga clic en **Propiedades** para consultar o editar las propiedades del conjunto de migración. Durante la edición de propiedades, no es posible cambiar el nombre del contenedor o la dirección URL del servicio.
+1. Seleccione un conjunto de migración y haga clic en **Properties** para ver o editar las propiedades del conjunto de migración. Durante la edición de propiedades, no es posible cambiar el **nombre del conjunto de migración** o la **URL del servicio**.
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ### Proceso de Extracción en transferencia de contenido {#extraction-process}
