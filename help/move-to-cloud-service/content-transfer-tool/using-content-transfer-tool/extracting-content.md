@@ -1,10 +1,10 @@
 ---
 title: Extracción de contenido del origen en la herramienta de transferencia de contenido
 description: Extracción de contenido del origen en la herramienta de transferencia de contenido
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 53%
+source-wordcount: '526'
+ht-degree: 48%
 
 ---
 
@@ -60,3 +60,7 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
    >
    >![image](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## Siguientes pasos {#whats-next}
+
+Una vez que haya aprendido a extraer contenido del origen en la herramienta de transferencia de contenido, ya estará listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target en la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener información sobre cómo introducir el conjunto de migración de la herramienta de transferencia de contenido.

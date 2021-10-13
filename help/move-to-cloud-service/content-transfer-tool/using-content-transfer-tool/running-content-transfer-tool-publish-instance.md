@@ -1,9 +1,9 @@
 ---
 title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 description: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
-source-git-commit: 27e68cd282414da4cc23c3ba276b0fb3c330d49c
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. Sea cual sea el contenido especificado en el conjunto de migración, se incorporará en la instancia de destino elegida. El usuario tiene la capacidad de ingerir un conjunto de migración en una instancia de Autor, una instancia de Publicación o ambas. Se recomienda que, al mover contenido a una instancia de Producción, CTT se instale en la instancia de Autor de origen para mover contenido a la instancia de Autor de destino y, de manera similar, instale CTT en la instancia de Publicación de origen para mover contenido a la instancia de Publicación de destino.
+La herramienta de transferencia de contenido (CTT) no realiza ningún tipo de análisis de contenido antes de transferir contenido de la instancia de origen a la instancia de destino. Por ejemplo, CTT no diferencia entre contenido publicado y no publicado al ingerir contenido en un entorno de publicación. Sea cual sea el contenido especificado en el conjunto de migración, se incorporará en la instancia de destino elegida. El usuario tiene la capacidad de ingerir un conjunto de migración en una instancia de Autor, una instancia de Publicación o ambas.
 
 >[!NOTE]
->Se recomienda que, al mover contenido a una instancia de publicación, la herramienta de transferencia de contenido se instale en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte la sección [Enfoque recomendado](#recommended-approach) a continuación para obtener más información.
+>Se recomienda que, al mover contenido a una instancia de producción, la herramienta de transferencia de contenido se instale en la instancia de autor de origen para mover contenido a la instancia de autor de destino y, de manera similar, instalar la herramienta de transferencia de contenido en la instancia de publicación de origen para mover contenido a la instancia de publicación de destino. Consulte la sección [Enfoque recomendado](#recommended-approach) a continuación para obtener más información.
 
 ## Enfoque recomendado {#recommended-approach}
 
