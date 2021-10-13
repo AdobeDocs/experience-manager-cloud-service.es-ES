@@ -2,9 +2,9 @@
 title: Comprobación del estado del nombre de dominio
 description: Comprobación del estado del nombre de dominio
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 417939cb7a206d2b98b5e631a09307edc6724c17
+source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ cursoVerificación en curso. Este estado suele verse después de seleccionar la 
 *compruebe de nuevo* junto al estado .
 
 * **Se ha verificado que la verificación de la implementación**
-con error de TXT se ha realizado correctamente. Sin embargo, la implementación de la CDN falló. Se notificará automáticamente a un representante de Adobe.
+con error de TXT se ha realizado correctamente. Sin embargo, la implementación de la CDN falló. Póngase en contacto con su representante del Adobe.
 
 * **Dominio verificado e**
 implementadoEste estado indica que el nombre de dominio personalizado está listo para utilizarse.
