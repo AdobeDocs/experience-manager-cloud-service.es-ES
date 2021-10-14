@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
+source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -45,44 +45,47 @@ Antes de comenzar a implementar el código, debe configurar la configuración de
 >
 >Puede cambiar la configuración de la canalización después de la configuración inicial.
 
-## Configuración de la canalización desde [!UICONTROL Cloud Manager] {#configuring-the-pipeline-settings-from-cloud-manager}
+## Adición de una nueva canalización de producción {#adding-production-pipeline}
 
-Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario de [!UICONTROL Cloud Manager], estará listo para configurar la canalización de implementación.
+Una vez que haya configurado el programa y tenga al menos un entorno utilizando la interfaz de usuario de [!UICONTROL Cloud Manager], estará listo para agregar una canalización de producción.
 
-Siga estos pasos para configurar el comportamiento y las preferencias de la canalización:
+Siga estos pasos para configurar el comportamiento y las preferencias de la canalización de producción:
 
-1. Haga clic en **Configuración de canalización** para configurar la canalización.
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+Haga clic en **+Add** y seleccione **Add Production Pipeline**.
 
-   ![](assets/set-up-pipeline1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
 
-1. Aparece la pantalla **Configuración de canalización**. Seleccione la rama y haga clic en **Next**.
+1. **Aparece el cuadro de diálogo Añadir** canalización de producción . Introduzca el nombre de la canalización.
 
-   ![](assets/setup-1.png)
+   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**. Haga clic en **Continue**.
 
-1. Configure las opciones de implementación.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
-   ![](assets/setup-pipeline.png)
 
    Puede definir el déclencheur para iniciar la canalización:
 
    * **Manual** : al utilizar la IU, se inicia manualmente la canalización.
    * **Cambios en Git** : inicia la canalización CI/CD cada vez que se agregan confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede iniciar la canalización manualmente.
 
-   Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad.
+      Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad.
 
-   Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
+      Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
 
-   * **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
-   * **Cancelar inmediatamente** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
-   * **Aprobar inmediatamente** : Si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
+      * **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
+      * **Cancelar inmediatamente** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+      * **Aprobar inmediatamente** : Si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
+1. **Código de pila completa** seleccionado. Puede elegir el **Repositorio** y la **Rama Git**. Haga clic en **Save**.
 
-1. La configuración de la canalización de producción incluye una tercera pestaña etiquetada como **Experience Audit**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+
+1. El cuadro de diálogo **Add production pipeline** incluye una tercera pestaña etiquetada como **Experience Audit**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
 
    >[!NOTE]
-   >Debe hacer clic en **Agregar nueva página** para definir su propio vínculo personalizado.
+   >Debe hacer clic en **Agregar página** para definir su propio vínculo personalizado.
 
-   ![](assets/setup-3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
 
    Haga clic en **Agregar nueva página** para proporcionar una ruta URL que se incluirá en la auditoría de experiencias.
 
@@ -103,9 +106,13 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
    >[!NOTE]
    > Las páginas configuradas se enviarán al servicio y se evaluarán según las pruebas de rendimiento, accesibilidad, SEO (Optimización del motor de búsqueda), prácticas recomendadas y PWA (Aplicación web progresiva).
 
-1. Haga clic en **Guardar** en la pantalla **Editar canalización**. La página **Información general** ahora muestra la tarjeta **Implementar el programa**. Haga clic en el botón **Deploy** para implementar el programa.
+1. Haga clic en **Save**. La canalización de producción recién creada ahora se muestra en la tarjeta **Canalizaciones**.
 
-   ![](assets/configure-pipeline5.png)
+   La canalización se muestra en la tarjeta de la pantalla principal con tres acciones, como se muestra a continuación:
+
+   * **Añadir** : permite añadir una nueva canalización.
+   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio Git de Cloud Manager.
+   * **Más información** : navega para comprender el recurso de documentación de canalización de CI/CD.
 
 ### Edición de una canalización de producción {#editing-prod-pipeline}
 
