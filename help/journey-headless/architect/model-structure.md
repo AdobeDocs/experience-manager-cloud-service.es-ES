@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -100,6 +100,10 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 >[!NOTE]
 >
 >Si un autor intenta publicar un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
+
+>[!NOTE]
+>
+>La función Modelos de fragmento de contenido bloqueados (publicados) está en versión beta.
 
 Tan pronto como se publica un modelo, está *bloqueado* en modo READ-ONLY en el autor. Esto tiene como objetivo evitar cambios que pudieran provocar errores en los esquemas y consultas de GraphQL existentes, especialmente en el entorno de publicación. Está indicado en la consola por **Locked**.
 
