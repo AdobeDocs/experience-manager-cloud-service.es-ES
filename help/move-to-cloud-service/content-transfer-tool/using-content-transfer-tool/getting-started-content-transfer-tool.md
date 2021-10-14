@@ -2,10 +2,10 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 32%
+source-wordcount: '742'
+ht-degree: 33%
 
 ---
 
@@ -79,13 +79,11 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
       1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
 
-      ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
+         >[!NOTE]
+         >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
 
-      1. **Incluir asignación de usuarios y grupos de IMS**: Seleccione la opción para incluir la asignación de Usuarios y grupos de IMS.
-Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obtener más información.
 
       1. **Rutas que se incluyen**: utilice el explorador para seleccionar las rutas que deben migrarse. El selector de rutas acepta entradas mediante escritura o selección.
 
@@ -95,8 +93,6 @@ Consulte [Herramienta de asignación de usuarios](https://experienceleague.adobe
          >* `/libs`
          >* `/home`
          >* `/etc` (se permite seleccionar algunas  `/etc` rutas en CTT)
-
-
 
 
 1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **Crear conjunto de migración**.
