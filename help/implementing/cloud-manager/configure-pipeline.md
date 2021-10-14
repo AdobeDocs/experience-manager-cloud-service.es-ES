@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ En Cloud Manager, hay dos tipos de Canalización:
 
    Para obtener más información, consulte [Tutoriales de solo calidad de código y no producción](configure-pipeline.md#non-production-pipelines) .
 
->[!NOTE]
->Para configurar la canalización, debe:
-> * defina el déclencheur que iniciará la canalización.
-> * defina los parámetros que controlan la implementación de producción.
-> * configure los parámetros de prueba de rendimiento.
+   >[!NOTE]
+   >Para configurar la canalización, debe:
+   > * defina el déclencheur que iniciará la canalización.
+   > * defina los parámetros que controlan la implementación de producción.
+   > * configure los parámetros de prueba de rendimiento.
 
 
 ## Configuración de canalización de producción {#setting-up-production-pipeline}
@@ -115,31 +115,33 @@ Siga los pasos a continuación para editar la canalización configurada:
 
 1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
 
-1. Haga clic en **Editar** en la tarjeta **Canalizaciones**.
+1. Haga clic en **...** desde la tarjeta **Canalizaciones** y haga clic en **Editar**, como se muestra en la figura siguiente.
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. La pestaña **Source Code** permite actualizar el repositorio. Haga clic en **Access Repo Info** para actualizar el repositorio.
+1. Aparece el cuadro de diálogo **Editar canalización de producción**.
 
-   >[!NOTE]
-   >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metrics Failure Behavior**.
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. La pestaña **Environments** permite actualizar las opciones de fase y producción.
+   1. La pestaña **Source** permite ignorar las configuraciones de nivel web y actualizar desde **Production Deployment Options**.
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. La opción **Auditoría de experiencias** permite actualizar o agregar nuevas páginas.
+   1. La opción **Auditoría de experiencias** permite actualizar o agregar nuevas páginas.
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. Haga clic en **Save** una vez que haya terminado de editar la canalización.
+1. Haga clic en **Update** una vez que haya terminado de editar la canalización.
 
 ## Canalizaciones de calidad de código y no producción {#non-production-pipelines}
 
-Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en AEM como entorno de Cloud Service.
+Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en AEM entorno as a Cloud Service.
 
 En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 

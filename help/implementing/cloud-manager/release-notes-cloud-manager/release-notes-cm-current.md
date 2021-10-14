@@ -3,9 +3,9 @@ title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Servic
 description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.10.0
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 3b1ff5f1715cd18228a9b7e5c57b0f3d84ee0eb0
+source-git-commit: 62e9466fdfd6d6ac63dad9a2bc19693f7dc8d098
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '381'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ La próxima versión está planificada para el 4 de noviembre de 2021.
 
 * El asistente para agregar Lista de permitidos de IP ahora informará al usuario si se ha alcanzado el número máximo permitido de Listas de permitidos de IP.
 
-* La documentación de la API de Cloud Manager ahora incluye un área de reproducción interactiva que permite a los usuarios que iniciaron sesión experimentar con la API desde su explorador. Consulte [Reproducción de la API de Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/)
+* La documentación de la API de Cloud Manager ahora incluye un área de reproducción interactiva que permite a los usuarios que iniciaron sesión experimentar con la API desde su explorador. Consulte [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) para obtener más información.
 
 * La información del objeto de la tarjeta de programa será más descriptiva si se desactiva una opción de selección en &quot;Navegar a&quot;. Ahora muestra &quot;Un entorno de producción no existe&quot;.
 
