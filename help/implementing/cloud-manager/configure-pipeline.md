@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,9 @@ Siga los pasos a continuación para editar la canalización configurada:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. La pestaña **Source** le ofrece la opción de ignorar la configuración del nivel web para la canalización y comprobar o desmarcar **Pause antes de implementar las opciones Production** y **Scheduled** de **Production Deployment Options**.
+   1. La pestaña **Source** le ofrece la opción de comprobar o desmarcar **Pause antes de implementar las opciones Production** y **Scheduled** de **Production Deployment Options**.
 
-      >[!NOTE]
-      >Si **Ignore Web Layer Configuration** se deja sin marcar, la canalización también implementará la configuración del nivel web.
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. La opción **Auditoría de experiencias** permite actualizar o agregar nuevas páginas.
 
@@ -148,41 +145,59 @@ Además de la canalización principal que se implementa en las fases y la produc
 
 En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
-1. Acceda al mosaico **Canalizaciones que no son de producción** desde la pantalla de inicio de Cloud Manager.
+1. Acceda a la tarjeta **Canalizaciones** desde la pantalla de inicio de Cloud Manager. Haga clic en **+Add** y seleccione **Add Non-Production Pipeline**.
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. Haga clic en el botón **Add** para especificar el nombre de la canalización, el tipo de canalización y la rama de Git.
+1. **Aparece el cuadro de diálogo Añadir**  canalización no de producción . Seleccione el tipo de canalización que desea crear, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
 
-   Además, también puede configurar el Déclencheur de implementación y el Comportamiento de error importante desde Opciones de canalización.
+   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**. Haga clic en **Continue**.
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Haga clic en **Guardar** y la canalización se mostrará en la tarjeta de la pantalla principal con cinco acciones, como se muestra a continuación:
+1. **Código de pila completa** seleccionado. Puede elegir el **Repositorio** y la **Rama Git**. Haga clic en **Save**.
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **Editar** : permite editar la configuración de la canalización
-   * **Detalles** : proporciona detalles de la ejecución de la canalización.
-   * **Generar** : navega a la página de ejecución desde la que se puede ejecutar la canalización
-   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio de Git de Cloud Manager.
+1. La canalización que no es de producción recién creada ahora se muestra en la tarjeta **Canalizaciones**.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   La canalización se muestra en la tarjeta de la pantalla principal con tres acciones, como se muestra a continuación:
+
+   * **Añadir** : permite añadir una nueva canalización.
+   * **Acceso a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio Git de Cloud Manager.
    * **Más información** : navega para comprender el recurso de documentación de canalización de CI/CD.
 
 ### Edición de una canalización que no es de producción {#editing-nonprod-pipeline}
 
-Puede editar las configuraciones de canalización desde la página **Información general del programa**.
+Puede editar las configuraciones de canalización desde la **Tarjeta de canalización** de la página **Información general del programa**.
 
 Siga los pasos a continuación para editar la canalización configurada que no sea de producción:
 
 1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
 
-1. Seleccione la pestaña **Non-Production** y haga clic en **Edit** después de seleccionar las canalizaciones deseadas.
+1. Seleccione la canalización que no es de producción y haga clic en **...**. Haga clic en **Editar**, como se muestra en la figura siguiente.
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. Seleccione el repositorio deseado y otras actualizaciones necesarias y haga clic en **Guardar**.
+1. Aparece el cuadro de diálogo **Editar canalización de producción**.
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metrics Failure Behavior**.
+
+      >[!NOTE]
+      >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. La pestaña **Source Code** permite actualizar el **Repository** y la **Git Branch**.
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. Haga clic en **Update** una vez que haya terminado de editar la canalización que no es de producción.
+
 
 ## Pasos siguientes {#the-next-steps}
 

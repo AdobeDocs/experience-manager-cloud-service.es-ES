@@ -2,15 +2,25 @@
 title: Canalizaciones CI-CD
 description: Canalizaciones CI-CD
 index: false
-source-git-commit: b8b4d0b9e7e1dfc6809d2e193a2c2fd2438ecdb6
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
 
 # Canalizaciones de CI-CD de Cloud Manager {#intro-cicd}
+
+## Introducción {#introduction}
+
+>[!NOTE]
+>Una canalización de CD/CI en Cloud Manager se activa mediante un evento, como una solicitud de extracción de un repositorio de código fuente, es decir, un cambio de código, o una programación regular para coincidir con una cadencia de lanzamiento.
+
+Para configurar la canalización, debe:
+* definir el déclencheur que iniciará la canalización
+* definir los parámetros que controlan la implementación de producción
+* configurar los parámetros de prueba de rendimiento
 
 En Cloud Manager, hay dos tipos de Canalización:
 
@@ -31,19 +41,3 @@ Una canalización que no es de producción tiene como objetivo ejecutar análisi
 
 >[!NOTE]
 >Consulte las canalizaciones de no producción y solo calidad de código para obtener más información.
-
-La implementación y la calidad del código compatibles en la canalización de producción y no producción en Cloud Manager se clasifican en dos tipos diferentes:
-
-* Front-End
-* Pila completa
-
-La siguiente tabla resume las canalizaciones:
-
-
->[!NOTE]
->Una canalización de CD/CI en Cloud Manager se activa mediante un evento, como una solicitud de extracción de un repositorio de código fuente, es decir, un cambio de código, o una programación regular para coincidir con una cadencia de lanzamiento.
->
->Para configurar la canalización, debe:
->* definir el déclencheur que iniciará la canalización
->* definir los parámetros que controlan la implementación de producción
->* configurar los parámetros de prueba de rendimiento
