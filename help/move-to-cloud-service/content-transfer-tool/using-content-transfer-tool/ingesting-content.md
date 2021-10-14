@@ -1,10 +1,10 @@
 ---
 title: Ingesta de contenido en Target en la herramienta de transferencia de contenido
 description: Ingesta de contenido en Target en la herramienta de transferencia de contenido
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 34%
+source-wordcount: '554'
+ht-degree: 27%
 
 ---
 
@@ -47,7 +47,7 @@ Siga los pasos a continuación para ingerir el conjunto de migración de la herr
 
 1. Una vez finalizada la ingesta, el estado en **Autor ingestion** se actualiza a **FINISHED**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## Ingesta superior {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ La herramienta de transferencia de contenido tiene una función que permite *agr
 
 Una vez completado el proceso de ingesta, se puede usar el contenido delta mediante el método de ingesta superior. Complete los siguientes pasos:
 
-1. Vaya a la página *Información general* y seleccione el conjunto de migración para el que desea realizar la ingesta superior. Haga clic en **Ingesta** para iniciar la extracción superior. Aparece el cuadro de diálogo **ingesta de conjunto de migración** .
+1. Vaya al asistente de **Content Transfer** y seleccione el conjunto de migración para el que desea realizar la ingesta superior. Haga clic en **Ingesta** para iniciar la extracción superior.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. Aparece el cuadro de diálogo **ingesta de conjunto de migración** .
+
+   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >Debe desactivar la opción **Borrar contenido existente en la instancia de Cloud antes de la ingesta** para evitar que se elimine el contenido existente de la actividad de ingesta anterior. Además, haga clic en **Servicio de atención al cliente** para registrar un ticket, como se muestra en la figura anterior.
+
+## Siguientes pasos {#whats-next}
+
+Una vez que haya aprendido a Ingresar contenido en Target en la herramienta de transferencia de contenido, puede ver los registros una vez completado cada paso (extracción e ingesta) y buscar errores. Consulte [Visualización de registros para un conjunto de migraciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) para obtener más información.
