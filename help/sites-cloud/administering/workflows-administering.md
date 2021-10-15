@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo administrar instancias de flujo de
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 079c9a64aeee62b36a12083645ca43b115838705
+source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 ## Buscar instancias de flujo de trabajo {#search-workflow-instances}
 
 1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
-1. Seleccione **Instances** para mostrar la lista de instancias de flujo de trabajo en curso. En el carril superior, en la esquina izquierda, seleccione **Filters**. Alternativamente, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
+1. Seleccione **Instances** para mostrar la lista de instancias de flujo de trabajo en curso. En el carril superior, en la esquina izquierda, seleccione **Filters**. Como alternativa, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
 
    ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
 
@@ -94,7 +94,7 @@ errorAbre una ventana para mostrar la variable
 historialMuestra detalles del historial del flujo de trabajo.
 
 * **Reintentar** pasoEjecuta de nuevo la instancia del componente Paso de secuencia de comandos. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el paso de proceso.
-* **** FinalizarFinalice el flujo de trabajo si el error ha causado una situación irreconciliable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio que ya no son válidas para la instancia de flujo de trabajo.
+* **** FinalizarFinalice el flujo de trabajo si el error ha provocado una situación irreconciliable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio que ya no son válidas para la instancia de flujo de trabajo.
 * **Terminar y** ReintentarSimilar a  **** Terminar, excepto que una nueva instancia de flujo de trabajo se inicia usando la carga útil, el título y la descripción originales.
 
 Para investigar los errores y luego reanudar o finalizar el flujo de trabajo posteriormente, siga los siguientes pasos:
@@ -170,13 +170,12 @@ Puede configurar el tamaño máximo de la bandeja de entrada configurando el **A
 
 ## Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente {#using-workflow-variables-customer-datastore}
 
-Los datos utilizados en flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. En esta sección se describe cómo configurar estas variables para el almacenamiento externo.
+Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. En estas secciones se describe cómo configurar estas variables para el almacenamiento externo.
 
 ### Establecer el modelo para que utilice el almacenamiento externo de metadatos {#set-model-for-external-storage}
 
-En el nivel del modelo de flujo de trabajo, se planea introducir un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Los metadatos de usuario no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
+En el nivel del modelo de flujo de trabajo, se proporciona un indicador para indicar que el modelo (y sus instancias de tiempo de ejecución) tiene almacenamiento externo de metadatos. Las variables de flujo de trabajo no se mantendrán en JCR para las instancias de flujo de trabajo de los modelos marcados para almacenamiento externo.
 
-Para activar esta función, debe habilitar el indicador de persistencia externa: **userMetaDataCustomPersistenceEnabled = &quot;true&quot;**.
 La propiedad *userMetadataPersistenceEnabled* se almacenará en el *nodo jcr:content* del modelo de flujo de trabajo. Este indicador se mantendrá en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
 La siguiente ilustración muestra que deben establecer el indicador en un flujo de trabajo.
@@ -184,6 +183,8 @@ La siguiente ilustración muestra que deben establecer el indicador en un flujo 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### API para metadatos en almacenamiento externo {#apis-for-metadata-external-storage}
+
+Para almacenar las variables de forma externa, debe implementar las API que expone el flujo de trabajo.
 
 UserMetaDataPersistenceContext
 
