@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: cbc5d8c2c4c1901556d5eaa336c61b68500ed8b8
+source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Haga clic en **+Add** y seleccione **Add Production Pipeline**.
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
 
-   Puede definir el déclencheur para iniciar la canalización:
+   Puede definir los déclencheur de implementación para iniciar la canalización.
 
    * **Manual** : al utilizar la IU, se inicia manualmente la canalización.
    * **Cambios en Git** : inicia la canalización CI/CD cada vez que se agregan confirmaciones a la rama git configurada. Incluso si selecciona esta opción, siempre puede iniciar la canalización manualmente.
@@ -71,16 +71,18 @@ Haga clic en **+Add** y seleccione **Add Production Pipeline**.
       Durante la configuración o edición de la canalización, el administrador de implementación tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad.
 
       Esto resulta útil para los clientes que desean procesos más automatizados. Las opciones disponibles son:
+   Puede definir el comportamiento importante de las métricas de error para iniciar la canalización.
 
-      * **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
-      * **Cancelar inmediatamente** : si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
-      * **Aprobar inmediatamente** : Si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
+   * **Pregunte cada vez** : esta es la configuración predeterminada y requiere una intervención manual en cualquier error importante.
+   * **Fail Inmediatamente** : Si se selecciona, la canalización se cancelará siempre que se produzca un error importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
+   * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
-1. **Código de pila completa** seleccionado. Puede elegir el **Repositorio** y la **Rama Git**. Haga clic en **Save**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add3.png)
+1. El cuadro de diálogo **Añadir Canalización de producción** incluye una segunda pestaña etiquetada como **Código fuente**. **Código de pila completa** seleccionado. Puede elegir el **Repositorio** y la **Rama Git**. Haga clic en **Save**.
 
-1. El cuadro de diálogo **Add production pipeline** incluye una tercera pestaña etiquetada como **Experience Audit**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+1. El cuadro de diálogo **Añadir Canalización de producción** incluye una tercera pestaña etiquetada como **Auditoría de experiencias**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
 
    >[!NOTE]
    >Debe hacer clic en **Agregar página** para definir su propio vínculo personalizado.
@@ -150,6 +152,8 @@ Siga los pasos a continuación para editar la canalización configurada:
 
 Además de la canalización principal que se implementa en las fases y la producción, los clientes pueden configurar canalizaciones adicionales, denominadas **Canalizaciones que no son de producción**. Estas canalizaciones siempre ejecutan los pasos de compilación y calidad del código. Opcionalmente, también pueden implementarse en AEM entorno as a Cloud Service.
 
+### Adición de una nueva canalización que no sea de producción {#adding-non-production-pipeline}
+
 En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
 1. Acceda a la tarjeta **Canalizaciones** desde la pantalla de inicio de Cloud Manager. Haga clic en **+Add** y seleccione **Add Non-Production Pipeline**.
@@ -158,7 +162,7 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
 1. **Aparece el cuadro de diálogo Añadir**  canalización no de producción . Seleccione el tipo de canalización que desea crear, ya sea **Canalización de calidad de código** o **Canalización de implementación**.
 
-   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**. Haga clic en **Continue**.
+   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de errores de métricas importantes** desde **Opciones de implementación**. Haga clic en **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
@@ -191,7 +195,7 @@ Siga los pasos a continuación para editar la canalización configurada que no s
 
 1. Aparece el cuadro de diálogo **Editar canalización de producción**.
 
-   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metrics Failure Behavior**.
+   1. La pestaña **Configuration** permite actualizar el **Pipeline Name**, el **Deployment Déclencheur** y el **Importante Metric Errors Behavior**.
 
       >[!NOTE]
       >Consulte [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para obtener información sobre cómo agregar y administrar repositorios en Cloud Manager.
