@@ -4,9 +4,9 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
+source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2858'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ El modelo de fragmento de contenido define efectivamente la estructura de los fr
       * Si se escribe una **Etiqueta de campo** se completará automáticamente el **Nombre de propiedad** (si está vacío) y se podrá actualizar manualmente posteriormente.
 
          >[!CAUTION]
-         Cuando actualice manualmente un tipo de datos **Nombre de propiedad**, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+         Cuando actualice manualmente la propiedad **Property Name** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
          Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
       Por ejemplo:
 
@@ -140,9 +140,12 @@ En el editor de fragmentos, cada instancia aparecerá como una pestaña.
 
 Muchas propiedades se explican por sí mismas; para determinadas propiedades, a continuación se proporcionan detalles adicionales:
 
->[!CAUTION]
-Cuando actualice manualmente el **Nombre de propiedad**, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
-Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
+* **Nombre de propiedad**
+
+   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **deben** contener *solo* caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+
+   >[!CAUTION]
+   Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
 
 * **Representar**
 comoLas distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
