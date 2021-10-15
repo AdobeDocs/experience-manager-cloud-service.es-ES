@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -89,22 +89,24 @@ Haga clic en **+Add** y seleccione **Add Production Pipeline**.
 
 1. El cuadro de diálogo **Añadir Canalización de producción** incluye una tercera pestaña etiquetada como **Auditoría de experiencias**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
 
-   >[!NOTE]
-   >Debe hacer clic en **Agregar página** para definir su propio vínculo personalizado.
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >Debe hacer clic en **Agregar página** para definir su propio vínculo personalizado. La ruta de página debe comenzar con `/`.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    Haga clic en **Agregar nueva página** para proporcionar una ruta URL que se incluirá en la auditoría de experiencias.
 
-   Por ejemplo, si desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `us/en/about-us.html` en este campo y haga clic en **Guardar**.
+   Por ejemplo, si desea incluir `https://wknd.site/us/en/about-us.html` en la auditoría de experiencias, introduzca la ruta `/us/en/about-us.html` en este campo y haga clic en **Guardar**.
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    La dirección URL que aparece en la tabla es:
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    Se puede incluir un máximo de 25 filas. Si el usuario no envía páginas en esta sección, la página principal del sitio se incluirá en la auditoría de experiencias de forma predeterminada.
 
