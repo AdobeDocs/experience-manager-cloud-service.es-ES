@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,11 @@ Siga estos pasos para configurar el comportamiento y las preferencias de la cana
 1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
 Haga clic en **+Add** y seleccione **Add Production Pipeline**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **Aparece el cuadro de diálogo Añadir** canalización de producción . Introduzca el nombre de la canalización.
 
-   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de error importante** desde **Opciones de implementación**. Haga clic en **Continue**.
+   Además, también puede configurar **Déclencheur de implementación** y **Comportamiento de errores de métricas importantes** desde **Opciones de implementación**. Haga clic en **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -78,16 +78,21 @@ Haga clic en **+Add** y seleccione **Add Production Pipeline**.
    * **Continuar inmediatamente** : si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
 
-1. El cuadro de diálogo **Añadir Canalización de producción** incluye una segunda pestaña etiquetada como **Código fuente**. **Código de pila completa** seleccionado. Puede elegir el **Repositorio** y la **Rama Git**. Haga clic en **Save**.
+1. El cuadro de diálogo **Añadir Canalización de producción** incluye una segunda pestaña etiquetada como **Código fuente**. **Código de pila completa** seleccionado. Puede elegir el **Repositorio** y la **Rama Git**. Seleccione las Opciones de implementación de producción, tal como se explica a continuación. Haga clic en **Continue**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   Opciones de implementación de producción:
+
+   * **Pausar antes de implementar en producción**: Esta opción permite que la implementación se detenga antes de la producción.
+   * **Programado**: Esta opción permite al usuario activar la implementación de producción programada.
 
 1. El cuadro de diálogo **Añadir Canalización de producción** incluye una tercera pestaña etiquetada como **Auditoría de experiencias**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
 
    >[!NOTE]
    >Debe hacer clic en **Agregar página** para definir su propio vínculo personalizado.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    Haga clic en **Agregar nueva página** para proporcionar una ruta URL que se incluirá en la auditoría de experiencias.
 
@@ -234,6 +239,28 @@ Siga los pasos a continuación para editar la canalización configurada que no s
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización que no es de producción.
+
+### Acciones adicionales de canalización que no son de producción {#additional-nonprod-actions}
+
+#### Ejecución de una canalización que no sea de producción {#run-nonprod}
+
+Puede ejecutar la canalización de producción desde la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** desde la tarjeta **Canalizaciones** y haga clic en **Ejecutar**, como se muestra en la figura siguiente.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### Eliminación de una canalización que no es de producción {#delete-nonprod}
+
+Puede eliminar la canalización de producción de la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** de la tarjeta **Canalizaciones** y haga clic en **Eliminar**, como se muestra en la figura siguiente.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## Pasos siguientes {#the-next-steps}
