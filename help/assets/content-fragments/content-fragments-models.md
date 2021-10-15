@@ -4,9 +4,9 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: e099272245054bdff0bbeaa1fd9b01e564198dee
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2850'
 ht-degree: 6%
 
 ---
@@ -77,6 +77,9 @@ El modelo de fragmento de contenido define efectivamente la estructura de los fr
       * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades](#properties).
       * Si se escribe una **Etiqueta de campo** se completará automáticamente el **Nombre de propiedad** (si está vacío) y se podrá actualizar manualmente posteriormente.
 
+         >[!CAUTION]
+         Cuando actualice manualmente un tipo de datos **Nombre de propiedad**, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+         Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
       Por ejemplo:
 
       ![propiedades del campo](assets/cfm-models-05.png)
@@ -136,6 +139,10 @@ En el editor de fragmentos, cada instancia aparecerá como una pestaña.
 ## Propiedades {#properties}
 
 Muchas propiedades se explican por sí mismas; para determinadas propiedades, a continuación se proporcionan detalles adicionales:
+
+>[!CAUTION]
+Cuando actualice manualmente el **Nombre de propiedad**, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
 
 * **Representar**
 comoLas distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
