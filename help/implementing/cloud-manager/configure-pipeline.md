@@ -2,9 +2,9 @@
 title: 'Configuración de la canalización de CI/CD: Cloud Services'
 description: 'Configuración de la canalización de CI/CD: Cloud Services'
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -147,6 +147,32 @@ Siga los pasos a continuación para editar la canalización configurada:
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. Haga clic en **Update** una vez que haya terminado de editar la canalización.
+
+### Acciones adicionales de canalización de producción {#additional-prod-actions}
+
+#### Ejecución de una canalización de producción {#run-prod}
+
+Puede ejecutar la canalización de producción desde la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** desde la tarjeta **Canalizaciones** y haga clic en **Ejecutar**, como se muestra en la figura siguiente.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### Eliminación de una canalización de producción {#delete-prod}
+
+Puede eliminar la canalización de producción de la tarjeta Canalizaciones:
+
+1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+
+1. Haga clic en **...** de la tarjeta **Canalizaciones** y haga clic en **Eliminar**, como se muestra en la figura siguiente.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >Un usuario con la función Gestor de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la opción **Delete** de la tarjeta Canalización.
+
 
 ## Canalizaciones de calidad de código y no producción {#non-production-pipelines}
 
