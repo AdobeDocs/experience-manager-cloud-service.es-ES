@@ -1,10 +1,10 @@
 ---
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
-source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 41%
+source-wordcount: '518'
+ht-degree: 42%
 
 ---
 
@@ -71,4 +71,4 @@ Complete los siguientes pasos:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a extraer contenido del origen en la herramienta de transferencia de contenido, ya estará listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target en la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener información sobre cómo introducir el conjunto de migración de la herramienta de transferencia de contenido.
+Una vez que haya aprendido a extraer contenido del origen en la herramienta de transferencia de contenido, ya estará listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener información sobre cómo introducir el conjunto de migración desde la herramienta de transferencia de contenido.
