@@ -1,18 +1,18 @@
 ---
 title: Configuración de OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuración de OSGi con valores secretos y valores específicos de entorno '
-feature: Implementación
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 0%
 
 ---
 
 # Configuración de OSGi para Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[](https://www.osgi.org/) OSGies un elemento fundamental de la pila de tecnología de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y sus configuraciones.
+[](https://www.osgi.org/) OSGies un elemento fundamental de la pila tecnológica de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y sus configuraciones.
 
 OSGi proporciona los primitivos estandarizados que permiten construir aplicaciones a partir de componentes pequeños, reutilizables y colaborativos. Estos componentes se pueden componer en una aplicación e implementar. Esto permite una administración sencilla de los paquetes OSGi, ya que se pueden detener, instalar e iniciar individualmente. Las interdependencias se gestionan automáticamente. Cada componente OSGi está contenido en uno de los distintos paquetes. Para obtener más información, consulte la [especificación OSGi](https://www.osgi.org/Specifications/HomePage).
 
@@ -62,7 +62,7 @@ Al desarrollar localmente, se puede pasar un parámetro de inicio de modo de eje
 
 ## Tipos de valores de configuración de OSGi {#types-of-osgi-configuration-values}
 
-Existen tres variedades de valores de configuración OSGi que se pueden usar con Adobe Experience Manager como Cloud Service.
+Existen tres variedades de valores de configuración OSGi que se pueden utilizar con Adobe Experience Manager as a Cloud Service.
 
 1. **Valores** en línea, que son valores que están codificados en la configuración OSGi y almacenados en Git. Por ejemplo:
 
@@ -80,7 +80,7 @@ Existen tres variedades de valores de configuración OSGi que se pueden usar con
    } 
    ```
 
-1. **Valores** específicos de entorno, que son valores que varían entre entornos de desarrollo y, por lo tanto, no se pueden definir con precisión mediante el modo de ejecución (ya que hay un solo  `dev` modo de ejecución en Adobe Experience Manager como Cloud Service). Por ejemplo:
+1. **Valores** específicos de entorno, que son valores que varían entre entornos de desarrollo y, por lo tanto, no se pueden definir con precisión mediante el modo de ejecución (ya que hay un solo  `dev` modo de ejecución en Adobe Experience Manager as a Cloud Service). Por ejemplo:
 
    ```json
    {
@@ -120,16 +120,16 @@ Siempre que defina un valor de configuración OSGi, comience con valores en lín
 
 ### Cuándo usar valores de configuración específicos de entornos no secretos {#when-to-use-non-secret-environment-specific-configuration-values}
 
-Utilice únicamente configuraciones específicas del entorno (`$[env:ENV_VAR_NAME]`) para valores de configuración no secretos cuando los valores varían para el nivel de vista previa o varían entre entornos de desarrollo. Esto incluye instancias de desarrollo locales y cualquier entorno de desarrollo de Adobe Experience Manager as a Cloud Service. Aparte de establecer valores únicos para el nivel de vista previa, evite utilizar configuraciones específicas de entorno no secreto para Adobe Experience Manager como escenario de Cloud Service o entornos de producción.
+Utilice únicamente configuraciones específicas del entorno (`$[env:ENV_VAR_NAME]`) para valores de configuración no secretos cuando los valores varían para el nivel de vista previa o varían entre entornos de desarrollo. Esto incluye instancias de desarrollo locales y cualquier entorno de desarrollo de Adobe Experience Manager as a Cloud Service. Aparte de establecer valores únicos para el nivel de vista previa, evite utilizar configuraciones específicas de entorno no secreto para entornos de fase o producción de Adobe Experience Manager as a Cloud Service.
 
 * Utilice únicamente configuraciones específicas de entorno no secreto para valores de configuración que difieran entre el nivel de publicación y vista previa, o para valores que difieran entre entornos de desarrollo, incluidas instancias de desarrollo local.
 * Además del escenario en el que el nivel de vista previa necesita variar desde el nivel de publicación, utilice los valores en línea estándar en las configuraciones OSGi para los valores no secretos de fase y producción. En relación con esto, no se recomienda utilizar configuraciones específicas del entorno para facilitar la realización de cambios de configuración en tiempo de ejecución en entornos de fase y producción; estos cambios deben introducirse mediante la administración del código fuente.
 
 ### Cuándo utilizar valores de configuración específicos de entornos secretos {#when-to-use-secret-environment-specific-configuration-values}
 
-Adobe Experience Manager como Cloud Service requiere el uso de configuraciones específicas del entorno (`$[secret:SECRET_VAR_NAME]`) para cualquier valor de configuración OSGi secreto, como contraseñas, claves de API privadas o cualquier otro valor que no se pueda almacenar en Git por motivos de seguridad.
+Adobe Experience Manager as a Cloud Service requiere el uso de configuraciones específicas del entorno (`$[secret:SECRET_VAR_NAME]`) para cualquier valor de configuración OSGi secreto, como contraseñas, claves de API privadas o cualquier otro valor que no se pueda almacenar en Git por motivos de seguridad.
 
-Utilice configuraciones secretas específicas del entorno para almacenar el valor de secretos en todos los entornos de Adobe Experience Manager as a Cloud Service, incluidos los de fase y producción.
+Utilice configuraciones específicas de entornos secretos para almacenar el valor de secretos en todos los entornos de Adobe Experience Manager as a Cloud Service, incluidos los entornos de fase y producción.
 
 ## Creación de configuraciones de OSGi {#creating-sogi-configurations}
 
@@ -140,9 +140,9 @@ Existen dos maneras de crear configuraciones de OSGi, como se describe a continu
 Los archivos de configuración OSGi con formato JSON se pueden escribir a mano directamente en el proyecto AEM. A menudo, esta es la forma más rápida de crear configuraciones de OSGi para componentes de OSGi conocidos, y especialmente componentes de OSGi personalizados que han sido diseñados y desarrollados por el mismo desarrollador que define las configuraciones. Este método también se puede utilizar para copiar/pegar y actualizar configuraciones para el mismo componente OSGi en varias carpetas de modo de ejecución.
 
 1. En su IDE, abra el proyecto `ui.apps`, busque o cree la carpeta de configuración (`/apps/.../config.<runmode>`) que se dirija a los modos de ejecución que la nueva configuración de OSGi debe aplicar
-1. En esta carpeta de configuración, cree un nuevo archivo `<PID>.cfg.json`. El PID es la identidad persistente del componente OSGi y suele ser el nombre de clase completo de la implementación del componente OSGi. Por ejemplo:
+1. En esta carpeta de configuración, cree un nuevo archivo `<PID>.cfg.json`. El PID es la identidad persistente del componente OSGi. Normalmente es el nombre de clase completo de la implementación del componente OSGi. Por ejemplo:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan la convención de  `<PID>-<factory-name>.cfg.json` nomenclatura
+Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan la convención de  `<factoryPID>-<name>.cfg.json` nomenclatura
 1. Abra el nuevo archivo `.cfg.json` y defina las combinaciones clave/valor para los pares de propiedad y valor OSGi, siguiendo el formato de configuración [JSON OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 1. Guarde los cambios en el nuevo archivo `.cfg.json`
 1. Añadir y confirmar el nuevo archivo de configuración OSGi en Git
@@ -283,7 +283,7 @@ La intención es que el valor de la propiedad OSGI `my_var1` sea el mismo para s
 </tr>
 <tr>
 <td>
-config
+Configuración
 </td>
 <td>
 <pre>
@@ -383,7 +383,7 @@ La intención es que el valor de la propiedad OSGi `my_var1` sea el mismo para s
 </tr>
 <tr>
 <td>
-config
+Configuración
 </td>
 <td>
 <pre>
@@ -424,7 +424,7 @@ Otra manera de lograr esto sería establecer un valor predeterminado para el tok
 </tr>
 <tr>
 <td>
-config
+Configuración
 </td>
 <td>
 <pre>
@@ -537,7 +537,7 @@ Se pueden declarar hasta 200 variables por entorno.
 
 ## Consideraciones de implementación para valores de configuración secretos y específicos de entorno {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-Debido a que los valores de configuración específicos de entorno y secreto existen fuera de Git y, por lo tanto, no forman parte de los mecanismos formales de implementación de Adobe Experience Manager as a Cloud Service, el cliente debe administrar, administrar e integrar en Adobe Experience Manager as a Cloud Service.
+Debido a que los valores de configuración específicos de entorno y secreto residen fuera de Git y, por lo tanto, no forman parte de los mecanismos formales de implementación de Adobe Experience Manager as a Cloud Service, el cliente debe administrar, administrar e integrar en el proceso de implementación de Adobe Experience Manager as a Cloud Service.
 
 Como se ha mencionado anteriormente, la llamada a la API implementa las nuevas variables y valores en los entornos de Cloud, de forma similar a una canalización de implementación de código de cliente típica. Los servicios de autor y publicación se reiniciarán y harán referencia a los nuevos valores, normalmente tardando unos minutos. Tenga en cuenta que las puertas de calidad y las pruebas que ejecuta Cloud Manager durante una implementación de código normal no se realizan durante este proceso.
 
