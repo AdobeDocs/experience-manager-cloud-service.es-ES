@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.7.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.7.0
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.7.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.7.0
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ Esta página describe las notas de la versión de Cloud Manager en AEM as a Clou
 ## Fecha de la versión {#release-date}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.7.0 es el 15 de julio de 2021.
-La próxima versión está planificada para el 12 de agosto de 2021.
+
 
 ### Novedades {#what-is-new}
 

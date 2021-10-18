@@ -1,7 +1,7 @@
 ---
 title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
 description: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -28,7 +28,10 @@ Siga el enfoque recomendado como se describe a continuación:
 
 * Al crear el conjunto de migración, utilice la URL del entorno as a Cloud Service AEM autor.
 
-* Durante la ingesta para publicar, el nivel de publicación NO se reducirá (a diferencia del autor). Como precaución, evite cualquier operación de escritura iniciada por el usuario, como:
+* Durante la ingesta para publicar, el nivel de publicación no se reducirá (a diferencia del autor).
 
-   * Distribución de contenido de AEM Autor as a Cloud Service a Publicar en ese entorno
-   * Sincronización de usuarios entre instancias de publicación
+   >[!IMPORTANT]
+   >Como precaución, evite cualquier operación de escritura iniciada por el usuario, como:
+   > * Distribución de contenido de AEM Autor as a Cloud Service a Publicar en ese entorno
+   > * Sincronización de usuarios entre instancias de publicación
+

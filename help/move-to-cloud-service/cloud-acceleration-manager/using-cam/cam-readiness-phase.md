@@ -2,9 +2,9 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 5%
 
 ---
@@ -67,11 +67,17 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
    >[!NOTE]
    >Al cargar un nuevo informe, se restablecen todas las evaluaciones.
 
+### Uso de la vista previa de impresión {#print-preview-cam}
+
+Puede seleccionar la opción de vista previa de impresión en Cloud Acceleration Manager para obtener una vista previa imprimible de los informes o para imprimir el informe en un formato de PDF para facilitar el uso compartido.
+
+Complete los siguientes pasos:
+
 1. Haga clic en el icono **Vista previa de impresión**, como se muestra a continuación.
 
    ![image](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha en la que el informe se muestra en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato de PDF para facilitar el uso compartido.
+1. Al hacer clic en **Vista previa de impresión** se abre una nueva ficha en la que el informe se muestra en una vista previa imprimible. Haga clic en **Imprimir** para imprimir el informe en formato de PDF.
 
    >[!IMPORTANT]
    >* Se recomienda la opción **Guardar como PDF** y se admite para la funcionalidad anterior.
