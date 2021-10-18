@@ -1,15 +1,19 @@
 ---
 title: Configuración de redes avanzadas para AEM as a Cloud Service
-description: Aprenda a configurar funciones de red avanzadas como VPN o dirección IP de salida dedicada para AEM as a Cloud Service
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+description: Aprenda a configurar funciones de red avanzadas como VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
+source-git-commit: 47803e6af4ae3c95600c75be58c907da82112e1b
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2837'
 ht-degree: 1%
 
 ---
 
 
 # Configuración de redes avanzadas para AEM as a Cloud Service {#configuring-advanced-networking}
+
+Este artículo pretende presentarle las diferentes funciones avanzadas de red de AEM as a Cloud Service, incluidas las direcciones IP de VPN y salida que pueden asignarse o asignarse de forma flexible.
+
+## Información general {#overview}
 
 >[!INFO]
 >
