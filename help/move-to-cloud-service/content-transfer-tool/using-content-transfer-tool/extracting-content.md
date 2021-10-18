@@ -1,10 +1,10 @@
 ---
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 42%
+source-wordcount: '549'
+ht-degree: 39%
 
 ---
 
@@ -19,22 +19,25 @@ ht-degree: 42%
 >abstract="Extracción hace referencia a la extracción de contenido de la instancia de AEM de origen en un área temporal denominada conjunto de migración. El conjunto de migración es un área de almacenamiento en la nube proporcionada por Adobe para almacenar temporalmente el contenido transferido entre la instancia de AEM de origen y la instancia de AEM de Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="Extracción superior"
 
+>[!IMPORTANT]
+>Debe ejecutar la herramienta de asignación de usuarios antes de extraer contenido del origen. Consulte [Uso de la herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) para obtener más información.
+
 Siga los pasos a continuación para extraer el conjunto de migración de la herramienta de transferencia de contenido:
 >[!NOTE]
->Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, debe configurar un archivo `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obtener más información.
+>Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de extracción. Para ello, deberá configurar un `azcopy.config` antes de ejecutar la extracción. Consulte [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para obtener más información.
 
-1. Seleccione un conjunto de migración del asistente **Content Transfer** y haga clic en **Extract** para iniciar la extracción.
+1. Seleccionar un conjunto de migraciones de **Transferencia de contenido** asistente y haga clic en **Extraer** para iniciar la extracción.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
 
-1. Aparece el cuadro de diálogo **Migration Set extraction** y haga clic en **Extract** para iniciar la fase de extracción.
+1. La variable **Extracción de conjunto de migración** aparece el cuadro de diálogo y haga clic en **Extraer** para iniciar la fase de extracción.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
    >Tiene la opción de sobrescribir el contenedor de ensayo durante la fase de extracción.
 
-1. El campo **Extraction** ahora muestra el estado **RUNNING** para indicar que la extracción está en curso.
+1. La variable **Extracción** ahora muestra la variable **EJECUCIÓN** para indicar que la extracción está en curso.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -43,7 +46,7 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >La interfaz de usuario tiene una función de recarga automática que vuelve a cargar el asistente de **Transferencia de contenido** cada 30 segundos.
+   >La interfaz de usuario tiene una función de recarga automática que vuelve a cargar el **Transferencia de contenido** cada 30 segundos.
    >Cuando se inicia la fase de extracción, el bloqueo de escritura se crea y se libera después de *60 segundos*. Por lo tanto, si se detiene una extracción, hay que esperar un minuto para que se libere el bloqueo antes de volver a iniciarla.
 
 ## Extracción superior {#top-up-extraction-process}
@@ -58,11 +61,11 @@ Una vez completado el proceso de extracción, se puede transferir contenido delt
 
 Complete los siguientes pasos:
 
-1. Vaya al asistente de **Content Transfer** y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior.
+1. Vaya a la **Transferencia de contenido** y seleccione el conjunto de migración para el que desea realizar la extracción superior. Haga clic en **Extracción** para iniciar la extracción superior.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. Aparece el cuadro de diálogo **extracción del conjunto de migración**. Haga clic en **Extract**.
+1. La variable **Extracción de conjunto de migración** se abre. Haga clic en **Extraer**.
 
    >[!IMPORTANT]
    >Se debe desactivar la opción **Sobrescribir el contenedor de ensayo durante la extracción** .
@@ -71,4 +74,4 @@ Complete los siguientes pasos:
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a extraer contenido del origen en la herramienta de transferencia de contenido, ya estará listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para obtener información sobre cómo introducir el conjunto de migración desde la herramienta de transferencia de contenido.
+Una vez que haya aprendido a extraer contenido del origen en la herramienta de transferencia de contenido, ya estará listo para aprender el proceso de ingesta en la herramienta de transferencia de contenido. Consulte [Ingesta de contenido en Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para aprender a ingerir el conjunto de migraciones desde la herramienta de transferencia de contenido.
