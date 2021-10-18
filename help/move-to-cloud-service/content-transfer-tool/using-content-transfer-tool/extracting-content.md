@@ -1,10 +1,10 @@
 ---
 title: Extracción de contenido del origen
 description: Extracción de contenido del origen
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 39%
+source-wordcount: '596'
+ht-degree: 36%
 
 ---
 
@@ -36,6 +36,10 @@ Siga los pasos a continuación para extraer el conjunto de migración de la herr
 
    >[!NOTE]
    >Tiene la opción de sobrescribir el contenedor de ensayo durante la fase de extracción.
+
+   >[!IMPORTANT]
+   >Si la Asignación de usuarios no se ha ejecutado en este conjunto de migración antes de extraer contenido del origen, verá una advertencia mostrando que el paso Asignación de usuarios está pendiente, como se muestra en la figura siguiente. Haga clic en **Asignar usuarios** para ejecutar la herramienta Asignación de usuarios.
+   >![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. La variable **Extracción** ahora muestra la variable **EJECUCIÓN** para indicar que la extracción está en curso.
 
