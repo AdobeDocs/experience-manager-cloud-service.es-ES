@@ -1,9 +1,9 @@
 ---
 title: Configuración de redes avanzadas para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
-source-git-commit: 47803e6af4ae3c95600c75be58c907da82112e1b
+source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2832'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Configuración de redes avanzadas para AEM as a Cloud Service {#configuring-advanced-networking}
 
-Este artículo pretende presentarle las diferentes funciones avanzadas de red de AEM as a Cloud Service, incluidas las direcciones IP de VPN y salida que pueden asignarse o asignarse de forma flexible.
+Este artículo tiene como objetivo presentarle las diferentes funciones de red avanzadas de AEM as a Cloud Service, incluido el aprovisionamiento de autoservicio de VPN, puertos no estándar y direcciones IP de salida dedicadas.
 
 ## Información general {#overview}
 
@@ -21,11 +21,11 @@ Este artículo pretende presentarle las diferentes funciones avanzadas de red de
 
 AEM as a Cloud Service ofrece varios tipos de funciones de red avanzadas, que los clientes pueden configurar mediante las API de Cloud Manager. Entre estas características se incluyen:
 
-* [Salida de puerto flexible](#flexible-port-egress) : configure AEM as a Cloud Service para permitir el tráfico saliente desde puertos no estándar
-* [Dirección IP de salida dedicada](#dedicated-egress-IP-address) : configure el tráfico de AEM as a Cloud Service a partir de una IP única
-* [Red privada virtual (VPN)](#vpn) : tráfico seguro entre la infraestructura de un cliente y AEM as a Cloud Service, para clientes que tienen tecnología VPN
+* [Salida de puerto flexible](#flexible-port-egress) - configurar AEM as a Cloud Service para permitir el tráfico saliente desde puertos no estándar
+* [Dirección IP de salida dedicada](#dedicated-egress-IP-address) - configurar el tráfico de AEM as a Cloud Service a originarse desde una IP única
+* [Red privada virtual (VPN)](#vpn) - tráfico seguro entre la infraestructura de un cliente y AEM as a Cloud Service, para clientes que tienen tecnología VPN
 
-Este artículo describe cada una de estas opciones en detalle, incluido cómo se pueden configurar. Como estrategia de configuración general, el extremo de la API `/networkInfrastructures` se invoca a nivel de programa para declarar el tipo deseado de red avanzada, seguido de una llamada al extremo `/advancedNetworking` para cada entorno para habilitar la infraestructura y configurar parámetros específicos del entorno. Consulte los extremos adecuados en la documentación de la API de Cloud Manager para cada sintaxis formal, así como las solicitudes y respuestas de ejemplo.
+Este artículo describe cada una de estas opciones en detalle, incluido cómo se pueden configurar. Como estrategia de configuración general, la variable `/networkInfrastructures` El extremo de API se invoca a nivel de programa para declarar el tipo deseado de red avanzada, seguido de una llamada a la función `/advancedNetworking` para cada entorno para habilitar la infraestructura y configurar parámetros específicos del entorno. Consulte los extremos adecuados en la documentación de la API de Cloud Manager para cada sintaxis formal, así como las solicitudes y respuestas de ejemplo.
 
 Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, se recomienda elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
@@ -47,33 +47,33 @@ La salida de puerto flexible es la opción recomendada si no necesita VPN y no n
 
 ### Configuración {#configuring-flexible-port-egress-provision}
 
-Una vez por programa, se invoca el extremo `/program/<programId>/networkInfrastructures` del POST, pasando simplemente el valor de `flexiblePortEgress` para el parámetro `kind` y la región. El extremo responde con `network_id`, así como con otra información que incluye el estado. Se debe hacer referencia al conjunto completo de parámetros y a la sintaxis exacta en los documentos de API.
+Una vez por programa, el POST `/program/<programId>/networkInfrastructures` se invoca el punto final, pasando simplemente el valor de `flexiblePortEgress` para el `kind` y región. El extremo responde con la variable `network_id`, así como otra información, incluido el estado. Se debe hacer referencia al conjunto completo de parámetros y a la sintaxis exacta en los documentos de API.
 
-Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al extremo [environment GET](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) de Cloud Manager mostraría un estado &quot;listo&quot;.
+Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al informe de [extremo de GET de entorno](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) mostraría el estado &quot;listo&quot;.
 
-Si la configuración de salida de puerto flexible con ámbito de programa está lista, se debe invocar el extremo `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` por entorno para habilitar la red a nivel de entorno y declarar cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
+Si la configuración de salida de puerto flexible con alcance de programa está lista, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` el extremo debe invocarse por entorno para habilitar la red en el nivel de entorno y para declarar cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
 
 Las reglas de reenvío de puertos deben declararse para cualquier puerto que no sea 80/443 especificando el conjunto de hosts de destino (nombres o IP, y con puertos). Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
 
-La API debe responder en solo unos segundos, indicando un estado de actualización y después de unos 10 minutos, el método `GET` del extremo debe indicar que la red avanzada está habilitada.
+La API debe responder en solo unos segundos, indicando un estado de actualización y después de unos 10 minutos, el valor de `GET` debe indicar que la red avanzada está habilitada.
 
 ### Actualizaciones {#updating-flexible-port-egress-provision}
 
-La configuración a nivel de programa se puede actualizar invocando el extremo `PUT /api/program/<program_id>/network/<network_id>` y tendrá efecto en unos minutos.
+La configuración de nivel de programa se puede actualizar invocando la variable `PUT /api/program/<program_id>/network/<network_id>` y tendrá efecto en unos minutos.
 
 >[!NOTE]
 >
 > El parámetro &quot;amable&quot; (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
 
-Las reglas de reenvío de puertos por entorno se pueden actualizar invocando de nuevo el extremo `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` , asegurándose de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto.
+Las reglas de reenvío de puertos por entorno se pueden actualizar invocando de nuevo la variable `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` , asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto.
 
 ### Eliminación o desactivación de la salida de puerto flexible {#deleting-disabling-flexible-port-egress-provision}
 
-Para **eliminar** la infraestructura de red, envíe un ticket de asistencia al cliente en el que se describa lo que se ha creado y por qué debe eliminarse.
+Para **delete** la infraestructura de red, envíe un ticket de asistencia al cliente, en el que se describa lo que se ha creado y por qué debe eliminarse.
 
-Para **deshabilitar** salida de puerto flexible desde un entorno en particular, invoque `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+Para **disable** salida de puerto flexible desde un entorno particular, invocar `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
-Para obtener más información, consulte la [documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Para obtener más información, consulte la [Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Enrutamiento de tráfico {#flexible-port-egress-traffic-routing}
 
@@ -98,7 +98,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Si utiliza bibliotecas de red Java no estándar, configure los proxies con las propiedades anteriores para todo el tráfico.
 
-El tráfico no http/s con destinos a través de puertos declarados en el parámetro `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
+Tráfico no http/s con destinos a través de puertos declarados en la variable `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -142,7 +142,7 @@ La siguiente tabla describe el enrutamiento de tráfico:
   </tr>
   <tr>
     <td><b>No http o no https</b></td>
-    <td>El cliente se conecta a la variable de entorno <code>AEM_PROXY_HOST</code> utilizando una <code>portOrig</code> declarada en el parámetro de API <code>portForwards</code>.</td>
+    <td>El cliente se conecta al <code>AEM_PROXY_HOST</code> variable de entorno mediante un <code>portOrig</code> declarada en el <code>portForwards</code> Parámetro de API.</td>
     <td>Cualquiera</td>
     <td>Permitido</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -159,7 +159,7 @@ La siguiente tabla describe el enrutamiento de tráfico:
 
 **Configuración de Apache/Dispatcher**
 
-La directiva `mod_proxy` del nivel de AEM Cloud Service Apache/Dispatcher se puede configurar utilizando las propiedades descritas anteriormente.
+El nivel de AEM Cloud Service Apache/Dispatcher `mod_proxy` puede configurarse con las propiedades descritas anteriormente.
 
 ```
 ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
@@ -179,7 +179,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 >[!NOTE]
 >
->Si se le ha proporcionado una IP de salida dedicada antes de la versión de septiembre de 2021 (6/10/21), consulte [Clientes de direcciones de salida dedicadas heredadas](#legacy-dedicated-egress-address-customers).
+>Si se le ha proporcionado una IP de salida dedicada antes de la versión de septiembre de 2021 (6/10/21), consulte la [Los Auriculares Dedicados Heredados Se Dirigen A Los Clientes](#legacy-dedicated-egress-address-customers).
 
 ### Ventajas {#benefits}
 
@@ -193,11 +193,11 @@ Sin la función de dirección IP dedicada habilitada, el tráfico proveniente de
 >
 >La capacidad de reenvío de Splunk no es posible desde una dirección IP de salida dedicada.
 
-La configuración de la dirección IP de salida dedicada es idéntica a la [salida de puerto flexible](#configuring-flexible-port-egress-provision).
+La configuración de la dirección IP de salida dedicada es idéntica a [salida de puerto flexible](#configuring-flexible-port-egress-provision).
 
-La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice un solucionador DNS para identificar la dirección IP asociada con `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si necesita cambiarla en el futuro, se proporcionará una notificación avanzada.
+La principal diferencia es que el tráfico siempre saldrá de una IP única y dedicada. Para encontrar esa IP, utilice una resolución DNS para identificar la dirección IP asociada a `p{PROGRAM_ID}.external.adobeaemcloud.com`. No se espera que la dirección IP cambie, pero si necesita cambiarla en el futuro, se proporcionará una notificación avanzada.
 
-Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el extremo `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` , la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto le permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al principio del dominio.
+Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en la `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` extremo, dirección IP de salida dedicada admite un `nonProxyHosts` parámetro. Esto le permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. La variable `nonProxyHost` Las direcciones URL pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al principio del dominio.
 
 Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, los clientes deben elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
@@ -223,14 +223,14 @@ Al decidir entre una salida de puerto flexible y una dirección IP de salida ded
   </tr>
   <tr>
     <td></td>
-    <td>Host que coincide con el parámetro <code>nonProxyHosts</code></td>
+    <td>El host que coincide con la variable <code>nonProxyHosts</code> parameter</td>
     <td>80 o 443</td>
     <td>A través de las IP del clúster compartido</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Host que coincide con el parámetro <code>nonProxyHosts</code></td>
+    <td>El host que coincide con la variable <code>nonProxyHosts</code> parameter</td>
     <td>Puertos fuera de 80 o 443</td>
     <td>Bloqueado</td>
     <td></td>
@@ -258,7 +258,7 @@ Al decidir entre una salida de puerto flexible y una dirección IP de salida ded
   </tr>
   <tr>
     <td><b>No http o no https</b></td>
-    <td>El cliente se conecta a la variable env <code>AEM_PROXY_HOST</code> utilizando una <code>portOrig</code> declarada en el parámetro API <code>portForwards</code></td>
+    <td>El cliente se conecta a <code>AEM_PROXY_HOST</code> variable env usando una <code>portOrig</code> declarada en el <code>portForwards</code> Parámetro de API</td>
     <td>Cualquiera</td>
     <td>A través de la IP de salida dedicada</td>
     <td><code>mysql.example.com:3306</code></td>
@@ -331,7 +331,7 @@ VPN permite conectarse a una infraestructura o centro de datos local desde la cr
 
 También permite conectarse a proveedores de SaaS, como un proveedor CRM que admite VPN o conectarse desde una red corporativa para AEM autor as a Cloud Service, obtener una vista previa o publicar.
 
-La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consulte la lista de dispositivos en [esta página](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), según la información de la columna **RouteBased configuration Instructions**. Configure el dispositivo como se describe en la tabla .
+La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consulte la lista de dispositivos en [esta página](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable), según la información de la sección **Instrucciones de configuración basadas en rutas** para abrir el Navegador. Configure el dispositivo como se describe en la tabla .
 
 ### Consideraciones generales {#general-vpn-considerations}
 
@@ -340,33 +340,33 @@ La mayoría de los dispositivos VPN con tecnología IPSec son compatibles. Consu
 
 ### Creación {#vpn-creation}
 
-Una vez por programa, se invoca el extremo `/program/<programId>/networkInfrastructures` del POST, pasando una carga útil de información de configuración que incluye: el valor de &quot;vpn&quot; para el parámetro `kind`, región, espacio de dirección (lista de CIDR: tenga en cuenta que esto no se puede modificar posteriormente), resueltores DNS (para resolver nombres en la red del cliente) e información de conexión VPN, como configuración de puerta de enlace, clave VPN compartida y política de seguridad IP. El extremo responde con `network_id`, así como con otra información que incluye el estado. Se debe hacer referencia al conjunto completo de parámetros y la sintaxis exacta en la [documentación de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
+Una vez por programa, el POST `/program/<programId>/networkInfrastructures` se invoca el extremo , pasando una carga útil de información de configuración que incluye: el valor de &quot;vpn&quot; para la variable `kind` parámetro, región, espacio de dirección (lista de CIDR; tenga en cuenta que esto no se puede modificar más adelante), resolución de DNS (para resolver nombres en la red del cliente) e información de conexión VPN, como configuración de puerta de enlace, clave VPN compartida y política de seguridad IP. El extremo responde con la variable `network_id`, así como otra información, incluido el estado. Se debe hacer referencia al conjunto completo de parámetros y a la sintaxis exacta en la variable [Documentación de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure).
 
-Una vez realizada la llamada, la infraestructura de red tarda normalmente entre 45 y 60 minutos en aprovisionarse. Se puede llamar al método de GET de la API para devolver el estado actual, que eventualmente cambiará de `creating` a `ready`. Consulte la documentación de la API para todos los estados.
+Una vez realizada la llamada, la infraestructura de red tarda normalmente entre 45 y 60 minutos en aprovisionarse. Se puede llamar al método de GET de la API para devolver el estado actual, que finalmente cambiará de `creating` a `ready`. Consulte la documentación de la API para todos los estados.
 
-Si la configuración de VPN con ámbito de programa está lista, se debe invocar el extremo `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` por entorno para habilitar la red a nivel de entorno y declarar cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
+Si la configuración de VPN con alcance de programa está lista, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` el extremo debe invocarse por entorno para habilitar la red en el nivel de entorno y para declarar cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
 
-Consulte la [documentación de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) para obtener más información.
+Consulte la [Documentación de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) para obtener más información.
 
-Las reglas de reenvío de puertos deben declararse para cualquier tráfico TCP de protocolo no http/s que deba enrutarse a través de la VPN especificando el conjunto de hosts de destino (nombres o IP, y con puertos). Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto entre 3000 y 30999, donde los valores deben ser únicos en los entornos del programa. Los clientes también pueden enumerar un conjunto de direcciones URL en el parámetro `nonProxyHosts` , que declara la dirección URL para la cual el tráfico debe evitar el enrutamiento VPN, pero en su lugar a través de un intervalo IP compartido. Sigue los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al principio del dominio.
+Las reglas de reenvío de puertos deben declararse para cualquier tráfico TCP de protocolo no http/s que deba enrutarse a través de la VPN especificando el conjunto de hosts de destino (nombres o IP, y con puertos). Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto entre 3000 y 30999, donde los valores deben ser únicos en los entornos del programa. Los clientes también pueden enumerar un conjunto de direcciones URL en la `nonProxyHosts` , que declara la dirección URL para la que el tráfico debe evitar el enrutamiento VPN, pero en su lugar a través de un intervalo IP compartido. Sigue los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al principio del dominio.
 
-La API debe responder en solo unos segundos, indicando un estado de `updating` y después de unos 10 minutos, una llamada al extremo de GET de entorno de Cloud Manager mostraría un estado de `ready`, indicando que se ha aplicado la actualización del entorno.
+La API debe responder en solo unos segundos, indicando un estado de `updating` y después de unos 10 minutos, una llamada al extremo de GET de entorno de Cloud Manager mostraría un estado de `ready`, indicando que se ha aplicado la actualización al entorno.
 
-Tenga en cuenta que incluso si no hay reglas de enrutamiento de tráfico de entorno (hosts o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe llamarse, solo con una carga útil vacía.
+Tenga en cuenta que aunque no haya reglas de enrutamiento de tráfico de entorno (hosts o bypass), `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` debe llamarse a , solo con una carga útil vacía.
 
 ### Actualización de la VPN {#updating-the-vpn}
 
-La configuración de VPN a nivel de programa se puede actualizar invocando el extremo `PUT /api/program/<program_id>/network/<network_id>` .
+La configuración de VPN a nivel de programa se puede actualizar invocando la variable `PUT /api/program/<program_id>/network/<network_id>` punto final.
 
-Tenga en cuenta que el espacio de direcciones no se puede cambiar después del aprovisionamiento VPN inicial. Si es necesario, póngase en contacto con el servicio de atención al cliente. Además, el parámetro `kind` (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
+Tenga en cuenta que el espacio de direcciones no se puede cambiar después del aprovisionamiento VPN inicial. Si es necesario, póngase en contacto con el servicio de atención al cliente. Además, la variable `kind` parámetro (`flexiblePortEgress`, `dedicatedEgressIP` o `VPN`) no se puede modificar. Póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
 
-Las reglas de enrutamiento por entorno se pueden actualizar invocando de nuevo el extremo `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` , asegurándose de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto. Las actualizaciones de entorno suelen tardar entre 5 y 10 minutos en aplicarse.
+Las reglas de enrutamiento por entorno se pueden actualizar invocando de nuevo la variable `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` , asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto. Las actualizaciones de entorno suelen tardar entre 5 y 10 minutos en aplicarse.
 
 ### Eliminación o desactivación de la VPN {#deleting-or-disabling-the-vpn}
 
 Para eliminar la infraestructura de red, envíe un ticket de asistencia al cliente en el que se describa lo que se ha creado y por qué debe eliminarse.
 
-Para deshabilitar VPN para un entorno en particular, invoque `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Más información en la [documentación de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
+Para desactivar VPN para un entorno en particular, invoque `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Más detalles en la [Documentación de API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Enrutamiento de tráfico {#vpn-traffic-routing}
 
@@ -392,28 +392,28 @@ La siguiente tabla describe el enrutamiento de tráfico.
   </tr>
   <tr>
     <td></td>
-    <td>Host que coincide con el parámetro <code>nonProxyHosts</code></td>
+    <td>El host que coincide con la variable <code>nonProxyHosts</code> parameter</td>
     <td>80 o 443</td>
     <td>A través de las IP del clúster compartido</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Host que coincide con el parámetro <code>nonProxyHosts</code></td>
+    <td>El host que coincide con la variable <code>nonProxyHosts</code> parameter</td>
     <td>Puertos fuera de 80 o 443</td>
     <td>Bloqueado</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Si la IP se encuentra en el intervalo de espacio <i>dirección de puerta de enlace VPN</i> y a través de la configuración de proxy http (configurada de forma predeterminada para el tráfico http/s que utiliza la biblioteca de cliente HTTP estándar de Java)</td>
+    <td>Si la IP se encuentra en la variable <i>Dirección de puerta de enlace VPN</i> intervalo de espacio y a través de la configuración proxy http (configurada de forma predeterminada para el tráfico http/s que utiliza la biblioteca de cliente HTTP estándar de Java)</td>
     <td>Cualquiera</td>
     <td>A través de la VPN</td>
     <td><code>10.0.0.1:443</code>También puede ser un nombre de host.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Si la IP no está incluida en el intervalo <i>espacio de dirección de puerta de enlace VPN</i> y a través de la configuración de proxy http (configurada de forma predeterminada para el tráfico http/s que utiliza la biblioteca de cliente HTTP estándar de Java)</td>
+    <td>Si la IP no cae en la variable <i>Espacio de direcciones de puerta de enlace VPN</i> y a través de la configuración proxy http (configurada de forma predeterminada para el tráfico http/s mediante la biblioteca de cliente HTTP estándar de Java)</td>
     <td>Cualquiera</td>
     <td>A través de la IP de salida dedicada</td>
     <td></td>
@@ -435,14 +435,14 @@ La siguiente tabla describe el enrutamiento de tráfico.
   </tr>
   <tr>
     <td><b>No http o no https</b></td>
-    <td>Si la IP se encuentra en el rango <i>VPN gateway address space</i> y el cliente se conecta a la variable env <code>AEM_PROXY_HOST</code> utilizando una <code>portOrig</code> declarada en el parámetro API <code>portForwards</code></td>
+    <td>Si la IP se encuentra en la variable <i>Espacio de direcciones de puerta de enlace VPN</i> y el cliente se conecta a <code>AEM_PROXY_HOST</code> variable env usando una <code>portOrig</code> declarada en el <code>portForwards</code> Parámetro de API</td>
     <td>Cualquiera</td>
     <td>A través de la VPN</td>
     <td><code>10.0.0.1:3306</code>También puede ser un nombre de host.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Si la IP no está en el rango <i>VPN gateway address space</i> y el cliente se conecta a la variable env <code>AEM_PROXY_HOST</code> utilizando una <code>portOrig</code> declarada en el parámetro de API <code>portForwards</code></td>
+    <td>Si la IP no cae en la variable <i>Espacio de direcciones de puerta de enlace VPN</i> se conecta a <code>AEM_PROXY_HOST</code> variable env usando una <code>portOrig</code> declarada en el <code>portForwards</code> Parámetro de API</td>
     <td>Cualquiera</td>
     <td>A través de la IP de salida dedicada</td>
     <td></td>
@@ -485,14 +485,14 @@ El diagrama siguiente proporciona una representación visual de un conjunto de d
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>IP del tráfico proveniente del lado AEM de la VPN al lado del cliente. Esto puede verse incluido en la lista de permitidos en la configuración del cliente para garantizar que las conexiones solo se puedan realizar desde AEM.</td>
-    <td>Si el cliente desea permitir solamente el acceso VPN a AEM, debe configurar las entradas DNS CNAME para asignar <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> y/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a esto.</td>
+    <td>Si el cliente desea permitir solamente el acceso VPN a AEM, debe configurar las entradas DNS CNAME para asignar <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code>  y/o <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> a esto.</td>
   </tr>
 </tbody>
 </table>
 
 ### Restringir VPN a conexiones de ingesta {#restrict-vpn-to-ingress-connections}
 
-Si desea permitir solo el acceso VPN a AEM, las listas de permitidos de entorno se pueden configurar en Cloud Manager para que solo la IP definida por `p{PROGRAM_ID}.external.adobeaemcloud.com` pueda hablar con el entorno. Esto se puede hacer de la misma manera que cualquier otra lista de permitidos basada en IP en Cloud Manager.
+Si desea permitir solo el acceso VPN a AEM, las listas de permitidos de entorno se pueden configurar en Cloud Manager para que solo la IP definida por `p{PROGRAM_ID}.external.adobeaemcloud.com` puede hablar con el medio ambiente. Esto se puede hacer de la misma manera que cualquier otra lista de permitidos basada en IP en Cloud Manager.
 
 Si las reglas deben basarse en rutas, utilice directivas http estándar a nivel de Dispatcher para denegar o permitir determinadas IP. Deben asegurarse de que las rutas deseadas no se puedan almacenar en caché en la CDN para que la solicitud siempre llegue al origen.
 
@@ -507,4 +507,4 @@ Header always set Cache-Control private
 
 ## Transición entre tipos de redes avanzadas {#transitioning-between-advanced-networking-types}
 
-Dado que el parámetro `kind` no se puede modificar, póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
+Dado que la variable `kind` no se puede modificar, póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
