@@ -2,7 +2,7 @@
 title: Fase de implementación
 description: Fase de implementación
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 90%
@@ -41,7 +41,7 @@ Con esta herramienta, puede especificar el subconjunto de contenido que desea tr
 >[!NOTE]
 >Se recomienda realizar frecuentes recargas de contenido diferencial para acortar el período de congelación de contenido para la transferencia de contenido diferencial final antes de lanzarse a Cloud Service.
 
-Consulte [la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md) para obtener más detalles.
+Consulte [la herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) para obtener más detalles.
 
 >[!IMPORTANT]
 >El requisito mínimo del sistema para la herramienta de transferencia de contenido es AEM 6.3+ y JAVA 8. Si dispone de una versión anterior de AEM, deberá actualizar el repositorio de contenido a AEM 6.5 para usar la herramienta de transferencia de contenido.
