@@ -2,10 +2,10 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
+source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 2%
+source-wordcount: '2177'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ De forma similar, con todo lo que está sucediendo asincrónicamente como la act
 
 El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser flexible y la mayoría de las importaciones reanudarlas. Esto significa que si el código se vuelve a ejecutar, no debería comenzar de nuevo desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM as a Cloud Service es más probable que se produzca una eliminación de instancia.
 
-Para minimizar los problemas, se deben evitar los trabajos de larga duración si es posible, y deben reanudarse como mínimo. Para ejecutar estos trabajos, utilice Sling Jobs, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían comenzar de nuevo desde el principio. Para programar estos trabajos, es mejor utilizar el programador [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) ya que esta vez es la ejecución de al menos una vez.
+Para minimizar los problemas, se deben evitar los trabajos de larga duración si es posible, y deben reanudarse como mínimo. Para ejecutar estos trabajos, utilice Sling Jobs, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían comenzar de nuevo desde el principio. Para programar estos trabajos, es mejor utilizar la variable [Trabajos de Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) programador como este de nuevo la ejecución al menos una vez.
 
 El planificador de Sling Commons no debe utilizarse para la programación, ya que la ejecución no puede garantizarse. Es más probable que se programe.
 
@@ -51,13 +51,13 @@ Del mismo modo, con todo lo que está ocurriendo asincrónicamente, como actuar 
 
 Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y lectura razonables. Para el código que no aplica estos tiempos de espera, AEM instancias que se ejecutan en AEM as a Cloud Service impondrán un tiempo de espera global. Estos valores de tiempo de espera son 10 segundos para las llamadas de conexión y 60 segundos para las llamadas de lectura para las conexiones utilizadas por las siguientes bibliotecas Java populares:
 
-Adobe recomienda el uso de la biblioteca [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) proporcionada para realizar conexiones HTTP.
+El Adobe recomienda el uso del [Biblioteca de Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) para realizar conexiones HTTP.
 
 Las alternativas que se sabe que funcionan, pero que pueden requerir proporcionar la dependencia usted mismo son:
 
-* [java.net.](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) URLand/or  [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html)  (proporcionado por AEM)
-* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)  (no recomendado porque está obsoleto y reemplazado por la versión 4.x)
-* [OK Http](https://square.github.io/okhttp/)  (No proporcionado por AEM)
+* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Proporcionado por AEM)
+* [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no recomendado, ya que está obsoleto y se ha sustituido por la versión 4.x)
+* [Http correcto](https://square.github.io/okhttp/) (No proporcionado por AEM)
 
 ## Sin personalizaciones de la interfaz de usuario clásica {#no-classic-ui-customizations}
 
@@ -65,7 +65,7 @@ AEM as a Cloud Service solo admite la IU táctil para el código de cliente de t
 
 ## Evitar binarios nativos {#avoid-native-binaries}
 
-El código no podrá descargar binarios durante la ejecución ni modificarlos. Por ejemplo, no podrá desempaquetar archivos `jar` o `tar`.
+El código no podrá descargar binarios durante la ejecución ni modificarlos. Por ejemplo, no se podrá desempaquetar `jar` o `tar` archivos.
 
 ## No hay binarios de transmisión por AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -85,7 +85,7 @@ El contenido se duplica de Autor a Publicación a través de un mecanismo pub-su
 
 ### Registros {#logs}
 
-Para el desarrollo local, las entradas de registro se escriben en archivos locales de la carpeta `/crx-quickstart/logs` .
+Para el desarrollo local, las entradas de registro se escriben en archivos locales en la variable `/crx-quickstart/logs` carpeta.
 
 En entornos de Cloud, los desarrolladores pueden descargar registros a través de Cloud Manager o utilizar una herramienta de línea de comandos para rastrear los registros. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -95,7 +95,7 @@ Para cambiar los niveles de registro para los entornos de Cloud, la configuraci�
 
 >[!NOTE]
 >
->Para realizar los cambios de configuración que se enumeran a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia as a Cloud Service AEM. Para obtener más información sobre cómo hacerlo, consulte [Implementación para AEM](/help/implementing/deploying/overview.md) as a Cloud Service.
+>Para realizar los cambios de configuración que se enumeran a continuación, debe crearlos en un entorno de desarrollo local y, a continuación, colocarlos en una instancia as a Cloud Service AEM. Para obtener más información sobre cómo hacerlo, consulte [Implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activación del nivel de registro de depuración**
 
@@ -125,9 +125,9 @@ Los volcados de subprocesos en entornos de Cloud se recopilan de forma continua,
 
 ### Desarrollo local {#local-development}
 
-Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Lite (`/crx/de`) y a la Consola Web AEM (`/system/console`).
+Para el desarrollo local, los desarrolladores tienen acceso completo al CRXDE Lite (`/crx/de`) y la consola web AEM (`/system/console`).
 
-Tenga en cuenta que en el desarrollo local (con el SDK), `/apps` y `/libs` se pueden escribir directamente en , lo que es diferente de los entornos de Cloud en los que esas carpetas de nivel superior son inmutables.
+Tenga en cuenta que en el desarrollo local (con el SDK), `/apps` y `/libs` se puede escribir en directamente, que es diferente de los entornos de Cloud donde esas carpetas de nivel superior son inmutables.
 
 ### AEM herramientas de desarrollo as a Cloud Service {#aem-as-a-cloud-service-development-tools}
 
@@ -171,7 +171,7 @@ El Adobe supervisa el rendimiento de la aplicación y toma medidas para solucion
 
 ## Envío de correo electrónico {#sending-email}
 
-AEM as a Cloud Service requiere que el correo saliente esté cifrado. Las secciones siguientes describen cómo solicitar, configurar y enviar correos electrónicos.
+Las secciones siguientes describen cómo solicitar, configurar y enviar correos electrónicos.
 
 >[!NOTE]
 >
@@ -179,37 +179,60 @@ AEM as a Cloud Service requiere que el correo saliente esté cifrado. Las seccio
 
 ### Activación del correo electrónico saliente {#enabling-outbound-email}
 
-De forma predeterminada, los puertos utilizados para enviar están desactivados. Para activarlo, configure [red avanzada](/help/security/configuring-advanced-networking.md), asegurándose de establecer para cada entorno necesario las reglas de reenvío de puertos del extremo `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` para que el tráfico pueda pasar por el puerto 465 (si es compatible con el servidor de correo) o el puerto 587 (si el servidor de correo lo requiere y también aplica TLS en ese puerto).
+De forma predeterminada, los puertos utilizados para enviar correos electrónicos están desactivados. Para activar un puerto, configure [red avanzada](/help/security/configuring-advanced-networking.md), asegúrese de configurar para cada entorno necesario el `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` reglas de reenvío de puertos del extremo, que asigna el puerto deseado (por ejemplo, 465 o 587) a un puerto proxy.
 
-Se recomienda configurar redes avanzadas con un parámetro `kind` establecido en `flexiblePortEgress`, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible. Si es necesaria una dirección IP de salida única, elija un parámetro `kind` de `dedicatedEgressIp`. Si ya ha configurado VPN por otros motivos, también puede utilizar la dirección IP única que proporciona esa variación de red avanzada.
+Se recomienda configurar redes avanzadas con un `kind` parámetro establecido en `flexiblePortEgress` ya que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible. Si es necesaria una dirección IP de salida única, elija un `kind` parámetro de `dedicatedEgressIp`. Si ya ha configurado VPN por otros motivos, también puede utilizar la dirección IP única que proporciona esa variación de red avanzada.
 
 Debe enviar un correo electrónico a través de un servidor de correo en lugar de enviarlo directamente a los clientes de correo electrónico. De lo contrario, los correos electrónicos podrían bloquearse.
 
 ### Envío de correos electrónicos {#sending-emails}
 
-El [servicio OSGI del servicio de correo de CQ Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) debe usarse y los correos electrónicos deben enviarse al servidor de correo indicado en la solicitud de asistencia, en lugar de enviarse directamente a los destinatarios.
-
-AEM as a Cloud Service requiere que el correo se envíe a través del puerto 465. Si un servidor de correo no admite el puerto 465, se puede utilizar el puerto 587, siempre y cuando la opción TLS esté habilitada.
+La variable [Servicio Day CQ Mail Service OSGI](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) se debe utilizar y los correos electrónicos se deben enviar al servidor de correo indicado en la solicitud de asistencia, en lugar de enviarse directamente a los destinatarios.
 
 ### Configuración {#email-configuration}
 
-Los correos electrónicos de AEM deben enviarse utilizando el [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+Los correos electrónicos de AEM deben enviarse utilizando la variable [Servicio Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Consulte la [AEM documentación de 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obtener más información sobre la configuración del correo electrónico. Para AEM as a Cloud Service, se deben realizar los siguientes ajustes en el servicio `com.day.cq.mailer.DefaultMailService OSGI`:
+Consulte la [Documentación de AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) para obtener más información sobre la configuración de correo electrónico. Para AEM as a Cloud Service, tenga en cuenta los siguientes ajustes necesarios en la `com.day.cq.mailer.DefaultMailService OSGI` servicio:
+
+* El nombre de host del servidor SMTP debe establecerse en $[env:AEM_PROXY_HOST]
+* El puerto del servidor SMTP debe establecerse en el valor del puerto proxy original establecido en el parámetro portForwards utilizado en la llamada de API al configurar redes avanzadas. Por ejemplo, 30465 (en lugar de 465)
+
+También se recomienda que si se solicita el puerto 465:
+
+* set `smtp.port` a `465`
+* set `smtp.ssl` a `true`
+
+y si se ha solicitado el puerto 587:
+
+* set `smtp.port` a `587`
+* set `smtp.ssl` a `false`
+
+La variable `smtp.starttls` se establecerá automáticamente mediante AEM as a Cloud Service durante la ejecución a un valor apropiado. Así, si `smtp.ssl` se establece en true, `smtp.startls` se ignora. If `smtp.ssl` se establece en false, `smtp.starttls` se establece en true. Esto es independientemente de la variable `smtp.starttls` valores configurados en la configuración OSGI.
+
+
+El servicio de correo puede configurarse opcionalmente con compatibilidad con OAuth2. Para obtener más información, consulte [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md).
+
+### Configuración de correo electrónico heredada {#legacy-email-configuration}
+
+Antes de la versión 2021.9.0, el correo electrónico se configuraba mediante una solicitud de asistencia al cliente. Tenga en cuenta los siguientes ajustes necesarios para `com.day.cq.mailer.DefaultMailService OSGI` servicio:
+
+AEM as a Cloud Service requiere que el correo se envíe a través del puerto 465. Si un servidor de correo no admite el puerto 465, se puede utilizar el puerto 587, siempre y cuando la opción TLS esté habilitada.
 
 Si se ha solicitado el puerto 465:
 
-* establezca `smtp.port` en `465`
-* establezca `smtp.ssl` en `true`
+* set `smtp.port` a `465`
+* set `smtp.ssl` a `true`
 
-Si se ha solicitado el puerto 587 (solo se permite si el servidor de correo no admite el puerto 465):
+y si se ha solicitado el puerto 587:
 
-* establezca `smtp.port` en `587`
-* establezca `smtp.ssl` en `false`
+* set `smtp.port` a `587`
+* set `smtp.ssl` a `false`
 
-La propiedad `smtp.starttls` se establecerá automáticamente mediante AEM as a Cloud Service durante la ejecución a un valor apropiado. Por lo tanto, si `smtp.tls` se establece en true, `smtp.startls` se omite. Si `smtp.ssl` se establece en false, `smtp.starttls` se establece en true. Esto es independientemente de los valores `smtp.starttls` establecidos en la configuración OSGI.
+La variable `smtp.starttls` se establecerá automáticamente mediante AEM as a Cloud Service durante la ejecución a un valor apropiado. Así, si `smtp.ssl` se establece en true, `smtp.startls` se ignora. If `smtp.ssl` se establece en false, `smtp.starttls` se establece en true. Esto es independientemente de la variable `smtp.starttls` valores configurados en la configuración OSGI.
 
-El servicio de correo puede configurarse opcionalmente con compatibilidad con OAuth2. Para obtener más información, consulte [Compatibilidad con OAuth2 para el servicio de correo](/help/security/oauth2-support-for-mail-service.md).
+El host del servidor SMTP debe establecerse en el del servidor de correo.
+
 
 ## [!DNL Assets] directrices de desarrollo y casos de uso {#use-cases-assets}
 
