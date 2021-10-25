@@ -2,9 +2,9 @@
 title: Adición de un nombre de dominio personalizado
 description: Adición de un nombre de dominio personalizado
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,30 @@ ht-degree: 0%
 
 Un usuario debe ser propietario empresarial o administrador de implementación para poder agregar un nombre de dominio personalizado en Cloud Manager.
 
+Los pasos siguientes deben completarse como se indica en la tabla siguiente:
+
+| Etapa |  | Responsabilidad | Más información |
+|--- |--- |--- |---|
+| Agregar certificado SLL | Agregar certificado SLL | Cliente | [Adición de un certificado SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Verificación del dominio | Añadir registro TXT | Cliente | [Adición de un registro TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| Revisar estado de verificación del dominio |  | Cliente |  |
+|  | Estado: Error de verificación del dominio | Cliente | [Comprobación del estado del nombre de dominio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+|  | Estado: Verificado, Error De Implementación | Representante del Adobe de contacto | [Comprobación del estado del nombre de dominio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+| Agregar registros DNS que apunten a AEM as a Cloud Service agregando registros CNAME o APEX | Configuración de DNS | Cliente | [Configuración de DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| Comprobar estado de registro DNS |  | Cliente | [Comprobación del estado de registro DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Estado: No se ha detectado el estado DNS | Cliente | [Comprobación del estado de registro DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | Estado: El DNS se resuelve incorrectamente | Cliente |  |
+
+
 ## Consideraciones importantes {#important-considerations}
 
 * Antes de agregar un nombre de dominio personalizado, debe instalarse en el programa un certificado SSL válido que contenga el nombre de dominio personalizado. Consulte [Adición de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obtener más información.
 
 * Los nombres de dominio no se pueden agregar a entornos mientras haya una canalización en ejecución asociada a esos entornos.
 
-* Solo se puede agregar un nombre de dominio a la vez. Sin embargo, los dominios no pueden contener comodines. Los dominios personalizados del lado del autor no son compatibles.
+* Solo se puede agregar un nombre de dominio a la vez. Los dominios personalizados del lado del autor no son compatibles.
 
-* AEM como Cloud Service no admite dominios comodín.
+* AEM as a Cloud Service no admite dominios comodín.
 
 * Cada entorno de Cloud Manager puede alojar hasta un máximo de 500 dominios personalizados por entorno.
 
@@ -31,37 +46,37 @@ Un usuario debe ser propietario empresarial o administrador de implementación p
 
 Siga los pasos a continuación para agregar un nombre de dominio personalizado desde la página Configuración de dominio :
 
-1. Vaya a la pantalla **Environments** desde la página **Overview**.
+1. Vaya a **Entornos** pantalla de **Información general** página.
 
 1. Haga clic en **Configuración de dominio** en el menú de navegación de la izquierda.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Haga clic en el botón **Agregar dominio** para abrir el cuadro de diálogo **Agregar nombre de dominio**.
+1. Haga clic en **Agregar dominio** botón para abrir **Agregar nombre de dominio** para abrir el Navegador.
 
    ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
-1. Introduzca el nombre de dominio personalizado en **Domain Name**.
+1. Escriba el nombre de dominio personalizado en **Nombre de dominio**.
 
    >[!NOTE]
-   >No debe incluir `http://`, `https://` ni espacios al introducir en el dominio.
+   >No debe incluir `http://`, `https://`o espacios al introducir en el dominio.
 
-1. Seleccione el **Entorno** cuyo servicio de publicación estará asociado con el nombre de dominio.
+1. Seleccione el **Entorno** cuyo servicio de publicación se asociará con el nombre de dominio.
 
-1. Seleccione el servicio como **Publish** o **Preview**.
+1. Seleccione el servicio como **Publicación** o **Vista previa**.
 
    >[!NOTE]
-   >Los nombres de dominio personalizados ahora se admiten en los programas de Cloud Manager para sitios tanto para los servicios de publicación como de vista previa. Cada entorno de Cloud Manager puede alojar hasta un máximo de 250 dominios personalizados por entorno. Para obtener más información sobre el servicio de vista previa, consulte [Servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#preview-service).
+   >Los nombres de dominio personalizados ahora se admiten en los programas de Cloud Manager para sitios tanto para los servicios de publicación como de vista previa. Cada entorno de Cloud Manager puede alojar hasta un máximo de 500 dominios personalizados por entorno. Para obtener más información sobre el servicio de vista previa, consulte [Servicio de vista previa](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
-1. Seleccione el **Domain SSL Certificate** en la lista desplegable y seleccione **Continue**.
+1. Seleccione el **Certificado SSL de dominio** en la lista desplegable y seleccione **Continuar**.
 
-1. **Aparece el cuadro de diálogo Agregar** nombre de dominio . Esto lo llevará a la pantalla Verificación del nombre de dominio para su entorno . Consulte [Adición de un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información.
+1. **Agregar nombre de dominio** aparece en el cuadro de diálogo. Esto lo llevará a la pantalla Verificación del nombre de dominio para su entorno . Consulte [Adición de un registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para obtener más información.
 
    Siga las instrucciones proporcionadas para probar la propiedad del dominio para su entorno:
 
 1. Haga clic en **Crear**.
-1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica con el estado **Verificado e implementado**.
-Vaya a [Comprobación del estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre los distintos estados y cómo hacerlo.
+1. La implementación de CDN requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
+Vaya a [Comprobación del estado del nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre los distintos estados y cómo abordarlos.
 
    >[!NOTE]
    >La prueba de DNS puede tardar hasta unas horas en reconocerse, debido a los retrasos de propagación de DNS. Cloud Manager verificará la propiedad y actualizará el estado que se puede ver en la tabla de configuración de dominio. Consulte Comprobación del estado del nombre de dominio para obtener más información.
@@ -76,12 +91,12 @@ Vaya a [Comprobación del estado del nombre de dominio personalizado](/help/impl
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. Compruebe los campos en el cuadro de diálogo **Add Domain Name** y haga clic en **Continue**.
+1. Compruebe los campos en el **Agregar nombre de dominio** y haga clic en **Continuar**.
 
    ![](/help/implementing/cloud-manager/assets/cdn/cdn-create5.png)
 
    >[!NOTE]
-   >No incluya `http://`, `https://` ni espacios al introducir en su dominio.
+   >No incluir `http://`, `https://`o espacios al introducir en el dominio.
 
 1. Se muestra la pantalla Verificación del nombre de dominio para el entorno .
 
@@ -91,9 +106,9 @@ Vaya a [Comprobación del estado del nombre de dominio personalizado](/help/impl
 
 1. Haga clic en **Crear**.
 
-1. La implementación del nombre de dominio personalizado requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica con el estado **Verificado e implementado**.
+1. La implementación del nombre de dominio personalizado requiere un certificado SSL válido y una verificación TXT correcta. Esto se indica por estado **Verificado e implementado**.
 
-En este punto, su nombre de dominio personalizado está listo para la prueba y un `CNAME` para apuntarlo. Consulte [Estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre los distintos estados y la dirección.
+En este punto, su nombre de dominio personalizado está listo para realizar pruebas y un `CNAME` para señalarlo. Consulte [Estado del nombre de dominio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obtener más información sobre los distintos estados y cómo abordarlos.
 
 >[!NOTE]
 >La prueba de DNS puede tardar hasta unas horas en reconocerse, debido a los retrasos de propagación de DNS. Cloud Manager verificará la propiedad y actualizará el estado que se puede ver en la tabla de configuración de dominio. Consulte Comprobación del estado del nombre de dominio para obtener más información.
