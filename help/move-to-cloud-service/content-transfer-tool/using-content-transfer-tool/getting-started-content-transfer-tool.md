@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
+source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -25,10 +25,11 @@ La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuego
 Para probar la conectividad con el entorno as a Cloud Service de AEM de destino, ejecute el siguiente comando cURL desde el shell de la instancia de origen (reemplace `program_id`, `environment_id`y `migration_token`):
 
 ```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+ curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
 ```
 
-Si una `HTTP/2 200` se recibe, una conexión con AEM as a Cloud Service se ha realizado correctamente.
+>[!NOTE]
+>Si una `HTTP/2 200` se recibe, una conexión con AEM as a Cloud Service se ha realizado correctamente.
 
 ## Disponibilidad {#availability}
 
