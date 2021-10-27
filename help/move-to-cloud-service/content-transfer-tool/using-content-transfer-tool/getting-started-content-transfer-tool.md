@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -11,7 +11,7 @@ ht-degree: 29%
 
 # Introducción a la herramienta de transferencia de contenido {#getting-started-content-transfer-tool}
 
-## Conectividad del entorno de origen
+## Conectividad del entorno de origen {#source-environment-connectivity}
 
 La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuegos en el que solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. Para ejecutar correctamente una extracción, es necesario tener acceso a los siguientes extremos desde la instancia que se está ejecutando AEM:
 
@@ -30,6 +30,7 @@ Para probar la conectividad con el entorno as a Cloud Service de AEM de destino,
 
 >[!NOTE]
 >Si una `HTTP/2 200` se recibe, una conexión con AEM as a Cloud Service se ha realizado correctamente.
+
 
 ## Disponibilidad {#availability}
 
