@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
+source-git-commit: 95f65b9be7d8921bfc12980116c00aba21586f41
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 29%
@@ -15,12 +15,9 @@ ht-degree: 29%
 
 La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuegos en el que solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. Para ejecutar correctamente una extracción, es necesario tener acceso a los siguientes extremos desde la instancia que se está ejecutando AEM:
 
-* El entorno as a Cloud Service AEM destino:
-   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* El servicio de almacenamiento del blob de Azure:
-   `*.blob.core.windows.net`
-* El extremo de E/S de asignación de usuario:
-   `usermanagement.adobe.io`
+* El entorno as a Cloud Service AEM destino: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* El servicio de almacenamiento del blob de Azure: `*.blob.core.windows.net`
+* El extremo de E/S de asignación de usuario: `usermanagement.adobe.io`
 
 Para probar la conectividad con el entorno as a Cloud Service de AEM de destino, ejecute el siguiente comando cURL desde el shell de la instancia de origen (reemplace `program_id`, `environment_id`y `migration_token`):
 
