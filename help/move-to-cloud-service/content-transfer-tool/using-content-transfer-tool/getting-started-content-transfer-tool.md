@@ -2,14 +2,33 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 33%
+source-wordcount: '860'
+ht-degree: 29%
 
 ---
 
 # Introducción a la herramienta de transferencia de contenido {#getting-started-content-transfer-tool}
+
+## Conectividad del entorno de origen
+
+La instancia de AEM de origen puede estar ejecutándose detrás de un cortafuegos en el que solo puede llegar a ciertos hosts que se han añadido a una Lista de permitidos. Para ejecutar correctamente una extracción, es necesario tener acceso a los siguientes extremos desde la instancia que se está ejecutando AEM:
+
+* El entorno as a Cloud Service AEM destino:
+   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* El servicio de almacenamiento del blob de Azure:
+   `*.blob.core.windows.net`
+* El extremo de E/S de asignación de usuario:
+   `usermanagement.adobe.io`
+
+Para probar la conectividad con el entorno as a Cloud Service de AEM de destino, ejecute el siguiente comando cURL desde el shell de la instancia de origen (reemplace `program_id`, `environment_id`y `migration_token`):
+
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
+Si una `HTTP/2 200` se recibe, una conexión con AEM as a Cloud Service se ha realizado correctamente.
 
 ## Disponibilidad {#availability}
 
@@ -43,7 +62,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
-1. Seleccione la opción **Content Transfer** del asistente **Content Migration**.
+1. Seleccione el **Transferencia de contenido** opción de **Migración de contenido** asistente.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
@@ -56,7 +75,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    >Si tiene conjuntos de migración existentes, la consola mostrará la lista de conjuntos de migración existentes con su estado actual.
 
 
-1. Rellene los campos de la pantalla **Crear conjunto de migración** como se describe a continuación.
+1. Rellene los campos de **Crear conjunto de migración** como se describe a continuación.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
@@ -73,7 +92,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Token de acceso**: introduzca el token de acceso.
 
       >[!NOTE]
-      >Puede recuperar el token de acceso mediante el botón **Open access token**. Debe asegurarse de pertenecer al grupo de administradores de AEM en la instancia de Cloud Service de destino.
+      >Puede recuperar el token de acceso utilizando la variable **Abrir token de acceso** botón. Debe asegurarse de pertenecer al grupo de administradores de AEM en la instancia de Cloud Service de destino.
 
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
@@ -92,26 +111,26 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
          >* `/apps`
          >* `/libs`
          >* `/home`
-         >* `/etc` (se permite seleccionar algunas  `/etc` rutas en CTT)
+         >* `/etc` (algunas `/etc` rutas permitidas para ser seleccionadas en CTT)
 
 
-1. Haga clic en **Guardar** después de rellenar todos los campos en la pantalla de detalles **Crear conjunto de migración**.
+1. Haga clic en **Guardar** después de rellenar todos los campos en la variable **Crear conjunto de migración** pantalla de detalles.
 
-1. Verá el conjunto de migraciones en el asistente de **Transferencia de contenido**, como se muestra en la figura siguiente.
+1. Verá el conjunto de migraciones en la variable **Transferencia de contenido** como se muestra en la figura siguiente.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Todos los conjuntos de migración existentes se muestran en el asistente de **Transferencia de contenido** con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
+   Todos los conjuntos de migración existentes se muestran en la **Transferencia de contenido** con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
 
    * La *nube roja* indica que no se puede completar el proceso de extracción.
-   * La *nube verde* indica que se puede completar el proceso de extracción.
+   * A *nube verde* indica que se puede completar el proceso de extracción.
    * El *icono amarillo* indica que no se creó el conjunto de migración existente y que el específico lo crea otro usuario en la misma instancia.
 
-1. Seleccione un conjunto de migración y haga clic en **Properties** para ver o editar las propiedades del conjunto de migración. Durante la edición de propiedades, no es posible cambiar el **nombre del conjunto de migración** o la **URL del servicio**.
+1. Seleccione un conjunto de migración y haga clic en **Propiedades** para ver o editar las propiedades del conjunto de migración. Durante la edición de propiedades, no es posible cambiar la variable **Nombre del conjunto de migración** o **URL del servicio**.
 
    ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a crear un conjunto de migración, ya está listo para obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de conocer estos procesos, debe revisar [Gestión de repositorios de contenido grande](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido para mover el contenido a AEM as a Cloud Service.
+Una vez que haya aprendido a crear un conjunto de migración, ya está listo para obtener información sobre los procesos de extracción e ingesta en la herramienta de transferencia de contenido. Antes de conocer estos procesos, debe revisar [Gestión de repositorios de contenido grandes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y así mover el contenido a AEM as a Cloud Service.
