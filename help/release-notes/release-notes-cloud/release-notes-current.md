@@ -3,7 +3,7 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
+source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 2%
@@ -156,7 +156,7 @@ Lea el [documentación](/help/security/configuring-advanced-networking.md) para 
 
 **Optimizaciones de índice**
 
-Para mejorar el rendimiento de las consultas de búsqueda y la indexación, el índice de texto completo lucene-2 ya no se incluye de serie en [!DNL Adobe Experience Manager] como [!DNL Cloud Service] de esta versión. Para eliminar este índice de texto completo en entornos AEM de acuerdo con los clientes AEM, Adobe Engineering trabaja de forma individual y proactiva con los clientes para una eliminación suave y sostenible del índice de texto completo de Lucene. Visite el [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [documentación](/help/operations/indexing.md#index-optimizations) para obtener más información y póngase en contacto directamente con nuestro servicio de asistencia si tiene alguna pregunta.
+Para mejorar el rendimiento de las consultas de búsqueda y la indexación, el índice de texto completo lucene-2 ya no se utiliza de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service] de esta versión. Para eliminar este índice de texto completo en entornos AEM de acuerdo con los clientes AEM, Adobe Engineering trabaja de forma individual y proactiva con los clientes para una eliminación suave y sostenible del índice de texto completo de Lucene. Visite el [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [documentación](/help/operations/indexing.md#index-optimizations) para obtener más información y póngase en contacto directamente con nuestro servicio de asistencia si tiene alguna pregunta.
 
 ## Cloud Manager {#cloud-manager}
 
