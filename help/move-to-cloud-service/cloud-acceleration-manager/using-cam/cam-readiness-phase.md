@@ -2,9 +2,9 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
+source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1058'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,12 @@ Siga los pasos a continuación para ver los informes desde la opción de línea 
    >Puede añadir o cambiar la vista gráfica a través de la lista desplegable, como se muestra en la figura siguiente:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
-#### Eliminación del informe de línea de tendencia {#delete-trendline}
+#### Eliminación del informe {#delete-trendline}
 
 Siga los pasos a continuación para eliminar un informe de la vista Línea de tendencia:
+
+>[!IMPORTANT]
+>Un informe solo se puede eliminar si se ha cargado más de un informe en un proyecto.
 
 1. Vaya al proyecto y haga clic en **Consulte** de la variable **Análisis de prácticas recomendadas** en el **Preparación** fase.
 
