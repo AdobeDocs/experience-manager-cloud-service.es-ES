@@ -2,9 +2,9 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: a6d0ab0245ed33fcffe1c4811674435e6f97abf8
+source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1042'
 ht-degree: 5%
 
 ---
@@ -90,7 +90,7 @@ Complete los siguientes pasos:
 
 Al cargar más de un informe de Analizador de prácticas recomendadas (BPA) en un proyecto, puede seleccionar la opción **Ver línea de tendencia** para ver y comparar los resultados de los informes antiguos de BPA.
 
-Siga los pasos a continuación para ver la línea de tendencia:
+Siga los pasos a continuación para ver los informes desde la opción de línea de tendencia:
 
 >[!NOTE]
 >Cuando cargue más de un informe de BPA en un proyecto, verá el icono **...**.
@@ -104,7 +104,7 @@ Siga los pasos a continuación para ver la línea de tendencia:
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >El informe mostrado es siempre el informe que tiene la última fecha del informe.
+   >El informe mostrado en la variable **Pantalla Informe de línea de tendencia** siempre es el que tiene la fecha del informe reciente.
 
 1. Haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
 
@@ -116,12 +116,14 @@ Siga los pasos a continuación para ver la línea de tendencia:
 
    >[!NOTE]
    >El informe de línea de tendencia muestra los resultados de los informes históricos de BPA en una representación gráfica.
+   >
    >Verá dos gráficos que muestran la tendencia del :
-   >1. Tendencia de hallazgos de informes
-   >1. Tendencia de plantillas y componentes personalizados
-      >Puede añadir o cambiar la vista gráfica a través de la lista desplegable como se muestra a continuación.
-      >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >1. **Tendencia de hallazgos de informes**
+   >1. **Componentes personalizados y tendencia de plantilla**
 
+   >
+   >Puede añadir o cambiar la vista gráfica a través de la lista desplegable, como se muestra en la figura siguiente:
+   >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
 
 #### Eliminación del informe de línea de tendencia {#delete-trendline}
 
