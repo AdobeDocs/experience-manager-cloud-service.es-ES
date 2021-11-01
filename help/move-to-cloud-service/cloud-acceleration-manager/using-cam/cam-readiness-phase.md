@@ -2,7 +2,7 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 5%
@@ -93,7 +93,7 @@ Al cargar más de un informe de Analizador de prácticas recomendadas (BPA) en u
 Siga los pasos a continuación para ver los informes desde la opción de línea de tendencia:
 
 >[!NOTE]
->Cuando cargue más de un informe de BPA en un proyecto, verá el icono **...**.
+>Cuando cargue más de un informe de BPA en un proyecto, verá la variable **...** icono.
 
 1. Vaya al proyecto y haga clic en **Consulte** de la variable **Análisis de prácticas recomendadas** en el **Preparación** fase.
 
