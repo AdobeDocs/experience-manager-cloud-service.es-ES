@@ -2,9 +2,9 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 5%
 
 ---
@@ -104,7 +104,7 @@ Siga los pasos a continuación para ver los informes desde la opción de línea 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >El informe mostrado en la variable **Pantalla Informe de línea de tendencia** siempre es el que tiene la fecha del informe reciente.
+   >El informe mostrado es siempre el informe que tiene la última fecha del informe.
 
 1. Haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
 
@@ -124,33 +124,6 @@ Siga los pasos a continuación para ver los informes desde la opción de línea 
    >
    >Puede añadir o cambiar la vista gráfica a través de la lista desplegable, como se muestra en la figura siguiente:
    >![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### Eliminación del informe {#delete-trendline}
-
-Siga los pasos a continuación para eliminar un informe de la vista Línea de tendencia:
-
->[!IMPORTANT]
->Un informe solo se puede eliminar si se ha cargado más de un informe en un proyecto.
-
-1. Vaya al proyecto y haga clic en **Consulte** de la variable **Análisis de prácticas recomendadas** en el **Preparación** fase.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. Haga clic en el **...** para mostrar la lista desplegable.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. Haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. Haga clic en el icono Eliminar de la **Informe de línea de tendencia** en el Navegador.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. Haga clic en **Eliminar** para confirmar la eliminación.
-
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### Revisión del informe de Análisis de prácticas recomendadas {#analysis-report}
@@ -222,6 +195,33 @@ Siga esta sección para explorar la tarjeta de actividad Planificación y config
 1. Un carrusel de contenido muestra toda la información relevante para esta fase del recorrido de migración.
 
    ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### Eliminación de un informe de análisis de prácticas recomendadas {#delete-trendline}
+
+Siga los pasos a continuación para eliminar un informe de la vista Línea de tendencia:
+
+>[!IMPORTANT]
+>Un informe solo se puede eliminar si se ha cargado más de un informe en un proyecto.
+
+1. Vaya al proyecto y haga clic en **Consulte** de la variable **Análisis de prácticas recomendadas** en el **Preparación** fase.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. Haga clic en el **...** para mostrar la lista desplegable.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. Haga clic en **Ver línea de tendencia**, como se muestra en la figura siguiente.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. Haga clic en el icono Eliminar de la **Informe de línea de tendencia** en el Navegador.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. Haga clic en **Eliminar** para confirmar la eliminación.
+
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## Siguientes pasos {#whats-next}
 
