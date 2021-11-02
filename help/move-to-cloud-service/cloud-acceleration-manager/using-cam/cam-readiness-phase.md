@@ -2,7 +2,7 @@
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -112,7 +112,8 @@ Siga los pasos a continuación para ver los informes desde la opción de línea 
 
 1. Haga clic en **Ver línea de tendencia** abre la vista de línea de tendencia del informe, como se muestra en la figura siguiente.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >El informe de línea de tendencia muestra los resultados de los informes históricos de BPA en una representación gráfica.
@@ -217,11 +218,11 @@ Siga los pasos a continuación para eliminar un informe de la vista Línea de te
 
 1. Haga clic en el icono Eliminar de la **Informe de línea de tendencia** en el Navegador.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. Haga clic en **Eliminar** para confirmar la eliminación.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## Siguientes pasos {#whats-next}
 
