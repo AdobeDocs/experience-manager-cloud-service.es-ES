@@ -2,9 +2,9 @@
 title: Guía de migración para Experience Manager as a Cloud Service para socios
 description: Guía de migración para Experience Manager as a Cloud Service para socios
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
+source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2092'
 ht-degree: 10%
 
 ---
@@ -153,7 +153,7 @@ Cloud Manager permite a las organizaciones administrar su Experience Manager en 
 #### Migración de contenido
 
 1. [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration) : se utiliza para mover contenido existente de una instancia de AEM de origen (local o AMS) a la instancia de AEM Cloud Service de destino.
-2. [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#package-manager) : se utiliza para importar y exportar contenido mutable del repositorio.
+2. Administrador de paquetes : se utiliza para importar y exportar contenido mutable del repositorio.
 
 
 #### Refactorizar/Optimizar
@@ -196,7 +196,7 @@ En la fase de Publicar Go-live, se debe garantizar la limpieza de los archivos t
 
 | Evaluación | Refactorización | Modernización del Experience Manager | Migración de contenido |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Complemento de experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Plantillas estáticas a plantillas editables.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Diseño de las configuraciones para directivas.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Componentes básicos a principales.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[De IU clásica a IU táctil.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[el administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en#contentmanagement)</li></ul> |
+| <ul><li>[Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Complemento de experiencia unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#refactoring-tools)</li></ul> | <ul><li>[Plantillas estáticas a plantillas editables.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[Diseño de las configuraciones para directivas.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[Componentes básicos a principales.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[De IU clásica a IU táctil.](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#cloud-migration)</li><li>[el administrador de paquetes](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 
 >[!NOTE]
 > Para obtener más ayuda, es posible que desee:

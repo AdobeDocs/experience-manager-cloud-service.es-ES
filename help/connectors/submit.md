@@ -2,7 +2,7 @@
 title: Envío de un conector de AEM
 description: Envío de un conector de AEM
 exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -14,14 +14,14 @@ Envío de un conector de AEM
 
 La información que se proporciona a continuación es útil para enviar Conectores AEM y debe leerse junto con los artículos sobre la [implementación](implement.md) y el [mantenimiento](maintain.md) de los conectores.
 
-AEM conectores aparecen listados en el [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Los conectores de AEM aparecen en la lista de [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
-En soluciones AEM anteriores, el Administrador de paquetes se utilizaba para instalar conectores en varias instancias de AEM. Sin embargo, con AEM como Cloud Service, los conectores se implementan durante el proceso CI/CD en Cloud Manager. Para que se implementen los conectores, es necesario hacer referencia a los conectores en el pom.xml del proyecto maven.
+En soluciones AEM anteriores, [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) se ha utilizado para instalar conectores en varias instancias de AEM. Sin embargo, con AEM as a Cloud Service, los conectores se implementan durante el proceso CI/CD en Cloud Manager. Para que se implementen los conectores, es necesario hacer referencia a los conectores en el pom.xml del proyecto maven.
 
 Existen varias opciones para incluir los paquetes en un proyecto:
 
 1. Repositorio público del socio: un socio alojaría el paquete de contenido en un repositorio maven accesible públicamente
-1. Repositorio protegido por contraseña de socio: un socio alojaría el paquete de contenido en un repositorio maven protegido por contraseña. Consulte [repositorios maven protegidos con contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) para obtener instrucciones.
+1. Repositorio protegido por contraseña de socio: un socio alojaría el paquete de contenido en un repositorio maven protegido por contraseña. Consulte [repositorios maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories) para obtener instrucciones.
 1. Artefacto agrupado : en este caso, el paquete conector se incluye localmente en el proyecto maven del cliente.
 
 Independientemente de dónde estén alojados, es necesario hacer referencia a los paquetes como dependencias en el archivo pom.xml, tal como lo proporciona el proveedor.

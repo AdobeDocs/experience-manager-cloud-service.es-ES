@@ -5,9 +5,9 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 35%
 
 ---
@@ -198,6 +198,7 @@ ht-degree: 35%
    + [Complemento Maven del paquete de contenido](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
    + [Uso del CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+   + [el administrador de paquetes](/help/implementing/developing/tools/package-manager.md)
    + [El externalizador de vínculos](/help/implementing/developing/tools/externalizer.md)
 + Personalización {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)

@@ -3,7 +3,7 @@ title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-The fundamentals of code development are similar in AEM as a Cloud Service compared to the AEM On Premise and Managed Services solutions. Developers write code and test it locally, which is then pushed to remote AEM as a Cloud Service environments. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Este es ahora el único mecanismo para implementar código en entornos as a Cloud Service AEM.
+Los fundamentos del desarrollo de código son similares en AEM as a Cloud Service en comparación con las soluciones AEM On Premise y Managed Services. Los desarrolladores escriben el código y lo prueban localmente, que luego se inserta en entornos as a Cloud Service AEM remotos. Se requiere Cloud Manager, que era una herramienta de entrega de contenido opcional para Managed Services. Este es ahora el único mecanismo para implementar código en entornos as a Cloud Service AEM.
 
 La actualización de la variable [AEM versión](/help/implementing/deploying/aem-version-updates.md) siempre es un evento de implementación independiente de la extracción [código personalizado](#customer-releases). Visto de otra manera, las versiones de código personalizado deben probarse con la versión AEM que está en producción, ya que eso es lo que se implementará en la parte superior. AEM actualizaciones de la versión que se producen después de eso, que serán frecuentes y se aplicarán automáticamente. Están pensados para ser compatibles con el código de cliente ya implementado.
 
@@ -51,7 +51,7 @@ El siguiente vídeo proporciona información general de alto nivel sobre cómo i
 
 ### Implementaciones a través de Cloud Manager {#deployments-via-cloud-manager}
 
-Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Debe tenerse en cuenta que Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación as a Cloud Service AEM al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en el Administrador de paquetes en entornos en la nube, el nombre incluirá &quot;cp2fm&quot; y los paquetes transformados tendrán todos los metadatos eliminados. No se pueden interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Puede encontrar documentación detallada sobre el conversor [se encuentra aquí](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Debe tenerse en cuenta que Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación as a Cloud Service AEM al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye &quot;cp2fm&quot; y se eliminan todos los metadatos de los paquetes transformados. No se pueden interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Puede encontrar documentación detallada sobre el conversor [se encuentra aquí](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Los paquetes de contenido escritos para AEM aplicaciones as a Cloud Service deben tener una clara separación entre contenido inmutable y mutable, y Cloud Manager solo instalará el contenido mutable, lo que también genera un mensaje como:
 
@@ -73,12 +73,12 @@ Se aplican algunas restricciones adicionales a estos paquetes de código, por ej
 
 Como se ha mencionado anteriormente, la configuración OSGI debe comprometerse con el control de código fuente en lugar de a través de la consola web. Las técnicas para hacerlo incluyen:
 
-* Making the necessary changes on the developer&#39;s local AEM environment with the AEM web console&#39;s configuration manager and then exporting the results to the AEM project on the local file system
+* Realización de los cambios necesarios en el entorno de AEM local del desarrollador con el administrador de configuración de la consola web de AEM y exportación de los resultados al proyecto de AEM en el sistema de archivos local
 * Crear la configuración OSGI manualmente en el proyecto AEM del sistema de archivos local, haciendo referencia al administrador de configuración de la consola de AEM para los nombres de propiedades.
 
 Obtenga más información sobre la configuración OSGI en [Configuración de OSGi para AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 
-## Mutable Content {#mutable-content}
+## Contenido mutable {#mutable-content}
 
 En algunos casos, puede resultar útil preparar los cambios de contenido en el control de código fuente para que Cloud Manager pueda implementarlos cada vez que se actualiza un entorno. Por ejemplo, puede que sea razonable sembrar ciertas estructuras de carpetas raíz o alinear los cambios en plantillas editables para habilitar las políticas en las de los componentes que la implementación de la aplicación actualizó.
 
@@ -86,19 +86,19 @@ Existen dos estrategias para describir el contenido que Cloud Manager implementa
 
 ### Paquetes de contenido mutables {#mutable-content-packages}
 
-El contenido, como las jerarquías de rutas de carpetas, los usuarios de servicios y los controles de acceso (ACL), se suelen comprometer en un proyecto de AEM basado en arquetipos maven. Techniques include exporting from AEM or writing directly as XML. During the build and deployment process, Cloud Manager packages the resulting mutable content package. El contenido mutable se instala en 3 momentos diferentes durante la fase de implementación de la canalización:
+El contenido, como las jerarquías de rutas de carpetas, los usuarios de servicios y los controles de acceso (ACL), se suelen comprometer en un proyecto de AEM basado en arquetipos maven. Las técnicas incluyen la exportación desde AEM o la escritura directamente como XML. Durante el proceso de compilación e implementación, Cloud Manager empaqueta el paquete de contenido mutable resultante. El contenido mutable se instala en 3 momentos diferentes durante la fase de implementación de la canalización:
 
 Antes del inicio de la nueva versión de la aplicación:
 
 * definiciones de índice (añadir, modificar, eliminar)
 
-During startup of new version of application but ahead of switchover:
+Durante el inicio de la nueva versión de la aplicación, pero antes del cambio:
 
-* Service Users (add)
-* Service User ACLs (add)
+* Usuarios de servicio (añadir)
+* ACL de usuario de servicio (añadir)
 * tipos de nodo (añadir)
 
-After switchover to new version of application:
+Después de cambiar a una nueva versión de la aplicación:
 
 * El resto del contenido se puede definir mediante la bóveda jackrabbit. Por ejemplo:
    * Carpetas (añadir, modificar, quitar)
@@ -109,7 +109,7 @@ After switchover to new version of application:
 Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y en el [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
->Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere la instalación manual mediante el Administrador de paquetes.
+>Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual mediante [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)
 
 Además, no hay ningún mecanismo para revertir los cambios del paquete de contenido mutable después de haberlos aplicado. Si los clientes detectan un problema, pueden optar por solucionarlo en su próxima versión de código o, como último recurso, restaurar todo el sistema a un punto en el tiempo antes de la implementación.
 
@@ -153,13 +153,13 @@ Para crear instrucciones de informe, siga el siguiente procedimiento:
 
 >[!WARNING]
 >
->For ACLs defined for nodes underneath `/apps` or `/libs` the repoinit execution will start on a blank repository. Los paquetes se instalan después de la notificación, por lo que las instrucciones no pueden depender de nada definido en los paquetes, sino que deben definir las condiciones previas como las estructuras principales debajo.
+>Para ACL definidos para nodos inferiores `/apps` o `/libs` la ejecución del informe se iniciará en un repositorio en blanco. Los paquetes se instalan después de la notificación, por lo que las instrucciones no pueden depender de nada definido en los paquetes, sino que deben definir las condiciones previas como las estructuras principales debajo.
 
 >[!TIP]
 >
->For ACLs the creation of deep structures might be cumbersome, therefore is more reasonable to define an ACL on a higher level and constrain where it is supposed to act via a rep:glob restriction.
+>Para las ACL, la creación de estructuras profundas puede ser engorrosa, por lo tanto es más razonable definir una ACL en un nivel superior y restringir donde se supone que debe actuar a través de una restricción rep:glob.
 
-More detail about about repoinit can be found in the [Sling documentation](https://sling.apache.org/documentation/bundles/repository-initialization.html)
+Puede encontrar más información sobre el informe en la [Documentación de Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html)
 
 <!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
@@ -169,21 +169,21 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Package Manager - Migrating Mutable Content Packages"
+>title="Administrador de paquetes: migración de paquetes de contenido mutable"
 >abstract="Explore el uso del administrador de paquetes para casos de uso en los que un paquete de contenido debe instalarse como &quot;único&quot; que incluye la importación de contenido específico de la producción a la puesta en escena para depurar un problema de producción, la transferencia de paquetes de contenido pequeño del entorno local a entornos de AEM Cloud y más."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="Herramienta de transferencia de contenido"
 
-There are use cases where a content package should be installed as a &quot;one off&quot;. For example importing specific content from production on to staging in order to debug a production issue. Para estos escenarios, el Administrador de paquetes se puede utilizar en AEM entornos as a Cloud Service.
+Hay casos de uso en los que un paquete de contenido debe instalarse como &quot;único&quot;. Por ejemplo, importar contenido específico de la producción a ensayo para depurar un problema de producción. Para estos escenarios, [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) se puede utilizar en AEM entornos as a Cloud Service.
 
-Since Package Manager is a runtime concept, it is not possible to install content or code into the immutable repository, so these content packages should only consist of mutable content (mainly `/content` or `/conf`). Si el paquete de contenido incluye contenido mixto (tanto mutable como inmutable), solo se instalará el contenido mutable.
+Dado que el Administrador de paquetes es un concepto de tiempo de ejecución, no es posible instalar contenido o código en el repositorio inmutable, por lo que estos paquetes de contenido solo deben consistir en contenido mutable (principalmente `/content` o `/conf`). Si el paquete de contenido incluye contenido mixto (tanto mutable como inmutable), solo se instalará el contenido mutable.
 
 >[!IMPORTANT]
 >
 >La interfaz de usuario del administrador de paquetes puede devolver un **undefined** mensaje de error si un paquete tarda más de 10 minutos en instalarse. No vuelva a intentar realizar la instalación si esto sucede, ya que continúa correctamente en segundo plano y algunos conflictos podrían introducirse en varios procesos de importación simultáneos.
 
-Cualquier paquete de contenido instalado mediante Cloud Manager (mutable e inmutable) aparecerá en estado congelado en AEM interfaz de usuario del Administrador de paquetes. These packages cannot be reinstalled, rebuilt or even downloaded, and will listed with a **&quot;cp2fm&quot;** suffix, indicating their installation was managed by Cloud Manager.
+Cualquier paquete de contenido instalado mediante Cloud Manager (mutable e inmutable) aparecerá en estado congelado en AEM interfaz de usuario del Administrador de paquetes. Estos paquetes no se pueden volver a instalar, volver a crear ni descargar, y aparecerán en la lista con una **&quot;cp2fm&quot;** , indicando que la instalación fue administrada por Cloud Manager.
 
-### Including Third Party Packages {#including-third-party}
+### Inclusión de paquetes de terceros {#including-third-party}
 
 Es habitual que los clientes incluyan paquetes pregenerados de fuentes de terceros, como proveedores de software como los socios de traducción de Adobe. La recomendación es alojar estos paquetes en un repositorio remoto y hacer referencia a ellos en el `pom.xml`. Esto es posible para repositorios públicos y también para repositorios privados con protección de contraseña, como se describe en [repositorios maven protegidos por contraseña](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
@@ -281,7 +281,7 @@ Si se realizan cambios en los índices, es importante que la versión azul siga 
 
 ### Codificación conservadora para retrocesos {#conservative-coding-for-rollbacks}
 
-If a failure is reported or detected after the deployment, it is possible that a rollback to the Blue version will be required. Sería aconsejable garantizar que el código azul sea compatible con cualquier estructura nueva creada por la versión verde, ya que las nuevas estructuras (cualquier contenido mutable) no se revertirán. If the old code is not compatible, fixes will need to be applied in subsequent customer releases.
+Si se informa o se detecta un error después de la implementación, es posible que se requiera una reversión a la versión azul. Sería aconsejable garantizar que el código azul sea compatible con cualquier estructura nueva creada por la versión verde, ya que las nuevas estructuras (cualquier contenido mutable) no se revertirán. Si el código antiguo no es compatible, será necesario aplicar correcciones en las versiones posteriores del cliente.
 
 ## Modos de ejecución {#runmodes}
 
@@ -294,19 +294,19 @@ AEM as a Cloud Service, por otro lado, tiene más opiniones sobre qué modos de 
 
 Al igual que las soluciones de AEM existentes, no hay forma de utilizar modos de ejecución para instalar solo contenido para entornos o servicios específicos. Si se desea sembrar un entorno de desarrollo con datos o HTML que no estén en fase o producción, se puede utilizar el administrador de paquetes.
 
-The supported runmode configurations are:
+Las configuraciones de modo de ejecución admitidas son:
 
 * **config** (*El valor predeterminado se aplica a todos los AEM Services*)
 * **config.author** (*Se aplica a todos los servicios de AEM Author*)
 * **config.author.dev** (*Se aplica al servicio de creación AEM desarrollo*)
-* **config.author.stage** (*Applies to AEM Staging Author service*)
+* **config.author.stage** (*Se aplica al servicio de creación AEM ensayo*)
 * **config.author.prod** (*Se aplica a AEM servicio de creación de producción*)
 * **config.publish** (*Se aplica al servicio AEM Publish*)
 * **config.publish.dev** (*Se aplica al servicio de publicación AEM desarrollo*)
 * **config.publish.stage** (*Se aplica al servicio de publicación AEM ensayo*)
 * **config.publish.prod** (*Se aplica a AEM servicio Publicación de producción*)
 * **config.dev** (*Se aplica a AEM servicios de desarrollo)
-* **config.stage** (*Applies to AEM Staging services)
+* **config.stage** (*Se aplica a AEM servicios de ensayo)
 * **config.prod** (*Se aplica a AEM servicios de producción)
 
 Se utiliza la configuración OSGI que tiene los modos de ejecución más coincidentes.
@@ -317,6 +317,6 @@ Al desarrollar localmente, se puede pasar un parámetro de inicio de modo de eje
 
 Developers want to ensure that their custom code is performing well. For Cloud environments, performance reports can be viewed on Cloud Manager. -->
 
-## Maintenance Tasks Configuration in Source Control {#maintenance-tasks-configuration-in-source-control}
+## Configuración de tareas de mantenimiento en el control de código fuente {#maintenance-tasks-configuration-in-source-control}
 
-Maintenance Task configurations must be persisted in source control since the **Tools > Operations** screen will no longer be available in Cloud environments. Esto tiene la ventaja de garantizar que los cambios se mantengan intencionalmente en lugar de aplicarse de forma reactiva y tal vez olvidados. Please reference the [Maintenance Task article](/help/operations/maintenance.md) for additional information.
+Las configuraciones de la tarea de mantenimiento deben persistir en el control de código fuente, ya que la variable **Herramientas > Operaciones** La pantalla ya no estará disponible en los entornos de Cloud. Esto tiene la ventaja de garantizar que los cambios se mantengan intencionalmente en lugar de aplicarse de forma reactiva y tal vez olvidados. Consulte la [Artículo de la tarea de mantenimiento](/help/operations/maintenance.md) para obtener más información.
