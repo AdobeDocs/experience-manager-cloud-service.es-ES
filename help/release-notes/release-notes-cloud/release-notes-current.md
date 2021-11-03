@@ -3,9 +3,9 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
+source-git-commit: ffdd1e306ed24409fd5ef946172d95b1ca5ed7cc
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1911'
 ht-degree: 2%
 
 ---
@@ -141,10 +141,6 @@ Consulte [Compatibilidad con miniaturas para vídeos](https://experienceleague.a
 ### Nuevas funciones de [!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **Redes avanzadas**
-
->[!INFO]
->
->La función de red avanzada forma parte de la versión 2021.9.0 y estará habilitada para los clientes a mediados de octubre.
 
 [!DNL Adobe Experience Manager] como [!DNL Cloud Service] ahora ofrece varios tipos de funciones de red avanzadas, entre las que se incluyen:
 

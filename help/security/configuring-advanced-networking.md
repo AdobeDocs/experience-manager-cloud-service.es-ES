@@ -1,9 +1,9 @@
 ---
 title: Configuración de redes avanzadas para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
-source-git-commit: 8990113529fb892f58b9171ebc2b04736bf45003
+source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2836'
 ht-degree: 1%
 
 ---
@@ -15,10 +15,6 @@ Este artículo tiene como objetivo presentarle las diferentes funciones de red a
 
 ## Información general {#overview}
 
->[!INFO]
->
->La función de red avanzada forma parte de la versión 2021.9.0 y estará habilitada para los clientes a mediados de octubre.
-
 AEM as a Cloud Service ofrece varios tipos de funciones de red avanzadas, que los clientes pueden configurar mediante las API de Cloud Manager. Entre estas características se incluyen:
 
 * [Salida de puerto flexible](#flexible-port-egress) - configurar AEM as a Cloud Service para permitir el tráfico saliente desde puertos no estándar
@@ -27,11 +23,12 @@ AEM as a Cloud Service ofrece varios tipos de funciones de red avanzadas, que lo
 
 Este artículo describe cada una de estas opciones en detalle, incluido cómo se pueden configurar. Como estrategia de configuración general, la variable `/networkInfrastructures` El extremo de API se invoca a nivel de programa para declarar el tipo deseado de red avanzada, seguido de una llamada a la función `/advancedNetworking` para cada entorno para habilitar la infraestructura y configurar parámetros específicos del entorno. Consulte los extremos adecuados en la documentación de la API de Cloud Manager para cada sintaxis formal, así como las solicitudes y respuestas de ejemplo.
 
-Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, se recomienda elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
+Un programa puede proporcionar una única variación avanzada de red. Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, se recomienda elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que el Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
 
 >[!INFO]
 >
 >La red avanzada no está disponible para el programa de simulación de pruebas.
+>Además, los entornos deben actualizarse a AEM versión 5958 o superior.
 
 >[!NOTE]
 >
@@ -49,9 +46,9 @@ La salida de puerto flexible es la opción recomendada si no necesita VPN y no n
 
 Una vez por programa, el POST `/program/<programId>/networkInfrastructures` se invoca el punto final, pasando simplemente el valor de `flexiblePortEgress` para el `kind` y región. El extremo responde con la variable `network_id`, así como otra información, incluido el estado. Se debe hacer referencia al conjunto completo de parámetros y a la sintaxis exacta en los documentos de API.
 
-Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al informe de [extremo de GET de entorno](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getEnvironment) mostraría el estado &quot;listo&quot;.
+Una vez realizada la llamada, la infraestructura de red tarda aproximadamente 15 minutos en aprovisionarse. Una llamada al informe de [extremo de GET de infraestructura de red](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) mostraría el estado &quot;listo&quot;.
 
-Si la configuración de salida de puerto flexible con alcance de programa está lista, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` el extremo debe invocarse por entorno para habilitar la red en el nivel de entorno y para declarar cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
+Si la configuración de salida de puerto flexible con alcance de programa está lista, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` se debe invocar el punto final por entorno para habilitar la red a nivel de entorno y para declarar opcionalmente cualquier regla de reenvío de puerto. Los parámetros se pueden configurar por entorno para ofrecer flexibilidad.
 
 Las reglas de reenvío de puertos deben declararse para cualquier puerto que no sea 80/443 especificando el conjunto de hosts de destino (nombres o IP, y con puertos). Para cada host de destino, los clientes deben asignar el puerto de destino deseado a un puerto desde 30000 hasta 30999.
 
