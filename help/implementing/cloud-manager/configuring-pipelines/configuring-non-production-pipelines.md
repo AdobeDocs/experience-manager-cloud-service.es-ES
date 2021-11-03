@@ -2,9 +2,9 @@
 title: Configuración de canalizaciones que no sean de producción
 description: Siga esta página para obtener más información sobre la configuración de una canalización que no sea de producción en Cloud Manager
 index: false
-source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,15 @@ En la pantalla de inicio, estas canalizaciones se enumeran en una tarjeta nueva:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. Select **Código de pila completa** o **Código front-end**. Puede elegir el **Repositorio** y **Rama de Git**. Haga clic en **Guardar**.
+1. Select **[Código de pila completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** o **[Código front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Puede elegir el **Repositorio** y **Rama de Git**. Haga clic en **Guardar**.
+
+   >[!IMPORTANT]
+   >Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactivará.
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
    >[!NOTE]
    >Antes de empezar a configurar las canalizaciones del front-end, consulte AEM Recorrido de creación rápida de sitios para obtener un flujo de trabajo completo a través de la herramienta de creación rápida AEM sitios, fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
-
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
 1. La canalización que no es de producción recién creada ahora se muestra en la **Canalizaciones** tarjeta.
 

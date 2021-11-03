@@ -2,9 +2,9 @@
 title: Configuración de canalizaciones de producción
 description: Configuración de canalizaciones de producción
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,10 @@ Haga clic en **+Añadir** y seleccione **Agregar canalización de producción**.
    * **Continuar inmediatamente** - Si está seleccionada, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
 
-1. La variable **Agregar canalización de producción** El cuadro de diálogo incluye una segunda ficha etiquetada como **Código fuente**. Puede seleccionar **Código de pila completa** y **Código front-end**. Puede elegir el **Repositorio** y **Rama de Git**. Seleccione las Opciones de implementación de producción, tal como se explica a continuación. Haga clic en **Continuar**.
+1. La variable **Agregar canalización de producción** El cuadro de diálogo incluye una segunda ficha etiquetada como **Código fuente**. Puede seleccionar **[Código de pila completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** o **[Código front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Puede elegir el **Repositorio** y **Rama de Git**. Seleccione las Opciones de implementación de producción, tal como se explica a continuación. Haga clic en **Continuar**.
+
+   >[!IMPORTANT]
+   >Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactivará.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
