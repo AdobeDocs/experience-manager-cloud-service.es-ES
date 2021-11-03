@@ -1,10 +1,10 @@
 ---
 title: Configuración de canalizaciones que no sean de producción
-description: Configuración de canalizaciones que no sean de producción
+description: Siga esta página para obtener más información sobre la configuración de una canalización que no sea de producción en Cloud Manager
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 7d45179093366dda2d035b5a8eed219e4846f777
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 0%
 # Configuración de canalizaciones que no sean de producción {#configure-non-production-pipeline}
 
 Además de la canalización principal que se implementa en las fases de producción y producción, los clientes pueden configurar canalizaciones adicionales, denominadas canalizaciones que no son de producción.
+
 Existen dos tipos de canalizaciones que no son de producción:
 
 1. Calidad de código: Ejecuta análisis de calidad del código en el código de una rama de Git. Esta canalización ejecuta los pasos de compilación y calidad del código.
