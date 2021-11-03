@@ -2,9 +2,9 @@
 title: Edición de una canalización de producción
 description: Edición de una canalización de producción
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Edición de una canalización de producción {#edit-prod-pipeline}
 
 Puede editar las configuraciones de canalización desde el **Información general del programa** página.
+
+>[!IMPORTANT]
+>No se puede editar una canalización que se esté ejecutando.
 
 Siga los pasos a continuación para editar la canalización configurada:
 

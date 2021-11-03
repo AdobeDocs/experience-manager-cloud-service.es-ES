@@ -2,9 +2,9 @@
 title: Edición de una canalización que no es de producción
 description: Edición de una canalización que no es de producción
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Edición de una canalización que no es de producción {#edit-non-prod-pipeline}
 
 Puede editar las configuraciones de canalización desde el **Tarjeta de canalización** from **Información general del programa** página.
+
+>[!IMPORTANT]
+>No se puede editar una canalización que se esté ejecutando.
 
 Siga los pasos a continuación para editar la canalización configurada que no sea de producción:
 
