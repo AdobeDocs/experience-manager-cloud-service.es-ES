@@ -2,9 +2,9 @@
 title: Configuración de canalizaciones de producción
 description: Configuración de canalizaciones de producción
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,12 @@ Haga clic en **+Añadir** y seleccione **Agregar canalización de producción**.
    * **Continuar inmediatamente** - Si está seleccionada, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
 
 
-1. La variable **Agregar canalización de producción** El cuadro de diálogo incluye una segunda ficha etiquetada como **Código fuente**. Puede seleccionar **Código de pila completa**, **Código front-end** o **Configuración de nivel web**. Puede elegir el **Repositorio** y **Rama de Git**. Seleccione las Opciones de implementación de producción, tal como se explica a continuación. Haga clic en **Continuar**.
+1. La variable **Agregar canalización de producción** El cuadro de diálogo incluye una segunda ficha etiquetada como **Código fuente**. Puede seleccionar **Código de pila completa** y **Código front-end**. Puede elegir el **Repositorio** y **Rama de Git**. Seleccione las Opciones de implementación de producción, tal como se explica a continuación. Haga clic en **Continuar**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   >[!NOTE]
+   >Antes de empezar a configurar las canalizaciones del front-end, consulte AEM Recorrido de creación rápida de sitios para obtener un flujo de trabajo completo a través de la herramienta de creación rápida AEM sitios, fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
 
    Opciones de implementación de producción:
 
@@ -99,7 +102,5 @@ Haga clic en **+Añadir** y seleccione **Agregar canalización de producción**.
    * **Agregar** : permite añadir una nueva canalización.
    * **Acceder a información de repositorios** : permite al usuario obtener la información necesaria para acceder al repositorio Git de Cloud Manager.
    * **Más información** : navega para comprender el recurso de documentación de canalización CI/CD.
-
-
 
 
