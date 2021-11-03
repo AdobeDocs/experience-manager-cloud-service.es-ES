@@ -2,9 +2,9 @@
 title: Canalizaciones CI-CD
 description: Canalizaciones CI-CD
 index: false
-source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
+source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,13 @@ Consulte las canalizaciones de no producción y solo calidad de código para obt
 
 ## Explicación de las canalizaciones de CI-CD en Cloud Manager {#understand-pipelines}
 
-La siguiente tabla categoriza las canalizaciones en Cloud Manager junto con su uso.
+La siguiente tabla resume todas las canalizaciones de Cloud Manager junto con su uso.
 
 | Tipo de canalización | Implementación o calidad de código | Código fuente | Cuándo se utiliza | ¿Cuándo o por qué debería usar? |
 |--- |--- |--- |---|---|---|
 | Producción o no producción | Implementación | Front-End | Para implementar el código front-end. El código front-end es cualquier código que sirve como archivo estático. Es independiente del código de interfaz de usuario que AEM. Incluye temas de sitios, SPA definidas por el cliente, SPA de luciérnagas y otras soluciones. Debe estar en AEM versión. | Tiempos de implementación rápidos.<br> Se pueden configurar y ejecutar varias canalizaciones front-end simultáneamente por cada entorno. |
 |  | Implementación | Pila completa | Para implementar la configuración del back-end, front-end y HTTPD/dispatcher al mismo tiempo. Nota: Se aplican algunas restricciones. | Cuando aún no se han adoptado las canalizaciones de configuración de front-end o de nivel web. |
 |  | Implementación | Configuración de nivel web | Implementar exclusivamente la configuración de HTTPD/Dispatcher en cuestión de minutos.  Esta canalización optimizada proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher, un medio acelerado para hacerlo. Nota: Debe estar en AEM versión [version] | Tiempos de implementación rápidos. |
-
 
 
 ## Canalizaciones principales de Cloud Manager {#front-end}
@@ -65,10 +64,20 @@ Existen dos tipos de canalizaciones front-end:
 * Calidad del código del front-end
 * Implementación del front-end
 
+### Antes de configurar canalizaciones front-end {#before-start}
+
+Antes de empezar a configurar las canalizaciones del front-end, consulte AEM Recorrido de creación rápida de sitios para obtener un flujo de trabajo completo a través de la herramienta de creación rápida AEM sitios, fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
+
+### Configurar la canalización de front-end {#configure-front-end}
+
+Para aprender a configurar la canalización front-end, consulte:
+
+* Adición de una canalización de producción
+* Adición de una canalización que no sea de producción
+
 ## Canalizaciones de pila completa {#full-stack-pipeline}
 
 La canalización de pila completa ofrece al usuario la opción de implementar la configuración del back-end, front-end y HTTPD/dispatcher al mismo tiempo.  Implementa código y contenido en el tiempo de ejecución de AEM, incluido código front-end (JavaScript/CSS) empaquetado como bibliotecas de cliente AEM. Puede implementar la configuración de nivel web si no se ha configurado una canalización de nivel web. Esto representa la canalización &#39;uber&#39;, a la vez que ofrece a los usuarios las opciones de implementar exclusivamente su código front-end o configuración de Dispatcher a través de la canalización Front-End y la canalización de configuración de nivel web, respectivamente.
-
 
 Se aplicarán las siguientes restricciones:
 
@@ -85,3 +94,9 @@ Existen dos tipos de canalizaciones de pila completa:
 * Canalización de calidad de código de pila completa
 * Canalización de implementación de pila completa
 
+### Configurar la canalización de pila completa {#configure-full-stack}
+
+Para aprender a configurar la canalización de pila completa, consulte:
+
+* Adición de una canalización de producción
+* Adición de una canalización que no sea de producción
