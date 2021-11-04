@@ -2,9 +2,9 @@
 title: Canalizaciones CI-CD
 description: Siga esta página para obtener más información sobre las canalizaciones de CI-CD de Cloud Manager
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,14 @@ La siguiente tabla resume todas las canalizaciones de Cloud Manager junto con su
 
 | Tipo de canalización | Implementación o calidad de código | Código fuente | Cuándo se utiliza | ¿Cuándo o por qué debería usar? |
 |--- |--- |--- |---|---|---|
-| Producción o no producción | Implementación | Front-End | Para implementar el código front-end. El código front-end es cualquier código que sirve como archivo estático. Es independiente del código de interfaz de usuario que AEM. Incluye temas de sitios, SPA definidas por el cliente, SPA de luciérnagas y otras soluciones. Debe estar en AEM versión. | Tiempos de implementación rápidos<br> Se pueden configurar y ejecutar varias canalizaciones front-end simultáneamente por entorno |
-|  | Implementación | Pila completa | Para implementar la configuración del back-end, front-end y HTTPD/dispatcher al mismo tiempo. Se aplican algunas restricciones. | Cuando todavía no se han adoptado las tuberías del front-end. |
-| No producción | Calidad de código | Front-End | Ejecute análisis de calidad del código en el código front-end | Tiempos de implementación rápidos<br> Se pueden configurar y ejecutar varias canalizaciones |
-|  | Calidad de código | Pila completa | Ejecute el análisis de calidad del código en el código de pila completo | Tiempos de implementación rápidos<br> Se pueden configurar y ejecutar varias canalizaciones |
+| Producción o no producción | Implementación | Front-End | Tiempos de implementación rápidos.<br>Se pueden configurar y ejecutar varias canalizaciones front-end simultáneamente por cada entorno.<br>La compilación de canalización de front-end extrae la compilación a un almacenamiento. Cuando se sirve una página html, puede hacer referencia a archivos estáticos del código de front-end que serán servidos por la CDN utilizando este almacenamiento como origen. | Implementar exclusivamente código front-end que contenga una o más aplicaciones de interfaz de usuario del lado del cliente. El código front-end es cualquier código que sirve como archivo estático. Es independiente del código de interfaz de usuario que AEM. Incluye temas de sitios, SPA definidas por el cliente, SPA de luciérnagas y otras soluciones.<br>Debe estar en AEM versión `2021.10.5933.20211012T154732Z` |
+| Producción o no producción | Implementación | Pila completa | Cuando todavía no se han adoptado las tuberías del front-end.<br>En los casos en los que el código de front-end debe implementarse exactamente al mismo tiempo que el código de AEM Server. | Para implementar AEM código de servidor (contenido inmutable, código Java, configuraciones OSGi, configuración HTTPD/dispatcher, repositorio, contenido mutable, fuentes), que contenga una o más aplicaciones de servidor AEM al mismo tiempo. |
+| No producción | Calidad de código | Front-End | Para que Cloud Manager evalúe el éxito de la compilación y la calidad del código sin realizar una implementación.<br>Se pueden configurar y ejecutar varias canalizaciones. | Ejecute análisis de calidad del código en el código front-end. |
+| No producción | Calidad de código | Pila completa | Para que Cloud Manager evalúe el éxito de la compilación y la calidad del código sin realizar una implementación.<br>Se pueden configurar y ejecutar varias canalizaciones. | Ejecute el análisis de calidad del código en el código de pila completo. |
 
 El diagrama siguiente ilustra las configuraciones de canalización de Cloud Manager con el repositorio front-end tradicional o la configuración de repositorios front-end independiente:
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Canalizaciones principales de Cloud Manager {#front-end}
 
@@ -72,12 +72,12 @@ Pueden ser del tipo Calidad del código front-end o canalizaciones de implementa
 
 Antes de empezar a configurar las canalizaciones del front-end, consulte AEM Recorrido de creación rápida de sitios para obtener un flujo de trabajo completo a través de la herramienta de creación rápida AEM sitios, fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
 
-### Configurar la canalización de front-end {#configure-front-end}
+### Configuración de una canalización front-end {#configure-front-end}
 
 Para aprender a configurar la canalización front-end, consulte:
 
-* Adición de una canalización de producción
-* Adición de una canalización que no sea de producción
+* [Adición de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [Adición de una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## Canalizaciones de pila completa {#full-stack-pipeline}
 
@@ -95,9 +95,9 @@ Se aplicarán las siguientes restricciones:
 
 Pueden ser del tipo Pila completa - Calidad del código o Pila completa - Implementación .
 
-### Configurar la canalización de pila completa {#configure-full-stack}
+### Configuración de una canalización de pila completa {#configure-full-stack}
 
 Para aprender a configurar la canalización de pila completa, consulte:
 
-* Adición de una canalización de producción
-* Adición de una canalización que no sea de producción
+* [Adición de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [Adición de una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
