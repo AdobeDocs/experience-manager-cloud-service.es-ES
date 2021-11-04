@@ -1,10 +1,10 @@
 ---
 title: Configuración de canalizaciones de producción
 description: Configuración de canalizaciones de producción
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -57,18 +57,29 @@ Haga clic en **+Añadir** y seleccione **Agregar canalización de producción**.
 
 1. La variable **Agregar canalización de producción** El cuadro de diálogo incluye una segunda ficha etiquetada como **Código fuente**. Puede seleccionar **[Código de pila completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** o **[Código front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Puede elegir el **Repositorio** y **Rama de Git**. Seleccione las Opciones de implementación de producción, tal como se explica a continuación. Haga clic en **Continuar**.
 
-   >[!IMPORTANT]
-   >Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactivará.
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   Si ha seleccionado **Código front-end**, debe seleccionar **Repositorio**, **Rama de Git** y **Ubicación del código**, como se muestra en la figura siguiente:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   >[!NOTE]
-   >Antes de empezar a configurar las canalizaciones del front-end, consulte AEM Recorrido de creación rápida de sitios para obtener un flujo de trabajo completo a través de la herramienta de creación rápida AEM sitios, fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
+   Si ha seleccionado **Código de pila completa**, debe seleccionar **Repositorio**, **Rama de Git** y **Opciones de implementación de producción**, como se muestra en la figura siguiente:
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
-   Opciones de implementación de producción:
+   **Opciones de implementación de producción:**
 
    * **Pausar antes de implementar en producción**: Esta opción permite que la implementación se detenga antes de la producción.
    * **Programado**: Esta opción permite al usuario activar la implementación de producción programada.
+
+   >[!IMPORTANT]
+   >Si ya existe una canalización de código de pila completa para el entorno seleccionado, esta selección se desactivará.
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+
+   >[!NOTE]
+   >Antes de empezar a configurar las canalizaciones del front-end, consulte [AEM Recorrido de creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) para obtener un flujo de trabajo completo mediante la herramienta de creación rápida AEM sitios, que es muy fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
+
+
+
+
 
 1. La variable **Agregar canalización de producción** El cuadro de diálogo incluye una tercera ficha etiquetada como **Auditoría de experiencias**. Esta opción proporciona una tabla para las rutas URL que siempre deben incluirse en la auditoría de experiencias.
 
