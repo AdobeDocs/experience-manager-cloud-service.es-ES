@@ -2,9 +2,9 @@
 title: 'Pruebas funcionales: Cloud Services'
 description: 'Pruebas funcionales: Cloud Services'
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '920'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ Consulte [Pruebas funcionales del producto](https://github.com/adobe/aem-test-sa
 
 El paso Prueba funcional personalizada de la canalización siempre está presente y no se puede omitir.
 
-Sin embargo, si la compilación no produce ningún JAR de prueba, la prueba pasa de forma predeterminada.
+La compilación debe producir cero o un JAR de prueba. Si produce JAR de prueba cero, el paso de prueba pasa de forma predeterminada. Si la compilación produce más de un JAR de prueba, el JAR seleccionado no es determinista.
 
 >[!NOTE]
 >El botón **Descargar registro** permite acceder a un archivo ZIP que contiene el formulario detallado de la ejecución de la prueba. Estos registros no incluyen los registros del proceso de tiempo de ejecución de AEM real; se puede acceder a ellos mediante la funcionalidad regular Descargar o Registros de cola . Consulte [Acceso y administración de registros](/help/implementing/cloud-manager/manage-logs.md) para obtener más información.
