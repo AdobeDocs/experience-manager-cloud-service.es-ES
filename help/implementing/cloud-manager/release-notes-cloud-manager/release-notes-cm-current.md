@@ -3,10 +3,10 @@ title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Servic
 description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '461'
+ht-degree: 2%
 
 ---
 
@@ -40,6 +40,8 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 * La variable `x-request-id` el encabezado de respuesta ahora está visible en API Playground en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de atención al cliente para la resolución de problemas.
 
 * Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
+
+* Ya está disponible una nueva página de actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
 
 * Ya está disponible una nueva página de canalizaciones con una ventana emergente de estado al pasar el ratón por encima para facilitar la vista del resumen de detalles. Las ejecuciones de canalización se pueden ver junto con los detalles asociados.
 

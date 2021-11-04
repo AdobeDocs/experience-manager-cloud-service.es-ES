@@ -2,9 +2,9 @@
 title: Canalizaciones CI-CD
 description: Siga esta página para obtener más información sobre las canalizaciones de CI-CD de Cloud Manager
 index: true
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ La siguiente tabla resume todas las canalizaciones de Cloud Manager junto con su
 
 | Tipo de canalización | Implementación o calidad de código | Código fuente | Cuándo se utiliza | ¿Cuándo o por qué debería usar? |
 |--- |--- |--- |---|---|
-| Producción o no producción | Implementación | Front-End | Tiempos de implementación rápidos.<br>Se pueden configurar y ejecutar varias canalizaciones front-end simultáneamente por cada entorno.<br>La compilación de canalización de front-end extrae la compilación a un almacenamiento. Cuando se sirve una página html, puede hacer referencia a archivos estáticos del código de front-end que serán servidos por la CDN utilizando este almacenamiento como origen. | Implementar exclusivamente código front-end que contenga una o más aplicaciones de interfaz de usuario del lado del cliente. El código front-end es cualquier código que sirve como archivo estático. Es independiente del código de interfaz de usuario que AEM. Incluye temas de sitios, SPA definidas por el cliente, SPA de luciérnagas y otras soluciones.<br>Debe estar en AEM versión 2021.10.5933.20211012T154732Z |
+| Producción o no producción | Implementación | Front-End | Tiempos de implementación rápidos.<br>Se pueden configurar y ejecutar varias canalizaciones front-end simultáneamente por cada entorno.<br>La compilación de canalización de front-end extrae la compilación a un almacenamiento. Cuando se sirve una página html, puede hacer referencia a archivos estáticos del código de front-end que serán servidos por la CDN utilizando este almacenamiento como origen. | Implementar exclusivamente código front-end que contenga una o más aplicaciones de interfaz de usuario del lado del cliente. El código front-end es cualquier código que sirve como archivo estático. Es independiente del código de interfaz de usuario que AEM. Incluye temas de sitios, SPA definidas por el cliente, SPA de luciérnagas y otras soluciones.<br>Debe estar en AEM versión 2021.10.5933.20211012T154732Z<br>Debe tener Sites habilitado. |
 | Producción o no producción | Implementación | Pila completa | Cuando todavía no se han adoptado las tuberías del front-end.<br>En los casos en los que el código de front-end debe implementarse exactamente al mismo tiempo que el código de AEM Server. | Para implementar AEM código de servidor (contenido inmutable, código Java, configuraciones OSGi, configuración HTTPD/dispatcher, repositorio, contenido mutable, fuentes), que contenga una o más aplicaciones de servidor AEM al mismo tiempo. |
 | No producción | Calidad de código | Front-End | Para que Cloud Manager evalúe. el éxito de la compilación y la calidad del código sin realizar una implementación.<br>Se pueden configurar y ejecutar varias canalizaciones. | Ejecute análisis de calidad del código en el código front-end. |
 | No producción | Calidad de código | Pila completa | Para que Cloud Manager evalúe. el éxito de la compilación y la calidad del código sin realizar una implementación.<br>Se pueden configurar y ejecutar varias canalizaciones. | Ejecute el análisis de calidad del código en el código de pila completo. |
