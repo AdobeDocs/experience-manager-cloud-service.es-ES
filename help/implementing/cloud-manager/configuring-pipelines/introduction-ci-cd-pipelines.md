@@ -2,7 +2,7 @@
 title: Canalizaciones CI-CD
 description: Siga esta página para obtener más información sobre las canalizaciones de CI-CD de Cloud Manager
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -86,6 +86,7 @@ Para aprender a configurar la canalización front-end, consulte:
 ## Canalizaciones de pila completa {#full-stack-pipeline}
 
 La canalización de pila completa ofrece al usuario la opción de implementar la configuración del back-end, front-end y HTTPD/dispatcher al mismo tiempo.  Implementa código y contenido en el tiempo de ejecución de AEM, incluido código front-end (JavaScript/CSS) empaquetado como bibliotecas de cliente AEM. Puede implementar la configuración de nivel web si no se ha configurado una canalización de nivel web. Esto representa la canalización &#39;uber&#39;, a la vez que ofrece a los usuarios las opciones de implementar exclusivamente su código front-end o configuración de Dispatcher a través de la canalización Front-End y la canalización de configuración de nivel web, respectivamente.
+Pueden ser del tipo Pila completa - Calidad del código o Pila completa - Implementación .
 
 Se aplicarán las siguientes restricciones:
 
@@ -97,7 +98,6 @@ Se aplicarán las siguientes restricciones:
 
 1. La canalización de pila completa para un entorno ignorará la configuración de Dispatcher si existe la canalización de configuración de nivel web correspondiente para el entorno.
 
-Pueden ser del tipo Pila completa - Calidad del código o Pila completa - Implementación .
 
 ### Configuración de una canalización de pila completa {#configure-full-stack}
 

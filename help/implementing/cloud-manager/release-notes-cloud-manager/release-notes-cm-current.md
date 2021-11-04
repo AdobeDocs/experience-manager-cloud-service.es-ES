@@ -1,54 +1,63 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.10.0
-description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.10.0
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.11.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.11.0
 feature: Release Information
 exl-id: null
-source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '421'
 ht-degree: 3%
 
 ---
 
-# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.10.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2021.11.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.10.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.10.0 es el 14 de octubre de 2021.
-La próxima versión está planificada para el 4 de noviembre de 2021.
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.11.0 es el 4 de noviembre de 2021.
+La próxima versión está planificada para el 9 de diciembre de 2021.
 
 ### Novedades {#what-is-new}
 
-* Como preparación para algunos cambios futuros, ahora se hará referencia a las canalizaciones de implementación existentes y se etiquetarán en la interfaz de usuario como canalizaciones de **Pila completa**.
+* Los usuarios ahora pueden aprovechar las nuevas canalizaciones front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
 
-* La tarjeta de canalización se ha actualizado para que ahora muestre una sola cara integrada que muestre tanto las canalizaciones de producción como las que no son de producción, y el usuario puede seleccionar Ejecutar/Pausar/Reanudar directamente en el menú de acción asociado con cada canalización.
+   >[!IMPORTANT]
+   >Debe estar en AEM versión `2021.10.5933.20211012T154732Z` para aprovechar las nuevas canalizaciones front-end.
 
-* Un usuario con la función de administrador de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la interfaz de usuario.
+* La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 
-* Se han actualizado las experiencias de adición y edición de canalización para que ahora utilicen modelos modernos y conocidos.
+* El ID de confirmación de Git ahora se mostrará en los detalles de ejecución de la canalización, lo que facilita el seguimiento del código creado.
 
-* Los usuarios de Cloud Manager ahora pueden enviar comentarios directamente desde la interfaz de usuario mediante el botón **Comentarios** en la parte superior derecha de la página de aterrizaje.
+* La creación de programas ya está disponible a través de una API expuesta públicamente.
 
-* Los gráficos SLA anuales ahora se pueden descargar desde la interfaz de usuario de Cloud Manager.
+* La creación de entornos ya está disponible a través de una API expuesta públicamente.
 
-* La calidad del código y las ejecuciones de canalizaciones que no sean de producción ahora utilizarán un proceso de clonación superficial más eficiente durante el paso de compilación, lo que conllevará un tiempo de compilación más rápido para los clientes con repositorios Git especialmente grandes.
+* La variable `x-request-id` el encabezado de respuesta ahora está visible en API Playground en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de atención al cliente para la resolución de problemas.
 
-* El asistente para agregar Lista de permitidos de IP ahora informará al usuario si se ha alcanzado el número máximo permitido de Listas de permitidos de IP.
+* Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
 
-* La documentación de la API de Cloud Manager ahora incluye un área de reproducción interactiva que permite a los usuarios que iniciaron sesión experimentar con la API desde su explorador. Consulte [Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) para obtener más información.
+* Ya está disponible una nueva página de canalizaciones con una ventana emergente de estado al pasar el ratón por encima para facilitar la vista del resumen de detalles. Las ejecuciones de canalización se pueden ver junto con los detalles asociados.
 
-* La información del objeto de la tarjeta de programa será más descriptiva si se desactiva una opción de selección en &quot;Navegar a&quot;. Ahora muestra &quot;Un entorno de producción no existe&quot;.
+* La API Editar canalización ahora admite el cambio del entorno utilizado en las fases de implementación.
+
+* Se ha introducido una optimización en el proceso de digitalización de OakPal para paquetes grandes.
+
+* El archivo CSV del problema de calidad ahora contendrá la marca de tiempo para cada problema de calidad.
 
 ### Corrección de errores {#bug-fixes}
 
-* En raras ocasiones, cuando el personal de un Adobe restauraba el entorno de un cliente, la restauración se consideraba completa antes de que el entorno fuera completamente operativo.
+* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en E/S de red superfluas al iniciar y detener el contenedor de compilación.
 
-* Algunas solicitudes internas realizadas durante la creación del entorno no se estaban reintentando.
+* La API del PATCH de canalización falla si la fase de implementación no existe.
 
-* Si se produce un error de implementación tras la verificación del nombre de dominio, se ha corregido el mensaje de error para solicitar al cliente que se ponga en contacto con su representante de Adobe.
+* La variable `ClientlibProxyResourceCheck` la regla de calidad producía problemas falsos positivos cuando había bibliotecas cliente con rutas base comunes.
+
+* El mensaje de error cuando se ha alcanzado el número máximo de repositorios no especificaba el motivo del error.
+
+* En casos excepcionales, las canalizaciones fallaban debido a la gestión inadecuada de reintentos de ciertos códigos de respuesta.
 

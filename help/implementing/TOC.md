@@ -5,10 +5,10 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
+source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 35%
+source-wordcount: '1079'
+ht-degree: 34%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 35%
 + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
 + Uso de Cloud Manager {#using-cloud-manager}
    + Notas de la versión para Cloud Manager {#release-notes-cloud-manager}
-      + [Notas de la versión actual (2021.10.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [Notas de la versión actual (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [Notas de la versión 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [Notas de la versión 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [Notas de la versión 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [Notas de la versión 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -64,7 +65,14 @@ ht-degree: 35%
       + [Integrar Git con Adobe Cloud Manager](cloud-manager/managing-code/integrating-with-git.md)
       + [Uso de repositorios Git de varias fuentes](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Configuración de desarrollo de equipo empresarial para AEM as a Cloud Service](cloud-manager/managing-code/enterprise-team-dev-setup.md)
-   + [Configurar el canal de CI/CD](cloud-manager/configure-pipeline.md)
+   + Canalizaciones de CI-CD de Cloud Manager {#cicd-pipelines}
+      + [Introducción](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+      + Canalizaciones de producción {#production-pipelines}
+         + [Configuración de una canalización de producción](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Edición de una canalización de producción](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+      + Canalizaciones que no son de producción {#non-production-pipelines}
+         + [Configuración de una canalización que no sea de producción](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [Edición de una canalización que no es de producción](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
    + [Implementar el código](cloud-manager/deploy-code.md)
    + Comprender los resultados de la prueba {#test-results}
       + [Información general](/help/implementing/cloud-manager/overview-test-results.md)
@@ -113,6 +121,7 @@ ht-degree: 35%
    + [Fundamentos técnicos AEM](/help/implementing/developing/introduction/aem-technologies.md)
    + [Materiales de referencia de la API](/help/implementing/developing/reference-materials.md)
    + [Generación de tokens de acceso para las API del servidor](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [Personalización de plantillas y temas del sitio](developing/introduction/customizing-site-templates-themes.md)
    + [Encabezado y sin cabeza en AEM](developing/headful-headless.md)
    + Desarrollo de AEM de pila completa {#full-stack}
       + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](developing/introduction/develop-wknd-tutorial.md)
