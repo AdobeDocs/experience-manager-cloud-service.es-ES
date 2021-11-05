@@ -1,8 +1,8 @@
 ---
 title: Edición de una canalización que no es de producción
 description: Edición de una canalización que no es de producción
-index: false
-source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
+index: true
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Puede ejecutar la canalización de producción desde la tarjeta Canalizaciones:
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Eliminación de una canalización que no es de producción {#delete-nonprod}
+### Eliminación de una canalización que no es de producción {#delete-nonprod}
 
 Puede eliminar la canalización de producción de la tarjeta Canalizaciones:
 
