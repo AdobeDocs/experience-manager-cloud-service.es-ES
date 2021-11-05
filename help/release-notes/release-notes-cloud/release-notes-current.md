@@ -3,9 +3,9 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 719ee458fee7d4b19907b8aaf51eb2f2e8062abd
+source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1435'
 ht-degree: 2%
 
 ---
@@ -93,10 +93,56 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
 Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.10.0.
 
+### Fecha de la versión {#release-date-cm-nov}
+
+La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.11.0 es el 4 de noviembre de 2021.
+La próxima versión está planificada para el 9 de diciembre de 2021.
+
+### Novedades {#what-is-new-cm-nov}
+
+* Los usuarios ahora pueden aprovechar las nuevas canalizaciones front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
+
+   >[!IMPORTANT]
+   >Debe estar en AEM versión `2021.10.5933.20211012T154732Z` para aprovechar las nuevas canalizaciones front-end.
+
+* La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
+
+* El ID de confirmación de Git ahora se mostrará en los detalles de ejecución de la canalización, lo que facilita el seguimiento del código creado.
+
+* La creación de programas ya está disponible a través de una API expuesta públicamente.
+
+* La creación de entornos ya está disponible a través de una API expuesta públicamente.
+
+* La variable `x-request-id` el encabezado de respuesta ahora está visible en API Playground en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de atención al cliente para la resolución de problemas.
+
+* Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
+
+* Ya está disponible una nueva página de actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
+
+* Ya está disponible una nueva página de canalizaciones con una ventana emergente de estado al pasar el ratón por encima para facilitar la vista del resumen de detalles. Las ejecuciones de canalización se pueden ver junto con los detalles asociados.
+
+* La API Editar canalización ahora admite el cambio del entorno utilizado en las fases de implementación.
+
+* Se ha introducido una optimización en el proceso de digitalización de OakPal para paquetes grandes.
+
+* El archivo CSV del problema de calidad ahora contendrá la marca de tiempo para cada problema de calidad.
+
+### Corrección de errores {#bug-fixes-nov}
+
+* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en E/S de red superfluas al iniciar y detener el contenedor de compilación.
+
+* La API del PATCH de canalización falla si la fase de implementación no existe.
+
+* La variable `ClientlibProxyResourceCheck` la regla de calidad producía problemas falsos positivos cuando había bibliotecas cliente con rutas base comunes.
+
+* El mensaje de error cuando se ha alcanzado el número máximo de repositorios no especificaba el motivo del error.
+
+* En casos excepcionales, las canalizaciones fallaban debido a la gestión inadecuada de reintentos de ciertos códigos de respuesta.
+
+
 ## Fecha de la versión {#release-date-cm-oct}
 
 La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.10.0 es el 14 de octubre de 2021.
-La próxima versión está planificada para el 4 de noviembre de 2021.
 
 ### Novedades {#what-is-new-cm-oct}
 
