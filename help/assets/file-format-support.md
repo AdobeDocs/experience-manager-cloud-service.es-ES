@@ -5,25 +5,25 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 10%
+source-wordcount: '834'
+ht-degree: 9%
 
 ---
 
 # [!DNL Assets] formatos de archivo compatibles {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] como  [!DNL Cloud Service] admite capacidades básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto tiene compatibilidad variada con distintos formatos.
+[!DNL Adobe Experience Manager] como [!DNL Cloud Service] admite capacidades básicas de administración de contenido (almacenamiento, administración de metadatos en línea, versiones, carga y descarga, etc.) para cualquier archivo binario, independientemente de su formato. [!DNL Adobe Experience Manager Assets] admite una amplia gama de formatos de archivo y cada función de producto tiene compatibilidad variada con distintos formatos.
 
 Además, [!DNL Experience Manager Assets] proporciona compatibilidad ampliada para generar vistas previas y representaciones, y para extraer metadatos y texto para la indexación de texto completo. Esta compatibilidad ampliada se proporciona mediante [microservicios de recursos](asset-microservices-configure-and-use.md).
 
 Los aspectos destacados de la conversión de recursos mediante los microservicios de recursos son:
 
-* Formatos de archivo de Adobe [clave](#adobe-formats) producidos por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] y [!DNL Adobe Acrobat] o PDF.
-* Formatos de archivo de imagen [clave](#image-formats).
-* [Camera Raw ](#camera-raw-formats) formatos de archivo para una amplia gama de cámaras, incluyendo Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
-* Formatos de documento [comunes](#document-formats), incluidos los formatos Microsoft Office y Open Document.
+* Clave [Formatos de archivo de Adobe](#adobe-formats) producidos por aplicaciones y servicios de Adobe, incluidos [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension]y [!DNL Adobe Acrobat] o PDF.
+* Clave [formatos de archivo de imagen](#image-formats).
+* [Formatos de archivo Camera Raw](#camera-raw-formats) para una amplia gama de cámaras, incluidas Canon, Nikon, Fujifilm, Olympus y otros fabricantes (con tecnología Adobe Camera Raw).
+* Frecuentes [formatos de documento](#document-formats), incluidos los formatos Microsoft Office y Open Document.
 * Amplia gama de formatos de [vídeo](#video-formats) y [audio.](#audio-formats)
 
 La leyenda siguiente describe el nivel de compatibilidad con cada formato.
@@ -50,7 +50,7 @@ La leyenda siguiente describe el nivel de compatibilidad con cada formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Para archivos [!DNL Adobe InDesign] (INDD), el tamaño de la representación viene determinado por la vista previa incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, Tamaño de vista previa]**) para incrustar una representación más grande.
+\* Para [!DNL Adobe InDesign] archivos (INDD), el tamaño de la representación viene determinado por la previsualización incrustada en el archivo INDD. Configure las preferencias en [!DNL InDesign] (**[!UICONTROL Preferencias > Administración de archivos > Guardar siempre imágenes de vista previa con documentos, Tamaño de vista previa]**) para incrustar una representación más grande.
 
 ## Formatos de imagen {#image-formats}
 
@@ -77,12 +77,12 @@ La leyenda siguiente describe el nivel de compatibilidad con cada formato.
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD   } | ✓ | - | - | - | - |
+| PSD } | ✓ | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-✓ La imagen combinada se extrae del archivo PSD. Es una imagen que genera [!DNL Adobe Photoshop] y que se incluye en el archivo PSD. Dependiendo de la configuración, la imagen combinada puede ser o no la imagen real.
+✓ La imagen combinada se extrae del archivo PSD. Es una imagen generada por [!DNL Adobe Photoshop] y se incluye en el archivo PSD. Dependiendo de la configuración, la imagen combinada puede ser o no la imagen real.
 
-Los siguientes subtipos de formatos de archivo de imagen de trama que no se admiten en [!DNL Dynamic Media]:
+Los siguientes subtipos de formatos de archivo de imagen de trama no son compatibles con [!DNL Dynamic Media]:
 
 * Los archivos PNG que tienen un tamaño de fragmento IDAT tienen un tamaño bueno de más de 100 MB.
 * Archivos PSB.
@@ -217,7 +217,20 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 ## Formatos de audio {#audio-formats}
 
-[!DNL Assets] as a  [!DNL Cloud Service] proporciona soporte de extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+[!DNL Assets] como [!DNL Cloud Service] proporciona compatibilidad con la extracción de metadatos XMP para los formatos de audio AIF, ASF, M4A, MP3, WAV y WMA.
+
+## Formatos de entrada compatibles para la transcripción de audio y vídeo {#audio-video-transcription-formats}
+
+* FLV (con códecs H.264 y AAC) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Vídeo de Windows Media (WMV)/ASF (.wmv, .asf)
+* AVI (sin comprimir 8 bits/10 bits) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Grabación de vídeo digital de Microsoft (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
 
 ## Sugerencias y limitaciones {#limitations-and-tips}
 
