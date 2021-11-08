@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 98%
+source-wordcount: '2939'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ En Navegación, las consolas disponibles son:
 | Proyectos | La consola Proyectos le proporciona acceso directo a sus proyectos. [Los proyectos son paneles virtuales](/help/sites-cloud/authoring/projects/overview.md) que se pueden utilizar para crear un equipo. A continuación, puede proporcionar a ese equipo acceso a recursos, flujos de trabajo y tareas, lo que permite a las personas colaborar para lograr un objetivo común. |
 | Sitios | La consola Sitios le permite [crear, ver y administrar sitios web](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) que se ejecuten en su instancia de AEM. Mediante esta consola puede crear, editar, copiar, mover y eliminar páginas, iniciar flujos de trabajo y publicar páginas. |
 | Fragmentos de experiencias | Un [fragmento de experiencia](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) es una experiencia independiente que puede reutilizarse en diversos canales y tener variaciones, de manera que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias. |
-| Assets | La consola Recursos permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos. |
+| Assets | La consola Recursos permite importar y administrar [recursos digitales, como imágenes, vídeos, documentos y archivos de audio](/help/assets/overview.md). Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. También puede crear y administrar [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) desde la consola Recursos . |
 | Personalización | [Esta consola ofrece un marco de herramientas para crear contenido dirigido y presentar experiencias personalizadas.](/help/sites-cloud/authoring/personalization/overview.md) |
 
 ## Panel de herramientas {#tools-panel}
@@ -92,7 +92,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    ![Navegación global](/help/sites-cloud/authoring/assets/global-navigation.png)
 
-* [Búsqueda  ](/help/sites-cloud/authoring/getting-started/search.md)
+* [Búsqueda](/help/sites-cloud/authoring/getting-started/search.md)
 
    ![Icono de búsqueda](/help/sites-cloud/authoring/assets/search-icon.png)
 
@@ -202,7 +202,7 @@ Hay varios medios de ayuda disponibles:
    >Para obtener información general sobre todos los métodos abreviados del teclado, consulte la documentación siguiente:
    >
    >* [Métodos abreviados del teclado para editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   * [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   >* [Métodos abreviados del teclado para las consolas](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## Barra de herramientas Acciones {#actions-toolbar}
@@ -222,7 +222,8 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 ![Opciones adicionales](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
-Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
+>
+>Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
 ## Acciones rápidas    {#quick-actions}
 
@@ -243,7 +244,8 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de lista   ](#list-view)
 
 >[!NOTE]
-De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
+>
+>De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
 ### Selección de recursos    {#selecting-resources}
 
@@ -361,7 +363,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
    * **Nombre**: nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia con el idioma
    * **Modificada**: fecha de la última modificación y el usuario que la efectuó
    * **Publicada**: estado de publicación
-   * **Vista previa** : estado de vista previa
+   * **Vista previa** - Estado de la vista previa
    * **Plantilla**: plantilla en la que se basa la página
    * **Flujo de trabajo**: flujo de trabajo aplicado actualmente en la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
    * **Análisis de la página**
@@ -374,7 +376,8 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 * Cambie el orden de los elementos mediante la barra vertical de puntos en la parte más a la derecha de cada elemento en la lista.
 
    >[!NOTE]
-   Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
+   >
+   >Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
 
    ![Orden de las columnas](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -388,12 +391,13 @@ El **Selector de carril** está disponible en la parte superior izquierda de la
 
 ![Selector de carril expandido](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Por ejemplo, en **Sitios** puede seleccionar contenido solamente (el valor predeterminado), el árbol de contenido, la cronología, las referencias o el panel lateral de filtro.
+Por ejemplo, en la **Sitios** consola puede seleccionar contenido solamente (el valor predeterminado), el árbol de contenido, la cronología, las referencias, los detalles del sitio o el panel lateral de filtro.
 
 Si se selecciona contenido solamente, después solo aparece el icono de raíl. Cuando se selecciona cualquier otra opción, el nombre de la opción aparece al lado del icono de raíl.
 
 >[!NOTE]
-[Los métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) están disponibles para cambiar rápidamente entre las opciones de visualización de raíl.
+>
+>[Los métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) están disponibles para cambiar rápidamente entre las opciones de visualización de raíl.
 
 ### Árbol de contenido {#content-tree}
 
@@ -404,8 +408,10 @@ Al utilizar el panel lateral del árbol de contenido junto con una vista de list
 ![Árbol de contenido](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
-Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha se pueden utilizar para desplazarse con rapidez por la jerarquía.
-Consulte los [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obtener más información.
+>
+>Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha se pueden utilizar para desplazarse con rapidez por la jerarquía.
+>
+>Consulte los [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) para obtener más información.
 
 ### Escala de tiempo {#timeline}
 
@@ -452,6 +458,18 @@ La sección **Referencias** muestra cualquier conexión con el recurso seleccion
    * Contenido que el componente de referencia extrae de la página seleccionada o que entrega en la misma.
 
 ![Ejemplo de referencias](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Sitio {#site}
+
+**Sitio** muestra detalles de sitios [creado mediante una plantilla de sitio.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Carril del sitio](../assets/site-rail.png)
+
+Toque o haga clic en el botón **Descargar fuentes de temas** para personalizar el [del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>Puede encontrar una descripción completa del proceso de crear un nuevo sitio a partir de una plantilla y personalizar su tema en la [Recorrido de creación rápida de sitios.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtro {#filter}
 

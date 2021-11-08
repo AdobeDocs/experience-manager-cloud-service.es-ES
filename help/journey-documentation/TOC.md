@@ -2,12 +2,12 @@
 sub-product: AEM Documentation Journeys
 user-guide-title: recorridos de documentación de AEM
 breadcrumb-title: recorridos de documentación de AEM
-user-guide-description: Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su proyecto.
+user-guide-description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 737e03d283d5ae3d7df5b3c1ef85cf94e1e9cd45
+source-git-commit: c4d8c59b1a3c3d3e55f3ac33b8a30cceaccbcc6e
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -27,23 +27,33 @@ Please note that all links to other guides need to be absolute references with l
    + [Introducción al proceso de integración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/get-started-onboarding-journey.html)
    + [Asignar miembros del equipo a perfiles de producto de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-cloud-manager.html)
    + [Configuración de recursos de Cloud mediante Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/setup-cloud-resources-via-cloud-manager.html)
-   + [Asignar miembros del equipo a AEM como perfiles de producto del Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
+   + [Asignar miembros del equipo a AEM perfiles de producto as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/assign-team-members-aem-cloud-service.html)
    + [Ruta de aprendizaje para desarrolladores y administradores de implementación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-developers-deploymentmanagers.html)
    + [Ruta de aprendizaje para usuarios de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/onboarding/learning-path-aem-users.html)
-+ Recorrido de traducción de sitios {#sites-translation}
-   + [Comprender la traducción de sitios en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
-   + [Introducción a AEM traducción de sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
-   + [Obtenga información sobre el contenido de los sitios y cómo traducirlo en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
-   + [Configuración del conector de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
-   + [Configuración de reglas de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
-   + [Traducir contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
-   + [Publicar contenido traducido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
++ Recorridos de sitios {#sites}
+   + [Página de inicio de Recorridos de sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/home.html)
+   + Recorrido de creación rápida de sitios {#quick-site}
+      + [Comprender Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/cloud-manager.html)
+      + [Crear sitio a partir de una plantilla](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/create-site.html)
+      + [Configurar la canalización](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/pipeline-setup.html)
+      + [Conceder acceso al desarrollador de front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/grant-access.html)
+      + [Recuperar información de acceso al repositorio de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/retrieve-access.html)
+      + [Personalizar el tema del sitio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/customize-theme.html)
+      + [Implementar el tema personalizado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/deploy-theme.html)
+   + Recorrido de traducción de sitios {#translation}
+      + [Comprender la traducción de sitios en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+      + [Introducción a AEM traducción de sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/getting-started.html)
+      + [Obtenga información sobre el contenido de los sitios y cómo traducirlo en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/learn-about.html)
+      + [Configuración del conector de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/configure-connector.html)
+      + [Configuración de reglas de traducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translation-rules.html)
+      + [Traducir contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/translate-content.html)
+      + [Publicar contenido traducido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/publish-content.html)
 + Recorridos sin encabezado {#headless}
    + [Página de inicio de Recorridos sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
-   + Recorrido para desarrolladores sin encabezado {#developer}
+   + Recorrido para desarrolladores sin objetivos {#developer}
       + [Comprender el sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
       + [Obtenga información sobre el desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/learn-about.html)
-      + [Introducción a AEM Headless como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/getting-started.html)
+      + [Introducción a AEM sin encabezado as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/getting-started.html)
       + [Ruta a la primera experiencia usando AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/path-to-first-experience.html)
       + [Cómo modelar el contenido como modelos de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/model-your-content.html)
       + [Cómo acceder al contenido a través de las API de envío de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/access-your-content.html)
@@ -65,7 +75,7 @@ Please note that all links to other guides need to be absolute references with l
       + [Conceptos básicos de creación para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.html)
       + [Obtenga información sobre el uso de referencias en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.html)
       + [Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.html)
-   + Recorrido de arquitectos de contenido sin encabezado {#architect}
+   + Recorrido de arquitecto de contenido sin encabezado {#architect}
       + [Información general sobre el Recorrido de AEM arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.html)
       + [Modelado de contenido para usuarios sin encabezado con AEM: una introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.html)
       + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.html)

@@ -1,13 +1,13 @@
 ---
 title: recorridos de documentación de AEM
 description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
-source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
+exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
+source-git-commit: 1f8f6aea389ecf5416121354876a68273cd653e7
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
-
 
 # recorridos de documentación de AEM {#aem-documentation-journeys}
 
@@ -17,7 +17,7 @@ Los Recorridos de documentación proporcionan una estructura narrativa dentro de
 
 Un Recorrido de documentación vincula muchos temas y características diferentes y complejos al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema comercial de principio a fin, al mismo tiempo que asume un conocimiento previo mínimo o AEM.
 
-Los Recorridos de documentación se contrastan con AEM documentos técnicos existentes que se centran principalmente en una única función y documentación de tareas, suponiendo que estén familiarizados con AEM. Al centrarse en los conceptos y aplazar los detalles en profundidad a la documentación técnica existente, los Recorridos de documentación proporcionan a los lectores un lugar nuevo para comenzar a comprender cómo se puede aprovechar la plataforma mediante las prácticas recomendadas para satisfacer las necesidades y los flujos de trabajo empresariales comunes. Por este motivo, los Recorridos de documentación sirven como complemento y no como reemplazo de la [AEM documentación técnica existente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es)
+Los Recorridos de documentación se contrastan con AEM documentos técnicos existentes que se centran principalmente en una única función y documentación de tareas, suponiendo que estén familiarizados con AEM. Al centrarse en los conceptos y aplazar los detalles en profundidad a la documentación técnica existente, los Recorridos de documentación proporcionan a los lectores un lugar nuevo para comenzar a comprender cómo se puede aprovechar la plataforma mediante las prácticas recomendadas para satisfacer las necesidades y los flujos de trabajo empresariales comunes. Por este motivo, los Recorridos de documentación sirven como complemento y no como sustituto de [AEM documentación técnica existente.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es)
 
 ### Aprender Por Narrativa {#narrative}
 
@@ -33,7 +33,7 @@ Los recorridos garantizan que el lector sepa cómo AEM resolver un problema en l
 
 ### Orientación sobre prácticas recomendadas {#best-practices}
 
-Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los servicios de Adobe y los comentarios de los proyectos de los clientes.
+Los Recorridos de documentación están diseñados en función de los principios de las prácticas recomendadas, según la investigación más reciente de Adobe, la experiencia de implementación comprobada de los servicios de Adobe y los comentarios de los proyectos de los clientes.
 
 Si desea saber cómo recomienda Adobe resolver un caso comercial con AEM, los Recorridos de documentación son el punto de inicio.
 
@@ -74,10 +74,10 @@ Los Recorridos de documentación están pensados como un complemento de la docum
 
 | Tipo de documentación | Función | Audience | Supuestos | Omisiones | Tipo de contenido | Length |
 |---|---|---|---|---|---|---|
-| Recorrido de documentación | Un recorrido define cómo AEM resolver un problema comercial general a través de una narrativa que guía a los lectores a través de procesos y características complejos e interrelacionados. Ilustra cómo varias funciones trabajan juntas para resolver una necesidad empresarial de una manera óptima. | Reader nuevos en AEM | Familiaridad general de CMS | Opciones y configuración detalladas | Texto | Ca 1 hora |
+| Recorrido de documentación | Un recorrido define cómo AEM resolver un problema comercial general a través de una narrativa que guía a los lectores a través de procesos y características complejos e interrelacionados. Ilustra cómo varias funciones trabajan juntas para resolver una necesidad empresarial de una manera óptima. | Reader nuevos en AEM | Familiaridad general de CMS | Opciones y configuración detalladas | Texto | Ca. 1 hora |
 | Documentos técnicos | Los documentos técnicos se centran en características individuales, detallando el funcionamiento técnico de la función y cada opción disponible para el usuario. | Usuarios con experiencia AEM | AEM experiencia | Contexto y fondo | Texto | Varía |
 | Tutorial | Un tutorial es una explicación detallada de un tema que muestra a un desarrollador o administrador cómo lograr un objetivo técnico (generalmente programación o configuración del sistema) paso a paso, que proporciona ejemplos específicos y código de ejemplo, generalmente aprovechando un conjunto limitado de funciones. | AEM desarrolladores o administradores | AEM experiencia | Antecedentes y teoría | Vídeo | >1 hora |
-| Guía de introducción | Una guía de introducción es una guía rápida de una nueva función de AEM específica. Se trata de una descripción general rápida de una función individual que lleva al usuario a través de los pasos importantes (pero no todos) para configurar y utilizar un caso de uso sencillo. | Administradores de AEM | AEM experiencia | Antecedentes, teoría, opciones detalladas | Texto | &lt;1 hour=&quot;&quot;> |
+| Guía de introducción | Una guía de introducción es una guía rápida de una nueva función de AEM específica. Se trata de una descripción general rápida de una función individual que lleva al usuario a través de los pasos importantes (pero no todos) para configurar y utilizar un caso de uso sencillo. | Administradores de AEM | AEM experiencia | Antecedentes, teoría, opciones detalladas | Texto | &lt;1 hora |
 
 ## ¿Qué Recorridos Hay? {#journeys}
 
@@ -87,9 +87,10 @@ Ya tiene a su disposición varios Recorridos de documentación. Dado que cada re
 |---|---|
 | [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Comience aquí para ver cómo AEM admite modelos de desarrollo sin objetivos y cómo comenzar su proyecto desde la planificación, la implementación y la puesta en marcha. |
 | [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos. |
-| [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager como Cloud Service y cómo modelar contenido para su proyecto. |
+| [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager as a Cloud Service y a cómo modelar contenido para su proyecto. |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Comience aquí para ver cómo configurar y administrar sus proyectos de traducción sin encabezado en AEM. |
-| AEM Recorrido de incorporación | ¡Muy pronto! |
+| [AEM Recorrido de incorporación](/help/journey-onboarding/home.md) | Empiece aquí para ponerse en marcha rápidamente con su nuevo entorno as a Cloud Service AEM! |
+| [AEM Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) | Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios de AEM fácil de usar para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin AEM conocimiento del servidor. |
 | recorrido de comercio AEM | ¡Muy pronto! |
 | Recorrido de migración de AEMaaCS | ¡Muy pronto! |
 
