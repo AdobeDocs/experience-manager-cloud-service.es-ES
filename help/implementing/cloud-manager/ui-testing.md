@@ -2,9 +2,9 @@
 title: 'Pruebas de IU: Cloud Services'
 description: 'Pruebas de IU: Cloud Services'
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas 
 
 >[!NOTE]
 > Las canalizaciones de fase y producción creadas antes del 10 de febrero de 2021 deben actualizarse para utilizar las pruebas de IU tal como se describe en esta página.
-> Consulte [Configuración de la canalización de CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) para obtener información sobre la configuración de la canalización.
+> Consulte [Canalizaciones CI-CD en Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener información sobre la configuración de la canalización.
 
 ## Creación de pruebas de interfaz de usuario {#building-ui-tests}
 
