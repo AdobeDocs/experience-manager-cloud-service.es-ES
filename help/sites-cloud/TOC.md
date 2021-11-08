@@ -6,10 +6,10 @@ breadcrumb-title: Guía de creación
 user-guide-description: Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service.
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 70%
+source-wordcount: '325'
+ht-degree: 68%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 70%
    + Aspectos básicos de la creación {#fundamentals}
       + [Entorno y herramientas](authoring/fundamentals/environment-tools.md)
       + [Adición de anotaciones de página](authoring/fundamentals/annotations.md)
+      + [Creación de un nuevo sitio](authoring/fundamentals/create-site.md)
       + [Crear y organizar páginas](authoring/fundamentals/organizing-pages.md)
       + [Edición del contenido de una página](authoring/fundamentals/editing-content.md)
       + [Editor de texto enriquecido](authoring/fundamentals/rich-text-editor.md)
@@ -50,7 +51,7 @@ ht-degree: 70%
       + [Versiones de página](authoring/features/page-versions.md)
       + [Diferencias de página  ](authoring/features/page-diff.md)
       + [La consola Componentes](authoring/features/components-console.md)
-      + [Diseño adaptable ](authoring/features/responsive-layout.md)
+      + [Diseño adaptable](authoring/features/responsive-layout.md)
       + [Uso de etiquetas  ](authoring/features/tags.md)
       + [Activación de las funciones progresivas de la aplicación web](authoring/features/enable-pwa.md)
    + Proyectos {#projects}
@@ -82,6 +83,10 @@ ht-degree: 70%
       + [Configuración de la segmentación con ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [Registro, inicio de sesión y perfil de usuario](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + Administración {#administering}
+   + Creación de sitios {#site-creation}
+      + [Creación de un nuevo sitio](administering/site-creation/create-site.md)
+      + [Plantillas de sitios](administering/site-creation/site-templates.md)
+      + [Temas del sitio](administering/site-creation/site-themes.md)
    + [Administración de flujos de trabajo](administering/workflows-administering.md)
    + Reutilización del contenido {#reusing-content}
       + [MSM y traducción](administering/msm-and-translation.md)
@@ -101,7 +106,7 @@ ht-degree: 70%
          + [Asistente para copia de idioma](administering/translation/wizard.md)
          + [Identificación del contenido para traducir](administering/translation/rules.md)
          + [Configuración del marco de integración de traducción](administering/translation/integration-framework.md)
-         + [Conexión a Microsoft Translator](administering/translation/connect-ms-translator.md)
+         + [Conexión al traductor de Microsoft](administering/translation/connect-ms-translator.md)
          + [Prácticas recomendadas de traducción](administering/translation/best-practices.md)
 + Integración con AEM as a Cloud Service {#integrations}
    + [Integración con Adobe Analytics](integrating/integrating-adobe-analytics.md)
