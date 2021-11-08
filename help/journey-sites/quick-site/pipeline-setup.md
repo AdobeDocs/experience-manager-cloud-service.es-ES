@@ -1,9 +1,9 @@
 ---
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -59,21 +59,13 @@ De este modo, el desarrollo del front-end puede funcionar de forma independiente
 
 ## Acceso a Cloud Manager {#login}
 
-1. Inicie sesión en Adobe Experience Cloud en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Inicie sesión en Adobe Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Una vez que haya iniciado sesión, compruebe que se encuentra en la organización correcta en la esquina superior derecha de la pantalla. Si solo es miembro de una organización, este paso no es necesario. A continuación, toque o haga clic en **Experience Manager**.
-
-   ![Información general del Experience Cloud](assets/experience-cloud-overview.png)
-
-1. En la página siguiente, toque o haga clic en el botón **Launch** para iniciar el **Cloud Manager** aplicación.
-
-   ![aplicaciones Experience Manager](assets/experience-manager-apps.png)
-
-1. En la página siguiente se enumeran los distintos programas disponibles. Toque o haga clic en el que desee administrar. Si acaba de empezar con AEM as a Cloud Service, es probable que solo tenga disponible un programa.
+1. Cloud Manager enumera los distintos programas disponibles. Toque o haga clic en el que desee administrar. Si acaba de empezar con AEM as a Cloud Service, es probable que solo tenga disponible un programa.
 
    ![Selección de un programa en Cloud Manager](assets/cloud-manager-select-program.png)
 
-Ahora verá una descripción general de su Cloud Manager. Su página tendrá un aspecto diferente pero similar al de este ejemplo.
+Ahora verá una descripción general del programa. Su página tendrá un aspecto diferente pero similar al de este ejemplo.
 
 ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 

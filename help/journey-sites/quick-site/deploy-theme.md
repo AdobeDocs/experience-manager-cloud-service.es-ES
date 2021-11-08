@@ -1,9 +1,9 @@
 ---
 title: Implementar el tema personalizado
 description: Obtenga información sobre cómo implementar el tema del sitio mediante la canalización.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Esta parte del recorrido se aplica al desarrollador del front-end.
 
 Una vez que haya confirmado los cambios de personalización del tema en el repositorio de Git de AEM, puede ejecutar [la canalización que el administrador creó](pipeline-setup.md) para implementar los cambios.
 
-1. Acceso a Cloud Manager [como lo hizo para recuperar la información de acceso de Git.](retrieve-access.md) En el **Información general** , verá una tarjeta para **Canalizaciones**.
+1. Iniciar sesión en Cloud Manager [como lo hizo para recuperar la información de acceso de Git](retrieve-access.md) Y acceda a su programa. En el **Información general** , verá una tarjeta para **Canalizaciones**.
 
    ![Información general de Cloud Manager](assets/cloud-manager-overview.png)
 
