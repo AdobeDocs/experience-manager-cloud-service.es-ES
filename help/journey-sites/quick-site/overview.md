@@ -1,9 +1,9 @@
 ---
 title: AEM Recorrido de creación rápida de sitios
 description: Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin AEM conocimiento del servidor.
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,9 @@ Al eliminar cualquier conocimiento del desarrollador para la creación del sitio
 
 ## Información general del vídeo {#video-overview}
 
-Para obtener una descripción general rápida de esta función en acción, puede ver esta introducción de cinco minutos.
+Para obtener una descripción general rápida de esta función en acción, [puede ver esta introducción de cinco minutos.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-Este recorrido le llevará paso a paso por todas las funciones del vídeo en detalle para que entienda el proceso y pueda recrear el proceso en su propio entorno.
+Este recorrido de documentación le llevará a través de todas las funciones del vídeo paso a paso y en detalle para que entienda el flujo de trabajo y pueda volver a crear el proceso en su propio entorno.
 
 ## recorridos de documentación de AEM {#documentation-journeys}
 
