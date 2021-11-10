@@ -3,9 +3,9 @@ title: Implementación en AEM as a Cloud Service
 description: 'Implementación en AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ El siguiente vídeo proporciona información general de alto nivel sobre cómo i
 
 ### Implementaciones a través de Cloud Manager {#deployments-via-cloud-manager}
 
-Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Debe tenerse en cuenta que Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación as a Cloud Service AEM al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye &quot;cp2fm&quot; y se eliminan todos los metadatos de los paquetes transformados. No se pueden interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Puede encontrar documentación detallada sobre el conversor [se encuentra aquí](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
+Los clientes implementan código personalizado en entornos de nube a través de Cloud Manager. Debe tenerse en cuenta que Cloud Manager transforma los paquetes de contenido ensamblados localmente en un artefacto que se ajusta al Modelo de funciones de Sling, que es el modo en que se describe una aplicación as a Cloud Service AEM al ejecutarse en un entorno de nube. Como resultado, al consultar los paquetes en [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en entornos de Cloud, el nombre incluye &quot;cp2fm&quot; y los paquetes transformados tienen todos los metadatos eliminados. No se pueden interactuar con ellos, lo que significa que no se pueden descargar, replicar ni abrir. Puede encontrar documentación detallada sobre el conversor [se encuentra aquí](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Los paquetes de contenido escritos para AEM aplicaciones as a Cloud Service deben tener una clara separación entre contenido inmutable y mutable, y Cloud Manager solo instalará el contenido mutable, lo que también genera un mensaje como:
 
@@ -179,7 +179,11 @@ Dado que el Administrador de paquetes es un concepto de tiempo de ejecución, no
 
 >[!IMPORTANT]
 >
->La interfaz de usuario del administrador de paquetes puede devolver un **undefined** mensaje de error si un paquete tarda más de 10 minutos en instalarse. No vuelva a intentar realizar la instalación si esto sucede, ya que continúa correctamente en segundo plano y algunos conflictos podrían introducirse en varios procesos de importación simultáneos.
+>La interfaz de usuario del Administrador de paquetes puede devolver un valor **undefined** mensaje de error si un paquete tarda más de 10 minutos en instalarse.
+>
+>Esto no se debe a un error en la instalación, sino a un tiempo de espera que el Cloud Service tiene para todas las solicitudes.
+>
+>No vuelva a intentar realizar la instalación si aparece un error de este tipo. La instalación continúa correctamente en segundo plano. Si reinicia la instalación, varios procesos de importación simultáneos podrían introducir algunos conflictos.
 
 Cualquier paquete de contenido instalado mediante Cloud Manager (mutable e inmutable) aparecerá en estado congelado en AEM interfaz de usuario del Administrador de paquetes. Estos paquetes no se pueden volver a instalar, volver a crear ni descargar, y aparecerán en la lista con una **&quot;cp2fm&quot;** , indicando que la instalación fue administrada por Cloud Manager.
 

@@ -3,9 +3,9 @@ title: el administrador de paquetes
 description: Conozca los conceptos básicos de AEM; administración de paquetes con el administrador de paquetes.
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 1%
 
 ---
@@ -37,13 +37,17 @@ Los paquetes de contenido creados para AEM aplicaciones as a Cloud Service deben
 
 >[!IMPORTANT]
 >
->La interfaz de usuario del administrador de paquetes puede devolver un **undefined** mensaje de error si un paquete tarda más de 10 minutos en instalarse. No vuelva a intentar realizar la instalación si esto sucede, ya que continúa correctamente en segundo plano y algunos conflictos podrían introducirse en varios procesos de importación simultáneos.
+>La interfaz de usuario del Administrador de paquetes puede devolver un valor **undefined** mensaje de error si un paquete tarda más de 10 minutos en instalarse.
+>
+>Esto no se debe a un error en la instalación, sino a un tiempo de espera que el Cloud Service tiene para todas las solicitudes.
+>
+>No vuelva a intentar realizar la instalación si aparece un error de este tipo. La instalación continúa correctamente en segundo plano. Si reinicia la instalación, varios procesos de importación simultáneos podrían introducir algunos conflictos.
 
 Para obtener más información sobre cómo administrar paquetes para AEMaaCS, consulte el documento [Implementación en AEM as a Cloud Service](/help/implementing/deploying/overview.md) en la guía de usuario sobre implementación.
 
 ## el administrador de paquetes {#package-manager}
 
-El Administrador de paquetes administra los paquetes de la instalación de AEM. Después de [se han asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para diversas acciones, como configurar, crear, descargar e instalar los paquetes.
+El Administrador de paquetes administra los paquetes de la instalación de AEM. Después de [se han asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para diversas acciones, como configurar, crear, descargar e instalar sus paquetes.
 
 ### Permisos necesarios {#required-permissions}
 
