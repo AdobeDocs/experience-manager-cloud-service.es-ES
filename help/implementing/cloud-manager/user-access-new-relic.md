@@ -3,21 +3,23 @@ title: Acceso del usuario a una nueva reliquia
 description: Acceso del usuario a una nueva reliquia
 index: false
 hide: true
-source-git-commit: e8f5a0ca99b3772665613e24b73d4ab7525a22be
+source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
 
-# Nueva APM de reliquia para AEM as a Cloud Service {#new-relic}
+# Nuevo monitoreo del rendimiento de las aplicaciones relic para AEM as a Cloud Service {#new-relic}
 
 ## Introducción {#introduction}
 
-El Adobe pone un alto énfasis en el monitoreo, disponibilidad y performance de su aplicación. Para ayudar a lograr este objetivo, AEM as a Cloud Service proporciona acceso a un grupo de supervisión personalizado de Nueva relación como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de las métricas de rendimiento de entorno y del sistema de Cloud Service de Adobe Experience Manager. En este documento técnico se describen las funciones de monitorización de Nuevas reliquias habilitadas en los entornos as a Cloud Service de AEM para ayudar a reforzar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
+El Adobe pone un alto énfasis en el monitoreo, disponibilidad y performance de su aplicación. Para ayudar a lograr este objetivo, AEM as a Cloud Service proporciona acceso a un grupo de supervisión personalizado de Nueva relación como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de las métricas de rendimiento de entorno y del sistema de Cloud Service de Adobe Experience Manager. En esta sección se describen las nuevas funciones de monitorización de reliquia habilitadas en los entornos as a Cloud Service de AEM para ayudar a reforzar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
 
 ## AEM Supervisión as a Cloud Service de Transacciones a través de New Relic {#transaction-monitoring}
+
+Estas son las características clave de la Nueva Monitorización del Rendimiento de las Aplicaciones Relic para AEM as a Cloud Service:
 
 * Acceso directo a una cuenta específica de New Relic One (acceso administrado por la asistencia técnica de Adobe).
 
@@ -31,7 +33,14 @@ El Adobe pone un alto énfasis en el monitoreo, disponibilidad y performance de 
 
 Su cuenta de New Relic dedicada se aprovisionará y administrará mediante Adobe mediante la participación del Servicio de atención al cliente. Adobe seguirá siendo el propietario y el administrador y proporcionará la cuenta en su nombre para proporcionar acceso a su subcuenta específica.
 
-Para obtener acceso a su subcuenta de Nueva reliquia asociada con su Programa as a Cloud Service AEM, abra una solicitud accediendo a la pestaña Asistencia en el Admin Console. Asegúrese de que su ticket incluya los detalles de su ID de programa, así como la lista de usuarios a los que solicita a los equipos de Adobe que abran el acceso a Nueva relación. Todos los usuarios deben tener un nombre completo y una dirección de correo electrónico válida.  Para obtener más información sobre AEM Portal de asistencia técnica, consulte Asistencia para el Experience Cloud.
+Para obtener acceso a su subcuenta de New Relic asociada con su Programa as a Cloud Service AEM:
+
+* Abra una solicitud accediendo a la pestaña Asistencia del Admin Console.
+* Asegúrese de que su ticket incluya los detalles de su ID de programa, así como la lista de usuarios a los que solicita a los equipos de Adobe que abran el acceso a Nueva relación.
+* Todos los usuarios deben tener un nombre completo y una dirección de correo electrónico válida.
+
+   >[!NOTE]
+   >Para obtener más información sobre AEM Portal de asistencia técnica, consulte Asistencia para el Experience Cloud.
 
 Una vez que se ha proporcionado el acceso, New Relic envía un correo electrónico de confirmación a cada usuario para que pueda completar el proceso de configuración e iniciar sesión. Si no encuentran el correo electrónico de confirmación de la cuenta original:
 
@@ -64,9 +73,13 @@ Para obtener más ayuda o sugerencias adicionales sobre las ofertas de Nueva rel
 
 ### ¿Qué monitoriza el Adobe con New Relic? {#adobe-monitor}
 
-Adobe supervisa los servicios de Autor, Publicación y Vista previa (cuando están disponibles) as a Cloud Service de AEM mediante el complemento Java New Relic APM. El Adobe permite la telemetría y monitorización personalizada de la nueva relación costo-calidad de APM en entornos as a Cloud Service que no sean de producción y producción AEM. La cuenta de Nueva reliquia se adjunta a una cuenta de mantenimiento de Adobe principal y tiene varias aplicaciones que informan al respecto. Tres cada uno por AEM entorno as a Cloud Service:
+Adobe supervisa los servicios de Autor, Publicación y Vista previa (cuando están disponibles) as a Cloud Service de AEM mediante el complemento Java New Relic APM. El Adobe permite la telemetría y monitorización personalizada de la nueva relación costo-calidad de APM en entornos as a Cloud Service que no sean de producción y producción AEM. La cuenta de Nueva reliquia se adjunta a una cuenta de mantenimiento de Adobe principal y tiene varias aplicaciones que informan al respecto.
 
-Una aplicación para el servicio Autor por entorno Una aplicación para el servicio Publicación por entorno (incluida la Publicación Dorada) Una aplicación para el servicio de Vista previa por entorno Cada aplicación utiliza una clave de licencia, AEM los entornos as a Cloud Service solo informarán a una cuenta de Nueva relación. Las métricas y los eventos de monitorización completos para la Nueva APM de Reliquia y la Infraestructura se conservan durante 7 días.
+Tres cada uno por AEM entorno as a Cloud Service:
+
+* Una aplicación para el servicio Author por entorno
+* Una aplicación para el servicio Publicar por entorno (incluida la Publicación Dorada)
+* Una aplicación para el servicio Preview per environment Cada aplicación utiliza una clave de licencia, AEM los entornos as a Cloud Service solo informarán a una cuenta New Relic. Las métricas y los eventos de monitorización completos para la Nueva APM de Reliquia y la Infraestructura se conservan durante 7 días.
 
 ### ¿Quién puede acceder a los datos del nuevo Cloud Service de reliquia? {#access-new-relic-cloud}
 
