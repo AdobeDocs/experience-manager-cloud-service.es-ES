@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
+source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -134,7 +134,12 @@ En general, no es necesario invalidar manualmente el contenido en Dispatcher, pe
 >
 >El de Dispatcher `invalidate.cache` Ya no se admitirá el enfoque de API, ya que se dirige únicamente a un nodo de Dispatcher específico. AEM as a Cloud Service funciona en el nivel de servicio, no en el nivel de nodo individual y, por lo tanto, las instrucciones de invalidación de la variable [Invalidación de páginas en caché de AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) La página ya no es válida para AEM as a Cloud Service.
 
-Se debe utilizar el agente de vaciado de replicación. Esto se puede hacer mediante la API de replicación. La variable [La documentación de la API de replicación está disponible](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)y para ver un ejemplo de vaciado de la caché, consulte la [Página de ejemplo de API](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (específicamente, `CustomStep` ejemplo de emisión de una acción de replicación de tipo ACTIVATE a todos los agentes disponibles). El extremo del agente de vaciado no se puede configurar, pero está preconfigurado para apuntar al despachante, coincide con el servicio de publicación que ejecuta el agente de vaciado. Normalmente, el agente de vaciado se puede activar mediante eventos o flujos de trabajo OSGi.
+Se debe utilizar el agente de vaciado de replicación. Esto se puede hacer utilizando la variable [API de replicación](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). El extremo del agente de vaciado no se puede configurar, pero está preconfigurado para apuntar al despachante, coincide con el servicio de publicación que ejecuta el agente de vaciado. Normalmente, el agente de vaciado se puede activar mediante eventos o flujos de trabajo OSGi.
+
+<!-- Need to find a new link and/or example -->
+<!-- 
+and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
+-->
 
 El diagrama que se muestra a continuación ilustra esto.
 
