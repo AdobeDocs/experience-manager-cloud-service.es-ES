@@ -1,15 +1,14 @@
 ---
-title: Creación de experiencias de comercio
+title: Creación de experiencias comerciales
 description: Experiencias comerciales en trabajo
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
-# Creación de experiencias de comercio {#authoring-commerce-experiences}
+# Creación de experiencias comerciales {#authoring-commerce-experiences}
 
 ## Información general {#overview}
 
@@ -63,9 +62,9 @@ La pestaña &quot;Recursos&quot; del panel lateral del editor ofrece acceso a lo
 
 Análogo a los recursos, los productos se pueden añadir en una página (que crea un componente teaser de productos como predeterminado) o en componentes (Actualmente se admiten teaser de productos y carrusel de productos).
 
-### Adición de vínculos a páginas de productos o categorías en campos de texto mediante RTE (Editor de texto enriquecido)  {#rte}
+### Adición de vínculos en campos de texto mediante RTE {#rte}
 
-Las páginas del catálogo de productos CIF son páginas virtuales que se procesan sobre la marcha. Por lo tanto, no es posible incrustar hipervínculos como para páginas de AEM normales. CIF agrega una nueva acción &quot;Vínculos comerciales&quot; al RTE. Esta acción funciona exactamente igual que la acción &quot;Hipervínculo&quot; normal, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
+Las páginas del catálogo de productos CIF son páginas virtuales que se procesan sobre la marcha. Por lo tanto, no es posible incrustar hipervínculos como para páginas de AEM normales. CIF agrega una nueva acción &quot;Vínculos comerciales&quot; a RTE (Editor de texto enriquecido). Esta acción funciona exactamente igual que la acción &quot;Hipervínculo&quot; normal, pero permite a los autores seleccionar un producto o una categoría mediante los selectores.
 
 ![RTE](../assets/authoring/RTE.png)
 

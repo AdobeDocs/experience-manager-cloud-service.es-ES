@@ -2,8 +2,8 @@
 sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce como Cloud Service
 breadcrumb-title: Guía de AEM Content and Commerce
-user-guide-description: Descubra cómo utilizar y administrar Experience Manager Content and Commerce como Cloud Service.
-source-git-commit: 2bc33096132164b54a8206c69945f3a3fd4227db
+user-guide-description: Descubra cómo utilizar y administrar Experience Manager Content and Commerce as a Cloud Service.
+source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 54%
@@ -19,13 +19,13 @@ ht-degree: 54%
 + Integraciones {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [Solución de comercio de terceros](integrating/third-party.md)
-   + Creación {#authoring}
-      + [Experiencias comerciales](authoring/authoring-commerce-experiences.md)
-      + [Cocpita del producto](authoring/product-cockpit.md)
-      + [Uso de varias plantillas](authoring/multi-template-usage.md)
-      + [Enriquecimiento de datos de productos con contenido asociado](authoring/enrich-product-associated-content.md)
 + Tienda AEM {#storefront}
    + [Introducción](getting-started.md)
+   + Creación {#authoring}
+      + [Experiencias comerciales](authoring/authoring-commerce-experiences.md)
+      + [Product Cockpit](authoring/product-cockpit.md)
+      + [Uso de varias plantillas](authoring/multi-template-usage.md)
+      + [Enriquecimiento de datos de producto con contenido asociado](authoring/enrich-product-associated-content.md)
    + Administración {#administering}
       + [Configuración de varias tiendas](configuring/multi-store-setup.md)
       + [Configuración de direcciones URL para SEO](configuring/advanced-url-configuration.md)
@@ -35,7 +35,7 @@ ht-degree: 54%
       + [Desarrollo con el SDK de AEM Cloud Service](develop.md)
       + [Diseño de componentes del CIF](customizing/style-cif-component.md)
       + [Personalización de componentes CIF](customizing/customize-cif-components.md)
-      + [Uso de selectores de catálogo del CIF](customizing/use-cif-pickers.md)
+      + [Uso de seleccionadores de catálogos CIF](customizing/use-cif-pickers.md)
 + [PWA Studio de Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
 + [Migración](migration.md)
 + [Preguntas más frecuentes](faq.md)
