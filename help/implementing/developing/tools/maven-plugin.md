@@ -2,7 +2,7 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: Utilice el complemento Maven del paquete de contenido para implementar aplicaciones AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 5%
@@ -117,7 +117,7 @@ Instala un paquete en el repositorio. La ejecución de este objetivo no requiere
 Además de los parámetros siguientes, consulte las descripciones en la [Parámetros comunes](#common-parameters) para obtener más información.
 
 | Nombre | Tipo | Requerido | Valor predeterminado | Descripción |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | No | El valor de la variable `artifactId` propiedad del proyecto Maven | Una cadena del formulario `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | No | Ninguna | El ID del artefacto que se va a instalar |
 | `groupId` | `String` | No | Ninguna | La variable `groupId` del artefacto que se va a instalar |
