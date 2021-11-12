@@ -5,9 +5,9 @@ breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service, incluidos los temas de desarrollo e implementación.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
+source-git-commit: b89869223986dcc64ebefc9ae6bfb8587456d4da
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1084'
 ht-degree: 36%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 36%
       + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
    + [Acceder y administrar registros](cloud-manager/manage-logs.md)
    + [Informes de SLA](cloud-manager/sla-reporting.md)
+   + [Acceso del usuario a una nueva reliquia](cloud-manager/user-access-new-relic.md)
    + [Explicar notificaciones](cloud-manager/notifications.md)
    + Administración de certificados SSL {#manage-ssl-certificates}
       + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
