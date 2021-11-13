@@ -1,9 +1,9 @@
 ---
 title: Acceso del usuario a una nueva reliquia
 description: Siga esta página para obtener más información sobre el nuevo Monitoreo del Rendimiento de las Aplicaciones Relic para AEM as a Cloud Service
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Si el usuario no encuentra el correo electrónico de confirmación de la cuenta 
    >[!NOTE]
    >Si no recibe un correo electrónico de New Relic:
    >Compruebe su [filtros de correo no deseado](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Si procede, [añadir nueva relación a la lista de permitidos de correo electrónico](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Por favor, haga sus comentarios sobre el ticket de asistencia y nuestros equipos le ayudarán a continuar
+   >Proporcione comentarios sobre el ticket de asistencia y el equipo de soporte de Adobe le ayudará a seguir trabajando.
 
 1. Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un vale de asistencia a través de [Admin Console](https://adminconsole.adobe.com/).
 
