@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
+source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2178'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ De forma similar, con todo lo que está sucediendo asincrónicamente como la act
 
 ## Tareas en segundo plano y trabajos de larga duración {#background-tasks-and-long-running-jobs}
 
-El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser flexible y la mayoría de las importaciones reanudarlas. Esto significa que si el código se vuelve a ejecutar, no debería comenzar de nuevo desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM as a Cloud Service es más probable que se produzca una eliminación de instancia.
+El código ejecutado como tareas en segundo plano debe suponer que la instancia en la que se está ejecutando se puede desactivar en cualquier momento. Por lo tanto, el código debe ser flexible y, lo más importante, reanudable. Esto significa que si el código se vuelve a ejecutar, no debería comenzar de nuevo desde el principio, sino más bien cerca de donde lo dejó. Aunque este no es un requisito nuevo para este tipo de código, en AEM as a Cloud Service es más probable que se produzca una eliminación de instancia.
 
-Para minimizar los problemas, se deben evitar los trabajos de larga duración si es posible, y deben reanudarse como mínimo. Para ejecutar estos trabajos, utilice Sling Jobs, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían comenzar de nuevo desde el principio. Para programar estos trabajos, es mejor utilizar la variable [Trabajos de Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) programador como este de nuevo la ejecución al menos una vez.
+Para minimizar los problemas, se deben evitar los trabajos de larga duración si es posible, y deben reanudarse como mínimo. Para ejecutar estos trabajos, utilice Sling Jobs, que tienen una garantía de al menos una vez y, por lo tanto, si se interrumpen, se vuelven a ejecutar lo antes posible. Pero probablemente no deberían comenzar de nuevo desde el principio. Para programar estos trabajos, es mejor utilizar la variable [Trabajos de Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) como esto de nuevo garantiza la ejecución de al menos una vez.
 
 El planificador de Sling Commons no debe utilizarse para la programación, ya que la ejecución no puede garantizarse. Es más probable que se programe.
 
@@ -155,7 +155,7 @@ Como se ilustra a continuación, los desarrolladores pueden resolver dependencia
 
 ![Consola de desarrollo 3](/help/implementing/developing/introduction/assets/devconsole3.png)
 
-También resulta útil para la depuración, ya que la consola de desarrollador tiene un vínculo a la herramienta Explicar consulta :
+También resulta útil para la depuración, la consola de desarrollador tiene un vínculo a la herramienta Explicar consulta :
 
 ![Consola de desarrollo 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
@@ -236,4 +236,4 @@ El host del servidor SMTP debe establecerse en el del servidor de correo.
 
 ## [!DNL Assets] directrices de desarrollo y casos de uso {#use-cases-assets}
 
-Para obtener información sobre los casos de uso de desarrollo, las recomendaciones y los materiales de referencia de los recursos as a Cloud Service, consulte [Referencias del desarrollador para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+Para obtener información sobre los casos de uso de desarrollo, las recomendaciones y los materiales de referencia de Assets as a Cloud Service, consulte [Referencias del desarrollador para Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
