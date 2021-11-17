@@ -1,18 +1,18 @@
 ---
 title: Configuración de varias tiendas de comercio
 description: Obtenga información sobre cómo asignar varias vistas de tienda de Magento a AEM. Esto permite que los proyectos admitan casos de uso multilingües y de inquilinos múltiples.
-sub-product: Comercio
+sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Marco de integración de Commerce
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '377'
 ht-degree: 81%
 
 ---
@@ -55,7 +55,7 @@ Siga los pasos a continuación para conectar un sitio de AEM y los componentes p
    * Navegue hasta la región o la raíz de idioma de la estructura del sitio, por ejemplo: /content/venia/us _o_ /content/venia/us/es para la página de muestra de Venia.
    * Seleccione la página y abra las propiedades de la página.
    * Seleccione la pestaña Avanzadas.
-   * En la sección `Configuration` seleccione la configuración que creó en el paso
+   * En la sección `Configuration` seleccione la configuración que creó en el paso 3
 
 ## Recursos adicionales
 
