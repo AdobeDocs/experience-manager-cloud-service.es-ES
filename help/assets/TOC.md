@@ -4,9 +4,9 @@ user-guide-title: Guía de Assets as a Cloud Service
 breadcrumb-title: Guía de Assets
 user-guide-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '488'
 ht-degree: 42%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 42%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [Información general y novedades](overview.md)
-+ [Cambios importantes en [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md)
++ [Cambios importantes en [!DNL Assets] como [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] arquitectura](architecture.md)
 + [Formatos de archivo compatibles](file-format-support.md)
 + [Información general sobre los microservicios de recursos](asset-microservices-overview.md)
@@ -31,7 +31,7 @@ ht-degree: 42%
    + [Etiquetas inteligentes para imágenes](smart-tags.md)
    + [Etiquetado inteligente de recursos de vídeo](smart-tags-video-assets.md)
    + [Organizar recursos](organize-assets.md)
-   + [Usar [!DNL Adobe Stock] recursos](aem-assets-adobe-stock.md)
+   + [Uso [!DNL Adobe Stock] activos](aem-assets-adobe-stock.md)
    + [Administrar colecciones](manage-collections.md)
    + [Información general sobre metadatos](manage-metadata.md)
    + [Integrar con [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
@@ -46,7 +46,7 @@ ht-degree: 42%
    + [Insertar y sacar recursos para editar](check-out-and-submit-assets.md)
    + [Digital Rights Management para los recursos](drm.md)
    + [Recursos de marca de agua](watermark-assets.md)
-   + [Procesamiento de recursos mediante  [!DNL Creative Cloud] API](cc-api-integration.md)
+   + [Procesamiento de recursos mediante [!DNL Creative Cloud] API](cc-api-integration.md)
 + Configurar, administrar y ampliar [!DNL Assets] {#admin}
    + [Documentación para desarrolladores y referencias de API](developer-reference-material-apis.md)
    + [Carpeta de esquema de metadatos](folder-metadata-schema.md)
@@ -68,7 +68,7 @@ ht-degree: 42%
 + Compartir y distribuir recursos {#brand-portal}
    + [Configurar [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar recursos en [!DNL Brand Portal]](publish-to-brand-portal.md)
-   + [Publicar recursos  [!DNL Brand Portal] desde [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+   + [Publicar recursos desde [!DNL Brand Portal] a [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
 + Fragmentos de contenido {#content-fragments}
    + [Trabajar con fragmentos de contenido](content-fragments/content-fragments.md)
    + [Entrega sin encabezado con fragmentos de contenido y GraphQL](content-fragments/content-fragments-graphql.md)
@@ -127,3 +127,7 @@ ht-degree: 42%
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](dynamic-media/http2faq.md)
    + [Fin de vida útil de los visualizadores de Flash](dynamic-media/flash-viewers-eol.md)
    + [Fin de vida útil de los visores DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ Integración con otras soluciones {#integrations}
+   + [Integraciones con [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Instalar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurar [!DNL enhanced connector] para [!DNL Workfront]](workfront-connector-configure.md)
