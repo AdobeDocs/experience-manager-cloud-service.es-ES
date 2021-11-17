@@ -2,11 +2,10 @@
 title: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
 description: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-translation-type: tm+mt
-source-git-commit: 36a598961081b7c2229065a031ad163a5336ee43
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 47%
+source-wordcount: '956'
+ht-degree: 45%
 
 ---
 
@@ -18,7 +17,7 @@ Adobe ha adoptado las API de Magento GraphQL como su API comercial oficial para 
 
 ## 2. ¿Se pueden almacenar los recursos de producto (imágenes) y hacer referencia a ellos desde AEM a través del administrador de Adobe Commerce (Magento)? ¿Cómo se pueden consumir los activos de Dynamic Media?
 
-No hay una integración oficial de AEM Assets con Magento disponible. Hay un conector de socio disponible en [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+No hay una integración oficial de AEM Assets con Magento disponible. Hay un conector de socio disponible en el [marketplace](https://marketplace.magento.com/bounteous-dam.html).
 
 O como solución alternativa, puede almacenar recursos de producto (imágenes) en AEM Assets, pero tendrá que almacenar manualmente las URL de los recursos en Magento. Dynamic Media ahora forma parte de AEM Assets y funcionará de la misma manera.
 
@@ -48,7 +47,7 @@ Los datos dinámicos, como el precio o el inventario no se almacenan en la cach�
 
 ## 9. ¿Cómo funciona la invalidación de caché para AEM Dispatcher con AEM y comercio?
 
-Se recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, se recomienda procesar la fecha del lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html).
+Se recomienda configurar la invalidación de caché basada en TTL para las páginas almacenadas en caché de Dispatcher. Para obtener información dinámica como precio o acciones, se recomienda procesar los datos en el lado del cliente. Para obtener más información sobre la invalidación de caché basada en TTL, consulte [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html).
 
 ## 10. ¿Existe alguna recomendación sobre la búsqueda unificada en los contenidos de AEM con Comercio?
 
@@ -68,7 +67,7 @@ Se recomienda administrar los datos y el contenido relacionados con el marketing
 
 ## 14. ¿Cómo podemos garantizar el cumplimiento de PCI al utilizar AEM para toda la capa de presentación?
 
-Recomendamos utilizar métodos de pago abstractos. Esto pone al cliente del explorador en comunicación directa con el proveedor de la puerta de enlace de pago, de modo que ni el Adobe ni las soluciones de comercio contienen ni pasan datos del titular de la tarjeta. Este enfoque requiere solamente un cumplimiento de PCI de nivel 3. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre el cumplimiento de PCI Magento, consulte <https://magento.com/pci-compliance>
+Recomendamos utilizar métodos de pago abstractos. Esto pone al cliente del explorador en comunicación directa con el proveedor de la puerta de enlace de pago, de modo que ni el Adobe ni las soluciones de comercio contienen ni pasan datos del titular de la tarjeta. Este enfoque requiere solamente un cumplimiento de PCI de nivel 3. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre la conformidad con PCI Magento, consulte [Requisitos de cumplimiento de PCI](https://magento.com/pci-compliance).
 
 ## 15. Si utilizo las versiones de nube AEM y Magento, ¿esta solución conjunta es compatible con PCI?
 

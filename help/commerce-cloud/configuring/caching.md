@@ -2,10 +2,10 @@
 title: Almacenamiento en caché y rendimiento
 description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de la implementación de comercio.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 460aa927453964f4878a8a969794a7052a2d3778
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Antes de que el cliente envíe una solicitud de GraphQL, comprueba si esa solici
 
 ### Ejemplos
 
-Se recomienda configurar el almacenamiento en caché para el servicio de búsqueda que recoge todos los valores de acumulados y facetas disponibles que se muestran en las páginas de categoría y búsqueda de productos. Estos valores solo cambian normalmente cuando, por ejemplo, se añade un nuevo atributo a los productos, por lo que la duración de esta entrada de caché puede ser &quot;grande&quot; si el conjunto de atributos de producto no cambia con frecuencia. Aunque esto es específico para cada proyecto, recomendamos valores de unos minutos en las fases de desarrollo del proyecto y unas pocas horas en los sistemas de producción estables.
+Se recomienda configurar el almacenamiento en caché para el servicio de búsqueda que recoge todos los valores de acumulaciones/facetas disponibles que se muestran en las páginas de categoría y búsqueda de productos. Estos valores solo cambian normalmente cuando, por ejemplo, se añade un nuevo atributo a los productos, por lo que la duración de esta entrada de caché puede ser &quot;grande&quot; si el conjunto de atributos de producto no cambia con frecuencia. Aunque esto es específico para cada proyecto, recomendamos valores de unos minutos en las fases de desarrollo del proyecto y unas pocas horas en los sistemas de producción estables.
 
 Esto suele configurarse con la siguiente entrada de caché:
 

@@ -2,9 +2,9 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: '2877'
 ht-degree: 13%
 
 ---
@@ -94,10 +94,10 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
 
 ### Paquetes de contenido
 
-+ La variable `ui.content` contiene todo el contenido y la configuración. El paquete de contenido contiene todas las definiciones de nodo que no están en la variable `ui.apps` o `ui.config` paquetes, o en otras palabras, cualquier cosa que no esté en `/apps` o `/oak:index`. Elementos comunes del `ui.content` incluye, pero no se limita a:
++ La variable `ui.content` contiene todo el contenido y la configuración. El paquete de contenido contiene todas las definiciones de nodo que no están en la `ui.apps` o `ui.config` paquetes, o en otras palabras, cualquier cosa que no esté en `/apps` o `/oak:index`. Elementos comunes del `ui.content` incluye, pero no se limita a:
    + Configuraciones según el contexto
       + `/conf`
-   + Estructuras de contenido complejas y requeridas (por ejemplo, La creación de contenido que se basa en y extiende más allá de las estructuras de contenido de línea de base definidas en Repo Init).
+   + Estructuras de contenido complejas y requeridas (por ejemplo, Generación de contenido que se basa en las estructuras de contenido de línea de base definidas en Repo Init y las extiende más allá de ellas).
       + `/content`, `/content/dam`, etc.
    + Etiquetado regulado de taxonomías
       + `/content/cq:tags`
