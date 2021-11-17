@@ -2,9 +2,9 @@
 title: 'Pruebas funcionales: Cloud Services'
 description: 'Pruebas funcionales: Cloud Services'
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '946'
 ht-degree: 3%
 
 ---
@@ -119,9 +119,11 @@ Además, el JAR debe tener el encabezado de manifiesto Cloud-Manager-TestType es
     </plugins>
 ```
 
-Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se van a ejecutar deben finalizar en TI.
+Dentro de este archivo JAR, los nombres de clase de las pruebas reales que se van a ejecutar deben finalizar en `IT`.
 
-Por ejemplo, una clase denominada `com.myco.tests.aem.ExampleIT` se ejecuta, pero una clase denominada `com.myco.tests.aem.ExampleTest` no.
+Por ejemplo, una clase denominada `com.myco.tests.aem.it.ExampleIT` se ejecuta, pero una clase denominada `com.myco.tests.aem.it.ExampleTest` no.
+
+Además, para excluir el código de prueba de la comprobación de cobertura del análisis de código, el código de prueba debe estar debajo de un paquete denominado `it` (el filtro de exclusión de cobertura es `**/it/**/*.java`).
 
 Las clases de prueba deben ser pruebas JUnit normales. La infraestructura de prueba está diseñada y configurada para ser compatible con las convenciones utilizadas por la biblioteca de prueba aem-testing-client. Se recomienda encarecidamente a los desarrolladores que utilicen esta biblioteca y sigan sus prácticas recomendadas. Consulte [Vínculo de Git](https://github.com/adobe/aem-testing-clients) para obtener más información.
 
