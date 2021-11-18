@@ -3,10 +3,10 @@ title: Integración de AEM y Adobe Commerce (Magento) con Commerce Integration F
 description: AEM y Adobe Commerce (Magento) se integran perfectamente con Commerce Integration Framework (CIF). CIF permite a AEM acceder a una instancia de Magento y comunicarse con Magento a través de GraphQL. También permite a los autores de AEM utilizar los seleccionadores de productos y categorías, así como la consola de productos para examinar los datos de productos y categorías que se obtienen a petición de Magento. Además, CIF ofrece una tienda predeterminada que puede acelerar los proyectos de comercio.
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 52cfd60cde3165fde6b0167783c16b0fc1efc950
+source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -32,8 +32,8 @@ La arquitectura general es la siguiente:
 
 ![Información general sobre la arquitectura del CIF](../assets/AEM_Magento_Architecture.png)
 
-Dentro de CIF hay asistencia para patrones de comunicación del lado del servidor y del lado del cliente.
-Las llamadas de API del lado del servidor se implementan mediante el uso genérico integrado [Cliente de GraphQL](https://github.com/adobe/commerce-cif-graphql-client) en combinación con un [conjunto de modelos de datos generados](https://github.com/adobe/commerce-cif-magento-graphql) para el esquema commerce GraphQL Además, se puede utilizar cualquier consulta o mutación de GraphQL en formato GQL.
+Dentro de CIF, existe compatibilidad con patrones de comunicación del lado del servidor y del lado del cliente.
+Las llamadas de API del lado del servidor se implementan mediante el uso genérico integrado [Cliente de GraphQL](https://github.com/adobe/commerce-cif-graphql-client) en combinación con un [conjunto de modelos de datos generados](https://github.com/adobe/commerce-cif-magento-graphql) para el esquema commerce GraphQL. Además, se puede utilizar cualquier consulta o mutación de GraphQL en formato GQL.
 
 Para los componentes del lado del cliente, que se crean mediante [React](https://reactjs.org/), el [Cliente Apollo](https://www.apollographql.com/docs/react/) se utiliza.
 

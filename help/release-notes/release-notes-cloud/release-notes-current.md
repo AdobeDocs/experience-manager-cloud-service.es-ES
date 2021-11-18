@@ -3,7 +3,7 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
+source-git-commit: f542d9423450086fcc4c0ba62f0e6f178df462e3
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Eche un vistazo a la [Información general sobre la versión de octubre de 2021]
 
 ### Nueva función de [!DNL Sites] {#sites-features}
 
-* Los modelos de fragmento de contenido ahora se establecen automáticamente en estado de solo lectura una vez publicados, para evitar dividir de forma involuntaria las consultas de API en vivo después de volver a publicar un modelo editado. Los usuarios reciben una advertencia cuando intentan editar un modelo publicado. La edición es posible tras aceptar la advertencia.
+* Los modelos de fragmento de contenido ahora se establecen automáticamente en estado de solo lectura una vez publicados, para evitar que se rompan de forma involuntaria las consultas de API en directo después de volver a publicar un modelo editado. Los usuarios reciben una advertencia cuando intentan editar un modelo publicado. La edición es posible tras aceptar la advertencia.
 
 ## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 

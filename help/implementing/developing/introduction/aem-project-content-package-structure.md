@@ -2,7 +2,7 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
+source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
 workflow-type: tm+mt
 source-wordcount: '2877'
 ht-degree: 13%
@@ -542,7 +542,7 @@ En el `all` del proyecto `filter.xml` (`all/src/main/content/jcr_root/META-INF/v
 <filter root="/apps/my-app-packages"/>
 ```
 
-Si es múltiple `/apps/*-packages` se utilizan en los objetivos incrustados, luego todos deben enumerarse aquí.
+Si es múltiple `/apps/*-packages` se utilizan en los objetivos incrustados, entonces todos deben enumerarse aquí.
 
 ### Repositorios Maven de terceros {#xml-3rd-party-maven-repositories}
 

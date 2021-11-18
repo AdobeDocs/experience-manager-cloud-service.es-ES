@@ -2,10 +2,10 @@
 title: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
 description: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 45%
+source-wordcount: '952'
+ht-degree: 42%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 45%
 
 ## 1. ¿CIF GraphQL solo se utiliza para el comercio o estará disponible para consultar el contenido creado en AEM JCR?
 
-Adobe ha adoptado las API de Magento GraphQL como su API comercial oficial para todos los datos relacionados con el comercio. Por lo tanto, AEM utiliza GraphQL para intercambiar datos de comercio con Magento y con cualquier motor de comercio a través de I/O Runtime. Esta API de GraphQL es independiente de AEM API de GraphQL para acceder a los fragmentos de contenido.
+Adobe ha adoptado las API de GraphQL de Magento como su API comercial oficial para todos los datos relacionados con el comercio. Por lo tanto, AEM utiliza GraphQL para intercambiar datos de comercio con Magento y con cualquier motor de comercio a través de I/O Runtime. Esta API de GraphQL es independiente de AEM API de GraphQL para acceder a los fragmentos de contenido.
 
 ## 2. ¿Se pueden almacenar los recursos de producto (imágenes) y hacer referencia a ellos desde AEM a través del administrador de Adobe Commerce (Magento)? ¿Cómo se pueden consumir los activos de Dynamic Media?
 
@@ -35,7 +35,7 @@ El complemento CIF utilizado con AEM Cloud Service permite que los datos fluyan 
 
 ## 6. ¿Qué tamaño de catálogo AEM con la compatibilidad con CIF?
 
-Esto depende de algunos aspectos adicionales que tenga que tener en cuenta. ¿Cuál es la proporción de caché de sus datos y páginas de catálogo? ¿Cuántas solicitudes simultáneas espera durante las horas de mayor actividad? ¿Qué tan escalables son las API de sus soluciones de comercio?
+Esto depende de algunos aspectos adicionales que tenga que tener en cuenta. ¿Cuál es la proporción de caché de sus datos y páginas de catálogo? ¿Cuántas solicitudes simultáneas espera durante las horas de mayor actividad? ¿Hasta qué punto son escalables las API de sus soluciones de comercio?
 
 ## 7. ¿Cómo actúa PIM en este marco?
 
@@ -63,7 +63,7 @@ Los datos del producto generalmente ya se traducen en PIM o en Magento. La integ
 
 ## 13. ¿Existe alguna manera de mejorar los datos del producto con texto comercial? ¿Dónde se hace esto? ¿En AEM o en la solución de comercio?
 
-Se recomienda administrar los datos y el contenido relacionados con el marketing en AEM. Decore los datos de productos de su solución de comercio con atributos adicionales utilizando fragmentos de contenido o cree y vincule fragmentos de experiencias para contenido no estructurado con sus productos.
+Se recomienda administrar los datos y el contenido relacionados con el marketing en AEM. Decore los datos de productos de su solución de comercio con atributos adicionales mediante fragmentos de contenido o cree y vincule fragmentos de experiencias para contenido no estructurado con sus productos.
 
 ## 14. ¿Cómo podemos garantizar el cumplimiento de PCI al utilizar AEM para toda la capa de presentación?
 
