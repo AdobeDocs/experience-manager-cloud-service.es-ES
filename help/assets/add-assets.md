@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2192'
 ht-degree: 1%
 
 ---
@@ -156,6 +156,7 @@ Para configurar la herramienta, siga estos pasos:
    * [!UICONTROL Filtrar por tamaño máximo]: Proporcione el tamaño máximo de archivo de los recursos en MB.
    * [!UICONTROL Excluir tipos de mime]: Lista de tipos MIME separados por comas que se excluirán de la ingesta. Por ejemplo, `image/jpeg, image/.*, video/mp4`. Consulte [todos los formatos de archivo compatibles](/help/assets/file-format-support.md).
    * [!UICONTROL Incluir tipos de MIME]: Lista de tipos MIME separados por comas que se incluirán en la ingesta. Consulte [todos los formatos de archivo compatibles](/help/assets/file-format-support.md).
+   * [!UICONTROL Eliminar archivo de origen después de la importación]: Seleccione esta opción para eliminar los archivos originales del almacén de datos de origen después de importar los archivos en [!DNL Experience Manager].
    * [!UICONTROL Modo de importación]: Seleccione Omitir, Reemplazar o Crear versión. El modo Omitir es el predeterminado y en este modo el ingestor omite importar un recurso si ya existe. Ver el significado de [reemplazar y crear opciones de versión](#handling-upload-existing-file).
    * [!UICONTROL Carpeta de destino de recursos]: Importar carpeta en DAM donde se van a importar los recursos. Por ejemplo, `/content/dam/imported_assets`
    * [!UICONTROL Archivo de metadatos]: El archivo de metadatos que se va a importar, proporcionado en formato CSV. Proporcione este archivo CSV en la ubicación del blob de origen y consulte la ruta en la configuración de la herramienta de ingesta masiva.
