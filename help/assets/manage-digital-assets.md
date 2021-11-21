@@ -1,34 +1,34 @@
 ---
 title: Administre recursos digitales
-description: Obtenga información sobre varios métodos de edición y administración de recursos.
+description: Descubra varios métodos de edición y administración de recursos
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
 workflow-type: tm+mt
-source-wordcount: '4543'
+source-wordcount: '4268'
 ht-degree: 11%
 
 ---
 
 # Administrar recursos {#manage-assets}
 
-En este artículo se describe cómo administrar y editar recursos en Adobe Experience Manager Assets. Para administrar los fragmentos de contenido, consulte [Fragmentos de contenido](content-fragments/content-fragments.md) recursos.
+Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], consulte [[!DNL Content Fragments]](content-fragments/content-fragments.md) activos.
 
 ## Crear carpetas {#creating-folders}
 
-Al organizar una colección de recursos, por ejemplo, todas las imágenes `Nature`, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. [!DNL Experience Manager Assets] no requiere que organice los recursos en carpetas para que funcionen mejor.
+Al organizar una colección de recursos, por ejemplo, todos los `Nature` imágenes, puede crear carpetas para mantenerlas juntas. Puede utilizar carpetas para categorizar y organizar los recursos. [!DNL Experience Manager Assets] no requiere que organice los recursos en carpetas para que funcionen mejor.
 
 >[!NOTE]
 >
->* No se admite el uso compartido de una carpeta de recursos del tipo `sling:OrderedFolder` al compartirla en el Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
->* El Experience Manager no permite usar la palabra `subassets` como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subactivos para los recursos compuestos
+>* Uso compartido de una carpeta de recursos del tipo `sling:OrderedFolder`, no es compatible al compartir en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* El Experience Manager no permite el uso de `subassets` como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subactivos para los recursos compuestos
 
 
-1. Vaya al lugar de la carpeta de recursos digitales donde desee crear una carpeta nueva. En el menú, haga clic en **[!UICONTROL Crear]**. Seleccione **[!UICONTROL Nueva carpeta]**.
-1. En el campo **[!UICONTROL Title]**, proporcione un nombre de carpeta. De forma predeterminada, DAM utiliza el título que ha proporcionado como nombre de carpeta. Una vez creada la carpeta, puede anular el valor predeterminado y especificar otro nombre de carpeta.
+1. Vaya al lugar de la carpeta de recursos digitales donde desee crear una carpeta nueva. En el menú , haga clic en **[!UICONTROL Crear]**. Select **[!UICONTROL Nueva carpeta]**.
+1. En el **[!UICONTROL Título]** , proporcione un nombre de carpeta. De forma predeterminada, DAM utiliza el título que ha proporcionado como nombre de carpeta. Una vez creada la carpeta, puede anular el valor predeterminado y especificar otro nombre de carpeta.
 1. Haga clic en **[!UICONTROL Crear]**. La carpeta se muestra en la carpeta de recursos digitales.
 
 No se admiten los siguientes caracteres (lista de) separados por espacios:
@@ -38,15 +38,15 @@ No se admiten los siguientes caracteres (lista de) separados por espacios:
 
 ## Cargar recursos {#uploading-assets}
 
-Consulte [añadir recursos digitales al Experience Manager](add-assets.md).
+Consulte [agregar recursos digitales al Experience Manager](add-assets.md).
 
 ## Detectar recursos duplicados {#detect-duplicate-assets}
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un usuario de DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede tener un impacto en el rendimiento en función del tamaño del repositorio y el número de recursos cargados. Para habilitar la función, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Consulte [cómo hacer configuraciones de OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La detección de duplicaciones se basa en el valor `dam:sha1` único almacenado en `jcr:content/metadata/dam:sha1`. Significa que se detectan recursos duplicados aunque los nombres de archivo sean diferentes.
+Si un usuario de DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede tener un impacto en el rendimiento en función del tamaño del repositorio y el número de recursos cargados. Para habilitar la función, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Consulte [cómo realizar configuraciones de OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La detección de duplicaciones se basa en el `dam:sha1` valor almacenado en `jcr:content/metadata/dam:sha1`. Significa que se detectan recursos duplicados aunque los nombres de archivo sean diferentes.
 
-Puede agregar el archivo de configuración `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` en código personalizado y el archivo puede contener lo siguiente:
+Puede añadir el archivo de configuración `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` en el código personalizado y el archivo puede contener lo siguiente:
 
 ```json
 {
@@ -68,41 +68,41 @@ Para obtener una vista previa de un recurso, siga estos pasos.
 
 1. En el modo de vista previa, las opciones de zoom están disponibles para [tipos de imagen admitidos](/help/assets/file-format-support.md) (con edición interactiva).
 
-   Para acercar un recurso, toque o haga clic en `+` (o toque o haga clic en la lupa del recurso). Para reducir, toque o haga clic en `-`. Al acercar el zoom, puede observar de cerca cualquier área de la imagen mediante la panorámica. La flecha para restablecer el zoom le lleva de nuevo a la vista original.
+   Para acercar un recurso a un recurso, toque o haga clic en `+` (o toque o haga clic en la lupa del recurso). Para alejar, toque o haga clic `-`. Al acercar el zoom, puede observar de cerca cualquier área de la imagen mediante la panorámica. La flecha para restablecer el zoom le lleva de nuevo a la vista original.
 
-   Pulse **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
+   Toque **[!UICONTROL Restablecer]** para restablecer la vista al tamaño original.
 
 ## Editar propiedades {#editing-properties}
 
 1. Navegue a la ubicación del recurso cuyos metadatos desee editar.
 
-1. Seleccione el recurso y pulse o haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas para ver las propiedades de los recursos. Como alternativa, seleccione la acción rápida **[!UICONTROL Properties]** en la tarjeta del recurso.
+1. Seleccione el recurso y toque o haga clic en él **[!UICONTROL Propiedades]** en la barra de herramientas para ver las propiedades de los recursos. Como alternativa, elija la opción **[!UICONTROL Propiedades]** acción rápida en la tarjeta de recursos.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. En la página [!UICONTROL Propiedades], edite las propiedades de los metadatos en varias pestañas. Por ejemplo, en la ficha **[!UICONTROL Básico]**, edite el título, la descripción, etc.
+1. En el [!UICONTROL Propiedades] edite las propiedades de los metadatos en varias pestañas. Por ejemplo, en la sección **[!UICONTROL Básico]** , edite el título, la descripción, etc.
 
    >[!NOTE]
    >
-   >El diseño de la página [!UICONTROL Properties] y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. Para obtener información sobre cómo modificar el diseño de la página [!UICONTROL Properties], consulte [Esquemas de metadatos](/help/assets/metadata-schemas.md).
+   >El diseño de la [!UICONTROL Propiedades] y las propiedades de metadatos disponibles dependen del esquema de metadatos subyacente. Para aprender a modificar el diseño del [!UICONTROL Propiedades] página, consulte [Esquemas de metadatos](/help/assets/metadata-schemas.md).
 
 1. Para programar una fecha y hora determinada para la activación del recurso, utilice el selector de fechas situado junto al campo **[!UICONTROL Tiempo de activación]**.
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Para desactivar el recurso después de una duración determinada, seleccione la fecha y hora de desactivación del selector de fechas situado junto al campo **[!UICONTROL Tiempo de desactivación]**. La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz web de Assets o a través de la API HTTP.
+1. Para desactivar el recurso después de una duración determinada, seleccione la fecha y hora de desactivación del selector de fechas situado junto al **[!UICONTROL Tiempo de inactividad]** campo . La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después de la [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través de la interfaz web de Assets o a través de la API HTTP.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. En el campo **[!UICONTROL Etiquetas]**, seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y seleccione la clave `Enter`. La nueva etiqueta se guarda en [!DNL Experience Manager].
+1. En el **[!UICONTROL Etiquetas]** seleccione una o varias etiquetas. Para agregar una etiqueta personalizada, escriba el nombre de la etiqueta en el cuadro y seleccione la opción `Enter` clave. La nueva etiqueta se guarda en [!DNL Experience Manager].
 
    YouTube requiere que las etiquetas se publiquen y que tengan un vínculo a YouTube (si se encuentra un vínculo adecuado).
 
    >[!NOTE]
    >
-   >Para crear etiquetas, debe tener permiso de escritura en la ruta `/content/cq:tags/default` del repositorio CRX.
+   >Para crear etiquetas, debe tener permiso de escritura en `/content/cq:tags/default` en el repositorio CRX.
 
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
+1. Toque o haga clic **[!UICONTROL Guardar y cerrar]**.
 
 1. Vaya a la interfaz de usuario de Assets. Las propiedades de metadatos editadas, como el título, la descripción y las etiquetas, se muestran en la tarjeta de recursos de la vista de tarjeta y en las columnas relevantes de la vista de lista.
 
@@ -128,65 +128,65 @@ Al copiar un recurso o una carpeta, se copia todo el recurso o la carpeta, junto
 
 No se arrastran algunos atributos que son exclusivos de una copia concreta de un recurso. Algunos ejemplos son:
 
-* ID del recurso, fecha y hora de creación, versiones e historial de versiones. Algunas de estas propiedades están indicadas por las propiedades `jcr:uuid`, `jcr:created` y `cq:name`.
+* ID del recurso, fecha y hora de creación, versiones e historial de versiones. Algunas de estas propiedades están indicadas por las propiedades `jcr:uuid`, `jcr:created`y `cq:name`.
 
 * El tiempo de creación y las rutas a las que se hace referencia son únicos para cada recurso y cada una de sus representaciones.
 
 La información de otras propiedades y metadatos se conserva. No se crea una copia parcial al copiar un recurso.
 
-1. En la interfaz de usuario de Assets, seleccione uno o varios recursos y, a continuación, pulse o haga clic en el icono **[!UICONTROL Copiar]** de la barra de herramientas. Como alternativa, seleccione la acción rápida **[!UICONTROL Copy]** ![copy_icon](assets/copy_icon.png) en la tarjeta del recurso.
+1. En la interfaz de usuario de Assets, seleccione uno o varios recursos y, a continuación, toque o haga clic en el **[!UICONTROL Copiar]** de la barra de herramientas. Como alternativa, seleccione el **[!UICONTROL Copiar]** ![copy_icon](assets/copy_icon.png) acción rápida desde la tarjeta de recursos.
 
    >[!NOTE]
    >
-   >Si utiliza la acción rápida [!UICONTROL Copy], solo puede copiar un recurso a la vez.
+   >Si usa la variable [!UICONTROL Copiar] acción rápida, solo puede copiar un recurso a la vez.
 
 1. Desplácese a la ubicación en la que desee copiar los recursos.
 
    >[!NOTE]
    >
-   >Si copia un recurso en la misma ubicación, [!DNL Experience Manager] genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso llamado `Square`, [!DNL Experience Manager] genera automáticamente el título de su copia como `Square1`.
+   >Si copia un recurso en la misma ubicación, [!DNL Experience Manager] genera automáticamente una variación del nombre. Por ejemplo, si copia un recurso con el título `Square`, [!DNL Experience Manager] genera automáticamente el título de su copia como `Square1`.
 
-1. Haga clic en el icono **[!UICONTROL Pegar]** recurso de la barra de herramientas. Los recursos se copian en esta ubicación.
+1. Haga clic en el **[!UICONTROL Pegar]** icono de recurso de la barra de herramientas. Los recursos se copian en esta ubicación.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >El icono **[!UICONTROL Pegar]** está disponible en la barra de herramientas hasta que se complete la operación de pegado.
+   >La variable **[!UICONTROL Pegar]** está disponible en la barra de herramientas hasta que se complete la operación de pegado.
 
 ### Mover o cambiar el nombre de los recursos {#moving-or-renaming-assets}
 
 1. Navegue a la ubicación del recurso que desee mover.
 
-1. Seleccione el recurso y pulse o haga clic en el icono **[!UICONTROL Mover]** ![mover_icon](assets/move_icon.png) de la barra de herramientas.
+1. Seleccione el recurso y toque o haga clic en el **[!UICONTROL Mover]** icono ![move_icon](assets/move_icon.png) en la barra de herramientas.
 
 1. En el asistente Mover recursos , realice una de las siguientes acciones:
 
-   * Especifique el nombre del recurso cuando se haya desplazado. A continuación, pulse o haga clic en **[!UICONTROL Siguiente]** para continuar.
+   * Especifique el nombre del recurso cuando se haya desplazado. A continuación, toque o haga clic **[!UICONTROL Siguiente]** para continuar.
 
-   * Toque o haga clic en **[!UICONTROL Cancelar]** para detener el proceso.
+   * Toque o haga clic **[!UICONTROL Cancelar]** para detener el proceso.
    >[!NOTE]
    >
    >* Puede especificar el mismo nombre para el recurso si no hay ningún recurso con ese nombre en la nueva ubicación. Sin embargo, debe utilizar un nombre diferente si mueve el recurso a una ubicación donde exista un recurso con el mismo nombre. Si utiliza el mismo nombre, el sistema genera automáticamente una variación del nombre. Por ejemplo, si el recurso tiene el nombre Cuadrado, el sistema genera el nombre Cuadrado1 para su copia.
    >* Al cambiar el nombre, no se permiten espacios en blanco en el nombre del archivo.
 
 
-1. En el cuadro de diálogo **[!UICONTROL Seleccionar destino]**, realice una de las siguientes acciones:
+1. En el **[!UICONTROL Seleccionar destino]** , realice una de las siguientes acciones:
 
-   * Vaya a la nueva ubicación de los recursos y, a continuación, pulse o haga clic en **[!UICONTROL Siguiente]** para continuar.
+   * Vaya a la nueva ubicación de los recursos y, a continuación, toque o haga clic en **[!UICONTROL Siguiente]** para continuar.
 
-   * Toque o haga clic en **[!UICONTROL Atrás]** para volver a la pantalla **[!UICONTROL Cambiar nombre]**.
+   * Toque o haga clic **[!UICONTROL Atrás]** para volver a la **[!UICONTROL Cambiar nombre]** en el Navegador.
 
-1. Si los recursos que se mueven tienen páginas, recursos o colecciones de referencia, la pestaña **[!UICONTROL Ajustar referencias]** aparece junto a la pestaña **[!UICONTROL Seleccionar destino]**.
+1. Si los recursos que se mueven tienen páginas, recursos o colecciones de referencia, la variable **[!UICONTROL Ajustar referencias]** aparece junto a la pestaña **[!UICONTROL Seleccionar destino]** pestaña .
 
-   Realice una de las siguientes acciones en la pantalla **[!UICONTROL Ajustar referencias]**:
+   Realice una de las siguientes acciones en la sección **[!UICONTROL Ajustar referencias]** pantalla:
 
    * Especifique las referencias que desea ajustar en función de los nuevos detalles y, a continuación, toque o haga clic en **[!UICONTROL Mover]** para continuar.
 
-   * En la columna **[!UICONTROL Ajustar]**, seleccione o anule la selección de referencias a los recursos.
-   * Toque o haga clic en **[!UICONTROL Back]** para volver a la pantalla **[!UICONTROL Select Destination]**.
+   * En el **[!UICONTROL Ajustar]** , seleccione o anule la selección de referencias a los recursos.
+   * Toque o haga clic **[!UICONTROL Atrás]** para volver a la **[!UICONTROL Seleccionar destino]** en el Navegador.
 
-   * Toque o haga clic en **[!UICONTROL Cancelar]** para detener la operación de movimiento.
+   * Toque o haga clic **[!UICONTROL Cancelar]** para detener la operación de movimiento.
 
    Si no actualiza las referencias, seguirán apuntando a la ruta anterior del recurso. Si ajusta las referencias, se actualizan a la nueva ruta de recursos.
 
@@ -198,23 +198,23 @@ La información de otras propiedades y metadatos se conserva. No se crea una cop
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Pulse o haga clic en el icono de navegación global y seleccione **[!UICONTROL Representaciones]** en la lista.
+1. Pulse o haga clic en el icono de navegación global y seleccione **[!UICONTROL Representaciones]** de la lista.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. En el panel **[!UICONTROL Representaciones]**, consulte la lista de representaciones generadas para el recurso.
+1. En el **[!UICONTROL Representaciones]** , consulte la lista de representaciones generadas para el recurso.
 
    ![renditions_panel](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >De forma predeterminada, [!DNL Experience Manager Assets] no muestra la representación original del recurso en el modo de vista previa. Si es administrador, puede utilizar superposiciones para configurar [!DNL Assets] de modo que muestre las representaciones originales en el modo de vista previa.
+   >De forma predeterminada, [!DNL Experience Manager Assets] no muestra la representación original del recurso en el modo de vista previa. Si es administrador, puede utilizar superposiciones para configurar [!DNL Assets] para mostrar las representaciones originales en el modo de vista previa.
 
 1. Seleccione una representación para verla o eliminarla.
 
    **Eliminación de una representación**
 
-   Seleccione una representación en el panel **[!UICONTROL Representaciones]** y, a continuación, pulse o haga clic en el icono **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez finalizado el procesamiento de recursos. Para recursos individuales, puede eliminar las representaciones manualmente desde la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y volver a cargar los recursos eliminados.
+   Seleccione una representación en el **[!UICONTROL Representaciones]** y, a continuación, toque o haga clic en el **[!UICONTROL Eliminar representación]** de la barra de herramientas. Las representaciones no se pueden eliminar de forma masiva una vez finalizado el procesamiento de recursos. Para recursos individuales, puede eliminar las representaciones manualmente desde la interfaz de usuario. Para varios recursos, puede personalizar [!DNL Experience Manager] para eliminar representaciones específicas o eliminar los recursos y volver a cargar los recursos eliminados.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -236,11 +236,11 @@ La información de otras propiedades y metadatos se conserva. No se crea una cop
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   Para configurar las dimensiones de representación de un recurso de vídeo, vaya al nodo `videopicker` en el repositorio CRX en la ubicación `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, superponga el nodo y, a continuación, edite la propiedad adecuada.
+   Para configurar las dimensiones de representación de un recurso de vídeo, vaya a la `videopicker` en el repositorio CRX en la ubicación `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, superponga el nodo y, a continuación, edite la propiedad correspondiente.
 
    >[!NOTE]
    >
-   >Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo.
+   >Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo.
 
 ## Eliminar recursos {#delete-assets}
 
@@ -250,15 +250,15 @@ Además, desactive el botón de forzar eliminación mediante una superposición 
 
 1. Navegue a la ubicación de los recursos que desee eliminar.
 
-1. Seleccione el recurso y haga clic en **[!UICONTROL Delete]** ![delete_icon](assets/do-not-localize/delete-icon.png) en la barra de herramientas.
+1. Seleccione el recurso y haga clic en **[!UICONTROL Eliminar]** ![delete_icon](assets/do-not-localize/delete-icon.png) en la barra de herramientas.
 
 1. En el cuadro de diálogo de confirmación, haga clic en:
 
-   * **** Cancelación para detener la acción
+   * **[!UICONTROL Cancelar]** para detener la acción
    * Seleccione **[!UICONTROL Eliminar]** para confirmar la acción:
 
       * Si el recurso no tiene referencias, se eliminará.
-      * Si el recurso tiene referencias, un mensaje de error le informa de que **[!UICONTROL Se hace referencia a uno o más recursos]**. Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
+      * Si el recurso tiene referencias, un mensaje de error le informa de que **[!UICONTROL Se hace referencia a uno o varios recursos]**. Puede seleccionar **[!UICONTROL Forzar eliminación]** o **[!UICONTROL Cancelar]**.
 
    >[!NOTE]
    >
@@ -270,28 +270,28 @@ Además, desactive el botón de forzar eliminación mediante una superposición 
 
 ## Descargar recursos {#download-assets}
 
-Consulte [descarga de recursos desde [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
+Consulte [descargar recursos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
 ## Publicar o cancelar la publicación de recursos {#publish-assets}
 
 1. Vaya a la ubicación del recurso o de la carpeta de recursos que desea publicar o que desea eliminar del entorno de publicación (cancelar la publicación).
 
-1. Seleccione el recurso o la carpeta para publicar o cancelar la publicación y seleccione la opción **[!UICONTROL Administrar publicación]** ![administrar publicación](assets/do-not-localize/globe-publication.png) en la barra de herramientas. Como alternativa, para publicar rápidamente, seleccione la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas. Si la carpeta que desea publicar incluye una carpeta vacía, la carpeta vacía no se publica.
+1. Seleccione el recurso o la carpeta que desea publicar o cancelar la publicación y seleccione **[!UICONTROL Administrar publicación]** ![opción administrar publicación](assets/do-not-localize/globe-publication.png) en la barra de herramientas. Como alternativa, para publicar rápidamente, seleccione la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas. Si la carpeta que desea publicar incluye una carpeta vacía, la carpeta vacía no se publica.
 
-1. Seleccione la opción **[!UICONTROL Publicar]** o **[!UICONTROL Cancelar publicación]** según sea necesario.
+1. Seleccione el **[!UICONTROL Publicación]** o **[!UICONTROL Cancelar la publicación]** como sea necesario.
 
    ![Cancelar publicación](assets/unpublish_action.png)
    *Figura: Publicar y cancelar la publicación y la opción de programación.*
 
-1. Seleccione **[!UICONTROL Now]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Later]** para programar la acción. Seleccione una fecha y una hora si elige la opción **[!UICONTROL Later]** . Haga clic en **[!UICONTROL Siguiente]**. 
+1. Select **[!UICONTROL Ahora]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Más tarde]** para programar la acción. Seleccione una fecha y una hora si elige la variable **[!UICONTROL Más tarde]** . Haga clic en **[!UICONTROL Siguiente]**. 
 
 1. Al publicar, si un recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que se han cancelado la publicación o se han modificado desde la última publicación. Elija las referencias que desea publicar.
 
-1. Al cancelar la publicación, si un recurso hace referencia a otros recursos, elija las referencias que desea cancelar la publicación. Haga clic en **[!UICONTROL Cancelar publicación]**. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Cancelar]** para detener la acción o haga clic en **[!UICONTROL Cancelar publicación]** para confirmar que los recursos se cancelarán en la fecha especificada.
+1. Al cancelar la publicación, si un recurso hace referencia a otros recursos, elija las referencias que desea cancelar la publicación. Haga clic en **[!UICONTROL Cancelar la publicación]**. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Cancelar]** para detener la acción o haga clic en **[!UICONTROL Cancelar la publicación]** para confirmar que los recursos se cancelarán en la fecha especificada.
 
 Comprenda las siguientes limitaciones y sugerencias relacionadas con la publicación o cancelación de la publicación de recursos o carpetas:
 
-* La opción [!UICONTROL Administrar publicación] solo está disponible para las cuentas de usuario que tienen permisos de replicación.
+* La opción para [!UICONTROL Administrar publicación] solo está disponible para las cuentas de usuario que tienen permisos de replicación.
 * Al cancelar la publicación de un recurso complejo, cancele la publicación del recurso únicamente. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
 * Las carpetas vacías no se publican.
 * Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
@@ -303,11 +303,11 @@ Un grupo de usuarios cerrado (CUG) se utiliza para limitar el acceso a carpetas 
 Los CUG son una forma adicional de restringir el acceso a sus recursos. También puede configurar una página de inicio de sesión para la carpeta.
 
 1. Seleccione una carpeta en la interfaz de usuario de Assets y pulse o haga clic en el icono Propiedades de la barra de herramientas para mostrar la página de propiedades.
-1. En la pestaña **[!UICONTROL Permisos]**, agregue miembros o grupos en **[!UICONTROL Grupo de usuarios cerrado]**.
+1. En el **[!UICONTROL Permisos]** ficha, agregar miembros o grupos en **[!UICONTROL Grupo de usuarios cerrado]**.
 
    ![add_user](assets/add_user.png)
 
-1. Para mostrar una pantalla de inicio de sesión cuando los usuarios acceden a la carpeta, seleccione la opción **[!UICONTROL Enable]**. A continuación, seleccione la ruta a una página de inicio de sesión en [!DNL Experience Manager] y guarde los cambios.
+1. Para mostrar una pantalla de inicio de sesión cuando los usuarios acceden a la carpeta, seleccione la opción **[!UICONTROL Habilitar]** . A continuación, seleccione la ruta a una página de inicio de sesión en [!DNL Experience Manager]y guarde los cambios.
 
    ![login_page](assets/login_page.png)
 
@@ -316,13 +316,13 @@ Los CUG son una forma adicional de restringir el acceso a sus recursos. También
    >Si no especifica la ruta a una página de inicio de sesión, [!DNL Experience Manager] muestra la página de inicio de sesión predeterminada en la instancia de publicación.
 
 1. Publique la carpeta e intente acceder a ella desde la instancia de publicación. Se muestra una pantalla de inicio de sesión.
-1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de que [!DNL Experience Manager] lo autentique.
+1. Si es miembro de CUG, introduzca sus credenciales de seguridad. La carpeta se muestra después de [!DNL Experience Manager] le autentica.
 
 ## Buscar recursos {#search-assets}
 
 La búsqueda de recursos es fundamental para el uso de un sistema de administración de recursos digitales, ya sea para su uso posterior por parte de los creativos, para la sólida administración de recursos por parte de los usuarios comerciales y los especialistas en marketing, o para la administración por parte de los administradores de DAM.
 
-Para realizar búsquedas simples, avanzadas y personalizadas con el fin de descubrir y utilizar los recursos más adecuados, consulte [Buscar recursos en [!DNL Experience Manager]](/help/assets/search-assets.md).
+Para realizar búsquedas simples, avanzadas y personalizadas con el fin de descubrir y utilizar los recursos más adecuados, consulte [buscar recursos en [!DNL Experience Manager]](/help/assets/search-assets.md).
 
 ## Acciones rápidas {#quick-actions}
 
@@ -331,88 +331,89 @@ Los iconos de acción rápida están disponibles para un único recurso a la vez
 * Dispositivos táctiles: Toque y sostenga. Por ejemplo, en un iPad, puede pulsar y mantener presionado un recurso para que se muestren las acciones rápidas.
 * Dispositivos no táctiles: Puntero al pasar el ratón. Por ejemplo, en un dispositivo de escritorio, se muestra la barra de acciones rápidas si pasa el puntero sobre la miniatura del recurso.
 
-## Editar imágenes {#editing-images}
+<!-- Hiding this topic via cqdoc-18707
 
-Las herramientas de edición de la interfaz [!DNL Experience Manager Assets] permiten realizar pequeños trabajos de edición en recursos de imagen. Puede recortar, rotar, voltear y realizar otros trabajos de edición en imágenes. También puede añadir mapas de imagen a los recursos.
+## Edit images {#editing-images}
+
+The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
 >[!NOTE]
 >
->Para algunos componentes, el modo Pantalla completa tiene opciones adicionales disponibles.
+>For some components, the Full Screen mode has additional options available.
 
-1. Realice una de las siguientes acciones para abrir un recurso en modo de edición:
+1. Do one of the following to open an asset in edit mode:
 
-   * Seleccione el recurso y, a continuación, pulse o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
-   * Toque o haga clic en el icono **[!UICONTROL Editar]** que aparece en un recurso en la vista de tarjeta.
-   * En la página de recursos, pulse o haga clic en el icono **[!UICONTROL Editar]** de la barra de herramientas.
+    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
+    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. Para recortar la imagen, toque o haga clic en el icono **Recortar**.
+1. To crop the image, tap/click the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
+1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. Seleccione el área que desea recortar y cambie el tamaño o la posición en la imagen.
-1. Utilice el icono **Finish** (esquina superior derecha) para recortar la imagen. Al hacer clic en el icono **Finish** también se déclencheur la regeneración de las representaciones.
+1. Select the area to be cropped, and resize or reposition it on the image.
+1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. Utilice los iconos **Deshacer** y **Rehacer** de la parte superior derecha para revertir a la imagen sin recortar o conservar la imagen recortada, respectivamente.
+1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. Toque o haga clic en el icono Rotar correspondiente para girar la imagen en el sentido de las agujas del reloj o en el sentido contrario.
+1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Toque o haga clic en el icono Girar correspondiente para girar la imagen horizontal o verticalmente.
+1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Toque o haga clic en el icono **Finish** para guardar los cambios.
+1. Tap/click the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 >[!NOTE]
 >
->La edición de imágenes es compatible con los formatos BMP, GIF, PNG y JPEG.
-
-<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
+>Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
 >[!NOTE]
 >
->Para editar un archivo TXT, establezca **Day CQ Link Externalizer** desde Configuration Manager.
+>To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+-->
 
 ## Escala de tiempo {#timeline}
 
 La cronología permite ver varios eventos de un elemento seleccionado, como flujos de trabajo activos de un recurso, comentarios/anotaciones, registros de actividades y versiones.
 
-![Ordene las entradas de línea de tiempo para una ](assets/sort_timeline.gif)
-*assetFigura: Ordenar entradas de línea de tiempo para un recurso*
+![Ordenar entradas de línea de tiempo para un recurso](assets/sort_timeline.gif)
+*Figura: Ordenar entradas de línea de tiempo para un recurso*
 
 >[!NOTE]
 >
->En la [Consola de colecciones](/help/assets/manage-collections.md#navigate-the-collections-console), la lista **[!UICONTROL Mostrar todo]** proporciona opciones para ver solo comentarios y flujos de trabajo. Además, la línea de tiempo solo se muestra para las colecciones de nivel superior que aparecen en la consola. No se muestra si se desplaza dentro de ninguna de las colecciones.
+>En el [Consola Colecciones](/help/assets/manage-collections.md#navigate-the-collections-console), el **[!UICONTROL Mostrar todo]** proporciona opciones para ver solo comentarios y flujos de trabajo. Además, la línea de tiempo solo se muestra para las colecciones de nivel superior que aparecen en la consola. No se muestra si se desplaza dentro de ninguna de las colecciones.
 
 >[!NOTE]
 >
 >La línea de tiempo contiene varias [opciones específicas de los fragmentos de contenido](content-fragments/content-fragments.md).
 
-## Anotaciones {#annotating}
+## Anotar recursos {#annotating}
 
 Las anotaciones son comentarios o notas explicativas añadidas a imágenes o vídeos. Las anotaciones permiten a los especialistas en marketing colaborar y dejar comentarios sobre los recursos.
 
-Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con Assets dependen del explorador.
+Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con Assets dependen del explorador.
 
 >[!NOTE]
 >
->Para los fragmentos de contenido, [las anotaciones se crean en el editor de fragmentos](content-fragments/content-fragments.md).
+>Para fragmentos de contenido, [las anotaciones se crean en el editor de fragmentos](content-fragments/content-fragments.md).
 
 1. Navegue a la ubicación del recurso al que desee agregar anotaciones.
-1. Pulse o haga clic en el icono **[!UICONTROL Anotar]** de una de las siguientes opciones:
+1. Toque o haga clic en el botón **[!UICONTROL Anotar]** de una de las siguientes opciones:
 
    * [Acciones rápidas](#quick-actions)
    * En la barra de herramientas después de seleccionar el recurso o de desplazarse a la página de recursos
@@ -429,11 +430,11 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 >[!NOTE]
 >
->Para un usuario que no es administrador, las sugerencias aparecen solo si el usuario tiene permisos de lectura en `/home` en CRXDE.
+>Para los usuarios que no son administradores, las sugerencias aparecen solo si el usuario tiene permisos de lectura en `/home` en CRXDE.
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. Después de añadir la anotación, haga clic en **[!UICONTROL Add]** para guardarla. Se envía una notificación para la anotación a Aaron.
+1. Después de añadir la anotación, haga clic en **[!UICONTROL Agregar]** para guardarlo. Se envía una notificación para la anotación a Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -441,14 +442,14 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
    >
    >Puede agregar varias anotaciones antes de guardarlas.
 
-1. Toque o haga clic en **[!UICONTROL Cerrar]** para salir del modo de anotación.
-1. Para ver la notificación, inicie sesión en Assets with Aaron MacDonald&#39;s credentials y haga clic en el icono **[!UICONTROL Notifications]** para ver la notificación.
+1. Toque o haga clic **[!UICONTROL Cerrar]** para salir del modo de anotación.
+1. Para ver la notificación, inicie sesión en Assets con las credenciales de Aaron MacDonald&#39;s y haga clic en el botón **[!UICONTROL Notificaciones]** para ver la notificación.
 
    >[!NOTE]
    >
    >Las anotaciones también se pueden agregar a los recursos de vídeo. Al anotar vídeos, el reproductor se detiene para permitirle realizar anotaciones en un marco. Para obtener más información, consulte [administración de recursos de vídeo](manage-video-assets.md).
 
-1. Para elegir un color diferente y diferenciar entre usuarios, toque o haga clic en el icono Perfil y pulse o haga clic en **[!UICONTROL Mis preferencias]**.
+1. Para elegir un color diferente y poder diferenciar entre usuarios, toque o haga clic en el icono Perfil y pulse o haga clic en **[!UICONTROL Mis preferencias]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
@@ -468,11 +469,11 @@ Solo puede ver una anotación a la vez.
 >
 >Si selecciona varias anotaciones, la anotación más reciente estará visible en la interfaz de usuario.
 >
->La selección múltiple solo es compatible para imprimir el recurso anotado como PDF.
+>La selección múltiple solo se admite para imprimir el recurso anotado como PDF.
 
 1. Para ver las anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
 
-1. Pulse o haga clic en el icono de navegación global y elija **[!UICONTROL Línea de tiempo]** en la lista.
+1. Pulse o haga clic en el icono de navegación global y elija **[!UICONTROL Cronología]** de la lista.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -480,15 +481,15 @@ Solo puede ver una anotación a la vez.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   Toque o haga clic en un comentario en el panel **[!UICONTROL Línea de tiempo]** para ver la anotación correspondiente en la imagen.
+   Toque o haga clic en un comentario de la sección **[!UICONTROL Cronología]** para ver la anotación correspondiente en la imagen.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   Toque o haga clic en **[!UICONTROL Eliminar]** para eliminar un comentario en particular.
+   Toque o haga clic **[!UICONTROL Eliminar]**, para eliminar un comentario en particular.
 
 ### Imprimir anotaciones {#printing-annotations}
 
-Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar el estado como archivo PDF para su revisión sin conexión.
+Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar su estado como archivo PDF para revisiones sin conexión.
 
 También puede elegir imprimir solo las anotaciones o el estado de revisión.
 
@@ -496,13 +497,13 @@ También puede elegir imprimir solo las anotaciones o el estado de revisión.
 >
 >Puede seleccionar varias anotaciones al imprimir el recurso anotado como PDF.
 
-Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. El icono **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene asignado al menos una anotación o un estado de revisión.
+Para imprimir las anotaciones y revisar el estado, toque o haga clic en el botón **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. La variable **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene asignado al menos una anotación o un estado de revisión.
 
 1. En la interfaz de usuario de Assets, abra la página de vista previa de un recurso.
 1. Realice una de las acciones siguientes:
 
    * Para imprimir todas las anotaciones y el estado de la revisión, omita el paso 3 y vaya directamente al paso 4.
-   * Para imprimir anotaciones específicas y revisar el estado, abra la [línea de tiempo](/help/assets/manage-digital-assets.md#timeline) y vaya al paso 3.
+   * Para imprimir anotaciones específicas y revisar el estado, abra el [cronología](/help/assets/manage-digital-assets.md#timeline) y luego vaya al paso 3.
 
 1. Para imprimir anotaciones específicas, seleccione las anotaciones en la cronología.
 
@@ -512,11 +513,11 @@ Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono
 
    ![imagen_1-243](assets/chlimage_1-243.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Imprimir]** de la barra de herramientas.
+1. Toque o haga clic en el botón **[!UICONTROL Imprimir]** de la barra de herramientas.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de las anotaciones/revisiones en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda**. Se selecciona de forma predeterminada.
+1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de las anotaciones/revisiones en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, use la variable **Superior izquierda** configuración. Se selecciona de forma predeterminada.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -530,9 +531,9 @@ Para imprimir las anotaciones y revisar el estado, pulse o haga clic en el icono
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Para modificar el aspecto del archivo PDF procesado, por ejemplo el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL configuración de PDF de anotación]** en el Administrador de configuración y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
+   Para modificar el aspecto del archivo del PDF representado, por ejemplo, el color de fuente, el tamaño y el estilo, el color de fondo de los comentarios y estados, abra la **[!UICONTROL Configuración del PDF de anotaciones]** de Configuration Manager y modifique las opciones deseadas. Por ejemplo, para cambiar el color de visualización del estado aprobado, modifique el código de color en el campo correspondiente. Para obtener información sobre cómo cambiar el color de fuente de las anotaciones, consulte [Anotación](/help/assets/manage-digital-assets.md#annotating).
 
-   Vuelva al archivo PDF procesado y actualícelo. El PDF actualizado refleja los cambios realizados.
+   Vuelva al archivo de PDF representado y actualícelo. El PDF actualizado refleja los cambios realizados.
 
 ## Creación de versiones de recursos {#asset-versioning}
 
@@ -542,7 +543,7 @@ A continuación se indican las situaciones en las que se crean versiones:
 
 * Puede modificar una imagen en otra aplicación y cargarla en Assets. Se crea una versión de la imagen para que la imagen original no se sobrescriba.
 * Los metadatos de un recurso se editan.
-* La aplicación de escritorio [!DNL Experience Manager] se utiliza para extraer un recurso existente y guardar los cambios. Se crea una nueva versión cada vez que se guarda el recurso.
+* Utilice [!DNL Experience Manager] aplicación de escritorio para extraer un recurso existente y guardar los cambios. Se crea una nueva versión cada vez que se guarda el recurso.
 
 También puede habilitar el control automático de versiones mediante un flujo de trabajo. Al crear una versión para un recurso, los metadatos y las representaciones se guardan junto con la versión. Las representaciones son alternativas representativas de las mismas imágenes, por ejemplo, una representación PNG de un archivo JPEG cargado.
 
@@ -554,19 +555,19 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
 1. Vaya a la ubicación del recurso para el que desea crear una versión y toque o haga clic en él para abrir su página de recursos.
 
-1. Pulse o haga clic en el icono de navegación global y elija **[!UICONTROL Línea de tiempo]** en el menú.
+1. Toque o haga clic en el icono de navegación global y elija **[!UICONTROL Cronología]** del menú .
 
    ![cronología](assets/timeline.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Actions]** (flecha) de la parte inferior para ver las acciones disponibles que puede realizar en el recurso.
+1. Toque o haga clic en el botón **[!UICONTROL Acciones]** (flecha) en la parte inferior para ver las acciones disponibles que puede realizar en el recurso.
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. Toque o haga clic en **[!UICONTROL Guardar como versión]** para crear una versión para el recurso.
+1. Toque o haga clic **[!UICONTROL Guardar como versión]** para crear una versión para el recurso.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Agregue una etiqueta y un comentario y, a continuación, haga clic en **[!UICONTROL Crear]** para crear una versión. Como alternativa, toque o haga clic en **Cancelar** para salir de la operación.
+1. Agregue una etiqueta y un comentario y, a continuación, haga clic en **[!UICONTROL Crear]** para crear una versión. Alternativamente, toque o haga clic **Cancelar** para salir de la operación.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -595,19 +596,19 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 ### Iniciar un flujo de trabajo en un recurso {#starting-a-workflow-on-an-asset}
 
 1. Vaya a la ubicación del recurso para el que desea iniciar un flujo de trabajo y pulse o haga clic en el recurso para abrir la página del recurso.
-1. Pulse o haga clic en el icono de navegación global y elija **[!UICONTROL Línea de tiempo]** en el menú para mostrar la cronología.
+1. Toque o haga clic en el icono de navegación global y elija **[!UICONTROL Cronología]** en el menú para mostrar la línea de tiempo.
 
    ![línea de tiempo-1](assets/timeline-1.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Actions]** (flecha) de la parte inferior para abrir la lista de acciones disponibles para el recurso.
+1. Toque o haga clic en el botón **[!UICONTROL Acciones]** (flecha) en la parte inferior para abrir la lista de acciones disponibles para el recurso.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Toque o haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la lista.
+1. Toque o haga clic **[!UICONTROL Iniciar flujo de trabajo]** de la lista.
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Iniciar flujo de trabajo]**, seleccione un modelo de flujo de trabajo de la lista.
+1. En el **[!UICONTROL Iniciar flujo de trabajo]** seleccione un modelo de flujo de trabajo en la lista.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -630,11 +631,11 @@ Para obtener más información sobre la administración de colecciones, consulte
 
 ## Ocultar recursos caducados al ver recursos en la aplicación de escritorio o en el vínculo de recursos de Adobe {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] la aplicación de escritorio permite acceder al repositorio DAM desde Windows o Mac Desktop. Adobe Asset Link permite acceder a los recursos desde las aplicaciones de escritorio [!DNL Creative Cloud] compatibles.
+[!DNL Experience Manager] la aplicación de escritorio permite acceder al repositorio DAM desde Windows o Mac local. El vínculo de recursos de Adobe permite acceder a los recursos desde el interior de los recursos admitidos [!DNL Creative Cloud] aplicaciones de escritorio.
 
-Al examinar recursos desde la interfaz de usuario [!DNL Experience Manager], no se muestran los recursos caducados. Para evitar la visualización, búsqueda y captura de recursos caducados al examinar recursos desde la aplicación de escritorio y Asset Link, los administradores pueden realizar la siguiente configuración. La configuración funciona para todos los usuarios, independientemente del privilegio de administrador.
+Al examinar recursos desde [!DNL Experience Manager] interfaz de usuario de , no se muestran los recursos caducados. Para evitar la visualización, búsqueda y captura de recursos caducados al examinar recursos desde la aplicación de escritorio y Asset Link, los administradores pueden realizar la siguiente configuración. La configuración funciona para todos los usuarios, independientemente del privilegio de administrador.
 
-Ejecute el siguiente comando CURL. Asegúrese de tener acceso de lectura en `/conf/global/settings/dam/acpapi/` para los usuarios que acceden a los recursos. Los usuarios que forman parte del grupo `dam-user` tienen el permiso de forma predeterminada.
+Ejecute el siguiente comando CURL. Asegúrese de tener acceso de lectura activado `/conf/global/settings/dam/acpapi/` para los usuarios que acceden a los recursos. Usuarios que forman parte de `dam-user` tienen el permiso de forma predeterminada.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -646,4 +647,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para obtener más información, consulte cómo [examinar los recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo usar Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para obtener más información, consulte cómo [examinar recursos DAM mediante la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) y [cómo utilizar Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
