@@ -1,23 +1,22 @@
 ---
-title: Copia de seguridad y restauración en AEM como Cloud Service
-description: Copia de seguridad y restauración en AEM como Cloud Service
+title: Copia de seguridad y restauración en AEM as a Cloud Service
+description: Copia de seguridad y restauración en AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
-# Copia de seguridad y restauración en AEM como Cloud Service
-
+# Copia de seguridad y restauración en AEM as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
 >title="Copia de seguridad y restauración"
->abstract="AEM como Cloud Service puede restaurar la aplicación completa de un cliente (código y contenido) a tiempos específicos predeterminados en los últimos siete días, sustituyendo lo que estaba en producción. Esta función solo debe usarse cuando haya problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua."
+>abstract="AEM as a Cloud Service puede restaurar la aplicación completa (código y contenido) de un cliente a tiempos específicos y predeterminados en los últimos siete días, sustituyendo lo que estaba en producción. Esta función solo debe usarse cuando haya problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua."
 
-En caso de que se dañen los datos o el contenido, AEM como Cloud Service puede restaurar la aplicación completa (código y contenido) de un cliente a horas específicas predeterminadas en los últimos siete días, sustituyendo lo que estaba en producción.
+En caso de que se dañen los datos o el contenido, AEM as a Cloud Service puede restaurar la aplicación completa (código y contenido) de un cliente a tiempos específicos y predeterminados en los últimos siete días, sustituyendo lo que estaba en producción.
 Si la implementación de un cliente, es decir, el código de aplicación implementado está dañado o está dañado, es preferible corregirlo y avanzar a una nueva versión en lugar de restaurarlo desde la copia de seguridad. La copia de seguridad se realiza de una manera que no afecta al rendimiento en tiempo de ejecución de una aplicación.
 
 >[!CAUTION]
@@ -28,10 +27,10 @@ Si la implementación de un cliente, es decir, el código de aplicación impleme
 
 Los clientes deben presentar un ticket de asistencia que describa el problema que se está experimentando. Esto llevará a una investigación por parte del soporte de Adobe que determinará si es necesario un restore.
 
-AEM as a Cloud Service admite:
+AEM admite as a Cloud Service:
 
 * 24 horas de recuperación, lo que significa que el sistema puede ser restaurado a cualquier punto en las últimas 24 horas.
-* Restaure desde una marca de tiempo específica definida por Adobe que se tome una vez al día durante los últimos 7 días.  Se conservará cualquier mensaje de replicación (elimina, actualiza, crea).
+* Restaure desde una marca de tiempo específica definida por Adobe que se tome dos veces al día durante los últimos 7 días.  Se conservará cualquier mensaje de replicación (elimina, actualiza, crea).
 
 En todos los casos, la versión del código personalizado se tomará de la última implementación correcta antes del punto de restauración.
 
@@ -39,4 +38,6 @@ El objetivo de tiempo de recuperación (RTO) variará según el tamaño del repo
 
 Después de una restauración, la versión AEM se actualizará a la más reciente.
 
-**Los datos de los entornos eliminados se pierden de forma permanente y no se pueden recuperar.**
+>[!CAUTION]
+>
+>Los datos de los entornos eliminados se pierden de forma permanente y no se pueden recuperar.
