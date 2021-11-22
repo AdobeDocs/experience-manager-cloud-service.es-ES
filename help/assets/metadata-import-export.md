@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 12%
+source-wordcount: '661'
+ht-degree: 11%
 
 ---
 
@@ -24,10 +24,9 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
 >
 >Para importar metadatos en áreas de nombres personalizadas, registre primero las áreas de nombres.
 
-1. Vaya a la interfaz de usuario de Assets y toque o haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
-1. En el menú , seleccione **[!UICONTROL Metadatos]**.
-1. En la página **[!UICONTROL Importación de metadatos]**, pulse o haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
-1. Especifique los siguientes parámetros:
+1. Vaya a [!DNL Assets] interfaz de usuario, seleccione **[!UICONTROL Crear]** en la barra de herramientas y seleccione **[!UICONTROL Metadatos]** del menú .
+1. En el **[!UICONTROL Importación de metadatos]** página, haga clic en **[!UICONTROL Seleccionar archivo]**. Seleccione el archivo CSV con los metadatos.
+1. Proporcione los siguientes parámetros:
 
    | Parámetro | Descripción |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    | Lanzar flujos de trabajo | False de forma predeterminada. Cuando se configura como `true` y la configuración predeterminada está en vigor para el flujo de trabajo de escritura de metadatos DAM (que escribe metadatos en los datos de XMP binarios). Al habilitar los flujos de trabajo, el sistema se ralentiza. |
    | Nombre de columna de ruta de activos | Define el nombre de columna del archivo CSV con recursos. |
 
-1. Haga clic en **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
+1. Select **[!UICONTROL Importar]** en la barra de herramientas. Una vez importados los metadatos, se envía una notificación a la bandeja de entrada de notificaciones. Vaya a la página de propiedades del recurso y compruebe si los valores de metadatos se importan correctamente para los recursos.
 
-Para agregar fecha y marca de hora al importar metadatos, utilice `YYYY-MM-DDThh:mm:ss.fff-00:00` para la fecha y la hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos, y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es 26 de marzo de 2020 a las 11:26:00.000 AM hora PST.
+1. Para agregar fecha y marca de hora para importar los metadatos, utilice `YYYY-MM-DDThh:mm:ss.fff-00:00` para la fecha y la hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos, y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es 26 de marzo de 2020 a las 11:26:00.000 AM PST.
+
+   * El formato de fecha depende del encabezado de la columna y del formato que contenga. Por ejemplo, si la fecha es compatible con el formato `yyyy-MM-dd'T'HH:mm:ssXXX` a continuación, el encabezado de columna correspondiente debe ser `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * El formato de fecha predeterminado es `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->Si el formato de fecha no coincide `YYYY-MM-DDThh:mm:ss.fff-00:00`, no se establecen los valores de fecha. Los formatos de fecha del archivo CSV de metadatos exportado tienen el formato `YYYY-MM-DDThh:mm:ss-00:00`. Si desea importarla, conviértala al formato aceptable añadiendo el valor de nanosegundos indicado por `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## Exportar metadatos {#export-metadata}
 
