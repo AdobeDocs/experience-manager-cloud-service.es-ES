@@ -2,7 +2,7 @@
 title: Adición de un registro TXT
 description: Adición de un nombre de dominio personalizado
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 26ac0c63e4fba167206f43f64f046452c922c10e
+source-git-commit: 1427873fcc825a7321c96cbcb41f7839b6e78056
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Consulte los ejemplos de la tabla siguiente.
 | Dominio | Nombre | Valor TXT |
 |--- |--- |---|
 | `example.com` | `_aemverification.example.com` | Copie todo el valor mostrado en la interfaz de usuario de Cloud Manager. Esto es específico para el dominio y el entorno. `Ex:adobe-aem-verification=example.com/[program]/[env]/..` |
-| `test.example.com`<br>`www.example.com` | `_aemverification.www.example.com` | Copie todo el valor mostrado en la interfaz de usuario de Cloud Manager. Esto es específico para el dominio y el entorno. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
+| `www.example.com` | `_aemverification.www.example.com` | Copie todo el valor mostrado en la interfaz de usuario de Cloud Manager. Esto es específico para el dominio y el entorno. `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
 
 Cuando haya terminado, puede verificar el resultado ejecutando: `dig _aemverification.[yourdomainname] -t txt`.
 El resultado esperado debería mostrar el valor TXT proporcionado en la interfaz de usuario de Cloud Manager.
