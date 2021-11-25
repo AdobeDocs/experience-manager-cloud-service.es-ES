@@ -2,10 +2,10 @@
 title: Uso del Analizador de prácticas recomendadas
 description: Uso del Analizador de prácticas recomendadas
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 42%
+source-wordcount: '2470'
+ht-degree: 41%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -113,14 +113,16 @@ El icono del carril izquierdo aparecerá únicamente si el BPA detecta el uso de
 Los hallazgos de ACS Commons no deben ser ignorados. Consulte [documentación](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar la compatibilidad con AEM as a Cloud Service.
 
 
-### Adobe Experience Manager 6.2 y 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-La herramienta Analizador de prácticas recomendadas está limitada en Adobe Experience Manager 6.2 a un vínculo que genera y descarga el informe CSV.
-
-Para Adobe Experience Manager 6.1, la herramienta no funciona y solo se puede utilizar la interfaz HTTP.
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
 >[!NOTE]
-En todas las versiones, Pattern Detector puede ejecutarse de forma independiente.
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## Interpretación del informe de Best Practices Analyzer {#cra-report}
 
