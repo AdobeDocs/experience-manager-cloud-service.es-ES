@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
+source-git-commit: 6c17b048631a7f61305ec4f0a4f84c4b0577aec0
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '840'
 ht-degree: 9%
 
 ---
@@ -203,17 +203,18 @@ Los formatos de documento admitidos para las funciones de administración de rec
 ## Formatos de vídeo en [!DNL Dynamic Media] para la transcodificación {#video-dynamic-media-transcoding}
 
 | Extensión de archivo de vídeo | Contenedor | Códecs de vídeo recomendados | Códecs de vídeo no compatibles |
-|------------------------|--------------------|--------|-------|
-| MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
-| MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
-| FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla de Microsoft (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| M4V | Apple iTunes | H264/AVC | - |
+| --- | --- | --- | --- |
 | AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
+| M4V | Apple iTunes | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
+| MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
+| MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF |  | Formato Media eXchange.<br>Apple ProRes422 | - |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla de Microsoft (MSS2), Microsoft Photo Story (WVP2) |
 
 ## Formatos de audio {#audio-formats}
 
