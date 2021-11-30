@@ -2,9 +2,9 @@
 title: Preguntas frecuentes as a Cloud Service de Screens
 description: Esta página describe las preguntas más frecuentes as a Cloud Service de Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ Se recomienda aprovechar las capacidades de almacenamiento en caché de AEM Scre
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## ¿Cuál es el uso del Límite de Código de Registro?
+
+Como práctica recomendada, puede limitar el uso del código de registro. Si un código de registro está comprometido, pero tiene un límite de 100 registros, el atacante puede registrar solamente hasta ese número, pero no más. Siempre puede actualizar el límite de uso después de crear el código de registro y de registrar algunos de los reproductores del cliente. Si el cliente observa una actividad de registro inusual para un código de registro específico, puede reducir el límite en tiempo real mientras investiga y puede aumentar el número de vuelta si se trata de una falsa alarma, sin afectar a los reproductores ya registrados.
