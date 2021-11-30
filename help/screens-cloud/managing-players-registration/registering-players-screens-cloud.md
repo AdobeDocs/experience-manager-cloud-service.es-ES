@@ -2,7 +2,7 @@
 title: Registro de reproductores en Screens as a Cloud Service
 description: Esta página describe cómo registrar reproductores en Screens as a Cloud Service.
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
@@ -63,9 +63,9 @@ Siga los pasos a continuación para registrar el reproductor:
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
 
->[!IMPORTANT]
->**Recomendaciones de prácticas recomendadas de seguridad al usar código de registro
->Como práctica recomendada, puede limitar el uso del código de registro. Si un código de registro está comprometido, pero tiene un límite de 100 registros, el atacante puede registrar solamente hasta ese número, pero no más. Siempre puede actualizar el límite de uso después de crear el código de registro y de registrar algunos de los reproductores del cliente. Si el cliente observa una actividad de registro inusual para un código de registro específico, puede reducir el límite en tiempo real mientras investiga y puede aumentar el número de vuelta si se trata de una falsa alarma, sin afectar a los reproductores ya registrados.
+   >[!IMPORTANT]
+   >**Recomendaciones de prácticas recomendadas de seguridad al usar código de registro**
+   >Como práctica recomendada, puede limitar el uso del código de registro. Si un código de registro está comprometido, pero tiene un límite de 100 registros, el atacante puede registrar solamente hasta ese número, pero no más. Siempre puede actualizar el límite de uso después de crear el código de registro y de registrar algunos de los reproductores del cliente. Si el cliente observa una actividad de registro inusual para un código de registro específico, puede reducir el límite en tiempo real mientras investiga y puede aumentar el número de vuelta si se trata de una falsa alarma, sin afectar a los reproductores ya registrados.
 
 
 ## Siguientes pasos {#whats-next}
