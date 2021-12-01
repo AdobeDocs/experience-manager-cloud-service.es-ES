@@ -2,10 +2,10 @@
 title: 'Pruebas de IU: Cloud Services'
 description: 'Pruebas de IU: Cloud Services'
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 0%
+source-wordcount: '1582'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,47 @@ Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas 
 >[!NOTE]
 > Las canalizaciones de fase y producción creadas antes del 10 de febrero de 2021 deben actualizarse para utilizar las pruebas de IU tal como se describe en esta página.
 > Consulte [Canalizaciones CI-CD en Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener información sobre la configuración de la canalización.
+
+## Pruebas de IU personalizadas {#custom-ui-testing}
+
+AEM proporciona a sus clientes un conjunto integrado de puertas de calidad de Cloud Manager para garantizar actualizaciones sin problemas de sus aplicaciones. En particular, las puertas de prueba de TI ya permiten a los clientes crear y automatizar sus propias pruebas que usan API de AEM.
+
+La función de prueba de IU personalizada es una [característica opcional](#customer-opt-in) que permite a nuestros clientes crear y ejecutar automáticamente pruebas de interfaz de usuario para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium). Puede obtener más información sobre cómo crear IU y escribir pruebas de IU desde aquí. Además, un proyecto de pruebas de interfaz de usuario se puede generar fácilmente mediante el tipo de archivo del proyecto AEM.
+
+Los clientes pueden crear (a través de GIT) pruebas personalizadas y conjuntos de pruebas para la interfaz de usuario. La prueba de la interfaz de usuario se ejecutará como parte de una puerta de calidad específica para cada canalización de Cloud Manager con su información específica de comentarios y pasos. Cualquier prueba de la interfaz de usuario, incluidas la regresión y las nuevas funcionalidades, permitirá detectar errores y crear informes de ellos en el contexto del cliente.
+
+Las pruebas de la interfaz de usuario del cliente se ejecutan automáticamente en la canalización de producción, en el paso &quot;Pruebas de la interfaz de usuario personalizada&quot;.
+
+A diferencia de las pruebas funcionales personalizadas que son pruebas HTTP escritas en java, las pruebas de interfaz de usuario pueden ser una imagen de docker con pruebas escritas en cualquier idioma, siempre y cuando sigan las convenciones definidas en [Creación de pruebas de interfaz de usuario](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests).
+
+>[!NOTE]
+>Se recomienda seguir la estructura y el idioma *(js y wdio)* convenientemente provisto en el [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests) como punto de partida.
+
+### Inclusión del cliente {#customer-opt-in}
+
+Para crear y ejecutar sus pruebas de interfaz de usuario, los clientes deben &quot;incluirse&quot; añadiendo un archivo a su repositorio de código, en el submódulo maven para pruebas de interfaz de usuario (junto al archivo pom.xml del submódulo de pruebas de interfaz de usuario) y asegurarse de que este archivo esté en la raíz del `tar.gz` archivo.
+
+*Nombre de archivo*: `testing.properties`
+
+*Contenido*: `ui-tests.version=1`
+
+Si no está en la compilación `tar.gz` , la compilación de las pruebas de interfaz de usuario y las ejecuciones se omitirán.
+
+Para agregar `testing.properties` en el artefacto creado, añada un `include` declaración en `assembly-ui-test-docker-context.xml` (en el submódulo Pruebas de interfaz de usuario ):
+
+    &quot;
+    [...]
+    &lt;includes>
+    &lt;include>Archivo de documento&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!>- módulo de prueba de inclusión en Cloud Manager —>
+    &lt;/includes>
+    [...]
+    &quot;
+
+>[!NOTE]
+>Las canalizaciones de producción creadas antes del 10 de febrero de 2021 deberán actualizarse para utilizar las pruebas de IU tal como se describe en esta sección. Esto significa que el usuario debe editar la canalización de producción y hacer clic en **Guardar** desde la interfaz de usuario aunque no se hayan realizado cambios.
+>Consulte [Configuración de la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para obtener más información sobre la configuración de la canalización.
 
 ## Creación de pruebas de interfaz de usuario {#building-ui-tests}
 
@@ -149,7 +190,7 @@ Una vez que el punto final de estado de Selenium responde con una respuesta posi
 
 La imagen Docker debe generar informes de prueba en formato XML JUnit y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. El formato XML de JUnit es un formato generalizado para informar de los resultados de las pruebas. Si la imagen Docker utiliza Java y Maven, tanto la variable [Complemento Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) y [Complemento Maven FailedSafe](https://maven.apache.org/surefire/maven-failsafe-plugin/). Si la imagen Docker se implementa con otros lenguajes de programación o ejecutores de prueba, compruebe la documentación de las herramientas seleccionadas para saber cómo generar informes XML de JUnit.
 
-### Cargar archivos (#upload-files)
+### Cargar archivos {#upload-files}
 
 Las pruebas a veces deben cargar archivos a la aplicación que se está probando. Para mantener flexible la implementación de Selenium en relación con sus pruebas, no es posible cargar directamente un recurso a Selenium. En su lugar, la carga de un archivo pasa por algunos pasos intermedios:
 
