@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
+source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
 workflow-type: tm+mt
-source-wordcount: '4268'
+source-wordcount: '4287'
 ht-degree: 11%
 
 ---
@@ -58,6 +58,10 @@ Puede añadir el archivo de configuración `/apps/example/config.author/com.adob
 Una vez activado, el Experience Manager envía notificaciones de recursos duplicados a la bandeja de entrada del Experience Manager. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
 
 ![Notificación de bandeja de entrada para recursos duplicados](assets/duplicate-detect-inbox-notification.png)
+
+>[!NOTE]
+>
+>Al cargar recursos en el repositorio, el Experience Manager detecta la duplicación y le notifica sobre los primeros 100 recursos duplicados.
 
 ## Vista previa de recursos {#previewing-assets}
 
