@@ -2,9 +2,9 @@
 title: 'Pruebas de IU: Cloud Services'
 description: 'Pruebas de IU: Cloud Services'
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 710f156e606902ab5548169661d4a82c8cf4f819
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,10 @@ Para crear y ejecutar sus pruebas de interfaz de usuario, los clientes deben &qu
 
 Si no está en la compilación `tar.gz` , la compilación de las pruebas de interfaz de usuario y las ejecuciones se omitirán.
 
-Para agregar `testing.properties` en el artefacto creado, añada un `include` declaración en `assembly-ui-test-docker-context.xml` (en el submódulo Pruebas de la interfaz de usuario ). Si el proyecto no incluye la línea, deberá editar este archivo para activar la prueba de IU. Si el archivo puede tener una línea que aconseja no editarlo, por favor, no tenga en cuenta ese consejo.
+Para agregar `testing.properties` en el artefacto creado, añada un `include` declaración en `assembly-ui-test-docker-context.xml` (en el submódulo Pruebas de la interfaz de usuario ).
+
+>[!NOTE]
+>Si el proyecto no incluye la línea, deberá editar este archivo para activar la prueba de IU. Si el archivo tiene una línea que aconseja no editarlo, desestime ese consejo.
 
     &quot;
     [...]
