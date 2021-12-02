@@ -2,14 +2,14 @@
 title: Copia de seguridad y restauración en AEM as a Cloud Service
 description: Copia de seguridad y restauración en AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
-# Copia de seguridad y restauración en AEM as a Cloud Service
+# Copia de seguridad y restauración en AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ Si la implementación de un cliente, es decir, el código de aplicación impleme
 >
 >Esta función solo debe usarse cuando haya problemas graves con el código o el contenido. Se perderán los datos recientes entre el momento de la copia de seguridad restaurada y el presente. El ensayo también se restaurará a la versión antigua.
 
-## Usos
+## Usos {#how-to-use}
 
 Los clientes deben presentar un ticket de asistencia que describa el problema que se está experimentando. Esto llevará a una investigación por parte del soporte de Adobe que determinará si es necesario un restore.
 
@@ -41,3 +41,9 @@ Después de una restauración, la versión AEM se actualizará a la más recient
 >[!CAUTION]
 >
 >Los datos de los entornos eliminados se pierden de forma permanente y no se pueden recuperar.
+
+## Copia de seguridad fuera del sitio {#offsite-backup}
+
+Mientras que las copias de seguridad regulares cubren el riesgo de eliminaciones accidentales o fallos técnicos en AEM Cloud Services, también se deben cubrir los riesgos que pueden surgir de la falla de una región. Además de la disponibilidad, el riesgo bueno de que se produzcan interrupciones en esas regiones de datos es principalmente una pérdida de datos.
+AEM as a Cloud Service cubre este riesgo como estándar para todos los entornos de producción AEM copiando continuamente todo el contenido AEM en una región remota y poniéndolo a disposición para su recuperación durante un período de 3 meses. Llamamos a esta capacidad Copia de seguridad fuera del sitio.
+La restauración de AEM Cloud Services para entornos de fase y producción corre a cargo de AEM Service Fiabilidad Engineering en caso de interrupciones en la región de datos.
