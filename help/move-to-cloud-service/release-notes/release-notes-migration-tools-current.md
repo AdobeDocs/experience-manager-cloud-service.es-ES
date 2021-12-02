@@ -1,31 +1,36 @@
 ---
-title: Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.11.0
-description: Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.11.0
+title: Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.12.0
+description: Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.12.0
 feature: Release Information
 exl-id: null
-source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
+source-git-commit: 3bd73869fb04c82fb908a5530728040c7e573eb0
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 8%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
 
-# Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.11.0 {#release-notes}
+# Notas de la versión de las herramientas de migración en AEM versión as a Cloud Service 2021.12.0 {#release-notes}
 
-Esta página describe las notas de la versión de las herramientas de migración en AEM as a Cloud Service 2021.11.0.
+Esta página describe las notas de la versión de las herramientas de migración en AEM as a Cloud Service 2021.12.0.
 
 >[!NOTE]
 >Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
-## Herramienta de transferencia de contenido {#ctt-release}
+## Analizador de prácticas recomendadas {#bpa-release}
 
-### Fecha de la versión {#release-date-ctt}
+### Fecha de la versión {#release-date-bpa}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.7.2 es el 1 de noviembre de 2021.
+La fecha de versión de Best Practices Analyzer v2.1.22 es el 1 de diciembre de 2021.
 
-### Novedades {#what-is-new-ctt}
+### Novedades {#what-is-new-bpa}
 
-* Compatibilidad con [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) paso añadido para utilizar con la herramienta de transferencia de contenido cuando la instancia de origen AEM está configurada para utilizar el almacén de datos de archivos para acelerar significativamente la fase de extracción.
+* Capacidad para detectar e informar sobre la versión de ACS commons utilizado.
+* Capacidad para detectar y crear informes sobre la cantidad de usuarios y subgrupos de un grupo.
+* Capacidad para detectar e informar sobre valores de propiedad de nodos en MongoDB que superen los 16 MB.
 
-* Se han añadido mensajes descriptivos adicionales a la fase de ingesta en la interfaz de usuario de la herramienta de transferencia de contenido para indicar cuándo se están llevando a cabo los pasos de indexación y recuperación de mongo.
+### Corrección de errores {#bug-fixes-bpa}
+
+* La detección de componentes de base se refinó para reducir los falsos negativos.
+* Para los clientes de AEM Forms, mensajería BPA con respecto a `EMAIL_PDF_SUBMIT_ACTION` no está disponible en AEM as a Cloud Service se ha corregido.
