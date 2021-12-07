@@ -1,13 +1,12 @@
 ---
 title: Vista previa de recursos 3D
 description: Obtenga información sobre cómo previsualizar recursos 3D en Dynamic Media.
-feature: Recursos 3D
+feature: 3D Assets
 role: User
-exl-id: null
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +26,7 @@ La vista previa 3D interactiva en Experience Manager admite los siguientes forma
 | Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria de GL | model/gltf-binary |  |
-| GLTF | Formato de Transmisión GL | modelo/gltf+json | Consulte la **Nota** a continuación. |
+| GLTF | Formato de Transmisión GL | modelo/gltf+json | Consulte la **Nota** más abajo. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | Compatibilidad únicamente con la ingesta; vista previa no disponible. |
@@ -35,14 +34,14 @@ La vista previa 3D interactiva en Experience Manager admite los siguientes forma
 
 >[!NOTE]
 >
->Si los materiales no se renderizan en la vista previa de un modelo gLTF, asegúrese de que tengan el nombre adecuado y que estén en una carpeta `textures` de la misma carpeta raíz que el modelo, similar a la siguiente:
+>Si los materiales no se renderizan en la previsualización de un modelo gLTF, asegúrese de que tengan el nombre adecuado y en un `textures` en la misma carpeta raíz que el modelo, similar a lo siguiente:
 
     Recurso (carpeta)
-    modelo.
-    gltfmodel.
-    bintextures (carpeta)
-    material_0_baseColor.
-    jpegmaterial_0_normal.jpeg
+    model.gltf
+    model.bin
+    texturas (carpeta)
+    material_0_baseColor.jpeg
+    material_0_normal.jpeg
 
 ## Consideraciones de rendimiento al previsualizar recursos 3D en Experience Manager{#performance-3d-previewing-assets}
 
@@ -53,12 +52,12 @@ Además, las capacidades del equipo cliente, como una estación de trabajo, un o
 **Para previsualizar recursos 3D en el Experience Manager:**
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
-Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-assets) y [Carga de recursos](/help/assets/manage-digital-assets.md#uploading-assets).
-1. Desde el Experience Manager, en la página **[!UICONTROL Navegación]**, vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
+Consulte [Formatos compatibles con la vista previa 3D](#supported-3d-previewing-assets) y [Cargar recursos](/help/assets/manage-digital-assets.md#uploading-assets).
+1. Desde el Experience Manager, en el **[!UICONTROL Navegación]** página, vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**.
 
    ![Página de navegación](/help/assets/dynamic-media/assets/navigation-assets.png)
 
-1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, seleccione **[!UICONTROL Vista de tarjeta]** y, a continuación, desplácese hasta un recurso 3D que quiera previsualizar.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, seleccione **[!UICONTROL Vista de tarjeta]** y, a continuación, navegue hasta un recurso 3D cuya vista previa desee ver.
 
    ![Selección de la tarjeta 3D](/help/assets/dynamic-media/assets/3d-card-select.png)
    _En Vista de tarjeta, seleccione la tarjeta del recurso 3D que desea previsualizar._
