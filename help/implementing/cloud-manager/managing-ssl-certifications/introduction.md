@@ -2,9 +2,9 @@
 title: 'Introducción: Administración de certificados SSL'
 description: 'Introducción: Administración de certificados SSL'
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -19,17 +19,17 @@ ht-degree: 0%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html" text="Comprobar el estado de un certificado SSL"
 
 
-Cloud Manager proporciona a los clientes la capacidad de autoservicio para instalar certificados SSL a través de la interfaz de usuario de Cloud Manager. Cloud Manager utiliza un servicio de Platform TLS para administrar los certificados SSL y las claves privadas que son propiedad de los clientes y que normalmente se obtienen de las autoridades de certificación de terceros, por ejemplo, *Vamos a cifrar*.
+Cloud Manager proporciona a los clientes la capacidad de autoservicio para instalar certificados SSL a través de la interfaz de usuario de Cloud Manager. Cloud Manager utiliza un servicio de Platform TLS para administrar certificados SSL y claves privadas que son propiedad de clientes y que normalmente se obtienen de autoridades de certificación de terceros, por ejemplo, *Codificemos*.
 
 ## Consideraciones importantes {#important-considerations}
 
 * Cloud Manager no proporciona certificados SSL ni claves privadas. Estos deben obtenerse de entidades certificadoras de terceros. Consulte [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) para obtener más información.
 
-* AEM como Cloud Service solo admite `https` sitios seguros. Los clientes con varios dominios personalizados no querrán cargar un certificado cada vez que añadan un dominio. Por lo tanto, estos clientes se beneficiarán de obtener un certificado con varios dominios.
+* AEM as a Cloud Service solo admite seguro `https` sitios web. Los clientes con varios dominios personalizados no querrán cargar un certificado cada vez que añadan un dominio. Por lo tanto, estos clientes se beneficiarán de obtener un certificado con varios dominios.
 
-* AEM como Cloud Service solo aceptará certificados OV(Organization Validation) o EV(Extended Validation). No se aceptarán los certificados DV(Domain Validation). Además, cualquier certificado debe ser un certificado X.509 TLS de una entidad de certificación (CA) de confianza con una clave privada RSA de 2048 bits que coincida.
+* AEM as a Cloud Service solo aceptará certificados que se ajusten a la directiva OV (validación de organización) o EV (validación extendida). No se aceptará la directiva DV (validación de dominio). Además, cualquier certificado debe ser un certificado X.509 TLS de una entidad de certificación (CA) de confianza con una clave privada RSA de 2048 bits que coincida.
 
-* AEM como Cloud Service aceptará certificados SSL comodín para un dominio.
+* AEM as a Cloud Service aceptará certificados SSL comodín para un dominio.
 
 * En cualquier momento dado, Cloud Manager permitirá un máximo de 20 certificados SSL que se pueden asociar con uno o más entornos en todo el programa, incluso si un certificado ha caducado. Sin embargo, la interfaz de usuario de Cloud Manager permitirá instalar hasta 50 certificados SSL en el programa con esta restricción. Normalmente, un certificado puede abarcar varios dominios (hasta 100 SANs), por lo que puede considerar la posibilidad de agrupar varios dominios en el mismo certificado para permanecer por debajo de este límite.
 
