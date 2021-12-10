@@ -1,10 +1,11 @@
 ---
 title: Compatibilidad
-description: Compatibilidad
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+description: En esta página se muestran los recursos informativos que proporcionan información sobre el cumplimiento de las normas en Experience Manager as a Cloud Service.
+landing-page-description: Para obtener información general sobre la conformidad en AEM as a Cloud Service, incluida la privacidad y accesibilidad, comience aquí.
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 79%
+source-wordcount: '394'
+ht-degree: 72%
 
 ---
 
