@@ -2,10 +2,10 @@
 title: AEM Content and Commerce
 description: Recursos informativos y enlaces a la documentación sobre contenido y comercio de AEM
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 64%
+source-wordcount: '350'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ En esta página se muestran los recursos informativos relacionados con AEM Conte
 
 >[!NOTE]
 >
->Para AEM Contenido y comercio con AEM 6.5 y CIF clásico, consulte [AEM 6.5 Contenido y comercio](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
+>Para obtener AEM Contenido y comercio con AEM 6.5 y CIF clásico, consulte [AEM 6.5 Contenido y comercio](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html).
 
 ## Artículos clave sobre contenido y comercio {#key-articles}
 
@@ -27,7 +27,6 @@ En esta página se muestran los recursos informativos relacionados con AEM Conte
 
 | Guía del usuario | Descripción |
 |---|---|
-| [Página principal de Experience Manager as a Cloud Service](/help/landing/home.md) | Para obtener una descripción general de la documentación de Experience Manager as a Cloud Service, comience aquí. |
 | [Información general](/help/overview/home.md) | Esta guía proporciona información general sobre Experience Manager as a Cloud Service, incluida una introducción, terminología, arquitectura, etc. |
 | [Notas de la versión](/help/release-notes/home.md) | Esta guía proporciona información importante sobre la última versión de Experience Manager as a Cloud Service, incluidas las funciones nuevas, obsoletas y eliminadas y los problemas conocidos. |
 | [Guía del usuario sobre seguridad](/help/security/home.md) | Obtenga información sobre temas de seguridad importantes relacionados con Experience Manager as a Cloud Service. |

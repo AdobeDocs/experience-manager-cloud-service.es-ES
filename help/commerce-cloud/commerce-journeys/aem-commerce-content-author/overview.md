@@ -1,7 +1,7 @@
 ---
 title: recorrido del autor de contenido de AEM Commerce
 description: Comience aquí para obtener un recorrido guiado a través de la creación AEM Commerce
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Esta guía le guía por los temas de creación de contenido y comercio AEM más 
 
 ## recorridos de documentación de AEM {#documentation-journeys}
 
-[Un Recorrido de documentación](/help/journey-documentation/home.md) une muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocios de principio a fin, mientras asume un mínimo de conocimiento previo o AEM.
+[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocios de principio a fin, mientras asume un mínimo de conocimiento previo o AEM.
 
 Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
 

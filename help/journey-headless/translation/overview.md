@@ -4,7 +4,8 @@ description: Comience aquí para obtener un recorrido guiado a través de la tra
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+exl-id: b677f691-5257-43c3-a4b9-c34932577b31
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 2%
@@ -30,15 +31,15 @@ Esta guía le guía por los temas de traducción sin encabezado más importantes
 
 El objetivo es darles una amplia comprensión de la tecnología sin objetivos, cómo AEM el contenido sin objetivos y cómo traducirlo. Si no está familiarizado con ninguno de estos temas, este es su lugar ideal para empezar.
 
-Si ya está familiarizado con la traducción, la traducción y el AEM, puede que ya tenga el conocimiento fundacional de este recorrido. Considere la posibilidad de consultar nuestra documentación técnica vinculada a continuación en la sección [recursos adicionales.](#additional-resources)
+Si ya está familiarizado con la traducción, la traducción y el AEM, puede que ya tenga el conocimiento fundacional de este recorrido. Considere la posibilidad de consultar nuestra documentación técnica vinculada en el [a continuación, la sección de recursos adicionales.](#additional-resources)
 
 ## recorridos de documentación de AEM {#documentation-journeys}
 
-[Una Documentación ](/help/journey-documentation/home.md) Journey reúne muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocio de principio a fin, mientras asume un tema previo mínimo o conocimiento AEM.
+[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocios de principio a fin, mientras asume un mínimo de conocimiento previo o AEM.
 
 Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
 
-Si desea saber cómo recomienda el Adobe resolver los casos comerciales sin objetivos con AEM, [AEM Recorridos sin objetivos](/help/journey-headless/home.md) son dónde debe comenzar.
+Si desea saber cómo el Adobe recomienda resolver casos empresariales sin objetivos con AEM, [recorridos sin AEM](/help/journey-documentation/documentation-journeys.md) son el punto de inicio.
 
 ## Audience {#audience}
 
@@ -55,7 +56,7 @@ Las siguientes son las personalidades que interactúan en este recorrido.
 | Administrador | Gestiona la configuración y configuración base de AEM | El especialista en traducción trabaja con el administrador para realizar los cambios de configuración necesarios para la traducción, como instalar un conector de traducción. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin interrupciones y define la estructura de estos datos | Los especialistas en traducción trabajan con el arquitecto de contenido para definir la organización del contenido y así poder traducirlo fácilmente. |
 
-Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a los [recorridos que se presentarán próximamente y que abarquen funciones adicionales.](/help/journey-documentation/home.md#journeys)
+Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## El Recorrido de traducción sin encabezado {#the-journey}
 
@@ -75,7 +76,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 
 ## Siguientes pasos {#what-is-next}
 
-Ya está listo para empezar con su recorrido de traducción sin encabezado de Adobe. Le recomendamos que continúe con la siguiente parte del recorrido y lea el artículo [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](learn-about.md)
+Ya está listo para empezar con su recorrido de traducción sin encabezado de Adobe. Le animamos a que continúe con la siguiente parte del recorrido y lea el artículo [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](learn-about.md)
 
 ## Recursos adicionales {#additional-resources}
 
@@ -83,8 +84,8 @@ Los recorridos de documentación muestran cómo AEM resuelve un problema comerci
 
 Como estos recorridos están diseñados para mantenerse por su cuenta. Sin embargo, varios de ellos pueden relacionarse entre sí. Consulte estos recorridos adicionales para obtener más información sobre cómo funcionan juntas AEM potentes funciones.
 
-* [Recorrido de creación sin objetivos](/help/journey-headless/author/overview.md) : Empiece aquí por un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos.
-* [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) : Empiece aquí para ver una introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y cómo modelar el contenido de su proyecto.
-* [AEM Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) : Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
-* [AEM como Cloud Service de documentación técnica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) : si ya conoce las tecnologías AEM y sin objetivos, puede que desee consultar directamente nuestros documentos técnicos en profundidad.
-* [AEM tutoriales sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : si prefiere aprender haciendo y con inclinación técnica, tome nuestros tutoriales prácticos organizados por API y framework, que exploran la creación y el uso de aplicaciones creadas en AEM sin encabezado.
+* [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) - Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos.
+* [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) - Empiece aquí para ver una introducción a las potentes y flexibles funciones de Adobe Experience Manager as a Cloud Service y a cómo modelar el contenido de su proyecto.
+* [recorrido para desarrolladores AEM sin encabezado](/help/journey-headless/developer/overview.md) - Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
+* [AEM documentación técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) - Si ya tiene una comprensión firme de las tecnologías AEM y sin objetivos, puede que desee consultar directamente nuestros documentos técnicos.
+* [Tutoriales AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Si prefiere aprender haciendo y está técnicamente inclinado, tome nuestros tutoriales prácticos organizados por API y framework, que exploran la creación y el uso de aplicaciones creadas sobre AEM sin encabezado.
