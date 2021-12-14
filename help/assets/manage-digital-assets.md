@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
+source-wordcount: '4320'
 ht-degree: 11%
 
 ---
@@ -244,7 +244,7 @@ La información de otras propiedades y metadatos se conserva. No se crea una cop
 
    >[!NOTE]
    >
-   >Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo.
+   >Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Además, según el navegador, se admiten diferentes formatos de vídeo. Sin embargo, el formato de vídeo MXF aún no es compatible con anotaciones de vídeo.
 
 ## Eliminar recursos {#delete-assets}
 
@@ -410,7 +410,7 @@ La cronología permite ver varios eventos de un elemento seleccionado, como fluj
 
 Las anotaciones son comentarios o notas explicativas añadidas a imágenes o vídeos. Las anotaciones permiten a los especialistas en marketing colaborar y dejar comentarios sobre los recursos.
 
-Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con Assets dependen del explorador.
+Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo compatibles con HTML5. Los formatos de vídeo compatibles con Assets dependen del explorador. Sin embargo, el formato de vídeo MXF aún no es compatible con anotaciones de vídeo.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Las anotaciones de vídeo solo se admiten en exploradores con formatos de vídeo
 
    >[!NOTE]
    >
-   >Las anotaciones también se pueden agregar a los recursos de vídeo. Al anotar vídeos, el reproductor se detiene para permitirle realizar anotaciones en un marco. Para obtener más información, consulte [administración de recursos de vídeo](manage-video-assets.md).
+   >Las anotaciones también se pueden agregar a los recursos de vídeo. Al anotar vídeos, el reproductor se detiene para permitirle realizar anotaciones en un marco. Para obtener más información, consulte [administración de recursos de vídeo](manage-video-assets.md). Sin embargo, el formato de vídeo MXF aún no es compatible con anotaciones de vídeo.
 
 1. Para elegir un color diferente y poder diferenciar entre usuarios, toque o haga clic en el icono Perfil y pulse o haga clic en **[!UICONTROL Mis preferencias]**.
 
