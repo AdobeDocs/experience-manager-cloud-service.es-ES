@@ -1,21 +1,21 @@
 ---
 title: Replicación
-description: Distribución y Resolución de problemas de replicación.
+description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 4%
+source-wordcount: '1363'
+ht-degree: 3%
 
 ---
 
 # Replicación {#replication}
 
-Adobe Experience Manager as a Cloud Service utiliza la capacidad [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido a un servicio de canalización que se ejecute en un Adobe I/O que esté fuera del tiempo de ejecución de AEM.
+Adobe Experience Manager as a Cloud Service utiliza la variable [Distribución de contenido de Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover el contenido que se va a replicar a un servicio de canalización que se ejecute en un Adobe I/O que esté fuera del tiempo de ejecución de AEM.
 
 >[!NOTE]
 >
->Lea [Distribución](/help/overview/architecture.md#content-distribution) para obtener más información.
+>Lectura [Distribución](/help/overview/architecture.md#content-distribution) para obtener más información.
 
 ## Métodos de publicación de contenido {#methods-of-publishing-content}
 
@@ -27,9 +27,9 @@ Para obtener más información, consulte [Administrar publicación](/help/sites-
 
 ### Horas de activación y desactivación: configuración de Déclencheur {#on-and-off-times-trigger-configuration}
 
-Las posibilidades adicionales de **Tiempo de activación** y **Tiempo de inactividad** están disponibles en la pestaña [Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
+Las posibilidades adicionales de **Tiempo de activación** y **Tiempo de inactividad** están disponibles en el [Ficha Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic).
 
-Para realizar la replicación automática para esto, debe habilitar **Replicación automática** en la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuración del Déclencheur desactivado**:
+Para realizar la replicación automática para esto, debe habilitar **Replicar automáticamente** en el [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuración del Déclencheur activada**:
 
 ![Configuración del Déclencheur de activación de OSGi](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -39,7 +39,7 @@ Administrar publicación ofrece más opciones que Publicación rápida, pues pe
 
 Si se incluyen los elementos secundarios de una carpeta para la opción &quot;publicar más tarde&quot;, se invocará el flujo de trabajo Publicar árbol de contenido , descrito en este artículo.
 
-Puede encontrar información más detallada sobre Administrar publicación en la [documentación de Aspectos básicos de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
+Puede encontrar información más detallada sobre Administrar publicación en el [Documentación de aspectos básicos de la publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
 
 ### Activación de árbol {#tree-activation}
 
@@ -49,11 +49,11 @@ Puede encontrar información más detallada sobre Administrar publicación en la
 
 Para realizar una activación de árbol:
 
-1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
-2. Seleccione la tarjeta **publish**
+1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
+2. Seleccione la tarjeta **publicar**
 3. Una vez en la interfaz de usuario de la consola web de publicación, **seleccione Distribuir**
 
-   ![](assets/publish-distribute.png "DistribuirDistribuir")
+   ![Distribuir](assets/publish-distribute.png "Distribuir")
 4. Seleccione la ruta en el navegador de rutas, elija añadir un nodo, árbol o eliminar según sea necesario y seleccione **Submit**
 
 Para obtener el mejor rendimiento, siga estas directrices al utilizar esta función:
@@ -62,17 +62,17 @@ Para obtener el mejor rendimiento, siga estas directrices al utilizar esta funci
 
 ### Flujo de trabajo del árbol de contenido de publicación {#publish-content-tree-workflow}
 
-Puede almacenar en déclencheur una replicación de árbol seleccionando **Tools - Workflow - Models** y copiando el modelo de flujo de trabajo **Publish Content Tree** listo para usar, como se muestra a continuación:
+Puede almacenar en déclencheur una replicación de árbol seleccionando **Herramientas - Flujo de trabajo - Modelos** y copiando **Árbol de contenido de publicación** modelo de flujo de trabajo integrado, como se muestra a continuación:
 
 ![](/help/operations/assets/publishcontenttreeworkflow.png)
 
 No modifique ni invoque el modelo original. En su lugar, asegúrese de copiar primero el modelo y luego modificar o invocar esa copia.
 
-Al igual que todos los flujos de trabajo, también se puede invocar mediante API. Para obtener más información, consulte [Interacción con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
+Al igual que todos los flujos de trabajo, también se puede invocar mediante API. Para obtener más información, consulte [Interactuar con flujos de trabajo mediante programación](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem).
 
-También puede conseguirlo creando un modelo de flujo de trabajo que utilice el paso de proceso `Publish Content Tree`:
+También puede conseguirlo creando un modelo de flujo de trabajo que utilice la variable `Publish Content Tree` paso del proceso:
 
-1. Desde la página de inicio de AEM as a Cloud Service, vaya a **Herramientas - Flujo de trabajo - Modelos**
+1. Desde la página de inicio as a Cloud Service de AEM, vaya a **Herramientas - Flujo de trabajo - Modelos**
 1. En la página Modelos de flujo de trabajo , pulse **Crear** en la esquina superior derecha de la pantalla
 1. Añada un título y un nombre al modelo. Para obtener más información, consulte [Creación de modelos de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)
 1. Seleccione el modelo recién creado de la lista y pulse **Editar**
@@ -81,26 +81,27 @@ También puede conseguirlo creando un modelo de flujo de trabajo que utilice el 
    ![Etapa del proceso](/help/operations/assets/processstep.png)
 
 1. Haga clic en el paso Proceso del flujo y seleccione **Configurar** pulsando el icono de la llave inglesa
-1. Haga clic en la pestaña **Process** y seleccione `Publish Content Tree` en la lista desplegable
+1. Haga clic en el **Proceso** y seleccione `Publish Content Tree` en la lista desplegable
 
    ![Activación mediante árbol](/help/operations/assets/newstep.png)
 
-1. Establezca cualquier parámetro adicional en el campo **Arguments**. Los argumentos separados por comas múltiples se pueden agrupar. Por ejemplo:
+1. Configure cualquier parámetro adicional en la variable **Argumentos** campo . Los argumentos separados por comas múltiples se pueden agrupar. Por ejemplo:
 
-   `enableVersion=true,agentId=publish`
+   `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
    >
-   >Para obtener la lista de parámetros, consulte la sección **Parameters** a continuación.
+   >Para obtener la lista de parámetros, consulte la **Parámetros** a continuación.
 
-1. Pulse **Listo** para guardar el modelo de flujo de trabajo.
+1. Press **Listo** para guardar el modelo Workflow.
 
 **Parámetros**
 
-* `replicateAsParticipant` (valor booleano, predeterminado:  `false`). Si se configura como `true`, la replicación utiliza el `userid` del principal que realizó el paso del participante.
-* `enableVersion` (valor booleano, predeterminado:  `true`). Este parámetro determina si se crea una nueva versión tras la replicación.
-* `agentId` (valor de cadena, de forma predeterminada significa que solo se utilizan agentes para la publicación). Se recomienda ser explícito sobre agentId; por ejemplo, si se establece el valor: publicar. Si el agente se establece en `preview`, se publicará en el servicio de vista previa
+* `includeChildren` (valor booleano, predeterminado: `false`). false significa que solo se publica la ruta. true significa que los niños también se publican.
+* `replicateAsParticipant` (valor booleano, predeterminado: `false`). Si está configurado como `true`, la replicación está usando la variable `userid` del principal que realizó el paso del participante.
+* `enableVersion` (valor booleano, predeterminado: `true`). Este parámetro determina si se crea una nueva versión tras la replicación.
+* `agentId` (valor de cadena, de forma predeterminada significa que solo se utilizan agentes para la publicación). Se recomienda ser explícito sobre agentId; por ejemplo, si se establece el valor: publicar. Configuración del agente en `preview` se publicará en el servicio de vista previa
 * `filters` (valor de cadena, predeterminado significa que todas las rutas están activadas). Los valores disponibles son:
    * `onlyActivated` - sólo se activarán las rutas que no estén marcadas como activadas.
    * `onlyModified` - activar solo las rutas que ya están activadas y que tienen una fecha de modificación posterior a la fecha de activación.
@@ -112,7 +113,7 @@ Cuando se inicie el paso del flujo de trabajo de activación del árbol, registr
 
 A continuación, se registra una instrucción INFO final después de que el paso del flujo de trabajo haya duplicado todas las rutas.
 
-Además, puede aumentar el nivel de registro de los registradores por debajo de `com.day.cq.wcm.workflow.process.impl` a DEBUG/TRACE para obtener aún más información de registro.
+Además, puede aumentar el nivel de registro de los registradores siguientes `com.day.cq.wcm.workflow.process.impl` a DEBUG/TRACE para obtener aún más información de registro.
 
 En caso de errores, el paso del flujo de trabajo finaliza con un `WorkflowException`, que ajusta la excepción subyacente.
 
@@ -132,7 +133,7 @@ El flujo de trabajo procesa el contenido en fragmentos, cada uno de los cuales r
 
 ### API de replicación {#replication-api}
 
-Puede publicar contenido mediante la API de replicación incluida en AEM como Cloud Service.
+Puede publicar contenido mediante la API de replicación incluida en AEM as a Cloud Service.
 
 Para obtener más información, consulte la [Documentación de API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -161,9 +162,9 @@ Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchRepl
 
 **Replicación con agentes específicos**
 
-Al replicar recursos como en el ejemplo anterior, solo se utilizan los agentes activos de forma predeterminada. En AEM como Cloud Service, solo será el agente denominado &quot;publicar&quot;, que conecta al autor con el nivel de publicación.
+Al replicar recursos como en el ejemplo anterior, solo se utilizan los agentes activos de forma predeterminada. En AEM as a Cloud Service, solo será el agente denominado &quot;publish&quot;, que conecta al autor con el nivel de publicación.
 
-Para admitir la funcionalidad de vista previa, se ha agregado un nuevo agente llamado &quot;vista previa&quot;, que no está activo de forma predeterminada. Este agente se utiliza para conectar al autor al nivel de vista previa. Si desea replicar solo a través del agente de vista previa, debe seleccionar explícitamente este agente de vista previa a través de un `AgentFilter`.
+Para admitir la funcionalidad de vista previa, se ha agregado un nuevo agente llamado &quot;vista previa&quot;, que no está activo de forma predeterminada. Este agente se utiliza para conectar al autor al nivel de vista previa. Si desea duplicar solo a través del agente de vista previa, debe seleccionar explícitamente este agente de vista previa a través de un `AgentFilter`.
 
 Consulte el ejemplo siguiente sobre cómo hacerlo:
 
@@ -188,7 +189,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 Si no proporciona dicho filtro y solo utiliza el agente &quot;publicar&quot;, no se utiliza el agente &quot;vista previa&quot; y la acción de replicación no afecta al nivel de vista previa.
 
-El `ReplicationStatus` general de un recurso solo se modifica si la acción de replicación incluye al menos un agente que esté activo de forma predeterminada. En el ejemplo anterior, este no es el caso, ya que la replicación está utilizando el agente de &quot;vista previa&quot;. Por lo tanto, debe utilizar el nuevo método `getStatusForAgent()` , que permite consultar el estado de un agente específico. Este método también funciona para el agente &quot;publicar&quot;. Devuelve un valor no nulo si se ha realizado alguna acción de replicación con el agente proporcionado.
+El conjunto `ReplicationStatus` de un recurso solo se modifica si la acción de replicación incluye al menos un agente activo de forma predeterminada. En el ejemplo anterior, este no es el caso, ya que la replicación está utilizando el agente de &quot;vista previa&quot;. Por lo tanto, debe utilizar el nuevo `getStatusForAgent()` , que permite consultar el estado de un agente específico. Este método también funciona para el agente &quot;publicar&quot;. Devuelve un valor no nulo si se ha realizado alguna acción de replicación con el agente proporcionado.
 
 
 **Ruta de acceso y límites de tamaño de la API de replicación**
@@ -199,14 +200,14 @@ Se recomienda duplicar menos de 100 rutas, siendo 500 el límite duro. Por encim
 
 Para solucionar problemas de replicación, vaya a las colas de replicación en la interfaz de usuario web del servicio de autor de AEM:
 
-1. En el menú Inicio de AEM, vaya a **Tools > Deployment > Distribution**
-2. Seleccione la tarjeta **publish**
-   ![](assets/publish-status.png "StatusStatus")
+1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
+2. Seleccione la tarjeta **publicar**
+   ![Estado](assets/publish-status.png "Estado")
 3. Comprobar el estado de la cola que debería ser verde
 4. Puede probar la conexión con el servicio de replicación
-5. Seleccione la pestaña **Logs** que muestra el historial de publicaciones de contenido
+5. Seleccione el **Registros** que muestra el historial de publicaciones de contenido
 
-![](assets/publish-logs.png "LogsLogs")
+![Registros](assets/publish-logs.png "Registros")
 
 Si no se pudo publicar el contenido, toda la publicación se revierte desde el servicio de publicación de AEM.
 En ese caso, la cola principal editable mostrará un estado rojo y debe revisarse para identificar qué elemento(s) provocó la cancelación de la publicación. Al hacer clic en esa cola, se mostrarán los elementos pendientes, desde los cuales se puede borrar un solo artículo o todos los elementos si es necesario.
