@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7b636396dd9ca34955d2f40a7191821e43cb30f9
+source-git-commit: 8066635a11712f942fc4df813b5a4343c3ff8e87
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3370'
 ht-degree: 34%
 
 ---
@@ -532,8 +532,9 @@ ht-degree: 34%
    + [Implementación de aplicaciones para AEM as a Cloud Service](/help/implementing/home.md)
    + Uso de Cloud Manager {#using-cloud-manager}
       + Notas de la versión para Cloud Manager {#release-notes-cloud-manager}
-         + [Notas de la versión actual (2021.11.0)](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2021 {#2021}
+            + [Notas de la versión 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [Notas de la versión 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
             + [Notas de la versión 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
             + [Notas de la versión 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
@@ -579,6 +580,7 @@ ht-degree: 34%
          + [Integrar Git con Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Uso de repositorios Git de varias fuentes](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuración de desarrollo de equipo empresarial para AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [Variables de entorno](/help/implementing/cloud-manager/environment-variables.md)
       + Canalizaciones de CI-CD de Cloud Manager {#cicd-pipelines}
          + [Introducción](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + Canalizaciones de producción {#production-pipelines}
