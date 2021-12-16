@@ -3,9 +3,9 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: edb547fa31158e1608b57231d9705d24f008b12e
+source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1053'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ La siguiente versión (2022.1.0) es el 27 de enero de 2022.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo a la [Información general sobre la versión de diciembre de 2021](https://video.tv.adobe.com/v/339278) vídeo para ver un resumen de las funciones añadidas.
+Eche un vistazo a la [Información general sobre la versión de diciembre de 2021](https://video.tv.adobe.com/v/339278) vídeo para ver un resumen de las funciones añadidas en la versión 2021.11.0 (noviembre de 2021).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
