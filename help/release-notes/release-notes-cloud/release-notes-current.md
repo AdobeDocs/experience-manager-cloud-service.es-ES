@@ -3,9 +3,9 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
+source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -25,65 +25,59 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2021.10.0) es el 4 de noviembre de 2021.
-La siguiente versión (2021.11.0) es el 16 de diciembre de 2021.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2021.11.0) es el 16 de diciembre de 2021.
+La siguiente versión (2022.1.0) es el 27 de enero de 2022.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo a la [Información general sobre la versión de octubre de 2021](https://video.tv.adobe.com/v/338253) vídeo para ver un resumen de las funciones añadidas.
+Eche un vistazo a la [Información general sobre la versión de diciembre de 2021](https://video.tv.adobe.com/v/339278) vídeo para ver un resumen de las funciones añadidas.
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Nueva función de [!DNL Sites] {#sites-features}
-
-* Los modelos de fragmento de contenido ahora se establecen automáticamente en estado de solo lectura una vez publicados, para evitar que se rompan de forma involuntaria las consultas de API en directo después de volver a publicar un modelo editado. Los usuarios reciben una advertencia cuando intentan editar un modelo publicado. La edición es posible tras aceptar la advertencia.
-
-## [!DNL Experience Manager Assets] como [!DNL Cloud Service] {#assets}
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] ahora admite la generación automática de transcripciones de texto desde los recursos de audio y vídeo compatibles, utilizando un conector integrado para [!DNL Azure Media Services]. La variable [tipos de archivo compatibles](/help/assets/file-format-support.md#audio-video-transcription-formats) se transcriben automáticamente y el texto se almacena en formato WebVTT. Los subtítulos WebVTT se utilizan para realizar búsquedas, subtítulos o traducciones más eficaces. Además, la función mejora la accesibilidad, la capacidad de detección y la localización de los recursos.
+* Dynamic Media Image Smart Crop and Swatch ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan cultivos y muestras mejorados. Además, se ha iniciado una mejora para generar diferentes contenidos de cultivos, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservarán en el reprocesamiento si no hay cambios en la anchura y la altura del perfil de imagen.
 
-### Nueva función en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
+### Nuevas funciones de la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan cultivos y muestras mejorados. Además, se ha iniciado una mejora para generar diferentes contenidos de cultivos, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservarán en el reprocesamiento si no hay cambios en la anchura y la altura del perfil de imagen.
+* [!DNL Dynamic Media] - Ahora puede utilizar AEM interfaz de Dynamic Media para configurar la configuración general y la configuración de publicación en lugar de tener que pasar por la aplicación de escritorio de Dynamic Media Classic.
+
+* [!DNL Dynamic Media] ahora es compatible con la ingesta, previsualización, reproducción y publicación de vídeos MXF. Todavía no se admite la anotación ni el vídeo de ventas para vídeos MXF.
+
+* Después de configurar una conexión entre las implementaciones remotas de DAM y Sites, los recursos en DAM remoto están disponibles en la implementación de Sites. Ahora puede realizar las operaciones de actualización, eliminación, cambio de nombre y movimiento en los recursos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites.
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
-### Novedades de [!DNL Forms] {#what-is-new-forms-oct-2021}
+### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* **Analytics para Forms adaptable**: Ahora puede capturar y rastrear el comportamiento de inicio de sesión y no inicio de sesión (Anonymous) mediante Adobe Analytics for Adaptive Forms para recopilar perspectivas del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
-
-### Nuevas funciones disponibles en [!DNL Forms] canal de prelanzamiento {#prerelease-features-forms-oct-2021}
+* **Portal de Forms**: Puede usar [Portal de Forms](/help/forms/configure-forms-portal.md) para enumerar los formularios adaptables publicados en una página de AEM Sites. Ayuda al visitante del sitio a descubrir todos los formularios disponibles. Además, el visitante puede utilizar el portal de formularios para guardar y acceder al borrador de un formulario adaptable y consultar la versión PDF de un formulario adaptable enviado.
 
 * **Externalización AEM datos de flujo de trabajo para un procesamiento seguro**: Puede almacenar datos de flujos de trabajo AEM en proceso (AEM datos de variables de flujo de trabajo) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Los elementos de datos y las variables de flujo de trabajo no se almacenan en AEM repositorio y se recuperan a petición de un repositorio administrado por el cliente mientras se procesa el flujo de trabajo.
 
-### Funciones beta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Nuevas funciones disponibles en [!DNL Forms] canal de prelanzamiento {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) le ayuda a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones que le permitan:
 
    * Genere documentos rellenando archivos de plantilla (PDF y XDP) con datos XML.
    * Genere formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
 
-Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa beta.
+* **Fuentes personalizadas para documentos de registro y PDF creados con API de comunicaciones**: Ahora puede utilizar fuentes aprobadas por la marca en documentos de PDF generados mediante las API de comunicaciones para cumplir con los requisitos de la organización.
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novedades {#what-is-new-cif}
 
-* El complemento CIF es compatible con la última versión de Commerce v2.4.3 con las nuevas API y esquemas de GraphQL
+* Componentes extendidos de myAccount basados en los componentes Peregrine ampliables de Commerce
 
-* Los autores pueden agregar vínculos a páginas de productos y catálogos en campos de texto utilizando el editor de texto enriquecido (RTE). Se ha agregado un icono del CIF a la barra de herramientas de RTE que abrirá los selectores para buscar y seleccionar rápidamente el producto o la categoría sin abandonar el contexto.
+![Componentes de myAccount ampliados](/help/assets/CIF/extended-myAccount-components.png)
 
-* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas AEM carro de compras y de cierre de compra. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Magento
+* Los autores pueden crear Recommendations de producto de comercio ad-hoc utilizando tipos de recomendación adicionales
 
-* Los comerciantes pueden ocultar ciertas categorías de catálogo de productos en la navegación mediante el servidor de Commerce. El componente principal de navegación del CIF respeta la configuración del back-end de comercio &quot;incluir en menú&quot; para mostrar u ocultar categorías en la navegación
-
-* AEM Tienda Venia devuelve el error HTTP 404 si no se encuentra la categoría o la página de producto
+* Compatibilidad con tarjetas de regalo en AEM tienda
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.10.0.
+Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.11.0.
 
 ### Fecha de la versión {#release-date-cm-nov}
 
@@ -131,56 +125,6 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 * En casos excepcionales, las canalizaciones fallaban debido a la gestión inadecuada de reintentos de ciertos códigos de respuesta.
 
-
-## Fecha de la versión {#release-date-cm-oct}
-
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.10.0 es el 14 de octubre de 2021.
-
-### Novedades {#what-is-new-cm-oct}
-
-* A fin de prepararse para algunos cambios, ahora se hará referencia a las canalizaciones de implementación existentes y se etiquetarán en la interfaz de usuario como **Pila completa** canalizaciones.
-
-* La tarjeta de canalización se ha actualizado para que ahora muestre una sola cara integrada que muestre tanto las canalizaciones de producción como las que no son de producción, y el usuario puede seleccionar Ejecutar/Pausar/Reanudar directamente en el menú de acción asociado con cada canalización.
-
-* Un usuario con la función de administrador de implementación ahora puede eliminar la canalización de producción de forma autoservicio mediante la interfaz de usuario.
-
-* Se han actualizado las experiencias de adición y edición de canalización para que ahora utilicen modelos modernos y conocidos.
-
-* Los usuarios de Cloud Manager ahora pueden enviar comentarios directamente desde la interfaz de usuario a través de la **Comentarios** en la parte superior derecha de la página de aterrizaje.
-
-* Los gráficos SLA anuales ahora se pueden descargar desde la interfaz de usuario de Cloud Manager.
-
-* La calidad del código y las ejecuciones de canalizaciones que no sean de producción ahora utilizarán un proceso de clonación superficial más eficiente durante el paso de compilación, lo que conllevará un tiempo de compilación más rápido para los clientes con repositorios Git especialmente grandes.
-
-* El asistente para agregar Lista de permitidos de IP ahora informará al usuario si se ha alcanzado el número máximo permitido de Listas de permitidos de IP.
-
-* La documentación de la API de Cloud Manager ahora incluye un área de reproducción interactiva que permite a los usuarios que iniciaron sesión experimentar con la API desde su explorador. Consulte [Reproducción de la API de Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) para obtener más información.
-
-* La información del objeto de la tarjeta de programa será más descriptiva si se desactiva una opción de selección en &quot;Navegar a&quot;. Ahora muestra &quot;Un entorno de producción no existe&quot;.
-
-### Corrección de errores {#bug-fixes-cm-oct}
-
-* En raras ocasiones, cuando el personal de un Adobe restauraba el entorno de un cliente, la restauración se consideraba completa antes de que el entorno fuera completamente operativo.
-
-* Algunas solicitudes internas realizadas durante la creación del entorno no se estaban reintentando.
-
-* Si se produce un error de implementación tras la verificación del nombre de dominio, se ha corregido el mensaje de error para solicitar al cliente que se ponga en contacto con su representante de Adobe.
-
-## Analizador de prácticas recomendadas {#best-practices-analyzer}
-
-### Fecha de la versión {#release-date-bpa-latest}
-
-La fecha de versión de Best Practices Analyzer v2.1.20 es el 5 de octubre de 2021.
-
-### Novedades {#what-is-new}
-
-* Capacidad para detectar y crear informes sobre la longitud del nombre del nodo.
-
-* Capacidad para detectar el tamaño total del índice e informar al respecto.
-
-* Capacidad para detectar y crear informes sobre los recursos que no tienen su representación original.
-
-
 ## Analizador de prácticas recomendadas {#bpa-release}
 
 ### Fecha de la versión {#release-date-bpa}
@@ -197,14 +141,3 @@ La fecha de versión de Best Practices Analyzer v2.1.22 es el 1 de diciembre de 
 
 * La detección de componentes de base se refinó para reducir los falsos negativos.
 * Para los clientes de AEM Forms, mensajería BPA con respecto a `EMAIL_PDF_SUBMIT_ACTION` no está disponible en AEM as a Cloud Service se ha corregido.
-
-## Herramienta de transferencia de contenido {#ctt-release}
-
-### Fecha de la versión {#release-date-ctt}
-
-La fecha de versión de la herramienta de transferencia de contenido v1.7.10 es el 8 de diciembre de 2021.
-
-### Novedades {#what-is-new-ctt}
-
-* Alternar agregada a la fase de ingesta en la herramienta de transferencia de contenido para permitir que los usuarios desactiven [copia previa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) durante la ingesta. Para lograr velocidades de ingesta óptimas, la precopia durante la ingesta debe deshabilitarse para los conjuntos de migración pequeños o si solo se han añadido unos pocos blobs desde la última ingesta.
-* Asignación de usuarios actualizada para utilizar la API de administración de usuarios mejorada que le permite obtener 2000 usuarios a la vez, lo que mejora significativamente el rendimiento.

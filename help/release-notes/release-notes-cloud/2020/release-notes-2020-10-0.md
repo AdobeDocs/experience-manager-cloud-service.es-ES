@@ -2,7 +2,7 @@
 title: Notas de la versión 2020.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.10.0.'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
+source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 21%
@@ -43,7 +43,7 @@ La siguiente versión (2020.11.0) será el 1 de diciembre de 2020.
 
 * **[!DNL Assets]Compatibilidad con archivos WebP**: [!DNL Assets] as a Cloud Service ahora admite el formato de imagen WebP. WebP es un formato de imagen emergente creado por Google. Las imágenes en formato de archivo WebP son visualmente indistinguibles de los archivos JPG o PNG y los archivos son mucho más pequeños. El menor tamaño de archivo de los recursos mejora los tiempos de carga de página y ayuda a los creadores de contenido a ofrecer una experiencia web más rápida. Consulte cómo utilizar WebP en [crear perfil de procesamiento](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms-oct-2021}
 
