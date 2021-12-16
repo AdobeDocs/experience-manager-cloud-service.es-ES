@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 55ed91d87d5b57d467604f7723949b4bf918f2ff
+source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 34%
+source-wordcount: '3403'
+ht-degree: 33%
 
 ---
 
@@ -754,7 +754,19 @@ ht-degree: 34%
       + [API de ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuración de la segmentación con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
    + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
-      + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder.md)
+      + Ampliación de AEM con App Builder{#app-builder}
+         + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [Introducción a App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [SDK y CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [Crear una aplicación](/help/implementing/developing/extending/app-builder/videos/create.md)
+         + [Acciones](/help/implementing/developing/extending/app-builder/videos/actions.md)
+         + [Bibliotecas de almacenamiento](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+         + [Aplicaciones impulsadas por eventos](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+         + [Aplicaciones front-end](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
+         + [Seguridad](/help/implementing/developing/extending/app-builder/videos/security.md)
+         + [Implementación de aplicaciones](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+         + [Publicación de aplicaciones](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [Ampliar fragmentos de Experience](/help/implementing/developing/extending/experience-fragments.md)
       + [Personalizar y ampliar fragmentos de contenido](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Fragmentos de contenido Configurar componentes para procesamiento](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
