@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear una carpeta privada en la [!
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Puede crear una carpeta privada en la [!DNL Adobe Experience Manager Assets] int
 >
 >La carpeta privada tiene al menos un miembro con la función Propietario.
 >
->Para crear una carpeta privada, necesita Leer y Modificar [permisos de control de acceso](/help/sites-administering/security.md#permissions-in-aem) en la carpeta principal en la que desea crear una carpeta privada. Si no es administrador, estos permisos no están habilitados para usted de forma predeterminada en `/content/dam`. En este caso, obtenga primero estos permisos para su ID o grupo de usuarios antes de intentar crear carpetas privadas.
+>Para crear una carpeta privada, es necesario `Read` y `Modify` permisos en la carpeta principal en la que desea crear una carpeta privada. Si no es administrador, estos permisos no están habilitados para usted de forma predeterminada en `/content/dam`. En este caso, obtenga primero estos permisos para su ID o grupo de usuarios antes de intentar crear carpetas privadas.
 
 ## Crear y compartir una carpeta privada  {#create-share-private-folder}
 
