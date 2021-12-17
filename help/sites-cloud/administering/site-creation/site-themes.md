@@ -3,9 +3,9 @@ title: Temas del sitio
 description: Descubra cómo se pueden utilizar AEM temas del sitio para personalizar el estilo y el diseño del sitio.
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Temas del sitio {#site-themes}
 
 Descubra cómo se pueden utilizar AEM temas del sitio para personalizar el estilo y el diseño del sitio.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## Información general {#overview}
 
@@ -55,6 +51,6 @@ Adobe proporciona un tema de referencia de prácticas recomendadas que puede usa
 
 ## Desarrollo de temas del sitio {#developing-themes}
 
-Adobe proporciona y AEM el Generador de temas del sitio como un conjunto de secuencias de comandos para la creación de nuevos temas del sitio.
+Adobe proporciona un Generador de temas AEM del sitio como un conjunto de secuencias de comandos para la creación de nuevos temas del sitio.
 
 [El Generador de temas del sitio AEM está disponible junto con la documentación de uso de GitHub.](https://github.com/adobe/aem-site-theme-builder) Para personalizar el tema, se necesita una experiencia de desarrollo front-end.

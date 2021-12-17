@@ -1,9 +1,9 @@
 ---
 title: Recuperar información de acceso al repositorio Git
 description: Descubra cómo el desarrollador de front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 4%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 4%
 # Recuperar información de acceso al repositorio Git {#retrieve-access}
 
 Descubra cómo el desarrollador de front-end utiliza Cloud Manager para acceder a la información del repositorio de Git.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## La historia hasta ahora {#story-so-far}
 

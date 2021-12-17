@@ -1,9 +1,9 @@
 ---
 title: Crear sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio AEM con una plantilla de sitio.
-source-git-commit: 73e9d1debe70aff7f53d658bbac074fc53d8f1ae
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Crear sitio a partir de una plantilla {#create-site-from-template}
 
 Obtenga información sobre cómo crear rápidamente un nuevo sitio AEM con una plantilla de sitio.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## La historia hasta ahora {#story-so-far}
 

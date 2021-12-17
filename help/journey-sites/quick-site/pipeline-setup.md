@@ -1,9 +1,9 @@
 ---
 title: Configurar la canalización
 description: Cree una canalización front-end para administrar la personalización del tema del sitio.
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Configurar la canalización {#set-up-your-pipeline}
 
 Cree una canalización front-end para administrar la personalización del tema del sitio.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## La historia hasta ahora {#story-so-far}
 

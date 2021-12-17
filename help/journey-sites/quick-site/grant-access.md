@@ -1,9 +1,9 @@
 ---
 title: Conceder acceso al desarrollador de front-end
-description: Incorpore a los desarrolladores del front-end en Cloud Manager para que tengan acceso al repositorio de Git del sitio AEM y a la canalización.
-source-git-commit: 7c70be541e811e1be236763081d5571db4269b7a
+description: Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
@@ -11,15 +11,11 @@ ht-degree: 0%
 
 # Conceder acceso al desarrollador de front-end {#grant-fed-access}
 
-Incorpore a los desarrolladores del front-end en Cloud Manager para que tengan acceso al repositorio de Git del sitio AEM y a la canalización.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
+Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de Creación Rápida del Sitio de AEM, [Configurar la canalización,](pipeline-setup.md) ha aprendido a crear una canalización front-end para administrar la personalización del tema de su sitio y ahora debería:
+In the previous document of the AEM Quick Site Creation journey, [Set Up Your Pipeline,](pipeline-setup.md) you learned how to create a front-end pipeline to manage the customization of your site&#39;s theme, and you should now:
 
 * Comprender qué es una canalización front-end.
 * Obtenga información sobre cómo configurar una canalización front-end en Cloud Manager.
@@ -28,16 +24,16 @@ Ahora debe otorgar a su desarrollador de front-end acceso a Cloud Manager a trav
 
 ## Objetivo {#objective}
 
-El proceso de conceder acceso a Cloud Manager y asignar funciones de usuario a los usuarios se llama integración. En este documento se ofrece una descripción general de los pasos más importantes para incorporar a un desarrollador de front-end y, después de leer, se dará cuenta de lo siguiente:
+El proceso de conceder acceso a Cloud Manager y asignar funciones de usuario a los usuarios se llama integración. This document will give an overview of the most important steps for onboarding a front-end developer and after reading you will know:
 
-* Cómo añadir un desarrollador front-end como usuario.
+* How to add a front-end developer as a user.
 * Cómo conceder las funciones necesarias al desarrollador del front-end.
 
 >[!TIP]
 >
->Hay un recorrido de documentación completo dedicado a integrar su equipo en AEM as a Cloud Service, vinculado a en la variable [Sección Recursos adicionales](#additional-resources) de este documento, si necesita más detalles sobre el proceso.
+>Hay un recorrido de documentación completo dedicado a integrar su equipo en AEM as a Cloud Service, vinculado a en la variable [Sección Recursos adicionales](#additional-resources) de este documento, si necesita detalles adicionales sobre el proceso.
 
-## Función responsable {#responsible-role}
+## Responsible Role {#responsible-role}
 
 Esta parte del recorrido se aplica al administrador de Cloud Manager.
 
@@ -57,29 +53,29 @@ En primer lugar, debe agregar el desarrollador front-end como usuario mediante e
 
    ![Información general del Admin Console](assets/admin-console.png)
 
-1. Asegúrese de que está en la organización adecuada, comprobando el nombre de la organización en la esquina superior derecha de la pantalla.
+1. Make sure you are in the appropriate org, by checking the org name in the top-right corner of the screen.
 
    ![Comprobar nombre de organización](assets/correct-org.png)
 
 1. Select **Adobe Experience Manager as a Cloud Service** de la variable **Productos y servicios** tarjeta.
 
-   ![Seleccione AEMaaCS](assets/select-aemaacs.png)
+   ![Select AEMaaCS](assets/select-aemaacs.png)
 
-1. Verá la lista de perfiles de producto preconfigurados de Cloud Manager. Si no ve estos perfiles, póngase en contacto con el administrador de Cloud Manager, ya que es posible que no tenga los permisos correctos en su organización.
+1. You see the list of pre-configured Cloud Manager product profiles. Si no ve estos perfiles, póngase en contacto con el administrador de Cloud Manager, ya que es posible que no tenga los permisos correctos en su organización.
 
-   ![Perfiles de producto](assets/product-profiles.png)
+   ![Product profiles](assets/product-profiles.png)
 
-1. Para asignar el desarrollador de front-end a los perfiles correctos, toque o haga clic en el **Usuarios** y, a continuación, **Agregar usuario** botón.
+1. To assign the front-end developer to the correct profiles, tap or click on the **Users** tab and then the **Add User** button.
 
-   ![Agregar usuario](assets/add-user.png)
+   ![Add user](assets/add-user.png)
 
-1. En el **Agregar usuarios a su equipo** , escriba el ID de correo electrónico del usuario que desea agregar. Para el tipo de ID, seleccione Adobe ID si el Federated ID de los integrantes del equipo aún no se ha configurado.
+1. In the **Add users to your team** dialog box, type the email ID of the user you want to add. For the ID Type, select Adobe ID, if the Federated ID for your team members has not yet been set up.
 
-   ![Agregar usuario al equipo](assets/add-to-team.png)
+   ![Add user to team](assets/add-to-team.png)
 
-1. En el **Product** selección, pulse o haga clic en el signo más y, a continuación, seleccione **Adobe Experience Manager as a Cloud Service** y asigne **Administrador de implementación** y **Desarrollador** perfiles de producto para el usuario.
+1. In the **Product** selection, tap or click the plus sign and then select **Adobe Experience Manager as a Cloud Service** and assign the **Deployment Manager** and **Developer** product profiles to the user.
 
-   ![Asignación de perfiles de equipo](assets/assign-team.png)
+   ![Assign team profiles](assets/assign-team.png)
 
 1. Toque o haga clic **Guardar** y se envía un correo electrónico de bienvenida al desarrollador front-end que agregó como usuario.
 
@@ -87,26 +83,26 @@ El desarrollador front-end invitado puede acceder a Cloud Manager haciendo clic 
 
 ## Envío al desarrollador de Front-End {#handover}
 
-Con una invitación por correo electrónico a Cloud Manager dirigida al desarrollador del front-end, usted y el administrador de AEM ahora pueden proporcionar al desarrollador del front-end la información necesaria restante para comenzar la personalización.
+Con una invitación por correo electrónico a Cloud Manager dirigida al desarrollador front-end, usted y el administrador de AEM ahora pueden proporcionar al desarrollador de front-end la información necesaria restante para comenzar la personalización.
 
-* A [ruta al contenido típico](#example-page)
+* A [path to typical content](#example-page)
 * La fuente del tema que [descargado](#download-theme)
 * La variable [credenciales de usuario proxy](#proxy-user)
 * El nombre del programa o la URL a él [copiado desde Cloud Manager](pipeline-setup.md#login)
-* Los requisitos de diseño del front-end
+* The front-end design requirements
 
 ## Siguientes pasos {#what-is-next}
 
-Ahora que ha completado esta parte del recorrido de creación rápida AEM sitio, debe saber:
+Now that you have completed this part of the AEM Quick Site Creation journey you should know:
 
 * Cómo añadir un desarrollador front-end como usuario.
 * Cómo conceder las funciones necesarias al desarrollador del front-end.
 
-Aproveche este conocimiento y continúe con su recorrido de Creación Rápida AEM Sitio revisando el documento [Recuperar información de acceso al repositorio Git,](retrieve-access.md) que cambia la perspectiva exclusivamente al desarrollador front-end y explica cómo los usuarios de desarrollador front-end Cloud Manager acceden a la información del repositorio de Git.
+Build on this knowledge and continue your AEM Quick Site Creation journey by next reviewing the document [Retrieve Git Repository Access Information,](retrieve-access.md) which switches perspective exclusively to the front-end developer and explains how the front-end developer users Cloud Manager to access git repository information.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida del sitio revisando el documento [Recupere Credenciales de Desarrollador de Front-End,](retrieve-access.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+While it is recommended that you move on to the next part of the Quick Site Creation journey by reviewing the document [Retrieve Front-End Developer Credentials,](retrieve-access.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the journey.
 
 * [Recorrido de incorporación](/help/journey-onboarding/home.md) - Esta guía sirve como punto de partida para garantizar que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
 

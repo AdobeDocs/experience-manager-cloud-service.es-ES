@@ -3,10 +3,10 @@ title: Creación de un sitio
 description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
 feature: Administering
 role: Admin
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Creación de un sitio {#creating-site}
 
 Aprenda a utilizar AEM crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## Información general {#overview}
 

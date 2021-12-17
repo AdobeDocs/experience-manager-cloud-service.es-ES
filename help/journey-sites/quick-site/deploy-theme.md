@@ -1,9 +1,9 @@
 ---
 title: Implementar el tema personalizado
 description: Obtenga información sobre cómo implementar el tema del sitio mediante la canalización.
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Implementar el tema personalizado {#deploy-your-customized-theme}
 
 Obtenga información sobre cómo implementar el tema del sitio mediante la canalización.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -95,11 +91,16 @@ Felicitaciones! ¡Ha completado el recorrido de creación rápida de sitios AEM!
 * Personalización y prueba de un tema mediante contenido AEM proxy y confirmación de esos cambios en AEM Git.
 * Cómo implementar la personalización del front-end mediante la canalización.
 
-Ya está listo para personalizar los temas de su propio sitio AEM. Sin embargo, AEM es una herramienta potente y hay muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre las funciones que ha visto en este recorrido.
+Ya está listo para personalizar los temas de su propio sitio AEM. Sin embargo, antes de empezar a crear diferentes flujos de trabajo usando varias canalizaciones front-end, revise el documento [Desarrollo de sitios con la canalización front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) Le ayudará a sacar el máximo partido a su desarrollo front-end mediante:
+
+* Mantener una única fuente de verdad.
+* Mantener una separación de preocupaciones.
+
+AEM es una potente herramienta y hay muchas opciones adicionales disponibles. Consulte algunos de los recursos adicionales disponibles en la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre las funciones que ha visto en este recorrido.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápida del sitio revisando el documento [Implementar El Tema Personalizado,](deploy-theme.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
+A continuación se muestran algunos recursos adicionales que profundizan en algunos conceptos mencionados en este documento.
 
 * [AEM documentación técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) - Si ya tiene una comprensión firme de AEM, puede que desee consultar directamente los documentos técnicos detallados.
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) : Si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
@@ -115,3 +116,4 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de creación rápi
 * [Recorrido de incorporación](/help/journey-onboarding/home.md) - Esta guía sirve como punto de partida para garantizar que sus equipos estén configurados y tengan acceso a AEM as a Cloud Service.
 * [Documentación de Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es) : Explore la documentación de Cloud Manager para obtener información detallada sobre sus funciones.
 * [Documentación de administración del sitio](/help/sites-cloud/administering/site-creation/create-site.md) - Consulte los documentos técnicos sobre la creación de sitios para obtener más información sobre las funciones de la herramienta de creación rápida de sitios.
+* [Desarrollo de sitios con la canalización front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Este documento describe algunas consideraciones que hay que tener en cuenta para aprovechar todo el potencial del proceso de desarrollo del front-end mediante la canalización del front-end.

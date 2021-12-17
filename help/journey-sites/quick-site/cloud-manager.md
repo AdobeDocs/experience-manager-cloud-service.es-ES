@@ -1,9 +1,9 @@
 ---
 title: Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios
 description: Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios {#understand-cloud-manager}
 
 Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 >[!TIP]
 >
@@ -40,7 +36,7 @@ Esta parte del recorrido se aplica tanto al administrador de AEM como al adminis
 
 ## Requisitos y requisitos previos {#requirements-prerequisites}
 
-Antes de comenzar a crear y personalizar sitios, debe cumplir varios requisitos con la herramienta de creación rápida de sitios.
+Antes de empezar a crear y personalizar sitios, debe cumplir varios requisitos con la herramienta de creación rápida de sitios.
 
 Dado que este recorrido está diseñado para desarrolladores de front-end, administradores y combinaciones de todas las funciones, los requisitos para ambos se enumeran aquí.
 

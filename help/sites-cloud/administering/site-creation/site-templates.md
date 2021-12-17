@@ -3,9 +3,9 @@ title: Plantillas de sitios
 description: Descubra cómo se pueden utilizar AEM plantillas de sitio para predefinir la estructura del sitio y el contenido inicial para permitirle crear rápidamente sitios.
 feature: Administering
 role: Admin
-source-git-commit: 2dd35f1ea25f6bfc515d7b50fd53cf4638af4026
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Plantillas de sitios {#site-templates}
 
 Descubra cómo se pueden utilizar AEM plantillas de sitio para predefinir la estructura del sitio y el contenido inicial para permitirle crear rápidamente sitios.
-
->[!CAUTION]
->
->La herramienta Creación rápida de sitios es actualmente una vista previa técnica. Está disponible con fines de ensayo y evaluación y no está pensado para su uso en producción a menos que se acuerde con la asistencia al Adobe.
 
 ## Información general {#overview}
 

@@ -2,9 +2,9 @@
 title: Canalizaciones CI-CD
 description: Siga esta página para obtener más información sobre las canalizaciones de CI-CD de Cloud Manager
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Pueden ser del tipo Calidad del código front-end o canalizaciones de implementa
 
 ### Antes de configurar canalizaciones front-end {#before-start}
 
-Antes de empezar a configurar las canalizaciones del front-end, consulte [AEM Recorrido de creación rápida de sitios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) para obtener un flujo de trabajo completo mediante la herramienta de creación rápida AEM sitios, que es muy fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
+Antes de empezar a configurar las canalizaciones del front-end, consulte [AEM Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) para obtener un flujo de trabajo completo mediante la herramienta de creación rápida AEM sitios, que es muy fácil de usar. Este sitio de documentación le ayudará a optimizar el desarrollo front-end de su sitio AEM y a personalizar rápidamente su sitio sin AEM conocimiento back-end.
 
 ### Configuración de una canalización front-end {#configure-front-end}
 
@@ -82,6 +82,12 @@ Para aprender a configurar la canalización front-end, consulte:
 
 * [Adición de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Adición de una canalización que no sea de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### Desarrollo de sitios con la canalización front-end {#developing-with-front-end-pipeline}
+
+Con la canalización de front-end, se da más independencia a los desarrolladores de front-end y el proceso de desarrollo puede ganar una velocidad sustancial.
+
+Consulte [este documento](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber cómo funciona este proceso, así como algunas consideraciones que deben tenerse en cuenta para aprovechar al máximo este proceso.
 
 ## Canalizaciones de pila completa {#full-stack-pipeline}
 
