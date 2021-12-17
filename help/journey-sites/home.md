@@ -2,10 +2,10 @@
 title: recorridos de AEM Sites
 description: Comience aquí para obtener una descripción general de los recorridos guiados disponibles para comprender AEM potentes funciones de los sitios.
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,8 @@ Los siguientes Recorridos de documentación están disponibles para los temas de
 
 | Título | Descripción | Audiencia principal |
 |---|---|---|
-| [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md) | Obtenga información sobre las tecnologías de AEM Sites, cómo se pueden utilizar en el proyecto y cómo crear y actualizar proyectos de traducción en AEM de A a Z. | Especialistas en traducción |
 | [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) | Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios AEM fácil de usar, para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin AEM conocimiento del servidor. | Desarrolladores front-end |
+| [Recorrido del complemento Demostraciones de referencia](/help/journey-sites/demos-add-on/overview.md) | Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de pruebas de referencia de AEM a un entorno de entorno limitado con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas. | Administrador del sistema |
+| [Recorrido de traducción de sitios](/help/journey-sites/translation/overview.md) | Obtenga información sobre las tecnologías de AEM Sites, cómo se pueden utilizar en el proyecto y cómo crear y actualizar proyectos de traducción en AEM de A a Z. | Especialistas en traducción |
 
 Manténgase atento a [recorridos futuros que cubran funciones adicionales.](/help/journey-documentation/documentation-journeys.md#journeys)

@@ -2,7 +2,7 @@
 title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.12.0
 description: Estas son las notas de la versión de Cloud Manager en AEM versión as a Cloud Service 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -31,7 +31,7 @@ La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2021.12.0 es 
 * Un usuario con la función Administrador de implementación ahora puede iniciar el asistente de creación de proyectos/ramas para un repositorio sin ramas desde el menú de acción de la página repositorios.
 * El administrador de implementación, que se encuentra en el flujo de trabajo de añadir o editar canalización, ahora está informado sobre cómo crear una rama o proyecto si el repositorio seleccionado no tiene ramas.
 * Se ha añadido una nueva función de autoservicio de Cloud Manager para permitir [agregar secretos y variables de forma libre en el nivel de entorno.](/help/implementing/cloud-manager/environment-variables.md)
-* Con el nuevo complemento de demostraciones de referencia (disponible el 17 de diciembre de 2021), se pueden instalar las bases de código de demostración más recientes para AEM productos y estar listos para implementarse mediante el nuevo [herramienta de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) en Sitios.
+* Con el nuevo [Complemento Demostraciones de Referencia](/help/journey-sites/demos-add-on/overview.md) (disponible el 17 de diciembre de 2021), se pueden instalar las bases de código de demostración más recientes para AEM productos y estar listos para ser implementados a través del nuevo [herramienta de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) en Sitios.
 * Las canalizaciones front-end ahora admiten variables de canalización.
 * Las pantallas ahora se pueden habilitar en el cuadro de diálogo Editar programa para todos los entornos limitados.
 * Las directrices proporcionadas por la tarjeta de llamada a la acción de la página de información general se han actualizado para reflejar con precisión su asociación con la canalización de pila completa de producción.

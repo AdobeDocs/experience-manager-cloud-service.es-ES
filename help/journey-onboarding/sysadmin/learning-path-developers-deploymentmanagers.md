@@ -3,10 +3,11 @@ title: Ruta de aprendizaje para desarrolladores y administradores de implementac
 description: Siga esta página para conocer los pasos siguientes después de obtener acceso, si es un desarrollador o un administrador de implementación
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 2%
+source-wordcount: '607'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +28,7 @@ Si está leyendo esta sección, es probable que se le asigne un perfil de produc
 
 >[!NOTE]
 >* Como *Desarrollador*, querrá iniciar sesión en Cloud Manager y familiarizarse con el acceso a Git.
->* Como *Deployment Manager*, querrá familiarizarse con cómo configurar canalizaciones e incluso implementar código.
+>* Como *Administrador de implementación*, querrá familiarizarse con cómo configurar canalizaciones e incluso implementar código.
 
 
 ## Requisitos previos {#prerequisites}
@@ -46,19 +47,23 @@ Para obtener más información sobre este tema, consulte [Acceso a Git](https://
 ## Configuración de canalización {#setup-pipeline}
 
 Puede configurar la canalización de producción o no de producción desde la interfaz de usuario de Cloud Manager.
-Para obtener más información sobre este tema, consulte [Configuración de la canalización CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
+Para obtener más información sobre este tema, consulte [Configuración de la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
 
 ## Siguientes pasos {#whats-next}
 
-Los responsables de desarrollo e implementación ya están listos para familiarizarse con el desarrollo de código en AEM como Cloud Service. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación. Para obtener más información sobre el recorrido de aprendizaje para autores de contenido, consulte [Ruta de aprendizaje para autores de AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+Los responsables de desarrollo e implementación ya están listos para familiarizarse con el desarrollo de código en AEM as a Cloud Service. Obtenga más información o encuentre más rutas de aprendizaje en la sección Recursos adicionales que aparece a continuación. Para obtener más información sobre el recorrido de aprendizaje de los autores de contenido, consulte [Ruta de aprendizaje para autores de AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>Ahora que está integrado, puede [obtenga información sobre cómo agregar fácilmente el complemento de demostraciones de referencia de AEM](/help/journey-sites/demos-add-on/overview.md) a un entorno de entorno limitado con una configuración de AEM mínima y poder probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
 
 ## Recursos adicionales {#additional-resources}
 
 * [Acceso a la administración de cuentas de Git y Git desde Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [Entorno de desarrollo local para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Entorno de desarrollo local para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=es)
 
-* [Introducción a AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Introducción a AEM Sites (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es)
 
 * [Introducción al AEM SPA Editor y React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
