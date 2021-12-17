@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2704'
 ht-degree: 1%
 
 ---
@@ -132,57 +132,111 @@ Para cargar un mayor número de archivos, utilice uno de los siguientes métodos
 * [[!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html): Útil para los profesionales creativos y los especialistas en marketing que cargan recursos desde su sistema de archivos local. Utilícelo para cargar carpetas anidadas disponibles localmente.
 * [Herramienta de ingesta masiva](#asset-bulk-ingestor): Se utiliza para la ingesta de grandes cantidades de recursos, ya sea ocasionalmente o inicialmente al implementar [!DNL Experience Manager].
 
-### Herramienta de ingesta masiva de recursos {#asset-bulk-ingestor}
+### Herramienta de importación masiva de recursos {#asset-bulk-ingestor}
 
 La herramienta solo se proporciona al grupo de administradores para su uso en ingesta a gran escala de recursos de los almacenes de datos de Azure o S3. Consulte un vídeo de introducción a la configuración y la ingesta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-Para configurar la herramienta, siga estos pasos:
+La siguiente imagen ilustra las distintas etapas de la ingesta de recursos en Experience Manager desde un almacén de datos:
+
+![Herramienta de ingesta masiva](assets/bulk-ingestion.png)
+
+#### Requisitos previos {#prerequisites-bulk-ingestion}
+
+Debe tener los detalles de almacenamiento del blob de origen para conectar la instancia de Experience Manager a un almacenamiento de datos.
+
+#### Configuración de la herramienta de importación masiva {#configure-bulk-ingestor-tool}
+
+Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Importación masiva]**. Seleccione el **[!UICONTROL Crear]** .
 
-![Configuración del importador masivo](assets/bulk-import-config.png)
+1. Especifique un título para la configuración de importación masiva en la **[!UICONTROL Título]** campo .
 
-1. Activado **[!UICONTROL configuración de importación masiva]** , proporcione los valores necesarios y, a continuación, seleccione **[!UICONTROL Guardar]**.
+1. Seleccione el tipo de fuente de datos de la **[!UICONTROL Importar origen]** lista desplegable.
 
-   * [!UICONTROL Título]: Un título descriptivo.
-   * [!UICONTROL Importar origen]: Seleccione la fuente de datos aplicable.
-   * [!UICONTROL Cuenta de almacenamiento de Azure]: Proporcione el nombre del [!DNL Azure] cuenta de almacenamiento.
-   * [!UICONTROL Contenedor de Azure Blob]: Proporcione la variable [!DNL Azure] contenedor de almacenamiento.
-   * [!UICONTROL Clave de acceso de Azure]: Proporcione la clave de acceso a [!DNL Azure] cuenta.
-   * [!UICONTROL Carpeta de origen]: Este filtro suele ser compatible con los proveedores de almacenamiento en la nube de Azure y AWS.
-   * [!UICONTROL Filtrar por tamaño mínimo]: Proporcione un tamaño de archivo mínimo de los recursos en MB.
-   * [!UICONTROL Filtrar por tamaño máximo]: Proporcione el tamaño máximo de archivo de los recursos en MB.
-   * [!UICONTROL Excluir tipos de mime]: Lista de tipos MIME separados por comas que se excluirán de la ingesta. Por ejemplo, `image/jpeg, image/.*, video/mp4`. Consulte [todos los formatos de archivo compatibles](/help/assets/file-format-support.md).
-   * [!UICONTROL Incluir tipos de MIME]: Lista de tipos MIME separados por comas que se incluirán en la ingesta. Consulte [todos los formatos de archivo compatibles](/help/assets/file-format-support.md).
-   * [!UICONTROL Eliminar archivo de origen después de la importación]: Seleccione esta opción para eliminar los archivos originales del almacén de datos de origen después de importar los archivos en [!DNL Experience Manager].
-   * [!UICONTROL Modo de importación]: Seleccione Omitir, Reemplazar o Crear versión. El modo Omitir es el predeterminado y en este modo el ingestor omite importar un recurso si ya existe. Ver el significado de [reemplazar y crear opciones de versión](#handling-upload-existing-file).
-   * [!UICONTROL Carpeta de destino de recursos]: Importar carpeta en DAM donde se van a importar los recursos. Por ejemplo, `/content/dam/imported_assets`
-   * [!UICONTROL Archivo de metadatos]: El archivo de metadatos que se va a importar, proporcionado en formato CSV. Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta Ingesta masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el del formato de archivo CSV cuando [Importación y exportación metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen después de la importación** , filtre los archivos CSV utilizando la opción **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar archivos CSV en estos campos.
+1. Proporcione los valores para crear una conexión con el origen de datos. Por ejemplo, si selecciona **Almacenamiento de Azure Blob** como fuente de datos, especifique los valores de la cuenta de almacenamiento de Azure, el contenedor de blob de Azure y la clave de acceso de Azure.
 
-1. Puede eliminar, modificar, ejecutar y hacer más con las configuraciones de ingestor creadas. Cuando selecciona una configuración de ingestor de importación masiva, las siguientes opciones están disponibles en la barra de herramientas.
+1. Proporcione el nombre de la carpeta raíz que contiene recursos en el origen de datos en la **[!UICONTROL Carpeta de origen]** campo .
 
-   * [!UICONTROL Editar]: Edite la configuración seleccionada.
-   * [!UICONTROL Eliminar]: Eliminar la configuración seleccionada.
-   * [!UICONTROL Marque]: Valide la conexión con el almacén de datos.
-   * [!UICONTROL Ensayo]: Invoque una ejecución de prueba de la ingesta masiva.
-   * [!UICONTROL Ejecutar]: Ejecute la configuración seleccionada.
-   * [!UICONTROL Stop]: Finalice una configuración activa.
-   * [!UICONTROL Programación]: Defina una programación recurrente o única para la ingesta de recursos.
-   * [!UICONTROL Estado del trabajo]: Ver el estado de la configuración cuando se utiliza en un trabajo de importación en curso o se utiliza para un trabajo completado.
-   * [!UICONTROL Historial de trabajos]: Instancias anteriores del trabajo.
-   * [!UICONTROL Ver recursos]: Ver la carpeta de destino si existe.
+1. (Opcional) Proporcione el tamaño mínimo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en el **[!UICONTROL Filtrar por tamaño mínimo]** campo .
 
-   ![Opciones de barra de herramientas para configuraciones de ingestor](assets/bulk-ingest-toolbar-options.png)
+1. (Opcional) Proporcione el tamaño máximo de archivo de los recursos en MB para incluirlos en el proceso de ingesta en el **[!UICONTROL Filtrar por tamaño máximo]** campo .
 
-Para programar una importación masiva única o recurrente, siga estos pasos:
+1. (Opcional) Especifique la lista de tipos MIME separados por comas que se excluirán de la ingesta en la **[!UICONTROL Excluir tipos MIME]** campo . Por ejemplo, `image/jpeg, image/.*, video/mp4`. Consulte [todos los formatos de archivo compatibles](/help/assets/file-format-support.md).
+
+1. Especifique la lista de tipos MIME separados por comas que se incluirán en la ingesta de **[!UICONTROL Incluir tipos MIME]** campo . Consulte [todos los formatos de archivo compatibles](/help/assets/file-format-support.md).
+
+1. Seleccione el **[!UICONTROL Eliminar archivo de origen después de la importación]** para eliminar los archivos originales del almacén de datos de origen después de importar los archivos en [!DNL Experience Manager].
+
+1. Seleccione el **[!UICONTROL Modo de importación]**. Select **Omitir**, **Reemplazar** o **Crear versión**. El modo Omitir es el predeterminado y en este modo el ingestor omite importar un recurso si ya existe. Ver el significado de [reemplazar y crear opciones de versión](#handling-upload-existing-file).
+
+1. Especifique una ruta para definir una ubicación en DAM donde se importarán los recursos mediante la variable **[!UICONTROL Carpeta de destino de recursos]** campo . Por ejemplo, `/content/dam/imported_assets`.
+
+1. (Opcional) Especifique el archivo de metadatos que desea importar, proporcionado en formato CSV, en la variable **[!UICONTROL Archivo de metadatos]** campo . Especifique el archivo CSV en la ubicación del blob de origen y consulte la ruta al configurar la herramienta de importación masiva. El formato de archivo CSV al que se hace referencia en este campo es el mismo que el del formato de archivo CSV cuando [Importación y exportación metadatos de recursos de forma masiva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Si selecciona la opción **Eliminar archivo de origen después de la importación** , filtre los archivos CSV utilizando la opción **Excluir** o **Incluir tipo MIME** o **Filtrar por ruta/archivo** campos. Puede utilizar una expresión regular para filtrar archivos CSV en estos campos.
+
+1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración.
+
+#### Administrar la configuración de la herramienta de importación masiva {#manage-bulk-import-configuration}
+
+Después de crear la configuración de la herramienta de importación masiva, puede realizar tareas para evaluar la configuración antes de ingerir masivamente recursos en la instancia de Experience Manager. Seleccione la configuración disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Importación masiva]** para ver las opciones disponibles para administrar la configuración de la herramienta de importación masiva.
+
+##### Editar la configuración {#edit-configuration}
+
+Seleccione la configuración y haga clic en **[!UICONTROL Editar]** para modificar los detalles de configuración. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
+
+##### Eliminar la configuración {#delete-configuration}
+
+Seleccione la configuración y haga clic en **[!UICONTROL Eliminar]** para eliminar la configuración de Importación masiva.
+
+##### Validar la conexión con el origen de datos {#validate-connection}
+
+Seleccione la configuración y haga clic en **[!UICONTROL check]** para validar la conexión con el origen de datos. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
+
+![Mensaje de éxito de Importación masiva](assets/bulk-import-success-message.png)
+
+##### Invocar una ejecución de prueba para el trabajo de importación masiva {#invoke-test-run-bulk-import}
+
+Seleccione la configuración y haga clic en **[!UICONTROL Ensayo]** para invocar una ejecución de prueba para el trabajo de importación masiva. Experience Manager muestra los siguientes detalles sobre el trabajo de importación masiva:
+
+![Resultado del simulacro](assets/dry-assets-result.png)
+
+##### Programar una importación masiva única o recurrente {#schedule-bulk-import}
+
+Para programar una importación masiva recurrente o de una sola vez, ejecute los siguientes pasos:
 
 1. Cree una configuración de importación masiva.
 1. Seleccione la configuración y seleccione **[!UICONTROL Programación]** en la barra de herramientas.
 1. Establezca una ingesta única o programe una programación por hora, diaria o semanal. Haga clic en **[!UICONTROL Submit]**.
 
    ![Programar trabajo de ingesta masiva](assets/bulk-ingest-schedule1.png)
+
+
+##### Ver la carpeta de destino de Assets {#view-assets-target-folder}
+
+Seleccione la configuración y haga clic en **[!UICONTROL Ver recursos]** para ver la ubicación de destino de los recursos en la que se importan después de ejecutar el trabajo de importación masiva.
+
+#### Ejecutar la herramienta de importación masiva {#run-bulk-import-tool}
+
+Después [configuración de la herramienta de importación masiva](#configure-bulk-ingestor-tool) y opcionalmente [administración de la configuración de la herramienta de importación masiva](#manage-bulk-import-configuration), puede ejecutar el trabajo de configuración para iniciar la ingesta masiva de recursos.
+
+Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Importación masiva]**, seleccione [Configuración de Importación masiva](#configure-bulk-ingestor-tool) y haga clic en **[!UICONTROL Ejecutar]** para iniciar el proceso de importación masiva. Haga clic en **[!UICONTROL Ejecutar]** para confirmar.
+
+El Experience Manager actualiza el estado del trabajo a **Procesamiento** y **Correcto** una vez completado el trabajo correctamente. Haga clic en **Ver recursos** para ver los recursos importados en Experience Manager.
+
+Cuando el trabajo esté en curso, también puede seleccionar la configuración y hacer clic en **Stop** para detener el proceso de ingesta masiva. Haga clic en **Ejecutar** para reanudar el proceso. También puede hacer clic en **Ensayo** para conocer los detalles de los recursos que siguen pendientes de importación.
+
+#### Administrar trabajos después de la ejecución {#manage-jobs-after-execution}
+
+Experience Manager permite ver el historial de los trabajos de importación masiva. El historial de trabajos incluye el estado del trabajo, el creador del trabajo, los registros, junto con otros detalles como la fecha y la hora de inicio, la fecha y la hora de creación y la fecha y hora de finalización.
+
+Para acceder al historial de trabajos de una configuración, seleccione la configuración y haga clic en **[!UICONTROL Historial de trabajos]**. Seleccione un trabajo y haga clic en **Apertura**.
+
+![Programar trabajo de ingesta masiva](assets/job-history-bulk-import.png)
+
+Experience Manager muestra el historial de trabajos. En la página Historial de trabajos de Importación masiva , también puede hacer clic en **Eliminar** para eliminar ese trabajo para la configuración de Importación masiva.
+
 
 ## Carga de recursos mediante clientes de escritorio {#upload-assets-desktop-clients}
 

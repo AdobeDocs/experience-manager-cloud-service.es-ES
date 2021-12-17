@@ -3,7 +3,7 @@ title: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
@@ -44,13 +44,11 @@ Eche un vistazo a la [Información general sobre la versión de diciembre de 202
 
 * [!DNL Dynamic Media] ahora es compatible con la ingesta, previsualización, reproducción y publicación de vídeos MXF. Todavía no se admite la anotación ni el vídeo de ventas para vídeos MXF.
 
-* Después de configurar una conexión entre las implementaciones remotas de DAM y Sites, los recursos en DAM remoto están disponibles en la implementación de Sites. Ahora puede realizar las operaciones de actualización, eliminación, cambio de nombre y movimiento en los recursos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites.
+* Después de configurar una conexión entre las implementaciones remotas de DAM y Sites, los recursos en DAM remoto están disponibles en la implementación de Sites. Ahora puede realizar el [actualizar, eliminar, cambiar el nombre y mover operaciones](../../assets/use-assets-across-connected-assets-instances.md) en los recursos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites.
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
-
-* **Portal de Forms**: Puede usar [Portal de Forms](/help/forms/configure-forms-portal.md) para enumerar los formularios adaptables publicados en una página de AEM Sites. Ayuda al visitante del sitio a descubrir todos los formularios disponibles. Además, el visitante puede utilizar el portal de formularios para guardar y acceder al borrador de un formulario adaptable y consultar la versión PDF de un formulario adaptable enviado.
 
 * **Externalización AEM datos de flujo de trabajo para un procesamiento seguro**: Puede almacenar datos de flujos de trabajo AEM en proceso (AEM datos de variables de flujo de trabajo) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Los elementos de datos y las variables de flujo de trabajo no se almacenan en AEM repositorio y se recuperan a petición de un repositorio administrado por el cliente mientras se procesa el flujo de trabajo.
 
@@ -62,6 +60,8 @@ Eche un vistazo a la [Información general sobre la versión de diciembre de 202
    * Genere formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
 
 * **Fuentes personalizadas para documentos de registro y PDF creados con API de comunicaciones**: Ahora puede utilizar fuentes aprobadas por la marca en documentos de PDF generados mediante las API de comunicaciones para cumplir con los requisitos de la organización.
+
+* **Portal de Forms**: Puede usar [Portal de Forms](/help/forms/configure-forms-portal.md) para enumerar los formularios adaptables publicados en una página de AEM Sites. Ayuda al visitante del sitio a descubrir todos los formularios disponibles. Además, el visitante puede utilizar el portal de formularios para guardar y acceder al borrador de un formulario adaptable y consultar la versión PDF de un formulario adaptable enviado.
 
 ## Complemento CIF {#cloud-services-cif}
 
