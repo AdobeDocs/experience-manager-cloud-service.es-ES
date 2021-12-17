@@ -2,10 +2,10 @@
 title: Estructura del proyecto AEM
 description: Obtenga información sobre cómo definir estructuras de paquetes para la implementación en Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
-ht-degree: 13%
+source-wordcount: '2930'
+ht-degree: 12%
 
 ---
 
@@ -72,21 +72,6 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
       + Cualquiera `rep:policy` para cualquier ruta bajo `/apps`
    + [Secuencias de comandos agrupadas precompiladas](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ La variable `ui.config` paquete, contiene todo [Configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md):
-   + Carpeta organizativa que contiene definiciones de configuración de OSGi específicas del modo de ejecución
-      + `/apps/my-app/osgiconfig`
-   + Carpeta de configuración común de OSGi que contiene configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de AEM de destino
-      + `/apps/my-app/osgiconfig/config`
-   + Ejecute carpetas de configuración OSGi específicas del modo que contengan configuraciones OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service AEM destino
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Secuencias de comandos de configuración de Repo Init OSGi
-      + [Punto de repo](#repo-init) es la forma recomendada de implementar contenido (mutable) que forma parte lógicamente de la aplicación AEM. Las configuraciones de OSGi de Repo Init deben ser lugares en el lugar apropiado `config.<runmode>` como se describe anteriormente, y se utilizará para definir:
-         + Estructuras de contenido de línea de base
-         + Usuarios
-         + Usuarios de servicio
-         + Grupos
-         + ACL (permisos)
-
 >[!NOTE]
 >
 >El mismo código debe implementarse en todos los entornos. Esto es necesario para garantizar que también se esté produciendo un nivel de validaciones de confianza en el entorno de ensayo. Para obtener más información, consulte la sección sobre [Modos de ejecución](/help/implementing/deploying/overview.md#runmodes).
@@ -125,6 +110,22 @@ La estructura de implementación de aplicaciones recomendada es la siguiente:
       + `site-b.ui.config` implementa las configuraciones de OSGi requeridas por el sitio B
       + `site-b.ui.content` implementa el contenido y la configuración requeridos por el sitio B
 
++ La variable `ui.config` contiene todo [Configuraciones de OSGi](/help/implementing/deploying/configuring-osgi.md):
+   + Se considera código y pertenece a paquetes OSGi, pero no contiene nodos de contenido normales. Por lo tanto, está marcado como un paquete de contenedor
+   + Carpeta organizativa que contiene definiciones de configuración de OSGi específicas del modo de ejecución
+      + `/apps/my-app/osgiconfig`
+   + Carpeta de configuración común de OSGi que contiene configuraciones de OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service de AEM de destino
+      + `/apps/my-app/osgiconfig/config`
+   + Ejecute carpetas de configuración OSGi específicas del modo que contengan configuraciones OSGi predeterminadas que se aplican a todos los destinos de implementación as a Cloud Service AEM destino
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Secuencias de comandos de configuración de Repo Init OSGi
+      + [Punto de repo](#repo-init) es la forma recomendada de implementar contenido (mutable) que forma parte lógicamente de la aplicación AEM. Las configuraciones de OSGi de Repo Init deben ser lugares en el lugar apropiado `config.<runmode>` como se describe anteriormente, y se utilizará para definir:
+         + Estructuras de contenido de línea de base
+         + Usuarios
+         + Usuarios de servicio
+         + Grupos
+         + ACL (permisos)
+
 ### Paquetes de aplicaciones adicionales{#extra-application-packages}
 
 Si la implementación de AEM utiliza otros proyectos de AEM, que a su vez están formados por su propio código y paquetes de contenido, sus paquetes de contenedor deberían incrustarse en el `all` paquete.
@@ -141,14 +142,14 @@ Por ejemplo, un proyecto de AEM que incluya 2 aplicaciones de AEM de proveedor p
 
 ## Tipos de paquetes {#package-types}
 
-Los paquetes deben marcarse con su tipo de paquete declarado.
+Los paquetes deben marcarse con su tipo de paquete declarado. Los tipos de paquetes ayudan a aclarar el propósito y la implementación de un paquete.
 
-+ Los paquetes de contenedores deben configurar su `packageType` a `container`. Los paquetes de contenedores no deben contener directamente paquetes OSGi, configuraciones OSGi y no se les permite usar [instalar enlaces](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Los paquetes de contenedores deben configurar su `packageType` a `container`. Los paquetes de contenedores no deben contener nodos regulares. Solo se permiten paquetes, configuraciones y subpaquetes OSGi. No se permite el uso de contenedores en AEM as a Cloud Service [instalar enlaces](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Los paquetes de código (inmutables) deben configurar sus `packageType` a `application`.
 + Los paquetes de contenido (mutables) deben configurar sus `packageType` a `content`.
 
 
-Para obtener más información, consulte [Apache Jackrabbit FileVault: Documentación del complemento Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) y [Fragmento de configuración Maven de FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) más abajo.
+Para obtener más información, consulte [Apache Jackrabbit FileVault: Documentación del complemento Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Tipos de paquetes de Apache Jackrabbit](http://jackrabbit.apache.org/filevault/packagetypes.html)y [Fragmento de configuración Maven de FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) más abajo.
 
 >[!TIP]
 >
