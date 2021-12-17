@@ -2,7 +2,7 @@
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 27%
@@ -57,16 +57,16 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
 1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Migración de contenido**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Seleccione el **Transferencia de contenido** opción de **Migración de contenido** asistente.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. La consola siguiente aparece al crear el primer conjunto de migración. Haga clic en **Crear conjunto** de migración para crear un conjunto de migración nuevo.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Si tiene conjuntos de migración existentes, la consola mostrará la lista de conjuntos de migración existentes con su estado actual.
@@ -74,7 +74,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
 1. Rellene los campos de **Crear conjunto de migración** como se describe a continuación.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Nombre**: introduzca el nombre del conjunto de migración.
       >[!NOTE]
@@ -95,7 +95,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
       1. **Incluir versión**: seleccione la opción que desee. Cuando se incluyen versiones, la ruta `/var/audit` se incluye automáticamente para migrar eventos de auditoría.
 
-         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >Si tiene intención de incluir versiones como parte de un conjunto de migración y realiza complementos con `wipe=false`, debe desactivar la depuración de versiones debido a una limitación actual en la herramienta de transferencia de contenido. Si prefiere mantener habilitada la depuración de versiones y realiza recargas en un conjunto de migración, debe realizar la ingesta como `wipe=true`.
@@ -115,7 +115,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
 1. Verá el conjunto de migraciones en la variable **Transferencia de contenido** como se muestra en la figura siguiente.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    Todos los conjuntos de migración existentes se muestran en la **Transferencia de contenido** con su estado actual y la información de estado. Puede ver algunos de estos iconos que se describen a continuación.
 
@@ -125,7 +125,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
 
 1. Seleccione un conjunto de migración y haga clic en **Propiedades** para ver o editar las propiedades del conjunto de migración. Durante la edición de propiedades, no es posible cambiar la variable **Nombre del conjunto de migración** o **URL del servicio**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Siguientes pasos {#whats-next}

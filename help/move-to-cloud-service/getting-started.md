@@ -2,10 +2,10 @@
 title: Guía de migración para Experience Manager as a Cloud Service para socios
 description: Guía de migración para Experience Manager as a Cloud Service para socios
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2092'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -115,7 +115,7 @@ Para una transición exitosa y sin problemas, se debe asegurar una planificació
 
 La imagen siguiente muestra una representación pictórica del viaje de transición recomendado a Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/home-img1.png)
+![image](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
@@ -171,7 +171,7 @@ Cloud Manager permite a las organizaciones administrar su Experience Manager en 
 1. [Implementar en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=en#managing-code) git
 2. Ejecute el código de cliente mediante la variable [Canalización de calidad de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use)
 3. [Implementar en entorno de desarrollo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Solo migración**] Transferencia de contenido mediante paquetes o [Herramienta de transferencia de contenido](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
+4. [**Solo migración**] Transferencia de contenido mediante paquetes o [Herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
 5. Realizar ciclos de prueba recomendados (humo, control de calidad y más)
 6. Enviar a la canalización de producción de Cloud Manager
 7. Validación de prueba de humo

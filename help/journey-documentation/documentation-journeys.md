@@ -3,9 +3,9 @@ title: recorridos de documentación de AEM
 description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -93,6 +93,6 @@ Ya tiene a su disposición varios Recorridos de documentación. Dado que cada re
 | [AEM Recorrido de incorporación](/help/journey-onboarding/home.md) | Empiece aquí para ponerse en marcha rápidamente con su nuevo entorno as a Cloud Service AEM! |
 | [AEM Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) | Comience aquí para obtener un recorrido guiado a través de la herramienta de creación rápida de sitios de AEM fácil de usar para optimizar el desarrollo front-end de su sitio AEM y personalizar rápidamente su sitio sin AEM conocimiento del servidor. |
 | recorrido de comercio AEM | ¡Muy pronto! |
-| Recorrido de migración de AEMaaCS | ¡Muy pronto! |
+| [recorrido de migración as a Cloud Service de AEM](/help/journey-migration/getting-started.md) | Comience aquí para obtener un recorrido paso a paso sobre cómo migrar de la instalación local o de AEM administrada por Adobe a la totalmente basada en la nube AEM as a Cloud Service y conocer sus numerosas ventajas. |
 
 Vuelva a buscar más contenido a medida que haya nuevos recorridos disponibles.

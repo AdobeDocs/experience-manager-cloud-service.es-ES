@@ -1,31 +1,30 @@
 ---
-title: Información general sobre el Analizador de optimizaciones
-description: Información general sobre el Analizador de optimizaciones
-translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+title: Información general sobre Best Practices Analyzer
+description: Información general sobre Best Practices Analyzer
+exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 29%
 
 ---
 
-
 # Información general {#overview-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_overview"
->title="Visión general del Analizador de optimizaciones"
->abstract="El Analizador de optimizaciones proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen AEM optimizaciones. También proporciona orientación sobre los próximos pasos para adoptar AEM mejores prácticas. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación existente de Adobe Experience Manager (AEM) a AEM como Cloud Service."
+>title="Información general de Best Practices Analyzer"
+>abstract="El Analizador de prácticas recomendadas proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen AEM prácticas recomendadas. También proporciona orientación sobre los pasos siguientes para adoptar AEM prácticas recomendadas. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service."
 
-El Analizador de optimizaciones proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen AEM optimizaciones. También proporciona orientación sobre los próximos pasos para adoptar AEM mejores prácticas. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación existente de Adobe Experience Manager (AEM) a AEM como Cloud Service.
+El Analizador de prácticas recomendadas proporciona una evaluación de la implementación de AEM actual indicando las áreas que no siguen AEM prácticas recomendadas. También proporciona orientación sobre los pasos siguientes para adoptar AEM prácticas recomendadas. Además, ayuda a acelerar los procesos de evaluación de la preparación para pasar de una implementación de Adobe Experience Manager (AEM) existente a AEM as a Cloud Service.
 
 Esta herramienta genera un informe que identifica las áreas de posible refactorización, que es el primer paso en el viaje de transición a AEM as a Cloud Service.
 
-## Informe del Analizador de optimizaciones {#bpa-report}
+## Informe del Analizador de prácticas recomendadas {#bpa-report}
 
-El informe Analizador de optimizaciones se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización. El informe consiste en categorías de problemas que deben resolverse antes de una implementación exitosa en AEM as a Cloud Service.
+El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización. El informe consiste en categorías de problemas que deben resolverse antes de una implementación exitosa en AEM as a Cloud Service.
 
-El informe Analizador de optimizaciones incluye las siguientes categorías:
+El informe del Analizador de prácticas recomendadas incluye las siguientes categorías:
 
 * Funcionalidad de la aplicación que se debe refactorizar.
 * Elementos de repositorio que deben moverse a una ubicación admitida.
@@ -33,9 +32,9 @@ El informe Analizador de optimizaciones incluye las siguientes categorías:
 * Problemas de implementación y configuración.
 * Funciones de AEM 6.x que se han sustituido por funciones nuevas o que actualmente no son compatibles con AEM as a Cloud Service.
 
-Se proporciona información adicional sobre las categorías y posibles implicaciones y soluciones asociadas con esas categorías mediante vínculos desde el informe del Analizador de optimizaciones.
+Se proporciona información adicional sobre las categorías y posibles implicaciones y soluciones asociadas con esas categorías mediante vínculos desde el informe del Analizador de prácticas recomendadas.
 
 >[!NOTE]
->El informe del Analizador de optimizaciones acelera el proceso de estimación del tiempo y el costo que se requiere para realizar la transición a AEM como Cloud Service al proporcionar información que de otra manera tendría que recopilarse y evaluarse manualmente.
+>El informe de Best Practices Analyzer acelera el proceso de estimación del tiempo y el costo necesarios para realizar la transición a AEM as a Cloud Service al proporcionar información que de otra manera tendría que recopilarse y evaluarse manualmente.
 
-También puede descargar el informe del Analizador de optimizaciones desde la instancia de AEM. Consulte [Visualización del informe del Analizador de optimizaciones](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más detalles.
+También puede descargar el informe de Best Practices Analyzer desde la instancia de AEM. Consulte [Visualización del informe de Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obtener más información.

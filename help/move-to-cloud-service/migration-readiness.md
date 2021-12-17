@@ -2,7 +2,7 @@
 title: Fase de preparación
 description: Fase de preparación
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 87%
@@ -37,7 +37,7 @@ Consulte las [Funciones en desuso](https://experienceleague.adobe.com/docs/exper
 
 La siguiente figura muestra los pasos clave involucrados durante la fase de planificación:
 
-![image](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![image](/help/journey-migration/assets/planning-phaseimg1.png)
 
 ### Evaluación de la preparación de Cloud Service {#access-cloud-readiness}
 
@@ -45,7 +45,7 @@ El primer paso en la fase de planificación es evaluar la preparación para pasa
 
 Deberá realizar una evaluación completa del código origen actual de AEM en relación con los cambios notables y las funciones en desuso para determinar el nivel de esfuerzo esperado en el viaje de transición.
 
-Puede acelerar el paso de evaluación ejecutando el Analizador de prácticas recomendadas en su versión AEM actual. Para obtener más información, consulte [Best Practices Analyzer](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md).
+Puede acelerar el paso de evaluación ejecutando el Analizador de prácticas recomendadas en su versión AEM actual. Para obtener más información, consulte [Analizador de prácticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 >[!NOTE]
 >Si ya tiene acceso a Cloud Manager y a un entorno de servicios en la nube, se recomienda ejecutar el código actual en una canalización de calidad de código de Cloud Manager para evaluar los cambios de código necesarios y que sean compatibles con Cloud Service.

@@ -1,14 +1,14 @@
 ---
-title: '[!DNL Assets] as a [!DNL Cloud Service] Guía'
-description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] recursos de autoayuda y vínculos a documentación'
+title: '[!DNL Assets] como [!DNL Cloud Service] Guía'
+description: '[!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] recursos de autoayuda y vínculos a documentación'
 landing-page-description: Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 37%
+source-wordcount: '287'
+ht-degree: 36%
 
 ---
 
@@ -34,7 +34,7 @@ Los siguientes recursos de autoayuda están disponibles para [!DNL Experience Ma
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear y administrar con [!DNL Experience Manager Sites] como [!DNL Cloud Service]. |
 | [Guía del usuario sobre implementación](/help/implementing/home.md) | Descubra cómo crear y personalizar experiencias utilizando las potentes funciones de Experience Manager explorando estos temas de desarrollo e implementación. |
 | [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles funciones de Experience Manager para prepararse para su primer proyecto sin objetivos. |
-| [Migración a [!DNL Experience Manager] como [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Comprender el recorrido de transición a [!DNL Experience Manager] como [!DNL Cloud Service]. |
+| [Migración a [!DNL Experience Manager] como [!DNL Cloud Service]](/help/journey-migration/getting-started.md) | Comprender el recorrido de transición a [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Conectores en [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | [Guía del usuario sobre operaciones](/help/operations/home.md) | Obtenga información sobre las operaciones back-end de [!DNL Experience Manager] como [!DNL Cloud Service], como tareas de indexación y mantenimiento. |
 | [Guía del usuario de Commerce](/help/commerce-cloud/home.md) | Obtenga información sobre Commerce Integration Framework en [!DNL Experience Manager] como [!DNL Cloud Service]. |
