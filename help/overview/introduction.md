@@ -46,7 +46,7 @@ Con AEM as a Cloud Service,
 >[!NOTE]
 >Consulte [Terminología](terminology.md) para conocer algunos de los nuevos términos que se han añadido con AEM as a Cloud Service.
 
-## Value Added as a Cloud Service {#value-added-as-a-cloud-service}
+## Valor añadido como Cloud Service {#value-added-as-a-cloud-service}
 
 AEM logra estos objetivos adoptando las principales características de los servicios en la nube modernos:
 
