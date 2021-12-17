@@ -3,14 +3,18 @@ title: Configuración de OSGi para Adobe Experience Manager as a Cloud Service
 description: 'Configuración de OSGi con valores secretos y valores específicos de entorno '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Configuración de OSGi para Adobe Experience Manager as a Cloud Service {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEM ha introducido la capacidad de utilizar la interfaz de usuario de Cloud Manager para configurar variables de entorno estándar con la versión 2021.12.0. Para obtener más información, consulte la documentación [here](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) es un elemento fundamental de la pila tecnológica de Adobe Experience Manager (AEM). Se utiliza para controlar los paquetes compuestos de AEM y sus configuraciones.
 
@@ -140,7 +144,7 @@ Existen dos maneras de crear configuraciones de OSGi, como se describe a continu
 Los archivos de configuración OSGi con formato JSON se pueden escribir a mano directamente en el proyecto AEM. A menudo, esta es la forma más rápida de crear configuraciones de OSGi para componentes de OSGi conocidos, y especialmente componentes de OSGi personalizados que han sido diseñados y desarrollados por el mismo desarrollador que define las configuraciones. Este método también se puede utilizar para copiar/pegar y actualizar configuraciones para el mismo componente OSGi en varias carpetas de modo de ejecución.
 
 1. En su IDE, abra el `ui.apps` proyecto, localizar o crear la carpeta de configuración (`/apps/.../config.<runmode>`) que se dirige a los modos de ejecución que debe aplicar la nueva configuración de OSGi
-1. En esta carpeta de configuración, cree un `<PID>.cfg.json` archivo. El PID es la identidad persistente del componente OSGi. Normalmente es el nombre de clase completo de la implementación del componente OSGi. Por ejemplo:
+1. En esta carpeta de configuración, cree un `<PID>.cfg.json` archivo. El PID es la identidad persistente del componente OSGi. Normalmente es el nombre de clase completo de la implementación de componentes OSGi. Por ejemplo:
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Tenga en cuenta que los nombres de archivo de fábrica de configuración OSGi utilizan la variable `<factoryPID>-<name>.cfg.json` convención de nomenclatura
 1. Abra el nuevo `.cfg.json` y defina las combinaciones de clave/valor para los pares de propiedad y valor OSGi, siguiendo el [Formato de configuración JSON OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -274,7 +278,7 @@ Si una propiedad OSGI requiere valores diferentes para autor y publicación:
 
 ### Ejemplos de configuración {#configuration-examples}
 
-En los ejemplos siguientes, supongamos que hay tres entornos dev, además de los entornos stage y prod.
+En los ejemplos siguientes, supongamos que hay tres entornos de desarrollo, además de los entornos de ensayo y producción.
 
 **Ejemplo 1**
 
