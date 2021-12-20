@@ -1,12 +1,12 @@
 ---
 title: Vista previa de recursos 3D
-description: Obtenga información sobre cómo previsualizar recursos 3D en Dynamic Media.
+description: Obtenga información sobre cómo previsualizar recursos 3D en Experience Manager.
 feature: 3D Assets
 role: User
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 9ecfb0c5dceb0574114aa1acbdda2ac9c3ce2675
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '563'
+ht-degree: 10%
 
 ---
 
