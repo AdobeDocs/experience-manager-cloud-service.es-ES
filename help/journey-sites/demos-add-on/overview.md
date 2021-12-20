@@ -1,10 +1,10 @@
 ---
 title: recorrido del complemento de demostraciones de referencia de AEM
 description: Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de pruebas de referencia de AEM a un entorno de entorno limitado con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,13 @@ Este recorrido establece los requisitos, pasos y métodos para crear un nuevo pr
 
 En este recorrido se exploran varios temas. Los siguientes artículos le proporcionan conocimientos básicos sobre la creación de un nuevo programa, la configuración y el uso del complemento Demos de referencia de AEM y están pensados para su lectura en orden. Se vinculan a la documentación técnica detallada según sea necesario.
 
-|#|Artículo|Descripción| |—|—|—|—| |0|AEM Recorrido de complementos de pruebas de referencia|Este documento| |1|[Comprender la instalación del complemento de demostración de referencia](installation.md)|Obtenga información sobre Cloud Manager y cómo se utiliza para instalar el complemento.| |2|[Creación de un programa y una canalización](create-program.md)|Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.| |3|[Crear un sitio de muestra](create-site.md)|Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas.| |4|[Administrar los sitios de demostración](manage.md)|Obtenga información sobre las herramientas disponibles para ayudarle a administrar sus sitios de demostración y cómo eliminarlos.|
+| # | Artículo | Descripción |
+|---|---|---|
+| 0 | recorrido del complemento de demostraciones de referencia de AEM | Este documento |
+| 1 | [Comprender la instalación del complemento de demostración de referencia](installation.md) | Obtenga información sobre Cloud Manager y cómo se utiliza para instalar el complemento. |
+| 2 | [Creación de un programa y una canalización](create-program.md) | Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento. |
+| 3 | [Crear un sitio de muestra](create-site.md) | Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas. |
+| 4 | [Administrar los sitios de demostración](manage.md) | Obtenga información sobre las herramientas disponibles para ayudarle a administrar sus sitios de demostración y cómo eliminarlos. |
 
 ## Siguientes pasos {#what-is-next}
 
