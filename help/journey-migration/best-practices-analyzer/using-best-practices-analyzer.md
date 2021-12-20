@@ -14,7 +14,7 @@ ht-degree: 41%
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
