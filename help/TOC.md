@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
+source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 33%
@@ -282,6 +282,7 @@ ht-degree: 33%
       + [Agregar y cargar recursos](/help/assets/add-assets.md)
       + [Buscar recursos](/help/assets/search-assets.md)
       + [Tareas comunes de administración de recursos](/help/assets/manage-digital-assets.md)
+      + [Vista previa de recursos 3d](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Etiquetas inteligentes para imágenes](/help/assets/smart-tags.md)
       + [Etiquetado inteligente de recursos de vídeo](/help/assets/smart-tags-video-assets.md)
       + [Organizar recursos](/help/assets/organize-assets.md)
@@ -361,7 +362,6 @@ ht-degree: 33%
       + [Enviar recursos de Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activar la protección de los vínculos interactivos en Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Compatibilidad con 3D](/help/assets/dynamic-media/assets-3d.md)
-      + [Vista previa de recursos 3d](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md)
       + [Imágenes panorámicas](/help/assets/dynamic-media/panoramic-images.md)
       + [Conjuntos de medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)
