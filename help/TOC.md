@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc60e627a6770ee636ad5f8a8e0a8eb81adae9b
+source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3441'
 ht-degree: 33%
 
 ---
@@ -393,7 +393,6 @@ ht-degree: 33%
    + [Introducción](/help/forms/home.md)
    + [Funciones principales](/help/forms/key-features.md)
    + [Cambios importantes](/help/forms/notable-changes.md)
-   + [Notas de versión](/help/forms/release-notes.md)
    + Configuración del servicio {#setup-environment}
       + [Entorno integrado al Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuración de un entorno de desarrollo local](/help/forms/setup-local-development-environment.md)
@@ -450,7 +449,7 @@ ht-degree: 33%
       + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
    + [Integración con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integración con Sign](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [Integración con AEM Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [Integrar con sitios](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integración con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + Creación y uso de flujos de trabajo {#create-form-centric-workflows}
       + [Uso de pasos centrados en Forms en un flujo de trabajo + referencia de paso](/help/forms/aem-forms-workflow-step-reference.md)
@@ -459,7 +458,8 @@ ht-degree: 33%
    + Uso de comunicaciones {#using-communications}
       + [Introducción](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [API de comunicaciones](/help/forms/aem-forms-cloud-service-communications.md)
-      + [API de comunicaciones + procesamiento por lotes](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Procesamiento por lotes de API de comunicaciones](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Uso de fuentes personalizadas en documentos de PDF](/help/forms/use-custom-fonts.md)
    + [Migrar a [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [Preguntas frecuentes](/help/forms/faq.md)
    + [Problemas conocidos](/help/forms/known-issues.md)
