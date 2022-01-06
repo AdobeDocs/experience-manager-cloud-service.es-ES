@@ -1,28 +1,28 @@
 ---
 title: 'Proceso de aprovisionamiento: información general'
 description: 'Proceso de aprovisionamiento: información general'
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '331'
 ht-degree: 7%
 
 ---
 
 
-# AEM como Cloud Service: Incorporación y acceso
+# AEM as a Cloud Service: Incorporación y acceso
 
-En esta página se muestran los recursos informativos sobre el proceso de aprovisionamiento para Experience Manager como Cloud Service.
+Esta página enumera los recursos informativos sobre el proceso de aprovisionamiento para Experience Manager as a Cloud Service.
 
-## Información general sobre el proceso de aprovisionamiento de AEM as a Cloud Service
+## Información general del proceso de aprovisionamiento as a Cloud Service AEM
 
 Esta sección muestra algunos de los artículos más importantes centrados en:
 
-* Acceso a AEM como Cloud Service
+* Acceso AEM as a Cloud Service
 * Proceso de incorporación y aprovisionamiento de Adobe Experience Manager as a Cloud Service
 * Ayuda y recursos
 
 
-### Acceso a AEM como Cloud Service
+### Acceso AEM as a Cloud Service
 
 Una vez completado el aprovisionamiento automático:
 
@@ -34,7 +34,7 @@ Una vez completado el aprovisionamiento automático:
 > ![processoberview.jpg](./assets/processOverview.jpg)
 
 
-Para obtener más información, visite [Incorporación al Experience Manager como Cloud Service en el Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
+Para obtener más información, visite [Incorporación al Experience Manager as a Cloud Service en el Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
 
 ### Recursos y vínculos
 
@@ -50,7 +50,6 @@ Para obtener más información, visite [Incorporación al Experience Manager com
 ### 2. Incorporar organizaciones a Adobe Admin Console:
 
 >   ![processoberview2.jpg](./assets/processOverview2.jpg)
-
 * Administrador del sistema:
    * Aprovisionar AEM programas y entornos.
    * Vaya al Admin Console para tareas administrativas.
@@ -67,12 +66,11 @@ Para obtener más información, visite [Incorporación al Experience Manager com
 Tres métodos para incorporar usuarios, según el tamaño y la preferencia:
 * Crear usuarios manualmente en el Admin Console
 * Cargar archivo .csv
-* Sincronizar usuarios de enterprise Active
-Directorio
+* Sincronizar usuarios de Enterprise Active Directory
 
 ### 4. El administrador configura la organización y concede a los usuarios y grupos acceso a los entornos
 
 ## Ayuda y recursos
 
-* [Primer inicio de sesión - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
-* [Configuración del acceso a AEM como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [Primer inicio de sesión - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
+* [Configuración del acceso a AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)

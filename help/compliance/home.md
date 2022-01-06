@@ -2,10 +2,10 @@
 title: Compatibilidad
 description: En esta página se muestran los recursos informativos que proporcionan información sobre el cumplimiento de las normas en Experience Manager as a Cloud Service.
 landing-page-description: Para obtener información general sobre la conformidad en AEM as a Cloud Service, incluida la privacidad y accesibilidad, comience aquí.
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 72%
+source-wordcount: '386'
+ht-degree: 73%
 
 ---
 
@@ -43,7 +43,7 @@ En esta página se muestran los recursos informativos que proporcionan informaci
 * [Documentación de Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
 * [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
