@@ -1,49 +1,46 @@
 ---
-title: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
-description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about defining Metadata and Tagging for Content Fragments
+description: Learn about defining Metadata and Tagging for Content Fragments
+exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 3%
 
 ---
 
+# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 
-# Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido {#author-headless-metadata-tagging}
+## The Story so Far {#story-so-far}
 
-## La historia hasta ahora {#story-so-far}
+[](overview.md)[](introduction.md)
 
-Al principio del [AEM Recorrido Autor de contenido sin encabezado](overview.md) [Introduction](introduction.md) abarcaba los conceptos básicos y la terminología relevantes para la creación sin encabezado.
+In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
 
-En el paso anterior se le introdujo el uso de referencias para la creación de CMS sin encabezado. Ha aprendido qué tipos de referencias están disponibles y cuáles son sus propósitos: Referencias de contenido, Referencias de recursos/medios y Referencias de fragmento.
-
-Este artículo se basa en estos elementos para que pueda comprender cómo usar metadatos y etiquetado para crear su propio contenido para su proyecto sin encabezado de AEM.
+This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
 
 ## Objetivo {#objective}
 
-* **Audiencia**: Avanzadas
-* **Objetivo**: Introduzca el uso de metadatos y etiquetas para la creación de CMS sin encabezado.
+* ****
+* ****
 
-## Adición de metadatos y etiquetas {#adding-metadata-and-tags}
+## Adding Metadata and Tags {#adding-metadata-and-tags}
 
-Hay tres métodos que puede utilizar para agregar metadatos y etiquetas:
+There are three methods that you can use to add metadata and tags:
 
-* Al crear el fragmento por primera vez:
+* When first creating your fragment:
 
-   ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* La pestaña **Metadata** del editor de fragmentos de contenido le permite añadir ambos campos de metadatos y etiquetas **Tags** predefinidas en el proyecto:
+* ********
 
-   ![Editor de fragmentos de contenido: metadatos](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * También se puede acceder a ella directamente mediante la opción **Properties** de la barra de herramientas de la consola Assets.
+   * ****
 
-## Siguientes pasos {#whats-next}
+## What&#39;s Next {#whats-next}
 
-Ahora puede poner todo este conocimiento en uso y empezar a crear fragmentos de contenido para su proyecto.
+Now you can put all this knowledge to use and start creating Content Fragments for your project.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -51,4 +48,4 @@ Ahora puede poner todo este conocimiento en uso y empezar a crear fragmentos de 
 
 * [Uso de etiquetas  ](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
