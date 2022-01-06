@@ -2,9 +2,9 @@
 title: Funciones en desuso y eliminadas
 description: Notas de la versión específicas de las funciones en desuso y eliminadas de [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
+source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '582'
 ht-degree: 34%
 
 ---
@@ -53,7 +53,8 @@ Esta sección enumera las funciones y capacidades que se han eliminado de [!DNL 
 | [!DNL Sites] | Portal Director y componentes Portlet | Estas funciones quedaron obsoletas en [!DNL Experience Manager] 6.4 y se han eliminado de [!DNL Experience Manager]. |
 | [!DNL Sites] | Importador de diseños | Esta funcionalidad se ha eliminado como secciones inmutables del [!DNL Experience Manager] no se puede acceder al repositorio durante la ejecución. |
 | [!DNL Assets] | [!DNL Assets]El uso compartido de con el servicio principal de Experience Cloud Assets y Creative Cloud Services no está disponible. | Para la integración con [!DNL Adobe Creative Cloud], use [Vínculo de recurso de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Compatibilidad con fuentes de datos de Apache Sling (paquete OSGi org.apache.sling.datasource). | N/D |
+| [!DNL Foundation] | Compatibilidad con fuentes de datos de Apache Sling (paquete OSGi org.apache.sling.datasource) | N/D |
+| [!DNL Foundation] | Compatibilidad con plantillas de secuencias de comandos JST (paquete OSGi org.apache.sling.scripting.jst) | N/D |
 
 ## API de Java {#java-api}
 
