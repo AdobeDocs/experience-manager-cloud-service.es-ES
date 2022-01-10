@@ -2,9 +2,9 @@
 title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.12.0
 description: Estas son las notas de la versión de Cloud Manager en AEM versión as a Cloud Service 2021.12.0.
 feature: Release Information
-source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
+source-git-commit: 6389dfaf1e4569a0e7bf2c6dbfa30bb003c4db5b
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2021.12.0 es 
 * Se realizaron actualizaciones menores en la interfaz de usuario al copiar entradas TXT (&quot;valor TXT&quot; en lugar de &quot;registro TXT&quot;) para eliminar posibles confusiones.
 * [La documentación relacionada con los errores de certificado](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) se ha actualizado para incluir ejemplos adicionales junto con pasos de solución de problemas.
 * Ahora hay disponible una opción en la ejecución de canalización front-end para rechazar o aprobar antes de la implementación en producción.
+* La versión del tipo de archivo del proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 32.
+
 
 ### Corrección de errores {#bug-fixes}
 
