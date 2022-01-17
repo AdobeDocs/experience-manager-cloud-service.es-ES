@@ -2,9 +2,9 @@
 title: Copia de seguridad y restauración en AEM as a Cloud Service
 description: Copia de seguridad y restauración en AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Los clientes deben presentar un ticket de asistencia que describa el problema qu
 
 AEM admite as a Cloud Service:
 
+* Backup y restore para entornos de etapa, producción y desarrollo.
 * 24 horas de recuperación, lo que significa que el sistema puede ser restaurado a cualquier punto en las últimas 24 horas.
 * Restaure desde una marca de tiempo específica definida por Adobe que se tome dos veces al día durante los últimos 7 días.  Se conservará cualquier mensaje de replicación (elimina, actualiza, crea).
 
