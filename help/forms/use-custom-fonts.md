@@ -1,9 +1,9 @@
 ---
 title: 'Usar fuentes personalizadas '
 description: 'Usar fuentes personalizadas '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **La documentación de Cloud Service Communications está en versión beta**
 
-Puede utilizar Forms as a Cloud Service Communications para combinar plantillas XDP, documentos de PDF basados en XDP o Acrobat Forms (AcroForm) con datos XML para generar documentos de PDF. Puede utilizar fuentes del sistema (fuentes incluidas en el Cloud Service) o fuentes personalizadas (fuentes aprobadas por la organización) para procesar los documentos de PDF generados.
-
-Las fuentes del sistema ya están disponibles en el Cloud Service. Puede utilizar el proyecto de desarrollo de Cloud Service para agregar fuentes personalizadas al entorno de Cloud Service.
+Puede utilizar Comunicaciones as a Cloud Service de Forms para combinar una plantilla XDP, un documento de PDF basado en XDP o un formulario de Acrobat (AcroForm) con datos XML para generar documentos de PDF. Puede utilizar las fuentes incluidas en las fuentes Cloud Service o personalizadas (fuentes aprobadas por la organización) para procesar los documentos PDF generados. Puede utilizar el proyecto de desarrollo de Cloud Service para agregar fuentes personalizadas al entorno de Cloud Service.
 
 ## Comportamiento de los documentos del PDF
 
-Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) a un documento PDF o simplemente especifique el nombre de una fuente. Cuando se incrusta una fuente, el documento PDF aparecerá (se verá) idéntico en todas las plataformas. Utilizó fuentes incrustadas para garantizar un aspecto y una apariencia coherentes. Cuando una fuente no está incrustada, el cliente de renderización del PDF busca la fuente en el equipo cliente. Si la fuente está disponible en el equipo cliente, el PDF utiliza la fuente especificada; de lo contrario, el PDF se procesa con una fuente de reserva.
+Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) a un documento de PDF. Cuando se incrusta una fuente, el documento PDF aparecerá (se verá) idéntico en todas las plataformas. Utilizó fuentes incrustadas para garantizar un aspecto y una apariencia coherentes. Cuando una fuente no está incrustada, la renderización de la fuente depende de la configuración de renderización del cliente del visor del PDF. Si la fuente está disponible en el equipo cliente, el PDF utiliza la fuente especificada; de lo contrario, el PDF se procesa con una fuente de reserva.
 
 ## Añada fuentes personalizadas al entorno as a Cloud Service de Forms.
 
