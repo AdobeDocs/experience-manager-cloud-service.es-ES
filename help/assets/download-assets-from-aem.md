@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1194'
 ht-degree: 3%
 
 ---
@@ -33,16 +33,45 @@ Puede descargar recursos de Experience Manager mediante los métodos siguientes:
 
 ## Descargar recursos mediante [!DNL Experience Manager] interfaz {#download-assets}
 
-El servicio de descarga asincrónica ofrece un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan desde la interfaz de usuario en tiempo real. [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se descarga el archivo original. Esta funcionalidad permite descargas más rápidas. Los archivos grandes se descargan asincrónicamente y [!DNL Experience Manager] notifica la finalización mediante notificaciones en la bandeja de entrada. Consulte [comprender [!DNL Experience Manager] Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
+El servicio de descarga asincrónica ofrece un marco para la descarga sin problemas de recursos de gran tamaño. Los archivos más pequeños se descargan desde la interfaz de usuario en tiempo real. [!DNL Experience Manager] no archiva descargas de recursos individuales en las que se descarga el archivo original. Esta funcionalidad permite descargas más rápidas.
 
-![Descargar notificación](assets/download-notification.png)
+De forma predeterminada, el Experience Manager déclencheur una notificación al finalizar el flujo de trabajo de descarga. La notificación de descarga aparece en la sección  [[!DNL Experience Manager] Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*Figura: Descargar notificación mediante [!DNL Experience Manager] Bandeja de entrada.*
+![Notificación de bandeja de entrada](assets/inbox-notification-for-large-downloads.png)
 
-Las descargas asincrónicas se activan en cualquiera de los casos siguientes:
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-* Si hay más de 10 recursos o más de 100 MB que descargar.
-* Si la descarga tarda más de 30 segundos en prepararse.
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### Habilitar la notificación por correo electrónico para las descargas grandes {#enable-emails-for-large-downloads}
+
+Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
+
+* Si hay más de 10 activos
+* Si el tamaño de descarga es superior a 100 MB
+* Si la descarga tarda más de 30 segundos en prepararse
+
+Mientras la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en el Experience Manager. Se requiere un mecanismo listo para usar para notificar al usuario una vez completado el proceso de descarga. Para lograr este objetivo, los administradores pueden configurar el servicio de correo electrónico configurando un servidor SMTP. Consulte [configurar el servicio de correo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+Una vez configurado el servicio de correo electrónico, los administradores y usuarios pueden activar las notificaciones por correo electrónico desde la interfaz de Experience Manager.
+
+Para habilitar las notificaciones por correo electrónico:
+
+1. Iniciar sesión en [!DNL Experience Manager Assets].
+1. Haga clic en el icono de usuario en la esquina superior derecha y, a continuación, haga clic en **[!UICONTROL Mis preferencias]**. Se abre la ventana Preferencias de usuario.
+1. Seleccione el **[!UICONTROL Notificaciones por correo electrónico de Asset Download]** y haga clic en **[!UICONTROL Accept]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 Para descargar recursos, siga estos pasos:
 
@@ -50,8 +79,6 @@ Para descargar recursos, siga estos pasos:
 1. Vaya a los recursos que desee descargar. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta. En la barra de herramientas, haga clic en **[!UICONTROL Descargar]**.
 
    ![Opciones disponibles al descargar recursos de [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *Figura: Opciones del cuadro de diálogo Descargar.*
 
 1. En el cuadro de diálogo de descarga, seleccione las opciones de descarga que desee.
 
@@ -66,13 +93,23 @@ Para descargar recursos, siga estos pasos:
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Descargar]**.
 
+   Si la notificación por correo electrónico está habilitada para las descargas masivas, en la bandeja de entrada aparecerá un correo electrónico que contiene una dirección URL de descarga de la carpeta zip archivada. Haga clic en el vínculo de descarga del correo electrónico para descargar la carpeta zip.
+
+   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+
+   También puede ver la notificación en su [!DNL Experience Manager] Bandeja de entrada.
+
+   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## Descargar recursos compartidos mediante el uso compartido de vínculos {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->Esta funcionalidad está disponible en el canal de prelanzamiento del Experience Manager.
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-El uso compartido de recursos mediante un vínculo es una forma cómoda de ponerlo a disposición de los interesados sin que tengan que iniciar sesión primero en [!DNL Assets]. Para generar una dirección URL para compartir recursos, utilice el [Vincular funcionalidad compartida](/help/assets/share-assets.md#sharelink).
+El uso compartido de recursos mediante un vínculo es una forma cómoda de ponerlo a disposición de los interesados sin que tengan que iniciar sesión primero en [!DNL Assets]. Consulte [Vincular funcionalidad compartida](/help/assets/share-assets.md#sharelink).
 
 Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para descargas muy grandes, la descarga se divide en archivos de 100 GB de tamaño.
 
