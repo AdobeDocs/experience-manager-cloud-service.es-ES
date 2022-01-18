@@ -1,13 +1,13 @@
 ---
 title: Descargar recursos
 description: Descargar recursos desde [!DNL Adobe Experience Manager Assets] y habilite o deshabilite la funcionalidad de descarga.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1196'
 ht-degree: 3%
 
 ---
@@ -52,15 +52,15 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### Habilitar la notificación por correo electrónico para las descargas grandes {#enable-emails-for-large-downloads}
+### Habilitar las notificaciones por correo electrónico para las descargas grandes {#enable-emails-for-large-downloads}
 
 Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
 
-* Si hay más de 10 activos
+* Si hay más de diez activos
 * Si el tamaño de descarga es superior a 100 MB
 * Si la descarga tarda más de 30 segundos en prepararse
 
-Mientras la descarga asincrónica se ejecuta en el servidor, el usuario puede seguir explorando y trabajando en el Experience Manager. Se requiere un mecanismo listo para usar para notificar al usuario una vez completado el proceso de descarga. Para lograr este objetivo, los administradores pueden configurar el servicio de correo electrónico configurando un servidor SMTP. Consulte [configurar el servicio de correo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Mientras la descarga asincrónica se ejecuta en el backend, el usuario puede seguir explorando y trabajando más en Experience Manager. Se requiere un mecanismo listo para usar para notificar al usuario una vez completado el proceso de descarga. Para lograr este objetivo, los administradores pueden configurar el servicio de correo electrónico configurando un servidor SMTP. Consulte [configurar el servicio de correo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Una vez configurado el servicio de correo electrónico, los administradores y usuarios pueden activar las notificaciones por correo electrónico desde la interfaz de Experience Manager.
 

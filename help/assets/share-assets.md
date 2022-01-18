@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ Compartir recursos a través de un vínculo es una forma cómoda de poner los re
 
    * En el **[!UICONTROL Asunto]** , escriba un asunto para el recurso que desea compartir.
    * En el **[!UICONTROL Mensaje]** , escriba un mensaje si es necesario.
-   * En el **[!UICONTROL Caducidad]** , utilice el selector de fechas para especificar una fecha y hora de caducidad para el vínculo. De forma predeterminada, la fecha de caducidad se establece en 7 días a partir de la fecha en que se comparte el vínculo.
+   * En el **[!UICONTROL Caducidad]** , utilice el selector de fechas para especificar una fecha y hora de caducidad para el vínculo. El tiempo de caducidad predeterminado del vínculo es de un día.
    * Active la variable **[!UICONTROL Permitir descarga del archivo original]** para permitir que los destinatarios descarguen la representación original.
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios. Los usuarios reciben un correo electrónico que contiene el vínculo compartido.
