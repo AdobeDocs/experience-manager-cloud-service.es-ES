@@ -2,9 +2,9 @@
 title: Introducción a Forms as a Cloud Service Communications
 description: Combine datos automáticamente con plantillas XDP y PDF o genere resultados en los formatos PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1869'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,12 @@ Puede generar un documento bajo demanda o crear un trabajo por lotes para genera
 
 * funciones de generación de documentación por lotes y bajo demanda optimizadas
 
-* proporcionar API de HTTP para una integración más sencilla con los sistemas existentes
+* API HTTP para facilitar la integración con sistemas existentes. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento). Hace que la generación de documentos sea una tarea eficaz.
 
 * un acceso seguro a los datos. Las API de comunicaciones solo se conectan a datos de repositorios de datos designados por el cliente y acceden a ellos, por lo que no hacen copias locales de datos, lo que hace que las comunicaciones sean muy seguras.
 
-* separe las API para operaciones de baja latencia y alto rendimiento, lo que convierte la generación de documentos en una tarea eficiente.
-
 ![Un extracto de tarjeta de crédito de muestra](assets/statement.png)
+Se puede crear un extracto de tarjeta de crédito de ejemplo mediante las API de comunicaciones. El estado de cuenta utiliza la misma plantilla pero datos independientes para cada cliente según su uso de tarjeta de crédito.
 
 ## ¿Cómo funciona?
 
@@ -143,16 +142,15 @@ Antes de empezar a generar documentos mediante API de comunicación, tenga en cu
 
 ### Datos de formulario {#form-data}
 
-Las API de comunicaciones aceptan un diseño de formulario que normalmente se crea en [Designer](use-forms-designer.md) y datos de formulario XML como entrada. Para rellenar un documento con datos, debe existir un elemento XML en los datos del formulario XML para cada campo de formulario que desee rellenar. El nombre del elemento XML debe coincidir con el nombre del campo. Se ignora un elemento XML si no se corresponde con un campo de formulario o si el nombre del elemento XML no coincide con el nombre del campo. No es necesario coincidir con el orden en que se muestran los elementos XML. El factor importante es que los elementos XML se especifican con los valores correspondientes.
+Las API de comunicaciones aceptan un diseño de formulario que normalmente se crea en [Designer](use-forms-designer.md) y datos de formulario XML como entrada. Para rellenar un documento con datos, debe existir un elemento XML en los datos del formulario XML para cada campo de formulario que desee rellenar. El nombre del elemento XML debe coincidir con el nombre del campo. Si un elemento XML no corresponde a un campo de formulario o si el nombre del elemento XML no coincide con el nombre del campo, se ignora el elemento XML. No es necesario coincidir con el orden en que se muestran los elementos XML. El factor importante es que los elementos XML se especifican con los valores correspondientes.
 
 Consideremos el siguiente ejemplo de formulario de solicitud de préstamo:
 
 ![Formulario de solicitud de préstamo](assets/loanFormData.png)
 
-Para combinar datos en este diseño de formulario, cree un origen de datos XML que corresponda al formulario. El siguiente XML representa un origen de datos XML que corresponde al formulario de aplicación hipotecaria de ejemplo.
+Para combinar datos en este diseño de formulario, cree un origen de datos XML que corresponda a la jerarquía del formulario, la asignación de nombres a los campos y los tipos de datos. El siguiente XML representa un origen de datos XML que corresponde al formulario de aplicación hipotecaria de ejemplo.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Áreas imprimibles {#printable-areas}
 
-El margen no imprimible predeterminado de 0,25 pulgadas no es exacto para impresoras de etiquetas y varía de impresora a impresora y de tamaño de etiqueta a tamaño de etiqueta. Se recomienda mantener el margen de 0,25 pulgadas o reducirlo. Sin embargo, se recomienda no aumentar el margen no imprimible. De lo contrario, la información del área imprimible no se imprime correctamente.
+El margen no imprimible predeterminado de 0,25 pulgadas no es exacto para impresoras de etiquetas y varía de impresora a impresora y de tamaño de etiqueta a tamaño de etiqueta. Sin embargo, se recomienda mantener el margen de 0,25 pulgadas o reducirlo. Sin embargo, se recomienda no aumentar el margen no imprimible. De lo contrario, la información del área imprimible no se imprime correctamente.
 
 Asegúrese siempre de utilizar el archivo XDC correcto para la impresora. Por ejemplo, evite elegir un archivo XDC para una impresora de 300 ppp y envíe el documento a una impresora de 200 ppp.
 
-### Scripts {#scripts}
+### Solo secuencias de comandos para formularios XFA (XDP/PDF) {#scripts}
 
 Un diseño de formulario que se utiliza con las API de comunicaciones puede contener secuencias de comandos que se ejecutan en el servidor. Asegúrese de que el diseño de formulario no contenga secuencias de comandos que se ejecuten en el cliente. Para obtener información sobre la creación de secuencias de comandos de diseño de formulario, consulte [Ayuda de Designer](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Un perfil de dispositivo (archivo XDC) es un archivo de descripción de impresor
 * dpl600.xdc
 
 Puede utilizar los archivos XDC proporcionados para generar documentos de impresión o modificarlos según sus necesidades.
-&lt;!-* No es necesario modificar estos archivos para crear documentos. Sin embargo, puede modificarlas para satisfacer los requisitos empresariales. —>
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Estos archivos son archivos XDC de referencia que admiten las características de impresoras específicas, como fuentes residentes, bandejas de papel y grapadora. El propósito de estas referencias es ayudarle a comprender cómo configurar sus propias impresoras mediante perfiles de dispositivo. La referencia también es un punto de partida para impresoras similares en la misma línea de productos.
 
