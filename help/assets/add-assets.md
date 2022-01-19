@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
+source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2720'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 Puede cargar un recurso con la misma ruta (el mismo nombre y ubicación) que el de un recurso existente. Sin embargo, se muestra un cuadro de diálogo de advertencia con las siguientes opciones:
 
 * Reemplazar recurso existente: Si reemplaza un recurso existente, se eliminarán los metadatos del recurso y las modificaciones anteriores (por ejemplo, anotaciones, recorte, etc.) que haya realizado en el recurso existente.
+
+   >[!NOTE]
+   >
+   >La opción para reemplazar recursos no está disponible si el recurso está bloqueado o desprotegido.
+
 * Cree otra versión: Se crea una nueva versión del recurso existente en el repositorio. Puede ver las dos versiones en la [!UICONTROL Cronología] y pueden volver a la versión existente anteriormente si es necesario.
 * Mantenga ambos: Si decide conservar ambos recursos, se cambiará el nombre del nuevo recurso.
 
