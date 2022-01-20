@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.11.0
-description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.11.0
+description: Estas son las notas de la versión de Cloud Manager en AEM versión as a Cloud Service 2021.11.0
 feature: Release Information
-source-git-commit: d6aa3097e558d4e78f20493f214167db57f1a013
+source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 2%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 
@@ -14,14 +14,15 @@ ht-degree: 2%
 Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>
+>Consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md) para las notas de la versión actuales de Adobe Experience Manager as a Cloud Service.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.11.0 es el 4 de noviembre de 2021.
-La próxima versión está planificada para el 16 de diciembre de 2021.
+La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2021.11.0 es el 4 de noviembre de 2021.
+La próxima versión está prevista para el 16 de diciembre de 2021.
 
-### Novedades {#what-is-new}
+## Novedades {#what-is-new}
 
 * Los usuarios ahora pueden aprovechar las nuevas canalizaciones front-end para implementar exclusivamente el código front-end de forma acelerada. Consulte [Canalizaciones principales de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para obtener más información.
 
@@ -50,7 +51,7 @@ La próxima versión está planificada para el 16 de diciembre de 2021.
 
 * El archivo CSV del problema de calidad ahora contendrá la marca de tiempo para cada problema de calidad.
 
-### Corrección de errores {#bug-fixes}
+## Corrección de errores {#bug-fixes}
 
 * Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en E/S de red superfluas al iniciar y detener el contenedor de compilación.
 
@@ -61,4 +62,3 @@ La próxima versión está planificada para el 16 de diciembre de 2021.
 * El mensaje de error cuando se ha alcanzado el número máximo de repositorios no especificaba el motivo del error.
 
 * En casos excepcionales, las canalizaciones fallaban debido a la gestión inadecuada de reintentos de ciertos códigos de respuesta.
-
