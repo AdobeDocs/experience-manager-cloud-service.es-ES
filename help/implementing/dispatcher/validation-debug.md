@@ -3,7 +3,7 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
+source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 1%
@@ -349,7 +349,7 @@ Esta fase comprueba la sintaxis de Apache iniciando Docker en una imagen. El aco
 >
 >Los usuarios de Windows deben utilizar Windows 10 Professional u otras distribuciones compatibles con Docker. Este es un requisito previo para ejecutar y depurar Dispatcher en un equipo local.
 
-Esta fase también se puede ejecutar de forma independiente `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
+Esta fase también se puede ejecutar de forma independiente `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
 Durante una implementación de Cloud Manager, la variable `httpd -t` la comprobación de sintaxis también se ejecutará y todos los errores se incluirán en el registro de errores del paso Generar imágenes de Cloud Manager.
 
