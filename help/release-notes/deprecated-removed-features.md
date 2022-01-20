@@ -2,9 +2,9 @@
 title: Funciones en desuso y eliminadas
 description: Notas de la versión específicas de las funciones en desuso y eliminadas de [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
+source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '592'
 ht-degree: 34%
 
 ---
@@ -55,6 +55,7 @@ Esta sección enumera las funciones y capacidades que se han eliminado de [!DNL 
 | [!DNL Assets] | [!DNL Assets]El uso compartido de con el servicio principal de Experience Cloud Assets y Creative Cloud Services no está disponible. | Para la integración con [!DNL Adobe Creative Cloud], use [Vínculo de recurso de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html). |
 | [!DNL Foundation] | Compatibilidad con fuentes de datos de Apache Sling (paquete OSGi org.apache.sling.datasource) | N/D |
 | [!DNL Foundation] | Compatibilidad con plantillas de secuencias de comandos JST (paquete OSGi org.apache.sling.scripting.jst) | N/D |
+| [!DNL Foundation] | Compatibilidad con la pizarra Apache Felix Http | Pizarra HTTP OSGi |
 
 ## API de Java {#java-api}
 
