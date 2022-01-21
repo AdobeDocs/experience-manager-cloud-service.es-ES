@@ -1,14 +1,13 @@
 ---
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
-translation-type: tm+mt
-source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+source-git-commit: 229e2d8252a9efe1e303e926bde6719387833fa9
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 100%
+source-wordcount: '1483'
+ht-degree: 99%
 
 ---
-
 
 # Fragmentos de experiencias {#experience-fragments}
 
@@ -43,8 +42,7 @@ Los autores quieren utilizar AEM solo para la creación, pero no para la entre
 >
 >* `experience-fragments-editors`
 >
->
-Si tiene algún problema, póngase en contacto con el administrador del sistema.
+>Si tiene algún problema, póngase en contacto con el administrador del sistema.
 
 ## ¿Cuándo se deben utilizar los fragmentos de experiencias?   {#when-should-you-use-experience-fragments}
 
@@ -351,8 +349,10 @@ Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML
 >
 >Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
-## Exportación de fragmentos de experiencias    {#exporting-experience-fragments}
+## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
 
 De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. Los canales de AEM y los canales similares de terceros pueden usar esta opción.
 
-Para la exportación a Adobe Target, también se puede utilizar JSON. Consulte Target Integration with Experience Fragments (Integración de objetivos con fragmentos de experiencias) para obtener información completa. <!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+Para exportar a Adobe Target, consulte [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+
+<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
