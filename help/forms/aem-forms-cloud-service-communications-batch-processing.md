@@ -2,9 +2,9 @@
 title: Experience Manager [!DNL Forms] Procesamiento por lotes de comunicaciones as a Cloud Service
 description: ¿Cómo crear comunicaciones personalizadas y orientadas a la marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2297'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Una operación por lotes es un proceso de generación de varios documentos de ti
 
 Puede utilizar operaciones por lotes para generar varios documentos a intervalos programados.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 Puede ver el vídeo o realizar las instrucciones siguientes para aprender a generar documentos mediante operaciones por lotes. La documentación de referencia de la API utilizada en vídeo está disponible en formato .yaml . Puede descargar el [API por lotes](assets/batch-api.yaml) y cárguelo en Postman para comprobar la funcionalidad de las API y seguir el vídeo.
 
@@ -100,7 +100,7 @@ La configuración de datos por lotes ayuda a configurar contenedores y carpetas 
 
 Para crear la configuración:
 
-1. Vaya a Herramientas > Forms > Lote de salida - Conector de almacenamiento unificado.
+1. Vaya a Herramientas > Forms > Conector de almacenamiento unificado.
 1. Abra una carpeta para alojar la configuración y haga clic en Crear. Utilice la carpeta Global o cree una carpeta.
 1. Especifique el Título y el Nombre de la configuración. En Almacenamiento, seleccione Almacenamiento de Microsoft Azure.
 1. En Ruta de configuración de almacenamiento, busque y seleccione la configuración de nube que contiene las credenciales de la cuenta de almacenamiento de Azure propiedad del cliente.
