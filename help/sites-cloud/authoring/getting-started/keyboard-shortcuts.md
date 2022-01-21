@@ -1,14 +1,13 @@
 ---
 title: 'Métodos abreviados del teclado para las consolas  '
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
+source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
-
 
 # Métodos abreviados del teclado para las consolas   {#keyboard-shortcuts-for-consoles}
 
@@ -26,7 +25,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) se debe ver |
-|  | &grave; | Ocultar raíl |
+|  | ``` ` ``` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |
