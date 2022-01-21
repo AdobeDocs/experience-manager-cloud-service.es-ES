@@ -2,14 +2,20 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 1%
+source-wordcount: '2222'
+ht-degree: 2%
 
 ---
 
 # Directrices de desarrollo de AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="Directrices de desarrollo de AEM as a Cloud Service"
+>abstract="En esta pestaña, puede ver las prácticas recomendadas para la codificación en AEM as a Cloud Service. La codificación puede ser sustancialmente diferente a las implementaciones de AMS o On-Premim."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Demostración de la estructura del paquete"
 
 El código que se ejecuta en AEM as a Cloud Service debe tener en cuenta que siempre se está ejecutando en un clúster. Esto significa que siempre hay más de una instancia en ejecución. El código debe ser flexible, especialmente porque una instancia puede detenerse en cualquier momento.
 
@@ -59,7 +65,7 @@ Las alternativas que se sabe que funcionan, pero que pueden requerir proporciona
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no recomendado, ya que está obsoleto y se ha sustituido por la versión 4.x)
 * [Http correcto](https://square.github.io/okhttp/) (No proporcionado por AEM)
 
-## Sin personalizaciones de la interfaz de usuario clásica {#no-classic-ui-customizations}
+## Sin personalizaciones de la IU clásica {#no-classic-ui-customizations}
 
 AEM as a Cloud Service solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
 
