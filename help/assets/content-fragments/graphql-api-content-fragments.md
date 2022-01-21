@@ -3,7 +3,7 @@ title: AEM API de GraphQL para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) as a Cloud Service con la API de AEM GraphQL para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 3b69ce9236254301127dfe93dba899b565c5c642
+source-git-commit: f4dab394504676a12dea55229f2fa56efa4a0dc3
 workflow-type: tm+mt
 source-wordcount: '3952'
 ht-degree: 1%
@@ -194,7 +194,7 @@ Seleccione el nuevo punto final y **Publicación** para que esté totalmente dis
 
 ## Interfaz de GraphiQL {#graphiql-interface}
 
-Implementación de la [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para usar con AEM GraphQL. Esto puede ser [instalado con AEM](#installing-graphiql-interface).
+Implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para usar con AEM GraphQL. Esto puede ser [instalado con AEM](#installing-graphiql-interface).
 
 >[!NOTE]
 >
@@ -586,7 +586,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiera a la 
 
 * Reserva cuando se consultan fragmentos anidados:
 
-   * Si una variación determinada no existe en un fragmento anidado, entonces la variable **Maestro** se devolvería.
+   * Si la variación solicitada no existe en un fragmento anidado, la variable **Maestro** se devolverá la variación.
 
 ## Consultas persistentes (almacenamiento en caché) {#persisted-queries-caching}
 
