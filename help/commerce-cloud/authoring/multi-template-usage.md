@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
+source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 62%
+source-wordcount: '187'
+ht-degree: 49%
 
 ---
 
@@ -27,8 +27,11 @@ Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-c
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
+Las páginas de producto específicas se pueden seleccionar mediante un SKU o por la categoría de un producto. Este último solo es compatible con algunos de los formatos de URL de página de producto predeterminados disponibles, ya que requiere que la información de categoría se codifique en la dirección URL del producto.
+
 Puede encontrar más información sobre este tema en los siguientes recursos:
 
+- [Configuraciones de URL avanzadas](../configuring/advanced-url-configuration.md)
 - [Componentes principales del CIF de AEM: configuración de página de varios catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## Medios relacionados {#related}

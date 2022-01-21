@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: dadf4f21ebaac12386153b2a9c69dc8f10951e9c
+source-git-commit: 78fa346cd2d6ed64c9700b7b2e611db58f7b3d11
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 36%
+source-wordcount: '2043'
+ht-degree: 17%
 
 ---
 
@@ -29,7 +29,7 @@ Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-c
 
 ## Configuración {#configuration}
 
-Para configurar la variable `UrlProvider` según los requisitos de SEO y las necesidades, un proyecto debe proporcionar una configuración OSGI para la &quot;configuración del proveedor de URL del CIF&quot;.
+Para configurar la variable `UrlProvider` según los requisitos de SEO y las necesidades, un proyecto debe proporcionar una configuración OSGI para el _Configuración del proveedor de URL del CIF_.
 
 >[!NOTE]
 >
@@ -40,10 +40,12 @@ Para configurar la variable `UrlProvider` según los requisitos de SEO y las nec
 Esto configura las direcciones URL de las páginas de producto y admite las siguientes opciones:
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}` (predeterminada)
-* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
-* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{category}}/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 
 En el caso del [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
@@ -74,29 +76,154 @@ Con los datos del ejemplo anterior, la dirección URL de una página de categor�
 
 >[!NOTE]
 > 
-> La variable `url_path` es una concatenación del `url_keys` de los antepasados de un producto o categoría y del producto o categoría `url_key` separado por `/` barra diagonal.
+> La variable `url_path` es una concatenación del `url_keys` de los antepasados de un producto o categoría y del producto o categoría `url_key` separado por `/` barra diagonal. Cada `url_key` se considera único dentro de un almacén determinado.
 
-### Categorías/Páginas de producto específicas {#specific-pages}
+### Almacenar configuración específica {#store-specific-urlformats}
+
+Los formatos de URL de categoría y página de producto de todo el sistema establecidos por la variable _Configuración del proveedor de URL del CIF_ se puede cambiar para cada tienda.
+
+En la configuración del CIF, un editor puede seleccionar un formato de URL de página de producto o categoría alternativo. Si no hay nada seleccionado, la implementación se volverá a utilizar en la configuración de todo el sistema.
+
+Cambiar el formato de la URL de un sitio web activo puede tener un impacto negativo en el tráfico orgánico del sitio. Consulte la [Prácticas recomendadas](#best-practices) a continuación y planifique cuidadosamente el cambio del formato de la URL con antelación.
+
+![Formatos de URL en la configuración del CIF](assets/store-specific-url-formats.png)
+
+>[!NOTE]
+>
+> La configuración específica del almacén de los formatos URL requiere [Componentes principales de CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) y la última versión del complemento Contenido y comercio de Adobe Experience Manager.
+
+## Direcciones URL de productos según la categoría {#context-aware-pdps}
+
+Dado que es posible codificar la información de categoría en una URL de producto, los productos que se encuentran en varias categorías también pueden abordarse con varias URL de producto.
+
+En la configuración predeterminada, los formatos de URL predeterminados seleccionarán una de las posibles alternativas utilizando el siguiente esquema:
+
+* si la variable `url_path` está definido por el backend de comercio electrónico que lo utiliza (obsoleto)
+* de la variable `url_rewrites` use las direcciones URL que terminen con el `url_key` como alternativas
+* para estas alternativas use el que tenga la mayor cantidad de segmentos de ruta
+* si hay varios, tome el primero en el orden dado por el servidor de comercio electrónico
+
+Este esquema seleccionará `url_path` que tiene la mayor cantidad de antecesores, en función del supuesto de que una categoría secundaria es más específica que su categoría principal. El `url_path` se considera _canónico_ y , siempre se utilizarán para el vínculo canónico en páginas de productos o en el mapa del sitio del producto.
+
+Sin embargo, cuando un comprador navega de una página de categoría a una página de producto, o de una página de producto a otra página de producto relacionada en la misma categoría, vale la pena mantener el contexto de categoría actual. En este caso, la variable `url_path` La selección debería preferir alternativas, que estén dentro del contexto de categoría actual sobre el _canónico_ selección descrita anteriormente.
+
+Esta función debe habilitarse en la variable _Configuración del proveedor de URL del CIF_. Si se habilita, la selección obtendrá una puntuación mayor en las alternativas, cuando
+
+* coinciden con partes de una categoría determinada `url_paths` desde el principio (coincidencia de prefijos confusos)
+* o coinciden con una categoría determinada `url_key` en cualquier parte (coincidencia parcial exacta)
+
+Por ejemplo, considere la respuesta para un [consulta de productos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) más abajo. Dado que el usuario se encuentra en la página de categoría &quot;Nuevos productos / Novedades en verano de 2022&quot; y que la tienda está utilizando el formato de URL de página de categoría predeterminado, la alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; coincidiría con dos segmentos de ruta del contexto desde el principio: &quot;nuevos productos&quot; y &quot;nuevos en verano de 2022&quot;. Si la tienda estaría utilizando un formato de URL de página de categoría que solo contenga la variable `url_key`, la misma alternativa se seguiría seleccionando ya que coincide con el de `url_key` en cualquier parte. En ambos casos, la dirección URL de la página del producto se crearía para &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
+
+```
+{
+  "data": {
+    "products": {
+      "items": [
+        {
+          "sku": "VA18-GO-NA",
+          "url_key": "gold-cirque-earrings",
+          "url_rewrites": [
+            {
+              "url": "gold-cirque-earrings.html"
+            },
+            {
+              "url": "venia-accessories/gold-cirque-earrings.html"
+            },
+            {
+              "url": "venia-accessories/venia-jewelry/gold-cirque-earrings.html"
+            },
+            {
+              "url": "new-products/gold-cirque-earrings.html"
+            },
+            {
+              "url": "new-products/new-in-summer-2022/gold-cirque-earrings.html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+>[!NOTE]
+>
+> Se requieren direcciones URL de producto según la categoría [Componentes principales de CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o posterior.
+
+## Categoría específica y páginas de producto {#specific-pages}
 
 Es posible crear [varias páginas de productos y categorías](../authoring/multi-template-usage.md) solo para un subconjunto específico de categorías o productos de un catálogo.
 
-La variable `UrlProvider` está preconfigurado para generar vínculos profundos a estas páginas en instancias de nivel de autor. Esto resulta útil para los editores que exploran un sitio con el modo de vista previa, navegan a una página de producto o categoría específica y vuelven al modo de edición para editar la página.
+### Criterios de selección {#specific-pages-selection}
 
-Por otro lado, en las instancias de nivel de publicación, las url de las páginas de catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a que las instancias de nivel de publicación no procesarán vínculos profundos a páginas de catálogo específicas de forma predeterminada. Para cambiar este comportamiento, la variable _Estrategia de página específica del proveedor de URL del CIF_ se puede configurar para que siempre genere direcciones url de página específicas.
+La selección de una página de categoría específica es directa, en función del `url_path` o `url_key`. Las subcategorías coincidentes solo se admiten en formatos de URL que contengan la categoría completa `url_path`. De lo contrario, solo una coincidencia exacta de la variable `url_key` es posible.
 
-## Formatos de URL personalizados {#custom-url-format}
+Las páginas de producto específicas se seleccionan según el SKU o la categoría del producto. El posterior requiere que parte de la información de la categoría se codifique en la dirección URL del producto. Esto solo está disponible para algunos de los formatos de URL predeterminados. Consulte la siguiente tabla para ver una comparación del formato URL que admite la selección de páginas específica por sku o categoría.
+
+
+| Formato de URL | por sku | por categoría |
+| ----------------------------------------------------- | ------ | ---------------- |
+| `{{page}}.html/{{url_key}}.html` | nº | nº |
+| `{{page}}.html/{{category}}/{{url_key}}.html` | nº | coincidencia exacta solamente |
+| `{{page}}.html/{{url_path}}.html` | nº | yes |
+| `{{page}}.html/{{sku}}.html` | yes | nº |
+| `{{page}}.html/{{sku}}/{{url_key}}.html` | yes | nº |
+| `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | yes | coincidencia exacta solamente |
+| `{{page}}.html/{{sku}}/{{url_path}}.html` | yes | yes |
+
+>[!NOTE]
+>
+> La selección de páginas de productos específicas por categoría requiere [Componentes principales de CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) o posterior.
+
+### Vinculación profunda {#specific-pages-deep-linking}
+
+La variable `UrlProvider` está preconfigurado para generar vínculos profundos a páginas de productos y categorías específicas en instancias de nivel de autor. Esto resulta útil para los editores que exploran un sitio con el modo de vista previa, navegan a una página de producto o categoría específica y vuelven al modo de edición para editar la página.
+
+Por otro lado, en las instancias de nivel de publicación, las URL de las páginas de catálogo deben mantenerse estables para no perder ganancias en las clasificaciones de los motores de búsqueda, por ejemplo. Debido a que las instancias de nivel de publicación no procesarán vínculos profundos a páginas de catálogo específicas de forma predeterminada. Para cambiar este comportamiento, la variable _Estrategia de página específica del proveedor de URL del CIF_ se puede configurar para que siempre genere direcciones URL de página específicas.
+
+## Personalizaciones {#customization}
+
+### Formatos de URL personalizados {#custom-url-format}
 
 Para proporcionar un formato de URL personalizado, un proyecto puede implementar o bien la variable [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) o [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) y registre la implementación como servicio OSGI. Estas implementaciones, si están disponibles, reemplazarán el formato configurado y predefinido. Si hay varias implementaciones registradas, el que tenga la clasificación de servicio más alta reemplaza a las que tengan la clasificación de servicio más baja.
 
 Las implementaciones de formato de URL personalizado deben implementar un par de métodos para generar una URL a partir de parámetros determinados y para analizar una URL y devolver los mismos parámetros respectivamente.
 
-## Combinación con asignaciones de Sling {#sling-mapping}
+### Combinación con asignaciones de Sling {#sling-mapping}
 
 Además del `UrlProvider`, también es posible configurar las [asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para reescribir y procesar direcciones URL. El tipo de archivo del proyecto AEM también proporciona [una configuración de ejemplo](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) para configurar algunas asignaciones de Sling para el puerto 4503 (publicación) y 80 (Dispatcher).
 
-## Combinación con AEM Dispatcher {#dispatcher}
+### Combinación con AEM Dispatcher {#dispatcher}
 
 Las reescrituras de URL también se pueden lograr usando AEM servidor HTTP de Dispatcher con `mod_rewrite` módulo. El [tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) proporciona una referencia a la configuración de AEM Dispatcher que ya incluye las [reglas de reescritura](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para el tamaño generado.
+
+## Prácticas recomendadas   {#best-practices}
+
+### Elija el mejor formato de URL {#choose-url-format}
+
+Como se mencionó antes de seleccionar uno de los formatos predeterminados disponibles, o incluso implementar un formato personalizado depende en gran medida de las necesidades y requisitos de una tienda. Las siguientes sugerencias pueden ayudar a tomar una decisión educada.
+
+_**Utilice un formato de URL de página de producto que contenga el SKU.**_
+
+Los componentes principales del CIF utilizan el sku como identificador principal en todos los componentes. Si el formato de la dirección URL de la página del producto no contiene el sku, es necesario realizar una consulta de GraphQL para resolverlo desde la variable `url_key`, lo que puede afectar a la métrica de tiempo hasta el primer byte. Además, puede ser deseable que los compradores encuentren productos por sku en motores de búsqueda.
+
+_**Utilice un formato de URL de página de producto que contenga el contexto de categoría.**_
+
+Algunas funciones del proveedor de URL del CIF solo están disponibles cuando se utilizan formatos de URL de producto que codifican el contexto de la categoría, como la categoría `url_key` o la categoría `url_path`. Incluso si estas funciones pueden no ser necesarias para una tienda nueva, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
+
+_**Equilibrio entre la longitud de la dirección URL y la información codificada.**_
+
+Según el tamaño del catálogo, en particular el tamaño y la profundidad del árbol de categorías, puede que no sea razonable codificar la totalidad de `url_path` de categorías en la dirección URL. En ese caso, la longitud de la dirección URL se puede reducir incluyendo el valor de `url_key` en su lugar. Esto habilitará casi todas las funciones disponibles al utilizar la categoría `url_path`.
+
+Además, utilice [Asignaciones de Sling](#sling-mapping) para combinar el sku con el producto `url_key`. En la mayoría de los sistemas de comercio electrónico, el sku sigue un formato en particular y separa el sku de `url_key` para las solicitudes entrantes debería ser fácilmente posible. Con esto en mente, debería ser posible reescribir la dirección URL de una página de producto a `/p/{{category}}/{{sku}}-{{url_key}}.html`y una dirección URL de categoría a `/c/{{url_key}}.html` respectivamente. La variable `/p` y `/c` siguen siendo necesarios para distinguir las páginas de productos y categorías de otras páginas de contenido.
+
+### Migración de un formato de URL a otro {#migrate-url-formats}
+
+Muchos de los formatos de URL predeterminados son de alguna manera compatibles entre sí, lo que significa que las URL formateadas por uno pueden ser analizadas por otro. Esto ayuda a la migración entre los formatos de URL.
+
+Por otro lado, los motores de búsqueda necesitarán algún tiempo para volver a rastrear todas las páginas del catálogo con el nuevo formato de URL. Para admitir este proceso y también para mejorar la experiencia del usuario final, se recomienda proporcionar redirecciones que reenvíen al usuario de las direcciones URL antiguas a las nuevas.
+
+Un enfoque sería conectar un entorno de ensayo al back-end de comercio electrónico de producción y configurarlo para utilizar el nuevo formato de URL. Después, obtenga la variable [mapa del sitio del producto generado por el generador del mapa del sitio de los productos CIF](../../overview/seo-and-url-management.md) tanto para el entorno de fase como de producción, y utilícelos para crear un [Mapa de reescritura httpd de Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Este mapa de reescritura se puede implementar en el despachante junto con el despliegue del nuevo formato de URL.
 
 ## Ejemplo {#example}
 
