@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 2%
+source-wordcount: '1295'
+ht-degree: 1%
 
 ---
 
@@ -24,27 +24,72 @@ ht-degree: 2%
 
 ## Compartir recursos como un vínculo {#sharelink}
 
-Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión primero en [!DNL Assets]. Usuarios con privilegios de administrador o con permisos de lectura en `/var/dam/share` La ubicación puede ver los vínculos compartidos con ellos.
+Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets]. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para descargas muy grandes, la descarga está empaquetada en archivos de 100 GB de tamaño.
 
-![Cuadro de diálogo Uso compartido de vínculos](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* Necesita el permiso Editar ACL en la carpeta o el recurso que desea compartir como vínculo.
->* Antes de compartir un vínculo con los usuarios, [activar correos electrónicos salientes](/help/implementing/developing/introduction/development-guidelines.md#sending-email). De lo contrario, se produce un error.
+>* [Habilitar correos electrónicos salientes](/help/implementing/developing/introduction/development-guidelines.md#sending-email) antes de compartir un vínculo con los usuarios.
 
 
-1. En el [!DNL Assets] interfaz de usuario, seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, haga clic en el **[!UICONTROL Compartir vínculo]**. La variable [!UICONTROL Uso compartido de vínculos] que contiene un vínculo de recurso generado automáticamente en la variable **[!UICONTROL Compartir vínculo]** campo .
+Existen dos formas de compartir los recursos mediante la funcionalidad de compartir vínculos:
+
+1. Generar un vínculo compartido, [copiar y compartir el vínculo del recurso](#copy-and-share-assets-link) con otros usuarios. El tiempo de caducidad predeterminado del vínculo es de un día. No puede cambiar la hora de caducidad al compartir el vínculo copiado con otros usuarios.
+
+1. Genere un vínculo compartido y [compartir el vínculo del recurso mediante correo electrónico](#share-assets-link-through-email). En este caso, puede modificar los valores predeterminados, como la fecha y hora de caducidad, y permitir la descarga de los recursos originales y sus representaciones. Puede enviar correos electrónicos a varios usuarios añadiendo sus direcciones de correo electrónico.
+
+![Cuadro de diálogo Uso compartido de vínculos](assets/link-sharing-dialog.png)
+
+### Copiar y compartir el vínculo de recurso{#copy-and-share-asset-link}
+
+Para compartir recursos como una URL pública:
+
+1. Iniciar sesión en [!DNL Experience Manager Assets] y vaya a **[!UICONTROL Archivos]**.
+1. Seleccione los recursos o la carpeta que contengan recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
+1. La variable **[!UICONTROL Uso compartido de vínculos]** que contiene un vínculo de recurso generado automáticamente en la variable **[!UICONTROL Compartir vínculo]** campo .
+1. Copie el vínculo del recurso y compártalo con los usuarios.
+
+### Compartir vínculo de recurso mediante notificación por correo electrónico {#share-assets-link-through-email}
+
+Para compartir recursos por correo electrónico:
+
+1. Seleccione los recursos o la carpeta que contengan recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
+1. La variable **[!UICONTROL Uso compartido de vínculos]** que contiene un vínculo de recurso generado automáticamente en la variable **[!UICONTROL Compartir vínculo]** campo .
 
    * En el cuadro de dirección de correo electrónico, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. Puede compartir el vínculo con varios usuarios. Si el usuario es miembro de su organización, seleccione su ID de correo electrónico en las sugerencias que aparecen en la lista desplegable. Si el usuario es externo, escriba el ID de correo electrónico completo y pulse **[!UICONTROL Entrar]**; el ID de correo electrónico se agrega a la lista de usuarios.
 
-   * En el **[!UICONTROL Asunto]** , escriba un asunto para el recurso que desea compartir.
+   * En el **[!UICONTROL Asunto]** , escriba un asunto para especificar el propósito de los recursos compartidos.
    * En el **[!UICONTROL Mensaje]** , escriba un mensaje si es necesario.
-   * En el **[!UICONTROL Caducidad]** , utilice el selector de fechas para especificar una fecha y hora de caducidad para el vínculo. El tiempo de caducidad predeterminado del vínculo es de un día.
+   * En el **[!UICONTROL Caducidad]** , utilice el selector de fechas para especificar una fecha y hora de caducidad para el vínculo.
    * Active la variable **[!UICONTROL Permitir descarga del archivo original]** para permitir que los destinatarios descarguen la representación original.
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios. Los usuarios reciben un correo electrónico que contiene el vínculo compartido.
+
+![Correo electrónico de uso compartido de vínculos](assets/link-sharing-email-notification.png)
+
+### Descargar recursos mediante el vínculo de recursos
+
+Cualquier usuario que tenga acceso al vínculo de recurso compartido puede descargar los recursos empaquetados en una carpeta zip. El proceso de descarga es el mismo, independientemente de si un usuario accede al vínculo del recurso copiado o utiliza el vínculo del recurso compartido a través del correo electrónico.
+
+* Haga clic en el vínculo del recurso o pegue la dirección URL en el explorador. La variable [!UICONTROL Compartir vínculos] se abre la interfaz donde puede cambiar a la [!UICONTROL Vista de tarjeta] o [!UICONTROL Vista de lista].
+
+* En el [!UICONTROL Vista de tarjeta], puede pasar el ratón sobre la carpeta de recursos compartidos o compartidos para seleccionar los recursos o colocarlos en la cola para su descarga.
+
+* De forma predeterminada, la interfaz de usuario muestra la variable **[!UICONTROL Descargar bandeja de entrada]** . Refleja la lista de todos los recursos compartidos o carpetas que están en cola para su descarga junto con su estado.
+
+* Al seleccionar los recursos o la carpeta, una **[!UICONTROL Descarga de cola]** aparece en la pantalla . Haga clic en el **[!UICONTROL Descarga de cola]** para iniciar el proceso de descarga.
+
+   ![Descarga de cola](assets/queue-download.png)
+
+* Mientras el archivo de descarga está preparado, haga clic en la **[!UICONTROL Descargar bandeja de entrada]** para ver el estado de la descarga. Para las descargas grandes, haga clic en la **[!UICONTROL Actualizar]** para actualizar el estado.
+
+   ![Descargar bandeja de entrada](assets/link-sharing-download-inbox.png)
+
+* Una vez completado el procesamiento, haga clic en la opción **[!UICONTROL Descargar]** para descargar el archivo zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 >[!NOTE]
 >
 >Si desea compartir vínculos de la instancia de autor con entidades externas, asegúrese de exponer solo las siguientes direcciones URL para `GET` solicitudes. Bloquee otras direcciones URL para garantizar que la instancia de Autor sea segura.
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
