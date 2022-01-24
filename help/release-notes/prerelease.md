@@ -1,22 +1,22 @@
 ---
-title: '[!DNL Adobe Experience Manager] Canal de prelanzamiento as a Cloud Service'
-description: '[!DNL Adobe Experience Manager] Canal de prelanzamiento as a Cloud Service'
+title: Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service
+description: Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 1%
+ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] Canal de prelanzamiento as a Cloud Service {#prerelease-channel}
+# Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service {#prerelease-channel}
 
 
 ## Introducción {#introduction}
 
-[!DNL Adobe Experience Manager] as a Cloud Service ofrece nuevas funciones en una cadencia mensual, según la programación de [Experience Manager publica la hoja de ruta](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service). Para familiarizarse con las funciones programadas para entrar en funcionamiento el mes siguiente, los clientes pueden suscribirse al canal de prelanzamiento, al que se puede acceder configurando adecuadamente en entornos de desarrollo de programas estándar o en cualquier entorno de programa de simulación de pruebas. Los clientes pueden obtener una vista previa de los cambios realizados en la consola Sitios, así como crear código para cualquier API de versión preliminar nueva.
+[!DNL Adobe Experience Manager] as a Cloud Service ofrece nuevas funciones en una cadencia mensual, según la programación de la [hoja de ruta de publicaciones de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=es#aem-as-cloud-service). Para familiarizarse con las funciones programadas para entrar en funcionamiento el mes siguiente, los clientes pueden suscribirse al canal de prelanzamiento, al que se puede acceder configurando adecuadamente en entornos de desarrollo de programas estándar o en cualquier entorno de programa de zona protegida. Los clientes pueden obtener una vista previa de los cambios realizados en la consola de Sites, así como crear código para cualquier API de versión preliminar nueva.
 
-La lista de funciones de prelanzamiento de un mes determinado se publica dentro de la [notas de la versión mensuales](/help/release-notes/release-notes-cloud/release-notes-current.md).
+La lista de funciones de prelanzamiento de un mes determinado se publica dentro de las [notas de la versión mensuales](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
@@ -24,14 +24,14 @@ La lista de funciones de prelanzamiento de un mes determinado se publica dentro 
 
 Las funciones de la versión preliminar se pueden experimentar de diferentes maneras:
 
-* Entornos en la nube (entornos de desarrollo de programa estándar o cualquier tipo de entorno de programa de entorno limitado)
+* Entornos en la nube (entornos de desarrollo de programa estándar o cualquier tipo de entorno de programa de zona protegida)
 * SDK local
 
-### Entornos de nube {#cloud-environments}
+### Entornos de la nube {#cloud-environments}
 
-Para ver las nuevas funciones de la consola Sitios en los entornos de desarrollo de la nube, así como el resultado de cualquier personalización de proyecto:
+Para ver las nuevas funciones de la consola de Sites en los entornos de desarrollo de la nube, así como el resultado de cualquier personalización de proyecto:
 
-* Al usar la variable [Punto final de las variables de entorno de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), establezca la variable **AEM_RELEASE_CHANNEL** variable de entorno al valor **versión preliminar**.
+* Al usar el [punto de conexión de las variables de entorno de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), establezca la variable de entorno **AEM_RELEASE_CHANNEL** al valor **versión preliminar**.
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -48,26 +48,26 @@ También se puede utilizar la CLI de Cloud Manager, según las instrucciones ind
 ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-La variable se puede eliminar o volver a establecer en un valor diferente si desea que el entorno se restaure al comportamiento del canal normal (que no es de prelanzamiento)
+La variable se puede eliminar o volver a establecerse en un valor diferente si desea que el entorno se restaure al comportamiento del canal normal (que no es de prelanzamiento)
 
 * También puede configurar variables de entorno desde el [Interfaz de usuario de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### SDK local {#local-sdk}
 
-Puede ver nuevas funciones en la consola Sitios en el SDK local de Quickstart y código con las nuevas API en la versión preliminar haciendo que su proyecto maven haga referencia a la versión preliminar `API Jar` situado en Maven Central. También puede ver estas características de la versión preliminar en el equipo local iniciando el SDK de inicio rápido normal en modo de versión preliminar:
+Puede ver nuevas funciones en la consola de Sites en el Quickstart de SDK local y programar las nuevas API en la versión preliminar haciendo que su proyecto de Maven haga referencia a la versión preliminar `API Jar` situada en Maven Central. También puede ver estas características de la versión preliminar en el equipo local iniciando el SDK de Quickstart normal en modo de versión preliminar:
 
-* Descargue el SDK desde el portal de distribución de software e instálelo tal como se describe en [Acceso al SDK as a Cloud Service AEM](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
-* Al iniciar el inicio rápido del SDK, incluya el argumento `-r prerelease`.
-* El valor es *fijo* por lo tanto, solo se puede seleccionar en el primer inicio. Vuelva a instalar el SDK para cambiar la opción de la línea de comandos.
+* Descargue el SDK desde el portal de distribución de software e instálelo tal como se describe en [Acceso al SDK de AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* Al iniciar el Quickstart de SDK, incluya el argumento `-r prerelease`.
+* El valor es *fijo*, por lo tanto, solo se puede seleccionar en el primer inicio. Vuelva a instalar el SDK para cambiar la opción de la línea de comandos.
 
-Dado que puede haber varias versiones de mantenimiento de AEM entre las versiones de funciones mensuales, puede descargar estos nuevos SDK y hacer referencia a las nuevas versiones de Jar de API de SDK en proyectos de Maven. Las versiones de mantenimiento no agregarán funciones de revisión previa adicionales, pero podrían incluir otros cambios más pequeños, como correcciones de errores, correcciones de seguridad y mejoras de rendimiento.
-Los javadocs se publican en Maven Central.
+Dado que puede haber varias versiones de mantenimiento de AEM entre las versiones de funciones mensuales, puede descargar estos nuevos SDK y hacer referencia a las nuevas versiones de JAR de API de SDK en proyectos en Maven. Las versiones de mantenimiento no añadirán funciones de versión preliminar adicionales, pero podrían incluir otros cambios más pequeños, como correcciones de errores, correcciones de seguridad y mejoras de rendimiento.
+Los JavaDocs se publican en Maven Central.
 
 Para compilar con el SDK de prelanzamiento:
 
-1. modifique el pom.xml de su proyecto maven para hacer referencia a un jar de api de sdk de prelanzamiento distinto, que se publica en Maven central. Contiene cualquier nueva api de Java para las funciones de prelanzamiento y depende del jar de la api del sdk. Utiliza la misma versión.
+1. Modifique el pom.xml de su proyecto de Maven para hacer referencia a un JAR de API de SDK de prelanzamiento distinto, que se publica en Maven central. Contiene cualquier nueva API de Java para las funciones de prelanzamiento y depende del JAR de la API del SDK. Utiliza la misma versión.
 
-   Por ejemplo, a continuación se muestra un fragmento de la sección de administración de dependencias del pom principal que hace referencia al Jar de API normal:
+   Por ejemplo, a continuación se muestra un fragmento de la sección de administración de dependencias del POM principal que hace referencia al JAR de API normal:
 
    ```
    <dependencyManagement>
@@ -110,21 +110,21 @@ Para compilar con el SDK de prelanzamiento:
 
    Como de costumbre, los proyectos individuales pueden utilizar la dependencia.
 
-1. Implementar en el servidor local
+1. Implementación en el servidor local
 1. Si está seguro de que funciona como se espera localmente, confirme el código a una rama de desarrollo y utilice una canalización de no producción de Cloud Manager para implementar en un entorno que se suscriba al canal de prelanzamiento
 
 >[!CAUTION]
 > 
-> La variable `aem-prerelease-sdk-api` artifactId nunca debe utilizarse al implementar en fase o producción. Utilice siempre la api de aem-sdk al implementar mediante la canalización de producción. Del mismo modo, el código que hace referencia a las API de versión preliminar no debe implementarse mediante la canalización de producción.
+> El artifactId `aem-prerelease-sdk-api` nunca debe utilizarse al implementar en Ensayo o Producción. Utilice siempre aem-sdk-api al implementar mediante la canalización de producción. Del mismo modo, el código que hace referencia a las API de versión preliminar no debe implementarse mediante la canalización de producción.
 
-La variable [AEM CS SDK build Analyzer maven plugin v1.0 y superior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing) detectará si la api de prelanzamiento se utiliza en un proyecto inspeccionando las dependencias. Si el analizador lo encuentra, utilizará la api del sdk de prelanzamiento para analizar el proyecto.
+El [plugin maven de AEM CS SDK build Analyzer v1.0 y superior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=es#developing) detectará si la API de prelanzamiento se utiliza en un proyecto inspeccionando las dependencias. Si el analizador lo encuentra, utilizará la API del SDK de prelanzamiento para analizar el proyecto.
 
 ## Consideraciones {#considerations}
 
 Hay algunas cosas que hay que tener en cuenta cuando se trata del canal de prelanzamiento:
 
 * Es posible que algunas funciones que se implementarán en la versión del próximo mes no se incluyan en el canal de prelanzamiento.
-* Las funciones de la versión preliminar se someten a rigurosas garantías de calidad y se pretende que sean características completas en lugar de calidad beta. Si nota algún problema, informe de él, tal como lo haría si sospechara que hay errores en las características de una versión AEM normal.
-* Para determinar si un entorno está configurado para el canal de prelanzamiento, vaya a la consola de AEM **Acerca de** y compruebe si el número de versión AEM incluye un *versión preliminar* sufijo como ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
+* Las funciones de la versión preliminar se someten a rigurosas garantías de calidad y se pretende que sean características completas en lugar de calidad beta. Si nota algún problema, informe de él, tal como lo haría si sospechara que hay errores en las características de una versión de AEM normal.
+* Para determinar si un entorno está configurado para el canal de prelanzamiento, vaya a la página **Acerca de** de la consola de AEM y compruebe si el número de versión de AEM incluye un sufijo de *versión preliminar* como ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
 
-![about](/help/release-notes/assets/about.png)
+![acerca de](/help/release-notes/assets/about.png)
