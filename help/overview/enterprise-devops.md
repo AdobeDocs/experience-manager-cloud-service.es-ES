@@ -2,14 +2,14 @@
 title: Operaciones de desarrollo empresarial
 description: Para obtener información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1001'
 ht-degree: 100%
 
 ---
 
 
-# Operaciones de desarrollo empresarial{#enterprise-devops}
+# Operaciones de desarrollo empresarial {#enterprise-devops}
 
 Las operaciones de desarrollo empresarial abarcan los procesos, métodos y comunicaciones necesarios para lo siguiente:
 
