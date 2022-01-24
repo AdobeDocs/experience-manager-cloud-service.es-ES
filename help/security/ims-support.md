@@ -3,9 +3,9 @@ title: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 description: Compatibilidad con IMS para Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 
 >[!TIP]
 >
->Consulte nuestro curso para Experience League [Configuración del acceso a AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem) para obtener una introducción sobre cómo se autentican los usuarios con Adobe IMS para AEM as a Cloud Service y cómo se utilizan los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto para controlar el acceso a AEM y sus características y funcionalidades. Se requiere Adobe ID.
+>Consulte nuestro curso de Experience League [Configuración del acceso a AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem&amp;lang=es) para obtener una introducción de cómo se autentican los usuarios con Adobe IMS en AEM as a Cloud Service y cómo se utilizan los usuarios de IMS de Adobe, los grupos de usuarios y los perfiles de producto para controlar el acceso a AEM y sus funciones y funcionalidades. Se requiere Adobe ID.
 
 >[!NOTE]
 >
->AEM no admite la asignación de grupos a perfiles. Los usuarios deben agregarse individualmente en su lugar.
+>AEM no admite la asignación de grupos a perfiles. Los usuarios deben añadirse individualmente en su lugar.
 
 ## Puntos clave destacados {#key-highlights}
 
@@ -132,7 +132,7 @@ A continuación, se muestran las configuraciones de OSGI clave que deben modific
 
 ### Administración de productos y acceso de usuarios en Admin Console {#managing-products-and-user-access-in-admin-console}
 
-Cuando el administrador de productos inicia sesión en el Admin Console, verá varias instancias del contexto de producto as a Cloud Service de AEM, como se muestra a continuación. Por ejemplo, seleccione cualquiera de los productos de la página **Información general**:
+Cuando el administrador de productos inicia sesión en Admin Console, puede ver varias instancias del contexto de producto de AEM as a Cloud Service, como se muestra a continuación. Por ejemplo, seleccione cualquiera de los productos de la página **Información general**:
 
 ![Inicio de sesión en instancias](/help/security/assets/ims6.png)
 
@@ -140,7 +140,7 @@ Verá una lista de instancias existentes:
 
 ![Inicio de sesión en instancias 2](/help/security/assets/ims7.png)
 
-En cada instancia de contexto de producto, habrá instancias que abarquen los servicios Autor o Publicación en los entornos de producción, fase o desarrollo. Cada instancia se asociará a los perfiles de producto o a las funciones de Cloud Manager. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con los privilegios necesarios.
+En cada instancia de contexto de producto, habrá algunas que abarquen los servicios de creación o publicación en los entornos Producción, Ensayo o Desarrollo. Cada instancia se asocia a los perfiles de producto o a las funciones de Cloud Manager. Estos perfiles de producto se utilizan para asignar acceso a usuarios y grupos con los privilegios requeridos.
 
 El perfil **Administrator_xxx** se utiliza para otorgar privilegios de administrador en la instancia de AEM asociada, mientras que el perfil **User_xxx** se utiliza para añadir usuarios habituales.
 
@@ -167,7 +167,7 @@ Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una ve
 
 >[!NOTE]
 >
->Cualquier usuario creado en IMS puede crearse con un Adobe ID o un Federated ID. Si un usuario está configurado con Federated ID, se autentica con el proveedor de identidad de su empresa para iniciar sesión.
+>Cualquier usuario creado en IMS puede crearse con un Adobe ID o un Federated ID. Si un usuario está configurado con un Federated ID, se autentica con el proveedor de identidad de su compañía para iniciar sesión.
 
 Luego se les redirige a la pantalla de inicio de sesión de IMS y deberán introducir sus credenciales:
 
@@ -213,7 +213,7 @@ Para poder acceder a los entornos de Cloud Manager o AEM as a Cloud Service, deb
 Consulte Definiciones de funciones para obtener más información sobre las funciones de los usuarios que rigen la disponibilidad de funciones específicas en Cloud Manager.
 
 >[!NOTE]
->Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte Permisos [basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html).
+>Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Para obtener más información sobre cada una de las funciones con permisos específicos, tareas preconfiguradas o permisos asociados a cada función, consulte Permisos [basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=es).
 
 **Pasos para Añadir un usuario**
 
