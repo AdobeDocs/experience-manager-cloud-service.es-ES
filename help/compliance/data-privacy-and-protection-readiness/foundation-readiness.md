@@ -1,45 +1,45 @@
 ---
 title: 'Reglamentos de protección de datos y privacidad de datos: preparación de Adobe Experience Manager as a Cloud Service Foundation'
-description: Obtenga información sobre la compatibilidad de Adobe Experience Manager as a Cloud Service Foundation con las distintas normas de protección de datos y privacidad de datos; incluido el Reglamento General de Protección de Datos (RGPD) de la UE, la Ley de Privacidad del Consumidor de California y cómo cumplir al implementar un nuevo proyecto de AEM como Cloud Service.
+description: Obtenga información acerca del soporte de Adobe Experience Manager as a Cloud Service Foundation respecto a los distintos reglamentos de protección de datos y privacidad de datos; se incluye el Reglamento general de protección de datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto de AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Preparación de Adobe Experience Manager as a Cloud Service Foundation para la protección de datos y las normas de privacidad de datos {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# Preparación de Adobe Experience Manager as a Cloud Service Foundation para los reglamentos de protección de datos y privacidad de datos {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
->El contenido de este documento no constituye asesoramiento jurídico y no está pensado para sustituir el asesoramiento jurídico.
+>El contenido de este documento no constituye asesoramiento jurídico y no está pensado para sustituirlo.
 >
->Consulte con el departamento legal de su empresa para obtener asesoramiento sobre la protección de datos y las normas de privacidad de datos.
+>Consulte con el departamento legal de su empresa para obtener asesoramiento sobre los reglamentos de protección de datos y privacidad de datos.
 
 >[!NOTE]
 >
->Para obtener más información sobre la respuesta del Adobe a los problemas de privacidad y lo que esto supone para usted como cliente de Adobe, consulte [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
+>Para obtener más información acerca de la respuesta de Adobe a los problemas de privacidad y lo que esto supone para usted como cliente de Adobe, consulte el [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
 
-## Compatibilidad con la protección y la privacidad de datos de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
+## Soporte para la protección y privacidad de datos de AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-En el nivel de base de AEM, los datos personales almacenados se mantienen en el perfil del usuario. Por lo tanto, la información de este artículo trata principalmente de cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de acceso y eliminación respectivamente.
+En el nivel de AEM Foundation, los datos personales almacenados se mantienen en el perfil del usuario. Por lo tanto, la información de este artículo aborda principalmente de cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de acceso y eliminación respectivamente.
 
 ## Acceso a un perfil de usuario {#accessing-a-user-profile}
 
 ### Pasos manuales {#manual-steps}
 
-1. Abra la consola Administración de usuarios navegando hasta **[!UICONTROL Herramientas - Seguridad - Usuarios]** o navegando directamente a `https://<serveraddress>:<serverport>/security/users.html`
+1. Abra la consola Administración de usuarios navegando hasta **[!UICONTROL Herramientas - Seguridad - Usuarios]** o directamente a `https://<serveraddress>:<serverport>/security/users.html`
 
 <!--
    ![useradmin2](assets/useradmin2.png)
 -->
 
-1. A continuación, busque el usuario en cuestión escribiendo el nombre en la barra de búsqueda situada en la parte superior de la página:
+1. A continuación, busque el usuario en cuestión escribiendo su nombre en la barra de búsqueda situada en la parte superior de la página:
 
-   ![buscar cuenta](assets/dpp-foundation-01.png)
+   ![buscar una cuenta](assets/dpp-foundation-01.png)
 
-1. Finalmente, abra el perfil de usuario haciendo clic en él y, a continuación, marque en la pestaña **[!UICONTROL Details]** .
+1. Por último, abra el perfil de usuario haciendo clic en él y, a continuación, mire en la pestaña **[!UICONTROL Detalles]**.
 
    ![perfil de usuario](assets/dpp-foundation-02.png)
 
@@ -53,7 +53,7 @@ Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usua
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
 ```
 
-**API de Sling**
+**API Sling**
 
 **Descubrimiento del inicio del usuario:**
 
@@ -64,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Recuperación de datos de usuario:**
 
-Uso de la ruta del nodo desde la propiedad home de la carga útil JSON devuelta desde el comando anterior:
+Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -76,30 +76,30 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ## Desactivación de un usuario y eliminación de los perfiles asociados {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Deshabilitar usuario {#disable-user}
+### Desactivación de un usuario {#disable-user}
 
 1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se ha descrito anteriormente.
-2. Pase el ratón sobre el usuario y haga clic en el icono de selección . El perfil cambiará a gris indicando que está seleccionado.
+2. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil cambiará a gris para indicar que está seleccionado.
 
-3. Pulse el botón **Disable** del menú superior para deshabilitar al usuario:
+3. Pulse el botón **Desactivar** en el menú superior para desactivar el usuario:
 
    ![desactivar cuenta](assets/dpp-foundation-03.png)
 
 4. Finalmente, confirme la acción.
 
-   La interfaz de usuario indicará que la cuenta de usuario se ha desactivado atenuando y añadiendo un bloqueo a la tarjeta de perfil:
+   La interfaz de usuario indicará que la cuenta de usuario se ha desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
 
    ![cuenta deshabilitada](assets/dpp-foundation-04.png)
 
-### Eliminar información del perfil de usuario {#delete-user-profile-information}
+### Eliminación de información del perfil de usuario {#delete-user-profile-information}
 
 >[!NOTE]
 >
->Para AEM como Cloud Service no hay ningún procedimiento manual disponible en la interfaz de usuario para la eliminación de un perfil de usuario, ya que CRXDE no es accesible.
+>Para AEM as a Cloud Service no hay ningún procedimiento manual disponible en la IU para la eliminación de un perfil de usuario, ya que CRXDE no es accesible.
 
 ### API HTTP {#http-api-1}
 
-Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la  **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
+Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
 
 **Descubrimiento del inicio del usuario:**
 
@@ -110,7 +110,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Desactivación del usuario:**
 
-Uso de la ruta del nodo desde la propiedad home de la carga útil JSON devuelta desde el comando anterior:
+Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
