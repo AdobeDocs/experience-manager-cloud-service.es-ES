@@ -10,9 +10,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 3023fda4543328a0feda259ca58adb95fa4b1317
+source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,13 @@ ht-degree: 0%
 >
 >La función para crear una cuenta de alias de empresa de Dynamic Media se encuentra en el canal de prelanzamiento de enero de 2022. La función estará disponible para el público en general en la versión de febrero de 2022.
 
-Las direcciones URL de Dynamic Media y el código incrustado del visor contienen el nombre de cuenta de la empresa. Este nombre de cuenta se creó en el momento del aprovisionamiento de Dynamic Media. Puede haber escenarios en los que su empresa haya pasado por una adquisición o un cambio de marca, o simplemente desee utilizar un nombre más memorable. En estos casos, no es fácil actualizar manualmente el nombre de la cuenta de la empresa en todas las direcciones URL y el código incrustado del visor que salen de la caja. Además, existe la posibilidad de que afecte a su repositorio de Dynamic Media existente o al contenido en directo. Para resolver este problema, puede configurar una cuenta de alias de empresa de Dynamic Media.
+Las direcciones URL de Dynamic Media y el código incrustado del visor contienen el nombre de cuenta de la empresa. Este nombre de cuenta se creó en el momento del aprovisionamiento de Dynamic Media. Puede haber escenarios en los que su empresa haya pasado por una adquisición o un cambio de marca, o simplemente desee utilizar un nombre más memorable. En estos casos, no es fácil actualizar manualmente el nombre de la cuenta de la empresa en todas las direcciones URL y el código incrustado del visor que salen de la caja. Además, existe la posibilidad de que afecte al repositorio de Dynamic Media existente o al contenido en directo. Para resolver este problema, puede configurar una cuenta de alias de empresa de Dynamic Media.
 
 Una cuenta de alias de empresa de Dynamic Media garantiza que todas las direcciones URL de Dynamic Media y el código incrustado del visor integrados en la interfaz de usuario reflejen cualquier actualización realizada en su contexto empresarial, como el cambio de marca. Una cuenta de alias también tiene un impacto positivo en su SEO (Optimización de motores de búsqueda) porque las URL de Dynamic Media y el código incrustado del visor reflejan el nuevo nombre de cuenta de la empresa.
 
 Al configurar una cuenta de alias de empresa de Dynamic Media, tenga en cuenta lo siguiente:
 
+* Al configurar una cuenta de alias de empresa en la variable **[!UICONTROL Editar configuración de Dynamic Media]** para que la invalidación de la caché se realice correctamente, debe invalidar las direcciones URL de *both* el **[!UICONTROL Empresa]** y **[!UICONTROL Alias de empresa]** cuenta, simultáneamente.
 * Cualquier URL de Dynamic Media existente o código incrustado del visor en su *live* las propiedades digitales deben actualizarse manualmente para reflejar el nuevo nombre de alias. Sin embargo, las direcciones URL o los visores incrustan código con el nombre de empresa original de Dynamic Media siguen funcionando para los recursos existentes o nuevos.
 * La capacidad de cuenta de alias de la empresa de Dynamic Media se limita al modo y la entrega de creación de Experience Manager Assets. El nombre de alias de la empresa no funciona con Experience Manager Sites. Los componentes WCM (Web Content Management) no se actualizan para este cambio. Estos componentes siguen funcionando con el nombre de empresa original de Dynamic Media para recuperar recursos de Dynamic Media.
 * Solo puede configurar una cuenta de alias de compañía en la variable **[!UICONTROL Editar configuración de Dynamic Media]** página. Sin embargo, puede crear tantas cuentas de alias de empresa como desee mediante un caso de compatibilidad y reflejar manualmente el nombre de alias necesario en las direcciones URL de Dynamic Media o en el código incrustado del visor.
