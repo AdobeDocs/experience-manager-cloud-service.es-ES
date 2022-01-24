@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Compartir recursos como un vínculo {#sharelink}
 
-Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets]. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para descargas muy grandes, la descarga está empaquetada en archivos de 100 GB de tamaño.
+Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets]. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para las descargas grandes, la descarga está empaquetada en archivos de 100 GB.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -49,7 +49,7 @@ Existen dos formas de compartir los recursos mediante la funcionalidad de compar
 Para compartir recursos como una URL pública:
 
 1. Iniciar sesión en [!DNL Experience Manager Assets] y vaya a **[!UICONTROL Archivos]**.
-1. Seleccione los recursos o la carpeta que contengan recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
+1. Seleccione los recursos o la carpeta que contienen los recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
 1. La variable **[!UICONTROL Uso compartido de vínculos]** que contiene un vínculo de recurso generado automáticamente en la variable **[!UICONTROL Compartir vínculo]** campo .
 1. Copie el vínculo del recurso y compártalo con los usuarios.
 
@@ -57,7 +57,7 @@ Para compartir recursos como una URL pública:
 
 Para compartir recursos por correo electrónico:
 
-1. Seleccione los recursos o la carpeta que contengan recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
+1. Seleccione los recursos o la carpeta que contienen los recursos. En la barra de herramientas, haga clic en **[!UICONTROL Compartir vínculo]**.
 1. La variable **[!UICONTROL Uso compartido de vínculos]** que contiene un vínculo de recurso generado automáticamente en la variable **[!UICONTROL Compartir vínculo]** campo .
 
    * En el cuadro de dirección de correo electrónico, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. Puede compartir el vínculo con varios usuarios. Si el usuario es miembro de su organización, seleccione su ID de correo electrónico en las sugerencias que aparecen en la lista desplegable. Si el usuario es externo, escriba el ID de correo electrónico completo y pulse **[!UICONTROL Entrar]**; el ID de correo electrónico se agrega a la lista de usuarios.
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >Si un recurso compartido se mueve a una ubicación diferente, su vínculo deja de funcionar. Vuelva a crear el vínculo y vuelva a compartirlo con los usuarios.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Descargar y compartir recursos {#download-and-share-assets}
+## Descargar recursos y compartir por separado {#download-and-share-assets}
 
 Los usuarios pueden descargar los recursos necesarios y compartirlos fuera de [!DNL Experience Manager]. Para obtener más información, consulte [cómo buscar recursos](/help/assets/search-assets.md), [cómo descargar recursos](/help/assets/download-assets-from-aem.md)y [cómo descargar colecciones](manage-collections.md#download-a-collection)
 
