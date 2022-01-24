@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
+source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 23%
@@ -139,7 +139,7 @@ Para configurar la conexión, siga estos pasos:
 1. Configurar [!DNL Dynamic Media] en local [!DNL Sites] y remoto [!DNL Assets] implementaciones. Siga las instrucciones para [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Utilice el mismo nombre de empresa en todas las configuraciones.
-   * En local [!DNL Sites], en [!UICONTROL Modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La variable [!DNL Sites] la implementación solo necesita acceso de solo lectura al [!DNL Dynamic Media] cuenta.
+   * En local [!DNL Sites], en [!UICONTROL Modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La variable [!DNL Sites] la implementación debe tener acceso de solo lectura al [!DNL Dynamic Media] cuenta.
    * En local [!DNL Sites], en el **[!UICONTROL Publicar recursos]** , seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
    * En remoto [!DNL Assets] implementación, en [!UICONTROL Modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
 
