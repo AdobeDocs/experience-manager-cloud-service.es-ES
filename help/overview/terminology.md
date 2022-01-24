@@ -3,9 +3,9 @@ title: 'Introducción a Adobe Experience Manager as a Cloud Service: terminolog�
 description: 'Introducción a Adobe Experience Manager as a Cloud Service: terminología.'
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Los siguientes términos se utilizan en relación con Adobe Experience Manager (
 |---|---|
 | Canalización de Adobe | Mecanismo para publicar contenido de Author en Publish. |
 | Nivel de AEM Author | Describe el entorno de creación para Sites y Assets. |
-| Nivel de vista previa de AEM | Describe el entorno de vista previa para Sites. |
+| Nivel de previsualización de AEM | Describe el entorno de previsualización para Sites. |
 | Nivel de AEM Publish | Describe el entorno de publicación para Sites. |
 
 
