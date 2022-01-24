@@ -3,17 +3,17 @@ title: Problemas conocidos
 description: Problemas conocidos con Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Problemas conocidos {#known-issues}
 
-Este artículo enumera los problemas conocidos de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] oferta. La lista se revisa y actualiza con cada versión de [!DNL Experience Manager].
+Este artículo enumera los problemas conocidos de la oferta de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. La lista se revisa y actualiza con cada versión de [!DNL Experience Manager].
 
-[Comuníquese con soporte técnico](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support) para obtener más información sobre los problemas conocidos.
+[Comuníquese con soporte técnico](https://experienceleague.adobe.com/?lang=es&amp;support-solution=Experience+Manager#support) para obtener más información sobre los problemas conocidos.
 
 <!-- 
 ## Platform {#platform}
@@ -25,9 +25,9 @@ Este artículo enumera los problemas conocidos de [!DNL Adobe Experience Manager
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Algunos problemas conocidos en [!DNL Assets] son:
+Algunos problemas conocidos en [!DNL Assets] son los siguientes:
 
-* **Descargar**: Si descarga una carpeta vacía, [!DNL Experience Manager] transmite un mensaje de éxito sobre la creación de un archivo ZIP, pero no se crea el archivo.
+* **Descarga**: si descarga una carpeta vacía, [!DNL Experience Manager] transmite un mensaje de éxito acerca de la creación de un archivo ZIP, pero no se crea el archivo.
 
 * **Esquema de metadatos**: la utilidad de clasificación de recursos solía causar un error de compilación de JSP. Se eliminó del esquema de metadatos. <!-- CQ-4282865, CQ-4284633 -->
 
@@ -50,7 +50,7 @@ A few capabilities of Adobe Experience Manager Assets that depend on foundation 
 
 >[!MORELIKETHIS]
 >
->* [Principales cambios en [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [Principales cambios en  [!DNL Experience Manager]](aem-cloud-changes.md)
 >* [Funciones en desuso y eliminadas](deprecated-removed-features.md)
 >* [Notas de la versión](home.md)
 
