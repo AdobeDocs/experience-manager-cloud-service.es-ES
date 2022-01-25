@@ -2,14 +2,14 @@
 title: ¿Cómo configurar el almacenamiento de Azure?
 description: Obtenga información sobre cómo integrar formularios con el servidor de almacenamiento de Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
-# Configurar [!DNL Azure] almacenamiento {#configure-azure-storage}
+# Configuración de almacenamiento de [!DNL Azure] {#configure-azure-storage}
 
 [[!DNL Experience Manager Forms] Integración de datos](data-integration.md) proporciona un [!DNL Azure] configuración de almacenamiento para integrar formularios con [!DNL Azure] servicios de almacenamiento. El Modelo de datos de formulario se puede utilizar para crear un Forms adaptable que interactúe con [!DNL Azure] para habilitar los flujos de trabajo empresariales. Por ejemplo:
 
@@ -93,4 +93,8 @@ Para definir una propiedad de objeto del modelo de datos como clave de búsqueda
 1. Cambie el **[!UICONTROL Clave de búsqueda]** alterne la opción al estado ON . Esta opción solo está disponible para los tipos de datos principales.
 1. Toque **[!UICONTROL Listo]** y, a continuación, toque **[!UICONTROL Guardar]** para guardar el modelo de datos de formulario.
 
-Después de definir las propiedades del objeto del modelo de datos como claves de búsqueda, las claves se guardan como metadatos en el almacenamiento de Azure.
+Después de definir las propiedades del objeto del modelo de datos como claves de búsqueda, los valores hash se almacenan en etiquetas de índice de Azure y los valores codificados de Base64 se almacenan en los metadatos de Azure.
+
+>[!NOTE]
+>
+>Solo se permiten 10 claves de búsqueda por entidad de Azure, ya que Azure solo permite 10 etiquetas por Blob y el valor de las propiedades marcado como claves de búsqueda se almacena en las etiquetas de índice de Azure después del hash.
