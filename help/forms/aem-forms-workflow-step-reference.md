@@ -2,9 +2,9 @@
 title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electrónico, utilizar Adobe Sign en un flujo de trabajo? '
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
+source-wordcount: '5467'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Los pasos del flujo de trabajo centrados en Forms realizan operaciones específi
 * Conecte un modelo de flujo de trabajo con varias fuentes de datos para guardar y recuperar datos fácilmente.
 
 * Utilice el paso de correo electrónico para enviar correos electrónicos de notificación y otros archivos adjuntos al finalizar una acción y al principio o al final de un flujo de trabajo.
+
+>[!NOTE]
+>
+>Si el modelo de flujo de trabajo está marcado para un almacenamiento externo, para todos los pasos del flujo de trabajo de Forms, puede seleccionar solo la opción de variable para almacenar o recuperar archivos de datos y archivos adjuntos.
 
 
 ## Asignar paso de tarea {#assign-task-step}
@@ -66,7 +70,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **[!UICONTROL Rellenado previamente]**: Los siguientes campos sirven como entradas para la tarea:
 
    * **[!UICONTROL Seleccione el archivo de datos de entrada mediante]**: Ruta del archivo de datos de entrada (.json, .xml, .doc o modelo de datos de formulario). Puede recuperar el archivo de datos de entrada mediante una ruta relativa a la carga útil o recuperar el archivo almacenado en una variable de tipo de datos Document, XML o JSON. Por ejemplo, el archivo contiene los datos enviados para el formulario a través de una aplicación Bandeja de entrada AEM. Una ruta de ejemplo es [Payload_Directory]/workflow/data.
-   * **[!UICONTROL Seleccionar datos adjuntos de entrada mediante]**: Los archivos adjuntos disponibles en la ubicación se adjuntan al formulario asociado a la tarea. La ruta siempre es relativa a la carga útil. Una ruta de ejemplo es [Payload_Directory]/attachment/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo de documento (Array list > Document) para especificar un archivo adjunto de entrada para el formulario adaptable
+   * **[!UICONTROL Seleccionar datos adjuntos de entrada mediante]**: Los archivos adjuntos disponibles en la ubicación se adjuntan al formulario asociado a la tarea. La ruta puede ser relativa a la carga útil o recuperar el archivo adjunto almacenado en una variable de un documento. Una ruta de ejemplo es [Payload_Directory]/attachment/. Puede especificar archivos adjuntos colocados en relación con la carga útil o utilizar una variable de tipo de documento (Array list > Document) para especificar un archivo adjunto de entrada para el formulario adaptable.
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Usuario asignado]** > **[!UICONTROL Asignar opciones]**: Especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante la secuencia de comandos del selector de participantes o asignar la tarea a un usuario o grupo AEM específico.
-* **[!UICONTROL Selector de participante]**: La opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Assign options . Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **[!UICONTROL Selector de participante]**: La opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Assign options . Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Participantes]**: El campo está disponible cuando la variable **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está seleccionada en la **[!UICONTROL Selector de participante]** campo . El campo permite seleccionar usuarios o grupos para la opción RandomParticipantChooser .
 
@@ -130,6 +134,10 @@ También puede utilizar el componente para controlar el comportamiento de la tar
 * **[!UICONTROL Mostrar datos de pasos anteriores]**: Seleccione esta opción para permitir que los usuarios asignados vean los destinatarios anteriores, las acciones ya realizadas en la tarea, los comentarios añadidos a la tarea y el documento de registro de la tarea completada, si está disponible.
 * **[!UICONTROL Mostrar datos de pasos siguientes]**: Seleccione esta opción para permitir que el usuario asignado actual vea la acción realizada y los comentarios añadidos a la tarea por los siguientes asignadores. También permite al usuario asignado actual ver un documento de registro de la tarea finalizada, si está disponible.
 * **[!UICONTROL Visibilidad del tipo de datos]**: De forma predeterminada, un usuario asignado puede ver un documento de registro, los cesionarios, las medidas adoptadas y los comentarios que hayan añadido los cesionarios anteriores y posteriores. Utilice la opción visibility of data type para limitar el tipo de datos visibles para los usuarios asignados.
+
+>[!NOTE]
+>
+>Las opciones para guardar el paso Asignar tarea como borrador y para recuperar el historial del paso Asignar tarea se desactivan al configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos. Además, en la Bandeja de entrada, la opción para guardar está desactivada.
 
 ## Enviar paso de correo electrónico {#send-email-step}
 

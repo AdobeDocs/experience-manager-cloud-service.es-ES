@@ -1,9 +1,9 @@
 ---
 title: ¿Cómo configurar el conector de almacenamiento unificado para AEM Forms?
 description: Obtenga información sobre cómo administrar el conector de almacenamiento unificado para AEM Forms. Utilice el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -53,16 +53,16 @@ Realice los siguientes pasos para configurar un modelo de flujo de trabajo AEM p
 
 >[!NOTE]
 >
->Las opciones para guardar el paso Asignar tarea como borrador y recuperar el historial del paso Asignar tarea no están disponibles al configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos.
+>Las opciones para guardar el paso Asignar tarea como borrador y para recuperar el historial del paso Asignar tarea se desactivan al configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos.
 
 ### Directrices para flujos de trabajo de AEM para almacenamiento de datos externos {#guidelines-workflows-external-data-storage}
 
 A continuación se indican las directrices que se siguen cuando se utilizan AEM Flujos de trabajo y se almacenan datos en almacenes de datos externos, como el servidor de almacenamiento de Microsoft Azure:
 
-* Utilice variables para almacenar datos al definir archivos de datos de entrada y salida y archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** opciones. La variable **[!UICONTROL Relativo a carga útil]** y **Disponible en una ruta absoluta** las opciones no se muestran automáticamente una vez que [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage).
+* Utilice variables para almacenar datos al definir archivos de datos de entrada y salida y archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** opciones. La variable **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** las opciones no se muestran automáticamente una vez que [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage).
 
 * Utilice variables para almacenar archivos de datos y archivos adjuntos al enviar un formulario adaptable a un flujo de trabajo AEM. No seleccione **[!UICONTROL Relativo a carga útil]** al enviar un formulario adaptable a un flujo de trabajo AEM. La variable **[!UICONTROL Relativo a carga útil]** no se muestra automáticamente una vez que [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage).
 
 * No utilice un paso de flujo de trabajo AEM personalizado en un modelo de flujo de trabajo para almacenar datos en el repositorio CRX DE.
 
-* Cuando [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage), no cree columnas personalizadas para AEM Bandeja de entrada basadas en los datos de un flujo de trabajo.
+* Cuando [configurar un modelo de flujo de trabajo AEM para el almacenamiento de datos externos](#configure-workflow-external-data-storage), no cree columnas personalizadas para AEM Bandeja de entrada, ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo de la Bandeja de entrada de AEM pertenece a un flujo de trabajo marcado para almacenamiento externo.

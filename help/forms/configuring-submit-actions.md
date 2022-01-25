@@ -2,9 +2,9 @@
 title: Configuración de una acción de envío para un formulario adaptable
 description: Un formulario adaptable proporciona varias acciones de envío. Una acción de envío define cómo se procesa un formulario adaptable después del envío. Puede utilizar las acciones de envío integradas o crear las suyas propias.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -145,13 +145,15 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Invocar un flujo de trabajo AEM {#invoke-an-aem-workflow}
 
-La variable **[!UICONTROL Invocar un flujo de trabajo AEM]** Acción de envío asocia un formulario adaptable con un [Flujo de trabajo AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en la instancia de autor. La acción Enviar coloca lo siguiente en la ubicación de carga útil del flujo de trabajo:
+La variable **[!UICONTROL Invocar un flujo de trabajo AEM]** Acción de envío asocia un formulario adaptable con un [Flujo de trabajo AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en la instancia de autor. Puede guardar el archivo de datos, los archivos adjuntos y el documento de registro en la ubicación de carga útil del flujo de trabajo o en una variable. Si el flujo de trabajo está marcado para almacenamiento de datos externos y está configurado para un almacenamiento de datos externo, solo está disponible la opción de variable . Puede seleccionar entre la lista de variables disponibles para el modelo de flujo de trabajo. Si el flujo de trabajo está marcado para almacenamiento de datos externos en una fase posterior y no en el momento de la creación del flujo de trabajo, asegúrese de que las configuraciones de variables requeridas estén establecidas.
 
-* **Archivo de datos**: Contiene datos enviados al formulario adaptable. Puede usar la variable **[!UICONTROL Ruta del archivo de datos]** para especificar el nombre del archivo y la ruta del archivo en relación con la carga útil. Por ejemplo, la variable `/addresschange/data.xml` ruta crea una carpeta llamada `addresschange` y lo coloca en relación a la carga útil. También puede especificar únicamente `data.xml` para enviar solo los datos enviados sin crear una jerarquía de carpetas.
+La acción Enviar coloca lo siguiente en la ubicación de carga útil del flujo de trabajo o la variable si el flujo de trabajo está marcado para el almacenamiento de datos externos:
 
-* **Archivos adjuntos**: Puede usar la variable **[!UICONTROL Ruta de acceso de datos adjuntos]** para especificar el nombre de la carpeta en la que se almacenarán los archivos adjuntos cargados en el formulario adaptable. La carpeta se crea en relación con la carga útil.
+* **Archivo de datos**: Contiene datos enviados al formulario adaptable. Puede usar la variable **[!UICONTROL Ruta del archivo de datos]** para especificar el nombre del archivo y la ruta del archivo en relación con la carga útil. Por ejemplo, la variable `/addresschange/data.xml` ruta crea una carpeta llamada `addresschange` y lo coloca en relación a la carga útil. También puede especificar únicamente `data.xml` para enviar solo los datos enviados sin crear una jerarquía de carpetas. Si el flujo de trabajo está marcado para el almacenamiento de datos externos, utilice la opción de variable y seleccione la variable en la lista de variables disponibles para el modelo de flujo de trabajo.
 
-* **Documento de registro**: Contiene el documento de registro generado para el formulario adaptable. Puede usar la variable **[!UICONTROL Documento de ruta de registro]** para especificar el nombre del archivo Document of Record y la ruta del archivo en relación con la carga útil. Por ejemplo, la variable `/addresschange/DoR.pdf` ruta crea una carpeta llamada `addresschange` en relación con la carga útil y coloca la variable `DoR.pdf` en relación con la carga útil. También puede especificar únicamente `DoR.pdf` para guardar sólo el documento de registro sin crear una jerarquía de carpetas.
+* **Archivos adjuntos**: Puede usar la variable **[!UICONTROL Ruta de acceso de datos adjuntos]** para especificar el nombre de la carpeta en la que se almacenarán los archivos adjuntos cargados en el formulario adaptable. La carpeta se crea en relación con la carga útil. Si el flujo de trabajo está marcado para el almacenamiento de datos externos, utilice la opción de variable y seleccione la variable en la lista de variables disponibles para el modelo de flujo de trabajo.
+
+* **Documento de registro**: Contiene el documento de registro generado para el formulario adaptable. Puede usar la variable **[!UICONTROL Documento de ruta de registro]** para especificar el nombre del archivo Document of Record y la ruta del archivo en relación con la carga útil. Por ejemplo, la variable `/addresschange/DoR.pdf` ruta crea una carpeta llamada `addresschange` en relación con la carga útil y coloca la variable `DoR.pdf` en relación con la carga útil. También puede especificar únicamente `DoR.pdf` para guardar sólo el documento de registro sin crear una jerarquía de carpetas. Si el flujo de trabajo está marcado para el almacenamiento de datos externos, utilice la opción de variable y seleccione la variable en la lista de variables disponibles para el modelo de flujo de trabajo.
 
 Antes de usar la variable **[!UICONTROL Invocar un flujo de trabajo AEM]** Acción de envío configure lo siguiente para **[!UICONTROL Servicio de configuración AEM DS]** configuración:
 
