@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 3eb12e6e6a539a8f6b3cb4ccddba9d1971268c13
+source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1290'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Compartir recursos como un vínculo {#sharelink}
 
-Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos sin que tengan que iniciar sesión en [!DNL Assets]. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Cuando los usuarios descargan recursos de vínculos compartidos, [!DNL Assets] utiliza un servicio asíncrono que ofrece descargas más rápidas e ininterrumpidas. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para las descargas grandes, la descarga está empaquetada en archivos de 100 GB.
+Compartir recursos a través de un vínculo es una forma cómoda de poner los recursos a disposición de terceros externos, especialistas en marketing y otros [!DNL Experience Manager] usuarios. La funcionalidad permite a los usuarios anónimos acceder y descargar los recursos compartidos con ellos. Al descargar recursos de un vínculo compartido, [!DNL Experience Manager Assets] utiliza un servicio asíncrono que ofrece una descarga más rápida e ininterrumpida. Los recursos que se van a descargar se ponen en cola en segundo plano en una bandeja de entrada en archivos ZIP de tamaño de archivo manejable. Para las descargas grandes, la descarga está empaquetada en varios archivos de 100 GB por tamaño de archivo.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
