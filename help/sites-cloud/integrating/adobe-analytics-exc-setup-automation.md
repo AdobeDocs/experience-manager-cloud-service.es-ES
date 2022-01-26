@@ -3,7 +3,10 @@ title: Integraci처n de Adobe Analytics con la automatizaci처n de la configuraci�
 description: La automatizaci처n de la configuraci처n del Experience Cloud proporciona una forma sencilla y automatizada de integrar e instrumentar Experience Manager Sites con Experience Platform Launch y Adobe Analytics mediante una sencilla interfaz de asistente de IU. Aprenda a utilizar la configuraci처n automatizada con su propio sitio.
 feature: Administering
 role: Admin
-source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 6c84c0eff6392f1f86c18c9daf15c402c4d9e778
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
