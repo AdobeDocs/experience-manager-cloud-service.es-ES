@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc34e7e9e69fa5d5a6fc30c380a506cdbc0234a
+source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
 workflow-type: tm+mt
-source-wordcount: '3469'
-ht-degree: 96%
+source-wordcount: '3472'
+ht-degree: 95%
 
 ---
 
@@ -172,7 +172,6 @@ ht-degree: 96%
          + [Publicar páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
          + [Fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
          + [Fragmentos de experiencias](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)
-         + [Fragmentos de experiencias: exportación](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
          + [Exportar a CSV](/help/sites-cloud/authoring/fundamentals/csv-export.md)
          + [Componentes](/help/sites-cloud/authoring/fundamentals/components.md)
          + [Creación para dispositivos móviles](/help/sites-cloud/authoring/fundamentals/mobile.md)
@@ -270,6 +269,7 @@ ht-degree: 96%
       + [Integración con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integración con la configuración automatizada de Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [Información general y novedades](/help/assets/overview.md)
