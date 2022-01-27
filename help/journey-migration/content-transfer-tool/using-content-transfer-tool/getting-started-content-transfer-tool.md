@@ -1,10 +1,10 @@
 ---
 title: Introducción a la herramienta de transferencia de contenido
 description: Introducción a la herramienta de transferencia de contenido
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 27%
+source-wordcount: '859'
+ht-degree: 29%
 
 ---
 
@@ -88,7 +88,7 @@ Siga esta sección para aprender a utilizar la herramienta de transferencia de c
    1. **Token de acceso**: introduzca el token de acceso.
 
       >[!NOTE]
-      >Puede recuperar el token de acceso utilizando la variable **Abrir token de acceso** botón. Debe asegurarse de pertenecer al grupo de administradores de AEM en la instancia de Cloud Service de destino.
+      >Puede recuperar el token de acceso utilizando la variable **Abrir token de acceso** botón. Debe asegurarse de pertenecer al grupo &quot;Administradores&quot; en la instancia de Cloud Service de destino.
 
    1. **Parámetros**: seleccione los siguientes parámetros para crear el conjunto de migración:
 
