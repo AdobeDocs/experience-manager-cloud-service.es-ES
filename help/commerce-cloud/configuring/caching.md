@@ -2,10 +2,10 @@
 title: Almacenamiento en caché y rendimiento
 description: Obtenga información sobre las diferentes configuraciones disponibles para habilitar GraphQL y el almacenamiento en caché de contenido para optimizar el rendimiento de la implementación de comercio.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 11ad29835688b5a6f79ee16760cc03a6ee82d6a3
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 88%
+source-wordcount: '845'
+ht-degree: 84%
 
 ---
 
@@ -23,7 +23,7 @@ Una vez configurada para un componente determinado, los inicios de caché almace
 
 Al configurar el almacenamiento en caché para los componentes, el nombre de la caché debe ser el nombre de los componentes **proxy** que defina en el proyecto.
 
-Antes de que el cliente envíe una solicitud de GraphQL, comprueba si esa solicitud de GraphQL **exacta** ya se ha almacenado en caché y posiblemente devuelva la respuesta en caché. Para coincidir, la solicitud de GraphQL DEBE coincidir exactamente, es decir, la consulta, el nombre de la operación (si existe), las variables (si existe) DEBEN ser iguales a la solicitud en caché, y también todos los encabezados HTTP personalizados que se establezcan DEBEN ser iguales. Por ejemplo, el encabezado `Store` de Magento DEBE coincidir.
+Antes de que el cliente envíe una solicitud de GraphQL, comprueba si esa solicitud de GraphQL **exacta** ya se ha almacenado en caché y posiblemente devuelva la respuesta en caché. Para coincidir, la solicitud de GraphQL DEBE coincidir exactamente, es decir, la consulta, el nombre de la operación (si existe), las variables (si existe) DEBEN ser iguales a la solicitud en caché, y también todos los encabezados HTTP personalizados que se establezcan DEBEN ser iguales. Por ejemplo, Adobe Commerce `Store` el encabezado DEBE coincidir.
 
 ### Ejemplos {#examples}
 
@@ -49,7 +49,7 @@ El almacenamiento en caché de otros componentes debe definirse sobre la base de
 
 El almacenamiento en caché de páginas de AEM o fragmentos en [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) es una práctica recomendada para cualquier proyecto AEM. Generalmente, se basa en técnicas de invalidación que garantizan que cualquier cambio de contenido en AEM se actualice correctamente en Dispatcher. Esta es una característica central de la estrategia de almacenamiento en caché de AEM Dispatcher.
 
-Además del CIF de contenido administrado de AEM puro, una página generalmente puede mostrar datos de comercio que se recuperan dinámicamente desde Magento a través de GraphQL. Aunque la estructura de la página en sí no cambie nunca, el contenido comercial podría cambiar, por ejemplo, si algunos datos del producto (nombre, precio, etc.) cambian de Magento.
+Además del CIF de contenido gestionado puro AEM, una página generalmente puede mostrar datos de comercio que se recuperan dinámicamente de Adobe Commerce a través de GraphQL. Aunque la estructura de la página en sí misma puede no cambiar nunca, el contenido comercial puede cambiar, por ejemplo, si se usan datos de algunos productos (nombre, precio, etc.) cambios en Adobe Commerce.
 
 Para asegurarse de que las páginas de CIF se pueden almacenar en caché durante una cantidad de tiempo limitada en AEM Dispatcher, recomendamos el uso de [Invalidación de caché basada en tiempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (también conocida como caché basada en TTL) al almacenar en caché las páginas del CIF en AEM Dispatcher. Esta función se puede configurar en AEM usando el paquete adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 

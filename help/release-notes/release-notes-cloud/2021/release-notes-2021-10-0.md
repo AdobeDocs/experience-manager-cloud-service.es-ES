@@ -1,26 +1,26 @@
 ---
 title: Notas de la versión 2021.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7d5850cf3b16885c11d1f450a171493a74008a6c
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 3%
+source-wordcount: '1439'
+ht-degree: 48%
 
 ---
 
 
 
-# Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de la versión actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021, etc.
+>Desde aquí puede navegar hasta las notas de versiones anteriores; por ejemplo, las de 2020, 2021, etc.
 
 >[!NOTE]
 >
->Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obtener más información sobre las actualizaciones de documentación no relacionadas directamente con una versión.
+>Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
 ## Fecha de la versión {#release-date}
 
@@ -45,7 +45,7 @@ Eche un vistazo a la [Información general sobre la versión de octubre de 2021]
 
 ### Nueva función en la [!DNL Assets] canal de prelanzamiento {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan cultivos y muestras mejorados. Además, se ha iniciado una mejora para generar diferentes contenidos de cultivos, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservarán en el reprocesamiento si no hay cambios en la anchura y la altura del perfil de imagen.
+* [!DNL Dynamic Media]El recorte inteligente y la muestra de la imagen de ahora cuenta con la tecnología de los últimos servicios de Sensei, que generan recortes y muestras mejorados. Además, se ha lanzado una mejora para generar diferentes contenidos de recorte, para la misma proporción de aspecto pero en diferentes resoluciones. Además, las ediciones manuales se conservarán en el reprocesamiento si no hay cambios en la anchura y la altura del perfil de imagen.
 
 * Las etiquetas inteligentes se aplican automáticamente a los recursos mediante microservicios de recursos, en lugar de los servicios de contenido inteligente. El modelo subyacente se actualiza para mejorar los resultados de etiquetado y reducir los sesgos. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -61,16 +61,16 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **Analytics para Forms adaptable**: Ahora puede capturar y rastrear el comportamiento de inicio de sesión y no inicio de sesión (Anonymous) mediante Adobe Analytics for Adaptive Forms para recopilar perspectivas del usuario final. Ayuda a tomar decisiones informadas basadas en datos para mejorar la experiencia del usuario final.
 
-### Nuevas funciones disponibles en [!DNL Forms] canal de prelanzamiento {#prerelease-features-forms-oct-2021}
+### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
-* **Externalización AEM datos de flujo de trabajo para un procesamiento seguro**: Puede almacenar datos de flujos de trabajo AEM en proceso (AEM datos de variables de flujo de trabajo) que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Los elementos de datos y las variables de flujo de trabajo no se almacenan en AEM repositorio y se recuperan a petición de un repositorio administrado por el cliente mientras se procesa el flujo de trabajo.
+* **Externalización de los datos de flujo de trabajo de AEM para un procesamiento seguro**: puede almacenar datos de flujos de trabajo AEM en el proceso (datos de variables de flujo de trabajo de AEM) que contengan elementos de datos personales sensibles (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Los elementos de datos y las variables de flujo de trabajo no se almacenan en el repositorio de AEM y se recuperan a petición de un repositorio administrado por el cliente mientras se procesa el flujo de trabajo.
 
 ### Funciones beta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) le ayuda a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones que le permitan:
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: las [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=es) le ayudan a combinar una plantilla y los datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modos sincrónico y por lotes. Las API le permiten crear aplicaciones con las que puede:
 
-   * Genere documentos rellenando archivos de plantilla (PDF y XDP) con datos XML.
-   * Genere formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
+   * Generar documentos rellenando archivos de plantilla (PDF y XDP) con datos XML.
+   * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
 
 Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa beta.
 
@@ -82,7 +82,7 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
 * Los autores pueden agregar vínculos a páginas de productos y catálogos en campos de texto utilizando el editor de texto enriquecido (RTE). Se ha agregado un icono del CIF a la barra de herramientas de RTE que abrirá los selectores para buscar y seleccionar rápidamente el producto o la categoría sin abandonar el contexto.
 
-* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas AEM carro de compras y de cierre de compra. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Magento
+* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas AEM carro de compras y de cierre de compra. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Adobe Commerce
 
 * Los comerciantes pueden ocultar ciertas categorías de catálogo de productos en la navegación mediante el servidor de Commerce. El componente principal de navegación del CIF respeta la configuración del back-end de comercio &quot;incluir en menú&quot; para mostrar u ocultar categorías en la navegación
 
@@ -90,11 +90,11 @@ Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa b
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.10.0.
+Esta sección describe las notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.10.0.
 
 ### Fecha de la versión {#release-date-cm-nov}
 
-La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.11.0 es el 4 de noviembre de 2021.
+La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2021.11.0 es el 4 de noviembre de 2021.
 La próxima versión está planificada para el 9 de diciembre de 2021.
 
 ### Novedades {#what-is-new-cm-nov}
@@ -104,7 +104,7 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
    >[!IMPORTANT]
    >Debe estar en AEM versión `2021.10.5933.20211012T154732Z` para aprovechar las nuevas canalizaciones front-end.
 
-* La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
+* La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen de AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 
 * El ID de confirmación de Git ahora se mostrará en los detalles de ejecución de la canalización, lo que facilita el seguimiento del código creado.
 
@@ -112,11 +112,11 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 * La creación de entornos ya está disponible a través de una API expuesta públicamente.
 
-* La variable `x-request-id` el encabezado de respuesta ahora está visible en API Playground en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de atención al cliente para la resolución de problemas.
+* El encabezado de respuesta `x-request-id` ahora está visible en el sitio de pruebas de API en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de servicio de atención al cliente para la resolución de problemas.
 
 * Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
 
-* Ya está disponible una nueva página de actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
+* Ya está disponible una nueva página Actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
 
 * Ya está disponible una nueva página de canalizaciones con una ventana emergente de estado al pasar el ratón por encima para facilitar la vista del resumen de detalles. Las ejecuciones de canalización se pueden ver junto con los detalles asociados.
 
@@ -128,11 +128,11 @@ La próxima versión está planificada para el 9 de diciembre de 2021.
 
 ### Corrección de errores {#bug-fixes-nov}
 
-* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en E/S de red superfluas al iniciar y detener el contenedor de compilación.
+* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en I/O de red superfluas al iniciar y detener el contenedor de compilación.
 
-* La API del PATCH de canalización falla si la fase de implementación no existe.
+* La API PATCH de canalización falla si la fase de implementación no existe.
 
-* La variable `ClientlibProxyResourceCheck` la regla de calidad producía problemas falsos positivos cuando había bibliotecas cliente con rutas base comunes.
+* La regla de calidad `ClientlibProxyResourceCheck` producía problemas de falsos positivos cuando había bibliotecas de cliente con rutas base comunes.
 
 * El mensaje de error cuando se ha alcanzado el número máximo de repositorios no especificaba el motivo del error.
 

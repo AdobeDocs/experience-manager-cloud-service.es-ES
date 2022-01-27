@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: a30006b7eedbe2bc6993f47b7e8433af6df17a07
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '2578'
-ht-degree: 26%
+source-wordcount: '2598'
+ht-degree: 23%
 
 ---
 
 # Personalización de los componentes principales del CIF de AEM {#customize-cif-components}
 
-La variable [Proyecto de CIF Venia](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para usar [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components). En este tutorial, ampliará aún más la variable [Teaser de productos](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para mostrar un atributo personalizado del Magento. También obtendrá más información sobre la integración de GraphQL entre AEM y Magento y los enlaces de extensión proporcionados por los componentes principales del CIF.
+La variable [Proyecto de CIF Venia](https://github.com/adobe/aem-cif-guides-venia) es una base de código de referencia para usar [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components). En este tutorial, ampliará aún más la variable [Teaser de productos](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para mostrar un atributo personalizado de Adobe Commerce. También obtendrá más información sobre la integración de GraphQL entre AEM y Adobe Commerce y los enlaces de extensión proporcionados por los componentes principales del CIF.
 
 >[!TIP]
 >
@@ -28,13 +28,13 @@ La variable [Proyecto de CIF Venia](https://github.com/adobe/aem-cif-guides-veni
 
 ## Qué va a generar
 
-La marca Venia comenzó recientemente a fabricar algunos productos utilizando materiales sostenibles y la empresa quiere mostrar un **Compatible con el ecosistema** distintivo como parte del teaser de productos. Se creará un nuevo atributo personalizado en el Magento para indicar si un producto usa la variable **Eco amigable** material. Este atributo personalizado se agregará como parte de la consulta de GraphQL y se mostrará en el teaser de productos de los productos especificados.
+La marca Venia comenzó recientemente a fabricar algunos productos utilizando materiales sostenibles y la empresa quiere mostrar un **Compatible con el ecosistema** distintivo como parte del teaser de productos. Se creará un nuevo atributo personalizado en Adobe Commerce para indicar si un producto usa la variable **Eco amigable** material. Este atributo personalizado se agregará como parte de la consulta de GraphQL y se mostrará en el teaser de productos de los productos especificados.
 
 ![Implementación Final De Distintivo Compatible Con Eco](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Requisitos previos {#prerequisites}
 
-Se requiere un entorno de desarrollo local para completar este tutorial. Esto incluye una instancia de AEM en ejecución configurada y conectada a una instancia de Magento. Consulte los requisitos y pasos para [configuración de un desarrollo local con AEM SDK as a Cloud Service](../develop.md). Para seguir el tutorial por completo, necesitará permisos para agregar [Atributos a un producto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) en Magento.
+Se requiere un entorno de desarrollo local para completar este tutorial. Esto incluye una instancia de AEM en ejecución configurada y conectada a una instancia de Adobe Commerce. Consulte los requisitos y pasos para [configuración de un desarrollo local con AEM SDK as a Cloud Service](../develop.md). Para seguir el tutorial por completo, necesitará permisos para agregar [Atributos a un producto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) en Adobe Commerce.
 
 También necesitará el IDE de GraphQL como [GraphiQL](https://github.com/graphql/graphiql) o una extensión del explorador para ejecutar ejemplos de código y tutoriales. Si instala una extensión del explorador, asegúrese de que tenga la capacidad de establecer encabezados de solicitud. En Google Chrome, [Cliente Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) es una extensión que puede realizar el trabajo.
 
@@ -59,11 +59,11 @@ Clonaremos el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y,
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Añada las configuraciones de OSGi necesarias para conectar la instancia de AEM a una instancia de Magento o añadir las configuraciones al proyecto recién creado.
+1. Agregue las configuraciones de OSGi necesarias para conectar la instancia de AEM a una instancia de Adobe Commerce o agregue las configuraciones al proyecto recién creado.
 
-1. En este punto, debería tener una versión de trabajo de una tienda conectada a una instancia de Magento. Vaya a la `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. En este punto debe tener una versión de trabajo de una tienda conectada a una instancia de Adobe Commerce. Vaya a la `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Magento está funcionando.
+   Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, debería ver varias categorías que indican que la conexión a Adobe Commerce está funcionando.
 
    ![Tienda configurada con tema de Venia](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -77,7 +77,7 @@ El componente teaser de productos se ampliará a lo largo de este tutorial. Como
 
    ![Inserción del teaser de productos](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. Expanda el panel lateral (si no está activado) y cambie desde menú desplegable del buscador de recursos a **Productos**. Esto debería mostrar una lista de los productos disponibles de una instancia conectada a Magento. Seleccione un producto y **arrástrelo y suéltelo** en el componente **teaser de productos** de la página.
+3. Expanda el panel lateral (si no está activado) y cambie desde menú desplegable del buscador de recursos a **Productos**. Esto debería mostrar una lista de los productos disponibles de una instancia de Adobe Commerce conectada. Seleccione un producto y **arrástrelo y suéltelo** en el componente **teaser de productos** de la página.
 
    ![Arrastrar y soltar teaser de productos](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -89,15 +89,15 @@ El componente teaser de productos se ampliará a lo largo de este tutorial. Como
 
    ![Teaser de productos: estilo predeterminado](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Añadir un atributo personalizado en el Magento {#add-custom-attribute}
+## Añadir un atributo personalizado en Adobe Commerce {#add-custom-attribute}
 
-Los productos y los datos de producto mostrados en AEM se almacenan en el Magento . A continuación, añada un nuevo atributo para **Compatible con el ecosistema** como parte del atributo de producto configurado mediante la interfaz de usuario del Magento.
+Los productos y los datos de productos mostrados en AEM se almacenan en Adobe Commerce. A continuación, añada un nuevo atributo para **Compatible con el ecosistema** como parte del atributo de producto configurado mediante la interfaz de usuario de Adobe Commerce.
 
 >[!TIP]
 >
 > Ya tiene un **Sí/No** como parte de su conjunto de atributos de producto? Siéntase libre de usarlo y omita esta sección.
 
-1. Inicie sesión en la instancia de Magento.
+1. Inicie sesión en la instancia de Adobe Commerce.
 1. Vaya a **Catálogo** > **Productos**.
 1. Actualice el filtro de búsqueda para encontrar la variable **Producto configurable** se utiliza cuando se añade al componente Teaser en el ejercicio anterior. Abra el producto en modo de edición.
 
@@ -124,24 +124,24 @@ Los productos y los datos de producto mostrados en AEM se almacenan en el Magent
 
    >[!TIP]
    >
-   > Más detalles sobre la administración [Los atributos de producto se encuentran en la guía del usuario del Magento](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   > Más detalles sobre la administración [Los atributos de producto se encuentran en la guía del usuario de Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Vaya a **Sistema** > **Herramientas** > **Administración de caché**. Dado que se ha realizado una actualización en el esquema de datos, es necesario invalidar algunos de los tipos de caché en el Magento.
+1. Vaya a **Sistema** > **Herramientas** > **Administración de caché**. Como se ha realizado una actualización del esquema de datos, es necesario invalidar algunos de los tipos de caché en Adobe Commerce.
 1. Marque la casilla situada junto a **Configuración** y envíe el tipo de caché para **Actualizar**
 
    ![Actualizar tipo de caché de configuración](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > Más detalles sobre [La Administración de caché se encuentra en la guía del usuario del Magento](https://docs.magento.com/user-guide/system/cache-management.html).
+   > Más detalles sobre [La Administración de caché se encuentra en la guía del usuario de Adobe Commerce](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## Uso de un IDE de GraphQL para verificar el atributo {#use-graphql-ide}
 
-Antes de saltar a AEM código, es útil explorar el [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) uso de un IDE de GraphQL. La integración del Magento con AEM se realiza principalmente mediante una serie de consultas de GraphQL. Comprender y modificar las consultas de GraphQL es una de las formas clave de ampliar los componentes principales del CIF.
+Antes de saltar a AEM código, es útil explorar el [Información general de GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) uso de un IDE de GraphQL. La integración de Adobe Commerce con AEM se realiza principalmente mediante una serie de consultas de GraphQL. Comprender y modificar las consultas de GraphQL es una de las formas clave de ampliar los componentes principales del CIF.
 
 A continuación, utilice un IDE de GraphQL para verificar que la variable `eco_friendly` se ha agregado al conjunto de atributos de producto. Las capturas de pantalla de este tutorial utilizan la variable [Cliente Altair GraphQL](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
-1. Abra el IDE de GraphQL e introduzca la URL `http://<magento-server>/graphql` en la barra URL de su IDE o extensión.
+1. Abra el IDE de GraphQL e introduzca la URL `http://<commerce-server>/graphql` en la barra URL de su IDE o extensión.
 2. Agregue lo siguiente [consulta de productos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) donde `YOUR_SKU` es la variable **SKU** del producto utilizado en el ejercicio anterior:
 
    ```json
@@ -182,7 +182,7 @@ A continuación, utilice un IDE de GraphQL para verificar que la variable `eco_f
 
    >[!TIP]
    >
-   > Documentación más detallada sobre [Magento GraphQL se puede encontrar aquí](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > Documentación más detallada sobre [Adobe Commerce GraphQL se puede encontrar aquí](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Actualización del modelo de Sling para el teaser de productos {#updating-sling-model-product-teaser}
 
@@ -285,7 +285,7 @@ Uso [el IDE que elija](https://experienceleague.adobe.com/docs/experience-manage
 
    Añadir al método `extendProductQueryWith` es una manera eficaz de garantizar que el resto del modelo disponga de atributos de productos adicionales. También minimiza el número de consultas ejecutadas.
 
-   En el código anterior, la variable`addCustomSimpleField` se utiliza para recuperar la variable `eco_friendly` atributo. Esto ilustra cómo se puede realizar la consulta de cualquier atributo personalizado que forme parte del esquema del Magento.
+   En el código anterior, la variable`addCustomSimpleField` se utiliza para recuperar la variable `eco_friendly` atributo. Esto ilustra cómo se puede consultar cualquier atributo personalizado que forme parte del esquema de Adobe Commerce.
 
    >[!NOTE]
    >

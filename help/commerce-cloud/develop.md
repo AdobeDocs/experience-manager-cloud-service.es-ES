@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 65%
+source-wordcount: '1004'
+ht-degree: 64%
 
 ---
 
@@ -68,25 +68,25 @@ Para el desarrollo del complemento CIF local mediante el uso del SDK de AEM as a
 
    El archivo zip del complemento CIF contiene dos `.far` archivos del archivo de funciones Sling. Asegúrese de utilizar el correcto para Autor de AEM o AEM Publish, según cómo vaya a ejecutar el SDK de AEM as a Cloud Service local.
 
-1. Cree una variable de entorno del sistema operativo local con el nombre `COMMERCE_ENDPOINT` que mantenga el extremo Magento GraphQL.
+1. Cree una variable de entorno del sistema operativo local con el nombre `COMMERCE_ENDPOINT` manteniendo el extremo Adobe Commerce GraphQL .
 
    Ejemplo con Mac OSX:
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Ejemplo con Windows:
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    AEM utiliza esta variable para conectarse al sistema de comercio. Además, el complemento CIF incluye un proxy inverso local para que el extremo Commerce GraphQL esté disponible localmente. Esto lo utilizan las herramientas de creación del CIF (consola de producto y selectores) y los componentes del cliente del CIF que realizan llamadas directas a GraphQL.
 
    Esta variable también debe configurarse para el entorno AEM as a Cloud Service. Para obtener más información sobre las variables, consulte [Configuración de OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
-1. (Opcional) Para habilitar las funciones de catálogo organizadas, debe crear un token de integración para la instancia de Magento. Siga estos pasos en [Introducción](./getting-started.md#staging) para crear el token.
+1. (Opcional) Para habilitar las funciones de catálogo organizadas, debe crear un token de integración para la instancia de Adobe Commerce. Siga estos pasos en [Introducción](./getting-started.md#staging) para crear el token.
 
    Establecer un secreto OSGi con el nombre `COMMERCE_AUTH_HEADER` al siguiente valor:
 
