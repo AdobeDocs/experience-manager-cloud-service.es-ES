@@ -2,10 +2,10 @@
 title: Registro para AEM as a Cloud Service
 description: Aprenda a utilizar Logging para AEM as a Cloud Service a fin de configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 2%
+source-wordcount: '2316'
+ht-degree: 3%
 
 ---
 
@@ -112,7 +112,7 @@ AEM Los niveles de registro se establecen por tipo de entorno a través de la co
 <tbody>
 <tr>
 <td>Fecha y hora</td>
-<td>29.04.2020 21:50:13.398</td>
+<td>29.4.2020:50:13 398</td>
 </tr>
 <tr>
 <td>ID de nodo as a Cloud Service AEM</td>
@@ -150,7 +150,7 @@ Configure el registro de Java para paquetes Java personalizados mediante configu
 
 Cambiar otras propiedades de configuración de LogManager OSGi puede causar problemas de disponibilidad en AEM as a Cloud Service.
 
-A continuación se muestran algunos ejemplos de las configuraciones de registro recomendadas (con el paquete Java del marcador de posición `com.example`) para los tres tipos de entorno as a Cloud Service AEM.
+A continuación se muestran algunos ejemplos de las configuraciones de registro recomendadas (con el paquete Java del marcador de posición de `com.example`) para los tres AEM tipos de entorno as a Cloud Service.
 
 ### Desarrollo {#development}
 
@@ -257,12 +257,12 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 |---|---|
 | Dirección IP del cliente | - |
 | Usuario | myuser@adobe.com |
-| Fecha y hora | 30/Abr/2020:17:37:14 +000 |
+| Fecha y hora | 30 de abril de 2020:17:37:14 +000 |
 | método HTTP | GET |
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocolo | HTTP/1.1 |
 | Estado de respuesta HTTP | 200 |
-| Tiempo de solicitud HTTP en milisegundos | 1141 |
+| Tamaño del cuerpo de respuesta en bytes | 1141 |
 | Referencia | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | Agente de usuario | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
@@ -286,7 +286,7 @@ Este conjunto de registros proporciona perspectivas sobre las solicitudes HTTP e
 
 El registro de acceso al servidor web HTTP Apache proporciona instrucciones para cada solicitud HTTP que llega al servidor web o Dispatcher del nivel de publicación. Tenga en cuenta que las solicitudes que se proporcionan desde una CDN de flujo ascendente no se reflejan en estos registros.
 
-Consulte información sobre el formato de registro de errores en la [documentación oficial de Apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+Consulte la información sobre el formato de registro de errores en la [documentación oficial de apache](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
 **Ejemplo de salida de registro**
 
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>Fecha y hora</td>
-<td>1/mayo/2020:00:09:46 +0000</td>
+<td>1/mayo/2020:00:09:46 +000</td>
 </tr>
 <tr>
 <td>Método HTTP</td>
@@ -355,7 +355,7 @@ Este registro no se puede configurar en AEM as a Cloud Service.
 
 El registro de errores del servidor web HTTP Apache proporciona instrucciones para cada error en el servidor web o Dispatcher del nivel de publicación.
 
-Consulte información sobre el formato de registro de errores en la [documentación oficial de Apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
+Consulte la información sobre el formato de registro de errores en la [documentación oficial de apache](https://httpd.apache.org/docs/2.4/logs.html#errorlog).
 
 **Ejemplo de salida de registro**
 
@@ -371,7 +371,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>Fecha y hora</td>
-<td>viernes 17 de julio de 2020 :16:42.608913</td>
+<td>Viernes 17 de Julio de 2012:16:42 608 913 2020</td>
 </tr>
 <tr>
 <td>Nivel de evento</td>
@@ -394,7 +394,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 ### Configuración del registro de errores del servidor web Apache HTTPD {#configuring-the-apache-httpd-web-server-error-log}
 
-Los niveles de registro mod_rewrite se definen mediante la variable REWRITE_LOG_LEVEL en el archivo `conf.d/variables/global.var`.
+Los niveles de registro mod_rewrite están definidos por la variable REWRITE_LOG_LEVEL en el archivo `conf.d/variables/global.var`.
 
 Puede configurarse como Error, Advertencia, Información, Depuración y Trace1 - Trace8, con un valor predeterminado de Advertencia. Para depurar las reglas de reescritura, se recomienda elevar el nivel de registro a Trace2.
 
@@ -433,7 +433,7 @@ Define REWRITE_LOG_LEVEL Debug
 <tbody>
 <tr>
 <td>Fecha y hora</td>
-<td>[17/Julio/2020:23:48:16 +0000]</td>
+<td>[17 de julio de 2020]:23:48:16 +000]</td>
 </tr>
 <tr>
 <td>Nombre de la secuencia</td>
@@ -478,7 +478,7 @@ Puede configurarse como Error, Advertencia, Información, Depuración y Seguimie
 
 Aunque el registro de Dispatcher admite otros niveles de granularidad de registro, el AEM as a Cloud Service recomienda usar los niveles que se describen a continuación.
 
-Para establecer el nivel de registro por entorno, utilice la rama condicional adecuada en el archivo `global.var` como se describe a continuación:
+Para establecer el nivel de registro por entorno, utilice la rama condicional adecuada en la variable `global.var` como se describe a continuación:
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -497,9 +497,9 @@ Define DISP_LOG_LEVEL Debug
 
 ## Cómo acceder a registros {#how-to-access-logs}
 
-### Entornos de nube {#cloud-environments}
+### Entornos de la nube {#cloud-environments}
 
-Se puede acceder a AEM registros as a Cloud Service para servicios en la nube descargando a través de la interfaz de Cloud Manager o adaptando los registros en la línea de comandos utilizando la interfaz de línea de comandos de Adobe I/O. Para obtener más información, consulte la [documentación de registro de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+Se puede acceder a AEM registros as a Cloud Service para servicios en la nube descargando a través de la interfaz de Cloud Manager o adaptando los registros en la línea de comandos utilizando la interfaz de línea de comandos de Adobe I/O. Para obtener más información, consulte la [Documentación de registro de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK local {#local-sdk}
 
@@ -511,17 +511,17 @@ AEM registros se encuentran en la carpeta `crx-quickstart/logs`, donde se pueden
 * Registro AEM solicitud HTTP: `request.log`
 * Registro AEM acceso HTTP: `access.log`
 
-Los registros de capa de Apache, incluido Dispatcher, se encuentran en el contenedor Docker que alberga el Dispatcher. Consulte la [documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obtener información sobre cómo iniciar Dispatcher.
+Los registros de capa de Apache, incluido Dispatcher, se encuentran en el contenedor Docker que alberga el Dispatcher. Consulte la [Documentación de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obtener información sobre cómo iniciar Dispatcher.
 
 Para recuperar los registros:
 
 1. En la línea de comandos, escriba `docker ps` para enumerar los contenedores
-1. Para iniciar sesión en el contenedor, escriba &quot;`docker exec -it <container> /bin/sh`&quot;, donde `<container>` es el identificador del contenedor de Dispatcher del paso anterior
+1. Para iniciar sesión en el contenedor, escriba &quot;`docker exec -it <container> /bin/sh`&quot;, donde `<container>` es el id de contenedor de Dispatcher del paso anterior
 1. Vaya a la raíz de caché en `/mnt/var/www/html`
 1. Los registros están en `/etc/httpd/logs`
 1. Inspect los registros: se puede acceder a ellas desde la carpeta XYZ, donde se pueden ver los siguientes registros:
    * Registro de acceso al servidor web HTTP de Apache - `httpd_access.log`
-   * Registros de errores del servidor web HTTP de Apache: `httpd_error.log`
+   * Registros de errores del servidor web HTTP de Apache - `httpd_error.log`
    * Registros de Dispatcher - `dispatcher.log`
 
 Los registros también se imprimen directamente en la salida de terminal. La mayoría de las veces, estos registros deben ser DEBUG, lo que se puede lograr pasando el nivel de depuración como parámetro al ejecutar Docker. Por ejemplo:
@@ -564,7 +564,7 @@ Debe asegurarse de que la solicitud inicial incluya todos los entornos de desarr
 
 Si cualquier nuevo entorno de desarrollo creado después de la solicitud inicial pretende tener el reenvío de Splunk, pero no lo tiene habilitado, se debe realizar una solicitud adicional.
 
-Tenga en cuenta también que si se han solicitado entornos de desarrollo, es posible que otros entornos de desarrollo que no estén en los entornos de solicitud o incluso de simulación de pruebas tengan habilitado el reenvío de Splunk y compartan un índice de Splunk. Los clientes pueden utilizar el campo `aem_env_id` para distinguir entre estos entornos.
+Tenga en cuenta también que si se han solicitado entornos de desarrollo, es posible que otros entornos de desarrollo que no estén en los entornos de solicitud o incluso de simulación de pruebas tengan habilitado el reenvío de Splunk y compartan un índice de Splunk. Los clientes pueden usar la variable `aem_env_id` para distinguir entre estos entornos.
 
 A continuación encontrará una muestra de una solicitud de asistencia al cliente:
 
@@ -589,7 +589,7 @@ Programa 123, desarrolladores
 * Puerto de Splunk: 443
 * Token de HEC de Splunk: ABC123
 
-Puede ser suficiente para que se utilice el mismo índice de Splunk para cada entorno, en cuyo caso se puede utilizar el campo `aem_env_type` para diferenciar en función de los valores dev, stage y prod. Si hay varios entornos de desarrollo, también se puede utilizar el campo `aem_env_id` . Algunas organizaciones pueden elegir un índice separado para los registros del entorno de producción si el índice asociado limita el acceso a un conjunto reducido de usuarios de Splunk.
+Puede ser suficiente que el mismo índice de Splunk se utilice para cada entorno, en cuyo caso, la variable `aem_env_type` se puede utilizar para diferenciar en función de los valores dev, stage y prod. Si hay varios entornos de desarrollo, la variable `aem_env_id` también se puede utilizar. Algunas organizaciones pueden elegir un índice separado para los registros del entorno de producción si el índice asociado limita el acceso a un conjunto reducido de usuarios de Splunk.
 
 A continuación se muestra un ejemplo de entrada de registro:
 
