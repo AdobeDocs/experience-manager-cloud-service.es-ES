@@ -2,10 +2,10 @@
 title: Experience Manager [!DNL Forms] Procesamiento por lotes de comunicaciones as a Cloud Service
 description: ¿Cómo crear comunicaciones personalizadas y orientadas a la marca?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 1%
+source-wordcount: '2250'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +32,9 @@ Las comunicaciones proporcionan API para la generación de documentos bajo deman
 
 Una operación por lotes es un proceso de generación de varios documentos de tipo similar para un conjunto de registros a intervalos programados. Una operación por lotes consta de dos partes: Configuración (definición) y ejecución.
 
-* **Configuración (definición)**: Una configuración por lotes almacena información sobre varios recursos y propiedades que se deben establecer para documentos generados. Por ejemplo, proporciona detalles sobre la plantilla XDP o PDF y la ubicación de los datos de cliente que se van a utilizar, además de especificar diversas propiedades para los documentos de PDF de salida.
+* **Configuración (definición)**: Una configuración por lotes almacena información sobre varios recursos y propiedades que se deben establecer para documentos generados. Por ejemplo, proporciona detalles sobre la plantilla XDP o PDF y la ubicación de los datos de cliente que se van a utilizar, además de especificar diversas propiedades para los documentos de salida.
 
-* **Ejecución**: Para iniciar una operación por lotes, especifique la ejecución y pase el nombre de configuración por lotes a la API de ejecución por lotes.
+* **Ejecución**: Para iniciar una operación por lotes, pase el nombre de configuración por lotes a la API de ejecución por lotes.
 
 ### Componentes de una operación por lotes {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ Una operación por lotes es un proceso de generación de varios documentos de ti
 
 **Configuración del almacén de datos por lotes (USC)**: La configuración de datos por lotes ayuda a configurar una instancia específica del almacenamiento de blob para las API por lotes. Permite especificar las ubicaciones de entrada y salida en el almacenamiento del blob de Microsoft Azure, propiedad del cliente.
 
-**API por lotes**: Permite crear configuraciones por lotes y ejecutar las ejecuciones por lotes en función de estas configuraciones para crear y ejecutar una operación por lotes para combinar un PDF o una plantilla XDP con datos y generar resultados en los formatos PDF, PS, PCL, DPL, IPL y ZPL. Las comunicaciones proporcionan API por lotes para operaciones de creación, lectura, actualización y eliminación.
+**API por lotes**: Permite crear configuraciones por lotes y ejecutar las ejecuciones por lotes en función de estas configuraciones para fusionar una plantilla PDF o XDP con datos y generar resultados en los formatos PDF, PS, PCL, DPL, IPL y ZPL. Las comunicaciones proporcionan API por lotes para la administración de la configuración y la ejecución por lotes.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ Para utilizar una API por lotes, cree una configuración por lotes y ejecute una
 
 ### Crear un lote {#create-a-batch}
 
-Para crear un lote, utilice la variable `GET /config` API. Incluya las siguientes propiedades obligatorias en el cuerpo de la solicitud HTTP:
-
+Para crear un lote, utilice la variable `POST /config` API. Incluya las siguientes propiedades obligatorias en el cuerpo de la solicitud HTTP:
 
 * **configName**: Especifique un nombre único del lote. Por ejemplo, `wknd-job`
 * **dataSourceConfigUri**: Especifique la ubicación de la configuración del almacén de datos por lotes. Puede ser una ruta relativa o absoluta de la configuración. Por ejemplo: `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Especifique los formatos de salida: PDF o IMPRESIÓN. Si utiliza el tipo de salida PRINT, en `printedOutputOptionsList` , especifique al menos una opción de impresión. Las opciones de impresión se identifican por su tipo de renderizado, por lo que actualmente no se permiten varias opciones de impresión con el mismo tipo de renderizado. Los formatos admitidos son PS, PCL, DPL, IPL y ZPL.
+* **outputTypes**: Especifique los formatos de salida: PDF e IMPRIMIR. Si utiliza el tipo de salida PRINT, en `printedOutputOptionsList` , especifique al menos una opción de impresión. Las opciones de impresión se identifican por su tipo de renderizado, por lo que actualmente no se permiten varias opciones de impresión con el mismo tipo de renderizado. Los formatos admitidos son PS, PCL, DPL, IPL y ZPL.
 
 * **plantilla**: Especifique la ruta absoluta o relativa de la plantilla. Por ejemplo, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ Si especifica una ruta relativa, proporcione también una raíz de contenido. Co
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-Una vez creado un lote, puede utilizar la variable `GET /config /[configName]/execution/[execution-identifier]` para ver los detalles del lote.
+Puede usar `GET /config /[configName]` para ver los detalles de la configuración del lote.
 
 ### Ejecutar un lote {#run-a-batch}
 
@@ -150,14 +149,14 @@ Para ejecutar (ejecutar) un lote, utilice el `POST /config /[configName]/executi
 
 ### Comprobar el estado de un lote {#status-of-a-batch}
 
-Para recuperar el estado de un lote, utilice la variable `GET /config /[configName]/execution/[execution-identifier]`. El identificador de ejecución se incluye en el encabezado de la respuesta HTTP para la solicitud de ejecución por lotes.  Por ejemplo, la siguiente imagen muestra el identificador de ejecución de un trabajo por lotes.
+Para recuperar el estado de un lote, utilice la variable `GET /config /[configName]/execution/[execution-identifier]`. El identificador de ejecución se incluye en el encabezado de la respuesta HTTP para la solicitud de ejecución por lotes.
 
 La respuesta de la solicitud de estado contiene la sección de estado . Proporciona detalles sobre el estado del trabajo por lotes, el número de registros que ya están en proceso (ya se están leyendo y procesando) y el estado de cada outputType/renderType (número de elementos en curso, con éxito y con errores). El estado también incluye la hora de inicio y finalización del trabajo por lotes junto con información sobre errores, si los hay. La hora de finalización es -1 hasta que se completa la ejecución por lotes.
 
 >[!NOTE]
 >
 >* Cuando se solicitan varios formatos PRINT, el estado contiene varias entradas. Por ejemplo, IMPRIMIR/ZPL, IMPRIMIR/IPL.
->* Un trabajo por lotes no lee todos los registros simultáneamente, sino que el trabajo sigue leyendo e incrementando el número de registros. Por lo tanto, el estado devuelve un número diferente de registros en cada ejecución.
+>* Un trabajo por lotes no lee todos los registros simultáneamente, sino que el trabajo sigue leyendo e incrementando el número de registros. Por lo tanto, el estado devuelve -1 hasta que se hayan leído todos los registros.
 
 
 ### Ver documentos generados {#view-generated-documents}
@@ -224,8 +223,6 @@ Un documento PDF que no contiene un flujo XFA no se puede representar como PostS
 La documentación de referencia de la API proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. La documentación de referencia de la API está disponible en formato .yaml . Puede descargar el [API por lotes](assets/batch-api.yaml) y cárguelo en Postman para comprobar la funcionalidad de las API.
 
 ## Problemas conocidos {#known-issues}
-
-* Asegúrese de que el archivo xml de datos no contenga el encabezado de declaración XML. Por ejemplo, `<?xml version="1.0" encoding="UTF-8"?>`
 
 * Cuando se especifica PRINT, se puede especificar un tipo de renderización concreto solo una vez en la lista de opciones de impresión. Por ejemplo, no puede tener dos opciones de impresión cada una que especifique un tipo de renderizado PCL.
 
