@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2288'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Las alternativas que se sabe que funcionan, pero que pueden requerir proporciona
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no recomendado, ya que está obsoleto y se ha sustituido por la versión 4.x)
 * [Http correcto](https://square.github.io/okhttp/) (No proporcionado por AEM)
 
-## Sin personalizaciones de la IU clásica {#no-classic-ui-customizations}
+## Sin personalizaciones de la interfaz de usuario clásica {#no-classic-ui-customizations}
 
 AEM as a Cloud Service solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
 
@@ -105,15 +105,34 @@ Para cambiar los niveles de registro para los entornos de Cloud, la configuraci�
 
 **Activación del nivel de registro de depuración**
 
-El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran.
-Para activar el nivel de registro de DEBUG, establezca la variable
+El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran. Para activar el nivel de registro DEBUG, actualice la siguiente propiedad al modo de depuración.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-para depurar. No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya que genera muchos registros.
+Por ejemplo, establezca `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` con el siguiente valor.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+No deje el registro en el nivel de registro de depuración más de lo necesario, ya que esto genera muchas entradas.
+
+Se pueden configurar niveles de registro discretos para los diferentes entornos de AEM utilizando la segmentación de configuración OSGi basada en el modo de ejecución si es deseable iniciar sesión siempre en `DEBUG` durante el desarrollo. Por ejemplo:
+
+| Entorno | Ubicación de configuración de OSGi por modo de ejecución | `org.apache.sling.commons.log.level` valor de propiedad | | - | - | - | | Desarrollo | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEPURACIÓN | | Etapa | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | | Producción | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+
 Una línea en el archivo de depuración normalmente comienza con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 Los niveles de registro son los siguientes:
 
