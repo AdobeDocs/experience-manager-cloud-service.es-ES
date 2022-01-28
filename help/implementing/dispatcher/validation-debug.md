@@ -3,10 +3,10 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
-ht-degree: 1%
+source-wordcount: '2433'
+ht-degree: 2%
 
 ---
 
@@ -126,6 +126,8 @@ Se recomienda que los archivos anteriores hagan referencia a los archivos inmuta
 * `conf.d/available_vhosts/default.vhost`
 
 Contiene un host virtual de ejemplo. Para su propio host virtual, cree una copia de este archivo, personalícelo y vaya a `conf.d/enabled_vhosts` y cree un vínculo simbólico a su copia personalizada.
+
+Asegúrese de que siempre haya disponible un host virtual que coincida con ServerAlias &quot;\*.local&quot; y también localhost, necesario para los procesos de Adobe internos.
 
 * `conf.d/dispatcher_vhost.conf`
 
