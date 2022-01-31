@@ -1,17 +1,17 @@
 ---
-title: Experience Manager [!DNL Forms] Procesamiento por lotes de comunicaciones as a Cloud Service
-description: ¿Cómo crear comunicaciones personalizadas y orientadas a la marca?
+title: Experience Manager [!DNL Forms] as a Cloud Service Communications batch processing
+description: How to create brand-oriented and personalized communications?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 0%
 
 ---
 
-# Comunicaciones as a Cloud Service de Forms: procesamiento por lotes
+# Forms as a Cloud Service Communications - batch processing
 
-Las comunicaciones le permiten crear, ensamblar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, cartas de procesamiento de reclamaciones, facturas mensuales y kits de bienvenida. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
+Communications allows you to create, assemble, and deliver brand-oriented and personalized communications such as business correspondences, documents, statements, claim processing letters, benefit notices, claim processing letters, monthly bills, and welcome kits. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 
 Las comunicaciones proporcionan API para la generación de documentos bajo demanda y programados. Puede utilizar API sincrónicas para API bajo demanda y por lotes (API asincrónicas) para la generación programada de documentos:
 
@@ -42,7 +42,7 @@ Una operación por lotes es un proceso de generación de varios documentos de ti
 
 **Configuración del almacén de datos por lotes (USC)**: La configuración de datos por lotes ayuda a configurar una instancia específica del almacenamiento de blob para las API por lotes. Permite especificar las ubicaciones de entrada y salida en el almacenamiento del blob de Microsoft Azure, propiedad del cliente.
 
-**API por lotes**: Permite crear configuraciones por lotes y ejecutar las ejecuciones por lotes en función de estas configuraciones para fusionar una plantilla PDF o XDP con datos y generar resultados en los formatos PDF, PS, PCL, DPL, IPL y ZPL. Las comunicaciones proporcionan API por lotes para la administración de la configuración y la ejecución por lotes.
+**Batch APIs**: Lets you create a batch configurations and execute the batch runs based on these configurations to merge a PDF or XDP template with data and generate output in PDF, PS, PCL, DPL, IPL and ZPL formats. Communications provide batch APIs for configuration management and batch execution.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -56,20 +56,20 @@ Puede utilizar operaciones por lotes para generar varios documentos a intervalos
 
 >[!VIDEO](https://video.tv.adobe.com/v/338349)
 
-Puede ver el vídeo o realizar las instrucciones siguientes para aprender a generar documentos mediante operaciones por lotes. La documentación de referencia de la API utilizada en vídeo está disponible en formato .yaml . Puede descargar el [API por lotes](assets/batch-api.yaml) y cárguelo en Postman para comprobar la funcionalidad de las API y seguir el vídeo.
+You can watch the video or perform the instructions below to learn how to generate documents using batch operations. La documentación de referencia de la API utilizada en vídeo está disponible en formato .yaml . Puede descargar el [API por lotes](assets/batch-api.yaml) y cárguelo en Postman para comprobar la funcionalidad de las API y seguir el vídeo.
 
 ### Requisitos previos {#pre-requisites}
 
-Para utilizar la API por lotes, se requiere lo siguiente:
+To use Batch API, the following is required:
 
 * [Cuenta de almacenamiento de Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 * Plantillas PDF o XDP
 * [Datos que se van a combinar con plantillas](#form-data)
 * Usuarios con privilegios de administrador de Experience Manager
 
-### Configuración del entorno {#setup-your-environment}
+### Set up your environment {#setup-your-environment}
 
-Antes de utilizar una operación por lotes:
+Before using a batch operation:
 
 * Cargar datos de clientes (archivos XML) al almacenamiento de blob de Microsoft Azure
 * Crear una configuración de Cloud
@@ -87,20 +87,20 @@ En el almacenamiento de Microsoft Azure, cree [contenedores](https://docs.micros
 
 La configuración de Cloud conecta la instancia de Experience Manager con el almacenamiento de Microsoft Azure. Para crear una configuración de Cloud:
 
-1. Vaya a Herramientas > Cloud Services > Almacenamiento de Azure
-1. Abra una carpeta para alojar la configuración y haga clic en Crear. Utilice la carpeta Global o cree una carpeta.
+1. Go to Tools > Cloud Services > Azure Storage
+1. Abra una carpeta para alojar la configuración y haga clic en Crear. You use the Global folder or create a folder.
 1. Especifique el nombre de la configuración y las credenciales para conectarse al servicio. Puede [recupere estas credenciales de su portal de almacenamiento de Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Haga clic en Crear.
 
 La instancia de Experience Manager ya está lista para conectarse al almacenamiento de Microsoft Azure y utilizarla para almacenar y leer contenido, cuando sea necesario.
 
-### Crear configuración del almacén de datos por lotes {#create-batch-data-store-configuration}
+### Create Batch Data Store configuration {#create-batch-data-store-configuration}
 
-La configuración de datos por lotes ayuda a configurar contenedores y carpetas para la entrada y salida. Los registros de cliente se mantienen en la carpeta de origen y los documentos generados se colocan en la carpeta de destino.
+Batch data configuration helps you configure containers and folders for input and output. Los registros de cliente se mantienen en la carpeta de origen y los documentos generados se colocan en la carpeta de destino.
 
 Para crear la configuración:
 
-1. Vaya a Herramientas > Forms > Conector de almacenamiento unificado.
+1. Go to Tools > Forms > Unified Storage Connector.
 1. Abra una carpeta para alojar la configuración y haga clic en Crear. Utilice la carpeta Global o cree una carpeta.
 1. Especifique el Título y el Nombre de la configuración. En Almacenamiento, seleccione Almacenamiento de Microsoft Azure.
 1. En Ruta de configuración de almacenamiento, busque y seleccione la configuración de nube que contiene las credenciales de la cuenta de almacenamiento de Azure propiedad del cliente.
@@ -127,8 +127,8 @@ Para utilizar una API por lotes, cree una configuración por lotes y ejecute una
 
 Para crear un lote, utilice la variable `POST /config` API. Incluya las siguientes propiedades obligatorias en el cuerpo de la solicitud HTTP:
 
-* **configName**: Especifique un nombre único del lote. Por ejemplo, `wknd-job`
-* **dataSourceConfigUri**: Especifique la ubicación de la configuración del almacén de datos por lotes. Puede ser una ruta relativa o absoluta de la configuración. Por ejemplo: `/conf/global/settings/forms/usc/batch/wknd-batch`
+* **configName**: Specify Unique name of the batch. Por ejemplo, `wknd-job`
+* **dataSourceConfigUri**: Specify location of the Batch Data Store configuration. It can be relative or absolute path of the configuration. Por ejemplo: `/conf/global/settings/forms/usc/batch/wknd-batch`
 * **outputTypes**: Especifique los formatos de salida: PDF e IMPRIMIR. Si utiliza el tipo de salida PRINT, en `printedOutputOptionsList` , especifique al menos una opción de impresión. Las opciones de impresión se identifican por su tipo de renderizado, por lo que actualmente no se permiten varias opciones de impresión con el mismo tipo de renderizado. Los formatos admitidos son PS, PCL, DPL, IPL y ZPL.
 
 * **plantilla**: Especifique la ruta absoluta o relativa de la plantilla. Por ejemplo, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
@@ -139,19 +139,19 @@ Si especifica una ruta relativa, proporcione también una raíz de contenido. Co
 
 Puede usar `GET /config /[configName]` para ver los detalles de la configuración del lote.
 
-### Ejecutar un lote {#run-a-batch}
+### Run a batch {#run-a-batch}
 
-Para ejecutar (ejecutar) un lote, utilice el `POST /config /[configName]/execution`. Por ejemplo, para ejecutar un lote denominado wknd-demo, utilice /config/wknd-demo/execution. El servidor devuelve el código de respuesta HTTP 202 al aceptar la solicitud. La API no devuelve ninguna carga útil excepto un código único (identificador de ejecución) en el encabezado de la respuesta HTTP para el trabajo por lotes que se ejecuta en el servidor. Puede utilizar el identificador de ejecución para recuperar el estado del lote.
+To run (execute) a batch, use the `POST /config /[configName]/execution`. Por ejemplo, para ejecutar un lote denominado wknd-demo, utilice /config/wknd-demo/execution. El servidor devuelve el código de respuesta HTTP 202 al aceptar la solicitud. The API does not return any payload except a unique code (execution-identifier) in header of HTTP response for the batch job running on the server. Puede utilizar el identificador de ejecución para recuperar el estado del lote.
 
 >[!NOTE]
 >
->Mientras se ejecuta el lote, no realice ningún cambio en las carpetas de origen y destino correspondientes, en la configuración de la fuente de datos y en la configuración de Microsoft Azure Cloud.
+>While the batch is running, do not make any changes to corresponding source and destination folders, data source configuration, and Microsoft Azure Cloud configuration.
 
 ### Comprobar el estado de un lote {#status-of-a-batch}
 
-Para recuperar el estado de un lote, utilice la variable `GET /config /[configName]/execution/[execution-identifier]`. El identificador de ejecución se incluye en el encabezado de la respuesta HTTP para la solicitud de ejecución por lotes.
+To retrieve status of a batch, use the `GET /config /[configName]/execution/[execution-identifier]`. The execution-identifier is included in the header of HTTP response for the batch execution request.
 
-La respuesta de la solicitud de estado contiene la sección de estado . Proporciona detalles sobre el estado del trabajo por lotes, el número de registros que ya están en proceso (ya se están leyendo y procesando) y el estado de cada outputType/renderType (número de elementos en curso, con éxito y con errores). El estado también incluye la hora de inicio y finalización del trabajo por lotes junto con información sobre errores, si los hay. La hora de finalización es -1 hasta que se completa la ejecución por lotes.
+The response of the status request contains the status section. It provides details about status of the batch job, number of records already in pipeline (already read and being processed), and status of each outputType/renderType(number of in-progress, succeeded, and failed items). El estado también incluye la hora de inicio y finalización del trabajo por lotes junto con información sobre errores, si los hay. La hora de finalización es -1 hasta que se completa la ejecución por lotes.
 
 >[!NOTE]
 >
@@ -163,61 +163,12 @@ La respuesta de la solicitud de estado contiene la sección de estado . Proporci
 
 Al finalizar el trabajo, los documentos generados se almacenan en la variable `success` en la ubicación de destino especificada en la configuración del almacén de datos por lotes. Si hay algún error, el servicio crea un `failure` carpeta. Proporciona información sobre el tipo y el motivo de los errores.
 
-Vamos a entender con la ayuda de un ejemplo: Supongamos que hay un archivo de datos de entrada `record1.xml` y dos tipos de salida: `PDF` y `PCL`. A continuación, la ubicación de destino contiene dos subcarpetas `pdf` y `pcl`, uno para cada uno de los tipos de salida. Supongamos que la generación de PDF se ha realizado correctamente y que la variable `pdf` la subcarpeta contiene la `success` subcarpeta que a su vez contiene el documento de PDF generado `record1.pdf`. Supongamos que la generación de PCL ha fallado y luego la `pcl` la subcarpeta contiene una `failure` subcarpeta que a su vez contiene un archivo de error `record1.error.txt` que contiene detalles del error. Además, la ubicación de destino contiene una carpeta temporal denominada `__tmp__` que contiene ciertos archivos necesarios durante la ejecución por lotes. Esta carpeta se puede eliminar cuando no haya ejecuciones por lotes activas que hagan referencia a la carpeta de destino.
+Let&#39;s understand with the help of an example: Assume there is an input data file `record1.xml` and two output types: `PDF` and `PCL`. A continuación, la ubicación de destino contiene dos subcarpetas `pdf` y `pcl`, uno para cada uno de los tipos de salida. Supongamos que la generación de PDF se ha realizado correctamente y que la variable `pdf` la subcarpeta contiene la `success` subcarpeta que a su vez contiene el documento de PDF generado `record1.pdf`. Lets assume PCL generation failed, then the `pcl` sub-folder contains a `failure` sub-folder which in turn contains an error file `record1.error.txt` which contains details of the error. Además, la ubicación de destino contiene una carpeta temporal denominada `__tmp__` que contiene ciertos archivos necesarios durante la ejecución por lotes. This folder can be deleted when there are no active batch runs referencing the destination folder.
 
 >[!NOTE]
 >
 >Procesar un lote puede tardar algún tiempo dependiendo del número de registros de entrada y de la complejidad de la plantilla. Espere unos minutos antes de comprobar que las carpetas de destino tengan archivos de salida.
 
-## Consideraciones  {#considerations-for-communications-apis}
-
-### Datos de formulario {#form-data}
-
-Las API de comunicaciones aceptan un diseño de formulario que se suele crear en Designer y los datos de formulario XML como entrada. Para rellenar un documento con datos, debe existir un elemento XML en los datos del formulario XML para cada campo de formulario que desee rellenar. El nombre del elemento XML debe coincidir con el nombre del campo. Se ignora un elemento XML si no se corresponde con un campo de formulario o si el nombre del elemento XML no coincide con el nombre del campo. No es necesario coincidir con el orden en que se muestran los elementos XML. El factor importante es que los elementos XML se especifican con los valores correspondientes.
-
-Consideremos el siguiente ejemplo de formulario de solicitud de préstamo:
-
-![Formulario de solicitud de préstamo](assets/loanFormData.png)
-
-Para combinar datos en este diseño de formulario, cree un origen de datos XML que corresponda al formulario. El siguiente XML representa un origen de datos XML que corresponde al formulario de aplicación hipotecaria de ejemplo.
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### Tipos de documentos compatibles {#supported-document-types}
-
-Para acceder completamente a las funciones de renderización de las API de comunicaciones, se recomienda utilizar un archivo XDP como entrada. A veces, se puede utilizar un archivo PDF. Sin embargo, el uso de un archivo PDF como entrada tiene las limitaciones:
-
-Un documento PDF que no contiene un flujo XFA no se puede representar como PostScript, PCL o ZPL. Las API de comunicaciones pueden procesar documentos PDF con flujos XFA (es decir, formularios creados en Designer) en formatos láser y de etiqueta. Si el documento del PDF está firmado, certificado o contiene derechos de uso (aplicados mediante el servicio AEM Forms Reader Extensions), no se puede procesar en estos formatos de impresión.
-
 ## Documentación de referencia de API
 
-La documentación de referencia de la API proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. La documentación de referencia de la API está disponible en formato .yaml . Puede descargar el [API por lotes](assets/batch-api.yaml) y cárguelo en Postman para comprobar la funcionalidad de las API.
+La documentación de referencia de la API proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. The API reference documentation is available in the .yaml format. You can download the [Batch APIs](assets/batch-api.yaml) file and upload it to Postman to check functionality of APIs.
