@@ -1,9 +1,9 @@
 ---
 title: 'Usar fuentes personalizadas '
 description: 'Usar fuentes personalizadas '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ Puede [incrustar una fuente](https://adobedocs.github.io/experience-manager-form
 Para agregar fuentes personalizadas al entorno del Cloud Service:
 
 1. Configure y abra el [proyecto de desarrollo local](setup-local-development-environment.md). Puede utilizar cualquier IDE de su elección.
-1. En la estructura de carpetas de nivel superior del proyecto, cree una carpeta para guardar fuentes personalizadas y agregar fuentes personalizadas a la carpeta. Por ejemplo, fonts/src/main/resources
+1. En la estructura de carpetas de nivel superior del proyecto, cree una carpeta (módulo) para guardar fuentes personalizadas y agregar fuentes personalizadas a la carpeta. Por ejemplo, fonts/src/main/resources
    ![Carpeta Fuentes](assets/fonts.png)
 
-1. Abra el archivo pom.xml de nivel superior del proyecto de desarrollo.
+1. Abra el archivo pom.xml del módulo de fuentes del proyecto de desarrollo.
 1. Agregar `<Font-Archive-Version>` entrada de manifiesto al archivo .pom y establecer el valor de la versión en 1:
 
    ```xml
@@ -72,11 +72,11 @@ Para agregar fuentes personalizadas al entorno del Cloud Service:
 
 1. Compruebe el código actualizado y [ejecutar la canalización](/help/implementing/cloud-manager/deploy-code.md) para implementar las fuentes en el entorno del Cloud Service.
 
-1. Abra la línea de comandos, vaya a la carpeta local del proyecto y ejecute el siguiente comando. Crea un paquete de las fuentes en un archivo .jar. Puede utilizar el archivo .jar para la implementación local del proyecto.
+1. (Opcional) Abra la línea de comandos, vaya a la carpeta local del proyecto y ejecute el siguiente comando. El comando empaqueta las fuentes en un archivo .jar junto con información relevante. Puede utilizar el archivo .jar para agregar fuentes personalizadas al entorno de desarrollo local de Forms Cloud Service.
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## Añada fuentes personalizadas al entorno de desarrollo de su Cloud Service Forms local. {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >Siempre que implemente un archivo .jar actualizado para agregar o quitar fuentes personalizadas al entorno de implementación local, detenga e inicie el entorno del SDK basado en docker.
+   >Siempre que implemente un archivo .jar de fuentes personalizadas actualizado en el entorno de implementación local, reinicie el entorno del SDK basado en docker.
