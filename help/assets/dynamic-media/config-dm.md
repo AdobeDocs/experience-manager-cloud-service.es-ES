@@ -3,10 +3,10 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
-source-wordcount: '3514'
-ht-degree: 3%
+source-wordcount: '3420'
+ht-degree: 4%
 
 ---
 
@@ -115,14 +115,15 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Esta notificación de la bandeja de entrada le informa de si la configuración se ha realizado correctamente o no.
    > Consulte [Resolución de problemas de una nueva configuración de Dynamic Media](#troubleshoot-dm-config) y [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) para obtener más información.
 
-1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, el Experience Manager as a Cloud Service utiliza la validación basada en token de forma predeterminada. Sin embargo, también puede &quot;lista de permitidos&quot; de más IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción, haga lo siguiente: <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, el Experience Manager as a Cloud Service utiliza la validación basada en token y, por lo tanto, el Experience Manager Autor obtiene una vista previa del contenido de Dynamic Media de forma predeterminada. Sin embargo, puede *lista de permitidos* más direcciones IP para proporcionar a los usuarios acceso a la vista previa del contenido de forma segura. Para configurar esta acción en Experience Manager as a Cloud Service, consulte [Configuración de Dynamic Media Publish Setup para Image Server: ficha Seguridad](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no tiene esta información, póngase en contacto con el servicio de atención al cliente de Adobe.
-   * En la barra de navegación cerca de la esquina superior derecha de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
-   * En la página Publicación del servidor de imágenes , en la **[!UICONTROL Publicar contexto]** lista desplegable, seleccione **[!UICONTROL Probar servicio de imágenes]**.
-   * Para el filtro de direcciones de cliente, seleccione **[!UICONTROL Agregar]**.
-   * Para activar la dirección, marque la casilla de verificación e introduzca la dirección IP de la instancia de autor del Experience Manager (no la IP de Dispatcher).
-   * Seleccione **[!UICONTROL Guardar]**.
+<!--
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+    * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+    * For the Client Address Filter, select **[!UICONTROL Add]**.
+    * To enable (turn on) the address, select the check box, then enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
+    * Select **[!UICONTROL Save]**. -->
 
 Ya ha finalizado con la configuración básica; está listo para usar Dynamic Media.
 

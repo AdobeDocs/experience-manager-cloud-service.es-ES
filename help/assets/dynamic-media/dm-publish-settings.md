@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 3%
@@ -43,11 +43,11 @@ Consulte también [Opcional: Configuración de Dynamic Media](/help/assets/dynam
 1. En la página Servidor de imágenes , establezca el contexto de publicación de Image Server y, a continuación, utilice las cinco pestañas para configurar los ajustes de publicación predeterminados.
 
    * [Servidor de imágenes](#image-server)
-   * [Seguridad](#security-tab) ficha
-   * [Administración de catálogos](#catalog-management-tab) ficha
-   * [Atributos de solicitud](#request-attributes-tab) ficha
-   * [Atributos de miniatura comunes](#common-thumbnail-attributes-tab) ficha
-   * [Atributos de gestión de color](#color-management-attributes-tab) ficha
+      * [Seguridad](#security-tab) ficha
+      * [Administración de catálogos](#catalog-management-tab) ficha
+      * [Atributos de solicitud](#request-attributes-tab) ficha
+      * [Atributos de miniatura comunes](#common-thumbnail-attributes-tab) ficha
+      * [Atributos de gestión de color](#color-management-attributes-tab) ficha
 
    ![Página Configuración de publicación de Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
    *Configuración de publicación de Dynamic Media , con la variable **[!UICONTROL Atributos de solicitud]**seleccionada.*<br><br>
