@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: 0194c7edebfc49fd0cf98779100424e3c5272981
+source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Descubra cómo los especialistas en marketing pueden enriquecer los datos de pro
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Los recursos digitales se pueden asociar con uno o más SKU de producto. Una vez asociado, el recurso digital se puede descubrir con búsquedas de palabras clave basadas en el SKU. El recurso también aparecerá automáticamente como contenido asociado cuando edite una página que incluya el producto correspondiente, lo que facilita aún más la creación de la siguiente experiencia digital
+Los recursos digitales se pueden asociar con uno o más SKU de producto. Una vez asociado, el recurso digital se puede descubrir con búsquedas de palabras clave basadas en el SKU. El recurso también aparecerá automáticamente como contenido asociado cuando edite una página que incluya el producto relevante, lo que facilita aún más la creación de la siguiente experiencia digital.
 
 ## Fragmentos de experiencias
 
