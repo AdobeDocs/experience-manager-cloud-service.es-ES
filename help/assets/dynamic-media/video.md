@@ -4,7 +4,7 @@ description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas rec
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
+source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
 workflow-type: tm+mt
 source-wordcount: '9476'
 ht-degree: 4%
@@ -24,7 +24,6 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
 >Antes de trabajar con vídeo en Dynamic Media, asegúrese de que su administrador de Adobe Experience Manager ya haya habilitado y configurado los Cloud Services de Dynamic Media.
 >
 >* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media y [Resolución de problemas de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
-
 >
 
 
@@ -40,7 +39,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
       * Más información sobre [Organizar recursos digitales](/help/assets/organize-assets.md).
    * Cargue los vídeos de origen principales en las carpetas. Al agregar vídeos a la carpeta, estos se codifican según el perfil de procesamiento de vídeo que asignó a la carpeta.
 
-      * Dynamic Media admite principalmente vídeos de formato corto con una longitud máxima de 30 minutos y una resolución mínima buena de 50 x 50.
+      * Dynamic Media admite principalmente vídeos de formato corto con una longitud máxima de 30 minutos y una resolución mínima buena de 25 x 25.
       * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
       * [Cargar vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/file-format-support.md).
@@ -91,7 +90,7 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
    * Si utiliza un sistema de administración de contenido web de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
-         [Vincular URL a la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+         [Vinculación de URL en la aplicación web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integración de vídeo mediante el código incrustado en la página web:
          [Incrustar el visor de vídeo en una página web](/help/assets/dynamic-media/embed-code.md).
@@ -273,7 +272,7 @@ A continuación se indican las prácticas recomendadas para codificar archivos d
 
 Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación adicional crea un vídeo de calidad inferior.
 
-* Dynamic Media admite principalmente vídeos de formato corto con una longitud máxima de 30 minutos y una resolución mínima buena de 50 x 50.
+* Dynamic Media admite principalmente vídeos de formato corto con una longitud máxima de 30 minutos y una resolución mínima buena de 25 x 25.
 * Puede cargar archivos de vídeo de origen primarios de hasta 15 GB cada uno.
 
 En la tabla siguiente se describe el tamaño recomendado, la proporción de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
