@@ -2,10 +2,10 @@
 title: API obsoletas
 description: Notas de la versión específicas de las API en desuso y eliminadas de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: bbd8277fc5ed81bc656900ec3a993630aa5ffad5
+source-git-commit: 8e205c92b1d3ca14988b7ae9187cd708428774a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
 
 <table>
 <thead>
+<table style="table-layout:auto">
   <tr>
     <th>Paquete/Clase</th>
     <th>Comentarios</th>
