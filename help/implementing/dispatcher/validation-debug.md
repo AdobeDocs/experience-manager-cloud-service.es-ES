@@ -3,9 +3,9 @@ title: Validación y depuración mediante las herramientas de Dispatcher
 description: Validación y depuración mediante las herramientas de Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
+source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2512'
 ht-degree: 2%
 
 ---
@@ -441,7 +441,7 @@ En la configuración de Dispatcher, está disponible la misma variable de entorn
 }
 ```
 
-Como alternativa, puede usar variables de entorno de Cloud Manager en la configuración httpd/dispatcher. Este método es especialmente importante si un programa tiene varios entornos de desarrollo y algunos de esos entornos de desarrollo tienen valores diferentes para la configuración de httpd/dispatcher. Se usaría la misma sintaxis ${VIRTUALHOST} que en el ejemplo anterior, pero no se usarían las declaraciones Define en el archivo de variables anterior. Lea el [Documentación de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obtener instrucciones sobre la configuración de las variables de entorno de Cloud Manager.
+Como alternativa, puede usar variables de entorno de Cloud Manager en la configuración de httpd/dispatcher, aunque no secretos de entorno. Este método es especialmente importante si un programa tiene varios entornos de desarrollo y algunos de esos entornos de desarrollo tienen valores diferentes para la configuración de httpd/dispatcher. Se usaría la misma sintaxis ${VIRTUALHOST} que en el ejemplo anterior, pero no se usarían las declaraciones Define en el archivo de variables anterior. Lea el [Documentación de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) para obtener instrucciones sobre la configuración de las variables de entorno de Cloud Manager.
 
 Al probar la configuración localmente, puede simular diferentes tipos de entorno pasando la variable `DISP_RUN_MODE` a `docker_run.sh` directamente:
 
