@@ -2,7 +2,7 @@
 title: '¿Cómo asignar un flujo de trabajo a otro usuario, enviar correo electrónico, utilizar Adobe Sign en un flujo de trabajo? '
 description: Los flujos de trabajo centrados en Forms le permiten crear rápidamente flujos de trabajo adaptables basados en Forms. Puede utilizar Adobe Sign para firmar documentos por correo electrónico, crear procesos empresariales basados en formularios, recuperar y enviar datos a varios orígenes de datos y enviar notificaciones por correo electrónico
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 0%
@@ -92,7 +92,7 @@ También puede utilizar el componente para controlar el comportamiento de la tar
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL Usuario asignado]** > **[!UICONTROL Asignar opciones]**: Especifique el método para asignar la tarea a un usuario. Puede asignar dinámicamente la tarea a un usuario o grupo mediante la secuencia de comandos del selector de participantes o asignar la tarea a un usuario o grupo AEM específico.
-* **[!UICONTROL Selector de participante]**: La opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Assign options . Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Selector de participante]**: La opción está disponible cuando la variable **[!UICONTROL Dinámicamente a un usuario o grupo]** está seleccionada en el campo Assign options . Puede utilizar un ECMAScript o un servicio para seleccionar dinámicamente un usuario o un grupo. Para obtener más información, consulte [Asignar dinámicamente un flujo de trabajo a los usuarios](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) y [Crear un paso de participante dinámico de Adobe Experience Manager personalizado.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Participantes]**: El campo está disponible cuando la variable **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está seleccionada en la **[!UICONTROL Selector de participante]** campo . El campo permite seleccionar usuarios o grupos para la opción RandomParticipantChooser .
 

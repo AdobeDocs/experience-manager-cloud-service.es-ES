@@ -2,16 +2,17 @@
 title: Fragmentos de experiencias
 description: Utilice los fragmentos de experiencia Adobe Experience Manager as a Cloud Service para que sus experiencias puedan reutilizarse y adaptarse.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # Fragmentos de experiencias {#experience-fragments}
 
 Dentro de Adobe Experience Manager as a Cloud Service, un fragmento de experiencia:
+
 * es un grupo de uno o más componentes
 * incluye contenido y diseño
 * se le puede hacer referencia dentro de las páginas
@@ -22,10 +23,12 @@ Un fragmento de experiencia:
 * Forma parte de una experiencia (página).
 * Se puede utilizar en varias páginas.
 * Se basa en una plantilla (solo editable) para definir la estructura y los componentes.
+* Esta plantilla se utiliza para crear la variable *página raíz* del fragmento de experiencias.
 * Se compone de uno o varios componentes, con diseño, en un sistema de párrafos.
 * Puede contener otros fragmentos de experiencias.
 * Se puede combinar con otros componentes (incluidos otros fragmentos de experiencias) para formar una página completa (experiencia).
-* Puede tener diferentes variaciones y compartir el contenido o los componentes.
+* Se pueden crear una o más variaciones basadas en la página raíz.
+* Estas variaciones pueden compartir contenido o componentes.
 * Se puede desglosar en bloques de construcción que se pueden utilizar en varias variaciones del fragmento.
 
 Puede utilizar los fragmentos de experiencias:
@@ -57,7 +60,6 @@ Los fragmentos de experiencias deben usarse en los siguientes casos:
    * Variaciones de canal o específicas de contexto.
    * Experiencias que tiene sentido agrupar; por ejemplo, una campaña con distintas experiencias en diferentes canales.
 * Al utilizar el comercio omnicanal.
-   * Uso compartido de contenido relacionado con el comercio en canales de [redes sociales](/help/implementing/developing/extending/experience-fragments.md#social-variations) a escala.
    * Convertir los puntos de contacto en transaccionales.
 
 ## Organización de los fragmentos de experiencias {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ Para crear y configurar una carpeta para los fragmentos de experiencias, se reco
 
 1. Seleccione **Guardar**.
 
-
 ## Creación de un fragmento de experiencia {#creating-an-experience-fragment}
 
 Para crear un fragmento de experiencia:
@@ -176,6 +177,12 @@ Para crear un fragmento de experiencia:
    Es obligatorio escribir un **título**. Si el **nombre** se deja en blanco, se derivará del **título**.
 
    ![Propiedades del fragmento de experiencia](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >Las etiquetas de la plantilla Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del fragmento de experiencia.
+   >
+   >Son totalmente independientes.
 
 1. Haga clic en **Crear**.
 
@@ -232,6 +239,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 
    ![Propiedades de la variación](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Confirme con **Listo** para mostrar la nueva variación en el panel.
 
 ## Uso de los fragmentos de experiencias {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ Para crear un nuevo bloque de creación:
 
 El bloque de creación se puede ver en la pestaña **Bloques de creación**. Para cada bloque, están disponibles las siguientes acciones:
 
-* **Ir a la variación principal**: abrir la variación principal en una nueva pestaña
+* **Ir a maestro**: abra la variación de la página raíz en una pestaña nueva
 * **Cambiar nombre**
 * **Eliminar**
 
@@ -338,8 +346,6 @@ Los detalles se muestran en todas las vistas de la consola de **fragmentos de ex
       * **Tablero de Pinterest**
    * **Referencias**
       * Una lista de referencias
-   * **Estado de medios sociales**
-      * Detalles de las variaciones de las redes sociales
 
 ## Representación HTML sin formato {#the-plain-html-rendition}
 

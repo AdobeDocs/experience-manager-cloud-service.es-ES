@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8c4261b91c16127ac86f5f469d8f309858d2f617
+source-git-commit: 13aa3d34a6e81c7711665dcf974008d9324c6753
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3495'
 ht-degree: 95%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 95%
    + Notas de la versión {#release-notes}
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
+         + [Notas de la versión 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Notas de la versión 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [Notas de la versión 2021.9.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [Notas de la versión 2021.8.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -124,6 +125,7 @@ ht-degree: 95%
          + [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Introducción a la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [Validación de transferencias de contenido](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [Extracción de contenido del origen](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -285,6 +287,7 @@ ht-degree: 95%
       + [Agregar y cargar recursos](/help/assets/add-assets.md)
       + [Buscar recursos](/help/assets/search-assets.md)
       + [Tareas comunes de administración de recursos](/help/assets/manage-digital-assets.md)
+      + [Administrar publicación](/help/assets/manage-publication.md)
       + [Vista previa de recursos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Etiquetas inteligentes para imágenes](/help/assets/smart-tags.md)
       + [Etiquetado inteligente de activos de vídeo](/help/assets/smart-tags-video-assets.md)
