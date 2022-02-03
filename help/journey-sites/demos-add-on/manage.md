@@ -1,9 +1,9 @@
 ---
 title: Administrar los sitios de demostración
 description: Obtenga información sobre las herramientas disponibles para ayudarle a administrar sus sitios de demostración y cómo eliminarlos.
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,17 @@ Obtenga información sobre las herramientas disponibles para ayudarle a administ
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de Creación Rápida del Sitio de AEM, [Crear sitio,](create-site.md) ha creado un nuevo sitio de demostración basado en las plantillas del complemento Demostración de referencia. Ahora debería:
+En el documento anterior del recorrido del complemento de las demostraciones de referencia de AEM, [Crear sitio,](create-site.md) ha creado un nuevo sitio de demostración basado en las plantillas del complemento Demostración de referencia. Ahora debería:
 
 * Obtenga información sobre cómo acceder al entorno de creación de AEM.
 * Obtenga información sobre cómo crear un sitio basado en una plantilla.
 * Comprender los conceptos básicos para navegar por la estructura del sitio y editar una página.
+
+Si también [AEM Screens habilitado para su sitio de demostración,](screens.md) también debe:
+
+* Conozca los conceptos básicos de AEM Screens.
+* Comprender el contenido de la demostración de We.Cafe.
+* Obtenga información sobre cómo configurar AEM Screens para We.Cafe.
 
 Ahora que tiene su propio sitio de demostración para explorar, este artículo describe las herramientas disponibles para ayudarle a administrar sus sitios de demostración y cómo eliminarlos.
 

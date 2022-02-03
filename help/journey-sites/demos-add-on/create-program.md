@@ -1,9 +1,9 @@
 ---
 title: Crear programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Obtenga información sobre cómo configurar un nuevo programa y una canalizació
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de Creación Rápida del Sitio de AEM, [Comprender la instalación del complemento de demostración de referencia,](installation.md) ha aprendido cómo funciona el proceso de instalación del complemento de demostraciones de referencia, ilustrando cómo funcionan juntas las diferentes piezas. Ahora debería:
+En el documento anterior del recorrido del complemento de las demostraciones de referencia de AEM, [Comprender la instalación del complemento de demostración de referencia,](installation.md) ha aprendido cómo funciona el proceso de instalación del complemento de demostraciones de referencia, ilustrando cómo funcionan juntas las diferentes piezas. Ahora debería:
 
 * Obtenga información básica sobre Cloud Manager.
 * Comprenda cómo las canalizaciones ofrecen contenido y configuración a AEM.
@@ -76,7 +76,7 @@ Después de iniciar sesión en Cloud Manager, puede crear un nuevo programa de s
 
    ![Cuadro de diálogo Editar programa](assets/edit-program-dialog.png)
 
-1. En el **Soluciones y complementos** expanda la pestaña **Sitios** en la lista y, a continuación, marque **Demostraciones de referencia**. Toque o haga clic **Actualizar**.
+1. En el **Soluciones y complementos** expanda la pestaña **Sitios** en la lista y, a continuación, marque **Demostraciones de referencia**. Si también desea crear demostraciones para AEM Screens, consulte la **Pantallas** también en la lista. Toque o haga clic **Actualizar**.
 
    ![Comprobar la opción de demostraciones de referencia](assets/edit-program-add-on.png)
 
