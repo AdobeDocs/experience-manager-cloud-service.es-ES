@@ -2,7 +2,7 @@
 title: Introducción a Forms as a Cloud Service Communications
 description: Combine datos automáticamente con plantillas XDP y PDF o genere resultados en los formatos PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -129,10 +129,12 @@ Figura: Dividir un documento de origen basado en marcadores en varios documentos
 
 Puede utilizar las API de fabricación de documentos para convertir un documento PDF en un documento compatible con el PDF/A y para determinar si un documento PDF es compatible con el PDF/A. PDF/A es un formato de archivo diseñado para la preservación a largo plazo del contenido del documento. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
 
->!![Note]
-Para habilitar y configurar las API de manipulación de documentos, agregue la siguiente regla a [Configuración de Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
-`# Allow Forms Doc Generation requests`
-`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
+>[!NOTE]
+>
+> Para habilitar y configurar las API de manipulación de documentos, agregue la siguiente regla a [Configuración de Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## Tipos de API de comunicaciones
