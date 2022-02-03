@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c49352926c67587096b8c60840e00bf379b92075
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '4063'
+source-wordcount: '4356'
 ht-degree: 11%
 
 ---
@@ -44,16 +44,30 @@ Consulte [agregar recursos digitales al Experience Manager](add-assets.md).
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-Si un usuario de DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede tener un impacto en el rendimiento en función del tamaño del repositorio y el número de recursos cargados. Para habilitar la función, configure [!UICONTROL Adobe AEM Cloud Asset Duplication Detector]. Consulte [cómo realizar configuraciones de OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html). La detección de duplicaciones se basa en el `dam:sha1` valor almacenado en `jcr:content/metadata/dam:sha1`. Significa que se detectan recursos duplicados aunque los nombres de archivo sean diferentes.
+Si un usuario de DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede tener un impacto en el rendimiento en función del tamaño del repositorio y el número de recursos cargados.
 
-Puede añadir el archivo de configuración `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` en el código personalizado y el archivo puede contener lo siguiente:
+>[!NOTE]
+>
+>Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+Para habilitar la función:
+
+1. Vaya a **[!UICONTROL Herramientas > Assets > Configuraciones de recursos]**.
+
+1. Haga clic en **[!UICONTROL Detector de duplicación de recursos]**.
+
+1. En el [!UICONTROL Página del detector de duplicación de recursos], haga clic en **[!UICONTROL Habilitado]**.
+
+   `dam:sha1` para el campo Detectar metadatos garantiza que se detectarán recursos duplicados aunque los nombres de archivo sean diferentes.
+
+1. Haga clic en **[!UICONTROL Guardar]**.
+
+   ![Detector de duplicación de recursos](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>Si ha configurado el detector de duplicación mediante `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` archivo de configuración (configuración OSGi), puede seguir usándolo, sin embargo, Adobe recomienda utilizar el nuevo método .
+
 
 Una vez activado, el Experience Manager envía notificaciones de recursos duplicados a la bandeja de entrada del Experience Manager. Es un resultado agregado para varios duplicados. Los usuarios pueden elegir eliminar los recursos en función de los resultados.
 
@@ -278,35 +292,27 @@ Consulte [descargar recursos de [!DNL Experience Manager]](/help/assets/download
 
 ## Publicar o cancelar la publicación de recursos {#publish-assets}
 
-Puede publicar recursos y carpetas que contengan recursos de la instancia de autor en [!DNL Experience Manager Assets], [!DNL Dynamic Media]y [!DNL Brand Portal]. Puede publicar o cancelar la publicación de recursos en el nivel de recurso o de carpeta mediante **[!UICONTROL Publicación rápida]** o **[!UICONTROL Administrar publicación]** en la [!DNL Experience Manager Assets] interfaz.
+1. Vaya a la ubicación del recurso o de la carpeta de recursos que desea publicar o que desea eliminar del entorno de publicación (cancelar la publicación).
 
-Consulte [administrar publicación desde [!DNL Experience Manager]](/help/assets/manage-publication.md)
+1. Seleccione el recurso o la carpeta que desea publicar o cancelar la publicación y seleccione **[!UICONTROL Administrar publicación]** ![opción administrar publicación](assets/do-not-localize/globe-publication.png) en la barra de herramientas. Como alternativa, para publicar rápidamente, seleccione la opción **[!UICONTROL Publicación rápida]** en la barra de herramientas. Si la carpeta que desea publicar incluye una carpeta vacía, la carpeta vacía no se publica.
 
-<!--
+1. Seleccione el **[!UICONTROL Publicación]** o **[!UICONTROL Cancelar la publicación]** como sea necesario.
 
-1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
+   ![Cancelar publicación](assets/unpublish_action.png)
+   *Figura: Publicar y cancelar la publicación y la opción de programación.*
 
-1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. Select **[!UICONTROL Ahora]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Más tarde]** para programar la acción. Seleccione una fecha y una hora si elige la variable **[!UICONTROL Más tarde]** . Haga clic en **[!UICONTROL Siguiente]**. 
 
-1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
+1. Al publicar, si un recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que se han cancelado la publicación o se han modificado desde la última publicación. Elija las referencias que desea publicar.
 
-   ![Unpublish action](assets/unpublish_action.png)
-   *Figure: Publish and unpublish options and the scheduling option.*
+1. Al cancelar la publicación, si un recurso hace referencia a otros recursos, elija las referencias que desea cancelar la publicación. Haga clic en **[!UICONTROL Cancelar la publicación]**. En el cuadro de diálogo de confirmación, haga clic en **[!UICONTROL Cancelar]** para detener la acción o haga clic en **[!UICONTROL Cancelar la publicación]** para confirmar que los recursos se cancelarán en la fecha especificada.
 
-1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
+Comprenda las siguientes limitaciones y sugerencias relacionadas con la publicación o cancelación de la publicación de recursos o carpetas:
 
-1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
-
-1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
-
-Understand the following limitations and tips related to publishing or unpublishing assets or folders:
-
-* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
-* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
-* Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
-
--->
+* La opción para [!UICONTROL Administrar publicación] solo está disponible para las cuentas de usuario que tienen permisos de replicación.
+* Al cancelar la publicación de un recurso complejo, cancele la publicación del recurso únicamente. Evite cancelar la publicación de las referencias porque otros recursos publicados pueden hacer referencia a ellas.
+* Las carpetas vacías no se publican.
+* Si publica recursos que se están procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
 
 ## Grupo de usuarios cerrado {#closed-user-group}
 
