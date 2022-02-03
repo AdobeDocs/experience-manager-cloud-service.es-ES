@@ -2,16 +2,16 @@
 title: Introducción a Forms as a Cloud Service Communications
 description: Combine datos automáticamente con plantillas XDP y PDF o genere resultados en los formatos PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
 
 # Usar comunicaciones as a Cloud Service de AEM Forms {#frequently-asked-questions}
 
-**AEM Forms as a Cloud Service : las API de manipulación de documentos de comunicaciones están en fase beta y pueden cambiar significativamente antes de su lanzamiento real.**
+**Las API de manipulación de documentos están en fase previa al lanzamiento y sujetas a cambios antes de su lanzamiento real.**
 
 La funcionalidad de comunicaciones le ayuda a crear documentos estandarizados, personalizados y aprobados por la marca, como correspondencia comercial, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales o kits de bienvenida.
 
@@ -21,9 +21,9 @@ La capacidad proporciona API para generar y manipular documentos. Puede generar 
 
 * para combinar, reorganizar y validar documentos PDF según demanda.
 
-* API HTTP para facilitar la integración con sistemas externos. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento). Hace que la generación de documentos sea una tarea eficaz.
+* API HTTP para facilitar la integración con sistemas externos. Se incluyen API independientes para operaciones bajo demanda (baja latencia) y por lotes (operaciones de alto rendimiento).
 
-* un acceso seguro a los datos. Las API de comunicaciones solo se conectan a datos de repositorios de datos designados por el cliente y acceden a ellos, por lo que no hacen copias locales de datos, lo que hace que las comunicaciones sean muy seguras.
+* un acceso seguro a los datos. Las API de comunicaciones solo se conectan a los datos de los repositorios de datos designados por el cliente y acceden a ellos, lo que hace que las comunicaciones sean muy seguras.
 
 ![Un extracto de tarjeta de crédito de muestra](assets/statement.png)
 Se puede crear un extracto de tarjeta de crédito mediante las API de comunicaciones. Este estado de cuenta de ejemplo utiliza la misma plantilla pero datos independientes para cada cliente según su uso de tarjeta de crédito.
@@ -57,7 +57,7 @@ Communications APIs can create separate documents for each record within an XML 
 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
+The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
 
  -->
 
@@ -77,34 +77,34 @@ The following illustration shows the Communication APIs processing an XML data f
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
+For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
 
-### Acoplar documentos PDF interactivos {#flatten-interactive-pdf-documents}
+### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-Puede utilizar las API de generación de documentos para transformar un documento PDF interactivo (por ejemplo, un formulario) en un documento PDF no interactivo. Un documento PDF interactivo permite a los usuarios introducir o modificar datos ubicados en los campos del documento PDF. El proceso de transformar un documento de PDF interactivo en un documento de PDF no interactivo se denomina aplanamiento. Cuando se aplana un documento PDF, un usuario no puede modificar los datos ubicados en los campos del documento. Una razón para acoplar un documento PDF es garantizar que no se puedan modificar los datos.
+You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
-Puede acoplar los siguientes tipos de documentos PDF:
+You can flatten the following types of PDF documents:
 
-* Documentos de PDF interactivo creados en Designer (que contienen flujos XFA).
+* Interactive PDF documents created in Designer (that contain XFA streams).
 
-* PDF forms de Acrobat
+* Acrobat PDF forms
 
-Si intenta acoplar un documento PDF no interactivo, se producirá una excepción.
+If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
-### Mantener estado del formulario {#retain-form-state}
+### Retain Form State {#retain-form-state}
 
-Un documento PDF interactivo contiene varios elementos que constituyen un formulario. Estos elementos pueden incluir campos (para aceptar o mostrar datos), botones (para realizar sucesos de déclencheur) y secuencias de comandos (comandos para realizar una acción específica). Al hacer clic en un botón, puede generarse un déclencheur con un evento que cambia el estado de un campo. Por ejemplo, si se elige una opción de género, puede cambiar el color de un campo o el aspecto del formulario. Este es un ejemplo de un suceso manual que provoca que cambie el estado del formulario.
+An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
-Cuando un documento PDF interactivo de este tipo se acopla con las API de comunicaciones, el estado del formulario no se conserva. Para asegurarse de que el estado del formulario se conserva incluso después de que se acopla, defina el valor booleano _keepFormState_ como True para guardar y conservar el estado del formulario.
+When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
-## Manipulación de documentos
+## (Versión previa) Manipulación de documentos
 
 Las API de manipulación de documentos de comunicaciones ayudan a combinar, reorganizar y validar documentos de PDF. Normalmente, se crea un DDX y se envía a las API de manipulación de documentos para ensamblar o reorganizar un documento. El documento DDX proporciona instrucciones sobre cómo utilizar los documentos de origen para producir un conjunto de documentos necesarios. La documentación de referencia DDX proporciona información detallada sobre todas las operaciones admitidas. Algunos ejemplos de manipulación de documentos son:
 
 ### Montaje de documentos de PDF
 
-Puede utilizar las API de fabricación de documentos para ensamblar dos o más documentos PDF en un único documento PDF o Portfolio PDF. A continuación se indican algunas formas de ensamblar documentos PDF:
+Puede utilizar las API de fabricación de documentos para ensamblar dos o más documentos PDF o XDP en un único documento PDF o Portfolio PDF. A continuación se indican algunas formas de ensamblar documentos PDF:
 
 * Montaje de un documento PDF sencillo
 * Creación de un Portfolio de PDF
@@ -128,6 +128,11 @@ Figura: Dividir un documento de origen basado en marcadores en varios documentos
 ### Conversión y validación de documentos compatibles con el PDF/A
 
 Puede utilizar las API de fabricación de documentos para convertir un documento PDF en un documento compatible con el PDF/A y para determinar si un documento PDF es compatible con el PDF/A. PDF/A es un formato de archivo diseñado para la preservación a largo plazo del contenido del documento. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
+
+>!![Note]
+Para habilitar y configurar las API de manipulación de documentos, agregue la siguiente regla a [Configuración de Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+`# Allow Forms Doc Generation requests`
+`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## Tipos de API de comunicaciones
