@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
+source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2039'
 ht-degree: 17%
 
 ---
@@ -78,7 +78,7 @@ Con los datos del ejemplo anterior, la dirección URL de una página de categor�
 > 
 > La variable `url_path` es una concatenación del `url_keys` de los antepasados de un producto o categoría y del producto o categoría `url_key` separado por `/` barra diagonal. Cada `url_key` se considera único dentro de un almacén determinado.
 
-### Almacenar configuración específica {#store-specific-urlformats}
+### Configuración específica del almacén {#store-specific-urlformats}
 
 Los formatos de URL de categoría y página de producto de todo el sistema establecidos por la variable _Configuración del proveedor de URL del CIF_ se puede cambiar para cada tienda.
 
@@ -92,27 +92,27 @@ Cambiar el formato de la URL de un sitio web activo puede tener un impacto negat
 >
 > La configuración específica del almacén de los formatos URL requiere [Componentes principales de CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) y la última versión del complemento Contenido y comercio de Adobe Experience Manager.
 
-## Direcciones URL de productos según la categoría {#context-aware-pdps}
+## Direcciones URL de página de producto según la categoría {#context-aware-pdps}
 
 Dado que es posible codificar la información de categoría en una URL de producto, los productos que se encuentran en varias categorías también pueden abordarse con varias URL de producto.
 
-En la configuración predeterminada, los formatos de URL predeterminados seleccionarán una de las posibles alternativas utilizando el siguiente esquema:
+Los formatos de URL predeterminados seleccionarán una de las posibles alternativas utilizando el siguiente esquema:
 
 * si la variable `url_path` está definido por el backend de comercio electrónico que lo utiliza (obsoleto)
 * de la variable `url_rewrites` use las direcciones URL que terminen con el `url_key` como alternativas
 * para estas alternativas use el que tenga la mayor cantidad de segmentos de ruta
 * si hay varios, tome el primero en el orden dado por el servidor de comercio electrónico
 
-Este esquema seleccionará `url_path` que tiene la mayor cantidad de antecesores, en función del supuesto de que una categoría secundaria es más específica que su categoría principal. El `url_path` se considera _canónico_ y , siempre se utilizarán para el vínculo canónico en páginas de productos o en el mapa del sitio del producto.
+Este esquema seleccionará `url_path` con la mayoría de los antecesores, basándose en el supuesto de que una categoría secundaria es más específica que su categoría principal. El `url_path` se considera _canónico_ y siempre se utilizarán como vínculo canónico en páginas de productos o en el mapa del sitio del producto.
 
 Sin embargo, cuando un comprador navega de una página de categoría a una página de producto, o de una página de producto a otra página de producto relacionada en la misma categoría, vale la pena mantener el contexto de categoría actual. En este caso, la variable `url_path` La selección debería preferir alternativas, que estén dentro del contexto de categoría actual sobre el _canónico_ selección descrita anteriormente.
 
 Esta función debe habilitarse en la variable _Configuración del proveedor de URL del CIF_. Si se habilita, la selección obtendrá una puntuación mayor en las alternativas, cuando
 
-* coinciden con partes de una categoría determinada `url_paths` desde el principio (coincidencia de prefijos confusos)
-* o coinciden con una categoría determinada `url_key` en cualquier parte (coincidencia parcial exacta)
+* coinciden con partes de una categoría determinada `url_path` desde el principio (coincidencia de prefijos confusos)
+* o coinciden con el de una categoría determinada `url_key` en cualquier parte (coincidencia parcial exacta)
 
-Por ejemplo, considere la respuesta para un [consulta de productos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) más abajo. Dado que el usuario se encuentra en la página de categoría &quot;Nuevos productos / Novedades en verano de 2022&quot; y que la tienda está utilizando el formato de URL de página de categoría predeterminado, la alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; coincidiría con dos segmentos de ruta del contexto desde el principio: &quot;nuevos productos&quot; y &quot;nuevos en verano de 2022&quot;. Si la tienda estaría utilizando un formato de URL de página de categoría que solo contenga la variable `url_key`, la misma alternativa se seguiría seleccionando ya que coincide con el de `url_key` en cualquier parte. En ambos casos, la dirección URL de la página del producto se crearía para &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
+Por ejemplo, considere la respuesta para un [consulta de productos](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) más abajo. Dado que el usuario se encuentra en la página de categoría &quot;Nuevos productos / Novedades en verano de 2022&quot; y la tienda utiliza el formato de URL de página de categoría predeterminado, la alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; coincidiría con dos segmentos de ruta del contexto desde el principio: &quot;nuevos productos&quot; y &quot;nuevos en verano de 2022&quot;. Si la tienda utiliza un formato de URL de página de categoría que solo contenga la categoría `url_key`, la misma alternativa se seguiría seleccionando ya que coincide con el de `url_key` en cualquier parte. En ambos casos, la dirección URL de la página del producto se crearía para &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&quot; `url_path`.
 
 ```
 {
@@ -203,29 +203,29 @@ Las reescrituras de URL también se pueden lograr usando AEM servidor HTTP de Di
 
 ### Elija el mejor formato de URL {#choose-url-format}
 
-Como se mencionó antes de seleccionar uno de los formatos predeterminados disponibles, o incluso implementar un formato personalizado depende en gran medida de las necesidades y requisitos de una tienda. Las siguientes sugerencias pueden ayudar a tomar una decisión educada.
+Como se mencionó antes de seleccionar uno de los formatos predeterminados disponibles, o incluso implementar un formato personalizado, depende en gran medida de las necesidades y requisitos de una tienda. Las siguientes sugerencias pueden ayudar a tomar una decisión educada.
 
 _**Utilice un formato de URL de página de producto que contenga el SKU.**_
 
-Los componentes principales del CIF utilizan el sku como identificador principal en todos los componentes. Si el formato de la dirección URL de la página del producto no contiene el sku, es necesario realizar una consulta de GraphQL para resolverlo desde la variable `url_key`, lo que puede afectar a la métrica de tiempo hasta el primer byte. Además, puede ser deseable que los compradores encuentren productos por sku en motores de búsqueda.
+Los componentes principales del CIF utilizan el sku como identificador principal en todos los componentes. Si el formato de la dirección URL de la página del producto no contiene el sku, se necesita una consulta de GraphQL para resolverlo. Esto puede afectar al tiempo hasta el primer byte. Además, puede ser deseable que los compradores puedan encontrar productos en sku usando motores de búsqueda.
 
 _**Utilice un formato de URL de página de producto que contenga el contexto de categoría.**_
 
-Algunas funciones del proveedor de URL del CIF solo están disponibles cuando se utilizan formatos de URL de producto que codifican el contexto de la categoría, como la categoría `url_key` o la categoría `url_path`. Incluso si estas funciones pueden no ser necesarias para una tienda nueva, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
+Algunas funciones del proveedor de URL del CIF solo están disponibles cuando se utilizan formatos de URL de producto, que codifican el contexto de la categoría, como la categoría `url_key` o la categoría `url_path`. Aunque estas funciones no sean necesarias para una nueva tienda, el uso de uno de estos formatos de URL al principio ayuda a reducir los esfuerzos de migración en el futuro.
 
 _**Equilibrio entre la longitud de la dirección URL y la información codificada.**_
 
-Según el tamaño del catálogo, en particular el tamaño y la profundidad del árbol de categorías, puede que no sea razonable codificar la totalidad de `url_path` de categorías en la dirección URL. En ese caso, la longitud de la dirección URL se puede reducir incluyendo el valor de `url_key` en su lugar. Esto habilitará casi todas las funciones disponibles al utilizar la categoría `url_path`.
+Según el tamaño del catálogo, en particular el tamaño y la profundidad del árbol de categorías, puede que no sea razonable codificar la totalidad de `url_path` de categorías en la dirección URL. En ese caso, la longitud de la dirección URL se podría reducir incluyendo solo el `url_key` en su lugar. Esto admitirá la mayoría de las funciones disponibles al utilizar la categoría `url_path`.
 
-Además, utilice [Asignaciones de Sling](#sling-mapping) para combinar el sku con el producto `url_key`. En la mayoría de los sistemas de comercio electrónico, el sku sigue un formato en particular y separa el sku de `url_key` para las solicitudes entrantes debería ser fácilmente posible. Con esto en mente, debería ser posible reescribir la dirección URL de una página de producto a `/p/{{category}}/{{sku}}-{{url_key}}.html`y una dirección URL de categoría a `/c/{{url_key}}.html` respectivamente. La variable `/p` y `/c` siguen siendo necesarios para distinguir las páginas de productos y categorías de otras páginas de contenido.
+Además, utilice [Asignaciones de Sling](#sling-mapping) para combinar el sku con el producto `url_key`. En la mayoría de los sistemas de comercio electrónico, el sku sigue un formato particular y separa el sku del `url_key` para las solicitudes entrantes debería ser fácilmente posible. Con esto en mente, debería ser posible reescribir la dirección URL de una página de producto a `/p/{{category}}/{{sku}}-{{url_key}}.html`y una dirección URL de categoría a `/c/{{url_key}}.html` respectivamente. La variable `/p` y `/c` siguen siendo necesarios para distinguir las páginas de productos y categorías de otras páginas de contenido.
 
-### Migración de un formato de URL a otro {#migrate-url-formats}
+### Migración a un nuevo formato de URL {#migrate-url-formats}
 
-Muchos de los formatos de URL predeterminados son de alguna manera compatibles entre sí, lo que significa que las URL formateadas por uno pueden ser analizadas por otro. Esto ayuda a la migración entre los formatos de URL.
+Muchos de los formatos de URL predeterminados son de alguna manera compatibles entre sí, lo que significa que las URL formateadas por uno pueden ser analizadas por otro. Esto ayuda a migrar entre formatos de URL.
 
 Por otro lado, los motores de búsqueda necesitarán algún tiempo para volver a rastrear todas las páginas del catálogo con el nuevo formato de URL. Para admitir este proceso y también para mejorar la experiencia del usuario final, se recomienda proporcionar redirecciones que reenvíen al usuario de las direcciones URL antiguas a las nuevas.
 
-Un enfoque sería conectar un entorno de ensayo al back-end de comercio electrónico de producción y configurarlo para utilizar el nuevo formato de URL. Después, obtenga la variable [mapa del sitio del producto generado por el generador del mapa del sitio de los productos CIF](../../overview/seo-and-url-management.md) tanto para el entorno de fase como de producción, y utilícelos para crear un [Mapa de reescritura httpd de Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Este mapa de reescritura se puede implementar en el despachante junto con el despliegue del nuevo formato de URL.
+Un enfoque podría ser conectar un entorno de ensayo al back-end de comercio electrónico de producción y configurarlo para que utilice el nuevo formato de URL. Después, obtenga la variable [mapa del sitio del producto generado por el generador del mapa del sitio de los productos CIF](../../overview/seo-and-url-management.md) para el entorno de ensayo y producción, y utilícelos para crear un [Mapa de reescritura httpd de Apache](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Este mapa de reescritura se puede implementar en el despachante junto con el despliegue del nuevo formato de URL.
 
 ## Ejemplo {#example}
 
