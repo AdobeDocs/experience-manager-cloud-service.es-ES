@@ -3,7 +3,7 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 31%
@@ -52,10 +52,10 @@ Eche un vistazo a la [Información general sobre la versión de enero de 2022](h
 
    * Configure la adición de marcas de agua digitales a las imágenes.
 
-* Los administradores ahora pueden configurar el servicio de correo electrónico para las descargas grandes. Permite a los usuarios activar las notificaciones por correo electrónico para las descargas grandes desde la [!DNL Experience Manager Assets] interfaz. El usuario recibe una notificación por correo electrónico que contiene el vínculo de descarga de la carpeta zip archivada al finalizar el proceso de descarga.
+* Los administradores ahora pueden configurar el servicio de correo electrónico para las descargas grandes. Permite a los usuarios [activar notificaciones por correo electrónico para descargas grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) de la variable [!DNL Experience Manager Assets] interfaz. El usuario recibe una notificación por correo electrónico que contiene el vínculo de descarga de la carpeta zip archivada al finalizar el proceso de descarga.
 
 
-* La función Administrar publicación se mejora con una interfaz de usuario mejorada. Los usuarios pueden publicar o cancelar la publicación del contenido desde y hacia el destino seleccionado, agregar contenido a la lista de publicaciones desde el repositorio de DAM, incluir configuración de carpeta para publicar el contenido de las carpetas seleccionadas y aplicar filtros, y programar la publicación para una fecha u hora posterior.
+* La variable [Administrar publicación](/help/assets/manage-publication.md) se mejora con una interfaz de usuario mejorada. Los usuarios pueden publicar o cancelar la publicación de contenido desde y hacia el destino seleccionado, [Añadir contenido](/help/assets/manage-publication.md#add-content) a la lista de publicaciones desde el repositorio de DAM, [Incluir configuración de carpeta](/help/assets/manage-publication.md#include-folder-settings) para publicar contenido de las carpetas seleccionadas y aplicar filtros, y [programar publicación](/help/assets/manage-publication.md#publish-assets-later) a una fecha u hora posterior.
 
 ### Corrección de errores {#bug-fixes}
 
