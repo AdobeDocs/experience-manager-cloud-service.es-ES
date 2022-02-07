@@ -3,9 +3,9 @@ title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '819'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ AEM Cloud Service ofrece muchas funciones y posibilidades nuevas para la gestió
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
->title="Cambios importantes en AEM como Cloud Service"
->abstract="En esta pestaña, puede ver contenido que le ayudará a comprender las diferencias entre AEM locales o en Adobe Managed Services, en comparación con AEM como Cloud Service."
->additional-url="https://video.tv.adobe.com/v/330543" text="Evolución de AEM como Cloud Service"
+>title="Cambios importantes en AEM as a Cloud Service"
+>abstract="En esta pestaña, puede ver contenido que le ayudará a comprender las diferencias entre AEM local o en Adobe Managed Services, en comparación con AEM as a Cloud Service."
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolución de AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Las principales diferencias se encuentran en las siguientes áreas:
 
 * [Eliminación de la IU clásica](#classic-ui)
 
-* [Entrega en el lado de Publish](#publish-side-delivery)
+* [Entrega en el lado de publicación ](#publish-side-delivery)
 
 * [Administración y entrega de recursos](#asset-handling)
 
@@ -71,7 +71,7 @@ La consola Web, utilizada en versiones anteriores de AEM para cambiar la configu
 
 ## No se permiten los cambios en el repositorio de publicación {#changes-to-publish-repo}
 
-Además de los cambios realizados en la carpeta `/home` en el nivel de publicación, en AEM Cloud Service no se permiten los cambios directos en el repositorio de publicación. En versiones anteriores de AEM locales o AEM en AMS, los cambios de código se podían realizar directamente en el repositorio de publicación. Algunas limitaciones se pueden mitigar de las siguientes maneras:
+Además de los cambios en la carpeta `/home` en el nivel de publicación, no se permiten cambios directos en el repositorio de publicación en AEM Cloud Service. En versiones anteriores de AEM locales o AEM en AMS, los cambios de código se podían realizar directamente en el repositorio de publicación. Algunas limitaciones se pueden mitigar de las siguientes maneras:
 
 * Para la configuración de contenido o basada en contenido: realice los cambios en la instancia de creación y publíquelos.
 * Para el código y la configuración: realice los cambios en el repositorio de GIT y ejecute la canalización CI/CD para implementarlos.
@@ -106,7 +106,7 @@ En AEM Cloud Service, el contenido se publica mediante [Sling Content Distributi
 
 La IU clásica ya no está disponible en AEM Cloud Service.
 
-## Entrega en el lado de Publish {#publish-side-delivery}
+## Entrega en el lado de publicación {#publish-side-delivery}
 
 La aceleración HTTP, incluida la CDN y la administración de tráfico para los servicios de creación y publicación, se proporcionan de forma predeterminada en AEM Cloud Service.
 
@@ -114,4 +114,4 @@ Para la transición de proyectos desde AMS o una instalación local, Adobe recom
 
 ## Administración y entrega de recursos {#asset-handling}
 
-La carga, el procesamiento y la descarga de recursos están optimizados en [!DNL Experience Manager Assets] como [!DNL Cloud Service]. [!DNL Assets] ahora es más eficiente, permite un mayor escalado y permite cargar y descargar a una velocidad mucho más rápida. Además, afecta al código personalizado existente y a algunas operaciones. Para obtener una lista de cambios y para la paridad con las [!DNL Experience Manager] funciones 6.5, consulte los [cambios a [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+La carga, el procesamiento y la descarga de recursos están optimizados en [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] ahora es más eficiente, permite un mayor escalado, y cargar y descargar a una velocidad mucho más rápida. Además, afecta al código personalizado existente y a algunas operaciones. Para ver una lista de cambios y para la paridad con [!DNL Experience Manager] 6.5, consulte [cambios en [!DNL Assets]](/help/assets/assets-cloud-changes.md).
