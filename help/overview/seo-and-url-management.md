@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
-description: Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service
+description: 'Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL para Adobe Experience Manager as a Cloud Service '
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: ht
