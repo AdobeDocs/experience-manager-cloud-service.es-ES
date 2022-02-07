@@ -229,7 +229,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 Si utiliza bibliotecas de red Java no estándar, configure los proxies con las propiedades anteriores para todo el tráfico.
 
-Tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
+El tráfico no HTTP/S con destinos a través de puertos declarados en el parámetro `portForwards` debe hacer referencia a una propiedad denominada `AEM_PROXY_HOST`, junto con el puerto asignado. Por ejemplo:
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -424,14 +424,14 @@ La siguiente tabla describe el enrutamiento de tráfico.
   </tr>
   <tr>
     <td></td>
-    <td>El host coincide con el parámetro <code>nonProxyHosts</code></td>
+    <td>El host que coincide con el parámetro <code>nonProxyHosts</code></td>
     <td>80 o 443</td>
     <td>A través de las IP del clúster compartido</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>El host coincide con el parámetro <code>nonProxyHosts</code></td>
+    <td>El host que coincide con el parámetro <code>nonProxyHosts</code></td>
     <td>Puertos fuera de 80 o 443</td>
     <td>Bloqueado</td>
     <td></td>
