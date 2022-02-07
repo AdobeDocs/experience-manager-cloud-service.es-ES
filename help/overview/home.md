@@ -3,7 +3,7 @@ title: Información general de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '354'
 ht-degree: 100%
 
