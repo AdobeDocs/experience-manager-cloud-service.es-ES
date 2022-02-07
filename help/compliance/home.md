@@ -3,7 +3,7 @@ title: Compatibilidad
 description: En esta página se muestran los recursos de autoayuda que proporcionan información sobre el cumplimiento de las normas en Experience Manager as a Cloud Service.
 landing-page-description: Para obtener información general sobre el cumplimiento en AEM as a Cloud Service, incluido de la privacidad y accesibilidad, comience aquí.
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
 ht-degree: 100%
 
