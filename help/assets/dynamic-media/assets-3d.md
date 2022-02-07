@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2260'
 ht-degree: 5%
 
 ---
@@ -42,9 +42,7 @@ Consulte también [Formatos 3D compatibles con Experience Manager Assets](/help/
 | STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
 | USDZ | Archivo zip de descripción de escena universal | model/vnd.usdz+zip | *Compatibilidad únicamente con la ingesta; no hay visualización ni interacción disponibles.* USDZ es un formato 3D propietario que Safari o iOS pueden ver de forma nativa. |
 
-<!-- >[!NOTE]
->
->The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). UNHIDE 2/3/22 CQDOC-18921-->
+El componente WCM de medios 3D y la vista previa 3D en la página Detalles de un recurso no son compatibles con la última versión de Chrome (97.x). Para trabajar con recursos 3D, utilice Firefox o Safari, o utilice una versión anterior de Chrome (96.x).
 
 ## Inicio rápido: Recursos 3D en Dynamic Media {#quick-start-three-d}
 
