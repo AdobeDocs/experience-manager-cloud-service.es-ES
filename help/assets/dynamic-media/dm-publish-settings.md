@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 3%
 
 ---
@@ -66,6 +66,9 @@ La página Servidor de imágenes establece la configuración predeterminada para
 ### Ficha Seguridad {#security-tab}
 
 **[!UICONTROL Dirección del cliente]** - Permite especificar una o más direcciones IP o intervalos de direcciones IP. Cuando se especifica, se rechazan las solicitudes a este catálogo de imágenes que se originan en un cliente con una dirección IP no incluida en la lista. Esta regla se aplica tanto a la entrega de imágenes como a las imágenes procesadas.
+
+![Ficha Seguridad ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Pestaña Seguridad que muestra el campo &quot;Permitir&quot; IP.*
+
 
 ### Ficha Administración del catálogo {#catalog-management-tab}
 
