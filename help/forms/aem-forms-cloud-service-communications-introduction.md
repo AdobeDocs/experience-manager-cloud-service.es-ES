@@ -2,7 +2,7 @@
 title: Introducción a Forms as a Cloud Service Communications
 description: Combine datos automáticamente con plantillas XDP y PDF o genere resultados en los formatos PCL, ZPL y PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
+source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 1%
@@ -129,14 +129,6 @@ Figura: Dividir un documento de origen basado en marcadores en varios documentos
 
 Puede utilizar las API de fabricación de documentos para convertir un documento PDF en un documento compatible con el PDF/A y para determinar si un documento PDF es compatible con el PDF/A. PDF/A es un formato de archivo diseñado para la preservación a largo plazo del contenido del documento. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
 
->[!NOTE]
->
-> Para habilitar y configurar las API de manipulación de documentos, agregue la siguiente regla a [Configuración de Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
->
-> `# Allow Forms Doc Generation requests`
-> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
-
-
 ## Tipos de API de comunicaciones
 
 Las comunicaciones proporcionan API de HTTP para la generación de documentos por lotes y bajo demanda:
@@ -164,6 +156,13 @@ Después de la incorporación, para habilitar la funcionalidad de comunicaciones
 1. Haga clic en **[!UICONTROL Actualizar]**.
 
 1. Ejecute la canalización de compilación. Una vez que la canalización de compilación se haya realizado correctamente, las API de comunicaciones se habilitan para su entorno.
+
+>[!NOTE]
+>
+> Para habilitar y configurar las API de manipulación de documentos, agregue la siguiente regla a [Configuración de Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 <!--
