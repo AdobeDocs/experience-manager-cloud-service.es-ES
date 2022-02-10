@@ -1,18 +1,18 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2022.01.0
-description: Estas son las notas de la versión de Cloud Manager de AEM versión as a Cloud Service 2022.01.0.
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2022.02.0
+description: Estas son las notas de la versión de Cloud Manager de AEM versión as a Cloud Service 2022.02.0.
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '274'
 ht-degree: 2%
 
 ---
 
 
-# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2022.01.0 {#release-notes}
+# Notas de la versión para Cloud Manager en Adobe Experience Manager as a Cloud Service 2022.02.0 {#release-notes}
 
-Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2022.01.0.
+Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2022.02.0.
 
 >[!NOTE]
 >
@@ -20,18 +20,20 @@ Esta página describe las notas de la versión de Cloud Manager en AEM as a Clou
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2022.01.0 es el 20 de enero de 2022. La próxima versión está prevista para el 10 de febrero de 2022.
+La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2022.02.0 es el 10 de febrero de 2022. La próxima versión está prevista para el 10 de marzo de 2022.
 
 ## Novedades {#what-is-new}
 
-* Cloud Manager [evite la reconstrucción del código base cuando detecte que se utiliza la misma confirmación git](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) en varias ejecuciones de canalización de pila completa.
-* El acceso al registro de entorno de AEM ahora requiere la variable **Administrador de implementación** perfil de producto. Los usuarios sin este perfil verán un botón deshabilitado en la interfaz de usuario.
-* La interfaz de usuario no permitirá la configuración de canalización de front-end para un programa en el que Sites no esté habilitado como solución.
-* Al generar una contraseña de git, se muestra la fecha de caducidad.
+* Nueva aceleración [Canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) se han introducido para implementar exclusivamente la configuración de HTTPD/Dispatcher
+   * Debe estar en AEM versión `2021.12.6151.20211217T120950Z` para utilizar esta función.
+   * Esta función se implementará por fases en las dos semanas siguientes a la versión de 2022.02.0.
+* La experiencia de página de aterrizaje de Cloud Manager se ha actualizado para ofrecer una navegación mejorada, un fácil cambio entre las vistas de cuadrícula/mosaico y ventanas emergentes para obtener un resumen rápido del programa.
+* Un nuevo umbral fallido (`< D`) se ha agregado a la variable [métrica de clasificación de fiabilidad.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * Los clientes con problemas de calidad graves que afectan a la estabilidad del sistema, relacionados principalmente con índices no válidos y procesos de flujo de trabajo, no podrán realizar implementaciones hasta que se resuelvan dichos problemas.
+* La gravedad de la variable `BannedPath` [regla de calidad](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) se ha cambiado de bloqueador a crítico.
+* El asistente de canalización informará al usuario cuando sea necesario actualizar el entorno de AEM antes de configurar un [Canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) asociada a él.
 
 ## Corrección de errores {#bug-fixes}
 
-* Se han corregido las excepciones de puntero nulo encontradas en algunas implementaciones de canalización de front-end.
-* Ahora se pueden agregar, actualizar y eliminar variables de entorno cuando un entorno ejecuta una versión obsoleta de AEM.
-* El paso crear imagen ya no se marcará como ERROR para las canalizaciones que usaron el paso programado en algunos casos excepcionales.
-* Para los programas con un solo repositorio, la pantalla de ejecución de la canalización ahora mostrará el nombre del repositorio.
+* Las contraseñas antiguas del repositorio de Git ahora siempre se invalidan cuando se genera una nueva contraseña.
+* La actualización de variables de entorno a través de la API ya no interfiere con la ejecución de una canalización en situaciones excepcionales.

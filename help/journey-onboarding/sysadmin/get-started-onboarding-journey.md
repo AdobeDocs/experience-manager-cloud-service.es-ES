@@ -4,16 +4,16 @@ description: Siga esta página para obtener información sobre cómo empezar a u
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
-source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
+source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '555'
+ht-degree: 3%
 
 ---
 
 # Introducción al proceso de incorporación {#getting-started}
 
-La incorporación es el proceso durante el cual un [administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) designado configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus AEM recursos as a Cloud Service.
+La incorporación es el proceso durante el cual se designó a un [Administrador del sistema](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en) configura AEM as a Cloud Service para su organización. Esto incluye el aprovisionamiento inicial de recursos en la nube y la asignación de usuarios a funciones en función de sus responsabilidades laborales. Como resultado, cada miembro puede iniciar sesión y acceder a sus AEM recursos as a Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -25,7 +25,7 @@ Después de leer esta sección debe poder:
 * Revise sus privilegios como administrador del sistema a través del Admin Console.
 
 >[!NOTE]
->Antes de iniciar el proceso de incorporación, asegúrese de obtener más información sobre Adobe Admin Console. La Admin Console de Adobe es un lugar central para administrar las licencias y los usuarios de los productos de Adobe. El administrador del sistema iniciará sesión en la consola de administración de Adobe para agregar o quitar usuarios y más. Consulte [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) para obtener más información.
+>Antes de iniciar el proceso de incorporación, asegúrese de obtener más información sobre Adobe Admin Console. La Admin Console de Adobe es un lugar central para administrar las licencias y los usuarios de los productos de Adobe. El administrador del sistema iniciará sesión en la consola de administración de Adobe para agregar o quitar usuarios y más. Consulte [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) para obtener más información.
 
 ## Incorporación a AEM as a Cloud Service {#onboarding-process}
 
@@ -40,14 +40,14 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 >[!NOTE]
 >Debe ser administrador del sistema para completar correctamente los siguientes pasos.
 
-1. Haga clic en **Introducción** desde el correo electrónico de bienvenida, como se muestra en la figura siguiente, para ir al Admin Console o navegar directamente al Admin Console desde [aquí](https://adminconsole.adobe.com).
+1. Haga clic en **Introducción** desde el correo electrónico de bienvenida, como se muestra en la figura siguiente, para ir al Admin Console o navegar directamente al Admin Console desde [here](https://adminconsole.adobe.com).
 
    >[!NOTE]
-   >Como administrador del sistema, recibirá varios correos electrónicos. Busque el correo electrónico de bienvenida que le proporciona la información sobre el nombre de la organización a la que se le ha concedido acceso y haga clic en **Introducción**. Si no encuentra el correo electrónico, vaya directamente al [Admin Console](https://adminconsole.adobe.com/).
+   >Como administrador del sistema, recibirá varios correos electrónicos. Busque el correo electrónico de bienvenida que le proporciona la información sobre el nombre de la organización a la que se le ha concedido acceso y haga clic en **Introducción**. Si no encuentra el correo electrónico, vaya directamente a [Admin Console](https://adminconsole.adobe.com/).
 
    ![](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Inicie sesión utilizando su [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Tras iniciar sesión correctamente, verá la página **Información general** de Adobe Admin Console, como se muestra a continuación.
+1. Inicie sesión con su [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en). Una vez que inicie sesión correctamente, verá la variable **Información general** de Adobe Admin Console, como se muestra a continuación.
 
    ![](/help/journey-onboarding/assets/get-started1.png)
 
@@ -56,15 +56,15 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 
    ![](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 
-1. Seleccione **Administradores** en la tarjeta **Usuarios** para comprobar que es administrador del sistema a través de Adobe Admin Console.
+1. Select **Administradores** de la variable **Usuarios** para comprobar que es administrador del sistema mediante Adobe Admin Console.
 
    ![](/help/journey-onboarding/assets/get-started2.png)
 
-1. Una vez que haga clic en **Administradores** desde la tarjeta **Usuarios**, puede buscar introduciendo el correo electrónico, el nombre de usuario, el nombre o los apellidos de Adobe ID.
+1. Una vez que haga clic en **Administradores** de la variable **Usuarios** , puede buscar introduciendo el correo electrónico, el nombre de usuario, el nombre o los apellidos de Adobe ID.
 
    ![](/help/journey-onboarding/assets/get-started3.png)
 
-1. La búsqueda debe encontrar correctamente el registro de correo electrónico. Además, la **FUNCIÓN DE ADMINISTRACIÓN** debe mostrar **Sistema**, como se muestra a continuación. Esto confirma que es administrador del sistema. Esto confirma su función como administrador del sistema.
+1. La búsqueda debe encontrar correctamente el registro de correo electrónico. Además, la variable **FUNCIÓN DE ADMINISTRADOR** must show **Sistema**, como se muestra a continuación. Esto confirma que es administrador del sistema. Esto confirma su función como administrador del sistema.
 
    ![](/help/journey-onboarding/assets/get-started4.png)
 
@@ -72,4 +72,9 @@ Siga los pasos a continuación para ir al Admin Console y revisar la función de
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha iniciado sesión en el Admin Console y ha comprobado su perfil como administrador del sistema, debe continuar con el recorrido de incorporación revisando el documento [Asignar miembros del equipo a perfiles de producto de Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+Ahora que ha iniciado sesión en Admin Console y ha comprobado su perfil como administrador del sistema, debe continuar con el recorrido de incorporación revisando el documento [Asignar miembros del equipo a perfiles de producto de Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+
+## Recursos adicionales {#additional-resources}
+
+* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+* [Administrador del sistema](/help/onboarding/learn-concepts/system-administrator.md)
