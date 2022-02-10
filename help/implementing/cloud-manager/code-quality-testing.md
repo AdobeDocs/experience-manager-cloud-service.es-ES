@@ -15,7 +15,10 @@ Descubra cómo funcionan las pruebas de calidad del código de las canalizacione
 
 >[!CONTEXTUALHELP]
 >
->
+>id="aemcloud_nonbpa_codequalitytests"
+>title="Code Quality Testing"
+>abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+
 ## Introducción {#introduction}
 
 Las pruebas de calidad del código evalúan el código de la aplicación en función de un conjunto de reglas de calidad. Es el propósito principal de una canalización solo de calidad de código y se ejecuta inmediatamente después del paso de compilación en todas las canalizaciones de producción y no de producción.
