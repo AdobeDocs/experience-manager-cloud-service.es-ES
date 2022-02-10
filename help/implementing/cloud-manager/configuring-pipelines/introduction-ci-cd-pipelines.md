@@ -2,9 +2,9 @@
 title: Canalizaciones CI/CD
 description: Obtenga información sobre las canalizaciones de CD/CI de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 1%
 
 ---
@@ -147,16 +147,18 @@ Para aprender a configurar canalizaciones de pila completa, consulte los siguien
 
 Las canalizaciones de configuración de nivel web permiten la implementación exclusiva de la configuración de HTTPD/Dispatcher en el tiempo de ejecución de AEM desacoplándola de otros cambios de código. Es una canalización optimizada que proporciona a los usuarios que solo desean implementar los cambios de configuración de Dispatcher, un medio acelerado para hacerlo en solo unos minutos.
 
->[!IMPORTANT]
+>[!TIP]
 >
->Debe estar en AEM versión `X` o superior para aprovechar las canalizaciones de configuración de nivel web.
+>Con las canalizaciones de configuración de capa web, puede elegir entre almacenar la configuración web en la misma ubicación de origen que para la canalización de pila completa o en una ubicación diferente, según la estructura que se adapte mejor a su proyecto.
 
 Se aplican las restricciones siguientes.
 
+* Debe estar en AEM versión `2021.12.6151.20211217T120950Z` o más reciente para aprovechar las canalizaciones de configuración de nivel web.
+* Debe [inclusión en el modo flexible de las herramientas de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para aprovechar las canalizaciones de configuración de nivel web.
 * Un usuario debe registrarse con el **Administrador de implementación** para configurar o ejecutar canalizaciones.
 * En cualquier momento, solo puede haber una canalización de configuración de nivel web por entorno.
 * El usuario no puede configurar una canalización de configuración de nivel web cuando se está ejecutando su canalización de pila completa correspondiente.
-* La estructura del nivel web debe adherirse a la estructura de modo flexible, tal como se define en el documento [Dispatcher en la nube](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* La estructura del nivel web debe adherirse a la estructura de modo flexible, tal como se define en el documento [Dispatcher en la nube.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 Además, tenga en cuenta cómo se usa la variable [canalización de pila completa](#full-stack-pipeline) se comportarán al introducir una canalización de niveles web.
 

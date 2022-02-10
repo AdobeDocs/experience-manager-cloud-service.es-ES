@@ -2,9 +2,9 @@
 title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2022.02.0
 description: Estas son las notas de la versión de Cloud Manager de AEM versión as a Cloud Service 2022.02.0.
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '287'
 ht-degree: 2%
 
 ---
@@ -24,8 +24,8 @@ La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2022.02.0 es 
 
 ## Novedades {#what-is-new}
 
-* Nueva aceleración [Canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) se han introducido para implementar exclusivamente la configuración de HTTPD/Dispatcher
-   * Debe estar en AEM versión `2021.12.6151.20211217T120950Z` para utilizar esta función.
+* Nueva aceleración [Canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) se han introducido para implementar exclusivamente la configuración de HTTPD/Dispatcher.
+   * Debe estar en AEM versión `2021.12.6151.20211217T120950Z` o más reciente y [inclusión en el modo flexible de las herramientas de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para utilizar esta función.
    * Esta función se implementará por fases en las dos semanas siguientes a la versión de 2022.02.0.
 * La experiencia de página de aterrizaje de Cloud Manager se ha actualizado para ofrecer una navegación mejorada, un fácil cambio entre las vistas de cuadrícula/mosaico y ventanas emergentes para obtener un resumen rápido del programa.
 * Un nuevo umbral fallido (`< D`) se ha agregado a la variable [métrica de clasificación de fiabilidad.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
