@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1095'
 ht-degree: 29%
 
 ---
@@ -43,7 +43,7 @@ Esta variable de entorno se utiliza en dos lugares:
 
 Se puede usar una dirección URL de extremo de GraphQL diferente para cada entorno de AEM as a Cloud Service. De este modo, los proyectos pueden conectar AEM entornos de ensayo con sistemas de ensayo comerciales y AEM entorno de producción a un sistema de producción comercial. El extremo de GraphQL debe estar disponible para el público, no se admiten conexiones privadas VPN o locales. Opcionalmente, se puede proporcionar un encabezado de autenticación para utilizar funciones de CIF adicionales que requieran autenticación.
 
-Opcional y solo para Adobe Commerce Enterprise/Cloud, el complemento CIF admite el uso de datos de catálogo por etapas para AEM autores. Esto requiere configurar un token de autorización. El token de autorización configurado solo está disponible y se utiliza en AEM instancias de autor por motivos de seguridad. AEM instancias de publicación no pueden mostrar datos clasificados.
+De forma opcional y solo para Adobe Commerce Enterprise/Cloud, el complemento CIF admite el uso de datos de catálogo clasificados para AEM autores. Esto requiere configurar un encabezado de autorización. Este encabezado solo está disponible y se utiliza en AEM instancias de autor por motivos de seguridad. AEM instancias de publicación no pueden mostrar datos clasificados.
 
 Hay dos opciones para configurar el extremo:
 
@@ -59,7 +59,7 @@ Al hacer clic en este botón, se abre un cuadro de diálogo:
 
 ![Punto final de comercio de CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Una vez configurado el punto final (opcionalmente, un token de autenticación para la compatibilidad con el catálogo por etapas), el punto final se mostrará en la página de detalles. Al hacer clic en el icono Editar se abrirá el mismo cuadro de diálogo en el que el punto final se puede modificar si es necesario.
+Después de establecer el punto final y, opcionalmente, un encabezado de autorización para la compatibilidad con el catálogo por etapas, el punto final se mostrará en la página de detalles. Al hacer clic en el icono Editar se abrirá el mismo cuadro de diálogo en el que el punto final se puede modificar si es necesario.
 
 ![Información sobre el entorno de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
