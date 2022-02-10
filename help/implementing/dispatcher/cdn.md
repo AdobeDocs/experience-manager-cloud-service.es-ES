@@ -3,10 +3,10 @@ title: CDN en AEM as a Cloud Service
 description: CDN en AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
+source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 8%
+source-wordcount: '946'
+ht-degree: 9%
 
 ---
 
@@ -52,6 +52,10 @@ Si un cliente debe utilizar su CDN existente, puede administrarla y señalarla a
 * El cliente debe poder configurar la CDN para que funcione con AEM as a Cloud Service; consulte las instrucciones de configuración que se presentan a continuación.
 * El cliente debe tener expertos en CDN de ingeniería que estén disponibles en caso de que surjan problemas relacionados.
 * El cliente debe realizar y superar correctamente una prueba de carga antes de ir a producción.
+
+>[!NOTE]
+>
+>La CDN de Adobe no es opcional. Los clientes que traigan su propia CDN deben señalarla a la CDN administrada de AEM.
 
 Instrucciones de configuración:
 
