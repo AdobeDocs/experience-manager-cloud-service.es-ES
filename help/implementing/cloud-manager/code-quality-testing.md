@@ -2,9 +2,9 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1147'
 ht-degree: 2%
 
 ---
@@ -14,10 +14,9 @@ ht-degree: 2%
 Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="Prueba de calidad del código"
+>abstract="Las pruebas de calidad del código evalúan el código de la aplicación en función de un conjunto de reglas de calidad. Es el propósito principal de una canalización solo de calidad de código y se ejecuta inmediatamente después del paso de compilación en todas las canalizaciones de producción y no de producción."
 
 ## Introducción {#introduction}
 
@@ -30,7 +29,8 @@ Consulte el documento [Configuración de la canalización de CI-CD](/help/implem
 Las pruebas de calidad del código analizan el código fuente para asegurarse de que cumple determinados criterios de calidad. Esto se lleva a cabo mediante una combinación de SonarQube y un examen a nivel de paquete de contenido usando OakPAL. Hay más de 100 reglas, que combinan reglas genéricas de Java y reglas específicas de AEM. Algunas de las reglas específicas del AEM se crean en función de las prácticas recomendadas de AEM Engineering y se denominan [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-Puede descargar la lista completa de reglas [con este vínculo.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>Puede descargar la lista completa de reglas [con este vínculo.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### Clasificaciones en tres niveles {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ En la tabla siguiente se resumen las clasificaciones y los umbrales de fallo de 
 | Compatibilidad del Cloud Service | Número de problemas de compatibilidad de servicios en la nube identificados | Información | > 0 |
 
 >[!NOTE]
-Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener definiciones más detalladas.
+>
+>Consulte [Definiciones de métricas de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) para obtener definiciones más detalladas.
 
 >[!NOTE]
-Para obtener más información sobre las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], consulte el documento [Reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>Para obtener más información sobre las reglas de calidad de código personalizadas ejecutadas por [!UICONTROL Cloud Manager], consulte el documento [Reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## Cómo tratar con falsos positivos {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 A continuación, la solución correcta es quitar la contraseña codificada.
 
 >[!NOTE]
-Aunque es recomendable hacer que la variable `@SuppressWarnings` anotación lo más específica posible, es decir, anotar solo la declaración o el bloque específico que causa el problema; es posible realizar anotaciones a nivel de clase.
+>
+>Aunque es recomendable hacer que la variable `@SuppressWarnings` anotación lo más específica posible, es decir, anotar solo la declaración o el bloque específico que causa el problema; es posible realizar anotaciones a nivel de clase.
 
 >[!NOTE]
-Aunque no hay ningún paso explícito de prueba de seguridad, hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte el documento [Información general de seguridad para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
+>Aunque no hay ningún paso explícito de prueba de seguridad, hay reglas de calidad de código relacionadas con la seguridad evaluadas durante el paso de calidad del código. Consulte el documento [Información general de seguridad para AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) para obtener más información sobre la seguridad en Cloud Service.
 
 ## Optimización del análisis de paquetes de contenido {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ Para los proyectos que producen decenas de paquetes incrustados, se ha demostrad
 Se puede producir un caso especial cuando el paquete de contenido &quot;todo&quot; contiene una combinación de paquetes de contenido omitidos y paquetes OSGi. Por ejemplo, si `myco-all-1.0.0-SNAPSHOT.zip` contenía los dos paquetes incrustados mencionados anteriormente, así como uno o más paquetes OSGi, luego se construye un nuevo paquete de contenido mínimo con solo los paquetes OSGi. Este paquete siempre tiene el nombre `cloudmanager-synthetic-jar-package` y los paquetes contenidos se colocan en `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* Esta optimización no afecta a los paquetes que se implementan en AEM.
-* Debido a que la coincidencia entre los paquetes de contenido incrustado y los paquetes de contenido omitido se basa en los nombres de archivo, esta optimización no se puede realizar si varios paquetes de contenido omitidos tienen exactamente el mismo nombre de archivo o si el nombre de archivo se cambia al incrustar.
+>
+>* Esta optimización no afecta a los paquetes que se implementan en AEM.
+>* Debido a que la coincidencia entre los paquetes de contenido incrustado y los paquetes de contenido omitido se basa en los nombres de archivo, esta optimización no se puede realizar si varios paquetes de contenido omitidos tienen exactamente el mismo nombre de archivo o si el nombre de archivo se cambia al incrustar.
 
