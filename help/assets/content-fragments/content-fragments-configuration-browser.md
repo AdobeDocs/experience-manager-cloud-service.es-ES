@@ -4,7 +4,7 @@ description: Aprenda a habilitar ciertas funciones de fragmento de contenido en 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 20%
@@ -27,7 +27,7 @@ Antes de usar fragmentos de contenido, debe usar la variable **Explorador de con
 >Si no habilita **Modelos de fragmento de contenido**:
 >
 >* el **Crear** no estará disponible para crear nuevos modelos.
->* no podrá [seleccione la configuración Sitios para crear el punto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* no podrá [seleccione la configuración Sitios para crear el punto final relacionado](/help/headless/graphql-api/graphql-endpoint.md).
 
 
 Para habilitar la funcionalidad de fragmento de contenido, debe:

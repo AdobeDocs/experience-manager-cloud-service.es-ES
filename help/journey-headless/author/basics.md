@@ -2,9 +2,9 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 5%
 
 ---
@@ -268,7 +268,7 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtenga información so
 
 
 * Guías de introducción
-   * [Creación de una carpeta de recursos Guía de inicio rápido sin encabezado](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Creación de una configuración sin encabezado de carpeta de recursos](/help/headless/setup/create-assets-folder.md)
 
 * Recorrido de arquitecto de contenido de AEM Headless
 

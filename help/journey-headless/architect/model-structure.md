@@ -1,26 +1,26 @@
 ---
-title: Learn about Creating Content Fragment Models in AEM
-description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
+title: Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM
+description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin encabezado mediante modelos de fragmentos de contenido.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 2%
+source-wordcount: '688'
+ht-degree: 5%
 
 ---
 
-# Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
+# Obtenga información acerca de la creación de modelos de fragmento de contenido en AEM {#architect-headless-content-fragment-models}
 
-## The Story so Far {#story-so-far}
+## La historia hasta ahora {#story-so-far}
 
-[](overview.md)[](basics.md)
+Al principio del [recorrido de autor de contenido sin encabezado de AEM](overview.md) el [Conceptos básicos de modelado de contenido para usuarios sin encabezado con AEM](basics.md) abarcaba los conceptos básicos y la terminología relevantes para la creación sin encabezado.
 
-This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
+Este artículo se basa en estos modelos para que pueda comprender cómo crear sus propios modelos de fragmento de contenido para su proyecto sin encabezado de AEM.
 
 ## Objetivo {#objective}
 
-* ****
-* ****
+* **Audiencia**: Principiante
+* **Objetivo**: los conceptos y mecanismos de modelado de contenido para su CMS sin encabezado utilizando los modelos de fragmentos de contenido.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -37,99 +37,99 @@ At the very start you need to enable Content Fragment Models for your site, this
 >See Additional Resources - Content Fragments in the Configuration Browser
 -->
 
-## Creating Content Fragment Models {#creating-content-fragment-models}
+## Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
-Then the Content Fragments Models can be created and the structure defined. This can be done under Tools -> Assets -> Content Fragment Models.
+A continuación, se pueden crear los modelos de fragmentos de contenido y definir la estructura. Esto se puede hacer en Herramientas -> Recursos -> Modelos de fragmento de contenido.
 
-![](assets/cfm-tools.png)
+![Modelos de fragmento de contenido en herramientas](assets/cfm-tools.png)
 
-**** Here you can enter various key details.
+Después de seleccionarlo, navegará a la ubicación del modelo y seleccione **Crear**. Aquí puede introducir varios detalles clave.
 
-**** This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+La opción **Habilitar modelo** está activada de forma predeterminada. Esto significa que el modelo estará disponible para su uso (en la creación de fragmentos de contenido) en cuanto lo haya guardado. Puede desactivarlo si lo desea; más adelante hay oportunidades de habilitar (o deshabilitar) un modelo existente.
 
-![](/help/assets/content-fragments/assets/cfm-models-02.png)
+![Crear modelo de fragmento de contenido](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-********
+Confirme con **Crear** y entonces puede **Apertura** el modelo para comenzar a definir la estructura.
 
-## Defining Content Fragment Models {#defining-content-fragment-models}
+## Definición de modelos de fragmento de contenido {#defining-content-fragment-models}
 
-****
+Cuando abra un nuevo modelo, verá un gran espacio en blanco a la izquierda y una larga lista de **Tipos de datos** a la derecha:
 
-![](/help/assets/content-fragments/assets/cfm-models-03.png)
+![Modelo vacío](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-So - what&#39;s to be done?
+Entonces, ¿qué se debe hacer?
 
-****
+Puede arrastrar instancias del **Tipos de datos** en el espacio izquierdo - ya está definiendo su modelo!
 
-![](/help/assets/content-fragments/assets/cfm-models-04.png)
+![Definición de campos](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-**** These depend on the type being used. Por ejemplo:
+Una vez agregado un tipo de datos, se le pedirá que defina la variable **Propiedades** para ese campo. Dependen del tipo que se utilice. Por ejemplo:
 
-![](/help/assets/content-fragments/assets/cfm-models-05.png)
+![Propiedades de datos](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-You can add as many fields as you need. Por ejemplo:
+Puede agregar tantos campos como necesite. Por ejemplo:
 
 ![Modelo de fragmento de contenido](/help/assets/content-fragments/assets/cfm-models-07.png)
 
-### Your Content Authors {#your-content-authors}
+### Sus autores de contenido {#your-content-authors}
 
-Your content authors do not see the actual Data Types and Properties that you&#39;ve used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
+Los autores de contenido no ven los tipos de datos y las propiedades reales que utilizó para crear los modelos. Esto significa que es posible que tenga que proporcionar ayuda e información sobre cómo completan campos específicos. Para obtener información básica, puede utilizar la etiqueta de campo y el valor predeterminado, pero puede que sea necesario considerar casos más complejos como la documentación específica del proyecto.
 
 >[!NOTE]
 >
->See Additional Resources - Content Fragment Models.
+>Consulte Recursos adicionales: Modelos de fragmento de contenido.
 
-## Managing Content Fragment Models {#managing-content-fragment-models}
+## Administración de modelos de fragmento de contenido {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
-Managing your Content Fragment Models involves:
+La administración de los modelos de fragmento de contenido implica:
 
-* Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
-* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
+* Habilitarlos (o desactivarlos): esto hace que estén disponibles para autores al crear fragmentos de contenido.
+* Eliminación: la eliminación siempre es necesaria, pero debe tener en cuenta la eliminación de un modelo que ya se esté utilizando para los fragmentos de contenido, en particular los fragmentos que ya se han publicado.
 
 ## Publicación {#publishing}
 
 <!-- needs more details -->
 
-Content fragment models need to be published when/before any dependent content fragments are published.
+Los modelos de fragmento de contenido deben publicarse cuando se publican fragmentos de contenido dependientes, o antes de hacerlo.
 
 >[!NOTE]
 >
->If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
+>Si un autor intenta publicar un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
 
-** This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. ****
+En cuanto se publica un modelo, aparece *bloqueado* en modo READ-ONLY en author. Esto tiene como objetivo evitar cambios que pudieran provocar errores en los esquemas y consultas de GraphQL existentes, especialmente en el entorno de publicación. Se indica en la consola mediante **Bloqueado**.
 
-********
+Cuando el modelo es **Bloqueado** (en modo READ-ONLY), puede ver el contenido y la estructura de los modelos, pero no puede editarlos directamente; aunque puede administrar **Bloqueado** modelos desde la consola o desde el editor de modelos.
 
-## What&#39;s Next {#whats-next}
+## Siguientes pasos {#whats-next}
 
-Now that you have learned the basics, the next step is to start creating your own Content Fragment Models.
+Ahora que ha aprendido los conceptos básicos, el siguiente paso es comenzar a crear sus propios modelos de fragmento de contenido.
 
 ## Recursos adicionales {#additional-resources}
 
 * [Conceptos de creación](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
+* [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) : esta página se basa principalmente en la variable **Sitios** consola, pero muchas de las funciones principales también son relevantes para desplazarse a y realizar acciones en, **Modelos de fragmento de contenido** en el **Recursos** consola.
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
    * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Defining your Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+      * [Definición del modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Enabling or Disabling a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+      * [Activación o desactivación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Deleting a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+      * [Eliminación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Publishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+      * [Publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Unpublishing a Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Cancelación de la publicación de un modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [Locked (Published) Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Modelos de fragmento de contenido bloqueados (publicados)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
-* Getting Started Guides
+* Guías de introducción
 
-   * [Creating Content Fragment Models Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-content-model.md)
+   * [Creación de modelos de fragmento de contenido Configuración sin encabezado](/help/headless/setup/create-content-model.md)
