@@ -1,10 +1,10 @@
 ---
 title: Notas de la versión 2021.11.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.11.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 16c4b6b694ddad7854906c0d18880dd72159c02a
+source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 97%
+source-wordcount: '1114'
+ht-degree: 94%
 
 ---
 
@@ -30,6 +30,10 @@ La siguiente versión (2022.1.0) es el 3 de febrero de 2022.
 
 Eche un vistazo al vídeo [Información general sobre la versión de diciembre de 2021](https://video.tv.adobe.com/v/339278) para ver un resumen de las funciones añadidas en la versión 2021.11.0 (noviembre de 2021).
 
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* La variable **[Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** está disponible en la **Sitio** carril de la consola Sitios para sitios que usan la versión 2 del componente principal de la página. Este botón configura el sitio para cargar los temas que se implementan con la canalización de front-end sobre las bibliotecas de cliente existentes.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nuevas funciones de [!DNL Assets] {#assets-features}
@@ -42,7 +46,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de diciembre d
 
 * [!DNL Dynamic Media] ahora es compatible con la ingesta, previsualización, reproducción y publicación de vídeos MXF. Todavía no se admite la anotación ni el vídeo de ventas para vídeos MXF.
 
-* Después de configurar una conexión entre las implementaciones remotas de DAM y Sites, los recursos en DAM remoto están disponibles en la implementación de Sites. Ahora puede realizar el [actualizar, eliminar, cambiar el nombre y mover operaciones](/help/assets/use-assets-across-connected-assets-instances.md) en los recursos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites.
+* Después de configurar una conexión entre las implementaciones remotas de DAM y Sites, los recursos en DAM remoto están disponibles en la implementación de Sites. Ahora puede realizar las operaciones de [actualización, eliminación, cambio de nombre y movimiento](/help/assets/use-assets-across-connected-assets-instances.md) en los activos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites.
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
