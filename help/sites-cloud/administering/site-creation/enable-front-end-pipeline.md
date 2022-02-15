@@ -3,9 +3,9 @@ title: Habilitar canalización front-end
 description: Descubra cómo puede habilitar la canalización de front-end para sitios existentes a fin de aprovechar los temas del sitio para personalizar más rápidamente el sitio.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ Los sitios basados en plantillas de sitio pueden aprovechar la canalización de 
 >Si no está familiarizado con la canalización del front-end y con cómo implementar rápidamente sitios mediante ella y las plantillas de sitio, revise la [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) para una introducción.
 
 Si no ha creado el sitio existente en función de las plantillas y los temas del sitio, AEM configurar el sitio para cargar los temas que se implementan con la canalización de front-end sobre las bibliotecas de cliente existentes.
+
+## Detalles técnicos {#technical-details}
+
+Al activar la canalización del front-end para un sitio, AEM realiza los siguientes cambios en la estructura del sitio.
+
+* Todas las páginas del sitio incluirán un archivo CSS y JS adicional, que se puede modificar mediante la implementación de actualizaciones a través de una canalización front-end de Cloud Manager dedicada.
+* Los archivos CSS y JS añadidos inicialmente estarán vacíos, pero se puede descargar una carpeta de &quot;fuentes temáticas&quot; para arrancar la estructura de carpetas que permite implementar actualizaciones de código CSS y JS a través de esa canalización.
+* Este cambio solo lo puede deshacer un desarrollador, eliminando la variable `SiteConfig` y `HtmlPageItemsConfig` nodos que esta operación crea a continuación `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>Esta acción no convierte automáticamente las bibliotecas de cliente existentes del sitio para utilizar la canalización de fin de fuente. Mover estos orígenes de la carpeta de biblioteca del cliente a la carpeta de canalización del front-end es una tarea que requiere el trabajo manual de un desarrollador del front-end.
 
 ## Requisitos {#requirements}
 
