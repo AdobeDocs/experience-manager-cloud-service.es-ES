@@ -2,7 +2,7 @@
 title: Configuración de canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -124,7 +124,7 @@ Una canalización de configuración de nivel web implementa las configuraciones 
 >
 >Si ya existe una canalización de código de capa web para el entorno seleccionado, se desactivará esta selección.
 
-Para finalizar la configuración de la canalización de no producción de código de pila completa, siga estos pasos.
+Para finalizar la configuración de la canalización de no producción de código de capa web, siga estos pasos.
 
 1. En el **Código fuente** , debe definir las siguientes opciones.
 
