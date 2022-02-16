@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 026004564eb3085717e088381058d579d26083bd
 workflow-type: tm+mt
 source-wordcount: '3447'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -519,7 +519,7 @@ ht-degree: 97%
          + [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
          + [Uso de varias plantillas](/help/commerce-cloud/authoring/multi-template-usage.md)
          + [Enriquecimiento de datos de producto con contenido asociado](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
-         + [Recomendaciones de productos](/help/commerce-cloud/authoring/product-recommendations.md)
+         + [Recomendaciones de producto](/help/commerce-cloud/authoring/product-recommendations.md)
       + Administración {#administering}
          + [Configuración de varias tiendas](/help/commerce-cloud/configuring/multi-store-setup.md)
          + [Configuración de direcciones URL para SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
@@ -717,7 +717,7 @@ ht-degree: 97%
          + [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
          + [Estructura de la IU de AEM](/help/implementing/developing/introduction/ui-structure.md)
          + [Hoja de referencia de Sling](/help/implementing/developing/introduction/sling-cheatsheet.md)
-         + [Usar los adaptadores de Sling](/help/implementing/developing/introduction/sling-adapters.md)
+         + [Uso de los adaptadores de Sling](/help/implementing/developing/introduction/sling-adapters.md)
          + [Usar la fusión de recursos de Sling en AEM as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md)
          + [Superposiciones en AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
          + [Uso de bibliotecas del lado del cliente](/help/implementing/developing/introduction/clientlibs.md)
@@ -834,7 +834,7 @@ ht-degree: 97%
    + [Tareas de mantenimiento](/help/operations/maintenance.md)
    + [Copia de seguridad y restauración](/help/operations/backup.md)
    + [Trabajos asincrónicos](/help/operations/asynchronous-jobs.md)
-   + [Eliminación del índice de lucene genérico](/help/operations/removal-generic-lucene-index.md)
+   + [Eliminación del índice de Lucene genérico](/help/operations/removal-generic-lucene-index.md)
 + Compatibilidad {#compliance}
    + [cumplimiento en AEM as a Cloud Service](/help/compliance/home.md)
    + Privacidad de datos y preparación para la protección {#data-privacy}
