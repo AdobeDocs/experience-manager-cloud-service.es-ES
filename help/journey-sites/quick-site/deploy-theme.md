@@ -1,9 +1,9 @@
 ---
 title: Implementar el tema personalizado
 description: Obtenga información sobre cómo implementar el tema del sitio mediante la canalización.
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -102,6 +102,7 @@ AEM es una potente herramienta y hay muchas opciones adicionales disponibles. Co
 
 A continuación se muestran algunos recursos adicionales que profundizan en algunos conceptos mencionados en este documento.
 
+* [Uso del carril del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) - Conozca las potentes funciones del carril del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio, lo que incluye la descarga de fuentes temáticas y la administración de versiones de temas.
 * [AEM documentación técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) - Si ya tiene una comprensión firme de AEM, puede que desee consultar directamente los documentos técnicos detallados.
 * [Documentación de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) : Si desea obtener más información sobre las funciones de Cloud Manager, puede consultar directamente los documentos técnicos detallados.
 * [Permisos basados en roles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) : Cloud Manager tiene funciones preconfiguradas con los permisos adecuados. Consulte este documento para obtener detalles sobre estas funciones y cómo administrarlas.

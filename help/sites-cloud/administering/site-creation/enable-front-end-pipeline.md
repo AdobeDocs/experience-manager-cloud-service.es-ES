@@ -1,17 +1,17 @@
 ---
-title: Habilitar canalización front-end
+title: Activación de la canalización front-end
 description: Descubra cómo puede habilitar la canalización de front-end para sitios existentes a fin de aprovechar los temas del sitio para personalizar más rápidamente el sitio.
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 
-# Habilitar canalización front-end {#enable-front-end-pipeline}
+# Activación de la canalización front-end {#enable-front-end-pipeline}
 
 Descubra cómo puede habilitar la canalización de front-end para sitios existentes a fin de aprovechar los temas del sitio para personalizar más rápidamente el sitio.
 
@@ -47,7 +47,7 @@ AEM adaptar automáticamente el sitio existente para utilizar la canalización f
 
 ## Activación de la canalización front-end {#enabling}
 
-La activación del sitio se realiza desde la consola Sitios .
+La activación del sitio se realiza desde la consola Sitios mediante la [Carril del sitio.](site-rail.md)
 
 1. Inicie sesión en AEM y navegue hasta su sitio a través de **Navegación global** > **Sitios**.
 1. Seleccione el sitio en la consola. Debe seleccionar la raíz del sitio y no cualquier página secundaria.
@@ -58,7 +58,8 @@ La activación del sitio se realiza desde la consola Sitios .
 
 1. AEM le solicita que confirme con una descripción general de los cambios que se realizarán. Confirme y su sitio está adaptado.
 
-Ahora su sitio está listo para usar la canalización front-end. Para obtener más información sobre la canalización front-end, consulte:
+Ahora su sitio está listo para usar la canalización front-end. Para obtener más información sobre la canalización front-end y la administración del tema del sitio, consulte:
 
+* [Uso del carril del sitio para administrar el tema del sitio](site-rail.md)
 * [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) : Este recorrido de documentación le ofrece una visión general de principio a fin del proceso de implementación rápida de un sitio mediante la canalización front-end y la herramienta de creación rápida del sitio.
 * [Canalizaciones CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) : Este documento describe la canalización front-end en el contexto de las canalizaciones de pila completa y de nivel web.
