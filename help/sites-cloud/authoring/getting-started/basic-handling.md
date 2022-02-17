@@ -2,10 +2,10 @@
 title: Gestión básica
 description: Familiarícese con el desplazamiento por AEM y su uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 96%
+source-wordcount: '2954'
+ht-degree: 95%
 
 ---
 
@@ -465,7 +465,7 @@ La sección **Referencias** muestra cualquier conexión con el recurso seleccion
 
 ![Carril del sitio](../assets/site-rail.png)
 
-Toque o haga clic en el botón **Descargar fuentes de temas** para personalizar el [del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consulte el documento [Uso del carril del sitio para administrar el tema del sitio](/help/sites-cloud/administering/site-creation/site-rail.md) para obtener más información sobre cómo puede utilizar el carril para administrar el [del sitio.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
