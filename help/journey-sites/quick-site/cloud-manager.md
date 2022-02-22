@@ -1,9 +1,9 @@
 ---
 title: Comprender Cloud Manager y el flujo de trabajo de creación rápida de sitios
 description: Obtenga información sobre Cloud Manager y cómo vincula el nuevo proceso de creación rápida de sitios.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 1%
 
 ---
@@ -82,11 +82,17 @@ A los efectos del presente recorrido, no es necesario tener una comprensión com
 
 ![Estructura de Cloud Manager](assets/cloud-manager-structure.png)
 
-* **INQUILINO** - Cada cliente está aprovisionado con un inquilino. **WKND Viajes y Aventuras** puede ser inquilino.
-* **PROGRAMAS** - Cada inquilino tiene uno o más programas. La variable **WKND Viajes y Aventuras** el inquilino puede tener un **Vida nocturna WKND** y **Proyectos de la tarde de WKND** programa.
-* **ENTORNOS** - Cada programa tiene múltiples entornos, como producción para contenido en directo, y ensayo y desarrollo para fines de desarrollo. **Vida nocturna WKND** y **Proyectos de la tarde de WKND** los programas tendrían entornos de desarrollo, fase y producción.
+* **INQUILINO** - Cada cliente está aprovisionado con un inquilino.
+* **PROGRAMAS** - Cada inquilino tiene uno o más programas, que a menudo reflejan las soluciones con licencia del cliente.
+* **ENTORNOS** - Cada programa tiene múltiples entornos, como producción para contenido en directo, uno para ensayo y otro para desarrollo.
 * **REPOSITORIO** - Los entornos tienen repositorios Git donde se mantiene el código de la aplicación y del front-end.
 * **HERRAMIENTAS Y FLUJOS DE TRABAJO** : Las canalizaciones administran la implementación de código desde los repositorios a los entornos.
+
+Un ejemplo suele ser útil para contextualizar esta jerarquía.
+
+* WKND Las empresas de viajes y aventura pueden ser una **inquilino** que se centra en medios relacionados con viajes.
+* El inquilino de WKND Travel and Adventure Enterprises puede tener dos **programas**: un programa Sites para WKND Magazine y un programa Assets para WKND Media.
+* Los programas WKND Magazine y WKND Media tendrían desarrollo, escenario y producción **entornos**.
 
 ## Flujo de desarrollo del front-end para la creación rápida de sitios {#flow}
 

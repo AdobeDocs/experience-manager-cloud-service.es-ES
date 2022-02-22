@@ -1,0 +1,73 @@
+---
+title: 'Creación de programas de producción '
+description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
+source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 0%
+
+---
+
+
+# Creación de programas de producción {#create-production-program}
+
+Un programa de producción está diseñado para un usuario que esté familiarizado con AEM y Cloud Manager y que esté listo para empezar a escribir, crear y probar código con el objetivo de implementarlo para alojar tráfico en vivo.
+
+Obtenga más información sobre los tipos de programas en el documento [Explicación de los tipos de programa y programa.](program-types.md)
+
+## Tutorials de vídeo {#video-tutorials}
+
+Puede ver estos dos videotutoriales para aprender a crear un programa en Cloud Manager o [siga nuestras instrucciones documentadas.](#create)
+
+>[!VIDEO](https://video.tv.adobe.com/v/334953)
+
+>[!VIDEO](https://video.tv.adobe.com/v/334954)
+
+## Crear un programa de producción {#create}
+
+Siga estos pasos para crear un programa de producción.
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+
+1. Haga clic en **Agregar programa** en la esquina superior derecha de la pantalla.
+
+   ![Página de aterrizaje de Cloud Manager](assets/first_timelogin1.png)
+
+1. Select **Configurar para producción** en el asistente Crear programa para crear un programa de producción. Puede aceptar el nombre de programa predeterminado o editarlo antes de seleccionar **Crear**.
+
+   ![Creación del asistente del programa](assets/create-prod1.png)
+
+1. En la pestaña siguiente, seleccione las soluciones que desea incluir en el programa.
+
+   ![Seleccionar soluciones](assets/setup-prod-select.png)
+
+1. Haga clic en el elemento adicional antes de los nombres de las soluciones para mostrar complementos opcionales, como seleccionar la variable **Comercio** opción de complemento en **Sitios**.
+
+   ![Seleccionar complementos](assets/setup-prod-commerce.png)
+
+1. Con las soluciones y los complementos seleccionados, haga clic en **Crear**.
+
+El programa lo crea Cloud Manager y se muestra y se puede seleccionar en la página de aterrizaje.
+
+![Resumen de Cloud Manager](assets/navigate-cm.png)
+
+## Acceso a su programa {#acessing}
+
+1. Una vez que vea la tarjeta del programa en la página de aterrizaje, seleccione el botón de elipsis para ver las opciones de menú disponibles.
+
+   ![Información general del programa](assets/program-overview.png)
+
+1. Select **Información general del programa** para navegar a la página de **Información general** página.
+
+1. La tarjeta de llamada a la acción principal de la página de información general le guiará a través de la creación de un entorno, una canalización que no sea de producción y, finalmente, una canalización de producción.
+
+   ![Información general del programa](assets/set-up-prod5.png)
+
+Si en cualquier momento necesita cambiar a otro programa o volver a la página de información general para crear otro programa, haga clic en el nombre del programa en la parte superior izquierda de la pantalla para mostrar la **Vaya a** .
+
+![Vaya a](assets/create-program-a1.png)
+
+>[!NOTE]
+>
+>A diferencia de [programa de simulación de pruebas,](introduction-sandbox-programs.md#auto-creation) un programa de producción requerirá que el usuario con la función adecuada de Cloud Manager cree el proyecto y añada un entorno a través de la interfaz de usuario del autoservicio.

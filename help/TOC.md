@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3434'
 ht-degree: 97%
 
 ---
@@ -632,17 +632,14 @@ ht-degree: 97%
             + [Notas de la versión 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
             + [Notas de la versión 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
             + [Notas de la versión 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
-      + [Explicación de programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)
-      + Programas de producción {#production-programs}
-         + [Introducción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [Creación de un programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [Edición de un programa de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + Programas del Simulador para pruebas {#sandbox-programs}
-         + [Introducción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [Creación de un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [Edición de un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [Eliminación de un programa de zona protegida](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [Entornos de zona protegida en hibernación y dehibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+      + Programas {#programs}
+         + [Programas y tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [Programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [Creación de programas de producción](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+         + [Programas del Simulador para pruebas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [Creación de programas de Simulador para pruebas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+         + [Edición de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+         + [Entornos en hibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Creación de un proyecto de aplicación de AEM {#create-application-project}
          + [Uso del asistente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuración del proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)

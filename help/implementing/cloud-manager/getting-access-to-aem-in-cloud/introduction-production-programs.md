@@ -1,31 +1,35 @@
 ---
 title: 'Introducción a los programas de producción '
-description: Introducción a los programas de producción
+description: Conozca qué son los programas de producción y sugerencias para configurar los suyos.
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: a6152a1529b5c70bcf056857204e7ff97fc614e4
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 0%
+source-wordcount: '432'
+ht-degree: 2%
 
 ---
 
+
 # Introducción a los programas de producción {#production-programs}
 
-Un programa *Production* está pensado para un usuario familiarizado con AEM y Cloud Manager y listo para empezar a escribir, crear y probar código con el objetivo de implementarlo en Producción.
+Un programa de producción está pensado para un equipo que esté listo para empezar a escribir, crear y probar código con el objetivo de implementarlo para alojar el tráfico en vivo.
+
+Tras [cree su programa de producción,](creating-production-programs.md) a [asistente de creación de programas](using-the-wizard.md) guía al usuario a través de selecciones según el objetivo del usuario al crear el programa.
+
+## Opciones de creación de programas {#program-creation-options}
+
+Su contrato con Adobe define el número y los tipos de soluciones disponibles para su organización específica al crear programas de producción. Tiene control sobre cómo asignar las soluciones disponibles a los programas de Cloud Manager.
+
+En la tabla siguiente se describen los escenarios comunes de las soluciones disponibles y los programas de producción típicos creados en función de ellas.
+
+| Soluciones disponibles | Opciones de programa | Novedades incluidas | Cuándo se utiliza | Ejemplos |
+|--- |--- |--- |--- |---|
+| 1 solución de Sites | Crear 1 programa solo de sitios | 1 producción + 1 fase, 1 desarrollo | N/D | N/D |
+| 1 Solución de activos | Crear 1 programa solo de recursos | 1 producción + 1 fase, 1 desarrollo | N/D | N/D |
+| 1 Sitios +1 Recursos | Crear un programa: <br>1 Programa Sites &amp; Assets | 1 producción + 1 fase, 2 desarrollo | Cuando la mayoría de los recursos digitales se utilizan para admitir la implementación de sitios.<br>En estos casos, la mayoría de los recursos digitales están en estado terminado, listos para utilizarse para experiencias entre canales a través de Sitios.<br>Normalmente, un solo equipo se encarga de administrar el contenido tanto de los sitios como de los recursos. | Imágenes que se utilizan principalmente para un sitio web.<br>PDF que se distribuirán mediante un portal interno integrado en AEM Sites. |
+| 1 Sitios +1 Recursos | Cree programas separados:<br>1 Solo programa Sitios y 1 solo programa Activos | 1 producción + 1 fase, 1 desarrollo<br> 1 producción + 1 fase, 1 desarrollo | Cuando muchos recursos digitales no admiten directamente la implementación de sitios.<br> En estos casos, los recursos se encuentran en varios estados, incluidos los tipos de archivo sin procesar y las obras en curso.<br>Un equipo creativo dedicado gestiona los recursos digitales a través de su propio ciclo de vida y tiene flujos de trabajo y ciclos de publicación independientes que el equipo de administración de contenido de Sites. | Las imágenes sin procesar de una sesión fotográfica se almacenan en el programa Recursos y solo se utilizarán unas pocas en la implementación Sitios.<br>Un gran número de tipos de archivos Creative Cloud, como Photoshop y Illustrator, se administran en AEM Assets y pasan por su propio flujo de trabajo de aprobación antes de que se genere un recurso terminado.<br>Considere utilizar [Recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md#overview-of-connected-assets) en tales casos. |
+| 1 Sitios + 1 Sitios | Cree programas separados:<br>1 Solo programa Sitios y 1 solo programa Sitios | 1 producción + 1 fase, 1 desarrollo<br>1 producción + 1 fase, 1 desarrollo | Para implementaciones de sitios de varios inquilinos.<br>En estos casos, se deben administrar varios sitios con su propia programación de versiones y equipos de contenido y desarrollo dedicados. | Dos marcas comerciales con sitios web dedicados y equipos de desarrollo independientes |
 
 >[!NOTE]
->No podrá eliminar un programa de producción.
-
-Un asistente para la creación de programas guiará al usuario para que realice selecciones, según el objetivo del usuario al crear el programa. En función de las autorizaciones de solución no utilizadas disponibles para el cliente u organización específico, el usuario controla cómo asignar las autorizaciones de solución disponibles (no utilizadas) a los programas de Cloud Manager.
-
-## Consideraciones sobre la creación de programas {#program-creation-considerations}
-
-La tabla siguiente describe escenarios comunes que se deben tener en cuenta al crear programas en Cloud Manager:
-
-| Derechos de solución no utilizados disponibles en la organización | Crear opciones de programa | Novedades incluidas | Cuándo usar y otras consideraciones |
-|--- |--- |--- |--- |
-| 1 solución de Sites | Crear 1 programa solo de Sites | 1 Producción + 1 Fase, 1 Desarrollo | ND |
-| 1 Solución de activos | Crear 1 programa solo de activos | 1 Producción + 1 Fase, 1 Desarrollo | ND |
-| 1 Sitios +1 Recursos | Crear un programa: 1 Programa Sites &amp; Assets | 1 producción + 1 fase, 2 desarrollo | La mayoría de los recursos digitales se utilizan para admitir la implementación de sitios. La mayoría de los recursos digitales se encuentran en un estado terminado, listos para utilizarse para experiencias entre canales a través de Sitios. Normalmente, un solo equipo se encarga de administrar el contenido tanto para Sitios como para Recursos. **Ejemplos** comunes: Imágenes que se utilizan principalmente para un sitio web. PDF que se distribuirán a través de un portal interno integrado en AEM Sites. |
-| 1 Sitios +1 Recursos | Cree programas separados: 1 Solo programa Sitios y 1 solo programa Activos | 1 Producción + 1 Fase, 1 Desarrollo<br> 1 Producción + 1 Fase, 1 Desarrollo | Muchos recursos digitales no admiten directamente la implementación de sitios. Los recursos administrados se encuentran en varios estados, incluidos los tipos de archivo sin procesar y los trabajos en curso. Un equipo creativo dedicado gestiona los recursos digitales a través de su propio ciclo de vida y tiene flujos de trabajo y ciclos de publicación independientes que el equipo de administración de contenido de Sites. *Ejemplos* comunes: Las imágenes sin procesar de una sesión fotográfica se almacenan en el programa Recursos y solo se utilizarán unas pocas en la implementación Sitios. Un gran número de tipos de archivos Creative Cloud, como Photoshop y Illustrator, se administran en AEM Assets y pasan por su propio flujo de trabajo de aprobación antes de que se genere un recurso terminado. Funciones para aprovechar: [Recursos conectados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html?lang=en#overview-of-connected-assets) |
-| 1 Sitios + 1 Sitios | Cree programas separados: 1 Solo programa Sitios y 1 solo programa Sitios | 1 Producción + 1 Fase, 1 Desarrollo<br>1 Producción + 1 Fase, 1 Desarrollo | Implementaciones de sitios de varios inquilinos. Varios sitios con su propia programación de versiones y equipos de desarrollo y contenido dedicados. *Ejemplos* comunes: Dos marcas comerciales con sitios web dedicados y equipos de desarrollo independientes |
+>
+>Programas de producción [no se puede editar ni eliminar.](editing-programs.md)
