@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2744'
 ht-degree: 1%
 
 ---
@@ -149,7 +149,11 @@ La siguiente imagen ilustra las distintas etapas de la ingesta de recursos en Ex
 
 #### Requisitos previos {#prerequisites-bulk-ingestion}
 
-Debe tener los detalles de almacenamiento del blob de origen para conectar la instancia de Experience Manager a un almacenamiento de datos.
+Se requiere una cuenta de almacenamiento externa o un compartimento de Azure o AWS para utilizar esta función.
+
+>[!NOTE]
+>
+>Cree el contenedor o el compartimento de la cuenta de almacenamiento como privado y acepte conexiones solo desde solicitudes autorizadas. Sin embargo, no se admiten restricciones adicionales en las conexiones de red de ingreso.
 
 #### Configuración de la herramienta de importación masiva {#configure-bulk-ingestor-tool}
 
