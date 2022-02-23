@@ -1,9 +1,9 @@
 ---
 title: Fase de preparación
 description: Obtenga información sobre los pasos que debe seguir para asegurarse de que la instalación de AEM está lista para moverse a la nube
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 6%
 
 ---
@@ -114,7 +114,7 @@ La lista de elementos de la tabla siguiente es el subconjunto de los cambios má
   <tr>
     <td>Lanzadores de flujo de trabajo</td>
     <td></td>
-    <td>Elimine de su código cualquier iniciador de flujo de trabajo que active OOTB o el flujo de trabajo personalizado de recursos de actualización de DAM.</br>Todos los recursos cargados en AEM as a Cloud Service serán procesados por el servicio de procesamiento de recursos. Hay una configuración OSGi de posprocesamiento de flujo de trabajo que se puede utilizar para el déclencheur de pasos de procesamiento personalizados adicionales.</td>
+    <td>Elimine de su código cualquier iniciador de flujo de trabajo que active OOTB o el flujo de trabajo personalizado de recursos de actualización de DAM.</br>Todos los recursos cargados en AEM as a Cloud Service serán procesados por el servicio de procesamiento de recursos. Para ver los pasos personalizados, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Flujos de trabajo posteriores al procesamiento</a> sobre cómo configurar y configurar flujos de trabajo posteriores al procesamiento.</td>
   </tr>
   <tr>
     <td>Pasos de representación personalizados</td>
