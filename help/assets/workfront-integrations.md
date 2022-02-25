@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
+title: '"[!DNL Experience Manager Assets] integración con [!DNL Adobe Workfront]"'
 description: Introducción a la integración entre [!DNL Assets] y [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: edb954754f89c01a3b1a77b98f77c934f1855316
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '890'
 ht-degree: 2%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión 2020.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.10.0.'
+description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.10.0."'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -49,13 +49,13 @@ La siguiente versión (2020.11.0) será el 1 de diciembre de 2020.
 
 * **Analytics para Forms adaptable**: Ahora puede capturar y rastrear el comportamiento tanto de inicio de sesión como de no inicio de sesión (anónimo) a través de Adobe Analytics for Adaptive Forms para recopilar perspectivas del usuario final. Ayuda a los usuarios empresariales a tomar decisiones informadas sobre el contenido, el diseño y el estilo del formulario adaptable en función de las perspectivas recopiladas.
 
-### Nuevas funciones disponibles en [!DNL Forms] canal de prelanzamiento {#prerelease-features-forms-oct-2021}
+### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 * **Externalización AEM datos de flujo de trabajo para un procesamiento seguro**: Puede almacenar datos de variables de flujo de trabajo en proceso AEM que contengan elementos de datos personales confidenciales (SPD) en un repositorio administrado por el cliente para un procesamiento seguro. Durante el procesamiento del flujo de trabajo, los datos almacenados en variables de flujo de trabajo no se guardan en AEM repositorio. Se obtiene a petición del repositorio administrado por el cliente.
 
 ### Funciones beta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) le ayuda a combinar una plantilla y los datos XML para generar documentos en distintos formatos. El servicio le permite generar documentos en modo sincrónico y por lotes.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=es) le ayuda a combinar una plantilla y los datos XML para generar documentos en distintos formatos. El servicio le permite generar documentos en modo sincrónico y por lotes.
 
 Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa beta.
 

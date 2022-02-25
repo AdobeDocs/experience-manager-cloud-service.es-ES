@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión 2020.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '[!DNL Adobe Experience Manager] notas de la versión de as a Cloud Service para 2020.9.0.'
+description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2020.9.0."'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -15,15 +15,15 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2020.9.0 es el 24 de septiembre de 2020.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 es el 24 de septiembre de 2020.
 
-## [!DNL Adobe Experience Manager Sites] como Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Novedades de [!DNL Sites] {#what-is-new-sites}
 
 * El SDK del Editor de JavaScript para la Aplicación de una sola página (SPA) [ahora es de código abierto.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] como Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Novedades de [!DNL Assets] {#what-is-new-assets}
 
@@ -31,12 +31,12 @@ La fecha de versión de [!DNL Adobe Experience Manager] como Cloud Service 2020.
 
 * Mejoras en [!DNL Dynamic Media]
 
-   * Publicación selectiva : ahora es posible que un equipo de marketing acceda a [!DNL Dynamic Media] imágenes de recorte inteligente y representaciones dinámicas sincronizadas con [!DNL Dynamic Media] para que puedan crear materiales promocionales, sin necesidad de publicar esos recursos en [!DNL Dynamic Media] para su envío global. [!DNL Experience Manager] y la  [!DNL Dynamic Media] publicación está disociada y puede producirse por separado para conseguirlo. Consulte [publicación selectiva](/help/assets/dynamic-media/selective-publishing.md).
-   * Los administradores ahora pueden restablecer la [!DNL Dynamic Media] contraseña de Cloud Service que se recibe en el aprovisionamiento. El restablecimiento se puede realizar en la interfaz de usuario [!DNL Experience Manager], sin necesidad de utilizar la aplicación de escritorio [!DNL Dynamic Media Classic].
+   * Publicación selectiva: ahora es posible que un equipo de marketing acceda [!DNL Dynamic Media] imágenes de recorte inteligente y representaciones dinámicas sincronizadas con [!DNL Dynamic Media] para que puedan crear materiales promocionales, sin necesidad de publicar esos recursos en [!DNL Dynamic Media] para la entrega global. [!DNL Experience Manager] y [!DNL Dynamic Media] la publicación está disociada y puede producirse por separado para conseguirlo. Consulte [publicación selectiva](/help/assets/dynamic-media/selective-publishing.md).
+   * Los administradores ahora pueden restablecer [!DNL Dynamic Media] La contraseña del Cloud Service que se recibe en el aprovisionamiento. El restablecimiento se puede realizar en [!DNL Experience Manager] interfaz de usuario, sin necesidad de usar la variable [!DNL Dynamic Media Classic] aplicación de escritorio.
 
-* Para obtener más información sobre las siguientes mejoras, consulte [novedades en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
+* Para obtener información sobre las siguientes mejoras, consulte [novedades de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
-   * Se ha mejorado la vista previa del PDF con la integración del SDK de Adobe Document Cloud View.
+   * Se ha mejorado la vista previa del PDF con la integración del SDK de vistas de Adobe Document Cloud.
    * Funcionalidad de descarga con un solo clic.
    * Nuevas configuraciones de administración para la experiencia de descarga.
 
@@ -68,7 +68,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Fecha de la versión {#release-date-cm}
 
-La fecha de versión de [!UICONTROL Cloud Manager] versión 2020.9.0 es el 3 de septiembre de 2020.
+La fecha de lanzamiento de [!UICONTROL Cloud Manager] La versión 2020.9.0 es el 3 de septiembre de 2020.
 
 ### Novedades {#what-is-new-cloud-manager}
 
@@ -86,7 +86,7 @@ Consulte esta sección para conocer las novedades y las actualizaciones de Cloud
 
 ### Novedades {#what-is-new-cra}
 
-* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra un botón **Generar informe** explícito en el que el usuario puede hacer clic para ejecutar el CRA.
+* El analizador de preparación para la nube (CRA) tiene una consola de estado de inicio que muestra una **Generar informe** para que el usuario haga clic en para ejecutar el CRA.
 
 * La interfaz de usuario de CRA muestra el progreso mientras se está ejecutando. Muestra los elementos que se analizan y los resultados encontrados durante la ejecución.
 
@@ -108,7 +108,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de la versi�
 
 * Botón agregado a la interfaz de usuario de CTT para recuperar *Token de acceso* fácilmente.
 
-* Se ha agregado un mensaje de validación descriptivo para *URL* y *Nombre del conjunto de migración*.
+* Se ha añadido un mensaje de validación descriptivo para *URL* y *Nombre del conjunto de migración*.
 
 ## Herramientas de refactorización de código {#code-refactoring}
 
@@ -120,6 +120,6 @@ Siga esta sección para conocer las novedades y las actualizaciones de las herra
 
    Consulte [Recurso de Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obtener más información.
 
-* La utilidad Modernizador del repositorio se puede usar para reestructurar los paquetes de proyectos existentes en paquetes compatibles con la estructura de proyectos definida para AEM como Cloud Service.
+* La utilidad Modernizador del repositorio se puede usar para reestructurar los paquetes de proyectos existentes en paquetes compatibles con la estructura de proyectos definida para AEM as a Cloud Service.
 
    Consulte [Recurso de Git: Modernizador de repositorio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) para obtener más información.
