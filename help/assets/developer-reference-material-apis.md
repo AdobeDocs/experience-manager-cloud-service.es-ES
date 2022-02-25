@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1744'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,7 +107,9 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -125,15 +127,30 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 
 ### Cargar binario {#upload-binary}
 
-El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente divide el binario en partes y realiza solicitudes de PUT de cada parte a cada URI, en orden. Utilice todas las URI. Asegúrese de que el tamaño de cada pieza esté dentro de los tamaños mínimo y máximo especificados en la respuesta de inicio. Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
+El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente puede dividir el binario en partes y realizar solicitudes de PUT de cada parte a los URI de carga proporcionados, en orden. Si decide dividir el binario en partes, asegúrese de seguir las siguientes directrices:
+* Cada pieza, excepto la última, deberá tener un tamaño bueno o igual a `minPartSize`.
+* Cada pieza debe tener un tamaño menor o igual que `maxPartSize`.
+* Si el tamaño del binario supera `maxPartSize`, debe dividir el binario en partes para cargarlo.
+* No es necesario que utilice todas las URI.
 
-Un método potencial para lograr esto es calcular el tamaño de la parte en función del número de URI de carga que proporcione la API. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes y el número de URI de carga es de 2. A continuación, siga estos pasos:
+Si el tamaño del binario es menor o igual que `maxPartSize`, puede cargar el binario completo en un único URI de carga. Si se proporciona más de un URI de carga, utilice el primero e ignore el resto. No es necesario que utilice todas las URI.
 
-* Calcule el tamaño de pieza dividiendo el tamaño total por número de URI: 20.000 / 2 = 10.000.
-* Intervalo de bytes del POST 0-9.999 del binario con el primer URI de la lista de URI de carga.
-* Intervalo de bytes del POST 10.000 - 19.999 del binario al segundo URI de la lista de URI de carga.
+Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
+
+La forma más sencilla de lograr esto es utilizar el valor de `maxPartSize` como su tamaño de pieza. El contrato de API garantiza que haya suficientes URI de carga para cargar el binario si utiliza este valor como tamaño de pieza. Para ello, divida el binario en partes de tamaño `maxPartSize`, utilizando un URI para cada parte, en orden. La parte final puede ser de cualquier tamaño menor o igual que `maxPartSize`. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes. `minPartSize` tiene 5000 bytes, `maxPartSize` tiene 8000 bytes y el número de URI de carga es de 5. A continuación, siga estos pasos:
+* Cargue los primeros 8000 bytes del binario utilizando el primer URI de carga.
+* Cargue los segundos 8000 bytes del binario utilizando el segundo URI de carga.
+* Cargue los últimos 4000 bytes del binario utilizando el tercer URI de carga. Como esta es la parte final, no necesita ser mayor que `minPartSize`.
+* No es necesario utilizar los dos últimos URI de carga. Ignóralos.
+
+Un error común es calcular el tamaño de la pieza en función del número de URI de carga que proporciona la API. El contrato de API no garantiza que este método funcione y, en realidad, puede dar como resultado tamaños de pieza que estén fuera del rango entre `minPartSize` y `maxPartSize`. Esto puede provocar errores de carga binaria.
+
+De nuevo, la manera más fácil y segura es simplemente usar partes del tamaño igual a `maxPartSize`.
 
 Si la carga se realiza correctamente, el servidor responde a cada solicitud con un `201` código de estado.
+
+>[!NOTE]
+Para obtener más información sobre el algoritmo de carga, consulte la [documentación oficial de la función](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) y [Documentación de API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) en el proyecto Apache Jackrabbit Oak.
 
 ### Carga completa {#complete-upload}
 
@@ -175,6 +192,7 @@ El nuevo método de carga solo es compatible con [!DNL Adobe Experience Manager]
 >[!MORELIKETHIS]
 * [Biblioteca de carga de aem de código abierto](https://github.com/adobe/aem-upload).
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
+* [Documentación de Apache Jackrabbit Oak para la carga directa](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Flujos de trabajo de procesamiento y posprocesamiento de recursos {#post-processing-workflows}
@@ -259,7 +277,7 @@ Los siguientes modelos técnicos de flujo de trabajo se sustituyen por microserv
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
