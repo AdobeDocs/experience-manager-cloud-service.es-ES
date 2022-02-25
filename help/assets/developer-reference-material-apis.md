@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1737'
 ht-degree: 2%
 
 ---
@@ -127,23 +127,25 @@ Se puede utilizar una sola solicitud para iniciar cargas para varios binarios, s
 
 ### Cargar binario {#upload-binary}
 
-El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente puede dividir el binario en partes y realizar solicitudes de PUT de cada parte a los URI de carga proporcionados, en orden. Si decide dividir el binario en partes, asegúrese de seguir las siguientes directrices:
+El resultado del inicio de una carga incluye uno o más valores de URI de carga. Si se proporciona más de un URI, el cliente puede dividir el binario en partes y realizar solicitudes de PUT de cada parte a los URI de carga proporcionados, en orden. Si decide dividir el binario en partes, siga las siguientes directrices:
+
 * Cada pieza, excepto la última, deberá tener un tamaño bueno o igual a `minPartSize`.
 * Cada pieza debe tener un tamaño menor o igual que `maxPartSize`.
-* Si el tamaño del binario supera `maxPartSize`, debe dividir el binario en partes para cargarlo.
+* Si el tamaño del binario supera `maxPartSize`, divida el binario en partes para cargarlo.
 * No es necesario que utilice todas las URI.
 
 Si el tamaño del binario es menor o igual que `maxPartSize`, puede cargar el binario completo en un único URI de carga. Si se proporciona más de un URI de carga, utilice el primero e ignore el resto. No es necesario que utilice todas las URI.
 
 Los nodos perimetrales de CDN ayudan a acelerar la carga solicitada de binarios.
 
-La forma más sencilla de lograr esto es utilizar el valor de `maxPartSize` como su tamaño de pieza. El contrato de API garantiza que haya suficientes URI de carga para cargar el binario si utiliza este valor como tamaño de pieza. Para ello, divida el binario en partes de tamaño `maxPartSize`, utilizando un URI para cada parte, en orden. La parte final puede ser de cualquier tamaño menor o igual que `maxPartSize`. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes. `minPartSize` tiene 5000 bytes, `maxPartSize` tiene 8000 bytes y el número de URI de carga es de 5. A continuación, siga estos pasos:
+La forma más sencilla de lograr esto es utilizar el valor de `maxPartSize` como su tamaño de pieza. El contrato de API garantiza que haya suficientes URI de carga para cargar el binario si utiliza este valor como tamaño de pieza. Para ello, divida el binario en partes de tamaño `maxPartSize`, utilizando un URI para cada parte, en orden. La parte final puede ser de cualquier tamaño menor o igual que `maxPartSize`. Por ejemplo, supongamos que el tamaño total del binario es de 20 000 bytes. `minPartSize` tiene 5000 bytes, `maxPartSize` tiene 8000 bytes y el número de URI de carga es de 5. Siga estos pasos:
+
 * Cargue los primeros 8000 bytes del binario utilizando el primer URI de carga.
 * Cargue los segundos 8000 bytes del binario utilizando el segundo URI de carga.
 * Cargue los últimos 4000 bytes del binario utilizando el tercer URI de carga. Como esta es la parte final, no necesita ser mayor que `minPartSize`.
-* No es necesario utilizar los dos últimos URI de carga. Ignóralos.
+* No es necesario utilizar los dos últimos URI de carga. Pueden ignorarlos.
 
-Un error común es calcular el tamaño de la pieza en función del número de URI de carga que proporciona la API. El contrato de API no garantiza que este método funcione y, en realidad, puede dar como resultado tamaños de pieza que estén fuera del rango entre `minPartSize` y `maxPartSize`. Esto puede provocar errores de carga binaria.
+Un error común es calcular el tamaño de la pieza en función del número de URI de carga que proporciona la API. El contrato de API no garantiza que este enfoque funcione y puede dar como resultado tamaños de pieza que estén fuera del rango entre `minPartSize` y `maxPartSize`. Esto puede provocar errores de carga binaria.
 
 De nuevo, la manera más fácil y segura es simplemente usar partes del tamaño igual a `maxPartSize`.
 
