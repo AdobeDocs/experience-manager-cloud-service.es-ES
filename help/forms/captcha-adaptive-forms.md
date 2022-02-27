@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ CAPTCHA (prueba de Turing pública completamente automatizada para distinguir en
 >
 >* [!DNL AEM Forms] solo compatible con reCaptcha v2. No se admite ninguna otra versión.
 >* CAPTCHA en Forms adaptable no es compatible con el modo sin conexión en [!DNL AEM Forms] aplicación.
-
 >
 
 
@@ -57,7 +56,7 @@ Para implementar el servicio reCAPTCHA en [!DNL AEM Forms]:
 
 1. Configure el servicio en la nube para reCAPTCHA.
 
-   1. En la instancia de autor de AEM, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. En la instancia de autor del Experience Manager, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Toque **[!UICONTROL reCAPTCHA]**. Se abre la página Configuraciones. Seleccione el contenedor de configuración creado en el paso anterior y pulse **[!UICONTROL Crear]**.
    1. Especifique el nombre, la clave del sitio y la clave secreta para el servicio reCAPTCHA y pulse **[!UICONTROL Crear]** para crear la configuración del servicio en la nube.
    1. En el cuadro de diálogo Editar componente , especifique el sitio y las claves secretas obtenidas en el paso 1. Toque **[!UICONTROL Guardar configuración]** y, a continuación, toque **[!UICONTROL OK]** para completar la configuración.
@@ -86,11 +85,14 @@ Para utilizar CAPTCHA en Forms adaptable:
 
 1. Seleccione el componente Captcha que ha agregado y pulse ![cmppr](assets/configure-icon.svg) para editar sus propiedades.
 1. Especifique un título para el widget CAPTCHA. El valor predeterminado es **[!UICONTROL Captcha]**. Select **[!UICONTROL Ocultar título]** si no desea que aparezca el título.
-1. En el **[!UICONTROL Servicio Captcha]** desplegable, seleccione **[!UICONTROL reCaptcha]** para habilitar el servicio reCAPTCHA si lo configuró como se describe en [Servicio ReCAPTCHA de Google](#google-recaptcha). Seleccione una configuración en la lista desplegable Configuración . Asimismo, seleccione el tamaño como **[!UICONTROL Normal]** o **[!UICONTROL Compacta]** para el widget reCAPTCHA.
+1. En el **[!UICONTROL Servicio Captcha]** desplegable, seleccione **[!UICONTROL reCaptcha]** para habilitar el servicio reCAPTCHA si lo configuró como se describe en [Servicio ReCAPTCHA de Google](#google-recaptcha). Seleccione una configuración en la lista desplegable Configuración .
+1. Seleccione el tipo como **[!UICONTROL Normal]** o **[!UICONTROL Compacta]** para el widget reCAPTCHA. También puede seleccionar el **[!UICONTROL Invisible]** para mostrar el desafío CAPTCHA solamente en el caso de una actividad sospechosa. El distintivo protegido por reCAPTCHA, mostrado a continuación, se muestra en los formularios protegidos.
+
+   ![Google procesado por una insignia reCAPTCHA](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >No seleccione **[!UICONTROL Predeterminado]** del menú desplegable del servicio Captcha, ya que el servicio AEM CAPTCHA predeterminado está obsoleto.
+   >No seleccione **[!UICONTROL Predeterminado]** del menú desplegable del servicio Captcha, ya que el servicio CAPTCHA Experience Manager predeterminado está obsoleto.
 
 1. Guarde las propiedades.
 
@@ -132,7 +134,7 @@ El siguiente es un ejemplo de `ValidateCAPTCHA` API para validar CAPTCHA con con
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+     GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
