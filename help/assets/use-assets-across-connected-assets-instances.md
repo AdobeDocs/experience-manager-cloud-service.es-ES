@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 19%
 
 ---
@@ -53,7 +53,7 @@ Los autores buscan imágenes y los siguientes tipos de documentos en el buscador
 A continuación se describen las distintas funciones que se usan para configurar y utilizar la capacidad y sus grupos de usuarios correspondientes. El ámbito local se utiliza para el caso de uso en el que un autor crea una página web. El ámbito remoto se utiliza para la implementación de DAM que aloja los recursos necesarios. La variable [!DNL Sites] author recupera estos recursos remotos.
 
 | Función | Ámbito | Grupo de usuarios | Requisito |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] administrador | Local | [!DNL Experience Manager] `administrators` | Configuración [!DNL Experience Manager] y configurar la integración con el [!DNL Assets] implementación. |
 | Usuario DAM | Local | `Authors` | Se utiliza para ver y duplicar los recursos recuperados en `/content/DAM/connectedassets/`. |
 | [!DNL Sites] author | Local | <ul><li>`Authors` (con acceso de lectura en el DAM remoto y acceso de autor en el [!DNL Sites]) </li> <li>`dam-users` en local [!DNL Sites]</li></ul> | Los usuarios finales son [!DNL Sites] autores que utilizan esta integración para mejorar la velocidad de contenido. Los autores pueden buscar y examinar recursos en DAM remoto mediante [!UICONTROL Buscador de contenido] y utilizando las imágenes necesarias en páginas web locales. |
@@ -136,7 +136,7 @@ Puede comprobar la conectividad entre los [!DNL Sites] implementaciones y [!DNL 
 
 Puede configurar una conexión entre [!DNL Sites] implementación y [!DNL Dynamic Media] implementación que permite a los autores de páginas web usar [!DNL Dynamic Media] imágenes en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos y remotos [!DNL Dynamic Media] las implementaciones siguen siendo las mismas. Esto le permite aprovechar el [!DNL Dynamic Media] a través de la función Recursos conectados, por ejemplo, ajustes preestablecidos de imagen y recorte inteligente.
 
-Con los recursos conectados, puede aprovechar la variable [!DNL Dynamic Media] para procesar recursos de imagen en la implementación remota de DAM.
+Con los recursos conectados, puede utilizar [!DNL Dynamic Media] para procesar recursos de imagen en la implementación remota de DAM.
 
 Para usar [!DNL Dynamic Media] imágenes de una implementación remota de DAM en una [!DNL Sites] implementación:
 
