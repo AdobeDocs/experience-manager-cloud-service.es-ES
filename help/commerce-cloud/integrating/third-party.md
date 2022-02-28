@@ -2,18 +2,17 @@
 title: AEM e Integraciones de comercio de terceros con Commerce Integration Framework
 description: Los negocios empresariales pueden requerir soluciones de comercio de terceros adicionales para impulsar su tienda. Commerce Integration Framework (CIF) se puede utilizar en estos escenarios de integración para conectar una solución de comercio de terceros a Adobe Experience Manager mediante I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
-exl-id: 42dd8922-540d-4a93-9e45-b5e83dc11e16
-translation-type: tm+mt
-source-git-commit: c0a79d9ffefba06b64d48aed79e9a00baa4987df
+exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
+source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 14%
+source-wordcount: '520'
+ht-degree: 11%
 
 ---
 
 # AEM e Integraciones de comercio de terceros con Commerce Integration Framework {#aem-third-party}
 
-La integración de soluciones de comercio que no son de Adobe es un escenario común para CIF. Las soluciones de terceros con diferentes API y esquemas se conectan mediante una capa de integración.
+La integración de soluciones que no son de Adobe Commerce es un escenario común para CIF. Las soluciones de terceros con diferentes API y esquemas se conectan mediante una capa de integración.
 
 ## Arquitectura {#architecture}
 
@@ -29,7 +28,7 @@ A medida que el Experience Manager recupera los datos bajo demanda, se requieren
 
 >[!TIP]
 >
->Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externa con API para la integración. Ejemplo de [Magento de código abierto](https://magento.com/products/magento-open-source).
+>Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externa con API para la integración. Ejemplo [Magento de código abierto](https://magento.com/products/magento-open-source).
 
 No es necesario implementar el esquema completo de GraphQL, solo los objetos del esquema para habilitar los casos de uso deseados.
 
@@ -41,14 +40,25 @@ La integración de las API del catálogo de productos es necesaria para desbloqu
 
 ## Casos de uso del front-end
 
-[AEM componentes principales del CIF ](https://github.com/adobe/aem-core-cif-components) recuperan e intercambian datos mediante las API de comercio de Adobe compatibles con CIF. Para reutilizar componentes, es necesario implementar las API correspondientes.
+[Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) recupere e e intercambie datos mediante las API de Adobe Commerce compatibles con CIF. Para reutilizar componentes, es necesario implementar las API correspondientes.
 
 La recomendación para los componentes críticos del cliente de rendimiento es comunicarse directamente con la solución de terceros para evitar la latencia.
 
 ## Desarrollo de una integración {#develop-integration}
 
-Se recomienda utilizar [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) para la capa de integración. Se incluye en el complemento CIF para terceros. Como funciona con un enfoque de microservicio, es adecuado para integrar fácilmente varias soluciones.
+Se recomienda usar [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) para la capa de integración. Se incluye en el complemento CIF para terceros. Como funciona con un enfoque de microservicio, es adecuado para integrar fácilmente varias soluciones.
 
-La [implementación de referencia](https://github.com/adobe/commerce-cif-graphql-integration-reference) es un bueno punto de partida para crear la integración en su solución de comercio. Aunque es compatible con GraphQL, también se puede integrar con cualquier otro tipo de API, como REST.
+La variable [implementación de referencia](https://github.com/adobe/commerce-cif-graphql-integration-reference) es un bueno punto de partida para integrar su solución de comercio. Aunque es compatible con GraphQL, también se puede integrar con cualquier otro tipo de API, como REST.
 
 Esta capa de integración no es necesaria si hay disponible una capa de terceros (por ejemplo, Mulesoft) o si la integración se genera sobre la solución de terceros.
+
+## Conectores pregenerados {#connectors}
+
+Los conectores proporcionan un buen comienzo para los proyectos. Incluyen una conexión específica de solución de comercio y una asignación de API predeterminada. Estos conectores son construidos por terceros y no mantenidos por Adobe. Póngase en contacto con el socio respectivo para obtener información.
+
+* [Comercio SAP](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construido por Diconium
+* [Herramientas comerciales](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construido por Diconium
+
+>[!TIP]
+>
+>Aunque los conectores ayudan a los proyectos a acelerar la integración comercial, no son complementos. Las soluciones de comercio empresarial generalmente están altamente personalizadas y requieren una integración personalizada. Se requiere un buen conocimiento de la plataforma comercial, los esquemas de Adobe Commerce GraphQL y Adobe I/O Runtime.
