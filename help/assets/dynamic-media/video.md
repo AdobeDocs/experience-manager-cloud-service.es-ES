@@ -1,12 +1,12 @@
 ---
 title: Vídeo en Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
+description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas recomendadas para codificar vídeos, publicar vídeos en YouTube, ver informes de vídeo y agregar subtítulos o marcadores de capítulo a vídeos.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 4%
 
 ---
@@ -123,8 +123,8 @@ Para administrar conjuntos de vídeos adaptables y de vídeo único, se admite l
 
 * Carga de vídeo desde numerosos formatos de vídeo y formatos de audio compatibles y codificación de vídeo al formato MP4 H.264 para su reproducción en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptable predefinidos, ajustes preestablecidos de codificación de vídeo único o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
 
-   * When an adaptive video set is generated, it includes MP4 videos.
-   * **Note**: Primary/source videos are not added to an Adaptive Video Set.
+   * Cuando se genera un conjunto de vídeos adaptables, incluye vídeos MP4.
+   * **Nota**: Los vídeos primarios/de origen no se agregan a un conjunto de vídeos adaptables.
 
 * Subtítulos de vídeo en todos los visualizadores de vídeo de HTML5.
 * Organice, examine y busque vídeos con compatibilidad para metadatos completa para una administración eficiente de los recursos de vídeo.
@@ -216,7 +216,7 @@ En la tabla siguiente se describe el dispositivo, el explorador y el método de 
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>Chrome (Android™ 6 or earlier)</td>
+   <td>Chrome (Android™ 6 o anterior)</td>
    <td>Descarga progresiva.</td>
   </tr>
   <tr>
@@ -310,7 +310,7 @@ En la tabla siguiente se describe cómo los resultados de la fórmula se traduce
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
-For example, a video that is 1440 width x 1080 height has an aspect ratio of 1440/1080, or 1.33. In this case, you choose a video encoding preset with a 4:3 aspect ratio to encode the video file.
+Por ejemplo, un vídeo con una anchura de 1440 x una altura de 1080 tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, se elige un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
 ### Velocidad de bits {#bitrate}
 
@@ -447,9 +447,6 @@ Google cambia periódicamente su interfaz de usuario. De este modo, los pasos pa
 
 1. En la página Tablero , a la derecha de **[!UICONTROL Google Cloud Platform]**, seleccione la lista desplegable Proyecto para abrir el **[!UICONTROL Seleccionar un proyecto]** para abrir el Navegador.
 1. En el **[!UICONTROL Seleccionar un proyecto]** cuadro de diálogo, seleccione **[!UICONTROL Nuevo proyecto]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. En el **[!UICONTROL Nuevo proyecto]** en el **[!UICONTROL Nombre del proyecto]** , escriba el nombre del nuevo proyecto.
 
    El ID del proyecto se basa en el nombre del proyecto. Como tal, elija cuidadosamente el nombre del proyecto; no se puede cambiar una vez creada. Además, debe volver a introducir el mismo ID de proyecto cuando configure YouTube en Experience Manager más adelante. Por lo tanto, escríbalo.
@@ -460,8 +457,6 @@ Google cambia periódicamente su interfaz de usuario. De este modo, los pasos pa
 
    * En el panel del proyecto, en la sección **[!UICONTROL Introducción]** tarjeta, seleccione **[!UICONTROL Explorar y habilitar API]**.
    * En el panel del proyecto, en la sección **[!UICONTROL API]** tarjeta, seleccione **[!UICONTROL Información general sobre las API]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Cerca del centro superior de la **[!UICONTROL API y servicios]** página, seleccione **[!UICONTROL HABILITAR API Y SERVICIOS]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. En el **[!UICONTROL Biblioteca de API]** página, a la izquierda, debajo de **[!UICONTROL Categoría]**, seleccione **[!UICONTROL YouTube]**. En el lado derecho de la página, seleccione **[!UICONTROL YouTube]**.
@@ -794,7 +789,7 @@ Para vincular URL de YouTube a su aplicación web:
 Cuando cancela la publicación de un recurso de vídeo en Experience Manager, el vídeo se elimina de YouTube.
 
 >[!CAUTION]
-Si elimina un vídeo directamente desde YouTube, el Experience Manager no lo sabe y sigue comportándose como si el vídeo aún se hubiera publicado en YouTube. Always unpublish a video asset from YouTube by way of Experience Manager.
+Si elimina un vídeo directamente desde YouTube, el Experience Manager no lo sabe y sigue comportándose como si el vídeo aún se hubiera publicado en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante el Experience Manager .
 
 >[!NOTE]
 Para eliminar contenido de YouTube, el Experience Manager utiliza la variable **[!UICONTROL Cancelar publicación desde YouTube]** flujo de trabajo, que permite controlar el progreso y ver la información de los errores.
@@ -807,9 +802,9 @@ Consulte [Monitorización de la codificación de vídeo y progreso de publicaci�
 1. En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**. Si es necesario, seleccione el icono de tres puntos (`. . .`) en la barra de herramientas para ver **[!UICONTROL Administrar publicación]**.
 1. En la página Administrar publicación , seleccione **[!UICONTROL Cancelar la publicación]**.
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Siguiente]**.
-1. In the upper-right corner of the page, select **[!UICONTROL Unpublish]**.
+1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Cancelar la publicación]**.
 
-## Monitor video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Monitorización de la codificación de vídeo y progreso de publicación de YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Cuando se carga un nuevo vídeo en una carpeta a la que se ha aplicado la codificación de vídeo o, se publica el vídeo en YouTube, se supervisa cómo progresa (o falla) la codificación de vídeo/publicación de YouTube. El progreso real de publicación de YouTube solo está disponible mediante los registros. Sin embargo, tanto si falla como si tiene éxito, se enumera de otras maneras descritas en el siguiente procedimiento. Además, recibe notificaciones por correo electrónico cuando se completa o interrumpe un flujo de trabajo de publicación o una codificación de vídeo de YouTube.
 
@@ -945,12 +940,12 @@ Una tabla de todas *publicado* Los vídeos también se muestran para que pueda r
 
 Al seleccionar un nombre de vídeo en la lista, se muestra el informe de retención de audiencia (desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas durante un momento determinado de la reproducción del vídeo. Cuando reproduce el vídeo, la barra vertical realiza el seguimiento en sincronización con el indicador de tiempo del reproductor. Las pérdidas en los datos del gráfico de líneas indican de dónde sale la audiencia del desinterés.
 
-If the video was encoded outside of Adobe Experience Manager Dynamic Media, the audience retention (drop-off) chart and the Play Percentage data in the table are not available.
+Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencia (desplegable) y los datos de Porcentaje de reproducción de la tabla no están disponibles.
 
 >[!NOTE]
 El seguimiento y los informes de datos se basan exclusivamente en el uso del propio reproductor de vídeo de Dynamic Media y el ajuste preestablecido de reproductor de vídeo asociado. Como tal, no puede rastrear vídeos que se reproducen mediante otros reproductores de vídeo ni crear informes de ellos.
 
-By default, the first time you enter Video Reports, the report displays video data starting at the first of the current month and ends with the current month&#39;s date. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. The next time you enter Video Reports, the date range you specified is used.
+De forma predeterminada, la primera vez que se introduce Informes de vídeo, el informe muestra datos de vídeo a partir del primer mes del mes actual y termina con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que introduzca Informes de vídeo, se utilizará el intervalo de fechas especificado.
 
 Para que los informes de vídeo funcionen correctamente, se crea automáticamente un ID de grupo de informes cuando se configuran los Cloud Services de Dynamic Media. Al mismo tiempo, la ID del grupo de informes se envía al servidor de publicación, de modo que esté disponible para la función Copiar URL cuando se previsualizan los recursos. Sin embargo, esta funcionalidad requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, debe volver a la Configuración de Dynamic Media Cloud y seleccionar **[!UICONTROL OK]**.
 
@@ -1123,7 +1118,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-En el ejemplo anterior, `Chapter 1` es el identificador de referencia y es opcional. El tiempo de referencia de `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en `00:00:000` formato. Los tres últimos dígitos son milisegundos y se pueden dejar como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the timeline.
+En el ejemplo anterior, `Chapter 1` es el identificador de referencia y es opcional. El tiempo de referencia de `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en `00:00:000` formato. Los tres últimos dígitos son milisegundos y se pueden dejar como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. El identificador de referencia, el tiempo de referencia de inicio y el título del capítulo aparecen en una ventana emergente del reproductor de vídeo cuando un usuario pasa el puntero del ratón sobre un punto de referencia visual de la cronología.
 
 Como está utilizando un visor de vídeo de HTML5, asegúrese de que el archivo de capítulo que cree sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo del capítulo es .VTT. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
