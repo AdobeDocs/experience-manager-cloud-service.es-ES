@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
+source-git-commit: 8457a6eb81b5d28c264e7f75793724b40fe7eb1d
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 19%
@@ -266,7 +266,7 @@ Puede conectar una implementación remota de DAM a un [!DNL Sites] después de c
 
 ### ¿Puede utilizar los recursos de Dynamic Media desde su [!DNL Sites] implementación después de configurar los recursos conectados?
 
-Después de configurar los recursos conectados, [!DNL Dynamic Media] los recursos están disponibles en [!DNL Sites] implementación en modo de solo lectura. Como resultado, no puede usar [!DNL Dynamic Media] para procesar recursos en la variable [!DNL Sites] implementación. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#sites-dynamic-media-connected-assets).
+Después de configurar los recursos conectados, [!DNL Dynamic Media] los recursos están disponibles en [!DNL Sites] implementación en modo de solo lectura. Como resultado, no puede usar [!DNL Dynamic Media] para procesar recursos en la variable [!DNL Sites] implementación. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#dynamic-media-assets).
 
 ### ¿Puede utilizar recursos de tipos de formato de imagen y documento desde la implementación remota de DAM en la [!DNL Sites] implementación después de configurar los recursos conectados?
 
@@ -278,7 +278,7 @@ No, no se pueden usar fragmentos de contenido y recursos de vídeo desde la impl
 
 ### ¿Puede utilizar recursos de Dynamic Media desde la implementación remota de DAM en la [!DNL Sites] implementación después de configurar los recursos conectados?
 
-Sí, puede configurar y utilizar recursos de Dynamic Media desde la implementación remota de DAM en la [!DNL Sites] después de configurar los recursos conectados. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#sites-dynamic-media-connected-assets).
+Sí, puede configurar y utilizar recursos de Dynamic Media desde la implementación remota de DAM en la [!DNL Sites] después de configurar los recursos conectados. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#dynamic-media-assets).
 
 ### Después de configurar los recursos conectados, ¿puede realizar las operaciones de actualización, eliminación, cambio de nombre y movimiento en los recursos o carpetas DAM remotos?
 
