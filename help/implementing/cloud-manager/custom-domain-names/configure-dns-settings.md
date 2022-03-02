@@ -2,10 +2,10 @@
 title: 'Configuración de DNS '
 description: Configuración de DNS
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
+source-git-commit: 016954bc712a135886a6031deba05d92e7d5099c
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ Los pasos siguientes deben completarse como se indica en la tabla siguiente:
 
 | Etapa |  | Responsabilidad | Más información |
 |--- |--- |--- |---|
-| Agregar certificado SLL | Agregar certificado SLL | Cliente | [Adición de un certificado SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| Añadir certificado SSL | Añadir certificado SSL | Cliente | [Adición de un certificado SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
 | Verificación del dominio | Añadir registro TXT | Cliente | [Adición de un registro TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
 | Revisar estado de verificación del dominio |  | Cliente |  |
 |  | Estado: Error de verificación del dominio | Cliente | [Comprobación del estado del nombre de dominio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
