@@ -1,10 +1,10 @@
 ---
 title: Ingesta de contenido en Target
 description: Ingesta de contenido en Target
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 28%
+source-wordcount: '527'
+ht-degree: 31%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 28%
 
 Siga los pasos a continuación para ingerir el conjunto de migración de la herramienta de transferencia de contenido:
 >[!NOTE]
->Si se utiliza Amazon S3 o Azure Data Store como tipo de almacén de datos, puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obtener más información.
+>Puede ejecutar el paso de precopia opcional para acelerar significativamente la fase de ingesta. Consulte [Ingesta con AzCopy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) para obtener más información.
 
 1. Seleccionar un conjunto de migraciones de **Transferencia de contenido** página y haga clic en **Ingesta** para iniciar la ingesta.
 
