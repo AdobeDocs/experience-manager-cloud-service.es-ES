@@ -1,95 +1,95 @@
 ---
-title: Administrar extremos de GraphQL en AEM
-description: Aprenda a administrar los extremos de GraphQL en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
+title: Administración de puntos de conexión de GraphQL en AEM
+description: Aprenda a administrar los puntos de conexión de GraphQL en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
-# Administrar extremos de GraphQL en AEM {#graphql-aem-endpoint}
+# Administración de puntos de conexión de GraphQL en AEM {#graphql-aem-endpoint}
 
-El punto final es la ruta utilizada para acceder a GraphQL para AEM. Al utilizar esta ruta, usted (o su aplicación) pueden:
+El punto de conexión es la ruta utilizada para acceder a GraphQL para AEM. Al utilizar esta ruta, usted (o su aplicación) puede hacer lo siguiente:
 
 * acceder al esquema de GraphQL,
-* envíe sus consultas de GraphQL,
-* reciba las respuestas (a sus consultas de GraphQL).
+* enviar sus consultas de GraphQL,
+* recibir las respuestas (a sus consultas de GraphQL).
 
-Hay dos tipos de extremos en AEM:
+Hay dos tipos de puntos de conexión en AEM:
 
-* Global
-   * Disponible para su uso en todos los sitios.
-   * Este extremo puede utilizar todos los modelos de fragmento de contenido de todas las configuraciones de sitios (definidas en la variable [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
-   * Si hay algún modelo de fragmento de contenido que debería compartirse entre las configuraciones de Sitios, estos deberían crearse en las configuraciones globales de Sitios.
-* Configuraciones de sitios:
-   * Corresponde a una configuración de Sites, tal como se define en la variable [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
-   * Específico de un sitio o proyecto especificado.
-   * Un extremo específico de la configuración de Sitios usará los modelos de fragmento de contenido de esa configuración de Sitios específica junto con los de la configuración de Sitios global.
+* Globales
+   * Disponibles para su uso en todos los sitios.
+   * Este punto de conexión puede utilizar todos los modelos de fragmento de contenido de todas las configuraciones de sitios (definidas en el [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
+   * Si hay algún modelo de fragmento de contenido que debería compartirse entre las configuraciones de Sites, estos deberían crearse en las configuraciones globales de Sites.
+* Configuraciones de Sites:
+   * Corresponde a una configuración de Sites, tal como se define en el [Explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
+   * Específico de un sitio o proyecto concreto.
+   * Un punto de conexión específico de la configuración de Sites usará los modelos de fragmento de contenido de esa configuración de Sites específica junto con los de la configuración de Sites global.
 
 >[!CAUTION]
 >
->El editor de fragmentos de contenido puede permitir que un fragmento de contenido de una configuración de sitios haga referencia a un fragmento de contenido de otra configuración de sitios (a través de políticas).
+>El editor de fragmentos de contenido puede permitir que un fragmento de contenido de una configuración de Sites haga referencia a un fragmento de contenido de otra configuración de Sites (a través de políticas).
 >
->En tal caso, no todo el contenido se podrá recuperar mediante un punto final específico de configuración de Sites.
+>En tal caso, no todo el contenido se podrá recuperar mediante un punto de conexión específico de configuración de Sites.
 >
->El autor del contenido debe controlar este escenario; por ejemplo, puede resultar útil considerar la posibilidad de colocar los modelos de fragmento de contenido compartido en la configuración de sitios globales.
+>El autor del contenido debe controlar este escenario; por ejemplo, puede resultar útil considerar la posibilidad de colocar los modelos de fragmento de contenido compartido en la configuración de Sites global.
 
-La ruta del repositorio de GraphQL para AEM punto final global es:
+La ruta del repositorio del punto de conexión global de GraphQL para AEM es la siguiente:
 
 `/content/cq:graphql/global/endpoint`
 
-Para el cual su aplicación puede utilizar la siguiente ruta en la dirección URL de la solicitud:
+Para lo cual su aplicación puede utilizar la siguiente ruta en la dirección URL de la solicitud:
 
 `/content/_cq_graphql/global/endpoint.json`
 
-Para habilitar un punto final para GraphQL para AEM, debe:
+Para habilitar un punto de conexión para GraphQL para AEM, debe hacer lo siguiente:
 
-* [Habilitar el extremo de GraphQL](#enabling-graphql-endpoint)
-* [Publicar el extremo de GraphQL](#publishing-graphql-endpoint)
+* [Habilitar el punto de conexión de GraphQL](#enabling-graphql-endpoint)
+* [Publicar el punto de conexión de GraphQL](#publishing-graphql-endpoint)
 
-## Activación del extremo de GraphQL {#enabling-graphql-endpoint}
+## Activación del punto de conexión de GraphQL {#enabling-graphql-endpoint}
 
-Para habilitar un extremo de GraphQL, primero debe tener una configuración adecuada. Consulte [Fragmentos de contenido: navegador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+Para habilitar un punto de conexión de GraphQL, primero debe tener una configuración adecuada. Consulte [Fragmentos de contenido: explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 
 >[!CAUTION]
 >
->Si la variable [no se ha habilitado el uso de modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-configuration-browser.md), el **Crear** no estará disponible.
+>Si [no se ha habilitado el uso de modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-configuration-browser.md), la opción **Crear** no estará disponible.
 
-Para habilitar el punto final correspondiente:
+Para habilitar el punto de conexión correspondiente:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, seleccione **GraphQL**.
+1. Vaya a **Herramientas**, **Assets** y, a continuación, seleccione **GraphQL**.
 1. Seleccione **Crear**.
-1. La variable **Crear nuevo extremo de GraphQL** se abrirá. Aquí puede especificar:
-   * **Nombre**: nombre del extremo; puede escribir cualquier texto.
+1. El diálogo **Crear nuevo punto de conexión de GraphQL** se abrirá. Aquí puede especificar lo siguiente:
+   * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
    * **Utilice el esquema GraphQL proporcionado por**: utilice la lista desplegable para seleccionar el sitio o proyecto requerido.
 
    >[!NOTE]
    >
    >La siguiente advertencia se muestra en el cuadro de diálogo:
    >
-   >* *Los extremos de GraphQL pueden introducir problemas de rendimiento y seguridad de datos si no se administran con cuidado. Asegúrese de definir los permisos adecuados después de crear un extremo.*
+   >* *Los puntos de conexión de GraphQL pueden introducir problemas de rendimiento y seguridad de datos si no se administran con cuidado. Asegúrese de definir los permisos adecuados después de crear un punto de conexión.*
 
 
 1. Confirme con **Crear**.
-1. La variable **Pasos siguientes** proporciona un vínculo directo a la consola de seguridad para que pueda asegurarse de que el extremo recién creado tenga los permisos adecuados.
+1. El diálogo **Pasos siguientes** proporciona un vínculo directo a la consola de seguridad para que pueda cerciorarse de que el punto de conexión recién creado tenga los permisos adecuados.
 
    >[!CAUTION]
    >
-   >El punto final es accesible para todos. Esto puede suponer un problema de seguridad, especialmente en las instancias de publicación, ya que las consultas de GraphQL pueden imponer una carga pesada en el servidor.
+   >El punto de conexión es accesible para todos. Esto puede suponer un problema de seguridad, especialmente en las instancias de publicación, ya que las consultas de GraphQL pueden imponer una carga pesada en el servidor.
    >
-   >Puede configurar ACL, según su caso de uso, en el punto final.
+   >Puede configurar ACL, según su caso de uso, en el punto de conexión.
 
-## Publicación del extremo de GraphQL {#publishing-graphql-endpoint}
+## Publicación del punto de conexión de GraphQL {#publishing-graphql-endpoint}
 
-Seleccione el nuevo punto final y **Publicación** para que esté totalmente disponible en todos los entornos.
+Seleccione el nuevo punto de conexión y **Publicación** para que esté totalmente disponible en todos los entornos.
 
 >[!CAUTION]
 >
->El punto final es accesible para todos.
+>El punto de conexión es accesible para todos.
 >
 >En instancias de publicación esto puede suponer un problema de seguridad, ya que las consultas de GraphQL pueden imponer una carga pesada en el servidor.
 >
->Debe configurar [ACL adecuados para su caso de uso](/help/headless/security/permissions.md) en el punto final.
+>Debe configurar [ACL adecuados para su caso de uso](/help/headless/security/permissions.md) en el punto de conexión.
