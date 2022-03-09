@@ -1,45 +1,42 @@
 ---
 title: Acceso a repositorios
-seo-title: Accessing Repositories
-description: Esta página describe cómo puede acceder y administrar el repositorio Git.
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: Obtenga información sobre cómo acceder y administrar su repositorio de Git mediante la administración de cuentas de Git de autoservicio desde Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '229'
+ht-degree: 1%
 
 ---
 
 # Acceso a repositorios {#accessing-repos}
 
-Puede acceder a su repositorio Git y administrarlo mediante la administración de cuentas Git de autoservicio desde la interfaz de usuario de Cloud Manager.
+Obtenga información sobre cómo acceder y administrar su repositorio de Git mediante la administración de cuentas de Git de autoservicio desde Cloud Manager.
 
-## Uso de la administración de cuentas de repositorios de autoservicio {#self-service-repos}
+## Uso de la Administración de Cuentas de Repositorio de Autoservicio {#self-service-repos}
 
-Utilice el botón **Access Repo Info** disponible en la interfaz de usuario de Cloud Manager, de forma más destacada en la tarjeta de canalización.
+Cloud Manager facilita la recuperación de la información del repositorio mediante el uso de la variable **Acceder a información de repositorios** botón disponible de forma destacada en la tarjeta de canalización.
 
-1. Vaya a la tarjeta **Canalizaciones** desde la página **Información general del programa**.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
-1. Verá la opción **Access Repo Info** para acceder y administrar su repositorio Git.
+1. Vaya a **Canalizaciones** tarjeta de su **Información general del programa** y busque **Acceder a información de repositorios** para acceder y administrar su Repositorio de Git.
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Botón Acceder a Información de Repositorio en la tarjeta Entornos](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   Además, si selecciona la pestaña **Non-Production** canalización, también verá la opción **Access Repo Info**.
+1. Haga clic en el **Ver información de repositorios** para abrir un cuadro de diálogo para ver:
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >La opción **Access Repo Info** es visible para los usuarios con la función de Desarrollador o Administrador de implementación. Al hacer clic en este botón, se abre un cuadro de diálogo que permite al usuario encontrar la URL de su repositorio Git de Cloud Manager junto con su nombre de usuario y contraseña.
+   * Dirección URL del repositorio de Git de Cloud Manager.
+   * El nombre de usuario de Git.
+   * La contraseña de Git, cuyo valor se muestra cuando se usa la variable **Generar contraseña** se hace clic en el botón .
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   Las consideraciones importantes para administrar su Git en Cloud Manager son:
+Con estas credenciales, el usuario puede clonar una copia local del repositorio y realizar cambios en ese repositorio local, y cuando esté listo, puede volver a enviar cualquier cambio de código al repositorio de código remoto en Cloud Manager.
 
-   * **URL**: La URL del repositorio
-   * **Nombre de usuario**: El nombre de usuario
-   * **Contraseña**: Valor que se muestra cuando se hace clic en el botón **Generar contraseña**.
+La variable **Acceder a información de repositorios** también está disponible en la **No producción** la pestaña canalización de **Canalizaciones** tarjeta.
 
+![Botón Acceder a Información de Repositorio en la ficha que no es de producción](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >Un usuario puede extraer una copia de su código y realizar cambios en el repositorio de código local. Cuando esté listo, el usuario puede devolver los cambios de código al repositorio de código remoto en Cloud Manager.
+>[!NOTE]
+>
+>La variable **Acceder a información de repositorios** es visible para los usuarios con **Desarrollador** o **Administrador de implementación** funciones.

@@ -1,61 +1,62 @@
 ---
-title: 'Administrar registros: Cloud Service'
-description: 'Administrar registros: Cloud Service'
+title: Acceder y administrar registros
+description: Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 14%
+source-wordcount: '272'
+ht-degree: 7%
 
 ---
 
+
 # Acceder y administrar registros {#manage-logs}
 
-Los usuarios pueden acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la tarjeta **Environments** de la página **Overview** o la página Environment Details (Detalles del entorno).
+Obtenga información sobre cómo acceder y administrar registros para ayudarle en el proceso de desarrollo en AEM as a Cloud Service.
+
+Puede acceder a una lista de archivos de registro disponibles para el entorno seleccionado mediante la **Entornos** de la **Información general** página o página Detalles del entorno .
 
 ## Descarga de registros {#download-logs}
 
-Siga los pasos a continuación para descargar registros.
+Siga estos pasos para descargar registros.
 
-1. Vaya a la tarjeta **Environments** desde la página **Overview**.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
-1. Seleccione **Download Logs** de **...**.
+1. Vaya a la **Entornos** de la **Información general** página.
 
-   ![](assets/download-logs1.png)
+1. Select **Registros de descarga** en el menú elipsis.
 
-   *O bien*,
+   ![Elemento de menú Registros de descarga](assets/download-logs1.png)
 
-   Desde la página Detalles del entorno :
+1. En el **Registros de descarga** , seleccione el **Servicio** en el menú desplegable
 
-   ![](assets/download-logs.png)
+   ![Cuadro de diálogo Descargar registros](assets/download-preview.png)
 
-   >[!NOTE]
-   >Independientemente de dónde se abra, aparece el mismo cuadro de diálogo y permite descargar un archivo de registro individual.
+1. Una vez que seleccione el servicio, haga clic en el icono de descarga situado junto al registro que desea recuperar.
 
-1. En el menú desplegable **Service**, seleccione opciones como **Preview** o **Preview Dispatcher**, seguido de hacer clic en el icono de descarga.
+También puede acceder a sus registros desde el **Entornos** página.
 
-   ![](assets/download-preview.png)
+![Registros de la pantalla Entornos](assets/download-logs.png)
 
+## Registros a través de la API {#logs-through-api}
 
-## Registros a través de API {#logs-through-api}
+Además de descargar registros a través de la interfaz de usuario, los registros están disponibles a través de la API y la interfaz de la línea de comandos.
 
-Además de descargar registros a través de la interfaz de usuario, los registros estarán disponibles a través de la API y la interfaz de la línea de comandos.
+Para descargar los archivos de registro para un entorno específico, el comando sería similar al siguiente.
 
-Por ejemplo, para descargar los archivos de registro de un entorno específico, el comando debería estar en las líneas de
-
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-El siguiente comando permite adaptar los registros:
+También puede rastrear registros a través de la interfaz de la línea de comandos.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Para obtener el ID de entorno (1884 en este caso) y las opciones de servicio o nombre de registro disponibles, puede utilizar:
+Para obtener el ID de entorno (1884 en este ejemplo) y las opciones de servicio o nombre de registro disponibles, puede utilizar los siguientes comandos.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->Mientras que las **descargas de registro** estarán disponibles a través de la interfaz de usuario y la API, el **Seguimiento de registros** es solo API/CLI.
 
 ### Recursos adicionales {#resources}
 

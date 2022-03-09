@@ -1,51 +1,51 @@
 ---
-title: 'Informes de SLA: Cloud Service'
-description: 'Informes de SLA: Cloud Service'
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+title: Creación de informes de SLA
+description: Aprenda a ver el rendimiento de su entorno de AEM de producción en relación con el contrato de contrato de nivel de servicio (SLA).
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 0%
+source-wordcount: '248'
+ht-degree: 2%
 
 ---
 
-# Informes de SLA {#sla-reporting}
 
-Siga las secciones a continuación para obtener más información sobre los informes de SLA en AEM as a Cloud Service.
+# Creación de informes de SLA {#sla-reporting}
+
+Aprenda a ver el rendimiento de su entorno de AEM de producción en relación con el contrato de contrato de nivel de servicio (SLA).
 
 ## Introducción {#introduction}
 
-Los clientes pueden ver el rendimiento de su entorno de AEM de producción en relación con su contrato de contrato de nivel de servicio (SLA). Esta opción está disponible a través de un menú en la ficha Informes , desde el encabezado principal.
+Los datos de informes de SLA están disponibles para cada programa de producción a través de la variable **Informes** pestaña . Siga estos pasos para acceder.
 
-Siga el ejemplo siguiente, que es un gráfico que muestra los logros mensuales de SLA para 2021.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
 
-![](assets/sla-reporting-1.png)
+1. Vaya a la **Informes** en la ficha **Información general** página.
 
+1. Haga clic en el año deseado para ver los datos de SLA graficados.
 
-Al pasar el ratón por encima de un punto de datos, se muestran los valores específicos de ese mes.
+![Ejemplo de gráfico de SLA](assets/sla-reporting-1.png)
 
-![](assets/sla-reporting-b.png)
+Desplace el cursor sobre un punto de datos para mostrar los valores específicos de ese punto.
 
->[!NOTE]
->Estos informes se pondrán a disposición de los clientes de forma progresiva. Si no ve la opción Informes en la navegación principal, póngase en contacto con el representante de Adobes para saber cuándo estarán disponibles los informes.
-
-La sección Análisis de eventos bajo este gráfico muestra el conjunto de incidentes que ocurrieron para el programa durante el año seleccionado actualmente.
-
-Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios, como se muestra en la figura siguiente.
-
-![](assets/sla-reporting-c.png)
-
+![Visualización de datos detallados](assets/sla-reporting-b.png)
 
 ## Métricas de SLA {#sla-metrics}
 
-* **Publicar**
-contrato de nivelEs el SLA definido en su contrato con Adobe para el nivel de publicación.
+El gráfico del año seleccionado incluye varios conjuntos de datos.
 
-* **Nivel de publicación**
-realEs el tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por Adobes o nuestros proveedores.
+* **Publicar contrato de nivel** - Este es el SLA definido en su contrato con Adobe para el nivel de publicación.
 
-* **Contrato de nivel de**
-AuthorEste es el SLA definido en su contrato con Adobe para el nivel de Author.
+* **Publicar nivel real** - Este es el tiempo de actividad medido de los incidentes de factorización del nivel de publicación de producción causados por los proveedores de Adobes o Adobes.
 
-* **Nivel de Author**
-ActualEs el tiempo de actividad medido de los incidentes de factoring de nivel de Author de producción causados por el Adobe o nuestros proveedores.
+* **Contrato de nivel de Author** - Este es el SLA definido en su contrato con Adobe para el nivel de Author.
 
+* **Nivel de Author Real** - Este es el tiempo de actividad medido de los incidentes de factorización de nivel de autor de producción causados por los proveedores de Adobes o Adobes.
+
+## Análisis de eventos {#event-analysis}
+
+La variable **Análisis de eventos** en el gráfico se muestra el conjunto de incidentes ocurridos para el programa durante el año seleccionado.
+
+Cada incidente tiene un intervalo de tiempo, una causa y un conjunto de comentarios.
+
+![Ejemplo de análisis de eventos](assets/sla-reporting-c.png)

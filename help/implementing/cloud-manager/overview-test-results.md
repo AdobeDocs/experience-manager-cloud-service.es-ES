@@ -1,39 +1,39 @@
 ---
-title: 'Información general sobre los resultados de la prueba: Cloud Services'
-description: 'Información general sobre los resultados de la prueba: Cloud Services'
-translation-type: tm+mt
-source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
+title: Información general sobre las pruebas de Cloud Manager
+description: Obtenga información general sobre los tres tipos de pruebas que Cloud Manager ejecuta automáticamente para garantizar la calidad del código personalizado.
+exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 0%
+source-wordcount: '154'
+ht-degree: 5%
 
 ---
 
 
-# Información general {#overview}
+# Información general sobre las pruebas de Cloud Manager {#overview}
 
-Existen tres categorías generales de pruebas admitidas por Cloud Manager for Cloud Services Pipeline:
+Existen tres categorías de pruebas compatibles con las canalizaciones de Cloud Manager para Cloud Services.
 
 1. [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
 
-   La prueba de calidad del código evalúa la calidad del código de la aplicación. El flujo de calidad del código se ejecuta inmediatamente después del paso de generación en todos los gasoductos que no sean de producción y producción.
+   * Las pruebas de calidad del código evalúan la calidad del código de la aplicación.
+   * La canalización de calidad del código se ejecuta inmediatamente después del paso de compilación en todas las canalizaciones que no sean de producción y .
+   * La variable [reglas de calidad de código personalizadas](/help/implementing/cloud-manager/custom-code-quality-rules.md) ejecutado por Cloud Manager se crean en función de las prácticas recomendadas de AEM Engineering.
 
-   Las [Reglas de calidad de código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md) ejecutadas por Cloud Manager se crean en base a las optimizaciones de AEM ingeniería.
+1. [Pruebas funcionales](/help/implementing/cloud-manager/functional-testing.md)
 
-1. [Prueba funcional](/help/implementing/cloud-manager/functional-testing.md)
+   * Las pruebas funcionales forman parte de la fase de prueba de fase de una canalización de producción.
 
-   La prueba funcional forma parte de la fase de prueba de una canalización de producción.
+1. [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-1. [Prueba de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md)
-
-   La prueba de auditoría de experiencias está habilitada en todas las tuberías de producción de Cloud Manager y no se puede omitir.
+   * Las pruebas de auditoría de experiencia están habilitadas en todas las canalizaciones de producción de Cloud Manager y no se pueden omitir.
 
 Estas pruebas pueden ser:
 
 * Escrito por el cliente
-* Escrito en Adobe
-* Herramienta de código abierto
+* Adobe escrito
+* Creado con herramientas de código abierto
 
-   >[!NOTE]
-   > Tanto las pruebas escritas por el cliente como las pruebas por Adobe se ejecutan en una infraestructura de contenedores diseñada para ejecutar estos tipos de pruebas.
-
+>[!NOTE]
+>
+> Tanto las pruebas escritas por el cliente como las pruebas escritas por el Adobe se ejecutan en una infraestructura contenedorizada diseñada para ejecutar dichas pruebas.

@@ -1,82 +1,86 @@
 ---
-title: 'Implementar el código: Cloud Services'
-description: 'Implementar el código: Cloud Services'
+title: Implementación del código
+description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
+source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 2%
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
-# Implementar el código {#deploy-your-code}
 
-## Implementación de código con Cloud Manager en AEM as a Cloud Service {#deploying-code-with-cloud-manager}
+# Implementación del código {#deploy-your-code}
 
-Una vez configurada la canalización de producción (repositorio, entorno y entorno de prueba), estará listo para implementar el código.
+Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 
-1. Haga clic en **Implementar** desde Cloud Manager para iniciar el proceso de implementación.
+## Implementación del código con Cloud Manager en AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-   ![](assets/deploy-code1.png)
+Una vez que haya [configuró la canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) incluido el repositorio, el entorno y el entorno de prueba, está listo para implementar su código.
 
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-1. Aparece la pantalla **Pipeline Execution**.
+1. Haga clic en el programa para el que desea implementar el código.
 
-   Haga clic en **Build** para iniciar el proceso.
+1. Haga clic en **Implementación** de la llamada a la acción en la variable **Información general** para iniciar el proceso de implementación.
 
-   ![](assets/deploy-code2.png)
+   ![CTA](assets/deploy-code1.png)
 
-1. El proceso de compilación completa implementa el código.
+1. La variable **Ejecución de canalización** se abre. Haga clic en **Generar** para iniciar el proceso.
 
-   En el proceso de compilación participan las siguientes etapas:
+   ![Pantalla de ejecución de canalización](assets/deploy-code2.png)
 
-   1. Implementación de fase
-   1. Prueba de prueba
-   1. Implementación de producción
+El proceso de compilación implementa el código en tres fases.
 
-   >[!NOTE]
-   >
-   >Además, puede revisar los pasos de varios procesos de implementación consultando los registros o revisando los resultados de los criterios de prueba.
+1. [Implementación de fase](#stage-deployment)
+1. [Prueba de prueba](#stage-testing)
+1. [Implementación de producción](#production-deployment)
 
-   La **implementación por fases** incluye los siguientes pasos:
+>[!TIP]
+>
+>Puede revisar los pasos de varios procesos de implementación consultando los registros o revisando los resultados de los criterios de prueba.
 
-   * Validación: Este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente, por ejemplo, que la rama configurada exista, los entornos estén disponibles.
-   * Prueba de compilación y unidad: Este paso ejecuta un proceso de compilación en contenedores. Consulte [Detalles del entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
-   * Escaneo de código: Este paso evalúa la calidad del código de la aplicación. Consulte [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
-   * Generar imágenes: Este paso tiene un archivo de registro del proceso utilizado para crear imágenes. Este proceso es responsable de transformar el contenido y los paquetes de Dispatcher producidos por el paso de compilación en imágenes de Docker y configuración de Kubernetes.
-   * Implementar en fase
+## Fase de implementación de fase {#stage-deployment}
 
-      ![](assets/stage-deployment.png)
-   La **prueba de fase** incluye los siguientes pasos:
+La variable **Implementación de fase** fase. implica estos pasos.
 
-   * **Prueba funcional del producto**: Las ejecuciones de canalización de Cloud Manager admitirán la ejecución de pruebas que se ejecuten con el entorno de ensayo.
-Consulte [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obtener más información.
+* **Validación**  : este paso garantiza que la canalización esté configurada para utilizar los recursos disponibles actualmente. Por ejemplo, probar que la rama configurada existe y que los entornos están disponibles.
+* **Prueba de compilación y unidad** - Este paso ejecuta un proceso de compilación en contenedores.
+   * Consulte el documento [Generar detalles del entorno](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obtener más información sobre el entorno de compilación.
+* **Escaneo de código** - Este paso evalúa la calidad del código de la aplicación.
+   * Consulte el documento [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información sobre el proceso de prueba.
+* **Crear imágenes** - Este proceso es responsable de transformar el contenido y los paquetes de Dispatcher producidos por el paso de compilación en imágenes Docker y configuraciones de Kubernetes.
+* **Implementar en fase** - La imagen se implementa en el entorno de ensayo como preparación para la [Etapa de prueba de fase.](#stage-testing)
 
-   * **Prueba funcional personalizada**: Este paso en la canalización siempre está presente y no se puede omitir. Sin embargo, si la compilación no produce ningún JAR de prueba, la prueba pasa de forma predeterminada.\
-      Consulte [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
+![Implementación de fase](assets/stage-deployment.png)
 
-   * **Pruebas** de IU personalizadas: Este paso es una función opcional que permite a nuestros clientes crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium).
-Consulte [Pruebas de IU personalizadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing) para obtener más información.
+## Fase de prueba de fase {#stage-testing}
 
+La variable **Prueba de fase** incluye estos pasos.
 
-   * **Auditoría de experiencias**: Este paso en la canalización siempre está presente y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones. Las páginas configuradas se enviarán al servicio y se evaluarán. Los resultados son informativos y permiten al usuario ver las puntuaciones y el cambio entre las puntuaciones actual y anterior. Esta perspectiva es valiosa para determinar si hay una regresión que se introducirá con la implementación actual.
-Consulte [Explicación de los resultados de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+* **Prueba funcional del producto** : la canalización de Cloud Manager ejecuta pruebas que se ejecutan en el entorno de ensayo.
+   * Consulte el documento [Prueba funcional del producto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) para obtener más información.
 
-      ![](assets/stage-testing.png)
+* **Pruebas funcionales personalizadas** - Este paso en la canalización siempre se ejecuta y no se puede omitir. Si la compilación no produce JAR de prueba, la prueba pasa de forma predeterminada.
+   * Consulte el documento [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) para obtener más información.
 
+* **Pruebas de IU personalizadas** : Este paso es una función opcional que ejecuta automáticamente las pruebas de IU creadas para aplicaciones personalizadas.
+   * Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium).
+   * Consulte el documento [Pruebas de IU personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obtener más información.
 
+* **Auditoría de experiencias** - Este paso en la canalización siempre se ejecuta y no se puede omitir. A medida que se ejecuta una canalización de producción, se incluye un paso de auditoría de experiencias después de realizar pruebas funcionales personalizadas que ejecutarán las comprobaciones.
+   * Las páginas configuradas se envían al servicio y se evalúan.
+   * Los resultados son informativos y muestran las puntuaciones y el cambio entre las puntuaciones actual y anterior.
+   * Esta perspectiva es valiosa para determinar si hay una regresión que se introducirá con la implementación actual.
+   * Consulte el documento [Comprender los resultados de la auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
+![Prueba de prueba](assets/stage-testing.png)
 
+## Fase de implementación de producción {#deployment-production}
 
-## Proceso de implementación {#deployment-process}
+El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto de los visitantes en un sitio AEM.
 
-Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya downtime. Consulte [Cómo funcionan las implementaciones móviles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#how-rolling-deployments-work) para obtener más información.
-
-### Implementación en fase de producción {#deployment-production-phase}
-
-El proceso de implementación en topologías de producción difiere ligeramente para minimizar el impacto en los visitantes AEM sitio.
-
-Las implementaciones de producción generalmente siguen los mismos pasos que se describen arriba, pero de forma gradual:
+Las implementaciones de producción suelen seguir los mismos pasos que se describieron anteriormente, pero de forma gradual.
 
 1. Implemente AEM paquetes para crear.
 1. Desasocie Dispatcher1 del equilibrador de carga.
@@ -85,4 +89,11 @@ Las implementaciones de producción generalmente siguen los mismos pasos que se 
 1. Una vez que Dispatcher1 vuelva a estar en servicio, separe Dispatcher2 del equilibrador de carga.
 1. Implemente AEM paquetes para publicar2 y el paquete de Dispatcher para dispatcher2, vacíe la caché de Dispatcher.
 1. Vuelva a colocar Dispatcher2 en el equilibrador de carga.
+
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
+
+![Fase de implementación de producción](assets/production-deployment.png)
+
+## Proceso de implementación {#deployment-process}
+
+Todas las implementaciones de Cloud Service siguen un proceso gradual para garantizar que no haya downtime. Consulte el documento [Cómo funcionan las implementaciones móviles](/help/implementing/deploying/overview.md#how-rolling-deployments-work) para obtener más información.

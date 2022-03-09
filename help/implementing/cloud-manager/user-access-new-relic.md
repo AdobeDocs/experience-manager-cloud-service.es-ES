@@ -1,107 +1,122 @@
 ---
-title: Acceso del usuario a una nueva reliquia
-description: Siga esta página para obtener más información sobre el nuevo Monitoreo del Rendimiento de las Aplicaciones Relic para AEM as a Cloud Service
-source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
+title: Nueva reliquia uno
+description: Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
+exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 0%
+source-wordcount: '1038'
+ht-degree: 1%
 
 ---
 
 
-# Acceso del usuario a una nueva reliquia {#user-access}
+# Nueva reliquia uno {#user-access}
+
+Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
 
 ## Introducción {#introduction}
 
-El Adobe pone un alto énfasis en el monitoreo, disponibilidad y performance de su aplicación. Para ayudar a lograr este objetivo, AEM as a Cloud Service proporciona acceso a un grupo de supervisión personalizado de Nueva relación como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de las métricas de rendimiento de entorno y del sistema de Cloud Service de Adobe Experience Manager. En esta sección se describen las nuevas funciones de monitorización de reliquia habilitadas en los entornos as a Cloud Service de AEM para ayudar a reforzar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
+El Adobe pone un bueno énfasis en el monitoreo, la disponibilidad y el performance de su aplicación. Para ayudar a lograr este objetivo, AEM as a Cloud Service proporciona acceso a un grupo de supervisión personalizado de Nueva relación uno como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de sus métricas de rendimiento de entorno y sistema as a Cloud Service AEM.
 
-## AEM supervisión as a Cloud Service de las transacciones mediante la nueva propuesta de valor - relación de calidad {#transaction-monitoring}
+En este documento se describen las funciones de supervisión del rendimiento de la aplicación (APM) de la nueva relación relic-uno habilitadas en los entornos as a Cloud Service AEM para ayudarle a soportar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
 
-Aquí está el resumen de la propuesta de valor de New Relic Application Performance Monitoring para AEM as a Cloud Service:
+## Características {#transaction-monitoring}
 
-* Acceso directo a una cuenta específica de New Relic One (acceso administrado por la asistencia técnica de Adobe).
+Nueva reliquia Una APM para AEM as a Cloud Service tiene muchas características.
 
-* Agente de APM de nueva relación lógica instrumentado que muestra llamadas de método exactas con números de línea, incluidas dependencias externas y bases de datos.
+* Acceso directo a una cuenta específica de New Relic One (acceso administrado por la asistencia de Adobe)
 
-* Optimización del rendimiento holístico mediante la combinación de métricas clave de la monitorización a nivel de infraestructura, así como la monitorización de aplicaciones (Adobe Experience Manager).
+* Agente de nueva relación con la aplicación instrumentada Un APM que muestra llamadas de método exactas con números de línea, incluidas dependencias externas y bases de datos
 
-* Exposición de AEM as a Cloud Service Mbeans y Comprobaciones de estado de JMX directamente a las métricas de Nuevas perspectivas de reliquia, lo que permite realizar una inspección profunda del rendimiento de la pila de aplicaciones y las métricas de estado.
+* Optimización del rendimiento holístico mediante la combinación de métricas clave de la monitorización a nivel de infraestructura y la monitorización de aplicaciones (Adobe Experience Manager)
 
-## Acceso a su cuenta de nueva reliquia as a Cloud Service AEM {#accessing-new-relic}
+* Exposición de AEM as a Cloud Service mazones de JMX y comprobaciones de estado directamente dentro de las métricas de New Relic Insights, lo que permite una inspección profunda del rendimiento de la pila de aplicaciones y las métricas de estado.
 
-Su cuenta de New Relic dedicada se aprovisionará y administrará mediante Adobe mediante la participación del Servicio de atención al cliente. Adobe seguirá siendo el propietario y el administrador y proporcionará la cuenta en su nombre para proporcionar acceso a su subcuenta específica.
+## Acceso a la nueva reliquia uno {#accessing-new-relic}
 
-Para obtener acceso a su subcuenta de New Relic asociada con su Programa as a Cloud Service AEM:
+Siga estos pasos para obtener acceso a su nueva subcuenta de Relic One asociada a su Programa as a Cloud Service AEM.
 
-* Abra una solicitud accediendo a la pestaña Asistencia del Admin Console.
-* Asegúrese de que su ticket incluya los detalles de su ID de programa, así como la lista de usuarios a los que solicita a los equipos de Adobe que abran el acceso a Nueva relación.
-* Todos los usuarios deben tener un nombre completo y una dirección de correo electrónico válida.
+1. Abra una solicitud accediendo a la pestaña Asistencia del Admin Console.
+1. En su solicitud, incluya los detalles de su ID de programa, así como la lista de usuarios que requieren acceso a Nueva reliquia.
+   * Se deben proporcionar los nombres completos y las direcciones de correo electrónico válidas de todos los usuarios.
 
-   >[!NOTE]
-   >Consulte [Portal de asistencia AEM para Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obtener más información.
+Consulte el documento [Portal de asistencia AEM para Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información sobre cómo abrir tickets.
 
 Una vez que se ha proporcionado el acceso, New Relic envía un correo electrónico de confirmación a cada usuario para que este pueda completar el proceso de configuración e iniciar sesión.
 
-Si el usuario no encuentra el correo electrónico de confirmación de la cuenta original:
+Si el usuario no encuentra el correo electrónico de confirmación de la cuenta original, siga estos pasos.
 
-1. Vaya a la página de inicio de sesión de Nueva reliquia en [login.newrelic.com/login](https://login.newrelic.com/login).
+1. Vaya a la página de inicio de sesión de Nueva reliquia en [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
-1. Select **Olvidó su contraseña**.
+1. Select **¿Olvidó su contraseña?**.
 
-   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+   ![Nuevo inicio de sesión de Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
 1. Escriba la dirección de correo electrónico de la cuenta y seleccione **Enviar mi vínculo de restablecimiento**.
 
-   ![](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+   ![Escriba la dirección de correo electrónico](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. Cuando el sistema de New Relic devuelva un mensaje de correo electrónico, seleccione el vínculo para confirmar de nuevo su cuenta.
+1. New Relic enviará al usuario un correo electrónico que contiene un vínculo para confirmar la cuenta.
 
-   >[!NOTE]
-   >Si no recibe un correo electrónico de New Relic:
-   >Compruebe su [filtros de correo no deseado](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Si procede, [añadir nueva relación a la lista de permitidos de correo electrónico](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Proporcione comentarios sobre el ticket de asistencia y el equipo de soporte de Adobe le ayudará a seguir trabajando.
+Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un ticket de asistencia a través de la [Admin Console](https://adminconsole.adobe.com/).
 
-1. Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un vale de asistencia a través de [Admin Console](https://adminconsole.adobe.com/).
+>[!TIP]
+>
+>Si no recibe un correo electrónico de New Relic:
+>
+>* Compruebe su [filtros de correo no deseado](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
+>* Si procede, [añadir nueva relación a la lista de permitidos de correo electrónico](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
+>* Si ninguna de estas sugerencias ayuda, sírvase proporcionar comentarios sobre el ticket de asistencia y el equipo de soporte de Adobe le ayudará a obtener más información.
+
 
 ### Verificación del correo electrónico {#verify-email}
 
-Si se le pide que verifique su correo electrónico durante el inicio de sesión, significa que el correo electrónico está asociado con varias cuentas y se le dará la opción de verificar su correo electrónico durante el inicio de sesión. Esto le permitirá elegir a qué cuenta acceder. Si no verifica su dirección de correo electrónico, New Relic intentará iniciar sesión con el registro de usuario creado más recientemente y asociado a su dirección de correo electrónico. Para evitar verificar el correo electrónico durante cada inicio de sesión, haga clic en la casilla Recordarme en la pantalla de inicio de sesión.
+Si se le pide que verifique su correo electrónico durante el inicio de sesión, significa que el correo electrónico está asociado con varias cuentas. Esto le permite elegir a qué cuenta acceder.
 
-Para obtener más ayuda, abra un ticket de asistencia a través de [Portal de asistencia AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Si no verifica su dirección de correo electrónico, New Relic intentará iniciar sesión con el registro de usuario creado más recientemente y asociado a su dirección de correo electrónico. Para evitar verificar el correo electrónico durante cada inicio de sesión, haga clic en el botón **Recordarme** en la pantalla de inicio de sesión.
+
+Para obtener más ayuda, abra un ticket de asistencia a través de la [Portal de asistencia AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Excepciones {#exceptions}
 
-AEM as a Cloud Service centra la oferta en torno a la solución New Relic APM únicamente y no proporciona soporte para las funciones de alerta, registro o integración de API.
+AEM as a Cloud Service solo ofrece la solución New Relic One APM y no proporciona soporte para alertas, registros o integraciones de API.
 
-Para obtener más ayuda o instrucciones adicionales sobre las nuevas ofertas de reliquia para su programa as a Cloud Service AEM, abra un ticket de asistencia a través de [Portal de asistencia AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obtener ayuda.
+Para obtener más ayuda o instrucciones adicionales sobre las nuevas ofertas de Relic Uno para su Programa as a Cloud Service AEM, abra un ticket de asistencia a través de la [Portal de asistencia AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Preguntas más frecuentes sobre la nueva cuenta de reliquia {#faqs}
 
-### ¿Qué monitoriza el Adobe con New Relic? {#adobe-monitor}
+### ¿Qué monitoriza el Adobe con la nueva reliquia uno? {#adobe-monitor}
 
-Adobe supervisa los servicios de Autor, Publicación y Vista previa (cuando están disponibles) as a Cloud Service de AEM mediante el complemento Java New Relic APM. El Adobe permite la telemetría y monitorización personalizada de la nueva relación costo-calidad de APM en entornos as a Cloud Service que no sean de producción y producción AEM. La cuenta de Nueva reliquia se adjunta a una cuenta de mantenimiento de Adobe principal y tiene varias aplicaciones que informan al respecto.
+Adobe supervisa los servicios de creación, publicación y vista previa (cuando están disponibles) as a Cloud Service de AEM a través del complemento Java de New Relic One. Adobe permite la telemetría y monitorización personalizada de New Relic One APM en entornos as a Cloud Service que no sean de producción y producción AEM.
 
-Tres cada uno por AEM entorno as a Cloud Service:
+La nueva cuenta de Relic One está adjunta a una cuenta principal mantenida por Adobe y tiene varias aplicaciones informando al respecto: tres por AEM entorno as a Cloud Service.
 
-* Una aplicación para el servicio Author por entorno
-* Una aplicación para el servicio Publicar por entorno (incluida la Publicación Dorada)
-* Una aplicación para el servicio Vista previa por entorno
-   >[!IMPORTANT]
-   >Cada aplicación utiliza una clave de licencia, AEM los entornos as a Cloud Service solo informarán a una cuenta de New Relic. Las métricas y los eventos de monitorización completos para la Nueva Ric APM se conservan durante 7 días.
+* Una aplicación para el servicio de creación por entorno
+* Una aplicación para el servicio de publicación por entorno (incluida la publicación de oro)
+* Una aplicación para el servicio de vista previa por entorno
 
-### ¿Quién puede acceder a los datos del nuevo Cloud Service de reliquia? {#access-new-relic-cloud}
+Importante:
 
-Se concederá acceso de lectura completo para hasta 10 miembros de su equipo. El acceso de lectura incluirá todas las métricas de APM recopiladas por el agente de nueva relación.
+* Cada aplicación utiliza una clave de licencia.
+* AEM entornos as a Cloud Service solo informan de una cuenta nueva de Relic One.
+* Las métricas y los eventos de monitorización completos para la Nueva reliquia uno se conservan durante 7 días.
 
-### ¿Se admite la configuración SSO personalizada? {#custom-sso}
+### ¿Quién puede acceder a los datos del servicio en la nube New Relic One? {#access-new-relic-cloud}
 
-Actualmente, la configuración SSO personalizada no es compatible con la cuenta Nueva reliquia aprovisionada por Adobe.
+Se concederá acceso de lectura completo para hasta 10 miembros de su equipo. El acceso de lectura incluirá todas las métricas de APM recopiladas por el agente New Relic One.
 
-### ¿Qué sucede si ya dispone de una nueva suscripción a reliquia local? {#new-relic-subscription}
+### ¿Se admite la configuración de SSO personalizada? {#custom-sso}
 
-La nueva plataforma de observabilidad de Nueva reliquia llamada Nueva reliquia uno permite a los Grupos de Soporte de Adobe y a sus equipos observar, monitorear y ver métricas y eventos, todo en un solo lugar. La nueva reliquia uno ofrece a los usuarios la capacidad de buscar en todas las cuentas donde tengan acceso y visualizar los datos de todos los servicios y hosts de una sola vista. Mientras que los equipos de soporte de Adobe supervisarán la aplicación as a Cloud Service AEM utilizando New Relic y otras herramientas internas como parte de su servicio, sus equipos pueden seguir aprovechando New Relic para servicios alojados e infraestructura locales. Podrán visualizar los datos desde las cuentas de Adobe y de Nueva reliquia gestionadas por el cliente.
+La configuración de SSO personalizada no es compatible con la nueva cuenta de Relic One aprovisionada por Adobe.
+
+### ¿Qué sucede si ya tengo una suscripción a New Relic local? {#new-relic-subscription}
+
+Nueva reliquia uno es la nueva plataforma de observabilidad de Nueva reliquia y permite al soporte de Adobe y a sus equipos observar, monitorear y ver métricas y eventos, todo en un solo lugar.
+
+La nueva reliquia uno ofrece a los usuarios la capacidad de buscar en todas las cuentas donde tengan acceso y visualizar los datos de todos los servicios y hosts de una sola vista.
+
+Mientras que el soporte de Adobe supervisará la aplicación as a Cloud Service AEM utilizando New Relic One y otras herramientas internas como parte de su servicio, sus equipos pueden seguir aprovechando New Relic para servicios e infraestructura alojados in situ. Podrán visualizar los datos tanto de la cuenta de Adobe Nueva reliquia uno como de las cuentas de Nueva reliquia gestionadas por el cliente.
 
 >[!NOTE]
->El usuario debe tener los permisos adecuados y utilizar la misma metodología de inicio de sesión para ambas cuentas (Adobe y cuenta nueva relic administrada por el cliente).
-
-
+>
+>Para ver ambos conjuntos de datos dentro de la nueva relación uno, un usuario debe tener los permisos adecuados y utilizar la misma metodología de inicio de sesión para ambas cuentas (Adobe de la nueva relación uno y las cuentas de nueva relación gestionadas por el cliente).

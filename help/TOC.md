@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 97%
+source-wordcount: '3419'
+ht-degree: 96%
 
 ---
 
@@ -641,24 +641,24 @@ ht-degree: 97%
          + [Edición de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Entornos en hibernación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + Creación de un proyecto de aplicación de AEM {#create-application-project}
-         + [Uso del asistente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [Asistente para la creación de proyectos](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuración del proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [Explicación del entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [Entorno de compilación](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Administración de entornos](/help/implementing/cloud-manager/manage-environments.md)
       + Administrar el código {#managing-code}
          + [Administrar versiones del proyecto de Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Repositorios en Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [Acceso a repositorios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Integrar Git con Adobe Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [Uso de repositorios Git de varias fuentes](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [Configuración de desarrollo de equipo empresarial para AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Uso de Git con Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [Uso de varios repositorios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [Configuración del equipo de desarrollo empresarial](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [Variables de entorno](/help/implementing/cloud-manager/environment-variables.md)
       + Canalizaciones de CI-CD de Cloud Manager {#cicd-pipelines}
          + [Introducción](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configuración de una canalización de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configuración de una canalización que no es de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Administración de canalizaciones](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-      + [Implementar el código](/help/implementing/cloud-manager/deploy-code.md)
+      + [Implementación del código](/help/implementing/cloud-manager/deploy-code.md)
       + Comprender los resultados de la prueba {#test-results}
          + [Información general](/help/implementing/cloud-manager/overview-test-results.md)
          + [Prueba de calidad del código](/help/implementing/cloud-manager/code-quality-testing.md)
@@ -668,8 +668,8 @@ ht-degree: 97%
          + [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
       + [Acceder y administrar registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Creación de informes de SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [Acceso del usuario a una nueva reliquia](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [Explicar notificaciones](/help/implementing/cloud-manager/notifications.md)
+      + [Nueva reliquia uno](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [Notificaciones](/help/implementing/cloud-manager/notifications.md)
       + Administración de certificados SSL {#manage-ssl-certificates}
          + [Introducción](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Obtención de un certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
