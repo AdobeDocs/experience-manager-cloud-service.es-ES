@@ -3,13 +3,13 @@ title: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
+exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 0%
+source-wordcount: '554'
+ht-degree: 1%
 
 ---
-
 
 # Instalar [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -38,9 +38,26 @@ Antes de instalar el conector, siga estos pasos previos a la instalación:
 1. Esta instalación requiere conocimientos para configurar un proyecto Maven en [!DNL Experience Manager] como [!DNL Cloud Service]. Utilice los siguientes recursos para comprender cómo incluir un paquete de terceros en su proyecto de Maven:
 
    * [Incluir paquete de terceros en el proyecto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
-   * [Implementar con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
+   * [Implementar con [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=es).
 
 Para instalar el complemento en [!DNL Experience Manager] como [!DNL Cloud Service], siga estos pasos:
+
+1. Descargue el conector mejorado desde [Distribución del software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. [Acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) y clone su repositorio as a Cloud Service AEM desde Cloud Manager.
+
+1. Abra el repositorio as a Cloud Service AEM clonado con un IDE de su elección.
+
+1. Coloque el archivo zip del conector mejorado descargado en el paso 1 en la siguiente ruta:
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >Si la variable `resources` carpeta no existe, cree la carpeta.
+
 
 1. Agregar `pom.xml` dependencias:
 
@@ -51,47 +68,28 @@ Para instalar el complemento en [!DNL Experience Manager] como [!DNL Cloud Servi
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. Añadir una dependencia en todos los módulos [!DNL pom.xml].
+      >[!NOTE]
+      >
+      >Asegúrese de actualizar el número de versión del conector mejorado antes de copiar la dependencia al primario `pom.xml`.
+
+   1. Añadir una dependencia en `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. Agregar `pom.xml` autenticación.
-
-   1. Incluya la siguiente configuración del repositorio en pom.xml dentro del perfil adobe-public, de modo que las dependencias del conector (arriba) se puedan resolver en el momento de la compilación (tanto localmente como mediante Cloud Manager). Las credenciales para el acceso al repositorio se proporcionarán al adquirir una licencia. Las credenciales deberán agregarse al archivo settings.xml en la sección de servidores.
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. Crear un archivo con el nombre `./cloudmanager/maven/settings.xml` en la raíz del proyecto. Para admitir un repositorio Maven protegido por contraseña, consulte [configuración del proyecto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). Además, un ejemplo `settings.xml` para referencia. Por último, actualice la `settings.xml` para compilar localmente.
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. Agregar `pom.xml` incrustaciones. Agregue la variable [!DNL Workfront for Experience Manager enhanced connector] paquetes a `embeddeds` de la sección `pom.xml` de todo el subproyecto. Lo necesita incrustado en el módulo todo `pom.xml`.
 
@@ -104,6 +102,12 @@ Para instalar el complemento en [!DNL Experience Manager] como [!DNL Cloud Servi
       <target>/apps/<path-to-project-install-folder>/install</target>
    </embedded>
    ```
+
+   El objetivo de la sección integrada se establece en `/apps/<path-to-project-install-folder>/install`. Esta ruta JCR `/apps/<path-to-project-install-folder>` debe incluirse en las reglas de filtro del `all/src/main/content/META-INF/vault/filter.xml` archivo. Las reglas de filtro para el repositorio generalmente se derivan del nombre del programa. Utilice el nombre de la carpeta como destino en las reglas existentes.
+
+1. Inserte los cambios en el repositorio.
+
+1. Ejecute la canalización a [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. Para crear una configuración de usuario del sistema, cree `wf-workfront-users` en [!DNL Experience Manager] Grupo de usuarios y asignar el permiso `jcr:all` a `/content/dam`. Un usuario del sistema `workfront-tools` se crea automáticamente y los permisos necesarios se administran automáticamente. Todos los usuarios de [!DNL Workfront] que utilizan el conector mejorado se añaden automáticamente como parte de este grupo.
 

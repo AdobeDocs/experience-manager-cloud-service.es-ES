@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: ad7af5f68719e112a820c5def7a86ff835b5839f
 workflow-type: tm+mt
-source-wordcount: '3419'
-ht-degree: 96%
+source-wordcount: '3425'
+ht-degree: 98%
 
 ---
 
@@ -158,7 +158,7 @@ ht-degree: 96%
          + [Configuración del entorno de cuenta](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [Métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [Recorrido de autor de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+      + [Recorrido para autores de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=es)
       + Aspectos básicos de la creación {#fundamentals}
          + [Entorno y herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [Adición de anotaciones de página](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -217,7 +217,7 @@ ht-degree: 96%
    + Administración {#administering}
       + Creación de sitios {#site-creation}
          + [Crear un nuevo canal](/help/sites-cloud/administering/site-creation/create-site.md)
-         + [Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [Habilitación de canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
          + [Uso del carril del sitio](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [Plantillas de sitios](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Temas del sitio](/help/sites-cloud/administering/site-creation/site-themes.md)
@@ -250,7 +250,7 @@ ht-degree: 96%
                + [Configuración de reglas de traducción](/help/journey-sites/translation/translation-rules.md)
                + [Traducir contenido](/help/journey-sites/translation/translate-content.md)
                + [Publicar contenido traducido](/help/journey-sites/translation/publish-content.md)
-            + [Recorrido de traducción sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [Recorrido de traducción sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=es)
             + [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md)
             + [Preparación del contenido para su traducción](/help/sites-cloud/administering/translation/preparation.md)
             + [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -381,9 +381,10 @@ ht-degree: 96%
       + [Preguntas frecuentes sobre la entrega de contenido HTTP2](/help/assets/dynamic-media/http2faq.md)
       + [Fin de vida útil para visualizadores Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vida útil de los visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + Integración con otras soluciones {#integrations}
+   + Integración con Adobe Workfront {#integrations}
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
+      + [Eliminar dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
       + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + [Introducción](/help/forms/home.md)
@@ -423,7 +424,7 @@ ht-degree: 96%
       + Adición de reglas y uso de expresiones en un formulario adaptable {#add-rules-and-use-expressions-in-an-adaptive-form}
          + [Adición de reglas a un formulario adaptable](/help/forms/rule-editor.md)
       + Uso [!DNL Adobe Sign] {#use-adobe-sign}
-         + [Uso de Adobe Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
+         + [Uso de Adobe Acrobat Sign para firmar electrónicamente un formulario adaptable](/help/forms/working-with-adobe-sign.md)
       + Configuración de envío de acciones y envío de metadatos {#configure-submit-actions-and-metadata-submission}
          + [Establecimiento de una acción de envío para un formulario adaptable](/help/forms/configuring-submit-actions.md)
          + [Configuración de la página de redirección](/help/forms/configuring-redirect-page.md)
@@ -444,7 +445,7 @@ ht-degree: 96%
       + [Crear modelo de datos de formulario](/help/forms/create-form-data-models.md)
       + [Trabajo con el modelo de datos de formulario](/help/forms/work-with-form-data-model.md)
       + [Uso del modelo de datos de formulario](/help/forms/using-form-data-model.md)
-   + [Integración con Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+   + [Integración con Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Integración con DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Integración con Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Integración con Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
@@ -534,15 +535,15 @@ ht-degree: 96%
    + [PWA Studio de Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migración](/help/commerce-cloud/migration.md)
    + [Preguntas más frecuentes](/help/commerce-cloud/faq.md)
-+ Sin encabezado {#headless}
-   + [Introducción a AEM sin encabezado](/help/headless/introduction.md)
++ Headless {#headless}
+   + [Introducción a AEM Headless](/help/headless/introduction.md)
    + Configuración {#setup}
       + [Introducción](/help/headless/setup/introduction.md)
       + [Configuración](/help/headless/setup/create-configuration.md)
       + [Modelo de fragmento de contenido](/help/headless/setup/create-content-model.md)
       + [Carpeta de recursos](/help/headless/setup/create-assets-folder.md)
       + [Fragmento de contenido](/help/headless/setup/create-content-fragment.md)
-      + [Extremo de GraphQL](/help/headless/setup/create-api-request.md)
+      + [Punto de conexión de GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de contenido {#content-fragments}
       + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=es)
       + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=es)
@@ -551,14 +552,14 @@ ht-degree: 96%
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=es)
          + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=es)
          + [Contenido asociado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=es)
-         + [Variaciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Metadatos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-      + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-      + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [Variaciones](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=es#managing-variations)
+      + [Metadatos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=es)
+      + [Árbol de estructura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=es)
+      + [Vista previa de JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=es)
    + API de GraphQL {#graphql-api}
       + [API de GraphQL para fragmentos de contenido](/help/headless/graphql-api/content-fragments.md)
-      + [Administrar los extremos de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
-      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [Administración de puntos de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+      + [IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Ejemplos de consultas de GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Consultas persistentes de GraphQL](/help/headless/graphql-api/persisted-queries.md)
    + [API de REST de fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=es)
@@ -568,7 +569,7 @@ ht-degree: 96%
    + Implementación {#deployment}
       + [Arquitectura](/help/headless/deployment/architecture.md)
       + [Dispatcher](/help/headless/deployment/dispatcher.md)
-      + [Configuración CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [Configuración de CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro de referente](/help/headless/deployment/referrer-filter.md)
    + Recorridos sin encabezado {#journeys}
       + Recorrido sin encabezado para desarrolladores {#developer}
@@ -582,7 +583,7 @@ ht-degree: 96%
          + [Cómo ponerlo todo junto](/help/journey-headless/developer/put-it-all-together.md)
          + [Publicación de la aplicación sin encabezado](/help/journey-headless/developer/go-live.md)
          + [Opcional: cómo crear aplicaciones de una sola página con AEM](/help/journey-headless/developer/create-spa.md)
-      + Recorrido de arquitecto de contenido de Headless {#architect}
+      + Recorrido de arquitecto de contenido sin encabezado {#architect}
          + [Información general sobre el Recorrido de arquitecto de contenido de AEM Headless](/help/journey-headless/architect/overview.md)
          + [Modelado de contenido para Headless con AEM: introducción](/help/journey-headless/architect/introduction.md)
          + [Descubra los conceptos básicos del modelado de contenido para Headless con AEM](/help/journey-headless/architect/basics.md)
@@ -741,7 +742,7 @@ ht-degree: 96%
             + [Implementación de un evaluador de predicados personalizado](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [Páginas de error personalizadas](/help/implementing/developing/introduction/custom-error-page.md)
          + [Tipos de nodos AEM](/help/implementing/developing/introduction/node-types.md)
-      + [Administración de experiencias sin objetivos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [Administración de experiencias sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=es)
       + Desarrollo híbrido y SPA {#hybrid}
          + [Híbrido y SPA con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=es)

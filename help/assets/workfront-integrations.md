@@ -1,15 +1,15 @@
 ---
-title: '"[!DNL Experience Manager Assets] integración con [!DNL Adobe Workfront]"'
+title: '''[!DNL Experience Manager Assets] integración con [!DNL Adobe Workfront]'''
 description: Introducción a la integración entre [!DNL Assets] y [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
+source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '926'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [!DNL Assets] integración con [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 La variable [!DNL Workfront for Experience Manager enhanced connector] permite procesos empresariales mejorados con flujos de trabajo end-to-end y proporciona experiencias personalizadas de cliente end-to-end y almacenamiento de información central. Adobe ofrece un conector estándar y un conector mejorado para integrar las dos soluciones. Consulte las funciones compatibles a continuación para ver una comparación y consulte [novedades de [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
-[!DNL Workfront for Experience Manage enhanced connector] permite a su organización:
+[!DNL Workfront for Experience Manager enhanced connector] permite a su organización:
 
 * Cree automáticamente carpetas de Experience Manager vinculadas en Workfront y organice las carpetas en función de Portfolio, programas y proyectos de Workfront.
 * Sincronice los metadatos del proyecto de Workfront con las carpetas de Experience Manager vinculadas.
@@ -32,6 +32,8 @@ Consulte la compatibilidad con la plataforma y [requisitos previos para el conec
 >El Adobe requiere la implementación y la configuración del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con Adobe.
 >
 >Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto ocurre, es posible que se requiera a los clientes que pasen del uso de este conector.
+>
+>Consulte [Examen de certificación de socios para conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información sobre el examen, [Guía de examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 ## Comparar distintas integraciones entre [!DNL Assets] y [!DNL Workfront] {#feature-parity-matrix}
 
