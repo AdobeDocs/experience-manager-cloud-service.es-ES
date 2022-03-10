@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado. A continuación, los fragmentos de contenido se almacenan en carpetas de recursos.
 
-##  ¿Qué es una carpeta de recursos? {#what-is-an-assets-folder}
+## ¿Qué es una carpeta de recursos? {#what-is-an-assets-folder}
 
 [Ahora que ha creado modelos de fragmentos de contenido](create-content-model.md) que definen la estructura que desea para los futuros fragmentos de contenido, probablemente tenga ganas de crear algunos fragmentos.
 

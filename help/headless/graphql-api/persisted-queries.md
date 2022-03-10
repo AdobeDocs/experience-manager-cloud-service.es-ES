@@ -227,7 +227,6 @@ Una vez que la configuración de la consulta está en la publicación, se aplica
 >
 >Por ejemplo, como en la solicitud para ejecutar una consulta persistente:
 >
->
-```xml
+>```xml
 >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
 >```
