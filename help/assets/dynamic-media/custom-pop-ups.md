@@ -1,17 +1,17 @@
 ---
 title: Creación de ventanas emergentes personalizadas con Quickview
-description: '"Aprenda cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, mediante la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en la ventana emergente de Windows®".'
+description: '"Aprenda cómo se utiliza la vista rápida predeterminada en las experiencias de comercio electrónico, mediante la cual se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en la ventana emergente".'
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 1%
+source-wordcount: '1002'
+ht-degree: 2%
 
 ---
 
-# Crear ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
+# Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor que utilice, los clientes pueden seleccionar una zona interactiva, una imagen en miniatura o un mapa de imagen para ver información o contenido relacionado.
 
