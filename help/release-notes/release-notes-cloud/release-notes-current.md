@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 08ed7f06b60ab65a0060c4fa00f902006f3afbdd
+source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ En la siguiente sección se describen las notas de la versión generales de la v
 ## Fecha de la versión {#release-date}
 
 La fecha de lanzamiento de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.1.0) es el 3 de febrero de 2022.
-La siguiente versión (2022.2.0) es el 10 de marzo de 2022.
+La siguiente versión (2022.3.0) es el 31 de marzo de 2022.
 
 ## Vídeo de la versión {#release-video}
 
@@ -34,7 +34,7 @@ Eche un vistazo al vídeo [Información general sobre la versión de enero de 20
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* La variable **[Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** está disponible en la **Sitio** carril de la consola Sitios para sitios que usan la versión 2 del componente principal de la página. Este botón configura el sitio para cargar los temas que se implementan con la canalización de front-end sobre las bibliotecas de cliente existentes.
+* El botón **[Habilitar canalización front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** está disponible en el carril **Sitio** de la consola Sitios para sitios que usan la versión 2 del componente principal de página. Este botón configura el sitio para cargar los temas que se implementan con la canalización de front-end sobre las bibliotecas de cliente existentes.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
