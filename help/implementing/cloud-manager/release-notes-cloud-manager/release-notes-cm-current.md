@@ -3,10 +3,10 @@ title: Notas de la versión para Cloud Manager 2022.3.0 en Adobe Experience Mana
 description: Estas son las notas de la versión de Cloud Manager 2022.3.0 en AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 2%
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
@@ -25,12 +25,11 @@ La fecha de la versión de Cloud Manager 2022.3.0 en AEM as a Cloud Service del 
 
 ## Novedades {#what-is-new}
 
-* Un usuario con la variable **Desarrollador** ahora puede acceder al registro de entorno de AEM.
-* [La variable `reliability_rating` métrica crítica](/help/implementing/cloud-manager/code-quality-testing.md) se ha desactivado.
-* Ahora un usuario puede ordenar las columnas de la **Canalizaciones** en Cloud Manager.
+* El acceso a AEM registro de entorno se puede realizar con la función de desarrollador .
 
 ## Corrección de errores {#bug-fixes}
 
-* Un subconjunto de repositorios git creados manualmente tenía valores de nombre incorrectos que afectaban a [la función de reutilización de artefactos de compilación.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la interfaz de usuario/API de Cloud Manager.
-* [Al añadir o editar una canalización de calidad de código,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) el **Comportamiento de errores de métricas importantes** ya no se muestran.
-* Las configuraciones de variables de canalización inesperadas ya no causan errores en el paso de compilación.
+* Un subconjunto de repositorios Git creados manualmente tenía un valor de nombre incorrecto que impedía que la función de reutilización de artefactos de compilación fuera efectiva. Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la interfaz de usuario/API de Cloud Manager.
+* Los artefactos de compilación de las canalizaciones que no son de producción se reutilizaron incorrectamente en las canalizaciones de pila completas de producción.
+* Al añadir o editar una canalización de calidad de código, ya no se muestran las opciones para gestionar errores de métricas.
+* Algunas configuraciones de variables de canalización inesperadas podrían causar en el paso de compilación.
