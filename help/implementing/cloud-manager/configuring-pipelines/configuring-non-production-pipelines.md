@@ -2,13 +2,13 @@
 title: Configuración de canalizaciones que no sean de producción
 description: Obtenga información sobre cómo configurar canalizaciones que no sean de producción para probar la calidad del código antes de implementarlas en entornos de producción.
 index: true
-source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
+exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
+source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 1%
+source-wordcount: '1058'
+ht-degree: 0%
 
 ---
-
 
 # Configuración de canalizaciones que no sean de producción {#configuring-non-production-pipelines}
 
@@ -47,12 +47,6 @@ Una vez que haya configurado el programa y tenga al menos un entorno utilizando 
 
       * **Manual** - Utilice esta opción para iniciar manualmente la canalización.
       * **Cambios en Git** - Esta opción inicia la canalización CI/CD cada vez que se añaden confirmaciones a la rama git configurada. Con esta opción, aún puede iniciar la canalización manualmente según sea necesario.
-   * **Comportamiento de errores de métricas importantes** - Durante la configuración o edición de la canalización, la variable **Administrador de implementación** tiene la opción de definir el comportamiento de la canalización cuando se encuentra un error importante en cualquiera de las puertas de calidad. Tiene las opciones siguientes.
-
-      * **Pregunte cada vez** - Esta es la configuración predeterminada y requiere intervención manual en caso de que se produzca algún error importante.
-      * **Fallo Inmediatamente** - Si se selecciona, la canalización se cancelará siempre que se produzca un fallo importante. Básicamente, esto emula a un usuario rechazando manualmente cada error.
-      * **Continuar inmediatamente** - Si se selecciona, la canalización se realizará automáticamente cada vez que se produzca un error importante. Básicamente, esto está emulando a un usuario que aprueba manualmente cada error.
-
 
 1. Haga clic en **Continuar**.
 
