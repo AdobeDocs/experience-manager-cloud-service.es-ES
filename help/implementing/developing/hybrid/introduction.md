@@ -5,11 +5,11 @@ exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1984'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Introducción a SPA y tutorial {#spa-introduction}
+# Introducción y tutorial de SPA {#spa-introduction}
 
 Las aplicaciones de una sola página (SPA) pueden ofrecer experiencias atractivas para los usuarios de sitios web. Los desarrolladores quieren poder crear sitios mediante marcos de SPA y los autores quieren editar contenido sin problemas dentro de AEM para un sitio creado con dichos marcos.
 
@@ -21,17 +21,17 @@ El SPA Editor ofrece una solución completa para admitir SPA dentro de AEM. Este
 
 Este artículo presenta los conceptos básicos de SPA antes de guiar al lector a través de un tutorial del editor de SPA utilizando una sencilla aplicación SPA para demostrar la edición básica del contenido. A continuación, se profundiza en la construcción de la página y en cómo se relaciona la aplicación SPA con el AEM SPA Editor y cómo interactúa con ella.
 
-El objetivo de esta introducción y tutorial es demostrar a un desarrollador AEM por qué los SPA son relevantes, cómo funcionan en general, cómo el editor de SPA gestiona un SPA y cómo se diferencia de una aplicación AEM estándar.
+El objetivo de esta introducción y tutorial es demostrar a un desarrollador AEM por qué los SPA son relevantes, cómo funcionan en general, cómo el editor de SPA gestiona un SPA y cómo es diferente de una aplicación AEM estándar.
 
-El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de proyecto WKND SPA de ejemplo. Para seguir, [descargue e instale la aplicación de proyecto WKND SPA de ejemplo desde GitHub aquí.](https://github.com/adobe/aem-guides-wknd-spa)
+El tutorial se basa en la funcionalidad AEM estándar y en la aplicación de proyecto WKND SPA de ejemplo. Para seguir, por favor [descargue e instale la aplicación de proyecto WKND SPA de ejemplo desde GitHub aquí.](https://github.com/adobe/aem-guides-wknd-spa)
 
 >[!CAUTION]
 >
->Este documento utiliza la aplicación [WKND SPA Project](https://github.com/adobe/aem-guides-wknd-spa) únicamente con fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
+>Este documento utiliza la variable [Aplicación de proyecto WKND SPA](https://github.com/adobe/aem-guides-wknd-spa) únicamente con fines de demostración. No debe utilizarse para ningún trabajo de proyecto.
 
 >[!TIP]
 >
->Cualquier proyecto AEM debe aprovechar el [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que admite SPA proyectos con React o Angular y aprovecha el SDK de SPA.
+>Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que admite SPA proyectos que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ### ¿Qué es un SPA? {#what-is-a-spa}
 
@@ -78,10 +78,10 @@ Al realizar el procesamiento en el lado del cliente, los elementos de página re
 >
 >Para obtener detalles técnicos sobre cómo SPA funciona en AEM, consulte los artículos:
 >* [Introducción a SPA en AEM con React](getting-started-react.md)
-* [Introducción a SPA en AEM Uso de Angular](getting-started-angular.md)
-
-Para obtener una vista más detallada del diseño, la arquitectura y el flujo de trabajo técnico del SPA Editor, consulte el artículo:
-* [Información general SPA Editor](editor-overview.md).
+>* [Introducción a SPA en AEM Uso de Angular](getting-started-angular.md)
+>
+>Para obtener una vista más detallada del diseño, la arquitectura y el flujo de trabajo técnico del SPA Editor, consulte el artículo:
+>* [Información general del editor de SPA](editor-overview.md).
 
 
 ## Experiencia de edición de contenido con SPA {#content-editing-experience-with-spa}
@@ -113,8 +113,10 @@ Cuando se crea un SPA para aprovechar el AEM SPA Editor, el autor del contenido 
 Se admiten herramientas de creación adicionales, como arrastrar y soltar componentes adicionales en la página, reorganizar componentes y modificar el diseño, como en cualquier aplicación AEM que no sea de SPA.
 
 >[!NOTE]
-El Editor de SPA no modifica el DOM de la aplicación. El propio SPA es responsable del DOM.
-Para ver cómo funciona esto, continúe con la siguiente sección de este artículo [SPA Apps y el AEM SPA Editor](#spa-apps-and-the-aem-spa-editor).
+>
+>El Editor de SPA no modifica el DOM de la aplicación. El propio SPA es responsable del DOM.
+>
+>Para ver cómo funciona esto, continúe con la siguiente sección de este artículo. [Aplicaciones SPA y el AEM SPA Editor](#spa-apps-and-the-aem-spa-editor).
 
 ## Aplicaciones SPA y el AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
@@ -122,7 +124,7 @@ Experimentar cómo se comporta un SPA para el usuario final y luego inspeccionar
 
 ### Uso de una aplicación SPA {#using-an-spa-application}
 
-1. Cargue la aplicación WKND SPA Project en el servidor de publicación o utilice la opción **Ver tal y como aparece publicado** del menú **Información de página** del editor de páginas.
+1. Cargue la aplicación WKND SPA Project en el servidor de publicación o con la opción **Ver tal y como aparece publicado** de la variable **Información de la página** en el editor de páginas.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -144,11 +146,11 @@ Experimentar cómo se comporta un SPA para el usuario final y luego inspeccionar
 
 Por lo tanto, si la página no se vuelve a cargar al navegar por las páginas secundarias, ¿cómo se carga?
 
-La siguiente sección, [Loading a SPA Application](#loading-a-spa-application), profundiza en los mecanismos de carga de la SPA y en cómo se puede cargar el contenido sincrónica y asincrónicamente.
+La siguiente sección, [Carga de una aplicación SPA](#loading-a-spa-application), profundiza en la mecánica de carga del SPA y en cómo se puede cargar el contenido sincrónica y asincrónicamente.
 
-### Cargando una aplicación SPA {#loading-a-spa-application}
+### Carga de una aplicación SPA {#loading-a-spa-application}
 
-1. Si aún no se ha cargado, cargue la aplicación WKND SPA Project en el servidor de publicación o utilizando la opción **Ver tal y como aparece publicado** en el menú **Información de página** del editor de páginas.
+1. Si aún no se ha cargado, cargue la aplicación WKND SPA Project en el servidor de publicación o utilizando la opción **Ver tal y como aparece publicado** de la variable **Información de la página** en el editor de páginas.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -156,7 +158,7 @@ La siguiente sección, [Loading a SPA Application](#loading-a-spa-application), 
 
 1. Utilice la herramienta integrada del navegador para ver el origen de la página.
 1. Tenga en cuenta que el contenido de la fuente es limitado.
-   * La página no tiene contenido dentro de su cuerpo. Se compone principalmente de hojas de estilo y una llamada a varias secuencias de comandos como `clientlib-react.min.js`.
+   * La página no tiene contenido dentro de su cuerpo. Se compone principalmente de hojas de estilo y una llamada a varios scripts como `clientlib-react.min.js`.
    * Estos scripts son los principales controladores de esta aplicación y son responsables de procesar todo el contenido.
 
 1. Utilice las herramientas integradas del explorador para inspeccionar la página. Consulte el contenido del DOM completamente cargado.
@@ -175,7 +177,7 @@ La siguiente sección, [Loading a SPA Application](#loading-a-spa-application), 
 
    ![JSON de la página de inicio del proyecto WKND SPA](assets/wknd-json.png)
 
-   El AEM SPA Editor aprovecha [AEM Content Services](/help/assets/content-fragments/content-fragments.md) para entregar todo el contenido de la página como un modelo JSON.
+   El AEM SPA Editor aprovecha [Servicios de contenido AEM](/help/assets/content-fragments/content-fragments.md) para entregar todo el contenido de la página como un modelo JSON.
 
    Al implementar interfaces específicas, los modelos Sling proporcionan la información necesaria para el SPA. El envío de los datos JSON se delega hacia abajo en cada componente (de página, párrafo, componente, etc.).
 
@@ -183,17 +185,17 @@ La siguiente sección, [Loading a SPA Application](#loading-a-spa-application), 
 
 1. El modelo también puede agrupar las páginas de forma que se carguen sincrónicamente, lo que reduce el número de recargas de página necesarias.
 
-   En el ejemplo de la aplicación de proyecto WKND SPA, las páginas `home`, `page-1`, `page-2` y `page-3` se cargan sincrónicamente, ya que los visitantes suelen visitar todas esas páginas.
+   En el ejemplo de la aplicación WKND SPA Project, la variable `home`, `page-1`, `page-2`y `page-3` las páginas se cargan sincrónicamente, ya que los visitantes suelen visitar todas esas páginas.
 
    Este comportamiento no es obligatorio y es totalmente definible.
 
    ![WKND SPA Agrupación de elementos del proyecto](assets/wknd-pages.png)
 
-1. Para ver esta diferencia de comportamiento, vuelva a cargar la página `home` y borre la actividad de red del inspector. Vaya a `page-1` en el menú de página y vea que la única actividad de red es una solicitud para la imagen de `page-1`. `page-1` no necesita cargarse.
+1. Para ver esta diferencia de comportamiento, vuelva a cargar la variable `home` y borre la actividad de red del inspector. Vaya a `page-1` en el menú de página y vea que la única actividad de red es una solicitud de imagen de `page-1`. `page-1` no necesita cargarse.
 
    ![WKND SPA Proyecto página 1 Actividad de red](assets/wknd-page1-network.png)
 
-### Interacción con el Editor de SPA {#interaction-with-the-spa-editor}
+### Interacción con el SPA Editor {#interaction-with-the-spa-editor}
 
 Con la aplicación de proyecto WKND SPA de ejemplo, está claro cómo se comporta y se carga la aplicación cuando se publica, aprovechando los servicios de contenido para la entrega de contenido JSON, así como la carga asíncrona de recursos.
 
@@ -201,7 +203,7 @@ Además, para el autor del contenido, la creación de contenido mediante un edit
 
 En la siguiente sección analizaremos el contrato que permite al Editor de SPA relacionar componentes dentro del SPA con componentes de AEM y lograr esta experiencia de edición sin problemas.
 
-1. Cargue la aplicación WKND SPA Project en el editor y cambie al modo **Preview**.
+1. Cargue la aplicación WKND SPA Project en el editor y cambie a **Vista previa** en el menú contextual.
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
@@ -222,21 +224,24 @@ En la siguiente sección analizaremos el contrato que permite al Editor de SPA r
    También se agregan algunos nombres de clase específicos para marcar marcadores de posición y para la funcionalidad de arrastrar y soltar recursos.
 
    >[!NOTE]
-   Este comportamiento difiere de las páginas procesadas del lado del servidor en AEM, donde hay un elemento `cq` insertado para cada componente editable.
-   Este método en el Editor de SPA elimina la necesidad de insertar elementos personalizados, ya que solo se basa en un atributo de datos adicional, lo que simplifica el marcado para el desarrollador de front-end.
+   >
+   >Este comportamiento difiere de las páginas procesadas del lado del servidor en AEM, donde hay un `cq` elemento insertado para cada componente editable.
+   >
+   >Este método en el Editor de SPA elimina la necesidad de insertar elementos personalizados, ya que solo se basa en un atributo de datos adicional, lo que simplifica el marcado para el desarrollador de front-end.
 
 ## Encabezado y sin encabezado en AEM {#headful-headless}
 
 SPA se pueden habilitar con niveles flexibles de integración dentro de AEM, incluso SPA desarrollarse y mantenerse fuera de AEM. Además, SPA se puede aprovechar dentro de AEM mientras también se utilizan AEM para ofrecer contenido a extremos adicionales sin objetivos.
 
 >[!TIP]
-Consulte el documento [Headful and Headless en AEM](/help/implementing/developing/headful-headless.md) para obtener más información.
+>
+>Consulte el documento [Con encabezado y sin encabezado en AEM](/help/implementing/developing/headful-headless.md) para obtener más información.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 Ahora que comprende la SPA experiencia de edición en AEM y cómo se relaciona un SPA con el Editor de SPA, profundiza en la comprensión de cómo se crea un SPA.
 
-* [Introducción a SPA en AEM con ](getting-started-react.md) Reactancia muestra cómo se crea un SPA básico para trabajar con el SPA Editor en AEM con React
-* [Introducción a SPA en AEM con ](getting-started-angular.md) Angularam muestra cómo se crea un SPA básico para trabajar con el Editor de SPA en AEM con Angular
-* [SPA ](editor-overview.md) Información general del editor profundiza en el modelo de comunicación entre AEM y el SPA.
-* [Desarrollo de SPA para ](developing.md) AEMdescribe cómo interactuar con los desarrolladores de front-end para desarrollar un SPA para AEM, así como cómo SPA interactuar con AEM arquitectura.
+* [Introducción a SPA en AEM con React](getting-started-react.md) muestra cómo se crea una SPA básica para trabajar con el Editor de SPA en AEM con React
+* [Introducción a SPA en AEM con Angular](getting-started-angular.md) muestra cómo se crea una SPA básica para trabajar con el Editor de SPA en AEM con Angular
+* [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
+* [Desarrollo de SPA para AEM](developing.md) describe cómo involucrar a los desarrolladores de front-end para que desarrollen un SPA para AEM, así como cómo SPA interactúan con AEM arquitectura.

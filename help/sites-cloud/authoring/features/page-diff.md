@@ -1,14 +1,13 @@
 ---
-title: 'Diferencias de página  '
+title: Diferencias de página
 description: La función Diferencias de página permite realizar una cómoda comparación en paralelo de dos páginas con las diferencias resaltadas.
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 97%
 
 ---
-
 
 # Diferencias de página   {#page-diff}
 
@@ -35,7 +34,7 @@ La comparación de diferencias en paralelo permite comparar lo siguiente:
 
 Consulte los temas correspondientes sobre cómo iniciar la comparación de diferencias en esos contextos.
 
-### Presentación de diferencias    {#presentation-of-differences}
+### Presentación de diferencias   {#presentation-of-differences}
 
 Independientemente del contenido que se va a comparar, la presentación de las diferencias sigue siendo la misma.
 
@@ -64,7 +63,7 @@ La comparación de diferencias detecta los cambios en el nivel de componente y d
 >
 >Al comparar copias de idioma, el resaltado está desactivado, ya que en una traducción cambia todo y el resaltado no proporcionará ninguna ventaja.
 
-### Pantalla completa y salida    {#fullscreen-and-exiting}
+### Pantalla completa y salida   {#fullscreen-and-exiting}
 
 Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
 
@@ -84,7 +83,7 @@ También puede cerrar la vista de pantalla completa haciendo clic en el icono pa
 
 Puede salir de la comparación de diferencias en paralelo en cualquier momento haciendo clic en el botón Cerrar del encabezado.
 
-## Restricciones    {#limitations}
+## Restricciones   {#limitations}
 
 Hay algunas situaciones en las que la comparación de diferencias de la página quizás no detecte una diferencia de la forma esperada.
 

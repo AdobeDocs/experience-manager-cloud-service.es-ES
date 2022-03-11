@@ -5,7 +5,7 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -13,17 +13,17 @@ ht-degree: 2%
 
 En Adobe Experience Manager as a Cloud Service, un fragmento de contenido amplía un recurso estándar; consulte:
 
-* [Creación y administración de ](/help/assets/content-fragments/content-fragments.md) fragmentos de contenido y  [creación de páginas con ](/help/sites-cloud/authoring/fundamentals/content-fragments.md) fragmentos de contenido para obtener más información sobre los fragmentos de contenido.
+* [Creación y administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) y [Creación de páginas con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md) para obtener más información sobre los fragmentos de contenido.
 
-* [Administración de ](/help/assets/manage-digital-assets.md) recursos para obtener más información sobre los recursos estándar.
+* [Administración de recursos](/help/assets/manage-digital-assets.md) para obtener más información sobre los recursos estándar.
 
 ## Arquitectura {#architecture}
 
-Las [partes constituyentes](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) básicas de un fragmento de contenido son:
+La [partes constitutivas](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) de un fragmento de contenido son:
 
-* Un *fragmento de contenido*,
-* formado por uno o más *elementos de contenido*,
-* y que pueden tener una o más *Variaciones de contenido*.
+* A *Fragmento de contenido*,
+* consistente en uno o más *Elementos de contenido*,
+* y que pueden tener uno o más *Variaciones de contenido*.
 
 Los fragmentos de contenido individuales se basan en modelos de fragmento de contenido:
 
@@ -34,7 +34,7 @@ Los fragmentos de contenido individuales se basan en modelos de fragmento de con
 
    >[!NOTE]
    >
-   >Para poder mostrar/procesar un fragmento de contenido, la cuenta debe tener `read` permisos para el modelo.
+   >Para poder mostrar o procesar un fragmento de contenido, la cuenta debe tener `read` permisos para el modelo.
 
    >[!CAUTION]
    >
@@ -58,18 +58,16 @@ Los fragmentos de contenido se consideran una función de sitios como:
 
 Los fragmentos de contenido, basados en un modelo de fragmento de contenido, se asignan a un único recurso:
 
-* Todo el contenido se almacena en el nodo `jcr:content/data` del recurso:
+* Todo el contenido se almacena dentro de la variable `jcr:content/data` nodo del recurso:
 
    * Los datos del elemento se almacenan en el subnodo maestro:
       `jcr:content/data/master`
 
-   * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación:
-p. ej. `jcr:content/data/myvariation`
+   * Las variaciones se almacenan en un subnodo que lleva el nombre de la variación: p. ej. `jcr:content/data/myvariation`
 
-   * Los datos de cada elemento se almacenan en el subnodo respectivo como una propiedad con el nombre del elemento:
-Por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
+   * Los datos de cada elemento se almacenan en el subnodo respectivo como una propiedad con el nombre del elemento: Por ejemplo, el contenido del elemento `text` se almacena como propiedad `text` en `jcr:content/data/master`
 
-* Los metadatos y el contenido asociado se almacenan debajo de `jcr:content/metadata`
+* A continuación se almacenan los metadatos y el contenido asociado `jcr:content/metadata`
 Excepto el título y la descripción, que no se consideran metadatos tradicionales y se almacenan en 
 `jcr:content`
 
@@ -81,7 +79,7 @@ Al igual que con los recursos estándar, un fragmento de contenido se mantiene e
 
 #### Permisos de recursos {#asset-permissions}
 
-Para obtener más información, consulte [Fragmento de contenido - Eliminar consideraciones](/help/assets/content-fragments/content-fragments-delete.md).
+Para obtener más información, consulte [Fragmento de contenido: Eliminar consideraciones](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Integración de funciones {#feature-integration}
 
@@ -97,11 +95,11 @@ Para integrar con Assets core:
 
 >[!CAUTION]
 >
->El componente [Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) para obtener más información.
+>La variable [El componente Fragmento de contenido forma parte de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es). Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html) para obtener más información.
 
-Se puede hacer referencia a los fragmentos de contenido desde AEM páginas, igual que a cualquier otro tipo de recurso. AEM proporciona el **[componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)**, un [componente que le permite incluir fragmentos de contenido en sus páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar este componente principal **[Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**.
+Se puede hacer referencia a los fragmentos de contenido desde AEM páginas, igual que a cualquier otro tipo de recurso. AEM proporciona la variable **[Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** - [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar esta **[Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)** componente principal.
 
-* El componente utiliza la propiedad `fragmentPath` para hacer referencia al fragmento de contenido real. La propiedad `fragmentPath` se gestiona de la misma manera que las propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
+* El componente utiliza la variable `fragmentPath` para hacer referencia al fragmento de contenido real. La variable `fragmentPath` la propiedad se gestiona de la misma manera que las propiedades similares de otros tipos de recursos; por ejemplo, cuando el fragmento de contenido se mueve a otra ubicación.
 
 * El componente permite seleccionar la variación que se va a mostrar.
 
@@ -147,12 +145,12 @@ Los fragmentos de contenido se pueden integrar con:
    >
    >El flujo de trabajo de traducción AEM funciona con `/content`:
    >
-   >* Como los modelos de fragmento de contenido residen en `/conf`, no se incluyen en dichas traducciones. Puede internacionalizar las cadenas de la interfaz de usuario.
+   >* Como los modelos de fragmentos de contenido residen en `/conf`, no se incluyen en dichas traducciones. Puede internacionalizar las cadenas de la interfaz de usuario.
 
 
 * **Esquemas de metadatos**
 
-   * Los fragmentos de contenido (re)utilizan los [esquemas de metadatos](/help/assets/metadata-schemas.md), que se pueden definir con recursos estándar.
+   * Los fragmentos de contenido (re)utilizan la variable [esquemas de metadatos](/help/assets/metadata-schemas.md), que se pueden definir con recursos estándar.
 
    * CFM proporciona su propio esquema específico:
 
@@ -176,7 +174,7 @@ Puede utilizar la API del lado del servidor para acceder a los fragmentos de con
 
 Las tres interfaces siguientes pueden servir como puntos de entrada:
 
-* **Fragmento de contenido**  ([fragmento de contenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Fragmento de contenido** ([Fragmento de contenido](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Esta interfaz le permite trabajar con un fragmento de contenido de forma abstracta.
 
@@ -202,7 +200,7 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
 
    Las interfaces que representan los elementos principales de un fragmento son:
 
-   * **Elemento de contenido**  ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento Contenido** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Obtener datos básicos (nombre, título, descripción)
       * Obtener/Establecer contenido
@@ -214,13 +212,13 @@ Las tres interfaces siguientes pueden servir como puntos de entrada:
          * Eliminar variaciones (consulte [Advertencias](#caveats))
          * Acceso a los datos de variación (consulte `ContentVariation`)
       * Método abreviado para resolver variaciones (aplicar alguna lógica adicional de reserva específica de implementación si la variación especificada no está disponible para un elemento)
-   * **Variación de contenido**  ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variación de contenido** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obtener datos básicos (nombre, título, descripción)
       * Obtener/Establecer contenido
       * Sincronización sencilla, basada en la información modificada por última vez
 
-   Las tres interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) amplían la interfaz `Versionable`, que agrega capacidades de versiones, necesarias para los fragmentos de contenido:
+   Las tres interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) amplíe el `Versionable` interfaz, que añade funciones de versiones, necesarias para los fragmentos de contenido:
 
    * Crear una nueva versión del elemento
    * Enumerar versiones del elemento
@@ -238,9 +236,9 @@ Se puede adaptar lo siguiente:
 
 * `ContentFragment` puede adaptarse a:
 
-   * `Resource` - el recurso Sling subyacente; actualizar el subyacente  `Resource` directamente requiere la reconstrucción del  `ContentFragment` objeto.
+   * `Resource` - el recurso Sling subyacente; actualizar el subyacente `Resource` directamente requiere la reconstrucción del `ContentFragment` objeto.
 
-   * `Asset` - la  `Asset` abstracción DAM que representa el fragmento de contenido; la actualización  `Asset` directa requiere la reconstrucción del  `ContentFragment` objeto.
+   * `Asset` - DAM `Asset` abstracción que representa el fragmento de contenido; actualizar el `Asset` directamente requiere la reconstrucción del `ContentFragment` objeto.
 
 * `ContentElement` puede adaptarse a:
 
@@ -256,13 +254,13 @@ Se puede adaptar lo siguiente:
 
 Cabe señalar que:
 
-* Toda la API está diseñada para **no** mantener los cambios automáticamente (a menos que se indique lo contrario en el JavaDoc de la API). Por lo tanto, siempre tendrá que confirmar la resolución del recurso de la solicitud correspondiente (o la resolución que esté utilizando).
+* Toda la API está diseñada para **not** persista los cambios automáticamente (a menos que se indique lo contrario en el JavaDoc de API). Por lo tanto, siempre tendrá que confirmar la resolución del recurso de la solicitud correspondiente (o la resolución que esté utilizando).
 
 * Tareas que pueden requerir un esfuerzo adicional:
 
    * Se recomienda crear nuevas variaciones a partir de `ContentFragment`. Esto garantiza que todos los elementos compartan esta variación y que las estructuras de datos globales apropiadas se actualicen según sea necesario para reflejar la variación recién creada en la estructura de contenido.
 
-   * Si se eliminan variaciones existentes a través de un elemento mediante `ContentElement.removeVariation()`, no se actualizarán las estructuras de datos globales asignadas a la variación. Para garantizar que estas estructuras de datos se mantengan sincronizadas, utilice `ContentFragment.removeVariation()` en su lugar, lo que elimina una variación globalmente.
+   * Eliminación de variaciones existentes a través de un elemento mediante `ContentElement.removeVariation()`, no actualizará las estructuras de datos globales asignadas a la variación. Para garantizar que estas estructuras de datos se mantengan sincronizadas, utilice `ContentFragment.removeVariation()` en su lugar, que elimina una variación globalmente.
 
 ## La API de administración de fragmentos de contenido: del lado del cliente {#the-content-fragment-management-api-client-side}
 
@@ -276,22 +274,22 @@ Consulte lo siguiente:
 
 * `filter.xml`
 
-   El `filter.xml` para la administración de fragmentos de contenido está configurado de modo que no se superponga con el paquete de contenido principal de Assets.
+   La variable `filter.xml` para la administración de fragmentos de contenido está configurada de modo que no se superponga con el paquete de contenido principal de Assets.
 
 ## Editar sesiones {#edit-sessions}
 
 >[!CAUTION]
 >
->Tenga en cuenta esta información de antecedentes. Se supone que no debe cambiar nada aquí (ya que está marcado como *área privada* en el repositorio), pero en algunos casos podría ayudar a entender cómo funcionan las cosas bajo el capó.
+>Tenga en cuenta esta información de antecedentes. Aquí no se supone que se cambie nada (ya que está marcado como *zona privada* en el repositorio), pero en algunos casos podría ayudar a comprender cómo funcionan las cosas bajo el capó.
 
-La edición de un fragmento de contenido, que puede abarcar varias vistas (= páginas de HTML), es atómica. Como estas capacidades de edición atómica multivista no son un concepto AEM típico, los fragmentos de contenido utilizan lo que se denomina *sesión de edición*.
+La edición de un fragmento de contenido, que puede abarcar varias vistas (= páginas de HTML), es atómica. Como estas funciones de edición atómica de varias vistas no son un concepto AEM típico, los fragmentos de contenido utilizan lo que se denomina una *editar sesión*.
 
-Una sesión de edición se inicia cuando el usuario abre un fragmento de contenido en el editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando **Save** o **Cancel**.
+Una sesión de edición se inicia cuando el usuario abre un fragmento de contenido en el editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando una de las opciones siguientes: **Guardar** o **Cancelar**.
 
-Técnicamente, todas las ediciones se realizan en contenido *activo*, al igual que con el resto de la edición de AEM. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se hace nada específico, ya que toda la edición se ejecutó en contenido *activo*, por lo tanto todos los cambios se mantienen ya. Además, al hacer clic en **Guardar** se déclencheur el procesamiento en segundo plano (como la creación de información de búsqueda de texto completo y/o el manejo de recursos de medios mixtos).
+Técnicamente, todas las ediciones se realizan en *live* contenido, igual que con el resto de la edición AEM. Cuando se inicia la sesión de edición, se crea una versión del estado actual sin editar. Si un usuario cancela una edición, se restaura esa versión. Si el usuario hace clic en **Guardar**, no se hace nada específico, ya que toda la edición se ejecutó en *live* contenido, por lo tanto todos los cambios se mantienen ya. Además, haga clic en **Guardar** déclencheur el procesamiento en segundo plano (como la creación de información de búsqueda de texto completo y/o el manejo de recursos de medios mixtos).
 
 Existen algunas medidas de seguridad para los casos extremos; por ejemplo, si el usuario intenta salir del editor sin guardar o cancelar la sesión de edición. Además, hay disponible un guardado automático periódico para evitar la pérdida de datos.
-Tenga en cuenta que dos usuarios pueden editar el mismo fragmento de contenido simultáneamente y, por lo tanto, sobrescribir los cambios de los demás. Para evitarlo, es necesario bloquear el fragmento de contenido aplicando la acción *Checkout* de la administración de DAM en el fragmento.
+Tenga en cuenta que dos usuarios pueden editar el mismo fragmento de contenido simultáneamente y, por lo tanto, sobrescribir los cambios de los demás. Para evitarlo, el fragmento de contenido debe bloquearse aplicando la *Cierre de compra* en el fragmento.
 
 ## Ejemplos {#examples}
 
@@ -328,7 +326,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### Ejemplo: Especificación del intervalo de guardado automático {#example-specifying-the-auto-save-interval}
 
-El [intervalo de guardado automático](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (medido en segundos) se puede definir mediante el administrador de configuración (ConfMgr):
+La variable [intervalo de guardado automático](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions) (medido en segundos) se puede definir utilizando el administrador de configuración (ConfMgr):
 
 * Nodo: `<conf-root>/settings/dam/cfm/jcr:content`
 * Nombre de propiedad: `autoSaveInterval`
@@ -349,4 +347,4 @@ Si desea establecer un intervalo de guardado automático de 5 minutos, debe defi
 
 Para obtener más información, consulte
 
-* [Componentes principales: componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)  (recomendado)
+* [Componentes principales: componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recomendado)

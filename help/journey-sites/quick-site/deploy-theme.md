@@ -1,13 +1,13 @@
 ---
 title: Implementar el tema personalizado
 description: Obtenga información sobre cómo implementar el tema del sitio mediante la canalización.
-source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
+exl-id: fe065972-39db-4074-a802-85895c701efd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 1%
 
 ---
-
 
 # Implementar el tema personalizado {#deploy-your-customized-theme}
 

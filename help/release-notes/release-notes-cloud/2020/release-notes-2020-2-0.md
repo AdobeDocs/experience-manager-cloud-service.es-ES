@@ -1,14 +1,13 @@
 ---
 title: Notas de la versión 2020.2.0
 description: Notas de la versión 2020.2.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
 ---
-
 
 # Notas de la versión de AEM as a Cloud Service 2020.2.0 {#release-notes}
 
@@ -31,7 +30,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * El paso Escaneo de código tiene ahora un registro descargable.
 * La hoja de cálculo que contiene los problemas detectados durante el escaneo de código tiene ahora una columna con un vínculo a la documentación de la regla específica.
 
-### Corrección de errores {#bug-fixes}
+### Corrección de errores  {#bug-fixes}
 
 * Las políticas de seguridad del navegador a veces evitaban que ciertos botones de la pantalla de ejecución de la canalización funcionaran correctamente.
 * Los vínculos Información general, Entornos y Actividad a veces estaban disponibles en la página de aterrizaje de Cloud Manager.

@@ -1,19 +1,19 @@
 ---
 title: Markdown
 description: Comprender cómo el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle crear fácilmente contenido sin encabezado.
-feature: Fragmentos de contenido
+feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
 
 # Markdown {#markdown}
 
-Cuando esté [creando](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza la sintaxis *markdown* para permitirle escribir fácilmente contenido sin encabezado:
+Cuando [creación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza *markdown* sintaxis para permitirle escribir fácilmente contenido sin encabezado:
 
 ![editor de markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -181,7 +181,7 @@ Los bloques de código generalmente se utilizan para ilustrar el código fuente.
 
 ## Fuentes de barra invertida {#backslash-escapes}
 
-Puede utilizar las secuencias de escape de barra invertida para generar caracteres literales que tengan un significado especial en la sintaxis del formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una etiqueta HTML &lt;em> ), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
+Se pueden utilizar caracteres de escape de barra invertida para generar caracteres literales que tengan un significado especial en la sintaxis de formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una etiqueta HTML), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
 
     `\\*literal asterisks\\*`
 

@@ -9,7 +9,7 @@ exl-id: 871f294d-f251-4966-a021-39df65b613f0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -32,5 +32,5 @@ Antes de empezar a usar [!DNL AEM Forms] as a Cloud Service, revise los siguient
 
 ## Restricciones     {#limitations}
 
-* La compatibilidad con Forms adaptable basado en XFA no está disponible de forma predeterminada. Si tiene intención de utilizar Forms adaptable basado en XFA, póngase en contacto con el servicio de asistencia al Adobe con detalles de su caso de uso y requisitos específicos.
+* La compatibilidad con formularios adaptables basados en XFA no está disponible de forma predeterminada. Si tiene intención de utilizar formularios adaptable basados en XFA, póngase en contacto con el servicio de soporte de Adobe con detalles de su caso de uso y requisitos específicos.
 

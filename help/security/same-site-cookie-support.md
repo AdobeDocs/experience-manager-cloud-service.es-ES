@@ -3,7 +3,7 @@ title: Compatibilidad con cookies de SameSite para Adobe Experience Manager as a
 description: Compatibilidad con cookies de SameSite para Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 

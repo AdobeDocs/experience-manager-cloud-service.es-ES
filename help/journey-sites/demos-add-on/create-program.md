@@ -1,15 +1,15 @@
 ---
-title: Crear programa
+title: Creación de un programa
 description: Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 06287618-0328-40b1-bba8-84002283f23f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Crear programa {#creating-a-program}
+# Creación de un programa {#creating-a-program}
 
 Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento.
 

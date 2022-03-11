@@ -53,11 +53,11 @@ Activar la configuración del RGPD de imágenes inteligentes ajusta automáticam
 | Valores permitidos en la dirección URL de una imagen | Descripción |
 |---|---|
 | `dpr=off` | Desactive la optimización del RGPD en un nivel de URL de imagen individual. |
-| `dpr=on,dprValue` | Sobrescriba el valor de RGPD detectado por las imágenes inteligentes, con un valor personalizado (tal y como lo detecte cualquier lógica del lado del cliente u otro medio). El valor permitido para `dprValue` es cualquier número bueno que 0. Los valores especificados de 1.5, 2 o 3 son típicos. |
+| `dpr=on,dprValue` | Sobrescriba el valor de RGPD detectado por las imágenes inteligentes, con un valor personalizado (tal y como lo detecte cualquier lógica del lado del cliente u otro medio). Valor permitido para `dprValue` es cualquier número bueno que 0. Los valores especificados de 1.5, 2 o 3 son típicos. |
 
 >[!NOTE]
 >
->* Puede utilizar `dpr=on,dprValue` incluso si la configuración del RGPD a nivel de empresa está desactivada.
+>* Puede usar `dpr=on,dprValue` incluso si el ajuste del RGPD a nivel de empresa está desactivado.
 >* Debido a la optimización del RGPD, cuando la imagen resultante es buena que la configuración de Dynamic Media MaxPix, el ancho de MaxPix siempre se reconoce manteniendo la relación de aspecto de la imagen.
 
 
@@ -66,13 +66,13 @@ Activar la configuración del RGPD de imágenes inteligentes ajusta automáticam
 | 816 x 500 | 1 | 816 x 500 |
 | 816 x 500 | 2 | 1632x1000 |
 
-Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+Consulte también [Uso de imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 ### Acerca de la optimización del ancho de banda de la red {#network-bandwidth-optimization}
 
 Activar el ancho de banda de red ajusta automáticamente la calidad de imagen ofrecida en función del ancho de banda de red real. Para un ancho de banda de red deficiente, la optimización del RGPD se desactiva automáticamente, incluso si ya está activada.
 
-Si lo desea, su empresa puede excluir la optimización del ancho de banda de la red a nivel de imagen individual añadiendo `network=off` a la dirección URL de la imagen.
+Si lo desea, su empresa puede excluir la optimización del ancho de banda de la red a nivel de imagen individual añadiendo `network=off` a la URL de la imagen.
 
 | Valor permitido en la dirección URL de una imagen | Descripción |
 |---|---|
@@ -90,11 +90,11 @@ Mejoras en la última versión de imágenes inteligentes:
 
 * Se ha mejorado la clasificación SEO de Google para las páginas web que utilizan las últimas imágenes inteligentes.
 * Proporciona contenido optimizado inmediatamente (durante la ejecución).
-* Utiliza la tecnología Adobe Sensei para convertir según la calidad (`qlt`) especificada en la solicitud de imagen.
-* Las imágenes inteligentes se pueden desactivar utilizando el parámetro de URL `bfc`.
+* Utiliza la tecnología Adobe Sensei para convertir según la calidad (`qlt`) especificado en la solicitud de imagen.
+* Las imágenes inteligentes se pueden desactivar mediante la función `bfc` parámetro de URL.
 * TTL (Tiempo de vida) independiente. Anteriormente, para que funcionara la imagen inteligente era obligatorio un TTL mínimo de 12 horas.
 * Anteriormente, las imágenes originales y las imágenes derivadas se almacenaban en caché y era un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de caché de un solo paso.
-* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de las últimas imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Origen de permiso de temporización&quot;, &quot;Robot X&quot;, como se sugiere en [Agregue un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de las últimas imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Origen de permiso de temporización&quot;, &quot;Robot X&quot;, tal como se sugiere en [Añadir un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -145,7 +145,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## ¿Cómo funciona la imagen inteligente con los ajustes preestablecidos de imagen que ya están en uso? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Las imágenes inteligentes funcionan con los &quot;ajustes preestablecidos de imagen&quot; existentes. Observa todos los ajustes de la imagen excepto la calidad (`qlt`) y el formato (`fmt`) si el formato de archivo solicitado es JPEG o PNG. Para la conversión de formato, las imágenes inteligentes mantienen la fidelidad visual total definida por la configuración preestablecida de la imagen, pero con un tamaño de archivo más pequeño. Si el tamaño de la imagen original es menor que el que produce la imagen inteligente, se suministra la imagen original.
+Las imágenes inteligentes funcionan con los &quot;ajustes preestablecidos de imagen&quot; existentes. Observa todos los ajustes de la imagen excepto la calidad (`qlt`) y formato (`fmt`) si el formato de archivo solicitado es JPEG o PNG. Para la conversión de formato, las imágenes inteligentes mantienen la fidelidad visual total definida por la configuración preestablecida de la imagen, pero con un tamaño de archivo más pequeño. Si el tamaño de la imagen original es menor que el que produce la imagen inteligente, se suministra la imagen original.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
@@ -170,11 +170,11 @@ Las imágenes inteligentes funcionan con imágenes entregadas mediante HTTP o HT
 Para utilizar imágenes inteligentes, la cuenta de Experience Manager de Dynamic Media Classic o Dynamic Media de su empresa debe cumplir los siguientes requisitos:
 
 * Utilice la CDN (red de distribución de contenido) incluida en la Adobe como parte de su licencia.
-* Utilice un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
+* Usar un dominio dedicado (por ejemplo, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico (por ejemplo, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
 
-Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
+Para encontrar los dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en la cuenta o cuentas de su empresa.
 
-Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si actualmente utiliza un dominio genérico, puede solicitar el cambio a su propio dominio personalizado. Realice esta solicitud de transición cuando envíe un ticket de asistencia técnica.
+Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado]**. Si actualmente utiliza un dominio genérico, puede solicitar el cambio a su propio dominio personalizado. Realice esta solicitud de transición cuando envíe un ticket de asistencia técnica.
 
 El primer dominio personalizado no tiene coste adicional con una licencia de Dynamic Media.
 
@@ -192,25 +192,25 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
 | Europe, Middle East, Africa | 13 August 2021 | 
 | Asia-Pacific | 22 July 2021 | -->
 
-1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) de asistencia.
+1. [Utilice el Admin Console para crear un caso de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
 1. Proporcione la siguiente información en su caso de asistencia:
 
    1. Nombre de contacto principal, correo electrónico, teléfono.
    1. Todos los dominios que se activarán para las imágenes inteligentes (es decir, `images.company.com` o `mycompany.scene7.com`).
 
-      Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
+      Para encontrar los dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en la cuenta o cuentas de su empresa.
 
       Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo denominado **[!UICONTROL Published Server Name]**.
+      Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado]**.
    1. Compruebe que está utilizando la CDN a través de la Adobe y que no se administra con una relación directa.
-   1. Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com` y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   1. Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com`y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
+      Para encontrar los dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en la cuenta o cuentas de su empresa.
 
       Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+      Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado]**. Si está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
    1. Indique si desea que funcione a través de HTTP/2.
 
 1. El servicio de asistencia al cliente de Adobe le agrega a la lista de espera de cliente de imágenes inteligentes en función del orden en que se envíen las solicitudes.
@@ -219,8 +219,8 @@ De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de
 1. El Servicio de atención al cliente le notifica cuando haya terminado.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo la CDN almacena en caché los recursos. Para cambiar esta configuración:
 
-   1. Si utiliza Dynamic Media Classic, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**. Establezca el valor **[!UICONTROL Tiempo de caché de cliente predeterminado en activo]** en 24 o más.
-   1. Si usa Dynamic Media, siga [estas instrucciones](config-dm.md). Establezca el valor **[!UICONTROL Expiration]** 24 horas o más.
+   1. Si utiliza Dynamic Media Classic, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**. Configure las variables **[!UICONTROL Tiempo de vida predeterminado de la caché del cliente]** a 24 o más.
+   1. Si usa Dynamic Media, siga [estas instrucciones](config-dm.md). Configure las variables **[!UICONTROL Caducidad]** 24 horas o más.
 
 ## ¿Cuándo puedo esperar que mi cuenta esté habilitada con imágenes inteligentes? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -239,12 +239,12 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan correctamente?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic o Adobe Experience Manager - Dynamic Media en el explorador.
-1. Para abrir el panel del desarrollador de Chrome, vaya a **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** en el explorador. O bien, elija cualquier herramienta para desarrolladores de navegador que desee.
+1. Abra el panel para desarrolladores de Chrome en **[!UICONTROL Ver]** > **[!UICONTROL Desarrollador]** > **[!UICONTROL Herramientas para desarrolladores]** en el navegador. O bien, elija cualquier herramienta para desarrolladores de navegador que desee.
 
 1. Asegúrese de que la caché esté deshabilitada cuando las herramientas para desarrolladores estén abiertas.
 
-   * En Windows®, vaya a la configuración del panel de herramientas para desarrolladores y, a continuación, active la casilla **[!UICONTROL Deshabilitar caché (mientras devtools está abierta)]**.
-   * En macOS, en el panel del desarrollador, en la pestaña **[!UICONTROL Network]**, seleccione **[!UICONTROL disable cache]**.
+   * En Windows®, vaya a la configuración del panel de herramientas para desarrolladores y, a continuación, seleccione **[!UICONTROL Deshabilitar la caché (mientras devtools está abierta)]** en el Navegador.
+   * En macOS, en el panel del desarrollador, debajo de la sección **[!UICONTROL Red]** , seleccione **[!UICONTROL deshabilitar caché]**.
 
 1. Observe que el tipo de contenido se transforma al formato adecuado. La siguiente captura de pantalla muestra una imagen PNG que se está convirtiendo dinámicamente a WebP en Chrome.
 1. Repita esta prueba en distintos navegadores y condiciones de usuario.
@@ -278,10 +278,10 @@ Las imágenes inteligentes determinan si la conversión es beneficiosa o no. Dev
 ¿Cómo funciona la optimización del RGPD de imágenes inteligentes con los componentes de Adobe Experience Manager Sites y los visores de Dynamic Media?
 
 * Los componentes principales de Experience Manager Sites están configurados de forma predeterminada para la optimización del RGPD. Para evitar imágenes sobredimensionadas debido a la optimización del RGPD de imágenes inteligentes en el lado del servidor, `dpr=off` siempre se añade a las imágenes de Dynamic Media de los componentes principales de Experience Manager Sites.
-* Dado que el componente base de Dynamic Media está configurado de forma predeterminada para la optimización del RGPD, para evitar imágenes de tamaño excesivo debido a la optimización del RGPD de imágenes inteligentes en el servidor, `dpr=off` siempre se añade a las imágenes de los componentes de Dynamic Media Foundation. Aunque el cliente anule la selección de la optimización de RGPD en el componente de base de DM, el RGPD de imágenes inteligentes del lado del servidor no se inicia. En resumen, en el componente de base de DM, la optimización del RGPD entra en vigor solo en función de la configuración del nivel de componente de base de DM .
+* Dado que el componente base de Dynamic Media está configurado de forma predeterminada para la optimización del RGPD, para evitar imágenes de gran tamaño debido a la optimización del RGPD de imágenes inteligentes en el servidor, `dpr=off` siempre se añade a las imágenes de los componentes de Dynamic Media Foundation. Aunque el cliente anule la selección de la optimización de RGPD en el componente de base de DM, el RGPD de imágenes inteligentes del lado del servidor no se inicia. En resumen, en el componente de base de DM, la optimización del RGPD entra en vigor solo en función de la configuración del nivel de componente de base de DM .
 * Cualquier optimización del RGPD del lado del visor funciona junto con la optimización del RGPD de imágenes inteligentes del lado del servidor y no genera imágenes de tamaño excesivo. En otras palabras, independientemente de dónde gestione el visor el RGPD, como la vista principal solo en un visor con zoom habilitado, no se activan los valores del RGPD de imágenes inteligentes del lado del servidor. Del mismo modo, siempre que los elementos del visualizador, como muestras y miniaturas, no tengan gestión de RGPD, se activa el valor RGPD de imágenes inteligentes del lado del servidor.
 
-Consulte también [Al trabajar con imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+Consulte también [Uso de imágenes](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Trabajar con Recorte inteligente](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 >[!MORELIKETHIS]
 >

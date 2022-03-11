@@ -2,12 +2,12 @@
 title: Etiquetar recursos automáticamente con [!DNL Adobe Sensei] servicio inteligente
 description: Etiquete los recursos con un servicio inteligente artificialmente que aplique etiquetas comerciales contextuales y descriptivas.
 contentOwner: AG
-feature: Etiquetas inteligentes,Etiquetado
+feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2376'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ Las organizaciones que se ocupan de los recursos digitales utilizan cada vez má
 
 En comparación con los vocabularios de lenguaje natural, el etiquetado basado en la taxonomía empresarial ayuda a alinear los activos con el negocio de una empresa y garantiza que los activos más relevantes aparezcan en las búsquedas. Por ejemplo, un fabricante de coches puede etiquetar imágenes de coche con nombres de modelo, de modo que solo se muestren imágenes relevantes cuando se realice una búsqueda para diseñar una campaña de promoción.
 
-En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. [!DNL Experience Manager Assets] de forma predeterminada, aplica etiquetas inteligentes a los recursos cargados.
+En segundo plano, la funcionalidad utiliza el marco de trabajo artificialmente inteligente de [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos. [!DNL Experience Manager Assets] de forma predeterminada, aplica etiquetas inteligentes a los recursos cargados.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -29,15 +29,15 @@ En segundo plano, la funcionalidad utiliza el marco artificialmente inteligente 
 
 Puede etiquetar los siguientes tipos de recursos:
 
-* **Imágenes**: Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente de Adobe Sensei. Usted [crea un modelo de capacitación](#train-model) y luego las imágenes cargadas se etiquetan automáticamente. Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG.
-* **Recursos basados en texto**:  [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto compatibles al cargarlos.
-* **Recursos de vídeo**: El etiquetado de vídeo está habilitado de forma predeterminada en  [!DNL Adobe Experience Manager] as a  [!DNL Cloud Service]. [Los vídeos se ](/help/assets/smart-tags-video-assets.md) etiquetan automáticamente cuando se cargan nuevos vídeos o se reprocesan los existentes.
+* **Imágenes**: Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente de Adobe Sensei. You [crear un modelo de formación](#train-model) y, a continuación, las imágenes cargadas se etiquetan automáticamente. Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG.
+* **Recursos basados en texto**: [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto compatibles al cargarlos.
+* **Recursos de vídeo**: El etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. [Los vídeos están etiquetados automáticamente](/help/assets/smart-tags-video-assets.md) al cargar vídeos nuevos o reprocesar los existentes.
 
 | Imágenes (tipos MIME) | Recursos basados en texto (formatos de archivo) | Recursos de vídeo (formatos de archivo y códecs) |
 |----|-----|------|
 | image/jpeg | CSV | MP4 (H264/AVC) |
 | image/tiff | DOC | MKV (H264/AVC) |
-| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
+| image/png | DOCX | MOV (H264/AVC, JPEG de movimiento) |
 | image/bmp | HTML | AVI (vídeo4) |
 | image/gif | PDF | FLV (H264/AVC, vp6f) |
 | image/pjpeg | PPT | WMV (WMV2) |
@@ -56,32 +56,32 @@ Puede etiquetar los siguientes tipos de recursos:
 
 [!DNL Experience Manager] agrega automáticamente las etiquetas inteligentes a los recursos basados en texto y a los vídeos de forma predeterminada. Para agregar automáticamente etiquetas inteligentes a imágenes, complete las siguientes tareas.
 
-* [Comprender los modelos y las directrices de etiquetas](#understand-tag-models-guidelines).
-* [Capacite al modelo](#train-model).
-* [Etiquete sus recursos digitales](#tag-assets).
-* [Administre las etiquetas y las búsquedas](#manage-smart-tags-and-searches).
+* [Explicación de los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
+* [Capacitar al modelo](#train-model).
+* [Etiquetado de recursos digitales](#tag-assets).
+* [Administrar las etiquetas y las búsquedas](#manage-smart-tags-and-searches).
 
 ## Explicación de los modelos de etiquetas y las directrices {#understand-tag-models-guidelines}
 
 Un modelo de etiqueta es un grupo de etiquetas relacionadas que están asociadas con varios aspectos visuales de las imágenes que se están etiquetando. Las etiquetas están relacionadas con los aspectos visuales de las imágenes, que son claramente diferentes, de modo que, cuando se aplican, las etiquetas ayudan a buscar tipos específicos de imágenes. Por ejemplo, una colección de zapatos puede tener etiquetas diferentes, pero todas las etiquetas están relacionadas con zapatos y pueden pertenecer al mismo modelo de etiquetas. Cuando se aplican, las etiquetas ayudan a encontrar diferentes tipos de zapatos, por ejemplo por diseño o por uso. Para comprender la representación de contenido de un modelo de formación en [!DNL Experience Manager], visualice un modelo de formación como una entidad de nivel superior compuesta por un grupo de etiquetas agregadas manualmente e imágenes de ejemplo para cada etiqueta. Cada etiqueta se puede aplicar exclusivamente a una imagen.
 
-Antes de crear un modelo de etiquetas y entrenar el servicio, identifique un conjunto de etiquetas únicas que describan mejor los objetos de las imágenes en el contexto de su negocio. Asegúrese de que los recursos del conjunto depurado cumplen [las directrices de formación](#training-guidelines).
+Antes de crear un modelo de etiquetas y entrenar el servicio, identifique un conjunto de etiquetas únicas que describan mejor los objetos de las imágenes en el contexto de su negocio. Asegúrese de que los recursos del conjunto depurado se ajustan a [las directrices de formación](#training-guidelines).
 
 ### Directrices de formación {#training-guidelines}
 
 Asegúrese de que las imágenes del conjunto de formación cumplen las siguientes directrices:
 
-**Cantidad y tamaño:** Mínimo de 10 imágenes y máximo de 50 imágenes por etiqueta.
+**Cantidad y tamaño:** Mínimo de 10 imágenes y máximo 50 imágenes por etiqueta.
 
-**Coherencia**: Asegúrese de que las imágenes de una etiqueta son visualmente similares. Es mejor añadir las etiquetas de los mismos aspectos visuales (como el mismo tipo de objetos en una imagen) juntos en un único modelo de etiqueta. Por ejemplo, no es aconsejable etiquetar todas estas imágenes como `my-party` (para formación) porque no son visualmente similares.
+**Coherencia**: Asegúrese de que las imágenes de una etiqueta son visualmente similares. Es mejor añadir las etiquetas de los mismos aspectos visuales (como el mismo tipo de objetos en una imagen) juntos en un único modelo de etiqueta. Por ejemplo, no es buena idea etiquetar todas estas imágenes como `my-party` (para formación) porque no son visualmente similares.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coherence.png)
 
-**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de capacitación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
+**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprende a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *modelo-descendente-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coverage_1.png)
 
-**Distracción/obstrucción**: El servicio forma mejor con imágenes que tienen menos distracción (fondos destacados, acompañamientos no relacionados, como objetos/personas con el tema principal). Por ejemplo, para la etiqueta *casual-shoe*, la segunda imagen no es un buen candidato para la formación.
+**Distracción/obstrucción**: El servicio forma mejor con imágenes que tienen menos distracción (fondos destacados, acompañamientos no relacionados, como objetos/personas con el tema principal). Por ejemplo, para la etiqueta *zapato casual*, la segunda imagen no es un buen candidato para la formación.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/distraction.png)
 
@@ -93,7 +93,7 @@ Asegúrese de que las imágenes del conjunto de formación cumplen las siguiente
 
 **Número de ejemplos**: Para cada etiqueta, añada al menos diez ejemplos. Sin embargo, Adobe recomienda unos 30 ejemplos. Se admite un máximo de 50 ejemplos por etiqueta.
 
-**Prevención de falsos positivos y conflictos**: Adobe recomienda crear un modelo de etiqueta única para un aspecto visual único. Organice los modelos de etiquetas de forma que se eviten las etiquetas superpuestas entre los modelos. Por ejemplo, no utilice etiquetas comunes como `sneakers` en dos modelos de etiquetas diferentes: `shoes` y `footwear`. El proceso de formación sobrescribe un modelo de etiquetas entrenado con el otro para una palabra clave común.
+**Prevención de falsos positivos y conflictos**: Adobe recomienda crear un modelo de etiqueta única para un aspecto visual único. Organice los modelos de etiquetas de forma que se eviten las etiquetas superpuestas entre los modelos. Por ejemplo, no utilice etiquetas comunes como `sneakers` en dos nombres de modelos de etiquetas diferentes `shoes` y `footwear`. El proceso de formación sobrescribe un modelo de etiquetas entrenado con el otro para una palabra clave común.
 
 **Ejemplos**: Algunos ejemplos más para obtener instrucciones son:
 
@@ -116,15 +116,15 @@ No se puede deshacer la formación. Las directrices anteriores le ayudarán a el
 Para crear y entrenar un modelo para etiquetas específicas de su empresa, siga estos pasos:
 
 1. Cree las etiquetas necesarias y la estructura de etiquetas adecuada. Cargue las imágenes relevantes en el repositorio DAM.
-1. En la interfaz de usuario [!DNL Experience Manager], acceda a **[!UICONTROL Assets]** > **[!UICONTROL Formación sobre etiquetas inteligentes]**.
+1. En [!DNL Experience Manager] interfaz de usuario, acceso **[!UICONTROL Recursos]** > **[!UICONTROL Formación de etiquetas inteligentes]**.
 1. Haga clic en **[!UICONTROL Crear]**. Proporcione un **[!UICONTROL Título]**, **[!UICONTROL Descripción]**.
-1. Busque y seleccione las etiquetas de las etiquetas existentes en `cq:tags` para las que desea entrenar el modelo. Haga clic en **[!UICONTROL Siguiente]**. 
-1. En el cuadro de diálogo **[!UICONTROL Seleccionar recursos]**, haga clic en **[!UICONTROL Agregar recursos]** con cada etiqueta. Busque en el repositorio de DAM o busque el repositorio para seleccionar al menos 10 y como máximo 50 imágenes. Seleccione los recursos y no la carpeta. Una vez seleccionadas las imágenes, haga clic en **[!UICONTROL Seleccionar]**.
+1. Busque y seleccione las etiquetas de las etiquetas existentes en `cq:tags` para el que quieres entrenar el modelo. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En el **[!UICONTROL Seleccionar recursos]** cuadro de diálogo, haga clic en **[!UICONTROL Agregar recursos]** en cada etiqueta. Busque en el repositorio de DAM o busque el repositorio para seleccionar al menos 10 y como máximo 50 imágenes. Seleccione los recursos y no la carpeta. Una vez seleccionadas las imágenes, haga clic en **[!UICONTROL Select]**.
 
    ![Ver el estado de la formación](assets/smart-tags-training-status.png)
 
-1. Para obtener una vista previa de las miniaturas de las imágenes seleccionadas, haga clic en el acordeón delante de una etiqueta. Puede modificar la selección haciendo clic en **[!UICONTROL Add Assets]**. Una vez que esté satisfecho con la selección, haga clic en **[!UICONTROL Submit]**. La interfaz de usuario muestra una notificación en la parte inferior de la página que indica que se ha iniciado la formación.
-1. Compruebe el estado de la formación en la columna **[!UICONTROL Status]** para cada modelo de etiquetas. Los estados posibles son [!UICONTROL Pendiente], [!UICONTROL Entrenado] y [!UICONTROL Fallido].
+1. Para obtener una vista previa de las miniaturas de las imágenes seleccionadas, haga clic en el acordeón delante de una etiqueta. Puede modificar la selección haciendo clic en **[!UICONTROL Agregar recursos]**. Una vez que esté satisfecho con la selección, haga clic en **[!UICONTROL Submit]**. La interfaz de usuario muestra una notificación en la parte inferior de la página que indica que se ha iniciado la formación.
+1. Compruebe el estado de la formación en el **[!UICONTROL Estado]** para cada modelo de etiqueta. Los estados posibles son [!UICONTROL Pendiente], [!UICONTROL Capacitado]y [!UICONTROL Error].
 
 ![Flujo de trabajo para entrenar el modelo de etiquetado para etiquetas inteligentes](assets/smart-tag-model-training-flow.png)
 
@@ -134,12 +134,12 @@ Para crear y entrenar un modelo para etiquetas específicas de su empresa, siga 
 
 Para comprobar si el servicio Etiquetas inteligentes está formado sobre las etiquetas en el conjunto de recursos de formación, revise el informe del flujo de trabajo de formación desde la consola Informes .
 
-1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
-1. En la página **[!UICONTROL Informes de recursos]**, haga clic en **[!UICONTROL Crear]**.
-1. Seleccione el informe **[!UICONTROL Formación sobre etiquetas inteligentes]** y, a continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
-1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, haga clic en **[!UICONTROL Create]** en la barra de herramientas.
+1. En [!DNL Experience Manager] interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
+1. En el **[!UICONTROL Informes de recursos]** página, haga clic en **[!UICONTROL Crear]**.
+1. Seleccione el **[!UICONTROL Formación sobre etiquetas inteligentes]** informe y, a continuación, haga clic en **[!UICONTROL Siguiente]** en la barra de herramientas.
+1. Especifique un título y una descripción para el informe. En **[!UICONTROL Programar informe]**, deje seleccionada la opción **[!UICONTROL Ahora]**. Si desea programar el informe para más adelante, seleccione **[!UICONTROL Más adelante]** e indique una fecha y una hora. A continuación, haga clic en **[!UICONTROL Crear]** en la barra de herramientas.
 1. En la página **[!UICONTROL Informes de recursos]**, seleccione el informe que ha generado. Para ver el informe, haga clic en **[!UICONTROL Ver]** en la barra de herramientas.
-1. Revise los detalles del informe. El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde de la columna **[!UICONTROL Estado de formación]** indica que el servicio Etiquetas inteligentes ha recibido formación para la etiqueta. El color amarillo indica que el servicio está parcialmente entrenado para una etiqueta en particular. Para formar completamente el servicio para una etiqueta, añada más imágenes con la etiqueta en particular y ejecute el flujo de trabajo de formación. Si no ve las etiquetas en este informe, ejecute de nuevo el flujo de trabajo de formación para estas etiquetas.Etiquetas
+1. Revise los detalles del informe. El informe muestra el estado de la formación de las etiquetas que ha entrenado. El color verde del **[!UICONTROL Estado de la formación]** indica que el servicio Etiquetas inteligentes está entrenado para la etiqueta. El color amarillo indica que el servicio está parcialmente entrenado para una etiqueta en particular. Para formar completamente el servicio para una etiqueta, añada más imágenes con la etiqueta en particular y ejecute el flujo de trabajo de formación. Si no ve las etiquetas en este informe, ejecute de nuevo el flujo de trabajo de formación para estas etiquetas.Etiquetas
 1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como hoja de cálculo.
 
 <!--
@@ -179,11 +179,11 @@ Para comprobar si el servicio Etiquetas inteligentes está formado sobre las eti
 
 ## Etiquetado de recursos con etiquetas inteligentes {#tag-assets}
 
-Todos los tipos de recursos compatibles se etiquetan automáticamente con [!DNL Experience Manager Assets] al cargarse. El etiquetado está habilitado y funciona de forma predeterminada. [!DNL Experience Manager] aplica las etiquetas adecuadas en tiempo casi real.  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Todos los tipos de recursos compatibles se etiquetan automáticamente mediante [!DNL Experience Manager Assets] cuando se cargue. El etiquetado está habilitado y funciona de forma predeterminada. [!DNL Experience Manager] aplica las etiquetas adecuadas en tiempo casi real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Para imágenes y vídeos, las etiquetas inteligentes se basan en un aspecto visual.
 
-* Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. En el caso de los recursos admitidos, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave del texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.
+* Para los recursos basados en texto, la eficacia de las etiquetas inteligentes no depende de la cantidad de texto del recurso, sino de las palabras clave o entidades relevantes presentes en el texto del recurso. Para los recursos basados en texto, las etiquetas inteligentes son las palabras clave que aparecen en el texto, pero las que mejor describen el recurso. Para recursos compatibles, [!DNL Experience Manager] ya extrae el texto, que luego se indexa y se utiliza para buscar los recursos. Sin embargo, las etiquetas inteligentes basadas en palabras clave del texto proporcionan una faceta de búsqueda dedicada, estructurada y de mayor prioridad. Esto último ayuda a mejorar la detección de recursos en comparación con un índice de búsqueda.
 
 ## Administración de etiquetas inteligentes y búsquedas de recursos {#manage-smart-tags-and-searches}
 
@@ -199,21 +199,21 @@ Para moderar las etiquetas inteligentes de los recursos digitales:
 
 1. Para identificar los recursos digitales que no considere relevantes para la búsqueda, revise los resultados de la búsqueda.
 
-1. Seleccione un recurso y, a continuación, seleccione ![Administrar etiquetas ](assets/do-not-localize/manage-tags-icon.png) en la barra de herramientas.
+1. Seleccione un recurso y, a continuación, seleccione ![Icono Administrar etiquetas](assets/do-not-localize/manage-tags-icon.png) en la barra de herramientas.
 
-1. En la página **[!UICONTROL Administrar etiquetas]**, inspeccione las etiquetas. Si no desea que se busque el recurso en función de una etiqueta específica, seleccione la etiqueta y seleccione ![Eliminar icono](assets/do-not-localize/delete-icon.png) en la barra de herramientas. También puede seleccionar el símbolo `X` situado junto a la etiqueta.
+1. En el **[!UICONTROL Administrar etiquetas]** , inspeccione las etiquetas . Si no desea que se busque el recurso en función de una etiqueta específica, seleccione la etiqueta y seleccione ![Icono Eliminar](assets/do-not-localize/delete-icon.png) en la barra de herramientas. También puede seleccionar `X` situado junto a la etiqueta.
 
-1. Para asignar una clasificación superior a una etiqueta, seleccione la etiqueta y seleccione ![Icono de promoción](assets/do-not-localize/promote-icon.png) en la barra de herramientas. La etiqueta que promocione se moverá a la sección **[!UICONTROL Etiquetas]**.
+1. Para asignar una clasificación superior a una etiqueta, seleccione la etiqueta y seleccione ![Icono Promocionar](assets/do-not-localize/promote-icon.png) en la barra de herramientas. La etiqueta que promocione se moverá a la variable **[!UICONTROL Etiquetas]** para obtener más información.
 
-1. Seleccione **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL Aceptar]** para cerrar el cuadro de diálogo [!UICONTROL Éxito].
+1. Select **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL OK]** para cerrar el [!UICONTROL Correcto] diálogo.
 
-1. Vaya a la página [!UICONTROL Propiedades] del recurso. Observe que a la etiqueta que promocionó se le asigna una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
+1. Vaya a la [!UICONTROL Propiedades] para el recurso. Observe que a la etiqueta que promocionó se le asigna una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
 
-### Comprender los [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understand-search}
+### Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understand-search}
 
-De forma predeterminada, la búsqueda [!DNL Experience Manager] combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, considere la búsqueda de `woman running`. Los recursos con solo `woman` o con `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, en una consulta de búsqueda de este tipo aparece un recurso etiquetado con `woman` o `running` etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
+De forma predeterminada, [!DNL Experience Manager] la búsqueda combina los términos de búsqueda con un `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. Al usar etiquetas inteligentes, se agrega un `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, piense en buscar `woman running`. Recursos con solo `woman` o solo `running` de forma predeterminada, las palabras clave de los metadatos no aparecen en los resultados de búsqueda. Sin embargo, un recurso etiquetado con `woman` o `running` el uso de etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Así que los resultados de la búsqueda son una combinación de:
 
-* Recursos con palabras clave `woman` y `running` en los metadatos.
+* Recursos con `woman` y `running` palabras clave en los metadatos.
 
 * Recursos inteligentes etiquetados con cualquiera de las palabras clave.
 
@@ -221,7 +221,7 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 
 1. coincidencias de `woman running` en los distintos campos de metadatos.
 1. coincidencias de `woman running` en etiquetas inteligentes.
-1. coincidencias de `woman` o de `running` en las etiquetas inteligentes.
+1. coincidencias de `woman` o `running` en etiquetas inteligentes.
 
 ## Limitaciones relacionadas con el etiquetado y prácticas recomendadas {#limitations}
 
@@ -229,7 +229,7 @@ El etiquetado inteligente mejorado se basa en modelos de aprendizaje de imágene
 
 * Incapacidad para reconocer sutiles diferencias en imágenes. Por ejemplo, camisas ajustadas a la perfección frente a camisas ajustadas a la norma.
 * Incapacidad para identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisas.
-* El etiquetado es compatible con los idiomas compatibles con [!DNL Experience Manager]. Para obtener una lista de idiomas, consulte las [notas de la versión del servicio de contenido inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* El etiquetado es compatible con los idiomas que [!DNL Experience Manager] admite . Para obtener una lista de idiomas, consulte [Notas de la versión del servicio de contenido inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 * Las etiquetas que no se gestionan están relacionadas con:
 
    * Aspectos no visuales, abstractos. Por ejemplo, el año o la temporada de lanzamiento de un producto, el estado de ánimo o la emoción que evoca una imagen y una connotación subjetiva de un vídeo.
@@ -239,7 +239,7 @@ Para entrenar el modelo, utilice las imágenes más adecuadas. La formación no 
 
 <!-- TBD: Add limitations related to text files. -->
 
-Para buscar archivos con etiquetas inteligentes (normales o mejoradas), utilice la búsqueda [!DNL Assets] (búsqueda de texto completo). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
+Para buscar archivos con etiquetas inteligentes (normales o mejoradas), utilice el [!DNL Assets] búsqueda (búsqueda de texto completo). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
 
 >[!NOTE]
 >

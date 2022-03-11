@@ -365,7 +365,6 @@ Puede asegurarse de que las páginas web tengan la estructura adecuada mediante 
       >
       >Aunque son igual de eficaces, `<strong>` y `<em>` son preferibles porque son HTML semánticamente correctos. Su equipo de desarrollo puede configurar el RTE para utilizar `<strong>` y `<em>` (en lugar de `<b>` y `<i>`) cuando desarrolle su proyecto.
 
-
 * **Tablas de datos complejos**: en algunos casos en los que hay tablas complejas con dos o más niveles de encabezados, las Propiedades de la tabla básicas pueden no ser suficientes para proporcionar toda la información estructural necesaria. Para este tipo de tablas complejas es necesario crear relaciones directas entre los encabezados y sus celdas utilizando el **encabezado** y **atributos de identificación**.
 
    >[!NOTE]

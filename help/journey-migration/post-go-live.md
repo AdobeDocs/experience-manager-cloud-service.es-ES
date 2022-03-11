@@ -1,13 +1,13 @@
 ---
 title: Publicar Go-Live
 description: Obtenga información sobre cómo monitorizar los problemas y mejorar el rendimiento
-source-git-commit: c9143d77e70476beb7f7dd162c36aeda8d1be506
+exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
-
 
 # Publicar Go-Live {#post-go-live}
 
@@ -61,7 +61,7 @@ Consulte [Acceso y administración de registros](/help/implementing/cloud-manage
 >abstract="Póngase en contacto con nuestro equipo de asistencia AEM para obtener aclaraciones o para solucionar cualquier problema."
 >additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Compatibilidad con el Experience Cloud"
 
-Si tiene alguna duda sobre el acceso al Cloud Service, póngase en contacto con su representante del Adobe o [Compatibilidad con el Experience Cloud](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) para obtener más información.
+Si tiene alguna duda sobre el acceso al Cloud Service, póngase en contacto con su representante del Adobe o [Compatibilidad con el Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información.
 
 ## Aprendizaje de documentos {#document-learnings}
 

@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Organizar sus recursos digitales {#organize-digital-assets}
 
-Todos los recursos digitales, metadatos y contenido de documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta por completo los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
+Todos los recursos digitales, metadatos y contenido de los documentos de Microsoft® Office y PDF se extraen y se pueden buscar. La búsqueda permite un filtrado sofisticado de los recursos y respeta por completo los permisos adecuados. Los metadatos se tratan en detalle en Metadatos de Digital Asset Management.
 
 [!DNL Experience Manager Assets] admite varias formas de organizar contenido. Puede organizarlos de forma jerárquica mediante carpetas o puede organizarlos de forma desordenada y ad-hoc, por ejemplo etiquetas. Los usuarios pueden editar etiquetas en el Editor de recursos DAM, donde se muestran subrecursos, representaciones y metadatos.
 
@@ -59,18 +59,18 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
 * Normalmente, su repositorio de recursos digitales siempre está creciendo. Por lo tanto, es importante formalizar el uso de los metadatos, la estructura de carpetas y la nomenclatura de archivos al principio del ciclo de creación de contenido.
 * Utilice carpetas solo para imponer una estructura de almacenamiento coherente para sus recursos digitales. Esta coherencia le ayuda a procesar y administrar mejor sus recursos. Por ejemplo, los recursos colocados en los siguientes tipos de carpetas pueden ayudarle a separar los recursos:
 
-   * **Carpetas** de desarrollo: contiene recursos digitales en los que está trabajando.
-   * **Carpetas** de cliente: contiene recursos digitales basados en clientes o nombres de proyectos.
-   * **Carpetas** principales: contiene recursos digitales originales.
-   * **Carpetas** de representación: contiene representaciones y copias de los recursos digitales de origen originales.
-   * **Carpetas** de tamaño de archivo: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
-   * **Carpetas** de ensayo: contiene recursos digitales listos para publicarse en el sitio web.
-   * **Carpetas** de tipo MIME: contiene recursos digitales específicos de tipos MIME, como imágenes, documentos y multimedia.
+   * **Carpetas de desarrollo**: contiene recursos digitales en los que está trabajando.
+   * **Carpetas de cliente**: contiene recursos digitales basados en clientes o nombres de proyectos.
+   * **Carpetas principales**: contiene recursos digitales originales.
+   * **Carpetas de representación**: contiene representaciones y copias de los recursos digitales de origen originales.
+   * **Carpetas de tamaño de archivo**: contiene recursos digitales basados en tamaños de archivo pequeños, medianos o grandes.
+   * **Carpetas de ensayo**: contiene recursos digitales listos para publicarse en el sitio web.
+   * **Carpetas de tipo MIME**: contiene recursos digitales específicos de tipos MIME, como imágenes, documentos y multimedia.
    * **Archivar carpetas**: contiene activos digitales retirados.
-   * **Carpetas** basadas en fechas: contiene recursos digitales basados en una fecha de creación o una fecha de última modificación.
+   * **Carpetas basadas en fechas**: contiene recursos digitales basados en una fecha de creación o una fecha de última modificación.
 
 * Cree un directorio de carpetas que no es probable que cambien para que cualquier personalización o automatización siga funcionando. Por ejemplo, los perfiles de procesamiento asignados siguen funcionando.
-* Si un recurso ya está publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicarlo desde su nueva ubicación. La ubicación del recurso publicado originalmente sigue estando disponible junto con el recurso recién republicado. El recurso publicado original, sin embargo, está *perdido* en [!DNL Experience Manager] y no se puede cancelar la publicación. Por lo tanto, se recomienda cancelar la publicación de un recurso y moverlo a una carpeta diferente.
+* Si un recurso ya está publicado, utilice [!DNL Experience Manager] para mover el recurso a otra carpeta y volver a publicar desde su nueva ubicación. La ubicación del recurso publicado originalmente sigue estando disponible junto con el recurso recién republicado. Sin embargo, el recurso publicado originalmente es *perdido* a [!DNL Experience Manager] y no se pueden cancelar. Por lo tanto, se recomienda cancelar la publicación de un recurso y moverlo a una carpeta diferente.
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 
@@ -85,7 +85,7 @@ Para obtener más información, consulte los siguientes artículos:
 
 ## Organizar como colecciones {#organize-as-collections}
 
-Con las colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de la forma en que las utilice, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas, colecciones y colecciones que extraen recursos en función de criterios de búsqueda. Puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con distintos niveles de privilegios de acceso, visualización y edición.
+Con colecciones de recursos en [!DNL Experience Manager Assets], puede optimizar la capacidad de crear, editar y compartir recursos entre usuarios. Cree varios tipos de colecciones en función de la forma en que las utilice, incluidas las colecciones que contienen una lista de referencia estática de recursos, carpetas, colecciones y colecciones que extraen recursos en función de criterios de búsqueda. Puede crear colecciones con recursos de distintas ubicaciones y compartirlas con varios usuarios con distintos niveles de privilegios de acceso, visualización y edición.
 
 Para obtener más información, consulte [administrar colecciones](manage-collections.md)
 

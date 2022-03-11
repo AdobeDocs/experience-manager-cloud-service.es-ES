@@ -1,140 +1,140 @@
 ---
-title: Configure the Translation Connector
-description: Learn how to connect AEM to a translation service.
+title: Configuración del conector de traducción
+description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Configure the Translation Connector {#configure-connector}
+# Configuración del conector de traducción {#configure-connector}
 
-Learn how to connect AEM to a translation service.
+Aprenda a conectar AEM a un servicio de traducción.
 
-## The Story So Far {#story-so-far}
+## La historia hasta ahora {#story-so-far}
 
-[](learn-about.md)
+En el documento anterior del recorrido de traducción sin AEM, [Introducción a AEM traducción sin encabezado](learn-about.md) ha aprendido a organizar su contenido sin encabezado y cómo funcionan AEM herramientas de traducción, y ahora debería:
 
-* Understand the importance of content structure to translation.
-* Understand how AEM stores headless content.
-* Be familiar with AEM&#39;s translation tools.
+* Comprender la importancia de la estructura de contenido para la traducción.
+* Comprenda cómo AEM almacena contenido sin encabezado.
+* Familiarícese con AEM herramientas de traducción.
 
-This article builds on those fundamentals so you can take the first configuration step and set up a translation service, which you will use later in the journey to translate your content.
+Este artículo se basa en estos aspectos básicos para que pueda realizar el primer paso de configuración y configurar un servicio de traducción, que utilizará más adelante en el recorrido para traducir el contenido.
 
 ## Objetivo {#objective}
 
-This document helps you understand how to set up an AEM connector to your chosen translation service. After reading you should:
+Este documento le ayuda a comprender cómo configurar un conector de AEM en el servicio de traducción seleccionado. Después de leer, debe:
 
-* Understand the important parameters of the Translation Integration Framework in AEM.
-* Be able to set up your own connection to your translation service.
+* Comprender los parámetros importantes del marco de integración de traducción en AEM.
+* Puede configurar su propia conexión con el servicio de traducción.
 
-## The Translation Integration Framework {#tif}
+## El marco de integración de la traducción {#tif}
 
-AEM&#39;s Translation Integration Framework (TIF) integrates with third-party translation services to orchestrate the translation of AEM content. It involves three basic steps.
+AEM Translation Integration Framework (TIF) se integra con los servicios de traducción de terceros para organizar la traducción de AEM contenido. Requiere tres pasos básicos.
 
-1. Connect to your translation service provider.
-1. Create a Translation Integration Framework configuration.
-1. Associate the configuration with your content.
+1. Conéctese a su proveedor de servicios de traducción.
+1. Cree una configuración del marco de integración de traducción.
+1. Asocie la configuración con el contenido.
 
-The following sections describe these steps in more detail.
+Las secciones siguientes describen estos pasos con más detalle.
 
-## Connecting to a Translation Service Provider {#connect-translation-provider}
+## Conexión a un proveedor de servicios de traducción {#connect-translation-provider}
 
-The first step is to choose which translation service you wish to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. [](#additional-resources)
-
->[!NOTE]
->
->The translation specialist is generally responsible for choosing which translation service to use, but the administrator typically is responsible for installing the required translation connector package.
-
-For the purposes of this journey, we use the Microsoft Translator which AEM provides with a trial license out-of-the-box. [](#additional-resources)
-
-If you choose another provider your administrator must install the connector package as per the instructions provided by the translation service.
+El primer paso es elegir qué servicio de traducción desea utilizar. Hay muchas opciones para servicios de traducción humana y automática disponibles para AEM. La mayoría de los proveedores ofrecen un paquete de traductores para instalar. Consulte la [Recursos adicionales](#additional-resources) para ver una selección de las opciones disponibles.
 
 >[!NOTE]
 >
->Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
+>El especialista en traducción es responsable generalmente de elegir qué servicio de traducción utilizar, pero el administrador suele ser responsable de instalar el paquete del conector de traducción requerido.
+
+Para los fines de este recorrido, utilizamos el traductor de Microsoft que AEM proporciona una licencia de prueba lista para usar. Consulte la [Recursos adicionales](#additional-resources) para obtener más información sobre este proveedor.
+
+Si elige otro proveedor, el administrador debe instalar el paquete del conector según las instrucciones proporcionadas por el servicio de traducción.
+
+>[!NOTE]
 >
->[](#create-config)[](#associate)
+>El uso del Microsoft Translator incorporado en AEM no requiere ninguna configuración adicional y funciona tal cual sin tener que configurar el conector adicional.
 >
->[](#additional-resources)
+>Si decide utilizar el conector de Microsoft Translator para realizar pruebas, no es necesario realizar los pasos de las dos secciones siguientes: [Creación de una configuración de integración de traducción](#create-config) y [Asocie la configuración con su contenido.](#associate) Sin embargo, se recomienda leerlas para que esté familiarizado con los pasos para cuándo necesita configurar el conector preferido.
+>
+>La licencia de prueba del conector del traductor de Microsoft no está pensada para fines de producción y si decide conceder la licencia, el administrador del sistema debe seguir los pasos detallados en la sección [Recursos adicionales](#additional-resources) al final de este documento para configurar esa licencia.
 
-## Creating a Translation Integration Configuration {#create-config}
+## Creación de una configuración de integración de traducción {#create-config}
 
-After the connector package for your preferred translation service is installed, you must create a Translation Integration Framework configuration for that service. The configuration includes the following information:
+Una vez instalado el paquete de conector para el servicio de traducción preferido, debe crear una configuración de Translation Integration Framework para ese servicio. La configuración incluye la siguiente información:
 
-* Which translation service provider to use
-* Whether human or machine translation is to be performed
-* Whether to translate other content that is associated with the Content Fragment such as tags
+* Qué proveedor de servicios de traducción utilizar
+* Si se va a realizar una traducción humana o automática
+* Si se deben traducir otros contenidos asociados con el fragmento de contenido, como etiquetas
 
-To create a new translation configuration:
+Para crear una nueva configuración de traducción:
 
-1. ************
-1. Navigate to where you wish to create the configuration in your content structure. This is often based on a particular project or can be global.
-   * For example, in this case, a configuration could be made globally to apply to all content, or just for the WKND project.
+1. En el menú de navegación global, toque o haga clic en **Herramientas** -> **Cloud Services** -> **Cloud Services de traducción**.
+1. Desplácese hasta donde desee crear la configuración en la estructura de contenido. Esto suele basarse en un proyecto en particular o puede ser global.
+   * Por ejemplo, en este caso, se podría realizar una configuración global para aplicar a todo el contenido o solo para el proyecto WKND.
 
-   ![](assets/translation-configuration-location.png)
+   ![Ubicación de configuración de traducción](assets/translation-configuration-location.png)
 
-1. ****
-   1. **** ****
-   1. **** ********
-   1. ****
+1. Proporcione la siguiente información en los campos y, a continuación, toque o haga clic en **Crear**.
+   1. Select **Tipo de configuración** en la lista desplegable . Select **Integración de traducción** de la lista.
+   1. Escriba un **Título** para su configuración. La variable **Título** identifica la configuración en la variable **Cloud Services** consola, así como en las listas desplegables de propiedad de página.
+   1. Opcionalmente, escriba un **Nombre** para usar para el nodo del repositorio que almacena la configuración.
 
-   ![](assets/create-translation-configuration.png)
+   ![Crear configuración de traducción](assets/create-translation-configuration.png)
 
-1. ********
+1. Toque o haga clic **Crear** y **Editar configuración** se muestra donde puede configurar las propiedades de configuración.
 
-1. Remember that Content Fragments are stored as assets in AEM. ****
+1. Recuerde que los fragmentos de contenido se almacenan como recursos en AEM. Toque o haga clic en el botón **Recursos** pestaña .
 
-![](assets/translation-configuration.png)
+![Propiedades de configuración de traducción](assets/translation-configuration.png)
 
-1. Provide the following information.
+1. Proporcione la siguiente información.
 
-   1. ************ For the purposes of this journey we assume machine translation.
-   1. ****
-   1. ****
-   1. ****
-   1. ****
-   1. ****
-   1. ****
-   1. ****
+   1. **Método de traducción** - Seleccionar **Traducción automática** o **Traducción humana** según el proveedor de traducción. A los efectos del presente recorrido asumimos la traducción automática.
+   1. **Proveedores de traducción** - Seleccione el conector que instaló para su servicio de traducción de la lista.
+   1. **Categoría de contenido** - Seleccione la categoría más adecuada para dirigir mejor la traducción (solo para traducción automática).
+   1. **Traducción de recursos de fragmento de contenido** : Marque esta opción para traducir recursos asociados a fragmentos de contenido.
+   1. **Traducir recursos** : Marque esta opción para traducir los recursos.
+   1. **Traducir metadatos** : Marque esta opción para traducir metadatos de recursos.
+   1. **Traducir etiquetas** : Marque esta opción para traducir etiquetas asociadas al recurso.
+   1. **Ejecución automática de la traducción** : compruebe esta propiedad si desea que las traducciones se envíen automáticamente a su servicio de traducción.
 
-1. ****
+1. Haga clic o pulse en **Guardar y cerrar**.
 
-You have now configured the connector to your translation service.
+Ahora ha configurado el conector en el servicio de traducción.
 
-## Associate the Configuration with Your Content {#associate}
+## Asociar la configuración con el contenido {#associate}
 
-AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you must specify which connectors and configuration should be used to translate your content by associating ths configuration with your content.
+AEM es una herramienta flexible y potente que soporta múltiples servicios de traducción simultánea a través de múltiples conectores y configuraciones. La configuración no entra dentro del ámbito de este recorrido. Sin embargo, esta flexibilidad significa que debe especificar qué conectores y configuración deben utilizarse para traducir el contenido asociando esta configuración con el contenido.
 
-To do this, navigate to the language root of your content. For our example purposes this is
+Para ello, vaya a la raíz de idioma del contenido. Para nuestros propósitos de ejemplo, esto es
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-1. ************
-1. ****
-1. ****
-1. ******** [](#connect-translation-provider)
-1. ********
-1. ****
+1. Vaya a la navegación global y vaya a **Navegación** -> **Recursos** -> **Archivos**.
+1. En la consola de recursos, seleccione la raíz de idioma que desea configurar y toque o haga clic en **Propiedades**.
+1. Toque o haga clic en el botón **Cloud Services** pestaña .
+1. En **Configuraciones del Cloud Service** en el **Agregar configuración** , seleccione el conector . Debe aparecer en el menú desplegable cuando haya instalado su paquete como [descritos anteriormente.](#connect-translation-provider)
+1. En **Configuraciones del Cloud Service** en el **Agregar configuración** , seleccione también la configuración.
+1. Haga clic o pulse en **Guardar y cerrar**.
 
-![](assets/select-cloud-service-configurations.png)
+![Seleccionar configuraciones de servicios en la nube](assets/select-cloud-service-configurations.png)
 
-## What&#39;s Next {#what-is-next}
+## Siguientes pasos {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debe:
 
-* Understand the important parameters of the Translation Integration Framework in AEM.
-* Be able to set up your own connection to your translation service.
+* Comprender los parámetros importantes del marco de integración de traducción en AEM.
+* Puede configurar su propia conexión con el servicio de traducción.
 
-[](translation-rules.md)
+Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabeza revisando el documento [Configurar las reglas de traducción,](translation-rules.md) donde aprenderá a definir qué contenido traducir.
 
 ## Recursos adicionales {#additional-resources}
 
-[](translation-rules.md)
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Configuración de reglas de traducción](translation-rules.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [](/help/sites-cloud/administering/translation/integration-framework.md)
-* [](/help/sites-cloud/administering/translation/connect-ms-translator.md)
+* [Configuración del marco de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md) - Revise una lista de conectores de traducción seleccionados y aprenda a configurar el marco de integración de traducción para integrarse con servicios de traducción de terceros.
+* [Conexión al traductor de Microsoft](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM proporciona una cuenta de traducción de Microsoft de prueba para realizar pruebas.

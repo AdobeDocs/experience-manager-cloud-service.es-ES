@@ -1,13 +1,13 @@
 ---
 title: Edición de programas
 description: Obtenga información sobre cómo editar los programas de producción y de simulación de pruebas para ajustar sus opciones después de crearlas.
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
 
 # Edición de programas {#editing-programs}
 

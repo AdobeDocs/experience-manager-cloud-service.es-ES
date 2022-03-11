@@ -4,7 +4,7 @@ description: Recursos informativos y vínculos a la documentación de Adobe Expe
 landing-page-description: Obtenga información sobre cómo utilizar y administrar Experience Manager Headless as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 100%
 

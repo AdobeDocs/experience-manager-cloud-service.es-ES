@@ -1,14 +1,13 @@
 ---
 title: Uso de flujos de trabajo
 description: Los flujos de trabajo en AEM le permiten automatizar una serie de pasos que se llevan a cabo en una página o un recurso.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
-
 
 # Uso de flujos de trabajo {#working-with-workflows}
 
@@ -27,5 +26,5 @@ Normalmente:
 
 En las páginas que se incluyen a continuación, se tratan los temas siguientes:
 
-* [Aplicación de flujos de trabajo a las páginas](/help/sites-cloud/authoring/workflows/applying.md)
+* [Aplicación de flujos de trabajo a páginas](/help/sites-cloud/authoring/workflows/applying.md)
 * [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)

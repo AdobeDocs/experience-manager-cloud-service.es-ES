@@ -1,13 +1,13 @@
 ---
 title: Información general sobre la herramienta de asignación de usuarios
 description: Información general sobre la herramienta de asignación de usuarios
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
-
 
 # Información general sobre la herramienta de asignación de usuarios {#overview-user-mapping-tool}
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Como parte del recorrido de transición a Adobe Experience Manager (AEM) as a Cloud Service, debe mover usuarios y grupos del sistema de AEM existente a AEM as a Cloud Service. Esto lo hace la herramienta de transferencia de contenido.
 
-Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de los ID de Adobe para acceder al nivel de creación.  Esto requiere el uso de la variable [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS) que proporciona el inicio de sesión único en todas las aplicaciones de nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar usuarios y grupos duplicados en la instancia de creación del Cloud Service.
+Un cambio importante en AEM as a Cloud Service es el uso completamente integrado de los Adobe ID para acceder al nivel de creación.  Esto requiere el uso de la variable [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html) para administrar usuarios y grupos de usuarios. La información de perfil de usuario está centralizada en el sistema Identity Management de Adobe (IMS) que proporciona el inicio de sesión único en todas las aplicaciones de nube de Adobe. Para obtener más información, consulte [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management). Debido a este cambio, los usuarios y grupos existentes deben asignarse a sus ID de IMS para evitar usuarios y grupos duplicados en la instancia de creación del Cloud Service.
 
 ## Herramienta de asignación de usuarios {#mapping-tool}
 

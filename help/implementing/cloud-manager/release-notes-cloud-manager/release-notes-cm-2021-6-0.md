@@ -1,8 +1,9 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.5.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.5.0
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+exl-id: 9a0a53d3-31d4-493d-ba2e-b4bb22f60351
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -14,7 +15,7 @@ ht-degree: 3%
 Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.6.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
@@ -28,19 +29,19 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 1
 
 * El nombre del programa ahora se puede editar mediante el cuadro de diálogo editar programa .
 
-* El nombre de rama predeterminado utilizado durante la creación del proyecto y en el comando push predeterminado mediante la administración de flujos de trabajo de Git se ha cambiado a `main`.
+* El nombre de rama predeterminado utilizado durante la creación del proyecto y en el comando push predeterminado mediante la gestión de flujos de trabajo de Git se ha cambiado a `main`.
 
 * Se ha actualizado la edición de la experiencia del programa en la interfaz de usuario.
 
-* La regla de calidad `ImmutableMutableMixCheck` se ha actualizado para clasificar los nodos `/oak:index` como inmutables.
+* La regla de calidad `ImmutableMutableMixCheck` se ha actualizado para clasificar `/oak:index` como inmutables.
 
-* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una sola regla. Como parte de esta consolidación, el análisis de dependencias identifica con mayor precisión los problemas en dependencias de terceros que se están implementando en el tiempo de ejecución de AEM.
+* Las reglas de calidad `CQBP-84` y `CQBP-84--dependencies` se han consolidado en una única regla. Como parte de esta consolidación, el análisis de dependencias identifica con mayor precisión los problemas en dependencias de terceros que se están implementando en el tiempo de ejecución de AEM.
 
 * Para evitar confusiones, se han consolidado las filas de segmento Publicar AEM y Publicar Dispatcher en la página Detalles del entorno .
 
    ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
-* Se ha agregado una nueva regla de calidad de código para validar la estructura de los índices `damAssetLucene`. Para obtener más información, consulte [Personalización de los índices Oak de DAM Asset Lucene](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) .
+* Se ha añadido una nueva regla de calidad de código para validar la estructura de `damAssetLucene` índices. Consulte [Índices Oak de DAM Asset Lucene personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obtener más información.
 
 * La página de detalles del entorno ahora mostrará varios nombres de dominio para los servicios de publicación y vista previa (según corresponda). Consulte [Detalles del entorno](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment) para obtener más información.
 
@@ -52,8 +53,8 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.6.0 es el 1
 
 * Se mostraba un mensaje de error incorrecto cuando se proporcionaba un valor no válido para el paso de programación.
 
-* En ocasiones, el usuario puede ver un estado *activo* verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
+* En ocasiones, el usuario puede ver un verde *active* junto a una Lista de permitidos IP incluso cuando esa configuración no se haya implementado.
 
 * Algunas secuencias de edición de programas podrían resultar en la incapacidad de crear o editar la canalización de producción.
 
-* Algunas secuencias de edición de programas podrían provocar que la página **Información general** muestre un mensaje engañoso para volver a ejecutar la configuración del programa.
+* Algunas secuencias de edición de programas podrían dar como resultado la variable **Información general** que muestra un mensaje engañoso para volver a ejecutar la configuración del programa.

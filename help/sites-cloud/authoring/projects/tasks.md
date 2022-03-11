@@ -47,7 +47,7 @@ Haga clic en los puntos suspensivos (…) en el mosaico Tareas para mostrar la l
 
 #### Detalles de la tarea {#task-details}
 
-Para obtener más información sobre una tarea en particular, en la lista de tareas, pulse o haga clic en la tarea y **Abrir**.
+Para obtener más información sobre una tarea en particular, en la lista de tareas, toque o haga clic en la tarea y **Apertura**.
 
 ![Detalles de la tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
 

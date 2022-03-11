@@ -39,7 +39,7 @@ Puede migrar su Forms adaptable, temas, plantillas y configuraciones de nube des
    * [Herramienta de asignación de usuarios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration): La herramienta de asignación de usuarios le ayuda a asignar sus usuarios con las cuentas de usuario de IMS de Adobe correspondientes.
    * [Herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration): La herramienta de transferencia de contenido le ayuda a preparar y transferir contenido de un entorno existente a un entorno de Cloud Service.
 * Cuentas con privilegios de administrador en [!DNL AEM Forms] as a Cloud Service y local [!DNL AEM Forms] entorno.
-* Descargue e instale el Analizador de prácticas recomendadas, la herramienta de transferencia de contenido y [!DNL AEM Forms] Utilidad de migración de [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html)
+* Descargue e instale el Analizador de prácticas recomendadas, la herramienta de transferencia de contenido y [!DNL AEM Forms] Utilidad de migración de [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html)
 
 * Ejecute el [Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration) y corrija el problema reportado.
 

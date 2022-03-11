@@ -1,14 +1,13 @@
 ---
 title: Administración de actividades
 description: La consola Actividades permite crear, organizar y administrar las actividades de marketing de las marcas
-translation-type: tm+mt
-source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
+exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 86%
 
 ---
-
 
 # Administración de actividades {#managing-activities}
 
@@ -24,31 +23,29 @@ La consola Actividades permite crear, organizar y administrar las [actividades](
 
 En la consola de actividades, las actividades se organizan según la marca. Puede utilizar marcas y carpetas para estructurar la organización de las actividades. Vaya a la consola de actividades; para ello, pulse o haga clic en **Personalización** y pulse o haga clic en **Actividades**.
 
-Las actividades están disponibles en el modo de objetivo para [crear contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md), donde también puede crear actividades. Las actividades que cree en el modo Segmentación aparecerán en la consola de actividades.
+Las actividades están disponibles en el modo de Orientación para [creación de contenido de destino](/help/sites-cloud/authoring/personalization/targeted-content.md), donde también puede crear actividades. Las actividades que cree en el modo Segmentación aparecerán en la consola de actividades.
 
 Las actividades se muestran con una etiqueta que describe qué tipo de actividad se define:
 
 * XT: segmentación de la experiencia de Adobe Target
 * A/B: prueba de A/B de Adobe Target
-* AEM: objetivos de Adobe Experience Manager (por ejemplo, dirigido por ContextHub)
+* AEM: segmentación en Adobe Experience Manager (es decir, conducido por ContextHub)
 
-![Tipos de actividad](/help/sites-cloud/authoring/assets/activities-types.png)
+![Tipos de actividades](/help/sites-cloud/authoring/assets/activities-types.png)
 
 >[!NOTE]
 >
 >Los tipos de actividades estarán disponibles dependiendo de lo siguiente:
 >
 >* Si la opción `xt_only` está habilitada en el inquilino de Adobe Target (clientcode) que se utiliza en AEM para conectarse a Adobe Target, puede crear **solo** actividades XT en AEM.
-   >
-   >
-* Si la `xt_only` opción **no está** activada en el inquilino de Adobe Target (clientcode), puede crear actividades **** XT o A/B en AEM.
 >
+>* Si la `xt_only` opción **no está** activada en el inquilino de Adobe Target (clientcode), puede crear actividades **** XT o A/B en AEM.
 >
-**Nota adicional:**`xt_only` La opción es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+>**Nota adicional:**`xt_only` La opción es una configuración aplicada a un determinado inquilino de Target (clientcode) y solo se puede modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
 
 >[!CAUTION]
 >
->Debe proteger el nodo de configuración de actividad `cq:ActivitySettings` en la instancia de publicación para que los usuarios normales no puedan acceder a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Debe proteger el nodo de configuración de actividad `cq:ActivitySettings` en la instancia de publicación para que los usuarios normales no puedan acceder a ella. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
 >Consulte Requisitos previos para la integración con Adobe Target para obtener información detallada.
 <!--
@@ -59,7 +56,7 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 
 Cree una marca para la que quiera administrar actividades de marketing.
 
-Cuando crea una marca con la consola Actividades, también aparece en la consola [Ofertas](/help/sites-cloud/authoring/personalization/offers.md), donde puede crear ofertas para las experiencias de sus actividades.
+Cuando crea una marca mediante la consola de actividades, también aparece en la [Consola de ofertas](/help/sites-cloud/authoring/personalization/offers.md) donde puede crear ofertas para las experiencias de sus actividades.
 
 1. En la consola de navegación, haga clic o pulse **Personalización**. Haga clic o pulse **Actividades**.
 
@@ -77,7 +74,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Nombre:** Nombre de la actividad.
 * **Motor de segmentación:** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) o [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) como motor del contenido segmentado.
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **Tipo** de actividad: Tipo de actividad: Prueba A/B o segmentación de experiencias
+* **Tipo de actividad**: El tipo de actividad: Prueba A/B o Segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
 * **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
@@ -102,7 +99,7 @@ Para añadir una actividad:
    * Seleccione el tipo de actividad.
 1. Agregue una o varias experiencias a la actividad. Pulse o haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación AEM o la segmentación por experiencia de Adobe Target:
-   1. Toque o haga clic en **Seleccionar Audiencia** y seleccione el segmento que destinatario su experiencia.
+   1. Toque o haga clic en **Seleccionar audiencia** y seleccione el segmento al que se orienta su experiencia.
    1. Haga clic o pulse **Añadir experiencia**, escriba un nombre y haga clic o pulse **Aceptar**.
    1. Haga clic o pulse **Siguiente**.
 Si utiliza la prueba A/B de Adobe Target:
@@ -117,7 +114,7 @@ Si utiliza la prueba A/B de Adobe Target:
    * **Cuando se desactiva:** la actividad finaliza cuando la página que tiene el contenido de destino se desactiva.
    * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar cualquier valor: **Baja**, **Normal** o **Alta**.
-1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la Actividad y Configuración de objetivos](/help/sites-cloud/authoring/personalization/targeted-content.md) para obtener más información sobre las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
+1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y configuración de objetivos](/help/sites-cloud/authoring/personalization/targeted-content.md) para obtener más información sobre las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
 1. Haga clic o pulse **Guardar**.
 
    >[!NOTE]
@@ -137,43 +134,43 @@ Para publicar o cancelar la publicación de actividades:
 1. Haga clic o pulse la marca y, a continuación, el área que contiene la actividad que quiera publicar o de la cual quiera cancelar la publicación.
 1. Haga clic o pulse el icono junto a la actividad o actividades que desee publicar o cuya publicación quiera cancelar.
 
-   ![Publicación desde la consola actividades](/help/sites-cloud/authoring/assets/activities-console.png)
+   ![Publicación desde la consola de actividades](/help/sites-cloud/authoring/assets/activities-console.png)
 
 1. Para publicar, pulse o haga clic en **Publicar**. Para cancelar la publicación, pulse o haga clic en **Cancelar publicación**. La actividad o actividades se publicarán (o no), y su estado cambiará en la consola de actividades (es posible que sea necesaria una actualización).
 
-## Actividades en las instancias de Publicación y Autor  {#activities-on-author-and-publish-instances}
+## Actividades en las instancias de Publicación y Autor {#activities-on-author-and-publish-instances}
 
 Cuando se activa una actividad que utiliza el motor de segmentación de Adobe Target, una segunda actividad se crea en la instancia de publicación:
 
 * La actividad en la instancia de autor realiza el seguimiento de la actividad de la instancia de autor y resulta útil para simular la experiencia de los visitantes. El análisis que se grabó para esta actividad refleja únicamente lo que ocurre en la instancia de autor.
 * La actividad de la instancia refleja y responde a la actividad en el servidor de publicación. Esta es la actividad que se ejecuta en el sitio web público. Publicar únicamente la actividad es importante si se quiere hacer el seguimiento y analizar el uso real del sitio público.
 
-## Visualizar el rendimiento y convertir experiencias ganadoras (pruebas A/B)  {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Visualizar el rendimiento y convertir experiencias ganadoras (pruebas A/B) {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Puede ver el rendimiento de cualquier actividad de Adobe Target (XT o A/B). Si utiliza la prueba A/B también puede convertir la experiencia ganadora, que a su vez se convertirá en la experiencia predeterminada.
 
 Para ver el rendimiento de las actividades y convertirlas en experiencias ganadoras:
 
-1. En **Personalización**, toque o haga clic en **Actividades** para navegar a la consola **Actividades**.
+1. En **Personalización**, toque o haga clic en **Actividades** para navegar hasta el **Actividades** consola.
 1. Haga clic o pulse la marca de la cual quiera ver actividades.
 1. Seleccione la actividad y pulse o haga clic en **Ver propiedades**, seleccione la pestaña **Informes** y haga clic en la actividad para la que desee ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
    ![Comprobación del rendimiento de la actividad](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Toque o haga clic en el vínculo **Impulsar al ganador** para insertar esa experiencia como experiencia predeterminada.
+1. Toque o haga clic en **Impulsar al ganador** vínculo para insertar esa experiencia como experiencia predeterminada.
 
    Convertir al ganador hace lo siguiente:
 
    * Desactiva la actividad actual
-   * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. El contenido de la experiencia ganadora se convierte en parte de la página normal **sin** segmentación.
+   * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. El contenido de la experiencia ganadora pasa a formar parte de la página normal **without** segmentación.
 
-   ![Convirtiendo ganador](/help/sites-cloud/authoring/assets/activities-reports.png)
+   ![Conversión del ganador](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    Una experiencia ganadora es la que más crece en los informes, y está basada en la tasa de conversión.
 
 1. Haga clic o pulse **Sí** para confirmar que desea convertir el ganador, deshabilitar la experiencia actual y reemplazarla por el contenido de experiencia ganadora.
 
-## Sincronizar actividades con Adobe Target  {#synchronizing-activities-with-adobe-target}
+## Sincronizar actividades con Adobe Target {#synchronizing-activities-with-adobe-target}
 
 Las actividades que utilizan el motor de segmentación de Adobe Target se sincronizan con las campañas de Adobe Target. Una actividad se sincroniza automáticamente con Adobe Target cuando se cumplen las siguientes condiciones:
 
@@ -186,15 +183,15 @@ Estas condiciones se aplican a las actividades de las instancias de publicación
 Cuando se sincroniza una actividad, se crea la campaña correspondiente en Adobe Target:
 
 * Las actividades de la instancia de publicación tienen el mismo nombre que la campaña de Adobe Target correspondiente.
-* Las actividades de la instancia de autor se corresponden con campañas de Destinatario del mismo nombre con el sufijo `_author`.
+* Las actividades de la instancia de autor se corresponden con las campañas de Target del mismo nombre con la variable `_author` sufijo.
 
 ![Sincronización con Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
 
-Las actividades de creación se sincronizan inmediatamente cuando se modifica la actividad. La sincronización inmediata permite la simulación de actividades con ContextHub.
+Las actividades de autor se sincronizan inmediatamente cuando se modifica la actividad. La sincronización inmediata permite la simulación de actividades con ContextHub.
 
 La publicación de actividades se sincroniza cuando la actividad está publicada en una instancia de publicación de AEM.
 
-## Solución de problemas con la sincronización de la actividad  {#troubleshooting-activity-synchronization}
+## Solución de problemas con la sincronización de la actividad {#troubleshooting-activity-synchronization}
 
 Cuando AEM sincroniza una actividad con Adobe Target, incluye una propiedad de la actividad denominada `thirdPartyId`. El valor de esta propiedad se basa en la ruta de acceso de la actividad del repositorio de AEM. Dos campañas de Adobe Target no pueden tener el mismo valor para la propiedad `thirdPartyId`. Por lo tanto, una actividad no se podrá sincronizar si una campaña existente (de un tipo AB o XT diferente) en Adobe Target utiliza el mismo valor para `thirdPartyId`.
 
@@ -208,11 +205,11 @@ Este problema también puede ocurrir en las siguientes circunstancias:
 1. Una actividad se crea y se sincroniza con Adobe Target. La actividad se eliminará de AEM.
 1. Una actividad se crea según la misma marca y se usa el mismo nombre que el de la actividad eliminada. Se produce un error al intentar sincronizar esta actividad.
 
-Para evitar problemas de sincronización, utilice siempre nombres únicos para actividades. Si una actividad no se sincroniza, puede eliminar la campaña en Adobe Target que utilice el mismo nombre si dicha campaña no se está utilizando.
+Para evitar problemas de sincronización, utilice siempre nombres únicos para las actividades. Si una actividad no se sincroniza, puede eliminar la campaña en Adobe Target que utilice el mismo nombre si dicha campaña no se está utilizando.
 
 >[!NOTE]
 >
->Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; Por lo tanto, los nombres de campaña no pueden reutilizarse en diferentes tipos de campaña.
+>Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId` a cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por lo tanto, los nombres de campaña no se pueden reutilizar en diferentes tipos de campaña.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

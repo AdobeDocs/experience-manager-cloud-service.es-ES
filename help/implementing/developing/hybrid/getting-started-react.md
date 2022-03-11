@@ -5,7 +5,7 @@ exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ La función de creación de SPA ofrece una solución completa para admitir SPA d
 
 >[!NOTE]
 >
->Este artículo se basa en el marco de React. Para ver el documento correspondiente del marco de Angular, consulte [Introducción a SPA en AEM - Angular](getting-started-angular.md).
+>Este artículo se basa en el marco de React. Para el documento correspondiente del marco de Angular, consulte [Introducción a SPA en AEM: Angular](getting-started-angular.md).
 
 ## Introducción {#introduction}
 
@@ -26,7 +26,7 @@ Este artículo resume el funcionamiento básico de un simple SPA y el mínimo qu
 Para obtener más información sobre cómo funciona SPA en AEM, consulte los siguientes documentos:
 
 * [Introducción y tutorial de SPA](introduction.md)
-* [Información general del Editor de SPA](editor-overview.md)
+* [Información general del editor de SPA](editor-overview.md)
 * [Modelo SPA](blueprint.md)
 
 >[!NOTE]
@@ -43,7 +43,7 @@ Además de la dependencia esperada de React, el SPA de muestra puede aprovechar 
 
 ### Dependencias {#dependencies}
 
-El archivo `package.json` define los requisitos del paquete de SPA general. Las dependencias de AEM mínimas para un SPA en funcionamiento se enumeran aquí.
+La variable `package.json` define los requisitos del paquete SPA general. Las dependencias de AEM mínimas para un SPA en funcionamiento se enumeran aquí.
 
 ```
   "dependencies": {
@@ -53,20 +53,20 @@ El archivo `package.json` define los requisitos del paquete de SPA general. Las 
   }
 ```
 
-Dado que este ejemplo se basa en el marco de React, hay dos dependencias específicas de React que son obligatorias en el archivo `package.json`:
+Dado que este ejemplo se basa en el marco de React, hay dos dependencias específicas de React que son obligatorias en la variable `package.json` archivo:
 
 ```
  react
  react-dom
 ```
 
-El `aem-clientlib-generator` se aprovecha para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
+La variable `aem-clientlib-generator` se aprovecha para hacer que la creación de bibliotecas de cliente sea automática como parte del proceso de compilación.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-Puede encontrar más detalles sobre esto [en GitHub aquí](https://github.com/wcm-io-frontend/aem-clientlib-generator).
+Encontrará más detalles sobre el tema [en GitHub aquí](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-El `aem-clientlib-generator` se configura en el archivo `clientlib.config.js` de la siguiente manera.
+La variable `aem-clientlib-generator` se configura en la variable `clientlib.config.js` como se indica a continuación.
 
 ```
 module.exports = {
@@ -97,7 +97,7 @@ module.exports = {
 
 ### Compilando {#building}
 
-La creación de la aplicación aprovecha el [Webpack](https://webpack.js.org/) para la transpilación, además del aem-clientlib-generator para la creación automática de la biblioteca del cliente. Por lo tanto, el comando build se parecerá a:
+La creación de la aplicación aprovecha [Paquete web](https://webpack.js.org/) para la transpilación además del aem-clientlib-generator para la creación automática de la biblioteca cliente. Por lo tanto, el comando build se parecerá a:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ Una vez creado, el paquete se puede cargar en una instancia de AEM.
 
 ### Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
-Cualquier proyecto AEM debe aprovechar el [AEM tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que admite SPA proyectos con React o Angular y aprovecha el SDK de SPA.
+Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que admite SPA proyectos que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## Estructura de la aplicación {#application-structure}
 
@@ -117,7 +117,7 @@ Se utiliza un componente de imagen simplificado como ejemplo, pero todos los com
 
 ### index.js {#index-js}
 
-El punto de entrada a la SPA es, por supuesto, el archivo `index.js` que se muestra aquí simplificado para centrarse en el contenido importante.
+El punto de entrada en el SPA es, por supuesto, el `index.js` archivo mostrado aquí simplificado para centrarse en el contenido importante.
 
 ```
 import ReactDOM from 'react-dom';
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-La función principal de `index.js` es aprovechar la función `ReactDOM.render` para determinar dónde en el DOM se inyecta la aplicación.
+La función principal de `index.js` es aprovechar el `ReactDOM.render` para determinar dónde en el DOM para inyectar la aplicación.
 
 Se trata de un uso estándar de esta función, no exclusivo de esta aplicación de ejemplo.
 
@@ -144,7 +144,7 @@ Cuando se crea una instancia del componente estáticamente utilizando la plantil
 
 ### App.js {#app-js}
 
-Al procesar la aplicación, `index.js` llama a `App.js`, que se muestra aquí en una versión simplificada para centrarse en el contenido importante.
+Al procesar la aplicación, `index.js` llamadas `App.js`, que se muestra aquí en una versión simplificada para centrarse en el contenido importante.
 
 ```
 import {Page, withModel } from '@adobe/aem-react-editable-components';
@@ -162,7 +162,7 @@ export default withModel(App);
 
 ### Page.js {#page-js}
 
-Al procesar la página, `App.js` llama a `Page.js` enumeradas aquí en una versión simplificada.
+Al procesar la página, `App.js` llamadas `Page.js` listado aquí en una versión simplificada.
 
 ```
 import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
@@ -176,13 +176,13 @@ class AppPage extends Page {
 MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppPage));
 ```
 
-En este ejemplo, la clase `AppPage` amplía `Page`, que contiene los métodos de contenido interno que se pueden utilizar.
+En este ejemplo, la variable `AppPage` class extensions `Page`, que contiene los métodos de contenido interno que se pueden utilizar.
 
-El `Page` ingesta la representación JSON del modelo de página y procesa el contenido para ajustar/decorar cada elemento de la página. Puede encontrar más información sobre el `Page` en el documento [SPA modelo.](blueprint.md)
+La variable `Page` Ingesta la representación JSON del modelo de página y procesa el contenido para ajustar/decorar cada elemento de la página. Más información sobre `Page` se encuentra en el documento [SPA modelo.](blueprint.md)
 
 ### Image.js {#image-js}
 
-Con la página representada, se pueden procesar los componentes como `Image.js` como se muestra aquí.
+Con la página representada, los componentes como `Image.js` como se muestra aquí se puede procesar.
 
 ```
 import React, {Component} from 'react';
@@ -209,11 +209,11 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-La idea central de SPA en AEM es la idea de asignar componentes SPA a AEM componentes y actualizar el componente cuando se modifica el contenido (y viceversa). Consulte el documento [SPA Editor Overview](editor-overview.md) para ver un resumen de este modelo de comunicación.
+La idea central de SPA en AEM es la idea de asignar componentes SPA a AEM componentes y actualizar el componente cuando se modifica el contenido (y viceversa). Consulte el documento [Información general del Editor de SPA](editor-overview.md) para un resumen de este modelo de comunicación.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
-El método `MapTo` asigna el componente SPA al componente AEM. Admite el uso de una sola cadena o una matriz de cadenas.
+La variable `MapTo` el método asigna el componente SPA al componente AEM. Admite el uso de una sola cadena o una matriz de cadenas.
 
 `ImageEditConfig` es un objeto de configuración que contribuye a habilitar las capacidades de creación de un componente al proporcionar los metadatos necesarios para que el editor genere marcadores de posición
 
@@ -242,28 +242,28 @@ class PageClass extends Component {...};
 export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
 ```
 
-La función `MapTo` devuelve un `Component` que es el resultado de una composición que amplía el `PageClass` proporcionado con los nombres de clase y atributos que habilitan la creación. Este componente se puede exportar a y posteriormente se puede crear una instancia en el marcado de la aplicación.
+La variable `MapTo` devuelve un valor `Component` que es el resultado de una composición que amplía el `PageClass` con los nombres de clase y atributos que habilitan la creación. Este componente se puede exportar a y posteriormente se puede crear una instancia en el marcado de la aplicación.
 
-Cuando se exporta utilizando las funciones `MapTo` o `withModel` , el componente `Page` se ajusta con un componente `ModelProvider` que proporciona acceso a los componentes estándar a la última versión del modelo de página o a una ubicación precisa en ese modelo de página.
+Cuando se exporta con la variable `MapTo` o `withModel` las funciones, `Page` , se ajusta con un `ModelProvider` que proporciona acceso a los componentes estándar a la versión más reciente del modelo de página o a una ubicación precisa en ese modelo de página.
 
-Para obtener más información, consulte el [SPA documento del modelo](blueprint.md).
+Para obtener más información, consulte [SPA documento de modelo](blueprint.md).
 
 >[!NOTE]
 >
->De forma predeterminada, recibe todo el modelo del componente al utilizar la función `withModel`.
+>De forma predeterminada, recibe todo el modelo del componente al utilizar la variable `withModel` función.
 
-## Uso compartido de información entre componentes SPA {#sharing-information-between-spa-components}
+## Uso Compartido De Información Entre Componentes SPA {#sharing-information-between-spa-components}
 
 Normalmente, es necesario que los componentes de una aplicación de una sola página compartan información. Hay varias formas recomendadas de hacerlo, enumeradas a continuación en orden creciente de complejidad.
 
-* **Opción 1:** centralice la lógica y la emisión a los componentes necesarios, por ejemplo, utilizando Contexto de Reacción.
+* **Opción 1:** Centralice la lógica y la emisión a los componentes necesarios, por ejemplo, mediante React Context.
 * **Opción 2:** Compartir estados de componentes utilizando una biblioteca de estados como Redux.
-* **Opción 3:** aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
+* **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
-* [Introducción a SPA en AEM con ](getting-started-angular.md) Angularis muestra cómo se crea un SPA básico para trabajar con el Editor de SPA en AEM con Angular.
-* [SPA ](editor-overview.md) Información general del editor profundiza en el modelo de comunicación entre AEM y el SPA.
-* [WKND SPA ](wknd-tutorial.md) Project es un tutorial paso a paso que implementa un proyecto de SPA simple en AEM.
-* [Asignación de modelos dinámicos a componentes para ](model-to-component-mapping.md) SPAs explica el modelo dinámico a la asignación de componentes y cómo funciona dentro de SPA en AEM.
-* [SPA ](blueprint.md) Blueprintoofrece una explicación detallada sobre cómo funciona el SDK de SPA para AEM en caso de que desee implementar SPA en AEM para un marco que no sea React o Angular, o simplemente desee un entendimiento más profundo.
+* [Introducción a SPA en AEM con Angular](getting-started-angular.md) muestra cómo se crea una SPA básica para trabajar con el Editor de SPA en AEM con Angular.
+* [Información general del Editor de SPA](editor-overview.md) profundiza en el modelo de comunicación entre AEM y el SPA.
+* [Proyecto SPA WKND](wknd-tutorial.md) es un tutorial paso a paso que implementa un proyecto de SPA simple en AEM.
+* [Asignación de modelos dinámicos a componentes para SPA](model-to-component-mapping.md) explica el modelo dinámico para la asignación de componentes y cómo funciona dentro de SPA en AEM.
+* [Modelo SPA](blueprint.md) ofrece una explicación detallada del funcionamiento del SDK de SPA para AEM en caso de que desee implementar SPA en AEM para un marco que no sea React o Angular, o simplemente desee un entendimiento más profundo.

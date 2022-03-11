@@ -1,17 +1,17 @@
 ---
-title: 'Administrar publicación     '
+title: 'Administrar publicación    '
 description: Publicar o cancelar la publicación de recursos en Experience Manager Assets, Dynamic Media y Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 8%
 
 ---
-
 
 # Administrar publicación en Experience Manager Assets {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Puede publicar recursos, carpetas y colecciones en el [!DNL Experience Manager A
 * Las carpetas vacías no se publican.
 * Si publica un recurso que se está procesando, solo se publicará el contenido original. Faltan las representaciones. Espere a que se complete el procesamiento y, a continuación, publique o vuelva a publicar el recurso una vez finalizado el procesamiento.
 * Al cancelar la publicación de un recurso complejo, cancele la publicación del recurso únicamente. Evite cancelar la publicación de las referencias, ya que otras fuentes publicadas pueden remitirlas.
-

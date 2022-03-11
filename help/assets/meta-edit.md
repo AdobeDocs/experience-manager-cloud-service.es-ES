@@ -1,13 +1,13 @@
 ---
 title: Edición o adición de metadatos
-description: Obtenga información sobre los metadatos de recursos en [!DNL Experience Manager Assets] y sobre varias formas de editarlos.
+description: Obtenga información sobre los metadatos de recursos en [!DNL Experience Manager Assets] varias formas de editar los metadatos de los recursos.
 contentOwner: AG
-feature: Metadatos
+feature: Metadata
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 Los metadatos son información adicional sobre el recurso que se puede buscar. Se extrae automáticamente al cargar una imagen. Puede editar los metadatos existentes o agregar nuevas propiedades de metadatos a los campos existentes (por ejemplo, cuando un campo de metadatos está en blanco).
 
-Debido a que las empresas necesitan vocabularios de metadatos fiables y controlados, [!DNL Experience Manager Assets] no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar nuevos campos de metadatos para los recursos, los desarrolladores sí pueden. Consulte [Creación de una nueva propiedad de metadatos para Assets](meta-edit.md#editing-metadata-schema).
+Debido a que las empresas necesitan vocabularios de metadatos controlados y confiables, [!DNL Experience Manager Assets] no permite la adición ad hoc de nuevas propiedades de metadatos. Aunque los autores no pueden agregar nuevos campos de metadatos para los recursos, los desarrolladores sí pueden. Consulte [Creación de una nueva propiedad de metadatos para recursos](meta-edit.md#editing-metadata-schema).
 
 ## Edición de metadatos de un recurso {#editing-metadata-for-an-asset}
 
@@ -24,11 +24,11 @@ Para editar metadatos:
 
 1. Realice una de las acciones siguientes:
 
-   * En la interfaz de usuario de Assets, seleccione el recurso y pulse o haga clic en el icono **[!UICONTROL Ver propiedades]** de la barra de herramientas.
-   * En la miniatura del recurso, seleccione la acción rápida **[!UICONTROL Ver propiedades]**.
-   * En la página de recursos, pulse o haga clic en **[!UICONTROL Ver propiedades]** en la barra de herramientas.
+   * En la interfaz de usuario de Assets, seleccione el recurso y toque o haga clic en el **[!UICONTROL Ver propiedades]** de la barra de herramientas.
+   * En la miniatura del recurso, seleccione el **[!UICONTROL Ver propiedades]** acción rápida.
+   * En la página de recursos, toque o haga clic en **[!UICONTROL Ver propiedades]** en la barra de herramientas.
 
-   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en Recursos de Experience Manager.
+   La página de recursos muestra todos los metadatos del recurso. Estos metadatos se extraían automáticamente cuando se cargaban (incorporaban) en Experience Manager Assets.
 
 1. Edite los metadatos de las distintas pestañas, según sea necesario, y cuando termine, pulse o haga clic en **[!UICONTROL Guardar]** en la barra de herramientas para guardar los cambios. Pulse o haga clic en **[!UICONTROL Cerrar]** para volver a la interfaz web de Assets.
 
@@ -36,7 +36,7 @@ Para editar metadatos:
    >
    >Si un campo de texto está vacío, no hay ningún conjunto de metadatos existente. Puede introducir un valor en el campo y guardarlo para añadir esa propiedad de metadatos.
 
-Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. Esto se realiza a través del flujo de trabajo de reescritura de metadatos del Experience Manager. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y las propiedades creadas recientemente (incluidas las propiedades personalizadas como `cq:tags`) se agregan junto con el esquema .
+Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. Esto se realiza a través del flujo de trabajo de reescritura de metadatos del Experience Manager. Cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y se crean recientemente (incluidas propiedades personalizadas como `cq:tags`) se añaden al esquema .
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 

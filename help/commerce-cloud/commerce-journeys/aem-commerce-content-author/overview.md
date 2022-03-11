@@ -1,14 +1,15 @@
 ---
 title: recorrido del autor de contenido de AEM Commerce
 description: Comience aquí para obtener un recorrido guiado a través de la creación AEM Commerce
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
-# recorrido de autor de contenido de AEM y comercio {#aem-commerce-author-journey}
+# Recorrido de autor de contenido de AEM Content and Commerce {#aem-commerce-author-journey}
 
 Comience aquí para obtener un recorrido guiado a través de AEM Contenido y comercio para aprender a administrar las experiencias de los productos.
 
@@ -30,7 +31,7 @@ Los Recorridos de documentación están diseñados en torno a los principios de 
 
 Si desea saber cómo recomienda Adobe resolver los casos comerciales del sitio con AEM, los Recorridos de AEM Sites son el punto de inicio.
 
-## Audience {#audience}
+## Audiencia {#audience}
 
 Este recorrido está diseñado para el autor de contenido de AEM Commerce. Este recorrido describe los requisitos, pasos y enfoques para comenzar y administrar las páginas de catálogo, las plantillas y las experiencias de producto completas.
 
@@ -47,7 +48,7 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 0 | recorrido para desarrolladores de contenido y comercio de AEM | Este documento |
 | 1 | [Obtenga información sobre AEM contenido y comercio](/help/commerce-cloud/introduction.md) | Aprenda conceptos y conceptos básicos sobre AEM Contenido y comercio. |
 | 2 | [Introducción a AEM conceptos básicos de creación del CIF](getting-started.md) | Obtenga información sobre cómo acceder y utilizar los datos de producto para sus casos de uso de creación. |
-| 3 | [Administrar páginas y plantilla del catálogo de productos](catalog-templates.md) | Aprenda a crear una experiencia de catálogo de productos típica. |
+| 3 | [Administración de páginas y plantilla del catálogo de productos](catalog-templates.md) | Aprenda a crear una experiencia de catálogo de productos típica. |
 | 4 | [Administrar experiencias de catálogo de productos por etapas](staged-catalog.md) | Obtenga información sobre cómo crear una futura experiencia en el catálogo de productos con datos clasificados y AEM lanzamientos. |
 | 5 | [Creación de experiencias de producto](product-experience-management.md) | Obtenga información sobre cómo aumentar los datos de productos con contenido envolvente en AEM. |
 

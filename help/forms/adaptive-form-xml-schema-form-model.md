@@ -165,7 +165,6 @@ Puede añadir los siguientes atributos a los elementos de esquema XML para añad
 >
 >* Poner en mayúscula el primer carácter del nombre del elemento
 >* Inserción de espacio en blanco en los límites del Camel Case.
-
 >
 >Por ejemplo, si agrega la variable `userFirstName` elemento de esquema, el rótulo generado en el formulario adaptable es `User First Name`.
 
@@ -183,7 +182,7 @@ Puede añadir las siguientes restricciones a los elementos de esquema XML para l
   </tr>
   <tr>
    <td><p><code>totalDigits</code></p> </td>
-   <td><p>String</p> </td>
+   <td><p>Cadena</p> </td>
    <td><p>Especifica el número máximo de dígitos permitidos en un componente. El número de dígitos especificado debe ser bueno a cero.</p> </td>
    <td>
     <ul>

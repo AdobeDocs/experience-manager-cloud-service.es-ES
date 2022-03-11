@@ -4,7 +4,7 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -1609,4 +1609,4 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 | San Francisco |  EE. UU. |  883306 |  city:beach<br>city:na |
 | San José |  EE. UU. |  102635 |  city:na |
 | Stuttgart |  Alemania |  634830 |  city:emea |
-|  Zúrich |  Suiza |  415367 |  city:capital<br>city:emea |
+|  Zúrich |  Suiza |  415367 |  ciudad:capital<br>ciudad:emea |

@@ -45,7 +45,7 @@ ECMAScript es un lenguaje de secuencias de comandos. Se utiliza para secuencias 
 
       | Nombre | Tipo | Value |
       |--- |--- |--- |
-      | jcr:title | String | Especifique el nombre de la secuencia de comandos. Por ejemplo, seleccione el agente de campo más cercano. Este nombre se muestra en los pasos Asignar tarea y Firmar documento . |
+      | jcr:title | Cadena | Especifique el nombre de la secuencia de comandos. Por ejemplo, seleccione el agente de campo más cercano. Este nombre se muestra en los pasos Asignar tarea y Firmar documento . |
 
    1. Haga clic en **Guardar todo**. La secuencia de comandos está disponible para su selección en los componentes de AEM flujo de trabajo.
 

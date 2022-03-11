@@ -1,13 +1,13 @@
 ---
-title: Desarrollo de un componente personalizado para pantallas as a Cloud Service
+title: Desarrollo de un componente personalizado para Screens as a Cloud Service
 description: El siguiente tutorial recorre los pasos para crear un componente personalizado para AEM Screens. AEM Screens reutiliza muchos patrones de diseño y tecnologías existentes de otros productos AEM. El tutorial resalta las diferencias y las consideraciones especiales al desarrollar para AEM Screens.
-source-git-commit: 0ca86e127569e8f6eb92654e4224a4d5da72ebf4
+exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Desarrollo de un componente personalizado para AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
 
@@ -281,7 +281,7 @@ Los componentes de AEM Screens se representan de forma diferente en el modo de e
 
    * `allowProxy` | Boolean | `true`
 
-   * `categories`| String[] | `cq.screens.components`
+   * `categories`| Cadena[] | `cq.screens.components`
 
    ![Propiedades para /apps/weretail-run/components/content/helloworld/clientlibs/shared](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)
 
@@ -386,7 +386,7 @@ Debajo se crea una página de diseño de ejecución de We.Retail que almacenará
 
    | Nombre | Tipo | Value |
    |---|---|---|
-   | jcr:title | String | Ejecución de We.Retail |
+   | jcr:title | Cadena | Ejecución de We.Retail |
    | sling:resourceType | Cadena | wcm/core/components/designer |
    | cq:doctype | Cadena | html_5 |
 

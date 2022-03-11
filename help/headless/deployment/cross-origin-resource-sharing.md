@@ -2,13 +2,13 @@
 title: Configuración de Intercambio de Recursos de Origen Cruzado (CORS) con AEM Headless
 description: El Intercambio de Recursos de Origen Cruzado (CORS) de Adobe Experience Manager permite que las aplicaciones web sin encabezado realicen llamadas del lado del cliente a AEM. Se necesita una configuración de CORS para habilitar el acceso al punto de conexión de GraphQL.
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
-workflow-type: ht
+exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 100%
 
 ---
-
 
 # Configuración de Intercambio de Recursos de Origen Cruzado (CORS)
 
@@ -58,5 +58,3 @@ Por ejemplo, para conceder acceso al punto de conexión de GraphQL `/content/cq:
 ```
 
 Si ha configurado una ruta de vanidad para el punto de conexión, también puede utilizarla en `allowedpaths`.
-
-

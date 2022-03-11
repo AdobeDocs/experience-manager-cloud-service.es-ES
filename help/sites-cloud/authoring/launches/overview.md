@@ -1,14 +1,13 @@
 ---
 title: Lanzamientos
 description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
-translation-type: tm+mt
-source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
+exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 81%
 
 ---
-
 
 # Lanzamientos {#launches}
 
@@ -23,8 +22,8 @@ Por ejemplo, las páginas de productos de temporada de un almacén en línea se 
 
 También puede:
 
-* Navegue por el contenido de la rama de lanzamiento; agregar o eliminar páginas según sea necesario.
-* Previsualización cómo se verá el contenido publicado en una fecha/hora específica en el futuro.
+* Navegar por el contenido en la rama de lanzamiento; agregar o quitar páginas según sea necesario.
+* Obtenga una vista previa del aspecto que tendrá el contenido publicado en una fecha/hora futura específica.
 
 Cuando llegue el trimestre siguiente, las páginas de lanzamiento se promocionan de forma que se puedan publicar las páginas de origen (que contienen el contenido actualizado). Puede promocionar todas las páginas o solamente aquellas que se han modificado. 
 
@@ -33,13 +32,13 @@ También se puede realizar lo siguiente:
 * Crear lanzamientos para varias ramas de raíz. Si bien puede crear el lanzamiento para todo el sitio (y realizar los cambios allí), este método es poco práctico, ya que es necesario copiar todo el sitio. Cuando se trata de cientos o incluso miles de páginas, los requisitos del sistema y el rendimiento de este se ven afectados tanto por la acción de copia como por las comparaciones posteriores necesarias para las tareas de promoción.
 * Crear lanzamientos anidados (un lanzamiento dentro de otro lanzamiento). Esto permite crear un lanzamiento a partir de un lanzamiento existente, de modo que los autores puedan aprovechar los cambios ya realizados, en lugar de tener que realizar los mismos cambios varias veces para cada lanzamiento.
 
-Esta sección describe cómo crear, editar y promocionar (y, si es necesario, [eliminar](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) páginas de inicio desde la consola Sitios o [la consola Lanzamientos](#the-launches-console):
+En esta sección se describe cómo crear, editar y promocionar (y si es necesario) [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) inicie páginas desde la consola Sitios o [la consola Lanzamientos](#the-launches-console):
 
 * [Creación de lanzamientos](/help/sites-cloud/authoring/launches/creating.md)
 * [Edición de lanzamientos](/help/sites-cloud/authoring/launches/editing.md)
-* [Administración de páginas dentro de los inicios](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Uso de Deformación de tiempo para la Previsualización del contenido en función de los inicios](/help/sites-cloud/authoring/launches/preview.md)
-* [Promoción de lanzamientos](/help/sites-cloud/authoring/launches/promoting.md) 
+* [Administración de páginas dentro de lanzamientos](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Uso de Deformación de tiempo para previsualizar el contenido en función de los lanzamientos](/help/sites-cloud/authoring/launches/preview.md)
+* [Promoción de lanzamientos](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## Lanzamientos: orden de eventos {#launches-the-order-of-events}
 
@@ -85,7 +84,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
 >[!NOTE]
 >
->La creación y edición de inicios requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
+>La creación y edición de lanzamientos requiere derechos de acceso a `/content/launches` - como con el grupo predeterminado `content-authors`.
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 
@@ -93,13 +92,13 @@ Los lanzamientos permiten realizar lo siguiente:
 
 1. En la consola **Sitios**, vaya al origen de los lanzamientos.
 1. Abra el carril **Referencias** y seleccione la página de origen.
-1. Seleccione **Lanzamientos**, se enumerarán los lanzamientos existentes, junto con el acceso a la **Consola de lanzamientos**:
+1. Select **Lanzamientos**, se enumerarán los lanzamientos existentes, así como el acceso al **Consola Lanzamientos**:
 
-   ![Referencias de inicios en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. Pulse o haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
 
-   ![Acciones para realizar inicios en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![Acciones que se deben realizar en los lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## Consola Lanzamientos {#the-launches-console}
 
@@ -107,13 +106,13 @@ En la consola Lanzamientos se proporciona información general sobre los lanzami
 
 * La consola **Herramientas**: **Herramientas**, **Sitios** **Lanzamientos**.
 
-* **Inicia** Consolación en la parte inferior de la sección  **** Lanzamientos del carril de  **** referencia al navegar por el contenido de origen en la consola Sitios.
+* **Consola Lanzamientos** en la parte inferior del **Lanzamientos** de la sección **Referencias** al navegar por el contenido de origen en la consola Sitios .
 
-   ![Inicia la consola en Referencias de inicios en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Consola Lanzamientos en Referencias de lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* El botón **Inicia** en la parte superior derecha, al navegar por el contenido de inicio en la consola Sitios:
+* La variable **Lanzamientos** en la parte superior derecha, al navegar por el contenido de Launch en la consola Sitios :
 
-   ![Lanzamientos, opción en la consola Sitios](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+   ![Opción Lanzamientos en la consola Sitios](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * O directamente; por ejemplo, con:
    `https://<host>:<port>/libs/launches/content/launches.html`

@@ -1,13 +1,13 @@
 ---
 title: Creación y administración de visualizaciones en Screens as a Cloud Service
-description: En esta página se describe cómo crear y administrar visualizaciones en Screens como Cloud Service.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+description: En esta página se describe cómo crear y administrar visualizaciones en Screens as a Cloud Service.
+exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 13%
 
 ---
-
 
 # Creación y administración de visualizaciones en Screens as a Cloud Service {#create-displays-screens-cloud}
 
@@ -25,20 +25,20 @@ Este documento le ayuda a comprender cómo crear y administrar pantallas en el p
 
 Siga los pasos a continuación para crear la visualización desde el proveedor de servicios de Screens:
 
-1. Vaya al proveedor de servicios de Screens desde la instancia de Cloud Service de AEM.
-1. Seleccione **Muestra** en el panel de navegación izquierdo y haga clic en **Crear** en la esquina superior derecha de la pantalla.
+1. Vaya al proveedor de servicios de Screens desde la instancia de AEM Cloud Service.
+1. Select **Visualizaciones** en el panel de navegación izquierdo y haga clic en **Crear** en la esquina superior derecha de la pantalla.
 
    ![image](/help/screens-cloud/assets/display/disp-1.png)
 
-1. Seleccione **Display** en la barra de acciones.
+1. Select **Mostrar** de la barra de acciones.
 
    ![image](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Introduzca el título como **LoopingChannelDisplay** en **Display Name** y haga clic en **Create**.
+1. Escriba el título como **BucleChannelDisplay** en **Nombre para mostrar** y haga clic en **Crear**.
 
    ![image](/help/screens-cloud/assets/display/disp3.png)
 
-1. La visualización titulada **LoopingChannelDisplay** ahora estará visible en la lista de visualización.
+1. La visualización titulada como **BucleChannelDisplay** ahora estará visible en la lista de visualización.
 
    ![image](/help/screens-cloud/assets/display/disp-4.png)
 
@@ -46,10 +46,10 @@ Siga los pasos a continuación para crear la visualización desde el proveedor d
 
 Puede eliminar una pantalla del proveedor de servicios de Screens.
 
-Seleccione la pantalla y haga clic en **Delete** en la parte inferior del panel, como se muestra en la figura siguiente.
+Seleccione la visualización y haga clic en **Eliminar** en la parte inferior del panel, como se muestra en la figura siguiente.
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Asignar canal a una pantalla en Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).
+Ahora que ha aprendido a crear y administrar pantallas para su proyecto, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento [Asignación de canales a una visualización en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=en).

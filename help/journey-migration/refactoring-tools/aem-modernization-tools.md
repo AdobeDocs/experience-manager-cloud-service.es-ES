@@ -1,7 +1,8 @@
 ---
 title: Herramientas de modernización de AEM
 description: Herramientas de modernización de AEM
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: d541fae0-6386-403f-99c9-373dc978ad13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 77%

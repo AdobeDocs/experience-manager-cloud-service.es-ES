@@ -23,7 +23,7 @@ Se utiliza un modo [especial](/help/sites-cloud/authoring/fundamentals/environme
 
 >[!TIP]
 >
->Según sus necesidades, también puede desarrollar un [flujo de trabajo](/help/sites-cloud/authoring/workflows/overview.md) para enviar notificaciones cuando estas se añadan, actualicen o eliminen.
+>Según sus necesidades, también puede desarrollar un [flujo de trabajo](/help/sites-cloud/authoring/workflows/overview.md) para enviar notificaciones cuando se añadan, actualicen o eliminen anotaciones.
 
 ## Indicador de anotaciones {#annotation-indicator}
 
@@ -31,7 +31,7 @@ Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esq
 
 ![Indicador de anotaciones](/help/sites-cloud/authoring/assets/annotation-indicator.png)
 
-## Modo de anotación {#annotate-mode}
+## Modo Anotar {#annotate-mode}
 
 Las anotaciones solo están visibles en el modo Anotar .
 
@@ -53,7 +53,7 @@ Las anotaciones solo están visibles en el modo Anotar .
 
 Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o eliminar anotaciones en el contenido
 
-1. [Inicie el ](#annotate-mode) modo Anotar en la página.
+1. [Iniciar modo Anotar](#annotate-mode) en la página .
 
 1. Toque o haga clic en el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
 
@@ -80,7 +80,7 @@ Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o el
 
 1. Cuando haya terminado de editar una anotación concreta, puede:
 
-   * Toque o haga clic en el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o [eliminar la anotación.](#deleting-annotations)
+   * Toque o haga clic en el marcador de texto para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o [elimine la anotación.](#deleting-annotations)
    * Cambiar la posición del marcador de texto.
    * Toque o haga clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
    * Mover o copiar un componente
@@ -99,7 +99,7 @@ Además de ver las anotaciones, el modo Anotar permite crear, editar, mover o el
 
 Las anotaciones y sus bocetos asociados se pueden eliminar.
 
-1. [Inicie el ](#annotate-mode) modo Anotar en la página.
+1. [Iniciar modo Anotar](#annotate-mode) en la página .
 
 1. Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación.
 
@@ -113,11 +113,11 @@ Las anotaciones y sus bocetos asociados se pueden eliminar.
 >
 >Al eliminar un componente, se eliminan todas las anotaciones y bocetos relacionados con ese recurso, independientemente de su posición en la página en general.
 
-## Eliminar sólo bocetos {#deleting-sketches}
+## Eliminación de bocetos solamente {#deleting-sketches}
 
 Solo puede eliminar bocetos específicos en lugar de toda la anotación con todos los bocetos asociados.
 
-1. [Inicie el ](#annotate-mode) modo Anotar en la página.
+1. [Iniciar modo Anotar](#annotate-mode) en la página .
 
 1. Toque o haga clic en el boceto. AEM resalta con un cuadro azul más oscuro.
 

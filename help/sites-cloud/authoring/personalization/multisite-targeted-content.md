@@ -48,7 +48,6 @@ Un sitio o Live Copy que vincula a un área que contiene las actividades que deb
 >
 >* Cuando utilice lanzamientos o Live Copies, necesitará una licencia MSM.
 >* Cuando utilice la función de sincronización a Adobe Target, necesitará una licencia de Adobe Target.
-
 >
 
 
@@ -157,7 +156,7 @@ Para crear una nueva área:
 
 1. Haga clic en el icono **Área** y en **Siguiente**.
 1. En el campo **Título**, especifique un nombre para la nueva área. De forma opcional, seleccione etiquetas.
-1. Haga clic o pulse **Crear**.
+1. Haga clic o pulse en **Crear**.
 
    AEM redirige a la ventana de marca, donde se enumeran las áreas creadas. Si hay otra área además del área principal, puede crear áreas directamente desde la consola de marca.
 
@@ -192,7 +191,7 @@ Para crear un área como una Live Copy:
    >
    >Cuando una página se transforma en una Live Copy y el área configurada de la página modelo resulta ser también el modelo del área configurada para las Live Copy de las páginas, el valor de LiveAction **personalizationContentRollout** activa un elemento subRollout sincrónico, que forma parte de la **configuración de despliegue estándar**.
 
-1. Haga clic o pulse **Crear**.
+1. Haga clic o pulse en **Crear**.
 
    AEM redirige a la ventana de marca, donde se enumeran las áreas creadas. Si hay otra área además del área principal, puede crear áreas directamente desde la ventana de marca.
 
@@ -235,7 +234,6 @@ Una actividad que se hereda de otro sitio aparece en color verde junto al nombre
 >
 >* Solo se pueden suspender o desasociar Live Copies en una actividad.
 >* No es necesario suspender o desasociar Live Copies para expandir una actividad heredada. También puede crear **nuevas** experiencias y ofertas locales para dicha actividad. Si desea modificar una actividad existente, deberá suspender la herencia.
-
 >
 
 

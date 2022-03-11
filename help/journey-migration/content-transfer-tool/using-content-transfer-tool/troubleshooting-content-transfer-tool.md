@@ -1,15 +1,15 @@
 ---
-title: Solución de problemas de la herramienta de transferencia de contenido
-description: Solución de problemas de la herramienta de transferencia de contenido
-source-git-commit: 9e290ac1b62bdaa2a0aaee109ef959af549aa5bd
+title: Resolución de problemas de la herramienta de transferencia de contenido
+description: Resolución de problemas de la herramienta de transferencia de contenido
+exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-
-# Solución de problemas de la herramienta de transferencia de contenido {#troubleshoot-content-transfer-tool}
+# Resolución de problemas de la herramienta de transferencia de contenido {#troubleshoot-content-transfer-tool}
 
 
 ## ID de blob faltantes {#missing-blobs}

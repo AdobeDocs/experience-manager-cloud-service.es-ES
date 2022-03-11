@@ -15,7 +15,7 @@ ht-degree: 5%
 Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.9.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
@@ -29,9 +29,9 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.9.0 es el 9
 
 * El registro de pasos de calidad del código ahora incluye información detallada sobre el registro en el proceso de digitalización de OakPal.
 
-* Las opciones del menú de la página Actividad ahora incluirán una opción para **Descargar registro** para las ejecuciones completadas del Generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
+* Las opciones del menú de la página Actividad ahora incluyen una opción para **Descargar registro** para ejecuciones completadas del generador de códigos. Si selecciona esta opción, se descargará el registro del paso de compilación.
 
-* Al hacer clic directamente en la tarjeta de programa, ahora accederá a la página **Información general** de Cloud Manager. Consulte [Creación de un programa de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) para obtener más información.
+* Al hacer clic directamente en la tarjeta de programa, ahora accederá al **Información general** página. Consulte [Creación de un programa de producción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en) para obtener más información.
 
 ### Corrección de errores {#bug-fixes}
 

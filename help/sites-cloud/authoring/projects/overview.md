@@ -15,7 +15,7 @@ Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común
 
 >[!CAUTION]
 >
->Para que los usuarios de los proyectos puedan ver otros usuarios/grupos mientras utilizan la funcionalidad Proyectos , como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, dichos usuarios deben tener acceso de lectura en `/home/users` y `/home/groups`. La manera más sencilla de implementar esto es dar al grupo **projects-users** acceso de lectura a `/home/users` y `/home/groups`.
+>Para que los usuarios de los proyectos puedan ver otros usuarios/grupos mientras utilizan la funcionalidad Proyectos , como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, dichos usuarios deben tener acceso de lectura en `/home/users` y `/home/groups`. La forma más sencilla de implementar esto es dar a la variable **usuarios de proyectos** acceso de lectura de grupo a `/home/users` y `/home/groups`.
 
 Como usuario, puede hacer lo siguiente:
 
@@ -83,7 +83,7 @@ El mosaico **Experiencias** permite añadir aplicación móvil, un sitio web o u
 
 ![Experiencias](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Los iconos indican qué tipo de experiencia se representa: sitio web, aplicación móvil o publicación. Para agregar experiencias, toque o haga clic en el protector inferior y pulse **Agregar experiencia** y seleccione el tipo de experiencia.
+Los iconos indican qué tipo de experiencia se representa: sitio web, aplicación móvil o publicación. Para agregar experiencias, toque o haga clic en el protector inferior y pulse **Añadir experiencia** y seleccionar el tipo de experiencia.
 
 ![Añadir una experiencia](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
@@ -115,7 +115,7 @@ En el mosaico Trabajo de traducción puede iniciar una traducción y también pu
 
 ![Trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Translation Job** para ver los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
+Haga clic en los puntos suspensivos en la parte inferior del **Trabajo de traducción** para ver los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
 
 ![Detalles del trabajo de traducción](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -147,7 +147,7 @@ El mosaico Lanzamientos muestra los lanzamientos que se hayan solicitado con un 
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Trabajo con Tareas](/help/sites-cloud/authoring/projects/tasks.md).
+En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan detalladamente en [Uso de tareas](/help/sites-cloud/authoring/projects/tasks.md).
 
 ![Tareas](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
@@ -157,7 +157,7 @@ En AEM se incluyen tres plantillas predefinidas de fábrica:
 
 * Un proyecto simple: una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
 * Un proyecto de medios : un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También solicita el flujo de trabajo Copiar para solicitar y revisar texto.
-* Un [proyecto de traducción](/help/sites-cloud/administering/translation/overview.md): una muestra de referencia para administrar las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
+* A [proyecto de traducción](/help/sites-cloud/administering/translation/overview.md) - Una muestra de referencia para administrar las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
 En función de la plantilla seleccionada, dispone de distintas opciones en relación con las funciones de usuario y los flujos de trabajo.
 

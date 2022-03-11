@@ -3,7 +3,7 @@ title: 'Creación de fragmentos de contenido: configuración sin encabezado'
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 

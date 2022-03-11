@@ -21,7 +21,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Título y etiquetas**
 
-   * **Título** : el título de la página se muestra en varias ubicaciones. Por ejemplo, la  **** lista de paquetes Sitios web y las vistas  **** de lista o tarjeta del sitio .
+   * **Título** - El título de la página se muestra en varias ubicaciones. Por ejemplo, la variable **Sitios web** lista de pestañas y **Sitios** vistas de tarjeta/lista.
       * Es un campo obligatorio.
    * **Etiquetas** - Aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección.
       * Tras seleccionar una etiqueta, esta se muestra bajo el cuadro de selección. Para eliminar una etiqueta de esta lista, utilice la x.
@@ -35,11 +35,11 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Marca**
 
-   Aplique una identidad de marca uniforme en todas las páginas adjuntando una marca de registro al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+   Aplique una identidad de marca uniforme en todas las páginas adjuntando una marca de registro al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de la [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
-   * **Anular** : marque para definir el registro de marca en esta página.
-      * Cualquier página secundaria heredará el valor a menos que también tenga configurados sus valores **Override**.
-   * **Valor de anulación** : el texto de la marca que se va a anexar al título de la página.
+   * **Sobrescribir** - Marque para definir el indicador de marca en esta página.
+      * El valor lo heredará cualquier página secundaria a menos que también tenga su **Sobrescribir** valores establecidos.
+   * **Sobrescribir valor** - El texto de la marca que se añadirá al título de la página.
       * El valor se anexa al título de la página después de un carácter de barra vertical como &quot;Ciclo de Toscana&quot; | Siempre listo para la WKND&quot;
 
 * **ID de HTML**
@@ -48,28 +48,28 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Títulos y descripción de Más**
 
-   * **Título de página** : un título que se usará en la página. Normalmente, lo utilizan los componentes del título. Si la opción se deja vacía, se utilizará el **Título**.
-   * **Título de navegación** : puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea un título más conciso). Si está vacío, se utilizará el  **** Título .
-   * **Subtítulo** : subtítulo que se utilizará en la página.
-   * **Descripción** : su descripción de la página, su propósito o cualquier otro detalle que desee añadir.
+   * **Título de página** - Un título que se usará en la página. Normalmente, lo utilizan los componentes del título. Si la opción se deja vacía, se utilizará el **Título**.
+   * **Título de navegación** - Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea un título más conciso). Si está vacío, la variable **Título** se utilizará.
+   * **Subtítulo** - Un subtítulo para usar en la página.
+   * **Descripción** : su descripción de la página, su propósito o cualquier otro detalle que desee agregar.
 
 * **Tiempo de activación/desactivación**
 
    >[!NOTE]
    >
-   > Consulte [Tiempo de activación y desactivación: Configuración de Déclencheur](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener más información sobre cómo configurar la replicación automática relacionada.
+   > Consulte [Horas de activación y desactivación: configuración de Déclencheur](/help/operations/replication.md#on-and-off-times-trigger-configuration) para obtener detalles sobre cómo configurar la replicación automática relacionada.
 
    >[!NOTE]
-   >Si **Tiempo de activación** o **Tiempo de inactividad** están en el pasado y se ha configurado la replicación automática, la acción relevante se activará inmediatamente.
+   >Si alguno de los **Tiempo de activación** o **Tiempo de inactividad** es en el pasado y se configura la replicación automática, la acción relevante se activará inmediatamente.
 
-   * **Tiempo de activación** : fecha y hora a las que se hará visible (procesada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
+   * **Tiempo de activación** - La fecha y hora a las que se hará visible (representada) la página publicada en el entorno de publicación. La página debe publicarse, ya sea de forma manual o mediante replicación automática preconfigurada.
 
-      * Si ya se ha publicado [(manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md), esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
+      * Si [publicado (manualmente)](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) esta página se mantendrá inactiva (oculta) hasta que se represente a la hora especificada.
       * Si no se publica y se configura para la replicación automática, la página se publicará automáticamente y, a continuación, se representará a la hora especificada.
       * Si no se publica y no está configurada para la replicación automática, la página no se publicará automáticamente, por lo que se verá un error 404 cuando se intente acceder a la página.
-   * **Tiempo de inactividad** : similar a y usado a menudo en combinación con Tiempo de  **activación**, define el tiempo en que la página publicada se ocultará en el entorno de publicación.
+   * **Tiempo de inactividad** - Similar a y usado a menudo en combinación con **Tiempo de activación**, define el momento en el que la página publicada se ocultará en el entorno de publicación.
 
-   * Deje vacíos estos campos (**Tiempo de activación** y **Tiempo de desactivación**) para las páginas que desee publicar inmediatamente y que estén disponibles en el entorno de publicación hasta que se desactiven (el escenario normal).
+   * Deje estos campos (**Tiempo de activación** y **Tiempo de inactividad**) está vacío para las páginas que desea publicar inmediatamente y está disponible en el entorno de publicación hasta que se desactiven (el escenario normal).
 
 
 * **URL de vanidad**
@@ -86,24 +86,24 @@ Las propiedades se distribuyen entre varias pestañas.
    >* No debe configurarse en una página existente.
 
 
-   * **Agregar** : toque o haga clic para mostrar un campo y definir una URL de vanidad para la página.
+   * **Agregar** - Toque o haga clic para mostrar un campo para definir una URL de vanidad para la página.
       * Toque o haga clic de nuevo para agregar varios.
-      * Toque o haga clic en el icono **Remove** para eliminar la URL de vanidad.
-   * **Redirigir URL de vanidad** : indica si desea que la página use la URL de vanidad.
+      * Toque o haga clic en el botón **Eliminar** para eliminar la URL de vanidad.
+   * **Redirigir URL de vanidad** - Indica si desea que la página use la URL de vanidad.
 
 
 ### Avanzado  {#advanced}
 
 * **Configuración**
 
-   * **Idioma** : El idioma de la página.
-   * **Raíz del idioma** : debe comprobarse si la página es la raíz de una copia del idioma.
-   * **Redirigir** : indica la página a la que esta página debe redirigir automáticamente
-   * **Diseño** : indica si la página se muestra u oculta en la navegación por la página del sitio resultante
-   * **Alias** : Especifica un alias que se utilizará con esta página
-      * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, también se puede acceder a esta página a través de `/content/wknd/us/en/magazine/private`
-      * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
-      * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. [Las ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+   * **Idioma** - El idioma de la página
+   * **Raíz del idioma** - Debe comprobarse si la página es la raíz de una copia de idioma
+   * **Redirigir** - Indica la página a la que esta página debe redireccionarse automáticamente
+   * **Diseño** - Indica si la página se muestra u oculta en la navegación de página del sitio resultante
+   * **Alias** - Especifica un alias que se utilizará con esta página
+      * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, a continuación, también se puede acceder a esta página a través de `/content/wknd/us/en/magazine/private`
+      * La creación de un alias establece la variable `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
+      * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. [Opciones de publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) en el editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -111,34 +111,34 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Configuración**
 
-   * **Configuración de nube** : la ruta a la configuración
+   * **Configuración de nube** - La ruta a la configuración
 
 * **Configuración de plantilla**
 
-   * **Plantillas permitidas** :  [define la lista de plantillas que estarán ](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) disponibles en esta subrama.
+   * **Plantillas permitidas** - [Define la lista de plantillas que estarán disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dentro de esta subrama
 
 * **Requisito de autenticación**
 
-   * **Habilitar** : habilitar el uso de la autenticación para acceder a la página
+   * **Habilitar** - Habilitar el uso de la autenticación para acceder a la página
 
       >[!NOTE]
       >
       >Los grupos de usuarios cerrados para la página se definen en la pestaña **[Permisos](#permissions)**.
 
-   * **Página de inicio de sesión** : la página que se utilizará para el inicio de sesión
+   * **Página de inicio de sesión** - La página que se utilizará para el inicio de sesión
 
 * **Exportar**
 
-   * **Configuración de exportación** : especifica una configuración de exportación
+   * **Configuración de exportación** - Especifica una configuración de exportación
 
 ### Miniatura    {#thumbnail}
 
 Configurar la miniatura de la página
 
-* **Generar previsualización** : genere una previsualización de la página para utilizarla como miniatura
-* **Cargar imagen** : cargue una imagen para utilizarla como miniatura
-* **Seleccionar imagen** : seleccione un recurso existente para utilizarlo como miniatura
-* **Revertir** : esta opción está disponible después de realizar un cambio en la miniatura. Si no desea mantener el cambio, puede revertirlo antes de guardar.
+* **Generar previsualización** - Genera una previsualización de la página para utilizarla como miniatura
+* **Cargar imagen** - Cargar una imagen para utilizarla como miniatura
+* **Seleccionar imagen** - Seleccione un recurso existente para utilizarlo como miniatura
+* **Revertir** - Esta opción está disponible después de haber realizado un cambio en la miniatura. Si no desea mantener el cambio, puede revertirlo antes de guardar.
 
 ### Redes sociales {#social-media}
 
@@ -153,7 +153,7 @@ Configurar la miniatura de la página
 
 ### Cloud Services {#cloud-services}
 
-* **Configuraciones de Cloud Service** : defina propiedades para servicios en la nube
+* **Configuraciones del Cloud Service** - Definir propiedades para servicios en la nube
 
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
@@ -162,12 +162,12 @@ Configurar la miniatura de la página
 
 * **Configuración de ContextHub**
 
-   * **Ruta de ContextHub** : definir la configuración de  [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
-   * **Ruta de segmentos** : Defina la ruta de acceso de los  [segmentos](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   * **Ruta de ContextHub** - Defina el [Configuración de ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
+   * **Ruta de segmentos** - Defina el [Ruta de segmentos](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
 * **Configuración de ámbito**
 
-   * **Marca** : define una  [marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
+   * **Marca** - Define un [Marca para especificar un ámbito de objetivo](/help/sites-cloud/authoring/personalization/targeted-content.md).
    >[!NOTE]
    >Esta opción requiere una cuenta de usuario en el grupo `Target Administrators`.
 
@@ -187,18 +187,18 @@ Configurar la miniatura de la página
 
 ### Modelo {#blueprint}
 
-Esta ficha solo está visible para páginas que sirven como modelos. Los modelos sirven de base para que Live Copies formen parte de [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
+Esta ficha solo está visible para páginas que sirven como modelos. Los modelos sirven de base para que Live Copies sean parte de [Administración de varios sitios.](/help/sites-cloud/administering/msm/overview.md)
 
-* **Live Copies actuales** : enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
+* **Live Copies actuales** - Enumera las páginas que se basan en (es decir, que son Live Copies de) esta página de modelo
 
-* **Configuración de lanzamiento** : controla las circunstancias dentro de las cuales se propagarán las modificaciones a Live Copy
+* **Configuración de lanzamiento** - Controla las circunstancias en las que se propagarán las modificaciones a Live Copy
 
 ### Live Copy    {#live-copy}
 
-* **Sincronizar** : Sincronizar Live Copy con modelo, manteniendo las modificaciones locales
-* **Restablecer** : restablecer Live Copy al estado del modelo, eliminando modificaciones locales
-* **Suspender** : suspender Live Copy de nuevas modificaciones en el despliegue
-* **Desasociar** : desasociar Live Copy del modelo
+* **Sincronizar** - Sincronizar Live Copy con Blueprint, manteniendo las modificaciones locales
+* **Restablecer** - Restaurar Live Copy al estado del modelo, eliminando modificaciones locales
+* **Suspender** - Suspender Live Copy de nuevas modificaciones en el despliegue
+* **Desasociar** - Desasociar Live Copy del modelo
 
 * **Origen**
 
@@ -210,9 +210,9 @@ Esta ficha solo está visible para páginas que sirven como modelos. Los modelos
 
 * **Configuración**
 
-   * **Herencia de Live Copy** : si se selecciona, la configuración de Live Copy es efectiva en todos los elementos secundarios
-   * **Heredar configuraciones de lanzamiento del elemento principal** : si se selecciona, la configuración de lanzamiento se hereda del elemento principal de la página
-   * **Elegir configuración de lanzamiento** : define las circunstancias en las que las modificaciones se propagarán desde el modelo y solo estarán disponibles cuando no se haya seleccionado la opción  **Heredar configuraciones de lanzamiento de** padres.
+   * **Herencia de Live Copy** - Si está activada, la configuración de Live Copy es efectiva en todos los elementos secundarios
+   * **Heredar configuraciones de lanzamiento de principal** - Si está marcada, la configuración de lanzamiento se hereda del elemento principal de la página
+   * **Elija la configuración de lanzamiento** - Define las circunstancias en las que se propagarán las modificaciones desde el modelo y solo está disponible cuando **Heredar configuraciones de lanzamiento de principal** no está seleccionado
 
 ### Vista previa {#preview}
 

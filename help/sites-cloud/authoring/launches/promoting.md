@@ -1,14 +1,13 @@
 ---
 title: Promoción de lanzamientos
-description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
-translation-type: tm+mt
-source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
+description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo.
+exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 76%
 
 ---
-
 
 # Promoción de lanzamientos {#promoting-launches}
 
@@ -25,7 +24,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 >[!CAUTION]
 >
->Un solo lanzamiento no se puede promocionar de forma simultánea. Esto significa que dos acciones de promoción en el mismo lanzamiento al mismo tiempo pueden resultar en un error - `Launch could not be promoted` (junto con errores de conflicto en el registro).
+>Un solo lanzamiento no se puede promocionar de forma simultánea. Esto significa que dos acciones promocionales en el mismo lanzamiento al mismo tiempo pueden dar como resultado un error: `Launch could not be promoted` (junto con errores de conflicto en el registro).
 
 >[!CAUTION]
 >
@@ -39,23 +38,21 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 >
 >* [Promover un lanzamiento anidado](#promoting-a-nested-launch) cuando haya más de un lanzamiento en la estructura.
 >* [Lanzamientos: el orden de los eventos](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) para obtener más información sobre la promoción y la publicación automáticas.
-
 >
-
 
 
 Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **Lanzamientos**:
 
 1. Abra:
-   * La consola **Sitios** al navegar por las páginas de origen:
-      1. Abra el [carril de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen requerida utilizando [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no es importante). Todas las referencias se mostrarán.
+   * La variable **Sitios** consola al navegar por páginas de origen:
+      1. Abra el [raíl de referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) y seleccione la página de origen requerida utilizando [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no es importante). Todas las referencias se mostrarán.
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos [1]) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
-   * La consola **Sitios** al navegar por las páginas de inicio:
-      1. Seleccione la página de inicio requerida utilizando [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. La acción **Promocionar** estará disponible en la barra de herramientas.
-   * La consola **Lanzamientos**:
+   * La variable **Sitios** al navegar por páginas de lanzamiento:
+      1. Seleccione la página de lanzamiento necesaria mediante [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md).
+      1. La variable **Promocionar** estará disponible en la barra de herramientas.
+   * La variable **Lanzamientos** consola:
       1. Seleccione su lanzamiento (toque o haga clic en la miniatura).
       1. Seleccione **Promocionar**.
 1. En el primer paso, puede especificar:
@@ -64,19 +61,19 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
    * **Ámbito**
       * **Promocionar lanzamiento completo**
       * **Promocionar las páginas modificadas**
-      * **Promocione las páginas**  aprobadas según el flujo de trabajo de aprobación del lanzamiento
+      * **Promocionar páginas aprobadas** - depende del flujo de trabajo de aprobación del lanzamiento
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
       Por ejemplo, al seleccionar para promocionar solo las páginas modificadas:
 
-      ![Iniciar promoción](/help/sites-cloud/authoring/assets/launches-promote.png)
+      ![Promoción de Launch](/help/sites-cloud/authoring/assets/launches-promote.png)
 
       >[!NOTE]
       >
       >Esto abarca un lanzamiento único, si ha anidado lanzamientos consulte [Promocionar un lanzamiento anidado](#promoting-a-nested-launch).
 1. Seleccione **Siguiente** para continuar.
-1. Puede revisar las páginas que desee promocionar; esto dependerá del intervalo de páginas que haya elegido:
+1. Puede revisar las páginas que se promocionarán; dependerán del rango de páginas que haya elegido:
 
    ![Revisar promoción](/help/sites-cloud/authoring/assets/launches-promote-review.png)
 
@@ -86,13 +83,13 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
 
 Cuando está editando una página de lanzamiento, la acción **Promocionar lanzamiento** también está disponible en **Información de la página**. Esta acción abrirá el asistente para recopilar la información necesaria.
 
-![Promocione el lanzamiento desde la información del sitio](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
+![Promocionar lanzamiento desde la información del sitio](/help/sites-cloud/authoring/assets/launches-promote-page-info.png)
 
 >[!NOTE]
 >
 >Esto se encuentra disponible para los [lanzamientos anidados](#promoting-a-nested-launch) y únicos.
 
-## Promocionar un lanzamiento anidado  {#promoting-a-nested-launch}
+## Promocionar un lanzamiento anidado {#promoting-a-nested-launch}
 
 Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de los orígenes, incluido el origen raíz (producción).
 
@@ -102,21 +99,21 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
 1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
 1. Introduzca la información necesaria:
    * **Destino**
-      * **Destinatario**  de promoción: puede promocionarse a cualquiera de las fuentes.
-      * **Eliminar inicio después de la promoción** : después de la promoción, se eliminará el lanzamiento seleccionado y todos los lanzamientos anidados dentro de él.
-   * **Ámbito** : Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
+      * **Destino de la promoción** - Puede promocionar a cualquiera de las fuentes.
+      * **Eliminar el lanzamiento después de la promoción** - Después de la promoción, se eliminará el lanzamiento seleccionado y los lanzamientos anidados dentro de él.
+   * **Ámbito** - Aquí puede seleccionar si desea promocionar todo el lanzamiento o solo las páginas que realmente se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
       * **Promocionar lanzamiento completo**
       * **Promocionar las páginas modificadas**
-      * **Promocione las páginas**  aprobadas según el flujo de trabajo de aprobación del lanzamiento
+      * **Promocionar páginas aprobadas** - depende del flujo de trabajo de aprobación del lanzamiento
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
-   ![Promocionar configuración de inicio](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
+   ![Promocionar configuración de lanzamiento](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. Seleccione **Siguiente**.
 1. Revise los detalles de la promoción antes de seleccionar **Promocionar**:
 
-   ![Revisar la configuración de promoción](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
+   ![Revisar configuración de promoción](/help/sites-cloud/authoring/assets/launches-promote-review-2.png)
 
    >[!NOTE]
    >
@@ -124,7 +121,7 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
 
 1. Los cambios se promocionarán y reflejarán en la consola **Lanzamientos**:
 
-   ![En la consola de inicios](/help/sites-cloud/authoring/assets/launches-console.png)
+   ![En la consola de lanzamientos](/help/sites-cloud/authoring/assets/launches-console.png)
 
 ## Procesamiento de páginas promocionadas mediante el flujo de trabajo de AEM {#processing-promoted-pages-using-aem-workflow}
 

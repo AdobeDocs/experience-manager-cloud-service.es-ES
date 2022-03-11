@@ -2,10 +2,11 @@
 title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.11.0
 description: Estas son las notas de la versión de Cloud Manager en AEM versión as a Cloud Service 2021.11.0
 feature: Release Information
-source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
+exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 1%
+ht-degree: 77%
 
 ---
 
@@ -29,7 +30,7 @@ La próxima versión está prevista para el 16 de diciembre de 2021.
    >[!IMPORTANT]
    >Debe estar en AEM versión `2021.10.5933.20211012T154732Z` para aprovechar las nuevas canalizaciones front-end.
 
-* La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
+* La duración de la canalización Calidad del código se reduce significativamente al realizar el análisis del código de una manera más eficiente sin necesidad de crear una imagen de AEM completa. Este cambio se implementará progresivamente durante las semanas siguientes a la publicación.
 
 * El ID de confirmación de Git ahora se mostrará en los detalles de ejecución de la canalización, lo que facilita el seguimiento del código creado.
 
@@ -37,11 +38,11 @@ La próxima versión está prevista para el 16 de diciembre de 2021.
 
 * La creación de entornos ya está disponible a través de una API expuesta públicamente.
 
-* La variable `x-request-id` el encabezado de respuesta ahora está visible en API Playground en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de atención al cliente para la resolución de problemas.
+* El encabezado de respuesta `x-request-id` ahora está visible en el sitio de pruebas de API en [www.adobe.io](https://www.adobe.io/). Este encabezado es útil cuando se envían problemas de servicio de atención al cliente para la resolución de problemas.
 
 * Como usuario, veo que la tarjeta de canalización con cero canalizaciones me proporciona la guía adecuada.
 
-* Ya está disponible una nueva página de actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
+* Ya está disponible una nueva página Actividad donde se pueden ver actividades como las ejecuciones de canalización y código junto con los detalles asociados. Con el tiempo, las actividades enumeradas en esta página se ampliarán en alcance junto con los detalles proporcionados.
 
 * Ya está disponible una nueva página de canalizaciones con una ventana emergente de estado al pasar el ratón por encima para facilitar la vista del resumen de detalles. Las ejecuciones de canalización se pueden ver junto con los detalles asociados.
 
@@ -53,11 +54,11 @@ La próxima versión está prevista para el 16 de diciembre de 2021.
 
 ## Corrección de errores {#bug-fixes}
 
-* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en E/S de red superfluas al iniciar y detener el contenedor de compilación.
+* Algunas configuraciones de compilación no ortodoxas tuvieron como resultado que se almacenaran archivos innecesarios en la caché de artefactos Maven de la canalización, lo que resultó en I/O de red superfluas al iniciar y detener el contenedor de compilación.
 
-* La API del PATCH de canalización falla si la fase de implementación no existe.
+* La API PATCH de canalización falla si la fase de implementación no existe.
 
-* La variable `ClientlibProxyResourceCheck` la regla de calidad producía problemas falsos positivos cuando había bibliotecas cliente con rutas base comunes.
+* La regla de calidad `ClientlibProxyResourceCheck` producía problemas de falsos positivos cuando había bibliotecas de cliente con rutas base comunes.
 
 * El mensaje de error cuando se ha alcanzado el número máximo de repositorios no especificaba el motivo del error.
 

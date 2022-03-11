@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo organizar el contenido de AEM Site
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a la traducción a AEM Sites {#getting-started}
 
@@ -47,13 +47,13 @@ Antes de comenzar a traducir el contenido de AEM, existen varios requisitos.
 
 >[!TIP]
 >
->Si no está familiarizado con el uso de un CMS de gran escala como AEM, considere revisar la documentación de [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) antes de continuar. La documentación de Gestión básica no forma parte del recorrido, por lo que debe volver a esta página cuando haya terminado.
+>Si no está familiarizado con el uso de un CMS a gran escala como AEM, considere la posibilidad de revisar la [Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) documentación antes de continuar. La documentación de Gestión básica no forma parte del recorrido, por lo que debe volver a esta página cuando haya terminado.
 
 ### Herramientas {#tools}
 
 * Acceso a espacio aislado para probar la traducción del contenido
 * Credenciales para conectarse al servicio de traducción preferido
-* Ser miembro del grupo `project-administrators` en AEM
+* Sea miembro de `project-administrators` grupo en AEM
 
 ## Almacenamiento AEM contenido {#content-in-aem}
 
@@ -67,7 +67,7 @@ Para acceder a la consola Sitios :
 
 1. En el menú de navegación global, toque o haga clic en **Navegación** -> **Sitios**.
 1. La consola Sitios se abre en el nivel superior del contenido.
-1. Asegúrese de que la **Vista de columna** esté seleccionada con el selector de vista situado en la parte superior derecha de la ventana.
+1. Asegúrese de que la variable **Vista de columna** se selecciona mediante el selector de vista situado en la parte superior derecha de la ventana.
 
    ![Selección de la vista de columna](assets/selecting-column-view.png)
 
@@ -79,7 +79,7 @@ Para acceder a la consola Sitios :
 
    ![Selección de contenido](assets/sites-console-selection.png)
 
-1. Al tocar o hacer clic en el selector de raíl en la parte superior izquierda, también puede mostrar la vista **Árbol de contenido** para obtener una descripción general de árbol del contenido.
+1. Al tocar o hacer clic en el selector de raíl en la parte superior izquierda, también puede mostrar la variable **Árbol de contenido** para ver un árbol de información general del contenido.
 
    ![Vista del árbol de contenido](assets/sites-console-content-tree.png)
 
@@ -101,7 +101,7 @@ Para editar una página:
 
    ![Selección de una página para editar](assets/sites-editor-select-page.png)
 
-1. Pulse la opción **Edit** en la barra de herramientas.
+1. Toque . **Editar** en la barra de herramientas.
 1. El editor de sitios se abre con la página seleccionada cargada para su edición en una nueva ficha del explorador.
 1. Si toca o pasa el ratón por encima del contenido, se muestran selectores para componentes individuales. Los componentes son los bloques de creación de arrastrar y soltar que conforman la página.
 
@@ -187,9 +187,9 @@ Debe tomar nota de la ruta específica del contenido, ya que será necesaria má
 
 Ahora que comprende la consola y el editor del sitio y la importancia de la estructura del contenido, podemos ver cómo traducir el contenido. Las herramientas de traducción en AEM son bastante poderosas, pero son simples de entender a un alto nivel.
 
-* **Conector de traducción** : el conector es el vínculo entre AEM y el servicio de traducción que utiliza.
-* **Reglas de traducción** : las reglas definen qué contenido bajo rutas específicas se debe traducir.
-* **Proyectos de traducción** : los proyectos de traducción recopilan contenido que debe tratarse como un esfuerzo de traducción único y rastrean el progreso de la traducción, interconectando con el conector para transmitir el contenido que se va a traducir y recibirlo de nuevo desde el servicio de traducción.
+* **Conector de traducción** - El conector es el vínculo entre AEM y el servicio de traducción que utiliza.
+* **Reglas de traducción** - Las reglas definen qué contenido bajo rutas particulares se debe traducir.
+* **Proyectos de traducción** - Los proyectos de traducción reúnen contenido que debe tratarse como un esfuerzo de traducción único y rastrean el progreso de la traducción, interconectándose con el conector para transmitir el contenido a traducir y recibirlo de nuevo desde el servicio de traducción.
 
 Generalmente, solo se configura un conector una vez para la instancia y las reglas por proyecto. A continuación, utilice proyectos de traducción para traducir su contenido y mantener sus traducciones actualizadas de forma continua.
 
@@ -201,13 +201,13 @@ Ahora que ha completado esta parte del recorrido de traducción de AEM Sites, de
 * Comprender cómo AEM almacena contenido.
 * Familiarícese con AEM herramientas de traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Configure the translation connector](configure-connector.md) donde aprenderá a conectar AEM a un servicio de traducción.|
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Configuración del conector de traducción](configure-connector.md) donde aprenderá a conectar AEM a un servicio de traducción.|
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción revisando el documento [Configure the translation connector](configure-connector.md), los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no es necesario que continúen en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción revisando el documento [Configuración del conector de traducción](configure-connector.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
 
-* [AEM Gestión básica](/help/sites-cloud/authoring/getting-started/basic-handling.md) : Descubra los conceptos básicos de la IU de AEM para poder desplazarse cómodamente y realizar tareas esenciales como encontrar su contenido.
-* [Identificación del contenido para la traducción](/help/sites-cloud/administering/translation/rules.md) : obtenga información sobre cómo las reglas de traducción identifican el contenido que debe traducirse.
-* [Configuración del marco de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md) : Aprenda a configurar el marco de integración de traducción para integrarlo con servicios de traducción de terceros.
-* [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md) : Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
+* [Gestión básica de AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) : Conozca los conceptos básicos de la interfaz de usuario de AEM para poder navegar cómodamente y realizar tareas esenciales como encontrar el contenido.
+* [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md) : Aprenda cómo las reglas de traducción identifican el contenido que necesita traducción.
+* [Configuración del marco de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md) - Aprenda a configurar el marco de integración de traducción para integrarlo con servicios de traducción de terceros.
+* [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md) - Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.

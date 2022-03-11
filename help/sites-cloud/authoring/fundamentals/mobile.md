@@ -1,14 +1,13 @@
 ---
 title: Crear una página para dispositivos móviles
 description: Al crear un elemento para móvil, puede cambiar entre varios emuladores para ver qué es lo que verá el usuario final
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: fabd4468-3304-402f-9522-342da3bbae94
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 98%
 
 ---
-
 
 # Crear una página para dispositivos móviles  {#authoring-a-page-for-mobile-devices}
 

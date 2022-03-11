@@ -1,14 +1,13 @@
 ---
 title: Resolución de problemas de AEM durante la creación
 description: Algunos problemas que pueden producirse al utilizar AEM
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 
 ---
-
 
 # Resolución de problemas de AEM durante la creación {#troubleshooting-aem-when-authoring}
 

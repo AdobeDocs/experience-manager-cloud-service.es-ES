@@ -4,28 +4,28 @@ description: Funciones y responsabilidades
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 15%
+ht-degree: 20%
 
 ---
 
 
-# Adobe Experience Manager como Cloud Service: Funciones y responsabilidades {#roles-responsibilities}
+# Adobe Experience Manager as a Cloud Service: Funciones y responsabilidades {#roles-responsibilities}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_raci"
 >title="Funciones y responsabilidades"
->abstract="Adobe proporciona un conjunto de servicios en torno al aprovisionamiento, desarrollo, ensayo y producción de Experience Manager como Cloud Service. Para que el desarrollo y la implementación de la solución se lleven a cabo de la manera más eficiente posible, es importante que el cliente y el cliente comprendan y cumplan sus funciones, tal como se describe aquí."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="Elegir personas adecuadas, funciones adecuadas"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="Alineación de KPI"
+>abstract="Adobe proporciona un conjunto de servicios en torno al aprovisionamiento, desarrollo, ensayo y producción de Experience Manager as a Cloud Service. Para que el desarrollo y la implementación de la solución se lleven a cabo de la manera más eficiente posible, es importante que el cliente y el cliente comprendan y cumplan sus funciones, tal como se describe aquí."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=es" text="Elegir personas adecuadas, funciones adecuadas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aligning-kpis.html?lang=es" text="Alineación de los KPI"
 
 <br></br>
-Adobe proporciona un conjunto de servicios en torno al aprovisionamiento, desarrollo, ensayo y producción de Experience Manager como Cloud Service. Para que el desarrollo y la implementación de la solución se lleven a cabo de la manera más eficiente posible, es importante que el cliente y el cliente comprendan y cumplan sus funciones, tal como se describe a continuación.
+Adobe proporciona un conjunto de servicios en torno al aprovisionamiento, desarrollo, ensayo y producción de Experience Manager as a Cloud Service. Para que el desarrollo y la implementación de la solución se lleven a cabo de la manera más eficiente posible, es importante que el cliente y el cliente comprendan y cumplan sus funciones, tal como se describe a continuación.
 
 
 | Actividad | Subactividad | Cliente | Personalizador | Adobe | Funcionalidad de Cloud Manager |
 |---------------------------------|-------------------------------------------------------|-------------|-------------|---------|-----------------------------|
 | Aprovisionamiento | Selección de región de nube | Colaborador | Propietario | Asesor | Sí |
-| Aprovisionamiento | Acceso a AEM como Cloud Service |  |  | Propietario | Sí |
+| Aprovisionamiento | Acceso a AEM as a Cloud Service |  |  | Propietario | Sí |
 | Aprovisionamiento | Creación de entornos | Colaborador | Propietario | Asesor | Sí |
 | Aprovisionamiento | Configuración de red | Colaborador | Propietario | Asesor | Sí |
 | Aprovisionamiento | Configuración de entorno y seguridad de red | Colaborador | Propietario | Asesor | Sí |
@@ -50,16 +50,16 @@ Adobe proporciona un conjunto de servicios en torno al aprovisionamiento, desarr
 | Producción | Respuesta de evento de producción | Colaborador | Colaborador | Propietario |  |
 | Producción | Garantizar el tiempo de actividad del sistema del Experience Manager |  |  | Propietario |  |
 | Producción | Infraestructura y mantenimiento a nivel de sistema operativo |  |  | Propietario |  |
-| Producción | AEM como mantenimiento de aplicaciones de Cloud Service |  |  | Propietario |  |
+| Producción | AEM mantenimiento as a Cloud Service de aplicaciones |  |  | Propietario |  |
 | Producción | Mantenimiento de configuración y personalización | Colaborador | Propietario |  |  |
 | Producción | Administración de aplicaciones de producción | Propietario |  |  |  |
 | Producción | Ajuste de la infraestructura de producción |  |  | Propietario |  |
 | Producción | Ampliación de la infraestructura de producción |  |  | Propietario |  |
-| Producción | Actualizaciones en AEM como aplicación de Cloud Service |  |  | Propietario |  |
+| Producción | Actualizaciones en AEM aplicación as a Cloud Service |  |  | Propietario |  |
 | Producción | Backup de producción y recuperación ante desastres |  |  | Propietario |  |
 
 >[!NOTE]
 >
 > Lo anterior supone que se incluye el Premier Support. La tabla puede estar sujeta a modificación por acuerdo entre el cliente y el cliente. Le recomendamos que trabaje con sus equipos de Ventas y Personalización de Adobe si necesita una aclaración sobre cualquiera de los aspectos anteriores.
 > Los clientes que no deseen gestionar la personalización por sí mismos deben obtener los servicios del equipo de Professional Services de Adobe o de un socio Experience Manager.
->Para mantener niveles de alta calidad, el Adobe requiere que los socios que participan en proyectos de desarrollo de Experience Manager como Cloud Service cuenten con al menos una persona que haya obtenido la certificación Advanced Developer para software Experience Manager.
+>Para mantener niveles de alta calidad, el Adobe requiere que los socios que participan en proyectos de desarrollo as a Cloud Service Experience Manager cuenten con al menos una persona que haya obtenido la certificación Advanced Developer para el software Experience Manager.

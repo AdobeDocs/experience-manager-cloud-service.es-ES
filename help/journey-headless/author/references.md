@@ -5,7 +5,7 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -54,8 +54,8 @@ Una vez más, las referencias de fragmento hacen precisamente eso: le permiten h
 Por ejemplo, puede tener los siguientes modelos de fragmento de contenido definidos:
 
 * Ciudad
-* Empresa
-* Person
+* Compañía
+* Persona
 * Premios
 
 Parece bastante sencillo, pero por supuesto una compañía tiene un CEO y empleados....y todas son personas, cada una definida como una persona.

@@ -10,7 +10,7 @@ ht-degree: 3%
 
 ---
 
-# Content and Commerce {#content-commerce}
+# Content y Commerce {#content-commerce}
 
 Con el contenido y el comercio de Adobe Experience Manager, las marcas pueden escalar e innovar más rápido para diferenciar las experiencias comerciales y capturar un gasto en línea acelerado. AEM Contenido y comercio combina las experiencias inmersivas, omnicanal y personalizadas en Experience Manager con cualquier cantidad de soluciones de comercio para ofrecer experiencias diferenciadas en todas las partes del recorrido de compras, reducir el tiempo de respuesta al valor y aumentar la conversión.
 

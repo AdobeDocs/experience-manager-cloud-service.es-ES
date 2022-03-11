@@ -13,7 +13,7 @@ ht-degree: 75%
 
 Entre los flujos de trabajo de proyecto disponibles de fábrica se incluye lo siguiente:
 
-* **Flujo de trabajo de aprobación del proyecto** : este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Flujo de trabajo de aprobación del proyecto** : este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
 * **Solicitar lanzamiento** : un flujo de trabajo solicita un lanzamiento.
 * **Solicitar página de aterrizaje** : este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
@@ -27,12 +27,12 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Solicitar lanzamiento | x |  |
 | Solicitar página de aterrizaje | x |  |
 | Solicitar correo electrónico | x |  |
-| Crear copia y amp de idioma DAM;ast; |  | x |
-| Crear y traducir copia y amp de idioma DAM;ast; |  | x |
+| Creación de copia y último idioma de DAM; |  | x |
+| Crear y traducir DAM copia y último idioma; |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Workflow** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md). 
+>&amp;ast; Estos flujos de trabajo no se inician desde la **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-cloud/administering/translation/managing-projects.md). 
 
 Las etapas para iniciar y completar flujos de trabajo no son las mismas, independientemente del flujo de trabajo que se elija. Solo las etapas cambian.
 
@@ -50,7 +50,7 @@ En esta sección se describen los flujos de trabajo disponibles para Proyectos.
 
 En el flujo de trabajo Aprobación del proyecto, se asigna contenido a un usuario, el contenido se revisa y luego se aprueba.
 
-1. En el proyecto simple, seleccione el signo **`+`** en el mosaico **Flujos de trabajo** y seleccione **Flujo de trabajo de aprobación del proyecto**.
+1. En el proyecto simple, seleccione la opción **`+`** iniciar sesión en **Flujos de trabajo** mosaico y seleccione **Flujo de trabajo de aprobación del proyecto**.
 1. Introduzca un título y seleccione a quién asignarlo de la lista del equipo. Si fuera necesario, introduzca una descripción, ruta de contenido, prioridad de las tareas y una fecha de vencimiento.
 
    ![Aprobación de solicitud](/help/sites-cloud/authoring/assets/projects-approval.png)
@@ -66,7 +66,7 @@ Este flujo de trabajo permite solicitar un lanzamiento.
 
    ![Solicitar inicio](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 
-1. Haga clic en **Crear**. Se inicia el flujo de trabajo. El flujo de trabajo aparece en la lista **Flujos de trabajo** (haga clic en elipses **...** en el mosaico **Flujos de trabajo** para acceder a esta lista).
+1. Haga clic en **Crear**. Se inicia el flujo de trabajo. El flujo de trabajo aparece en la sección **Flujos de trabajo** lista (haga clic en elipses) **...** en el **Flujos de trabajo** para acceder a esta lista).
 
 ## Crear (y traducir) el flujo de trabajo de copia de idioma de los activos {#create-and-translate-language-copy-workflow-for-assets}
 

@@ -3,7 +3,7 @@ title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 100%
 

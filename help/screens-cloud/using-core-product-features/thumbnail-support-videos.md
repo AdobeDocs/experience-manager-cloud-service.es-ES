@@ -1,14 +1,14 @@
 ---
 title: Compatibilidad con miniaturas para vídeos en Screens as a Cloud Service
-description: En esta página se describe cómo agregar compatibilidad con miniaturas para vídeos en Screens como Cloud Service.
+description: En esta página se describe cómo agregar compatibilidad con miniaturas para vídeos en Screens as a Cloud Service.
 index: true
-source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
+exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Compatibilidad con miniaturas para vídeos {#thumbnail-support-videos}
 
@@ -31,14 +31,14 @@ La compatibilidad con miniaturas le permite:
 
 >[!IMPORTANT]
 >**Requisitos previos**
->Antes de aprender a usar miniaturas para los vídeos, asegúrese de crear representaciones de vídeo para los canales en Screens as a Cloud Service project. Consulte [aquí](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) para obtener más información.
+>Antes de aprender a usar miniaturas para los vídeos, asegúrese de crear representaciones de vídeo para los canales en el proyecto as a Cloud Service de Screens. Consulte [here](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md) para obtener más información.
 
 Siga los pasos a continuación para usar miniaturas en vídeos:
 
 1. Vaya a un canal Screens existente o cree un canal nuevo.
 
    >[!NOTE]
-   >Para obtener información sobre cómo crear un canal y añadir contenido a un canal, consulte [Creación y administración de un canal en Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
+   >Para obtener información sobre cómo crear un canal y añadir contenido a un canal, consulte [Creación y administración de un canal en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en).
 
 1. Seleccione el canal y haga clic en **Editar** en la barra de acciones para abrir el editor.
 
@@ -48,19 +48,19 @@ Siga los pasos a continuación para usar miniaturas en vídeos:
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. Seleccione el vídeo y haga clic en el icono *llave inglesa* para abrir las propiedades del vídeo.
+1. Seleccione el vídeo y haga clic en el *llave* para abrir las propiedades del vídeo.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. Se abre el cuadro de diálogo **Vídeo** donde verá la zona de colocación **Miniatura**.
+1. La variable **Vídeo** se abre el cuadro de diálogo donde se mostrará la **Miniatura** zona de colocación.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
-1. Arrastre y suelte una imagen del selector de recursos en la zona de colocación **Miniatura** y haga clic en **Listo**.
+1. Arrastre y suelte una imagen desde el selector de recursos hasta el **Miniatura** zona de colocación y haga clic en **Listo**.
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
 
-1. Haga clic en **Preview**.
+1. Haga clic en **Vista previa**.
 
 1. Si se establece un vídeo en el componente, se reproducirá el vídeo. Si no es así, y la miniatura está configurada, entonces se reproducirá la miniatura. De lo contrario, el componente se considera no configurado y se omitirá.
 

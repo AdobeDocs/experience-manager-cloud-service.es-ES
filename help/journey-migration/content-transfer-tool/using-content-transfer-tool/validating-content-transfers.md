@@ -1,13 +1,13 @@
 ---
 title: Validación de transferencias de contenido
 description: Usar la herramienta de transferencia de contenido para validar transferencias de contenido
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Validación de transferencias de contenido {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Para verificarlo, elija una ruta del informe de validación y compruebe si está
 Algunas rutas de los compendios de extracción e ingesta se excluyen intencionadamente para mantener el tamaño de estos archivos manejable, con el objetivo de poder calcular el resultado de la validación de migración dentro de las dos horas siguientes a la finalización de la ingesta.
 
 Las rutas que excluimos actualmente de los compendios incluyen: `cqdam.text.txt` representaciones, nodos dentro de `/home`y nodos dentro de `/jcr:system`.
-
-
-
-

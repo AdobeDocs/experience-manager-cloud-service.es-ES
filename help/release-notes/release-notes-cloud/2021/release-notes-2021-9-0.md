@@ -1,26 +1,25 @@
 ---
 title: Notas de la versión 2021.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.9.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: bef02a7e72d54b7c9eb5726bb046460c5902fb84
+exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
-
-
-# Notas de la versión actual para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 En la siguiente sección se describen las notas de la versión generales de la versión actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021, etc.
+>Desde aquí puede navegar hasta las notas de versiones anteriores; por ejemplo, las de 2020, 2021, etc.
 
 >[!NOTE]
 >
->Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obtener más información sobre las actualizaciones de documentación no relacionadas directamente con una versión.
+>Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
 ## Fecha de la versión {#release-date}
 
@@ -79,9 +78,9 @@ CQ-4328183 was not reported on CS so not documented here.
    * Habilite la funcionalidad de guardar y reanudar de Forms Portal y almacene borradores de formularios adaptables en un repositorio de datos administrado por el cliente.
    * Almacene datos de flujos de trabajo AEM en proceso (AEM datos de variables de flujo de trabajo) que contengan datos personales confidenciales (SPD) en un repositorio administrado por el cliente.
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones que le permitan:
-   * Genere documentos rellenando archivos de plantilla con datos XML.
-   * Genere formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de comunicación](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) le ayuda a combinar plantillas XDP y datos XML para generar documentos de impresión en distintos formatos. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+   * Generar documentos rellenando archivos de plantilla con datos XML.
+   * Generar formularios de salida en varios formatos, incluidas las secuencias de impresión de PDF no interactivas.
    * Genere archivos de PDF de impresión desde un PDF de formularios XFA y un formulario de Adobe Acrobat.
 
 Puede escribir en [!DNL formscsbeta@adobe.com] para inscribirse en el programa beta.

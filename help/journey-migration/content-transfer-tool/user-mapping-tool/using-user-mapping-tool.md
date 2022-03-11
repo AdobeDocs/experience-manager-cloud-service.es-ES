@@ -1,13 +1,13 @@
 ---
 title: Uso de la herramienta de asignación de usuarios
 description: Uso de la herramienta de asignación de usuarios
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
-
 
 # Uso de la herramienta de asignación de usuarios {#using-user-mapping-tool}
 
@@ -29,7 +29,7 @@ Siga los pasos a continuación para configurar esto:
 
 ## Acceso a la interfaz de usuario para la herramienta de asignación de usuarios {#user-interface}
 
-La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html). Para obtener más información sobre la versión más reciente, consulte la [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md).
+La herramienta de asignación de usuarios está integrada en la herramienta de transferencia de contenido. Puede descargar la herramienta de transferencia de contenido desde [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html). Para obtener más información sobre la versión más reciente, consulte la [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Seleccione Adobe Experience Manager y vaya a las herramientas -> **Operaciones** -> **Migración de contenido**.
 

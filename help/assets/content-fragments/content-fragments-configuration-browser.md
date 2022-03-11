@@ -7,7 +7,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -53,7 +53,7 @@ Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fra
 
    1. Especifique un **Título**.
    1. Para habilitar su uso, seleccione
-      * **Modelos de fragmento de contenido**
+      * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuración](assets/cfm-conf-01.png)

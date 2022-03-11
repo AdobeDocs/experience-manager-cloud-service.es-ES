@@ -1,13 +1,13 @@
 ---
 title: Creación de componentes
 description: AEM componentes se utilizan para guardar, dar formato y procesar el contenido disponible en las páginas web. Siga esta página para obtener más información sobre la creación de canales y la renderización de componentes.
-source-git-commit: 34a072bd8e936a7cdf6c37ad7b3eea704d644fd9
+exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
-
 
 # Creación de componentes {#creating-components}
 

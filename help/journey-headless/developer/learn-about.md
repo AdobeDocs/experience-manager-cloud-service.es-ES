@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS {#learn-about}
 
-En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprende sobre la tecnología sin encabezado y por qué la utilizaría.
+En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) aprenda sobre la tecnología sin encabezado y por qué la utilizaría.
 
 ## Objetivo {#objective}
 
@@ -23,7 +23,7 @@ Este documento le ayuda a comprender la entrega de contenido sin encabezado y po
 
 ## Entrega de contenido de pila completa {#full-stack}
 
-Desde el surgimiento de sistemas de administración de contenido (CMSes) a gran escala y fáciles de usar, las organizaciones los han aprovechado como una ubicación central para administrar mensajes, marcas y comunicaciones. El uso del CMS como punto central para la administración de experiencias mejoró la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
+Desde el surgimiento de los sistemas de administración de contenido (CMS) a gran escala, fáciles de usar, las organizaciones los han aprovechado como una ubicación central para administrar mensajes, marcas y comunicaciones. El uso del CMS como punto central para la administración de experiencias mejoró la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
 ![El clásico CMS de pila completa](assets/full-stack.png)
 
@@ -58,7 +58,7 @@ El jefe de cualquier sistema es generalmente el procesador de salida de ese sist
 
 Por ejemplo, es probable que un servidor sin periféricos esté sentado en un rack en una sala de servidores en algún lugar y no tenga un monitor conectado. Para acceder a él, debe conectarse de forma remota. En este caso, el monitor es la cabeza ya que se encarga de procesar la salida del servidor. Usted como consumidor del servicio, proporcione su propio cabezal (el monitor) cuando se conecte de forma remota a él.
 
-Cuando hablamos de un CMS sin objetivos, el CMS administra el contenido y continúa entregándolo a los consumidores. Sin embargo, al entregar únicamente el **contenido** de forma estandarizada, un CMS sin encabezado omite la renderización de salida final, dejando la **presentación** del contenido en el servicio consumidor.
+Cuando hablamos de un CMS sin objetivos, el CMS administra el contenido y continúa entregándolo a los consumidores. Sin embargo, solo entregando la variable **contenido** de forma estandarizada, un CMS sin periféricos omite el procesamiento de salida final, dejando el **presentación** del contenido al servicio consumidor.
 
 ![CMS sin encabezado](assets/headless-cms.png)
 
@@ -120,11 +120,11 @@ Este recorrido se centra en el modelo de envío de contenido sin periféricos. S
 * Comprenda por qué y cuándo es necesario que no tenga encabezado.
 * Conocer en un nivel superior cómo se utilizan los conceptos sin encabezado y cómo se interrelacionan.
 
-Aproveche este conocimiento y continúe con su recorrido sin AEM mediante la siguiente revisión del documento [Introducción a AEM sin encabezado como Cloud Service](getting-started.md), donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo AEM aborda el envío de contenido sin encabezado y sus requisitos previos.
+Aproveche este conocimiento y continúe su recorrido sin AEM cabeza al revisar el documento [Introducción a AEM sin encabezado as a Cloud Service](getting-started.md) donde aprenderá a configurar las herramientas necesarias y a empezar a pensar en cómo AEM aborda la entrega de contenido sin encabezado y sus requisitos previos.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin encabezado revisando el documento [Introducción a AEM sin encabezado como Cloud Service,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no es necesario que continúen en el recorrido sin encabezado.
+Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo remoto revisando el documento [Introducción a AEM sin encabezado as a Cloud Service,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [Introducción a la arquitectura de Adobe Experience Manager como Cloud Service](/help/overview/architecture.md) : Comprender AEM como estructura de Cloud Service
-* [AEM Tutorials sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) : utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elija lo que es adecuado para usted.
+* [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Comprender AEM estructura del as a Cloud Service
+* [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.

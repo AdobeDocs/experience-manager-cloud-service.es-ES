@@ -1,15 +1,15 @@
 ---
-title: recorrido del complemento de demostraciones de referencia de AEM
+title: Recorrido del complemento de demostraciones de referencia de AEM
 description: Comience aquí para obtener un recorrido guiado sobre cómo añadir fácilmente el complemento de pruebas de referencia de AEM a un entorno de entorno limitado con una configuración de AEM mínima y pueda probar las potentes funciones de AEM con ejemplos enriquecidos basados en las prácticas recomendadas.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
-# recorrido del complemento de demostraciones de referencia de AEM {#reference-demos-add-on-journey}
+# Recorrido del complemento de demostraciones de referencia de AEM {#reference-demos-add-on-journey}
 
 Comience aquí para obtener un recorrido guiado sobre cómo agregar fácilmente el complemento de pruebas de referencia de AEM a un entorno limitado con una configuración de AEM mínima y pueda probar las potentes funciones de AEM Sites y AEM Screens con ejemplos enriquecidos basados en las prácticas recomendadas.
 
@@ -32,7 +32,7 @@ Los Recorridos de documentación están diseñados en torno a los principios de 
 
 Si desea saber cómo recomienda Adobe resolver los casos comerciales del sitio con AEM, los Recorridos de AEM Sites son el punto de inicio.
 
-## Audience {#audience}
+## Audiencia {#audience}
 
 Este recorrido establece los requisitos, pasos y métodos para crear un nuevo programa y configurar un simulador AEM con el complemento Demostraciones de referencia de AEM, incluido el contenido de demostración Sitios o Screens. Su audiencia principal es la **administrador del sistema** a quién se asigna la función **Propietario empresarial** en Cloud Manager. Normalmente es la misma persona que estaría a cargo de la administración del entorno. Sin embargo, una vez que el Complemento de demostración de referencia está instalado, ese administrador puede otorgar a otros usuarios acceso al entorno de AEM para probar las funciones que ha habilitado el complemento.
 
@@ -42,7 +42,7 @@ En este recorrido se exploran varios temas. Los siguientes artículos le proporc
 
 | # | Artículo | Descripción |
 |---|---|---|
-| 0 | recorrido del complemento de demostraciones de referencia de AEM | Este documento |
+| 0 | Recorrido del complemento de demostraciones de referencia de AEM | Este documento |
 | 1 | [Comprender la instalación del complemento de demostración de referencia](installation.md) | Obtenga información sobre Cloud Manager y cómo se utiliza para instalar el complemento. |
 | 2 | [Creación de un programa y una canalización](create-program.md) | Obtenga información sobre cómo configurar un nuevo programa y una canalización para implementar el complemento. |
 | 3 | [Crear un sitio de muestra](create-site.md) | Cree un sitio de demostración en AEM basado en una biblioteca de plantillas preconfiguradas. |

@@ -56,7 +56,7 @@ En el diagrama siguiente, se ilustra la arquitectura del sistema de estilos.
 
 ## Uso {#use}
 
-Para demostrar la función, utilizaremos como ejemplo la implementación por [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) del [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) del componente principal.
+Para demostrar la función, utilizaremos como ejemplo la implementación por [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) del [componente de título](https://www.adobe.com/go/aem_cmp_title_v2) del componente principal.
 
 En las secciones siguientes [Como autor de contenido](#as-a-content-author) y [Como autor de plantillas](#as-a-template-author), se describe cómo probar la funcionalidad del sistema de estilos mediante el sistema de estilos de WKND.
 
@@ -66,7 +66,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 1. Configure las clases CSS que desea poner a disposición de los autores de contenido, tal como se describe en la sección [Como autor de plantillas](#as-a-template-author).
 1. A continuación, los autores de contenido pueden utilizar los estilos, tal como se describe en la sección [Como autor de contenido](#as-a-content-author).
 
-### Como autor de contenido     {#as-a-content-author}
+### Como autor de contenido    {#as-a-content-author}
 
 1. Después de instalar el proyecto WKND, vaya a la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en` y edite la página.
 1. Seleccione un componente del **Título** más abajo en la página
@@ -81,7 +81,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
    >
    >En este ejemplo, los estilos **Colores** (**Negro**, **Blanco** y **Gris**) se excluyen mutuamente, mientras que las opciones **Estilo** (**Subrayado**, **Alinear a la derecha** y **Miniespaciado**) se pueden combinar. Esto se puede [configurar en la plantilla como el autor de la misma](#as-a-template-author).
 
-### Como autor de plantillas     {#as-a-template-author}
+### Como autor de plantillas    {#as-a-template-author}
 
 1. Mientras edita la página de inicio maestra en inglés de WKND en `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite la plantilla de la página a través de **Información de la página -> Editar plantilla**.
 
@@ -104,7 +104,7 @@ Si desea utilizar el sistema de estilos para sus propios componentes, haga lo si
 
 >[!CAUTION]
 >
->Las clases CSS (así como cualquier código Javascript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para que funcionen.
+>Las clases CSS (así como cualquier código Javascript necesario) configuradas como propiedades de estilo de la política de un componente deben implementarse como [Bibliotecas de cliente](/help/implementing/developing/introduction/clientlibs.md) para trabajar.
 
 ## Configuración {#setup}
 
@@ -140,7 +140,7 @@ La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la
 >
 >La pestaña Estilos del cuadro de diálogo Editar no está activada de forma predeterminada.
 
-### Estilos con nombres de elemento        {#styles-with-element-names}
+### Estilos con nombres de elemento       {#styles-with-element-names}
 
 Un desarrollador también puede configurar una lista de nombres de elemento permitidos para los estilos del componente con la propiedad matriz de cadenas `cq:styleElements`. A continuación, en la pestaña Estilos de la política, dentro del cuadro de diálogo de diseño, el creador de plantillas también puede elegir un nombre de elemento para cada estilo. Esto definirá el nombre de elemento del elemento envolvente.
 
@@ -157,7 +157,6 @@ Esta propiedad se establece en el nodo `cq:Component`. Por ejemplo:
 >1. Por último, el valor `cq:htmlTag`/`cq:tagName` del componente se considera como un valor alternativo.
 
 >
-
 
 
 Esta capacidad para definir nombres de estilo resulta útil para los componentes muy genéricos, como el contenedor de diseño o el componente Fragmento de contenido, a fin de complementar su significado.

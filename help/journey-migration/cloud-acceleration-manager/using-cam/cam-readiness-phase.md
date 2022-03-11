@@ -1,7 +1,8 @@
 ---
 title: Fase de preparación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de preparación en Cloud Acceleration Manager.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 5%
@@ -43,7 +44,7 @@ Siga los pasos a continuación para utilizar la tarjeta de Análisis de práctic
    >[!NOTE]
    >Para evitar un impacto en las instancias críticas para el negocio, se recomienda ejecutar BPA en un entorno de Author lo más cercano posible al entorno de producción en las áreas de personalizaciones, configuraciones, contenido y aplicaciones de usuario. Como alternativa, se puede ejecutar en un clon del entorno de Author de producción.
 
-   1. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) y descargue el Analizador de prácticas recomendadas como archivo zip.
+   1. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) y descargue el Analizador de prácticas recomendadas como archivo zip.
 
       >[!NOTE]
       >Consulte [Uso del Analizador de prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) para aprender a ejecutar BPA.

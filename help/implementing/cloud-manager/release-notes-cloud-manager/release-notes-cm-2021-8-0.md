@@ -1,8 +1,9 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.8.0
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.8.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.8.0
 feature: Release Information
-source-git-commit: 11910316836b33e886aeba84f89d1b2eebfe7de2
+exl-id: cf1d5c4f-404a-4ced-90f2-273c710adc0f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 4%
@@ -14,7 +15,7 @@ ht-degree: 4%
 Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.8.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
@@ -25,7 +26,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.8.0 es el 1
 * Los clientes Cloud Service ahora pueden ver los informes de Acuerdo de nivel de servicio (SLA) en Cloud Manager. Esto estará disponible progresivamente en los próximos meses.
 Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html) para obtener más información.
 
-* Se ha cambiado el tipo y la gravedad de las reglas de calidad IndexType y `IndexDamAssetLucene` . Estos son ahora errores del bloqueador *serverity*.
+* Tipo y gravedad del IndexType y `IndexDamAssetLucene` se han cambiado las reglas de calidad. Estos son ahora los dos errores de Blocker *serverity*.
 
 * Se han introducido nuevas reglas de calidad de índice Oak para cubrir configuraciones asincrónicas y tika.
 
@@ -45,4 +46,4 @@ Consulte [Informes de SLA](https://experienceleague.adobe.com/docs/experience-ma
 
 * La incorporación inicial estaba fallando para nuevas organizaciones con nombres muy largos.
 
-* En ocasiones, cuando una canalización se activa dos veces por algún motivo, el resultado es que una de las ejecuciones falla con el error *no puede actualizar el estado de ejecución de la canalización*.
+* En ocasiones, cuando una canalización se activa dos veces por alguna razón, el resultado es que una de las ejecuciones falla con *no se puede actualizar el estado de ejecución de la canalización* error.

@@ -1,11 +1,11 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.5.0
-feature: Información de la versión
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.5.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.5.0
+feature: Release Information
 exl-id: 8ae3cf2f-1865-427a-b612-bdf56e2f0304
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '377'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 Esta página describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.5.0.
 
 >[!NOTE]
->Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic [aquí](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
+>Para ver las notas de la versión actuales de Adobe Experience Manager as a Cloud Service, haga clic en [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=es).
 
 ## Fecha de la versión {#release-date}
 
@@ -33,11 +33,11 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6
 
 * Ahora, el complemento Commerce se puede aplicar a los programas de Sandbox durante el flujo de trabajo Editar programa .
 
-* Se ha actualizado la experiencia *Edit program*.
+* La variable *Editar programa* se ha actualizado la experiencia.
 
 * La tabla Nombres de dominio de la página Detalles del entorno mostrará hasta 250 nombres de dominio a través de la paginación.
 
-* La pestaña **Solutions &amp; Add-ons** de los flujos de trabajo **Add Program** y **Edit Program** mostrará la solución, aunque solo haya una solución disponible para el Programa.
+* La variable **Soluciones y complementos** en **Agregar programa** y **Editar programa** los flujos de trabajo mostrarán la solución, aunque solo haya una solución disponible para el programa.
 
 * El mensaje de error en el registro de pasos de compilación cuando la compilación no produjo ningún paquete de contenido implementado no estaba claro.
 
@@ -45,7 +45,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.5.0 es el 6
 
 * En ocasiones, el usuario puede ver un estado &quot;activo&quot; verde junto a una Lista de permitidos IP incluso cuando esa configuración no se implementó.
 
-* En lugar de eliminar las variables &quot;eliminadas&quot;, la API de variables de canalización solo las marcaría con el estado **DELETED**.
+* En lugar de eliminar las variables &quot;eliminadas&quot;, la API de variables de canalización solo las marcaría con estado **ELIMINADO**.
 
 * Algunos problemas de calidad del tipo de hueso de código impactaban incorrectamente en la clasificación de fiabilidad.
 

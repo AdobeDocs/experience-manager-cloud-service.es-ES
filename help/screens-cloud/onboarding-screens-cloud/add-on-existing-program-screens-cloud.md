@@ -1,20 +1,20 @@
 ---
 title: Agregar un complemento de Screens a un programa existente en Cloud Manager
-description: En esta página se describe cómo agregar un complemento de Screens a un programa existente en Cloud Manager para Screens como Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+description: En esta página se describe cómo agregar un complemento de Screens a un programa existente en Cloud Manager para Screens as a Cloud Service.
+exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
 
 ---
 
-
 # Agregar un complemento de Screens a un programa existente en Cloud Manager {#adding-screens-program}
 
 En esta sección se describe cómo agregar Screens como un complemento a un programa existente en Cloud Manager.
 
 >[!NOTE]
->Consulte [Explicación de los programas y tipos de programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) para obtener más información sobre los programas de Cloud Manager.
+>Consulte [Explicación de programas y tipos de programas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en) para obtener más información sobre los programas de Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -29,19 +29,19 @@ Siga los pasos a continuación para agregar Screens como complemento a un progra
    >[!NOTE]
    >Consulte [Introducción a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en) para obtener más información sobre Cloud Manager.
 
-1. Vaya al proyecto y haga clic en la opción **Editar programa** en la página **Información general** de Cloud Manager.
+1. Vaya al proyecto y haga clic en **Editar programa** desde la **Información general** página.
 
    ![image](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
-   >La página **Editar Programa** muestra dos fichas **General** y **Soluciones y complementos**.
+   >La variable **Editar programa** la página muestra dos fichas **General** y **Soluciones y complementos**.
 
-1. La pestaña **Soluciones y complementos** muestra opciones como Sitios, Recursos y Screens. Seleccione la opción de complemento **Screens** , como se muestra en la figura siguiente.
+1. La variable **Soluciones y complementos** muestra las opciones, como Sitios, Recursos y Pantallas. Select **Pantallas** como se muestra en la figura siguiente.
 
    ![image](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
-1. Haga clic en **Update**, una vez que haya seleccionado las opciones.
+1. Haga clic en **Actualizar**, una vez que haya seleccionado las opciones.
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a añadir Screens como complemento a un programa existente de Cloud Manager y vea su programa en Programas y productos de Cloud Manager, ahora está listo para pasar al siguiente paso del proceso de incorporación, es decir, [Creación de una rama para su proyecto en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).
+Una vez que haya aprendido a añadir Screens como complemento a un programa existente de Cloud Manager y vea su programa en Programas y productos de Cloud Manager, ya está listo para pasar al siguiente paso del proceso de incorporación, es decir, [Creación de una rama para su proyecto en Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md).

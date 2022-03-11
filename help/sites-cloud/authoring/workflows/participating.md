@@ -1,27 +1,26 @@
 ---
 title: Participación en flujos de trabajo
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1545'
-ht-degree: 73%
+ht-degree: 74%
 
 ---
-
 
 # Participación en flujos de trabajo {#participating-in-workflows}
 
 Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para llevar a cabo la actividad y asigna el elemento de trabajo a esa persona o grupo. El usuario recibe la notificación y puede tomar las medidas adecuadas:
 
-* [Visualización de notificaciones](#notifications-of-available-workflow-actions) 
-* [Finalización de una etapa de participante](#completing-a-participant-step) 
-* [Delegación de una etapa de participante](#delegating-a-participant-step) 
-* [Realización de una etapa hacia atrás en una etapa de participante](#performing-step-back-on-a-participant-step) 
-* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas)](#opening-a-workflow-item-to-view-details-and-take-actions) 
-* [Visualización de la carga útil del flujo de trabajo (varios recursos)](#viewing-the-workflow-payload-multiple-resources) 
+* [Visualización de notificaciones ](#notifications-of-available-workflow-actions)
+* [Finalización de una etapa de participante ](#completing-a-participant-step)
+* [Delegación de una etapa de participante ](#delegating-a-participant-step)
+* [Realización de una etapa hacia atrás en una etapa de participante ](#performing-step-back-on-a-participant-step)
+* [Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas) ](#opening-a-workflow-item-to-view-details-and-take-actions)
+* [Visualización de la carga útil del flujo de trabajo (varios recursos) ](#viewing-the-workflow-payload-multiple-resources)
 
-## Notificaciones de las acciones de flujo de trabajo disponibles  {#notifications-of-available-workflow-actions}
+## Notificaciones de las acciones de flujo de trabajo disponibles {#notifications-of-available-workflow-actions}
 
 Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**), aparecen varias alertas o notificaciones:
 
@@ -31,7 +30,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
 * El elemento figurará en la [Bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md) de notificaciones:
 
-   ![Notificaciones en bandeja de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+   ![Notificaciones en la bandeja de entrada](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Cuando utilice el editor de página, la barra de estado mostrará lo siguiente:
    * El nombre de los flujos de trabajo que se aplican a la página; por ejemplo, solicitud de activación.
@@ -44,14 +43,14 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
    >[!NOTE]
    >
-   >La barra de estado solo está visible para los usuarios con privilegios de flujo de trabajo; por ejemplo, miembros del grupo `workflow-users`.
+   >La barra de estado solo es visible para los usuarios con privilegios de flujo de trabajo; por ejemplo, los miembros del `workflow-users` grupo.
    >
    >
    >Las acciones se muestran cuando el usuario actual participa directamente en el paso actual del flujo de trabajo.
 
 * Cuando la opción **Escala de tiempo** está abierta para el recurso, se mostrará la etapa del flujo de trabajo. Al hacer clic o pulsar en el titular de alerta, se mostrarán las acciones disponibles:
 
-   ![Flujo de trabajo en la línea de tiempo](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+   ![Flujo de trabajo en la cronología](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Finalización de una etapa de participante {#completing-a-participant-step}
 
@@ -66,8 +65,8 @@ Puede completar una etapa de participante desde las ubicaciones siguientes:
 
 * [La bandeja de entrada](#completing-a-participant-step-inbox)
 * [Editor de páginas](#completing-a-participant-step-page-editor)
-* [Línea de tiempo](#completing-a-participant-step-timeline)
-* Al [abrir un elemento de flujo de trabajo para detalles de vista](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [Cronología](#completing-a-participant-step-timeline)
+* When [apertura de un elemento de flujo de trabajo para ver detalles](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Finalización de una etapa de participante: bandeja de entrada {#completing-a-participant-step-inbox}
 
@@ -75,30 +74,30 @@ Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desee realizar la acción (pulsar o hacer clic en la miniatura).
-1. Seleccione **Completar** en la barra de herramientas.
-1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione el **Paso siguiente** en el selector desplegable y agregue un **Comentario** si es necesario.
-1. Utilice **Aceptar** para completar el paso (o **Cancelar** para cancelar la acción).
+1. Select **Completar** en la barra de herramientas.
+1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione el **Paso siguiente** en el selector desplegable y añada una **Comentario** si es necesario.
+1. Uso **OK** para completar el paso (o el **Cancelar** para anular la acción).
 
 #### Finalización de una etapa de participante: editor de la página {#completing-a-participant-step-page-editor}
 
 Utilice el siguiente procedimiento para completar el elemento de trabajo:
 
 1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Seleccione **Completar** en la barra de estado de la parte superior.
-1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione el **Paso siguiente** en el selector desplegable y agregue un **Comentario** si es necesario.
-1. Utilice **Aceptar** para completar el paso (o **Cancelar** para cancelar la acción).
+1. Select **Completar** en la barra de estado de la parte superior.
+1. Se abre el cuadro de diálogo **Completar elemento de trabajo**. Seleccione el **Paso siguiente** en el selector desplegable y añada una **Comentario** si es necesario.
+1. Uso **OK** para completar el paso (o el **Cancelar** para anular la acción).
 
 #### Finalización de una etapa de participante: escala de tiempo {#completing-a-participant-step-timeline}
 
 También puede utilizar la escala de tiempo para completar y hacer avanzar una etapa:
 
-1. Seleccione la página requerida y abra **Línea de tiempo** (o abra **Línea de tiempo** y seleccione la página):
+1. Seleccione la página requerida y abra **Cronología** (o abrir **Cronología** y seleccione la página):
 
-   ![Cómo completar un paso](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
+   ![Finalización de un paso](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
 1. Haga clic o pulse en el titular de alerta para mostrar las acciones disponibles. Seleccione **Avanzar**:
 
-   ![Avanzar el paso](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
+   ![Avanzar en el paso](/help/sites-cloud/authoring/assets/workflows-timeline-advance.png)
 
 1. Según el flujo de trabajo, puede seleccionar la siguiente etapa:
 
@@ -106,7 +105,7 @@ También puede utilizar la escala de tiempo para completar y hacer avanzar una e
 
 1. Seleccione **Avanzar** para confirmar la acción.
 
-### Delegación de una etapa de participante  {#delegating-a-participant-step}
+### Delegación de una etapa de participante {#delegating-a-participant-step}
 
 Si se le ha asignado un paso, pero por cualquier motivo no puede realizarlo, puede delegar el paso a otro usuario o grupo.
 
@@ -125,8 +124,8 @@ Puede delegar una etapa de participante desde las ubicaciones siguientes:
 
 * [La bandeja de entrada](#delegating-a-participant-step-inbox)
 * [Editor de páginas](#delegating-a-participant-step-page-editor)
-* [Línea de tiempo](#delegating-a-participant-step-timeline)
-* Al [abrir un elemento de flujo de trabajo para detalles de vista](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [Cronología](#delegating-a-participant-step-timeline)
+* When [apertura de un elemento de flujo de trabajo para ver detalles](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Delegación de una etapa de participante: bandeja de entrada {#delegating-a-participant-step-inbox}
 
@@ -134,24 +133,24 @@ Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desee realizar la acción (pulsar o hacer clic en la miniatura).
-1. Seleccione **Delegar** en la barra de herramientas.
-1. Se abrirá el cuadro de diálogo. Especifique el **usuario** en el selector desplegable (también puede ser un grupo) y agregue un **comentario** si es necesario.
-1. Utilice **Aceptar** para completar el paso (o **Cancelar** para cancelar la acción).
+1. Select **Delegar** en la barra de herramientas.
+1. Se abrirá el cuadro de diálogo. Especifique la variable **Usuario** en el selector desplegable (también puede ser un grupo) y añada una **Comentario** si es necesario.
+1. Uso **OK** para completar el paso (o el **Cancelar** para anular la acción).
 
 #### Delegación de una etapa de participante: editor de la página {#delegating-a-participant-step-page-editor}
 
 Utilice el siguiente procedimiento para delegar un elemento de trabajo:
 
 1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Seleccione **Delegar** en la barra de estado de la parte superior.
-1. Se abrirá el cuadro de diálogo. Especifique el **usuario** en el selector desplegable (también puede ser un grupo) y agregue un **comentario** si es necesario.
-1. Utilice **Aceptar** para completar el paso (o **Cancelar** para cancelar la acción).
+1. Select **Delegar** en la barra de estado de la parte superior.
+1. Se abrirá el cuadro de diálogo. Especifique la variable **Usuario** en el selector desplegable (también puede ser un grupo) y añada una **Comentario** si es necesario.
+1. Uso **OK** para completar el paso (o el **Cancelar** para anular la acción).
 
 #### Delegación de una etapa de participante: escala de tiempo {#delegating-a-participant-step-timeline}
 
 También puede utilizar la escala de tiempo para delegar o asignar una etapa:
 
-1. Seleccione la página requerida y abra **Línea de tiempo** (o abra **Línea de tiempo** y seleccione la página).
+1. Seleccione la página requerida y abra **Cronología** (o abrir **Cronología** y seleccione la página).
 1. Haga clic o pulse en el titular de alerta para mostrar las acciones disponibles. Seleccione **Cambiar asignación**:
 
    ![Paso Delegar](/help/sites-cloud/authoring/assets/workflows-delegate.png)
@@ -160,7 +159,7 @@ También puede utilizar la escala de tiempo para delegar o asignar una etapa:
 
    ![Cambiar usuario asignado](/help/sites-cloud/authoring/assets/workflows-assignee.png)
 
-1. Seleccione **Asignar** para confirmar la acción.
+1. Select **Asignar** para confirmar la acción.
 
 ### Realización de un paso hacia atrás en un paso de participante {#performing-step-back-on-a-participant-step}
 
@@ -175,8 +174,8 @@ Puede volver a una etapa anterior durante cualquier etapa de participante desde 
 
 * [La bandeja de entrada](#performing-step-back-on-a-participant-step-inbox)
 * [Editor de páginas](#performing-step-back-on-a-participant-step-page-editor)
-* [Línea de tiempo](#performing-step-back-on-a-participant-step-timeline)
-* Al [abrir un elemento de flujo de trabajo para detalles de vista](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [Cronología](#performing-step-back-on-a-participant-step-timeline)
+* When [apertura de un elemento de flujo de trabajo para ver detalles](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Realización de una etapa hacia atrás en una etapa de participante: bandeja de entrada {#performing-step-back-on-a-participant-step-inbox}
 
@@ -184,24 +183,24 @@ Utilice el siguiente procedimiento para volver a la etapa anterior:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desee realizar la acción (pulsar o hacer clic en la miniatura).
-1. Seleccione **Retroceder** para abrir el cuadro de diálogo.
+1. Select **Retroceder** para abrir el cuadro de diálogo.
 1. Especifique un valor en **Etapa anterior** y añada un comentario en el campo **Comentario**, si fuera necesario.
-1. Utilice **Aceptar** para completar el paso (o **Cancelar** para cancelar la acción).
+1. Uso **OK** para completar el paso (o el **Cancelar** para anular la acción).
 
 #### Realización de una etapa hacia atrás en una etapa de participante: editor de página {#performing-step-back-on-a-participant-step-page-editor}
 
 Utilice el siguiente procedimiento para volver a la etapa anterior:
 
 1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Seleccione **Retroceder** en la barra de estado de la parte superior.
+1. Select **Retroceder** en la barra de estado de la parte superior.
 1. Especifique un valor en **Etapa anterior** y añada un comentario en el campo **Comentario**, si fuera necesario.
-1. Utilice **Aceptar** para completar el paso (o **Cancelar** para cancelar la acción).
+1. Uso **OK** para completar el paso (o el **Cancelar** para anular la acción).
 
 #### Realización de una etapa hacia atrás en una etapa de participante: escala de tiempo {#performing-step-back-on-a-participant-step-timeline}
 
 También puede utilizar la escala de tiempo para restablecer hasta una etapa anterior:
 
-1. Seleccione la página requerida y abra **Línea de tiempo** (o abra **Línea de tiempo** y seleccione la página).
+1. Seleccione la página requerida y abra **Cronología** (o abrir **Cronología** y seleccione la página).
 1. Haga clic o pulse en el titular de alerta para mostrar las acciones disponibles. Seleccione **Restablecer**:
 
    ![Retroceder un paso](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
@@ -210,9 +209,9 @@ También puede utilizar la escala de tiempo para restablecer hasta una etapa ant
 
    ![Especificar paso](/help/sites-cloud/authoring/assets/workflows-roll-back-step.png)
 
-1. Seleccione **Revertir** para confirmar la acción.
+1. Select **Reversión** para confirmar la acción.
 
-### Apertura de un elemento de flujo de trabajo a los detalles de Vista (y acciones) {#opening-a-workflow-item-to-view-details-and-take-actions}
+### Apertura de un elemento de flujo de trabajo para ver los detalles (y tomar medidas)  {#opening-a-workflow-item-to-view-details-and-take-actions}
 
 Visualice los detalles del elemento de trabajo del flujo de trabajo y tome las medidas adecuadas.
 
@@ -222,17 +221,17 @@ Los detalles del flujo de trabajo se muestran en fichas y las acciones adecuadas
 
    Ficha ![ELEMENTO DE TRABAJO](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
-* **INFORMACIÓN DEL** FLUJO DE TRABAJOficha:
+* **INFORMACIÓN DEL FLUJO DE TRABAJO** pestaña:
 
-   ![FLUJO DE TRABAJO, ficha](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+   ![Ficha FLUJO DE TRABAJO](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
    Si se han configurado etapas de flujo de trabajo para el modelo, puede ver el progreso según los siguientes elementos: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Fases de flujo de trabajo](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+   ![Etapas de flujo de trabajo](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
-* **** COMENTARIOSficha:
+* **COMENTARIOS** pestaña:
 
-   ![Ficha COMENTARIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
+   ![Pestaña COMENTARIOS](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 Puede abrir los detalles del elemento de trabajo desde las ubicaciones siguientes:
 
@@ -245,20 +244,20 @@ Para abrir un elemento de flujo de trabajo y ver los detalles:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desee realizar la acción (pulsar o hacer clic en la miniatura).
-1. Seleccione **Abrir** para abrir las fichas de información.
+1. Select **Apertura** para abrir las fichas de información.
 1. Si fuera necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **Aceptar** (o **Cancelar**).
-1. Utilice **Guardar** o **Cancelar** para salir.
+1. Uso **Guardar** o **Cancelar** para salir.
 
 #### Apertura de los detalles del flujo de trabajo: editor de página {#opening-workflow-details-page-editor}
 
 Para abrir un elemento de flujo de trabajo y ver los detalles:
 
 1. Abra la [página para editarla](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
-1. Seleccione **Detalles de Vista** en la barra de estado para abrir las fichas de información.
+1. Select **Ver detalles** en la barra de estado para abrir las fichas de información.
 1. Si fuera necesario, seleccione la acción adecuada, proporcione los detalles necesarios y confirme con **Aceptar** (o **Cancelar**).
-1. Utilice **Guardar** o **Cancelar** para salir.
+1. Uso **Guardar** o **Cancelar** para salir.
 
-### Visualización de la carga útil del flujo de trabajo (varios recursos) {#viewing-the-workflow-payload-multiple-resources}
+### Visualización de la carga útil del flujo de trabajo (varios recursos)  {#viewing-the-workflow-payload-multiple-resources}
 
 Puede ver los detalles de la carga útil asociada con la instancia de flujo de trabajo. Inicialmente, se muestran los recursos del paquete y luego puede explorar en profundidad para mostrar las páginas individuales.
 
@@ -266,6 +265,6 @@ Para ver la carga útil y los recursos de la instancia de flujo de trabajo:
 
 1. Abra la **[Bandeja de entrada AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Seleccione el elemento de flujo de trabajo en el que desee realizar la acción (pulsar o hacer clic en la miniatura).
-1. Seleccione **Carga útil de Vista** en la barra de herramientas para abrir el cuadro de diálogo.
+1. Select **Ver carga útil** en la barra de herramientas para abrir el cuadro de diálogo.
    * Dado que un paquete de flujo de trabajo es simplemente una colección de punteros a rutas dentro del repositorio, puede añadir, quitar o modificar las entradas aquí para ajustar los elementos a los que el paquete de flujo de trabajo hace referencia. Utilice el componente **Definición de medios** para añadir nuevas entradas.
 1. Los vínculos se pueden utilizar para abrir las páginas individuales.

@@ -4,13 +4,13 @@ description: Aprenda los conceptos de AEM Sites y la teoría de AEM traducción.
 index: true
 hide: false
 hidefromtoc: false
-source-git-commit: 8c04ffde2cbafcb6d556de8d48fc19f5b130a2c1
+exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # Obtenga información sobre el contenido de los sitios y cómo traducirlo en AEM {#learn-about}
 
@@ -56,11 +56,11 @@ Más adelante en el recorrido, aprenderá los detalles sobre cómo AEM traduce e
 * Comprender los conceptos básicos de la creación de contenido de AEM Sites.
 * Familiarícese con cómo AEM admite la traducción.
 
-Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Introducción a la traducción de AEM Sites](getting-started.md), donde encontrará información general sobre cómo AEM administrar el contenido y conocer sus herramientas de traducción.
+Aproveche este conocimiento y continúe con su recorrido de traducción de AEM Sites revisando el documento [Introducción a la traducción de AEM Sites](getting-started.md) donde encontrará información general sobre cómo AEM administrar el contenido y conocer sus herramientas de traducción.
 
 ## Recursos adicionales {#additional-resources}
 
-Aunque se recomienda pasar a la siguiente parte del recorrido de traducción de sitios revisando el documento [Introducción a la traducción de AEM Sites,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no es necesario que continúen en el recorrido.
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción de sitios revisando el documento [Introducción a la traducción de AEM Sites,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido.
 
-* [Guía rápida de introducción para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md) : información general rápida sobre los conceptos más importantes para la creación de contenido con AEM Sites
-* [MSM y traducción](/help/sites-cloud/administering/msm-and-translation.md) : detalles de AEM Multi-Site Manager y cómo funciona con sus herramientas de traducción
+* [Guía rápida para la creación de páginas](/help/sites-cloud/authoring/getting-started/quick-start.md) : Una breve descripción general de los conceptos más importantes para la creación de contenido con AEM Sites
+* [MSM y traducción](/help/sites-cloud/administering/msm-and-translation.md) - Los detalles de AEM Multi-Site Manager y cómo funciona con sus herramientas de traducción

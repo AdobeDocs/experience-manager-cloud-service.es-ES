@@ -1,44 +1,43 @@
 ---
 title: 'Visualización y actualización: Listas de permitidos IP en Cloud Manager'
 description: 'Visualización y actualización: Listas de permitidos IP en Cloud Manager'
-translation-type: tm+mt
-source-git-commit: 7fdfa626147a72f3d7fb98b89a19a871fc7a13ca
+exl-id: 9f9aebcd-b6d0-497a-b262-0a24b4938b45
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
+# Visualización y actualización de una lista de permitidos de IP {#view-update}
 
-# Visualización y actualización de una Lista de permitidos IP {#view-update}
+Puede ver y actualizar las Listas de permitidos IP en los siguientes casos:
 
-Puede realizar la vista y actualización de Listas de permitidos IP en los siguientes escenarios:
-
-* Para el menú Vista y actualización para simplemente vista los detalles de una o varias Listas de permitidos IP.
-* Para editar una o varias de las siguientes opciones:
-   * Intervalos IP en la definición del nombre de la regla
-   * Nombre práctico de la regla de Lista de permitidos IP
+* Para ver y actualizar para ver simplemente los detalles de una o varias Listas de permitidos IP.
+* Para editar una o más de las siguientes opciones:
+   * Intervalos IP en la definición del nombre de regla
+   * Nombre reconocible de la regla de Lista de permitidos IP
 
 ## Actualizar Lista de permitidos IP {#update-ip-allow-lists}
 
 
-Para poder actualizar una Lista de permitidos IP, debe iniciar sesión un usuario con la función Propietario de la empresa o Administrador de implementación.
+Un usuario con la función Propietario empresarial o Administrador de implementación debe haber iniciado sesión para poder actualizar una Lista de permitidos IP.
 
 >[!NOTE]
->El asistente de Vista y actualización mostrará el nombre, los intervalos IP o los intervalos IP que definen la regla. Además, mostrará los entornos y el servicio en los que se aplica la regla.
+>El asistente Ver y actualizar mostrará los rangos de IP, IP o IP que definen la regla. Además, muestra los entornos y el servicio en los que se aplica la regla.
 
 Siga los pasos a continuación para actualizar una Lista de permitidos IP:
 
-1. Vaya a la página **Listas de permitidos IP** desde la pantalla **Entornos**.
-1. Identifique la fila donde se muestra la regla de Lista de permitidos IP que desea vista o actualización.
-1. Seleccione **...** desde el extremo derecho de la fila.
-1. Seleccione la opción **Vista y actualización**.
+1. Vaya a la **LISTAS DE PERMITIDOS IP** desde la página **Entornos** en el Navegador.
+1. Identifique la fila en la que se muestra la regla de Lista de permitidos IP que desea ver/actualizar.
+1. Seleccione el **...** del extremo derecho de la fila.
+1. Seleccione el **Ver y actualizar** .
 1. Realice cambios en el nombre o las IP y confirme el envío.
 
-## Consideraciones importantes al Añadir, actualizar o eliminar Listas de permitidos IP {#considerations}
+## Consideraciones importantes al agregar, actualizar o eliminar Listas de permitidos IP {#considerations}
 
-* Añadir un nuevo intervalo de IP a la Lista de permitidos de IP automáticamente lo aplicará a todos los servicios de entorno correspondientes.
-* Al eliminar un intervalo de IP de la Lista de permitidos de IP automáticamente se anulará su aplicación de todos los servicios de entorno correspondientes.
+* Añadir un nuevo rango de IP a la Lista de permitidos IP lo aplicará automáticamente a todos los servicios de entorno correspondientes.
+* Si se elimina un rango de IP de la Lista de permitidos IP, se cancelará la aplicación automáticamente de todos los servicios de entorno correspondientes.
 * No se pueden realizar actualizaciones en una Lista de permitidos IP mientras una actualización anterior esté en curso y no se haya completado.
-* No se pueden realizar actualizaciones en una Lista de permitidos IP si existe algún error de una actualización anterior. Se debe borrar cualquier error al intentar volver a intentar la actualización.
+* No se pueden realizar actualizaciones en una Lista de permitidos IP si existe algún error de una actualización anterior. Se deben borrar todos los errores intentando volver a intentar la actualización.
 Consulte [Comprobación del estado de Lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md) para obtener más información.

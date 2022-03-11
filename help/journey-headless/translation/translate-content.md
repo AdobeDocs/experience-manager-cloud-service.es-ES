@@ -1,6 +1,6 @@
 ---
-title: Translate Content
-description: Use the translation connector and rules to translate your headless content.
+title: Traducir contenido
+description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
@@ -9,243 +9,243 @@ ht-degree: 0%
 
 ---
 
-# Translate Content {#translate-content}
+# Traducir contenido {#translate-content}
 
-Use the translation connector and rules to translate your headless content.
+Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 
-## The Story So Far {#story-so-far}
+## La historia hasta ahora {#story-so-far}
 
-[](translation-rules.md) You should now:
+En el documento anterior del recorrido de traducción sin AEM, [Configurar reglas de traducción](translation-rules.md) ha aprendido a utilizar AEM reglas de traducción para identificar el contenido de traducción. Ahora debería:
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* Comprender lo que hacen las reglas de traducción.
+* Puede definir sus propias reglas de traducción.
 
-Now that your connector and translations rules are set up, this article takes you through the next step of translating your headless content.
+Ahora que sus reglas de conector y traducciones están configuradas, este artículo le guía por el siguiente paso de traducir su contenido sin encabezado.
 
 ## Objetivo {#objective}
 
-This document helps you understand how to use AEM&#39;s translation projects along with the connector and your translations rules to translate content. After reading this document you should:
+Este documento le ayuda a comprender cómo utilizar AEM proyectos de traducción junto con el conector y las reglas de traducción para traducir contenido. Después de leer este documento, debe:
 
-* Understand what a translation project is.
-* Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* Comprender qué es un proyecto de traducción.
+* Poder crear nuevos proyectos de traducción.
+* Utilice proyectos de traducción para traducir el contenido sin encabezado.
 
-## Creating a Translation Project {#creating-translation-project}
+## Creación de un proyecto de traducción {#creating-translation-project}
 
-Translation projects enable you to manage the translation of headless AEM content. A translation project gathers the content to be translated into other languages in one location for a central view of the translation effort.
+Los proyectos de traducción permiten administrar la traducción de contenido AEM sin encabezado. Un proyecto de traducción reúne el contenido que se traduce a otros idiomas en una ubicación para obtener una visión central del esfuerzo de traducción.
 
-When content is added to a translation project, a translation job is created for it. Jobs provide commands and status information that you use to manage the human translation and machine translation workflows that execute on the resources.
+Cuando se añade contenido a un proyecto de traducción, se crea un trabajo de traducción para él. Los trabajos proporcionan comandos e información de estado que se utilizan para administrar los flujos de trabajo de traducción humana y traducción automática que se ejecutan en los recursos.
 
-Translation projects can be created in two ways:
+Los proyectos de traducción se pueden crear de dos formas:
 
-1. Select the language root of the content and have AEM automatically create the translation project based on the content path.
-1. Create an empty project and manually select the content to add to the translation project
+1. Seleccione la raíz de idioma del contenido y AEM crear automáticamente el proyecto de traducción en función de la ruta de contenido.
+1. Cree un proyecto vacío y seleccione manualmente el contenido que desee añadir al proyecto de traducción
 
-Both are valid approaches usually only differing based on the persona performing the translation:
+Ambos son enfoques válidos normalmente solo difieren según el usuario que realice la traducción:
 
-* The translation project manager (TPM) often needs the flexibility of manually selecting the content to the translation project.
-* If the content owner is also responsible for translation, letting AEM automatically create the project based on the selected content path is often easier.
+* El administrador de proyectos de traducción (TPM) suele necesitar la flexibilidad de seleccionar manualmente el contenido en el proyecto de traducción.
+* Si el propietario del contenido también es responsable de la traducción, AEM crear automáticamente el proyecto en función de la ruta de contenido seleccionada suele ser más fácil.
 
-Both approaches are explored in the following sections.
+Ambos enfoques se analizan en las secciones siguientes.
 
-### Automatically Creating a Translation Project Based on Content Path {#automatically-creating}
+### Creación automática de un proyecto de traducción basado en la ruta de contenido {#automatically-creating}
 
-For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
+Para los propietarios de contenido que también son responsables de la traducción, a menudo es más fácil tener AEM crear automáticamente el proyecto de traducción. Para AEM crear automáticamente un proyecto de traducción basado en la ruta de contenido:
 
-1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the language root of your project. `/content/dam/wknd/en`
-1. ****
-1. ****
-1. ****
-1. ****
-1. ********
-1. Provide an appropriate title for your translation project.
-1. ****
+1. Vaya a **Navegación** -> **Recursos** -> **Archivos**. Recuerde que el contenido sin encabezado de AEM se almacena como recursos conocidos como fragmentos de contenido.
+1. Seleccione la raíz de idioma del proyecto. En este caso, se ha seleccionado `/content/dam/wknd/en`.
+1. Toque o haga clic en el selector de raíl y muestre el **Referencias** panel.
+1. Toque o haga clic en **Copias de idioma**.
+1. Marque la **Copias de idioma** casilla de verificación.
+1. Expanda la sección . **Actualizar copias de idioma** en la parte inferior del panel de referencias.
+1. En el **Proyecto** menú desplegable, seleccione **Crear proyecto de traducción**.
+1. Proporcione un título adecuado para el proyecto de traducción.
+1. Toque o haga clic **Inicio**.
 
 ![Crear un proyecto de traducción](assets/create-translation-project.png)
 
-You receive a message that the project was created.
+Recibe un mensaje que indica que el proyecto se creó.
 
 >[!NOTE]
 >
->[](getting-started.md#content-structure)
+>Se supone que ya se ha creado la estructura lingüística necesaria para los idiomas de traducción como parte del [definición de la estructura de contenido.](getting-started.md#content-structure) Esto debería hacerse en colaboración con el arquitecto de contenido.
 >
->If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
+>Si las carpetas de idioma no se crean con antelación, no podrá crear copias de idioma como se describió en los pasos anteriores.
 
-### Manually Creating a Translation Project by Selecting Your Content {#manually-creating}
+### Creación manual de un proyecto de traducción seleccionando su contenido {#manually-creating}
 
-For translation project managers, it is often necessary to manually select specific content to include in a translation project. To create such a manual translation project, you must start by creating an empty project and then select the content to add to it.
+Para los administradores de proyectos de traducción, a menudo es necesario seleccionar manualmente contenido específico para incluirlo en un proyecto de traducción. Para crear un proyecto de traducción manual de este tipo, debe empezar creando un proyecto vacío y luego seleccionar el contenido que desea añadir.
 
-1. ********
-1. ********
-   * This is optional, but helpful to organize your translation efforts.
-1. ************
+1. Vaya a **Navegación** -> **Proyectos**.
+1. Toque o haga clic **Crear** -> **Carpeta** para crear una carpeta para sus proyectos.
+   * Esto es opcional, pero resulta útil para organizar los esfuerzos de traducción.
+1. En el **Crear proyecto** ventana, agregue una **Título** para la carpeta y, a continuación, toque o haga clic en **Crear**.
 
-   ![](assets/create-project-folder.png)
+   ![Crear carpeta de proyecto](assets/create-project-folder.png)
 
-1. Tap or click the folder to open the folder.
-1. ********
-1. Projects are based on templates. ********
+1. Toque o haga clic en la carpeta para abrirla.
+1. En la nueva carpeta del proyecto, toque o haga clic en **Crear** -> **Proyecto**.
+1. Los proyectos se basan en plantillas. Toque o haga clic en el botón **Proyecto de traducción** plantilla para seleccionarla y, a continuación, toque o haga clic en **Siguiente**.
 
-   ![](assets/select-translation-project-template.png)
+   ![Seleccionar plantilla de proyecto de traducción](assets/select-translation-project-template.png)
 
-1. ****
+1. En el **Básico** , escriba un nombre para el nuevo proyecto.
 
-   ![](assets/project-basic-tab.png)
+   ![Ficha Básico del proyecto](assets/project-basic-tab.png)
 
-1. ******** Haga clic o pulse **Crear**.
+1. En el **Avanzadas** utilice la pestaña **Idioma de Target** para seleccionar los idiomas a los que se debe traducir el contenido. Haga clic o pulse en **Crear**.
 
-   ![](assets/project-advanced-tab.png)
+   ![Pestaña Avanzado del proyecto](assets/project-advanced-tab.png)
 
-1. ****
+1. Toque o haga clic **Apertura** en el cuadro de diálogo de confirmación.
 
-   ![](assets/project-confirmation-dialog.png)
+   ![Cuadro de diálogo de confirmación del proyecto](assets/project-confirmation-dialog.png)
 
-The project has been created, but contains no content to translate. The next section details how the project is structured and how to add content.
+El proyecto se ha creado, pero no contiene contenido para traducir. La siguiente sección detalla cómo se estructura el proyecto y cómo añadir contenido.
 
-## Using a Translation Project {#using-translation-project}
+## Uso de un proyecto de traducción {#using-translation-project}
 
-Translation projects are designed to collect all of the content and tasks related to a translation effort in one place to make your translation simple and easy to manage.
+Los proyectos de traducción están diseñados para recopilar todo el contenido y las tareas relacionadas con un esfuerzo de traducción en un solo lugar para que su traducción sea sencilla y fácil de administrar.
 
-To view the translation project:
+Para ver el proyecto de traducción:
 
-1. ********
-1. Tap or click the project that was created in the previous section.
+1. Vaya a **Navegación** -> **Proyectos**.
+1. Toque o haga clic en el proyecto creado en la sección anterior.
 
-![](assets/translation-project.png)
+![Proyecto de traducción](assets/translation-project.png)
 
-The project is divided into multiple cards.
+El proyecto se divide en varias tarjetas.
 
-* ****
-* **** Generally there is one job per language with the ISO-2 language code appended to the job name.
-* **** This journey does not cover this topic.
-* **** This journey does not cover this topic.
+* **Resumen** - Esta tarjeta muestra la información básica del encabezado del proyecto, incluido el propietario, el idioma y el proveedor de traducción.
+* **Trabajo de traducción** - Esta tarjeta o estos programas de tarjetas proporcionan una visión general del trabajo de traducción real incluyendo el estado, el número de recursos, etc. Generalmente hay un trabajo por idioma con el código de idioma ISO-2 anexado al nombre del trabajo.
+* **Equipo** - Esta tarjeta muestra los usuarios que están colaborando en este proyecto de traducción. Este recorrido no cubre este tema.
+* **Tareas** : Tareas adicionales asociadas con la traducción del contenido, como hacer elementos o elementos de flujo de trabajo. Este recorrido no cubre este tema.
 
-How you use a translation project depends on how it was created: either automatically by AEM or manually.
+El uso de un proyecto de traducción depende de cómo se creó: automáticamente por AEM o manualmente.
 
-### Using an Automatically Created Translation Project {#using-automatic-project}
+### Uso de un proyecto de traducción creado automáticamente {#using-automatic-project}
 
-When automatically creating the translation project, AEM evaluates the headless content under the path you selected  based on the translation rules that you previously defined. Based on that evaluation, it extracts the content that requires translation into a new translation project.
+Al crear automáticamente el proyecto de traducción, AEM evalúa el contenido sin encabezado en la ruta seleccionada en función de las reglas de traducción que definió anteriormente. Basándose en esa evaluación, extrae el contenido que requiere traducción en un nuevo proyecto de traducción.
 
-To see the detail of the headless content included in this project:
+Para ver el detalle del contenido sin encabezado incluido en este proyecto:
 
-1. ****
-1. ****
-   ![](assets/translation-job-detail.png)
-1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior del **Trabajo de traducción** tarjeta.
+1. La variable **Trabajo de traducción** lista todos los elementos del trabajo.
+   ![Detalles del trabajo de traducción](assets/translation-job-detail.png)
+1. Toque o haga clic en una línea para ver el detalle de esa línea, teniendo en cuenta que una línea puede representar varios elementos de contenido para traducir.
+1. Toque o haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en las consolas Fragmentos de contenido o Recursos .
 
-![](assets/translation-job-options.png)
+![Opciones de trabajo de traducción](assets/translation-job-options.png)
 
-************
+Normalmente, el contenido del trabajo de traducción se inicia en el **Borrador** tal como indica el **Estado** en la columna **Trabajo de traducción** ventana.
 
-********
+Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en el botón de cheurón en la parte superior del **Trabajo de traducción** tarjeta y seleccione **Inicio**.
 
-![](assets/start-translation-job.png)
+![Iniciar trabajo de traducción](assets/start-translation-job.png)
 
-AEM now communicates with your translation configuration and connector to send the content to the translation service. ********
+AEM ahora se comunica con la configuración de traducción y el conector para enviar el contenido al servicio de traducción. Para ver el progreso de la traducción, vuelva al **Trabajo de traducción** ventana y visualización del **Estado** de las entradas.
 
-![](assets/translation-job-approved.png)
+![Trabajo de traducción aprobado](assets/translation-job-approved.png)
 
-**** Human translation allows for more interaction, but is beyond the scope of this journey.
+Las traducciones automáticas se devuelven automáticamente con un estado de **Aprobado**. La traducción humana permite una mayor interacción, pero está fuera del alcance de este recorrido.
 
-### Using a Manually Created Translation Project {#using-manual-project}
+### Uso de un proyecto de traducción creado manualmente {#using-manual-project}
 
-When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include. This allows the translation project manager the flexibility to pick-and-chose what content to translate.
+Al crear manualmente un proyecto de traducción, AEM crea los trabajos necesarios, pero no selecciona automáticamente ningún contenido que se deba incluir. Esto permite al administrador del proyecto de traducción tener la flexibilidad de elegir qué contenido traducir.
 
-To add content to a translation job:
+Para añadir contenido a un trabajo de traducción:
 
-1. ****
-1. See that the job contains no content. ********
+1. Toque o haga clic en el botón de puntos suspensivos en la parte inferior de uno de los **Trabajo de traducción** tarjetas.
+1. Compruebe que el trabajo no contenga contenido. Toque o haga clic en el botón **Agregar** en la parte superior de la ventana y, a continuación, **Recursos/Páginas** en la lista desplegable .
 
-   ![](assets/empty-translation-job.png)
+   ![Trabajo de traducción vacío](assets/empty-translation-job.png)
 
-1. A path browser opens allowing you to select specifically which content to add. Locate your content and tap or click to select.
+1. Se abre un navegador de rutas que le permite seleccionar específicamente qué contenido añadir. Busque el contenido y toque o haga clic para seleccionarlo.
 
-   ![](assets/path-browser.png)
+   ![Navegador de rutas](assets/path-browser.png)
 
-1. ****
-1. ********
+1. Toque o haga clic **Select** para añadir el contenido seleccionado al trabajo.
+1. En el **Traducir** , especifique que desea **Crear copia de idioma**.
 
    ![Crear copia de idioma](assets/translate-copy-master.png)
 
-1. The content is now included in the job.
+1. El contenido ahora se incluye en el trabajo.
 
-   ![](assets/content-added.png)
+   ![Contenido añadido al trabajo de traducción](assets/content-added.png)
 
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. Toque o haga clic en la casilla de verificación de selección de un elemento de línea para ver más opciones, como la opción de eliminarlo del trabajo o verlo en las consolas Fragmentos de contenido o Recursos .
 
-![](assets/translation-job-options.png)
+![Opciones de trabajo de traducción](assets/translation-job-options.png)
 
-1. Repeat these steps to include all required content in the job.
+1. Repita estos pasos para incluir todo el contenido necesario en el trabajo.
 
 >[!TIP]
 >
->The path browser is a powerful tool allowing you to search, filter, and navigate your content. ************
+>El navegador de rutas es una potente herramienta que le permite buscar, filtrar y navegar por el contenido. Toque o haga clic en el botón **Solo contenido/Filtros** para alternar el panel lateral y mostrar filtros avanzados como **Fecha de modificación** o **Estado de traducción**.
 >
->[](#additional-resources)
+>Puede obtener más información sobre el explorador de rutas en la [recursos adicionales .](#additional-resources)
 
-You can use the prior steps to add the necessary content to all of the languages (jobs) for the project. Once you have selected all of the content, you can start the translation.
+Puede utilizar los pasos anteriores para agregar el contenido necesario a todos los idiomas (trabajos) del proyecto. Una vez que haya seleccionado todo el contenido, puede iniciar la traducción.
 
-************
+Normalmente, el contenido del trabajo de traducción se inicia en el **Borrador** tal como indica el **Estado** en la columna **Trabajo de traducción** ventana.
 
-********
+Para iniciar el trabajo de traducción, vuelva a la descripción general del proyecto de traducción y toque o haga clic en el botón de cheurón en la parte superior del **Trabajo de traducción** tarjeta y seleccione **Inicio**.
 
-![](assets/start-translation-job.png)
+![Iniciar trabajo de traducción](assets/start-translation-job.png)
 
-AEM now communicates with your translation configuration and connector to send the content to the translation service. ********
+AEM ahora se comunica con la configuración de traducción y el conector para enviar el contenido al servicio de traducción. Para ver el progreso de la traducción, vuelva al **Trabajo de traducción** ventana y visualización del **Estado** de las entradas.
 
-![](assets/translation-job-approved.png)
+![Trabajo de traducción aprobado](assets/translation-job-approved.png)
 
-**** Human translation allows for more interaction, but is beyond the scope of this journey.
+Las traducciones automáticas se devuelven automáticamente con un estado de **Aprobado**. La traducción humana permite una mayor interacción, pero está fuera del alcance de este recorrido.
 
-## Reviewing Translated Content {#reviewing}
+## Revisión del contenido traducido {#reviewing}
 
-[](#using-translation-project)**** However it is of course still possible to review the translated content.
+[Como se ha visto anteriormente,](#using-translation-project) el contenido traducido por el equipo vuelve a AEM con el estado de **Aprobado** dado que se supone que como se está utilizando la traducción automática, no se requiere ninguna intervención humana. Sin embargo, por supuesto que todavía es posible revisar el contenido traducido.
 
-Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. ****
+Simplemente vaya al trabajo de traducción completado y seleccione un elemento de línea tocando o haciendo clic en la casilla de verificación. El icono **Mostrar en fragmento de contenido** se muestra en la barra de herramientas.
 
-![](assets/reveal-in-content-fragment.png)
+![Mostrar en fragmento de contenido](assets/reveal-in-content-fragment.png)
 
-Tap or click that icon to open the translated content fragment in its editor console to see the details of the translated content.
+Toque o haga clic en ese icono para abrir el fragmento de contenido traducido en su consola de editor para ver los detalles del contenido traducido.
 
-![](assets/translated-content-fragment.png)
+![Un fragmento de contenido traducido](assets/translated-content-fragment.png)
 
-You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. [](#additional-resources)
+Puede modificar el fragmento de contenido según sea necesario, siempre que tenga el permiso adecuado, pero la edición de fragmentos de contenido está fuera del ámbito de este recorrido. Consulte la [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema.
 
-The project&#39;s purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
+El propósito del proyecto es reunir todos los recursos relacionados con una traducción en un solo lugar para facilitar el acceso y una visión general clara. Sin embargo, como puede ver viendo el detalle de un elemento traducido, las traducciones en sí mismas regresan a la carpeta de recursos del idioma de traducción. En este ejemplo, la carpeta es
 
 ```text
 /content/dam/wknd/es
 ```
 
-************
+Si va a esta carpeta mediante **Navegación** -> **Archivos** -> **Recursos**, verá el contenido traducido.
 
-![](assets/translated-file-content.png)
+![Estructura de carpetas de contenido traducida](assets/translated-file-content.png)
 
-AEM&#39;s translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
+AEM marco de traducción recibe las traducciones del conector de traducción y, a continuación, crea automáticamente la estructura de contenido en función de la raíz del idioma y utilizando las traducciones proporcionadas por el conector.
 
-It is important to understand that this content is not published and therefore not available to your headless services. We will learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
+Es importante comprender que este contenido no se publica y, por lo tanto, no está disponible para los servicios sin encabezado. Aprenderemos sobre esta estructura de creación y publicación y veremos cómo publicar nuestro contenido traducido en el siguiente paso del recorrido de traducción.
 
 ## Traducción humana {#human-translation}
 
-If your translation service provides human translation, the review process offers more options. ****
+Si el servicio de traducción proporciona traducción humana, el proceso de revisión ofrece más opciones. Por ejemplo, las traducciones vuelven al proyecto con el estado . **Borrador** y deben revisarse y aprobarse o rechazarse manualmente.
 
-Human translation is beyond the scope of this localization journey. [](#additional-resources) However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
+La traducción humana está fuera del alcance de este recorrido de localización. Consulte la [Recursos adicionales](#additional-resources) al final de este documento para obtener más información sobre este tema. Sin embargo, más allá de las opciones de aprobación adicionales, el flujo de trabajo para las traducciones humanas es el mismo que las traducciones automáticas, tal como se describe en este recorrido.
 
-## What&#39;s Next {#what-is-next}
+## Siguientes pasos {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debe:
 
-* Understand what a translation project is.
-* Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* Comprender qué es un proyecto de traducción.
+* Poder crear nuevos proyectos de traducción.
+* Utilice proyectos de traducción para traducir el contenido sin encabezado.
 
-[](publish-content.md)
+Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabeza revisando el documento [Publicar contenido traducido](publish-content.md) donde aprenderá a publicar su contenido traducido y a actualizar esas traducciones a medida que cambie su contenido raíz de idioma.
 
 ## Recursos adicionales {#additional-resources}
 
-[](publish-content.md)
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Publicar contenido traducido,](publish-content.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [](/help/sites-cloud/administering/translation/managing-projects.md)
-* [](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)
+* [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md) : Conozca los detalles de los proyectos de traducción y las funciones adicionales, como flujos de trabajo de traducción humana y proyectos en varios idiomas.
+* [Herramientas y entorno de creación](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) : AEM ofrece varios mecanismos para organizar y editar el contenido, incluido un navegador de rutas robusto.

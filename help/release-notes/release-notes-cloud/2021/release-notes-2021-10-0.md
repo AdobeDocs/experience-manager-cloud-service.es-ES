@@ -1,14 +1,13 @@
 ---
 title: Notas de la versión 2021.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.10.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 48%
 
 ---
-
-
 
 # Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 

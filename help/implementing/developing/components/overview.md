@@ -5,13 +5,13 @@ exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 # Información general sobre componentes {#components-overview}
 
-Esta página proporciona información general sobre los componentes de Adobe Experience Manager (AEM), como los [utilizados para la creación de páginas](/help/sites-cloud/authoring/fundamentals/components.md).
+Esta página proporciona información general sobre los componentes de Adobe Experience Manager (AEM), como los [se utiliza para la creación de páginas](/help/sites-cloud/authoring/fundamentals/components.md).
 
 ## ¿Qué son los componentes? {#what-are-components}
 
@@ -44,22 +44,22 @@ Cada componente AEM:
 
 ## AEM Core Components {#aem-core-components}
 
-[Los AEM ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) componentes principales son un conjunto de componentes estandarizados de Administración de contenido web (WCM) para AEM a fin de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web.
+[Los componentes principales AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) son un conjunto de componentes estandarizados de Administración de contenido web (WCM, Web Content Management ) para AEM a fin de acelerar el tiempo de desarrollo y reducir el coste de mantenimiento de los sitios web.
 
-Los componentes principales se proporcionan con AEM como Cloud Service y el [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ilustra cómo implementar y utilizar los componentes. Los componentes se proporcionan con todo el código fuente y se pueden utilizar tal cual o como puntos de partida para los componentes modificados o ampliados.
+Los componentes principales se proporcionan con AEM as a Cloud Service y la variable [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) ilustra cómo implementar y utilizar componentes. Los componentes se proporcionan con todo el código fuente y se pueden utilizar tal cual o como puntos de partida para los componentes modificados o ampliados.
 
 ### Visualización de componentes disponibles {#viewing-available-components}
 
-Para obtener una descripción general de todos los componentes disponibles en la instancia de AEM, utilice la [Consola de componentes](/help/sites-cloud/authoring/features/components-console.md).
+Para obtener una descripción general de todos los componentes disponibles en la instancia de AEM, utilice la variable [Consola Componentes](/help/sites-cloud/authoring/features/components-console.md).
 
 Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de todos los componentes disponibles en el repositorio.
 
-1. En **[!UICONTROL CRXDE Lite]**, seleccione **[!UICONTROL Herramientas]** en la barra de herramientas y, a continuación, **[!UICONTROL Consulta]**, que abre la pestaña **[!UICONTROL Consulta]**.
+1. En **[!UICONTROL CRXDE Lite]**, seleccione **[!UICONTROL Herramientas]** en la barra de herramientas y, a continuación, **[!UICONTROL Consulta]**, que abre el **[!UICONTROL Consulta]** pestaña .
 
-1. En la pestaña **[!UICONTROL Query]**, seleccione `XPath` como **[!UICONTROL Type]**.
+1. En el **[!UICONTROL Consulta]** , seleccione `XPath` como **[!UICONTROL Tipo]**.
 
 1. En el campo de entrada **[!UICONTROL Consulta]**, escriba la cadena siguiente:
 
    `//element(*, cq:Component)`
 
-1. Haga clic en **[!UICONTROL Ejecutar]** y se enumerarán los componentes.
+1. Haga clic en **[!UICONTROL Ejecutar]** y se muestran los componentes.

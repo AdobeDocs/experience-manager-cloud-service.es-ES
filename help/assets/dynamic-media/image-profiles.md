@@ -7,7 +7,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
 source-wordcount: '3234'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -229,7 +229,7 @@ Después de editar un recorte inteligente y guardarlo, el cambio se propaga en t
 
 >[!IMPORTANT]
 >
->Cuando se vuelve a alinear manualmente o se cambia el tamaño de la ventana de recorte inteligente de varios recursos, estas ediciones se mantienen y se conservan, incluso si posteriormente se decide reprocesar dichos recursos. Sin embargo, si edita la anchura, la altura o ambas opciones en la variable **[!UICONTROL Recorte de imagen interactivo]** del perfil de imagen, esos recursos están sujetos a reprocesamiento.
+>Cuando se realinea o se cambia el tamaño manualmente de la ventana de recorte inteligente de varios recursos, estas ediciones se mantienen y conservan, incluso si después se decide reprocesar dichos recursos. Sin embargo, si edita la anchura, la altura o ambas opciones en el área **[!UICONTROL Recorte de imagen adaptable]** del perfil de imagen, esos recursos se someterán a reprocesamiento.
 >Consulte [Volver a procesar los recursos de Dynamic Media en una carpeta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Si es necesario, puede volver a ejecutar el recorte inteligente para volver a generar los cultivos adicionales.

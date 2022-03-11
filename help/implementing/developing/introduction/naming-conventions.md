@@ -5,7 +5,7 @@ exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
@@ -17,13 +17,13 @@ Los nodos del repositorio están sujetos a las convenciones de nomenclatura del 
 
 Estas convenciones de nomenclatura se implementan en varios niveles:
 
-* JcrUtil: la implementación AEM de las [utilidades JCR](#jcr-utilities).
-* PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para las operaciones a nivel de página.
+* JcrUtil: la AEM aplicación de la [utilidades JCR](#jcr-utilities).
+* PageManager: el [Administrador de páginas](#page-manager) proporciona métodos para operaciones a nivel de página.
 * Dentro de la interfaz de usuario de AEM {#ui-behavior}
 
 ### Utilidades de JCR {#jcr-utilities}
 
-[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) JcrUtiliza la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
+[JcrUtil](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/jcr/JcrUtil.html) es la implementación AEM de las utilidades JCR. De particular interés para validar nombres son las asignaciones de caracteres que controla y las siguientes validaciones:
 
 * `isValidName`
    * Comprueba si el nombre no está vacío y contiene solo caracteres válidos.
@@ -34,7 +34,7 @@ Estas convenciones de nomenclatura se implementan en varios niveles:
 
 ### Administrador de páginas {#page-manager}
 
-[](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) PageManager proporciona métodos para operaciones a nivel de página, basados en  [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) proporciona métodos para las operaciones de nivel de página, basados en [JCRUtil](#jcr-utilities).
 
 ### Comportamiento de la interfaz de usuario de AEM {#ui-behavior}
 

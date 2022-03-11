@@ -273,4 +273,4 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 
 ### Purgar instancias de flujo de trabajo {#purge-workflow-instances}
 
-Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte [Depuración regular de instancias de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html) depuración de instancias de flujo de trabajo
+Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte [Depuración regular de instancias de flujo de trabajo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=es) depuración de instancias de flujo de trabajo

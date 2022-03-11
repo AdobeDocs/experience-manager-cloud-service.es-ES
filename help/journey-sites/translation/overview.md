@@ -8,7 +8,7 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ Los Recorridos de documentación están diseñados en torno a los principios de 
 
 Si desea saber cómo recomienda Adobe resolver los casos comerciales del sitio con AEM, los Recorridos de AEM Sites son el punto de inicio.
 
-## Audience {#audience}
+## Audiencia {#audience}
 
 Este recorrido está diseñado para el especialista en traducción, a menudo denominado administrador de proyectos de traducción o TPM. Este recorrido establece los requisitos, pasos y métodos para traducir contenido de AEM Sites. El recorrido puede definir personalidades adicionales con las que debe interactuar el especialista en traducción, pero el punto de vista del recorrido es el del especialista en traducción.
 
@@ -77,4 +77,4 @@ Consulte estos recursos adicionales para obtener más información sobre cómo f
 * [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) - Empiece aquí para ver una introducción a las potentes y flexibles funciones de Adobe Experience Manager as a Cloud Service y a cómo modelar el contenido de su proyecto.
 * [recorrido para desarrolladores AEM sin encabezado](/help/journey-headless/developer/overview.md) - Empiece aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 * [AEM documentación técnica as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es) - Si ya tiene una comprensión firme de las tecnologías AEM y sin objetivos, puede que desee consultar directamente nuestros documentos técnicos.
-* [Tutoriales AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Si prefiere aprender haciendo y está técnicamente inclinado, tome nuestros tutoriales prácticos organizados por API y framework, que exploran la creación y el uso de aplicaciones creadas sobre AEM sin encabezado.
+* [Tutoriales AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es) - Si prefiere aprender haciendo y está técnicamente inclinado, tome nuestros tutoriales prácticos organizados por API y framework, que exploran la creación y el uso de aplicaciones creadas sobre AEM sin encabezado.

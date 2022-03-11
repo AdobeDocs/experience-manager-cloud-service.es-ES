@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Para obtener más información sobre los grupos de AEM específicos de Forms y l
 
 ## Paso siguiente {#next-steps}
 
-[Configuración de un entorno de desarrollo local](setup-local-development-environment.md). Puede utilizar el entorno de desarrollo local para crear un formulario adaptable y recursos relacionados (temas, plantillas, acciones de envío personalizadas, servicio de rellenado previo y más) y [convertir PDF forms en Forms adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) sin iniciar sesión en el entorno de desarrollo de la nube.
+[Configuración de un entorno de desarrollo local](setup-local-development-environment.md). Puede utilizar el entorno de desarrollo local para crear un formulario adaptable y recursos relacionados (temas, plantillas, acciones de envío personalizadas, servicio de rellenado previo y más) y [convertir PDF forms en Forms adaptable](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=es) sin iniciar sesión en el entorno de desarrollo de la nube.
 
 <!-- ### Business unit and end-users {#business-unit-and-end-users}
 

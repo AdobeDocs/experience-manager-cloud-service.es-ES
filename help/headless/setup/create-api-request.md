@@ -3,7 +3,7 @@ title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 

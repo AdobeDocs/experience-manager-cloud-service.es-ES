@@ -1,14 +1,13 @@
 ---
 title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
 ---
-
 
 # Guía rápida de introducción para la creación de páginas {#quick-guide-to-authoring-pages}
 
@@ -181,7 +180,7 @@ Para editar la página:
    >
    >Para navegar mediante los vínculos en el contenido debe utilizar el [modo de vista previa](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode).
 
-### Editar las Propiedades de la página    {#editing-the-page-properties}
+### Editar las Propiedades de la página   {#editing-the-page-properties}
 
 Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-cloud/authoring/fundamentals/page-properties.md):
 
@@ -233,7 +232,7 @@ Existen dos métodos principales para [publicar su página](/help/sites-cloud/au
 
    Consulte [Publicación de páginas](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) para obtener más información.
 
-### Mover, copiar y pegar o eliminar su página    {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
 
 Todas estas acciones pueden activarse del siguiente modo:
 
@@ -258,7 +257,7 @@ Todas estas acciones pueden activarse del siguiente modo:
    >
    >La opción Eliminar no se encuentra disponible como Acción rápida.
 
-### Bloquear y desbloquear su página {#locking-your-page-then-unlocking}
+### Bloquear y desbloquear su página  {#locking-your-page-then-unlocking}
 
 [Bloquear una página](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
@@ -284,7 +283,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 1. Haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando sea adecuado) poder llevar a cabo otras acciones.
 
-### Crear una versión de su página    {#creating-a-version-of-your-page}
+### Crear una versión de su página   {#creating-a-version-of-your-page}
 
 Para crear una [versión](/help/sites-cloud/authoring/features/page-versions.md) de la página:
 

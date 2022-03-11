@@ -1,13 +1,13 @@
 ---
 title: Crear sitio a partir de una plantilla
 description: Obtenga información sobre cómo crear rápidamente un nuevo sitio AEM con una plantilla de sitio.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 0%
 
 ---
-
 
 # Crear sitio a partir de una plantilla {#create-site-from-template}
 
@@ -162,7 +162,7 @@ Para que el desarrollador del front-end pueda previsualizar las personalizacione
 
    ![Agregar al grupo](assets/add-to-group.png)
 
-1. Toque o haga clic **Guardar y cerrar**.
+1. Haga clic o pulse en **Guardar y cerrar**.
 
 Ahora ha completado la configuración. Los autores de contenido ahora pueden empezar a crear contenido en el momento en que comienza la preparación del sitio para la personalización del front-end en el siguiente paso del recorrido.
 

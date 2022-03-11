@@ -1,18 +1,18 @@
 ---
 title: Creación y administración de canales en Screens as a Cloud Service
-description: En esta página se describe cómo crear y administrar canales en Screens como Cloud Service.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+description: En esta página se describe cómo crear y administrar canales en Screens as a Cloud Service.
+exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 7%
 
 ---
 
-
 # Creación y administración de un canal en Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Una vez creado un proyecto de AEM Screens, debe crear los canales.
-***Los canales*** muestran una secuencia de contenido (imágenes y vídeos), un sitio web o una aplicación de una sola página.
+***Canales***, muestra una secuencia de contenido (imágenes y vídeos), un sitio web o una aplicación de una sola página.
 
 ## Objetivo {#objective}
 
@@ -21,11 +21,11 @@ Este documento le ayuda a comprender la creación y administración de canales p
 * comprender cómo crear canales para el proveedor de contenido de Screens
 * administrar y editar contenido en los canales
 
-## Pasos para crear un nuevo canal de secuencia en Screens como Cloud Service {#create-new-channel}
+## Pasos para crear un nuevo canal de secuencia en Screens as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
 >**Requisitos previos**
->Antes de iniciar esta sección de la Guía, revise [Creación y administración de proyectos en Screens como Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
+>Antes de iniciar esta sección de la Guía, consulte [Creación y administración de proyectos en Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Siga los pasos a continuación para crear un nuevo canal de secuencia en Screens as a Cloud Service:
 
@@ -33,23 +33,23 @@ Siga los pasos a continuación para crear un nuevo canal de secuencia en Screens
 
 1. Vaya al proyecto de AEM Screens, como *FirstDigitalExperience*.
 
-1. Seleccione la carpeta **Channels** de su proyecto, como **FirstDigitalExperience** —> **Channels** y haga clic en **Crear** en la barra de acciones.
+1. Seleccione el **Canales** de su proyecto, como **FirstDigitalExperience** —> **Canales** y haga clic en **Crear** de la barra de acciones.
 
    ![](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. Seleccione la plantilla, como **Sequence Channel** en el asistente **Create** y haga clic en **Next**.
+1. Seleccione la plantilla como, por ejemplo, **Canal de secuencia** de la variable **Crear** asistente y haga clic en **Siguiente**.
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > El asistente **Crear** proporciona diferentes tipos de plantillas al crear un canal. Consulte la sección [Plantillas disponibles](#available-templates) en el Asistente de creación para obtener más información.
+   > La variable **Crear** proporciona diferentes tipos de plantillas al crear un canal. Consulte la sección [Plantillas disponibles](#available-templates) en Crear asistente para obtener más información.
 
-1. Introduzca el nombre del canal de la secuencia, como **LoopingChannelOne** y haga clic en **Create**.
+1. Introduzca el nombre del canal de secuencia, como, por ejemplo, **BucleChannelOne** y haga clic en **Crear**.
 
    ![](/help/screens-cloud/assets/create-content/channel-create3.png)
 
-   Ahora verá **LoopingChannelOne** en la carpeta Canales de su proyecto de AEM Screens.
+   Ahora verá un **BucleChannelOne** en la carpeta Canales de su proyecto de AEM Screens.
 
-   Una vez creado el canal, ahora puede añadir contenido al canal. Consulte [Adición de contenido a un canal](#add-content) para obtener información sobre cómo añadir recursos (imágenes/vídeos) al canal.
+   Una vez creado el canal, ahora puede añadir contenido al canal. Consulte [Adición de contenido a un canal](#add-content) para aprender a añadir recursos (imágenes/vídeos) al canal.
 
 ## Administración de un canal {#managing-channels}
 
@@ -74,12 +74,12 @@ Para añadir o editar contenido en un canal, siga los pasos que se indican a con
    ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >Haga clic en **Preview** para previsualizar el contenido del canal.
+   >Haga clic en **Vista previa** para obtener una vista previa del contenido del canal.
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Plantillas disponibles en el Asistente de creación {#available-templates}
 
-Las siguientes plantillas están disponibles mientras se utiliza el asistente de canal **Create**:
+Las siguientes plantillas están disponibles mientras se usa la variable **Crear** asistente de canales:
 
 | Plantillas disponibles | Descripción |
 |--- |--- |
@@ -90,4 +90,4 @@ Las siguientes plantillas están disponibles mientras se utiliza el asistente de
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha configurado un canal de AEM Screens en el proyecto, debe publicar el canal. Consulte [Publicación de canales en Screens como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) antes de administrar los reproductores desde el proveedor de servicios de Screens.
+Ahora que ha configurado un canal de AEM Screens en el proyecto, debe publicar el canal. Consulte [Canales de publicación en Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=en) antes de administrar sus reproductores desde el proveedor de servicios de Screens.

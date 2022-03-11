@@ -8,7 +8,7 @@ exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Debe integrar lo siguiente [!DNL Adobe Sign] con [!DNL AEM Forms]:
 * Uso [clave criptográfica idéntica](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#make-sure-you-properly-replicate-encryption-keys-when-needed) para instancias de autor y publicación.
 * (Solo para la autenticación basada en el ID del gobierno) [Habilitar el método de autenticación](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) para la autenticación de ID de gobierno.
 
-## Configurar [!DNL Adobe Sign] con [!DNL AEM Forms] {#configure-adobe-sign-with-aem-forms}
+## Configuración de[!DNL Adobe Sign]con [!DNL AEM Forms] {#configure-adobe-sign-with-aem-forms}
 
 Una vez cumplidos los requisitos previos, realice los siguientes pasos para configurar [!DNL Adobe Sign] con [!DNL AEM Forms] en las instancias de Autor.
 

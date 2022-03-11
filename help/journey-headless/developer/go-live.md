@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '1907'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -64,11 +64,11 @@ A continuación, echemos un vistazo a las partes constitutivas de un entorno AEM
 
 Un entorno de AEM completo está formado por un Autor, una Publicación y un Dispatcher. Estos mismos componentes estarán disponibles en el tiempo de ejecución del desarrollo local para que le resulte más fácil previsualizar el código y el contenido antes de lanzarse.
 
-* **El servicio Autor** es donde los usuarios internos crean, administran y previsualizan contenido.
+* **El servicio de creación** es donde los usuarios internos crean, administran y previsualizan contenido.
 
-* **El servicio Publicar** se considera el entorno &quot;Activo&quot; y es lo que los usuarios finales interactúan con él. El contenido, después de editarse y aprobarse en el servicio Autor, se distribuye al servicio Publicar . El patrón de implementación más común con AEM aplicaciones sin periféricos es tener la versión de producción de la aplicación conectada a un servicio de AEM Publish.
+* **El servicio de publicación** se considera el entorno “activo” y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio de creación, se distribuye al de publicación. El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
 
-* **Dispatcher** es un servidor web estático ampliado con el módulo AEM dispatcher. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
+* **Dispatcher** es un servidor web estático ampliado con el módulo Dispatcher de AEM. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
 ## Flujo de trabajo de desarrollo local {#the-local-development-workflow}
 

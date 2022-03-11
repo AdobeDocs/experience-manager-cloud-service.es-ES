@@ -1,15 +1,15 @@
 ---
-title: Asignación de canales a una visualización en Screens como Cloud Service
-description: En esta página se describe cómo asignar un canal a una visualización en Screens como Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+title: Asignación de canales a una visualización en Screens as a Cloud Service
+description: En esta página se describe cómo asignar un canal a una pantalla de Screens as a Cloud Service.
+exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 19%
 
 ---
 
-
-# Asignación de canales a una visualización en Screens como Cloud Service {#assign-channel-displays-screens-cloud}
+# Asignación de canales a una visualización en Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
 Una vez completada la configuración del proyecto, debe asignar el canal a una pantalla para ver el contenido.
 
@@ -28,13 +28,13 @@ Antes de realizar los pasos siguientes para asignar un canal a una pantalla, deb
 
 Siga los pasos a continuación para asignar un canal a una visualización:
 
-1. Vaya al proveedor de servicios de Screens y seleccione **Muestra** en el panel de navegación izquierdo.
+1. Vaya al proveedor de servicios de Screens y seleccione **Visualizaciones** del panel de navegación izquierdo.
 
-1. Haga clic en **Asignar canal** a la pantalla.
+1. Haga clic en **Asignar canal** a la visualización.
 
    ![image](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. Rellene los campos siguientes del cuadro de diálogo **Asignar un canal**.
+1. Rellene los campos siguientes desde **Asignar un canal** para abrir el Navegador.
 
    ![image](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -43,9 +43,9 @@ Siga los pasos a continuación para asignar un canal a una visualización:
 
       >[!NOTE]
       >La prioridad se utiliza para solicitar las asignaciones en caso de que varias de ellas coincidan con los criterios de reproducción. Aquel elemento que tenga el valor más alto siempre tendrá prioridad sobre otros valores más bajos. Por ejemplo, si hay dos canales A y B, y A tiene una prioridad de 1 y B tiene una prioridad de 2, se muestra el canal B ya que tiene mayor prioridad que A.
-   1. Seleccione la fecha de inicio y la fecha de finalización en **Activation**.
+   1. Seleccione la fecha de inicio y la de finalización desde **Activation**.
 
-1. Haga clic en **+ Agregar recurrencia** para agregar una programación de recurrencia para el canal.
+1. Haga clic en **+ Añadir recurrencia** para agregar una programación de periodicidad para el canal.
 
    ![image](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -61,11 +61,11 @@ Siga los pasos a continuación para asignar un canal a una visualización:
    * **Tiempo**: La programación finalizará a una hora especificada.
    * **Duración**: La programación se ejecuta durante un tiempo determinado en horas o minutos.
 
-1. Haga clic en **Crear** y ahora verá que se ha asignado un canal a esa pantalla, como se muestra en la figura siguiente.
+1. Haga clic en **Crear** y ahora verá el que un canal está asignado para esa pantalla, como se muestra en la figura siguiente.
 
    ![image](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha asignado el canal a una pantalla, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Installing and Configuring Screens Player for AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Ahora que ha asignado el canal a una pantalla, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento [Instalación y configuración de Screens Player para AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

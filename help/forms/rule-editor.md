@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Agregar reglas a un formulario adaptable {#adaptive-forms-rule-editor}
+# Adición de reglas a un formulario adaptable {#adaptive-forms-rule-editor}
 
 ## Información general {#overview}
 

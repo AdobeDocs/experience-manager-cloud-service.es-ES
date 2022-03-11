@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
 source-wordcount: '2154'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -190,7 +190,7 @@ Si hace clic en el componente, se resalta en el editor de páginas. Las acciones
 
    ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Página que forma parte de una [Live Copy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página.
+* Una página que forma parte de un [livecopy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página.
 
 >[!NOTE]
 >
@@ -283,7 +283,6 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
 >* Existe un [atajo de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
-
 >
 
 

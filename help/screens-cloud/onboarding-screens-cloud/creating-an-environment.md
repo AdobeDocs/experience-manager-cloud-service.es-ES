@@ -1,20 +1,20 @@
 ---
 title: Creación de una rama
-description: En esta página se describe la creación de una rama en Cloud Manager para Screens como Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+description: En esta página se describe la creación de una rama en Cloud Manager para Screens as a Cloud Service.
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
-
 
 # Creación de un entorno en Cloud Manager {#create-environment-screens-cloud}
 
 En esta sección se describe cómo crear un entorno para el programa en Cloud Manager.
 
 >[!NOTE]
->Consulte [Administración de entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) para conocer cómo el usuario puede crear un entorno.
+>Consulte [Administración de entornos en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en) para aprender a crear un entorno.
 
 ## Objetivo {#objective}
 
@@ -24,13 +24,13 @@ En la siguiente sección se describe cómo crear un entorno para el programa en 
 
 Una vez que la creación del proyecto se haya completado correctamente, verá la actualización de la tarjeta de llamada a la acción en la página Información general de Cloud Manager.
 
-1. Vaya a Cloud Manager y seleccione el icono para llegar a la página **Información general** de Cloud Manager.
+1. Vaya a Cloud Manager y seleccione el icono para llegar a la **Información general** página.
 
-1. Haga clic en **Agregar entorno** en la página **Información general** de Cloud Manager.
+1. Haga clic en **Agregar entorno** desde el informe **Información general** página.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Seleccione los detalles del entorno en el cuadro de diálogo **Add environment** y haga clic en **Save**.
+1. Seleccione los detalles del entorno en el **Agregar entorno** y haga clic en **Guardar**.
 
    ![image](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -40,5 +40,4 @@ Una vez que la creación del proyecto se haya completado correctamente, verá la
 
 ## Siguientes pasos {#whats-next}
 
-Una vez que haya aprendido a configurar un entorno para su programa en Cloud Manager, ya está listo para pasar al siguiente paso en el proceso de incorporación, es decir, [Ejecución de la canalización](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
-
+Una vez que haya aprendido a configurar un entorno para su programa en Cloud Manager, ya está listo para pasar al siguiente paso del proceso de incorporación, es decir, [Ejecución de la canalización](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

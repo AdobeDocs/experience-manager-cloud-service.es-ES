@@ -1,13 +1,13 @@
 ---
 title: ¿Cómo configurar el conector de almacenamiento unificado para AEM Forms?
 description: Obtenga información sobre cómo administrar el conector de almacenamiento unificado para AEM Forms. Utilice el conector de almacenamiento unificado para conectar AEM Forms a almacenes de datos externos.
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 0%
 
 ---
-
 
 # Administrar el conector de almacenamiento unificado para AEM Forms {#manage-unified-storage-connector}
 

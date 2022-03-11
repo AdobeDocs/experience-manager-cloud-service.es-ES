@@ -18,7 +18,7 @@ Los microservicios de recursos proporcionan un procesamiento escalable y flexibl
 
 Los microservicios de recursos le permiten procesar un [amplia gama de tipos de archivo](/help/assets/file-format-support.md) cubre más formatos predeterminados de los posibles [!DNL Experience Manager]. Por ejemplo, la extracción en miniatura de los formatos PSD y PSB ahora es posible, pero anteriormente se requieren soluciones de terceros como [!DNL ImageMagick].
 
-El procesamiento de recursos depende de la configuración de **[!UICONTROL Perfiles de procesamiento]**. Experience Manager proporciona una configuración predeterminada básica y permite que los administradores agreguen una configuración de procesamiento de recursos más específica. Los administradores crean, mantienen y modifican las configuraciones de los flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. Customizing the workflows lets developers extend the default offering.
+El procesamiento de recursos depende de la configuración de **[!UICONTROL Perfiles de procesamiento]**. Experience Manager proporciona una configuración predeterminada básica y permite que los administradores agreguen una configuración de procesamiento de recursos más específica. Los administradores crean, mantienen y modifican las configuraciones de los flujos de trabajo posteriores al procesamiento, incluida la personalización opcional. La personalización de los flujos de trabajo permite a los desarrolladores ampliar la oferta predeterminada.
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -29,7 +29,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of [!DNL Experience Manager]. La mayoría de los pasos estándar de generación de representación y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos, y los pasos restantes, si los hay, se pueden sustituir por la configuración del flujo de trabajo posterior al procesamiento.
+>El procesamiento de recursos descrito aquí reemplaza a la variable `DAM Update Asset` modelo de flujo de trabajo que existe en las versiones anteriores de [!DNL Experience Manager]. La mayoría de los pasos estándar de generación de representación y relacionados con los metadatos se sustituyen por el procesamiento de los microservicios de recursos, y los pasos restantes, si los hay, se pueden sustituir por la configuración del flujo de trabajo posterior al procesamiento.
 
 ## Comprender las opciones de procesamiento de recursos {#get-started}
 
@@ -37,8 +37,8 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 | Opción | Descripción | Casos de uso cubiertos |
 |---|---|---|
-| [Configuración predeterminada](#default-config) | It is available as is and cannot be modified. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 pixels) </li> <li> Large preview (web rendition - 1280 pixels) </li><li> Metadata and text extraction.</li></ul> |
-| [Configuración personalizada](#standard-config) | Configured by administrators via user interface. Proporciona más opciones para la generación de representación ampliando la opción predeterminada. Amplíe la opción predeterminada para proporcionar diferentes formatos y representaciones. | <ul><li>Representación de FPO. </li> <li>Cambiar el formato de archivo y la resolución de las imágenes</li> <li> Conditionally apply to configured file types. </li> </ul> |
+| [Configuración predeterminada](#default-config) | Está disponible tal cual y no se puede modificar. Esta configuración proporciona una capacidad de generación de representaciones muy básica. | <ul> <li>Miniaturas estándar utilizadas por [!DNL Assets] interfaz de usuario (48, 140 y 319 píxeles) </li> <li> Vista previa grande (representación web - 1280 píxeles) </li><li> Metadatos y extracción de texto.</li></ul> |
+| [Configuración personalizada](#standard-config) | Configurado por los administradores a través de la interfaz de usuario. Proporciona más opciones para la generación de representación ampliando la opción predeterminada. Amplíe la opción predeterminada para proporcionar diferentes formatos y representaciones. | <ul><li>Representación de FPO. </li> <li>Cambiar el formato de archivo y la resolución de las imágenes</li> <li> Se aplican condicionalmente a los tipos de archivo configurados. </li> </ul> |
 | [Perfil personalizado](#custom-config) | Configurado por los administradores a través de la interfaz de usuario para utilizar código personalizado a través de aplicaciones personalizadas para llamar a [Servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html). Admite requisitos más complejos en un método nativo de la nube y escalable. | Consulte [casos de uso permitidos](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
@@ -67,11 +67,11 @@ Con la configuración predeterminada, solo se configura el perfil de procesamien
 
 * **Representación especial de FPO**: Al colocar recursos de gran tamaño desde [!DNL Experience Manager] into [!DNL Adobe InDesign] documentos, un profesional creativo espera un tiempo considerable después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, se bloquea el uso del usuario [!DNL InDesign]. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. Adobe permite colocar temporalmente representaciones de tamaño pequeño en [!DNL InDesign] para empezar, que se pueden sustituir por activos de resolución completa bajo demanda más adelante. [!DNL Experience Manager] proporciona representaciones que se utilizan solo para la colocación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño, pero tienen la misma proporción de aspecto.
 
-El perfil de procesamiento puede incluir una representación de FPO (solo para ubicación). See [!DNL Adobe Asset Link] [documentation](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. Para obtener más información, consulte [Adobe Documentación completa de Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
+El perfil de procesamiento puede incluir una representación de FPO (solo para ubicación). Consulte [!DNL Adobe Asset Link] [documentación](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber si debe activarlo para su perfil de procesamiento. Para obtener más información, consulte [Adobe Documentación completa de Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
 ### Creación de un perfil estándar {#create-standard-profile}
 
-To create a standard processing profile, follow these steps:
+Para crear un perfil de procesamiento estándar, siga estos pasos:
 
 1. Acceso de los administradores **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de procesamiento]**. Haga clic en **[!UICONTROL Crear]**.
 1. Proporcione un nombre que le ayude a identificar el perfil de forma única al aplicar a una carpeta.
@@ -101,15 +101,15 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Perfil personalizado y casos de uso {#custom-config}
 
-La variable [!DNL Asset Compute Service] admite una variedad de casos de uso, como el procesamiento predeterminado, el procesamiento de formatos específicos de Adobe, como archivos Photoshop, y la implementación de un procesamiento personalizado o específico de la organización. La personalización del flujo de trabajo de los recursos de actualización de DAM requerida en el pasado se gestiona automáticamente o mediante la configuración de perfiles de procesamiento. Si estas opciones de procesamiento no satisfacen las necesidades comerciales, Adobe recomienda desarrollar y usar [!DNL Asset Compute Service] para ampliar las funciones predeterminadas. For an overview, see [understand extensibility and when to use it](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
+La variable [!DNL Asset Compute Service] admite una variedad de casos de uso, como el procesamiento predeterminado, el procesamiento de formatos específicos de Adobe, como archivos Photoshop, y la implementación de un procesamiento personalizado o específico de la organización. La personalización del flujo de trabajo de los recursos de actualización de DAM requerida en el pasado se gestiona automáticamente o mediante la configuración de perfiles de procesamiento. Si estas opciones de procesamiento no satisfacen las necesidades comerciales, Adobe recomienda desarrollar y usar [!DNL Asset Compute Service] para ampliar las funciones predeterminadas. Para obtener una descripción general, consulte [comprender la extensibilidad y cuándo utilizarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
 
 >[!NOTE]
 >
->Adobe recommends using a custom application only when the business requirements cannot be accomplished using the default configurations or the standard profile.
+>Adobe recomienda utilizar una aplicación personalizada solo cuando los requisitos comerciales no se puedan cumplir con las configuraciones predeterminadas o el perfil estándar.
 
-It can transform image, video, document, and other file formats into different renditions including thumbnails, extracted text and metadata, and archives.
+Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, y archivos.
 
-Developers can use the [!DNL Asset Compute Service] to [create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) for the supported use cases. [!DNL Experience Manager] puede llamar a estas aplicaciones personalizadas desde la interfaz de usuario utilizando perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] supports the following use cases of invoking external services:
+Los desarrolladores pueden utilizar el [!DNL Asset Compute Service] a [crear aplicaciones personalizadas](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) para los casos de uso admitidos. [!DNL Experience Manager] puede llamar a estas aplicaciones personalizadas desde la interfaz de usuario utilizando perfiles personalizados que los administradores configuran. [!DNL Asset Compute Service] admite los siguientes casos de uso de invocar servicios externos:
 
 * Uso [!DNL Adobe Photoshop]&#39;s [API de ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) y guarde el resultado como representación.
 * Llame a sistemas de terceros para actualizar datos, por ejemplo, un sistema PIM.
@@ -118,13 +118,13 @@ Developers can use the [!DNL Asset Compute Service] to [create custom applicatio
 
 >[!NOTE]
 >
->No se pueden editar los metadatos estándar mediante las aplicaciones personalizadas. You can only modify custom metadata.
+>No se pueden editar los metadatos estándar mediante las aplicaciones personalizadas. Solo se pueden modificar metadatos personalizados.
 
 ### Crear un perfil personalizado {#create-custom-profile}
 
 Para crear un perfil personalizado, siga estos pasos:
 
-1. Administrators access **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**. Haga clic en **[!UICONTROL Crear]**.
+1. Acceso de los administradores **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de procesamiento]**. Haga clic en **[!UICONTROL Crear]**.
 1. Haga clic en **[!UICONTROL Personalizado]** pestaña . Haga clic en **[!UICONTROL Agregar nuevo]**. Proporcione el nombre de archivo deseado para la representación.
 1. Proporcione la siguiente información.
 
@@ -167,13 +167,13 @@ Aplique perfiles de procesamiento a las carpetas mediante uno de los métodos si
 
 >[!TIP]
 >
->Only one processing profile can be applied to a folder. Para generar más representaciones, agregue más definiciones de representación al perfil de procesamiento existente.
+>Solo se puede aplicar un perfil de procesamiento a una carpeta. Para generar más representaciones, agregue más definiciones de representación al perfil de procesamiento existente.
 
 Después de aplicar un perfil de procesamiento a una carpeta, todos los recursos nuevos cargados (o actualizados) en esta carpeta o en cualquiera de sus subcarpetas se procesan con el perfil de procesamiento adicional configurado. Este procesamiento se suma al perfil predeterminado estándar.
 
 >[!NOTE]
 >
->Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, pero se puede sobrescribir con otro perfil aplicado a una subcarpeta. Cuando los recursos se cargan en una carpeta, el Experience Manager comprueba si hay un perfil de procesamiento en las propiedades de la carpeta contenedora. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.
+>Un perfil de procesamiento aplicado a una carpeta funciona para todo el árbol, pero se puede sobrescribir con otro perfil aplicado a una subcarpeta. Cuando los recursos se cargan en una carpeta, el Experience Manager comprueba si hay un perfil de procesamiento en las propiedades de la carpeta contenedora. Si no se aplica ninguno, se comprueba la existencia de un perfil de procesamiento en una carpeta principal de la jerarquía.
 
 Para comprobar que los recursos se han procesado, previsualice las variantes de representación generadas en la [!UICONTROL Representaciones] en el carril izquierdo. Abra la vista previa del recurso y abra el carril izquierdo para acceder al **[!UICONTROL Representaciones]** vista. Las representaciones específicas del perfil de procesamiento, para las que el tipo de recurso específico coincide con las reglas de inclusión de tipo MIME, deben ser visibles y accesibles.
 
@@ -191,10 +191,10 @@ Los flujos de trabajo posteriores al procesamiento, si están configurados, los 
 * Integraciones para agregar metadatos o propiedades a recursos de sistemas externos, por ejemplo, información de productos o procesos.
 * Procesamiento adicional realizado por servicios externos.
 
-To add a post-processing workflow configuration to [!DNL Experience Manager], follow these steps:
+Para añadir una configuración de flujo de trabajo posterior al procesamiento a [!DNL Experience Manager], siga estos pasos:
 
-* Cree uno o varios modelos de flujo de trabajo. These custom models are referred to as *post-processing workflow models* in this documentation. Those are regular [!DNL Experience Manager] workflow models.
-* Add the required workflow steps to these models. Revise los pasos del flujo de trabajo predeterminado y añada todos los pasos predeterminados necesarios al flujo de trabajo personalizado. Los pasos se ejecutan en los recursos en función de una configuración de modelo de flujo de trabajo. Por ejemplo, si desea que el etiquetado inteligente se produzca automáticamente al cargar los recursos, agregue el paso al modelo de flujo de trabajo personalizado posterior al procesamiento.
+* Cree uno o varios modelos de flujo de trabajo. Estos modelos personalizados se denominan *modelos de flujo de trabajo posteriores al procesamiento* en esta documentación. Estos son habituales [!DNL Experience Manager] modelos de flujo de trabajo.
+* Añada los pasos de flujo de trabajo necesarios a estos modelos. Revise los pasos del flujo de trabajo predeterminado y añada todos los pasos predeterminados necesarios al flujo de trabajo personalizado. Los pasos se ejecutan en los recursos en función de una configuración de modelo de flujo de trabajo. Por ejemplo, si desea que el etiquetado inteligente se produzca automáticamente al cargar los recursos, agregue el paso al modelo de flujo de trabajo personalizado posterior al procesamiento.
 * Agregar [!UICONTROL Flujo de trabajo de recursos de actualización DAM completado] al final. Añadir este paso garantiza que el Experience Manager sepa cuándo termina el procesamiento y el recurso se puede marcar como procesado, es decir, *Nuevo* se muestra en el recurso.
 * Cree una configuración para el Servicio de ejecución de flujo de trabajo personalizado que permita configurar la ejecución de un modelo de flujo de trabajo posterior al procesamiento mediante una ruta (ubicación de carpeta) o una expresión regular.
 
@@ -244,7 +244,7 @@ Para saber cómo implementar una configuración OSGi, consulte [implementar a [!
 >
 >* [Introducción al servicio de Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
 >* [Comprender la extensibilidad y cuándo utilizarla](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
->* [How to create custom applications](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
+>* [Cómo crear aplicaciones personalizadas](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
 >* [Tipos MIME admitidos para varios casos de uso](/help/assets/file-format-support.md).
 
 

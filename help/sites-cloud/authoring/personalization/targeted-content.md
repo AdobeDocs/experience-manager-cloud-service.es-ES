@@ -26,7 +26,7 @@ Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adob
 
 ![Contenido de segmentación](../assets/targeted-content.png)
 
-Las actividades y experiencias que ve en el modo de Target reflejan la [consola Actividades](/help/sites-cloud/authoring/personalization/activities.md):
+Las actividades y experiencias que ve en el modo de Target reflejan la variable [Consola de actividades](/help/sites-cloud/authoring/personalization/activities.md):
 
 * Los cambios que realice en las actividades y experiencias mediante el modo de Orientación se reflejan en la consola Actividades.
 * Los cambios que se realizan en la consola Actividades se reflejan en el modo de Orientación.
@@ -77,7 +77,7 @@ Para añadir una actividad:
    >Se recomienda [crear marcas a través de la consola de actividades](/help/sites-cloud/authoring/personalization/activities.md#creating-a-brand-using-the-activities-console).
    >
    >
-   >Si crea una marca de cualquier otra manera, asegúrese de que el nodo `/campaigns/<brand>/master` existe o que se producirá un error cuando intente crear una actividad.
+   >Si crea una marca de cualquier otra manera, asegúrese de que el nodo `/campaigns/<brand>/master` existe o se producirá un error cuando intente crear una actividad.
 
 1. Toque o haga clic en + junto al menú desplegable **Actividad**.
 1. Escriba un nombre para la actividad.
@@ -88,7 +88,7 @@ Para añadir una actividad:
 
 1. En el menú desplegable del motor de **Orientación**, seleccione el motor de orientación.
 
-   * Si selecciona **ContextHub AEM**, los campos restantes se atenúan y no están disponibles. Haga clic o pulse **Crear**.
+   * Si selecciona **AEM de ContextHub**, los campos restantes están atenuados y no están disponibles. Haga clic o pulse **Crear**.
 
    * Si selecciona **Adobe Target**, puede seleccionar una configuración (de forma predeterminada, es la configuración que proporcionó al configurar la cuenta) y el tipo de actividad. <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 
@@ -97,7 +97,7 @@ Para añadir una actividad:
    * Orientación de la experiencia: administre las actividades de Adobe Target desde AEM.
    * Prueba A/B: cree o administre las actividades de la prueba A/B en Adobe Target desde AEM.
 
-## El proceso de orientación: Crear, Orientar y Objetivos y configuraciones  {#the-targeting-process-create-target-and-goals-settings}
+## El proceso de orientación: Crear, Orientar y Objetivos y configuraciones {#the-targeting-process-create-target-and-goals-settings}
 
 El modo de Orientación le permite configurar diversas proporciones de una actividad. Utilice el proceso siguiente que consta de tres pasos para crear contenido orientado para una actividad de marca:
 
@@ -123,11 +123,11 @@ Para añadir una actividad:
    >
    >Para cambiar la actividad con la que está trabajando, toque o haga clic en **Atrás**.
 
-## Crear: creación de experiencias  {#create-authoring-the-experiences}
+## Crear: creación de experiencias {#create-authoring-the-experiences}
 
 El paso Crear de la orientación del contenido implica la creación de experiencias. Durante este paso, puede crear o eliminar las experiencias de la actividad y añadir ofertas a cada experiencia.
 
-### Visualización de ofertas de experiencia en el modo de Orientación  {#seeing-experience-offers-in-targeting-mode}
+### Visualización de ofertas de experiencia en el modo de Orientación {#seeing-experience-offers-in-targeting-mode}
 
 Después de [iniciar el proceso de orientación](#the-targeting-process-create-target-and-goals-settings), seleccione una experiencia para ver las ofertas que se proporcionan para esa experiencia. Al seleccionar una experiencia, los componentes orientados de la página cambian para mostrar la oferta para esa experiencia.
 
@@ -169,14 +169,14 @@ Puede guardar ofertas personalizadas en una biblioteca de ofertas si decide que 
 
 Con el paso Crear del [proceso de orientación](#the-targeting-process-create-target-and-goals-settings), puede añadir y quitar experiencias. Además, puede duplicar una experiencia y también cambiarle el nombre.
 
-#### Adición de experiencias con el modo de Orientación  {#adding-experiences-using-targeting-mode}
+#### Adición de experiencias con el modo de Orientación {#adding-experiences-using-targeting-mode}
 
 Para añadir una experiencia:
 
-1. Para añadir una experiencia, toque o haga clic en **+** **Añadir segmentación de experiencias** que aparece debajo de las experiencias existentes en el panel **Audiencias**.
+1. Para añadir una experiencia, toque o haga clic en **+** **Añadir segmentación de experiencias** que aparece debajo de las experiencias existentes en la variable **Audiencias** panel.
 1. Seleccione un público. De forma predeterminada, ese nombre es el nombre de la experiencia. Puede escribir otro nombre, si lo desea. Toque o haga clic en **OK**.
 
-#### Eliminar experiencias con el modo de Orientación  {#removing-experiences-using-targeting-mode}
+#### Eliminar experiencias con el modo de Orientación {#removing-experiences-using-targeting-mode}
 
 Para eliminar una experiencia:
 
@@ -186,12 +186,12 @@ Para eliminar una experiencia:
 
 1. Haga clic en **Eliminar**.
 
-#### Cambiar el nombre de las experiencias con el modo de Orientación  {#renaming-experiences-using-targeting-mode}
+#### Cambiar el nombre de las experiencias con el modo de Orientación {#renaming-experiences-using-targeting-mode}
 
 Para cambiar el nombre de las experiencias con el modo de Orientación:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
-1. Haga clic en **Cambiar nombre de experiencia** y escriba el nuevo nombre.
+1. Haga clic en **Cambiar el nombre de la experiencia** y escriba el nuevo nombre.
 1. Toque o haga clic en otro lugar de la pantalla para guardar los cambios.
 
 #### Edición de públicos con el modo de Orientación {#editing-audiences-using-targeting-mode}
@@ -200,9 +200,9 @@ Para editar los públicos con el modo de Orientación:
 
 1. Toque o haga clic en la flecha situada junto al nombre de la experiencia.
 1. Haga clic en **Editar audiencia** y seleccione una audiencia nueva.
-1. Haga clic en **OK**.
+1. Haga clic en **Aceptar**.
 
-#### Duplicar experiencias con el modo de Orientación  {#duplicating-experiences-using-targeting-mode}
+#### Duplicar experiencias con el modo de Orientación {#duplicating-experiences-using-targeting-mode}
 
 Para copiar experiencias con el modo de Orientación:
 
@@ -210,12 +210,12 @@ Para copiar experiencias con el modo de Orientación:
 1. Haga clic en **Duplicar** y elija el público.
 1. Cambie el nombre de la experiencia, si lo desea, y haga clic en **OK**.
 
-### Creación de ofertas con el modo de Orientación  {#creating-offers-using-targeting-mode}
+### Creación de ofertas con el modo de Orientación {#creating-offers-using-targeting-mode}
 
 Oriente un componente para crear ofertas para las experiencias. Los componentes orientados proporcionan el contenido que se utiliza como ofertas para las experiencias.
 
 * [Oriente un componente existente](#creating-a-default-offer-by-targeting-an-existing-component). El contenido se convierte en la oferta de la experiencia predeterminada.
-* [Agregue un componente](#creating-an-offer-by-adding-a-target-component) Target y, a continuación, añada contenido al componente.
+* [Añadir un componente de Target](#creating-an-offer-by-adding-a-target-component)y, a continuación, añada contenido al componente.
 
 Después de que se oriente un componente, puede añadir ofertas para cada experiencia:
 
@@ -228,7 +228,7 @@ Las herramientas siguientes están disponibles para trabajar con ofertas:
 * [Convierta una oferta de la biblioteca en una oferta personalizada](#converting-a-library-offer-to-a-custom-library).
 * [Abra una oferta de la biblioteca y modifique el contenido](#editing-a-library-offer).
 
-#### Creación de una oferta predeterminada mediante la orientación de un componente existente  {#creating-a-default-offer-by-targeting-an-existing-component}
+#### Creación de una oferta predeterminada mediante la orientación de un componente existente {#creating-a-default-offer-by-targeting-an-existing-component}
 
 Oriente un componente de la página para utilizarlo como la oferta para la experiencia predeterminada de la actividad. Al orientar un componente, se ajusta en un componente Target y su contenido se convierte en la oferta para la experiencia predeterminada.
 
@@ -244,17 +244,17 @@ Lleve a cabo el procedimiento siguiente después de [iniciar el proceso de orien
 
    ![Botón Target](../assets/targeted-target-button.png)
 
-   El contenido del componente es la oferta para la experiencia predeterminada. Cuando se segmenta un componente, su nodo predeterminado se duplica para cada experiencia. Esto es necesario para editar el nodo de contenido adecuado durante la creación específica de la experiencia. Para estas experiencias no predeterminadas, [añada una oferta personalizada](#adding-a-custom-offer) o [añada una oferta de biblioteca](#adding-an-offer-from-an-offer-library).
+   El contenido del componente es la oferta para la experiencia predeterminada. Cuando se segmenta un componente, su nodo predeterminado se duplica para cada experiencia. Esto es necesario para editar el nodo de contenido adecuado durante la creación específica de la experiencia. Para estas experiencias no predeterminadas, puede: [añadir una oferta personalizada](#adding-a-custom-offer) o [añadir una oferta de biblioteca](#adding-an-offer-from-an-offer-library).
 
 #### Creación de una oferta mediante la adición de un componente Target {#creating-an-offer-by-adding-a-target-component}
 
 Añada un componente Target para crear la oferta para la experiencia predeterminada. El componente Target es un contenedor para otros componentes y los componentes que se colocan dentro de él se convierten en objetivos. Al utilizar el componente Target, puede añadir varios componentes para crear una oferta. Asimismo, puede utilizar distintos componentes en cada experiencia para crear diferentes ofertas.
 
-Consulte [Configuración de las opciones de componentes de Target](#configuring-target-component-options) para obtener información sobre cómo personalizar este componente.
+Consulte [Configuración de las opciones de los componentes de Target](#configuring-target-component-options) para obtener información sobre cómo personalizar este componente.
 
 >[!NOTE]
 >
->Las ofertas que se crean mediante la [consola Ofertas](/help/sites-cloud/authoring/personalization/offers.md) también pueden contener varios componentes. Estas ofertas pertenecen a una biblioteca de ofertas y se pueden utilizar para varias experiencias.
+>Ofertas que crea mediante el [Consola de ofertas](/help/sites-cloud/authoring/personalization/offers.md) también puede contener varios componentes. Estas ofertas pertenecen a una biblioteca de ofertas y se pueden utilizar para varias experiencias.
 
 Dado que el componente Target es un contenedor, aparece como un área de colocación de otros componentes.
 
@@ -293,11 +293,11 @@ Antes de poder editar contenido orientado, debe tocar o hacer clic en **Iniciar 
    * Para la experiencia predeterminada, arrastre componentes al área de colocación de destino y edite las propiedades del componente como de costumbre para crear el contenido de la oferta.
    * Para las experiencias no predeterminadas, [añada una oferta personalizada](#adding-a-custom-offer) o [añada una oferta de la biblioteca](#adding-an-offer-from-an-offer-library).
 
-#### Adición de una oferta personalizada  {#adding-a-custom-offer}
+#### Adición de una oferta personalizada {#adding-a-custom-offer}
 
 Para crear una oferta, cree el contenido de un componente orientado en modo de Orientación. Al crear una oferta personalizada, se utiliza como la oferta para una sola experiencia.
 
-Si decide que la oferta se puede utilizar para otras experiencias, puede crear una oferta personalizada y [agregarla a la biblioteca](#adding-a-custom-offer-to-a-library). Para obtener información sobre el uso de la consola Ofertas para crear una oferta reutilizable, consulte [Agregar una oferta a una biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
+Si decide que la oferta se puede utilizar para otras experiencias, puede crear una oferta personalizada y [añadirlo a la biblioteca](#adding-a-custom-offer-to-a-library). Para obtener información sobre el uso de la consola Ofertas para crear una oferta reutilizable, consulte [Adición de una oferta a una biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Seleccione la experiencia a la que añade la oferta.
 1. Para mostrar el menú de componentes, toque o haga clic en el componente orientado al que va a añadir la oferta.
@@ -314,9 +314,9 @@ Si decide que la oferta se puede utilizar para otras experiencias, puede crear u
 
 1. Edite el contenido del componente.
 
-#### Adición de una oferta de una biblioteca de ofertas  {#adding-an-offer-from-an-offer-library}
+#### Adición de una oferta de una biblioteca de ofertas {#adding-an-offer-from-an-offer-library}
 
-Agregue una oferta de la [biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md) a una experiencia. Puede añadir cualquier oferta de la biblioteca de la marca que está buscando actualmente.
+Añada una oferta de la [biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md) a una experiencia. Puede añadir cualquier oferta de la biblioteca de la marca que está buscando actualmente.
 
 No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
@@ -335,7 +335,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica la cantidad de ofertas que están disponibles en la biblioteca actual.
 
-   * Toque o haga clic en **Examinar** para desplazarse a otra carpeta. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Toque o haga clic **Examinar** de nuevo para cerrar el panel de navegación.
+   * Toque o haga clic en **Examinar** para desplazarse a otra carpeta. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Toque o haga clic en **Examinar** para cerrar el panel de navegación.
 
    ![Examinar contenido](../assets/targeted-select-content-browse.png)
 
@@ -355,7 +355,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
 Añada una oferta personalizada a la [biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md) cuando desee volver a utilizarla como la oferta para experiencias múltiples. Puede añadir ofertas a la biblioteca de la marca actual que está orientando.
 
-Para obtener información sobre el uso de la consola Ofertas para crear una oferta reutilizable, consulte [Agregar una oferta a una biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
+Para obtener información sobre el uso de la consola Ofertas para crear una oferta reutilizable, consulte [Adición de una oferta a una biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Seleccione la experiencia para mostrar la oferta personalizada.
 1. Toque o haga clic en la oferta personalizada para ver el menú Oferta y, a continuación, toque o haga clic en el icono **Guardar oferta en biblioteca de ofertas**.
@@ -364,7 +364,7 @@ Para obtener información sobre el uso de la consola Ofertas para crear una ofer
 
 1. Escriba un nombre para la oferta, seleccione la biblioteca a la que va a añadir la oferta y, a continuación, toque o haga clic en el icono de la marca.
 
-#### Conversión de una oferta de la biblioteca en una biblioteca personalizada  {#converting-a-library-offer-to-a-custom-library}
+#### Conversión de una oferta de la biblioteca en una biblioteca personalizada {#converting-a-library-offer-to-a-custom-library}
 
 Convierta una oferta de la biblioteca en una oferta personalizada para cambiar la oferta para la experiencia actual y sin cambiar la oferta en otras experiencias.
 
@@ -406,7 +406,7 @@ Una experiencia no debe utilizar más de un público. Un símbolo de advertencia
 Utilice el procedimiento siguiente para asociar una experiencia a un público al usar la orientación de AEM (o la orientación de experiencias de Adobe Target):
 
 1. Toque o haga clic en la flecha desplegable que hay junto al cuadro de público asignado a la experiencia.
-1. (Opcional) Toque o haga clic en **Editar** y después escriba una palabra clave para buscar el segmento deseado.
+1. (Opcional) Toque o haga clic en **Editar** y luego escriba una palabra clave para buscar el segmento deseado.
 1. En la lista de públicos, seleccione el público y toque o haga clic en **OK**.
 
 ### Si utiliza la prueba A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
@@ -425,7 +425,7 @@ Puede cambiar los porcentajes, siempre que sumen el cien por ciento. En una prue
 1. Introduzca porcentajes para configurar la forma en que el tráfico del público se dirige a cada experiencia. El número total debe ser 100.
 1. De manera opcional, haga clic en el menú desplegable situado junto al nombre de la experiencia para editarlo.
 
-## Objetivos y configuraciones: configuración de la actividad y definición de objetivos  {#goals-settings-configuring-the-activity-and-setting-goals}
+## Objetivos y configuraciones: configuración de la actividad y definición de objetivos {#goals-settings-configuring-the-activity-and-setting-goals}
 
 El paso Objetivos y configuración de [el proceso de segmentación](#the-targeting-process-create-target-and-goals-settings) implica configurar el comportamiento de la actividad de marca. Especifique cuándo comienza y finaliza la actividad, así como la prioridad de la actividad. Además, realiza un seguimiento de los objetivos. Puede decidir concretamente qué desea medir con sus actividades.
 
@@ -459,13 +459,13 @@ Use la configuración avanzada para determinar qué sucede **después** de que u
 
 | Cuando un usuario encuentra esta métrica de objetivo... | Selecciona lo siguiente para que suceda... |
 |---|---|
-| Aumentar recuento y mantener al usuario en la actividad | Especifique cómo se incrementa el recuento: Una vez por visitante, en cada impresión, excluyendo las actualizaciones de página, En cada impresión |
+| Aumentar recuento y mantener al usuario en la actividad | Especifique cómo se incrementa el recuento: Una vez por participante, en cada impresión, excluyendo las actualizaciones de página, En cada impresión |
 | Aumentar recuento, liberar usuario y permitir la reentrada | Seleccione la experiencia que el visitante ve si vuelve a participar en la actividad: La misma experiencia, experiencia aleatoria, experiencia no vista |
 | Recuento de incrementos, liberación de usuario y reentrada de barras | Determine lo que el usuario ve en lugar del contenido de la actividad: La misma experiencia, sin seguimiento, contenido predeterminado u otro contenido de actividad |
 
 Consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) para obtener más información sobre las métricas de éxito.
 
-### Configuración (orientación de AEM)  {#configuring-settings-aem-targeting}
+### Configuración (orientación de AEM) {#configuring-settings-aem-targeting}
 
 Para definir la configuración si utiliza la orientación de AEM:
 
@@ -481,7 +481,7 @@ Para definir la configuración si utiliza la orientación de AEM:
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
 
-### Configuración de Objetivos y configuraciones (Adobe Target)  {#configuring-goals-settings-adobe-target}
+### Configuración de Objetivos y configuraciones (Adobe Target) {#configuring-goals-settings-adobe-target}
 
 Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
@@ -508,7 +508,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
    Si necesita borrar todos los campos, haga clic en los tres puntos de la esquina superior derecha y seleccione **Borrar todos los campos**.
 
-   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte [Documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    >
@@ -533,7 +533,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
 Una vez configuradas, puede [ver el rendimiento de las actividades](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) que usan Adobe Target (orientación de la experiencia o de la prueba A/B). Además, con la orientación de la prueba A/B, puede [convertir a los ganadores.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
 
-## Simulación de una experiencia  {#simulating-an-experience}
+## Simulación de una experiencia {#simulating-an-experience}
 
 Simule la experiencia de un visitante para comprobar que el contenido de la página se muestra como se espera según el diseño del contenido orientado. Al simular, cargue distintos perfiles de usuario y vea el contenido orientado para ese usuario.
 
@@ -556,7 +556,7 @@ Para simular la experiencia del visitante, utilice las herramientas siguientes:
 * La actividad Simulación en modo de Orientación: en la página se muestran las ofertas para el usuario seleccionado actualmente en ContextHub. Puede editar las ofertas orientadas al usuario.
 * Modo de vista previa: utilice ContextHub para seleccionar a los usuarios y las ubicaciones que cumplen los criterios de los segmentos en que están basadas las experiencias. Al cambiar las selecciones de ContextHub, el contenido orientado cambia según corresponda.
 
-1. Para cambiar al modo Vista previa, en la barra de herramientas, toque o haga clic en **Vista previa**.
+1. Para cambiar al modo de Vista previa, en la barra de herramientas, toque o haga clic en **Vista previa**.
 1. En la barra de herramientas, toque o haga clic en el icono de ContextHub.
 
    ![Botón ContextHub](../assets/targeted-contexthub-button.png)
@@ -569,7 +569,7 @@ Para simular la experiencia del visitante, utilice las herramientas siguientes:
 
 1. Para realizar cambios en las ofertas que se muestran, cambie al modo de Orientación. Con la actividad Simulación seleccionada, edite las ofertas para el contexto que haya configurado en modo de Vista previa.
 
-## Configuración de las opciones del componente Target  {#configuring-target-component-options}
+## Configuración de las opciones del componente Target {#configuring-target-component-options}
 
 Para personalizar el componente Target, acceda a las opciones del componente de una de las dos formas siguientes:
 

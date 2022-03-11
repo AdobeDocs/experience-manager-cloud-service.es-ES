@@ -1,14 +1,13 @@
 ---
 title: 'Su bandeja de entrada  '
 description: Administración de las tareas con la bandeja de entrada
-translation-type: tm+mt
-source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
 ---
-
 
 # Su bandeja de entrada    {#your-inbox}
 
@@ -43,7 +42,7 @@ Desde cualquiera de las consolas, en el encabezado se mostrará el número actua
 >
 >Algunas acciones también se mostrarán en la [vista de tarjeta del recurso adecuado](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view).
 
-## Apertura de la bandeja de entrada     {#opening-the-inbox}
+## Apertura de la bandeja de entrada    {#opening-the-inbox}
 
 Para abrir la bandeja de entrada de notificaciones AEM:
 
@@ -183,7 +182,7 @@ Desde la bandeja de entrada, puede crear tareas:
 
 1. Seleccione **Enviar**.
 
-## Creación de un proyecto     {#creating-a-project}
+## Creación de un proyecto    {#creating-a-project}
 
 Para determinadas tareas, puede crear un [proyecto](/help/sites-cloud/authoring/projects/overview.md) basado en dicha tarea:
 
@@ -215,7 +214,7 @@ Para determinadas tareas, puede crear un [proyecto](/help/sites-cloud/authoring/
 
 1. Seleccione **Crear** para confirmar la acción.
 
-## Filtrado de elementos en la bandeja de entrada AEM     {#filtering-items-in-the-aem-inbox}
+## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
 
 Puede filtrar los elementos enumerados:
 

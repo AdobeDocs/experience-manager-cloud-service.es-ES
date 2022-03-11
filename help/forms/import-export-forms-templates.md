@@ -8,11 +8,11 @@ exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Importar, exportar y organizar Forms adaptable, PDF forms y otros recursos{#importing-and-exporting-assets-to-aem-forms}
+# Importación, exportación y organización de formularios adaptables, formularios PDF y otros recursos{#importing-and-exporting-assets-to-aem-forms}
 
 Puede mover Forms adaptable y recursos relacionados, como temas de Formulario adaptable, Modelos de datos de formulario, Plantillas de formulario adaptable, fragmentos de documento y PDF forms, entre [!DNL AEM Forms] instancias. Puede importar y exportar recursos en paquetes CRX o formatos de archivo binario.
 

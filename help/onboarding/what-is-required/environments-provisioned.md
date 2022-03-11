@@ -1,11 +1,10 @@
 ---
-title: 'Aprovisionamiento de Entornos: lo que se necesita'
-description: 'Aprovisionamiento de Entornos: lo que se necesita'
-translation-type: tm+mt
+title: 'Aprovisionamiento de entornos: lo que es necesario'
+description: 'Aprovisionamiento de entornos: lo que es necesario'
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,14 +13,14 @@ ht-degree: 0%
 
 ## Aprovisionamiento {#provisioning}
 
-Todos los entornos de nube de AEM adquiridos por un cliente se aprovisionarán automáticamente mediante Adobe y se vincularán a su programa en Cloud Manager. Estos Entornos de nube de AEM se incluyen en todas las suscripciones de servicios gestionados de Adobe y suelen estar compuestos por al menos un entorno de producción, un entorno de fase y, opcionalmente, uno o más entornos de desarrollo o prueba.
+Todos los entornos de la nube AEM adquiridos por un cliente se aprovisionan automáticamente mediante Adobe y se vinculan de nuevo a su programa en Cloud Manager. Estos entornos de nube de AEM se incluyen en cada suscripción a Adobe Managed Services y suelen estar compuestos por al menos un entorno de producción, un entorno de fase y, opcionalmente, uno o más entornos de desarrollo o prueba.
 
-## Mensaje de correo electrónico de bienvenida {#welcome-email}
+## Correo electrónico de bienvenida {#welcome-email}
 
-Una vez completado el proceso de aprovisionamiento de entornos, el administrador designado del cliente recibe un correo electrónico de bienvenida con la confirmación de que se le ha concedido acceso al Adobe Experience Cloud. El correo electrónico contiene información detallada sobre cómo empezar a utilizar los servicios de Experience Cloud y el portal de autoservicio Cloud Manager. Además, el correo electrónico contiene información importante, como dónde buscar recursos de asistencia, foros o preguntas más frecuentes, y mucho más. En lista de los recursos que se proporcionan en el correo electrónico, también obtendrá detalles sobre cómo acceder a Cloud Manager o a sus entornos de nube de AEM.
+Una vez completado el proceso de aprovisionamiento del entorno, el administrador de clientes designado recibe un correo electrónico de bienvenida con la confirmación de que se les ha concedido acceso a Adobe Experience Cloud. El correo electrónico contiene información detallada sobre cómo empezar a utilizar los servicios de Experience Cloud y el portal de autoservicio de Cloud Manager. Además, el correo electrónico contiene información importante, como dónde buscar recursos de asistencia técnica, foros o preguntas frecuentes, entre otras cosas. En la lista de recursos que se proporcionan en el correo electrónico, también encontrará detalles sobre cómo acceder a Cloud Manager o a los entornos de la nube de AEM.
 
-## Próximos pasos {#next-steps}
+## Siguientes pasos {#next-steps}
 
-Tras recibir el correo electrónico de bienvenida, podrá iniciar sesión en Cloud Manager como administrador con las credenciales de Adobe IMS. Una vez que haya iniciado sesión, podrá comprobar que sus entornos de producción en la nube de AEM y de no producción están disponibles y se ejecutan correctamente.
+Después de recibir el correo electrónico de bienvenida, está listo para iniciar sesión en Cloud Manager como administrador, con sus credenciales de Adobe IMS. Una vez que haya iniciado sesión, podrá comprobar que los entornos de producción y no producción de la nube de AEM están disponibles y se ejecutan correctamente.
 
-Cloud Manager usará estos entornos de nube de AEM para ejecutar el flujo de CI/CD al implementar el código, empezando desde el repositorio Git del Administrador de nube, a través del Entorno de ensayo y hasta el entorno de producción de AEM. También podrá acceder a sus entornos de nube de AEM directamente desde Cloud Manager, cuando esté listo para inicio y crear experiencias digitales para sus propiedades web.
+Cloud Manager utilizará estos entornos de nube de AEM para ejecutar la canalización de CI/CD al implementar su código, empezando por el repositorio Git de Cloud Manager, a través del entorno de ensayo y hasta su entorno de producción de AEM. También podrá acceder a sus entornos de nube de AEM directamente desde Cloud Manager, cuando esté listo para empezar a crear experiencias digitales para sus propiedades web.

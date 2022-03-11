@@ -1,13 +1,13 @@
 ---
 title: Configuración [!DNL Microsoft Dynamics] ¿OData?
-description: Obtenga información sobre cómo crear el Modelo de datos de formulario basado en las entidades, atributos y servicios definidos en [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics] para habilitar los flujos de trabajo empresariales.
+description: Obtenga información sobre cómo crear el Modelo de datos de formulario basado en las entidades, atributos y servicios definidos en [!DNL Microsoft Dynamics] servicio. El Modelo de datos de formulario se puede utilizar para crear un Forms adaptable que interactúe con [!DNL Microsoft Dynamics] para habilitar los flujos de trabajo empresariales.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Antes de comenzar a configurar [!DNL Microsoft Dynamics], asegúrese de que:
    * [!DNL Microsoft Dynamics] 365 locales
    * [!DNL Microsoft Dynamics] 2016 in situ
 
-* [Se registró la solicitud de [!DNL Microsoft Dynamics] online service with [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente para el servicio registrado. Estos valores se utilizan al [configuración del servicio en la nube para [!DNL Microsoft Dynamics] service](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Se registró la solicitud de [!DNL Microsoft Dynamics] servicio en línea con [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente para el servicio registrado. Estos valores se utilizan al [configuración del servicio en la nube para [!DNL Microsoft Dynamics] service](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Establecer URL de respuesta para registrado [!DNL Microsoft Dynamics] aplicación {#set-reply-url-for-registered-microsoft-dynamics-application}
 

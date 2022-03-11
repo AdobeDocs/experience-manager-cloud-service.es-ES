@@ -1,20 +1,21 @@
 ---
-title: Uso del Analizador de prácticas recomendadas
-description: Uso del Analizador de prácticas recomendadas
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: Uso del analizador de prácticas recomendadas
+description: Uso del analizador de prácticas recomendadas
+exl-id: e8498e17-f55a-4600-87d7-60584d947897
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
-# Uso del Analizador de prácticas recomendadas {#using-best-practices-analyzer}
+# Uso del analizador de prácticas recomendadas {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="Uso del Analizador de prácticas recomendadas"
 >abstract="Revise la documentación para utilizar el Analizador de prácticas recomendadas (anteriormente Cloud Readiness Analyzer) y el informe generado. El informe del Analizador de prácticas recomendadas se utiliza para obtener una comprensión de alto nivel de la preparación general para la actualización."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Consideraciones importantes sobre el uso de Best Practices Analyzer {#imp-considerations}
 
@@ -48,7 +49,7 @@ abstract="El Analizador de prácticas recomendadas se puede descargar como archi
 El Analizador de prácticas recomendadas se puede descargar como archivo zip desde el portal de distribución de software. Puede instalar el paquete mediante [Administrador de paquetes](/help/implementing/developing/tools/package-manager.md) en la instancia de Adobe Experience Manager (AEM) de origen.
 
 >[!NOTE]
-Descargue el Analizador de prácticas recomendadas de la sección [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) portal.
+Descargue el Analizador de prácticas recomendadas de la sección [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) portal.
 
 ## Visualización del informe de Best Practices Analyzer {#viewing-report}
 

@@ -1,8 +1,9 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.4.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.4.0
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.4.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.4.0
 feature: Release Information
-source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
+exl-id: a11ebe0e-2872-4fde-acc0-5babc6b01e1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 1%
@@ -26,7 +27,7 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 * Ahora, las variables de entorno se pueden vincular a un servicio específico, ya sea de autor o publicación. Requiere AEM versión `2021.03.5104.20210328T185548Z` o superior.
 
-* El botón **Administrar Git** se muestra en la tarjeta Canalizaciones aunque no se hayan configurado canalizaciones.
+* La variable **Administrar Git** se muestra en la tarjeta Canalizaciones aunque no se hayan configurado canalizaciones.
 
 * La versión del arquetipo de proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 27.
 
@@ -42,10 +43,10 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 ### Corrección de errores {#bug-fixes-cm-april}
 
-* Al editar la página Auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no dará como resultado que el paso se bloquee en estado pendiente.
+* Al editar la página de auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no hará que el paso se bloquee en estado pendiente.
 
 * Cuando se crea una nueva canalización de producción, si el usuario no agrega ninguna anulación de auditoría de contenido, la página principal predeterminada no se auditó.
 
-* Los problemas para `CloudServiceIncompatibleWorkflowProcess` tenían la gravedad incorrecta en el archivo CSV del problema descargable.
+* Problemas para `CloudServiceIncompatibleWorkflowProcess` tenía la gravedad incorrecta en el archivo CSV del problema descargable.
 
-* La comprobación `Runmode` estaba produciendo falsos positivos en nodos que no son de carpeta.
+* La variable `Runmode` la comprobación estaba produciendo falsos positivos en nodos que no son de carpeta.

@@ -3,13 +3,13 @@ title: Uso del carril del sitio para administrar el tema del sitio
 description: Conozca las potentes funciones del carril del sitio para ayudarle a personalizar y administrar fácilmente el tema del sitio.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # Uso del carril del sitio para administrar el tema del sitio {#site-rail}
 

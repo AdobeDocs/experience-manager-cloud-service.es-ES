@@ -38,7 +38,7 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como un árbol que alberga las páginas de contenido. Los nombres de estas páginas de contenido se usan para formar las URL, y los títulos se muestran cuando se visualiza el contenido de la página.
 
-A continuación se muestra un ejemplo del sitio [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html), donde se accede a un artículo sobre parques de patinaje (`la-skateparks`):
+A continuación se muestra un ejemplo del sitio [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es), donde se accede a un artículo sobre parques de patinaje (`la-skateparks`):
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -92,7 +92,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 
-Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y el JCR.
+Al crear una página nueva, AEM [valide el nombre de página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuesta por AEM y el JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -262,17 +262,17 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. Toque o haga clic en el icono **Pegar** que está disponible.
+1. Toque o haga clic en el botón **Pegar** que está disponible.
 
    ![Pegar](/help/sites-cloud/authoring/assets/paste.png)
 
 1. El cuadro de diálogo de pegado presenta un resumen de la transacción de pegado y la capacidad de:
-   * **Nuevo nombre del sitio:** cambie el nombre de la página pegada
-   * **Pegar sin elementos secundarios:** omita las páginas secundarias de la página seleccionada al pegar (de forma predeterminada, las páginas secundarias se pegan)
+   * **Nuevo nombre del sitio:** Cambiar el nombre de la página pegada
+   * **Pegar sin elementos secundarios:** Omitir las páginas secundarias de la página seleccionada al pegar (de forma predeterminada, las páginas secundarias se pegan)
 
    ![Pegar, cuadro de diálogo](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Toque o haga clic en el botón **Pegar** para confirmar la transacción de pegado y crear las nuevas páginas.
+1. Toque o haga clic en el botón **Pegar** para confirmar la transacción de pegado y crear las páginas nuevas.
 
 >[!NOTE]
 >

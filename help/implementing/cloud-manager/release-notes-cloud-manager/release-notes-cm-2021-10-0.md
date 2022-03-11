@@ -2,10 +2,11 @@
 title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.10.0
 description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.10.0
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+exl-id: f8a87b00-52ce-42a6-a955-45cb14703b40
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '398'
+ht-degree: 3%
 
 ---
 
@@ -50,4 +51,3 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.10.0 es el 
 * Algunas solicitudes internas realizadas durante la creación del entorno no se estaban reintentando.
 
 * Si se produce un error de implementación tras la verificación del nombre de dominio, se ha corregido el mensaje de error para solicitar al cliente que se ponga en contacto con su representante de Adobe.
-

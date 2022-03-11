@@ -11,7 +11,7 @@ ht-degree: 12%
 
 # Integración con Adobe Analytics{#integrating-with-adobe-analytics}
 
-La integración de Adobe Analytics y AEM como Cloud Service le permite hacer un seguimiento de la actividad de su página web:
+La integración de Adobe Analytics y AEM as a Cloud Service permite rastrear la actividad de la página web:
 
 * Una configuración de Adobe Analytics permite AEM autenticarse con Adobe Analytics.
 * Un marco identifica los datos que se envían al grupo de informes de Adobe Analytics.
@@ -23,9 +23,9 @@ Los datos incluyen datos de páginas y usuarios, por ejemplo:
 * información de uso de vídeo
 * el número de visitas a la página desde Adobe Analytics
 
-Las páginas enumeradas a continuación pueden ayudarle a configurar la integración. Tenga en cuenta que Launch by Adobe es la herramienta de facto para instrumentar un sitio AEM con capacidades de Analytics (bibliotecas JS). Por lo tanto, la integración de AEM como Cloud Service con Launch y Adobe Analytics va de la mano.
+Las páginas enumeradas a continuación pueden ayudarle a configurar la integración. Tenga en cuenta que Launch by Adobe es la herramienta de facto para instrumentar un sitio AEM con capacidades de Analytics (bibliotecas JS). Por lo tanto, la integración AEM as a Cloud Service con Launch y Adobe Analytics va de la mano.
 
-* [Conexión a Adobe Analytics y creación de módulos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html) : tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y su creación no funciona en AEM como Cloud Service porque requiere la IU clásica. En su lugar, se debe usar el Launch by Adobe para la asignación de variables y para la implementación de bibliotecas JS en páginas.
+* [Conexión a Adobe Analytics y creación de módulos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html) : Tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y su creación no funciona en AEM as a Cloud Service porque requiere la IU clásica. En su lugar, se debe usar el Launch by Adobe para la asignación de variables y para la implementación de bibliotecas JS en páginas.
 * [Integrar Launch by Adobe](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
 * [Integración de AEM con Adobe Launch mediante Adobe I/O](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
 * [AEM integración con Launch by Adobe, Analytics y Target](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
@@ -36,18 +36,18 @@ Las páginas enumeradas a continuación pueden ayudarle a configurar la integrac
 
 >[!CAUTION]
 >
->Los clientes de Adobe Experience Manager como Cloud Service que no tengan una cuenta de Analytics existente, pueden solicitar acceso a Analytics Foundation Pack para Experience Cloud.  Este Foundation Pack proporciona un uso limitado del volumen de Analytics.
+>Los clientes de Adobe Experience Manager as a Cloud Service que no tengan una cuenta de Analytics existente, pueden solicitar acceso a Analytics Foundation Pack para Experience Cloud.  Este Foundation Pack proporciona un uso limitado del volumen de Analytics.
 
 >[!NOTE]
 >
->La configuración de IMS (cuentas técnicas) para Launch by Adobe está preconfigurada en AEM como Cloud Service. Los usuarios no tienen que crear esta configuración.
+>La configuración de IMS (cuentas técnicas) para Launch by Adobe está preconfigurada en AEM as a Cloud Service. Los usuarios no tienen que crear esta configuración.
 
 ## Información adicional {#further-information}
 
 Consulte:
 
-* [Ampliación de la ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) integración de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de Adobe Analytics. Tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y su creación no funciona en AEM como Cloud Service porque requiere la IU clásica. En su lugar, se debe usar el Launch by Adobe para la asignación de variables y para la implementación de bibliotecas JS en páginas.
-* El artículo de la base de conocimientos, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración de Adobe Analytics.
+* [Ampliación de la integración con Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html) para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de Adobe Analytics. Tenga en cuenta que los &quot;marcos de Analytics&quot; son heredados en AEM y su creación no funciona en AEM as a Cloud Service porque requiere la IU clásica. En su lugar, se debe usar el Launch by Adobe para la asignación de variables y para la implementación de bibliotecas JS en páginas.
+* El artículo de la base de conocimiento, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración de Adobe Analytics.
 
 >[!NOTE]
 >
@@ -55,11 +55,8 @@ Consulte:
 >
 >* **Day Commons HTTP Client 3.1** para configurar la API 3.x;
    >  por ejemplo, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
-   >
-   >
-* **Configuración proxy de componentes HTTP** de Apache para configurar la API 4.x;
-   >  por ejemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
-
+>* **Configuración proxy de componentes HTTP de Apache** para configurar la API 4.x;
+   >  por ejemplo, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>
 

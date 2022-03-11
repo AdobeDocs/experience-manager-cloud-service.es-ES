@@ -1,10 +1,11 @@
 ---
 title: Gestión de repositorios de contenido grandes
 description: Esta sección describe la administración de repositorios de contenido de gran tamaño
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -98,7 +99,7 @@ En resumen, lo más probable es que desee descargar el binario Linux x86-64 del 
 ### 2. Instale una versión de la herramienta de transferencia de contenido (CTT) con compatibilidad con AzCopy {#install-ctt-azcopy-support}
 
 La compatibilidad con AzCopy para Amazon S3 y Azure Blob Storage está incluida en la versión CTT 1.5.4.
-La compatibilidad con el almacén de datos de archivos está incluida en la versión 1.7.2 de CTT. Puede descargar la última versión de CTT desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) portal.
+La compatibilidad con el almacén de datos de archivos está incluida en la versión 1.7.2 de CTT. Puede descargar la última versión de CTT desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) portal.
 
 
 ### 3. Configurar un archivo azcopy.config {#configure-azcopy-config-file}

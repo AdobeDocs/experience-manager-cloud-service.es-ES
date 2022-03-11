@@ -1,6 +1,6 @@
 ---
-title: Learn about headless content and how to translate it in AEM
-description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+title: Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM
+description: Aprenda conceptos sin objetivos, cómo se asignan a AEM, y la teoría de AEM traducción.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
@@ -9,72 +9,72 @@ ht-degree: 0%
 
 ---
 
-# Learn about headless content and how to translate it in AEM {#learn-about}
+# Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM {#learn-about}
 
-Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+Aprenda conceptos sin objetivos, cómo se asignan a AEM, y la teoría de AEM traducción.
 
 ## Objetivo {#objective}
 
-This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. After reading you should:
+Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se puede traducir dicho contenido. Después de leer, debe:
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and translation.
+* Comprender los conceptos básicos de la entrega de contenido sin encabezado.
+* Familiarícese con cómo AEM admite la traducción y la eliminación de periféricos.
 
-## Full-Stack Content Delivery {#full-stack}
+## Entrega de contenido de pila completa {#full-stack}
 
-Ever since the rise of easy-to-use, large-scale content management systems (CMSes), organizations have leveraged them as a central location to manage messaging, branding, and communications. Using the CMS as a central point for administering experiences improved efficiency by eliminating the need to duplicate tasks in disparate systems.
+Desde el surgimiento de los sistemas de administración de contenido (CMS) a gran escala, fáciles de usar, las organizaciones los han aprovechado como una ubicación central para administrar mensajes, marcas y comunicaciones. El uso del CMS como punto central para la administración de experiencias mejoró la eficiencia al eliminar la necesidad de duplicar tareas en sistemas dispares.
 
-![](/help/journey-headless/developer/assets/full-stack.png)
+![El clásico CMS de pila completa](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Features of the system make up different components of the CMS stack. The full-stack solution has many advantages.
+En un CMS de pila completa, toda la funcionalidad para manipular contenido está en el CMS. Las características del sistema componen diferentes componentes de la pila de CMS. La solución de pila completa tiene muchas ventajas.
 
-* There is one system to maintain.
-* Content is managed centrally.
-* All services of the system are integrated.
-* Content authoring is seamless.
+* Hay un sistema para mantener.
+* El contenido se administra de forma centralizada.
+* Todos los servicios del sistema están integrados.
+* La creación de contenido es perfecta.
 
-So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+Por lo tanto, si se debe añadir un nuevo canal o se requiere compatibilidad con nuevos tipos de experiencias, se pueden insertar uno o más componentes nuevos en la pila y solo hay un lugar donde realizar cambios.
 
-![](/help/journey-headless/developer/assets/adding-channel.png)
+![Adición de un nuevo canal a la pila](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
+Sin embargo, la complejidad de las dependencias dentro de la pila se hace evidente rápidamente, ya que otros elementos de la pila deben ajustarse para adaptarse a los cambios.
 
-## The Head in Headless {#the-head}
+## La cabeza sin cabeza {#the-head}
 
-The head of any system is generally the output renderer of that system, typically in the form of a GUI or other graphical output.
+El jefe de cualquier sistema es generalmente el procesador de salida de ese sistema, normalmente en forma de GUI u otra salida gráfica.
 
-When we talk about a headless CMS, the CMS manages the content and continues to deliver it to consumers. ********
+Cuando hablamos de un CMS sin objetivos, el CMS administra el contenido y continúa entregándolo a los consumidores. Sin embargo, solo entregando la variable **contenido** de forma estandarizada, un CMS sin periféricos omite el procesamiento de salida final, dejando el **presentación** del contenido al servicio consumidor.
 
-![](/help/journey-headless/developer/assets/headless-cms.png)
+![CMS sin encabezado](/help/journey-headless/developer/assets/headless-cms.png)
 
-The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. They take care of providing their own heads for your content.
+Los servicios que consumen, ya sean experiencias de AR, una tienda web, experiencias móviles, aplicaciones web progresivas (PWA), etc., reciben contenido del CMS sin periféricos y proporcionan su propia renderización. Se ocupan de proporcionar sus propias cabezas para su contenido.
 
-Omitting the head simplifies the CMS by removing complexity. Doing this also shifts the responsibility of rendering the content to the services that actually need the content and are often better suited to such rendering.
+Omitir la cabeza simplifica el CMS al eliminar la complejidad. Al hacerlo, también se traslada la responsabilidad de procesar el contenido a los servicios que realmente necesitan el contenido y que a menudo son más adecuados para dicha renderización.
 
-## Translating Headless Content in AEM {#translating-in-aem}
+## Traducción de contenido sin encabezado en AEM {#translating-in-aem}
 
-In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
+Además de ofrecer herramientas sólidas para crear, administrar y entregar páginas web tradicionales de forma totalmente apilada, AEM también ofrece la capacidad de crear selecciones de contenido independientes y servirlas sin problemas.
 
-The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
+La potencia de AEM le permite entregar contenido sin periféricos, en pilas completas o en ambos modelos al mismo tiempo. Para el especialista en traducción, se puede aplicar el mismo conjunto de herramientas de traducción a ambos tipos de contenido, lo que le ofrece un enfoque unificado para traducir el contenido.
 
-Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
+Más adelante en el recorrido conocerás los detalles sobre cómo AEM traduce el contenido, pero a un alto nivel, el concepto es sencillo:
 
-1. Define a connection to a translation service by configuring the translation integration framework.
-1. Define which content should be translated using translation rules.
-1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
-1. Review and publish the translated content.
+1. Defina una conexión a un servicio de traducción configurando el marco de integración de traducción.
+1. Defina qué contenido debe traducirse mediante reglas de traducción.
+1. Cree un proyecto de traducción para recopilar el contenido, enviarlo al servicio de traducción y recibir los resultados.
+1. Revise y publique el contenido traducido.
 
-## What&#39;s Next {#what-is-next}
+## Siguientes pasos {#what-is-next}
 
-Thanks for getting started on your AEM headless translation journey! Now that you read this document you should:
+¡Gracias por empezar con tu recorrido de traducción sin AEM! Ahora que lee este documento, debe:
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and translation.
+* Comprender los conceptos básicos de la entrega de contenido sin encabezado.
+* Familiarícese con cómo AEM admite la traducción y la eliminación de periféricos.
 
-[](getting-started.md)
+Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabeza revisando el documento [Introducción a AEM traducción sin encabezado](getting-started.md) donde encontrará información general sobre cómo AEM gestiona el contenido sin encabezado y conocer sus herramientas de traducción.
 
 ## Recursos adicionales {#additional-resources}
 
-[](getting-started.md)
+Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Introducción a AEM traducción sin encabezado,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [](/help/sites-cloud/administering/msm-and-translation.md)
+* [MSM y traducción](/help/sites-cloud/administering/msm-and-translation.md) - Los detalles de AEM Multi-Site Manager y cómo funciona con sus herramientas de traducción

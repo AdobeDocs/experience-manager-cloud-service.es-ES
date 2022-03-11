@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -69,7 +69,7 @@ Para los clientes con bases de código existentes, es fundamental pasar por el e
 
 Se aplican algunas restricciones adicionales a estos paquetes de código, por ejemplo [instalar enlaces](http://jackrabbit.apache.org/filevault/installhooks.html) no son compatibles.
 
-## Configuración OSGI {#osgi-configuration}
+## Configuración OSGi {#osgi-configuration}
 
 Como se ha mencionado anteriormente, la configuración OSGI debe comprometerse con el control de código fuente en lugar de a través de la consola web. Las técnicas para hacerlo incluyen:
 
@@ -106,7 +106,7 @@ Después de cambiar a una nueva versión de la aplicación:
    * Configuración según el contexto (cualquier elemento de `/conf`) (añadir, modificar, quitar)
    * Scripts (los paquetes pueden déclencheur Instalar enlaces en varias etapas del proceso de instalación del paquete. Consulte la [Documentación de Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) acerca de los enlaces de instalación. Tenga en cuenta que AEM CS actualmente utiliza Filevault versión 3.4.0, que limita los enlaces de instalación a los usuarios administradores, usuarios del sistema y miembros del grupo de administradores).
 
-Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y en el [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+Es posible limitar la instalación de contenido mutable a la creación o publicación incrustando paquetes en una carpeta install.author o install.publish en `/apps`. La reestructuración para reflejar esta separación se llevó a cabo en el AEM 6.5 y en el [AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=es)
 
 >[!NOTE]
 >Los paquetes de contenido se implementan en todos los tipos de entorno (dev, stage, prod). No es posible limitar la implementación a un entorno específico. Esta limitación se aplica para garantizar la opción de una ejecución de prueba de ejecución automatizada. El contenido específico de un entorno requiere una instalación manual mediante [Administrador de paquetes.](/help/implementing/developing/tools/package-manager.md)

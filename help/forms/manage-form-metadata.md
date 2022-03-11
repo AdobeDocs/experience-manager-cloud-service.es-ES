@@ -11,7 +11,7 @@ ht-degree: 2%
 
 ---
 
-# Agregar, quitar o editar metadatos de un formulario adaptable {#manage-form-metadata}
+# Adición, eliminación o edición de metadatos de un formulario adaptable {#manage-form-metadata}
 
 Los metadatos facilitan la categorización y organización de los recursos, y ayudan a los usuarios que buscan un recurso específico.
 
@@ -41,7 +41,7 @@ A continuación se ofrece una extensa lista de propiedades de metadatos admitida
 <table>
  <tbody> 
   <tr> 
-   <td><strong>Nombre de la propiedad </strong></td> 
+   <td><strong>Nombre de la propiedad</strong></td> 
    <td><strong>Tipo de recurso</strong></td> 
    <td><strong>Descripción</strong><br /> </td> 
   </tr> 
@@ -65,7 +65,7 @@ A continuación se ofrece una extensa lista de propiedades de metadatos admitida
      <li>Documento, Documento (Firmado)</li> 
      <li>Formulario adaptable</li> 
      <li>Modelo de datos de formulario</li>
-     <li>Medio</li> 
+     <li>Recurso</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ A continuación se ofrece una extensa lista de propiedades de metadatos admitida
   </tr> 
   <tr> 
    <td>Referencias</td> 
-   <td><p>Formulario adaptable</p> <p>Plantilla de formulario</p> <p>Medio</p> </td> 
+   <td><p>Formulario adaptable</p> <p>Plantilla de formulario</p> <p>Recurso</p> </td> 
    <td><p>Lista de recursos (otros formularios o recursos) a los que está relacionado este formulario. Estos recursos pueden clasificarse en las dos categorías siguientes:</p> 
     <ul> 
      <li>Hace referencia a: Recursos a los que se refiere el formulario actual.</li> 
@@ -159,7 +159,7 @@ A continuación se ofrece una extensa lista de propiedades de metadatos admitida
       <li>Esquema: Un XML del esquema JSON</li>
      <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
      <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
-     <li>Ninguna</li> 
+     <li>Ninguno</li> 
     </ul> 
     <div>
       Un modelo de formulario una vez seleccionado puede actualizarse, pero no eliminarse. 
@@ -232,7 +232,6 @@ Para Adaptive Forms, se proporciona funcionalidad adicional, que permite al usua
 >
 >* Utilice una imagen cuadrada para la miniatura. Cuando se utiliza una imagen no cuadrada y se ve la miniatura en la vista de lista, la miniatura aparece recortada.
 >* Una vez que se carga o genera una nueva imagen, la miniatura se sustituye por esta imagen y no se puede restablecer a la imagen anterior.
-
 >
 
 

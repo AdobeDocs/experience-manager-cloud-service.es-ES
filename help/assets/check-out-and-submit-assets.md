@@ -1,5 +1,5 @@
 ---
-title: Insertar y extraer archivos en [!DNL Assets]
+title: Insertar y desproteger archivos [!DNL Assets]
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 feature: Asset Management
@@ -22,10 +22,10 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 
 ## Comprobar recursos {#checking-out-assets}
 
-1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desee extraer. También puede seleccionar varios recursos para desproteger.
+1. En el [!DNL Assets] interfaz de usuario de , seleccione el recurso que desee desproteger. También puede seleccionar varios recursos para desproteger.
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**. La opción **[!UICONTROL Checkout]** cambia a **[!UICONTROL Checkin]**.
-Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión como un usuario diferente. El icono ![bloqueo de cierre de compra](assets/do-not-localize/checkout_lock.png) aparece en la miniatura del recurso que ha extraído.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**. La variable **[!UICONTROL Cierre de compra]** la opción cambia a **[!UICONTROL Proteger]**.
+Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión como un usuario diferente. El icono ![icono de bloqueo de cierre de compra](assets/do-not-localize/checkout_lock.png) se muestra en la miniatura del recurso que ha extraído.
 
    ![icono de cierre de compra en la vista de tarjeta](assets/checkout-icon-card-view.png)
 
@@ -39,25 +39,25 @@ Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, i
 
 1. Edite el recurso y guarde los cambios. Por ejemplo, recorte la imagen y guárdela. También puede elegir anotar o publicar el recurso.
 
-1. Seleccione el recurso editado en la interfaz [!DNL Assets] y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para que lo editen otros usuarios.
+1. Seleccione el recurso editado en el [!DNL Assets] y haga clic en **[!UICONTROL Proteger]** en la barra de herramientas. El recurso modificado está registrado en [!DNL Assets] y está disponible para otros usuarios para su edición.
 
 ## Registro forzado {#forced-check-in}
 
 Los administradores pueden proteger los recursos que han extraído otros usuarios.
 
-1. Inicie sesión en [!DNL Assets] como administrador.
-1. En la interfaz de usuario [!DNL Assets] seleccione uno o varios recursos que otros usuarios hayan extraído.
+1. Iniciar sesión en [!DNL Assets] como administrador.
+1. En el [!DNL Assets] interfaz de usuario de seleccione uno o varios recursos que otros usuarios hayan extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Liberar bloqueo]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Bloqueo de la versión]**. El recurso se vuelve a registrar y se puede editar para otros usuarios.
 
 ## Prácticas recomendadas y limitaciones {#tips-limitations}
 
-* Es posible eliminar una *carpeta* que contenga archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
+* Es posible eliminar un *carpeta* que contiene archivos de recursos extraídos. Antes de eliminar una carpeta, asegúrese de que los usuarios no hayan extraído ningún recurso digital.
 
 >[!MORELIKETHIS]
 >
->* [Comprender la entrada y la salida en la aplicación de  [!DNL Experience Manager] escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Comprender la entrada y la salida [!DNL Experience Manager] aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Tutorial de vídeo para comprender cómo registrar y registrar [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

@@ -221,6 +221,7 @@ Otros idiomas están disponibles como Paquetes de modelo de idioma desde Distrib
 * [Alemán(de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italiano(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Español(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
 1. Select **Maestro** o la variación requerida.
@@ -235,7 +236,7 @@ Otros idiomas están disponibles como Paquetes de modelo de idioma desde Distrib
 
    * Las oraciones que se eliminen se resaltan en rojo, con huelga.
    * Haga clic en cualquier oración resaltada para mantenerla en el contenido resumido.
-   * Haga clic en cualquier oración no resaltada para eliminarla.
+   * Haga clic en cualquier oración no resaltada para que la eliminen.
 
 1. Select **Resumen** para confirmar los cambios.
 
@@ -243,7 +244,7 @@ Otros idiomas están disponibles como Paquetes de modelo de idioma desde Distrib
 
    * Las oraciones que se eliminen se resaltan en rojo, con huelga.
    * Haga clic en cualquier oración resaltada para mantenerla en el contenido resumido.
-   * Haga clic en cualquier oración no resaltada para eliminarla.
+   * Haga clic en cualquier oración no resaltada para que la eliminen.
    * Se muestran las estadísticas de resumen: **Real** y **Target**-
    * Puede **Vista previa** los cambios.
 

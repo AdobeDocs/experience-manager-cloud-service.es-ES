@@ -1,23 +1,23 @@
 ---
-title: AEM Screens como Cloud Service
+title: AEM Screens as a Cloud Service
 description: Esta página sirve como introducción a AEM Screens as a Cloud Service.
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # Introducción a AEM Screens as a Cloud Service {#introduction-screens-cloud}
 
-Con AEM Screens como Cloud Service, puede crear experiencias de señalización digital atractivas y dinámicas que se pretendan consumir en espacios públicos. Es la siguiente evolución del producto AEM Screens y representa un gran avance en la capacidad de uso y la escalabilidad.
+Con AEM Screens as a Cloud Service, puede crear experiencias de señalización digital atractivas y dinámicas que se pretendan consumir en espacios públicos. Es la siguiente evolución del producto AEM Screens y representa un gran avance en la capacidad de uso y la escalabilidad.
 
-AEM Screens as a Cloud Service es una solución de señalización digital que permite a los especialistas en marketing crear y administrar experiencias digitales dinámicas a escala. Además, implica diferentes tipos de pantallas físicas como parte de una estrategia de marketing digital integral. Amplía la oferta omnicanal del Adobe más allá de los canales web y móviles habituales, para incluir también canales de señalización digital que nos rodean. AEM Screens as a Cloud Service permite experiencias de usuario más relevantes, contextuales, productivas y previsoras mediante una comprensión profunda de la creación de contenido, el ensamblaje de contenido, la administración de eventos activada y la reproducción de contenido para todos los consumidores y visitantes de cualquier espacio público.
+AEM Screens as a Cloud Service es una solución de señalización digital que permite a los especialistas en marketing crear y administrar experiencias digitales dinámicas a escala. Además, implica diferentes tipos de pantallas físicas como parte de una estrategia de marketing digital integral. Amplía la oferta omnicanal del Adobe más allá de los canales web y móviles habituales, para incluir también canales de señalización digital que nos rodean. AEM Screens as a Cloud Service permite experiencias de usuario más relevantes, contextuales, productivas y anticipadoras mediante una comprensión profunda de la creación de contenido, el ensamblado de contenido, la administración de eventos activada y la reproducción de contenido para todos los consumidores y visitantes de cualquier espacio público.
 
-## Explicación de los componentes de Screens as a Cloud Service {#understanding-components}
+## Explicación de los componentes en Screens as a Cloud Service {#understanding-components}
 
-Las pantallas como Cloud Service tienen dos componentes principales:
+Las pantallas as a Cloud Service tienen dos componentes principales:
 
 * **[Proveedor de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**, que es el complemento de Screens que se ejecuta en AEM Cloud Service o en Adobe Managed Services (AMS). El proveedor de contenido de Screens permite al autor de contenido crear y administrar canales. Los autores de contenido pueden añadir contenido nuevo, editarlo sin tener que preocuparse por los detalles de creación de visualizaciones o registro del reproductor. El proveedor de contenido proporciona una abstracción de los detalles subyacentes del desarrollo de contenido, las visualizaciones o el registro del reproductor.
 
@@ -26,7 +26,6 @@ Las pantallas como Cloud Service tienen dos componentes principales:
 
 ## Información general de arquitectura {#architectural-overview}
 
-Como usuario Cloud Service de AEM Screens, puede agregar y administrar contenido en canales, registrar y administrar pantallas y reproductores desde las interfaces diseñadas específicamente para Screens como Cloud Service, concretamente **Proveedor de servicios de Screens** y **Proveedor de contenido de Screens**.
+Como usuario as a Cloud Service de AEM Screens, puede añadir y administrar contenido en canales, registrar y administrar pantallas y reproductores desde las interfaces diseñadas específicamente para Screens as a Cloud Service, concretamente, **Proveedor de servicios de Screens** y **Proveedor de contenido de Screens**.
 
 ![image](/help/screens-cloud/assets/architecture-screenscloud.png)
-

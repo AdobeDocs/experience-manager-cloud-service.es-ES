@@ -6,7 +6,7 @@ exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -85,7 +85,7 @@ El Modelo de datos de formulario no proporciona un método para utilizar certifi
 
 * **¿Puedo usar [!DNL AEM Forms] aplicación con [!DNL AEM Forms] ¿as a Cloud Service?**
 
-   Forms adaptable ofrece un diseño interactivo. Estos formularios cambian el aspecto, el diseño y la interactividad en función del dispositivo subyacente. Puede seguir utilizando Adaptive Forms en dispositivos móviles mientras consulta las notas de la versión mensuales sobre la disponibilidad de las funciones.
+   Los formularios adaptables ofrecen un diseño interactivo. Estos formularios cambian el aspecto, el diseño y la interactividad en función del dispositivo subyacente. Puede seguir utilizando Adaptive Forms en dispositivos móviles mientras consulta las notas de la versión mensuales sobre la disponibilidad de las funciones.
 
 * **¿Qué funciones no forman parte de la versión inicial de GA?**
 Portal de Forms, [!DNL AEM Forms] la aplicación, la integración con Adobe Analytics y la integración con Adobe Target no forman parte de la versión inicial de GA. Busque las notas de la versión mensuales para obtener información sobre las nuevas funciones.

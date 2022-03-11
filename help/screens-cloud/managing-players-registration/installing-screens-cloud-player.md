@@ -1,6 +1,6 @@
 ---
 title: Instalación y configuración de reproductores en Screens as a Cloud Service
-description: En esta página se describe cómo instalar y configurar reproductores en Screens como Cloud Service.
+description: En esta página se describe cómo instalar y configurar reproductores en Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Instalación y configuración de reproductores en Screens as a Cloud Service {#installing-players-screens-cloud}
 
-En esta sección se describe cómo instalar reproductores de AEM Screens que están registrados en instancias de AEM locales. Además, debe realizar un restablecimiento de fábrica del reproductor existente y, a continuación, registrar el nuevo reproductor en AEM Screens como Cloud Service.
+En esta sección se describe cómo instalar reproductores de AEM Screens que están registrados en instancias de AEM locales. Además, debe realizar un restablecimiento de fábrica del reproductor existente y, a continuación, registrar el nuevo reproductor con AEM Screens as a Cloud Service.
 
 ## Objetivo {#objective}
 
@@ -31,21 +31,21 @@ Siga los pasos a continuación para actualizar el reproductor:
    >[!NOTE]
    >Puede elegir probar con dispositivos de hardware dedicados o con una extensión web en su propio reproductor.
 
-1. Haga clic en la pestaña **Configuration** y haga clic en el botón **To Factory** en la opción **Reset**.
+1. Haga clic en el **Configuración** y haga clic en **A fábrica** botón debajo de **Restablecer** .
 
    ![image](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. Haga clic en **Confirm** para reiniciar el reproductor.
+1. Haga clic en **Confirmar** para restablecer el reproductor.
 
-1. De nuevo, en la pestaña **Configuration** y haga clic en el botón **Change to Cloud Mode** en la opción **Toggle Runmode**.
+1. De nuevo desde el **Configuración** y haga clic en **Cambiar al modo de nube** botón debajo de **Alternar modo de ejecución** .
 
    ![image](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Haga clic en **Confirm** que se muestra al cambiar al modo de nube, se anulará el registro del reproductor.
+1. Haga clic en **Confirmar** que se indica al cambiar al modo de nube, anulará el registro del reproductor.
 
 ## Monitorización de reproducción básica {#playback-monitoring}
 
-El reproductor informa de varias métricas de reproducción con cada `ping` cuyo valor predeterminado es de 30 segundos. En función de estas métricas, podemos detectar varios casos extremos, como experiencia atascada, pantalla en blanco y problemas de programación. Esto nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera la investigación y las medidas correctivas con usted.
+El reproductor informa de varias métricas de reproducción con cada `ping` que toma el valor predeterminado 30 segundos. En función de estas métricas, podemos detectar varios casos extremos, como experiencia atascada, pantalla en blanco y problemas de programación. Esto nos permite comprender y solucionar problemas en el dispositivo y, por lo tanto, acelera la investigación y las medidas correctivas con usted.
 
 La monitorización de reproducción básica en un reproductor AEM Screens permite:
 
@@ -57,7 +57,7 @@ La monitorización de reproducción básica en un reproductor AEM Screens permit
 
 ### Explicación de las propiedades {#understand-properties}
 
-En cada `ping` se incluyen las siguientes propiedades:
+Las siguientes propiedades se incluyen en cada `ping`:
 
 | Propiedad | Descripción |
 |---|---|
@@ -80,7 +80,7 @@ A continuación se enumeran algunas limitaciones de la monitorización de reprod
 
 * El reproductor informa de su propio estado de reproducción al servidor, por lo que requiere una conexión activa.
 
-* La propiedad `isContentRendering` que comprueba la GPU consume actualmente demasiados recursos para poder habilitarla de forma predeterminada y requiere la inclusión explícita de las preferencias del reproductor. Se recomienda no utilizarlo junto con los vídeos en producción.
+* La variable `isContentRendering` que comprueba que la GPU consume demasiados recursos como para habilitarla de forma predeterminada y requiere la inclusión explícita de las preferencias del reproductor. Se recomienda no utilizarlo junto con los vídeos en producción.
 
 * Esta función solo se admite para canales de secuencia y aún no cubre el caso de uso de canales interactivos (SPA).
 
@@ -88,4 +88,4 @@ A continuación se enumeran algunas limitaciones de la monitorización de reprod
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha instalado y configurado el reproductor en el modo de nube, debe continuar con el recorrido Screens como Cloud Service revisando el documento [Registro de reproductores en Screens como Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.
+Ahora que ha instalado y configurado el reproductor en el modo de nube, debe continuar con el recorrido as a Cloud Service de Screens revisando el documento, [Registro de reproductores en Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) del proveedor de servicios de Screens.

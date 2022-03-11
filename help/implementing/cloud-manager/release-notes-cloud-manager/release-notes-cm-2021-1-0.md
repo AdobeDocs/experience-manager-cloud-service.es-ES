@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.1.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2021.1.0
-feature: Información de la versión
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.1.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2021.1.0
+feature: Release Information
 exl-id: 62d6fea6-32cb-489a-a7ef-e7a43d186b33
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 6%
+source-wordcount: '130'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2021.1.0 es el 1
 
 ### Corrección de errores  {#bug-fixes}
 
-* En ocasiones, la instancia de Producción de activos puede mostrar el estado de Brand Portal en la página de detalles **Entornos** como *Pendiente* sin permitir que el usuario realice ninguna acción.
+* En ocasiones, la instancia de producción de recursos puede mostrar el estado de Brand Portal en la variable **Entornos** página de detalles como *Pendiente* sin permitir al usuario realizar ninguna acción.
 
 * Al activar una deshibernación desde Cloud Manager, a veces se mostraba un mensaje de error incluso cuando la deshibernación se iniciaba correctamente.
 

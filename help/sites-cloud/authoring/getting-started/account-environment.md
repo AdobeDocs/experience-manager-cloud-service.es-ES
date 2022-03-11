@@ -1,14 +1,13 @@
 ---
 title: 'Configuración del entorno de la cuenta  '
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Configuración del entorno de la cuenta   {#configuring-your-account-environment}
 

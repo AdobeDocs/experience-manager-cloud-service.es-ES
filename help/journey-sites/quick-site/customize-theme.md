@@ -1,13 +1,13 @@
 ---
 title: Personalizar el tema del sitio
 description: Descubra cómo se crea el tema del sitio, cómo personalizarlo y cómo probarlo con contenido AEM en directo.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # Personalizar el tema del sitio {#customize-the-site-theme}
 

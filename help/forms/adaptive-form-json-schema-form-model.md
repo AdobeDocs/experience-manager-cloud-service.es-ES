@@ -8,7 +8,7 @@ exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1228'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -639,7 +639,7 @@ Puede añadir las siguientes restricciones a los elementos del esquema JSON para
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>String</p> </td>
+   <td><p>Cadena</p> </td>
    <td><p>Especifica el límite superior de valores numéricos y fechas. De forma predeterminada, se incluye el valor máximo.</p> </td>
    <td>
     <ul>

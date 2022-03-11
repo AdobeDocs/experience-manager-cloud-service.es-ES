@@ -2,13 +2,13 @@
 title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
-workflow-type: ht
+exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 100%
 
 ---
-
 
 # Uso del IDE de GraphiQL {#graphiql-ide}
 
@@ -37,4 +37,3 @@ El IDE de GraphiQL es una herramienta de desarrollo que solo se necesita en ento
 1. Descargue el último **Paquete de contenido de GraphiQL v.x.x.x**
 1. En el menú **Inicio de AEM** vaya a **Herramientas** > **Implementación** > **Paquetes**.
 1. Haga clic en **Cargar paquete** y elija el paquete descargado en el paso anterior. Haga clic en **Instalar** para instalar el paquete.
-

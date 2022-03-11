@@ -91,7 +91,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 >
 >No introduzca nunca en una plantilla información que deba internacionalizarse. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Para elementos de plantilla como encabezados y pies de página que se deben localizar, aproveche las características de [localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)
+>Para elementos de plantilla como encabezados y pies de página que se deben localizar, aproveche las características de [localización de los componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es)
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
@@ -132,7 +132,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
 >
 >Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
-### Definición de las propiedades de la plantilla: autor de plantillas    {#defining-template-properties-template-author}
+### Definición de las propiedades de la plantilla: autor de plantillas   {#defining-template-properties-template-author}
 
 Una plantilla puede tener las propiedades siguientes:
 
@@ -167,7 +167,7 @@ Para definir la miniatura de plantilla:
    * Si el resultado no es satisfactorio, toque o haga clic en **Borrar** para cargar otra imagen o volver a generar la miniatura.
 1. Cuando esté satisfecho con la miniatura, toque o haga clic en **Guardar y cerrar**.
 
-### Activación y autorización de una plantilla: autor de plantillas    {#enabling-and-allowing-a-template-template-author}
+### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
@@ -209,7 +209,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
    >
-   >Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
+   >Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability) - los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -226,7 +226,7 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 1. Seleccione las **Políticas de contenido** que deben publicarse en combinación.
 1. Seleccione **Publicar** en la barra de herramientas para completar la acción.
 
-## Edición de plantillas: autores de plantillas    {#editing-templates-template-authors}
+## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
 
 Al crear o editar una plantilla, hay distintas proporciones que se pueden definir. Editar plantillas es similar a crear páginas.
 
@@ -621,7 +621,7 @@ Con la opción **Propiedades de la página inicial**, puede definir las [propied
 
 1. Confirme las definiciones con **Listo**.
 
-## Prácticas recomendadas    {#best-practices}
+## Prácticas recomendadas   {#best-practices}
 
 Al crear plantillas debe tener en cuenta:
 

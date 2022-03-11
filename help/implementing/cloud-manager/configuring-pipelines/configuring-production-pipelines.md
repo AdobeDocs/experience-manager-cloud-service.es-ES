@@ -2,13 +2,13 @@
 title: Configuración de canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de una canalización de producción {#configure-production-pipeline}
 

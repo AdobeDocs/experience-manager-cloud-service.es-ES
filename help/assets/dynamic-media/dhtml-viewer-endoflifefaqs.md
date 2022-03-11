@@ -14,4 +14,4 @@ ht-degree: 0%
 
 A partir del 31 de enero de 2014, la plataforma del visor DHTML finaliza oficialmente su vida útil.
 
-Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) para conocer los últimos visores compatibles.
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) para los últimos visores compatibles.

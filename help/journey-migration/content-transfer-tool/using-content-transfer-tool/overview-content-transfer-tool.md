@@ -1,7 +1,8 @@
 ---
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 58%
@@ -58,4 +59,3 @@ En la fase de ingesta, para aplicar el contenido delta sobre el contenido actual
 ## Siguientes pasos {#whats-next}
 
 Una vez que conozca la herramienta de transferencia de contenido y su descripción general que describe esta herramienta se puede utilizar para mover contenido existente de una instancia de AEM de origen (local o AMS) a la instancia de AEM Cloud Service de destino, debe revisar [Requisitos previos para la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en).
-

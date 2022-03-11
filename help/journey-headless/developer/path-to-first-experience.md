@@ -5,7 +5,7 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
 source-wordcount: '2014'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -136,7 +136,7 @@ Queremos que aproveche este conocimiento fundacional para comprender completamen
 Independientemente del estilo de aprendizaje que tenga, Adobe quiere que tenga éxito a medida que comience con su proyecto sin objetivos AEM.
 
 * Si prefiere continuar **obtenga información sobre conceptos sin encabezado y AEM tecnologías sin encabezado**, debe continuar con su recorrido AEM sin encabezado revisando el documento [Modelo del contenido como modelos de contenido AEM](model-your-content.md) donde aprende a modelar la estructura de contenido en AEM.
-* Si prefiere **aprenda haciendo**, puede ir al [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) donde saltará directamente al desarrollo sin encabezado de AEM implementando un proyecto simple para exponer AEM contenido sin encabezado.
+* Si prefiere **aprenda haciendo**, puede ir al [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=es) donde saltará directamente al desarrollo sin encabezado de AEM implementando un proyecto simple para exponer AEM contenido sin encabezado.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -144,7 +144,7 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo remo
 
 * [recorrido de traducción AEM sin encabezado](/help/journey-headless/translation/overview.md) - Este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin objetivos, AEM sirve contenido sin objetivos y cómo puede traducirlo.
 * [Desarrollo sin objetivos para AEM Sites as a Cloud Service](/help/headless/introduction.md) - Una introducción rápida para orientar al desarrollador AEM sin encabezado con las funciones necesarias
-* [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.
+* [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.
 * [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación mediante Adobe ID.
 * [AEM Guías WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este proyecto de GitHub incluye aplicaciones de ejemplo que destacan AEM API de GraphQL.
 * [Introducción a la arquitectura de Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Una visión general completa de AEM arquitectura

@@ -32,7 +32,7 @@ Este artículo enumera los eventos XFA admitidos, las propiedades y las validaci
 
 ## Elementos XFA compatibles y su asignación en Forms adaptable {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
-### Fields {#fields}
+### Campos {#fields}
 
 Cuando se crea un formulario adaptable con un archivo XDP, se puede arrastrar y soltar un campo XFA en el formulario adaptable. En la tabla siguiente se muestra cómo se asignan los campos XFA a los campos Formulario adaptable.
 

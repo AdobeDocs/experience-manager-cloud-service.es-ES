@@ -119,8 +119,8 @@ Además de los parámetros siguientes, consulte las descripciones en la [Paráme
 | Nombre | Tipo | Requerido | Valor predeterminado | Descripción |
 |---|---|---|---|---|
 | `artifact` | `String` | No | El valor de la variable `artifactId` propiedad del proyecto Maven | Una cadena del formulario `groupId:artifactId:version[:packaging]` |
-| `artifactId` | `String` | No | Ninguna | El ID del artefacto que se va a instalar |
-| `groupId` | `String` | No | Ninguna | La variable `groupId` del artefacto que se va a instalar |
+| `artifactId` | `String` | No | Ninguno | El ID del artefacto que se va a instalar |
+| `groupId` | `String` | No | Ninguno | La variable `groupId` del artefacto que se va a instalar |
 | `install` | `boolean` | No | `true` | Determina si se desempaqueta automáticamente el paquete cuando se carga |
 | `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | No | El valor de la variable `localRepository` variable del sistema | El repositorio local de Maven que no se puede configurar usando la configuración del complemento como propiedad del sistema siempre se utiliza |
 | `packageFile` | `java.io.File` | No | El artefacto principal definido para el proyecto Maven | El nombre del archivo del paquete que se va a instalar |
@@ -128,8 +128,8 @@ Además de los parámetros siguientes, consulte las descripciones en la [Paráme
 | `pomRemoteRepositories` | `java.util.List` | Sí | El valor de la variable `remoteArtifactRepositories` propiedad definida para el proyecto Maven | Este valor no se puede configurar con la configuración del complemento y debe especificarse en el proyecto. |
 | `project` | `org.apache.maven.project.MavenProject` | Sí | El proyecto para el que está configurado el complemento | El proyecto Maven que está implícito porque el proyecto contiene la configuración del complemento |
 | `repositoryId` (POM), `repoID` (línea de comandos) | `String` | No | `temp` | ID del repositorio desde el que se recupera el artefacto |
-| `repositoryUrl` (POM), `repoURL` (línea de comandos) | `String` | No | Ninguna | La dirección URL del repositorio desde el que se recupera el artefacto |
-| version | String | No | Ninguna | Versión del artefacto que se va a instalar |
+| `repositoryUrl` (POM), `repoURL` (línea de comandos) | `String` | No | Ninguno | La dirección URL del repositorio desde el que se recupera el artefacto |
+| version | Cadena | No | Ninguno | Versión del artefacto que se va a instalar |
 
 ### ls {#ls}
 
@@ -165,22 +165,22 @@ Además de los parámetros siguientes, consulte la descripción de la variable `
 
 | Nombre | Tipo | Requerido | Valor predeterminado | Descripción |
 |---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | No | Ninguna | La configuración del archivo que se va a utilizar |
+| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | No | Ninguno | La configuración del archivo que se va a utilizar |
 | `builtContentDirectory` | `java.io.File` | Sí | El valor del directorio de salida de la compilación de Maven | El directorio que contiene el contenido que se va a incluir en el paquete |
-| `dependencies` | `java.util.List` | No | Ninguna |  |
-| `embeddedTarget` | `java.lang.String` | No | Ninguna |  |
-| `embeddeds` | `java.util.List` | No | Ninguna |  |
+| `dependencies` | `java.util.List` | No | Ninguno |  |
+| `embeddedTarget` | `java.lang.String` | No | Ninguno |  |
+| `embeddeds` | `java.util.List` | No | Ninguno |  |
 | `failOnMissingEmbed` | `boolean` | Sí | `false` | Un valor de `true` hace que la compilación falle cuando no se encuentra un artefacto incrustado en las dependencias del proyecto. Un valor de `false` hace que la compilación ignore estos errores. |
-| `filterSource` | `java.io.File` | No | Ninguna | Este parámetro define un archivo que especifica el origen del filtro de espacio de trabajo. Los filtros especificados en la configuración e insertados mediante emebed o subpackages se combinan con el contenido del archivo. |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | No | Ninguna | Este parámetro contiene elementos de filtro que definen el contenido del paquete. Cuando se ejecuta, los filtros se incluyen en la variable `filter.xml` archivo. Consulte la [Uso de filtros](#using-filters) a continuación. |
+| `filterSource` | `java.io.File` | No | Ninguno | Este parámetro define un archivo que especifica el origen del filtro de espacio de trabajo. Los filtros especificados en la configuración e insertados mediante emebed o subpackages se combinan con el contenido del archivo. |
+| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | No | Ninguno | Este parámetro contiene elementos de filtro que definen el contenido del paquete. Cuando se ejecuta, los filtros se incluyen en la variable `filter.xml` archivo. Consulte la [Uso de filtros](#using-filters) a continuación. |
 | `finalName` | `java.lang.String` | Sí | La variable `finalName` definida en el proyecto Maven (fase de compilación) | El nombre del archivo ZIP del paquete generado, sin la variable `.zip` extensión de archivo |
 | `group` | `java.lang.String` | Sí | La variable `groupID` definida en el proyecto Maven | La variable `groupId` del paquete de contenido generado que forma parte de la ruta de instalación de destino para el paquete de contenido |
 | `outputDirectory` | `java.io.File` | Sí | El directorio de compilación definido en el proyecto Maven | El directorio local donde se guarda el paquete de contenido |
-| `prefix` | `java.lang.String` | No | Ninguna |  |
-| `project` | `org.apache.maven.project.MavenProject` | Sí | Ninguna | El proyecto Maven |
-| `properties` | `java.util.Map` | No | Ninguna | Estos parámetros definen propiedades adicionales que puede establecer en la variable `properties.xml` archivo. Estas propiedades no pueden sobrescribir las siguientes propiedades predefinidas: `group` (use `group` parámetro a establecer), `name` (use `name` parámetro a establecer), `version` (use `version` parámetro a establecer), `description` (definido a partir de la descripción del proyecto), `groupId` (`groupId` del descriptor del proyecto Maven), `artifactId` (`artifactId` del descriptor del proyecto Maven), `dependencies` (use `dependencies` parámetro a establecer), `createdBy` (el valor de la variable `user.name` propiedad del sistema), `created` (la hora del sistema actual), `requiresRoot` (use `requiresRoot` parámetro a establecer), `packagePath` (generado automáticamente a partir del nombre del grupo y del paquete) |
+| `prefix` | `java.lang.String` | No | Ninguno |  |
+| `project` | `org.apache.maven.project.MavenProject` | Sí | Ninguno | El proyecto Maven |
+| `properties` | `java.util.Map` | No | Ninguno | Estos parámetros definen propiedades adicionales que puede establecer en la variable `properties.xml` archivo. Estas propiedades no pueden sobrescribir las siguientes propiedades predefinidas: `group` (use `group` parámetro a establecer), `name` (use `name` parámetro a establecer), `version` (use `version` parámetro a establecer), `description` (definido a partir de la descripción del proyecto), `groupId` (`groupId` del descriptor del proyecto Maven), `artifactId` (`artifactId` del descriptor del proyecto Maven), `dependencies` (use `dependencies` parámetro a establecer), `createdBy` (el valor de la variable `user.name` propiedad del sistema), `created` (la hora del sistema actual), `requiresRoot` (use `requiresRoot` parámetro a establecer), `packagePath` (generado automáticamente a partir del nombre del grupo y del paquete) |
 | `requiresRoot` | `boolean` | Sí | false | Define si el paquete requiere root. Esto se convertirá en el `requiresRoot` propiedad de la variable `properties.xml` archivo. |
-| `subPackages` | `java.util.List` | No | Ninguna |  |
+| `subPackages` | `java.util.List` | No | Ninguno |  |
 | `version` | `java.lang.String` | Sí | La versión definida en el proyecto Maven | La versión del paquete de contenido |
 | `workDirectory` | `java.io.File` | Sí | El directorio definido en el proyecto Maven (fase de compilación) | El directorio que contiene el contenido que se va a incluir en el paquete |
 
@@ -221,7 +221,7 @@ Cuando el filtro contiene no `mode` elemento, el valor predeterminado de `replac
 | Nombre | Tipo | Requerido | Valor predeterminado | Descripción |
 |---|---|---|---|---|
 | `detail` | `boolean` | No | `false` | Determina si se mostrarán todas las propiedades configurables para cada objetivo |
-| `goal` | `String` | No | Ninguna | Estos parámetros definen el nombre del objetivo para el que mostrar la ayuda. Si no se especifica ningún valor, se muestra ayuda para todos los objetivos. |
+| `goal` | `String` | No | Ninguno | Estos parámetros definen el nombre del objetivo para el que mostrar la ayuda. Si no se especifica ningún valor, se muestra ayuda para todos los objetivos. |
 | `indentSize` | `int` | No | `2` | El número de espacios que se deben utilizar para la sangría de cada nivel (debe ser positivo si se define) |
 | `lineLength` | `int` | No | `80` | La longitud máxima de una línea de visualización (debe ser positiva si se define) |
 

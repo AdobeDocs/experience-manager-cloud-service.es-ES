@@ -183,7 +183,7 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 * Número
 * Booleano
 * Fecha y hora
-* Enumeración
+* Lista desglosada
 * Etiquetas
 * Referencia de contenido
 * Referencia al fragmento
@@ -248,7 +248,7 @@ Una vez creado el fragmento, puede abrirlo en el Editor de fragmentos de conteni
 
 Después de seleccionar el modelo adecuado, se abre un fragmento de contenido para editarlo en el Editor de fragmentos de contenido:
 
-![Editor de fragmento de contenido](assets/cfm-editor.png)
+![Editor de fragmentos de contenido](assets/cfm-editor.png)
 
 >[!NOTE]
 >
@@ -276,5 +276,5 @@ Ahora que ha aprendido a modelar su estructura y a crear contenido en función d
    * [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) - crear y crear fragmentos de contenido; esta página le llevará a otras secciones detalladas
 * [Esquemas de AEM GraphQL](access-your-content.md) - cómo GraphQL realiza los modelos
 * [La estructura de fragmento de contenido de ejemplo](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de contenido y GraphQL
+* [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de contenido y GraphQL
    * [Conceptos básicos de modelos de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Aprenda a definir y utilizar fragmentos de contenido en Adobe Experience Manager (AEM) para utilizarlos con GraphQL.

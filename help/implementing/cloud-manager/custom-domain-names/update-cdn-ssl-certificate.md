@@ -1,8 +1,8 @@
 ---
 title: 'Actualización del certificado SSL del nombre de dominio personalizado '
 description: Actualización del certificado SSL del nombre de dominio personalizado
-translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+exl-id: 652f7568-dc6a-4ac6-b06f-4ea1540498fa
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 La acción de actualización se puede realizar desde dos lugares diferentes en la interfaz de usuario:
 
-1. Vaya a la página **Configuración de dominio** desde la pantalla Entornos.
-1. De forma alternativa, navegue a la página Detalles del Entorno específica desde la pantalla **Entornos** y vaya a la tabla Nombres de dominio.
+1. Vaya a la **Configuración de dominio** de la pantalla Entornos .
+1. También puede navegar a la página Detalles del entorno específica desde **Entornos** y vaya a la tabla Nombres de dominio .
    >[!NOTE]
-   >Identifique la fila en la que se muestra el nombre de dominio personalizado que desea vista o actualización.
-1. Seleccione **...** desde el extremo derecho de la fila
-1. Seleccione la opción **Vista y actualización**.
+   >Identifique la fila en la que aparece el nombre de dominio personalizado que desea ver o actualizar.
+1. Seleccione el **...** desde el extremo derecho de la fila
+1. Seleccione el **Ver y actualizar** .
 1. Realice los cambios necesarios en el certificado SSL y confirme el envío.

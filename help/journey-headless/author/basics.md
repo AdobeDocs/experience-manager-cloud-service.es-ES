@@ -188,7 +188,7 @@ Confirme las actualizaciones con: **Guardar** o **Guardar y cerrar**.
 
 OK, esta sección puede parecer un poco extraña, pero una vez que abra el Editor de fragmentos de contenido y empiece a explorar, verá varias opciones que (probablemente) no se aplican a su recorrido sin encabezado como Autor de contenido. Así que esto es solo un rápido análisis de lo que deberían ser capaces de ignorar en un contexto sin objetivos:
 
-* **Modelos de fragmento de contenido**
+* **Modelos de fragmentos de contenido**
 
    Verá el nombre del modelo de fragmento de contenido en la parte superior del editor, directamente debajo del nombre del fragmento. También se trata de un vínculo que le lleva al editor de modelos.
 Los modelos de fragmento de contenido son vitales para los fragmentos de contenido, ya que definen la estructura que utiliza. Sin embargo, crearlos y editarlos es (normalmente) responsabilidad de otra persona, el arquitecto de contenido.

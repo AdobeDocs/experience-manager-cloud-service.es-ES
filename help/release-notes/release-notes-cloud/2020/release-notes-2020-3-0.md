@@ -1,14 +1,13 @@
 ---
 title: Notas de la versión 2020.3.0
 description: Notas de la versión 2020.3.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # Notas de la versión de AEM as a Cloud Service 2020.3.0 {#release-notes}
 
@@ -27,7 +26,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * El registro del paso de compilación ya está disponible mientras este se ejecuta.
 * Algunos mensajes de la página de detalles de ejecución de la canalización se han editado para mayor claridad.
 
-### Corrección de errores {#bug-fixes}
+### Corrección de errores  {#bug-fixes}
 
 * Los archivos de registro para la prueba funcional personalizada y de producto no se podían descargar a través de la interfaz de usuario.
 * Cuando hay un error al crear el repositorio Git para un programa de Cloud Service, en algunos casos los usuarios con la función de administrador de implementación no podían recuperarse de este error.
@@ -36,4 +35,3 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * La creación simultánea de entornos de desarrollo en el mismo programa de Cloud Service encontraba una condición en la que solo uno se podía crear correctamente.
 * Las notificaciones de Experience Cloud para programas de Cloud Service no se recibían de forma coherente.
 * En determinados proyectos, los objetos *ResourceResolver siempre se deben cerrar* produciría una Null Pointer Exception; sin embargo, esto no afectó a la ejecución de la canalización.
-

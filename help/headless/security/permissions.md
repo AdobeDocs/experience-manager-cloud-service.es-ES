@@ -1,14 +1,14 @@
 ---
-title: 'Consideraciones de permisos para contenido sin encabezado '
+title: Consideraciones de permisos para contenido sin encabezado
 description: Obtenga información acerca de diferentes consideraciones de permisos y ACL para una implementación sin encabezado con Adobe Experience Manager. Comprenda los diferentes perfiles y los niveles de permisos potenciales necesarios para los entornos de creación y publicación.
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
-workflow-type: ht
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
 
 ---
-
 
 # Consideraciones de permisos para contenido sin encabezado
 
@@ -98,4 +98,3 @@ El [SDK sin encabezado de AEM](https://github.com/adobe/aem-headless-client-js#c
 ### Acceso a la API de GraphQL
 
 Las solicitudes HTTP que proporcionan las [credenciales de autenticación adecuadas](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) a los puntos de conexión de la API de GraphQL del servicio de publicación de AEM incluyen contenido que las credenciales están autorizadas a leer y contenido accesible de forma anónima. Otros consumidores de la API de GraphQL no pueden leer el contenido de las carpetas protegidas con CUG.
-

@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,6 @@ A través de una configuración sencilla, un autor de contenido ahora puede habi
 >* Conocimiento del sitio y estructura de contenido
 >* Comprensión de las estrategias de almacenamiento en caché
 >* Asistencia de su equipo de desarrollo
-
 >
 >Antes de utilizar esta función, se recomienda discutirla con su equipo de desarrollo para definir la mejor manera de aprovecharla para su proyecto.
 
@@ -125,7 +124,7 @@ con [los requisitos previos](#prerequisites) Cuando se cumple, es muy fácil par
       ![Definir rutas sin conexión del PWA](../assets/pwa-offline.png)
 
 
-1. Toque o haga clic **Guardar y cerrar**.
+1. Haga clic o pulse en **Guardar y cerrar**.
 
 El sitio está configurado y puede [instálelo como una aplicación local.](#using-pwa-enabled-site)
 

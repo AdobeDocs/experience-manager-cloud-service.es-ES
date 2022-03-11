@@ -19,7 +19,7 @@ Puede publicar una página (o cancelar su publicación) inmediatamente o en un m
 
 ## Terminología {#terminology}
 
-Puede encontrar diferentes términos relacionados con la publicación al trabajar con Adobe Experience Manager (AEM) como Cloud Service.
+Puede encontrar diferentes términos relacionados con la publicación al trabajar con Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Publicar o cancelar la publicación**
    * Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
@@ -49,7 +49,7 @@ En función de su ubicación, puede publicar:
 
 >[!NOTE]
 >
-> Para obtener más información, consulte **Tiempo de activación** y **Tiempo de inactividad** en la pestaña [Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> Para obtener más información, consulte **Tiempo de activación** y **Tiempo de inactividad** en el [Ficha Básico de Propiedades de página](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### Publicar desde el editor {#publishing-from-the-editor}
 
@@ -82,7 +82,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
 >[!NOTE]
 >
->Las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se pueden publicar. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+>Páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor no se puede publicar. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Publicar desde la consola {#publishing-from-the-console}
 
@@ -113,7 +113,7 @@ Para publicar una página con Publicación rápida:
 
 #### Administrar publicación     {#manage-publication}
 
-**Administrar** publicación ofrece más opciones que Publicación  **rápida**, lo que permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, además de ofrecer la opción de publicar en un momento posterior.
+**Administrar publicación** ofrece más opciones que **Publicación rápida**, lo que permite incluir páginas secundarias, personalizar las referencias e iniciar cualquier flujo de trabajo aplicable, así como la opción de publicar en un momento posterior.
 
 Para publicar o cancelar la publicación de una página con Administrar publicación:
 
@@ -148,9 +148,9 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    Puede utilizar el botón **Añadir contenido** para añadir páginas adicionales a la lista de páginas que se publicarán, en caso de que olvidara seleccionar alguna antes de iniciar el asistente de Administrar publicación.
 
-   Al seleccionar el botón **Añadir contenido** se inicia el [navegador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir la selección de contenido.
+   Al seleccionar la variable **Añadir contenido** inicia el [navegador de rutas](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) para permitir la selección de contenido.
 
-   Seleccione las páginas necesarias y haga clic en **Seleccionar** para añadir el contenido al asistente o en **Cancelar** para cancelar la selección y volver al asistente.
+   Seleccione las páginas necesarias y haga clic en **Select** para añadir el contenido al asistente o **Cancelar** para cancelar la selección y volver al asistente.
 
    **Eliminar la selección**
 
@@ -178,14 +178,14 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    >
    >Consulte [Publicación y cancelación de la publicación de un árbol](#publishing-and-unpublishing-a-tree)
 
-   Al hacer clic en **Incluir elementos secundarios** se abre un cuadro de diálogo que le permite:
+   Hacer clic **Incluir elementos secundarios** abre un cuadro de diálogo que le permite:
 
    * **Incluir elementos secundarios**
    * **Incluir solo los elementos secundarios inmediatos**
    * **Incluir solo las páginas modificadas**
    * **Incluir solo las páginas ya publicadas**
 
-   Active las opciones necesarias y confirme con **OK** para agregar las páginas secundarias a la lista de páginas que se publicarán o cancelarán la publicación en función de las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
+   Active las opciones necesarias y confirme con **OK** para agregar las páginas secundarias a la lista de páginas que se van a publicar o dejar de publicar, según las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
 
    ![Administrar publicación, incluidos los elementos secundarios](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
@@ -224,7 +224,7 @@ Si desea cancelar la publicación de una página que está editando, seleccione 
 
 >[!NOTE]
 >
->No se puede cancelar la publicación de las páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
+>Páginas a las que se accede mediante [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no se puede cancelar la publicación en el editor. Las opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
 
 ### Cancelación de la publicación desde la consola     {#unpublishing-from-the-console}
 
@@ -257,18 +257,18 @@ Para hacerlo, puede utilizar la opción [Administrar publicación](#manage-publi
 
    ![Administrar páginas de selección de publicación](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. En el cuadro de diálogo **Incluir elementos secundarios**:
+1. En el **Incluir elementos secundarios** diálogo:
 
-   * seleccione **Incluir elementos secundarios**
-   * deseleccione **Incluir solo los elementos secundarios inmediatos**
-   * deseleccione **Incluir solo las páginas ya publicadas**
-   * configurar **Incluir solo páginas modificadas** según sea necesario
+   * select **Incluir elementos secundarios**
+   * anular selección **Incluir solo los elementos secundarios inmediatos**
+   * anular selección **Incluir solo las páginas ya publicadas**
+   * configure **Incluir solo páginas modificadas** según se requiera
 
-   Estas opciones están seleccionadas de forma predeterminada, por lo que debe recordar configurarlas. Confirme la selección con **OK** para añadir el contenido a la publicación/cancelación de la publicación.
+   Estas opciones están seleccionadas de forma predeterminada, por lo que debe recordar configurarlas. Confirme la selección con **OK** para añadir el contenido a la publicación/cancelación de publicación.
 
    ![Inclusión de elementos secundarios para la publicación de árboles](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. En el asistente **Administrar publicación** puede personalizar aún más la selección añadiendo páginas adicionales o eliminando las seleccionadas.
+1. En el **Administrar publicación** asistente puede personalizar aún más la selección añadiendo páginas adicionales o eliminando las seleccionadas.
 
    Recuerde que también puede revisar las referencias que se publican mediante la opción **Referencias publicadas**.
 

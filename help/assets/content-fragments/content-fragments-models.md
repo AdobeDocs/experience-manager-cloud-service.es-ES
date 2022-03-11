@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
 source-wordcount: '2838'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ Para usar modelos de fragmento de contenido:
 
    >[!CAUTION]
    >
-   >Si la variable [no se ha habilitado el uso de modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-configuration-browser.md), el **Crear** no estará disponible.
+   >Si [no se ha habilitado el uso de modelos de fragmentos de contenido](/help/assets/content-fragments/content-fragments-configuration-browser.md), la opción **Crear** no estará disponible.
 
 1. Especifique el **Título del modelo**. También puede agregar **Etiquetas**, **Descripción** y seleccione **Habilitar modelo** a [activar el modelo](#enabling-disabling-a-content-fragment-model) si es necesario.
 
@@ -107,7 +107,7 @@ Hay disponible una selección de tipos de datos para definir el modelo:
    * Agregar una casilla de verificación booleana
 * **Fecha y hora**
    * Agregar una fecha y/o hora
-* **Enumeración**
+* **Lista desglosada**
    * Agregar un conjunto de casillas de verificación, botones de opción o campos desplegables
 * **Etiquetas**
    * Permite a los autores de fragmentos acceder y seleccionar áreas de etiquetas
@@ -190,7 +190,7 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
 ## Validación {#validation}
 
-Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de validación para cuando el contenido se introduce en el fragmento resultante:
+Varios tipos de datos ahora incluyen la posibilidad de definir los requisitos de validación cuando el contenido se introduce en el fragmento resultante:
 
 * **Texto de línea única**
    * Compare con un regex predefinido.

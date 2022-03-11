@@ -1,12 +1,12 @@
 ---
-title: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.8.0
-description: Notas de la versión para Cloud Manager en AEM as a Cloud Service Versión 2020.8.0
-feature: Información de la versión
+title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2020.8.0
+description: Notas de la versión para Cloud Manager en AEM versión as a Cloud Service 2020.8.0
+feature: Release Information
 exl-id: 70674e16-f9ba-4777-98fe-34161e90a481
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 1%
 
 ---
 
@@ -20,19 +20,19 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.8.0 es el 6
 
 ## Novedades {#whats-new-cloud-manager}
 
-* La auditoría de contenido es una función habilitada en las canalizaciones de producción de Cloud Manager Sites. La configuración de Canalización de producción para programas con Sitios ahora incluye una tercera pestaña llamada **Auditoría de contenido**. Cada vez que se ejecute un flujo de producción, se incluirá un nuevo paso de Auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
+* La auditoría de contenido es una función habilitada en las canalizaciones de producción de Cloud Manager Sites. La configuración de Canalización de producción para programas con Sitios ahora incluye una tercera pestaña denominada **Auditoría de contenido**. Cada vez que se ejecute un flujo de producción, se incluirá un nuevo paso de Auditoría de contenido en la canalización después de realizar pruebas funcionales personalizadas que evaluarán el sitio en relación con una serie de dimensiones, entre las que se incluyen rendimiento, SEO (Optimización de motores de búsqueda), accesibilidad, prácticas recomendadas y PWA (Aplicación web progresiva).
 
 
    >[!NOTE]
    >Desde entonces, se ha cambiado el nombre de Auditoría de contenido a Auditoría de experiencias.
 
-   Consulte [Prueba de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
+   Consulte [Pruebas de auditoría de experiencias](/help/implementing/cloud-manager/experience-audit-testing.md) para obtener más información.
 
 * Los entornos recién creados en los programas de Assets ahora se configurarán automáticamente con Smart Content Services.
 
-* Los entornos hibernados se pueden anular en hibernación desde la página **Información general** de Cloud Manager.
+* Los entornos en hibernación se pueden eliminar de la hibernación desde el **Información general** página.
 
-* Capacidad para realizar comprobaciones de experiencias en páginas, con tecnología de Google Lighthouse. Como parte de la canalización de Cloud Manager, se pueden comprobar y validar hasta 25 páginas con KPI de experiencia, y las puntuaciones se muestran en la interfaz de usuario de Cloud Manager.
+* Capacidad para realizar comprobaciones de experiencias en páginas, con tecnología Google Lighthouse. Como parte de la canalización de Cloud Manager, se pueden comprobar y validar hasta 25 páginas con KPI de experiencia, y las puntuaciones se muestran en la interfaz de usuario de Cloud Manager.
 
 ### Corrección de errores {#bug-fixes-cm}
 
@@ -42,7 +42,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.8.0 es el 6
 
 * En algunos casos, no se registró con éxito la finalización de las ejecuciones de canalización, lo que impidió nuevas ejecuciones de la canalización.
 
-* Las ejecuciones de canalización ocasionalmente se *atascaran* debido a problemas de comunicación interna.
+* Las ejecuciones de canalización ocasionalmente se obtienen *atascado* debido a problemas de comunicación interna.
 
 * Al aprovisionar una nueva organización, a algunos usuarios con funciones administrativas distintas de los administradores del sistema se les daba acceso erróneamente a Cloud Manager.
 
@@ -52,7 +52,7 @@ La fecha de versión de Cloud Manager en AEM as a Cloud Service 2020.8.0 es el 6
 
 * La interfaz de usuario permitía erróneamente que se intentaran realizar operaciones en un entorno mientras se eliminaba.
 
-* Había una discordancia de color en la página **Información general** de Cloud Manager.
+* Hubo una discordancia de color en el informe de Cloud Manager **Información general** página.
 
 ### Problemas conocidos {#known-issues-cm}
 

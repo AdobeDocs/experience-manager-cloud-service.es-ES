@@ -1,21 +1,21 @@
 ---
-title: Configuraciones de Dispatcher en Screens como Cloud Service
-description: Esta página describe las configuraciones de Dispatcher en Screens como un Cloud Service.
-source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
+title: Configuraciones de Dispatcher en Screens as a Cloud Service
+description: Esta página describe las configuraciones de Dispatcher en Screens as a Cloud Service.
+exl-id: cc04b480-9310-4975-a7c2-20682c567fa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
+# Configuraciones de Dispatcher en Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-# Configuraciones de Dispatcher en Screens como Cloud Service {#dispatcher-configurations-screens-cloud}
+En esta sección se describen las configuraciones de Dispatcher para Screens as a Cloud Service.
 
-En esta sección se describen las configuraciones de Dispatcher para Screens como Cloud Service.
+## Añadir filtros y reglas de caché en Dispatcher para la implementación as a Cloud Service de Screens {#deployment}
 
-## Añadir filtros y reglas de caché en Dispatcher para Screens como implementación de Cloud Service {#deployment}
-
-Habilite los siguientes filtros y reglas de caché en distribuidores para las instancias de publicación en Screens como Cloud Service.
+Habilite los siguientes filtros y reglas de caché en los distribuidores para las instancias de publicación en Screens as a Cloud Service.
 
 ### Filtros de AEM Screens {#filters}
 
@@ -32,12 +32,12 @@ Habilite los siguientes filtros y reglas de caché en distribuidores para las in
 
 ### Reglas de caché {#cache-rules}
 
-* Agregue `/statfileslevel "10"` a la sección `/cache` en `publish_farm.any`/.
+* Agregar `/statfileslevel "10"` a `/cache` en `publish_farm.any`/.
 
    >[!NOTE]
    >Esta regla de caché admite el almacenamiento en caché de hasta 10 niveles desde la raíz de documento de la caché y se invalida cuando se publica contenido en lugar de invalidar todo. Puede cambiar este nivel en función de la profundidad con la que esté configurada la estructura de contenido.
 
-* Agregue lo siguiente a la sección `/invalidate` en `publish_farm.any`.
+* Agregue lo siguiente a `/invalidate` en `publish_farm.any`.
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ Habilite los siguientes filtros y reglas de caché en distribuidores para las in
    }
    ```
 
-* Agregue las siguientes reglas a la sección `/rules` en `/cache` en publish_farm.any o en un archivo incluido desde `publish_farm.any`.
+* Agregue las siguientes reglas a `/rules` en `/cache` en publish_farm.any o en un archivo incluido desde `publish_farm.any`.
 
    ```
    ## Allow Dispatcher Cache for Screens channels

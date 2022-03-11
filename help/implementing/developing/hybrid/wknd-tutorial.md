@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Proyecto WKND SPA {#wknd-spa-project}
+# Proyecto SPA WKND {#wknd-spa-project}
 
 Sumérjase en SPA desarrollo con este tutorial de varias partes que le guiará a través de la configuración del proyecto, la asignación de componentes, las herramientas de desarrollo front-end y el enrutamiento de aplicaciones para implementar su propia SPA.
 
@@ -20,4 +20,4 @@ Al igual que el Tutorial WKND de AEM, este homólogo centrado en el SPA ofrece u
 * [Cree su primer SPA de Angular en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [Cree su primer SPA React en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, es posible que también desee revisar el documento [Developing SPA for AEM](developing.md).
+Sin embargo, antes de comenzar su propio proyecto de SPA para AEM, es posible que también desee revisar la [Desarrollo de SPA para AEM](developing.md) documento.

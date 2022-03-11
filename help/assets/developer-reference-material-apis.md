@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: f5282d149e80328742ff9008441960f62cea6290
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | × | No se admite. No usar. |
 | - | No disponible |
 
-| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
+| Caso de uso | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) API de Java | [servicio de asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlets | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **binario original** |  |  |  |  |  |  |
 | Crear original | ✓ | × | - | × | × | - |
@@ -158,9 +158,9 @@ Para obtener más información sobre el algoritmo de carga, consulte la [documen
 
 Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de POST HTTP al URI completo proporcionado por los datos de inicio. El tipo de contenido del cuerpo de la solicitud debe ser `application/x-www-form-urlencoded` datos de formulario, que contienen los campos siguientes.
 
-| Fields | Tipo | Requerido o no | Descripción |
+| Campos | Tipo | Requerido o no | Descripción |
 |---|---|---|---|
-| `fileName` | String | Requerido | El nombre del recurso, tal como lo proporcionaron los datos de inicio. |
+| `fileName` | Cadena | Requerido | El nombre del recurso, tal como lo proporcionaron los datos de inicio. |
 | `mimeType` | Cadena | Requerido | El tipo de contenido HTTP del binario, tal como proporcionaron los datos de inicio. |
 | `uploadToken` | Cadena | Requerido | Token de carga para el binario, tal como proporcionaban los datos de inicio. |
 | `createVersion` | Booleano | Opcional | If `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] crea una nueva versión del recurso. |

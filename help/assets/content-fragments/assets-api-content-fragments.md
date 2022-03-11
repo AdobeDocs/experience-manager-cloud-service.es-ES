@@ -22,7 +22,6 @@ Obtenga información sobre la compatibilidad con fragmentos de contenido en la A
 >
 >* API de REST de recursos
 >* incluida la compatibilidad con fragmentos de contenido
-
 >
 >La implementación actual de la API HTTP de Assets se basa en la variable [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) estilo arquitectónico.
 
@@ -148,7 +147,6 @@ Si la API de REST de Assets se utiliza en un entorno sin requisitos de autentica
 >
 >* [Se explica el CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 

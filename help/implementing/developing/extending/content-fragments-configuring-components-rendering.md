@@ -1,67 +1,63 @@
 ---
 title: Fragmentos de contenido Configurar componentes para procesamiento
 description: Fragmentos de contenido Configurar componentes para procesamiento
-translation-type: tm+mt
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 6%
 
 ---
 
-
 # Fragmentos de contenido Configurar componentes para procesamiento{#content-fragments-configuring-components-for-rendering}
 
-Existen varios [servicios avanzados](#definition-of-advanced-services-that-need-configuration) relacionados con la representación de fragmentos de contenido. Para utilizar estos servicios, los tipos de recursos de dichos componentes deben darse a conocer al marco de fragmentos de contenido.
+Hay varias [servicios avanzados](#definition-of-advanced-services-that-need-configuration) relacionada con la renderización de fragmentos de contenido. Para utilizar estos servicios, los tipos de recurso de dichos componentes deben darse a conocer al marco de fragmentos de contenido.
 
-Esto se lleva a cabo configurando la [Configuración del componente de fragmento de contenido del servicio OSGi](#osgi-service-content-fragment-component-configuration).
+Esto se hace configurando la variable [Servicio OSGi: Configuración de componentes de fragmento de contenido](#osgi-service-content-fragment-component-configuration).
 
 Esta información es necesaria cuando:
 
 * Debe implementar su propio componente basado en fragmentos de contenido,
-* Y necesita hacer uso de los servicios avanzados.
+* Y debe utilizar los servicios avanzados.
 
 Se recomienda utilizar los componentes principales.
 
 >[!CAUTION]
 >
->* **Si no necesita los servicios  [avanzados](#definition-of-advanced-services-that-need-configuration)** descritos a continuación, puede omitir esta configuración.
-   >
-   >
-* **Al ampliar o utilizar los componentes listos para usar**, no se recomienda cambiar la configuración de OSGi.
-   >
-   >
-* **Puede escribir un componente desde cero que utilice únicamente la API de fragmentos de contenido, sin servicios** avanzados. Sin embargo, en este caso, tendrá que desarrollar el componente para que gestione el procesamiento adecuado.
+>* **Si no necesita la variable [servicios avanzados](#definition-of-advanced-services-that-need-configuration)** a continuación, puede ignorar esta configuración.
 >
+>* **Al ampliar o utilizar los componentes integrados**, no se recomienda cambiar la configuración de OSGi.
 >
-Por lo tanto, se recomienda utilizar los componentes principales.
+>* **Puede escribir un componente desde cero que utilice únicamente la API de fragmentos de contenido sin servicios avanzados**. Sin embargo, en tal caso, tendrá que desarrollar su componente para que gestione el procesamiento adecuado.
+>
+>Por lo tanto, se recomienda utilizar los componentes principales.
 
-## Definición de los servicios avanzados que necesitan configuración {#definition-of-advanced-services-that-need-configuration}
+## Definición de servicios avanzados que necesitan configuración {#definition-of-advanced-services-that-need-configuration}
 
 Los servicios que requieren el registro de un componente son:
 
-* Determinar las dependencias correctamente durante la publicación (es decir, asegurarse de que los fragmentos y modelos se pueden publicar automáticamente con una página si han cambiado desde la última publicación).
+* Determinar las dependencias correctamente durante la publicación (es decir, asegurarse de que los fragmentos y modelos se puedan publicar automáticamente con una página si han cambiado desde la última publicación).
 * Compatibilidad con fragmentos de contenido en la búsqueda de texto completo.
-* Administración/administración de *contenido intermedio.*
-* Administración/administración de *recursos de medios mixtos.*
-* Despegue del despachante para fragmentos a los que se hace referencia (si se vuelve a publicar una página que contiene un fragmento).
-* Mediante el procesamiento basado en párrafos.
+* La gestión/gestión de *contenido intermedio.*
+* La gestión/gestión de *recursos de medios mixtos.*
+* Vaciado de Dispatcher para fragmentos referenciados (si se vuelve a publicar una página que contiene un fragmento).
+* Uso de la renderización basada en párrafos.
 
-Si necesita una o más de estas funciones, entonces (normalmente) es más fácil usar los servicios avanzados predeterminados, en lugar de desarrollarlos desde cero.
+Si necesita una o más de estas funciones, entonces (normalmente) es más fácil utilizar los servicios avanzados predeterminados, en lugar de desarrollarlos desde cero.
 
-## Servicio OSGi - Configuración del componente de fragmento de contenido {#osgi-service-content-fragment-component-configuration}
+## Servicio OSGi: Configuración de componentes de fragmento de contenido {#osgi-service-content-fragment-component-configuration}
 
-La configuración debe enlazarse al servicio OSGi **Configuración del componente de fragmento de contenido**:
+La configuración debe estar enlazada al servicio OSGi **Configuración del componente de fragmento de contenido**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Consulte [Configuración de OSGi](/help/implementing/deploying/overview.md#osgi-configuration) para obtener más detalles.
+>Consulte [Configuración de OSGi](/help/implementing/deploying/overview.md#osgi-configuration) para obtener más información.
 
 Por ejemplo:
 
-![Configuración del componente de fragmento de contenido de configuración OSGi](assets/cf-component-configuration-osgi.png)
+![Configuración de OSGi Configuración de componentes de fragmento de contenido](assets/cf-component-configuration-osgi.png)
 
 La configuración OSGi es:
 
@@ -80,7 +76,7 @@ La configuración OSGi es:
    <td>El tipo de recurso que se va a registrar; p. ej. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
-   <td><strong>Propiedad Reference</strong></td>
+   <td><strong>Propiedad de referencia</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
    <td>El nombre de la propiedad que contiene la referencia al fragmento; p. ej. <code>fragmentPath</code> o <code>fileReference</code></td>
   </tr>
@@ -97,7 +93,7 @@ La configuración OSGi es:
  </tbody>
 </table>
 
-Para algunas funciones, el componente tendrá que cumplir las convenciones predefinidas. En la tabla siguiente se detallan las propiedades que el componente debe definir para cada párrafo (p. ej. `jcr:paragraph` para cada instancia de componente) para que los servicios puedan detectarlos y procesarlos correctamente.
+Para algunas funciones, el componente deberá adherirse a convenciones predefinidas. La siguiente tabla detalla las propiedades que su componente debe definir para cada párrafo (p. ej. `jcr:paragraph` para cada instancia de componente) para que los servicios puedan detectarlos y procesarlos correctamente.
 
 <table>
  <thead>
@@ -109,10 +105,10 @@ Para algunas funciones, el componente tendrá que cumplir las convenciones prede
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Una propiedad de cadena que define cómo se van a generar los párrafos si se encuentra en <em>modo de procesamiento de un solo elemento</em>.</p> <p>Valores:</p>
+   <td><p>Una propiedad de cadena que define cómo se deben generar los párrafos si se encuentra en <em>modo de procesamiento de un solo elemento</em>.</p> <p>Valores:</p>
     <ul>
-     <li><code>all</code> :: para procesar todos los párrafos</li>
-     <li><code>range</code> :: para representar el rango de párrafos proporcionado por <code>paragraphRange</code></li>
+     <li><code>all</code> : para procesar todos los párrafos</li>
+     <li><code>range</code> : para representar el rango de párrafos proporcionado por <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -122,11 +118,11 @@ Para algunas funciones, el componente tendrá que cumplir las convenciones prede
      <li><code>1</code> o <code>1-3</code> o <code>1-3;6;7-8</code> o <code>*-3;5-*</code>
      <ul>
        <li><code>-</code> indicador de intervalo</li>
-       <li><code>;</code> Separador de lista</li>
+       <li><code>;</code> separador de lista</li>
        <li><code>*</code> comodín</li>
      </ul>
      </li>
-     <li>solo se evalúa si <code>paragraphScope</code> está establecido en <code>range</code></li>
+     <li>solo se evalúa si <code>paragraphScope</code> está configurado como <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -138,7 +134,7 @@ Para algunas funciones, el componente tendrá que cumplir las convenciones prede
 
 ## Ejemplo {#example}
 
-Como ejemplo, consulte lo siguiente (en una instancia de AEM lista para usar):
+Como ejemplo, consulte lo siguiente (en una instancia de AEM predeterminada):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config
@@ -152,4 +148,3 @@ dam.cfm.component.fileReferenceProp="fragmentPath"
 dam.cfm.component.elementsProp="elementName"
 dam.cfm.component.variationProp="variationName"
 ```
-

@@ -155,7 +155,7 @@ When you select a form model, configure Document of Record using options availab
 
 En la tabla siguiente se describen los componentes de formulario adaptable y los componentes XFA correspondientes y si aparecen en un documento de registro.
 
-### Fields {#fields}
+### Campos {#fields}
 
 <table>
  <tbody>

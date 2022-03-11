@@ -1,35 +1,35 @@
 ---
 title: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas de la versión 2021.4.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
+# Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-# Notas de la versión actuales para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-En la siguiente sección se describen las notas de la versión generales de la versión actual (más reciente) de [!DNL Experience Manager] as a Cloud Service.
+En la siguiente sección se describen las notas de la versión generales de la versión actual (la más reciente) de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >Desde aquí puede navegar hasta las notas de versiones de versiones anteriores; por ejemplo, para los de 2020, 2021 y así sucesivamente.
 
 >[!NOTE]
 >
->Consulte [Actualizaciones de documentación recientes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html) para obtener más información sobre las actualizaciones de documentación no relacionadas directamente con una versión.
+>Consulte [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es) para obtener más información sobre las actualizaciones de la documentación no relacionadas directamente con una versión.
 
 ## Fecha de la versión {#release-date}
 
-La fecha de versión de [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 es el 6 de mayo de 2021.
+La fecha de lanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 es el 6 de mayo de 2021.
 La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 ## Base as a Cloud Service AEM{#aem-as-a-cloud-service-foundation}
 
 ### Novedades {#what-is-new-foundation}
 
-* [Flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) : un nuevo modelo y paso de flujo de trabajo proporciona un mayor rendimiento al publicar jerarquías profundas de contenido.
+* [Flujo de trabajo Publicar árbol de contenido](/help/operations/replication.md#publish-content-tree-workflow) : un nuevo modelo y paso de flujo de trabajo proporciona un mayor rendimiento al publicar jerarquías profundas de contenido.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 * GraphQL: las consultas persistentes ahora admiten extremos definidos por el usuario que son específicos de las configuraciones de AEM Sites (CQ-4315928)
 
-## [!DNL Adobe Experience Manager Assets] como  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] como [!DNL Cloud Service] {#assets}
 
 ### Novedades de [!DNL Assets] {#what-is-new-assets}
 
@@ -65,9 +65,9 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 * Al editar un esquema de metadatos, un nuevo campo selector de ruta raíz permite a los administradores realizar la selección de forma rápida y sencilla, lo que reduce el tiempo de configuración.
 
-* Al editar un esquema de metadatos, se agrega un tipo de datos que proporciona un área de texto de forma libre en el editor de metadatos. Los usuarios pueden utilizar este área de texto para introducir texto de forma libre como metadatos de un recurso. Consulte [editor de esquema de metadatos](/help/assets/metadata-schemas.md).
+* Al editar un esquema de metadatos, se agrega un tipo de datos que proporciona un área de texto de forma libre en el editor de metadatos. Los usuarios pueden utilizar este área de texto para introducir texto de forma libre como metadatos de un recurso. Consulte [editor de esquemas de metadatos](/help/assets/metadata-schemas.md).
 
-* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un archivo CSV. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden aprovechar un formato diferente actualizando el encabezado de la columna. Por ejemplo, agregue `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como encabezado de columna en el archivo CSV en lugar de la palabra `Date`.
+* Los metadatos de muchos recursos se pueden importar de forma masiva mediante un archivo CSV y se pueden exportar a un archivo CSV. El formato de fecha predeterminado es ahora `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`. Los usuarios pueden aprovechar un formato diferente actualizando el encabezado de la columna. Por ejemplo, agregue `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` como el encabezado de columna del archivo CSV en lugar de la palabra `Date`.
 
 * Al examinar los recursos en la vista Columna, un indicador visual muestra el estado aprobado o rechazado de cada recurso.
 
@@ -89,7 +89,7 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 * La opción de publicación rápida no se muestra cuando se selecciona un recurso en los resultados de búsqueda después de buscarlo. (CQ-4317748)
 
-## [!DNL Adobe Experience Manager Forms] como  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
@@ -97,11 +97,11 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
    Con la tecnología de algoritmos avanzados de aprendizaje automático, el proceso de identificación gubernamental de Adobe Sign ofrece a las empresas de todo el mundo la capacidad de garantizar una autenticación de alta calidad de la identidad de sus destinatarios. Ahora, puede utilizar el método de autenticación de identidad de ID de gobierno en Adobe Sign habilitado para Adaptive Forms.
 
-   El ID de gobierno es un método de autenticación de identidad premium que ordena al destinatario [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, ID nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) y luego evalúa ese documento para asegurarse de que sea auténtico.
+   El ID de gobierno es un método de autenticación de identidad premium que indica al destinatario que [cargar la imagen de un documento de identidad emitido por el gobierno (licencia de conducir, identificación nacional, pasaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html), y luego evalúa ese documento para asegurarse de que es auténtico.
 
 * **Compatibilidad para utilizar la experiencia de firma en formularios para envíos asincrónicos de formularios adaptables**
 
-   Ahora puede utilizar la experiencia de firma en formularios para los envíos asincrónicos de formularios adaptables. También puede incrustar un formulario adaptable en una página [!DNL Experience Manager Sites] y utilizar la experiencia de firma en el formulario para los envíos de formularios adaptables.
+   Ahora puede utilizar la experiencia de firma en formularios para los envíos asincrónicos de formularios adaptables. También puede incrustar un formulario adaptable en un [!DNL Experience Manager Sites] y utilice la experiencia de firma en formularios para los envíos de formularios adaptables.
 
 * **Compatibilidad con el uso de una variable para especificar un archivo adjunto mientras se rellena previamente un formulario adaptable para un paso Asignar tarea**
 
@@ -144,7 +144,7 @@ La siguiente versión (2021.5.0) se publicará el 27 de mayo de 2021.
 
 ## Cloud Manager {#cloud-manager}
 
-Esta sección describe las notas de la versión de Cloud Manager en AEM as a Cloud Service 2021.4.0.
+Esta sección describe las notas de la versión para Cloud Manager en AEM as a Cloud Service 2021.4.0.
 
 ### Fecha de la versión {#release-date-cm-april}
 
@@ -159,7 +159,7 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 * Ahora, las variables de entorno se pueden vincular a un servicio específico, ya sea de autor o publicación. Requiere AEM versión `2021.03.5104.20210328T185548Z` o superior.
 
-* El botón **Administrar Git** se muestra en la tarjeta Canalizaciones aunque no se hayan configurado canalizaciones.
+* La variable **Administrar Git** se muestra en la tarjeta Canalizaciones aunque no se hayan configurado canalizaciones.
 
 * La versión del arquetipo de proyecto AEM utilizado por Cloud Manager se ha actualizado a la versión 27.
 
@@ -175,13 +175,13 @@ La próxima versión está planificada para el 06 de mayo de 2021.
 
 ### Corrección de errores {#bug-fixes-cm-april}
 
-* Al editar la página Auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no dará como resultado que el paso se bloquee en estado pendiente.
+* Al editar la página de auditoría de experiencias de una canalización, una ruta de entrada que comience con una barra diagonal `( / )` ya no hará que el paso se bloquee en estado pendiente.
 
 * Cuando se crea una nueva canalización de producción, si el usuario no agrega ninguna anulación de auditoría de contenido, la página principal predeterminada no se auditó.
 
-* Los problemas para `CloudServiceIncompatibleWorkflowProcess` tenían la gravedad incorrecta en el archivo CSV del problema descargable.
+* Problemas para `CloudServiceIncompatibleWorkflowProcess` tenía la gravedad incorrecta en el archivo CSV del problema descargable.
 
-* La comprobación `Runmode` estaba produciendo falsos positivos en nodos que no son de carpeta.
+* La variable `Runmode` la comprobación estaba produciendo falsos positivos en nodos que no son de carpeta.
 
 ## Analizador de prácticas recomendadas {#best-practices-analyzer}
 
@@ -193,4 +193,3 @@ La fecha de versión de Best Practices Analyzer v2.1.12 es el 12 de abril de 202
 
 * Se vieron filas duplicadas en el BPA registrado. Esto se ha solucionado.
 * La interfaz de usuario de BPA de AEM versión 6.4.2 generaba un error de JS que desactivaba el botón Generar informe . Esto se ha solucionado
-

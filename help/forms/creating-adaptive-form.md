@@ -8,11 +8,11 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Crear un formulario adaptable {#creating-an-adaptive-form}
+# Creación de un formulario adaptable {#creating-an-adaptive-form}
 
 Forms adaptable le permite crear formularios atractivos, interactivos, dinámicos y adaptables. [!DNL AEM Forms] proporciona una interfaz de usuario intuitiva y componentes integrados para crear y trabajar con Forms adaptable. Puede elegir crear un formulario adaptable basado en un modelo o esquema de formulario o sin un modelo de formulario. Es importante elegir cuidadosamente el modelo de formulario que no solo se adapte a sus necesidades, sino que amplíe sus inversiones y recursos de infraestructura existentes. Puede elegir entre las siguientes opciones para crear un formulario adaptable:
 
@@ -36,7 +36,7 @@ Para crear un formulario adaptable, es necesario lo siguiente:
 * Un tema de formulario adaptable. Un tema contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar un tema, el estilo especificado se refleja en los componentes correspondientes. Puede [crear un tema nuevo](themes.md), [importar un tema existente](import-export-forms-templates.md#uploading-a-theme), o descargar e importar algunas [temas de ejemplo](https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2779f80e-16ba-4cd1-a96f-8e2b53f3be25).
 * Agregue los usuarios a [!DNL forms-users] para proporcionarles permisos para crear un formulario adaptable. Para obtener una lista detallada de los formularios y grupos de usuarios específicos, consulte [Grupos y permisos](forms-groups-privileges-tasks.md).
 
-## Crear un formulario adaptable {#strong-create-an-adaptive-form-strong}
+## Creación de un formulario adaptable {#strong-create-an-adaptive-form-strong}
 
 Siga estos pasos para crear un formulario adaptable.
 
@@ -78,7 +78,7 @@ Para utilizar un modelo de datos de formulario para crear un formulario adaptabl
 
 1. En la ficha Modelo de formulario de la pantalla Agregar propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en el **[!UICONTROL Seleccionar de]** lista desplegable.
 
-   ![Crear un formulario adaptable](assets/create-af-1-1.png)
+   ![Creación de un formulario adaptable](assets/create-af-1-1.png)
 
 1. Toque para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.Seleccione un modelo de datos.
 

@@ -1,14 +1,15 @@
 ---
 title: ¿Cómo configurar los filtros de búsqueda para la bandeja de entrada?
 description: Obtenga información sobre cómo configurar filtros de búsqueda para elementos de la Bandeja de entrada.
-source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
+exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Configurar filtros de búsqueda para la bandeja de entrada {#configure-search-filters-inbox}
+# Configuración de filtros de búsqueda para la bandeja de entrada {#configure-search-filters-inbox}
 
 Puede configurar filtros de búsqueda para elementos de la Bandeja de entrada. Base los criterios de búsqueda en una columna Bandeja de entrada específica para filtrar los resultados.
 
@@ -26,23 +27,23 @@ Los siguientes son los tipos de predicados disponibles para la Bandeja de entrad
 
 >[!NOTE]
 >
->Asegúrese de que es miembro del grupo `workflow-administrators` para configurar los filtros de búsqueda de la Bandeja de entrada.
+>Asegúrese de que es miembro de la función `workflow-administrators` para configurar los filtros de búsqueda de la Bandeja de entrada.
 
 ## Crear o abrir una configuración personalizada {#creating-opening-customized-configuration}
 
-1. Vaya a **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
+1. Vaya a **[!UICONTROL Herramientas]**, **[!UICONTROL General]**, **[!UICONTROL Buscar en Forms]**.
 
-1. Seleccione la configuración **[!UICONTROL Inbox Search Rail]** y pulse **[!UICONTROL Editar]**.
-1. Incorpore los cambios de configuración de predicado utilizando **[!UICONTROL Editar búsqueda Forms]**.
-1. Seleccione **[!UICONTROL Listo]** para guardar la configuración.
+1. Seleccione el **[!UICONTROL Carril de búsqueda de la bandeja de entrada]** configuración y toque **[!UICONTROL Editar]**.
+1. Incorporar los cambios de configuración de predicado mediante **[!UICONTROL Editar Forms de búsqueda]**.
+1. Select **[!UICONTROL Listo]** para guardar la configuración.
 
 ## Eliminar una configuración personalizada {#delete-customized-configuration}
 
 Para eliminar una configuración personalizada:
 
-1. Vaya a **[!UICONTROL Tools]**, **[!UICONTROL General]**, **[!UICONTROL Search Forms]**.
+1. Vaya a **[!UICONTROL Herramientas]**, **[!UICONTROL General]**, **[!UICONTROL Buscar en Forms]**.
 
-1. Seleccione la configuración **[!UICONTROL Inbox Search Rail]** y pulse **[!UICONTROL Delete]**.
+1. Seleccione el **[!UICONTROL Carril de búsqueda de la bandeja de entrada]** configuración y toque **[!UICONTROL Eliminar]**.
 
 ## Configurar predicado de rango {#range-predicate}
 
@@ -50,11 +51,11 @@ Puede filtrar los elementos de la bandeja de entrada para buscar un intervalo de
 
 Para configurar un predicado de rango:
 
-1. Abra el formulario [de configuración](#creating-opening-customized-configuration).
-1. Pulse la pestaña **[!UICONTROL Select Predicate]** y arrastre **[!UICONTROL Range Predicate]** al formulario.
-1. En la pestaña **[!UICONTROL Settings]**, seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, en el campo **[!UICONTROL Column Name]**.
-1. Especifique la etiqueta para el filtro en el campo **[!UICONTROL Filter Label]**. Active la casilla **[!UICONTROL Enable Decimal Values]** para aceptar valores decimales para números mientras define el intervalo.
-1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarla.
+1. Abra el [formulario de configuración](#creating-opening-customized-configuration).
+1. Toque . **[!UICONTROL Seleccionar predicado]** y arrastre **[!UICONTROL Predicado de rango]** al formulario.
+1. En el **[!UICONTROL Configuración]** , seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, desde **[!UICONTROL Nombre de columna]** campo .
+1. Especifique la etiqueta para el filtro en la variable **[!UICONTROL Etiqueta de filtro]** campo . Seleccione el **[!UICONTROL Habilitar valores decimales]** casilla de verificación para aceptar valores decimales de números al definir el intervalo.
+1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarlo.
 
 Los cambios de configuración se reflejan al abrir la página Filtros . La etiqueta de filtro especificada en el paso 4 se muestra como la etiqueta con una opción para definir los valores máximo y mínimo. Al pulsar la tecla Intro, [!DNL Experience Manager] aplica los criterios de búsqueda en el nombre de columna especificado en el paso 3 y devuelve los elementos Bandeja de entrada.
 
@@ -68,13 +69,13 @@ Filtre los elementos de la bandeja de entrada para buscar una cadena de texto de
 
 Para configurar un predicado de texto:
 
-1. Abra el formulario [de configuración](#creating-opening-customized-configuration).
-1. Pulse la pestaña **[!UICONTROL Select Predicate]** y arrastre **[!UICONTROL Text Predicate]** al formulario.
-1. En la pestaña **[!UICONTROL Settings]**, seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, en el campo **[!UICONTROL Column Name]**.
-1. Especifique el texto que aparece en el cuadro de texto Buscar como texto de marcador de posición en el campo **[!UICONTROL Marcador de posición de cuadro de texto de búsqueda]**.
-1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarla.
+1. Abra el [formulario de configuración](#creating-opening-customized-configuration).
+1. Toque . **[!UICONTROL Seleccionar predicado]** y arrastre **[!UICONTROL Predicado de texto]** al formulario.
+1. En el **[!UICONTROL Configuración]** , seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, desde **[!UICONTROL Nombre de columna]** campo .
+1. Especifique el texto que aparece en el cuadro de texto Buscar como texto de marcador de posición en la variable **[!UICONTROL Marcador de posición de cuadro de texto de búsqueda]** campo .
+1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarlo.
 
-Los cambios de configuración se reflejan al abrir la página Filtros . Al pulsar la tecla Intro, [!DNL Experience Manager] aplica el texto de búsqueda especificado en el paso 4 del nombre de columna especificado en el paso 3 y devuelve los elementos Bandeja de entrada.
+Los cambios de configuración se reflejan al abrir la página Filtros . Al pulsar la tecla Intro, [!DNL Experience Manager] aplica el texto de búsqueda especificado en el paso 4 al nombre de columna especificado en el paso 3 y devuelve los elementos Bandeja de entrada.
 
 ## Configurar predicado de intervalo de fechas {#date-range-predicate}
 
@@ -82,12 +83,12 @@ Puede filtrar los elementos de la bandeja de entrada para buscar un intervalo de
 
 Para configurar un predicado de intervalo de fechas:
 
-1. Abra el formulario [de configuración](#creating-opening-customized-configuration).
-1. Pulse la pestaña **[!UICONTROL Seleccionar predicado]** y arrastre **[!UICONTROL Predicado de intervalo de fechas]** al formulario.
-1. En la pestaña **[!UICONTROL Settings]**, seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, en el campo **[!UICONTROL Column Name]**.
-1. Especifique la etiqueta para el filtro de intervalo de fechas en el campo **[!UICONTROL Etiqueta de filtro]**.
+1. Abra el [formulario de configuración](#creating-opening-customized-configuration).
+1. Toque . **[!UICONTROL Seleccionar predicado]** y arrastre **[!UICONTROL Predicado de intervalo de fechas]** al formulario.
+1. En el **[!UICONTROL Configuración]** , seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, desde **[!UICONTROL Nombre de columna]** campo .
+1. Especifique la etiqueta para el filtro de intervalo de fechas en la variable **[!UICONTROL Etiqueta de filtro]** campo .
 1. Especifique las etiquetas de fecha de inicio y fecha de finalización para el filtro.
-1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarla.
+1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarlo.
 
 Los cambios de configuración se reflejan al abrir la página Filtros . La etiqueta de filtro especificada en el paso 4 se muestra como la etiqueta para el filtro de intervalo de fechas junto con las etiquetas de fecha de inicio y fecha de finalización especificadas en el paso 5. [!DNL Experience Manager] aplica los criterios de búsqueda en el nombre de columna especificado en el paso 3 y devuelve los elementos Bandeja de entrada.
 
@@ -97,14 +98,14 @@ Puede filtrar los elementos de la bandeja de entrada para buscar una opción per
 
 Para configurar un predicado de opciones de columna personalizadas:
 
-1. Abra el formulario [de configuración](#creating-opening-customized-configuration).
-1. Pulse la pestaña **[!UICONTROL Seleccionar predicado]** y arrastre **[!UICONTROL Predicado de opciones de columna personalizadas]** al formulario.
-1. En la pestaña **[!UICONTROL Settings]**, seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, en el campo **[!UICONTROL Column Name]**.
-1. Especifique la etiqueta para el filtro de opciones de columna personalizada en el campo **[!UICONTROL Etiqueta de filtro]**.
-1. Active la casilla **[!UICONTROL Selección única]** para activar la selección de una sola opción al aplicar el filtro en una columna Bandeja de entrada.
-1. En la sección **[!UICONTROL Agregar opciones]**:
-   1. Seleccione **[!UICONTROL Manual]** para definir las opciones de búsqueda de filtro manualmente. Toque **[!UICONTROL Agregar opciones de filtro]** para definir la primera opción. Especifique la etiqueta de la opción de columna y el texto del valor de opción que desea buscar. Por ejemplo, si desea buscar **Mujer** como valor en una columna Bandeja de entrada, puede especificar **F** como etiqueta para la opción de columna y agregar **Mujer** como texto de valor de opción. Del mismo modo, puede agregar más opciones de filtro.
-   1. Seleccione **[!UICONTROL JSON Path]** para definir las opciones mediante una ruta de archivo JSON. El siguiente es un archivo JSON de muestra para definir las opciones de filtro:
+1. Abra el [formulario de configuración](#creating-opening-customized-configuration).
+1. Toque . **[!UICONTROL Seleccionar predicado]** y arrastre **[!UICONTROL Predicado de opciones de columna personalizadas]** al formulario.
+1. En el **[!UICONTROL Configuración]** , seleccione el nombre de la columna Bandeja de entrada en la que desea basar la búsqueda, desde **[!UICONTROL Nombre de columna]** campo .
+1. Especifique la etiqueta para el filtro de opciones de columna personalizada en la variable **[!UICONTROL Etiqueta de filtro]** campo .
+1. Seleccione el **[!UICONTROL Selección única]** para activar la selección de una sola opción al aplicar el filtro en una columna Bandeja de entrada.
+1. En el **[!UICONTROL Agregar opciones]** sección:
+   1. Select **[!UICONTROL Manual]** para definir manualmente las opciones de búsqueda de filtro. Toque **[!UICONTROL Agregar opciones de filtro]** para definir la primera opción. Especifique la etiqueta de la opción de columna y el texto del valor de opción que desea buscar. Por ejemplo, si desea buscar **Mujer** como valor de una columna Bandeja de entrada, puede especificar **F** como etiqueta para la opción de columna y agregue **Mujer** como texto de valor de opción. Del mismo modo, puede agregar más opciones de filtro.
+   1. Select **[!UICONTROL Ruta de JSON]** para definir opciones utilizando una ruta de archivo JSON. El siguiente es un archivo JSON de muestra para definir las opciones de filtro:
 
       ```JSON
           {
@@ -121,7 +122,7 @@ Para configurar un predicado de opciones de columna personalizadas:
         }
       ```
 
-   1. Seleccione **[!UICONTROL CRX Options Path]** para definir opciones usando las rutas del repositorio CRX. Toque **[!UICONTROL Agregar rutas de opción]** para agregar varias rutas. A continuación se muestra un ejemplo para definir las opciones de filtro `Male` y `Female`:
+   1. Select **[!UICONTROL Ruta de opciones de CRX]** para definir opciones utilizando las rutas del repositorio CRX. Toque **[!UICONTROL Agregar rutas de opciones]** para agregar varias rutas. A continuación se muestra un ejemplo para definir `Male` y `Female` opciones de filtro:
 
       ```JSON
          <gender jcr:primaryType="sling:OrderedFolder">
@@ -136,20 +137,18 @@ Para configurar un predicado de opciones de columna personalizadas:
                     </gender>
       ```
 
-1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarla.
+1. Especifique una descripción opcional para la configuración y pulse **[!UICONTROL Listo]** para guardarlo.
 
 Los cambios de configuración se reflejan al abrir la página Filtros . La etiqueta de filtro especificada en el paso 4 se muestra como la etiqueta del predicado de opciones de columna personalizadas. [!DNL Experience Manager] aplica los criterios de búsqueda definidos en el paso 6 en el nombre de columna especificado en el paso 3 y devuelve los elementos Bandeja de entrada.
 
-El siguiente vídeo ilustra los pasos para filtrar una columna en función de los valores de opción `true` y `false`.
+El siguiente vídeo ilustra los pasos para filtrar una columna en función de la variable `true` y `false` valores de opción.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335679)
 
 ## Ver filtros de búsqueda basados en predicados {#view-search-filters-for-predicates}
 
-Puede ver filtros de búsqueda basados en predicados. Seleccione **[!UICONTROL Filter]** en la página Bandeja de entrada. Los filtros se muestran en el panel izquierdo. A continuación, puede especificar los criterios de búsqueda para filtrar los elementos de la Bandeja de entrada.
+Puede ver filtros de búsqueda basados en predicados. Select **[!UICONTROL Filtro]** en la página Bandeja de entrada. Los filtros se muestran en el panel izquierdo. A continuación, puede especificar los criterios de búsqueda para filtrar los elementos de la Bandeja de entrada.
 
 ![Página Filtros](assets/apply-filters.png)
 
-Para obtener más información sobre la administración de configuraciones de predicado, consulte [Configuración de la búsqueda en Forms](search-forms.md).
-
-
+Para obtener más información sobre la administración de configuraciones de predicado, consulte [Configuración de Search Forms](search-forms.md).

@@ -3,13 +3,13 @@ title: Personalización de plantillas y temas del sitio
 description: Descubra cómo se pueden utilizar AEM plantillas de sitio para predefinir la estructura del sitio y el contenido inicial, y cómo se utilizan los temas para definir el estilo del sitio y permitirle crear rápidamente sitios.
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
-
 
 # Personalización de plantillas y temas del sitio {#customizing-site-templates-themes}
 

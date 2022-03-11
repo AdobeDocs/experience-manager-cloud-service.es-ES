@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Puede crear y aplicar temas para diseñar un formulario adaptable<!-- or an interactive communication-->. Un tema contiene detalles de estilo para los componentes y paneles. Los estilos incluyen propiedades como colores de fondo, colores de estado, transparencia, alineación y tamaño. Al aplicar un tema, el estilo especificado se refleja en los componentes correspondientes. El tema se administra de forma independiente sin hacer referencia a un formulario adaptable<!-- or interactive communication -->.
 
-Puede descargar e instalar [!DNL AEM Forms] paquete de contenido de referencia de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) portal para importar temas de referencia y plantillas para su entorno.
+Puede descargar e instalar [!DNL AEM Forms] paquete de contenido de referencia de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) portal para importar temas de referencia y plantillas para su entorno.
 
 ## Creación, descarga o carga de un tema {#creating-downloading-or-uploading-a-theme}
 

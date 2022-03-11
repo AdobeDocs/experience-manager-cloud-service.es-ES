@@ -1,30 +1,29 @@
 ---
 title: 'Uso de versiones de página  '
 description: Cree, compare y restaure versiones de una página
-translation-type: tm+mt
-source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
+exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 66%
 
 ---
 
-
 # Uso de versiones de página   {#working-with-page-versions}
 
 Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo. Con la función de versiones, se pueden realizar las siguientes operaciones:
 
 * Crear una versión de la página.
-* Restablecer una versión anterior de una o varias páginas para:
-   * Deshace los cambios realizados en las páginas.
-   * Restaure las páginas eliminadas.
-   * Restaure un árbol (como en una fecha y hora especificadas).
-* Previsualización de una versión.
+* Restablezca una versión anterior de una o varias páginas para:
+   * Deshacer los cambios realizados en las páginas.
+   * Restaurar páginas eliminadas.
+   * Restaurar un árbol (a una fecha y hora especificadas).
+* Previsualizar una versión.
 * Compare la versión actual de una página con una versión anterior.
-   * Se resaltan las diferencias en el texto y las imágenes.
+   * Se resaltan las diferencias entre el texto y las imágenes.
 * Deformación de tiempo utiliza las versiones de la página para determinar el estado del entorno de publicación.
 
-## Creación de una nueva versión    {#creating-a-new-version}
+## Creación de una nueva versión   {#creating-a-new-version}
 
 Puede crear una versión de su recurso desde:
 
@@ -61,25 +60,25 @@ La línea de tiempo se abrirá con información actualizada para indicar la nuev
 
 ## Restablecimiento de versiones {#reinstating-versions}
 
-Una vez que haya creado una versión de la página, existen varios métodos para restablecer una versión anterior:
+Una vez creada una versión de la página, existen varios métodos para restablecer una versión anterior:
 
-* la opción **Revertir a esta versión** del carril [Línea de tiempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
+* el **Revertir a esta versión** de la [Cronología](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) carril
 
    Restablezca una versión anterior de una página seleccionada.
 
-* las opciones **Restaurar** desde la [barra de herramientas de acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar) superior
+* el **Restaurar** opciones de la parte superior [barra de herramientas acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
 
    * **Restaurar versión**
 
-      Restablecer versiones de páginas específicas dentro de la carpeta seleccionada actualmente; esto también puede incluir la restauración de páginas que se hayan eliminado anteriormente.
+      Restablecer versiones de páginas especificadas dentro de la carpeta seleccionada actualmente; esto también puede incluir la restauración de páginas que se han eliminado anteriormente.
 
    * **Restaurar árbol**
 
-      Restablecer una versión de todo un árbol en una fecha y hora especificadas; esto puede incluir páginas que se hayan eliminado anteriormente.
+      Restablecer una versión de todo un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente.
 
 >[!NOTE]
 >
->Al restablecer una página, la versión creada formará parte de una nueva rama.
+>Al restablecer una página, la versión creada formará parte de una rama nueva.
 >
 >Como ejemplo:
 >
@@ -92,7 +91,7 @@ Una vez que haya creado una versión de la página, existen varios métodos para
 
 ### Revertir a una versión {#revert-to-a-version}
 
-Para **revertir** la página seleccionada a una versión anterior:
+Hasta **Revertir** la página seleccionada a una versión anterior:
 
 1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
@@ -105,11 +104,11 @@ Para **revertir** la página seleccionada a una versión anterior:
 
 ### Restaurar versión {#restore-version}
 
-Este método puede utilizarse para restaurar versiones de páginas específicas dentro de la carpeta actual; esto también puede incluir la restauración de páginas que se hayan eliminado anteriormente:
+Este método se puede utilizar para restaurar versiones de páginas especificadas dentro de la carpeta actual; esto también puede incluir la restauración de páginas que se han eliminado anteriormente:
 
-1. Vaya a la carpeta requerida y [seleccione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Vaya a y [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Seleccione **Restaurar** y, a continuación, **Restaurar versión** en la barra de herramientas de acciones [superior](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
+1. Select **Restaurar**, luego **Restaurar versión** desde la parte superior [barra de herramientas acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -122,43 +121,43 @@ Este método puede utilizarse para restaurar versiones de páginas específicas 
 
 1. Se enumerarán las versiones disponibles:
 
-   ![Restaurar versión: Lista de todas las páginas de la carpeta](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+   ![Restaurar versión: lista de todas las páginas de la carpeta](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
 1. Para una página específica, utilice el selector desplegable en **RESTAURAR A VERSIÓN** para seleccionar la versión requerida para esa página.
 
    ![Restaurar versión: seleccionar versión](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
-1. En la pantalla principal, seleccione la página requerida para restaurar:
+1. En la pantalla principal, seleccione la página requerida para la restauración:
 
    ![Restaurar versión: seleccionar página](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. Seleccione **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión actual.
+1. Select **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión actual.
 
 >[!NOTE]
 >
->El orden en el que se selecciona una página requerida y la versión relacionada son intercambiables.
+>El orden en que se selecciona una página requerida y la versión relacionada son intercambiables.
 
 ### Restaurar árbol {#restore-tree}
 
-Este método puede utilizarse para restaurar una versión de un árbol en una fecha y hora especificadas; esto puede incluir páginas que se hayan eliminado anteriormente:
+Este método puede utilizarse para restaurar una versión de un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente:
 
-1. Vaya a la carpeta requerida y [seleccione](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. Vaya a y [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Seleccione **Restaurar** y, a continuación, **Restaurar árbol** en la barra de herramientas de acciones [superior](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
+1. Select **Restaurar**, luego **Restaurar árbol** desde la parte superior [barra de herramientas acciones](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
 
    ![Restaurar árbol](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. Utilice el selector de fecha y hora en **Últimas versiones en fecha** para seleccionar otra versión del árbol: la que se va a restaurar.
+1. Utilice el selector de fecha y hora en **Últimas versiones en la fecha** para seleccionar otra versión del árbol: la que se va a restaurar.
 
-1. Configure el indicador **Páginas sin versiones conservadas** según sea necesario:
+1. Establecer el indicador **Conservar páginas sin versiones** según sea necesario:
 
    * Si está activo (seleccionado), las páginas sin versiones se mantendrán y no se verán afectadas por la restauración.
 
-   * Si está inactiva (sin seleccionar), se eliminarán todas las páginas sin versiones, ya que no existían en el árbol con versiones.
+   * Si está inactivo (sin seleccionar), todas las páginas sin versiones se eliminarán, ya que no existían en el árbol con versiones.
 
-1. Seleccione **Restaurar** para la versión seleccionada del árbol que se restaurará como la versión *actual*.
+1. Select **Restaurar** para que la versión seleccionada del árbol se restaure como el *current* versión.
 
-## Vista previa de una versión    {#previewing-a-version}
+## Vista previa de una versión   {#previewing-a-version}
 
 Puede previsualizar una versión específica:
 
@@ -190,13 +189,13 @@ Para comparar una versión anterior con la página actual:
 
 1. Seleccione **Comparar con actual**. Se abrirá [Diferencias de página](/help/sites-cloud/authoring/features/page-diff.md) para mostrar las diferencias.
 
-## Deformación de tiempo    {#timewarp}
+## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
 >[!NOTE]
 >
->[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualización futura](/help/sites-cloud/authoring/launches/preview.md).
+>[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-cloud/authoring/launches/preview.md).
 
 Debido a que la creación de contenido es un proceso continuo y colaborativo, el propósito de Deformación de tiempo es permitir que los creadores rastreen el sitio web publicado con el paso del tiempo para comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación.
 

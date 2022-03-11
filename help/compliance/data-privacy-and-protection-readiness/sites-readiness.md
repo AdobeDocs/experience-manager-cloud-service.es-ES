@@ -3,7 +3,7 @@ title: 'Reglamentos de protección de datos y privacidad de datos: preparación 
 description: Obtenga información acerca del soporte de Adobe Experience Manager as a Cloud Service Sites respecto a los distintos reglamentos de protección de datos y privacidad de datos; se incluye el Reglamento general de protección de datos (RGPD) de la UE y la Ley de Privacidad del Consumidor de California y cómo cumplirlos al implementar un nuevo proyecto de AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager as a Cloud Service Sites está listo para ayudar a los clientes con sus obligaciones de cumplimiento de la protección y la privacidad de datos. Esta página guía a los clientes a través de los procedimientos para tratar estas solicitudes en AEM Sites. Describe la ubicación de los datos privados almacenados y cómo eliminarlos manualmente o mediante programación.
 
-Para obtener más información, consulte [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
+Para obtener más información, consulte [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >

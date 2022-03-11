@@ -1,13 +1,13 @@
 ---
-title: Creación de un proyecto en Screens como Cloud Service
-description: En esta página se describe cómo crear un proyecto en Screens como Cloud Service.
-source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
+title: Creación de un proyecto en Screens as a Cloud Service
+description: En esta página se describe cómo crear un proyecto en Screens as a Cloud Service.
+exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
 
 ---
-
 
 # Creación y administración de un proyecto en Screens as a Cloud Service {#creating-project-screens-cloud}
 
@@ -30,14 +30,14 @@ Siga los pasos a continuación para crear un nuevo proyecto en Screens as a Clou
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. Introduzca el **Título** del proyecto en el cuadro de diálogo **Crear proyecto de Screens**, por ejemplo, *ExperienciaPrimeraDigital*.
+1. Introduzca la variable **Título** de su proyecto en **Crear proyecto de Screens** , por ejemplo, *FirstDigitalExperience*.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >El campo **Name** se rellena automáticamente en el cuadro de diálogo **Create Screens project** en función del título que elija.
+   >La variable **Nombre** se rellena automáticamente en la variable **Crear proyecto de Screens** en función del título que elija.
 
-1. Haga clic en **Save**. Verá su proyecto de Screens, titulado como *FirstDigitalExperience* en el proveedor de contenido de Screens. Verá el proyecto en el proveedor de contenido de Screens, con dos carpetas tituladas **Ubicaciones** y **Canales**.
+1. Haga clic en **Guardar**. Verá su proyecto de Screens, titulado como *FirstDigitalExperience* en el proveedor de contenido de Screens. Verá el proyecto en el proveedor de contenido de Screens, con dos carpetas tituladas, **Ubicaciones** y **Canales**.
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
@@ -45,20 +45,20 @@ Siga los pasos a continuación para crear un nuevo proyecto en Screens as a Clou
 
 ### Eliminación de un proyecto existente {#deleting-project}
 
-Puede eliminar un proyecto de Screens como Cloud Service existente.
+Puede eliminar un proyecto as a Cloud Service de Screens existente.
 Siga los pasos a continuación para eliminar un proyecto existente del proveedor de contenido de Screens:
 
 1. Vaya al proveedor de contenido de Screens.
 1. Seleccione el proyecto que desee eliminar.
-1. Haga clic en **Eliminar** en la barra de acciones para eliminar el proyecto.
+1. Haga clic en **Eliminar** de la barra de acciones para eliminar el proyecto.
 
    ![](/help/screens-cloud/assets/create-content/create-project5.png)
 
-1. Haga clic en **Delete** para confirmar la eliminación del proyecto.
+1. Haga clic en **Eliminar** para confirmar la eliminación del proyecto.
 
    >[!NOTE]
    >Puede seleccionar varios proyectos y, por lo tanto, puede eliminar varios proyectos en un solo paso.
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha configurado un proyecto de AEM Screens, puede crear un canal nuevo y agregar contenido a los canales. Consulte [Creación y administración de un canal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) para aprender a crear y administrar contenido en los canales.
+Ahora que ha configurado un proyecto de AEM Screens, puede crear un canal nuevo y agregar contenido a los canales. Consulte [Creación y administración de un canal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) para aprender a crear y administrar contenido en Canales.

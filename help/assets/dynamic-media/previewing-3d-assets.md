@@ -1,15 +1,15 @@
 ---
-title: Vista previa de recursos 3D
+title: Vista previa de activos 3D
 description: Obtenga información sobre cómo previsualizar recursos 3D en Experience Manager.
 feature: 3D Assets
 role: User
-source-git-commit: 9ecfb0c5dceb0574114aa1acbdda2ac9c3ce2675
+exl-id: e873bd25-f841-4063-824f-7e48f40bb678
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 10%
 
 ---
-
 
 # Vista previa de recursos 3D en Adobe Experience Manager{#previewing-3d-assets}
 

@@ -7,7 +7,7 @@ exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -17,23 +17,23 @@ El Asistente para copia de idioma es una experiencia guiada para crear e instrum
 
 >[!TIP]
 >
->Si es nuevo en traducir contenido, consulte nuestro [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es la ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia de traducción o AEM.
+>Si es nuevo en traducir contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia de traducción ni AEM.
 
 >[!NOTE]
 >
->El usuario debe ser miembro del grupo `project-administrators` para crear una copia de idioma de un sitio.
+>El usuario debe ser miembro del `project-administrators` para crear una copia de idioma de un sitio.
 
 Para acceder al asistente:
 
-1. En la consola Sitios, seleccione una página, pulse o haga clic en **Crear** y seleccione **Idioma de copia**.
+1. En la consola Sitios , seleccione una página y toque o haga clic en **Crear** y seleccione **Copia de idioma**.
 
    ![Crear copia de idioma desde el asistente](../assets/language-copy-wizard.png)
 
-1. El asistente se abre con el paso **Seleccionar origen** que le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas. Seleccione las páginas que desee incluir y toque o haga clic en **Siguiente**.
+1. El asistente se abre para **Seleccionar origen** paso que le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas. Seleccione las páginas que desee incluir y toque o haga clic en **Siguiente**.
 
    ![Adición de páginas con el asistente](../assets/language-copy-wizard-add-pages.png)
 
-1. El paso **Configurar** del asistente le permite añadir o eliminar idiomas y seleccionar el método de traducción. Haga clic o pulse **Siguiente**.
+1. La variable **Configurar** el paso del asistente le permite añadir o eliminar idiomas y seleccionar el método de traducción. Haga clic o pulse **Siguiente**.
 
    ![Configuración del paso del asistente](../assets/language-copy-wizard-configure.png)
 
@@ -41,7 +41,7 @@ Para acceder al asistente:
    >
    >De forma predeterminada, solo hay una configuración de traducción. Para poder seleccionar otros ajustes, primero debe configurar las configuraciones de nube. Consulte [Configuración del marco de integración de traducción](integration-framework.md).
 
-1. En el paso **Traducir** del asistente puede elegir entre crear solo la estructura, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
+1. En el **Traducir** del asistente puede elegir entre crear solo la estructura, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
 
    >[!NOTE]
    >
@@ -49,6 +49,6 @@ Para acceder al asistente:
 
    ![Paso de traducción del asistente](../assets/language-copy-wizard-translate.png)
 
-1. El botón **Create** finaliza el asistente. Toque o haga clic en **Listo** para cerrar el asistente o en **Abrir** para ver el proyecto de traducción resultante.
+1. La variable **Crear** finaliza el asistente. Toque o haga clic **Listo** para cerrar el asistente o **Apertura** para ver el proyecto de traducción resultante.
 
    ![Finalizar asistente](../assets/language-copy-wizard-done.png)

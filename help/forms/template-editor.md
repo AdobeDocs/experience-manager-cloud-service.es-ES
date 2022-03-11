@@ -19,7 +19,7 @@ Por ejemplo, desea que todos los autores de formularios tengan ciertos cuadros d
 * Proporcione el contenido inicial para el formulario.
 * Especifique un tema, Enviar acciones.
 
-Puede descargar e instalar [!DNL AEM Forms] paquete de contenido de referencia de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-ES/aemcloud.html) portal para importar temas de referencia y plantillas para su entorno.
+Puede descargar e instalar [!DNL AEM Forms] paquete de contenido de referencia de [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es-es/aemcloud.html) portal para importar temas de referencia y plantillas para su entorno.
 
 ## Uso de plantillas {#working-with-templates}
 

@@ -3,13 +3,13 @@ title: Activación de la canalización front-end
 description: Descubra cómo puede habilitar la canalización de front-end para sitios existentes a fin de aprovechar los temas del sitio para personalizar más rápidamente el sitio.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
 
 ---
-
 
 # Activación de la canalización front-end {#enable-front-end-pipeline}
 

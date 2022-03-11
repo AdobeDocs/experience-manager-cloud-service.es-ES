@@ -1,12 +1,12 @@
 ---
 title: 'Reutilización del contenido: administrador de varios sitios y Live Copy'
 description: Obtenga una introducción para reutilizar contenido con AEM potentes Live Copies y las funciones del administrador de varios sitios.
-feature: Administrador de varios sitios
+feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2682'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ El administrador de varios sitios (MSM) le permite usar el mismo contenido del s
 
 * Con MSM puede:
    * Crear contenido una vez y después
-   * Reutilice este contenido en otras áreas (a través de [Live Copies](#live-copies)) del mismo sitio u otros sitios.
+   * Reutilice este contenido en otras áreas (mediante [Live Copies](#live-copies)) del mismo sitio u otros sitios.
 * A continuación, MSM mantiene las relaciones activas entre el contenido de origen y sus Live Copies para que:
    * Al realizar cambios en el contenido de origen, se sincronizan el origen y las Live Copies.
    * Puede realizar ajustes solo en el contenido de las Live Copies desconectando la relación activa para subpáginas o componentes individuales.
@@ -25,7 +25,7 @@ El administrador de varios sitios (MSM) le permite usar el mismo contenido del s
 Esta página proporciona información general sobre cómo reutilizar contenido con MSM. Las siguientes páginas tratan en detalle los problemas relacionados.
 
 * [Creación y sincronización de Live Copies](creating-live-copies.md)
-* [Consola de información general de Live Copy](live-copy-overview.md)
+* [Información general de Live Copy](live-copy-overview.md)
 * [Configuración de la sincronización de Live Copy](live-copy-sync-config.md)
 * [Conflictos de implementación de MSM](rollout-conflicts.md)
 * [Prácticas recomendadas de MSM](best-practices.md)
@@ -38,9 +38,9 @@ Existen muchos casos de uso para MSM y Live Copies. Algunos escenarios incluyen:
 
    Un caso de uso típico que admite MSM es reutilizar contenido en varios sitios multinacionales en el mismo idioma. Esto permite reutilizar el contenido principal, aunque también permite variaciones nacionales.
 
-   Por ejemplo, la sección en inglés del [ejemplo del tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) se crea para clientes de EE. UU. La mayor parte del contenido de este sitio también puede ser usado para otros sitios WKND que atienden a clientes de habla inglesa de diferentes países y culturas. El contenido principal sigue siendo el mismo en todos los sitios, mientras que se pueden realizar ajustes regionales.
+   Por ejemplo, la sección en inglés de la [Ejemplo de tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) se crea para clientes de EE. UU. La mayor parte del contenido de este sitio también puede ser usado para otros sitios WKND que atienden a clientes de habla inglesa de diferentes países y culturas. El contenido principal sigue siendo el mismo en todos los sitios, mientras que se pueden realizar ajustes regionales.
 
-   La siguiente estructura se puede utilizar para sitios para Estados Unidos y Canadá. Observe cómo el nodo `language-masters` mantiene la copia maestra no solo del contenido en inglés sino de otros idiomas. Este contenido puede utilizarse como base para contenido de idiomas regionales adicionales junto con el inglés.
+   La siguiente estructura se puede utilizar para sitios para Estados Unidos y Canadá. Tenga en cuenta cómo `language-masters` mantiene la copia maestra no solo del contenido en inglés sino de otros idiomas. Este contenido puede utilizarse como base para contenido de idiomas regionales adicionales junto con el inglés.
 
    ```xml
    /content
@@ -62,7 +62,7 @@ Existen muchos casos de uso para MSM y Live Copies. Algunos escenarios incluyen:
    >MSM no traduce el contenido. Se utiliza para crear la estructura necesaria e implementar el contenido.
    >
    >
-   >Consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) para ver este ejemplo.
+   >Consulte [Traducción de contenido para sitios multilingües](/help/sites-cloud/administering/translation/overview.md) para este ejemplo.
 
 * **Nacional - Oficina principal a las subdivisiones regionales**
 
@@ -109,35 +109,35 @@ Existen muchos casos de uso para MSM y Live Copies. Algunos escenarios incluyen:
 
 Se puede acceder directamente a MSM desde la interfaz de usuario mediante diversas opciones desde la consola adecuada.
 
-* **Crear sitio**  (**sitios**)
+* **Crear sitio** (**Sitios**)
 
-   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o más sitios en función de su sitio de origen](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido común en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que en realidad difiere entre los sitios. Crear un sitio de esta manera:
+   * MSM le ayuda a administrar varios sitios web que comparten contenido común. Por ejemplo: los sitios web suelen estar destinados a audiencias internacionales, de modo que la mayor parte del contenido es común en todos los países, con un subconjunto del contenido específico de cada país. MSM le permite [crear Live Copies que actualicen automáticamente uno o varios sitios en función del sitio de origen](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Esto también le ayuda a aplicar una estructura base común, utilizar el contenido común en varios sitios, mantener un aspecto y un enfoque comunes y enfocar los esfuerzos en administrar el contenido que en realidad difiere entre los sitios. Crear un sitio de esta manera:
       * Requiere una configuración de modelo predefinida para especificar el origen.
       * Crea una Live Copy del origen (predefinido).
-      * Proporciona al usuario el botón **Rollout**.
+      * Proporciona al usuario la variable **Despliegue** botón.
 
-* **Crear Live Copy**  (**Sitios**)
+* **Crear Live Copy** (**Sitios**)
 
-   * MSM le permite [crear una Live Copy ad-hoc (única) de una página o subrama individual de un sitio web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por ejemplo, duplicar una subrama para proporcionar información sobre una versión nueva o actualizada de un producto. Crear una Live Copy de esta manera:
+   * MSM le permite [cree una Live Copy ad-hoc (única) de una página o rama individual de un sitio web.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por ejemplo, duplicar una subrama para proporcionar información sobre una versión nueva o actualizada de un producto. Crear una Live Copy de esta manera:
       * Crea una Live Copy ad-hoc (no se requiere configuración de modelo).
       * Se puede utilizar para crear (inmediatamente) una Live Copy de cualquier página o rama.
-      * Requiere **Sincronizar** (no proporciona el botón **Desplegar**).
+      * Requiere **Sincronizar** (no proporciona la variable **Despliegue** ).
 
-* **Ver propiedades**  (**Sitios**)
+* **Ver propiedades** (**Sitios**)
 
-   * Si corresponde, esta opción le ayuda a [monitorizar su Live Copy](creating-live-copies.md#monitoring-your-live-copy) al proporcionar información sobre la **Live Copy** o el **modelo** relacionados.
+   * Si corresponde, esta opción le ayuda a [supervisar Live Copy](creating-live-copies.md#monitoring-your-live-copy) proporcionando información sobre las **Live Copy** o **Modelo**.
 
-* **Referencias**  (**Sitios**)
+* **Referencias** (**Sitios**)
 
-   * El carril [References](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) proporciona información sobre **Live Copies** junto con acceso a las acciones apropiadas.
+   * La variable [Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) el carril proporciona información sobre **Live Copies** junto con el acceso a las acciones adecuadas.
 
-* **Información general de Live Copy**  (**Sites**)
+* **Información general de Live Copy** (**Sitios**)
 
-   * Esta consola le permite [ver y administrar su modelo y sus Live Copies.](live-copy-overview.md)
+   * Esta consola le permite [vea y administre su modelo y sus Live Copies.](live-copy-overview.md)
 
-* **Planes**  (**Herramientas**  -  **Sitios**)
+* **Planes** (**Herramientas** - **Sitios**)
 
-   * Esta consola le permite [crear y administrar sus configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Esta consola le permite [cree y administre las configuraciones de modelo.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Como introducción, la siguiente tabla proporciona una descripción general de l
 | Modelo | Sinónimo de origen | Se puede definir mediante una configuración de modelo |
 | Configuración del modelo | Configuración predefinida que especifica una ruta de origen | Cuando se hace referencia a una página de modelo en una configuración de modelo, el comando Despliegue está disponible |
 | Capítulo | Las secciones del modelo que se incluirán en la Live Copy | Generalmente son páginas secundarias de la raíz |
-| Sincronización | Término genérico para la sincronización de contenido entre el origen y las Live Copies (por las opciones **Rollout** y **Synchronize**) |  |
+| Sincronización | Término genérico para la sincronización de contenido entre el origen y las Live Copies (por **Despliegue** y **Sincronizar** options) |  |
 | Despliegue | Sincroniza desde el origen con Live Copy | Se puede activar mediante un autor (en una página de modelo) o mediante un evento del sistema (tal como se define en la configuración de lanzamiento) |
 | Configuración de despliegue | Reglas que determinan qué propiedades se sincronizarán, cómo y cuándo |  |
 | Sincronizar | Solicitud manual de sincronización, realizada desde las páginas de Live Copy |  |
@@ -184,10 +184,10 @@ Una copia activa de MSM es una copia de contenido específico del sitio para el 
    * Profundo: la página, junto con sus páginas secundarias
 * Las reglas de sincronización, denominadas configuraciones de lanzamiento, determinan qué propiedades se sincronizan y cuándo se produce la sincronización.
 
-En el ejemplo anterior, `/content/wknd/language-masters/en` es el sitio maestro global en inglés. Para reutilizar el contenido de este sitio, se crean Live Copies de MSM:
+En el ejemplo anterior, `/content/wknd/language-masters/en` es la ubicación maestra global en inglés. Para reutilizar el contenido de este sitio, se crean Live Copies de MSM:
 
-* El contenido de abajo `/content/wknd/language-masters/en` es el origen.
-* El contenido siguiente `/content/wknd/language-masters/en` se copia debajo de los nodos `/content/wknd/us/en/` y `/content/wknd/ca/en`. Estas son Live Copies.
+* El contenido siguiente `/content/wknd/language-masters/en` es el origen.
+* El contenido siguiente `/content/wknd/language-masters/en` se copia debajo de `/content/wknd/us/en/` y `/content/wknd/ca/en` nodos. Estas son Live Copies.
 * Los autores realizan cambios en las páginas siguientes `/content/wknd/language-masters/en`.
 * Cuando se activa, MSM sincroniza estos cambios con Live Copies.
 
@@ -210,7 +210,7 @@ La forma básica de Live Copy es:
    * Vincule el recurso de Live Copy con su modelo o origen.
    * Se utilizan para realizar la herencia y el despliegue.
 
-Los cambios pueden [sincronizarse](creating-live-copies.md#synchronizing-your-live-copy) según los requisitos.
+Los cambios pueden [sincronizar](creating-live-copies.md#synchronizing-your-live-copy) según los requisitos.
 
 ![Información general sobre la composición de Live Copy](../assets/live-copy-composition.png)
 
@@ -219,13 +219,13 @@ Los cambios pueden [sincronizarse](creating-live-copies.md#synchronizing-your-li
 Cuando crea una Live Copy en AEM, puede ver y navegar por la rama de Live Copy y utilizar la funcionalidad de AEM normal en la rama de Live Copy. Esto significa que usted (o un proceso) puede crear nuevos recursos (páginas o párrafos) dentro de Live Copy. Por ejemplo, un producto para una región o país en particular.
 
 * Estos recursos no tienen relación activa con las páginas de origen/modelo y no se sincronizan.
-* Pueden producirse escenarios que MSM gestione como casos especiales. Por ejemplo, cuando (o un proceso) crea una página con la misma posición y el mismo nombre en las ramas de origen/modelo y Live Copy. Para estas situaciones, consulte [Conflictos de despliegue de MSM](rollout-conflicts.md) para obtener más información.
+* Pueden producirse escenarios que MSM gestione como casos especiales. Por ejemplo, cuando (o un proceso) crea una página con la misma posición y el mismo nombre en las ramas de origen/modelo y Live Copy. Para estas situaciones, consulte [Conflictos de implementación de MSM](rollout-conflicts.md) para obtener más información.
 
 ![Live Copy con páginas que no sean de Live Copy](../assets/live-copy-with-non-live-copy-pages.png)
 
 #### Live Copies anidadas {#nested-live-copies}
 
-Cuando usted (o un proceso) crea una [nueva página dentro de una Live Copy](#live-copy-with-non-live-copy-pages) existente, esta nueva página también se puede configurar como Live Copy de un modelo diferente. Esto se conoce como Live Copy anidado. En Live Copies anidadas, el comportamiento de la segunda Live Copy o de la copia interna se ve afectado por la primera o la Live Copy externa de las siguientes maneras:
+Al crear (o un proceso) un [nueva página dentro de una Live Copy existente](#live-copy-with-non-live-copy-pages) esta nueva página también se puede configurar como Live Copy de un modelo diferente. Esto se conoce como Live Copy anidado. En Live Copies anidadas, el comportamiento de la segunda Live Copy o de la copia interna se ve afectado por la primera o la Live Copy externa de las siguientes maneras:
 
 * Se puede continuar con un despliegue profundo activado para Live Copy de nivel superior en la Live Copy anidada.
 * Cualquier vínculo entre los orígenes se reescribirá dentro de Live Copies.
@@ -240,13 +240,13 @@ Por ejemplo, los vínculos que dirigen desde el segundo al primer modelo se rees
 
 #### Live Copies apiladas {#stacked-live-copies}
 
-Una Live Copy se conoce como Live Copy apilada cuando se crea como el elemento secundario de una Live Copy superficial. Se comporta de la misma manera que una [Live Copy](#nested-live-copies) anidada.
+Una Live Copy se conoce como Live Copy apilada cuando se crea como el elemento secundario de una Live Copy superficial. Se comporta de la misma manera que una [Live Copy anidada](#nested-live-copies).
 
 ### Configuraciones de origen, modelos y modelo {#source-blueprints-and-blueprint-configurations}
 
 Cualquier página o rama de páginas puede utilizarse como fuente de Live Copy. Sin embargo, MSM también le permite definir una configuración de modelo que especifica una ruta de origen. Los beneficios de utilizar una configuración de modelo son que:
 
-* Permita que el autor utilice la opción **Rollout** en un modelo. Es decir, insertar explícitamente modificaciones en Live Copies que hereden de este modelo.
+* Permita que el autor use el **Despliegue** en un modelo. Es decir, insertar explícitamente modificaciones en Live Copies que hereden de este modelo.
 * Permita que el autor utilice **Crear sitio**. Esto permite al usuario seleccionar idiomas fácilmente y configurar la estructura de Live Copy.
 * Defina una configuración de lanzamiento predeterminada para Live Copies que tengan una relación con el modelo.
 
@@ -254,21 +254,21 @@ El origen de una Live Copy puede ser páginas normales o páginas incluidas en u
 
 El origen forma el modelo para Live Copy. El modelo se define cuando:
 
-* [Crear una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) : la configuración define de antemano las páginas que se utilizarán para crear la Live Copy.
+* [Crear una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) - La configuración define de antemano las páginas que se utilizarán para crear Live Copy.
 * [Crear una Live Copy de una página](creating-live-copies.md#creating-a-live-copy-of-a-page) : las páginas utilizadas para crear la Live Copy (las páginas de origen) son las páginas de modelo. Una configuración de modelo podría hacer referencia o no a la página de origen.
 
 ### Desplegar y sincronizar {#rollout-and-synchronize}
 
 Un despliegue es la acción MSM central que sincroniza Live Copies con sus orígenes. Puede realizar implementaciones manualmente o automáticamente.
 
-* Se puede definir una [configuración de lanzamiento](#rollout-configurations) para que eventos [específicos](live-copy-sync-config.md#rollout-triggers) puedan provocar que un despliegue se produzca automáticamente.
-* Al crear una página de modelo, puede utilizar el comando **[Rollout](creating-live-copies.md#rolling-out-a-blueprint)** para insertar cambios en Live Copy.
-   * El comando **Rollout** está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
+* A [configuración de lanzamiento](#rollout-configurations) puede definirse de modo que [events](live-copy-sync-config.md#rollout-triggers) puede provocar que se produzca un despliegue automáticamente.
+* Al crear una página de modelo, puede usar la variable **[Despliegue](creating-live-copies.md#rolling-out-a-blueprint)** para insertar cambios en Live Copy.
+   * La variable **Despliegue** está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
 
    ![Despliegue](../assets/live-copy-rollout.png)
 
-* Al crear una página de Live Copy, puede utilizar el comando **[Sincronizar](creating-live-copies.md#synchronizing-a-live-copy)** para extraer cambios del origen a Live Copy.
-   * El comando **Sincronizar** siempre está disponible en la página de Live Copy independientemente de si la página de origen/modelo está incluida en una configuración de modelo.
+* Al crear una página de Live Copy, puede usar la variable **[Sincronizar](creating-live-copies.md#synchronizing-a-live-copy)** para extraer cambios del origen a Live Copy.
+   * La variable **Sincronizar** siempre está disponible en la página Live Copy, independientemente de si la página de origen/modelo está incluida en una configuración de modelo.
 
    ![Sincronizar](../assets/live-copy-synchronize.png)
 
@@ -276,30 +276,30 @@ Un despliegue es la acción MSM central que sincroniza Live Copies con sus oríg
 
 Una configuración de lanzamiento define cuándo y cómo se sincroniza una Live Copy con el contenido de origen. Una configuración de lanzamiento consta de un déclencheur y una o más acciones de sincronización:
 
-* **Déclencheur** : un déclencheur es un evento que provoca que se produzca la sincronización de la acción en directo, como la activación de una página de origen. MSM define los déclencheur que puede utilizar.
-* **Acciones de sincronización** : las acciones de sincronización se realizan en Live Copy para sincronizarla con el origen. Las acciones de ejemplo son copiar contenido, ordenar nodos secundarios y activar la página Live Copy. MSM proporciona una serie de acciones de sincronización.
+* **Déclencheur** - Un déclencheur es un evento que hace que se produzca la sincronización de la acción activa, como la activación de una página de origen. MSM define los déclencheur que puede utilizar.
+* **Acciones de sincronización** - Las acciones de sincronización se realizan en Live Copy para sincronizarlas con el origen. Las acciones de ejemplo son copiar contenido, ordenar nodos secundarios y activar la página Live Copy. MSM proporciona una serie de acciones de sincronización.
 
 >[!NOTE]
 >
 >Puede crear acciones personalizadas para su instancia mediante la API de Java.
 
-Las configuraciones de lanzamiento se pueden reutilizar, de modo que más de una Live Copy pueda utilizar la misma configuración de lanzamiento. En una instalación estándar se incluyen varias [configuraciones de lanzamiento](live-copy-sync-config.md#installed-rollout-configurations).
+Las configuraciones de lanzamiento se pueden reutilizar, de modo que más de una Live Copy pueda utilizar la misma configuración de lanzamiento. Varios [opciones de configuración de lanzamiento](live-copy-sync-config.md#installed-rollout-configurations) se incluyen en una instalación estándar.
 
 ### Despliegue de conflictos {#rollout-conflicts}
 
-Los lanzamientos se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en Live Copy. Por lo tanto, es útil tener en cuenta cómo AEM gestiona los [conflictos que puedan producirse durante el despliegue.](rollout-conflicts.md)
+Los lanzamientos se pueden complicar, especialmente cuando los autores editan contenido tanto en el origen como en Live Copy. Por lo tanto, es útil tener en cuenta cómo AEM gestiona los [conflictos que podrían producirse durante el despliegue.](rollout-conflicts.md)
 
 ### Suspender y cancelar la herencia y sincronización {#suspending-and-cancelling-inheritance-and-synchronization}
 
 Cada página y componente de una Live Copy está asociado con su página de origen y componente a través de una relación activa. La relación activa configura la sincronización del contenido de Live Copy desde el origen.
 
-Puede **Suspender** la herencia de Live Copy para una página de Live Copy, de modo que pueda cambiar las propiedades y los componentes de la página. Al suspender la herencia, las propiedades y los componentes de la página ya no se sincronizan con el origen.
+Puede **Suspender** la herencia de Live Copy de una página de Live Copy para que pueda cambiar las propiedades y los componentes de la página. Al suspender la herencia, las propiedades y los componentes de la página ya no se sincronizan con el origen.
 
 Al editar una página individual, los autores pueden **Cancelar herencia** para un componente. Cuando se cancela la herencia, la relación activa se suspende y la sincronización no se produce para ese componente. La cancelación de la herencia y la sincronización resulta útil cuando es necesario personalizar las subsecciones del contenido.
 
 ### Desasociar una Live Copy {#detaching-a-live-copy}
 
-También puede [separar una Live Copy](creating-live-copies.md#detaching-a-live-copy) de su modelo para eliminar todas las conexiones.
+También puede [desasociar una Live Copy](creating-live-copies.md#detaching-a-live-copy) de su modelo para eliminar todas las conexiones.
 
 >[!CAUTION]
 >
@@ -309,7 +309,7 @@ La acción separar elimina permanentemente la relación activa entre una Live Co
 
 >[!TIP]
 >
->Consulte [Desasociar una Live Copy](creating-live-copies.md#detaching-a-live-copy) para obtener más información, incluido el impacto relacionado en las páginas principales y secundarias.
+>Consulte [Desasociar una Live Copy](creating-live-copies.md#detaching-a-live-copy) para obtener información detallada, incluido el impacto relacionado en las páginas principales y secundarias.
 
 ## Pasos estándar para usar MSM {#standard-steps-for-using-msm}
 
@@ -318,20 +318,20 @@ Los siguientes pasos describen el procedimiento estándar para utilizar MSM para
 1. Desarrollar el contenido del sitio de origen.
 1. Determine la configuración de lanzamiento que desea utilizar.
 
-   1. MSM [instala varias configuraciones de implementación](live-copy-sync-config.md#installed-rollout-configurations) que pueden satisfacer varios casos de uso.
-   1. De forma opcional, puede [crear una configuración de lanzamiento](live-copy-sync-config.md#creating-a-rollout-configuration) si es necesario.
+   1. MSM [instala varias configuraciones de lanzamiento](live-copy-sync-config.md#installed-rollout-configurations) que puede satisfacer varios casos de uso.
+   1. Opcionalmente, puede [crear una configuración de lanzamiento](live-copy-sync-config.md#creating-a-rollout-configuration) si es necesario.
 
-1. Determine dónde debe [especificar las configuraciones de lanzamiento para utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) y configurarlas según sea necesario.
-1. Si es necesario, [cree una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifique el contenido de origen de Live Copy.
+1. Determinar dónde debe [especifique las opciones de configuración de lanzamiento que se van a utilizar](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) y configure según sea necesario.
+1. Si es necesario, [crear una configuración de modelo](creating-live-copies.md#creating-a-blueprint-configuration) que identifica el contenido de origen de Live Copy.
 1. [Cree una Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Realice los cambios necesarios en el contenido de origen. Debe utilizar el proceso normal de revisión y aprobación de contenido que ha establecido su organización.
-1. [Despliegue ](creating-live-copies.md#rolling-out-a-blueprint) el modelo o  [sincronice Live ](creating-live-copies.md#synchronizing-a-live-copy) Copy con los cambios.
+1. [Desplegar](creating-live-copies.md#rolling-out-a-blueprint) el modelo, o [sincronizar Live Copy](creating-live-copies.md#synchronizing-a-live-copy) con los cambios.
 
 ## Personalización de MSM {#customizing-msm}
 
 MSM proporciona herramientas para que su implementación se pueda adaptar a las complejidades excepcionales que pueden existir al compartir contenido.
 
-* **Configuraciones de lanzamiento personalizadas** :  [cree una ](live-copy-sync-config.md#creating-a-rollout-configuration) configuración de lanzamiento cuando las configuraciones de lanzamiento instaladas no cumplan con sus requisitos. Puede utilizar cualquier déclencheur de lanzamiento y acción de sincronización disponible.
+* **Configuraciones de lanzamiento personalizadas** - [Crear una configuración de lanzamiento](live-copy-sync-config.md#creating-a-rollout-configuration) cuando las configuraciones de lanzamiento instaladas no cumplan con sus requisitos. Puede utilizar cualquier déclencheur de lanzamiento y acción de sincronización disponible.
 
 <!--
 * **Custom Synchronization Actions** - [Create a custom synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) when the installed actions do not meet your specific application requirements. MSM provides a Java API for creating custom synchronization actions.
@@ -339,4 +339,4 @@ MSM proporciona herramientas para que su implementación se pueda adaptar a las 
 
 ## Prácticas recomendadas   {#best-practices}
 
-La página [Prácticas recomendadas de MSM](best-practices.md) contiene información importante sobre la implementación.
+La variable [Prácticas recomendadas de MSM](best-practices.md) contiene información importante sobre la implementación.

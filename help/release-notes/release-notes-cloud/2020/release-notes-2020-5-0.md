@@ -1,14 +1,13 @@
 ---
 title: Notas de la versión de Adobe Experience Manager as a Cloud Service para 2020.5.0
 description: Notas de la versión de Experience Manager para 2020.5.0
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # Notas de la versión de AEM as a Cloud Service 2020.5.0 {#release-notes}
 
@@ -41,7 +40,7 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * Se ha mejorado el rendimiento de la página de Actividad y de la API de Lista de ejecuciones de canalización.
 * El registro de calidad del código ahora contiene todos los seguimientos de pila para excepciones.
 
-### Corrección de errores {#bug-fixes}
+### Corrección de errores  {#bug-fixes}
 
 * Se mostraba una tarjeta engañosa en la página de información general mientras se ejecutaba la canalización de producción.
 * La regla de calidad del código *DontImplementeOrExtendProviderTypesPomCheck* puede producir a veces una excepción de puntero nulo.
@@ -49,5 +48,3 @@ Siga esta sección para conocer las novedades y las actualizaciones de Cloud Man
 * El cuadro de diálogo Crear Entorno no se mostraba correctamente en Safari.
 * Algunas tarjetas de la página de información general no mostraban correctamente los nombres de entidades.
 * En algunos casos, Generar imagen no descargaba correctamente los paquetes de clientes.
-
-

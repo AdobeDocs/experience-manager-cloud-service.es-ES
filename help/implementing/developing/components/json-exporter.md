@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -21,11 +21,11 @@ Proporcionan la entrega de contenido a canales que no son páginas web AEM tradi
 
 Con los fragmentos de contenido que utilizan contenido estructurado, puede proporcionar servicios de contenido utilizando el exportador JSON para ofrecer el contenido de una (y) página AEM en formato de modelo de datos JSON. Esto se puede consumir en sus propias aplicaciones.
 
-## Exportador JSON con componentes principales de fragmento de contenido {#json-exporter-with-content-fragment-core-components}
+## Exportador JSON con componentes principales de fragmentos de contenido {#json-exporter-with-content-fragment-core-components}
 
 Con el exportador JSON de AEM, puede enviar el contenido de una (y) página AEM en formato de modelo de datos JSON. Esto se puede consumir en sus propias aplicaciones.
 
-Dentro de AEM el envío se logra mediante el selector `model` y la extensión `.json`.
+Dentro de AEM la entrega se logra mediante el selector `model` y `.json` extensión.
 
 `.model.json`
 
@@ -41,7 +41,7 @@ Dentro de AEM el envío se logra mediante el selector `model` y la extensión `.
 
 Alternativamente, puede enviar el contenido de un fragmento de contenido estructurado segmentándolo específicamente.
 
-Esto se realiza mediante la ruta completa al fragmento (a través de `jcr:content`); por ejemplo, con un sufijo como .
+Esto se realiza mediante la ruta completa al fragmento (a través de la variable `jcr:content`); por ejemplo, con un sufijo como .
 
 `.../jcr:content/root/container/container/contentfragment.model.json`
 
@@ -59,11 +59,11 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
    >[!NOTE]
    >
-   >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder y utilizar estos datos.
+   >Puede [adaptar sus propios componentes](enabling-json-exporter.md) para acceder a estos datos y utilizarlos.
 
    >[!NOTE]
    >
-   >Aunque no es una implementación estándar, [se admiten varios selectores,](enabling-json-exporter.md#multiple-selectors) pero `model` debe ser el primero.
+   >Aunque no es una implementación estándar, [se admiten varios selectores,](enabling-json-exporter.md#multiple-selectors) but `model` debe ser el primero.
 
 ### Información adicional {#further-information}
 
@@ -83,4 +83,4 @@ Para obtener más información, consulte:
 * [Fragmentos de contenido en la guía de usuario de Assets](/help/assets/content-fragments/content-fragments.md)
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Componentes principales ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y el componente  [Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)
