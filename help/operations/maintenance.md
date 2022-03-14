@@ -2,9 +2,9 @@
 title: Tareas de mantenimiento en AEM as a Cloud Service
 description: Tareas de mantenimiento en AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 9177741a57bb16c36b51d1a042538b9cee20a0b8
+source-git-commit: cd48b78383974027d8980397632c395a5958edbf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '1024'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Las tareas de mantenimiento son procesos que se ejecutan según una programació
 
 ## Configuración de tareas de mantenimiento
 
-En versiones anteriores de AEM, se podían configurar tareas de mantenimiento mediante la tarjeta de mantenimiento (Herramientas > Operaciones > Mantenimiento). Para AEM as a Cloud Service, la tarjeta de mantenimiento ya no está disponible, por lo que las configuraciones deben comprometerse con el control de código fuente e implementarse mediante Cloud Manager. Adobe gestionará las tareas de mantenimiento que no requieran decisiones de cliente (por ejemplo, la colección de residuos del almacén de datos), mientras que el cliente puede configurar otras tareas de mantenimiento (consulte la tabla siguiente).
+En versiones anteriores de AEM, se podían configurar tareas de mantenimiento mediante la tarjeta de mantenimiento (Herramientas > Operaciones > Mantenimiento). Para AEM as a Cloud Service, la tarjeta de mantenimiento ya no está disponible, por lo que las configuraciones deben comprometerse con el control de código fuente e implementarse mediante Cloud Manager. Adobe administra las tareas de mantenimiento que tienen configuraciones que los clientes no pueden configurar (por ejemplo, Colección de residuos del almacén de datos, Purga del registro de auditoría, Purga de la versión). Los clientes pueden configurar otras tareas de mantenimiento, como se describe en la tabla siguiente.
 
 >[!CAUTION]
 >
@@ -56,14 +56,22 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Depuración de la versión</td>
     <td>Adobe</td>
-    <td>Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros.</td>
+    <td>Para que el nivel de creación siga funcionando, las versiones anteriores de cada parte de contenido se encuentran debajo de la variable <code>/content</code> del repositorio se depuran según el siguiente comportamiento:<br><ol>
+  <li>Se eliminan las versiones anteriores a 30 días</li>
+  <li>Se conservan las 5 versiones más recientes de los últimos 30 días</li>
+  <li>Independientemente de las reglas anteriores, se conserva la versión más reciente.</li>
+</ol><br>NOTA: el comportamiento descrito anteriormente se aplica a nuevos entornos a partir del 14 de marzo de 2022 y se aplicará a los entornos existentes (los que se crearon antes del 14 de marzo de 2022) el 21 de abril de 2022.</td>
   </td>
   </tr>
   <tr>
     <td>Purga de registro de auditoría</td>
     <td>Adobe</td>
-    <td>Totalmente propiedad de Adobe, pero en el futuro, los clientes podrán configurar ciertos parámetros.</td>
-  </td>
+    <td>Para que el nivel de Author siga funcionando, los registros de auditoría anteriores se encuentran en la sección <code>/content</code> del repositorio se depuran según el siguiente comportamiento:<br><ol>
+  <li>Para la auditoría de replicación, se eliminan los registros de auditoría de más de 3 días</li>
+  <li>Para la auditoría de DAM (Assets), se eliminan los registros de auditoría de más de 30 días</li>
+  <li>Para la auditoría de páginas, se eliminan los registros de más de 3 días.<br></li>
+</ol><br>NOTA: el comportamiento descrito anteriormente se aplica a nuevos entornos a partir del 14 de marzo de 2022 y se aplicará a los entornos existentes (los que se crearon antes del 14 de marzo de 2022) el 21 de abril de 2022.</td>
+   </td>
   </tr>
   <tr>
     <td>Limpieza de archivos binarios de Lucene</td>
