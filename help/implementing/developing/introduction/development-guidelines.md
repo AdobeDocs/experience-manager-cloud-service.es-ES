@@ -2,9 +2,9 @@
 title: Directrices de desarrollo de AEM as a Cloud Service
 description: Directrices de desarrollo de AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2356'
 ht-degree: 2%
 
 ---
@@ -55,17 +55,21 @@ Del mismo modo, con todo lo que está ocurriendo asincrónicamente, como actuar 
 
 ## Conexiones HTTP salientes {#outgoing-http-connections}
 
-Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y lectura razonables. Para el código que no aplica estos tiempos de espera, AEM instancias que se ejecutan en AEM as a Cloud Service impondrán un tiempo de espera global. Estos valores de tiempo de espera son 10 segundos para las llamadas de conexión y 60 segundos para las llamadas de lectura para las conexiones utilizadas por las siguientes bibliotecas Java populares:
+Se recomienda encarecidamente que cualquier conexión HTTP saliente establezca tiempos de conexión y lectura razonables; los valores sugeridos son 1 segundo para el tiempo de espera de conexión y 5 segundos para el tiempo de espera de lectura. Los números exactos deben determinarse en función del rendimiento del sistema back-end que administra estas solicitudes.
+
+Para el código que no aplica estos tiempos de espera, AEM instancias que se ejecutan en AEM as a Cloud Service impondrán un tiempo de espera global. Estos valores de tiempo de espera son 10 segundos para las llamadas de conexión y 60 segundos para las llamadas de lectura para las conexiones.
 
 El Adobe recomienda el uso del [Biblioteca de Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) para realizar conexiones HTTP.
 
 Las alternativas que se sabe que funcionan, pero que pueden requerir proporcionar la dependencia usted mismo son:
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html) (Proporcionado por AEM)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) y/o [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (Proporcionado por AEM)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (no recomendado, ya que está obsoleto y se ha sustituido por la versión 4.x)
 * [Http correcto](https://square.github.io/okhttp/) (No proporcionado por AEM)
 
-## Sin personalizaciones de la IU clásica {#no-classic-ui-customizations}
+Junto a proporcionar tiempos de espera, también se debe implementar una gestión adecuada de dichos tiempos de espera, así como códigos de estado HTTP inesperados.
+
+## Sin personalizaciones de la interfaz de usuario clásica {#no-classic-ui-customizations}
 
 AEM as a Cloud Service solo admite la IU táctil para el código de cliente de terceros. La IU clásica no está disponible para la personalización.
 
