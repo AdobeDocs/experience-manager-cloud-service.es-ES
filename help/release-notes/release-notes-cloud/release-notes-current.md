@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 99%
+source-wordcount: '1188'
+ht-degree: 84%
 
 ---
 
@@ -135,15 +135,17 @@ La fecha de versión de la herramienta de transferencia de contenido v1.8.6 es e
 
 ### Fecha de la versión {#release-date-bpa}
 
-La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.24 es el 1 de febrero de 2022.
+La fecha de versión de Best Practices Analyzer v2.1.26 es el 16 de marzo de 2022.
 
 ### Novedades {#what-is-new-bpa}
 
-* Capacidad para detectar y crear informes sobre la cantidad de recursos con y sin etiquetas inteligentes.
-* Capacidad para detectar y crear informes sobre la versión de componente principal utilizada.
-* Capacidad para detectar y crear informes sobre el tipo de nivel de origen (autor o publicación) en el que se ejecutó BPA.
+* Capacidad para detectar recursos no procesados. Si se detectan recursos no procesados, estos deben configurarse para procesarse o deben eliminarse del conjunto de migración durante la transferencia de contenido para evitar tener problemas durante la ingesta de contenido.
+* Capacidad para detectar si el contenido tiene más de 1000 URL de vanidad. No se recomienda utilizar un número elevado de URL de vanidad, ya que pone una carga en los servidores de Dispatcher y Publish.
+* Capacidad para identificar problemas relacionados con las definiciones de índices de Oak y detectar incompatibilidades con AEM as a Cloud Service.
+* Capacidad para detectar e informar sobre el uso de configuraciones de externalizador. En AEM configuración de externalizador as a Cloud Service la establece Cloud Manager, por lo tanto, las configuraciones de externalizador existentes deben refactorizarse para mantener la compatibilidad.
 
 ### Corrección de errores {#bug-fixes-bpa}
 
-* La lógica de tamaño de BPA se hizo más rápida y eficiente.
-* En algunos casos, el BPA no incrementó el recuento analizado cuando se ejecutó. Esto se ha solucionado.
+* En algunos casos, BPA no se pudo ejecutar debido a que FormsSelectiveFeaturesAnalysis arrojó un error de aserción. Esto se ha solucionado.
+* La BPA estaba presentando conclusiones relacionadas con el patrón de trabajo como PRINCIPAL en lugar de CRÍTICO. Esto se ha solucionado.
+* BPA informaba incorrectamente de los resultados relacionados con las definiciones de índice OAK en ui.apps como CRITICAL. Esto se ha solucionado
