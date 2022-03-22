@@ -2,10 +2,10 @@
 title: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 description: Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6f2a306f54295ec0ec78706fec4b34313e3000c7
 workflow-type: tm+mt
-source-wordcount: '1503'
-ht-degree: 25%
+source-wordcount: '1570'
+ht-degree: 24%
 
 ---
 
@@ -56,7 +56,9 @@ En la sección siguiente se comprenden las consideraciones importantes al ejecut
 
 * Para utilizar la herramienta de transferencia de contenido, debe ser un usuario administrador en la instancia de origen y pertenecer a la AEM local **administradores** en la instancia de Cloud Service a la que está transfiriendo el contenido. Los usuarios sin privilegios no podrán recuperar el token de acceso para utilizar la herramienta de transferencia de contenido.
 
-* Si la configuración **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** está activada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados a la variable **administradores** grupo. El usuario debe añadirse de nuevo al **administradores** grupo para recuperar el token de acceso para CTT.
+* Si la configuración **Borrar el contenido existente en la instancia de Cloud antes de la ingesta** está activada, elimina todo el repositorio existente y crea un nuevo repositorio en el que introducir contenido. Esto significa que restablece toda la configuración, incluidos los permisos, en la instancia de Cloud Service de destino. Esto también se aplica a los usuarios administradores agregados a la variable **administradores** grupo. El usuario debe añadirse de nuevo al **administradores** para recuperar el token de acceso para la herramienta de transferencia de contenido.
+
+* La herramienta de transferencia de contenido no admite la combinación de contenido de varias fuentes en la instancia de Cloud Service de destino si el contenido de las dos fuentes se mueve a las mismas rutas en el destino. Para mover contenido de varias fuentes a una sola instancia de Cloud Service de destino, debe asegurarse de que no haya superposición de las rutas de contenido de las fuentes.
 
 * El token de acceso puede caducar periódicamente después de un período de tiempo específico o después de actualizar el entorno del Cloud Service. Si el token de acceso ha caducado, no podrá conectarse a la instancia de Cloud Service y deberá recuperar el nuevo token de acceso. El icono de estado asociado con un conjunto de migración existente cambiará a una nube roja y mostrará un mensaje cuando pase el ratón por encima de él.
 
