@@ -1,11 +1,11 @@
 ---
-title: Recorrido de arquitecto de contenido de AEM Headless
+title: Modelado de contenido para usuarios sin encabezado con AEM introducción
 description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y cómo modelar el contenido de su proyecto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 2%
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 

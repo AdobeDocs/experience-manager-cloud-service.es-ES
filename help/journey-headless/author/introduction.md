@@ -1,11 +1,11 @@
 ---
-title: recorrido de autor de contenido sin encabezado de AEM
+title: 'Creación para usuarios sin encabezado con AEM: una introducción'
 description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y a cómo crear contenido para su proyecto.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 3%
+source-wordcount: '650'
+ht-degree: 4%
 
 ---
 

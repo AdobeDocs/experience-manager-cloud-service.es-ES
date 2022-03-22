@@ -1,12 +1,12 @@
 ---
-title: Recorrido de incorporación
+title: Exploración del Recorrido de integración
 description: Siga esta página para obtener información sobre cómo empezar a utilizar el recorrido de incorporación
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: fa88a919-af6a-4266-b38c-647706decba4
-source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '403'
 ht-degree: 11%
 
 ---
