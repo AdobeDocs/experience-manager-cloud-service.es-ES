@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Clientes de direcciones de salida dedicadas heredadas {#legacy-dedicated-egress-address-customers}
-
-Si se le ha aprovisionado con una IP de salida dedicada antes del 30 de septiembre de 2021, su función de IP de salida dedicada funciona como se describe a continuación.
-
-### Uso de las funciones {#feature-usage}
+## Uso de las funciones {#feature-usage}
 
 La función es compatible con el código Java o las bibliotecas que resultan en tráfico saliente, siempre que utilicen propiedades estándar del sistema Java para las configuraciones de proxy. En la práctica, esto debería incluir las bibliotecas más comunes.
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 La misma IP dedicada se aplica a todos los programas de un cliente en su organización de Adobe y a todos los entornos de cada uno de sus programas. Se aplica tanto a los servicios de creación como de publicación.
 
-Solo se admiten puertos HTTP y HTTPS. Esto incluye HTTP/1.1 y HTTP/2 cuando se cifran.
-
 ### Consideraciones sobre la depuración {#debugging-considerations}
 
 Para validar que el tráfico es realmente saliente en la dirección IP dedicada esperada, compruebe los registros en el servicio de destino, si está disponible. De lo contrario, puede resultar útil llamar a un servicio de depuración como [https://ifconfig.me/IP](https://ifconfig.me/IP), que devolverá la dirección IP que realiza la llamada.
+
+## Clientes de direcciones de salida dedicadas heredadas {#legacy-dedicated-egress-address-customers}
+
+Si ya ha sido aprovisionado con una IP de salida dedicada antes de 2021.09.30, la función IP de salida dedicada solo admite puertos HTTP y HTTPS.
+Esto incluye HTTP/1.1 y HTTP/2 cuando se cifran.
 
 ## Red privada virtual (VPN) {#vpn}
 
