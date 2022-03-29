@@ -2,7 +2,7 @@
 title: Notas de la versión 2021.3.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
 description: '"[!DNL Adobe Experience Manager] Notas de la versión as a Cloud Service para 2021.3.0."'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 10%
@@ -90,7 +90,7 @@ La próxima versión está planificada para el 08 de abril de 2021.
 
 ### Novedades {#what-is-new-march}
 
-* Clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [LISTAS DE PERMITIDOS IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn) y [Nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) Verá un mensaje sobre las configuraciones existentes anteriormente y podrá autoabastecerse a través de la interfaz de usuario.
+* Clientes con entornos con configuraciones de nombre de dominio personalizado preexistentes para [LISTAS DE PERMITIDOS IP](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) y [Nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) Verá un mensaje sobre las configuraciones existentes anteriormente y podrá autoabastecerse a través de la interfaz de usuario.
 
 * Los usuarios con los permisos necesarios ahora pueden editar un programa, lo que les permite hacer lo siguiente de forma autoservicio:
 
