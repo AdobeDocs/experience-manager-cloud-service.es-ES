@@ -4,9 +4,9 @@ description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
+source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Antes de instalar el conector, siga estos pasos previos a la instalación:
 
 Para instalar el complemento en [!DNL Experience Manager] como [!DNL Cloud Service], siga estos pasos:
 
-1. Descargue el conector mejorado desde [Distribución del software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Descargue el conector mejorado desde [Distribución del software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
 1. [Acceso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) y clone su repositorio as a Cloud Service AEM desde Cloud Manager.
 
