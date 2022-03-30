@@ -3,19 +3,23 @@ title: Explorador del repositorio
 seo-title: Repository Browser
 description: El explorador del repositorio proporciona una vista de solo lectura en el repositorio para todos los entornos en los niveles de autor, publicación y vista previa.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
-
 
 # Explorador del repositorio {#repository-browser}
 
 >[!NOTE]
 >
 >El Explorador de repositorios está disponible en AEM versiones 6582 y posteriores.
+
+>[!INFO]
+>
+>También puede ver [este clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) para ver un vídeo introductorio sobre cómo utilizar el explorador de repositorios para depurar AEM as a Cloud Service.
 
 ## Introducción {#introduction}
 
