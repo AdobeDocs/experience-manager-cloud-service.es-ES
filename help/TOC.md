@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
+source-wordcount: '3409'
 ht-degree: 98%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 98%
    + [Información de la versión](/help/release-notes/home.md)
    + Notas de la versión {#release-notes}
       + [Notas de la versión actual](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 {#2022}
+         + [Notas de la versión 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [Notas de la versión 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Notas de la versión 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -263,7 +265,9 @@ ht-degree: 98%
    + Integración con AEM as a Cloud Service {#integrations}
       + [Integración con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integración con la configuración automatizada de Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Configuración de IMS para usar al integrar con Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Configuración de IMS para usar al integrar con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -386,7 +390,7 @@ ht-degree: 98%
       + [Notas de la versión de Workfront para el conector mejorado del Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
-      + [Eliminar dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
+      + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
       + [Configuración de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Actualizar [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
@@ -767,7 +771,7 @@ ht-degree: 98%
       + [Uso del CRXDE Lite](/help/implementing/developing/tools/crxde.md)
       + [el administrador de paquetes](/help/implementing/developing/tools/package-manager.md)
       + [El externalizador de vínculos](/help/implementing/developing/tools/externalizer.md)
-      + [Navegador de repositorios](/help/implementing/developing/tools/repository-browser.md)
+      + [El explorador de repositorios](/help/implementing/developing/tools/repository-browser.md)
    + Personalización {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [Configuración de ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)

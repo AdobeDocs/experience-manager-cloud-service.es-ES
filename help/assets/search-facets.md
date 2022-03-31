@@ -4,9 +4,9 @@ description: En este artículo se describe cómo crear, modificar y utilizar fac
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2397'
 ht-degree: 21%
 
 ---
@@ -144,6 +144,11 @@ La variable `Tags` predicate permite realizar búsquedas de recursos basadas en 
 1. Vaya al panel Buscar . La variable **[!UICONTROL Etiquetas]** el predicado se agrega al panel Buscar .
 1. Especifique las etiquetas en función de las cuales desee buscar recursos o seleccionar en la lista de sugerencias.
 1. Select **[!UICONTROL Coincidir todo]** para buscar coincidencias que incluyan todas las etiquetas que especifique.
+
+Puede ordenar la estructura de las etiquetas de forma ascendente o descendente en función de la variable **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha. En la siguiente ilustración, la estructura de etiquetas se ordena alfabéticamente en función de la variable **[!UICONTROL Nombre]**.
+
+![añadir etiquetas](assets/add-tags-to-asset.png)
+
 
 ## Adición de otros predicados {#adding-other-predicates}
 

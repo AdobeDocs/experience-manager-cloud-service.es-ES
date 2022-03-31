@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4326'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ Al organizar una colección de recursos, por ejemplo, todos los `Nature` imágen
 
 >[!NOTE]
 >
->* Uso compartido de una carpeta de recursos del tipo `sling:OrderedFolder`, no es compatible al compartir en Marketing Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
+>* Uso compartido de una carpeta de recursos del tipo `sling:OrderedFolder`, no se admite al compartir con Experience Cloud. Si desea compartir una carpeta, no seleccione [!UICONTROL Pedido] al crear una carpeta.
 >* El Experience Manager no permite el uso de `subassets` como nombre de una carpeta. Es una palabra clave reservada para el nodo que contiene subactivos para los recursos compuestos
 
 
@@ -45,10 +45,6 @@ Consulte [agregar recursos digitales al Experience Manager](add-assets.md).
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 Si un usuario de DAM carga uno o más recursos que ya existen en el repositorio, [!DNL Experience Manager] detecta la duplicación y notifica al usuario. La detección de duplicados está deshabilitada de forma predeterminada, ya que puede tener un impacto en el rendimiento en función del tamaño del repositorio y el número de recursos cargados.
-
->[!NOTE]
->
->Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 Para habilitar la función:
 
@@ -611,7 +607,7 @@ La funcionalidad de versiones le permite hacer lo siguiente:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Iniciar un flujo de trabajo en un recurso {#starting-a-workflow-on-an-asset}
+### Inicio de un flujo de trabajo en un recurso {#starting-a-workflow-on-an-asset}
 
 1. Vaya a la ubicación del recurso para el que desea iniciar un flujo de trabajo y pulse o haga clic en el recurso para abrir la página del recurso.
 1. Toque o haga clic en el icono de navegación global y elija **[!UICONTROL Cronología]** en el menú para mostrar la línea de tiempo.

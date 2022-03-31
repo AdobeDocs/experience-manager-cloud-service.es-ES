@@ -2,10 +2,10 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 100%
+source-wordcount: '670'
+ht-degree: 92%
 
 ---
 
@@ -48,13 +48,16 @@ Los arquitectos de la información deberán diseñar consultas para sus puntos d
 GraphiQL es un IDE que se puede instalar en un entorno de AEM. Siga los pasos de [Uso del IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md) para instalarlo en su entorno de AEM.
 
 1. Inicie sesión en AEM as a Cloud Service y acceda a la interfaz de GraphiQL:
-   * Por ejemplo: `https://<host>:<port>/content/graphiql.html`.
+   * Por ejemplo: `https://<host>:<port>/aem/graphiql.html`.
 
-1. El IDE de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para crear consultas, recuperar fragmentos de contenido y entregarlos sin encabezado como JSON.
-   * El panel izquierdo le permite crear la consulta.
-   * El panel derecho muestra los resultados.
+1. El IDE de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para crear consultas para recuperar fragmentos de contenido y entregarlos sin problemas como JSON.
+   * La parte superior derecha desplegable le permite seleccionar el punto final.
+   * Un panel del extremo izquierdo enumera las consultas persistentes (cuando están disponibles)
+   * El panel central izquierdo le permite crear la consulta.
+   * El panel central derecho muestra los resultados.
    * El editor de consultas incluye la finalización del código y teclas de función para ejecutar fácilmente la consulta.
-      ![Editor de GraphiQL](../assets/graphiql.png)
+
+   ![Editor de GraphiQL](../assets/graphiql.png)
 
 1. Suponiendo que el modelo que hemos creado se llamara `person` con campos `firstName`, `lastName` y `position`, podemos generar una consulta sencilla para recuperar el contenido de nuestro fragmento de contenido.
 

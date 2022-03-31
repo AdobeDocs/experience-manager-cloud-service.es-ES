@@ -4,10 +4,10 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
+source-git-commit: 0d964a981f7b9004e99768888f78558c57ae398a
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 7%
+source-wordcount: '2924'
+ht-degree: 6%
 
 ---
 
@@ -180,13 +180,16 @@ El contenido (para el campo específico) debe ser único en todos los fragmentos
 
 * Consulte **[Referencia de fragmento (fragmentos anidados)](#fragment-reference-nested-fragments)** para obtener más información sobre ese tipo de datos específico y sus propiedades.
 
-<!--
-* **Translatable**
-  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+* **Traducible**
 
-  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
--->
+   >[!NOTE]
+   Esta función está disponible en el canal de prelanzamiento.
+   Consulte la [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
+
+   Marque la **Translatable** en un campo del editor del modelo de fragmento de contenido:
+
+   * Asegúrese de que el nombre de propiedad del campo se agrega a la configuración de traducción, contexto `/content/dam/<sites-configuration>`, si no está presente.
+   * Para GraphQL: establezca un `<translatable>` en el campo Fragmento de contenido para `yes`, para permitir el filtro de consulta de GraphQL para la salida JSON con solo contenido traducible.
 
 ## Validación {#validation}
 

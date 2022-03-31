@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1435'
 ht-degree: 8%
 
 ---
@@ -61,10 +61,6 @@ Para continuar, haga clic en **[!UICONTROL Siguiente]**. Según la selección, l
 
 ### Añadir contenido {#add-content}
 
->[!NOTE]
->
->Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
-
 Publicar en [!DNL Experience Manager Assets] le permite añadir más contenido (recursos y carpetas) a la lista de publicaciones. Puede agregar más activos o carpetas a la lista en los repositorios de dam. Haga clic en **[!UICONTROL Añadir contenido]** para añadir más contenido.
 
 Puede agregar varios recursos desde una carpeta o agregar varias carpetas a la vez. Sin embargo, no se pueden agregar recursos de varias carpetas a la vez.
@@ -72,10 +68,6 @@ Puede agregar varios recursos desde una carpeta o agregar varias carpetas a la v
 ![Añadir contenido](assets/manage-publication-add-content.png)
 
 ### Incluir configuración de carpeta {#include-folder-settings}
-
->[!NOTE]
->
->Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 De forma predeterminada, la publicación de una carpeta en [!DNL Experience Manager Assets] publica todos los recursos, subcarpetas y sus referencias.
 

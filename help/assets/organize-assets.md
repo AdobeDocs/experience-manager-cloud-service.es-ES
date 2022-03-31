@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -74,14 +74,45 @@ La forma más básica de organizar los recursos es guardarlos en carpetas. Es si
 
 ## Organización de recursos mediante etiquetas {#use-tags-to-organize-assets}
 
-Mediante etiquetas, como metadatos, puede buscar fácilmente recursos, crear colecciones utilizando los resultados de búsqueda, mejorar la clasificación de algunos recursos y aplicar algoritmos de IA de Adobe Sensei para la detección de recursos.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permitan encontrar el recurso adecuado en tan solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, inteligencia artificial y un marco de aprendizaje automático, que se puede entrenar para reconocer y aplicar etiquetas estándar y específicas del negocio a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras individuales o frases y aplicar automáticamente etiquetas descriptivas a los recursos
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+Añadir etiquetas a los recursos facilita su recuperación durante una búsqueda, crear colecciones utilizando los resultados de búsqueda, mejorar la clasificación de algunos recursos y aplicar algoritmos de IA de Adobe Sensei para la detección de recursos.
+
+[!DNL Adobe Experience Manager Assets] utiliza un algoritmo de autoaprendizaje para crear etiquetas altamente descriptivas que le permitan encontrar el recurso adecuado en tan solo unos clics. El etiquetado inteligente utiliza Adobe Sensei, inteligencia artificial y un marco de aprendizaje automático, que se puede entrenar para reconocer y aplicar etiquetas estándar y específicas del negocio a las imágenes. Las etiquetas inteligentes también pueden identificar contenido, palabras individuales o frases, y aplicar automáticamente etiquetas descriptivas a los recursos.
+
+A continuación se indican los pasos para agregar etiquetas a un recurso:
+
+1. Iniciar sesión en [!DNL Experience Manager Assets].
+1. Haga clic en **[!UICONTROL Recursos]** > **[!UICONTROL Archivos]**, seleccione el recurso y haga clic en **[!UICONTROL Propiedades]** para abrir las propiedades del recurso.
+1. En el **[!UICONTROL Básico]** , haga clic en el icono de carpeta de **[!UICONTROL Etiquetas]** metadatos. Se abre una ventana emergente.
+1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags`. Puede asignar varias etiquetas al recurso.
+
+   Puede ordenar la estructura de las etiquetas de forma ascendente o descendente en función de la variable **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha. En la siguiente ilustración, la estructura de etiquetas se ordena alfabéticamente en función de la variable **[!UICONTROL Nombre]**.
+
+   ![añadir etiquetas](assets/add-tags-to-asset.png)
+
+1. Haga clic en **Guardar** para actualizar los cambios en los metadatos de los recursos.
+
+>[!NOTE]
+>
+>Puede ordenar la estructura de las etiquetas al crear etiquetas inteligentes, así como al aplicar filtros de búsqueda mediante el predicado de etiquetas.
+>
+>La función ordenar etiquetas está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](/help/release-notes/prerelease.md#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 Para obtener más información, consulte los siguientes artículos:
 
 * [Editar metadatos de recursos](meta-edit.md)
 * [Etiquetas inteligentes en recursos](smart-tags.md)
+* [Agregar etiquetas predicadas al panel de búsqueda](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organizar como colecciones {#organize-as-collections}
 

@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: ddc79a163e328d560912550900242cc089df3958
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1192'
 ht-degree: 3%
 
 ---
@@ -43,10 +43,6 @@ De forma predeterminada, [!DNL Experience Manager] déclencheur una notificació
 
 
 ### Habilitar las notificaciones por correo electrónico para las descargas grandes {#enable-emails-for-large-downloads}
-
->[!NOTE]
->
->Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 Las descargas asincrónicas se activan en cualquiera de los siguientes casos:
 
