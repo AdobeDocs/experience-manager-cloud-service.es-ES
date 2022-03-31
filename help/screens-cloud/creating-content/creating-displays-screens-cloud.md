@@ -2,16 +2,16 @@
 title: Creación y administración de visualizaciones en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar visualizaciones en Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 13%
+source-wordcount: '436'
+ht-degree: 9%
 
 ---
 
 # Creación y administración de visualizaciones en Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Una vez que haya publicado el canal, es hora de crear la visualización en el proveedor de servicios de Screens.
+Una vez que haya publicado el canal, es hora de crear la pantalla en el proveedor de servicios de Screens.
 
 Una pantalla es una agrupación virtual de pantallas que normalmente se colocan una al lado de la otra. La pantalla suele ser permanente con relación a una instalación. Este será el objeto con que los autores de contenido trabajarán y tomarán siempre como referencia como pantalla lógica en lugar de las equivalentes físicas.
 
@@ -19,7 +19,8 @@ Una pantalla es una agrupación virtual de pantallas que normalmente se colocan 
 
 Este documento le ayuda a comprender cómo crear y administrar pantallas en el proveedor de servicios de Screens. Después de leer, debe:
 
-* Obtenga información sobre cómo crear visualizaciones.
+* Cómo crear y eliminar visualizaciones
+* Obtenga información sobre cómo organizar las visualizaciones en carpetas
 
 ## Pasos para crear una pantalla {#create-display}
 
@@ -49,6 +50,37 @@ Puede eliminar una pantalla del proveedor de servicios de Screens.
 Seleccione la visualización y haga clic en **Eliminar** en la parte inferior del panel, como se muestra en la figura siguiente.
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
+
+## Pasos para organizar visualizaciones en carpetas {#organize-display}
+
+## Alternar el carril de carpetas {#toggle-rail}
+
+Puede cambiar el carril de carpetas de mostrar todas las carpetas a carpetas específicas:
+
+1. Vaya a la vista de inventario de muestra haciendo clic en el botón resaltado a continuación:
+
+   ![image](/help/screens-cloud/assets/display/display-inventory.png)
+
+1. Se muestra el carril lateral de la carpeta.
+
+![image](/help/screens-cloud/assets/display/toggle-rail.png)
+
+1. Select **Ocultar carpetas** para volver a cerrarlo.
+
+## Cómo crear una nueva carpeta {#create-folder}
+
+Puede crear carpetas para organizar mejor las pantallas.
+
+1. Vaya a la vista de inventario de muestra.
+1. Asegúrese de que no esté en una carpeta, debería ver lo siguiente:
+
+![image](/help/screens-cloud/assets/display/verify-view.png)
+
+Nota: **Todas las visualizaciones** debe seleccionarse en el carril lateral de la carpeta y la navegación de la ruta de exploración solo debería mostrarse **Visualizaciones**.
+
+1. Haga clic en el botón &quot;Create&quot; en la parte superior derecha y seleccione la **Carpeta** option
+
+1. Rellene el título de la nueva carpeta y haga clic en **Crear**.
 
 ## Siguientes pasos {#whats-next}
 
