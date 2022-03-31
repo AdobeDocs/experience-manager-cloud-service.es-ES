@@ -4,9 +4,9 @@ description: Instalar [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
+source-git-commit: 7ffac94eace3eaa276f0ad1705e0b32c886c795c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,8 @@ Para instalar el complemento en [!DNL Experience Manager] como [!DNL Cloud Servi
 1. Ejecute la canalización a [implementar los cambios en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. Para crear una configuración de usuario del sistema, cree `wf-workfront-users` en [!DNL Experience Manager] Grupo de usuarios y asignar el permiso `jcr:all` a `/content/dam`. Un usuario del sistema `workfront-tools` se crea automáticamente y los permisos necesarios se administran automáticamente. Todos los usuarios de [!DNL Workfront] que utilizan el conector mejorado se añaden automáticamente como parte de este grupo.
+
+Para obtener información sobre cómo actualizar la variable [!DNL Workfront for Experience Manager enhanced connector] de una versión anterior a la más reciente, haga clic en [here](update-workfront-enhanced-connector.md).
 
 ## Configurar la conexión entre [!DNL Experience Manager] como [!DNL Cloud Service] y [!DNL Workfront] {#configure-connection}
 
