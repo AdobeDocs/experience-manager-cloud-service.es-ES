@@ -1,23 +1,37 @@
 ---
-title: 'Aplicar Lista de permitidos IP '
-description: Aplicar Lista de permitidos IP
+title: 'Aplicación y cancelación de la aplicación de Listas de permitidos IP '
+description: Aprenda a aplicar y anular la aplicación de listas de permitidos IP a entornos.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
-# Aplicación de una lista de permitidos de IP {#apply-allow-list}
 
-La aplicación de una Lista de permitidos IP es el proceso mediante el cual todos los rangos de IP incluidos en la definición de la lista de permitidos están asociados a un servicio de autor o publicador en un entorno. Un usuario con la función Propietario empresarial o Administrador de implementación debe haber iniciado sesión para poder aplicar una Lista de permitidos IP.
+# Aplicación y cancelación de la aplicación de Listas de permitidos IP {#apply-allow-list}
 
->[!NOTE]
->La Lista de permitidos IP debe existir en Cloud Manager para aplicarla a un servicio de entorno.
+Al aplicar una lista de permitidos IP, todos los intervalos de IP incluidos en la definición de la lista se asocian a un servicio de autor o publicación dentro de un entorno. Desaplicar una lista es lo contrario a este proceso.
 
-Siga los pasos a continuación para aplicar una Lista de permitidos IP:
+## Aplicación de Listas de permitidos IP {#applying}
 
-1. Vaya a la página Detalles del entorno específica desde **Entornos** y vaya a la tabla de Lista de permitidos IP.
-1. Utilice los campos de entrada de la parte superior de la tabla de Lista de permitidos IP para seleccionar la Lista de permitidos IP y el servicio Autor o Publicación al que desea aplicarla.
-1. Select **Aplicar** y confirme su envío.
+Un usuario en la variable **Propietario empresarial** o **Administrador de implementación** puede seguir estos pasos para aplicar una lista de permitidos IP.
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
+1. Vaya a la **Entornos** de la **Información general** página.
+1. Vaya a la página de detalles específicos del entorno en la **Entornos** y vaya a **LISTA DE PERMITIDOS IP** tabla.
+1. Utilice los campos de entrada de la parte superior de la tabla para seleccionar la lista de permitidos IP y el servicio de autor o publicación al que desea aplicarla.
+   * La Lista de permitidos IP debe existir en Cloud Manager para poder aplicarla.
+1. Haga clic en **Aplicar** y confirme su envío.
+
+## Cancelación de la aplicación de Listas de permitidos {#un-applying}
+
+Un usuario en la variable **Propietario empresarial** o **Administrador de implementación** puede seguir estos pasos para anular la aplicación de una lista de permitidos IP.
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización y el programa adecuados.
+1. Vaya a la **Entornos** de la **Información general** página.
+1. Vaya a la página de detalles específicos del entorno en la **Entornos** y vaya a **LISTA DE PERMITIDOS IP** tabla.
+1. Identifique la fila de la lista de permitidos IP que desea cancelar.
+1. Seleccione el botón de puntos suspensivos en el extremo derecho de la fila.
+1. Seleccione el **No aplicar** y confirme el envío.

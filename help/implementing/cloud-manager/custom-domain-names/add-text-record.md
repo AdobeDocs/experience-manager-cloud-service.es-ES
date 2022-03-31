@@ -2,16 +2,16 @@
 title: Adición de un registro TXT
 description: Obtenga información sobre cómo agregar un registro TXT para agregar un nombre de dominio personalizado en Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: c80b7288b86ac62da17d5a83ec96cb882e36f687
+source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 4%
 
 ---
 
 # Adición de un registro TXT {#adding-txt}
 
-Un registro TXT DNS autoriza un dominio a alojarse en un servicio CDN. Debe crear un registro TXT de DNS en la zona que autorice a Cloud Manager a implementar el servicio CDN con el dominio personalizado y asociarlo al servicio back-end. Esta asociación está totalmente bajo su control y autoriza a Cloud Manager a servir contenido desde el servicio a un dominio. Esta autorización podrá concederse y retirarse.
+Un registro TXT DNS autoriza un dominio a alojarse en un servicio CDN. Debe crear un registro TXT de DNS en la zona que autorice a Cloud Manager a implementar el servicio CDN con el dominio personalizado y asociarlo al servicio back-end. Esta asociación está totalmente bajo su control y autoriza a Cloud Manager a servir contenido desde el servicio a un dominio. Esta autorización podrá concederse y retirarse. El registro TXT es específico del entorno Dominio y Cloud Manager.
 
 Debe cumplir estos requisitos antes de agregar un registro TXT.
 
