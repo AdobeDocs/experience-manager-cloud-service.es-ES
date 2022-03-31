@@ -2,10 +2,10 @@
 title: Creación y administración de visualizaciones en Screens as a Cloud Service
 description: En esta página se describe cómo crear y administrar visualizaciones en Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
+source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 9%
+source-wordcount: '668'
+ht-degree: 7%
 
 ---
 
@@ -63,7 +63,7 @@ Puede cambiar el carril de carpetas de mostrar todas las carpetas a carpetas esp
 
 1. Se muestra el carril lateral de la carpeta.
 
-![image](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![image](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. Select **Ocultar carpetas** para volver a cerrarlo.
 
@@ -74,13 +74,62 @@ Puede crear carpetas para organizar mejor las pantallas.
 1. Vaya a la vista de inventario de muestra.
 1. Asegúrese de que no esté en una carpeta, debería ver lo siguiente:
 
-![image](/help/screens-cloud/assets/display/verify-view.png)
+   ![image](/help/screens-cloud/assets/display/verify-view.png)
 
-Nota: **Todas las visualizaciones** debe seleccionarse en el carril lateral de la carpeta y la navegación de la ruta de exploración solo debería mostrarse **Visualizaciones**.
+   Nota: **Todas las visualizaciones** debe seleccionarse en el carril lateral de la carpeta y la navegación de la ruta de exploración solo debería mostrarse **Visualizaciones**.
 
-1. Haga clic en el botón &quot;Create&quot; en la parte superior derecha y seleccione la **Carpeta** option
+1. Haga clic en el botón &quot;Create&quot; en la parte superior derecha y seleccione la **Carpeta** .
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. Rellene el título de la nueva carpeta y haga clic en **Crear**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Cómo crear una nueva carpeta anidada {#nested-folder}
+
+1. Vaya a la vista de inventario de muestra.
+
+1. Seleccione la carpeta principal que desee en el carril lateral de la carpeta o navegue en la vista de inventario.
+1. Compruebe que la carpeta principal deseada está seleccionada.
+
+   ![image](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * La carpeta debe seleccionarse en el carril lateral de la carpeta.
+   * La navegación de la ruta de exploración debe mostrar el nombre de la carpeta actual junto a **Visualizaciones**.
+
+1. Haga clic en  **Crear**  en la parte superior derecha y seleccione la **Carpeta** .
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. Rellene el título de la nueva carpeta y haga clic en **Crear**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Cómo mover contenido a una nueva carpeta {#move-folder}
+
+Puede mover contenido a las nuevas carpetas para organizar mejor las pantallas.
+
+1. Vaya a la vista de inventario de muestra.
+
+1. Seleccione la carpeta principal que desee en el carril lateral de la carpeta o selecciónela en la vista de inventario.
+
+1. Compruebe que ha seleccionado la carpeta principal deseada.
+
+![image](/help/screens-cloud/assets/display/movetofolder.png)
+
+**Nota**: La carpeta debe seleccionarse en el carril lateral de la carpeta. Además, la navegación de la ruta de exploración debe mostrar el nombre de la carpeta actual junto a **Visualizaciones**.
+
+## Eliminar contenido de una carpeta {#delete-folder}
+
+Se puede acceder a todas las operaciones de carpeta a través de la barra de acciones de selección en la vista de inventario.
+
+1. Vaya a la carpeta principal o selecciónela en el carril lateral.
+
+1. En la vista de inventario, seleccione la carpeta secundaria que desee eliminar y asegúrese de que está vacía.
+
+1. Haga clic en el **Eliminar** en la barra de acciones de selección. La acción se desactivará si la carpeta no está vacía.
+
 
 ## Siguientes pasos {#whats-next}
 
