@@ -2,9 +2,9 @@
 title: Tareas de mantenimiento en AEM as a Cloud Service
 description: Tareas de mantenimiento en AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Se eliminan las versiones anteriores a 30 días</li>
        <li>Se conservan las 5 versiones más recientes de los últimos 30 días</li>
        <li>Independientemente de las reglas anteriores, se conserva la versión más reciente.</li>
-     </ol><br>NOTA: el comportamiento descrito anteriormente se aplica a nuevos entornos a partir del 14 de marzo de 2022 y se aplicará a los entornos existentes (los que se crearon antes del 14 de marzo de 2022) el 21 de abril de 2022.</td>
+     </ol><br>NOTA: el comportamiento descrito anteriormente se aplica de forma predeterminada a los nuevos entornos creados después del 14 de marzo de 2022. Envíe un ticket de asistencia al cliente si necesita configuraciones diferentes.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Para la auditoría de replicación, se eliminan los registros de auditoría de más de 3 días</li>
        <li>Para la auditoría de DAM (Assets), se eliminan los registros de auditoría de más de 30 días</li>
        <li>Para la auditoría de páginas, se eliminan los registros de más de 3 días.</li>
-     </ol><br>NOTA: el comportamiento descrito anteriormente se aplica a nuevos entornos a partir del 14 de marzo de 2022 y se aplicará a los entornos existentes (los que se crearon antes del 14 de marzo de 2022) el 21 de abril de 2022.</td>
+     </ol><br>NOTA: el comportamiento descrito anteriormente se aplica de forma predeterminada a los nuevos entornos creados después del 14 de marzo de 2022. Envíe un ticket de asistencia al cliente si necesita configuraciones diferentes.</td>
    </td>
   </tr>
   <tr>
