@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2943'
 ht-degree: 1%
 
 ---
@@ -116,12 +116,12 @@ Para conservar el recurso duplicado en [!DNL Assets], haga clic en **[!UICONTROL
 
 ### Tratamiento de nombres de archivo y caracteres prohibidos {#filename-handling}
 
-[!DNL Experience Manager Assets] intenta evitar cargar recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con un nombre de archivo que contenga uno o más caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimina estos caracteres o carga con un nombre permitido.
+[!DNL Experience Manager Assets] impide que cargue recursos con los caracteres prohibidos en sus nombres de archivo. Si intenta cargar un recurso con nombres de archivo que contengan uno o más caracteres no permitidos, [!DNL Assets] muestra un mensaje de advertencia y detiene la carga hasta que elimina estos caracteres o carga con un nombre permitido.
 
 Para adaptarlo a las convenciones específicas de nomenclatura de archivos de su organización, la variable [!UICONTROL Cargar recursos] permite especificar nombres largos para los archivos que se cargan. No se admiten los siguientes caracteres (lista de) separados por espacios:
 
-* caracteres no válidos para el nombre del archivo de recursos `* / : [ \\ ] | # % { } ? &`
-* caracteres no válidos para el nombre de la carpeta de recursos `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Caracteres no válidos para el nombre del recurso: `* / : [ \\ ] | # % { } ? &`
+* Caracteres no válidos para el nombre de la carpeta de recursos: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Carga masiva de recursos {#bulk-upload}
 
@@ -147,7 +147,7 @@ La siguiente imagen ilustra las distintas etapas de la ingesta de recursos en Ex
 
 ![Herramienta de ingesta masiva](assets/bulk-ingestion.png)
 
-#### Requisitos previos {#prerequisites-bulk-ingestion}
+**Requisitos previos**
 
 Se requiere una cuenta de almacenamiento externa o un compartimento de Azure o AWS para utilizar esta función.
 
@@ -155,7 +155,7 @@ Se requiere una cuenta de almacenamiento externa o un compartimento de Azure o A
 >
 >Cree el contenedor o el compartimento de la cuenta de almacenamiento como privado y acepte conexiones solo desde solicitudes autorizadas. Sin embargo, no se admiten restricciones adicionales en las conexiones de red de ingreso.
 
-#### Configuración de la herramienta de importación masiva {#configure-bulk-ingestor-tool}
+### Configuración de la herramienta de importación masiva {#configure-bulk-ingestor-tool}
 
 Para configurar la herramienta Importación masiva, siga estos pasos:
 
@@ -187,31 +187,108 @@ Para configurar la herramienta Importación masiva, siga estos pasos:
 
 1. Haga clic en **[!UICONTROL Guardar]** para guardar la configuración.
 
-#### Administrar la configuración de la herramienta de importación masiva {#manage-bulk-import-configuration}
+### Administrar la configuración de la herramienta de importación masiva {#manage-bulk-import-configuration}
 
 Después de crear la configuración de la herramienta de importación masiva, puede realizar tareas para evaluar la configuración antes de ingerir masivamente recursos en la instancia de Experience Manager. Seleccione la configuración disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Importación masiva]** para ver las opciones disponibles para administrar la configuración de la herramienta de importación masiva.
 
-##### Editar la configuración {#edit-configuration}
+### Editar la configuración {#edit-configuration}
 
 Seleccione la configuración y haga clic en **[!UICONTROL Editar]** para modificar los detalles de configuración. No se puede editar el título de la configuración y el origen de datos de importación mientras se realiza la operación de edición.
 
-##### Eliminar la configuración {#delete-configuration}
+### Eliminar la configuración {#delete-configuration}
 
 Seleccione la configuración y haga clic en **[!UICONTROL Eliminar]** para eliminar la configuración de Importación masiva.
 
-##### Validar la conexión con el origen de datos {#validate-connection}
+### Validar la conexión con el origen de datos {#validate-connection}
 
 Seleccione la configuración y haga clic en **[!UICONTROL check]** para validar la conexión con el origen de datos. Si la conexión se realiza correctamente, el Experience Manager muestra el siguiente mensaje:
 
 ![Mensaje de éxito de Importación masiva](assets/bulk-import-success-message.png)
 
-##### Invocar una ejecución de prueba para el trabajo de importación masiva {#invoke-test-run-bulk-import}
+### Invocar una ejecución de prueba para el trabajo de importación masiva {#invoke-test-run-bulk-import}
 
 Seleccione la configuración y haga clic en **[!UICONTROL Ensayo]** para invocar una ejecución de prueba para el trabajo de importación masiva. Experience Manager muestra los siguientes detalles sobre el trabajo de importación masiva:
 
 ![Resultado del simulacro](assets/dry-assets-result.png)
 
-##### Programar una importación masiva única o recurrente {#schedule-bulk-import}
+### Administración de nombres de archivo durante la importación masiva {#filename-handling-bulkimport}
+
+Cuando se importan recursos o carpetas de forma masiva, [!DNL Experience Manager Assets] importa toda la estructura de lo que existe en el origen de importación. [!DNL Experience Manager] sigue las reglas incorporadas para caracteres especiales en los nombres de recursos y carpetas, por lo que estos nombres de archivo deben eliminarse. Tanto para el nombre de la carpeta como para el nombre del recurso, el título definido por el usuario permanece sin cambios y se almacena en `jcr:title`.
+
+Durante la importación masiva, [!DNL Experience Manager] busque las carpetas existentes para evitar la reimportación de los recursos y las carpetas, y también verifique las reglas de limpieza aplicadas en la carpeta principal donde se realiza la importación. Si las reglas de saneamiento se aplican a la carpeta principal, se aplican las mismas reglas al origen de importación. Para las nuevas importaciones, se aplican las siguientes reglas de saneamiento para administrar los nombres de archivo de los recursos y carpetas.
+
+**Gestión del nombre del recurso en la importación masiva**
+
+Para los nombres de archivo de recursos, la ruta y el nombre del Jcr se sanean mediante la API: `JcrUtil.escapeIllegalJcrChars`.
+
+* Mantener el Unicode tal cual
+* Sustituya los caracteres especiales por su código de escape de URL, por ejemplo, `new*asset.png` se actualiza a `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**Gestión del nombre de la carpeta en la importación masiva**
+
+Para los nombres de archivo de carpeta, la ruta y nombre del Jcr se saneaba usando la API: `JcrUtil.createValidName`.
+
+* Convertir mayúsculas a minúsculas
+* Mantener unicode tal cual
+* Sustituya los caracteres especiales por un guión (&#39;-&#39;), por ejemplo, `new*asset.png` se actualiza a `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### Programar una importación masiva única o recurrente {#schedule-bulk-import}
 
 Para programar una importación masiva recurrente o de una sola vez, ejecute los siguientes pasos:
 
@@ -222,7 +299,7 @@ Para programar una importación masiva recurrente o de una sola vez, ejecute los
    ![Programar trabajo de ingesta masiva](assets/bulk-ingest-schedule1.png)
 
 
-##### Ver la carpeta de destino de Assets {#view-assets-target-folder}
+#### Ver la carpeta de destino de Assets {#view-assets-target-folder}
 
 Seleccione la configuración y haga clic en **[!UICONTROL Ver recursos]** para ver la ubicación de destino de los recursos en la que se importan después de ejecutar el trabajo de importación masiva.
 

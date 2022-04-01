@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 5%
@@ -27,9 +27,9 @@ En segundo plano, la funcionalidad utiliza el marco de trabajo artificialmente i
 
 ## Tipos de recursos admitidos {#smart-tags-supported-file-formats}
 
-Puede etiquetar los siguientes tipos de recursos:
+You can tag the following types of assets:
 
-* **Imágenes**: Las imágenes en muchos formatos se etiquetan con los servicios de contenido inteligente de Adobe Sensei. You [crear un modelo de formación](#train-model) y, a continuación, las imágenes cargadas se etiquetan automáticamente. Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG.
+* **Images**: Images in many formats are tagged using the Adobe Sensei&#39;s smart content services. You [crear un modelo de formación](#train-model) y, a continuación, las imágenes cargadas se etiquetan automáticamente. Las etiquetas inteligentes se aplican a los tipos de archivo compatibles que generan representaciones en formato JPG y PNG.
 * **Recursos basados en texto**: [!DNL Experience Manager Assets] etiqueta automáticamente los recursos basados en texto compatibles al cargarlos.
 * **Recursos de vídeo**: El etiquetado de vídeo está habilitado de forma predeterminada en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]. [Los vídeos están etiquetados automáticamente](/help/assets/smart-tags-video-assets.md) al cargar vídeos nuevos o reprocesar los existentes.
 
@@ -56,7 +56,7 @@ Puede etiquetar los siguientes tipos de recursos:
 
 [!DNL Experience Manager] agrega automáticamente las etiquetas inteligentes a los recursos basados en texto y a los vídeos de forma predeterminada. Para agregar automáticamente etiquetas inteligentes a imágenes, complete las siguientes tareas.
 
-* [Explicación de los modelos de etiquetas y las directrices](#understand-tag-models-guidelines).
+* [Understand tag models and guidelines](#understand-tag-models-guidelines).
 * [Capacitar al modelo](#train-model).
 * [Etiquetado de recursos digitales](#tag-assets).
 * [Administrar las etiquetas y las búsquedas](#manage-smart-tags-and-searches).
@@ -75,9 +75,9 @@ Asegúrese de que las imágenes del conjunto de formación cumplen las siguiente
 
 **Coherencia**: Asegúrese de que las imágenes de una etiqueta son visualmente similares. Es mejor añadir las etiquetas de los mismos aspectos visuales (como el mismo tipo de objetos en una imagen) juntos en un único modelo de etiqueta. Por ejemplo, no es buena idea etiquetar todas estas imágenes como `my-party` (para formación) porque no son visualmente similares.
 
-![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coherence.png)
+![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
 
-**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprende a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo. Por ejemplo, para la etiqueta *modelo-descendente-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
+**Cobertura**: Debería haber suficiente variedad en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que [!DNL Experience Manager] aprende a centrarse en las cosas correctas. If you&#39;re applying the same tag on visually dissimilar images, include at least five examples of each kind. Por ejemplo, para la etiqueta *modelo-descendente-pose*, incluya más imágenes de formación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](assets/do-not-localize/coverage_1.png)
 
@@ -118,27 +118,28 @@ Para crear y entrenar un modelo para etiquetas específicas de su empresa, siga 
 1. Cree las etiquetas necesarias y la estructura de etiquetas adecuada. Cargue las imágenes relevantes en el repositorio DAM.
 1. En [!DNL Experience Manager] interfaz de usuario, acceso **[!UICONTROL Recursos]** > **[!UICONTROL Formación de etiquetas inteligentes]**.
 1. Haga clic en **[!UICONTROL Crear]**. Proporcione un **[!UICONTROL Título]**, **[!UICONTROL Descripción]**.
-1. Haga clic en el icono de la carpeta en **[!UICONTROL Etiquetas]** campo . Se abre una ventana emergente.
+1. Click on the folder icon in **[!UICONTROL Tags]** field. Se abre una ventana emergente.
 1. Busque o seleccione las etiquetas adecuadas de las etiquetas existentes en `cq-tags` que desea agregar al modelo. Haga clic en **[!UICONTROL Siguiente]**. 
 
    >[!NOTE]
    >
-   >Puede ordenar la estructura de las etiquetas de forma ascendente o descendente en función de la variable **[!UICONTROL Nombre]** (orden alfabético), **[!UICONTROL Creado]** fecha, o **[!UICONTROL Modificado]** fecha.
+   >You can sort the tags structure in ascending or descending order based on the **[!UICONTROL Name]** (alphabetical order), **[!UICONTROL Created]** date, or **[!UICONTROL Modified]** date.
 
-1. En el **[!UICONTROL Seleccionar recursos]** cuadro de diálogo, haga clic en **[!UICONTROL Agregar recursos]** en cada etiqueta. Busque en el repositorio de DAM o busque el repositorio para seleccionar al menos 10 y como máximo 50 imágenes. Seleccione los recursos y no la carpeta. Una vez seleccionadas las imágenes, haga clic en **[!UICONTROL Select]**.
 
-   ![Ver el estado de la formación](assets/smart-tags-training-status.png)
+1. En el **[!UICONTROL Seleccionar recursos]** cuadro de diálogo, haga clic en **[!UICONTROL Agregar recursos]** en cada etiqueta. Busque en el repositorio de DAM o busque el repositorio para seleccionar al menos 10 y como máximo 50 imágenes. Select assets and not the folder. Una vez seleccionadas las imágenes, haga clic en **[!UICONTROL Select]**.
 
-1. Para obtener una vista previa de las miniaturas de las imágenes seleccionadas, haga clic en el acordeón delante de una etiqueta. Puede modificar la selección haciendo clic en **[!UICONTROL Agregar recursos]**. Una vez que esté satisfecho con la selección, haga clic en **[!UICONTROL Submit]**. La interfaz de usuario muestra una notificación en la parte inferior de la página que indica que se ha iniciado la formación.
-1. Compruebe el estado de la formación en el **[!UICONTROL Estado]** para cada modelo de etiqueta. Los estados posibles son [!UICONTROL Pendiente], [!UICONTROL Capacitado]y [!UICONTROL Error].
+   ![View training status](assets/smart-tags-training-status.png)
+
+1. To preview the thumbnails of the selected images, click the accordion in front of a tag. Puede modificar la selección haciendo clic en **[!UICONTROL Agregar recursos]**. Una vez que esté satisfecho con la selección, haga clic en **[!UICONTROL Submit]**. The user interface displays a notification at the bottom of the page indicating that the training is initiated.
+1. Compruebe el estado de la formación en el **[!UICONTROL Estado]** para cada modelo de etiqueta. Possible statuses are [!UICONTROL Pending], [!UICONTROL Trained], and [!UICONTROL Failed].
 
 ![Flujo de trabajo para entrenar el modelo de etiquetado para etiquetas inteligentes](assets/smart-tag-model-training-flow.png)
 
-*Figura: Pasos del flujo de trabajo de formación para formar el modelo de etiquetado.*
+*Figure: Steps of the training workflow to train tagging model.*
 
 ### Ver el estado y el informe de la formación {#training-status}
 
-Para comprobar si el servicio Etiquetas inteligentes está formado sobre las etiquetas en el conjunto de recursos de formación, revise el informe del flujo de trabajo de formación desde la consola Informes .
+To check whether the Smart Tags service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
 
 1. En [!DNL Experience Manager] interfaz, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Informes]**.
 1. En el **[!UICONTROL Informes de recursos]** página, haga clic en **[!UICONTROL Crear]**.
@@ -183,7 +184,7 @@ Para comprobar si el servicio Etiquetas inteligentes está formado sobre las eti
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Etiquetado de recursos con etiquetas inteligentes {#tag-assets}
+## Tag assets with Smart Tags {#tag-assets}
 
 Todos los tipos de recursos compatibles se etiquetan automáticamente mediante [!DNL Experience Manager Assets] cuando se cargue. El etiquetado está habilitado y funciona de forma predeterminada. [!DNL Experience Manager] aplica las etiquetas adecuadas en tiempo casi real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -213,39 +214,39 @@ Para moderar las etiquetas inteligentes de los recursos digitales:
 
 1. Select **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL OK]** para cerrar el [!UICONTROL Correcto] diálogo.
 
-1. Vaya a la [!UICONTROL Propiedades] para el recurso. Observe que a la etiqueta que promocionó se le asigna una alta relevancia y, por lo tanto, aparece más arriba en los resultados de búsqueda.
+1. Vaya a la [!UICONTROL Propiedades] para el recurso. Observe that the tag you promoted is assigned a high relevance and, therefore, appears higher in the search results.
 
 ### Comprender [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understand-search}
 
-De forma predeterminada, [!DNL Experience Manager] la búsqueda combina los términos de búsqueda con un `AND` cláusula. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. Al usar etiquetas inteligentes, se agrega un `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, piense en buscar `woman running`. Recursos con solo `woman` o solo `running` de forma predeterminada, las palabras clave de los metadatos no aparecen en los resultados de búsqueda. Sin embargo, un recurso etiquetado con `woman` o `running` el uso de etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Así que los resultados de la búsqueda son una combinación de:
+By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. Using smart tags does not change this default behavior. Al usar etiquetas inteligentes, se agrega un `OR` para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes aplicadas. Por ejemplo, piense en buscar `woman running`. Assets with just `woman` or just `running` keyword in the metadata do not appear in the search results by default. Sin embargo, un recurso etiquetado con `woman` o `running` el uso de etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Así que los resultados de la búsqueda son una combinación de:
 
 * Recursos con `woman` y `running` palabras clave en los metadatos.
 
-* Recursos inteligentes etiquetados con cualquiera de las palabras clave.
+* Assets smart tagged with either of the keywords.
 
-Los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. En el ejemplo anterior, el orden aproximado de visualización de los resultados de búsqueda es:
+The search results that match all search terms in metadata fields are displayed first, followed by the search results that match any of the search terms in the smart tags. In the above example, the approximate order of display of search results is:
 
-1. coincidencias de `woman running` en los distintos campos de metadatos.
-1. coincidencias de `woman running` en etiquetas inteligentes.
+1. matches of `woman running` in the various metadata fields.
+1. matches of `woman running` in smart tags.
 1. coincidencias de `woman` o `running` en etiquetas inteligentes.
 
 ## Limitaciones relacionadas con el etiquetado y prácticas recomendadas {#limitations}
 
-El etiquetado inteligente mejorado se basa en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de las etiquetas inteligentes tiene las siguientes limitaciones:
+Enhanced smart tagging is based on learning models of images and their tags. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual de las etiquetas inteligentes tiene las siguientes limitaciones:
 
 * Incapacidad para reconocer sutiles diferencias en imágenes. Por ejemplo, camisas ajustadas a la perfección frente a camisas ajustadas a la norma.
-* Incapacidad para identificar etiquetas basadas en pequeños patrones o partes de una imagen. Por ejemplo, logotipos en camisas.
+* Incapacidad para identificar etiquetas basadas en pequeños patrones o partes de una imagen. For example, logos on shirts.
 * El etiquetado es compatible con los idiomas que [!DNL Experience Manager] admite . Para obtener una lista de idiomas, consulte [Notas de la versión del servicio de contenido inteligente](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
-* Las etiquetas que no se gestionan están relacionadas con:
+* The tags that are not handled relate to:
 
    * Aspectos no visuales, abstractos. Por ejemplo, el año o la temporada de lanzamiento de un producto, el estado de ánimo o la emoción que evoca una imagen y una connotación subjetiva de un vídeo.
    * Diferencias visuales finas en productos como camisas con y sin collares o logotipos de productos pequeños incrustados en productos.
 
-Para entrenar el modelo, utilice las imágenes más adecuadas. La formación no se puede revertir o el modelo de formación no se puede eliminar. La precisión del etiquetado depende de la formación actual, por lo que debe hacerse con cuidado.
+To train the model, use the most appropriate images. La formación no se puede revertir o el modelo de formación no se puede eliminar. Your tagging accuracy depends on the current training, so do it carefully.
 
 <!-- TBD: Add limitations related to text files. -->
 
-Para buscar archivos con etiquetas inteligentes (normales o mejoradas), utilice el [!DNL Assets] búsqueda (búsqueda de texto completo). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
+To search for files with smart tags (regular or enhanced), use the [!DNL Assets] search (full-text search). No hay predicado de búsqueda independiente para las etiquetas inteligentes.
 
 >[!NOTE]
 >
