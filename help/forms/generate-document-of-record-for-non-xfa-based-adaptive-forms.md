@@ -2,9 +2,9 @@
 title: Generar documento de registro para Forms adaptable
 description: Explica cómo se puede generar una plantilla para un documento de registro (DoR) para Adaptive Forms.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3658'
 ht-degree: 2%
 
 ---
@@ -403,10 +403,6 @@ La configuración del componente Documento de registro está disponible en sus p
 * **Excluir campos de DoR si están ocultos:** Al establecer la propiedad se anula el comportamiento de la propiedad de nivel de campo &quot;Excluir del documento de registro&quot; cuando no es verdadera. Si los campos están ocultos en el momento del envío del formulario, se excluyen del documento de registro si la propiedad está establecida en true, siempre que la propiedad &quot;Excluir del documento de registro&quot; no esté establecida.
 
 ## Usar un archivo XCI personalizado
-
->[!NOTE]
->
-> Esta función está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](/help/release-notes/prerelease.md#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 Un archivo XCI ayuda a establecer varias propiedades de un documento. Forms as a Cloud Service tiene un archivo XCI maestro. Puede utilizar un archivo XCI personalizado para anular una o más propiedades predeterminadas especificadas en el archivo XCI maestro. Por ejemplo, puede optar por incrustar una fuente en un documento o habilitar la propiedad etiquetada para todos los documentos. La siguiente tabla especifica las opciones de XCI:
 
