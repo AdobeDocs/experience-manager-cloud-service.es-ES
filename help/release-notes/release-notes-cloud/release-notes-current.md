@@ -158,4 +158,4 @@ El 16 de marzo de 2022 es la fecha de lanzamiento del Analizador de prácticas r
 
 * En algunos casos, BPA no se pudo ejecutar debido a que FormsSelectiveFeaturesAnalysis arrojó un error de aserción. Esto se ha corregido.
 * BPA informaba de conclusiones relacionadas con el patrón de WRK como IMPORTANTE en lugar de como CRÍTICO. Esto se ha corregido.
-* BPA informaba incorrectamente de conclusiones relacionadas con las definiciones de índice OAK en ui.apps como CRÍTICO. Esto se ha corregido
+* BPA informaba incorrectamente de conclusiones relacionadas con las definiciones de índice OAK en ui.apps como CRÍTICO. Esto se ha corregido.
