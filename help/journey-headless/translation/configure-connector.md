@@ -2,9 +2,9 @@
 title: Configuración del conector de traducción (AEM sin encabezado)
 description: Aprenda a conectar AEM a un servicio de traducción.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
@@ -99,6 +99,11 @@ Para crear una nueva configuración de traducción:
    1. **Traducir metadatos** : Marque esta opción para traducir metadatos de recursos.
    1. **Traducir etiquetas** : Marque esta opción para traducir etiquetas asociadas al recurso.
    1. **Ejecución automática de la traducción** : compruebe esta propiedad si desea que las traducciones se envíen automáticamente a su servicio de traducción.
+   1. **Deshabilitar traducción de solo actualización** - Cuando se marca esta opción, actualizar el proyecto de traducción envía todos los campos traducibles para su traducción, no solo los que se han cambiado desde la última traducción. La actualización del proyecto de traducción se tratará más adelante en el recorrido.
+   1. **Habilitar campos del modelo de contenido para su traducción** - Marque esta opción para que la configuración de traducción reconozca automáticamente los campos de los modelos de contenido en función del **Translatable** indicador.
+      * Si está disponible, se debe marcar esta opción para simplificar el proceso de traducción.
+      * Esta opción solo está disponible en el canal de prelanzamiento de AEM as a Cloud Service.
+      * Consulte la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre el canal de prelanzamiento.
 
 1. Haga clic o pulse en **Guardar y cerrar**.
 
@@ -138,3 +143,4 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin
 
 * [Configuración del marco de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md) - Revise una lista de conectores de traducción seleccionados y aprenda a configurar el marco de integración de traducción para integrarse con servicios de traducción de terceros.
 * [Conexión al traductor de Microsoft](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM proporciona una cuenta de traducción de Microsoft de prueba para realizar pruebas.
+* [Canal de prelanzamiento as a Cloud Service de AEM](/help/release-notes/prerelease.md#enable-prerelease) : Aprenda a incluirse en el canal de prelanzamiento de AEM as a Cloud Service para probar nuevas y futuras funciones.

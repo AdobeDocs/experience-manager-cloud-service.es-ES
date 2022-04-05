@@ -1,17 +1,17 @@
 ---
-title: Modelado de contenido para usuarios sin encabezado con AEM introducción
-description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y cómo modelar el contenido de su proyecto.
+title: 'Modelado de contenido para AEM como un CMS sin encabezado: una introducción'
+description: Introducción al uso de las funciones de Adobe Experience Manager as a Cloud Service as a Headless CMS para modelar contenido para su proyecto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# Modelado de contenido para Headless con AEM: introducción {#architect-headless-introduction}
+# Modelado de contenido para AEM como un CMS sin encabezado: una introducción {#architect-headless-introduction}
 
-En esta parte del [recorrido de arquitecto de contenido sin encabezado de AEM](overview.md), puede conocer los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM) as a Cloud Service.
+En esta parte del [recorrido de arquitecto de contenido sin encabezado de AEM](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido al utilizar Adobe Experience Manager (AEM) as a Cloud Service como un CMS sin encabezado.
 
 Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se modela el contenido para que no tenga encabezado. Después de leer, debe:
 

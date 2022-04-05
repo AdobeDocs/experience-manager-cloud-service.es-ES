@@ -2,9 +2,9 @@
 title: Introducción a la traducción sin encabezado AEM
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan AEM herramientas de traducción.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: d5a7138cd5e3e9f0febe20b7447589beadc45554
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -89,11 +89,14 @@ Dado que los modelos de contenido definen la estructura del contenido, debe sabe
 1. Toque o haga clic en uno de los campos del modelo. AEM marca y los detalles de ese campo se muestran en la columna derecha.
    ![Detalles del Editor del modelo de fragmento de contenido](assets/content-fragment-model-editor-detail.png)
 
-Tome nota del campo **Nombre de propiedad** para todos los campos que deben traducirse. Necesitará esta información más adelante en el recorrido. Estos **Nombre de propiedad** s son necesarios para informar AEM qué campos del contenido deben traducirse.
-
 >[!TIP]
 >
->Por lo general, el arquitecto de contenido proporciona al especialista de traducción la **Nombre de propiedad** de todos los campos requeridos para la traducción. Estos nombres de campo son necesarios para más adelante en el recorrido. Los pasos anteriores se proporcionan para la comprensión del especialista en traducción.
+>Generalmente, el arquitecto de contenido es responsable de identificar qué campos se necesitan para la traducción. Los pasos anteriores se proporcionan para la comprensión del especialista en traducción.
+
+La forma de administrar la traducción de los campos del Modelo de contenido depende de si utiliza el canal de prelanzamiento de AEM as a Cloud Service. Consulte la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre el canal de prelanzamiento.
+
+* **Si utiliza el canal de prelanzamiento**, el arquitecto de contenido habilita la variable **Translatable** en todos los campos del Modelo de contenido que deban traducirse.
+* **Si no utiliza el canal de prelanzamiento**, el arquitecto de contenido le proporciona la variable **Nombre de propiedad** para todos los campos que deben traducirse. Necesitará esta información más adelante en el recorrido. Estos **Nombre de propiedad** s son necesarios para informar AEM qué campos del contenido deben traducirse.
 
 ### Fragmentos de contenido {#content-fragments}
 
@@ -167,10 +170,10 @@ Debe tomar nota de la ruta específica del contenido, ya que será necesaria má
 Ahora que comprende qué son los fragmentos de contenido y la importancia de la estructura de contenido, podemos ver cómo traducir este contenido. Las herramientas de traducción en AEM son bastante poderosas, pero son simples de entender a un alto nivel.
 
 * **Conector de traducción** - El conector es el vínculo entre AEM y el servicio de traducción que utiliza.
-* **Reglas de traducción** - Las reglas definen qué contenido bajo rutas particulares se debe traducir.
+* **Reglas de traducción** - Las reglas definen qué contenido bajo rutas particulares se debe traducir. Las reglas solo son necesarias si no utiliza el canal de prelanzamiento de AEM.
 * **Proyectos de traducción** - Los proyectos de traducción reúnen contenido que debe tratarse como un esfuerzo de traducción único y rastrean el progreso de la traducción, interconectándose con el conector para transmitir el contenido a traducir y recibirlo de nuevo desde el servicio de traducción.
 
-Normalmente, solo se configura un conector una vez para la instancia y las reglas por proyecto sin encabezado. A continuación, utilice proyectos de traducción para traducir su contenido y mantener sus traducciones actualizadas de forma continua.
+Normalmente, solo configura el conector una vez para su instancia. Si se requieren reglas, estas se configuran por proyecto sin encabezado. A continuación, utilice proyectos de traducción para traducir su contenido y mantener sus traducciones actualizadas de forma continua.
 
 ## Siguientes pasos {#what-is-next}
 
@@ -190,3 +193,4 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin
 * [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md) : Aprenda cómo las reglas de traducción identifican el contenido que necesita traducción.
 * [Configuración del marco de integración de traducción](/help/sites-cloud/administering/translation/integration-framework.md) - Aprenda a configurar el marco de integración de traducción para integrarlo con servicios de traducción de terceros.
 * [Administración de proyectos de traducción](/help/sites-cloud/administering/translation/managing-projects.md) - Aprenda a crear y administrar proyectos de traducción automática y humana en AEM.
+* [Canal de prelanzamiento as a Cloud Service de AEM](/help/release-notes/prerelease.md#enable-prerelease) : Aprenda a incluirse en el canal de prelanzamiento de AEM as a Cloud Service para probar nuevas y futuras funciones.

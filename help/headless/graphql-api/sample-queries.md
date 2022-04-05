@@ -3,7 +3,7 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
@@ -40,7 +40,7 @@ Vea estas consultas de muestra para ver de forma ilustrada la creación de consu
 >
 >Según la instancia, puede acceder directamente a la [interfaz de GraphiQL incluida con la API de GraphQL de AEM](/help/headless/graphql-api/graphiql-ide.md) para enviar y probar consultas.
 >
->Por ejemplo: `http://localhost:4502/content/graphiql.html`
+>Por ejemplo: `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >

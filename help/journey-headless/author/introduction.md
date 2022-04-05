@@ -1,84 +1,86 @@
 ---
-title: 'Creación para usuarios sin encabezado con AEM: una introducción'
-description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager as a Cloud Service y a cómo crear contenido para su proyecto.
-exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+title: 'Creación para AEM como un CMS sin encabezado: una introducción'
+description: Introducción al uso de las funciones de Adobe Experience Manager as a Cloud Service as a Headless CMS para crear contenido para su proyecto.
+exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 4%
+source-wordcount: '665'
+ht-degree: 2%
 
 ---
 
-# Creación para usuarios sin encabezado con AEM: una introducción {#author-headless-introduction}
+# Creación para AEM como un CMS sin encabezado: una introducción {#architect-headless-introduction}
 
-En esta parte del [recorrido de autor de contenido sin encabezado de AEM](overview.md), puede conocer los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM) as a Cloud Service.
+En esta parte del [recorrido de autor de contenido sin encabezado de AEM](overview.md), puede conocer los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido al utilizar Adobe Experience Manager (AEM) as a Cloud Service como un CMS sin encabezado. Esto implica estructurar y crear el contenido para una entrega de contenido sin encabezado.
 
-## Objetivo {#objective}
+Objetivo
 
 * **Audiencia**: Principiante
 * **Objetivo**: Introduzca los conceptos y la terminología relevantes para la creación sin encabezado.
 
-## Sistema de gestión de contenido (CMS) {#content-management-system}
+## Sistema de gestión de contenido (CMS) {#objective}
 
-¿Qué es un sistema de administración de contenido?
+* **¿Qué es un sistema de administración de contenido?**
+* **Un sistema de gestión de contenido (CMS) es exactamente lo que dice: un sistema informático utilizado para administrar contenido. Es un poco general, por lo que para ser más preciso, se utiliza (normalmente) para administrar el contenido que desea poner a disposición en los sitios web.**
 
-Un sistema de gestión de contenido (CMS) es exactamente lo que dice: un sistema informático utilizado para administrar contenido. Es un poco general, por lo que para ser más preciso, se utiliza (normalmente) para administrar el contenido que desea poner a disposición en los sitios web.
-
-## CMS sin encabezado {#headless-cms}
+## CMS sin encabezado {#full-stack}
 
 Sin encabezado es un término utilizado para describir sistemas que efectivamente desasocian el contenido de la forma en que se muestra ese contenido en la web.
 
-Tradicionalmente, administraría su contenido en un CMS, y el mismo CMS sería responsable de procesar ese contenido en sus páginas web.
+![Tradicionalmente, administraría su contenido en un CMS, y el mismo CMS sería responsable de procesar ese contenido en sus páginas web.](/help/journey-headless/developer/assets/full-stack.png)
 
 Ahora, sin encabezado significa que el conjunto de contenido se puede administrar en el CMS y luego acceder a él mediante una o más aplicaciones (independientes).
 
-Esto significa que el contenido se puede entregar a cualquier dispositivo, en una amplia gama de formatos. Esto hace que todo el proceso sea mucho más flexible y también significa que no necesita preocuparse por el diseño y el formato.
-
->[!NOTE]
->
->Si desea obtener más información sobre los detalles técnicos de CMS sin encabezado, puede leer más en Información sobre el desarrollo sin encabezado de CMS.
-
-## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
+* Esto significa que el contenido se puede entregar a cualquier dispositivo, en una amplia gama de formatos. Esto hace que todo el proceso sea mucho más flexible y también significa que no necesita preocuparse por el diseño y el formato.
+* [!NOTE]
+* Si desea obtener más información sobre los detalles técnicos de CMS sin encabezado, puede leer más en Información sobre el desarrollo sin encabezado de CMS.
+* Adobe Experience Manager as a Cloud Service
 
 Entonces, ¿qué es AEM?
 
-En primer lugar, AEM es un sistema de gestión de contenido con una amplia gama de funciones que también se pueden personalizar para satisfacer sus necesidades.
+![En primer lugar, AEM es un sistema de gestión de contenido con una amplia gama de funciones que también se pueden personalizar para satisfacer sus necesidades.](/help/journey-headless/developer/assets/adding-channel.png)
 
 Esto significa que se puede utilizar como:
 
-* CMS sin encabezado
-   * Para que no tenga encabezado, el contenido se puede crear como **Fragmentos de contenido**.
+## CMS sin encabezado {#the-head}
+
+Para que no tenga encabezado, el contenido se puede crear como **Fragmentos de contenido**.
 Son elementos de contenido independientes a los que se puede acceder directamente desde una amplia gama de aplicaciones, ya que tienen una estructura predefinida basada en **Modelos de fragmento de contenido**.
 Esto significa que el contenido puede llegar a una amplia gama de dispositivos, en una amplia gama de formatos y con una amplia selección de funcionalidades.
 (Y como doble golpe, estos fragmentos también se pueden utilizar al construir páginas web AEM, si lo desea).
 
-* CMS &quot;tradicional&quot;
-   * El contenido se crea para páginas web mediante una serie de componentes que definen cómo se representará el contenido en el sitio web. Incluso aquí AEM es extremadamente flexible, ya que el equipo del proyecto puede desarrollar componentes personalizados.
+CMS &quot;tradicional&quot;********
 
-## Modelado de contenido {#content-modeling}
+![El contenido se crea para páginas web mediante una serie de componentes que definen cómo se representará el contenido en el sitio web. Incluso aquí AEM es extremadamente flexible, ya que el equipo del proyecto puede desarrollar componentes personalizados.](/help/journey-headless/developer/assets/headless-cms.png)
+
+Modelado de contenido
 
 Por lo tanto, el modelado de contenido (también conocido como modelado de datos) es otro término técnico. ¿Por qué debería interesarle como autor?
 
-Para que las aplicaciones sin encabezado puedan acceder a su contenido y hacer algo con él, su contenido realmente necesita tener una estructura predefinida. Sería posible tener tu contenido como forma libre, pero haría vida *very* complicada para las aplicaciones.
+## Para que las aplicaciones sin encabezado puedan acceder a su contenido y hacer algo con él, su contenido realmente necesita tener una estructura predefinida. Sería posible tener tu contenido como forma libre, pero haría vida *very* complicada para las aplicaciones. {#content-modeling}
 
 Básicamente, el proceso de definición de la estructura a la que se adhiere el contenido implica diseñar un modelo, que se denomina modelado de datos.
 
 Para AEM la función de arquitecto de contenido (normalmente una persona diferente), realizará el modelado de datos para diseñar una serie de **Modelos de fragmento de contenido** - que luego utiliza como base para el contenido mediante **Fragmentos de contenido**.
 
->[!NOTE]
->
->Si desea obtener más información sobre el modelado de datos, puede leer más en el Recorrido AEM Arquitecto de contenido sin encabezado .
+[!NOTE]******
 
-## Siguientes pasos {#whats-next}
+### Si desea obtener más información sobre el modelado de datos, puede leer más en el Recorrido AEM Arquitecto de contenido sin encabezado . {#access-content}
+
+Siguientes pasos
 
 Ahora que ha aprendido los conceptos y la terminología, el siguiente paso es [Descubra los conceptos básicos de la creación de fragmentos de contenido](basics.md). Esto introducirá la gestión básica de AEM junto con cómo crear fragmentos de contenido.
 
-## Recursos adicionales {#additional-resources}
+Recursos adicionales**
 
-* recorrido para desarrolladores AEM sin encabezado
-   * [Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS](/help/journey-headless/developer/learn-about.md)
-   * [Aprenda a modelar el contenido](/help/journey-headless/developer/model-your-content.md)
+recorrido para desarrolladores AEM sin encabezado
 
-* Recorrido de arquitecto de contenido de AEM Headless
+## Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS {#whats-next}
+
+Aprenda a modelar el contenido[](basics.md)
+
+## Recorrido de arquitecto de contenido de AEM Headless {#additional-resources}
 
 * AEM Recorrido de traducción de contenido sin encabezado
+   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)

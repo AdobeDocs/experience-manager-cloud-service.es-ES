@@ -2,12 +2,13 @@
 title: Traducir contenido (AEM sin encabezado)
 description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
+
 
 # Traducir contenido {#translate-content}
 
@@ -21,6 +22,10 @@ En el documento anterior del recorrido de traducción sin AEM, [Configurar regla
 * Puede definir sus propias reglas de traducción.
 
 Ahora que sus reglas de conector y traducciones están configuradas, este artículo le guía por el siguiente paso de traducir su contenido sin encabezado.
+
+>[!NOTE]
+>
+>Si omitió el [Configurar reglas de traducción](translation-rules.md) paso de este recorrido, ya que está en el canal de prelanzamiento de AEM as a Cloud Service, no necesita preocuparse por las reglas de traducción como se menciona en este documento.
 
 ## Objetivo {#objective}
 

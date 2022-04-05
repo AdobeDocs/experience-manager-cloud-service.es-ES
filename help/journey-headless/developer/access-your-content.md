@@ -2,7 +2,7 @@
 title: Cómo acceder al contenido a través de las API de envío de AEM
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 8%
@@ -272,7 +272,7 @@ Se utilizarán los modelos de fragmento:
 
 Las consultas se pueden introducir en la interfaz de GraphiQL, por ejemplo en:
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaz de GraphiQL](assets/graphiql-interface.png "Interfaz de GraphiQL")
 

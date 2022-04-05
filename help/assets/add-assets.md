@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ También puede optar por realizar un procesamiento adicional en los recursos car
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | Resulta útil cuando los creativos y los especialistas en marketing trabajan en recursos dentro de los [!DNL Creative Cloud] aplicaciones de escritorio. | Creativo, experto en marketing |
 | [Ingesta masiva de recursos](#asset-bulk-ingestor) | Recomendado para migraciones a gran escala y entradas masivas ocasionales. Solo para almacenes de datos compatibles. | Administrador, Desarrollador |
 
-## Cargar recursos {#upload-assets}
+## Carga de recursos {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -219,36 +219,37 @@ Durante la importación masiva, [!DNL Experience Manager] busque las carpetas ex
 
 **Gestión del nombre del recurso en la importación masiva**
 
-Para los nombres de archivo de recursos, la ruta y el nombre del Jcr se sanean mediante la API: `JcrUtil.escapeIllegalJcrChars`.
+Para los nombres de archivo de recursos, el nombre y la ruta de JCR se sanean mediante la API: `JcrUtil.escapeIllegalJcrChars`.
 
-* Mantener el Unicode tal cual
-* Sustituya los caracteres especiales por su código de escape de URL, por ejemplo, `new*asset.png` se actualiza a `new%2Aasset.png`:
+* Los caracteres Unicode no se cambian
+* Sustituya los caracteres especiales por su código de escape de URL, por ejemplo, `new asset.png` se actualiza a `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **Gestión del nombre de la carpeta en la importación masiva**
 
-Para los nombres de archivo de carpeta, la ruta y nombre del Jcr se saneaba usando la API: `JcrUtil.createValidName`.
+Para los nombres de archivo de carpeta, el nombre y la ruta de JCR se eliminan mediante la API: `JcrUtil.createValidName`.
 
-* Convertir mayúsculas a minúsculas
-* Mantener unicode tal cual
-* Sustituya los caracteres especiales por un guión (&#39;-&#39;), por ejemplo, `new*asset.png` se actualiza a `new-asset.png`:
+* Los caracteres en mayúsculas se convierten a minúsculas
+* Los caracteres Unicode no se cambian
+* Sustituya los caracteres especiales por un guión (&#39;-&#39;), por ejemplo, `new asset.png` se actualiza a `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ Para los nombres de archivo de carpeta, la ruta y nombre del Jcr se saneaba usan
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

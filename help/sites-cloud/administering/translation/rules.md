@@ -4,9 +4,9 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1292'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,22 @@ Las reglas de traducción identifican el contenido que se debe traducir para pá
 >[!TIP]
 >
 >Si es nuevo en traducir contenido, consulte nuestra [Recorrido de traducción de sitios,](/help/journey-sites/translation/overview.md) que es una ruta guiada a través de la traducción del contenido de AEM Sites mediante las poderosas herramientas de traducción de AEM, ideal para aquellos que no tengan experiencia de traducción ni AEM.
+
+## Fragmentos de contenido y reglas de traducción {#content-fragments}
+
+Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la variable **Habilitar campos del modelo de contenido para su traducción** no se ha activado en la [nivel de configuración del marco de integración de traducción.](integration-framework.md#assets-configuration-properties)
+
+Si la variable **Habilitar campos del modelo de contenido para su traducción** está activa, AEM usará la opción **Translatable** campo en [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar si el campo se va a traducir. En este caso, [reglas de traducción](rules.md) se sustituyen.
+
+Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la variable **Habilitar campos del modelo de contenido para su traducción** en la configuración del marco de integración de traducción debe estar desactivada.
+
+>[!NOTE]
+>
+>Esta función está disponible en el canal de prelanzamiento.
+> 
+>Consulte la [Documentación del canal previa al lanzamiento](/help/release-notes/prerelease.md#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
+
+## Información general {#overview}
 
 Las páginas y los recursos se representan como nodos en el repositorio JCR. El contenido extraído es uno o más valores de propiedad de los nodos. Las reglas de traducción identifican las propiedades que contienen el contenido que se va a extraer.
 

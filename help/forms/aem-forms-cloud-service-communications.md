@@ -2,9 +2,9 @@
 title: AEM Forms as a Cloud Service - Comunicaciones
 description: Combine datos automáticamente con plantillas XDP y PDF o genere resultados en los formatos PCL, ZPL y PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 # Uso del procesamiento sincrónico {#sync-processing-introduction}
 
-La funcionalidad de comunicaciones le ayuda a crear documentos estandarizados, personalizados y aprobados por la marca, como correspondencia comercial, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, facturas mensuales o kits de bienvenida.
+Las comunicaciones le permiten crear, ensamblar y entregar comunicaciones personalizadas y orientadas a la marca, como correspondencia comercial, documentos, declaraciones, cartas de procesamiento de reclamaciones, avisos de beneficios, cartas de procesamiento de reclamaciones, facturas mensuales y kits de bienvenida. Puede utilizar las API de comunicaciones para combinar una plantilla (XFA o PDF) con datos de clientes para generar documentos en los formatos PDF, PS, PCL, DPL, IPL y ZPL.
 
-La capacidad proporciona API para generar y manipular documentos. Puede generar o manipular un documento bajo demanda o crear un trabajo por lotes para generar varios documentos a intervalos definidos.
+Imagine un escenario en el que tiene una o más plantillas y varios registros de datos XML para cada plantilla. Puede utilizar las API de comunicaciones para generar un documento de impresión para cada registro. <!-- You can also combine the records into a single document. --> El resultado es un documento PDF no interactivo. Un documento PDF no interactivo no permite a los usuarios introducir datos en sus campos.
+
 
 Las comunicaciones proporcionan API para la generación de documentos bajo demanda y programados. Puede utilizar API sincrónicas para API bajo demanda y por lotes (API asincrónicas) para la generación programada de documentos:
 
@@ -24,7 +25,19 @@ Las comunicaciones proporcionan API para la generación de documentos bajo deman
 
 ## Usar operaciones sincrónicas {#batch-operations}
 
-Una operación sincrónica es un proceso de generación o manipulación de documentos de forma lineal. Admite dos tipos de autenticación:
+Una operación sincrónica es un proceso de generación de documentos de forma lineal. Hay API independientes disponibles para:
+
+* Genera un documento PDF a partir de una plantilla y combina los datos con ella.
+* Genere un documento PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) desde un archivo XDP o documento PDF.
+* Montaje de documentos de PDF
+* Desmontar documentos del PDF
+* Convertir un documento en documento compatible con el PDF/A
+* Validación de un documento compatible con el PDF/A
+
+
+### Autenticar una llamada de API
+
+Las operaciones sincrónicas admiten dos tipos de autenticación:
 
 * **Autenticación básica**: La autenticación básica es un esquema de autenticación simple integrado en el protocolo HTTP. El cliente envía solicitudes HTTP con el encabezado Autorización que contiene la palabra Básico seguida de un espacio y una cadena codificada base64 username:password. Por ejemplo, para autorizar como administrador/administrador, el cliente envía Basic [nombre de usuario de la cadena codificada base64]: [contraseña de cadena codificada base64].
 
@@ -40,16 +53,17 @@ Una operación sincrónica es un proceso de generación o manipulación de docum
    >
    >Adobe recomienda utilizar la autenticación basada en token en un entorno de producción.
 
-### (Solo API de generación de documentos) Requisitos previos {#pre-requisites}
 
-Para utilizar API sincrónicas para la generación de documentos, se requiere lo siguiente:
+### (Solo para las API de generación de documentos) Configuración de recursos y permisos
+
+Para utilizar API sincrónicas, se requiere lo siguiente:
 
 * Plantillas PDF o XDP
 * [Datos que se van a combinar con plantillas](#form-data)
 * Usuarios con privilegios de administrador de Experience Manager
 * Cargar plantillas y otros recursos a la instancia de Cloud Service de Experience Manager Forms
 
-#### Cargar plantillas y otros recursos a la instancia de Experience Manager
+### (Solo para las API de generación de documentos) Cargar plantillas y otros recursos a la instancia de Experience Manager
 
 Una organización suele tener varias plantillas. Por ejemplo, una plantilla para los extractos de tarjetas de crédito, los estados de beneficios y las solicitudes de reivindicación. Cargue todas estas plantillas XDP y PDF en la instancia de Experience Manager. Para cargar una plantilla:
 
@@ -58,14 +72,10 @@ Una organización suele tener varias plantillas. Por ejemplo, una plantilla para
 1. Haga clic en Crear > Carpeta y cree una carpeta. Abra la carpeta.
 1. Haga clic en Crear > Cargar archivo y cargue las plantillas.
 
-### Usar API sincrónica para generar documentos
 
-Hay API independientes disponibles para:
+### Invocar una API
 
-* Genera un documento PDF a partir de una plantilla y combina los datos con ella.
-* Genere un documento PostScript (PS), Printer Command Language (PCL), Zebra Printing Language (ZPL) desde un archivo XDP o documento PDF.
-
-La variable [Documentación de referencia de API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. La documentación de referencia de la API también está disponible en formato .yaml . Puede descargar el .yaml para [API sincrónicas](assets/sync.yaml) y cárguelo en postman para comprobar la funcionalidad de las API.
+La variable [Documentación de referencia de API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) proporciona información detallada sobre todos los parámetros, métodos de autenticación y diversos servicios proporcionados por las API. La documentación de referencia de la API también proporciona un archivo de definición de API en formato .yaml. Puede descargar el archivo .yaml y cargarlo en postman para comprobar la funcionalidad de las API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
