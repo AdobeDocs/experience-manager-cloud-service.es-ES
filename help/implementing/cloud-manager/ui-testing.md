@@ -2,9 +2,9 @@
 title: Pruebas de IU
 description: La prueba de IU personalizada es una función opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones personalizadas
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1338'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,6 @@ ht-degree: 1%
 >abstract="La prueba de IU personalizada es una función opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones. Las pruebas de interfaz de usuario son pruebas basadas en Selenium empaquetadas en una imagen Docker para permitir una amplia variedad de idiomas y marcos (como Java y Maven, Node y WebDriver.io, o cualquier otro marco y tecnología creados en Selenium)."
 
 La prueba de IU personalizada es una función opcional que le permite crear y ejecutar automáticamente pruebas de IU para sus aplicaciones.
-
->[!NOTE]
-> Las canalizaciones de fase y producción creadas antes del 10 de febrero de 2021 deben actualizarse para utilizar las pruebas de IU tal como se describe en esta página.
-> Consulte [Canalizaciones CI-CD en Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para obtener información sobre la configuración de la canalización.
 
 ## Información general {#custom-ui-testing}
 
@@ -62,12 +58,9 @@ Para incluir un `testing.properties` en el artefacto de compilación, agregue un
 
 >[!NOTE]
 >
->Si el proyecto no incluye esta línea, deberá editar este archivo para optar por la prueba de IU. Si el archivo tiene una línea que aconseja no editarlo, desestime ese consejo.
-
->[!NOTE]
+>Si el proyecto no incluye esta línea, deberá editar el archivo para optar por la prueba de IU.
 >
->Las canalizaciones de producción creadas antes del 10 de febrero de 2021 deberán actualizarse para utilizar las pruebas de IU tal como se describe en esta sección. Esto significa que el usuario debe editar la canalización de producción y hacer clic en **Guardar** desde la interfaz de usuario aunque no se hayan realizado cambios.
->Consulte [Configuración de la canalización de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager) para obtener más información sobre la configuración de la canalización.
+>El archivo puede contener una línea que aconseja no editarlo. Esto se debe a que se introdujo en el proyecto antes de que se introdujera la prueba de IU de inclusión y a que los clientes no tenían la intención de editar el archivo. Esto se puede ignorar con seguridad.
 
 ## Creación de pruebas de interfaz de usuario {#building-ui-tests}
 
@@ -177,7 +170,7 @@ Las siguientes variables de entorno se pasarán a la imagen de Docker en tiempo 
 | Variable | Ejemplos | Descripción |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | La URL del servidor de Selenium |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | Implementación del explorador utilizada por el servidor de Selenium |
+| `SELENIUM_BROWSER` | `chrome` | Implementación del explorador utilizada por el servidor de Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | Dirección URL de la instancia de autor de AEM |
 | `AEM_AUTHOR_USERNAME` | `admin` | El nombre de usuario para iniciar sesión en la instancia de autor de AEM |
 | `AEM_AUTHOR_PASSWORD` | `admin` | La contraseña para iniciar sesión en la instancia de autor de AEM |
@@ -198,7 +191,7 @@ Una vez que el extremo de estado de Selenium responde con una respuesta positiva
 
 ### Generar informes de prueba {#generate-test-reports}
 
-La imagen Docker debe generar informes de prueba en formato XML JUnit y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. El formato JUnit XML es un formato ampliamente utilizado para informar sobre los resultados de las pruebas. Si la imagen Docker utiliza Java y Maven, tanto la variable [Complemento Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) y [Complemento Maven FailedSafe](https://maven.apache.org/surefire/maven-failsafe-plugin/).
+La imagen Docker debe generar informes de prueba en formato XML JUnit y guardarlos en la ruta especificada por la variable de entorno `REPORTS_PATH`. El formato JUnit XML es un formato ampliamente utilizado para informar sobre los resultados de las pruebas. Si la imagen Docker utiliza Java y Maven, los módulos de prueba estándar como [Complemento Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) y [Complemento Maven FailedSafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) puede generar estos informes de forma predeterminada.
 
 Si la imagen Docker está implementada con otros lenguajes de programación o ejecutores de prueba, compruebe la documentación de las herramientas seleccionadas para generar informes XML de JUnit.
 
