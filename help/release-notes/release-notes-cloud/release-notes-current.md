@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 372e40eb90d87d9ed366e08a3c0117068542680b
+source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 34%
+source-wordcount: '1099'
+ht-degree: 43%
 
 ---
 
@@ -96,40 +96,7 @@ Eche un vistazo a la [Información general sobre la versión de marzo de 2022](h
 
 ## Cloud Manager {#cloud-manager}
 
-### Fecha de versión de febrero {#release-date-cm-feb}
-
-La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2022.02.0 es el 10 de febrero de 2022. La próxima versión está prevista para el 10 de marzo de 2022.
-
-### Novedades {#what-is-new-cm-feb}
-
-* Nueva aceleración [Canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) se han introducido para implementar exclusivamente la configuración de HTTPD/Dispatcher.
-   * Debe estar en AEM versión `2021.12.6151.20211217T120950Z` o más reciente y [inclusión en el modo flexible de las herramientas de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) para utilizar esta función.
-   * Esta función se implementará por fases en las dos semanas siguientes a la versión de 2022.02.0.
-* La experiencia de página de aterrizaje de Cloud Manager se ha actualizado para ofrecer una navegación mejorada, un fácil cambio entre las vistas de cuadrícula/mosaico y ventanas emergentes para obtener un resumen rápido del programa.
-* Un nuevo umbral fallido (`< D`) se ha agregado a la variable [métrica de clasificación de fiabilidad.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
-   * Los clientes con problemas de calidad graves que afectan a la estabilidad del sistema, relacionados principalmente con índices no válidos y procesos de flujo de trabajo, no podrán realizar implementaciones hasta que se resuelvan dichos problemas.
-* La gravedad de la variable `BannedPath` [regla de calidad](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) se ha cambiado de bloqueador a crítico.
-* El asistente de canalización informará al usuario cuando sea necesario actualizar el entorno de AEM antes de configurar un [Canalizaciones de configuración de nivel web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) asociada a él.
-
-### Correcciones de errores {#bug-fixes-cm-feb}
-
-* Las contraseñas antiguas del repositorio de Git ahora siempre se invalidan cuando se genera una nueva contraseña.
-* La actualización de variables de entorno a través de la API ya no interfiere con la ejecución de una canalización en situaciones excepcionales.
-
-### Fecha de la versión de marzo {#release-date-cm-march}
-
-La fecha de la versión de Cloud Manager 2022.3.0 en AEM as a Cloud Service del 10 de marzo de 2022. La próxima versión está prevista para el 7 de abril de 2022.
-
-### Novedades {#what-is-new-cm-march}
-
-* El acceso a AEM registro de entorno se puede realizar con la función de desarrollador .
-
-### Correcciones de errores {#bug-fixes-cm-march}
-
-* Un subconjunto de repositorios Git creados manualmente tenía un valor de nombre incorrecto que impedía que la función de reutilización de artefactos de compilación fuera efectiva. Los nombres de esos repositorios se han cambiado y los usuarios verán el nombre corregido en la interfaz de usuario/API de Cloud Manager.
-* Los artefactos de compilación de las canalizaciones que no son de producción se reutilizaron incorrectamente en las canalizaciones de pila completas de producción.
-* Al añadir o editar una canalización de calidad de código, ya no se muestran las opciones para gestionar errores de métricas.
-* Algunas configuraciones de variables de canalización inesperadas podrían causar en el paso de compilación.
+Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Herramienta de transferencia de contenido {#ctt-release}
 
