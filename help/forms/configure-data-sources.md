@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: a6268415217894dae5d3aae77256855717798d3c
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -180,6 +180,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 >[!NOTE]
 >
+> El modelo de datos de formulario es compatible [OData versión 4.0](https://www.odata.org/documentation/) y posterior.
 >Para obtener una guía paso a paso sobre la configuración [!DNL Microsoft Dynamics 365], en línea o in situ, consulte [[!DNL Microsoft Dynamics] Configuración de OData](ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Pulse para seleccionar la carpeta en la que desea crear una configuración de nube.
