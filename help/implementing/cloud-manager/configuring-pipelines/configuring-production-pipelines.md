@@ -3,9 +3,9 @@ title: Configuración de canalizaciones de producción
 description: Aprenda a configurar canalizaciones de producción para crear e implementar su código en entornos de producción.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Para finalizar la configuración de la canalización de producción de código f
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
    * **Rama de Git** - Esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
    * **Ubicación del código** - Esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
    * **Pausar antes de implementar en producción** : Esta opción pone en pausa la canalización antes de implementarla en producción.
 
@@ -104,6 +105,7 @@ Para finalizar la configuración de la canalización de producción de código d
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
    * **Rama de Git** - Esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
    * **Ubicación del código** - Esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
    * **Pausar antes de implementar en producción** : Esta opción pone en pausa la canalización antes de implementarla en producción.
    * **Programado** : esta opción permite al usuario activar la implementación de producción programada.
@@ -150,6 +152,7 @@ Para finalizar la configuración de la canalización de producción de código d
    >Consulte el documento [Adición y administración de repositorios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para aprender a añadir y administrar repositorios en Cloud Manager.
 
    * **Rama de Git** - Esta opción define desde qué rama de la canalización seleccionada debe recuperar el código.
+      * Introduzca los primeros caracteres del nombre de la rama y la función de autocompletar de este campo encontrará las ramas coincidentes que le ayudarán a seleccionar.
    * **Ubicación del código** - Esta opción define la ruta en la rama de la repo seleccionada desde la que la canalización debe recuperar el código.
       * Para las canalizaciones de configuración de nivel web, esta es normalmente la ruta que contiene `conf.d`, `conf.dispatcher.d`y `opt-in` directorios.
       * Por ejemplo, si la estructura del proyecto se generó a partir de la variable [AEM tipo de archivo del proyecto,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en) la ruta sería `/dispatcher/src`.

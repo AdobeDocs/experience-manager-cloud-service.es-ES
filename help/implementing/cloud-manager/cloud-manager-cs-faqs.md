@@ -2,9 +2,9 @@
 title: Preguntas frecuentes sobre Cloud Manager
 description: Encuentre respuestas a las preguntas más frecuentes sobre Cloud Manager en AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 11ac22974524293ce3e4ceaa26e59fe75ea387e6
+source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -16,64 +16,56 @@ Este documento proporciona respuestas a las preguntas más frecuentes sobre Clou
 
 ## ¿Es posible utilizar Java 11 con compilaciones de Cloud Manager? {#java-11-cloud-manager}
 
-Es posible que la compilación de AEM Cloud Manager falle al intentar cambiar la compilación de Java 8 a 11. El problema puede tener muchas causas y las más comunes se documentan en esta sección.
+Sí. Deberá agregar la variable `maven-toolchains-plugin` con la configuración adecuada para Java 11.
 
-* Agregue la variable `maven-toolchains-plugin` con la configuración adecuada para Java 11.
-   * Esto está documentado [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-   * Por ejemplo, consulte la [código de proyecto de ejemplo de proyecto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* Esto está documentado [here](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+* Por ejemplo, consulte la [código de proyecto de ejemplo de proyecto wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* Si encuentra el siguiente error, debe eliminar `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6.
-   * Para obtener instrucciones, consulte [aquí.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+## Mi compilación falla con un error sobre maven-scr-plugin después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#build-fails-maven-scr-plugin}
 
-   ```text
-   [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
-   ```
+Es posible que la compilación de AEM Cloud Manager falle al intentar cambiar la compilación de Java 8 a 11. Si encuentra el siguiente error, debe eliminar `maven-scr-plugin` y convertir todas las anotaciones OSGi en anotaciones OSGi R6.
 
-* Para las compilaciones de Cloud Manager, la variable `maven-enforcer-plugin` falla con error `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando maven en comparación con el código de compilación. Por ahora, omita `requireJavaVersion` de su `maven-enforcer-plugin` configuraciones.
+```text
+[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
+```
+
+Para obtener instrucciones sobre cómo eliminar este complemento, consulte [aquí.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+
+## Mi compilación falla con un error sobre RequireJavaVersion después de cambiar de Java 8 a Java 11. ¿Qué puedo hacer? {#build-fails-requirejavaversion}
+
+Para las compilaciones de Cloud Manager, la variable `maven-enforcer-plugin` falla con este error.
+
+```text
+"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
+```
+
+Este es un problema conocido debido a que Cloud Manager utiliza una versión diferente de Java para ejecutar el comando maven en comparación con el código de compilación. Simplemente omita `requireJavaVersion` de su `maven-enforcer-plugin` configuraciones.
 
 ## La comprobación de calidad del código falló y nuestra implementación se atascó. ¿Hay alguna manera de evitar este cheque? {#deployment-stuck}
 
-Todos los errores de comprobación de calidad del código, excepto la clasificación de seguridad, son métricas no críticas, por lo que se pueden evitar ampliando los elementos en la interfaz de usuario de los resultados.
-
-Un usuario en la variable [Administrador de implementación, Administrador de programas o Propietario empresarial](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md) puede anular los problemas, en cuyo caso la canalización continúa. Estos usuarios también pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
+Sí. Todos los errores de comprobación de calidad del código, excepto la clasificación de seguridad, son métricas no críticas, por lo que se pueden evitar ampliando los elementos en la interfaz de usuario de los resultados.
 
 Consulte el documento [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información.
 
-## ¿Puedo utilizar SNAPSHOT para la versión del proyecto Maven? ¿Cómo funciona el control de versiones de los paquetes y los archivos jar del paquete para las implementaciones de fase y producción? {#snapshot-version}
+## ¿Puedo utilizar SNAPSHOT para la versión del proyecto Maven? {#use-snapshot}
 
-Los siguientes escenarios tratan sobre las versiones de los archivos jar de paquetes y paquetes para las implementaciones de fase y producción.
+Sí. Para implementaciones de desarrolladores, la rama de Git `pom.xml` Los archivos deben contener `-SNAPSHOT` al final del `<version>` valor.
 
-* Para implementaciones de desarrolladores, la rama de Git `pom.xml` Los archivos deben contener `-SNAPSHOT` al final del `<version>` valor.
-   * Esto permite que la implementación posterior se siga instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni genera ninguna versión automática para la compilación de maven.
+Esto permite que la implementación posterior se siga instalando cuando la versión no ha cambiado. En implementaciones de desarrolladores, no se agrega ni genera ninguna versión automática para la compilación de maven.
 
-* En las implementaciones de fase y producción, se genera una versión automática como [documentado aquí.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+También puede establecer la versión en `-SNAPSHOT` para compilaciones o implementaciones de fase y producción. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta para usted en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
 
-* Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión maven adecuada en tres partes como `1.0.0`. Actualice la versión cada vez que implemente en producción.
+## ¿Cómo funcionan las versiones de paquetes y paquetes en las implementaciones de fase y producción? {#snapshot-version}
 
-* Cloud Manager añade automáticamente su versión a las compilaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión maven como se describió anteriormente, la implementación se realizará correctamente y se establecerá una versión automáticamente.
+En las implementaciones de fase y producción, se genera una versión automática como [documentado aquí.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
-* Puede establecer la versión en `-SNAPSHOT` para compilaciones o implementaciones de fase y producción sin problemas. Cloud Manager establece automáticamente un número de versión adecuado y crea una etiqueta para usted en Git. Se puede hacer referencia a esta etiqueta más adelante, si es necesario.
+Para las versiones personalizadas en las implementaciones de fase y producción, establezca una versión maven adecuada en tres partes como `1.0.0`. Actualice la versión cada vez que implemente en producción.
 
-* Si desea probar algún código experimental en un entorno de desarrollo, puede crear una nueva rama de Git y establecer la canalización para utilizar esa rama.
-   * Esto es útil cuando las implementaciones fallan y le gustaría probarlo con versiones anteriores del código para determinar qué cambio causó el error.
-
-   * El comando git de abajo crea una rama remota denominada `testbranch1` basado en la confirmación preexistente `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Esta rama se puede usar en Cloud Manager sin afectar a otras ramas.
-
-   ```shell
-   git push origin 485548e4fbafbc83b11c3cb12b035c9d26b6532b:refs/heads/testbranch1
-   ```
-
-   * Consulte la [documentación de git](https://git-scm.com/book/en/v2/Git-Internals-Git-References) para obtener más información.
-
-   * Si desea eliminar la rama de prueba más adelante, utilice el comando eliminar:
-
-   ```shell
-   git push origin --delete testbranch1
-   ```
+Cloud Manager añade automáticamente su versión a las compilaciones de fase y producción y crea una rama de Git. No se requiere ninguna configuración especial. Si no establece una versión maven como se describió anteriormente, la implementación se realizará correctamente y se establecerá una versión automáticamente.
 
 ## Mi compilación de maven falla en las implementaciones de Cloud Manager, pero se genera localmente sin errores. ¿Qué está mal? {#maven-build-fail}
 
-Consulte [Recurso de Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
+Consulte [este recurso git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) para obtener más información.
 
 ## ¿Qué puedo hacer si una implementación de Cloud Manager falla en el paso de implementación en AEM as a Cloud Service? {#cloud-manager-deployment-cloud-service}
 
@@ -88,7 +80,7 @@ Caused by: org.apache.sling.api.resource.PersistenceException: Unable to commit 
 Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventAdminAsyncThread #7] org.apache.sling.distribution.journal.impl.publisher.DistributionPublisher [null] Error processing distribution package` `dstrpck-1583514457813-c81e7751-2da6-4d00-9814-434187f08d32. Retry attempts 344/infinite. Message: Error trying to extract package at path /etc/packages/com.myapp/myapp-base.ui.content-5.1.0-SNAPSHOT.
 ```
 
-En este caso, la variable `sling-distribution-importer` el usuario necesita permisos adicionales para las rutas de contenido definidas en la variable `ui.content package`.  Esto suele significar que debe agregar permisos para ambos `/conf` y `/var`.
+La variable `sling-distribution-importer` el usuario necesita permisos adicionales para las rutas de contenido definidas en la variable `ui.content package`.  Esto suele significar que debe agregar permisos para ambos `/conf` y `/var`.
 
 La solución es agregar un [Configuración de RepositoryInitializer OSGi](/help/implementing/deploying/overview.md#repoint) script a su paquete de implementación de aplicaciones para agregar ACL para el `sling-distribution-importer` usuario.
 
@@ -97,7 +89,9 @@ En el ejemplo de error anterior, el paquete `myapp-base.ui.content-*.zip` incluy
 Este es un ejemplo [org.apache.sling.jcr.repository.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de una de estas configuraciones de OSGi que agrega permisos adicionales para el `sling-distribution-importer` usuario.  Esta configuración agrega permisos en `/var`.  Este archivo xml a continuación [1] debe añadirse al paquete de aplicación en `/apps/myapp/config` (donde myapp es la carpeta donde se almacena el código de la aplicación).
 org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
 
-Si la adición de una configuración de RepositoryInitializer OSGi no solucionó el error, puede deberse a uno de estos problemas adicionales.
+## Mi implementación de Cloud Manager falla en el paso de implementación en AEM as a Cloud Service y ya soy una configuración OSGi de RepositoryInitializer. ¿Qué más puedo hacer? {#build-failures}
+
+If [adición de una configuración OSGi de RepositoryInitializer](##cloud-manager-deployment-cloud-service) no resolvió el error, puede deberse a uno de estos problemas adicionales.
 
 * Es posible que la implementación esté fallando debido a una configuración OSGi incorrecta que rompe un servicio predeterminado.
    * Compruebe los registros durante la implementación para ver si hay algún error obvio.
