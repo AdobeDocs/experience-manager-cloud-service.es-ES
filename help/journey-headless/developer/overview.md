@@ -1,18 +1,18 @@
 ---
 title: recorrido para desarrolladores AEM sin encabezado
-description: AEM documentación CMS sin objetivos. Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
+description: Comience aquí para obtener un recorrido guiado a través de Adobe Experience Manager (AEM) as a Cloud Service cuando se esté utilizando como un sistema de gestión de contenido sin encabezado (CMS). Este recorrido le proporciona toda la información necesaria para desarrollar su primera aplicación sin periféricos.
 landing-page-description: Comience aquí para obtener un recorrido guiado a través de las funciones sin objetivos de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1277'
 ht-degree: 6%
 
 ---
 
 # recorrido para desarrolladores AEM sin encabezado {#aem-headless-developer-journey}
 
-Empiece aquí por un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo sin objetivos. Este recorrido le proporciona toda la documentación AEM sin encabezado que necesita para desarrollar su primera aplicación sin encabezado.
+Comience aquí para obtener un recorrido guiado a través de Adobe Experience Manager (AEM) as a Cloud Service cuando se esté utilizando como un sistema de gestión de contenido sin encabezado (CMS). Obtenga información sobre las funciones potentes y flexibles sin encabezado, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo sin objetivos. Este recorrido le proporciona toda la información necesaria para desarrollar su primera aplicación sin periféricos.
 
 ## Introducción {#introduction}
 
