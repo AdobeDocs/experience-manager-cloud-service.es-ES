@@ -2,9 +2,9 @@
 title: Creación de experiencias comerciales
 description: Experiencias comerciales en trabajo
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ El uso de Omnisearch es una forma sencilla de que los profesionales encuentren A
 
 El resultado se agrupa por tipo.
 
-    >[!NOTE]
-    >
-    > La búsqueda de texto completo en Omnisearch no admite fragmentos de contenido asociados. Utilice el SKU o el UID para buscar fragmentos de contenido asociados.
+>[!NOTE]
+>
+> La búsqueda de texto completo en Omnisearch no admite fragmentos de contenido asociados. Utilice el SKU o el UID para buscar fragmentos de contenido asociados.
