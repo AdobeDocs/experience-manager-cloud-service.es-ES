@@ -2,9 +2,9 @@
 title: Generación de tokens de acceso para las API del servidor
 description: Aprenda a facilitar la comunicación entre un servidor de terceros y AEM as a Cloud Service mediante la generación de un token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
+source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ El flujo de servidor a servidor se describe a continuación, junto con un flujo 
 
 >[!NOTE]
 >
->Además de esta documentación, también puede consultar el tutorial sobre [Autenticación basada en token para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication).
+>Además de esta documentación, también puede consultar los tutoriales sobre [Autenticación basada en token para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication) y [Obtención de un token de inicio de sesión para integraciones](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
 
 ## Flujo de servidor a servidor {#the-server-to-server-flow}
 
