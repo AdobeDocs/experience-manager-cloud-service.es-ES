@@ -3,9 +3,9 @@ title: Canalizaciones CI/CD
 description: Obtenga información sobre las canalizaciones de CD/CI de Cloud Manager y cómo se pueden utilizar para implementar su código de forma eficiente.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,12 @@ Cloud Manager ofrece dos tipos de canalizaciones:
 * [Canalizaciones que no son de producción](#non-prod-pipeline)
 
 ![Tipos de tuberías](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## Información general del vídeo {#video}
+
+Para obtener una descripción general rápida de los tipos de canalización, vea este breve vídeo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## Canalizaciones de producción {#prod-pipeline}
 
