@@ -2,9 +2,9 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
+source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
 workflow-type: tm+mt
-source-wordcount: '2366'
+source-wordcount: '2442'
 ht-degree: 1%
 
 ---
@@ -60,17 +60,19 @@ Una definición de índice puede ser:
 
 Tenga en cuenta que tanto la personalización de un índice predeterminado como los índices completamente personalizados deben contener `-custom-`. Solo los índices totalmente personalizados deben comenzar con un prefijo .
 
-### Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
+## Preparación de la nueva definición de índice {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->Si se personaliza un índice predeterminado, por ejemplo `damAssetLucene-6`, copie la última definición de índice lista para usar de un *entorno de Cloud Service* y añada las personalizaciones en la parte superior, esto garantiza que las configuraciones requeridas no se eliminen de forma involuntaria. Por ejemplo, la variable `tika` nodo bajo `/oak:index/damAssetLucene-6/tika` es un nodo requerido y también debe formar parte de su índice personalizado y no existe en el SDK de Cloud.
+>Si se personaliza un índice predeterminado, por ejemplo `damAssetLucene-6`, copie la última definición de índice lista para usar de un *entorno de Cloud Service* entorno de desarrollo con el administrador de paquetes CRX DE (`/crx/packmgr/`). A continuación, cambie el nombre de la configuración, por ejemplo a `damAssetLucene-6-custom-1`y añada sus personalizaciones en la parte superior. Esto garantiza que las configuraciones necesarias no se eliminen de forma involuntaria. Por ejemplo, la variable `tika` nodo bajo `/oak:index/damAssetLucene-6/tika` es necesario en el índice personalizado del servicio en la nube. No existe en el SDK de Cloud.
 
 Debe preparar un nuevo paquete de definición de índice que contenga la definición de índice real, siguiendo este patrón de nomenclatura:
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 que luego necesita entrar `ui.apps/src/main/content/jcr_root`. Las carpetas raíz secundarias no son compatibles desde ahora.
+
+El filtro del paquete debe configurarse de modo que los índices existentes (predeterminados) se mantengan. Hay dos formas de hacerlo: O bien, el filtro se establece en `<filter root="/oak:index/" mode="merge"/>` en el archivo `ui.apps/src/main/content/META-INF/vault/filter.xml`, o cada índice personalizado (o personalizado) debe enumerarse por separado en la sección de filtros, por ejemplo, `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si el caso es posterior, cada vez que se cambia la versión, es necesario ajustar el filtro.
 
 El paquete del ejemplo anterior se crea como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
@@ -80,7 +82,7 @@ El paquete del ejemplo anterior se crea como `com.adobe.granite:new-index-conten
 >
 >`noIntermediateSaves=true`
 
-### Implementación de definiciones de índice {#deploying-index-definitions}
+## Implementación de definiciones de índice {#deploying-index-definitions}
 
 >[!NOTE]
 >
