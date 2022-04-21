@@ -2,10 +2,10 @@
 title: Go-Live
 description: Obtenga información sobre cómo realizar la migración una vez que el código y el contenido estén listos para la nube
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 0%
+source-wordcount: '1644'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ Antes de poder realizar la migración de producción, siga los pasos de ajuste y
 Después de la migración inicial desde la producción, debe realizar recargas incrementales para asegurarse de que el contenido se actualiza en la instancia de la nube. Por este motivo, se recomienda seguir estas prácticas recomendadas:
 
 * Recopile datos sobre la cantidad de contenido. Por ejemplo: por semana, dos semanas o un mes.
-* Asegúrese de planificar las recargas de forma que evite más de 48 horas de extracción e ingesta de contenido. Esto se recomienda para que las recargas de contenido encajen en un intervalo de tiempo del fin de semana.
+* Asegúrese de planificar las recargas de forma que evite más de 48 horas de extracción e ingesta de contenido. Esto se recomienda para que las recargas de contenido encajen en un lapso de tiempo de fin de semana.
 * Planifique el número de recargas necesarias y utilice esas estimaciones para planificar la fecha de lanzamiento.
 
 ## Identificar las cronologías de código y congelación de contenido para la migración {#code-content-freeze}
@@ -113,13 +113,45 @@ Los dos elementos anteriores se identificarán y presentarán informes en la [An
 
 ## Lista de comprobación de Go-Live {#Go-Live-Checklist}
 
-Revise la lista de actividades que se muestra a continuación para asegurarse de que la migración se realiza sin problemas y con éxito:
+Revise esta lista de actividades para asegurarse de que realiza una migración sin problemas y sin problemas.
 
-* Programe un período de congelación de contenido y código. Consulte también [Cronologías de bloqueo de código y contenido para la migración](#code-content-freeze).
-* Realización del resumen final del contenido
-* Iteraciones de prueba completas.
-* Ejecución de pruebas de rendimiento y seguridad.
-* Entrada en funcionamiento. y realizar la migración en la instancia de producción
+* Ejecute una canalización de producción completa con pruebas funcionales y de interfaz de usuario para garantizar un **always current** AEM experiencia del producto. Consulte los siguientes recursos.
+   * [Actualizaciones de la versión de AEM](/help/implementing/deploying/aem-version-updates.md)
+   * [Pruebas funcionales personalizadas](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [Pruebas de IU](/help/implementing/cloud-manager/ui-testing.md)
+* Migre contenido a producción y asegúrese de que hay un subconjunto relevante disponible en el entorno de ensayo para realizar pruebas.
+   * Tenga en cuenta que las prácticas recomendadas de DevOps para AEM implican que el código pasa del desarrollo al entorno de producción mientras [el contenido se desplaza hacia abajo desde los entornos de producción.](/help/overview/enterprise-devops.md#code-movement)
+* Programe un período de congelación de contenido y código.
+   * Consulte también la sección [Cronologías de bloqueo de código y contenido para la migración](#code-content-freeze)
+* Realice el resumen final del contenido.
+* Valide las configuraciones de Dispatcher.
+   * Utilice un validador de Dispatcher local que facilite la configuración, validación y simulación del Dispatcher localmente
+      * [Configure las herramientas de Dispatcher locales.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=en#prerequisites)
+   * Revise detenidamente la configuración del host virtual.
+      * La solución más sencilla (y predeterminada) es incluir `ServerAlias *` en el archivo host virtual de `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * Esto permitirá que funcionen los alias de host utilizados por las pruebas funcionales del producto, la invalidación de la caché de Dispatcher y los clones.
+      * Sin embargo, si `ServerAlias *` no es aceptable, como mínimo lo siguiente `ServerAlias` además de los dominios personalizados:
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* Configure CDN, SSL y DNS.
+   * Si está utilizando su propia CDN, introduzca un ticket de soporte para configurar el enrutamiento adecuado.
+      * Consulte la sección [La CDN del cliente apunta a AEM CDN administrada](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) en la documentación de CDN para obtener más información.
+      * Deberá configurar SSL y DNS según la documentación de su proveedor de CDN.
+   * Si no utiliza una CDN adicional, administre SSL y DNS según la siguiente documentación:
+      * Administración de certificados SSL
+         * [Introducción a la administración de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Administración del certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * Administración de nombres de dominio personalizados (DNS)
+         * [Introducción a los nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Adición de un nombre de dominio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * Recuerde validar el conjunto TTL para su registro DNS.
+      * El TTL es la cantidad de tiempo que un registro DNS permanece en una caché antes de solicitar al servidor una actualización.
+      * Si tiene un TTL muy alto, las actualizaciones del registro DNS tardarán más en propagarse.
+* Ejecute pruebas de rendimiento y seguridad que cumplan con los requisitos y objetivos de su negocio.
+* Realice un corte y asegúrese de que el lanzamiento real se realiza sin ninguna implementación nueva o actualización de contenido.
 
 Siempre puede hacer referencia a la lista en caso de que necesite volver a calibrar las tareas mientras realiza la migración.
 
