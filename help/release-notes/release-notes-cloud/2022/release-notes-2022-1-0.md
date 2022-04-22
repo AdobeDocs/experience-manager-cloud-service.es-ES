@@ -1,13 +1,13 @@
 ---
-title: Notas de la versión 2022.1.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notas de la versión 2022.1.0 de la versión  [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
-workflow-type: tm+mt
+title: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de la versión 2022.1.0 de la versión [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+workflow-type: ht
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -59,11 +59,11 @@ Eche un vistazo al vídeo [Información general sobre la versión de enero de 20
 
 * La función [Administrar publicación](/help/assets/manage-publication.md) se amplía con una interfaz de usuario mejorada. Los usuarios pueden publicar o cancelar la publicación de contenido desde y hacia el destino seleccionado, [Añadir contenido](/help/assets/manage-publication.md#add-content) a la lista de publicaciones desde el repositorio de DAM, [Incluir configuración de carpeta](/help/assets/manage-publication.md#include-folder-settings) para publicar contenido de las carpetas seleccionadas y aplicar filtros, así como [programar la publicación](/help/assets/manage-publication.md#publish-assets-later) a una fecha u hora posterior.
 
-### Corrección de errores {#bug-fixes}
+### Correcciones de errores {#bug-fixes}
 
 * Los recursos sin procesar sin representación original se envían a Asset Compute para su procesamiento mientras migran recursos de AEM local a servicios en la nube.
 
-## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
@@ -86,10 +86,10 @@ Eche un vistazo al vídeo [Información general sobre la versión de enero de 20
 ### Novedades {#what-is-new-cif}
 
 * Componentes myAccount mejorados
-* El componente Recomendación de producto admite tipos de página adicionales (página principal, carro de compras, confirmación de pedido)
+* El componente Recomendación de producto admite tipos de página adicionales (página de inicio, carro de compras, confirmación de pedido)
 * **Lista de deseos**
    * Los visitantes con sesión iniciada pueden añadir productos a una lista de deseos
-   * La administración de la lista de deseos y sus productos es posible a través de myAccount
+   * Es posible administrar la lista de deseos y sus productos a través de myAccount
    * El botón Añadir a la lista de deseos se puede activar o desactivar en un nivel de componente mediante una directiva (por ejemplo, teaser de productos, detalles de productos
    * Disponible como componente principal y en la AEM Venia Storefront
 
@@ -108,7 +108,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2022.01.0 es 
 * La IU no permitirá la configuración de canalización front-end para un programa en el que Sites no esté habilitado como solución.
 * Al generar una contraseña de git, se muestra la fecha de caducidad.
 
-### Corrección de errores {#bug-fixes-cm}
+### Correcciones de errores {#bug-fixes-cm}
 
 * Se han corregido las excepciones de puntero nulo encontradas en algunas implementaciones de canalización front-end.
 * Ahora se pueden añadir, actualizar y eliminar variables de entorno cuando un entorno ejecuta una versión obsoleta de AEM.
@@ -125,9 +125,9 @@ La fecha de versión de la herramienta de transferencia de contenido v1.8.6 es e
 
 * Validación de contenido: los usuarios tienen la capacidad de determinar de forma fiable si todo el contenido extraído por la herramienta de transferencia de contenido se ha introducido correctamente en la instancia de destino. Para utilizar esta función, deberá activarla en la `System Console` del entorno de AEM de origen. Consulte [Validación de transferencias de contenido: introducción](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=es#getting-started) para obtener más información.
 
-### Corrección de errores {#bug-fixes-ctt}
+### Correcciones de errores {#bug-fixes-ctt}
 
-* Algunos usuarios no estaban asignados porque la asignación de usuarios distinguía entre mayúsculas y minúsculas. Esto se ha solucionado. La asignación de usuarios ya no distingue entre mayúsculas y minúsculas.
+* Algunos usuarios no estaban asignados porque la asignación de usuarios distinguía entre mayúsculas y minúsculas. Esto se ha corregido. La asignación de usuarios ya no distingue entre mayúsculas y minúsculas.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 
@@ -141,7 +141,7 @@ La fecha de lanzamiento del Analizador de prácticas recomendadas v2.1.24 es el 
 * Capacidad para detectar y crear informes sobre la versión de componente principal utilizada.
 * Capacidad para detectar y crear informes sobre el tipo de nivel de origen (autor o publicación) en el que se ejecutó BPA.
 
-### Corrección de errores {#bug-fixes-bpa}
+### Correcciones de errores {#bug-fixes-bpa}
 
 * La lógica de tamaño de BPA se hizo más rápida y eficiente.
-* En algunos casos, el BPA no incrementó el recuento analizado cuando se ejecutó. Esto se ha solucionado.
+* En algunos casos, el BPA no incrementó el recuento analizado cuando se ejecutó. Esto se ha corregido.
