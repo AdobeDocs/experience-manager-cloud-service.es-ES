@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: a96824cede31414963ff7e6f5ef1315bd35a51c1
 workflow-type: tm+mt
 source-wordcount: '1099'
-ht-degree: 43%
+ht-degree: 98%
 
 ---
 
@@ -25,12 +25,12 @@ En la siguiente sección se describen las notas de la versión generales de la v
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de [!DNL Adobe Experience Manager] como [!DNL Cloud Service] la versión actual (2022.3.0) es el 31 de marzo de 2022.
-La siguiente versión (2022.4.0) es el 28 de abril de 2022.
+La fecha de lanzamiento de la versión actual de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.3.0) es el 31 de marzo de 2022.
+La de la siguiente versión (2022.4.0) es el 28 de abril de 2022.
 
 ## Vídeo de la versión {#release-video}
 
-Eche un vistazo a la [Información general sobre la versión de marzo de 2022](https://video.tv.adobe.com/v/341465) vídeo para ver un resumen de las funciones añadidas en la versión 2022.3.0.
+Eche un vistazo al vídeo [Información general sobre la versión de marzo de 2022](https://video.tv.adobe.com/v/341465) para ver un resumen de las funciones añadidas en la versión 2022.3.0.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -40,9 +40,9 @@ Eche un vistazo a la [Información general sobre la versión de marzo de 2022](h
 
 * Ahora puede usar la interfaz de usuario de [!DNL Experience Manager Assets] para:
 
-   * Configure las variables [detección de activos duplicados](/help/assets/manage-digital-assets.md#detect-duplicate-assets) en un repositorio.
+   * Configure la [detección de recursos duplicados](/help/assets/manage-digital-assets.md#detect-duplicate-assets) en un repositorio.
 
-   * Configurar [adición de marcas de agua digitales](/help/assets/watermark-assets.md) a imágenes.
+   * Configure la [adición de marcas de agua digitales](/help/assets/watermark-assets.md) a las imágenes.
 
 * Los administradores ahora pueden configurar el servicio de correo electrónico para las descargas grandes. Permite a los usuarios [activar notificaciones por correo electrónico para descargas grandes](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) desde la interfaz de [!DNL Experience Manager Assets]. El usuario recibe una notificación por correo electrónico que contiene el vínculo de descarga de la carpeta zip archivada al finalizar el proceso de descarga.
 
@@ -50,49 +50,49 @@ Eche un vistazo a la [Información general sobre la versión de marzo de 2022](h
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Assets] {#prerelease-features-assets}
 
-* Puede [ordenar etiquetas](/help/assets/organize-assets.md#use-tags-to-organize-assets) al crear etiquetas inteligentes, así como al aplicar filtros de búsqueda utilizando el predicado de etiquetas.
+* Puede [ordenar las etiquetas](/help/assets/organize-assets.md#use-tags-to-organize-assets) al crear etiquetas inteligentes, así como al aplicar filtros de búsqueda utilizando el predicado de etiquetas.
 
 ## [!DNL Experience Manager Forms] como [!DNL Cloud Service] {#forms}
 
 ### Novedades de [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL Communications - Document Generation APIs]**: [API de generación de documentos](/help/forms/aem-forms-cloud-service-communications.md) ayuda a combinar, reorganizar y validar documentos de PDF. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede:
+* **[!DNL Communications - Document Generation APIs]**: la [API de generación de documentos](/help/forms/aem-forms-cloud-service-communications.md) ayuda a combinar, reorganizar y validar documentos PDF. El servicio le permite generar documentos en modo sincrónico. Las API le permiten crear aplicaciones con las que puede hacer lo siguiente:
 
-   * Ensamble los documentos del PDF.
-   * Desmonte los documentos del PDF.
-   * Convierta y valide documentos compatibles con PDF/A.
+   * Montar los documentos PDF.
+   * Desmontar los documentos PDF.
+   * Convertir y validar documentos compatibles con PDF/A.
 
-* **Convertir automáticamente PDF forms de más de 15 páginas en formularios adaptables**: Ahora puede utilizar el servicio de automated forms conversion para convertir PDF forms con hasta 40 páginas en formularios adaptables. El servicio ahora proporciona la opción de convertir secciones de formularios de más de 15 páginas a fragmentos de formulario adaptables. Ayuda a mejorar la velocidad de procesamiento de los formularios convertidos y facilita la carga de formularios grandes en el editor de formularios adaptables.
+* **Convertir automáticamente formularios PDF de más de 15 páginas en formularios adaptables**: ahora puede utilizar el servicio de conversión automatizada de formularios para convertir formularios PDF de hasta 40 páginas en formularios adaptables. El servicio ahora proporciona la opción de convertir secciones de formularios de más de 15 páginas a fragmentos de formulario adaptables. Ayuda a mejorar la velocidad de procesamiento de los formularios convertidos y facilita la carga de formularios grandes en el editor de formularios adaptables.
 
 ### Nuevas funciones disponibles en el canal de prelanzamiento de [!DNL Forms] {#prerelease-features-forms}
 
-* **Usar XCI personalizado para generar un documento de registro**: Ahora puede utilizar un archivo XCI personalizado para establecer varias propiedades de un documento de registro. Anula el XCI maestro con los cambios personalizados.
+* **Usar XCI personalizados para generar un documento de registro**: ahora puede utilizar un archivo XCI personalizado para establecer varias propiedades de un documento de registro. Anula el XCI maestro con los cambios personalizados.
 
-* **Utilizar CAPTCHA invisible en forma adaptable**: Puede utilizar el CAPTCHA invisible para mostrar el desafío CAPTCHA solo en el caso de una actividad sospechosa. Si no se encuentra ninguna actividad sospechosa, no se muestra el desafío CAPTCHA.
+* **Utilizar un CAPTCHA invisible en un formulario adaptable**: puede utilizar un CAPTCHA invisible para mostrar una prueba CAPTCHA solo en el caso de actividad sospechosa. Si no se encuentra ninguna actividad sospechosa, no se muestra el desafío CAPTCHA.
 
 ## Complemento CIF {#cloud-services-cif}
 
 ### Novedades {#what-is-new-cif}
 
-* Beta: Compatibilidad del componente principal de búsqueda del CIF de AEM con Commerce LiveSearch
-* SEO mejorado para escenarios de varias tiendas: Los formatos de URL para PDP/PLP ahora se pueden configurar a nivel de tienda mediante las propiedades de configuración de la nube del CIF
-* El selector de productos es compatible con los productos clasificados mediante la nueva opción de filtro en la interfaz de usuario.  Esto permite a los profesionales del contenido preparar la administración del contenido del producto para próximos lanzamientos del producto
-* Administración simplificada de la configuración del CIF y gestión de errores mediante el uso del nombre de configuración de la nube del CIF en lugar de la url del proxy de configuración
+* Beta: compatibilidad del componente principal de búsqueda del CIF de AEM con Commerce LiveSearch
+* SEO mejorado para escenarios de varias tiendas: los formatos de URL para PDP/PLP ahora se pueden configurar en el nivel de tienda mediante las propiedades de configuración en la nube del CIF
+* El selector de productos es compatible con los productos clasificados mediante la nueva opción de filtro de la IU.  Esto permite a los profesionales del contenido preparar la administración de contenido de producto para próximos lanzamientos del producto
+* Administración simplificada de la configuración del CIF y gestión de errores mediante el uso del nombre de configuración en la nube del CIF, en lugar de la URL del proxy de configuración
 * Selección manual de categorías para la lista de productos y los componentes de carrusel. Esto permite a los profesionales del contenido utilizar estos componentes en páginas de contenido, fuera de la experiencia del catálogo
 
-## [!DNL Experience Manager] como [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Novedades {#what-is-new-foundation}
 
-* Para una solución de problemas más eficaz y eficaz de las funciones personalizadas en los entornos de Cloud, hemos lanzado una nueva herramienta para desarrolladores: [Navegador de repositorios](/help/implementing/developing/tools/repository-browser.md). Es un explorador HTML ligero, de solo lectura que puede iniciar desde Developer Console. Obtenga visibilidad del repositorio de contenido en los niveles de editor, autor y vista previa, y en todos los entornos, incluida la producción, el escenario y el desarrollo. Examine la estructura de contenido, vea las propiedades y obtenga una vista previa y descargue los binarios.
+* Para una solución de problemas más eficiente y eficaz de las funciones personalizadas en los entornos en la nube, hemos lanzado una nueva herramienta para desarrolladores: el [Explorador de repositorios](/help/implementing/developing/tools/repository-browser.md). Es un explorador HTML ligero de solo lectura que puede iniciar desde Developer Console. Obtenga visibilidad del repositorio de contenido en los niveles de editor, autor y vista previa, y en todos los entornos, incluida la producción, la fase y el desarrollo. Examine la estructura de contenido, vea las propiedades y previsualice y descargue los binarios.
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * Las credenciales utilizadas para autenticar llamadas de API de servidor a servidor (por ejemplo, para solicitudes de API de GraphQL) ahora se pueden actualizar antes de la caducidad de forma automática desde Developer Console. Consulte la [documentación](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) para obtener más información.
 
-* Las tareas de mantenimiento de purga de versiones y depuración de registros de auditoría, que no se habían habilitado anteriormente, se habilitarán para nuevos entornos. Consulte los valores asociados en la [Tarea de mantenimiento](/help/operations/maintenance.md) artículo.
+* Las tareas de mantenimiento de purga de versiones y depuración de registros de auditoría que no se habían habilitado antes, se habilitarán para nuevos entornos. Consulte los valores asociados en el artículo [Tarea de mantenimiento](/help/operations/maintenance.md).
 
-* AEM herramientas as a Cloud Service de SDK Dispatcher ahora admiten equipos Mac con el chip M1
+* Las herramientas del SDK de Dispatcher de AEM as a Cloud Service ahora admiten equipos Mac con el chip M1
 
 ## Cloud Manager {#cloud-manager}
 
@@ -102,11 +102,11 @@ Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [
 
 ### Fecha de la versión {#release-date-ctt}
 
-La fecha de versión de la herramienta de transferencia de contenido v1.9.0 es el 28 de febrero de 2022.
+La fecha de lanzamiento de la herramienta de transferencia de contenido versión 1.9.0 es el 28 de febrero de 2022.
 
 ### Novedades {#what-is-new-ctt}
 
-* Comprobar protecciones de tamaño : la función Tamaño de comprobación de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función Tamaño de comprobación, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en la variable `crx-quickstart` antes de la extracción y 2) estime el tamaño del conjunto de migración y verifique si es compatible. Si se infringen una o ambas comprobaciones, los usuarios verán advertencias en la interfaz de usuario de CTT. Con esta protección, puede evitar fallos en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinación del tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#migration-set-size) para obtener más información.
+* Comprobar protecciones de tamaño: la función de comprobación de tamaño de la herramienta de transferencia de contenido ayuda a reducir las transferencias de contenido fallidas.  Con la función de comprobación de tamaño, los usuarios pueden 1) determinar si tienen suficiente espacio en disco en el subdirectorio `crx-quickstart` antes de la extracción, y 2) estimar el tamaño del conjunto de migración y verificar si es compatible. Si se infringen una o ambas comprobaciones, los usuarios verán advertencias en la IU de CTT. Con esta protección, puede evitar errores en la transferencia de contenido y discutir de forma proactiva las opciones de migración con el Servicio de atención al cliente de Adobe. Consulte [Determinación del tamaño del conjunto de migración y el espacio en disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es#migration-set-size) para obtener más información.
 
 ## Analizador de prácticas recomendadas {#bpa-release}
 

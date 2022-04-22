@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
 source-wordcount: '3421'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -160,7 +160,7 @@ ht-degree: 98%
          + [Búsqueda](/help/sites-cloud/authoring/getting-started/search.md)
          + [Configuración del entorno de cuenta](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Su bandeja de entrada](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [Métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+         + [Métodos abreviados de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + [Recorrido para autores de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=es)
       + Aspectos básicos de la creación {#fundamentals}
          + [Entorno y herramientas](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
@@ -179,7 +179,7 @@ ht-degree: 98%
          + [Creación para dispositivos móviles](/help/sites-cloud/authoring/fundamentals/mobile.md)
          + [Crear contenido accesible (Conformidad con WCAG 2.1)](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
          + [Solución de problemas](/help/sites-cloud/authoring/fundamentals/troubleshooting.md)
-         + [Métodos abreviados del teclado](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+         + [Métodos abreviados de teclado](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
       + Funciones de creación {#features}
          + [Plantillas de página](/help/sites-cloud/authoring/features/templates.md)
          + [Sistema de estilos](/help/sites-cloud/authoring/features/style-system.md)
@@ -265,9 +265,9 @@ ht-degree: 98%
    + Integración con AEM as a Cloud Service {#integrations}
       + [Integración con Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Integración con la configuración automatizada de Adobe Analytics](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Configuración de IMS para usar al integrar con Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Configuración de IMS que usar al integrar con Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Integración con Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Configuración de IMS para usar al integrar con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [Configuración de IMS que usar al integrar con Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportación de fragmentos de experiencias a Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Assets {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
@@ -388,7 +388,7 @@ ht-degree: 98%
       + [Fin de vida útil para visualizadores Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vida útil de los visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Integración con Adobe Workfront {#integrations}
-      + [Notas de la versión de Workfront para el conector mejorado del Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
+      + [Notas de la versión de Workfront para el conector mejorado de Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Integraciones con  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Instalación de [!DNL enhanced connector] para [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Eliminación de dependencias externas para instalaciones existentes](/help/assets/remove-external-dependencies.md)
@@ -424,7 +424,7 @@ ht-degree: 98%
       + Adición de componentes a un formulario adaptable {#add-components-to-an-adaptive-form}
          + [Uso de CAPTCHA en un formulario adaptable](/help/forms/captcha-adaptive-forms.md)
          + [Usar componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-      + Configuración del diseño y aplicación de estilo a un formulario adaptable{#configure-layout-of-an-adaptive-form}
+      + Configuración del diseño y aplicación de estilo a un formulario adaptable {#configure-layout-of-an-adaptive-form}
          + [Definición del diseño de un formulario adaptable](/help/forms/layout-capabilities-adaptive-forms.md)
          + [Uso del modo Diseño para cambiar el tamaño de los componentes](/help/forms/resize-using-layout-mode.md)
          + [Creación de una experiencia de captura de datos en varios pasos](/help/forms/introduction-form-sequence.md)
@@ -556,7 +556,7 @@ ht-degree: 98%
       + [Información general](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=es)
       + [Modelos de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=es)
       + [Administración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=es)
-      + Creación{#authoring}
+      + Creación {#authoring}
          + [Creación](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=es)
          + [Editor de texto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=es)
          + [Contenido asociado](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=es)
@@ -693,10 +693,10 @@ ht-degree: 98%
          + [Configuración de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Comprobación del estado de registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-      + LISTAS DE PERMITIDOS IP {#ip-allow-lists}
+      + Listas de permitidos de IP {#ip-allow-lists}
          + [Introducción](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Adición de una lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Aplicación y cancelación de la aplicación de Listas de permitidos IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Aplicación y cancelación de la aplicación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administración de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Desarrollo para AEM as a Cloud Service {#developing}
@@ -786,7 +786,7 @@ ht-degree: 98%
       + [API de ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuración de la segmentación con ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=es)
    + Configurar y ampliar AEM as a Cloud Service {#configuring-and-extending}
-      + Ampliación de AEM con el Generador de aplicaciones{#app-builder}
+      + Ampliación de AEM con el Generador de aplicaciones {#app-builder}
          + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introducción al Generador de aplicaciones](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
