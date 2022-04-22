@@ -4,7 +4,7 @@ description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encab
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -650,7 +650,7 @@ query {
 }
 ```
 
-### Consulta de muestra: todas las ciudades situadas en Alemania o Suiza con una población entre 40 000 y 999 999 {#sample-all-cities-d-ch-population}
+### Consulta de muestra: todas las ciudades situadas en Alemania o Suiza con una población entre 400 000 y 999 999 {#sample-all-cities-d-ch-population}
 
 Aquí se filtra una combinación de campos. Un `AND` (implícito) se utiliza para seleccionar el rango de `population`, mientras que un `OR` (explícito) se utiliza para seleccionar las ciudades requeridas.
 
@@ -1609,4 +1609,4 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 | San Francisco |  EE. UU. |  883306 |  city:beach<br>city:na |
 | San José |  EE. UU. |  102635 |  city:na |
 | Stuttgart |  Alemania |  634830 |  city:emea |
-|  Zúrich |  Suiza |  415367 |  ciudad:capital<br>ciudad:emea |
+|  Zúrich |  Suiza |  415367 |  city:capital<br>city:emea |
