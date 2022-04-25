@@ -3,10 +3,10 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 1%
+source-wordcount: '1878'
+ht-degree: 0%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere un ajuste preciso del encabezado de la página (con un valor basado en el día del calendario), ya que de forma predeterminada el encabezado de la página está establecido en 0. Dicho esto, **tenga cuidado al desactivar el almacenamiento en caché predeterminado.**
 
 * se puede anular para todo el contenido de texto o HTML definiendo la variable `EXPIRATION_TIME` en `global.vars` uso de las AEM herramientas as a Cloud Service de SDK Dispatcher.
-* puede anularse en un nivel más fino mediante las siguientes directivas apache mod_headers :
+* se puede sobrescribir en un nivel más preciso, incluido el control de la CDN y la caché del navegador de forma independiente, con las siguientes directivas apache mod_headers :
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >El encabezado Surrogate-Control se aplica a la CDN administrada por Adobe. Si utiliza un [CDN gestionada por el cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), es posible que se requiera un encabezado diferente en función de su proveedor de CDN.
 
    Tenga cuidado al configurar los encabezados de control de caché globales o los que coinciden con un regex amplio para que no se apliquen a contenido que pueda tener la intención de mantener privado. Considere la posibilidad de utilizar varias directivas para garantizar que las reglas se apliquen de forma precisa. Dicho esto, AEM as a Cloud Service eliminará el encabezado de la caché si detecta que se ha aplicado a lo que detecta que es inaccesible para Dispatcher, como se describe en la documentación de Dispatcher. Para obligar a los AEM a aplicar siempre los encabezados de almacenamiento en caché, se puede añadir la variable **always** como se indica a continuación:
 
@@ -111,6 +115,73 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * el valor predeterminado no se puede establecer con la variable `EXPIRATION_TIME` variable utilizada para tipos de archivo html/text
 * la caducidad de la caché se puede configurar con la misma estrategia LocationMatch descrita en la sección html/text especificando la regex adecuada
 
+### Optimizaciones adicionales
+
+* Evite utilizar `User-Agent` como parte del `Vary` encabezado. Las versiones anteriores de la configuración predeterminada de Dispatcher (anteriores a la versión 28 del tipo de archivo) incluían esto y le recomendamos que lo elimine siguiendo los pasos a continuación.
+   * Localice los archivos vhost en `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * Elimine o comente la línea: `Header append Vary User-Agent env=!dont-vary` de todos los archivos vhost, a excepción de default.vhost, que es de solo lectura
+* Utilice la variable `Surrogate-Control` encabezado para controlar el almacenamiento en caché de CDN independientemente del almacenamiento en caché del explorador
+* Considere la posibilidad de aplicar [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) y [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) directivas para permitir la actualización en segundo plano y evitar errores en la caché, lo que mantiene el contenido rápido y actualizado para los usuarios.
+   * Existen muchas maneras de aplicar estas directivas, pero añadiendo un minuto `stale-while-revalidate` a todos los encabezados de control de caché es un buen punto de partida.
+* A continuación se muestran algunos ejemplos de varios tipos de contenido, que pueden utilizarse como guía al configurar sus propias reglas de almacenamiento en caché. Tenga en cuenta y pruebe la configuración y los requisitos específicos:
+
+   * Almacene en caché los recursos mutables de la biblioteca de cliente para las 12 horas y la actualización en segundo plano después de las 12 horas.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Almacene en caché los recursos inmutables de la biblioteca de cliente a largo plazo (30 días) con la actualización en segundo plano para evitar MISS.
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Almacene en caché las páginas del HTML durante 5 minutos con la actualización en segundo plano de 1h en el explorador y 12h en CDN. Los encabezados Cache-Control siempre se añadirán, por lo que es importante asegurarse de que las páginas html coincidentes en /content/* sean públicas. Si no es así, considere la posibilidad de utilizar una regex más específica.
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Almacene en caché los servicios de contenido/las respuestas json del exportador del modelo Sling durante 5 minutos con la actualización en segundo plano de 1h en el navegador y 12h en la CDN.
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Almacene en caché las direcciones URL inmutables del componente de imagen principal a largo plazo (30 días) con la actualización de fondo para evitar MISS.
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * Almacene en caché los recursos mutables de DAM como imágenes y vídeo durante 24h y la actualización de fondo después de 12h para evitar MISS
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
 ## Invalidación de caché de Dispatcher {#disp}
 
 En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe confiar en que Dispatcher actualice su caché cuando el contenido se esté republicando y la CDN respete los encabezados de caducidad de la caché.
@@ -120,7 +191,7 @@ En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe
 Al igual que las versiones anteriores de AEM, la publicación o cancelación de la publicación de páginas borrará el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con el host local de ServerAlias, que es necesario para la invalidación de la caché de Dispatcher.
 
 
-Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Invalidación explícita de caché de Dispatcher {#explicit-invalidation}
 
