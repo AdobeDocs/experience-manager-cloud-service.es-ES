@@ -1,12 +1,12 @@
 ---
 title: recorrido para desarrolladores AEM sin encabezado
-description: Comience aquí para obtener un recorrido guiado a través de Adobe Experience Manager (AEM) as a Cloud Service cuando se esté utilizando como un sistema de gestión de contenido sin encabezado (CMS). Este recorrido le proporciona toda la información necesaria para desarrollar su primera aplicación sin periféricos.
+description: Comience aquí para obtener un recorrido guiado a través de Adobe Experience Manager (AEM) as a Cloud Service cuando utiliza funciones como Modelos de contenido, Fragmentos de contenido y una API de GraphQL para impulsar experiencias sin objetivos como un Sistema de administración de contenido sin objetivos (CMS). Este recorrido le proporciona toda la información necesaria para desarrollar su primera aplicación sin periféricos.
 landing-page-description: Comience aquí para obtener un recorrido guiado a través de las funciones sin objetivos de AEM, sus capacidades y cómo aprovecharlas en su primer proyecto de desarrollo.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 6%
+source-wordcount: '1307'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +16,7 @@ Comience aquí para obtener un recorrido guiado a través de Adobe Experience Ma
 
 ## Introducción {#introduction}
 
-La implementación sin encabezado renuncia a la administración de páginas y componentes, como es tradicional en las soluciones de pila completas, y se centra en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío por canales cruzados. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
+La implementación sin encabezado de AEM utiliza modelos de fragmentos de contenido y fragmentos de contenido para centrarse en la creación de fragmentos de contenido estructurados, neutros en el canal y reutilizables, así como su envío por canales cruzados. Para lograrlo, renuncia a la administración de páginas y componentes, como es tradicional en las soluciones de pila completas. Es un patrón de desarrollo moderno y dinámico para implementar experiencias digitales.
 
 Esta guía le guiará por los temas de implementación más importantes de AEM para que, al completarse:
 
@@ -24,11 +24,11 @@ Esta guía le guiará por los temas de implementación más importantes de AEM p
 * Comprender AEM funciones sin objetivos y cómo trabajan juntos para ofrecer una experiencia sin objetivos.
 * Tenga la capacidad de realizar los primeros pasos en la implementación de su primer proyecto AEM sin encabezado.
 
-## recorridos de documentación de AEM {#documentation-journeys}
+## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocios de principio a fin, mientras asume un mínimo de conocimiento previo o AEM.
+[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
 
-Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
+Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
 Si desea saber cómo el Adobe recomienda resolver casos empresariales sin objetivos con AEM, [recorridos sin AEM](/help/journey-documentation/documentation-journeys.md) son el punto de inicio.
 
@@ -40,7 +40,7 @@ Si desea saber cómo el Adobe recomienda resolver casos empresariales sin objeti
 
 Este recorrido está diseñado para el desarrollador, que expone los requisitos, pasos y enfoque de un proyecto sin encabezado AEM desde la perspectiva del desarrollador. El recorrido define las personas adicionales con las que el desarrollador debe interactuar para que un proyecto tenga éxito, pero el punto de vista del recorrido es el del desarrollador.
 
-Las siguientes son las personalidades que interactúan en este recorrido.
+Los siguientes son los perfiles que interactúan en este recorrido.
 
 | Grupo de usuarios | Descripción | Función en este Recorrido |
 |---|---|---|
