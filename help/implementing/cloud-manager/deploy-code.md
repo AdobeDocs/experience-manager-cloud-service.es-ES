@@ -2,10 +2,10 @@
 title: Implementación del código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
@@ -93,6 +93,19 @@ Las implementaciones de producción suelen seguir los mismos pasos que se descri
 Este proceso continúa hasta que la implementación haya llegado a todos los editores y distribuidores de la topología.
 
 ![Fase de implementación de producción](assets/production-deployment.png)
+
+## Tiempos de espera {#timeouts}
+
+Los siguientes pasos agotarán el tiempo de espera si se deja esperando los comentarios del usuario:
+
+| Etapa | Tiempo de espera |
+|--- |--- |
+| Prueba de calidad del código | 14 días |
+| Pruebas de seguridad | 14 días |
+| Pruebas de rendimiento | 14 días |
+| Solicitud de aprobación | 14 días |
+| Programar implementación de producción | 14 días |
+| Compatibilidad con CSE | 14 días |
 
 ## Proceso de implementación {#deployment-process}
 
