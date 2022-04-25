@@ -2,9 +2,9 @@
 title: Edición de un SPA externo dentro de AEM
 description: En este documento se describen los pasos recomendados para cargar un SPA independiente en una instancia de AEM, agregar secciones de contenido editables y habilitar la creación.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2401'
 ht-degree: 1%
 
 ---
@@ -257,6 +257,42 @@ Existen varios requisitos para agregar componentes de hoja virtual, así como al
 * La ruta al nodo en el que se crea un nuevo nodo debe ser válida cuando se proporciona mediante `itemPath`.
    * En este ejemplo, `root/responsivegrid` debe existir para que el nuevo nodo `text_20` se puede crear allí.
 * Solo se admite la creación de componentes de hoja. El contenedor virtual y la página serán compatibles en futuras versiones.
+
+### Contenedores virtuales {#virtual-containers}
+
+Se admite la capacidad de agregar contenedores, aunque el contenedor correspondiente aún no se haya creado en AEM. El concepto y el enfoque son similares a [componentes de hoja virtual.](#virtual-leaf-components)
+
+El desarrollador de front-end puede añadir los componentes de contenedor en ubicaciones adecuadas dentro del SPA y estos componentes mostrarán marcadores de posición cuando se abran en el editor en AEM. A continuación, el autor puede añadir componentes y su contenido al contenedor que creará los nodos necesarios en la estructura JCR.
+
+Por ejemplo, si un contenedor ya existe en `/root/responsivegrid` y el desarrollador desea agregar un nuevo contenedor secundario:
+
+![Ubicación del contenedor](assets/container-location.png)
+
+`newContainer` aún no existe en la AEM.
+
+Al editar la página que contiene este componente en AEM, se muestra un marcador de posición vacío para un contenedor en el que el autor puede añadir contenido.
+
+![Marcador de posición de contenedor](assets/container-placeholder.png)
+
+![Ubicación del contenedor en JCR](assets/container-jcr-structure.png)
+
+Una vez que el autor agrega un componente secundario al contenedor, el nuevo nodo contenedor se crea con el nombre correspondiente en la estructura JCR.
+
+![Contenedor con contenido](assets/container-with-content.png)
+
+![Contenedor con contenido en JCR](assets/container-with-content-jcr.png)
+
+Ahora se pueden agregar más componentes y contenido al contenedor, según lo requiera el autor, y los cambios se mantendrán.
+
+#### Requisitos y limitaciones {#container-limitations}
+
+Existen varios requisitos para agregar contenedores virtuales, así como algunas limitaciones.
+
+* La directiva para determinar qué componentes se pueden agregar se heredará del contenedor principal.
+* El elemento principal inmediato del contenedor que se va a crear ya debe existir en AEM.
+   * Si el contenedor `root/responsivegrid` ya existe en el contenedor de AEM, se puede crear un nuevo contenedor proporcionando la ruta `root/responsivegrid/newContainer`.
+   * Sin embargo `root/responsivegrid/newContainer/secondNewContainer` no es posible.
+* Sólo se puede crear virtualmente un nuevo nivel de componente a la vez.
 
 ## Personalizaciones adicionales {#additional-customizations}
 
