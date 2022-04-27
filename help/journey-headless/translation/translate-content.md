@@ -1,35 +1,31 @@
 ---
-title: Traducir contenido (AEM sin encabezado)
-description: Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
+title: Traducir contenido sin encabezado
+description: Utilice el conector de traducción para traducir el contenido sin encabezado.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2177'
 ht-degree: 0%
 
 ---
 
 
-# Traducir contenido {#translate-content}
+# Traducir contenido sin encabezado {#translate-content}
 
-Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado.
+Utilice el conector de traducción para traducir el contenido sin encabezado.
 
 ## La historia hasta ahora {#story-so-far}
 
-En el documento anterior del recorrido de traducción sin AEM, [Configurar reglas de traducción](translation-rules.md) ha aprendido a utilizar AEM reglas de traducción para identificar el contenido de traducción. Ahora debería:
+En el documento anterior del recorrido de traducción sin AEM, [Configurar conector de traducción](configure-connector.md) aprendió sobre el marco de traducción en AEM. Ahora debería:
 
-* Comprender lo que hacen las reglas de traducción.
-* Puede definir sus propias reglas de traducción.
+* Comprender los parámetros importantes del marco de integración de traducción en AEM.
+* Puede configurar su propia conexión con el servicio de traducción.
 
-Ahora que sus reglas de conector y traducciones están configuradas, este artículo le guía por el siguiente paso de traducir su contenido sin encabezado.
-
->[!NOTE]
->
->Si omitió el [Configurar reglas de traducción](translation-rules.md) paso de este recorrido, ya que está en el canal de prelanzamiento de AEM as a Cloud Service, no necesita preocuparse por las reglas de traducción como se menciona en este documento.
+Ahora que su conector está configurado, este artículo le guía por el siguiente paso de traducir su contenido sin encabezado.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo utilizar AEM proyectos de traducción junto con el conector y las reglas de traducción para traducir contenido. Después de leer este documento, debe:
+Este documento le ayuda a comprender cómo utilizar AEM proyectos de traducción junto con el conector para traducir contenido. Después de leer este documento, debe:
 
 * Comprender qué es un proyecto de traducción.
 * Poder crear nuevos proyectos de traducción.
@@ -130,7 +126,7 @@ El uso de un proyecto de traducción depende de cómo se creó: automáticamente
 
 ### Uso de un proyecto de traducción creado automáticamente {#using-automatic-project}
 
-Al crear automáticamente el proyecto de traducción, AEM evalúa el contenido sin encabezado en la ruta seleccionada en función de las reglas de traducción que definió anteriormente. Basándose en esa evaluación, extrae el contenido que requiere traducción en un nuevo proyecto de traducción.
+Al crear automáticamente el proyecto de traducción, AEM evalúa el contenido sin encabezado en la ruta seleccionada. Basándose en esa evaluación, extrae el contenido que requiere traducción en un nuevo proyecto de traducción. Sé qué campos se deben traducir en función de los campos marcados como **Translatable** por el arquitecto de contenido.
 
 Para ver el detalle del contenido sin encabezado incluido en este proyecto:
 

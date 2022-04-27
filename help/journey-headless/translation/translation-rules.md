@@ -1,10 +1,10 @@
 ---
-title: Configuración de reglas de traducción (AEM sin encabezado)
+title: Configuración de reglas de traducción para contenido sin encabezado
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Ahora que el conector está configurado, este artículo le explica el siguiente 
 
 >[!CAUTION]
 >
->Este paso del recorrido de documentación solo es necesario si no está en el canal de prelanzamiento de AEM as a Cloud Service.
+>Este paso del recorrido de la documentación solo es necesario si no utiliza la variable **Translatable** indicador en fragmentos de contenido.
 >
->* Si está en el canal de prelanzamiento, vaya al siguiente paso del recorrido [Traduzca el contenido.](translate-content.md)
->* Si no está en el canal de prelanzamiento, siga leyendo este documento.
->
->Consulte la [Sección Recursos adicionales](#additional-resources) para obtener más información sobre el canal de prelanzamiento.
+>* La variable **Translatable** el indicador crea automáticamente reglas de traducción y no requiere intervención.
+>* La variable **Translatable** El indicador solo se utiliza si la configuración del Marco de integración de traducción está configurada en **[Habilite los campos del modelo de contenido para la traducción.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* Al habilitar esta opción en la configuración de TIF, se reemplazará cualquier regla de traducción creada manualmente.|
+
 
 ## Objetivo {#objective}
 
@@ -108,4 +108,3 @@ Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabe
 Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Traducción de contenido,](translate-content.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
 * [Identificación del contenido para traducir](/help/sites-cloud/administering/translation/rules.md) : Aprenda cómo las reglas de traducción identifican el contenido que necesita traducción.
-* [Canal de prelanzamiento as a Cloud Service de AEM](/help/release-notes/prerelease.md#enable-prerelease) : Aprenda a incluirse en el canal de prelanzamiento de AEM as a Cloud Service para probar nuevas y futuras funciones.

@@ -4,9 +4,9 @@ description: Descubra cómo las reglas de traducción identifican el contenido q
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1297'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,9 @@ Las reglas de traducción identifican el contenido que se debe traducir para pá
 
 Las reglas de traducción descritas en este documento solo se aplican a los fragmentos de contenido si la variable **Habilitar campos del modelo de contenido para su traducción** no se ha activado en la [nivel de configuración del marco de integración de traducción.](integration-framework.md#assets-configuration-properties)
 
-Si la variable **Habilitar campos del modelo de contenido para su traducción** está activa, AEM usará la opción **Translatable** campo en [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar si el campo se va a traducir. En este caso, [reglas de traducción](rules.md) se sustituyen.
+Si la variable **Habilitar campos del modelo de contenido para su traducción** está activa, AEM usará la opción **Translatable** campo en [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar si el campo se va a traducir y crea automáticamente reglas de traducción según corresponda. Esta opción reemplaza las reglas de traducción que haya creado y no requiere intervención ni pasos adicionales.
 
-Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la variable **Habilitar campos del modelo de contenido para su traducción** en la configuración del marco de integración de traducción debe estar desactivada.
-
->[!NOTE]
->
->Esta función está disponible en el canal de prelanzamiento.
-> 
->Consulte la [Documentación del canal previa al lanzamiento](/help/release-notes/prerelease.md#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
+Si desea utilizar reglas de traducción para traducir los fragmentos de contenido, la variable **Habilitar campos del modelo de contenido para su traducción** en la configuración del marco de integración de traducción debe estar desactivada y debe seguir los pasos descritos a continuación para crear las reglas.
 
 ## Información general {#overview}
 

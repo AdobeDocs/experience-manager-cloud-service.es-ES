@@ -2,10 +2,10 @@
 title: recorrido de traducción AEM sin encabezado
 description: Comience aquí para obtener un recorrido guiado a través de la traducción de su contenido sin encabezado utilizando AEM poderosas herramientas de traducción.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: ad47148237fe8a8b7c0b4fc4eb293f1155dae560
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 4%
+source-wordcount: '1029'
+ht-degree: 11%
 
 ---
 
@@ -30,11 +30,11 @@ El objetivo es darles una amplia comprensión de la tecnología sin objetivos, c
 
 Si ya está familiarizado con la traducción, la traducción y el AEM, puede que ya tenga el conocimiento fundacional de este recorrido. Considere la posibilidad de consultar nuestra documentación técnica vinculada en el [a continuación, la sección de recursos adicionales.](#additional-resources)
 
-## recorridos de documentación de AEM {#documentation-journeys}
+## Recorridos de documentación de AEM {#documentation-journeys}
 
-[Un Recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados al proporcionar una narrativa que ayuda al lector, que puede ser nuevo en AEM, entender y resolver un problema de negocios de principio a fin, mientras asume un mínimo de conocimiento previo o AEM.
+[Un recorrido de documentación](/help/journey-documentation/documentation-journeys.md) une muchos temas y características diferentes y tal vez complicados. Proporciona una narrativa que ayuda al lector (que puede ser nuevo en AEM) a entender y resolver un problema empresarial de principio a fin, mientras asume un conocimiento previo mínimo de AEM.
 
-Los Recorridos de documentación están diseñados en torno a los principios de las mejores prácticas, basados en las últimas investigaciones del Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios de los proyectos de los clientes.
+Los recorridos de documentación están diseñados en torno a los principios de las prácticas recomendadas, basados en las últimas investigaciones de Adobe, la experiencia de implementación comprobada de los consultores de Adobe y los comentarios sobre los proyectos de los clientes.
 
 Si desea saber cómo el Adobe recomienda resolver casos empresariales sin objetivos con AEM, [recorridos sin AEM](/help/journey-documentation/documentation-journeys.md) son el punto de inicio.
 
@@ -44,9 +44,9 @@ Este recorrido está diseñado para el especialista en traducción, a menudo den
 
 Este recorrido supone que el lector tiene experiencia traduciendo contenido en un sistema CMS grande, pero no asume ningún conocimiento de tecnología o AEM sin periféricos.
 
-Las siguientes son las personalidades que interactúan en este recorrido.
+Los siguientes son los perfiles que interactúan en este recorrido.
 
-| Grupo de usuarios | Descripción | Función en el Recorrido |
+| Grupo de usuarios | Descripción | Función en el recorrido |
 |---|---|---|
 | Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Audiencia de este recorrido |
 | Autor de contenido | Crea y administra el contenido que se entrega sin problemas | Los autores de contenido crean contenido que el especialista en traducción debe traducir. |
@@ -67,9 +67,8 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 1 | [Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM](learn-about.md) | Aprenda conceptos sin objetivos, cómo se asignan a AEM, y la teoría de AEM traducción. |
 | 2 | [Introducción a la traducción sin encabezado AEM](getting-started.md) | Conozca cómo organizar su contenido sin encabezado y cómo funcionan AEM herramientas de traducción. |
 | 3 | [Configuración del conector de traducción](configure-connector.md) | Aprenda a conectar AEM a un servicio de traducción. |
-| 4 | [Configuración de reglas de traducción](translation-rules.md) | Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir. |
-| 5 | [Traducir contenido](translate-content.md) | Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado. |
-| 6 | [Publicar contenido traducido](publish-content.md) | Obtenga información sobre cómo publicar el contenido traducido y actualizar la traducción cuando se actualiza el contenido subyacente. |
+| 4 | [Traducir contenido](translate-content.md) | Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado. |
+| 5 | [Publicar contenido traducido](publish-content.md) | Obtenga información sobre cómo publicar el contenido traducido y actualizar la traducción cuando se actualiza el contenido subyacente. |
 
 ## Siguientes pasos {#what-is-next}
 
