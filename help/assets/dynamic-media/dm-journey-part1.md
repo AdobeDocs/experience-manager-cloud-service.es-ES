@@ -1,5 +1,5 @@
 ---
-title: recorrido de Dynamic Media
+title: recorrido Dynamic Media, parte I
 description: 'El Recorrido de Dynamic Media cubre los conceptos básicos de Dynamic Media, cómo funciona, qué puede hacer por usted y qué valor aporta a su trabajo y a sus clientes. '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Este método de envío único garantiza que se envíen experiencias de calidad c
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media ofrece la misma imagen principal a diferentes medios en diferentes tamaños y formatos.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media garantiza que las experiencias de calidad y consistencia se entreguen a cualquier pantalla, independientemente del tamaño o el ancho de banda.*
 
 A medida que siga leyendo, aprenderá más sobre por qué es importante este concepto de &quot;un archivo de recursos principal, posibilidades ilimitadas&quot;.
@@ -104,7 +105,7 @@ Esta inteligencia reduce aún más el tamaño del archivo de imagen en función 
 
 En general, con las imágenes inteligentes, se puede esperar una mejora del rendimiento del 22 % al 47 % en función de los ajustes preestablecidos de imagen existentes y las características específicas del usuario final. Todo mientras se mantiene la calidad de imagen como si nunca se tocara.
 
-![Imágenes inteligentes](/help/assets/assets-dm/dm-smart-imaging.png)
+![Imágenes inteligentes](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Las imágenes inteligentes optimizan automáticamente el formato y el tamaño de archivo de una imagen en función de la capacidad del explorador y la velocidad de red del cliente.*
 
 Las imágenes inteligentes no están activadas de forma predeterminada, ya que requieren un esfuerzo coordinado entre usted y el soporte técnico de Dynamic Media de Adobe. Además, la activación de imágenes inteligentes requiere una limpieza completa de la caché de CDN, que luego se completa con el tiempo. Si le interesa utilizar imágenes inteligentes, puede trabajar con Adobe para activarlas enviando un ticket de asistencia técnica. El soporte técnico le proporciona un parámetro de URL que le permite probar, de antemano, imágenes inteligentes. Puede probarlo en cualquiera de sus páginas web o imágenes para poder ver el rendimiento que obtiene y los ahorros. Puede activar las imágenes inteligentes para todo el sitio.
@@ -117,7 +118,7 @@ Cuando hay un vídeo en una página o en una página principal, los clientes tie
 
 Para resolver este problema, Dynamic Media le ofrece la posibilidad de crear *Conjuntos de vídeos adaptables*.
 
-![Conjunto de vídeos adaptables](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Conjunto de vídeos adaptables](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos.*
 
 Comienza con el vídeo principal original, que se carga en el sistema. Tamaño automático de Dynamic Media o *transcodifica*, ese vídeo en varios vídeos. A continuación, en el momento de la entrega, determina de forma inteligente qué pantalla de vídeo, qué calidad y qué formato usar y la envía al teléfono, la tableta o el equipo de escritorio.

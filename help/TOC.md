@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 277da5aaf1703b549f5697fb708333abc9df1664
 workflow-type: tm+mt
-source-wordcount: '3422'
-ht-degree: 100%
+source-wordcount: '3433'
+ht-degree: 99%
 
 ---
 
@@ -340,6 +340,9 @@ ht-degree: 100%
       + [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Previsualización: representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
+      + recorrido de Dynamic Media {#dm-journey}
+         + [Conceptos básicos, parte I](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [Básico, Parte II](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Archivo de newsletters sobre Dynamic Media de Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuración de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabajo con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
