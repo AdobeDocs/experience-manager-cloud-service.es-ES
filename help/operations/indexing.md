@@ -2,9 +2,9 @@
 title: Buscar contenido e indexar
 description: Buscar contenido e indexar
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2420'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Debe preparar un nuevo paquete de definición de índice que contenga la definic
 
 que luego necesita entrar `ui.apps/src/main/content/jcr_root`. Las carpetas raíz secundarias no son compatibles desde ahora.
 
-El filtro del paquete debe configurarse de modo que los índices existentes (predeterminados) se mantengan. Hay dos formas de hacerlo: O bien, el filtro se establece en `<filter root="/oak:index/" mode="merge"/>` en el archivo `ui.apps/src/main/content/META-INF/vault/filter.xml`, o cada índice personalizado (o personalizado) debe enumerarse por separado en la sección de filtros, por ejemplo, `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si el caso es posterior, cada vez que se cambia la versión, es necesario ajustar el filtro.
+El filtro del paquete debe configurarse de modo que los índices existentes (predeterminados) se mantengan. En el archivo `ui.apps/src/main/content/META-INF/vault/filter.xml`, cada índice personalizado (o personalizado) debe enumerarse, por ejemplo, como `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si la versión del índice se cambia posteriormente, es necesario ajustar el filtro.
 
 El paquete del ejemplo anterior se crea como `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
