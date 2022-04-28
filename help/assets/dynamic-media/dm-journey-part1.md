@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 85b89531aa05bd3ad0f8dff47504825e2edc4f89
+source-git-commit: 69d2121323d8a8ab54db3fb0a56195a1271e6112
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3585'
 ht-degree: 1%
 
 ---
@@ -284,3 +284,7 @@ _Tutoriales de Dynamic Media_
 
 * [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
 * [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (busque en *Dynamic Media*)
+
+_Visores de Dynamic Media_
+
+* [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
