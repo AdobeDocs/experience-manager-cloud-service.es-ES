@@ -2,10 +2,10 @@
 title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Las principales diferencias se encuentran en las siguientes áreas:
 
 * [/apps y /libs son inmutables en tiempo de ejecución](#apps-libs-immutable)
 
-* [Los paquetes y la configuración de OSGi deben estar basados en el repositorio](#osgi)
+* [Los paquetes y configuraciones de OSGi deben tratarse como código](#osgi)
 
 * [No se permiten los cambios en el repositorio de publicación](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ Cualquier contenido y carpetas secundarias de `/apps` y `/libs` son de solo lect
 
 * No se permite ningún cambio en `/libs`.
    * Esta regla no es nueva, pero no se aplicaba en versiones anteriores locales de AEM.
-* Las superposiciones de áreas en `/libs` en las que se permite la superposición siguen estando permitidas en `/apps`.
+* Superposiciones en áreas `/libs` que pueden superponerse siguen estando permitidas en `/apps`.
    * Estas superposiciones deben proceder de Git a través de la canalización CI/CD.
 * La información de diseño de plantilla estática almacenada en `/apps` no se puede editar mediante la interfaz de usuario.
    * En su lugar, se recomienda utilizar plantillas editables.
@@ -62,12 +62,14 @@ Cualquier contenido y carpetas secundarias de `/apps` y `/libs` son de solo lect
 * El modelo MSM y las configuraciones de implementación MSM personalizadas deben instalarse desde Git a través de la canalización CI/CD.
 * Los cambios en la traducción y localización deben proceder de Git a través de la canalización CI/CD.
 
-## Los paquetes y la configuración de OSGi deben estar basados en el repositorio {#osgi}
+## Los paquetes y configuraciones de OSGi deben tratarse como código {#osgi}
 
-La consola Web, utilizada en versiones anteriores de AEM para cambiar la configuración de OSGi, no está disponible en AEM Cloud Service. Por lo tanto, los cambios en OSGi deben introducirse a través de la canalización CI/CD.
+Los cambios en los paquetes y configuraciones de OSGi deben introducirse a través de la canalización CI/CD.
 
-* Los cambios en la configuración de OSGi solo pueden realizarse mediante la persistencia de Git como ajustes de OSGi basados en JCR.
-* Los paquetes de OSGi nuevos o actualizados deben introducirse a través de Git como parte del proceso de construcción de la canalización CI/CD.
+* Los paquetes OSGi nuevos o actualizados deben introducirse a través de Git a través de la canalización CI/CD.
+* Los cambios en las configuraciones de OSGi solo pueden proceder de Git a través de la canalización CI/CD.
+
+La consola web, utilizada en versiones anteriores de AEM para cambiar paquetes y configuraciones de OSGi, no está disponible en AEM Cloud Service.
 
 ## No se permiten los cambios en el repositorio de publicación {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ Para la transición de proyectos desde AMS o una instalación local, Adobe recom
 
 ## Administración y entrega de recursos {#asset-handling}
 
-La carga, el procesamiento y la descarga de recursos están optimizados en [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] ahora es más eficiente, permite un mayor escalado, y cargar y descargar a una velocidad mucho más rápida. Además, afecta al código personalizado existente y a algunas operaciones. Para ver una lista de cambios y para la paridad con [!DNL Experience Manager] 6.5, consulte [cambios en [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+La carga, el procesamiento y la descarga de recursos están optimizados en [!DNL Experience Manager Assets] como [!DNL Cloud Service]. [!DNL Assets] ahora es más eficiente, permite un mayor escalado, y cargar y descargar a una velocidad mucho más rápida. Además, afecta al código personalizado existente y a algunas operaciones. Para ver una lista de cambios y para la paridad con [!DNL Experience Manager] 6.5, consulte [cambios en [!DNL Assets]](/help/assets/assets-cloud-changes.md).
