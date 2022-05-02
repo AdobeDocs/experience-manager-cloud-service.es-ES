@@ -2,9 +2,9 @@
 title: Habilitar AEM Screens para el sitio de demostración
 description: Conozca los pasos para habilitar la experiencia as a Cloud Service completa de AEM Screens en su sitio de demostración.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2671'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,7 @@ Primero, tendrá que publicar el contenido de la demostración de Screens en AEM
 
    ![Crear visualización](assets/create-display.png)
 
-1. Una vez creado el canal, haga clic en él para ver los detalles. Se debe asignar un canal que se haya sincronizado desde el sitio de demostración. Haga clic en **Asignar canal** en la parte superior derecha de la pantalla.
+1. Una vez creada la pantalla, haga clic en el nombre de la pantalla para abrir la pantalla de detalles de visualización. Se debe asignar un canal que se haya sincronizado desde el sitio de demostración. Haga clic en **Asignar canal** en la parte superior derecha de la pantalla.
 
    ![Detalles del canal](assets/channel-detail.png)
 
