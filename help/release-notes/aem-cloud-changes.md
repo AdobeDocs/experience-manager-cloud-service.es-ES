@@ -2,10 +2,10 @@
 title: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 description: Cambios importantes en Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '846'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Las principales diferencias se encuentran en las siguientes áreas:
 
 * [No se permiten los modos de ejecución personalizados](#custom-runmodes)
 
-* [Eliminación de agentes de replicación](#replication-agents)
+* [Eliminación de agentes de replicación y cambios relacionados](#replication-agents)
 
 * [Eliminación de la IU clásica](#classic-ui)
 
@@ -96,13 +96,15 @@ Se proporcionan los siguientes modos de ejecución predeterminados para AEM Clou
 
 Los modos de ejecución adicionales o personalizados no son compatibles en AEM Cloud Service.
 
-## Eliminación de agentes de replicación {#replication-agents}
+## Eliminación de agentes de replicación y cambios relacionados {#replication-agents}
 
 En AEM Cloud Service, el contenido se publica mediante [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). Los agentes de replicación utilizados en versiones anteriores de AEM ya no se utilizan ni se proporcionan, lo que podría afectar a las siguientes áreas de los proyectos de AEM existentes:
 
 * Flujos de trabajo personalizados que llevan contenido a los agentes de replicación de los servidores de vista previa, por ejemplo.
 * Personalización a agentes de replicación para transformar contenido.
 * Uso de la replicación inversa para devolver el contenido de la publicación al creador.
+
+Además, tenga en cuenta que los botones de pausa y desactivación se han eliminado de la consola de administración del agente de replicación.
 
 ## Eliminación de la IU clásica {#classic-ui}
 
