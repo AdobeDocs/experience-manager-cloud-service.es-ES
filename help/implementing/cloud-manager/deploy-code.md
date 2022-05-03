@@ -2,9 +2,9 @@
 title: Implementación del código
 description: Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,18 @@ ht-degree: 1%
 
 # Implementación del código {#deploy-your-code}
 
-Obtenga información sobre cómo implementar su código mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
+Obtenga información sobre cómo implementar su código en Producción mediante canalizaciones de Cloud Manager en AEM as a Cloud Service.
+
+![Diagrama de canalización de producción](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+La implementación del código en Fase y luego hasta Producción se realiza mediante una canalización de producción. La ejecución de la canalización de producción se divide en dos fases lógicas.
+
+1. Implementación en entorno de ensayo
+   * El código se crea e implementa en el entorno de ensayo para pruebas funcionales automatizadas, pruebas de interfaz de usuario, auditoría de experiencias y pruebas de aceptación de usuarios (UAT).
+1. Implementación en el entorno de producción
+   * Una vez validada la compilación en Stage y aprobada para su promoción en Production, el mismo artefacto de compilación se implementa en el entorno Production.
+
+_Solo el tipo de canalización de código de pila completa admite la digitalización de código, las pruebas de funciones, las pruebas de interfaz de usuario y la auditoría de experiencias._
 
 ## Implementación del código con Cloud Manager en AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
