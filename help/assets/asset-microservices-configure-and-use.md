@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 1%
+source-wordcount: '2899'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +67,7 @@ Con la configuración predeterminada, solo se configura el perfil de procesamien
 
 * **Representación especial de FPO**: Al colocar recursos de gran tamaño desde [!DNL Experience Manager] into [!DNL Adobe InDesign] documentos, un profesional creativo espera un tiempo considerable después de [colocar un recurso](https://helpx.adobe.com/indesign/using/placing-graphics.html). Mientras tanto, se bloquea el uso del usuario [!DNL InDesign]. Esto interrumpe el flujo creativo y afecta negativamente a la experiencia del usuario. Adobe permite colocar temporalmente representaciones de tamaño pequeño en [!DNL InDesign] para empezar, que se pueden sustituir por activos de resolución completa bajo demanda más adelante. [!DNL Experience Manager] proporciona representaciones que se utilizan solo para la colocación (FPO). Estas representaciones de FPO tienen un tamaño de archivo pequeño, pero tienen la misma proporción de aspecto.
 
-El perfil de procesamiento puede incluir una representación de FPO (solo para ubicación). Consulte [!DNL Adobe Asset Link] [documentación](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber si debe activarlo para su perfil de procesamiento. Para obtener más información, consulte [Adobe Documentación completa de Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
+El perfil de procesamiento puede incluir una representación de FPO (solo para ubicación). Consulte [!DNL Adobe Asset Link] [documentación](https://helpx.adobe.com/es/enterprise/using/manage-assets-using-adobe-asset-link.html) para saber si debe activarlo para su perfil de procesamiento. Para obtener más información, consulte [Adobe Documentación completa de Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html).
 
 ### Creación de un perfil estándar {#create-standard-profile}
 
@@ -185,7 +185,7 @@ Para comprobar que los recursos se han procesado, previsualice las variantes de 
 
 En un caso en el que se requiera un procesamiento adicional de los recursos que no se pueda lograr con los perfiles de procesamiento, se pueden añadir flujos de trabajo adicionales posteriores al procesamiento a la configuración. El procesamiento posterior le permite añadir un procesamiento completamente personalizado además del procesamiento configurable mediante los microservicios de recursos.
 
-Los flujos de trabajo posteriores al procesamiento, si están configurados, los ejecuta automáticamente [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario añadir los iniciadores de flujo de trabajo manualmente para almacenar en déclencheur los flujos de trabajo. Los ejemplos incluyen:
+Flujos de trabajo posteriores al procesamiento o [Flujo de trabajo de inicio automático](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), si está configurado, se ejecutan automáticamente por [!DNL Experience Manager] una vez finalizado el procesamiento de los microservicios. No es necesario añadir los iniciadores de flujo de trabajo manualmente para almacenar en déclencheur los flujos de trabajo. Los ejemplos incluyen:
 
 * Pasos personalizados del flujo de trabajo para procesar recursos.
 * Integraciones para agregar metadatos o propiedades a recursos de sistemas externos, por ejemplo, información de productos o procesos.
@@ -233,6 +233,32 @@ Puede configurar el servicio de ejecución de flujo de trabajo personalizado par
 * Flujos de trabajo posteriores al procesamiento por expresión (`postProcWorkflowsByExpression`): Se pueden enumerar varios modelos de flujo de trabajo basados en diferentes expresiones regulares. Las expresiones y los modelos deben separarse con dos puntos. La expresión regular debe señalar directamente al nodo Asset y no a una de las representaciones o archivos. Por ejemplo: `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
 Para saber cómo implementar una configuración OSGi, consulte [implementar a [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+
+#### Desactivar la ejecución del flujo de trabajo posterior al procesamiento
+
+Cuando no sea necesario posprocesar, cree y utilice un modelo de flujo de trabajo &quot;vacío&quot; en la __Flujo de trabajo de inicio automático__ selección.
+
+##### Creación del modelo de flujo de trabajo de inicio automático desactivado
+
+1. Vaya a __Herramientas > Flujo de trabajo > Modelos__
+1. Select __Crear > Crear modelo__ desde la barra de acciones superior
+1. Proporcione un título y un nombre para el nuevo modelo de flujo de trabajo, por ejemplo:
+   * Título: Desactivar flujo de trabajo de inicio automático
+   * Nombre: disable-auto-start-workflow
+1. Select __Listo__ para crear el modelo de flujo de trabajo
+1. __Select__ y __Editar__ el modelo de flujo de trabajo recién creado
+1. En el editor Modelo de flujo de trabajo, seleccione __Paso 1__ de la definición del modelo y elimínelo
+1. Abra el __Panel lateral__ y seleccione __Pasos__
+1. Arrastre el __Flujo de trabajo de recursos de actualización de DAM completado__ paso a la definición del modelo
+1. Seleccione el __Información de la página__ (junto al botón __Panel lateral__ alternar) y seleccionar __Abrir propiedades__
+1. En el __Básico__ , seleccione __Flujo de trabajo transitorio__
+1. Select __Guardar y cerrar__ desde la barra de acciones superior
+1. Select __Sincronización__ en la barra de acciones superior
+1. Cierre del editor del modelo de flujo de trabajo
+
+##### Aplicar el modelo de flujo de trabajo de inicio automático desactivado
+
+Siga los pasos descritos en [aplicación de un modelo de flujo de trabajo a una carpeta](#apply-workflow-model-to-folder) y establezca la variable __Desactivar flujo de trabajo de inicio automático__ como el __Flujo de trabajo de inicio automático__ para las carpetas no es necesario posprocesar los recursos.
 
 ## Prácticas recomendadas y limitaciones {#best-practices-limitations-tips}
 
