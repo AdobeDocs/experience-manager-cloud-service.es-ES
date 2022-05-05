@@ -2,10 +2,10 @@
 title: Publicar páginas
 description: Publicar y cancelar la publicación de páginas con AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 82%
+source-wordcount: '1791'
+ht-degree: 81%
 
 ---
 
@@ -16,6 +16,10 @@ Cuando haya creado y revisado el contenido en el entorno de creación, el objeti
 Esta acción se conoce como publicar una página. Si desea quitar una página del entorno de publicación, la acción es la de cancelar la publicación. Tanto al publicar como al cancelar la publicación, la página permanece disponible en el entorno de creación para realizar cualquier cambio, hasta que decida eliminarla.
 
 Puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
+
+>[!NOTE]
+>
+>La publicación de un fragmento de experiencia básicamente sigue el mismo procedimiento que para publicar una página, aunque desde la consola o el editor de fragmentos de experiencias.
 
 ## Terminología {#terminology}
 

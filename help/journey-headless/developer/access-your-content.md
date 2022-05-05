@@ -2,16 +2,22 @@
 title: Cómo acceder al contenido a través de las API de envío de AEM
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 8%
+source-wordcount: '1410'
+ht-degree: 11%
 
 ---
 
 # Cómo acceder al contenido a través de las API de envío de AEM {#access-your-content}
 
 En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.md) puede aprender a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido y alimentarlo en la aplicación (entrega sin encabezado).
+
+>[!NOTE]
+>
+>Algunas de sus funcionalidades están disponibles en el canal de prelanzamiento. En concreto, la funcionalidad relacionada con las consultas persistentes.
+> 
+>Consulte la [Documentación del canal de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de comenzar con consultas sobre el contenido, debe:
 
 * Habilitar el punto final
-   * Uso de herramientas -> Recursos -> GraphQL
+   * Uso de herramientas -> General -> GraphQL
    * [Activación del punto de conexión de GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Instale GraphiQL (si es necesario)
@@ -270,9 +276,10 @@ Se utilizarán los modelos de fragmento:
 
 ### Dónde probar las consultas {#where-to-test-your-queries}
 
-Las consultas se pueden introducir en la interfaz de GraphiQL, por ejemplo en:
+Las consultas se pueden introducir en la interfaz de GraphiQL. Puede acceder al editor de consultas desde:
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Herramientas** -> **General** -> **Editor de consultas de GraphQL**
+* directamente; por ejemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interfaz de GraphiQL](assets/graphiql-interface.png "Interfaz de GraphiQL")
 

@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '879'
 ht-degree: 1%
 
 ---
@@ -90,12 +90,6 @@ A continuación se indican los pasos para agregar etiquetas a un recurso:
    ![añadir etiquetas](assets/add-tags-to-asset.png)
 
 1. Haga clic en **Guardar** para actualizar los cambios en los metadatos de los recursos.
-
->[!NOTE]
->
->Puede ordenar la estructura de las etiquetas al crear etiquetas inteligentes, así como al aplicar filtros de búsqueda mediante el predicado de etiquetas.
->
->La función ordenar etiquetas está disponible en el canal de prelanzamiento. Consulte [Documentación del canal previa al lanzamiento](/help/release-notes/prerelease.md#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 Para obtener más información, consulte los siguientes artículos:
 

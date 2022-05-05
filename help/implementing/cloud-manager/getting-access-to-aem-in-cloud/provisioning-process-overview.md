@@ -1,7 +1,7 @@
 ---
 title: 'Proceso de aprovisionamiento: información general'
 description: 'Proceso de aprovisionamiento: información general'
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 8%
@@ -31,7 +31,7 @@ Una vez completado el aprovisionamiento automático:
 * El administrador puede agregar usuarios y funciones para otros integrantes del equipo a través del Admin Console
 * Revise los permisos basados en funciones para los usuarios con el fin de determinar las asignaciones de permisos en Cloud Manager
 
-> ![processoberview.jpg](./assets/processOverview.jpg)
+![processoberview.jpg](assets/processOverview.jpg)
 
 
 Para obtener más información, visite [Incorporación al Experience Manager as a Cloud Service en el Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)
@@ -49,7 +49,7 @@ Para obtener más información, visite [Incorporación al Experience Manager as 
 
 ### 2. Incorporar organizaciones a Adobe Admin Console:
 
-![processoberview2.jpg](./assets/processOverview2.jpg)
+![processoberview2.jpg](assets/processOverview2.jpg)
 
 * Administrador del sistema:
    * Aprovisionar AEM programas y entornos.
@@ -62,7 +62,7 @@ Para obtener más información, visite [Incorporación al Experience Manager as 
 
 ### 3. Incorporar usuarios y administrar acceso en Admin Console:
 
-![processoberview3.jpg](./assets/processOverview3.jpg)
+![processoberview3.jpg](assets/processOverview3.jpg)
 
 Tres métodos para incorporar usuarios, según el tamaño y la preferencia:
 * Crear usuarios manualmente en el Admin Console

@@ -2,16 +2,22 @@
 title: 'Creación de una solicitud de API: configuración sin encabezado'
 description: Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
-workflow-type: ht
-source-wordcount: '670'
-ht-degree: 100%
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 96%
 
 ---
 
 # Creación de una solicitud de API: configuración sin encabezado {#accessing-delivering-content-fragments}
 
 Aprenda a utilizar la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido y la API de REST de Assets de AEM para administrar fragmentos de contenido.
+
+>[!NOTE]
+>
+>Algunas de sus funcionalidades están disponibles en el canal de prelanzamiento. En concreto, la funcionalidad relacionada con las consultas persistentes.
+> 
+>Consulte la [Documentación del canal de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 ## ¿Qué son las API de REST de GraphQL y Assets? {#what-are-the-apis}
 
@@ -27,7 +33,7 @@ El resto de esta guía se centrará en el acceso a GraphQL y la entrega de fragm
 
 Antes de poder utilizar las API de GraphQL, se debe crear un punto de conexión de GraphQL.
 
-1. Vaya a **Herramientas**, **Assets** y, a continuación, seleccione **GraphQL**.
+1. Vaya a **Herramientas**, **General** y, a continuación, seleccione **GraphQL**.
 1. Seleccione **Crear**.
 1. El diálogo **Crear nuevo punto de conexión de GraphQL** se abrirá. Aquí puede especificar lo siguiente:
    * **Nombre**: nombre del punto de conexión; puede escribir cualquier texto.
@@ -48,7 +54,11 @@ Los arquitectos de la información deberán diseñar consultas para sus puntos d
 GraphiQL es un IDE que se puede instalar en un entorno de AEM. Siga los pasos de [Uso del IDE de GraphiQL](/help/headless/graphql-api/graphiql-ide.md) para instalarlo en su entorno de AEM.
 
 1. Inicie sesión en AEM as a Cloud Service y acceda a la interfaz de GraphiQL:
-   * Por ejemplo: `https://<host>:<port>/aem/graphiql.html`.
+
+   Puede acceder al editor de consultas desde:
+
+   * **Herramientas** -> **General** -> **Editor de consultas de GraphQL**
+   * directamente; por ejemplo, `http://localhost:4502/aem/graphiql.html`
 
 1. El IDE de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para generar consultas, recuperar fragmentos de contenido y entregarlos sin encabezado como JSON.
    * La parte superior derecha desplegable le permite seleccionar el punto de conexión.
