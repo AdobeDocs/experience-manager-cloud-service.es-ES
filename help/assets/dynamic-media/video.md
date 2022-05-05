@@ -4,7 +4,7 @@ description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas rec
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 22718edcfb6d233a1316fcf2546e685b57609e8c
 workflow-type: tm+mt
 source-wordcount: '9349'
 ht-degree: 4%
