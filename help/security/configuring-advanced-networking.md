@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
-workflow-type: ht
+source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+workflow-type: tm+mt
 source-wordcount: '2976'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Las reglas de reenvío de puertos por entorno se pueden actualizar invocando de 
 
 ### Eliminación o desactivación de la salida de puerto flexible {#deleting-disabling-flexible-port-egress-provision}
 
-Para **eliminar** la infraestructura de red, envíe un ticket a asistencia al cliente, en el que se describa lo que se ha creado y por qué debe eliminarse.
+Hasta **delete** la infraestructura de red de un programa, invocar *DELETE /program/{id. de programa}/ infraestructura de red/{id. de infraestructura de red}* consulte la documentación de la API de Cloud Manager para obtener más información.
 
 Para **desactivar** la salida de puerto flexible desde un entorno particular, invoque `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
