@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
+source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '995'
 ht-degree: 8%
 
 ---
@@ -30,7 +30,7 @@ La leyenda siguiente describe el nivel de compatibilidad con cada formato.
 
 | Nivel de asistencia | Descripción |
 | ------------- | --------------------------- |
-| ✓ | Compatible |
+| ✓ | Compatibilidad |
 | * | Véanse las observaciones que figuran a continuación del cuadro |
 | - | No aplicable |
 
@@ -195,12 +195,12 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | --- | --- | --- | --- |
 | AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
 | FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
-| M4V | Apple iTunes | H264/AVC | - |
+| M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | - |
 | MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF } | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
+| MXF ‡ | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla de Microsoft (MSS2), Microsoft Photo Story (WVP2) |
@@ -213,7 +213,11 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF (consulte la nota más abajo) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Para PDF seguros, solo se admite Cargar .
 
 ## Dynamic Media: formatos de imagen de trama compatibles {#image-support-dynamic-media}
 
