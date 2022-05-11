@@ -1,18 +1,18 @@
 ---
 title: Introducción a [!DNL AEM Forms] as a Cloud Service
-description: Utilice esta plataforma como servicio (PaaS) para crear, administrar y publicar formularios digitales de clase empresarial y procesos empresariales, así como para conectar formularios a orígenes de datos actuales.
+description: Descubra AEM Forms y descubra cómo le ayuda a producir documentos y contenido de formularios preparados para el negocio. Obtenga información sobre Platform como servicio (PaaS) y cómo administrar formularios digitales de clase empresarial y procesos empresariales, así como conectar Forms a fuentes de datos actuales.
 landing-page-description: Obtenga información sobre cómo utilizar formularios en AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '296'
 ht-degree: 6%
 
 ---
 
 # Introducción {#introduction}
 
-Adobe Experience Manager Forms as a Cloud Service ofrece una solución nativa de la nube, Platform as a Service (PaaS) para que las empresas creen, administren, publiquen y actualicen formularios digitales complejos a la vez que integran los datos enviados con procesos back-end, reglas comerciales y guardan datos en un almacén de datos externo. El servicio siempre está actualizado, siempre está disponible y siempre aprende.
+Adobe [!DNL Experience Manager Forms as a Cloud Service] ofrece una solución nativa de la nube, Platform as a Service (PaaS) para que las empresas creen, gestionen, publiquen y actualicen formularios digitales complejos a la vez que integran los datos enviados con procesos back-end, reglas comerciales y guardan datos en un almacén de datos externo. El servicio siempre está actualizado, siempre está disponible y siempre aprende.
 
 Puede utilizar el servicio para crear y desplegar formularios digitales interactivos y atractivos. Por ejemplo, tome una organización que esté buscando digitalizar su recorrido de inscripción de clientes. Tienen varias fuentes de datos con datos de clientes existentes. Buscan cumplimentar formularios previamente, agregar firmas electrónicas a sus formularios y archivar formularios rellenados como archivos de PDF. Además, la organización tiene varios formularios impresos (PDF forms), y también están buscando convertir todos sus formularios impresos en formularios digitales.
 

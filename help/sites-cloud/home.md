@@ -1,18 +1,18 @@
 ---
-title: Sitios de Adobe Experience Manager as a Cloud Service
-description: Recursos informativos y enlaces a la documentación sobre los sitios de Adobe Experience Manager as a Cloud Service
+title: Recursos de asistencia para sitios as a Cloud Service de Experience Manager
+description: Obtenga una lista completa de todos nuestros recursos de asistencia de AEM Cloud Services. Encuentre respuestas a sus preguntas sobre AEM Sites como Cloud Service.
 landing-page-description: Aprenda a crear y administrar AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 87%
 
 ---
 
 # AEM Sites as a Cloud Service {#aem-sites-guide}
 
-En esta página se muestran los recursos informativos relacionados con Sites de Experience Manager as a Cloud Service.
+Esta página proporciona una lista completa de todos nuestros recursos de asistencia de AEM Cloud Services. Obtenga respuestas a sus [!DNL AEM Sites as a Cloud Service] preguntas.
 
 ## Artículos clave de Sites {#key-articles}
 
@@ -52,5 +52,5 @@ En esta página se muestran los recursos informativos relacionados con Sites de 
 * [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

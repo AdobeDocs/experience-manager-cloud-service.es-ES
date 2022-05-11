@@ -1,18 +1,18 @@
 ---
 title: Implementación de Adobe Experience Manager as a Cloud Service
 description: Recursos informativos y enlaces a la documentación sobre implementación de Adobe Experience Manager as a Cloud Service
-landing-page-description: Descubra cómo personalizar su implementación de AEM as a Cloud Service, incluidos temas sobre desarrollo e implementación.
+landing-page-description: 'Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service Browse AEM Cloud Services documentation for developing and implementing your applications. '
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 97%
+source-wordcount: '413'
+ht-degree: 91%
 
 ---
 
 # Implementación de aplicaciones para AEM as a Cloud Service {#aem-implementation-guide}
 
-En esta página se muestran los recursos informativos para la implementación de Experience Manager as a Cloud Service. Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service
+Busque recursos informativos sobre la implementación para Experience Manager as a Cloud Service. Obtenga información sobre cómo personalizar su implementación de Experience Manager as a Cloud Service
 
 ## Artículos clave sobre implementación {#key-articles}
 
@@ -32,7 +32,7 @@ En esta página se muestran los recursos informativos para la implementación de
 | [Incorporación](/help/onboarding/home.md) | Esta guía le proporciona un resumen sobre cómo empezar a utilizar Experience Manager as a Cloud Service, incluida la forma de obtener acceso y la información importante sobre la protección de datos. |
 | [Guía del usuario de Sites](/help/sites-cloud/home.md) | Obtenga información sobre cómo crear contenido y administrar Sites de Experience Manager as a Cloud Service. |
 | [Guía de usuario de Assets](/help/assets/home.md) | Obtenga información sobre cómo usar y administrar Experience Manager Assets as a Cloud Service. |
-| [Guía del usuario sobre implementación](/help/implementing/home.md) | Obtenga información sobre cómo crear y personalizar experiencias mediante AEM potentes funciones. |
+| [Guía del usuario sobre implementación](/help/implementing/home.md) | Understand how to build and customize experiences using AEM&#39;s powerful features. |
 | [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Explore este recorrido guiado a través de las potentes y flexibles características de AEM para prepararse para su primer proyecto sin encabezado. |
 | [El paso de AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Comprender el viaje de transición a Cloud Service. |
 | [Guía del usuario sobre Connectors](/help/connectors/home.md) | Obtenga información sobre cómo integrar Connectors en Experience Manager as a Cloud Service. |
@@ -48,5 +48,5 @@ En esta página se muestran los recursos informativos para la implementación de
 * [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

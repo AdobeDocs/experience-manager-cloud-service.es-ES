@@ -1,18 +1,18 @@
 ---
 title: Compatibilidad
-description: En esta página se muestran los recursos de autoayuda que proporcionan información sobre el cumplimiento de las normas en Experience Manager as a Cloud Service.
+description: Obtenga información general sobre el cumplimiento de normas en Experience Manager as a Cloud Service.
 landing-page-description: Para obtener información general sobre el cumplimiento en AEM as a Cloud Service, incluido de la privacidad y accesibilidad, comience aquí.
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
 # cumplimiento en AEM as a Cloud Service {#aem-compliance}
 
-En esta página se muestran los recursos de autoayuda que proporcionan información sobre el cumplimiento de las normas en Experience Manager as a Cloud Service.
+Obtenga información general sobre el cumplimiento de normas en Experience Manager as a Cloud Service.
 
 ## Artículos sobre la información general {#key-articles}
 
@@ -46,5 +46,5 @@ En esta página se muestran los recursos de autoayuda que proporcionan informaci
 * [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

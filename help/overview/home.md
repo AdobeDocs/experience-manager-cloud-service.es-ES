@@ -1,17 +1,17 @@
 ---
-title: Información general de Adobe Experience Manager as a Cloud Service
-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
+title: Introducción a Experience Manager as a Cloud Service
+description: Conozca cómo funciona el as a Cloud Service Experience Manager y qué puede hacer el software por usted.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
 # Información general de Experience Manager as a Cloud Service {#aem-overview-guide}
 
-Esta página enumera una serie de recursos informativos que ofrecen una introducción y descripción general de Experience Manager as a Cloud Service.
+Empiece aquí para aprender cómo funciona el as a Cloud Service Experience Manager y qué puede hacer el software por usted.
 
 ## Artículos sobre la información general {#key-articles}
 
@@ -45,5 +45,5 @@ Esta página enumera una serie de recursos informativos que ofrecen una introduc
 * [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

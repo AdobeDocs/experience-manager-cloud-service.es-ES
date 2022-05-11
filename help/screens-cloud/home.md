@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: 'Recursos de ayuda y vínculos a la documentación de Adobe Experience Manager Screens as a Cloud Service '
+description: Obtenga más información sobre AEM Screens y cómo funciona esta solución de publicidad dinámica.
 landing-page-description: Comprender AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 74%
+source-wordcount: '418'
+ht-degree: 69%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-En esta página se muestran los recursos informativos relacionados con AEM Screens as a Cloud Service.
+Esta página le ayuda a conocer mejor AEM Screens y cómo funciona esta solución de publicidad dinámica. Obtenga recursos de autoayuda y conozca las novedades.
 
 >[!NOTE]
 >Para AEM Screens con AEM 6.5, consulte [Guía del usuario de AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
@@ -49,5 +49,5 @@ En esta página se muestran los recursos informativos relacionados con AEM Scree
 * [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

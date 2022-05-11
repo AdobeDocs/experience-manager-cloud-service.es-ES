@@ -1,12 +1,12 @@
 ---
 title: Integración de Adobe Experience Manager as a Cloud Service
-description: Recursos informativos y enlaces a la documentación sobre la integración de Adobe Experience Manager as a Cloud Service
-landing-page-description: Esta guía proporciona un resumen de cómo empezar a trabajar con AEM as a Cloud Service, incluyendo cómo obtener acceso y la información importante sobre protección de datos.
+description: 'Comience con la configuración de Experience Manager, acceda a la nube y descubra cómo realizar copias de seguridad de sus datos. '
+landing-page-description: Esta guía proporciona un resumen de cómo empezar a trabajar con AEM as a Cloud Service, incluyendo cómo obtener acceso e información importante sobre protección de datos.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 38%
+source-wordcount: '523'
+ht-degree: 37%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 38%
 >title="Información general sobre la incorporación"
 >abstract="Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service. Necesitará la ayuda de su Adobe ID y del administrador del sistema para que los usuarios se agreguen a Cloud Manager con las funciones asignadas y los permisos asociados."
 
-¡Felicidades por comenzar su recorrido con AEM as a Cloud Service! Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service.
+Felicidades por comenzar su recorrido con AEM as a Cloud Service. Ya sea que implemente una aplicación nueva o que migre una existente, esta guía sirve como punto de partida para garantizar que la aplicación esté optimizada y lista para el éxito en el Cloud Service.
 
 ## Experiencia de integración {#audience}
 
@@ -56,5 +56,5 @@ El recorrido de incorporación que se muestra a continuación está diseñado pa
 * [Documentación de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Preparación para el RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriales de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=es)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
 * [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
