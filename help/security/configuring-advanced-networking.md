@@ -2,10 +2,10 @@
 title: Configurar la conexión avanzada para AEM as a Cloud Service
 description: Aprenda a configurar funciones de red avanzadas como una VPN o una dirección IP de salida flexible o dedicada para AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
+source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
-source-wordcount: '2981'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 94%
 
 ---
 
@@ -68,13 +68,7 @@ La configuración de nivel de programa se puede actualizar invocando el punto de
 
 Las reglas de reenvío de puertos por entorno se pueden actualizar invocando de nuevo el punto de conexión `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`. Asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto.
 
-### Eliminación o desactivación de la salida de puerto flexible {#deleting-disabling-flexible-port-egress-provision}
-
-Hasta **delete** la infraestructura de red de un programa, invocar `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
-
->[!NOTE]
->
-> Eliminar no elimina la infraestructura si hay entornos que la utilicen.
+### Desactivación de la salida de puerto flexible {#disabling-flexible-port-egress-provision}
 
 Para **desactivar** la salida de puerto flexible desde un entorno particular, invoque `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
@@ -206,6 +200,12 @@ La principal diferencia es que el tráfico siempre saldrá de una IP única y de
 Además de las reglas de enrutamiento admitidas por la salida de puerto flexible en el punto final `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, la dirección IP de salida dedicada admite un parámetro `nonProxyHosts`. Esto le permite declarar un conjunto de hosts que deben enrutarse a través de un intervalo de direcciones IP compartidas en lugar de la IP dedicada, lo que puede resultar útil, ya que la salida de tráfico a través de direcciones IP compartidas puede optimizarse aún más. Las direcciones URL `nonProxyHost` pueden seguir los patrones de `example.com` o `*.example.com`, donde el comodín solo se admite al inicio del dominio.
 
 Al decidir entre una salida de puerto flexible y una dirección IP de salida dedicada, los clientes deben elegir una salida de puerto flexible si no se requiere una dirección IP específica, ya que Adobe puede optimizar el rendimiento del tráfico de salida de puerto flexible.
+
+### Desactivación de la dirección IP de salida dedicada {#disabling-dedicated-egress-IP-address}
+
+Para **disable** Dirección IP de salida dedicada de un entorno en particular, invocar `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+Para obtener más información sobre las API, consulte la [Documentación de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### Enrutamiento del tráfico {#dedcated-egress-ip-traffic-routing}
 
@@ -397,9 +397,7 @@ Tenga en cuenta que el espacio de direcciones no se puede cambiar después del a
 
 Las reglas de enrutamiento por entorno se pueden actualizar invocando de nuevo el punto de conexión `PUT /program/{programId}/environment/{environmentId}/advancedNetworking`. Asegúrese de incluir el conjunto completo de parámetros de configuración en lugar de un subconjunto. Las actualizaciones de entorno suelen tardar entre 5 y 10 minutos en aplicarse.
 
-### Eliminación o desactivación de la VPN {#deleting-or-disabling-the-vpn}
-
-Para eliminar la infraestructura de red, envíe un ticket de asistencia al cliente en el que se describa lo que se ha creado y por qué debe eliminarse.
+### Desactivación de la VPN {#disabling-the-vpn}
 
 Para desactivar la VPN para un entorno en particular, invoque `DELETE /program/{programId}/environment/{environmentId}/advancedNetworking`. Más detalles en la [Documentación de la API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
@@ -540,6 +538,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## Eliminación de la infraestructura de red de un programa {#deleting-network-infrastructure}
+
+Hasta **delete** la infraestructura de red de un programa, invocar `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> Eliminar solo eliminará la infraestructura si todos los entornos tienen deshabilitadas sus redes avanzadas.
+
 ## Transición entre tipos de redes avanzadas {#transitioning-between-advanced-networking-types}
 
-Dado que el parámetro `kind` no se puede modificar, póngase en contacto con el servicio de asistencia al cliente para obtener ayuda, y describa lo que ya se ha creado y el motivo del cambio.
+Es posible migrar entre tipos de red avanzados siguiendo el siguiente procedimiento:
+
+* deshabilitar las redes avanzadas en todos los entornos
+* elimine la infraestructura de red avanzada
+* volver a crear las infraestructuras de red avanzadas con los valores correctos
+* reactivar redes avanzadas de nivel de entorno
+
+>[!WARNING]
+>
+> Este procedimiento resultará en un tiempo de inactividad de los servicios avanzados de red entre la eliminación y la recreación
+
+Si el tiempo de inactividad puede causar un impacto comercial significativo, póngase en contacto con el servicio de atención al cliente para obtener ayuda, describiendo lo que ya se ha creado y el motivo del cambio.
