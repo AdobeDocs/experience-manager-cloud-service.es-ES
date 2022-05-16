@@ -3,10 +3,10 @@ title: Notas de la versión para Cloud Manager en AEM versión as a Cloud Servic
 description: Estas son las notas de la versión de Cloud Manager de AEM versión as a Cloud Service 2022.01.0.
 feature: Release Information
 exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6e394aaabcb123aea53fba49684aaade3e6c87a6
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 70%
+ht-degree: 62%
 
 ---
 
@@ -20,7 +20,7 @@ Esta página describe las notas de la versión de Cloud Manager en AEM as a Clou
 
 ## Fecha de la versión {#release-date}
 
-La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2022.01.0 es el 20 de enero de 2022. La próxima versión está planificada para el 10 de febrero de 2022.
+La fecha de la versión de Cloud Manager en AEM as a Cloud Service 2022.01.0 es el 20 de enero de 2022. La próxima versión está planificada para el 10 de febrero de 2022.
 
 ## Novedades {#what-is-new}
 
@@ -29,7 +29,7 @@ La fecha de lanzamiento de Cloud Manager en AEM as a Cloud Service 2022.01.0 es 
 * La IU no permitirá la configuración de canalización front-end para un programa en el que Sites no esté habilitado como solución.
 * Al generar una contraseña de git, se muestra la fecha de caducidad.
 
-## Corrección de errores {#bug-fixes}
+## Correcciones de errores {#bug-fixes}
 
 * Se han corregido las excepciones de puntero nulo encontradas en algunas implementaciones de canalización front-end.
 * Ahora se pueden añadir, actualizar y eliminar variables de entorno cuando un entorno ejecuta una versión obsoleta de AEM.

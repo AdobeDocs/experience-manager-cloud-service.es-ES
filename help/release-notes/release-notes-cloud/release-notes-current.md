@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7ee2e43ab8a5726b2ecf7f157f67b5f3cc73fcff
+source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 27%
+source-wordcount: '551'
+ht-degree: 33%
 
 ---
 
@@ -85,24 +85,6 @@ Se recomienda actualizar el proyecto maven con la última versión del analizado
 
 Puede encontrar una lista completa de las versiones mensuales de Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Analizador de prácticas recomendadas {#bpa-release}
+## Herramientas de migración {#migration-tools}
 
-### Fecha de la versión {#release-date-bpa}
-
-La fecha de versión de Best Practices Analyzer v2.1.28 es el 22 de abril de 2022.
-
-### Novedades {#what-is-new-bpa}
-
-* Capacidad para detectar e informar sobre el uso de API de Asset Manager no admitidas. Hay cuatro API que ya no son compatibles con AEM as a Cloud Service. Los clientes deben asegurarse de que ya no utilizan estas API y de que deben utilizar el nuevo método de carga de recursos.
-
-* Capacidad para detectar el uso de plantillas de fragmento de contenido. Las plantillas de fragmento de contenido ya no son compatibles con la creación de nuevos fragmentos de contenido en AEM as a Cloud Service. Los clientes deberán crear modelos de fragmento de contenido para reemplazar las plantillas de fragmento de contenido.
-
-* Capacidad para detectar activos con más de 100 descendientes bajo el nodo de metadatos del recurso en el repositorio. Se recomienda eliminar los nodos de metadatos que no son necesarios para mejorar el rendimiento al cargar carpetas que consistan en estos recursos.
-
-* Capacidad para detectar e informar sobre el tipo de almacén de datos utilizado.
-
-* Patrón actualizado para AEM portal de formularios.
-
-### Correcciones de errores {#bug-fixes-bpa}
-
-* El BPA presentaba informes sobre los resultados de los componentes principales en lugar de informar únicamente sobre los componentes del cliente. Esto se ha corregido.
+Puede encontrar una lista completa de las versiones de las herramientas de migración [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
