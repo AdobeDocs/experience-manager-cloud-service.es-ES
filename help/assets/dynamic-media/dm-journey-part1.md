@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ La audiencia que mejor se adapta a los lectores de este recorrido es la siguient
 
 >[!TIP]
 >
->Para obtener mejores resultados, Adobe recomienda leer y ver el Recorrido de Dynamic Media en un equipo de escritorio.
+>Para obtener mejores resultados, Adobe recomienda leer y ver este Recorrido de Dynamic Media en un equipo de escritorio.
 
 ## ¿Qué es Dynamic Media y cómo puede ayudarle? {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Una vez cargados los recursos en Dynamic Media, se recomienda _publicar_ selecci
 
 Además de publicar recursos manualmente, puede configurar Dynamic Media para que publique los recursos instantáneamente, sin intervención del usuario, en el momento de la carga.
 
-Después de la carga, hay diferentes formas de previsualizar las representaciones de un recurso en Dynamic Media. La vista previa de representaciones puede ayudarle a hacerse una idea de lo que ve un cliente. Un método de vista previa habitual es seleccionar un recurso y, a continuación, ver sus representaciones seleccionando una *ajuste preestablecido de imagen* tal como se ve a continuación.
+Después de la carga, hay diferentes formas de previsualizar las representaciones de un recurso en Dynamic Media. La vista previa de representaciones puede ayudarle a hacerse una idea de lo que ve un cliente. Un método de vista previa habitual es seleccionar un recurso y, a continuación, ver sus representaciones seleccionando una _ajuste preestablecido de imagen_ tal como se ve a continuación.
 
 ![Vista previa de una representación de un recurso en función del ajuste preestablecido de imagen grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Vista previa de una representación de un recurso en función del ajuste preestablecido de imagen &quot;Grande&quot; seleccionado. Se hizo clic en el botón URL . La ruta de URL resultante contiene el nombre de ajuste preestablecido de imagen &quot;Grande&quot; y se puede utilizar en una página web._
 
 ¡La URL anterior está activa! [Pruébelo](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-Otro método para obtener una vista previa de un recurso es seleccionar un recurso de imagen y, a continuación, seleccionar un *Visualizadores* preestablecido como se ve en el siguiente.
+Otro método para obtener una vista previa de un recurso es seleccionar un recurso de imagen y, a continuación, seleccionar un _Visualizadores_ preestablecido como se ve en el siguiente.
 
 ![Vista previa de un recurso en función del ajuste preestablecido de visor de zoom vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Vista previa de un recurso en función del ajuste preestablecido de visualizador &quot;ZoomVertical_light&quot; seleccionado. El puntero del ratón (`+`) se movió sobre el reloj para acercar. Observe los botones URL e Incrustar ._
 
 ¡La representación de arriba está activa! [Pruébelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-Examinemos estas URL un poco más de cerca para que pueda entender mejor lo que está pasando. Llévame a [recorrido de Dynamic Media: Conceptos básicos, parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## Opcional: Más información
 
-## Más información
+La parte I de este recorrido abarcaba los conceptos básicos de una variedad de temas de Dynamic Media. Si desea obtener más información sobre lo que acaba de leer, utilice los materiales siguientes para explorar conceptos con buenos detalles. De lo contrario, puede continuar con la parte II de su recorrido. Consulte [Siguientes pasos en este Recorrido de Dynamic Media](#whats-next).
 
-_Temas de Dynamic Media_
+_Temas de ayuda de Dynamic Media_
 
-* [Trabajo con Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-* [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md)
-* [Conjuntos de vídeos adaptables](/help/assets/dynamic-media/video.md)
+* [Trabajar con Dynamic Media en Experience Manager](/help/assets/dynamic-media/dynamic-media.md)
+* [Acerca de las imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md)
+* [Cómo crear conjuntos de vídeos adaptables](/help/assets/dynamic-media/video.md)
 * [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Carga de recursos](/help/assets/add-assets.md#upload-assets)
-* [Previsualización de recursos](/help/assets/dynamic-media/previewing-assets.md)
-* [Vista previa de activos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Enviar recursos de Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [Publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [Cómo cargar recursos](/help/assets/add-assets.md#upload-assets)
+* [Cómo previsualizar recursos](/help/assets/dynamic-media/previewing-assets.md)
+* [Cómo previsualizar recursos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Cómo entregar Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Cómo publicar recursos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Trabajo con Publicación selectiva en Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Tutoriales de Dynamic Media_
 
 * [Uso de Dynamic Media con Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=es)
-* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (busque en *Dynamic Media*)
+* [Biblioteca de contenido de Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (busque en _Dynamic Media_)
 
 _Visores de Dynamic Media_
 
-* [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de cada visor
+
+## Siguientes pasos en este Recorrido de Dynamic Media {#whats-next}
+
+En la parte II de este recorrido, examinará las URL de Dynamic Media un poco más de cerca para comprender mejor qué sucede cuando se entrega un recurso. También obtendrá más información sobre los aspectos básicos de la creación de ajustes preestablecidos de imagen para procesar recursos, y aprenderá sobre los conjuntos de imágenes, los conjuntos de giros y los conjuntos de medios mixtos y cómo se crean.
+
+Llévame a [recorrido de Dynamic Media: Conceptos básicos, parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

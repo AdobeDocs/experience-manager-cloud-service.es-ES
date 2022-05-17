@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Consulte también [recorrido de Dynamic Media; Conceptos básicos, parte I](/hel
 
 >[!TIP]
 >
->Para obtener mejores resultados, Adobe recomienda leer y ver el Recorrido de Dynamic Media en un equipo de escritorio.
+>Para obtener mejores resultados, Adobe recomienda leer y ver este Recorrido de Dynamic Media en un equipo de escritorio.
 
 ## Anatomía de una URL de Dynamic Media y cómo Dynamic Media ofrece contenido {#dm-journey-d}
 
@@ -43,7 +43,7 @@ La primera parte de la URL en rojo hace referencia al propio dominio del servido
 
 El nombre de la cuenta es la porción en morado. En este caso, se llama a la cuenta `jpearldemo`.
 
-El ID o nombre del recurso, `AdobeStock_28563982` está en verde. Observe que el recurso tiene *no* extensión de archivo como `.png` o `.jpg`. Cuando se incorporan recursos en Dynamic Media, la extensión de archivo se elimina y se crea un tipo de archivo diferente: un archivo piramidal-TIFF. El TIFF pirágico permite a Dynamic Media crear rápidamente representaciones sobre la marcha.
+El ID o nombre del recurso, `AdobeStock_28563982` está en verde. Observe que el recurso tiene _no_ extensión de archivo como `.png` o `.jpg`. Cuando se incorporan recursos en Dynamic Media, la extensión de archivo se elimina y se crea un tipo de archivo diferente: un archivo piramidal-TIFF. El TIFF pirágico permite a Dynamic Media crear rápidamente representaciones sobre la marcha.
 
 Y finalmente, hay algunos parámetros de procesamiento de imágenes, `?wid=1000&fmt=jpeg&qlt=85`, se muestra en amarillo al final.
 
@@ -68,7 +68,7 @@ Ahora intente agregar un parámetro de rotación a la imagen del reloj. Y el fin
 
 El reloj sigue ligeramente inclinado a la izquierda. Cambiar el valor de rotación de `90` a `92`y, a continuación, presione **[!UICONTROL Entrar]**. [Pruébelo](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-Una vez más, el momento en que presionas **[!UICONTROL Entrar]**, se genera casi instantáneamente una nueva representación del reloj. Puede ver el tipo de rendimiento que obtiene, lo que explica por qué Dynamic Media puede entregar más de 800.000 solicitudes de imagen, *por segundo*, en un fin de semana ajetreado o en vacaciones importantes.
+Una vez más, el momento en que presionas **[!UICONTROL Entrar]**, se genera casi instantáneamente una nueva representación del reloj. Puede ver el tipo de rendimiento que obtiene, lo que explica por qué Dynamic Media puede entregar más de 800.000 solicitudes de imagen, _por segundo_, en un fin de semana ajetreado o en vacaciones importantes.
 
 Aunque es posible cambiar los parámetros de procesamiento de imágenes en una URL imagen por imagen, no es un método eficiente, especialmente si tiene decenas de miles de imágenes que componen su sitio web. Un enfoque mucho mejor es usar ajustes preestablecidos de imagen.
 
@@ -121,7 +121,7 @@ _Creación de un ajuste preestablecido de imagen seleccionando opciones en la pe
 
 Recuerda en [Anatomía de una URL de Dynamic Media](#dm-journey-d) antes, que lea sobre la URL de Dynamic Media y cómo se crea. La variable **[!UICONTROL Modificador de imagen]** es donde puede escribir cualquier parámetro adicional de procesamiento de imagen que desee. Los parámetros se incluyen en el nombre preestablecido de la URL cuando se entregan las imágenes, utilizando el ajuste preestablecido . En la captura de pantalla anterior, el parámetro `bgc=451B15` se ha añadido. Es decir, se añadió un color de fondo marrón oscuro.
 
-Puede considerar un ajuste preestablecido de imagen como una receta para sus imágenes. Va a ofrecer cualquier imagen que utilice el ajuste preestablecido de forma consistente, cada vez; va a ser lo mismo. El parámetro `&op_brightness=+10` también se agregó para aumentar ligeramente el brillo.
+Puede considerar un ajuste preestablecido de imagen como una receta para sus imágenes. Va a ofrecer cualquier imagen que utilice el ajuste preestablecido de forma consistente, siempre; va a ser lo mismo. El parámetro `&op_brightness=+10` también se agregó para aumentar ligeramente el brillo.
 
 Cuando haya terminado, guarde el ajuste preestablecido y ahora estará disponible para todas las imágenes que tenga. En este caso, deseamos aplicar la variable _Medio_ imagen preestablecida a una imagen de un recipiente de chocolate líquido.
 
@@ -204,17 +204,19 @@ Sólo lees un poco sobre los conjuntos de imágenes y los espectadores. Veamos u
 * `ZoomVertical_dark` visualizador aplicado a un recurso de imagen. [Pruébelo](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` visualizador aplicado a una imagen. [Pruébelo](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## Más información
+## Opcional: Más información
 
-_Temas de Dynamic Media_
+Si desea obtener más información sobre lo que acaba de leer, utilice los materiales siguientes para explorar conceptos con buenos detalles. De lo contrario, el Recorrido de Dynamic Media se habrá completado.
 
-* [Crear ajustes preestablecidos de imagen](/help/assets/dynamic-media/image-presets.md)
+_Temas de ayuda de Dynamic Media_
+
+* [Cómo crear ajustes preestablecidos de imagen](/help/assets/dynamic-media/image-presets.md)
 * Una lista de [parámetros de procesamiento de imagen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) que puede utilizar en el campo Modificador de imagen al crear un ajuste preestablecido de imagen
-* [Previsualización de recursos](/help/assets/dynamic-media/previewing-assets.md)
-* [Vista previa de activos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md)
-* [Conjuntos de giros](/help/assets/dynamic-media/spin-sets.md)
-* [Conjuntos de medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)
+* [Cómo previsualizar recursos](/help/assets/dynamic-media/previewing-assets.md)
+* [Cómo previsualizar recursos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Cómo crear conjuntos de imágenes](/help/assets/dynamic-media/image-sets.md)
+* [Cómo crear conjuntos de giros](/help/assets/dynamic-media/spin-sets.md)
+* [Creación de conjuntos de medios mixtos](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Tutoriales de Dynamic Media_
 
@@ -223,6 +225,6 @@ _Tutoriales de Dynamic Media_
 
 _Visores de Dynamic Media_
 
-* [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Demostraciones en directo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de cada visor
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
