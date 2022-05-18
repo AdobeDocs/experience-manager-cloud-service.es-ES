@@ -2,9 +2,9 @@
 title: Comprobación del estado del nombre de dominio
 description: Obtenga información sobre cómo determinar si Cloud Manager ha verificado correctamente su nombre de dominio personalizado.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,24 @@ Cloud Manager verificará la propiedad del dominio mediante el valor TXT y mostr
    * Consulte el documento [Administración de nombres de dominio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para obtener más información.
 
 Cloud Manager almacenará en déclencheur automáticamente una verificación TXT al seleccionar **Guardar** sobre la fase de verificación del **Agregar dominio personalizado** asistente. Para las verificaciones posteriores, debe seleccionar activamente el icono de verificación de nuevo situado junto al estado .
+
+## Errores de nombre de dominio {#domain-error}
+
+En esta sección se explican los errores que podría ver y cómo resolverlos.
+
+**Dominio no instalado** - Recibe este error durante la validación del dominio del registro TXT incluso después de comprobar que el registro se ha actualizado correctamente.
+
+**Explicación del error** - Enciende un dominio a la cuenta inicial que lo registró y ninguna otra cuenta puede registrar un subdominio sin solicitar permiso. Además, solo permite asignar un dominio de ápice y subdominios asociados a un servicio y una cuenta de Afinidad. Si tiene una cuenta existente de Facebook que vincula los mismos apex y subdominios utilizados para sus dominios de AEM Cloud Service, verá este error.
+
+**Resolución de errores** - El error se corrige de la siguiente manera:
+
+* Elimine la ápice y los subdominios de la cuenta existente antes de instalar el dominio en Cloud Manager. Utilice esta opción para vincular el dominio de ápice y todos los subdominios a la cuenta de AEM as a Cloud Service de FPrimera. Consulte [Uso de dominios en la documentación rápida](https://docs.fastly.com/en/guides/working-with-domains) para obtener más información.
+
+* Si el dominio de apex tiene varios subdominios para AEM sitios as a Cloud Service as a Cloud Service y no AEM que desee vincular a distintas cuentas de Ffront, intente instalar el dominio en Cloud Manager y, si la instalación del dominio falla, cree un ticket de asistencia al cliente con Finfinito para que podamos realizar el seguimiento con Finfinito en su nombre.
+
+>[!NOTE]
+>
+>NOTA: No enrute el DNS del sitio a direcciones IP as a Cloud Service AEM si el dominio no se instaló correctamente.
 
 ## Configuraciones preexistentes de CDN para nombres de dominio personalizados {#pre-existing-cdn}
 
