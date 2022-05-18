@@ -3,9 +3,9 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
       </LocationMatch>
       ```
 
+### Comportamiento de la solicitud del HEAD {#request-behavior}
+
+Cuando se recibe una solicitud de HEAD en la CDN de Adobe para un recurso que **not** en la caché, la solicitud se transforma y se recibe mediante la instancia de Dispatcher o AEM como una solicitud de GET. Si la respuesta se puede almacenar en caché, las solicitudes de HEAD posteriores se servirán desde la CDN. Si la respuesta no se puede almacenar en caché, las solicitudes de HEAD subsiguientes se pasarán a la instancia de Dispatcher o AEM durante un período de tiempo que depende de la variable `Cache-Control` TTL.
+
 ## Invalidación de caché de Dispatcher {#disp}
 
 En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe confiar en que Dispatcher actualice su caché cuando el contenido se esté republicando y la CDN respete los encabezados de caducidad de la caché.
@@ -191,7 +195,7 @@ En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe
 Al igual que las versiones anteriores de AEM, la publicación o cancelación de la publicación de páginas borrará el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con el host local de ServerAlias, que es necesario para la invalidación de la caché de Dispatcher.
 
 
-When the publish instance receives a new version of a page or asset from the author, it uses the flush agent to invalidate appropriate paths on its dispatcher. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
 
 ### Invalidación explícita de caché de Dispatcher {#explicit-invalidation}
 
