@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1795'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 
 | Nivel de asistencia | Descripción |
 | ------------- | --------------------------- |
-| ✓ | Compatible |
+| ✓ | Compatibilidad |
 | × | No se admite. No usar. |
 | - | No disponible |
 
@@ -42,7 +42,7 @@ El artículo contiene recomendaciones, materiales de referencia y recursos para 
 | **Metadatos** |  |  |  |  |  |  |
 | Crear metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
 | Leer metadatos | - | ✓ | - | ✓ | ✓ | - |
-| Actualizar metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
+| Actualización de metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
 | Eliminar metadatos | - | ✓ | ✓ | ✓ | ✓ | - |
 | Copiar metadatos | - | ✓ | - | ✓ | ✓ | - |
 | Mover metadatos | - | ✓ | - | ✓ | ✓ | - |
@@ -167,6 +167,8 @@ Una vez cargadas todas las partes de un archivo binario, envíe una solicitud de
 | `versionLabel` | Cadena | Opcional | Si se crea una nueva versión, la etiqueta asociada a la nueva versión de un recurso . |
 | `versionComment` | Cadena | Opcional | Si se crea una nueva versión, los comentarios asociados a la versión. |
 | `replace` | Booleano | Opcional | If `True` y existe un recurso con el nombre especificado, [!DNL Experience Manager] elimina el recurso y lo vuelve a crear. |
+| `uploadDuration` | Número | Opcional | Cantidad total de tiempo, en milisegundos, que tarda el archivo en cargarse en su totalidad. Si se especifica, la duración de la carga se incluye en los archivos de registro del sistema para el análisis de la velocidad de transferencia. |
+| `fileSize` | Número | Opcional | El tamaño, en bytes, del archivo. Si se especifica, el tamaño del archivo se incluye en los archivos de registro del sistema para el análisis de la velocidad de transferencia. |
 
 >[!NOTE]
 Si el recurso existe y ni `createVersion` nor `replace` se especifica, entonces [!DNL Experience Manager] actualiza la versión actual del recurso con el nuevo binario.
