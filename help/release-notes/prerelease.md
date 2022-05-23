@@ -1,11 +1,11 @@
 ---
-title: '"[!DNL Adobe Experience Manager] Canal de prelanzamiento as a Cloud Service"'
-description: '"[!DNL Adobe Experience Manager] Canal de prelanzamiento as a Cloud Service"'
+title: “Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service”
+description: “Canal de prelanzamiento de [!DNL Adobe Experience Manager] as a Cloud Service”
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 98%
+source-wordcount: '805'
+ht-degree: 84%
 
 ---
 
@@ -29,28 +29,41 @@ Las funciones de la versión preliminar se pueden experimentar de diferentes man
 
 ### Entornos de la nube {#cloud-environments}
 
-Para ver las nuevas funciones de la consola de Sites en los entornos de desarrollo de la nube, así como el resultado de cualquier personalización de proyecto:
+Para actualizar un entorno de Cloud para utilizar el prelanzamiento, agregue una nueva [variable de entorno](../implementing/cloud-manager/environment-variables.md) uso de la interfaz de usuario de configuración de entorno en Cloud Manager:
 
-* Al usar el [punto de conexión de las variables de entorno de la API de Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), establezca la variable de entorno **AEM_RELEASE_CHANNEL** al valor **versión preliminar**.
+1. Vaya a la **Programa** > **Entorno** > **Configuración del entorno** desea actualizar.
+1. Agregar una nueva [variable de entorno](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | Nombre | Value | Servicio aplicado | Tipo |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | Todos | Variable |
 
-También se puede utilizar la CLI de Cloud Manager, según las instrucciones indicadas en [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. Guarde los cambios y el entorno se actualizará con las características de la versión preliminar activadas.
+
+   ![Nueva variable de entorno](assets/env-configuration-prerelease.png)
 
 
-La variable se puede eliminar o volver a establecerse en un valor diferente si desea que el entorno se restaure al comportamiento del canal normal (que no es de prelanzamiento)
+**Alternativamente** puede utilizar la API y la CLI de Cloud Manager para actualizar las variables de entorno:
 
-* También puede configurar variables de entorno desde la [IU de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* Uso [Punto final de las variables de entorno de la API de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), establezca la variable **AEM_RELEASE_CHANNEL** variable de entorno al valor **versión preliminar**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* También se puede utilizar la CLI de Cloud Manager, según las instrucciones indicadas en [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+La variable se puede eliminar o volver a establecer en un valor diferente si desea que el entorno se restaure al comportamiento del canal normal (que no es de prelanzamiento).
 
 ### SDK local {#local-sdk}
 
