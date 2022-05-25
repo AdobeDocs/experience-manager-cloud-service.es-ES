@@ -3,10 +3,10 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -83,31 +83,42 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * al utilizar AEM marco de biblioteca del lado del cliente, el código JavaScript y CSS se generan de forma que los navegadores puedan almacenarlo en caché indefinidamente, ya que cualquier cambio se manifiesta como nuevos archivos con una ruta única.  En otras palabras, el HTML que hace referencia a las bibliotecas del cliente se producirá según sea necesario para que los clientes puedan experimentar contenido nuevo a medida que se publique. El control de caché se establece en &quot;inmutable&quot; o 30 días para los exploradores más antiguos que no respetan el valor &quot;inmutable&quot;.
 * consulte la sección [Bibliotecas del lado del cliente y coherencia de la versión](#content-consistency) para obtener más información.
 
-### Imágenes y cualquier contenido lo suficientemente grande como para almacenarlo en blob {#images}
+### Imágenes y cualquier contenido lo suficientemente grande como para almacenarse en blob. {#images}
 
-* de forma predeterminada, no está almacenado en caché
-* se puede configurar en un nivel más fino mediante el siguiente Apache `mod_headers` directivas:
+El comportamiento predeterminado para los programas creados después de mediados de mayo de 2022 (específicamente, para los id de programa superiores a 65000) es almacenar en caché de forma predeterminada, respetando al mismo tiempo el contexto de autenticación de la solicitud. Los programas más antiguos (id de programa iguales o inferiores a 65000) no almacenan en caché el contenido del blob de forma predeterminada.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+En ambos casos, los encabezados de almacenamiento en caché se pueden sobrescribir en un nivel granulado más preciso en la capa apache/dispatcher mediante el uso de apache `mod_headers` directivas, por ejemplo:
 
-   Consulte la discusión en la sección html/text anterior para tener cuidado de no almacenar en caché demasiado ampliamente y también cómo forzar a AEM a que siempre aplique el almacenamiento en caché con la opción &quot;siempre&quot;.
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   Es necesario asegurarse de que un archivo de `src/conf.dispatcher.d/`la caché tiene la siguiente regla (que está en la configuración predeterminada):
+Al modificar los encabezados de almacenamiento en caché en la capa de Dispatcher, tenga cuidado de no almacenar en caché demasiado ampliamente, vea la discusión en la sección HTML/texto [above](#html-text)). Además, asegúrese de que los recursos que están destinados a ser guardados en privado (en lugar de en caché) no formen parte del `LocationMatch` filtros de directiva.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### Nuevo comportamiento predeterminado de almacenamiento en caché {#new-caching-behavior}
 
-   Asegúrese de que los recursos destinados a ser guardados en privado en lugar de en caché no formen parte de los filtros de directiva LocationMatch.
+La capa AEM establecerá los encabezados de caché en función de si el encabezado de caché ya se ha establecido y el valor del tipo de solicitud. Tenga en cuenta que si no se ha establecido ningún encabezado de control de caché, el contenido público se almacena en caché y el tráfico autenticado se establece en privado. Si se ha establecido un encabezado de control de caché, los encabezados de caché no se tocarán.
 
-   >[!NOTE]
-   >Los demás métodos, incluido el [dispatcher-ttl AEM proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.
+| ¿Existe el encabezado de control de caché? | Tipo de solicitud | AEM establece los encabezados de caché en |
+|------------------------------|---------------|------------------------------------------------|
+| No | público | Cache-Control: public, max-age=600, inmutable |
+| No | autenticado | Cache-Control: privado, max-age=600, inmutable |
+| Sí | cualquiera | sin cambios |
+
+Aunque no se recomienda, es posible cambiar el nuevo comportamiento predeterminado para que siga el comportamiento anterior (id de programa iguales o inferiores a 65000) configurando la variable de entorno de Cloud Manager `AEM_BLOB_ENABLE_CACHING_HEADERS` en false.
+
+#### Comportamiento de caché predeterminado anterior {#old-caching-behavior}
+
+La capa AEM no almacenará en caché el contenido del blob de forma predeterminada.
+
+>[!NOTE]
+>Se recomienda cambiar el comportamiento predeterminado anterior para que sea coherente con el nuevo comportamiento (id de programa superiores a 65000) estableciendo la variable de entorno de Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS en true. Si el programa ya está activo, asegúrese de que, después de los cambios, el contenido se comporta como espera.
+
+>[!NOTE]
+>Los demás métodos, incluido el [dispatcher-ttl AEM proyecto ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), no anulará correctamente los valores.
 
 ### Otros tipos de archivo de contenido en el almacén de nodos {#other-content}
 
@@ -115,7 +126,7 @@ Esto puede resultar útil, por ejemplo, cuando la lógica empresarial requiere u
 * el valor predeterminado no se puede establecer con la variable `EXPIRATION_TIME` variable utilizada para tipos de archivo html/text
 * la caducidad de la caché se puede configurar con la misma estrategia LocationMatch descrita en la sección html/text especificando la regex adecuada
 
-### Optimizaciones adicionales
+### Optimizaciones adicionales {#further-optimizations}
 
 * Evite utilizar `User-Agent` como parte del `Vary` encabezado. Las versiones anteriores de la configuración predeterminada de Dispatcher (anteriores a la versión 28 del tipo de archivo) incluían esto y le recomendamos que lo elimine siguiendo los pasos a continuación.
    * Localice los archivos vhost en `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
