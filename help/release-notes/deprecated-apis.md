@@ -2,10 +2,10 @@
 title: API obsoletas
 description: Notas de la versión específicas de las API en desuso y eliminadas de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 8e205c92b1d3ca14988b7ae9187cd708428774a9
+source-git-commit: 8325d8a69f453573a177a46cde54afe5365b17f8
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +53,7 @@ A continuación se incluye una lista detallada de las API de AEM en desuso y su 
     <td>org.apache.fop.apps</td>
     <td></td>
     <td>3/1/21</td>
-    <td>6/1/21</td>
+    <td>eliminado</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
