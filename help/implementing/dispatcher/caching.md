@@ -3,10 +3,10 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,7 +96,7 @@ En ambos casos, los encabezados de almacenamiento en caché se pueden sobrescrib
    </LocationMatch>
 ```
 
-Al modificar los encabezados de almacenamiento en caché en la capa de Dispatcher, tenga cuidado de no almacenar en caché demasiado ampliamente, vea la discusión en la sección HTML/texto [above](#html-text)). Además, asegúrese de que los recursos que están destinados a ser guardados en privado (en lugar de en caché) no formen parte del `LocationMatch` filtros de directiva.
+Al modificar los encabezados de almacenamiento en caché en la capa de Dispatcher, tenga cuidado de no almacenar en caché demasiado ampliamente, vea la discusión en la sección HTML/texto [above](#html-text). Además, asegúrese de que los recursos que están destinados a ser guardados en privado (en lugar de en caché) no formen parte del `LocationMatch` filtros de directiva.
 
 #### Nuevo comportamiento predeterminado de almacenamiento en caché {#new-caching-behavior}
 
