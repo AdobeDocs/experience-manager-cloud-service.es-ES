@@ -2,9 +2,9 @@
 title: Acceso a los KPI
 description: Acceso a los KPI
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
+source-git-commit: 6c6412a05bc00480623ee0d08106f53f4c0c416a
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,3 @@ Después del lanzamiento de Experience Manager, un conjunto sólido de KPI le da
 >[!TIP]
 >
 > Si desea ayuda adicional con sus KPI, póngase en contacto con [Servicios de consultoría de Adobe](https://www.adobe.com/es/experience-cloud/consulting-services.html) o su partner de implementación.
-
-Para obtener más ejemplos de los tipos de resultados que las principales empresas han visto al usar Adobe Experience Manager, descargue los informes de IDC:
-* [El valor comercial de Adobe Experience Manager Sites](https://www.adobe.com/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
-* [El valor comercial de Adobe Experience Manager Assets](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
