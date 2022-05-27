@@ -3,8 +3,9 @@ title: Imágenes inteligentes
 description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que mejora el rendimiento y la participación.
 feature: Asset Management,Renditions
 role: User
+mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: e52e0d99bb9b19a74b938a703089159b5caaa3da
+source-git-commit: 70d472776b5530cbb1048b7284780408326df604
 workflow-type: tm+mt
 source-wordcount: '3480'
 ht-degree: 1%
