@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
+source-git-commit: 263808980a9542b1a333c59e68e59122cf43025d
 workflow-type: tm+mt
-source-wordcount: '3524'
+source-wordcount: '3525'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ No. Las imágenes inteligentes se incluyen en la licencia existente. Esta regla 
 
 ## ¿Cómo funciona la imagen inteligente? {#how-does-smart-imaging-work}
 
-Cuando un consumidor solicita una imagen, la función Imágenes inteligentes comprueba las características del usuario y la convierte al formato de imagen adecuado en función del explorador en uso. Estas conversiones de formato se realizan de manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes en diferentes formatos según la capacidad del navegador de la siguiente manera.
+Cuando un consumidor solicita una imagen, la función Imágenes inteligentes comprueba las características del usuario y las convierte al formato de imagen adecuado en función del explorador en uso. Estas conversiones de formato se realizan de manera que no degrada la fidelidad visual. Las imágenes inteligentes convierten automáticamente las imágenes en diferentes formatos según la capacidad del navegador de la siguiente manera.
 
 * Convertir automáticamente a AVIF si el explorador admite el formato
 * Convertir automáticamente a WebP si la conversión de AVIF no fue beneficiosa o el explorador no admite AVIF
