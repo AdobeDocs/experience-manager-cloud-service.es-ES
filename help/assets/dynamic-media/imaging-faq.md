@@ -4,9 +4,9 @@ description: Aprenda cómo las imágenes inteligentes con Adobe Sensei AI aplica
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2629'
 ht-degree: 1%
 
 ---
@@ -78,9 +78,10 @@ Si lo desea, su empresa puede excluir la optimización del ancho de banda de la 
 |---|---|
 | `network=off` | Desactiva la optimización de red a nivel de URL de imagen individual. |
 
->[!NOTE]
->
->Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 y iPhone12 con DPR=3, ambos muestran DPR=2. Sin embargo, para los dispositivos de alta resolución, el envío del RGPD=2 es mejor que el envío del RGPD=1. Próximamente: Adobe está trabajando en código del lado del cliente para determinar con precisión el RGPD de un usuario final.
+Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 y iPhone12 con `dpr=3`, ambos programas `dpr=2`. Sin embargo, para dispositivos de alta resolución, enviar `dpr=2` es mejor que enviar `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+El RGPD del lado del cliente le ofrece valores 100% precisos y funciona con cualquier dispositivo, ya sea Apple o cualquier otro dispositivo nuevo que se haya iniciado.
 
 ## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -265,7 +266,7 @@ Sí. Para desactivar la optimización de la red y el RGPD en su empresa, cree un
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? {#tuning-settings}
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que pueda establecer? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? {#minimum-maximum}
 
