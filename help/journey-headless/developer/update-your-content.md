@@ -2,9 +2,9 @@
 title: Cómo actualizar su contenido a través de las API de AEM Assets
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1071'
 ht-degree: 3%
 
 ---
@@ -318,7 +318,7 @@ Ahora que ha completado esta parte del Recorrido para desarrolladores sin encabe
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Debe continuar con su recorrido sin AEM para la próxima revisión del documento [Cómo vivir con tu aplicación sin encabezado](go-live.md) ¡donde realmente tomas tu proyecto sin AEM en vivo!
+Debe continuar con su recorrido sin AEM para la próxima revisión del documento [Cómo ponerlo todo juntos: su aplicación y su contenido en AEM sin cabeza](put-it-all-together.md) donde se familiarizará con los conceptos básicos de la arquitectura de AEM y las herramientas que necesita utilizar para agrupar su aplicación.
 
 ## Recursos adicionales {#additional-resources}
 
