@@ -3,14 +3,11 @@ title: Rellene previamente los campos del formulario adaptable
 seo-title: Prefill Adaptive Form fields
 description: Utilice los datos existentes para rellenar previamente los campos de un formulario adaptable.
 seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
-uuid: 574de83a-7b5b-4a1f-ad37-b9717e5c14f1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6b3c0abbbd7a5b3c9a3790937b933699389b0cd2
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '1948'
 ht-degree: 0%
 
 ---
@@ -28,11 +25,11 @@ Un formulario adaptable puede tener una combinación de campos enlazados y no en
 
 Puede rellenar previamente los campos enlazados y no enlazados de un formulario adaptable. Los datos de relleno previo contienen las secciones afBoundData y afUnBoundData para rellenar previamente los campos enlazados y no enlazados de un formulario adaptable. La variable `afBoundData` contiene los datos de rellenado previo de los campos y paneles enlazados. Estos datos deben cumplir con el esquema del modelo de formulario asociado:
 
-* Para Forms adaptable mediante la variable [Plantilla de formulario XFA](prepopulate-adaptive-form-fields.md), utilice el XML de rellenado previo compatible con el esquema de datos de la plantilla XFA.
-* Para Forms adaptable mediante [Esquema XML](#xml-schema-af), utilice el XML de rellenado previo compatible con la estructura de esquema XML.
-* Para Forms adaptable mediante [esquema JSON](#json-schema-based-adaptive-forms), utilice el JSON de rellenado previo compatible con el esquema JSON.
-* Para Adaptive Forms mediante el esquema FDM, utilice el JSON de relleno previo compatible con el esquema FDM.
-* Para Forms adaptable con [sin modelo de formulario](#adaptive-form-with-no-form-model), no hay datos enlazados. Cada campo es un campo independiente y se rellena previamente utilizando el XML independiente.
+- Para Forms adaptable mediante la variable [Plantilla de formulario XFA](#xfa-based-af), utilice el XML de rellenado previo compatible con el esquema de datos de la plantilla XFA.
+- Para Forms adaptable mediante [Esquema XML](#xml-schema-af), utilice el XML de rellenado previo compatible con la estructura de esquema XML.
+- Para Forms adaptable mediante [esquema JSON](#json-schema-based-adaptive-forms), utilice el JSON de rellenado previo compatible con el esquema JSON.
+- Para Adaptive Forms mediante el esquema FDM, utilice el JSON de relleno previo compatible con el esquema FDM.
+- Para Forms adaptable con [sin modelo de formulario](#adaptive-form-with-no-form-model), no hay datos enlazados. Cada campo es un campo independiente y se rellena previamente utilizando el XML independiente.
 
 ### Ejemplo de estructura XML de prerelleno {#sample-prefill-xml-structure}
 
@@ -51,8 +48,8 @@ Puede rellenar previamente los campos enlazados y no enlazados de un formulario 
          .
          .
       <numericbox>12</numericbox>
-         . 
-         .              
+         .
+         .
     </data>
   </afUnboundData>
 </afData>
@@ -80,9 +77,9 @@ Para los campos enlazados con los mismos campos bindref o unbound con el mismo n
 
 La estructura de XML de relleno previo y el XML enviado para Forms adaptable basado en XFA es la siguiente:
 
-* **Prerellenar estructura XML**: El XML de relleno previo para el formulario adaptable basado en XFA debe ser compatible con el esquema de datos de la plantilla de formulario XFA. Para rellenar previamente los campos no enlazados, ajuste la estructura XML de relleno previo en `/afData/afBoundData` etiqueta.
+- **Prerellenar estructura XML**: El XML de relleno previo para el formulario adaptable basado en XFA debe ser compatible con el esquema de datos de la plantilla de formulario XFA. Para rellenar previamente los campos no enlazados, ajuste la estructura XML de relleno previo en `/afData/afBoundData` etiqueta.
 
-* **Estructura XML enviada**: Cuando no se utiliza ningún XML de relleno previo, el XML enviado contiene datos para los campos enlazados y no enlazados en `afData` etiqueta envolvente. Si se utiliza un XML de relleno previo, el XML enviado tiene la misma estructura que el XML de relleno previo. Si el XML de relleno previo comienza con la variable `afData` raíz, el XML de salida también tiene el mismo formato. Si el XML de relleno previo no tiene `afData/afBoundData`wrapper y en su lugar comienza directamente desde la etiqueta raíz del esquema como `employeeData`, el XML enviado también comienza con el `employeeData` etiqueta.
+- **Estructura XML enviada**: Cuando no se utiliza ningún XML de relleno previo, el XML enviado contiene datos para los campos enlazados y no enlazados en `afData` etiqueta envolvente. Si se utiliza un XML de relleno previo, el XML enviado tiene la misma estructura que el XML de relleno previo. Si el XML de relleno previo comienza con la variable `afData` raíz, el XML de salida también tiene el mismo formato. Si el XML de relleno previo no tiene `afData/afBoundData`wrapper y en su lugar comienza directamente desde la etiqueta raíz del esquema como `employeeData`, el XML enviado también comienza con el `employeeData` etiqueta.
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -93,17 +90,17 @@ Ejemplo que contiene datos de relleno previo y datos enviados
 
 La estructura de XML de relleno previo y XML enviado para Forms adaptable basado en esquema XML es la siguiente:
 
-* **Prerellenar estructura XML**: El XML de relleno previo debe ser compatible con el esquema XML asociado. Para rellenar previamente los campos no enlazados, ajuste la estructura XML de relleno previo a la etiqueta /afData/afBoundData .
-* **Estructura XML enviada**: si no se utiliza ningún XML de relleno previo, el XML enviado contiene datos para los campos enlazados y no enlazados en `afData` etiqueta envolvente. Si se utiliza el XML de relleno previo, el XML enviado tiene la misma estructura que el XML de relleno previo. Si el XML de relleno previo comienza con la variable `afData` etiqueta raíz, el XML de salida tiene el mismo formato. Si el XML de relleno previo no tiene `afData/afBoundData` wrapper y en su lugar, comenzar directamente desde la etiqueta raíz del esquema como `employeeData`, el XML enviado también comienza con el `employeeData` etiqueta.
+- **Prerellenar estructura XML**: El XML de relleno previo debe ser compatible con el esquema XML asociado. Para rellenar previamente los campos no enlazados, ajuste la estructura XML de relleno previo a la etiqueta /afData/afBoundData .
+- **Estructura XML enviada**: si no se utiliza ningún XML de relleno previo, el XML enviado contiene datos para los campos enlazados y no enlazados en `afData` etiqueta envolvente. Si se utiliza el XML de relleno previo, el XML enviado tiene la misma estructura que el XML de relleno previo. Si el XML de relleno previo comienza con la variable `afData` etiqueta raíz, el XML de salida tiene el mismo formato. Si el XML de relleno previo no tiene `afData/afBoundData` wrapper y en su lugar, comenzar directamente desde la etiqueta raíz del esquema como `employeeData`, el XML enviado también comienza con el `employeeData` etiqueta.
 
 ```xml
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
 <xs:schema targetNamespace="https://adobe.com/sample.xsd"
             xmlns="https://adobe.com/sample.xsd"
             xmlns:xs="https://www.w3.org/2001/XMLSchema">
- 
+
     <xs:element name="sample" type="SampleType"/>
-         
+
     <xs:complexType name="SampleType">
         <xs:sequence>
             <xs:element name="noOfProjectsAssigned" type="xs:string"/>
@@ -146,24 +143,28 @@ Para los campos cuyo modelo es un esquema XML, los datos se rellenan previamente
 
 Para Forms adaptable basado en el esquema JSON, la estructura de JSON de relleno previo y JSON enviado se describe a continuación. Para obtener más información, consulte [Creación de Forms adaptable mediante el esquema JSON](adaptive-form-json-schema-form-model.md).
 
-* **Precompletar estructura JSON**: El JSON de relleno previo debe ser compatible con el esquema JSON asociado. Opcionalmente, se puede ajustar en el objeto /afData/afBoundData si desea rellenar previamente también los campos no enlazados.
-* **Estructura JSON enviada**: si no se utiliza un JSON de relleno previo, el JSON enviado contiene datos para los campos enlazados y no enlazados en la etiqueta de envoltura afData. Si se utiliza el JSON de relleno previo, el JSON enviado tiene la misma estructura que el JSON de relleno previo. Si el JSON de relleno previo comienza con el objeto raíz afData, el JSON de salida tiene el mismo formato. Si el JSON de relleno previo no tiene un envoltorio afData/afBoundData y en su lugar comienza directamente desde el objeto raíz de esquema como usuario, el JSON enviado también comienza con el objeto de usuario.
+- **Precompletar estructura JSON**: El JSON de relleno previo debe ser compatible con el esquema JSON asociado. Opcionalmente, se puede ajustar en el objeto /afData/afBoundData si desea rellenar previamente también los campos no enlazados.
+- **Estructura JSON enviada**: si no se utiliza un JSON de relleno previo, el JSON enviado contiene datos para los campos enlazados y no enlazados en la etiqueta de envoltura afData. Si se utiliza el JSON de relleno previo, el JSON enviado tiene la misma estructura que el JSON de relleno previo. Si el JSON de relleno previo comienza con el objeto raíz afData, el JSON de salida tiene el mismo formato. Si el JSON de relleno previo no tiene un envoltorio afData/afBoundData y en su lugar comienza directamente desde el objeto raíz de esquema como usuario, el JSON enviado también comienza con el objeto de usuario.
 
 ```json
 {
-    "id": "https://some.site.somewhere/entry-schema#",
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "properties": {
-        "address": {
-            "type": "object",
-            "properties": { 
-    "name": {
-     "type": "string"
-    },
-    "age": {
-     "type": "integer"
-}}}}}
+  "id": "https://some.site.somewhere/entry-schema#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
 ```
 
 Para los campos que utilizan el modelo de esquema JSON, los datos se rellenan previamente en el objeto afBoundData como se muestra en el archivo JSON de muestra siguiente. Se puede utilizar para marcar un formulario adaptable como prefijo con uno o más campos de texto no enlazados. A continuación se muestra un ejemplo de datos con `afData/afBoundData` envolvente:
@@ -187,16 +188,18 @@ A continuación se muestra un ejemplo sin `afData/afBoundData` envolvente:
 
 ```json
 {
- "user": {
-  "address": {
-   "city": "Noida",
-   "country": "India"
-}}}
+  "user": {
+    "address": {
+      "city": "Noida",
+      "country": "India"
+    }
+  }
+}
 ```
 
 >[!NOTE]
 >
->El uso de campos no enlazados en paneles enlazados (paneles con bindRef no vacío que se han creado arrastrando componentes de la barra de tareas o la ficha Fuentes de datos) es **not** recomendado, ya que podría causar la pérdida de datos de los campos independientes. Se recomienda tener nombres de campo únicos en todo el formulario, especialmente en los campos no enlazados.
+> El uso de campos no enlazados en paneles enlazados (paneles con bindRef no vacío que se han creado arrastrando componentes de la barra de tareas o la ficha Fuentes de datos) es **not** recomendado, ya que podría causar la pérdida de datos de los campos independientes. Se recomienda tener nombres de campo únicos en todo el formulario, especialmente en los campos no enlazados.
 
 ### Formulario adaptable sin modelo de formulario {#adaptive-form-with-no-form-model}
 
@@ -225,45 +228,36 @@ Las etiquetas XML para los datos de usuario enviados para varios campos se gener
 </afData>
 ```
 
-## Configuración del servicio de prerellenado mediante Configuration Manager {#configuring-prefill-service-using-configuration-manager}
+## Configuración del servicio de prefill {#configuring-prefill-service-using-configuration-manager}
 
-Para habilitar el servicio de prellenado, especifique la Configuración predeterminada del servicio de prellenado en la Configuración AEM de la consola web. Siga los siguientes pasos para configurar el servicio Prefill:
+Utilice la variable `alloweddataFileLocations` propiedad de la variable **Configuración predeterminada del servicio de precarga** para establecer la ubicación de los archivos de datos o un regex (expresión regular) para las ubicaciones de los archivos de datos.
+
+El siguiente archivo JSON muestra un ejemplo:
+
+```JSON
+  {
+  "alloweddataFileLocations": "`file:///C:/Users/public/Document/Prefill/.*`"
+  }
+```
+
+Para establecer los valores de una configuración, [Generación de configuraciones de OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) y [implementar la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) a su instancia de Cloud Service.
 
 >[!NOTE]
 >
->La configuración del servicio de prellenado es aplicable a los conjuntos de formularios de Forms adaptable, HTML5 y HTML5.
+> - De forma predeterminada, se permite el rellenado previo mediante archivos crx para todos los tipos de Forms adaptable (XSD, XDP, JSON, FDM y sin modelo de formulario). El rellenado previo solo se permite con archivos JSON y XML.
+> - El protocolo crx se encarga de la seguridad de los datos rellenados previamente y, por lo tanto, está permitido de forma predeterminada. La cumplimentación previa a través de otros protocolos usando regex genéricos puede causar vulnerabilidad. En la configuración, especifique una configuración de URL segura para proteger los datos.
 
-1. Apertura **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** usando la dirección URL:\
-   https://&lt;server>:&lt;port>/system/console/configMgr
-1. Buscar y abrir **[!UICONTROL Configuración predeterminada del servicio de precarga]**.
-
-   ![Configuración previa](assets/prefill_config_new.png)
-
-1. Introduzca la ubicación de datos o un regex (expresión regular) para la variable **Ubicaciones de archivos de datos**. Algunos ejemplos de ubicaciones de archivos de datos válidos son:
-
-   * `file:///C:/Users/public/Document/Prefill/.*`;
-   * `https://servername/somesamplexmlfile.xml`
-
-   >[!NOTE]
-   >
-   >De forma predeterminada, se permite el rellenado previo mediante archivos crx para todos los tipos de Forms adaptable (XSD, XDP, JSON, FDM y sin modelo de formulario). El rellenado previo solo se permite con archivos JSON y XML.
-
-1. El servicio de cumplimentación previa ya está configurado para el formulario.
-
-   >[!NOTE]
-   >
-   >El protocolo crx se encarga de la seguridad de los datos rellenados previamente y, por lo tanto, está permitido de forma predeterminada. La cumplimentación previa a través de otros protocolos usando regex genéricos puede causar vulnerabilidad. En la configuración, especifique una configuración de URL segura para proteger los datos.
 
 ## El curioso caso de los paneles repetibles {#the-curious-case-of-repeatable-panels}
 
 Por lo general, los campos enlazados (esquema de formulario) y no enlazados se crean en el mismo formulario adaptable, pero las siguientes son algunas excepciones en caso de que el enlace sea repetible:
 
-* Los paneles repetibles no enlazados no son compatibles con Adaptive Forms que utiliza la plantilla de formulario XFA, XSD, el esquema JSON o el esquema FDM.
-* No utilice campos independientes en paneles repetibles enlazados.
+- Los paneles repetibles no enlazados no son compatibles con Adaptive Forms que utiliza la plantilla de formulario XFA, XSD, el esquema JSON o el esquema FDM.
+- No utilice campos independientes en paneles repetibles enlazados.
 
 >[!NOTE]
 >
->Como regla general, no mezcle campos enlazados y no enlazados si están intersectados en datos rellenados por el usuario final en campos no enlazados. Si es posible, debe modificar el esquema o la plantilla de formulario XFA y agregar una entrada para los campos no enlazados, de modo que también se convierta en enlazado y sus datos estén disponibles como otros campos en los datos enviados.
+> Como regla general, no mezcle campos enlazados y no enlazados si están intersectados en datos rellenados por el usuario final en campos no enlazados. Si es posible, debe modificar el esquema o la plantilla de formulario XFA y agregar una entrada para los campos no enlazados, de modo que también se convierta en enlazado y sus datos estén disponibles como otros campos en los datos enviados.
 
 ## Protocolos admitidos para prefijar datos de usuario {#supported-protocols-for-prefilling-user-data}
 
@@ -298,12 +292,12 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-* SERVICE_NAME hace referencia al nombre del servicio de relleno previo OSGI. Consulte [Creación y ejecución de un servicio de relleno previo](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-* IDENTIFIER se refiere a cualquier metadato que requiera el servicio de rellenado previo OSGI para recuperar los datos de rellenado previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
+- SERVICE_NAME hace referencia al nombre del servicio de relleno previo OSGI. Consulte [Creación y ejecución de un servicio de relleno previo](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+- IDENTIFIER se refiere a cualquier metadato que requiera el servicio de rellenado previo OSGI para recuperar los datos de rellenado previo. Un identificador para el usuario que ha iniciado sesión es un ejemplo de metadatos que se pueden utilizar.
 
 >[!NOTE]
 >
->No se admite el paso de parámetros de autenticación.
+> No se admite el paso de parámetros de autenticación.
 
 ### Configuración del atributo de datos en slingRequest {#setting-data-attribute-in-slingrequest}
 
@@ -344,10 +338,10 @@ Se puede utilizar el servicio de rellenado previo personalizado para las situaci
 
 El servicio de prefill es un servicio OSGi y se empaqueta a través del paquete OSGi. Puede crear el paquete OSGi, cargarlo e instalarlo en [!DNL AEM Forms] paquetes. Antes de comenzar a crear el paquete:
 
-* [Descargue el [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
-* Descargar el paquete repetitivo
+- [Descargue el [!DNL AEM Forms] Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html)
+- Descargar el paquete repetitivo
 
-* Coloque el archivo de datos (datos de relleno previo) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \content del repositorio crx.
+- Coloque el archivo de datos (datos de relleno previo) en el repositorio crx. Puede colocar el archivo en cualquier ubicación de la carpeta \content del repositorio crx.
 
 [Obtener archivo](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
@@ -358,8 +352,8 @@ El paquete repetitivo (paquete de servicio prefill de muestra) contiene una impl
 1. Abra el archivo src\main\java\com\adobe\test\Prefill.java para editarlo.
 1. En el código, establezca el valor de:
 
-   * `nodePath:` La variable de ruta de nodo que señala a la ubicación del repositorio crx contiene la ruta del archivo de datos (prefill). Por ejemplo, /content/prefilldata.xml
-   * `label:` El parámetro label especifica el nombre para mostrar del servicio. Por ejemplo, el servicio de precarga predeterminado
+   - `nodePath:` La variable de ruta de nodo que señala a la ubicación del repositorio crx contiene la ruta del archivo de datos (prefill). Por ejemplo, /content/prefilldata.xml
+   - `label:` El parámetro label especifica el nombre para mostrar del servicio. Por ejemplo, el servicio de precarga predeterminado
 
 1. Guarde y cierre el `Prefill.java` archivo.
 1. Agregue la variable `AEM Forms Client SDK` al trazado de compilación del proyecto repetitivo.
@@ -373,20 +367,21 @@ Para iniciar el servicio de rellenado previo, cargue el archivo JAR en [!DNL AEM
 1. En la consola Propiedades, vaya a [!DNL AEM Forms] contenedor > Básico > Servicio de relleno previo.
 1. Seleccione el servicio de relleno predeterminado y haga clic en **[!UICONTROL Guardar]**. El servicio está asociado al formulario.
 
-## Rellenado previo de datos en el cliente {#prefill-at-client}
+<!-- ## Prepopulate data at client {#prefill-at-client}
 
-Cuando rellene previamente un formulario adaptable, la variable [!DNL AEM Forms] servidor combina datos con un formulario adaptable y le envía el formulario rellenado. De forma predeterminada, la acción de combinación de datos se realiza en el servidor.
+When you prefill an Adaptive Form, the [!DNL AEM Forms] server merges data with an Adaptive Form and delivers the filled form to you. By default, the data merge action takes place at the server.
 
-Puede configurar la variable [!DNL AEM Forms] para realizar la acción de combinación de datos en el cliente en lugar del servidor. Reduce considerablemente el tiempo necesario para rellenar previamente y procesar Forms adaptable. De forma predeterminada, la función está desactivada. Puede activarlo desde el Administrador de configuración o la línea de comandos.
+You can configure the [!DNL AEM Forms] server to perform the data merge action at the client instead of the server. It significantly reduces the time required to prefill and render Adaptive Forms. By default, the feature is disabled. You can enable it from the Configuration Manager or command line.
 
-* Para habilitar o deshabilitar desde el administrador de configuración:
-   1. Abra AEM Administrador de configuración.
-   1. Localice y abra la configuración del canal web de comunicaciones interactivas y formularios adaptables
-   1. Habilitar la opción Configuration.af.clientside.datamerge.enabled.name
-* Para habilitar o deshabilitar desde la línea de comandos:
-   * Para habilitar, ejecute el siguiente comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+* To enable or disable from configuration manager:
+  1. Open AEM Configuration Manager.
+  1. Locate and open the Adaptive Form and Interactive Communication Web Channel Configuration
+  1. Enable the Configuration.af.clientside.datamerge.enabled.name option
+* To enable or disable from the command line:
+  * To enable, run the following cURL command:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * Para desactivarlo, ejecute el siguiente comando cURL:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Para aprovechar al máximo la opción rellenar previamente los datos en el cliente , actualice el servicio de prerellenar para que devuelva [Mapa de archivos adjuntos](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) y [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+  * To disable, run the following cURL command:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

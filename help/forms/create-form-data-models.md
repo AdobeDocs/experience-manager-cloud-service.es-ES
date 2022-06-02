@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Asegúrese de haber configurado los orígenes de datos que desea utilizar en el 
 
    * Especifique un nombre para el modelo de datos del formulario.
    * (**Opcional**) Especifique el título, la descripción y las etiquetas del modelo de datos del formulario.
-   * (**Opcional y aplicable solo si se configuran fuentes de datos**) Pulse el icono de visto situado junto a la **[!UICONTROL Configuración de fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para los orígenes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier base de datos JDBC y [!DNL Experience Manager] las fuentes de datos de perfil de usuario se enumeran de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
+   * (**Opcional y aplicable solo si se configuran fuentes de datos**) Pulse el icono de visto situado junto a la **[!UICONTROL Configuración de fuente de datos]** y seleccione el nodo de configuración donde residen los servicios en la nube para los orígenes de datos que desea utilizar. Restringe la lista de fuentes de datos disponibles para su selección en la página siguiente a las disponibles en el nodo de configuración seleccionado. Sin embargo, cualquier [!DNL Experience Manager] las fuentes de datos de perfil de usuario se enumeran de forma predeterminada. Si no selecciona un nodo de configuración, se enumeran las fuentes de datos de todos los nodos de configuración.
 
 1. Toque **[!UICONTROL Siguiente]**.
 

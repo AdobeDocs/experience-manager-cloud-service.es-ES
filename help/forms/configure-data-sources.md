@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,16 @@ ht-degree: 0%
 
 ![Integración de datos](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] La integración de datos permite configurar y conectar a fuentes de datos diferentes. Los siguientes tipos son compatibles de serie. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
+[!DNL Experience Manager Forms] La integración de datos permite configurar y conectar a fuentes de datos diferentes. Los siguientes tipos son compatibles de serie:
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * Servicios web RESTful
 * Servicios web basados en SOAP
-* Servicios OData
+* Servicios OData (versión 4.0)
+* Microsoft Dynamics
+* SalesForce
+* Almacenamiento de Microsoft Azure Blob
 
 La integración de datos es compatible con los tipos de autenticación OAuth2.0, Autenticación básica y API Key de serie, y permite implementar autenticación personalizada para acceder a servicios web. Mientras que los servicios RESTful, SOAP y OData están configurados en [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> y conector para [!DNL Experience Manager] el perfil de usuario está configurado en [!DNL Experience Manager] consola web.
 
@@ -110,7 +113,7 @@ Para configurar la carpeta para las configuraciones del servicio en la nube:
 
 ## Configuración de los servicios web de RESTful {#configure-restful-web-services}
 
-El servicio web RESTful se puede describir mediante [Especificaciones de Swagger](https://swagger.io/specification/) en formato JSON o YAML en un [!DNL Swagger] archivo de definición. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone de la variable [!DNL Swagger] en el sistema de archivos o en la URL donde se aloja el archivo.
+El servicio web RESTful se puede describir mediante [Especificaciones de Swagger](https://swagger.io/specification/v2/) en formato JSON o YAML en un [!DNL Swagger] archivo de definición. Para configurar el servicio web RESTful en [!DNL Experience Manager] as a Cloud Service, asegúrese de que dispone de la variable [!DNL Swagger] archivo ([Swagger versión 2.0](https://swagger.io/specification/v2/)) en el sistema de archivos o en la URL donde se aloja el archivo.
 
 Haga lo siguiente para configurar los servicios RESTful:
 
@@ -139,6 +142,35 @@ Haga lo siguiente para configurar los servicios RESTful:
 ### Modelo de datos de formulario Configuración del cliente HTTP para optimizar el rendimiento {#fdm-http-client-configuration}
 
 [!DNL Experience Manager Forms] modelo de datos de formulario al integrarse con los servicios web RESTful, ya que el origen de datos incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+
+Establezca las siguientes propiedades de la variable **[!UICONTROL Configuración del cliente HTTP del modelo de datos de formulario para el origen de datos REST]** configuración para especificar la expresión regular:
+
+* Utilice la variable `http.connection.max.per.route` para establecer el número máximo de conexiones permitidas entre el modelo de datos de formulario y los servicios web RESTful. El valor predeterminado es 20 conexiones.
+
+* Utilice la variable `http.connection.max` para especificar el número máximo de conexiones permitidas para cada ruta. El valor predeterminado es 40 conexiones.
+
+* Utilice la variable `http.connection.keep.alive.duration` para especificar la duración, durante la cual se mantiene activa una conexión HTTP persistente. El valor predeterminado es de 15 segundos.
+
+* Utilice la variable `http.connection.timeout` para especificar la duración, durante la cual [!DNL Experience Manager Forms] espera a que se establezca una conexión. El valor predeterminado es de 10 segundos.
+
+* Utilice la variable `http.socket.timeout` para especificar el periodo máximo de inactividad entre dos paquetes de datos. El valor predeterminado es de 30 segundos.
+
+El siguiente archivo JSON muestra un ejemplo:
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+Para establecer los valores de una configuración, [Generación de configuraciones de OSGi mediante el SDK de AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)y [implementar la configuración](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) a su instancia de Cloud Service.
+
+
 Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos de formulario:
 
 1. Iniciar sesión en [!DNL Experience Manager Forms] Instancia de autor como administrador y vaya a [!DNL Experience Manager] paquetes de la consola web. La dirección URL predeterminada es [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
@@ -156,7 +188,6 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
    * Especifique la duración para la que [!DNL Experience Manager Forms] espera a que una conexión se establezca, en la variable **[!UICONTROL Tiempo de espera de la conexión]** campo . El valor predeterminado es de 10 segundos.
 
    * Especifique el período de tiempo máximo para la inactividad entre dos paquetes de datos en la variable **[!UICONTROL Tiempo de espera de socket]** campo . El valor predeterminado es de 30 segundos.
-
 
 ## Configuración de servicios web SOAP {#configure-soap-web-services}
 
