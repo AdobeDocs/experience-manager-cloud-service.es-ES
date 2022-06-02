@@ -3,10 +3,10 @@ title: Resolución de problemas de Dynamic Media
 description: Sugerencias de solución de problemas al usar Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: a7152785e8957dcc529d1e2138ffc8c895fa5c29
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 2%
+source-wordcount: '1135'
+ht-degree: 1%
 
 ---
 
@@ -169,53 +169,71 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
 
 Si tiene problemas con los visualizadores, consulte las siguientes directrices para la resolución de problemas.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Problema  </strong></td>
-   <td><strong>Cómo depurar</strong></td>
-   <td><strong>Solución</strong></td>
-  </tr>
-  <tr>
-   <td>Los ajustes preestablecidos de visor no se publican</td>
-   <td><p>Continúe con la página de diagnóstico del administrador de muestras: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe los valores calculados. Cuando funciona correctamente, verá:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos desactivados permanecen, seleccione cualquiera de los <strong>Lista de todos los recursos no activados</strong> para ver los detalles.</p> </td>
-   <td>
-    <ol>
-     <li>Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione <strong>Publicación</strong>.</li>
-     <li>Vuelva al administrador de muestras y observe que el recuento de recursos no activados es ahora cero.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>La ilustración de Ajustes preestablecidos de visor devuelve 404 desde la vista previa en los detalles del recurso o copia de la URL o el código incrustado</td>
-   <td><p>En CRXDE Lite, haga lo siguiente:</p>
-    <ol>
-     <li>Vaya a <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> carpeta dentro de la carpeta de sincronización de Dynamic Media (por ejemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Busque el nodo de metadatos del recurso problemático (por ejemplo, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Compruebe la presencia de <code>dam:scene7*</code> propiedades. Si el recurso se sincronizó y publicó correctamente, verá la variable <code>dam:scene7FileStatus</code> está configurado para <strong>PublishComplete</strong>.</li>
-     <li>Intente solicitar la ilustración directamente desde Dynamic Media concatenando los valores de las siguientes propiedades y literales de cadena
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Ejemplo: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>Si la ilustración de ajustes preestablecidos de visor o recursos de muestra no se han sincronizado ni publicado, reinicie todo el proceso de copia y sincronización:</p>
-    <ol>
-     <li>Vaya a <code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code>
-     </li>
-     <li>Seleccione las siguientes acciones en orden:
-      <ol>
-       <li>Eliminar carpetas de sincronización.</li>
-       <li>Eliminar carpeta de ajustes preestablecidos (abajo <code>/conf</code>).
-       <li>Trabajo asincrónico de configuración de déclencheur DM.</li>
-      </ol> </li>
-     <li>Espere a que se notifique de la sincronización correcta en la bandeja de entrada del Experience Manager.
-     </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Problema: Los ajustes preestablecidos de visor no se publican {#viewers-not-published}
+
+**Cómo depurar**
+
+1. Continúe con la página de diagnóstico del administrador de muestras: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Observe los valores calculados. Cuando funciona correctamente, puede ver lo siguiente: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.
+
+1. Si los recursos desactivados permanecen, seleccione cualquiera de los **Lista de todos los recursos no activados** para ver los detalles.
+
+**Solución**
+
+1. Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione **Publicación**.
+1. Vuelva al administrador de muestras y observe que el recuento de recursos no activados es ahora cero.
+
+### Problema: La ilustración preestablecida del visor devuelve 404 desde Vista previa en los detalles del recurso o Copiar URL/Código incrustado {#viewer-preset-404}
+
+**Cómo depurar**
+
+En CRXDE Lite, haga lo siguiente:
+
+1. Vaya a `<sync-folder>/_CSS/_OOTB` carpeta dentro de la carpeta de sincronización de Dynamic Media (por ejemplo, `/content/dam/_CSS/_OOTB`).
+1. Busque el nodo de metadatos del recurso problemático (por ejemplo, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Compruebe la presencia de `dam:scene7*` propiedades. Si el recurso se sincronizó y publicó correctamente, verá la variable `dam:scene7FileStatus` está configurado para **PublishComplete**.
+1. Intente solicitar la ilustración directamente desde Dynamic Media concatenando los valores de las siguientes propiedades y literales de cadena:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Ejemplo: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Solución**
+
+Si la ilustración de ajustes preestablecidos de visor o recursos de muestra no se han sincronizado ni publicado, reinicie todo el proceso de copia y sincronización:
+
+1. Vaya al CRXDE Lite.
+1. Eliminar `<sync-folder>/_CSS/_OOTB`.
+1. Vaya al Administrador de paquetes CRX: `https://localhost:4502/crx/packmgr/`.
+1. Busque el paquete del visor en la lista; comienza con `cq-dam-scene7-viewers-content`.
+1. Select **Reinstalar**.
+1. En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración para la configuración de Dynamic Media - S7.
+1. No realizar cambios, seleccione **Guardar**.
+Esta acción de guardar déclencheur la lógica de nuevo para crear y sincronizar los recursos de ejemplo, el CSS preestablecido del visor y la ilustración.
+
+### Problema: La vista previa de imágenes no se carga en la creación de ajustes preestablecidos de visor {#image-preview-not-loading}
+
+**Solución**
+
+1. En el Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En el carril izquierdo, vaya a la carpeta de contenido de ejemplo en la siguiente ubicación:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Elimine el `_DMSAMPLE` carpeta.
+1. En el carril izquierdo, vaya a la carpeta de ajustes preestablecidos en la siguiente ubicación:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Elimine el `viewer` carpeta.
+1. Cerca de la esquina superior izquierda de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
+1. En la esquina superior izquierda de la página CRXDE Lite, seleccione la opción **Página de inicio** icono.
+1. Vuelva a crear un [Configuración de Dynamic Media en Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
