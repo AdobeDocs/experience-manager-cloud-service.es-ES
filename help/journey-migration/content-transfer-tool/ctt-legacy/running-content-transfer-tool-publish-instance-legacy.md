@@ -1,15 +1,16 @@
 ---
-title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
+title: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación (heredada)
 description: Ejecución de la herramienta de transferencia de contenido en una instancia de publicación
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '272'
+ht-degree: 4%
 
 ---
 
-# Ejecución de la herramienta de transferencia de contenido en una instancia de publicación {#run-content-transfer-tool-publish-instance}
+# Ejecución de la herramienta de transferencia de contenido en una instancia de publicación (heredada) {#run-content-transfer-tool-publish-instance}
 
 ## Introducción {#introduction}
 
@@ -25,6 +26,8 @@ Siga el enfoque recomendado como se describe a continuación:
 * Utilice la misma versión de la herramienta de transferencia de contenido que se utilizó en la instancia de autor.
 
 * Solo es necesario migrar un nodo de publicación único. Debe eliminarse del equilibrador de carga antes de comenzar la extracción.
+
+* Al crear el conjunto de migración, utilice la URL del entorno as a Cloud Service AEM autor.
 
 * Durante la ingesta para publicar, el nivel de publicación no se reducirá (a diferencia del autor).
 

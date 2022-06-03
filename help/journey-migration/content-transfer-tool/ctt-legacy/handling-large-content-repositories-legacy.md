@@ -1,26 +1,21 @@
 ---
-title: Gestión de repositorios de contenido grandes
+title: Gestión de repositorios de contenido grandes (heredados)
 description: Esta sección describe la administración de repositorios de contenido de gran tamaño
-exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 2%
+source-wordcount: '1638'
+ht-degree: 1%
 
 ---
 
-# Gestión de repositorios de contenido grandes {#handling-large-content-repositories}
+# Gestión de repositorios de contenido grandes (heredados) {#handling-large-content-repositories}
 
 ## Información general {#overview}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_precopy"
->title="Gestión de repositorios de contenido grandes"
->abstract="Para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y mover el contenido a AEM as a Cloud Service, CTT puede aprovechar AzCopy como paso previo opcional. Una vez configurado este paso previo, en la fase de extracción, AzCopy copia los blobs de Amazon S3 o Azure Blob Storage en el almacén de blob del conjunto de migración. En la fase de ingesta, AzCopy copia los blobs del almacén de blobs del conjunto de migración al destino AEM almacén de blobs as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step" text="Introducción a AzCopy como paso de precopia"
-
 La copia de un gran número de blobs con la herramienta de transferencia de contenido (CTT) puede tardar varios días.
-Para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y así mover el contenido a AEM as a Cloud Service, CTT puede aprovechar [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) como paso previo a la copia opcional. Este paso de precopia se puede utilizar cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de almacenamiento de blob de Amazon S3, Azure o File Data Store. El paso de precopia es más eficaz para la primera extracción e ingesta completa. Sin embargo, no se recomienda utilizar la precopia para las subsiguientes recargas (si el tamaño superior es inferior a 200 GB) porque puede añadir tiempo a todo el proceso. Una vez configurado este paso previo, en la fase de extracción, AzCopy copia los blobs de Amazon S3, Azure Blob Storage o File Data Store en el almacén de blobs del conjunto de migración. En la fase de ingesta, AzCopy copia los blobs del almacén de blobs del conjunto de migración al destino AEM almacén de blobs as a Cloud Service.
+Para acelerar de forma significativa las fases de extracción e ingesta de la actividad de transferencia de contenido y así mover el contenido a AEM as a Cloud Service, CTT puede aprovechar [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) como paso previo a la copia opcional. Este paso de precopia se puede utilizar cuando la instancia de AEM de origen está configurada para utilizar un almacén de datos de almacenamiento de blob de Amazon S3, Azure o File Data Store. Una vez configurado este paso previo, en la fase de extracción, AzCopy copia los blobs de Amazon S3, Azure Blob Storage o File Data Store en el almacén de blobs del conjunto de migración. En la fase de ingesta, AzCopy copia los blobs del almacén de blobs del conjunto de migración al destino AEM almacén de blobs as a Cloud Service.
 
 >[!NOTE]
 > Esta funcionalidad se introdujo en la versión 1.5.4 de CTT.

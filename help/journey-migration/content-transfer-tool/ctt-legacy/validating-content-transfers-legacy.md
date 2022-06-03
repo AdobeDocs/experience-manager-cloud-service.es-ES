@@ -1,15 +1,16 @@
 ---
-title: Validación de transferencias de contenido
+title: Validación de transferencias de contenido (heredado)
 description: Usar la herramienta de transferencia de contenido para validar transferencias de contenido
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 2%
+source-wordcount: '950'
+ht-degree: 1%
 
 ---
 
-# Validación de transferencias de contenido {#validating-content-transfers}
+# Validación de transferencias de contenido (heredado) {#validating-content-transfers}
 
 ## Introducción {#getting-started}
 
@@ -44,11 +45,11 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción (sobrescritura)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Ingesta (Borrar)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Notas**
 
@@ -58,11 +59,11 @@ Para ver una ilustración gráfica de esto, consulte los ejemplos siguientes:
 
 * **Extracción**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Ingesta**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Notas**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 El ejemplo de error anterior se logró ejecutando una ingesta y luego ejecutando de nuevo la misma ingesta con Wipe desactivado, de modo que no había nodos involucrados durante la ingesta — todo ya estaba presente en el destino.
 
-Además de incluirse en el registro de ingesta, también se puede acceder al informe de validación desde el **Trabajos de Ingesta** interfaz de usuario en Cloud Acceleration Manager. Para ello, haga clic en los tres puntos (**...**) y haga clic en **Informe de validación** en la lista desplegable para ver el informe de validación.
+Además de incluirse en el registro de ingesta, también se puede acceder al informe de validación desde la interfaz de usuario de la herramienta de transferencia de contenido. Para ello, seleccione un conjunto de migración y haga clic en el botón **Validar** de la barra de acciones:
 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+Se abrirá el cuadro de diálogo Registros de validación :
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Utilice la variable **Informe Publicación/Autor de validación** para ver el informe de validación de la ingesta más reciente en el nivel dado de su entorno de destino. Vea a continuación un ejemplo de una pequeña ingesta de publicación:
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>La variable **Informe Publicación/Autor de validación** aparece una vez finalizada la ingesta. Además, los informes de validación se mantienen, por lo que no caducan después de completarse la ingesta, como hacen los registros de ingesta.
 
 ## Solución de problemas {#troubleshooting}
 

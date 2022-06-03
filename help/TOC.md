@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
+source-git-commit: 689a9212d2b2a9c4459f1e0f9e5f580d8972b1d0
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3565'
 ht-degree: 97%
 
 ---
@@ -178,6 +178,19 @@ ht-degree: 97%
             + [Información general](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
             + [Consideraciones importantes](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
             + [Uso de la herramienta de asignación de usuarios](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
+         + Herramienta de transferencia de contenido heredada {#legacy}
+            + [Información general](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
+            + [Requisitos previos para la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
+            + [Directrices y prácticas recomendadas para el uso de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
+            + [Introducción a la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
+            + [Validación de transferencias de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
+            + [Gestión de repositorios de contenido grandes](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
+            + [Extracción de contenido del origen](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
+            + [Ingesta de contenido en Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
+            + [Visualización de registros del conjunto de migraciones](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
+            + [Eliminación de un conjunto de migraciones](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
+            + [Ejecución de la herramienta de transferencia de contenido en una instancia de publicación](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
+            + [Resolución de problemas de la herramienta de transferencia de contenido](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + Herramientas de refactorización de código {#refactoring-tools}
       + [Experiencia unificada](/help/journey-migration/unified-experience.md)
       + [Modernizador de repositorio](/help/journey-migration/refactoring-tools/repo-modernizer.md)

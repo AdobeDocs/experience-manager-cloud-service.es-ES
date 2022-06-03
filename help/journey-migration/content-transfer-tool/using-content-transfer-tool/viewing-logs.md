@@ -2,10 +2,10 @@
 title: Visualización de registros de un conjunto de migraciones en la herramienta de transferencia de contenido
 description: Visualización de registros de un conjunto de migraciones en la herramienta de transferencia de contenido
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 52%
+source-wordcount: '238'
+ht-degree: 12%
 
 ---
 
@@ -23,20 +23,17 @@ Una vez completado cada paso (extracción e ingesta), compruebe los registros y 
 
 ## Pasos para ver registros {#viewing-logs}
 
-La visualización de registros de un conjunto de migraciones existente en la página *Información general* .
-Complete los siguientes pasos:
+Para ver los registros de extracción, vaya a la instancia de Adobe Experience Manager de origen y seleccione el conjunto de migración deseado.
 
-1. Vaya a la página *Información general*, seleccione el conjunto de migración que desee eliminar y haga clic en **Visualización de registros** en la barra de acciones.
+A continuación, siga los pasos a continuación:
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. Seleccione un conjunto de migración y haga clic en **Ver registro** de la barra de acciones. Esto abrirá el cuadro de diálogo Registros . Haga clic en **Registro de extracción** para ver los registros en una nueva pestaña.
 
-1. Aparece el cuadro de diálogo **Registros** . Haga clic en **Extracción de registros** para ver los registros en una nueva pestaña.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-O
-
-   también puede crear Visualización de registros para el conjunto de migraciones desde la pantalla *Información general* . Seleccione el conjunto de migración y haga clic en el estado en el campo **EXTRACCIÓN** . En este caso, haga clic en **FINALIZADO** para ver los registros de vista en una nueva pestaña.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   O bien, haga clic en el botón **FINALIZADO** para ver los registros en una nueva pestaña.
 
 1. Para rastrear los registros sin utilizar la interfaz de usuario, puede SSH en el entorno AEM de origen y seguir el `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
+1. Para ver los registros de ingesta, vaya a la lista Trabajos de ingesta en Cloud Acceleration Manager y haga clic en los tres puntos (**...**). A continuación, puede hacer clic en **Descargar registro** para descargar registros.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

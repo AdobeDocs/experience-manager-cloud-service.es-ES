@@ -2,10 +2,10 @@
 title: Fase de implementación en Cloud Acceleration Manager
 description: Esta página proporciona información general sobre la fase de implementación en Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 2%
+source-wordcount: '793'
+ht-degree: 4%
 
 ---
 
@@ -89,24 +89,32 @@ Siga esta sección para explorar AEM tarjeta de actividad de la tarjeta de imple
 
 ## Uso de la tarjeta de transferencia de contenido {#content-transfer}
 
-La tarjeta de actividad Transferencia de contenido proporciona directrices y consideraciones que deben revisarse al utilizar la herramienta de transferencia de contenido para mover el contenido de la instancia de AEM actual a AEM as a Cloud Service.
+La tarjeta de transferencia de contenido le permite iniciar y administrar la transferencia de contenido desde la instancia de AEM actual a AEM as a Cloud Service.
 
 Siga esta sección para explorar la tarjeta de actividad de transferencia de contenido:
 
-1. Haga clic en el **Ver** del **Transferencia de contenido** tarjeta de actividad.
+1. Haga clic en el **Consulte** del **Transferencia de contenido** tarjeta de actividad.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. Un carrusel de contenido muestra la información relevante para esta fase del recorrido de migración.
+1. Para iniciar una transferencia de contenido, debe crear un conjunto de migración. Haga clic en **Crear conjunto de migración**. Un conjunto de migración permite transferir contenido a AEM as a Cloud Service.
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >Revise el [requisitos previos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) y [prácticas recomendadas y directrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en) antes de usar la herramienta de transferencia de contenido.
 
+1. Deberá descargar e instalar la herramienta de transferencia de contenido para rellenar el conjunto de migración y completar la fase de extracción de la transferencia de contenido. Consulte [Introducción a la herramienta de transferencia de contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=es) para aprender a utilizar la herramienta de transferencia de contenido.
+
+1. Para ingerir contenido del conjunto Migración en un entorno AEM as a Cloud Service, deberá iniciar una ingesta. Vaya a **Trabajos de Ingesta** y haga clic en **Nueva ingesta**. Consulte [Ingesta de contenido en Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) para aprender a completar la fase de ingesta de la transferencia de contenido.
+
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### Calcular el tiempo de transferencia de contenido {#calculating}
 
-Se ha proporcionado una nueva calculadora de la herramienta de transferencia de contenido para estimar el tiempo que podría llevar completar la actividad de transferencia de contenido. Puede utilizar el control deslizante del tamaño del repositorio de contenido para seleccionar el tamaño que se aplica al proyecto. Los tiempos de transferencia varían para las fases de extracción e ingesta.
+Se ha proporcionado una calculadora de la herramienta de transferencia de contenido para estimar el tiempo que podría llevar completar la actividad de transferencia de contenido. Puede utilizar el control deslizante del tamaño del repositorio de contenido para seleccionar el tamaño que se aplica al proyecto. Los tiempos de transferencia varían para las fases de extracción e ingesta.
+
+![image](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >Estos tiempos son sólo estimaciones. En estas estimaciones no se han tenido en cuenta factores como las velocidades de red y el tiempo para aumentar las instancias.
