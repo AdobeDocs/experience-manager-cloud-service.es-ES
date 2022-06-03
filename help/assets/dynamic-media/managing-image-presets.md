@@ -4,7 +4,7 @@ description: Obtenga información sobre los ajustes preestablecidos de imagen y 
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 9%
@@ -236,7 +236,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
 
 * **[!UICONTROL Activar enfoque simple]**: No seleccione **[!UICONTROL Activar enfoque simple]** (este filtro de enfoque ofrece menos control que la configuración de máscara de enfoque).
 
-* **[!UICONTROL Enfoque: Modo de remuestreo]** - Seleccionar **[!UICONTROL Bi-cúbico]**.
+* **[!UICONTROL Enfoque: Modo de remuestreo]** - Seleccionar **[!UICONTROL Sharp2]**.
 
 #### Opciones de ficha básicas {#basic-tab-options}
 
