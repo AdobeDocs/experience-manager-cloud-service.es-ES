@@ -2,7 +2,7 @@
 title: Información general sobre la herramienta de transferencia de contenido
 description: Información general sobre la herramienta de transferencia de contenido
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 43%
@@ -36,7 +36,7 @@ Hay disponible una nueva versión de la herramienta de transferencia de contenid
 * Experiencia del usuario mejorada mediante mejores estados de carga, protecciones y gestión de errores
 * Los registros de ingesta se mantienen y siempre están disponibles para la resolución de problemas
 
-Para empezar a usar la nueva versión (Vxx) <!-- update when version is available --> deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido porque hubo un cambio importante en la arquitectura de la herramienta.
+Para empezar a usar la nueva versión (v2.0.10) <!-- update when version is available --> deberá desinstalar las versiones anteriores de la herramienta de transferencia de contenido porque hubo un cambio importante en la arquitectura de la herramienta.
 
 >[!NOTE]
 >
