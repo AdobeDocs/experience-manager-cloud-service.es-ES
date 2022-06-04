@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 3%
+source-wordcount: '1953'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ Los metadatos son la recopilación de todos los datos disponibles para un recurs
 * Nombre de la carpeta en la que está contenido.
 * Recursos relacionados o etiquetas aplicadas.
 
-Lo anterior son las propiedades de metadatos básicas que [!DNL Experience Manager] puede administrar para los recursos, lo que permite a los usuarios ver todos los recursos. Por ejemplo, ordenar recursos por fecha de la última modificación resulta útil cuando se intenta descubrir los recursos añadidos recientemente.
+Lo anterior son las propiedades de metadatos básicas que [!DNL Experience Manager] puede administrar para los recursos, lo que permite a los usuarios ver todos los recursos. Por ejemplo, la ordenación de recursos por fecha de la última modificación resulta útil cuando se intenta descubrir recursos agregados o modificados recientemente.
 
 Puede agregar más datos de alto nivel a los recursos digitales, por ejemplo:
 
@@ -45,11 +45,11 @@ Puede agregar más datos de alto nivel a los recursos digitales, por ejemplo:
 
 Más metadatos le ayudan a categorizar los recursos y resulta útil a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados en solo los nombres de archivo. Sin embargo, este enfoque no es escalable. Se queda corto cuando aumenta el número de personas involucradas y el número de activos gestionados.
 
-Con la adición de metadatos, el valor de un recurso digital aumenta, ya que el recurso se convierte en,
+Con la adición de metadatos, el valor de un recurso digital aumenta, ya que pasa a ser:
 
-* Más accesible: los sistemas y usuarios pueden encontrarlo fácilmente.
+* Más accesible: los sistemas y los usuarios pueden encontrarlo fácilmente.
 * Más fácil de administrar: puede encontrar recursos con el mismo conjunto de propiedades más fácilmente y aplicarles cambios.
-* Completado : el recurso conlleva más información y contexto con más metadatos.
+* Completado: el recurso lleva más información y contexto con más metadatos.
 
 Por estas razones, [!DNL Assets] le proporciona los medios adecuados para crear, administrar e intercambiar metadatos para sus recursos digitales.
 
@@ -67,6 +67,21 @@ Los metadatos técnicos son útiles para las aplicaciones de software que se ocu
 Los metadatos descriptivos son metadatos relacionados con el dominio de la aplicación, por ejemplo, el negocio del que proviene un recurso. Los metadatos descriptivos no se pueden determinar automáticamente. Se crea de forma manual o semiautomática. Por ejemplo, una cámara con GPS puede rastrear automáticamente la latitud y la longitud y añadir la etiqueta geográfica de la imagen.
 
 El coste de crear manualmente información de metadatos descriptivos es alto. Por lo tanto, se establecen estándares para facilitar el intercambio de metadatos entre sistemas y organizaciones de software. [!DNL Experience Manager Assets] admite todas las normas pertinentes para la gestión de metadatos.
+
+## Metadatos y última modificación {#last-modification}
+
+La última fecha de modificación de un recurso refleja la última vez que se modifica el archivo original de un recurso. Como resultado, la fecha de modificación y el usuario solo cambian cuando:
+
+* Se carga una nueva versión del recurso
+* Se vuelve a procesar un recurso
+
+La fecha de la última modificación y el usuario no cambian:
+
+* Cuando se mueve o cambia el nombre de un recurso
+* Cuando se cierra la compra de un recurso, se comprueba su versión o versión
+* Cuando se publica o cancela la publicación de un recurso
+* En actualizaciones de metadatos
+* Actualizaciones de referencia o recopilación
 
 ## Normas de codificación {#encoding-standards}
 
