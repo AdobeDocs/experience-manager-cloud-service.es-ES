@@ -3,7 +3,7 @@ title: Almacenamiento en caché en AEM as a Cloud Service
 description: 'Almacenamiento en caché en AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
+source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -206,7 +206,7 @@ En general, no es necesario invalidar la caché de Dispatcher. En su lugar, debe
 Al igual que las versiones anteriores de AEM, la publicación o cancelación de la publicación de páginas borrará el contenido de la caché de Dispatcher. Si se sospecha un problema de almacenamiento en caché, los clientes deben volver a publicar las páginas en cuestión y asegurarse de que haya un host virtual disponible que coincida con el host local de ServerAlias, que es necesario para la invalidación de la caché de Dispatcher.
 
 
-Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level).
+Cuando la instancia de publicación recibe una nueva versión de una página o recurso del autor, utiliza el agente de vaciado para invalidar las rutas adecuadas en su despachante. La ruta actualizada se elimina de la caché de Dispatcher, junto con sus principales, hasta un nivel (puede configurarla con el [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
 
 ### Invalidación explícita de caché de Dispatcher {#explicit-invalidation}
 
