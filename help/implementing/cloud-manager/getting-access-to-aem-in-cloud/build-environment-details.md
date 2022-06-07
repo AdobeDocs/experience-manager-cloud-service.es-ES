@@ -2,9 +2,9 @@
 title: Entorno de compilación
 description: Obtenga información sobre el entorno de compilación de Cloud Manager y cómo crea y prueba su código.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
+source-git-commit: b327af40a003b055b8e44688e1b84ac15a8c8439
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
@@ -94,6 +94,12 @@ Las combinaciones de proveedor/versión disponibles actualmente son:
 >[!NOTE]
 >
 >A partir de abril de 2022, Oracle JDK será el JDK predeterminado para el desarrollo y funcionamiento de aplicaciones AEM. El proceso de creación de Cloud Manager cambiará automáticamente al uso de JDK de Oracle, incluso si se selecciona explícitamente una opción alternativa en la cadena de herramientas de Maven. Consulte las notas de la versión de abril una vez publicadas para obtener más información.
+
+#### Versión JDK de ejecución de Maven alternativa {#alternate-maven-jdk-version}
+
+También es posible seleccionar Java 8 o Java 11 como JDK para toda la ejecución de Maven. A diferencia de las opciones de toolchain, esto cambia el JDK utilizado para todos los plugins a menos que también se establezca la configuración de toolchain en cuyo caso la configuración de toolchain se sigue aplicando a los plugins Maven según las cadenas de herramientas. Como resultado, comprobar y aplicar la versión de Java utilizando la variable [Complemento Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) funcionará.
+
+Para ello, cree un archivo con el nombre `.cloudmanager/java-version` en la rama del repositorio de git utilizada por la canalización. Este archivo puede tener el contenido 11 u 8. Se ignora cualquier otro valor. Si se especifica 11, se utiliza el Oracle 11 y la variable `JAVA_HOME` la variable de entorno está configurada en `/usr/lib/jvm/jdk-11.0.2`. Si se especifica 8, se usa el Oracle 8 y la variable `JAVA_HOME` la variable de entorno está configurada en `/usr/lib/jvm/jdk1.8.0_202`.
 
 ## Variables de entorno {#environment-variables}
 
