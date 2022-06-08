@@ -2,9 +2,9 @@
 title: Creación de un proyecto en Screens as a Cloud Service
 description: En esta página se describe cómo crear un proyecto en Screens as a Cloud Service.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 7a11ce1ce5862068b3087848065b661b13bed1e0
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Siga los pasos a continuación para eliminar un proyecto existente del proveedor
 
 ## Siguientes pasos {#whats-next}
 
-Ahora que ha configurado un proyecto de AEM Screens, puede crear un canal nuevo y agregar contenido a los canales. Consulte [Creación y administración de un canal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en) para aprender a crear y administrar contenido en Canales.
+Ahora que ha configurado un proyecto de AEM Screens, puede crear un canal nuevo y agregar contenido a los canales. Consulte [Creación y administración de un canal](creating-channels-screens-cloud.md) para aprender a crear y administrar contenido en Canales.
