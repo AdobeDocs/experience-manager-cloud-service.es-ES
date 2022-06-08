@@ -2,10 +2,10 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -58,9 +58,9 @@ Para realizar una activación de árbol:
 
 Para obtener el mejor rendimiento, siga estas directrices al utilizar esta función:
 * Se recomienda duplicar menos de 100 rutas a la vez, con un límite de 500 rutas.
-* El tamaño total del contenido replicado debe ser inferior a 5 MB. Esto solo incluye los nodos y las propiedades, pero no cualquier binario, que incluya paquetes de flujo de trabajo y paquetes de contenido.
+* El tamaño total del contenido replicado debe ser inferior a 10 MB. Esto solo incluye los nodos y las propiedades, pero no cualquier binario, que incluya paquetes de flujo de trabajo y paquetes de contenido.
 
-### Flujo de trabajo del árbol de contenido de publicación {#publish-content-tree-workflow}
+### documentación Flujo de trabajo del árbol de contenido {#publish-content-tree-workflow}
 
 Puede almacenar en déclencheur una replicación de árbol seleccionando **Herramientas - Flujo de trabajo - Modelos** y copiando **Árbol de contenido de publicación** modelo de flujo de trabajo integrado, como se muestra a continuación:
 
@@ -194,7 +194,7 @@ El conjunto `ReplicationStatus` de un recurso solo se modifica si la acción de 
 
 **Ruta de acceso y límites de tamaño de la API de replicación**
 
-Se recomienda duplicar menos de 100 rutas, siendo 500 el límite duro. Por encima del límite estricto, se lanzará una ReplicationException. Si la lógica de su aplicación no requiere replicación atómica, este límite se puede superar estableciendo ReplicationOptions.setUseAtomicCalls en false, que aceptará cualquier cantidad de rutas, pero creará bloques internamente para permanecer por debajo de este límite. La cantidad de contenido transmitido por llamada de replicación no debe superar los 5 MB, que incluyen los nodos y las propiedades, pero no ningún binario (los paquetes de flujo de trabajo y los paquetes de contenido se consideran binarios).
+Se recomienda duplicar menos de 100 rutas, siendo 500 el límite duro. Por encima del límite estricto, se lanzará una ReplicationException. Si la lógica de su aplicación no requiere replicación atómica, este límite se puede superar estableciendo ReplicationOptions.setUseAtomicCalls en false, que aceptará cualquier cantidad de rutas, pero creará bloques internamente para permanecer por debajo de este límite. La cantidad de contenido transmitido por llamada de replicación no debe superar los 10 MB, lo que incluye los nodos y las propiedades, pero no ningún binario (los paquetes de flujo de trabajo y los paquetes de contenido se consideran binarios).
 
 ## Solución de problemas {#troubleshooting}
 
