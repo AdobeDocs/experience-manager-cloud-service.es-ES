@@ -4,10 +4,10 @@ description: Introducción a la integración entre [!DNL Assets] y [!DNL Workfro
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
+source-git-commit: 1fce2eb37ebeaef966913e3ffdac59e9e126c788
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 2%
+source-wordcount: '947'
+ht-degree: 4%
 
 ---
 
@@ -29,11 +29,14 @@ Consulte la compatibilidad con la plataforma y [requisitos previos para el conec
 
 >[!IMPORTANT]
 >
->El Adobe requiere la implementación y la configuración del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con Adobe.
+>* El Adobe requiere la implementación y la configuración del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con Adobe.
 >
->Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto ocurre, es posible que se requiera a los clientes que pasen del uso de este conector.
+>* Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto ocurre, es posible que se requiera a los clientes que pasen del uso de este conector.
 >
->Consulte [Examen de certificación de socios para conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información sobre el examen, [Guía de examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* Adobe admite las versiones 1.7.4 y posteriores del conector mejorado. Para comprobar la versión mejorada del conector, consulte el paso 5(a) de [instrucciones de instalación del conector mejorado](workfront-connector-install.md).
+>
+>* Consulte [Examen de certificación de socios para conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información sobre el examen, [Guía de examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## Comparar distintas integraciones entre [!DNL Assets] y [!DNL Workfront] {#feature-parity-matrix}
 
