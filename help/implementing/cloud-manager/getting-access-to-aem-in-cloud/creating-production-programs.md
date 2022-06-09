@@ -2,10 +2,10 @@
 title: 'Creación de programas de producción '
 description: Aprenda a utilizar Cloud Manager para crear su propio programa de producción y alojar tráfico en directo.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 0%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ Siga estos pasos para crear un programa de producción.
 
    ![Página de aterrizaje de Cloud Manager](assets/first_timelogin1.png)
 
-1. Select **Configurar para producción** en el asistente Crear programa para crear un programa de producción. Puede aceptar el nombre de programa predeterminado o editarlo antes de seleccionar **Crear**.
+1. Select **Configurar para producción** en el asistente Crear programa para crear un programa de producción. Puede aceptar el nombre de programa predeterminado o editarlo antes de hacer clic en **Continuar**.
 
    ![Creación del asistente del programa](assets/create-prod1.png)
 
-1. En la pestaña siguiente, seleccione las soluciones que desea incluir en el programa.
+1. En el **Soluciones y complementos** , seleccione las soluciones que desea incluir en el programa.
 
    ![Seleccionar soluciones](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ Siga estos pasos para crear un programa de producción.
 
    ![Seleccionar complementos](assets/setup-prod-commerce.png)
 
-1. Con las soluciones y los complementos seleccionados, haga clic en **Crear**.
+1. Con las soluciones y los complementos seleccionados, haga clic en **Continuar**.
+
+1. En el **Fecha de lanzamiento** , introduzca la fecha en la que planea que su programa de producción se ponga en marcha.
+
+   ![Definir la fecha de lanzamiento planeada](assets/setup-go-live.png)
+
+   * Esta fecha se puede editar en cualquier momento.
+   * Esta fecha es solo para uso informativo y déclencheur el widget Go Live en la página de descripción general del programa para proporcionar vínculos internos del producto a AEM documentación de prácticas recomendadas as a Cloud Service de forma oportuna para que se ajuste a su recorrido y que culmine en una experiencia Go Live correcta y sin problemas.
+
+1. Haga clic en **Crear**.
 
 El programa lo crea Cloud Manager y se muestra y se puede seleccionar en la página de aterrizaje.
 

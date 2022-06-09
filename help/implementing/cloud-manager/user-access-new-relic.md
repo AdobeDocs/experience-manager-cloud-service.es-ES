@@ -2,10 +2,10 @@
 title: Nueva reliquia uno
 description: Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 2%
+source-wordcount: '1622'
+ht-degree: 1%
 
 ---
 
@@ -16,9 +16,11 @@ Obtenga información sobre el servicio de supervisión del rendimiento de la apl
 
 ## Introducción {#introduction}
 
-El Adobe pone un bueno énfasis en el monitoreo, la disponibilidad y el performance de su aplicación. Para ayudar a lograr este objetivo, AEM as a Cloud Service proporciona acceso a un grupo de supervisión personalizado de Nueva relación uno como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de sus métricas de rendimiento de entorno y sistema as a Cloud Service AEM.
+El Adobe pone un bueno énfasis en el monitoreo, la disponibilidad y el performance de su aplicación. AEM as a Cloud Service proporciona acceso a un nuevo grupo de monitorización relic 1 personalizado como parte de la oferta de productos estándar para garantizar que sus equipos tengan la máxima visibilidad de sus métricas de rendimiento de entorno y del sistema as a Cloud Service de AEM.
 
-En este documento se describen las funciones de supervisión del rendimiento de la aplicación (APM) de la nueva relación relic-uno habilitadas en los entornos as a Cloud Service AEM para ayudarle a soportar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
+En este documento se describe cómo administrar el acceso a las funciones de supervisión del rendimiento de la aplicación (APM) de la Nueva Reliquia Uno habilitadas en los entornos as a Cloud Service AEM para ayudar a soportar el rendimiento y permitirle sacar el máximo provecho de AEM as a Cloud Service.
+
+Cuando se crea un nuevo programa de producción, se crea automáticamente la subcuenta New Relic One asociada a su Programa as a Cloud Service AEM.
 
 ## Características {#transaction-monitoring}
 
@@ -32,19 +34,95 @@ Nueva reliquia Una APM para AEM as a Cloud Service tiene muchas características
 
 * Exposición de AEM as a Cloud Service mazones de JMX y comprobaciones de estado directamente dentro de las métricas de New Relic Insights, lo que permite una inspección profunda del rendimiento de la pila de aplicaciones y las métricas de estado.
 
+## Administrar nuevos usuarios de reliquia {#manage-users}
+
+Siga estos pasos para definir los usuarios de la subcuenta New Relic One asociada a su Programa as a Cloud Service AEM.
+
+>[!NOTE]
+>
+>Un usuario en **Propietario empresarial** o **Administrador de implementación** debe iniciar sesión para administrar los usuarios de la Nueva relación uno.
+
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
+
+1. Haga clic en el programa para el cual desea administrar sus nuevos usuarios de Relic One.
+
+1. Cambie a la **Entornos** de la variable **Información general del programa** haciendo clic en el botón **Entornos** en la parte superior de la pantalla.
+
+1. En el **Entornos** , haga clic en el botón de puntos suspensivos en la parte superior de la pantalla junto a la **Agregar entorno** botón.
+
+1. En el menú elipsis, haga clic en **Administración de usuarios**.
+
+   ![Administración de usuarios](assets/newrelic-manage-users.png)
+
+1. En el **Administrar nuevos usuarios de Reic** , introduzca el nombre y los apellidos del usuario que desea añadir y haga clic en el botón **Agregar** botón. Repita este paso para todos los usuarios que desee agregar.
+
+   ![Agregar usuarios](assets/newrelic-add-users.png)
+
+1. Para eliminar un usuario de Nueva relación, haga clic en el botón eliminar situado en el extremo derecho de la fila que representa al usuario.
+
+1. Haga clic en **Guardar** para crear los usuarios.
+
+Una vez definidos los usuarios, New Relic envía un correo electrónico de confirmación a cada usuario al que se ha concedido el acceso para que el usuario pueda completar el proceso de configuración e iniciar sesión.
+
+>[!NOTE]
+>
+>Si está administrando los usuarios de Nueva reliquia uno, también debe agregarse como usuario para tener acceso a él. Ser el **Propietario empresarial** o **Administrador de implementación** no es suficiente para tener acceso a la nueva reliquia uno. También debe crearse como usuario.
+
+## Activar la nueva cuenta de usuario de Relic One {#activate-account}
+
+Una vez que se crea una nueva relación, una cuenta de usuario se crea como se describe en la sección de vista previa [Administrar nuevos usuarios de reliquia](#manage-users), New Relic envía a esos usuarios un correo electrónico de confirmación a la dirección proporcionada. Para utilizar esas cuentas, los usuarios deben activar primero sus cuentas con Nueva relación restableciendo sus contraseñas.
+
+Siga estos pasos para activar su cuenta como usuario de Nueva relación.
+
+1. Haga clic en el vínculo proporcionado en el correo electrónico desde Nueva relación. Esto abre el navegador a la página de inicio de sesión Nueva reliquia .
+
+1. En la página de inicio de sesión Nueva reliquia , seleccione **¿Olvidó su contraseña?**.
+
+   ![Nuevo inicio de sesión de Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
+
+1. Introduzca la dirección de correo electrónico donde recibió el correo electrónico de confirmación y seleccione **Enviar mi vínculo de restablecimiento**.
+
+   ![Escriba la dirección de correo electrónico](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
+
+1. New Relic le enviará un correo electrónico que contiene un vínculo para confirmar la cuenta.
+
+Si no recibe un correo electrónico de confirmación de New Relic, consulte la [sección resolución de problemas .](#troubshooting)
+
 ## Acceso a la nueva reliquia uno {#accessing-new-relic}
 
-Siga estos pasos para obtener acceso a su nueva subcuenta de Relic One asociada a su Programa as a Cloud Service AEM.
+Una vez que haya [ha activado su nueva cuenta de Reic,](#activate-account) puede acceder a Nueva reliquia uno a través de Cloud Manager o directamente.
 
-1. Abra una solicitud accediendo a la pestaña Asistencia del Admin Console.
-1. En su solicitud, incluya los detalles de su ID de programa, así como la lista de usuarios que requieren acceso a Nueva reliquia.
-   * Se deben proporcionar los nombres completos y las direcciones de correo electrónico válidas de todos los usuarios.
+Para acceder a la nueva reliquia uno a través de Cloud Manager:
 
-Consulte el documento [Portal de asistencia AEM para Experience Cloud](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html) para obtener más información sobre cómo abrir tickets.
+1. Inicie sesión en Cloud Manager en [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) y seleccione la organización adecuada.
 
-Una vez que se ha proporcionado el acceso, New Relic envía un correo electrónico de confirmación a cada usuario para que este pueda completar el proceso de configuración e iniciar sesión.
+1. Haga clic en el programa para el que desea acceder a la Nueva reliquia uno.
 
-Si el usuario no encuentra el correo electrónico de confirmación de la cuenta original, siga estos pasos.
+1. Cambie a la **Entornos** de la variable **Información general del programa** haciendo clic en el botón **Entornos** en la parte superior de la pantalla.
+
+1. En el **Entornos** , haga clic en el botón de puntos suspensivos en la parte superior de la pantalla junto a la **Agregar entorno** botón.
+
+1. En el menú elipsis, haga clic en **Abrir nueva reliquia**.
+
+1. En la nueva ficha del explorador que se abre, inicie sesión en Nueva relación uno.
+
+Para acceder directamente a la nueva reliquia uno:
+
+1. Vaya a la página de inicio de sesión de Nueva reliquia en [`https://login.newrelic.com/login`](https://login.newrelic.com/login)
+
+1. Inicie sesión en la nueva reliquia uno.
+
+### Verificación del correo electrónico {#verify-email}
+
+Si se le pide que verifique su correo electrónico durante el inicio de sesión en la nueva relación uno, significa que su correo electrónico está asociado con varias cuentas. Esto le permite elegir a qué cuenta acceder.
+
+Si no verifica su dirección de correo electrónico, New Relic intentará iniciar sesión con el registro de usuario creado más recientemente y asociado a su dirección de correo electrónico. Para evitar verificar el correo electrónico durante cada inicio de sesión, haga clic en el botón **Recordarme** en la pantalla de inicio de sesión.
+
+Para obtener más ayuda, abra un ticket de asistencia a través de la [Portal de asistencia AEM](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
+
+## Solución de problemas de acceso único a la nueva relación de calidad {#troubleshooting}
+
+Si se le agregó como un nuevo usuario de reliquia, tal como se describe en la sección [Administrar nuevos usuarios de reliquia](#manage-users) y no puede localizar el correo electrónico de confirmación de la cuenta original. Siga estos pasos.
 
 1. Vaya a la página de inicio de sesión de Nueva reliquia en [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -52,38 +130,31 @@ Si el usuario no encuentra el correo electrónico de confirmación de la cuenta 
 
    ![Nuevo inicio de sesión de Relic](/help/implementing/cloud-manager/assets/new-relic/newrelic-1.png)
 
-1. Escriba la dirección de correo electrónico de la cuenta y seleccione **Enviar mi vínculo de restablecimiento**.
+1. Escriba la dirección de correo electrónico que se utilizó para crear la cuenta y seleccione **Enviar mi vínculo de restablecimiento**.
 
    ![Escriba la dirección de correo electrónico](/help/implementing/cloud-manager/assets/new-relic/newrelic-2.png)
 
-1. New Relic enviará al usuario un correo electrónico que contiene un vínculo para confirmar la cuenta.
+1. New Relic le enviará un correo electrónico que contiene un vínculo para confirmar la cuenta.
 
-Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un ticket de asistencia a través de la [Admin Console](https://adminconsole.adobe.com/).
+Si completa el proceso de registro y no puede iniciar sesión en su cuenta debido a mensajes de error de correo electrónico o contraseña, registre un ticket de asistencia a través de la [Admin Console.](https://adminconsole.adobe.com/)
 
->[!TIP]
->
->Si no recibe un correo electrónico de New Relic:
->
->* Compruebe su [filtros de correo no deseado](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
->* Si procede, [añadir nueva relación a la lista de permitidos de correo electrónico](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
->* Si ninguna de estas sugerencias ayuda, sírvase proporcionar comentarios sobre el ticket de asistencia y el equipo de soporte de Adobe le ayudará a obtener más información.
+Si no recibe un correo electrónico de New Relic:
 
+* Compruebe su [filtros de correo no deseado](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
+* Si procede, [añadir nueva relación a la lista de permitidos de correo electrónico](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
+* Si ninguna de estas sugerencias ayuda, sírvase proporcionar comentarios sobre el ticket de asistencia y el equipo de soporte de Adobe le ayudará a obtener más información.
 
-### Verificación del correo electrónico {#verify-email}
+## Restricciones     {#limitations}
 
-Si se le pide que verifique su correo electrónico durante el inicio de sesión, significa que el correo electrónico está asociado con varias cuentas. Esto le permite elegir a qué cuenta acceder.
+Las siguientes limitaciones se aplican a la adición de usuarios a la Nueva relación uno:
 
-Si no verifica su dirección de correo electrónico, New Relic intentará iniciar sesión con el registro de usuario creado más recientemente y asociado a su dirección de correo electrónico. Para evitar verificar el correo electrónico durante cada inicio de sesión, haga clic en el botón **Recordarme** en la pantalla de inicio de sesión.
-
-Para obtener más ayuda, abra un ticket de asistencia a través de la [Portal de asistencia AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
-## Excepciones {#exceptions}
-
-AEM as a Cloud Service solo ofrece la solución New Relic One APM y no proporciona soporte para alertas, registros o integraciones de API.
+* Se puede añadir un máximo de 25 usuarios. Si se ha alcanzado el número máximo de usuarios, elimine usuarios para poder agregar nuevos usuarios.
+* Los usuarios agregados a Nueva reliquia serán del tipo **Restringido** consulte [la documentación Nueva reliquia para obtener más información.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
+* AEM as a Cloud Service solo ofrece la solución New Relic One APM y no proporciona soporte para alertas, registros o integraciones de API.
 
 Para obtener más ayuda o instrucciones adicionales sobre las nuevas ofertas de Relic Uno para su Programa as a Cloud Service AEM, abra un ticket de asistencia a través de la [Portal de asistencia AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-## Preguntas más frecuentes sobre la nueva cuenta de reliquia {#faqs}
+## Preguntas más frecuentes sobre la nueva reliquia uno {#faqs}
 
 ### ¿Qué monitoriza el Adobe con la nueva reliquia uno? {#adobe-monitor}
 
@@ -99,7 +170,7 @@ Importante:
 
 * Cada aplicación utiliza una clave de licencia.
 * AEM entornos as a Cloud Service solo informan de una cuenta nueva de Relic One.
-* Las métricas y los eventos de monitorización completos para la Nueva reliquia uno se conservan durante 7 días.
+* Las métricas y los eventos de monitorización completos para la Nueva reliquia uno se conservan durante siete días.
 
 ### ¿Quién puede acceder a los datos del servicio en la nube New Relic One? {#access-new-relic-cloud}
 

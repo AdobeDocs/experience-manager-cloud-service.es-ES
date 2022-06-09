@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Recursos informativos y enlaces a la documentación sobre la información general de Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dec3dc0f310b24f37f37b45636b17e08e1bb5edf
+source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3576'
 ht-degree: 97%
 
 ---
@@ -62,11 +62,13 @@ ht-degree: 97%
    + Notas de la versión de Cloud Manager {#cloud-manager}
       + [Notas de la versión actual](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [Notas de la versión 2022.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
          + [Notas de la versión 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
          + [Notas de la versión 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [Notas de la versión 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [Notas de la versión 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
       + 2021 {#2021}
+         + [Notas de la versión 202.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [Notas de la versión 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [Notas de la versión 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [Notas de la versión 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -724,6 +726,7 @@ ht-degree: 97%
          + [Adición de una lista de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [Aplicación y cancelación de la aplicación de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [Administración de listas de permitidos de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+      + [Panel de licencias](/help/implementing/cloud-manager/license-dashboard.md)
       + [Preguntas frecuentes sobre Cloud Manager](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + Desarrollo para AEM as a Cloud Service {#developing}
       + [Estructura del proyecto AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)

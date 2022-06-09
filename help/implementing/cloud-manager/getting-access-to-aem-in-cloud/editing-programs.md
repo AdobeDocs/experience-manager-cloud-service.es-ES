@@ -2,9 +2,9 @@
 title: Edición de programas
 description: Obtenga información sobre cómo editar los programas de producción y de simulación de pruebas para ajustar sus opciones después de crearlas.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ Siga estos pasos para editar un programa.
 
    ![Opción Editar programa](assets/edit-program-overview.png)
 
-1. La variable **Editar programa** muestra dos fichas: **General** y **Soluciones y complementos**. Seleccione el **General** para editar el nombre y la descripción del programa.
+1. La variable **Editar programa** se abre. En el **General** , edite el nombre y la descripción del programa.
 
    * Se debe seleccionar al menos una solución para un programa.
 
    ![Ficha General](assets/edit-program-prod1.png)
 
-1. Seleccione el **Soluciones y complementos** para modificar las soluciones del programa.
+1. En el **Soluciones y complementos** , modifique las soluciones para el programa.
 
    ![Seleccionar soluciones](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ Siga estos pasos para editar un programa.
 
    ![Editar complementos](assets/edit-program-add-on.png)
 
+1. En el **Configuración de Go live** , modifique la fecha de lanzamiento planeada para el programa.
+
+   ![Editar la configuración de lanzamiento](assets/edit-program-go-live.png)
+
+   * Esta fecha es solo para uso informativo y déclencheur el widget Go Live en la página de descripción general del programa para proporcionar vínculos internos del producto a AEM documentación de prácticas recomendadas as a Cloud Service de forma oportuna para que se ajuste a su recorrido y que culmine en una experiencia Go Live correcta y sin problemas.
+
 1. Haga clic en **Actualizar** para guardar los cambios en el programa.
 
-Una vez realizadas las actualizaciones, si las soluciones seleccionadas han cambiado, esos cambios surtirán efecto después de la siguiente implementación.
+Cada vez que se edita un programa, incluida la adición o eliminación de una solución o complemento, esos cambios surtirán efecto después de la siguiente implementación.
 
 ## Eliminación de programas del Simulador para pruebas {#delete-sandbox-program}
 
