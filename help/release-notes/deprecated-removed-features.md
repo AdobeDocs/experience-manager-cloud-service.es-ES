@@ -2,10 +2,10 @@
 title: Funciones en desuso y eliminadas
 description: Notas de versión específicas de las funciones en desuso y eliminadas de  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
+source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 100%
+source-wordcount: '666'
+ht-degree: 91%
 
 ---
 
@@ -41,6 +41,10 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | [!DNL Assets] | No se admiten [determinados pasos](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) en el flujo de trabajo `DAM Asset Update`, incluida la llamada a herramientas de línea de comandos como [!DNL ImageMagick]. | [Los microservicios de recursos](/help/assets/asset-microservices-overview.md) sustituyen a muchos flujos de trabajo. Para el procesamiento personalizado, utilice [flujos de trabajo posteriores al procesamiento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | FFmpeg transcodificar vídeos. | Para la generación de miniaturas de FFmpeg, use los [microservicios de Asset](/help/assets/asset-microservices-overview.md). Para la transcodificación FFmpeg, utilice [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | IU de replicación de árbol en la pestaña Distribuir del agente de replicación (eliminación después del 30 de septiembre de 2021) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Ni la pestaña Distribute de la pantalla del administrador del agente de replicación ni la API de replicación pueden utilizarse para replicar paquetes de contenido de más de 10 MB (aplicación después del 12 de septiembre de 2022) | Enfoques [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
+
+
+| [!DNL Foundation]       | Ni la pestaña Distribute de la pantalla del administrador del agente de replicación ni la API de replicación pueden utilizarse para replicar paquetes de contenido de más de 10 MB. En su lugar, utilice [Administrar publicación](/help/operations/replication.md#manage-publication) o [flujo de trabajo del árbol de contenido de publicación](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Funciones eliminadas {#removed-features}
 
