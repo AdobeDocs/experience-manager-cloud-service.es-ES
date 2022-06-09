@@ -4,7 +4,7 @@ seo-title: Repository Browser
 description: El explorador del repositorio proporciona una vista de solo lectura en el repositorio para todos los entornos en los niveles de autor, publicación y vista previa.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
+source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 2%
@@ -65,6 +65,18 @@ El explorador del repositorio se puede iniciar siguiendo los pasos a continuaci�
 Puede utilizar el panel de navegación izquierdo para desplazarse por la jerarquía de contenido. Al hacer clic en cada carpeta o nodo, se mostrarán sus elementos secundarios. La estructura de carpetas refleja el árbol de recursos de Sling, que es un superconjunto del árbol de nodos JCR.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
+
+<!-- Alexandru: temporarily commenting this out, please don't delete. 
+
+Alternatively, you can navigate directly to a path by entering it in the **Path** field, as shown below. This will also expand its location in the content hierarcy view on the left.
+
+![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
+
+Whenever you click a folder on the left, the Path field automatically populates with its location. This is useful for copying and pasting the value for later usage.
+
+Additionally, when you click on a folder, the URL is dynamically modified to include the path to that folder. This allows for bookmarkable URLs.
+
+-->
 
 Para publicar, de forma predeterminada, el Explorador de repositorios solo mostrará contenido público, por lo que determinadas carpetas como `/conf` o `/home` no será visible.
 

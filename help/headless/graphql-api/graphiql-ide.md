@@ -3,10 +3,10 @@ title: Uso del IDE de GraphiQL en AEM
 description: Aprenda a utilizar el IDE de GraphiQL en Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,9 @@ Hay una implementación del IDE de [GraphiQL](https://graphql.org/learn/serving-
 
 >[!NOTE]
 >
->Algunas de sus funcionalidades están disponibles en el canal de prelanzamiento. En concreto, la funcionalidad relacionada con las consultas persistentes.
-> 
->Consulte la [Documentación del canal de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
-
->[!NOTE]
+>GraphiQL se incluye en todos los entornos de AEM (pero solo será accesible/visible al configurar los extremos).
 >
->GraphiQL está incluido en AEM, pero de forma predeterminada solo está habilitado en los entornos de `dev-authors`.
+>En versiones anteriores, se necesitaba un paquete para instalar el IDE de GraphiQL. Si tiene esto instalado, ahora se puede quitar.
 
 >[!NOTE]
 >Debe tener [configurados los puntos de conexión](/help/headless/graphql-api/graphql-endpoint.md) en el [explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md) antes de utilizar el IDE de GraphiQL.
@@ -35,7 +31,7 @@ La herramienta **GraphiQL** permite probar y depurar las consultas de GraphQL pe
 * ejecutar las consultas para ver inmediatamente los resultados
 * administrar **variables de consulta**
 * guardar y administrar **consultas persistentes**
-* publicar o cancelar la publicación de **consultas persistentes** (a/de `dev-publish`)
+* publicar o cancelar la publicación, **Consultas persistentes** (por ejemplo, para/desde `dev-publish`)
 * consultar el **historial** de las consultas anteriores
 * usar el **Explorador de documentación** para acceder a la documentación; le ayuda a conocer y comprender qué métodos están disponibles.
 
@@ -46,7 +42,7 @@ Puede acceder al editor de consultas desde:
 
 ![Interfaz de GraphiQL](assets/cfm-graphiql-interface.png "Interfaz de GraphiQL")
 
-Puede utilizar GraphiQL en el sistema de creación de desarrollo para que la aplicación cliente pueda solicitarlos mediante peticiones GET y consultas de publicación. Para el uso en producción, debe [mover las consultas al entorno de producción](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente, al creador de producción para validar contenido recién creado con las consultas y, después, para publicar la producción para consumo activo.
+Puede utilizar GraphiQL en el sistema para que la aplicación cliente pueda solicitar consultas mediante solicitudes de GET y para publicar consultas. Para el uso de producción, puede [mueva las consultas al entorno de producción](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Inicialmente, al creador de producción para validar contenido recién creado con las consultas y, después, para publicar la producción para consumo activo.
 
 ## Selección del punto de conexión {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ Por ejemplo:
 
 ![Variables de GraphQL](assets/cfm-graphqlapi-03.png "Variables de GraphQL")
 
-## Publicación de consultas persistentes (dev-publish) {#publishing-persisted-queries}
+## Publicación de consultas persistentes {#publishing-persisted-queries}
 
-Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar las acciones **Publicación** y **Cancelar la publicación**. Esto las activará en el entorno de publicación de desarrollo (`dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
+Una vez seleccionada la consulta persistente en la lista (panel izquierdo), puede utilizar las acciones **Publicación** y **Cancelar la publicación**. Esto los activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso de las aplicaciones durante las pruebas.
 
 >[!NOTE]
 >

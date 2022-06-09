@@ -4,10 +4,10 @@ description: Descubra cómo los modelos de fragmentos de contenido sirven de bas
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
-source-wordcount: '2892'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Para usar modelos de fragmento de contenido:
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmento de contenido**.
 1. Vaya a la carpeta adecuada para su [configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Uso **Crear** para abrir el asistente.
 
@@ -46,7 +46,7 @@ El modelo de fragmento de contenido define efectivamente la estructura de los fr
 >
 >Editar un modelo de fragmento de contenido existente puede afectar a los fragmentos dependientes.
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Abra el modelo necesario para **Editar**; utilice la acción rápida o seleccione el modelo y, a continuación, la acción en la barra de herramientas.
@@ -400,7 +400,7 @@ Los modelos de fragmento de contenido permitidos para una carpeta se resuelven d
 
 Para eliminar un modelo de fragmento de contenido:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Seleccione el modelo, seguido de **Eliminar** en la barra de herramientas.
@@ -415,7 +415,7 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 
 Para publicar un modelo de fragmento de contenido:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Seleccione el modelo, seguido de **Publicación** en la barra de herramientas.
@@ -431,7 +431,7 @@ Los modelos de fragmento de contenido se pueden cancelar si ningún fragmento ha
 
 Para cancelar la publicación de un modelo de fragmento de contenido:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **General** y, a continuación, abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Seleccione el modelo, seguido de **Cancelar la publicación** en la barra de herramientas.

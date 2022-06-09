@@ -3,9 +3,9 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 0ff90afca3fb72ac6d0a79793a332c1c2172cd67
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1430'
 ht-degree: 98%
 
 ---
@@ -13,12 +13,6 @@ ht-degree: 98%
 # Formación para utilizar GraphQL con AEM: contenido y consultas de muestra {#learn-graphql-with-aem-sample-content-queries}
 
 Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
-
->[!NOTE]
->
->Algunas de sus funcionalidades están disponibles en el canal de prelanzamiento. En concreto, la funcionalidad relacionada con las consultas persistentes.
-> 
->Consulte la [Documentación del canal de prelanzamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=es#enable-prerelease) para obtener información sobre cómo habilitar la función para su entorno.
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: Introducción a AEM traducción sin encabezado
 description: Conozca cómo organizar su contenido sin encabezado y cómo funcionan AEM herramientas de traducción.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 1%
@@ -78,7 +78,7 @@ El arquitecto de contenido trabaja al principio del proyecto para definir esta e
 
 Dado que los modelos de contenido definen la estructura del contenido, debe saber qué campos de los modelos se deben traducir. Normalmente, se trabaja con el arquitecto de contenido para definir esto. Para examinar los campos de los modelos de contenido, siga los pasos a continuación.
 
-1. Vaya a **Herramientas** -> **Recursos** -> **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas** -> **General** -> **Modelos de fragmento de contenido**.
 1. Los modelos de fragmento de contenido generalmente se almacenan en una estructura de carpetas. Toque o haga clic en la carpeta de su proyecto.
 1. Se muestran los modelos. Toque o haga clic en el modelo para ver los detalles.
    ![Modelos de fragmentos de contenido](assets/content-fragment-models.png)
