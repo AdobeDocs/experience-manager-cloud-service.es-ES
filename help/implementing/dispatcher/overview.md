@@ -2,9 +2,9 @@
 title: Resumen del flujo de distribución de contenido
 description: Resumen del flujo de distribución de contenido
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,9 @@ El flujo de datos es el siguiente:
 
 De forma predeterminada, el tipo de contenido HTML/texto está configurado para caducar después de 300 segundos (5 minutos) en la capa de Dispatcher, un umbral que respetan tanto la caché de Dispatcher como la CDN. Durante las redistribuciones del servicio de publicación, la caché de Dispatcher se borra y, posteriormente, se caliente antes de que los nuevos nodos de publicación acepten el tráfico.
 
-Las secciones siguientes proporcionan buenos detalles sobre la entrega de contenido, incluida la configuración de CDN y el almacenamiento en caché.
+Las siguientes secciones proporcionan buenos detalles sobre la entrega de contenido:
+* [Configuración de CDN](/help/implementing/dispatcher/cdn.md)
+* [Almacenamiento en caché](/help/implementing/dispatcher/caching.md)
+
 
 Está disponible información sobre la replicación del servicio de autor al servicio de publicación [here](/help/operations/replication.md).
