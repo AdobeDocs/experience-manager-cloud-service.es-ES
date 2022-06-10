@@ -2,9 +2,9 @@
 title: Preguntas frecuentes sobre Cloud Manager
 description: Encuentre respuestas a las preguntas más frecuentes sobre Cloud Manager en AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Este es un problema conocido debido a que Cloud Manager utiliza una versión dif
 
 ## La comprobación de calidad del código falló y nuestra implementación se atascó. ¿Hay alguna manera de evitar este cheque? {#deployment-stuck}
 
-Sí. Todos los errores de comprobación de calidad del código, excepto la clasificación de seguridad, son métricas no críticas, por lo que se pueden evitar ampliando los elementos en la interfaz de usuario de los resultados.
+Sí. Todos los errores de comprobación de calidad del código, excepto la clasificación de seguridad, son métricas no críticas, por lo que se pueden evitar como parte de una canalización de implementación expandiendo los elementos en la interfaz de usuario de los resultados.
 
-Consulte el documento [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) para obtener más información.
+Ver los documentos [Prueba de calidad de código](/help/implementing/cloud-manager/code-quality-testing.md) y [Configuración de canalizaciones que no sean de producción](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obtener más información.
 
 ## ¿Puedo utilizar SNAPSHOT para la versión del proyecto Maven? {#use-snapshot}
 
