@@ -2,9 +2,9 @@
 title: Nueva reliquia uno
 description: Obtenga información sobre el servicio de supervisión del rendimiento de la aplicación (APM) de New Relic One para AEM as a Cloud Service y cómo puede acceder a él.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 1%
 
 ---
@@ -46,15 +46,13 @@ Siga estos pasos para definir los usuarios de la subcuenta New Relic One asociad
 
 1. Haga clic en el programa para el cual desea administrar sus nuevos usuarios de Relic One.
 
-1. Cambie a la **Entornos** de la variable **Información general del programa** haciendo clic en el botón **Entornos** en la parte superior de la pantalla.
-
-1. En el **Entornos** , haga clic en el botón de puntos suspensivos en la parte superior de la pantalla junto a la **Agregar entorno** botón.
-
-1. En el menú elipsis, haga clic en **Administración de usuarios**.
+1. En la parte inferior del **Entornos** en la página de información general del programa, haga clic en el botón elipsis y seleccione **Administración de usuarios**.
 
    ![Administración de usuarios](assets/newrelic-manage-users.png)
 
-1. En el **Administrar nuevos usuarios de Reic** , introduzca el nombre y los apellidos del usuario que desea añadir y haga clic en el botón **Agregar** botón. Repita este paso para todos los usuarios que desee agregar.
+   * También puede acceder al **Administración de usuarios** mediante el botón de puntos suspensivos en la parte superior del **Entornos** de su programa.
+
+1. En el **Administrar nuevos usuarios de Reic** , introduzca el nombre y los apellidos del usuario que desea agregar y haga clic en el botón **Agregar** botón. Repita este paso para todos los usuarios que desee agregar.
 
    ![Agregar usuarios](assets/newrelic-add-users.png)
 
@@ -98,11 +96,11 @@ Para acceder a la nueva reliquia uno a través de Cloud Manager:
 
 1. Haga clic en el programa para el que desea acceder a la Nueva reliquia uno.
 
-1. Cambie a la **Entornos** de la variable **Información general del programa** haciendo clic en el botón **Entornos** en la parte superior de la pantalla.
+1. En la parte inferior del **Entornos** en la página de información general del programa, haga clic en el botón elipsis y seleccione **Abrir nueva reliquia**.
 
-1. En el **Entornos** , haga clic en el botón de puntos suspensivos en la parte superior de la pantalla junto a la **Agregar entorno** botón.
+   ![Administración de usuarios](assets/newrelic-access.png)
 
-1. En el menú elipsis, haga clic en **Abrir nueva reliquia**.
+   * También puede acceder a Nueva reliquia a través del botón de puntos suspensivos en la parte superior del **Entornos** de su programa.
 
 1. En la nueva ficha del explorador que se abre, inicie sesión en Nueva relación uno.
 
