@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
    >
    >Cuando cree un formulario adaptable, especifique el nombre del contenedor en la variable **[!UICONTROL Contenedor de configuración]** campo .
 
-1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear [!DNL Adobe Sign]en AEM Forms.
+1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear [!DNL Adobe Sign] en AEM Forms.
 1. En el **[!UICONTROL General]** de la pestaña **[!UICONTROL Crear configuración de Adobe Sign]** página, especifique un **[!UICONTROL Nombre]** para la configuración y pulse **[!UICONTROL Siguiente]**. Si lo desea, puede especificar un **[!UICONTROL Título]** y busque para seleccionar un **[!UICONTROL Miniatura]** para la configuración.
 
 1. Copie la dirección URL de la ventana actual del explorador en un bloc de notas. La dirección URL es necesaria para configurar [!DNL Adobe Sign] aplicación con [!DNL AEM Forms] en un paso posterior.
