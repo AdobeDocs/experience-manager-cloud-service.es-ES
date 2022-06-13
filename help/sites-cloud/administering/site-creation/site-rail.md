@@ -4,7 +4,7 @@ description: Conozca las potentes funciones del carril del sitio para ayudarle a
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -30,7 +30,7 @@ El carril del sitio se utiliza para administrar la información relacionada con 
 >
 >Consulte la [Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md) para familiarizarse con la herramienta de creación rápida del sitio y la canalización de front-end con el fin de personalizar fácilmente el tema del sitio.
 
-##  Descarga de fuentes de temas {#downloading-theme-sources}
+## Descarga de fuentes de temas {#downloading-theme-sources}
 
 Cuando crea un sitio en AEM basado en un [plantilla de sitio,](site-templates.md) puede descargar su [tema del sitio](site-themes.md) mediante el carril del sitio.
 
@@ -40,7 +40,7 @@ Con el carril del sitio en la consola Sitios , seleccione la raíz del sitio par
 
 Toque o haga clic **Descargar fuentes de temas** para descargar una copia local del tema del sitio como `.zip` para fines de personalización.
 
-##  Descarga de recursos de plantilla {#downloading-template-resources}
+## Descarga de recursos de plantilla {#downloading-template-resources}
 
 [Plantillas de sitio](site-templates.md) puede contener información además de la estructura de contenido del sitio y [tema del sitio.](site-themes.md) Las plantillas de sitio pueden contener diseños de modelo de alambre u otros archivos relacionados con el sitio, por ejemplo.
 
