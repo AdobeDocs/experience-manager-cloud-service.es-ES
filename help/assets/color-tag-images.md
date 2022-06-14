@@ -1,13 +1,13 @@
 ---
 title: Etiquetas de color para imágenes
 description: Experience Manager Assets le permite distinguir entre colores en una imagen y aplicarlos automáticamente como etiquetas. A continuación, puede utilizar estas etiquetas para buscar y filtrar imágenes.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1225'
 ht-degree: 3%
 
 ---
-
 
 # Etiquetas de color para imágenes {#color-tag-images}
 
@@ -106,6 +106,24 @@ Para agregar el componente Etiquetas de color inteligente al Editor de formulari
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 
+## Etiquetas de color para imágenes existentes en DAM {#color-tags-existing-images}
+
+Las imágenes ya existentes en DAM no se etiquetan con colores automáticamente. Debe [!UICONTROL Volver a procesar recursos] manualmente para generar etiquetas de color para ellas.
+
+Para colorear imágenes de etiquetas o carpetas (incluidas subcarpetas) de recursos que ya existen en el repositorio de recursos, siga estos pasos:
+
+1. Seleccione el [!DNL Adobe Experience Manager] y, a continuación, seleccione los recursos en el [!UICONTROL Navegación] página.
+
+1. Select [!UICONTROL Archivos] para mostrar la interfaz de Assets.
+
+1. Vaya a la carpeta a la que desea aplicar etiquetas de color.
+
+1. Seleccione toda la carpeta o imágenes específicas.
+
+1. Select ![Icono Volver a procesar los recursos](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Volver a procesar recursos] y seleccione [!UICONTROL Proceso completo] .
+
+Una vez completado el proceso, vaya a la [!UICONTROL Propiedades] de cualquier imagen de la carpeta. Las etiquetas añadidas automáticamente se ven en [!UICONTROL Etiquetas de color inteligentes] en [!UICONTROL Básico] pestaña .
+
 
 ## Ver etiquetas de color inteligentes para imágenes {#view-color-tags}
 
@@ -167,7 +185,3 @@ Para buscar imágenes basadas en colores:
    Puede filtrar imágenes en función de la selección de un color. Las imágenes que tienen el color seleccionado como una de las etiquetas de color inteligente y encima de la variable [Umbral de cobertura/dominio %](#manage-color-tagging-settings) en el panel derecho.
 
 1. Haga clic en x en la barra de búsqueda para borrar el filtro.
-
-
-
-
