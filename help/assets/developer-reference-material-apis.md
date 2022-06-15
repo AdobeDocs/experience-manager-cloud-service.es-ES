@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
+source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1811'
 ht-degree: 3%
 
 ---
@@ -183,6 +183,9 @@ Para obtener más información sobre los algoritmos de carga o para crear sus pr
 
 * [Biblioteca de carga de aem de código abierto](https://github.com/adobe/aem-upload).
 * [Herramienta de línea de comandos de código abierto](https://github.com/adobe/aio-cli-plugin-aem).
+
+>[!NOTE]
+Tanto la biblioteca de carga de aem como la herramienta de línea de comandos utilizan la función [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API de carga de recursos obsoletas {#deprecated-asset-upload-api}
 
