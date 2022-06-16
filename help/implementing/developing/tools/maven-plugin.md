@@ -2,9 +2,9 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: Utilice el complemento Maven del paquete de contenido para implementar aplicaciones AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1851'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,10 @@ Este documento detalla cómo utilizar Maven para administrar estas tareas. Sin e
 
 >[!NOTE]
 >
->La creación de paquetes ahora es propiedad de [Complemento Maven del paquete Apache Jackrabbit FileVault Package](https://jackrabbit.apache.org/filevault-package-maven-plugin/). La implementación de los paquetes construidos en AEM es realizada por el complemento Maven del paquete de contenido de Adobe como se describe aquí.
+>Paquete **creación** ahora es propiedad de [Complemento Maven del paquete Apache Jackrabbit FileVault Package.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* La variable `content-package-maven-plugin` ya no es compatible con el empaquetado de la versión 1.0.2.
+>* Este artículo describe el **implementación** de los paquetes construidos a AEM se realiza mediante el complemento Maven del paquete de contenido de Adobe.
+
 
 ## Paquetes y la estructura AEM del proyecto {#aem-project-structure}
 
@@ -47,7 +50,7 @@ Para utilizar el complemento Maven del paquete de contenido, agregue el siguient
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>
@@ -214,7 +217,7 @@ La variable `mode` define cómo se ve afectado el contenido del repositorio cuan
 
 Cuando el filtro contiene no `mode` elemento, el valor predeterminado de `replace` se utiliza.
 
-### ayuda {#help}
+### Ayuda de  {#help}
 
 #### Parámetros {#parameters-6}
 

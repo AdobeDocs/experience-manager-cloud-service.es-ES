@@ -2,7 +2,7 @@
 title: Enrutamiento de modelo SPA
 description: Para las aplicaciones de una sola página en AEM, la aplicación es responsable del enrutamiento. Este documento describe el mecanismo de enrutamiento, el contrato y las opciones disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 823b6412c9e75fe523e93c4f234ddd9d0ae93f5a
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La variable `ModelRouter` admite el concepto de enrutamiento de modelo a medida 
 De forma predeterminada, este comportamiento se activa automáticamente. Para deshabilitarlo, el SPA debe renderizar la siguiente meta propiedad:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Tenga en cuenta que cada ruta del SPA debe corresponder a un recurso accesible en AEM (por ejemplo, &quot; `/content/mysite/mypage"`) desde el `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. Aunque, si es necesario, el SPA también puede definir una &quot;lista de bloqueados&quot; de rutas que el `PageModelManager`:
