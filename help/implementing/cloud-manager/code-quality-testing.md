@@ -2,9 +2,9 @@
 title: Prueba de calidad del código
 description: Descubra cómo funcionan las pruebas de calidad del código de las canalizaciones y cómo pueden mejorar la calidad de las implementaciones.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1177'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,12 @@ Los problemas identificados por las pruebas de calidad del código se asignan a 
 * **Importante** - Estos son problemas que hacen que la canalización introduzca un estado pausado. Un administrador de implementación, un administrador de proyectos o un propietario de empresa pueden anular los problemas, en cuyo caso la canalización continúa, o pueden aceptar los problemas, en cuyo caso la canalización se detiene con un error.
 
 * **Información** - Se trata de problemas que se proporcionan exclusivamente con fines informativos y que no afectan a la ejecución de la canalización
+
+>[!NOTE]
+>
+>En una canalización de solo calidad de código, no se pueden anular los errores importantes en la puerta de calidad de código, ya que el paso de prueba de calidad de código es el último paso de la canalización.
+
+### Clasificaciones {#ratings}
 
 Los resultados de este paso se entregan como **Clasificaciones**.
 
