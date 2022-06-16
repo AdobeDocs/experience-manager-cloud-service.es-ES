@@ -1,13 +1,13 @@
 ---
 title: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de la versión [!DNL Workfront for Experience Manager enhanced connector]
-source-git-commit: 02df53e47d2b8617c9a81f5c438814996af92340
+exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
+source-git-commit: 081f7ed8c39382408285887928163e2569c5cbfe
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 5%
+source-wordcount: '298'
+ht-degree: 4%
 
 ---
-
 
 # Notas de la versión [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
@@ -15,9 +15,27 @@ En la siguiente sección se describen las notas de la versión generales de [!DN
 
 ## Fecha de la versión {#release-date}
 
-La fecha de la versión de la última versión de [!DNL Workfront for Experience Manager enhanced connector] es 28 de marzo de 2022.
+La fecha de la versión de la última versión 1.9.0 de [!DNL Workfront for Experience Manager enhanced connector] es el 16 de junio de 2022.
 
 ## Elementos destacados de la versión {#release-highlights}
+
+La última versión de [!DNL Workfront for Experience Manager enhanced connector] incluye la siguiente corrección de errores:
+
+* Al cargar a través de una carpeta vinculada o usar la variable `Send To` acción disponible en Workfront para cargar recursos a Experience Manager as a Cloud Service, los recursos se dañan y no se pueden abrir en Adobe Photoshop.
+
+>[!IMPORTANT]
+>
+>Adobe recomienda que [actualizar a la última versión 1.9.0](../assets/update-workfront-enhanced-connector.md) del [!DNL Workfront for Experience Manager enhanced connector].
+
+## Problemas conocidos {#known-issues}
+
+* Al configurar carpetas de proyecto vinculadas con AEM 6.4, el Experience Manager no guarda los valores de **[!UICONTROL subcarpetas]** y **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** campos. El valor de la variable **[!UICONTROL subcarpetas]** actualizaciones de campo a **[!UICONTROL undefined]** y el valor de la variable **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** actualizaciones de campo a **[!UICONTROL Portfolio predeterminado]** automáticamente después de guardar la configuración.
+
+* Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** en la **[!UICONTROL Más]** la lista desplegable no permite seleccionar el destino de destino dentro de Experience Manager. La variable **[!UICONTROL Enviar a]** funciona correctamente con la opción **[!UICONTROL Acciones de documento]** lista desplegable. La variable **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** lista desplegable así como el **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
+
+## Versiones anteriores {#previous-releases}
+
+### Versión de marzo de 2022 {#march-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] ahora incluye las siguientes actualizaciones:
 
@@ -31,15 +49,8 @@ La fecha de la versión de la última versión de [!DNL Workfront for Experience
 
 * Varias correcciones de errores basadas en los comentarios de socios y clientes.
 
-## Problemas conocidos {#known-issues}
-
-* Al configurar carpetas de proyecto vinculadas con AEM 6.4, el Experience Manager no guarda los valores de **[!UICONTROL subcarpetas]** y **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** campos. El valor de la variable **[!UICONTROL subcarpetas]** actualizaciones de campo a **[!UICONTROL undefined]** y el valor de la variable **[!UICONTROL Crear carpeta vinculada en proyectos con portafolio]** actualizaciones de campo a **[!UICONTROL Portfolio predeterminado]** automáticamente después de guardar la configuración.
-
-* Cuando utiliza la experiencia clásica de Workfront, la variable **[!UICONTROL Enviar a]** en la **[!UICONTROL Más]** la lista desplegable no permite seleccionar el destino de destino dentro de Experience Manager. La variable **[!UICONTROL Enviar a]** funciona correctamente con la opción **[!UICONTROL Acciones de documento]** lista desplegable. La variable **[!UICONTROL Enviar a]** funciona correctamente para **[!UICONTROL Más]** lista desplegable así como el **[!UICONTROL Acciones de documento]** lista desplegable disponible en la nueva experiencia de Workfront.
-
 >[!MORELIKETHIS]
 >
 >* [Integrar [!DNL Workfront for Experience Manager enhanced connector] con Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
 >* [Integrar [!DNL Workfront for Experience Manager enhanced connector] con Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)
-
 
