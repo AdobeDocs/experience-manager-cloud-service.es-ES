@@ -3,9 +3,9 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3537'
 ht-degree: 3%
 
 ---
@@ -270,7 +270,8 @@ Consulte [Cargar recursos](/help/assets/add-assets.md).
 
 **Para editar tipos MIME para formatos compatibles:**
 
-1. En as a Cloud Service de Experience Manager, seleccione el logotipo as a Cloud Service de Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL General > CRXDE Lite]**.
+1. Inicie sesión en su Experience Manager as a Cloud Service como administrador del producto.
+1. En Experience Manager as a Cloud Service , seleccione el logotipo as a Cloud Service del Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL General > CRXDE Lite]**.
 1. En el carril izquierdo, vaya a lo siguiente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -296,6 +297,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
 **Para añadir tipos MIME para formatos no compatibles:**
 
+1. Inicie sesión en su Experience Manager as a Cloud Service como administrador del producto.
 1. Desde el Experience Manager as a Cloud Service, vaya a **[!UICONTROL Herramientas > Operaciones > Consola web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Consulte también [Adición de tipos MIME para formatos no admitidos](#adding-mi
 
 La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En Dynamic Media, se utilizaba para procesar vídeos con la variable **[!UICONTROL Codificar vídeo de Dynamic Media]** flujo de trabajo.
 
+>[!NOTE]
+>
+>Debe iniciar sesión en el Experience Manager as a Cloud Service como administrador del producto para completar esta tarea.
+
 **Para actualizar los subprocesos de trabajo predefinidos de la cola de flujo de trabajo de Granite (recursos de vídeo):**
 
 1. Vaya a `https://<server>/system/console/configMgr` y busque **Cola: Cola de flujo de trabajo de Granite**.
@@ -398,6 +404,10 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 #### Actualizar los subprocesos de trabajo de cola de flujo de trabajo transitorio predefinidos de Granite {#update-granite-transient-workflow-queue-worker-threads-images}
 
 La cola Flujo de trabajo de tránsito de Granite se utiliza para la variable **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo. En Dynamic Media, se utiliza para la ingesta y el procesamiento de recursos de imagen y que no sean de vídeo.
+
+>[!NOTE]
+>
+>Debe iniciar sesión en el Experience Manager as a Cloud Service como administrador del producto para completar esta tarea.
 
 **Para actualizar los subprocesos de trabajo de la cola de Granite Transient Workflow predefinidos:**
 
@@ -423,6 +433,10 @@ La cola Flujo de trabajo de tránsito de Granite se utiliza para la variable **[
 #### Actualizar las conexiones de carga máximas al servidor de Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
 
 La configuración de conexión de carga de Dynamic Media Classic (Scene7) sincroniza los recursos de Experience Manager con los servidores de Dynamic Media Classic.
+
+>[!NOTE]
+>
+>Debe iniciar sesión en el Experience Manager as a Cloud Service como administrador del producto para completar esta tarea.
 
 **Para actualizar las conexiones de carga máximas al servidor de Dynamic Media Classic (Scene7):**
 
