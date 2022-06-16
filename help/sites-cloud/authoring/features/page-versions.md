@@ -2,7 +2,7 @@
 title: 'Uso de versiones de página  '
 description: Cree, compare y restaure versiones de una página
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 66%
@@ -193,9 +193,9 @@ Para comparar una versión anterior con la página actual:
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
->[!NOTE]
+>[!TIP]
 >
->[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-cloud/authoring/launches/preview.md).
+>[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro.](/help/sites-cloud/authoring/launches/preview.md)
 
 Debido a que la creación de contenido es un proceso continuo y colaborativo, el propósito de Deformación de tiempo es permitir que los creadores rastreen el sitio web publicado con el paso del tiempo para comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación.
 
