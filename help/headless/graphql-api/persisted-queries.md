@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 94%
+source-wordcount: '1109'
+ht-degree: 47%
 
 ---
 
@@ -55,17 +55,17 @@ Se recomienda mantener las consultas en un entorno de creación de AEM primero, 
 
 Existen varios métodos para hacer que persistan las consultas, entre los que se incluyen los siguientes:
 
-* el IDE de GraphiQL: consulte [Guardado de consultas persistentes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* GraphiQL IDE: consulte [Guardar consultas persistentes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (método preferido)
 * curl: consulte el siguiente ejemplo
 * Otras herramientas, incluido [Postman](https://www.postman.com/)
 
-A continuación se indican los pasos para mantener una consulta determinada mediante la herramienta de línea de comandos **curl**:
+El IDE de GraphiQL es el **preferido** para consultas persistentes. Para mantener una consulta determinada utilizando la variable **curl** herramienta de línea de comandos:
 
 1. Prepare la consulta colocándola en la nueva URL de punto de conexión `/graphql/persist.json/<config>/<persisted-label>`.
 
    Por ejemplo, cree una consulta persistente:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -88,7 +88,7 @@ A continuación se indican los pasos para mantener una consulta determinada medi
 
    Por ejemplo, compruebe si se ha realizado correctamente:
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -102,7 +102,7 @@ A continuación se indican los pasos para mantener una consulta determinada medi
 
    Por ejemplo, utilice la consulta persistente:
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -111,7 +111,7 @@ A continuación se indican los pasos para mantener una consulta determinada medi
 
    Por ejemplo, utilice la consulta persistente:
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -137,7 +137,7 @@ A continuación se indican los pasos para mantener una consulta determinada medi
 
    Por ejemplo:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -150,7 +150,7 @@ A continuación se indican los pasos para mantener una consulta determinada medi
 
    Por ejemplo:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -163,7 +163,7 @@ A continuación se indican los pasos para mantener una consulta determinada medi
 
    Por ejemplo:
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -185,44 +185,131 @@ A continuación se indican los pasos para mantener una consulta determinada medi
      }'
    ```
 
+
+## Ejecución de una consulta persistente {#execute-persisted-query}
+
+Para ejecutar una consulta persistente, una aplicación cliente realiza una solicitud de GET utilizando la siguiente sintaxis:
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+Donde `PERSISTENT_PATH` es una ruta abreviada donde se guarda la consulta persistente.
+
+1. Por ejemplo `wknd` es el nombre de configuración y `plain-article-query` es el nombre de la consulta persistente. Para ejecutar la consulta:
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. Ejecución de una consulta con parámetros.
+
+   >[!NOTE]
+   >
+   > Las variables y los valores de consulta deben ser correctos [codificado](#encoding-query-url) al ejecutar una consulta persistente.
 
    Por ejemplo:
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   Consulte [variables de consulta](#query-variables) para obtener más información.
+
+## Uso de variables de consulta {#query-variables}
+
+Las variables de consulta se pueden usar con Consultas persistentes. Las variables de consulta se anexan a la solicitud con el prefijo punto y coma (`;`) empleando el nombre y valor de la variable. Las variables múltiples se separan con punto y coma.
+
+El patrón tiene el siguiente aspecto:
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+Por ejemplo, la siguiente consulta contiene una variable `activity` para filtrar una lista en función de un valor de actividad:
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+Esta consulta se puede mantener en una ruta `wknd/adventures-by-activity`. Para llamar a la consulta persistente donde `activity=Camping` la solicitud tendría este aspecto:
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codificación para `=`. Las variables de consulta y los caracteres especiales deben ser [codificado correctamente](#encoding-query-url) para que se ejecute la consulta persistente.
+
+## Codificación de la URL de consulta para su uso en una aplicación {#encoding-query-url}
+
+Para su uso por una aplicación, cualquier carácter especial utilizado al construir variables de consulta (es decir, punto y coma (`;`), signo igual (`=`), barras oblicuas `/`) debe convertirse para utilizar la codificación UTF-8 correspondiente.
+
+Por ejemplo:
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+La dirección URL se puede desglosar en las siguientes partes:
+
+| Parte URL | Descripción |
+|----------| -------------|
+| `/graphql/execute.json` | Punto final de consulta persistente |
+| `/wknd/adventure-by-path` | Ruta de consulta persistente |
+| `%3B` | Codificación de `;` |
+| `adventurePath` | Variable de consulta |
+| `%3D` | Codificación de `=` |
+| `%2F` | Codificación de `/` |
+| `%2Fcontent%2Fdam...` | Ruta codificada al fragmento de contenido |
+
+En texto sin formato, el URI de solicitud tiene el siguiente aspecto:
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+Para utilizar una consulta persistente en una aplicación cliente, se debe utilizar el SDK de cliente AEM sin encabezado para [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)o [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). El SDK de cliente sin encabezado codificará automáticamente todas las variables de consulta de la forma adecuada en la solicitud.
 
 ## Transferencia de una consulta persistente al entorno de producción  {#transfer-persisted-query-production}
 
-En última instancia, la consulta persistente debe estar en el entorno de publicación de producción (de AEM as a Cloud Service), donde las aplicaciones de cliente pueden solicitarla. Para utilizar una consulta persistente en el entorno de publicación de producción, es necesario replicar el árbol persistente relacionado:
+Las consultas persistentes siempre deben crearse en un servicio de AEM Author y luego publicarse (replicarse) en un servicio de AEM Publish. A menudo, las consultas persistentes se crean y prueban en entornos más bajos, como los entornos locales o de desarrollo. A continuación, es necesario promocionar las consultas persistentes a entornos de nivel superior, para que finalmente estén disponibles en un entorno de publicación de AEM de producción para que las aplicaciones de cliente las consuman.
 
-* inicialmente, en el creador de producción para validar el contenido recién creado con las consultas,
-* finalmente, para la publicación de producción para consumo en directo
+### Empaquetar consultas persistentes
 
-Existen varios métodos para transferir una consulta persistente:
+Las consultas persistentes se pueden incorporar en [Paquetes AEM](/help/implementing/developing/tools/package-manager.md). AEM paquetes se pueden descargar e instalar en diferentes entornos. AEM paquetes también se pueden replicar desde un entorno de AEM Author a entornos de AEM Publish.
 
-1. Uso de un paquete:
-   1. Cree una nueva definición de paquete.
-   1. Incluya la configuración (por ejemplo, `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Genere el paquete.
-   1. Transfiera el paquete (descargue/cargue o duplique).
-   1. Instale el paquete.
+Para crear un paquete:
 
-1. Uso de un POST para la replicación:
+1. Vaya a **Herramientas** > **Implementación** > **Paquetes**.
+1. Cree un nuevo paquete tocando **Crear paquete**. Se abrirá un cuadro de diálogo para definir el paquete.
+1. En el cuadro de diálogo Definición de paquete, en **General** introduzca un **Nombre** como &quot;wknd-persistent-queries&quot;.
+1. Escriba un número de versión como &quot;1.0&quot;.
+1. En **Filtros** agregar una nueva **Filtro**. Utilice el Buscador de rutas para seleccionar la variable `persistentQueries` debajo de la configuración. Por ejemplo, para la variable `wknd` configuración de la ruta completa `/conf/wknd/settings/graphql/persistentQueries`.
+1. Toque **Guardar** para guardar la nueva definición del paquete y cerrar el cuadro de diálogo.
+1. Toque . **Generar** en la definición del paquete recién creada.
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+Una vez creado el paquete, puede:
+* **Descargar** el paquete y vuelva a cargarlo en un entorno diferente.
+* **Replicar** el paquete tocando **Más** > **Replicar**. Esto replicará el paquete en el entorno de publicación de AEM conectado.
 
 <!--
 1. Using replication/distribution tool:
@@ -232,23 +319,3 @@ Existen varios métodos para transferir una consulta persistente:
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-Una vez que la configuración de la consulta esté en el entorno de publicación en producción, se aplican los mismos principios de autenticación, simplemente utilizando el punto de conexión de publicación.
-
->[!NOTE]
->
->Para el acceso anónimo, el sistema supone que la ACL permite que “todos” tengan acceso a la configuración de la consulta.
->
->Si no es así, no podrá ejecutarse.
-
-## Codificación de la URL de consulta para su uso en una aplicación {#encoding-query-url}
-
-Para que la utilice una aplicación, es necesario codificar cualquier punto y coma (;) en las URL.
-
-Por ejemplo, como en la solicitud para ejecutar una consulta persistente:
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-Para utilizar una consulta persistente en una aplicación cliente, se debe utilizar el SDK de cliente de AEM sin encabezado [Cliente de AEM Headless para JavaScript](https://github.com/adobe/aem-headless-client-js).
