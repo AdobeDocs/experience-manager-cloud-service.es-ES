@@ -2,18 +2,18 @@
 title: Administre recursos digitales
 description: Descubra varios métodos de edición y administración de recursos
 contentOwner: AG
-mini-toc-levels: 1
+mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
 source-wordcount: '4326'
 ht-degree: 11%
 
 ---
 
-# Administrar recursos {#manage-assets}
+# Administración de recursos {#manage-assets}
 
 Este artículo describe cómo administrar y editar recursos en [!DNL Adobe Experience Manager Assets]. Para administrar [!DNL Content Fragments], consulte [[!DNL Content Fragments]](content-fragments/content-fragments.md) activos.
 
@@ -36,7 +36,7 @@ No se admiten los siguientes caracteres (lista de) separados por espacios:
 * Un nombre de archivo de recurso no puede contener ninguno de estos caracteres: `* / : [ \\ ] | # % { } ? &`
 * Un nombre de carpeta de recursos no puede contener ninguno de estos caracteres: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Cargar recursos {#uploading-assets}
+## Carga de recursos {#uploading-assets}
 
 Consulte [agregar recursos digitales al Experience Manager](add-assets.md).
 
@@ -73,7 +73,7 @@ Una vez activado, el Experience Manager envía notificaciones de recursos duplic
 >
 >Al cargar recursos en el repositorio, el Experience Manager detecta la duplicación y le notifica sobre los primeros 100 recursos duplicados.
 
-## Vista previa de recursos {#previewing-assets}
+## Previsualización de recursos {#previewing-assets}
 
 Para obtener una vista previa de un recurso, siga estos pasos.
 
@@ -282,7 +282,7 @@ Además, desactive el botón de forzar eliminación mediante una superposición 
    >
    >Para resolver o eliminar las referencias entrantes de otras páginas, actualice las referencias relevantes antes de eliminar un recurso. No se puede permitir la eliminación de los recursos a los que se hace referencia, ya que provoca la interrupción de los vínculos. Desactive el botón de eliminación forzada mediante una superposición.
 
-## Descargar recursos {#download-assets}
+## Descarga de recursos {#download-assets}
 
 Consulte [descargar recursos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 

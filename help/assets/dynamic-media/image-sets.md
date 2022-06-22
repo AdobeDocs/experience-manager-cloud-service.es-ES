@@ -4,9 +4,9 @@ description: Aprenda a trabajar con conjuntos de imágenes en Dynamic Media.
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2155'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,15 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
 >[!NOTE]
 >
 >Para obtener información sobre la interfaz de usuario de Assets, consulte [Administrar recursos con la interfaz de usuario táctil](/help/assets/manage-digital-assets.md).
+
+Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
+
+| Recurso: tipo de límite | Práctica recomendada | Límite implementado | Cambios en el límite 31 de diciembre de 2022 |
+| --- | --- | --- | --- |
+| **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
+| **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Inicio rápido: Conjuntos de imágenes {#quick-start-image-sets}
 
@@ -126,6 +135,15 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 >[!NOTE]
 >
 >Los conjuntos de imágenes no son compatibles con los recursos con &quot;,&quot; (coma) en el nombre de archivo.
+
+Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
+
+| Recurso: tipo de límite | Práctica recomendada | Límite implementado | Cambios en el límite 31 de diciembre de 2022 |
+| --- | --- | --- | --- |
+| **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
+| **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Para crear conjuntos de imágenes:**
 

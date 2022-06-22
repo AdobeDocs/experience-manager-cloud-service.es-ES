@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
+source-wordcount: '3271'
 ht-degree: 9%
 
 ---
@@ -53,6 +53,14 @@ En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtra
 El enfoque se describe en [Enfoque de imágenes](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Opciones de recorte {#crop-options}
+
+Al implementar Recorte inteligente en imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica el siguiente límite:
+
+| Tipo de límite | Práctica recomendada | Límite implementado |
+| --- | --- | --- |
+| Número de recortes inteligentes por imagen | 5 | 100 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 

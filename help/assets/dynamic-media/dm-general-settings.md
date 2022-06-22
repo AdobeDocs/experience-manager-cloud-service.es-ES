@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2522'
 ht-degree: 4%
 
 ---
@@ -135,6 +135,8 @@ Puede crear plantillas a partir de archivos Photoshop® de Adobe®, mantener las
 | **[!UICONTROL Ancla]** | Especifique cómo se anclan las imágenes en plantillas generadas a partir de la composición en capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo ocupen el mismo espacio, independientemente de la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere que las imágenes de reemplazo rellenen el espacio asignado en la plantilla. |
 
 ### ficha PDF {#pdf-tab}
+
+El número máximo de páginas para un PDF que se deben tener en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas el 31 de diciembre de 2022. Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Puede elegir rasterizar los archivos, extraer palabras de búsqueda y vínculos, definir la resolución y elegir un espacio de color.
 
