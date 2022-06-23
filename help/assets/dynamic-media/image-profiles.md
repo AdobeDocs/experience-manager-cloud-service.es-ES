@@ -4,9 +4,9 @@ description: Aprenda a crear perfiles de imagen de Dynamic Media que contengan a
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '3271'
+source-wordcount: '3277'
 ht-degree: 9%
 
 ---
@@ -56,9 +56,9 @@ El enfoque se describe en [Enfoque de imágenes](/help/assets/dynamic-media/asse
 
 Al implementar Recorte inteligente en imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite implementado |
-| --- | --- | --- |
-| Número de recortes inteligentes por imagen | 5 | 100 |
+| Tipo de límite | Práctica recomendada | Límite impuesto | Cambio al límite el 31 de diciembre de 2022 |
+| --- | --- | --- | --- |
+| Número de recortes inteligentes por imagen | 5 | 100 | 20 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
