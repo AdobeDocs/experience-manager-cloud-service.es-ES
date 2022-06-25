@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 4%
 
 ---
@@ -136,7 +136,7 @@ Puede crear plantillas a partir de archivos Photoshop® de Adobe®, mantener las
 
 ### ficha PDF {#pdf-tab}
 
-El número máximo de páginas para un PDF que se deben tener en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas el 31 de diciembre de 2022. Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+El número máximo de páginas para un PDF que se deben tener en cuenta para la extracción es de 5000 para las nuevas cargas. Este límite cambiará a 100 páginas (para todos los PDF) el 31 de diciembre de 2022. Consulte también [Limitaciones de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Puede elegir rasterizar los archivos, extraer palabras de búsqueda y vínculos, definir la resolución y elegir un espacio de color.
 
