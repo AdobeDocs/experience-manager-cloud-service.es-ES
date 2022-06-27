@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
+source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -88,7 +88,7 @@ Para utilizar CAPTCHA en Forms adaptable:
 1. En el **[!UICONTROL Servicio Captcha]** desplegable, seleccione **[!UICONTROL reCaptcha]** para habilitar el servicio reCAPTCHA si lo configuró como se describe en [Servicio ReCAPTCHA de Google](#google-recaptcha). Seleccione una configuración en la lista desplegable Configuración .
 1. Seleccione el tipo como **[!UICONTROL Normal]** o **[!UICONTROL Compacta]** para el widget reCAPTCHA. También puede seleccionar el **[!UICONTROL Invisible]** para mostrar el desafío CAPTCHA solamente en el caso de una actividad sospechosa. El distintivo protegido por reCAPTCHA, mostrado a continuación, se muestra en los formularios protegidos.
 
-   ![Google procesado por una insignia reCAPTCHA](assets/google-recaptcha-v2.png)
+   ![Google protegido por una insignia reCAPTCHA](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
