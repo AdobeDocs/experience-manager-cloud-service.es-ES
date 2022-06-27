@@ -1,13 +1,13 @@
 ---
 title: Panel de licencias
 description: Cloud Manager proporciona un tablero para facilitar la visualización de las autorizaciones de productos de AEMaaCS disponibles para su organización o inquilino.
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 1%
 
 ---
-
 
 # Panel de licencias {#license-dashboard}
 
@@ -57,13 +57,15 @@ Cada sección resume lo que está disponible y cómo se utiliza actualmente, si 
 
 Una solicitud de contenido es una solicitud que llega a AEM Sites o a cualquier sistema de almacenamiento en caché proporcionado por el cliente, como una red de entrega de contenido, para entregar contenido o datos en formato de HTML como una vista de página o en formato JSON como una llamada de API.
 
-Se cuenta una solicitud de contenido por cada vista de página o por cada cinco llamadas a la API, medidas a la entrada del primer sistema de almacenamiento en caché que recibe una solicitud de contenido.
+Se cuenta una solicitud de contenido por cada vista de página o por cada cinco llamadas a la API, medidas a la entrada del primer sistema de almacenamiento en caché que recibe una solicitud de contenido. Las solicitudes de contenido se cuentan únicamente en los entornos de producción.
 
 Las solicitudes de contenido excluyen las solicitudes o actividades iniciadas por o en nombre del Adobe con el único propósito de proporcionar productos y servicios. También se excluye el tráfico de agentes de usuario identificados por Adobe de bots, rastreadores y arañas de Web relacionadas con motores de búsqueda y servicios de medios sociales comunes.
 
 ### ¿Cómo mide Adobe Experience Manager las solicitudes de contenido? {#how-are-content-requests-measured}
 
-El seguimiento de las solicitudes de contenido se realiza en el servidor desde Cloud Service. La CDN integrada en AEM as a Cloud Service rastrea solicitudes de HTML y JSON válidas. AEM también dispone de reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
+Las solicitudes de contenido se rastrean en los servidores Edge de AEM as a Cloud Service. El tráfico de origen no se cuenta para las solicitudes de contenido. La CDN integrada en AEM as a Cloud Service rastrea solicitudes de HTML y JSON válidas.
+
+AEM también dispone de reglas para excluir bots conocidos, incluidos servicios bien conocidos que visitan el sitio regularmente para actualizar su índice de búsqueda o servicio.
 
 La siguiente es una lista no exhaustiva de ejemplos de servicios bien conocidos excluidos.
 
