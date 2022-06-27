@@ -3,9 +3,9 @@ title: Configuración del Cloud Service de Dynamic Media
 description: Obtenga información sobre cómo configurar Dynamic Media en Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3574'
 ht-degree: 3%
 
 ---
@@ -272,6 +272,9 @@ Consulte [Cargar recursos](/help/assets/add-assets.md).
 
 1. Inicie sesión en su Experience Manager as a Cloud Service como administrador del producto.
 1. En Experience Manager as a Cloud Service , seleccione el logotipo as a Cloud Service del Experience Manager para acceder a la consola de navegación global y, a continuación, vaya a **[!UICONTROL General > CRXDE Lite]**.
+
+   Si no tiene acceso al CRXDE Lite, consulte [Uso del CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. En el carril izquierdo, vaya a lo siguiente:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
 1. Vuelva a la ficha del explorador que tiene la consola as a Cloud Service del Experience Manager abierta.
 1. Desde el Experience Manager as a Cloud Service, vaya a **[!UICONTROL Herramientas > General > CRXDE Lite]**.
+
+   Si no tiene acceso al CRXDE Lite, consulte [Uso del CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![Herramientas > General > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 >[!NOTE]
 >
 >Debe iniciar sesión en el Experience Manager as a Cloud Service como administrador del producto para completar esta tarea.
+
+Si no tiene acceso a OSGi, consulte [Configuración de OSGi](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **Para actualizar los subprocesos de trabajo predefinidos de la cola de flujo de trabajo de Granite (recursos de vídeo):**
 
