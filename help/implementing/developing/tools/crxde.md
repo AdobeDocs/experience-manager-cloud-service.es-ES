@@ -2,7 +2,7 @@
 title: Uso del CRXDE Lite
 description: CRXDE Lite es parte del inicio rápido AEM y está disponible para que acceda y modifique el repositorio en los entornos de desarrollo local dentro del explorador.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
+source-git-commit: a9c646d24378e67df84c00a4355c692cac85e50b
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 3%
@@ -94,7 +94,7 @@ Para poder ver la información de control de acceso, el usuario que ha iniciado 
 
 La variable **Pestaña Replicación** muestra el estado de replicación del nodo actual. Puede replicar y replicar la eliminación del nodo actual.
 
-###  Ficha Consola {#console-tab}
+### Ficha Consola {#console-tab}
 
 La variable **Ficha Consola** muestra los mensajes de &quot;logs&quot;. Puede configurar el nivel de registro, borrar la consola, fijar en la posición de desplazamiento seleccionada y activar o desactivar la visualización de los mensajes.
 
