@@ -4,9 +4,9 @@ description: Agregue los recursos digitales a [!DNL Adobe Experience Manager] co
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
+source-wordcount: '3029'
 ht-degree: 1%
 
 ---
@@ -155,6 +155,11 @@ Se requiere una cuenta de almacenamiento externa o un compartimento de Azure o A
 >
 >Cree el contenedor o el compartimento de la cuenta de almacenamiento como privado y acepte conexiones solo desde solicitudes autorizadas. Sin embargo, no se admiten restricciones adicionales en las conexiones de red de ingreso.
 
+>[!NOTE]
+>
+>Las cuentas de almacenamiento externas pueden tener reglas de nombre de archivo/carpeta diferentes a las de la herramienta de importación masiva. Consulte [Administración de nombres de archivo durante la importación masiva](#filename-handling-bulkimport) para obtener más información sobre nombres no permitidos o escapados.
+
+
 ### Configuración de la herramienta de importación masiva {#configure-bulk-ingestor-tool}
 
 Para configurar la herramienta Importación masiva, siga estos pasos:
@@ -216,6 +221,15 @@ Seleccione la configuración y haga clic en **[!UICONTROL Ensayo]** para invocar
 Cuando se importan recursos o carpetas de forma masiva, [!DNL Experience Manager Assets] importa toda la estructura de lo que existe en el origen de importación. [!DNL Experience Manager] sigue las reglas incorporadas para caracteres especiales en los nombres de recursos y carpetas, por lo que estos nombres de archivo deben eliminarse. Tanto para el nombre de la carpeta como para el nombre del recurso, el título definido por el usuario permanece sin cambios y se almacena en `jcr:title`.
 
 Durante la importación masiva, [!DNL Experience Manager] busque las carpetas existentes para evitar la reimportación de los recursos y las carpetas, y también verifique las reglas de limpieza aplicadas en la carpeta principal donde se realiza la importación. Si las reglas de saneamiento se aplican a la carpeta principal, se aplican las mismas reglas al origen de importación. Para las nuevas importaciones, se aplican las siguientes reglas de saneamiento para administrar los nombres de archivo de los recursos y carpetas.
+
+**Nombres no permitidos en la importación masiva**
+
+No se permiten los siguientes caracteres en los nombres de archivo y carpeta:
+
+* Caracteres de control y uso privado (0x00 a 0x1F, \u0081, \uE000)
+* Nombres de archivo o carpeta que terminan con un punto (.)
+
+Los archivos o carpetas con nombres que coincidan con estas condiciones se omiten durante el proceso de importación y se marcan como fallidos.
 
 **Gestión del nombre del recurso en la importación masiva**
 
@@ -380,7 +394,7 @@ Se proporcionan detalles técnicos sobre las API de carga y el protocolo, así c
 >[!MORELIKETHIS]
 >
 >* Aplicación de escritorio de [[!DNL Adobe Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
->* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Acerca de [!DNL Adobe Asset Link]](https://www.adobe.com/es/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] documentación.](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Referencia técnica para la carga de recursos](developer-reference-material-apis.md#asset-upload)
 
