@@ -4,9 +4,9 @@ description: Aprenda a invalidar el contenido almacenado en caché de la CDN (re
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1384'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,20 @@ La red de distribución de contenido (CDN) almacena en caché los recursos de Dy
 
 >[!NOTE]
 >
->Esta función requiere que utilice la CDN predeterminada incluida con Adobe Experience Manager Dynamic Media. Esta función no admite ninguna otra CDN personalizada.
+>Esta función requiere que utilice la CDN empaquetada en Adobe que viene con Adobe Experience Manager Dynamic Media. Esta función no admite ninguna otra CDN personalizada.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+Si ha activado [Imágenes inteligentes](/help/assets/dynamic-media/imaging-faq.md) en su cuenta y está utilizando la CDN empaquetada en Adobe, puede purgar todas las direcciones URL con diferentes cadenas de consulta depurando la URL base única.
+
+Por ejemplo, invalidar `https://weekendsite.scene7.com/is/image/grundfos/image`, también invalida las siguientes direcciones URL:
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* y así sucesivamente.
+
+Sin embargo, esta invalidación no es el caso de los dominios genéricos que no admiten imágenes inteligentes, como `s7d1.scene7.com`. Estos dominios aún necesitan la dirección URL completa para que la invalidación funcione correctamente.
 
 **Para invalidar la caché de CDN mediante Dynamic Media:**
 
