@@ -2,10 +2,10 @@
 title: Problemas conocidos
 description: Problemas conocidos con Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,16 @@ Este artículo enumera los problemas conocidos de la oferta de [!DNL Adobe Exper
 
 <!-- 
 ## Platform {#platform}
+-->
 
 ## Sites {#sites}
--->
+
+Algunos problemas conocidos en [!DNL Sites] son los siguientes:
+
+* En el IDE de GraphQL puede [administrar la caché para las consultas persistentes](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * En el primer guardado, los valores guardados para los encabezados se establecen en `0` (en lugar de los valores predeterminados): si el usuario no ha cambiado esos valores en el cuadro de diálogo.
+   * En los siguientes guardados, los valores se guardan correctamente.
+   * Por lo tanto, el usuario debe guardar los encabezados dos veces.
 
 ## [!DNL Assets] {#assets}
 

@@ -2,9 +2,9 @@
 title: Replicación
 description: Distribución y resolución de problemas de replicación.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
+source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1216'
 ht-degree: 4%
 
 ---
@@ -40,25 +40,6 @@ Administrar publicación ofrece más opciones que Publicación rápida, pues pe
 Si se incluyen los elementos secundarios de una carpeta para la opción &quot;publicar más tarde&quot;, se invocará el flujo de trabajo Publicar árbol de contenido , descrito en este artículo.
 
 Puede encontrar información más detallada sobre Administrar publicación en el [Documentación de aspectos básicos de la publicación](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication).
-
-### Activación de árbol {#tree-activation}
-
->[!NOTE]
->
->Este enfoque debe considerarse obsoleto y se eliminará el 30 de septiembre de 2021 o después, ya que no mantiene los estados y es menos escalable que otros enfoques. La recomendación del Adobe es utilizar en su lugar los métodos de gestión de publicación o flujo de trabajo
-
-Para realizar una activación de árbol:
-
-1. En el menú Inicio de AEM, vaya a **Herramientas > Implementación > Distribución**
-2. Seleccione la tarjeta **publicar**
-3. Una vez en la interfaz de usuario de la consola web de publicación, **seleccione Distribuir**
-
-   ![Distribuir](assets/publish-distribute.png "Distribuir")
-4. Seleccione la ruta en el navegador de rutas, elija añadir un nodo, árbol o eliminar según sea necesario y seleccione **Submit**
-
-Para obtener el mejor rendimiento, siga estas directrices al utilizar esta función:
-* Se recomienda duplicar menos de 100 rutas a la vez, con un límite de 500 rutas.
-* El tamaño total del contenido replicado debe ser inferior a 10 MB. Esto solo incluye los nodos y las propiedades, pero no cualquier binario, que incluya paquetes de flujo de trabajo y paquetes de contenido.
 
 ### documentación Flujo de trabajo del árbol de contenido {#publish-content-tree-workflow}
 
@@ -133,7 +114,7 @@ El flujo de trabajo procesa el contenido en fragmentos, cada uno de los cuales r
 
 ### API de replicación {#replication-api}
 
-Puede publicar contenido mediante la API de replicación incluida en AEM as a Cloud Service.
+Puede publicar contenido mediante la API de replicación que aparece en AEM as a Cloud Service.
 
 Para obtener más información, consulte la [Documentación de API](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html).
 
@@ -192,9 +173,12 @@ Si no proporciona dicho filtro y solo utiliza el agente &quot;publicar&quot;, no
 El conjunto `ReplicationStatus` de un recurso solo se modifica si la acción de replicación incluye al menos un agente activo de forma predeterminada. En el ejemplo anterior, este no es el caso, ya que la replicación está utilizando el agente de &quot;vista previa&quot;. Por lo tanto, debe utilizar el nuevo `getStatusForAgent()` , que permite consultar el estado de un agente específico. Este método también funciona para el agente &quot;publicar&quot;. Devuelve un valor no nulo si se ha realizado alguna acción de replicación con el agente proporcionado.
 
 
-**Ruta de acceso y límites de tamaño de la API de replicación**
+**Límites de capacidad de la API de replicación**
 
-Se recomienda duplicar menos de 100 rutas, siendo 500 el límite duro. Por encima del límite estricto, se lanzará una ReplicationException. Si la lógica de su aplicación no requiere replicación atómica, este límite se puede superar estableciendo ReplicationOptions.setUseAtomicCalls en false, que aceptará cualquier cantidad de rutas, pero creará bloques internamente para permanecer por debajo de este límite. La cantidad de contenido transmitido por llamada de replicación no debe superar los 10 MB, lo que incluye los nodos y las propiedades, pero no ningún binario (los paquetes de flujo de trabajo y los paquetes de contenido se consideran binarios).
+Se recomienda duplicar menos de 100 rutas a la vez, siendo 500 el límite estricto. Por encima del límite duro, una `ReplicationException` será arrojado.
+Si la lógica de la aplicación no requiere replicación atómica, este límite se puede superar configurando la variable `ReplicationOptions.setUseAtomicCalls` como false, que acepta cualquier cantidad de rutas, pero crea bloques internamente para permanecer por debajo de este límite.
+
+El tamaño del contenido transmitido por llamada de replicación no debe superar `10 MB`. Esto incluye los nodos y las propiedades, pero no ningún binario (los paquetes de flujo de trabajo y los paquetes de contenido se consideran binarios).
 
 ## Solución de problemas {#troubleshooting}
 

@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Aprenda a hacer que persistan las consultas de GraphQL en Adobe Experience Manager as a Cloud Service para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método HTTP GET y la respuesta se puede almacenar en caché en las capas de Dispatcher y la red de distribución de contenido (CDN), lo que a la larga mejora el rendimiento de las aplicaciones cliente.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 47%
+source-wordcount: '1311'
+ht-degree: 48%
 
 ---
 
@@ -55,7 +55,7 @@ Se recomienda mantener las consultas en un entorno de creación de AEM primero, 
 
 Existen varios métodos para hacer que persistan las consultas, entre los que se incluyen los siguientes:
 
-* GraphiQL IDE: consulte [Guardar consultas persistentes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (método preferido)
+* GraphiQL IDE: consulte [Guardar consultas persistentes](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (método preferido)
 * curl: consulte el siguiente ejemplo
 * Otras herramientas, incluido [Postman](https://www.postman.com/)
 
@@ -258,6 +258,45 @@ Esta consulta se puede mantener en una ruta `wknd/adventures-by-activity`. Para 
 ```
 
 Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codificación para `=`. Las variables de consulta y los caracteres especiales deben ser [codificado correctamente](#encoding-query-url) para que se ejecute la consulta persistente.
+
+## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
+
+Se recomiendan las consultas persistentes, ya que se pueden almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de la aplicación cliente solicitante.
+
+De forma predeterminada, AEM invalidará la caché de la red de entrega de contenido (CDN) en función de un tiempo de vida predeterminado (TTL).
+
+Este valor se establece en lo siguiente:
+
+* 7200 segundos es el TTL predeterminado para Dispatcher y CDN; también conocido como *cachés compartidas*
+   * predeterminado: s-maxage=7200
+* 60 es el TTL predeterminado para el cliente (por ejemplo, un explorador)
+   * default: maxage=60
+
+Si desea cambiar el TTL para la consulta de GraphLQ, la consulta debe ser:
+
+* persistió después de administrar la variable [Encabezados de caché HTTP: desde el IDE de GraphQL](#http-cache-headers)
+* persistió usando la variable [método de API](#cache-api).
+
+### Administración de encabezados de caché HTTP en GraphQL  {#http-cache-headers-graphql}
+
+El IDE de GraphiQL: consulte [Guardar consultas persistentes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### Administración de caché desde la API {#cache-api}
+
+Esto implica publicar la consulta en AEM usando CURL en la interfaz de línea de comandos.
+
+Por ejemplo:
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+El `cache-control` se puede configurar en el momento de la creación (PUT) o más tarde (por ejemplo, mediante una petición POST). El control de caché es opcional al crear la consulta persistente, ya que AEM puede proporcionar el valor predeterminado. Consulte [Conservación de una consulta de GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query) para ver un ejemplo de persistencia de una consulta utilizando curl.
 
 ## Codificación de la URL de consulta para su uso en una aplicación {#encoding-query-url}
 
