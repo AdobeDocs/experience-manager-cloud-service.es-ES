@@ -3,7 +3,7 @@ title: Consideraciones de permisos para contenido sin encabezado
 description: Obtenga información acerca de diferentes consideraciones de permisos y ACL para una implementación sin encabezado con Adobe Experience Manager. Comprenda los diferentes perfiles y los niveles de permisos potenciales necesarios para los entornos de creación y publicación.
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 100%
@@ -54,7 +54,7 @@ Se recomienda no modificar directamente los permisos de un grupo predeterminado.
 
 Para obtener permisos más granulares, utilice la consola **Permisos** en AEM y actualice la ruta de `/content/dam` a una ruta más específica, como `/content/dam/mycontentfragments`.
 
-Puede ser deseable conceder a este grupo de usuarios permisos para crear y editar fragmentos de contenido, pero no para eliminarlos. Para revisar y asignar permisos de edición, pero no para eliminar, consulte [Fragmentos de contenido: eliminar consideraciones](/help/assets/content-fragments/content-fragments-delete.md).
+Puede ser deseable conceder a este grupo de usuarios permisos para crear y editar fragmentos de contenido, pero no para eliminarlos. Para revisar y asignar permisos de edición, pero no para eliminar, consulte [Fragmentos de contenido: eliminar consideraciones](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md).
 
 ### Editores de modelos
 

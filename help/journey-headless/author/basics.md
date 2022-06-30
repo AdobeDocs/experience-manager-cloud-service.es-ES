@@ -2,9 +2,9 @@
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante fragmentos de contenido.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1668'
 ht-degree: 5%
 
 ---
@@ -53,38 +53,68 @@ Su cuenta se habrá configurado con los privilegios que necesite. Si tiene algú
 
 La primera vez que inicie sesión en un pequeño tutorial en línea resaltará algunas de las funciones principales de la interfaz de usuario.
 
-A continuación, puede utilizar el panel de navegación para acceder a áreas clave de AEM. Para los fragmentos de contenido se utilizará la variable **Consola Recursos**.
+A continuación, puede utilizar el panel de navegación para acceder a áreas clave de AEM. Para los fragmentos de contenido se utilizará la variable **Fragmentos de contenido** consola (para algunas acciones, también utilizará la variable **Recursos** consola).
 
-El panel de navegación se puede abrir seleccionando el icono de Adobe en la parte superior izquierda, seguido del icono de la pequeña brújula:
+El panel de navegación se puede abrir seleccionando el icono de Adobe en la parte superior izquierda, seguido del icono de pequeña brújula.
 
-![Panel de navegación](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+<!--
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
+
+![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
+-->
 
 >[!NOTE]
->Aunque los fragmentos de contenido son una característica de AEM **Sitios**, se encuentran en la variable **Recursos** consola. Se trata de un detalle técnico que no debería afectarle, pero que podría ser útil conocer.
+>Aunque los fragmentos de contenido son una característica de AEM **Sitios**, se guardan como **Recursos**. Se trata de un detalle técnico que no debería afectarle, pero que podría ser útil conocer.
 
-Dentro de la consola, puede seleccionar carpetas para desplazarse hasta el fragmento de contenido o las rutas de exploración (en el encabezado) para volver al árbol.
+En la consola, puede seleccionar carpetas en el panel izquierdo para desplazarse hasta el fragmento de contenido. También puede filtrar o buscar.
 
-![Rutas de exploración](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
+![Consola Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/assets/cfc-console-filter.png)
 
 ### Acciones, Seleccionar, Ver {#actions-selecting-viewing}
 
-La variable **Recursos** console ha dedicado **Barras de herramientas de acción** y **Acciones rápidas** que puede utilizar después de seleccionar un recurso (por ejemplo, una carpeta o un fragmento de contenido).
+En el **Fragmentos de contenido** para sus fragmentos de contenido desde la barra de herramientas:
 
-Las Acciones rápidas están disponibles para un único recurso, consulte **Basilea** en el ejemplo siguiente:
+<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
-![Acciones rápidas   ](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+* **Abrir en Assets**
+* **Crear**
+* La variable **Referenciado por** también proporciona un vínculo directo para mostrar todas las referencias principales de ese fragmento; incluida la referencia a fragmentos de contenido, fragmentos de experiencias y páginas.
+* Al pasar el ratón por encima del nombre de la carpeta, se mostrará la ruta JCR.
 
-La barra de herramientas Acciones proporciona acceso a toda la gama de acciones aplicables al escenario actual. Las acciones disponibles pueden cambiar; por ejemplo, en función de su ubicación o de si ha seleccionado varios recursos:
+Después de seleccionar el fragmento, están disponibles todas las acciones apropiadas:
 
-![Barra de herramientas de acciones](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-Puede seleccionar el formato para ver los recursos con el Selector de vista:
+* **Abra**
+* **Publicación** (y **Cancelar la publicación**)
+* **Copiar**
+* **Mover**
+* **Cambiar nombre**
+* **Eliminar**
 
-![Selector de vista](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+>[!NOTE]
+>
+>Acciones como Publicar, Cancelar la publicación, Eliminar, Mover, Cambiar el nombre, Copiar, déclencheur de un trabajo asincrónico. El progreso de ese trabajo se puede monitorizar a través de la interfaz de usuario de trabajos asincrónicos de AEM.
 
-Puede ver información adicional sobre los elementos usando el Selector de raíl. Esto también proporciona acceso a acciones adicionales.
+<!--
+The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
 
-![Carril izquierdo](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+The Quick Actions are available for a single resource, see **Basel** in the example below:
+
+![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
+
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
+
+![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
+
+You can select the format for viewing your resources with the View Selector:
+
+![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
+
+![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
+-->
 
 ## Creación de fragmentos de contenido {#authoring-content-fragments}
 
@@ -98,7 +128,7 @@ A menos que tenga muy pocos fragmentos de contenido, querrá organizarlos para q
 
 #### Creación de una carpeta {#creating-folder}
 
-Puede hacerlo creando una serie de carpetas dentro de **Archivos** de la consola Recursos. Seleccione el **Crear** (parte superior derecha), seguido de **Carpeta**:
+Puede hacerlo creando una serie de carpetas dentro de **Archivos** de la sección **Recursos** consola. Seleccione el **Crear** (parte superior derecha), seguido de **Carpeta**:
 
 ![Opción Crear carpeta](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -136,23 +166,39 @@ Probablemente se le dará una carpeta inicial donde puede crear sus carpetas. Es
 
 ### Creación de un fragmento de contenido {#creating-fragment}
 
-La creación de un fragmento de contenido es muy similar: solo tiene que usar la variable **Fragmento de contenido** en su lugar:
+En el **Fragmentos de contenido** consola, puede usar **Crear** para abrir el **Nuevo fragmento de contenido** diálogo:
 
-![Opción Crear fragmento de contenido](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![Consola Fragmentos de contenido: Creación de un nuevo fragmento](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-Esta vez se abre un asistente. El primer paso es seleccionar el modelo de fragmento de contenido en el que se basará el fragmento:
+Especifique el:
 
-![Crear fragmento de contenido: seleccione Modelo](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+* **Ubicación**
+* **Modelo de fragmento de contenido**
+* **Título**
+* **Nombre**
+* **Descripción**
 
-Después de continuar con **Siguiente** puede proporcionar los detalles (**Básico** y **Avanzadas**) del fragmento:
+A continuación, confirme con: **Crear** o **Crear y abrir**.
 
-![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+<!--
+Creating a Content Fragment is very similar - you just use the **Content Fragment** option instead:
 
-Confirme con **Crear** y entonces puede **Apertura** el fragmento en el editor.
+![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+
+![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+
+After continuing with **Next** you can supply the details (**Basic** and **Advanced**) for your fragment:
+
+![Create Content Fragment - provide Name](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+Confirm with **Create** and you can then **Open** your fragment in the editor.
+-->
 
 ### Edición de un fragmento {#editing-fragment}
 
-Puede abrir un fragmento inmediatamente después de crearlo o seleccionarlo en la consola Recursos.
+Puede abrir un fragmento inmediatamente después de crearlo o seleccionarlo en la consola Fragmentos de contenido (también desde la consola Recursos).
 
 Cuando se abra el editor por primera vez, verá:
 
@@ -217,7 +263,7 @@ Los modelos de fragmento de contenido son vitales para los fragmentos de conteni
 
 Una vez completado el fragmento, puede **Publicación** para que esté disponible para las aplicaciones sin encabezado.
 
-Las acciones de publicación están disponibles en el editor (o en la barra de herramientas del **Recursos** consola):
+Las acciones de publicación están disponibles en el editor (o en la barra de herramientas de **Fragmentos de contenido** o **Recursos** consola):
 
 ![Editor de fragmentos de contenido: Mi fragmento](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -249,22 +295,22 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtenga información so
 
       * [Administrar publicación](/help/assets/manage-publication.md#manage-publication)
 
-* [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
+* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Administrar fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Administrar fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Aplicar la configuración a la carpeta de recursos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Aplicar la configuración a la carpeta de recursos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creación de un fragmento de contenido](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variaciones: creación de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Creación de un fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variaciones: creación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modelos de fragmento de contenido: tipos de datos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modelos de fragmento de contenido: propiedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
-      * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * Guías de introducción

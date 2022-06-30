@@ -2,10 +2,10 @@
 title: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 14%
+source-wordcount: '241'
+ht-degree: 15%
 
 ---
 
@@ -28,7 +28,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo usar m
 
 Hay tres métodos que puede utilizar para agregar metadatos y etiquetas:
 
-* Al crear el fragmento por primera vez:
+* Al crear el fragmento por primera vez (desde el **Recursos** consola):
 
    ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ Ahora puede poner todo este conocimiento en uso y empezar a crear fragmentos de 
 
 ## Recursos adicionales {#additional-resources}
 
-* [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metadatos: Propiedades del fragmento](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Uso de etiquetas](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

@@ -4,9 +4,9 @@ description: Aprenda a utilizar la consola Recursos para administrar los fragmen
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1778'
 ht-degree: 9%
 
 ---
@@ -37,7 +37,7 @@ La variable [Editor de fragmentos de contenido](#opening-the-fragment-editor) pr
 
 >[!NOTE]
 >
->Los fragmentos de contenido se almacenan como **Recursos**, por lo que se administran principalmente desde la variable **Recursos** consola.
+>Los fragmentos de contenido se almacenan como **Recursos**. Ahora se administran principalmente con la variable **[Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** aunque se pueden administrar desde la **Recursos** consola. Esta sección cubre la administración desde **Recursos** consola.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 

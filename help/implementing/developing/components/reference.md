@@ -2,7 +2,7 @@
 title: Guía de referencia de componentes
 description: Una guía de referencia para desarrolladores sobre los detalles de los componentes y su estructura
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Guía de referencia de componentes {#components-reference-guide}
 
-Los componentes son la base de la creación de una experiencia en AEM. La variable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) simplifique la introducción de un conjunto de herramientas de componentes sólidos y listos para usar. La variable [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) lleva al desarrollador a través de cómo utilizar estas herramientas y cómo crear componentes personalizados para crear un nuevo sitio AEM.
+Los componentes son la base de la creación de una experiencia en AEM. La variable [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) simplifique la introducción de un conjunto de herramientas de componentes sólidos y listos para usar. La variable [Tutorial de WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) lleva al desarrollador a través de cómo utilizar estas herramientas y cómo crear componentes personalizados para crear un nuevo sitio AEM.
 
 >[!TIP]
 >
@@ -474,4 +474,4 @@ Este marcador se muestra en la sección [Consola Componente.](/help/sites-cloud/
 
 ![README.md visible en la consola Componentes](assets/components-documentation-console.png)
 
-El margen admitido es el mismo que para [fragmentos de contenido.](/help/assets/content-fragments/content-fragments.md)
+El margen admitido es el mismo que para [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md).

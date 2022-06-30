@@ -2,7 +2,7 @@
 title: Introducción a AEM Headless as a Cloud Service
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, obtenga información sobre AEM requisitos previos sin encabezado.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 4%
@@ -285,8 +285,8 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo remo
 * [Convenciones de nomenclatura](/help/implementing/developing/introduction/naming-conventions.md) - Documentación técnica de las restricciones de nomenclatura de páginas en AEM
 * [Traducción y administrador de varios sitios](/help/sites-cloud/administering/msm-and-translation.md) - Documentación técnica sobre AEM potentes funciones de traducción
 * [AEM flujos de trabajo](/help/sites-cloud/authoring/workflows/overview.md) : Documentación técnica sobre cómo automatizar flujos de trabajo en AEM
-* [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) : Documentación técnica para fragmentos de contenido.
-* [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) : Documentación técnica para modelos de fragmento de contenido.
+* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) : Documentación técnica para fragmentos de contenido.
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) : Documentación técnica para modelos de fragmento de contenido.
 * [Documentación técnica de GraphQL](https://graphql.org) - La definición de GraphQL (vínculo externo)
 * [API de GraphQL](/help/headless/graphql-api/content-fragments.md) : Documentación técnica que explica cómo crear solicitudes para acceder y enviar fragmentos de contenido
 * [API de REST de recursos](/help/assets/content-fragments/assets-api-content-fragments.md) : Documentación técnica que explica cómo crear y modificar fragmentos de contenido (y otros recursos)

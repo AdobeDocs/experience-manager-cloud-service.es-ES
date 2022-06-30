@@ -4,7 +4,7 @@ description: Aprenda a configurar el marco de integración de traducción para i
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 2%
@@ -109,7 +109,7 @@ Las propiedades de recursos controlan cómo configurar los recursos. Para obtene
 | Traducir etiquetas | Active esta propiedad para traducir las etiquetas asociadas al recurso. |
 | Ejecución automática de la traducción | Seleccione esta propiedad para ejecutar los trabajos de traducción automáticamente después de crear los proyectos de traducción. No tiene la oportunidad de revisar o ampliar el ámbito del trabajo de traducción cuando selecciona esta opción. |
 | Deshabilitar traducción de solo actualización | Cuando se marca esta opción, actualizar el proyecto de traducción envía todos los campos traducibles para su traducción, no solo los modificados desde la última traducción. |
-| Habilitar campos del modelo de contenido para su traducción | Al habilitar esta opción, se utilizará la variable **Translatable** campo en [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md#properties) para determinar si el campo está traducido y crea automáticamente [reglas de traducción](rules.md) en consecuencia. Esta opción reemplaza las reglas de traducción que pueda haber creado. |
+| Habilitar campos del modelo de contenido para su traducción | Al habilitar esta opción, se utilizará la variable **Translatable** campo en [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) para determinar si el campo está traducido y crea automáticamente [reglas de traducción](rules.md) en consecuencia. Esta opción reemplaza las reglas de traducción que pueda haber creado. |
 
 ## Configuración de páginas para traducción {#configuring-pages-for-translation}
 

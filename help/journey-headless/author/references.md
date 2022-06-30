@@ -2,10 +2,10 @@
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para contenido, otros fragmentos y otros recursos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -96,7 +96,7 @@ Al usar la variable **Árbol de estructura** del Editor de fragmentos de conteni
 >
 >Con las rutas de exploración del panel principal, puede volver al punto de inicio.
 
-![Árbol de estructura de fragmento de contenido](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Árbol de estructura de fragmento de contenido](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Referencias Ad Hoc {#adhoc-references}
 
@@ -110,20 +110,20 @@ Ahora que ha aprendido sobre referencias y estructura en fragmentos de contenido
 
 ## Recursos adicionales {#additional-resources}
 
-* [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
+* [Trabajar con fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Administrar fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Administrar fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Aplicar la configuración a la carpeta de recursos](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Aplicar la configuración a la carpeta de recursos](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creación de un fragmento de contenido](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variaciones: creación de fragmentos de contenido](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Creación de un fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variaciones: creación de fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Modelos de fragmento de contenido: tipos de datos](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modelos de fragmento de contenido: tipos de datos](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelos de fragmento de contenido: propiedades](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modelos de fragmento de contenido: propiedades](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 
 * Guías de introducción

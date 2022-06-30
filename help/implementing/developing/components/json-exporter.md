@@ -2,10 +2,10 @@
 title: Exportador JSON para servicios de contenido
 description: Los servicios de contenido de AEM están diseñados para generalizar la descripción y el envío de contenido desde o hacia AEM más allá del enfoque en las páginas web. Proporcionan la entrega de contenido a canales que no son páginas web AEM tradicionales, utilizando métodos estandarizados que cualquier cliente puede consumir.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 11%
+source-wordcount: '404'
+ht-degree: 12%
 
 ---
 
@@ -67,7 +67,7 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
 ### Información adicional {#further-information}
 
-Consulte también:
+Consulte también lo siguiente:
 
 * API de HTTP de Assets
    * [API de HTTP de Assets](/help/assets/developer-reference-material-apis.md)
@@ -80,7 +80,7 @@ Consulte también:
 
 Para obtener más información, consulte:
 
-* [Fragmentos de contenido en la guía de usuario de Assets](/help/assets/content-fragments/content-fragments.md)
-* [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+* [Modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Componente Fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es)

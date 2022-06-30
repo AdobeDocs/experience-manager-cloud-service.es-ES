@@ -2,10 +2,10 @@
 title: 'Opcional: Cómo crear aplicaciones de una sola página (SPA) con AEM'
 description: En esta continuación opcional del Recorrido para desarrolladores sin encabezado de AEM, aprenderá cómo AEM combinar la entrega sin encabezado con las funciones tradicionales de CMS de pila completa y cómo puede crear SPA editables con AEM marco de edición de SPA.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -126,5 +126,5 @@ A continuación se muestran algunos recursos adicionales que profundizan en algu
 * [Información general del Editor de SPA](/help/implementing/developing/hybrid/editor-overview.md) - Detalles del funcionamiento del SPA Editor
 * [Renderización del servidor](/help/implementing/developing/hybrid/ssr.md) - Cómo configurar SSR para AEM SPA
 * [Documentos de referencia SPA](/help/implementing/developing/hybrid/reference-materials.md) : Referencias de la API de JavaScript y vínculos a los proyectos de código abierto AEM SPA proyectos de GitHub
-* [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) - Cómo crear fragmentos de contenido
-* [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Plantilla Maven que crea un proyecto mínimo de Adobe Experience Manager (AEM) basado en las prácticas recomendadas como punto de partida para su sitio web
+* [Fragmentos de contenido](/help/sites-cloud/administering/content-fragments/content-fragments.md) - Cómo crear fragmentos de contenido
+* [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) - Plantilla Maven que crea un proyecto mínimo de Adobe Experience Manager (AEM) basado en las prácticas recomendadas como punto de partida para su sitio web

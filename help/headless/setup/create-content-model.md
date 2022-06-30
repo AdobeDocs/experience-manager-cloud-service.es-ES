@@ -2,10 +2,10 @@
 title: 'Creación de modelos de fragmentos de contenido: configuración sin encabezado'
 description: Defina la estructura del contenido que creará y servirá con las capacidades sin encabezado de AEM mediante modelos de fragmentos de contenido.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '492'
+ht-degree: 96%
 
 ---
 
@@ -69,4 +69,4 @@ Ahora que ya ha definido las estructuras de los fragmentos de contenido creando 
 
 >[!TIP]
 >
->Para obtener información detallada acerca de los modelos de fragmento de contenido, consulte la [Documentación de modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
+>Para obtener información detallada acerca de los modelos de fragmento de contenido, consulte la [Documentación de modelos de fragmento de contenido](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
