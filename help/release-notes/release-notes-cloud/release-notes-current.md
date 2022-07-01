@@ -3,10 +3,10 @@ title: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Clo
 description: Notas de la versión actuales de [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 17%
+source-wordcount: '639'
+ht-degree: 18%
 
 ---
 
@@ -95,8 +95,6 @@ Experience Manager Assets utiliza las capacidades de Adobe Sensei AI ahora [dist
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Novedades {#what-is-new-foundation}
-
-* AEM as a Cloud Service está ahora integrado con Unified Shell para mejorar la experiencia del usuario y unificarlo con todas las demás aplicaciones de Experience Cloud. Consulte [AEM as a Cloud Service en el shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obtener más información.
 
 * Como se menciona en las notas de la versión de mayo (2022.5.0), la opción &quot;Agregar árbol&quot; en la pantalla del administrador del agente de replicación **Distribuir** se ha eliminado. Los paquetes con una jerarquía de contenido de árbol deben replicarse usando [Administrar publicación](/help/operations/replication.md#manage-publication) o [Árbol de contenido de publicación](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) flujo de trabajo.
 
