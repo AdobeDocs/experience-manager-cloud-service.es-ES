@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6340'
+source-wordcount: '6351'
 ht-degree: 0%
 
 ---
@@ -81,8 +81,8 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 * **Comienza con**
 * **Finaliza con**
 * **Contiene**
-* **Is Empty**
-* **Is Not Empty**
+* **está vacío**
+* **No está vacío**
 * **Tiene seleccionado:** Devuelve el valor verdadero cuando el usuario selecciona una opción concreta para un botón de casilla de verificación, desplegable o radio.
 * **Está Inicializado (evento):** Devuelve el valor verdadero cuando un objeto de formulario se procesa en el explorador.
 * **Se ha cambiado (evento):** Devuelve el valor verdadero cuando el usuario cambia el valor introducido o la opción seleccionada para un objeto de formulario.
@@ -121,7 +121,7 @@ Por ejemplo, una lista tiene cuatro opciones: Rojo, Azul, Verde y Amarillo. Al c
 
 Al escribir una regla de &quot;Cuando&quot;, puede almacenar en déclencheur el valor de acción Borrar. Borrar valor de la acción borra el valor del objeto especificado. Tener un valor claro de como opción en la instrucción When permite crear condiciones complejas con varios campos.
 
-![Borrar valor de](assets/clearvalueof.png)
+![Borrar el valor de](assets/clearvalueof.png)
 
 **[!UICONTROL Ocultar]** Oculta el objeto especificado.
 
@@ -531,6 +531,7 @@ Acompañante `jsdoc` es obligatorio:
 * Si desea una configuración y descripción personalizadas
 * Porque hay varias formas de declarar una función en `JavaScript,` Los comentarios y permiten realizar un seguimiento de las funciones.
 
+El editor de reglas admite la sintaxis de JavaScript ES2015 para secuencias de comandos y funciones personalizadas.
 Para obtener más información, consulte [jsdoc.app](https://jsdoc.app/).
 
 Admitido `jsdoc` etiquetas:
