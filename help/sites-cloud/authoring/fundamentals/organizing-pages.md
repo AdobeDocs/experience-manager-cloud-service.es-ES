@@ -3,9 +3,9 @@ title: Crear y organizar páginas
 description: Crear y organizar páginas con AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ En este documento se describe cómo crear y administrar páginas con Adobe Exper
 
 >[!TIP]
 >
->Existen varios [ métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que puede utilizar desde la consola de sitios web, y que le permitirán organizar las páginas de forma más eficaz.
+>Existen varios [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) que puede utilizar desde la consola de sitios web, y que le permitirán organizar las páginas de forma más eficaz.
 
 ## Organizar el sitio web {#organizing-your-website}
 
@@ -92,7 +92,7 @@ El **título** y el **nombre** de la página se pueden crear por separado, pero 
 >
 >Además, recuerde que algunos exploradores (por ejemplo, las versiones anteriores de IE) solo aceptan URL con una longitud determinada, por lo que también existen motivos técnicos para mantener los nombres de las páginas cortos.
 
-Al crear una página nueva, AEM [valide el nombre de página según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuesta por AEM y el JCR.
+Al crear una página nueva, AEM [valida su nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) que establecen tanto AEM como JCR.
 
 El mínimo permitido de caracteres es:
 
@@ -110,18 +110,18 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 #### Título {#title}
 
-Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre**[ de página de esta cadena y lo validará según las convenciones impuestas por AEM y JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
 
 Se acepta un campo de **Título** con caracteres no válidos, pero los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
 | Schön | `schoen.html` |
-| SC%&amp;*ç+ | `sc---c-.html` |
+| SC%&amp;&#42;ç+ | `sc---c-.html` |
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se crea una página, AEM validará el nombre según las convenciones impuestas por AEM y JCR. [](/help/implementing/developing/introduction/naming-conventions.md) No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando AEM detecta caracteres que no son válidos en el campo, se resaltarán con un mensaje explicativo.
+Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando AEM detecta caracteres que no son válidos en el campo, se resaltarán con un mensaje explicativo.
 
 ![Ejemplo de introducción de un nombre de página no válido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -199,7 +199,7 @@ A menos que se hayan creado todas las páginas por adelantado, debe crear una p�
    * **Nombre**:
 
       * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
-      * Al indicar un valor **Nombre**[ cuando se cree una página, AEM validará el nombre según las convenciones impuestas por AEM y JCR.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/implementing/developing/introduction/naming-conventions.md) impuestas por AEM y JCR.
       * No **se pueden enviar caracteres no válidos** desde el campo **Nombre**. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
 
    >[!TIP]
@@ -262,17 +262,17 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
-1. Toque o haga clic en el botón **Pegar** que está disponible.
+1. Pulse o haga clic en el botón **Pegar** que está disponible.
 
    ![Pegar](/help/sites-cloud/authoring/assets/paste.png)
 
-1. El cuadro de diálogo de pegado presenta un resumen de la transacción de pegado y la capacidad de:
-   * **Nuevo nombre del sitio:** Cambiar el nombre de la página pegada
-   * **Pegar sin elementos secundarios:** Omitir las páginas secundarias de la página seleccionada al pegar (de forma predeterminada, las páginas secundarias se pegan)
+1. El cuadro de diálogo de pegado presenta un resumen de la operación de pegado y las capacidades siguientes:
+   * **Nuevo nombre del sitio:** cambie el nombre de la página pegada
+   * **Pegar sin elementos secundarios:** omita las páginas secundarias de la página seleccionada al pegar (de forma predeterminada, se pegan)
 
-   ![Pegar, cuadro de diálogo](/help/sites-cloud/authoring/assets/paste-dialog.png)
+   ![Cuadro de diálogo de pegado](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Toque o haga clic en el botón **Pegar** para confirmar la transacción de pegado y crear las páginas nuevas.
+1. Pulse o haga clic en el botón **Pegar** para confirmar la operación de pegado y crear las páginas nuevas.
 
 >[!NOTE]
 >
@@ -280,11 +280,11 @@ Puede copiar una página y todas sus páginas secundarias en una nueva ubicació
 
 >[!NOTE]
 >
->Si inicia la acción de pegado en el modo de selección, esto se cierra automáticamente en cuanto se copia la página.
+>Si inicia la acción de pegar en el modo de selección, este se abandona automáticamente en cuanto se copia la página.
 
 ### Mover una página o cambiarle el nombre {#moving-or-renaming-a-page}
 
-El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y el asistente para mover páginas controla ambas acciones. Con este asistente puede:
+El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y ambas acciones las controla el asistente para desplazar páginas. Con este asistente puede:
 
 * Cambiar el nombre de una página sin moverla
 * Mover la página sin cambiar su nombre
@@ -361,7 +361,7 @@ AEM le ofrece la funcionalidad de actualizar los vínculos internos que hagan re
 
 >[!NOTE]
 >
->Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability) para obtener más información.
+>Las páginas solo se pueden mover a ubicaciones en las que se permitan las plantillas en las que está basada dicha página. Consulte [Disponibilidad de plantillas](/help/implementing/developing/components/templates.md#template-availability) para obtener más información.
 
 #### Acciones asincrónicas {#asynchronous-actions}
 
