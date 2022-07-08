@@ -2,7 +2,7 @@
 title: Consola Fragmentos de contenido
 description: Obtenga información sobre cómo administrar fragmentos de contenido desde la consola Fragmentos de contenido.
 landing-page-description: Aprenda a administrar fragmentos de contenido desde la consola Fragmentos de contenido, que se centra en el uso de gran volumen de los fragmentos de contenido para casos de uso remoto, pero que también se utiliza al crear páginas.
-source-git-commit: 19ec74f98bf0dedb768db5c4ec7eb6063779b03c
+source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Consola Fragmentos de contenido  {#content-fragments-console}
 
-Descubra cómo la consola Fragmentos de contenido optimiza el acceso a los fragmentos de contenido, lo que le ayuda a crearlos, buscarlos y administrarlos mediante acciones de administración como publicarlos, cancelar la publicación o copiarlos.
+Descubra cómo la consola Fragmentos de contenido optimiza el acceso a los fragmentos de contenido, lo que le ayuda a crearlos, buscarlos y administrarlos mediante acciones administrativas como publicarlos, cancelar la publicación o copiarlos.
 
 La consola Fragmentos de contenido está dedicada a administrar, buscar y crear fragmentos de contenido. Se ha optimizado para su uso en un contexto sin encabezado, pero también se utiliza al crear fragmentos de contenido para su uso en la creación de páginas.
 
