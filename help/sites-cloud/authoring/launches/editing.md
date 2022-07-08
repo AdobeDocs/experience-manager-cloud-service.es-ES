@@ -3,9 +3,9 @@ title: Edición de lanzamientos
 description: Después de crear el lanzamiento para la página (o el conjunto de páginas), se puede editar el contenido de la copia de inicio de las páginas.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede 
 1. Acceda a [Lanzamiento desde las referencias (consola de sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles.
 1. Seleccione **Ir a página** para abrir la página para editarla.
 
-Al editar la página, verá una indicación en la barra de herramientas superior, junto con la variable **Leave** y **Navegar** opciones:
+Al editar la página, verá una indicación en la barra de herramientas superior, junto con las opciones **Salir** y **Navegar**:
 
-![Abandonar y navegar por el inicio desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+![Salir y navegar por el lanzamiento desde el editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
 >[!NOTE]
 >
@@ -31,10 +31,10 @@ Al editar la página, verá una indicación en la barra de herramientas superior
 
 ### Editar páginas de lanzamiento sujetas a Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Si el lanzamiento se basa en un [Live Copy](/help/sites-cloud/administering/msm/overview.md) entonces:
+Si el lanzamiento se basa en una [Live Copy](/help/sites-cloud/administering/msm/overview.md), deberá hacer lo siguiente:
 
-* Consulte símbolos de bloqueo (pequeños candados) cuando edite un componente (contenido y/o propiedades).
-* Consulte la **Live Copy** en **Propiedades de página**
+* Consulte los símbolos de bloqueo (en forma de pequeños candados) cuando edite un componente (contenido o propiedades).
+* Consulte la pestaña **Live Copy** en **Propiedades de página**
 
 Se utiliza una Live Copy para sincronizar contenido *desde* la rama de origen *a* la rama de lanzamiento (para mantener el lanzamiento actualizado con los cambios realizados en la fuente).
 
@@ -49,7 +49,7 @@ Consulte [Cambiar el contenido de una Live Copy](/help/sites-cloud/administering
 
 Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias** y comparar la página de lanzamiento con la página de origen:
 
-1. En el **Sitios** consola, [vaya a las páginas de origen del lanzamiento y seleccione una](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
+1. En la consola **Sitios**, [vaya a la página de origen del lanzamiento y seleccione uno](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el panel **[Referencias](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** y seleccione **Lanzamientos**.
 1. Seleccione un lanzamiento específico y la opción **Comparar con el origen**:
 
@@ -64,7 +64,7 @@ Para rastrear los cambios realizados, puede ver el lanzamiento en **Referencias*
 Puede añadir en cualquier momento las páginas en el rango de páginas de origen para el lanzamiento, o eliminarlas: 
 
 1. Acceda y seleccione el lanzamiento de:
-   * La variable [Consola Lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
+   * La [consola Lanzamientos](/help/sites-cloud/authoring/launches/overview.md#the-launches-console):
       * Seleccione **Editar**.
    * [Referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar las acciones disponibles:
       * Seleccione **Editar lanzamiento**. 
@@ -92,4 +92,4 @@ Las propiedades del lanzamiento se pueden editar en cualquier momento:
 
 Se muestra el estado cuando se selecciona un lanzamiento específico en la ficha de referencias (consulte [Lanzamientos en las referencias (consola Sitios)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)).
 
-![Descubrimiento del estado de inicio](/help/sites-cloud/authoring/assets/launches-status.png)
+![Descubrimiento del estado de lanzamiento](/help/sites-cloud/authoring/assets/launches-status.png)
