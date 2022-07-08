@@ -3,7 +3,7 @@ title: 'Su bandeja de entrada  '
 description: Administración de las tareas con la bandeja de entrada
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -59,13 +59,13 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 >
 >La bandeja de entrada actúa como una consola, por lo que se aconseja utilizar [Navegación global](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) o [Buscar](/help/sites-cloud/authoring/getting-started/search.md) para desplazarse a otra ubicación cuando haya terminado.
 
-### Bandeja de entrada: Vista de lista {#inbox-list-view}
+### Bandeja de entrada: vista de lista {#inbox-list-view}
 
 En esta vista se muestra una lista de todos los elementos, así como información relevante:
 
 ![Vista de lista de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
-### Bandeja de entrada: Vista de calendario {#inbox-calendar-view}
+### Bandeja de entrada: vista de calendario {#inbox-calendar-view}
 
 Esta vista presenta los elementos según su posición en el calendario:
 
@@ -80,7 +80,7 @@ Puede hacer lo siguiente:
 
 ![Intervalo de fechas de vista de calendario de la bandeja de entrada](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
-### Bandeja de entrada: Configuración de vista {#inbox-view-settings}
+### Bandeja de entrada: configuración de vista {#inbox-view-settings}
 
 Puede definir la configuración para ambas vistas (lista y calendario):
 
@@ -132,7 +132,7 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
    >[!NOTE]
    >
-   >Para obtener más información, consulte:
+   >Para obtener más información, consulte lo siguiente:
    >
    >* Elementos del flujo de trabajo - [Participación en flujos de trabajo](/help/sites-cloud/authoring/workflows/participating.md)
 
