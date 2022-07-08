@@ -1,29 +1,29 @@
 ---
-title: Creación de un sitio
+title: Crear un sitio
 description: Aprenda a utilizar AEM para crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Creación de un sitio {#creating-site}
+# Crear un sitio {#creating-site}
 
-Aprenda a utilizar AEM crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
+Aprenda a utilizar AEM para crear un sitio mediante plantillas de sitio para definir el estilo y la estructura del sitio.
 
 ## Información general {#overview}
 
 Para que los autores de contenido puedan crear páginas con contenido, primero debe crearse el sitio. Esto generalmente lo realiza un administrador de AEM que define la estructura inicial del sitio. El uso de plantillas de sitio hace que la creación del sitio sea rápida y flexible.
 
-La AEM herramienta de creación rápida de sitios permite a los usuarios que no son desarrolladores crear rápidamente un nuevo sitio desde cero mediante plantillas de sitio.
+La herramienta de creación rápida de sitios de AEM permite a los usuarios que no son desarrolladores crear rápidamente un nuevo sitio desde cero mediante plantillas de sitio.
 
 Una vez creada, la herramienta de creación rápida de sitios también permite la personalización rápida del tema y el estilo del sitio AEM (JavaScript, CSS y recursos estáticos). Esto permite que el desarrollador del front-end, que no necesita ningún conocimiento de AEM, trabaje de forma independiente y paralela a los creadores de contenido. El administrador de AEM simplemente descarga el tema del sitio y lo proporciona al desarrollador de front-end que lo personaliza con sus herramientas favoritas y luego confirma los cambios en el repositorio de código de AEM, que luego se implementa.
 
-Este documento se centra en la creación de sitios mediante la herramienta de creación rápida de sitios. Si desea obtener una descripción general del flujo de trabajo de creación y personalización del sitio, consulte la [AEM Recorrido de creación rápida de sitios](/help/journey-sites/quick-site/overview.md)
+Este documento se centra en la creación de sitios mediante la herramienta de creación rápida de sitios. Si desea obtener una descripción general del flujo de trabajo de creación y personalización del sitio, consulte el [Recorrido de creación rápida de sitios de AEM](/help/journey-sites/quick-site/overview.md)
 
 ## Planificación de la estructura del sitio {#structure}
 
@@ -31,35 +31,35 @@ Tómese tiempo para tener en cuenta el propósito de su sitio y el contenido pla
 
 >[!TIP]
 >
->[El sitio de referencia WKND](https://wknd.site) proporciona una implementación de prácticas recomendadas de un sitio web de marca de experiencias al aire libre completamente funcional. Explíquela para ver cómo está estructurado un sitio AEM bien construido.
+>[El sitio de referencia WKND](https://wknd.site) proporciona una implementación de prácticas recomendadas de un sitio web de marca de experiencias al aire libre completamente funcional. Explórela para ver cómo está estructurado un sitio AEM bien construido.
 
 ## Plantillas de sitios {#site-templates}
 
 Debido a que la estructura del sitio es tan importante para el éxito de un sitio, resulta conveniente tener estructuras predefinidas disponibles para implementar rápidamente un nuevo sitio en función de un conjunto de estándares existentes. Las plantillas de sitio son una forma de combinar el contenido básico del sitio en un paquete conveniente y reutilizable.
 
-Las plantillas de sitio generalmente contienen contenido y estructura base del sitio, así como información de estilo del sitio para comenzar el nuevo sitio rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
+Las plantillas del sitio suelen contener contenido y estructura base del sitio, así como información de estilo, para comenzar con uno nuevo rápidamente. Las plantillas son potentes porque se pueden reutilizar y personalizar. Y como puede tener varias plantillas disponibles en la instalación de AEM, tiene la flexibilidad de crear diferentes sitios para satisfacer diversas necesidades comerciales.
 
 >[!TIP]
 >
->Para obtener más información sobre las plantillas del sitio, consulte la [Plantillas de sitio](site-templates.md) artículo.
+>Para obtener más información sobre las plantillas del sitio, consulte el artículo [Plantillas de sitio](site-templates.md).
 
 >[!NOTE]
 >
 >La plantilla del sitio no se debe confundir con las plantillas de página. Las plantillas de sitio definen la estructura general de un sitio. Una plantilla de página define la estructura y el contenido inicial de una página individual.
 
-## Creación de un sitio {#create-site}
+## Crear un sitio {#create-site}
 
 El uso de una plantilla para crear un sitio es sencillo.
 
-1. Inicie sesión en el entorno de creación de AEM y vaya a la consola Sitios .
+1. Inicie sesión en el entorno de creación de AEM y vaya a la consola Sites.
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Toque o haga clic **Crear** en la parte superior derecha de la pantalla y en el menú desplegable , seleccione **Sitio a partir de una plantilla**.
+1. Toque o haga clic en **Crear** en la parte superior derecha de la pantalla y en el menú desplegable, seleccione **Sitio a partir de una plantilla**.
 
    ![Creación de un sitio a partir de una plantilla](../assets/create-site-from-template.png)
 
-1. En el asistente Crear sitio , toque o haga clic en una plantilla existente del panel izquierdo o en **Importar** en la parte superior de la columna izquierda para importar una nueva plantilla.
+1. En el asistente Crear sitio, toque o haga clic en una plantilla existente del panel izquierdo o en **Importar** en la parte superior de la columna izquierda para importar una nueva plantilla.
 
    ![Asistente de creación de sitios](../assets/site-creation-wizard.png)
 
@@ -71,13 +71,13 @@ El uso de una plantilla para crear un sitio es sencillo.
 
    ![Seleccionar una plantilla](../assets/select-site-template.png)
 
-1. Proporcione un título para el sitio. Se puede proporcionar un nombre de sitio o se generará a partir del título si se omite.
+1. Proporcione un título para el sitio. Se puede indicar un nombre de sitio, pero se generará a partir del título si se omite.
 
-   * El título del sitio aparece en la barra de título de los navegadores.
+   * El título del sitio aparece en la barra de título de los exploradores.
    * El nombre del sitio forma parte de la dirección URL.
-   * El nombre del sitio debe cumplir con [AEM convenciones de nomenclatura de páginas.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * El nombre del sitio debe cumplir con las [convenciones de asignación de nombres de páginas de AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
 
-1. Toque o haga clic **Crear** y el sitio se crea a partir de la plantilla de sitio.
+1. Toque o haga clic en **Crear** y el sitio se crea a partir de la plantilla de sitio.
 
    ![Detalles del nuevo sitio](../assets/create-site-details.png)
 
