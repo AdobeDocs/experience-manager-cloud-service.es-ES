@@ -3,7 +3,7 @@ title: Guía rápida de introducción para la creación de páginas
 description: Guía rápida y de alto nivel para empezar a crear contenido de página.
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -273,7 +273,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 [El acceso rápido a las referencias](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) hasta/desde una página está disponible en la Barra de referencias.
 
-1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [ seleccionar su página](#selecting-your-page-for-further-action)): 
+1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![Opción de vista Referencias](/help/sites-cloud/authoring/assets/references.png)
 
@@ -305,7 +305,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    ![Opción de vista Cronología](/help/sites-cloud/authoring/assets/timeline.png)
 
-   Si ya se ha guardado una versión de su página, se indicará en la línea de tiempo.   
+   Si ya se ha guardado una versión de su página, se indicará en la línea de tiempo. 
 
 1. Haga clic en la versión que quiere restablecer y así se revelarán botones de acción adicionales:
 
