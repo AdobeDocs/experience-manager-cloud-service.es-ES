@@ -3,7 +3,7 @@ title: Edición del contenido de una página
 description: Una vez creada la página, puede actualizarla según sus necesidades editando el contenido
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2974'
 ht-degree: 100%
 
