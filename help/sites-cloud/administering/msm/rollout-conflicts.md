@@ -1,72 +1,72 @@
 ---
 title: Despliegue de conflictos
-description: Obtenga información sobre cómo administrar y resolver conflictos de implementación del administrador de varios sitios.
+description: Obtenga información sobre cómo administrar y resolver conflictos de despliegue del Administrador de varios sitios.
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Despliegue de conflictos {#msm-rollout-conflicts}
 
-Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre de página en la rama del modelo y en una rama de Live Copy dependiente. Estos conflictos deben manejarse y resolverse en el momento de su implementación.
+Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre en la rama del modelo y en una rama de Live Copy dependiente. Estos conflictos deben manejarse y resolverse en el momento del despliegue.
 
 ## Gestión de conflictos {#conflict-handling}
 
-Cuando existen páginas en conflicto (en las ramas de modelo y Live Copy), MSM le permite definir cómo deben manejarse (o incluso si).
+Cuando existen páginas en conflicto (en las ramas de modelo y Live Copy), MSM le permite definir cómo (o incluso si) deben gestionarse.
 
-Para garantizar que el despliegue no esté bloqueado, las definiciones posibles pueden incluir:
+Para garantizar que el despliegue no esté bloqueado, las definiciones posibles pueden incluir las siguientes:
 
-* Qué página (modelo o Live Copy) tendrá prioridad durante el lanzamiento
-* ¿Qué páginas se cambiarán de nombre (y cómo)?
+* Qué página (modelo o Live Copy) tendrá prioridad durante el despliegue
+* Qué páginas se cambiarán de nombre (y cómo)
 * Cómo afectará esto a cualquier contenido publicado
 
-El comportamiento predeterminado de AEM listo para usar es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, dicho contenido se publicará después de la gestión y el despliegue del conflicto.
+El comportamiento predeterminado de AEM es que el contenido publicado no se verá afectado. Por lo tanto, si se ha publicado una página creada manualmente en la rama de Live Copy, dicho contenido se publicará después de la gestión y el despliegue del conflicto.
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
-### Ejemplo de escenario {#example-scenario}
+### Escenario de ejemplo {#example-scenario}
 
-En las secciones siguientes utilizamos el ejemplo de una página nueva `b`, creado tanto en el modelo como en la rama de Live Copy (creado manualmente), para ilustrar los distintos métodos de resolución de conflictos:
+En las secciones siguientes utilizamos el ejemplo de la página nueva `b`, creada tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
 
 * modelo: `/b`
 
-   Una página de formato con una página secundaria, `bp-level-1`
+   Una página maestra con una página secundaria, `bp-level-1`
 
 * Live Copy: `/b`
 
-   Una página creada manualmente en la rama de Live Copy con 1 página secundaria, `lc-level-1`
+   Una página creada manualmente en la rama de Live Copy con una página secundaria, `lc-level-1`
 
-   * Se activa al publicar como `/b`, junto con la página secundaria
+   * Se activa durante la publicación como `/b`, junto con la página secundaria
 
-#### Antes de la implementación {#before-rollout}
+#### Antes del despliegue {#before-rollout}
 
-|  | Modelo antes de la implementación | Live Copy antes del lanzamiento | Publicar antes del lanzamiento |
+|  | Modelo antes del despliegue | Live Copy antes del despliegue | Publicar antes del despliegue |
 |---|---|---|---|
 | Value | `b` | `b` | `b` |
-| Comentario | Creado en rama de modelo, listo para su despliegue | Creado manualmente en la rama de Live Copy | Contiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
-| Valor | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| Comentario |  | Creado manualmente en la rama de Live Copy | contiene el contenido de la página `child-level-1` que se creó manualmente en la rama de Live Copy |
+| Comentar | Creado en rama de modelo, listo para su despliegue | Creado manualmente en la rama de Live Copy | Aparece el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
+| Value | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Comentar |  | Creado manualmente en la rama de Live Copy | aparece el contenido de la página `child-level-1` que se creó manualmente en la rama de Live Copy |
 
-## Gestor de implementación y gestión de conflictos {#rollout-manager-and-conflict-handling}
+## Administrador de despliegue y gestión de conflictos {#rollout-manager-and-conflict-handling}
 
-El administrador de implementación le permite activar o desactivar la administración de conflictos.
+El administrador de despliegue le permite activar o desactivar la administración de conflictos.
 
-Esto se realiza mediante [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md) de **Day CQ WCM Rollout Manager**. Establezca el valor **Gestionar conflictos con páginas creadas manualmente** ( `rolloutmgr.conflicthandling.enabled`) a true si el administrador de implementaciones debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
+Esto se realiza mediante la [configuración OSGi](/help/implementing/deploying/configuring-osgi.md) del **administrador de despliegue de gestión de contenido web CQ por día**. Establezca el valor **Gestión conflictos con páginas creadas manualmente** (`rolloutmgr.conflicthandling.enabled`) a true si el administrador de despliegue debe gestionar los conflictos de una página creada en Live Copy con un nombre que exista en el modelo.
 
-AEM ha [comportamiento predefinido cuando la administración de conflictos se ha desactivado.](#behavior-when-conflict-handling-deactivated)
+AEM tiene [comportamiento predefinido cuando la administración de conflictos se ha desactivado.](#behavior-when-conflict-handling-deactivated)
 
 ## Controladores de conflictos {#conflict-handlers}
 
-AEM utiliza controladores de conflictos para resolver cualquier conflicto de páginas que exista al implementar contenido desde un modelo a una Live Copy. Cambiar el nombre de las páginas es el método habitual (no solo) para resolver estos conflictos. Puede haber más de un controlador de conflictos en funcionamiento para permitir una selección de comportamientos diferentes.
+AEM utiliza controladores de conflictos para resolver cualquier conflicto de páginas que surja al desplegar contenido desde un modelo a una Live Copy. Cambiar el nombre de las páginas es el método habitual (no el único) para resolver estos conflictos. Puede haber más de un controlador de conflictos en funcionamiento para permitir una selección de comportamientos diferentes.
 
-AEM proporciona:
+AEM proporciona lo siguiente:
 
-* La variable [controlador de conflictos predeterminado](#default-conflict-handler):
+* El [controlador de conflictos predeterminado](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * La posibilidad de implementar un [controlador personalizado](#customized-handlers)
 * El mecanismo de clasificación de servicios que le permite establecer la prioridad de cada controlador individual
@@ -74,16 +74,16 @@ AEM proporciona:
 
 ### Controlador de conflictos predeterminado {#default-conflict-handler}
 
-El controlador de conflicto predeterminado es `ResourceNameRolloutConflictHandler`
+El controlador de conflictos predeterminado es `ResourceNameRolloutConflictHandler`
 
 * Con este controlador, la página de modelo tiene prioridad.
-* La clasificación de servicio de este controlador se establece en un nivel bajo, es decir, por debajo del valor predeterminado para la variable `service.ranking` , ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no es el mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
+* La clasificación de servicio de este controlador se establece en un nivel bajo, es decir, por debajo del valor predeterminado para la propiedad `service.ranking`, ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
 
-Este controlador de conflicto da prioridad al modelo. Por ejemplo, la página Live Copy `/b` se mueve dentro de la rama de Live Copy a `/b_msm_moved`.
+Este controlador de conflictos da prioridad al modelo. Por ejemplo, la página de Live Copy `/b` se mueve dentro de la rama de Live Copy a `/b_msm_moved`.
 
 * Live Copy: `/b`
 
-   Se mueve dentro de Live Copy a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
+   Se mueve dentro de la Live Copy a `/b_msm_moved`. Esto actúa como una copia de seguridad y garantiza que no se pierda contenido.
 
    * `lc-level-1` no se mueve.
 
@@ -91,57 +91,57 @@ Este controlador de conflicto da prioridad al modelo. Por ejemplo, la página Li
 
    Se despliega en la página Live Copy `/b`.
 
-   * `bp-level-1` se incluye en Live Copy.
+   * `bp-level-1` se despliega en la Live Copy.
 
-#### Después de la implementación {#after-rollout}
+#### Después del despliegue {#after-rollout}
 
-|  | Modelo después de la implementación | Live Copy después del lanzamiento | Live Copy después del lanzamiento | Publicar después del lanzamiento |
+|  | Modelo después del despliegue | Live Copy después del despliegue | Live Copy después del despliegue | Publicación después del despliegue |
 |---|---|---|---|---|
-| Valor | `b` | `b` | `b_msm_moved` | `b` |
-| Comentario |  | Tiene el contenido de la página de modelo `b` que se presentó | Tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página original `b` que se creó manualmente en la rama de Live Copy y ahora se llama `b_msm_moved` |
-| Valor | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| Comentario |  |  | Sin cambio | Sin cambio |
+| Value | `b` | `b` | `b_msm_moved` | `b` |
+| Comentar |  | Tiene el contenido de la página de modelo `b` que se desplegó | Tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página original `b` que se creó manualmente en la rama de Live Copy y ahora se llama `b_msm_moved` |
+| Value | `/bp-level-1` | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Comentar |  |  | Sin cambios | Sin cambios |
 
 ### Controladores personalizados {#customized-handlers}
 
 Los controladores de conflicto personalizados le permiten implementar sus propias reglas. Con el mecanismo de clasificación de servicios también puede definir cómo interactúan con otros controladores.
 
-Los controladores de conflictos personalizados pueden:
+Los controladores de conflictos personalizados pueden hacer lo siguiente:
 
-* Reciba un nombre según sus necesidades.
+* Nombrarse según sus necesidades.
 * Desarrollarse/configurarse según sus necesidades.
    * Por ejemplo, puede desarrollar un controlador para que la página Live Copy tenga prioridad.
-* Se puede diseñar para que se configure usando la variable [Configuración de OSGi](/help/implementing/deploying/configuring-osgi.md). En particular:
-   * **Clasificación de servicios** define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
+* Se puede diseñar para que se configure usando la [Configuración OSGi](/help/implementing/deploying/configuring-osgi.md). En particular:
+   * La **clasificación de servicios** define el orden relacionado con otros controladores de conflictos (`service.ranking`).
       * El valor predeterminado es `0`.
 
-### Comportamiento cuando la administración de conflictos está desactivada {#behavior-when-conflict-handling-deactivated}
+### Comportamiento cuando los controladores de conflicto están desactivados {#behavior-when-conflict-handling-deactivated}
 
-Si [desactivar la gestión de conflictos,](#rollout-manager-and-conflict-handling) AEM no realiza ninguna acción en ninguna página en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
+Si [desactiva los controladores de conflictos](#rollout-manager-and-conflict-handling) manualmente, AEM no realiza ninguna acción en ninguna página en conflicto. Las páginas que no entran en conflicto se despliegan según lo esperado.
 
 >[!CAUTION]
 >
->Cuando se desactiva la gestión de conflictos, AEM no da ninguna indicación de que se estén ignorando los conflictos. Dado que en estos casos este comportamiento debe configurarse explícitamente, se supone que es el comportamiento deseado.
+>Cuando se desactivan los controladores de conflicto, AEM no da ninguna indicación de que se estén ignorando los conflictos. Dado que en estos casos este comportamiento debe configurarse explícitamente, se supone que es el comportamiento deseado.
 
-En este caso, Live Copy tiene prioridad. La página de modelo `/b` no se copia y la página Live Copy `/b` no se ha tocado.
+En este caso, Live Copy tiene prioridad. La página de modelo `/b` no se copia y la página de Live Copy `/b` no se cambia.
 
 * Modelo: `/b`
 
-   No se copia, pero se ignora.
+   No se copia en absoluto y se ignora.
 
 * Live Copy: `/b`
 
-   Sigue igual.
+   Permanece igual.
 
-#### Después de la implementación {#after-rollout-no-conflict}
+#### Después del despliegue {#after-rollout-no-conflict}
 
-|  | Modelo después de la implementación | Live Copy después del lanzamiento | Publicar después del lanzamiento |
+|  | Modelo después del despliegue | Live Copy después del despliegue | Publicación después del despliegue |
 |---|---|---|---|
-| Valor | `b` | `b` | `b` |
-| Comentario |  | Sin cambios, tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
-| Valor | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
-| Comentario |  | Sin cambio | Sin cambio |
+| Value | `b` | `b` | `b` |
+| Comentar |  | Sin cambios, tiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy | Sin cambios, contiene el contenido de la página `b` que se creó manualmente en la rama de Live Copy |
+| Value | `/bp-level-1` | `/lc-level-1` | `/lc-level-1` |
+| Comentar |  | Sin cambios | Sin cambios |
 
 ### Clasificación de servicios {#service-rankings}
 
-La variable [OSGi](https://www.osgi.org/) la clasificación de servicios se puede utilizar para definir la prioridad de los controladores de conflictos individuales.
+La clasificación del servicio [OSGi](https://www.osgi.org/) se puede utilizar para definir la prioridad de los controladores de conflictos individuales.
