@@ -3,9 +3,9 @@ title: Herramientas y entorno de creación
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Si hace clic en el componente, se resalta en el editor de páginas. Las acciones
 
    ![Botón Editar árbol de contenido](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* Una página que forma parte de un [livecopy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página.
+* Una página que forma parte de una [Live Copy](/help/sites-cloud/administering/msm/overview.md), donde los componentes se heredan de otra página.
 
 >[!NOTE]
 >
@@ -224,7 +224,7 @@ Seleccione el tipo de referencia apropiado para obtener más información. En de
 * La opción **Vínculos entrantes** proporciona una lista de páginas que hacen referencia a la página, así como un acceso directo a la opción **Editar** de una de esas páginas, al seleccionar un vínculo específico
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
 * [Lanzamientos](/help/sites-cloud/authoring/launches/overview.md), que proporciona acceso a lanzamientos relacionados.
-* [](/help/sites-cloud/administering/msm/overview.md)Live Copies muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
+* [Live Copies](/help/sites-cloud/administering/msm/overview.md) muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
 * [Modelo](/help/sites-cloud/administering/msm/best-practices.md), proporciona detalles y diversas acciones
 * [Copias de idiomas](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel), proporciona detalles y diversas acciones
 
@@ -318,6 +318,6 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-cl
 
    ![Opción Filtros](/help/sites-cloud/authoring/assets/filters-option.png)
 
-## Métodos abreviados del teclado {#keyboard-shortcuts}
+## Métodos abreviados de teclado {#keyboard-shortcuts}
 
 Hay varios [métodos abreviados del teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) disponibles.
