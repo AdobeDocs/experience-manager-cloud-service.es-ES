@@ -3,9 +3,9 @@ title: Uso de tareas
 description: Las tareas representan elementos de trabajo que tienen que implementarse en el contenido y se utilizan en los proyectos para determinar el nivel de conclusión de las tareas actuales
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Si un proyecto contiene tareas relacionadas, en el proyecto se muestra un mosaic
 * Porcentaje de tareas activas
 * Porcentaje de tareas caducadas
 
-![Título de la tarea](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
+![Mosaico Tarea](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
 
 ### Ver o modificar las tareas en un proyecto {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -47,7 +47,7 @@ Haga clic en los puntos suspensivos (…) en el mosaico Tareas para mostrar la l
 
 #### Detalles de la tarea {#task-details}
 
-Para obtener más información sobre una tarea en particular, en la lista de tareas, toque o haga clic en la tarea y **Apertura**.
+Para obtener más información sobre una tarea determinada, en la lista de tareas, pulse o haga clic en la tarea y en **Abrir**.
 
 ![Detalles de la tarea](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -66,7 +66,7 @@ Para añadir una tarea:
 1. En el mosaico **Tareas** del proyecto, pulse o haga clic en el icono +. Se abre la ventana **Agregar tarea**.
 1. Introduzca la información sobre la tarea. El título de la tarea y el grupo al que está asignada son obligatorios. La información adicional, como la ruta de acceso del contenido, la descripción, la prioridad de tareas y la fecha de caducidad, es opcional. Además, puede seleccionar la pestaña **Avanzadas** para introducir el nombre de la tarea, que se utiliza para dar nombre a la dirección URL.
 
-   ![Añadir una tarea](/help/sites-cloud/authoring/assets/projects-add-task.png)
+   ![Adición de una tarea](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
 1. Toque o haga clic en **Crear**.
 
