@@ -3,9 +3,9 @@ title: Creación y administración de ofertas
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 93%
 
 Utilice la consola Ofertas para crear ofertas que se pueden [usar en las experiencias de actividad](/help/sites-cloud/authoring/personalization/targeted-content.md). La creación de ofertas en la consola Ofertas ahorra tiempo cuando varias experiencias requieren la misma oferta:
 
-* Cree la oferta una vez en la biblioteca y utilícela en varias experiencias de las actividades de marca.
+* Cree una oferta una vez en la biblioteca y utilícela en varias experiencias de las actividades de marca.
 * Al cambiar la oferta en la biblioteca, el cambio afecta a todas las experiencias que la utilizan.
 
-La consola Ofertas organiza las ofertas por marca. En cada marca se incluye una biblioteca de ofertas que se pueden utilizar en las experiencias de una marca. Utilice carpetas para definir una estructura jerárquica para organizar ofertas en cada biblioteca. Una estructura lógica de carpetas permite a los autores buscar ofertas fácilmente. Además, las herramientas de etiquetado y búsqueda permiten a los autores buscar ofertas.
+La consola Ofertas organiza las ofertas por marca. En cada marca se incluye una biblioteca de ofertas que se pueden utilizar en las experiencias de una marca. Utilice carpetas para definir una estructura jerárquica y organizar las ofertas en cada biblioteca. Una estructura lógica de carpetas permite a los autores buscar ofertas fácilmente. Además, las herramientas de etiquetado y búsqueda permiten a los autores buscar ofertas.
 
 ## Añadir una marca mediante la consola de ofertas {#add-a-brand-using-the-offers-console}
 
@@ -28,7 +28,7 @@ Cuando cree una marca mediante la consola de ofertas, esta también aparecerá e
 
    ![Navegación a la consola Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Toque o haga clic en **Crear** y luego **Crear** **Marca**.
+1. Haga clic o pulse en **Crear** y luego en **Crear** **marca**.
 1. Seleccione la plantilla de marca y haga clic o pulse **Siguiente**.
 1. Escriba un título para la marca tal y como desea que aparezca en las consolas de actividades y de ofertas. De forma opcional, escriba o seleccione una o más etiquetas para asociarlas a la marca.
 1. Haga clic o pulse **Crear**.
