@@ -3,15 +3,15 @@ title: Cambios importantes en AEM Sites en AEM Cloud Service
 description: Cambios importantes en AEM Sites en AEM Cloud Service
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
 # Cambios importantes en AEM Sites as a Cloud Service {#notable-changes}
 
-AEM Sites as a Cloud Service proporciona funciones de administración de experiencias como parte de la plataforma as a Cloud Service nativa de la nube AEM. Además de las ventajas principales de AEM as a Cloud Service, como la escalabilidad nativa de la nube, el tiempo de actividad y estar siempre actualizado, AEM Sites as a Cloud Service también proporciona una serie de cambios y adiciones específicos de sitios.
+AEM Sites as a Cloud Service proporciona funciones de administración de experiencias como parte de la plataforma nativa de la nube de AEM as a Cloud Service. Además de las ventajas principales de AEM as a Cloud Service, como la escalabilidad nativa de la nube, el tiempo de actividad y estar siempre actualizado, AEM Sites as a Cloud Service también proporciona una serie de cambios y adiciones específicos de sitios.
 
 >[!NOTE]
 >Este documento destaca los cambios más importantes que se han producido en AEM Sites. Para ver los cambios generales en AEM as a Cloud Service y otros módulos, consulte:
@@ -32,7 +32,7 @@ Los cambios y adiciones en AEM Sites as a Cloud Service son los siguientes:
 
 ## Operaciones asincrónicas de página {#asynchronous-page-operations}
 
-En AEM servicio de nube, las operaciones que tradicionalmente han bloqueado la interfaz de usuario se han desglosado en tareas más pequeñas que se ejecutan en segundo plano.
+En AEM Cloud Service, las operaciones que tradicionalmente bloquean la interfaz de usuario se han desglosado en tareas más pequeñas que se ejecutan en segundo plano.
 
 * Mover páginas
 * Desplegar páginas
@@ -41,21 +41,21 @@ El iniciador de estas acciones puede comprobar su estado en una nueva interfaz d
 
 >[!NOTE]
 >
->El usuario del sistema no necesita ningún cambio para utilizar esta nueva función. Se observa aquí simplemente como un cambio en el comportamiento con respecto a versiones locales anteriores de AEM.
+>El usuario del sistema no necesita hacer ningún cambio para utilizar esta nueva función. Se observa aquí simplemente como un cambio en el comportamiento con respecto a versiones locales anteriores de AEM.
 
 ## Nuevo sitio de referencia y tutorial {#new-reference-site-and-tutorial}
 
-[WKND](https://wknd.site/), se ha actualizado y publicado un nuevo sitio de referencia de AEM para reflejar las prácticas recomendadas de para crear un sitio web con AEM, así como el conjunto completo de funciones, componentes y modelos de implementación disponibles en AEM. El nuevo sitio de referencia y [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) cubre temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
+[WKND](https://wknd.site/), un nuevo sitio de referencia de AEM, se ha actualizado y publicado para reflejar las prácticas recomendadas para generar un sitio web con AEM, así como el conjunto completo de funciones, componentes y modelos de implementación disponibles en AEM. El nuevo sitio de referencia y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) cubren temas fundamentales como la configuración del proyecto, los componentes principales, las plantillas editables, las bibliotecas de cliente y el desarrollo de componentes con Adobe Experience Manager Sites.
 
-Anteriormente, We.Retail se instalaba de forma predeterminada con AEM (excepto cuando se iniciaba en el modo de producción).  Ahora, un sitio de referencia no se instalará de forma predeterminada a partir de ahora.  En su lugar, la variable [git repo](https://github.com/adobe/aem-guides-wknd/) y [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) con el código de sitio de referencia WKND actualizado se proporciona.
+Anteriormente, We.Retail se instalaba de forma predeterminada con AEM (excepto cuando se iniciaba en el modo de producción).  A partir de ahora, no se instalará ningún sitio de referencia de forma predeterminada.  En su lugar, se proporcionan el [repositorio de Git](https://github.com/adobe/aem-guides-wknd/) y el [tutorial complementario](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) con el código de sitio de referencia WKND actualizado.
 
-## Funciones no disponibles en tiempo de ejecución {#capabilities-not-available-at-runtime}
+## Funciones no disponibles durante la ejecución {#capabilities-not-available-at-runtime}
 
-AEM as a Cloud Service siempre está activado y siempre actualizado. Para lograrlo, es necesario separar el repositorio de AEM en contenido inmutable y mutable, y prohibir el acceso a contenido inmutable durante la ejecución. Para obtener más información sobre el contenido mutable frente a inmutable, consulte [Áreas mutables frente a inmutables del repositorio](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
+AEM as a Cloud Service siempre está activado y actualizado. Para lograrlo, es necesario separar el repositorio de AEM en contenido inmutable y mutable, y prohibir el acceso a contenido inmutable durante la ejecución. Para obtener más información sobre el contenido mutable e inmutable, consulte [Áreas mutables e inmutables del repositorio](/help/implementing/developing/introduction/aem-project-content-package-structure.md#mutable-vs-immutable).
 
 Como el contenido inmutable no es accesible durante la ejecución, las siguientes operaciones de AEM Sites no están disponibles durante la ejecución:
 
-* traducción de diccionario i18n
-* Modo de desarrollador en el Editor de páginas de AEM Sites
+* Traducción con diccionarios i18n
+* Modo de desarrollador en el editor de páginas de AEM Sites
 
-Estas funcionalidades se pueden utilizar a través de instancias de desarrollador locales independientes de AEM as a Cloud Service para actualizar contenido y código en el repositorio de GIT as a Cloud Service de AEM, pero no en instancias de tiempo de ejecución alojadas.
+Estas funcionalidades se pueden utilizar a través de instancias de desarrollador locales independientes de AEM as a Cloud Service para actualizar contenido y código en el repositorio de Git de AEM as a Cloud Service, pero no en instancias de tiempo de ejecución alojadas.
