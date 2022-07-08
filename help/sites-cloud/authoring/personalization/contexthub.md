@@ -3,9 +3,9 @@ title: Obtención de vista previa de páginas mediante los datos de ContextHub
 description: La barra de herramientas de ContextHub muestra datos de los almacenes de ContextHub, le permite cambiar datos de los almacenes y resulta útil para obtener una vista previa del contenido
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ContextHub instala varios modos y módulos de IU. Es posible que el administrado
 
 La barra de herramientas de ContextHub está disponible en modo de Vista previa. La barra de herramientas solo está disponible en instancias de autor y únicamente si el administrador la ha activado.
 
-![La barra de herramientas de ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
+![Barra de herramientas de ContextHub](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
 1. Con la página abierta para edición, en la barra de herramientas, toque o haga clic en Vista previa.
 
-   ![El botón Vista previa](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
+   ![Botón Vista previa](/help/sites-cloud/authoring/assets/contexthub-preview-button.png)
 
 1. Para mostrar la barra de herramientas, toque o haga clic en el icono de ContextHub.
 
@@ -42,11 +42,11 @@ Cada módulo de IU proporciona un conjunto diferente de funciones, pero los sigu
 
 Los módulos de IU pueden mostrar datos de uno o más almacenes de ContextHub en la barra de herramientas. Los módulos de IU utilizan un icono y un título para identificarse.
 
-![Personalidades de ContextHub](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![Perfiles de ContextHub](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### Contenido emergente {#popup-content}
 
-Algunos módulos de IU muestran una superposición emergente al tocar o hacer clic en ellos. Normalmente, la ventana emergente contiene información adicional, aparte de lo que aparece en la barra de herramientas.
+Al tocarlos o hacer clic en ellos, algunos módulos de IU muestran una superposición emergente. Normalmente, la ventana emergente contiene información adicional, aparte de lo que aparece en la barra de herramientas.
 
 ![Información de perfil de ContextHub](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
